@@ -21,9 +21,9 @@ object PageSizeMode extends js.Object {
   sealed trait Root
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.PageSizeMode
   
-  val All: All with java.lang.String = js.native
-  val Root: Root with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 1 */ val Root: Root with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.PageSizeMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.PageSizeMode with scala.Double] = js.native
 }
 

@@ -34,12 +34,12 @@ object P13nPanelType extends js.Object {
   sealed trait sort
     extends openui5Lib.sapNs.mNs.P13nPanelType
   
-  val columns: columns with java.lang.String = js.native
-  val dimeasure: dimeasure with java.lang.String = js.native
-  val filter: filter with java.lang.String = js.native
-  val group: group with java.lang.String = js.native
-  val sort: sort with java.lang.String = js.native
+  /* 0 */ val columns: columns with scala.Double = js.native
+  /* 1 */ val dimeasure: dimeasure with scala.Double = js.native
+  /* 2 */ val filter: filter with scala.Double = js.native
+  /* 3 */ val group: group with scala.Double = js.native
+  /* 4 */ val sort: sort with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.P13nPanelType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.P13nPanelType with scala.Double] = js.native
 }
 

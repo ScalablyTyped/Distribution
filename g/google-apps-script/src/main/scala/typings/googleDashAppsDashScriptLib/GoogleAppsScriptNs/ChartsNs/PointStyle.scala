@@ -31,14 +31,14 @@ object PointStyle extends js.Object {
   sealed trait TINY
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PointStyle
   
-  val HUGE: HUGE with java.lang.String = js.native
-  val LARGE: LARGE with java.lang.String = js.native
-  val MEDIUM: MEDIUM with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val TINY: TINY with java.lang.String = js.native
+  /* 4 */ val HUGE: HUGE with scala.Double = js.native
+  /* 3 */ val LARGE: LARGE with scala.Double = js.native
+  /* 2 */ val MEDIUM: MEDIUM with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 1 */ val TINY: TINY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PointStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PointStyle with scala.Double
   ] = js.native
 }
 

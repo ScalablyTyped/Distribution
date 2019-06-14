@@ -26,10 +26,10 @@ object Layouts extends js.Object {
   sealed trait OneByOne
     extends ejDotWebDotAllLib.ejNs.PivotSchemaDesignerNs.Layouts
   
-  val Excel: Excel with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
-  val OneByOne: OneByOne with java.lang.String = js.native
+  /* 0 */ val Excel: Excel with scala.Double = js.native
+  /* 1 */ val Normal: Normal with scala.Double = js.native
+  /* 2 */ val OneByOne: OneByOne with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotSchemaDesignerNs.Layouts with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotSchemaDesignerNs.Layouts with scala.Double] = js.native
 }
 

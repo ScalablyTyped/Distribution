@@ -52,17 +52,17 @@ object ChatStoreChangedEventKind extends js.Object {
   sealed trait storeModified
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatStoreChangedEventKind
   
-  val conversationDeleted: conversationDeleted with java.lang.String = js.native
-  val conversationModified: conversationModified with java.lang.String = js.native
-  val conversationTransportDeleted: conversationTransportDeleted with java.lang.String = js.native
-  val messageCreated: messageCreated with java.lang.String = js.native
-  val messageDeleted: messageDeleted with java.lang.String = js.native
-  val messageModified: messageModified with java.lang.String = js.native
-  val notificationsMissed: notificationsMissed with java.lang.String = js.native
-  val storeModified: storeModified with java.lang.String = js.native
+  /* 6 */ val conversationDeleted: conversationDeleted with scala.Double = js.native
+  /* 5 */ val conversationModified: conversationModified with scala.Double = js.native
+  /* 7 */ val conversationTransportDeleted: conversationTransportDeleted with scala.Double = js.native
+  /* 2 */ val messageCreated: messageCreated with scala.Double = js.native
+  /* 4 */ val messageDeleted: messageDeleted with scala.Double = js.native
+  /* 3 */ val messageModified: messageModified with scala.Double = js.native
+  /* 0 */ val notificationsMissed: notificationsMissed with scala.Double = js.native
+  /* 1 */ val storeModified: storeModified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatStoreChangedEventKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatStoreChangedEventKind with scala.Double
   ] = js.native
 }
 

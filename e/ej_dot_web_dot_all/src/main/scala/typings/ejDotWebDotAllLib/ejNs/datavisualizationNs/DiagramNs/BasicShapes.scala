@@ -81,23 +81,23 @@ object BasicShapes extends js.Object {
   sealed trait Triangle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BasicShapes
   
-  val Cylinder: Cylinder with java.lang.String = js.native
-  val Decagon: Decagon with java.lang.String = js.native
-  val Ellipse: Ellipse with java.lang.String = js.native
-  val Heptagon: Heptagon with java.lang.String = js.native
-  val Octagon: Octagon with java.lang.String = js.native
-  val Path: Path with java.lang.String = js.native
-  val Pentagon: Pentagon with java.lang.String = js.native
-  val Plus: Plus with java.lang.String = js.native
-  val Polygon: Polygon with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val RightTriangle: RightTriangle with java.lang.String = js.native
-  val Star: Star with java.lang.String = js.native
-  val Trapezoid: Trapezoid with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
+  /* 13 */ val Cylinder: Cylinder with scala.Double = js.native
+  /* 11 */ val Decagon: Decagon with scala.Double = js.native
+  /* 1 */ val Ellipse: Ellipse with scala.Double = js.native
+  /* 8 */ val Heptagon: Heptagon with scala.Double = js.native
+  /* 9 */ val Octagon: Octagon with scala.Double = js.native
+  /* 2 */ val Path: Path with scala.Double = js.native
+  /* 7 */ val Pentagon: Pentagon with scala.Double = js.native
+  /* 5 */ val Plus: Plus with scala.Double = js.native
+  /* 3 */ val Polygon: Polygon with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 12 */ val RightTriangle: RightTriangle with scala.Double = js.native
+  /* 6 */ val Star: Star with scala.Double = js.native
+  /* 10 */ val Trapezoid: Trapezoid with scala.Double = js.native
+  /* 4 */ val Triangle: Triangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BasicShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BasicShapes with scala.Double
   ] = js.native
 }
 

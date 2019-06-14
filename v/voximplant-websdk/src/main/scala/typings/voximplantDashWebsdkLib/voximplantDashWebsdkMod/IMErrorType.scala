@@ -23,12 +23,10 @@ object IMErrorType extends js.Object {
   sealed trait RosterError
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.IMErrorType
   
-  val Error: Error with java.lang.String = js.native
-  val RemoteFunctionError: RemoteFunctionError with java.lang.String = js.native
-  val RosterError: RosterError with java.lang.String = js.native
+  /* 1 */ val Error: Error with scala.Double = js.native
+  /* 0 */ val RemoteFunctionError: RemoteFunctionError with scala.Double = js.native
+  /* 2 */ val RosterError: RosterError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.IMErrorType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.IMErrorType with scala.Double] = js.native
 }
 

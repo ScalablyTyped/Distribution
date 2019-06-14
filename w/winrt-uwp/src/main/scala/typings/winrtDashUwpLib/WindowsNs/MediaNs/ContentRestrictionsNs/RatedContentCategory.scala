@@ -42,15 +42,15 @@ object RatedContentCategory extends js.Object {
   sealed trait television
     extends winrtDashUwpLib.WindowsNs.MediaNs.ContentRestrictionsNs.RatedContentCategory
   
-  val application: application with java.lang.String = js.native
-  val game: game with java.lang.String = js.native
-  val general: general with java.lang.String = js.native
-  val movie: movie with java.lang.String = js.native
-  val music: music with java.lang.String = js.native
-  val television: television with java.lang.String = js.native
+  /* 1 */ val application: application with scala.Double = js.native
+  /* 2 */ val game: game with scala.Double = js.native
+  /* 0 */ val general: general with scala.Double = js.native
+  /* 3 */ val movie: movie with scala.Double = js.native
+  /* 5 */ val music: music with scala.Double = js.native
+  /* 4 */ val television: television with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ContentRestrictionsNs.RatedContentCategory with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ContentRestrictionsNs.RatedContentCategory with scala.Double
   ] = js.native
 }
 

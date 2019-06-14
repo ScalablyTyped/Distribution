@@ -35,10 +35,10 @@ object MouseButton extends js.Object {
   sealed trait rightButton
     extends microsoftDashAjaxLib.SysNs.UINs.MouseButton
   
-  val leftButton: leftButton with java.lang.String = js.native
-  val middleButton: middleButton with java.lang.String = js.native
-  val rightButton: rightButton with java.lang.String = js.native
+  /* 0 */ val leftButton: leftButton with scala.Double = js.native
+  /* 1 */ val middleButton: middleButton with scala.Double = js.native
+  /* 2 */ val rightButton: rightButton with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[microsoftDashAjaxLib.SysNs.UINs.MouseButton with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[microsoftDashAjaxLib.SysNs.UINs.MouseButton with scala.Double] = js.native
 }
 

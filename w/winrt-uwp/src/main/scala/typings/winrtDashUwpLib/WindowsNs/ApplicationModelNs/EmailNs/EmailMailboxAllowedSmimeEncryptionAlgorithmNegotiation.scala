@@ -27,12 +27,12 @@ object EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation extends js.Object 
   sealed trait strongAlgorithm
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
   
-  val anyAlgorithm: anyAlgorithm with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val strongAlgorithm: strongAlgorithm with java.lang.String = js.native
+  /* 2 */ val anyAlgorithm: anyAlgorithm with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val strongAlgorithm: strongAlgorithm with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation with scala.Double
   ] = js.native
 }
 

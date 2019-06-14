@@ -47,18 +47,16 @@ object FollowedContentExceptionType extends js.Object {
   sealed trait untrustedSource
     extends sharepointLib.SPNs.UserProfilesNs.FollowedContentExceptionType
   
-  val followLimitReached: followLimitReached with java.lang.String = js.native
-  val internalError: internalError with java.lang.String = js.native
-  val invalidQueryString: invalidQueryString with java.lang.String = js.native
-  val invalidSubtypeValue: invalidSubtypeValue with java.lang.String = js.native
-  val itemAlreadyExists: itemAlreadyExists with java.lang.String = js.native
-  val itemDoesNotExist: itemDoesNotExist with java.lang.String = js.native
-  val unsupportedItemType: unsupportedItemType with java.lang.String = js.native
-  val unsupportedSite: unsupportedSite with java.lang.String = js.native
-  val untrustedSource: untrustedSource with java.lang.String = js.native
+  /* 5 */ val followLimitReached: followLimitReached with scala.Double = js.native
+  /* 8 */ val internalError: internalError with scala.Double = js.native
+  /* 2 */ val invalidQueryString: invalidQueryString with scala.Double = js.native
+  /* 3 */ val invalidSubtypeValue: invalidSubtypeValue with scala.Double = js.native
+  /* 0 */ val itemAlreadyExists: itemAlreadyExists with scala.Double = js.native
+  /* 1 */ val itemDoesNotExist: itemDoesNotExist with scala.Double = js.native
+  /* 4 */ val unsupportedItemType: unsupportedItemType with scala.Double = js.native
+  /* 7 */ val unsupportedSite: unsupportedSite with scala.Double = js.native
+  /* 6 */ val untrustedSource: untrustedSource with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.UserProfilesNs.FollowedContentExceptionType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowedContentExceptionType with scala.Double] = js.native
 }
 

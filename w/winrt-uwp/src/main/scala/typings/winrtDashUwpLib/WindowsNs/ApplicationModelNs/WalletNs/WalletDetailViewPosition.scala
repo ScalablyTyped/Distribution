@@ -87,24 +87,24 @@ object WalletDetailViewPosition extends js.Object {
   sealed trait secondaryField5
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletDetailViewPosition
   
-  val centerField1: centerField1 with java.lang.String = js.native
-  val footerField1: footerField1 with java.lang.String = js.native
-  val footerField2: footerField2 with java.lang.String = js.native
-  val footerField3: footerField3 with java.lang.String = js.native
-  val footerField4: footerField4 with java.lang.String = js.native
-  val headerField1: headerField1 with java.lang.String = js.native
-  val headerField2: headerField2 with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val primaryField1: primaryField1 with java.lang.String = js.native
-  val primaryField2: primaryField2 with java.lang.String = js.native
-  val secondaryField1: secondaryField1 with java.lang.String = js.native
-  val secondaryField2: secondaryField2 with java.lang.String = js.native
-  val secondaryField3: secondaryField3 with java.lang.String = js.native
-  val secondaryField4: secondaryField4 with java.lang.String = js.native
-  val secondaryField5: secondaryField5 with java.lang.String = js.native
+  /* 10 */ val centerField1: centerField1 with scala.Double = js.native
+  /* 11 */ val footerField1: footerField1 with scala.Double = js.native
+  /* 12 */ val footerField2: footerField2 with scala.Double = js.native
+  /* 13 */ val footerField3: footerField3 with scala.Double = js.native
+  /* 14 */ val footerField4: footerField4 with scala.Double = js.native
+  /* 1 */ val headerField1: headerField1 with scala.Double = js.native
+  /* 2 */ val headerField2: headerField2 with scala.Double = js.native
+  /* 0 */ val hidden: hidden with scala.Double = js.native
+  /* 3 */ val primaryField1: primaryField1 with scala.Double = js.native
+  /* 4 */ val primaryField2: primaryField2 with scala.Double = js.native
+  /* 5 */ val secondaryField1: secondaryField1 with scala.Double = js.native
+  /* 6 */ val secondaryField2: secondaryField2 with scala.Double = js.native
+  /* 7 */ val secondaryField3: secondaryField3 with scala.Double = js.native
+  /* 8 */ val secondaryField4: secondaryField4 with scala.Double = js.native
+  /* 9 */ val secondaryField5: secondaryField5 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletDetailViewPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletDetailViewPosition with scala.Double
   ] = js.native
 }
 

@@ -26,10 +26,10 @@ object CalendarIntervalType extends js.Object {
   sealed trait Month
     extends openui5Lib.sapNs.uiNs.unifiedNs.CalendarIntervalType
   
-  val Day: Day with java.lang.String = js.native
-  val Hour: Hour with java.lang.String = js.native
-  val Month: Month with java.lang.String = js.native
+  /* 0 */ val Day: Day with scala.Double = js.native
+  /* 1 */ val Hour: Hour with scala.Double = js.native
+  /* 2 */ val Month: Month with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.unifiedNs.CalendarIntervalType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.unifiedNs.CalendarIntervalType with scala.Double] = js.native
 }
 

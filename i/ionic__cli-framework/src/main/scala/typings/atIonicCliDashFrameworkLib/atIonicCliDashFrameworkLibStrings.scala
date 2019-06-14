@@ -52,12 +52,10 @@ object atIonicCliDashFrameworkLibStrings {
   @js.native
   sealed trait advanced
     extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
-       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait beta
     extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
-       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait checkbox extends js.Object
@@ -71,7 +69,6 @@ object atIonicCliDashFrameworkLibStrings {
   @js.native
   sealed trait deprecated
     extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
-       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait end extends js.Object
@@ -79,7 +76,6 @@ object atIonicCliDashFrameworkLibStrings {
   @js.native
   sealed trait experimental
     extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
-       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait failure extends js.Object
@@ -87,7 +83,6 @@ object atIonicCliDashFrameworkLibStrings {
   @js.native
   sealed trait hidden
     extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
-       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait input
@@ -112,7 +107,6 @@ object atIonicCliDashFrameworkLibStrings {
   @js.native
   sealed trait paid
     extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
-       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait password

@@ -67,20 +67,20 @@ object GuidanceLaneMarkers extends js.Object {
   sealed trait uturnRight
     extends winrtDashUwpLib.WindowsNs.ServicesNs.MapsNs.GuidanceNs.GuidanceLaneMarkers
   
-  val hardLeft: hardLeft with java.lang.String = js.native
-  val hardRight: hardRight with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val lightLeft: lightLeft with java.lang.String = js.native
-  val lightRight: lightRight with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
-  val straight: straight with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val uturnLeft: uturnLeft with java.lang.String = js.native
-  val uturnRight: uturnRight with java.lang.String = js.native
+  /* 6 */ val hardLeft: hardLeft with scala.Double = js.native
+  /* 3 */ val hardRight: hardRight with scala.Double = js.native
+  /* 7 */ val left: left with scala.Double = js.native
+  /* 8 */ val lightLeft: lightLeft with scala.Double = js.native
+  /* 1 */ val lightRight: lightRight with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val right: right with scala.Double = js.native
+  /* 4 */ val straight: straight with scala.Double = js.native
+  /* 10 */ val unknown: unknown with scala.Double = js.native
+  /* 5 */ val uturnLeft: uturnLeft with scala.Double = js.native
+  /* 9 */ val uturnRight: uturnRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ServicesNs.MapsNs.GuidanceNs.GuidanceLaneMarkers with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ServicesNs.MapsNs.GuidanceNs.GuidanceLaneMarkers with scala.Double
   ] = js.native
 }
 

@@ -36,14 +36,14 @@ object PortVisibility extends js.Object {
   sealed trait Visible
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortVisibility
   
-  val Connect: Connect with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Hidden: Hidden with java.lang.String = js.native
-  val Hover: Hover with java.lang.String = js.native
-  val Visible: Visible with java.lang.String = js.native
+  /* 3 */ val Connect: Connect with scala.Double = js.native
+  /* 4 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val Hidden: Hidden with scala.Double = js.native
+  /* 2 */ val Hover: Hover with scala.Double = js.native
+  /* 0 */ val Visible: Visible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortVisibility with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortVisibility with scala.Double
   ] = js.native
 }
 

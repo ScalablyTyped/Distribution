@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventSubscriptionState extends js.Object {
+  val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val customerAwsId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A boolean flag to enable/disable the subscription. Defaults to true.
@@ -49,6 +50,7 @@ trait EventSubscriptionState extends js.Object {
 object EventSubscriptionState {
   @scala.inline
   def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     customerAwsId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     eventCategories: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
@@ -61,6 +63,7 @@ object EventSubscriptionState {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): EventSubscriptionState = {
     val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (customerAwsId != null) __obj.updateDynamic("customerAwsId")(customerAwsId.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (eventCategories != null) __obj.updateDynamic("eventCategories")(eventCategories.asInstanceOf[js.Any])

@@ -23,12 +23,12 @@ object NavigationLinkType extends js.Object {
   sealed trait simpleLink
     extends sharepointLib.SPNs.PublishingNs.NavigationNs.NavigationLinkType
   
-  val friendlyUrl: friendlyUrl with java.lang.String = js.native
-  val root: root with java.lang.String = js.native
-  val simpleLink: simpleLink with java.lang.String = js.native
+  /* 1 */ val friendlyUrl: friendlyUrl with scala.Double = js.native
+  /* 0 */ val root: root with scala.Double = js.native
+  /* 2 */ val simpleLink: simpleLink with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.PublishingNs.NavigationNs.NavigationLinkType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.SPNs.PublishingNs.NavigationNs.NavigationLinkType with scala.Double
   ] = js.native
 }
 

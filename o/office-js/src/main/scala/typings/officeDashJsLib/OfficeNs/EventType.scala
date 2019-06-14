@@ -198,27 +198,27 @@ object EventType extends js.Object {
   sealed trait ViewSelectionChanged
     extends officeDashJsLib.OfficeNs.EventType
   
-  val ActiveViewChanged: ActiveViewChanged with java.lang.String = js.native
-  val AppointmentTimeChanged: AppointmentTimeChanged with java.lang.String = js.native
-  val AttachmentsChanged: AttachmentsChanged with java.lang.String = js.native
-  val BindingDataChanged: BindingDataChanged with java.lang.String = js.native
-  val BindingSelectionChanged: BindingSelectionChanged with java.lang.String = js.native
-  val DialogEventReceived: DialogEventReceived with java.lang.String = js.native
-  val DialogMessageReceived: DialogMessageReceived with java.lang.String = js.native
-  val DocumentSelectionChanged: DocumentSelectionChanged with java.lang.String = js.native
-  val EnhancedLocationsChanged: EnhancedLocationsChanged with java.lang.String = js.native
-  val ItemChanged: ItemChanged with java.lang.String = js.native
-  val NodeDeleted: NodeDeleted with java.lang.String = js.native
-  val NodeInserted: NodeInserted with java.lang.String = js.native
-  val NodeReplaced: NodeReplaced with java.lang.String = js.native
-  val OfficeThemeChanged: OfficeThemeChanged with java.lang.String = js.native
-  val RecipientsChanged: RecipientsChanged with java.lang.String = js.native
-  val RecurrenceChanged: RecurrenceChanged with java.lang.String = js.native
-  val ResourceSelectionChanged: ResourceSelectionChanged with java.lang.String = js.native
-  val SettingsChanged: SettingsChanged with java.lang.String = js.native
-  val TaskSelectionChanged: TaskSelectionChanged with java.lang.String = js.native
-  val ViewSelectionChanged: ViewSelectionChanged with java.lang.String = js.native
+  /* 0 */ val ActiveViewChanged: ActiveViewChanged with scala.Double = js.native
+  /* 1 */ val AppointmentTimeChanged: AppointmentTimeChanged with scala.Double = js.native
+  /* 2 */ val AttachmentsChanged: AttachmentsChanged with scala.Double = js.native
+  /* 3 */ val BindingDataChanged: BindingDataChanged with scala.Double = js.native
+  /* 4 */ val BindingSelectionChanged: BindingSelectionChanged with scala.Double = js.native
+  /* 6 */ val DialogEventReceived: DialogEventReceived with scala.Double = js.native
+  /* 5 */ val DialogMessageReceived: DialogMessageReceived with scala.Double = js.native
+  /* 7 */ val DocumentSelectionChanged: DocumentSelectionChanged with scala.Double = js.native
+  /* 9 */ val EnhancedLocationsChanged: EnhancedLocationsChanged with scala.Double = js.native
+  /* 8 */ val ItemChanged: ItemChanged with scala.Double = js.native
+  /* 10 */ val NodeDeleted: NodeDeleted with scala.Double = js.native
+  /* 11 */ val NodeInserted: NodeInserted with scala.Double = js.native
+  /* 12 */ val NodeReplaced: NodeReplaced with scala.Double = js.native
+  /* 13 */ val OfficeThemeChanged: OfficeThemeChanged with scala.Double = js.native
+  /* 14 */ val RecipientsChanged: RecipientsChanged with scala.Double = js.native
+  /* 15 */ val RecurrenceChanged: RecurrenceChanged with scala.Double = js.native
+  /* 16 */ val ResourceSelectionChanged: ResourceSelectionChanged with scala.Double = js.native
+  /* 17 */ val SettingsChanged: SettingsChanged with scala.Double = js.native
+  /* 18 */ val TaskSelectionChanged: TaskSelectionChanged with scala.Double = js.native
+  /* 19 */ val ViewSelectionChanged: ViewSelectionChanged with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.EventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.EventType with scala.Double] = js.native
 }
 

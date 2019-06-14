@@ -51,17 +51,17 @@ object SnapConstraints extends js.Object {
   sealed trait SnapToVerticalLines
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.SnapConstraints
   
-  val All: All with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val ShowHorizontalLines: ShowHorizontalLines with java.lang.String = js.native
-  val ShowLines: ShowLines with java.lang.String = js.native
-  val ShowVerticalLines: ShowVerticalLines with java.lang.String = js.native
-  val SnapToHorizontalLines: SnapToHorizontalLines with java.lang.String = js.native
-  val SnapToLines: SnapToLines with java.lang.String = js.native
-  val SnapToVerticalLines: SnapToVerticalLines with java.lang.String = js.native
+  /* 7 */ val All: All with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 4 */ val ShowHorizontalLines: ShowHorizontalLines with scala.Double = js.native
+  /* 6 */ val ShowLines: ShowLines with scala.Double = js.native
+  /* 5 */ val ShowVerticalLines: ShowVerticalLines with scala.Double = js.native
+  /* 1 */ val SnapToHorizontalLines: SnapToHorizontalLines with scala.Double = js.native
+  /* 3 */ val SnapToLines: SnapToLines with scala.Double = js.native
+  /* 2 */ val SnapToVerticalLines: SnapToVerticalLines with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.SnapConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.SnapConstraints with scala.Double
   ] = js.native
 }
 

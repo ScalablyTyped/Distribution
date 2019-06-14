@@ -27,11 +27,11 @@ object ResolutionScale extends js.Object {
   sealed trait scale180Percent
     extends winrtLib.WindowsNs.GraphicsNs.DisplayNs.ResolutionScale
   
-  val invalid: invalid with java.lang.String = js.native
-  val scale100Percent: scale100Percent with java.lang.String = js.native
-  val scale140Percent: scale140Percent with java.lang.String = js.native
-  val scale180Percent: scale180Percent with java.lang.String = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 1 */ val scale100Percent: scale100Percent with scala.Double = js.native
+  /* 2 */ val scale140Percent: scale140Percent with scala.Double = js.native
+  /* 3 */ val scale180Percent: scale180Percent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.DisplayNs.ResolutionScale with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.DisplayNs.ResolutionScale with scala.Double] = js.native
 }
 

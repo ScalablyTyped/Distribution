@@ -27,12 +27,12 @@ object WiFiDirectServiceStatus extends js.Object {
   sealed trait custom
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceStatus
   
-  val available: available with java.lang.String = js.native
-  val busy: busy with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
+  /* 0 */ val available: available with scala.Double = js.native
+  /* 1 */ val busy: busy with scala.Double = js.native
+  /* 2 */ val custom: custom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceStatus with scala.Double
   ] = js.native
 }
 

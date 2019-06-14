@@ -31,11 +31,11 @@ object CaptionAlignment extends js.Object {
   sealed trait Right
     extends ejDotWebDotAllLib.ejNs.TileNs.CaptionAlignment
   
-  val Center: Center with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 3 */ val Center: Center with scala.Double = js.native
+  /* 1 */ val Left: Left with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TileNs.CaptionAlignment with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TileNs.CaptionAlignment with scala.Double] = js.native
 }
 

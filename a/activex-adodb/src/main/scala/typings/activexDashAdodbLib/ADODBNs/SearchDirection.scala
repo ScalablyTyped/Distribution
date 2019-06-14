@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait SearchDirection extends js.Object
 
+object SearchDirection {
+  @scala.inline
+  def adSearchBackward: activexDashAdodbLib.activexDashAdodbLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def adSearchForward: activexDashAdodbLib.activexDashAdodbLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

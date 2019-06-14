@@ -22,11 +22,11 @@ object PhoneCallHistorySourceIdKind extends js.Object {
   sealed trait packageFamilyName
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistorySourceIdKind
   
-  val cellularPhoneLineId: cellularPhoneLineId with java.lang.String = js.native
-  val packageFamilyName: packageFamilyName with java.lang.String = js.native
+  /* 0 */ val cellularPhoneLineId: cellularPhoneLineId with scala.Double = js.native
+  /* 1 */ val packageFamilyName: packageFamilyName with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistorySourceIdKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistorySourceIdKind with scala.Double
   ] = js.native
 }
 

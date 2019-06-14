@@ -19,11 +19,11 @@ object ProtectionType extends js.Object {
   sealed trait SHEET
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.ProtectionType
   
-  val RANGE: RANGE with java.lang.String = js.native
-  val SHEET: SHEET with java.lang.String = js.native
+  /* 0 */ val RANGE: RANGE with scala.Double = js.native
+  /* 1 */ val SHEET: SHEET with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.ProtectionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.ProtectionType with scala.Double
   ] = js.native
 }
 

@@ -21,9 +21,9 @@ object PrintMode extends js.Object {
   sealed trait CurrentPage
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.PrintMode
   
-  val AllPages: AllPages with java.lang.String = js.native
-  val CurrentPage: CurrentPage with java.lang.String = js.native
+  /* 0 */ val AllPages: AllPages with scala.Double = js.native
+  /* 1 */ val CurrentPage: CurrentPage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.PrintMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.PrintMode with scala.Double] = js.native
 }
 

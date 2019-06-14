@@ -19,11 +19,11 @@ object Charset extends js.Object {
   sealed trait UTF_8
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Charset
   
-  val US_ASCII: US_ASCII with java.lang.String = js.native
-  val UTF_8: UTF_8 with java.lang.String = js.native
+  /* 0 */ val US_ASCII: US_ASCII with scala.Double = js.native
+  /* 1 */ val UTF_8: UTF_8 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Charset with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Charset with scala.Double
   ] = js.native
 }
 

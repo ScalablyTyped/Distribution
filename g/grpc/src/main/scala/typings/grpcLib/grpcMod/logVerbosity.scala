@@ -23,10 +23,10 @@ object logVerbosity extends js.Object {
   sealed trait INFO
     extends grpcLib.grpcMod.logVerbosity
   
-  val DEBUG: DEBUG with java.lang.String = js.native
-  val ERROR: ERROR with java.lang.String = js.native
-  val INFO: INFO with java.lang.String = js.native
+  /* 0 */ val DEBUG: DEBUG with scala.Double = js.native
+  /* 2 */ val ERROR: ERROR with scala.Double = js.native
+  /* 1 */ val INFO: INFO with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[grpcLib.grpcMod.logVerbosity with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[grpcLib.grpcMod.logVerbosity with scala.Double] = js.native
 }
 

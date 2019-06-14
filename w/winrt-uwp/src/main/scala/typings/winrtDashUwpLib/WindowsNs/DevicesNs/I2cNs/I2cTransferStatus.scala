@@ -27,12 +27,10 @@ object I2cTransferStatus extends js.Object {
   sealed trait slaveAddressNotAcknowledged
     extends winrtDashUwpLib.WindowsNs.DevicesNs.I2cNs.I2cTransferStatus
   
-  val fullTransfer: fullTransfer with java.lang.String = js.native
-  val partialTransfer: partialTransfer with java.lang.String = js.native
-  val slaveAddressNotAcknowledged: slaveAddressNotAcknowledged with java.lang.String = js.native
+  /* 0 */ val fullTransfer: fullTransfer with scala.Double = js.native
+  /* 1 */ val partialTransfer: partialTransfer with scala.Double = js.native
+  /* 2 */ val slaveAddressNotAcknowledged: slaveAddressNotAcknowledged with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.I2cNs.I2cTransferStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.I2cNs.I2cTransferStatus with scala.Double] = js.native
 }
 

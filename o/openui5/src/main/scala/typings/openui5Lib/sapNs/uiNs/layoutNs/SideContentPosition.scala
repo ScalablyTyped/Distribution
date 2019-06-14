@@ -22,9 +22,9 @@ object SideContentPosition extends js.Object {
   sealed trait End
     extends openui5Lib.sapNs.uiNs.layoutNs.SideContentPosition
   
-  val Begin: Begin with java.lang.String = js.native
-  val End: End with java.lang.String = js.native
+  /* 0 */ val Begin: Begin with scala.Double = js.native
+  /* 1 */ val End: End with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.SideContentPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.SideContentPosition with scala.Double] = js.native
 }
 

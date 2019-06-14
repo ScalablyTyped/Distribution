@@ -46,14 +46,14 @@ object AreaUnits extends js.Object {
   sealed trait SquareYards
     extends bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.AreaUnits
   
-  val Acres: Acres with java.lang.String = js.native
-  val Hectares: Hectares with java.lang.String = js.native
-  val SquareFeet: SquareFeet with java.lang.String = js.native
-  val SquareKilometers: SquareKilometers with java.lang.String = js.native
-  val SquareMeters: SquareMeters with java.lang.String = js.native
-  val SquareMiles: SquareMiles with java.lang.String = js.native
-  val SquareYards: SquareYards with java.lang.String = js.native
+  /* 5 */ val Acres: Acres with scala.Double = js.native
+  /* 6 */ val Hectares: Hectares with scala.Double = js.native
+  /* 3 */ val SquareFeet: SquareFeet with scala.Double = js.native
+  /* 1 */ val SquareKilometers: SquareKilometers with scala.Double = js.native
+  /* 0 */ val SquareMeters: SquareMeters with scala.Double = js.native
+  /* 2 */ val SquareMiles: SquareMiles with scala.Double = js.native
+  /* 4 */ val SquareYards: SquareYards with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.AreaUnits with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.AreaUnits with scala.Double] = js.native
 }
 

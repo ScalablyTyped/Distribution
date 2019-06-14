@@ -34,12 +34,12 @@ object SideContentVisibility extends js.Object {
   sealed trait ShowAboveS
     extends openui5Lib.sapNs.uiNs.layoutNs.SideContentVisibility
   
-  val AlwaysShow: AlwaysShow with java.lang.String = js.native
-  val NeverShow: NeverShow with java.lang.String = js.native
-  val ShowAboveL: ShowAboveL with java.lang.String = js.native
-  val ShowAboveM: ShowAboveM with java.lang.String = js.native
-  val ShowAboveS: ShowAboveS with java.lang.String = js.native
+  /* 0 */ val AlwaysShow: AlwaysShow with scala.Double = js.native
+  /* 1 */ val NeverShow: NeverShow with scala.Double = js.native
+  /* 2 */ val ShowAboveL: ShowAboveL with scala.Double = js.native
+  /* 3 */ val ShowAboveM: ShowAboveM with scala.Double = js.native
+  /* 4 */ val ShowAboveS: ShowAboveS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.SideContentVisibility with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.SideContentVisibility with scala.Double] = js.native
 }
 

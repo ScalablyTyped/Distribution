@@ -46,16 +46,16 @@ object IconShapes extends js.Object {
   sealed trait Template
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.IconShapes
   
-  val Arrow: Arrow with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val Minus: Minus with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Path: Path with java.lang.String = js.native
-  val Plus: Plus with java.lang.String = js.native
-  val Template: Template with java.lang.String = js.native
+  /* 1 */ val Arrow: Arrow with scala.Double = js.native
+  /* 6 */ val Image: Image with scala.Double = js.native
+  /* 3 */ val Minus: Minus with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 4 */ val Path: Path with scala.Double = js.native
+  /* 2 */ val Plus: Plus with scala.Double = js.native
+  /* 5 */ val Template: Template with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.IconShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.IconShapes with scala.Double
   ] = js.native
 }
 

@@ -32,13 +32,13 @@ object NetworkConnectivityLevel extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkConnectivityLevel
   
-  val constrainedInternetAccess: constrainedInternetAccess with java.lang.String = js.native
-  val internetAccess: internetAccess with java.lang.String = js.native
-  val localAccess: localAccess with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val constrainedInternetAccess: constrainedInternetAccess with scala.Double = js.native
+  /* 3 */ val internetAccess: internetAccess with scala.Double = js.native
+  /* 1 */ val localAccess: localAccess with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkConnectivityLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkConnectivityLevel with scala.Double
   ] = js.native
 }
 

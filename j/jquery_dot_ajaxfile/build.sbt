@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_ajaxfile"
-version := "0.2.0-a493a1"
+version := "0.2.0-009d3f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OlAttachmentBlockLevel extends js.Object
 
+object OlAttachmentBlockLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olAttachmentBlockLevelNone: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def olAttachmentBlockLevelOpen: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+}
+

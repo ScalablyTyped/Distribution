@@ -21,11 +21,11 @@ object FilterLogicalOperator extends js.Object {
   sealed trait or
     extends bingmapsLib.MicrosoftNs.MapsNs.SpatialDataServiceNs.FilterLogicalOperator
   
-  val and: and with java.lang.String = js.native
-  val or: or with java.lang.String = js.native
+  /* 0 */ val and: and with scala.Double = js.native
+  /* 1 */ val or: or with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    bingmapsLib.MicrosoftNs.MapsNs.SpatialDataServiceNs.FilterLogicalOperator with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    bingmapsLib.MicrosoftNs.MapsNs.SpatialDataServiceNs.FilterLogicalOperator with scala.Double
   ] = js.native
 }
 

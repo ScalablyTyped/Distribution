@@ -45,17 +45,17 @@ object PlayerNs extends js.Object {
     sealed trait STOP
       extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
     
-    val DEQUE: DEQUE with java.lang.String = js.native
-    val ENQUEUE: ENQUEUE with java.lang.String = js.native
-    val ERROR: ERROR with java.lang.String = js.native
-    val LOG: LOG with java.lang.String = js.native
-    val PAUSE: PAUSE with java.lang.String = js.native
-    val PLAY: PLAY with java.lang.String = js.native
-    val REPLAY: REPLAY with java.lang.String = js.native
-    val STOP: STOP with java.lang.String = js.native
+    /* 7 */ val DEQUE: DEQUE with scala.Double = js.native
+    /* 6 */ val ENQUEUE: ENQUEUE with scala.Double = js.native
+    /* 1 */ val ERROR: ERROR with scala.Double = js.native
+    /* 0 */ val LOG: LOG with scala.Double = js.native
+    /* 4 */ val PAUSE: PAUSE with scala.Double = js.native
+    /* 2 */ val PLAY: PLAY with scala.Double = js.native
+    /* 3 */ val REPLAY: REPLAY with scala.Double = js.native
+    /* 5 */ val STOP: STOP with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes with scala.Double
       ] = js.native
   }
   

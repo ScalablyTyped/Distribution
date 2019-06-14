@@ -27,13 +27,13 @@ object DataPackageOperation extends js.Object {
   sealed trait none
     extends winrtLib.WindowsNs.ApplicationModelNs.DataTransferNs.DataPackageOperation
   
-  val copy: copy with java.lang.String = js.native
-  val link: link with java.lang.String = js.native
-  val move: move with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val copy: copy with scala.Double = js.native
+  /* 3 */ val link: link with scala.Double = js.native
+  /* 2 */ val move: move with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.DataTransferNs.DataPackageOperation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.DataTransferNs.DataPackageOperation with scala.Double
   ] = js.native
 }
 

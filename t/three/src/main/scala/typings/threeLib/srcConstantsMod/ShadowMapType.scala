@@ -12,6 +12,6 @@ sealed trait ShadowMapType extends js.Object
 @js.native
 object ShadowMapType extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.ShadowMapType with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.ShadowMapType with scala.Nothing] = js.native
 }
 

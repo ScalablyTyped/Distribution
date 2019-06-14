@@ -27,12 +27,12 @@ object KeySize extends js.Object {
   sealed trait rsa4096
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.KeySize
   
-  val invalid: invalid with java.lang.String = js.native
-  val rsa2048: rsa2048 with java.lang.String = js.native
-  val rsa4096: rsa4096 with java.lang.String = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 1 */ val rsa2048: rsa2048 with scala.Double = js.native
+  /* 2 */ val rsa4096: rsa4096 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.KeySize with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.KeySize with scala.Double
   ] = js.native
 }
 

@@ -12,6 +12,6 @@ sealed trait InterpolationModes extends js.Object
 @js.native
 object InterpolationModes extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.InterpolationModes with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.InterpolationModes with scala.Nothing] = js.native
 }
 

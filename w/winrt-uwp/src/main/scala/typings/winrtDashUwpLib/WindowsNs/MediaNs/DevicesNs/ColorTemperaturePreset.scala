@@ -52,17 +52,17 @@ object ColorTemperaturePreset extends js.Object {
   sealed trait tungsten
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ColorTemperaturePreset
   
-  val auto: auto with java.lang.String = js.native
-  val candlelight: candlelight with java.lang.String = js.native
-  val cloudy: cloudy with java.lang.String = js.native
-  val daylight: daylight with java.lang.String = js.native
-  val flash: flash with java.lang.String = js.native
-  val fluorescent: fluorescent with java.lang.String = js.native
-  val manual: manual with java.lang.String = js.native
-  val tungsten: tungsten with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 7 */ val candlelight: candlelight with scala.Double = js.native
+  /* 2 */ val cloudy: cloudy with scala.Double = js.native
+  /* 3 */ val daylight: daylight with scala.Double = js.native
+  /* 4 */ val flash: flash with scala.Double = js.native
+  /* 5 */ val fluorescent: fluorescent with scala.Double = js.native
+  /* 1 */ val manual: manual with scala.Double = js.native
+  /* 6 */ val tungsten: tungsten with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ColorTemperaturePreset with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ColorTemperaturePreset with scala.Double
   ] = js.native
 }
 

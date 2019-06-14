@@ -27,11 +27,11 @@ object CoreProcessEventsOption extends js.Object {
   sealed trait processUntilQuit
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreProcessEventsOption
   
-  val processAllIfPresent: processAllIfPresent with java.lang.String = js.native
-  val processOneAndAllPending: processOneAndAllPending with java.lang.String = js.native
-  val processOneIfPresent: processOneIfPresent with java.lang.String = js.native
-  val processUntilQuit: processUntilQuit with java.lang.String = js.native
+  /* 3 */ val processAllIfPresent: processAllIfPresent with scala.Double = js.native
+  /* 0 */ val processOneAndAllPending: processOneAndAllPending with scala.Double = js.native
+  /* 1 */ val processOneIfPresent: processOneIfPresent with scala.Double = js.native
+  /* 2 */ val processUntilQuit: processUntilQuit with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreProcessEventsOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreProcessEventsOption with scala.Double] = js.native
 }
 

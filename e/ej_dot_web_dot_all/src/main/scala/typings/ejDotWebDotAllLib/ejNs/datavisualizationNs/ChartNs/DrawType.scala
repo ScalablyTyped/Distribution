@@ -26,12 +26,10 @@ object DrawType extends js.Object {
   sealed trait Line
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.DrawType
   
-  val Area: Area with java.lang.String = js.native
-  val Column: Column with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
+  /* 1 */ val Area: Area with scala.Double = js.native
+  /* 2 */ val Column: Column with scala.Double = js.native
+  /* 0 */ val Line: Line with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.DrawType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.DrawType with scala.Double] = js.native
 }
 

@@ -27,12 +27,12 @@ object CameraCaptureUIPhotoFormat extends js.Object {
   sealed trait png
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIPhotoFormat
   
-  val jpeg: jpeg with java.lang.String = js.native
-  val jpegXR: jpegXR with java.lang.String = js.native
-  val png: png with java.lang.String = js.native
+  /* 0 */ val jpeg: jpeg with scala.Double = js.native
+  /* 2 */ val jpegXR: jpegXR with scala.Double = js.native
+  /* 1 */ val png: png with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIPhotoFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIPhotoFormat with scala.Double
   ] = js.native
 }
 

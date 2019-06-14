@@ -29,12 +29,12 @@ object LabelWriterPrintQuality extends js.Object {
   sealed trait Text
     extends dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.LabelWriterPrintQuality
   
-  val Auto: Auto with java.lang.String = js.native
-  val BarcodeAndGraphics: BarcodeAndGraphics with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
+  /* 2 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val BarcodeAndGraphics: BarcodeAndGraphics with scala.Double = js.native
+  /* 0 */ val Text: Text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.LabelWriterPrintQuality with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.LabelWriterPrintQuality with scala.Double
   ] = js.native
 }
 

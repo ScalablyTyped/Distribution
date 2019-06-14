@@ -27,12 +27,12 @@ object UsbControlTransferType extends js.Object {
   sealed trait vendor
     extends winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbControlTransferType
   
-  val `class`: `class` with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
-  val vendor: vendor with java.lang.String = js.native
+  /* 1 */ val `class`: `class` with scala.Double = js.native
+  /* 0 */ val standard: standard with scala.Double = js.native
+  /* 2 */ val vendor: vendor with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbControlTransferType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbControlTransferType with scala.Double
   ] = js.native
 }
 

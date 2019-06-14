@@ -21,9 +21,9 @@ object EditActorUpdateType extends js.Object {
   sealed trait Uncommitted
     extends sharepointLib.SPNs.JsGridNs.EditActorUpdateType
   
-  val Committed: Committed with java.lang.String = js.native
-  val Uncommitted: Uncommitted with java.lang.String = js.native
+  /* 0 */ val Committed: Committed with scala.Double = js.native
+  /* 1 */ val Uncommitted: Uncommitted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.EditActorUpdateType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.EditActorUpdateType with scala.Double] = js.native
 }
 

@@ -37,14 +37,12 @@ object UsbControlRecipient extends js.Object {
   sealed trait specifiedInterface
     extends winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbControlRecipient
   
-  val defaultInterface: defaultInterface with java.lang.String = js.native
-  val device: device with java.lang.String = js.native
-  val endpoint: endpoint with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val specifiedInterface: specifiedInterface with java.lang.String = js.native
+  /* 4 */ val defaultInterface: defaultInterface with scala.Double = js.native
+  /* 0 */ val device: device with scala.Double = js.native
+  /* 2 */ val endpoint: endpoint with scala.Double = js.native
+  /* 3 */ val other: other with scala.Double = js.native
+  /* 1 */ val specifiedInterface: specifiedInterface with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbControlRecipient with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbControlRecipient with scala.Double] = js.native
 }
 

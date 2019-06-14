@@ -15,10 +15,8 @@ object ECanvasType extends js.Object {
   sealed trait TwoDUI
     extends wonderDotJsLib.distEs2015DeviceDeviceManagerMod.ECanvasType
   
-  val TwoDUI: TwoDUI with java.lang.String = js.native
+  /* 0 */ val TwoDUI: TwoDUI with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015DeviceDeviceManagerMod.ECanvasType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[wonderDotJsLib.distEs2015DeviceDeviceManagerMod.ECanvasType with scala.Double] = js.native
 }
 

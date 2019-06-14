@@ -21,9 +21,9 @@ object ModelType extends js.Object {
   sealed trait Picker
     extends ejDotWebDotAllLib.ejNs.ColorPickerNs.ModelType
   
-  val Palette: Palette with java.lang.String = js.native
-  val Picker: Picker with java.lang.String = js.native
+  /* 0 */ val Palette: Palette with scala.Double = js.native
+  /* 1 */ val Picker: Picker with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ColorPickerNs.ModelType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ColorPickerNs.ModelType with scala.Double] = js.native
 }
 

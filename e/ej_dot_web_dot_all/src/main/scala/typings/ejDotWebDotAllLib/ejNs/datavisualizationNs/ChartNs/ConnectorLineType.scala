@@ -21,11 +21,11 @@ object ConnectorLineType extends js.Object {
   sealed trait Line
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ConnectorLineType
   
-  val Bezier: Bezier with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
+  /* 1 */ val Bezier: Bezier with scala.Double = js.native
+  /* 0 */ val Line: Line with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ConnectorLineType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ConnectorLineType with scala.Double
   ] = js.native
 }
 

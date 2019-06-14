@@ -42,15 +42,15 @@ object EmailMailboxDeleteFolderStatus extends js.Object {
   sealed trait unknownFailure
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxDeleteFolderStatus
   
-  val couldNotDeleteEverything: couldNotDeleteEverything with java.lang.String = js.native
-  val networkError: networkError with java.lang.String = js.native
-  val permissionsError: permissionsError with java.lang.String = js.native
-  val serverError: serverError with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownFailure: unknownFailure with java.lang.String = js.native
+  /* 5 */ val couldNotDeleteEverything: couldNotDeleteEverything with scala.Double = js.native
+  /* 1 */ val networkError: networkError with scala.Double = js.native
+  /* 2 */ val permissionsError: permissionsError with scala.Double = js.native
+  /* 3 */ val serverError: serverError with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 4 */ val unknownFailure: unknownFailure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxDeleteFolderStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxDeleteFolderStatus with scala.Double
   ] = js.native
 }
 

@@ -21,9 +21,9 @@ object ProcessingMode extends js.Object {
   sealed trait Remote
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.ProcessingMode
   
-  val Local: Local with java.lang.String = js.native
-  val Remote: Remote with java.lang.String = js.native
+  /* 1 */ val Local: Local with scala.Double = js.native
+  /* 0 */ val Remote: Remote with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ProcessingMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ProcessingMode with scala.Double] = js.native
 }
 

@@ -72,21 +72,21 @@ object NDCertificatePlatformID extends js.Object {
   sealed trait xboxOne
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificatePlatformID
   
-  val androidOnARM: androidOnARM with java.lang.String = js.native
-  val iOSOnARM: iOSOnARM with java.lang.String = js.native
-  val osx: osx with java.lang.String = js.native
-  val windows: windows with java.lang.String = js.native
-  val windowsMobile7: windowsMobile7 with java.lang.String = js.native
-  val windowsOnARM: windowsOnARM with java.lang.String = js.native
-  val windowsPhone81OnARM: windowsPhone81OnARM with java.lang.String = js.native
-  val windowsPhone81OnX86: windowsPhone81OnX86 with java.lang.String = js.native
-  val windowsPhone8OnARM: windowsPhone8OnARM with java.lang.String = js.native
-  val windowsPhone8OnX86: windowsPhone8OnX86 with java.lang.String = js.native
-  val xboxOnPPC: xboxOnPPC with java.lang.String = js.native
-  val xboxOne: xboxOne with java.lang.String = js.native
+  /* 9 */ val androidOnARM: androidOnARM with scala.Double = js.native
+  /* 4 */ val iOSOnARM: iOSOnARM with scala.Double = js.native
+  /* 1 */ val osx: osx with scala.Double = js.native
+  /* 0 */ val windows: windows with scala.Double = js.native
+  /* 3 */ val windowsMobile7: windowsMobile7 with scala.Double = js.native
+  /* 2 */ val windowsOnARM: windowsOnARM with scala.Double = js.native
+  /* 10 */ val windowsPhone81OnARM: windowsPhone81OnARM with scala.Double = js.native
+  /* 11 */ val windowsPhone81OnX86: windowsPhone81OnX86 with scala.Double = js.native
+  /* 6 */ val windowsPhone8OnARM: windowsPhone8OnARM with scala.Double = js.native
+  /* 7 */ val windowsPhone8OnX86: windowsPhone8OnX86 with scala.Double = js.native
+  /* 5 */ val xboxOnPPC: xboxOnPPC with scala.Double = js.native
+  /* 8 */ val xboxOne: xboxOne with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificatePlatformID with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificatePlatformID with scala.Double
   ] = js.native
 }
 

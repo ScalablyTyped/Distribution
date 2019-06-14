@@ -35,12 +35,12 @@ object EditMode extends js.Object {
   sealed trait ReadWriteDefer
     extends sharepointLib.SPNs.JsGridNs.EditMode
   
-  val Defer: Defer with java.lang.String = js.native
-  val ReadOnly: ReadOnly with java.lang.String = js.native
-  val ReadOnlyDefer: ReadOnlyDefer with java.lang.String = js.native
-  val ReadWrite: ReadWrite with java.lang.String = js.native
-  val ReadWriteDefer: ReadWriteDefer with java.lang.String = js.native
+  /* 4 */ val Defer: Defer with scala.Double = js.native
+  /* 0 */ val ReadOnly: ReadOnly with scala.Double = js.native
+  /* 2 */ val ReadOnlyDefer: ReadOnlyDefer with scala.Double = js.native
+  /* 1 */ val ReadWrite: ReadWrite with scala.Double = js.native
+  /* 3 */ val ReadWriteDefer: ReadWriteDefer with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.EditMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.EditMode with scala.Double] = js.native
 }
 

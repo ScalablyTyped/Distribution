@@ -47,16 +47,16 @@ object EmailSpecialFolderKind extends js.Object {
   sealed trait sent
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailSpecialFolderKind
   
-  val deletedItems: deletedItems with java.lang.String = js.native
-  val drafts: drafts with java.lang.String = js.native
-  val inbox: inbox with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val outbox: outbox with java.lang.String = js.native
-  val root: root with java.lang.String = js.native
-  val sent: sent with java.lang.String = js.native
+  /* 5 */ val deletedItems: deletedItems with scala.Double = js.native
+  /* 4 */ val drafts: drafts with scala.Double = js.native
+  /* 2 */ val inbox: inbox with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val outbox: outbox with scala.Double = js.native
+  /* 1 */ val root: root with scala.Double = js.native
+  /* 6 */ val sent: sent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailSpecialFolderKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailSpecialFolderKind with scala.Double
   ] = js.native
 }
 

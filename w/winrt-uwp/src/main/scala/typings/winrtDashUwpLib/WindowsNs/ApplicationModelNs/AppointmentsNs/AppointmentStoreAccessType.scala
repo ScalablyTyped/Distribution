@@ -27,12 +27,12 @@ object AppointmentStoreAccessType extends js.Object {
   sealed trait appCalendarsReadWrite
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentStoreAccessType
   
-  val allCalendarsReadOnly: allCalendarsReadOnly with java.lang.String = js.native
-  val allCalendarsReadWrite: allCalendarsReadWrite with java.lang.String = js.native
-  val appCalendarsReadWrite: appCalendarsReadWrite with java.lang.String = js.native
+  /* 1 */ val allCalendarsReadOnly: allCalendarsReadOnly with scala.Double = js.native
+  /* 2 */ val allCalendarsReadWrite: allCalendarsReadWrite with scala.Double = js.native
+  /* 0 */ val appCalendarsReadWrite: appCalendarsReadWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentStoreAccessType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentStoreAccessType with scala.Double
   ] = js.native
 }
 

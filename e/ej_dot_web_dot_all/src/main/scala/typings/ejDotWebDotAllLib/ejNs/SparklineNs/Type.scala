@@ -36,12 +36,12 @@ object Type extends js.Object {
   sealed trait WinLoss
     extends ejDotWebDotAllLib.ejNs.SparklineNs.Type
   
-  val Area: Area with java.lang.String = js.native
-  val Column: Column with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
-  val Pie: Pie with java.lang.String = js.native
-  val WinLoss: WinLoss with java.lang.String = js.native
+  /* 0 */ val Area: Area with scala.Double = js.native
+  /* 2 */ val Column: Column with scala.Double = js.native
+  /* 1 */ val Line: Line with scala.Double = js.native
+  /* 3 */ val Pie: Pie with scala.Double = js.native
+  /* 4 */ val WinLoss: WinLoss with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SparklineNs.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SparklineNs.Type with scala.Double] = js.native
 }
 

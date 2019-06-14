@@ -23,10 +23,10 @@ object BlendOption extends js.Object {
   sealed trait TRANSLUCENT
     extends cesiumLib.cesiumMod.BlendOption
   
-  val OPAQUE: OPAQUE with java.lang.String = js.native
-  val OPAQUE_AND_TRANSLUCENT: OPAQUE_AND_TRANSLUCENT with java.lang.String = js.native
-  val TRANSLUCENT: TRANSLUCENT with java.lang.String = js.native
+  /* 0 */ val OPAQUE: OPAQUE with scala.Double = js.native
+  /* 1 */ val OPAQUE_AND_TRANSLUCENT: OPAQUE_AND_TRANSLUCENT with scala.Double = js.native
+  /* 2 */ val TRANSLUCENT: TRANSLUCENT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.BlendOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.BlendOption with scala.Double] = js.native
 }
 

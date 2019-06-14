@@ -22,11 +22,11 @@ object WebAccountSelectionOptions extends js.Object {
   sealed trait `new`
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountSelectionOptions
   
-  val default: default with java.lang.String = js.native
-  val `new`: `new` with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val `new`: `new` with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountSelectionOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountSelectionOptions with scala.Double
   ] = js.native
 }
 

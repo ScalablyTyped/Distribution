@@ -35,13 +35,13 @@ object JsonValueType extends js.Object {
   sealed trait string
     extends winrtLib.WindowsNs.DataNs.JsonNs.JsonValueType
   
-  val array: array with java.lang.String = js.native
-  val boolean: boolean with java.lang.String = js.native
-  val null_ : null_ with java.lang.String = js.native
-  val number: number with java.lang.String = js.native
-  val `object`: `object` with java.lang.String = js.native
-  val string: string with java.lang.String = js.native
+  /* 4 */ val array: array with scala.Double = js.native
+  /* 1 */ val boolean: boolean with scala.Double = js.native
+  /* 0 */ val null_ : null_ with scala.Double = js.native
+  /* 2 */ val number: number with scala.Double = js.native
+  /* 5 */ val `object`: `object` with scala.Double = js.native
+  /* 3 */ val string: string with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DataNs.JsonNs.JsonValueType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DataNs.JsonNs.JsonValueType with scala.Double] = js.native
 }
 

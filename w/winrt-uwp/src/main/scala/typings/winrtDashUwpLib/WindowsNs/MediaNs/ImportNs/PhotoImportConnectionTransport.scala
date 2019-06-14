@@ -32,13 +32,13 @@ object PhotoImportConnectionTransport extends js.Object {
   sealed trait usb
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportConnectionTransport
   
-  val bluetooth: bluetooth with java.lang.String = js.native
-  val ip: ip with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val usb: usb with java.lang.String = js.native
+  /* 3 */ val bluetooth: bluetooth with scala.Double = js.native
+  /* 2 */ val ip: ip with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 1 */ val usb: usb with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportConnectionTransport with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportConnectionTransport with scala.Double
   ] = js.native
 }
 

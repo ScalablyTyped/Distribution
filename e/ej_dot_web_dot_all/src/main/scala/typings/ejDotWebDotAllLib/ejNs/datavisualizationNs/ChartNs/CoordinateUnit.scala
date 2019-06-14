@@ -26,12 +26,12 @@ object CoordinateUnit extends js.Object {
   sealed trait Points
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CoordinateUnit
   
-  val None: None with java.lang.String = js.native
-  val Pixels: Pixels with java.lang.String = js.native
-  val Points: Points with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Pixels: Pixels with scala.Double = js.native
+  /* 2 */ val Points: Points with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CoordinateUnit with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CoordinateUnit with scala.Double
   ] = js.native
 }
 

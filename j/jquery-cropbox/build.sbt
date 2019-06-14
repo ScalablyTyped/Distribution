@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-cropbox"
-version := "0.0-unknown-dt-20190322Z-0b4734"
+version := "0.0-unknown-dt-20190322Z-39ce14"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -36,13 +36,13 @@ object SocialPostAttributes extends js.Object {
   sealed trait useSmallImage
     extends sharepointLib.SPNs.SocialNs.SocialPostAttributes
   
-  val canDelete: canDelete with java.lang.String = js.native
-  val canFollowUp: canFollowUp with java.lang.String = js.native
-  val canLike: canLike with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val useAuthorImage: useAuthorImage with java.lang.String = js.native
-  val useSmallImage: useSmallImage with java.lang.String = js.native
+  /* 2 */ val canDelete: canDelete with scala.Double = js.native
+  /* 5 */ val canFollowUp: canFollowUp with scala.Double = js.native
+  /* 1 */ val canLike: canLike with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val useAuthorImage: useAuthorImage with scala.Double = js.native
+  /* 4 */ val useSmallImage: useSmallImage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialPostAttributes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialPostAttributes with scala.Double] = js.native
 }
 

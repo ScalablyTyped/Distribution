@@ -21,9 +21,9 @@ object CheckboxSize extends js.Object {
   sealed trait Small
     extends ejDotWebDotAllLib.ejNs.CheckboxSize
   
-  val Medium: Medium with java.lang.String = js.native
-  val Small: Small with java.lang.String = js.native
+  /* 0 */ val Medium: Medium with scala.Double = js.native
+  /* 1 */ val Small: Small with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.CheckboxSize with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.CheckboxSize with scala.Double] = js.native
 }
 

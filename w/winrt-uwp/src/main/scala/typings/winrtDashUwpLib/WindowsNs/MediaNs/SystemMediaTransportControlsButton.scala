@@ -62,19 +62,19 @@ object SystemMediaTransportControlsButton extends js.Object {
   sealed trait stop
     extends winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControlsButton
   
-  val channelDown: channelDown with java.lang.String = js.native
-  val channelUp: channelUp with java.lang.String = js.native
-  val fastForward: fastForward with java.lang.String = js.native
-  val next: next with java.lang.String = js.native
-  val pause: pause with java.lang.String = js.native
-  val play: play with java.lang.String = js.native
-  val previous: previous with java.lang.String = js.native
-  val record: record with java.lang.String = js.native
-  val rewind: rewind with java.lang.String = js.native
-  val stop: stop with java.lang.String = js.native
+  /* 9 */ val channelDown: channelDown with scala.Double = js.native
+  /* 8 */ val channelUp: channelUp with scala.Double = js.native
+  /* 4 */ val fastForward: fastForward with scala.Double = js.native
+  /* 6 */ val next: next with scala.Double = js.native
+  /* 1 */ val pause: pause with scala.Double = js.native
+  /* 0 */ val play: play with scala.Double = js.native
+  /* 7 */ val previous: previous with scala.Double = js.native
+  /* 3 */ val record: record with scala.Double = js.native
+  /* 5 */ val rewind: rewind with scala.Double = js.native
+  /* 2 */ val stop: stop with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControlsButton with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControlsButton with scala.Double
   ] = js.native
 }
 

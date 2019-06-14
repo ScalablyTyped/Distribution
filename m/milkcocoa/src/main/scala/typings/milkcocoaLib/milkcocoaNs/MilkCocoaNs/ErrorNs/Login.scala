@@ -24,10 +24,10 @@ object Login extends js.Object {
   sealed trait LoginError
     extends milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.Login
   
-  val EmailNotVerificated: EmailNotVerificated with java.lang.String = js.native
-  val FormatError: FormatError with java.lang.String = js.native
-  val LoginError: LoginError with java.lang.String = js.native
+  /* 2 */ val EmailNotVerificated: EmailNotVerificated with scala.Double = js.native
+  /* 0 */ val FormatError: FormatError with scala.Double = js.native
+  /* 1 */ val LoginError: LoginError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.Login with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.Login with scala.Double] = js.native
 }
 

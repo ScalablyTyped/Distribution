@@ -31,13 +31,13 @@ object DockPosition extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.DockPosition
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 1 */ val Bottom: Bottom with scala.Double = js.native
+  /* 3 */ val Left: Left with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.DockPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.DockPosition with scala.Double
   ] = js.native
 }
 

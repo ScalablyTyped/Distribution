@@ -21,9 +21,9 @@ object Format extends js.Object {
   sealed trait List
     extends ejDotWebDotAllLib.ejNs.Format
   
-  val Cloud: Cloud with java.lang.String = js.native
-  val List: List with java.lang.String = js.native
+  /* 0 */ val Cloud: Cloud with scala.Double = js.native
+  /* 1 */ val List: List with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.Format with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.Format with scala.Double] = js.native
 }
 

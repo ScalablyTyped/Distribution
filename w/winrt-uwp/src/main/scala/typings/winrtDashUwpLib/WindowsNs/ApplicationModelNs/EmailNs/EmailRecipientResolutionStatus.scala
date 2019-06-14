@@ -52,17 +52,17 @@ object EmailRecipientResolutionStatus extends js.Object {
   sealed trait unknownFailure
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailRecipientResolutionStatus
   
-  val ambiguousRecipient: ambiguousRecipient with java.lang.String = js.native
-  val cannotResolveDistributionList: cannotResolveDistributionList with java.lang.String = js.native
-  val certificateRequestLimitReached: certificateRequestLimitReached with java.lang.String = js.native
-  val noCertificate: noCertificate with java.lang.String = js.native
-  val recipientNotFound: recipientNotFound with java.lang.String = js.native
-  val serverError: serverError with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownFailure: unknownFailure with java.lang.String = js.native
+  /* 2 */ val ambiguousRecipient: ambiguousRecipient with scala.Double = js.native
+  /* 5 */ val cannotResolveDistributionList: cannotResolveDistributionList with scala.Double = js.native
+  /* 4 */ val certificateRequestLimitReached: certificateRequestLimitReached with scala.Double = js.native
+  /* 3 */ val noCertificate: noCertificate with scala.Double = js.native
+  /* 1 */ val recipientNotFound: recipientNotFound with scala.Double = js.native
+  /* 6 */ val serverError: serverError with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 7 */ val unknownFailure: unknownFailure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailRecipientResolutionStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailRecipientResolutionStatus with scala.Double
   ] = js.native
 }
 

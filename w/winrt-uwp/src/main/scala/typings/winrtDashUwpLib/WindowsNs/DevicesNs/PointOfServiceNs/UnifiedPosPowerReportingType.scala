@@ -27,12 +27,12 @@ object UnifiedPosPowerReportingType extends js.Object {
   sealed trait unknownPowerReportingType
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosPowerReportingType
   
-  val advanced: advanced with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
-  val unknownPowerReportingType: unknownPowerReportingType with java.lang.String = js.native
+  /* 2 */ val advanced: advanced with scala.Double = js.native
+  /* 1 */ val standard: standard with scala.Double = js.native
+  /* 0 */ val unknownPowerReportingType: unknownPowerReportingType with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosPowerReportingType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosPowerReportingType with scala.Double
   ] = js.native
 }
 

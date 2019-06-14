@@ -27,13 +27,11 @@ object PhoneNumberFormat extends js.Object {
   sealed trait RFC3966
     extends googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberFormat
   
-  val E164: E164 with java.lang.String = js.native
-  val INTERNATIONAL: INTERNATIONAL with java.lang.String = js.native
-  val NATIONAL: NATIONAL with java.lang.String = js.native
-  val RFC3966: RFC3966 with java.lang.String = js.native
+  /* 0 */ val E164: E164 with scala.Double = js.native
+  /* 1 */ val INTERNATIONAL: INTERNATIONAL with scala.Double = js.native
+  /* 2 */ val NATIONAL: NATIONAL with scala.Double = js.native
+  /* 3 */ val RFC3966: RFC3966 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberFormat with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberFormat with scala.Double] = js.native
 }
 

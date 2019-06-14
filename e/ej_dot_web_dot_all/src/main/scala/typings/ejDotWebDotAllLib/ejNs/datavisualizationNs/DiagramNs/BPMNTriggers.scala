@@ -76,22 +76,22 @@ object BPMNTriggers extends js.Object {
   sealed trait Timer
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNTriggers
   
-  val Cancel: Cancel with java.lang.String = js.native
-  val Compensation: Compensation with java.lang.String = js.native
-  val Conditional: Conditional with java.lang.String = js.native
-  val Error: Error with java.lang.String = js.native
-  val Escalation: Escalation with java.lang.String = js.native
-  val Link: Link with java.lang.String = js.native
-  val Message: Message with java.lang.String = js.native
-  val Multiple: Multiple with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Parallel: Parallel with java.lang.String = js.native
-  val Signal: Signal with java.lang.String = js.native
-  val Terminate: Terminate with java.lang.String = js.native
-  val Timer: Timer with java.lang.String = js.native
+  /* 12 */ val Cancel: Cancel with scala.Double = js.native
+  /* 6 */ val Compensation: Compensation with scala.Double = js.native
+  /* 10 */ val Conditional: Conditional with scala.Double = js.native
+  /* 5 */ val Error: Error with scala.Double = js.native
+  /* 3 */ val Escalation: Escalation with scala.Double = js.native
+  /* 4 */ val Link: Link with scala.Double = js.native
+  /* 1 */ val Message: Message with scala.Double = js.native
+  /* 8 */ val Multiple: Multiple with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 9 */ val Parallel: Parallel with scala.Double = js.native
+  /* 7 */ val Signal: Signal with scala.Double = js.native
+  /* 11 */ val Terminate: Terminate with scala.Double = js.native
+  /* 2 */ val Timer: Timer with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNTriggers with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNTriggers with scala.Double
   ] = js.native
 }
 

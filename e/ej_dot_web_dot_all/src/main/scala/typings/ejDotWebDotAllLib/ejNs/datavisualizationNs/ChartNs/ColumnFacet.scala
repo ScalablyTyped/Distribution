@@ -21,11 +21,9 @@ object ColumnFacet extends js.Object {
   sealed trait Rectangle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ColumnFacet
   
-  val Cylinder: Cylinder with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
+  /* 1 */ val Cylinder: Cylinder with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ColumnFacet with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ColumnFacet with scala.Double] = js.native
 }
 

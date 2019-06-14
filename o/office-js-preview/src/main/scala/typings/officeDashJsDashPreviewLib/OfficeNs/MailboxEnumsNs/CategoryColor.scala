@@ -206,35 +206,35 @@ object CategoryColor extends js.Object {
   sealed trait Preset9
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.CategoryColor
   
-  val None: None with java.lang.String = js.native
-  val Preset0: Preset0 with java.lang.String = js.native
-  val Preset1: Preset1 with java.lang.String = js.native
-  val Preset10: Preset10 with java.lang.String = js.native
-  val Preset11: Preset11 with java.lang.String = js.native
-  val Preset12: Preset12 with java.lang.String = js.native
-  val Preset13: Preset13 with java.lang.String = js.native
-  val Preset14: Preset14 with java.lang.String = js.native
-  val Preset15: Preset15 with java.lang.String = js.native
-  val Preset16: Preset16 with java.lang.String = js.native
-  val Preset17: Preset17 with java.lang.String = js.native
-  val Preset18: Preset18 with java.lang.String = js.native
-  val Preset19: Preset19 with java.lang.String = js.native
-  val Preset2: Preset2 with java.lang.String = js.native
-  val Preset20: Preset20 with java.lang.String = js.native
-  val Preset21: Preset21 with java.lang.String = js.native
-  val Preset22: Preset22 with java.lang.String = js.native
-  val Preset23: Preset23 with java.lang.String = js.native
-  val Preset24: Preset24 with java.lang.String = js.native
-  val Preset3: Preset3 with java.lang.String = js.native
-  val Preset4: Preset4 with java.lang.String = js.native
-  val Preset5: Preset5 with java.lang.String = js.native
-  val Preset6: Preset6 with java.lang.String = js.native
-  val Preset7: Preset7 with java.lang.String = js.native
-  val Preset8: Preset8 with java.lang.String = js.native
-  val Preset9: Preset9 with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Preset0: Preset0 with scala.Double = js.native
+  /* 2 */ val Preset1: Preset1 with scala.Double = js.native
+  /* 11 */ val Preset10: Preset10 with scala.Double = js.native
+  /* 12 */ val Preset11: Preset11 with scala.Double = js.native
+  /* 13 */ val Preset12: Preset12 with scala.Double = js.native
+  /* 14 */ val Preset13: Preset13 with scala.Double = js.native
+  /* 15 */ val Preset14: Preset14 with scala.Double = js.native
+  /* 16 */ val Preset15: Preset15 with scala.Double = js.native
+  /* 17 */ val Preset16: Preset16 with scala.Double = js.native
+  /* 18 */ val Preset17: Preset17 with scala.Double = js.native
+  /* 19 */ val Preset18: Preset18 with scala.Double = js.native
+  /* 20 */ val Preset19: Preset19 with scala.Double = js.native
+  /* 3 */ val Preset2: Preset2 with scala.Double = js.native
+  /* 21 */ val Preset20: Preset20 with scala.Double = js.native
+  /* 22 */ val Preset21: Preset21 with scala.Double = js.native
+  /* 23 */ val Preset22: Preset22 with scala.Double = js.native
+  /* 24 */ val Preset23: Preset23 with scala.Double = js.native
+  /* 25 */ val Preset24: Preset24 with scala.Double = js.native
+  /* 4 */ val Preset3: Preset3 with scala.Double = js.native
+  /* 5 */ val Preset4: Preset4 with scala.Double = js.native
+  /* 6 */ val Preset5: Preset5 with scala.Double = js.native
+  /* 7 */ val Preset6: Preset6 with scala.Double = js.native
+  /* 8 */ val Preset7: Preset7 with scala.Double = js.native
+  /* 9 */ val Preset8: Preset8 with scala.Double = js.native
+  /* 10 */ val Preset9: Preset9 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.CategoryColor with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.CategoryColor with scala.Double
   ] = js.native
 }
 

@@ -31,14 +31,14 @@ object DataExecutionState extends js.Object {
   sealed trait SUCCESS
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataExecutionState
   
-  val DATA_EXECUTION_STATE_UNSUPPORTED: DATA_EXECUTION_STATE_UNSUPPORTED with java.lang.String = js.native
-  val ERROR: ERROR with java.lang.String = js.native
-  val NOT_STARTED: NOT_STARTED with java.lang.String = js.native
-  val RUNNING: RUNNING with java.lang.String = js.native
-  val SUCCESS: SUCCESS with java.lang.String = js.native
+  /* 0 */ val DATA_EXECUTION_STATE_UNSUPPORTED: DATA_EXECUTION_STATE_UNSUPPORTED with scala.Double = js.native
+  /* 3 */ val ERROR: ERROR with scala.Double = js.native
+  /* 4 */ val NOT_STARTED: NOT_STARTED with scala.Double = js.native
+  /* 1 */ val RUNNING: RUNNING with scala.Double = js.native
+  /* 2 */ val SUCCESS: SUCCESS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataExecutionState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataExecutionState with scala.Double
   ] = js.native
 }
 

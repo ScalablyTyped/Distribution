@@ -32,13 +32,13 @@ object TranscodeFailureReason extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.TranscodingNs.TranscodeFailureReason
   
-  val codecNotFound: codecNotFound with java.lang.String = js.native
-  val invalidProfile: invalidProfile with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val codecNotFound: codecNotFound with scala.Double = js.native
+  /* 2 */ val invalidProfile: invalidProfile with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.TranscodingNs.TranscodeFailureReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.TranscodingNs.TranscodeFailureReason with scala.Double
   ] = js.native
 }
 

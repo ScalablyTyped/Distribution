@@ -27,12 +27,12 @@ object NDProximityDetectionType extends js.Object {
   sealed trait udp
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDProximityDetectionType
   
-  val tcp: tcp with java.lang.String = js.native
-  val transportAgnostic: transportAgnostic with java.lang.String = js.native
-  val udp: udp with java.lang.String = js.native
+  /* 1 */ val tcp: tcp with scala.Double = js.native
+  /* 2 */ val transportAgnostic: transportAgnostic with scala.Double = js.native
+  /* 0 */ val udp: udp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDProximityDetectionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDProximityDetectionType with scala.Double
   ] = js.native
 }
 

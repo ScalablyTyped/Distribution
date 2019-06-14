@@ -27,12 +27,12 @@ object RecurrenceType extends js.Object {
   sealed trait master
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.RecurrenceType
   
-  val exceptionInstance: exceptionInstance with java.lang.String = js.native
-  val instance: instance with java.lang.String = js.native
-  val master: master with java.lang.String = js.native
+  /* 2 */ val exceptionInstance: exceptionInstance with scala.Double = js.native
+  /* 1 */ val instance: instance with scala.Double = js.native
+  /* 0 */ val master: master with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.RecurrenceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.RecurrenceType with scala.Double
   ] = js.native
 }
 

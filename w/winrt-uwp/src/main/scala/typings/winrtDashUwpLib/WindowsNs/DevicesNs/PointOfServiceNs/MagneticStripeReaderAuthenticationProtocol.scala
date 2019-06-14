@@ -22,11 +22,11 @@ object MagneticStripeReaderAuthenticationProtocol extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderAuthenticationProtocol
   
-  val challengeResponse: challengeResponse with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val challengeResponse: challengeResponse with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderAuthenticationProtocol with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderAuthenticationProtocol with scala.Double
   ] = js.native
 }
 

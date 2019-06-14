@@ -26,12 +26,12 @@ object Horizontal extends js.Object {
   sealed trait Right
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Horizontal
   
-  val Center: Center with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 1 */ val Center: Center with scala.Double = js.native
+  /* 0 */ val Left: Left with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Horizontal with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Horizontal with scala.Double
   ] = js.native
 }
 

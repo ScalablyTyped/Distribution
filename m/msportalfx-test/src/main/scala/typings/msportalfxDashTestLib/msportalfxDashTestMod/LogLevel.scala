@@ -35,13 +35,13 @@ object LogLevel extends js.Object {
   sealed trait Warning
     extends msportalfxDashTestLib.msportalfxDashTestMod.LogLevel
   
-  val All: All with java.lang.String = js.native
-  val Debug: Debug with java.lang.String = js.native
-  val Info: Info with java.lang.String = js.native
-  val Off: Off with java.lang.String = js.native
-  val Severe: Severe with java.lang.String = js.native
-  val Warning: Warning with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 1 */ val Debug: Debug with scala.Double = js.native
+  /* 2 */ val Info: Info with scala.Double = js.native
+  /* 5 */ val Off: Off with scala.Double = js.native
+  /* 4 */ val Severe: Severe with scala.Double = js.native
+  /* 3 */ val Warning: Warning with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[msportalfxDashTestLib.msportalfxDashTestMod.LogLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[msportalfxDashTestLib.msportalfxDashTestMod.LogLevel with scala.Double] = js.native
 }
 

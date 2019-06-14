@@ -87,22 +87,22 @@ object SmsBroadcastType extends js.Object {
   sealed trait other
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsBroadcastType
   
-  val cmasAmber: cmasAmber with java.lang.String = js.native
-  val cmasExtreme: cmasExtreme with java.lang.String = js.native
-  val cmasPresidential: cmasPresidential with java.lang.String = js.native
-  val cmasSevere: cmasSevere with java.lang.String = js.native
-  val cmasTest: cmasTest with java.lang.String = js.native
-  val etwsEarthquake: etwsEarthquake with java.lang.String = js.native
-  val etwsTsunami: etwsTsunami with java.lang.String = js.native
-  val etwsTsunamiAndEarthquake: etwsTsunamiAndEarthquake with java.lang.String = js.native
-  val euAlert1: euAlert1 with java.lang.String = js.native
-  val euAlert2: euAlert2 with java.lang.String = js.native
-  val euAlert3: euAlert3 with java.lang.String = js.native
-  val euAlertAmber: euAlertAmber with java.lang.String = js.native
-  val euAlertInfo: euAlertInfo with java.lang.String = js.native
-  val latAlertLocal: latAlertLocal with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
+  /* 4 */ val cmasAmber: cmasAmber with scala.Double = js.native
+  /* 2 */ val cmasExtreme: cmasExtreme with scala.Double = js.native
+  /* 1 */ val cmasPresidential: cmasPresidential with scala.Double = js.native
+  /* 3 */ val cmasSevere: cmasSevere with scala.Double = js.native
+  /* 5 */ val cmasTest: cmasTest with scala.Double = js.native
+  /* 11 */ val etwsEarthquake: etwsEarthquake with scala.Double = js.native
+  /* 12 */ val etwsTsunami: etwsTsunami with scala.Double = js.native
+  /* 13 */ val etwsTsunamiAndEarthquake: etwsTsunamiAndEarthquake with scala.Double = js.native
+  /* 6 */ val euAlert1: euAlert1 with scala.Double = js.native
+  /* 7 */ val euAlert2: euAlert2 with scala.Double = js.native
+  /* 8 */ val euAlert3: euAlert3 with scala.Double = js.native
+  /* 9 */ val euAlertAmber: euAlertAmber with scala.Double = js.native
+  /* 10 */ val euAlertInfo: euAlertInfo with scala.Double = js.native
+  /* 14 */ val latAlertLocal: latAlertLocal with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsBroadcastType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsBroadcastType with scala.Double] = js.native
 }
 

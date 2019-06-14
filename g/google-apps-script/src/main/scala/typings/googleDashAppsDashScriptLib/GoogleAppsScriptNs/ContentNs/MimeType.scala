@@ -47,18 +47,18 @@ object MimeType extends js.Object {
   sealed trait XML
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContentNs.MimeType
   
-  val ATOM: ATOM with java.lang.String = js.native
-  val CSV: CSV with java.lang.String = js.native
-  val ICAL: ICAL with java.lang.String = js.native
-  val JAVASCRIPT: JAVASCRIPT with java.lang.String = js.native
-  val JSON: JSON with java.lang.String = js.native
-  val RSS: RSS with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
-  val VCARD: VCARD with java.lang.String = js.native
-  val XML: XML with java.lang.String = js.native
+  /* 0 */ val ATOM: ATOM with scala.Double = js.native
+  /* 1 */ val CSV: CSV with scala.Double = js.native
+  /* 2 */ val ICAL: ICAL with scala.Double = js.native
+  /* 3 */ val JAVASCRIPT: JAVASCRIPT with scala.Double = js.native
+  /* 4 */ val JSON: JSON with scala.Double = js.native
+  /* 5 */ val RSS: RSS with scala.Double = js.native
+  /* 6 */ val TEXT: TEXT with scala.Double = js.native
+  /* 7 */ val VCARD: VCARD with scala.Double = js.native
+  /* 8 */ val XML: XML with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContentNs.MimeType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContentNs.MimeType with scala.Double
   ] = js.native
 }
 

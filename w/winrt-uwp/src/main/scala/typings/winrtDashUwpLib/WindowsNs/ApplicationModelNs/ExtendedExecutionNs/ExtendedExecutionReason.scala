@@ -27,12 +27,12 @@ object ExtendedExecutionReason extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionReason
   
-  val locationTracking: locationTracking with java.lang.String = js.native
-  val savingData: savingData with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 1 */ val locationTracking: locationTracking with scala.Double = js.native
+  /* 2 */ val savingData: savingData with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionReason with scala.Double
   ] = js.native
 }
 

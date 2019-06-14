@@ -67,20 +67,20 @@ object ChatMessageValidationStatus extends js.Object {
   sealed trait valid
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageValidationStatus
   
-  val invalidBody: invalidBody with java.lang.String = js.native
-  val invalidData: invalidData with java.lang.String = js.native
-  val invalidOther: invalidOther with java.lang.String = js.native
-  val invalidRecipients: invalidRecipients with java.lang.String = js.native
-  val messageTooLarge: messageTooLarge with java.lang.String = js.native
-  val noRecipients: noRecipients with java.lang.String = js.native
-  val tooManyAttachments: tooManyAttachments with java.lang.String = js.native
-  val tooManyRecipients: tooManyRecipients with java.lang.String = js.native
-  val transportInactive: transportInactive with java.lang.String = js.native
-  val transportNotFound: transportNotFound with java.lang.String = js.native
-  val valid: valid with java.lang.String = js.native
+  /* 9 */ val invalidBody: invalidBody with scala.Double = js.native
+  /* 2 */ val invalidData: invalidData with scala.Double = js.native
+  /* 10 */ val invalidOther: invalidOther with scala.Double = js.native
+  /* 8 */ val invalidRecipients: invalidRecipients with scala.Double = js.native
+  /* 3 */ val messageTooLarge: messageTooLarge with scala.Double = js.native
+  /* 1 */ val noRecipients: noRecipients with scala.Double = js.native
+  /* 7 */ val tooManyAttachments: tooManyAttachments with scala.Double = js.native
+  /* 4 */ val tooManyRecipients: tooManyRecipients with scala.Double = js.native
+  /* 5 */ val transportInactive: transportInactive with scala.Double = js.native
+  /* 6 */ val transportNotFound: transportNotFound with scala.Double = js.native
+  /* 0 */ val valid: valid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageValidationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageValidationStatus with scala.Double
   ] = js.native
 }
 

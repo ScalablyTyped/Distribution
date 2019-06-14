@@ -39,3 +39,68 @@ import scala.scalajs.js.annotation._
 */
 trait WdBuiltInProperty extends js.Object
 
+object WdBuiltInProperty {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdPropertyAppName: activexDashWordLib.activexDashWordLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def wdPropertyAuthor: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdPropertyBytes: activexDashWordLib.activexDashWordLibNumbers.`22` = this.cast(22)
+  @scala.inline
+  def wdPropertyCategory: activexDashWordLib.activexDashWordLibNumbers.`18` = this.cast(18)
+  @scala.inline
+  def wdPropertyCharacters: activexDashWordLib.activexDashWordLibNumbers.`16` = this.cast(16)
+  @scala.inline
+  def wdPropertyCharsWSpaces: activexDashWordLib.activexDashWordLibNumbers.`30` = this.cast(30)
+  @scala.inline
+  def wdPropertyComments: activexDashWordLib.activexDashWordLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def wdPropertyCompany: activexDashWordLib.activexDashWordLibNumbers.`21` = this.cast(21)
+  @scala.inline
+  def wdPropertyFormat: activexDashWordLib.activexDashWordLibNumbers.`19` = this.cast(19)
+  @scala.inline
+  def wdPropertyHiddenSlides: activexDashWordLib.activexDashWordLibNumbers.`27` = this.cast(27)
+  @scala.inline
+  def wdPropertyHyperlinkBase: activexDashWordLib.activexDashWordLibNumbers.`29` = this.cast(29)
+  @scala.inline
+  def wdPropertyKeywords: activexDashWordLib.activexDashWordLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def wdPropertyLastAuthor: activexDashWordLib.activexDashWordLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def wdPropertyLines: activexDashWordLib.activexDashWordLibNumbers.`23` = this.cast(23)
+  @scala.inline
+  def wdPropertyMMClips: activexDashWordLib.activexDashWordLibNumbers.`28` = this.cast(28)
+  @scala.inline
+  def wdPropertyManager: activexDashWordLib.activexDashWordLibNumbers.`20` = this.cast(20)
+  @scala.inline
+  def wdPropertyNotes: activexDashWordLib.activexDashWordLibNumbers.`26` = this.cast(26)
+  @scala.inline
+  def wdPropertyPages: activexDashWordLib.activexDashWordLibNumbers.`14` = this.cast(14)
+  @scala.inline
+  def wdPropertyParas: activexDashWordLib.activexDashWordLibNumbers.`24` = this.cast(24)
+  @scala.inline
+  def wdPropertyRevision: activexDashWordLib.activexDashWordLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def wdPropertySecurity: activexDashWordLib.activexDashWordLibNumbers.`17` = this.cast(17)
+  @scala.inline
+  def wdPropertySlides: activexDashWordLib.activexDashWordLibNumbers.`25` = this.cast(25)
+  @scala.inline
+  def wdPropertySubject: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdPropertyTemplate: activexDashWordLib.activexDashWordLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def wdPropertyTimeCreated: activexDashWordLib.activexDashWordLibNumbers.`11` = this.cast(11)
+  @scala.inline
+  def wdPropertyTimeLastPrinted: activexDashWordLib.activexDashWordLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def wdPropertyTimeLastSaved: activexDashWordLib.activexDashWordLibNumbers.`12` = this.cast(12)
+  @scala.inline
+  def wdPropertyTitle: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdPropertyVBATotalEdit: activexDashWordLib.activexDashWordLibNumbers.`13` = this.cast(13)
+  @scala.inline
+  def wdPropertyWords: activexDashWordLib.activexDashWordLibNumbers.`15` = this.cast(15)
+}
+

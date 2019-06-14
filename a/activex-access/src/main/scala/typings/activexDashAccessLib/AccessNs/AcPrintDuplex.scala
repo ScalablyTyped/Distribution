@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait AcPrintDuplex extends js.Object
 
+object AcPrintDuplex {
+  @scala.inline
+  def acPRDPHorizontal: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acPRDPSimplex: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acPRDPVertical: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

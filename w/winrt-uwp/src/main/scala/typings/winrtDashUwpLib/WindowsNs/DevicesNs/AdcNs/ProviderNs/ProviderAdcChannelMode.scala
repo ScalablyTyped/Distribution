@@ -22,11 +22,11 @@ object ProviderAdcChannelMode extends js.Object {
   sealed trait singleEnded
     extends winrtDashUwpLib.WindowsNs.DevicesNs.AdcNs.ProviderNs.ProviderAdcChannelMode
   
-  val differential: differential with java.lang.String = js.native
-  val singleEnded: singleEnded with java.lang.String = js.native
+  /* 1 */ val differential: differential with scala.Double = js.native
+  /* 0 */ val singleEnded: singleEnded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.AdcNs.ProviderNs.ProviderAdcChannelMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.AdcNs.ProviderNs.ProviderAdcChannelMode with scala.Double
   ] = js.native
 }
 

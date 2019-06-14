@@ -23,10 +23,10 @@ object DistanceMatrixElementStatus extends js.Object {
   sealed trait ZERO_RESULTS
     extends googlemapsLib.googleNs.mapsNs.DistanceMatrixElementStatus
   
-  val NOT_FOUND: NOT_FOUND with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val ZERO_RESULTS: ZERO_RESULTS with java.lang.String = js.native
+  /* 0 */ val NOT_FOUND: NOT_FOUND with scala.Double = js.native
+  /* 1 */ val OK: OK with scala.Double = js.native
+  /* 2 */ val ZERO_RESULTS: ZERO_RESULTS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.DistanceMatrixElementStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.DistanceMatrixElementStatus with scala.Double] = js.native
 }
 

@@ -36,12 +36,12 @@ object AutoFillOptions extends js.Object {
   sealed trait FlashFill
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.AutoFillOptions
   
-  val CopyCells: CopyCells with java.lang.String = js.native
-  val FillFormattingOnly: FillFormattingOnly with java.lang.String = js.native
-  val FillSeries: FillSeries with java.lang.String = js.native
-  val FillWithoutFormatting: FillWithoutFormatting with java.lang.String = js.native
-  val FlashFill: FlashFill with java.lang.String = js.native
+  /* 0 */ val CopyCells: CopyCells with scala.Double = js.native
+  /* 2 */ val FillFormattingOnly: FillFormattingOnly with scala.Double = js.native
+  /* 1 */ val FillSeries: FillSeries with scala.Double = js.native
+  /* 3 */ val FillWithoutFormatting: FillWithoutFormatting with scala.Double = js.native
+  /* 4 */ val FlashFill: FlashFill with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.AutoFillOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.AutoFillOptions with scala.Double] = js.native
 }
 

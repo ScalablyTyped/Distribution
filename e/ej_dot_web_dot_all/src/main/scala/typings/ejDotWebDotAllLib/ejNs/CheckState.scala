@@ -26,10 +26,10 @@ object CheckState extends js.Object {
   sealed trait Uncheck
     extends ejDotWebDotAllLib.ejNs.CheckState
   
-  val Check: Check with java.lang.String = js.native
-  val Indeterminate: Indeterminate with java.lang.String = js.native
-  val Uncheck: Uncheck with java.lang.String = js.native
+  /* 1 */ val Check: Check with scala.Double = js.native
+  /* 2 */ val Indeterminate: Indeterminate with scala.Double = js.native
+  /* 0 */ val Uncheck: Uncheck with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.CheckState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.CheckState with scala.Double] = js.native
 }
 

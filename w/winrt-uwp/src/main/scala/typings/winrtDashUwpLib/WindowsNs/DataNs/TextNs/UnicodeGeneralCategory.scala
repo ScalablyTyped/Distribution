@@ -162,39 +162,37 @@ object UnicodeGeneralCategory extends js.Object {
   sealed trait uppercaseLetter
     extends winrtDashUwpLib.WindowsNs.DataNs.TextNs.UnicodeGeneralCategory
   
-  val closePunctuation: closePunctuation with java.lang.String = js.native
-  val connectorPunctuation: connectorPunctuation with java.lang.String = js.native
-  val control: control with java.lang.String = js.native
-  val currencySymbol: currencySymbol with java.lang.String = js.native
-  val dashPunctuation: dashPunctuation with java.lang.String = js.native
-  val decimalDigitNumber: decimalDigitNumber with java.lang.String = js.native
-  val enclosingMark: enclosingMark with java.lang.String = js.native
-  val finalQuotePunctuation: finalQuotePunctuation with java.lang.String = js.native
-  val format: format with java.lang.String = js.native
-  val initialQuotePunctuation: initialQuotePunctuation with java.lang.String = js.native
-  val letterNumber: letterNumber with java.lang.String = js.native
-  val lineSeparator: lineSeparator with java.lang.String = js.native
-  val lowercaseLetter: lowercaseLetter with java.lang.String = js.native
-  val mathSymbol: mathSymbol with java.lang.String = js.native
-  val modifierLetter: modifierLetter with java.lang.String = js.native
-  val modifierSymbol: modifierSymbol with java.lang.String = js.native
-  val nonspacingMark: nonspacingMark with java.lang.String = js.native
-  val notAssigned: notAssigned with java.lang.String = js.native
-  val openPunctuation: openPunctuation with java.lang.String = js.native
-  val otherLetter: otherLetter with java.lang.String = js.native
-  val otherNumber: otherNumber with java.lang.String = js.native
-  val otherPunctuation: otherPunctuation with java.lang.String = js.native
-  val otherSymbol: otherSymbol with java.lang.String = js.native
-  val paragraphSeparator: paragraphSeparator with java.lang.String = js.native
-  val privateUse: privateUse with java.lang.String = js.native
-  val spaceSeparator: spaceSeparator with java.lang.String = js.native
-  val spacingCombiningMark: spacingCombiningMark with java.lang.String = js.native
-  val surrogate: surrogate with java.lang.String = js.native
-  val titlecaseLetter: titlecaseLetter with java.lang.String = js.native
-  val uppercaseLetter: uppercaseLetter with java.lang.String = js.native
+  /* 21 */ val closePunctuation: closePunctuation with scala.Double = js.native
+  /* 18 */ val connectorPunctuation: connectorPunctuation with scala.Double = js.native
+  /* 14 */ val control: control with scala.Double = js.native
+  /* 26 */ val currencySymbol: currencySymbol with scala.Double = js.native
+  /* 19 */ val dashPunctuation: dashPunctuation with scala.Double = js.native
+  /* 8 */ val decimalDigitNumber: decimalDigitNumber with scala.Double = js.native
+  /* 7 */ val enclosingMark: enclosingMark with scala.Double = js.native
+  /* 23 */ val finalQuotePunctuation: finalQuotePunctuation with scala.Double = js.native
+  /* 15 */ val format: format with scala.Double = js.native
+  /* 22 */ val initialQuotePunctuation: initialQuotePunctuation with scala.Double = js.native
+  /* 9 */ val letterNumber: letterNumber with scala.Double = js.native
+  /* 12 */ val lineSeparator: lineSeparator with scala.Double = js.native
+  /* 1 */ val lowercaseLetter: lowercaseLetter with scala.Double = js.native
+  /* 25 */ val mathSymbol: mathSymbol with scala.Double = js.native
+  /* 3 */ val modifierLetter: modifierLetter with scala.Double = js.native
+  /* 27 */ val modifierSymbol: modifierSymbol with scala.Double = js.native
+  /* 5 */ val nonspacingMark: nonspacingMark with scala.Double = js.native
+  /* 29 */ val notAssigned: notAssigned with scala.Double = js.native
+  /* 20 */ val openPunctuation: openPunctuation with scala.Double = js.native
+  /* 4 */ val otherLetter: otherLetter with scala.Double = js.native
+  /* 10 */ val otherNumber: otherNumber with scala.Double = js.native
+  /* 24 */ val otherPunctuation: otherPunctuation with scala.Double = js.native
+  /* 28 */ val otherSymbol: otherSymbol with scala.Double = js.native
+  /* 13 */ val paragraphSeparator: paragraphSeparator with scala.Double = js.native
+  /* 17 */ val privateUse: privateUse with scala.Double = js.native
+  /* 11 */ val spaceSeparator: spaceSeparator with scala.Double = js.native
+  /* 6 */ val spacingCombiningMark: spacingCombiningMark with scala.Double = js.native
+  /* 16 */ val surrogate: surrogate with scala.Double = js.native
+  /* 2 */ val titlecaseLetter: titlecaseLetter with scala.Double = js.native
+  /* 0 */ val uppercaseLetter: uppercaseLetter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DataNs.TextNs.UnicodeGeneralCategory with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DataNs.TextNs.UnicodeGeneralCategory with scala.Double] = js.native
 }
 

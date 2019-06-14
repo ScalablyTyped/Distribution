@@ -42,15 +42,15 @@ object WiFiDirectServiceSessionErrorStatus extends js.Object {
   sealed trait systemFailure
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceSessionErrorStatus
   
-  val disassociated: disassociated with java.lang.String = js.native
-  val localClose: localClose with java.lang.String = js.native
-  val noResponseFromRemote: noResponseFromRemote with java.lang.String = js.native
-  val ok: ok with java.lang.String = js.native
-  val remoteClose: remoteClose with java.lang.String = js.native
-  val systemFailure: systemFailure with java.lang.String = js.native
+  /* 1 */ val disassociated: disassociated with scala.Double = js.native
+  /* 2 */ val localClose: localClose with scala.Double = js.native
+  /* 5 */ val noResponseFromRemote: noResponseFromRemote with scala.Double = js.native
+  /* 0 */ val ok: ok with scala.Double = js.native
+  /* 3 */ val remoteClose: remoteClose with scala.Double = js.native
+  /* 4 */ val systemFailure: systemFailure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceSessionErrorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceSessionErrorStatus with scala.Double
   ] = js.native
 }
 

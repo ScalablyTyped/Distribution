@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlTimeUnit extends js.Object
 
+object XlTimeUnit {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlDays: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlMonths: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlYears: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

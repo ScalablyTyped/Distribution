@@ -31,14 +31,12 @@ object Access extends js.Object {
   sealed trait PRIVATE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.Access
   
-  val ANYONE: ANYONE with java.lang.String = js.native
-  val ANYONE_WITH_LINK: ANYONE_WITH_LINK with java.lang.String = js.native
-  val DOMAIN: DOMAIN with java.lang.String = js.native
-  val DOMAIN_WITH_LINK: DOMAIN_WITH_LINK with java.lang.String = js.native
-  val PRIVATE: PRIVATE with java.lang.String = js.native
+  /* 0 */ val ANYONE: ANYONE with scala.Double = js.native
+  /* 1 */ val ANYONE_WITH_LINK: ANYONE_WITH_LINK with scala.Double = js.native
+  /* 2 */ val DOMAIN: DOMAIN with scala.Double = js.native
+  /* 3 */ val DOMAIN_WITH_LINK: DOMAIN_WITH_LINK with scala.Double = js.native
+  /* 4 */ val PRIVATE: PRIVATE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.Access with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.Access with scala.Double] = js.native
 }
 

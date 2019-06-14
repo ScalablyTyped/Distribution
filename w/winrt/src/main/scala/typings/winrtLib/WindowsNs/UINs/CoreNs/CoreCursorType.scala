@@ -67,22 +67,22 @@ object CoreCursorType extends js.Object {
   sealed trait wait
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreCursorType
   
-  val arrow: arrow with java.lang.String = js.native
-  val cross: cross with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val hand: hand with java.lang.String = js.native
-  val help: help with java.lang.String = js.native
-  val iBeam: iBeam with java.lang.String = js.native
-  val sizeAll: sizeAll with java.lang.String = js.native
-  val sizeNorthSouth: sizeNorthSouth with java.lang.String = js.native
-  val sizeNortheastSouthwest: sizeNortheastSouthwest with java.lang.String = js.native
-  val sizeNorthwestSoutheast: sizeNorthwestSoutheast with java.lang.String = js.native
-  val sizeWestEast: sizeWestEast with java.lang.String = js.native
-  val universalNo: universalNo with java.lang.String = js.native
-  val upArrow: upArrow with java.lang.String = js.native
-  @JSName("wait")
-  val wait_FCoreCursorType: wait with java.lang.String = js.native
+  /* 0 */ val arrow: arrow with scala.Double = js.native
+  /* 1 */ val cross: cross with scala.Double = js.native
+  /* 2 */ val custom: custom with scala.Double = js.native
+  /* 3 */ val hand: hand with scala.Double = js.native
+  /* 4 */ val help: help with scala.Double = js.native
+  /* 5 */ val iBeam: iBeam with scala.Double = js.native
+  /* 6 */ val sizeAll: sizeAll with scala.Double = js.native
+  /* 8 */ val sizeNorthSouth: sizeNorthSouth with scala.Double = js.native
+  /* 7 */ val sizeNortheastSouthwest: sizeNortheastSouthwest with scala.Double = js.native
+  /* 9 */ val sizeNorthwestSoutheast: sizeNorthwestSoutheast with scala.Double = js.native
+  /* 10 */ val sizeWestEast: sizeWestEast with scala.Double = js.native
+  /* 11 */ val universalNo: universalNo with scala.Double = js.native
+  /* 12 */ val upArrow: upArrow with scala.Double = js.native
+  /* 13 */ @JSName("wait")
+  val wait_FCoreCursorType: wait with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreCursorType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreCursorType with scala.Double] = js.native
 }
 

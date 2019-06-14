@@ -53,15 +53,13 @@ object UserStatuses extends js.Object {
   sealed trait XA
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.UserStatuses
   
-  val Away: Away with java.lang.String = js.native
-  val Chat: Chat with java.lang.String = js.native
-  val DND: DND with java.lang.String = js.native
-  val Offline: Offline with java.lang.String = js.native
-  val Online: Online with java.lang.String = js.native
-  val XA: XA with java.lang.String = js.native
+  /* 0 */ val Away: Away with scala.Double = js.native
+  /* 1 */ val Chat: Chat with scala.Double = js.native
+  /* 2 */ val DND: DND with scala.Double = js.native
+  /* 3 */ val Offline: Offline with scala.Double = js.native
+  /* 4 */ val Online: Online with scala.Double = js.native
+  /* 5 */ val XA: XA with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.UserStatuses with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.UserStatuses with scala.Double] = js.native
 }
 

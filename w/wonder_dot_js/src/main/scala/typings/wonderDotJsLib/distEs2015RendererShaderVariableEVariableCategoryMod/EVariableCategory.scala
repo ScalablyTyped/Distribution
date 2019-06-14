@@ -19,11 +19,11 @@ object EVariableCategory extends js.Object {
   sealed trait ENGINE
     extends wonderDotJsLib.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory
   
-  val CUSTOM: CUSTOM with java.lang.String = js.native
-  val ENGINE: ENGINE with java.lang.String = js.native
+  /* 1 */ val CUSTOM: CUSTOM with scala.Double = js.native
+  /* 0 */ val ENGINE: ENGINE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory with scala.Double
   ] = js.native
 }
 

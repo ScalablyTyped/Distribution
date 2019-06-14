@@ -59,21 +59,21 @@ object DataExecutionErrorCode extends js.Object {
   sealed trait UNSUPPORTED_DATA_TYPE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataExecutionErrorCode
   
-  val DATA_EXECUTION_ERROR_CODE_UNSUPPORTED: DATA_EXECUTION_ERROR_CODE_UNSUPPORTED with java.lang.String = js.native
-  val DUPLICATE_COLUMN_NAMES: DUPLICATE_COLUMN_NAMES with java.lang.String = js.native
-  val ENGINE: ENGINE with java.lang.String = js.native
-  val INTERRUPTED: INTERRUPTED with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val OTHER: OTHER with java.lang.String = js.native
-  val PARAMETER_INVALID: PARAMETER_INVALID with java.lang.String = js.native
-  val TIME_OUT: TIME_OUT with java.lang.String = js.native
-  val TOO_MANY_CELLS: TOO_MANY_CELLS with java.lang.String = js.native
-  val TOO_MANY_CHARS_PER_CELL: TOO_MANY_CHARS_PER_CELL with java.lang.String = js.native
-  val TOO_MANY_ROWS: TOO_MANY_ROWS with java.lang.String = js.native
-  val UNSUPPORTED_DATA_TYPE: UNSUPPORTED_DATA_TYPE with java.lang.String = js.native
+  /* 0 */ val DATA_EXECUTION_ERROR_CODE_UNSUPPORTED: DATA_EXECUTION_ERROR_CODE_UNSUPPORTED with scala.Double = js.native
+  /* 8 */ val DUPLICATE_COLUMN_NAMES: DUPLICATE_COLUMN_NAMES with scala.Double = js.native
+  /* 5 */ val ENGINE: ENGINE with scala.Double = js.native
+  /* 9 */ val INTERRUPTED: INTERRUPTED with scala.Double = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 10 */ val OTHER: OTHER with scala.Double = js.native
+  /* 6 */ val PARAMETER_INVALID: PARAMETER_INVALID with scala.Double = js.native
+  /* 2 */ val TIME_OUT: TIME_OUT with scala.Double = js.native
+  /* 4 */ val TOO_MANY_CELLS: TOO_MANY_CELLS with scala.Double = js.native
+  /* 11 */ val TOO_MANY_CHARS_PER_CELL: TOO_MANY_CHARS_PER_CELL with scala.Double = js.native
+  /* 3 */ val TOO_MANY_ROWS: TOO_MANY_ROWS with scala.Double = js.native
+  /* 7 */ val UNSUPPORTED_DATA_TYPE: UNSUPPORTED_DATA_TYPE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataExecutionErrorCode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataExecutionErrorCode with scala.Double
   ] = js.native
 }
 

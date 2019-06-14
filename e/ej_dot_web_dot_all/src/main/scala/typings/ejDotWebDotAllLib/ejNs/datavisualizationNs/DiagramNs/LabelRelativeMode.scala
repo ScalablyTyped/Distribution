@@ -21,11 +21,11 @@ object LabelRelativeMode extends js.Object {
   sealed trait SegmentPath
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelRelativeMode
   
-  val SegmentBounds: SegmentBounds with java.lang.String = js.native
-  val SegmentPath: SegmentPath with java.lang.String = js.native
+  /* 1 */ val SegmentBounds: SegmentBounds with scala.Double = js.native
+  /* 0 */ val SegmentPath: SegmentPath with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelRelativeMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelRelativeMode with scala.Double
   ] = js.native
 }
 

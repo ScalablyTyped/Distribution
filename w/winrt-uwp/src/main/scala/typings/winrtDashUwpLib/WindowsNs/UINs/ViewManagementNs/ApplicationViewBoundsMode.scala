@@ -22,11 +22,11 @@ object ApplicationViewBoundsMode extends js.Object {
   sealed trait useVisible
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewBoundsMode
   
-  val useCoreWindow: useCoreWindow with java.lang.String = js.native
-  val useVisible: useVisible with java.lang.String = js.native
+  /* 1 */ val useCoreWindow: useCoreWindow with scala.Double = js.native
+  /* 0 */ val useVisible: useVisible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewBoundsMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewBoundsMode with scala.Double
   ] = js.native
 }
 

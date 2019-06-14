@@ -56,10 +56,10 @@ object defaultNs extends js.Object {
   @js.native
   object LogLevel extends js.Object {
     /* 1 */ val Debug: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Debug with scala.Double = js.native
-    val Error: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Error with scala.Double = js.native
-    val Fatal: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Fatal with scala.Double = js.native
-    val Info: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Info with scala.Double = js.native
-    val Warn: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Warn with scala.Double = js.native
+    /* 2 */ val Error: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Error with scala.Double = js.native
+    /* 3 */ val Fatal: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Fatal with scala.Double = js.native
+    /* 0 */ val Info: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Info with scala.Double = js.native
+    /* 1 */ val Warn: mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel.Warn with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel with scala.Double] = js.native
   }

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlTabPosition extends js.Object
 
+object XlTabPosition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlTabPositionFirst: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlTabPositionLast: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+}
+

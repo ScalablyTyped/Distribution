@@ -19,11 +19,11 @@ object LoadIndicator extends js.Object {
   sealed trait SPINNER
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.LoadIndicator
   
-  val NONE: NONE with java.lang.String = js.native
-  val SPINNER: SPINNER with java.lang.String = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 0 */ val SPINNER: SPINNER with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.LoadIndicator with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.LoadIndicator with scala.Double
   ] = js.native
 }
 

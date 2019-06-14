@@ -55,20 +55,20 @@ object LineType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineType
   
-  val BENT_CONNECTOR_2: BENT_CONNECTOR_2 with java.lang.String = js.native
-  val BENT_CONNECTOR_3: BENT_CONNECTOR_3 with java.lang.String = js.native
-  val BENT_CONNECTOR_4: BENT_CONNECTOR_4 with java.lang.String = js.native
-  val BENT_CONNECTOR_5: BENT_CONNECTOR_5 with java.lang.String = js.native
-  val CURVED_CONNECTOR_2: CURVED_CONNECTOR_2 with java.lang.String = js.native
-  val CURVED_CONNECTOR_3: CURVED_CONNECTOR_3 with java.lang.String = js.native
-  val CURVED_CONNECTOR_4: CURVED_CONNECTOR_4 with java.lang.String = js.native
-  val CURVED_CONNECTOR_5: CURVED_CONNECTOR_5 with java.lang.String = js.native
-  val STRAIGHT_CONNECTOR_1: STRAIGHT_CONNECTOR_1 with java.lang.String = js.native
-  val STRAIGHT_LINE: STRAIGHT_LINE with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 2 */ val BENT_CONNECTOR_2: BENT_CONNECTOR_2 with scala.Double = js.native
+  /* 3 */ val BENT_CONNECTOR_3: BENT_CONNECTOR_3 with scala.Double = js.native
+  /* 4 */ val BENT_CONNECTOR_4: BENT_CONNECTOR_4 with scala.Double = js.native
+  /* 5 */ val BENT_CONNECTOR_5: BENT_CONNECTOR_5 with scala.Double = js.native
+  /* 6 */ val CURVED_CONNECTOR_2: CURVED_CONNECTOR_2 with scala.Double = js.native
+  /* 7 */ val CURVED_CONNECTOR_3: CURVED_CONNECTOR_3 with scala.Double = js.native
+  /* 8 */ val CURVED_CONNECTOR_4: CURVED_CONNECTOR_4 with scala.Double = js.native
+  /* 9 */ val CURVED_CONNECTOR_5: CURVED_CONNECTOR_5 with scala.Double = js.native
+  /* 1 */ val STRAIGHT_CONNECTOR_1: STRAIGHT_CONNECTOR_1 with scala.Double = js.native
+  /* 10 */ val STRAIGHT_LINE: STRAIGHT_LINE with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineType with scala.Double
   ] = js.native
 }
 

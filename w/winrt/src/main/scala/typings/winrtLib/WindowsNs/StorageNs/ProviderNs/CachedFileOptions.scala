@@ -27,11 +27,11 @@ object CachedFileOptions extends js.Object {
   sealed trait useCachedFileWhenOffline
     extends winrtLib.WindowsNs.StorageNs.ProviderNs.CachedFileOptions
   
-  val denyAccessWhenOffline: denyAccessWhenOffline with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val requireUpdateOnAccess: requireUpdateOnAccess with java.lang.String = js.native
-  val useCachedFileWhenOffline: useCachedFileWhenOffline with java.lang.String = js.native
+  /* 3 */ val denyAccessWhenOffline: denyAccessWhenOffline with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val requireUpdateOnAccess: requireUpdateOnAccess with scala.Double = js.native
+  /* 2 */ val useCachedFileWhenOffline: useCachedFileWhenOffline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.ProviderNs.CachedFileOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.ProviderNs.CachedFileOptions with scala.Double] = js.native
 }
 

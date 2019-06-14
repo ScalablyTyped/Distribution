@@ -19,11 +19,11 @@ object Orientation extends js.Object {
   sealed trait VERTICAL
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Orientation
   
-  val HORIZONTAL: HORIZONTAL with java.lang.String = js.native
-  val VERTICAL: VERTICAL with java.lang.String = js.native
+  /* 0 */ val HORIZONTAL: HORIZONTAL with scala.Double = js.native
+  /* 1 */ val VERTICAL: VERTICAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Orientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Orientation with scala.Double
   ] = js.native
 }
 

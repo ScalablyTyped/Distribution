@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdFramesetType extends js.Object
 
+object WdFramesetType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdFramesetTypeFrame: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdFramesetTypeFrameset: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

@@ -59,7 +59,7 @@ object storageNs extends js.Object {
   }
   
   /**
-    * The options list() accepts.
+    * The options `list()` accepts.
     */
   trait ListOptions extends js.Object {
     /**
@@ -68,7 +68,7 @@ object storageNs extends js.Object {
       */
     var maxResults: js.UndefOr[scala.Double | scala.Null] = js.undefined
     /**
-      * The `nextPageToken` from a previous call to list(). If provided,
+      * The `nextPageToken` from a previous call to `list()`. If provided,
       * listing is resumed from the previous position.
       */
     var pageToken: js.UndefOr[java.lang.String | scala.Null] = js.undefined
@@ -169,9 +169,9 @@ object storageNs extends js.Object {
       * To adhere to Firebase Rules's Semantics, Firebase Storage does not
       * support objects whose paths end with "/" or contain two consecutive
       * "/"s. Firebase Storage List API will filter these unsupported objects.
-      * list() may fail if there are too many unsupported objects in the bucket.
+      * `list()` may fail if there are too many unsupported objects in the bucket.
       *
-      * @param options See ListOptions for details.
+      * @param options See `ListOptions` for details.
       * @return A Promise that resolves with the items and prefixes.
       *      `prefixes` contains references to sub-folders and `items`
       *      contains references to objects in this folder. `nextPageToken`
@@ -182,13 +182,13 @@ object storageNs extends js.Object {
     /**
       * List all items (files) and prefixes (folders) under this storage reference.
       *
-      * This is a helper method for calling list() repeatedly until there are
+      * This is a helper method for calling `list()` repeatedly until there are
       * no more results. The default pagination size is 1000.
       *
       * Note: The results may not be consistent if objects are changed while this
       * operation is running.
       *
-      * Warning: listAll may potentially consume too many resources if there are
+      * Warning: `listAll` may potentially consume too many resources if there are
       * too many results.
       *
       * @return A Promise that resolves with all the items and prefixes under

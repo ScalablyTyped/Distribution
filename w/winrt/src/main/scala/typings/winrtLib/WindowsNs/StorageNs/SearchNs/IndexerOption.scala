@@ -23,10 +23,10 @@ object IndexerOption extends js.Object {
   sealed trait useIndexerWhenAvailable
     extends winrtLib.WindowsNs.StorageNs.SearchNs.IndexerOption
   
-  val doNotUseIndexer: doNotUseIndexer with java.lang.String = js.native
-  val onlyUseIndexer: onlyUseIndexer with java.lang.String = js.native
-  val useIndexerWhenAvailable: useIndexerWhenAvailable with java.lang.String = js.native
+  /* 2 */ val doNotUseIndexer: doNotUseIndexer with scala.Double = js.native
+  /* 1 */ val onlyUseIndexer: onlyUseIndexer with scala.Double = js.native
+  /* 0 */ val useIndexerWhenAvailable: useIndexerWhenAvailable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.SearchNs.IndexerOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.SearchNs.IndexerOption with scala.Double] = js.native
 }
 

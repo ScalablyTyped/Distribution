@@ -31,12 +31,12 @@ object Fullscreen extends js.Object {
   sealed trait fullscreen
     extends cesiumLib.cesiumMod.Fullscreen
   
-  val changeEventName: changeEventName with java.lang.String = js.native
-  val element: element with java.lang.String = js.native
-  val enabled: enabled with java.lang.String = js.native
-  val errorEventName: errorEventName with java.lang.String = js.native
-  val fullscreen: fullscreen with java.lang.String = js.native
+  /* 1 */ val changeEventName: changeEventName with scala.Double = js.native
+  /* 0 */ val element: element with scala.Double = js.native
+  /* 3 */ val enabled: enabled with scala.Double = js.native
+  /* 2 */ val errorEventName: errorEventName with scala.Double = js.native
+  /* 4 */ val fullscreen: fullscreen with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.Fullscreen with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.Fullscreen with scala.Double] = js.native
 }
 

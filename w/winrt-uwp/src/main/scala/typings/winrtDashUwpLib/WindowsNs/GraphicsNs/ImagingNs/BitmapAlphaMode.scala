@@ -27,12 +27,10 @@ object BitmapAlphaMode extends js.Object {
   sealed trait straight
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapAlphaMode
   
-  val ignore: ignore with java.lang.String = js.native
-  val premultiplied: premultiplied with java.lang.String = js.native
-  val straight: straight with java.lang.String = js.native
+  /* 2 */ val ignore: ignore with scala.Double = js.native
+  /* 0 */ val premultiplied: premultiplied with scala.Double = js.native
+  /* 1 */ val straight: straight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapAlphaMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapAlphaMode with scala.Double] = js.native
 }
 

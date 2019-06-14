@@ -1632,8 +1632,8 @@ object jestNs extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def doMock(moduleName: java.lang.String): jestLib.Typeofjest = js.native
-  def doMock(moduleName: java.lang.String, factory: js.Any): jestLib.Typeofjest = js.native
-  def doMock(moduleName: java.lang.String, factory: js.Any, options: MockOptions): jestLib.Typeofjest = js.native
+  def doMock(moduleName: java.lang.String, factory: js.Function0[_]): jestLib.Typeofjest = js.native
+  def doMock(moduleName: java.lang.String, factory: js.Function0[_], options: MockOptions): jestLib.Typeofjest = js.native
   /**
     * Indicates that the module system should never return a mocked version
     * of the specified module from require() (e.g. that it should always return the real module).
@@ -1670,8 +1670,8 @@ object jestNs extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def mock(moduleName: java.lang.String): jestLib.Typeofjest = js.native
-  def mock(moduleName: java.lang.String, factory: js.Any): jestLib.Typeofjest = js.native
-  def mock(moduleName: java.lang.String, factory: js.Any, options: MockOptions): jestLib.Typeofjest = js.native
+  def mock(moduleName: java.lang.String, factory: js.Function0[_]): jestLib.Typeofjest = js.native
+  def mock(moduleName: java.lang.String, factory: js.Function0[_], options: MockOptions): jestLib.Typeofjest = js.native
   /**
     * Returns the actual module instead of a mock, bypassing all checks on
     * whether the module should receive a mock implementation or not.

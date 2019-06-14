@@ -39,16 +39,16 @@ object ContentType extends js.Object {
   sealed trait TEXT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.XMLUnderscoreServiceNs.ContentType
   
-  val CDATA: CDATA with java.lang.String = js.native
-  val COMMENT: COMMENT with java.lang.String = js.native
-  val DOCTYPE: DOCTYPE with java.lang.String = js.native
-  val ELEMENT: ELEMENT with java.lang.String = js.native
-  val ENTITYREF: ENTITYREF with java.lang.String = js.native
-  val PROCESSINGINSTRUCTION: PROCESSINGINSTRUCTION with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
+  /* 0 */ val CDATA: CDATA with scala.Double = js.native
+  /* 1 */ val COMMENT: COMMENT with scala.Double = js.native
+  /* 2 */ val DOCTYPE: DOCTYPE with scala.Double = js.native
+  /* 3 */ val ELEMENT: ELEMENT with scala.Double = js.native
+  /* 4 */ val ENTITYREF: ENTITYREF with scala.Double = js.native
+  /* 5 */ val PROCESSINGINSTRUCTION: PROCESSINGINSTRUCTION with scala.Double = js.native
+  /* 6 */ val TEXT: TEXT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.XMLUnderscoreServiceNs.ContentType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.XMLUnderscoreServiceNs.ContentType with scala.Double
   ] = js.native
 }
 

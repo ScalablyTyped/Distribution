@@ -22,9 +22,9 @@ object GpioPinEdge extends js.Object {
   sealed trait risingEdge
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinEdge
   
-  val fallingEdge: fallingEdge with java.lang.String = js.native
-  val risingEdge: risingEdge with java.lang.String = js.native
+  /* 0 */ val fallingEdge: fallingEdge with scala.Double = js.native
+  /* 1 */ val risingEdge: risingEdge with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinEdge with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinEdge with scala.Double] = js.native
 }
 

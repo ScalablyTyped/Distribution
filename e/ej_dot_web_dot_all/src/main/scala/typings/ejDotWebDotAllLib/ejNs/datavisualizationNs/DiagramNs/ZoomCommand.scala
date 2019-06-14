@@ -21,11 +21,11 @@ object ZoomCommand extends js.Object {
   sealed trait ZoomOut
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ZoomCommand
   
-  val ZoomIn: ZoomIn with java.lang.String = js.native
-  val ZoomOut: ZoomOut with java.lang.String = js.native
+  /* 0 */ val ZoomIn: ZoomIn with scala.Double = js.native
+  /* 1 */ val ZoomOut: ZoomOut with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ZoomCommand with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ZoomCommand with scala.Double
   ] = js.native
 }
 

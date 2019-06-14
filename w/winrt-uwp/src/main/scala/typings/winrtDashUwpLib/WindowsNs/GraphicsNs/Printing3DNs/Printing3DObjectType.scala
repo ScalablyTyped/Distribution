@@ -27,12 +27,12 @@ object Printing3DObjectType extends js.Object {
   sealed trait support
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DObjectType
   
-  val model: model with java.lang.String = js.native
-  val others: others with java.lang.String = js.native
-  val support: support with java.lang.String = js.native
+  /* 0 */ val model: model with scala.Double = js.native
+  /* 2 */ val others: others with scala.Double = js.native
+  /* 1 */ val support: support with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DObjectType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DObjectType with scala.Double
   ] = js.native
 }
 

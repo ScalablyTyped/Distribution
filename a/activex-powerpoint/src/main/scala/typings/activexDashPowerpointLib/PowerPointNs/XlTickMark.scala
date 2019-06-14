@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait XlTickMark extends js.Object
 
+object XlTickMark {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlTickMarkCross: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def xlTickMarkInside: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlTickMarkNone: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4142` = this.cast(-4142)
+  @scala.inline
+  def xlTickMarkOutside: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`3` = this.cast(3)
+}
+

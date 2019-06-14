@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:84 Success [id => activex-shell, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/activex-shell/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/activex-shell),TsIdentLibrarySimple(activex-shell)),TsIdentModule(None,List(activex-shell))) [id => activex-shell, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(activex-shell) [id => activex-shell, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => activex-shell, phase => typescript] 
+[warn ] PhaseRunner.scala:70 Failed because of, [activex-shdocvw => java.lang.NumberFormatException: For input string: "0x0009"] [id => activex-shell, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [activex-shdocvw => java.lang.NumberFormatException: For input string: "0x0009"] [id => activex-shell, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [activex-shdocvw => java.lang.NumberFormatException: For input string: "0x0009"] [id => activex-shell, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [activex-shdocvw => java.lang.NumberFormatException: For input string: "0x0009"] [id => activex-shell, phase => publish] 

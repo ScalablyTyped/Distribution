@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait PositionEnum_Param extends js.Object
 
+object PositionEnum_Param {
+  @scala.inline
+  def adPosBOF: activexDashAdodbLib.activexDashAdodbLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  def adPosEOF: activexDashAdodbLib.activexDashAdodbLibNumbers.`-3` = this.cast(-3)
+  @scala.inline
+  def adPosUnknown: activexDashAdodbLib.activexDashAdodbLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

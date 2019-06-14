@@ -23,10 +23,10 @@ object CheckinType extends js.Object {
   sealed trait overwriteCheckIn
     extends sharepointLib.SPNs.CheckinType
   
-  val majorCheckIn: majorCheckIn with java.lang.String = js.native
-  val minorCheckIn: minorCheckIn with java.lang.String = js.native
-  val overwriteCheckIn: overwriteCheckIn with java.lang.String = js.native
+  /* 1 */ val majorCheckIn: majorCheckIn with scala.Double = js.native
+  /* 0 */ val minorCheckIn: minorCheckIn with scala.Double = js.native
+  /* 2 */ val overwriteCheckIn: overwriteCheckIn with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.CheckinType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.CheckinType with scala.Double] = js.native
 }
 

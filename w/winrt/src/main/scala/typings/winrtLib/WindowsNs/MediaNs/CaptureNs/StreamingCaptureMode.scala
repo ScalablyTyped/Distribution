@@ -23,10 +23,10 @@ object StreamingCaptureMode extends js.Object {
   sealed trait video
     extends winrtLib.WindowsNs.MediaNs.CaptureNs.StreamingCaptureMode
   
-  val audio: audio with java.lang.String = js.native
-  val audioAndVideo: audioAndVideo with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 1 */ val audio: audio with scala.Double = js.native
+  /* 0 */ val audioAndVideo: audioAndVideo with scala.Double = js.native
+  /* 2 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.CaptureNs.StreamingCaptureMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.CaptureNs.StreamingCaptureMode with scala.Double] = js.native
 }
 

@@ -37,11 +37,11 @@ object N1qlQueryNs extends js.Object {
     sealed trait STATEMENT_PLUS
       extends couchbaseLib.couchbaseMod.N1qlQueryNs.Consistency
     
-    val NOT_BOUND: NOT_BOUND with java.lang.String = js.native
-    val REQUEST_PLUS: REQUEST_PLUS with java.lang.String = js.native
-    val STATEMENT_PLUS: STATEMENT_PLUS with java.lang.String = js.native
+    /* 0 */ val NOT_BOUND: NOT_BOUND with scala.Double = js.native
+    /* 1 */ val REQUEST_PLUS: REQUEST_PLUS with scala.Double = js.native
+    /* 2 */ val STATEMENT_PLUS: STATEMENT_PLUS with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.N1qlQueryNs.Consistency with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.N1qlQueryNs.Consistency with scala.Double] = js.native
   }
   
 }

@@ -22,11 +22,11 @@ object UserDataAccountOtherAppReadAccess extends js.Object {
   sealed trait systemOnly
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.UserDataAccountOtherAppReadAccess
   
-  val full: full with java.lang.String = js.native
-  val systemOnly: systemOnly with java.lang.String = js.native
+  /* 1 */ val full: full with scala.Double = js.native
+  /* 0 */ val systemOnly: systemOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.UserDataAccountOtherAppReadAccess with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.UserDataAccountOtherAppReadAccess with scala.Double
   ] = js.native
 }
 

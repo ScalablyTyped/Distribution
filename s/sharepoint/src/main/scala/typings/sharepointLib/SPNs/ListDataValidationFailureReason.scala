@@ -19,9 +19,9 @@ object ListDataValidationFailureReason extends js.Object {
   sealed trait formulaError
     extends sharepointLib.SPNs.ListDataValidationFailureReason
   
-  val dataFailure: dataFailure with java.lang.String = js.native
-  val formulaError: formulaError with java.lang.String = js.native
+  /* 0 */ val dataFailure: dataFailure with scala.Double = js.native
+  /* 1 */ val formulaError: formulaError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ListDataValidationFailureReason with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ListDataValidationFailureReason with scala.Double] = js.native
 }
 

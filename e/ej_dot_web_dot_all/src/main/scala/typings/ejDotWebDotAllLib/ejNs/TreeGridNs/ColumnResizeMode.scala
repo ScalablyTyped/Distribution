@@ -26,10 +26,10 @@ object ColumnResizeMode extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.ColumnResizeMode
   
-  val FixedColumns: FixedColumns with java.lang.String = js.native
-  val NextColumn: NextColumn with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 0 */ val FixedColumns: FixedColumns with scala.Double = js.native
+  /* 1 */ val NextColumn: NextColumn with scala.Double = js.native
+  /* 2 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ColumnResizeMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ColumnResizeMode with scala.Double] = js.native
 }
 

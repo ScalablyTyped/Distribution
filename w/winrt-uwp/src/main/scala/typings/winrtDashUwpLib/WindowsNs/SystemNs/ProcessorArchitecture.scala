@@ -37,12 +37,12 @@ object ProcessorArchitecture extends js.Object {
   sealed trait x86
     extends winrtDashUwpLib.WindowsNs.SystemNs.ProcessorArchitecture
   
-  val arm: arm with java.lang.String = js.native
-  val neutral: neutral with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val x64: x64 with java.lang.String = js.native
-  val x86: x86 with java.lang.String = js.native
+  /* 1 */ val arm: arm with scala.Double = js.native
+  /* 3 */ val neutral: neutral with scala.Double = js.native
+  /* 4 */ val unknown: unknown with scala.Double = js.native
+  /* 2 */ val x64: x64 with scala.Double = js.native
+  /* 0 */ val x86: x86 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.ProcessorArchitecture with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.ProcessorArchitecture with scala.Double] = js.native
 }
 

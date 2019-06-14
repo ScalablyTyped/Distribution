@@ -31,11 +31,11 @@ object ExcelFormats extends js.Object {
   sealed trait Excel97to2003
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.ExcelFormats
   
-  val Excel2007: Excel2007 with java.lang.String = js.native
-  val Excel2010: Excel2010 with java.lang.String = js.native
-  val Excel2013: Excel2013 with java.lang.String = js.native
-  val Excel97to2003: Excel97to2003 with java.lang.String = js.native
+  /* 1 */ val Excel2007: Excel2007 with scala.Double = js.native
+  /* 2 */ val Excel2010: Excel2010 with scala.Double = js.native
+  /* 3 */ val Excel2013: Excel2013 with scala.Double = js.native
+  /* 0 */ val Excel97to2003: Excel97to2003 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ExcelFormats with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ExcelFormats with scala.Double] = js.native
 }
 

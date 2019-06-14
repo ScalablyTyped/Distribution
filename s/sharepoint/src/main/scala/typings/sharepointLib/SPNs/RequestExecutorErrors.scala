@@ -39,14 +39,14 @@ object RequestExecutorErrors extends js.Object {
   sealed trait unexpectedResponse
     extends sharepointLib.SPNs.RequestExecutorErrors
   
-  val domainDoesNotMatch: domainDoesNotMatch with java.lang.String = js.native
-  val httpError: httpError with java.lang.String = js.native
-  val iFrameLoadError: iFrameLoadError with java.lang.String = js.native
-  val noAppWeb: noAppWeb with java.lang.String = js.native
-  val noTrustedOrigins: noTrustedOrigins with java.lang.String = js.native
-  val requestAbortedOrTimedout: requestAbortedOrTimedout with java.lang.String = js.native
-  val unexpectedResponse: unexpectedResponse with java.lang.String = js.native
+  /* 4 */ val domainDoesNotMatch: domainDoesNotMatch with scala.Double = js.native
+  /* 2 */ val httpError: httpError with scala.Double = js.native
+  /* 6 */ val iFrameLoadError: iFrameLoadError with scala.Double = js.native
+  /* 3 */ val noAppWeb: noAppWeb with scala.Double = js.native
+  /* 5 */ val noTrustedOrigins: noTrustedOrigins with scala.Double = js.native
+  /* 0 */ val requestAbortedOrTimedout: requestAbortedOrTimedout with scala.Double = js.native
+  /* 1 */ val unexpectedResponse: unexpectedResponse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.RequestExecutorErrors with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.RequestExecutorErrors with scala.Double] = js.native
 }
 

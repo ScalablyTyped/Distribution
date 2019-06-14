@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait SnapshotCopyGrantState extends js.Object {
   /**
+    * Amazon Resource Name (ARN) of snapshot copy grant
+    */
+  val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.
     */
   val kmsKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -23,11 +27,13 @@ trait SnapshotCopyGrantState extends js.Object {
 object SnapshotCopyGrantState {
   @scala.inline
   def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     snapshotCopyGrantName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): SnapshotCopyGrantState = {
     val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (snapshotCopyGrantName != null) __obj.updateDynamic("snapshotCopyGrantName")(snapshotCopyGrantName.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

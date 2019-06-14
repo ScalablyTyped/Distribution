@@ -22,9 +22,9 @@ object I2cBusSpeed extends js.Object {
   sealed trait standardMode
     extends winrtDashUwpLib.WindowsNs.DevicesNs.I2cNs.I2cBusSpeed
   
-  val fastMode: fastMode with java.lang.String = js.native
-  val standardMode: standardMode with java.lang.String = js.native
+  /* 1 */ val fastMode: fastMode with scala.Double = js.native
+  /* 0 */ val standardMode: standardMode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.I2cNs.I2cBusSpeed with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.I2cNs.I2cBusSpeed with scala.Double] = js.native
 }
 

@@ -35,15 +35,15 @@ object TriggeredConnectState extends js.Object {
   sealed trait peerFound
     extends winrtLib.WindowsNs.NetworkingNs.ProximityNs.TriggeredConnectState
   
-  val canceled: canceled with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val connecting: connecting with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val listening: listening with java.lang.String = js.native
-  val peerFound: peerFound with java.lang.String = js.native
+  /* 4 */ val canceled: canceled with scala.Double = js.native
+  /* 3 */ val completed: completed with scala.Double = js.native
+  /* 2 */ val connecting: connecting with scala.Double = js.native
+  /* 5 */ val failed: failed with scala.Double = js.native
+  /* 1 */ val listening: listening with scala.Double = js.native
+  /* 0 */ val peerFound: peerFound with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.ProximityNs.TriggeredConnectState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.ProximityNs.TriggeredConnectState with scala.Double
   ] = js.native
 }
 

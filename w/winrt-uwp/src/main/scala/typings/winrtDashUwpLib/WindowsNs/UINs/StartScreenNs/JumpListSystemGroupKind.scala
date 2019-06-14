@@ -27,12 +27,12 @@ object JumpListSystemGroupKind extends js.Object {
   sealed trait recent
     extends winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListSystemGroupKind
   
-  val frequent: frequent with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val recent: recent with java.lang.String = js.native
+  /* 1 */ val frequent: frequent with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val recent: recent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListSystemGroupKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListSystemGroupKind with scala.Double
   ] = js.native
 }
 

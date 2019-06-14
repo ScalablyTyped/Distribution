@@ -34,12 +34,12 @@ object ListType extends js.Object {
   sealed trait Navigation
     extends openui5Lib.sapNs.mNs.ListType
   
-  val Active: Active with java.lang.String = js.native
-  val Detail: Detail with java.lang.String = js.native
-  val DetailAndActive: DetailAndActive with java.lang.String = js.native
-  val Inactive: Inactive with java.lang.String = js.native
-  val Navigation: Navigation with java.lang.String = js.native
+  /* 0 */ val Active: Active with scala.Double = js.native
+  /* 1 */ val Detail: Detail with scala.Double = js.native
+  /* 2 */ val DetailAndActive: DetailAndActive with scala.Double = js.native
+  /* 3 */ val Inactive: Inactive with scala.Double = js.native
+  /* 4 */ val Navigation: Navigation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ListType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ListType with scala.Double] = js.native
 }
 

@@ -43,15 +43,15 @@ object Level extends js.Object {
   sealed trait WARN
     extends log4javascriptLib.log4javascriptMod.Level
   
-  val ALL: ALL with java.lang.String = js.native
-  val DEBUG: DEBUG with java.lang.String = js.native
-  val ERROR: ERROR with java.lang.String = js.native
-  val FATAL: FATAL with java.lang.String = js.native
-  val INFO: INFO with java.lang.String = js.native
-  val OFF: OFF with java.lang.String = js.native
-  val TRACE: TRACE with java.lang.String = js.native
-  val WARN: WARN with java.lang.String = js.native
+  /* 0 */ val ALL: ALL with scala.Double = js.native
+  /* 2 */ val DEBUG: DEBUG with scala.Double = js.native
+  /* 5 */ val ERROR: ERROR with scala.Double = js.native
+  /* 6 */ val FATAL: FATAL with scala.Double = js.native
+  /* 3 */ val INFO: INFO with scala.Double = js.native
+  /* 7 */ val OFF: OFF with scala.Double = js.native
+  /* 1 */ val TRACE: TRACE with scala.Double = js.native
+  /* 4 */ val WARN: WARN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[log4javascriptLib.log4javascriptMod.Level with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[log4javascriptLib.log4javascriptMod.Level with scala.Double] = js.native
 }
 

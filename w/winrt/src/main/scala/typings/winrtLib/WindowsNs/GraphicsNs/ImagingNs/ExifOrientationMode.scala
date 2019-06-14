@@ -19,11 +19,9 @@ object ExifOrientationMode extends js.Object {
   sealed trait respectExifOrientation
     extends winrtLib.WindowsNs.GraphicsNs.ImagingNs.ExifOrientationMode
   
-  val ignoreExifOrientation: ignoreExifOrientation with java.lang.String = js.native
-  val respectExifOrientation: respectExifOrientation with java.lang.String = js.native
+  /* 0 */ val ignoreExifOrientation: ignoreExifOrientation with scala.Double = js.native
+  /* 1 */ val respectExifOrientation: respectExifOrientation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.GraphicsNs.ImagingNs.ExifOrientationMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.ImagingNs.ExifOrientationMode with scala.Double] = js.native
 }
 

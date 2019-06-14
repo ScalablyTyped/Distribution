@@ -18,6 +18,7 @@ class EventSubscription protected ()
     */
   def this(name: java.lang.String, args: EventSubscriptionArgs) = this()
   def this(name: java.lang.String, args: EventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   val customerAwsId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A boolean flag to enable/disable the subscription. Defaults to true.

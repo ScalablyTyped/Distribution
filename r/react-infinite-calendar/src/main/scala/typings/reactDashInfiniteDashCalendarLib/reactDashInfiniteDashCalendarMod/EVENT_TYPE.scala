@@ -23,8 +23,8 @@ object EVENT_TYPE extends js.Object {
   sealed trait START
     extends reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.EVENT_TYPE
   
-  val END: END with scala.Double = js.native
-  val HOVER: HOVER with scala.Double = js.native
+  /* 1 */ val END: END with scala.Double = js.native
+  /* 0 */ val HOVER: HOVER with scala.Double = js.native
   /* 1 */ val START: START with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[

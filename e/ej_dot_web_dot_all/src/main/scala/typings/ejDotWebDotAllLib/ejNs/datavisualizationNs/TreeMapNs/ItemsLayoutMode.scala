@@ -31,13 +31,13 @@ object ItemsLayoutMode extends js.Object {
   sealed trait Squarified
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.ItemsLayoutMode
   
-  val Sliceanddiceauto: Sliceanddiceauto with java.lang.String = js.native
-  val Sliceanddicehorizontal: Sliceanddicehorizontal with java.lang.String = js.native
-  val Sliceanddicevertical: Sliceanddicevertical with java.lang.String = js.native
-  val Squarified: Squarified with java.lang.String = js.native
+  /* 3 */ val Sliceanddiceauto: Sliceanddiceauto with scala.Double = js.native
+  /* 1 */ val Sliceanddicehorizontal: Sliceanddicehorizontal with scala.Double = js.native
+  /* 2 */ val Sliceanddicevertical: Sliceanddicevertical with scala.Double = js.native
+  /* 0 */ val Squarified: Squarified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.ItemsLayoutMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.ItemsLayoutMode with scala.Double
   ] = js.native
 }
 

@@ -31,13 +31,13 @@ object TextDecoration extends js.Object {
   sealed trait Underline
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.TextDecoration
   
-  val LineThrough: LineThrough with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Overline: Overline with java.lang.String = js.native
-  val Underline: Underline with java.lang.String = js.native
+  /* 2 */ val LineThrough: LineThrough with scala.Double = js.native
+  /* 3 */ val None: None with scala.Double = js.native
+  /* 1 */ val Overline: Overline with scala.Double = js.native
+  /* 0 */ val Underline: Underline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.TextDecoration with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.TextDecoration with scala.Double
   ] = js.native
 }
 

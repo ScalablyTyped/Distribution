@@ -21,11 +21,19 @@ class BindingScope protected ()
   def getComponentProperty(name: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   /* CompleteClass */
   override def getLocal(name: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null = js.native
+  /**
+    * Gets or creates a shared context variable and returns its expression. Note that
+    * this does not mean that the shared variable will be declared. Variables in the
+    * binding scope will be only declared if they are used.
+    */
+  def getOrCreateSharedContextVar(retrievalLevel: scala.Double): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def getSharedContextName(retrievalLevel: scala.Double): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr | scala.Null = js.native
   def isListenerScope(): scala.Boolean | scala.Null = js.native
   def maybeGenerateSharedContextVar(value: BindingData): scala.Unit = js.native
   def maybeRestoreView(retrievalLevel: scala.Double, localRefLookup: scala.Boolean): scala.Unit = js.native
   def nestedScope(level: scala.Double): BindingScope = js.native
+  /* CompleteClass */
+  override def notifyImplicitReceiverUse(): scala.Unit = js.native
   def restoreViewStatement(): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native
   /**
     * Create a local variable for later reference.

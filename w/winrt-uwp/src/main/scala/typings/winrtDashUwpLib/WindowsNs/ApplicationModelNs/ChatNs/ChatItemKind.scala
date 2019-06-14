@@ -22,11 +22,11 @@ object ChatItemKind extends js.Object {
   sealed trait message
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatItemKind
   
-  val conversation: conversation with java.lang.String = js.native
-  val message: message with java.lang.String = js.native
+  /* 1 */ val conversation: conversation with scala.Double = js.native
+  /* 0 */ val message: message with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatItemKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatItemKind with scala.Double
   ] = js.native
 }
 

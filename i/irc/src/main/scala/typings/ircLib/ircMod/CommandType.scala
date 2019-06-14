@@ -23,10 +23,10 @@ object CommandType extends js.Object {
   sealed trait reply
     extends ircLib.ircMod.CommandType
   
-  val error: error with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val reply: reply with java.lang.String = js.native
+  /* 2 */ val error: error with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val reply: reply with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ircLib.ircMod.CommandType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ircLib.ircMod.CommandType with scala.Double] = js.native
 }
 

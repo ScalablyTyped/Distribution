@@ -32,13 +32,13 @@ object WebAccountPictureSize extends js.Object {
   sealed trait size64x64
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountPictureSize
   
-  val size1080x1080: size1080x1080 with java.lang.String = js.native
-  val size208x208: size208x208 with java.lang.String = js.native
-  val size424x424: size424x424 with java.lang.String = js.native
-  val size64x64: size64x64 with java.lang.String = js.native
+  /* 3 */ val size1080x1080: size1080x1080 with scala.Double = js.native
+  /* 1 */ val size208x208: size208x208 with scala.Double = js.native
+  /* 2 */ val size424x424: size424x424 with scala.Double = js.native
+  /* 0 */ val size64x64: size64x64 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountPictureSize with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountPictureSize with scala.Double
   ] = js.native
 }
 

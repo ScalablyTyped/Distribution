@@ -139,39 +139,39 @@ object PrintMediaType extends js.Object {
   sealed trait transparency
     extends winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintMediaType
   
-  val archival: archival with java.lang.String = js.native
-  val autoSelect: autoSelect with java.lang.String = js.native
-  val backPrintFilm: backPrintFilm with java.lang.String = js.native
-  val bond: bond with java.lang.String = js.native
-  val cardStock: cardStock with java.lang.String = js.native
-  val continuous: continuous with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val envelopePlain: envelopePlain with java.lang.String = js.native
-  val envelopeWindow: envelopeWindow with java.lang.String = js.native
-  val fabric: fabric with java.lang.String = js.native
-  val highResolution: highResolution with java.lang.String = js.native
-  val label: label with java.lang.String = js.native
-  val multiLayerForm: multiLayerForm with java.lang.String = js.native
-  val multiPartForm: multiPartForm with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val photographic: photographic with java.lang.String = js.native
-  val photographicFilm: photographicFilm with java.lang.String = js.native
-  val photographicGlossy: photographicGlossy with java.lang.String = js.native
-  val photographicHighGloss: photographicHighGloss with java.lang.String = js.native
-  val photographicMatte: photographicMatte with java.lang.String = js.native
-  val photographicSatin: photographicSatin with java.lang.String = js.native
-  val photographicSemiGloss: photographicSemiGloss with java.lang.String = js.native
-  val plain: plain with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val screen: screen with java.lang.String = js.native
-  val screenPaged: screenPaged with java.lang.String = js.native
-  val stationery: stationery with java.lang.String = js.native
-  val tShirtTransfer: tShirtTransfer with java.lang.String = js.native
-  val tabStockFull: tabStockFull with java.lang.String = js.native
-  val tabStockPreCut: tabStockPreCut with java.lang.String = js.native
-  val transparency: transparency with java.lang.String = js.native
+  /* 4 */ val archival: archival with scala.Double = js.native
+  /* 3 */ val autoSelect: autoSelect with scala.Double = js.native
+  /* 5 */ val backPrintFilm: backPrintFilm with scala.Double = js.native
+  /* 6 */ val bond: bond with scala.Double = js.native
+  /* 7 */ val cardStock: cardStock with scala.Double = js.native
+  /* 8 */ val continuous: continuous with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 9 */ val envelopePlain: envelopePlain with scala.Double = js.native
+  /* 10 */ val envelopeWindow: envelopeWindow with scala.Double = js.native
+  /* 11 */ val fabric: fabric with scala.Double = js.native
+  /* 12 */ val highResolution: highResolution with scala.Double = js.native
+  /* 13 */ val label: label with scala.Double = js.native
+  /* 14 */ val multiLayerForm: multiLayerForm with scala.Double = js.native
+  /* 15 */ val multiPartForm: multiPartForm with scala.Double = js.native
+  /* 31 */ val none: none with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 16 */ val photographic: photographic with scala.Double = js.native
+  /* 17 */ val photographicFilm: photographicFilm with scala.Double = js.native
+  /* 18 */ val photographicGlossy: photographicGlossy with scala.Double = js.native
+  /* 19 */ val photographicHighGloss: photographicHighGloss with scala.Double = js.native
+  /* 20 */ val photographicMatte: photographicMatte with scala.Double = js.native
+  /* 21 */ val photographicSatin: photographicSatin with scala.Double = js.native
+  /* 22 */ val photographicSemiGloss: photographicSemiGloss with scala.Double = js.native
+  /* 23 */ val plain: plain with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 24 */ val screen: screen with scala.Double = js.native
+  /* 25 */ val screenPaged: screenPaged with scala.Double = js.native
+  /* 26 */ val stationery: stationery with scala.Double = js.native
+  /* 30 */ val tShirtTransfer: tShirtTransfer with scala.Double = js.native
+  /* 27 */ val tabStockFull: tabStockFull with scala.Double = js.native
+  /* 28 */ val tabStockPreCut: tabStockPreCut with scala.Double = js.native
+  /* 29 */ val transparency: transparency with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintMediaType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintMediaType with scala.Double] = js.native
 }
 

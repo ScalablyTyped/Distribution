@@ -42,15 +42,15 @@ object AllJoynSessionLostReason extends js.Object {
   sealed trait removedByProducer
     extends winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynSessionLostReason
   
-  val linkTimeout: linkTimeout with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val producerClosedAbruptly: producerClosedAbruptly with java.lang.String = js.native
-  val producerLeftSession: producerLeftSession with java.lang.String = js.native
-  val removedByProducer: removedByProducer with java.lang.String = js.native
+  /* 4 */ val linkTimeout: linkTimeout with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 5 */ val other: other with scala.Double = js.native
+  /* 2 */ val producerClosedAbruptly: producerClosedAbruptly with scala.Double = js.native
+  /* 1 */ val producerLeftSession: producerLeftSession with scala.Double = js.native
+  /* 3 */ val removedByProducer: removedByProducer with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynSessionLostReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynSessionLostReason with scala.Double
   ] = js.native
 }
 

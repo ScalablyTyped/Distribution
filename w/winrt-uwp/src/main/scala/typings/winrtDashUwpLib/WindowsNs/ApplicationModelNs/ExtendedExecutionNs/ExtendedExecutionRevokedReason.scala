@@ -22,11 +22,11 @@ object ExtendedExecutionRevokedReason extends js.Object {
   sealed trait systemPolicy
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionRevokedReason
   
-  val resumed: resumed with java.lang.String = js.native
-  val systemPolicy: systemPolicy with java.lang.String = js.native
+  /* 0 */ val resumed: resumed with scala.Double = js.native
+  /* 1 */ val systemPolicy: systemPolicy with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionRevokedReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionRevokedReason with scala.Double
   ] = js.native
 }
 

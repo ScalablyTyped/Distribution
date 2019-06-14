@@ -23,10 +23,10 @@ object CheckOutType extends js.Object {
   sealed trait online
     extends sharepointLib.SPNs.CheckOutType
   
-  val none: none with java.lang.String = js.native
-  val offline: offline with java.lang.String = js.native
-  val online: online with java.lang.String = js.native
+  /* 2 */ val none: none with scala.Double = js.native
+  /* 1 */ val offline: offline with scala.Double = js.native
+  /* 0 */ val online: online with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.CheckOutType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.CheckOutType with scala.Double] = js.native
 }
 

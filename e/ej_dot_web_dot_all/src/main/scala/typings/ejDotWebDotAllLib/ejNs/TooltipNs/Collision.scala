@@ -31,11 +31,11 @@ object Collision extends js.Object {
   sealed trait None
     extends ejDotWebDotAllLib.ejNs.TooltipNs.Collision
   
-  val Fit: Fit with java.lang.String = js.native
-  val Flip: Flip with java.lang.String = js.native
-  val FlipFit: FlipFit with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 1 */ val Fit: Fit with scala.Double = js.native
+  /* 0 */ val Flip: Flip with scala.Double = js.native
+  /* 2 */ val FlipFit: FlipFit with scala.Double = js.native
+  /* 3 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TooltipNs.Collision with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TooltipNs.Collision with scala.Double] = js.native
 }
 

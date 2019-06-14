@@ -41,13 +41,13 @@ object CurrentView extends js.Object {
   sealed trait Workweek
     extends ejDotWebDotAllLib.ejNs.ScheduleNs.CurrentView
   
-  val Agenda: Agenda with java.lang.String = js.native
-  val CustomView: CustomView with java.lang.String = js.native
-  val Day: Day with java.lang.String = js.native
-  val Month: Month with java.lang.String = js.native
-  val Week: Week with java.lang.String = js.native
-  val Workweek: Workweek with java.lang.String = js.native
+  /* 4 */ val Agenda: Agenda with scala.Double = js.native
+  /* 5 */ val CustomView: CustomView with scala.Double = js.native
+  /* 0 */ val Day: Day with scala.Double = js.native
+  /* 3 */ val Month: Month with scala.Double = js.native
+  /* 1 */ val Week: Week with scala.Double = js.native
+  /* 2 */ val Workweek: Workweek with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ScheduleNs.CurrentView with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ScheduleNs.CurrentView with scala.Double] = js.native
 }
 

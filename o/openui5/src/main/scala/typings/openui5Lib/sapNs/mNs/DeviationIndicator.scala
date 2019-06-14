@@ -26,10 +26,10 @@ object DeviationIndicator extends js.Object {
   sealed trait Up
     extends openui5Lib.sapNs.mNs.DeviationIndicator
   
-  val Down: Down with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Up: Up with java.lang.String = js.native
+  /* 0 */ val Down: Down with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
+  /* 2 */ val Up: Up with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.DeviationIndicator with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.DeviationIndicator with scala.Double] = js.native
 }
 

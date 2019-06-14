@@ -27,13 +27,13 @@ object GattClientCharacteristicConfigurationDescriptorValue extends js.Object {
   sealed trait notify
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattClientCharacteristicConfigurationDescriptorValue
   
-  val indicate: indicate with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  @JSName("notify")
-  val notify_FGattClientCharacteristicConfigurationDescriptorValue: notify with java.lang.String = js.native
+  /* 2 */ val indicate: indicate with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ @JSName("notify")
+  val notify_FGattClientCharacteristicConfigurationDescriptorValue: notify with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattClientCharacteristicConfigurationDescriptorValue with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattClientCharacteristicConfigurationDescriptorValue with scala.Double
   ] = js.native
 }
 

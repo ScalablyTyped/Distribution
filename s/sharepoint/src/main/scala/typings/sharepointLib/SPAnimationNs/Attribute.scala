@@ -31,12 +31,12 @@ object Attribute extends js.Object {
   sealed trait Width
     extends sharepointLib.SPAnimationNs.Attribute
   
-  val Height: Height with java.lang.String = js.native
-  val Opacity: Opacity with java.lang.String = js.native
-  val PositionX: PositionX with java.lang.String = js.native
-  val PositionY: PositionY with java.lang.String = js.native
-  val Width: Width with java.lang.String = js.native
+  /* 2 */ val Height: Height with scala.Double = js.native
+  /* 4 */ val Opacity: Opacity with scala.Double = js.native
+  /* 0 */ val PositionX: PositionX with scala.Double = js.native
+  /* 1 */ val PositionY: PositionY with scala.Double = js.native
+  /* 3 */ val Width: Width with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPAnimationNs.Attribute with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPAnimationNs.Attribute with scala.Double] = js.native
 }
 

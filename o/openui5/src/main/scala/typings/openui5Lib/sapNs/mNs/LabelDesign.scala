@@ -22,9 +22,9 @@ object LabelDesign extends js.Object {
   sealed trait Standard
     extends openui5Lib.sapNs.mNs.LabelDesign
   
-  val Bold: Bold with java.lang.String = js.native
-  val Standard: Standard with java.lang.String = js.native
+  /* 0 */ val Bold: Bold with scala.Double = js.native
+  /* 1 */ val Standard: Standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.LabelDesign with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.LabelDesign with scala.Double] = js.native
 }
 

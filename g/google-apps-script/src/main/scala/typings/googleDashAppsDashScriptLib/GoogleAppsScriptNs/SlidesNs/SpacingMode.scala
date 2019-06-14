@@ -23,12 +23,12 @@ object SpacingMode extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.SpacingMode
   
-  val COLLAPSE_LISTS: COLLAPSE_LISTS with java.lang.String = js.native
-  val NEVER_COLLAPSE: NEVER_COLLAPSE with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 2 */ val COLLAPSE_LISTS: COLLAPSE_LISTS with scala.Double = js.native
+  /* 1 */ val NEVER_COLLAPSE: NEVER_COLLAPSE with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.SpacingMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.SpacingMode with scala.Double
   ] = js.native
 }
 

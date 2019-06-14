@@ -27,12 +27,12 @@ object CausalitySource extends js.Object {
   sealed trait system
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalitySource
   
-  val application: application with java.lang.String = js.native
-  val library: library with java.lang.String = js.native
-  val system: system with java.lang.String = js.native
+  /* 0 */ val application: application with scala.Double = js.native
+  /* 1 */ val library: library with scala.Double = js.native
+  /* 2 */ val system: system with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalitySource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalitySource with scala.Double
   ] = js.native
 }
 

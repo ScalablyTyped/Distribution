@@ -26,10 +26,10 @@ object GeoXmlFormat extends js.Object {
   sealed trait kml
     extends bingmapsLib.MicrosoftNs.MapsNs.GeoXmlFormat
   
-  val geoRss: geoRss with java.lang.String = js.native
-  val gpx: gpx with java.lang.String = js.native
-  val kml: kml with java.lang.String = js.native
+  /* 2 */ val geoRss: geoRss with scala.Double = js.native
+  /* 1 */ val gpx: gpx with scala.Double = js.native
+  /* 0 */ val kml: kml with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.GeoXmlFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.GeoXmlFormat with scala.Double] = js.native
 }
 

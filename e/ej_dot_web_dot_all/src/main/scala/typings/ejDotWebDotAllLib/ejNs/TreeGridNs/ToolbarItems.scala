@@ -66,18 +66,18 @@ object ToolbarItems extends js.Object {
   sealed trait Update
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.ToolbarItems
   
-  val Add: Add with java.lang.String = js.native
-  val Cancel: Cancel with java.lang.String = js.native
-  val CollapseAll: CollapseAll with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Edit: Edit with java.lang.String = js.native
-  val ExcelExport: ExcelExport with java.lang.String = js.native
-  val ExpandAll: ExpandAll with java.lang.String = js.native
-  val PdfExport: PdfExport with java.lang.String = js.native
-  val Print: Print with java.lang.String = js.native
-  val Search: Search with java.lang.String = js.native
-  val Update: Update with java.lang.String = js.native
+  /* 0 */ val Add: Add with scala.Double = js.native
+  /* 4 */ val Cancel: Cancel with scala.Double = js.native
+  /* 6 */ val CollapseAll: CollapseAll with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 1 */ val Edit: Edit with scala.Double = js.native
+  /* 8 */ val ExcelExport: ExcelExport with scala.Double = js.native
+  /* 5 */ val ExpandAll: ExpandAll with scala.Double = js.native
+  /* 7 */ val PdfExport: PdfExport with scala.Double = js.native
+  /* 9 */ val Print: Print with scala.Double = js.native
+  /* 10 */ val Search: Search with scala.Double = js.native
+  /* 3 */ val Update: Update with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ToolbarItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ToolbarItems with scala.Double] = js.native
 }
 

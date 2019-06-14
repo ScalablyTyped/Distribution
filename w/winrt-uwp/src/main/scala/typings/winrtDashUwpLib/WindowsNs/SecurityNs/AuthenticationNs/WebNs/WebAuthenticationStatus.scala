@@ -27,12 +27,12 @@ object WebAuthenticationStatus extends js.Object {
   sealed trait userCancel
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.WebAuthenticationStatus
   
-  val errorHttp: errorHttp with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val userCancel: userCancel with java.lang.String = js.native
+  /* 2 */ val errorHttp: errorHttp with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 1 */ val userCancel: userCancel with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.WebAuthenticationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.WebAuthenticationStatus with scala.Double
   ] = js.native
 }
 

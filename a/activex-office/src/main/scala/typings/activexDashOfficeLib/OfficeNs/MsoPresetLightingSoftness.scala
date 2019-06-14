@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait MsoPresetLightingSoftness extends js.Object
 
+object MsoPresetLightingSoftness {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoLightingBright: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoLightingDim: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoLightingNormal: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoPresetLightingSoftnessMixed: activexDashOfficeLib.activexDashOfficeLibNumbers.`-2` = this.cast(-2)
+}
+

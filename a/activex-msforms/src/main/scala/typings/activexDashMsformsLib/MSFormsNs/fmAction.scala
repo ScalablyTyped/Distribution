@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait fmAction extends js.Object
 
+object fmAction {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fmActionCopy: activexDashMsformsLib.activexDashMsformsLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def fmActionCut: activexDashMsformsLib.activexDashMsformsLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def fmActionDragDrop: activexDashMsformsLib.activexDashMsformsLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def fmActionPaste: activexDashMsformsLib.activexDashMsformsLibNumbers.`2` = this.cast(2)
+}
+

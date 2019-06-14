@@ -77,22 +77,22 @@ object NDCertificateType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificateType
   
-  val application: application with java.lang.String = js.native
-  val crlSigner: crlSigner with java.lang.String = js.native
-  val device: device with java.lang.String = js.native
-  val domain: domain with java.lang.String = js.native
-  val issuer: issuer with java.lang.String = js.native
-  val keyFileSigner: keyFileSigner with java.lang.String = js.native
-  val licenseSigner: licenseSigner with java.lang.String = js.native
-  val metering: metering with java.lang.String = js.native
-  val pc: pc with java.lang.String = js.native
-  val server: server with java.lang.String = js.native
-  val service: service with java.lang.String = js.native
-  val silverlight: silverlight with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 8 */ val application: application with scala.Double = js.native
+  /* 5 */ val crlSigner: crlSigner with scala.Double = js.native
+  /* 2 */ val device: device with scala.Double = js.native
+  /* 3 */ val domain: domain with scala.Double = js.native
+  /* 4 */ val issuer: issuer with scala.Double = js.native
+  /* 10 */ val keyFileSigner: keyFileSigner with scala.Double = js.native
+  /* 12 */ val licenseSigner: licenseSigner with scala.Double = js.native
+  /* 9 */ val metering: metering with scala.Double = js.native
+  /* 1 */ val pc: pc with scala.Double = js.native
+  /* 11 */ val server: server with scala.Double = js.native
+  /* 6 */ val service: service with scala.Double = js.native
+  /* 7 */ val silverlight: silverlight with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificateType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificateType with scala.Double
   ] = js.native
 }
 

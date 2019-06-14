@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait AcFormatBarLimits extends js.Object
 
+object AcFormatBarLimits {
+  @scala.inline
+  def acAutomatic: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acNumber: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acPercent: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

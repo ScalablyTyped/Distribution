@@ -61,13 +61,13 @@ object ScaleModes extends js.Object {
   sealed trait WIDTH_CONTROLS_HEIGHT
     extends phaserLib.PhaserNs.ScaleNs.ScaleModes
   
-  val ENVELOP: ENVELOP with java.lang.String = js.native
-  val FIT: FIT with java.lang.String = js.native
-  val HEIGHT_CONTROLS_WIDTH: HEIGHT_CONTROLS_WIDTH with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val RESIZE: RESIZE with java.lang.String = js.native
-  val WIDTH_CONTROLS_HEIGHT: WIDTH_CONTROLS_HEIGHT with java.lang.String = js.native
+  /* 4 */ val ENVELOP: ENVELOP with scala.Double = js.native
+  /* 3 */ val FIT: FIT with scala.Double = js.native
+  /* 2 */ val HEIGHT_CONTROLS_WIDTH: HEIGHT_CONTROLS_WIDTH with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 5 */ val RESIZE: RESIZE with scala.Double = js.native
+  /* 1 */ val WIDTH_CONTROLS_HEIGHT: WIDTH_CONTROLS_HEIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.ScaleModes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.ScaleModes with scala.Double] = js.native
 }
 

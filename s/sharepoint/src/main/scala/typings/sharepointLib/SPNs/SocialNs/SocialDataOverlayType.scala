@@ -20,9 +20,9 @@ object SocialDataOverlayType extends js.Object {
   sealed trait link
     extends sharepointLib.SPNs.SocialNs.SocialDataOverlayType
   
-  val actors: actors with java.lang.String = js.native
-  val link: link with java.lang.String = js.native
+  /* 1 */ val actors: actors with scala.Double = js.native
+  /* 0 */ val link: link with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialDataOverlayType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialDataOverlayType with scala.Double] = js.native
 }
 

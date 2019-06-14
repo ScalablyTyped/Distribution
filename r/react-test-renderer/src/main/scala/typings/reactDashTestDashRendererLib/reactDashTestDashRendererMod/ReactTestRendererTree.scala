@@ -18,7 +18,7 @@ object ReactTestRendererTree {
     nodeType: reactDashTestDashRendererLib.reactDashTestDashRendererLibStrings.component | reactDashTestDashRendererLib.reactDashTestDashRendererLibStrings.host,
     props: org.scalablytyped.runtime.StringDictionary[js.Any],
     `type`: java.lang.String,
-    children: js.Array[ReactTestRendererJSON] = null,
+    children: js.Array[ReactTestRendererNode] = null,
     rendered: ReactTestRendererTree = null
   ): ReactTestRendererTree = {
     val __obj = js.Dynamic.literal(instance = instance, nodeType = nodeType.asInstanceOf[js.Any], props = props)

@@ -27,10 +27,10 @@ object EdgeGestureKind extends js.Object {
   sealed trait touch
     extends winrtDashUwpLib.WindowsNs.UINs.InputNs.EdgeGestureKind
   
-  val keyboard: keyboard with java.lang.String = js.native
-  val mouse: mouse with java.lang.String = js.native
-  val touch: touch with java.lang.String = js.native
+  /* 1 */ val keyboard: keyboard with scala.Double = js.native
+  /* 2 */ val mouse: mouse with scala.Double = js.native
+  /* 0 */ val touch: touch with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.InputNs.EdgeGestureKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.InputNs.EdgeGestureKind with scala.Double] = js.native
 }
 

@@ -31,14 +31,12 @@ object LoggerLevel extends js.Object {
   sealed trait WARNING
     extends chromecastDashCafDashSenderLib.castNs.frameworkNs.LoggerLevel
   
-  val DEBUG: DEBUG with java.lang.String = js.native
-  val ERROR: ERROR with java.lang.String = js.native
-  val INFO: INFO with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val WARNING: WARNING with java.lang.String = js.native
+  /* 0 */ val DEBUG: DEBUG with scala.Double = js.native
+  /* 3 */ val ERROR: ERROR with scala.Double = js.native
+  /* 1 */ val INFO: INFO with scala.Double = js.native
+  /* 4 */ val NONE: NONE with scala.Double = js.native
+  /* 2 */ val WARNING: WARNING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    chromecastDashCafDashSenderLib.castNs.frameworkNs.LoggerLevel with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[chromecastDashCafDashSenderLib.castNs.frameworkNs.LoggerLevel with scala.Double] = js.native
 }
 

@@ -21,9 +21,9 @@ object Animation extends js.Object {
   sealed trait Rotation
     extends ejDotWebDotAllLib.ejNs.SunburstNs.Animation
   
-  val FadeIn: FadeIn with java.lang.String = js.native
-  val Rotation: Rotation with java.lang.String = js.native
+  /* 1 */ val FadeIn: FadeIn with scala.Double = js.native
+  /* 0 */ val Rotation: Rotation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.Animation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.Animation with scala.Double] = js.native
 }
 

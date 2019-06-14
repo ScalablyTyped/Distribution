@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
 */
 trait IntegerAttributeFormat extends js.Object
 
+object IntegerAttributeFormat {
+  @scala.inline
+  def Duration: xrmLib.xrmLibStrings.duration = this.cast("duration")
+  @scala.inline
+  def None: xrmLib.xrmLibStrings.none = this.cast("none")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

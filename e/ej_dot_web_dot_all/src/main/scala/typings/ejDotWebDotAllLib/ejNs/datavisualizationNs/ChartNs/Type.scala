@@ -156,36 +156,36 @@ object Type extends js.Object {
   sealed trait StepLine
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Type
   
-  val Area: Area with java.lang.String = js.native
-  val Bar: Bar with java.lang.String = js.native
-  val Bubble: Bubble with java.lang.String = js.native
-  val Candle: Candle with java.lang.String = js.native
-  val Column: Column with java.lang.String = js.native
-  val Doughnut: Doughnut with java.lang.String = js.native
-  val Funnel: Funnel with java.lang.String = js.native
-  val HiLo: HiLo with java.lang.String = js.native
-  val HiLoOpenClose: HiLoOpenClose with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
-  val Pie: Pie with java.lang.String = js.native
-  val Polar: Polar with java.lang.String = js.native
-  val Pyramid: Pyramid with java.lang.String = js.native
-  val Radar: Radar with java.lang.String = js.native
-  val RangeArea: RangeArea with java.lang.String = js.native
-  val RangeColumn: RangeColumn with java.lang.String = js.native
-  val Scatter: Scatter with java.lang.String = js.native
-  val Spline: Spline with java.lang.String = js.native
-  val SplineArea: SplineArea with java.lang.String = js.native
-  val StackingArea: StackingArea with java.lang.String = js.native
-  val StackingArea100: StackingArea100 with java.lang.String = js.native
-  val StackingBar: StackingBar with java.lang.String = js.native
-  val StackingBar100: StackingBar100 with java.lang.String = js.native
-  val StackingColumn: StackingColumn with java.lang.String = js.native
-  val StackingColumn100: StackingColumn100 with java.lang.String = js.native
-  val StackingSplineArea: StackingSplineArea with java.lang.String = js.native
-  val StackingSplineArea100: StackingSplineArea100 with java.lang.String = js.native
-  val StepArea: StepArea with java.lang.String = js.native
-  val StepLine: StepLine with java.lang.String = js.native
+  /* 0 */ val Area: Area with scala.Double = js.native
+  /* 13 */ val Bar: Bar with scala.Double = js.native
+  /* 5 */ val Bubble: Bubble with scala.Double = js.native
+  /* 12 */ val Candle: Candle with scala.Double = js.native
+  /* 3 */ val Column: Column with scala.Double = js.native
+  /* 25 */ val Doughnut: Doughnut with scala.Double = js.native
+  /* 24 */ val Funnel: Funnel with scala.Double = js.native
+  /* 10 */ val HiLo: HiLo with scala.Double = js.native
+  /* 11 */ val HiLoOpenClose: HiLoOpenClose with scala.Double = js.native
+  /* 1 */ val Line: Line with scala.Double = js.native
+  /* 9 */ val Pie: Pie with scala.Double = js.native
+  /* 26 */ val Polar: Polar with scala.Double = js.native
+  /* 23 */ val Pyramid: Pyramid with scala.Double = js.native
+  /* 27 */ val Radar: Radar with scala.Double = js.native
+  /* 28 */ val RangeArea: RangeArea with scala.Double = js.native
+  /* 16 */ val RangeColumn: RangeColumn with scala.Double = js.native
+  /* 4 */ val Scatter: Scatter with scala.Double = js.native
+  /* 2 */ val Spline: Spline with scala.Double = js.native
+  /* 6 */ val SplineArea: SplineArea with scala.Double = js.native
+  /* 14 */ val StackingArea: StackingArea with scala.Double = js.native
+  /* 15 */ val StackingArea100: StackingArea100 with scala.Double = js.native
+  /* 19 */ val StackingBar: StackingBar with scala.Double = js.native
+  /* 20 */ val StackingBar100: StackingBar100 with scala.Double = js.native
+  /* 17 */ val StackingColumn: StackingColumn with scala.Double = js.native
+  /* 18 */ val StackingColumn100: StackingColumn100 with scala.Double = js.native
+  /* 21 */ val StackingSplineArea: StackingSplineArea with scala.Double = js.native
+  /* 22 */ val StackingSplineArea100: StackingSplineArea100 with scala.Double = js.native
+  /* 7 */ val StepArea: StepArea with scala.Double = js.native
+  /* 8 */ val StepLine: StepLine with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Type with scala.Double] = js.native
 }
 

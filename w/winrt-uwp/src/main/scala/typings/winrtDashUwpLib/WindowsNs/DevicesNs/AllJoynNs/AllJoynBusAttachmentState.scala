@@ -32,13 +32,13 @@ object AllJoynBusAttachmentState extends js.Object {
   sealed trait disconnecting
     extends winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynBusAttachmentState
   
-  val connected: connected with java.lang.String = js.native
-  val connecting: connecting with java.lang.String = js.native
-  val disconnected: disconnected with java.lang.String = js.native
-  val disconnecting: disconnecting with java.lang.String = js.native
+  /* 2 */ val connected: connected with scala.Double = js.native
+  /* 1 */ val connecting: connecting with scala.Double = js.native
+  /* 0 */ val disconnected: disconnected with scala.Double = js.native
+  /* 3 */ val disconnecting: disconnecting with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynBusAttachmentState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynBusAttachmentState with scala.Double
   ] = js.native
 }
 

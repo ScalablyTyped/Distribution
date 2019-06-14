@@ -116,30 +116,30 @@ object ConnectorConstraints extends js.Object {
   sealed trait Select
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ConnectorConstraints
   
-  val AllowDrop: AllowDrop with java.lang.String = js.native
-  val BridgeObstacle: BridgeObstacle with java.lang.String = js.native
-  val Bridging: Bridging with java.lang.String = js.native
-  val CrispEdges: CrispEdges with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Drag: Drag with java.lang.String = js.native
-  val DragLabel: DragLabel with java.lang.String = js.native
-  val DragLimit: DragLimit with java.lang.String = js.native
-  val DragSegmentThumb: DragSegmentThumb with java.lang.String = js.native
-  val DragSourceEnd: DragSourceEnd with java.lang.String = js.native
-  val DragTargetEnd: DragTargetEnd with java.lang.String = js.native
-  val InheritBridging: InheritBridging with java.lang.String = js.native
-  val InheritCrispEdges: InheritCrispEdges with java.lang.String = js.native
-  val InheritRouting: InheritRouting with java.lang.String = js.native
-  val InheritTooltip: InheritTooltip with java.lang.String = js.native
-  val Interaction: Interaction with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val PointerEvents: PointerEvents with java.lang.String = js.native
-  val Routing: Routing with java.lang.String = js.native
-  val Select: Select with java.lang.String = js.native
+  /* 10 */ val AllowDrop: AllowDrop with scala.Double = js.native
+  /* 16 */ val BridgeObstacle: BridgeObstacle with scala.Double = js.native
+  /* 7 */ val Bridging: Bridging with scala.Double = js.native
+  /* 13 */ val CrispEdges: CrispEdges with scala.Double = js.native
+  /* 20 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 3 */ val Drag: Drag with scala.Double = js.native
+  /* 8 */ val DragLabel: DragLabel with scala.Double = js.native
+  /* 15 */ val DragLimit: DragLimit with scala.Double = js.native
+  /* 6 */ val DragSegmentThumb: DragSegmentThumb with scala.Double = js.native
+  /* 4 */ val DragSourceEnd: DragSourceEnd with scala.Double = js.native
+  /* 5 */ val DragTargetEnd: DragTargetEnd with scala.Double = js.native
+  /* 9 */ val InheritBridging: InheritBridging with scala.Double = js.native
+  /* 14 */ val InheritCrispEdges: InheritCrispEdges with scala.Double = js.native
+  /* 19 */ val InheritRouting: InheritRouting with scala.Double = js.native
+  /* 11 */ val InheritTooltip: InheritTooltip with scala.Double = js.native
+  /* 17 */ val Interaction: Interaction with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 12 */ val PointerEvents: PointerEvents with scala.Double = js.native
+  /* 18 */ val Routing: Routing with scala.Double = js.native
+  /* 1 */ val Select: Select with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ConnectorConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ConnectorConstraints with scala.Double
   ] = js.native
 }
 

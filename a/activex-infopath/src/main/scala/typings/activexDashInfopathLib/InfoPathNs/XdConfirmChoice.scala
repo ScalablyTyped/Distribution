@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait XdConfirmChoice extends js.Object
 
+object XdConfirmChoice {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xdCancel: activexDashInfopathLib.activexDashInfopathLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xdNo: activexDashInfopathLib.activexDashInfopathLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def xdOK: activexDashInfopathLib.activexDashInfopathLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xdYes: activexDashInfopathLib.activexDashInfopathLibNumbers.`6` = this.cast(6)
+}
+

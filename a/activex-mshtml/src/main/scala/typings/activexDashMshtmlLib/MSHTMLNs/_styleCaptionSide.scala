@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait _styleCaptionSide extends js.Object
 
+object _styleCaptionSide {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleCaptionSideBottom: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleCaptionSideLeft: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleCaptionSideNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleCaptionSideRight: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def styleCaptionSideTop: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleCaptionSide_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

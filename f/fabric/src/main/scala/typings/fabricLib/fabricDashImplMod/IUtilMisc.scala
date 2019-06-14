@@ -182,6 +182,12 @@ trait IUtilMisc extends js.Object {
   	 */
   def rotateVector(vector: fabricLib.Anon_X, radians: scala.Double): fabricLib.Anon_X = js.native
   /**
+    * Extract Object transform values
+    * @param  {fabric.Object} target object to read from
+    * @return {Object} Components of transform
+    */
+  def saveObjectTransform(target: Object): fabricLib.Anon_AngleFlipX = js.native
+  /**
   	 * A wrapper around Number#toFixed, which contrary to native method returns number, not string.
   	 * @param number number to operate on
   	 * @param fractionDigits number of fraction digits to "leave"

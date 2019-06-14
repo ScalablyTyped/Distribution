@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OlSolutionScope extends js.Object
 
+object OlSolutionScope {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olHideInDefaultModules: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def olShowInDefaultModules: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+}
+

@@ -47,16 +47,16 @@ object UserConsentVerificationResult extends js.Object {
   sealed trait verified
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.UserConsentVerificationResult
   
-  val canceled: canceled with java.lang.String = js.native
-  val deviceBusy: deviceBusy with java.lang.String = js.native
-  val deviceNotPresent: deviceNotPresent with java.lang.String = js.native
-  val disabledByPolicy: disabledByPolicy with java.lang.String = js.native
-  val notConfiguredForUser: notConfiguredForUser with java.lang.String = js.native
-  val retriesExhausted: retriesExhausted with java.lang.String = js.native
-  val verified: verified with java.lang.String = js.native
+  /* 6 */ val canceled: canceled with scala.Double = js.native
+  /* 4 */ val deviceBusy: deviceBusy with scala.Double = js.native
+  /* 1 */ val deviceNotPresent: deviceNotPresent with scala.Double = js.native
+  /* 3 */ val disabledByPolicy: disabledByPolicy with scala.Double = js.native
+  /* 2 */ val notConfiguredForUser: notConfiguredForUser with scala.Double = js.native
+  /* 5 */ val retriesExhausted: retriesExhausted with scala.Double = js.native
+  /* 0 */ val verified: verified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.UserConsentVerificationResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.UserConsentVerificationResult with scala.Double
   ] = js.native
 }
 

@@ -21,11 +21,9 @@ object LegendIcons extends js.Object {
   sealed trait Rectangle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LegendIcons
   
-  val Circle: Circle with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
+  /* 1 */ val Circle: Circle with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LegendIcons with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LegendIcons with scala.Double] = js.native
 }
 

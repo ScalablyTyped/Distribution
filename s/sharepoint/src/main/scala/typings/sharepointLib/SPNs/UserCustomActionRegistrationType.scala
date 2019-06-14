@@ -31,12 +31,12 @@ object UserCustomActionRegistrationType extends js.Object {
   sealed trait progId
     extends sharepointLib.SPNs.UserCustomActionRegistrationType
   
-  val contentType: contentType with java.lang.String = js.native
-  val fileType: fileType with java.lang.String = js.native
-  val list: list with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val progId: progId with java.lang.String = js.native
+  /* 2 */ val contentType: contentType with scala.Double = js.native
+  /* 4 */ val fileType: fileType with scala.Double = js.native
+  /* 1 */ val list: list with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val progId: progId with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserCustomActionRegistrationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserCustomActionRegistrationType with scala.Double] = js.native
 }
 

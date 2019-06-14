@@ -27,10 +27,10 @@ object FaceDetectionMode extends js.Object {
   sealed trait highQuality
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.FaceDetectionMode
   
-  val balanced: balanced with java.lang.String = js.native
-  val highPerformance: highPerformance with java.lang.String = js.native
-  val highQuality: highQuality with java.lang.String = js.native
+  /* 1 */ val balanced: balanced with scala.Double = js.native
+  /* 0 */ val highPerformance: highPerformance with scala.Double = js.native
+  /* 2 */ val highQuality: highQuality with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.FaceDetectionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.FaceDetectionMode with scala.Double] = js.native
 }
 

@@ -42,15 +42,15 @@ object VpnManagementErrorStatus extends js.Object {
   sealed trait profileNameTooLong
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnManagementErrorStatus
   
-  val accessDenied: accessDenied with java.lang.String = js.native
-  val invalidXmlSyntax: invalidXmlSyntax with java.lang.String = js.native
-  val ok: ok with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val profileInvalidAppId: profileInvalidAppId with java.lang.String = js.native
-  val profileNameTooLong: profileNameTooLong with java.lang.String = js.native
+  /* 5 */ val accessDenied: accessDenied with scala.Double = js.native
+  /* 2 */ val invalidXmlSyntax: invalidXmlSyntax with scala.Double = js.native
+  /* 0 */ val ok: ok with scala.Double = js.native
+  /* 1 */ val other: other with scala.Double = js.native
+  /* 4 */ val profileInvalidAppId: profileInvalidAppId with scala.Double = js.native
+  /* 3 */ val profileNameTooLong: profileNameTooLong with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnManagementErrorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnManagementErrorStatus with scala.Double
   ] = js.native
 }
 

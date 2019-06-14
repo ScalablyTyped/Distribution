@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait ScriptRuntime extends js.Object
 
+object ScriptRuntime {
+  @scala.inline
+  def Duk: fridaDashGumLib.fridaDashGumLibStrings.DUK = this.cast("DUK")
+  @scala.inline
+  def V8: fridaDashGumLib.fridaDashGumLibStrings.V8 = this.cast("V8")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

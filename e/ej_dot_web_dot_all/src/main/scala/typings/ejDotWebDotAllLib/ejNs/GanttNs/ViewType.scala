@@ -26,10 +26,10 @@ object ViewType extends js.Object {
   sealed trait ResourceView
     extends ejDotWebDotAllLib.ejNs.GanttNs.ViewType
   
-  val HistogramView: HistogramView with java.lang.String = js.native
-  val ProjectView: ProjectView with java.lang.String = js.native
-  val ResourceView: ResourceView with java.lang.String = js.native
+  /* 2 */ val HistogramView: HistogramView with scala.Double = js.native
+  /* 0 */ val ProjectView: ProjectView with scala.Double = js.native
+  /* 1 */ val ResourceView: ResourceView with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.ViewType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.ViewType with scala.Double] = js.native
 }
 

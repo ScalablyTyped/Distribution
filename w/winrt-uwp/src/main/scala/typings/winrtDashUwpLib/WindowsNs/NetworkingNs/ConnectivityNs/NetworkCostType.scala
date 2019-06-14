@@ -32,13 +32,13 @@ object NetworkCostType extends js.Object {
   sealed trait variable
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkCostType
   
-  val fixed: fixed with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val unrestricted: unrestricted with java.lang.String = js.native
-  val variable: variable with java.lang.String = js.native
+  /* 2 */ val fixed: fixed with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 1 */ val unrestricted: unrestricted with scala.Double = js.native
+  /* 3 */ val variable: variable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkCostType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkCostType with scala.Double
   ] = js.native
 }
 

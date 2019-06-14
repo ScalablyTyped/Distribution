@@ -46,14 +46,14 @@ object EditingType extends js.Object {
   sealed trait TextArea
     extends ejDotWebDotAllLib.ejNs.KanbanNs.EditingType
   
-  val DatePicker: DatePicker with java.lang.String = js.native
-  val DateTimePicker: DateTimePicker with java.lang.String = js.native
-  val Dropdown: Dropdown with java.lang.String = js.native
-  val Numeric: Numeric with java.lang.String = js.native
-  val RTE: RTE with java.lang.String = js.native
-  val String: String with java.lang.String = js.native
-  val TextArea: TextArea with java.lang.String = js.native
+  /* 3 */ val DatePicker: DatePicker with scala.Double = js.native
+  /* 4 */ val DateTimePicker: DateTimePicker with scala.Double = js.native
+  /* 2 */ val Dropdown: Dropdown with scala.Double = js.native
+  /* 1 */ val Numeric: Numeric with scala.Double = js.native
+  /* 6 */ val RTE: RTE with scala.Double = js.native
+  /* 0 */ val String: String with scala.Double = js.native
+  /* 5 */ val TextArea: TextArea with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.KanbanNs.EditingType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.KanbanNs.EditingType with scala.Double] = js.native
 }
 

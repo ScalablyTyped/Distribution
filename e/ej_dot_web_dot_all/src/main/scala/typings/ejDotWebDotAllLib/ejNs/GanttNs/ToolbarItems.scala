@@ -86,22 +86,22 @@ object ToolbarItems extends js.Object {
   sealed trait Update
     extends ejDotWebDotAllLib.ejNs.GanttNs.ToolbarItems
   
-  val Add: Add with java.lang.String = js.native
-  val Cancel: Cancel with java.lang.String = js.native
-  val CollapseAll: CollapseAll with java.lang.String = js.native
-  val CriticalPath: CriticalPath with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Edit: Edit with java.lang.String = js.native
-  val ExcelExport: ExcelExport with java.lang.String = js.native
-  val ExpandAll: ExpandAll with java.lang.String = js.native
-  val Indent: Indent with java.lang.String = js.native
-  val NextTimeSpan: NextTimeSpan with java.lang.String = js.native
-  val Outdent: Outdent with java.lang.String = js.native
-  val PdfExport: PdfExport with java.lang.String = js.native
-  val PrevTimeSpan: PrevTimeSpan with java.lang.String = js.native
-  val Search: Search with java.lang.String = js.native
-  val Update: Update with java.lang.String = js.native
+  /* 0 */ val Add: Add with scala.Double = js.native
+  /* 4 */ val Cancel: Cancel with scala.Double = js.native
+  /* 9 */ val CollapseAll: CollapseAll with scala.Double = js.native
+  /* 12 */ val CriticalPath: CriticalPath with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 1 */ val Edit: Edit with scala.Double = js.native
+  /* 13 */ val ExcelExport: ExcelExport with scala.Double = js.native
+  /* 8 */ val ExpandAll: ExpandAll with scala.Double = js.native
+  /* 6 */ val Indent: Indent with scala.Double = js.native
+  /* 11 */ val NextTimeSpan: NextTimeSpan with scala.Double = js.native
+  /* 7 */ val Outdent: Outdent with scala.Double = js.native
+  /* 14 */ val PdfExport: PdfExport with scala.Double = js.native
+  /* 10 */ val PrevTimeSpan: PrevTimeSpan with scala.Double = js.native
+  /* 5 */ val Search: Search with scala.Double = js.native
+  /* 3 */ val Update: Update with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.ToolbarItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.ToolbarItems with scala.Double] = js.native
 }
 

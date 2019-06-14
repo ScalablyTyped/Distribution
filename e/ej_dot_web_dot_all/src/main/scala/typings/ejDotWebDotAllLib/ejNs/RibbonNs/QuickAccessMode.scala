@@ -26,10 +26,10 @@ object QuickAccessMode extends js.Object {
   sealed trait ToolBar
     extends ejDotWebDotAllLib.ejNs.RibbonNs.QuickAccessMode
   
-  val Menu: Menu with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val ToolBar: ToolBar with java.lang.String = js.native
+  /* 2 */ val Menu: Menu with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val ToolBar: ToolBar with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.QuickAccessMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.QuickAccessMode with scala.Double] = js.native
 }
 

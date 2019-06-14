@@ -32,13 +32,13 @@ object GattProtectionLevel extends js.Object {
   sealed trait plain
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattProtectionLevel
   
-  val authenticationRequired: authenticationRequired with java.lang.String = js.native
-  val encryptionAndAuthenticationRequired: encryptionAndAuthenticationRequired with java.lang.String = js.native
-  val encryptionRequired: encryptionRequired with java.lang.String = js.native
-  val plain: plain with java.lang.String = js.native
+  /* 1 */ val authenticationRequired: authenticationRequired with scala.Double = js.native
+  /* 3 */ val encryptionAndAuthenticationRequired: encryptionAndAuthenticationRequired with scala.Double = js.native
+  /* 2 */ val encryptionRequired: encryptionRequired with scala.Double = js.native
+  /* 0 */ val plain: plain with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattProtectionLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattProtectionLevel with scala.Double
   ] = js.native
 }
 

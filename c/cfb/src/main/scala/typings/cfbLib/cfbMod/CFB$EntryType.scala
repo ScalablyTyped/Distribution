@@ -35,14 +35,14 @@ object CFB$EntryType extends js.Object {
   sealed trait unknown
     extends cfbLib.cfbMod.CFB$EntryType
   
-  val lockbytes: lockbytes with java.lang.String = js.native
-  val property: property with java.lang.String = js.native
-  val root: root with java.lang.String = js.native
-  val storage: storage with java.lang.String = js.native
-  val stream: stream with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val lockbytes: lockbytes with scala.Double = js.native
+  /* 4 */ val property: property with scala.Double = js.native
+  /* 5 */ val root: root with scala.Double = js.native
+  /* 1 */ val storage: storage with scala.Double = js.native
+  /* 2 */ val stream: stream with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
   @JSName("CFB$EntryType")
-  def apply(value: java.lang.String): js.UndefOr[cfbLib.cfbMod.CFB$EntryType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cfbLib.cfbMod.CFB$EntryType with scala.Double] = js.native
 }
 

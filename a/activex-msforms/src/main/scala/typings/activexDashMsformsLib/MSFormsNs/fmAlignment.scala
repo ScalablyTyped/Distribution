@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait fmAlignment extends js.Object
 
+object fmAlignment {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fmAlignmentLeft: activexDashMsformsLib.activexDashMsformsLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def fmAlignmentRight: activexDashMsformsLib.activexDashMsformsLibNumbers.`1` = this.cast(1)
+}
+

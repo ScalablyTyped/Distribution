@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdMailMergeDefaultRecord extends js.Object
 
+object WdMailMergeDefaultRecord {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdDefaultFirstRecord: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdDefaultLastRecord: activexDashWordLib.activexDashWordLibNumbers.`-16` = this.cast(-16)
+}
+

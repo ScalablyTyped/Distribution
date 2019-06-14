@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlScaleType extends js.Object
 
+object XlScaleType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlScaleLinear: activexDashOfficeLib.activexDashOfficeLibNumbers.`-4132` = this.cast(-4132)
+  @scala.inline
+  def xlScaleLogarithmic: activexDashOfficeLib.activexDashOfficeLibNumbers.`-4133` = this.cast(-4133)
+}
+

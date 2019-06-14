@@ -60,11 +60,13 @@ class LoadBalancer protected ()
   /**
     * The type of IP addresses used by the subnets for your load balancer. The possible values are `ipv4` and `dualstack`
     */
-  val ipAddressType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val ipAddressType: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType] = js.native
   /**
     * The type of load balancer to create. Possible values are `application` or `network`. The default value is `application`.
     */
-  val loadBalancerType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val loadBalancerType: atPulumiPulumiLib.outputMod.Output[
+    js.UndefOr[atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType]
+  ] = js.native
   /**
     * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
     * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,

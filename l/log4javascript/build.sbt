@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "log4javascript"
-version := "1.4.15-8eac83"
+version := "1.4.15-eb4481"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

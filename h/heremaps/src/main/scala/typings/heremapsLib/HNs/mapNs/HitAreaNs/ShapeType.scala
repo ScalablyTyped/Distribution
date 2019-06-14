@@ -30,11 +30,11 @@ object ShapeType extends js.Object {
   sealed trait RECT
     extends heremapsLib.HNs.mapNs.HitAreaNs.ShapeType
   
-  val CIRCLE: CIRCLE with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val POLYGON: POLYGON with java.lang.String = js.native
-  val RECT: RECT with java.lang.String = js.native
+  /* 2 */ val CIRCLE: CIRCLE with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 3 */ val POLYGON: POLYGON with scala.Double = js.native
+  /* 1 */ val RECT: RECT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.mapNs.HitAreaNs.ShapeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.mapNs.HitAreaNs.ShapeType with scala.Double] = js.native
 }
 

@@ -26,10 +26,10 @@ object PrintOptions extends js.Object {
   sealed trait None
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.PrintOptions
   
-  val Default: Default with java.lang.String = js.native
-  val NewTab: NewTab with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val NewTab: NewTab with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.PrintOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.PrintOptions with scala.Double] = js.native
 }
 

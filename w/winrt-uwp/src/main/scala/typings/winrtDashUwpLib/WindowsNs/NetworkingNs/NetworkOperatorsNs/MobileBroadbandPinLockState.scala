@@ -32,13 +32,13 @@ object MobileBroadbandPinLockState extends js.Object {
   sealed trait unlocked
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandPinLockState
   
-  val pinRequired: pinRequired with java.lang.String = js.native
-  val pinUnblockKeyRequired: pinUnblockKeyRequired with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val unlocked: unlocked with java.lang.String = js.native
+  /* 2 */ val pinRequired: pinRequired with scala.Double = js.native
+  /* 3 */ val pinUnblockKeyRequired: pinUnblockKeyRequired with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 1 */ val unlocked: unlocked with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandPinLockState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandPinLockState with scala.Double
   ] = js.native
 }
 

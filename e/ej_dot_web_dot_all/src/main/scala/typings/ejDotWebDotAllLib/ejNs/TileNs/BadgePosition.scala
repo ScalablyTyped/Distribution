@@ -21,9 +21,9 @@ object BadgePosition extends js.Object {
   sealed trait Topright
     extends ejDotWebDotAllLib.ejNs.TileNs.BadgePosition
   
-  val Bottomright: Bottomright with java.lang.String = js.native
-  val Topright: Topright with java.lang.String = js.native
+  /* 1 */ val Bottomright: Bottomright with scala.Double = js.native
+  /* 0 */ val Topright: Topright with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TileNs.BadgePosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TileNs.BadgePosition with scala.Double] = js.native
 }
 

@@ -63,22 +63,22 @@ object ThemeColorType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ThemeColorType
   
-  val ACCENT1: ACCENT1 with java.lang.String = js.native
-  val ACCENT2: ACCENT2 with java.lang.String = js.native
-  val ACCENT3: ACCENT3 with java.lang.String = js.native
-  val ACCENT4: ACCENT4 with java.lang.String = js.native
-  val ACCENT5: ACCENT5 with java.lang.String = js.native
-  val ACCENT6: ACCENT6 with java.lang.String = js.native
-  val DARK1: DARK1 with java.lang.String = js.native
-  val DARK2: DARK2 with java.lang.String = js.native
-  val FOLLOWED_HYPERLINK: FOLLOWED_HYPERLINK with java.lang.String = js.native
-  val HYPERLINK: HYPERLINK with java.lang.String = js.native
-  val LIGHT1: LIGHT1 with java.lang.String = js.native
-  val LIGHT2: LIGHT2 with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 5 */ val ACCENT1: ACCENT1 with scala.Double = js.native
+  /* 6 */ val ACCENT2: ACCENT2 with scala.Double = js.native
+  /* 7 */ val ACCENT3: ACCENT3 with scala.Double = js.native
+  /* 8 */ val ACCENT4: ACCENT4 with scala.Double = js.native
+  /* 9 */ val ACCENT5: ACCENT5 with scala.Double = js.native
+  /* 10 */ val ACCENT6: ACCENT6 with scala.Double = js.native
+  /* 1 */ val DARK1: DARK1 with scala.Double = js.native
+  /* 3 */ val DARK2: DARK2 with scala.Double = js.native
+  /* 12 */ val FOLLOWED_HYPERLINK: FOLLOWED_HYPERLINK with scala.Double = js.native
+  /* 11 */ val HYPERLINK: HYPERLINK with scala.Double = js.native
+  /* 2 */ val LIGHT1: LIGHT1 with scala.Double = js.native
+  /* 4 */ val LIGHT2: LIGHT2 with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ThemeColorType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ThemeColorType with scala.Double
   ] = js.native
 }
 

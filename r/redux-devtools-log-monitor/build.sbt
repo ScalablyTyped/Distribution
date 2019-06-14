@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-devtools-log-monitor"
-version := "1.0.11-dt-20190322Z-64fb50"
+version := "1.0.11-dt-20190322Z-6c398e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "base16" % "1.0.0-dt-20190322Z-b1d717",
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

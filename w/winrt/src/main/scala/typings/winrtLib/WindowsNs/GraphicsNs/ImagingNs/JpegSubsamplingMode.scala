@@ -27,13 +27,11 @@ object JpegSubsamplingMode extends js.Object {
   sealed trait y4Cb4Cr4
     extends winrtLib.WindowsNs.GraphicsNs.ImagingNs.JpegSubsamplingMode
   
-  val default: default with java.lang.String = js.native
-  val y4Cb2Cr0: y4Cb2Cr0 with java.lang.String = js.native
-  val y4Cb2Cr2: y4Cb2Cr2 with java.lang.String = js.native
-  val y4Cb4Cr4: y4Cb4Cr4 with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val y4Cb2Cr0: y4Cb2Cr0 with scala.Double = js.native
+  /* 2 */ val y4Cb2Cr2: y4Cb2Cr2 with scala.Double = js.native
+  /* 3 */ val y4Cb4Cr4: y4Cb4Cr4 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.GraphicsNs.ImagingNs.JpegSubsamplingMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.ImagingNs.JpegSubsamplingMode with scala.Double] = js.native
 }
 

@@ -37,14 +37,14 @@ object FulfillmentResult extends js.Object {
   sealed trait succeeded
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.FulfillmentResult
   
-  val nothingToFulfill: nothingToFulfill with java.lang.String = js.native
-  val purchasePending: purchasePending with java.lang.String = js.native
-  val purchaseReverted: purchaseReverted with java.lang.String = js.native
-  val serverError: serverError with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
+  /* 1 */ val nothingToFulfill: nothingToFulfill with scala.Double = js.native
+  /* 2 */ val purchasePending: purchasePending with scala.Double = js.native
+  /* 3 */ val purchaseReverted: purchaseReverted with scala.Double = js.native
+  /* 4 */ val serverError: serverError with scala.Double = js.native
+  /* 0 */ val succeeded: succeeded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.FulfillmentResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.FulfillmentResult with scala.Double
   ] = js.native
 }
 

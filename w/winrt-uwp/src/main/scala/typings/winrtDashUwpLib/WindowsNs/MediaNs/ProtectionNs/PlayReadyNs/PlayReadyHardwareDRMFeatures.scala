@@ -22,11 +22,11 @@ object PlayReadyHardwareDRMFeatures extends js.Object {
   sealed trait hevc
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyHardwareDRMFeatures
   
-  val hardwareDRM: hardwareDRM with java.lang.String = js.native
-  val hevc: hevc with java.lang.String = js.native
+  /* 0 */ val hardwareDRM: hardwareDRM with scala.Double = js.native
+  /* 1 */ val hevc: hevc with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyHardwareDRMFeatures with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyHardwareDRMFeatures with scala.Double
   ] = js.native
 }
 

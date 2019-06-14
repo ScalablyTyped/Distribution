@@ -12,6 +12,6 @@ sealed trait Colors extends js.Object
 @js.native
 object Colors extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.Colors with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.Colors with scala.Nothing] = js.native
 }
 

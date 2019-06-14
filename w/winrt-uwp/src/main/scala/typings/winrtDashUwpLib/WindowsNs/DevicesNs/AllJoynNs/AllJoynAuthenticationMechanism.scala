@@ -42,15 +42,15 @@ object AllJoynAuthenticationMechanism extends js.Object {
   sealed trait srpLogon
     extends winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynAuthenticationMechanism
   
-  val ecdheEcdsa: ecdheEcdsa with java.lang.String = js.native
-  val ecdheNull: ecdheNull with java.lang.String = js.native
-  val ecdhePsk: ecdhePsk with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val srpAnonymous: srpAnonymous with java.lang.String = js.native
-  val srpLogon: srpLogon with java.lang.String = js.native
+  /* 5 */ val ecdheEcdsa: ecdheEcdsa with scala.Double = js.native
+  /* 3 */ val ecdheNull: ecdheNull with scala.Double = js.native
+  /* 4 */ val ecdhePsk: ecdhePsk with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val srpAnonymous: srpAnonymous with scala.Double = js.native
+  /* 2 */ val srpLogon: srpLogon with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynAuthenticationMechanism with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.AllJoynNs.AllJoynAuthenticationMechanism with scala.Double
   ] = js.native
 }
 

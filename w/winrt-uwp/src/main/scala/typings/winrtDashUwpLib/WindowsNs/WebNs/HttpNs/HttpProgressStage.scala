@@ -62,17 +62,17 @@ object HttpProgressStage extends js.Object {
   sealed trait waitingForResponse
     extends winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpProgressStage
   
-  val connectingToServer: connectingToServer with java.lang.String = js.native
-  val detectingProxy: detectingProxy with java.lang.String = js.native
-  val negotiatingSsl: negotiatingSsl with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val receivingContent: receivingContent with java.lang.String = js.native
-  val receivingHeaders: receivingHeaders with java.lang.String = js.native
-  val resolvingName: resolvingName with java.lang.String = js.native
-  val sendingContent: sendingContent with java.lang.String = js.native
-  val sendingHeaders: sendingHeaders with java.lang.String = js.native
-  val waitingForResponse: waitingForResponse with java.lang.String = js.native
+  /* 3 */ val connectingToServer: connectingToServer with scala.Double = js.native
+  /* 1 */ val detectingProxy: detectingProxy with scala.Double = js.native
+  /* 4 */ val negotiatingSsl: negotiatingSsl with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 9 */ val receivingContent: receivingContent with scala.Double = js.native
+  /* 8 */ val receivingHeaders: receivingHeaders with scala.Double = js.native
+  /* 2 */ val resolvingName: resolvingName with scala.Double = js.native
+  /* 6 */ val sendingContent: sendingContent with scala.Double = js.native
+  /* 5 */ val sendingHeaders: sendingHeaders with scala.Double = js.native
+  /* 7 */ val waitingForResponse: waitingForResponse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpProgressStage with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpProgressStage with scala.Double] = js.native
 }
 

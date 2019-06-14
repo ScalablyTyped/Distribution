@@ -23,10 +23,10 @@ object LoadScriptsProgress extends js.Object {
   sealed trait success
     extends sharepointLib.SrchNs.UNs.LoadScriptsProgress
   
-  val failure: failure with java.lang.String = js.native
-  val loading: loading with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 2 */ val failure: failure with scala.Double = js.native
+  /* 0 */ val loading: loading with scala.Double = js.native
+  /* 1 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SrchNs.UNs.LoadScriptsProgress with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SrchNs.UNs.LoadScriptsProgress with scala.Double] = js.native
 }
 

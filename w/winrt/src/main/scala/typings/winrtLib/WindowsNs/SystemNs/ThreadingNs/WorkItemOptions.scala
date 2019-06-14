@@ -19,9 +19,9 @@ object WorkItemOptions extends js.Object {
   sealed trait timeSliced
     extends winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemOptions
   
-  val none: none with java.lang.String = js.native
-  val timeSliced: timeSliced with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val timeSliced: timeSliced with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemOptions with scala.Double] = js.native
 }
 

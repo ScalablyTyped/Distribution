@@ -91,29 +91,29 @@ object ChartType extends js.Object {
   sealed trait WATERFALL
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType
   
-  val AREA: AREA with java.lang.String = js.native
-  val BAR: BAR with java.lang.String = js.native
-  val BUBBLE: BUBBLE with java.lang.String = js.native
-  val CANDLESTICK: CANDLESTICK with java.lang.String = js.native
-  val COLUMN: COLUMN with java.lang.String = js.native
-  val COMBO: COMBO with java.lang.String = js.native
-  val GAUGE: GAUGE with java.lang.String = js.native
-  val GEO: GEO with java.lang.String = js.native
-  val HISTOGRAM: HISTOGRAM with java.lang.String = js.native
-  val LINE: LINE with java.lang.String = js.native
-  val ORG: ORG with java.lang.String = js.native
-  val PIE: PIE with java.lang.String = js.native
-  val RADAR: RADAR with java.lang.String = js.native
-  val SCATTER: SCATTER with java.lang.String = js.native
-  val SPARKLINE: SPARKLINE with java.lang.String = js.native
-  val STEPPED_AREA: STEPPED_AREA with java.lang.String = js.native
-  val TABLE: TABLE with java.lang.String = js.native
-  val TIMELINE: TIMELINE with java.lang.String = js.native
-  val TREEMAP: TREEMAP with java.lang.String = js.native
-  val WATERFALL: WATERFALL with java.lang.String = js.native
+  /* 1 */ val AREA: AREA with scala.Double = js.native
+  /* 2 */ val BAR: BAR with scala.Double = js.native
+  /* 3 */ val BUBBLE: BUBBLE with scala.Double = js.native
+  /* 4 */ val CANDLESTICK: CANDLESTICK with scala.Double = js.native
+  /* 5 */ val COLUMN: COLUMN with scala.Double = js.native
+  /* 6 */ val COMBO: COMBO with scala.Double = js.native
+  /* 7 */ val GAUGE: GAUGE with scala.Double = js.native
+  /* 8 */ val GEO: GEO with scala.Double = js.native
+  /* 9 */ val HISTOGRAM: HISTOGRAM with scala.Double = js.native
+  /* 11 */ val LINE: LINE with scala.Double = js.native
+  /* 12 */ val ORG: ORG with scala.Double = js.native
+  /* 13 */ val PIE: PIE with scala.Double = js.native
+  /* 10 */ val RADAR: RADAR with scala.Double = js.native
+  /* 14 */ val SCATTER: SCATTER with scala.Double = js.native
+  /* 15 */ val SPARKLINE: SPARKLINE with scala.Double = js.native
+  /* 16 */ val STEPPED_AREA: STEPPED_AREA with scala.Double = js.native
+  /* 17 */ val TABLE: TABLE with scala.Double = js.native
+  /* 0 */ val TIMELINE: TIMELINE with scala.Double = js.native
+  /* 18 */ val TREEMAP: TREEMAP with scala.Double = js.native
+  /* 19 */ val WATERFALL: WATERFALL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType with scala.Double
   ] = js.native
 }
 

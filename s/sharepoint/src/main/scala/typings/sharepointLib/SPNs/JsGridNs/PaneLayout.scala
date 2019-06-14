@@ -25,10 +25,10 @@ object PaneLayout extends js.Object {
   sealed trait GridOnly
     extends sharepointLib.SPNs.JsGridNs.PaneLayout
   
-  val GridAndGantt: GridAndGantt with java.lang.String = js.native
-  val GridAndPivotedGrid: GridAndPivotedGrid with java.lang.String = js.native
-  val GridOnly: GridOnly with java.lang.String = js.native
+  /* 1 */ val GridAndGantt: GridAndGantt with scala.Double = js.native
+  /* 2 */ val GridAndPivotedGrid: GridAndPivotedGrid with scala.Double = js.native
+  /* 0 */ val GridOnly: GridOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.PaneLayout with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.PaneLayout with scala.Double] = js.native
 }
 

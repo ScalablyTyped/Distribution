@@ -94,19 +94,19 @@ object ControlPosition extends js.Object {
   sealed trait TOP_RIGHT
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
-  val BOTTOM_CENTER: BOTTOM_CENTER with java.lang.String = js.native
-  val BOTTOM_LEFT: BOTTOM_LEFT with java.lang.String = js.native
-  val BOTTOM_RIGHT: BOTTOM_RIGHT with java.lang.String = js.native
-  val LEFT_BOTTOM: LEFT_BOTTOM with java.lang.String = js.native
-  val LEFT_CENTER: LEFT_CENTER with java.lang.String = js.native
-  val LEFT_TOP: LEFT_TOP with java.lang.String = js.native
-  val RIGHT_BOTTOM: RIGHT_BOTTOM with java.lang.String = js.native
-  val RIGHT_CENTER: RIGHT_CENTER with java.lang.String = js.native
-  val RIGHT_TOP: RIGHT_TOP with java.lang.String = js.native
-  val TOP_CENTER: TOP_CENTER with java.lang.String = js.native
-  val TOP_LEFT: TOP_LEFT with java.lang.String = js.native
-  val TOP_RIGHT: TOP_RIGHT with java.lang.String = js.native
+  /* 0 */ val BOTTOM_CENTER: BOTTOM_CENTER with scala.Double = js.native
+  /* 1 */ val BOTTOM_LEFT: BOTTOM_LEFT with scala.Double = js.native
+  /* 2 */ val BOTTOM_RIGHT: BOTTOM_RIGHT with scala.Double = js.native
+  /* 3 */ val LEFT_BOTTOM: LEFT_BOTTOM with scala.Double = js.native
+  /* 4 */ val LEFT_CENTER: LEFT_CENTER with scala.Double = js.native
+  /* 5 */ val LEFT_TOP: LEFT_TOP with scala.Double = js.native
+  /* 6 */ val RIGHT_BOTTOM: RIGHT_BOTTOM with scala.Double = js.native
+  /* 7 */ val RIGHT_CENTER: RIGHT_CENTER with scala.Double = js.native
+  /* 8 */ val RIGHT_TOP: RIGHT_TOP with scala.Double = js.native
+  /* 9 */ val TOP_CENTER: TOP_CENTER with scala.Double = js.native
+  /* 10 */ val TOP_LEFT: TOP_LEFT with scala.Double = js.native
+  /* 11 */ val TOP_RIGHT: TOP_RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.ControlPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.ControlPosition with scala.Double] = js.native
 }
 

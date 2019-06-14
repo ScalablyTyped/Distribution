@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Admin extends js.Object {
-  var events: AdminEvents = js.native
-  def alterConfigs(options: AdminAlterConfigsOptions): js.Promise[scala.Unit] = js.native
-  def connect(): js.Promise[scala.Unit] = js.native
-  def createTopics(options: AdminCreateTopicsOptions): js.Promise[scala.Unit] = js.native
-  def deleteTopics(options: AdminDeleteTopicsOptions): js.Promise[scala.Unit] = js.native
-  def describeConfigs(options: AdminDescribeConfigsOptions): js.Promise[AdminConfigDescription] = js.native
-  def disconnect(): js.Promise[scala.Unit] = js.native
-  def fetchOffsets(options: AdminFetchOffsetsOptions): js.Promise[js.Array[AdminTopicOffset]] = js.native
-  def getTopicMetadata(options: kafkajsLib.Anon_TopicsArray): js.Promise[kafkajsLib.Anon_TopicsArrayTopicMetadata] = js.native
-  @JSName("on")
-  def on_adminconnect(
-    event: kafkajsLib.kafkajsLibStrings.adminDOTconnect,
-    cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
-  ): js.Function0[this.type] = js.native
-  @JSName("on")
-  def on_admindisconnect(
-    event: kafkajsLib.kafkajsLibStrings.adminDOTdisconnect,
-    cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
-  ): js.Function0[this.type] = js.native
-  @JSName("on")
-  def on_adminrequest(
-    event: kafkajsLib.kafkajsLibStrings.adminDOTrequest,
-    cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
-  ): js.Function0[this.type] = js.native
-  @JSName("on")
-  def on_adminrequestqueuesize(
-    event: kafkajsLib.kafkajsLibStrings.adminDOTrequest_queue_size,
-    cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
-  ): js.Function0[this.type] = js.native
-  @JSName("on")
-  def on_adminrequesttimeout(
-    event: kafkajsLib.kafkajsLibStrings.adminDOTrequest_timeout,
-    cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
-  ): js.Function0[this.type] = js.native
-  def resetOffsets(options: AdminResetOffsetsOptions): js.Promise[scala.Unit] = js.native
-  def setOffsets(options: AdminSetOffsetsOptions): js.Promise[scala.Unit] = js.native
+  var events: AdminEvents
+  def alterConfigs(configs: kafkajsLib.Anon_Resources): js.Promise[_]
+  def connect(): js.Promise[scala.Unit]
+  def createTopics(options: kafkajsLib.Anon_Timeout): js.Promise[scala.Boolean]
+  def deleteTopics(topics: kafkajsLib.Anon_TimeoutTopics): js.Promise[scala.Unit]
+  def describeConfigs(configs: kafkajsLib.Anon_IncludeSynonyms): js.Promise[DescribeConfigResponse]
+  def disconnect(): js.Promise[scala.Unit]
+  def fetchOffsets(topic: kafkajsLib.Anon_GroupIdTopic): js.Promise[js.Array[kafkajsLib.Anon_Offset]]
+  def fetchTopicMetadata(topicMetadata: ITopicMetadata): js.Promise[scala.Unit]
+  def fetchTopicOffsets(topic: java.lang.String): js.Promise[scala.Unit]
+  def logger(): Logger
+  def on(eventName: ValueOf[AdminEvents], listener: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit
+  def resetOffsets(topic: kafkajsLib.Anon_Earliest): js.Promise[scala.Unit]
+  def setOffsets(topic: kafkajsLib.Anon_GroupIdPartitions): js.Promise[scala.Unit]
+}
+
+object Admin {
+  @scala.inline
+  def apply(
+    alterConfigs: kafkajsLib.Anon_Resources => js.Promise[_],
+    connect: () => js.Promise[scala.Unit],
+    createTopics: kafkajsLib.Anon_Timeout => js.Promise[scala.Boolean],
+    deleteTopics: kafkajsLib.Anon_TimeoutTopics => js.Promise[scala.Unit],
+    describeConfigs: kafkajsLib.Anon_IncludeSynonyms => js.Promise[DescribeConfigResponse],
+    disconnect: () => js.Promise[scala.Unit],
+    events: AdminEvents,
+    fetchOffsets: kafkajsLib.Anon_GroupIdTopic => js.Promise[js.Array[kafkajsLib.Anon_Offset]],
+    fetchTopicMetadata: ITopicMetadata => js.Promise[scala.Unit],
+    fetchTopicOffsets: java.lang.String => js.Promise[scala.Unit],
+    logger: () => Logger,
+    on: (ValueOf[AdminEvents], js.Function1[/* repeated */ js.Any, scala.Unit]) => scala.Unit,
+    resetOffsets: kafkajsLib.Anon_Earliest => js.Promise[scala.Unit],
+    setOffsets: kafkajsLib.Anon_GroupIdPartitions => js.Promise[scala.Unit]
+  ): Admin = {
+    val __obj = js.Dynamic.literal(alterConfigs = js.Any.fromFunction1(alterConfigs), connect = js.Any.fromFunction0(connect), createTopics = js.Any.fromFunction1(createTopics), deleteTopics = js.Any.fromFunction1(deleteTopics), describeConfigs = js.Any.fromFunction1(describeConfigs), disconnect = js.Any.fromFunction0(disconnect), events = events, fetchOffsets = js.Any.fromFunction1(fetchOffsets), fetchTopicMetadata = js.Any.fromFunction1(fetchTopicMetadata), fetchTopicOffsets = js.Any.fromFunction1(fetchTopicOffsets), logger = js.Any.fromFunction0(logger), on = js.Any.fromFunction2(on), resetOffsets = js.Any.fromFunction1(resetOffsets), setOffsets = js.Any.fromFunction1(setOffsets))
+  
+    __obj.asInstanceOf[Admin]
+  }
 }
 

@@ -39,14 +39,14 @@ object MatrixDefaults extends js.Object {
   sealed trait `type`
     extends ejDotWebDotAllLib.ejNs.MatrixDefaults
   
-  val m11: m11 with java.lang.String = js.native
-  val m12: m12 with java.lang.String = js.native
-  val m21: m21 with java.lang.String = js.native
-  val m22: m22 with java.lang.String = js.native
-  val offsetX: offsetX with java.lang.String = js.native
-  val offsetY: offsetY with java.lang.String = js.native
-  val `type`: `type` with java.lang.String = js.native
+  /* 0 */ val m11: m11 with scala.Double = js.native
+  /* 1 */ val m12: m12 with scala.Double = js.native
+  /* 2 */ val m21: m21 with scala.Double = js.native
+  /* 3 */ val m22: m22 with scala.Double = js.native
+  /* 4 */ val offsetX: offsetX with scala.Double = js.native
+  /* 5 */ val offsetY: offsetY with scala.Double = js.native
+  /* 6 */ val `type`: `type` with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.MatrixDefaults with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.MatrixDefaults with scala.Double] = js.native
 }
 

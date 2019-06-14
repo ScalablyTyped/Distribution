@@ -32,13 +32,13 @@ object ThumbnailOptions extends js.Object {
   sealed trait useCurrentScale
     extends winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions
   
-  val none: none with java.lang.String = js.native
-  val resizeThumbnail: resizeThumbnail with java.lang.String = js.native
-  val returnOnlyIfCached: returnOnlyIfCached with java.lang.String = js.native
-  val useCurrentScale: useCurrentScale with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val resizeThumbnail: resizeThumbnail with scala.Double = js.native
+  /* 1 */ val returnOnlyIfCached: returnOnlyIfCached with scala.Double = js.native
+  /* 3 */ val useCurrentScale: useCurrentScale with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions with scala.Double
   ] = js.native
 }
 

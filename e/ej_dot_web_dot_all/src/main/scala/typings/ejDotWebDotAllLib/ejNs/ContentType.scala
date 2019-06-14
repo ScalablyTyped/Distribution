@@ -36,12 +36,12 @@ object ContentType extends js.Object {
   sealed trait TextOnly
     extends ejDotWebDotAllLib.ejNs.ContentType
   
-  val ImageBoth: ImageBoth with java.lang.String = js.native
-  val ImageOnly: ImageOnly with java.lang.String = js.native
-  val ImageTextImage: ImageTextImage with java.lang.String = js.native
-  val TextAndImage: TextAndImage with java.lang.String = js.native
-  val TextOnly: TextOnly with java.lang.String = js.native
+  /* 2 */ val ImageBoth: ImageBoth with scala.Double = js.native
+  /* 1 */ val ImageOnly: ImageOnly with scala.Double = js.native
+  /* 4 */ val ImageTextImage: ImageTextImage with scala.Double = js.native
+  /* 3 */ val TextAndImage: TextAndImage with scala.Double = js.native
+  /* 0 */ val TextOnly: TextOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ContentType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ContentType with scala.Double] = js.native
 }
 

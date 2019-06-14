@@ -27,13 +27,11 @@ object SocialDataStoreExceptionCode extends js.Object {
   sealed trait socialListNotFound
     extends sharepointLib.SPNs.UserProfilesNs.SocialDataStoreExceptionCode
   
-  val cannotCreatePersonalSite: cannotCreatePersonalSite with java.lang.String = js.native
-  val noSocialFeatures: noSocialFeatures with java.lang.String = js.native
-  val personalSiteNotFound: personalSiteNotFound with java.lang.String = js.native
-  val socialListNotFound: socialListNotFound with java.lang.String = js.native
+  /* 2 */ val cannotCreatePersonalSite: cannotCreatePersonalSite with scala.Double = js.native
+  /* 3 */ val noSocialFeatures: noSocialFeatures with scala.Double = js.native
+  /* 1 */ val personalSiteNotFound: personalSiteNotFound with scala.Double = js.native
+  /* 0 */ val socialListNotFound: socialListNotFound with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.UserProfilesNs.SocialDataStoreExceptionCode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.SocialDataStoreExceptionCode with scala.Double] = js.native
 }
 

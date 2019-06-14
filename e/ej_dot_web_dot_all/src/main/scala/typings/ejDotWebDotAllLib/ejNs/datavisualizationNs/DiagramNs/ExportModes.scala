@@ -21,11 +21,11 @@ object ExportModes extends js.Object {
   sealed trait Download
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ExportModes
   
-  val Data: Data with java.lang.String = js.native
-  val Download: Download with java.lang.String = js.native
+  /* 1 */ val Data: Data with scala.Double = js.native
+  /* 0 */ val Download: Download with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ExportModes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ExportModes with scala.Double
   ] = js.native
 }
 

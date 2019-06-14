@@ -23,6 +23,10 @@ class Cluster protected ()
     */
   val allowVersionUpgrade: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
+    * Amazon Resource Name (ARN) of cluster
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with create-cluster-snapshot. Default is 1.
     */
   val automatedSnapshotRetentionPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native

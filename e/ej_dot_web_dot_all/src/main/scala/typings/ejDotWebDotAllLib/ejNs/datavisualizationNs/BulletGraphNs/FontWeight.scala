@@ -31,13 +31,13 @@ object FontWeight extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FontWeight
   
-  val Bold: Bold with java.lang.String = js.native
-  val Bolder: Bolder with java.lang.String = js.native
-  val Lighter: Lighter with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 1 */ val Bold: Bold with scala.Double = js.native
+  /* 2 */ val Bolder: Bolder with scala.Double = js.native
+  /* 3 */ val Lighter: Lighter with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FontWeight with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FontWeight with scala.Double
   ] = js.native
 }
 

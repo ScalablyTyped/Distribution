@@ -9,10 +9,10 @@ trait ListRoutesInput extends js.Object {
   /**
     * The maximum number of results returned by ListRoutes in paginated output.
     When you use this parameter, ListRoutes returns only limit
-    results in a single page along with a nextToken response element. You can see the
-    remaining results of the initial request by sending another
-    ListRoutes request with the returned nextToken value. This
-    value can be between 1 and 100. If you don't use this parameter,
+    results in a single page along with a nextToken response element. You can see
+    the remaining results of the initial request by sending another ListRoutes
+    request with the returned nextToken value. This value can be between
+    1 and 100. If you don't use this parameter,
     ListRoutes returns up to 100 results and a
     nextToken value if applicable.
     */
@@ -23,9 +23,9 @@ trait ListRoutesInput extends js.Object {
   var meshName: ResourceName
   /**
     * The nextToken value returned from a previous paginated
-    ListRoutes request where limit was used and the
-    results exceeded the value of that parameter. Pagination continues from the end of the
-    previous results that returned the nextToken value.
+    ListRoutes request where limit was used and the results
+    exceeded the value of that parameter. Pagination continues from the end of the previous
+    results that returned the nextToken value.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   /**

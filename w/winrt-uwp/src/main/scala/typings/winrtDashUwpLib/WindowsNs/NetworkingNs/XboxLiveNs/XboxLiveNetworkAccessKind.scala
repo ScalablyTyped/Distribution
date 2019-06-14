@@ -27,12 +27,12 @@ object XboxLiveNetworkAccessKind extends js.Object {
   sealed trait strict
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveNetworkAccessKind
   
-  val moderate: moderate with java.lang.String = js.native
-  val open: open with java.lang.String = js.native
-  val strict: strict with java.lang.String = js.native
+  /* 1 */ val moderate: moderate with scala.Double = js.native
+  /* 0 */ val open: open with scala.Double = js.native
+  /* 2 */ val strict: strict with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveNetworkAccessKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveNetworkAccessKind with scala.Double
   ] = js.native
 }
 

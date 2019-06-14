@@ -31,11 +31,11 @@ object EditMode extends js.Object {
   sealed trait ExternalFormTemplate
     extends ejDotWebDotAllLib.ejNs.KanbanNs.EditMode
   
-  val Dialog: Dialog with java.lang.String = js.native
-  val DialogTemplate: DialogTemplate with java.lang.String = js.native
-  val ExternalForm: ExternalForm with java.lang.String = js.native
-  val ExternalFormTemplate: ExternalFormTemplate with java.lang.String = js.native
+  /* 0 */ val Dialog: Dialog with scala.Double = js.native
+  /* 1 */ val DialogTemplate: DialogTemplate with scala.Double = js.native
+  /* 2 */ val ExternalForm: ExternalForm with scala.Double = js.native
+  /* 3 */ val ExternalFormTemplate: ExternalFormTemplate with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.KanbanNs.EditMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.KanbanNs.EditMode with scala.Double] = js.native
 }
 

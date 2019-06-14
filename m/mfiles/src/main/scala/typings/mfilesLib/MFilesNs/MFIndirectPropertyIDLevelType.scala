@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MFIndirectPropertyIDLevelType extends js.Object
 
+object MFIndirectPropertyIDLevelType {
+  @scala.inline
+  def ObjectType: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def PropertyDef: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def StateChanger: mfilesLib.mfilesLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -112,29 +112,29 @@ object DevicePairingResultStatus extends js.Object {
   sealed trait tooManyConnections
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingResultStatus
   
-  val accessDenied: accessDenied with java.lang.String = js.native
-  val alreadyPaired: alreadyPaired with java.lang.String = js.native
-  val authenticationFailure: authenticationFailure with java.lang.String = js.native
-  val authenticationNotAllowed: authenticationNotAllowed with java.lang.String = js.native
-  val authenticationTimeout: authenticationTimeout with java.lang.String = js.native
-  val connectionRejected: connectionRejected with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val hardwareFailure: hardwareFailure with java.lang.String = js.native
-  val invalidCeremonyData: invalidCeremonyData with java.lang.String = js.native
-  val noSupportedProfiles: noSupportedProfiles with java.lang.String = js.native
-  val notPaired: notPaired with java.lang.String = js.native
-  val notReadyToPair: notReadyToPair with java.lang.String = js.native
-  val operationAlreadyInProgress: operationAlreadyInProgress with java.lang.String = js.native
-  val paired: paired with java.lang.String = js.native
-  val pairingCanceled: pairingCanceled with java.lang.String = js.native
-  val protectionLevelCouldNotBeMet: protectionLevelCouldNotBeMet with java.lang.String = js.native
-  val rejectedByHandler: rejectedByHandler with java.lang.String = js.native
-  val remoteDeviceHasAssociation: remoteDeviceHasAssociation with java.lang.String = js.native
-  val requiredHandlerNotRegistered: requiredHandlerNotRegistered with java.lang.String = js.native
-  val tooManyConnections: tooManyConnections with java.lang.String = js.native
+  /* 12 */ val accessDenied: accessDenied with scala.Double = js.native
+  /* 3 */ val alreadyPaired: alreadyPaired with scala.Double = js.native
+  /* 9 */ val authenticationFailure: authenticationFailure with scala.Double = js.native
+  /* 8 */ val authenticationNotAllowed: authenticationNotAllowed with scala.Double = js.native
+  /* 7 */ val authenticationTimeout: authenticationTimeout with scala.Double = js.native
+  /* 4 */ val connectionRejected: connectionRejected with scala.Double = js.native
+  /* 19 */ val failed: failed with scala.Double = js.native
+  /* 6 */ val hardwareFailure: hardwareFailure with scala.Double = js.native
+  /* 13 */ val invalidCeremonyData: invalidCeremonyData with scala.Double = js.native
+  /* 10 */ val noSupportedProfiles: noSupportedProfiles with scala.Double = js.native
+  /* 2 */ val notPaired: notPaired with scala.Double = js.native
+  /* 1 */ val notReadyToPair: notReadyToPair with scala.Double = js.native
+  /* 15 */ val operationAlreadyInProgress: operationAlreadyInProgress with scala.Double = js.native
+  /* 0 */ val paired: paired with scala.Double = js.native
+  /* 14 */ val pairingCanceled: pairingCanceled with scala.Double = js.native
+  /* 11 */ val protectionLevelCouldNotBeMet: protectionLevelCouldNotBeMet with scala.Double = js.native
+  /* 17 */ val rejectedByHandler: rejectedByHandler with scala.Double = js.native
+  /* 18 */ val remoteDeviceHasAssociation: remoteDeviceHasAssociation with scala.Double = js.native
+  /* 16 */ val requiredHandlerNotRegistered: requiredHandlerNotRegistered with scala.Double = js.native
+  /* 5 */ val tooManyConnections: tooManyConnections with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingResultStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingResultStatus with scala.Double
   ] = js.native
 }
 

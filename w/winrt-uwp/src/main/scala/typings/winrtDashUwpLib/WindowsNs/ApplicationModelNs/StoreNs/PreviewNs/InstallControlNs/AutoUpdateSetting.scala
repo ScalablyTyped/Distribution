@@ -32,13 +32,13 @@ object AutoUpdateSetting extends js.Object {
   sealed trait enabledByPolicy
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AutoUpdateSetting
   
-  val disabled: disabled with java.lang.String = js.native
-  val disabledByPolicy: disabledByPolicy with java.lang.String = js.native
-  val enabled: enabled with java.lang.String = js.native
-  val enabledByPolicy: enabledByPolicy with java.lang.String = js.native
+  /* 0 */ val disabled: disabled with scala.Double = js.native
+  /* 2 */ val disabledByPolicy: disabledByPolicy with scala.Double = js.native
+  /* 1 */ val enabled: enabled with scala.Double = js.native
+  /* 3 */ val enabledByPolicy: enabledByPolicy with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AutoUpdateSetting with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AutoUpdateSetting with scala.Double
   ] = js.native
 }
 

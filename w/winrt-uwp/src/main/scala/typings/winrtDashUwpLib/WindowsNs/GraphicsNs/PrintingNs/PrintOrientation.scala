@@ -47,16 +47,16 @@ object PrintOrientation extends js.Object {
   sealed trait printerCustom
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintOrientation
   
-  val default: default with java.lang.String = js.native
-  val landscape: landscape with java.lang.String = js.native
-  val landscapeFlipped: landscapeFlipped with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val portrait: portrait with java.lang.String = js.native
-  val portraitFlipped: portraitFlipped with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 5 */ val landscape: landscape with scala.Double = js.native
+  /* 6 */ val landscapeFlipped: landscapeFlipped with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 3 */ val portrait: portrait with scala.Double = js.native
+  /* 4 */ val portraitFlipped: portraitFlipped with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintOrientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintOrientation with scala.Double
   ] = js.native
 }
 

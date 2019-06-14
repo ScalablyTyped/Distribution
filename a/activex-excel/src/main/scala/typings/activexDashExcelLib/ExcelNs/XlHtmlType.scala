@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait XlHtmlType extends js.Object
 
+object XlHtmlType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlHtmlCalc: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlHtmlChart: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlHtmlList: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlHtmlStatic: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+}
+

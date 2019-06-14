@@ -103,32 +103,32 @@ object ElementType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.ElementType
   
-  val BODY_SECTION: BODY_SECTION with java.lang.String = js.native
-  val COMMENT_SECTION: COMMENT_SECTION with java.lang.String = js.native
-  val DOCUMENT: DOCUMENT with java.lang.String = js.native
-  val EQUATION: EQUATION with java.lang.String = js.native
-  val EQUATION_FUNCTION: EQUATION_FUNCTION with java.lang.String = js.native
-  val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: EQUATION_FUNCTION_ARGUMENT_SEPARATOR with java.lang.String = js.native
-  val EQUATION_SYMBOL: EQUATION_SYMBOL with java.lang.String = js.native
-  val FOOTER_SECTION: FOOTER_SECTION with java.lang.String = js.native
-  val FOOTNOTE: FOOTNOTE with java.lang.String = js.native
-  val FOOTNOTE_SECTION: FOOTNOTE_SECTION with java.lang.String = js.native
-  val HEADER_SECTION: HEADER_SECTION with java.lang.String = js.native
-  val HORIZONTAL_RULE: HORIZONTAL_RULE with java.lang.String = js.native
-  val INLINE_DRAWING: INLINE_DRAWING with java.lang.String = js.native
-  val INLINE_IMAGE: INLINE_IMAGE with java.lang.String = js.native
-  val LIST_ITEM: LIST_ITEM with java.lang.String = js.native
-  val PAGE_BREAK: PAGE_BREAK with java.lang.String = js.native
-  val PARAGRAPH: PARAGRAPH with java.lang.String = js.native
-  val TABLE: TABLE with java.lang.String = js.native
-  val TABLE_CELL: TABLE_CELL with java.lang.String = js.native
-  val TABLE_OF_CONTENTS: TABLE_OF_CONTENTS with java.lang.String = js.native
-  val TABLE_ROW: TABLE_ROW with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 0 */ val BODY_SECTION: BODY_SECTION with scala.Double = js.native
+  /* 1 */ val COMMENT_SECTION: COMMENT_SECTION with scala.Double = js.native
+  /* 2 */ val DOCUMENT: DOCUMENT with scala.Double = js.native
+  /* 3 */ val EQUATION: EQUATION with scala.Double = js.native
+  /* 4 */ val EQUATION_FUNCTION: EQUATION_FUNCTION with scala.Double = js.native
+  /* 5 */ val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: EQUATION_FUNCTION_ARGUMENT_SEPARATOR with scala.Double = js.native
+  /* 6 */ val EQUATION_SYMBOL: EQUATION_SYMBOL with scala.Double = js.native
+  /* 7 */ val FOOTER_SECTION: FOOTER_SECTION with scala.Double = js.native
+  /* 8 */ val FOOTNOTE: FOOTNOTE with scala.Double = js.native
+  /* 9 */ val FOOTNOTE_SECTION: FOOTNOTE_SECTION with scala.Double = js.native
+  /* 10 */ val HEADER_SECTION: HEADER_SECTION with scala.Double = js.native
+  /* 11 */ val HORIZONTAL_RULE: HORIZONTAL_RULE with scala.Double = js.native
+  /* 12 */ val INLINE_DRAWING: INLINE_DRAWING with scala.Double = js.native
+  /* 13 */ val INLINE_IMAGE: INLINE_IMAGE with scala.Double = js.native
+  /* 14 */ val LIST_ITEM: LIST_ITEM with scala.Double = js.native
+  /* 15 */ val PAGE_BREAK: PAGE_BREAK with scala.Double = js.native
+  /* 16 */ val PARAGRAPH: PARAGRAPH with scala.Double = js.native
+  /* 17 */ val TABLE: TABLE with scala.Double = js.native
+  /* 18 */ val TABLE_CELL: TABLE_CELL with scala.Double = js.native
+  /* 19 */ val TABLE_OF_CONTENTS: TABLE_OF_CONTENTS with scala.Double = js.native
+  /* 20 */ val TABLE_ROW: TABLE_ROW with scala.Double = js.native
+  /* 21 */ val TEXT: TEXT with scala.Double = js.native
+  /* 22 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.ElementType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.ElementType with scala.Double
   ] = js.native
 }
 

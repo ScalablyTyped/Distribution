@@ -1050,13 +1050,13 @@ object StropheNs extends js.Object {
     sealed trait WARN
       extends stropheDotJsLib.stropheDotJsMod.StropheNs.LogLevel
     
-    val DEBUG: DEBUG with java.lang.String = js.native
-    val ERROR: ERROR with java.lang.String = js.native
-    val FATAL: FATAL with java.lang.String = js.native
-    val INFO: INFO with java.lang.String = js.native
-    val WARN: WARN with java.lang.String = js.native
+    /* 0 */ val DEBUG: DEBUG with scala.Double = js.native
+    /* 3 */ val ERROR: ERROR with scala.Double = js.native
+    /* 4 */ val FATAL: FATAL with scala.Double = js.native
+    /* 1 */ val INFO: INFO with scala.Double = js.native
+    /* 2 */ val WARN: WARN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[stropheDotJsLib.stropheDotJsMod.StropheNs.LogLevel with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[stropheDotJsLib.stropheDotJsMod.StropheNs.LogLevel with scala.Double] = js.native
   }
   
   /** Constants: XMPP Namespace Constants
@@ -1160,19 +1160,19 @@ object StropheNs extends js.Object {
     sealed trait REDIRECT
       extends stropheDotJsLib.stropheDotJsMod.StropheNs.Status
     
-    val ATTACHED: ATTACHED with java.lang.String = js.native
-    val AUTHENTICATING: AUTHENTICATING with java.lang.String = js.native
-    val AUTHFAIL: AUTHFAIL with java.lang.String = js.native
-    val CONNECTED: CONNECTED with java.lang.String = js.native
-    val CONNECTING: CONNECTING with java.lang.String = js.native
-    val CONNFAIL: CONNFAIL with java.lang.String = js.native
-    val CONNTIMEOUT: CONNTIMEOUT with java.lang.String = js.native
-    val DISCONNECTED: DISCONNECTED with java.lang.String = js.native
-    val DISCONNECTING: DISCONNECTING with java.lang.String = js.native
-    val ERROR: ERROR with java.lang.String = js.native
-    val REDIRECT: REDIRECT with java.lang.String = js.native
+    /* 8 */ val ATTACHED: ATTACHED with scala.Double = js.native
+    /* 3 */ val AUTHENTICATING: AUTHENTICATING with scala.Double = js.native
+    /* 4 */ val AUTHFAIL: AUTHFAIL with scala.Double = js.native
+    /* 5 */ val CONNECTED: CONNECTED with scala.Double = js.native
+    /* 1 */ val CONNECTING: CONNECTING with scala.Double = js.native
+    /* 2 */ val CONNFAIL: CONNFAIL with scala.Double = js.native
+    /* 10 */ val CONNTIMEOUT: CONNTIMEOUT with scala.Double = js.native
+    /* 6 */ val DISCONNECTED: DISCONNECTED with scala.Double = js.native
+    /* 7 */ val DISCONNECTING: DISCONNECTING with scala.Double = js.native
+    /* 0 */ val ERROR: ERROR with scala.Double = js.native
+    /* 9 */ val REDIRECT: REDIRECT with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[stropheDotJsLib.stropheDotJsMod.StropheNs.Status with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[stropheDotJsLib.stropheDotJsMod.StropheNs.Status with scala.Double] = js.native
   }
   
 }

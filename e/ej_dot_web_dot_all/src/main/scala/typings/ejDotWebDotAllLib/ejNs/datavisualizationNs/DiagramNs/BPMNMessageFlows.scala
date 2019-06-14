@@ -26,12 +26,12 @@ object BPMNMessageFlows extends js.Object {
   sealed trait NonInitiatingMessage
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNMessageFlows
   
-  val Default: Default with java.lang.String = js.native
-  val InitiatingMessage: InitiatingMessage with java.lang.String = js.native
-  val NonInitiatingMessage: NonInitiatingMessage with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val InitiatingMessage: InitiatingMessage with scala.Double = js.native
+  /* 2 */ val NonInitiatingMessage: NonInitiatingMessage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNMessageFlows with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNMessageFlows with scala.Double
   ] = js.native
 }
 

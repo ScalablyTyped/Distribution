@@ -26,12 +26,12 @@ object BPMNActivity extends js.Object {
   sealed trait Task
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNActivity
   
-  val None: None with java.lang.String = js.native
-  val SubProcess: SubProcess with java.lang.String = js.native
-  val Task: Task with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val SubProcess: SubProcess with scala.Double = js.native
+  /* 1 */ val Task: Task with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNActivity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNActivity with scala.Double
   ] = js.native
 }
 

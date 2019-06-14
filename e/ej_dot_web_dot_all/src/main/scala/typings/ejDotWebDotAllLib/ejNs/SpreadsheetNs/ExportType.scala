@@ -26,10 +26,10 @@ object ExportType extends js.Object {
   sealed trait Pdf
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.ExportType
   
-  val Csv: Csv with java.lang.String = js.native
-  val Excel: Excel with java.lang.String = js.native
-  val Pdf: Pdf with java.lang.String = js.native
+  /* 1 */ val Csv: Csv with scala.Double = js.native
+  /* 0 */ val Excel: Excel with scala.Double = js.native
+  /* 2 */ val Pdf: Pdf with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.ExportType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.ExportType with scala.Double] = js.native
 }
 

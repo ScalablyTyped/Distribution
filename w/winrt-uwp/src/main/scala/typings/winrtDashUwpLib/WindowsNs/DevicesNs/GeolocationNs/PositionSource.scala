@@ -37,14 +37,14 @@ object PositionSource extends js.Object {
   sealed trait wiFi
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.PositionSource
   
-  val cellular: cellular with java.lang.String = js.native
-  val ipAddress: ipAddress with java.lang.String = js.native
-  val satellite: satellite with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val wiFi: wiFi with java.lang.String = js.native
+  /* 0 */ val cellular: cellular with scala.Double = js.native
+  /* 3 */ val ipAddress: ipAddress with scala.Double = js.native
+  /* 1 */ val satellite: satellite with scala.Double = js.native
+  /* 4 */ val unknown: unknown with scala.Double = js.native
+  /* 2 */ val wiFi: wiFi with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.PositionSource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.PositionSource with scala.Double
   ] = js.native
 }
 

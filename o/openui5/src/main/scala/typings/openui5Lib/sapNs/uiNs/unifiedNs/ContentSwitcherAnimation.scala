@@ -42,14 +42,14 @@ object ContentSwitcherAnimation extends js.Object {
   sealed trait ZoomOut
     extends openui5Lib.sapNs.uiNs.unifiedNs.ContentSwitcherAnimation
   
-  val Fade: Fade with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Rotate: Rotate with java.lang.String = js.native
-  val SlideOver: SlideOver with java.lang.String = js.native
-  val SlideRight: SlideRight with java.lang.String = js.native
-  val ZoomIn: ZoomIn with java.lang.String = js.native
-  val ZoomOut: ZoomOut with java.lang.String = js.native
+  /* 0 */ val Fade: Fade with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
+  /* 2 */ val Rotate: Rotate with scala.Double = js.native
+  /* 3 */ val SlideOver: SlideOver with scala.Double = js.native
+  /* 4 */ val SlideRight: SlideRight with scala.Double = js.native
+  /* 5 */ val ZoomIn: ZoomIn with scala.Double = js.native
+  /* 6 */ val ZoomOut: ZoomOut with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.unifiedNs.ContentSwitcherAnimation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.unifiedNs.ContentSwitcherAnimation with scala.Double] = js.native
 }
 

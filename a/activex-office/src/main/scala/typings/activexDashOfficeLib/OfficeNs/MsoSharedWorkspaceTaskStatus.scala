@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait MsoSharedWorkspaceTaskStatus extends js.Object
 
+object MsoSharedWorkspaceTaskStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoSharedWorkspaceTaskStatusCompleted: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoSharedWorkspaceTaskStatusDeferred: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoSharedWorkspaceTaskStatusInProgress: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoSharedWorkspaceTaskStatusNotStarted: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoSharedWorkspaceTaskStatusWaiting: activexDashOfficeLib.activexDashOfficeLibNumbers.`5` = this.cast(5)
+}
+

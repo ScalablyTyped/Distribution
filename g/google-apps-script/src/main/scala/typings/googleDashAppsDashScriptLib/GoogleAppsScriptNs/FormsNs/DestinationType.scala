@@ -15,10 +15,10 @@ object DestinationType extends js.Object {
   sealed trait SPREADSHEET
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.DestinationType
   
-  val SPREADSHEET: SPREADSHEET with java.lang.String = js.native
+  /* 0 */ val SPREADSHEET: SPREADSHEET with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.DestinationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.DestinationType with scala.Double
   ] = js.native
 }
 

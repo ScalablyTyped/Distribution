@@ -31,14 +31,12 @@ object NotificationSetting extends js.Object {
   sealed trait enabled
     extends winrtLib.WindowsNs.UINs.NotificationsNs.NotificationSetting
   
-  val disabledByGroupPolicy: disabledByGroupPolicy with java.lang.String = js.native
-  val disabledByManifest: disabledByManifest with java.lang.String = js.native
-  val disabledForApplication: disabledForApplication with java.lang.String = js.native
-  val disabledForUser: disabledForUser with java.lang.String = js.native
-  val enabled: enabled with java.lang.String = js.native
+  /* 3 */ val disabledByGroupPolicy: disabledByGroupPolicy with scala.Double = js.native
+  /* 4 */ val disabledByManifest: disabledByManifest with scala.Double = js.native
+  /* 1 */ val disabledForApplication: disabledForApplication with scala.Double = js.native
+  /* 2 */ val disabledForUser: disabledForUser with scala.Double = js.native
+  /* 0 */ val enabled: enabled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.UINs.NotificationsNs.NotificationSetting with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.NotificationsNs.NotificationSetting with scala.Double] = js.native
 }
 

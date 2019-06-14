@@ -26,13 +26,13 @@ trait PolicyArgs extends js.Object {
   /**
     * The policy document. This is a JSON formatted string. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
     */
-  val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
 }
 
 object PolicyArgs {
   @scala.inline
   def apply(
-    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument],
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

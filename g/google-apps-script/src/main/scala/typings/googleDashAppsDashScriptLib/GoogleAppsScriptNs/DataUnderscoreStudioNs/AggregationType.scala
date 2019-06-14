@@ -43,17 +43,17 @@ object AggregationType extends js.Object {
   sealed trait SUM
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AggregationType
   
-  val AUTO: AUTO with java.lang.String = js.native
-  val AVG: AVG with java.lang.String = js.native
-  val COUNT: COUNT with java.lang.String = js.native
-  val COUNT_DISTINCT: COUNT_DISTINCT with java.lang.String = js.native
-  val MAX: MAX with java.lang.String = js.native
-  val MIN: MIN with java.lang.String = js.native
-  val NO_AGGREGATION: NO_AGGREGATION with java.lang.String = js.native
-  val SUM: SUM with java.lang.String = js.native
+  /* 6 */ val AUTO: AUTO with scala.Double = js.native
+  /* 0 */ val AVG: AVG with scala.Double = js.native
+  /* 1 */ val COUNT: COUNT with scala.Double = js.native
+  /* 2 */ val COUNT_DISTINCT: COUNT_DISTINCT with scala.Double = js.native
+  /* 3 */ val MAX: MAX with scala.Double = js.native
+  /* 4 */ val MIN: MIN with scala.Double = js.native
+  /* 7 */ val NO_AGGREGATION: NO_AGGREGATION with scala.Double = js.native
+  /* 5 */ val SUM: SUM with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AggregationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AggregationType with scala.Double
   ] = js.native
 }
 

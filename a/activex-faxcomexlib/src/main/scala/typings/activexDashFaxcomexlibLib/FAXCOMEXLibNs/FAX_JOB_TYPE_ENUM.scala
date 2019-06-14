@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait FAX_JOB_TYPE_ENUM extends js.Object
 
+object FAX_JOB_TYPE_ENUM {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fjtRECEIVE: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def fjtROUTING: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def fjtSEND: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`0` = this.cast(0)
+}
+

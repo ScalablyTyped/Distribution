@@ -167,40 +167,40 @@ object ActivationKind extends js.Object {
   sealed trait webAuthenticationBrokerContinuation
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ActivationNs.ActivationKind
   
-  val appointmentsProvider: appointmentsProvider with java.lang.String = js.native
-  val cachedFileUpdater: cachedFileUpdater with java.lang.String = js.native
-  val cameraSettings: cameraSettings with java.lang.String = js.native
-  val componentUI: componentUI with java.lang.String = js.native
-  val contact: contact with java.lang.String = js.native
-  val contactPicker: contactPicker with java.lang.String = js.native
-  val device: device with java.lang.String = js.native
-  val devicePairing: devicePairing with java.lang.String = js.native
-  val dialReceiver: dialReceiver with java.lang.String = js.native
-  val file: file with java.lang.String = js.native
-  val fileOpenPicker: fileOpenPicker with java.lang.String = js.native
-  val fileSavePicker: fileSavePicker with java.lang.String = js.native
-  val launch: launch with java.lang.String = js.native
-  val lockScreen: lockScreen with java.lang.String = js.native
-  val lockScreenCall: lockScreenCall with java.lang.String = js.native
-  val pickFileContinuation: pickFileContinuation with java.lang.String = js.native
-  val pickFolderContinuation: pickFolderContinuation with java.lang.String = js.native
-  val pickSaveFileContinuation: pickSaveFileContinuation with java.lang.String = js.native
-  val pickerReturned: pickerReturned with java.lang.String = js.native
-  val print3DWorkflow: print3DWorkflow with java.lang.String = js.native
-  val printTaskSettings: printTaskSettings with java.lang.String = js.native
-  val protocol: protocol with java.lang.String = js.native
-  val protocolForResults: protocolForResults with java.lang.String = js.native
-  val restrictedLaunch: restrictedLaunch with java.lang.String = js.native
-  val search: search with java.lang.String = js.native
-  val shareTarget: shareTarget with java.lang.String = js.native
-  val toastNotification: toastNotification with java.lang.String = js.native
-  val voiceCommand: voiceCommand with java.lang.String = js.native
-  val walletAction: walletAction with java.lang.String = js.native
-  val webAccountProvider: webAccountProvider with java.lang.String = js.native
-  val webAuthenticationBrokerContinuation: webAuthenticationBrokerContinuation with java.lang.String = js.native
+  /* 13 */ val appointmentsProvider: appointmentsProvider with scala.Double = js.native
+  /* 7 */ val cachedFileUpdater: cachedFileUpdater with scala.Double = js.native
+  /* 11 */ val cameraSettings: cameraSettings with scala.Double = js.native
+  /* 25 */ val componentUI: componentUI with scala.Double = js.native
+  /* 14 */ val contact: contact with scala.Double = js.native
+  /* 8 */ val contactPicker: contactPicker with scala.Double = js.native
+  /* 9 */ val device: device with scala.Double = js.native
+  /* 30 */ val devicePairing: devicePairing with scala.Double = js.native
+  /* 29 */ val dialReceiver: dialReceiver with scala.Double = js.native
+  /* 3 */ val file: file with scala.Double = js.native
+  /* 5 */ val fileOpenPicker: fileOpenPicker with scala.Double = js.native
+  /* 6 */ val fileSavePicker: fileSavePicker with scala.Double = js.native
+  /* 0 */ val launch: launch with scala.Double = js.native
+  /* 17 */ val lockScreen: lockScreen with scala.Double = js.native
+  /* 15 */ val lockScreenCall: lockScreenCall with scala.Double = js.native
+  /* 20 */ val pickFileContinuation: pickFileContinuation with scala.Double = js.native
+  /* 22 */ val pickFolderContinuation: pickFolderContinuation with scala.Double = js.native
+  /* 21 */ val pickSaveFileContinuation: pickSaveFileContinuation with scala.Double = js.native
+  /* 18 */ val pickerReturned: pickerReturned with scala.Double = js.native
+  /* 28 */ val print3DWorkflow: print3DWorkflow with scala.Double = js.native
+  /* 10 */ val printTaskSettings: printTaskSettings with scala.Double = js.native
+  /* 4 */ val protocol: protocol with scala.Double = js.native
+  /* 26 */ val protocolForResults: protocolForResults with scala.Double = js.native
+  /* 12 */ val restrictedLaunch: restrictedLaunch with scala.Double = js.native
+  /* 1 */ val search: search with scala.Double = js.native
+  /* 2 */ val shareTarget: shareTarget with scala.Double = js.native
+  /* 27 */ val toastNotification: toastNotification with scala.Double = js.native
+  /* 16 */ val voiceCommand: voiceCommand with scala.Double = js.native
+  /* 19 */ val walletAction: walletAction with scala.Double = js.native
+  /* 24 */ val webAccountProvider: webAccountProvider with scala.Double = js.native
+  /* 23 */ val webAuthenticationBrokerContinuation: webAuthenticationBrokerContinuation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ActivationNs.ActivationKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ActivationNs.ActivationKind with scala.Double
   ] = js.native
 }
 

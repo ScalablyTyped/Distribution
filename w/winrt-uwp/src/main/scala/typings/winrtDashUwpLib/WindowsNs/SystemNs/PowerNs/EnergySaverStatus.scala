@@ -27,12 +27,10 @@ object EnergySaverStatus extends js.Object {
   sealed trait on
     extends winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.EnergySaverStatus
   
-  val disabled: disabled with java.lang.String = js.native
-  val off: off with java.lang.String = js.native
-  val on: on with java.lang.String = js.native
+  /* 0 */ val disabled: disabled with scala.Double = js.native
+  /* 1 */ val off: off with scala.Double = js.native
+  /* 2 */ val on: on with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.EnergySaverStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.EnergySaverStatus with scala.Double] = js.native
 }
 

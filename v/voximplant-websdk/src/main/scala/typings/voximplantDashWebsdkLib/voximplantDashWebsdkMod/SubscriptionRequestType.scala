@@ -25,11 +25,11 @@ object SubscriptionRequestType extends js.Object {
   sealed trait Unsubscribe
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.SubscriptionRequestType
   
-  val Subscribe: Subscribe with java.lang.String = js.native
-  val Unsubscribe: Unsubscribe with java.lang.String = js.native
+  /* 0 */ val Subscribe: Subscribe with scala.Double = js.native
+  /* 1 */ val Unsubscribe: Unsubscribe with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.SubscriptionRequestType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    voximplantDashWebsdkLib.voximplantDashWebsdkMod.SubscriptionRequestType with scala.Double
   ] = js.native
 }
 

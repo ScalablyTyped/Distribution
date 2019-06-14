@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait DirectiveRegistryValuesIndex extends js.Object
 
+object DirectiveRegistryValuesIndex {
+  @scala.inline
+  def SinglePropValuesIndexOffset: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def Size: atAngularCoreLib.atAngularCoreLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def StyleSanitizerOffset: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

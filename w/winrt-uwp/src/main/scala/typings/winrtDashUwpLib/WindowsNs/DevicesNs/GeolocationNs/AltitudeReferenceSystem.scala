@@ -37,14 +37,14 @@ object AltitudeReferenceSystem extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.AltitudeReferenceSystem
   
-  val ellipsoid: ellipsoid with java.lang.String = js.native
-  val geoid: geoid with java.lang.String = js.native
-  val surface: surface with java.lang.String = js.native
-  val terrain: terrain with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 2 */ val ellipsoid: ellipsoid with scala.Double = js.native
+  /* 3 */ val geoid: geoid with scala.Double = js.native
+  /* 4 */ val surface: surface with scala.Double = js.native
+  /* 1 */ val terrain: terrain with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.AltitudeReferenceSystem with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.AltitudeReferenceSystem with scala.Double
   ] = js.native
 }
 

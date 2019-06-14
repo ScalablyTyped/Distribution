@@ -42,15 +42,15 @@ object ThumbnailMode extends js.Object {
   sealed trait videosView
     extends winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode
   
-  val documentsView: documentsView with java.lang.String = js.native
-  val listView: listView with java.lang.String = js.native
-  val musicView: musicView with java.lang.String = js.native
-  val picturesView: picturesView with java.lang.String = js.native
-  val singleItem: singleItem with java.lang.String = js.native
-  val videosView: videosView with java.lang.String = js.native
+  /* 3 */ val documentsView: documentsView with scala.Double = js.native
+  /* 4 */ val listView: listView with scala.Double = js.native
+  /* 2 */ val musicView: musicView with scala.Double = js.native
+  /* 0 */ val picturesView: picturesView with scala.Double = js.native
+  /* 5 */ val singleItem: singleItem with scala.Double = js.native
+  /* 1 */ val videosView: videosView with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode with scala.Double
   ] = js.native
 }
 

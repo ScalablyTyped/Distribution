@@ -19,11 +19,11 @@ object DeveloperMetadataVisibility extends js.Object {
   sealed trait PROJECT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DeveloperMetadataVisibility
   
-  val DOCUMENT: DOCUMENT with java.lang.String = js.native
-  val PROJECT: PROJECT with java.lang.String = js.native
+  /* 0 */ val DOCUMENT: DOCUMENT with scala.Double = js.native
+  /* 1 */ val PROJECT: PROJECT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DeveloperMetadataVisibility with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DeveloperMetadataVisibility with scala.Double
   ] = js.native
 }
 

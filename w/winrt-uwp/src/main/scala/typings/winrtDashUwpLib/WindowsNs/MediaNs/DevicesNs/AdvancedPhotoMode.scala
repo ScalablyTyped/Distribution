@@ -27,12 +27,10 @@ object AdvancedPhotoMode extends js.Object {
   sealed trait standard
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.AdvancedPhotoMode
   
-  val auto: auto with java.lang.String = js.native
-  val hdr: hdr with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 2 */ val hdr: hdr with scala.Double = js.native
+  /* 1 */ val standard: standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.AdvancedPhotoMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.AdvancedPhotoMode with scala.Double] = js.native
 }
 

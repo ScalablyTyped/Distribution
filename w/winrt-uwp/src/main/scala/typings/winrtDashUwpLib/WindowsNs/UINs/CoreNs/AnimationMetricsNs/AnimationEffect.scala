@@ -192,45 +192,45 @@ object AnimationEffect extends js.Object {
   sealed trait updateBadge
     extends winrtDashUwpLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.AnimationEffect
   
-  val addToGrid: addToGrid with java.lang.String = js.native
-  val addToList: addToList with java.lang.String = js.native
-  val addToSearchGrid: addToSearchGrid with java.lang.String = js.native
-  val addToSearchList: addToSearchList with java.lang.String = js.native
-  val collapse: collapse with java.lang.String = js.native
-  val crossFade: crossFade with java.lang.String = js.native
-  val deleteFromGrid: deleteFromGrid with java.lang.String = js.native
-  val deleteFromList: deleteFromList with java.lang.String = js.native
-  val deleteFromSearchGrid: deleteFromSearchGrid with java.lang.String = js.native
-  val deleteFromSearchList: deleteFromSearchList with java.lang.String = js.native
-  val dragBetweenEnter: dragBetweenEnter with java.lang.String = js.native
-  val dragBetweenLeave: dragBetweenLeave with java.lang.String = js.native
-  val dragSourceEnd: dragSourceEnd with java.lang.String = js.native
-  val dragSourceStart: dragSourceStart with java.lang.String = js.native
-  val enterPage: enterPage with java.lang.String = js.native
-  val expand: expand with java.lang.String = js.native
-  val fadeIn: fadeIn with java.lang.String = js.native
-  val fadeOut: fadeOut with java.lang.String = js.native
-  val hide: hide with java.lang.String = js.native
-  val hideEdgeUI: hideEdgeUI with java.lang.String = js.native
-  val hidePanel: hidePanel with java.lang.String = js.native
-  val hidePopup: hidePopup with java.lang.String = js.native
-  val peek: peek with java.lang.String = js.native
-  val pointerDown: pointerDown with java.lang.String = js.native
-  val pointerUp: pointerUp with java.lang.String = js.native
-  val reposition: reposition with java.lang.String = js.native
-  val reveal: reveal with java.lang.String = js.native
-  val showEdgeUI: showEdgeUI with java.lang.String = js.native
-  val showPanel: showPanel with java.lang.String = js.native
-  val showPopup: showPopup with java.lang.String = js.native
-  val swipeDeselect: swipeDeselect with java.lang.String = js.native
-  val swipeReveal: swipeReveal with java.lang.String = js.native
-  val swipeSelect: swipeSelect with java.lang.String = js.native
-  val transitionContent: transitionContent with java.lang.String = js.native
-  val transitionPage: transitionPage with java.lang.String = js.native
-  val updateBadge: updateBadge with java.lang.String = js.native
+  /* 7 */ val addToGrid: addToGrid with scala.Double = js.native
+  /* 5 */ val addToList: addToList with scala.Double = js.native
+  /* 9 */ val addToSearchGrid: addToSearchGrid with scala.Double = js.native
+  /* 11 */ val addToSearchList: addToSearchList with scala.Double = js.native
+  /* 1 */ val collapse: collapse with scala.Double = js.native
+  /* 33 */ val crossFade: crossFade with scala.Double = js.native
+  /* 8 */ val deleteFromGrid: deleteFromGrid with scala.Double = js.native
+  /* 6 */ val deleteFromList: deleteFromList with scala.Double = js.native
+  /* 10 */ val deleteFromSearchGrid: deleteFromSearchGrid with scala.Double = js.native
+  /* 12 */ val deleteFromSearchList: deleteFromSearchList with scala.Double = js.native
+  /* 26 */ val dragBetweenEnter: dragBetweenEnter with scala.Double = js.native
+  /* 27 */ val dragBetweenLeave: dragBetweenLeave with scala.Double = js.native
+  /* 22 */ val dragSourceEnd: dragSourceEnd with scala.Double = js.native
+  /* 21 */ val dragSourceStart: dragSourceStart with scala.Double = js.native
+  /* 31 */ val enterPage: enterPage with scala.Double = js.native
+  /* 0 */ val expand: expand with scala.Double = js.native
+  /* 3 */ val fadeIn: fadeIn with scala.Double = js.native
+  /* 4 */ val fadeOut: fadeOut with scala.Double = js.native
+  /* 25 */ val hide: hide with scala.Double = js.native
+  /* 15 */ val hideEdgeUI: hideEdgeUI with scala.Double = js.native
+  /* 16 */ val hidePanel: hidePanel with scala.Double = js.native
+  /* 18 */ val hidePopup: hidePopup with scala.Double = js.native
+  /* 34 */ val peek: peek with scala.Double = js.native
+  /* 19 */ val pointerDown: pointerDown with scala.Double = js.native
+  /* 20 */ val pointerUp: pointerUp with scala.Double = js.native
+  /* 2 */ val reposition: reposition with scala.Double = js.native
+  /* 24 */ val reveal: reveal with scala.Double = js.native
+  /* 13 */ val showEdgeUI: showEdgeUI with scala.Double = js.native
+  /* 14 */ val showPanel: showPanel with scala.Double = js.native
+  /* 17 */ val showPopup: showPopup with scala.Double = js.native
+  /* 29 */ val swipeDeselect: swipeDeselect with scala.Double = js.native
+  /* 30 */ val swipeReveal: swipeReveal with scala.Double = js.native
+  /* 28 */ val swipeSelect: swipeSelect with scala.Double = js.native
+  /* 23 */ val transitionContent: transitionContent with scala.Double = js.native
+  /* 32 */ val transitionPage: transitionPage with scala.Double = js.native
+  /* 35 */ val updateBadge: updateBadge with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.AnimationEffect with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.AnimationEffect with scala.Double
   ] = js.native
 }
 

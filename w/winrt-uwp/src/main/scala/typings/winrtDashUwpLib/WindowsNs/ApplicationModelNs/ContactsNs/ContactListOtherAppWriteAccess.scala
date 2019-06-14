@@ -22,11 +22,11 @@ object ContactListOtherAppWriteAccess extends js.Object {
   sealed trait systemOnly
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactListOtherAppWriteAccess
   
-  val none: none with java.lang.String = js.native
-  val systemOnly: systemOnly with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val systemOnly: systemOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactListOtherAppWriteAccess with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactListOtherAppWriteAccess with scala.Double
   ] = js.native
 }
 

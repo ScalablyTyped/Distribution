@@ -35,15 +35,13 @@ object CompressAlgorithm extends js.Object {
   sealed trait xpressHuff
     extends winrtLib.WindowsNs.StorageNs.CompressionNs.CompressAlgorithm
   
-  val invalidAlgorithm: invalidAlgorithm with java.lang.String = js.native
-  val lzms: lzms with java.lang.String = js.native
-  val mszip: mszip with java.lang.String = js.native
-  val nullAlgorithm: nullAlgorithm with java.lang.String = js.native
-  val xpress: xpress with java.lang.String = js.native
-  val xpressHuff: xpressHuff with java.lang.String = js.native
+  /* 0 */ val invalidAlgorithm: invalidAlgorithm with scala.Double = js.native
+  /* 5 */ val lzms: lzms with scala.Double = js.native
+  /* 2 */ val mszip: mszip with scala.Double = js.native
+  /* 1 */ val nullAlgorithm: nullAlgorithm with scala.Double = js.native
+  /* 3 */ val xpress: xpress with scala.Double = js.native
+  /* 4 */ val xpressHuff: xpressHuff with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.CompressionNs.CompressAlgorithm with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.CompressionNs.CompressAlgorithm with scala.Double] = js.native
 }
 

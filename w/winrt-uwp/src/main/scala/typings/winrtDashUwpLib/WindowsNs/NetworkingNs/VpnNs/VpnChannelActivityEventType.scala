@@ -22,11 +22,11 @@ object VpnChannelActivityEventType extends js.Object {
   sealed trait idle
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnChannelActivityEventType
   
-  val active: active with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
+  /* 1 */ val active: active with scala.Double = js.native
+  /* 0 */ val idle: idle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnChannelActivityEventType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnChannelActivityEventType with scala.Double
   ] = js.native
 }
 

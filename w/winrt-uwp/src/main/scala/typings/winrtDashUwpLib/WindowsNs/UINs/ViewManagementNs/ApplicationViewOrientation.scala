@@ -22,11 +22,11 @@ object ApplicationViewOrientation extends js.Object {
   sealed trait portrait
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewOrientation
   
-  val landscape: landscape with java.lang.String = js.native
-  val portrait: portrait with java.lang.String = js.native
+  /* 0 */ val landscape: landscape with scala.Double = js.native
+  /* 1 */ val portrait: portrait with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewOrientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewOrientation with scala.Double
   ] = js.native
 }
 

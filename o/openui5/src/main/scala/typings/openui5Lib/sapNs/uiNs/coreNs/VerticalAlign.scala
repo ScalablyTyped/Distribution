@@ -31,11 +31,11 @@ object VerticalAlign extends js.Object {
   sealed trait Top
     extends openui5Lib.sapNs.uiNs.coreNs.VerticalAlign
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val Inherit: Inherit with java.lang.String = js.native
-  val Middle: Middle with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 0 */ val Bottom: Bottom with scala.Double = js.native
+  /* 1 */ val Inherit: Inherit with scala.Double = js.native
+  /* 2 */ val Middle: Middle with scala.Double = js.native
+  /* 3 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.VerticalAlign with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.VerticalAlign with scala.Double] = js.native
 }
 

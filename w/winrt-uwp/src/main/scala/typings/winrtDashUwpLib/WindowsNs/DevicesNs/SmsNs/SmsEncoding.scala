@@ -67,18 +67,18 @@ object SmsEncoding extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsEncoding
   
-  val eightBit: eightBit with java.lang.String = js.native
-  val gsmSevenBit: gsmSevenBit with java.lang.String = js.native
-  val ia5: ia5 with java.lang.String = js.native
-  val korean: korean with java.lang.String = js.native
-  val latin: latin with java.lang.String = js.native
-  val latinHebrew: latinHebrew with java.lang.String = js.native
-  val optimal: optimal with java.lang.String = js.native
-  val sevenBitAscii: sevenBitAscii with java.lang.String = js.native
-  val shiftJis: shiftJis with java.lang.String = js.native
-  val unicode: unicode with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 5 */ val eightBit: eightBit with scala.Double = js.native
+  /* 4 */ val gsmSevenBit: gsmSevenBit with scala.Double = js.native
+  /* 8 */ val ia5: ia5 with scala.Double = js.native
+  /* 7 */ val korean: korean with scala.Double = js.native
+  /* 6 */ val latin: latin with scala.Double = js.native
+  /* 10 */ val latinHebrew: latinHebrew with scala.Double = js.native
+  /* 1 */ val optimal: optimal with scala.Double = js.native
+  /* 2 */ val sevenBitAscii: sevenBitAscii with scala.Double = js.native
+  /* 9 */ val shiftJis: shiftJis with scala.Double = js.native
+  /* 3 */ val unicode: unicode with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsEncoding with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsEncoding with scala.Double] = js.native
 }
 

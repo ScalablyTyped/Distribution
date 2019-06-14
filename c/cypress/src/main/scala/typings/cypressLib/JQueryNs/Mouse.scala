@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait Mouse extends js.Object
 
+object Mouse {
+  @scala.inline
+  def Left: cypressLib.cypressLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Middle: cypressLib.cypressLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def None: cypressLib.cypressLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def Right: cypressLib.cypressLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -72,21 +72,19 @@ object SmsModemErrorCode extends js.Object {
   sealed trait smsServiceNotSupportedByNetwork
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsModemErrorCode
   
-  val deviceFailure: deviceFailure with java.lang.String = js.native
-  val deviceNotReady: deviceNotReady with java.lang.String = js.native
-  val fixedDialingNumberRestricted: fixedDialingNumberRestricted with java.lang.String = js.native
-  val invalidSmscAddress: invalidSmscAddress with java.lang.String = js.native
-  val messageNotEncodedProperly: messageNotEncodedProperly with java.lang.String = js.native
-  val messageTooLarge: messageTooLarge with java.lang.String = js.native
-  val messagingNetworkError: messagingNetworkError with java.lang.String = js.native
-  val networkFailure: networkFailure with java.lang.String = js.native
-  val networkNotReady: networkNotReady with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val smsOperationNotSupportedByDevice: smsOperationNotSupportedByDevice with java.lang.String = js.native
-  val smsServiceNotSupportedByNetwork: smsServiceNotSupportedByNetwork with java.lang.String = js.native
+  /* 4 */ val deviceFailure: deviceFailure with scala.Double = js.native
+  /* 7 */ val deviceNotReady: deviceNotReady with scala.Double = js.native
+  /* 11 */ val fixedDialingNumberRestricted: fixedDialingNumberRestricted with scala.Double = js.native
+  /* 9 */ val invalidSmscAddress: invalidSmscAddress with scala.Double = js.native
+  /* 5 */ val messageNotEncodedProperly: messageNotEncodedProperly with scala.Double = js.native
+  /* 6 */ val messageTooLarge: messageTooLarge with scala.Double = js.native
+  /* 1 */ val messagingNetworkError: messagingNetworkError with scala.Double = js.native
+  /* 10 */ val networkFailure: networkFailure with scala.Double = js.native
+  /* 8 */ val networkNotReady: networkNotReady with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 2 */ val smsOperationNotSupportedByDevice: smsOperationNotSupportedByDevice with scala.Double = js.native
+  /* 3 */ val smsServiceNotSupportedByNetwork: smsServiceNotSupportedByNetwork with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsModemErrorCode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsModemErrorCode with scala.Double] = js.native
 }
 

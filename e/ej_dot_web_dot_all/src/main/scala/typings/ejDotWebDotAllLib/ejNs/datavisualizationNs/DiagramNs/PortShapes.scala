@@ -31,13 +31,13 @@ object PortShapes extends js.Object {
   sealed trait X
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortShapes
   
-  val Circle: Circle with java.lang.String = js.native
-  val Path: Path with java.lang.String = js.native
-  val Square: Square with java.lang.String = js.native
-  val X: X with java.lang.String = js.native
+  /* 1 */ val Circle: Circle with scala.Double = js.native
+  /* 3 */ val Path: Path with scala.Double = js.native
+  /* 2 */ val Square: Square with scala.Double = js.native
+  /* 0 */ val X: X with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortShapes with scala.Double
   ] = js.native
 }
 

@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
 */
 trait ReportAction extends js.Object
 
+object ReportAction {
+  @scala.inline
+  def Filter: xrmLib.xrmLibStrings.filter = this.cast("filter")
+  @scala.inline
+  def Run: xrmLib.xrmLibStrings.run = this.cast("run")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

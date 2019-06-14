@@ -54,17 +54,17 @@ object Events extends js.Object {
   sealed trait SourcesInfoUpdated
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.Events
   
-  val AuthResult: AuthResult with java.lang.String = js.native
-  val ConnectionClosed: ConnectionClosed with java.lang.String = js.native
-  val ConnectionEstablished: ConnectionEstablished with java.lang.String = js.native
-  val ConnectionFailed: ConnectionFailed with java.lang.String = js.native
-  val IncomingCall: IncomingCall with java.lang.String = js.native
-  val MicAccessResult: MicAccessResult with java.lang.String = js.native
-  val NetStatsReceived: NetStatsReceived with java.lang.String = js.native
-  val PlaybackFinished: PlaybackFinished with java.lang.String = js.native
-  val SDKReady: SDKReady with java.lang.String = js.native
-  val SourcesInfoUpdated: SourcesInfoUpdated with java.lang.String = js.native
+  /* 0 */ val AuthResult: AuthResult with scala.Double = js.native
+  /* 1 */ val ConnectionClosed: ConnectionClosed with scala.Double = js.native
+  /* 2 */ val ConnectionEstablished: ConnectionEstablished with scala.Double = js.native
+  /* 3 */ val ConnectionFailed: ConnectionFailed with scala.Double = js.native
+  /* 4 */ val IncomingCall: IncomingCall with scala.Double = js.native
+  /* 5 */ val MicAccessResult: MicAccessResult with scala.Double = js.native
+  /* 6 */ val NetStatsReceived: NetStatsReceived with scala.Double = js.native
+  /* 7 */ val PlaybackFinished: PlaybackFinished with scala.Double = js.native
+  /* 8 */ val SDKReady: SDKReady with scala.Double = js.native
+  /* 9 */ val SourcesInfoUpdated: SourcesInfoUpdated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.Events with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.Events with scala.Double] = js.native
 }
 

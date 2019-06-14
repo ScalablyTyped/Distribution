@@ -27,12 +27,12 @@ object AppCaptureVideoEncodingResolutionMode extends js.Object {
   sealed trait standard
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureVideoEncodingResolutionMode
   
-  val custom: custom with java.lang.String = js.native
-  val high: high with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
+  /* 0 */ val custom: custom with scala.Double = js.native
+  /* 1 */ val high: high with scala.Double = js.native
+  /* 2 */ val standard: standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureVideoEncodingResolutionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureVideoEncodingResolutionMode with scala.Double
   ] = js.native
 }
 

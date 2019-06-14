@@ -21,11 +21,11 @@ object LabelType extends js.Object {
   sealed trait Minor
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LabelType
   
-  val Major: Major with java.lang.String = js.native
-  val Minor: Minor with java.lang.String = js.native
+  /* 0 */ val Major: Major with scala.Double = js.native
+  /* 1 */ val Minor: Minor with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LabelType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LabelType with scala.Double
   ] = js.native
 }
 

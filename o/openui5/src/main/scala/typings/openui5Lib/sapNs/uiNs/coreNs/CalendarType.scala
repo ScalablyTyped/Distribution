@@ -26,10 +26,10 @@ object CalendarType extends js.Object {
   sealed trait Japanese
     extends openui5Lib.sapNs.uiNs.coreNs.CalendarType
   
-  val Gregorian: Gregorian with java.lang.String = js.native
-  val Islamic: Islamic with java.lang.String = js.native
-  val Japanese: Japanese with java.lang.String = js.native
+  /* 0 */ val Gregorian: Gregorian with scala.Double = js.native
+  /* 1 */ val Islamic: Islamic with scala.Double = js.native
+  /* 2 */ val Japanese: Japanese with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.CalendarType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.CalendarType with scala.Double] = js.native
 }
 

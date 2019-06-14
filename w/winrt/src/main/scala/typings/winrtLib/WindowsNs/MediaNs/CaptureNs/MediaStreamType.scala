@@ -27,11 +27,11 @@ object MediaStreamType extends js.Object {
   sealed trait videoRecord
     extends winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType
   
-  val audio: audio with java.lang.String = js.native
-  val photo: photo with java.lang.String = js.native
-  val videoPreview: videoPreview with java.lang.String = js.native
-  val videoRecord: videoRecord with java.lang.String = js.native
+  /* 2 */ val audio: audio with scala.Double = js.native
+  /* 3 */ val photo: photo with scala.Double = js.native
+  /* 0 */ val videoPreview: videoPreview with scala.Double = js.native
+  /* 1 */ val videoRecord: videoRecord with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType with scala.Double] = js.native
 }
 

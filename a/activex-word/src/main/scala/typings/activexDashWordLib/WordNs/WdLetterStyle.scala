@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdLetterStyle extends js.Object
 
+object WdLetterStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdFullBlock: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdModifiedBlock: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdSemiBlock: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

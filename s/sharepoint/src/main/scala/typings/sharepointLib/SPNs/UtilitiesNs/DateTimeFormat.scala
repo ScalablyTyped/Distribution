@@ -43,15 +43,15 @@ object DateTimeFormat extends js.Object {
   sealed trait unknownFormat
     extends sharepointLib.SPNs.UtilitiesNs.DateTimeFormat
   
-  val dateOnly: dateOnly with java.lang.String = js.native
-  val dateTime: dateTime with java.lang.String = js.native
-  val iSO8601: iSO8601 with java.lang.String = js.native
-  val longDate: longDate with java.lang.String = js.native
-  val monthDayOnly: monthDayOnly with java.lang.String = js.native
-  val monthYearOnly: monthYearOnly with java.lang.String = js.native
-  val timeOnly: timeOnly with java.lang.String = js.native
-  val unknownFormat: unknownFormat with java.lang.String = js.native
+  /* 1 */ val dateOnly: dateOnly with scala.Double = js.native
+  /* 0 */ val dateTime: dateTime with scala.Double = js.native
+  /* 3 */ val iSO8601: iSO8601 with scala.Double = js.native
+  /* 6 */ val longDate: longDate with scala.Double = js.native
+  /* 4 */ val monthDayOnly: monthDayOnly with scala.Double = js.native
+  /* 5 */ val monthYearOnly: monthYearOnly with scala.Double = js.native
+  /* 2 */ val timeOnly: timeOnly with scala.Double = js.native
+  /* 7 */ val unknownFormat: unknownFormat with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.DateTimeFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.DateTimeFormat with scala.Double] = js.native
 }
 

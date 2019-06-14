@@ -47,16 +47,16 @@ object WebAccountProviderOperationKind extends js.Object {
   sealed trait signOutAccount
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountProviderOperationKind
   
-  val addAccount: addAccount with java.lang.String = js.native
-  val deleteAccount: deleteAccount with java.lang.String = js.native
-  val getTokenSilently: getTokenSilently with java.lang.String = js.native
-  val manageAccount: manageAccount with java.lang.String = js.native
-  val requestToken: requestToken with java.lang.String = js.native
-  val retrieveCookies: retrieveCookies with java.lang.String = js.native
-  val signOutAccount: signOutAccount with java.lang.String = js.native
+  /* 2 */ val addAccount: addAccount with scala.Double = js.native
+  /* 4 */ val deleteAccount: deleteAccount with scala.Double = js.native
+  /* 1 */ val getTokenSilently: getTokenSilently with scala.Double = js.native
+  /* 3 */ val manageAccount: manageAccount with scala.Double = js.native
+  /* 0 */ val requestToken: requestToken with scala.Double = js.native
+  /* 5 */ val retrieveCookies: retrieveCookies with scala.Double = js.native
+  /* 6 */ val signOutAccount: signOutAccount with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountProviderOperationKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountProviderOperationKind with scala.Double
   ] = js.native
 }
 

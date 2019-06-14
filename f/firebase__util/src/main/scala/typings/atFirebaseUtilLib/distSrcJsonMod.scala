@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/util/dist/src/json", JSImport.Namespace)
 @js.native
 object distSrcJsonMod extends js.Object {
-  def jsonEval(str: js.Any): js.Any = js.native
+  def jsonEval(str: java.lang.String): js.Any = js.native
   def stringify(data: js.Any): java.lang.String = js.native
 }
 

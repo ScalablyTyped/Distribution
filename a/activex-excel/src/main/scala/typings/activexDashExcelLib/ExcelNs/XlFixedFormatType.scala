@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlFixedFormatType extends js.Object
 
+object XlFixedFormatType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlTypePDF: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlTypeXPS: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+}
+

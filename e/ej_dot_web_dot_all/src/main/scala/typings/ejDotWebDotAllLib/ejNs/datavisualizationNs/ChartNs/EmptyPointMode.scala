@@ -26,12 +26,12 @@ object EmptyPointMode extends js.Object {
   sealed trait Zero
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.EmptyPointMode
   
-  val Average: Average with java.lang.String = js.native
-  val Gap: Gap with java.lang.String = js.native
-  val Zero: Zero with java.lang.String = js.native
+  /* 2 */ val Average: Average with scala.Double = js.native
+  /* 0 */ val Gap: Gap with scala.Double = js.native
+  /* 1 */ val Zero: Zero with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.EmptyPointMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.EmptyPointMode with scala.Double
   ] = js.native
 }
 

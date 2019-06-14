@@ -35,10 +35,10 @@ object NavigationBarMode extends js.Object {
   sealed trait minified
     extends bingmapsLib.MicrosoftNs.MapsNs.NavigationBarMode
   
-  val compact: compact with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val minified: minified with java.lang.String = js.native
+  /* 0 */ val compact: compact with scala.Double = js.native
+  /* 1 */ val default: default with scala.Double = js.native
+  /* 2 */ val minified: minified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.NavigationBarMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.NavigationBarMode with scala.Double] = js.native
 }
 

@@ -19,11 +19,11 @@ object OpenAs extends js.Object {
   sealed trait OVERLAY
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.OpenAs
   
-  val FULL_SIZE: FULL_SIZE with java.lang.String = js.native
-  val OVERLAY: OVERLAY with java.lang.String = js.native
+  /* 0 */ val FULL_SIZE: FULL_SIZE with scala.Double = js.native
+  /* 1 */ val OVERLAY: OVERLAY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.OpenAs with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.OpenAs with scala.Double
   ] = js.native
 }
 

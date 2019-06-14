@@ -42,15 +42,15 @@ object EmailQueryKind extends js.Object {
   sealed trait unseen
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQueryKind
   
-  val all: all with java.lang.String = js.native
-  val flagged: flagged with java.lang.String = js.native
-  val important: important with java.lang.String = js.native
-  val read: read with java.lang.String = js.native
-  val unread: unread with java.lang.String = js.native
-  val unseen: unseen with java.lang.String = js.native
+  /* 0 */ val all: all with scala.Double = js.native
+  /* 2 */ val flagged: flagged with scala.Double = js.native
+  /* 1 */ val important: important with scala.Double = js.native
+  /* 4 */ val read: read with scala.Double = js.native
+  /* 3 */ val unread: unread with scala.Double = js.native
+  /* 5 */ val unseen: unseen with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQueryKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQueryKind with scala.Double
   ] = js.native
 }
 

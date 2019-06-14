@@ -31,12 +31,12 @@ object PrintCollation extends js.Object {
   sealed trait uncollated
     extends winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintCollation
   
-  val collated: collated with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val uncollated: uncollated with java.lang.String = js.native
+  /* 3 */ val collated: collated with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 4 */ val uncollated: uncollated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintCollation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintCollation with scala.Double] = js.native
 }
 

@@ -42,15 +42,15 @@ object EmailQuerySearchFields extends js.Object {
   sealed trait subject
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySearchFields
   
-  val all: all with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val preview: preview with java.lang.String = js.native
-  val recipients: recipients with java.lang.String = js.native
-  val sender: sender with java.lang.String = js.native
-  val subject: subject with java.lang.String = js.native
+  /* 5 */ val all: all with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val preview: preview with scala.Double = js.native
+  /* 4 */ val recipients: recipients with scala.Double = js.native
+  /* 2 */ val sender: sender with scala.Double = js.native
+  /* 1 */ val subject: subject with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySearchFields with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySearchFields with scala.Double
   ] = js.native
 }
 

@@ -27,12 +27,10 @@ object ZoomTransitionMode extends js.Object {
   sealed trait smooth
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ZoomTransitionMode
   
-  val auto: auto with java.lang.String = js.native
-  val direct: direct with java.lang.String = js.native
-  val smooth: smooth with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 1 */ val direct: direct with scala.Double = js.native
+  /* 2 */ val smooth: smooth with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ZoomTransitionMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ZoomTransitionMode with scala.Double] = js.native
 }
 

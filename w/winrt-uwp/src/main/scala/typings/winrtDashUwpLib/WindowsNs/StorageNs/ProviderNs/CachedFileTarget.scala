@@ -22,11 +22,11 @@ object CachedFileTarget extends js.Object {
   sealed trait remote
     extends winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.CachedFileTarget
   
-  val local: local with java.lang.String = js.native
-  val remote: remote with java.lang.String = js.native
+  /* 0 */ val local: local with scala.Double = js.native
+  /* 1 */ val remote: remote with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.CachedFileTarget with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.CachedFileTarget with scala.Double
   ] = js.native
 }
 

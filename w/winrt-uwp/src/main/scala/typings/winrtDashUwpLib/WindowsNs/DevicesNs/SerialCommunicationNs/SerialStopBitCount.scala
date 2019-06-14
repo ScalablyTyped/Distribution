@@ -27,12 +27,12 @@ object SerialStopBitCount extends js.Object {
   sealed trait two
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialStopBitCount
   
-  val one: one with java.lang.String = js.native
-  val onePointFive: onePointFive with java.lang.String = js.native
-  val two: two with java.lang.String = js.native
+  /* 0 */ val one: one with scala.Double = js.native
+  /* 1 */ val onePointFive: onePointFive with scala.Double = js.native
+  /* 2 */ val two: two with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialStopBitCount with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialStopBitCount with scala.Double
   ] = js.native
 }
 

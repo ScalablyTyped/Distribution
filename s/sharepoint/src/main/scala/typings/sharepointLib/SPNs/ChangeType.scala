@@ -95,28 +95,28 @@ object ChangeType extends js.Object {
   sealed trait update
     extends sharepointLib.SPNs.ChangeType
   
-  val add: add with java.lang.String = js.native
-  val assignmentAdd: assignmentAdd with java.lang.String = js.native
-  val assignmentDelete: assignmentDelete with java.lang.String = js.native
-  val deleteObject: deleteObject with java.lang.String = js.native
-  val listContentTypeAdd: listContentTypeAdd with java.lang.String = js.native
-  val listContentTypeDelete: listContentTypeDelete with java.lang.String = js.native
-  val memberAdd: memberAdd with java.lang.String = js.native
-  val memberDelete: memberDelete with java.lang.String = js.native
-  val moveAway: moveAway with java.lang.String = js.native
-  val moveInto: moveInto with java.lang.String = js.native
-  val navigation: navigation with java.lang.String = js.native
-  val noChange: noChange with java.lang.String = js.native
-  val rename: rename with java.lang.String = js.native
-  val restore: restore with java.lang.String = js.native
-  val roleAdd: roleAdd with java.lang.String = js.native
-  val roleDelete: roleDelete with java.lang.String = js.native
-  val roleUpdate: roleUpdate with java.lang.String = js.native
-  val scopeAdd: scopeAdd with java.lang.String = js.native
-  val scopeDelete: scopeDelete with java.lang.String = js.native
-  val systemUpdate: systemUpdate with java.lang.String = js.native
-  val update: update with java.lang.String = js.native
+  /* 1 */ val add: add with scala.Double = js.native
+  /* 11 */ val assignmentAdd: assignmentAdd with scala.Double = js.native
+  /* 12 */ val assignmentDelete: assignmentDelete with scala.Double = js.native
+  /* 3 */ val deleteObject: deleteObject with scala.Double = js.native
+  /* 19 */ val listContentTypeAdd: listContentTypeAdd with scala.Double = js.native
+  /* 20 */ val listContentTypeDelete: listContentTypeDelete with scala.Double = js.native
+  /* 13 */ val memberAdd: memberAdd with scala.Double = js.native
+  /* 14 */ val memberDelete: memberDelete with scala.Double = js.native
+  /* 5 */ val moveAway: moveAway with scala.Double = js.native
+  /* 6 */ val moveInto: moveInto with scala.Double = js.native
+  /* 16 */ val navigation: navigation with scala.Double = js.native
+  /* 0 */ val noChange: noChange with scala.Double = js.native
+  /* 4 */ val rename: rename with scala.Double = js.native
+  /* 7 */ val restore: restore with scala.Double = js.native
+  /* 8 */ val roleAdd: roleAdd with scala.Double = js.native
+  /* 9 */ val roleDelete: roleDelete with scala.Double = js.native
+  /* 10 */ val roleUpdate: roleUpdate with scala.Double = js.native
+  /* 17 */ val scopeAdd: scopeAdd with scala.Double = js.native
+  /* 18 */ val scopeDelete: scopeDelete with scala.Double = js.native
+  /* 15 */ val systemUpdate: systemUpdate with scala.Double = js.native
+  /* 2 */ val update: update with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ChangeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ChangeType with scala.Double] = js.native
 }
 

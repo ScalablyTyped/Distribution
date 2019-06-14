@@ -27,11 +27,11 @@ object SPWOPIFrameAction extends js.Object {
   sealed trait view
     extends sharepointLib.SPNs.UtilitiesNs.SPWOPIFrameAction
   
-  val edit: edit with java.lang.String = js.native
-  val interactivePreview: interactivePreview with java.lang.String = js.native
-  val mobileView: mobileView with java.lang.String = js.native
-  val view: view with java.lang.String = js.native
+  /* 1 */ val edit: edit with scala.Double = js.native
+  /* 3 */ val interactivePreview: interactivePreview with scala.Double = js.native
+  /* 2 */ val mobileView: mobileView with scala.Double = js.native
+  /* 0 */ val view: view with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.SPWOPIFrameAction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.SPWOPIFrameAction with scala.Double] = js.native
 }
 

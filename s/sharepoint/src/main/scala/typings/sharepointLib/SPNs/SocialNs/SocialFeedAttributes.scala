@@ -28,9 +28,9 @@ object SocialFeedAttributes extends js.Object {
   sealed trait none
     extends sharepointLib.SPNs.SocialNs.SocialFeedAttributes
   
-  val moreThreadsAvailable: moreThreadsAvailable with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val moreThreadsAvailable: moreThreadsAvailable with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialFeedAttributes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialFeedAttributes with scala.Double] = js.native
 }
 

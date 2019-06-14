@@ -23,10 +23,10 @@ object DateTimeKind extends js.Object {
   sealed trait utc
     extends sharepointLib.SrchNs.DateTimeKind
   
-  val local: local with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
-  val utc: utc with java.lang.String = js.native
+  /* 2 */ val local: local with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
+  /* 1 */ val utc: utc with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SrchNs.DateTimeKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SrchNs.DateTimeKind with scala.Double] = js.native
 }
 

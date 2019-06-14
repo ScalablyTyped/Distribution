@@ -9,493 +9,220 @@ object atAngularCompilerLibNumbers {
   @js.native
   sealed trait `0`
     extends atAngularCompilerLib.srcCoreMod.ArgumentType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.ArgumentType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.ArgumentType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.ArgumentType
        with atAngularCompilerLib.srcCoreMod.AttributeMarker
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.srcCompilerMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.AttributeMarker
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.BindingType
-       with atAngularCompilerLib.srcCompilerMod.BindingType
-       with atAngularCompilerLib.atAngularCompilerMod.BindingType
        with atAngularCompilerLib.srcConstantUnderscorePoolMod.DefinitionKind
        with atAngularCompilerLib.srcCoreMod.DepFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.DepFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.DepFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.DepFlags
        with atAngularCompilerLib.srcCoreMod.InjectFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.InjectFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.InjectFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.InjectFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedEventType
-       with atAngularCompilerLib.publicUnderscoreApiMod.ParsedEventType
-       with atAngularCompilerLib.srcCompilerMod.ParsedEventType
-       with atAngularCompilerLib.atAngularCompilerMod.ParsedEventType
        with atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.PropertyBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.PropertyBindingType
-       with atAngularCompilerLib.srcCompilerMod.PropertyBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.PropertyBindingType
        with atAngularCompilerLib.srcCoreMod.QueryBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryBindingType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryBindingType
        with atAngularCompilerLib.srcCoreMod.QueryValueType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryValueType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryValueType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryValueType
        with atAngularCompilerLib.srcCoreMod.ViewFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.ViewFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.ViewFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.ViewFlags
   
   @js.native
   sealed trait `1`
     extends atAngularCompilerLib.srcCoreMod.ArgumentType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.ArgumentType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.ArgumentType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.ArgumentType
        with atAngularCompilerLib.srcCoreMod.AttributeMarker
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.srcCompilerMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.AttributeMarker
        with atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.BindingType
-       with atAngularCompilerLib.srcCompilerMod.BindingType
-       with atAngularCompilerLib.atAngularCompilerMod.BindingType
        with atAngularCompilerLib.srcConstantUnderscorePoolMod.DefinitionKind
        with atAngularCompilerLib.srcCoreMod.DepFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.DepFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.DepFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.DepFlags
        with atAngularCompilerLib.srcCoreMod.InjectFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.InjectFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.InjectFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.InjectFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedEventType
-       with atAngularCompilerLib.publicUnderscoreApiMod.ParsedEventType
-       with atAngularCompilerLib.srcCompilerMod.ParsedEventType
-       with atAngularCompilerLib.atAngularCompilerMod.ParsedEventType
        with atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.PropertyBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.PropertyBindingType
-       with atAngularCompilerLib.srcCompilerMod.PropertyBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.PropertyBindingType
        with atAngularCompilerLib.srcCoreMod.QueryBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryBindingType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryBindingType
        with atAngularCompilerLib.srcCoreMod.QueryValueType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryValueType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryValueType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryValueType
        with atAngularCompilerLib.srcCoreMod.RenderFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.RenderFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.RenderFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.RenderFlags
        with atAngularCompilerLib.srcCoreMod.SelectorFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.SelectorFlags
   
   @js.native
   sealed trait `1024`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `1048576`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `1073741824`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `128`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `131072`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `134217728`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `15`
     extends atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
   
   @js.native
   sealed trait `16`
     extends atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `16384`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `16777216`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `2`
     extends atAngularCompilerLib.srcCoreMod.AttributeMarker
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.srcCompilerMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.AttributeMarker
        with atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.BindingType
-       with atAngularCompilerLib.srcCompilerMod.BindingType
-       with atAngularCompilerLib.atAngularCompilerMod.BindingType
        with atAngularCompilerLib.srcConstantUnderscorePoolMod.DefinitionKind
        with atAngularCompilerLib.srcCoreMod.DepFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.DepFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.DepFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.DepFlags
        with atAngularCompilerLib.srcCoreMod.InjectFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.InjectFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.InjectFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.InjectFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
        with atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.PropertyBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.PropertyBindingType
-       with atAngularCompilerLib.srcCompilerMod.PropertyBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.PropertyBindingType
        with atAngularCompilerLib.srcCoreMod.QueryValueType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryValueType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryValueType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryValueType
        with atAngularCompilerLib.srcCoreMod.RenderFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.RenderFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.RenderFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.RenderFlags
        with atAngularCompilerLib.srcCoreMod.SelectorFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.SelectorFlags
        with atAngularCompilerLib.srcCoreMod.ViewFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.ViewFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.ViewFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.ViewFlags
   
   @js.native
   sealed trait `201326592`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `201347067`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `20224`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `2048`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `2097152`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `224`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `256`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `262144`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `268435456`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `3`
     extends atAngularCompilerLib.srcCoreMod.AttributeMarker
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.srcCompilerMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.AttributeMarker
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.BindingType
-       with atAngularCompilerLib.srcCompilerMod.BindingType
-       with atAngularCompilerLib.atAngularCompilerMod.BindingType
        with atAngularCompilerLib.srcConstantUnderscorePoolMod.DefinitionKind
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
        with atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.PropertyBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.PropertyBindingType
-       with atAngularCompilerLib.srcCompilerMod.PropertyBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.PropertyBindingType
        with atAngularCompilerLib.srcCoreMod.QueryValueType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryValueType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryValueType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryValueType
   
   @js.native
   sealed trait `32`
     extends atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `32768`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `33554432`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `3840`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `4`
     extends atAngularCompilerLib.srcCoreMod.AttributeMarker
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.srcCompilerMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.AttributeMarker
        with atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
        with atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.BindingType
-       with atAngularCompilerLib.srcCompilerMod.BindingType
-       with atAngularCompilerLib.atAngularCompilerMod.BindingType
        with atAngularCompilerLib.srcCoreMod.DepFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.DepFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.DepFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.DepFlags
        with atAngularCompilerLib.srcCoreMod.InjectFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.InjectFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.InjectFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.InjectFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
        with atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.PropertyBindingType
-       with atAngularCompilerLib.publicUnderscoreApiMod.PropertyBindingType
-       with atAngularCompilerLib.srcCompilerMod.PropertyBindingType
-       with atAngularCompilerLib.atAngularCompilerMod.PropertyBindingType
        with atAngularCompilerLib.srcCoreMod.QueryValueType
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.QueryValueType
-       with atAngularCompilerLib.srcCompilerMod.coreNs.QueryValueType
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.QueryValueType
        with atAngularCompilerLib.srcCoreMod.SelectorFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.SelectorFlags
   
   @js.native
   sealed trait `4096`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `4194304`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `48`
     extends atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
   
   @js.native
   sealed trait `5`
     extends atAngularCompilerLib.srcCoreMod.AttributeMarker
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.srcCompilerMod.coreNs.AttributeMarker
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.AttributeMarker
   
   @js.native
   sealed trait `512`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `524288`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `536870912`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `64`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `65536`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `67108864`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `8`
     extends atAngularCompilerLib.srcCoreMod.BindingFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.BindingFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.BindingFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.BindingFlags
        with atAngularCompilerLib.srcCoreMod.DepFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.DepFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.DepFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.DepFlags
        with atAngularCompilerLib.srcCoreMod.InjectFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.InjectFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.InjectFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.InjectFlags
        with atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
        with atAngularCompilerLib.srcCoreMod.SelectorFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.SelectorFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.SelectorFlags
   
   @js.native
   sealed trait `8192`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `8388608`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
-       with atAngularCompilerLib.publicUnderscoreApiMod.coreNs.NodeFlags
-       with atAngularCompilerLib.srcCompilerMod.coreNs.NodeFlags
-       with atAngularCompilerLib.atAngularCompilerMod.coreNs.NodeFlags
   
   @js.native
   sealed trait `true` extends js.Object

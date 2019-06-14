@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdCursorMovement extends js.Object
 
+object WdCursorMovement {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdCursorMovementLogical: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdCursorMovementVisual: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

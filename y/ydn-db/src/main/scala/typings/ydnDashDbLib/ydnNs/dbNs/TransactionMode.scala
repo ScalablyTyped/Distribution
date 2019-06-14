@@ -19,9 +19,9 @@ object TransactionMode extends js.Object {
   sealed trait readwrite
     extends ydnDashDbLib.ydnNs.dbNs.TransactionMode
   
-  val readonly: readonly with java.lang.String = js.native
-  val readwrite: readwrite with java.lang.String = js.native
+  /* 0 */ val readonly: readonly with scala.Double = js.native
+  /* 1 */ val readwrite: readwrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.TransactionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.TransactionMode with scala.Double] = js.native
 }
 

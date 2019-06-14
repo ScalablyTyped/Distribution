@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MsoConnector extends js.Object
 
+object MsoConnector {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoConnectorAnd: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoConnectorOr: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+}
+

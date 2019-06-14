@@ -32,13 +32,13 @@ object EmailMessageResponseKind extends js.Object {
   sealed trait replyAll
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMessageResponseKind
   
-  val forward: forward with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val reply: reply with java.lang.String = js.native
-  val replyAll: replyAll with java.lang.String = js.native
+  /* 3 */ val forward: forward with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val reply: reply with scala.Double = js.native
+  /* 2 */ val replyAll: replyAll with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMessageResponseKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMessageResponseKind with scala.Double
   ] = js.native
 }
 

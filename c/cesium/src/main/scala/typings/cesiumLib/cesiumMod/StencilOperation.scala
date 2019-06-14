@@ -43,15 +43,15 @@ object StencilOperation extends js.Object {
   sealed trait ZERO
     extends cesiumLib.cesiumMod.StencilOperation
   
-  val DECREMENT: DECREMENT with java.lang.String = js.native
-  val DECREMENT_WRAP: DECREMENT_WRAP with java.lang.String = js.native
-  val INCREMENT: INCREMENT with java.lang.String = js.native
-  val INCREMENT_WRAP: INCREMENT_WRAP with java.lang.String = js.native
-  val INVERT: INVERT with java.lang.String = js.native
-  val KEEP: KEEP with java.lang.String = js.native
-  val REPLACE: REPLACE with java.lang.String = js.native
-  val ZERO: ZERO with java.lang.String = js.native
+  /* 4 */ val DECREMENT: DECREMENT with scala.Double = js.native
+  /* 7 */ val DECREMENT_WRAP: DECREMENT_WRAP with scala.Double = js.native
+  /* 3 */ val INCREMENT: INCREMENT with scala.Double = js.native
+  /* 6 */ val INCREMENT_WRAP: INCREMENT_WRAP with scala.Double = js.native
+  /* 5 */ val INVERT: INVERT with scala.Double = js.native
+  /* 1 */ val KEEP: KEEP with scala.Double = js.native
+  /* 2 */ val REPLACE: REPLACE with scala.Double = js.native
+  /* 0 */ val ZERO: ZERO with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.StencilOperation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.StencilOperation with scala.Double] = js.native
 }
 

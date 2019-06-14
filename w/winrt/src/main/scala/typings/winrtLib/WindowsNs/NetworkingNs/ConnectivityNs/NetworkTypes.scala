@@ -23,12 +23,10 @@ object NetworkTypes extends js.Object {
   sealed trait privateNetwork
     extends winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkTypes
   
-  val internet: internet with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val privateNetwork: privateNetwork with java.lang.String = js.native
+  /* 1 */ val internet: internet with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val privateNetwork: privateNetwork with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkTypes with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkTypes with scala.Double] = js.native
 }
 

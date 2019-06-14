@@ -22,11 +22,11 @@ object CurrencyFormatterMode extends js.Object {
   sealed trait useSymbol
     extends winrtDashUwpLib.WindowsNs.GlobalizationNs.NumberFormattingNs.CurrencyFormatterMode
   
-  val useCurrencyCode: useCurrencyCode with java.lang.String = js.native
-  val useSymbol: useSymbol with java.lang.String = js.native
+  /* 1 */ val useCurrencyCode: useCurrencyCode with scala.Double = js.native
+  /* 0 */ val useSymbol: useSymbol with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GlobalizationNs.NumberFormattingNs.CurrencyFormatterMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GlobalizationNs.NumberFormattingNs.CurrencyFormatterMode with scala.Double
   ] = js.native
 }
 

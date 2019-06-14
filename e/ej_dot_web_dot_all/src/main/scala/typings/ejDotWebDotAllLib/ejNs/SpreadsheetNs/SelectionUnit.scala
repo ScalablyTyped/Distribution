@@ -26,10 +26,10 @@ object SelectionUnit extends js.Object {
   sealed trait Single
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.SelectionUnit
   
-  val MultiRange: MultiRange with java.lang.String = js.native
-  val Range: Range with java.lang.String = js.native
-  val Single: Single with java.lang.String = js.native
+  /* 2 */ val MultiRange: MultiRange with scala.Double = js.native
+  /* 1 */ val Range: Range with scala.Double = js.native
+  /* 0 */ val Single: Single with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.SelectionUnit with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.SelectionUnit with scala.Double] = js.native
 }
 

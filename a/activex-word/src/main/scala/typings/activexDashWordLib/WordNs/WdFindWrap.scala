@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdFindWrap extends js.Object
 
+object WdFindWrap {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdFindAsk: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdFindContinue: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdFindStop: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

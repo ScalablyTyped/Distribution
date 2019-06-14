@@ -19,11 +19,9 @@ object ApplicationDataCreateDisposition extends js.Object {
   sealed trait existing
     extends winrtLib.WindowsNs.StorageNs.ApplicationDataCreateDisposition
   
-  val always: always with java.lang.String = js.native
-  val existing: existing with java.lang.String = js.native
+  /* 0 */ val always: always with scala.Double = js.native
+  /* 1 */ val existing: existing with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.ApplicationDataCreateDisposition with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.ApplicationDataCreateDisposition with scala.Double] = js.native
 }
 

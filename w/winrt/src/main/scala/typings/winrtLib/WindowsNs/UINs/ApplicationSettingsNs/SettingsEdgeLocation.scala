@@ -19,11 +19,11 @@ object SettingsEdgeLocation extends js.Object {
   sealed trait right
     extends winrtLib.WindowsNs.UINs.ApplicationSettingsNs.SettingsEdgeLocation
   
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
+  /* 1 */ val left: left with scala.Double = js.native
+  /* 0 */ val right: right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.UINs.ApplicationSettingsNs.SettingsEdgeLocation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.UINs.ApplicationSettingsNs.SettingsEdgeLocation with scala.Double
   ] = js.native
 }
 

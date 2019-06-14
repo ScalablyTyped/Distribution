@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AcceptableStates extends js.Object {
   var acceptableStates: js.Tuple2[
-    youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates, 
-    youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates
+    youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates.ENDED, 
+    youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates.PAUSED
   ]
   var stateChangeRequired: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`false`
 }
@@ -17,8 +17,8 @@ object Anon_AcceptableStates {
   @scala.inline
   def apply(
     acceptableStates: js.Tuple2[
-      youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates, 
-      youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates
+      youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates.ENDED, 
+      youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates.PAUSED
     ],
     stateChangeRequired: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`false`
   ): Anon_AcceptableStates = {

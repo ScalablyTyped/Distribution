@@ -27,11 +27,11 @@ object ClipType extends js.Object {
   sealed trait ctXor
     extends jsDashClipperLib.ClipperLibNs.ClipType
   
-  val ctDifference: ctDifference with java.lang.String = js.native
-  val ctIntersection: ctIntersection with java.lang.String = js.native
-  val ctUnion: ctUnion with java.lang.String = js.native
-  val ctXor: ctXor with java.lang.String = js.native
+  /* 2 */ val ctDifference: ctDifference with scala.Double = js.native
+  /* 0 */ val ctIntersection: ctIntersection with scala.Double = js.native
+  /* 1 */ val ctUnion: ctUnion with scala.Double = js.native
+  /* 3 */ val ctXor: ctXor with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.ClipType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.ClipType with scala.Double] = js.native
 }
 

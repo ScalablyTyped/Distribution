@@ -37,14 +37,14 @@ object SerialPinChange extends js.Object {
   sealed trait ringIndicator
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialPinChange
   
-  val breakSignal: breakSignal with java.lang.String = js.native
-  val carrierDetect: carrierDetect with java.lang.String = js.native
-  val clearToSend: clearToSend with java.lang.String = js.native
-  val dataSetReady: dataSetReady with java.lang.String = js.native
-  val ringIndicator: ringIndicator with java.lang.String = js.native
+  /* 0 */ val breakSignal: breakSignal with scala.Double = js.native
+  /* 1 */ val carrierDetect: carrierDetect with scala.Double = js.native
+  /* 2 */ val clearToSend: clearToSend with scala.Double = js.native
+  /* 3 */ val dataSetReady: dataSetReady with scala.Double = js.native
+  /* 4 */ val ringIndicator: ringIndicator with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialPinChange with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialPinChange with scala.Double
   ] = js.native
 }
 

@@ -47,16 +47,16 @@ object KmlLayerStatus extends js.Object {
   sealed trait UNKNOWN
     extends googlemapsLib.googleNs.mapsNs.KmlLayerStatus
   
-  val DOCUMENT_NOT_FOUND: DOCUMENT_NOT_FOUND with java.lang.String = js.native
-  val DOCUMENT_TOO_LARGE: DOCUMENT_TOO_LARGE with java.lang.String = js.native
-  val FETCH_ERROR: FETCH_ERROR with java.lang.String = js.native
-  val INVALID_DOCUMENT: INVALID_DOCUMENT with java.lang.String = js.native
-  val INVALID_REQUEST: INVALID_REQUEST with java.lang.String = js.native
-  val LIMITS_EXCEEDED: LIMITS_EXCEEDED with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val TIMED_OUT: TIMED_OUT with java.lang.String = js.native
-  val UNKNOWN: UNKNOWN with java.lang.String = js.native
+  /* 0 */ val DOCUMENT_NOT_FOUND: DOCUMENT_NOT_FOUND with scala.Double = js.native
+  /* 1 */ val DOCUMENT_TOO_LARGE: DOCUMENT_TOO_LARGE with scala.Double = js.native
+  /* 2 */ val FETCH_ERROR: FETCH_ERROR with scala.Double = js.native
+  /* 3 */ val INVALID_DOCUMENT: INVALID_DOCUMENT with scala.Double = js.native
+  /* 4 */ val INVALID_REQUEST: INVALID_REQUEST with scala.Double = js.native
+  /* 5 */ val LIMITS_EXCEEDED: LIMITS_EXCEEDED with scala.Double = js.native
+  /* 6 */ val OK: OK with scala.Double = js.native
+  /* 7 */ val TIMED_OUT: TIMED_OUT with scala.Double = js.native
+  /* 8 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.KmlLayerStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.KmlLayerStatus with scala.Double] = js.native
 }
 

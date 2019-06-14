@@ -27,12 +27,12 @@ object ManualFocusDistance extends js.Object {
   sealed trait nearest
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ManualFocusDistance
   
-  val hyperfocal: hyperfocal with java.lang.String = js.native
-  val infinity: infinity with java.lang.String = js.native
-  val nearest: nearest with java.lang.String = js.native
+  /* 1 */ val hyperfocal: hyperfocal with scala.Double = js.native
+  /* 0 */ val infinity: infinity with scala.Double = js.native
+  /* 2 */ val nearest: nearest with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ManualFocusDistance with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.ManualFocusDistance with scala.Double
   ] = js.native
 }
 

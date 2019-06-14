@@ -32,13 +32,13 @@ object MobileBroadbandDeviceType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandDeviceType
   
-  val embedded: embedded with java.lang.String = js.native
-  val remote: remote with java.lang.String = js.native
-  val removable: removable with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val embedded: embedded with scala.Double = js.native
+  /* 3 */ val remote: remote with scala.Double = js.native
+  /* 2 */ val removable: removable with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandDeviceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandDeviceType with scala.Double
   ] = js.native
 }
 

@@ -17,10 +17,10 @@ object SystemMediaTransportControlsProperty extends js.Object {
   sealed trait soundLevel
     extends winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControlsProperty
   
-  val soundLevel: soundLevel with java.lang.String = js.native
+  /* 0 */ val soundLevel: soundLevel with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControlsProperty with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControlsProperty with scala.Double
   ] = js.native
 }
 

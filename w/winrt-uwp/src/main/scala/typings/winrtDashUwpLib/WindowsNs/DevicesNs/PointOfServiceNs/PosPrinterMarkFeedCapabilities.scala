@@ -37,14 +37,14 @@ object PosPrinterMarkFeedCapabilities extends js.Object {
   sealed trait toTakeUp
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterMarkFeedCapabilities
   
-  val none: none with java.lang.String = js.native
-  val toCurrentTopOfForm: toCurrentTopOfForm with java.lang.String = js.native
-  val toCutter: toCutter with java.lang.String = js.native
-  val toNextTopOfForm: toNextTopOfForm with java.lang.String = js.native
-  val toTakeUp: toTakeUp with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val toCurrentTopOfForm: toCurrentTopOfForm with scala.Double = js.native
+  /* 2 */ val toCutter: toCutter with scala.Double = js.native
+  /* 4 */ val toNextTopOfForm: toNextTopOfForm with scala.Double = js.native
+  /* 1 */ val toTakeUp: toTakeUp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterMarkFeedCapabilities with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterMarkFeedCapabilities with scala.Double
   ] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vexflow"
-version := "v1.2.88-dt-20190322Z-d11c0d"
+version := "v1.2.88-dt-20190322Z-fe6fda"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

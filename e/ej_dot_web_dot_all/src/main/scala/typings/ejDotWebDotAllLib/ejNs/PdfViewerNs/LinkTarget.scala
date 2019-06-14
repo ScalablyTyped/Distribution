@@ -26,10 +26,10 @@ object LinkTarget extends js.Object {
   sealed trait NewWindow
     extends ejDotWebDotAllLib.ejNs.PdfViewerNs.LinkTarget
   
-  val Default: Default with java.lang.String = js.native
-  val NewTab: NewTab with java.lang.String = js.native
-  val NewWindow: NewWindow with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val NewTab: NewTab with scala.Double = js.native
+  /* 2 */ val NewWindow: NewWindow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.LinkTarget with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.LinkTarget with scala.Double] = js.native
 }
 

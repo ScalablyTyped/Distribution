@@ -39,13 +39,11 @@ object SignInStatus extends js.Object {
   sealed trait UNSPECIFIED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus
   
-  val CANCELLED: CANCELLED with java.lang.String = js.native
-  val ERROR: ERROR with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
+  /* 2 */ val CANCELLED: CANCELLED with scala.Double = js.native
+  /* 3 */ val ERROR: ERROR with scala.Double = js.native
+  /* 1 */ val OK: OK with scala.Double = js.native
+  /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus with scala.Double] = js.native
 }
 

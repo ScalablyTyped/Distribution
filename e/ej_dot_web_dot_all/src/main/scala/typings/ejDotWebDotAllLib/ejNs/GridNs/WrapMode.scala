@@ -26,10 +26,10 @@ object WrapMode extends js.Object {
   sealed trait Header
     extends ejDotWebDotAllLib.ejNs.GridNs.WrapMode
   
-  val Both: Both with java.lang.String = js.native
-  val Content: Content with java.lang.String = js.native
-  val Header: Header with java.lang.String = js.native
+  /* 0 */ val Both: Both with scala.Double = js.native
+  /* 1 */ val Content: Content with scala.Double = js.native
+  /* 2 */ val Header: Header with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.WrapMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.WrapMode with scala.Double] = js.native
 }
 

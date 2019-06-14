@@ -72,21 +72,21 @@ object XboxLiveQualityOfServiceMeasurementStatus extends js.Object {
   sealed trait unexpectedInternalError
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveQualityOfServiceMeasurementStatus
   
-  val canceled: canceled with java.lang.String = js.native
-  val inProgress: inProgress with java.lang.String = js.native
-  val inProgressWithProvisionalResults: inProgressWithProvisionalResults with java.lang.String = js.native
-  val localSystemNotAuthorized: localSystemNotAuthorized with java.lang.String = js.native
-  val noCompatibleNetworkPaths: noCompatibleNetworkPaths with java.lang.String = js.native
-  val noLocalNetworks: noLocalNetworks with java.lang.String = js.native
-  val notStarted: notStarted with java.lang.String = js.native
-  val refusedDueToConfiguration: refusedDueToConfiguration with java.lang.String = js.native
-  val remoteSystemNotAuthorized: remoteSystemNotAuthorized with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
-  val timedOut: timedOut with java.lang.String = js.native
-  val unexpectedInternalError: unexpectedInternalError with java.lang.String = js.native
+  /* 7 */ val canceled: canceled with scala.Double = js.native
+  /* 1 */ val inProgress: inProgress with scala.Double = js.native
+  /* 2 */ val inProgressWithProvisionalResults: inProgressWithProvisionalResults with scala.Double = js.native
+  /* 6 */ val localSystemNotAuthorized: localSystemNotAuthorized with scala.Double = js.native
+  /* 5 */ val noCompatibleNetworkPaths: noCompatibleNetworkPaths with scala.Double = js.native
+  /* 4 */ val noLocalNetworks: noLocalNetworks with scala.Double = js.native
+  /* 0 */ val notStarted: notStarted with scala.Double = js.native
+  /* 10 */ val refusedDueToConfiguration: refusedDueToConfiguration with scala.Double = js.native
+  /* 9 */ val remoteSystemNotAuthorized: remoteSystemNotAuthorized with scala.Double = js.native
+  /* 3 */ val succeeded: succeeded with scala.Double = js.native
+  /* 8 */ val timedOut: timedOut with scala.Double = js.native
+  /* 11 */ val unexpectedInternalError: unexpectedInternalError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveQualityOfServiceMeasurementStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveQualityOfServiceMeasurementStatus with scala.Double
   ] = js.native
 }
 

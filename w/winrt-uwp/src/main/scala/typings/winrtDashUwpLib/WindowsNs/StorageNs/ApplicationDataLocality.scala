@@ -32,13 +32,11 @@ object ApplicationDataLocality extends js.Object {
   sealed trait temporary
     extends winrtDashUwpLib.WindowsNs.StorageNs.ApplicationDataLocality
   
-  val local: local with java.lang.String = js.native
-  val localCache: localCache with java.lang.String = js.native
-  val roaming: roaming with java.lang.String = js.native
-  val temporary: temporary with java.lang.String = js.native
+  /* 0 */ val local: local with scala.Double = js.native
+  /* 3 */ val localCache: localCache with scala.Double = js.native
+  /* 1 */ val roaming: roaming with scala.Double = js.native
+  /* 2 */ val temporary: temporary with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.ApplicationDataLocality with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.ApplicationDataLocality with scala.Double] = js.native
 }
 

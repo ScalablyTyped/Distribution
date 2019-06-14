@@ -19,11 +19,11 @@ object CellUnits extends js.Object {
   sealed trait Hour
     extends reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.CellUnits
   
-  val Day: Day with java.lang.String = js.native
-  val Hour: Hour with java.lang.String = js.native
+  /* 0 */ val Day: Day with scala.Double = js.native
+  /* 1 */ val Hour: Hour with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.CellUnits with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.CellUnits with scala.Double
   ] = js.native
 }
 

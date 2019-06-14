@@ -22,9 +22,9 @@ object RatingIndicatorVisualMode extends js.Object {
   sealed trait Half
     extends openui5Lib.sapNs.mNs.RatingIndicatorVisualMode
   
-  val Full: Full with java.lang.String = js.native
-  val Half: Half with java.lang.String = js.native
+  /* 0 */ val Full: Full with scala.Double = js.native
+  /* 1 */ val Half: Half with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.RatingIndicatorVisualMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.RatingIndicatorVisualMode with scala.Double] = js.native
 }
 

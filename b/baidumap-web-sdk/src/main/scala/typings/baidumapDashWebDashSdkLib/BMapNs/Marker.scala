@@ -11,7 +11,7 @@ class Marker protected () extends Overlay {
   def this(point: Point) = this()
   def this(point: Point, opts: MarkerOptions) = this()
   def addContextMenu(menu: ContextMenu): scala.Unit = js.native
-  def addEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
+  def addEventListener(event: java.lang.String, handler: Callback): scala.Unit = js.native
   def closeInfoWindow(): scala.Unit = js.native
   def disableDragging(): scala.Unit = js.native
   def disableMassClear(): scala.Unit = js.native
@@ -40,7 +40,7 @@ class Marker protected () extends Overlay {
   def onrightclick(event: baidumapDashWebDashSdkLib.Anon_Target): scala.Unit = js.native
   def openInfoWindow(infoWnd: InfoWindow): scala.Unit = js.native
   def removeContextMenu(menu: ContextMenu): scala.Unit = js.native
-  def removeEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
+  def removeEventListener(event: java.lang.String, handler: Callback): scala.Unit = js.native
   def setAnimation(): scala.Unit = js.native
   def setAnimation(animation: Animation): scala.Unit = js.native
   def setIcon(icon: Icon): scala.Unit = js.native

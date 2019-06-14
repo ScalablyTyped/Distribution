@@ -30,10 +30,10 @@ object InputScale extends js.Object {
   sealed trait LOG
     extends heredatalensLib.HNs.datalensNs.HeatmapLayerNs.InputScale
   
-  val DB: DB with java.lang.String = js.native
-  val LINEAR: LINEAR with java.lang.String = js.native
-  val LOG: LOG with java.lang.String = js.native
+  /* 0 */ val DB: DB with scala.Double = js.native
+  /* 1 */ val LINEAR: LINEAR with scala.Double = js.native
+  /* 2 */ val LOG: LOG with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heredatalensLib.HNs.datalensNs.HeatmapLayerNs.InputScale with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heredatalensLib.HNs.datalensNs.HeatmapLayerNs.InputScale with scala.Double] = js.native
 }
 

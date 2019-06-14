@@ -57,18 +57,18 @@ object PhotoOrientation extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.PhotoOrientation
   
-  val flipHorizontal: flipHorizontal with java.lang.String = js.native
-  val flipVertical: flipVertical with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val rotate180: rotate180 with java.lang.String = js.native
-  val rotate270: rotate270 with java.lang.String = js.native
-  val rotate90: rotate90 with java.lang.String = js.native
-  val transpose: transpose with java.lang.String = js.native
-  val transverse: transverse with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 2 */ val flipHorizontal: flipHorizontal with scala.Double = js.native
+  /* 4 */ val flipVertical: flipVertical with scala.Double = js.native
+  /* 1 */ val normal: normal with scala.Double = js.native
+  /* 3 */ val rotate180: rotate180 with scala.Double = js.native
+  /* 6 */ val rotate270: rotate270 with scala.Double = js.native
+  /* 8 */ val rotate90: rotate90 with scala.Double = js.native
+  /* 5 */ val transpose: transpose with scala.Double = js.native
+  /* 7 */ val transverse: transverse with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.PhotoOrientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.PhotoOrientation with scala.Double
   ] = js.native
 }
 

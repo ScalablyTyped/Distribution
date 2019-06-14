@@ -27,9 +27,9 @@ object PointingIcon extends js.Object {
   sealed trait OPEN_ARROW
     extends navermapsLib.naverNs.mapsNs.PointingIcon
   
-  val BLOCK_ARROW: BLOCK_ARROW with scala.Double = js.native
-  val CIRCLE: CIRCLE with scala.Double = js.native
-  val DIAMOND: DIAMOND with scala.Double = js.native
+  /* 0 */ val BLOCK_ARROW: BLOCK_ARROW with scala.Double = js.native
+  /* 1 */ val CIRCLE: CIRCLE with scala.Double = js.native
+  /* 2 */ val DIAMOND: DIAMOND with scala.Double = js.native
   /* 1 */ val OPEN_ARROW: OPEN_ARROW with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.PointingIcon with scala.Double] = js.native

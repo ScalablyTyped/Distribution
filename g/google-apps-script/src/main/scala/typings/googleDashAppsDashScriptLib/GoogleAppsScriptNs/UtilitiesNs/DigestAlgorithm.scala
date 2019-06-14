@@ -35,15 +35,15 @@ object DigestAlgorithm extends js.Object {
   sealed trait SHA_512
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.DigestAlgorithm
   
-  val MD2: MD2 with java.lang.String = js.native
-  val MD5: MD5 with java.lang.String = js.native
-  val SHA_1: SHA_1 with java.lang.String = js.native
-  val SHA_256: SHA_256 with java.lang.String = js.native
-  val SHA_384: SHA_384 with java.lang.String = js.native
-  val SHA_512: SHA_512 with java.lang.String = js.native
+  /* 0 */ val MD2: MD2 with scala.Double = js.native
+  /* 1 */ val MD5: MD5 with scala.Double = js.native
+  /* 2 */ val SHA_1: SHA_1 with scala.Double = js.native
+  /* 3 */ val SHA_256: SHA_256 with scala.Double = js.native
+  /* 4 */ val SHA_384: SHA_384 with scala.Double = js.native
+  /* 5 */ val SHA_512: SHA_512 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.DigestAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.DigestAlgorithm with scala.Double
   ] = js.native
 }
 

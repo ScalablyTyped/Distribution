@@ -19,11 +19,9 @@ object Avoid extends js.Object {
   sealed trait TOLLS
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Avoid
   
-  val HIGHWAYS: HIGHWAYS with java.lang.String = js.native
-  val TOLLS: TOLLS with java.lang.String = js.native
+  /* 1 */ val HIGHWAYS: HIGHWAYS with scala.Double = js.native
+  /* 0 */ val TOLLS: TOLLS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Avoid with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Avoid with scala.Double] = js.native
 }
 

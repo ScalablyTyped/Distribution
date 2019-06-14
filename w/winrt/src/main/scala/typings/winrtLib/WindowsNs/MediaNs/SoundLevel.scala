@@ -23,10 +23,10 @@ object SoundLevel extends js.Object {
   sealed trait muted
     extends winrtLib.WindowsNs.MediaNs.SoundLevel
   
-  val full: full with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val muted: muted with java.lang.String = js.native
+  /* 2 */ val full: full with scala.Double = js.native
+  /* 1 */ val low: low with scala.Double = js.native
+  /* 0 */ val muted: muted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.SoundLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.SoundLevel with scala.Double] = js.native
 }
 

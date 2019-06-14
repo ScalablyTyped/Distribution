@@ -37,14 +37,14 @@ object SocketActivityTriggerReason extends js.Object {
   sealed trait socketClosed
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityTriggerReason
   
-  val connectionAccepted: connectionAccepted with java.lang.String = js.native
-  val keepAliveTimerExpired: keepAliveTimerExpired with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val socketActivity: socketActivity with java.lang.String = js.native
-  val socketClosed: socketClosed with java.lang.String = js.native
+  /* 2 */ val connectionAccepted: connectionAccepted with scala.Double = js.native
+  /* 3 */ val keepAliveTimerExpired: keepAliveTimerExpired with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val socketActivity: socketActivity with scala.Double = js.native
+  /* 4 */ val socketClosed: socketClosed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityTriggerReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityTriggerReason with scala.Double
   ] = js.native
 }
 

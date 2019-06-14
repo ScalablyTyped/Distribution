@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlEndStyleCap extends js.Object
 
+object XlEndStyleCap {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlCap: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlNoCap: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+}
+

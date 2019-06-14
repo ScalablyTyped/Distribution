@@ -22,11 +22,11 @@ object BluetoothConnectionStatus extends js.Object {
   sealed trait disconnected
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothConnectionStatus
   
-  val connected: connected with java.lang.String = js.native
-  val disconnected: disconnected with java.lang.String = js.native
+  /* 1 */ val connected: connected with scala.Double = js.native
+  /* 0 */ val disconnected: disconnected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothConnectionStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothConnectionStatus with scala.Double
   ] = js.native
 }
 

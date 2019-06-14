@@ -37,14 +37,14 @@ object PlayToConnectionError extends js.Object {
   sealed trait protectedPlaybackFailed
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionError
   
-  val deviceError: deviceError with java.lang.String = js.native
-  val deviceLocked: deviceLocked with java.lang.String = js.native
-  val deviceNotResponding: deviceNotResponding with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val protectedPlaybackFailed: protectedPlaybackFailed with java.lang.String = js.native
+  /* 2 */ val deviceError: deviceError with scala.Double = js.native
+  /* 3 */ val deviceLocked: deviceLocked with scala.Double = js.native
+  /* 1 */ val deviceNotResponding: deviceNotResponding with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val protectedPlaybackFailed: protectedPlaybackFailed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionError with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionError with scala.Double
   ] = js.native
 }
 

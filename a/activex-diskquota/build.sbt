@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-diskquota"
-version := "1.0-dt-20190213Z-ea1337"
+version := "1.0-dt-20190213Z-52999d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

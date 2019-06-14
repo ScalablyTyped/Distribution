@@ -21,11 +21,11 @@ object FrameType extends js.Object {
   sealed trait HalfCircle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.FrameType
   
-  val FullCircle: FullCircle with java.lang.String = js.native
-  val HalfCircle: HalfCircle with java.lang.String = js.native
+  /* 0 */ val FullCircle: FullCircle with scala.Double = js.native
+  /* 1 */ val HalfCircle: HalfCircle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.FrameType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.FrameType with scala.Double
   ] = js.native
 }
 

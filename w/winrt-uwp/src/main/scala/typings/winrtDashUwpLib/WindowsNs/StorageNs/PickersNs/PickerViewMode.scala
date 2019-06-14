@@ -22,11 +22,9 @@ object PickerViewMode extends js.Object {
   sealed trait thumbnail
     extends winrtDashUwpLib.WindowsNs.StorageNs.PickersNs.PickerViewMode
   
-  val list: list with java.lang.String = js.native
-  val thumbnail: thumbnail with java.lang.String = js.native
+  /* 0 */ val list: list with scala.Double = js.native
+  /* 1 */ val thumbnail: thumbnail with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.PickersNs.PickerViewMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.PickersNs.PickerViewMode with scala.Double] = js.native
 }
 

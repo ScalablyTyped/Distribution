@@ -87,24 +87,24 @@ object DataClasses extends js.Object {
   sealed trait umts
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.DataClasses
   
-  val cdma1xEvdo: cdma1xEvdo with java.lang.String = js.native
-  val cdma1xEvdoRevA: cdma1xEvdoRevA with java.lang.String = js.native
-  val cdma1xEvdoRevB: cdma1xEvdoRevB with java.lang.String = js.native
-  val cdma1xEvdv: cdma1xEvdv with java.lang.String = js.native
-  val cdma1xRtt: cdma1xRtt with java.lang.String = js.native
-  val cdma3xRtt: cdma3xRtt with java.lang.String = js.native
-  val cdmaUmb: cdmaUmb with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val edge: edge with java.lang.String = js.native
-  val gprs: gprs with java.lang.String = js.native
-  val hsdpa: hsdpa with java.lang.String = js.native
-  val hsupa: hsupa with java.lang.String = js.native
-  val lteAdvanced: lteAdvanced with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val umts: umts with java.lang.String = js.native
+  /* 8 */ val cdma1xEvdo: cdma1xEvdo with scala.Double = js.native
+  /* 9 */ val cdma1xEvdoRevA: cdma1xEvdoRevA with scala.Double = js.native
+  /* 12 */ val cdma1xEvdoRevB: cdma1xEvdoRevB with scala.Double = js.native
+  /* 10 */ val cdma1xEvdv: cdma1xEvdv with scala.Double = js.native
+  /* 7 */ val cdma1xRtt: cdma1xRtt with scala.Double = js.native
+  /* 11 */ val cdma3xRtt: cdma3xRtt with scala.Double = js.native
+  /* 13 */ val cdmaUmb: cdmaUmb with scala.Double = js.native
+  /* 14 */ val custom: custom with scala.Double = js.native
+  /* 2 */ val edge: edge with scala.Double = js.native
+  /* 1 */ val gprs: gprs with scala.Double = js.native
+  /* 4 */ val hsdpa: hsdpa with scala.Double = js.native
+  /* 5 */ val hsupa: hsupa with scala.Double = js.native
+  /* 6 */ val lteAdvanced: lteAdvanced with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val umts: umts with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.DataClasses with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.DataClasses with scala.Double
   ] = js.native
 }
 

@@ -21,8 +21,8 @@ object CountError extends js.Object {
   sealed trait noResponse
     extends winjsLib.WinJSNs.UINs.CountError
   
-  val noResponse: noResponse with java.lang.String = js.native
+  /* 0 */ val noResponse: noResponse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.CountError with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.CountError with scala.Double] = js.native
 }
 

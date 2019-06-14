@@ -32,13 +32,13 @@ object ImageScannerColorMode extends js.Object {
   sealed trait monochrome
     extends winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerColorMode
   
-  val autoColor: autoColor with java.lang.String = js.native
-  val color: color with java.lang.String = js.native
-  val grayscale: grayscale with java.lang.String = js.native
-  val monochrome: monochrome with java.lang.String = js.native
+  /* 3 */ val autoColor: autoColor with scala.Double = js.native
+  /* 0 */ val color: color with scala.Double = js.native
+  /* 1 */ val grayscale: grayscale with scala.Double = js.native
+  /* 2 */ val monochrome: monochrome with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerColorMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerColorMode with scala.Double
   ] = js.native
 }
 

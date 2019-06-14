@@ -32,13 +32,13 @@ object ChatMessageOperatorKind extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageOperatorKind
   
-  val mms: mms with java.lang.String = js.native
-  val rcs: rcs with java.lang.String = js.native
-  val sms: sms with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 2 */ val mms: mms with scala.Double = js.native
+  /* 3 */ val rcs: rcs with scala.Double = js.native
+  /* 1 */ val sms: sms with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageOperatorKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageOperatorKind with scala.Double
   ] = js.native
 }
 

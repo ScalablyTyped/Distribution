@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OlSyncState extends js.Object
 
+object OlSyncState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olSyncStarted: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def olSyncStopped: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+}
+

@@ -41,13 +41,13 @@ object CFormatRule extends js.Object {
   sealed trait TextContains
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.CFormatRule
   
-  val Between: Between with java.lang.String = js.native
-  val DateOccurs: DateOccurs with java.lang.String = js.native
-  val EqualTo: EqualTo with java.lang.String = js.native
-  val GreaterThan: GreaterThan with java.lang.String = js.native
-  val LessThan: LessThan with java.lang.String = js.native
-  val TextContains: TextContains with java.lang.String = js.native
+  /* 2 */ val Between: Between with scala.Double = js.native
+  /* 5 */ val DateOccurs: DateOccurs with scala.Double = js.native
+  /* 3 */ val EqualTo: EqualTo with scala.Double = js.native
+  /* 0 */ val GreaterThan: GreaterThan with scala.Double = js.native
+  /* 1 */ val LessThan: LessThan with scala.Double = js.native
+  /* 4 */ val TextContains: TextContains with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.CFormatRule with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.CFormatRule with scala.Double] = js.native
 }
 

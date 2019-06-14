@@ -55,20 +55,20 @@ object ArrowStyle extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ArrowStyle
   
-  val FILL_ARROW: FILL_ARROW with java.lang.String = js.native
-  val FILL_CIRCLE: FILL_CIRCLE with java.lang.String = js.native
-  val FILL_DIAMOND: FILL_DIAMOND with java.lang.String = js.native
-  val FILL_SQUARE: FILL_SQUARE with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val OPEN_ARROW: OPEN_ARROW with java.lang.String = js.native
-  val OPEN_CIRCLE: OPEN_CIRCLE with java.lang.String = js.native
-  val OPEN_DIAMOND: OPEN_DIAMOND with java.lang.String = js.native
-  val OPEN_SQUARE: OPEN_SQUARE with java.lang.String = js.native
-  val STEALTH_ARROW: STEALTH_ARROW with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 3 */ val FILL_ARROW: FILL_ARROW with scala.Double = js.native
+  /* 4 */ val FILL_CIRCLE: FILL_CIRCLE with scala.Double = js.native
+  /* 6 */ val FILL_DIAMOND: FILL_DIAMOND with scala.Double = js.native
+  /* 5 */ val FILL_SQUARE: FILL_SQUARE with scala.Double = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 7 */ val OPEN_ARROW: OPEN_ARROW with scala.Double = js.native
+  /* 8 */ val OPEN_CIRCLE: OPEN_CIRCLE with scala.Double = js.native
+  /* 10 */ val OPEN_DIAMOND: OPEN_DIAMOND with scala.Double = js.native
+  /* 9 */ val OPEN_SQUARE: OPEN_SQUARE with scala.Double = js.native
+  /* 2 */ val STEALTH_ARROW: STEALTH_ARROW with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ArrowStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ArrowStyle with scala.Double
   ] = js.native
 }
 

@@ -37,14 +37,12 @@ object KnownVideoProfile extends js.Object {
   sealed trait videoRecording
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.KnownVideoProfile
   
-  val balancedVideoAndPhoto: balancedVideoAndPhoto with java.lang.String = js.native
-  val highQualityPhoto: highQualityPhoto with java.lang.String = js.native
-  val photoSequence: photoSequence with java.lang.String = js.native
-  val videoConferencing: videoConferencing with java.lang.String = js.native
-  val videoRecording: videoRecording with java.lang.String = js.native
+  /* 2 */ val balancedVideoAndPhoto: balancedVideoAndPhoto with scala.Double = js.native
+  /* 1 */ val highQualityPhoto: highQualityPhoto with scala.Double = js.native
+  /* 4 */ val photoSequence: photoSequence with scala.Double = js.native
+  /* 3 */ val videoConferencing: videoConferencing with scala.Double = js.native
+  /* 0 */ val videoRecording: videoRecording with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.KnownVideoProfile with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.KnownVideoProfile with scala.Double] = js.native
 }
 

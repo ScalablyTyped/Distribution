@@ -27,13 +27,13 @@ object EasDisallowConvenienceLogonResult extends js.Object {
   sealed trait requestedPolicyIsStricter
     extends winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasDisallowConvenienceLogonResult
   
-  val canBeCompliant: canBeCompliant with java.lang.String = js.native
-  val compliant: compliant with java.lang.String = js.native
-  val notEvaluated: notEvaluated with java.lang.String = js.native
-  val requestedPolicyIsStricter: requestedPolicyIsStricter with java.lang.String = js.native
+  /* 2 */ val canBeCompliant: canBeCompliant with scala.Double = js.native
+  /* 1 */ val compliant: compliant with scala.Double = js.native
+  /* 0 */ val notEvaluated: notEvaluated with scala.Double = js.native
+  /* 3 */ val requestedPolicyIsStricter: requestedPolicyIsStricter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasDisallowConvenienceLogonResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasDisallowConvenienceLogonResult with scala.Double
   ] = js.native
 }
 

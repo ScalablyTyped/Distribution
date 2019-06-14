@@ -27,11 +27,11 @@ object GeocoderLocationType extends js.Object {
   sealed trait ROOFTOP
     extends googlemapsLib.googleNs.mapsNs.GeocoderLocationType
   
-  val APPROXIMATE: APPROXIMATE with java.lang.String = js.native
-  val GEOMETRIC_CENTER: GEOMETRIC_CENTER with java.lang.String = js.native
-  val RANGE_INTERPOLATED: RANGE_INTERPOLATED with java.lang.String = js.native
-  val ROOFTOP: ROOFTOP with java.lang.String = js.native
+  /* 0 */ val APPROXIMATE: APPROXIMATE with scala.Double = js.native
+  /* 1 */ val GEOMETRIC_CENTER: GEOMETRIC_CENTER with scala.Double = js.native
+  /* 2 */ val RANGE_INTERPOLATED: RANGE_INTERPOLATED with scala.Double = js.native
+  /* 3 */ val ROOFTOP: ROOFTOP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.GeocoderLocationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.GeocoderLocationType with scala.Double] = js.native
 }
 

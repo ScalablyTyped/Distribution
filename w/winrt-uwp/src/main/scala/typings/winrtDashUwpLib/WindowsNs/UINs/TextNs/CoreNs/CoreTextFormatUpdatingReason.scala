@@ -37,14 +37,14 @@ object CoreTextFormatUpdatingReason extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextFormatUpdatingReason
   
-  val compositionConverted: compositionConverted with java.lang.String = js.native
-  val compositionTargetConverted: compositionTargetConverted with java.lang.String = js.native
-  val compositionTargetUnconverted: compositionTargetUnconverted with java.lang.String = js.native
-  val compositionUnconverted: compositionUnconverted with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val compositionConverted: compositionConverted with scala.Double = js.native
+  /* 4 */ val compositionTargetConverted: compositionTargetConverted with scala.Double = js.native
+  /* 3 */ val compositionTargetUnconverted: compositionTargetUnconverted with scala.Double = js.native
+  /* 1 */ val compositionUnconverted: compositionUnconverted with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextFormatUpdatingReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextFormatUpdatingReason with scala.Double
   ] = js.native
 }
 

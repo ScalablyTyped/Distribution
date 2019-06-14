@@ -82,23 +82,23 @@ object ChainValidationResult extends js.Object {
   sealed trait wrongUsage
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.ChainValidationResult
   
-  val basicConstraintsError: basicConstraintsError with java.lang.String = js.native
-  val expired: expired with java.lang.String = js.native
-  val incompleteChain: incompleteChain with java.lang.String = js.native
-  val invalidCertificateAuthorityPolicy: invalidCertificateAuthorityPolicy with java.lang.String = js.native
-  val invalidName: invalidName with java.lang.String = js.native
-  val invalidSignature: invalidSignature with java.lang.String = js.native
-  val otherErrors: otherErrors with java.lang.String = js.native
-  val revocationFailure: revocationFailure with java.lang.String = js.native
-  val revocationInformationMissing: revocationInformationMissing with java.lang.String = js.native
-  val revoked: revoked with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownCriticalExtension: unknownCriticalExtension with java.lang.String = js.native
-  val untrusted: untrusted with java.lang.String = js.native
-  val wrongUsage: wrongUsage with java.lang.String = js.native
+  /* 9 */ val basicConstraintsError: basicConstraintsError with scala.Double = js.native
+  /* 3 */ val expired: expired with scala.Double = js.native
+  /* 4 */ val incompleteChain: incompleteChain with scala.Double = js.native
+  /* 8 */ val invalidCertificateAuthorityPolicy: invalidCertificateAuthorityPolicy with scala.Double = js.native
+  /* 7 */ val invalidName: invalidName with scala.Double = js.native
+  /* 5 */ val invalidSignature: invalidSignature with scala.Double = js.native
+  /* 13 */ val otherErrors: otherErrors with scala.Double = js.native
+  /* 12 */ val revocationFailure: revocationFailure with scala.Double = js.native
+  /* 11 */ val revocationInformationMissing: revocationInformationMissing with scala.Double = js.native
+  /* 2 */ val revoked: revoked with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 10 */ val unknownCriticalExtension: unknownCriticalExtension with scala.Double = js.native
+  /* 1 */ val untrusted: untrusted with scala.Double = js.native
+  /* 6 */ val wrongUsage: wrongUsage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.ChainValidationResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.ChainValidationResult with scala.Double
   ] = js.native
 }
 

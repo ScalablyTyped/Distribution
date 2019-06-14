@@ -27,12 +27,12 @@ object AppInstallType extends js.Object {
   sealed trait update
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AppInstallType
   
-  val install: install with java.lang.String = js.native
-  val repair: repair with java.lang.String = js.native
-  val update: update with java.lang.String = js.native
+  /* 0 */ val install: install with scala.Double = js.native
+  /* 2 */ val repair: repair with scala.Double = js.native
+  /* 1 */ val update: update with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AppInstallType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AppInstallType with scala.Double
   ] = js.native
 }
 

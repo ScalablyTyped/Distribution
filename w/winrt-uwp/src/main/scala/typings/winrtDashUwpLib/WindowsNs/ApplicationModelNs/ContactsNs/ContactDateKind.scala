@@ -27,12 +27,12 @@ object ContactDateKind extends js.Object {
   sealed trait other
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactDateKind
   
-  val anniversary: anniversary with java.lang.String = js.native
-  val birthday: birthday with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
+  /* 1 */ val anniversary: anniversary with scala.Double = js.native
+  /* 0 */ val birthday: birthday with scala.Double = js.native
+  /* 2 */ val other: other with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactDateKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactDateKind with scala.Double
   ] = js.native
 }
 

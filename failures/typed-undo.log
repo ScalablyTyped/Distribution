@@ -9,6 +9,8 @@
 	at com.olvind.tso.ts.CodePath.forceHasPath(CodePath.scala:11)
 	at com.olvind.tso.ts.CodePath.forceHasPath$(CodePath.scala:10)
 	at com.olvind.tso.ts.CodePath$NoPath$.forceHasPath(CodePath.scala:30)
+	at com.olvind.tso.importer.ImportName.apply(ImportName.scala:22)
+	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:95)
 	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:25)
 	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:63)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)

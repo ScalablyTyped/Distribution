@@ -27,13 +27,13 @@ object CryptographicPrivateKeyBlobType extends js.Object {
   sealed trait pkcs8RawPrivateKeyInfo
     extends winrtLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPrivateKeyBlobType
   
-  val bCryptPrivateKey: bCryptPrivateKey with java.lang.String = js.native
-  val capi1PrivateKey: capi1PrivateKey with java.lang.String = js.native
-  val pkcs1RsaPrivateKey: pkcs1RsaPrivateKey with java.lang.String = js.native
-  val pkcs8RawPrivateKeyInfo: pkcs8RawPrivateKeyInfo with java.lang.String = js.native
+  /* 2 */ val bCryptPrivateKey: bCryptPrivateKey with scala.Double = js.native
+  /* 3 */ val capi1PrivateKey: capi1PrivateKey with scala.Double = js.native
+  /* 1 */ val pkcs1RsaPrivateKey: pkcs1RsaPrivateKey with scala.Double = js.native
+  /* 0 */ val pkcs8RawPrivateKeyInfo: pkcs8RawPrivateKeyInfo with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPrivateKeyBlobType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPrivateKeyBlobType with scala.Double
   ] = js.native
 }
 

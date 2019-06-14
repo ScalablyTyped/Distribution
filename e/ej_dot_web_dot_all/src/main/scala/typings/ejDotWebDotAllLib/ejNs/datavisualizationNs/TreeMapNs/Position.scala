@@ -61,19 +61,17 @@ object Position extends js.Object {
   sealed trait Topright
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.Position
   
-  val Bottomcenter: Bottomcenter with java.lang.String = js.native
-  val Bottomleft: Bottomleft with java.lang.String = js.native
-  val Bottomright: Bottomright with java.lang.String = js.native
-  val Center: Center with java.lang.String = js.native
-  val Centerleft: Centerleft with java.lang.String = js.native
-  val Centerright: Centerright with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Topcenter: Topcenter with java.lang.String = js.native
-  val Topleft: Topleft with java.lang.String = js.native
-  val Topright: Topright with java.lang.String = js.native
+  /* 8 */ val Bottomcenter: Bottomcenter with scala.Double = js.native
+  /* 7 */ val Bottomleft: Bottomleft with scala.Double = js.native
+  /* 9 */ val Bottomright: Bottomright with scala.Double = js.native
+  /* 5 */ val Center: Center with scala.Double = js.native
+  /* 4 */ val Centerleft: Centerleft with scala.Double = js.native
+  /* 6 */ val Centerright: Centerright with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val Topcenter: Topcenter with scala.Double = js.native
+  /* 1 */ val Topleft: Topleft with scala.Double = js.native
+  /* 3 */ val Topright: Topright with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.Position with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.Position with scala.Double] = js.native
 }
 

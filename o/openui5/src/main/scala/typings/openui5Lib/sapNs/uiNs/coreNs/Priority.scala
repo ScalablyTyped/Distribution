@@ -30,11 +30,11 @@ object Priority extends js.Object {
   sealed trait None
     extends openui5Lib.sapNs.uiNs.coreNs.Priority
   
-  val High: High with java.lang.String = js.native
-  val Low: Low with java.lang.String = js.native
-  val Medium: Medium with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 0 */ val High: High with scala.Double = js.native
+  /* 1 */ val Low: Low with scala.Double = js.native
+  /* 2 */ val Medium: Medium with scala.Double = js.native
+  /* 3 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.Priority with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.Priority with scala.Double] = js.native
 }
 

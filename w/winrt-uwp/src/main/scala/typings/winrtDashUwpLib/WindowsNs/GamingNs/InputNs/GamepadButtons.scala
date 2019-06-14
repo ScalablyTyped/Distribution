@@ -87,22 +87,22 @@ object GamepadButtons extends js.Object {
   sealed trait y
     extends winrtDashUwpLib.WindowsNs.GamingNs.InputNs.GamepadButtons
   
-  val a: a with java.lang.String = js.native
-  val b: b with java.lang.String = js.native
-  val dpadDown: dpadDown with java.lang.String = js.native
-  val dpadLeft: dpadLeft with java.lang.String = js.native
-  val dpadRight: dpadRight with java.lang.String = js.native
-  val dpadUp: dpadUp with java.lang.String = js.native
-  val leftShoulder: leftShoulder with java.lang.String = js.native
-  val leftThumbstick: leftThumbstick with java.lang.String = js.native
-  val menu: menu with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val rightShoulder: rightShoulder with java.lang.String = js.native
-  val rightThumbstick: rightThumbstick with java.lang.String = js.native
-  val view: view with java.lang.String = js.native
-  val x: x with java.lang.String = js.native
-  val y: y with java.lang.String = js.native
+  /* 3 */ val a: a with scala.Double = js.native
+  /* 4 */ val b: b with scala.Double = js.native
+  /* 8 */ val dpadDown: dpadDown with scala.Double = js.native
+  /* 9 */ val dpadLeft: dpadLeft with scala.Double = js.native
+  /* 10 */ val dpadRight: dpadRight with scala.Double = js.native
+  /* 7 */ val dpadUp: dpadUp with scala.Double = js.native
+  /* 11 */ val leftShoulder: leftShoulder with scala.Double = js.native
+  /* 13 */ val leftThumbstick: leftThumbstick with scala.Double = js.native
+  /* 1 */ val menu: menu with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 12 */ val rightShoulder: rightShoulder with scala.Double = js.native
+  /* 14 */ val rightThumbstick: rightThumbstick with scala.Double = js.native
+  /* 2 */ val view: view with scala.Double = js.native
+  /* 5 */ val x: x with scala.Double = js.native
+  /* 6 */ val y: y with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.GamingNs.InputNs.GamepadButtons with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GamingNs.InputNs.GamepadButtons with scala.Double] = js.native
 }
 

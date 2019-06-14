@@ -21,9 +21,9 @@ object ItemType extends js.Object {
   sealed trait Tab
     extends ejDotWebDotAllLib.ejNs.RibbonNs.ItemType
   
-  val Button: Button with java.lang.String = js.native
-  val Tab: Tab with java.lang.String = js.native
+  /* 0 */ val Button: Button with scala.Double = js.native
+  /* 1 */ val Tab: Tab with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.ItemType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.ItemType with scala.Double] = js.native
 }
 

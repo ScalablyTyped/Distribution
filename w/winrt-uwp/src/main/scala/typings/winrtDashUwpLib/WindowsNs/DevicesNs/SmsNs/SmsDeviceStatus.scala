@@ -52,15 +52,15 @@ object SmsDeviceStatus extends js.Object {
   sealed trait subscriptionNotActivated
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsDeviceStatus
   
-  val badSim: badSim with java.lang.String = js.native
-  val deviceBlocked: deviceBlocked with java.lang.String = js.native
-  val deviceFailure: deviceFailure with java.lang.String = js.native
-  val deviceLocked: deviceLocked with java.lang.String = js.native
-  val off: off with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
-  val simNotInserted: simNotInserted with java.lang.String = js.native
-  val subscriptionNotActivated: subscriptionNotActivated with java.lang.String = js.native
+  /* 3 */ val badSim: badSim with scala.Double = js.native
+  /* 7 */ val deviceBlocked: deviceBlocked with scala.Double = js.native
+  /* 4 */ val deviceFailure: deviceFailure with scala.Double = js.native
+  /* 6 */ val deviceLocked: deviceLocked with scala.Double = js.native
+  /* 0 */ val off: off with scala.Double = js.native
+  /* 1 */ val ready: ready with scala.Double = js.native
+  /* 2 */ val simNotInserted: simNotInserted with scala.Double = js.native
+  /* 5 */ val subscriptionNotActivated: subscriptionNotActivated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsDeviceStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsDeviceStatus with scala.Double] = js.native
 }
 

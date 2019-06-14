@@ -26,12 +26,12 @@ object SunburstClickAction extends js.Object {
   sealed trait ToggleSegmentVisibility
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstClickAction
   
-  val None: None with java.lang.String = js.native
-  val ToggleSegmentSelection: ToggleSegmentSelection with java.lang.String = js.native
-  val ToggleSegmentVisibility: ToggleSegmentVisibility with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val ToggleSegmentSelection: ToggleSegmentSelection with scala.Double = js.native
+  /* 1 */ val ToggleSegmentVisibility: ToggleSegmentVisibility with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstClickAction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstClickAction with scala.Double
   ] = js.native
 }
 

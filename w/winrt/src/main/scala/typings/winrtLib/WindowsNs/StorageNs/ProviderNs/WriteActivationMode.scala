@@ -23,12 +23,10 @@ object WriteActivationMode extends js.Object {
   sealed trait readOnly
     extends winrtLib.WindowsNs.StorageNs.ProviderNs.WriteActivationMode
   
-  val afterWrite: afterWrite with java.lang.String = js.native
-  val notNeeded: notNeeded with java.lang.String = js.native
-  val readOnly: readOnly with java.lang.String = js.native
+  /* 2 */ val afterWrite: afterWrite with scala.Double = js.native
+  /* 1 */ val notNeeded: notNeeded with scala.Double = js.native
+  /* 0 */ val readOnly: readOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.ProviderNs.WriteActivationMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.ProviderNs.WriteActivationMode with scala.Double] = js.native
 }
 

@@ -24,11 +24,11 @@ object GoogleSigninButtonNs extends js.Object {
     sealed trait Light
       extends reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonNs.Color
     
-    val Dark: Dark with java.lang.String = js.native
-    val Light: Light with java.lang.String = js.native
+    /* 1 */ val Dark: Dark with scala.Double = js.native
+    /* 0 */ val Light: Light with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonNs.Color with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonNs.Color with scala.Double
       ] = js.native
   }
   
@@ -46,12 +46,12 @@ object GoogleSigninButtonNs extends js.Object {
     sealed trait Wide
       extends reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonNs.Size
     
-    val Icon: Icon with java.lang.String = js.native
-    val Standard: Standard with java.lang.String = js.native
-    val Wide: Wide with java.lang.String = js.native
+    /* 2 */ val Icon: Icon with scala.Double = js.native
+    /* 0 */ val Standard: Standard with scala.Double = js.native
+    /* 1 */ val Wide: Wide with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonNs.Size with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.GoogleSigninButtonNs.Size with scala.Double
       ] = js.native
   }
   

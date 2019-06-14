@@ -26,10 +26,10 @@ object CloseMode extends js.Object {
   sealed trait Sticky
     extends ejDotWebDotAllLib.ejNs.TooltipNs.CloseMode
   
-  val Auto: Auto with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Sticky: Sticky with java.lang.String = js.native
+  /* 1 */ val Auto: Auto with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 0 */ val Sticky: Sticky with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TooltipNs.CloseMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TooltipNs.CloseMode with scala.Double] = js.native
 }
 

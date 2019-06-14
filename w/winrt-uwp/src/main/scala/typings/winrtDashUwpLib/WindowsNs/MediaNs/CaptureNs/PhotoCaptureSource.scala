@@ -27,12 +27,10 @@ object PhotoCaptureSource extends js.Object {
   sealed trait videoPreview
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.PhotoCaptureSource
   
-  val auto: auto with java.lang.String = js.native
-  val photo: photo with java.lang.String = js.native
-  val videoPreview: videoPreview with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 2 */ val photo: photo with scala.Double = js.native
+  /* 1 */ val videoPreview: videoPreview with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.PhotoCaptureSource with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.PhotoCaptureSource with scala.Double] = js.native
 }
 

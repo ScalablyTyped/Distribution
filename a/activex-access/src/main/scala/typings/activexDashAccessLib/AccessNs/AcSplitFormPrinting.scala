@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcSplitFormPrinting extends js.Object
 
+object AcSplitFormPrinting {
+  @scala.inline
+  def acFormOnly: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acGridOnly: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

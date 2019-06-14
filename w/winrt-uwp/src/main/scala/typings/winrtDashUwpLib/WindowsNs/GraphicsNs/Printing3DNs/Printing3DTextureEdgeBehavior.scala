@@ -32,13 +32,13 @@ object Printing3DTextureEdgeBehavior extends js.Object {
   sealed trait wrap
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DTextureEdgeBehavior
   
-  val clamp: clamp with java.lang.String = js.native
-  val mirror: mirror with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val wrap: wrap with java.lang.String = js.native
+  /* 3 */ val clamp: clamp with scala.Double = js.native
+  /* 2 */ val mirror: mirror with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val wrap: wrap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DTextureEdgeBehavior with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DTextureEdgeBehavior with scala.Double
   ] = js.native
 }
 

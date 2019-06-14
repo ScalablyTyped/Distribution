@@ -35,15 +35,15 @@ object Permission extends js.Object {
   sealed trait VIEW
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.Permission
   
-  val COMMENT: COMMENT with java.lang.String = js.native
-  val EDIT: EDIT with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val ORGANIZER: ORGANIZER with java.lang.String = js.native
-  val OWNER: OWNER with java.lang.String = js.native
-  val VIEW: VIEW with java.lang.String = js.native
+  /* 2 */ val COMMENT: COMMENT with scala.Double = js.native
+  /* 1 */ val EDIT: EDIT with scala.Double = js.native
+  /* 5 */ val NONE: NONE with scala.Double = js.native
+  /* 4 */ val ORGANIZER: ORGANIZER with scala.Double = js.native
+  /* 3 */ val OWNER: OWNER with scala.Double = js.native
+  /* 0 */ val VIEW: VIEW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.Permission with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.Permission with scala.Double
   ] = js.native
 }
 

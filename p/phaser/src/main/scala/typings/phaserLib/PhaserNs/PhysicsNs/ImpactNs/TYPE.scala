@@ -48,11 +48,11 @@ object TYPE extends js.Object {
   sealed trait NONE
     extends phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE
   
-  val A: A with java.lang.String = js.native
-  val B: B with java.lang.String = js.native
-  val BOTH: BOTH with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
+  /* 1 */ val A: A with scala.Double = js.native
+  /* 2 */ val B: B with scala.Double = js.native
+  /* 3 */ val BOTH: BOTH with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE with scala.Double] = js.native
 }
 

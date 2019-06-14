@@ -26,10 +26,10 @@ object sliderType extends js.Object {
   sealed trait Range
     extends ejDotWebDotAllLib.ejNs.sliderNs.sliderType
   
-  val Default: Default with java.lang.String = js.native
-  val MinRange: MinRange with java.lang.String = js.native
-  val Range: Range with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val MinRange: MinRange with scala.Double = js.native
+  /* 2 */ val Range: Range with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.sliderNs.sliderType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.sliderNs.sliderType with scala.Double] = js.native
 }
 

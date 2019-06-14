@@ -31,14 +31,14 @@ object ContactFieldType extends js.Object {
   sealed trait phoneNumber
     extends winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType
   
-  val custom: custom with java.lang.String = js.native
-  val email: email with java.lang.String = js.native
-  val instantMessage: instantMessage with java.lang.String = js.native
-  val location: location with java.lang.String = js.native
-  val phoneNumber: phoneNumber with java.lang.String = js.native
+  /* 4 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val email: email with scala.Double = js.native
+  /* 3 */ val instantMessage: instantMessage with scala.Double = js.native
+  /* 2 */ val location: location with scala.Double = js.native
+  /* 1 */ val phoneNumber: phoneNumber with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType with scala.Double
   ] = js.native
 }
 

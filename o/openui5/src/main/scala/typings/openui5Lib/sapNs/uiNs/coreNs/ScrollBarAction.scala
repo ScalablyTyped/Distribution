@@ -30,11 +30,11 @@ object ScrollBarAction extends js.Object {
   sealed trait Step
     extends openui5Lib.sapNs.uiNs.coreNs.ScrollBarAction
   
-  val Drag: Drag with java.lang.String = js.native
-  val MouseWheel: MouseWheel with java.lang.String = js.native
-  val Page: Page with java.lang.String = js.native
-  val Step: Step with java.lang.String = js.native
+  /* 0 */ val Drag: Drag with scala.Double = js.native
+  /* 1 */ val MouseWheel: MouseWheel with scala.Double = js.native
+  /* 2 */ val Page: Page with scala.Double = js.native
+  /* 3 */ val Step: Step with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.ScrollBarAction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.ScrollBarAction with scala.Double] = js.native
 }
 

@@ -35,15 +35,15 @@ object PropertyPrefetchOptions extends js.Object {
   sealed trait videoProperties
     extends winrtLib.WindowsNs.StorageNs.FilePropertiesNs.PropertyPrefetchOptions
   
-  val basicProperties: basicProperties with java.lang.String = js.native
-  val documentProperties: documentProperties with java.lang.String = js.native
-  val imageProperties: imageProperties with java.lang.String = js.native
-  val musicProperties: musicProperties with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val videoProperties: videoProperties with java.lang.String = js.native
+  /* 5 */ val basicProperties: basicProperties with scala.Double = js.native
+  /* 4 */ val documentProperties: documentProperties with scala.Double = js.native
+  /* 3 */ val imageProperties: imageProperties with scala.Double = js.native
+  /* 1 */ val musicProperties: musicProperties with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val videoProperties: videoProperties with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.FilePropertiesNs.PropertyPrefetchOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.StorageNs.FilePropertiesNs.PropertyPrefetchOptions with scala.Double
   ] = js.native
 }
 

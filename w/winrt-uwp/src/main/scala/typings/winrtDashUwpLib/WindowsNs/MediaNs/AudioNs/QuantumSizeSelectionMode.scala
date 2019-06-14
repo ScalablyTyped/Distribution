@@ -27,12 +27,12 @@ object QuantumSizeSelectionMode extends js.Object {
   sealed trait systemDefault
     extends winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.QuantumSizeSelectionMode
   
-  val closestToDesired: closestToDesired with java.lang.String = js.native
-  val lowestLatency: lowestLatency with java.lang.String = js.native
-  val systemDefault: systemDefault with java.lang.String = js.native
+  /* 2 */ val closestToDesired: closestToDesired with scala.Double = js.native
+  /* 1 */ val lowestLatency: lowestLatency with scala.Double = js.native
+  /* 0 */ val systemDefault: systemDefault with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.QuantumSizeSelectionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.QuantumSizeSelectionMode with scala.Double
   ] = js.native
 }
 

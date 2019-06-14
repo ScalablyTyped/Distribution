@@ -21,11 +21,11 @@ object UnitTextPlacement extends js.Object {
   sealed trait From
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.UnitTextPlacement
   
-  val Back: Back with java.lang.String = js.native
-  val From: From with java.lang.String = js.native
+  /* 0 */ val Back: Back with scala.Double = js.native
+  /* 1 */ val From: From with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.UnitTextPlacement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.UnitTextPlacement with scala.Double
   ] = js.native
 }
 

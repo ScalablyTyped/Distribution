@@ -23,10 +23,10 @@ object PowerlineFrequency extends js.Object {
   sealed trait sixtyHertz
     extends winrtLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency
   
-  val disabled: disabled with java.lang.String = js.native
-  val fiftyHertz: fiftyHertz with java.lang.String = js.native
-  val sixtyHertz: sixtyHertz with java.lang.String = js.native
+  /* 0 */ val disabled: disabled with scala.Double = js.native
+  /* 1 */ val fiftyHertz: fiftyHertz with scala.Double = js.native
+  /* 2 */ val sixtyHertz: sixtyHertz with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency with scala.Double] = js.native
 }
 

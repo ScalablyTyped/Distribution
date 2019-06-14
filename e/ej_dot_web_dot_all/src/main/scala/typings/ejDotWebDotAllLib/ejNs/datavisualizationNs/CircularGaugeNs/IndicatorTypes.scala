@@ -106,28 +106,28 @@ object IndicatorTypes extends js.Object {
   sealed trait Wedge
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.IndicatorTypes
   
-  val Circle: Circle with java.lang.String = js.native
-  val Cross: Cross with java.lang.String = js.native
-  val Diamond: Diamond with java.lang.String = js.native
-  val Downarrow: Downarrow with java.lang.String = js.native
-  val HorizontalLine: HorizontalLine with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val InvertedTriangle: InvertedTriangle with java.lang.String = js.native
-  val Leftarrow: Leftarrow with java.lang.String = js.native
-  val Pentagon: Pentagon with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val Rightarrow: Rightarrow with java.lang.String = js.native
-  val RoundedRectangle: RoundedRectangle with java.lang.String = js.native
-  val Star: Star with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
-  val Trapezoid: Trapezoid with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
-  val Uparrow: Uparrow with java.lang.String = js.native
-  val Verticalline: Verticalline with java.lang.String = js.native
-  val Wedge: Wedge with java.lang.String = js.native
+  /* 1 */ val Circle: Circle with scala.Double = js.native
+  /* 13 */ val Cross: Cross with scala.Double = js.native
+  /* 6 */ val Diamond: Diamond with scala.Double = js.native
+  /* 15 */ val Downarrow: Downarrow with scala.Double = js.native
+  /* 11 */ val HorizontalLine: HorizontalLine with scala.Double = js.native
+  /* 4 */ val Image: Image with scala.Double = js.native
+  /* 18 */ val InvertedTriangle: InvertedTriangle with scala.Double = js.native
+  /* 16 */ val Leftarrow: Leftarrow with scala.Double = js.native
+  /* 8 */ val Pentagon: Pentagon with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 17 */ val Rightarrow: Rightarrow with scala.Double = js.native
+  /* 3 */ val RoundedRectangle: RoundedRectangle with scala.Double = js.native
+  /* 10 */ val Star: Star with scala.Double = js.native
+  /* 2 */ val Text: Text with scala.Double = js.native
+  /* 7 */ val Trapezoid: Trapezoid with scala.Double = js.native
+  /* 5 */ val Triangle: Triangle with scala.Double = js.native
+  /* 14 */ val Uparrow: Uparrow with scala.Double = js.native
+  /* 12 */ val Verticalline: Verticalline with scala.Double = js.native
+  /* 9 */ val Wedge: Wedge with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.IndicatorTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.IndicatorTypes with scala.Double
   ] = js.native
 }
 

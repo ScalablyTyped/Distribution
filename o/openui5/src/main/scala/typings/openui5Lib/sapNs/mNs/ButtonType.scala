@@ -46,15 +46,15 @@ object ButtonType extends js.Object {
   sealed trait Up
     extends openui5Lib.sapNs.mNs.ButtonType
   
-  val Accept: Accept with java.lang.String = js.native
-  val Back: Back with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Emphasized: Emphasized with java.lang.String = js.native
-  val Reject: Reject with java.lang.String = js.native
-  val Transparent: Transparent with java.lang.String = js.native
-  val Unstyled: Unstyled with java.lang.String = js.native
-  val Up: Up with java.lang.String = js.native
+  /* 0 */ val Accept: Accept with scala.Double = js.native
+  /* 1 */ val Back: Back with scala.Double = js.native
+  /* 2 */ val Default: Default with scala.Double = js.native
+  /* 3 */ val Emphasized: Emphasized with scala.Double = js.native
+  /* 4 */ val Reject: Reject with scala.Double = js.native
+  /* 5 */ val Transparent: Transparent with scala.Double = js.native
+  /* 6 */ val Unstyled: Unstyled with scala.Double = js.native
+  /* 7 */ val Up: Up with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ButtonType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ButtonType with scala.Double] = js.native
 }
 

@@ -39,13 +39,13 @@ object SurfaceCapabilities extends js.Object {
   sealed trait WEB_BROWSER
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities
   
-  val AUDIO_OUTPUT: AUDIO_OUTPUT with java.lang.String = js.native
-  val MEDIA_RESPONSE_AUDIO: MEDIA_RESPONSE_AUDIO with java.lang.String = js.native
-  val SCREEN_OUTPUT: SCREEN_OUTPUT with java.lang.String = js.native
-  val WEB_BROWSER: WEB_BROWSER with java.lang.String = js.native
+  /* 0 */ val AUDIO_OUTPUT: AUDIO_OUTPUT with scala.Double = js.native
+  /* 2 */ val MEDIA_RESPONSE_AUDIO: MEDIA_RESPONSE_AUDIO with scala.Double = js.native
+  /* 1 */ val SCREEN_OUTPUT: SCREEN_OUTPUT with scala.Double = js.native
+  /* 3 */ val WEB_BROWSER: WEB_BROWSER with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities with scala.Double
   ] = js.native
 }
 

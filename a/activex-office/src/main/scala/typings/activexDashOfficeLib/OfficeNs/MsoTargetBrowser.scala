@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait MsoTargetBrowser extends js.Object
 
+object MsoTargetBrowser {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoTargetBrowserIE4: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoTargetBrowserIE5: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoTargetBrowserIE6: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoTargetBrowserV3: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoTargetBrowserV4: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

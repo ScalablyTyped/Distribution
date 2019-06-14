@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
   var multipleOf: js.UndefOr[scala.Double] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String]
+  var `type`: js.UndefOr[ParameterType | java.lang.String]
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -37,7 +37,7 @@ object HeaderParameter {
   def apply(
     in: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.header,
     name: java.lang.String,
-    `type`: java.lang.String,
+    `type`: ParameterType,
     default: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
     description: java.lang.String = null,
     enum: js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object] = null,

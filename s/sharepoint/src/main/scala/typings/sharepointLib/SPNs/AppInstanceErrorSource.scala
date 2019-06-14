@@ -43,15 +43,15 @@ object AppInstanceErrorSource extends js.Object {
   sealed trait remoteWebSite
     extends sharepointLib.SPNs.AppInstanceErrorSource
   
-  val appWeb: appWeb with java.lang.String = js.native
-  val common: common with java.lang.String = js.native
-  val database: database with java.lang.String = js.native
-  val eventCallouts: eventCallouts with java.lang.String = js.native
-  val finalization: finalization with java.lang.String = js.native
-  val officeExtension: officeExtension with java.lang.String = js.native
-  val parentWeb: parentWeb with java.lang.String = js.native
-  val remoteWebSite: remoteWebSite with java.lang.String = js.native
+  /* 1 */ val appWeb: appWeb with scala.Double = js.native
+  /* 0 */ val common: common with scala.Double = js.native
+  /* 4 */ val database: database with scala.Double = js.native
+  /* 6 */ val eventCallouts: eventCallouts with scala.Double = js.native
+  /* 7 */ val finalization: finalization with scala.Double = js.native
+  /* 5 */ val officeExtension: officeExtension with scala.Double = js.native
+  /* 2 */ val parentWeb: parentWeb with scala.Double = js.native
+  /* 3 */ val remoteWebSite: remoteWebSite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.AppInstanceErrorSource with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.AppInstanceErrorSource with scala.Double] = js.native
 }
 

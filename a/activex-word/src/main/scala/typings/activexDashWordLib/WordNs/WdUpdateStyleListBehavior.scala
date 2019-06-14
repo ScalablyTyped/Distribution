@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdUpdateStyleListBehavior extends js.Object
 
+object WdUpdateStyleListBehavior {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdListBehaviorAddBulletsNumbering: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdListBehaviorKeepPreviousPattern: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

@@ -82,23 +82,23 @@ object AppInstallState extends js.Object {
   sealed trait starting
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AppInstallState
   
-  val acquiringLicense: acquiringLicense with java.lang.String = js.native
-  val canceled: canceled with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val downloading: downloading with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val installing: installing with java.lang.String = js.native
-  val paused: paused with java.lang.String = js.native
-  val pausedLowBattery: pausedLowBattery with java.lang.String = js.native
-  val pausedWiFiRecommended: pausedWiFiRecommended with java.lang.String = js.native
-  val pausedWiFiRequired: pausedWiFiRequired with java.lang.String = js.native
-  val pending: pending with java.lang.String = js.native
-  val readyToDownload: readyToDownload with java.lang.String = js.native
-  val restoringData: restoringData with java.lang.String = js.native
-  val starting: starting with java.lang.String = js.native
+  /* 2 */ val acquiringLicense: acquiringLicense with scala.Double = js.native
+  /* 7 */ val canceled: canceled with scala.Double = js.native
+  /* 6 */ val completed: completed with scala.Double = js.native
+  /* 3 */ val downloading: downloading with scala.Double = js.native
+  /* 9 */ val error: error with scala.Double = js.native
+  /* 5 */ val installing: installing with scala.Double = js.native
+  /* 8 */ val paused: paused with scala.Double = js.native
+  /* 10 */ val pausedLowBattery: pausedLowBattery with scala.Double = js.native
+  /* 11 */ val pausedWiFiRecommended: pausedWiFiRecommended with scala.Double = js.native
+  /* 12 */ val pausedWiFiRequired: pausedWiFiRequired with scala.Double = js.native
+  /* 0 */ val pending: pending with scala.Double = js.native
+  /* 13 */ val readyToDownload: readyToDownload with scala.Double = js.native
+  /* 4 */ val restoringData: restoringData with scala.Double = js.native
+  /* 1 */ val starting: starting with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AppInstallState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.InstallControlNs.AppInstallState with scala.Double
   ] = js.native
 }
 

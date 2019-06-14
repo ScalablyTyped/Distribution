@@ -53,7 +53,7 @@ trait ClusterInstanceState extends js.Object {
     * see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
     * in the Amazon RDS User Guide.
     */
-  val engine: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val engine: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.rdsEngineTypeMod.EngineType]] = js.undefined
   /**
     * The database engine version.
     */
@@ -144,7 +144,7 @@ object ClusterInstanceState {
     dbSubnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     dbiResourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    engine: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.rdsEngineTypeMod.EngineType] = null,
     engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     identifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     identifierPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

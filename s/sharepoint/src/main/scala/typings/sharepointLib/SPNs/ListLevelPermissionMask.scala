@@ -65,18 +65,18 @@ object ListLevelPermissionMask extends js.Object {
   sealed trait viewVersions
     extends sharepointLib.SPNs.ListLevelPermissionMask
   
-  val approveItems: approveItems with java.lang.String = js.native
-  val breakCheckout: breakCheckout with java.lang.String = js.native
-  val deleteListItems: deleteListItems with java.lang.String = js.native
-  val deleteVersions: deleteVersions with java.lang.String = js.native
-  val editListItems: editListItems with java.lang.String = js.native
-  val insertListItems: insertListItems with java.lang.String = js.native
-  val manageLists: manageLists with java.lang.String = js.native
-  val managePersonalViews: managePersonalViews with java.lang.String = js.native
-  val openItems: openItems with java.lang.String = js.native
-  val viewListItems: viewListItems with java.lang.String = js.native
-  val viewVersions: viewVersions with java.lang.String = js.native
+  /* 4 */ val approveItems: approveItems with scala.Double = js.native
+  /* 8 */ val breakCheckout: breakCheckout with scala.Double = js.native
+  /* 3 */ val deleteListItems: deleteListItems with scala.Double = js.native
+  /* 7 */ val deleteVersions: deleteVersions with scala.Double = js.native
+  /* 2 */ val editListItems: editListItems with scala.Double = js.native
+  /* 1 */ val insertListItems: insertListItems with scala.Double = js.native
+  /* 10 */ val manageLists: manageLists with scala.Double = js.native
+  /* 9 */ val managePersonalViews: managePersonalViews with scala.Double = js.native
+  /* 5 */ val openItems: openItems with scala.Double = js.native
+  /* 0 */ val viewListItems: viewListItems with scala.Double = js.native
+  /* 6 */ val viewVersions: viewVersions with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ListLevelPermissionMask with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ListLevelPermissionMask with scala.Double] = js.native
 }
 

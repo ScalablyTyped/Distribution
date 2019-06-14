@@ -27,12 +27,12 @@ object PhotoImportContentTypeFilter extends js.Object {
   sealed trait onlyVideos
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportContentTypeFilter
   
-  val imagesAndVideos: imagesAndVideos with java.lang.String = js.native
-  val onlyImages: onlyImages with java.lang.String = js.native
-  val onlyVideos: onlyVideos with java.lang.String = js.native
+  /* 2 */ val imagesAndVideos: imagesAndVideos with scala.Double = js.native
+  /* 0 */ val onlyImages: onlyImages with scala.Double = js.native
+  /* 1 */ val onlyVideos: onlyVideos with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportContentTypeFilter with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportContentTypeFilter with scala.Double
   ] = js.native
 }
 

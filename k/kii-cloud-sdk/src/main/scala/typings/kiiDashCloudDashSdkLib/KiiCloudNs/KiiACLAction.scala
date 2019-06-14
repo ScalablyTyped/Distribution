@@ -43,15 +43,15 @@ object KiiACLAction extends js.Object {
   sealed trait KiiACLSubscribeToTopic
     extends kiiDashCloudDashSdkLib.KiiCloudNs.KiiACLAction
   
-  val KiiACLBucketActionCreateObjects: KiiACLBucketActionCreateObjects with java.lang.String = js.native
-  val KiiACLBucketActionDropBucket: KiiACLBucketActionDropBucket with java.lang.String = js.native
-  val KiiACLBucketActionQueryObjects: KiiACLBucketActionQueryObjects with java.lang.String = js.native
-  val KiiACLBucketActionReadObjects: KiiACLBucketActionReadObjects with java.lang.String = js.native
-  val KiiACLObjectActionRead: KiiACLObjectActionRead with java.lang.String = js.native
-  val KiiACLObjectActionWrite: KiiACLObjectActionWrite with java.lang.String = js.native
-  val KiiACLSendMessageToTopic: KiiACLSendMessageToTopic with java.lang.String = js.native
-  val KiiACLSubscribeToTopic: KiiACLSubscribeToTopic with java.lang.String = js.native
+  /* 0 */ val KiiACLBucketActionCreateObjects: KiiACLBucketActionCreateObjects with scala.Double = js.native
+  /* 2 */ val KiiACLBucketActionDropBucket: KiiACLBucketActionDropBucket with scala.Double = js.native
+  /* 1 */ val KiiACLBucketActionQueryObjects: KiiACLBucketActionQueryObjects with scala.Double = js.native
+  /* 5 */ val KiiACLBucketActionReadObjects: KiiACLBucketActionReadObjects with scala.Double = js.native
+  /* 3 */ val KiiACLObjectActionRead: KiiACLObjectActionRead with scala.Double = js.native
+  /* 4 */ val KiiACLObjectActionWrite: KiiACLObjectActionWrite with scala.Double = js.native
+  /* 7 */ val KiiACLSendMessageToTopic: KiiACLSendMessageToTopic with scala.Double = js.native
+  /* 6 */ val KiiACLSubscribeToTopic: KiiACLSubscribeToTopic with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACLAction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACLAction with scala.Double] = js.native
 }
 

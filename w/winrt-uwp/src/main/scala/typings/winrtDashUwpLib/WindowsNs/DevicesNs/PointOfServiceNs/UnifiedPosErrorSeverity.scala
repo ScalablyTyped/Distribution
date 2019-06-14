@@ -42,15 +42,15 @@ object UnifiedPosErrorSeverity extends js.Object {
   sealed trait warning
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosErrorSeverity
   
-  val assistanceRequired: assistanceRequired with java.lang.String = js.native
-  val fatal: fatal with java.lang.String = js.native
-  val recoverable: recoverable with java.lang.String = js.native
-  val unknownErrorSeverity: unknownErrorSeverity with java.lang.String = js.native
-  val unrecoverable: unrecoverable with java.lang.String = js.native
-  val warning: warning with java.lang.String = js.native
+  /* 4 */ val assistanceRequired: assistanceRequired with scala.Double = js.native
+  /* 5 */ val fatal: fatal with scala.Double = js.native
+  /* 2 */ val recoverable: recoverable with scala.Double = js.native
+  /* 0 */ val unknownErrorSeverity: unknownErrorSeverity with scala.Double = js.native
+  /* 3 */ val unrecoverable: unrecoverable with scala.Double = js.native
+  /* 1 */ val warning: warning with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosErrorSeverity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosErrorSeverity with scala.Double
   ] = js.native
 }
 

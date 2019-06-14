@@ -21,9 +21,9 @@ object FormPosition extends js.Object {
   sealed trait TopRight
     extends ejDotWebDotAllLib.ejNs.GridNs.FormPosition
   
-  val BottomLeft: BottomLeft with java.lang.String = js.native
-  val TopRight: TopRight with java.lang.String = js.native
+  /* 0 */ val BottomLeft: BottomLeft with scala.Double = js.native
+  /* 1 */ val TopRight: TopRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.FormPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.FormPosition with scala.Double] = js.native
 }
 

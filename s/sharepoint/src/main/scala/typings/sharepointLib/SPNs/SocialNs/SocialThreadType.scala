@@ -31,12 +31,12 @@ object SocialThreadType extends js.Object {
   sealed trait tagReference
     extends sharepointLib.SPNs.SocialNs.SocialThreadType
   
-  val likeReference: likeReference with java.lang.String = js.native
-  val mentionReference: mentionReference with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val replyReference: replyReference with java.lang.String = js.native
-  val tagReference: tagReference with java.lang.String = js.native
+  /* 1 */ val likeReference: likeReference with scala.Double = js.native
+  /* 3 */ val mentionReference: mentionReference with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 2 */ val replyReference: replyReference with scala.Double = js.native
+  /* 4 */ val tagReference: tagReference with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialThreadType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialThreadType with scala.Double] = js.native
 }
 

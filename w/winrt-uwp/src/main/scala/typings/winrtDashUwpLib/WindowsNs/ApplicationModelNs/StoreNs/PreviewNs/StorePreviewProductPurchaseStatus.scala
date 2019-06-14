@@ -32,13 +32,13 @@ object StorePreviewProductPurchaseStatus extends js.Object {
   sealed trait succeeded
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.StorePreviewProductPurchaseStatus
   
-  val alreadyPurchased: alreadyPurchased with java.lang.String = js.native
-  val notFulfilled: notFulfilled with java.lang.String = js.native
-  val notPurchased: notPurchased with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
+  /* 1 */ val alreadyPurchased: alreadyPurchased with scala.Double = js.native
+  /* 2 */ val notFulfilled: notFulfilled with scala.Double = js.native
+  /* 3 */ val notPurchased: notPurchased with scala.Double = js.native
+  /* 0 */ val succeeded: succeeded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.StorePreviewProductPurchaseStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.StorePreviewProductPurchaseStatus with scala.Double
   ] = js.native
 }
 

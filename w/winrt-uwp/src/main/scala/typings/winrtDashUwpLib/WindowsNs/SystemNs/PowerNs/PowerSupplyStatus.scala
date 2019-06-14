@@ -27,12 +27,10 @@ object PowerSupplyStatus extends js.Object {
   sealed trait notPresent
     extends winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.PowerSupplyStatus
   
-  val adequate: adequate with java.lang.String = js.native
-  val inadequate: inadequate with java.lang.String = js.native
-  val notPresent: notPresent with java.lang.String = js.native
+  /* 2 */ val adequate: adequate with scala.Double = js.native
+  /* 1 */ val inadequate: inadequate with scala.Double = js.native
+  /* 0 */ val notPresent: notPresent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.PowerSupplyStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.PowerSupplyStatus with scala.Double] = js.native
 }
 

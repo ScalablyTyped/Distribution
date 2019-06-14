@@ -26,10 +26,10 @@ object ResizeMode extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.GridNs.ResizeMode
   
-  val Control: Control with java.lang.String = js.native
-  val NextColumn: NextColumn with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 2 */ val Control: Control with scala.Double = js.native
+  /* 1 */ val NextColumn: NextColumn with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.ResizeMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.ResizeMode with scala.Double] = js.native
 }
 

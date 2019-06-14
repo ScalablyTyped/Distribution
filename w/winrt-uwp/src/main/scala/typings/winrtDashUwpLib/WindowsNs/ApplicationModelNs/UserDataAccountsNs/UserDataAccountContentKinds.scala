@@ -27,12 +27,12 @@ object UserDataAccountContentKinds extends js.Object {
   sealed trait email
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.UserDataAccountContentKinds
   
-  val appointment: appointment with java.lang.String = js.native
-  val contact: contact with java.lang.String = js.native
-  val email: email with java.lang.String = js.native
+  /* 2 */ val appointment: appointment with scala.Double = js.native
+  /* 1 */ val contact: contact with scala.Double = js.native
+  /* 0 */ val email: email with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.UserDataAccountContentKinds with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.UserDataAccountContentKinds with scala.Double
   ] = js.native
 }
 

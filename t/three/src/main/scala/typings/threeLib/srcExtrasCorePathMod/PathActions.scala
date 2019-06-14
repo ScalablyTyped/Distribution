@@ -43,14 +43,14 @@ object PathActions extends js.Object {
   sealed trait QUADRATIC_CURVE_TO
     extends threeLib.srcExtrasCorePathMod.PathActions
   
-  val ARC: ARC with java.lang.String = js.native
-  val BEZIER_CURVE_TO: BEZIER_CURVE_TO with java.lang.String = js.native
-  val CSPLINE_THRU: CSPLINE_THRU with java.lang.String = js.native
-  val ELLIPSE: ELLIPSE with java.lang.String = js.native
-  val LINE_TO: LINE_TO with java.lang.String = js.native
-  val MOVE_TO: MOVE_TO with java.lang.String = js.native
-  val QUADRATIC_CURVE_TO: QUADRATIC_CURVE_TO with java.lang.String = js.native
+  /* 5 */ val ARC: ARC with scala.Double = js.native
+  /* 3 */ val BEZIER_CURVE_TO: BEZIER_CURVE_TO with scala.Double = js.native
+  /* 4 */ val CSPLINE_THRU: CSPLINE_THRU with scala.Double = js.native
+  /* 6 */ val ELLIPSE: ELLIPSE with scala.Double = js.native
+  /* 1 */ val LINE_TO: LINE_TO with scala.Double = js.native
+  /* 0 */ val MOVE_TO: MOVE_TO with scala.Double = js.native
+  /* 2 */ val QUADRATIC_CURVE_TO: QUADRATIC_CURVE_TO with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcExtrasCorePathMod.PathActions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[threeLib.srcExtrasCorePathMod.PathActions with scala.Double] = js.native
 }
 

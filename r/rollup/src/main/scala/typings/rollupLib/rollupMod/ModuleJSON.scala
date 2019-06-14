@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait ModuleJSON extends TransformModuleJSON {
   var dependencies: js.Array[java.lang.String]
   var id: java.lang.String
-  var transformAssets: js.Array[Asset] | scala.Unit
+  var transformAssets: js.UndefOr[js.Array[Asset]] = js.undefined
+  var transformChunks: js.UndefOr[js.Array[EmittedChunk]] = js.undefined
 }
 
 object ModuleJSON {
@@ -22,14 +23,17 @@ object ModuleJSON {
     originalCode: java.lang.String,
     originalSourcemap: RawSourceMap | scala.Unit,
     sourcemapChain: js.Array[RawSourceMap | rollupLib.Anon_Missing],
-    transformAssets: js.Array[Asset] | scala.Unit,
     moduleSideEffects: js.UndefOr[scala.Boolean] = js.undefined,
     resolvedIds: ResolvedIdMap = null,
+    transformAssets: js.Array[Asset] = null,
+    transformChunks: js.Array[EmittedChunk] = null,
     transformDependencies: js.Array[java.lang.String] = null
   ): ModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, dependencies = dependencies, id = id, originalCode = originalCode, originalSourcemap = originalSourcemap.asInstanceOf[js.Any], sourcemapChain = sourcemapChain, transformAssets = transformAssets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, dependencies = dependencies, id = id, originalCode = originalCode, originalSourcemap = originalSourcemap.asInstanceOf[js.Any], sourcemapChain = sourcemapChain)
     if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
     if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds)
+    if (transformAssets != null) __obj.updateDynamic("transformAssets")(transformAssets)
+    if (transformChunks != null) __obj.updateDynamic("transformChunks")(transformChunks)
     if (transformDependencies != null) __obj.updateDynamic("transformDependencies")(transformDependencies)
     __obj.asInstanceOf[ModuleJSON]
   }

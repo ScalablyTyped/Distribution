@@ -39,14 +39,14 @@ object CrossSlidingState extends js.Object {
   sealed trait started
     extends winrtLib.WindowsNs.UINs.InputNs.CrossSlidingState
   
-  val completed: completed with java.lang.String = js.native
-  val dragging: dragging with java.lang.String = js.native
-  val rearranging: rearranging with java.lang.String = js.native
-  val selectSpeedBumping: selectSpeedBumping with java.lang.String = js.native
-  val selecting: selecting with java.lang.String = js.native
-  val speedBumping: speedBumping with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
+  /* 6 */ val completed: completed with scala.Double = js.native
+  /* 1 */ val dragging: dragging with scala.Double = js.native
+  /* 5 */ val rearranging: rearranging with scala.Double = js.native
+  /* 3 */ val selectSpeedBumping: selectSpeedBumping with scala.Double = js.native
+  /* 2 */ val selecting: selecting with scala.Double = js.native
+  /* 4 */ val speedBumping: speedBumping with scala.Double = js.native
+  /* 0 */ val started: started with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.CrossSlidingState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.CrossSlidingState with scala.Double] = js.native
 }
 

@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait WdTabLeader extends js.Object
 
+object WdTabLeader {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdTabLeaderDashes: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdTabLeaderDots: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdTabLeaderHeavy: activexDashWordLib.activexDashWordLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def wdTabLeaderLines: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdTabLeaderMiddleDot: activexDashWordLib.activexDashWordLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def wdTabLeaderSpaces: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

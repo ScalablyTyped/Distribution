@@ -22,11 +22,11 @@ object CalendarAppointmentVisualization extends js.Object {
   sealed trait Standard
     extends openui5Lib.sapNs.uiNs.unifiedNs.CalendarAppointmentVisualization
   
-  val Filled: Filled with java.lang.String = js.native
-  val Standard: Standard with java.lang.String = js.native
+  /* 0 */ val Filled: Filled with scala.Double = js.native
+  /* 1 */ val Standard: Standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    openui5Lib.sapNs.uiNs.unifiedNs.CalendarAppointmentVisualization with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    openui5Lib.sapNs.uiNs.unifiedNs.CalendarAppointmentVisualization with scala.Double
   ] = js.native
 }
 

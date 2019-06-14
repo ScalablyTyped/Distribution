@@ -42,15 +42,15 @@ object PhoneTriggerType extends js.Object {
   sealed trait newVoicemailMessage
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneTriggerType
   
-  val airplaneModeDisabledForEmergencyCall: airplaneModeDisabledForEmergencyCall with java.lang.String = js.native
-  val callBlocked: callBlocked with java.lang.String = js.native
-  val callHistoryChanged: callHistoryChanged with java.lang.String = js.native
-  val callOriginDataRequest: callOriginDataRequest with java.lang.String = js.native
-  val lineChanged: lineChanged with java.lang.String = js.native
-  val newVoicemailMessage: newVoicemailMessage with java.lang.String = js.native
+  /* 3 */ val airplaneModeDisabledForEmergencyCall: airplaneModeDisabledForEmergencyCall with scala.Double = js.native
+  /* 5 */ val callBlocked: callBlocked with scala.Double = js.native
+  /* 1 */ val callHistoryChanged: callHistoryChanged with scala.Double = js.native
+  /* 4 */ val callOriginDataRequest: callOriginDataRequest with scala.Double = js.native
+  /* 2 */ val lineChanged: lineChanged with scala.Double = js.native
+  /* 0 */ val newVoicemailMessage: newVoicemailMessage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneTriggerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneTriggerType with scala.Double
   ] = js.native
 }
 

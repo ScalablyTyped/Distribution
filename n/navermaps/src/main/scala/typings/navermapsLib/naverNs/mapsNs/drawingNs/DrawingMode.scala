@@ -39,13 +39,13 @@ object DrawingMode extends js.Object {
   sealed trait RECTANGLE
     extends navermapsLib.naverNs.mapsNs.drawingNs.DrawingMode
   
-  val ARROWLINE: ARROWLINE with scala.Double = js.native
-  val ELLIPSE: ELLIPSE with scala.Double = js.native
+  /* 3 */ val ARROWLINE: ARROWLINE with scala.Double = js.native
+  /* 1 */ val ELLIPSE: ELLIPSE with scala.Double = js.native
   /* 0 */ val HAND: HAND with scala.Double = js.native
-  val MARKER: MARKER with scala.Double = js.native
-  val POLYGON: POLYGON with scala.Double = js.native
-  val POLYLINE: POLYLINE with scala.Double = js.native
-  val RECTANGLE: RECTANGLE with scala.Double = js.native
+  /* 5 */ val MARKER: MARKER with scala.Double = js.native
+  /* 4 */ val POLYGON: POLYGON with scala.Double = js.native
+  /* 2 */ val POLYLINE: POLYLINE with scala.Double = js.native
+  /* 0 */ val RECTANGLE: RECTANGLE with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.drawingNs.DrawingMode with scala.Double] = js.native
 }

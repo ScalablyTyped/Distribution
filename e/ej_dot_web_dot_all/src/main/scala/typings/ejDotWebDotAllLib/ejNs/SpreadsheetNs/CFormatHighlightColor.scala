@@ -36,12 +36,12 @@ object CFormatHighlightColor extends js.Object {
   sealed trait YellowFillwithDarkYellowText
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.CFormatHighlightColor
   
-  val GreenFillwithDarkGreenText: GreenFillwithDarkGreenText with java.lang.String = js.native
-  val RedFill: RedFill with java.lang.String = js.native
-  val RedFillwithDarkRedText: RedFillwithDarkRedText with java.lang.String = js.native
-  val RedText: RedText with java.lang.String = js.native
-  val YellowFillwithDarkYellowText: YellowFillwithDarkYellowText with java.lang.String = js.native
+  /* 2 */ val GreenFillwithDarkGreenText: GreenFillwithDarkGreenText with scala.Double = js.native
+  /* 3 */ val RedFill: RedFill with scala.Double = js.native
+  /* 0 */ val RedFillwithDarkRedText: RedFillwithDarkRedText with scala.Double = js.native
+  /* 4 */ val RedText: RedText with scala.Double = js.native
+  /* 1 */ val YellowFillwithDarkYellowText: YellowFillwithDarkYellowText with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.CFormatHighlightColor with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.CFormatHighlightColor with scala.Double] = js.native
 }
 

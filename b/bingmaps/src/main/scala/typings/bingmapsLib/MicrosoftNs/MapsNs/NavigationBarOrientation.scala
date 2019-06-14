@@ -21,9 +21,9 @@ object NavigationBarOrientation extends js.Object {
   sealed trait vertical
     extends bingmapsLib.MicrosoftNs.MapsNs.NavigationBarOrientation
   
-  val horizontal: horizontal with java.lang.String = js.native
-  val vertical: vertical with java.lang.String = js.native
+  /* 0 */ val horizontal: horizontal with scala.Double = js.native
+  /* 1 */ val vertical: vertical with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.NavigationBarOrientation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.NavigationBarOrientation with scala.Double] = js.native
 }
 

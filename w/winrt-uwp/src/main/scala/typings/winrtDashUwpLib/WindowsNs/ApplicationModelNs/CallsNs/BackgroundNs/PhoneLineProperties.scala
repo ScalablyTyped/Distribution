@@ -62,19 +62,19 @@ object PhoneLineProperties extends js.Object {
   sealed trait voicemail
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneLineProperties
   
-  val brandingOptions: brandingOptions with java.lang.String = js.native
-  val canDial: canDial with java.lang.String = js.native
-  val cellularDetails: cellularDetails with java.lang.String = js.native
-  val displayColor: displayColor with java.lang.String = js.native
-  val displayName: displayName with java.lang.String = js.native
-  val networkName: networkName with java.lang.String = js.native
-  val networkState: networkState with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val transport: transport with java.lang.String = js.native
-  val voicemail: voicemail with java.lang.String = js.native
+  /* 1 */ val brandingOptions: brandingOptions with scala.Double = js.native
+  /* 2 */ val canDial: canDial with scala.Double = js.native
+  /* 3 */ val cellularDetails: cellularDetails with scala.Double = js.native
+  /* 4 */ val displayColor: displayColor with scala.Double = js.native
+  /* 5 */ val displayName: displayName with scala.Double = js.native
+  /* 6 */ val networkName: networkName with scala.Double = js.native
+  /* 7 */ val networkState: networkState with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 8 */ val transport: transport with scala.Double = js.native
+  /* 9 */ val voicemail: voicemail with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneLineProperties with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneLineProperties with scala.Double
   ] = js.native
 }
 

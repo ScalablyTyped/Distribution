@@ -26,12 +26,10 @@ object Vertical extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Vertical
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val Center: Center with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 2 */ val Bottom: Bottom with scala.Double = js.native
+  /* 1 */ val Center: Center with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Vertical with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Vertical with scala.Double] = js.native
 }
 

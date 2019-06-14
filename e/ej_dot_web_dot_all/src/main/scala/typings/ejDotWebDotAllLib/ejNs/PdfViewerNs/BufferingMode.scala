@@ -21,9 +21,9 @@ object BufferingMode extends js.Object {
   sealed trait Default
     extends ejDotWebDotAllLib.ejNs.PdfViewerNs.BufferingMode
   
-  val Complete: Complete with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
+  /* 1 */ val Complete: Complete with scala.Double = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.BufferingMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.BufferingMode with scala.Double] = js.native
 }
 

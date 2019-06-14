@@ -24,9 +24,9 @@ object LabelOverlay extends js.Object {
   sealed trait visible
     extends bingmapsLib.MicrosoftNs.MapsNs.LabelOverlay
   
-  val hidden: hidden with java.lang.String = js.native
-  val visible: visible with java.lang.String = js.native
+  /* 0 */ val hidden: hidden with scala.Double = js.native
+  /* 1 */ val visible: visible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.LabelOverlay with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.LabelOverlay with scala.Double] = js.native
 }
 

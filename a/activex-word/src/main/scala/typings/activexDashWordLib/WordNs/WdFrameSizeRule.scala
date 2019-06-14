@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdFrameSizeRule extends js.Object
 
+object WdFrameSizeRule {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdFrameAtLeast: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdFrameAuto: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdFrameExact: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

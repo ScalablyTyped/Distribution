@@ -31,14 +31,12 @@ object PnpObjectType extends js.Object {
   sealed trait unknown
     extends winrtLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObjectType
   
-  val device: device with java.lang.String = js.native
-  val deviceContainer: deviceContainer with java.lang.String = js.native
-  val deviceInterface: deviceInterface with java.lang.String = js.native
-  val deviceInterfaceClass: deviceInterfaceClass with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val device: device with scala.Double = js.native
+  /* 2 */ val deviceContainer: deviceContainer with scala.Double = js.native
+  /* 1 */ val deviceInterface: deviceInterface with scala.Double = js.native
+  /* 4 */ val deviceInterfaceClass: deviceInterfaceClass with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObjectType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObjectType with scala.Double] = js.native
 }
 

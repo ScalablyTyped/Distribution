@@ -42,14 +42,14 @@ object FacetFilterListDataType extends js.Object {
   sealed trait Time
     extends openui5Lib.sapNs.mNs.FacetFilterListDataType
   
-  val Boolean: Boolean with java.lang.String = js.native
-  val Date: Date with java.lang.String = js.native
-  val DateTime: DateTime with java.lang.String = js.native
-  val Float: Float with java.lang.String = js.native
-  val Integer: Integer with java.lang.String = js.native
-  val String: String with java.lang.String = js.native
-  val Time: Time with java.lang.String = js.native
+  /* 0 */ val Boolean: Boolean with scala.Double = js.native
+  /* 1 */ val Date: Date with scala.Double = js.native
+  /* 2 */ val DateTime: DateTime with scala.Double = js.native
+  /* 3 */ val Float: Float with scala.Double = js.native
+  /* 4 */ val Integer: Integer with scala.Double = js.native
+  /* 5 */ val String: String with scala.Double = js.native
+  /* 6 */ val Time: Time with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.FacetFilterListDataType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.FacetFilterListDataType with scala.Double] = js.native
 }
 

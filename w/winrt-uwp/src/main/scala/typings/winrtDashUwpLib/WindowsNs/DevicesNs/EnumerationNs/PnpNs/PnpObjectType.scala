@@ -52,17 +52,17 @@ object PnpObjectType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObjectType
   
-  val associationEndpoint: associationEndpoint with java.lang.String = js.native
-  val associationEndpointContainer: associationEndpointContainer with java.lang.String = js.native
-  val associationEndpointService: associationEndpointService with java.lang.String = js.native
-  val device: device with java.lang.String = js.native
-  val deviceContainer: deviceContainer with java.lang.String = js.native
-  val deviceInterface: deviceInterface with java.lang.String = js.native
-  val deviceInterfaceClass: deviceInterfaceClass with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 5 */ val associationEndpoint: associationEndpoint with scala.Double = js.native
+  /* 6 */ val associationEndpointContainer: associationEndpointContainer with scala.Double = js.native
+  /* 7 */ val associationEndpointService: associationEndpointService with scala.Double = js.native
+  /* 3 */ val device: device with scala.Double = js.native
+  /* 2 */ val deviceContainer: deviceContainer with scala.Double = js.native
+  /* 1 */ val deviceInterface: deviceInterface with scala.Double = js.native
+  /* 4 */ val deviceInterfaceClass: deviceInterfaceClass with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObjectType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObjectType with scala.Double
   ] = js.native
 }
 

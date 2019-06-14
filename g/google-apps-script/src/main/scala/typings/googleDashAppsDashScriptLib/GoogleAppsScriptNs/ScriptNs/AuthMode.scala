@@ -27,13 +27,13 @@ object AuthMode extends js.Object {
   sealed trait NONE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.AuthMode
   
-  val CUSTOM_FUNCTION: CUSTOM_FUNCTION with java.lang.String = js.native
-  val FULL: FULL with java.lang.String = js.native
-  val LIMITED: LIMITED with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
+  /* 1 */ val CUSTOM_FUNCTION: CUSTOM_FUNCTION with scala.Double = js.native
+  /* 3 */ val FULL: FULL with scala.Double = js.native
+  /* 2 */ val LIMITED: LIMITED with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.AuthMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.AuthMode with scala.Double
   ] = js.native
 }
 

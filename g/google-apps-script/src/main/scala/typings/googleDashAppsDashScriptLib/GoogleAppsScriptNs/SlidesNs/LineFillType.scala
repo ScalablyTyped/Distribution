@@ -23,12 +23,12 @@ object LineFillType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineFillType
   
-  val NONE: NONE with java.lang.String = js.native
-  val SOLID: SOLID with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 2 */ val SOLID: SOLID with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineFillType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineFillType with scala.Double
   ] = js.native
 }
 

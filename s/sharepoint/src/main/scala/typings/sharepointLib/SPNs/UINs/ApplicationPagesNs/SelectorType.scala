@@ -31,12 +31,12 @@ object SelectorType extends js.Object {
   sealed trait resource
     extends sharepointLib.SPNs.UINs.ApplicationPagesNs.SelectorType
   
-  val event: event with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val people: people with java.lang.String = js.native
-  val people_And_Resource: people_And_Resource with java.lang.String = js.native
-  val resource: resource with java.lang.String = js.native
+  /* 4 */ val event: event with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val people: people with scala.Double = js.native
+  /* 3 */ val people_And_Resource: people_And_Resource with scala.Double = js.native
+  /* 1 */ val resource: resource with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UINs.ApplicationPagesNs.SelectorType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UINs.ApplicationPagesNs.SelectorType with scala.Double] = js.native
 }
 

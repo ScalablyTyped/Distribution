@@ -21,9 +21,9 @@ object SortOrder extends js.Object {
   sealed trait Descending
     extends ejDotWebDotAllLib.ejNs.AutocompleteNs.SortOrder
   
-  val Ascending: Ascending with java.lang.String = js.native
-  val Descending: Descending with java.lang.String = js.native
+  /* 0 */ val Ascending: Ascending with scala.Double = js.native
+  /* 1 */ val Descending: Descending with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.AutocompleteNs.SortOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.AutocompleteNs.SortOrder with scala.Double] = js.native
 }
 

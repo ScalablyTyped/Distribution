@@ -37,14 +37,14 @@ object LoggingLevel extends js.Object {
   sealed trait warning
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingLevel
   
-  val critical: critical with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val information: information with java.lang.String = js.native
-  val verbose: verbose with java.lang.String = js.native
-  val warning: warning with java.lang.String = js.native
+  /* 4 */ val critical: critical with scala.Double = js.native
+  /* 3 */ val error: error with scala.Double = js.native
+  /* 1 */ val information: information with scala.Double = js.native
+  /* 0 */ val verbose: verbose with scala.Double = js.native
+  /* 2 */ val warning: warning with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingLevel with scala.Double
   ] = js.native
 }
 

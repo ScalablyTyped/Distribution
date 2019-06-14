@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("fabric/fabric-impl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var filterBackend: FilterBackend = js.native
+  var filterBackend: js.UndefOr[FilterBackend] = js.native
   val isLikelyNode: scala.Boolean = js.native
   val isTouchSupported: scala.Boolean = js.native
+  var textureSize: scala.Double = js.native
   val util: IUtil = js.native
   val version: java.lang.String = js.native
   def createCanvasForNode(width: scala.Double, height: scala.Double): Canvas = js.native

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MsoDistributeCmd extends js.Object
 
+object MsoDistributeCmd {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoDistributeHorizontally: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoDistributeVertically: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

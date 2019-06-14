@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlCalculation extends js.Object
 
+object XlCalculation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlCalculationAutomatic: activexDashExcelLib.activexDashExcelLibNumbers.`-4105` = this.cast(-4105)
+  @scala.inline
+  def xlCalculationManual: activexDashExcelLib.activexDashExcelLibNumbers.`-4135` = this.cast(-4135)
+  @scala.inline
+  def xlCalculationSemiautomatic: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

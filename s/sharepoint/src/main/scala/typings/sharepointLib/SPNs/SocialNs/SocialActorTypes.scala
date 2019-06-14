@@ -41,14 +41,14 @@ object SocialActorTypes extends js.Object {
   sealed trait users
     extends sharepointLib.SPNs.SocialNs.SocialActorTypes
   
-  val all: all with java.lang.String = js.native
-  val documents: documents with java.lang.String = js.native
-  val excludeContentWithoutFeeds: excludeContentWithoutFeeds with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val sites: sites with java.lang.String = js.native
-  val tags: tags with java.lang.String = js.native
-  val users: users with java.lang.String = js.native
+  /* 6 */ val all: all with scala.Double = js.native
+  /* 2 */ val documents: documents with scala.Double = js.native
+  /* 5 */ val excludeContentWithoutFeeds: excludeContentWithoutFeeds with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val sites: sites with scala.Double = js.native
+  /* 4 */ val tags: tags with scala.Double = js.native
+  /* 1 */ val users: users with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialActorTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialActorTypes with scala.Double] = js.native
 }
 

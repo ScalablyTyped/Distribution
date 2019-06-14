@@ -21,9 +21,9 @@ object RadioButtonSize extends js.Object {
   sealed trait Small
     extends ejDotWebDotAllLib.ejNs.RadioButtonSize
   
-  val Medium: Medium with java.lang.String = js.native
-  val Small: Small with java.lang.String = js.native
+  /* 1 */ val Medium: Medium with scala.Double = js.native
+  /* 0 */ val Small: Small with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RadioButtonSize with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RadioButtonSize with scala.Double] = js.native
 }
 

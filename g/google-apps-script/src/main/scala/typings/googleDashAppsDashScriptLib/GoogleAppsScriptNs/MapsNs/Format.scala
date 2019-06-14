@@ -35,15 +35,13 @@ object Format extends js.Object {
   sealed trait PNG8
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Format
   
-  val GIF: GIF with java.lang.String = js.native
-  val JPG: JPG with java.lang.String = js.native
-  val JPG_BASELINE: JPG_BASELINE with java.lang.String = js.native
-  val PNG: PNG with java.lang.String = js.native
-  val PNG32: PNG32 with java.lang.String = js.native
-  val PNG8: PNG8 with java.lang.String = js.native
+  /* 3 */ val GIF: GIF with scala.Double = js.native
+  /* 4 */ val JPG: JPG with scala.Double = js.native
+  /* 5 */ val JPG_BASELINE: JPG_BASELINE with scala.Double = js.native
+  /* 0 */ val PNG: PNG with scala.Double = js.native
+  /* 2 */ val PNG32: PNG32 with scala.Double = js.native
+  /* 1 */ val PNG8: PNG8 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Format with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Format with scala.Double] = js.native
 }
 

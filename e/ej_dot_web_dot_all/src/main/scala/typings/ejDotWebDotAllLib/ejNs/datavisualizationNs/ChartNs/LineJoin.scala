@@ -26,12 +26,10 @@ object LineJoin extends js.Object {
   sealed trait Round
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LineJoin
   
-  val Bevel: Bevel with java.lang.String = js.native
-  val Miter: Miter with java.lang.String = js.native
-  val Round: Round with java.lang.String = js.native
+  /* 1 */ val Bevel: Bevel with scala.Double = js.native
+  /* 2 */ val Miter: Miter with scala.Double = js.native
+  /* 0 */ val Round: Round with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LineJoin with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LineJoin with scala.Double] = js.native
 }
 

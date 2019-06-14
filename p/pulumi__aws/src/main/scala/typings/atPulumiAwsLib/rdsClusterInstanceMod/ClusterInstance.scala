@@ -65,7 +65,7 @@ class ClusterInstance protected ()
     * see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
     * in the Amazon RDS User Guide.
     */
-  val engine: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val engine: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.rdsEngineTypeMod.EngineType]] = js.native
   /**
     * The database engine version.
     */

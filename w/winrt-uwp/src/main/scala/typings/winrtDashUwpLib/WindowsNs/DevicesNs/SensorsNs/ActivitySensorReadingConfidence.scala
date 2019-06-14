@@ -22,11 +22,11 @@ object ActivitySensorReadingConfidence extends js.Object {
   sealed trait low
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivitySensorReadingConfidence
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
+  /* 0 */ val high: high with scala.Double = js.native
+  /* 1 */ val low: low with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivitySensorReadingConfidence with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivitySensorReadingConfidence with scala.Double
   ] = js.native
 }
 

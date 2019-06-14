@@ -27,13 +27,13 @@ object PickerValuesLayout extends js.Object {
   sealed trait BELOW_WRAPPING
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PickerValuesLayout
   
-  val ASIDE: ASIDE with java.lang.String = js.native
-  val BELOW: BELOW with java.lang.String = js.native
-  val BELOW_STACKED: BELOW_STACKED with java.lang.String = js.native
-  val BELOW_WRAPPING: BELOW_WRAPPING with java.lang.String = js.native
+  /* 0 */ val ASIDE: ASIDE with scala.Double = js.native
+  /* 1 */ val BELOW: BELOW with scala.Double = js.native
+  /* 3 */ val BELOW_STACKED: BELOW_STACKED with scala.Double = js.native
+  /* 2 */ val BELOW_WRAPPING: BELOW_WRAPPING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PickerValuesLayout with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PickerValuesLayout with scala.Double
   ] = js.native
 }
 

@@ -13,12 +13,12 @@ object servicesNs extends js.Object {
     */
   @js.native
   object NotificationType extends js.Object {
-    val error: umbracoLib.umbracoNs.servicesNs.NotificationType.error with java.lang.String = js.native
-    val info: umbracoLib.umbracoNs.servicesNs.NotificationType.info with java.lang.String = js.native
-    val success: umbracoLib.umbracoNs.servicesNs.NotificationType.success with java.lang.String = js.native
-    val warning: umbracoLib.umbracoNs.servicesNs.NotificationType.warning with java.lang.String = js.native
+    /* 1 */ val error: umbracoLib.umbracoNs.servicesNs.NotificationType.error with scala.Double = js.native
+    /* 3 */ val info: umbracoLib.umbracoNs.servicesNs.NotificationType.info with scala.Double = js.native
+    /* 0 */ val success: umbracoLib.umbracoNs.servicesNs.NotificationType.success with scala.Double = js.native
+    /* 2 */ val warning: umbracoLib.umbracoNs.servicesNs.NotificationType.warning with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.servicesNs.NotificationType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.servicesNs.NotificationType with scala.Double] = js.native
   }
   
 }

@@ -31,11 +31,11 @@ object Target extends js.Object {
   sealed trait Header
     extends ejDotWebDotAllLib.ejNs.KanbanNs.Target
   
-  val All: All with java.lang.String = js.native
-  val Card: Card with java.lang.String = js.native
-  val Content: Content with java.lang.String = js.native
-  val Header: Header with java.lang.String = js.native
+  /* 3 */ val All: All with scala.Double = js.native
+  /* 2 */ val Card: Card with scala.Double = js.native
+  /* 1 */ val Content: Content with scala.Double = js.native
+  /* 0 */ val Header: Header with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.KanbanNs.Target with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.KanbanNs.Target with scala.Double] = js.native
 }
 

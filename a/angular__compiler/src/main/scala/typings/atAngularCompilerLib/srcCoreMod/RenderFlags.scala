@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait RenderFlags extends js.Object
 
+object RenderFlags {
+  @scala.inline
+  def Create: atAngularCompilerLib.atAngularCompilerLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Update: atAngularCompilerLib.atAngularCompilerLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

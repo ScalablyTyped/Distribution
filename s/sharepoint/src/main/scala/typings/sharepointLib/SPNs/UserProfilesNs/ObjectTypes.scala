@@ -72,22 +72,22 @@ object ObjectTypes extends js.Object {
   sealed trait webLog
     extends sharepointLib.SPNs.UserProfilesNs.ObjectTypes
   
-  val all: all with java.lang.String = js.native
-  val anniversary: anniversary with java.lang.String = js.native
-  val colleague: colleague with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val dlMembership: dlMembership with java.lang.String = js.native
-  val multiValueProperty: multiValueProperty with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val organizationMembership: organizationMembership with java.lang.String = js.native
-  val organizationProfile: organizationProfile with java.lang.String = js.native
-  val personalizationSite: personalizationSite with java.lang.String = js.native
-  val quickLink: quickLink with java.lang.String = js.native
-  val singleValueProperty: singleValueProperty with java.lang.String = js.native
-  val siteMembership: siteMembership with java.lang.String = js.native
-  val userProfile: userProfile with java.lang.String = js.native
-  val webLog: webLog with java.lang.String = js.native
+  /* 14 */ val all: all with scala.Double = js.native
+  /* 3 */ val anniversary: anniversary with scala.Double = js.native
+  /* 7 */ val colleague: colleague with scala.Double = js.native
+  /* 11 */ val custom: custom with scala.Double = js.native
+  /* 4 */ val dlMembership: dlMembership with scala.Double = js.native
+  /* 2 */ val multiValueProperty: multiValueProperty with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 13 */ val organizationMembership: organizationMembership with scala.Double = js.native
+  /* 12 */ val organizationProfile: organizationProfile with scala.Double = js.native
+  /* 8 */ val personalizationSite: personalizationSite with scala.Double = js.native
+  /* 6 */ val quickLink: quickLink with scala.Double = js.native
+  /* 1 */ val singleValueProperty: singleValueProperty with scala.Double = js.native
+  /* 5 */ val siteMembership: siteMembership with scala.Double = js.native
+  /* 9 */ val userProfile: userProfile with scala.Double = js.native
+  /* 10 */ val webLog: webLog with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.ObjectTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.ObjectTypes with scala.Double] = js.native
 }
 

@@ -111,32 +111,32 @@ object MarkerType extends js.Object {
   sealed trait whiteCircleWingding
     extends winrtLib.WindowsNs.UINs.TextNs.MarkerType
   
-  val arabic: arabic with java.lang.String = js.native
-  val arabicAbjad: arabicAbjad with java.lang.String = js.native
-  val arabicDictionary: arabicDictionary with java.lang.String = js.native
-  val arabicWide: arabicWide with java.lang.String = js.native
-  val blackCircleWingding: blackCircleWingding with java.lang.String = js.native
-  val bullet: bullet with java.lang.String = js.native
-  val circledNumber: circledNumber with java.lang.String = js.native
-  val devanagariConsonant: devanagariConsonant with java.lang.String = js.native
-  val devanagariNumeric: devanagariNumeric with java.lang.String = js.native
-  val devanagariVowel: devanagariVowel with java.lang.String = js.native
-  val hebrew: hebrew with java.lang.String = js.native
-  val japanKorea: japanKorea with java.lang.String = js.native
-  val japanSimplifiedChinese: japanSimplifiedChinese with java.lang.String = js.native
-  val lowercaseEnglishLetter: lowercaseEnglishLetter with java.lang.String = js.native
-  val lowercaseRoman: lowercaseRoman with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val simplifiedChinese: simplifiedChinese with java.lang.String = js.native
-  val thaiAlphabetic: thaiAlphabetic with java.lang.String = js.native
-  val thaiNumeric: thaiNumeric with java.lang.String = js.native
-  val traditionalChinese: traditionalChinese with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
-  val unicodeSequence: unicodeSequence with java.lang.String = js.native
-  val uppercaseEnglishLetter: uppercaseEnglishLetter with java.lang.String = js.native
-  val uppercaseRoman: uppercaseRoman with java.lang.String = js.native
-  val whiteCircleWingding: whiteCircleWingding with java.lang.String = js.native
+  /* 3 */ val arabic: arabic with scala.Double = js.native
+  /* 18 */ val arabicAbjad: arabicAbjad with scala.Double = js.native
+  /* 17 */ val arabicDictionary: arabicDictionary with scala.Double = js.native
+  /* 12 */ val arabicWide: arabicWide with scala.Double = js.native
+  /* 10 */ val blackCircleWingding: blackCircleWingding with scala.Double = js.native
+  /* 2 */ val bullet: bullet with scala.Double = js.native
+  /* 9 */ val circledNumber: circledNumber with scala.Double = js.native
+  /* 23 */ val devanagariConsonant: devanagariConsonant with scala.Double = js.native
+  /* 24 */ val devanagariNumeric: devanagariNumeric with scala.Double = js.native
+  /* 22 */ val devanagariVowel: devanagariVowel with scala.Double = js.native
+  /* 19 */ val hebrew: hebrew with scala.Double = js.native
+  /* 16 */ val japanKorea: japanKorea with scala.Double = js.native
+  /* 15 */ val japanSimplifiedChinese: japanSimplifiedChinese with scala.Double = js.native
+  /* 4 */ val lowercaseEnglishLetter: lowercaseEnglishLetter with scala.Double = js.native
+  /* 6 */ val lowercaseRoman: lowercaseRoman with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 13 */ val simplifiedChinese: simplifiedChinese with scala.Double = js.native
+  /* 20 */ val thaiAlphabetic: thaiAlphabetic with scala.Double = js.native
+  /* 21 */ val thaiNumeric: thaiNumeric with scala.Double = js.native
+  /* 14 */ val traditionalChinese: traditionalChinese with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
+  /* 8 */ val unicodeSequence: unicodeSequence with scala.Double = js.native
+  /* 5 */ val uppercaseEnglishLetter: uppercaseEnglishLetter with scala.Double = js.native
+  /* 7 */ val uppercaseRoman: uppercaseRoman with scala.Double = js.native
+  /* 11 */ val whiteCircleWingding: whiteCircleWingding with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.MarkerType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.MarkerType with scala.Double] = js.native
 }
 

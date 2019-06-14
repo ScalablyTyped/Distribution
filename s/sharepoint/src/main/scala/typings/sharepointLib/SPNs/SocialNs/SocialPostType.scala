@@ -19,9 +19,9 @@ object SocialPostType extends js.Object {
   sealed trait root
     extends sharepointLib.SPNs.SocialNs.SocialPostType
   
-  val reply: reply with java.lang.String = js.native
-  val root: root with java.lang.String = js.native
+  /* 1 */ val reply: reply with scala.Double = js.native
+  /* 0 */ val root: root with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialPostType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialPostType with scala.Double] = js.native
 }
 

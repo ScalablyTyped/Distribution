@@ -22,11 +22,11 @@ object ContactAnnotationStoreAccessType extends js.Object {
   sealed trait appAnnotationsReadWrite
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactAnnotationStoreAccessType
   
-  val allAnnotationsReadWrite: allAnnotationsReadWrite with java.lang.String = js.native
-  val appAnnotationsReadWrite: appAnnotationsReadWrite with java.lang.String = js.native
+  /* 1 */ val allAnnotationsReadWrite: allAnnotationsReadWrite with scala.Double = js.native
+  /* 0 */ val appAnnotationsReadWrite: appAnnotationsReadWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactAnnotationStoreAccessType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactAnnotationStoreAccessType with scala.Double
   ] = js.native
 }
 

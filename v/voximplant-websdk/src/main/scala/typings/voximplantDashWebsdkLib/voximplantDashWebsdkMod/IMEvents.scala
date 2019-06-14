@@ -150,41 +150,41 @@ object IMEvents extends js.Object {
   sealed trait UCDisconnected
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.IMEvents
   
-  val ChatHistoryReceived: ChatHistoryReceived with java.lang.String = js.native
-  val ChatRoomBanList: ChatRoomBanList with java.lang.String = js.native
-  val ChatRoomCreated: ChatRoomCreated with java.lang.String = js.native
-  val ChatRoomError: ChatRoomError with java.lang.String = js.native
-  val ChatRoomHistoryReceived: ChatRoomHistoryReceived with java.lang.String = js.native
-  val ChatRoomInfo: ChatRoomInfo with java.lang.String = js.native
-  val ChatRoomInvitation: ChatRoomInvitation with java.lang.String = js.native
-  val ChatRoomInviteDeclined: ChatRoomInviteDeclined with java.lang.String = js.native
-  val ChatRoomMessageModified: ChatRoomMessageModified with java.lang.String = js.native
-  val ChatRoomMessageNotModified: ChatRoomMessageNotModified with java.lang.String = js.native
-  val ChatRoomMessageReceived: ChatRoomMessageReceived with java.lang.String = js.native
-  val ChatRoomMessageRemoved: ChatRoomMessageRemoved with java.lang.String = js.native
-  val ChatRoomNewParticipant: ChatRoomNewParticipant with java.lang.String = js.native
-  val ChatRoomOperation: ChatRoomOperation with java.lang.String = js.native
-  val ChatRoomParticipantExit: ChatRoomParticipantExit with java.lang.String = js.native
-  val ChatRoomParticipants: ChatRoomParticipants with java.lang.String = js.native
-  val ChatRoomPresenceUpdate: ChatRoomPresenceUpdate with java.lang.String = js.native
-  val ChatRoomStateUpdate: ChatRoomStateUpdate with java.lang.String = js.native
-  val ChatRoomSubjectChange: ChatRoomSubjectChange with java.lang.String = js.native
-  val ChatRoomsDataReceived: ChatRoomsDataReceived with java.lang.String = js.native
-  val ChatStateUpdate: ChatStateUpdate with java.lang.String = js.native
-  val MessageModified: MessageModified with java.lang.String = js.native
-  val MessageNotModified: MessageNotModified with java.lang.String = js.native
-  val MessageReceived: MessageReceived with java.lang.String = js.native
-  val MessageRemoved: MessageRemoved with java.lang.String = js.native
-  val MessageStatus: MessageStatus with java.lang.String = js.native
-  val PresenceUpdate: PresenceUpdate with java.lang.String = js.native
-  val RosterItemChange: RosterItemChange with java.lang.String = js.native
-  val RosterPresenceUpdate: RosterPresenceUpdate with java.lang.String = js.native
-  val RosterReceived: RosterReceived with java.lang.String = js.native
-  val SubscriptionRequest: SubscriptionRequest with java.lang.String = js.native
-  val SystemError: SystemError with java.lang.String = js.native
-  val UCConnected: UCConnected with java.lang.String = js.native
-  val UCDisconnected: UCDisconnected with java.lang.String = js.native
+  /* 0 */ val ChatHistoryReceived: ChatHistoryReceived with scala.Double = js.native
+  /* 1 */ val ChatRoomBanList: ChatRoomBanList with scala.Double = js.native
+  /* 2 */ val ChatRoomCreated: ChatRoomCreated with scala.Double = js.native
+  /* 3 */ val ChatRoomError: ChatRoomError with scala.Double = js.native
+  /* 4 */ val ChatRoomHistoryReceived: ChatRoomHistoryReceived with scala.Double = js.native
+  /* 5 */ val ChatRoomInfo: ChatRoomInfo with scala.Double = js.native
+  /* 6 */ val ChatRoomInvitation: ChatRoomInvitation with scala.Double = js.native
+  /* 7 */ val ChatRoomInviteDeclined: ChatRoomInviteDeclined with scala.Double = js.native
+  /* 8 */ val ChatRoomMessageModified: ChatRoomMessageModified with scala.Double = js.native
+  /* 9 */ val ChatRoomMessageNotModified: ChatRoomMessageNotModified with scala.Double = js.native
+  /* 10 */ val ChatRoomMessageReceived: ChatRoomMessageReceived with scala.Double = js.native
+  /* 11 */ val ChatRoomMessageRemoved: ChatRoomMessageRemoved with scala.Double = js.native
+  /* 12 */ val ChatRoomNewParticipant: ChatRoomNewParticipant with scala.Double = js.native
+  /* 13 */ val ChatRoomOperation: ChatRoomOperation with scala.Double = js.native
+  /* 14 */ val ChatRoomParticipantExit: ChatRoomParticipantExit with scala.Double = js.native
+  /* 15 */ val ChatRoomParticipants: ChatRoomParticipants with scala.Double = js.native
+  /* 16 */ val ChatRoomPresenceUpdate: ChatRoomPresenceUpdate with scala.Double = js.native
+  /* 17 */ val ChatRoomStateUpdate: ChatRoomStateUpdate with scala.Double = js.native
+  /* 18 */ val ChatRoomSubjectChange: ChatRoomSubjectChange with scala.Double = js.native
+  /* 19 */ val ChatRoomsDataReceived: ChatRoomsDataReceived with scala.Double = js.native
+  /* 20 */ val ChatStateUpdate: ChatStateUpdate with scala.Double = js.native
+  /* 21 */ val MessageModified: MessageModified with scala.Double = js.native
+  /* 22 */ val MessageNotModified: MessageNotModified with scala.Double = js.native
+  /* 23 */ val MessageReceived: MessageReceived with scala.Double = js.native
+  /* 24 */ val MessageRemoved: MessageRemoved with scala.Double = js.native
+  /* 25 */ val MessageStatus: MessageStatus with scala.Double = js.native
+  /* 26 */ val PresenceUpdate: PresenceUpdate with scala.Double = js.native
+  /* 27 */ val RosterItemChange: RosterItemChange with scala.Double = js.native
+  /* 28 */ val RosterPresenceUpdate: RosterPresenceUpdate with scala.Double = js.native
+  /* 29 */ val RosterReceived: RosterReceived with scala.Double = js.native
+  /* 30 */ val SubscriptionRequest: SubscriptionRequest with scala.Double = js.native
+  /* 31 */ val SystemError: SystemError with scala.Double = js.native
+  /* 32 */ val UCConnected: UCConnected with scala.Double = js.native
+  /* 33 */ val UCDisconnected: UCDisconnected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.IMEvents with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.IMEvents with scala.Double] = js.native
 }
 

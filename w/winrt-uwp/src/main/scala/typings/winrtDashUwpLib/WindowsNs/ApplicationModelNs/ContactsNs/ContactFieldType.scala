@@ -72,21 +72,21 @@ object ContactFieldType extends js.Object {
   sealed trait website
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType
   
-  val address: address with java.lang.String = js.native
-  val connectedServiceAccount: connectedServiceAccount with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val email: email with java.lang.String = js.native
-  val importantDate: importantDate with java.lang.String = js.native
-  val instantMessage: instantMessage with java.lang.String = js.native
-  val jobInfo: jobInfo with java.lang.String = js.native
-  val location: location with java.lang.String = js.native
-  val notes: notes with java.lang.String = js.native
-  val phoneNumber: phoneNumber with java.lang.String = js.native
-  val significantOther: significantOther with java.lang.String = js.native
-  val website: website with java.lang.String = js.native
+  /* 7 */ val address: address with scala.Double = js.native
+  /* 5 */ val connectedServiceAccount: connectedServiceAccount with scala.Double = js.native
+  /* 4 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val email: email with scala.Double = js.native
+  /* 6 */ val importantDate: importantDate with scala.Double = js.native
+  /* 3 */ val instantMessage: instantMessage with scala.Double = js.native
+  /* 11 */ val jobInfo: jobInfo with scala.Double = js.native
+  /* 2 */ val location: location with scala.Double = js.native
+  /* 9 */ val notes: notes with scala.Double = js.native
+  /* 1 */ val phoneNumber: phoneNumber with scala.Double = js.native
+  /* 8 */ val significantOther: significantOther with scala.Double = js.native
+  /* 10 */ val website: website with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType with scala.Double
   ] = js.native
 }
 

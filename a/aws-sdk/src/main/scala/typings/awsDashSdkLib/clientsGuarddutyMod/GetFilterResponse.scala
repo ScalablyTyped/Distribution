@@ -26,6 +26,10 @@ trait GetFilterResponse extends js.Object {
     * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
     */
   var Rank: js.UndefOr[FilterRank] = js.undefined
+  /**
+    * The tags of the filter resource.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 
 object GetFilterResponse {
@@ -35,11 +39,13 @@ object GetFilterResponse {
     FindingCriteria: FindingCriteria,
     Name: FilterName,
     Description: FilterDescription = null,
-    Rank: js.UndefOr[FilterRank] = js.undefined
+    Rank: js.UndefOr[FilterRank] = js.undefined,
+    Tags: TagMap = null
   ): GetFilterResponse = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], FindingCriteria = FindingCriteria, Name = Name)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[GetFilterResponse]
   }
 }

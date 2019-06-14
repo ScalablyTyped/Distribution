@@ -39,14 +39,14 @@ object RoleType extends js.Object {
   sealed trait webDesigner
     extends sharepointLib.SPNs.RoleType
   
-  val administrator: administrator with java.lang.String = js.native
-  val contributor: contributor with java.lang.String = js.native
-  val editor: editor with java.lang.String = js.native
-  val guest: guest with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val reader: reader with java.lang.String = js.native
-  val webDesigner: webDesigner with java.lang.String = js.native
+  /* 5 */ val administrator: administrator with scala.Double = js.native
+  /* 3 */ val contributor: contributor with scala.Double = js.native
+  /* 6 */ val editor: editor with scala.Double = js.native
+  /* 1 */ val guest: guest with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val reader: reader with scala.Double = js.native
+  /* 4 */ val webDesigner: webDesigner with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.RoleType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.RoleType with scala.Double] = js.native
 }
 

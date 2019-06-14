@@ -27,13 +27,13 @@ object Direction extends js.Object {
   sealed trait UP
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Direction
   
-  val DOWN: DOWN with java.lang.String = js.native
-  val NEXT: NEXT with java.lang.String = js.native
-  val PREVIOUS: PREVIOUS with java.lang.String = js.native
-  val UP: UP with java.lang.String = js.native
+  /* 1 */ val DOWN: DOWN with scala.Double = js.native
+  /* 3 */ val NEXT: NEXT with scala.Double = js.native
+  /* 2 */ val PREVIOUS: PREVIOUS with scala.Double = js.native
+  /* 0 */ val UP: UP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Direction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Direction with scala.Double
   ] = js.native
 }
 

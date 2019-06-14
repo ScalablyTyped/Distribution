@@ -21,9 +21,9 @@ object InteractionMode extends js.Object {
   sealed trait TextSelection
     extends ejDotWebDotAllLib.ejNs.PdfViewerNs.InteractionMode
   
-  val Pan: Pan with java.lang.String = js.native
-  val TextSelection: TextSelection with java.lang.String = js.native
+  /* 1 */ val Pan: Pan with scala.Double = js.native
+  /* 0 */ val TextSelection: TextSelection with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.InteractionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.InteractionMode with scala.Double] = js.native
 }
 

@@ -59,21 +59,21 @@ object ExtendedField extends js.Object {
   sealed trait WORK
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.ExtendedField
   
-  val BILLING_INFORMATION: BILLING_INFORMATION with java.lang.String = js.native
-  val DIRECTORY_SERVER: DIRECTORY_SERVER with java.lang.String = js.native
-  val GENDER: GENDER with java.lang.String = js.native
-  val HOBBY: HOBBY with java.lang.String = js.native
-  val HOME: HOME with java.lang.String = js.native
-  val LANGUAGE: LANGUAGE with java.lang.String = js.native
-  val MILEAGE: MILEAGE with java.lang.String = js.native
-  val OTHER: OTHER with java.lang.String = js.native
-  val PRIORITY: PRIORITY with java.lang.String = js.native
-  val SENSITIVITY: SENSITIVITY with java.lang.String = js.native
-  val USER: USER with java.lang.String = js.native
-  val WORK: WORK with java.lang.String = js.native
+  /* 4 */ val BILLING_INFORMATION: BILLING_INFORMATION with scala.Double = js.native
+  /* 5 */ val DIRECTORY_SERVER: DIRECTORY_SERVER with scala.Double = js.native
+  /* 3 */ val GENDER: GENDER with scala.Double = js.native
+  /* 0 */ val HOBBY: HOBBY with scala.Double = js.native
+  /* 8 */ val HOME: HOME with scala.Double = js.native
+  /* 2 */ val LANGUAGE: LANGUAGE with scala.Double = js.native
+  /* 1 */ val MILEAGE: MILEAGE with scala.Double = js.native
+  /* 11 */ val OTHER: OTHER with scala.Double = js.native
+  /* 7 */ val PRIORITY: PRIORITY with scala.Double = js.native
+  /* 6 */ val SENSITIVITY: SENSITIVITY with scala.Double = js.native
+  /* 10 */ val USER: USER with scala.Double = js.native
+  /* 9 */ val WORK: WORK with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.ExtendedField with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.ExtendedField with scala.Double
   ] = js.native
 }
 

@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait AcFormSection extends js.Object
 
+object AcFormSection {
+  @scala.inline
+  def acDetail: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acFooter: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acHeader: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acPageFooter: activexDashAccessLib.activexDashAccessLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def acPageHeader: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

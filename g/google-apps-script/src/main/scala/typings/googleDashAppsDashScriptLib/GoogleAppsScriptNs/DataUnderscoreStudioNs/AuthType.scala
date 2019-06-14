@@ -31,14 +31,14 @@ object AuthType extends js.Object {
   sealed trait USER_TOKEN
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AuthType
   
-  val KEY: KEY with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val OAUTH2: OAUTH2 with java.lang.String = js.native
-  val USER_PASS: USER_PASS with java.lang.String = js.native
-  val USER_TOKEN: USER_TOKEN with java.lang.String = js.native
+  /* 3 */ val KEY: KEY with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 1 */ val OAUTH2: OAUTH2 with scala.Double = js.native
+  /* 2 */ val USER_PASS: USER_PASS with scala.Double = js.native
+  /* 4 */ val USER_TOKEN: USER_TOKEN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AuthType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AuthType with scala.Double
   ] = js.native
 }
 

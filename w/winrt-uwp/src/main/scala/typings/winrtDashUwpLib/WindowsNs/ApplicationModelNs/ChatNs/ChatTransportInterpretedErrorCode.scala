@@ -42,15 +42,15 @@ object ChatTransportInterpretedErrorCode extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatTransportInterpretedErrorCode
   
-  val invalidRecipientAddress: invalidRecipientAddress with java.lang.String = js.native
-  val networkConnectivity: networkConnectivity with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val serviceDenied: serviceDenied with java.lang.String = js.native
-  val timeout: timeout with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 2 */ val invalidRecipientAddress: invalidRecipientAddress with scala.Double = js.native
+  /* 3 */ val networkConnectivity: networkConnectivity with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val serviceDenied: serviceDenied with scala.Double = js.native
+  /* 5 */ val timeout: timeout with scala.Double = js.native
+  /* 1 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatTransportInterpretedErrorCode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatTransportInterpretedErrorCode with scala.Double
   ] = js.native
 }
 

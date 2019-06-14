@@ -23,12 +23,12 @@ object AddContactResult extends js.Object {
   sealed trait unavailable
     extends winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ProviderNs.AddContactResult
   
-  val added: added with java.lang.String = js.native
-  val alreadyAdded: alreadyAdded with java.lang.String = js.native
-  val unavailable: unavailable with java.lang.String = js.native
+  /* 0 */ val added: added with scala.Double = js.native
+  /* 1 */ val alreadyAdded: alreadyAdded with scala.Double = js.native
+  /* 2 */ val unavailable: unavailable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ProviderNs.AddContactResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ProviderNs.AddContactResult with scala.Double
   ] = js.native
 }
 

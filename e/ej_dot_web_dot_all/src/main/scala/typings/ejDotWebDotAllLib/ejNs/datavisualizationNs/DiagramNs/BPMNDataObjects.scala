@@ -26,12 +26,12 @@ object BPMNDataObjects extends js.Object {
   sealed trait Output
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNDataObjects
   
-  val Input: Input with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Output: Output with java.lang.String = js.native
+  /* 0 */ val Input: Input with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 1 */ val Output: Output with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNDataObjects with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNDataObjects with scala.Double
   ] = js.native
 }
 

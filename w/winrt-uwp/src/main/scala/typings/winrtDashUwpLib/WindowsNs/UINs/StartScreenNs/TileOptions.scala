@@ -32,11 +32,11 @@ object TileOptions extends js.Object {
   sealed trait showNameOnWideLogo
     extends winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.TileOptions
   
-  val copyOnDeployment: copyOnDeployment with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val showNameOnLogo: showNameOnLogo with java.lang.String = js.native
-  val showNameOnWideLogo: showNameOnWideLogo with java.lang.String = js.native
+  /* 3 */ val copyOnDeployment: copyOnDeployment with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val showNameOnLogo: showNameOnLogo with scala.Double = js.native
+  /* 2 */ val showNameOnWideLogo: showNameOnWideLogo with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.TileOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.TileOptions with scala.Double] = js.native
 }
 

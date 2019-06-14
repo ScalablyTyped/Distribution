@@ -34,12 +34,12 @@ object OverflowToolbarPriority extends js.Object {
   sealed trait NeverOverflow
     extends openui5Lib.sapNs.mNs.OverflowToolbarPriority
   
-  val AlwaysOverflow: AlwaysOverflow with java.lang.String = js.native
-  val Disappear: Disappear with java.lang.String = js.native
-  val High: High with java.lang.String = js.native
-  val Low: Low with java.lang.String = js.native
-  val NeverOverflow: NeverOverflow with java.lang.String = js.native
+  /* 0 */ val AlwaysOverflow: AlwaysOverflow with scala.Double = js.native
+  /* 1 */ val Disappear: Disappear with scala.Double = js.native
+  /* 2 */ val High: High with scala.Double = js.native
+  /* 3 */ val Low: Low with scala.Double = js.native
+  /* 4 */ val NeverOverflow: NeverOverflow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.OverflowToolbarPriority with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.OverflowToolbarPriority with scala.Double] = js.native
 }
 

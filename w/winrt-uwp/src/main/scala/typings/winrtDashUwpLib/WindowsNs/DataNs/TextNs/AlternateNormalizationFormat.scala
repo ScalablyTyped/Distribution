@@ -37,14 +37,14 @@ object AlternateNormalizationFormat extends js.Object {
   sealed trait time
     extends winrtDashUwpLib.WindowsNs.DataNs.TextNs.AlternateNormalizationFormat
   
-  val currency: currency with java.lang.String = js.native
-  val date: date with java.lang.String = js.native
-  val notNormalized: notNormalized with java.lang.String = js.native
-  val number: number with java.lang.String = js.native
-  val time: time with java.lang.String = js.native
+  /* 2 */ val currency: currency with scala.Double = js.native
+  /* 3 */ val date: date with scala.Double = js.native
+  /* 0 */ val notNormalized: notNormalized with scala.Double = js.native
+  /* 1 */ val number: number with scala.Double = js.native
+  /* 4 */ val time: time with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DataNs.TextNs.AlternateNormalizationFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DataNs.TextNs.AlternateNormalizationFormat with scala.Double
   ] = js.native
 }
 

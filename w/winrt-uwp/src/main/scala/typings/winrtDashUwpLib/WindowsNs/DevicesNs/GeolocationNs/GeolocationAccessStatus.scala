@@ -27,12 +27,12 @@ object GeolocationAccessStatus extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeolocationAccessStatus
   
-  val allowed: allowed with java.lang.String = js.native
-  val denied: denied with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 1 */ val allowed: allowed with scala.Double = js.native
+  /* 2 */ val denied: denied with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeolocationAccessStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeolocationAccessStatus with scala.Double
   ] = js.native
 }
 

@@ -26,10 +26,10 @@ object layoutType extends js.Object {
   sealed trait Tile
     extends ejDotWebDotAllLib.ejNs.FileExplorerNs.layoutType
   
-  val Grid: Grid with java.lang.String = js.native
-  val LargeIcons: LargeIcons with java.lang.String = js.native
-  val Tile: Tile with java.lang.String = js.native
+  /* 1 */ val Grid: Grid with scala.Double = js.native
+  /* 2 */ val LargeIcons: LargeIcons with scala.Double = js.native
+  /* 0 */ val Tile: Tile with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.FileExplorerNs.layoutType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.FileExplorerNs.layoutType with scala.Double] = js.native
 }
 

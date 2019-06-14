@@ -19,11 +19,11 @@ object ControlChannelTriggerResourceType extends js.Object {
   sealed trait requestSoftwareSlot
     extends winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerResourceType
   
-  val requestHardwareSlot: requestHardwareSlot with java.lang.String = js.native
-  val requestSoftwareSlot: requestSoftwareSlot with java.lang.String = js.native
+  /* 1 */ val requestHardwareSlot: requestHardwareSlot with scala.Double = js.native
+  /* 0 */ val requestSoftwareSlot: requestSoftwareSlot with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerResourceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerResourceType with scala.Double
   ] = js.native
 }
 

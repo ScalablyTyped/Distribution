@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 */
 trait WiaImageBias extends js.Object
 
+object WiaImageBias {
+  @scala.inline
+  def MaximizeQuality: activexDashWiaLib.activexDashWiaLibNumbers.`131072` = this.cast(131072)
+  @scala.inline
+  def MinimizeSize: activexDashWiaLib.activexDashWiaLibNumbers.`65536` = this.cast(65536)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

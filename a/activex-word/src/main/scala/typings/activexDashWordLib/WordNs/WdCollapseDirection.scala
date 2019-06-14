@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdCollapseDirection extends js.Object
 
+object WdCollapseDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdCollapseEnd: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdCollapseStart: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

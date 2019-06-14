@@ -31,12 +31,12 @@ object Policy extends js.Object {
   sealed trait single
     extends ydnDashDbLib.ydnNs.dbNs.Policy
   
-  val all: all with java.lang.String = js.native
-  val atomic: atomic with java.lang.String = js.native
-  val multi: multi with java.lang.String = js.native
-  val repeat: repeat with java.lang.String = js.native
-  val single: single with java.lang.String = js.native
+  /* 0 */ val all: all with scala.Double = js.native
+  /* 1 */ val atomic: atomic with scala.Double = js.native
+  /* 2 */ val multi: multi with scala.Double = js.native
+  /* 3 */ val repeat: repeat with scala.Double = js.native
+  /* 4 */ val single: single with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.Policy with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.Policy with scala.Double] = js.native
 }
 

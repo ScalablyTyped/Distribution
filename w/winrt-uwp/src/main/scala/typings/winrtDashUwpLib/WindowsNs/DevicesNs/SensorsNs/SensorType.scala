@@ -82,21 +82,21 @@ object SensorType extends js.Object {
   sealed trait simpleOrientationSensor
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorType
   
-  val accelerometer: accelerometer with java.lang.String = js.native
-  val activitySensor: activitySensor with java.lang.String = js.native
-  val barometer: barometer with java.lang.String = js.native
-  val compass: compass with java.lang.String = js.native
-  val customSensor: customSensor with java.lang.String = js.native
-  val gyroscope: gyroscope with java.lang.String = js.native
-  val inclinometer: inclinometer with java.lang.String = js.native
-  val lightSensor: lightSensor with java.lang.String = js.native
-  val orientationSensor: orientationSensor with java.lang.String = js.native
-  val pedometer: pedometer with java.lang.String = js.native
-  val proximitySensor: proximitySensor with java.lang.String = js.native
-  val relativeInclinometer: relativeInclinometer with java.lang.String = js.native
-  val relativeOrientationSensor: relativeOrientationSensor with java.lang.String = js.native
-  val simpleOrientationSensor: simpleOrientationSensor with java.lang.String = js.native
+  /* 0 */ val accelerometer: accelerometer with scala.Double = js.native
+  /* 1 */ val activitySensor: activitySensor with scala.Double = js.native
+  /* 2 */ val barometer: barometer with scala.Double = js.native
+  /* 3 */ val compass: compass with scala.Double = js.native
+  /* 4 */ val customSensor: customSensor with scala.Double = js.native
+  /* 5 */ val gyroscope: gyroscope with scala.Double = js.native
+  /* 7 */ val inclinometer: inclinometer with scala.Double = js.native
+  /* 8 */ val lightSensor: lightSensor with scala.Double = js.native
+  /* 9 */ val orientationSensor: orientationSensor with scala.Double = js.native
+  /* 10 */ val pedometer: pedometer with scala.Double = js.native
+  /* 6 */ val proximitySensor: proximitySensor with scala.Double = js.native
+  /* 11 */ val relativeInclinometer: relativeInclinometer with scala.Double = js.native
+  /* 12 */ val relativeOrientationSensor: relativeOrientationSensor with scala.Double = js.native
+  /* 13 */ val simpleOrientationSensor: simpleOrientationSensor with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorType with scala.Double] = js.native
 }
 

@@ -22,11 +22,11 @@ object CameraCaptureUIVideoFormat extends js.Object {
   sealed trait wmv
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIVideoFormat
   
-  val mp4: mp4 with java.lang.String = js.native
-  val wmv: wmv with java.lang.String = js.native
+  /* 0 */ val mp4: mp4 with scala.Double = js.native
+  /* 1 */ val wmv: wmv with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIVideoFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIVideoFormat with scala.Double
   ] = js.native
 }
 

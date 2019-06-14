@@ -27,10 +27,10 @@ object HoldingState extends js.Object {
   sealed trait started
     extends winrtDashUwpLib.WindowsNs.UINs.InputNs.HoldingState
   
-  val canceled: canceled with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
+  /* 2 */ val canceled: canceled with scala.Double = js.native
+  /* 1 */ val completed: completed with scala.Double = js.native
+  /* 0 */ val started: started with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.InputNs.HoldingState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.InputNs.HoldingState with scala.Double] = js.native
 }
 

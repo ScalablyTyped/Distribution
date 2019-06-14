@@ -32,13 +32,13 @@ object AppServiceResponseStatus extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppServiceNs.AppServiceResponseStatus
   
-  val failure: failure with java.lang.String = js.native
-  val resourceLimitsExceeded: resourceLimitsExceeded with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val failure: failure with scala.Double = js.native
+  /* 2 */ val resourceLimitsExceeded: resourceLimitsExceeded with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppServiceNs.AppServiceResponseStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppServiceNs.AppServiceResponseStatus with scala.Double
   ] = js.native
 }
 

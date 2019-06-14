@@ -26,12 +26,12 @@ object ScrollLimit extends js.Object {
   sealed trait Limited
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ScrollLimit
   
-  val Diagram: Diagram with java.lang.String = js.native
-  val Infinite: Infinite with java.lang.String = js.native
-  val Limited: Limited with java.lang.String = js.native
+  /* 1 */ val Diagram: Diagram with scala.Double = js.native
+  /* 0 */ val Infinite: Infinite with scala.Double = js.native
+  /* 2 */ val Limited: Limited with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ScrollLimit with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ScrollLimit with scala.Double
   ] = js.native
 }
 

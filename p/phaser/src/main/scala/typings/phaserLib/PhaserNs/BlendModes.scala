@@ -244,36 +244,36 @@ object BlendModes extends js.Object {
   sealed trait XOR
     extends phaserLib.PhaserNs.BlendModes
   
-  val ADD: ADD with java.lang.String = js.native
-  val COLOR: COLOR with java.lang.String = js.native
-  val COLOR_BURN: COLOR_BURN with java.lang.String = js.native
-  val COLOR_DODGE: COLOR_DODGE with java.lang.String = js.native
-  val COPY: COPY with java.lang.String = js.native
-  val DARKEN: DARKEN with java.lang.String = js.native
-  val DESTINATION_ATOP: DESTINATION_ATOP with java.lang.String = js.native
-  val DESTINATION_IN: DESTINATION_IN with java.lang.String = js.native
-  val DESTINATION_OUT: DESTINATION_OUT with java.lang.String = js.native
-  val DESTINATION_OVER: DESTINATION_OVER with java.lang.String = js.native
-  val DIFFERENCE: DIFFERENCE with java.lang.String = js.native
-  val ERASE: ERASE with java.lang.String = js.native
-  val EXCLUSION: EXCLUSION with java.lang.String = js.native
-  val HARD_LIGHT: HARD_LIGHT with java.lang.String = js.native
-  val HUE: HUE with java.lang.String = js.native
-  val LIGHTEN: LIGHTEN with java.lang.String = js.native
-  val LIGHTER: LIGHTER with java.lang.String = js.native
-  val LUMINOSITY: LUMINOSITY with java.lang.String = js.native
-  val MULTIPLY: MULTIPLY with java.lang.String = js.native
-  val NORMAL: NORMAL with java.lang.String = js.native
-  val OVERLAY: OVERLAY with java.lang.String = js.native
-  val SATURATION: SATURATION with java.lang.String = js.native
-  val SCREEN: SCREEN with java.lang.String = js.native
-  val SKIP_CHECK: SKIP_CHECK with java.lang.String = js.native
-  val SOFT_LIGHT: SOFT_LIGHT with java.lang.String = js.native
-  val SOURCE_ATOP: SOURCE_ATOP with java.lang.String = js.native
-  val SOURCE_IN: SOURCE_IN with java.lang.String = js.native
-  val SOURCE_OUT: SOURCE_OUT with java.lang.String = js.native
-  val XOR: XOR with java.lang.String = js.native
+  /* 2 */ val ADD: ADD with scala.Double = js.native
+  /* 16 */ val COLOR: COLOR with scala.Double = js.native
+  /* 9 */ val COLOR_BURN: COLOR_BURN with scala.Double = js.native
+  /* 8 */ val COLOR_DODGE: COLOR_DODGE with scala.Double = js.native
+  /* 27 */ val COPY: COPY with scala.Double = js.native
+  /* 6 */ val DARKEN: DARKEN with scala.Double = js.native
+  /* 25 */ val DESTINATION_ATOP: DESTINATION_ATOP with scala.Double = js.native
+  /* 23 */ val DESTINATION_IN: DESTINATION_IN with scala.Double = js.native
+  /* 24 */ val DESTINATION_OUT: DESTINATION_OUT with scala.Double = js.native
+  /* 22 */ val DESTINATION_OVER: DESTINATION_OVER with scala.Double = js.native
+  /* 12 */ val DIFFERENCE: DIFFERENCE with scala.Double = js.native
+  /* 18 */ val ERASE: ERASE with scala.Double = js.native
+  /* 13 */ val EXCLUSION: EXCLUSION with scala.Double = js.native
+  /* 10 */ val HARD_LIGHT: HARD_LIGHT with scala.Double = js.native
+  /* 14 */ val HUE: HUE with scala.Double = js.native
+  /* 7 */ val LIGHTEN: LIGHTEN with scala.Double = js.native
+  /* 26 */ val LIGHTER: LIGHTER with scala.Double = js.native
+  /* 17 */ val LUMINOSITY: LUMINOSITY with scala.Double = js.native
+  /* 3 */ val MULTIPLY: MULTIPLY with scala.Double = js.native
+  /* 1 */ val NORMAL: NORMAL with scala.Double = js.native
+  /* 5 */ val OVERLAY: OVERLAY with scala.Double = js.native
+  /* 15 */ val SATURATION: SATURATION with scala.Double = js.native
+  /* 4 */ val SCREEN: SCREEN with scala.Double = js.native
+  /* 0 */ val SKIP_CHECK: SKIP_CHECK with scala.Double = js.native
+  /* 11 */ val SOFT_LIGHT: SOFT_LIGHT with scala.Double = js.native
+  /* 21 */ val SOURCE_ATOP: SOURCE_ATOP with scala.Double = js.native
+  /* 19 */ val SOURCE_IN: SOURCE_IN with scala.Double = js.native
+  /* 20 */ val SOURCE_OUT: SOURCE_OUT with scala.Double = js.native
+  /* 28 */ val XOR: XOR with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.BlendModes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.BlendModes with scala.Double] = js.native
 }
 

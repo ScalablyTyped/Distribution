@@ -32,13 +32,13 @@ object PackageInstallState extends js.Object {
   sealed trait staged
     extends winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageInstallState
   
-  val installed: installed with java.lang.String = js.native
-  val notInstalled: notInstalled with java.lang.String = js.native
-  val paused: paused with java.lang.String = js.native
-  val staged: staged with java.lang.String = js.native
+  /* 2 */ val installed: installed with scala.Double = js.native
+  /* 0 */ val notInstalled: notInstalled with scala.Double = js.native
+  /* 3 */ val paused: paused with scala.Double = js.native
+  /* 1 */ val staged: staged with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageInstallState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageInstallState with scala.Double
   ] = js.native
 }
 

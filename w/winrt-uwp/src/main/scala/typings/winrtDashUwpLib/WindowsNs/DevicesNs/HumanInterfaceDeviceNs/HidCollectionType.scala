@@ -52,17 +52,17 @@ object HidCollectionType extends js.Object {
   sealed trait usageSwitch
     extends winrtDashUwpLib.WindowsNs.DevicesNs.HumanInterfaceDeviceNs.HidCollectionType
   
-  val application: application with java.lang.String = js.native
-  val logical: logical with java.lang.String = js.native
-  val namedArray: namedArray with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val physical: physical with java.lang.String = js.native
-  val report: report with java.lang.String = js.native
-  val usageModifier: usageModifier with java.lang.String = js.native
-  val usageSwitch: usageSwitch with java.lang.String = js.native
+  /* 1 */ val application: application with scala.Double = js.native
+  /* 2 */ val logical: logical with scala.Double = js.native
+  /* 4 */ val namedArray: namedArray with scala.Double = js.native
+  /* 7 */ val other: other with scala.Double = js.native
+  /* 0 */ val physical: physical with scala.Double = js.native
+  /* 3 */ val report: report with scala.Double = js.native
+  /* 6 */ val usageModifier: usageModifier with scala.Double = js.native
+  /* 5 */ val usageSwitch: usageSwitch with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.HumanInterfaceDeviceNs.HidCollectionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.HumanInterfaceDeviceNs.HidCollectionType with scala.Double
   ] = js.native
 }
 

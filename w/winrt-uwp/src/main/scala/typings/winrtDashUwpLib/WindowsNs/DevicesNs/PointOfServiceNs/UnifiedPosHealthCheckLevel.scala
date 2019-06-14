@@ -32,13 +32,13 @@ object UnifiedPosHealthCheckLevel extends js.Object {
   sealed trait unknownHealthCheckLevel
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosHealthCheckLevel
   
-  val external: external with java.lang.String = js.native
-  val interactive: interactive with java.lang.String = js.native
-  val posinternal: posinternal with java.lang.String = js.native
-  val unknownHealthCheckLevel: unknownHealthCheckLevel with java.lang.String = js.native
+  /* 2 */ val external: external with scala.Double = js.native
+  /* 3 */ val interactive: interactive with scala.Double = js.native
+  /* 1 */ val posinternal: posinternal with scala.Double = js.native
+  /* 0 */ val unknownHealthCheckLevel: unknownHealthCheckLevel with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosHealthCheckLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosHealthCheckLevel with scala.Double
   ] = js.native
 }
 

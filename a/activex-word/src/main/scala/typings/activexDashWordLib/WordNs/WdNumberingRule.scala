@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdNumberingRule extends js.Object
 
+object WdNumberingRule {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdRestartContinuous: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdRestartPage: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdRestartSection: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

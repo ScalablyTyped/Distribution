@@ -22,11 +22,11 @@ object PlayReadyITADataFormat extends js.Object {
   sealed trait serializedProperties_WithContentProtectionWrapper
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyITADataFormat
   
-  val serializedProperties: serializedProperties with java.lang.String = js.native
-  val serializedProperties_WithContentProtectionWrapper: serializedProperties_WithContentProtectionWrapper with java.lang.String = js.native
+  /* 0 */ val serializedProperties: serializedProperties with scala.Double = js.native
+  /* 1 */ val serializedProperties_WithContentProtectionWrapper: serializedProperties_WithContentProtectionWrapper with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyITADataFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyITADataFormat with scala.Double
   ] = js.native
 }
 

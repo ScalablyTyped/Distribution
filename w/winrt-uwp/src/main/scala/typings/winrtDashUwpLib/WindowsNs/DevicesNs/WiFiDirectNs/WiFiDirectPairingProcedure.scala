@@ -22,11 +22,11 @@ object WiFiDirectPairingProcedure extends js.Object {
   sealed trait invitation
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectPairingProcedure
   
-  val groupOwnerNegotiation: groupOwnerNegotiation with java.lang.String = js.native
-  val invitation: invitation with java.lang.String = js.native
+  /* 0 */ val groupOwnerNegotiation: groupOwnerNegotiation with scala.Double = js.native
+  /* 1 */ val invitation: invitation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectPairingProcedure with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectPairingProcedure with scala.Double
   ] = js.native
 }
 

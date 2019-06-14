@@ -22,9 +22,9 @@ object StorageDeleteOption extends js.Object {
   sealed trait permanentDelete
     extends winrtDashUwpLib.WindowsNs.StorageNs.StorageDeleteOption
   
-  val default: default with java.lang.String = js.native
-  val permanentDelete: permanentDelete with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val permanentDelete: permanentDelete with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.StorageDeleteOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.StorageDeleteOption with scala.Double] = js.native
 }
 

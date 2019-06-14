@@ -32,13 +32,13 @@ object DevicePickerDisplayStatusOptions extends js.Object {
   sealed trait showRetryButton
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePickerDisplayStatusOptions
   
-  val none: none with java.lang.String = js.native
-  val showDisconnectButton: showDisconnectButton with java.lang.String = js.native
-  val showProgress: showProgress with java.lang.String = js.native
-  val showRetryButton: showRetryButton with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val showDisconnectButton: showDisconnectButton with scala.Double = js.native
+  /* 1 */ val showProgress: showProgress with scala.Double = js.native
+  /* 3 */ val showRetryButton: showRetryButton with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePickerDisplayStatusOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePickerDisplayStatusOptions with scala.Double
   ] = js.native
 }
 

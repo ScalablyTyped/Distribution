@@ -36,12 +36,12 @@ object ExportOptions extends js.Object {
   sealed trait Word
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.ExportOptions
   
-  val All: All with java.lang.String = js.native
-  val Excel: Excel with java.lang.String = js.native
-  val HTML: HTML with java.lang.String = js.native
-  val PDF: PDF with java.lang.String = js.native
-  val Word: Word with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 3 */ val Excel: Excel with scala.Double = js.native
+  /* 4 */ val HTML: HTML with scala.Double = js.native
+  /* 1 */ val PDF: PDF with scala.Double = js.native
+  /* 2 */ val Word: Word with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ExportOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ExportOptions with scala.Double] = js.native
 }
 

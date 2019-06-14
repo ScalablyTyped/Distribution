@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-cache"
-version := "v0.4.5-dt-20190322Z-6bf614"
+version := "v0.4.5-dt-20190322Z-4966a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-8f85b9",
-  "org.scalablytyped" %%% "gulp-util" % "3.0-dt-20180315Z-b2fb06",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-6f5c69",
+  "org.scalablytyped" %%% "gulp-util" % "3.0-dt-20180315Z-d7fb47",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
   "org.scalablytyped" %%% "std" % "3.5-c5d119",
   "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-4c2222",

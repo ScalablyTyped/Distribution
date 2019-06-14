@@ -22,9 +22,9 @@ object ListKeyboardMode extends js.Object {
   sealed trait Navigation
     extends openui5Lib.sapNs.mNs.ListKeyboardMode
   
-  val Edit: Edit with java.lang.String = js.native
-  val Navigation: Navigation with java.lang.String = js.native
+  /* 0 */ val Edit: Edit with scala.Double = js.native
+  /* 1 */ val Navigation: Navigation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ListKeyboardMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ListKeyboardMode with scala.Double] = js.native
 }
 

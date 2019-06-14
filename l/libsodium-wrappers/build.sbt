@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libsodium-wrappers"
-version := "0.7-dt-20190110Z-a6eab4"
+version := "0.7-dt-20190110Z-4b0c14"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

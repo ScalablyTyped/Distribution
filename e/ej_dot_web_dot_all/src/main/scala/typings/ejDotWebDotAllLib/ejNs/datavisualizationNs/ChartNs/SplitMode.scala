@@ -31,13 +31,11 @@ object SplitMode extends js.Object {
   sealed trait Value
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SplitMode
   
-  val Indexes: Indexes with java.lang.String = js.native
-  val Percentage: Percentage with java.lang.String = js.native
-  val Position: Position with java.lang.String = js.native
-  val Value: Value with java.lang.String = js.native
+  /* 3 */ val Indexes: Indexes with scala.Double = js.native
+  /* 2 */ val Percentage: Percentage with scala.Double = js.native
+  /* 0 */ val Position: Position with scala.Double = js.native
+  /* 1 */ val Value: Value with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SplitMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SplitMode with scala.Double] = js.native
 }
 

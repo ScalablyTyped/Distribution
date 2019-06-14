@@ -27,11 +27,11 @@ object CreationCollisionOption extends js.Object {
   sealed trait replaceExisting
     extends winrtLib.WindowsNs.StorageNs.CreationCollisionOption
   
-  val failIfExists: failIfExists with java.lang.String = js.native
-  val generateUniqueName: generateUniqueName with java.lang.String = js.native
-  val openIfExists: openIfExists with java.lang.String = js.native
-  val replaceExisting: replaceExisting with java.lang.String = js.native
+  /* 2 */ val failIfExists: failIfExists with scala.Double = js.native
+  /* 0 */ val generateUniqueName: generateUniqueName with scala.Double = js.native
+  /* 3 */ val openIfExists: openIfExists with scala.Double = js.native
+  /* 1 */ val replaceExisting: replaceExisting with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.CreationCollisionOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.CreationCollisionOption with scala.Double] = js.native
 }
 

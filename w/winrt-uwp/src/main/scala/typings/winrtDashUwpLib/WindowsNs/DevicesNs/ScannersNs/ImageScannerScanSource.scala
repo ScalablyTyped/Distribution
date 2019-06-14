@@ -32,13 +32,13 @@ object ImageScannerScanSource extends js.Object {
   sealed trait flatbed
     extends winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerScanSource
   
-  val autoConfigured: autoConfigured with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val feeder: feeder with java.lang.String = js.native
-  val flatbed: flatbed with java.lang.String = js.native
+  /* 3 */ val autoConfigured: autoConfigured with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 2 */ val feeder: feeder with scala.Double = js.native
+  /* 1 */ val flatbed: flatbed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerScanSource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerScanSource with scala.Double
   ] = js.native
 }
 

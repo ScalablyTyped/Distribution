@@ -61,19 +61,19 @@ object ImageAlignment extends js.Object {
   sealed trait XMinYMin
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ImageAlignment
   
-  val None: None with java.lang.String = js.native
-  val XMaxYMax: XMaxYMax with java.lang.String = js.native
-  val XMaxYMid: XMaxYMid with java.lang.String = js.native
-  val XMaxYMin: XMaxYMin with java.lang.String = js.native
-  val XMidYMax: XMidYMax with java.lang.String = js.native
-  val XMidYMid: XMidYMid with java.lang.String = js.native
-  val XMidYMin: XMidYMin with java.lang.String = js.native
-  val XMinYMax: XMinYMax with java.lang.String = js.native
-  val XMinYMid: XMinYMid with java.lang.String = js.native
-  val XMinYMin: XMinYMin with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 9 */ val XMaxYMax: XMaxYMax with scala.Double = js.native
+  /* 8 */ val XMaxYMid: XMaxYMid with scala.Double = js.native
+  /* 7 */ val XMaxYMin: XMaxYMin with scala.Double = js.native
+  /* 6 */ val XMidYMax: XMidYMax with scala.Double = js.native
+  /* 5 */ val XMidYMid: XMidYMid with scala.Double = js.native
+  /* 4 */ val XMidYMin: XMidYMin with scala.Double = js.native
+  /* 3 */ val XMinYMax: XMinYMax with scala.Double = js.native
+  /* 2 */ val XMinYMid: XMinYMid with scala.Double = js.native
+  /* 1 */ val XMinYMin: XMinYMin with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ImageAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ImageAlignment with scala.Double
   ] = js.native
 }
 

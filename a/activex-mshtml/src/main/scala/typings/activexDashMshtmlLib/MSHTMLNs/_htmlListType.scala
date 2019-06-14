@@ -19,3 +19,28 @@ import scala.scalajs.js.annotation._
 */
 trait _htmlListType extends js.Object
 
+object _htmlListType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def htmlListTypeCircle: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def htmlListTypeDisc: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def htmlListTypeLargeAlpha: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def htmlListTypeLargeRoman: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def htmlListTypeNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def htmlListTypeNumbers: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def htmlListTypeSmallAlpha: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def htmlListTypeSmallRoman: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def htmlListTypeSquare: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def htmlListType_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

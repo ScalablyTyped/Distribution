@@ -42,13 +42,13 @@ object ChangeTypes extends js.Object {
   sealed trait remove
     extends sharepointLib.SPNs.UserProfilesNs.ChangeTypes
   
-  val add: add with java.lang.String = js.native
-  val all: all with java.lang.String = js.native
-  val metadata: metadata with java.lang.String = js.native
-  val modify: modify with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val remove: remove with java.lang.String = js.native
+  /* 1 */ val add: add with scala.Double = js.native
+  /* 5 */ val all: all with scala.Double = js.native
+  /* 4 */ val metadata: metadata with scala.Double = js.native
+  /* 2 */ val modify: modify with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val remove: remove with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.ChangeTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.ChangeTypes with scala.Double] = js.native
 }
 

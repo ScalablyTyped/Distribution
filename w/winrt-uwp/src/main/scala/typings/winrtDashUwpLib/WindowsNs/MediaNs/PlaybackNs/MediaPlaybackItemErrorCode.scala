@@ -42,15 +42,15 @@ object MediaPlaybackItemErrorCode extends js.Object {
   sealed trait sourceNotSupportedError
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlaybackItemErrorCode
   
-  val aborted: aborted with java.lang.String = js.native
-  val decodeError: decodeError with java.lang.String = js.native
-  val encryptionError: encryptionError with java.lang.String = js.native
-  val networkError: networkError with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val sourceNotSupportedError: sourceNotSupportedError with java.lang.String = js.native
+  /* 1 */ val aborted: aborted with scala.Double = js.native
+  /* 3 */ val decodeError: decodeError with scala.Double = js.native
+  /* 5 */ val encryptionError: encryptionError with scala.Double = js.native
+  /* 2 */ val networkError: networkError with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val sourceNotSupportedError: sourceNotSupportedError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlaybackItemErrorCode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlaybackItemErrorCode with scala.Double
   ] = js.native
 }
 

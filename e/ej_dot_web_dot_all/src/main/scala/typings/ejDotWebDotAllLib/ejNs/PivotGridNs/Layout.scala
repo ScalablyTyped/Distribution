@@ -31,11 +31,11 @@ object Layout extends js.Object {
   sealed trait NormalTopSummary
     extends ejDotWebDotAllLib.ejNs.PivotGridNs.Layout
   
-  val ExcelLikeLayout: ExcelLikeLayout with java.lang.String = js.native
-  val NoSummaries: NoSummaries with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
-  val NormalTopSummary: NormalTopSummary with java.lang.String = js.native
+  /* 3 */ val ExcelLikeLayout: ExcelLikeLayout with scala.Double = js.native
+  /* 2 */ val NoSummaries: NoSummaries with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
+  /* 1 */ val NormalTopSummary: NormalTopSummary with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotGridNs.Layout with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotGridNs.Layout with scala.Double] = js.native
 }
 

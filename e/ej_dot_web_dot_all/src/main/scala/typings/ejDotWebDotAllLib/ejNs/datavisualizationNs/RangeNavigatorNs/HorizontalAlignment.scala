@@ -26,12 +26,12 @@ object HorizontalAlignment extends js.Object {
   sealed trait Right
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.HorizontalAlignment
   
-  val Left: Left with java.lang.String = js.native
-  val Middle: Middle with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 1 */ val Left: Left with scala.Double = js.native
+  /* 0 */ val Middle: Middle with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.HorizontalAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.HorizontalAlignment with scala.Double
   ] = js.native
 }
 

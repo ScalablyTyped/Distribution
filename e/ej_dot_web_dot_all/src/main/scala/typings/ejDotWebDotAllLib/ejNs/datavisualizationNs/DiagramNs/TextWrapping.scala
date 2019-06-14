@@ -26,12 +26,12 @@ object TextWrapping extends js.Object {
   sealed trait WrapWithOverflow
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.TextWrapping
   
-  val NoWrap: NoWrap with java.lang.String = js.native
-  val Wrap: Wrap with java.lang.String = js.native
-  val WrapWithOverflow: WrapWithOverflow with java.lang.String = js.native
+  /* 0 */ val NoWrap: NoWrap with scala.Double = js.native
+  /* 1 */ val Wrap: Wrap with scala.Double = js.native
+  /* 2 */ val WrapWithOverflow: WrapWithOverflow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.TextWrapping with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.TextWrapping with scala.Double
   ] = js.native
 }
 

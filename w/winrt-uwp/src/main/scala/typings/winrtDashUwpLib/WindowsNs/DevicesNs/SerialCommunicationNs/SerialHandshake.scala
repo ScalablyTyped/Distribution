@@ -32,13 +32,13 @@ object SerialHandshake extends js.Object {
   sealed trait xonXOff
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialHandshake
   
-  val none: none with java.lang.String = js.native
-  val requestToSend: requestToSend with java.lang.String = js.native
-  val requestToSendXOnXOff: requestToSendXOnXOff with java.lang.String = js.native
-  val xonXOff: xonXOff with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val requestToSend: requestToSend with scala.Double = js.native
+  /* 3 */ val requestToSendXOnXOff: requestToSendXOnXOff with scala.Double = js.native
+  /* 2 */ val xonXOff: xonXOff with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialHandshake with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialHandshake with scala.Double
   ] = js.native
 }
 

@@ -42,13 +42,13 @@ object FocusPreset extends js.Object {
   sealed trait manual
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.FocusPreset
   
-  val auto: auto with java.lang.String = js.native
-  val autoHyperfocal: autoHyperfocal with java.lang.String = js.native
-  val autoInfinity: autoInfinity with java.lang.String = js.native
-  val autoMacro: autoMacro with java.lang.String = js.native
-  val autoNormal: autoNormal with java.lang.String = js.native
-  val manual: manual with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 5 */ val autoHyperfocal: autoHyperfocal with scala.Double = js.native
+  /* 4 */ val autoInfinity: autoInfinity with scala.Double = js.native
+  /* 2 */ val autoMacro: autoMacro with scala.Double = js.native
+  /* 3 */ val autoNormal: autoNormal with scala.Double = js.native
+  /* 1 */ val manual: manual with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.FocusPreset with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.FocusPreset with scala.Double] = js.native
 }
 

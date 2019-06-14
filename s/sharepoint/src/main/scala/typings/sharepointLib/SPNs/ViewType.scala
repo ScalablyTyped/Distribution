@@ -39,14 +39,14 @@ object ViewType extends js.Object {
   sealed trait recurrence
     extends sharepointLib.SPNs.ViewType
   
-  val calendar: calendar with java.lang.String = js.native
-  val chart: chart with java.lang.String = js.native
-  val gantt: gantt with java.lang.String = js.native
-  val grid: grid with java.lang.String = js.native
-  val html: html with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val recurrence: recurrence with java.lang.String = js.native
+  /* 3 */ val calendar: calendar with scala.Double = js.native
+  /* 5 */ val chart: chart with scala.Double = js.native
+  /* 6 */ val gantt: gantt with scala.Double = js.native
+  /* 2 */ val grid: grid with scala.Double = js.native
+  /* 1 */ val html: html with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val recurrence: recurrence with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ViewType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ViewType with scala.Double] = js.native
 }
 

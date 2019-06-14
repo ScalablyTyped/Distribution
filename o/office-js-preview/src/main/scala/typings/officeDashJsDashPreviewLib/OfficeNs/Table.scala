@@ -36,10 +36,10 @@ object Table extends js.Object {
   sealed trait Headers
     extends officeDashJsDashPreviewLib.OfficeNs.Table
   
-  val All: All with java.lang.String = js.native
-  val Data: Data with java.lang.String = js.native
-  val Headers: Headers with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 1 */ val Data: Data with scala.Double = js.native
+  /* 2 */ val Headers: Headers with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.Table with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.Table with scala.Double] = js.native
 }
 

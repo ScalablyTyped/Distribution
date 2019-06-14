@@ -23,12 +23,12 @@ object SandboxMode extends js.Object {
   sealed trait NATIVE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.HTMLNs.SandboxMode
   
-  val EMULATED: EMULATED with java.lang.String = js.native
-  val IFRAME: IFRAME with java.lang.String = js.native
-  val NATIVE: NATIVE with java.lang.String = js.native
+  /* 0 */ val EMULATED: EMULATED with scala.Double = js.native
+  /* 1 */ val IFRAME: IFRAME with scala.Double = js.native
+  /* 2 */ val NATIVE: NATIVE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.HTMLNs.SandboxMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.HTMLNs.SandboxMode with scala.Double
   ] = js.native
 }
 

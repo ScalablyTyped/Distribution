@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdFootnoteLocation extends js.Object
 
+object WdFootnoteLocation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdBeneathText: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdBottomOfPage: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

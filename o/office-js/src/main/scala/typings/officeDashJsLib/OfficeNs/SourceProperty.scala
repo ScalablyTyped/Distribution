@@ -25,9 +25,9 @@ object SourceProperty extends js.Object {
   sealed trait Subject
     extends officeDashJsLib.OfficeNs.SourceProperty
   
-  val Body: Body with java.lang.String = js.native
-  val Subject: Subject with java.lang.String = js.native
+  /* 0 */ val Body: Body with scala.Double = js.native
+  /* 1 */ val Subject: Subject with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.SourceProperty with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.SourceProperty with scala.Double] = js.native
 }
 

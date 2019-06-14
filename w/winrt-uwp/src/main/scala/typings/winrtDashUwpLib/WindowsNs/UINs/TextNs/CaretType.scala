@@ -22,9 +22,9 @@ object CaretType extends js.Object {
   sealed trait `null`
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.CaretType
   
-  val normal: normal with java.lang.String = js.native
-  val `null`: `null` with java.lang.String = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val `null`: `null` with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.CaretType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.CaretType with scala.Double] = js.native
 }
 

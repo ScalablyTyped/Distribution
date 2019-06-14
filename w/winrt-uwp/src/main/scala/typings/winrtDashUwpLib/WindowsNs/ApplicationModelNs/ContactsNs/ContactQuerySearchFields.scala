@@ -37,14 +37,14 @@ object ContactQuerySearchFields extends js.Object {
   sealed trait phone
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQuerySearchFields
   
-  val all: all with java.lang.String = js.native
-  val email: email with java.lang.String = js.native
-  val name: name with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val phone: phone with java.lang.String = js.native
+  /* 4 */ val all: all with scala.Double = js.native
+  /* 2 */ val email: email with scala.Double = js.native
+  /* 1 */ val name: name with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val phone: phone with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQuerySearchFields with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQuerySearchFields with scala.Double
   ] = js.native
 }
 

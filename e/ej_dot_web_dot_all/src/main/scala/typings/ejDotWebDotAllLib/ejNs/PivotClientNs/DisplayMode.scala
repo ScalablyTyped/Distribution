@@ -26,10 +26,10 @@ object DisplayMode extends js.Object {
   sealed trait GridOnly
     extends ejDotWebDotAllLib.ejNs.PivotClientNs.DisplayMode
   
-  val ChartAndGrid: ChartAndGrid with java.lang.String = js.native
-  val ChartOnly: ChartOnly with java.lang.String = js.native
-  val GridOnly: GridOnly with java.lang.String = js.native
+  /* 2 */ val ChartAndGrid: ChartAndGrid with scala.Double = js.native
+  /* 0 */ val ChartOnly: ChartOnly with scala.Double = js.native
+  /* 1 */ val GridOnly: GridOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotClientNs.DisplayMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotClientNs.DisplayMode with scala.Double] = js.native
 }
 

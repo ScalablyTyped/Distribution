@@ -19,9 +19,9 @@ object PersonalizationScope extends js.Object {
   sealed trait user
     extends sharepointLib.SPNs.WebPartsNs.PersonalizationScope
   
-  val shared: shared with java.lang.String = js.native
-  val user: user with java.lang.String = js.native
+  /* 1 */ val shared: shared with scala.Double = js.native
+  /* 0 */ val user: user with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.WebPartsNs.PersonalizationScope with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.WebPartsNs.PersonalizationScope with scala.Double] = js.native
 }
 

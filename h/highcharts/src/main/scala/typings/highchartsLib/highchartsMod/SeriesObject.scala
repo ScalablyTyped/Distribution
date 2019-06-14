@@ -86,6 +86,25 @@ trait SeriesObject extends js.Object {
     shift: scala.Boolean,
     animation: scala.Boolean
   ): scala.Unit = js.native
+  def addPoint(options: js.Tuple3[scala.Double, scala.Double, scala.Double]): scala.Unit = js.native
+  def addPoint(options: js.Tuple3[scala.Double, scala.Double, scala.Double], redraw: scala.Boolean): scala.Unit = js.native
+  def addPoint(
+    options: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    redraw: scala.Boolean,
+    shift: scala.Boolean
+  ): scala.Unit = js.native
+  def addPoint(
+    options: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    redraw: scala.Boolean,
+    shift: scala.Boolean,
+    animation: Animation
+  ): scala.Unit = js.native
+  def addPoint(
+    options: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    redraw: scala.Boolean,
+    shift: scala.Boolean,
+    animation: scala.Boolean
+  ): scala.Unit = js.native
   /**
     * Add a point to the series after render time. The point can be added at the end, or by giving it an X value, to
     * the start or in the middle of the series.

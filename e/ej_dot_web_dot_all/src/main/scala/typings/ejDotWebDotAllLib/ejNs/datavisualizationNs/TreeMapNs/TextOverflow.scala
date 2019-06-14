@@ -31,13 +31,13 @@ object TextOverflow extends js.Object {
   sealed trait WrapByWord
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.TextOverflow
   
-  val Hide: Hide with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Wrap: Wrap with java.lang.String = js.native
-  val WrapByWord: WrapByWord with java.lang.String = js.native
+  /* 1 */ val Hide: Hide with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val Wrap: Wrap with scala.Double = js.native
+  /* 3 */ val WrapByWord: WrapByWord with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.TextOverflow with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.TextOverflow with scala.Double
   ] = js.native
 }
 

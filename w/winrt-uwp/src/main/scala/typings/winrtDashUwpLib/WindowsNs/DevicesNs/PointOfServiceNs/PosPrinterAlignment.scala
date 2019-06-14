@@ -27,12 +27,12 @@ object PosPrinterAlignment extends js.Object {
   sealed trait right
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterAlignment
   
-  val center: center with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
+  /* 1 */ val center: center with scala.Double = js.native
+  /* 0 */ val left: left with scala.Double = js.native
+  /* 2 */ val right: right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterAlignment with scala.Double
   ] = js.native
 }
 

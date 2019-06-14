@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "actions-on-google"
-version := "1.10-dt-20180404Z-d494e1"
+version := "1.10-dt-20180404Z-775082"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

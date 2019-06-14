@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait PpProtectedViewCloseReason extends js.Object
 
+object PpProtectedViewCloseReason {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ppProtectedViewCloseEdit: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def ppProtectedViewCloseForced: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ppProtectedViewCloseNormal: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`0` = this.cast(0)
+}
+

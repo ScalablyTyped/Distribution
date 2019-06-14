@@ -167,40 +167,40 @@ object SocketErrorStatus extends js.Object {
   sealed trait unreachableHost
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketErrorStatus
   
-  val addressAlreadyInUse: addressAlreadyInUse with java.lang.String = js.native
-  val addressFamilyNotSupported: addressFamilyNotSupported with java.lang.String = js.native
-  val cannotAssignRequestedAddress: cannotAssignRequestedAddress with java.lang.String = js.native
-  val certificateCommonNameIsIncorrect: certificateCommonNameIsIncorrect with java.lang.String = js.native
-  val certificateExpired: certificateExpired with java.lang.String = js.native
-  val certificateIsInvalid: certificateIsInvalid with java.lang.String = js.native
-  val certificateNoRevocationCheck: certificateNoRevocationCheck with java.lang.String = js.native
-  val certificateRevocationServerOffline: certificateRevocationServerOffline with java.lang.String = js.native
-  val certificateRevoked: certificateRevoked with java.lang.String = js.native
-  val certificateUntrustedRoot: certificateUntrustedRoot with java.lang.String = js.native
-  val certificateWrongUsage: certificateWrongUsage with java.lang.String = js.native
-  val classTypeNotFound: classTypeNotFound with java.lang.String = js.native
-  val connectionRefused: connectionRefused with java.lang.String = js.native
-  val connectionResetByPeer: connectionResetByPeer with java.lang.String = js.native
-  val connectionTimedOut: connectionTimedOut with java.lang.String = js.native
-  val hostIsDown: hostIsDown with java.lang.String = js.native
-  val hostNotFound: hostNotFound with java.lang.String = js.native
-  val httpInvalidServerResponse: httpInvalidServerResponse with java.lang.String = js.native
-  val messageTooLong: messageTooLong with java.lang.String = js.native
-  val networkDroppedConnectionOnReset: networkDroppedConnectionOnReset with java.lang.String = js.native
-  val networkIsDown: networkIsDown with java.lang.String = js.native
-  val networkIsUnreachable: networkIsUnreachable with java.lang.String = js.native
-  val noAddressesFound: noAddressesFound with java.lang.String = js.native
-  val noDataRecordOfRequestedType: noDataRecordOfRequestedType with java.lang.String = js.native
-  val nonAuthoritativeHostNotFound: nonAuthoritativeHostNotFound with java.lang.String = js.native
-  val operationAborted: operationAborted with java.lang.String = js.native
-  val socketTypeNotSupported: socketTypeNotSupported with java.lang.String = js.native
-  val softwareCausedConnectionAbort: softwareCausedConnectionAbort with java.lang.String = js.native
-  val tooManyOpenFiles: tooManyOpenFiles with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val unreachableHost: unreachableHost with java.lang.String = js.native
+  /* 10 */ val addressAlreadyInUse: addressAlreadyInUse with scala.Double = js.native
+  /* 4 */ val addressFamilyNotSupported: addressFamilyNotSupported with scala.Double = js.native
+  /* 11 */ val cannotAssignRequestedAddress: cannotAssignRequestedAddress with scala.Double = js.native
+  /* 25 */ val certificateCommonNameIsIncorrect: certificateCommonNameIsIncorrect with scala.Double = js.native
+  /* 23 */ val certificateExpired: certificateExpired with scala.Double = js.native
+  /* 30 */ val certificateIsInvalid: certificateIsInvalid with scala.Double = js.native
+  /* 28 */ val certificateNoRevocationCheck: certificateNoRevocationCheck with scala.Double = js.native
+  /* 29 */ val certificateRevocationServerOffline: certificateRevocationServerOffline with scala.Double = js.native
+  /* 27 */ val certificateRevoked: certificateRevoked with scala.Double = js.native
+  /* 24 */ val certificateUntrustedRoot: certificateUntrustedRoot with scala.Double = js.native
+  /* 26 */ val certificateWrongUsage: certificateWrongUsage with scala.Double = js.native
+  /* 9 */ val classTypeNotFound: classTypeNotFound with scala.Double = js.native
+  /* 12 */ val connectionRefused: connectionRefused with scala.Double = js.native
+  /* 18 */ val connectionResetByPeer: connectionResetByPeer with scala.Double = js.native
+  /* 3 */ val connectionTimedOut: connectionTimedOut with scala.Double = js.native
+  /* 19 */ val hostIsDown: hostIsDown with scala.Double = js.native
+  /* 6 */ val hostNotFound: hostNotFound with scala.Double = js.native
+  /* 2 */ val httpInvalidServerResponse: httpInvalidServerResponse with scala.Double = js.native
+  /* 22 */ val messageTooLong: messageTooLong with scala.Double = js.native
+  /* 16 */ val networkDroppedConnectionOnReset: networkDroppedConnectionOnReset with scala.Double = js.native
+  /* 15 */ val networkIsDown: networkIsDown with scala.Double = js.native
+  /* 13 */ val networkIsUnreachable: networkIsUnreachable with scala.Double = js.native
+  /* 20 */ val noAddressesFound: noAddressesFound with scala.Double = js.native
+  /* 7 */ val noDataRecordOfRequestedType: noDataRecordOfRequestedType with scala.Double = js.native
+  /* 8 */ val nonAuthoritativeHostNotFound: nonAuthoritativeHostNotFound with scala.Double = js.native
+  /* 1 */ val operationAborted: operationAborted with scala.Double = js.native
+  /* 5 */ val socketTypeNotSupported: socketTypeNotSupported with scala.Double = js.native
+  /* 17 */ val softwareCausedConnectionAbort: softwareCausedConnectionAbort with scala.Double = js.native
+  /* 21 */ val tooManyOpenFiles: tooManyOpenFiles with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 14 */ val unreachableHost: unreachableHost with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketErrorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketErrorStatus with scala.Double
   ] = js.native
 }
 

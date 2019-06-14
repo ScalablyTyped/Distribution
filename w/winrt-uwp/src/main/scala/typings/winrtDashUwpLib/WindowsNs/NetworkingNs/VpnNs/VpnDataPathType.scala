@@ -22,11 +22,9 @@ object VpnDataPathType extends js.Object {
   sealed trait send
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnDataPathType
   
-  val receive: receive with java.lang.String = js.native
-  val send: send with java.lang.String = js.native
+  /* 1 */ val receive: receive with scala.Double = js.native
+  /* 0 */ val send: send with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnDataPathType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnDataPathType with scala.Double] = js.native
 }
 

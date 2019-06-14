@@ -27,12 +27,12 @@ object PosPrinterBarcodeTextPosition extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterBarcodeTextPosition
   
-  val above: above with java.lang.String = js.native
-  val below: below with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val above: above with scala.Double = js.native
+  /* 2 */ val below: below with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterBarcodeTextPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterBarcodeTextPosition with scala.Double
   ] = js.native
 }
 

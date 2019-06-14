@@ -57,16 +57,16 @@ object WiFiPhyKind extends js.Object {
   sealed trait vht
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiPhyKind
   
-  val dsss: dsss with java.lang.String = js.native
-  val erp: erp with java.lang.String = js.native
-  val fhss: fhss with java.lang.String = js.native
-  val hrdsss: hrdsss with java.lang.String = js.native
-  val ht: ht with java.lang.String = js.native
-  val irBaseband: irBaseband with java.lang.String = js.native
-  val ofdm: ofdm with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val vht: vht with java.lang.String = js.native
+  /* 2 */ val dsss: dsss with scala.Double = js.native
+  /* 6 */ val erp: erp with scala.Double = js.native
+  /* 1 */ val fhss: fhss with scala.Double = js.native
+  /* 5 */ val hrdsss: hrdsss with scala.Double = js.native
+  /* 7 */ val ht: ht with scala.Double = js.native
+  /* 3 */ val irBaseband: irBaseband with scala.Double = js.native
+  /* 4 */ val ofdm: ofdm with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 8 */ val vht: vht with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiPhyKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiPhyKind with scala.Double] = js.native
 }
 

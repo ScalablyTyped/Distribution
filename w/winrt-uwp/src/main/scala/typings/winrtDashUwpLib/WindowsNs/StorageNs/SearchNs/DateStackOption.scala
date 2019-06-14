@@ -27,12 +27,10 @@ object DateStackOption extends js.Object {
   sealed trait year
     extends winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.DateStackOption
   
-  val month: month with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val year: year with java.lang.String = js.native
+  /* 2 */ val month: month with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val year: year with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.DateStackOption with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.DateStackOption with scala.Double] = js.native
 }
 

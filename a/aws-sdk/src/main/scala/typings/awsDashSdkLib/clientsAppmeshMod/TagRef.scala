@@ -12,8 +12,8 @@ trait TagRef extends js.Object {
     */
   var key: TagKey
   /**
-    * The optional part of a key-value pair that make up a tag. A value acts as
-    a descriptor within a tag category (key).
+    * The optional part of a key-value pair that make up a tag. A value acts as a
+    descriptor within a tag category (key).
     */
   var value: js.UndefOr[TagValue] = js.undefined
 }

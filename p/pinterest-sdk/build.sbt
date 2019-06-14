@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pinterest-sdk"
-version := "0.0-unknown-dt-20190322Z-f6d256"
+version := "0.0-unknown-dt-20190322Z-ae40ed"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -67,20 +67,20 @@ object MobileBroadbandPinType extends js.Object {
   sealed trait subsidyLock
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandPinType
   
-  val corporatePin: corporatePin with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val firstSimPin: firstSimPin with java.lang.String = js.native
-  val networkPin: networkPin with java.lang.String = js.native
-  val networkSubsetPin: networkSubsetPin with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val pin1: pin1 with java.lang.String = js.native
-  val pin2: pin2 with java.lang.String = js.native
-  val serviceProviderPin: serviceProviderPin with java.lang.String = js.native
-  val simPin: simPin with java.lang.String = js.native
-  val subsidyLock: subsidyLock with java.lang.String = js.native
+  /* 9 */ val corporatePin: corporatePin with scala.Double = js.native
+  /* 1 */ val custom: custom with scala.Double = js.native
+  /* 5 */ val firstSimPin: firstSimPin with scala.Double = js.native
+  /* 6 */ val networkPin: networkPin with scala.Double = js.native
+  /* 7 */ val networkSubsetPin: networkSubsetPin with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val pin1: pin1 with scala.Double = js.native
+  /* 3 */ val pin2: pin2 with scala.Double = js.native
+  /* 8 */ val serviceProviderPin: serviceProviderPin with scala.Double = js.native
+  /* 4 */ val simPin: simPin with scala.Double = js.native
+  /* 10 */ val subsidyLock: subsidyLock with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandPinType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandPinType with scala.Double
   ] = js.native
 }
 

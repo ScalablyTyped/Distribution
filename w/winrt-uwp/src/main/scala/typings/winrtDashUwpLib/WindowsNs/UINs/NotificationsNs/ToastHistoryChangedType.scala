@@ -32,13 +32,13 @@ object ToastHistoryChangedType extends js.Object {
   sealed trait removed
     extends winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastHistoryChangedType
   
-  val added: added with java.lang.String = js.native
-  val cleared: cleared with java.lang.String = js.native
-  val expired: expired with java.lang.String = js.native
-  val removed: removed with java.lang.String = js.native
+  /* 3 */ val added: added with scala.Double = js.native
+  /* 0 */ val cleared: cleared with scala.Double = js.native
+  /* 2 */ val expired: expired with scala.Double = js.native
+  /* 1 */ val removed: removed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastHistoryChangedType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastHistoryChangedType with scala.Double
   ] = js.native
 }
 

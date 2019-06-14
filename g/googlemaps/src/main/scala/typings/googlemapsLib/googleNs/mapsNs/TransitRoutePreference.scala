@@ -19,9 +19,9 @@ object TransitRoutePreference extends js.Object {
   sealed trait LESS_WALKING
     extends googlemapsLib.googleNs.mapsNs.TransitRoutePreference
   
-  val FEWER_TRANSFERS: FEWER_TRANSFERS with java.lang.String = js.native
-  val LESS_WALKING: LESS_WALKING with java.lang.String = js.native
+  /* 0 */ val FEWER_TRANSFERS: FEWER_TRANSFERS with scala.Double = js.native
+  /* 1 */ val LESS_WALKING: LESS_WALKING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.TransitRoutePreference with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.TransitRoutePreference with scala.Double] = js.native
 }
 

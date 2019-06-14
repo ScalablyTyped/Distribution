@@ -26,10 +26,10 @@ object Mode extends js.Object {
   sealed trait Series
     extends ejDotWebDotAllLib.ejNs.PivotPagerNs.Mode
   
-  val Both: Both with java.lang.String = js.native
-  val Categorical: Categorical with java.lang.String = js.native
-  val Series: Series with java.lang.String = js.native
+  /* 0 */ val Both: Both with scala.Double = js.native
+  /* 1 */ val Categorical: Categorical with scala.Double = js.native
+  /* 2 */ val Series: Series with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotPagerNs.Mode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotPagerNs.Mode with scala.Double] = js.native
 }
 

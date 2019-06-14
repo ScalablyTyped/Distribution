@@ -43,14 +43,14 @@ object FlexAlignSelf extends js.Object {
   sealed trait Stretch
     extends openui5Lib.sapNs.mNs.FlexAlignSelf
   
-  val Auto: Auto with java.lang.String = js.native
-  val Baseline: Baseline with java.lang.String = js.native
-  val Center: Center with java.lang.String = js.native
-  val End: End with java.lang.String = js.native
-  val Inherit: Inherit with java.lang.String = js.native
-  val Start: Start with java.lang.String = js.native
-  val Stretch: Stretch with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val Baseline: Baseline with scala.Double = js.native
+  /* 2 */ val Center: Center with scala.Double = js.native
+  /* 3 */ val End: End with scala.Double = js.native
+  /* 4 */ val Inherit: Inherit with scala.Double = js.native
+  /* 5 */ val Start: Start with scala.Double = js.native
+  /* 6 */ val Stretch: Stretch with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.FlexAlignSelf with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.FlexAlignSelf with scala.Double] = js.native
 }
 

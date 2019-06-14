@@ -35,13 +35,13 @@ object CalendarScope extends js.Object {
   sealed trait weeklyGroup
     extends sharepointLib.SPNs.UINs.ApplicationPagesNs.CalendarScope
   
-  val daily: daily with java.lang.String = js.native
-  val dailyGroup: dailyGroup with java.lang.String = js.native
-  val monthly: monthly with java.lang.String = js.native
-  val nothing: nothing with java.lang.String = js.native
-  val weekly: weekly with java.lang.String = js.native
-  val weeklyGroup: weeklyGroup with java.lang.String = js.native
+  /* 3 */ val daily: daily with scala.Double = js.native
+  /* 5 */ val dailyGroup: dailyGroup with scala.Double = js.native
+  /* 1 */ val monthly: monthly with scala.Double = js.native
+  /* 0 */ val nothing: nothing with scala.Double = js.native
+  /* 4 */ val weekly: weekly with scala.Double = js.native
+  /* 2 */ val weeklyGroup: weeklyGroup with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UINs.ApplicationPagesNs.CalendarScope with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UINs.ApplicationPagesNs.CalendarScope with scala.Double] = js.native
 }
 

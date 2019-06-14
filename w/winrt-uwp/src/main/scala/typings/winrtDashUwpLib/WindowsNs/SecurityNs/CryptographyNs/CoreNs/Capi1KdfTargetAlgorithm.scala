@@ -22,11 +22,11 @@ object Capi1KdfTargetAlgorithm extends js.Object {
   sealed trait notAes
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.Capi1KdfTargetAlgorithm
   
-  val aes: aes with java.lang.String = js.native
-  val notAes: notAes with java.lang.String = js.native
+  /* 1 */ val aes: aes with scala.Double = js.native
+  /* 0 */ val notAes: notAes with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.Capi1KdfTargetAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.Capi1KdfTargetAlgorithm with scala.Double
   ] = js.native
 }
 

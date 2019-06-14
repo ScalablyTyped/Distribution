@@ -19,9 +19,9 @@ object UnitSystem extends js.Object {
   sealed trait METRIC
     extends googlemapsLib.googleNs.mapsNs.UnitSystem
   
-  val IMPERIAL: IMPERIAL with java.lang.String = js.native
-  val METRIC: METRIC with java.lang.String = js.native
+  /* 0 */ val IMPERIAL: IMPERIAL with scala.Double = js.native
+  /* 1 */ val METRIC: METRIC with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.UnitSystem with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.UnitSystem with scala.Double] = js.native
 }
 

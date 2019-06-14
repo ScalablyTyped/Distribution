@@ -47,16 +47,16 @@ object FilterOperators extends js.Object {
   sealed trait startsWith
     extends ejDotWebDotAllLib.ejNs.FilterOperators
   
-  val contains: contains with java.lang.String = js.native
-  val endsWith: endsWith with java.lang.String = js.native
-  val equal: equal with java.lang.String = js.native
-  val greaterThan: greaterThan with java.lang.String = js.native
-  val greaterThanOrEqual: greaterThanOrEqual with java.lang.String = js.native
-  val lessThan: lessThan with java.lang.String = js.native
-  val lessThanOrEqual: lessThanOrEqual with java.lang.String = js.native
-  val notEqual: notEqual with java.lang.String = js.native
-  val startsWith: startsWith with java.lang.String = js.native
+  /* 0 */ val contains: contains with scala.Double = js.native
+  /* 1 */ val endsWith: endsWith with scala.Double = js.native
+  /* 2 */ val equal: equal with scala.Double = js.native
+  /* 3 */ val greaterThan: greaterThan with scala.Double = js.native
+  /* 4 */ val greaterThanOrEqual: greaterThanOrEqual with scala.Double = js.native
+  /* 5 */ val lessThan: lessThan with scala.Double = js.native
+  /* 6 */ val lessThanOrEqual: lessThanOrEqual with scala.Double = js.native
+  /* 7 */ val notEqual: notEqual with scala.Double = js.native
+  /* 8 */ val startsWith: startsWith with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.FilterOperators with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.FilterOperators with scala.Double] = js.native
 }
 

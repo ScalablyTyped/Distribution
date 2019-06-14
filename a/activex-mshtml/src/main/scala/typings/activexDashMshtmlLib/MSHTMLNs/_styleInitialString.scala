@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait _styleInitialString extends js.Object
 
+object _styleInitialString {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleInitialStringAuto: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleInitialStringNoInitial: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleInitialStringNone: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleInitialStringNormal: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleInitialString_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

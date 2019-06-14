@@ -31,11 +31,11 @@ object CustomCellType extends js.Object {
   sealed trait DropDownList
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.CustomCellType
   
-  val Button: Button with java.lang.String = js.native
-  val CheckBox: CheckBox with java.lang.String = js.native
-  val DatePicker: DatePicker with java.lang.String = js.native
-  val DropDownList: DropDownList with java.lang.String = js.native
+  /* 0 */ val Button: Button with scala.Double = js.native
+  /* 1 */ val CheckBox: CheckBox with scala.Double = js.native
+  /* 2 */ val DatePicker: DatePicker with scala.Double = js.native
+  /* 3 */ val DropDownList: DropDownList with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.CustomCellType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.CustomCellType with scala.Double] = js.native
 }
 

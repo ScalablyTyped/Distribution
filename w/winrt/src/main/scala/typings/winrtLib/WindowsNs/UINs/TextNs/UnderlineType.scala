@@ -91,27 +91,27 @@ object UnderlineType extends js.Object {
   sealed trait words
     extends winrtLib.WindowsNs.UINs.TextNs.UnderlineType
   
-  val dash: dash with java.lang.String = js.native
-  val dashDot: dashDot with java.lang.String = js.native
-  val dashDotDot: dashDotDot with java.lang.String = js.native
-  val dotted: dotted with java.lang.String = js.native
-  val double: double with java.lang.String = js.native
-  val doubleWave: doubleWave with java.lang.String = js.native
-  val heavyWave: heavyWave with java.lang.String = js.native
-  val longDash: longDash with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val single: single with java.lang.String = js.native
-  val thick: thick with java.lang.String = js.native
-  val thickDash: thickDash with java.lang.String = js.native
-  val thickDashDot: thickDashDot with java.lang.String = js.native
-  val thickDashDotDot: thickDashDotDot with java.lang.String = js.native
-  val thickDotted: thickDotted with java.lang.String = js.native
-  val thickLongDash: thickLongDash with java.lang.String = js.native
-  val thin: thin with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
-  val wave: wave with java.lang.String = js.native
-  val words: words with java.lang.String = js.native
+  /* 6 */ val dash: dash with scala.Double = js.native
+  /* 7 */ val dashDot: dashDot with scala.Double = js.native
+  /* 8 */ val dashDotDot: dashDotDot with scala.Double = js.native
+  /* 5 */ val dotted: dotted with scala.Double = js.native
+  /* 4 */ val double: double with scala.Double = js.native
+  /* 12 */ val doubleWave: doubleWave with scala.Double = js.native
+  /* 13 */ val heavyWave: heavyWave with scala.Double = js.native
+  /* 14 */ val longDash: longDash with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 2 */ val single: single with scala.Double = js.native
+  /* 10 */ val thick: thick with scala.Double = js.native
+  /* 15 */ val thickDash: thickDash with scala.Double = js.native
+  /* 16 */ val thickDashDot: thickDashDot with scala.Double = js.native
+  /* 17 */ val thickDashDotDot: thickDashDotDot with scala.Double = js.native
+  /* 18 */ val thickDotted: thickDotted with scala.Double = js.native
+  /* 19 */ val thickLongDash: thickLongDash with scala.Double = js.native
+  /* 11 */ val thin: thin with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
+  /* 9 */ val wave: wave with scala.Double = js.native
+  /* 3 */ val words: words with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.UnderlineType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.UnderlineType with scala.Double] = js.native
 }
 

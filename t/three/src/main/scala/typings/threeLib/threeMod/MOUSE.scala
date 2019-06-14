@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "MOUSE")
 @js.native
 object MOUSE extends js.Object {
-  val LEFT: threeLib.srcConstantsMod.MOUSE.LEFT with java.lang.String = js.native
-  val MIDDLE: threeLib.srcConstantsMod.MOUSE.MIDDLE with java.lang.String = js.native
-  val RIGHT: threeLib.srcConstantsMod.MOUSE.RIGHT with java.lang.String = js.native
+  /* 0 */ val LEFT: threeLib.srcConstantsMod.MOUSE.LEFT with scala.Double = js.native
+  /* 1 */ val MIDDLE: threeLib.srcConstantsMod.MOUSE.MIDDLE with scala.Double = js.native
+  /* 2 */ val RIGHT: threeLib.srcConstantsMod.MOUSE.RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.MOUSE with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[threeLib.srcConstantsMod.MOUSE with scala.Double] = js.native
 }
 

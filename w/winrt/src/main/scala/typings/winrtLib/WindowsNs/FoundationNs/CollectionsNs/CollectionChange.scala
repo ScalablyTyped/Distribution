@@ -27,13 +27,11 @@ object CollectionChange extends js.Object {
   sealed trait reset
     extends winrtLib.WindowsNs.FoundationNs.CollectionsNs.CollectionChange
   
-  val itemChanged: itemChanged with java.lang.String = js.native
-  val itemInserted: itemInserted with java.lang.String = js.native
-  val itemRemoved: itemRemoved with java.lang.String = js.native
-  val reset: reset with java.lang.String = js.native
+  /* 3 */ val itemChanged: itemChanged with scala.Double = js.native
+  /* 1 */ val itemInserted: itemInserted with scala.Double = js.native
+  /* 2 */ val itemRemoved: itemRemoved with scala.Double = js.native
+  /* 0 */ val reset: reset with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.FoundationNs.CollectionsNs.CollectionChange with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.FoundationNs.CollectionsNs.CollectionChange with scala.Double] = js.native
 }
 

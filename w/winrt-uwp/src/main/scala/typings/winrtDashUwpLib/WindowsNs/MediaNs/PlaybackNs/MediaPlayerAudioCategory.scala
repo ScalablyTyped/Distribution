@@ -62,19 +62,19 @@ object MediaPlayerAudioCategory extends js.Object {
   sealed trait speech
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerAudioCategory
   
-  val alerts: alerts with java.lang.String = js.native
-  val communications: communications with java.lang.String = js.native
-  val gameChat: gameChat with java.lang.String = js.native
-  val gameEffects: gameEffects with java.lang.String = js.native
-  val gameMedia: gameMedia with java.lang.String = js.native
-  val media: media with java.lang.String = js.native
-  val movie: movie with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val soundEffects: soundEffects with java.lang.String = js.native
-  val speech: speech with java.lang.String = js.native
+  /* 2 */ val alerts: alerts with scala.Double = js.native
+  /* 1 */ val communications: communications with scala.Double = js.native
+  /* 6 */ val gameChat: gameChat with scala.Double = js.native
+  /* 4 */ val gameEffects: gameEffects with scala.Double = js.native
+  /* 5 */ val gameMedia: gameMedia with scala.Double = js.native
+  /* 9 */ val media: media with scala.Double = js.native
+  /* 8 */ val movie: movie with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 3 */ val soundEffects: soundEffects with scala.Double = js.native
+  /* 7 */ val speech: speech with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerAudioCategory with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerAudioCategory with scala.Double
   ] = js.native
 }
 

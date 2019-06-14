@@ -21,11 +21,11 @@ object VisibilityMode extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.VisibilityMode
   
-  val Hideonexceededlength: Hideonexceededlength with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 1 */ val Hideonexceededlength: Hideonexceededlength with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.VisibilityMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.VisibilityMode with scala.Double
   ] = js.native
 }
 

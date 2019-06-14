@@ -234,9 +234,9 @@ object metadataNs extends js.Object {
     sealed trait keys
       extends cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.IndexType
     
-    val composites: composites with scala.Double = js.native
+    /* 1 */ val composites: composites with scala.Double = js.native
     /* 0 */ val custom: custom with scala.Double = js.native
-    val keys: keys with scala.Double = js.native
+    /* 0 */ val keys: keys with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[
         cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.IndexType with scala.Double

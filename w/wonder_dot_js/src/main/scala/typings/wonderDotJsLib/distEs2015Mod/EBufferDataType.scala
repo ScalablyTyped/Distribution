@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("wonder.js/dist/es2015", "EBufferDataType")
 @js.native
 object EBufferDataType extends js.Object {
-  val INDICE: wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType.INDICE with java.lang.String = js.native
-  val VERTICE: wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType.VERTICE with java.lang.String = js.native
+  /* 1 */ val INDICE: wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType.INDICE with scala.Double = js.native
+  /* 0 */ val VERTICE: wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType.VERTICE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType with scala.Double
   ] = js.native
 }
 

@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait _htmlEndPoints extends js.Object
 
+object _htmlEndPoints {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def htmlEndPointsEndToEnd: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def htmlEndPointsEndToStart: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def htmlEndPointsStartToEnd: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def htmlEndPointsStartToStart: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def htmlEndPoints_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

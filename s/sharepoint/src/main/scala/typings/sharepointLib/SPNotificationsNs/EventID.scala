@@ -31,12 +31,12 @@ object EventID extends js.Object {
   sealed trait OnShow
     extends sharepointLib.SPNotificationsNs.EventID
   
-  val OnDisplayNotification: OnDisplayNotification with java.lang.String = js.native
-  val OnHide: OnHide with java.lang.String = js.native
-  val OnNotificationCountChanged: OnNotificationCountChanged with java.lang.String = js.native
-  val OnRemoveNotification: OnRemoveNotification with java.lang.String = js.native
-  val OnShow: OnShow with java.lang.String = js.native
+  /* 2 */ val OnDisplayNotification: OnDisplayNotification with scala.Double = js.native
+  /* 1 */ val OnHide: OnHide with scala.Double = js.native
+  /* 4 */ val OnNotificationCountChanged: OnNotificationCountChanged with scala.Double = js.native
+  /* 3 */ val OnRemoveNotification: OnRemoveNotification with scala.Double = js.native
+  /* 0 */ val OnShow: OnShow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNotificationsNs.EventID with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNotificationsNs.EventID with scala.Double] = js.native
 }
 

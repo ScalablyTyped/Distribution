@@ -31,12 +31,12 @@ object SelectionType extends js.Object {
   sealed trait shape
     extends winrtLib.WindowsNs.UINs.TextNs.SelectionType
   
-  val inlineShape: inlineShape with java.lang.String = js.native
-  val insertionPoint: insertionPoint with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val shape: shape with java.lang.String = js.native
+  /* 3 */ val inlineShape: inlineShape with scala.Double = js.native
+  /* 1 */ val insertionPoint: insertionPoint with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val normal: normal with scala.Double = js.native
+  /* 4 */ val shape: shape with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.SelectionType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.SelectionType with scala.Double] = js.native
 }
 

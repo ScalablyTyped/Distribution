@@ -52,19 +52,19 @@ object PrintJobStatus extends js.Object {
   sealed trait Unknown
     extends dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJobStatus
   
-  val Error: Error with java.lang.String = js.native
-  val Finished: Finished with java.lang.String = js.native
-  val InQueue: InQueue with java.lang.String = js.native
-  val InvalidJobId: InvalidJobId with java.lang.String = js.native
-  val NotSpooled: NotSpooled with java.lang.String = js.native
-  val PaperOut: PaperOut with java.lang.String = js.native
-  val PrinterBusy: PrinterBusy with java.lang.String = js.native
-  val Printing: Printing with java.lang.String = js.native
-  val ProcessingError: ProcessingError with java.lang.String = js.native
-  val Unknown: Unknown with java.lang.String = js.native
+  /* 0 */ val Error: Error with scala.Double = js.native
+  /* 1 */ val Finished: Finished with scala.Double = js.native
+  /* 2 */ val InQueue: InQueue with scala.Double = js.native
+  /* 3 */ val InvalidJobId: InvalidJobId with scala.Double = js.native
+  /* 4 */ val NotSpooled: NotSpooled with scala.Double = js.native
+  /* 5 */ val PaperOut: PaperOut with scala.Double = js.native
+  /* 6 */ val PrinterBusy: PrinterBusy with scala.Double = js.native
+  /* 7 */ val Printing: Printing with scala.Double = js.native
+  /* 8 */ val ProcessingError: ProcessingError with scala.Double = js.native
+  /* 9 */ val Unknown: Unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJobStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.PrintJobStatus with scala.Double
   ] = js.native
 }
 

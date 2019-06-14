@@ -15,8 +15,8 @@ object EPersonaState extends js.Object {
   sealed trait Online
     extends steamLib.steamMod.EPersonaState
   
-  val Online: Online with java.lang.String = js.native
+  /* 0 */ val Online: Online with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[steamLib.steamMod.EPersonaState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[steamLib.steamMod.EPersonaState with scala.Double] = js.native
 }
 

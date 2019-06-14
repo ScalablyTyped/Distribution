@@ -102,27 +102,25 @@ object AudioEffectType extends js.Object {
   sealed trait virtualSurround
     extends winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.AudioEffectType
   
-  val acousticEchoCancellation: acousticEchoCancellation with java.lang.String = js.native
-  val automaticGainControl: automaticGainControl with java.lang.String = js.native
-  val bassBoost: bassBoost with java.lang.String = js.native
-  val bassManagement: bassManagement with java.lang.String = js.native
-  val beamForming: beamForming with java.lang.String = js.native
-  val constantToneRemoval: constantToneRemoval with java.lang.String = js.native
-  val dynamicRangeCompression: dynamicRangeCompression with java.lang.String = js.native
-  val environmentalEffects: environmentalEffects with java.lang.String = js.native
-  val equalizer: equalizer with java.lang.String = js.native
-  val loudnessEqualizer: loudnessEqualizer with java.lang.String = js.native
-  val noiseSuppression: noiseSuppression with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val roomCorrection: roomCorrection with java.lang.String = js.native
-  val speakerCompensation: speakerCompensation with java.lang.String = js.native
-  val speakerFill: speakerFill with java.lang.String = js.native
-  val speakerProtection: speakerProtection with java.lang.String = js.native
-  val virtualHeadphones: virtualHeadphones with java.lang.String = js.native
-  val virtualSurround: virtualSurround with java.lang.String = js.native
+  /* 1 */ val acousticEchoCancellation: acousticEchoCancellation with scala.Double = js.native
+  /* 3 */ val automaticGainControl: automaticGainControl with scala.Double = js.native
+  /* 8 */ val bassBoost: bassBoost with scala.Double = js.native
+  /* 13 */ val bassManagement: bassManagement with scala.Double = js.native
+  /* 4 */ val beamForming: beamForming with scala.Double = js.native
+  /* 5 */ val constantToneRemoval: constantToneRemoval with scala.Double = js.native
+  /* 17 */ val dynamicRangeCompression: dynamicRangeCompression with scala.Double = js.native
+  /* 14 */ val environmentalEffects: environmentalEffects with scala.Double = js.native
+  /* 6 */ val equalizer: equalizer with scala.Double = js.native
+  /* 7 */ val loudnessEqualizer: loudnessEqualizer with scala.Double = js.native
+  /* 2 */ val noiseSuppression: noiseSuppression with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 12 */ val roomCorrection: roomCorrection with scala.Double = js.native
+  /* 16 */ val speakerCompensation: speakerCompensation with scala.Double = js.native
+  /* 11 */ val speakerFill: speakerFill with scala.Double = js.native
+  /* 15 */ val speakerProtection: speakerProtection with scala.Double = js.native
+  /* 10 */ val virtualHeadphones: virtualHeadphones with scala.Double = js.native
+  /* 9 */ val virtualSurround: virtualSurround with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.AudioEffectType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.AudioEffectType with scala.Double] = js.native
 }
 

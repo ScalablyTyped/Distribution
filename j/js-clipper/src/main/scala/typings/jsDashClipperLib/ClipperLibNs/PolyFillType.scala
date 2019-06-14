@@ -27,11 +27,11 @@ object PolyFillType extends js.Object {
   sealed trait pftPositive
     extends jsDashClipperLib.ClipperLibNs.PolyFillType
   
-  val pftEvenOdd: pftEvenOdd with java.lang.String = js.native
-  val pftNegative: pftNegative with java.lang.String = js.native
-  val pftNonZero: pftNonZero with java.lang.String = js.native
-  val pftPositive: pftPositive with java.lang.String = js.native
+  /* 0 */ val pftEvenOdd: pftEvenOdd with scala.Double = js.native
+  /* 3 */ val pftNegative: pftNegative with scala.Double = js.native
+  /* 1 */ val pftNonZero: pftNonZero with scala.Double = js.native
+  /* 2 */ val pftPositive: pftPositive with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.PolyFillType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.PolyFillType with scala.Double] = js.native
 }
 

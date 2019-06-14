@@ -22,13 +22,17 @@ trait GetIPSetResponse extends js.Object {
     * The status of ipSet file uploaded.
     */
   var Status: IpSetStatus
+  /**
+    * The tags of the IP set resource.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 
 object GetIPSetResponse {
   @scala.inline
-  def apply(Format: IpSetFormat, Location: Location, Name: Name, Status: IpSetStatus): GetIPSetResponse = {
+  def apply(Format: IpSetFormat, Location: Location, Name: Name, Status: IpSetStatus, Tags: TagMap = null): GetIPSetResponse = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], Location = Location, Name = Name, Status = Status.asInstanceOf[js.Any])
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[GetIPSetResponse]
   }
 }

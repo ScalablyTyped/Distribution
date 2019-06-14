@@ -19,11 +19,11 @@ object AttachmentType extends js.Object {
   sealed trait WEB
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SitesNs.AttachmentType
   
-  val HOSTED: HOSTED with java.lang.String = js.native
-  val WEB: WEB with java.lang.String = js.native
+  /* 1 */ val HOSTED: HOSTED with scala.Double = js.native
+  /* 0 */ val WEB: WEB with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SitesNs.AttachmentType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SitesNs.AttachmentType with scala.Double
   ] = js.native
 }
 

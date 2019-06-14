@@ -21,9 +21,9 @@ object FilterType extends js.Object {
   sealed trait Include
     extends ejDotWebDotAllLib.ejNs.PivotAnalysisNs.FilterType
   
-  val Exclude: Exclude with java.lang.String = js.native
-  val Include: Include with java.lang.String = js.native
+  /* 0 */ val Exclude: Exclude with scala.Double = js.native
+  /* 1 */ val Include: Include with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.FilterType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.FilterType with scala.Double] = js.native
 }
 

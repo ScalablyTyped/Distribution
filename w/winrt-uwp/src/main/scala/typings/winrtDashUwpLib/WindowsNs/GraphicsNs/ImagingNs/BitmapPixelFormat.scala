@@ -52,17 +52,17 @@ object BitmapPixelFormat extends js.Object {
   sealed trait yuy2
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat
   
-  val bgra8: bgra8 with java.lang.String = js.native
-  val gray16: gray16 with java.lang.String = js.native
-  val gray8: gray8 with java.lang.String = js.native
-  val nv12: nv12 with java.lang.String = js.native
-  val rgba16: rgba16 with java.lang.String = js.native
-  val rgba8: rgba8 with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val yuy2: yuy2 with java.lang.String = js.native
+  /* 5 */ val bgra8: bgra8 with scala.Double = js.native
+  /* 3 */ val gray16: gray16 with scala.Double = js.native
+  /* 4 */ val gray8: gray8 with scala.Double = js.native
+  /* 6 */ val nv12: nv12 with scala.Double = js.native
+  /* 1 */ val rgba16: rgba16 with scala.Double = js.native
+  /* 2 */ val rgba8: rgba8 with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 7 */ val yuy2: yuy2 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat with scala.Double
   ] = js.native
 }
 

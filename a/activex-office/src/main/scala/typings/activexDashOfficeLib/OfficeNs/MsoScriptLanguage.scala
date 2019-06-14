@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait MsoScriptLanguage extends js.Object
 
+object MsoScriptLanguage {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoScriptLanguageASP: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoScriptLanguageJava: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoScriptLanguageOther: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoScriptLanguageVisualBasic: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+}
+

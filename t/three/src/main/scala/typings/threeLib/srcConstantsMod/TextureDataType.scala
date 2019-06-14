@@ -12,6 +12,6 @@ sealed trait TextureDataType extends js.Object
 @js.native
 object TextureDataType extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.TextureDataType with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.TextureDataType with scala.Nothing] = js.native
 }
 

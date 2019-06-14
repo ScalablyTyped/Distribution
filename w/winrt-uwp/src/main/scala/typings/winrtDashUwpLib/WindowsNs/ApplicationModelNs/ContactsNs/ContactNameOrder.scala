@@ -22,11 +22,11 @@ object ContactNameOrder extends js.Object {
   sealed trait lastNameFirstName
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactNameOrder
   
-  val firstNameLastName: firstNameLastName with java.lang.String = js.native
-  val lastNameFirstName: lastNameFirstName with java.lang.String = js.native
+  /* 0 */ val firstNameLastName: firstNameLastName with scala.Double = js.native
+  /* 1 */ val lastNameFirstName: lastNameFirstName with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactNameOrder with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactNameOrder with scala.Double
   ] = js.native
 }
 

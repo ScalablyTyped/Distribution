@@ -23,10 +23,10 @@ object CoreDispatcherPriority extends js.Object {
   sealed trait normal
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreDispatcherPriority
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
+  /* 2 */ val high: high with scala.Double = js.native
+  /* 0 */ val low: low with scala.Double = js.native
+  /* 1 */ val normal: normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreDispatcherPriority with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreDispatcherPriority with scala.Double] = js.native
 }
 

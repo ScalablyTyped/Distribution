@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 package object clientsAppmeshMod {
   type Arn = java.lang.String
+  type AwsCloudMapInstanceAttributeKey = java.lang.String
+  type AwsCloudMapInstanceAttributeValue = java.lang.String
+  type AwsCloudMapInstanceAttributes = js.Array[AwsCloudMapInstanceAttribute]
+  type AwsCloudMapName = java.lang.String
   type Backends = js.Array[Backend]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 

@@ -19,11 +19,11 @@ object Dimension extends js.Object {
   sealed trait ROWS
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Dimension
   
-  val COLUMNS: COLUMNS with java.lang.String = js.native
-  val ROWS: ROWS with java.lang.String = js.native
+  /* 0 */ val COLUMNS: COLUMNS with scala.Double = js.native
+  /* 1 */ val ROWS: ROWS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Dimension with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Dimension with scala.Double
   ] = js.native
 }
 

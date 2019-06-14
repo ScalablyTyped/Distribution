@@ -19,9 +19,9 @@ object Status extends js.Object {
   sealed trait OK
     extends navermapsLib.naverNs.mapsNs.ServiceNs.Status
   
-  val ERROR: ERROR with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
+  /* 1 */ val ERROR: ERROR with scala.Double = js.native
+  /* 0 */ val OK: OK with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[navermapsLib.naverNs.mapsNs.ServiceNs.Status with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.ServiceNs.Status with scala.Double] = js.native
 }
 

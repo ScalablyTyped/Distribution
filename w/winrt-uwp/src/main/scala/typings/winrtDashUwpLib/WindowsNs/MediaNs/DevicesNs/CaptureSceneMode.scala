@@ -77,22 +77,20 @@ object CaptureSceneMode extends js.Object {
   sealed trait sunset
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CaptureSceneMode
   
-  val auto: auto with java.lang.String = js.native
-  val backlit: backlit with java.lang.String = js.native
-  val beach: beach with java.lang.String = js.native
-  val candlelight: candlelight with java.lang.String = js.native
-  val landscape: landscape with java.lang.String = js.native
-  val `macro`: `macro` with java.lang.String = js.native
-  val manual: manual with java.lang.String = js.native
-  val night: night with java.lang.String = js.native
-  val nightPortrait: nightPortrait with java.lang.String = js.native
-  val portrait: portrait with java.lang.String = js.native
-  val snow: snow with java.lang.String = js.native
-  val sport: sport with java.lang.String = js.native
-  val sunset: sunset with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 12 */ val backlit: backlit with scala.Double = js.native
+  /* 7 */ val beach: beach with scala.Double = js.native
+  /* 9 */ val candlelight: candlelight with scala.Double = js.native
+  /* 10 */ val landscape: landscape with scala.Double = js.native
+  /* 2 */ val `macro`: `macro` with scala.Double = js.native
+  /* 1 */ val manual: manual with scala.Double = js.native
+  /* 6 */ val night: night with scala.Double = js.native
+  /* 11 */ val nightPortrait: nightPortrait with scala.Double = js.native
+  /* 3 */ val portrait: portrait with scala.Double = js.native
+  /* 5 */ val snow: snow with scala.Double = js.native
+  /* 4 */ val sport: sport with scala.Double = js.native
+  /* 8 */ val sunset: sunset with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CaptureSceneMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CaptureSceneMode with scala.Double] = js.native
 }
 

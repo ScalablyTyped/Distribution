@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcPrintItemLayout extends js.Object
 
+object AcPrintItemLayout {
+  @scala.inline
+  def acPRHorizontalColumnLayout: activexDashAccessLib.activexDashAccessLibNumbers.`1953` = this.cast(1953)
+  @scala.inline
+  def acPRVerticalColumnLayout: activexDashAccessLib.activexDashAccessLibNumbers.`1954` = this.cast(1954)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

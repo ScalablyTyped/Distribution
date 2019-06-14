@@ -49,8 +49,12 @@ trait Typeofjest extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def doMock(moduleName: java.lang.String): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
-  def doMock(moduleName: java.lang.String, factory: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
-  def doMock(moduleName: java.lang.String, factory: js.Any, options: jestLib.jestMod.jestNs.MockOptions): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
+  def doMock(moduleName: java.lang.String, factory: js.Function0[_]): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
+  def doMock(
+    moduleName: java.lang.String,
+    factory: js.Function0[_],
+    options: jestLib.jestMod.jestNs.MockOptions
+  ): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
     * Indicates that the module system should never return a mocked version
     * of the specified module from require() (e.g. that it should always return the real module).
@@ -87,8 +91,12 @@ trait Typeofjest extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def mock(moduleName: java.lang.String): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
-  def mock(moduleName: java.lang.String, factory: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
-  def mock(moduleName: java.lang.String, factory: js.Any, options: jestLib.jestMod.jestNs.MockOptions): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
+  def mock(moduleName: java.lang.String, factory: js.Function0[_]): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
+  def mock(
+    moduleName: java.lang.String,
+    factory: js.Function0[_],
+    options: jestLib.jestMod.jestNs.MockOptions
+  ): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
     * Returns the actual module instead of a mock, bypassing all checks on
     * whether the module should receive a mock implementation or not.

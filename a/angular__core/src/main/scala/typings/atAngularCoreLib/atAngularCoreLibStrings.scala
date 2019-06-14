@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atAngularCoreLibStrings {
   @js.native
+  sealed trait `*` extends js.Object
+  
+  @js.native
   sealed trait Anon_ChangeDetection extends js.Object
   
   @js.native
@@ -80,6 +83,8 @@ object atAngularCoreLibStrings {
   @js.native
   sealed trait ɵɵBaseDef extends js.Object
   
+  @scala.inline
+  def `*`: `*` = "*".asInstanceOf[`*`]
   @scala.inline
   def Anon_ChangeDetection: Anon_ChangeDetection = "Anon_ChangeDetection".asInstanceOf[Anon_ChangeDetection]
   @scala.inline

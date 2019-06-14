@@ -21,9 +21,9 @@ object Palette extends js.Object {
   sealed trait CustomPalette
     extends ejDotWebDotAllLib.ejNs.ColorPickerNs.Palette
   
-  val BasicPalette: BasicPalette with java.lang.String = js.native
-  val CustomPalette: CustomPalette with java.lang.String = js.native
+  /* 0 */ val BasicPalette: BasicPalette with scala.Double = js.native
+  /* 1 */ val CustomPalette: CustomPalette with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ColorPickerNs.Palette with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ColorPickerNs.Palette with scala.Double] = js.native
 }
 

@@ -21,9 +21,9 @@ object FilterType extends js.Object {
   sealed trait Menu
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.FilterType
   
-  val Excel: Excel with java.lang.String = js.native
-  val Menu: Menu with java.lang.String = js.native
+  /* 1 */ val Excel: Excel with scala.Double = js.native
+  /* 0 */ val Menu: Menu with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.FilterType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.FilterType with scala.Double] = js.native
 }
 

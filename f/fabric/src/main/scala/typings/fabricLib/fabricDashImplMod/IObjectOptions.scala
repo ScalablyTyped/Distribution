@@ -266,7 +266,7 @@ trait IObjectOptions extends js.Object {
   	 * You can calculate them without updating with @method calcCoords;
   	 * @memberOf fabric.Object.prototype
   	 */
-  var oCoords: js.UndefOr[fabricLib.Anon_BlBrMb] = js.undefined
+  var oCoords: js.UndefOr[fabricLib.Anon_BlBrMbMl] = js.undefined
   /**
   	 * When `true`, object is cached on an additional canvas.
   	 */
@@ -483,7 +483,7 @@ object IObjectOptions {
     moveCursor: java.lang.String = null,
     name: java.lang.String = null,
     noScaleCache: js.UndefOr[scala.Boolean] = js.undefined,
-    oCoords: fabricLib.Anon_BlBrMb = null,
+    oCoords: fabricLib.Anon_BlBrMbMl = null,
     objectCaching: js.UndefOr[scala.Boolean] = js.undefined,
     opacity: scala.Int | scala.Double = null,
     originX: java.lang.String = null,

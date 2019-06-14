@@ -31,14 +31,14 @@ object GuestStatus extends js.Object {
   sealed trait YES
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.GuestStatus
   
-  val INVITED: INVITED with java.lang.String = js.native
-  val MAYBE: MAYBE with java.lang.String = js.native
-  val NO: NO with java.lang.String = js.native
-  val OWNER: OWNER with java.lang.String = js.native
-  val YES: YES with java.lang.String = js.native
+  /* 0 */ val INVITED: INVITED with scala.Double = js.native
+  /* 1 */ val MAYBE: MAYBE with scala.Double = js.native
+  /* 2 */ val NO: NO with scala.Double = js.native
+  /* 3 */ val OWNER: OWNER with scala.Double = js.native
+  /* 4 */ val YES: YES with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.GuestStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.GuestStatus with scala.Double
   ] = js.native
 }
 

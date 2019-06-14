@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait XlArabicModes extends js.Object
 
+object XlArabicModes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlArabicBothStrict: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlArabicNone: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlArabicStrictAlefHamza: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlArabicStrictFinalYaa: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

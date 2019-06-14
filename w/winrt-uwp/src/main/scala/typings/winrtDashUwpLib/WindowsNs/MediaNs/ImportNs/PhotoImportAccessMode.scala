@@ -27,12 +27,12 @@ object PhotoImportAccessMode extends js.Object {
   sealed trait readWrite
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportAccessMode
   
-  val readAndDelete: readAndDelete with java.lang.String = js.native
-  val readOnly: readOnly with java.lang.String = js.native
-  val readWrite: readWrite with java.lang.String = js.native
+  /* 2 */ val readAndDelete: readAndDelete with scala.Double = js.native
+  /* 1 */ val readOnly: readOnly with scala.Double = js.native
+  /* 0 */ val readWrite: readWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportAccessMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportAccessMode with scala.Double
   ] = js.native
 }
 

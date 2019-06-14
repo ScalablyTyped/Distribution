@@ -26,10 +26,10 @@ object Trigger extends js.Object {
   sealed trait Hover
     extends ejDotWebDotAllLib.ejNs.TooltipNs.Trigger
   
-  val Click: Click with java.lang.String = js.native
-  val Focus: Focus with java.lang.String = js.native
-  val Hover: Hover with java.lang.String = js.native
+  /* 0 */ val Click: Click with scala.Double = js.native
+  /* 2 */ val Focus: Focus with scala.Double = js.native
+  /* 1 */ val Hover: Hover with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TooltipNs.Trigger with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TooltipNs.Trigger with scala.Double] = js.native
 }
 

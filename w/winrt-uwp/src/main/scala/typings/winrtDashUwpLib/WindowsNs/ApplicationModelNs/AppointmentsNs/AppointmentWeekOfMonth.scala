@@ -37,14 +37,14 @@ object AppointmentWeekOfMonth extends js.Object {
   sealed trait third
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentWeekOfMonth
   
-  val first: first with java.lang.String = js.native
-  val fourth: fourth with java.lang.String = js.native
-  val last: last with java.lang.String = js.native
-  val second: second with java.lang.String = js.native
-  val third: third with java.lang.String = js.native
+  /* 0 */ val first: first with scala.Double = js.native
+  /* 3 */ val fourth: fourth with scala.Double = js.native
+  /* 4 */ val last: last with scala.Double = js.native
+  /* 1 */ val second: second with scala.Double = js.native
+  /* 2 */ val third: third with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentWeekOfMonth with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentWeekOfMonth with scala.Double
   ] = js.native
 }
 

@@ -26,10 +26,10 @@ object LayerType extends js.Object {
   sealed trait Osm
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LayerType
   
-  val Bing: Bing with java.lang.String = js.native
-  val Geometry: Geometry with java.lang.String = js.native
-  val Osm: Osm with java.lang.String = js.native
+  /* 2 */ val Bing: Bing with scala.Double = js.native
+  /* 0 */ val Geometry: Geometry with scala.Double = js.native
+  /* 1 */ val Osm: Osm with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LayerType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LayerType with scala.Double] = js.native
 }
 

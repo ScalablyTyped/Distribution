@@ -22,11 +22,11 @@ object BluetoothCacheMode extends js.Object {
   sealed trait uncached
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothCacheMode
   
-  val cached: cached with java.lang.String = js.native
-  val uncached: uncached with java.lang.String = js.native
+  /* 0 */ val cached: cached with scala.Double = js.native
+  /* 1 */ val uncached: uncached with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothCacheMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothCacheMode with scala.Double
   ] = js.native
 }
 

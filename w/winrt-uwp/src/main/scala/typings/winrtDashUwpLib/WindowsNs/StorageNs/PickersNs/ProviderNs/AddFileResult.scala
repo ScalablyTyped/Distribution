@@ -32,13 +32,13 @@ object AddFileResult extends js.Object {
   sealed trait unavailable
     extends winrtDashUwpLib.WindowsNs.StorageNs.PickersNs.ProviderNs.AddFileResult
   
-  val added: added with java.lang.String = js.native
-  val alreadyAdded: alreadyAdded with java.lang.String = js.native
-  val notAllowed: notAllowed with java.lang.String = js.native
-  val unavailable: unavailable with java.lang.String = js.native
+  /* 0 */ val added: added with scala.Double = js.native
+  /* 1 */ val alreadyAdded: alreadyAdded with scala.Double = js.native
+  /* 2 */ val notAllowed: notAllowed with scala.Double = js.native
+  /* 3 */ val unavailable: unavailable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.PickersNs.ProviderNs.AddFileResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.PickersNs.ProviderNs.AddFileResult with scala.Double
   ] = js.native
 }
 

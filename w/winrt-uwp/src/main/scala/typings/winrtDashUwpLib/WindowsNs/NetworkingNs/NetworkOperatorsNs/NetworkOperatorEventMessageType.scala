@@ -77,22 +77,22 @@ object NetworkOperatorEventMessageType extends js.Object {
   sealed trait ussd
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkOperatorEventMessageType
   
-  val cdma: cdma with java.lang.String = js.native
-  val dataPlanDeleted: dataPlanDeleted with java.lang.String = js.native
-  val dataPlanReset: dataPlanReset with java.lang.String = js.native
-  val dataPlanThresholdReached: dataPlanThresholdReached with java.lang.String = js.native
-  val gsm: gsm with java.lang.String = js.native
-  val profileConnected: profileConnected with java.lang.String = js.native
-  val profileDisconnected: profileDisconnected with java.lang.String = js.native
-  val registeredHome: registeredHome with java.lang.String = js.native
-  val registeredRoaming: registeredRoaming with java.lang.String = js.native
-  val tetheringEntitlementCheck: tetheringEntitlementCheck with java.lang.String = js.native
-  val tetheringNumberOfClientsChanged: tetheringNumberOfClientsChanged with java.lang.String = js.native
-  val tetheringOperationalStateChanged: tetheringOperationalStateChanged with java.lang.String = js.native
-  val ussd: ussd with java.lang.String = js.native
+  /* 1 */ val cdma: cdma with scala.Double = js.native
+  /* 5 */ val dataPlanDeleted: dataPlanDeleted with scala.Double = js.native
+  /* 4 */ val dataPlanReset: dataPlanReset with scala.Double = js.native
+  /* 3 */ val dataPlanThresholdReached: dataPlanThresholdReached with scala.Double = js.native
+  /* 0 */ val gsm: gsm with scala.Double = js.native
+  /* 6 */ val profileConnected: profileConnected with scala.Double = js.native
+  /* 7 */ val profileDisconnected: profileDisconnected with scala.Double = js.native
+  /* 9 */ val registeredHome: registeredHome with scala.Double = js.native
+  /* 8 */ val registeredRoaming: registeredRoaming with scala.Double = js.native
+  /* 10 */ val tetheringEntitlementCheck: tetheringEntitlementCheck with scala.Double = js.native
+  /* 12 */ val tetheringNumberOfClientsChanged: tetheringNumberOfClientsChanged with scala.Double = js.native
+  /* 11 */ val tetheringOperationalStateChanged: tetheringOperationalStateChanged with scala.Double = js.native
+  /* 2 */ val ussd: ussd with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkOperatorEventMessageType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkOperatorEventMessageType with scala.Double
   ] = js.native
 }
 

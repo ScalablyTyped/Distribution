@@ -27,13 +27,13 @@ object DeveloperMetadataLocationType extends js.Object {
   sealed trait SPREADSHEET
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DeveloperMetadataLocationType
   
-  val COLUMN: COLUMN with java.lang.String = js.native
-  val ROW: ROW with java.lang.String = js.native
-  val SHEET: SHEET with java.lang.String = js.native
-  val SPREADSHEET: SPREADSHEET with java.lang.String = js.native
+  /* 3 */ val COLUMN: COLUMN with scala.Double = js.native
+  /* 2 */ val ROW: ROW with scala.Double = js.native
+  /* 1 */ val SHEET: SHEET with scala.Double = js.native
+  /* 0 */ val SPREADSHEET: SPREADSHEET with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DeveloperMetadataLocationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DeveloperMetadataLocationType with scala.Double
   ] = js.native
 }
 

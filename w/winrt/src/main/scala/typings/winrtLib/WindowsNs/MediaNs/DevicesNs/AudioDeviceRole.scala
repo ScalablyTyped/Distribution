@@ -19,9 +19,9 @@ object AudioDeviceRole extends js.Object {
   sealed trait default
     extends winrtLib.WindowsNs.MediaNs.DevicesNs.AudioDeviceRole
   
-  val communications: communications with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
+  /* 1 */ val communications: communications with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.DevicesNs.AudioDeviceRole with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.DevicesNs.AudioDeviceRole with scala.Double] = js.native
 }
 

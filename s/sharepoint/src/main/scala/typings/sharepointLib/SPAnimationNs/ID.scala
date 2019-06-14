@@ -99,29 +99,29 @@ object ID extends js.Object {
   sealed trait Test_Instant
     extends sharepointLib.SPAnimationNs.ID
   
-  val Basic_Fade: Basic_Fade with java.lang.String = js.native
-  val Basic_Move: Basic_Move with java.lang.String = js.native
-  val Basic_Opacity: Basic_Opacity with java.lang.String = js.native
-  val Basic_QuickFade: Basic_QuickFade with java.lang.String = js.native
-  val Basic_QuickShow: Basic_QuickShow with java.lang.String = js.native
-  val Basic_QuickSize: Basic_QuickSize with java.lang.String = js.native
-  val Basic_Show: Basic_Show with java.lang.String = js.native
-  val Basic_Size: Basic_Size with java.lang.String = js.native
-  val Basic_SlowShow: Basic_SlowShow with java.lang.String = js.native
-  val Basic_StrikeThrough: Basic_StrikeThrough with java.lang.String = js.native
-  val Content_SlideInFadeInGeneric: Content_SlideInFadeInGeneric with java.lang.String = js.native
-  val Content_SlideInFadeInLeft: Content_SlideInFadeInLeft with java.lang.String = js.native
-  val Content_SlideInFadeInLeftInc: Content_SlideInFadeInLeftInc with java.lang.String = js.native
-  val Content_SlideInFadeInRight: Content_SlideInFadeInRight with java.lang.String = js.native
-  val Content_SlideInFadeInRightInc: Content_SlideInFadeInRightInc with java.lang.String = js.native
-  val Content_SlideOutFadeOutRight: Content_SlideOutFadeOutRight with java.lang.String = js.native
-  val SmallObject_SlideInFadeInBottom: SmallObject_SlideInFadeInBottom with java.lang.String = js.native
-  val SmallObject_SlideInFadeInLeft: SmallObject_SlideInFadeInLeft with java.lang.String = js.native
-  val SmallObject_SlideInFadeInTop: SmallObject_SlideInFadeInTop with java.lang.String = js.native
-  val SmallObject_SlideOutFadeOutBottom: SmallObject_SlideOutFadeOutBottom with java.lang.String = js.native
-  val Test_Hold: Test_Hold with java.lang.String = js.native
-  val Test_Instant: Test_Instant with java.lang.String = js.native
+  /* 2 */ val Basic_Fade: Basic_Fade with scala.Double = js.native
+  /* 3 */ val Basic_Move: Basic_Move with scala.Double = js.native
+  /* 14 */ val Basic_Opacity: Basic_Opacity with scala.Double = js.native
+  /* 16 */ val Basic_QuickFade: Basic_QuickFade with scala.Double = js.native
+  /* 15 */ val Basic_QuickShow: Basic_QuickShow with scala.Double = js.native
+  /* 21 */ val Basic_QuickSize: Basic_QuickSize with scala.Double = js.native
+  /* 0 */ val Basic_Show: Basic_Show with scala.Double = js.native
+  /* 4 */ val Basic_Size: Basic_Size with scala.Double = js.native
+  /* 1 */ val Basic_SlowShow: Basic_SlowShow with scala.Double = js.native
+  /* 18 */ val Basic_StrikeThrough: Basic_StrikeThrough with scala.Double = js.native
+  /* 17 */ val Content_SlideInFadeInGeneric: Content_SlideInFadeInGeneric with scala.Double = js.native
+  /* 8 */ val Content_SlideInFadeInLeft: Content_SlideInFadeInLeft with scala.Double = js.native
+  /* 9 */ val Content_SlideInFadeInLeftInc: Content_SlideInFadeInLeftInc with scala.Double = js.native
+  /* 5 */ val Content_SlideInFadeInRight: Content_SlideInFadeInRight with scala.Double = js.native
+  /* 6 */ val Content_SlideInFadeInRightInc: Content_SlideInFadeInRightInc with scala.Double = js.native
+  /* 7 */ val Content_SlideOutFadeOutRight: Content_SlideOutFadeOutRight with scala.Double = js.native
+  /* 19 */ val SmallObject_SlideInFadeInBottom: SmallObject_SlideInFadeInBottom with scala.Double = js.native
+  /* 11 */ val SmallObject_SlideInFadeInLeft: SmallObject_SlideInFadeInLeft with scala.Double = js.native
+  /* 10 */ val SmallObject_SlideInFadeInTop: SmallObject_SlideInFadeInTop with scala.Double = js.native
+  /* 20 */ val SmallObject_SlideOutFadeOutBottom: SmallObject_SlideOutFadeOutBottom with scala.Double = js.native
+  /* 13 */ val Test_Hold: Test_Hold with scala.Double = js.native
+  /* 12 */ val Test_Instant: Test_Instant with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPAnimationNs.ID with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPAnimationNs.ID with scala.Double] = js.native
 }
 

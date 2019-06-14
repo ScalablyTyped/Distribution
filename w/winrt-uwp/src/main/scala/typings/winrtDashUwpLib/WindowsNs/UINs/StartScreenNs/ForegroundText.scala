@@ -22,11 +22,9 @@ object ForegroundText extends js.Object {
   sealed trait light
     extends winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.ForegroundText
   
-  val dark: dark with java.lang.String = js.native
-  val light: light with java.lang.String = js.native
+  /* 0 */ val dark: dark with scala.Double = js.native
+  /* 1 */ val light: light with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.ForegroundText with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.ForegroundText with scala.Double] = js.native
 }
 

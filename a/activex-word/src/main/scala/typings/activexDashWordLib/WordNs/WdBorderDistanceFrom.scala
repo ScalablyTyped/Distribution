@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdBorderDistanceFrom extends js.Object
 
+object WdBorderDistanceFrom {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdBorderDistanceFromPageEdge: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdBorderDistanceFromText: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

@@ -155,45 +155,45 @@ object DateTimeFormat extends js.Object {
   sealed trait YEAR_QUARTER_ABBR
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.DateTimeFormat
   
-  val DATE_FULL: DATE_FULL with java.lang.String = js.native
-  val DATE_LONG: DATE_LONG with java.lang.String = js.native
-  val DATE_MEDIUM: DATE_MEDIUM with java.lang.String = js.native
-  val DATE_SHORT: DATE_SHORT with java.lang.String = js.native
-  val DATE_TIME_FULL: DATE_TIME_FULL with java.lang.String = js.native
-  val DATE_TIME_LONG: DATE_TIME_LONG with java.lang.String = js.native
-  val DATE_TIME_MEDIUM: DATE_TIME_MEDIUM with java.lang.String = js.native
-  val DATE_TIME_SHORT: DATE_TIME_SHORT with java.lang.String = js.native
-  val DAY: DAY with java.lang.String = js.native
-  val HOUR24_MINUTE: HOUR24_MINUTE with java.lang.String = js.native
-  val HOUR24_MINUTE_SECOND: HOUR24_MINUTE_SECOND with java.lang.String = js.native
-  val HOUR_MINUTE: HOUR_MINUTE with java.lang.String = js.native
-  val HOUR_MINUTE_SECOND: HOUR_MINUTE_SECOND with java.lang.String = js.native
-  val ISO_8601: ISO_8601 with java.lang.String = js.native
-  val MINUTE_SECOND: MINUTE_SECOND with java.lang.String = js.native
-  val MONTH: MONTH with java.lang.String = js.native
-  val MONTH_ABBR: MONTH_ABBR with java.lang.String = js.native
-  val MONTH_ABBR_DAY: MONTH_ABBR_DAY with java.lang.String = js.native
-  val MONTH_DAY: MONTH_DAY with java.lang.String = js.native
-  val MONTH_NUM_DAY: MONTH_NUM_DAY with java.lang.String = js.native
-  val MONTH_WEEKDAY_DAY: MONTH_WEEKDAY_DAY with java.lang.String = js.native
-  val RFC_2822: RFC_2822 with java.lang.String = js.native
-  val TIME_FULL: TIME_FULL with java.lang.String = js.native
-  val TIME_LONG: TIME_LONG with java.lang.String = js.native
-  val TIME_MEDIUM: TIME_MEDIUM with java.lang.String = js.native
-  val TIME_SHORT: TIME_SHORT with java.lang.String = js.native
-  val YEAR: YEAR with java.lang.String = js.native
-  val YEAR_MONTH: YEAR_MONTH with java.lang.String = js.native
-  val YEAR_MONTH_ABBR: YEAR_MONTH_ABBR with java.lang.String = js.native
-  val YEAR_MONTH_ABBR_DAY: YEAR_MONTH_ABBR_DAY with java.lang.String = js.native
-  val YEAR_MONTH_DAY: YEAR_MONTH_DAY with java.lang.String = js.native
-  val YEAR_MONTH_NUM: YEAR_MONTH_NUM with java.lang.String = js.native
-  val YEAR_MONTH_NUM_DAY: YEAR_MONTH_NUM_DAY with java.lang.String = js.native
-  val YEAR_MONTH_WEEKDAY_DAY: YEAR_MONTH_WEEKDAY_DAY with java.lang.String = js.native
-  val YEAR_QUARTER: YEAR_QUARTER with java.lang.String = js.native
-  val YEAR_QUARTER_ABBR: YEAR_QUARTER_ABBR with java.lang.String = js.native
+  /* 2 */ val DATE_FULL: DATE_FULL with scala.Double = js.native
+  /* 3 */ val DATE_LONG: DATE_LONG with scala.Double = js.native
+  /* 4 */ val DATE_MEDIUM: DATE_MEDIUM with scala.Double = js.native
+  /* 5 */ val DATE_SHORT: DATE_SHORT with scala.Double = js.native
+  /* 10 */ val DATE_TIME_FULL: DATE_TIME_FULL with scala.Double = js.native
+  /* 11 */ val DATE_TIME_LONG: DATE_TIME_LONG with scala.Double = js.native
+  /* 12 */ val DATE_TIME_MEDIUM: DATE_TIME_MEDIUM with scala.Double = js.native
+  /* 13 */ val DATE_TIME_SHORT: DATE_TIME_SHORT with scala.Double = js.native
+  /* 14 */ val DAY: DAY with scala.Double = js.native
+  /* 17 */ val HOUR24_MINUTE: HOUR24_MINUTE with scala.Double = js.native
+  /* 18 */ val HOUR24_MINUTE_SECOND: HOUR24_MINUTE_SECOND with scala.Double = js.native
+  /* 15 */ val HOUR_MINUTE: HOUR_MINUTE with scala.Double = js.native
+  /* 16 */ val HOUR_MINUTE_SECOND: HOUR_MINUTE_SECOND with scala.Double = js.native
+  /* 0 */ val ISO_8601: ISO_8601 with scala.Double = js.native
+  /* 19 */ val MINUTE_SECOND: MINUTE_SECOND with scala.Double = js.native
+  /* 20 */ val MONTH: MONTH with scala.Double = js.native
+  /* 21 */ val MONTH_ABBR: MONTH_ABBR with scala.Double = js.native
+  /* 22 */ val MONTH_ABBR_DAY: MONTH_ABBR_DAY with scala.Double = js.native
+  /* 23 */ val MONTH_DAY: MONTH_DAY with scala.Double = js.native
+  /* 24 */ val MONTH_NUM_DAY: MONTH_NUM_DAY with scala.Double = js.native
+  /* 25 */ val MONTH_WEEKDAY_DAY: MONTH_WEEKDAY_DAY with scala.Double = js.native
+  /* 1 */ val RFC_2822: RFC_2822 with scala.Double = js.native
+  /* 6 */ val TIME_FULL: TIME_FULL with scala.Double = js.native
+  /* 7 */ val TIME_LONG: TIME_LONG with scala.Double = js.native
+  /* 8 */ val TIME_MEDIUM: TIME_MEDIUM with scala.Double = js.native
+  /* 9 */ val TIME_SHORT: TIME_SHORT with scala.Double = js.native
+  /* 26 */ val YEAR: YEAR with scala.Double = js.native
+  /* 27 */ val YEAR_MONTH: YEAR_MONTH with scala.Double = js.native
+  /* 28 */ val YEAR_MONTH_ABBR: YEAR_MONTH_ABBR with scala.Double = js.native
+  /* 29 */ val YEAR_MONTH_ABBR_DAY: YEAR_MONTH_ABBR_DAY with scala.Double = js.native
+  /* 30 */ val YEAR_MONTH_DAY: YEAR_MONTH_DAY with scala.Double = js.native
+  /* 31 */ val YEAR_MONTH_NUM: YEAR_MONTH_NUM with scala.Double = js.native
+  /* 32 */ val YEAR_MONTH_NUM_DAY: YEAR_MONTH_NUM_DAY with scala.Double = js.native
+  /* 33 */ val YEAR_MONTH_WEEKDAY_DAY: YEAR_MONTH_WEEKDAY_DAY with scala.Double = js.native
+  /* 34 */ val YEAR_QUARTER: YEAR_QUARTER with scala.Double = js.native
+  /* 35 */ val YEAR_QUARTER_ABBR: YEAR_QUARTER_ABBR with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.DateTimeFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.DateTimeFormat with scala.Double
   ] = js.native
 }
 

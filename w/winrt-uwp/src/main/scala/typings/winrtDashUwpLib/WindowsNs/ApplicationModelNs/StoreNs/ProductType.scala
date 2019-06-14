@@ -27,12 +27,12 @@ object ProductType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.ProductType
   
-  val consumable: consumable with java.lang.String = js.native
-  val durable: durable with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 2 */ val consumable: consumable with scala.Double = js.native
+  /* 1 */ val durable: durable with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.ProductType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.ProductType with scala.Double
   ] = js.native
 }
 

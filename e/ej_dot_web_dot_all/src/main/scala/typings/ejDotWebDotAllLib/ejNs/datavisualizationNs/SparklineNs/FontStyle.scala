@@ -21,11 +21,11 @@ object FontStyle extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.FontStyle
   
-  val Italic: Italic with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 1 */ val Italic: Italic with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.FontStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.FontStyle with scala.Double
   ] = js.native
 }
 

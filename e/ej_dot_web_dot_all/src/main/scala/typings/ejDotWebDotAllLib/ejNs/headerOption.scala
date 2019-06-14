@@ -19,9 +19,9 @@ object headerOption extends js.Object {
   sealed trait tHead
     extends ejDotWebDotAllLib.ejNs.headerOption
   
-  val row: row with java.lang.String = js.native
-  val tHead: tHead with java.lang.String = js.native
+  /* 0 */ val row: row with scala.Double = js.native
+  /* 1 */ val tHead: tHead with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.headerOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.headerOption with scala.Double] = js.native
 }
 

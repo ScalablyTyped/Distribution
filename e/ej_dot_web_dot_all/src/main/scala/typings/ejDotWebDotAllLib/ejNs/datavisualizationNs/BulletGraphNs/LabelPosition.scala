@@ -21,11 +21,11 @@ object LabelPosition extends js.Object {
   sealed trait Below
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.LabelPosition
   
-  val Above: Above with java.lang.String = js.native
-  val Below: Below with java.lang.String = js.native
+  /* 0 */ val Above: Above with scala.Double = js.native
+  /* 1 */ val Below: Below with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.LabelPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.LabelPosition with scala.Double
   ] = js.native
 }
 

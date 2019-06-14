@@ -25,11 +25,11 @@ object ChatRoomOperationType extends js.Object {
   sealed trait Unban
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.ChatRoomOperationType
   
-  val Ban: Ban with java.lang.String = js.native
-  val Unban: Unban with java.lang.String = js.native
+  /* 0 */ val Ban: Ban with scala.Double = js.native
+  /* 1 */ val Unban: Unban with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.ChatRoomOperationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    voximplantDashWebsdkLib.voximplantDashWebsdkMod.ChatRoomOperationType with scala.Double
   ] = js.native
 }
 

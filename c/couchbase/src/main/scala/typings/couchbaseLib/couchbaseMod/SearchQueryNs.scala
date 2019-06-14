@@ -383,9 +383,9 @@ object SearchQueryNs extends js.Object {
     sealed trait NOT_BOUNDED
       extends couchbaseLib.couchbaseMod.SearchQueryNs.Consistency
     
-    val NOT_BOUNDED: NOT_BOUNDED with java.lang.String = js.native
+    /* 0 */ val NOT_BOUNDED: NOT_BOUNDED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.SearchQueryNs.Consistency with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.SearchQueryNs.Consistency with scala.Double] = js.native
   }
   
   /**
@@ -414,11 +414,11 @@ object SearchQueryNs extends js.Object {
     sealed trait HTML
       extends couchbaseLib.couchbaseMod.SearchQueryNs.HighlightStyle
     
-    val ANSI: ANSI with java.lang.String = js.native
-    val DEFAULT: DEFAULT with java.lang.String = js.native
-    val HTML: HTML with java.lang.String = js.native
+    /* 2 */ val ANSI: ANSI with scala.Double = js.native
+    /* 0 */ val DEFAULT: DEFAULT with scala.Double = js.native
+    /* 1 */ val HTML: HTML with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.SearchQueryNs.HighlightStyle with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.SearchQueryNs.HighlightStyle with scala.Double] = js.native
   }
   
 }

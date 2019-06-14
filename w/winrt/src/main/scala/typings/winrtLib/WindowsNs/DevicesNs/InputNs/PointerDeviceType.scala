@@ -23,10 +23,10 @@ object PointerDeviceType extends js.Object {
   sealed trait touch
     extends winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType
   
-  val mouse: mouse with java.lang.String = js.native
-  val pen: pen with java.lang.String = js.native
-  val touch: touch with java.lang.String = js.native
+  /* 2 */ val mouse: mouse with scala.Double = js.native
+  /* 1 */ val pen: pen with scala.Double = js.native
+  /* 0 */ val touch: touch with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType with scala.Double] = js.native
 }
 

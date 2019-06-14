@@ -47,16 +47,16 @@ object MediaStreamSourceClosedReason extends js.Object {
   sealed trait unsupportedProtectionSystem
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSourceClosedReason
   
-  val appReportedError: appReportedError with java.lang.String = js.native
-  val done: done with java.lang.String = js.native
-  val missingSampleRequestedEventHandler: missingSampleRequestedEventHandler with java.lang.String = js.native
-  val protectionSystemFailure: protectionSystemFailure with java.lang.String = js.native
-  val unknownError: unknownError with java.lang.String = js.native
-  val unsupportedEncodingFormat: unsupportedEncodingFormat with java.lang.String = js.native
-  val unsupportedProtectionSystem: unsupportedProtectionSystem with java.lang.String = js.native
+  /* 2 */ val appReportedError: appReportedError with scala.Double = js.native
+  /* 0 */ val done: done with scala.Double = js.native
+  /* 6 */ val missingSampleRequestedEventHandler: missingSampleRequestedEventHandler with scala.Double = js.native
+  /* 4 */ val protectionSystemFailure: protectionSystemFailure with scala.Double = js.native
+  /* 1 */ val unknownError: unknownError with scala.Double = js.native
+  /* 5 */ val unsupportedEncodingFormat: unsupportedEncodingFormat with scala.Double = js.native
+  /* 3 */ val unsupportedProtectionSystem: unsupportedProtectionSystem with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSourceClosedReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSourceClosedReason with scala.Double
   ] = js.native
 }
 

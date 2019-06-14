@@ -37,14 +37,14 @@ object ClosedCaptionOpacity extends js.Object {
   sealed trait zeroPercent
     extends winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionOpacity
   
-  val default: default with java.lang.String = js.native
-  val oneHundredPercent: oneHundredPercent with java.lang.String = js.native
-  val seventyFivePercent: seventyFivePercent with java.lang.String = js.native
-  val twentyFivePercent: twentyFivePercent with java.lang.String = js.native
-  val zeroPercent: zeroPercent with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val oneHundredPercent: oneHundredPercent with scala.Double = js.native
+  /* 2 */ val seventyFivePercent: seventyFivePercent with scala.Double = js.native
+  /* 3 */ val twentyFivePercent: twentyFivePercent with scala.Double = js.native
+  /* 4 */ val zeroPercent: zeroPercent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionOpacity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionOpacity with scala.Double
   ] = js.native
 }
 

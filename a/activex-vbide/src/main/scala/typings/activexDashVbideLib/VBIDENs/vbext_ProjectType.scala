@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait vbext_ProjectType extends js.Object
 
+object vbext_ProjectType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def vbext_pt_HostProject: activexDashVbideLib.activexDashVbideLibNumbers.`100` = this.cast(100)
+  @scala.inline
+  def vbext_pt_StandAlone: activexDashVbideLib.activexDashVbideLibNumbers.`101` = this.cast(101)
+}
+

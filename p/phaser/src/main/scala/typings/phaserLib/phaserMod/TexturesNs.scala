@@ -204,10 +204,10 @@ object TexturesNs extends js.Object {
     */
   @js.native
   object FilterMode extends js.Object {
-    val LINEAR: phaserLib.PhaserNs.TexturesNs.FilterMode.LINEAR with java.lang.String = js.native
-    val NEAREST: phaserLib.PhaserNs.TexturesNs.FilterMode.NEAREST with java.lang.String = js.native
+    /* 0 */ val LINEAR: phaserLib.PhaserNs.TexturesNs.FilterMode.LINEAR with scala.Double = js.native
+    /* 1 */ val NEAREST: phaserLib.PhaserNs.TexturesNs.FilterMode.NEAREST with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.TexturesNs.FilterMode with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.TexturesNs.FilterMode with scala.Double] = js.native
   }
   
 }

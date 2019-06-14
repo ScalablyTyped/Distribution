@@ -42,15 +42,15 @@ object GeofenceMonitorStatus extends js.Object {
   sealed trait ready
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeofencingNs.GeofenceMonitorStatus
   
-  val disabled: disabled with java.lang.String = js.native
-  val initializing: initializing with java.lang.String = js.native
-  val noData: noData with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val notInitialized: notInitialized with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
+  /* 3 */ val disabled: disabled with scala.Double = js.native
+  /* 1 */ val initializing: initializing with scala.Double = js.native
+  /* 2 */ val noData: noData with scala.Double = js.native
+  /* 5 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 4 */ val notInitialized: notInitialized with scala.Double = js.native
+  /* 0 */ val ready: ready with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeofencingNs.GeofenceMonitorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeofencingNs.GeofenceMonitorStatus with scala.Double
   ] = js.native
 }
 

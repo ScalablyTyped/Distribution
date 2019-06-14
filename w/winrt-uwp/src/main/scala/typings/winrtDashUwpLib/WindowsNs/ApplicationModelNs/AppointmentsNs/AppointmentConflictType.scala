@@ -27,12 +27,12 @@ object AppointmentConflictType extends js.Object {
   sealed trait overlap
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentConflictType
   
-  val adjacent: adjacent with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val overlap: overlap with java.lang.String = js.native
+  /* 1 */ val adjacent: adjacent with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val overlap: overlap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentConflictType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentConflictType with scala.Double
   ] = js.native
 }
 

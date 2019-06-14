@@ -21,11 +21,9 @@ object RadiusMode extends js.Object {
   sealed trait MinMax
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.RadiusMode
   
-  val Auto: Auto with java.lang.String = js.native
-  val MinMax: MinMax with java.lang.String = js.native
+  /* 1 */ val Auto: Auto with scala.Double = js.native
+  /* 0 */ val MinMax: MinMax with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.RadiusMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.RadiusMode with scala.Double] = js.native
 }
 

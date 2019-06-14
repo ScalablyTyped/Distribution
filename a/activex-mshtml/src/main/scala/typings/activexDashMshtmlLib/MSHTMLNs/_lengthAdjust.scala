@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait _lengthAdjust extends js.Object
 
+object _lengthAdjust {
+  @scala.inline
+  def LENGTHADJUST_SPACING: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def LENGTHADJUST_SPACINGANDGLYPHS: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def LENGTHADJUST_UNKNOWN: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lengthAdjust_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

@@ -26,10 +26,10 @@ object HighlightSection extends js.Object {
   sealed trait WorkDays
     extends ejDotWebDotAllLib.ejNs.DatePickerNs.HighlightSection
   
-  val None: None with java.lang.String = js.native
-  val Week: Week with java.lang.String = js.native
-  val WorkDays: WorkDays with java.lang.String = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 0 */ val Week: Week with scala.Double = js.native
+  /* 1 */ val WorkDays: WorkDays with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.DatePickerNs.HighlightSection with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.DatePickerNs.HighlightSection with scala.Double] = js.native
 }
 

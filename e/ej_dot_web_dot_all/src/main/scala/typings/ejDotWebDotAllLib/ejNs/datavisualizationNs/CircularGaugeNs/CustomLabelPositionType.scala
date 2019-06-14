@@ -21,11 +21,11 @@ object CustomLabelPositionType extends js.Object {
   sealed trait Outer
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.CustomLabelPositionType
   
-  val Inner: Inner with java.lang.String = js.native
-  val Outer: Outer with java.lang.String = js.native
+  /* 0 */ val Inner: Inner with scala.Double = js.native
+  /* 1 */ val Outer: Outer with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.CustomLabelPositionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.CustomLabelPositionType with scala.Double
   ] = js.native
 }
 

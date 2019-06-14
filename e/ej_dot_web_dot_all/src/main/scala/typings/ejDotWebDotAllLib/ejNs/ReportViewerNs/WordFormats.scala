@@ -116,28 +116,28 @@ object WordFormats extends js.Object {
   sealed trait XML
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.WordFormats
   
-  val Automatic: Automatic with java.lang.String = js.native
-  val DOCX: DOCX with java.lang.String = js.native
-  val Doc: Doc with java.lang.String = js.native
-  val Dot: Dot with java.lang.String = js.native
-  val EPUB: EPUB with java.lang.String = js.native
-  val HTML: HTML with java.lang.String = js.native
-  val RTF: RTF with java.lang.String = js.native
-  val Txt: Txt with java.lang.String = js.native
-  val Word2007: Word2007 with java.lang.String = js.native
-  val Word2007Docm: Word2007Docm with java.lang.String = js.native
-  val Word2007Dotm: Word2007Dotm with java.lang.String = js.native
-  val Word2007Dotx: Word2007Dotx with java.lang.String = js.native
-  val Word2010: Word2010 with java.lang.String = js.native
-  val Word2010Docm: Word2010Docm with java.lang.String = js.native
-  val Word2010Dotm: Word2010Dotm with java.lang.String = js.native
-  val Word2010Dotx: Word2010Dotx with java.lang.String = js.native
-  val Word2013: Word2013 with java.lang.String = js.native
-  val Word2013Docm: Word2013Docm with java.lang.String = js.native
-  val Word2013Dotm: Word2013Dotm with java.lang.String = js.native
-  val Word2013Dotx: Word2013Dotx with java.lang.String = js.native
-  val XML: XML with java.lang.String = js.native
+  /* 20 */ val Automatic: Automatic with scala.Double = js.native
+  /* 2 */ val DOCX: DOCX with scala.Double = js.native
+  /* 0 */ val Doc: Doc with scala.Double = js.native
+  /* 1 */ val Dot: Dot with scala.Double = js.native
+  /* 17 */ val EPUB: EPUB with scala.Double = js.native
+  /* 18 */ val HTML: HTML with scala.Double = js.native
+  /* 15 */ val RTF: RTF with scala.Double = js.native
+  /* 16 */ val Txt: Txt with scala.Double = js.native
+  /* 3 */ val Word2007: Word2007 with scala.Double = js.native
+  /* 9 */ val Word2007Docm: Word2007Docm with scala.Double = js.native
+  /* 12 */ val Word2007Dotm: Word2007Dotm with scala.Double = js.native
+  /* 6 */ val Word2007Dotx: Word2007Dotx with scala.Double = js.native
+  /* 4 */ val Word2010: Word2010 with scala.Double = js.native
+  /* 10 */ val Word2010Docm: Word2010Docm with scala.Double = js.native
+  /* 13 */ val Word2010Dotm: Word2010Dotm with scala.Double = js.native
+  /* 7 */ val Word2010Dotx: Word2010Dotx with scala.Double = js.native
+  /* 5 */ val Word2013: Word2013 with scala.Double = js.native
+  /* 11 */ val Word2013Docm: Word2013Docm with scala.Double = js.native
+  /* 14 */ val Word2013Dotm: Word2013Dotm with scala.Double = js.native
+  /* 8 */ val Word2013Dotx: Word2013Dotx with scala.Double = js.native
+  /* 19 */ val XML: XML with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.WordFormats with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.WordFormats with scala.Double] = js.native
 }
 

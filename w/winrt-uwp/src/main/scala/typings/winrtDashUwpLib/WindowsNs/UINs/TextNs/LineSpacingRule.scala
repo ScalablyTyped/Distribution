@@ -52,15 +52,15 @@ object LineSpacingRule extends js.Object {
   sealed trait undefined
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.LineSpacingRule
   
-  val atLeast: atLeast with java.lang.String = js.native
-  val double: double with java.lang.String = js.native
-  val exactly: exactly with java.lang.String = js.native
-  val multiple: multiple with java.lang.String = js.native
-  val oneAndHalf: oneAndHalf with java.lang.String = js.native
-  val percent: percent with java.lang.String = js.native
-  val single: single with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 4 */ val atLeast: atLeast with scala.Double = js.native
+  /* 3 */ val double: double with scala.Double = js.native
+  /* 5 */ val exactly: exactly with scala.Double = js.native
+  /* 6 */ val multiple: multiple with scala.Double = js.native
+  /* 2 */ val oneAndHalf: oneAndHalf with scala.Double = js.native
+  /* 7 */ val percent: percent with scala.Double = js.native
+  /* 1 */ val single: single with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.LineSpacingRule with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.LineSpacingRule with scala.Double] = js.native
 }
 

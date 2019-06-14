@@ -41,15 +41,15 @@ object ExportingType extends js.Object {
   sealed trait XLSX
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ExportingType
   
-  val DOCX: DOCX with java.lang.String = js.native
-  val JPG: JPG with java.lang.String = js.native
-  val PDF: PDF with java.lang.String = js.native
-  val PNG: PNG with java.lang.String = js.native
-  val SVG: SVG with java.lang.String = js.native
-  val XLSX: XLSX with java.lang.String = js.native
+  /* 3 */ val DOCX: DOCX with scala.Double = js.native
+  /* 1 */ val JPG: JPG with scala.Double = js.native
+  /* 2 */ val PDF: PDF with scala.Double = js.native
+  /* 0 */ val PNG: PNG with scala.Double = js.native
+  /* 5 */ val SVG: SVG with scala.Double = js.native
+  /* 4 */ val XLSX: XLSX with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ExportingType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ExportingType with scala.Double
   ] = js.native
 }
 

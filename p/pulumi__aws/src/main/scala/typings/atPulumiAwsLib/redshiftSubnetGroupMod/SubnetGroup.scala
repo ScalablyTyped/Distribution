@@ -19,6 +19,10 @@ class SubnetGroup protected ()
   def this(name: java.lang.String, args: SubnetGroupArgs) = this()
   def this(name: java.lang.String, args: SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of the Redshift Subnet group name
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The description of the Redshift Subnet group. Defaults to "Managed by Terraform".
     */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

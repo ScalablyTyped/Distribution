@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait StandardStreamTypes extends js.Object
 
+object StandardStreamTypes {
+  @scala.inline
+  def StdErr: activexDashScriptingLib.activexDashScriptingLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def StdIn: activexDashScriptingLib.activexDashScriptingLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def StdOut: activexDashScriptingLib.activexDashScriptingLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

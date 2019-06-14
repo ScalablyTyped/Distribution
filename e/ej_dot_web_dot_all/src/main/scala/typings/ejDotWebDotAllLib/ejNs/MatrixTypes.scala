@@ -27,11 +27,11 @@ object MatrixTypes extends js.Object {
   sealed trait Unknown
     extends ejDotWebDotAllLib.ejNs.MatrixTypes
   
-  val Identity: Identity with java.lang.String = js.native
-  val Scaling: Scaling with java.lang.String = js.native
-  val Translation: Translation with java.lang.String = js.native
-  val Unknown: Unknown with java.lang.String = js.native
+  /* 0 */ val Identity: Identity with scala.Double = js.native
+  /* 1 */ val Scaling: Scaling with scala.Double = js.native
+  /* 2 */ val Translation: Translation with scala.Double = js.native
+  /* 3 */ val Unknown: Unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.MatrixTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.MatrixTypes with scala.Double] = js.native
 }
 

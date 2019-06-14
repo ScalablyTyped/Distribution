@@ -27,10 +27,10 @@ object VpnAppIdType extends js.Object {
   sealed trait packageFamilyName
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnAppIdType
   
-  val filePath: filePath with java.lang.String = js.native
-  val fullyQualifiedBinaryName: fullyQualifiedBinaryName with java.lang.String = js.native
-  val packageFamilyName: packageFamilyName with java.lang.String = js.native
+  /* 2 */ val filePath: filePath with scala.Double = js.native
+  /* 1 */ val fullyQualifiedBinaryName: fullyQualifiedBinaryName with scala.Double = js.native
+  /* 0 */ val packageFamilyName: packageFamilyName with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnAppIdType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnAppIdType with scala.Double] = js.native
 }
 

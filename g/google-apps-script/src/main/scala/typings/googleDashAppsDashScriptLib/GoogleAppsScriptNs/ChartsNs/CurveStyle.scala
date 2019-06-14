@@ -19,11 +19,11 @@ object CurveStyle extends js.Object {
   sealed trait SMOOTH
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.CurveStyle
   
-  val NORMAL: NORMAL with java.lang.String = js.native
-  val SMOOTH: SMOOTH with java.lang.String = js.native
+  /* 0 */ val NORMAL: NORMAL with scala.Double = js.native
+  /* 1 */ val SMOOTH: SMOOTH with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.CurveStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.CurveStyle with scala.Double
   ] = js.native
 }
 

@@ -28,9 +28,9 @@ object DrawingStyle extends js.Object {
     extends navermapsLib.naverNs.mapsNs.drawingNs.DrawingStyle
   
   /* 0 */ val HORIZONTAL: HORIZONTAL with scala.Double = js.native
-  val HORIZONTAL_2: HORIZONTAL_2 with scala.Double = js.native
-  val VERTICAL: VERTICAL with scala.Double = js.native
-  val VERTICAL_2: VERTICAL_2 with scala.Double = js.native
+  /* 1 */ val HORIZONTAL_2: HORIZONTAL_2 with scala.Double = js.native
+  /* 0 */ val VERTICAL: VERTICAL with scala.Double = js.native
+  /* 2 */ val VERTICAL_2: VERTICAL_2 with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.drawingNs.DrawingStyle with scala.Double] = js.native
 }

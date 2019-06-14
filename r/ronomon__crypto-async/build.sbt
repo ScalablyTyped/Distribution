@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ronomon__crypto-async"
-version := "2.0-dt-20180214Z-3afa3e"
+version := "2.0-dt-20180214Z-8338f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -36,14 +36,14 @@ object LayoutTypes extends js.Object {
   sealed trait SymmetricLayout
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LayoutTypes
   
-  val HierarchicalTree: HierarchicalTree with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val OrganizationalChart: OrganizationalChart with java.lang.String = js.native
-  val RadialTree: RadialTree with java.lang.String = js.native
-  val SymmetricLayout: SymmetricLayout with java.lang.String = js.native
+  /* 1 */ val HierarchicalTree: HierarchicalTree with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val OrganizationalChart: OrganizationalChart with scala.Double = js.native
+  /* 3 */ val RadialTree: RadialTree with scala.Double = js.native
+  /* 4 */ val SymmetricLayout: SymmetricLayout with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LayoutTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LayoutTypes with scala.Double
   ] = js.native
 }
 

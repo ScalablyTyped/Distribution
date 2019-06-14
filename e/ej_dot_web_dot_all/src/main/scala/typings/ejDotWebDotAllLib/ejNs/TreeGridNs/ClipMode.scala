@@ -21,9 +21,9 @@ object ClipMode extends js.Object {
   sealed trait Ellipsis
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.ClipMode
   
-  val Clip: Clip with java.lang.String = js.native
-  val Ellipsis: Ellipsis with java.lang.String = js.native
+  /* 1 */ val Clip: Clip with scala.Double = js.native
+  /* 0 */ val Ellipsis: Ellipsis with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ClipMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ClipMode with scala.Double] = js.native
 }
 

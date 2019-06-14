@@ -31,12 +31,12 @@ object CameraEventType extends js.Object {
   sealed trait WHEEL
     extends cesiumLib.cesiumMod.CameraEventType
   
-  val LEFT_DRAG: LEFT_DRAG with java.lang.String = js.native
-  val MIDDLE_DRAG: MIDDLE_DRAG with java.lang.String = js.native
-  val PINCH: PINCH with java.lang.String = js.native
-  val RIGHT_DRAG: RIGHT_DRAG with java.lang.String = js.native
-  val WHEEL: WHEEL with java.lang.String = js.native
+  /* 0 */ val LEFT_DRAG: LEFT_DRAG with scala.Double = js.native
+  /* 2 */ val MIDDLE_DRAG: MIDDLE_DRAG with scala.Double = js.native
+  /* 4 */ val PINCH: PINCH with scala.Double = js.native
+  /* 1 */ val RIGHT_DRAG: RIGHT_DRAG with scala.Double = js.native
+  /* 3 */ val WHEEL: WHEEL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.CameraEventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.CameraEventType with scala.Double] = js.native
 }
 

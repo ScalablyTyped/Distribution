@@ -19,9 +19,9 @@ object RankBy extends js.Object {
   sealed trait PROMINENCE
     extends googlemapsLib.googleNs.mapsNs.placesNs.RankBy
   
-  val DISTANCE: DISTANCE with java.lang.String = js.native
-  val PROMINENCE: PROMINENCE with java.lang.String = js.native
+  /* 0 */ val DISTANCE: DISTANCE with scala.Double = js.native
+  /* 1 */ val PROMINENCE: PROMINENCE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.placesNs.RankBy with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.placesNs.RankBy with scala.Double] = js.native
 }
 

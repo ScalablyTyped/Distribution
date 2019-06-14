@@ -47,16 +47,16 @@ object CoreAcceleratorKeyEventType extends js.Object {
   sealed trait unicodeCharacter
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreAcceleratorKeyEventType
   
-  val character: character with java.lang.String = js.native
-  val deadCharacter: deadCharacter with java.lang.String = js.native
-  val keyDown: keyDown with java.lang.String = js.native
-  val keyUp: keyUp with java.lang.String = js.native
-  val systemCharacter: systemCharacter with java.lang.String = js.native
-  val systemDeadCharacter: systemDeadCharacter with java.lang.String = js.native
-  val systemKeyDown: systemKeyDown with java.lang.String = js.native
-  val systemKeyUp: systemKeyUp with java.lang.String = js.native
-  val unicodeCharacter: unicodeCharacter with java.lang.String = js.native
+  /* 0 */ val character: character with scala.Double = js.native
+  /* 1 */ val deadCharacter: deadCharacter with scala.Double = js.native
+  /* 2 */ val keyDown: keyDown with scala.Double = js.native
+  /* 3 */ val keyUp: keyUp with scala.Double = js.native
+  /* 4 */ val systemCharacter: systemCharacter with scala.Double = js.native
+  /* 5 */ val systemDeadCharacter: systemDeadCharacter with scala.Double = js.native
+  /* 6 */ val systemKeyDown: systemKeyDown with scala.Double = js.native
+  /* 7 */ val systemKeyUp: systemKeyUp with scala.Double = js.native
+  /* 8 */ val unicodeCharacter: unicodeCharacter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreAcceleratorKeyEventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreAcceleratorKeyEventType with scala.Double] = js.native
 }
 

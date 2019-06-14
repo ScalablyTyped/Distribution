@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "youtube"
-version := "0.0-unknown-dt-20190610Z-e1adbe"
+version := "0.0-unknown-dt-20190610Z-394b5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

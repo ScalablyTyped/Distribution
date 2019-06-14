@@ -32,13 +32,13 @@ object DeviceAccessStatus extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceAccessStatus
   
-  val allowed: allowed with java.lang.String = js.native
-  val deniedBySystem: deniedBySystem with java.lang.String = js.native
-  val deniedByUser: deniedByUser with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 1 */ val allowed: allowed with scala.Double = js.native
+  /* 3 */ val deniedBySystem: deniedBySystem with scala.Double = js.native
+  /* 2 */ val deniedByUser: deniedByUser with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceAccessStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceAccessStatus with scala.Double
   ] = js.native
 }
 

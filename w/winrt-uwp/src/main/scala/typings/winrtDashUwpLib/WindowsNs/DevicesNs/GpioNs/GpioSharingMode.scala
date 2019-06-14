@@ -22,9 +22,9 @@ object GpioSharingMode extends js.Object {
   sealed trait sharedReadOnly
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioSharingMode
   
-  val exclusive: exclusive with java.lang.String = js.native
-  val sharedReadOnly: sharedReadOnly with java.lang.String = js.native
+  /* 0 */ val exclusive: exclusive with scala.Double = js.native
+  /* 1 */ val sharedReadOnly: sharedReadOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioSharingMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioSharingMode with scala.Double] = js.native
 }
 

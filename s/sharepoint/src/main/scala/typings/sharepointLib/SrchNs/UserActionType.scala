@@ -35,13 +35,13 @@ object UserActionType extends js.Object {
   sealed trait sort
     extends sharepointLib.SrchNs.UserActionType
   
-  val filterLanguage: filterLanguage with java.lang.String = js.native
-  val pageNext: pageNext with java.lang.String = js.native
-  val pagePrev: pagePrev with java.lang.String = js.native
-  val refine: refine with java.lang.String = js.native
-  val search: search with java.lang.String = js.native
-  val sort: sort with java.lang.String = js.native
+  /* 5 */ val filterLanguage: filterLanguage with scala.Double = js.native
+  /* 1 */ val pageNext: pageNext with scala.Double = js.native
+  /* 2 */ val pagePrev: pagePrev with scala.Double = js.native
+  /* 3 */ val refine: refine with scala.Double = js.native
+  /* 0 */ val search: search with scala.Double = js.native
+  /* 4 */ val sort: sort with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SrchNs.UserActionType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SrchNs.UserActionType with scala.Double] = js.native
 }
 

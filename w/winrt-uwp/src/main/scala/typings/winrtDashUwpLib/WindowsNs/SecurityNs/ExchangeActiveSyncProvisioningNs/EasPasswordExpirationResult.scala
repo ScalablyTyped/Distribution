@@ -57,18 +57,18 @@ object EasPasswordExpirationResult extends js.Object {
   sealed trait userCannotChangePassword
     extends winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasPasswordExpirationResult
   
-  val adminsCannotChangePassword: adminsCannotChangePassword with java.lang.String = js.native
-  val canBeCompliant: canBeCompliant with java.lang.String = js.native
-  val compliant: compliant with java.lang.String = js.native
-  val invalidParameter: invalidParameter with java.lang.String = js.native
-  val localControlledUsersCannotChangePassword: localControlledUsersCannotChangePassword with java.lang.String = js.native
-  val notEvaluated: notEvaluated with java.lang.String = js.native
-  val requestedExpirationIncompatible: requestedExpirationIncompatible with java.lang.String = js.native
-  val requestedPolicyIsStricter: requestedPolicyIsStricter with java.lang.String = js.native
-  val userCannotChangePassword: userCannotChangePassword with java.lang.String = js.native
+  /* 7 */ val adminsCannotChangePassword: adminsCannotChangePassword with scala.Double = js.native
+  /* 2 */ val canBeCompliant: canBeCompliant with scala.Double = js.native
+  /* 1 */ val compliant: compliant with scala.Double = js.native
+  /* 5 */ val invalidParameter: invalidParameter with scala.Double = js.native
+  /* 8 */ val localControlledUsersCannotChangePassword: localControlledUsersCannotChangePassword with scala.Double = js.native
+  /* 0 */ val notEvaluated: notEvaluated with scala.Double = js.native
+  /* 4 */ val requestedExpirationIncompatible: requestedExpirationIncompatible with scala.Double = js.native
+  /* 3 */ val requestedPolicyIsStricter: requestedPolicyIsStricter with scala.Double = js.native
+  /* 6 */ val userCannotChangePassword: userCannotChangePassword with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasPasswordExpirationResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasPasswordExpirationResult with scala.Double
   ] = js.native
 }
 

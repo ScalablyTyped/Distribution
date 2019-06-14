@@ -23,10 +23,10 @@ object EventReceiverSynchronization extends js.Object {
   sealed trait synchronous
     extends sharepointLib.SPNs.EventReceiverSynchronization
   
-  val asynchronous: asynchronous with java.lang.String = js.native
-  val defaultSynchronization: defaultSynchronization with java.lang.String = js.native
-  val synchronous: synchronous with java.lang.String = js.native
+  /* 2 */ val asynchronous: asynchronous with scala.Double = js.native
+  /* 0 */ val defaultSynchronization: defaultSynchronization with scala.Double = js.native
+  /* 1 */ val synchronous: synchronous with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.EventReceiverSynchronization with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.EventReceiverSynchronization with scala.Double] = js.native
 }
 

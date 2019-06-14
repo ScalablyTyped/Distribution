@@ -28,11 +28,11 @@ object ControlMode extends js.Object {
   sealed trait newMode
     extends sharepointLib.SPNs.ControlMode
   
-  val displayMode: displayMode with java.lang.String = js.native
-  val editMode: editMode with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val newMode: newMode with java.lang.String = js.native
+  /* 1 */ val displayMode: displayMode with scala.Double = js.native
+  /* 2 */ val editMode: editMode with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 3 */ val newMode: newMode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ControlMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ControlMode with scala.Double] = js.native
 }
 

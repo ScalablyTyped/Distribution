@@ -27,12 +27,12 @@ object AppointmentParticipantRole extends js.Object {
   sealed trait resource
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentParticipantRole
   
-  val optionalAttendee: optionalAttendee with java.lang.String = js.native
-  val requiredAttendee: requiredAttendee with java.lang.String = js.native
-  val resource: resource with java.lang.String = js.native
+  /* 1 */ val optionalAttendee: optionalAttendee with scala.Double = js.native
+  /* 0 */ val requiredAttendee: requiredAttendee with scala.Double = js.native
+  /* 2 */ val resource: resource with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentParticipantRole with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentParticipantRole with scala.Double
   ] = js.native
 }
 

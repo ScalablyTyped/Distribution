@@ -31,14 +31,12 @@ object Button extends js.Object {
   sealed trait YES
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Button
   
-  val CANCEL: CANCEL with java.lang.String = js.native
-  val CLOSE: CLOSE with java.lang.String = js.native
-  val NO: NO with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val YES: YES with java.lang.String = js.native
+  /* 2 */ val CANCEL: CANCEL with scala.Double = js.native
+  /* 0 */ val CLOSE: CLOSE with scala.Double = js.native
+  /* 4 */ val NO: NO with scala.Double = js.native
+  /* 1 */ val OK: OK with scala.Double = js.native
+  /* 3 */ val YES: YES with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Button with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Button with scala.Double] = js.native
 }
 

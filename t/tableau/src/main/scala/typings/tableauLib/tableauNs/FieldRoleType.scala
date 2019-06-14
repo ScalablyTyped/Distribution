@@ -23,10 +23,10 @@ object FieldRoleType extends js.Object {
   sealed trait UKNOWN
     extends tableauLib.tableauNs.FieldRoleType
   
-  val DIMENSION: DIMENSION with java.lang.String = js.native
-  val MEASURE: MEASURE with java.lang.String = js.native
-  val UKNOWN: UKNOWN with java.lang.String = js.native
+  /* 0 */ val DIMENSION: DIMENSION with scala.Double = js.native
+  /* 1 */ val MEASURE: MEASURE with scala.Double = js.native
+  /* 2 */ val UKNOWN: UKNOWN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[tableauLib.tableauNs.FieldRoleType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[tableauLib.tableauNs.FieldRoleType with scala.Double] = js.native
 }
 

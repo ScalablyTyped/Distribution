@@ -18,3 +18,26 @@ import scala.scalajs.js.annotation._
 */
 trait XlPieSliceIndex extends js.Object
 
+object XlPieSliceIndex {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlCenterPoint: activexDashExcelLib.activexDashExcelLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def xlInnerCenterPoint: activexDashExcelLib.activexDashExcelLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def xlInnerClockwisePoint: activexDashExcelLib.activexDashExcelLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def xlInnerCounterClockwisePoint: activexDashExcelLib.activexDashExcelLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def xlMidClockwiseRadiusPoint: activexDashExcelLib.activexDashExcelLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def xlMidCounterClockwiseRadiusPoint: activexDashExcelLib.activexDashExcelLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def xlOuterCenterPoint: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlOuterClockwisePoint: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlOuterCounterClockwisePoint: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+}
+

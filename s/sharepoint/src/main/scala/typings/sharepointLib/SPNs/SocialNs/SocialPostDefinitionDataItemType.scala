@@ -37,15 +37,13 @@ object SocialPostDefinitionDataItemType extends js.Object {
   sealed trait user
     extends sharepointLib.SPNs.SocialNs.SocialPostDefinitionDataItemType
   
-  val document: document with java.lang.String = js.native
-  val link: link with java.lang.String = js.native
-  val site: site with java.lang.String = js.native
-  val tag: tag with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
-  val user: user with java.lang.String = js.native
+  /* 2 */ val document: document with scala.Double = js.native
+  /* 5 */ val link: link with scala.Double = js.native
+  /* 3 */ val site: site with scala.Double = js.native
+  /* 4 */ val tag: tag with scala.Double = js.native
+  /* 0 */ val text: text with scala.Double = js.native
+  /* 1 */ val user: user with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.SocialNs.SocialPostDefinitionDataItemType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialPostDefinitionDataItemType with scala.Double] = js.native
 }
 

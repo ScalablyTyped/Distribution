@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "synaptic"
-version := "1.0.9-dt-20190322Z-b6b84a"
+version := "1.0.9-dt-20190322Z-35600e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

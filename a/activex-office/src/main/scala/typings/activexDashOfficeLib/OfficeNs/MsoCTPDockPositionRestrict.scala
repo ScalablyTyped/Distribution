@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait MsoCTPDockPositionRestrict extends js.Object
 
+object MsoCTPDockPositionRestrict {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoCTPDockPositionRestrictNoChange: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoCTPDockPositionRestrictNoHorizontal: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoCTPDockPositionRestrictNoVertical: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoCTPDockPositionRestrictNone: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+}
+

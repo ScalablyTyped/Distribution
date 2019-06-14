@@ -28,9 +28,9 @@ object FetchError extends js.Object {
   sealed trait noResponse
     extends winjsLib.WinJSNs.UINs.FetchError
   
-  val doesNotExist: doesNotExist with java.lang.String = js.native
-  val noResponse: noResponse with java.lang.String = js.native
+  /* 1 */ val doesNotExist: doesNotExist with scala.Double = js.native
+  /* 0 */ val noResponse: noResponse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.FetchError with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.FetchError with scala.Double] = js.native
 }
 

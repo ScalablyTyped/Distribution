@@ -35,12 +35,12 @@ object UpdateSerializeMode extends js.Object {
   sealed trait PropLocalizedOnly
     extends sharepointLib.SPNs.JsGridNs.UpdateSerializeMode
   
-  val Cancel: Cancel with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val PropBoth: PropBoth with java.lang.String = js.native
-  val PropDataOnly: PropDataOnly with java.lang.String = js.native
-  val PropLocalizedOnly: PropLocalizedOnly with java.lang.String = js.native
+  /* 0 */ val Cancel: Cancel with scala.Double = js.native
+  /* 1 */ val Default: Default with scala.Double = js.native
+  /* 4 */ val PropBoth: PropBoth with scala.Double = js.native
+  /* 2 */ val PropDataOnly: PropDataOnly with scala.Double = js.native
+  /* 3 */ val PropLocalizedOnly: PropLocalizedOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.UpdateSerializeMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.UpdateSerializeMode with scala.Double] = js.native
 }
 

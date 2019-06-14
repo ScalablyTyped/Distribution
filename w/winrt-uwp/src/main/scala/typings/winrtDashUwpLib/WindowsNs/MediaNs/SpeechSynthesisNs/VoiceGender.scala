@@ -22,11 +22,11 @@ object VoiceGender extends js.Object {
   sealed trait male
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechSynthesisNs.VoiceGender
   
-  val female: female with java.lang.String = js.native
-  val male: male with java.lang.String = js.native
+  /* 1 */ val female: female with scala.Double = js.native
+  /* 0 */ val male: male with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechSynthesisNs.VoiceGender with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechSynthesisNs.VoiceGender with scala.Double
   ] = js.native
 }
 

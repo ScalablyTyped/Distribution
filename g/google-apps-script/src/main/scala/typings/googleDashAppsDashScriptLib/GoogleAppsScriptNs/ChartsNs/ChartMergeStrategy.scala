@@ -19,11 +19,11 @@ object ChartMergeStrategy extends js.Object {
   sealed trait MERGE_ROWS
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy
   
-  val MERGE_COLUMNS: MERGE_COLUMNS with java.lang.String = js.native
-  val MERGE_ROWS: MERGE_ROWS with java.lang.String = js.native
+  /* 0 */ val MERGE_COLUMNS: MERGE_COLUMNS with scala.Double = js.native
+  /* 1 */ val MERGE_ROWS: MERGE_ROWS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy with scala.Double
   ] = js.native
 }
 

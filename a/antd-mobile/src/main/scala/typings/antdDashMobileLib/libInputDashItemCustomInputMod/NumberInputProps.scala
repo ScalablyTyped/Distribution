@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NumberInputProps extends js.Object {
+  var autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined
   var backspaceLabel: js.Any
   var cancelKeyboardLabel: js.Any
   var confirmLabel: js.Any
@@ -37,6 +38,7 @@ object NumberInputProps {
     backspaceLabel: js.Any,
     cancelKeyboardLabel: js.Any,
     confirmLabel: js.Any,
+    autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     keyboardPrefixCls: java.lang.String = null,
@@ -55,6 +57,7 @@ object NumberInputProps {
     value: java.lang.String = null
   ): NumberInputProps = {
     val __obj = js.Dynamic.literal(backspaceLabel = backspaceLabel, cancelKeyboardLabel = cancelKeyboardLabel, confirmLabel = confirmLabel)
+    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (keyboardPrefixCls != null) __obj.updateDynamic("keyboardPrefixCls")(keyboardPrefixCls)

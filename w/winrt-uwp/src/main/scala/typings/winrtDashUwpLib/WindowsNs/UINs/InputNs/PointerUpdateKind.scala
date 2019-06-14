@@ -67,18 +67,18 @@ object PointerUpdateKind extends js.Object {
   sealed trait xbutton2Released
     extends winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerUpdateKind
   
-  val leftButtonPressed: leftButtonPressed with java.lang.String = js.native
-  val leftButtonReleased: leftButtonReleased with java.lang.String = js.native
-  val middleButtonPressed: middleButtonPressed with java.lang.String = js.native
-  val middleButtonReleased: middleButtonReleased with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val rightButtonPressed: rightButtonPressed with java.lang.String = js.native
-  val rightButtonReleased: rightButtonReleased with java.lang.String = js.native
-  val xbutton1Pressed: xbutton1Pressed with java.lang.String = js.native
-  val xbutton1Released: xbutton1Released with java.lang.String = js.native
-  val xbutton2Pressed: xbutton2Pressed with java.lang.String = js.native
-  val xbutton2Released: xbutton2Released with java.lang.String = js.native
+  /* 1 */ val leftButtonPressed: leftButtonPressed with scala.Double = js.native
+  /* 2 */ val leftButtonReleased: leftButtonReleased with scala.Double = js.native
+  /* 5 */ val middleButtonPressed: middleButtonPressed with scala.Double = js.native
+  /* 6 */ val middleButtonReleased: middleButtonReleased with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 3 */ val rightButtonPressed: rightButtonPressed with scala.Double = js.native
+  /* 4 */ val rightButtonReleased: rightButtonReleased with scala.Double = js.native
+  /* 7 */ val xbutton1Pressed: xbutton1Pressed with scala.Double = js.native
+  /* 8 */ val xbutton1Released: xbutton1Released with scala.Double = js.native
+  /* 9 */ val xbutton2Pressed: xbutton2Pressed with scala.Double = js.native
+  /* 10 */ val xbutton2Released: xbutton2Released with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerUpdateKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerUpdateKind with scala.Double] = js.native
 }
 

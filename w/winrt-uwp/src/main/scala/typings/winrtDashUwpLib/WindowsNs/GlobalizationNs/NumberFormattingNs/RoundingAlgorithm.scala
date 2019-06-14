@@ -67,20 +67,20 @@ object RoundingAlgorithm extends js.Object {
   sealed trait roundUp
     extends winrtDashUwpLib.WindowsNs.GlobalizationNs.NumberFormattingNs.RoundingAlgorithm
   
-  val none: none with java.lang.String = js.native
-  val roundAwayFromZero: roundAwayFromZero with java.lang.String = js.native
-  val roundDown: roundDown with java.lang.String = js.native
-  val roundHalfAwayFromZero: roundHalfAwayFromZero with java.lang.String = js.native
-  val roundHalfDown: roundHalfDown with java.lang.String = js.native
-  val roundHalfToEven: roundHalfToEven with java.lang.String = js.native
-  val roundHalfToOdd: roundHalfToOdd with java.lang.String = js.native
-  val roundHalfTowardsZero: roundHalfTowardsZero with java.lang.String = js.native
-  val roundHalfUp: roundHalfUp with java.lang.String = js.native
-  val roundTowardsZero: roundTowardsZero with java.lang.String = js.native
-  val roundUp: roundUp with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val roundAwayFromZero: roundAwayFromZero with scala.Double = js.native
+  /* 1 */ val roundDown: roundDown with scala.Double = js.native
+  /* 8 */ val roundHalfAwayFromZero: roundHalfAwayFromZero with scala.Double = js.native
+  /* 5 */ val roundHalfDown: roundHalfDown with scala.Double = js.native
+  /* 9 */ val roundHalfToEven: roundHalfToEven with scala.Double = js.native
+  /* 10 */ val roundHalfToOdd: roundHalfToOdd with scala.Double = js.native
+  /* 7 */ val roundHalfTowardsZero: roundHalfTowardsZero with scala.Double = js.native
+  /* 6 */ val roundHalfUp: roundHalfUp with scala.Double = js.native
+  /* 3 */ val roundTowardsZero: roundTowardsZero with scala.Double = js.native
+  /* 2 */ val roundUp: roundUp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GlobalizationNs.NumberFormattingNs.RoundingAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GlobalizationNs.NumberFormattingNs.RoundingAlgorithm with scala.Double
   ] = js.native
 }
 

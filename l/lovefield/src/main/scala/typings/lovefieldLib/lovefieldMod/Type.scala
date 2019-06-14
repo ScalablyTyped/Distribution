@@ -39,14 +39,14 @@ object Type extends js.Object {
   sealed trait STRING
     extends lovefieldLib.lovefieldMod.Type
   
-  val ARRAY_BUFFER: ARRAY_BUFFER with java.lang.String = js.native
-  val BOOLEAN: BOOLEAN with java.lang.String = js.native
-  val DATE_TIME: DATE_TIME with java.lang.String = js.native
-  val INTEGER: INTEGER with java.lang.String = js.native
-  val NUMBER: NUMBER with java.lang.String = js.native
-  val OBJECT: OBJECT with java.lang.String = js.native
-  val STRING: STRING with java.lang.String = js.native
+  /* 0 */ val ARRAY_BUFFER: ARRAY_BUFFER with scala.Double = js.native
+  /* 1 */ val BOOLEAN: BOOLEAN with scala.Double = js.native
+  /* 2 */ val DATE_TIME: DATE_TIME with scala.Double = js.native
+  /* 3 */ val INTEGER: INTEGER with scala.Double = js.native
+  /* 4 */ val NUMBER: NUMBER with scala.Double = js.native
+  /* 5 */ val OBJECT: OBJECT with scala.Double = js.native
+  /* 6 */ val STRING: STRING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[lovefieldLib.lovefieldMod.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[lovefieldLib.lovefieldMod.Type with scala.Double] = js.native
 }
 

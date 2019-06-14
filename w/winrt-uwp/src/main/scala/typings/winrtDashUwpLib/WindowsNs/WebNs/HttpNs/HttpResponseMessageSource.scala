@@ -27,12 +27,12 @@ object HttpResponseMessageSource extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpResponseMessageSource
   
-  val cache: cache with java.lang.String = js.native
-  val network: network with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val cache: cache with scala.Double = js.native
+  /* 2 */ val network: network with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpResponseMessageSource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpResponseMessageSource with scala.Double
   ] = js.native
 }
 

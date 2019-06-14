@@ -21,11 +21,11 @@ object selectionMode extends js.Object {
   sealed trait Multiple
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.selectionMode
   
-  val Default: Default with java.lang.String = js.native
-  val Multiple: Multiple with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val Multiple: Multiple with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.selectionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.selectionMode with scala.Double
   ] = js.native
 }
 

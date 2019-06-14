@@ -25,11 +25,11 @@ object MaterialAppearanceNs extends js.Object {
     sealed trait TEXTURED
       extends cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport
     
-    val ALL: ALL with java.lang.String = js.native
-    val BASIC: BASIC with java.lang.String = js.native
-    val TEXTURED: TEXTURED with java.lang.String = js.native
+    /* 2 */ val ALL: ALL with scala.Double = js.native
+    /* 0 */ val BASIC: BASIC with scala.Double = js.native
+    /* 1 */ val TEXTURED: TEXTURED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport with scala.Double] = js.native
   }
   
 }

@@ -23,10 +23,10 @@ object FollowedStatus extends js.Object {
   sealed trait notFollowed
     extends sharepointLib.SPNs.UserProfilesNs.FollowedStatus
   
-  val followed: followed with java.lang.String = js.native
-  val notFollowable: notFollowable with java.lang.String = js.native
-  val notFollowed: notFollowed with java.lang.String = js.native
+  /* 0 */ val followed: followed with scala.Double = js.native
+  /* 2 */ val notFollowable: notFollowable with scala.Double = js.native
+  /* 1 */ val notFollowed: notFollowed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowedStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowedStatus with scala.Double] = js.native
 }
 

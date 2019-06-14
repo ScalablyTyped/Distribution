@@ -27,12 +27,12 @@ object CredentialSaveOption extends js.Object {
   sealed trait unselected
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.CredentialSaveOption
   
-  val hidden: hidden with java.lang.String = js.native
-  val selected: selected with java.lang.String = js.native
-  val unselected: unselected with java.lang.String = js.native
+  /* 2 */ val hidden: hidden with scala.Double = js.native
+  /* 1 */ val selected: selected with scala.Double = js.native
+  /* 0 */ val unselected: unselected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.CredentialSaveOption with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.CredentialSaveOption with scala.Double
   ] = js.native
 }
 

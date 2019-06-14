@@ -55,18 +55,18 @@ object EventType extends js.Object {
   sealed trait resultRendered
     extends sharepointLib.SrchNs.EventType
   
-  val batchQueryIssuing: batchQueryIssuing with java.lang.String = js.native
-  val batchResultReady: batchResultReady with java.lang.String = js.native
-  val load: load with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val postLoad: postLoad with java.lang.String = js.native
-  val preLoad: preLoad with java.lang.String = js.native
-  val queryIssuing: queryIssuing with java.lang.String = js.native
-  val queryReady: queryReady with java.lang.String = js.native
-  val queryStateChanged: queryStateChanged with java.lang.String = js.native
-  val resultReady: resultReady with java.lang.String = js.native
-  val resultRendered: resultRendered with java.lang.String = js.native
+  /* 3 */ val batchQueryIssuing: batchQueryIssuing with scala.Double = js.native
+  /* 5 */ val batchResultReady: batchResultReady with scala.Double = js.native
+  /* 9 */ val load: load with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 10 */ val postLoad: postLoad with scala.Double = js.native
+  /* 8 */ val preLoad: preLoad with scala.Double = js.native
+  /* 2 */ val queryIssuing: queryIssuing with scala.Double = js.native
+  /* 1 */ val queryReady: queryReady with scala.Double = js.native
+  /* 6 */ val queryStateChanged: queryStateChanged with scala.Double = js.native
+  /* 4 */ val resultReady: resultReady with scala.Double = js.native
+  /* 7 */ val resultRendered: resultRendered with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SrchNs.EventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SrchNs.EventType with scala.Double] = js.native
 }
 

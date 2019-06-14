@@ -32,11 +32,11 @@ object FocusMode extends js.Object {
   sealed trait single
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.FocusMode
   
-  val auto: auto with java.lang.String = js.native
-  val continuous: continuous with java.lang.String = js.native
-  val manual: manual with java.lang.String = js.native
-  val single: single with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 2 */ val continuous: continuous with scala.Double = js.native
+  /* 3 */ val manual: manual with scala.Double = js.native
+  /* 1 */ val single: single with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.FocusMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.FocusMode with scala.Double] = js.native
 }
 

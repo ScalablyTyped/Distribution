@@ -23,10 +23,10 @@ object SiteHealthStatusType extends js.Object {
   sealed trait passed
     extends sharepointLib.SPNs.SiteHealthNs.SiteHealthStatusType
   
-  val failedError: failedError with java.lang.String = js.native
-  val failedWarning: failedWarning with java.lang.String = js.native
-  val passed: passed with java.lang.String = js.native
+  /* 2 */ val failedError: failedError with scala.Double = js.native
+  /* 1 */ val failedWarning: failedWarning with scala.Double = js.native
+  /* 0 */ val passed: passed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SiteHealthNs.SiteHealthStatusType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SiteHealthNs.SiteHealthStatusType with scala.Double] = js.native
 }
 

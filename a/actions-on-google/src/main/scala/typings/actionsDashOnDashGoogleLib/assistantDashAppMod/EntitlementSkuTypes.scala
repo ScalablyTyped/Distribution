@@ -26,12 +26,12 @@ object EntitlementSkuTypes extends js.Object {
   sealed trait SUBSCRIPTION
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.EntitlementSkuTypes
   
-  val APP: APP with java.lang.String = js.native
-  val IN_APP: IN_APP with java.lang.String = js.native
-  val SUBSCRIPTION: SUBSCRIPTION with java.lang.String = js.native
+  /* 2 */ val APP: APP with scala.Double = js.native
+  /* 0 */ val IN_APP: IN_APP with scala.Double = js.native
+  /* 1 */ val SUBSCRIPTION: SUBSCRIPTION with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.EntitlementSkuTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    actionsDashOnDashGoogleLib.assistantDashAppMod.EntitlementSkuTypes with scala.Double
   ] = js.native
 }
 

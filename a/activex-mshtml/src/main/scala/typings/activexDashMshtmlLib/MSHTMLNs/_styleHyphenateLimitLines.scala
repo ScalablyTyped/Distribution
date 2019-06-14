@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait _styleHyphenateLimitLines extends js.Object
 
+object _styleHyphenateLimitLines {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleHyphenateLimitLinesNoLimit: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleHyphenateLimitLines_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

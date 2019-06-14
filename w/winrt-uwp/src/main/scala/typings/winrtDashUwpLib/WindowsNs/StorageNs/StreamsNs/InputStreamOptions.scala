@@ -27,12 +27,12 @@ object InputStreamOptions extends js.Object {
   sealed trait readAhead
     extends winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.InputStreamOptions
   
-  val none: none with java.lang.String = js.native
-  val partial: partial with java.lang.String = js.native
-  val readAhead: readAhead with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val partial: partial with scala.Double = js.native
+  /* 2 */ val readAhead: readAhead with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.InputStreamOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.InputStreamOptions with scala.Double
   ] = js.native
 }
 

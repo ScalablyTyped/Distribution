@@ -27,12 +27,10 @@ object StreamedFileFailureMode extends js.Object {
   sealed trait incomplete
     extends winrtDashUwpLib.WindowsNs.StorageNs.StreamedFileFailureMode
   
-  val currentlyUnavailable: currentlyUnavailable with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val incomplete: incomplete with java.lang.String = js.native
+  /* 1 */ val currentlyUnavailable: currentlyUnavailable with scala.Double = js.native
+  /* 0 */ val failed: failed with scala.Double = js.native
+  /* 2 */ val incomplete: incomplete with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.StreamedFileFailureMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.StreamedFileFailureMode with scala.Double] = js.native
 }
 

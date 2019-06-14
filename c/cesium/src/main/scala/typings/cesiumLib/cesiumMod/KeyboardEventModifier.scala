@@ -23,10 +23,10 @@ object KeyboardEventModifier extends js.Object {
   sealed trait SHIFT
     extends cesiumLib.cesiumMod.KeyboardEventModifier
   
-  val ALT: ALT with java.lang.String = js.native
-  val CTRL: CTRL with java.lang.String = js.native
-  val SHIFT: SHIFT with java.lang.String = js.native
+  /* 2 */ val ALT: ALT with scala.Double = js.native
+  /* 1 */ val CTRL: CTRL with scala.Double = js.native
+  /* 0 */ val SHIFT: SHIFT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.KeyboardEventModifier with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.KeyboardEventModifier with scala.Double] = js.native
 }
 

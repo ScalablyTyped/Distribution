@@ -42,15 +42,15 @@ object ContactMatchReasonKind extends js.Object {
   sealed trait yomiName
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactMatchReasonKind
   
-  val emailAddress: emailAddress with java.lang.String = js.native
-  val jobInfo: jobInfo with java.lang.String = js.native
-  val name: name with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val phoneNumber: phoneNumber with java.lang.String = js.native
-  val yomiName: yomiName with java.lang.String = js.native
+  /* 1 */ val emailAddress: emailAddress with scala.Double = js.native
+  /* 3 */ val jobInfo: jobInfo with scala.Double = js.native
+  /* 0 */ val name: name with scala.Double = js.native
+  /* 5 */ val other: other with scala.Double = js.native
+  /* 2 */ val phoneNumber: phoneNumber with scala.Double = js.native
+  /* 4 */ val yomiName: yomiName with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactMatchReasonKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactMatchReasonKind with scala.Double
   ] = js.native
 }
 

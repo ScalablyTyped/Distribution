@@ -47,16 +47,16 @@ object ChatMessageKind extends js.Object {
   sealed trait transportCustom
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageKind
   
-  val fileTransferRequest: fileTransferRequest with java.lang.String = js.native
-  val joinedConversation: joinedConversation with java.lang.String = js.native
-  val leftConversation: leftConversation with java.lang.String = js.native
-  val otherParticipantJoinedConversation: otherParticipantJoinedConversation with java.lang.String = js.native
-  val otherParticipantLeftConversation: otherParticipantLeftConversation with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
-  val transportCustom: transportCustom with java.lang.String = js.native
+  /* 1 */ val fileTransferRequest: fileTransferRequest with scala.Double = js.native
+  /* 3 */ val joinedConversation: joinedConversation with scala.Double = js.native
+  /* 4 */ val leftConversation: leftConversation with scala.Double = js.native
+  /* 5 */ val otherParticipantJoinedConversation: otherParticipantJoinedConversation with scala.Double = js.native
+  /* 6 */ val otherParticipantLeftConversation: otherParticipantLeftConversation with scala.Double = js.native
+  /* 0 */ val standard: standard with scala.Double = js.native
+  /* 2 */ val transportCustom: transportCustom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageKind with scala.Double
   ] = js.native
 }
 

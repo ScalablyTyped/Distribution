@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IBlendColorFilter extends IBaseFilter {
+  var alpha: js.UndefOr[scala.Double] = js.native
+  var color: js.UndefOr[java.lang.String] = js.native
+  var mode: js.UndefOr[java.lang.String] = js.native
   /**
   	 * Applies filter to canvas element
   	 * @param canvasEl Canvas element to apply filter to

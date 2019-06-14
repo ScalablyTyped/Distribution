@@ -47,16 +47,14 @@ object TimedTextWritingMode extends js.Object {
   sealed trait topBottomRightLeft
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWritingMode
   
-  val leftRight: leftRight with java.lang.String = js.native
-  val leftRightTopBottom: leftRightTopBottom with java.lang.String = js.native
-  val rightLeft: rightLeft with java.lang.String = js.native
-  val rightLeftTopBottom: rightLeftTopBottom with java.lang.String = js.native
-  val topBottom: topBottom with java.lang.String = js.native
-  val topBottomLeftRight: topBottomLeftRight with java.lang.String = js.native
-  val topBottomRightLeft: topBottomRightLeft with java.lang.String = js.native
+  /* 4 */ val leftRight: leftRight with scala.Double = js.native
+  /* 0 */ val leftRightTopBottom: leftRightTopBottom with scala.Double = js.native
+  /* 5 */ val rightLeft: rightLeft with scala.Double = js.native
+  /* 1 */ val rightLeftTopBottom: rightLeftTopBottom with scala.Double = js.native
+  /* 6 */ val topBottom: topBottom with scala.Double = js.native
+  /* 3 */ val topBottomLeftRight: topBottomLeftRight with scala.Double = js.native
+  /* 2 */ val topBottomRightLeft: topBottomRightLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWritingMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWritingMode with scala.Double] = js.native
 }
 

@@ -21,11 +21,11 @@ object UnitTextPlacement extends js.Object {
   sealed trait Front
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.UnitTextPlacement
   
-  val Back: Back with java.lang.String = js.native
-  val Front: Front with java.lang.String = js.native
+  /* 0 */ val Back: Back with scala.Double = js.native
+  /* 1 */ val Front: Front with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.UnitTextPlacement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.UnitTextPlacement with scala.Double
   ] = js.native
 }
 

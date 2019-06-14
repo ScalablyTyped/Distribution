@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 package object BMapNs {
   type APIVersion = scala.Double
   type Animation = scala.Double
+  type Callback = js.Function1[/* repeated */ js.Any, scala.Unit]
   type ContextMenuIcon = java.lang.String
   type ControlAnchor = scala.Double
   type DrivingPolicy = scala.Double

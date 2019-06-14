@@ -12,8 +12,8 @@ trait ListVirtualNodesInput extends js.Object {
     limit results in a single page along with a nextToken response
     element. You can see the remaining results of the initial request by sending another
     ListVirtualNodes request with the returned nextToken value.
-    This value can be between 1 and 100. If you don't use this parameter,
-    ListVirtualNodes returns up to 100 results and a
+    This value can be between 1 and 100. If you don't use this
+    parameter, ListVirtualNodes returns up to 100 results and a
     nextToken value if applicable.
     */
   var limit: js.UndefOr[ListVirtualNodesLimit] = js.undefined
@@ -23,9 +23,9 @@ trait ListVirtualNodesInput extends js.Object {
   var meshName: ResourceName
   /**
     * The nextToken value returned from a previous paginated
-    ListVirtualNodes request where limit was used and the
-    results exceeded the value of that parameter. Pagination continues from the end of the
-    previous results that returned the nextToken value.
+    ListVirtualNodes request where limit was used and the results
+    exceeded the value of that parameter. Pagination continues from the end of the previous
+    results that returned the nextToken value.
     */
   var nextToken: js.UndefOr[String] = js.undefined
 }

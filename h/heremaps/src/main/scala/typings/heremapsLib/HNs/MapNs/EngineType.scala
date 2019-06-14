@@ -22,9 +22,9 @@ object EngineType extends js.Object {
   sealed trait PANORAMA
     extends heremapsLib.HNs.MapNs.EngineType
   
-  val P2D: P2D with java.lang.String = js.native
-  val PANORAMA: PANORAMA with java.lang.String = js.native
+  /* 0 */ val P2D: P2D with scala.Double = js.native
+  /* 1 */ val PANORAMA: PANORAMA with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.MapNs.EngineType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.MapNs.EngineType with scala.Double] = js.native
 }
 

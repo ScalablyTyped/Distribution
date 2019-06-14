@@ -32,13 +32,13 @@ object TimedMetadataTrackErrorCode extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataTrackErrorCode
   
-  val dataFormatError: dataFormatError with java.lang.String = js.native
-  val internalError: internalError with java.lang.String = js.native
-  val networkError: networkError with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val dataFormatError: dataFormatError with scala.Double = js.native
+  /* 3 */ val internalError: internalError with scala.Double = js.native
+  /* 2 */ val networkError: networkError with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataTrackErrorCode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataTrackErrorCode with scala.Double
   ] = js.native
 }
 

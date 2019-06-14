@@ -91,25 +91,25 @@ object DiagramConstraints extends js.Object {
   sealed trait Zoomable
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.DiagramConstraints
   
-  val APIUpdate: APIUpdate with java.lang.String = js.native
-  val Bridging: Bridging with java.lang.String = js.native
-  val CrispEdges: CrispEdges with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val FloatElements: FloatElements with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val PageEditable: PageEditable with java.lang.String = js.native
-  val Pannable: Pannable with java.lang.String = js.native
-  val PannableX: PannableX with java.lang.String = js.native
-  val PannableY: PannableY with java.lang.String = js.native
-  val Resizable: Resizable with java.lang.String = js.native
-  val Routing: Routing with java.lang.String = js.native
-  val Undoable: Undoable with java.lang.String = js.native
-  val UserInteraction: UserInteraction with java.lang.String = js.native
-  val ZoomTextEditor: ZoomTextEditor with java.lang.String = js.native
-  val Zoomable: Zoomable with java.lang.String = js.native
+  /* 1 */ val APIUpdate: APIUpdate with scala.Double = js.native
+  /* 4 */ val Bridging: Bridging with scala.Double = js.native
+  /* 10 */ val CrispEdges: CrispEdges with scala.Double = js.native
+  /* 15 */ val Default: Default with scala.Double = js.native
+  /* 13 */ val FloatElements: FloatElements with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 3 */ val PageEditable: PageEditable with scala.Double = js.native
+  /* 8 */ val Pannable: Pannable with scala.Double = js.native
+  /* 6 */ val PannableX: PannableX with scala.Double = js.native
+  /* 7 */ val PannableY: PannableY with scala.Double = js.native
+  /* 11 */ val Resizable: Resizable with scala.Double = js.native
+  /* 14 */ val Routing: Routing with scala.Double = js.native
+  /* 9 */ val Undoable: Undoable with scala.Double = js.native
+  /* 2 */ val UserInteraction: UserInteraction with scala.Double = js.native
+  /* 12 */ val ZoomTextEditor: ZoomTextEditor with scala.Double = js.native
+  /* 5 */ val Zoomable: Zoomable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.DiagramConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.DiagramConstraints with scala.Double
   ] = js.native
 }
 

@@ -36,12 +36,12 @@ object ButtonSize extends js.Object {
   sealed trait Small
     extends ejDotWebDotAllLib.ejNs.ButtonSize
   
-  val Large: Large with java.lang.String = js.native
-  val Medium: Medium with java.lang.String = js.native
-  val Mini: Mini with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
-  val Small: Small with java.lang.String = js.native
+  /* 4 */ val Large: Large with scala.Double = js.native
+  /* 3 */ val Medium: Medium with scala.Double = js.native
+  /* 1 */ val Mini: Mini with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
+  /* 2 */ val Small: Small with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ButtonSize with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ButtonSize with scala.Double] = js.native
 }
 

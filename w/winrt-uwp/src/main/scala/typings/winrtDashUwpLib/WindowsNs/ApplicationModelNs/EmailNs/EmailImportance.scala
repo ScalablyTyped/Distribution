@@ -27,12 +27,12 @@ object EmailImportance extends js.Object {
   sealed trait normal
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailImportance
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
+  /* 1 */ val high: high with scala.Double = js.native
+  /* 2 */ val low: low with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailImportance with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailImportance with scala.Double
   ] = js.native
 }
 

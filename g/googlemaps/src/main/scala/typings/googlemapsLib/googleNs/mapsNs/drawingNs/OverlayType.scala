@@ -56,12 +56,12 @@ object OverlayType extends js.Object {
   sealed trait RECTANGLE
     extends googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType
   
-  val CIRCLE: CIRCLE with java.lang.String = js.native
-  val MARKER: MARKER with java.lang.String = js.native
-  val POLYGON: POLYGON with java.lang.String = js.native
-  val POLYLINE: POLYLINE with java.lang.String = js.native
-  val RECTANGLE: RECTANGLE with java.lang.String = js.native
+  /* 0 */ val CIRCLE: CIRCLE with scala.Double = js.native
+  /* 1 */ val MARKER: MARKER with scala.Double = js.native
+  /* 2 */ val POLYGON: POLYGON with scala.Double = js.native
+  /* 3 */ val POLYLINE: POLYLINE with scala.Double = js.native
+  /* 4 */ val RECTANGLE: RECTANGLE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.drawingNs.OverlayType with scala.Double] = js.native
 }
 

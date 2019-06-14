@@ -58,18 +58,18 @@ object CalendarDayType extends js.Object {
   sealed trait Type10
     extends openui5Lib.sapNs.uiNs.unifiedNs.CalendarDayType
   
-  val None: None with java.lang.String = js.native
-  val Type01: Type01 with java.lang.String = js.native
-  val Type02: Type02 with java.lang.String = js.native
-  val Type03: Type03 with java.lang.String = js.native
-  val Type04: Type04 with java.lang.String = js.native
-  val Type05: Type05 with java.lang.String = js.native
-  val Type06: Type06 with java.lang.String = js.native
-  val Type07: Type07 with java.lang.String = js.native
-  val Type08: Type08 with java.lang.String = js.native
-  val Type09: Type09 with java.lang.String = js.native
-  val Type10: Type10 with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Type01: Type01 with scala.Double = js.native
+  /* 2 */ val Type02: Type02 with scala.Double = js.native
+  /* 3 */ val Type03: Type03 with scala.Double = js.native
+  /* 4 */ val Type04: Type04 with scala.Double = js.native
+  /* 5 */ val Type05: Type05 with scala.Double = js.native
+  /* 6 */ val Type06: Type06 with scala.Double = js.native
+  /* 7 */ val Type07: Type07 with scala.Double = js.native
+  /* 8 */ val Type08: Type08 with scala.Double = js.native
+  /* 9 */ val Type09: Type09 with scala.Double = js.native
+  /* 10 */ val Type10: Type10 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.unifiedNs.CalendarDayType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.unifiedNs.CalendarDayType with scala.Double] = js.native
 }
 

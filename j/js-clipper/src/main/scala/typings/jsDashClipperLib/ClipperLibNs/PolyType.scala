@@ -19,9 +19,9 @@ object PolyType extends js.Object {
   sealed trait ptSubject
     extends jsDashClipperLib.ClipperLibNs.PolyType
   
-  val ptClip: ptClip with java.lang.String = js.native
-  val ptSubject: ptSubject with java.lang.String = js.native
+  /* 1 */ val ptClip: ptClip with scala.Double = js.native
+  /* 0 */ val ptSubject: ptSubject with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.PolyType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.PolyType with scala.Double] = js.native
 }
 

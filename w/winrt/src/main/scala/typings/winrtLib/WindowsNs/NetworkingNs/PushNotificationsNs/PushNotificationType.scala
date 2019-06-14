@@ -27,13 +27,13 @@ object PushNotificationType extends js.Object {
   sealed trait toast
     extends winrtLib.WindowsNs.NetworkingNs.PushNotificationsNs.PushNotificationType
   
-  val badge: badge with java.lang.String = js.native
-  val raw: raw with java.lang.String = js.native
-  val tile: tile with java.lang.String = js.native
-  val toast: toast with java.lang.String = js.native
+  /* 2 */ val badge: badge with scala.Double = js.native
+  /* 3 */ val raw: raw with scala.Double = js.native
+  /* 1 */ val tile: tile with scala.Double = js.native
+  /* 0 */ val toast: toast with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.PushNotificationsNs.PushNotificationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.PushNotificationsNs.PushNotificationType with scala.Double
   ] = js.native
 }
 

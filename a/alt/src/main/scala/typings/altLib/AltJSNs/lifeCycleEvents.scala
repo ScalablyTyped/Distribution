@@ -31,12 +31,12 @@ object lifeCycleEvents extends js.Object {
   sealed trait snapshot
     extends altLib.AltJSNs.lifeCycleEvents
   
-  val bootstrap: bootstrap with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val init: init with java.lang.String = js.native
-  val rollback: rollback with java.lang.String = js.native
-  val snapshot: snapshot with java.lang.String = js.native
+  /* 0 */ val bootstrap: bootstrap with scala.Double = js.native
+  /* 4 */ val error: error with scala.Double = js.native
+  /* 2 */ val init: init with scala.Double = js.native
+  /* 3 */ val rollback: rollback with scala.Double = js.native
+  /* 1 */ val snapshot: snapshot with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[altLib.AltJSNs.lifeCycleEvents with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[altLib.AltJSNs.lifeCycleEvents with scala.Double] = js.native
 }
 

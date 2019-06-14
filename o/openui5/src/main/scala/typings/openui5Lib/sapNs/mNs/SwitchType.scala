@@ -22,9 +22,9 @@ object SwitchType extends js.Object {
   sealed trait Default
     extends openui5Lib.sapNs.mNs.SwitchType
   
-  val AcceptReject: AcceptReject with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
+  /* 0 */ val AcceptReject: AcceptReject with scala.Double = js.native
+  /* 1 */ val Default: Default with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.SwitchType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.SwitchType with scala.Double] = js.native
 }
 

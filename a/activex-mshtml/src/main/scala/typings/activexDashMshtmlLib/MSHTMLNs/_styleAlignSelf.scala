@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait _styleAlignSelf extends js.Object
 
+object _styleAlignSelf {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleAlignSelfAuto: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def styleAlignSelfBaseline: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleAlignSelfCenter: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleAlignSelfFlexEnd: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleAlignSelfFlexStart: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleAlignSelfNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def styleAlignSelfStretch: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def styleAlignSelf_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

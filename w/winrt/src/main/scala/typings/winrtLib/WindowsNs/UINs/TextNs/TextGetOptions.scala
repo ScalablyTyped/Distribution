@@ -43,15 +43,15 @@ object TextGetOptions extends js.Object {
   sealed trait useObjectText
     extends winrtLib.WindowsNs.UINs.TextNs.TextGetOptions
   
-  val adjustCrlf: adjustCrlf with java.lang.String = js.native
-  val allowFinalEop: allowFinalEop with java.lang.String = js.native
-  val formatRtf: formatRtf with java.lang.String = js.native
-  val includeNumbering: includeNumbering with java.lang.String = js.native
-  val noHidden: noHidden with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val useCrlf: useCrlf with java.lang.String = js.native
-  val useObjectText: useObjectText with java.lang.String = js.native
+  /* 1 */ val adjustCrlf: adjustCrlf with scala.Double = js.native
+  /* 4 */ val allowFinalEop: allowFinalEop with scala.Double = js.native
+  /* 7 */ val formatRtf: formatRtf with scala.Double = js.native
+  /* 6 */ val includeNumbering: includeNumbering with scala.Double = js.native
+  /* 5 */ val noHidden: noHidden with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val useCrlf: useCrlf with scala.Double = js.native
+  /* 3 */ val useObjectText: useObjectText with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.TextGetOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.TextGetOptions with scala.Double] = js.native
 }
 

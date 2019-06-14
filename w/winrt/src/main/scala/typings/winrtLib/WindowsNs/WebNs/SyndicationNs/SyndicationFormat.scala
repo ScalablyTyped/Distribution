@@ -35,13 +35,13 @@ object SyndicationFormat extends js.Object {
   sealed trait rss20
     extends winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat
   
-  val atom03: atom03 with java.lang.String = js.native
-  val atom10: atom10 with java.lang.String = js.native
-  val rss091: rss091 with java.lang.String = js.native
-  val rss092: rss092 with java.lang.String = js.native
-  val rss10: rss10 with java.lang.String = js.native
-  val rss20: rss20 with java.lang.String = js.native
+  /* 5 */ val atom03: atom03 with scala.Double = js.native
+  /* 0 */ val atom10: atom10 with scala.Double = js.native
+  /* 4 */ val rss091: rss091 with scala.Double = js.native
+  /* 3 */ val rss092: rss092 with scala.Double = js.native
+  /* 2 */ val rss10: rss10 with scala.Double = js.native
+  /* 1 */ val rss20: rss20 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat with scala.Double] = js.native
 }
 

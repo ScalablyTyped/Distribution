@@ -22,11 +22,11 @@ object AppViewBackButtonVisibility extends js.Object {
   sealed trait visible
     extends winrtDashUwpLib.WindowsNs.UINs.CoreNs.AppViewBackButtonVisibility
   
-  val collapsed: collapsed with java.lang.String = js.native
-  val visible: visible with java.lang.String = js.native
+  /* 1 */ val collapsed: collapsed with scala.Double = js.native
+  /* 0 */ val visible: visible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.CoreNs.AppViewBackButtonVisibility with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.CoreNs.AppViewBackButtonVisibility with scala.Double
   ] = js.native
 }
 

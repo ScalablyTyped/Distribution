@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlTopBottom extends js.Object
 
+object XlTopBottom {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlTop10Bottom: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlTop10Top: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+}
+

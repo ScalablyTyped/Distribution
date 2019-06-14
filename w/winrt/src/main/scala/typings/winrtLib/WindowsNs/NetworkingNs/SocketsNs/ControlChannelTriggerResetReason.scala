@@ -19,11 +19,11 @@ object ControlChannelTriggerResetReason extends js.Object {
   sealed trait lowPowerExit
     extends winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerResetReason
   
-  val fastUserSwitched: fastUserSwitched with java.lang.String = js.native
-  val lowPowerExit: lowPowerExit with java.lang.String = js.native
+  /* 0 */ val fastUserSwitched: fastUserSwitched with scala.Double = js.native
+  /* 1 */ val lowPowerExit: lowPowerExit with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerResetReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerResetReason with scala.Double
   ] = js.native
 }
 

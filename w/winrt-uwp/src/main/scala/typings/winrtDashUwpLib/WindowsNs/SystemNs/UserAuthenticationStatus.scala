@@ -27,12 +27,10 @@ object UserAuthenticationStatus extends js.Object {
   sealed trait unauthenticated
     extends winrtDashUwpLib.WindowsNs.SystemNs.UserAuthenticationStatus
   
-  val locallyAuthenticated: locallyAuthenticated with java.lang.String = js.native
-  val remotelyAuthenticated: remotelyAuthenticated with java.lang.String = js.native
-  val unauthenticated: unauthenticated with java.lang.String = js.native
+  /* 1 */ val locallyAuthenticated: locallyAuthenticated with scala.Double = js.native
+  /* 2 */ val remotelyAuthenticated: remotelyAuthenticated with scala.Double = js.native
+  /* 0 */ val unauthenticated: unauthenticated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SystemNs.UserAuthenticationStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.UserAuthenticationStatus with scala.Double] = js.native
 }
 

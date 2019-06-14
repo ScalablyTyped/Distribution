@@ -36,12 +36,12 @@ object FollowResultType extends js.Object {
   sealed trait unknown
     extends sharepointLib.SPNs.UserProfilesNs.FollowResultType
   
-  val failed: failed with java.lang.String = js.native
-  val followed: followed with java.lang.String = js.native
-  val hitFollowLimit: hitFollowLimit with java.lang.String = js.native
-  val refollowed: refollowed with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 4 */ val failed: failed with scala.Double = js.native
+  /* 1 */ val followed: followed with scala.Double = js.native
+  /* 3 */ val hitFollowLimit: hitFollowLimit with scala.Double = js.native
+  /* 2 */ val refollowed: refollowed with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowResultType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowResultType with scala.Double] = js.native
 }
 

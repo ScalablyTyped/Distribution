@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
 */
 trait WiaDeviceType extends js.Object
 
+object WiaDeviceType {
+  @scala.inline
+  def CameraDeviceType: activexDashWiaLib.activexDashWiaLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ScannerDeviceType: activexDashWiaLib.activexDashWiaLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def UnspecifiedDeviceType: activexDashWiaLib.activexDashWiaLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def VideoDeviceType: activexDashWiaLib.activexDashWiaLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

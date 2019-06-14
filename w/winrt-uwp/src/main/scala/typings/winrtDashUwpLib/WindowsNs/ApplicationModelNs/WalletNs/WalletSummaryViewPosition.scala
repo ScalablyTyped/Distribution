@@ -27,12 +27,12 @@ object WalletSummaryViewPosition extends js.Object {
   sealed trait hidden
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletSummaryViewPosition
   
-  val field1: field1 with java.lang.String = js.native
-  val field2: field2 with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
+  /* 1 */ val field1: field1 with scala.Double = js.native
+  /* 2 */ val field2: field2 with scala.Double = js.native
+  /* 0 */ val hidden: hidden with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletSummaryViewPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletSummaryViewPosition with scala.Double
   ] = js.native
 }
 

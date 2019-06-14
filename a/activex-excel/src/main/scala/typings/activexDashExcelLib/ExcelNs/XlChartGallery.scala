@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlChartGallery extends js.Object
 
+object XlChartGallery {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlAnyGallery: activexDashExcelLib.activexDashExcelLibNumbers.`23` = this.cast(23)
+  @scala.inline
+  def xlBuiltIn: activexDashExcelLib.activexDashExcelLibNumbers.`21` = this.cast(21)
+  @scala.inline
+  def xlUserDefined: activexDashExcelLib.activexDashExcelLibNumbers.`22` = this.cast(22)
+}
+

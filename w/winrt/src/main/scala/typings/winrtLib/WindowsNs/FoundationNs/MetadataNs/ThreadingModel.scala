@@ -27,11 +27,11 @@ object ThreadingModel extends js.Object {
   sealed trait sTA
     extends winrtLib.WindowsNs.FoundationNs.MetadataNs.ThreadingModel
   
-  val both: both with java.lang.String = js.native
-  val invalidThreading: invalidThreading with java.lang.String = js.native
-  val mTA: mTA with java.lang.String = js.native
-  val sTA: sTA with java.lang.String = js.native
+  /* 2 */ val both: both with scala.Double = js.native
+  /* 3 */ val invalidThreading: invalidThreading with scala.Double = js.native
+  /* 1 */ val mTA: mTA with scala.Double = js.native
+  /* 0 */ val sTA: sTA with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.FoundationNs.MetadataNs.ThreadingModel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.FoundationNs.MetadataNs.ThreadingModel with scala.Double] = js.native
 }
 

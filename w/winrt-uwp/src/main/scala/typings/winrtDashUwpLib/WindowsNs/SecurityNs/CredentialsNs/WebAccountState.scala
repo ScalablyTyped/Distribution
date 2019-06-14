@@ -27,12 +27,12 @@ object WebAccountState extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountState
   
-  val connected: connected with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val connected: connected with scala.Double = js.native
+  /* 2 */ val error: error with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountState with scala.Double
   ] = js.native
 }
 

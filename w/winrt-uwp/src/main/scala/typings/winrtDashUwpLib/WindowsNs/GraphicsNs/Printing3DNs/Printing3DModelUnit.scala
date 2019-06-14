@@ -42,15 +42,15 @@ object Printing3DModelUnit extends js.Object {
   sealed trait millimeter
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DModelUnit
   
-  val centimeter: centimeter with java.lang.String = js.native
-  val foot: foot with java.lang.String = js.native
-  val inch: inch with java.lang.String = js.native
-  val meter: meter with java.lang.String = js.native
-  val micron: micron with java.lang.String = js.native
-  val millimeter: millimeter with java.lang.String = js.native
+  /* 3 */ val centimeter: centimeter with scala.Double = js.native
+  /* 5 */ val foot: foot with scala.Double = js.native
+  /* 4 */ val inch: inch with scala.Double = js.native
+  /* 0 */ val meter: meter with scala.Double = js.native
+  /* 1 */ val micron: micron with scala.Double = js.native
+  /* 2 */ val millimeter: millimeter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DModelUnit with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DModelUnit with scala.Double
   ] = js.native
 }
 

@@ -27,11 +27,11 @@ object FileSystemObjectType extends js.Object {
   sealed trait Web
     extends sharepointLib.SPClientTemplatesNs.FileSystemObjectType
   
-  val File: File with java.lang.String = js.native
-  val Folder: Folder with java.lang.String = js.native
-  val Invalid: Invalid with java.lang.String = js.native
-  val Web: Web with java.lang.String = js.native
+  /* 1 */ val File: File with scala.Double = js.native
+  /* 2 */ val Folder: Folder with scala.Double = js.native
+  /* 0 */ val Invalid: Invalid with scala.Double = js.native
+  /* 3 */ val Web: Web with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientTemplatesNs.FileSystemObjectType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientTemplatesNs.FileSystemObjectType with scala.Double] = js.native
 }
 

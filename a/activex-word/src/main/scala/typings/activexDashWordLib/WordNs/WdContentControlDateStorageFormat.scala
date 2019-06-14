@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdContentControlDateStorageFormat extends js.Object
 
+object WdContentControlDateStorageFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdContentControlDateStorageDate: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdContentControlDateStorageDateTime: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdContentControlDateStorageText: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

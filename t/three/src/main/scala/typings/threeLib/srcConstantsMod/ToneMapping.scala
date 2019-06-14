@@ -12,6 +12,6 @@ sealed trait ToneMapping extends js.Object
 @js.native
 object ToneMapping extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.ToneMapping with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.ToneMapping with scala.Nothing] = js.native
 }
 

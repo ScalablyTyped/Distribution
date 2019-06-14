@@ -26,10 +26,10 @@ object LineCap extends js.Object {
   sealed trait Square
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LineCap
   
-  val Butt: Butt with java.lang.String = js.native
-  val Round: Round with java.lang.String = js.native
-  val Square: Square with java.lang.String = js.native
+  /* 0 */ val Butt: Butt with scala.Double = js.native
+  /* 1 */ val Round: Round with scala.Double = js.native
+  /* 2 */ val Square: Square with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LineCap with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LineCap with scala.Double] = js.native
 }
 

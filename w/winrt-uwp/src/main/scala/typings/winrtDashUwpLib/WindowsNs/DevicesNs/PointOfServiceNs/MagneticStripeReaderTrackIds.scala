@@ -37,14 +37,14 @@ object MagneticStripeReaderTrackIds extends js.Object {
   sealed trait track4
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderTrackIds
   
-  val none: none with java.lang.String = js.native
-  val track1: track1 with java.lang.String = js.native
-  val track2: track2 with java.lang.String = js.native
-  val track3: track3 with java.lang.String = js.native
-  val track4: track4 with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val track1: track1 with scala.Double = js.native
+  /* 2 */ val track2: track2 with scala.Double = js.native
+  /* 3 */ val track3: track3 with scala.Double = js.native
+  /* 4 */ val track4: track4 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderTrackIds with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderTrackIds with scala.Double
   ] = js.native
 }
 

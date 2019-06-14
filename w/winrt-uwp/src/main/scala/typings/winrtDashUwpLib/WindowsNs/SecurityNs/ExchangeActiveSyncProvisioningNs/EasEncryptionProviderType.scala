@@ -27,12 +27,12 @@ object EasEncryptionProviderType extends js.Object {
   sealed trait windowsEncryption
     extends winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasEncryptionProviderType
   
-  val notEvaluated: notEvaluated with java.lang.String = js.native
-  val otherEncryption: otherEncryption with java.lang.String = js.native
-  val windowsEncryption: windowsEncryption with java.lang.String = js.native
+  /* 0 */ val notEvaluated: notEvaluated with scala.Double = js.native
+  /* 2 */ val otherEncryption: otherEncryption with scala.Double = js.native
+  /* 1 */ val windowsEncryption: windowsEncryption with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasEncryptionProviderType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasEncryptionProviderType with scala.Double
   ] = js.native
 }
 

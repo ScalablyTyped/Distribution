@@ -14,6 +14,7 @@ trait Anon_Acm extends js.Object {
   var appsync: js.UndefOr[java.lang.String] = js.undefined
   var athena: js.UndefOr[java.lang.String] = js.undefined
   var autoscaling: js.UndefOr[java.lang.String] = js.undefined
+  var autoscalingplans: js.UndefOr[java.lang.String] = js.undefined
   var backup: js.UndefOr[java.lang.String] = js.undefined
   var batch: js.UndefOr[java.lang.String] = js.undefined
   var budgets: js.UndefOr[java.lang.String] = js.undefined
@@ -135,6 +136,7 @@ object Anon_Acm {
     appsync: java.lang.String = null,
     athena: java.lang.String = null,
     autoscaling: java.lang.String = null,
+    autoscalingplans: java.lang.String = null,
     backup: java.lang.String = null,
     batch: java.lang.String = null,
     budgets: java.lang.String = null,
@@ -253,6 +255,7 @@ object Anon_Acm {
     if (appsync != null) __obj.updateDynamic("appsync")(appsync)
     if (athena != null) __obj.updateDynamic("athena")(athena)
     if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling)
+    if (autoscalingplans != null) __obj.updateDynamic("autoscalingplans")(autoscalingplans)
     if (backup != null) __obj.updateDynamic("backup")(backup)
     if (batch != null) __obj.updateDynamic("batch")(batch)
     if (budgets != null) __obj.updateDynamic("budgets")(budgets)

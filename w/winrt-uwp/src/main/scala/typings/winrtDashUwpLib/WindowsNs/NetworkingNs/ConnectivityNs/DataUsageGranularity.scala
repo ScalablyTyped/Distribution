@@ -32,13 +32,13 @@ object DataUsageGranularity extends js.Object {
   sealed trait total
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.DataUsageGranularity
   
-  val perDay: perDay with java.lang.String = js.native
-  val perHour: perHour with java.lang.String = js.native
-  val perMinute: perMinute with java.lang.String = js.native
-  val total: total with java.lang.String = js.native
+  /* 2 */ val perDay: perDay with scala.Double = js.native
+  /* 1 */ val perHour: perHour with scala.Double = js.native
+  /* 0 */ val perMinute: perMinute with scala.Double = js.native
+  /* 3 */ val total: total with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.DataUsageGranularity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.DataUsageGranularity with scala.Double
   ] = js.native
 }
 

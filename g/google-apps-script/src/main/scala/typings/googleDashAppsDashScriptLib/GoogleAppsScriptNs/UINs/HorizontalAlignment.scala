@@ -39,16 +39,16 @@ object HorizontalAlignment extends js.Object {
   sealed trait RIGHT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.HorizontalAlignment
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val DEFAULT: DEFAULT with java.lang.String = js.native
-  val JUSTIFY: JUSTIFY with java.lang.String = js.native
-  val LEFT: LEFT with java.lang.String = js.native
-  val LOCALE_END: LOCALE_END with java.lang.String = js.native
-  val LOCALE_START: LOCALE_START with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
+  /* 2 */ val CENTER: CENTER with scala.Double = js.native
+  /* 3 */ val DEFAULT: DEFAULT with scala.Double = js.native
+  /* 4 */ val JUSTIFY: JUSTIFY with scala.Double = js.native
+  /* 0 */ val LEFT: LEFT with scala.Double = js.native
+  /* 6 */ val LOCALE_END: LOCALE_END with scala.Double = js.native
+  /* 5 */ val LOCALE_START: LOCALE_START with scala.Double = js.native
+  /* 1 */ val RIGHT: RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.HorizontalAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.HorizontalAlignment with scala.Double
   ] = js.native
 }
 

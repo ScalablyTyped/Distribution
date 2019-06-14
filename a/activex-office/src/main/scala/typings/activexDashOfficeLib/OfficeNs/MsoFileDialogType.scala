@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait MsoFileDialogType extends js.Object
 
+object MsoFileDialogType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoFileDialogFilePicker: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoFileDialogFolderPicker: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoFileDialogOpen: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoFileDialogSaveAs: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+}
+

@@ -21,11 +21,11 @@ object CellVisibility extends js.Object {
   sealed trait Visible
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.CellVisibility
   
-  val Hidden: Hidden with java.lang.String = js.native
-  val Visible: Visible with java.lang.String = js.native
+  /* 1 */ val Hidden: Hidden with scala.Double = js.native
+  /* 0 */ val Visible: Visible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.CellVisibility with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.CellVisibility with scala.Double
   ] = js.native
 }
 

@@ -47,16 +47,16 @@ object Print3DTaskDetail extends js.Object {
   sealed trait uploadFailed
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Print3DTaskDetail
   
-  val invalidMaterialSelection: invalidMaterialSelection with java.lang.String = js.native
-  val invalidModel: invalidModel with java.lang.String = js.native
-  val invalidPrintTicket: invalidPrintTicket with java.lang.String = js.native
-  val modelExceedsPrintBed: modelExceedsPrintBed with java.lang.String = js.native
-  val modelNotManifold: modelNotManifold with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val uploadFailed: uploadFailed with java.lang.String = js.native
+  /* 3 */ val invalidMaterialSelection: invalidMaterialSelection with scala.Double = js.native
+  /* 4 */ val invalidModel: invalidModel with scala.Double = js.native
+  /* 6 */ val invalidPrintTicket: invalidPrintTicket with scala.Double = js.native
+  /* 1 */ val modelExceedsPrintBed: modelExceedsPrintBed with scala.Double = js.native
+  /* 5 */ val modelNotManifold: modelNotManifold with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 2 */ val uploadFailed: uploadFailed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Print3DTaskDetail with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Print3DTaskDetail with scala.Double
   ] = js.native
 }
 

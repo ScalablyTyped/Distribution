@@ -26,10 +26,10 @@ object BatchEditMode extends js.Object {
   sealed trait Row
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.BatchEditMode
   
-  val Cell: Cell with java.lang.String = js.native
-  val Dialog: Dialog with java.lang.String = js.native
-  val Row: Row with java.lang.String = js.native
+  /* 0 */ val Cell: Cell with scala.Double = js.native
+  /* 2 */ val Dialog: Dialog with scala.Double = js.native
+  /* 1 */ val Row: Row with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.BatchEditMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.BatchEditMode with scala.Double] = js.native
 }
 

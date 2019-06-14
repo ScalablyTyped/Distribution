@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait _svgMarkerOrient extends js.Object
 
+object _svgMarkerOrient {
+  @scala.inline
+  def SVG_MARKER_ORIENT_ANGLE: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def SVG_MARKER_ORIENT_AUTO: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def SVG_MARKER_ORIENT_UNKNOWN: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def svgMarkerOrient_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

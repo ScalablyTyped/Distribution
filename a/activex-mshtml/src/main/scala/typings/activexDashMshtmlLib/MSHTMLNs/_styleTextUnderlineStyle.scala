@@ -23,3 +23,36 @@ import scala.scalajs.js.annotation._
 */
 trait _styleTextUnderlineStyle extends js.Object
 
+object _styleTextUnderlineStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleTextUnderlineStyleDash: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def styleTextUnderlineStyleDotDash: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def styleTextUnderlineStyleDotDotDash: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def styleTextUnderlineStyleDotted: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def styleTextUnderlineStyleDouble: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleTextUnderlineStyleDoubleAccounting: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`11` = this.cast(11)
+  @scala.inline
+  def styleTextUnderlineStyleSingle: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleTextUnderlineStyleSingleAccounting: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def styleTextUnderlineStyleThick: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def styleTextUnderlineStyleThickDash: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`12` = this.cast(12)
+  @scala.inline
+  def styleTextUnderlineStyleUndefined: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleTextUnderlineStyleWave: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def styleTextUnderlineStyleWords: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleTextUnderlineStyle_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

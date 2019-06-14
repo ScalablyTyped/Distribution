@@ -23,10 +23,10 @@ object DateTimeFieldFriendlyFormatType extends js.Object {
   sealed trait unspecified
     extends sharepointLib.SPNs.DateTimeFieldFriendlyFormatType
   
-  val disabled: disabled with java.lang.String = js.native
-  val relative: relative with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 1 */ val disabled: disabled with scala.Double = js.native
+  /* 2 */ val relative: relative with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.DateTimeFieldFriendlyFormatType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.DateTimeFieldFriendlyFormatType with scala.Double] = js.native
 }
 

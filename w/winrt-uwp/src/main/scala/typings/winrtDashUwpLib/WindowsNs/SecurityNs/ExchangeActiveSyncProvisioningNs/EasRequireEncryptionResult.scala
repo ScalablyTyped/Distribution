@@ -107,28 +107,28 @@ object EasRequireEncryptionResult extends js.Object {
   sealed trait unexpectedFailure
     extends winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasRequireEncryptionResult
   
-  val canBeCompliant: canBeCompliant with java.lang.String = js.native
-  val compliant: compliant with java.lang.String = js.native
-  val deFixedDataNotSupported: deFixedDataNotSupported with java.lang.String = js.native
-  val deHardwareNotCompliant: deHardwareNotCompliant with java.lang.String = js.native
-  val deOsVolumeNotProtected: deOsVolumeNotProtected with java.lang.String = js.native
-  val deProtectionNotYetEnabled: deProtectionNotYetEnabled with java.lang.String = js.native
-  val deProtectionSuspended: deProtectionSuspended with java.lang.String = js.native
-  val deWinReNotConfigured: deWinReNotConfigured with java.lang.String = js.native
-  val fixedDataNotSupported: fixedDataNotSupported with java.lang.String = js.native
-  val hardwareNotCompliant: hardwareNotCompliant with java.lang.String = js.native
-  val lockNotConfigured: lockNotConfigured with java.lang.String = js.native
-  val noFeatureLicense: noFeatureLicense with java.lang.String = js.native
-  val notEvaluated: notEvaluated with java.lang.String = js.native
-  val notProvisionedOnAllVolumes: notProvisionedOnAllVolumes with java.lang.String = js.native
-  val osNotProtected: osNotProtected with java.lang.String = js.native
-  val osVolumeNotProtected: osVolumeNotProtected with java.lang.String = js.native
-  val protectionNotYetEnabled: protectionNotYetEnabled with java.lang.String = js.native
-  val protectionSuspended: protectionSuspended with java.lang.String = js.native
-  val unexpectedFailure: unexpectedFailure with java.lang.String = js.native
+  /* 2 */ val canBeCompliant: canBeCompliant with scala.Double = js.native
+  /* 1 */ val compliant: compliant with scala.Double = js.native
+  /* 4 */ val deFixedDataNotSupported: deFixedDataNotSupported with scala.Double = js.native
+  /* 6 */ val deHardwareNotCompliant: deHardwareNotCompliant with scala.Double = js.native
+  /* 12 */ val deOsVolumeNotProtected: deOsVolumeNotProtected with scala.Double = js.native
+  /* 14 */ val deProtectionNotYetEnabled: deProtectionNotYetEnabled with scala.Double = js.native
+  /* 10 */ val deProtectionSuspended: deProtectionSuspended with scala.Double = js.native
+  /* 8 */ val deWinReNotConfigured: deWinReNotConfigured with scala.Double = js.native
+  /* 5 */ val fixedDataNotSupported: fixedDataNotSupported with scala.Double = js.native
+  /* 7 */ val hardwareNotCompliant: hardwareNotCompliant with scala.Double = js.native
+  /* 9 */ val lockNotConfigured: lockNotConfigured with scala.Double = js.native
+  /* 16 */ val noFeatureLicense: noFeatureLicense with scala.Double = js.native
+  /* 0 */ val notEvaluated: notEvaluated with scala.Double = js.native
+  /* 3 */ val notProvisionedOnAllVolumes: notProvisionedOnAllVolumes with scala.Double = js.native
+  /* 17 */ val osNotProtected: osNotProtected with scala.Double = js.native
+  /* 13 */ val osVolumeNotProtected: osVolumeNotProtected with scala.Double = js.native
+  /* 15 */ val protectionNotYetEnabled: protectionNotYetEnabled with scala.Double = js.native
+  /* 11 */ val protectionSuspended: protectionSuspended with scala.Double = js.native
+  /* 18 */ val unexpectedFailure: unexpectedFailure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasRequireEncryptionResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasRequireEncryptionResult with scala.Double
   ] = js.native
 }
 

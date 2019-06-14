@@ -12,6 +12,6 @@ sealed trait PixelFormat extends js.Object
 @js.native
 object PixelFormat extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.PixelFormat with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.PixelFormat with scala.Nothing] = js.native
 }
 

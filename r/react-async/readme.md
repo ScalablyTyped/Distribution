@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-async
 
-Typings are for version 6.2.0
+Typings are for version 6.2.2
 
 ## Library description:
 React component for declarative promise resolution and data fetching

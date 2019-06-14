@@ -77,11 +77,11 @@ object LayerNs extends js.Object {
     sealed trait ONE_TO_ONE
       extends synapticLib.synapticMod.LayerNs.connectionType
     
-    val ALL_TO_ALL: ALL_TO_ALL with java.lang.String = js.native
-    val ALL_TO_ELSE: ALL_TO_ELSE with java.lang.String = js.native
-    val ONE_TO_ONE: ONE_TO_ONE with java.lang.String = js.native
+    /* 0 */ val ALL_TO_ALL: ALL_TO_ALL with scala.Double = js.native
+    /* 2 */ val ALL_TO_ELSE: ALL_TO_ELSE with scala.Double = js.native
+    /* 1 */ val ONE_TO_ONE: ONE_TO_ONE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[synapticLib.synapticMod.LayerNs.connectionType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[synapticLib.synapticMod.LayerNs.connectionType with scala.Double] = js.native
   }
   
   /**
@@ -110,11 +110,11 @@ object LayerNs extends js.Object {
     sealed trait OUTPUT
       extends synapticLib.synapticMod.LayerNs.gateType
     
-    val INPUT: INPUT with java.lang.String = js.native
-    val ONE_TO_ONE: ONE_TO_ONE with java.lang.String = js.native
-    val OUTPUT: OUTPUT with java.lang.String = js.native
+    /* 0 */ val INPUT: INPUT with scala.Double = js.native
+    /* 2 */ val ONE_TO_ONE: ONE_TO_ONE with scala.Double = js.native
+    /* 1 */ val OUTPUT: OUTPUT with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[synapticLib.synapticMod.LayerNs.gateType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[synapticLib.synapticMod.LayerNs.gateType with scala.Double] = js.native
   }
   
 }

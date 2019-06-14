@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation._
 @JSImport("Strophe", "LogLevel")
 @js.native
 object LogLevel extends js.Object {
-  val DEBUG: stropheLib.stropheMod.StropheNs.LogLevel.DEBUG with java.lang.String = js.native
-  val ERROR: stropheLib.stropheMod.StropheNs.LogLevel.ERROR with java.lang.String = js.native
-  val FATAL: stropheLib.stropheMod.StropheNs.LogLevel.FATAL with java.lang.String = js.native
-  val INFO: stropheLib.stropheMod.StropheNs.LogLevel.INFO with java.lang.String = js.native
-  val WARN: stropheLib.stropheMod.StropheNs.LogLevel.WARN with java.lang.String = js.native
+  /* 0 */ val DEBUG: stropheLib.stropheMod.StropheNs.LogLevel.DEBUG with scala.Double = js.native
+  /* 3 */ val ERROR: stropheLib.stropheMod.StropheNs.LogLevel.ERROR with scala.Double = js.native
+  /* 4 */ val FATAL: stropheLib.stropheMod.StropheNs.LogLevel.FATAL with scala.Double = js.native
+  /* 1 */ val INFO: stropheLib.stropheMod.StropheNs.LogLevel.INFO with scala.Double = js.native
+  /* 2 */ val WARN: stropheLib.stropheMod.StropheNs.LogLevel.WARN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[stropheLib.stropheMod.StropheNs.LogLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[stropheLib.stropheMod.StropheNs.LogLevel with scala.Double] = js.native
 }
 

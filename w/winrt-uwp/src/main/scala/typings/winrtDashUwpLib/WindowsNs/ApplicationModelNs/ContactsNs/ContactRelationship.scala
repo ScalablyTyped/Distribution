@@ -42,15 +42,15 @@ object ContactRelationship extends js.Object {
   sealed trait spouse
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactRelationship
   
-  val child: child with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val parent: parent with java.lang.String = js.native
-  val partner: partner with java.lang.String = js.native
-  val sibling: sibling with java.lang.String = js.native
-  val spouse: spouse with java.lang.String = js.native
+  /* 5 */ val child: child with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 4 */ val parent: parent with scala.Double = js.native
+  /* 2 */ val partner: partner with scala.Double = js.native
+  /* 3 */ val sibling: sibling with scala.Double = js.native
+  /* 1 */ val spouse: spouse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactRelationship with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactRelationship with scala.Double
   ] = js.native
 }
 

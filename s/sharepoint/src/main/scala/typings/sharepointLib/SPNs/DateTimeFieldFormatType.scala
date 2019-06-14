@@ -19,9 +19,9 @@ object DateTimeFieldFormatType extends js.Object {
   sealed trait dateTime
     extends sharepointLib.SPNs.DateTimeFieldFormatType
   
-  val dateOnly: dateOnly with java.lang.String = js.native
-  val dateTime: dateTime with java.lang.String = js.native
+  /* 0 */ val dateOnly: dateOnly with scala.Double = js.native
+  /* 1 */ val dateTime: dateTime with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.DateTimeFieldFormatType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.DateTimeFieldFormatType with scala.Double] = js.native
 }
 

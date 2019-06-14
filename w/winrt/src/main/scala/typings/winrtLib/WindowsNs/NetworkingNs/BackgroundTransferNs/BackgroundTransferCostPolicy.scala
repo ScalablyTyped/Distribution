@@ -23,12 +23,12 @@ object BackgroundTransferCostPolicy extends js.Object {
   sealed trait unrestrictedOnly
     extends winrtLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferCostPolicy
   
-  val always: always with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val unrestrictedOnly: unrestrictedOnly with java.lang.String = js.native
+  /* 2 */ val always: always with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val unrestrictedOnly: unrestrictedOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferCostPolicy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferCostPolicy with scala.Double
   ] = js.native
 }
 

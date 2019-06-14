@@ -47,14 +47,14 @@ object VpnIPProtocol extends js.Object {
   sealed trait udp
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnIPProtocol
   
-  val icmp: icmp with java.lang.String = js.native
-  val igmp: igmp with java.lang.String = js.native
-  val ipv6Icmp: ipv6Icmp with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val pgm: pgm with java.lang.String = js.native
-  val tcp: tcp with java.lang.String = js.native
-  val udp: udp with java.lang.String = js.native
+  /* 3 */ val icmp: icmp with scala.Double = js.native
+  /* 5 */ val igmp: igmp with scala.Double = js.native
+  /* 4 */ val ipv6Icmp: ipv6Icmp with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 6 */ val pgm: pgm with scala.Double = js.native
+  /* 1 */ val tcp: tcp with scala.Double = js.native
+  /* 2 */ val udp: udp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnIPProtocol with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnIPProtocol with scala.Double] = js.native
 }
 

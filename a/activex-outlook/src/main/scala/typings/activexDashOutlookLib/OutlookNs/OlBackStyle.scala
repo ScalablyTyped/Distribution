@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OlBackStyle extends js.Object
 
+object OlBackStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olBackStyleOpaque: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def olBackStyleTransparent: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+}
+

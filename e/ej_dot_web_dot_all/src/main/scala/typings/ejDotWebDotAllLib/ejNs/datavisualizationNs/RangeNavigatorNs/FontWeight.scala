@@ -21,11 +21,11 @@ object FontWeight extends js.Object {
   sealed trait Regular
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.FontWeight
   
-  val Lighter: Lighter with java.lang.String = js.native
-  val Regular: Regular with java.lang.String = js.native
+  /* 1 */ val Lighter: Lighter with scala.Double = js.native
+  /* 0 */ val Regular: Regular with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.FontWeight with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.FontWeight with scala.Double
   ] = js.native
 }
 

@@ -47,16 +47,14 @@ object VpnCredentialType extends js.Object {
   sealed trait usernamePasswordChange
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnCredentialType
   
-  val protectedCertificate: protectedCertificate with java.lang.String = js.native
-  val smartCard: smartCard with java.lang.String = js.native
-  val unProtectedCertificate: unProtectedCertificate with java.lang.String = js.native
-  val usernameOtpPin: usernameOtpPin with java.lang.String = js.native
-  val usernamePassword: usernamePassword with java.lang.String = js.native
-  val usernamePasswordAndPin: usernamePasswordAndPin with java.lang.String = js.native
-  val usernamePasswordChange: usernamePasswordChange with java.lang.String = js.native
+  /* 5 */ val protectedCertificate: protectedCertificate with scala.Double = js.native
+  /* 4 */ val smartCard: smartCard with scala.Double = js.native
+  /* 6 */ val unProtectedCertificate: unProtectedCertificate with scala.Double = js.native
+  /* 1 */ val usernameOtpPin: usernameOtpPin with scala.Double = js.native
+  /* 0 */ val usernamePassword: usernamePassword with scala.Double = js.native
+  /* 2 */ val usernamePasswordAndPin: usernamePasswordAndPin with scala.Double = js.native
+  /* 3 */ val usernamePasswordChange: usernamePasswordChange with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnCredentialType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnCredentialType with scala.Double] = js.native
 }
 

@@ -14,3 +14,16 @@ import scala.scalajs.js.annotation._
 */
 trait _SCHEMAPROCESSCONTENTS extends js.Object
 
+object _SCHEMAPROCESSCONTENTS {
+  @scala.inline
+  def SCHEMAPROCESSCONTENTS_LAX: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def SCHEMAPROCESSCONTENTS_NONE: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def SCHEMAPROCESSCONTENTS_SKIP: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def SCHEMAPROCESSCONTENTS_STRICT: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

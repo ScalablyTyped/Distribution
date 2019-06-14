@@ -32,13 +32,13 @@ object DevicePairingProtectionLevel extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingProtectionLevel
   
-  val default: default with java.lang.String = js.native
-  val encryption: encryption with java.lang.String = js.native
-  val encryptionAndAuthentication: encryptionAndAuthentication with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 2 */ val encryption: encryption with scala.Double = js.native
+  /* 3 */ val encryptionAndAuthentication: encryptionAndAuthentication with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingProtectionLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingProtectionLevel with scala.Double
   ] = js.native
 }
 

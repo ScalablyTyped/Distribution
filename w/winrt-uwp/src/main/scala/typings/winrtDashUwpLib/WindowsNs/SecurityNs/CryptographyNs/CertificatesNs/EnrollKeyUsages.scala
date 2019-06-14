@@ -37,14 +37,14 @@ object EnrollKeyUsages extends js.Object {
   sealed trait signing
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.EnrollKeyUsages
   
-  val all: all with java.lang.String = js.native
-  val decryption: decryption with java.lang.String = js.native
-  val keyAgreement: keyAgreement with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val signing: signing with java.lang.String = js.native
+  /* 4 */ val all: all with scala.Double = js.native
+  /* 1 */ val decryption: decryption with scala.Double = js.native
+  /* 3 */ val keyAgreement: keyAgreement with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val signing: signing with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.EnrollKeyUsages with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.EnrollKeyUsages with scala.Double
   ] = js.native
 }
 

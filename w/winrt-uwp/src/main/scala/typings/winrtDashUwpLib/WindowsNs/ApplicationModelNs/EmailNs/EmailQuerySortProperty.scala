@@ -17,10 +17,10 @@ object EmailQuerySortProperty extends js.Object {
   sealed trait date
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySortProperty
   
-  val date: date with java.lang.String = js.native
+  /* 0 */ val date: date with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySortProperty with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySortProperty with scala.Double
   ] = js.native
 }
 

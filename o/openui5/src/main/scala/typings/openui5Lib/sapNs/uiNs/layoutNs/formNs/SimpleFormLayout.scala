@@ -26,10 +26,10 @@ object SimpleFormLayout extends js.Object {
   sealed trait ResponsiveLayout
     extends openui5Lib.sapNs.uiNs.layoutNs.formNs.SimpleFormLayout
   
-  val GridLayout: GridLayout with java.lang.String = js.native
-  val ResponsiveGridLayout: ResponsiveGridLayout with java.lang.String = js.native
-  val ResponsiveLayout: ResponsiveLayout with java.lang.String = js.native
+  /* 0 */ val GridLayout: GridLayout with scala.Double = js.native
+  /* 1 */ val ResponsiveGridLayout: ResponsiveGridLayout with scala.Double = js.native
+  /* 2 */ val ResponsiveLayout: ResponsiveLayout with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.formNs.SimpleFormLayout with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.formNs.SimpleFormLayout with scala.Double] = js.native
 }
 

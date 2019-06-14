@@ -27,12 +27,12 @@ object EmailMailboxSmimeSigningAlgorithm extends js.Object {
   sealed trait sha1
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxSmimeSigningAlgorithm
   
-  val any: any with java.lang.String = js.native
-  val md5: md5 with java.lang.String = js.native
-  val sha1: sha1 with java.lang.String = js.native
+  /* 0 */ val any: any with scala.Double = js.native
+  /* 2 */ val md5: md5 with scala.Double = js.native
+  /* 1 */ val sha1: sha1 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxSmimeSigningAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxSmimeSigningAlgorithm with scala.Double
   ] = js.native
 }
 

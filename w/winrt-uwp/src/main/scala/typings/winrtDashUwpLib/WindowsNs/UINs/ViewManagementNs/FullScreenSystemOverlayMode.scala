@@ -22,11 +22,11 @@ object FullScreenSystemOverlayMode extends js.Object {
   sealed trait standard
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.FullScreenSystemOverlayMode
   
-  val minimal: minimal with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
+  /* 1 */ val minimal: minimal with scala.Double = js.native
+  /* 0 */ val standard: standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.FullScreenSystemOverlayMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.FullScreenSystemOverlayMode with scala.Double
   ] = js.native
 }
 

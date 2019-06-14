@@ -84,27 +84,27 @@ object PersonalSiteInstantiationState extends js.Object {
   sealed trait uninitialized
     extends sharepointLib.SPNs.UserProfilesNs.PersonalSiteInstantiationState
   
-  val created: created with java.lang.String = js.native
-  val deleted: deleted with java.lang.String = js.native
-  val enqueued: enqueued with java.lang.String = js.native
-  val errorGeneralFailure: errorGeneralFailure with java.lang.String = js.native
-  val errorLanguageNotInstalled: errorLanguageNotInstalled with java.lang.String = js.native
-  val errorManagedPathDoesNotExist: errorManagedPathDoesNotExist with java.lang.String = js.native
-  val errorPartialCreate: errorPartialCreate with java.lang.String = js.native
-  val errorPersonalSiteAlreadyExists: errorPersonalSiteAlreadyExists with java.lang.String = js.native
-  val errorRootSiteNotPresent: errorRootSiteNotPresent with java.lang.String = js.native
-  val errorSelfServiceSiteCreateCallFailed: errorSelfServiceSiteCreateCallFailed with java.lang.String = js.native
-  val permissionsEmptyHostUrl: permissionsEmptyHostUrl with java.lang.String = js.native
-  val permissionsGeneralFailure: permissionsGeneralFailure with java.lang.String = js.native
-  val permissionsHostFailedToInitializePersonalSiteContext: permissionsHostFailedToInitializePersonalSiteContext with java.lang.String = js.native
-  val permissionsNoMySitesInPeopleLight: permissionsNoMySitesInPeopleLight with java.lang.String = js.native
-  val permissionsSelfServiceSiteCreationDisabled: permissionsSelfServiceSiteCreationDisabled with java.lang.String = js.native
-  val permissionsUPANotGranted: permissionsUPANotGranted with java.lang.String = js.native
-  val permissionsUserNotLicensed: permissionsUserNotLicensed with java.lang.String = js.native
-  val uninitialized: uninitialized with java.lang.String = js.native
+  /* 2 */ val created: created with scala.Double = js.native
+  /* 3 */ val deleted: deleted with scala.Double = js.native
+  /* 1 */ val enqueued: enqueued with scala.Double = js.native
+  /* 11 */ val errorGeneralFailure: errorGeneralFailure with scala.Double = js.native
+  /* 13 */ val errorLanguageNotInstalled: errorLanguageNotInstalled with scala.Double = js.native
+  /* 12 */ val errorManagedPathDoesNotExist: errorManagedPathDoesNotExist with scala.Double = js.native
+  /* 14 */ val errorPartialCreate: errorPartialCreate with scala.Double = js.native
+  /* 15 */ val errorPersonalSiteAlreadyExists: errorPersonalSiteAlreadyExists with scala.Double = js.native
+  /* 16 */ val errorRootSiteNotPresent: errorRootSiteNotPresent with scala.Double = js.native
+  /* 17 */ val errorSelfServiceSiteCreateCallFailed: errorSelfServiceSiteCreateCallFailed with scala.Double = js.native
+  /* 9 */ val permissionsEmptyHostUrl: permissionsEmptyHostUrl with scala.Double = js.native
+  /* 4 */ val permissionsGeneralFailure: permissionsGeneralFailure with scala.Double = js.native
+  /* 10 */ val permissionsHostFailedToInitializePersonalSiteContext: permissionsHostFailedToInitializePersonalSiteContext with scala.Double = js.native
+  /* 8 */ val permissionsNoMySitesInPeopleLight: permissionsNoMySitesInPeopleLight with scala.Double = js.native
+  /* 7 */ val permissionsSelfServiceSiteCreationDisabled: permissionsSelfServiceSiteCreationDisabled with scala.Double = js.native
+  /* 5 */ val permissionsUPANotGranted: permissionsUPANotGranted with scala.Double = js.native
+  /* 6 */ val permissionsUserNotLicensed: permissionsUserNotLicensed with scala.Double = js.native
+  /* 0 */ val uninitialized: uninitialized with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.UserProfilesNs.PersonalSiteInstantiationState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.SPNs.UserProfilesNs.PersonalSiteInstantiationState with scala.Double
   ] = js.native
 }
 

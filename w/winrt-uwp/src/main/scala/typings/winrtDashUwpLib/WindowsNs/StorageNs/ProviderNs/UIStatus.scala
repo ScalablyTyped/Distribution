@@ -32,11 +32,11 @@ object UIStatus extends js.Object {
   sealed trait visible
     extends winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.UIStatus
   
-  val complete: complete with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val unavailable: unavailable with java.lang.String = js.native
-  val visible: visible with java.lang.String = js.native
+  /* 3 */ val complete: complete with scala.Double = js.native
+  /* 1 */ val hidden: hidden with scala.Double = js.native
+  /* 0 */ val unavailable: unavailable with scala.Double = js.native
+  /* 2 */ val visible: visible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.UIStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.UIStatus with scala.Double] = js.native
 }
 

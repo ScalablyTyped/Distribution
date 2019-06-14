@@ -22,9 +22,9 @@ object GpioPinValue extends js.Object {
   sealed trait low
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinValue
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
+  /* 1 */ val high: high with scala.Double = js.native
+  /* 0 */ val low: low with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinValue with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinValue with scala.Double] = js.native
 }
 

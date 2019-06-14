@@ -12,8 +12,8 @@ trait ListVirtualRoutersInput extends js.Object {
     limit results in a single page along with a nextToken response
     element. You can see the remaining results of the initial request by sending another
     ListVirtualRouters request with the returned nextToken value.
-    This value can be between 1 and 100. If you don't use this parameter, 
-    ListVirtualRouters returns up to 100 results and
+    This value can be between 1 and 100. If you don't use this
+    parameter, ListVirtualRouters returns up to 100 results and
     a nextToken value if applicable.
     */
   var limit: js.UndefOr[ListVirtualRoutersLimit] = js.undefined

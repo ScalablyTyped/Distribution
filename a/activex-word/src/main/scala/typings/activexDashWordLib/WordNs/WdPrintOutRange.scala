@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait WdPrintOutRange extends js.Object
 
+object WdPrintOutRange {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdPrintAllDocument: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdPrintCurrentPage: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdPrintFromTo: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdPrintRangeOfPages: activexDashWordLib.activexDashWordLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def wdPrintSelection: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

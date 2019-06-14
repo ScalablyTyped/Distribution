@@ -22,9 +22,9 @@ object GenericTileMode extends js.Object {
   sealed trait HeaderMode
     extends openui5Lib.sapNs.mNs.GenericTileMode
   
-  val ContentMode: ContentMode with java.lang.String = js.native
-  val HeaderMode: HeaderMode with java.lang.String = js.native
+  /* 0 */ val ContentMode: ContentMode with scala.Double = js.native
+  /* 1 */ val HeaderMode: HeaderMode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.GenericTileMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.GenericTileMode with scala.Double] = js.native
 }
 

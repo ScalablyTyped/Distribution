@@ -14,3 +14,16 @@ import scala.scalajs.js.annotation._
 */
 trait SCHEMATYPEVARIETY extends js.Object
 
+object SCHEMATYPEVARIETY {
+  @scala.inline
+  def SCHEMATYPEVARIETY_ATOMIC: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def SCHEMATYPEVARIETY_LIST: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def SCHEMATYPEVARIETY_NONE: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def SCHEMATYPEVARIETY_UNION: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

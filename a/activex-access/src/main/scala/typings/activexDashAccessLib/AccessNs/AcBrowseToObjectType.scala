@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcBrowseToObjectType extends js.Object
 
+object AcBrowseToObjectType {
+  @scala.inline
+  def acBrowseToForm: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acBrowseToReport: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

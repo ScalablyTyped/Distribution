@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlDisplayDrawingObjects extends js.Object
 
+object XlDisplayDrawingObjects {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlDisplayShapes: activexDashExcelLib.activexDashExcelLibNumbers.`-4104` = this.cast(-4104)
+  @scala.inline
+  def xlHide: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlPlaceholders: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

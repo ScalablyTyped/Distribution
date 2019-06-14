@@ -47,14 +47,14 @@ object TextSetOptions extends js.Object {
   sealed trait unlink
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.TextSetOptions
   
-  val applyRtfDocumentDefaults: applyRtfDocumentDefaults with java.lang.String = js.native
-  val checkTextLimit: checkTextLimit with java.lang.String = js.native
-  val formatRtf: formatRtf with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val unhide: unhide with java.lang.String = js.native
-  val unicodeBidi: unicodeBidi with java.lang.String = js.native
-  val unlink: unlink with java.lang.String = js.native
+  /* 6 */ val applyRtfDocumentDefaults: applyRtfDocumentDefaults with scala.Double = js.native
+  /* 4 */ val checkTextLimit: checkTextLimit with scala.Double = js.native
+  /* 5 */ val formatRtf: formatRtf with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val unhide: unhide with scala.Double = js.native
+  /* 1 */ val unicodeBidi: unicodeBidi with scala.Double = js.native
+  /* 2 */ val unlink: unlink with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.TextSetOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.TextSetOptions with scala.Double] = js.native
 }
 

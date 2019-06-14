@@ -19,11 +19,11 @@ object IndexedResourceType extends js.Object {
   sealed trait string
     extends winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.ManagementNs.IndexedResourceType
   
-  val path: path with java.lang.String = js.native
-  val string: string with java.lang.String = js.native
+  /* 1 */ val path: path with scala.Double = js.native
+  /* 0 */ val string: string with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.ManagementNs.IndexedResourceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.ManagementNs.IndexedResourceType with scala.Double
   ] = js.native
 }
 

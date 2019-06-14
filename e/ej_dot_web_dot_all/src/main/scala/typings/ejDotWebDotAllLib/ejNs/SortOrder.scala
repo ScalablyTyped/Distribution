@@ -22,10 +22,10 @@ object SortOrder extends js.Object {
   sealed trait Descending
     extends ejDotWebDotAllLib.ejNs.SortOrder
   
-  val Ascending: Ascending with java.lang.String = js.native
-  val Descending: Descending with java.lang.String = js.native
+  /* 0 */ val Ascending: Ascending with scala.Double = js.native
+  /* 1 */ val Descending: Descending with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SortOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SortOrder with scala.Double] = js.native
 }
 
 @JSGlobal("ej.sortOrder")
@@ -41,9 +41,9 @@ object sortOrder extends js.Object {
   sealed trait Descending
     extends ejDotWebDotAllLib.ejNs.sortOrder
   
-  val Ascending: Ascending with java.lang.String = js.native
-  val Descending: Descending with java.lang.String = js.native
+  /* 0 */ val Ascending: Ascending with scala.Double = js.native
+  /* 1 */ val Descending: Descending with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.sortOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.sortOrder with scala.Double] = js.native
 }
 

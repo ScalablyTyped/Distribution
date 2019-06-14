@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _htmlStart extends js.Object
 
+object _htmlStart {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def htmlStart_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+  @scala.inline
+  def htmlStartfileopen: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def htmlStartmouseover: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+}
+

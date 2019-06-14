@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _HTMLDlgBorder extends js.Object
 
+object _HTMLDlgBorder {
+  @scala.inline
+  def HTMLDlgBorderThick: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`262144` = this.cast(262144)
+  @scala.inline
+  def HTMLDlgBorderThin: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def HTMLDlgBorder_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

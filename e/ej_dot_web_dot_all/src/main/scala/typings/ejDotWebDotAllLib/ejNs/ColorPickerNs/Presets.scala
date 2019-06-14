@@ -66,18 +66,18 @@ object Presets extends js.Object {
   sealed trait WebColors
     extends ejDotWebDotAllLib.ejNs.ColorPickerNs.Presets
   
-  val Basic: Basic with java.lang.String = js.native
-  val CandyCrush: CandyCrush with java.lang.String = js.native
-  val Citrus: Citrus with java.lang.String = js.native
-  val FlatColors: FlatColors with java.lang.String = js.native
-  val Misty: Misty with java.lang.String = js.native
-  val MoonLight: MoonLight with java.lang.String = js.native
-  val PinkShades: PinkShades with java.lang.String = js.native
-  val Sandy: Sandy with java.lang.String = js.native
-  val SeaWolf: SeaWolf with java.lang.String = js.native
-  val Vintage: Vintage with java.lang.String = js.native
-  val WebColors: WebColors with java.lang.String = js.native
+  /* 0 */ val Basic: Basic with scala.Double = js.native
+  /* 1 */ val CandyCrush: CandyCrush with scala.Double = js.native
+  /* 2 */ val Citrus: Citrus with scala.Double = js.native
+  /* 3 */ val FlatColors: FlatColors with scala.Double = js.native
+  /* 4 */ val Misty: Misty with scala.Double = js.native
+  /* 5 */ val MoonLight: MoonLight with scala.Double = js.native
+  /* 6 */ val PinkShades: PinkShades with scala.Double = js.native
+  /* 7 */ val Sandy: Sandy with scala.Double = js.native
+  /* 8 */ val SeaWolf: SeaWolf with scala.Double = js.native
+  /* 9 */ val Vintage: Vintage with scala.Double = js.native
+  /* 10 */ val WebColors: WebColors with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ColorPickerNs.Presets with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ColorPickerNs.Presets with scala.Double] = js.native
 }
 

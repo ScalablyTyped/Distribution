@@ -31,12 +31,12 @@ object PaceEvent extends js.Object {
   sealed trait stop
     extends hubspotDashPaceLib.HubSpotPaceInterfacesNs.PaceEvent
   
-  val done: done with java.lang.String = js.native
-  val hide: hide with java.lang.String = js.native
-  val restart: restart with java.lang.String = js.native
-  val start: start with java.lang.String = js.native
-  val stop: stop with java.lang.String = js.native
+  /* 3 */ val done: done with scala.Double = js.native
+  /* 4 */ val hide: hide with scala.Double = js.native
+  /* 2 */ val restart: restart with scala.Double = js.native
+  /* 0 */ val start: start with scala.Double = js.native
+  /* 1 */ val stop: stop with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[hubspotDashPaceLib.HubSpotPaceInterfacesNs.PaceEvent with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[hubspotDashPaceLib.HubSpotPaceInterfacesNs.PaceEvent with scala.Double] = js.native
 }
 

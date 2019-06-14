@@ -71,24 +71,24 @@ object ListPreset extends js.Object {
   sealed trait ZERODIGIT_ALPHA_ROMAN
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ListPreset
   
-  val ARROW3D_CIRCLE_SQUARE: ARROW3D_CIRCLE_SQUARE with java.lang.String = js.native
-  val ARROW_DIAMOND_DISC: ARROW_DIAMOND_DISC with java.lang.String = js.native
-  val CHECKBOX: CHECKBOX with java.lang.String = js.native
-  val DIAMONDX_ARROW3D_SQUARE: DIAMONDX_ARROW3D_SQUARE with java.lang.String = js.native
-  val DIAMONDX_HOLLOWDIAMOND_SQUARE: DIAMONDX_HOLLOWDIAMOND_SQUARE with java.lang.String = js.native
-  val DIAMOND_CIRCLE_SQUARE: DIAMOND_CIRCLE_SQUARE with java.lang.String = js.native
-  val DIGIT_ALPHA_ROMAN: DIGIT_ALPHA_ROMAN with java.lang.String = js.native
-  val DIGIT_ALPHA_ROMAN_PARENS: DIGIT_ALPHA_ROMAN_PARENS with java.lang.String = js.native
-  val DIGIT_NESTED: DIGIT_NESTED with java.lang.String = js.native
-  val DISC_CIRCLE_SQUARE: DISC_CIRCLE_SQUARE with java.lang.String = js.native
-  val LEFTTRIANGLE_DIAMOND_DISC: LEFTTRIANGLE_DIAMOND_DISC with java.lang.String = js.native
-  val STAR_CIRCLE_SQUARE: STAR_CIRCLE_SQUARE with java.lang.String = js.native
-  val UPPERALPHA_ALPHA_ROMAN: UPPERALPHA_ALPHA_ROMAN with java.lang.String = js.native
-  val UPPERROMAN_UPPERALPHA_DIGIT: UPPERROMAN_UPPERALPHA_DIGIT with java.lang.String = js.native
-  val ZERODIGIT_ALPHA_ROMAN: ZERODIGIT_ALPHA_ROMAN with java.lang.String = js.native
+  /* 5 */ val ARROW3D_CIRCLE_SQUARE: ARROW3D_CIRCLE_SQUARE with scala.Double = js.native
+  /* 3 */ val ARROW_DIAMOND_DISC: ARROW_DIAMOND_DISC with scala.Double = js.native
+  /* 2 */ val CHECKBOX: CHECKBOX with scala.Double = js.native
+  /* 1 */ val DIAMONDX_ARROW3D_SQUARE: DIAMONDX_ARROW3D_SQUARE with scala.Double = js.native
+  /* 7 */ val DIAMONDX_HOLLOWDIAMOND_SQUARE: DIAMONDX_HOLLOWDIAMOND_SQUARE with scala.Double = js.native
+  /* 8 */ val DIAMOND_CIRCLE_SQUARE: DIAMOND_CIRCLE_SQUARE with scala.Double = js.native
+  /* 9 */ val DIGIT_ALPHA_ROMAN: DIGIT_ALPHA_ROMAN with scala.Double = js.native
+  /* 10 */ val DIGIT_ALPHA_ROMAN_PARENS: DIGIT_ALPHA_ROMAN_PARENS with scala.Double = js.native
+  /* 11 */ val DIGIT_NESTED: DIGIT_NESTED with scala.Double = js.native
+  /* 0 */ val DISC_CIRCLE_SQUARE: DISC_CIRCLE_SQUARE with scala.Double = js.native
+  /* 6 */ val LEFTTRIANGLE_DIAMOND_DISC: LEFTTRIANGLE_DIAMOND_DISC with scala.Double = js.native
+  /* 4 */ val STAR_CIRCLE_SQUARE: STAR_CIRCLE_SQUARE with scala.Double = js.native
+  /* 12 */ val UPPERALPHA_ALPHA_ROMAN: UPPERALPHA_ALPHA_ROMAN with scala.Double = js.native
+  /* 13 */ val UPPERROMAN_UPPERALPHA_DIGIT: UPPERROMAN_UPPERALPHA_DIGIT with scala.Double = js.native
+  /* 14 */ val ZERODIGIT_ALPHA_ROMAN: ZERODIGIT_ALPHA_ROMAN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ListPreset with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ListPreset with scala.Double
   ] = js.native
 }
 

@@ -25,11 +25,11 @@ object StateParameterLocation extends js.Object {
   sealed trait REDIRECT_URL
     extends googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.StateParameterLocation
   
-  val AUTHORIZATION_URL: AUTHORIZATION_URL with java.lang.String = js.native
-  val REDIRECT_URL: REDIRECT_URL with java.lang.String = js.native
+  /* 0 */ val AUTHORIZATION_URL: AUTHORIZATION_URL with scala.Double = js.native
+  /* 1 */ val REDIRECT_URL: REDIRECT_URL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.StateParameterLocation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.StateParameterLocation with scala.Double
   ] = js.native
 }
 

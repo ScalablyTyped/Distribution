@@ -26,10 +26,10 @@ object AnnotationType extends js.Object {
   sealed trait Underline
     extends ejDotWebDotAllLib.ejNs.PdfViewerNs.AnnotationType
   
-  val Highlight: Highlight with java.lang.String = js.native
-  val Strikethrough: Strikethrough with java.lang.String = js.native
-  val Underline: Underline with java.lang.String = js.native
+  /* 2 */ val Highlight: Highlight with scala.Double = js.native
+  /* 1 */ val Strikethrough: Strikethrough with scala.Double = js.native
+  /* 0 */ val Underline: Underline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.AnnotationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.AnnotationType with scala.Double] = js.native
 }
 

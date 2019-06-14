@@ -15,8 +15,8 @@ object EChatEntryType extends js.Object {
   sealed trait ChatMsg
     extends steamLib.steamMod.EChatEntryType
   
-  val ChatMsg: ChatMsg with java.lang.String = js.native
+  /* 0 */ val ChatMsg: ChatMsg with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[steamLib.steamMod.EChatEntryType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[steamLib.steamMod.EChatEntryType with scala.Double] = js.native
 }
 

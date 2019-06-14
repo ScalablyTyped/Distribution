@@ -51,15 +51,15 @@ object EditMode extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.GridNs.EditMode
   
-  val Batch: Batch with java.lang.String = js.native
-  val Dialog: Dialog with java.lang.String = js.native
-  val DialogTemplate: DialogTemplate with java.lang.String = js.native
-  val ExternalForm: ExternalForm with java.lang.String = js.native
-  val ExternalFormTemplate: ExternalFormTemplate with java.lang.String = js.native
-  val InlineForm: InlineForm with java.lang.String = js.native
-  val InlineTemplateForm: InlineTemplateForm with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 3 */ val Batch: Batch with scala.Double = js.native
+  /* 1 */ val Dialog: Dialog with scala.Double = js.native
+  /* 2 */ val DialogTemplate: DialogTemplate with scala.Double = js.native
+  /* 6 */ val ExternalForm: ExternalForm with scala.Double = js.native
+  /* 7 */ val ExternalFormTemplate: ExternalFormTemplate with scala.Double = js.native
+  /* 4 */ val InlineForm: InlineForm with scala.Double = js.native
+  /* 5 */ val InlineTemplateForm: InlineTemplateForm with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.EditMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.EditMode with scala.Double] = js.native
 }
 

@@ -19,9 +19,9 @@ object MaxZoomStatus extends js.Object {
   sealed trait OK
     extends googlemapsLib.googleNs.mapsNs.MaxZoomStatus
   
-  val ERROR: ERROR with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
+  /* 0 */ val ERROR: ERROR with scala.Double = js.native
+  /* 1 */ val OK: OK with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.MaxZoomStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.MaxZoomStatus with scala.Double] = js.native
 }
 

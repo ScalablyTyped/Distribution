@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait PpPlayerState extends js.Object
 
+object PpPlayerState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ppNotReady: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def ppPaused: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def ppPlaying: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def ppStopped: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+}
+

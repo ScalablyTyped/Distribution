@@ -42,15 +42,15 @@ object AppointmentRecurrenceUnit extends js.Object {
   sealed trait yearlyOnDay
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentRecurrenceUnit
   
-  val daily: daily with java.lang.String = js.native
-  val monthly: monthly with java.lang.String = js.native
-  val monthlyOnDay: monthlyOnDay with java.lang.String = js.native
-  val weekly: weekly with java.lang.String = js.native
-  val yearly: yearly with java.lang.String = js.native
-  val yearlyOnDay: yearlyOnDay with java.lang.String = js.native
+  /* 0 */ val daily: daily with scala.Double = js.native
+  /* 2 */ val monthly: monthly with scala.Double = js.native
+  /* 3 */ val monthlyOnDay: monthlyOnDay with scala.Double = js.native
+  /* 1 */ val weekly: weekly with scala.Double = js.native
+  /* 4 */ val yearly: yearly with scala.Double = js.native
+  /* 5 */ val yearlyOnDay: yearlyOnDay with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentRecurrenceUnit with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentRecurrenceUnit with scala.Double
   ] = js.native
 }
 

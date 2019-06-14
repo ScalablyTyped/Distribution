@@ -37,14 +37,14 @@ object CausalityRelation extends js.Object {
   sealed trait join
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalityRelation
   
-  val assignDelegate: assignDelegate with java.lang.String = js.native
-  val cancel: cancel with java.lang.String = js.native
-  val choice: choice with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val join: join with java.lang.String = js.native
+  /* 0 */ val assignDelegate: assignDelegate with scala.Double = js.native
+  /* 3 */ val cancel: cancel with scala.Double = js.native
+  /* 2 */ val choice: choice with scala.Double = js.native
+  /* 4 */ val error: error with scala.Double = js.native
+  /* 1 */ val join: join with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalityRelation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalityRelation with scala.Double
   ] = js.native
 }
 

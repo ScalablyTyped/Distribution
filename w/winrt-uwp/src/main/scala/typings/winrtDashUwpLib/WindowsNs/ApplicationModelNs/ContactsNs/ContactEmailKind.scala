@@ -27,12 +27,12 @@ object ContactEmailKind extends js.Object {
   sealed trait work
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactEmailKind
   
-  val other: other with java.lang.String = js.native
-  val personal: personal with java.lang.String = js.native
-  val work: work with java.lang.String = js.native
+  /* 2 */ val other: other with scala.Double = js.native
+  /* 0 */ val personal: personal with scala.Double = js.native
+  /* 1 */ val work: work with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactEmailKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactEmailKind with scala.Double
   ] = js.native
 }
 

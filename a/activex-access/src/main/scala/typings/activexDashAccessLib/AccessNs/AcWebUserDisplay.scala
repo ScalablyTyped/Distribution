@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait AcWebUserDisplay extends js.Object
 
+object AcWebUserDisplay {
+  @scala.inline
+  def acWebUserEmail: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def acWebUserID: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acWebUserLoginName: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acWebUserName: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -59,21 +59,21 @@ object BandingTheme extends js.Object {
   sealed trait YELLOW
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.BandingTheme
   
-  val BLUE: BLUE with java.lang.String = js.native
-  val BROWN: BROWN with java.lang.String = js.native
-  val CYAN: CYAN with java.lang.String = js.native
-  val GREEN: GREEN with java.lang.String = js.native
-  val GREY: GREY with java.lang.String = js.native
-  val INDIGO: INDIGO with java.lang.String = js.native
-  val LIGHT_GREEN: LIGHT_GREEN with java.lang.String = js.native
-  val LIGHT_GREY: LIGHT_GREY with java.lang.String = js.native
-  val ORANGE: ORANGE with java.lang.String = js.native
-  val PINK: PINK with java.lang.String = js.native
-  val TEAL: TEAL with java.lang.String = js.native
-  val YELLOW: YELLOW with java.lang.String = js.native
+  /* 5 */ val BLUE: BLUE with scala.Double = js.native
+  /* 8 */ val BROWN: BROWN with scala.Double = js.native
+  /* 1 */ val CYAN: CYAN with scala.Double = js.native
+  /* 2 */ val GREEN: GREEN with scala.Double = js.native
+  /* 7 */ val GREY: GREY with scala.Double = js.native
+  /* 10 */ val INDIGO: INDIGO with scala.Double = js.native
+  /* 9 */ val LIGHT_GREEN: LIGHT_GREEN with scala.Double = js.native
+  /* 0 */ val LIGHT_GREY: LIGHT_GREY with scala.Double = js.native
+  /* 4 */ val ORANGE: ORANGE with scala.Double = js.native
+  /* 11 */ val PINK: PINK with scala.Double = js.native
+  /* 6 */ val TEAL: TEAL with scala.Double = js.native
+  /* 3 */ val YELLOW: YELLOW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.BandingTheme with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.BandingTheme with scala.Double
   ] = js.native
 }
 

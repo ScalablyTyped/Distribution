@@ -32,13 +32,13 @@ object RcsServiceKind extends js.Object {
   sealed trait groupChat
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.RcsServiceKind
   
-  val capability: capability with java.lang.String = js.native
-  val chat: chat with java.lang.String = js.native
-  val fileTransfer: fileTransfer with java.lang.String = js.native
-  val groupChat: groupChat with java.lang.String = js.native
+  /* 3 */ val capability: capability with scala.Double = js.native
+  /* 0 */ val chat: chat with scala.Double = js.native
+  /* 2 */ val fileTransfer: fileTransfer with scala.Double = js.native
+  /* 1 */ val groupChat: groupChat with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.RcsServiceKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.RcsServiceKind with scala.Double
   ] = js.native
 }
 

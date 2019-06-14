@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait _styleGridColumn extends js.Object
 
+object _styleGridColumn {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleGridColumnNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleGridColumn_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

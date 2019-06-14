@@ -41,15 +41,15 @@ object LabelConstraints extends js.Object {
   sealed trait Selectable
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelConstraints
   
-  val All: All with java.lang.String = js.native
-  val Draggable: Draggable with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Resizable: Resizable with java.lang.String = js.native
-  val Rotatable: Rotatable with java.lang.String = js.native
-  val Selectable: Selectable with java.lang.String = js.native
+  /* 5 */ val All: All with scala.Double = js.native
+  /* 2 */ val Draggable: Draggable with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 3 */ val Resizable: Resizable with scala.Double = js.native
+  /* 4 */ val Rotatable: Rotatable with scala.Double = js.native
+  /* 1 */ val Selectable: Selectable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelConstraints with scala.Double
   ] = js.native
 }
 

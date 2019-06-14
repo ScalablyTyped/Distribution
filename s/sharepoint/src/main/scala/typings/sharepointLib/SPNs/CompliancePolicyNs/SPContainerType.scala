@@ -25,10 +25,10 @@ object SPContainerType extends js.Object {
   sealed trait web
     extends sharepointLib.SPNs.CompliancePolicyNs.SPContainerType
   
-  val list: list with java.lang.String = js.native
-  val site: site with java.lang.String = js.native
-  val web: web with java.lang.String = js.native
+  /* 2 */ val list: list with scala.Double = js.native
+  /* 0 */ val site: site with scala.Double = js.native
+  /* 1 */ val web: web with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.CompliancePolicyNs.SPContainerType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.CompliancePolicyNs.SPContainerType with scala.Double] = js.native
 }
 

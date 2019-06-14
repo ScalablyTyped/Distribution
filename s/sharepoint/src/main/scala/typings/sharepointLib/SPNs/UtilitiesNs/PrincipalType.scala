@@ -35,13 +35,13 @@ object PrincipalType extends js.Object {
   sealed trait user
     extends sharepointLib.SPNs.UtilitiesNs.PrincipalType
   
-  val all: all with java.lang.String = js.native
-  val distributionList: distributionList with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val securityGroup: securityGroup with java.lang.String = js.native
-  val sharePointGroup: sharePointGroup with java.lang.String = js.native
-  val user: user with java.lang.String = js.native
+  /* 5 */ val all: all with scala.Double = js.native
+  /* 2 */ val distributionList: distributionList with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val securityGroup: securityGroup with scala.Double = js.native
+  /* 4 */ val sharePointGroup: sharePointGroup with scala.Double = js.native
+  /* 1 */ val user: user with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.PrincipalType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.PrincipalType with scala.Double] = js.native
 }
 

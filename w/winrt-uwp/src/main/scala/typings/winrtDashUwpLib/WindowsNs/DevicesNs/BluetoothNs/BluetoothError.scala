@@ -52,17 +52,15 @@ object BluetoothError extends js.Object {
   sealed trait success
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothError
   
-  val deviceNotConnected: deviceNotConnected with java.lang.String = js.native
-  val disabledByPolicy: disabledByPolicy with java.lang.String = js.native
-  val disabledByUser: disabledByUser with java.lang.String = js.native
-  val notSupported: notSupported with java.lang.String = js.native
-  val otherError: otherError with java.lang.String = js.native
-  val radioNotAvailable: radioNotAvailable with java.lang.String = js.native
-  val resourceInUse: resourceInUse with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 3 */ val deviceNotConnected: deviceNotConnected with scala.Double = js.native
+  /* 5 */ val disabledByPolicy: disabledByPolicy with scala.Double = js.native
+  /* 7 */ val disabledByUser: disabledByUser with scala.Double = js.native
+  /* 6 */ val notSupported: notSupported with scala.Double = js.native
+  /* 4 */ val otherError: otherError with scala.Double = js.native
+  /* 1 */ val radioNotAvailable: radioNotAvailable with scala.Double = js.native
+  /* 2 */ val resourceInUse: resourceInUse with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothError with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothError with scala.Double] = js.native
 }
 

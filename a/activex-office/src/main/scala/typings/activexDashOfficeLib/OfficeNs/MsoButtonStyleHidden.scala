@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MsoButtonStyleHidden extends js.Object
 
+object MsoButtonStyleHidden {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoButtonTextBelow: activexDashOfficeLib.activexDashOfficeLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def msoButtonWrapText: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+}
+

@@ -22,11 +22,9 @@ object TimedTextScrollMode extends js.Object {
   sealed trait rollup
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextScrollMode
   
-  val popon: popon with java.lang.String = js.native
-  val rollup: rollup with java.lang.String = js.native
+  /* 0 */ val popon: popon with scala.Double = js.native
+  /* 1 */ val rollup: rollup with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextScrollMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextScrollMode with scala.Double] = js.native
 }
 

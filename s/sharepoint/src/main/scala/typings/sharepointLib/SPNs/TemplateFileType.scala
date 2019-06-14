@@ -23,10 +23,10 @@ object TemplateFileType extends js.Object {
   sealed trait wikiPage
     extends sharepointLib.SPNs.TemplateFileType
   
-  val formPage: formPage with java.lang.String = js.native
-  val standardPage: standardPage with java.lang.String = js.native
-  val wikiPage: wikiPage with java.lang.String = js.native
+  /* 2 */ val formPage: formPage with scala.Double = js.native
+  /* 0 */ val standardPage: standardPage with scala.Double = js.native
+  /* 1 */ val wikiPage: wikiPage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.TemplateFileType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.TemplateFileType with scala.Double] = js.native
 }
 

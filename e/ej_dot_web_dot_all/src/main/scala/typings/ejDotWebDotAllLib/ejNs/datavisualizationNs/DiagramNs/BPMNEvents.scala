@@ -41,15 +41,15 @@ object BPMNEvents extends js.Object {
   sealed trait ThrowingIntermediate
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNEvents
   
-  val End: End with java.lang.String = js.native
-  val Intermediate: Intermediate with java.lang.String = js.native
-  val NonInterruptingIntermediate: NonInterruptingIntermediate with java.lang.String = js.native
-  val NonInterruptingStart: NonInterruptingStart with java.lang.String = js.native
-  val Start: Start with java.lang.String = js.native
-  val ThrowingIntermediate: ThrowingIntermediate with java.lang.String = js.native
+  /* 2 */ val End: End with scala.Double = js.native
+  /* 1 */ val Intermediate: Intermediate with scala.Double = js.native
+  /* 4 */ val NonInterruptingIntermediate: NonInterruptingIntermediate with scala.Double = js.native
+  /* 3 */ val NonInterruptingStart: NonInterruptingStart with scala.Double = js.native
+  /* 0 */ val Start: Start with scala.Double = js.native
+  /* 5 */ val ThrowingIntermediate: ThrowingIntermediate with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNEvents with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNEvents with scala.Double
   ] = js.native
 }
 

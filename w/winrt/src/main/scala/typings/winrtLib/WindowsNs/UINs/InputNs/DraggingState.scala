@@ -23,10 +23,10 @@ object DraggingState extends js.Object {
   sealed trait started
     extends winrtLib.WindowsNs.UINs.InputNs.DraggingState
   
-  val completed: completed with java.lang.String = js.native
-  val continuing: continuing with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
+  /* 2 */ val completed: completed with scala.Double = js.native
+  /* 1 */ val continuing: continuing with scala.Double = js.native
+  /* 0 */ val started: started with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.DraggingState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.DraggingState with scala.Double] = js.native
 }
 

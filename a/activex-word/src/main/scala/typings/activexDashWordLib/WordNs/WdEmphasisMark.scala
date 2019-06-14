@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait WdEmphasisMark extends js.Object
 
+object WdEmphasisMark {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdEmphasisMarkNone: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdEmphasisMarkOverComma: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdEmphasisMarkOverSolidCircle: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdEmphasisMarkOverWhiteCircle: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdEmphasisMarkUnderSolidCircle: activexDashWordLib.activexDashWordLibNumbers.`4` = this.cast(4)
+}
+

@@ -9,8592 +9,6874 @@ object atUifabricIconsLibStrings {
   @js.native
   sealed trait AADLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ATPLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Accept
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AccessLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AccessLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AccessibiltyChecker
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AccountBrowser
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AccountManagement
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Accounts
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ActionCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ActivateOrders
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ActivityFeed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Add
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddBookmark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddEvent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddFavorite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddFavoriteFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddFriend
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddHome
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddIn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddNotes
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddOnlineMeeting
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddPhone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddReaction
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AddTo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Admin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminALogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminALogoFill32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminALogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminCLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminDLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminELogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminLLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminMLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminOLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminPLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminSLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AdminYLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AirTickets
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Airplane
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AirplaneSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlarmClock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Album
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlbumRemove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlertSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignHorizontalCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignHorizontalLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignHorizontalRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignJustify
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignVerticalBottom
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignVerticalCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AlignVerticalTop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AllApps
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AllAppsMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AllCurrency
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AnalyticsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AnalyticsQuery
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AnalyticsReport
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AnalyticsView
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AnchorLock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Annotation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppIconDefault
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppIconDefaultAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppIconDefaultList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppleTVMenu
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppleTVMicrophone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppleTVMonitor
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AppleTVPlay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Archive
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AreaChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrangeBringForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrangeBringToFront
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrangeByFrom
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrangeSendBackward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrangeSendToBack
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Arrivals
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowDownRight8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowDownRightMirrored8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowTallDownLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowTallDownRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowTallUpLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowTallUpRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowUpRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowUpRight8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ArrowUpRightMirrored8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Articles
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Ascending
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AspectRatio
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AssessmentGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AssessmentGroupTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AssetLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Assign
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Asterisk
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AsteriskSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Attach
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AustralianRules
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AuthenticatorApp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AutoEnhanceOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AutoEnhanceOn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AutoFillTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AutoHeight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AutoRacing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AwayStatus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AzureAPIManagement
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AzureKeyVault
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AzureLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait AzureServiceEndpoint
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BIDashboard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Back
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BackToWindow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BackgroundColor
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Backlog
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BacklogBoard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BacklogList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Badge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Balloons
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Bank
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BankSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BarChart4
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BarChartHorizontal
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BarChartVertical
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BarChartVerticalFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BarChartVerticalFilter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BarChartVerticalFilterSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Baseball
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BeerMug
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BidiLtr
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BidiRtl
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BingLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BirthdayCake
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BlockContact
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Blocked
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Blocked12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Blocked2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Blocked2Solid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BlockedSite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BlockedSiteSolid12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BlockedSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Blog
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BlowingSnow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Blur
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Boards
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Bold
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BookingsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BookmarkReport
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Bookmarks
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BookmarksMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BorderDash
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BorderDot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BoxAdditionSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BoxCheckmarkSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BoxMultiplySolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BoxPlaySolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BoxSubtractSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchCommit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchCompare
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchFork
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchFork2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchLocked
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchMerge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchPullRequest
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BranchShelveset
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Breadcrumb
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Breakfast
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Brightness
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Broom
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BrowserScreenShot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BrowserTab
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BrowserTabScreenshot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Brunch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Brush
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BucketColor
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BucketColorFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BufferTimeAfter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BufferTimeBefore
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BufferTimeBoth
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Bug
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BugSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Build
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BuildDefinition
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BuildIssue
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BuildQueue
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BuildQueueNew
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulkUpload
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedList2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedList2Mirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedListBullet
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedListBulletMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedListMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedListText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BulletedListTextMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Bullseye
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Bus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BusSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BusinessCenterLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait BusinessHoursSign
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ButtonControl
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CPlusPlus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CPlusPlusLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CRMCustomerInsightsApp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CRMProcesses
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CRMReport
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CRMServices
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CSS
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CSharp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CSharpLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cafe
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cake
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Calculator
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalculatorAddition
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalculatorEqualTo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalculatorMultiply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalculatorNotEqualTo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalculatorPercentage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalculatorSubtract
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Calendar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarAgenda
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarDay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarSettings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarSettingsMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarWeek
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CalendarWorkWeek
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaloriesAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Camera
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CampaignTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cancel
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CannedChat
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Car
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretBottomLeftCenter8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretBottomLeftSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretBottomRightCenter8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretBottomRightSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretDown8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretDownSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretHollow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretHollowMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretLeft8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretLeftSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretRight8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretRightSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolid16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolidDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolidLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolidMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolidRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretSolidUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretTopLeftCenter8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretTopLeftSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretTopRightCenter8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretTopRightSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretUp8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CaretUpSolid8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cat
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CellPhone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Certificate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CertifiedDatabase
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Chart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChartSeries
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChartTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChartXAngle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChartYAngle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Chat
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChatInviteFriend
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChatSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckListCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckListCheckMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckListText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckListTextMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckMark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Checkbox
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckboxComposite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckboxCompositeReversed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckboxFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckboxIndeterminate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckedOutByOther12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CheckedOutByYou12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronDownEnd6
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronDownMed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronDownSmall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronFold10
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronLeftEnd6
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronLeftMed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronLeftSmall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronRightEnd6
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronRightMed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronRightSmall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronUnfold10
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronUpEnd6
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronUpMed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChevronUpSmall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Childof
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Chopsticks
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChromeBack
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChromeBackMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChromeClose
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChromeFullScreen
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChromeMinimize
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ChromeRestore
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleAddition
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleAdditionSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleHalfFull
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CirclePause
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CirclePauseSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CirclePlus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleRing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleShapeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleStop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CircleStopSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CityNext
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CityNext2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogoFill32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassNotebookLogoInverse32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClassroomLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Clear
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClearFilter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClearFormatting
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClearFormattingA
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClearFormattingEraser
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClearNight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClipboardList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClipboardListMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClipboardSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Clock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CloneToDesktop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClosePane
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClosePaneMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ClosedCaption
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cloud
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CloudAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CloudDownload
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CloudUpload
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CloudWeather
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cloudy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cocktails
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Code
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CodeEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Coffee
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CoffeeScript
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CollapseContent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CollapseContentSingle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CollapseMenu
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CollegeFootball
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CollegeHoops
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Color
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColorSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnLeftTwoThirds
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnLeftTwoThirdsEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnOptions
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnRightTwoThirds
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnRightTwoThirdsEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnVerticalSection
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ColumnVerticalSectionEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Combine
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Combobox
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CommandPrompt
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Comment
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CommentActive
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CommentAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CommentNext
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CommentPrevious
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CommentUrgent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Commitments
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Communications
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CompanyDirectory
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CompanyDirectoryMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Compare
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CompassNW
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Completed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CompletedSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ConfigurationSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ConnectContacts
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ConstructionCone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ConstructionConeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Contact
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContactCard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContactCardSettings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContactCardSettingsMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContactInfo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContactLink
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContactList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ContextMenu
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Contrast
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Copy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cotton
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Coupon
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CreateMailRule
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cricket
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Crop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Crown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CrownSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CustomList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CustomListMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait CustomizeToolbar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cut
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Cycling
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait D365TalentHRCore
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait D365TalentInsight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait D365TalentLearn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DOM
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DRM
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DashboardAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DataConnectionLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DataManagementSettings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Database
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DatabaseSync
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Dataflows
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DateTime
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DateTime2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DateTimeMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeactivateOrders
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Decimals
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DecisionSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeclineCall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DecreaseIndentArrow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DecreaseIndentArrowMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DecreaseIndentLegacy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DecreaseIndentText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DecreaseIndentTextMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DefaultRatio
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DefectSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DefenderTVM
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Delete
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeleteColumns
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeleteRows
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeleteRowsMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeleteTable
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeliveryTruck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DelveAnalytics
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DelveAnalyticsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DelveLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DelveLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DelveLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Deploy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Descending
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Design
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DesktopScreenshot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DeveloperTools
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Devices2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Devices3
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Devices4
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Diagnostic
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DiagnosticDataBarTooltip
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Dialpad
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Diamond
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DiamondSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Dictionary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DictionaryRemove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DietPlanNotebook
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DiffInline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DiffSideBySide
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DisableUpdates
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Dislike
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DislikeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DistributeDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DockLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DockLeftMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DockRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocsLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Document
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocumentApproval
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocumentManagement
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocumentReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocumentSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DocumentSet
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Documentation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DonutChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Door
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleBookmark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronDown12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronDown8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronLeft12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronLeft8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronLeftMed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronLeftMedMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronRight12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronRight8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronUp12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleChevronUp8
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleColumnEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DoubleDownArrow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Down
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Download
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DownloadDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DragObject
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DrillDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DrillDownSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DrillExpand
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DrillShow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DrillThrough
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Drop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DropShapeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Dropdown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DuplicateRow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Duststorm
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait DynamicSMBLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Dynamics365Logo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EMI
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EaseOfAccess
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EatDrink
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EdgeLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Edit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditContact
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditCreate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditMail
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditNote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditPhoto
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditSolid12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditSolidMirrored12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EditStyle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Education
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Ellipse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Embed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Emoji
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Emoji2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EmojiDisappointed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EmojiNeutral
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EmojiTabSymbols
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EmptyRecycleBin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Encryption
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EngineeringGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EntryDecline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EntryView
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Equalizer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EraseTool
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Error
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ErrorBadge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Event
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Event12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventAccepted
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventDate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventDateMissed12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventDeclined
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventInfo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventTentative
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EventTentativeMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExcelLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExchangeLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExchangeLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExchangeLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExerciseTracker
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExpandMenu
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExploreContent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExploreContentSingle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExploreData
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Export
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExportMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExternalBuild
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExternalTFVC
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ExternalXAML
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait EyeShadow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Eyedropper
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait F12DevTools
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FSharp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FSharpLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricAssetLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricDataConnectionLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricDocLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricFolderConfirm
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricFolderFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricFolderSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricFormLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricFormLibraryMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricMovetoFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricNetworkFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricNewFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricOpenFolderHorizontal
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricPictureLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricPublicFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricReportLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricReportLibraryMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricSyncFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricTextHighlight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricTextHighlightComposite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricUnsyncFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FabricUserFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Family
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FangBody
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FastForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FastMode
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Favicon
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FavoriteList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FavoriteStar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FavoriteStarFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Fax
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Feedback
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FeedbackRequestMirroredSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FeedbackRequestSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FeedbackResponseSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Ferry
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FerrySolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FieldChanged
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FieldEmpty
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FieldFilled
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FieldNotChanged
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FieldReadOnly
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FieldRequired
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileASPX
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileBug
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileCSS
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileCode
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileComment
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileHTML
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileImage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileJAVA
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileLess
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FilePDB
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileRequest
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileSQL
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileSass
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileSymlink
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileTypeSolution
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FileYML
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Filter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FilterSettings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FilterSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Filters
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FiltersSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Financial
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FinancialMirroredSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FinancialSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Fingerprint
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FitPage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FitWidth
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FiveTileGrid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Flag
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FlameSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Flashlight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FlickDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FlickLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FlickRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FlickUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Flow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FlowChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Flower
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FocalPoint
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Focus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Fog
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Folder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderHorizontal
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderListMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderOpen
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderQuery
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FolderSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FollowUser
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Font
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FontColor
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FontColorA
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FontColorSwatch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FontDecrease
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FontIncrease
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FontSize
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Footer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FormLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FormLibraryMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Forward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ForwardEvent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Freezing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Frigid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FrontCamera
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FullCircleMask
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FullHistory
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FullScreen
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FullWidth
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FullWidthEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FunctionalManagerDashboard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait FunnelChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GIF
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GUID
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GallatinLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Game
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Generate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GenericScan
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GenericScanFilled
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GiftBoxSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GiftCard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Giftbox
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GiftboxOpen
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GitGraph
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Glasses
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Glimmer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GlobalNavButton
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Globe
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Globe2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GlobeFavorite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Go
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GoMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Golf
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GotoToday
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GridViewLarge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GridViewMedium
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GridViewSmall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GripperBarHorizontal
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GripperBarVertical
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GripperDotsVertical
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GripperTool
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Group
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GroupObject
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GroupedAscending
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GroupedDescending
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait GroupedList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Guitar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HailDay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HailNight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HalfAlpha
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HalfCircle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HandsFree
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Handwriting
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HardDrive
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HardDriveGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HardDriveLock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HardDriveUnlock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Header
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Header1
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Header2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Header3
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Header4
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Headset
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HeadsetSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Health
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HealthSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Heart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HeartBroken
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HeartFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Help
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HelpMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Hexagon
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Hide
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Hide2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Hide3
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Highlight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HighlightMappedShapes
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HintText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HistoricalWeather
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait History
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Home
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HomeGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HomeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HomeVerify
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HorizontalDistributeCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Hospital
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Hotel
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait HourGlass
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IDBadge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IRMForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IRMForwardMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IRMReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IRMReplyMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IconSetsFlag
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ImageCrosshair
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ImageDiff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ImagePixel
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ImageSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Import
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ImportAllMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ImportMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Important
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Inbox
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InboxCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncidentTriangle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncomingCall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncreaseIndentArrow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncreaseIndentArrowMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncreaseIndentLegacy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncreaseIndentText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IncreaseIndentTextMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Info
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Info2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InfoSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InformationBarriers
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InkingTool
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InsertColumnsLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InsertColumnsRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InsertRowsAbove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InsertRowsBelow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InsertSignatureLine
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InsertTextBox
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InstallToDrive
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InternalInvestigation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait InternetSharing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IssueSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IssueTracking
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait IssueTrackingMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Italic
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait JS
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait JavaScriptLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait JoinOnlineMeeting
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait KaizalaLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait KeyboardClassic
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait KnowledgeArticle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Label
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LadybugSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Lamp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LandscapeOrientation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LaptopSecure
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LaptopSelected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LargeGrid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Leave
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Library
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Lifesaver
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LifesaverLock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Light
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LightWeight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Lightbulb
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LightningBolt
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Like
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LikeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Line
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LineChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LineSpacing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LineStyle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LineThickness
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Link
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Link12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LinkedDatabase
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LinkedInLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait List
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ListMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LocaleLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Location
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LocationCircle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LocationDot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LocationFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LocationOutline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Lock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Lock12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LockSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LogRemove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LookupEntities
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LowerBrightness
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait LyncLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait M365InvoicingLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MSNLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MSNVideos
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MSNVideosSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Mail
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailAlert
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailAttached
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailForwardMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailLowImportance
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailOptions
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailPause
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailReminder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailRepeat
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailReplyAll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailReplyAllMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailReplyMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailSchedule
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailTentative
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailTentativeMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MailUndelivered
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ManagerSelfService
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Manufacturing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MapDirections
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MapLayers
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MapPin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MapPinSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MarkAsProtected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MarkDownLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Market
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MarketDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MasterDatabase
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MaximumValue
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Medal
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MedalSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Media
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MediaAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Medical
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Megaphone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MegaphoneSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Memo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Merge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MergeDuplicate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Message
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MessageFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MicOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Microphone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MicrosoftFlowLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MicrosoftStaffhubLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MicrosoftTranslatorLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MicrosoftTranslatorLogoBlue
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MicrosoftTranslatorLogoGreen
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MiniContract
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MiniContractMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MiniExpand
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MiniExpandMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MiniLink
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MinimumValue
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MobileReport
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MobileSelected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Money
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait More
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MoreSports
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MoreVertical
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MountainClimbing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Move
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MoveToFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Movers
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MultiSelect
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MultiSelectMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MusicInCollection
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MusicInCollectionFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MusicNote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait MyMoviesTV
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Nav2DMapView
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NavigateBack
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NavigateBackMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NavigateExternalInline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NavigateForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NavigateForwardMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NavigationFlipper
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NetworkTower
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NewAnalyticsQuery
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NewFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NewMail
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NewTeamProject
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait News
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NewsSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Next
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NormalWeight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NotExecuted
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NotImpactedSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NoteForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NotePinned
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NoteReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NugetLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberField
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberSequence
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberSymbol
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberedList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberedListNumber
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberedListNumberMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberedListText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait NumberedListTextMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OEM
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Octagon
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeAddinsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeAssistantLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeChat
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeChatSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogo24
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogoFill24
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeFormsLogoInverse24
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeStoreLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeVideoLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeVideoLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfficeVideoLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfflineOneDriveParachute
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfflineOneDriveParachuteDisabled
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfflineStorage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OfflineStorageSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Onboarding
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneDriveAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneDriveFolder16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneDriveLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteEduLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OneNoteLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenEnrollment
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenFile
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenFolderHorizontal
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenInNewTab
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenInNewWindow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenPane
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenPaneMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OpenSource
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Org
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Orientation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Orientation2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutOfOffice
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutlookLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutlookLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutlookLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutlookLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutlookLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait OutlookLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PC1
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PDF
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait POI
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait POISolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PY
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Package
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Packages
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Padding
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PaddingBottom
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PaddingLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PaddingRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PaddingTop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Page
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageArrowRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageCheckedOut
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageCheckedin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageHeader
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageListFilter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageListMirroredSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageListSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageLock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageRemove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PageSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PanoIndicator
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Parachute
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ParachuteSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Parameter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ParkingLocation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ParkingLocationMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ParkingMirroredSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ParkingSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PartlyCloudyDay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PartlyCloudyNight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PartyLeader
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PassiveAuthentication
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PasswordField
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Paste
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PasteAsCode
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PasteAsText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Pause
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PaymentCard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PenWorkspace
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PencilReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Pentagon
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait People
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PeopleAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PeopleAlert
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PeopleBlock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PeoplePause
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PeopleRepeat
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Permissions
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PermissionsSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Personalize
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Phishing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Phone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Photo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Photo2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Photo2Add
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Photo2Fill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Photo2Remove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PhotoCollection
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Picture
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PictureCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PictureFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PictureLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PicturePosition
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PictureStretch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PictureTile
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PieDouble
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PieSingle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PieSingleSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Pill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Pin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Pinned
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PinnedFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PivotChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlainText
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlanView
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlannerLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Play
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlayResume
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlayerSettings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Plug
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlugConnected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlugDisconnected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PlugSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PostUpdate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerApps
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerApps2Logo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerAppsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerBILogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerBILogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerBILogoBackplate16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerButton
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PowerPointLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Precipitation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PresenceChickletVideo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Presentation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Presentation12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Preview
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PreviewLink
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Previous
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PrimaryCalendar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Print
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PrintfaxPrinterFile
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProFootball
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProHockey
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProcessMetaTask
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Processing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Product
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProductRelease
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProfileSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProgressLoopInner
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProgressLoopOuter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProgressRingDots
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectCollection
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectLogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectLogoFill32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProjectLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PromotedDatabase
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProtectRestrict
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProtectedDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ProtectionCenterLogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublicCalendar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublicContactCard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublicContactCardMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublicEmail
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublicFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublishContent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublishCourse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublisherLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublisherLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublisherLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublisherLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PublisherLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Puzzle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait PythonLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QRCode
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QuadColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Quantity
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QuarterCircle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QueryList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Questionnaire
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QuestionnaireMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QuickNote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait QuickNoteSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait R
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RadioBtnOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RadioBtnOn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RadioBullet
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rain
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RainShowersDay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RainShowersNight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RainSnow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RawSource
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Read
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReadOutLoud
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReadingMode
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReadingModeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RealEstate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReceiptCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReceiptForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReceiptReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReceiptTentative
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReceiptTentativeMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReceiptUndelivered
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Recent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Record2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RecruitmentManagement
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RectangleShape
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RectangleShapeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RectangularClipping
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RecurringEvent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RecurringTask
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RecycleBin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RedEye
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Redeploy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Redo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Refresh
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Relationship
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReleaseDefinition
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReleaseGate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReleaseGateCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReleaseGateError
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReminderGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReminderPerson
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Remote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Remove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveEvent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveFilter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveFromTrash
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveLink
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveLinkChain
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveLinkX
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RemoveOccurrence
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rename
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RenewalCurrent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RenewalFuture
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReopenPages
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Repair
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RepeatAll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RepeatOne
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Reply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReplyAll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReplyAllAlt
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReplyAllMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReplyAlt
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReplyMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Repo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RepoSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReportAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReportDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReportHacked
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReportLibrary
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReportLibraryMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReservationOrders
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ResponsesMenu
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReturnKey
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReturnToSession
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RevToggleKey
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReviewRequestMirroredSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReviewRequestSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReviewResponseSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ReviewSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rewind
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Ribbon
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RibbonSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RightDoubleQuote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RightTriangle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Ringer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RingerOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RingerRemove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RingerSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Robot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rocket
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Room
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rotate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rotate90Clockwise
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rotate90CounterClockwise
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RowsChild
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait RowsGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Rugby
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Running
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SIPMove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sad
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SadSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Save
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SaveAll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SaveAndClose
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SaveAs
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SaveTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SaveToMobile
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Savings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ScaleUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ScaleVolume
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ScheduleEventAction
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ScopeTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ScreenCast
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Script
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ScrollUpDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Search
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SearchAndApps
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SearchBookmark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SearchCalendar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SearchIssue
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SearchIssueMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SearchNearby
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SecondaryNav
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Section
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sections
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SecurityGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SeeDo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SelectAll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sell
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SemiboldWeight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Send
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SendMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Separator
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Server
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ServerEnviroment
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ServerProcesses
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SetAction
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Settings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShakeDevice
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Shapes
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Share
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShareiOS
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SharepointLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SharepointLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SharepointLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Shield
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShieldSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Shirt
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Shop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShopServer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShoppingCart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShoppingCartSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShowGrid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShowResults
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShowResultsMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ShowTimeAs
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SidePanel
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SidePanelMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SignOut
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Signin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SingleBookmark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SingleBookmarkSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SingleColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SingleColumnEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SiteScan
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SixPointStar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SizeLegacy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkiResorts
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeArrow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeCircleArrow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeCircleCheck
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeCircleClock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeCircleMinus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeCircleSlash
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeClock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeForBusinessLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeForBusinessLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeForBusinessLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeForBusinessLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeMessage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeMinus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SkypeSlash
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Slider
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SliderHandleSize
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SliderThumb
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Slideshow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SmartGlassRemote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SnapToGrid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Snooze
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Snow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SnowShowerDay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SnowShowerNight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Snowflake
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Soccer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SocialListeningLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sort
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SortDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SortLines
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SortUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Source
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Spacer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Speakers
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SpecialEvent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SpeedHigh
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Split
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SplitObject
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sprint
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Squalls
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SquareShapeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Stack
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StackColumnChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StackIndicator
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StackedBarChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StackedColumnChart2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StackedColumnChart2Fill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StackedLineChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StaffNotebookLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StaffNotebookLogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StaffNotebookLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StaffNotebookLogoFill32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StaffNotebookLogoInverted16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StaffNotebookLogoInverted32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Starburst
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StarburstSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleBlock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleBlock2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleCheckmark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleErrorX
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleExclamation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleInfo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleInner
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleOuter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleQuestionMark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleRing
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusCircleSync
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusErrorFull
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusTriangle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusTriangleExclamation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusTriangleInner
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StatusTriangleOuter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Step
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StepInsert
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StepShared
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StepSharedAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StepSharedInsert
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StockDown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StockUp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Stop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StopSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Stopwatch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StorageOptical
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StoreLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StoreLogoMed20
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Storyboard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StreamLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Streaming
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StreamingOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Street
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait StreetsideSplitMinimize
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Strikethrough
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Subscribe
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Subscript
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SubstitutionsIn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Suitcase
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SunAdd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SunQuestionMark
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sunny
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Superscript
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SurveyQuestions
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SwayLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SwayLogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SwayLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SwayLogoFill32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SwayLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Switch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SwitcherStartEnd
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Sync
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SyncFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SyncOccurence
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SyncStatus
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SyncStatusSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait SyncToPC
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait System
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TFVCLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TVMonitor
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TVMonitorSelected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Tab
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TabCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TabOneColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TabThreeColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TabTwoColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Table
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TableGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Tablet
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TabletMode
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TabletSelected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Tag
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TagSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TagUnknown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TagUnknown12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TagUnknown12Mirror
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TagUnknownMirror
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TaskGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TaskGroupMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TaskLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TaskManager
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TaskManagerMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TaskSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Taskboard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Taxi
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TeamFavorite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TeamsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TeamsLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TeamsLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TeamsLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TeamsLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Teamwork
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Teeth
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Telemarketer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TemporaryUser
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Tennis
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestAutoSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestBeaker
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestBeakerSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestCase
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestExploreSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestImpactSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestParameter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestPlan
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestStep
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestSuite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TestUserSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TextBox
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TextCallout
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TextDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TextDocumentShared
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TextField
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TextOverflow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ThisPC
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ThreeQuarterCircle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ThumbnailView
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ThumbnailViewMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Thunderstorms
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Ticket
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Tiles
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Tiles2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TimeEntry
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TimeSheet
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Timeline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TimelineDelivery
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TimelineMatrixView
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TimelineProgress
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Timer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToDoLogoBottom
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToDoLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToDoLogoOutline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToDoLogoTop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToggleBorder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToggleFilled
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToggleLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToggleRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ToggleThumb
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Toll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Touch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TouchPointer
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Trackers
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TrackersMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Train
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TrainSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TransferCall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Transition
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TransitionEffect
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TransitionPop
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TransitionPush
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Translate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Trending12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleDown12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleLeft12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleRight12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleShape
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleShapeSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleSolidDown12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleSolidLeft12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleSolidRight12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleSolidUp12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriangleUp12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriggerApproval
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriggerAuto
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TriggerUser
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TripleColumn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TripleColumnEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TripleColumnWide
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Trophy
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Trophy2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Trophy2Solid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TurnRight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TwelvePointStar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait TypeScriptLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait USB
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Umbrella
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnSetColor
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Underline
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Undo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Uneditable
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UneditableMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UneditableSolid12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UneditableSolidMirrored12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Unfavorite
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UngroupObject
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Unknown
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnknownCall
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnknownMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnknownMirroredSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnknownSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Unlock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnlockSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Unpin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnstackSelected
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Unsubscribe
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnsyncFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UnsyncOccurence
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Up
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UpgradeAnalysis
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Upload
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserEvent
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserFollowed
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserGauge
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserOptional
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserPause
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserRemove
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait UserSync
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VB
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VSTSAltLogo1
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VSTSAltLogo2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VSTSLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Vacation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Variable
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VariableGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VennDiagram
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VerifiedBrand
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VerifiedBrandSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VersionControlPush
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VerticalDistributeCenter
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Video
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Video360Generic
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VideoLightOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VideoOff
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VideoSearch
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VideoSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait View
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ViewAll
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ViewAll2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ViewDashboard
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ViewList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ViewListGroup
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ViewListTree
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioDiagram
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioDiagramSync
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioOnlineLogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioOnlineLogoCloud32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisioOnlineLogoFill32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisualBasicLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisualStudioIDELogo32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisualStudioLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisualsFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VisualsStore
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VoicemailForward
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VoicemailIRM
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VoicemailReply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Volume0
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Volume1
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Volume2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Volume3
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait VolumeDisabled
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Waffle
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WaffleOffice365
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WaitlistConfirm
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WaitlistConfirmMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Warning
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Warning12
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WarningSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WavingHand
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WebComponents
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WebPublish
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WebTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Website
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Weights
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WhiteBoardApp16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WhiteBoardApp32
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WifiEthernet
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WifiWarning4
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WindDirection
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WindowEdit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WindowsLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Wines
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WipePhone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordDocument
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordLogo16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordLogoFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordLogoFill16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordLogoInverse
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WordLogoInverse16
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Work
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkFlow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkItem
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkItemAlert
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkItemBar
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkItemBarSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkItemBug
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorkforceManagement
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait World
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait WorldClock
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait YammerLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ZipFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait Zoom
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ZoomIn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ZoomOut
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @js.native
   sealed trait ZoomToFit
     extends atUifabricIconsLib.libIconNamesMod.IconNames
-       with atUifabricIconsLib.atUifabricIconsMod.IconNames
   
   @scala.inline
   def AADLogo: AADLogo = "AADLogo".asInstanceOf[AADLogo]

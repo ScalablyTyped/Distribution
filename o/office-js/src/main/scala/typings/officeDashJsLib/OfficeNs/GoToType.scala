@@ -51,11 +51,11 @@ object GoToType extends js.Object {
   sealed trait Slide
     extends officeDashJsLib.OfficeNs.GoToType
   
-  val Binding: Binding with java.lang.String = js.native
-  val Index: Index with java.lang.String = js.native
-  val NamedItem: NamedItem with java.lang.String = js.native
-  val Slide: Slide with java.lang.String = js.native
+  /* 0 */ val Binding: Binding with scala.Double = js.native
+  /* 3 */ val Index: Index with scala.Double = js.native
+  /* 1 */ val NamedItem: NamedItem with scala.Double = js.native
+  /* 2 */ val Slide: Slide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.GoToType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.GoToType with scala.Double] = js.native
 }
 

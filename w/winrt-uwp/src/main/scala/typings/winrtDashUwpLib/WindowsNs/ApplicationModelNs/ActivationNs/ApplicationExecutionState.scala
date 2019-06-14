@@ -37,14 +37,14 @@ object ApplicationExecutionState extends js.Object {
   sealed trait terminated
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ActivationNs.ApplicationExecutionState
   
-  val closedByUser: closedByUser with java.lang.String = js.native
-  val notRunning: notRunning with java.lang.String = js.native
-  val running: running with java.lang.String = js.native
-  val suspended: suspended with java.lang.String = js.native
-  val terminated: terminated with java.lang.String = js.native
+  /* 4 */ val closedByUser: closedByUser with scala.Double = js.native
+  /* 0 */ val notRunning: notRunning with scala.Double = js.native
+  /* 1 */ val running: running with scala.Double = js.native
+  /* 2 */ val suspended: suspended with scala.Double = js.native
+  /* 3 */ val terminated: terminated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ActivationNs.ApplicationExecutionState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ActivationNs.ApplicationExecutionState with scala.Double
   ] = js.native
 }
 

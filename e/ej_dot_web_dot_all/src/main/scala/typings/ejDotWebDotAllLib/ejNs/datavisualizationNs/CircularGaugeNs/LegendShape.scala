@@ -56,18 +56,18 @@ object LegendShape extends js.Object {
   sealed trait Triangle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LegendShape
   
-  val Circle: Circle with java.lang.String = js.native
-  val Diamond: Diamond with java.lang.String = js.native
-  val Ellipse: Ellipse with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
-  val Pentagon: Pentagon with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val Slider: Slider with java.lang.String = js.native
-  val Trapezoid: Trapezoid with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
+  /* 1 */ val Circle: Circle with scala.Double = js.native
+  /* 4 */ val Diamond: Diamond with scala.Double = js.native
+  /* 3 */ val Ellipse: Ellipse with scala.Double = js.native
+  /* 8 */ val Line: Line with scala.Double = js.native
+  /* 5 */ val Pentagon: Pentagon with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 6 */ val Slider: Slider with scala.Double = js.native
+  /* 7 */ val Trapezoid: Trapezoid with scala.Double = js.native
+  /* 2 */ val Triangle: Triangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LegendShape with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LegendShape with scala.Double
   ] = js.native
 }
 

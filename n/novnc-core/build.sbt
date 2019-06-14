@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "novnc-core"
-version := "0.1-dt-20181116Z-392973"
+version := "0.1-dt-20181116Z-fa78dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcResourceType extends js.Object
 
+object AcResourceType {
+  @scala.inline
+  def acResourceImage: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acResourceTheme: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

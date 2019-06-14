@@ -23,10 +23,10 @@ object MOUSE extends js.Object {
   sealed trait RIGHT
     extends threeLib.srcConstantsMod.MOUSE
   
-  val LEFT: LEFT with java.lang.String = js.native
-  val MIDDLE: MIDDLE with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
+  /* 0 */ val LEFT: LEFT with scala.Double = js.native
+  /* 1 */ val MIDDLE: MIDDLE with scala.Double = js.native
+  /* 2 */ val RIGHT: RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.MOUSE with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[threeLib.srcConstantsMod.MOUSE with scala.Double] = js.native
 }
 

@@ -35,15 +35,15 @@ object CameraCaptureUIMaxPhotoResolution extends js.Object {
   sealed trait verySmallQvga
     extends winrtLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMaxPhotoResolution
   
-  val highestAvailable: highestAvailable with java.lang.String = js.native
-  val large3M: large3M with java.lang.String = js.native
-  val mediumXga: mediumXga with java.lang.String = js.native
-  val smallVga: smallVga with java.lang.String = js.native
-  val veryLarge5M: veryLarge5M with java.lang.String = js.native
-  val verySmallQvga: verySmallQvga with java.lang.String = js.native
+  /* 0 */ val highestAvailable: highestAvailable with scala.Double = js.native
+  /* 4 */ val large3M: large3M with scala.Double = js.native
+  /* 3 */ val mediumXga: mediumXga with scala.Double = js.native
+  /* 2 */ val smallVga: smallVga with scala.Double = js.native
+  /* 5 */ val veryLarge5M: veryLarge5M with scala.Double = js.native
+  /* 1 */ val verySmallQvga: verySmallQvga with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMaxPhotoResolution with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMaxPhotoResolution with scala.Double
   ] = js.native
 }
 

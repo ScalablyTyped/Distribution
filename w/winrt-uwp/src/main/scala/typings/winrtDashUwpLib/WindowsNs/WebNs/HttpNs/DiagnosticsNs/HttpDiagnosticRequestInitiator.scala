@@ -62,19 +62,19 @@ object HttpDiagnosticRequestInitiator extends js.Object {
   sealed trait xmlHttpRequest
     extends winrtDashUwpLib.WindowsNs.WebNs.HttpNs.DiagnosticsNs.HttpDiagnosticRequestInitiator
   
-  val htmlDownload: htmlDownload with java.lang.String = js.native
-  val image: image with java.lang.String = js.native
-  val link: link with java.lang.String = js.native
-  val media: media with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val parsedElement: parsedElement with java.lang.String = js.native
-  val prefetch: prefetch with java.lang.String = js.native
-  val script: script with java.lang.String = js.native
-  val style: style with java.lang.String = js.native
-  val xmlHttpRequest: xmlHttpRequest with java.lang.String = js.native
+  /* 7 */ val htmlDownload: htmlDownload with scala.Double = js.native
+  /* 2 */ val image: image with scala.Double = js.native
+  /* 3 */ val link: link with scala.Double = js.native
+  /* 6 */ val media: media with scala.Double = js.native
+  /* 9 */ val other: other with scala.Double = js.native
+  /* 0 */ val parsedElement: parsedElement with scala.Double = js.native
+  /* 8 */ val prefetch: prefetch with scala.Double = js.native
+  /* 1 */ val script: script with scala.Double = js.native
+  /* 4 */ val style: style with scala.Double = js.native
+  /* 5 */ val xmlHttpRequest: xmlHttpRequest with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.DiagnosticsNs.HttpDiagnosticRequestInitiator with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.DiagnosticsNs.HttpDiagnosticRequestInitiator with scala.Double
   ] = js.native
 }
 

@@ -23,12 +23,12 @@ object MarkerSize extends js.Object {
   sealed trait TINY
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.MarkerSize
   
-  val MID: MID with java.lang.String = js.native
-  val SMALL: SMALL with java.lang.String = js.native
-  val TINY: TINY with java.lang.String = js.native
+  /* 1 */ val MID: MID with scala.Double = js.native
+  /* 2 */ val SMALL: SMALL with scala.Double = js.native
+  /* 0 */ val TINY: TINY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.MarkerSize with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.MarkerSize with scala.Double
   ] = js.native
 }
 

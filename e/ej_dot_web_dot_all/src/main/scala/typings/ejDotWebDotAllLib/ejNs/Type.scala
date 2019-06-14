@@ -19,9 +19,9 @@ object Type extends js.Object {
   sealed trait Slide
     extends ejDotWebDotAllLib.ejNs.Type
   
-  val Overlay: Overlay with java.lang.String = js.native
-  val Slide: Slide with java.lang.String = js.native
+  /* 0 */ val Overlay: Overlay with scala.Double = js.native
+  /* 1 */ val Slide: Slide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.Type with scala.Double] = js.native
 }
 

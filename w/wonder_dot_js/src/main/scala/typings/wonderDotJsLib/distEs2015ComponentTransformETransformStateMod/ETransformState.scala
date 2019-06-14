@@ -35,15 +35,15 @@ object ETransformState extends js.Object {
   sealed trait ISTRANSLATE
     extends wonderDotJsLib.distEs2015ComponentTransformETransformStateMod.ETransformState
   
-  val ISLOCALROTATE: ISLOCALROTATE with java.lang.String = js.native
-  val ISLOCALSCALE: ISLOCALSCALE with java.lang.String = js.native
-  val ISLOCALTRANSLATE: ISLOCALTRANSLATE with java.lang.String = js.native
-  val ISROTATE: ISROTATE with java.lang.String = js.native
-  val ISSCALE: ISSCALE with java.lang.String = js.native
-  val ISTRANSLATE: ISTRANSLATE with java.lang.String = js.native
+  /* 4 */ val ISLOCALROTATE: ISLOCALROTATE with scala.Double = js.native
+  /* 5 */ val ISLOCALSCALE: ISLOCALSCALE with scala.Double = js.native
+  /* 3 */ val ISLOCALTRANSLATE: ISLOCALTRANSLATE with scala.Double = js.native
+  /* 1 */ val ISROTATE: ISROTATE with scala.Double = js.native
+  /* 2 */ val ISSCALE: ISSCALE with scala.Double = js.native
+  /* 0 */ val ISTRANSLATE: ISTRANSLATE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015ComponentTransformETransformStateMod.ETransformState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015ComponentTransformETransformStateMod.ETransformState with scala.Double
   ] = js.native
 }
 

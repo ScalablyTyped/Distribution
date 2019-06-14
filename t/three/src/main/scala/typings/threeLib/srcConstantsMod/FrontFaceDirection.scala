@@ -12,6 +12,6 @@ sealed trait FrontFaceDirection extends js.Object
 @js.native
 object FrontFaceDirection extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.FrontFaceDirection with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.FrontFaceDirection with scala.Nothing] = js.native
 }
 

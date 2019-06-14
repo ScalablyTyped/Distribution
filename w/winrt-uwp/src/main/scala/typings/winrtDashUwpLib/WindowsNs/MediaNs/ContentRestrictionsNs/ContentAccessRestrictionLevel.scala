@@ -32,13 +32,13 @@ object ContentAccessRestrictionLevel extends js.Object {
   sealed trait warn
     extends winrtDashUwpLib.WindowsNs.MediaNs.ContentRestrictionsNs.ContentAccessRestrictionLevel
   
-  val allow: allow with java.lang.String = js.native
-  val block: block with java.lang.String = js.native
-  val hide: hide with java.lang.String = js.native
-  val warn: warn with java.lang.String = js.native
+  /* 0 */ val allow: allow with scala.Double = js.native
+  /* 2 */ val block: block with scala.Double = js.native
+  /* 3 */ val hide: hide with scala.Double = js.native
+  /* 1 */ val warn: warn with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ContentRestrictionsNs.ContentAccessRestrictionLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ContentRestrictionsNs.ContentAccessRestrictionLevel with scala.Double
   ] = js.native
 }
 

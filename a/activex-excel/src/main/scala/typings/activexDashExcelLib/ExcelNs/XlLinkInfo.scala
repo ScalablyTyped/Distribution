@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlLinkInfo extends js.Object
 
+object XlLinkInfo {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlEditionDate: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlLinkInfoStatus: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlUpdateState: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+}
+

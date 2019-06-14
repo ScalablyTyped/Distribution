@@ -31,12 +31,12 @@ object ViewType extends js.Object {
   sealed trait XML
     extends openui5Lib.sapNs.uiNs.coreNs.mvcNs.ViewNs.mvcNs.ViewType
   
-  val HTML: HTML with java.lang.String = js.native
-  val JS: JS with java.lang.String = js.native
-  val JSON: JSON with java.lang.String = js.native
-  val Template: Template with java.lang.String = js.native
-  val XML: XML with java.lang.String = js.native
+  /* 0 */ val HTML: HTML with scala.Double = js.native
+  /* 1 */ val JS: JS with scala.Double = js.native
+  /* 2 */ val JSON: JSON with scala.Double = js.native
+  /* 3 */ val Template: Template with scala.Double = js.native
+  /* 4 */ val XML: XML with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.mvcNs.ViewNs.mvcNs.ViewType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.mvcNs.ViewNs.mvcNs.ViewType with scala.Double] = js.native
 }
 

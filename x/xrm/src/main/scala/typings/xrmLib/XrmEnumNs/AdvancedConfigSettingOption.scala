@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait AdvancedConfigSettingOption extends js.Object
 
+object AdvancedConfigSettingOption {
+  @scala.inline
+  def MaxChildIncidentNumber: xrmLib.xrmLibStrings.MaxChildIncidentNumber = this.cast("MaxChildIncidentNumber")
+  @scala.inline
+  def MaxIncidentMergeNumber: xrmLib.xrmLibStrings.MaxIncidentMergeNumber = this.cast("MaxIncidentMergeNumber")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

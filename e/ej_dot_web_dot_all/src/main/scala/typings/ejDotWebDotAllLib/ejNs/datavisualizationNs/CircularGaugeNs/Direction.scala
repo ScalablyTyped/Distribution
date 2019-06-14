@@ -21,11 +21,11 @@ object Direction extends js.Object {
   sealed trait CounterClockwise
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Direction
   
-  val Clockwise: Clockwise with java.lang.String = js.native
-  val CounterClockwise: CounterClockwise with java.lang.String = js.native
+  /* 0 */ val Clockwise: Clockwise with scala.Double = js.native
+  /* 1 */ val CounterClockwise: CounterClockwise with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Direction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Direction with scala.Double
   ] = js.native
 }
 

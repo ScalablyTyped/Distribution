@@ -21,9 +21,9 @@ object CellSelectionMode extends js.Object {
   sealed trait Flow
     extends ejDotWebDotAllLib.ejNs.GridNs.CellSelectionMode
   
-  val Box: Box with java.lang.String = js.native
-  val Flow: Flow with java.lang.String = js.native
+  /* 1 */ val Box: Box with scala.Double = js.native
+  /* 0 */ val Flow: Flow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.CellSelectionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.CellSelectionMode with scala.Double] = js.native
 }
 

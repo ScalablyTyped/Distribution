@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OutputType extends js.Object
 
+object OutputType {
+  @scala.inline
+  def DirectiveOutput: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def ElementOutput: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdAutoFitBehavior extends js.Object
 
+object WdAutoFitBehavior {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdAutoFitContent: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdAutoFitFixed: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdAutoFitWindow: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

@@ -19,6 +19,10 @@ class SnapshotCopyGrant protected ()
   def this(name: java.lang.String, args: SnapshotCopyGrantArgs) = this()
   def this(name: java.lang.String, args: SnapshotCopyGrantArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of snapshot copy grant
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.
     */
   val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

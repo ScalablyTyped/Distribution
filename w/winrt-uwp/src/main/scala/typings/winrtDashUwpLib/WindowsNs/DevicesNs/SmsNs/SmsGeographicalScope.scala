@@ -37,14 +37,12 @@ object SmsGeographicalScope extends js.Object {
   sealed trait plmn
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsGeographicalScope
   
-  val cell: cell with java.lang.String = js.native
-  val cellWithImmediateDisplay: cellWithImmediateDisplay with java.lang.String = js.native
-  val locationArea: locationArea with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val plmn: plmn with java.lang.String = js.native
+  /* 4 */ val cell: cell with scala.Double = js.native
+  /* 1 */ val cellWithImmediateDisplay: cellWithImmediateDisplay with scala.Double = js.native
+  /* 2 */ val locationArea: locationArea with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val plmn: plmn with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsGeographicalScope with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsGeographicalScope with scala.Double] = js.native
 }
 

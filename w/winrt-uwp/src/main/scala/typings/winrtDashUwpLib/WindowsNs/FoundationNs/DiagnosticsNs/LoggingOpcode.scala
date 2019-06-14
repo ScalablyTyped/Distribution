@@ -47,16 +47,16 @@ object LoggingOpcode extends js.Object {
   sealed trait suspend
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingOpcode
   
-  val info: info with java.lang.String = js.native
-  val reply: reply with java.lang.String = js.native
-  val resume: resume with java.lang.String = js.native
-  val send: send with java.lang.String = js.native
-  val start: start with java.lang.String = js.native
-  val stop: stop with java.lang.String = js.native
-  val suspend: suspend with java.lang.String = js.native
+  /* 0 */ val info: info with scala.Double = js.native
+  /* 3 */ val reply: reply with scala.Double = js.native
+  /* 4 */ val resume: resume with scala.Double = js.native
+  /* 6 */ val send: send with scala.Double = js.native
+  /* 1 */ val start: start with scala.Double = js.native
+  /* 2 */ val stop: stop with scala.Double = js.native
+  /* 5 */ val suspend: suspend with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingOpcode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingOpcode with scala.Double
   ] = js.native
 }
 

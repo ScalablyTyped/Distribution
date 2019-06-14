@@ -27,12 +27,12 @@ object SpeechRecognitionScenario extends js.Object {
   sealed trait webSearch
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionScenario
   
-  val dictation: dictation with java.lang.String = js.native
-  val formFilling: formFilling with java.lang.String = js.native
-  val webSearch: webSearch with java.lang.String = js.native
+  /* 1 */ val dictation: dictation with scala.Double = js.native
+  /* 2 */ val formFilling: formFilling with scala.Double = js.native
+  /* 0 */ val webSearch: webSearch with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionScenario with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionScenario with scala.Double
   ] = js.native
 }
 

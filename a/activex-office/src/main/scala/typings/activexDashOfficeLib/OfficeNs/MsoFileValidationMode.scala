@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MsoFileValidationMode extends js.Object
 
+object MsoFileValidationMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoFileValidationDefault: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoFileValidationSkip: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

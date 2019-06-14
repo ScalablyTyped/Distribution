@@ -37,12 +37,12 @@ object Placement extends js.Object {
   sealed trait right
     extends winrtDashUwpLib.WindowsNs.UINs.PopupsNs.Placement
   
-  val above: above with java.lang.String = js.native
-  val below: below with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
+  /* 1 */ val above: above with scala.Double = js.native
+  /* 2 */ val below: below with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 3 */ val left: left with scala.Double = js.native
+  /* 4 */ val right: right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.PopupsNs.Placement with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.PopupsNs.Placement with scala.Double] = js.native
 }
 

@@ -36,14 +36,14 @@ object NeedleType extends js.Object {
   sealed trait Triangle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.NeedleType
   
-  val Arrow: Arrow with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val Trapezoid: Trapezoid with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
+  /* 2 */ val Arrow: Arrow with scala.Double = js.native
+  /* 3 */ val Image: Image with scala.Double = js.native
+  /* 1 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 4 */ val Trapezoid: Trapezoid with scala.Double = js.native
+  /* 0 */ val Triangle: Triangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.NeedleType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.NeedleType with scala.Double
   ] = js.native
 }
 

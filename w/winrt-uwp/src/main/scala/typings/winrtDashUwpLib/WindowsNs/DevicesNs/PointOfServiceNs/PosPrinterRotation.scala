@@ -32,13 +32,13 @@ object PosPrinterRotation extends js.Object {
   sealed trait rotate180
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterRotation
   
-  val left90: left90 with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val right90: right90 with java.lang.String = js.native
-  val rotate180: rotate180 with java.lang.String = js.native
+  /* 2 */ val left90: left90 with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val right90: right90 with scala.Double = js.native
+  /* 3 */ val rotate180: rotate180 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterRotation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterRotation with scala.Double
   ] = js.native
 }
 

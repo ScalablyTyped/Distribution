@@ -22,11 +22,11 @@ object PosPrinterLineDirection extends js.Object {
   sealed trait vertical
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterLineDirection
   
-  val horizontal: horizontal with java.lang.String = js.native
-  val vertical: vertical with java.lang.String = js.native
+  /* 0 */ val horizontal: horizontal with scala.Double = js.native
+  /* 1 */ val vertical: vertical with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterLineDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterLineDirection with scala.Double
   ] = js.native
 }
 

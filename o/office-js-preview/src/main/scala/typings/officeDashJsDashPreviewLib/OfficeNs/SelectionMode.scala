@@ -32,10 +32,10 @@ object SelectionMode extends js.Object {
   sealed trait Selected
     extends officeDashJsDashPreviewLib.OfficeNs.SelectionMode
   
-  val Default: Default with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Selected: Selected with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 1 */ val Selected: Selected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.SelectionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.SelectionMode with scala.Double] = js.native
 }
 

@@ -20,7 +20,7 @@ class Resource protected () extends js.Object {
   val isComplete: scala.Boolean = js.native
   val isDataUrl: scala.Boolean = js.native
   val isLoading: scala.Boolean = js.native
-  var loadType: LOAD_TYPE = js.native
+  var loadType: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE = js.native
   var metadata: IMetadata = js.native
   val name: java.lang.String = js.native
   var onAfterMiddleware: pixiDotJsLib.PIXINs.MiniSignal[OnCompleteSignal] = js.native
@@ -35,7 +35,7 @@ class Resource protected () extends js.Object {
   var texture: pixiDotJsLib.PIXINs.Texture = js.native
   var textures: js.UndefOr[TextureDictionary] = js.native
   var timeout: scala.Double = js.native
-  val `type`: TYPE = js.native
+  val `type`: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE = js.native
   val url: java.lang.String = js.native
   val xhr: stdLib.XMLHttpRequest = js.native
   var xhrType: java.lang.String = js.native
@@ -43,14 +43,5 @@ class Resource protected () extends js.Object {
   def complete(): scala.Unit = js.native
   def load(): scala.Unit = js.native
   def load(cb: OnCompleteSignal): scala.Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.loaders.Resource")
-@js.native
-object Resource extends js.Object {
-  var EMPTY_GIF: java.lang.String = js.native
-  def setExtensionLoadType(extname: java.lang.String, loadType: pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE): scala.Unit = js.native
-  def setExtensionXhrType(extname: java.lang.String, xhrType: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE): scala.Unit = js.native
 }
 

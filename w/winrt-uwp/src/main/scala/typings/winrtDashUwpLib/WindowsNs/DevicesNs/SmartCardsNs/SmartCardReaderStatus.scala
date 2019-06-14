@@ -27,12 +27,12 @@ object SmartCardReaderStatus extends js.Object {
   sealed trait ready
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardReaderStatus
   
-  val disconnected: disconnected with java.lang.String = js.native
-  val exclusive: exclusive with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
+  /* 0 */ val disconnected: disconnected with scala.Double = js.native
+  /* 2 */ val exclusive: exclusive with scala.Double = js.native
+  /* 1 */ val ready: ready with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardReaderStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardReaderStatus with scala.Double
   ] = js.native
 }
 

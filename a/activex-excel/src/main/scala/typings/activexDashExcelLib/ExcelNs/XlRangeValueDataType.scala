@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlRangeValueDataType extends js.Object
 
+object XlRangeValueDataType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlRangeValueDefault: activexDashExcelLib.activexDashExcelLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def xlRangeValueMSPersistXML: activexDashExcelLib.activexDashExcelLibNumbers.`12` = this.cast(12)
+  @scala.inline
+  def xlRangeValueXMLSpreadsheet: activexDashExcelLib.activexDashExcelLibNumbers.`11` = this.cast(11)
+}
+

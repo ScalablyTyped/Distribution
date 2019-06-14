@@ -52,15 +52,15 @@ object ActivityType extends js.Object {
   sealed trait walking
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivityType
   
-  val biking: biking with java.lang.String = js.native
-  val fidgeting: fidgeting with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
-  val inVehicle: inVehicle with java.lang.String = js.native
-  val running: running with java.lang.String = js.native
-  val stationary: stationary with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val walking: walking with java.lang.String = js.native
+  /* 7 */ val biking: biking with scala.Double = js.native
+  /* 3 */ val fidgeting: fidgeting with scala.Double = js.native
+  /* 1 */ val idle: idle with scala.Double = js.native
+  /* 6 */ val inVehicle: inVehicle with scala.Double = js.native
+  /* 5 */ val running: running with scala.Double = js.native
+  /* 2 */ val stationary: stationary with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 4 */ val walking: walking with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivityType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ActivityType with scala.Double] = js.native
 }
 

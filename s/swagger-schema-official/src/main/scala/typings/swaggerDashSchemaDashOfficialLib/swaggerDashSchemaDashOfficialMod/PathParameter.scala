@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   @JSName("required")
   var required_PathParameter: scala.Boolean
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String]
+  var `type`: js.UndefOr[ParameterType | java.lang.String]
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -40,7 +40,7 @@ object PathParameter {
     in: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.path,
     name: java.lang.String,
     required: scala.Boolean,
-    `type`: java.lang.String,
+    `type`: ParameterType,
     default: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
     description: java.lang.String = null,
     enum: js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object] = null,

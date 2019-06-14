@@ -35,15 +35,15 @@ object SetAccountPictureResult extends js.Object {
   sealed trait videoFrameSizeError
     extends winrtLib.WindowsNs.SystemNs.UserProfileNs.SetAccountPictureResult
   
-  val changeDisabled: changeDisabled with java.lang.String = js.native
-  val failure: failure with java.lang.String = js.native
-  val fileSizeError: fileSizeError with java.lang.String = js.native
-  val largeOrDynamicError: largeOrDynamicError with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val videoFrameSizeError: videoFrameSizeError with java.lang.String = js.native
+  /* 1 */ val changeDisabled: changeDisabled with scala.Double = js.native
+  /* 5 */ val failure: failure with scala.Double = js.native
+  /* 4 */ val fileSizeError: fileSizeError with scala.Double = js.native
+  /* 2 */ val largeOrDynamicError: largeOrDynamicError with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val videoFrameSizeError: videoFrameSizeError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SystemNs.UserProfileNs.SetAccountPictureResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SystemNs.UserProfileNs.SetAccountPictureResult with scala.Double
   ] = js.native
 }
 

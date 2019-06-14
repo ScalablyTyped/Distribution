@@ -21,11 +21,11 @@ object LabelPlacement extends js.Object {
   sealed trait OnTicks
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LabelPlacement
   
-  val BetweenTicks: BetweenTicks with java.lang.String = js.native
-  val OnTicks: OnTicks with java.lang.String = js.native
+  /* 1 */ val BetweenTicks: BetweenTicks with scala.Double = js.native
+  /* 0 */ val OnTicks: OnTicks with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LabelPlacement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LabelPlacement with scala.Double
   ] = js.native
 }
 

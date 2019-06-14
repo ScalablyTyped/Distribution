@@ -31,12 +31,12 @@ object RenewalStatus extends js.Object {
   sealed trait userCancelled
     extends winrtLib.WindowsNs.MediaNs.ProtectionNs.RenewalStatus
   
-  val appComponentsMayNeedUpdating: appComponentsMayNeedUpdating with java.lang.String = js.native
-  val noComponentsFound: noComponentsFound with java.lang.String = js.native
-  val notStarted: notStarted with java.lang.String = js.native
-  val updatesInProgress: updatesInProgress with java.lang.String = js.native
-  val userCancelled: userCancelled with java.lang.String = js.native
+  /* 3 */ val appComponentsMayNeedUpdating: appComponentsMayNeedUpdating with scala.Double = js.native
+  /* 4 */ val noComponentsFound: noComponentsFound with scala.Double = js.native
+  /* 0 */ val notStarted: notStarted with scala.Double = js.native
+  /* 1 */ val updatesInProgress: updatesInProgress with scala.Double = js.native
+  /* 2 */ val userCancelled: userCancelled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.ProtectionNs.RenewalStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.ProtectionNs.RenewalStatus with scala.Double] = js.native
 }
 

@@ -31,14 +31,14 @@ object InterpolationType extends js.Object {
   sealed trait PERCENTILE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.InterpolationType
   
-  val MAX: MAX with java.lang.String = js.native
-  val MIN: MIN with java.lang.String = js.native
-  val NUMBER: NUMBER with java.lang.String = js.native
-  val PERCENT: PERCENT with java.lang.String = js.native
-  val PERCENTILE: PERCENTILE with java.lang.String = js.native
+  /* 4 */ val MAX: MAX with scala.Double = js.native
+  /* 3 */ val MIN: MIN with scala.Double = js.native
+  /* 0 */ val NUMBER: NUMBER with scala.Double = js.native
+  /* 1 */ val PERCENT: PERCENT with scala.Double = js.native
+  /* 2 */ val PERCENTILE: PERCENTILE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.InterpolationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.InterpolationType with scala.Double
   ] = js.native
 }
 

@@ -39,16 +39,14 @@ object FollowedContentQueryOptions extends js.Object {
   sealed trait unset
     extends sharepointLib.SPNs.UserProfilesNs.FollowedContentQueryOptions
   
-  val all: all with java.lang.String = js.native
-  val defaultOptions: defaultOptions with java.lang.String = js.native
-  val documents: documents with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val nonFeed: nonFeed with java.lang.String = js.native
-  val sites: sites with java.lang.String = js.native
-  val unset: unset with java.lang.String = js.native
+  /* 6 */ val all: all with scala.Double = js.native
+  /* 5 */ val defaultOptions: defaultOptions with scala.Double = js.native
+  /* 2 */ val documents: documents with scala.Double = js.native
+  /* 3 */ val hidden: hidden with scala.Double = js.native
+  /* 4 */ val nonFeed: nonFeed with scala.Double = js.native
+  /* 1 */ val sites: sites with scala.Double = js.native
+  /* 0 */ val unset: unset with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.UserProfilesNs.FollowedContentQueryOptions with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowedContentQueryOptions with scala.Double] = js.native
 }
 

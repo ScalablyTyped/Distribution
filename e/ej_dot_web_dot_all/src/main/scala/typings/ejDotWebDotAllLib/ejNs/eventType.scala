@@ -31,12 +31,12 @@ object eventType extends js.Object {
   sealed trait mouseUp
     extends ejDotWebDotAllLib.ejNs.eventType
   
-  val click: click with java.lang.String = js.native
-  val mouseDown: mouseDown with java.lang.String = js.native
-  val mouseLeave: mouseLeave with java.lang.String = js.native
-  val mouseMove: mouseMove with java.lang.String = js.native
-  val mouseUp: mouseUp with java.lang.String = js.native
+  /* 0 */ val click: click with scala.Double = js.native
+  /* 1 */ val mouseDown: mouseDown with scala.Double = js.native
+  /* 2 */ val mouseLeave: mouseLeave with scala.Double = js.native
+  /* 3 */ val mouseMove: mouseMove with scala.Double = js.native
+  /* 4 */ val mouseUp: mouseUp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.eventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.eventType with scala.Double] = js.native
 }
 

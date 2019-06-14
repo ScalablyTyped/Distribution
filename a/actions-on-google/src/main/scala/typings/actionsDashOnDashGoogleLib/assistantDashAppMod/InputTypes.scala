@@ -39,11 +39,11 @@ object InputTypes extends js.Object {
   sealed trait VOICE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes
   
-  val KEYBOARD: KEYBOARD with java.lang.String = js.native
-  val TOUCH: TOUCH with java.lang.String = js.native
-  val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
-  val VOICE: VOICE with java.lang.String = js.native
+  /* 3 */ val KEYBOARD: KEYBOARD with scala.Double = js.native
+  /* 1 */ val TOUCH: TOUCH with scala.Double = js.native
+  /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
+  /* 2 */ val VOICE: VOICE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes with scala.Double] = js.native
 }
 

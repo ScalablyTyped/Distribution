@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val default: reactLib.reactMod.ComponentType[SliderProps] = js.native
-  val defaultValueReducer: ValueReducer = js.native
 }
 

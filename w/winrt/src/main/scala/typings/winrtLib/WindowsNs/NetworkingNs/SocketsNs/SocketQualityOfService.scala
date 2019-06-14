@@ -19,11 +19,11 @@ object SocketQualityOfService extends js.Object {
   sealed trait normal
     extends winrtLib.WindowsNs.NetworkingNs.SocketsNs.SocketQualityOfService
   
-  val lowLatency: lowLatency with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
+  /* 1 */ val lowLatency: lowLatency with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.SocketsNs.SocketQualityOfService with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.SocketsNs.SocketQualityOfService with scala.Double
   ] = js.native
 }
 

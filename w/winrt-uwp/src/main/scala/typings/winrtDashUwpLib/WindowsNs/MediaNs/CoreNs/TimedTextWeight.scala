@@ -22,9 +22,9 @@ object TimedTextWeight extends js.Object {
   sealed trait normal
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWeight
   
-  val bold: bold with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
+  /* 1 */ val bold: bold with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWeight with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWeight with scala.Double] = js.native
 }
 

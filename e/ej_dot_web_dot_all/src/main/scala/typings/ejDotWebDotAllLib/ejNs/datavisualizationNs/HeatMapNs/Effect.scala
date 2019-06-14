@@ -26,12 +26,10 @@ object Effect extends js.Object {
   sealed trait Slide
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Effect
   
-  val Fade: Fade with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Slide: Slide with java.lang.String = js.native
+  /* 1 */ val Fade: Fade with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val Slide: Slide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Effect with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Effect with scala.Double] = js.native
 }
 

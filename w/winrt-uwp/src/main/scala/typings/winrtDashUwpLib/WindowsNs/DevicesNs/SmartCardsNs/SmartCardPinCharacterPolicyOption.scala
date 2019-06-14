@@ -27,12 +27,12 @@ object SmartCardPinCharacterPolicyOption extends js.Object {
   sealed trait requireAtLeastOne
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardPinCharacterPolicyOption
   
-  val allow: allow with java.lang.String = js.native
-  val disallow: disallow with java.lang.String = js.native
-  val requireAtLeastOne: requireAtLeastOne with java.lang.String = js.native
+  /* 0 */ val allow: allow with scala.Double = js.native
+  /* 2 */ val disallow: disallow with scala.Double = js.native
+  /* 1 */ val requireAtLeastOne: requireAtLeastOne with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardPinCharacterPolicyOption with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardPinCharacterPolicyOption with scala.Double
   ] = js.native
 }
 

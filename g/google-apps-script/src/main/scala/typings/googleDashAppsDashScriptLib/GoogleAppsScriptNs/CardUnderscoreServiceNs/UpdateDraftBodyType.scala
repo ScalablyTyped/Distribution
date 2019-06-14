@@ -15,10 +15,10 @@ object UpdateDraftBodyType extends js.Object {
   sealed trait IN_PLACE_INSERT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.UpdateDraftBodyType
   
-  val IN_PLACE_INSERT: IN_PLACE_INSERT with java.lang.String = js.native
+  /* 0 */ val IN_PLACE_INSERT: IN_PLACE_INSERT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.UpdateDraftBodyType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.UpdateDraftBodyType with scala.Double
   ] = js.native
 }
 

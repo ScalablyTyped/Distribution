@@ -96,24 +96,24 @@ object ChartTypes extends js.Object {
   sealed trait StepLine
     extends ejDotWebDotAllLib.ejNs.PivotChartNs.ChartTypes
   
-  val Area: Area with java.lang.String = js.native
-  val Bar: Bar with java.lang.String = js.native
-  val Bubble: Bubble with java.lang.String = js.native
-  val Column: Column with java.lang.String = js.native
-  val Doughnut: Doughnut with java.lang.String = js.native
-  val Funnel: Funnel with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
-  val Pie: Pie with java.lang.String = js.native
-  val Pyramid: Pyramid with java.lang.String = js.native
-  val Scatter: Scatter with java.lang.String = js.native
-  val Spline: Spline with java.lang.String = js.native
-  val SplineArea: SplineArea with java.lang.String = js.native
-  val StackingArea: StackingArea with java.lang.String = js.native
-  val StackingBar: StackingBar with java.lang.String = js.native
-  val StackingColumn: StackingColumn with java.lang.String = js.native
-  val StepArea: StepArea with java.lang.String = js.native
-  val StepLine: StepLine with java.lang.String = js.native
+  /* 3 */ val Area: Area with scala.Double = js.native
+  /* 8 */ val Bar: Bar with scala.Double = js.native
+  /* 16 */ val Bubble: Bubble with scala.Double = js.native
+  /* 2 */ val Column: Column with scala.Double = js.native
+  /* 14 */ val Doughnut: Doughnut with scala.Double = js.native
+  /* 13 */ val Funnel: Funnel with scala.Double = js.native
+  /* 0 */ val Line: Line with scala.Double = js.native
+  /* 7 */ val Pie: Pie with scala.Double = js.native
+  /* 12 */ val Pyramid: Pyramid with scala.Double = js.native
+  /* 15 */ val Scatter: Scatter with scala.Double = js.native
+  /* 1 */ val Spline: Spline with scala.Double = js.native
+  /* 4 */ val SplineArea: SplineArea with scala.Double = js.native
+  /* 9 */ val StackingArea: StackingArea with scala.Double = js.native
+  /* 11 */ val StackingBar: StackingBar with scala.Double = js.native
+  /* 10 */ val StackingColumn: StackingColumn with scala.Double = js.native
+  /* 6 */ val StepArea: StepArea with scala.Double = js.native
+  /* 5 */ val StepLine: StepLine with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotChartNs.ChartTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotChartNs.ChartTypes with scala.Double] = js.native
 }
 

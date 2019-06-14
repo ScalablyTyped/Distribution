@@ -27,12 +27,12 @@ object EmailBatchStatus extends js.Object {
   sealed trait success
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailBatchStatus
   
-  val serverSearchSyncManagerError: serverSearchSyncManagerError with java.lang.String = js.native
-  val serverSearchUnknownError: serverSearchUnknownError with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 1 */ val serverSearchSyncManagerError: serverSearchSyncManagerError with scala.Double = js.native
+  /* 2 */ val serverSearchUnknownError: serverSearchUnknownError with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailBatchStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailBatchStatus with scala.Double
   ] = js.native
 }
 

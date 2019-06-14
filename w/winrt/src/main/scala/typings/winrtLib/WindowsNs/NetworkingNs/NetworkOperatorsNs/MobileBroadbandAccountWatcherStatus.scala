@@ -31,14 +31,14 @@ object MobileBroadbandAccountWatcherStatus extends js.Object {
   sealed trait stopped
     extends winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandAccountWatcherStatus
   
-  val aborted: aborted with java.lang.String = js.native
-  val created: created with java.lang.String = js.native
-  val enumerationCompleted: enumerationCompleted with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
-  val stopped: stopped with java.lang.String = js.native
+  /* 4 */ val aborted: aborted with scala.Double = js.native
+  /* 0 */ val created: created with scala.Double = js.native
+  /* 2 */ val enumerationCompleted: enumerationCompleted with scala.Double = js.native
+  /* 1 */ val started: started with scala.Double = js.native
+  /* 3 */ val stopped: stopped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandAccountWatcherStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandAccountWatcherStatus with scala.Double
   ] = js.native
 }
 

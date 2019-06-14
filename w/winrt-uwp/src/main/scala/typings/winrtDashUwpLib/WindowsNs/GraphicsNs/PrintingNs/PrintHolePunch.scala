@@ -52,17 +52,15 @@ object PrintHolePunch extends js.Object {
   sealed trait topEdge
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintHolePunch
   
-  val bottomEdge: bottomEdge with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val leftEdge: leftEdge with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val rightEdge: rightEdge with java.lang.String = js.native
-  val topEdge: topEdge with java.lang.String = js.native
+  /* 7 */ val bottomEdge: bottomEdge with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 4 */ val leftEdge: leftEdge with scala.Double = js.native
+  /* 3 */ val none: none with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 5 */ val rightEdge: rightEdge with scala.Double = js.native
+  /* 6 */ val topEdge: topEdge with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintHolePunch with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintHolePunch with scala.Double] = js.native
 }
 

@@ -63,20 +63,20 @@ object NodeType extends js.Object {
   sealed trait textNode
     extends winrtLib.WindowsNs.DataNs.XmlNs.DomNs.NodeType
   
-  val attributeNode: attributeNode with java.lang.String = js.native
-  val commentNode: commentNode with java.lang.String = js.native
-  val dataSectionNode: dataSectionNode with java.lang.String = js.native
-  val documentFragmentNode: documentFragmentNode with java.lang.String = js.native
-  val documentNode: documentNode with java.lang.String = js.native
-  val documentTypeNode: documentTypeNode with java.lang.String = js.native
-  val elementNode: elementNode with java.lang.String = js.native
-  val entityNode: entityNode with java.lang.String = js.native
-  val entityReferenceNode: entityReferenceNode with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val notationNode: notationNode with java.lang.String = js.native
-  val processingInstructionNode: processingInstructionNode with java.lang.String = js.native
-  val textNode: textNode with java.lang.String = js.native
+  /* 2 */ val attributeNode: attributeNode with scala.Double = js.native
+  /* 8 */ val commentNode: commentNode with scala.Double = js.native
+  /* 4 */ val dataSectionNode: dataSectionNode with scala.Double = js.native
+  /* 11 */ val documentFragmentNode: documentFragmentNode with scala.Double = js.native
+  /* 9 */ val documentNode: documentNode with scala.Double = js.native
+  /* 10 */ val documentTypeNode: documentTypeNode with scala.Double = js.native
+  /* 1 */ val elementNode: elementNode with scala.Double = js.native
+  /* 6 */ val entityNode: entityNode with scala.Double = js.native
+  /* 5 */ val entityReferenceNode: entityReferenceNode with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 12 */ val notationNode: notationNode with scala.Double = js.native
+  /* 7 */ val processingInstructionNode: processingInstructionNode with scala.Double = js.native
+  /* 3 */ val textNode: textNode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.NodeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.NodeType with scala.Double] = js.native
 }
 

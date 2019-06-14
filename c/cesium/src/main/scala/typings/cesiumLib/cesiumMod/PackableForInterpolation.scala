@@ -15,8 +15,8 @@ object PackableForInterpolation extends js.Object {
   sealed trait packedInterpolationLength
     extends cesiumLib.cesiumMod.PackableForInterpolation
   
-  val packedInterpolationLength: packedInterpolationLength with java.lang.String = js.native
+  /* 0 */ val packedInterpolationLength: packedInterpolationLength with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.PackableForInterpolation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.PackableForInterpolation with scala.Double] = js.native
 }
 

@@ -21,9 +21,9 @@ object FilterBarMode extends js.Object {
   sealed trait OnEnter
     extends ejDotWebDotAllLib.ejNs.GridNs.FilterBarMode
   
-  val Immediate: Immediate with java.lang.String = js.native
-  val OnEnter: OnEnter with java.lang.String = js.native
+  /* 0 */ val Immediate: Immediate with scala.Double = js.native
+  /* 1 */ val OnEnter: OnEnter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.FilterBarMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.FilterBarMode with scala.Double] = js.native
 }
 

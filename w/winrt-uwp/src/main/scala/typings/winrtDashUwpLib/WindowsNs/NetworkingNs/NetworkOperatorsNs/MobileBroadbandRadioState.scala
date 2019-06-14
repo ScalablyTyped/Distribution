@@ -22,11 +22,11 @@ object MobileBroadbandRadioState extends js.Object {
   sealed trait on
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandRadioState
   
-  val off: off with java.lang.String = js.native
-  val on: on with java.lang.String = js.native
+  /* 0 */ val off: off with scala.Double = js.native
+  /* 1 */ val on: on with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandRadioState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandRadioState with scala.Double
   ] = js.native
 }
 

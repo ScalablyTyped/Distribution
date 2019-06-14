@@ -27,11 +27,11 @@ object FollowedItemType extends js.Object {
   sealed trait unknown
     extends sharepointLib.SPNs.UserProfilesNs.FollowedItemType
   
-  val all: all with java.lang.String = js.native
-  val document: document with java.lang.String = js.native
-  val site: site with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val all: all with scala.Double = js.native
+  /* 1 */ val document: document with scala.Double = js.native
+  /* 2 */ val site: site with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowedItemType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.FollowedItemType with scala.Double] = js.native
 }
 

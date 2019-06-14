@@ -27,12 +27,12 @@ object BackgroundWorkCostValue extends js.Object {
   sealed trait medium
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundWorkCostValue
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val medium: medium with java.lang.String = js.native
+  /* 2 */ val high: high with scala.Double = js.native
+  /* 0 */ val low: low with scala.Double = js.native
+  /* 1 */ val medium: medium with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundWorkCostValue with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundWorkCostValue with scala.Double
   ] = js.native
 }
 

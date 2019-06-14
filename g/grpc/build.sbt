@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grpc"
-version := "1.21.1-74a26e"
+version := "1.21.1-ca83c2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -22,11 +22,11 @@ object SensorReadingType extends js.Object {
   sealed trait relative
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorReadingType
   
-  val absolute: absolute with java.lang.String = js.native
-  val relative: relative with java.lang.String = js.native
+  /* 0 */ val absolute: absolute with scala.Double = js.native
+  /* 1 */ val relative: relative with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorReadingType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorReadingType with scala.Double
   ] = js.native
 }
 

@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait IcuType extends js.Object
 
+object IcuType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def plural: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def select: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+}
+

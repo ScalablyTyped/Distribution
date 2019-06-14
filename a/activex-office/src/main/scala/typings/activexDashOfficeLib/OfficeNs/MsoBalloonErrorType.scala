@@ -21,3 +21,32 @@ import scala.scalajs.js.annotation._
 */
 trait MsoBalloonErrorType extends js.Object
 
+object MsoBalloonErrorType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoBalloonErrorBadCharacter: activexDashOfficeLib.activexDashOfficeLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def msoBalloonErrorBadPictureRef: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoBalloonErrorBadReference: activexDashOfficeLib.activexDashOfficeLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def msoBalloonErrorButtonModeless: activexDashOfficeLib.activexDashOfficeLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def msoBalloonErrorButtonlessModal: activexDashOfficeLib.activexDashOfficeLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def msoBalloonErrorCOMFailure: activexDashOfficeLib.activexDashOfficeLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def msoBalloonErrorCharNotTopmostForModal: activexDashOfficeLib.activexDashOfficeLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def msoBalloonErrorNone: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoBalloonErrorOther: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoBalloonErrorOutOfMemory: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoBalloonErrorTooBig: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoBalloonErrorTooManyControls: activexDashOfficeLib.activexDashOfficeLibNumbers.`11` = this.cast(11)
+}
+

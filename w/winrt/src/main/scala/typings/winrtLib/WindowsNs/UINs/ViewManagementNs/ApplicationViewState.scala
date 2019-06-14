@@ -27,13 +27,11 @@ object ApplicationViewState extends js.Object {
   sealed trait snapped
     extends winrtLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewState
   
-  val filled: filled with java.lang.String = js.native
-  val fullScreenLandscape: fullScreenLandscape with java.lang.String = js.native
-  val fullScreenPortrait: fullScreenPortrait with java.lang.String = js.native
-  val snapped: snapped with java.lang.String = js.native
+  /* 1 */ val filled: filled with scala.Double = js.native
+  /* 0 */ val fullScreenLandscape: fullScreenLandscape with scala.Double = js.native
+  /* 3 */ val fullScreenPortrait: fullScreenPortrait with scala.Double = js.native
+  /* 2 */ val snapped: snapped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewState with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewState with scala.Double] = js.native
 }
 

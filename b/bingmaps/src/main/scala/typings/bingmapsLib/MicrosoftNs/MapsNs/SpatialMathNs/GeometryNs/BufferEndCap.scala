@@ -26,12 +26,12 @@ object BufferEndCap extends js.Object {
   sealed trait Square
     extends bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap
   
-  val Flat: Flat with java.lang.String = js.native
-  val Round: Round with java.lang.String = js.native
-  val Square: Square with java.lang.String = js.native
+  /* 1 */ val Flat: Flat with scala.Double = js.native
+  /* 0 */ val Round: Round with scala.Double = js.native
+  /* 2 */ val Square: Square with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.GeometryNs.BufferEndCap with scala.Double
   ] = js.native
 }
 

@@ -26,12 +26,10 @@ object boxPlotMode extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.boxPlotMode
   
-  val Exclusive: Exclusive with java.lang.String = js.native
-  val Inclusive: Inclusive with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 0 */ val Exclusive: Exclusive with scala.Double = js.native
+  /* 1 */ val Inclusive: Inclusive with scala.Double = js.native
+  /* 2 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.boxPlotMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.boxPlotMode with scala.Double] = js.native
 }
 

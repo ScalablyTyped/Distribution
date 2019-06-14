@@ -16,3 +16,22 @@ import scala.scalajs.js.annotation._
 */
 trait _htmlRules extends js.Object
 
+object _htmlRules {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def htmlRulesNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def htmlRules_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+  @scala.inline
+  def htmlRulesall: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def htmlRulescols: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def htmlRulesgroups: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def htmlRulesnone: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def htmlRulesrows: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+}
+

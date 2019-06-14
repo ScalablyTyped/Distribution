@@ -22,11 +22,11 @@ object MediaPixelFormat extends js.Object {
   sealed trait nv12
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaPixelFormat
   
-  val bgra8: bgra8 with java.lang.String = js.native
-  val nv12: nv12 with java.lang.String = js.native
+  /* 1 */ val bgra8: bgra8 with scala.Double = js.native
+  /* 0 */ val nv12: nv12 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaPixelFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaPixelFormat with scala.Double
   ] = js.native
 }
 

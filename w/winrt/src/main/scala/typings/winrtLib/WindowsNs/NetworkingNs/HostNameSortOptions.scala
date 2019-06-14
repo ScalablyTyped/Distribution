@@ -19,9 +19,9 @@ object HostNameSortOptions extends js.Object {
   sealed trait optimizeForLongConnections
     extends winrtLib.WindowsNs.NetworkingNs.HostNameSortOptions
   
-  val none: none with java.lang.String = js.native
-  val optimizeForLongConnections: optimizeForLongConnections with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val optimizeForLongConnections: optimizeForLongConnections with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.NetworkingNs.HostNameSortOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.NetworkingNs.HostNameSortOptions with scala.Double] = js.native
 }
 

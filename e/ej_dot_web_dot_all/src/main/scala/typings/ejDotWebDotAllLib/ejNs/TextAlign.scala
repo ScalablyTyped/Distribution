@@ -31,11 +31,11 @@ object TextAlign extends js.Object {
   sealed trait Right
     extends ejDotWebDotAllLib.ejNs.TextAlign
   
-  val Center: Center with java.lang.String = js.native
-  val Justify: Justify with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 0 */ val Center: Center with scala.Double = js.native
+  /* 1 */ val Justify: Justify with scala.Double = js.native
+  /* 2 */ val Left: Left with scala.Double = js.native
+  /* 3 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TextAlign with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TextAlign with scala.Double] = js.native
 }
 

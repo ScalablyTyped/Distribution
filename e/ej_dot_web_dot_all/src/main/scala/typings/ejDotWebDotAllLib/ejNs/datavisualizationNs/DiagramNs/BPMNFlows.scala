@@ -26,12 +26,10 @@ object BPMNFlows extends js.Object {
   sealed trait Sequence
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNFlows
   
-  val Association: Association with java.lang.String = js.native
-  val Message: Message with java.lang.String = js.native
-  val Sequence: Sequence with java.lang.String = js.native
+  /* 1 */ val Association: Association with scala.Double = js.native
+  /* 2 */ val Message: Message with scala.Double = js.native
+  /* 0 */ val Sequence: Sequence with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNFlows with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNFlows with scala.Double] = js.native
 }
 

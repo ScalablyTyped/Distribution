@@ -745,13 +745,13 @@ object PhysicsNs extends js.Object {
       */
     @js.native
     object COLLIDES extends js.Object {
-      val ACTIVE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.ACTIVE with java.lang.String = js.native
-      val FIXED: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.FIXED with java.lang.String = js.native
-      val LITE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.LITE with java.lang.String = js.native
-      val NEVER: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.NEVER with java.lang.String = js.native
-      val PASSIVE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.PASSIVE with java.lang.String = js.native
+      /* 3 */ val ACTIVE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.ACTIVE with scala.Double = js.native
+      /* 4 */ val FIXED: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.FIXED with scala.Double = js.native
+      /* 1 */ val LITE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.LITE with scala.Double = js.native
+      /* 0 */ val NEVER: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.NEVER with scala.Double = js.native
+      /* 2 */ val PASSIVE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES.PASSIVE with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES with java.lang.String] = js.native
+      def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES with scala.Double] = js.native
     }
     
     @JSName("Events")
@@ -794,12 +794,12 @@ object PhysicsNs extends js.Object {
       */
     @js.native
     object TYPE extends js.Object {
-      val A: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.A with java.lang.String = js.native
-      val B: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.B with java.lang.String = js.native
-      val BOTH: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.BOTH with java.lang.String = js.native
-      val NONE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.NONE with java.lang.String = js.native
+      /* 1 */ val A: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.A with scala.Double = js.native
+      /* 2 */ val B: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.B with scala.Double = js.native
+      /* 3 */ val BOTH: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.BOTH with scala.Double = js.native
+      /* 0 */ val NONE: phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE.NONE with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE with java.lang.String] = js.native
+      def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.TYPE with scala.Double] = js.native
     }
     
   }

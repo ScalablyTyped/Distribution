@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "msportalfx-test"
-version := "0.0-unknown-dt-20190322Z-da3e0b"
+version := "0.0-unknown-dt-20190322Z-2fc8d1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

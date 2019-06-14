@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdFieldShading extends js.Object
 
+object WdFieldShading {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdFieldShadingAlways: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdFieldShadingNever: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdFieldShadingWhenSelected: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

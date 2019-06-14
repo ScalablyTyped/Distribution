@@ -41,3 +41,72 @@ import scala.scalajs.js.annotation._
 */
 trait XlChartItem extends js.Object
 
+object XlChartItem {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlAxis: activexDashExcelLib.activexDashExcelLibNumbers.`21` = this.cast(21)
+  @scala.inline
+  def xlAxisTitle: activexDashExcelLib.activexDashExcelLibNumbers.`17` = this.cast(17)
+  @scala.inline
+  def xlChartArea: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlChartTitle: activexDashExcelLib.activexDashExcelLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def xlCorners: activexDashExcelLib.activexDashExcelLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def xlDataLabel: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlDataTable: activexDashExcelLib.activexDashExcelLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def xlDisplayUnitLabel: activexDashExcelLib.activexDashExcelLibNumbers.`30` = this.cast(30)
+  @scala.inline
+  def xlDownBars: activexDashExcelLib.activexDashExcelLibNumbers.`20` = this.cast(20)
+  @scala.inline
+  def xlDropLines: activexDashExcelLib.activexDashExcelLibNumbers.`26` = this.cast(26)
+  @scala.inline
+  def xlErrorBars: activexDashExcelLib.activexDashExcelLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def xlFloor: activexDashExcelLib.activexDashExcelLibNumbers.`23` = this.cast(23)
+  @scala.inline
+  def xlHiLoLines: activexDashExcelLib.activexDashExcelLibNumbers.`25` = this.cast(25)
+  @scala.inline
+  def xlLeaderLines: activexDashExcelLib.activexDashExcelLibNumbers.`29` = this.cast(29)
+  @scala.inline
+  def xlLegend: activexDashExcelLib.activexDashExcelLibNumbers.`24` = this.cast(24)
+  @scala.inline
+  def xlLegendEntry: activexDashExcelLib.activexDashExcelLibNumbers.`12` = this.cast(12)
+  @scala.inline
+  def xlLegendKey: activexDashExcelLib.activexDashExcelLibNumbers.`13` = this.cast(13)
+  @scala.inline
+  def xlMajorGridlines: activexDashExcelLib.activexDashExcelLibNumbers.`15` = this.cast(15)
+  @scala.inline
+  def xlMinorGridlines: activexDashExcelLib.activexDashExcelLibNumbers.`16` = this.cast(16)
+  @scala.inline
+  def xlNothing: activexDashExcelLib.activexDashExcelLibNumbers.`28` = this.cast(28)
+  @scala.inline
+  def xlPivotChartDropZone: activexDashExcelLib.activexDashExcelLibNumbers.`32` = this.cast(32)
+  @scala.inline
+  def xlPivotChartFieldButton: activexDashExcelLib.activexDashExcelLibNumbers.`31` = this.cast(31)
+  @scala.inline
+  def xlPlotArea: activexDashExcelLib.activexDashExcelLibNumbers.`19` = this.cast(19)
+  @scala.inline
+  def xlRadarAxisLabels: activexDashExcelLib.activexDashExcelLibNumbers.`27` = this.cast(27)
+  @scala.inline
+  def xlSeries: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlSeriesLines: activexDashExcelLib.activexDashExcelLibNumbers.`22` = this.cast(22)
+  @scala.inline
+  def xlShape: activexDashExcelLib.activexDashExcelLibNumbers.`14` = this.cast(14)
+  @scala.inline
+  def xlTrendline: activexDashExcelLib.activexDashExcelLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def xlUpBars: activexDashExcelLib.activexDashExcelLibNumbers.`18` = this.cast(18)
+  @scala.inline
+  def xlWalls: activexDashExcelLib.activexDashExcelLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def xlXErrorBars: activexDashExcelLib.activexDashExcelLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def xlYErrorBars: activexDashExcelLib.activexDashExcelLibNumbers.`11` = this.cast(11)
+}
+

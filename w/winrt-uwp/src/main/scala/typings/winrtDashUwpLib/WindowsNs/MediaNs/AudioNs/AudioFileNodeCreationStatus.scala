@@ -37,14 +37,14 @@ object AudioFileNodeCreationStatus extends js.Object {
   sealed trait unknownFailure
     extends winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.AudioFileNodeCreationStatus
   
-  val fileNotFound: fileNotFound with java.lang.String = js.native
-  val formatNotSupported: formatNotSupported with java.lang.String = js.native
-  val invalidFileType: invalidFileType with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownFailure: unknownFailure with java.lang.String = js.native
+  /* 1 */ val fileNotFound: fileNotFound with scala.Double = js.native
+  /* 3 */ val formatNotSupported: formatNotSupported with scala.Double = js.native
+  /* 2 */ val invalidFileType: invalidFileType with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 4 */ val unknownFailure: unknownFailure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.AudioFileNodeCreationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.AudioFileNodeCreationStatus with scala.Double
   ] = js.native
 }
 

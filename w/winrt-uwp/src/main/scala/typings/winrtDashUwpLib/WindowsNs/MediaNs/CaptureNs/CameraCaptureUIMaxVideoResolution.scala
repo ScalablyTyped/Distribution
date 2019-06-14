@@ -32,13 +32,13 @@ object CameraCaptureUIMaxVideoResolution extends js.Object {
   sealed trait standardDefinition
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMaxVideoResolution
   
-  val highDefinition: highDefinition with java.lang.String = js.native
-  val highestAvailable: highestAvailable with java.lang.String = js.native
-  val lowDefinition: lowDefinition with java.lang.String = js.native
-  val standardDefinition: standardDefinition with java.lang.String = js.native
+  /* 3 */ val highDefinition: highDefinition with scala.Double = js.native
+  /* 0 */ val highestAvailable: highestAvailable with scala.Double = js.native
+  /* 1 */ val lowDefinition: lowDefinition with scala.Double = js.native
+  /* 2 */ val standardDefinition: standardDefinition with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMaxVideoResolution with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMaxVideoResolution with scala.Double
   ] = js.native
 }
 

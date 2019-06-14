@@ -23,10 +23,10 @@ object HorizontalOrigin extends js.Object {
   sealed trait RIGHT
     extends cesiumLib.cesiumMod.HorizontalOrigin
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val LEFT: LEFT with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
+  /* 0 */ val CENTER: CENTER with scala.Double = js.native
+  /* 1 */ val LEFT: LEFT with scala.Double = js.native
+  /* 2 */ val RIGHT: RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.HorizontalOrigin with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.HorizontalOrigin with scala.Double] = js.native
 }
 

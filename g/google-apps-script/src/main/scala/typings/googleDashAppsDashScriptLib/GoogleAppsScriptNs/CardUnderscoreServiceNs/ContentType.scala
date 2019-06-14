@@ -23,12 +23,12 @@ object ContentType extends js.Object {
   sealed trait TEXT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ContentType
   
-  val IMMUTABLE_HTML: IMMUTABLE_HTML with java.lang.String = js.native
-  val MUTABLE_HTML: MUTABLE_HTML with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
+  /* 2 */ val IMMUTABLE_HTML: IMMUTABLE_HTML with scala.Double = js.native
+  /* 1 */ val MUTABLE_HTML: MUTABLE_HTML with scala.Double = js.native
+  /* 0 */ val TEXT: TEXT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ContentType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ContentType with scala.Double
   ] = js.native
 }
 

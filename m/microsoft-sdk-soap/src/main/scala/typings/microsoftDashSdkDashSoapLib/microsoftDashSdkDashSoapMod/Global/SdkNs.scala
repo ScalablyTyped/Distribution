@@ -1456,53 +1456,53 @@ object SdkNs extends js.Object {
       sealed trait YomiOf
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AttributeMetadataProperties
       
-      val AttributeOf: AttributeOf with java.lang.String = js.native
-      val AttributeType: AttributeType with java.lang.String = js.native
-      val AttributeTypeName: AttributeTypeName with java.lang.String = js.native
-      val CalculationOf: CalculationOf with java.lang.String = js.native
-      val CanBeSecuredForCreate: CanBeSecuredForCreate with java.lang.String = js.native
-      val CanBeSecuredForRead: CanBeSecuredForRead with java.lang.String = js.native
-      val CanBeSecuredForUpdate: CanBeSecuredForUpdate with java.lang.String = js.native
-      val CanModifyAdditionalSettings: CanModifyAdditionalSettings with java.lang.String = js.native
-      val ColumnNumber: ColumnNumber with java.lang.String = js.native
-      val DefaultFormValue: DefaultFormValue with java.lang.String = js.native
-      val DefaultValue: DefaultValue with java.lang.String = js.native
-      val DeprecatedVersion: DeprecatedVersion with java.lang.String = js.native
-      val Description: Description with java.lang.String = js.native
-      val DisplayName: DisplayName with java.lang.String = js.native
-      val EntityLogicalName: EntityLogicalName with java.lang.String = js.native
-      val Format: Format with java.lang.String = js.native
-      val FormatName: FormatName with java.lang.String = js.native
-      val ImeMode: ImeMode with java.lang.String = js.native
-      val IntroducedVersion: IntroducedVersion with java.lang.String = js.native
-      val IsAuditEnabled: IsAuditEnabled with java.lang.String = js.native
-      val IsCustomAttribute: IsCustomAttribute with java.lang.String = js.native
-      val IsCustomizable: IsCustomizable with java.lang.String = js.native
-      val IsManaged: IsManaged with java.lang.String = js.native
-      val IsPrimaryId: IsPrimaryId with java.lang.String = js.native
-      val IsPrimaryName: IsPrimaryName with java.lang.String = js.native
-      val IsRenameable: IsRenameable with java.lang.String = js.native
-      val IsSecured: IsSecured with java.lang.String = js.native
-      val IsValidForAdvancedFind: IsValidForAdvancedFind with java.lang.String = js.native
-      val IsValidForCreate: IsValidForCreate with java.lang.String = js.native
-      val IsValidForRead: IsValidForRead with java.lang.String = js.native
-      val IsValidForUpdate: IsValidForUpdate with java.lang.String = js.native
-      val LinkedAttributeId: LinkedAttributeId with java.lang.String = js.native
-      val LogicalName: LogicalName with java.lang.String = js.native
-      val MaxLength: MaxLength with java.lang.String = js.native
-      val MaxValue: MaxValue with java.lang.String = js.native
-      val MetadataId: MetadataId with java.lang.String = js.native
-      val MinValue: MinValue with java.lang.String = js.native
-      val OptionSet: OptionSet with java.lang.String = js.native
-      val Precision: Precision with java.lang.String = js.native
-      val PrecisionSource: PrecisionSource with java.lang.String = js.native
-      val RequiredLevel: RequiredLevel with java.lang.String = js.native
-      val SchemaName: SchemaName with java.lang.String = js.native
-      val Targets: Targets with java.lang.String = js.native
-      val YomiOf: YomiOf with java.lang.String = js.native
+      /* 0 */ val AttributeOf: AttributeOf with scala.Double = js.native
+      /* 1 */ val AttributeType: AttributeType with scala.Double = js.native
+      /* 2 */ val AttributeTypeName: AttributeTypeName with scala.Double = js.native
+      /* 3 */ val CalculationOf: CalculationOf with scala.Double = js.native
+      /* 4 */ val CanBeSecuredForCreate: CanBeSecuredForCreate with scala.Double = js.native
+      /* 5 */ val CanBeSecuredForRead: CanBeSecuredForRead with scala.Double = js.native
+      /* 6 */ val CanBeSecuredForUpdate: CanBeSecuredForUpdate with scala.Double = js.native
+      /* 7 */ val CanModifyAdditionalSettings: CanModifyAdditionalSettings with scala.Double = js.native
+      /* 8 */ val ColumnNumber: ColumnNumber with scala.Double = js.native
+      /* 9 */ val DefaultFormValue: DefaultFormValue with scala.Double = js.native
+      /* 10 */ val DefaultValue: DefaultValue with scala.Double = js.native
+      /* 11 */ val DeprecatedVersion: DeprecatedVersion with scala.Double = js.native
+      /* 12 */ val Description: Description with scala.Double = js.native
+      /* 13 */ val DisplayName: DisplayName with scala.Double = js.native
+      /* 14 */ val EntityLogicalName: EntityLogicalName with scala.Double = js.native
+      /* 15 */ val Format: Format with scala.Double = js.native
+      /* 16 */ val FormatName: FormatName with scala.Double = js.native
+      /* 17 */ val ImeMode: ImeMode with scala.Double = js.native
+      /* 18 */ val IntroducedVersion: IntroducedVersion with scala.Double = js.native
+      /* 19 */ val IsAuditEnabled: IsAuditEnabled with scala.Double = js.native
+      /* 20 */ val IsCustomAttribute: IsCustomAttribute with scala.Double = js.native
+      /* 21 */ val IsCustomizable: IsCustomizable with scala.Double = js.native
+      /* 22 */ val IsManaged: IsManaged with scala.Double = js.native
+      /* 23 */ val IsPrimaryId: IsPrimaryId with scala.Double = js.native
+      /* 24 */ val IsPrimaryName: IsPrimaryName with scala.Double = js.native
+      /* 25 */ val IsRenameable: IsRenameable with scala.Double = js.native
+      /* 26 */ val IsSecured: IsSecured with scala.Double = js.native
+      /* 27 */ val IsValidForAdvancedFind: IsValidForAdvancedFind with scala.Double = js.native
+      /* 28 */ val IsValidForCreate: IsValidForCreate with scala.Double = js.native
+      /* 29 */ val IsValidForRead: IsValidForRead with scala.Double = js.native
+      /* 30 */ val IsValidForUpdate: IsValidForUpdate with scala.Double = js.native
+      /* 31 */ val LinkedAttributeId: LinkedAttributeId with scala.Double = js.native
+      /* 32 */ val LogicalName: LogicalName with scala.Double = js.native
+      /* 33 */ val MaxLength: MaxLength with scala.Double = js.native
+      /* 34 */ val MaxValue: MaxValue with scala.Double = js.native
+      /* 35 */ val MetadataId: MetadataId with scala.Double = js.native
+      /* 36 */ val MinValue: MinValue with scala.Double = js.native
+      /* 37 */ val OptionSet: OptionSet with scala.Double = js.native
+      /* 38 */ val Precision: Precision with scala.Double = js.native
+      /* 39 */ val PrecisionSource: PrecisionSource with scala.Double = js.native
+      /* 40 */ val RequiredLevel: RequiredLevel with scala.Double = js.native
+      /* 41 */ val SchemaName: SchemaName with scala.Double = js.native
+      /* 42 */ val Targets: Targets with scala.Double = js.native
+      /* 43 */ val YomiOf: YomiOf with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AttributeMetadataProperties with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AttributeMetadataProperties with scala.Double
           ] = js.native
     }
     
@@ -1543,16 +1543,16 @@ object SdkNs extends js.Object {
       sealed trait Relationship
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.DeletedMetadataFilters
       
-      val All: All with java.lang.String = js.native
-      val Attribute: Attribute with java.lang.String = js.native
-      val Default: Default with java.lang.String = js.native
-      val Entity: Entity with java.lang.String = js.native
-      val Label: Label with java.lang.String = js.native
-      val OptionSet: OptionSet with java.lang.String = js.native
-      val Relationship: Relationship with java.lang.String = js.native
+      /* 0 */ val All: All with scala.Double = js.native
+      /* 1 */ val Attribute: Attribute with scala.Double = js.native
+      /* 2 */ val Default: Default with scala.Double = js.native
+      /* 3 */ val Entity: Entity with scala.Double = js.native
+      /* 4 */ val Label: Label with scala.Double = js.native
+      /* 5 */ val OptionSet: OptionSet with scala.Double = js.native
+      /* 6 */ val Relationship: Relationship with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.DeletedMetadataFilters with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.DeletedMetadataFilters with scala.Double
           ] = js.native
     }
     
@@ -1794,68 +1794,68 @@ object SdkNs extends js.Object {
       sealed trait SchemaName
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.EntityMetadataProperties
       
-      val ActivityTypeMask: ActivityTypeMask with java.lang.String = js.native
-      val Attributes: Attributes with java.lang.String = js.native
-      val AutoCreateAccessTeams: AutoCreateAccessTeams with java.lang.String = js.native
-      val AutoRouteToOwnerQueue: AutoRouteToOwnerQueue with java.lang.String = js.native
-      val CanBeInManyToMany: CanBeInManyToMany with java.lang.String = js.native
-      val CanBePrimaryEntityInRelationship: CanBePrimaryEntityInRelationship with java.lang.String = js.native
-      val CanBeRelatedEntityInRelationship: CanBeRelatedEntityInRelationship with java.lang.String = js.native
-      val CanCreateAttributes: CanCreateAttributes with java.lang.String = js.native
-      val CanCreateCharts: CanCreateCharts with java.lang.String = js.native
-      val CanCreateForms: CanCreateForms with java.lang.String = js.native
-      val CanCreateViews: CanCreateViews with java.lang.String = js.native
-      val CanModifyAdditionalSettings: CanModifyAdditionalSettings with java.lang.String = js.native
-      val CanTriggerWorkflow: CanTriggerWorkflow with java.lang.String = js.native
-      val Description: Description with java.lang.String = js.native
-      val DisplayCollectionName: DisplayCollectionName with java.lang.String = js.native
-      val DisplayName: DisplayName with java.lang.String = js.native
-      val IconLargeName: IconLargeName with java.lang.String = js.native
-      val IconMediumName: IconMediumName with java.lang.String = js.native
-      val IconSmallName: IconSmallName with java.lang.String = js.native
-      val IntroducedVersion: IntroducedVersion with java.lang.String = js.native
-      val IsAIRUpdated: IsAIRUpdated with java.lang.String = js.native
-      val IsActivity: IsActivity with java.lang.String = js.native
-      val IsActivityParty: IsActivityParty with java.lang.String = js.native
-      val IsAuditEnabled: IsAuditEnabled with java.lang.String = js.native
-      val IsAvailableOffline: IsAvailableOffline with java.lang.String = js.native
-      val IsBusinessProcessEnabled: IsBusinessProcessEnabled with java.lang.String = js.native
-      val IsChildEntity: IsChildEntity with java.lang.String = js.native
-      val IsConnectionsEnabled: IsConnectionsEnabled with java.lang.String = js.native
-      val IsCustomEntity: IsCustomEntity with java.lang.String = js.native
-      val IsCustomizable: IsCustomizable with java.lang.String = js.native
-      val IsDocumentManagementEnabled: IsDocumentManagementEnabled with java.lang.String = js.native
-      val IsDuplicateDetectionEnabled: IsDuplicateDetectionEnabled with java.lang.String = js.native
-      val IsEnabledForCharts: IsEnabledForCharts with java.lang.String = js.native
-      val IsImportable: IsImportable with java.lang.String = js.native
-      val IsIntersect: IsIntersect with java.lang.String = js.native
-      val IsMailMergeEnabled: IsMailMergeEnabled with java.lang.String = js.native
-      val IsManaged: IsManaged with java.lang.String = js.native
-      val IsMappable: IsMappable with java.lang.String = js.native
-      val IsQuickCreateEnabled: IsQuickCreateEnabled with java.lang.String = js.native
-      val IsReadingPaneEnabled: IsReadingPaneEnabled with java.lang.String = js.native
-      val IsRenameable: IsRenameable with java.lang.String = js.native
-      val IsValidForAdvancedFind: IsValidForAdvancedFind with java.lang.String = js.native
-      val IsValidForQueue: IsValidForQueue with java.lang.String = js.native
-      val IsVisibleInMobile: IsVisibleInMobile with java.lang.String = js.native
-      val IsVisibleInMobileClient: IsVisibleInMobileClient with java.lang.String = js.native
-      val LogicalName: LogicalName with java.lang.String = js.native
-      val ManyToManyRelationships: ManyToManyRelationships with java.lang.String = js.native
-      val ManyToOneRelationships: ManyToOneRelationships with java.lang.String = js.native
-      val MetadataId: MetadataId with java.lang.String = js.native
-      val ObjectTypeCode: ObjectTypeCode with java.lang.String = js.native
-      val OneToManyRelationships: OneToManyRelationships with java.lang.String = js.native
-      val OwnershipType: OwnershipType with java.lang.String = js.native
-      val PrimaryIdAttribute: PrimaryIdAttribute with java.lang.String = js.native
-      val PrimaryImageAttribute: PrimaryImageAttribute with java.lang.String = js.native
-      val PrimaryNameAttribute: PrimaryNameAttribute with java.lang.String = js.native
-      val Privileges: Privileges with java.lang.String = js.native
-      val RecurrenceBaseEntityLogicalName: RecurrenceBaseEntityLogicalName with java.lang.String = js.native
-      val ReportViewName: ReportViewName with java.lang.String = js.native
-      val SchemaName: SchemaName with java.lang.String = js.native
+      /* 0 */ val ActivityTypeMask: ActivityTypeMask with scala.Double = js.native
+      /* 1 */ val Attributes: Attributes with scala.Double = js.native
+      /* 2 */ val AutoCreateAccessTeams: AutoCreateAccessTeams with scala.Double = js.native
+      /* 3 */ val AutoRouteToOwnerQueue: AutoRouteToOwnerQueue with scala.Double = js.native
+      /* 4 */ val CanBeInManyToMany: CanBeInManyToMany with scala.Double = js.native
+      /* 5 */ val CanBePrimaryEntityInRelationship: CanBePrimaryEntityInRelationship with scala.Double = js.native
+      /* 6 */ val CanBeRelatedEntityInRelationship: CanBeRelatedEntityInRelationship with scala.Double = js.native
+      /* 7 */ val CanCreateAttributes: CanCreateAttributes with scala.Double = js.native
+      /* 8 */ val CanCreateCharts: CanCreateCharts with scala.Double = js.native
+      /* 9 */ val CanCreateForms: CanCreateForms with scala.Double = js.native
+      /* 10 */ val CanCreateViews: CanCreateViews with scala.Double = js.native
+      /* 11 */ val CanModifyAdditionalSettings: CanModifyAdditionalSettings with scala.Double = js.native
+      /* 12 */ val CanTriggerWorkflow: CanTriggerWorkflow with scala.Double = js.native
+      /* 13 */ val Description: Description with scala.Double = js.native
+      /* 14 */ val DisplayCollectionName: DisplayCollectionName with scala.Double = js.native
+      /* 15 */ val DisplayName: DisplayName with scala.Double = js.native
+      /* 16 */ val IconLargeName: IconLargeName with scala.Double = js.native
+      /* 17 */ val IconMediumName: IconMediumName with scala.Double = js.native
+      /* 18 */ val IconSmallName: IconSmallName with scala.Double = js.native
+      /* 19 */ val IntroducedVersion: IntroducedVersion with scala.Double = js.native
+      /* 22 */ val IsAIRUpdated: IsAIRUpdated with scala.Double = js.native
+      /* 20 */ val IsActivity: IsActivity with scala.Double = js.native
+      /* 21 */ val IsActivityParty: IsActivityParty with scala.Double = js.native
+      /* 23 */ val IsAuditEnabled: IsAuditEnabled with scala.Double = js.native
+      /* 24 */ val IsAvailableOffline: IsAvailableOffline with scala.Double = js.native
+      /* 25 */ val IsBusinessProcessEnabled: IsBusinessProcessEnabled with scala.Double = js.native
+      /* 26 */ val IsChildEntity: IsChildEntity with scala.Double = js.native
+      /* 27 */ val IsConnectionsEnabled: IsConnectionsEnabled with scala.Double = js.native
+      /* 28 */ val IsCustomEntity: IsCustomEntity with scala.Double = js.native
+      /* 29 */ val IsCustomizable: IsCustomizable with scala.Double = js.native
+      /* 30 */ val IsDocumentManagementEnabled: IsDocumentManagementEnabled with scala.Double = js.native
+      /* 31 */ val IsDuplicateDetectionEnabled: IsDuplicateDetectionEnabled with scala.Double = js.native
+      /* 32 */ val IsEnabledForCharts: IsEnabledForCharts with scala.Double = js.native
+      /* 33 */ val IsImportable: IsImportable with scala.Double = js.native
+      /* 34 */ val IsIntersect: IsIntersect with scala.Double = js.native
+      /* 35 */ val IsMailMergeEnabled: IsMailMergeEnabled with scala.Double = js.native
+      /* 36 */ val IsManaged: IsManaged with scala.Double = js.native
+      /* 37 */ val IsMappable: IsMappable with scala.Double = js.native
+      /* 38 */ val IsQuickCreateEnabled: IsQuickCreateEnabled with scala.Double = js.native
+      /* 39 */ val IsReadingPaneEnabled: IsReadingPaneEnabled with scala.Double = js.native
+      /* 40 */ val IsRenameable: IsRenameable with scala.Double = js.native
+      /* 41 */ val IsValidForAdvancedFind: IsValidForAdvancedFind with scala.Double = js.native
+      /* 42 */ val IsValidForQueue: IsValidForQueue with scala.Double = js.native
+      /* 43 */ val IsVisibleInMobile: IsVisibleInMobile with scala.Double = js.native
+      /* 44 */ val IsVisibleInMobileClient: IsVisibleInMobileClient with scala.Double = js.native
+      /* 45 */ val LogicalName: LogicalName with scala.Double = js.native
+      /* 46 */ val ManyToManyRelationships: ManyToManyRelationships with scala.Double = js.native
+      /* 47 */ val ManyToOneRelationships: ManyToOneRelationships with scala.Double = js.native
+      /* 48 */ val MetadataId: MetadataId with scala.Double = js.native
+      /* 49 */ val ObjectTypeCode: ObjectTypeCode with scala.Double = js.native
+      /* 50 */ val OneToManyRelationships: OneToManyRelationships with scala.Double = js.native
+      /* 51 */ val OwnershipType: OwnershipType with scala.Double = js.native
+      /* 52 */ val PrimaryIdAttribute: PrimaryIdAttribute with scala.Double = js.native
+      /* 53 */ val PrimaryImageAttribute: PrimaryImageAttribute with scala.Double = js.native
+      /* 54 */ val PrimaryNameAttribute: PrimaryNameAttribute with scala.Double = js.native
+      /* 55 */ val Privileges: Privileges with scala.Double = js.native
+      /* 56 */ val RecurrenceBaseEntityLogicalName: RecurrenceBaseEntityLogicalName with scala.Double = js.native
+      /* 57 */ val ReportViewName: ReportViewName with scala.Double = js.native
+      /* 58 */ val SchemaName: SchemaName with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.EntityMetadataProperties with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.EntityMetadataProperties with scala.Double
           ] = js.native
     }
     
@@ -1869,11 +1869,11 @@ object SdkNs extends js.Object {
       sealed trait Or
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.LogicalOperator
       
-      val And: And with java.lang.String = js.native
-      val Or: Or with java.lang.String = js.native
+      /* 0 */ val And: And with scala.Double = js.native
+      /* 1 */ val Or: Or with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.LogicalOperator with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.LogicalOperator with scala.Double
           ] = js.native
     }
     
@@ -1903,15 +1903,15 @@ object SdkNs extends js.Object {
       sealed trait NotIn
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.MetadataConditionOperator
       
-      val Equals: Equals with java.lang.String = js.native
-      val GreaterThan: GreaterThan with java.lang.String = js.native
-      val In: In with java.lang.String = js.native
-      val LessThan: LessThan with java.lang.String = js.native
-      val NotEquals: NotEquals with java.lang.String = js.native
-      val NotIn: NotIn with java.lang.String = js.native
+      /* 0 */ val Equals: Equals with scala.Double = js.native
+      /* 4 */ val GreaterThan: GreaterThan with scala.Double = js.native
+      /* 2 */ val In: In with scala.Double = js.native
+      /* 5 */ val LessThan: LessThan with scala.Double = js.native
+      /* 1 */ val NotEquals: NotEquals with scala.Double = js.native
+      /* 3 */ val NotIn: NotIn with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.MetadataConditionOperator with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.MetadataConditionOperator with scala.Double
           ] = js.native
     }
     
@@ -2009,32 +2009,32 @@ object SdkNs extends js.Object {
       sealed trait SecurityTypes
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipMetadataProperties
       
-      val AssociatedMenuConfiguration: AssociatedMenuConfiguration with java.lang.String = js.native
-      val CascadeConfiguration: CascadeConfiguration with java.lang.String = js.native
-      val Entity1AssociatedMenuConfiguration: Entity1AssociatedMenuConfiguration with java.lang.String = js.native
-      val Entity1IntersectAttribute: Entity1IntersectAttribute with java.lang.String = js.native
-      val Entity1LogicalName: Entity1LogicalName with java.lang.String = js.native
-      val Entity2AssociatedMenuConfiguration: Entity2AssociatedMenuConfiguration with java.lang.String = js.native
-      val Entity2IntersectAttribute: Entity2IntersectAttribute with java.lang.String = js.native
-      val Entity2LogicalName: Entity2LogicalName with java.lang.String = js.native
-      val HasChanged: HasChanged with java.lang.String = js.native
-      val IntersectEntityName: IntersectEntityName with java.lang.String = js.native
-      val IntroducedVersion: IntroducedVersion with java.lang.String = js.native
-      val IsCustomRelationship: IsCustomRelationship with java.lang.String = js.native
-      val IsCustomizable: IsCustomizable with java.lang.String = js.native
-      val IsManaged: IsManaged with java.lang.String = js.native
-      val IsValidForAdvancedFind: IsValidForAdvancedFind with java.lang.String = js.native
-      val MetadataId: MetadataId with java.lang.String = js.native
-      val ReferencedAttribute: ReferencedAttribute with java.lang.String = js.native
-      val ReferencedEntity: ReferencedEntity with java.lang.String = js.native
-      val ReferencingAttribute: ReferencingAttribute with java.lang.String = js.native
-      val ReferencingEntity: ReferencingEntity with java.lang.String = js.native
-      val RelationshipType: RelationshipType with java.lang.String = js.native
-      val SchemaName: SchemaName with java.lang.String = js.native
-      val SecurityTypes: SecurityTypes with java.lang.String = js.native
+      /* 0 */ val AssociatedMenuConfiguration: AssociatedMenuConfiguration with scala.Double = js.native
+      /* 1 */ val CascadeConfiguration: CascadeConfiguration with scala.Double = js.native
+      /* 3 */ val Entity1AssociatedMenuConfiguration: Entity1AssociatedMenuConfiguration with scala.Double = js.native
+      /* 4 */ val Entity1IntersectAttribute: Entity1IntersectAttribute with scala.Double = js.native
+      /* 5 */ val Entity1LogicalName: Entity1LogicalName with scala.Double = js.native
+      /* 6 */ val Entity2AssociatedMenuConfiguration: Entity2AssociatedMenuConfiguration with scala.Double = js.native
+      /* 7 */ val Entity2IntersectAttribute: Entity2IntersectAttribute with scala.Double = js.native
+      /* 8 */ val Entity2LogicalName: Entity2LogicalName with scala.Double = js.native
+      /* 2 */ val HasChanged: HasChanged with scala.Double = js.native
+      /* 9 */ val IntersectEntityName: IntersectEntityName with scala.Double = js.native
+      /* 11 */ val IntroducedVersion: IntroducedVersion with scala.Double = js.native
+      /* 12 */ val IsCustomRelationship: IsCustomRelationship with scala.Double = js.native
+      /* 10 */ val IsCustomizable: IsCustomizable with scala.Double = js.native
+      /* 13 */ val IsManaged: IsManaged with scala.Double = js.native
+      /* 14 */ val IsValidForAdvancedFind: IsValidForAdvancedFind with scala.Double = js.native
+      /* 15 */ val MetadataId: MetadataId with scala.Double = js.native
+      /* 16 */ val ReferencedAttribute: ReferencedAttribute with scala.Double = js.native
+      /* 17 */ val ReferencedEntity: ReferencedEntity with scala.Double = js.native
+      /* 18 */ val ReferencingAttribute: ReferencingAttribute with scala.Double = js.native
+      /* 19 */ val ReferencingEntity: ReferencingEntity with scala.Double = js.native
+      /* 20 */ val RelationshipType: RelationshipType with scala.Double = js.native
+      /* 21 */ val SchemaName: SchemaName with scala.Double = js.native
+      /* 22 */ val SecurityTypes: SecurityTypes with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipMetadataProperties with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipMetadataProperties with scala.Double
           ] = js.native
     }
     
@@ -2196,48 +2196,48 @@ object SdkNs extends js.Object {
       sealed trait YomiOf
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableAttributeMetadataProperties
       
-      val AttributeOf: AttributeOf with java.lang.String = js.native
-      val AttributeType: AttributeType with java.lang.String = js.native
-      val CalculationOf: CalculationOf with java.lang.String = js.native
-      val CanBeSecuredForCreate: CanBeSecuredForCreate with java.lang.String = js.native
-      val CanBeSecuredForRead: CanBeSecuredForRead with java.lang.String = js.native
-      val CanBeSecuredForUpdate: CanBeSecuredForUpdate with java.lang.String = js.native
-      val CanModifyAdditionalSettings: CanModifyAdditionalSettings with java.lang.String = js.native
-      val ColumnNumber: ColumnNumber with java.lang.String = js.native
-      val DefaultFormValue: DefaultFormValue with java.lang.String = js.native
-      val DefaultValue: DefaultValue with java.lang.String = js.native
-      val DeprecatedVersion: DeprecatedVersion with java.lang.String = js.native
-      val EntityLogicalName: EntityLogicalName with java.lang.String = js.native
-      val Format: Format with java.lang.String = js.native
-      val FormatName: FormatName with java.lang.String = js.native
-      val ImeMode: ImeMode with java.lang.String = js.native
-      val IntroducedVersion: IntroducedVersion with java.lang.String = js.native
-      val IsAuditEnabled: IsAuditEnabled with java.lang.String = js.native
-      val IsCustomAttribute: IsCustomAttribute with java.lang.String = js.native
-      val IsCustomizable: IsCustomizable with java.lang.String = js.native
-      val IsManaged: IsManaged with java.lang.String = js.native
-      val IsPrimaryId: IsPrimaryId with java.lang.String = js.native
-      val IsPrimaryName: IsPrimaryName with java.lang.String = js.native
-      val IsRenameable: IsRenameable with java.lang.String = js.native
-      val IsSecured: IsSecured with java.lang.String = js.native
-      val IsValidForAdvancedFind: IsValidForAdvancedFind with java.lang.String = js.native
-      val IsValidForCreate: IsValidForCreate with java.lang.String = js.native
-      val IsValidForRead: IsValidForRead with java.lang.String = js.native
-      val IsValidForUpdate: IsValidForUpdate with java.lang.String = js.native
-      val LinkedAttributeId: LinkedAttributeId with java.lang.String = js.native
-      val LogicalName: LogicalName with java.lang.String = js.native
-      val MaxLength: MaxLength with java.lang.String = js.native
-      val MaxValue: MaxValue with java.lang.String = js.native
-      val MetadataId: MetadataId with java.lang.String = js.native
-      val MinValue: MinValue with java.lang.String = js.native
-      val Precision: Precision with java.lang.String = js.native
-      val PrecisionSource: PrecisionSource with java.lang.String = js.native
-      val RequiredLevel: RequiredLevel with java.lang.String = js.native
-      val SchemaName: SchemaName with java.lang.String = js.native
-      val YomiOf: YomiOf with java.lang.String = js.native
+      /* 0 */ val AttributeOf: AttributeOf with scala.Double = js.native
+      /* 1 */ val AttributeType: AttributeType with scala.Double = js.native
+      /* 2 */ val CalculationOf: CalculationOf with scala.Double = js.native
+      /* 3 */ val CanBeSecuredForCreate: CanBeSecuredForCreate with scala.Double = js.native
+      /* 4 */ val CanBeSecuredForRead: CanBeSecuredForRead with scala.Double = js.native
+      /* 5 */ val CanBeSecuredForUpdate: CanBeSecuredForUpdate with scala.Double = js.native
+      /* 6 */ val CanModifyAdditionalSettings: CanModifyAdditionalSettings with scala.Double = js.native
+      /* 7 */ val ColumnNumber: ColumnNumber with scala.Double = js.native
+      /* 8 */ val DefaultFormValue: DefaultFormValue with scala.Double = js.native
+      /* 9 */ val DefaultValue: DefaultValue with scala.Double = js.native
+      /* 10 */ val DeprecatedVersion: DeprecatedVersion with scala.Double = js.native
+      /* 11 */ val EntityLogicalName: EntityLogicalName with scala.Double = js.native
+      /* 12 */ val Format: Format with scala.Double = js.native
+      /* 13 */ val FormatName: FormatName with scala.Double = js.native
+      /* 14 */ val ImeMode: ImeMode with scala.Double = js.native
+      /* 15 */ val IntroducedVersion: IntroducedVersion with scala.Double = js.native
+      /* 16 */ val IsAuditEnabled: IsAuditEnabled with scala.Double = js.native
+      /* 17 */ val IsCustomAttribute: IsCustomAttribute with scala.Double = js.native
+      /* 18 */ val IsCustomizable: IsCustomizable with scala.Double = js.native
+      /* 19 */ val IsManaged: IsManaged with scala.Double = js.native
+      /* 20 */ val IsPrimaryId: IsPrimaryId with scala.Double = js.native
+      /* 21 */ val IsPrimaryName: IsPrimaryName with scala.Double = js.native
+      /* 22 */ val IsRenameable: IsRenameable with scala.Double = js.native
+      /* 23 */ val IsSecured: IsSecured with scala.Double = js.native
+      /* 24 */ val IsValidForAdvancedFind: IsValidForAdvancedFind with scala.Double = js.native
+      /* 25 */ val IsValidForCreate: IsValidForCreate with scala.Double = js.native
+      /* 26 */ val IsValidForRead: IsValidForRead with scala.Double = js.native
+      /* 27 */ val IsValidForUpdate: IsValidForUpdate with scala.Double = js.native
+      /* 28 */ val LinkedAttributeId: LinkedAttributeId with scala.Double = js.native
+      /* 29 */ val LogicalName: LogicalName with scala.Double = js.native
+      /* 30 */ val MaxLength: MaxLength with scala.Double = js.native
+      /* 31 */ val MaxValue: MaxValue with scala.Double = js.native
+      /* 32 */ val MetadataId: MetadataId with scala.Double = js.native
+      /* 33 */ val MinValue: MinValue with scala.Double = js.native
+      /* 34 */ val Precision: Precision with scala.Double = js.native
+      /* 35 */ val PrecisionSource: PrecisionSource with scala.Double = js.native
+      /* 36 */ val RequiredLevel: RequiredLevel with scala.Double = js.native
+      /* 37 */ val SchemaName: SchemaName with scala.Double = js.native
+      /* 38 */ val YomiOf: YomiOf with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableAttributeMetadataProperties with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableAttributeMetadataProperties with scala.Double
           ] = js.native
     }
     
@@ -2447,60 +2447,60 @@ object SdkNs extends js.Object {
       sealed trait SchemaName
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableEntityMetadataProperties
       
-      val ActivityTypeMask: ActivityTypeMask with java.lang.String = js.native
-      val AutoCreateAccessTeams: AutoCreateAccessTeams with java.lang.String = js.native
-      val AutoRouteToOwnerQueue: AutoRouteToOwnerQueue with java.lang.String = js.native
-      val CanBeInManyToMany: CanBeInManyToMany with java.lang.String = js.native
-      val CanBePrimaryEntityInRelationship: CanBePrimaryEntityInRelationship with java.lang.String = js.native
-      val CanBeRelatedEntityInRelationship: CanBeRelatedEntityInRelationship with java.lang.String = js.native
-      val CanCreateAttributes: CanCreateAttributes with java.lang.String = js.native
-      val CanCreateCharts: CanCreateCharts with java.lang.String = js.native
-      val CanCreateForms: CanCreateForms with java.lang.String = js.native
-      val CanCreateViews: CanCreateViews with java.lang.String = js.native
-      val CanModifyAdditionalSettings: CanModifyAdditionalSettings with java.lang.String = js.native
-      val CanTriggerWorkflow: CanTriggerWorkflow with java.lang.String = js.native
-      val IconLargeName: IconLargeName with java.lang.String = js.native
-      val IconMediumName: IconMediumName with java.lang.String = js.native
-      val IconSmallName: IconSmallName with java.lang.String = js.native
-      val IntroducedVersion: IntroducedVersion with java.lang.String = js.native
-      val IsAIRUpdated: IsAIRUpdated with java.lang.String = js.native
-      val IsActivity: IsActivity with java.lang.String = js.native
-      val IsActivityParty: IsActivityParty with java.lang.String = js.native
-      val IsAuditEnabled: IsAuditEnabled with java.lang.String = js.native
-      val IsAvailableOffline: IsAvailableOffline with java.lang.String = js.native
-      val IsBusinessProcessEnabled: IsBusinessProcessEnabled with java.lang.String = js.native
-      val IsChildEntity: IsChildEntity with java.lang.String = js.native
-      val IsConnectionsEnabled: IsConnectionsEnabled with java.lang.String = js.native
-      val IsCustomEntity: IsCustomEntity with java.lang.String = js.native
-      val IsCustomizable: IsCustomizable with java.lang.String = js.native
-      val IsDocumentManagementEnabled: IsDocumentManagementEnabled with java.lang.String = js.native
-      val IsDuplicateDetectionEnabled: IsDuplicateDetectionEnabled with java.lang.String = js.native
-      val IsEnabledForCharts: IsEnabledForCharts with java.lang.String = js.native
-      val IsImportable: IsImportable with java.lang.String = js.native
-      val IsIntersect: IsIntersect with java.lang.String = js.native
-      val IsMailMergeEnabled: IsMailMergeEnabled with java.lang.String = js.native
-      val IsManaged: IsManaged with java.lang.String = js.native
-      val IsMappable: IsMappable with java.lang.String = js.native
-      val IsQuickCreateEnabled: IsQuickCreateEnabled with java.lang.String = js.native
-      val IsReadingPaneEnabled: IsReadingPaneEnabled with java.lang.String = js.native
-      val IsRenameable: IsRenameable with java.lang.String = js.native
-      val IsValidForAdvancedFind: IsValidForAdvancedFind with java.lang.String = js.native
-      val IsValidForQueue: IsValidForQueue with java.lang.String = js.native
-      val IsVisibleInMobile: IsVisibleInMobile with java.lang.String = js.native
-      val IsVisibleInMobileClient: IsVisibleInMobileClient with java.lang.String = js.native
-      val LogicalName: LogicalName with java.lang.String = js.native
-      val MetadataId: MetadataId with java.lang.String = js.native
-      val ObjectTypeCode: ObjectTypeCode with java.lang.String = js.native
-      val OwnershipType: OwnershipType with java.lang.String = js.native
-      val PrimaryIdAttribute: PrimaryIdAttribute with java.lang.String = js.native
-      val PrimaryImageAttribute: PrimaryImageAttribute with java.lang.String = js.native
-      val PrimaryNameAttribute: PrimaryNameAttribute with java.lang.String = js.native
-      val RecurrenceBaseEntityLogicalName: RecurrenceBaseEntityLogicalName with java.lang.String = js.native
-      val ReportViewName: ReportViewName with java.lang.String = js.native
-      val SchemaName: SchemaName with java.lang.String = js.native
+      /* 0 */ val ActivityTypeMask: ActivityTypeMask with scala.Double = js.native
+      /* 1 */ val AutoCreateAccessTeams: AutoCreateAccessTeams with scala.Double = js.native
+      /* 2 */ val AutoRouteToOwnerQueue: AutoRouteToOwnerQueue with scala.Double = js.native
+      /* 3 */ val CanBeInManyToMany: CanBeInManyToMany with scala.Double = js.native
+      /* 4 */ val CanBePrimaryEntityInRelationship: CanBePrimaryEntityInRelationship with scala.Double = js.native
+      /* 5 */ val CanBeRelatedEntityInRelationship: CanBeRelatedEntityInRelationship with scala.Double = js.native
+      /* 6 */ val CanCreateAttributes: CanCreateAttributes with scala.Double = js.native
+      /* 7 */ val CanCreateCharts: CanCreateCharts with scala.Double = js.native
+      /* 8 */ val CanCreateForms: CanCreateForms with scala.Double = js.native
+      /* 9 */ val CanCreateViews: CanCreateViews with scala.Double = js.native
+      /* 10 */ val CanModifyAdditionalSettings: CanModifyAdditionalSettings with scala.Double = js.native
+      /* 11 */ val CanTriggerWorkflow: CanTriggerWorkflow with scala.Double = js.native
+      /* 12 */ val IconLargeName: IconLargeName with scala.Double = js.native
+      /* 13 */ val IconMediumName: IconMediumName with scala.Double = js.native
+      /* 14 */ val IconSmallName: IconSmallName with scala.Double = js.native
+      /* 15 */ val IntroducedVersion: IntroducedVersion with scala.Double = js.native
+      /* 18 */ val IsAIRUpdated: IsAIRUpdated with scala.Double = js.native
+      /* 16 */ val IsActivity: IsActivity with scala.Double = js.native
+      /* 17 */ val IsActivityParty: IsActivityParty with scala.Double = js.native
+      /* 19 */ val IsAuditEnabled: IsAuditEnabled with scala.Double = js.native
+      /* 20 */ val IsAvailableOffline: IsAvailableOffline with scala.Double = js.native
+      /* 21 */ val IsBusinessProcessEnabled: IsBusinessProcessEnabled with scala.Double = js.native
+      /* 22 */ val IsChildEntity: IsChildEntity with scala.Double = js.native
+      /* 23 */ val IsConnectionsEnabled: IsConnectionsEnabled with scala.Double = js.native
+      /* 24 */ val IsCustomEntity: IsCustomEntity with scala.Double = js.native
+      /* 25 */ val IsCustomizable: IsCustomizable with scala.Double = js.native
+      /* 26 */ val IsDocumentManagementEnabled: IsDocumentManagementEnabled with scala.Double = js.native
+      /* 27 */ val IsDuplicateDetectionEnabled: IsDuplicateDetectionEnabled with scala.Double = js.native
+      /* 28 */ val IsEnabledForCharts: IsEnabledForCharts with scala.Double = js.native
+      /* 29 */ val IsImportable: IsImportable with scala.Double = js.native
+      /* 30 */ val IsIntersect: IsIntersect with scala.Double = js.native
+      /* 31 */ val IsMailMergeEnabled: IsMailMergeEnabled with scala.Double = js.native
+      /* 32 */ val IsManaged: IsManaged with scala.Double = js.native
+      /* 33 */ val IsMappable: IsMappable with scala.Double = js.native
+      /* 34 */ val IsQuickCreateEnabled: IsQuickCreateEnabled with scala.Double = js.native
+      /* 35 */ val IsReadingPaneEnabled: IsReadingPaneEnabled with scala.Double = js.native
+      /* 36 */ val IsRenameable: IsRenameable with scala.Double = js.native
+      /* 37 */ val IsValidForAdvancedFind: IsValidForAdvancedFind with scala.Double = js.native
+      /* 38 */ val IsValidForQueue: IsValidForQueue with scala.Double = js.native
+      /* 39 */ val IsVisibleInMobile: IsVisibleInMobile with scala.Double = js.native
+      /* 40 */ val IsVisibleInMobileClient: IsVisibleInMobileClient with scala.Double = js.native
+      /* 41 */ val LogicalName: LogicalName with scala.Double = js.native
+      /* 42 */ val MetadataId: MetadataId with scala.Double = js.native
+      /* 43 */ val ObjectTypeCode: ObjectTypeCode with scala.Double = js.native
+      /* 44 */ val OwnershipType: OwnershipType with scala.Double = js.native
+      /* 45 */ val PrimaryIdAttribute: PrimaryIdAttribute with scala.Double = js.native
+      /* 46 */ val PrimaryImageAttribute: PrimaryImageAttribute with scala.Double = js.native
+      /* 47 */ val PrimaryNameAttribute: PrimaryNameAttribute with scala.Double = js.native
+      /* 48 */ val RecurrenceBaseEntityLogicalName: RecurrenceBaseEntityLogicalName with scala.Double = js.native
+      /* 49 */ val ReportViewName: ReportViewName with scala.Double = js.native
+      /* 50 */ val SchemaName: SchemaName with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableEntityMetadataProperties with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableEntityMetadataProperties with scala.Double
           ] = js.native
     }
     
@@ -2582,28 +2582,28 @@ object SdkNs extends js.Object {
       sealed trait SecurityTypes
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableRelationshipMetadataProperties
       
-      val Entity1IntersectAttribute: Entity1IntersectAttribute with java.lang.String = js.native
-      val Entity1LogicalName: Entity1LogicalName with java.lang.String = js.native
-      val Entity2IntersectAttribute: Entity2IntersectAttribute with java.lang.String = js.native
-      val Entity2LogicalName: Entity2LogicalName with java.lang.String = js.native
-      val HasChanged: HasChanged with java.lang.String = js.native
-      val IntersectEntityName: IntersectEntityName with java.lang.String = js.native
-      val IntroducedVersion: IntroducedVersion with java.lang.String = js.native
-      val IsCustomRelationship: IsCustomRelationship with java.lang.String = js.native
-      val IsCustomizable: IsCustomizable with java.lang.String = js.native
-      val IsManaged: IsManaged with java.lang.String = js.native
-      val IsValidForAdvancedFind: IsValidForAdvancedFind with java.lang.String = js.native
-      val MetadataId: MetadataId with java.lang.String = js.native
-      val ReferencedAttribute: ReferencedAttribute with java.lang.String = js.native
-      val ReferencedEntity: ReferencedEntity with java.lang.String = js.native
-      val ReferencingAttribute: ReferencingAttribute with java.lang.String = js.native
-      val ReferencingEntity: ReferencingEntity with java.lang.String = js.native
-      val RelationshipType: RelationshipType with java.lang.String = js.native
-      val SchemaName: SchemaName with java.lang.String = js.native
-      val SecurityTypes: SecurityTypes with java.lang.String = js.native
+      /* 1 */ val Entity1IntersectAttribute: Entity1IntersectAttribute with scala.Double = js.native
+      /* 2 */ val Entity1LogicalName: Entity1LogicalName with scala.Double = js.native
+      /* 3 */ val Entity2IntersectAttribute: Entity2IntersectAttribute with scala.Double = js.native
+      /* 4 */ val Entity2LogicalName: Entity2LogicalName with scala.Double = js.native
+      /* 0 */ val HasChanged: HasChanged with scala.Double = js.native
+      /* 5 */ val IntersectEntityName: IntersectEntityName with scala.Double = js.native
+      /* 7 */ val IntroducedVersion: IntroducedVersion with scala.Double = js.native
+      /* 8 */ val IsCustomRelationship: IsCustomRelationship with scala.Double = js.native
+      /* 6 */ val IsCustomizable: IsCustomizable with scala.Double = js.native
+      /* 9 */ val IsManaged: IsManaged with scala.Double = js.native
+      /* 10 */ val IsValidForAdvancedFind: IsValidForAdvancedFind with scala.Double = js.native
+      /* 11 */ val MetadataId: MetadataId with scala.Double = js.native
+      /* 12 */ val ReferencedAttribute: ReferencedAttribute with scala.Double = js.native
+      /* 13 */ val ReferencedEntity: ReferencedEntity with scala.Double = js.native
+      /* 14 */ val ReferencingAttribute: ReferencingAttribute with scala.Double = js.native
+      /* 15 */ val ReferencingEntity: ReferencingEntity with scala.Double = js.native
+      /* 16 */ val RelationshipType: RelationshipType with scala.Double = js.native
+      /* 17 */ val SchemaName: SchemaName with scala.Double = js.native
+      /* 18 */ val SecurityTypes: SecurityTypes with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableRelationshipMetadataProperties with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SearchableRelationshipMetadataProperties with scala.Double
           ] = js.native
     }
     
@@ -2652,13 +2652,13 @@ object SdkNs extends js.Object {
         sealed trait SystemRequired
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.AttributeRequiredLevel
         
-        val ApplicationRequired: ApplicationRequired with java.lang.String = js.native
-        val None: None with java.lang.String = js.native
-        val Recommended: Recommended with java.lang.String = js.native
-        val SystemRequired: SystemRequired with java.lang.String = js.native
+        /* 0 */ val ApplicationRequired: ApplicationRequired with scala.Double = js.native
+        /* 1 */ val None: None with scala.Double = js.native
+        /* 2 */ val Recommended: Recommended with scala.Double = js.native
+        /* 3 */ val SystemRequired: SystemRequired with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.AttributeRequiredLevel with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.AttributeRequiredLevel with scala.Double
               ] = js.native
       }
       
@@ -2748,30 +2748,30 @@ object SdkNs extends js.Object {
         sealed trait Virtual
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.AttributeTypeCode
         
-        val BigInt: BigInt with java.lang.String = js.native
-        val Boolean: Boolean with java.lang.String = js.native
-        val CalendarRules: CalendarRules with java.lang.String = js.native
-        val Customer: Customer with java.lang.String = js.native
-        val DateTime: DateTime with java.lang.String = js.native
-        val Decimal: Decimal with java.lang.String = js.native
-        val Double: Double with java.lang.String = js.native
-        val EntityName: EntityName with java.lang.String = js.native
-        val Integer: Integer with java.lang.String = js.native
-        val Lookup: Lookup with java.lang.String = js.native
-        val ManagedProperty: ManagedProperty with java.lang.String = js.native
-        val Memo: Memo with java.lang.String = js.native
-        val Money: Money with java.lang.String = js.native
-        val Owner: Owner with java.lang.String = js.native
-        val PartyList: PartyList with java.lang.String = js.native
-        val Picklist: Picklist with java.lang.String = js.native
-        val State: State with java.lang.String = js.native
-        val Status: Status with java.lang.String = js.native
-        val String: String with java.lang.String = js.native
-        val Uniqueidentifier: Uniqueidentifier with java.lang.String = js.native
-        val Virtual: Virtual with java.lang.String = js.native
+        /* 0 */ val BigInt: BigInt with scala.Double = js.native
+        /* 1 */ val Boolean: Boolean with scala.Double = js.native
+        /* 2 */ val CalendarRules: CalendarRules with scala.Double = js.native
+        /* 3 */ val Customer: Customer with scala.Double = js.native
+        /* 4 */ val DateTime: DateTime with scala.Double = js.native
+        /* 5 */ val Decimal: Decimal with scala.Double = js.native
+        /* 6 */ val Double: Double with scala.Double = js.native
+        /* 7 */ val EntityName: EntityName with scala.Double = js.native
+        /* 8 */ val Integer: Integer with scala.Double = js.native
+        /* 9 */ val Lookup: Lookup with scala.Double = js.native
+        /* 10 */ val ManagedProperty: ManagedProperty with scala.Double = js.native
+        /* 11 */ val Memo: Memo with scala.Double = js.native
+        /* 12 */ val Money: Money with scala.Double = js.native
+        /* 13 */ val Owner: Owner with scala.Double = js.native
+        /* 14 */ val PartyList: PartyList with scala.Double = js.native
+        /* 15 */ val Picklist: Picklist with scala.Double = js.native
+        /* 16 */ val State: State with scala.Double = js.native
+        /* 17 */ val Status: Status with scala.Double = js.native
+        /* 18 */ val String: String with scala.Double = js.native
+        /* 19 */ val Uniqueidentifier: Uniqueidentifier with scala.Double = js.native
+        /* 20 */ val Virtual: Virtual with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.AttributeTypeCode with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.AttributeTypeCode with scala.Double
               ] = js.native
       }
       
@@ -2785,11 +2785,11 @@ object SdkNs extends js.Object {
         sealed trait DateOnly
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.DateTimeFormat
         
-        val DateAndTime: DateAndTime with java.lang.String = js.native
-        val DateOnly: DateOnly with java.lang.String = js.native
+        /* 0 */ val DateAndTime: DateAndTime with scala.Double = js.native
+        /* 1 */ val DateOnly: DateOnly with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.DateTimeFormat with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.DateTimeFormat with scala.Double
               ] = js.native
       }
       
@@ -2811,13 +2811,13 @@ object SdkNs extends js.Object {
         sealed trait Inactive
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.ImeMode
         
-        val Active: Active with java.lang.String = js.native
-        val Auto: Auto with java.lang.String = js.native
-        val Disabled: Disabled with java.lang.String = js.native
-        val Inactive: Inactive with java.lang.String = js.native
+        /* 0 */ val Active: Active with scala.Double = js.native
+        /* 1 */ val Auto: Auto with scala.Double = js.native
+        /* 2 */ val Disabled: Disabled with scala.Double = js.native
+        /* 3 */ val Inactive: Inactive with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.ImeMode with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.ImeMode with scala.Double
               ] = js.native
       }
       
@@ -2843,14 +2843,14 @@ object SdkNs extends js.Object {
         sealed trait TimeZone
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.IntegerFormat
         
-        val Duration: Duration with java.lang.String = js.native
-        val Language: Language with java.lang.String = js.native
-        val Locale: Locale with java.lang.String = js.native
-        val None: None with java.lang.String = js.native
-        val TimeZone: TimeZone with java.lang.String = js.native
+        /* 0 */ val Duration: Duration with scala.Double = js.native
+        /* 1 */ val Language: Language with scala.Double = js.native
+        /* 2 */ val Locale: Locale with scala.Double = js.native
+        /* 3 */ val None: None with scala.Double = js.native
+        /* 4 */ val TimeZone: TimeZone with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.IntegerFormat with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.IntegerFormat with scala.Double
               ] = js.native
       }
       
@@ -2872,13 +2872,13 @@ object SdkNs extends js.Object {
         sealed trait UserOwned
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.OwnershipType
         
-        val None: None with java.lang.String = js.native
-        val OrganizationOwned: OrganizationOwned with java.lang.String = js.native
-        val TeamOwned: TeamOwned with java.lang.String = js.native
-        val UserOwned: UserOwned with java.lang.String = js.native
+        /* 0 */ val None: None with scala.Double = js.native
+        /* 1 */ val OrganizationOwned: OrganizationOwned with scala.Double = js.native
+        /* 2 */ val TeamOwned: TeamOwned with scala.Double = js.native
+        /* 3 */ val UserOwned: UserOwned with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.OwnershipType with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.OwnershipType with scala.Double
               ] = js.native
       }
       
@@ -2904,14 +2904,14 @@ object SdkNs extends js.Object {
         sealed trait Pointer
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.SecurityTypes
         
-        val Append: Append with java.lang.String = js.native
-        val Inheritance: Inheritance with java.lang.String = js.native
-        val None: None with java.lang.String = js.native
-        val ParentChild: ParentChild with java.lang.String = js.native
-        val Pointer: Pointer with java.lang.String = js.native
+        /* 0 */ val Append: Append with scala.Double = js.native
+        /* 1 */ val Inheritance: Inheritance with scala.Double = js.native
+        /* 2 */ val None: None with scala.Double = js.native
+        /* 3 */ val ParentChild: ParentChild with scala.Double = js.native
+        /* 4 */ val Pointer: Pointer with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.SecurityTypes with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.SecurityTypes with scala.Double
               ] = js.native
       }
       
@@ -2945,16 +2945,16 @@ object SdkNs extends js.Object {
         sealed trait VersionNumber
           extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.StringFormat
         
-        val Email: Email with java.lang.String = js.native
-        val PhoneticGuide: PhoneticGuide with java.lang.String = js.native
-        val Text: Text with java.lang.String = js.native
-        val TextArea: TextArea with java.lang.String = js.native
-        val TickerSymbol: TickerSymbol with java.lang.String = js.native
-        val Url: Url with java.lang.String = js.native
-        val VersionNumber: VersionNumber with java.lang.String = js.native
+        /* 0 */ val Email: Email with scala.Double = js.native
+        /* 1 */ val PhoneticGuide: PhoneticGuide with scala.Double = js.native
+        /* 2 */ val Text: Text with scala.Double = js.native
+        /* 3 */ val TextArea: TextArea with scala.Double = js.native
+        /* 4 */ val TickerSymbol: TickerSymbol with scala.Double = js.native
+        /* 5 */ val Url: Url with scala.Double = js.native
+        /* 6 */ val VersionNumber: VersionNumber with scala.Double = js.native
         @JSBracketAccess
-        def apply(value: java.lang.String): js.UndefOr[
-                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.StringFormat with java.lang.String
+        def apply(value: scala.Double): js.UndefOr[
+                microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.ValueEnumsNs.StringFormat with scala.Double
               ] = js.native
       }
       
@@ -4171,82 +4171,82 @@ object SdkNs extends js.Object {
       sealed trait Yesterday
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.ConditionOperator
       
-      val BeginsWith: BeginsWith with java.lang.String = js.native
-      val Between: Between with java.lang.String = js.native
-      val Contains: Contains with java.lang.String = js.native
-      val DoesNotBeginWith: DoesNotBeginWith with java.lang.String = js.native
-      val DoesNotContain: DoesNotContain with java.lang.String = js.native
-      val DoesNotEndWith: DoesNotEndWith with java.lang.String = js.native
-      val EndsWith: EndsWith with java.lang.String = js.native
-      val Equal: Equal with java.lang.String = js.native
-      val EqualBusinessId: EqualBusinessId with java.lang.String = js.native
-      val EqualUserId: EqualUserId with java.lang.String = js.native
-      val EqualUserLanguage: EqualUserLanguage with java.lang.String = js.native
-      val EqualUserOrUserTeams: EqualUserOrUserTeams with java.lang.String = js.native
-      val EqualUserTeams: EqualUserTeams with java.lang.String = js.native
-      val GreaterEqual: GreaterEqual with java.lang.String = js.native
-      val GreaterThan: GreaterThan with java.lang.String = js.native
-      val In: In with java.lang.String = js.native
-      val InFiscalPeriod: InFiscalPeriod with java.lang.String = js.native
-      val InFiscalPeriodAndYear: InFiscalPeriodAndYear with java.lang.String = js.native
-      val InFiscalYear: InFiscalYear with java.lang.String = js.native
-      val InOrAfterFiscalPeriodAndYear: InOrAfterFiscalPeriodAndYear with java.lang.String = js.native
-      val InOrBeforeFiscalPeriodAndYear: InOrBeforeFiscalPeriodAndYear with java.lang.String = js.native
-      val Last7Days: Last7Days with java.lang.String = js.native
-      val LastFiscalPeriod: LastFiscalPeriod with java.lang.String = js.native
-      val LastFiscalYear: LastFiscalYear with java.lang.String = js.native
-      val LastMonth: LastMonth with java.lang.String = js.native
-      val LastWeek: LastWeek with java.lang.String = js.native
-      val LastXDays: LastXDays with java.lang.String = js.native
-      val LastXFiscalPeriods: LastXFiscalPeriods with java.lang.String = js.native
-      val LastXFiscalYears: LastXFiscalYears with java.lang.String = js.native
-      val LastXHours: LastXHours with java.lang.String = js.native
-      val LastXMonths: LastXMonths with java.lang.String = js.native
-      val LastXWeeks: LastXWeeks with java.lang.String = js.native
-      val LastXYears: LastXYears with java.lang.String = js.native
-      val LastYear: LastYear with java.lang.String = js.native
-      val LessEqual: LessEqual with java.lang.String = js.native
-      val LessThan: LessThan with java.lang.String = js.native
-      val Like: Like with java.lang.String = js.native
-      val Mask: Mask with java.lang.String = js.native
-      val Next7Days: Next7Days with java.lang.String = js.native
-      val NextFiscalPeriod: NextFiscalPeriod with java.lang.String = js.native
-      val NextFiscalYear: NextFiscalYear with java.lang.String = js.native
-      val NextMonth: NextMonth with java.lang.String = js.native
-      val NextWeek: NextWeek with java.lang.String = js.native
-      val NextXDays: NextXDays with java.lang.String = js.native
-      val NextXFiscalPeriods: NextXFiscalPeriods with java.lang.String = js.native
-      val NextXFiscalYears: NextXFiscalYears with java.lang.String = js.native
-      val NextXHours: NextXHours with java.lang.String = js.native
-      val NextXMonths: NextXMonths with java.lang.String = js.native
-      val NextXWeeks: NextXWeeks with java.lang.String = js.native
-      val NextXYears: NextXYears with java.lang.String = js.native
-      val NextYear: NextYear with java.lang.String = js.native
-      val NotBetween: NotBetween with java.lang.String = js.native
-      val NotEqual: NotEqual with java.lang.String = js.native
-      val NotEqualBusinessId: NotEqualBusinessId with java.lang.String = js.native
-      val NotEqualUserId: NotEqualUserId with java.lang.String = js.native
-      val NotIn: NotIn with java.lang.String = js.native
-      val NotLike: NotLike with java.lang.String = js.native
-      val NotMask: NotMask with java.lang.String = js.native
-      val NotNull: NotNull with java.lang.String = js.native
-      val NotOn: NotOn with java.lang.String = js.native
-      val Null: Null with java.lang.String = js.native
-      val OlderThanXMonths: OlderThanXMonths with java.lang.String = js.native
-      val On: On with java.lang.String = js.native
-      val OnOrAfter: OnOrAfter with java.lang.String = js.native
-      val OnOrBefore: OnOrBefore with java.lang.String = js.native
-      val ThisFiscalPeriod: ThisFiscalPeriod with java.lang.String = js.native
-      val ThisFiscalYear: ThisFiscalYear with java.lang.String = js.native
-      val ThisMonth: ThisMonth with java.lang.String = js.native
-      val ThisWeek: ThisWeek with java.lang.String = js.native
-      val ThisYear: ThisYear with java.lang.String = js.native
-      val Today: Today with java.lang.String = js.native
-      val Tomorrow: Tomorrow with java.lang.String = js.native
-      val Yesterday: Yesterday with java.lang.String = js.native
+      /* 52 */ val BeginsWith: BeginsWith with scala.Double = js.native
+      /* 10 */ val Between: Between with scala.Double = js.native
+      /* 47 */ val Contains: Contains with scala.Double = js.native
+      /* 53 */ val DoesNotBeginWith: DoesNotBeginWith with scala.Double = js.native
+      /* 48 */ val DoesNotContain: DoesNotContain with scala.Double = js.native
+      /* 55 */ val DoesNotEndWith: DoesNotEndWith with scala.Double = js.native
+      /* 54 */ val EndsWith: EndsWith with scala.Double = js.native
+      /* 0 */ val Equal: Equal with scala.Double = js.native
+      /* 43 */ val EqualBusinessId: EqualBusinessId with scala.Double = js.native
+      /* 41 */ val EqualUserId: EqualUserId with scala.Double = js.native
+      /* 49 */ val EqualUserLanguage: EqualUserLanguage with scala.Double = js.native
+      /* 71 */ val EqualUserOrUserTeams: EqualUserOrUserTeams with scala.Double = js.native
+      /* 72 */ val EqualUserTeams: EqualUserTeams with scala.Double = js.native
+      /* 4 */ val GreaterEqual: GreaterEqual with scala.Double = js.native
+      /* 2 */ val GreaterThan: GreaterThan with scala.Double = js.native
+      /* 8 */ val In: In with scala.Double = js.native
+      /* 67 */ val InFiscalPeriod: InFiscalPeriod with scala.Double = js.native
+      /* 68 */ val InFiscalPeriodAndYear: InFiscalPeriodAndYear with scala.Double = js.native
+      /* 66 */ val InFiscalYear: InFiscalYear with scala.Double = js.native
+      /* 70 */ val InOrAfterFiscalPeriodAndYear: InOrAfterFiscalPeriodAndYear with scala.Double = js.native
+      /* 69 */ val InOrBeforeFiscalPeriodAndYear: InOrBeforeFiscalPeriodAndYear with scala.Double = js.native
+      /* 17 */ val Last7Days: Last7Days with scala.Double = js.native
+      /* 61 */ val LastFiscalPeriod: LastFiscalPeriod with scala.Double = js.native
+      /* 60 */ val LastFiscalYear: LastFiscalYear with scala.Double = js.native
+      /* 22 */ val LastMonth: LastMonth with scala.Double = js.native
+      /* 19 */ val LastWeek: LastWeek with scala.Double = js.native
+      /* 33 */ val LastXDays: LastXDays with scala.Double = js.native
+      /* 63 */ val LastXFiscalPeriods: LastXFiscalPeriods with scala.Double = js.native
+      /* 62 */ val LastXFiscalYears: LastXFiscalYears with scala.Double = js.native
+      /* 31 */ val LastXHours: LastXHours with scala.Double = js.native
+      /* 37 */ val LastXMonths: LastXMonths with scala.Double = js.native
+      /* 35 */ val LastXWeeks: LastXWeeks with scala.Double = js.native
+      /* 39 */ val LastXYears: LastXYears with scala.Double = js.native
+      /* 28 */ val LastYear: LastYear with scala.Double = js.native
+      /* 5 */ val LessEqual: LessEqual with scala.Double = js.native
+      /* 3 */ val LessThan: LessThan with scala.Double = js.native
+      /* 6 */ val Like: Like with scala.Double = js.native
+      /* 45 */ val Mask: Mask with scala.Double = js.native
+      /* 18 */ val Next7Days: Next7Days with scala.Double = js.native
+      /* 59 */ val NextFiscalPeriod: NextFiscalPeriod with scala.Double = js.native
+      /* 58 */ val NextFiscalYear: NextFiscalYear with scala.Double = js.native
+      /* 24 */ val NextMonth: NextMonth with scala.Double = js.native
+      /* 21 */ val NextWeek: NextWeek with scala.Double = js.native
+      /* 34 */ val NextXDays: NextXDays with scala.Double = js.native
+      /* 65 */ val NextXFiscalPeriods: NextXFiscalPeriods with scala.Double = js.native
+      /* 64 */ val NextXFiscalYears: NextXFiscalYears with scala.Double = js.native
+      /* 32 */ val NextXHours: NextXHours with scala.Double = js.native
+      /* 38 */ val NextXMonths: NextXMonths with scala.Double = js.native
+      /* 36 */ val NextXWeeks: NextXWeeks with scala.Double = js.native
+      /* 40 */ val NextXYears: NextXYears with scala.Double = js.native
+      /* 30 */ val NextYear: NextYear with scala.Double = js.native
+      /* 11 */ val NotBetween: NotBetween with scala.Double = js.native
+      /* 1 */ val NotEqual: NotEqual with scala.Double = js.native
+      /* 44 */ val NotEqualBusinessId: NotEqualBusinessId with scala.Double = js.native
+      /* 42 */ val NotEqualUserId: NotEqualUserId with scala.Double = js.native
+      /* 9 */ val NotIn: NotIn with scala.Double = js.native
+      /* 7 */ val NotLike: NotLike with scala.Double = js.native
+      /* 46 */ val NotMask: NotMask with scala.Double = js.native
+      /* 13 */ val NotNull: NotNull with scala.Double = js.native
+      /* 50 */ val NotOn: NotOn with scala.Double = js.native
+      /* 12 */ val Null: Null with scala.Double = js.native
+      /* 51 */ val OlderThanXMonths: OlderThanXMonths with scala.Double = js.native
+      /* 25 */ val On: On with scala.Double = js.native
+      /* 27 */ val OnOrAfter: OnOrAfter with scala.Double = js.native
+      /* 26 */ val OnOrBefore: OnOrBefore with scala.Double = js.native
+      /* 57 */ val ThisFiscalPeriod: ThisFiscalPeriod with scala.Double = js.native
+      /* 56 */ val ThisFiscalYear: ThisFiscalYear with scala.Double = js.native
+      /* 23 */ val ThisMonth: ThisMonth with scala.Double = js.native
+      /* 20 */ val ThisWeek: ThisWeek with scala.Double = js.native
+      /* 29 */ val ThisYear: ThisYear with scala.Double = js.native
+      /* 15 */ val Today: Today with scala.Double = js.native
+      /* 16 */ val Tomorrow: Tomorrow with scala.Double = js.native
+      /* 14 */ val Yesterday: Yesterday with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.ConditionOperator with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.ConditionOperator with scala.Double
           ] = js.native
     }
     
@@ -4264,12 +4264,12 @@ object SdkNs extends js.Object {
       sealed trait Natural
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.JoinOperator
       
-      val Inner: Inner with java.lang.String = js.native
-      val LeftOuter: LeftOuter with java.lang.String = js.native
-      val Natural: Natural with java.lang.String = js.native
+      /* 0 */ val Inner: Inner with scala.Double = js.native
+      /* 1 */ val LeftOuter: LeftOuter with scala.Double = js.native
+      /* 2 */ val Natural: Natural with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.JoinOperator with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.JoinOperator with scala.Double
           ] = js.native
     }
     
@@ -4283,11 +4283,11 @@ object SdkNs extends js.Object {
       sealed trait Or
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.LogicalOperator
       
-      val And: And with java.lang.String = js.native
-      val Or: Or with java.lang.String = js.native
+      /* 1 */ val And: And with scala.Double = js.native
+      /* 0 */ val Or: Or with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.LogicalOperator with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.LogicalOperator with scala.Double
           ] = js.native
     }
     
@@ -4301,11 +4301,11 @@ object SdkNs extends js.Object {
       sealed trait Descending
         extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.OrderType
       
-      val Ascending: Ascending with java.lang.String = js.native
-      val Descending: Descending with java.lang.String = js.native
+      /* 0 */ val Ascending: Ascending with scala.Double = js.native
+      /* 1 */ val Descending: Descending with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.OrderType with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.OrderType with scala.Double
           ] = js.native
     }
     

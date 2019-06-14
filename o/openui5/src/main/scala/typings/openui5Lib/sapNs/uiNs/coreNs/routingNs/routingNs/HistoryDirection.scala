@@ -27,13 +27,13 @@ object HistoryDirection extends js.Object {
   sealed trait Unknown
     extends openui5Lib.sapNs.uiNs.coreNs.routingNs.routingNs.HistoryDirection
   
-  val Backwards: Backwards with java.lang.String = js.native
-  val Forwards: Forwards with java.lang.String = js.native
-  val NewEntry: NewEntry with java.lang.String = js.native
-  val Unknown: Unknown with java.lang.String = js.native
+  /* 0 */ val Backwards: Backwards with scala.Double = js.native
+  /* 1 */ val Forwards: Forwards with scala.Double = js.native
+  /* 2 */ val NewEntry: NewEntry with scala.Double = js.native
+  /* 3 */ val Unknown: Unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    openui5Lib.sapNs.uiNs.coreNs.routingNs.routingNs.HistoryDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    openui5Lib.sapNs.uiNs.coreNs.routingNs.routingNs.HistoryDirection with scala.Double
   ] = js.native
 }
 

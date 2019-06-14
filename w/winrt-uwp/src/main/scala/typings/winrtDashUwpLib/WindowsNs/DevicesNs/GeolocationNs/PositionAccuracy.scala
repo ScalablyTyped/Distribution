@@ -22,11 +22,11 @@ object PositionAccuracy extends js.Object {
   sealed trait high
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.PositionAccuracy
   
-  val default: default with java.lang.String = js.native
-  val high: high with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val high: high with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.PositionAccuracy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.PositionAccuracy with scala.Double
   ] = js.native
 }
 

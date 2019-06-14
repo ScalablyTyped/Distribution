@@ -32,13 +32,13 @@ object PrintOptionType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.OptionDetailsNs.PrintOptionType
   
-  val itemList: itemList with java.lang.String = js.native
-  val number: number with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val itemList: itemList with scala.Double = js.native
+  /* 1 */ val number: number with scala.Double = js.native
+  /* 2 */ val text: text with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.OptionDetailsNs.PrintOptionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.OptionDetailsNs.PrintOptionType with scala.Double
   ] = js.native
 }
 

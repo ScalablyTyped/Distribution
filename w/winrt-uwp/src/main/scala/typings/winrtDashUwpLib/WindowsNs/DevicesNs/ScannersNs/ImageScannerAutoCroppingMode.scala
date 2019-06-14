@@ -27,12 +27,12 @@ object ImageScannerAutoCroppingMode extends js.Object {
   sealed trait singleRegion
     extends winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerAutoCroppingMode
   
-  val disabled: disabled with java.lang.String = js.native
-  val multipleRegion: multipleRegion with java.lang.String = js.native
-  val singleRegion: singleRegion with java.lang.String = js.native
+  /* 0 */ val disabled: disabled with scala.Double = js.native
+  /* 2 */ val multipleRegion: multipleRegion with scala.Double = js.native
+  /* 1 */ val singleRegion: singleRegion with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerAutoCroppingMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerAutoCroppingMode with scala.Double
   ] = js.native
 }
 

@@ -26,10 +26,10 @@ object GeoXmlCompressedFormat extends js.Object {
   sealed trait blob
     extends bingmapsLib.MicrosoftNs.MapsNs.GeoXmlCompressedFormat
   
-  val arrayBuffer: arrayBuffer with java.lang.String = js.native
-  val base64: base64 with java.lang.String = js.native
-  val blob: blob with java.lang.String = js.native
+  /* 2 */ val arrayBuffer: arrayBuffer with scala.Double = js.native
+  /* 0 */ val base64: base64 with scala.Double = js.native
+  /* 1 */ val blob: blob with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.GeoXmlCompressedFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.GeoXmlCompressedFormat with scala.Double] = js.native
 }
 

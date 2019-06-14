@@ -47,18 +47,18 @@ object PageElementType extends js.Object {
   sealed trait WORD_ART
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PageElementType
   
-  val GROUP: GROUP with java.lang.String = js.native
-  val IMAGE: IMAGE with java.lang.String = js.native
-  val LINE: LINE with java.lang.String = js.native
-  val SHAPE: SHAPE with java.lang.String = js.native
-  val SHEETS_CHART: SHEETS_CHART with java.lang.String = js.native
-  val TABLE: TABLE with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
-  val VIDEO: VIDEO with java.lang.String = js.native
-  val WORD_ART: WORD_ART with java.lang.String = js.native
+  /* 5 */ val GROUP: GROUP with scala.Double = js.native
+  /* 2 */ val IMAGE: IMAGE with scala.Double = js.native
+  /* 6 */ val LINE: LINE with scala.Double = js.native
+  /* 1 */ val SHAPE: SHAPE with scala.Double = js.native
+  /* 8 */ val SHEETS_CHART: SHEETS_CHART with scala.Double = js.native
+  /* 4 */ val TABLE: TABLE with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
+  /* 3 */ val VIDEO: VIDEO with scala.Double = js.native
+  /* 7 */ val WORD_ART: WORD_ART with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PageElementType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PageElementType with scala.Double
   ] = js.native
 }
 

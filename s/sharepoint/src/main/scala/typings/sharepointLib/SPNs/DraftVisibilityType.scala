@@ -23,10 +23,10 @@ object DraftVisibilityType extends js.Object {
   sealed trait reader
     extends sharepointLib.SPNs.DraftVisibilityType
   
-  val approver: approver with java.lang.String = js.native
-  val author: author with java.lang.String = js.native
-  val reader: reader with java.lang.String = js.native
+  /* 2 */ val approver: approver with scala.Double = js.native
+  /* 1 */ val author: author with scala.Double = js.native
+  /* 0 */ val reader: reader with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.DraftVisibilityType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.DraftVisibilityType with scala.Double] = js.native
 }
 

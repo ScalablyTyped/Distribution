@@ -32,13 +32,13 @@ object WiFiDirectAdvertisementPublisherStatus extends js.Object {
   sealed trait stopped
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectAdvertisementPublisherStatus
   
-  val aborted: aborted with java.lang.String = js.native
-  val created: created with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
-  val stopped: stopped with java.lang.String = js.native
+  /* 3 */ val aborted: aborted with scala.Double = js.native
+  /* 0 */ val created: created with scala.Double = js.native
+  /* 1 */ val started: started with scala.Double = js.native
+  /* 2 */ val stopped: stopped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectAdvertisementPublisherStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectAdvertisementPublisherStatus with scala.Double
   ] = js.native
 }
 

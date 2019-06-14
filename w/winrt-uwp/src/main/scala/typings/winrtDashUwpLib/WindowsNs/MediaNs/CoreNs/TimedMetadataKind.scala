@@ -42,13 +42,13 @@ object TimedMetadataKind extends js.Object {
   sealed trait subtitle
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataKind
   
-  val caption: caption with java.lang.String = js.native
-  val chapter: chapter with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val data: data with java.lang.String = js.native
-  val description: description with java.lang.String = js.native
-  val subtitle: subtitle with java.lang.String = js.native
+  /* 0 */ val caption: caption with scala.Double = js.native
+  /* 1 */ val chapter: chapter with scala.Double = js.native
+  /* 2 */ val custom: custom with scala.Double = js.native
+  /* 3 */ val data: data with scala.Double = js.native
+  /* 4 */ val description: description with scala.Double = js.native
+  /* 5 */ val subtitle: subtitle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataKind with scala.Double] = js.native
 }
 

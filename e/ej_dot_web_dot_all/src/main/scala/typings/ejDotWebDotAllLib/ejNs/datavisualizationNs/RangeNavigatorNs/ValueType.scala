@@ -21,11 +21,11 @@ object ValueType extends js.Object {
   sealed trait Numeric
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.ValueType
   
-  val DateTime: DateTime with java.lang.String = js.native
-  val Numeric: Numeric with java.lang.String = js.native
+  /* 1 */ val DateTime: DateTime with scala.Double = js.native
+  /* 0 */ val Numeric: Numeric with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.ValueType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.ValueType with scala.Double
   ] = js.native
 }
 

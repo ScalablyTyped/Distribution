@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait WdPasteOptions extends js.Object
 
+object WdPasteOptions {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdKeepSourceFormatting: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdKeepTextOnly: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdMatchDestinationFormatting: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdUseDestinationStyles: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+}
+

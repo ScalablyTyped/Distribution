@@ -27,12 +27,10 @@ object VpnDomainNameType extends js.Object {
   sealed trait suffix
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnDomainNameType
   
-  val fullyQualified: fullyQualified with java.lang.String = js.native
-  val reserved: reserved with java.lang.String = js.native
-  val suffix: suffix with java.lang.String = js.native
+  /* 1 */ val fullyQualified: fullyQualified with scala.Double = js.native
+  /* 2 */ val reserved: reserved with scala.Double = js.native
+  /* 0 */ val suffix: suffix with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnDomainNameType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnDomainNameType with scala.Double] = js.native
 }
 

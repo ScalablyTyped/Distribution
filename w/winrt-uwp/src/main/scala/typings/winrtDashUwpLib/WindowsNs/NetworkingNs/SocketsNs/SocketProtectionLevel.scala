@@ -57,18 +57,18 @@ object SocketProtectionLevel extends js.Object {
   sealed trait tls12
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketProtectionLevel
   
-  val bluetoothEncryptionAllowNullAuthentication: bluetoothEncryptionAllowNullAuthentication with java.lang.String = js.native
-  val bluetoothEncryptionWithAuthentication: bluetoothEncryptionWithAuthentication with java.lang.String = js.native
-  val plainSocket: plainSocket with java.lang.String = js.native
-  val ssl: ssl with java.lang.String = js.native
-  val ssl3AllowWeakEncryption: ssl3AllowWeakEncryption with java.lang.String = js.native
-  val sslAllowNullEncryption: sslAllowNullEncryption with java.lang.String = js.native
-  val tls10: tls10 with java.lang.String = js.native
-  val tls11: tls11 with java.lang.String = js.native
-  val tls12: tls12 with java.lang.String = js.native
+  /* 3 */ val bluetoothEncryptionAllowNullAuthentication: bluetoothEncryptionAllowNullAuthentication with scala.Double = js.native
+  /* 4 */ val bluetoothEncryptionWithAuthentication: bluetoothEncryptionWithAuthentication with scala.Double = js.native
+  /* 0 */ val plainSocket: plainSocket with scala.Double = js.native
+  /* 1 */ val ssl: ssl with scala.Double = js.native
+  /* 5 */ val ssl3AllowWeakEncryption: ssl3AllowWeakEncryption with scala.Double = js.native
+  /* 2 */ val sslAllowNullEncryption: sslAllowNullEncryption with scala.Double = js.native
+  /* 6 */ val tls10: tls10 with scala.Double = js.native
+  /* 7 */ val tls11: tls11 with scala.Double = js.native
+  /* 8 */ val tls12: tls12 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketProtectionLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketProtectionLevel with scala.Double
   ] = js.native
 }
 

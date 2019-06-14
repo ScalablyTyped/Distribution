@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdMailMergeMailFormat extends js.Object
 
+object WdMailMergeMailFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdMailFormatHTML: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdMailFormatPlainText: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

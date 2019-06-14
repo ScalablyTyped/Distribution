@@ -35,15 +35,15 @@ object SummaryPos extends js.Object {
   sealed trait TopRight
     extends reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.SummaryPos
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val BottomLeft: BottomLeft with java.lang.String = js.native
-  val BottomRight: BottomRight with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
-  val TopLeft: TopLeft with java.lang.String = js.native
-  val TopRight: TopRight with java.lang.String = js.native
+  /* 3 */ val Bottom: Bottom with scala.Double = js.native
+  /* 5 */ val BottomLeft: BottomLeft with scala.Double = js.native
+  /* 4 */ val BottomRight: BottomRight with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
+  /* 2 */ val TopLeft: TopLeft with scala.Double = js.native
+  /* 1 */ val TopRight: TopRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.SummaryPos with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.SummaryPos with scala.Double
   ] = js.native
 }
 

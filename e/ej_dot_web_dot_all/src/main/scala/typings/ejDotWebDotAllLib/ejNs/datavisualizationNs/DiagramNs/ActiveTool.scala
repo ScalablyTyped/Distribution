@@ -26,12 +26,12 @@ object ActiveTool extends js.Object {
   sealed trait None
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ActiveTool
   
-  val Drag: Drag with java.lang.String = js.native
-  val Draw: Draw with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 1 */ val Drag: Drag with scala.Double = js.native
+  /* 2 */ val Draw: Draw with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ActiveTool with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ActiveTool with scala.Double
   ] = js.native
 }
 

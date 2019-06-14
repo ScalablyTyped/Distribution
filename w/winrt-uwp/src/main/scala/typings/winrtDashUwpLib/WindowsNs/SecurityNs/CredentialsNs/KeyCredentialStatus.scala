@@ -47,16 +47,16 @@ object KeyCredentialStatus extends js.Object {
   sealed trait userPrefersPassword
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.KeyCredentialStatus
   
-  val credentialAlreadyExists: credentialAlreadyExists with java.lang.String = js.native
-  val notFound: notFound with java.lang.String = js.native
-  val securityDeviceLocked: securityDeviceLocked with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownError: unknownError with java.lang.String = js.native
-  val userCanceled: userCanceled with java.lang.String = js.native
-  val userPrefersPassword: userPrefersPassword with java.lang.String = js.native
+  /* 5 */ val credentialAlreadyExists: credentialAlreadyExists with scala.Double = js.native
+  /* 2 */ val notFound: notFound with scala.Double = js.native
+  /* 6 */ val securityDeviceLocked: securityDeviceLocked with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 1 */ val unknownError: unknownError with scala.Double = js.native
+  /* 3 */ val userCanceled: userCanceled with scala.Double = js.native
+  /* 4 */ val userPrefersPassword: userPrefersPassword with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.KeyCredentialStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.KeyCredentialStatus with scala.Double
   ] = js.native
 }
 

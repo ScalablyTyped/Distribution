@@ -37,14 +37,14 @@ object WebAccountAction extends js.Object {
   sealed trait viewDetails
     extends winrtDashUwpLib.WindowsNs.UINs.ApplicationSettingsNs.WebAccountAction
   
-  val manage: manage with java.lang.String = js.native
-  val more: more with java.lang.String = js.native
-  val reconnect: reconnect with java.lang.String = js.native
-  val remove: remove with java.lang.String = js.native
-  val viewDetails: viewDetails with java.lang.String = js.native
+  /* 3 */ val manage: manage with scala.Double = js.native
+  /* 4 */ val more: more with scala.Double = js.native
+  /* 0 */ val reconnect: reconnect with scala.Double = js.native
+  /* 1 */ val remove: remove with scala.Double = js.native
+  /* 2 */ val viewDetails: viewDetails with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ApplicationSettingsNs.WebAccountAction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ApplicationSettingsNs.WebAccountAction with scala.Double
   ] = js.native
 }
 

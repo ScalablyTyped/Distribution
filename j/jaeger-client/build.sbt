@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jaeger-client"
-version := "3.15-dt-20190528Z-c00033"
+version := "3.15-dt-20190528Z-8fcf4e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "prom-client" % "11.3.0-02371e",
+  "org.scalablytyped" %%% "prom-client" % "11.3.0-a7cbf9",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -27,12 +27,12 @@ object HttpCacheReadBehavior extends js.Object {
   sealed trait onlyFromCache
     extends winrtDashUwpLib.WindowsNs.WebNs.HttpNs.FiltersNs.HttpCacheReadBehavior
   
-  val default: default with java.lang.String = js.native
-  val mostRecent: mostRecent with java.lang.String = js.native
-  val onlyFromCache: onlyFromCache with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val mostRecent: mostRecent with scala.Double = js.native
+  /* 2 */ val onlyFromCache: onlyFromCache with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.FiltersNs.HttpCacheReadBehavior with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.FiltersNs.HttpCacheReadBehavior with scala.Double
   ] = js.native
 }
 

@@ -77,22 +77,20 @@ object UIElementType extends js.Object {
   sealed trait windowText
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIElementType
   
-  val activeCaption: activeCaption with java.lang.String = js.native
-  val background: background with java.lang.String = js.native
-  val buttonFace: buttonFace with java.lang.String = js.native
-  val buttonText: buttonText with java.lang.String = js.native
-  val captionText: captionText with java.lang.String = js.native
-  val grayText: grayText with java.lang.String = js.native
-  val highlight: highlight with java.lang.String = js.native
-  val highlightText: highlightText with java.lang.String = js.native
-  val hotlight: hotlight with java.lang.String = js.native
-  val inactiveCaption: inactiveCaption with java.lang.String = js.native
-  val inactiveCaptionText: inactiveCaptionText with java.lang.String = js.native
-  val window: window with java.lang.String = js.native
-  val windowText: windowText with java.lang.String = js.native
+  /* 0 */ val activeCaption: activeCaption with scala.Double = js.native
+  /* 1 */ val background: background with scala.Double = js.native
+  /* 2 */ val buttonFace: buttonFace with scala.Double = js.native
+  /* 3 */ val buttonText: buttonText with scala.Double = js.native
+  /* 4 */ val captionText: captionText with scala.Double = js.native
+  /* 5 */ val grayText: grayText with scala.Double = js.native
+  /* 6 */ val highlight: highlight with scala.Double = js.native
+  /* 7 */ val highlightText: highlightText with scala.Double = js.native
+  /* 8 */ val hotlight: hotlight with scala.Double = js.native
+  /* 9 */ val inactiveCaption: inactiveCaption with scala.Double = js.native
+  /* 10 */ val inactiveCaptionText: inactiveCaptionText with scala.Double = js.native
+  /* 11 */ val window: window with scala.Double = js.native
+  /* 12 */ val windowText: windowText with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIElementType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIElementType with scala.Double] = js.native
 }
 

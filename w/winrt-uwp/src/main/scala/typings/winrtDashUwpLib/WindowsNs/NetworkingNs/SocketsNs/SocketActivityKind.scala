@@ -32,13 +32,13 @@ object SocketActivityKind extends js.Object {
   sealed trait streamSocketListener
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityKind
   
-  val datagramSocket: datagramSocket with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val streamSocket: streamSocket with java.lang.String = js.native
-  val streamSocketListener: streamSocketListener with java.lang.String = js.native
+  /* 2 */ val datagramSocket: datagramSocket with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val streamSocket: streamSocket with scala.Double = js.native
+  /* 1 */ val streamSocketListener: streamSocketListener with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityKind with scala.Double
   ] = js.native
 }
 

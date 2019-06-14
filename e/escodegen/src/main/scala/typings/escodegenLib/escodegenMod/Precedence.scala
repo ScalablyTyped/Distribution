@@ -103,30 +103,30 @@ object Precedence extends js.Object {
   sealed trait Yield
     extends escodegenLib.escodegenMod.Precedence
   
-  val Additive: Additive with java.lang.String = js.native
-  val ArrowFunction: ArrowFunction with java.lang.String = js.native
-  val Assignment: Assignment with java.lang.String = js.native
-  val Await: Await with java.lang.String = js.native
-  val BitwiseAND: BitwiseAND with java.lang.String = js.native
-  val BitwiseOR: BitwiseOR with java.lang.String = js.native
-  val BitwiseSHIFT: BitwiseSHIFT with java.lang.String = js.native
-  val BitwiseXOR: BitwiseXOR with java.lang.String = js.native
-  val Call: Call with java.lang.String = js.native
-  val Conditional: Conditional with java.lang.String = js.native
-  val Equality: Equality with java.lang.String = js.native
-  val LogicalAND: LogicalAND with java.lang.String = js.native
-  val LogicalOR: LogicalOR with java.lang.String = js.native
-  val Member: Member with java.lang.String = js.native
-  val Multiplicative: Multiplicative with java.lang.String = js.native
-  val New: New with java.lang.String = js.native
-  val Postfix: Postfix with java.lang.String = js.native
-  val Primary: Primary with java.lang.String = js.native
-  val Relational: Relational with java.lang.String = js.native
-  val Sequence: Sequence with java.lang.String = js.native
-  val TaggedTemplate: TaggedTemplate with java.lang.String = js.native
-  val Unary: Unary with java.lang.String = js.native
-  val Yield: Yield with java.lang.String = js.native
+  /* 14 */ val Additive: Additive with scala.Double = js.native
+  /* 5 */ val ArrowFunction: ArrowFunction with scala.Double = js.native
+  /* 3 */ val Assignment: Assignment with scala.Double = js.native
+  /* 2 */ val Await: Await with scala.Double = js.native
+  /* 10 */ val BitwiseAND: BitwiseAND with scala.Double = js.native
+  /* 8 */ val BitwiseOR: BitwiseOR with scala.Double = js.native
+  /* 13 */ val BitwiseSHIFT: BitwiseSHIFT with scala.Double = js.native
+  /* 9 */ val BitwiseXOR: BitwiseXOR with scala.Double = js.native
+  /* 18 */ val Call: Call with scala.Double = js.native
+  /* 4 */ val Conditional: Conditional with scala.Double = js.native
+  /* 11 */ val Equality: Equality with scala.Double = js.native
+  /* 7 */ val LogicalAND: LogicalAND with scala.Double = js.native
+  /* 6 */ val LogicalOR: LogicalOR with scala.Double = js.native
+  /* 21 */ val Member: Member with scala.Double = js.native
+  /* 15 */ val Multiplicative: Multiplicative with scala.Double = js.native
+  /* 19 */ val New: New with scala.Double = js.native
+  /* 17 */ val Postfix: Postfix with scala.Double = js.native
+  /* 22 */ val Primary: Primary with scala.Double = js.native
+  /* 12 */ val Relational: Relational with scala.Double = js.native
+  /* 0 */ val Sequence: Sequence with scala.Double = js.native
+  /* 20 */ val TaggedTemplate: TaggedTemplate with scala.Double = js.native
+  /* 16 */ val Unary: Unary with scala.Double = js.native
+  /* 1 */ val Yield: Yield with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[escodegenLib.escodegenMod.Precedence with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[escodegenLib.escodegenMod.Precedence with scala.Double] = js.native
 }
 

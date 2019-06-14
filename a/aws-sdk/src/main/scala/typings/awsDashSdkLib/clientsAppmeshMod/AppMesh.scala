@@ -11,8 +11,8 @@ trait AppMesh
   @JSName("config")
   var config_AppMesh: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates a service mesh. A service mesh is a logical boundary for network traffic
-    between the services that reside within it.
+    * Creates a service mesh. A service mesh is a logical boundary for network traffic between
+    the services that reside within it.
     After you create your service mesh, you can create virtual services, virtual nodes,
     virtual routers, and routes to distribute traffic between the applications in your
     mesh.
@@ -26,8 +26,8 @@ trait AppMesh
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a service mesh. A service mesh is a logical boundary for network traffic
-    between the services that reside within it.
+    * Creates a service mesh. A service mesh is a logical boundary for network traffic between
+    the services that reside within it.
     After you create your service mesh, you can create virtual services, virtual nodes,
     virtual routers, and routes to distribute traffic between the applications in your
     mesh.
@@ -81,8 +81,8 @@ trait AppMesh
   /**
     * Creates a virtual node within a service mesh.
     A virtual node acts as a logical pointer to a particular task group, such as an Amazon ECS
-    service or a Kubernetes deployment. When you create a virtual node, you must specify the
-    DNS service discovery hostname for your task group.
+    service or a Kubernetes deployment. When you create a virtual node, you can specify the
+    service discovery information for your task group.
     Any inbound traffic that your virtual node expects should be specified as a
     listener. Any outbound traffic that your virtual node expects to reach
     should be specified as a backend.
@@ -110,8 +110,8 @@ trait AppMesh
   /**
     * Creates a virtual node within a service mesh.
     A virtual node acts as a logical pointer to a particular task group, such as an Amazon ECS
-    service or a Kubernetes deployment. When you create a virtual node, you must specify the
-    DNS service discovery hostname for your task group.
+    service or a Kubernetes deployment. When you create a virtual node, you can specify the
+    service discovery information for your task group.
     Any inbound traffic that your virtual node expects should be specified as a
     listener. Any outbound traffic that your virtual node expects to reach
     should be specified as a backend.
@@ -172,10 +172,10 @@ trait AppMesh
   ): awsDashSdkLib.libRequestMod.Request[CreateVirtualRouterOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a virtual service within a service mesh.
-    A virtual service is an abstraction of a real service that is provided by a
-    virtual node directly or indirectly by means of a virtual router. Dependent services call
-    your virtual service by its virtualServiceName, and those requests are routed
-    to the virtual node or virtual router that is specified as the provider for the virtual
+    A virtual service is an abstraction of a real service that is provided by a virtual node
+    directly or indirectly by means of a virtual router. Dependent services call your virtual
+    service by its virtualServiceName, and those requests are routed to the
+    virtual node or virtual router that is specified as the provider for the virtual
     service.
     */
   def createVirtualService(): awsDashSdkLib.libRequestMod.Request[CreateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -188,10 +188,10 @@ trait AppMesh
   ): awsDashSdkLib.libRequestMod.Request[CreateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a virtual service within a service mesh.
-    A virtual service is an abstraction of a real service that is provided by a
-    virtual node directly or indirectly by means of a virtual router. Dependent services call
-    your virtual service by its virtualServiceName, and those requests are routed
-    to the virtual node or virtual router that is specified as the provider for the virtual
+    A virtual service is an abstraction of a real service that is provided by a virtual node
+    directly or indirectly by means of a virtual router. Dependent services call your virtual
+    service by its virtualServiceName, and those requests are routed to the
+    virtual node or virtual router that is specified as the provider for the virtual
     service.
     */
   def createVirtualService(params: CreateVirtualServiceInput): awsDashSdkLib.libRequestMod.Request[CreateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -205,8 +205,8 @@ trait AppMesh
   ): awsDashSdkLib.libRequestMod.Request[CreateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing service mesh.
-    You must delete all resources (virtual services, routes, virtual routers, and virtual nodes)
-    in the service mesh before you can delete the mesh itself.
+    You must delete all resources (virtual services, routes, virtual routers, and virtual
+    nodes) in the service mesh before you can delete the mesh itself.
     */
   def deleteMesh(): awsDashSdkLib.libRequestMod.Request[DeleteMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMesh(
@@ -218,8 +218,8 @@ trait AppMesh
   ): awsDashSdkLib.libRequestMod.Request[DeleteMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing service mesh.
-    You must delete all resources (virtual services, routes, virtual routers, and virtual nodes)
-    in the service mesh before you can delete the mesh itself.
+    You must delete all resources (virtual services, routes, virtual routers, and virtual
+    nodes) in the service mesh before you can delete the mesh itself.
     */
   def deleteMesh(params: DeleteMeshInput): awsDashSdkLib.libRequestMod.Request[DeleteMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMesh(
@@ -584,10 +584,10 @@ trait AppMesh
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListVirtualServicesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Associates the specified tags to a resource with the specified
-    resourceArn. If existing tags on a resource aren't specified in the
-    request parameters, they aren't changed. When a resource is deleted, the tags
-    associated with that resource are also deleted.
+    * Associates the specified tags to a resource with the specified resourceArn.
+    If existing tags on a resource aren't specified in the request parameters, they aren't
+    changed. When a resource is deleted, the tags associated with that resource are also
+    deleted.
     */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
@@ -598,10 +598,10 @@ trait AppMesh
     ]
   ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Associates the specified tags to a resource with the specified
-    resourceArn. If existing tags on a resource aren't specified in the
-    request parameters, they aren't changed. When a resource is deleted, the tags
-    associated with that resource are also deleted.
+    * Associates the specified tags to a resource with the specified resourceArn.
+    If existing tags on a resource aren't specified in the request parameters, they aren't
+    changed. When a resource is deleted, the tags associated with that resource are also
+    deleted.
     */
   def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(

@@ -41,13 +41,13 @@ object PagerPosition extends js.Object {
   sealed trait TopRight
     extends ejDotWebDotAllLib.ejNs.RotatorNs.PagerPosition
   
-  val BottomLeft: BottomLeft with java.lang.String = js.native
-  val BottomRight: BottomRight with java.lang.String = js.native
-  val Outside: Outside with java.lang.String = js.native
-  val TopCenter: TopCenter with java.lang.String = js.native
-  val TopLeft: TopLeft with java.lang.String = js.native
-  val TopRight: TopRight with java.lang.String = js.native
+  /* 0 */ val BottomLeft: BottomLeft with scala.Double = js.native
+  /* 1 */ val BottomRight: BottomRight with scala.Double = js.native
+  /* 2 */ val Outside: Outside with scala.Double = js.native
+  /* 3 */ val TopCenter: TopCenter with scala.Double = js.native
+  /* 4 */ val TopLeft: TopLeft with scala.Double = js.native
+  /* 5 */ val TopRight: TopRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RotatorNs.PagerPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RotatorNs.PagerPosition with scala.Double] = js.native
 }
 

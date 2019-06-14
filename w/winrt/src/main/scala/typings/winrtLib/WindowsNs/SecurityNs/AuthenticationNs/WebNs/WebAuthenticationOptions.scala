@@ -31,14 +31,14 @@ object WebAuthenticationOptions extends js.Object {
   sealed trait useTitle
     extends winrtLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.WebAuthenticationOptions
   
-  val none: none with java.lang.String = js.native
-  val silentMode: silentMode with java.lang.String = js.native
-  val useCorporateNetwork: useCorporateNetwork with java.lang.String = js.native
-  val useHttpPost: useHttpPost with java.lang.String = js.native
-  val useTitle: useTitle with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val silentMode: silentMode with scala.Double = js.native
+  /* 4 */ val useCorporateNetwork: useCorporateNetwork with scala.Double = js.native
+  /* 3 */ val useHttpPost: useHttpPost with scala.Double = js.native
+  /* 2 */ val useTitle: useTitle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.WebAuthenticationOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.WebAuthenticationOptions with scala.Double
   ] = js.native
 }
 

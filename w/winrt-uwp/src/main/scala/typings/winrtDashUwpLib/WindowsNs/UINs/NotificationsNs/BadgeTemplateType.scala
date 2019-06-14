@@ -22,11 +22,11 @@ object BadgeTemplateType extends js.Object {
   sealed trait badgeNumber
     extends winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.BadgeTemplateType
   
-  val badgeGlyph: badgeGlyph with java.lang.String = js.native
-  val badgeNumber: badgeNumber with java.lang.String = js.native
+  /* 0 */ val badgeGlyph: badgeGlyph with scala.Double = js.native
+  /* 1 */ val badgeNumber: badgeNumber with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.BadgeTemplateType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.BadgeTemplateType with scala.Double
   ] = js.native
 }
 

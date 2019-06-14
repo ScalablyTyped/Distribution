@@ -67,23 +67,23 @@ object PivotTableSummarizeFunction extends js.Object {
   sealed trait VARP
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.PivotTableSummarizeFunction
   
-  val AVERAGE: AVERAGE with java.lang.String = js.native
-  val COUNT: COUNT with java.lang.String = js.native
-  val COUNTA: COUNTA with java.lang.String = js.native
-  val COUNTUNIQUE: COUNTUNIQUE with java.lang.String = js.native
-  val CUSTOM: CUSTOM with java.lang.String = js.native
-  val MAX: MAX with java.lang.String = js.native
-  val MEDIAN: MEDIAN with java.lang.String = js.native
-  val MIN: MIN with java.lang.String = js.native
-  val PRODUCT: PRODUCT with java.lang.String = js.native
-  val STDEV: STDEV with java.lang.String = js.native
-  val STDEVP: STDEVP with java.lang.String = js.native
-  val SUM: SUM with java.lang.String = js.native
-  val VAR: VAR with java.lang.String = js.native
-  val VARP: VARP with java.lang.String = js.native
+  /* 5 */ val AVERAGE: AVERAGE with scala.Double = js.native
+  /* 3 */ val COUNT: COUNT with scala.Double = js.native
+  /* 2 */ val COUNTA: COUNTA with scala.Double = js.native
+  /* 4 */ val COUNTUNIQUE: COUNTUNIQUE with scala.Double = js.native
+  /* 0 */ val CUSTOM: CUSTOM with scala.Double = js.native
+  /* 6 */ val MAX: MAX with scala.Double = js.native
+  /* 8 */ val MEDIAN: MEDIAN with scala.Double = js.native
+  /* 7 */ val MIN: MIN with scala.Double = js.native
+  /* 9 */ val PRODUCT: PRODUCT with scala.Double = js.native
+  /* 10 */ val STDEV: STDEV with scala.Double = js.native
+  /* 11 */ val STDEVP: STDEVP with scala.Double = js.native
+  /* 1 */ val SUM: SUM with scala.Double = js.native
+  /* 12 */ val VAR: VAR with scala.Double = js.native
+  /* 13 */ val VARP: VARP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.PivotTableSummarizeFunction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.PivotTableSummarizeFunction with scala.Double
   ] = js.native
 }
 

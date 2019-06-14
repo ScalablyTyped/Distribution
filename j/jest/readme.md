@@ -36,8 +36,8 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for Jest 24.0
-// Project: https://jestjs.io
-// Definitions by: Asana <https://asana.com>
+// Project: https://jestjs.io/
+// Definitions by: Asana (https://asana.com)
 //                 Ivo Stratev <https://github.com/NoHomey>
 //                 jwbay <https://github.com/jwbay>
 //                 Alexey Svetliakov <https://github.com/asvetliakov>
@@ -57,6 +57,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Antoine Brault <https://github.com/antoinebrault>
 //                 Jeroen Claassens <https://github.com/favna>
 //                 Gregor Stamać <https://github.com/gstamac>
+//                 ExE Boss <https://github.com/ExE-Boss>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 

@@ -37,14 +37,14 @@ object DeploymentOptions extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.DeploymentOptions
   
-  val developmentMode: developmentMode with java.lang.String = js.native
-  val forceApplicationShutdown: forceApplicationShutdown with java.lang.String = js.native
-  val forceTargetApplicationShutdown: forceTargetApplicationShutdown with java.lang.String = js.native
-  val installAllResources: installAllResources with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val developmentMode: developmentMode with scala.Double = js.native
+  /* 1 */ val forceApplicationShutdown: forceApplicationShutdown with scala.Double = js.native
+  /* 4 */ val forceTargetApplicationShutdown: forceTargetApplicationShutdown with scala.Double = js.native
+  /* 3 */ val installAllResources: installAllResources with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.DeploymentOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.DeploymentOptions with scala.Double
   ] = js.native
 }
 

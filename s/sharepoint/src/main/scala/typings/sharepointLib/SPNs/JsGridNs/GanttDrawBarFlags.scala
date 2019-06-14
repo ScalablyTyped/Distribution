@@ -20,9 +20,9 @@ object GanttDrawBarFlags extends js.Object {
   sealed trait RightLink
     extends sharepointLib.SPNs.JsGridNs.GanttDrawBarFlags
   
-  val LeftLink: LeftLink with java.lang.String = js.native
-  val RightLink: RightLink with java.lang.String = js.native
+  /* 0 */ val LeftLink: LeftLink with scala.Double = js.native
+  /* 1 */ val RightLink: RightLink with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.GanttDrawBarFlags with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.GanttDrawBarFlags with scala.Double] = js.native
 }
 

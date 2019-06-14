@@ -22,11 +22,11 @@ object BackgroundTransferBehavior extends js.Object {
   sealed trait serialized
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferBehavior
   
-  val parallel: parallel with java.lang.String = js.native
-  val serialized: serialized with java.lang.String = js.native
+  /* 0 */ val parallel: parallel with scala.Double = js.native
+  /* 1 */ val serialized: serialized with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferBehavior with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferBehavior with scala.Double
   ] = js.native
 }
 

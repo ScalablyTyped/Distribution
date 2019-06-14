@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait _svgFecolormatrixType extends js.Object
 
+object _svgFecolormatrixType {
+  @scala.inline
+  def SVG_FECOLORMATRIX_TYPE_HUEROTATE: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def SVG_FECOLORMATRIX_TYPE_MATRIX: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def SVG_FECOLORMATRIX_TYPE_SATURATE: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def SVG_FECOLORMATRIX_TYPE_UNKNOWN: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def svgFecolormatrixType_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

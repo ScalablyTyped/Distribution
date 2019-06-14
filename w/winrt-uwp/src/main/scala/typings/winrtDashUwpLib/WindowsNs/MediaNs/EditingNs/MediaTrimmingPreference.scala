@@ -22,11 +22,11 @@ object MediaTrimmingPreference extends js.Object {
   sealed trait precise
     extends winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaTrimmingPreference
   
-  val fast: fast with java.lang.String = js.native
-  val precise: precise with java.lang.String = js.native
+  /* 0 */ val fast: fast with scala.Double = js.native
+  /* 1 */ val precise: precise with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaTrimmingPreference with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaTrimmingPreference with scala.Double
   ] = js.native
 }
 

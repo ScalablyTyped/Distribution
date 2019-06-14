@@ -21,9 +21,9 @@ object MenuType extends js.Object {
   sealed trait NormalMenu
     extends ejDotWebDotAllLib.ejNs.MenuType
   
-  val ContextMenu: ContextMenu with java.lang.String = js.native
-  val NormalMenu: NormalMenu with java.lang.String = js.native
+  /* 0 */ val ContextMenu: ContextMenu with scala.Double = js.native
+  /* 1 */ val NormalMenu: NormalMenu with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.MenuType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.MenuType with scala.Double] = js.native
 }
 

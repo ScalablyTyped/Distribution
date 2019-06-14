@@ -32,13 +32,13 @@ object DialAppStopResult extends js.Object {
   sealed trait stopped
     extends winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppStopResult
   
-  val networkFailure: networkFailure with java.lang.String = js.native
-  val operationNotSupported: operationNotSupported with java.lang.String = js.native
-  val stopFailed: stopFailed with java.lang.String = js.native
-  val stopped: stopped with java.lang.String = js.native
+  /* 3 */ val networkFailure: networkFailure with scala.Double = js.native
+  /* 2 */ val operationNotSupported: operationNotSupported with scala.Double = js.native
+  /* 1 */ val stopFailed: stopFailed with scala.Double = js.native
+  /* 0 */ val stopped: stopped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppStopResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppStopResult with scala.Double
   ] = js.native
 }
 

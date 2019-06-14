@@ -10,6 +10,5 @@ import scala.scalajs.js.annotation._
 object distSrcDeepCopyMod extends js.Object {
   def deepCopy[T](value: T): T = js.native
   def deepExtend(target: js.Any, source: js.Any): js.Any = js.native
-  def patchProperty(obj: js.Any, prop: java.lang.String, value: js.Any): scala.Unit = js.native
 }
 

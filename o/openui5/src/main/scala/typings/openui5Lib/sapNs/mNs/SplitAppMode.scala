@@ -30,11 +30,11 @@ object SplitAppMode extends js.Object {
   sealed trait StretchCompressMode
     extends openui5Lib.sapNs.mNs.SplitAppMode
   
-  val HideMode: HideMode with java.lang.String = js.native
-  val PopoverMode: PopoverMode with java.lang.String = js.native
-  val ShowHideMode: ShowHideMode with java.lang.String = js.native
-  val StretchCompressMode: StretchCompressMode with java.lang.String = js.native
+  /* 0 */ val HideMode: HideMode with scala.Double = js.native
+  /* 1 */ val PopoverMode: PopoverMode with scala.Double = js.native
+  /* 2 */ val ShowHideMode: ShowHideMode with scala.Double = js.native
+  /* 3 */ val StretchCompressMode: StretchCompressMode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.SplitAppMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.SplitAppMode with scala.Double] = js.native
 }
 

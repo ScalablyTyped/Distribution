@@ -31,13 +31,13 @@ object Multiplicity extends js.Object {
   sealed trait OneToOne
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Multiplicity
   
-  val ManyToMany: ManyToMany with java.lang.String = js.native
-  val ManyToOne: ManyToOne with java.lang.String = js.native
-  val OneToMany: OneToMany with java.lang.String = js.native
-  val OneToOne: OneToOne with java.lang.String = js.native
+  /* 3 */ val ManyToMany: ManyToMany with scala.Double = js.native
+  /* 2 */ val ManyToOne: ManyToOne with scala.Double = js.native
+  /* 1 */ val OneToMany: OneToMany with scala.Double = js.native
+  /* 0 */ val OneToOne: OneToOne with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Multiplicity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Multiplicity with scala.Double
   ] = js.native
 }
 

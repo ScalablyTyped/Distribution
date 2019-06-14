@@ -59,21 +59,19 @@ object FileType extends js.Object {
   sealed trait SPREADSHEETS
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.FileType
   
-  val ALL: ALL with java.lang.String = js.native
-  val ALL_DOCS: ALL_DOCS with java.lang.String = js.native
-  val DOCUMENTS: DOCUMENTS with java.lang.String = js.native
-  val DRAWINGS: DRAWINGS with java.lang.String = js.native
-  val FOLDERS: FOLDERS with java.lang.String = js.native
-  val FORMS: FORMS with java.lang.String = js.native
-  val PDFS: PDFS with java.lang.String = js.native
-  val PHOTOS: PHOTOS with java.lang.String = js.native
-  val PHOTO_ALBUMS: PHOTO_ALBUMS with java.lang.String = js.native
-  val PRESENTATIONS: PRESENTATIONS with java.lang.String = js.native
-  val RECENTLY_PICKED: RECENTLY_PICKED with java.lang.String = js.native
-  val SPREADSHEETS: SPREADSHEETS with java.lang.String = js.native
+  /* 0 */ val ALL: ALL with scala.Double = js.native
+  /* 1 */ val ALL_DOCS: ALL_DOCS with scala.Double = js.native
+  /* 3 */ val DOCUMENTS: DOCUMENTS with scala.Double = js.native
+  /* 2 */ val DRAWINGS: DRAWINGS with scala.Double = js.native
+  /* 5 */ val FOLDERS: FOLDERS with scala.Double = js.native
+  /* 8 */ val FORMS: FORMS with scala.Double = js.native
+  /* 11 */ val PDFS: PDFS with scala.Double = js.native
+  /* 9 */ val PHOTOS: PHOTOS with scala.Double = js.native
+  /* 10 */ val PHOTO_ALBUMS: PHOTO_ALBUMS with scala.Double = js.native
+  /* 7 */ val PRESENTATIONS: PRESENTATIONS with scala.Double = js.native
+  /* 6 */ val RECENTLY_PICKED: RECENTLY_PICKED with scala.Double = js.native
+  /* 4 */ val SPREADSHEETS: SPREADSHEETS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.FileType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.FileType with scala.Double] = js.native
 }
 

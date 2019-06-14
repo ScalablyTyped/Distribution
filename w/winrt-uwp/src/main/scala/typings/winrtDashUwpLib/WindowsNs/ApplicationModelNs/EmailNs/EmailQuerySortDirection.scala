@@ -22,11 +22,11 @@ object EmailQuerySortDirection extends js.Object {
   sealed trait descending
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySortDirection
   
-  val ascending: ascending with java.lang.String = js.native
-  val descending: descending with java.lang.String = js.native
+  /* 1 */ val ascending: ascending with scala.Double = js.native
+  /* 0 */ val descending: descending with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySortDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailQuerySortDirection with scala.Double
   ] = js.native
 }
 

@@ -30,11 +30,11 @@ object LoadState extends js.Object {
   sealed trait Loading
     extends openui5Lib.sapNs.mNs.LoadState
   
-  val Disabled: Disabled with java.lang.String = js.native
-  val Failed: Failed with java.lang.String = js.native
-  val Loaded: Loaded with java.lang.String = js.native
-  val Loading: Loading with java.lang.String = js.native
+  /* 0 */ val Disabled: Disabled with scala.Double = js.native
+  /* 1 */ val Failed: Failed with scala.Double = js.native
+  /* 2 */ val Loaded: Loaded with scala.Double = js.native
+  /* 3 */ val Loading: Loading with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.LoadState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.LoadState with scala.Double] = js.native
 }
 

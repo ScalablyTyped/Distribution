@@ -31,11 +31,11 @@ object GridLines extends js.Object {
   sealed trait Vertical
     extends ejDotWebDotAllLib.ejNs.GridNs.GridLines
   
-  val Both: Both with java.lang.String = js.native
-  val Horizontal: Horizontal with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Vertical: Vertical with java.lang.String = js.native
+  /* 0 */ val Both: Both with scala.Double = js.native
+  /* 1 */ val Horizontal: Horizontal with scala.Double = js.native
+  /* 3 */ val None: None with scala.Double = js.native
+  /* 2 */ val Vertical: Vertical with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.GridLines with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.GridLines with scala.Double] = js.native
 }
 

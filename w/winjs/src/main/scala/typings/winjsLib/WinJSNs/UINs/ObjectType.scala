@@ -42,11 +42,11 @@ object ObjectType extends js.Object {
   sealed trait item
     extends winjsLib.WinJSNs.UINs.ObjectType
   
-  val footer: footer with java.lang.String = js.native
-  val groupHeader: groupHeader with java.lang.String = js.native
-  val header: header with java.lang.String = js.native
-  val item: item with java.lang.String = js.native
+  /* 3 */ val footer: footer with scala.Double = js.native
+  /* 0 */ val groupHeader: groupHeader with scala.Double = js.native
+  /* 2 */ val header: header with scala.Double = js.native
+  /* 1 */ val item: item with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.ObjectType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.ObjectType with scala.Double] = js.native
 }
 

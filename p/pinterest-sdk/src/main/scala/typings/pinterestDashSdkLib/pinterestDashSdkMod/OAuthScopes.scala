@@ -27,11 +27,11 @@ object OAuthScopes extends js.Object {
   sealed trait write_relationships
     extends pinterestDashSdkLib.pinterestDashSdkMod.OAuthScopes
   
-  val read_public: read_public with java.lang.String = js.native
-  val read_relationships: read_relationships with java.lang.String = js.native
-  val write_public: write_public with java.lang.String = js.native
-  val write_relationships: write_relationships with java.lang.String = js.native
+  /* 0 */ val read_public: read_public with scala.Double = js.native
+  /* 2 */ val read_relationships: read_relationships with scala.Double = js.native
+  /* 1 */ val write_public: write_public with scala.Double = js.native
+  /* 3 */ val write_relationships: write_relationships with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[pinterestDashSdkLib.pinterestDashSdkMod.OAuthScopes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[pinterestDashSdkLib.pinterestDashSdkMod.OAuthScopes with scala.Double] = js.native
 }
 

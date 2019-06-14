@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdDocumentViewDirection extends js.Object
 
+object WdDocumentViewDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdDocumentViewLtr: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdDocumentViewRtl: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

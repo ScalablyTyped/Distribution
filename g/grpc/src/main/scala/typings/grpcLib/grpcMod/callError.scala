@@ -67,21 +67,21 @@ object callError extends js.Object {
   sealed trait TOO_MANY_OPERATIONS
     extends grpcLib.grpcMod.callError
   
-  val ALREADY_FINISHED: ALREADY_FINISHED with java.lang.String = js.native
-  val ALREADY_INVOKED: ALREADY_INVOKED with java.lang.String = js.native
-  val BATCH_TOO_BIG: BATCH_TOO_BIG with java.lang.String = js.native
-  val ERROR: ERROR with java.lang.String = js.native
-  val INVALID_FLAGS: INVALID_FLAGS with java.lang.String = js.native
-  val INVALID_MESSAGE: INVALID_MESSAGE with java.lang.String = js.native
-  val INVALID_METADATA: INVALID_METADATA with java.lang.String = js.native
-  val NOT_INVOKED: NOT_INVOKED with java.lang.String = js.native
-  val NOT_ON_CLIENT: NOT_ON_CLIENT with java.lang.String = js.native
-  val NOT_ON_SERVER: NOT_ON_SERVER with java.lang.String = js.native
-  val NOT_SERVER_COMPLETION_QUEUE: NOT_SERVER_COMPLETION_QUEUE with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val PAYLOAD_TYPE_MISMATCH: PAYLOAD_TYPE_MISMATCH with java.lang.String = js.native
-  val TOO_MANY_OPERATIONS: TOO_MANY_OPERATIONS with java.lang.String = js.native
+  /* 6 */ val ALREADY_FINISHED: ALREADY_FINISHED with scala.Double = js.native
+  /* 4 */ val ALREADY_INVOKED: ALREADY_INVOKED with scala.Double = js.native
+  /* 12 */ val BATCH_TOO_BIG: BATCH_TOO_BIG with scala.Double = js.native
+  /* 1 */ val ERROR: ERROR with scala.Double = js.native
+  /* 8 */ val INVALID_FLAGS: INVALID_FLAGS with scala.Double = js.native
+  /* 10 */ val INVALID_MESSAGE: INVALID_MESSAGE with scala.Double = js.native
+  /* 9 */ val INVALID_METADATA: INVALID_METADATA with scala.Double = js.native
+  /* 5 */ val NOT_INVOKED: NOT_INVOKED with scala.Double = js.native
+  /* 3 */ val NOT_ON_CLIENT: NOT_ON_CLIENT with scala.Double = js.native
+  /* 2 */ val NOT_ON_SERVER: NOT_ON_SERVER with scala.Double = js.native
+  /* 11 */ val NOT_SERVER_COMPLETION_QUEUE: NOT_SERVER_COMPLETION_QUEUE with scala.Double = js.native
+  /* 0 */ val OK: OK with scala.Double = js.native
+  /* 13 */ val PAYLOAD_TYPE_MISMATCH: PAYLOAD_TYPE_MISMATCH with scala.Double = js.native
+  /* 7 */ val TOO_MANY_OPERATIONS: TOO_MANY_OPERATIONS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[grpcLib.grpcMod.callError with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[grpcLib.grpcMod.callError with scala.Double] = js.native
 }
 

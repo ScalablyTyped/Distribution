@@ -55,11 +55,11 @@ object Center extends js.Object {
   sealed trait NO_CENTER
     extends phaserLib.PhaserNs.ScaleNs.Center
   
-  val CENTER_BOTH: CENTER_BOTH with java.lang.String = js.native
-  val CENTER_HORIZONTALLY: CENTER_HORIZONTALLY with java.lang.String = js.native
-  val CENTER_VERTICALLY: CENTER_VERTICALLY with java.lang.String = js.native
-  val NO_CENTER: NO_CENTER with java.lang.String = js.native
+  /* 1 */ val CENTER_BOTH: CENTER_BOTH with scala.Double = js.native
+  /* 2 */ val CENTER_HORIZONTALLY: CENTER_HORIZONTALLY with scala.Double = js.native
+  /* 3 */ val CENTER_VERTICALLY: CENTER_VERTICALLY with scala.Double = js.native
+  /* 0 */ val NO_CENTER: NO_CENTER with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Center with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Center with scala.Double] = js.native
 }
 

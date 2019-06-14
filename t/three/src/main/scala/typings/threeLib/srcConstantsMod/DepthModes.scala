@@ -12,6 +12,6 @@ sealed trait DepthModes extends js.Object
 @js.native
 object DepthModes extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.DepthModes with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.DepthModes with scala.Nothing] = js.native
 }
 

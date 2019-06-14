@@ -39,16 +39,16 @@ object AuthenticationProtocol extends js.Object {
   sealed trait ntlm
     extends winrtLib.WindowsNs.SecurityNs.CredentialsNs.UINs.AuthenticationProtocol
   
-  val basic: basic with java.lang.String = js.native
-  val credSsp: credSsp with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val digest: digest with java.lang.String = js.native
-  val kerberos: kerberos with java.lang.String = js.native
-  val negotiate: negotiate with java.lang.String = js.native
-  val ntlm: ntlm with java.lang.String = js.native
+  /* 0 */ val basic: basic with scala.Double = js.native
+  /* 5 */ val credSsp: credSsp with scala.Double = js.native
+  /* 6 */ val custom: custom with scala.Double = js.native
+  /* 1 */ val digest: digest with scala.Double = js.native
+  /* 3 */ val kerberos: kerberos with scala.Double = js.native
+  /* 4 */ val negotiate: negotiate with scala.Double = js.native
+  /* 2 */ val ntlm: ntlm with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.CredentialsNs.UINs.AuthenticationProtocol with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.CredentialsNs.UINs.AuthenticationProtocol with scala.Double
   ] = js.native
 }
 

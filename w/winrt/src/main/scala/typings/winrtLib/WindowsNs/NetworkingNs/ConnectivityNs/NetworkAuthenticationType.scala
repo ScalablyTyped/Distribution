@@ -51,19 +51,19 @@ object NetworkAuthenticationType extends js.Object {
   sealed trait wpaPsk
     extends winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAuthenticationType
   
-  val ihv: ihv with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val open80211: open80211 with java.lang.String = js.native
-  val rsna: rsna with java.lang.String = js.native
-  val rsnaPsk: rsnaPsk with java.lang.String = js.native
-  val sharedKey80211: sharedKey80211 with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val wpa: wpa with java.lang.String = js.native
-  val wpaNone: wpaNone with java.lang.String = js.native
-  val wpaPsk: wpaPsk with java.lang.String = js.native
+  /* 9 */ val ihv: ihv with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val open80211: open80211 with scala.Double = js.native
+  /* 7 */ val rsna: rsna with scala.Double = js.native
+  /* 8 */ val rsnaPsk: rsnaPsk with scala.Double = js.native
+  /* 3 */ val sharedKey80211: sharedKey80211 with scala.Double = js.native
+  /* 1 */ val unknown: unknown with scala.Double = js.native
+  /* 4 */ val wpa: wpa with scala.Double = js.native
+  /* 6 */ val wpaNone: wpaNone with scala.Double = js.native
+  /* 5 */ val wpaPsk: wpaPsk with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAuthenticationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAuthenticationType with scala.Double
   ] = js.native
 }
 

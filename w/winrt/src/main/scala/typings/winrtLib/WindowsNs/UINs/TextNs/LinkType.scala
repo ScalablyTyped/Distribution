@@ -47,16 +47,16 @@ object LinkType extends js.Object {
   sealed trait undefined
     extends winrtLib.WindowsNs.UINs.TextNs.LinkType
   
-  val autoLink: autoLink with java.lang.String = js.native
-  val autoLinkEmail: autoLinkEmail with java.lang.String = js.native
-  val autoLinkPath: autoLinkPath with java.lang.String = js.native
-  val autoLinkPhone: autoLinkPhone with java.lang.String = js.native
-  val clientLink: clientLink with java.lang.String = js.native
-  val friendlyLinkAddress: friendlyLinkAddress with java.lang.String = js.native
-  val friendlyLinkName: friendlyLinkName with java.lang.String = js.native
-  val notALink: notALink with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 5 */ val autoLink: autoLink with scala.Double = js.native
+  /* 6 */ val autoLinkEmail: autoLinkEmail with scala.Double = js.native
+  /* 8 */ val autoLinkPath: autoLinkPath with scala.Double = js.native
+  /* 7 */ val autoLinkPhone: autoLinkPhone with scala.Double = js.native
+  /* 2 */ val clientLink: clientLink with scala.Double = js.native
+  /* 4 */ val friendlyLinkAddress: friendlyLinkAddress with scala.Double = js.native
+  /* 3 */ val friendlyLinkName: friendlyLinkName with scala.Double = js.native
+  /* 1 */ val notALink: notALink with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.LinkType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.LinkType with scala.Double] = js.native
 }
 

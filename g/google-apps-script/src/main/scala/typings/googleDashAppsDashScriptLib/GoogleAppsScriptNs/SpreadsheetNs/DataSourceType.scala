@@ -19,11 +19,11 @@ object DataSourceType extends js.Object {
   sealed trait DATA_SOURCE_TYPE_UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataSourceType
   
-  val BIGQUERY: BIGQUERY with java.lang.String = js.native
-  val DATA_SOURCE_TYPE_UNSUPPORTED: DATA_SOURCE_TYPE_UNSUPPORTED with java.lang.String = js.native
+  /* 1 */ val BIGQUERY: BIGQUERY with scala.Double = js.native
+  /* 0 */ val DATA_SOURCE_TYPE_UNSUPPORTED: DATA_SOURCE_TYPE_UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataSourceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataSourceType with scala.Double
   ] = js.native
 }
 

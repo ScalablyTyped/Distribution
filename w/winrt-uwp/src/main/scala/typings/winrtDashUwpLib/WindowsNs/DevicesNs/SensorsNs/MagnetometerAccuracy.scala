@@ -32,13 +32,13 @@ object MagnetometerAccuracy extends js.Object {
   sealed trait unreliable
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.MagnetometerAccuracy
   
-  val approximate: approximate with java.lang.String = js.native
-  val high: high with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val unreliable: unreliable with java.lang.String = js.native
+  /* 2 */ val approximate: approximate with scala.Double = js.native
+  /* 3 */ val high: high with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 1 */ val unreliable: unreliable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.MagnetometerAccuracy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.MagnetometerAccuracy with scala.Double
   ] = js.native
 }
 

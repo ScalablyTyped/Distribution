@@ -22,9 +22,9 @@ object LogType extends js.Object {
   sealed trait Info
     extends umbracoLib.umbracoNs.resourcesNs.LogType
   
-  val Debug: Debug with java.lang.String = js.native
-  val Info: Info with java.lang.String = js.native
+  /* 0 */ val Debug: Debug with scala.Double = js.native
+  /* 1 */ val Info: Info with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.LogType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.LogType with scala.Double] = js.native
 }
 

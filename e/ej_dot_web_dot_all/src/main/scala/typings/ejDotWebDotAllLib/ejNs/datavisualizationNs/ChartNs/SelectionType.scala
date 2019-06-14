@@ -21,11 +21,11 @@ object SelectionType extends js.Object {
   sealed trait Single
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SelectionType
   
-  val Multiple: Multiple with java.lang.String = js.native
-  val Single: Single with java.lang.String = js.native
+  /* 1 */ val Multiple: Multiple with scala.Double = js.native
+  /* 0 */ val Single: Single with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SelectionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SelectionType with scala.Double
   ] = js.native
 }
 

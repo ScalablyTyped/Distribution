@@ -32,10 +32,10 @@ object SymbolPath extends js.Object {
     extends navermapsLib.naverNs.mapsNs.SymbolPath
   
   /* 1 */ val BACKWARD_CLOSED_ARROW: BACKWARD_CLOSED_ARROW with scala.Double = js.native
-  val BACKWARD_OPEN_ARROW: BACKWARD_OPEN_ARROW with scala.Double = js.native
-  val CIRCLE: CIRCLE with scala.Double = js.native
-  val FORWARD_CLOSED_ARROW: FORWARD_CLOSED_ARROW with scala.Double = js.native
-  val FORWARD_OPEN_ARROW: FORWARD_OPEN_ARROW with scala.Double = js.native
+  /* 0 */ val BACKWARD_OPEN_ARROW: BACKWARD_OPEN_ARROW with scala.Double = js.native
+  /* 1 */ val CIRCLE: CIRCLE with scala.Double = js.native
+  /* 2 */ val FORWARD_CLOSED_ARROW: FORWARD_CLOSED_ARROW with scala.Double = js.native
+  /* 3 */ val FORWARD_OPEN_ARROW: FORWARD_OPEN_ARROW with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.SymbolPath with scala.Double] = js.native
 }

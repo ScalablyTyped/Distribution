@@ -37,12 +37,12 @@ object ParagraphAlignment extends js.Object {
   sealed trait undefined
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.ParagraphAlignment
   
-  val center: center with java.lang.String = js.native
-  val justify: justify with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 2 */ val center: center with scala.Double = js.native
+  /* 4 */ val justify: justify with scala.Double = js.native
+  /* 1 */ val left: left with scala.Double = js.native
+  /* 3 */ val right: right with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.ParagraphAlignment with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.ParagraphAlignment with scala.Double] = js.native
 }
 

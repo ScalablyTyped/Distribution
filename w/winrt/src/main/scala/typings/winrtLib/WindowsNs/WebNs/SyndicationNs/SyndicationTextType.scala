@@ -23,10 +23,10 @@ object SyndicationTextType extends js.Object {
   sealed trait xhtml
     extends winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationTextType
   
-  val html: html with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
-  val xhtml: xhtml with java.lang.String = js.native
+  /* 1 */ val html: html with scala.Double = js.native
+  /* 0 */ val text: text with scala.Double = js.native
+  /* 2 */ val xhtml: xhtml with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationTextType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationTextType with scala.Double] = js.native
 }
 

@@ -112,29 +112,29 @@ object AnimationEffectTarget extends js.Object {
   sealed trait tapped
     extends winrtDashUwpLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.AnimationEffectTarget
   
-  val added: added with java.lang.String = js.native
-  val affected: affected with java.lang.String = js.native
-  val background: background with java.lang.String = js.native
-  val content: content with java.lang.String = js.native
-  val deleted: deleted with java.lang.String = js.native
-  val deselected: deselected with java.lang.String = js.native
-  val dragSource: dragSource with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val incoming: incoming with java.lang.String = js.native
-  val outgoing: outgoing with java.lang.String = js.native
-  val outline: outline with java.lang.String = js.native
-  val primary: primary with java.lang.String = js.native
-  val remaining: remaining with java.lang.String = js.native
-  val revealed: revealed with java.lang.String = js.native
-  val rowIn: rowIn with java.lang.String = js.native
-  val rowOut: rowOut with java.lang.String = js.native
-  val selected: selected with java.lang.String = js.native
-  val selection: selection with java.lang.String = js.native
-  val shown: shown with java.lang.String = js.native
-  val tapped: tapped with java.lang.String = js.native
+  /* 1 */ val added: added with scala.Double = js.native
+  /* 2 */ val affected: affected with scala.Double = js.native
+  /* 3 */ val background: background with scala.Double = js.native
+  /* 4 */ val content: content with scala.Double = js.native
+  /* 5 */ val deleted: deleted with scala.Double = js.native
+  /* 6 */ val deselected: deselected with scala.Double = js.native
+  /* 7 */ val dragSource: dragSource with scala.Double = js.native
+  /* 8 */ val hidden: hidden with scala.Double = js.native
+  /* 9 */ val incoming: incoming with scala.Double = js.native
+  /* 10 */ val outgoing: outgoing with scala.Double = js.native
+  /* 11 */ val outline: outline with scala.Double = js.native
+  /* 0 */ val primary: primary with scala.Double = js.native
+  /* 12 */ val remaining: remaining with scala.Double = js.native
+  /* 13 */ val revealed: revealed with scala.Double = js.native
+  /* 14 */ val rowIn: rowIn with scala.Double = js.native
+  /* 15 */ val rowOut: rowOut with scala.Double = js.native
+  /* 16 */ val selected: selected with scala.Double = js.native
+  /* 17 */ val selection: selection with scala.Double = js.native
+  /* 18 */ val shown: shown with scala.Double = js.native
+  /* 19 */ val tapped: tapped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.AnimationEffectTarget with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.AnimationEffectTarget with scala.Double
   ] = js.native
 }
 

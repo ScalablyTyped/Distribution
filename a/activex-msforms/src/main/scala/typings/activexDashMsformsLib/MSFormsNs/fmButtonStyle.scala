@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait fmButtonStyle extends js.Object
 
+object fmButtonStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fmButtonStylePushButton: activexDashMsformsLib.activexDashMsformsLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def fmButtonStyleToggleButton: activexDashMsformsLib.activexDashMsformsLibNumbers.`1` = this.cast(1)
+}
+

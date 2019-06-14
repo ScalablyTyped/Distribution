@@ -32,13 +32,11 @@ object DialAppState extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppState
   
-  val networkFailure: networkFailure with java.lang.String = js.native
-  val running: running with java.lang.String = js.native
-  val stopped: stopped with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val networkFailure: networkFailure with scala.Double = js.native
+  /* 2 */ val running: running with scala.Double = js.native
+  /* 1 */ val stopped: stopped with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppState with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppState with scala.Double] = js.native
 }
 

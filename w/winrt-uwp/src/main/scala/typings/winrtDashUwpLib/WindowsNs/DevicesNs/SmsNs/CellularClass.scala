@@ -27,10 +27,10 @@ object CellularClass extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.CellularClass
   
-  val cdma: cdma with java.lang.String = js.native
-  val gsm: gsm with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val cdma: cdma with scala.Double = js.native
+  /* 1 */ val gsm: gsm with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.CellularClass with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.CellularClass with scala.Double] = js.native
 }
 

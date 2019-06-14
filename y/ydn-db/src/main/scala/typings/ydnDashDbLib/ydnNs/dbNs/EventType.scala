@@ -35,13 +35,13 @@ object EventType extends js.Object {
   sealed trait updated
     extends ydnDashDbLib.ydnNs.dbNs.EventType
   
-  val created: created with java.lang.String = js.native
-  val deleted: deleted with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val fail: fail with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
-  val updated: updated with java.lang.String = js.native
+  /* 0 */ val created: created with scala.Double = js.native
+  /* 1 */ val deleted: deleted with scala.Double = js.native
+  /* 2 */ val error: error with scala.Double = js.native
+  /* 3 */ val fail: fail with scala.Double = js.native
+  /* 4 */ val ready: ready with scala.Double = js.native
+  /* 5 */ val updated: updated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.EventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.EventType with scala.Double] = js.native
 }
 

@@ -32,13 +32,13 @@ object IOControlAccessMode extends js.Object {
   sealed trait write
     extends winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.IOControlAccessMode
   
-  val any: any with java.lang.String = js.native
-  val read: read with java.lang.String = js.native
-  val readWrite: readWrite with java.lang.String = js.native
-  val write: write with java.lang.String = js.native
+  /* 0 */ val any: any with scala.Double = js.native
+  /* 1 */ val read: read with scala.Double = js.native
+  /* 3 */ val readWrite: readWrite with scala.Double = js.native
+  /* 2 */ val write: write with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.IOControlAccessMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.IOControlAccessMode with scala.Double
   ] = js.native
 }
 

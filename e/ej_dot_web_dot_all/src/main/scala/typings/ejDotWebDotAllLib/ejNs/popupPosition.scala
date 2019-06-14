@@ -21,9 +21,9 @@ object popupPosition extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.popupPosition
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 0 */ val Bottom: Bottom with scala.Double = js.native
+  /* 1 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.popupPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.popupPosition with scala.Double] = js.native
 }
 

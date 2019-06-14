@@ -22,11 +22,11 @@ object CoreTextInputPaneDisplayPolicy extends js.Object {
   sealed trait manual
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextInputPaneDisplayPolicy
   
-  val automatic: automatic with java.lang.String = js.native
-  val manual: manual with java.lang.String = js.native
+  /* 0 */ val automatic: automatic with scala.Double = js.native
+  /* 1 */ val manual: manual with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextInputPaneDisplayPolicy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextInputPaneDisplayPolicy with scala.Double
   ] = js.native
 }
 

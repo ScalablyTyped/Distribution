@@ -25,10 +25,10 @@ object HierarchyMode extends js.Object {
   sealed trait Standard
     extends sharepointLib.SPNs.JsGridNs.HierarchyMode
   
-  val Grouping: Grouping with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Standard: Standard with java.lang.String = js.native
+  /* 2 */ val Grouping: Grouping with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Standard: Standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.HierarchyMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.HierarchyMode with scala.Double] = js.native
 }
 

@@ -21,11 +21,11 @@ object ContainerType extends js.Object {
   sealed trait Stack
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ContainerType
   
-  val Canvas: Canvas with java.lang.String = js.native
-  val Stack: Stack with java.lang.String = js.native
+  /* 0 */ val Canvas: Canvas with scala.Double = js.native
+  /* 1 */ val Stack: Stack with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ContainerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ContainerType with scala.Double
   ] = js.native
 }
 

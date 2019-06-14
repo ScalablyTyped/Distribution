@@ -27,12 +27,12 @@ object DeviceWatcherEventKind extends js.Object {
   sealed trait update
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceWatcherEventKind
   
-  val add: add with java.lang.String = js.native
-  val remove: remove with java.lang.String = js.native
-  val update: update with java.lang.String = js.native
+  /* 0 */ val add: add with scala.Double = js.native
+  /* 2 */ val remove: remove with scala.Double = js.native
+  /* 1 */ val update: update with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceWatcherEventKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceWatcherEventKind with scala.Double
   ] = js.native
 }
 

@@ -131,37 +131,37 @@ object EventType extends js.Object {
   sealed trait OnVacateChange
     extends sharepointLib.SPNs.JsGridNs.EventType
   
-  val OnBeforeGridDispose: OnBeforeGridDispose with java.lang.String = js.native
-  val OnBeforePropertyChanged: OnBeforePropertyChanged with java.lang.String = js.native
-  val OnBeginRedoDataUpdateChange: OnBeginRedoDataUpdateChange with java.lang.String = js.native
-  val OnBeginRenameColumn: OnBeginRenameColumn with java.lang.String = js.native
-  val OnBeginUndoDataUpdateChange: OnBeginUndoDataUpdateChange with java.lang.String = js.native
-  val OnCellEditBegin: OnCellEditBegin with java.lang.String = js.native
-  val OnCellEditCompleted: OnCellEditCompleted with java.lang.String = js.native
-  val OnCellErrorStateChanged: OnCellErrorStateChanged with java.lang.String = js.native
-  val OnCellFocusChanged: OnCellFocusChanged with java.lang.String = js.native
-  val OnDoubleClick: OnDoubleClick with java.lang.String = js.native
-  val OnEndRenameColumn: OnEndRenameColumn with java.lang.String = js.native
-  val OnEntryRecordAdded: OnEntryRecordAdded with java.lang.String = js.native
-  val OnEntryRecordCommitted: OnEntryRecordCommitted with java.lang.String = js.native
-  val OnEntryRecordPropertyChanged: OnEntryRecordPropertyChanged with java.lang.String = js.native
-  val OnGridErrorStateChanged: OnGridErrorStateChanged with java.lang.String = js.native
-  val OnInitialChangesForChangeKeyComplete: OnInitialChangesForChangeKeyComplete with java.lang.String = js.native
-  val OnPasteBegin: OnPasteBegin with java.lang.String = js.native
-  val OnPasteEnd: OnPasteEnd with java.lang.String = js.native
-  val OnPropertyChanged: OnPropertyChanged with java.lang.String = js.native
-  val OnRecordChecked: OnRecordChecked with java.lang.String = js.native
-  val OnRecordDeleted: OnRecordDeleted with java.lang.String = js.native
-  val OnRecordInserted: OnRecordInserted with java.lang.String = js.native
-  val OnRecordsReordered: OnRecordsReordered with java.lang.String = js.native
-  val OnRightClick: OnRightClick with java.lang.String = js.native
-  val OnRowErrorStateChanged: OnRowErrorStateChanged with java.lang.String = js.native
-  val OnRowEscape: OnRowEscape with java.lang.String = js.native
-  val OnRowFocusChanged: OnRowFocusChanged with java.lang.String = js.native
-  val OnSingleCellClick: OnSingleCellClick with java.lang.String = js.native
-  val OnSingleCellKeyDown: OnSingleCellKeyDown with java.lang.String = js.native
-  val OnVacateChange: OnVacateChange with java.lang.String = js.native
+  /* 15 */ val OnBeforeGridDispose: OnBeforeGridDispose with scala.Double = js.native
+  /* 22 */ val OnBeforePropertyChanged: OnBeforePropertyChanged with scala.Double = js.native
+  /* 28 */ val OnBeginRedoDataUpdateChange: OnBeginRedoDataUpdateChange with scala.Double = js.native
+  /* 24 */ val OnBeginRenameColumn: OnBeginRenameColumn with scala.Double = js.native
+  /* 29 */ val OnBeginUndoDataUpdateChange: OnBeginUndoDataUpdateChange with scala.Double = js.native
+  /* 2 */ val OnCellEditBegin: OnCellEditBegin with scala.Double = js.native
+  /* 3 */ val OnCellEditCompleted: OnCellEditCompleted with scala.Double = js.native
+  /* 9 */ val OnCellErrorStateChanged: OnCellErrorStateChanged with scala.Double = js.native
+  /* 0 */ val OnCellFocusChanged: OnCellFocusChanged with scala.Double = js.native
+  /* 14 */ val OnDoubleClick: OnDoubleClick with scala.Double = js.native
+  /* 25 */ val OnEndRenameColumn: OnEndRenameColumn with scala.Double = js.native
+  /* 10 */ val OnEntryRecordAdded: OnEntryRecordAdded with scala.Double = js.native
+  /* 11 */ val OnEntryRecordCommitted: OnEntryRecordCommitted with scala.Double = js.native
+  /* 12 */ val OnEntryRecordPropertyChanged: OnEntryRecordPropertyChanged with scala.Double = js.native
+  /* 19 */ val OnGridErrorStateChanged: OnGridErrorStateChanged with scala.Double = js.native
+  /* 17 */ val OnInitialChangesForChangeKeyComplete: OnInitialChangesForChangeKeyComplete with scala.Double = js.native
+  /* 26 */ val OnPasteBegin: OnPasteBegin with scala.Double = js.native
+  /* 27 */ val OnPasteEnd: OnPasteEnd with scala.Double = js.native
+  /* 5 */ val OnPropertyChanged: OnPropertyChanged with scala.Double = js.native
+  /* 8 */ val OnRecordChecked: OnRecordChecked with scala.Double = js.native
+  /* 7 */ val OnRecordDeleted: OnRecordDeleted with scala.Double = js.native
+  /* 6 */ val OnRecordInserted: OnRecordInserted with scala.Double = js.native
+  /* 21 */ val OnRecordsReordered: OnRecordsReordered with scala.Double = js.native
+  /* 4 */ val OnRightClick: OnRightClick with scala.Double = js.native
+  /* 13 */ val OnRowErrorStateChanged: OnRowErrorStateChanged with scala.Double = js.native
+  /* 23 */ val OnRowEscape: OnRowEscape with scala.Double = js.native
+  /* 1 */ val OnRowFocusChanged: OnRowFocusChanged with scala.Double = js.native
+  /* 16 */ val OnSingleCellClick: OnSingleCellClick with scala.Double = js.native
+  /* 20 */ val OnSingleCellKeyDown: OnSingleCellKeyDown with scala.Double = js.native
+  /* 18 */ val OnVacateChange: OnVacateChange with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.EventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.EventType with scala.Double] = js.native
 }
 

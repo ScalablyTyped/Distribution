@@ -18,3 +18,26 @@ import scala.scalajs.js.annotation._
 */
 trait XlErrorChecks extends js.Object
 
+object XlErrorChecks {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlEmptyCellReferences: activexDashExcelLib.activexDashExcelLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def xlEvaluateToError: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlInconsistentFormula: activexDashExcelLib.activexDashExcelLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def xlInconsistentListFormula: activexDashExcelLib.activexDashExcelLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def xlListDataValidation: activexDashExcelLib.activexDashExcelLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def xlNumberAsText: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlOmittedCells: activexDashExcelLib.activexDashExcelLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def xlTextDate: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlUnlockedFormulaCells: activexDashExcelLib.activexDashExcelLibNumbers.`6` = this.cast(6)
+}
+

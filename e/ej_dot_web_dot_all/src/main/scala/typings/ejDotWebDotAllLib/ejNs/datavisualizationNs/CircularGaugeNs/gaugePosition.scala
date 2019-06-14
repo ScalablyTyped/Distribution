@@ -56,18 +56,18 @@ object gaugePosition extends js.Object {
   sealed trait TopRight
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.gaugePosition
   
-  val BottomCenter: BottomCenter with java.lang.String = js.native
-  val BottomLeft: BottomLeft with java.lang.String = js.native
-  val BottomRight: BottomRight with java.lang.String = js.native
-  val Center: Center with java.lang.String = js.native
-  val MiddleLeft: MiddleLeft with java.lang.String = js.native
-  val MiddleRight: MiddleRight with java.lang.String = js.native
-  val TopCenter: TopCenter with java.lang.String = js.native
-  val TopLeft: TopLeft with java.lang.String = js.native
-  val TopRight: TopRight with java.lang.String = js.native
+  /* 8 */ val BottomCenter: BottomCenter with scala.Double = js.native
+  /* 6 */ val BottomLeft: BottomLeft with scala.Double = js.native
+  /* 7 */ val BottomRight: BottomRight with scala.Double = js.native
+  /* 5 */ val Center: Center with scala.Double = js.native
+  /* 3 */ val MiddleLeft: MiddleLeft with scala.Double = js.native
+  /* 4 */ val MiddleRight: MiddleRight with scala.Double = js.native
+  /* 2 */ val TopCenter: TopCenter with scala.Double = js.native
+  /* 0 */ val TopLeft: TopLeft with scala.Double = js.native
+  /* 1 */ val TopRight: TopRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.gaugePosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.gaugePosition with scala.Double
   ] = js.native
 }
 

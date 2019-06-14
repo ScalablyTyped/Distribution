@@ -43,17 +43,15 @@ object EDepthFunction extends js.Object {
   sealed trait NOTEQUAL
     extends wonderDotJsLib.distEs2015DeviceDeviceManagerMod.EDepthFunction
   
-  val ALWAYS: ALWAYS with java.lang.String = js.native
-  val EQUAL: EQUAL with java.lang.String = js.native
-  val GEQUAL: GEQUAL with java.lang.String = js.native
-  val GREATER: GREATER with java.lang.String = js.native
-  val LEQUAL: LEQUAL with java.lang.String = js.native
-  val LESS: LESS with java.lang.String = js.native
-  val NEVER: NEVER with java.lang.String = js.native
-  val NOTEQUAL: NOTEQUAL with java.lang.String = js.native
+  /* 1 */ val ALWAYS: ALWAYS with scala.Double = js.native
+  /* 4 */ val EQUAL: EQUAL with scala.Double = js.native
+  /* 5 */ val GEQUAL: GEQUAL with scala.Double = js.native
+  /* 6 */ val GREATER: GREATER with scala.Double = js.native
+  /* 3 */ val LEQUAL: LEQUAL with scala.Double = js.native
+  /* 2 */ val LESS: LESS with scala.Double = js.native
+  /* 0 */ val NEVER: NEVER with scala.Double = js.native
+  /* 7 */ val NOTEQUAL: NOTEQUAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015DeviceDeviceManagerMod.EDepthFunction with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[wonderDotJsLib.distEs2015DeviceDeviceManagerMod.EDepthFunction with scala.Double] = js.native
 }
 

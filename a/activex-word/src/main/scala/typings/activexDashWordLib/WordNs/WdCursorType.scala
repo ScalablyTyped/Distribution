@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait WdCursorType extends js.Object
 
+object WdCursorType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdCursorIBeam: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdCursorNormal: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdCursorNorthwestArrow: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdCursorWait: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

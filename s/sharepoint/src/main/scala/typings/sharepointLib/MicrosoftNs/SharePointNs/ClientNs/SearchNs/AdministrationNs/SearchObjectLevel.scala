@@ -27,13 +27,13 @@ object SearchObjectLevel extends js.Object {
   sealed trait ssa
     extends sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.AdministrationNs.SearchObjectLevel
   
-  val spSite: spSite with java.lang.String = js.native
-  val spSiteSubscription: spSiteSubscription with java.lang.String = js.native
-  val spWeb: spWeb with java.lang.String = js.native
-  val ssa: ssa with java.lang.String = js.native
+  /* 1 */ val spSite: spSite with scala.Double = js.native
+  /* 2 */ val spSiteSubscription: spSiteSubscription with scala.Double = js.native
+  /* 0 */ val spWeb: spWeb with scala.Double = js.native
+  /* 3 */ val ssa: ssa with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.AdministrationNs.SearchObjectLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.AdministrationNs.SearchObjectLevel with scala.Double
   ] = js.native
 }
 

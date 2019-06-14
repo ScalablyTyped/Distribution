@@ -15,8 +15,8 @@ object ULSTraceLevel extends js.Object {
   sealed trait verbose
     extends sharepointLib.SPNs.ULSTraceLevel
   
-  val verbose: verbose with java.lang.String = js.native
+  /* 0 */ val verbose: verbose with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ULSTraceLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ULSTraceLevel with scala.Double] = js.native
 }
 

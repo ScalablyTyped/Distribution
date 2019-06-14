@@ -21,9 +21,9 @@ object ButtonMode extends js.Object {
   sealed trait Split
     extends ejDotWebDotAllLib.ejNs.ButtonMode
   
-  val Dropdown: Dropdown with java.lang.String = js.native
-  val Split: Split with java.lang.String = js.native
+  /* 1 */ val Dropdown: Dropdown with scala.Double = js.native
+  /* 0 */ val Split: Split with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ButtonMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ButtonMode with scala.Double] = js.native
 }
 

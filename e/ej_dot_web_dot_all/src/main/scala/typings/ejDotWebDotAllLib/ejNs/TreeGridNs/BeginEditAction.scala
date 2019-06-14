@@ -21,9 +21,9 @@ object BeginEditAction extends js.Object {
   sealed trait DblClick
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.BeginEditAction
   
-  val Click: Click with java.lang.String = js.native
-  val DblClick: DblClick with java.lang.String = js.native
+  /* 1 */ val Click: Click with scala.Double = js.native
+  /* 0 */ val DblClick: DblClick with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.BeginEditAction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.BeginEditAction with scala.Double] = js.native
 }
 

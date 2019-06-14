@@ -23,9 +23,9 @@ object AudioMode extends js.Object {
   sealed trait VIBRATE
     extends clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.AudioMode
   
-  val NORMAL: NORMAL with scala.Double = js.native
+  /* 1 */ val NORMAL: NORMAL with scala.Double = js.native
   /* 0 */ val SILENT: SILENT with scala.Double = js.native
-  val VIBRATE: VIBRATE with scala.Double = js.native
+  /* 0 */ val VIBRATE: VIBRATE with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[
     clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.AudioMode with scala.Double

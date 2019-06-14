@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdIndexSortBy extends js.Object
 
+object WdIndexSortBy {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdIndexSortByStroke: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdIndexSortBySyllable: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

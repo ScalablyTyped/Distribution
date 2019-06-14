@@ -35,13 +35,13 @@ object ClickContext extends js.Object {
   sealed trait SelectAllSquare
     extends sharepointLib.SPNs.JsGridNs.ClickContext
   
-  val Cell: Cell with java.lang.String = js.native
-  val ColumnHeader: ColumnHeader with java.lang.String = js.native
-  val Gantt: Gantt with java.lang.String = js.native
-  val Other: Other with java.lang.String = js.native
-  val RowHeader: RowHeader with java.lang.String = js.native
-  val SelectAllSquare: SelectAllSquare with java.lang.String = js.native
+  /* 3 */ val Cell: Cell with scala.Double = js.native
+  /* 2 */ val ColumnHeader: ColumnHeader with scala.Double = js.native
+  /* 4 */ val Gantt: Gantt with scala.Double = js.native
+  /* 5 */ val Other: Other with scala.Double = js.native
+  /* 1 */ val RowHeader: RowHeader with scala.Double = js.native
+  /* 0 */ val SelectAllSquare: SelectAllSquare with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.ClickContext with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.ClickContext with scala.Double] = js.native
 }
 

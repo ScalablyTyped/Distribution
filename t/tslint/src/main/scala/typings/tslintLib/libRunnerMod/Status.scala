@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait Status extends js.Object
 
+object Status {
+  @scala.inline
+  def FatalError: tslintLib.tslintLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def LintError: tslintLib.tslintLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def Ok: tslintLib.tslintLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

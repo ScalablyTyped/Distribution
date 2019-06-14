@@ -32,11 +32,11 @@ object MediaPlaybackType extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPlaybackType
   
-  val image: image with java.lang.String = js.native
-  val music: music with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 3 */ val image: image with scala.Double = js.native
+  /* 1 */ val music: music with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 2 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.MediaPlaybackType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.MediaPlaybackType with scala.Double] = js.native
 }
 

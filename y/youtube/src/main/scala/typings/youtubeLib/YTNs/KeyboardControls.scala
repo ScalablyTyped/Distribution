@@ -11,3 +11,18 @@ import scala.scalajs.js.annotation._
 */
 trait KeyboardControls extends js.Object
 
+object KeyboardControls {
+  /**
+  		 * Keyboard controls are disabled.
+  		 */
+  @scala.inline
+  def Disable: youtubeLib.youtubeLibNumbers.`1` = this.cast(1)
+  /**
+  		 * Keyboard controls are enabled.
+  		 */
+  @scala.inline
+  def Enable: youtubeLib.youtubeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

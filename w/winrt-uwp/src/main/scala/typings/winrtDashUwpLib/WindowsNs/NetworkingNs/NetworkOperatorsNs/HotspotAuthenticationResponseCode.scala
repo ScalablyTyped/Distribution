@@ -47,16 +47,16 @@ object HotspotAuthenticationResponseCode extends js.Object {
   sealed trait radiusServerError
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationResponseCode
   
-  val accessGatewayInternalError: accessGatewayInternalError with java.lang.String = js.native
-  val loginAborted: loginAborted with java.lang.String = js.native
-  val loginFailed: loginFailed with java.lang.String = js.native
-  val loginSucceeded: loginSucceeded with java.lang.String = js.native
-  val networkAdministratorError: networkAdministratorError with java.lang.String = js.native
-  val noError: noError with java.lang.String = js.native
-  val radiusServerError: radiusServerError with java.lang.String = js.native
+  /* 6 */ val accessGatewayInternalError: accessGatewayInternalError with scala.Double = js.native
+  /* 5 */ val loginAborted: loginAborted with scala.Double = js.native
+  /* 2 */ val loginFailed: loginFailed with scala.Double = js.native
+  /* 1 */ val loginSucceeded: loginSucceeded with scala.Double = js.native
+  /* 4 */ val networkAdministratorError: networkAdministratorError with scala.Double = js.native
+  /* 0 */ val noError: noError with scala.Double = js.native
+  /* 3 */ val radiusServerError: radiusServerError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationResponseCode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationResponseCode with scala.Double
   ] = js.native
 }
 

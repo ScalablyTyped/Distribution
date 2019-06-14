@@ -139,39 +139,39 @@ object DelegateType extends js.Object {
   sealed trait WillAddColumnMenuItems
     extends sharepointLib.SPNs.JsGridNs.DelegateType
   
-  val AddColumnMenuItems: AddColumnMenuItems with java.lang.String = js.native
-  val AddNewColumn: AddNewColumn with java.lang.String = js.native
-  val AddNewColumnMenuItems: AddNewColumnMenuItems with java.lang.String = js.native
-  val AllowSelectionChange: AllowSelectionChange with java.lang.String = js.native
-  val AutoFilter: AutoFilter with java.lang.String = js.native
-  val CanReorderRecords: CanReorderRecords with java.lang.String = js.native
-  val CreateEntryRecord: CreateEntryRecord with java.lang.String = js.native
-  val DeleteRecords: DeleteRecords with java.lang.String = js.native
-  val ExpandColumnMenu: ExpandColumnMenu with java.lang.String = js.native
-  val ExpandConflictResolution: ExpandConflictResolution with java.lang.String = js.native
-  val ExpandDelayLoadedHierarchyNode: ExpandDelayLoadedHierarchyNode with java.lang.String = js.native
-  val Filter: Filter with java.lang.String = js.native
-  val GetAutoFilterEntries: GetAutoFilterEntries with java.lang.String = js.native
-  val GetFieldEditMode: GetFieldEditMode with java.lang.String = js.native
-  val GetFieldReadOnlyActiveState: GetFieldReadOnlyActiveState with java.lang.String = js.native
-  val GetGridRowStyleId: GetGridRowStyleId with java.lang.String = js.native
-  val GetRecordEditMode: GetRecordEditMode with java.lang.String = js.native
-  val IndentRecords: IndentRecords with java.lang.String = js.native
-  val InsertRecord: InsertRecord with java.lang.String = js.native
-  val IsRecordInsertInView: IsRecordInsertInView with java.lang.String = js.native
-  val LaunchFilterDialog: LaunchFilterDialog with java.lang.String = js.native
-  val NextPage: NextPage with java.lang.String = js.native
-  val OnBeforeRecordReordered: OnBeforeRecordReordered with java.lang.String = js.native
-  val OutdentRecords: OutdentRecords with java.lang.String = js.native
-  val RemoveColumnFromView: RemoveColumnFromView with java.lang.String = js.native
-  val ReorderColumnPositionInView: ReorderColumnPositionInView with java.lang.String = js.native
-  val ShowColumnConfigurationDialog: ShowColumnConfigurationDialog with java.lang.String = js.native
-  val Sort: Sort with java.lang.String = js.native
-  val TryBeginPaste: TryBeginPaste with java.lang.String = js.native
-  val TryCreateProvisionalRecord: TryCreateProvisionalRecord with java.lang.String = js.native
-  val TryInsertEntryRecord: TryInsertEntryRecord with java.lang.String = js.native
-  val WillAddColumnMenuItems: WillAddColumnMenuItems with java.lang.String = js.native
+  /* 1 */ val AddColumnMenuItems: AddColumnMenuItems with scala.Double = js.native
+  /* 21 */ val AddNewColumn: AddNewColumn with scala.Double = js.native
+  /* 26 */ val AddNewColumnMenuItems: AddNewColumnMenuItems with scala.Double = js.native
+  /* 28 */ val AllowSelectionChange: AllowSelectionChange with scala.Double = js.native
+  /* 10 */ val AutoFilter: AutoFilter with scala.Double = js.native
+  /* 25 */ val CanReorderRecords: CanReorderRecords with scala.Double = js.native
+  /* 17 */ val CreateEntryRecord: CreateEntryRecord with scala.Double = js.native
+  /* 5 */ val DeleteRecords: DeleteRecords with scala.Double = js.native
+  /* 0 */ val ExpandColumnMenu: ExpandColumnMenu with scala.Double = js.native
+  /* 11 */ val ExpandConflictResolution: ExpandConflictResolution with scala.Double = js.native
+  /* 9 */ val ExpandDelayLoadedHierarchyNode: ExpandDelayLoadedHierarchyNode with scala.Double = js.native
+  /* 3 */ val Filter: Filter with scala.Double = js.native
+  /* 12 */ val GetAutoFilterEntries: GetAutoFilterEntries with scala.Double = js.native
+  /* 29 */ val GetFieldEditMode: GetFieldEditMode with scala.Double = js.native
+  /* 30 */ val GetFieldReadOnlyActiveState: GetFieldReadOnlyActiveState with scala.Double = js.native
+  /* 16 */ val GetGridRowStyleId: GetGridRowStyleId with scala.Double = js.native
+  /* 15 */ val GetRecordEditMode: GetRecordEditMode with scala.Double = js.native
+  /* 6 */ val IndentRecords: IndentRecords with scala.Double = js.native
+  /* 4 */ val InsertRecord: InsertRecord with scala.Double = js.native
+  /* 8 */ val IsRecordInsertInView: IsRecordInsertInView with scala.Double = js.native
+  /* 13 */ val LaunchFilterDialog: LaunchFilterDialog with scala.Double = js.native
+  /* 20 */ val NextPage: NextPage with scala.Double = js.native
+  /* 31 */ val OnBeforeRecordReordered: OnBeforeRecordReordered with scala.Double = js.native
+  /* 7 */ val OutdentRecords: OutdentRecords with scala.Double = js.native
+  /* 22 */ val RemoveColumnFromView: RemoveColumnFromView with scala.Double = js.native
+  /* 23 */ val ReorderColumnPositionInView: ReorderColumnPositionInView with scala.Double = js.native
+  /* 14 */ val ShowColumnConfigurationDialog: ShowColumnConfigurationDialog with scala.Double = js.native
+  /* 2 */ val Sort: Sort with scala.Double = js.native
+  /* 27 */ val TryBeginPaste: TryBeginPaste with scala.Double = js.native
+  /* 24 */ val TryCreateProvisionalRecord: TryCreateProvisionalRecord with scala.Double = js.native
+  /* 18 */ val TryInsertEntryRecord: TryInsertEntryRecord with scala.Double = js.native
+  /* 19 */ val WillAddColumnMenuItems: WillAddColumnMenuItems with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.DelegateType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.DelegateType with scala.Double] = js.native
 }
 

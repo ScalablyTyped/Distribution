@@ -32,13 +32,13 @@ object MarshalingType extends js.Object {
   sealed trait standard
     extends winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.MarshalingType
   
-  val agile: agile with java.lang.String = js.native
-  val invalidMarshaling: invalidMarshaling with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val standard: standard with java.lang.String = js.native
+  /* 1 */ val agile: agile with scala.Double = js.native
+  /* 3 */ val invalidMarshaling: invalidMarshaling with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val standard: standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.MarshalingType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.MarshalingType with scala.Double
   ] = js.native
 }
 

@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlCredentialsMethod extends js.Object
 
+object XlCredentialsMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlCredentialsMethodIntegrated: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlCredentialsMethodNone: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlCredentialsMethodStored: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

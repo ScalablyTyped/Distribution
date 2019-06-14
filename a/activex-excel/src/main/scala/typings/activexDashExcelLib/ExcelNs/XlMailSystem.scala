@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlMailSystem extends js.Object
 
+object XlMailSystem {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlMAPI: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlNoMailSystem: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlPowerTalk: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

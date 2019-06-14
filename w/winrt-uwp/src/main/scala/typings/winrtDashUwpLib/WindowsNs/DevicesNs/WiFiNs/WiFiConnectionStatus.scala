@@ -47,16 +47,16 @@ object WiFiConnectionStatus extends js.Object {
   sealed trait unsupportedAuthenticationProtocol
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiConnectionStatus
   
-  val accessRevoked: accessRevoked with java.lang.String = js.native
-  val invalidCredential: invalidCredential with java.lang.String = js.native
-  val networkNotAvailable: networkNotAvailable with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val timeout: timeout with java.lang.String = js.native
-  val unspecifiedFailure: unspecifiedFailure with java.lang.String = js.native
-  val unsupportedAuthenticationProtocol: unsupportedAuthenticationProtocol with java.lang.String = js.native
+  /* 2 */ val accessRevoked: accessRevoked with scala.Double = js.native
+  /* 3 */ val invalidCredential: invalidCredential with scala.Double = js.native
+  /* 4 */ val networkNotAvailable: networkNotAvailable with scala.Double = js.native
+  /* 1 */ val success: success with scala.Double = js.native
+  /* 5 */ val timeout: timeout with scala.Double = js.native
+  /* 0 */ val unspecifiedFailure: unspecifiedFailure with scala.Double = js.native
+  /* 6 */ val unsupportedAuthenticationProtocol: unsupportedAuthenticationProtocol with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiConnectionStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiConnectionStatus with scala.Double
   ] = js.native
 }
 

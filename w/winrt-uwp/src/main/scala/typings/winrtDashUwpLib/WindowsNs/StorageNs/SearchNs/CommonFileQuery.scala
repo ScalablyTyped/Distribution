@@ -42,15 +42,13 @@ object CommonFileQuery extends js.Object {
   sealed trait orderByTitle
     extends winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.CommonFileQuery
   
-  val defaultQuery: defaultQuery with java.lang.String = js.native
-  val orderByDate: orderByDate with java.lang.String = js.native
-  val orderByMusicProperties: orderByMusicProperties with java.lang.String = js.native
-  val orderByName: orderByName with java.lang.String = js.native
-  val orderBySearchRank: orderBySearchRank with java.lang.String = js.native
-  val orderByTitle: orderByTitle with java.lang.String = js.native
+  /* 0 */ val defaultQuery: defaultQuery with scala.Double = js.native
+  /* 5 */ val orderByDate: orderByDate with scala.Double = js.native
+  /* 3 */ val orderByMusicProperties: orderByMusicProperties with scala.Double = js.native
+  /* 1 */ val orderByName: orderByName with scala.Double = js.native
+  /* 4 */ val orderBySearchRank: orderBySearchRank with scala.Double = js.native
+  /* 2 */ val orderByTitle: orderByTitle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.CommonFileQuery with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.CommonFileQuery with scala.Double] = js.native
 }
 

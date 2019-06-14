@@ -42,15 +42,15 @@ object PerceptionFrameSourcePropertyChangeStatus extends js.Object {
   sealed trait valueOutOfRange
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PerceptionNs.PerceptionFrameSourcePropertyChangeStatus
   
-  val accepted: accepted with java.lang.String = js.native
-  val lostControl: lostControl with java.lang.String = js.native
-  val propertyNotSupported: propertyNotSupported with java.lang.String = js.native
-  val propertyReadOnly: propertyReadOnly with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val valueOutOfRange: valueOutOfRange with java.lang.String = js.native
+  /* 1 */ val accepted: accepted with scala.Double = js.native
+  /* 2 */ val lostControl: lostControl with scala.Double = js.native
+  /* 3 */ val propertyNotSupported: propertyNotSupported with scala.Double = js.native
+  /* 4 */ val propertyReadOnly: propertyReadOnly with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 5 */ val valueOutOfRange: valueOutOfRange with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PerceptionNs.PerceptionFrameSourcePropertyChangeStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PerceptionNs.PerceptionFrameSourcePropertyChangeStatus with scala.Double
   ] = js.native
 }
 

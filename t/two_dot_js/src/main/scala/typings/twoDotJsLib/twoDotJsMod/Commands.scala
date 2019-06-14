@@ -31,12 +31,12 @@ object Commands extends js.Object {
   sealed trait move
     extends twoDotJsLib.twoDotJsMod.Commands
   
-  val arc: arc with java.lang.String = js.native
-  val close: close with java.lang.String = js.native
-  val curve: curve with java.lang.String = js.native
-  val line: line with java.lang.String = js.native
-  val move: move with java.lang.String = js.native
+  /* 3 */ val arc: arc with scala.Double = js.native
+  /* 4 */ val close: close with scala.Double = js.native
+  /* 2 */ val curve: curve with scala.Double = js.native
+  /* 1 */ val line: line with scala.Double = js.native
+  /* 0 */ val move: move with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[twoDotJsLib.twoDotJsMod.Commands with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[twoDotJsLib.twoDotJsMod.Commands with scala.Double] = js.native
 }
 

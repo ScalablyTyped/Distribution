@@ -31,11 +31,11 @@ object ImeMode extends js.Object {
   sealed trait Inactive
     extends openui5Lib.sapNs.uiNs.coreNs.ImeMode
   
-  val Active: Active with java.lang.String = js.native
-  val Auto: Auto with java.lang.String = js.native
-  val Disabled: Disabled with java.lang.String = js.native
-  val Inactive: Inactive with java.lang.String = js.native
+  /* 0 */ val Active: Active with scala.Double = js.native
+  /* 1 */ val Auto: Auto with scala.Double = js.native
+  /* 2 */ val Disabled: Disabled with scala.Double = js.native
+  /* 3 */ val Inactive: Inactive with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.ImeMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.ImeMode with scala.Double] = js.native
 }
 

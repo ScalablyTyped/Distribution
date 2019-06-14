@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait OpenFileOptions extends js.Object
 
+object OpenFileOptions {
+  @scala.inline
+  def Open: xrmLib.xrmLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Save: xrmLib.xrmLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

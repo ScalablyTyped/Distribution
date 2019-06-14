@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait OSInFocusDisplayOption extends js.Object
 
+object OSInFocusDisplayOption {
+  @scala.inline
+  def InAppAlert: onesignalDashCordovaDashPluginLib.onesignalDashCordovaDashPluginLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def None: onesignalDashCordovaDashPluginLib.onesignalDashCordovaDashPluginLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def Notification: onesignalDashCordovaDashPluginLib.onesignalDashCordovaDashPluginLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

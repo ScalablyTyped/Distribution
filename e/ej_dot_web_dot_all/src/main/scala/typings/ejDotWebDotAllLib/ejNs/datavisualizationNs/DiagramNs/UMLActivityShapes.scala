@@ -76,22 +76,22 @@ object UMLActivityShapes extends js.Object {
   sealed trait TimeEvent
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityShapes
   
-  val AcceptingEvent: AcceptingEvent with java.lang.String = js.native
-  val Action: Action with java.lang.String = js.native
-  val Decision: Decision with java.lang.String = js.native
-  val FinalNode: FinalNode with java.lang.String = js.native
-  val ForkNode: ForkNode with java.lang.String = js.native
-  val InitialNode: InitialNode with java.lang.String = js.native
-  val JoinNode: JoinNode with java.lang.String = js.native
-  val MergeNode: MergeNode with java.lang.String = js.native
-  val Note: Note with java.lang.String = js.native
-  val ReceiveSignal: ReceiveSignal with java.lang.String = js.native
-  val SendSignal: SendSignal with java.lang.String = js.native
-  val StructuredNode: StructuredNode with java.lang.String = js.native
-  val TimeEvent: TimeEvent with java.lang.String = js.native
+  /* 8 */ val AcceptingEvent: AcceptingEvent with scala.Double = js.native
+  /* 0 */ val Action: Action with scala.Double = js.native
+  /* 1 */ val Decision: Decision with scala.Double = js.native
+  /* 4 */ val FinalNode: FinalNode with scala.Double = js.native
+  /* 5 */ val ForkNode: ForkNode with scala.Double = js.native
+  /* 3 */ val InitialNode: InitialNode with scala.Double = js.native
+  /* 6 */ val JoinNode: JoinNode with scala.Double = js.native
+  /* 2 */ val MergeNode: MergeNode with scala.Double = js.native
+  /* 12 */ val Note: Note with scala.Double = js.native
+  /* 10 */ val ReceiveSignal: ReceiveSignal with scala.Double = js.native
+  /* 9 */ val SendSignal: SendSignal with scala.Double = js.native
+  /* 11 */ val StructuredNode: StructuredNode with scala.Double = js.native
+  /* 7 */ val TimeEvent: TimeEvent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityShapes with scala.Double
   ] = js.native
 }
 

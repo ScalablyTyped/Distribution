@@ -66,20 +66,18 @@ object DrawingBarAction extends js.Object {
   sealed trait styleShapes
     extends bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingBarAction
   
-  val all: all with java.lang.String = js.native
-  val createShapes: createShapes with java.lang.String = js.native
-  val edit: edit with java.lang.String = js.native
-  val editShapes: editShapes with java.lang.String = js.native
-  val erase: erase with java.lang.String = js.native
-  val fillStyle: fillStyle with java.lang.String = js.native
-  val point: point with java.lang.String = js.native
-  val polygon: polygon with java.lang.String = js.native
-  val polyline: polyline with java.lang.String = js.native
-  val strokeStyle: strokeStyle with java.lang.String = js.native
-  val styleShapes: styleShapes with java.lang.String = js.native
+  /* 7 */ val all: all with scala.Double = js.native
+  /* 8 */ val createShapes: createShapes with scala.Double = js.native
+  /* 4 */ val edit: edit with scala.Double = js.native
+  /* 9 */ val editShapes: editShapes with scala.Double = js.native
+  /* 3 */ val erase: erase with scala.Double = js.native
+  /* 6 */ val fillStyle: fillStyle with scala.Double = js.native
+  /* 0 */ val point: point with scala.Double = js.native
+  /* 2 */ val polygon: polygon with scala.Double = js.native
+  /* 1 */ val polyline: polyline with scala.Double = js.native
+  /* 5 */ val strokeStyle: strokeStyle with scala.Double = js.native
+  /* 10 */ val styleShapes: styleShapes with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingBarAction with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingBarAction with scala.Double] = js.native
 }
 

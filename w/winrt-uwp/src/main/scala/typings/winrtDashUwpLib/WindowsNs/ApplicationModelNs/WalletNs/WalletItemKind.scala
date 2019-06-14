@@ -47,16 +47,16 @@ object WalletItemKind extends js.Object {
   sealed trait ticket
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletItemKind
   
-  val boardingPass: boardingPass with java.lang.String = js.native
-  val deal: deal with java.lang.String = js.native
-  val general: general with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val membershipCard: membershipCard with java.lang.String = js.native
-  val paymentInstrument: paymentInstrument with java.lang.String = js.native
-  val ticket: ticket with java.lang.String = js.native
+  /* 5 */ val boardingPass: boardingPass with scala.Double = js.native
+  /* 1 */ val deal: deal with scala.Double = js.native
+  /* 2 */ val general: general with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 6 */ val membershipCard: membershipCard with scala.Double = js.native
+  /* 3 */ val paymentInstrument: paymentInstrument with scala.Double = js.native
+  /* 4 */ val ticket: ticket with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletItemKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletItemKind with scala.Double
   ] = js.native
 }
 

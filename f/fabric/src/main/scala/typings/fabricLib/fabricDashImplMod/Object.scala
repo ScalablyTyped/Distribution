@@ -23,6 +23,12 @@ class Object ()
   	 */
   def _applyPatternGradientTransform(ctx: stdLib.CanvasRenderingContext2D, filler: java.lang.String): scala.Unit = js.native
   /**
+    * Returns the instance of the control visibility set for this object.
+    * @private
+    * @returns {Object}
+    */
+  def _getControlsVisibility(): fabricLib.Anon_BlBrMb = js.native
+  /**
     * Returns the top, left coordinates
     * @private
     * @return {fabric.Point}
@@ -471,7 +477,7 @@ class Object ()
   	 * @return thisArg
   	 */
   def saveState(): Object = js.native
-  def saveState(options: fabricLib.Anon_StateProperties): Object = js.native
+  def saveState(options: fabricLib.Anon_PropertySet): Object = js.native
   /**
   	 * Scales an object (equally by x and y)
   	 * @param value Scale factor

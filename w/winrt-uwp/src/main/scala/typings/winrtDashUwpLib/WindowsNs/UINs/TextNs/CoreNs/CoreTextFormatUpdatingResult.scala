@@ -22,11 +22,11 @@ object CoreTextFormatUpdatingResult extends js.Object {
   sealed trait succeeded
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextFormatUpdatingResult
   
-  val failed: failed with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
+  /* 1 */ val failed: failed with scala.Double = js.native
+  /* 0 */ val succeeded: succeeded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextFormatUpdatingResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.TextNs.CoreNs.CoreTextFormatUpdatingResult with scala.Double
   ] = js.native
 }
 

@@ -22,11 +22,11 @@ object DeprecationType extends js.Object {
   sealed trait remove
     extends winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.DeprecationType
   
-  val deprecate: deprecate with java.lang.String = js.native
-  val remove: remove with java.lang.String = js.native
+  /* 0 */ val deprecate: deprecate with scala.Double = js.native
+  /* 1 */ val remove: remove with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.DeprecationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.DeprecationType with scala.Double
   ] = js.native
 }
 

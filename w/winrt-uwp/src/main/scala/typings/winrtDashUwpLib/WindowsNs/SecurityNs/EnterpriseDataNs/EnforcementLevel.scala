@@ -32,13 +32,13 @@ object EnforcementLevel extends js.Object {
   sealed trait silent
     extends winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.EnforcementLevel
   
-  val block: block with java.lang.String = js.native
-  val noProtection: noProtection with java.lang.String = js.native
-  val `override`: `override` with java.lang.String = js.native
-  val silent: silent with java.lang.String = js.native
+  /* 3 */ val block: block with scala.Double = js.native
+  /* 0 */ val noProtection: noProtection with scala.Double = js.native
+  /* 2 */ val `override`: `override` with scala.Double = js.native
+  /* 1 */ val silent: silent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.EnforcementLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.EnforcementLevel with scala.Double
   ] = js.native
 }
 

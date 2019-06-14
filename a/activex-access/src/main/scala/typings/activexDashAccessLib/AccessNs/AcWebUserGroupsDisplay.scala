@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcWebUserGroupsDisplay extends js.Object
 
+object AcWebUserGroupsDisplay {
+  @scala.inline
+  def acWebUserGroupID: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acWebUserGroupName: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

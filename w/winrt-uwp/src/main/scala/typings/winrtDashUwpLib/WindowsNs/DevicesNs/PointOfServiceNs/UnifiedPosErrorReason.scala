@@ -67,20 +67,20 @@ object UnifiedPosErrorReason extends js.Object {
   sealed trait unknownErrorReason
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosErrorReason
   
-  val busy: busy with java.lang.String = js.native
-  val closed: closed with java.lang.String = js.native
-  val disabled: disabled with java.lang.String = js.native
-  val extended: extended with java.lang.String = js.native
-  val failure: failure with java.lang.String = js.native
-  val illegal: illegal with java.lang.String = js.native
-  val noHardware: noHardware with java.lang.String = js.native
-  val noService: noService with java.lang.String = js.native
-  val offline: offline with java.lang.String = js.native
-  val timeout: timeout with java.lang.String = js.native
-  val unknownErrorReason: unknownErrorReason with java.lang.String = js.native
+  /* 9 */ val busy: busy with scala.Double = js.native
+  /* 5 */ val closed: closed with scala.Double = js.native
+  /* 2 */ val disabled: disabled with scala.Double = js.native
+  /* 10 */ val extended: extended with scala.Double = js.native
+  /* 7 */ val failure: failure with scala.Double = js.native
+  /* 3 */ val illegal: illegal with scala.Double = js.native
+  /* 4 */ val noHardware: noHardware with scala.Double = js.native
+  /* 1 */ val noService: noService with scala.Double = js.native
+  /* 6 */ val offline: offline with scala.Double = js.native
+  /* 8 */ val timeout: timeout with scala.Double = js.native
+  /* 0 */ val unknownErrorReason: unknownErrorReason with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosErrorReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.UnifiedPosErrorReason with scala.Double
   ] = js.native
 }
 

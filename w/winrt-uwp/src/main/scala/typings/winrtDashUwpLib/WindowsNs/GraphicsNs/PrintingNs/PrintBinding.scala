@@ -97,26 +97,24 @@ object PrintBinding extends js.Object {
   sealed trait trim
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintBinding
   
-  val bale: bale with java.lang.String = js.native
-  val bindBottom: bindBottom with java.lang.String = js.native
-  val bindLeft: bindLeft with java.lang.String = js.native
-  val bindRight: bindRight with java.lang.String = js.native
-  val bindTop: bindTop with java.lang.String = js.native
-  val booklet: booklet with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val edgeStitchBottom: edgeStitchBottom with java.lang.String = js.native
-  val edgeStitchLeft: edgeStitchLeft with java.lang.String = js.native
-  val edgeStitchRight: edgeStitchRight with java.lang.String = js.native
-  val edgeStitchTop: edgeStitchTop with java.lang.String = js.native
-  val fold: fold with java.lang.String = js.native
-  val jogOffset: jogOffset with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val trim: trim with java.lang.String = js.native
+  /* 4 */ val bale: bale with scala.Double = js.native
+  /* 5 */ val bindBottom: bindBottom with scala.Double = js.native
+  /* 6 */ val bindLeft: bindLeft with scala.Double = js.native
+  /* 7 */ val bindRight: bindRight with scala.Double = js.native
+  /* 8 */ val bindTop: bindTop with scala.Double = js.native
+  /* 9 */ val booklet: booklet with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 10 */ val edgeStitchBottom: edgeStitchBottom with scala.Double = js.native
+  /* 11 */ val edgeStitchLeft: edgeStitchLeft with scala.Double = js.native
+  /* 12 */ val edgeStitchRight: edgeStitchRight with scala.Double = js.native
+  /* 13 */ val edgeStitchTop: edgeStitchTop with scala.Double = js.native
+  /* 14 */ val fold: fold with scala.Double = js.native
+  /* 15 */ val jogOffset: jogOffset with scala.Double = js.native
+  /* 3 */ val none: none with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 16 */ val trim: trim with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintBinding with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintBinding with scala.Double] = js.native
 }
 

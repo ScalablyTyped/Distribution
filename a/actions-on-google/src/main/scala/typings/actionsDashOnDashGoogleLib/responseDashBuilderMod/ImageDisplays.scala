@@ -35,12 +35,12 @@ object ImageDisplays extends js.Object {
   sealed trait WHITE
     extends actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays
   
-  val CROPPED: CROPPED with java.lang.String = js.native
-  val DEFAULT: DEFAULT with java.lang.String = js.native
-  val WHITE: WHITE with java.lang.String = js.native
+  /* 2 */ val CROPPED: CROPPED with scala.Double = js.native
+  /* 0 */ val DEFAULT: DEFAULT with scala.Double = js.native
+  /* 1 */ val WHITE: WHITE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays with scala.Double
   ] = js.native
 }
 

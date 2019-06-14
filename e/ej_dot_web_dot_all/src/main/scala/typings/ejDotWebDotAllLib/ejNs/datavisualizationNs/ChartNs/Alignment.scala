@@ -26,12 +26,10 @@ object Alignment extends js.Object {
   sealed trait Near
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Alignment
   
-  val Center: Center with java.lang.String = js.native
-  val Far: Far with java.lang.String = js.native
-  val Near: Near with java.lang.String = js.native
+  /* 0 */ val Center: Center with scala.Double = js.native
+  /* 2 */ val Far: Far with scala.Double = js.native
+  /* 1 */ val Near: Near with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Alignment with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Alignment with scala.Double] = js.native
 }
 

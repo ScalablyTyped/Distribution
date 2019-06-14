@@ -153,20 +153,20 @@ object TransactionValuesNs extends js.Object {
     sealed trait VIEW_DETAILS
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
-    val CALL: CALL with java.lang.String = js.native
-    val CANCEL: CANCEL with java.lang.String = js.native
-    val CUSTOMER_SERVICE: CUSTOMER_SERVICE with java.lang.String = js.native
-    val EMAIL: EMAIL with java.lang.String = js.native
-    val EXCHANGE: EXCHANGE with java.lang.String = js.native
-    val MODIFY: MODIFY with java.lang.String = js.native
-    val REORDER: REORDER with java.lang.String = js.native
-    val RETURN: RETURN with java.lang.String = js.native
-    val REVIEW: REVIEW with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
-    val VIEW_DETAILS: VIEW_DETAILS with java.lang.String = js.native
+    /* 7 */ val CALL: CALL with scala.Double = js.native
+    /* 3 */ val CANCEL: CANCEL with scala.Double = js.native
+    /* 10 */ val CUSTOMER_SERVICE: CUSTOMER_SERVICE with scala.Double = js.native
+    /* 6 */ val EMAIL: EMAIL with scala.Double = js.native
+    /* 5 */ val EXCHANGE: EXCHANGE with scala.Double = js.native
+    /* 2 */ val MODIFY: MODIFY with scala.Double = js.native
+    /* 8 */ val REORDER: REORDER with scala.Double = js.native
+    /* 4 */ val RETURN: RETURN with scala.Double = js.native
+    /* 9 */ val REVIEW: REVIEW with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
+    /* 1 */ val VIEW_DETAILS: VIEW_DETAILS with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType with scala.Double
       ] = js.native
   }
   
@@ -217,15 +217,15 @@ object TransactionValuesNs extends js.Object {
     sealed trait VISA
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
     
-    val AMEX: AMEX with java.lang.String = js.native
-    val DISCOVER: DISCOVER with java.lang.String = js.native
-    val JCB: JCB with java.lang.String = js.native
-    val MASTERCARD: MASTERCARD with java.lang.String = js.native
-    val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
-    val VISA: VISA with java.lang.String = js.native
+    /* 1 */ val AMEX: AMEX with scala.Double = js.native
+    /* 2 */ val DISCOVER: DISCOVER with scala.Double = js.native
+    /* 5 */ val JCB: JCB with scala.Double = js.native
+    /* 3 */ val MASTERCARD: MASTERCARD with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
+    /* 4 */ val VISA: VISA with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork with scala.Double
       ] = js.native
   }
   
@@ -270,14 +270,14 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN_USER_DECISION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
     
-    val ACCEPTED: ACCEPTED with java.lang.String = js.native
-    val CART_CHANGE_REQUESTED: CART_CHANGE_REQUESTED with java.lang.String = js.native
-    val DELIVERY_ADDRESS_UPDATED: DELIVERY_ADDRESS_UPDATED with java.lang.String = js.native
-    val REJECTED: REJECTED with java.lang.String = js.native
-    val UNKNOWN_USER_DECISION: UNKNOWN_USER_DECISION with java.lang.String = js.native
+    /* 1 */ val ACCEPTED: ACCEPTED with scala.Double = js.native
+    /* 4 */ val CART_CHANGE_REQUESTED: CART_CHANGE_REQUESTED with scala.Double = js.native
+    /* 3 */ val DELIVERY_ADDRESS_UPDATED: DELIVERY_ADDRESS_UPDATED with scala.Double = js.native
+    /* 2 */ val REJECTED: REJECTED with scala.Double = js.native
+    /* 0 */ val UNKNOWN_USER_DECISION: UNKNOWN_USER_DECISION with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision with scala.Double
       ] = js.native
   }
   
@@ -294,11 +294,11 @@ object TransactionValuesNs extends js.Object {
     sealed trait EMAIL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CustomerInfoProperties
     
-    val CUSTOMER_INFO_PROPERTY_UNSPECIFIED: CUSTOMER_INFO_PROPERTY_UNSPECIFIED with java.lang.String = js.native
-    val EMAIL: EMAIL with java.lang.String = js.native
+    /* 0 */ val CUSTOMER_INFO_PROPERTY_UNSPECIFIED: CUSTOMER_INFO_PROPERTY_UNSPECIFIED with scala.Double = js.native
+    /* 1 */ val EMAIL: EMAIL with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CustomerInfoProperties with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CustomerInfoProperties with scala.Double
       ] = js.native
   }
   
@@ -328,12 +328,12 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision
     
-    val ACCEPTED: ACCEPTED with java.lang.String = js.native
-    val REJECTED: REJECTED with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 1 */ val ACCEPTED: ACCEPTED with scala.Double = js.native
+    /* 2 */ val REJECTED: REJECTED with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision with scala.Double
       ] = js.native
   }
   
@@ -363,12 +363,12 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision
     
-    val ACCEPTED: ACCEPTED with java.lang.String = js.native
-    val REJECTED: REJECTED with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 1 */ val ACCEPTED: ACCEPTED with scala.Double = js.native
+    /* 2 */ val REJECTED: REJECTED with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision with scala.Double
       ] = js.native
   }
   
@@ -433,17 +433,17 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
-    val DELIVERY: DELIVERY with java.lang.String = js.native
-    val DISCOUNT: DISCOUNT with java.lang.String = js.native
-    val FEE: FEE with java.lang.String = js.native
-    val GRATUITY: GRATUITY with java.lang.String = js.native
-    val REGULAR: REGULAR with java.lang.String = js.native
-    val SUBTOTAL: SUBTOTAL with java.lang.String = js.native
-    val TAX: TAX with java.lang.String = js.native
-    val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
+    /* 5 */ val DELIVERY: DELIVERY with scala.Double = js.native
+    /* 3 */ val DISCOUNT: DISCOUNT with scala.Double = js.native
+    /* 7 */ val FEE: FEE with scala.Double = js.native
+    /* 4 */ val GRATUITY: GRATUITY with scala.Double = js.native
+    /* 1 */ val REGULAR: REGULAR with scala.Double = js.native
+    /* 6 */ val SUBTOTAL: SUBTOTAL with scala.Double = js.native
+    /* 2 */ val TAX: TAX with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType with scala.Double
       ] = js.native
   }
   
@@ -508,17 +508,17 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
-    val DELIVERY: DELIVERY with java.lang.String = js.native
-    val DISCOUNT: DISCOUNT with java.lang.String = js.native
-    val FEE: FEE with java.lang.String = js.native
-    val GRATUITY: GRATUITY with java.lang.String = js.native
-    val REGULAR: REGULAR with java.lang.String = js.native
-    val SUBTOTAL: SUBTOTAL with java.lang.String = js.native
-    val TAX: TAX with java.lang.String = js.native
-    val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
+    /* 5 */ val DELIVERY: DELIVERY with scala.Double = js.native
+    /* 3 */ val DISCOUNT: DISCOUNT with scala.Double = js.native
+    /* 7 */ val FEE: FEE with scala.Double = js.native
+    /* 4 */ val GRATUITY: GRATUITY with scala.Double = js.native
+    /* 1 */ val REGULAR: REGULAR with scala.Double = js.native
+    /* 6 */ val SUBTOTAL: SUBTOTAL with scala.Double = js.native
+    /* 2 */ val TAX: TAX with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType with scala.Double
       ] = js.native
   }
   
@@ -569,15 +569,15 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
     
-    val BUSINESS: BUSINESS with java.lang.String = js.native
-    val DELIVERY: DELIVERY with java.lang.String = js.native
-    val DESTINATION: DESTINATION with java.lang.String = js.native
-    val ORIGIN: ORIGIN with java.lang.String = js.native
-    val PICK_UP: PICK_UP with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 2 */ val BUSINESS: BUSINESS with scala.Double = js.native
+    /* 1 */ val DELIVERY: DELIVERY with scala.Double = js.native
+    /* 4 */ val DESTINATION: DESTINATION with scala.Double = js.native
+    /* 3 */ val ORIGIN: ORIGIN with scala.Double = js.native
+    /* 5 */ val PICK_UP: PICK_UP with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType with scala.Double
       ] = js.native
   }
   
@@ -663,20 +663,20 @@ object TransactionValuesNs extends js.Object {
     sealed trait VIEW_DETAILS
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
-    val CALL: CALL with java.lang.String = js.native
-    val CANCEL: CANCEL with java.lang.String = js.native
-    val CUSTOMER_SERVICE: CUSTOMER_SERVICE with java.lang.String = js.native
-    val EMAIL: EMAIL with java.lang.String = js.native
-    val EXCHANGE: EXCHANGE with java.lang.String = js.native
-    val MODIFY: MODIFY with java.lang.String = js.native
-    val REORDER: REORDER with java.lang.String = js.native
-    val RETURN: RETURN with java.lang.String = js.native
-    val REVIEW: REVIEW with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
-    val VIEW_DETAILS: VIEW_DETAILS with java.lang.String = js.native
+    /* 7 */ val CALL: CALL with scala.Double = js.native
+    /* 3 */ val CANCEL: CANCEL with scala.Double = js.native
+    /* 10 */ val CUSTOMER_SERVICE: CUSTOMER_SERVICE with scala.Double = js.native
+    /* 6 */ val EMAIL: EMAIL with scala.Double = js.native
+    /* 5 */ val EXCHANGE: EXCHANGE with scala.Double = js.native
+    /* 2 */ val MODIFY: MODIFY with scala.Double = js.native
+    /* 8 */ val REORDER: REORDER with scala.Double = js.native
+    /* 4 */ val RETURN: RETURN with scala.Double = js.native
+    /* 9 */ val REVIEW: REVIEW with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
+    /* 1 */ val VIEW_DETAILS: VIEW_DETAILS with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction with scala.Double
       ] = js.native
   }
   
@@ -727,15 +727,15 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
     
-    val BUSINESS: BUSINESS with java.lang.String = js.native
-    val DELIVERY: DELIVERY with java.lang.String = js.native
-    val DESTINATION: DESTINATION with java.lang.String = js.native
-    val ORIGIN: ORIGIN with java.lang.String = js.native
-    val PICK_UP: PICK_UP with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 2 */ val BUSINESS: BUSINESS with scala.Double = js.native
+    /* 1 */ val DELIVERY: DELIVERY with scala.Double = js.native
+    /* 4 */ val DESTINATION: DESTINATION with scala.Double = js.native
+    /* 3 */ val ORIGIN: ORIGIN with scala.Double = js.native
+    /* 5 */ val PICK_UP: PICK_UP with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType with scala.Double
       ] = js.native
   }
   
@@ -793,16 +793,16 @@ object TransactionValuesNs extends js.Object {
     sealed trait RETURNED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
-    val CANCELLED: CANCELLED with java.lang.String = js.native
-    val CONFIRMED: CONFIRMED with java.lang.String = js.native
-    val CREATED: CREATED with java.lang.String = js.native
-    val FULFILLED: FULFILLED with java.lang.String = js.native
-    val IN_TRANSIT: IN_TRANSIT with java.lang.String = js.native
-    val REJECTED: REJECTED with java.lang.String = js.native
-    val RETURNED: RETURNED with java.lang.String = js.native
+    /* 3 */ val CANCELLED: CANCELLED with scala.Double = js.native
+    /* 2 */ val CONFIRMED: CONFIRMED with scala.Double = js.native
+    /* 0 */ val CREATED: CREATED with scala.Double = js.native
+    /* 6 */ val FULFILLED: FULFILLED with scala.Double = js.native
+    /* 4 */ val IN_TRANSIT: IN_TRANSIT with scala.Double = js.native
+    /* 1 */ val REJECTED: REJECTED with scala.Double = js.native
+    /* 5 */ val RETURNED: RETURNED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState with scala.Double
       ] = js.native
   }
   
@@ -853,15 +853,15 @@ object TransactionValuesNs extends js.Object {
     sealed trait RETURN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
     
-    val CANCELLATION: CANCELLATION with java.lang.String = js.native
-    val FULFILLMENT: FULFILLMENT with java.lang.String = js.native
-    val IN_TRANSIT: IN_TRANSIT with java.lang.String = js.native
-    val RECEIPT: RECEIPT with java.lang.String = js.native
-    val REJECTION: REJECTION with java.lang.String = js.native
-    val RETURN: RETURN with java.lang.String = js.native
+    /* 2 */ val CANCELLATION: CANCELLATION with scala.Double = js.native
+    /* 4 */ val FULFILLMENT: FULFILLMENT with scala.Double = js.native
+    /* 3 */ val IN_TRANSIT: IN_TRANSIT with scala.Double = js.native
+    /* 1 */ val RECEIPT: RECEIPT with scala.Double = js.native
+    /* 0 */ val REJECTION: REJECTION with scala.Double = js.native
+    /* 5 */ val RETURN: RETURN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo with scala.Double
       ] = js.native
   }
   
@@ -892,12 +892,12 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNSPECIFIED_TOKENIZATION_TYPE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType
     
-    val DIRECT: DIRECT with java.lang.String = js.native
-    val PAYMENT_GATEWAY: PAYMENT_GATEWAY with java.lang.String = js.native
-    val UNSPECIFIED_TOKENIZATION_TYPE: UNSPECIFIED_TOKENIZATION_TYPE with java.lang.String = js.native
+    /* 2 */ val DIRECT: DIRECT with scala.Double = js.native
+    /* 1 */ val PAYMENT_GATEWAY: PAYMENT_GATEWAY with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED_TOKENIZATION_TYPE: UNSPECIFIED_TOKENIZATION_TYPE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType with scala.Double
       ] = js.native
   }
   
@@ -948,15 +948,15 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
     
-    val BANK: BANK with java.lang.String = js.native
-    val GIFT_CARD: GIFT_CARD with java.lang.String = js.native
-    val LOYALTY_PROGRAM: LOYALTY_PROGRAM with java.lang.String = js.native
-    val ON_FULFILLMENT: ON_FULFILLMENT with java.lang.String = js.native
-    val PAYMENT_CARD: PAYMENT_CARD with java.lang.String = js.native
-    val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
+    /* 2 */ val BANK: BANK with scala.Double = js.native
+    /* 5 */ val GIFT_CARD: GIFT_CARD with scala.Double = js.native
+    /* 3 */ val LOYALTY_PROGRAM: LOYALTY_PROGRAM with scala.Double = js.native
+    /* 4 */ val ON_FULFILLMENT: ON_FULFILLMENT with scala.Double = js.native
+    /* 1 */ val PAYMENT_CARD: PAYMENT_CARD with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType with scala.Double
       ] = js.native
   }
   
@@ -986,12 +986,12 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
     
-    val ACTUAL: ACTUAL with java.lang.String = js.native
-    val ESTIMATE: ESTIMATE with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 2 */ val ACTUAL: ACTUAL with scala.Double = js.native
+    /* 1 */ val ESTIMATE: ESTIMATE with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType with scala.Double
       ] = js.native
   }
   
@@ -1014,11 +1014,11 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
     
-    val PAYMENT_DECLINED: PAYMENT_DECLINED with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 1 */ val PAYMENT_DECLINED: PAYMENT_DECLINED with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType with scala.Double
       ] = js.native
   }
   
@@ -1041,11 +1041,11 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType
     
-    val PAYMENT_DECLINED: PAYMENT_DECLINED with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 1 */ val PAYMENT_DECLINED: PAYMENT_DECLINED with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType with scala.Double
       ] = js.native
   }
   
@@ -1090,14 +1090,14 @@ object TransactionValuesNs extends js.Object {
     sealed trait USER_ACTION_REQUIRED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
     
-    val ASSISTANT_SURFACE_NOT_SUPPORTED: ASSISTANT_SURFACE_NOT_SUPPORTED with java.lang.String = js.native
-    val OK: OK with java.lang.String = js.native
-    val REGION_NOT_SUPPORTED: REGION_NOT_SUPPORTED with java.lang.String = js.native
-    val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
-    val USER_ACTION_REQUIRED: USER_ACTION_REQUIRED with java.lang.String = js.native
+    /* 3 */ val ASSISTANT_SURFACE_NOT_SUPPORTED: ASSISTANT_SURFACE_NOT_SUPPORTED with scala.Double = js.native
+    /* 1 */ val OK: OK with scala.Double = js.native
+    /* 4 */ val REGION_NOT_SUPPORTED: REGION_NOT_SUPPORTED with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
+    /* 2 */ val USER_ACTION_REQUIRED: USER_ACTION_REQUIRED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType with scala.Double
       ] = js.native
   }
   
@@ -1134,13 +1134,13 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType
     
-    val DELIVERY_DATE: DELIVERY_DATE with java.lang.String = js.native
-    val ETA: ETA with java.lang.String = js.native
-    val RESERVATION_SLOT: RESERVATION_SLOT with java.lang.String = js.native
-    val UNKNOWN: UNKNOWN with java.lang.String = js.native
+    /* 1 */ val DELIVERY_DATE: DELIVERY_DATE with scala.Double = js.native
+    /* 2 */ val ETA: ETA with scala.Double = js.native
+    /* 3 */ val RESERVATION_SLOT: RESERVATION_SLOT with scala.Double = js.native
+    /* 0 */ val UNKNOWN: UNKNOWN with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType with scala.Double
       ] = js.native
   }
   
@@ -1185,14 +1185,14 @@ object TransactionValuesNs extends js.Object {
     sealed trait UNKNOWN_USER_DECISION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
     
-    val ACCEPTED: ACCEPTED with java.lang.String = js.native
-    val CART_CHANGE_REQUESTED: CART_CHANGE_REQUESTED with java.lang.String = js.native
-    val DELIVERY_ADDRESS_UPDATED: DELIVERY_ADDRESS_UPDATED with java.lang.String = js.native
-    val REJECTED: REJECTED with java.lang.String = js.native
-    val UNKNOWN_USER_DECISION: UNKNOWN_USER_DECISION with java.lang.String = js.native
+    /* 1 */ val ACCEPTED: ACCEPTED with scala.Double = js.native
+    /* 4 */ val CART_CHANGE_REQUESTED: CART_CHANGE_REQUESTED with scala.Double = js.native
+    /* 3 */ val DELIVERY_ADDRESS_UPDATED: DELIVERY_ADDRESS_UPDATED with scala.Double = js.native
+    /* 2 */ val REJECTED: REJECTED with scala.Double = js.native
+    /* 0 */ val UNKNOWN_USER_DECISION: UNKNOWN_USER_DECISION with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision with scala.Double
       ] = js.native
   }
   

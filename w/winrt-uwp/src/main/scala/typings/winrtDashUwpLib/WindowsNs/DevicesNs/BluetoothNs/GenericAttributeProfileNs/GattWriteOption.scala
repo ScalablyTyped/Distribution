@@ -22,11 +22,11 @@ object GattWriteOption extends js.Object {
   sealed trait writeWithoutResponse
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattWriteOption
   
-  val writeWithResponse: writeWithResponse with java.lang.String = js.native
-  val writeWithoutResponse: writeWithoutResponse with java.lang.String = js.native
+  /* 0 */ val writeWithResponse: writeWithResponse with scala.Double = js.native
+  /* 1 */ val writeWithoutResponse: writeWithoutResponse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattWriteOption with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattWriteOption with scala.Double
   ] = js.native
 }
 

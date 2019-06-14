@@ -27,13 +27,13 @@ object Sensitivity extends js.Object {
   sealed trait PRIVATE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Sensitivity
   
-  val CONFIDENTIAL: CONFIDENTIAL with java.lang.String = js.native
-  val NORMAL: NORMAL with java.lang.String = js.native
-  val PERSONAL: PERSONAL with java.lang.String = js.native
-  val PRIVATE: PRIVATE with java.lang.String = js.native
+  /* 0 */ val CONFIDENTIAL: CONFIDENTIAL with scala.Double = js.native
+  /* 1 */ val NORMAL: NORMAL with scala.Double = js.native
+  /* 2 */ val PERSONAL: PERSONAL with scala.Double = js.native
+  /* 3 */ val PRIVATE: PRIVATE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Sensitivity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Sensitivity with scala.Double
   ] = js.native
 }
 

@@ -47,18 +47,18 @@ object EventTypes extends js.Object {
   sealed trait TOKEN_SET
     extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.EventTypes
   
-  val ERROR: ERROR with java.lang.String = js.native
-  val LOG: LOG with java.lang.String = js.native
-  val LOGIN: LOGIN with java.lang.String = js.native
-  val LOGOUT: LOGOUT with java.lang.String = js.native
-  val RECORD_START: RECORD_START with java.lang.String = js.native
-  val RECORD_STOP: RECORD_STOP with java.lang.String = js.native
-  val REFRESH_TOKEN_SET: REFRESH_TOKEN_SET with java.lang.String = js.native
-  val TOKEN_INVALID: TOKEN_INVALID with java.lang.String = js.native
-  val TOKEN_SET: TOKEN_SET with java.lang.String = js.native
+  /* 2 */ val ERROR: ERROR with scala.Double = js.native
+  /* 4 */ val LOG: LOG with scala.Double = js.native
+  /* 5 */ val LOGIN: LOGIN with scala.Double = js.native
+  /* 6 */ val LOGOUT: LOGOUT with scala.Double = js.native
+  /* 1 */ val RECORD_START: RECORD_START with scala.Double = js.native
+  /* 0 */ val RECORD_STOP: RECORD_STOP with scala.Double = js.native
+  /* 8 */ val REFRESH_TOKEN_SET: REFRESH_TOKEN_SET with scala.Double = js.native
+  /* 3 */ val TOKEN_INVALID: TOKEN_INVALID with scala.Double = js.native
+  /* 7 */ val TOKEN_SET: TOKEN_SET with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.EventTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.EventTypes with scala.Double
   ] = js.native
 }
 

@@ -37,14 +37,14 @@ object DevicePairingKinds extends js.Object {
   sealed trait providePin
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingKinds
   
-  val confirmOnly: confirmOnly with java.lang.String = js.native
-  val confirmPinMatch: confirmPinMatch with java.lang.String = js.native
-  val displayPin: displayPin with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val providePin: providePin with java.lang.String = js.native
+  /* 1 */ val confirmOnly: confirmOnly with scala.Double = js.native
+  /* 4 */ val confirmPinMatch: confirmPinMatch with scala.Double = js.native
+  /* 2 */ val displayPin: displayPin with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val providePin: providePin with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingKinds with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingKinds with scala.Double
   ] = js.native
 }
 

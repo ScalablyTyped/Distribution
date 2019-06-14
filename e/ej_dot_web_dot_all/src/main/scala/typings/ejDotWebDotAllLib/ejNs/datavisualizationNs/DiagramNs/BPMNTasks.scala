@@ -61,19 +61,17 @@ object BPMNTasks extends js.Object {
   sealed trait User
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNTasks
   
-  val BusinessRule: BusinessRule with java.lang.String = js.native
-  val InstantiatingReceive: InstantiatingReceive with java.lang.String = js.native
-  val Manual: Manual with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Parallel: Parallel with java.lang.String = js.native
-  val Receive: Receive with java.lang.String = js.native
-  val Script: Script with java.lang.String = js.native
-  val Send: Send with java.lang.String = js.native
-  val Service: Service with java.lang.String = js.native
-  val User: User with java.lang.String = js.native
+  /* 6 */ val BusinessRule: BusinessRule with scala.Double = js.native
+  /* 4 */ val InstantiatingReceive: InstantiatingReceive with scala.Double = js.native
+  /* 5 */ val Manual: Manual with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 9 */ val Parallel: Parallel with scala.Double = js.native
+  /* 2 */ val Receive: Receive with scala.Double = js.native
+  /* 8 */ val Script: Script with scala.Double = js.native
+  /* 3 */ val Send: Send with scala.Double = js.native
+  /* 1 */ val Service: Service with scala.Double = js.native
+  /* 7 */ val User: User with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNTasks with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNTasks with scala.Double] = js.native
 }
 

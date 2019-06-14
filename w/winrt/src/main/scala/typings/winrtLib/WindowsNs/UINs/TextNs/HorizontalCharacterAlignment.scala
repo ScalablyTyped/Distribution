@@ -23,12 +23,10 @@ object HorizontalCharacterAlignment extends js.Object {
   sealed trait right
     extends winrtLib.WindowsNs.UINs.TextNs.HorizontalCharacterAlignment
   
-  val center: center with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
+  /* 2 */ val center: center with scala.Double = js.native
+  /* 0 */ val left: left with scala.Double = js.native
+  /* 1 */ val right: right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.UINs.TextNs.HorizontalCharacterAlignment with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.HorizontalCharacterAlignment with scala.Double] = js.native
 }
 

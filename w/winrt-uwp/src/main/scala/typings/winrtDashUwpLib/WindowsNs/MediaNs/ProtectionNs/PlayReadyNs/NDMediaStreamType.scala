@@ -22,11 +22,11 @@ object NDMediaStreamType extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDMediaStreamType
   
-  val audio: audio with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 0 */ val audio: audio with scala.Double = js.native
+  /* 1 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDMediaStreamType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDMediaStreamType with scala.Double
   ] = js.native
 }
 

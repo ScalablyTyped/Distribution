@@ -15,10 +15,6 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait activated
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait additions extends js.Object
   
   @js.native
@@ -32,6 +28,9 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait assertive extends js.Object
+  
+  @js.native
+  sealed trait auto extends js.Object
   
   @js.native
   sealed trait both extends js.Object
@@ -55,10 +54,6 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait contained extends js.Object
-  
-  @js.native
-  sealed trait container
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait copy extends js.Object
@@ -109,10 +104,6 @@ object atMaterialDashUiLabLibStrings {
   sealed trait flat extends js.Object
   
   @js.native
-  sealed trait focused
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait grammar extends js.Object
   
   @js.native
@@ -135,10 +126,6 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait `inline` extends js.Object
-  
-  @js.native
-  sealed trait jumped
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait label
@@ -167,6 +154,26 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait location extends js.Object
+  
+  @js.native
+  sealed trait mark
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  
+  @js.native
+  sealed trait markActive
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  
+  @js.native
+  sealed trait markLabel
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  
+  @js.native
+  sealed trait markLabelActive
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  
+  @js.native
+  sealed trait marked
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait medium extends js.Object
@@ -213,6 +220,10 @@ object atMaterialDashUiLabLibStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait rail
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  
+  @js.native
   sealed trait raised extends js.Object
   
   @js.native
@@ -239,6 +250,10 @@ object atMaterialDashUiLabLibStrings {
        with atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
   
   @js.native
+  sealed trait rtl
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  
+  @js.native
   sealed trait selected
     extends atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
        with atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
@@ -263,14 +278,6 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait thumbIcon
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait thumbIconWrapper
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait time extends js.Object
   
   @js.native
@@ -287,18 +294,14 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait trackAfter
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait trackBefore
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait tree extends js.Object
   
   @js.native
   sealed trait up extends js.Object
+  
+  @js.native
+  sealed trait valueLabel
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait vertical
@@ -309,8 +312,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def actionsClosed: actionsClosed = "actionsClosed".asInstanceOf[actionsClosed]
   @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
-  @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
   def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
@@ -320,6 +321,8 @@ object atMaterialDashUiLabLibStrings {
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
@@ -334,8 +337,6 @@ object atMaterialDashUiLabLibStrings {
   def buttonClosed: buttonClosed = "buttonClosed".asInstanceOf[buttonClosed]
   @scala.inline
   def contained: contained = "contained".asInstanceOf[contained]
-  @scala.inline
-  def container: container = "container".asInstanceOf[container]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
@@ -365,8 +366,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def flat: flat = "flat".asInstanceOf[flat]
   @scala.inline
-  def focused: focused = "focused".asInstanceOf[focused]
-  @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
@@ -380,8 +379,6 @@ object atMaterialDashUiLabLibStrings {
   def iconWithOpenIconOpen: iconWithOpenIconOpen = "iconWithOpenIconOpen".asInstanceOf[iconWithOpenIconOpen]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def jumped: jumped = "jumped".asInstanceOf[jumped]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
@@ -400,6 +397,16 @@ object atMaterialDashUiLabLibStrings {
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   @scala.inline
   def location: location = "location".asInstanceOf[location]
+  @scala.inline
+  def mark: mark = "mark".asInstanceOf[mark]
+  @scala.inline
+  def markActive: markActive = "markActive".asInstanceOf[markActive]
+  @scala.inline
+  def markLabel: markLabel = "markLabel".asInstanceOf[markLabel]
+  @scala.inline
+  def markLabelActive: markLabelActive = "markLabelActive".asInstanceOf[markLabelActive]
+  @scala.inline
+  def marked: marked = "marked".asInstanceOf[marked]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
@@ -429,6 +436,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
+  def rail: rail = "rail".asInstanceOf[rail]
+  @scala.inline
   def raised: raised = "raised".asInstanceOf[raised]
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
@@ -442,6 +451,8 @@ object atMaterialDashUiLabLibStrings {
   def `right-start`: `right-start` = "right-start".asInstanceOf[`right-start`]
   @scala.inline
   def root: root = "root".asInstanceOf[root]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
@@ -457,10 +468,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def thumb: thumb = "thumb".asInstanceOf[thumb]
   @scala.inline
-  def thumbIcon: thumbIcon = "thumbIcon".asInstanceOf[thumbIcon]
-  @scala.inline
-  def thumbIconWrapper: thumbIconWrapper = "thumbIconWrapper".asInstanceOf[thumbIconWrapper]
-  @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
@@ -471,13 +478,11 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def trackAfter: trackAfter = "trackAfter".asInstanceOf[trackAfter]
-  @scala.inline
-  def trackBefore: trackBefore = "trackBefore".asInstanceOf[trackBefore]
-  @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
+  def valueLabel: valueLabel = "valueLabel".asInstanceOf[valueLabel]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

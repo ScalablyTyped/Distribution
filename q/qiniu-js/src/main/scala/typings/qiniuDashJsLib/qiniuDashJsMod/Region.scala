@@ -35,12 +35,12 @@ object Region extends js.Object {
   sealed trait z2
     extends qiniuDashJsLib.qiniuDashJsMod.Region
   
-  val as0: as0 with java.lang.String = js.native
-  val na0: na0 with java.lang.String = js.native
-  val z0: z0 with java.lang.String = js.native
-  val z1: z1 with java.lang.String = js.native
-  val z2: z2 with java.lang.String = js.native
+  /* 4 */ val as0: as0 with scala.Double = js.native
+  /* 3 */ val na0: na0 with scala.Double = js.native
+  /* 0 */ val z0: z0 with scala.Double = js.native
+  /* 1 */ val z1: z1 with scala.Double = js.native
+  /* 2 */ val z2: z2 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[qiniuDashJsLib.qiniuDashJsMod.Region with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[qiniuDashJsLib.qiniuDashJsMod.Region with scala.Double] = js.native
 }
 

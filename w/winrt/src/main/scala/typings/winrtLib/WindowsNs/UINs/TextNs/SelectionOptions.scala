@@ -31,12 +31,12 @@ object SelectionOptions extends js.Object {
   sealed trait startActive
     extends winrtLib.WindowsNs.UINs.TextNs.SelectionOptions
   
-  val active: active with java.lang.String = js.native
-  val atEndOfLine: atEndOfLine with java.lang.String = js.native
-  val overtype: overtype with java.lang.String = js.native
-  val replace: replace with java.lang.String = js.native
-  val startActive: startActive with java.lang.String = js.native
+  /* 3 */ val active: active with scala.Double = js.native
+  /* 1 */ val atEndOfLine: atEndOfLine with scala.Double = js.native
+  /* 2 */ val overtype: overtype with scala.Double = js.native
+  /* 4 */ val replace: replace with scala.Double = js.native
+  /* 0 */ val startActive: startActive with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.SelectionOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.SelectionOptions with scala.Double] = js.native
 }
 

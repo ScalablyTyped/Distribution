@@ -94,6 +94,10 @@ object applicationloadbalancingNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.applicationloadbalancingTargetGroupAttachmentMod.TargetGroupAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  val ApplicationLoadBalancer: atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType = js.native
+  val Dualstack: atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType = js.native
+  val Ipv4: atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType = js.native
+  val NetworkLoadBalancer: atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType = js.native
   def getListener(): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] = js.native
   def getListener(args: atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerArgs): js.Promise[atPulumiAwsLib.applicationloadbalancingGetListenerMod.GetListenerResult] = js.native
   def getListener(

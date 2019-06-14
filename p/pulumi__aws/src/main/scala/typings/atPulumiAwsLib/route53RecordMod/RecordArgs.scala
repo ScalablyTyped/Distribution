@@ -68,7 +68,7 @@ trait RecordArgs extends js.Object {
   /**
     * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
     */
-  val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.route53RecordTypeMod.RecordType]
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */
@@ -84,7 +84,7 @@ trait RecordArgs extends js.Object {
 object RecordArgs {
   @scala.inline
   def apply(
-    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.route53RecordTypeMod.RecordType],
     zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     aliases: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EvaluateTargetHealthName]]

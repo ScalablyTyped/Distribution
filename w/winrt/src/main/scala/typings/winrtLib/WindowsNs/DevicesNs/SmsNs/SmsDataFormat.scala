@@ -31,12 +31,12 @@ object SmsDataFormat extends js.Object {
   sealed trait unknown
     extends winrtLib.WindowsNs.DevicesNs.SmsNs.SmsDataFormat
   
-  val cdmaDeliver: cdmaDeliver with java.lang.String = js.native
-  val cdmaSubmit: cdmaSubmit with java.lang.String = js.native
-  val gsmDeliver: gsmDeliver with java.lang.String = js.native
-  val gsmSubmit: gsmSubmit with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val cdmaDeliver: cdmaDeliver with scala.Double = js.native
+  /* 1 */ val cdmaSubmit: cdmaSubmit with scala.Double = js.native
+  /* 4 */ val gsmDeliver: gsmDeliver with scala.Double = js.native
+  /* 2 */ val gsmSubmit: gsmSubmit with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsDataFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsDataFormat with scala.Double] = js.native
 }
 

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OSActionType extends js.Object
 
+object OSActionType {
+  @scala.inline
+  def ActionTake: onesignalDashCordovaDashPluginLib.onesignalDashCordovaDashPluginLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Opened: onesignalDashCordovaDashPluginLib.onesignalDashCordovaDashPluginLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

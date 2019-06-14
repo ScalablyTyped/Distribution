@@ -37,12 +37,12 @@ object UsbReadOptions extends js.Object {
   sealed trait overrideAutomaticBufferManagement
     extends winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbReadOptions
   
-  val allowPartialReads: allowPartialReads with java.lang.String = js.native
-  val autoClearStall: autoClearStall with java.lang.String = js.native
-  val ignoreShortPacket: ignoreShortPacket with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val overrideAutomaticBufferManagement: overrideAutomaticBufferManagement with java.lang.String = js.native
+  /* 4 */ val allowPartialReads: allowPartialReads with scala.Double = js.native
+  /* 1 */ val autoClearStall: autoClearStall with scala.Double = js.native
+  /* 3 */ val ignoreShortPacket: ignoreShortPacket with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val overrideAutomaticBufferManagement: overrideAutomaticBufferManagement with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbReadOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbReadOptions with scala.Double] = js.native
 }
 

@@ -42,15 +42,15 @@ object FileUpdateStatus extends js.Object {
   sealed trait userInputNeeded
     extends winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.FileUpdateStatus
   
-  val complete: complete with java.lang.String = js.native
-  val completeAndRenamed: completeAndRenamed with java.lang.String = js.native
-  val currentlyUnavailable: currentlyUnavailable with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val incomplete: incomplete with java.lang.String = js.native
-  val userInputNeeded: userInputNeeded with java.lang.String = js.native
+  /* 1 */ val complete: complete with scala.Double = js.native
+  /* 5 */ val completeAndRenamed: completeAndRenamed with scala.Double = js.native
+  /* 3 */ val currentlyUnavailable: currentlyUnavailable with scala.Double = js.native
+  /* 4 */ val failed: failed with scala.Double = js.native
+  /* 0 */ val incomplete: incomplete with scala.Double = js.native
+  /* 2 */ val userInputNeeded: userInputNeeded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.FileUpdateStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.ProviderNs.FileUpdateStatus with scala.Double
   ] = js.native
 }
 

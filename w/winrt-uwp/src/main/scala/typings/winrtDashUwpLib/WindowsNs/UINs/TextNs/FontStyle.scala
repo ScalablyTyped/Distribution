@@ -27,10 +27,10 @@ object FontStyle extends js.Object {
   sealed trait oblique
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.FontStyle
   
-  val italic: italic with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val oblique: oblique with java.lang.String = js.native
+  /* 2 */ val italic: italic with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val oblique: oblique with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.FontStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.FontStyle with scala.Double] = js.native
 }
 

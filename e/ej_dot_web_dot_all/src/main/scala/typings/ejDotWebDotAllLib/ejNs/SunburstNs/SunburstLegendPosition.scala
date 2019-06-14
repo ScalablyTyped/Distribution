@@ -31,11 +31,11 @@ object SunburstLegendPosition extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLegendPosition
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 3 */ val Bottom: Bottom with scala.Double = js.native
+  /* 0 */ val Left: Left with scala.Double = js.native
+  /* 1 */ val Right: Right with scala.Double = js.native
+  /* 2 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLegendPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLegendPosition with scala.Double] = js.native
 }
 

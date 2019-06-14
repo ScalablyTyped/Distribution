@@ -42,11 +42,11 @@ object MapTypeId extends js.Object {
   sealed trait TERRAIN
     extends googlemapsLib.googleNs.mapsNs.MapTypeId
   
-  val HYBRID: HYBRID with java.lang.String = js.native
-  val ROADMAP: ROADMAP with java.lang.String = js.native
-  val SATELLITE: SATELLITE with java.lang.String = js.native
-  val TERRAIN: TERRAIN with java.lang.String = js.native
+  /* 0 */ val HYBRID: HYBRID with scala.Double = js.native
+  /* 1 */ val ROADMAP: ROADMAP with scala.Double = js.native
+  /* 2 */ val SATELLITE: SATELLITE with scala.Double = js.native
+  /* 3 */ val TERRAIN: TERRAIN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.MapTypeId with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.MapTypeId with scala.Double] = js.native
 }
 

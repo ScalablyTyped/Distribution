@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdSortOrder extends js.Object
 
+object WdSortOrder {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdSortOrderAscending: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdSortOrderDescending: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

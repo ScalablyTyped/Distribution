@@ -27,12 +27,12 @@ object EmailMeetingResponseType extends js.Object {
   sealed trait tentative
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMeetingResponseType
   
-  val accept: accept with java.lang.String = js.native
-  val decline: decline with java.lang.String = js.native
-  val tentative: tentative with java.lang.String = js.native
+  /* 0 */ val accept: accept with scala.Double = js.native
+  /* 1 */ val decline: decline with scala.Double = js.native
+  /* 2 */ val tentative: tentative with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMeetingResponseType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMeetingResponseType with scala.Double
   ] = js.native
 }
 

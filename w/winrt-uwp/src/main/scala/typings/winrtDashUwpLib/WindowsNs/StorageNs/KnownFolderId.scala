@@ -82,21 +82,21 @@ object KnownFolderId extends js.Object {
   sealed trait videosLibrary
     extends winrtDashUwpLib.WindowsNs.StorageNs.KnownFolderId
   
-  val appCaptures: appCaptures with java.lang.String = js.native
-  val cameraRoll: cameraRoll with java.lang.String = js.native
-  val documentsLibrary: documentsLibrary with java.lang.String = js.native
-  val homeGroup: homeGroup with java.lang.String = js.native
-  val mediaServerDevices: mediaServerDevices with java.lang.String = js.native
-  val musicLibrary: musicLibrary with java.lang.String = js.native
-  val objects3D: objects3D with java.lang.String = js.native
-  val picturesLibrary: picturesLibrary with java.lang.String = js.native
-  val playlists: playlists with java.lang.String = js.native
-  val recordedCalls: recordedCalls with java.lang.String = js.native
-  val removableDevices: removableDevices with java.lang.String = js.native
-  val savedPictures: savedPictures with java.lang.String = js.native
-  val screenshots: screenshots with java.lang.String = js.native
-  val videosLibrary: videosLibrary with java.lang.String = js.native
+  /* 0 */ val appCaptures: appCaptures with scala.Double = js.native
+  /* 1 */ val cameraRoll: cameraRoll with scala.Double = js.native
+  /* 2 */ val documentsLibrary: documentsLibrary with scala.Double = js.native
+  /* 3 */ val homeGroup: homeGroup with scala.Double = js.native
+  /* 4 */ val mediaServerDevices: mediaServerDevices with scala.Double = js.native
+  /* 5 */ val musicLibrary: musicLibrary with scala.Double = js.native
+  /* 6 */ val objects3D: objects3D with scala.Double = js.native
+  /* 7 */ val picturesLibrary: picturesLibrary with scala.Double = js.native
+  /* 8 */ val playlists: playlists with scala.Double = js.native
+  /* 9 */ val recordedCalls: recordedCalls with scala.Double = js.native
+  /* 10 */ val removableDevices: removableDevices with scala.Double = js.native
+  /* 11 */ val savedPictures: savedPictures with scala.Double = js.native
+  /* 12 */ val screenshots: screenshots with scala.Double = js.native
+  /* 13 */ val videosLibrary: videosLibrary with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.KnownFolderId with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.KnownFolderId with scala.Double] = js.native
 }
 

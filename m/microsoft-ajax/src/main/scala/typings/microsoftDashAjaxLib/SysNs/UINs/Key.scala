@@ -113,21 +113,21 @@ object Key extends js.Object {
   sealed trait up
     extends microsoftDashAjaxLib.SysNs.UINs.Key
   
-  val backspace: backspace with java.lang.String = js.native
-  val del: del with java.lang.String = js.native
-  val down: down with java.lang.String = js.native
-  val end: end with java.lang.String = js.native
-  val enter: enter with java.lang.String = js.native
-  val esc: esc with java.lang.String = js.native
-  val home: home with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val pageDown: pageDown with java.lang.String = js.native
-  val pageUp: pageUp with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
-  val space: space with java.lang.String = js.native
-  val tab: tab with java.lang.String = js.native
-  val up: up with java.lang.String = js.native
+  /* 0 */ val backspace: backspace with scala.Double = js.native
+  /* 13 */ val del: del with scala.Double = js.native
+  /* 12 */ val down: down with scala.Double = js.native
+  /* 7 */ val end: end with scala.Double = js.native
+  /* 2 */ val enter: enter with scala.Double = js.native
+  /* 3 */ val esc: esc with scala.Double = js.native
+  /* 8 */ val home: home with scala.Double = js.native
+  /* 9 */ val left: left with scala.Double = js.native
+  /* 6 */ val pageDown: pageDown with scala.Double = js.native
+  /* 5 */ val pageUp: pageUp with scala.Double = js.native
+  /* 11 */ val right: right with scala.Double = js.native
+  /* 4 */ val space: space with scala.Double = js.native
+  /* 1 */ val tab: tab with scala.Double = js.native
+  /* 10 */ val up: up with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[microsoftDashAjaxLib.SysNs.UINs.Key with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[microsoftDashAjaxLib.SysNs.UINs.Key with scala.Double] = js.native
 }
 

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait PpFixedFormatType extends js.Object
 
+object PpFixedFormatType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ppFixedFormatTypePDF: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ppFixedFormatTypeXPS: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1` = this.cast(1)
+}
+

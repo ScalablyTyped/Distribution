@@ -25,10 +25,10 @@ object PaneId extends js.Object {
   sealed trait PivotedGrid
     extends sharepointLib.SPNs.JsGridNs.PaneId
   
-  val Gantt: Gantt with java.lang.String = js.native
-  val MainGrid: MainGrid with java.lang.String = js.native
-  val PivotedGrid: PivotedGrid with java.lang.String = js.native
+  /* 2 */ val Gantt: Gantt with scala.Double = js.native
+  /* 0 */ val MainGrid: MainGrid with scala.Double = js.native
+  /* 1 */ val PivotedGrid: PivotedGrid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.PaneId with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.PaneId with scala.Double] = js.native
 }
 

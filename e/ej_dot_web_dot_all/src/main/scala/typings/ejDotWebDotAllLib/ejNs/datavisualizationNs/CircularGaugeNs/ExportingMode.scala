@@ -21,11 +21,11 @@ object ExportingMode extends js.Object {
   sealed trait ServerSide
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.ExportingMode
   
-  val ClientSide: ClientSide with java.lang.String = js.native
-  val ServerSide: ServerSide with java.lang.String = js.native
+  /* 1 */ val ClientSide: ClientSide with scala.Double = js.native
+  /* 0 */ val ServerSide: ServerSide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.ExportingMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.ExportingMode with scala.Double
   ] = js.native
 }
 

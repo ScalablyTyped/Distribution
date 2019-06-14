@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait AcPrintObjQuality extends js.Object
 
+object AcPrintObjQuality {
+  @scala.inline
+  def acPRPQDraft: activexDashAccessLib.activexDashAccessLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def acPRPQHigh: activexDashAccessLib.activexDashAccessLibNumbers.`-4` = this.cast(-4)
+  @scala.inline
+  def acPRPQLow: activexDashAccessLib.activexDashAccessLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  def acPRPQMedium: activexDashAccessLib.activexDashAccessLibNumbers.`-3` = this.cast(-3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

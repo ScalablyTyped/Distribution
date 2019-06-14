@@ -31,13 +31,13 @@ object FileFormats extends js.Object {
   sealed trait SVG
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FileFormats
   
-  val BMP: BMP with java.lang.String = js.native
-  val JPG: JPG with java.lang.String = js.native
-  val PNG: PNG with java.lang.String = js.native
-  val SVG: SVG with java.lang.String = js.native
+  /* 2 */ val BMP: BMP with scala.Double = js.native
+  /* 0 */ val JPG: JPG with scala.Double = js.native
+  /* 1 */ val PNG: PNG with scala.Double = js.native
+  /* 3 */ val SVG: SVG with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FileFormats with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FileFormats with scala.Double
   ] = js.native
 }
 

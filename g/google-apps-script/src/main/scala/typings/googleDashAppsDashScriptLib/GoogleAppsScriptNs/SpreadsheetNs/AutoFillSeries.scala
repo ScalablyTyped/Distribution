@@ -19,11 +19,11 @@ object AutoFillSeries extends js.Object {
   sealed trait DEFAULT_SERIES
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.AutoFillSeries
   
-  val ALTERNATE_SERIES: ALTERNATE_SERIES with java.lang.String = js.native
-  val DEFAULT_SERIES: DEFAULT_SERIES with java.lang.String = js.native
+  /* 1 */ val ALTERNATE_SERIES: ALTERNATE_SERIES with scala.Double = js.native
+  /* 0 */ val DEFAULT_SERIES: DEFAULT_SERIES with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.AutoFillSeries with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.AutoFillSeries with scala.Double
   ] = js.native
 }
 

@@ -22,9 +22,9 @@ object AudioProcessing extends js.Object {
   sealed trait raw
     extends winrtDashUwpLib.WindowsNs.MediaNs.AudioProcessing
   
-  val default: default with java.lang.String = js.native
-  val raw: raw with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val raw: raw with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.AudioProcessing with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.AudioProcessing with scala.Double] = js.native
 }
 

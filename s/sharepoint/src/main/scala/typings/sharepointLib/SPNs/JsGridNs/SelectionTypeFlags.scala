@@ -23,10 +23,10 @@ object SelectionTypeFlags extends js.Object {
   sealed trait MultipleRowRanges
     extends sharepointLib.SPNs.JsGridNs.SelectionTypeFlags
   
-  val MultipleCellRanges: MultipleCellRanges with java.lang.String = js.native
-  val MultipleColRanges: MultipleColRanges with java.lang.String = js.native
-  val MultipleRowRanges: MultipleRowRanges with java.lang.String = js.native
+  /* 0 */ val MultipleCellRanges: MultipleCellRanges with scala.Double = js.native
+  /* 2 */ val MultipleColRanges: MultipleColRanges with scala.Double = js.native
+  /* 1 */ val MultipleRowRanges: MultipleRowRanges with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.SelectionTypeFlags with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.SelectionTypeFlags with scala.Double] = js.native
 }
 

@@ -51,13 +51,13 @@ object ApplePayStatusCodes extends js.Object {
   sealed trait STATUS_SUCCESS
     extends braintreeDashWebLib.braintreeDashWebMod.ApplePayStatusCodes
   
-  val STATUS_FAILURE: STATUS_FAILURE with scala.Double = js.native
-  val STATUS_INVALID_BILLING_POSTAL_ADDRESS: STATUS_INVALID_BILLING_POSTAL_ADDRESS with scala.Double = js.native
-  val STATUS_INVALID_SHIPPING_CONTACT: STATUS_INVALID_SHIPPING_CONTACT with scala.Double = js.native
-  val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: STATUS_INVALID_SHIPPING_POSTAL_ADDRESS with scala.Double = js.native
-  val STATUS_PIN_INCORRECT: STATUS_PIN_INCORRECT with scala.Double = js.native
-  val STATUS_PIN_LOCKOUT: STATUS_PIN_LOCKOUT with scala.Double = js.native
-  val STATUS_PIN_REQUIRED: STATUS_PIN_REQUIRED with scala.Double = js.native
+  /* 0 */ val STATUS_FAILURE: STATUS_FAILURE with scala.Double = js.native
+  /* 1 */ val STATUS_INVALID_BILLING_POSTAL_ADDRESS: STATUS_INVALID_BILLING_POSTAL_ADDRESS with scala.Double = js.native
+  /* 3 */ val STATUS_INVALID_SHIPPING_CONTACT: STATUS_INVALID_SHIPPING_CONTACT with scala.Double = js.native
+  /* 2 */ val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: STATUS_INVALID_SHIPPING_POSTAL_ADDRESS with scala.Double = js.native
+  /* 5 */ val STATUS_PIN_INCORRECT: STATUS_PIN_INCORRECT with scala.Double = js.native
+  /* 6 */ val STATUS_PIN_LOCKOUT: STATUS_PIN_LOCKOUT with scala.Double = js.native
+  /* 4 */ val STATUS_PIN_REQUIRED: STATUS_PIN_REQUIRED with scala.Double = js.native
   /* 1 */ val STATUS_SUCCESS: STATUS_SUCCESS with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[braintreeDashWebLib.braintreeDashWebMod.ApplePayStatusCodes with scala.Double] = js.native

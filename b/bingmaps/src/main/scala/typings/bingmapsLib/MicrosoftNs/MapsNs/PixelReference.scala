@@ -26,10 +26,10 @@ object PixelReference extends js.Object {
   sealed trait viewport
     extends bingmapsLib.MicrosoftNs.MapsNs.PixelReference
   
-  val control: control with java.lang.String = js.native
-  val page: page with java.lang.String = js.native
-  val viewport: viewport with java.lang.String = js.native
+  /* 0 */ val control: control with scala.Double = js.native
+  /* 1 */ val page: page with scala.Double = js.native
+  /* 2 */ val viewport: viewport with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.PixelReference with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.PixelReference with scala.Double] = js.native
 }
 

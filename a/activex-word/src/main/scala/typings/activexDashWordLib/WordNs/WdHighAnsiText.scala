@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdHighAnsiText extends js.Object
 
+object WdHighAnsiText {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdAutoDetectHighAnsiFarEast: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdHighAnsiIsFarEast: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdHighAnsiIsHighAnsi: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

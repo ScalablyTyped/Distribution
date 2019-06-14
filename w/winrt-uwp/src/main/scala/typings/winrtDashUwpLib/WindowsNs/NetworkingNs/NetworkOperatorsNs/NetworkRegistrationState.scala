@@ -47,16 +47,16 @@ object NetworkRegistrationState extends js.Object {
   sealed trait searching
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkRegistrationState
   
-  val denied: denied with java.lang.String = js.native
-  val deregistered: deregistered with java.lang.String = js.native
-  val home: home with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val partner: partner with java.lang.String = js.native
-  val roaming: roaming with java.lang.String = js.native
-  val searching: searching with java.lang.String = js.native
+  /* 6 */ val denied: denied with scala.Double = js.native
+  /* 1 */ val deregistered: deregistered with scala.Double = js.native
+  /* 3 */ val home: home with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 5 */ val partner: partner with scala.Double = js.native
+  /* 4 */ val roaming: roaming with scala.Double = js.native
+  /* 2 */ val searching: searching with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkRegistrationState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkRegistrationState with scala.Double
   ] = js.native
 }
 

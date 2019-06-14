@@ -42,15 +42,15 @@ object ClosedCaptionEdgeEffect extends js.Object {
   sealed trait uniform
     extends winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionEdgeEffect
   
-  val default: default with java.lang.String = js.native
-  val depressed: depressed with java.lang.String = js.native
-  val dropShadow: dropShadow with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val raised: raised with java.lang.String = js.native
-  val uniform: uniform with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 3 */ val depressed: depressed with scala.Double = js.native
+  /* 5 */ val dropShadow: dropShadow with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 2 */ val raised: raised with scala.Double = js.native
+  /* 4 */ val uniform: uniform with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionEdgeEffect with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionEdgeEffect with scala.Double
   ] = js.native
 }
 

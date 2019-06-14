@@ -31,14 +31,12 @@ object Role extends js.Object {
   sealed trait PENDING
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.GroupsNs.Role
   
-  val INVITED: INVITED with java.lang.String = js.native
-  val MANAGER: MANAGER with java.lang.String = js.native
-  val MEMBER: MEMBER with java.lang.String = js.native
-  val OWNER: OWNER with java.lang.String = js.native
-  val PENDING: PENDING with java.lang.String = js.native
+  /* 3 */ val INVITED: INVITED with scala.Double = js.native
+  /* 1 */ val MANAGER: MANAGER with scala.Double = js.native
+  /* 2 */ val MEMBER: MEMBER with scala.Double = js.native
+  /* 0 */ val OWNER: OWNER with scala.Double = js.native
+  /* 4 */ val PENDING: PENDING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.GroupsNs.Role with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.GroupsNs.Role with scala.Double] = js.native
 }
 

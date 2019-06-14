@@ -21,9 +21,9 @@ object TimeMode extends js.Object {
   sealed trait Hour24
     extends ejDotWebDotAllLib.ejNs.ScheduleNs.TimeMode
   
-  val Hour12: Hour12 with java.lang.String = js.native
-  val Hour24: Hour24 with java.lang.String = js.native
+  /* 0 */ val Hour12: Hour12 with scala.Double = js.native
+  /* 1 */ val Hour24: Hour24 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ScheduleNs.TimeMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ScheduleNs.TimeMode with scala.Double] = js.native
 }
 

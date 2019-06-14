@@ -5,24 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InstrumentationEvent extends js.Object {
-  var id: scala.Double
-  var payload: org.scalablytyped.runtime.StringDictionary[js.Any]
+trait InstrumentationEvent[T] extends js.Object {
+  var id: java.lang.String
+  var payload: T
   var timestamp: scala.Double
   var `type`: java.lang.String
 }
 
 object InstrumentationEvent {
   @scala.inline
-  def apply(
-    id: scala.Double,
-    payload: org.scalablytyped.runtime.StringDictionary[js.Any],
-    timestamp: scala.Double,
-    `type`: java.lang.String
-  ): InstrumentationEvent = {
-    val __obj = js.Dynamic.literal(id = id, payload = payload, timestamp = timestamp)
+  def apply[T](id: java.lang.String, payload: T, timestamp: scala.Double, `type`: java.lang.String): InstrumentationEvent[T] = {
+    val __obj = js.Dynamic.literal(id = id, payload = payload.asInstanceOf[js.Any], timestamp = timestamp)
     __obj.updateDynamic("type")(`type`)
-    __obj.asInstanceOf[InstrumentationEvent]
+    __obj.asInstanceOf[InstrumentationEvent[T]]
   }
 }
 

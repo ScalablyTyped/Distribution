@@ -19,9 +19,9 @@ object ChoiceFormatType extends js.Object {
   sealed trait Radio
     extends sharepointLib.SPClientTemplatesNs.ChoiceFormatType
   
-  val Dropdown: Dropdown with java.lang.String = js.native
-  val Radio: Radio with java.lang.String = js.native
+  /* 0 */ val Dropdown: Dropdown with scala.Double = js.native
+  /* 1 */ val Radio: Radio with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientTemplatesNs.ChoiceFormatType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientTemplatesNs.ChoiceFormatType with scala.Double] = js.native
 }
 

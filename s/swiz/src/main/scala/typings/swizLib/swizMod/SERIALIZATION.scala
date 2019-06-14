@@ -19,9 +19,9 @@ object SERIALIZATION extends js.Object {
   sealed trait SERIALIZATION_XML
     extends swizLib.swizMod.SERIALIZATION
   
-  val SERIALIZATION_JSON: SERIALIZATION_JSON with java.lang.String = js.native
-  val SERIALIZATION_XML: SERIALIZATION_XML with java.lang.String = js.native
+  /* 0 */ val SERIALIZATION_JSON: SERIALIZATION_JSON with scala.Double = js.native
+  /* 1 */ val SERIALIZATION_XML: SERIALIZATION_XML with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[swizLib.swizMod.SERIALIZATION with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[swizLib.swizMod.SERIALIZATION with scala.Double] = js.native
 }
 

@@ -62,19 +62,19 @@ object LayoutAlignment extends js.Object {
   sealed trait TOP_RIGHT
     extends heremapsLib.HNs.uiNs.LayoutAlignment
   
-  val BOTTOM_CENTER: BOTTOM_CENTER with java.lang.String = js.native
-  val BOTTOM_LEFT: BOTTOM_LEFT with java.lang.String = js.native
-  val BOTTOM_RIGHT: BOTTOM_RIGHT with java.lang.String = js.native
-  val LEFT_BOTTOM: LEFT_BOTTOM with java.lang.String = js.native
-  val LEFT_MIDDLE: LEFT_MIDDLE with java.lang.String = js.native
-  val LEFT_TOP: LEFT_TOP with java.lang.String = js.native
-  val RIGHT_BOTTOM: RIGHT_BOTTOM with java.lang.String = js.native
-  val RIGHT_MIDDLE: RIGHT_MIDDLE with java.lang.String = js.native
-  val RIGHT_TOP: RIGHT_TOP with java.lang.String = js.native
-  val TOP_CENTER: TOP_CENTER with java.lang.String = js.native
-  val TOP_LEFT: TOP_LEFT with java.lang.String = js.native
-  val TOP_RIGHT: TOP_RIGHT with java.lang.String = js.native
+  /* 10 */ val BOTTOM_CENTER: BOTTOM_CENTER with scala.Double = js.native
+  /* 9 */ val BOTTOM_LEFT: BOTTOM_LEFT with scala.Double = js.native
+  /* 11 */ val BOTTOM_RIGHT: BOTTOM_RIGHT with scala.Double = js.native
+  /* 5 */ val LEFT_BOTTOM: LEFT_BOTTOM with scala.Double = js.native
+  /* 4 */ val LEFT_MIDDLE: LEFT_MIDDLE with scala.Double = js.native
+  /* 3 */ val LEFT_TOP: LEFT_TOP with scala.Double = js.native
+  /* 8 */ val RIGHT_BOTTOM: RIGHT_BOTTOM with scala.Double = js.native
+  /* 7 */ val RIGHT_MIDDLE: RIGHT_MIDDLE with scala.Double = js.native
+  /* 6 */ val RIGHT_TOP: RIGHT_TOP with scala.Double = js.native
+  /* 1 */ val TOP_CENTER: TOP_CENTER with scala.Double = js.native
+  /* 0 */ val TOP_LEFT: TOP_LEFT with scala.Double = js.native
+  /* 2 */ val TOP_RIGHT: TOP_RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.uiNs.LayoutAlignment with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.uiNs.LayoutAlignment with scala.Double] = js.native
 }
 

@@ -21,9 +21,9 @@ object AlignType extends js.Object {
   sealed trait Rows
     extends ejDotWebDotAllLib.ejNs.RibbonNs.AlignType
   
-  val Columns: Columns with java.lang.String = js.native
-  val Rows: Rows with java.lang.String = js.native
+  /* 1 */ val Columns: Columns with scala.Double = js.native
+  /* 0 */ val Rows: Rows with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.AlignType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.AlignType with scala.Double] = js.native
 }
 

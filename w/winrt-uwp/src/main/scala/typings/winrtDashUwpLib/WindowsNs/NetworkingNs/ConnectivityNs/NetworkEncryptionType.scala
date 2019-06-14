@@ -62,19 +62,19 @@ object NetworkEncryptionType extends js.Object {
   sealed trait wpaUseGroup
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkEncryptionType
   
-  val ccmp: ccmp with java.lang.String = js.native
-  val ihv: ihv with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val rsnUseGroup: rsnUseGroup with java.lang.String = js.native
-  val tkip: tkip with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val wep: wep with java.lang.String = js.native
-  val wep104: wep104 with java.lang.String = js.native
-  val wep40: wep40 with java.lang.String = js.native
-  val wpaUseGroup: wpaUseGroup with java.lang.String = js.native
+  /* 6 */ val ccmp: ccmp with scala.Double = js.native
+  /* 9 */ val ihv: ihv with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 8 */ val rsnUseGroup: rsnUseGroup with scala.Double = js.native
+  /* 5 */ val tkip: tkip with scala.Double = js.native
+  /* 1 */ val unknown: unknown with scala.Double = js.native
+  /* 2 */ val wep: wep with scala.Double = js.native
+  /* 4 */ val wep104: wep104 with scala.Double = js.native
+  /* 3 */ val wep40: wep40 with scala.Double = js.native
+  /* 7 */ val wpaUseGroup: wpaUseGroup with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkEncryptionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkEncryptionType with scala.Double
   ] = js.native
 }
 

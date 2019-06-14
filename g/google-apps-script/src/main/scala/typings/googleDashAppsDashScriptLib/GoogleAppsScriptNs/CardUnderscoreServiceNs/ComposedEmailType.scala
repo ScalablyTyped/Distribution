@@ -19,11 +19,11 @@ object ComposedEmailType extends js.Object {
   sealed trait STANDALONE_DRAFT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ComposedEmailType
   
-  val REPLY_AS_DRAFT: REPLY_AS_DRAFT with java.lang.String = js.native
-  val STANDALONE_DRAFT: STANDALONE_DRAFT with java.lang.String = js.native
+  /* 0 */ val REPLY_AS_DRAFT: REPLY_AS_DRAFT with scala.Double = js.native
+  /* 1 */ val STANDALONE_DRAFT: STANDALONE_DRAFT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ComposedEmailType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ComposedEmailType with scala.Double
   ] = js.native
 }
 

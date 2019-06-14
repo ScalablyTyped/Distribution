@@ -9,175 +9,91 @@ object tsutilsLibNumbers {
   @js.native
   sealed trait `0`
     extends tsutilsLib.utilUtilMod.ScopeBoundary
-       with tsutilsLib.utilMod.ScopeBoundary
-       with tsutilsLib.tsutilsMod.ScopeBoundary
        with tsutilsLib.utilUtilMod.SideEffectOptions
-       with tsutilsLib.utilMod.SideEffectOptions
-       with tsutilsLib.tsutilsMod.SideEffectOptions
        with tsutilsLib.utilUtilMod.VariableDeclarationKind
-       with tsutilsLib.utilMod.VariableDeclarationKind
-       with tsutilsLib.tsutilsMod.VariableDeclarationKind
   
   @js.native
   sealed trait `1`
-    extends tsutilsLib.utilMod.DeclarationDomain
-       with tsutilsLib.tsutilsMod.DeclarationDomain
-       with tsutilsLib.utilUsageMod.DeclarationDomain
+    extends tsutilsLib.utilUsageMod.DeclarationDomain
        with tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
        with tsutilsLib.utilUtilMod.ScopeBoundary
-       with tsutilsLib.utilMod.ScopeBoundary
-       with tsutilsLib.tsutilsMod.ScopeBoundary
        with tsutilsLib.utilUtilMod.SideEffectOptions
-       with tsutilsLib.utilMod.SideEffectOptions
-       with tsutilsLib.tsutilsMod.SideEffectOptions
-       with tsutilsLib.utilMod.UsageDomain
-       with tsutilsLib.tsutilsMod.UsageDomain
        with tsutilsLib.utilUsageMod.UsageDomain
        with tsutilsLib.utilUtilMod.VariableDeclarationKind
-       with tsutilsLib.utilMod.VariableDeclarationKind
-       with tsutilsLib.tsutilsMod.VariableDeclarationKind
   
   @js.native
   sealed trait `16`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
   
   @js.native
   sealed trait `18`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
   
   @js.native
   sealed trait `2`
-    extends tsutilsLib.utilMod.DeclarationDomain
-       with tsutilsLib.tsutilsMod.DeclarationDomain
-       with tsutilsLib.utilUsageMod.DeclarationDomain
+    extends tsutilsLib.utilUsageMod.DeclarationDomain
        with tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
        with tsutilsLib.utilUtilMod.ScopeBoundary
-       with tsutilsLib.utilMod.ScopeBoundary
-       with tsutilsLib.tsutilsMod.ScopeBoundary
        with tsutilsLib.utilUtilMod.SideEffectOptions
-       with tsutilsLib.utilMod.SideEffectOptions
-       with tsutilsLib.tsutilsMod.SideEffectOptions
-       with tsutilsLib.utilMod.UsageDomain
-       with tsutilsLib.tsutilsMod.UsageDomain
        with tsutilsLib.utilUsageMod.UsageDomain
        with tsutilsLib.utilUtilMod.VariableDeclarationKind
-       with tsutilsLib.utilMod.VariableDeclarationKind
-       with tsutilsLib.tsutilsMod.VariableDeclarationKind
   
   @js.native
   sealed trait `24`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
   
   @js.native
   sealed trait `27`
     extends tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
   
   @js.native
   sealed trait `3`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
   
   @js.native
   sealed trait `31`
     extends tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
   
   @js.native
   sealed trait `32`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
   
   @js.native
   sealed trait `4`
-    extends tsutilsLib.utilMod.DeclarationDomain
-       with tsutilsLib.tsutilsMod.DeclarationDomain
-       with tsutilsLib.utilUsageMod.DeclarationDomain
+    extends tsutilsLib.utilUsageMod.DeclarationDomain
        with tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
        with tsutilsLib.utilUtilMod.SideEffectOptions
-       with tsutilsLib.utilMod.SideEffectOptions
-       with tsutilsLib.tsutilsMod.SideEffectOptions
-       with tsutilsLib.utilMod.UsageDomain
-       with tsutilsLib.tsutilsMod.UsageDomain
        with tsutilsLib.utilUsageMod.UsageDomain
   
   @js.native
   sealed trait `5`
-    extends tsutilsLib.utilMod.UsageDomain
-       with tsutilsLib.tsutilsMod.UsageDomain
-       with tsutilsLib.utilUsageMod.UsageDomain
+    extends tsutilsLib.utilUsageMod.UsageDomain
   
   @js.native
   sealed trait `59`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
   
   @js.native
   sealed trait `63`
     extends tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
   
   @js.native
   sealed trait `7`
-    extends tsutilsLib.utilMod.DeclarationDomain
-       with tsutilsLib.tsutilsMod.DeclarationDomain
-       with tsutilsLib.utilUsageMod.DeclarationDomain
-       with tsutilsLib.utilMod.UsageDomain
-       with tsutilsLib.tsutilsMod.UsageDomain
+    extends tsutilsLib.utilUsageMod.DeclarationDomain
        with tsutilsLib.utilUsageMod.UsageDomain
   
   @js.native
   sealed trait `8`
-    extends tsutilsLib.utilMod.DeclarationDomain
-       with tsutilsLib.tsutilsMod.DeclarationDomain
-       with tsutilsLib.utilUsageMod.DeclarationDomain
+    extends tsutilsLib.utilUsageMod.DeclarationDomain
        with tsutilsLib.utilUtilMod.ImportKind
-       with tsutilsLib.utilMod.ImportKind
-       with tsutilsLib.tsutilsMod.ImportKind
        with tsutilsLib.utilUtilMod.ImportOptions
-       with tsutilsLib.utilMod.ImportOptions
-       with tsutilsLib.tsutilsMod.ImportOptions
-       with tsutilsLib.utilMod.UsageDomain
-       with tsutilsLib.tsutilsMod.UsageDomain
        with tsutilsLib.utilUsageMod.UsageDomain
   
   @scala.inline

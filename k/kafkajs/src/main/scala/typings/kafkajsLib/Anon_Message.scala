@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Message extends js.Object {
-  var message: kafkajsLib.kafkajsMod.ProducerMessage
+  var message: kafkajsLib.kafkajsMod.Message
   var partitionMetadata: js.Array[kafkajsLib.kafkajsMod.PartitionMetadata]
   var topic: java.lang.String
 }
@@ -14,7 +14,7 @@ trait Anon_Message extends js.Object {
 object Anon_Message {
   @scala.inline
   def apply(
-    message: kafkajsLib.kafkajsMod.ProducerMessage,
+    message: kafkajsLib.kafkajsMod.Message,
     partitionMetadata: js.Array[kafkajsLib.kafkajsMod.PartitionMetadata],
     topic: java.lang.String
   ): Anon_Message = {

@@ -27,12 +27,12 @@ object TriStates extends js.Object {
   sealed trait yes
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.TriStates
   
-  val doNotCare: doNotCare with java.lang.String = js.native
-  val no: no with java.lang.String = js.native
-  val yes: yes with java.lang.String = js.native
+  /* 0 */ val doNotCare: doNotCare with scala.Double = js.native
+  /* 1 */ val no: no with scala.Double = js.native
+  /* 2 */ val yes: yes with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.TriStates with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.TriStates with scala.Double
   ] = js.native
 }
 

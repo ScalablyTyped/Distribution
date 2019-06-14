@@ -21,9 +21,9 @@ object Unit extends js.Object {
   sealed trait Pixel
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Unit
   
-  val Percentage: Percentage with java.lang.String = js.native
-  val Pixel: Pixel with java.lang.String = js.native
+  /* 0 */ val Percentage: Percentage with scala.Double = js.native
+  /* 1 */ val Pixel: Pixel with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Unit with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Unit with scala.Double] = js.native
 }
 

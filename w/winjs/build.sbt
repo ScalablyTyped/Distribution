@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "winjs"
-version := "4.4-dt-20190322Z-f19393"
+version := "4.4-dt-20190322Z-46493d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

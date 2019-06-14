@@ -31,13 +31,13 @@ object IndicatorTypes extends js.Object {
   sealed trait Text
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.IndicatorTypes
   
-  val Circle: Circle with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val RoundedRectangle: RoundedRectangle with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
+  /* 1 */ val Circle: Circle with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 2 */ val RoundedRectangle: RoundedRectangle with scala.Double = js.native
+  /* 3 */ val Text: Text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.IndicatorTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.IndicatorTypes with scala.Double
   ] = js.native
 }
 

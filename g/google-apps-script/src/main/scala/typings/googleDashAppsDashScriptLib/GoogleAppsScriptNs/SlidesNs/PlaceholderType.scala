@@ -83,27 +83,27 @@ object PlaceholderType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PlaceholderType
   
-  val BODY: BODY with java.lang.String = js.native
-  val CENTERED_TITLE: CENTERED_TITLE with java.lang.String = js.native
-  val CHART: CHART with java.lang.String = js.native
-  val CLIP_ART: CLIP_ART with java.lang.String = js.native
-  val DATE_AND_TIME: DATE_AND_TIME with java.lang.String = js.native
-  val DIAGRAM: DIAGRAM with java.lang.String = js.native
-  val FOOTER: FOOTER with java.lang.String = js.native
-  val HEADER: HEADER with java.lang.String = js.native
-  val MEDIA: MEDIA with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val OBJECT: OBJECT with java.lang.String = js.native
-  val PICTURE: PICTURE with java.lang.String = js.native
-  val SLIDE_IMAGE: SLIDE_IMAGE with java.lang.String = js.native
-  val SLIDE_NUMBER: SLIDE_NUMBER with java.lang.String = js.native
-  val SUBTITLE: SUBTITLE with java.lang.String = js.native
-  val TABLE: TABLE with java.lang.String = js.native
-  val TITLE: TITLE with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 2 */ val BODY: BODY with scala.Double = js.native
+  /* 5 */ val CENTERED_TITLE: CENTERED_TITLE with scala.Double = js.native
+  /* 3 */ val CHART: CHART with scala.Double = js.native
+  /* 4 */ val CLIP_ART: CLIP_ART with scala.Double = js.native
+  /* 7 */ val DATE_AND_TIME: DATE_AND_TIME with scala.Double = js.native
+  /* 6 */ val DIAGRAM: DIAGRAM with scala.Double = js.native
+  /* 8 */ val FOOTER: FOOTER with scala.Double = js.native
+  /* 9 */ val HEADER: HEADER with scala.Double = js.native
+  /* 10 */ val MEDIA: MEDIA with scala.Double = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 11 */ val OBJECT: OBJECT with scala.Double = js.native
+  /* 12 */ val PICTURE: PICTURE with scala.Double = js.native
+  /* 17 */ val SLIDE_IMAGE: SLIDE_IMAGE with scala.Double = js.native
+  /* 13 */ val SLIDE_NUMBER: SLIDE_NUMBER with scala.Double = js.native
+  /* 14 */ val SUBTITLE: SUBTITLE with scala.Double = js.native
+  /* 15 */ val TABLE: TABLE with scala.Double = js.native
+  /* 16 */ val TITLE: TITLE with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PlaceholderType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PlaceholderType with scala.Double
   ] = js.native
 }
 

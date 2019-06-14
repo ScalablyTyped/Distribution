@@ -35,13 +35,13 @@ object PrintColorMode extends js.Object {
   sealed trait printerCustom
     extends winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintColorMode
   
-  val color: color with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val grayscale: grayscale with java.lang.String = js.native
-  val monochrome: monochrome with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
+  /* 3 */ val color: color with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 4 */ val grayscale: grayscale with scala.Double = js.native
+  /* 5 */ val monochrome: monochrome with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintColorMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintColorMode with scala.Double] = js.native
 }
 

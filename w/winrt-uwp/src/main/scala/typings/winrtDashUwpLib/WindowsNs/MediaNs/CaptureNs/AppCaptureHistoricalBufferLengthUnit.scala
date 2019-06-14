@@ -22,11 +22,11 @@ object AppCaptureHistoricalBufferLengthUnit extends js.Object {
   sealed trait seconds
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureHistoricalBufferLengthUnit
   
-  val megabytes: megabytes with java.lang.String = js.native
-  val seconds: seconds with java.lang.String = js.native
+  /* 0 */ val megabytes: megabytes with scala.Double = js.native
+  /* 1 */ val seconds: seconds with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureHistoricalBufferLengthUnit with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.AppCaptureHistoricalBufferLengthUnit with scala.Double
   ] = js.native
 }
 

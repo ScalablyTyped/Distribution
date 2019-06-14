@@ -23,10 +23,10 @@ object TrafficModel extends js.Object {
   sealed trait PESSIMISTIC
     extends googlemapsLib.googleNs.mapsNs.TrafficModel
   
-  val BEST_GUESS: BEST_GUESS with java.lang.String = js.native
-  val OPTIMISTIC: OPTIMISTIC with java.lang.String = js.native
-  val PESSIMISTIC: PESSIMISTIC with java.lang.String = js.native
+  /* 0 */ val BEST_GUESS: BEST_GUESS with scala.Double = js.native
+  /* 1 */ val OPTIMISTIC: OPTIMISTIC with scala.Double = js.native
+  /* 2 */ val PESSIMISTIC: PESSIMISTIC with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.TrafficModel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.TrafficModel with scala.Double] = js.native
 }
 

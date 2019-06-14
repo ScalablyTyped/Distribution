@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait MsoMenuAnimation extends js.Object
 
+object MsoMenuAnimation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoMenuAnimationNone: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoMenuAnimationRandom: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoMenuAnimationSlide: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoMenuAnimationUnfold: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+}
+

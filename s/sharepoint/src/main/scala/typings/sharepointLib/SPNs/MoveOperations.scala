@@ -27,11 +27,11 @@ object MoveOperations extends js.Object {
   sealed trait overwrite
     extends sharepointLib.SPNs.MoveOperations
   
-  val allowBrokenThickets: allowBrokenThickets with java.lang.String = js.native
-  val bypassApprovePermission: bypassApprovePermission with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val overwrite: overwrite with java.lang.String = js.native
+  /* 2 */ val allowBrokenThickets: allowBrokenThickets with scala.Double = js.native
+  /* 3 */ val bypassApprovePermission: bypassApprovePermission with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val overwrite: overwrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.MoveOperations with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.MoveOperations with scala.Double] = js.native
 }
 

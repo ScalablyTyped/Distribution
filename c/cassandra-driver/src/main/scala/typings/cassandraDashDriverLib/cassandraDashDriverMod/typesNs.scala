@@ -549,17 +549,17 @@ object typesNs extends js.Object {
     sealed trait two
       extends cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies
     
-    val all: all with scala.Double = js.native
+    /* 4 */ val all: all with scala.Double = js.native
     /* 0 */ val any: any with scala.Double = js.native
-    val eachQuorum: eachQuorum with scala.Double = js.native
-    val localOne: localOne with scala.Double = js.native
-    val localQuorum: localQuorum with scala.Double = js.native
-    val localSerial: localSerial with scala.Double = js.native
-    val one: one with scala.Double = js.native
-    val quorum: quorum with scala.Double = js.native
-    val serial: serial with scala.Double = js.native
-    val three: three with scala.Double = js.native
-    val two: two with scala.Double = js.native
+    /* 6 */ val eachQuorum: eachQuorum with scala.Double = js.native
+    /* 9 */ val localOne: localOne with scala.Double = js.native
+    /* 5 */ val localQuorum: localQuorum with scala.Double = js.native
+    /* 8 */ val localSerial: localSerial with scala.Double = js.native
+    /* 0 */ val one: one with scala.Double = js.native
+    /* 3 */ val quorum: quorum with scala.Double = js.native
+    /* 7 */ val serial: serial with scala.Double = js.native
+    /* 2 */ val three: three with scala.Double = js.native
+    /* 1 */ val two: two with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[
         cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies with scala.Double
@@ -672,32 +672,32 @@ object typesNs extends js.Object {
     sealed trait varint
       extends cassandraDashDriverLib.cassandraDashDriverMod.typesNs.dataTypes
     
-    val ascii: ascii with scala.Double = js.native
-    val bigint: bigint with scala.Double = js.native
-    val blob: blob with scala.Double = js.native
-    val boolean: boolean with scala.Double = js.native
-    val counter: counter with scala.Double = js.native
+    /* 0 */ val ascii: ascii with scala.Double = js.native
+    /* 1 */ val bigint: bigint with scala.Double = js.native
+    /* 2 */ val blob: blob with scala.Double = js.native
+    /* 3 */ val boolean: boolean with scala.Double = js.native
+    /* 4 */ val counter: counter with scala.Double = js.native
     /* 0 */ val custom: custom with scala.Double = js.native
-    val date: date with scala.Double = js.native
-    val decimal: decimal with scala.Double = js.native
-    val double: double with scala.Double = js.native
-    val float: float with scala.Double = js.native
-    val inet: inet with scala.Double = js.native
-    val int: int with scala.Double = js.native
-    val list: list with scala.Double = js.native
-    val map: map with scala.Double = js.native
-    val set: set with scala.Double = js.native
-    val smallint: smallint with scala.Double = js.native
-    val text: text with scala.Double = js.native
-    val time: time with scala.Double = js.native
-    val timestamp: timestamp with scala.Double = js.native
-    val timeuuid: timeuuid with scala.Double = js.native
-    val tinyint: tinyint with scala.Double = js.native
-    val tuple: tuple with scala.Double = js.native
-    val udt: udt with scala.Double = js.native
-    val uuid: uuid with scala.Double = js.native
-    val varchar: varchar with scala.Double = js.native
-    val varint: varint with scala.Double = js.native
+    /* 16 */ val date: date with scala.Double = js.native
+    /* 5 */ val decimal: decimal with scala.Double = js.native
+    /* 6 */ val double: double with scala.Double = js.native
+    /* 7 */ val float: float with scala.Double = js.native
+    /* 15 */ val inet: inet with scala.Double = js.native
+    /* 8 */ val int: int with scala.Double = js.native
+    /* 20 */ val list: list with scala.Double = js.native
+    /* 21 */ val map: map with scala.Double = js.native
+    /* 22 */ val set: set with scala.Double = js.native
+    /* 18 */ val smallint: smallint with scala.Double = js.native
+    /* 9 */ val text: text with scala.Double = js.native
+    /* 17 */ val time: time with scala.Double = js.native
+    /* 10 */ val timestamp: timestamp with scala.Double = js.native
+    /* 14 */ val timeuuid: timeuuid with scala.Double = js.native
+    /* 19 */ val tinyint: tinyint with scala.Double = js.native
+    /* 24 */ val tuple: tuple with scala.Double = js.native
+    /* 23 */ val udt: udt with scala.Double = js.native
+    /* 11 */ val uuid: uuid with scala.Double = js.native
+    /* 12 */ val varchar: varchar with scala.Double = js.native
+    /* 13 */ val varint: varint with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[
         cassandraDashDriverLib.cassandraDashDriverMod.typesNs.dataTypes with scala.Double
@@ -718,9 +718,9 @@ object typesNs extends js.Object {
     sealed trait remote
       extends cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance
     
-    val ignored: ignored with scala.Double = js.native
+    /* 1 */ val ignored: ignored with scala.Double = js.native
     /* 0 */ val local: local with scala.Double = js.native
-    val remote: remote with scala.Double = js.native
+    /* 0 */ val remote: remote with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance with scala.Double] = js.native
   }

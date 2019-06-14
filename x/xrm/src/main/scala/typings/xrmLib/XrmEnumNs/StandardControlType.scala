@@ -25,3 +25,32 @@ import scala.scalajs.js.annotation._
 */
 trait StandardControlType extends js.Object
 
+object StandardControlType {
+  @scala.inline
+  def IFrame: xrmLib.xrmLibStrings.iframe = this.cast("iframe")
+  @scala.inline
+  def KBSearch: xrmLib.xrmLibStrings.kbsearch = this.cast("kbsearch")
+  @scala.inline
+  def Lookup: xrmLib.xrmLibStrings.lookup = this.cast("lookup")
+  @scala.inline
+  def MultiSelectOptionSet: xrmLib.xrmLibStrings.multiselectoptionset = this.cast("multiselectoptionset")
+  @scala.inline
+  def Notes: xrmLib.xrmLibStrings.notes = this.cast("notes")
+  @scala.inline
+  def OptionSet: xrmLib.xrmLibStrings.optionset = this.cast("optionset")
+  @scala.inline
+  def QuickForm: xrmLib.xrmLibStrings.quickform = this.cast("quickform")
+  @scala.inline
+  def Standard: xrmLib.xrmLibStrings.standard = this.cast("standard")
+  @scala.inline
+  def SubGrid: xrmLib.xrmLibStrings.subgrid = this.cast("subgrid")
+  @scala.inline
+  def TimeLineWall: xrmLib.xrmLibStrings.timelinewall = this.cast("timelinewall")
+  @scala.inline
+  def TimerControl: xrmLib.xrmLibStrings.timercontrol = this.cast("timercontrol")
+  @scala.inline
+  def WebResource: xrmLib.xrmLibStrings.webresource = this.cast("webresource")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -25,10 +25,10 @@ object TextDirection extends js.Object {
   sealed trait RightToLeft
     extends sharepointLib.SPNs.JsGridNs.TextDirection
   
-  val Default: Default with java.lang.String = js.native
-  val LeftToRight: LeftToRight with java.lang.String = js.native
-  val RightToLeft: RightToLeft with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val LeftToRight: LeftToRight with scala.Double = js.native
+  /* 1 */ val RightToLeft: RightToLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.TextDirection with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.TextDirection with scala.Double] = js.native
 }
 

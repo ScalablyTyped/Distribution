@@ -30,11 +30,11 @@ object EditActorWriteType extends js.Object {
   sealed trait LocalizedOnly
     extends sharepointLib.SPNs.JsGridNs.EditActorWriteType
   
-  val Both: Both with java.lang.String = js.native
-  val DataOnly: DataOnly with java.lang.String = js.native
-  val Either: Either with java.lang.String = js.native
-  val LocalizedOnly: LocalizedOnly with java.lang.String = js.native
+  /* 0 */ val Both: Both with scala.Double = js.native
+  /* 2 */ val DataOnly: DataOnly with scala.Double = js.native
+  /* 3 */ val Either: Either with scala.Double = js.native
+  /* 1 */ val LocalizedOnly: LocalizedOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.EditActorWriteType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.EditActorWriteType with scala.Double] = js.native
 }
 

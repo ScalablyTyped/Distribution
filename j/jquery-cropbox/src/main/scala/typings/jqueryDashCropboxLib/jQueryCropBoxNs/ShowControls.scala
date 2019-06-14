@@ -27,11 +27,11 @@ object ShowControls extends js.Object {
   sealed trait never
     extends jqueryDashCropboxLib.jQueryCropBoxNs.ShowControls
   
-  val always: always with java.lang.String = js.native
-  val auto: auto with java.lang.String = js.native
-  val hover: hover with java.lang.String = js.native
-  val never: never with java.lang.String = js.native
+  /* 1 */ val always: always with scala.Double = js.native
+  /* 3 */ val auto: auto with scala.Double = js.native
+  /* 2 */ val hover: hover with scala.Double = js.native
+  /* 0 */ val never: never with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jqueryDashCropboxLib.jQueryCropBoxNs.ShowControls with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jqueryDashCropboxLib.jQueryCropBoxNs.ShowControls with scala.Double] = js.native
 }
 

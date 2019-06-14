@@ -27,12 +27,12 @@ object DeviceAccountServerType extends js.Object {
   sealed trait pop
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.SystemAccessNs.DeviceAccountServerType
   
-  val exchange: exchange with java.lang.String = js.native
-  val imap: imap with java.lang.String = js.native
-  val pop: pop with java.lang.String = js.native
+  /* 0 */ val exchange: exchange with scala.Double = js.native
+  /* 2 */ val imap: imap with scala.Double = js.native
+  /* 1 */ val pop: pop with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.SystemAccessNs.DeviceAccountServerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.UserDataAccountsNs.SystemAccessNs.DeviceAccountServerType with scala.Double
   ] = js.native
 }
 

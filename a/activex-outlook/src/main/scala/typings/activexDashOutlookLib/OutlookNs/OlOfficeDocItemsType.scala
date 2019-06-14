@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait OlOfficeDocItemsType extends js.Object
 
+object OlOfficeDocItemsType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olExcelWorkSheetItem: activexDashOutlookLib.activexDashOutlookLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def olPowerPointShowItem: activexDashOutlookLib.activexDashOutlookLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def olWordDocumentItem: activexDashOutlookLib.activexDashOutlookLibNumbers.`9` = this.cast(9)
+}
+

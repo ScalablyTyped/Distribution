@@ -57,18 +57,18 @@ object XboxLiveEndpointPairCreationStatus extends js.Object {
   sealed trait unexpectedInternalError
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveEndpointPairCreationStatus
   
-  val canceled: canceled with java.lang.String = js.native
-  val localSystemNotAuthorized: localSystemNotAuthorized with java.lang.String = js.native
-  val noCompatibleNetworkPaths: noCompatibleNetworkPaths with java.lang.String = js.native
-  val noLocalNetworks: noLocalNetworks with java.lang.String = js.native
-  val refusedDueToConfiguration: refusedDueToConfiguration with java.lang.String = js.native
-  val remoteSystemNotAuthorized: remoteSystemNotAuthorized with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
-  val timedOut: timedOut with java.lang.String = js.native
-  val unexpectedInternalError: unexpectedInternalError with java.lang.String = js.native
+  /* 4 */ val canceled: canceled with scala.Double = js.native
+  /* 3 */ val localSystemNotAuthorized: localSystemNotAuthorized with scala.Double = js.native
+  /* 2 */ val noCompatibleNetworkPaths: noCompatibleNetworkPaths with scala.Double = js.native
+  /* 1 */ val noLocalNetworks: noLocalNetworks with scala.Double = js.native
+  /* 7 */ val refusedDueToConfiguration: refusedDueToConfiguration with scala.Double = js.native
+  /* 6 */ val remoteSystemNotAuthorized: remoteSystemNotAuthorized with scala.Double = js.native
+  /* 0 */ val succeeded: succeeded with scala.Double = js.native
+  /* 5 */ val timedOut: timedOut with scala.Double = js.native
+  /* 8 */ val unexpectedInternalError: unexpectedInternalError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveEndpointPairCreationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveEndpointPairCreationStatus with scala.Double
   ] = js.native
 }
 

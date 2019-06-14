@@ -22,11 +22,11 @@ object CompositionType extends js.Object {
   sealed trait public
     extends winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.CompositionType
   
-  val `protected`: `protected` with java.lang.String = js.native
-  val public: public with java.lang.String = js.native
+  /* 0 */ val `protected`: `protected` with scala.Double = js.native
+  /* 1 */ val public: public with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.CompositionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.CompositionType with scala.Double
   ] = js.native
 }
 

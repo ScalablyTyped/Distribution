@@ -21,11 +21,11 @@ object RangeZOrderPlacement extends js.Object {
   sealed trait Rear
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.RangeZOrderPlacement
   
-  val Front: Front with java.lang.String = js.native
-  val Rear: Rear with java.lang.String = js.native
+  /* 1 */ val Front: Front with scala.Double = js.native
+  /* 0 */ val Rear: Rear with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.RangeZOrderPlacement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.RangeZOrderPlacement with scala.Double
   ] = js.native
 }
 

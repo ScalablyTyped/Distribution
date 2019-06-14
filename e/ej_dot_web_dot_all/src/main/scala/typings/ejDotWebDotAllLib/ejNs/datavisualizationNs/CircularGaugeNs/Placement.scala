@@ -21,11 +21,11 @@ object Placement extends js.Object {
   sealed trait Near
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Placement
   
-  val Far: Far with java.lang.String = js.native
-  val Near: Near with java.lang.String = js.native
+  /* 1 */ val Far: Far with scala.Double = js.native
+  /* 0 */ val Near: Near with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Placement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Placement with scala.Double
   ] = js.native
 }
 

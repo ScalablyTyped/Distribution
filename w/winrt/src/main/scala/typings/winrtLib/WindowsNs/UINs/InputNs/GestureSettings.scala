@@ -79,24 +79,24 @@ object GestureSettings extends js.Object {
   sealed trait tap
     extends winrtLib.WindowsNs.UINs.InputNs.GestureSettings
   
-  val crossSlide: crossSlide with java.lang.String = js.native
-  val doubleTap: doubleTap with java.lang.String = js.native
-  val drag: drag with java.lang.String = js.native
-  val hold: hold with java.lang.String = js.native
-  val holdWithMouse: holdWithMouse with java.lang.String = js.native
-  val manipulationRotate: manipulationRotate with java.lang.String = js.native
-  val manipulationRotateInertia: manipulationRotateInertia with java.lang.String = js.native
-  val manipulationScale: manipulationScale with java.lang.String = js.native
-  val manipulationScaleInertia: manipulationScaleInertia with java.lang.String = js.native
-  val manipulationTranslateInertia: manipulationTranslateInertia with java.lang.String = js.native
-  val manipulationTranslateRailsX: manipulationTranslateRailsX with java.lang.String = js.native
-  val manipulationTranslateRailsY: manipulationTranslateRailsY with java.lang.String = js.native
-  val manipulationTranslateX: manipulationTranslateX with java.lang.String = js.native
-  val manipulationTranslateY: manipulationTranslateY with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val rightTap: rightTap with java.lang.String = js.native
-  val tap: tap with java.lang.String = js.native
+  /* 16 */ val crossSlide: crossSlide with scala.Double = js.native
+  /* 2 */ val doubleTap: doubleTap with scala.Double = js.native
+  /* 6 */ val drag: drag with scala.Double = js.native
+  /* 3 */ val hold: hold with scala.Double = js.native
+  /* 4 */ val holdWithMouse: holdWithMouse with scala.Double = js.native
+  /* 11 */ val manipulationRotate: manipulationRotate with scala.Double = js.native
+  /* 14 */ val manipulationRotateInertia: manipulationRotateInertia with scala.Double = js.native
+  /* 12 */ val manipulationScale: manipulationScale with scala.Double = js.native
+  /* 15 */ val manipulationScaleInertia: manipulationScaleInertia with scala.Double = js.native
+  /* 13 */ val manipulationTranslateInertia: manipulationTranslateInertia with scala.Double = js.native
+  /* 9 */ val manipulationTranslateRailsX: manipulationTranslateRailsX with scala.Double = js.native
+  /* 10 */ val manipulationTranslateRailsY: manipulationTranslateRailsY with scala.Double = js.native
+  /* 7 */ val manipulationTranslateX: manipulationTranslateX with scala.Double = js.native
+  /* 8 */ val manipulationTranslateY: manipulationTranslateY with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 5 */ val rightTap: rightTap with scala.Double = js.native
+  /* 1 */ val tap: tap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.GestureSettings with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.GestureSettings with scala.Double] = js.native
 }
 

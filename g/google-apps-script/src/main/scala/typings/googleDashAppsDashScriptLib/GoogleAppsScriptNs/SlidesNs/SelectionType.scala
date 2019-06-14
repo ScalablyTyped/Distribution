@@ -39,16 +39,16 @@ object SelectionType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.SelectionType
   
-  val CURRENT_PAGE: CURRENT_PAGE with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val PAGE: PAGE with java.lang.String = js.native
-  val PAGE_ELEMENT: PAGE_ELEMENT with java.lang.String = js.native
-  val TABLE_CELL: TABLE_CELL with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 6 */ val CURRENT_PAGE: CURRENT_PAGE with scala.Double = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 4 */ val PAGE: PAGE with scala.Double = js.native
+  /* 5 */ val PAGE_ELEMENT: PAGE_ELEMENT with scala.Double = js.native
+  /* 3 */ val TABLE_CELL: TABLE_CELL with scala.Double = js.native
+  /* 2 */ val TEXT: TEXT with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.SelectionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.SelectionType with scala.Double
   ] = js.native
 }
 

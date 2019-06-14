@@ -46,7 +46,6 @@ These comments are from the typescript definitions and might be useful:
 //                 Alex Dunne <https://github.com/alexdunne>
 //                 Manuel Alabor <https://github.com/swissmanu>
 //                 Michele Bombardi <https://github.com/bm-software>
-//                 Tanguy Krotoff <https://github.com/tkrotoff>
 //                 Alexander T. <https://github.com/a-tarasyuk>
 //                 Martin van Dam <https://github.com/mvdam>
 //                 Kacper Wiszczuk <https://github.com/esemesek>

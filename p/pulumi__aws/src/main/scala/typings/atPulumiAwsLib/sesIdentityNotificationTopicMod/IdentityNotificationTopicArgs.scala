@@ -11,6 +11,10 @@ trait IdentityNotificationTopicArgs extends js.Object {
     */
   val identity: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
+    * Whether SES should include original email headers in SNS notifications of this type. *false* by default.
+    */
+  val includeOriginalHeaders: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  /**
     * The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: *Bounce*, *Complaint* or *Delivery*.
     */
   val notificationType: atPulumiPulumiLib.outputMod.Input[java.lang.String]
@@ -25,9 +29,11 @@ object IdentityNotificationTopicArgs {
   def apply(
     identity: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     notificationType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    includeOriginalHeaders: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): IdentityNotificationTopicArgs = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any])
+    if (includeOriginalHeaders != null) __obj.updateDynamic("includeOriginalHeaders")(includeOriginalHeaders.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityNotificationTopicArgs]
   }

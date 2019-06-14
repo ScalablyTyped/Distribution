@@ -47,16 +47,16 @@ object XboxLiveEndpointPairState extends js.Object {
   sealed trait remoteEndpointTerminating
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveEndpointPairState
   
-  val creatingInbound: creatingInbound with java.lang.String = js.native
-  val creatingOutbound: creatingOutbound with java.lang.String = js.native
-  val deleted: deleted with java.lang.String = js.native
-  val deletingLocally: deletingLocally with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
-  val remoteEndpointTerminating: remoteEndpointTerminating with java.lang.String = js.native
+  /* 2 */ val creatingInbound: creatingInbound with scala.Double = js.native
+  /* 1 */ val creatingOutbound: creatingOutbound with scala.Double = js.native
+  /* 6 */ val deleted: deleted with scala.Double = js.native
+  /* 4 */ val deletingLocally: deletingLocally with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 3 */ val ready: ready with scala.Double = js.native
+  /* 5 */ val remoteEndpointTerminating: remoteEndpointTerminating with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveEndpointPairState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveEndpointPairState with scala.Double
   ] = js.native
 }
 

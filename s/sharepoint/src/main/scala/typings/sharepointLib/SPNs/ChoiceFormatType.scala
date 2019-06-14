@@ -19,9 +19,9 @@ object ChoiceFormatType extends js.Object {
   sealed trait radioButtons
     extends sharepointLib.SPNs.ChoiceFormatType
   
-  val dropdown: dropdown with java.lang.String = js.native
-  val radioButtons: radioButtons with java.lang.String = js.native
+  /* 0 */ val dropdown: dropdown with scala.Double = js.native
+  /* 1 */ val radioButtons: radioButtons with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ChoiceFormatType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ChoiceFormatType with scala.Double] = js.native
 }
 

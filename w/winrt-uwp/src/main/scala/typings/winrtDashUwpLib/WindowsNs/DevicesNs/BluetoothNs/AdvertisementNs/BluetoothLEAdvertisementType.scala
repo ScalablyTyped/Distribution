@@ -37,14 +37,14 @@ object BluetoothLEAdvertisementType extends js.Object {
   sealed trait scannableUndirected
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEAdvertisementType
   
-  val connectableDirected: connectableDirected with java.lang.String = js.native
-  val connectableUndirected: connectableUndirected with java.lang.String = js.native
-  val nonConnectableUndirected: nonConnectableUndirected with java.lang.String = js.native
-  val scanResponse: scanResponse with java.lang.String = js.native
-  val scannableUndirected: scannableUndirected with java.lang.String = js.native
+  /* 1 */ val connectableDirected: connectableDirected with scala.Double = js.native
+  /* 0 */ val connectableUndirected: connectableUndirected with scala.Double = js.native
+  /* 3 */ val nonConnectableUndirected: nonConnectableUndirected with scala.Double = js.native
+  /* 4 */ val scanResponse: scanResponse with scala.Double = js.native
+  /* 2 */ val scannableUndirected: scannableUndirected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEAdvertisementType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEAdvertisementType with scala.Double
   ] = js.native
 }
 

@@ -48,17 +48,17 @@ object RoundingMode extends js.Object {
   sealed trait TOWARDS_ZERO
     extends openui5Lib.sapNs.uiNs.coreNs.formatNs.NumberFormatNs.RoundingMode
   
-  val AWAY_FROM_ZERO: AWAY_FROM_ZERO with java.lang.String = js.native
-  val CEILING: CEILING with java.lang.String = js.native
-  val FLOOR: FLOOR with java.lang.String = js.native
-  val HALF_AWAY_FROM_ZERO: HALF_AWAY_FROM_ZERO with java.lang.String = js.native
-  val HALF_CEILING: HALF_CEILING with java.lang.String = js.native
-  val HALF_FLOOR: HALF_FLOOR with java.lang.String = js.native
-  val HALF_TOWARDS_ZERO: HALF_TOWARDS_ZERO with java.lang.String = js.native
-  val TOWARDS_ZERO: TOWARDS_ZERO with java.lang.String = js.native
+  /* 0 */ val AWAY_FROM_ZERO: AWAY_FROM_ZERO with scala.Double = js.native
+  /* 1 */ val CEILING: CEILING with scala.Double = js.native
+  /* 2 */ val FLOOR: FLOOR with scala.Double = js.native
+  /* 3 */ val HALF_AWAY_FROM_ZERO: HALF_AWAY_FROM_ZERO with scala.Double = js.native
+  /* 4 */ val HALF_CEILING: HALF_CEILING with scala.Double = js.native
+  /* 5 */ val HALF_FLOOR: HALF_FLOOR with scala.Double = js.native
+  /* 6 */ val HALF_TOWARDS_ZERO: HALF_TOWARDS_ZERO with scala.Double = js.native
+  /* 7 */ val TOWARDS_ZERO: TOWARDS_ZERO with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    openui5Lib.sapNs.uiNs.coreNs.formatNs.NumberFormatNs.RoundingMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    openui5Lib.sapNs.uiNs.coreNs.formatNs.NumberFormatNs.RoundingMode with scala.Double
   ] = js.native
 }
 

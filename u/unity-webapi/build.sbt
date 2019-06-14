@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unity-webapi"
-version := "1.0-dt-20190322Z-cb93bc"
+version := "1.0-dt-20190322Z-978164"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

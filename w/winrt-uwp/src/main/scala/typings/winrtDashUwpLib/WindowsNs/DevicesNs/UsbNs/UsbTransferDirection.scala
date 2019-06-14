@@ -22,11 +22,9 @@ object UsbTransferDirection extends js.Object {
   sealed trait out
     extends winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbTransferDirection
   
-  val in: in with java.lang.String = js.native
-  val out: out with java.lang.String = js.native
+  /* 1 */ val in: in with scala.Double = js.native
+  /* 0 */ val out: out with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbTransferDirection with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbTransferDirection with scala.Double] = js.native
 }
 

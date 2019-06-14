@@ -39,16 +39,16 @@ object CSSMathOperator extends js.Object {
   sealed trait sum
     extends w3cDashCssDashTypedDashObjectDashModelDashLevelDash1Lib.CSSMathOperator
   
-  val clamp: clamp with java.lang.String = js.native
-  val invert: invert with java.lang.String = js.native
-  val max: max with java.lang.String = js.native
-  val min: min with java.lang.String = js.native
-  val negate: negate with java.lang.String = js.native
-  val product: product with java.lang.String = js.native
-  val sum: sum with java.lang.String = js.native
+  /* 6 */ val clamp: clamp with scala.Double = js.native
+  /* 3 */ val invert: invert with scala.Double = js.native
+  /* 5 */ val max: max with scala.Double = js.native
+  /* 4 */ val min: min with scala.Double = js.native
+  /* 2 */ val negate: negate with scala.Double = js.native
+  /* 1 */ val product: product with scala.Double = js.native
+  /* 0 */ val sum: sum with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    w3cDashCssDashTypedDashObjectDashModelDashLevelDash1Lib.CSSMathOperator with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    w3cDashCssDashTypedDashObjectDashModelDashLevelDash1Lib.CSSMathOperator with scala.Double
   ] = js.native
 }
 

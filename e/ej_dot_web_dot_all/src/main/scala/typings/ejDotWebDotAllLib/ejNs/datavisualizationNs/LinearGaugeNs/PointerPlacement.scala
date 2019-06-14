@@ -26,12 +26,12 @@ object PointerPlacement extends js.Object {
   sealed trait Near
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.PointerPlacement
   
-  val Center: Center with java.lang.String = js.native
-  val Far: Far with java.lang.String = js.native
-  val Near: Near with java.lang.String = js.native
+  /* 2 */ val Center: Center with scala.Double = js.native
+  /* 1 */ val Far: Far with scala.Double = js.native
+  /* 0 */ val Near: Near with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.PointerPlacement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.PointerPlacement with scala.Double
   ] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__apputils"
-version := "0.19.1-a6deaa"
+version := "0.19.1-b98cd4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.1.2-013d85",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.6.0-9c7ad0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -26,12 +26,12 @@ object BPMNBoundary extends js.Object {
   sealed trait Event
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNBoundary
   
-  val Call: Call with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Event: Event with java.lang.String = js.native
+  /* 1 */ val Call: Call with scala.Double = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val Event: Event with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNBoundary with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNBoundary with scala.Double
   ] = js.native
 }
 

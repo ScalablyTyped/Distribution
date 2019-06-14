@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlMouseButton extends js.Object
 
+object XlMouseButton {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlNoButton: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlPrimaryButton: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlSecondaryButton: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

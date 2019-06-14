@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mce"
-version := "0.6-dt-20180806Z-bf4d81"
+version := "0.6-dt-20180806Z-9236ea"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-219526",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e29cf7",
   "org.scalablytyped" %%% "std" % "3.5-c5d119",
   "org.scalablytyped" %%% "tinymce" % "4.5-dt-20190514Z-8074f5")

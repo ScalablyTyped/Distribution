@@ -27,12 +27,12 @@ object ContactStoreAccessType extends js.Object {
   sealed trait appContactsReadWrite
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactStoreAccessType
   
-  val allContactsReadOnly: allContactsReadOnly with java.lang.String = js.native
-  val allContactsReadWrite: allContactsReadWrite with java.lang.String = js.native
-  val appContactsReadWrite: appContactsReadWrite with java.lang.String = js.native
+  /* 1 */ val allContactsReadOnly: allContactsReadOnly with scala.Double = js.native
+  /* 2 */ val allContactsReadWrite: allContactsReadWrite with scala.Double = js.native
+  /* 0 */ val appContactsReadWrite: appContactsReadWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactStoreAccessType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactStoreAccessType with scala.Double
   ] = js.native
 }
 

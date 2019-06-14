@@ -22,9 +22,9 @@ object ListGrowingDirection extends js.Object {
   sealed trait Upwards
     extends openui5Lib.sapNs.mNs.ListGrowingDirection
   
-  val Downwards: Downwards with java.lang.String = js.native
-  val Upwards: Upwards with java.lang.String = js.native
+  /* 0 */ val Downwards: Downwards with scala.Double = js.native
+  /* 1 */ val Upwards: Upwards with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ListGrowingDirection with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ListGrowingDirection with scala.Double] = js.native
 }
 

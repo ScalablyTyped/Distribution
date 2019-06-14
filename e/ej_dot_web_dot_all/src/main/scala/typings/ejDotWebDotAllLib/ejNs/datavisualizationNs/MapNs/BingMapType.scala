@@ -26,12 +26,10 @@ object BingMapType extends js.Object {
   sealed trait Road
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.BingMapType
   
-  val Aerial: Aerial with java.lang.String = js.native
-  val Aerialwithlabel: Aerialwithlabel with java.lang.String = js.native
-  val Road: Road with java.lang.String = js.native
+  /* 0 */ val Aerial: Aerial with scala.Double = js.native
+  /* 1 */ val Aerialwithlabel: Aerialwithlabel with scala.Double = js.native
+  /* 2 */ val Road: Road with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.BingMapType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.BingMapType with scala.Double] = js.native
 }
 

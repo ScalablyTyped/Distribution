@@ -39,14 +39,14 @@ object Panel extends js.Object {
   sealed trait unknown
     extends winrtLib.WindowsNs.DevicesNs.EnumerationNs.Panel
   
-  val back: back with java.lang.String = js.native
-  val bottom: bottom with java.lang.String = js.native
-  val front: front with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
-  val top: top with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 2 */ val back: back with scala.Double = js.native
+  /* 4 */ val bottom: bottom with scala.Double = js.native
+  /* 1 */ val front: front with scala.Double = js.native
+  /* 5 */ val left: left with scala.Double = js.native
+  /* 6 */ val right: right with scala.Double = js.native
+  /* 3 */ val top: top with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.EnumerationNs.Panel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.EnumerationNs.Panel with scala.Double] = js.native
 }
 

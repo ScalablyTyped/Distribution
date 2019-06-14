@@ -28,9 +28,9 @@ object ListViewAnimationType extends js.Object {
   sealed trait entrance
     extends winjsLib.WinJSNs.UINs.ListViewAnimationType
   
-  val contentTransition: contentTransition with java.lang.String = js.native
-  val entrance: entrance with java.lang.String = js.native
+  /* 1 */ val contentTransition: contentTransition with scala.Double = js.native
+  /* 0 */ val entrance: entrance with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.ListViewAnimationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.ListViewAnimationType with scala.Double] = js.native
 }
 

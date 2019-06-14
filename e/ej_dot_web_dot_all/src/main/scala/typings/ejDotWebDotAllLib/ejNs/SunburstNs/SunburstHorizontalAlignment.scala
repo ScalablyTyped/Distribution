@@ -26,12 +26,10 @@ object SunburstHorizontalAlignment extends js.Object {
   sealed trait Right
     extends ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHorizontalAlignment
   
-  val Center: Center with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 0 */ val Center: Center with scala.Double = js.native
+  /* 1 */ val Left: Left with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHorizontalAlignment with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHorizontalAlignment with scala.Double] = js.native
 }
 

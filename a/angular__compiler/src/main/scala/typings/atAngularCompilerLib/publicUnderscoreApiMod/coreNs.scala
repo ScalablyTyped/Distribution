@@ -8,123 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "core")
 @js.native
 object coreNs extends js.Object {
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-  */
-  trait ArgumentType extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`5`
-  */
-  trait AttributeMarker extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`32`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`48`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`15`
-  */
-  trait BindingFlags extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
-  */
-  trait DepFlags extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
-  */
-  trait InjectFlags extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`32`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`64`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`128`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`224`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`256`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`512`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1024`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2048`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4096`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8192`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16384`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`32768`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3840`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`20224`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`65536`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`131072`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`262144`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`524288`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1048576`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2097152`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4194304`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8388608`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16777216`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`33554432`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`67108864`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`134217728`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`268435456`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`536870912`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1073741824`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`201326592`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`201347067`
-  */
-  trait NodeFlags extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-  */
-  trait QueryBindingType extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-  */
-  trait QueryValueType extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-  */
-  trait RenderFlags extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
-  */
-  trait SelectorFlags extends js.Object
-  
   @js.native
   class TypeCls protected ()
     extends js.Function {
@@ -134,12 +17,6 @@ object coreNs extends js.Object {
       */
     def this(args: java.lang.String*) = this()
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
-    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
-  */
-  trait ViewFlags extends js.Object
   
   val CUSTOM_ELEMENTS_SCHEMA: atAngularCompilerLib.srcCoreMod.SchemaMetadata = js.native
   val NO_ERRORS_SCHEMA: atAngularCompilerLib.srcCoreMod.SchemaMetadata = js.native
@@ -205,5 +82,16 @@ object coreNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.ViewEncapsulation with scala.Double] = js.native
   }
   
+  type ArgumentType = atAngularCompilerLib.srcCoreMod.ArgumentType
+  type AttributeMarker = atAngularCompilerLib.srcCoreMod.AttributeMarker
+  type BindingFlags = atAngularCompilerLib.srcCoreMod.BindingFlags
+  type DepFlags = atAngularCompilerLib.srcCoreMod.DepFlags
+  type InjectFlags = atAngularCompilerLib.srcCoreMod.InjectFlags
+  type NodeFlags = atAngularCompilerLib.srcCoreMod.NodeFlags
+  type QueryBindingType = atAngularCompilerLib.srcCoreMod.QueryBindingType
+  type QueryValueType = atAngularCompilerLib.srcCoreMod.QueryValueType
+  type RenderFlags = atAngularCompilerLib.srcCoreMod.RenderFlags
+  type SelectorFlags = atAngularCompilerLib.srcCoreMod.SelectorFlags
+  type ViewFlags = atAngularCompilerLib.srcCoreMod.ViewFlags
 }
 

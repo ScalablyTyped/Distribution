@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait FAX_COVERPAGE_TYPE_ENUM extends js.Object
 
+object FAX_COVERPAGE_TYPE_ENUM {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fcptLOCAL: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def fcptNONE: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def fcptSERVER: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`2` = this.cast(2)
+}
+

@@ -32,12 +32,12 @@ object ConversationTypes extends js.Object {
   sealed trait UNSPECIFIED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.ConversationTypes
   
-  val ACTIVE: ACTIVE with java.lang.String = js.native
-  val NEW: NEW with java.lang.String = js.native
-  val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
+  /* 2 */ val ACTIVE: ACTIVE with scala.Double = js.native
+  /* 1 */ val NEW: NEW with scala.Double = js.native
+  /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.ConversationTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    actionsDashOnDashGoogleLib.assistantDashAppMod.ConversationTypes with scala.Double
   ] = js.native
 }
 

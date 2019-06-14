@@ -32,13 +32,13 @@ object KeyCredentialAttestationStatus extends js.Object {
   sealed trait unknownError
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.KeyCredentialAttestationStatus
   
-  val notSupported: notSupported with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val temporaryFailure: temporaryFailure with java.lang.String = js.native
-  val unknownError: unknownError with java.lang.String = js.native
+  /* 2 */ val notSupported: notSupported with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val temporaryFailure: temporaryFailure with scala.Double = js.native
+  /* 1 */ val unknownError: unknownError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.KeyCredentialAttestationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.KeyCredentialAttestationStatus with scala.Double
   ] = js.native
 }
 

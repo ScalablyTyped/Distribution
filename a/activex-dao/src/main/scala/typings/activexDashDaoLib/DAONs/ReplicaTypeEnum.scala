@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait ReplicaTypeEnum extends js.Object
 
+object ReplicaTypeEnum {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dbRepMakePartial: activexDashDaoLib.activexDashDaoLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def dbRepMakeReadOnly: activexDashDaoLib.activexDashDaoLibNumbers.`2` = this.cast(2)
+}
+

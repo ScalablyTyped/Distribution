@@ -41,13 +41,13 @@ object SunburstLegendShape extends js.Object {
   sealed trait Triangle
     extends ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLegendShape
   
-  val Circle: Circle with java.lang.String = js.native
-  val Cross: Cross with java.lang.String = js.native
-  val Diamond: Diamond with java.lang.String = js.native
-  val Pentagon: Pentagon with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
+  /* 3 */ val Circle: Circle with scala.Double = js.native
+  /* 4 */ val Cross: Cross with scala.Double = js.native
+  /* 0 */ val Diamond: Diamond with scala.Double = js.native
+  /* 1 */ val Pentagon: Pentagon with scala.Double = js.native
+  /* 2 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 5 */ val Triangle: Triangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLegendShape with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLegendShape with scala.Double] = js.native
 }
 

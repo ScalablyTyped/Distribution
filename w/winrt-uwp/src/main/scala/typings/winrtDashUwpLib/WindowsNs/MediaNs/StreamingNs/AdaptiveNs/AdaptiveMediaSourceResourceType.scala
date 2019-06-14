@@ -37,14 +37,14 @@ object AdaptiveMediaSourceResourceType extends js.Object {
   sealed trait mediaSegment
     extends winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceResourceType
   
-  val initializationSegment: initializationSegment with java.lang.String = js.native
-  val initializationVector: initializationVector with java.lang.String = js.native
-  val key: key with java.lang.String = js.native
-  val manifest: manifest with java.lang.String = js.native
-  val mediaSegment: mediaSegment with java.lang.String = js.native
+  /* 1 */ val initializationSegment: initializationSegment with scala.Double = js.native
+  /* 4 */ val initializationVector: initializationVector with scala.Double = js.native
+  /* 3 */ val key: key with scala.Double = js.native
+  /* 0 */ val manifest: manifest with scala.Double = js.native
+  /* 2 */ val mediaSegment: mediaSegment with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceResourceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceResourceType with scala.Double
   ] = js.native
 }
 

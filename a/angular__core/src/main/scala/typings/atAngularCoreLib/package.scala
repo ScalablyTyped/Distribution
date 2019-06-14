@@ -90,6 +90,17 @@ package object atAngularCoreLib {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ɵPipeDef<any> */ js.Any
   ]
   /**
+    * List of slots for a projection. A slot can be either based on a parsed CSS selector
+    * which will be used to determine nodes which are projected into that slot.
+    *
+    * When set to "*", the slot is reserved and can be used for multi-slot projection
+    * using {@link ViewContainerRef#createComponent}. The last slot that specifies the
+    * wildcard selector will retrieve all projectable nodes which do not match any selector.
+    */
+  type ProjectionSlots = js.Array[
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ɵCssSelectorList */ js.Any) | atAngularCoreLib.atAngularCoreLibStrings.`*`
+  ]
+  /**
     * Store the runtime input or output names for all the directives.
     *
     * i+0: directive instance index

@@ -75,25 +75,25 @@ object ItemType extends js.Object {
   sealed trait VIDEO
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.ItemType
   
-  val CHECKBOX: CHECKBOX with java.lang.String = js.native
-  val CHECKBOX_GRID: CHECKBOX_GRID with java.lang.String = js.native
-  val DATE: DATE with java.lang.String = js.native
-  val DATETIME: DATETIME with java.lang.String = js.native
-  val DURATION: DURATION with java.lang.String = js.native
-  val GRID: GRID with java.lang.String = js.native
-  val IMAGE: IMAGE with java.lang.String = js.native
-  val LIST: LIST with java.lang.String = js.native
-  val MULTIPLE_CHOICE: MULTIPLE_CHOICE with java.lang.String = js.native
-  val PAGE_BREAK: PAGE_BREAK with java.lang.String = js.native
-  val PARAGRAPH_TEXT: PARAGRAPH_TEXT with java.lang.String = js.native
-  val SCALE: SCALE with java.lang.String = js.native
-  val SECTION_HEADER: SECTION_HEADER with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
-  val TIME: TIME with java.lang.String = js.native
-  val VIDEO: VIDEO with java.lang.String = js.native
+  /* 0 */ val CHECKBOX: CHECKBOX with scala.Double = js.native
+  /* 1 */ val CHECKBOX_GRID: CHECKBOX_GRID with scala.Double = js.native
+  /* 2 */ val DATE: DATE with scala.Double = js.native
+  /* 3 */ val DATETIME: DATETIME with scala.Double = js.native
+  /* 4 */ val DURATION: DURATION with scala.Double = js.native
+  /* 5 */ val GRID: GRID with scala.Double = js.native
+  /* 6 */ val IMAGE: IMAGE with scala.Double = js.native
+  /* 7 */ val LIST: LIST with scala.Double = js.native
+  /* 8 */ val MULTIPLE_CHOICE: MULTIPLE_CHOICE with scala.Double = js.native
+  /* 9 */ val PAGE_BREAK: PAGE_BREAK with scala.Double = js.native
+  /* 10 */ val PARAGRAPH_TEXT: PARAGRAPH_TEXT with scala.Double = js.native
+  /* 11 */ val SCALE: SCALE with scala.Double = js.native
+  /* 12 */ val SECTION_HEADER: SECTION_HEADER with scala.Double = js.native
+  /* 13 */ val TEXT: TEXT with scala.Double = js.native
+  /* 14 */ val TIME: TIME with scala.Double = js.native
+  /* 15 */ val VIDEO: VIDEO with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.ItemType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.ItemType with scala.Double
   ] = js.native
 }
 

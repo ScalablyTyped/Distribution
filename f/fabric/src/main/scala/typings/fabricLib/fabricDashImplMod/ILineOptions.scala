@@ -78,7 +78,7 @@ object ILineOptions {
     moveCursor: java.lang.String = null,
     name: java.lang.String = null,
     noScaleCache: js.UndefOr[scala.Boolean] = js.undefined,
-    oCoords: fabricLib.Anon_BlBrMb = null,
+    oCoords: fabricLib.Anon_BlBrMbMl = null,
     objectCaching: js.UndefOr[scala.Boolean] = js.undefined,
     opacity: scala.Int | scala.Double = null,
     originX: java.lang.String = null,

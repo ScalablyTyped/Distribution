@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait ɵViewFlags extends js.Object
 
+object ɵViewFlags {
+  @scala.inline
+  def None: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def OnPush: atAngularCoreLib.atAngularCoreLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

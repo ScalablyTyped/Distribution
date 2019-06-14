@@ -19,11 +19,11 @@ object OnClose extends js.Object {
   sealed trait RELOAD_ADD_ON
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.OnClose
   
-  val NOTHING: NOTHING with java.lang.String = js.native
-  val RELOAD_ADD_ON: RELOAD_ADD_ON with java.lang.String = js.native
+  /* 0 */ val NOTHING: NOTHING with scala.Double = js.native
+  /* 1 */ val RELOAD_ADD_ON: RELOAD_ADD_ON with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.OnClose with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.OnClose with scala.Double
   ] = js.native
 }
 

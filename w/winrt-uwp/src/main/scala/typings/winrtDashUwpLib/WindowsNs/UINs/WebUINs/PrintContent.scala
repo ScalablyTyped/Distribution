@@ -32,11 +32,11 @@ object PrintContent extends js.Object {
   sealed trait customPageRange
     extends winrtDashUwpLib.WindowsNs.UINs.WebUINs.PrintContent
   
-  val allPages: allPages with java.lang.String = js.native
-  val currentPage: currentPage with java.lang.String = js.native
-  val currentSelection: currentSelection with java.lang.String = js.native
-  val customPageRange: customPageRange with java.lang.String = js.native
+  /* 0 */ val allPages: allPages with scala.Double = js.native
+  /* 1 */ val currentPage: currentPage with scala.Double = js.native
+  /* 3 */ val currentSelection: currentSelection with scala.Double = js.native
+  /* 2 */ val customPageRange: customPageRange with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.WebUINs.PrintContent with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.WebUINs.PrintContent with scala.Double] = js.native
 }
 

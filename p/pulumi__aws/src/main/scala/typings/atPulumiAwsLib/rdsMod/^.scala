@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/rds", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var AuroraEngine: atPulumiAwsLib.rdsEngineTypeMod.EngineType = js.native
+  var AuroraMysqlEngine: atPulumiAwsLib.rdsEngineTypeMod.EngineType = js.native
+  var AuroraPostgresqlEngine: atPulumiAwsLib.rdsEngineTypeMod.EngineType = js.native
+  var GlobalEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
+  var ParallelQueryEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
+  var ProvisionedEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
+  var ServerlessEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
   def getCluster(args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.rdsGetClusterMod.GetClusterResult] = js.native
   def getCluster(
     args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs,

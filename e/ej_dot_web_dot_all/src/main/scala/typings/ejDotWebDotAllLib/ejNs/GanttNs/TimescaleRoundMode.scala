@@ -31,11 +31,11 @@ object TimescaleRoundMode extends js.Object {
   sealed trait Year
     extends ejDotWebDotAllLib.ejNs.GanttNs.TimescaleRoundMode
   
-  val Auto: Auto with java.lang.String = js.native
-  val Month: Month with java.lang.String = js.native
-  val Week: Week with java.lang.String = js.native
-  val Year: Year with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 2 */ val Month: Month with scala.Double = js.native
+  /* 1 */ val Week: Week with scala.Double = js.native
+  /* 3 */ val Year: Year with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.TimescaleRoundMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.TimescaleRoundMode with scala.Double] = js.native
 }
 

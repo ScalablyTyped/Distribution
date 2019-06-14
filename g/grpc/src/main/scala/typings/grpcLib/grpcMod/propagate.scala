@@ -31,12 +31,12 @@ object propagate extends js.Object {
   sealed trait DEFAULTS
     extends grpcLib.grpcMod.propagate
   
-  val CANCELLATION: CANCELLATION with java.lang.String = js.native
-  val CENSUS_STATS_CONTEXT: CENSUS_STATS_CONTEXT with java.lang.String = js.native
-  val CENSUS_TRACING_CONTEXT: CENSUS_TRACING_CONTEXT with java.lang.String = js.native
-  val DEADLINE: DEADLINE with java.lang.String = js.native
-  val DEFAULTS: DEFAULTS with java.lang.String = js.native
+  /* 3 */ val CANCELLATION: CANCELLATION with scala.Double = js.native
+  /* 1 */ val CENSUS_STATS_CONTEXT: CENSUS_STATS_CONTEXT with scala.Double = js.native
+  /* 2 */ val CENSUS_TRACING_CONTEXT: CENSUS_TRACING_CONTEXT with scala.Double = js.native
+  /* 0 */ val DEADLINE: DEADLINE with scala.Double = js.native
+  /* 4 */ val DEFAULTS: DEFAULTS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[grpcLib.grpcMod.propagate with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[grpcLib.grpcMod.propagate with scala.Double] = js.native
 }
 

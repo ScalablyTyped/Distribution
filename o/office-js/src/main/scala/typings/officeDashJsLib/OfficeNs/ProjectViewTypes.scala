@@ -130,23 +130,23 @@ object ProjectViewTypes extends js.Object {
   sealed trait Timeline
     extends officeDashJsLib.OfficeNs.ProjectViewTypes
   
-  val Calendar: Calendar with java.lang.String = js.native
-  val Gantt: Gantt with java.lang.String = js.native
-  val NetworkDiagram: NetworkDiagram with java.lang.String = js.native
-  val ResourceForm: ResourceForm with java.lang.String = js.native
-  val ResourceGraph: ResourceGraph with java.lang.String = js.native
-  val ResourceNames: ResourceNames with java.lang.String = js.native
-  val ResourceSheet: ResourceSheet with java.lang.String = js.native
-  val ResourceUsage: ResourceUsage with java.lang.String = js.native
-  val TaskDetails: TaskDetails with java.lang.String = js.native
-  val TaskDiagram: TaskDiagram with java.lang.String = js.native
-  val TaskForm: TaskForm with java.lang.String = js.native
-  val TaskNameForm: TaskNameForm with java.lang.String = js.native
-  val TaskSheet: TaskSheet with java.lang.String = js.native
-  val TaskUsage: TaskUsage with java.lang.String = js.native
-  val TeamPlanner: TeamPlanner with java.lang.String = js.native
-  val Timeline: Timeline with java.lang.String = js.native
+  /* 12 */ val Calendar: Calendar with scala.Double = js.native
+  /* 0 */ val Gantt: Gantt with scala.Double = js.native
+  /* 1 */ val NetworkDiagram: NetworkDiagram with scala.Double = js.native
+  /* 5 */ val ResourceForm: ResourceForm with scala.Double = js.native
+  /* 7 */ val ResourceGraph: ResourceGraph with scala.Double = js.native
+  /* 11 */ val ResourceNames: ResourceNames with scala.Double = js.native
+  /* 6 */ val ResourceSheet: ResourceSheet with scala.Double = js.native
+  /* 14 */ val ResourceUsage: ResourceUsage with scala.Double = js.native
+  /* 9 */ val TaskDetails: TaskDetails with scala.Double = js.native
+  /* 2 */ val TaskDiagram: TaskDiagram with scala.Double = js.native
+  /* 3 */ val TaskForm: TaskForm with scala.Double = js.native
+  /* 10 */ val TaskNameForm: TaskNameForm with scala.Double = js.native
+  /* 4 */ val TaskSheet: TaskSheet with scala.Double = js.native
+  /* 13 */ val TaskUsage: TaskUsage with scala.Double = js.native
+  /* 8 */ val TeamPlanner: TeamPlanner with scala.Double = js.native
+  /* 15 */ val Timeline: Timeline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.ProjectViewTypes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.ProjectViewTypes with scala.Double] = js.native
 }
 

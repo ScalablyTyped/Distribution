@@ -35,10 +35,10 @@ object ScaleModes extends js.Object {
   sealed trait NEAREST
     extends phaserLib.PhaserNs.ScaleModes
   
-  val DEFAULT: DEFAULT with java.lang.String = js.native
-  val LINEAR: LINEAR with java.lang.String = js.native
-  val NEAREST: NEAREST with java.lang.String = js.native
+  /* 0 */ val DEFAULT: DEFAULT with scala.Double = js.native
+  /* 1 */ val LINEAR: LINEAR with scala.Double = js.native
+  /* 2 */ val NEAREST: NEAREST with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleModes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleModes with scala.Double] = js.native
 }
 

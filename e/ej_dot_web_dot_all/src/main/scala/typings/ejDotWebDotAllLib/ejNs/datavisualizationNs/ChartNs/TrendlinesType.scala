@@ -36,14 +36,14 @@ object TrendlinesType extends js.Object {
   sealed trait Power
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.TrendlinesType
   
-  val Exponential: Exponential with java.lang.String = js.native
-  val Linear: Linear with java.lang.String = js.native
-  val Logarithmic: Logarithmic with java.lang.String = js.native
-  val Polynomial: Polynomial with java.lang.String = js.native
-  val Power: Power with java.lang.String = js.native
+  /* 1 */ val Exponential: Exponential with scala.Double = js.native
+  /* 0 */ val Linear: Linear with scala.Double = js.native
+  /* 2 */ val Logarithmic: Logarithmic with scala.Double = js.native
+  /* 4 */ val Polynomial: Polynomial with scala.Double = js.native
+  /* 3 */ val Power: Power with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.TrendlinesType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.TrendlinesType with scala.Double
   ] = js.native
 }
 

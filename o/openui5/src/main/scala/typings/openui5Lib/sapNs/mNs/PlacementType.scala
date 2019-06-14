@@ -90,26 +90,26 @@ object PlacementType extends js.Object {
   sealed trait VerticalPreferredTop
     extends openui5Lib.sapNs.mNs.PlacementType
   
-  val Auto: Auto with java.lang.String = js.native
-  val Bottom: Bottom with java.lang.String = js.native
-  val Horizontal: Horizontal with java.lang.String = js.native
-  val HorizontalPreferedLeft: HorizontalPreferedLeft with java.lang.String = js.native
-  val HorizontalPreferedRight: HorizontalPreferedRight with java.lang.String = js.native
-  val HorizontalPreferredLeft: HorizontalPreferredLeft with java.lang.String = js.native
-  val HorizontalPreferredRight: HorizontalPreferredRight with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val PreferredBottomOrFlip: PreferredBottomOrFlip with java.lang.String = js.native
-  val PreferredLeftOrFlip: PreferredLeftOrFlip with java.lang.String = js.native
-  val PreferredRightOrFlip: PreferredRightOrFlip with java.lang.String = js.native
-  val PreferredTopOrFlip: PreferredTopOrFlip with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
-  val Vertical: Vertical with java.lang.String = js.native
-  val VerticalPreferedBottom: VerticalPreferedBottom with java.lang.String = js.native
-  val VerticalPreferedTop: VerticalPreferedTop with java.lang.String = js.native
-  val VerticalPreferredBottom: VerticalPreferredBottom with java.lang.String = js.native
-  val VerticalPreferredTop: VerticalPreferredTop with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val Bottom: Bottom with scala.Double = js.native
+  /* 2 */ val Horizontal: Horizontal with scala.Double = js.native
+  /* 3 */ val HorizontalPreferedLeft: HorizontalPreferedLeft with scala.Double = js.native
+  /* 4 */ val HorizontalPreferedRight: HorizontalPreferedRight with scala.Double = js.native
+  /* 5 */ val HorizontalPreferredLeft: HorizontalPreferredLeft with scala.Double = js.native
+  /* 6 */ val HorizontalPreferredRight: HorizontalPreferredRight with scala.Double = js.native
+  /* 7 */ val Left: Left with scala.Double = js.native
+  /* 8 */ val PreferredBottomOrFlip: PreferredBottomOrFlip with scala.Double = js.native
+  /* 9 */ val PreferredLeftOrFlip: PreferredLeftOrFlip with scala.Double = js.native
+  /* 10 */ val PreferredRightOrFlip: PreferredRightOrFlip with scala.Double = js.native
+  /* 11 */ val PreferredTopOrFlip: PreferredTopOrFlip with scala.Double = js.native
+  /* 12 */ val Right: Right with scala.Double = js.native
+  /* 13 */ val Top: Top with scala.Double = js.native
+  /* 14 */ val Vertical: Vertical with scala.Double = js.native
+  /* 15 */ val VerticalPreferedBottom: VerticalPreferedBottom with scala.Double = js.native
+  /* 16 */ val VerticalPreferedTop: VerticalPreferedTop with scala.Double = js.native
+  /* 17 */ val VerticalPreferredBottom: VerticalPreferredBottom with scala.Double = js.native
+  /* 18 */ val VerticalPreferredTop: VerticalPreferredTop with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.PlacementType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.PlacementType with scala.Double] = js.native
 }
 

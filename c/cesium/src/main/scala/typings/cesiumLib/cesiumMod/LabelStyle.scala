@@ -23,10 +23,10 @@ object LabelStyle extends js.Object {
   sealed trait OUTLINE
     extends cesiumLib.cesiumMod.LabelStyle
   
-  val FILL: FILL with java.lang.String = js.native
-  val FILL_AND_OUTLINE: FILL_AND_OUTLINE with java.lang.String = js.native
-  val OUTLINE: OUTLINE with java.lang.String = js.native
+  /* 0 */ val FILL: FILL with scala.Double = js.native
+  /* 2 */ val FILL_AND_OUTLINE: FILL_AND_OUTLINE with scala.Double = js.native
+  /* 1 */ val OUTLINE: OUTLINE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.LabelStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.LabelStyle with scala.Double] = js.native
 }
 

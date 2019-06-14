@@ -21,9 +21,9 @@ object PdfService extends js.Object {
   sealed trait Remote
     extends ejDotWebDotAllLib.ejNs.PdfViewerNs.PdfService
   
-  val Local: Local with java.lang.String = js.native
-  val Remote: Remote with java.lang.String = js.native
+  /* 0 */ val Local: Local with scala.Double = js.native
+  /* 1 */ val Remote: Remote with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.PdfService with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.PdfService with scala.Double] = js.native
 }
 

@@ -72,21 +72,21 @@ object WalletBarcodeSymbology extends js.Object {
   sealed trait upce
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletBarcodeSymbology
   
-  val aztec: aztec with java.lang.String = js.native
-  val code128: code128 with java.lang.String = js.native
-  val code39: code39 with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val ean13: ean13 with java.lang.String = js.native
-  val ean8: ean8 with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val itf: itf with java.lang.String = js.native
-  val pdf417: pdf417 with java.lang.String = js.native
-  val qr: qr with java.lang.String = js.native
-  val upca: upca with java.lang.String = js.native
-  val upce: upce with java.lang.String = js.native
+  /* 10 */ val aztec: aztec with scala.Double = js.native
+  /* 7 */ val code128: code128 with scala.Double = js.native
+  /* 6 */ val code39: code39 with scala.Double = js.native
+  /* 11 */ val custom: custom with scala.Double = js.native
+  /* 3 */ val ean13: ean13 with scala.Double = js.native
+  /* 4 */ val ean8: ean8 with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 5 */ val itf: itf with scala.Double = js.native
+  /* 9 */ val pdf417: pdf417 with scala.Double = js.native
+  /* 8 */ val qr: qr with scala.Double = js.native
+  /* 1 */ val upca: upca with scala.Double = js.native
+  /* 2 */ val upce: upce with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletBarcodeSymbology with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletBarcodeSymbology with scala.Double
   ] = js.native
 }
 

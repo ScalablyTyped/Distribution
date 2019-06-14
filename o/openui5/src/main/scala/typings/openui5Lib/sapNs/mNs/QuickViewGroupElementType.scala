@@ -39,13 +39,13 @@ object QuickViewGroupElementType extends js.Object {
   sealed trait text
     extends openui5Lib.sapNs.mNs.QuickViewGroupElementType
   
-  val email: email with java.lang.String = js.native
-  val link: link with java.lang.String = js.native
-  val mobile: mobile with java.lang.String = js.native
-  val pageLink: pageLink with java.lang.String = js.native
-  val phone: phone with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
+  /* 0 */ val email: email with scala.Double = js.native
+  /* 1 */ val link: link with scala.Double = js.native
+  /* 2 */ val mobile: mobile with scala.Double = js.native
+  /* 3 */ val pageLink: pageLink with scala.Double = js.native
+  /* 4 */ val phone: phone with scala.Double = js.native
+  /* 5 */ val text: text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.QuickViewGroupElementType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.QuickViewGroupElementType with scala.Double] = js.native
 }
 

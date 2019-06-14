@@ -23,10 +23,10 @@ object accessMode extends js.Object {
   sealed trait PUBLIC
     extends chaynsLib.chaynsNs.storageNs.accessMode
   
-  val PRIVATE: PRIVATE with java.lang.String = js.native
-  val PROTECTED: PROTECTED with java.lang.String = js.native
-  val PUBLIC: PUBLIC with java.lang.String = js.native
+  /* 2 */ val PRIVATE: PRIVATE with scala.Double = js.native
+  /* 1 */ val PROTECTED: PROTECTED with scala.Double = js.native
+  /* 0 */ val PUBLIC: PUBLIC with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[chaynsLib.chaynsNs.storageNs.accessMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[chaynsLib.chaynsNs.storageNs.accessMode with scala.Double] = js.native
 }
 

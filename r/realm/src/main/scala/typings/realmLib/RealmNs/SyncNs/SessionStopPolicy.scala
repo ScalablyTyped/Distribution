@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait SessionStopPolicy extends js.Object
 
+object SessionStopPolicy {
+  @scala.inline
+  def AfterUpload: realmLib.realmLibStrings.`after-upload` = this.cast("after-upload")
+  @scala.inline
+  def Immediately: realmLib.realmLibStrings.immediately = this.cast("immediately")
+  @scala.inline
+  def Never: realmLib.realmLibStrings.never = this.cast("never")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

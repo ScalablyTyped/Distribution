@@ -28,9 +28,9 @@ object Orientation extends js.Object {
   sealed trait PORTRAIT
     extends phaserLib.PhaserNs.ScaleNs.Orientation
   
-  val LANDSCAPE: LANDSCAPE with java.lang.String = js.native
-  val PORTRAIT: PORTRAIT with java.lang.String = js.native
+  /* 0 */ val LANDSCAPE: LANDSCAPE with scala.Double = js.native
+  /* 1 */ val PORTRAIT: PORTRAIT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Orientation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Orientation with scala.Double] = js.native
 }
 

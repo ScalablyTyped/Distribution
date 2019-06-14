@@ -71,21 +71,21 @@ object MarkerType extends js.Object {
   sealed trait Wedge
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.MarkerType
   
-  val Circle: Circle with java.lang.String = js.native
-  val Diamond: Diamond with java.lang.String = js.native
-  val Ellipse: Ellipse with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val Pentagon: Pentagon with java.lang.String = js.native
-  val Pointer: Pointer with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val RoundedRectangle: RoundedRectangle with java.lang.String = js.native
-  val Slider: Slider with java.lang.String = js.native
-  val Trapezoid: Trapezoid with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
-  val Wedge: Wedge with java.lang.String = js.native
+  /* 1 */ val Circle: Circle with scala.Double = js.native
+  /* 4 */ val Diamond: Diamond with scala.Double = js.native
+  /* 3 */ val Ellipse: Ellipse with scala.Double = js.native
+  /* 11 */ val Image: Image with scala.Double = js.native
+  /* 5 */ val Pentagon: Pentagon with scala.Double = js.native
+  /* 7 */ val Pointer: Pointer with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 10 */ val RoundedRectangle: RoundedRectangle with scala.Double = js.native
+  /* 6 */ val Slider: Slider with scala.Double = js.native
+  /* 9 */ val Trapezoid: Trapezoid with scala.Double = js.native
+  /* 2 */ val Triangle: Triangle with scala.Double = js.native
+  /* 8 */ val Wedge: Wedge with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.MarkerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.MarkerType with scala.Double
   ] = js.native
 }
 

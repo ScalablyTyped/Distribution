@@ -91,23 +91,23 @@ object ToolbarItems extends js.Object {
   sealed trait Zoom
     extends ejDotWebDotAllLib.ejNs.ReportDesignerNs.ToolbarItems
   
-  val All: All with java.lang.String = js.native
-  val Copy: Copy with java.lang.String = js.native
-  val Cut: Cut with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val EditDesign: EditDesign with java.lang.String = js.native
-  val Footer: Footer with java.lang.String = js.native
-  val GridLine: GridLine with java.lang.String = js.native
-  val Header: Header with java.lang.String = js.native
-  val New: New with java.lang.String = js.native
-  val Open: Open with java.lang.String = js.native
-  val Paste: Paste with java.lang.String = js.native
-  val Preview: Preview with java.lang.String = js.native
-  val Redo: Redo with java.lang.String = js.native
-  val Save: Save with java.lang.String = js.native
-  val Undo: Undo with java.lang.String = js.native
-  val Zoom: Zoom with java.lang.String = js.native
+  /* 15 */ val All: All with scala.Double = js.native
+  /* 4 */ val Copy: Copy with scala.Double = js.native
+  /* 3 */ val Cut: Cut with scala.Double = js.native
+  /* 6 */ val Delete: Delete with scala.Double = js.native
+  /* 14 */ val EditDesign: EditDesign with scala.Double = js.native
+  /* 13 */ val Footer: Footer with scala.Double = js.native
+  /* 11 */ val GridLine: GridLine with scala.Double = js.native
+  /* 12 */ val Header: Header with scala.Double = js.native
+  /* 0 */ val New: New with scala.Double = js.native
+  /* 1 */ val Open: Open with scala.Double = js.native
+  /* 5 */ val Paste: Paste with scala.Double = js.native
+  /* 10 */ val Preview: Preview with scala.Double = js.native
+  /* 8 */ val Redo: Redo with scala.Double = js.native
+  /* 2 */ val Save: Save with scala.Double = js.native
+  /* 7 */ val Undo: Undo with scala.Double = js.native
+  /* 9 */ val Zoom: Zoom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportDesignerNs.ToolbarItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportDesignerNs.ToolbarItems with scala.Double] = js.native
 }
 

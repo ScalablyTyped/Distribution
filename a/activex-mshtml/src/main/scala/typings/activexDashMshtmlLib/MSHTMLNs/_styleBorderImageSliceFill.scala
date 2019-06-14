@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _styleBorderImageSliceFill extends js.Object
 
+object _styleBorderImageSliceFill {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleBorderImageSliceFillFill: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleBorderImageSliceFillNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleBorderImageSliceFill_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

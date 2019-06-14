@@ -31,14 +31,14 @@ object LinkType extends js.Object {
   sealed trait URL
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LinkType
   
-  val SLIDE_ID: SLIDE_ID with java.lang.String = js.native
-  val SLIDE_INDEX: SLIDE_INDEX with java.lang.String = js.native
-  val SLIDE_POSITION: SLIDE_POSITION with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
-  val URL: URL with java.lang.String = js.native
+  /* 3 */ val SLIDE_ID: SLIDE_ID with scala.Double = js.native
+  /* 4 */ val SLIDE_INDEX: SLIDE_INDEX with scala.Double = js.native
+  /* 2 */ val SLIDE_POSITION: SLIDE_POSITION with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
+  /* 1 */ val URL: URL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LinkType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LinkType with scala.Double
   ] = js.native
 }
 

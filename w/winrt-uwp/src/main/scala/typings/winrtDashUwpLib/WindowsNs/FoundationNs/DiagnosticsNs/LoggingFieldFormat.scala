@@ -107,28 +107,28 @@ object LoggingFieldFormat extends js.Object {
   sealed trait xml
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingFieldFormat
   
-  val boolean: boolean with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val fileTime: fileTime with java.lang.String = js.native
-  val hexadecimal: hexadecimal with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val hresult: hresult with java.lang.String = js.native
-  val ipv4Address: ipv4Address with java.lang.String = js.native
-  val ipv6Address: ipv6Address with java.lang.String = js.native
-  val json: json with java.lang.String = js.native
-  val ntStatus: ntStatus with java.lang.String = js.native
-  val port: port with java.lang.String = js.native
-  val processId: processId with java.lang.String = js.native
-  val signed: signed with java.lang.String = js.native
-  val socketAddress: socketAddress with java.lang.String = js.native
-  val string: string with java.lang.String = js.native
-  val threadId: threadId with java.lang.String = js.native
-  val unsigned: unsigned with java.lang.String = js.native
-  val win32Error: win32Error with java.lang.String = js.native
-  val xml: xml with java.lang.String = js.native
+  /* 3 */ val boolean: boolean with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 16 */ val fileTime: fileTime with scala.Double = js.native
+  /* 4 */ val hexadecimal: hexadecimal with scala.Double = js.native
+  /* 1 */ val hidden: hidden with scala.Double = js.native
+  /* 15 */ val hresult: hresult with scala.Double = js.native
+  /* 8 */ val ipv4Address: ipv4Address with scala.Double = js.native
+  /* 9 */ val ipv6Address: ipv6Address with scala.Double = js.native
+  /* 12 */ val json: json with scala.Double = js.native
+  /* 14 */ val ntStatus: ntStatus with scala.Double = js.native
+  /* 7 */ val port: port with scala.Double = js.native
+  /* 5 */ val processId: processId with scala.Double = js.native
+  /* 17 */ val signed: signed with scala.Double = js.native
+  /* 10 */ val socketAddress: socketAddress with scala.Double = js.native
+  /* 2 */ val string: string with scala.Double = js.native
+  /* 6 */ val threadId: threadId with scala.Double = js.native
+  /* 18 */ val unsigned: unsigned with scala.Double = js.native
+  /* 13 */ val win32Error: win32Error with scala.Double = js.native
+  /* 11 */ val xml: xml with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingFieldFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.LoggingFieldFormat with scala.Double
   ] = js.native
 }
 

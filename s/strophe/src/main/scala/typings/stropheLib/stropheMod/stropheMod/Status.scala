@@ -22,18 +22,18 @@ import scala.scalajs.js.annotation._
 @JSImport("Strophe", "Status")
 @js.native
 object Status extends js.Object {
-  val ATTACHED: stropheLib.stropheMod.StropheNs.Status.ATTACHED with java.lang.String = js.native
-  val AUTHENTICATING: stropheLib.stropheMod.StropheNs.Status.AUTHENTICATING with java.lang.String = js.native
-  val AUTHFAIL: stropheLib.stropheMod.StropheNs.Status.AUTHFAIL with java.lang.String = js.native
-  val CONNECTED: stropheLib.stropheMod.StropheNs.Status.CONNECTED with java.lang.String = js.native
-  val CONNECTING: stropheLib.stropheMod.StropheNs.Status.CONNECTING with java.lang.String = js.native
-  val CONNFAIL: stropheLib.stropheMod.StropheNs.Status.CONNFAIL with java.lang.String = js.native
-  val CONNTIMEOUT: stropheLib.stropheMod.StropheNs.Status.CONNTIMEOUT with java.lang.String = js.native
-  val DISCONNECTED: stropheLib.stropheMod.StropheNs.Status.DISCONNECTED with java.lang.String = js.native
-  val DISCONNECTING: stropheLib.stropheMod.StropheNs.Status.DISCONNECTING with java.lang.String = js.native
-  val ERROR: stropheLib.stropheMod.StropheNs.Status.ERROR with java.lang.String = js.native
-  val REDIRECT: stropheLib.stropheMod.StropheNs.Status.REDIRECT with java.lang.String = js.native
+  /* 8 */ val ATTACHED: stropheLib.stropheMod.StropheNs.Status.ATTACHED with scala.Double = js.native
+  /* 3 */ val AUTHENTICATING: stropheLib.stropheMod.StropheNs.Status.AUTHENTICATING with scala.Double = js.native
+  /* 4 */ val AUTHFAIL: stropheLib.stropheMod.StropheNs.Status.AUTHFAIL with scala.Double = js.native
+  /* 5 */ val CONNECTED: stropheLib.stropheMod.StropheNs.Status.CONNECTED with scala.Double = js.native
+  /* 1 */ val CONNECTING: stropheLib.stropheMod.StropheNs.Status.CONNECTING with scala.Double = js.native
+  /* 2 */ val CONNFAIL: stropheLib.stropheMod.StropheNs.Status.CONNFAIL with scala.Double = js.native
+  /* 10 */ val CONNTIMEOUT: stropheLib.stropheMod.StropheNs.Status.CONNTIMEOUT with scala.Double = js.native
+  /* 6 */ val DISCONNECTED: stropheLib.stropheMod.StropheNs.Status.DISCONNECTED with scala.Double = js.native
+  /* 7 */ val DISCONNECTING: stropheLib.stropheMod.StropheNs.Status.DISCONNECTING with scala.Double = js.native
+  /* 0 */ val ERROR: stropheLib.stropheMod.StropheNs.Status.ERROR with scala.Double = js.native
+  /* 9 */ val REDIRECT: stropheLib.stropheMod.StropheNs.Status.REDIRECT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[stropheLib.stropheMod.StropheNs.Status with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[stropheLib.stropheMod.StropheNs.Status with scala.Double] = js.native
 }
 

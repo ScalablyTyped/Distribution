@@ -12,6 +12,6 @@ sealed trait BlendingDstFactor extends js.Object
 @js.native
 object BlendingDstFactor extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.BlendingDstFactor with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.BlendingDstFactor with scala.Nothing] = js.native
 }
 

@@ -22,9 +22,9 @@ object SocialAttachmentActionKind extends js.Object {
   sealed trait navigate
     extends sharepointLib.SPNs.SocialNs.SocialAttachmentActionKind
   
-  val adHocAction: adHocAction with java.lang.String = js.native
-  val navigate: navigate with java.lang.String = js.native
+  /* 1 */ val adHocAction: adHocAction with scala.Double = js.native
+  /* 0 */ val navigate: navigate with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialAttachmentActionKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialAttachmentActionKind with scala.Double] = js.native
 }
 

@@ -54,17 +54,17 @@ object ScreenSize extends js.Object {
   sealed trait XXSmall
     extends openui5Lib.sapNs.mNs.ScreenSize
   
-  val Desktop: Desktop with java.lang.String = js.native
-  val Large: Large with java.lang.String = js.native
-  val Medium: Medium with java.lang.String = js.native
-  val Phone: Phone with java.lang.String = js.native
-  val Small: Small with java.lang.String = js.native
-  val Tablet: Tablet with java.lang.String = js.native
-  val XLarge: XLarge with java.lang.String = js.native
-  val XSmall: XSmall with java.lang.String = js.native
-  val XXLarge: XXLarge with java.lang.String = js.native
-  val XXSmall: XXSmall with java.lang.String = js.native
+  /* 0 */ val Desktop: Desktop with scala.Double = js.native
+  /* 1 */ val Large: Large with scala.Double = js.native
+  /* 2 */ val Medium: Medium with scala.Double = js.native
+  /* 3 */ val Phone: Phone with scala.Double = js.native
+  /* 4 */ val Small: Small with scala.Double = js.native
+  /* 5 */ val Tablet: Tablet with scala.Double = js.native
+  /* 6 */ val XLarge: XLarge with scala.Double = js.native
+  /* 7 */ val XSmall: XSmall with scala.Double = js.native
+  /* 8 */ val XXLarge: XXLarge with scala.Double = js.native
+  /* 9 */ val XXSmall: XXSmall with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ScreenSize with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ScreenSize with scala.Double] = js.native
 }
 

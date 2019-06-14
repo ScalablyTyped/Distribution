@@ -47,16 +47,16 @@ object AppointmentStoreChangeType extends js.Object {
   sealed trait changeTrackingLost
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentStoreChangeType
   
-  val appointmentCreated: appointmentCreated with java.lang.String = js.native
-  val appointmentDeleted: appointmentDeleted with java.lang.String = js.native
-  val appointmentModified: appointmentModified with java.lang.String = js.native
-  val calendarCreated: calendarCreated with java.lang.String = js.native
-  val calendarDeleted: calendarDeleted with java.lang.String = js.native
-  val calendarModified: calendarModified with java.lang.String = js.native
-  val changeTrackingLost: changeTrackingLost with java.lang.String = js.native
+  /* 0 */ val appointmentCreated: appointmentCreated with scala.Double = js.native
+  /* 2 */ val appointmentDeleted: appointmentDeleted with scala.Double = js.native
+  /* 1 */ val appointmentModified: appointmentModified with scala.Double = js.native
+  /* 4 */ val calendarCreated: calendarCreated with scala.Double = js.native
+  /* 6 */ val calendarDeleted: calendarDeleted with scala.Double = js.native
+  /* 5 */ val calendarModified: calendarModified with scala.Double = js.native
+  /* 3 */ val changeTrackingLost: changeTrackingLost with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentStoreChangeType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentStoreChangeType with scala.Double
   ] = js.native
 }
 

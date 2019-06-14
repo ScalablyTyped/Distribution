@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ink-spinner"
-version := "2.0-dt-20190225Z-48d01b"
+version := "2.0-dt-20190225Z-180753"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-8f85b9",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-6f5c69",
   "org.scalablytyped" %%% "cli-spinners" % "1.3-dt-20190118Z-895d86",
   "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-f7d157",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",

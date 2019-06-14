@@ -55,12 +55,12 @@ object COLLIDES extends js.Object {
   sealed trait PASSIVE
     extends phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES
   
-  val ACTIVE: ACTIVE with java.lang.String = js.native
-  val FIXED: FIXED with java.lang.String = js.native
-  val LITE: LITE with java.lang.String = js.native
-  val NEVER: NEVER with java.lang.String = js.native
-  val PASSIVE: PASSIVE with java.lang.String = js.native
+  /* 3 */ val ACTIVE: ACTIVE with scala.Double = js.native
+  /* 4 */ val FIXED: FIXED with scala.Double = js.native
+  /* 1 */ val LITE: LITE with scala.Double = js.native
+  /* 0 */ val NEVER: NEVER with scala.Double = js.native
+  /* 2 */ val PASSIVE: PASSIVE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.PhysicsNs.ImpactNs.COLLIDES with scala.Double] = js.native
 }
 

@@ -32,13 +32,13 @@ object DeviceTriggerResult extends js.Object {
   sealed trait lowBattery
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.DeviceTriggerResult
   
-  val allowed: allowed with java.lang.String = js.native
-  val deniedBySystem: deniedBySystem with java.lang.String = js.native
-  val deniedByUser: deniedByUser with java.lang.String = js.native
-  val lowBattery: lowBattery with java.lang.String = js.native
+  /* 0 */ val allowed: allowed with scala.Double = js.native
+  /* 2 */ val deniedBySystem: deniedBySystem with scala.Double = js.native
+  /* 1 */ val deniedByUser: deniedByUser with scala.Double = js.native
+  /* 3 */ val lowBattery: lowBattery with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.DeviceTriggerResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.DeviceTriggerResult with scala.Double
   ] = js.native
 }
 

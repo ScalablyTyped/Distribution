@@ -19,9 +19,9 @@ object FieldUserSelectionMode extends js.Object {
   sealed trait peopleOnly
     extends sharepointLib.SPNs.FieldUserSelectionMode
   
-  val peopleAndGroups: peopleAndGroups with java.lang.String = js.native
-  val peopleOnly: peopleOnly with java.lang.String = js.native
+  /* 1 */ val peopleAndGroups: peopleAndGroups with scala.Double = js.native
+  /* 0 */ val peopleOnly: peopleOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.FieldUserSelectionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.FieldUserSelectionMode with scala.Double] = js.native
 }
 

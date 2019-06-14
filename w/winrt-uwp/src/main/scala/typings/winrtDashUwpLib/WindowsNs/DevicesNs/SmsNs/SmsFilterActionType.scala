@@ -32,13 +32,11 @@ object SmsFilterActionType extends js.Object {
   sealed trait peek
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsFilterActionType
   
-  val accept: accept with java.lang.String = js.native
-  val acceptImmediately: acceptImmediately with java.lang.String = js.native
-  val drop: drop with java.lang.String = js.native
-  val peek: peek with java.lang.String = js.native
+  /* 3 */ val accept: accept with scala.Double = js.native
+  /* 0 */ val acceptImmediately: acceptImmediately with scala.Double = js.native
+  /* 1 */ val drop: drop with scala.Double = js.native
+  /* 2 */ val peek: peek with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsFilterActionType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsFilterActionType with scala.Double] = js.native
 }
 

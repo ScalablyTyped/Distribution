@@ -63,14 +63,14 @@ object CustomXMLNodeType extends js.Object {
   sealed trait Text
     extends officeDashJsLib.OfficeNs.CustomXMLNodeType
   
-  val Attribute: Attribute with java.lang.String = js.native
-  val CData: CData with java.lang.String = js.native
-  val Element: Element with java.lang.String = js.native
-  val NodeComment: NodeComment with java.lang.String = js.native
-  val NodeDocument: NodeDocument with java.lang.String = js.native
-  val ProcessingInstruction: ProcessingInstruction with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
+  /* 0 */ val Attribute: Attribute with scala.Double = js.native
+  /* 1 */ val CData: CData with scala.Double = js.native
+  /* 3 */ val Element: Element with scala.Double = js.native
+  /* 2 */ val NodeComment: NodeComment with scala.Double = js.native
+  /* 4 */ val NodeDocument: NodeDocument with scala.Double = js.native
+  /* 5 */ val ProcessingInstruction: ProcessingInstruction with scala.Double = js.native
+  /* 6 */ val Text: Text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.CustomXMLNodeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.CustomXMLNodeType with scala.Double] = js.native
 }
 

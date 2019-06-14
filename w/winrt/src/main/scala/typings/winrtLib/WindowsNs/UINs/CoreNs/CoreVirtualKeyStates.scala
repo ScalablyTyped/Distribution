@@ -23,10 +23,10 @@ object CoreVirtualKeyStates extends js.Object {
   sealed trait none
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreVirtualKeyStates
   
-  val down: down with java.lang.String = js.native
-  val locked: locked with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val down: down with scala.Double = js.native
+  /* 2 */ val locked: locked with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreVirtualKeyStates with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreVirtualKeyStates with scala.Double] = js.native
 }
 

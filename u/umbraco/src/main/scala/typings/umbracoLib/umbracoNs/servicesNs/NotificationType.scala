@@ -30,11 +30,11 @@ object NotificationType extends js.Object {
   sealed trait warning
     extends umbracoLib.umbracoNs.servicesNs.NotificationType
   
-  val error: error with java.lang.String = js.native
-  val info: info with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val warning: warning with java.lang.String = js.native
+  /* 1 */ val error: error with scala.Double = js.native
+  /* 3 */ val info: info with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 2 */ val warning: warning with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.servicesNs.NotificationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.servicesNs.NotificationType with scala.Double] = js.native
 }
 

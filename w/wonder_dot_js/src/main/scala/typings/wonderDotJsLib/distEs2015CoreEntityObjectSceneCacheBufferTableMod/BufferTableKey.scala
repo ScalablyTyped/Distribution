@@ -19,11 +19,11 @@ object BufferTableKey extends js.Object {
   sealed trait PROCEDURAL_VERTEX
     extends wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey
   
-  val PROCEDURAL_INDEX: PROCEDURAL_INDEX with java.lang.String = js.native
-  val PROCEDURAL_VERTEX: PROCEDURAL_VERTEX with java.lang.String = js.native
+  /* 1 */ val PROCEDURAL_INDEX: PROCEDURAL_INDEX with scala.Double = js.native
+  /* 0 */ val PROCEDURAL_VERTEX: PROCEDURAL_VERTEX with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey with scala.Double
   ] = js.native
 }
 

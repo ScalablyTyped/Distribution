@@ -39,14 +39,14 @@ object PixelFormat extends js.Object {
   sealed trait RGBA
     extends cesiumLib.cesiumMod.PixelFormat
   
-  val ALPHA: ALPHA with java.lang.String = js.native
-  val DEPTH_COMPONENT: DEPTH_COMPONENT with java.lang.String = js.native
-  val DEPTH_STENCIL: DEPTH_STENCIL with java.lang.String = js.native
-  val LUMINANCE: LUMINANCE with java.lang.String = js.native
-  val LUMINANCE_ALPHA: LUMINANCE_ALPHA with java.lang.String = js.native
-  val RGB: RGB with java.lang.String = js.native
-  val RGBA: RGBA with java.lang.String = js.native
+  /* 2 */ val ALPHA: ALPHA with scala.Double = js.native
+  /* 0 */ val DEPTH_COMPONENT: DEPTH_COMPONENT with scala.Double = js.native
+  /* 1 */ val DEPTH_STENCIL: DEPTH_STENCIL with scala.Double = js.native
+  /* 5 */ val LUMINANCE: LUMINANCE with scala.Double = js.native
+  /* 6 */ val LUMINANCE_ALPHA: LUMINANCE_ALPHA with scala.Double = js.native
+  /* 3 */ val RGB: RGB with scala.Double = js.native
+  /* 4 */ val RGBA: RGBA with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.PixelFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.PixelFormat with scala.Double] = js.native
 }
 

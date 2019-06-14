@@ -35,13 +35,13 @@ object ChangeItemType extends js.Object {
   sealed trait unknown
     extends sharepointLib.SPNs.TaxonomyNs.ChangeItemType
   
-  val group: group with java.lang.String = js.native
-  val site: site with java.lang.String = js.native
-  val term: term with java.lang.String = js.native
-  val termSet: termSet with java.lang.String = js.native
-  val termStore: termStore with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val group: group with scala.Double = js.native
+  /* 5 */ val site: site with scala.Double = js.native
+  /* 1 */ val term: term with scala.Double = js.native
+  /* 2 */ val termSet: termSet with scala.Double = js.native
+  /* 4 */ val termStore: termStore with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.TaxonomyNs.ChangeItemType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.TaxonomyNs.ChangeItemType with scala.Double] = js.native
 }
 

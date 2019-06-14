@@ -22,11 +22,11 @@ object WiFiDirectDeviceSelectorType extends js.Object {
   sealed trait deviceInterface
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectDeviceSelectorType
   
-  val associationEndpoint: associationEndpoint with java.lang.String = js.native
-  val deviceInterface: deviceInterface with java.lang.String = js.native
+  /* 1 */ val associationEndpoint: associationEndpoint with scala.Double = js.native
+  /* 0 */ val deviceInterface: deviceInterface with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectDeviceSelectorType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectDeviceSelectorType with scala.Double
   ] = js.native
 }
 

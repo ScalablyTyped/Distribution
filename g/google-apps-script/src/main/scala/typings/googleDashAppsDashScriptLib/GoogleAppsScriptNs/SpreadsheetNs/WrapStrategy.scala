@@ -23,12 +23,12 @@ object WrapStrategy extends js.Object {
   sealed trait WRAP
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.WrapStrategy
   
-  val CLIP: CLIP with java.lang.String = js.native
-  val OVERFLOW: OVERFLOW with java.lang.String = js.native
-  val WRAP: WRAP with java.lang.String = js.native
+  /* 2 */ val CLIP: CLIP with scala.Double = js.native
+  /* 1 */ val OVERFLOW: OVERFLOW with scala.Double = js.native
+  /* 0 */ val WRAP: WRAP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.WrapStrategy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.WrapStrategy with scala.Double
   ] = js.native
 }
 

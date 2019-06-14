@@ -31,12 +31,12 @@ object ClientControlMode extends js.Object {
   sealed trait View
     extends sharepointLib.SPClientTemplatesNs.ClientControlMode
   
-  val DisplayForm: DisplayForm with java.lang.String = js.native
-  val EditForm: EditForm with java.lang.String = js.native
-  val Invalid: Invalid with java.lang.String = js.native
-  val NewForm: NewForm with java.lang.String = js.native
-  val View: View with java.lang.String = js.native
+  /* 1 */ val DisplayForm: DisplayForm with scala.Double = js.native
+  /* 2 */ val EditForm: EditForm with scala.Double = js.native
+  /* 0 */ val Invalid: Invalid with scala.Double = js.native
+  /* 3 */ val NewForm: NewForm with scala.Double = js.native
+  /* 4 */ val View: View with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientTemplatesNs.ClientControlMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientTemplatesNs.ClientControlMode with scala.Double] = js.native
 }
 

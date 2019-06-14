@@ -27,11 +27,11 @@ object PlayToConnectionError extends js.Object {
   sealed trait none
     extends winrtLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionError
   
-  val deviceError: deviceError with java.lang.String = js.native
-  val deviceLocked: deviceLocked with java.lang.String = js.native
-  val deviceNotResponding: deviceNotResponding with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val deviceError: deviceError with scala.Double = js.native
+  /* 3 */ val deviceLocked: deviceLocked with scala.Double = js.native
+  /* 1 */ val deviceNotResponding: deviceNotResponding with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionError with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionError with scala.Double] = js.native
 }
 

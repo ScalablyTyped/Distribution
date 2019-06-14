@@ -32,13 +32,13 @@ object VideoOrientation extends js.Object {
   sealed trait rotate90
     extends winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.VideoOrientation
   
-  val normal: normal with java.lang.String = js.native
-  val rotate180: rotate180 with java.lang.String = js.native
-  val rotate270: rotate270 with java.lang.String = js.native
-  val rotate90: rotate90 with java.lang.String = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 2 */ val rotate180: rotate180 with scala.Double = js.native
+  /* 3 */ val rotate270: rotate270 with scala.Double = js.native
+  /* 1 */ val rotate90: rotate90 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.VideoOrientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.VideoOrientation with scala.Double
   ] = js.native
 }
 

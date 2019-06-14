@@ -27,12 +27,12 @@ object AddressBarcodePosition extends js.Object {
   sealed trait Suppress
     extends dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.AddressBarcodePosition
   
-  val AboveAddress: AboveAddress with java.lang.String = js.native
-  val BelowAddress: BelowAddress with java.lang.String = js.native
-  val Suppress: Suppress with java.lang.String = js.native
+  /* 0 */ val AboveAddress: AboveAddress with scala.Double = js.native
+  /* 1 */ val BelowAddress: BelowAddress with scala.Double = js.native
+  /* 2 */ val Suppress: Suppress with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.AddressBarcodePosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.AddressBarcodePosition with scala.Double
   ] = js.native
 }
 

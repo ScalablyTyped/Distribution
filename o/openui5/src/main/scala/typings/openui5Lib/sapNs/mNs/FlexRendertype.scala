@@ -22,9 +22,9 @@ object FlexRendertype extends js.Object {
   sealed trait List
     extends openui5Lib.sapNs.mNs.FlexRendertype
   
-  val Div: Div with java.lang.String = js.native
-  val List: List with java.lang.String = js.native
+  /* 0 */ val Div: Div with scala.Double = js.native
+  /* 1 */ val List: List with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.FlexRendertype with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.FlexRendertype with scala.Double] = js.native
 }
 

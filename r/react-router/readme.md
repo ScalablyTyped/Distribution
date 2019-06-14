@@ -46,7 +46,6 @@ These comments are from the typescript definitions and might be useful:
 //                 John Reilly <https://github.com/johnnyreilly>
 //                 Karol Janyst <https://github.com/LKay>
 //                 Dovydas Navickas <https://github.com/DovydasNavickas>
-//                 Tanguy Krotoff <https://github.com/tkrotoff>
 //                 Huy Nguyen <https://github.com/huy-nguyen>
 //                 Jérémy Fauvel <https://github.com/grmiade>
 //                 Daniel Roth <https://github.com/DaIgeb>

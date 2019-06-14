@@ -20,9 +20,9 @@ object AddAccount extends js.Object {
   sealed trait FormatError
     extends milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.AddAccount
   
-  val AlreadyExist: AlreadyExist with java.lang.String = js.native
-  val FormatError: FormatError with java.lang.String = js.native
+  /* 1 */ val AlreadyExist: AlreadyExist with scala.Double = js.native
+  /* 0 */ val FormatError: FormatError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.AddAccount with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.AddAccount with scala.Double] = js.native
 }
 

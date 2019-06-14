@@ -26,12 +26,12 @@ object TickPosition extends js.Object {
   sealed trait Cross
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TickPosition
   
-  val Above: Above with java.lang.String = js.native
-  val Below: Below with java.lang.String = js.native
-  val Cross: Cross with java.lang.String = js.native
+  /* 1 */ val Above: Above with scala.Double = js.native
+  /* 0 */ val Below: Below with scala.Double = js.native
+  /* 2 */ val Cross: Cross with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TickPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TickPosition with scala.Double
   ] = js.native
 }
 

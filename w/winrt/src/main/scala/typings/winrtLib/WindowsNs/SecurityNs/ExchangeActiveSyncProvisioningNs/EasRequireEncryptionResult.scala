@@ -59,21 +59,21 @@ object EasRequireEncryptionResult extends js.Object {
   sealed trait osNotProtected
     extends winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasRequireEncryptionResult
   
-  val canBeCompliant: canBeCompliant with java.lang.String = js.native
-  val compliant: compliant with java.lang.String = js.native
-  val deFixedDataNotSupported: deFixedDataNotSupported with java.lang.String = js.native
-  val deHardwareNotCompliant: deHardwareNotCompliant with java.lang.String = js.native
-  val deOsVolumeNotProtected: deOsVolumeNotProtected with java.lang.String = js.native
-  val deProtectionNotYetEnabled: deProtectionNotYetEnabled with java.lang.String = js.native
-  val deProtectionSuspended: deProtectionSuspended with java.lang.String = js.native
-  val deWinReNotConfigured: deWinReNotConfigured with java.lang.String = js.native
-  val noFeatureLicense: noFeatureLicense with java.lang.String = js.native
-  val notEvaluated: notEvaluated with java.lang.String = js.native
-  val notProvisionedOnAllVolumes: notProvisionedOnAllVolumes with java.lang.String = js.native
-  val osNotProtected: osNotProtected with java.lang.String = js.native
+  /* 2 */ val canBeCompliant: canBeCompliant with scala.Double = js.native
+  /* 1 */ val compliant: compliant with scala.Double = js.native
+  /* 4 */ val deFixedDataNotSupported: deFixedDataNotSupported with scala.Double = js.native
+  /* 5 */ val deHardwareNotCompliant: deHardwareNotCompliant with scala.Double = js.native
+  /* 8 */ val deOsVolumeNotProtected: deOsVolumeNotProtected with scala.Double = js.native
+  /* 9 */ val deProtectionNotYetEnabled: deProtectionNotYetEnabled with scala.Double = js.native
+  /* 7 */ val deProtectionSuspended: deProtectionSuspended with scala.Double = js.native
+  /* 6 */ val deWinReNotConfigured: deWinReNotConfigured with scala.Double = js.native
+  /* 10 */ val noFeatureLicense: noFeatureLicense with scala.Double = js.native
+  /* 0 */ val notEvaluated: notEvaluated with scala.Double = js.native
+  /* 3 */ val notProvisionedOnAllVolumes: notProvisionedOnAllVolumes with scala.Double = js.native
+  /* 11 */ val osNotProtected: osNotProtected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasRequireEncryptionResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasRequireEncryptionResult with scala.Double
   ] = js.native
 }
 

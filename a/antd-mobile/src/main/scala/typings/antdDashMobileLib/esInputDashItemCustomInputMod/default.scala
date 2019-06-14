@@ -15,6 +15,6 @@ class default protected () extends NumberInput {
 @JSImport("antd-mobile/es/input-item/CustomInput", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdDashMobileLib.Anon_DisabledEditable = js.native
+  var defaultProps: antdDashMobileLib.Anon_AutoAdjustHeight = js.native
 }
 

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlSummaryReportType extends js.Object
 
+object XlSummaryReportType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlStandardSummary: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlSummaryPivotTable: activexDashExcelLib.activexDashExcelLibNumbers.`-4148` = this.cast(-4148)
+}
+

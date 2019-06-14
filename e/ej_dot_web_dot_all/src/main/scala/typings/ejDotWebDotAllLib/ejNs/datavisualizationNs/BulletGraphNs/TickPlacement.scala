@@ -21,11 +21,11 @@ object TickPlacement extends js.Object {
   sealed trait Outside
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TickPlacement
   
-  val Inside: Inside with java.lang.String = js.native
-  val Outside: Outside with java.lang.String = js.native
+  /* 0 */ val Inside: Inside with scala.Double = js.native
+  /* 1 */ val Outside: Outside with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TickPlacement with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TickPlacement with scala.Double
   ] = js.native
 }
 

@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
 class Pattern () extends IPatternOptions {
   def this(options: IPatternOptions) = this()
   /**
+    * Unique identifier
+    */
+  var id: scala.Double = js.native
+  /**
   	 * The source for the pattern
   	 */
   /* CompleteClass */

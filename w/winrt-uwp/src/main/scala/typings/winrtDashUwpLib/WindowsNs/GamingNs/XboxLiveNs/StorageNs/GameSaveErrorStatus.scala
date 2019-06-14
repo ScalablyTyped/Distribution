@@ -87,24 +87,24 @@ object GameSaveErrorStatus extends js.Object {
   sealed trait userHasNoXboxLiveInfo
     extends winrtDashUwpLib.WindowsNs.GamingNs.XboxLiveNs.StorageNs.GameSaveErrorStatus
   
-  val abort: abort with java.lang.String = js.native
-  val blobNotFound: blobNotFound with java.lang.String = js.native
-  val containerNotInSync: containerNotInSync with java.lang.String = js.native
-  val containerSyncFailed: containerSyncFailed with java.lang.String = js.native
-  val invalidContainerName: invalidContainerName with java.lang.String = js.native
-  val noAccess: noAccess with java.lang.String = js.native
-  val noXboxLiveInfo: noXboxLiveInfo with java.lang.String = js.native
-  val objectExpired: objectExpired with java.lang.String = js.native
-  val ok: ok with java.lang.String = js.native
-  val outOfLocalStorage: outOfLocalStorage with java.lang.String = js.native
-  val providedBufferTooSmall: providedBufferTooSmall with java.lang.String = js.native
-  val quotaExceeded: quotaExceeded with java.lang.String = js.native
-  val updateTooBig: updateTooBig with java.lang.String = js.native
-  val userCanceled: userCanceled with java.lang.String = js.native
-  val userHasNoXboxLiveInfo: userHasNoXboxLiveInfo with java.lang.String = js.native
+  /* 1 */ val abort: abort with scala.Double = js.native
+  /* 9 */ val blobNotFound: blobNotFound with scala.Double = js.native
+  /* 11 */ val containerNotInSync: containerNotInSync with scala.Double = js.native
+  /* 12 */ val containerSyncFailed: containerSyncFailed with scala.Double = js.native
+  /* 2 */ val invalidContainerName: invalidContainerName with scala.Double = js.native
+  /* 3 */ val noAccess: noAccess with scala.Double = js.native
+  /* 10 */ val noXboxLiveInfo: noXboxLiveInfo with scala.Double = js.native
+  /* 14 */ val objectExpired: objectExpired with scala.Double = js.native
+  /* 0 */ val ok: ok with scala.Double = js.native
+  /* 4 */ val outOfLocalStorage: outOfLocalStorage with scala.Double = js.native
+  /* 8 */ val providedBufferTooSmall: providedBufferTooSmall with scala.Double = js.native
+  /* 7 */ val quotaExceeded: quotaExceeded with scala.Double = js.native
+  /* 6 */ val updateTooBig: updateTooBig with scala.Double = js.native
+  /* 5 */ val userCanceled: userCanceled with scala.Double = js.native
+  /* 13 */ val userHasNoXboxLiveInfo: userHasNoXboxLiveInfo with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GamingNs.XboxLiveNs.StorageNs.GameSaveErrorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GamingNs.XboxLiveNs.StorageNs.GameSaveErrorStatus with scala.Double
   ] = js.native
 }
 

@@ -21,11 +21,11 @@ object LabelEditMode extends js.Object {
   sealed trait View
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelEditMode
   
-  val Edit: Edit with java.lang.String = js.native
-  val View: View with java.lang.String = js.native
+  /* 0 */ val Edit: Edit with scala.Double = js.native
+  /* 1 */ val View: View with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelEditMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelEditMode with scala.Double
   ] = js.native
 }
 

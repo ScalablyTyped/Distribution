@@ -32,11 +32,11 @@ object LaunchUriStatus extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.SystemNs.LaunchUriStatus
   
-  val appUnavailable: appUnavailable with java.lang.String = js.native
-  val protocolUnavailable: protocolUnavailable with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val appUnavailable: appUnavailable with scala.Double = js.native
+  /* 2 */ val protocolUnavailable: protocolUnavailable with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.LaunchUriStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.LaunchUriStatus with scala.Double] = js.native
 }
 

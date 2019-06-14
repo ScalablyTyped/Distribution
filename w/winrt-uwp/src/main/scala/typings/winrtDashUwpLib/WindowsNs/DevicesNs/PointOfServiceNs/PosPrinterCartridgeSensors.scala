@@ -37,14 +37,14 @@ object PosPrinterCartridgeSensors extends js.Object {
   sealed trait removed
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterCartridgeSensors
   
-  val empty: empty with java.lang.String = js.native
-  val headCleaning: headCleaning with java.lang.String = js.native
-  val nearEnd: nearEnd with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val removed: removed with java.lang.String = js.native
+  /* 2 */ val empty: empty with scala.Double = js.native
+  /* 3 */ val headCleaning: headCleaning with scala.Double = js.native
+  /* 4 */ val nearEnd: nearEnd with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val removed: removed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterCartridgeSensors with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterCartridgeSensors with scala.Double
   ] = js.native
 }
 

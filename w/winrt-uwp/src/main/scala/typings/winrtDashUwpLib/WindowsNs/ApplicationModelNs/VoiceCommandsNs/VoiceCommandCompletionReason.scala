@@ -47,16 +47,16 @@ object VoiceCommandCompletionReason extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandCompletionReason
   
-  val appLaunched: appLaunched with java.lang.String = js.native
-  val canceled: canceled with java.lang.String = js.native
-  val communicationFailed: communicationFailed with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val resourceLimitsExceeded: resourceLimitsExceeded with java.lang.String = js.native
-  val timeoutExceeded: timeoutExceeded with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 5 */ val appLaunched: appLaunched with scala.Double = js.native
+  /* 3 */ val canceled: canceled with scala.Double = js.native
+  /* 1 */ val communicationFailed: communicationFailed with scala.Double = js.native
+  /* 6 */ val completed: completed with scala.Double = js.native
+  /* 2 */ val resourceLimitsExceeded: resourceLimitsExceeded with scala.Double = js.native
+  /* 4 */ val timeoutExceeded: timeoutExceeded with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandCompletionReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandCompletionReason with scala.Double
   ] = js.native
 }
 

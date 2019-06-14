@@ -27,13 +27,13 @@ object LineCategory extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineCategory
   
-  val BENT: BENT with java.lang.String = js.native
-  val CURVED: CURVED with java.lang.String = js.native
-  val STRAIGHT: STRAIGHT with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 2 */ val BENT: BENT with scala.Double = js.native
+  /* 3 */ val CURVED: CURVED with scala.Double = js.native
+  /* 1 */ val STRAIGHT: STRAIGHT with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineCategory with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.LineCategory with scala.Double
   ] = js.native
 }
 

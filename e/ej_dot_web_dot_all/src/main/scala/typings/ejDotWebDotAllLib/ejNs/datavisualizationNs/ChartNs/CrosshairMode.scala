@@ -21,11 +21,11 @@ object CrosshairMode extends js.Object {
   sealed trait Grouping
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CrosshairMode
   
-  val Float: Float with java.lang.String = js.native
-  val Grouping: Grouping with java.lang.String = js.native
+  /* 0 */ val Float: Float with scala.Double = js.native
+  /* 1 */ val Grouping: Grouping with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CrosshairMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CrosshairMode with scala.Double
   ] = js.native
 }
 

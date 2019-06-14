@@ -47,16 +47,16 @@ object Printing3DBufferFormat extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DBufferFormat
   
-  val printing3DDouble: printing3DDouble with java.lang.String = js.native
-  val printing3DUInt: printing3DUInt with java.lang.String = js.native
-  val r32G32B32A32Float: r32G32B32A32Float with java.lang.String = js.native
-  val r32G32B32A32UInt: r32G32B32A32UInt with java.lang.String = js.native
-  val r32G32B32Float: r32G32B32Float with java.lang.String = js.native
-  val r32G32B32UInt: r32G32B32UInt with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 5 */ val printing3DDouble: printing3DDouble with scala.Double = js.native
+  /* 6 */ val printing3DUInt: printing3DUInt with scala.Double = js.native
+  /* 1 */ val r32G32B32A32Float: r32G32B32A32Float with scala.Double = js.native
+  /* 2 */ val r32G32B32A32UInt: r32G32B32A32UInt with scala.Double = js.native
+  /* 3 */ val r32G32B32Float: r32G32B32Float with scala.Double = js.native
+  /* 4 */ val r32G32B32UInt: r32G32B32UInt with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DBufferFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DBufferFormat with scala.Double
   ] = js.native
 }
 

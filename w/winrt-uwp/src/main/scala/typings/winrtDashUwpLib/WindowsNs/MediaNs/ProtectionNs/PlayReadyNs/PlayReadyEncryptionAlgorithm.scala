@@ -32,13 +32,13 @@ object PlayReadyEncryptionAlgorithm extends js.Object {
   sealed trait unprotected
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyEncryptionAlgorithm
   
-  val aes128Ctr: aes128Ctr with java.lang.String = js.native
-  val cocktail: cocktail with java.lang.String = js.native
-  val uninitialized: uninitialized with java.lang.String = js.native
-  val unprotected: unprotected with java.lang.String = js.native
+  /* 1 */ val aes128Ctr: aes128Ctr with scala.Double = js.native
+  /* 2 */ val cocktail: cocktail with scala.Double = js.native
+  /* 3 */ val uninitialized: uninitialized with scala.Double = js.native
+  /* 0 */ val unprotected: unprotected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyEncryptionAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyEncryptionAlgorithm with scala.Double
   ] = js.native
 }
 

@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MsoLanguageIDHidden extends js.Object
 
+object MsoLanguageIDHidden {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoLanguageIDChineseHongKong: activexDashOfficeLib.activexDashOfficeLibNumbers.`3076` = this.cast(3076)
+  @scala.inline
+  def msoLanguageIDChineseMacao: activexDashOfficeLib.activexDashOfficeLibNumbers.`5124` = this.cast(5124)
+  @scala.inline
+  def msoLanguageIDEnglishTrinidad: activexDashOfficeLib.activexDashOfficeLibNumbers.`11273` = this.cast(11273)
+}
+

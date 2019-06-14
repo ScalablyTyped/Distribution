@@ -19,9 +19,9 @@ object EdgeSide extends js.Object {
   sealed trait esRight
     extends jsDashClipperLib.ClipperLibNs.EdgeSide
   
-  val esLeft: esLeft with java.lang.String = js.native
-  val esRight: esRight with java.lang.String = js.native
+  /* 0 */ val esLeft: esLeft with scala.Double = js.native
+  /* 1 */ val esRight: esRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.EdgeSide with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.EdgeSide with scala.Double] = js.native
 }
 

@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait AcFormatConditionType extends js.Object
 
+object AcFormatConditionType {
+  @scala.inline
+  def acDataBar: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def acExpression: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acFieldHasFocus: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acFieldValue: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

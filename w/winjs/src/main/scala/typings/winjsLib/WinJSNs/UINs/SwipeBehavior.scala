@@ -28,9 +28,9 @@ object SwipeBehavior extends js.Object {
   sealed trait select
     extends winjsLib.WinJSNs.UINs.SwipeBehavior
   
-  val none: none with java.lang.String = js.native
-  val select: select with java.lang.String = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 0 */ val select: select with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.SwipeBehavior with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.SwipeBehavior with scala.Double] = js.native
 }
 

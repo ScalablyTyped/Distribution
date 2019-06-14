@@ -32,13 +32,13 @@ object ChatConversationThreadingKind extends js.Object {
   sealed trait participants
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatConversationThreadingKind
   
-  val contactId: contactId with java.lang.String = js.native
-  val conversationId: conversationId with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val participants: participants with java.lang.String = js.native
+  /* 1 */ val contactId: contactId with scala.Double = js.native
+  /* 2 */ val conversationId: conversationId with scala.Double = js.native
+  /* 3 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val participants: participants with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatConversationThreadingKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatConversationThreadingKind with scala.Double
   ] = js.native
 }
 

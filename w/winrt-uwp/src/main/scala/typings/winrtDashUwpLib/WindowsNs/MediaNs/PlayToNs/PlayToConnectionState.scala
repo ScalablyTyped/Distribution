@@ -27,12 +27,12 @@ object PlayToConnectionState extends js.Object {
   sealed trait rendering
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionState
   
-  val connected: connected with java.lang.String = js.native
-  val disconnected: disconnected with java.lang.String = js.native
-  val rendering: rendering with java.lang.String = js.native
+  /* 1 */ val connected: connected with scala.Double = js.native
+  /* 0 */ val disconnected: disconnected with scala.Double = js.native
+  /* 2 */ val rendering: rendering with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToConnectionState with scala.Double
   ] = js.native
 }
 

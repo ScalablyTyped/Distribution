@@ -36,12 +36,12 @@ object minutesPerInterval extends js.Object {
   sealed trait ThirtyMinutes
     extends ejDotWebDotAllLib.ejNs.GanttNs.minutesPerInterval
   
-  val Auto: Auto with java.lang.String = js.native
-  val FifteenMinutes: FifteenMinutes with java.lang.String = js.native
-  val FiveMinutes: FiveMinutes with java.lang.String = js.native
-  val OneMinute: OneMinute with java.lang.String = js.native
-  val ThirtyMinutes: ThirtyMinutes with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 3 */ val FifteenMinutes: FifteenMinutes with scala.Double = js.native
+  /* 2 */ val FiveMinutes: FiveMinutes with scala.Double = js.native
+  /* 1 */ val OneMinute: OneMinute with scala.Double = js.native
+  /* 4 */ val ThirtyMinutes: ThirtyMinutes with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.minutesPerInterval with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.minutesPerInterval with scala.Double] = js.native
 }
 

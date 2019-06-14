@@ -20,9 +20,9 @@ object SocialFeedSortOrder extends js.Object {
   sealed trait byModifiedTime
     extends sharepointLib.SPNs.SocialNs.SocialFeedSortOrder
   
-  val byCreatedTime: byCreatedTime with java.lang.String = js.native
-  val byModifiedTime: byModifiedTime with java.lang.String = js.native
+  /* 1 */ val byCreatedTime: byCreatedTime with scala.Double = js.native
+  /* 0 */ val byModifiedTime: byModifiedTime with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialFeedSortOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialFeedSortOrder with scala.Double] = js.native
 }
 

@@ -23,12 +23,12 @@ object SelectionInputType extends js.Object {
   sealed trait RADIO_BUTTON
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.SelectionInputType
   
-  val CHECK_BOX: CHECK_BOX with java.lang.String = js.native
-  val DROPDOWN: DROPDOWN with java.lang.String = js.native
-  val RADIO_BUTTON: RADIO_BUTTON with java.lang.String = js.native
+  /* 0 */ val CHECK_BOX: CHECK_BOX with scala.Double = js.native
+  /* 2 */ val DROPDOWN: DROPDOWN with scala.Double = js.native
+  /* 1 */ val RADIO_BUTTON: RADIO_BUTTON with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.SelectionInputType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.SelectionInputType with scala.Double
   ] = js.native
 }
 

@@ -25,7 +25,7 @@ class TemplateDefinitionBuilder protected ()
     */
   var _creationCodeFns: js.Any = js.native
   var _dataIndex: js.Any = js.native
-  var _hasNgContent: js.Any = js.native
+  var _implicitReceiverExpr: js.Any = js.native
   /**
     * Memorizes the last node index for which a select instruction has been generated.
     * We're initializing this to -1 to ensure the `select(0)` instruction is generated before any
@@ -40,7 +40,7 @@ class TemplateDefinitionBuilder protected ()
     * are defined after the template declaration.
     */
   var _nestedTemplateFns: js.Any = js.native
-  var _ngContentSelectors: js.Any = js.native
+  var _ngContentReservedSlots: js.Any = js.native
   var _ngContentSelectorsOffset: js.Any = js.native
   var _prefixCode: js.Any = js.native
   var _pureFunctionSlots: js.Any = js.native
@@ -67,10 +67,14 @@ class TemplateDefinitionBuilder protected ()
   var directives: js.Any = js.native
   var fileBasedI18nSuffix: js.Any = js.native
   /**
+    * Gets an expression that refers to the implicit receiver. The implicit
+    * receiver is always the root level context.
+    */
+  var getImplicitReceiverExpr: js.Any = js.native
+  /**
     * Gets a list of argument expressions to pass to an update instruction expression. Also updates
     * the temp variables state with temp variables that were identified as needing to be created
     * while visiting the arguments.
-    * @param contextExpression The expression for the context variable used to create arguments
     * @param value The original expression we will be resolving an arguments list from.
     */
   var getUpdateInstructionArguments: js.Any = js.native
@@ -191,6 +195,8 @@ class TemplateDefinitionBuilder protected ()
     ]
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nUpdateRef(context: atAngularCompilerLib.srcRender3ViewI18nContextMod.I18nContext): scala.Unit = js.native
+  /* CompleteClass */
+  override def notifyImplicitReceiverUse(): scala.Unit = js.native
   def registerContextVariables(variable: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable): scala.Unit = js.native
   /* CompleteClass */
   override def visitBoundAttribute(attribute: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.BoundAttribute): scala.Unit = js.native

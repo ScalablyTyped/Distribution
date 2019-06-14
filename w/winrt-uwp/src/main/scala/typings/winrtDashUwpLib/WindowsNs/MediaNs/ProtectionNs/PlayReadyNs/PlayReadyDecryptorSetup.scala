@@ -22,11 +22,11 @@ object PlayReadyDecryptorSetup extends js.Object {
   sealed trait uninitialized
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyDecryptorSetup
   
-  val onDemand: onDemand with java.lang.String = js.native
-  val uninitialized: uninitialized with java.lang.String = js.native
+  /* 1 */ val onDemand: onDemand with scala.Double = js.native
+  /* 0 */ val uninitialized: uninitialized with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyDecryptorSetup with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyDecryptorSetup with scala.Double
   ] = js.native
 }
 

@@ -47,16 +47,16 @@ object MediaCaptureOptimization extends js.Object {
   sealed trait quality
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCaptureOptimization
   
-  val default: default with java.lang.String = js.native
-  val latency: latency with java.lang.String = js.native
-  val latencyThenPower: latencyThenPower with java.lang.String = js.native
-  val latencyThenQuality: latencyThenQuality with java.lang.String = js.native
-  val power: power with java.lang.String = js.native
-  val powerAndQuality: powerAndQuality with java.lang.String = js.native
-  val quality: quality with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 2 */ val latency: latency with scala.Double = js.native
+  /* 5 */ val latencyThenPower: latencyThenPower with scala.Double = js.native
+  /* 4 */ val latencyThenQuality: latencyThenQuality with scala.Double = js.native
+  /* 3 */ val power: power with scala.Double = js.native
+  /* 6 */ val powerAndQuality: powerAndQuality with scala.Double = js.native
+  /* 1 */ val quality: quality with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCaptureOptimization with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCaptureOptimization with scala.Double
   ] = js.native
 }
 

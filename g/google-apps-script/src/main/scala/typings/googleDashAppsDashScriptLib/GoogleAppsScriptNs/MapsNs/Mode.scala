@@ -27,11 +27,11 @@ object Mode extends js.Object {
   sealed trait WALKING
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Mode
   
-  val BICYCLING: BICYCLING with java.lang.String = js.native
-  val DRIVING: DRIVING with java.lang.String = js.native
-  val TRANSIT: TRANSIT with java.lang.String = js.native
-  val WALKING: WALKING with java.lang.String = js.native
+  /* 2 */ val BICYCLING: BICYCLING with scala.Double = js.native
+  /* 0 */ val DRIVING: DRIVING with scala.Double = js.native
+  /* 3 */ val TRANSIT: TRANSIT with scala.Double = js.native
+  /* 1 */ val WALKING: WALKING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Mode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Mode with scala.Double] = js.native
 }
 

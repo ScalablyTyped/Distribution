@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__terminal-extension"
-version := "0.19.1-9d5cbb"
+version := "0.19.1-28b6fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "jupyterlab__application" % "0.19.1-9e7677",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-a6deaa",
+  "org.scalablytyped" %%% "jupyterlab__application" % "0.19.1-ee921b",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-b98cd4",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "2.2.1-5e4735",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-4b2103",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-9df03c",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.1.1-049de8",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-a8ada0",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-3b2753",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.2.1-22ed29",
   "org.scalablytyped" %%% "jupyterlab__services" % "3.2.1-ba3073",
-  "org.scalablytyped" %%% "jupyterlab__terminal" % "0.19.1-0d88d6",
+  "org.scalablytyped" %%% "jupyterlab__terminal" % "0.19.1-cedfdd",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-cda69c",
   "org.scalablytyped" %%% "phosphor__application" % "1.6.0-d1fbd2",
   "org.scalablytyped" %%% "phosphor__commands" % "1.6.1-db391a",
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.1.2-013d85",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.6.0-9c7ad0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

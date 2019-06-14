@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlCategoryLabelLevel extends js.Object
 
+object XlCategoryLabelLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlCategoryLabelLevelAll: activexDashOfficeLib.activexDashOfficeLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def xlCategoryLabelLevelCustom: activexDashOfficeLib.activexDashOfficeLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  def xlCategoryLabelLevelNone: activexDashOfficeLib.activexDashOfficeLibNumbers.`-3` = this.cast(-3)
+}
+

@@ -183,52 +183,52 @@ object Field extends js.Object {
   sealed trait YAHOO
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Field
   
-  val AIM: AIM with java.lang.String = js.native
-  val ANNIVERSARY: ANNIVERSARY with java.lang.String = js.native
-  val ASSISTANT_PHONE: ASSISTANT_PHONE with java.lang.String = js.native
-  val BIRTHDAY: BIRTHDAY with java.lang.String = js.native
-  val BLOG: BLOG with java.lang.String = js.native
-  val CALLBACK_PHONE: CALLBACK_PHONE with java.lang.String = js.native
-  val COMPANY: COMPANY with java.lang.String = js.native
-  val FAMILY_NAME: FAMILY_NAME with java.lang.String = js.native
-  val FTP: FTP with java.lang.String = js.native
-  val FULL_NAME: FULL_NAME with java.lang.String = js.native
-  val GIVEN_NAME: GIVEN_NAME with java.lang.String = js.native
-  val GOOGLE_TALK: GOOGLE_TALK with java.lang.String = js.native
-  val GOOGLE_VOICE: GOOGLE_VOICE with java.lang.String = js.native
-  val HOME_ADDRESS: HOME_ADDRESS with java.lang.String = js.native
-  val HOME_EMAIL: HOME_EMAIL with java.lang.String = js.native
-  val HOME_FAX: HOME_FAX with java.lang.String = js.native
-  val HOME_PAGE: HOME_PAGE with java.lang.String = js.native
-  val HOME_PHONE: HOME_PHONE with java.lang.String = js.native
-  val HOME_WEBSITE: HOME_WEBSITE with java.lang.String = js.native
-  val ICQ: ICQ with java.lang.String = js.native
-  val INITIALS: INITIALS with java.lang.String = js.native
-  val JABBER: JABBER with java.lang.String = js.native
-  val JOB_TITLE: JOB_TITLE with java.lang.String = js.native
-  val MAIDEN_NAME: MAIDEN_NAME with java.lang.String = js.native
-  val MAIN_PHONE: MAIN_PHONE with java.lang.String = js.native
-  val MIDDLE_NAME: MIDDLE_NAME with java.lang.String = js.native
-  val MOBILE_PHONE: MOBILE_PHONE with java.lang.String = js.native
-  val MSN: MSN with java.lang.String = js.native
-  val NICKNAME: NICKNAME with java.lang.String = js.native
-  val NOTES: NOTES with java.lang.String = js.native
-  val PAGER: PAGER with java.lang.String = js.native
-  val PREFIX: PREFIX with java.lang.String = js.native
-  val PROFILE: PROFILE with java.lang.String = js.native
-  val QQ: QQ with java.lang.String = js.native
-  val SHORT_NAME: SHORT_NAME with java.lang.String = js.native
-  val SKYPE: SKYPE with java.lang.String = js.native
-  val SUFFIX: SUFFIX with java.lang.String = js.native
-  val WORK_ADDRESS: WORK_ADDRESS with java.lang.String = js.native
-  val WORK_EMAIL: WORK_EMAIL with java.lang.String = js.native
-  val WORK_FAX: WORK_FAX with java.lang.String = js.native
-  val WORK_PHONE: WORK_PHONE with java.lang.String = js.native
-  val WORK_WEBSITE: WORK_WEBSITE with java.lang.String = js.native
-  val YAHOO: YAHOO with java.lang.String = js.native
+  /* 28 */ val AIM: AIM with scala.Double = js.native
+  /* 13 */ val ANNIVERSARY: ANNIVERSARY with scala.Double = js.native
+  /* 16 */ val ASSISTANT_PHONE: ASSISTANT_PHONE with scala.Double = js.native
+  /* 12 */ val BIRTHDAY: BIRTHDAY with scala.Double = js.native
+  /* 35 */ val BLOG: BLOG with scala.Double = js.native
+  /* 17 */ val CALLBACK_PHONE: CALLBACK_PHONE with scala.Double = js.native
+  /* 42 */ val COMPANY: COMPANY with scala.Double = js.native
+  /* 3 */ val FAMILY_NAME: FAMILY_NAME with scala.Double = js.native
+  /* 36 */ val FTP: FTP with scala.Double = js.native
+  /* 0 */ val FULL_NAME: FULL_NAME with scala.Double = js.native
+  /* 1 */ val GIVEN_NAME: GIVEN_NAME with scala.Double = js.native
+  /* 27 */ val GOOGLE_TALK: GOOGLE_TALK with scala.Double = js.native
+  /* 25 */ val GOOGLE_VOICE: GOOGLE_VOICE with scala.Double = js.native
+  /* 14 */ val HOME_ADDRESS: HOME_ADDRESS with scala.Double = js.native
+  /* 10 */ val HOME_EMAIL: HOME_EMAIL with scala.Double = js.native
+  /* 20 */ val HOME_FAX: HOME_FAX with scala.Double = js.native
+  /* 38 */ val HOME_PAGE: HOME_PAGE with scala.Double = js.native
+  /* 22 */ val HOME_PHONE: HOME_PHONE with scala.Double = js.native
+  /* 40 */ val HOME_WEBSITE: HOME_WEBSITE with scala.Double = js.native
+  /* 33 */ val ICQ: ICQ with scala.Double = js.native
+  /* 7 */ val INITIALS: INITIALS with scala.Double = js.native
+  /* 34 */ val JABBER: JABBER with scala.Double = js.native
+  /* 41 */ val JOB_TITLE: JOB_TITLE with scala.Double = js.native
+  /* 4 */ val MAIDEN_NAME: MAIDEN_NAME with scala.Double = js.native
+  /* 18 */ val MAIN_PHONE: MAIN_PHONE with scala.Double = js.native
+  /* 2 */ val MIDDLE_NAME: MIDDLE_NAME with scala.Double = js.native
+  /* 24 */ val MOBILE_PHONE: MOBILE_PHONE with scala.Double = js.native
+  /* 32 */ val MSN: MSN with scala.Double = js.native
+  /* 5 */ val NICKNAME: NICKNAME with scala.Double = js.native
+  /* 26 */ val NOTES: NOTES with scala.Double = js.native
+  /* 19 */ val PAGER: PAGER with scala.Double = js.native
+  /* 8 */ val PREFIX: PREFIX with scala.Double = js.native
+  /* 37 */ val PROFILE: PROFILE with scala.Double = js.native
+  /* 31 */ val QQ: QQ with scala.Double = js.native
+  /* 6 */ val SHORT_NAME: SHORT_NAME with scala.Double = js.native
+  /* 30 */ val SKYPE: SKYPE with scala.Double = js.native
+  /* 9 */ val SUFFIX: SUFFIX with scala.Double = js.native
+  /* 15 */ val WORK_ADDRESS: WORK_ADDRESS with scala.Double = js.native
+  /* 11 */ val WORK_EMAIL: WORK_EMAIL with scala.Double = js.native
+  /* 21 */ val WORK_FAX: WORK_FAX with scala.Double = js.native
+  /* 23 */ val WORK_PHONE: WORK_PHONE with scala.Double = js.native
+  /* 39 */ val WORK_WEBSITE: WORK_WEBSITE with scala.Double = js.native
+  /* 29 */ val YAHOO: YAHOO with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Field with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Field with scala.Double
   ] = js.native
 }
 

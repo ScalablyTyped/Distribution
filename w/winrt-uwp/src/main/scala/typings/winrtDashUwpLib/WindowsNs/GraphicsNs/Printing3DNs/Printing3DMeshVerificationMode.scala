@@ -22,11 +22,11 @@ object Printing3DMeshVerificationMode extends js.Object {
   sealed trait findFirstError
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DMeshVerificationMode
   
-  val findAllErrors: findAllErrors with java.lang.String = js.native
-  val findFirstError: findFirstError with java.lang.String = js.native
+  /* 1 */ val findAllErrors: findAllErrors with scala.Double = js.native
+  /* 0 */ val findFirstError: findFirstError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DMeshVerificationMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.Printing3DNs.Printing3DMeshVerificationMode with scala.Double
   ] = js.native
 }
 

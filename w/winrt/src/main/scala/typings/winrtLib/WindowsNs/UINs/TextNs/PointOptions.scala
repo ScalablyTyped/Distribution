@@ -43,15 +43,15 @@ object PointOptions extends js.Object {
   sealed trait transform
     extends winrtLib.WindowsNs.UINs.TextNs.PointOptions
   
-  val allowOffClient: allowOffClient with java.lang.String = js.native
-  val clientCoordinates: clientCoordinates with java.lang.String = js.native
-  val includeInset: includeInset with java.lang.String = js.native
-  val noHorizontalScroll: noHorizontalScroll with java.lang.String = js.native
-  val noVerticalScroll: noVerticalScroll with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val start: start with java.lang.String = js.native
-  val transform: transform with java.lang.String = js.native
+  /* 4 */ val allowOffClient: allowOffClient with scala.Double = js.native
+  /* 3 */ val clientCoordinates: clientCoordinates with scala.Double = js.native
+  /* 1 */ val includeInset: includeInset with scala.Double = js.native
+  /* 6 */ val noHorizontalScroll: noHorizontalScroll with scala.Double = js.native
+  /* 7 */ val noVerticalScroll: noVerticalScroll with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val start: start with scala.Double = js.native
+  /* 5 */ val transform: transform with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.PointOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.PointOptions with scala.Double] = js.native
 }
 

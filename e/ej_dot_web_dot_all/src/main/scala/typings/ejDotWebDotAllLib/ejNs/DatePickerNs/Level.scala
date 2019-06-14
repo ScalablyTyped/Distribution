@@ -26,10 +26,10 @@ object Level extends js.Object {
   sealed trait Year
     extends ejDotWebDotAllLib.ejNs.DatePickerNs.Level
   
-  val Century: Century with java.lang.String = js.native
-  val Decade: Decade with java.lang.String = js.native
-  val Year: Year with java.lang.String = js.native
+  /* 2 */ val Century: Century with scala.Double = js.native
+  /* 1 */ val Decade: Decade with scala.Double = js.native
+  /* 0 */ val Year: Year with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.DatePickerNs.Level with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.DatePickerNs.Level with scala.Double] = js.native
 }
 

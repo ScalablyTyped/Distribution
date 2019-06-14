@@ -31,13 +31,13 @@ object KeyModifiers extends js.Object {
   sealed trait Shift
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.KeyModifiers
   
-  val Alt: Alt with java.lang.String = js.native
-  val Control: Control with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Shift: Shift with java.lang.String = js.native
+  /* 1 */ val Alt: Alt with scala.Double = js.native
+  /* 2 */ val Control: Control with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 3 */ val Shift: Shift with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.KeyModifiers with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.KeyModifiers with scala.Double
   ] = js.native
 }
 

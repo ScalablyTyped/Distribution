@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-ui__icons
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Material Design Svg Icons converted to Material-UI React components.

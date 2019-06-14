@@ -21,9 +21,9 @@ object workingTimeScale extends js.Object {
   sealed trait TimeScale8Hours
     extends ejDotWebDotAllLib.ejNs.GanttNs.workingTimeScale
   
-  val TimeScale24Hours: TimeScale24Hours with java.lang.String = js.native
-  val TimeScale8Hours: TimeScale8Hours with java.lang.String = js.native
+  /* 1 */ val TimeScale24Hours: TimeScale24Hours with scala.Double = js.native
+  /* 0 */ val TimeScale8Hours: TimeScale8Hours with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.workingTimeScale with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.workingTimeScale with scala.Double] = js.native
 }
 

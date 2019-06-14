@@ -62,19 +62,19 @@ object BluetoothServiceCapabilities extends js.Object {
   sealed trait telephoneService
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothServiceCapabilities
   
-  val audioService: audioService with java.lang.String = js.native
-  val capturingService: capturingService with java.lang.String = js.native
-  val informationService: informationService with java.lang.String = js.native
-  val limitedDiscoverableMode: limitedDiscoverableMode with java.lang.String = js.native
-  val networkingService: networkingService with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val objectTransferService: objectTransferService with java.lang.String = js.native
-  val positioningService: positioningService with java.lang.String = js.native
-  val renderingService: renderingService with java.lang.String = js.native
-  val telephoneService: telephoneService with java.lang.String = js.native
+  /* 7 */ val audioService: audioService with scala.Double = js.native
+  /* 5 */ val capturingService: capturingService with scala.Double = js.native
+  /* 9 */ val informationService: informationService with scala.Double = js.native
+  /* 1 */ val limitedDiscoverableMode: limitedDiscoverableMode with scala.Double = js.native
+  /* 3 */ val networkingService: networkingService with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 6 */ val objectTransferService: objectTransferService with scala.Double = js.native
+  /* 2 */ val positioningService: positioningService with scala.Double = js.native
+  /* 4 */ val renderingService: renderingService with scala.Double = js.native
+  /* 8 */ val telephoneService: telephoneService with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothServiceCapabilities with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothServiceCapabilities with scala.Double
   ] = js.native
 }
 

@@ -163,47 +163,47 @@ object Attribute extends js.Object {
   sealed trait WIDTH
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.Attribute
   
-  val BACKGROUND_COLOR: BACKGROUND_COLOR with java.lang.String = js.native
-  val BOLD: BOLD with java.lang.String = js.native
-  val BORDER_COLOR: BORDER_COLOR with java.lang.String = js.native
-  val BORDER_WIDTH: BORDER_WIDTH with java.lang.String = js.native
-  val CODE: CODE with java.lang.String = js.native
-  val FONT_FAMILY: FONT_FAMILY with java.lang.String = js.native
-  val FONT_SIZE: FONT_SIZE with java.lang.String = js.native
-  val FOREGROUND_COLOR: FOREGROUND_COLOR with java.lang.String = js.native
-  val GLYPH_TYPE: GLYPH_TYPE with java.lang.String = js.native
-  val HEADING: HEADING with java.lang.String = js.native
-  val HEIGHT: HEIGHT with java.lang.String = js.native
-  val HORIZONTAL_ALIGNMENT: HORIZONTAL_ALIGNMENT with java.lang.String = js.native
-  val INDENT_END: INDENT_END with java.lang.String = js.native
-  val INDENT_FIRST_LINE: INDENT_FIRST_LINE with java.lang.String = js.native
-  val INDENT_START: INDENT_START with java.lang.String = js.native
-  val ITALIC: ITALIC with java.lang.String = js.native
-  val LEFT_TO_RIGHT: LEFT_TO_RIGHT with java.lang.String = js.native
-  val LINE_SPACING: LINE_SPACING with java.lang.String = js.native
-  val LINK_URL: LINK_URL with java.lang.String = js.native
-  val LIST_ID: LIST_ID with java.lang.String = js.native
-  val MARGIN_BOTTOM: MARGIN_BOTTOM with java.lang.String = js.native
-  val MARGIN_LEFT: MARGIN_LEFT with java.lang.String = js.native
-  val MARGIN_RIGHT: MARGIN_RIGHT with java.lang.String = js.native
-  val MARGIN_TOP: MARGIN_TOP with java.lang.String = js.native
-  val MINIMUM_HEIGHT: MINIMUM_HEIGHT with java.lang.String = js.native
-  val NESTING_LEVEL: NESTING_LEVEL with java.lang.String = js.native
-  val PADDING_BOTTOM: PADDING_BOTTOM with java.lang.String = js.native
-  val PADDING_LEFT: PADDING_LEFT with java.lang.String = js.native
-  val PADDING_RIGHT: PADDING_RIGHT with java.lang.String = js.native
-  val PADDING_TOP: PADDING_TOP with java.lang.String = js.native
-  val PAGE_HEIGHT: PAGE_HEIGHT with java.lang.String = js.native
-  val PAGE_WIDTH: PAGE_WIDTH with java.lang.String = js.native
-  val SPACING_AFTER: SPACING_AFTER with java.lang.String = js.native
-  val SPACING_BEFORE: SPACING_BEFORE with java.lang.String = js.native
-  val STRIKETHROUGH: STRIKETHROUGH with java.lang.String = js.native
-  val UNDERLINE: UNDERLINE with java.lang.String = js.native
-  val VERTICAL_ALIGNMENT: VERTICAL_ALIGNMENT with java.lang.String = js.native
-  val WIDTH: WIDTH with java.lang.String = js.native
+  /* 0 */ val BACKGROUND_COLOR: BACKGROUND_COLOR with scala.Double = js.native
+  /* 1 */ val BOLD: BOLD with scala.Double = js.native
+  /* 2 */ val BORDER_COLOR: BORDER_COLOR with scala.Double = js.native
+  /* 3 */ val BORDER_WIDTH: BORDER_WIDTH with scala.Double = js.native
+  /* 4 */ val CODE: CODE with scala.Double = js.native
+  /* 5 */ val FONT_FAMILY: FONT_FAMILY with scala.Double = js.native
+  /* 6 */ val FONT_SIZE: FONT_SIZE with scala.Double = js.native
+  /* 7 */ val FOREGROUND_COLOR: FOREGROUND_COLOR with scala.Double = js.native
+  /* 15 */ val GLYPH_TYPE: GLYPH_TYPE with scala.Double = js.native
+  /* 8 */ val HEADING: HEADING with scala.Double = js.native
+  /* 9 */ val HEIGHT: HEIGHT with scala.Double = js.native
+  /* 10 */ val HORIZONTAL_ALIGNMENT: HORIZONTAL_ALIGNMENT with scala.Double = js.native
+  /* 11 */ val INDENT_END: INDENT_END with scala.Double = js.native
+  /* 12 */ val INDENT_FIRST_LINE: INDENT_FIRST_LINE with scala.Double = js.native
+  /* 13 */ val INDENT_START: INDENT_START with scala.Double = js.native
+  /* 14 */ val ITALIC: ITALIC with scala.Double = js.native
+  /* 16 */ val LEFT_TO_RIGHT: LEFT_TO_RIGHT with scala.Double = js.native
+  /* 17 */ val LINE_SPACING: LINE_SPACING with scala.Double = js.native
+  /* 18 */ val LINK_URL: LINK_URL with scala.Double = js.native
+  /* 19 */ val LIST_ID: LIST_ID with scala.Double = js.native
+  /* 20 */ val MARGIN_BOTTOM: MARGIN_BOTTOM with scala.Double = js.native
+  /* 21 */ val MARGIN_LEFT: MARGIN_LEFT with scala.Double = js.native
+  /* 22 */ val MARGIN_RIGHT: MARGIN_RIGHT with scala.Double = js.native
+  /* 23 */ val MARGIN_TOP: MARGIN_TOP with scala.Double = js.native
+  /* 25 */ val MINIMUM_HEIGHT: MINIMUM_HEIGHT with scala.Double = js.native
+  /* 24 */ val NESTING_LEVEL: NESTING_LEVEL with scala.Double = js.native
+  /* 26 */ val PADDING_BOTTOM: PADDING_BOTTOM with scala.Double = js.native
+  /* 27 */ val PADDING_LEFT: PADDING_LEFT with scala.Double = js.native
+  /* 28 */ val PADDING_RIGHT: PADDING_RIGHT with scala.Double = js.native
+  /* 29 */ val PADDING_TOP: PADDING_TOP with scala.Double = js.native
+  /* 30 */ val PAGE_HEIGHT: PAGE_HEIGHT with scala.Double = js.native
+  /* 31 */ val PAGE_WIDTH: PAGE_WIDTH with scala.Double = js.native
+  /* 32 */ val SPACING_AFTER: SPACING_AFTER with scala.Double = js.native
+  /* 33 */ val SPACING_BEFORE: SPACING_BEFORE with scala.Double = js.native
+  /* 34 */ val STRIKETHROUGH: STRIKETHROUGH with scala.Double = js.native
+  /* 35 */ val UNDERLINE: UNDERLINE with scala.Double = js.native
+  /* 36 */ val VERTICAL_ALIGNMENT: VERTICAL_ALIGNMENT with scala.Double = js.native
+  /* 37 */ val WIDTH: WIDTH with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.Attribute with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.Attribute with scala.Double
   ] = js.native
 }
 

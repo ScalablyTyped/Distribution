@@ -27,13 +27,13 @@ object ContentAlignment extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ContentAlignment
   
-  val BOTTOM: BOTTOM with java.lang.String = js.native
-  val MIDDLE: MIDDLE with java.lang.String = js.native
-  val TOP: TOP with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 3 */ val BOTTOM: BOTTOM with scala.Double = js.native
+  /* 2 */ val MIDDLE: MIDDLE with scala.Double = js.native
+  /* 1 */ val TOP: TOP with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ContentAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ContentAlignment with scala.Double
   ] = js.native
 }
 

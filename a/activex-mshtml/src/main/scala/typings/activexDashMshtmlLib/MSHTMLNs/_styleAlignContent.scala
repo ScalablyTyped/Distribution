@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait _styleAlignContent extends js.Object
 
+object _styleAlignContent {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleAlignContentCenter: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleAlignContentFlexEnd: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleAlignContentFlexStart: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleAlignContentNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def styleAlignContentSpaceAround: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def styleAlignContentSpaceBetween: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleAlignContentStretch: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def styleAlignContent_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

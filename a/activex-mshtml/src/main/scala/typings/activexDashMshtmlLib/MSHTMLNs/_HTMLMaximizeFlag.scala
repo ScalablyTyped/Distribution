@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _HTMLMaximizeFlag extends js.Object
 
+object _HTMLMaximizeFlag {
+  @scala.inline
+  def HTMLMaximizeFlagNo: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def HTMLMaximizeFlagYes: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`65536` = this.cast(65536)
+  @scala.inline
+  def HTMLMaximizeFlag_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -42,15 +42,15 @@ object ViewSizePreference extends js.Object {
   sealed trait useNone
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ViewSizePreference
   
-  val default: default with java.lang.String = js.native
-  val useHalf: useHalf with java.lang.String = js.native
-  val useLess: useLess with java.lang.String = js.native
-  val useMinimum: useMinimum with java.lang.String = js.native
-  val useMore: useMore with java.lang.String = js.native
-  val useNone: useNone with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 2 */ val useHalf: useHalf with scala.Double = js.native
+  /* 1 */ val useLess: useLess with scala.Double = js.native
+  /* 4 */ val useMinimum: useMinimum with scala.Double = js.native
+  /* 3 */ val useMore: useMore with scala.Double = js.native
+  /* 5 */ val useNone: useNone with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ViewSizePreference with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ViewSizePreference with scala.Double
   ] = js.native
 }
 

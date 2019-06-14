@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait CompareMethod extends js.Object
 
+object CompareMethod {
+  @scala.inline
+  def BinaryCompare: activexDashScriptingLib.activexDashScriptingLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def DatabaseCompare: activexDashScriptingLib.activexDashScriptingLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def TextCompare: activexDashScriptingLib.activexDashScriptingLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

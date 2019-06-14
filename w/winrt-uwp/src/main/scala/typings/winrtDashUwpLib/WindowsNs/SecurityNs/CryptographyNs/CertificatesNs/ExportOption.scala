@@ -22,11 +22,11 @@ object ExportOption extends js.Object {
   sealed trait notExportable
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.ExportOption
   
-  val exportable: exportable with java.lang.String = js.native
-  val notExportable: notExportable with java.lang.String = js.native
+  /* 1 */ val exportable: exportable with scala.Double = js.native
+  /* 0 */ val notExportable: notExportable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.ExportOption with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.ExportOption with scala.Double
   ] = js.native
 }
 

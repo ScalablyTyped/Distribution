@@ -41,15 +41,15 @@ object Type extends js.Object {
   sealed trait StepLine
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.Type
   
-  val Area: Area with java.lang.String = js.native
-  val Line: Line with java.lang.String = js.native
-  val Spline: Spline with java.lang.String = js.native
-  val SplineArea: SplineArea with java.lang.String = js.native
-  val StepArea: StepArea with java.lang.String = js.native
-  val StepLine: StepLine with java.lang.String = js.native
+  /* 0 */ val Area: Area with scala.Double = js.native
+  /* 1 */ val Line: Line with scala.Double = js.native
+  /* 2 */ val Spline: Spline with scala.Double = js.native
+  /* 4 */ val SplineArea: SplineArea with scala.Double = js.native
+  /* 3 */ val StepArea: StepArea with scala.Double = js.native
+  /* 5 */ val StepLine: StepLine with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.Type with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.Type with scala.Double
   ] = js.native
 }
 

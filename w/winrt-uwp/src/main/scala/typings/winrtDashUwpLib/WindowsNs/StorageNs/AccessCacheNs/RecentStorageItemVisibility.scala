@@ -22,11 +22,11 @@ object RecentStorageItemVisibility extends js.Object {
   sealed trait appOnly
     extends winrtDashUwpLib.WindowsNs.StorageNs.AccessCacheNs.RecentStorageItemVisibility
   
-  val appAndSystem: appAndSystem with java.lang.String = js.native
-  val appOnly: appOnly with java.lang.String = js.native
+  /* 1 */ val appAndSystem: appAndSystem with scala.Double = js.native
+  /* 0 */ val appOnly: appOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.AccessCacheNs.RecentStorageItemVisibility with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.StorageNs.AccessCacheNs.RecentStorageItemVisibility with scala.Double
   ] = js.native
 }
 

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait RibbonControlSize extends js.Object
 
+object RibbonControlSize {
+  @scala.inline
+  def RibbonControlSizeLarge: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def RibbonControlSizeRegular: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

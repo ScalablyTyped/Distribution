@@ -31,12 +31,12 @@ object SubscriptionState extends js.Object {
   sealed trait Pending
     extends realmLib.RealmNs.SyncNs.SubscriptionState
   
-  val Complete: Complete with java.lang.String = js.native
-  val Creating: Creating with java.lang.String = js.native
-  val Error: Error with java.lang.String = js.native
-  val Invalidated: Invalidated with java.lang.String = js.native
-  val Pending: Pending with java.lang.String = js.native
+  /* 3 */ val Complete: Complete with scala.Double = js.native
+  /* 1 */ val Creating: Creating with scala.Double = js.native
+  /* 0 */ val Error: Error with scala.Double = js.native
+  /* 4 */ val Invalidated: Invalidated with scala.Double = js.native
+  /* 2 */ val Pending: Pending with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.SubscriptionState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[realmLib.RealmNs.SyncNs.SubscriptionState with scala.Double] = js.native
 }
 

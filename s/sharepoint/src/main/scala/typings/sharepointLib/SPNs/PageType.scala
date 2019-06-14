@@ -63,20 +63,20 @@ object PageType extends js.Object {
   sealed trait view
     extends sharepointLib.SPNs.PageType
   
-  val defaultView: defaultView with java.lang.String = js.native
-  val dialogView: dialogView with java.lang.String = js.native
-  val displayForm: displayForm with java.lang.String = js.native
-  val displayFormDialog: displayFormDialog with java.lang.String = js.native
-  val editForm: editForm with java.lang.String = js.native
-  val editFormDialog: editFormDialog with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val newForm: newForm with java.lang.String = js.native
-  val newFormDialog: newFormDialog with java.lang.String = js.native
-  val normalView: normalView with java.lang.String = js.native
-  val pAGE_MAXITEMS: pAGE_MAXITEMS with java.lang.String = js.native
-  val solutionForm: solutionForm with java.lang.String = js.native
-  val view: view with java.lang.String = js.native
+  /* 1 */ val defaultView: defaultView with scala.Double = js.native
+  /* 3 */ val dialogView: dialogView with scala.Double = js.native
+  /* 5 */ val displayForm: displayForm with scala.Double = js.native
+  /* 6 */ val displayFormDialog: displayFormDialog with scala.Double = js.native
+  /* 7 */ val editForm: editForm with scala.Double = js.native
+  /* 8 */ val editFormDialog: editFormDialog with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 9 */ val newForm: newForm with scala.Double = js.native
+  /* 10 */ val newFormDialog: newFormDialog with scala.Double = js.native
+  /* 2 */ val normalView: normalView with scala.Double = js.native
+  /* 12 */ val pAGE_MAXITEMS: pAGE_MAXITEMS with scala.Double = js.native
+  /* 11 */ val solutionForm: solutionForm with scala.Double = js.native
+  /* 4 */ val view: view with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.PageType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.PageType with scala.Double] = js.native
 }
 

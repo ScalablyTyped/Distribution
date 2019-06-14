@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flowjs"
-version := "2.13-dt-20190409Z-9e17c4"
+version := "2.13-dt-20190613Z-9e17c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

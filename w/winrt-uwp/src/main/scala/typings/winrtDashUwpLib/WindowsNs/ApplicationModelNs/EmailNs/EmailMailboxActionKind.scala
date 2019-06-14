@@ -67,20 +67,20 @@ object EmailMailboxActionKind extends js.Object {
   sealed trait sendMessage
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxActionKind
   
-  val changeMessageFlagState: changeMessageFlagState with java.lang.String = js.native
-  val createResponseForwardMessage: createResponseForwardMessage with java.lang.String = js.native
-  val createResponseReplyAllMessage: createResponseReplyAllMessage with java.lang.String = js.native
-  val createResponseReplyMessage: createResponseReplyMessage with java.lang.String = js.native
-  val markFolderForSyncEnabled: markFolderForSyncEnabled with java.lang.String = js.native
-  val markMessageAsSeen: markMessageAsSeen with java.lang.String = js.native
-  val markMessageRead: markMessageRead with java.lang.String = js.native
-  val moveFolder: moveFolder with java.lang.String = js.native
-  val moveMessage: moveMessage with java.lang.String = js.native
-  val saveDraft: saveDraft with java.lang.String = js.native
-  val sendMessage: sendMessage with java.lang.String = js.native
+  /* 2 */ val changeMessageFlagState: changeMessageFlagState with scala.Double = js.native
+  /* 8 */ val createResponseForwardMessage: createResponseForwardMessage with scala.Double = js.native
+  /* 7 */ val createResponseReplyAllMessage: createResponseReplyAllMessage with scala.Double = js.native
+  /* 6 */ val createResponseReplyMessage: createResponseReplyMessage with scala.Double = js.native
+  /* 10 */ val markFolderForSyncEnabled: markFolderForSyncEnabled with scala.Double = js.native
+  /* 0 */ val markMessageAsSeen: markMessageAsSeen with scala.Double = js.native
+  /* 1 */ val markMessageRead: markMessageRead with scala.Double = js.native
+  /* 9 */ val moveFolder: moveFolder with scala.Double = js.native
+  /* 3 */ val moveMessage: moveMessage with scala.Double = js.native
+  /* 4 */ val saveDraft: saveDraft with scala.Double = js.native
+  /* 5 */ val sendMessage: sendMessage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxActionKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxActionKind with scala.Double
   ] = js.native
 }
 

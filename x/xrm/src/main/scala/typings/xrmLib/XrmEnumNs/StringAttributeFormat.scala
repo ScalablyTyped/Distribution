@@ -19,3 +19,20 @@ import scala.scalajs.js.annotation._
 */
 trait StringAttributeFormat extends js.Object
 
+object StringAttributeFormat {
+  @scala.inline
+  def Email: xrmLib.xrmLibStrings.email = this.cast("email")
+  @scala.inline
+  def Phone: xrmLib.xrmLibStrings.phone = this.cast("phone")
+  @scala.inline
+  def Text: xrmLib.xrmLibStrings.text = this.cast("text")
+  @scala.inline
+  def TextArea: xrmLib.xrmLibStrings.textarea = this.cast("textarea")
+  @scala.inline
+  def TickerSymbol: xrmLib.xrmLibStrings.tickersymbol = this.cast("tickersymbol")
+  @scala.inline
+  def URL: xrmLib.xrmLibStrings.url = this.cast("url")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

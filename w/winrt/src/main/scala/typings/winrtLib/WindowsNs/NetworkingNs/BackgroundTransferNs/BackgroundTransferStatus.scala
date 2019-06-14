@@ -43,17 +43,17 @@ object BackgroundTransferStatus extends js.Object {
   sealed trait running
     extends winrtLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferStatus
   
-  val canceled: canceled with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
-  val pausedByApplication: pausedByApplication with java.lang.String = js.native
-  val pausedCostedNetwork: pausedCostedNetwork with java.lang.String = js.native
-  val pausedNoNetwork: pausedNoNetwork with java.lang.String = js.native
-  val running: running with java.lang.String = js.native
+  /* 6 */ val canceled: canceled with scala.Double = js.native
+  /* 5 */ val completed: completed with scala.Double = js.native
+  /* 7 */ val error: error with scala.Double = js.native
+  /* 0 */ val idle: idle with scala.Double = js.native
+  /* 2 */ val pausedByApplication: pausedByApplication with scala.Double = js.native
+  /* 3 */ val pausedCostedNetwork: pausedCostedNetwork with scala.Double = js.native
+  /* 4 */ val pausedNoNetwork: pausedNoNetwork with scala.Double = js.native
+  /* 1 */ val running: running with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferStatus with scala.Double
   ] = js.native
 }
 

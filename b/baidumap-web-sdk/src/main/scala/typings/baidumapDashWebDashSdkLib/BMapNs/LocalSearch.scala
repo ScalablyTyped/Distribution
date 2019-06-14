@@ -24,34 +24,58 @@ class LocalSearch protected () extends js.Object {
   def getStatus(): ServiceStatusCode = js.native
   def gotoPage(page: scala.Double): scala.Unit = js.native
   def search(keyword: java.lang.String): scala.Unit = js.native
-  def search(keyword: java.lang.String, option: js.Object): scala.Unit = js.native
+  def search(keyword: java.lang.String, option: LocalSearchSearchOptions): scala.Unit = js.native
   def search(keyword: js.Array[java.lang.String]): scala.Unit = js.native
-  def search(keyword: js.Array[java.lang.String], option: js.Object): scala.Unit = js.native
+  def search(keyword: js.Array[java.lang.String], option: LocalSearchSearchOptions): scala.Unit = js.native
   def searchInBounds(keyword: java.lang.String, bounds: Bounds): scala.Unit = js.native
-  def searchInBounds(keyword: java.lang.String, bounds: Bounds, option: js.Object): scala.Unit = js.native
+  def searchInBounds(keyword: java.lang.String, bounds: Bounds, option: baidumapDashWebDashSdkLib.Anon_CustomData): scala.Unit = js.native
   def searchInBounds(keyword: js.Array[java.lang.String], bounds: Bounds): scala.Unit = js.native
-  def searchInBounds(keyword: js.Array[java.lang.String], bounds: Bounds, option: js.Object): scala.Unit = js.native
+  def searchInBounds(
+    keyword: js.Array[java.lang.String],
+    bounds: Bounds,
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
+  ): scala.Unit = js.native
   def searchNearby(keyword: java.lang.String, center: LocalResultPoi, radius: scala.Double): scala.Unit = js.native
-  def searchNearby(keyword: java.lang.String, center: LocalResultPoi, radius: scala.Double, option: js.Object): scala.Unit = js.native
+  def searchNearby(
+    keyword: java.lang.String,
+    center: LocalResultPoi,
+    radius: scala.Double,
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
+  ): scala.Unit = js.native
   def searchNearby(keyword: java.lang.String, center: Point, radius: scala.Double): scala.Unit = js.native
-  def searchNearby(keyword: java.lang.String, center: Point, radius: scala.Double, option: js.Object): scala.Unit = js.native
+  def searchNearby(
+    keyword: java.lang.String,
+    center: Point,
+    radius: scala.Double,
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
+  ): scala.Unit = js.native
   def searchNearby(keyword: java.lang.String, center: java.lang.String, radius: scala.Double): scala.Unit = js.native
-  def searchNearby(keyword: java.lang.String, center: java.lang.String, radius: scala.Double, option: js.Object): scala.Unit = js.native
+  def searchNearby(
+    keyword: java.lang.String,
+    center: java.lang.String,
+    radius: scala.Double,
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
+  ): scala.Unit = js.native
   def searchNearby(keyword: js.Array[java.lang.String], center: LocalResultPoi, radius: scala.Double): scala.Unit = js.native
   def searchNearby(
     keyword: js.Array[java.lang.String],
     center: LocalResultPoi,
     radius: scala.Double,
-    option: js.Object
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
   ): scala.Unit = js.native
   def searchNearby(keyword: js.Array[java.lang.String], center: Point, radius: scala.Double): scala.Unit = js.native
-  def searchNearby(keyword: js.Array[java.lang.String], center: Point, radius: scala.Double, option: js.Object): scala.Unit = js.native
+  def searchNearby(
+    keyword: js.Array[java.lang.String],
+    center: Point,
+    radius: scala.Double,
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
+  ): scala.Unit = js.native
   def searchNearby(keyword: js.Array[java.lang.String], center: java.lang.String, radius: scala.Double): scala.Unit = js.native
   def searchNearby(
     keyword: js.Array[java.lang.String],
     center: java.lang.String,
     radius: scala.Double,
-    option: js.Object
+    option: baidumapDashWebDashSdkLib.Anon_CustomData
   ): scala.Unit = js.native
   def setInfoHtmlSetCallback(callback: js.Function2[/* poi */ LocalResultPoi, /* html */ stdLib.HTMLElement, scala.Unit]): scala.Unit = js.native
   def setLocation(location: Map): scala.Unit = js.native

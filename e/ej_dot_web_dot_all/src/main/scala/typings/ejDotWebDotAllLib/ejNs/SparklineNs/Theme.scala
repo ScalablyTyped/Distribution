@@ -61,17 +61,17 @@ object Theme extends js.Object {
   sealed trait SaffronDark
     extends ejDotWebDotAllLib.ejNs.SparklineNs.Theme
   
-  val Azure: Azure with java.lang.String = js.native
-  val Azuredark: Azuredark with java.lang.String = js.native
-  val FlatDark: FlatDark with java.lang.String = js.native
-  val FlatLight: FlatLight with java.lang.String = js.native
-  val GradientDark: GradientDark with java.lang.String = js.native
-  val GradientLight: GradientLight with java.lang.String = js.native
-  val Lime: Lime with java.lang.String = js.native
-  val LimeDark: LimeDark with java.lang.String = js.native
-  val Saffron: Saffron with java.lang.String = js.native
-  val SaffronDark: SaffronDark with java.lang.String = js.native
+  /* 0 */ val Azure: Azure with scala.Double = js.native
+  /* 3 */ val Azuredark: Azuredark with scala.Double = js.native
+  /* 2 */ val FlatDark: FlatDark with scala.Double = js.native
+  /* 1 */ val FlatLight: FlatLight with scala.Double = js.native
+  /* 9 */ val GradientDark: GradientDark with scala.Double = js.native
+  /* 8 */ val GradientLight: GradientLight with scala.Double = js.native
+  /* 4 */ val Lime: Lime with scala.Double = js.native
+  /* 5 */ val LimeDark: LimeDark with scala.Double = js.native
+  /* 6 */ val Saffron: Saffron with scala.Double = js.native
+  /* 7 */ val SaffronDark: SaffronDark with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SparklineNs.Theme with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SparklineNs.Theme with scala.Double] = js.native
 }
 

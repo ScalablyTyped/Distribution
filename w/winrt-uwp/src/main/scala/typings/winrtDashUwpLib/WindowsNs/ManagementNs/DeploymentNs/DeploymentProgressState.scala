@@ -22,11 +22,11 @@ object DeploymentProgressState extends js.Object {
   sealed trait queued
     extends winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.DeploymentProgressState
   
-  val processing: processing with java.lang.String = js.native
-  val queued: queued with java.lang.String = js.native
+  /* 1 */ val processing: processing with scala.Double = js.native
+  /* 0 */ val queued: queued with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.DeploymentProgressState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.DeploymentProgressState with scala.Double
   ] = js.native
 }
 

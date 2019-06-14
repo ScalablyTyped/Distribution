@@ -36,12 +36,12 @@ object SummaryType extends js.Object {
   sealed trait Sum
     extends ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SummaryType
   
-  val Average: Average with java.lang.String = js.native
-  val Count: Count with java.lang.String = js.native
-  val Max: Max with java.lang.String = js.native
-  val Min: Min with java.lang.String = js.native
-  val Sum: Sum with java.lang.String = js.native
+  /* 1 */ val Average: Average with scala.Double = js.native
+  /* 2 */ val Count: Count with scala.Double = js.native
+  /* 4 */ val Max: Max with scala.Double = js.native
+  /* 3 */ val Min: Min with scala.Double = js.native
+  /* 0 */ val Sum: Sum with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SummaryType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SummaryType with scala.Double] = js.native
 }
 

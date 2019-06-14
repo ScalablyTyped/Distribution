@@ -23,12 +23,12 @@ object PropertyAnimationType extends js.Object {
   sealed trait translation
     extends winrtLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.PropertyAnimationType
   
-  val opacity: opacity with java.lang.String = js.native
-  val scale: scale with java.lang.String = js.native
-  val translation: translation with java.lang.String = js.native
+  /* 2 */ val opacity: opacity with scala.Double = js.native
+  /* 0 */ val scale: scale with scala.Double = js.native
+  /* 1 */ val translation: translation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.PropertyAnimationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.UINs.CoreNs.AnimationMetricsNs.PropertyAnimationType with scala.Double
   ] = js.native
 }
 

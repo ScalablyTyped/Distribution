@@ -22,9 +22,9 @@ object Platform extends js.Object {
   sealed trait windowsPhone
     extends winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.Platform
   
-  val windows: windows with java.lang.String = js.native
-  val windowsPhone: windowsPhone with java.lang.String = js.native
+  /* 0 */ val windows: windows with scala.Double = js.native
+  /* 1 */ val windowsPhone: windowsPhone with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.Platform with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.FoundationNs.MetadataNs.Platform with scala.Double] = js.native
 }
 

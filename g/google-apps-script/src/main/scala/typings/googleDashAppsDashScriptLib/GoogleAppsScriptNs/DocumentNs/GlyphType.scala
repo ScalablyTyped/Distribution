@@ -43,17 +43,17 @@ object GlyphType extends js.Object {
   sealed trait SQUARE_BULLET
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.GlyphType
   
-  val BULLET: BULLET with java.lang.String = js.native
-  val HOLLOW_BULLET: HOLLOW_BULLET with java.lang.String = js.native
-  val LATIN_LOWER: LATIN_LOWER with java.lang.String = js.native
-  val LATIN_UPPER: LATIN_UPPER with java.lang.String = js.native
-  val NUMBER: NUMBER with java.lang.String = js.native
-  val ROMAN_LOWER: ROMAN_LOWER with java.lang.String = js.native
-  val ROMAN_UPPER: ROMAN_UPPER with java.lang.String = js.native
-  val SQUARE_BULLET: SQUARE_BULLET with java.lang.String = js.native
+  /* 0 */ val BULLET: BULLET with scala.Double = js.native
+  /* 1 */ val HOLLOW_BULLET: HOLLOW_BULLET with scala.Double = js.native
+  /* 5 */ val LATIN_LOWER: LATIN_LOWER with scala.Double = js.native
+  /* 4 */ val LATIN_UPPER: LATIN_UPPER with scala.Double = js.native
+  /* 3 */ val NUMBER: NUMBER with scala.Double = js.native
+  /* 7 */ val ROMAN_LOWER: ROMAN_LOWER with scala.Double = js.native
+  /* 6 */ val ROMAN_UPPER: ROMAN_UPPER with scala.Double = js.native
+  /* 2 */ val SQUARE_BULLET: SQUARE_BULLET with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.GlyphType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.GlyphType with scala.Double
   ] = js.native
 }
 

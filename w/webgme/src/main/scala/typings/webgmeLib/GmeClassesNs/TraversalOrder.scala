@@ -19,9 +19,9 @@ object TraversalOrder extends js.Object {
   sealed trait DFS
     extends webgmeLib.GmeClassesNs.TraversalOrder
   
-  val BFS: BFS with java.lang.String = js.native
-  val DFS: DFS with java.lang.String = js.native
+  /* 0 */ val BFS: BFS with scala.Double = js.native
+  /* 1 */ val DFS: DFS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[webgmeLib.GmeClassesNs.TraversalOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[webgmeLib.GmeClassesNs.TraversalOrder with scala.Double] = js.native
 }
 

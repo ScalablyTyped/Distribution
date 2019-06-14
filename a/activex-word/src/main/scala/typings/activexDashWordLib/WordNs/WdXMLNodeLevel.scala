@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait WdXMLNodeLevel extends js.Object
 
+object WdXMLNodeLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdXMLNodeLevelCell: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdXMLNodeLevelInline: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdXMLNodeLevelParagraph: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdXMLNodeLevelRow: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

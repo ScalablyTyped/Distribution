@@ -22,11 +22,11 @@ object ProfileMediaType extends js.Object {
   sealed trait wwan
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.ProfileMediaType
   
-  val wlan: wlan with java.lang.String = js.native
-  val wwan: wwan with java.lang.String = js.native
+  /* 0 */ val wlan: wlan with scala.Double = js.native
+  /* 1 */ val wwan: wwan with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.ProfileMediaType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.ProfileMediaType with scala.Double
   ] = js.native
 }
 

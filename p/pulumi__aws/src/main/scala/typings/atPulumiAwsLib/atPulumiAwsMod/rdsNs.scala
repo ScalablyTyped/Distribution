@@ -205,6 +205,13 @@ object rdsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.rdsSubnetGroupMod.SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  var AuroraEngine: atPulumiAwsLib.rdsEngineTypeMod.EngineType = js.native
+  var AuroraMysqlEngine: atPulumiAwsLib.rdsEngineTypeMod.EngineType = js.native
+  var AuroraPostgresqlEngine: atPulumiAwsLib.rdsEngineTypeMod.EngineType = js.native
+  var GlobalEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
+  var ParallelQueryEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
+  var ProvisionedEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
+  var ServerlessEngine: atPulumiAwsLib.rdsEngineModeMod.EngineMode = js.native
   def getCluster(args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs): js.Promise[atPulumiAwsLib.rdsGetClusterMod.GetClusterResult] = js.native
   def getCluster(
     args: atPulumiAwsLib.rdsGetClusterMod.GetClusterArgs,

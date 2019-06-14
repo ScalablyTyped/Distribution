@@ -35,15 +35,15 @@ object EventType extends js.Object {
   sealed trait ON_OPEN
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.EventType
   
-  val CLOCK: CLOCK with java.lang.String = js.native
-  val ON_CHANGE: ON_CHANGE with java.lang.String = js.native
-  val ON_EDIT: ON_EDIT with java.lang.String = js.native
-  val ON_EVENT_UPDATED: ON_EVENT_UPDATED with java.lang.String = js.native
-  val ON_FORM_SUBMIT: ON_FORM_SUBMIT with java.lang.String = js.native
-  val ON_OPEN: ON_OPEN with java.lang.String = js.native
+  /* 0 */ val CLOCK: CLOCK with scala.Double = js.native
+  /* 4 */ val ON_CHANGE: ON_CHANGE with scala.Double = js.native
+  /* 2 */ val ON_EDIT: ON_EDIT with scala.Double = js.native
+  /* 5 */ val ON_EVENT_UPDATED: ON_EVENT_UPDATED with scala.Double = js.native
+  /* 3 */ val ON_FORM_SUBMIT: ON_FORM_SUBMIT with scala.Double = js.native
+  /* 1 */ val ON_OPEN: ON_OPEN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.EventType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.EventType with scala.Double
   ] = js.native
 }
 

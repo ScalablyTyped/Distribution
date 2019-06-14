@@ -21,11 +21,9 @@ object PyramidMode extends js.Object {
   sealed trait Surface
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.PyramidMode
   
-  val Linear: Linear with java.lang.String = js.native
-  val Surface: Surface with java.lang.String = js.native
+  /* 0 */ val Linear: Linear with scala.Double = js.native
+  /* 1 */ val Surface: Surface with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.PyramidMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.PyramidMode with scala.Double] = js.native
 }
 

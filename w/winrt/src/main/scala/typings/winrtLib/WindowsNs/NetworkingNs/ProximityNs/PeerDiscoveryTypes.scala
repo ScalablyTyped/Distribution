@@ -23,12 +23,10 @@ object PeerDiscoveryTypes extends js.Object {
   sealed trait triggered
     extends winrtLib.WindowsNs.NetworkingNs.ProximityNs.PeerDiscoveryTypes
   
-  val browse: browse with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val triggered: triggered with java.lang.String = js.native
+  /* 1 */ val browse: browse with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val triggered: triggered with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.ProximityNs.PeerDiscoveryTypes with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.NetworkingNs.ProximityNs.PeerDiscoveryTypes with scala.Double] = js.native
 }
 

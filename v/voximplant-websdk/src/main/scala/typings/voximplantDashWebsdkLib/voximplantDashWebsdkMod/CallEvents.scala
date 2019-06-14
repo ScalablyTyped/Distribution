@@ -54,17 +54,17 @@ object CallEvents extends js.Object {
   sealed trait TransferFailed
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.CallEvents
   
-  val Connected: Connected with java.lang.String = js.native
-  val Disconnected: Disconnected with java.lang.String = js.native
-  val Failed: Failed with java.lang.String = js.native
-  val ICETimeout: ICETimeout with java.lang.String = js.native
-  val InfoReceived: InfoReceived with java.lang.String = js.native
-  val MessageReceived: MessageReceived with java.lang.String = js.native
-  val ProgressToneStart: ProgressToneStart with java.lang.String = js.native
-  val ProgressToneStop: ProgressToneStop with java.lang.String = js.native
-  val TransferComplete: TransferComplete with java.lang.String = js.native
-  val TransferFailed: TransferFailed with java.lang.String = js.native
+  /* 0 */ val Connected: Connected with scala.Double = js.native
+  /* 1 */ val Disconnected: Disconnected with scala.Double = js.native
+  /* 2 */ val Failed: Failed with scala.Double = js.native
+  /* 3 */ val ICETimeout: ICETimeout with scala.Double = js.native
+  /* 4 */ val InfoReceived: InfoReceived with scala.Double = js.native
+  /* 5 */ val MessageReceived: MessageReceived with scala.Double = js.native
+  /* 6 */ val ProgressToneStart: ProgressToneStart with scala.Double = js.native
+  /* 7 */ val ProgressToneStop: ProgressToneStop with scala.Double = js.native
+  /* 8 */ val TransferComplete: TransferComplete with scala.Double = js.native
+  /* 9 */ val TransferFailed: TransferFailed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.CallEvents with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.CallEvents with scala.Double] = js.native
 }
 

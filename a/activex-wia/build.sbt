@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-wia"
-version := "2.0-dt-20190213Z-f636c6"
+version := "2.0-dt-20190213Z-7d2489"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

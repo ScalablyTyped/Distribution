@@ -35,10 +35,10 @@ object SelectionMode extends js.Object {
   sealed trait single
     extends winjsLib.WinJSNs.UINs.SelectionMode
   
-  val multi: multi with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val single: single with java.lang.String = js.native
+  /* 2 */ val multi: multi with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val single: single with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.SelectionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.SelectionMode with scala.Double] = js.native
 }
 

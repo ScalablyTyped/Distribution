@@ -107,26 +107,26 @@ object MidiMessageType extends js.Object {
   sealed trait tuneRequest
     extends winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.MidiMessageType
   
-  val activeSensing: activeSensing with java.lang.String = js.native
-  val channelPressure: channelPressure with java.lang.String = js.native
-  val continue: continue with java.lang.String = js.native
-  val controlChange: controlChange with java.lang.String = js.native
-  val midiTimeCode: midiTimeCode with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val noteOff: noteOff with java.lang.String = js.native
-  val noteOn: noteOn with java.lang.String = js.native
-  val pitchBendChange: pitchBendChange with java.lang.String = js.native
-  val polyphonicKeyPressure: polyphonicKeyPressure with java.lang.String = js.native
-  val programChange: programChange with java.lang.String = js.native
-  val songPositionPointer: songPositionPointer with java.lang.String = js.native
-  val songSelect: songSelect with java.lang.String = js.native
-  val start: start with java.lang.String = js.native
-  val stop: stop with java.lang.String = js.native
-  val systemExclusive: systemExclusive with java.lang.String = js.native
-  val systemReset: systemReset with java.lang.String = js.native
-  val timingClock: timingClock with java.lang.String = js.native
-  val tuneRequest: tuneRequest with java.lang.String = js.native
+  /* 17 */ val activeSensing: activeSensing with scala.Double = js.native
+  /* 6 */ val channelPressure: channelPressure with scala.Double = js.native
+  /* 15 */ val continue: continue with scala.Double = js.native
+  /* 4 */ val controlChange: controlChange with scala.Double = js.native
+  /* 9 */ val midiTimeCode: midiTimeCode with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val noteOff: noteOff with scala.Double = js.native
+  /* 2 */ val noteOn: noteOn with scala.Double = js.native
+  /* 7 */ val pitchBendChange: pitchBendChange with scala.Double = js.native
+  /* 3 */ val polyphonicKeyPressure: polyphonicKeyPressure with scala.Double = js.native
+  /* 5 */ val programChange: programChange with scala.Double = js.native
+  /* 10 */ val songPositionPointer: songPositionPointer with scala.Double = js.native
+  /* 11 */ val songSelect: songSelect with scala.Double = js.native
+  /* 14 */ val start: start with scala.Double = js.native
+  /* 16 */ val stop: stop with scala.Double = js.native
+  /* 8 */ val systemExclusive: systemExclusive with scala.Double = js.native
+  /* 18 */ val systemReset: systemReset with scala.Double = js.native
+  /* 13 */ val timingClock: timingClock with scala.Double = js.native
+  /* 12 */ val tuneRequest: tuneRequest with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.MidiMessageType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.MidiMessageType with scala.Double] = js.native
 }
 

@@ -27,11 +27,11 @@ object Role extends js.Object {
   sealed trait view
     extends sharepointLib.SPNs.SharingNs.Role
   
-  val edit: edit with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val owner: owner with java.lang.String = js.native
-  val view: view with java.lang.String = js.native
+  /* 2 */ val edit: edit with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val owner: owner with scala.Double = js.native
+  /* 1 */ val view: view with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SharingNs.Role with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SharingNs.Role with scala.Double] = js.native
 }
 

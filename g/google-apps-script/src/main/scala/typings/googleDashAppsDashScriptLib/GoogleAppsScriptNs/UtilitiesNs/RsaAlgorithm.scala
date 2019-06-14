@@ -19,11 +19,11 @@ object RsaAlgorithm extends js.Object {
   sealed trait RSA_SHA_256
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.RsaAlgorithm
   
-  val RSA_SHA_1: RSA_SHA_1 with java.lang.String = js.native
-  val RSA_SHA_256: RSA_SHA_256 with java.lang.String = js.native
+  /* 0 */ val RSA_SHA_1: RSA_SHA_1 with scala.Double = js.native
+  /* 1 */ val RSA_SHA_256: RSA_SHA_256 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.RsaAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.RsaAlgorithm with scala.Double
   ] = js.native
 }
 

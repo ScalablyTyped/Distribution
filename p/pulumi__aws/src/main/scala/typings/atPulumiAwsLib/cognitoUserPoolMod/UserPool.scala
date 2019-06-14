@@ -46,7 +46,7 @@ class UserPool protected ()
   /**
     * The Email Configuration.
     */
-  val emailConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ReplyToEmailAddress]] = js.native
+  val emailConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EmailSendingAccount]] = js.native
   /**
     * A string representing the email verification message. Conflicts with `verification_message_template` configuration block `email_message` argument.
     */

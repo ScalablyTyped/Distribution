@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait AcDefView extends js.Object
 
+object AcDefView {
+  @scala.inline
+  def acDefViewContinuous: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acDefViewDatasheet: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acDefViewPivotChart: activexDashAccessLib.activexDashAccessLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def acDefViewPivotTable: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def acDefViewSingle: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acDefViewSplitForm: activexDashAccessLib.activexDashAccessLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

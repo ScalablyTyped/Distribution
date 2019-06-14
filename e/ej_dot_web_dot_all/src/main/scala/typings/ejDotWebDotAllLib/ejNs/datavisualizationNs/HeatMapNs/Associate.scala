@@ -26,12 +26,10 @@ object Associate extends js.Object {
   sealed trait Target
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Associate
   
-  val MouseEnter: MouseEnter with java.lang.String = js.native
-  val MouseFollow: MouseFollow with java.lang.String = js.native
-  val Target: Target with java.lang.String = js.native
+  /* 2 */ val MouseEnter: MouseEnter with scala.Double = js.native
+  /* 1 */ val MouseFollow: MouseFollow with scala.Double = js.native
+  /* 0 */ val Target: Target with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Associate with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Associate with scala.Double] = js.native
 }
 

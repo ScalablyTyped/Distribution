@@ -31,13 +31,13 @@ object LayoutOrientations extends js.Object {
   sealed trait TopToBottom
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LayoutOrientations
   
-  val BottomToTop: BottomToTop with java.lang.String = js.native
-  val LeftToRight: LeftToRight with java.lang.String = js.native
-  val RightToLeft: RightToLeft with java.lang.String = js.native
-  val TopToBottom: TopToBottom with java.lang.String = js.native
+  /* 1 */ val BottomToTop: BottomToTop with scala.Double = js.native
+  /* 2 */ val LeftToRight: LeftToRight with scala.Double = js.native
+  /* 3 */ val RightToLeft: RightToLeft with scala.Double = js.native
+  /* 0 */ val TopToBottom: TopToBottom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LayoutOrientations with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LayoutOrientations with scala.Double
   ] = js.native
 }
 

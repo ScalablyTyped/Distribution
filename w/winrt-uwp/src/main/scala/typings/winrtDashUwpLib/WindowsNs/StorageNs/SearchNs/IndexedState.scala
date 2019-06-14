@@ -32,11 +32,11 @@ object IndexedState extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.IndexedState
   
-  val fullyIndexed: fullyIndexed with java.lang.String = js.native
-  val notIndexed: notIndexed with java.lang.String = js.native
-  val partiallyIndexed: partiallyIndexed with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val fullyIndexed: fullyIndexed with scala.Double = js.native
+  /* 1 */ val notIndexed: notIndexed with scala.Double = js.native
+  /* 2 */ val partiallyIndexed: partiallyIndexed with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.IndexedState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.IndexedState with scala.Double] = js.native
 }
 

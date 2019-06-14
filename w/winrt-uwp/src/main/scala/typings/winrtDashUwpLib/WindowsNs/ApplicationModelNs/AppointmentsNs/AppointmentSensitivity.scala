@@ -22,11 +22,11 @@ object AppointmentSensitivity extends js.Object {
   sealed trait public
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentSensitivity
   
-  val `private`: `private` with java.lang.String = js.native
-  val public: public with java.lang.String = js.native
+  /* 1 */ val `private`: `private` with scala.Double = js.native
+  /* 0 */ val public: public with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentSensitivity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentSensitivity with scala.Double
   ] = js.native
 }
 

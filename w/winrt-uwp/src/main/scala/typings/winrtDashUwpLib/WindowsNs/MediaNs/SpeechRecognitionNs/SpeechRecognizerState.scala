@@ -47,16 +47,16 @@ object SpeechRecognizerState extends js.Object {
   sealed trait speechDetected
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognizerState
   
-  val capturing: capturing with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
-  val paused: paused with java.lang.String = js.native
-  val processing: processing with java.lang.String = js.native
-  val soundEnded: soundEnded with java.lang.String = js.native
-  val soundStarted: soundStarted with java.lang.String = js.native
-  val speechDetected: speechDetected with java.lang.String = js.native
+  /* 1 */ val capturing: capturing with scala.Double = js.native
+  /* 0 */ val idle: idle with scala.Double = js.native
+  /* 6 */ val paused: paused with scala.Double = js.native
+  /* 2 */ val processing: processing with scala.Double = js.native
+  /* 4 */ val soundEnded: soundEnded with scala.Double = js.native
+  /* 3 */ val soundStarted: soundStarted with scala.Double = js.native
+  /* 5 */ val speechDetected: speechDetected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognizerState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognizerState with scala.Double
   ] = js.native
 }
 

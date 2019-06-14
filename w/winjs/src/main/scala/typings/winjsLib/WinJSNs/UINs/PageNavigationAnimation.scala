@@ -42,11 +42,11 @@ object PageNavigationAnimation extends js.Object {
   sealed trait turnstile
     extends winjsLib.WinJSNs.UINs.PageNavigationAnimation
   
-  val continuum: continuum with java.lang.String = js.native
-  val enterPage: enterPage with java.lang.String = js.native
-  val slide: slide with java.lang.String = js.native
-  val turnstile: turnstile with java.lang.String = js.native
+  /* 3 */ val continuum: continuum with scala.Double = js.native
+  /* 2 */ val enterPage: enterPage with scala.Double = js.native
+  /* 1 */ val slide: slide with scala.Double = js.native
+  /* 0 */ val turnstile: turnstile with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.PageNavigationAnimation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.PageNavigationAnimation with scala.Double] = js.native
 }
 

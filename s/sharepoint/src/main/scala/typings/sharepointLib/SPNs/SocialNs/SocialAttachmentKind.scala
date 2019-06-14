@@ -23,10 +23,10 @@ object SocialAttachmentKind extends js.Object {
   sealed trait video
     extends sharepointLib.SPNs.SocialNs.SocialAttachmentKind
   
-  val document: document with java.lang.String = js.native
-  val image: image with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 2 */ val document: document with scala.Double = js.native
+  /* 0 */ val image: image with scala.Double = js.native
+  /* 1 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialAttachmentKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialAttachmentKind with scala.Double] = js.native
 }
 

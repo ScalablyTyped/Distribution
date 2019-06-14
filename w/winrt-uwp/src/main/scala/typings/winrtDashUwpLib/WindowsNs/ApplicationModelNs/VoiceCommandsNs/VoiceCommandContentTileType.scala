@@ -52,17 +52,17 @@ object VoiceCommandContentTileType extends js.Object {
   sealed trait titleWithText
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandContentTileType
   
-  val titleOnly: titleOnly with java.lang.String = js.native
-  val titleWith280x140Icon: titleWith280x140Icon with java.lang.String = js.native
-  val titleWith280x140IconAndText: titleWith280x140IconAndText with java.lang.String = js.native
-  val titleWith68x68Icon: titleWith68x68Icon with java.lang.String = js.native
-  val titleWith68x68IconAndText: titleWith68x68IconAndText with java.lang.String = js.native
-  val titleWith68x92Icon: titleWith68x92Icon with java.lang.String = js.native
-  val titleWith68x92IconAndText: titleWith68x92IconAndText with java.lang.String = js.native
-  val titleWithText: titleWithText with java.lang.String = js.native
+  /* 0 */ val titleOnly: titleOnly with scala.Double = js.native
+  /* 6 */ val titleWith280x140Icon: titleWith280x140Icon with scala.Double = js.native
+  /* 7 */ val titleWith280x140IconAndText: titleWith280x140IconAndText with scala.Double = js.native
+  /* 2 */ val titleWith68x68Icon: titleWith68x68Icon with scala.Double = js.native
+  /* 3 */ val titleWith68x68IconAndText: titleWith68x68IconAndText with scala.Double = js.native
+  /* 4 */ val titleWith68x92Icon: titleWith68x92Icon with scala.Double = js.native
+  /* 5 */ val titleWith68x92IconAndText: titleWith68x92IconAndText with scala.Double = js.native
+  /* 1 */ val titleWithText: titleWithText with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandContentTileType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandContentTileType with scala.Double
   ] = js.native
 }
 

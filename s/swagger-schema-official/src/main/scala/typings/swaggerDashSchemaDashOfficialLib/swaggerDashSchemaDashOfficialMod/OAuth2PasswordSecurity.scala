@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OAuth2PasswordSecurity
-  extends BaseOAuthSecuirty
+  extends BaseOAuthSecurity
      with Security {
   @JSName("flow")
   var flow_OAuth2PasswordSecurity: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.password
-  var scopes: js.UndefOr[js.Array[OAuthScope]] = js.undefined
   var tokenUrl: java.lang.String
 }
 
@@ -21,7 +20,7 @@ object OAuth2PasswordSecurity {
     tokenUrl: java.lang.String,
     `type`: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.oauth2,
     description: java.lang.String = null,
-    scopes: js.Array[OAuthScope] = null
+    scopes: OAuthScope = null
   ): OAuth2PasswordSecurity = {
     val __obj = js.Dynamic.literal(flow = flow, tokenUrl = tokenUrl)
     __obj.updateDynamic("type")(`type`)

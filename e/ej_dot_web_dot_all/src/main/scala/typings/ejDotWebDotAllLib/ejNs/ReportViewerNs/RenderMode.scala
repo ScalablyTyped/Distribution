@@ -26,10 +26,10 @@ object RenderMode extends js.Object {
   sealed trait Mobile
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.RenderMode
   
-  val Default: Default with java.lang.String = js.native
-  val Desktop: Desktop with java.lang.String = js.native
-  val Mobile: Mobile with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val Desktop: Desktop with scala.Double = js.native
+  /* 1 */ val Mobile: Mobile with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.RenderMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.RenderMode with scala.Double] = js.native
 }
 

@@ -19,9 +19,9 @@ object ReferenceFrame extends js.Object {
   sealed trait INERTIAL
     extends cesiumLib.cesiumMod.ReferenceFrame
   
-  val FIXED: FIXED with java.lang.String = js.native
-  val INERTIAL: INERTIAL with java.lang.String = js.native
+  /* 0 */ val FIXED: FIXED with scala.Double = js.native
+  /* 1 */ val INERTIAL: INERTIAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.ReferenceFrame with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.ReferenceFrame with scala.Double] = js.native
 }
 

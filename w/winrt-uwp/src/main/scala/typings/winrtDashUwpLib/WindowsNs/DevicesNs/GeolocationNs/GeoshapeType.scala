@@ -32,13 +32,11 @@ object GeoshapeType extends js.Object {
   sealed trait geopoint
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeoshapeType
   
-  val geoboundingBox: geoboundingBox with java.lang.String = js.native
-  val geocircle: geocircle with java.lang.String = js.native
-  val geopath: geopath with java.lang.String = js.native
-  val geopoint: geopoint with java.lang.String = js.native
+  /* 3 */ val geoboundingBox: geoboundingBox with scala.Double = js.native
+  /* 1 */ val geocircle: geocircle with scala.Double = js.native
+  /* 2 */ val geopath: geopath with scala.Double = js.native
+  /* 0 */ val geopoint: geopoint with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeoshapeType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeoshapeType with scala.Double] = js.native
 }
 

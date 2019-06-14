@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlPlacement extends js.Object
 
+object XlPlacement {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlFreeFloating: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlMove: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlMoveAndSize: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+}
+

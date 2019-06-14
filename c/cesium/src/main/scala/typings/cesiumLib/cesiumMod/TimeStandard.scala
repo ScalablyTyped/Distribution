@@ -19,9 +19,9 @@ object TimeStandard extends js.Object {
   sealed trait UTC
     extends cesiumLib.cesiumMod.TimeStandard
   
-  val TAI: TAI with java.lang.String = js.native
-  val UTC: UTC with java.lang.String = js.native
+  /* 1 */ val TAI: TAI with scala.Double = js.native
+  /* 0 */ val UTC: UTC with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.TimeStandard with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.TimeStandard with scala.Double] = js.native
 }
 

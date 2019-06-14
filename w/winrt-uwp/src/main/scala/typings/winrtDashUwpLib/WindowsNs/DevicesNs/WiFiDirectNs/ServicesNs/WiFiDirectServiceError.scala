@@ -37,14 +37,14 @@ object WiFiDirectServiceError extends js.Object {
   sealed trait unsupportedHardware
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceError
   
-  val noHardware: noHardware with java.lang.String = js.native
-  val radioNotAvailable: radioNotAvailable with java.lang.String = js.native
-  val resourceInUse: resourceInUse with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unsupportedHardware: unsupportedHardware with java.lang.String = js.native
+  /* 4 */ val noHardware: noHardware with scala.Double = js.native
+  /* 1 */ val radioNotAvailable: radioNotAvailable with scala.Double = js.native
+  /* 2 */ val resourceInUse: resourceInUse with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val unsupportedHardware: unsupportedHardware with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceError with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceError with scala.Double
   ] = js.native
 }
 

@@ -22,13 +22,23 @@ trait GetThreatIntelSetResponse extends js.Object {
     * The status of threatIntelSet file uploaded.
     */
   var Status: ThreatIntelSetStatus
+  /**
+    * The tags of the Threat List resource.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 
 object GetThreatIntelSetResponse {
   @scala.inline
-  def apply(Format: ThreatIntelSetFormat, Location: Location, Name: Name, Status: ThreatIntelSetStatus): GetThreatIntelSetResponse = {
+  def apply(
+    Format: ThreatIntelSetFormat,
+    Location: Location,
+    Name: Name,
+    Status: ThreatIntelSetStatus,
+    Tags: TagMap = null
+  ): GetThreatIntelSetResponse = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], Location = Location, Name = Name, Status = Status.asInstanceOf[js.Any])
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[GetThreatIntelSetResponse]
   }
 }

@@ -51,15 +51,15 @@ object SummaryType extends js.Object {
   sealed trait TrueCount
     extends ejDotWebDotAllLib.ejNs.GridNs.SummaryType
   
-  val Average: Average with java.lang.String = js.native
-  val Count: Count with java.lang.String = js.native
-  val Custom: Custom with java.lang.String = js.native
-  val FalseCount: FalseCount with java.lang.String = js.native
-  val Maximum: Maximum with java.lang.String = js.native
-  val Minimum: Minimum with java.lang.String = js.native
-  val Sum: Sum with java.lang.String = js.native
-  val TrueCount: TrueCount with java.lang.String = js.native
+  /* 0 */ val Average: Average with scala.Double = js.native
+  /* 3 */ val Count: Count with scala.Double = js.native
+  /* 5 */ val Custom: Custom with scala.Double = js.native
+  /* 7 */ val FalseCount: FalseCount with scala.Double = js.native
+  /* 2 */ val Maximum: Maximum with scala.Double = js.native
+  /* 1 */ val Minimum: Minimum with scala.Double = js.native
+  /* 4 */ val Sum: Sum with scala.Double = js.native
+  /* 6 */ val TrueCount: TrueCount with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.SummaryType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.SummaryType with scala.Double] = js.native
 }
 

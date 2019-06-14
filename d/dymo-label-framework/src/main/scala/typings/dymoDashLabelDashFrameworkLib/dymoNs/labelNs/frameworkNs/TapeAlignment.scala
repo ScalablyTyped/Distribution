@@ -27,12 +27,12 @@ object TapeAlignment extends js.Object {
   sealed trait Right
     extends dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.TapeAlignment
   
-  val Center: Center with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 0 */ val Center: Center with scala.Double = js.native
+  /* 1 */ val Left: Left with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.TapeAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.TapeAlignment with scala.Double
   ] = js.native
 }
 

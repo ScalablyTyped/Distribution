@@ -22,9 +22,9 @@ object MenuButtonMode extends js.Object {
   sealed trait Split
     extends openui5Lib.sapNs.mNs.MenuButtonMode
   
-  val Regular: Regular with java.lang.String = js.native
-  val Split: Split with java.lang.String = js.native
+  /* 0 */ val Regular: Regular with scala.Double = js.native
+  /* 1 */ val Split: Split with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.MenuButtonMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.MenuButtonMode with scala.Double] = js.native
 }
 

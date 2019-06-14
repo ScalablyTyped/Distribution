@@ -37,14 +37,14 @@ object SignatureValidationResult extends js.Object {
   sealed trait success
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.SignatureValidationResult
   
-  val badMessage: badMessage with java.lang.String = js.native
-  val invalidParameter: invalidParameter with java.lang.String = js.native
-  val invalidSignature: invalidSignature with java.lang.String = js.native
-  val otherErrors: otherErrors with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 2 */ val badMessage: badMessage with scala.Double = js.native
+  /* 1 */ val invalidParameter: invalidParameter with scala.Double = js.native
+  /* 3 */ val invalidSignature: invalidSignature with scala.Double = js.native
+  /* 4 */ val otherErrors: otherErrors with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.SignatureValidationResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.SignatureValidationResult with scala.Double
   ] = js.native
 }
 

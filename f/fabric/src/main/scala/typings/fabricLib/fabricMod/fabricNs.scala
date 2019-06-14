@@ -271,9 +271,10 @@ object fabricNs extends js.Object {
     def this(options: fabricLib.fabricDashImplMod.WebglFilterBackendOptions) = this()
   }
   
-  var filterBackend: fabricLib.fabricDashImplMod.FilterBackend = js.native
+  var filterBackend: js.UndefOr[fabricLib.fabricDashImplMod.FilterBackend] = js.native
   val isLikelyNode: scala.Boolean = js.native
   val isTouchSupported: scala.Boolean = js.native
+  var textureSize: scala.Double = js.native
   val util: fabricLib.fabricDashImplMod.IUtil = js.native
   val version: java.lang.String = js.native
   def createCanvasForNode(width: scala.Double, height: scala.Double): fabricLib.fabricDashImplMod.Canvas = js.native

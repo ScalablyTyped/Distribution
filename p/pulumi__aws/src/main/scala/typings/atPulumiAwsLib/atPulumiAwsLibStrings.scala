@@ -20,6 +20,14 @@ object atPulumiAwsLibStrings {
   sealed trait `2012-10-17` extends js.Object
   
   @js.native
+  sealed trait A
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
+  sealed trait AAAA
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
   sealed trait ALL
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
@@ -42,8 +50,16 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
+  sealed trait CAA
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
   sealed trait CHOWN
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
+  
+  @js.native
+  sealed trait CNAME
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
   
   @js.native
   sealed trait CompleteMultipartUpload extends js.Object
@@ -154,6 +170,14 @@ object atPulumiAwsLibStrings {
   sealed trait MODIFY extends js.Object
   
   @js.native
+  sealed trait MX
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
+  sealed trait NAPTR
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
   sealed trait NET_ADMIN
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
@@ -168,6 +192,14 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait NET_RAW
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
+  
+  @js.native
+  sealed trait NS
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
+  sealed trait PTR
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
   
   @js.native
   sealed trait Post extends js.Object
@@ -197,6 +229,18 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait SETUID
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
+  
+  @js.native
+  sealed trait SOA
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
+  sealed trait SPF
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
+  sealed trait SRV
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
   
   @js.native
   sealed trait `SUSE Linux`
@@ -266,6 +310,10 @@ object atPulumiAwsLibStrings {
   sealed trait TRIM_HORIZON extends js.Object
   
   @js.native
+  sealed trait TXT
+    extends atPulumiAwsLib.route53RecordTypeMod.RecordType
+  
+  @js.native
   sealed trait WAKE_ALARM
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
@@ -310,6 +358,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
+  sealed trait all
+    extends atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
+  
+  @js.native
   sealed trait `ap-northeast-1`
     extends atPulumiAwsLib.regionMod.Region
   
@@ -328,6 +380,22 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait `ap-southeast-2`
     extends atPulumiAwsLib.regionMod.Region
+  
+  @js.native
+  sealed trait application
+    extends atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType
+  
+  @js.native
+  sealed trait aurora
+    extends atPulumiAwsLib.rdsEngineTypeMod.EngineType
+  
+  @js.native
+  sealed trait `aurora-mysql`
+    extends atPulumiAwsLib.rdsEngineTypeMod.EngineType
+  
+  @js.native
+  sealed trait `aurora-postgresql`
+    extends atPulumiAwsLib.rdsEngineTypeMod.EngineType
   
   @js.native
   sealed trait `authenticated-read`
@@ -544,6 +612,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
+  sealed trait dualstack
+    extends atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType
+  
+  @js.native
   sealed trait `eu-central-1`
     extends atPulumiAwsLib.regionMod.Region
   
@@ -604,6 +676,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.LogDriver
   
   @js.native
+  sealed trait global
+    extends atPulumiAwsLib.rdsEngineModeMod.EngineMode
+  
+  @js.native
   sealed trait go1DOTx
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
@@ -654,6 +730,14 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait i3DOTxlarge
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait icmp
+    extends atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
+  
+  @js.native
+  sealed trait ipv4
+    extends atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType
   
   @js.native
   sealed trait java8
@@ -796,6 +880,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
+  sealed trait network
+    extends atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType
+  
+  @js.native
   sealed trait nice
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
@@ -860,12 +948,20 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
+  sealed trait parallelquery
+    extends atPulumiAwsLib.rdsEngineModeMod.EngineMode
+  
+  @js.native
   sealed trait `private`
     extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
   
   @js.native
   sealed trait provided
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait provisioned
+    extends atPulumiAwsLib.rdsEngineModeMod.EngineMode
   
   @js.native
   sealed trait `public-read`
@@ -1016,6 +1112,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.regionMod.Region
   
   @js.native
+  sealed trait serverless
+    extends atPulumiAwsLib.rdsEngineModeMod.EngineMode
+  
+  @js.native
   sealed trait sigpending
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
@@ -1094,6 +1194,7 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait tcp
     extends atPulumiAwsLib.ecsContainerMod.Protocol
+       with atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
   
   @js.native
   sealed trait `u-12tb1DOTmetal`
@@ -1110,6 +1211,7 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait udp
     extends atPulumiAwsLib.ecsContainerMod.Protocol
+       with atPulumiAwsLib.ec2ProtocolTypeMod.ProtocolType
   
   @js.native
   sealed trait `us-east-1`
@@ -1192,6 +1294,10 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def `2012-10-17`: `2012-10-17` = "2012-10-17".asInstanceOf[`2012-10-17`]
   @scala.inline
+  def A: A = "A".asInstanceOf[A]
+  @scala.inline
+  def AAAA: AAAA = "AAAA".asInstanceOf[AAAA]
+  @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   @scala.inline
   def AT_TIMESTAMP: AT_TIMESTAMP = "AT_TIMESTAMP".asInstanceOf[AT_TIMESTAMP]
@@ -1204,7 +1310,11 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def BLOCK_SUSPEND: BLOCK_SUSPEND = "BLOCK_SUSPEND".asInstanceOf[BLOCK_SUSPEND]
   @scala.inline
+  def CAA: CAA = "CAA".asInstanceOf[CAA]
+  @scala.inline
   def CHOWN: CHOWN = "CHOWN".asInstanceOf[CHOWN]
+  @scala.inline
+  def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
   @scala.inline
   def CompleteMultipartUpload: CompleteMultipartUpload = "CompleteMultipartUpload".asInstanceOf[CompleteMultipartUpload]
   @scala.inline
@@ -1264,6 +1374,10 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def MODIFY: MODIFY = "MODIFY".asInstanceOf[MODIFY]
   @scala.inline
+  def MX: MX = "MX".asInstanceOf[MX]
+  @scala.inline
+  def NAPTR: NAPTR = "NAPTR".asInstanceOf[NAPTR]
+  @scala.inline
   def NET_ADMIN: NET_ADMIN = "NET_ADMIN".asInstanceOf[NET_ADMIN]
   @scala.inline
   def NET_BIND_SERVICE: NET_BIND_SERVICE = "NET_BIND_SERVICE".asInstanceOf[NET_BIND_SERVICE]
@@ -1271,6 +1385,10 @@ object atPulumiAwsLibStrings {
   def NET_BROADCAST: NET_BROADCAST = "NET_BROADCAST".asInstanceOf[NET_BROADCAST]
   @scala.inline
   def NET_RAW: NET_RAW = "NET_RAW".asInstanceOf[NET_RAW]
+  @scala.inline
+  def NS: NS = "NS".asInstanceOf[NS]
+  @scala.inline
+  def PTR: PTR = "PTR".asInstanceOf[PTR]
   @scala.inline
   def Post: Post = "Post".asInstanceOf[Post]
   @scala.inline
@@ -1287,6 +1405,12 @@ object atPulumiAwsLibStrings {
   def SETPCAP: SETPCAP = "SETPCAP".asInstanceOf[SETPCAP]
   @scala.inline
   def SETUID: SETUID = "SETUID".asInstanceOf[SETUID]
+  @scala.inline
+  def SOA: SOA = "SOA".asInstanceOf[SOA]
+  @scala.inline
+  def SPF: SPF = "SPF".asInstanceOf[SPF]
+  @scala.inline
+  def SRV: SRV = "SRV".asInstanceOf[SRV]
   @scala.inline
   def `SUSE Linux`: `SUSE Linux` = "SUSE Linux".asInstanceOf[`SUSE Linux`]
   @scala.inline
@@ -1322,6 +1446,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def TRIM_HORIZON: TRIM_HORIZON = "TRIM_HORIZON".asInstanceOf[TRIM_HORIZON]
   @scala.inline
+  def TXT: TXT = "TXT".asInstanceOf[TXT]
+  @scala.inline
   def WAKE_ALARM: WAKE_ALARM = "WAKE_ALARM".asInstanceOf[WAKE_ALARM]
   @scala.inline
   def Windows: Windows = "Windows".asInstanceOf[Windows]
@@ -1344,6 +1470,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def a1DOTxlarge: a1DOTxlarge = "a1.xlarge".asInstanceOf[a1DOTxlarge]
   @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
   @scala.inline
   def `ap-northeast-2`: `ap-northeast-2` = "ap-northeast-2".asInstanceOf[`ap-northeast-2`]
@@ -1353,6 +1481,14 @@ object atPulumiAwsLibStrings {
   def `ap-southeast-1`: `ap-southeast-1` = "ap-southeast-1".asInstanceOf[`ap-southeast-1`]
   @scala.inline
   def `ap-southeast-2`: `ap-southeast-2` = "ap-southeast-2".asInstanceOf[`ap-southeast-2`]
+  @scala.inline
+  def application: application = "application".asInstanceOf[application]
+  @scala.inline
+  def aurora: aurora = "aurora".asInstanceOf[aurora]
+  @scala.inline
+  def `aurora-mysql`: `aurora-mysql` = "aurora-mysql".asInstanceOf[`aurora-mysql`]
+  @scala.inline
+  def `aurora-postgresql`: `aurora-postgresql` = "aurora-postgresql".asInstanceOf[`aurora-postgresql`]
   @scala.inline
   def `authenticated-read`: `authenticated-read` = "authenticated-read".asInstanceOf[`authenticated-read`]
   @scala.inline
@@ -1462,6 +1598,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def dotnetcore2DOT1: dotnetcore2DOT1 = "dotnetcore2.1".asInstanceOf[dotnetcore2DOT1]
   @scala.inline
+  def dualstack: dualstack = "dualstack".asInstanceOf[dualstack]
+  @scala.inline
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
   @scala.inline
   def `eu-west-1`: `eu-west-1` = "eu-west-1".asInstanceOf[`eu-west-1`]
@@ -1492,6 +1630,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def gelf: gelf = "gelf".asInstanceOf[gelf]
   @scala.inline
+  def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def go1DOTx: go1DOTx = "go1.x".asInstanceOf[go1DOTx]
   @scala.inline
   def h1DOT16xlarge: h1DOT16xlarge = "h1.16xlarge".asInstanceOf[h1DOT16xlarge]
@@ -1517,6 +1657,10 @@ object atPulumiAwsLibStrings {
   def i3DOTmetal: i3DOTmetal = "i3.metal".asInstanceOf[i3DOTmetal]
   @scala.inline
   def i3DOTxlarge: i3DOTxlarge = "i3.xlarge".asInstanceOf[i3DOTxlarge]
+  @scala.inline
+  def icmp: icmp = "icmp".asInstanceOf[icmp]
+  @scala.inline
+  def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
   @scala.inline
   def java8: java8 = "java8".asInstanceOf[java8]
   @scala.inline
@@ -1588,6 +1732,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def msgqueue: msgqueue = "msgqueue".asInstanceOf[msgqueue]
   @scala.inline
+  def network: network = "network".asInstanceOf[network]
+  @scala.inline
   def nice: nice = "nice".asInstanceOf[nice]
   @scala.inline
   def nodejs: nodejs = "nodejs".asInstanceOf[nodejs]
@@ -1620,9 +1766,13 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def p3dnDOT24xlarge: p3dnDOT24xlarge = "p3dn.24xlarge".asInstanceOf[p3dnDOT24xlarge]
   @scala.inline
+  def parallelquery: parallelquery = "parallelquery".asInstanceOf[parallelquery]
+  @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline
   def provided: provided = "provided".asInstanceOf[provided]
+  @scala.inline
+  def provisioned: provisioned = "provisioned".asInstanceOf[provisioned]
   @scala.inline
   def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
   @scala.inline
@@ -1697,6 +1847,8 @@ object atPulumiAwsLibStrings {
   def rttime: rttime = "rttime".asInstanceOf[rttime]
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
+  @scala.inline
+  def serverless: serverless = "serverless".asInstanceOf[serverless]
   @scala.inline
   def sigpending: sigpending = "sigpending".asInstanceOf[sigpending]
   @scala.inline

@@ -22,11 +22,11 @@ object MediaCaptureThermalStatus extends js.Object {
   sealed trait overheated
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCaptureThermalStatus
   
-  val normal: normal with java.lang.String = js.native
-  val overheated: overheated with java.lang.String = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val overheated: overheated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCaptureThermalStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCaptureThermalStatus with scala.Double
   ] = js.native
 }
 

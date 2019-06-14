@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MFViewFlag extends js.Object
 
+object MFViewFlag {
+  @scala.inline
+  def Materialized: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def sNone: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+}
+

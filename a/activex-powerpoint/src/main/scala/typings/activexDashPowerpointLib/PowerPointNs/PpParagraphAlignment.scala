@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait PpParagraphAlignment extends js.Object
 
+object PpParagraphAlignment {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ppAlignCenter: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ppAlignDistribute: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def ppAlignJustify: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def ppAlignJustifyLow: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def ppAlignLeft: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def ppAlignRight: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def ppAlignThaiDistribute: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def ppAlignmentMixed: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-2` = this.cast(-2)
+}
+

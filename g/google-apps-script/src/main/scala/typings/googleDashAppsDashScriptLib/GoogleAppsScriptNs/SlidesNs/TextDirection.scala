@@ -23,12 +23,12 @@ object TextDirection extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.TextDirection
   
-  val LEFT_TO_RIGHT: LEFT_TO_RIGHT with java.lang.String = js.native
-  val RIGHT_TO_LEFT: RIGHT_TO_LEFT with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 1 */ val LEFT_TO_RIGHT: LEFT_TO_RIGHT with scala.Double = js.native
+  /* 2 */ val RIGHT_TO_LEFT: RIGHT_TO_LEFT with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.TextDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.TextDirection with scala.Double
   ] = js.native
 }
 

@@ -21,9 +21,9 @@ object DefaultView extends js.Object {
   sealed trait Grid
     extends ejDotWebDotAllLib.ejNs.PivotClientNs.DefaultView
   
-  val Chart: Chart with java.lang.String = js.native
-  val Grid: Grid with java.lang.String = js.native
+  /* 0 */ val Chart: Chart with scala.Double = js.native
+  /* 1 */ val Grid: Grid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotClientNs.DefaultView with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotClientNs.DefaultView with scala.Double] = js.native
 }
 

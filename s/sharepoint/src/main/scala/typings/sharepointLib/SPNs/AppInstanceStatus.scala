@@ -51,17 +51,17 @@ object AppInstanceStatus extends js.Object {
   sealed trait upgrading
     extends sharepointLib.SPNs.AppInstanceStatus
   
-  val canceling: canceling with java.lang.String = js.native
-  val disabled: disabled with java.lang.String = js.native
-  val disabling: disabling with java.lang.String = js.native
-  val initialized: initialized with java.lang.String = js.native
-  val installed: installed with java.lang.String = js.native
-  val installing: installing with java.lang.String = js.native
-  val invalidStatus: invalidStatus with java.lang.String = js.native
-  val uninstalling: uninstalling with java.lang.String = js.native
-  val upgradeCanceling: upgradeCanceling with java.lang.String = js.native
-  val upgrading: upgrading with java.lang.String = js.native
+  /* 2 */ val canceling: canceling with scala.Double = js.native
+  /* 9 */ val disabled: disabled with scala.Double = js.native
+  /* 8 */ val disabling: disabling with scala.Double = js.native
+  /* 6 */ val initialized: initialized with scala.Double = js.native
+  /* 4 */ val installed: installed with scala.Double = js.native
+  /* 1 */ val installing: installing with scala.Double = js.native
+  /* 0 */ val invalidStatus: invalidStatus with scala.Double = js.native
+  /* 3 */ val uninstalling: uninstalling with scala.Double = js.native
+  /* 7 */ val upgradeCanceling: upgradeCanceling with scala.Double = js.native
+  /* 5 */ val upgrading: upgrading with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.AppInstanceStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.AppInstanceStatus with scala.Double] = js.native
 }
 

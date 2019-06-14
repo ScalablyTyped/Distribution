@@ -21,11 +21,9 @@ object Trigger extends js.Object {
   sealed trait Hover
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Trigger
   
-  val Click: Click with java.lang.String = js.native
-  val Hover: Hover with java.lang.String = js.native
+  /* 1 */ val Click: Click with scala.Double = js.native
+  /* 0 */ val Hover: Hover with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Trigger with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Trigger with scala.Double] = js.native
 }
 

@@ -36,14 +36,14 @@ object CryptographicPublicKeyBlobType extends js.Object {
   sealed trait x509SubjectPublicKeyInfo
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPublicKeyBlobType
   
-  val bcryptEccFullPublicKey: bcryptEccFullPublicKey with java.lang.String = js.native
-  val bcryptPublicKey: bcryptPublicKey with java.lang.String = js.native
-  val capi1PublicKey: capi1PublicKey with java.lang.String = js.native
-  val pkcs1RsaPublicKey: pkcs1RsaPublicKey with java.lang.String = js.native
-  val x509SubjectPublicKeyInfo: x509SubjectPublicKeyInfo with java.lang.String = js.native
+  /* 4 */ val bcryptEccFullPublicKey: bcryptEccFullPublicKey with scala.Double = js.native
+  /* 2 */ val bcryptPublicKey: bcryptPublicKey with scala.Double = js.native
+  /* 3 */ val capi1PublicKey: capi1PublicKey with scala.Double = js.native
+  /* 1 */ val pkcs1RsaPublicKey: pkcs1RsaPublicKey with scala.Double = js.native
+  /* 0 */ val x509SubjectPublicKeyInfo: x509SubjectPublicKeyInfo with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPublicKeyBlobType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPublicKeyBlobType with scala.Double
   ] = js.native
 }
 

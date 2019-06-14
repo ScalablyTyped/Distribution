@@ -37,14 +37,14 @@ object AudioDeviceNodeCreationStatus extends js.Object {
   sealed trait unknownFailure
     extends winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.AudioDeviceNodeCreationStatus
   
-  val accessDenied: accessDenied with java.lang.String = js.native
-  val deviceNotAvailable: deviceNotAvailable with java.lang.String = js.native
-  val formatNotSupported: formatNotSupported with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownFailure: unknownFailure with java.lang.String = js.native
+  /* 4 */ val accessDenied: accessDenied with scala.Double = js.native
+  /* 1 */ val deviceNotAvailable: deviceNotAvailable with scala.Double = js.native
+  /* 2 */ val formatNotSupported: formatNotSupported with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val unknownFailure: unknownFailure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.AudioDeviceNodeCreationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.AudioNs.AudioDeviceNodeCreationStatus with scala.Double
   ] = js.native
 }
 

@@ -47,16 +47,16 @@ object ServiceDeviceType extends js.Object {
   sealed trait tasksService
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PortableNs.ServiceDeviceType
   
-  val calendarService: calendarService with java.lang.String = js.native
-  val contactsService: contactsService with java.lang.String = js.native
-  val deviceStatusService: deviceStatusService with java.lang.String = js.native
-  val notesService: notesService with java.lang.String = js.native
-  val ringtonesService: ringtonesService with java.lang.String = js.native
-  val smsService: smsService with java.lang.String = js.native
-  val tasksService: tasksService with java.lang.String = js.native
+  /* 0 */ val calendarService: calendarService with scala.Double = js.native
+  /* 1 */ val contactsService: contactsService with scala.Double = js.native
+  /* 2 */ val deviceStatusService: deviceStatusService with scala.Double = js.native
+  /* 3 */ val notesService: notesService with scala.Double = js.native
+  /* 4 */ val ringtonesService: ringtonesService with scala.Double = js.native
+  /* 5 */ val smsService: smsService with scala.Double = js.native
+  /* 6 */ val tasksService: tasksService with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PortableNs.ServiceDeviceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PortableNs.ServiceDeviceType with scala.Double
   ] = js.native
 }
 

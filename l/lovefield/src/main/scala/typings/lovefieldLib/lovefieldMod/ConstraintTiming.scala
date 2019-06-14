@@ -19,9 +19,9 @@ object ConstraintTiming extends js.Object {
   sealed trait IMMEDIATE
     extends lovefieldLib.lovefieldMod.ConstraintTiming
   
-  val DEFERRABLE: DEFERRABLE with java.lang.String = js.native
-  val IMMEDIATE: IMMEDIATE with java.lang.String = js.native
+  /* 1 */ val DEFERRABLE: DEFERRABLE with scala.Double = js.native
+  /* 0 */ val IMMEDIATE: IMMEDIATE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[lovefieldLib.lovefieldMod.ConstraintTiming with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[lovefieldLib.lovefieldMod.ConstraintTiming with scala.Double] = js.native
 }
 

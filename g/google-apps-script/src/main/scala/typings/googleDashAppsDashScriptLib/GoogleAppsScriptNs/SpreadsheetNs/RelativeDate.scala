@@ -35,15 +35,15 @@ object RelativeDate extends js.Object {
   sealed trait YESTERDAY
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.RelativeDate
   
-  val PAST_MONTH: PAST_MONTH with java.lang.String = js.native
-  val PAST_WEEK: PAST_WEEK with java.lang.String = js.native
-  val PAST_YEAR: PAST_YEAR with java.lang.String = js.native
-  val TODAY: TODAY with java.lang.String = js.native
-  val TOMORROW: TOMORROW with java.lang.String = js.native
-  val YESTERDAY: YESTERDAY with java.lang.String = js.native
+  /* 4 */ val PAST_MONTH: PAST_MONTH with scala.Double = js.native
+  /* 3 */ val PAST_WEEK: PAST_WEEK with scala.Double = js.native
+  /* 5 */ val PAST_YEAR: PAST_YEAR with scala.Double = js.native
+  /* 0 */ val TODAY: TODAY with scala.Double = js.native
+  /* 1 */ val TOMORROW: TOMORROW with scala.Double = js.native
+  /* 2 */ val YESTERDAY: YESTERDAY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.RelativeDate with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.RelativeDate with scala.Double
   ] = js.native
 }
 

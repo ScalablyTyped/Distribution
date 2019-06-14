@@ -22,11 +22,11 @@ object WebTokenRequestPromptType extends js.Object {
   sealed trait forceAuthentication
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenRequestPromptType
   
-  val default: default with java.lang.String = js.native
-  val forceAuthentication: forceAuthentication with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val forceAuthentication: forceAuthentication with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenRequestPromptType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenRequestPromptType with scala.Double
   ] = js.native
 }
 

@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait FAX_DEVICE_RECEIVE_MODE_ENUM extends js.Object
 
+object FAX_DEVICE_RECEIVE_MODE_ENUM {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fdrmAUTO_ANSWER: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def fdrmMANUAL_ANSWER: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def fdrmNO_ANSWER: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`0` = this.cast(0)
+}
+

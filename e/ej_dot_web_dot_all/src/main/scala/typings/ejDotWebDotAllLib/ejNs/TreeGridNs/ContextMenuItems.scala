@@ -26,10 +26,10 @@ object ContextMenuItems extends js.Object {
   sealed trait Edit
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.ContextMenuItems
   
-  val Add: Add with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Edit: Edit with java.lang.String = js.native
+  /* 0 */ val Add: Add with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 1 */ val Edit: Edit with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ContextMenuItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.ContextMenuItems with scala.Double] = js.native
 }
 

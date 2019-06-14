@@ -22,9 +22,9 @@ object TimedTextWrapping extends js.Object {
   sealed trait wrap
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWrapping
   
-  val noWrap: noWrap with java.lang.String = js.native
-  val wrap: wrap with java.lang.String = js.native
+  /* 0 */ val noWrap: noWrap with scala.Double = js.native
+  /* 1 */ val wrap: wrap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWrapping with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextWrapping with scala.Double] = js.native
 }
 

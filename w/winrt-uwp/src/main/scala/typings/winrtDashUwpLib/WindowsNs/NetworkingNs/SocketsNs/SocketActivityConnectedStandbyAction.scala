@@ -22,11 +22,11 @@ object SocketActivityConnectedStandbyAction extends js.Object {
   sealed trait wake
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityConnectedStandbyAction
   
-  val doNotWake: doNotWake with java.lang.String = js.native
-  val wake: wake with java.lang.String = js.native
+  /* 0 */ val doNotWake: doNotWake with scala.Double = js.native
+  /* 1 */ val wake: wake with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityConnectedStandbyAction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketActivityConnectedStandbyAction with scala.Double
   ] = js.native
 }
 

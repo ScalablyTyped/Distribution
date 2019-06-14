@@ -55,13 +55,6 @@ object SyncNs extends js.Object {
   class Session ()
     extends realmLib.RealmNs.SyncNs.Session
   
-  /* Rewritten from type alias, can be one of: 
-    - realmLib.realmLibStrings.`after-upload`
-    - realmLib.realmLibStrings.immediately
-    - realmLib.realmLibStrings.never
-  */
-  trait SessionStopPolicy extends js.Object
-  
   /**
     * Subscription
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Subscription.html }
@@ -155,28 +148,28 @@ object SyncNs extends js.Object {
   
   @js.native
   object NumericLogLevel extends js.Object {
-    val All: realmLib.RealmNs.SyncNs.NumericLogLevel.All with java.lang.String = js.native
-    val Debug: realmLib.RealmNs.SyncNs.NumericLogLevel.Debug with java.lang.String = js.native
-    val Detail: realmLib.RealmNs.SyncNs.NumericLogLevel.Detail with java.lang.String = js.native
-    val Error: realmLib.RealmNs.SyncNs.NumericLogLevel.Error with java.lang.String = js.native
-    val Fatal: realmLib.RealmNs.SyncNs.NumericLogLevel.Fatal with java.lang.String = js.native
-    val Info: realmLib.RealmNs.SyncNs.NumericLogLevel.Info with java.lang.String = js.native
-    val Off: realmLib.RealmNs.SyncNs.NumericLogLevel.Off with java.lang.String = js.native
-    val Trace: realmLib.RealmNs.SyncNs.NumericLogLevel.Trace with java.lang.String = js.native
-    val Warn: realmLib.RealmNs.SyncNs.NumericLogLevel.Warn with java.lang.String = js.native
+    /* 0 */ val All: realmLib.RealmNs.SyncNs.NumericLogLevel.All with scala.Double = js.native
+    /* 2 */ val Debug: realmLib.RealmNs.SyncNs.NumericLogLevel.Debug with scala.Double = js.native
+    /* 3 */ val Detail: realmLib.RealmNs.SyncNs.NumericLogLevel.Detail with scala.Double = js.native
+    /* 6 */ val Error: realmLib.RealmNs.SyncNs.NumericLogLevel.Error with scala.Double = js.native
+    /* 7 */ val Fatal: realmLib.RealmNs.SyncNs.NumericLogLevel.Fatal with scala.Double = js.native
+    /* 4 */ val Info: realmLib.RealmNs.SyncNs.NumericLogLevel.Info with scala.Double = js.native
+    /* 8 */ val Off: realmLib.RealmNs.SyncNs.NumericLogLevel.Off with scala.Double = js.native
+    /* 1 */ val Trace: realmLib.RealmNs.SyncNs.NumericLogLevel.Trace with scala.Double = js.native
+    /* 5 */ val Warn: realmLib.RealmNs.SyncNs.NumericLogLevel.Warn with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.NumericLogLevel with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[realmLib.RealmNs.SyncNs.NumericLogLevel with scala.Double] = js.native
   }
   
   @js.native
   object SubscriptionState extends js.Object {
-    val Complete: realmLib.RealmNs.SyncNs.SubscriptionState.Complete with java.lang.String = js.native
-    val Creating: realmLib.RealmNs.SyncNs.SubscriptionState.Creating with java.lang.String = js.native
-    val Error: realmLib.RealmNs.SyncNs.SubscriptionState.Error with java.lang.String = js.native
-    val Invalidated: realmLib.RealmNs.SyncNs.SubscriptionState.Invalidated with java.lang.String = js.native
-    val Pending: realmLib.RealmNs.SyncNs.SubscriptionState.Pending with java.lang.String = js.native
+    /* 3 */ val Complete: realmLib.RealmNs.SyncNs.SubscriptionState.Complete with scala.Double = js.native
+    /* 1 */ val Creating: realmLib.RealmNs.SyncNs.SubscriptionState.Creating with scala.Double = js.native
+    /* 0 */ val Error: realmLib.RealmNs.SyncNs.SubscriptionState.Error with scala.Double = js.native
+    /* 4 */ val Invalidated: realmLib.RealmNs.SyncNs.SubscriptionState.Invalidated with scala.Double = js.native
+    /* 2 */ val Pending: realmLib.RealmNs.SyncNs.SubscriptionState.Pending with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.SubscriptionState with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[realmLib.RealmNs.SyncNs.SubscriptionState with scala.Double] = js.native
   }
   
   /* static members */
@@ -206,5 +199,6 @@ object SyncNs extends js.Object {
     def requestPasswordReset(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
   }
   
+  type SessionStopPolicy = realmLib.RealmNs.SyncNs.SessionStopPolicy
 }
 

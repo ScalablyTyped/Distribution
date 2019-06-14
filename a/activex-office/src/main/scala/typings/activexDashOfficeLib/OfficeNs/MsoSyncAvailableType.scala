@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MsoSyncAvailableType extends js.Object
 
+object MsoSyncAvailableType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoSyncAvailableAnywhere: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoSyncAvailableNone: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoSyncAvailableOffline: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

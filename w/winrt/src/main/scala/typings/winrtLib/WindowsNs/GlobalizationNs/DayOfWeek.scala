@@ -39,14 +39,14 @@ object DayOfWeek extends js.Object {
   sealed trait wednesday
     extends winrtLib.WindowsNs.GlobalizationNs.DayOfWeek
   
-  val friday: friday with java.lang.String = js.native
-  val monday: monday with java.lang.String = js.native
-  val saturday: saturday with java.lang.String = js.native
-  val sunday: sunday with java.lang.String = js.native
-  val thursday: thursday with java.lang.String = js.native
-  val tuesday: tuesday with java.lang.String = js.native
-  val wednesday: wednesday with java.lang.String = js.native
+  /* 5 */ val friday: friday with scala.Double = js.native
+  /* 1 */ val monday: monday with scala.Double = js.native
+  /* 6 */ val saturday: saturday with scala.Double = js.native
+  /* 0 */ val sunday: sunday with scala.Double = js.native
+  /* 4 */ val thursday: thursday with scala.Double = js.native
+  /* 2 */ val tuesday: tuesday with scala.Double = js.native
+  /* 3 */ val wednesday: wednesday with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GlobalizationNs.DayOfWeek with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GlobalizationNs.DayOfWeek with scala.Double] = js.native
 }
 

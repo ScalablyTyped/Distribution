@@ -126,32 +126,32 @@ object FlowShapes extends js.Object {
   sealed trait Terminator
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FlowShapes
   
-  val Annotation1: Annotation1 with java.lang.String = js.native
-  val Annotation2: Annotation2 with java.lang.String = js.native
-  val Card: Card with java.lang.String = js.native
-  val Collate: Collate with java.lang.String = js.native
-  val Data: Data with java.lang.String = js.native
-  val Decision: Decision with java.lang.String = js.native
-  val DirectData: DirectData with java.lang.String = js.native
-  val Document: Document with java.lang.String = js.native
-  val Extract: Extract with java.lang.String = js.native
-  val InternalStorage: InternalStorage with java.lang.String = js.native
-  val ManualOperation: ManualOperation with java.lang.String = js.native
-  val Merge: Merge with java.lang.String = js.native
-  val MultiDocument: MultiDocument with java.lang.String = js.native
-  val OffPageReference: OffPageReference with java.lang.String = js.native
-  val Or: Or with java.lang.String = js.native
-  val PaperTap: PaperTap with java.lang.String = js.native
-  val PreDefinedProcess: PreDefinedProcess with java.lang.String = js.native
-  val Process: Process with java.lang.String = js.native
-  val SequentialAccessStorage: SequentialAccessStorage with java.lang.String = js.native
-  val SequentialData: SequentialData with java.lang.String = js.native
-  val Sort: Sort with java.lang.String = js.native
-  val SummingJunction: SummingJunction with java.lang.String = js.native
-  val Terminator: Terminator with java.lang.String = js.native
+  /* 19 */ val Annotation1: Annotation1 with scala.Double = js.native
+  /* 20 */ val Annotation2: Annotation2 with scala.Double = js.native
+  /* 22 */ val Card: Card with scala.Double = js.native
+  /* 10 */ val Collate: Collate with scala.Double = js.native
+  /* 21 */ val Data: Data with scala.Double = js.native
+  /* 1 */ val Decision: Decision with scala.Double = js.native
+  /* 6 */ val DirectData: DirectData with scala.Double = js.native
+  /* 2 */ val Document: Document with scala.Double = js.native
+  /* 14 */ val Extract: Extract with scala.Double = js.native
+  /* 13 */ val InternalStorage: InternalStorage with scala.Double = js.native
+  /* 15 */ val ManualOperation: ManualOperation with scala.Double = js.native
+  /* 16 */ val Merge: Merge with scala.Double = js.native
+  /* 9 */ val MultiDocument: MultiDocument with scala.Double = js.native
+  /* 17 */ val OffPageReference: OffPageReference with scala.Double = js.native
+  /* 12 */ val Or: Or with scala.Double = js.native
+  /* 5 */ val PaperTap: PaperTap with scala.Double = js.native
+  /* 3 */ val PreDefinedProcess: PreDefinedProcess with scala.Double = js.native
+  /* 0 */ val Process: Process with scala.Double = js.native
+  /* 18 */ val SequentialAccessStorage: SequentialAccessStorage with scala.Double = js.native
+  /* 7 */ val SequentialData: SequentialData with scala.Double = js.native
+  /* 8 */ val Sort: Sort with scala.Double = js.native
+  /* 11 */ val SummingJunction: SummingJunction with scala.Double = js.native
+  /* 4 */ val Terminator: Terminator with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FlowShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FlowShapes with scala.Double
   ] = js.native
 }
 

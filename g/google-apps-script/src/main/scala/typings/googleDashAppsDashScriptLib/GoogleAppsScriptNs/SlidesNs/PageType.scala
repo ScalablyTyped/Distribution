@@ -27,13 +27,13 @@ object PageType extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PageType
   
-  val LAYOUT: LAYOUT with java.lang.String = js.native
-  val MASTER: MASTER with java.lang.String = js.native
-  val SLIDE: SLIDE with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 2 */ val LAYOUT: LAYOUT with scala.Double = js.native
+  /* 3 */ val MASTER: MASTER with scala.Double = js.native
+  /* 1 */ val SLIDE: SLIDE with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PageType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.PageType with scala.Double
   ] = js.native
 }
 

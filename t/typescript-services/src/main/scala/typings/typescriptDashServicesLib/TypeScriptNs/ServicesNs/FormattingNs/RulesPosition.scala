@@ -35,12 +35,12 @@ object RulesPosition extends js.Object {
   sealed trait NoContextRulesSpecific
     extends typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition
   
-  val ContextRulesAny: ContextRulesAny with scala.Double = js.native
-  val ContextRulesSpecific: ContextRulesSpecific with scala.Double = js.native
-  val IgnoreRulesAny: IgnoreRulesAny with scala.Double = js.native
+  /* 2 */ val ContextRulesAny: ContextRulesAny with scala.Double = js.native
+  /* 1 */ val ContextRulesSpecific: ContextRulesSpecific with scala.Double = js.native
+  /* 0 */ val IgnoreRulesAny: IgnoreRulesAny with scala.Double = js.native
   /* 0 */ val IgnoreRulesSpecific: IgnoreRulesSpecific with scala.Double = js.native
-  val NoContextRulesAny: NoContextRulesAny with scala.Double = js.native
-  val NoContextRulesSpecific: NoContextRulesSpecific with scala.Double = js.native
+  /* 4 */ val NoContextRulesAny: NoContextRulesAny with scala.Double = js.native
+  /* 3 */ val NoContextRulesSpecific: NoContextRulesSpecific with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[
     typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition with scala.Double

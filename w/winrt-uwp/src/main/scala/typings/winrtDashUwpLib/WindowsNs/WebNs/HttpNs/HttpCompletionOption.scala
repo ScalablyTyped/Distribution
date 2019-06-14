@@ -22,11 +22,9 @@ object HttpCompletionOption extends js.Object {
   sealed trait responseHeadersRead
     extends winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpCompletionOption
   
-  val responseContentRead: responseContentRead with java.lang.String = js.native
-  val responseHeadersRead: responseHeadersRead with java.lang.String = js.native
+  /* 0 */ val responseContentRead: responseContentRead with scala.Double = js.native
+  /* 1 */ val responseHeadersRead: responseHeadersRead with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpCompletionOption with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpCompletionOption with scala.Double] = js.native
 }
 

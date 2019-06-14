@@ -26,10 +26,10 @@ object liveTileType extends js.Object {
   sealed trait Slide
     extends ejDotWebDotAllLib.ejNs.TileNs.liveTileType
   
-  val Carousel: Carousel with java.lang.String = js.native
-  val Flip: Flip with java.lang.String = js.native
-  val Slide: Slide with java.lang.String = js.native
+  /* 2 */ val Carousel: Carousel with scala.Double = js.native
+  /* 0 */ val Flip: Flip with scala.Double = js.native
+  /* 1 */ val Slide: Slide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TileNs.liveTileType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TileNs.liveTileType with scala.Double] = js.native
 }
 

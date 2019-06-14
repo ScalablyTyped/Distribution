@@ -47,14 +47,14 @@ object SmsMessageType extends js.Object {
   sealed trait wap
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageType
   
-  val app: app with java.lang.String = js.native
-  val binary: binary with java.lang.String = js.native
-  val broadcast: broadcast with java.lang.String = js.native
-  val status: status with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
-  val voicemail: voicemail with java.lang.String = js.native
-  val wap: wap with java.lang.String = js.native
+  /* 3 */ val app: app with scala.Double = js.native
+  /* 0 */ val binary: binary with scala.Double = js.native
+  /* 4 */ val broadcast: broadcast with scala.Double = js.native
+  /* 6 */ val status: status with scala.Double = js.native
+  /* 1 */ val text: text with scala.Double = js.native
+  /* 5 */ val voicemail: voicemail with scala.Double = js.native
+  /* 2 */ val wap: wap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageType with scala.Double] = js.native
 }
 

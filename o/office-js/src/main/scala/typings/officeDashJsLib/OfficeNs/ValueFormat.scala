@@ -33,9 +33,9 @@ object ValueFormat extends js.Object {
   sealed trait Unformatted
     extends officeDashJsLib.OfficeNs.ValueFormat
   
-  val Formatted: Formatted with java.lang.String = js.native
-  val Unformatted: Unformatted with java.lang.String = js.native
+  /* 1 */ val Formatted: Formatted with scala.Double = js.native
+  /* 0 */ val Unformatted: Unformatted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.ValueFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.ValueFormat with scala.Double] = js.native
 }
 

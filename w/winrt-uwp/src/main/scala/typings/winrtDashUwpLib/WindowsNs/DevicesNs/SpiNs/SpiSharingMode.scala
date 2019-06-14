@@ -22,9 +22,9 @@ object SpiSharingMode extends js.Object {
   sealed trait shared
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SpiNs.SpiSharingMode
   
-  val exclusive: exclusive with java.lang.String = js.native
-  val shared: shared with java.lang.String = js.native
+  /* 0 */ val exclusive: exclusive with scala.Double = js.native
+  /* 1 */ val shared: shared with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SpiNs.SpiSharingMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SpiNs.SpiSharingMode with scala.Double] = js.native
 }
 

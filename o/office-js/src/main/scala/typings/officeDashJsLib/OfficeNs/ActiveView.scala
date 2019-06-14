@@ -29,9 +29,9 @@ object ActiveView extends js.Object {
   sealed trait Read
     extends officeDashJsLib.OfficeNs.ActiveView
   
-  val Edit: Edit with java.lang.String = js.native
-  val Read: Read with java.lang.String = js.native
+  /* 1 */ val Edit: Edit with scala.Double = js.native
+  /* 0 */ val Read: Read with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.ActiveView with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.ActiveView with scala.Double] = js.native
 }
 

@@ -27,10 +27,10 @@ object AudioBufferAccessMode extends js.Object {
   sealed trait write
     extends winrtDashUwpLib.WindowsNs.MediaNs.AudioBufferAccessMode
   
-  val read: read with java.lang.String = js.native
-  val readWrite: readWrite with java.lang.String = js.native
-  val write: write with java.lang.String = js.native
+  /* 0 */ val read: read with scala.Double = js.native
+  /* 1 */ val readWrite: readWrite with scala.Double = js.native
+  /* 2 */ val write: write with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.AudioBufferAccessMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.AudioBufferAccessMode with scala.Double] = js.native
 }
 

@@ -28,9 +28,9 @@ object HeaderPosition extends js.Object {
   sealed trait top
     extends winjsLib.WinJSNs.UINs.HeaderPosition
   
-  val left: left with java.lang.String = js.native
-  val top: top with java.lang.String = js.native
+  /* 0 */ val left: left with scala.Double = js.native
+  /* 1 */ val top: top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.HeaderPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.HeaderPosition with scala.Double] = js.native
 }
 

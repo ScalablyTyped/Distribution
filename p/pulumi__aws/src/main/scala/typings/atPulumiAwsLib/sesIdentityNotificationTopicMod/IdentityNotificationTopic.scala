@@ -23,6 +23,10 @@ class IdentityNotificationTopic protected ()
     */
   val identity: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * Whether SES should include original email headers in SNS notifications of this type. *false* by default.
+    */
+  val includeOriginalHeaders: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
     * The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: *Bounce*, *Complaint* or *Delivery*.
     */
   val notificationType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

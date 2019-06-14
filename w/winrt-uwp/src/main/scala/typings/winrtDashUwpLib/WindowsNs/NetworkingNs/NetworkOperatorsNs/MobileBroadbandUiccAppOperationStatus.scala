@@ -32,13 +32,13 @@ object MobileBroadbandUiccAppOperationStatus extends js.Object {
   sealed trait uiccBusy
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandUiccAppOperationStatus
   
-  val accessConditionNotHeld: accessConditionNotHeld with java.lang.String = js.native
-  val invalidUiccFilePath: invalidUiccFilePath with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val uiccBusy: uiccBusy with java.lang.String = js.native
+  /* 2 */ val accessConditionNotHeld: accessConditionNotHeld with scala.Double = js.native
+  /* 1 */ val invalidUiccFilePath: invalidUiccFilePath with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 3 */ val uiccBusy: uiccBusy with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandUiccAppOperationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandUiccAppOperationStatus with scala.Double
   ] = js.native
 }
 

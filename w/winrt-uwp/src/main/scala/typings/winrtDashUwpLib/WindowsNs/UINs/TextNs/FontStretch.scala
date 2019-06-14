@@ -62,17 +62,17 @@ object FontStretch extends js.Object {
   sealed trait undefined
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.FontStretch
   
-  val condensed: condensed with java.lang.String = js.native
-  val expanded: expanded with java.lang.String = js.native
-  val extraCondensed: extraCondensed with java.lang.String = js.native
-  val extraExpanded: extraExpanded with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val semiCondensed: semiCondensed with java.lang.String = js.native
-  val semiExpanded: semiExpanded with java.lang.String = js.native
-  val ultraCondensed: ultraCondensed with java.lang.String = js.native
-  val ultraExpanded: ultraExpanded with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 3 */ val condensed: condensed with scala.Double = js.native
+  /* 7 */ val expanded: expanded with scala.Double = js.native
+  /* 2 */ val extraCondensed: extraCondensed with scala.Double = js.native
+  /* 8 */ val extraExpanded: extraExpanded with scala.Double = js.native
+  /* 5 */ val normal: normal with scala.Double = js.native
+  /* 4 */ val semiCondensed: semiCondensed with scala.Double = js.native
+  /* 6 */ val semiExpanded: semiExpanded with scala.Double = js.native
+  /* 1 */ val ultraCondensed: ultraCondensed with scala.Double = js.native
+  /* 9 */ val ultraExpanded: ultraExpanded with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.FontStretch with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.FontStretch with scala.Double] = js.native
 }
 

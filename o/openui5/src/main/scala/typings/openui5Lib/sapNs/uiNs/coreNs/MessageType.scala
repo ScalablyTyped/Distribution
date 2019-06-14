@@ -34,12 +34,12 @@ object MessageType extends js.Object {
   sealed trait Warning
     extends openui5Lib.sapNs.uiNs.coreNs.MessageType
   
-  val Error: Error with java.lang.String = js.native
-  val Information: Information with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Success: Success with java.lang.String = js.native
-  val Warning: Warning with java.lang.String = js.native
+  /* 0 */ val Error: Error with scala.Double = js.native
+  /* 1 */ val Information: Information with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 3 */ val Success: Success with scala.Double = js.native
+  /* 4 */ val Warning: Warning with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.MessageType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.MessageType with scala.Double] = js.native
 }
 

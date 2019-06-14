@@ -22,9 +22,9 @@ object FolderDepth extends js.Object {
   sealed trait shallow
     extends winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.FolderDepth
   
-  val deep: deep with java.lang.String = js.native
-  val shallow: shallow with java.lang.String = js.native
+  /* 1 */ val deep: deep with scala.Double = js.native
+  /* 0 */ val shallow: shallow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.FolderDepth with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.FolderDepth with scala.Double] = js.native
 }
 

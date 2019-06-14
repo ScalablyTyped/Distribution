@@ -36,14 +36,14 @@ object MultiLevelLabelsBorderType extends js.Object {
   sealed trait WithoutTopAndBottom
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.MultiLevelLabelsBorderType
   
-  val Brace: Brace with java.lang.String = js.native
-  val CurlyBrace: CurlyBrace with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val WithoutTopAndBottom: WithoutTopAndBottom with java.lang.String = js.native
+  /* 3 */ val Brace: Brace with scala.Double = js.native
+  /* 4 */ val CurlyBrace: CurlyBrace with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
+  /* 0 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 2 */ val WithoutTopAndBottom: WithoutTopAndBottom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.MultiLevelLabelsBorderType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.MultiLevelLabelsBorderType with scala.Double
   ] = js.native
 }
 

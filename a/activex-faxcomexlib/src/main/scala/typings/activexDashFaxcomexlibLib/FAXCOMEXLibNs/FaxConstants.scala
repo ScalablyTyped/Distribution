@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait FaxConstants extends js.Object
 
+object FaxConstants {
+  @scala.inline
+  def bstrGROUPNAME_ALLDEVICES: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibStrings.`<All Devices>` = this.cast("<All Devices>")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lDEFAULT_PREFETCH_SIZE: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`100` = this.cast(100)
+  @scala.inline
+  def wcharREASSIGN_RECIPIENTS_DELIMITER: activexDashFaxcomexlibLib.activexDashFaxcomexlibLibNumbers.`59` = this.cast(59)
+}
+

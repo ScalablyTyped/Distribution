@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait ListTagsForResourceInput extends js.Object {
   /**
     * The maximum number of tag results returned by ListTagsForResource in
-    paginated output. When this parameter is used, ListTagsForResource returns only
-    limit results in a single page along with a nextToken
+    paginated output. When this parameter is used, ListTagsForResource returns
+    only limit results in a single page along with a nextToken
     response element. You can see the remaining results of the initial request by sending
     another ListTagsForResource request with the returned nextToken
-    value. This value can be between 1 and 100. If you don't use this
-    parameter, ListTagsForResource returns up to
-    100 results and a nextToken value if applicable.
+    value. This value can be between 1 and 100. If you don't use
+    this parameter, ListTagsForResource returns up to 100
+    results and a nextToken value if applicable.
     */
   var limit: js.UndefOr[TagsLimit] = js.undefined
   /**

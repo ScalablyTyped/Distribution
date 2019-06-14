@@ -21,9 +21,9 @@ object DistanceUnit extends js.Object {
   sealed trait miles
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.DistanceUnit
   
-  val km: km with java.lang.String = js.native
-  val miles: miles with java.lang.String = js.native
+  /* 0 */ val km: km with scala.Double = js.native
+  /* 1 */ val miles: miles with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.DistanceUnit with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.DistanceUnit with scala.Double] = js.native
 }
 

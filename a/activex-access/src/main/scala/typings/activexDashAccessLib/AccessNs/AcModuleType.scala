@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcModuleType extends js.Object
 
+object AcModuleType {
+  @scala.inline
+  def acClassModule: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acStandardModule: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

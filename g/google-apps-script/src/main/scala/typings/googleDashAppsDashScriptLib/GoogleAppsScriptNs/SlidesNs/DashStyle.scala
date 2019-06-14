@@ -39,16 +39,16 @@ object DashStyle extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.DashStyle
   
-  val DASH: DASH with java.lang.String = js.native
-  val DASH_DOT: DASH_DOT with java.lang.String = js.native
-  val DOT: DOT with java.lang.String = js.native
-  val LONG_DASH: LONG_DASH with java.lang.String = js.native
-  val LONG_DASH_DOT: LONG_DASH_DOT with java.lang.String = js.native
-  val SOLID: SOLID with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 3 */ val DASH: DASH with scala.Double = js.native
+  /* 4 */ val DASH_DOT: DASH_DOT with scala.Double = js.native
+  /* 2 */ val DOT: DOT with scala.Double = js.native
+  /* 5 */ val LONG_DASH: LONG_DASH with scala.Double = js.native
+  /* 6 */ val LONG_DASH_DOT: LONG_DASH_DOT with scala.Double = js.native
+  /* 1 */ val SOLID: SOLID with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.DashStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.DashStyle with scala.Double
   ] = js.native
 }
 

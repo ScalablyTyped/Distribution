@@ -562,12 +562,12 @@ object ServicesNs extends js.Object {
     
     @js.native
     object RulesPosition extends js.Object {
-      val ContextRulesAny: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.ContextRulesAny with scala.Double = js.native
-      val ContextRulesSpecific: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.ContextRulesSpecific with scala.Double = js.native
-      val IgnoreRulesAny: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.IgnoreRulesAny with scala.Double = js.native
+      /* 2 */ val ContextRulesAny: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.ContextRulesAny with scala.Double = js.native
+      /* 1 */ val ContextRulesSpecific: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.ContextRulesSpecific with scala.Double = js.native
+      /* 0 */ val IgnoreRulesAny: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.IgnoreRulesAny with scala.Double = js.native
       /* 0 */ val IgnoreRulesSpecific: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.IgnoreRulesSpecific with scala.Double = js.native
-      val NoContextRulesAny: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.NoContextRulesAny with scala.Double = js.native
-      val NoContextRulesSpecific: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.NoContextRulesSpecific with scala.Double = js.native
+      /* 4 */ val NoContextRulesAny: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.NoContextRulesAny with scala.Double = js.native
+      /* 3 */ val NoContextRulesSpecific: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition.NoContextRulesSpecific with scala.Double = js.native
       @JSBracketAccess
       def apply(value: scala.Double): js.UndefOr[
             typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition with scala.Double

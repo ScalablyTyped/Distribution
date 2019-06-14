@@ -22,9 +22,9 @@ object LetterCase extends js.Object {
   sealed trait upper
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.LetterCase
   
-  val lower: lower with java.lang.String = js.native
-  val upper: upper with java.lang.String = js.native
+  /* 0 */ val lower: lower with scala.Double = js.native
+  /* 1 */ val upper: upper with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.LetterCase with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.LetterCase with scala.Double] = js.native
 }
 

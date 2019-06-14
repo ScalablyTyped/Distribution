@@ -26,12 +26,10 @@ object Alignment extends js.Object {
   sealed trait Center
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Alignment
   
-  val After: After with java.lang.String = js.native
-  val Before: Before with java.lang.String = js.native
-  val Center: Center with java.lang.String = js.native
+  /* 2 */ val After: After with scala.Double = js.native
+  /* 0 */ val Before: Before with scala.Double = js.native
+  /* 1 */ val Center: Center with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Alignment with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Alignment with scala.Double] = js.native
 }
 

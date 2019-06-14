@@ -23,10 +23,10 @@ object IndexDatatype extends js.Object {
   sealed trait UNSIGNED_SHORT
     extends cesiumLib.cesiumMod.IndexDatatype
   
-  val UNSIGNED_BYTE: UNSIGNED_BYTE with java.lang.String = js.native
-  val UNSIGNED_INT: UNSIGNED_INT with java.lang.String = js.native
-  val UNSIGNED_SHORT: UNSIGNED_SHORT with java.lang.String = js.native
+  /* 0 */ val UNSIGNED_BYTE: UNSIGNED_BYTE with scala.Double = js.native
+  /* 2 */ val UNSIGNED_INT: UNSIGNED_INT with scala.Double = js.native
+  /* 1 */ val UNSIGNED_SHORT: UNSIGNED_SHORT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.IndexDatatype with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.IndexDatatype with scala.Double] = js.native
 }
 

@@ -26,12 +26,10 @@ object Segments extends js.Object {
   sealed trait Straight
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Segments
   
-  val Bezier: Bezier with java.lang.String = js.native
-  val Orthogonal: Orthogonal with java.lang.String = js.native
-  val Straight: Straight with java.lang.String = js.native
+  /* 2 */ val Bezier: Bezier with scala.Double = js.native
+  /* 1 */ val Orthogonal: Orthogonal with scala.Double = js.native
+  /* 0 */ val Straight: Straight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Segments with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Segments with scala.Double] = js.native
 }
 

@@ -37,14 +37,14 @@ object ErrorOptions extends js.Object {
   sealed trait useSetErrorInfo
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.ErrorOptions
   
-  val forceExceptions: forceExceptions with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val suppressExceptions: suppressExceptions with java.lang.String = js.native
-  val suppressSetErrorInfo: suppressSetErrorInfo with java.lang.String = js.native
-  val useSetErrorInfo: useSetErrorInfo with java.lang.String = js.native
+  /* 2 */ val forceExceptions: forceExceptions with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val suppressExceptions: suppressExceptions with scala.Double = js.native
+  /* 4 */ val suppressSetErrorInfo: suppressSetErrorInfo with scala.Double = js.native
+  /* 3 */ val useSetErrorInfo: useSetErrorInfo with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.ErrorOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.ErrorOptions with scala.Double
   ] = js.native
 }
 

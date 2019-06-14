@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-clipper"
-version := "0.0-unknown-dt-20190322Z-252a3b"
+version := "0.0-unknown-dt-20190322Z-500971"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoftteams"
-version := "1.2-dt-20190213Z-66e3e5"
+version := "1.2-dt-20190213Z-058530"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

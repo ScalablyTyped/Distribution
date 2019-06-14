@@ -32,11 +32,11 @@ object OpenState extends js.Object {
   sealed trait OPENING
     extends openui5Lib.sapNs.uiNs.coreNs.OpenState
   
-  val CLOSED: CLOSED with java.lang.String = js.native
-  val CLOSING: CLOSING with java.lang.String = js.native
-  val OPEN: OPEN with java.lang.String = js.native
-  val OPENING: OPENING with java.lang.String = js.native
+  /* 0 */ val CLOSED: CLOSED with scala.Double = js.native
+  /* 1 */ val CLOSING: CLOSING with scala.Double = js.native
+  /* 2 */ val OPEN: OPEN with scala.Double = js.native
+  /* 3 */ val OPENING: OPENING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.OpenState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.OpenState with scala.Double] = js.native
 }
 

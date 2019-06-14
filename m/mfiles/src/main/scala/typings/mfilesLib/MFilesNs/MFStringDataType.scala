@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MFStringDataType extends js.Object
 
+object MFStringDataType {
+  @scala.inline
+  def JSON: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def XML: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

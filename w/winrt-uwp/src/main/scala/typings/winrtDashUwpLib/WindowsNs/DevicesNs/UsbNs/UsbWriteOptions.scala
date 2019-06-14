@@ -27,10 +27,10 @@ object UsbWriteOptions extends js.Object {
   sealed trait shortPacketTerminate
     extends winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbWriteOptions
   
-  val autoClearStall: autoClearStall with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val shortPacketTerminate: shortPacketTerminate with java.lang.String = js.native
+  /* 1 */ val autoClearStall: autoClearStall with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val shortPacketTerminate: shortPacketTerminate with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbWriteOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbWriteOptions with scala.Double] = js.native
 }
 

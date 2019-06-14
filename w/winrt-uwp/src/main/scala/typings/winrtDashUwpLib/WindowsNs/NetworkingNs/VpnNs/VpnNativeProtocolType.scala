@@ -27,12 +27,12 @@ object VpnNativeProtocolType extends js.Object {
   sealed trait pptp
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnNativeProtocolType
   
-  val ipsecIkev2: ipsecIkev2 with java.lang.String = js.native
-  val l2tp: l2tp with java.lang.String = js.native
-  val pptp: pptp with java.lang.String = js.native
+  /* 2 */ val ipsecIkev2: ipsecIkev2 with scala.Double = js.native
+  /* 1 */ val l2tp: l2tp with scala.Double = js.native
+  /* 0 */ val pptp: pptp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnNativeProtocolType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnNativeProtocolType with scala.Double
   ] = js.native
 }
 

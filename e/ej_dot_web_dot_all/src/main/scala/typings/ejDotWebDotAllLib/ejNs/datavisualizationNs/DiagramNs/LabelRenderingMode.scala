@@ -21,11 +21,11 @@ object LabelRenderingMode extends js.Object {
   sealed trait SVG
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelRenderingMode
   
-  val HTML: HTML with java.lang.String = js.native
-  val SVG: SVG with java.lang.String = js.native
+  /* 0 */ val HTML: HTML with scala.Double = js.native
+  /* 1 */ val SVG: SVG with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelRenderingMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.LabelRenderingMode with scala.Double
   ] = js.native
 }
 

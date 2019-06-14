@@ -22,9 +22,9 @@ object SelectType extends js.Object {
   sealed trait IconOnly
     extends openui5Lib.sapNs.mNs.SelectType
   
-  val Default: Default with java.lang.String = js.native
-  val IconOnly: IconOnly with java.lang.String = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val IconOnly: IconOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.SelectType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.SelectType with scala.Double] = js.native
 }
 

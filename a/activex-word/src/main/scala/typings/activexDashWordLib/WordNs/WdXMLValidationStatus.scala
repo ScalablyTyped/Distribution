@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdXMLValidationStatus extends js.Object
 
+object WdXMLValidationStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdXMLValidationStatusCustom: activexDashWordLib.activexDashWordLibNumbers.`-1072898048` = this.cast(-1072898048)
+  @scala.inline
+  def wdXMLValidationStatusOK: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

@@ -39,16 +39,16 @@ object OperatorACDStatuses extends js.Object {
   sealed trait Timeout
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.OperatorACDStatuses
   
-  val AfterService: AfterService with java.lang.String = js.native
-  val DND: DND with java.lang.String = js.native
-  val InService: InService with java.lang.String = js.native
-  val Offline: Offline with java.lang.String = js.native
-  val Online: Online with java.lang.String = js.native
-  val Ready: Ready with java.lang.String = js.native
-  val Timeout: Timeout with java.lang.String = js.native
+  /* 0 */ val AfterService: AfterService with scala.Double = js.native
+  /* 1 */ val DND: DND with scala.Double = js.native
+  /* 2 */ val InService: InService with scala.Double = js.native
+  /* 3 */ val Offline: Offline with scala.Double = js.native
+  /* 4 */ val Online: Online with scala.Double = js.native
+  /* 5 */ val Ready: Ready with scala.Double = js.native
+  /* 6 */ val Timeout: Timeout with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.OperatorACDStatuses with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    voximplantDashWebsdkLib.voximplantDashWebsdkMod.OperatorACDStatuses with scala.Double
   ] = js.native
 }
 

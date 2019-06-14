@@ -26,10 +26,10 @@ object ListSeparators extends js.Object {
   sealed trait None
     extends openui5Lib.sapNs.mNs.ListSeparators
   
-  val All: All with java.lang.String = js.native
-  val Inner: Inner with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 1 */ val Inner: Inner with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ListSeparators with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ListSeparators with scala.Double] = js.native
 }
 

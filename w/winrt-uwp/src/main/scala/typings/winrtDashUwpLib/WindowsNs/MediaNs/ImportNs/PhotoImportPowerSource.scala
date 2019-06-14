@@ -27,12 +27,12 @@ object PhotoImportPowerSource extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportPowerSource
   
-  val battery: battery with java.lang.String = js.native
-  val external: external with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val battery: battery with scala.Double = js.native
+  /* 2 */ val external: external with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportPowerSource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportPowerSource with scala.Double
   ] = js.native
 }
 

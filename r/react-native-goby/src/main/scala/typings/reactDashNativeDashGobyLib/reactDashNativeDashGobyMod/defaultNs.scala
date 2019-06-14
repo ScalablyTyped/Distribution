@@ -69,12 +69,12 @@ object defaultNs extends js.Object {
     */
   @js.native
   object CheckFrequency extends js.Object {
-    val MANUAL: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.MANUAL with java.lang.String = js.native
-    val ON_APP_RESUME: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.ON_APP_RESUME with java.lang.String = js.native
-    val ON_APP_START: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.ON_APP_START with java.lang.String = js.native
+    /* 2 */ val MANUAL: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.MANUAL with scala.Double = js.native
+    /* 1 */ val ON_APP_RESUME: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.ON_APP_RESUME with scala.Double = js.native
+    /* 0 */ val ON_APP_START: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.ON_APP_START with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency with scala.Double
       ] = js.native
   }
   
@@ -83,11 +83,11 @@ object defaultNs extends js.Object {
     */
   @js.native
   object DeploymentStatus extends js.Object {
-    val FAILED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus.FAILED with java.lang.String = js.native
-    val SUCCEEDED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus.SUCCEEDED with java.lang.String = js.native
+    /* 0 */ val FAILED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus.FAILED with scala.Double = js.native
+    /* 1 */ val SUCCEEDED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus.SUCCEEDED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus with scala.Double
       ] = js.native
   }
   
@@ -96,12 +96,12 @@ object defaultNs extends js.Object {
     */
   @js.native
   object InstallMode extends js.Object {
-    val IMMEDIATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.IMMEDIATE with java.lang.String = js.native
-    val ON_NEXT_RESTART: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.ON_NEXT_RESTART with java.lang.String = js.native
-    val ON_NEXT_RESUME: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.ON_NEXT_RESUME with java.lang.String = js.native
+    /* 0 */ val IMMEDIATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.IMMEDIATE with scala.Double = js.native
+    /* 1 */ val ON_NEXT_RESTART: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.ON_NEXT_RESTART with scala.Double = js.native
+    /* 2 */ val ON_NEXT_RESUME: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.ON_NEXT_RESUME with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode with scala.Double
       ] = js.native
   }
   
@@ -110,18 +110,18 @@ object defaultNs extends js.Object {
     */
   @js.native
   object SyncStatus extends js.Object {
-    val AWAITING_USER_ACTION: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.AWAITING_USER_ACTION with java.lang.String = js.native
-    val CHECKING_FOR_UPDATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.CHECKING_FOR_UPDATE with java.lang.String = js.native
-    val DOWNLOADING_PACKAGE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.DOWNLOADING_PACKAGE with java.lang.String = js.native
-    val INSTALLING_UPDATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.INSTALLING_UPDATE with java.lang.String = js.native
-    val SYNC_IN_PROGRESS: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.SYNC_IN_PROGRESS with java.lang.String = js.native
-    val UNKNOWN_ERROR: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UNKNOWN_ERROR with java.lang.String = js.native
-    val UPDATE_IGNORED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UPDATE_IGNORED with java.lang.String = js.native
-    val UPDATE_INSTALLED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UPDATE_INSTALLED with java.lang.String = js.native
-    val UP_TO_DATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UP_TO_DATE with java.lang.String = js.native
+    /* 1 */ val AWAITING_USER_ACTION: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.AWAITING_USER_ACTION with scala.Double = js.native
+    /* 0 */ val CHECKING_FOR_UPDATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.CHECKING_FOR_UPDATE with scala.Double = js.native
+    /* 2 */ val DOWNLOADING_PACKAGE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.DOWNLOADING_PACKAGE with scala.Double = js.native
+    /* 3 */ val INSTALLING_UPDATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.INSTALLING_UPDATE with scala.Double = js.native
+    /* 7 */ val SYNC_IN_PROGRESS: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.SYNC_IN_PROGRESS with scala.Double = js.native
+    /* 8 */ val UNKNOWN_ERROR: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UNKNOWN_ERROR with scala.Double = js.native
+    /* 5 */ val UPDATE_IGNORED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UPDATE_IGNORED with scala.Double = js.native
+    /* 6 */ val UPDATE_INSTALLED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UPDATE_INSTALLED with scala.Double = js.native
+    /* 4 */ val UP_TO_DATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.UP_TO_DATE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus with scala.Double
       ] = js.native
   }
   
@@ -130,12 +130,12 @@ object defaultNs extends js.Object {
     */
   @js.native
   object UpdateState extends js.Object {
-    val LATEST: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.LATEST with java.lang.String = js.native
-    val PENDING: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.PENDING with java.lang.String = js.native
-    val RUNNING: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.RUNNING with java.lang.String = js.native
+    /* 2 */ val LATEST: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.LATEST with scala.Double = js.native
+    /* 1 */ val PENDING: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.PENDING with scala.Double = js.native
+    /* 0 */ val RUNNING: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.RUNNING with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState with scala.Double
       ] = js.native
   }
   

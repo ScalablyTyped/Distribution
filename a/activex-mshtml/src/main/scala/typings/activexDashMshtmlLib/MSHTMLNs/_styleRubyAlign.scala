@@ -18,3 +18,26 @@ import scala.scalajs.js.annotation._
 */
 trait _styleRubyAlign extends js.Object
 
+object _styleRubyAlign {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleRubyAlignAuto: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleRubyAlignCenter: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleRubyAlignDistributeLetter: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def styleRubyAlignDistributeSpace: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def styleRubyAlignLeft: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleRubyAlignLineEdge: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def styleRubyAlignNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleRubyAlignRight: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def styleRubyAlign_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

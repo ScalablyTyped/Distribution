@@ -11,3 +11,18 @@ import scala.scalajs.js.annotation._
 */
 trait AutoPlay extends js.Object
 
+object AutoPlay {
+  /**
+  		 * Video will autoplay when loaded.
+  		 */
+  @scala.inline
+  def AutoPlay: youtubeLib.youtubeLibNumbers.`1` = this.cast(1)
+  /**
+  		 * Video does not autoplay.
+  		 */
+  @scala.inline
+  def NoAutoPlay: youtubeLib.youtubeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -32,11 +32,11 @@ object HostNameType extends js.Object {
   sealed trait ipv6
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.HostNameType
   
-  val bluetooth: bluetooth with java.lang.String = js.native
-  val domainName: domainName with java.lang.String = js.native
-  val ipv4: ipv4 with java.lang.String = js.native
-  val ipv6: ipv6 with java.lang.String = js.native
+  /* 3 */ val bluetooth: bluetooth with scala.Double = js.native
+  /* 0 */ val domainName: domainName with scala.Double = js.native
+  /* 1 */ val ipv4: ipv4 with scala.Double = js.native
+  /* 2 */ val ipv6: ipv6 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.HostNameType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.NetworkingNs.HostNameType with scala.Double] = js.native
 }
 

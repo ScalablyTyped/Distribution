@@ -57,18 +57,18 @@ object ClosedCaptionColor extends js.Object {
   sealed trait yellow
     extends winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionColor
   
-  val black: black with java.lang.String = js.native
-  val blue: blue with java.lang.String = js.native
-  val cyan: cyan with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val green: green with java.lang.String = js.native
-  val magenta: magenta with java.lang.String = js.native
-  val red: red with java.lang.String = js.native
-  val white: white with java.lang.String = js.native
-  val yellow: yellow with java.lang.String = js.native
+  /* 2 */ val black: black with scala.Double = js.native
+  /* 5 */ val blue: blue with scala.Double = js.native
+  /* 8 */ val cyan: cyan with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 4 */ val green: green with scala.Double = js.native
+  /* 7 */ val magenta: magenta with scala.Double = js.native
+  /* 3 */ val red: red with scala.Double = js.native
+  /* 1 */ val white: white with scala.Double = js.native
+  /* 6 */ val yellow: yellow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionColor with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionColor with scala.Double
   ] = js.native
 }
 

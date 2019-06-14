@@ -19,10 +19,10 @@ object resourcesNs extends js.Object {
     */
   @js.native
   object Direction extends js.Object {
-    val Ascending: umbracoLib.umbracoNs.resourcesNs.Direction.Ascending with java.lang.String = js.native
-    val Descending: umbracoLib.umbracoNs.resourcesNs.Direction.Descending with java.lang.String = js.native
+    /* 0 */ val Ascending: umbracoLib.umbracoNs.resourcesNs.Direction.Ascending with scala.Double = js.native
+    /* 1 */ val Descending: umbracoLib.umbracoNs.resourcesNs.Direction.Descending with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.Direction with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.Direction with scala.Double] = js.native
   }
   
   /**
@@ -30,10 +30,10 @@ object resourcesNs extends js.Object {
     */
   @js.native
   object LogType extends js.Object {
-    val Debug: umbracoLib.umbracoNs.resourcesNs.LogType.Debug with java.lang.String = js.native
-    val Info: umbracoLib.umbracoNs.resourcesNs.LogType.Info with java.lang.String = js.native
+    /* 0 */ val Debug: umbracoLib.umbracoNs.resourcesNs.LogType.Debug with scala.Double = js.native
+    /* 1 */ val Info: umbracoLib.umbracoNs.resourcesNs.LogType.Info with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.LogType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.LogType with scala.Double] = js.native
   }
   
   /**
@@ -41,9 +41,9 @@ object resourcesNs extends js.Object {
     */
   @js.native
   object OrderItemsBy extends js.Object {
-    val SortOrder: umbracoLib.umbracoNs.resourcesNs.OrderItemsBy.SortOrder with java.lang.String = js.native
+    /* 0 */ val SortOrder: umbracoLib.umbracoNs.resourcesNs.OrderItemsBy.SortOrder with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.OrderItemsBy with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.OrderItemsBy with scala.Double] = js.native
   }
   
 }

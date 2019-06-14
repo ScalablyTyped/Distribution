@@ -15,8 +15,8 @@ object EResult extends js.Object {
   sealed trait AccountLogonDenied
     extends steamLib.steamMod.EResult
   
-  val AccountLogonDenied: AccountLogonDenied with java.lang.String = js.native
+  /* 0 */ val AccountLogonDenied: AccountLogonDenied with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[steamLib.steamMod.EResult with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[steamLib.steamMod.EResult with scala.Double] = js.native
 }
 

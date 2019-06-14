@@ -22,11 +22,11 @@ object BluetoothAddressType extends js.Object {
   sealed trait random
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothAddressType
   
-  val public: public with java.lang.String = js.native
-  val random: random with java.lang.String = js.native
+  /* 0 */ val public: public with scala.Double = js.native
+  /* 1 */ val random: random with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothAddressType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothAddressType with scala.Double
   ] = js.native
 }
 

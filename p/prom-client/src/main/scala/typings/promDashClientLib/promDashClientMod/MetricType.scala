@@ -27,11 +27,11 @@ object MetricType extends js.Object {
   sealed trait Summary
     extends promDashClientLib.promDashClientMod.MetricType
   
-  val Counter: Counter with java.lang.String = js.native
-  val Gauge: Gauge with java.lang.String = js.native
-  val Histogram: Histogram with java.lang.String = js.native
-  val Summary: Summary with java.lang.String = js.native
+  /* 0 */ val Counter: Counter with scala.Double = js.native
+  /* 1 */ val Gauge: Gauge with scala.Double = js.native
+  /* 2 */ val Histogram: Histogram with scala.Double = js.native
+  /* 3 */ val Summary: Summary with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[promDashClientLib.promDashClientMod.MetricType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[promDashClientLib.promDashClientMod.MetricType with scala.Double] = js.native
 }
 

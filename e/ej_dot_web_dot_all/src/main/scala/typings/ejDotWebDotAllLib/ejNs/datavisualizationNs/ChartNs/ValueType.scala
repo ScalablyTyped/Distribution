@@ -31,13 +31,11 @@ object ValueType extends js.Object {
   sealed trait Logarithmic
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ValueType
   
-  val Category: Category with java.lang.String = js.native
-  val DateTime: DateTime with java.lang.String = js.native
-  val Double: Double with java.lang.String = js.native
-  val Logarithmic: Logarithmic with java.lang.String = js.native
+  /* 1 */ val Category: Category with scala.Double = js.native
+  /* 2 */ val DateTime: DateTime with scala.Double = js.native
+  /* 0 */ val Double: Double with scala.Double = js.native
+  /* 3 */ val Logarithmic: Logarithmic with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ValueType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ValueType with scala.Double] = js.native
 }
 

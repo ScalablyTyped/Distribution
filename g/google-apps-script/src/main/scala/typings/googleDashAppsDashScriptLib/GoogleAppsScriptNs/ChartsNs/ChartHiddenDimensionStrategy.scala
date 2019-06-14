@@ -27,13 +27,13 @@ object ChartHiddenDimensionStrategy extends js.Object {
   sealed trait SHOW_BOTH
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy
   
-  val IGNORE_BOTH: IGNORE_BOTH with java.lang.String = js.native
-  val IGNORE_COLUMNS: IGNORE_COLUMNS with java.lang.String = js.native
-  val IGNORE_ROWS: IGNORE_ROWS with java.lang.String = js.native
-  val SHOW_BOTH: SHOW_BOTH with java.lang.String = js.native
+  /* 0 */ val IGNORE_BOTH: IGNORE_BOTH with scala.Double = js.native
+  /* 2 */ val IGNORE_COLUMNS: IGNORE_COLUMNS with scala.Double = js.native
+  /* 1 */ val IGNORE_ROWS: IGNORE_ROWS with scala.Double = js.native
+  /* 3 */ val SHOW_BOTH: SHOW_BOTH with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy with scala.Double
   ] = js.native
 }
 

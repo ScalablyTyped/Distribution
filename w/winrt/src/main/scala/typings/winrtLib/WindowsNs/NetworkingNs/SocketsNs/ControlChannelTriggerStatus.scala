@@ -39,16 +39,16 @@ object ControlChannelTriggerStatus extends js.Object {
   sealed trait transportDisconnected
     extends winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerStatus
   
-  val hardwareSlotAllocated: hardwareSlotAllocated with java.lang.String = js.native
-  val hardwareSlotRequested: hardwareSlotRequested with java.lang.String = js.native
-  val policyError: policyError with java.lang.String = js.native
-  val serviceUnavailable: serviceUnavailable with java.lang.String = js.native
-  val softwareSlotAllocated: softwareSlotAllocated with java.lang.String = js.native
-  val systemError: systemError with java.lang.String = js.native
-  val transportDisconnected: transportDisconnected with java.lang.String = js.native
+  /* 2 */ val hardwareSlotAllocated: hardwareSlotAllocated with scala.Double = js.native
+  /* 0 */ val hardwareSlotRequested: hardwareSlotRequested with scala.Double = js.native
+  /* 3 */ val policyError: policyError with scala.Double = js.native
+  /* 6 */ val serviceUnavailable: serviceUnavailable with scala.Double = js.native
+  /* 1 */ val softwareSlotAllocated: softwareSlotAllocated with scala.Double = js.native
+  /* 4 */ val systemError: systemError with scala.Double = js.native
+  /* 5 */ val transportDisconnected: transportDisconnected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.SocketsNs.ControlChannelTriggerStatus with scala.Double
   ] = js.native
 }
 

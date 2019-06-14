@@ -37,14 +37,14 @@ object SerialParity extends js.Object {
   sealed trait space
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialParity
   
-  val even: even with java.lang.String = js.native
-  val mark: mark with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val odd: odd with java.lang.String = js.native
-  val space: space with java.lang.String = js.native
+  /* 2 */ val even: even with scala.Double = js.native
+  /* 3 */ val mark: mark with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val odd: odd with scala.Double = js.native
+  /* 4 */ val space: space with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialParity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialParity with scala.Double
   ] = js.native
 }
 

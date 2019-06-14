@@ -23,12 +23,12 @@ object FeedbackType extends js.Object {
   sealed trait INCORRECT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.FeedbackType
   
-  val CORRECT: CORRECT with java.lang.String = js.native
-  val GENERAL: GENERAL with java.lang.String = js.native
-  val INCORRECT: INCORRECT with java.lang.String = js.native
+  /* 0 */ val CORRECT: CORRECT with scala.Double = js.native
+  /* 2 */ val GENERAL: GENERAL with scala.Double = js.native
+  /* 1 */ val INCORRECT: INCORRECT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.FeedbackType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.FeedbackType with scala.Double
   ] = js.native
 }
 

@@ -26,10 +26,10 @@ object Direction extends js.Object {
   sealed trait Right
     extends ejDotWebDotAllLib.ejNs.Direction
   
-  val Left: Left with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 0 */ val Left: Left with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.Direction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.Direction with scala.Double] = js.native
 }
 

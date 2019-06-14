@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MsoPictureCompress extends js.Object
 
+object MsoPictureCompress {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoPictureCompressDocDefault: activexDashOfficeLib.activexDashOfficeLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def msoPictureCompressFalse: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoPictureCompressTrue: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

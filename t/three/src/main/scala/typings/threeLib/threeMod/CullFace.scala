@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object CullFace extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.CullFace with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.CullFace with scala.Nothing] = js.native
 }
 

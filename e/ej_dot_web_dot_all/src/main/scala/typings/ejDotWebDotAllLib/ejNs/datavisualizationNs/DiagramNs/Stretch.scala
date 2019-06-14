@@ -32,13 +32,11 @@ object Stretch extends js.Object {
   sealed trait UniformToFill
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Stretch
   
-  val Fill: Fill with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Uniform: Uniform with java.lang.String = js.native
-  val UniformToFill: UniformToFill with java.lang.String = js.native
+  /* 1 */ val Fill: Fill with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val Uniform: Uniform with scala.Double = js.native
+  /* 3 */ val UniformToFill: UniformToFill with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Stretch with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Stretch with scala.Double] = js.native
 }
 

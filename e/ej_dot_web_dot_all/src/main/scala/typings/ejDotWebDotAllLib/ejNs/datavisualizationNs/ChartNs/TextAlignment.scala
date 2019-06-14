@@ -26,12 +26,12 @@ object TextAlignment extends js.Object {
   sealed trait MiddleTop
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.TextAlignment
   
-  val MiddleBottom: MiddleBottom with java.lang.String = js.native
-  val MiddleCenter: MiddleCenter with java.lang.String = js.native
-  val MiddleTop: MiddleTop with java.lang.String = js.native
+  /* 2 */ val MiddleBottom: MiddleBottom with scala.Double = js.native
+  /* 1 */ val MiddleCenter: MiddleCenter with scala.Double = js.native
+  /* 0 */ val MiddleTop: MiddleTop with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.TextAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.TextAlignment with scala.Double
   ] = js.native
 }
 

@@ -79,24 +79,24 @@ object VehicleType extends js.Object {
   sealed trait TROLLEYBUS
     extends googlemapsLib.googleNs.mapsNs.VehicleType
   
-  val BUS: BUS with java.lang.String = js.native
-  val CABLE_CAR: CABLE_CAR with java.lang.String = js.native
-  val COMMUTER_TRAIN: COMMUTER_TRAIN with java.lang.String = js.native
-  val FERRY: FERRY with java.lang.String = js.native
-  val FUNICULAR: FUNICULAR with java.lang.String = js.native
-  val GONDOLA_LIFT: GONDOLA_LIFT with java.lang.String = js.native
-  val HEAVY_RAIL: HEAVY_RAIL with java.lang.String = js.native
-  val HIGH_SPEED_TRAIN: HIGH_SPEED_TRAIN with java.lang.String = js.native
-  val INTERCITY_BUS: INTERCITY_BUS with java.lang.String = js.native
-  val METRO_RAIL: METRO_RAIL with java.lang.String = js.native
-  val MONORAIL: MONORAIL with java.lang.String = js.native
-  val OTHER: OTHER with java.lang.String = js.native
-  val RAIL: RAIL with java.lang.String = js.native
-  val SHARE_TAXI: SHARE_TAXI with java.lang.String = js.native
-  val SUBWAY: SUBWAY with java.lang.String = js.native
-  val TRAM: TRAM with java.lang.String = js.native
-  val TROLLEYBUS: TROLLEYBUS with java.lang.String = js.native
+  /* 0 */ val BUS: BUS with scala.Double = js.native
+  /* 1 */ val CABLE_CAR: CABLE_CAR with scala.Double = js.native
+  /* 2 */ val COMMUTER_TRAIN: COMMUTER_TRAIN with scala.Double = js.native
+  /* 3 */ val FERRY: FERRY with scala.Double = js.native
+  /* 4 */ val FUNICULAR: FUNICULAR with scala.Double = js.native
+  /* 5 */ val GONDOLA_LIFT: GONDOLA_LIFT with scala.Double = js.native
+  /* 6 */ val HEAVY_RAIL: HEAVY_RAIL with scala.Double = js.native
+  /* 7 */ val HIGH_SPEED_TRAIN: HIGH_SPEED_TRAIN with scala.Double = js.native
+  /* 8 */ val INTERCITY_BUS: INTERCITY_BUS with scala.Double = js.native
+  /* 9 */ val METRO_RAIL: METRO_RAIL with scala.Double = js.native
+  /* 10 */ val MONORAIL: MONORAIL with scala.Double = js.native
+  /* 11 */ val OTHER: OTHER with scala.Double = js.native
+  /* 12 */ val RAIL: RAIL with scala.Double = js.native
+  /* 13 */ val SHARE_TAXI: SHARE_TAXI with scala.Double = js.native
+  /* 14 */ val SUBWAY: SUBWAY with scala.Double = js.native
+  /* 15 */ val TRAM: TRAM with scala.Double = js.native
+  /* 16 */ val TROLLEYBUS: TROLLEYBUS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.VehicleType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.VehicleType with scala.Double] = js.native
 }
 

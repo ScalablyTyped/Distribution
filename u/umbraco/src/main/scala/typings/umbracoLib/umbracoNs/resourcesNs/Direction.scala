@@ -22,9 +22,9 @@ object Direction extends js.Object {
   sealed trait Descending
     extends umbracoLib.umbracoNs.resourcesNs.Direction
   
-  val Ascending: Ascending with java.lang.String = js.native
-  val Descending: Descending with java.lang.String = js.native
+  /* 0 */ val Ascending: Ascending with scala.Double = js.native
+  /* 1 */ val Descending: Descending with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.Direction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.Direction with scala.Double] = js.native
 }
 

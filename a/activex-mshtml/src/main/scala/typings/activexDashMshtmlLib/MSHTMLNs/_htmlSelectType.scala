@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _htmlSelectType extends js.Object
 
+object _htmlSelectType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def htmlSelectTypeSelectMultiple: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def htmlSelectTypeSelectOne: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def htmlSelectType_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

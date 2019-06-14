@@ -19,11 +19,9 @@ object ThumbnailType extends js.Object {
   sealed trait image
     extends winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailType
   
-  val icon: icon with java.lang.String = js.native
-  val image: image with java.lang.String = js.native
+  /* 1 */ val icon: icon with scala.Double = js.native
+  /* 0 */ val image: image with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailType with scala.Double] = js.native
 }
 

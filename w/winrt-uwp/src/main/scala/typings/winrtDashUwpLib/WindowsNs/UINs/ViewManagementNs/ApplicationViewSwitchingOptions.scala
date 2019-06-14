@@ -27,12 +27,12 @@ object ApplicationViewSwitchingOptions extends js.Object {
   sealed trait skipAnimation
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewSwitchingOptions
   
-  val consolidateViews: consolidateViews with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val skipAnimation: skipAnimation with java.lang.String = js.native
+  /* 2 */ val consolidateViews: consolidateViews with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val skipAnimation: skipAnimation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewSwitchingOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewSwitchingOptions with scala.Double
   ] = js.native
 }
 

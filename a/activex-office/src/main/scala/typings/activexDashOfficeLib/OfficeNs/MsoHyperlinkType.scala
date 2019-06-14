@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MsoHyperlinkType extends js.Object
 
+object MsoHyperlinkType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoHyperlinkInlineShape: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoHyperlinkRange: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoHyperlinkShape: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

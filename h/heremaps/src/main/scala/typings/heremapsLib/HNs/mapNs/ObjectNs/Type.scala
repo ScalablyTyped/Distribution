@@ -44,13 +44,13 @@ object Type extends js.Object {
   sealed trait SPATIAL
     extends heremapsLib.HNs.mapNs.ObjectNs.Type
   
-  val ANY: ANY with java.lang.String = js.native
-  val DOM_MARKER: DOM_MARKER with java.lang.String = js.native
-  val GROUP: GROUP with java.lang.String = js.native
-  val MARKER: MARKER with java.lang.String = js.native
-  val OVERLAY: OVERLAY with java.lang.String = js.native
-  val SPATIAL: SPATIAL with java.lang.String = js.native
+  /* 0 */ val ANY: ANY with scala.Double = js.native
+  /* 4 */ val DOM_MARKER: DOM_MARKER with scala.Double = js.native
+  /* 5 */ val GROUP: GROUP with scala.Double = js.native
+  /* 3 */ val MARKER: MARKER with scala.Double = js.native
+  /* 1 */ val OVERLAY: OVERLAY with scala.Double = js.native
+  /* 2 */ val SPATIAL: SPATIAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.mapNs.ObjectNs.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.mapNs.ObjectNs.Type with scala.Double] = js.native
 }
 

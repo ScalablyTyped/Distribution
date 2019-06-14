@@ -22,9 +22,9 @@ object SelectListKeyboardNavigationMode extends js.Object {
   sealed trait None
     extends openui5Lib.sapNs.mNs.SelectListKeyboardNavigationMode
   
-  val Delimited: Delimited with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 0 */ val Delimited: Delimited with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.SelectListKeyboardNavigationMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.SelectListKeyboardNavigationMode with scala.Double] = js.native
 }
 

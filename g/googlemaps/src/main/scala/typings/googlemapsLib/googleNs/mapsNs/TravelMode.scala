@@ -27,11 +27,11 @@ object TravelMode extends js.Object {
   sealed trait WALKING
     extends googlemapsLib.googleNs.mapsNs.TravelMode
   
-  val BICYCLING: BICYCLING with java.lang.String = js.native
-  val DRIVING: DRIVING with java.lang.String = js.native
-  val TRANSIT: TRANSIT with java.lang.String = js.native
-  val WALKING: WALKING with java.lang.String = js.native
+  /* 0 */ val BICYCLING: BICYCLING with scala.Double = js.native
+  /* 1 */ val DRIVING: DRIVING with scala.Double = js.native
+  /* 2 */ val TRANSIT: TRANSIT with scala.Double = js.native
+  /* 3 */ val WALKING: WALKING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.TravelMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.TravelMode with scala.Double] = js.native
 }
 

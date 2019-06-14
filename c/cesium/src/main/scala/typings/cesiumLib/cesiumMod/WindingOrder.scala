@@ -19,9 +19,9 @@ object WindingOrder extends js.Object {
   sealed trait COUNTER_CLOCKWISE
     extends cesiumLib.cesiumMod.WindingOrder
   
-  val CLOCKWISE: CLOCKWISE with java.lang.String = js.native
-  val COUNTER_CLOCKWISE: COUNTER_CLOCKWISE with java.lang.String = js.native
+  /* 0 */ val CLOCKWISE: CLOCKWISE with scala.Double = js.native
+  /* 1 */ val COUNTER_CLOCKWISE: COUNTER_CLOCKWISE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.WindingOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.WindingOrder with scala.Double] = js.native
 }
 

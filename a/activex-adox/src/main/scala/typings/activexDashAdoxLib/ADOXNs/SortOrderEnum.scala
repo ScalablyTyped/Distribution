@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait SortOrderEnum extends js.Object
 
+object SortOrderEnum {
+  @scala.inline
+  def adSortAscending: activexDashAdoxLib.activexDashAdoxLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def adSortDescending: activexDashAdoxLib.activexDashAdoxLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

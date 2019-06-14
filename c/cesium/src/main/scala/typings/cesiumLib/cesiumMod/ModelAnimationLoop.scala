@@ -23,10 +23,10 @@ object ModelAnimationLoop extends js.Object {
   sealed trait REPEAT
     extends cesiumLib.cesiumMod.ModelAnimationLoop
   
-  val MIRRORED_REPEAT: MIRRORED_REPEAT with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val REPEAT: REPEAT with java.lang.String = js.native
+  /* 2 */ val MIRRORED_REPEAT: MIRRORED_REPEAT with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 1 */ val REPEAT: REPEAT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.ModelAnimationLoop with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.ModelAnimationLoop with scala.Double] = js.native
 }
 

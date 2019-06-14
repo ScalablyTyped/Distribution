@@ -27,11 +27,11 @@ object Protects extends js.Object {
   sealed trait ipRight
     extends jsDashClipperLib.ClipperLibNs.Protects
   
-  val ipBoth: ipBoth with java.lang.String = js.native
-  val ipLeft: ipLeft with java.lang.String = js.native
-  val ipNone: ipNone with java.lang.String = js.native
-  val ipRight: ipRight with java.lang.String = js.native
+  /* 3 */ val ipBoth: ipBoth with scala.Double = js.native
+  /* 1 */ val ipLeft: ipLeft with scala.Double = js.native
+  /* 0 */ val ipNone: ipNone with scala.Double = js.native
+  /* 2 */ val ipRight: ipRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.Protects with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.Protects with scala.Double] = js.native
 }
 

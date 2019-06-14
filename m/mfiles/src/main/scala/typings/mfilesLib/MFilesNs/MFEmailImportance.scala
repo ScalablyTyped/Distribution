@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MFEmailImportance extends js.Object
 
+object MFEmailImportance {
+  @scala.inline
+  def High: mfilesLib.mfilesLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def Low: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def Normal: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

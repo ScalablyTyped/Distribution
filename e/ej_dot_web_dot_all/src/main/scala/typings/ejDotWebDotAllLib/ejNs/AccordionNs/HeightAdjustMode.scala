@@ -26,10 +26,10 @@ object HeightAdjustMode extends js.Object {
   sealed trait Fill
     extends ejDotWebDotAllLib.ejNs.AccordionNs.HeightAdjustMode
   
-  val Auto: Auto with java.lang.String = js.native
-  val Content: Content with java.lang.String = js.native
-  val Fill: Fill with java.lang.String = js.native
+  /* 1 */ val Auto: Auto with scala.Double = js.native
+  /* 0 */ val Content: Content with scala.Double = js.native
+  /* 2 */ val Fill: Fill with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.AccordionNs.HeightAdjustMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.AccordionNs.HeightAdjustMode with scala.Double] = js.native
 }
 

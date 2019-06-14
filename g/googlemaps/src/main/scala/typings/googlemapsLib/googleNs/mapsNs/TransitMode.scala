@@ -31,12 +31,12 @@ object TransitMode extends js.Object {
   sealed trait TRAM
     extends googlemapsLib.googleNs.mapsNs.TransitMode
   
-  val BUS: BUS with java.lang.String = js.native
-  val RAIL: RAIL with java.lang.String = js.native
-  val SUBWAY: SUBWAY with java.lang.String = js.native
-  val TRAIN: TRAIN with java.lang.String = js.native
-  val TRAM: TRAM with java.lang.String = js.native
+  /* 0 */ val BUS: BUS with scala.Double = js.native
+  /* 1 */ val RAIL: RAIL with scala.Double = js.native
+  /* 2 */ val SUBWAY: SUBWAY with scala.Double = js.native
+  /* 3 */ val TRAIN: TRAIN with scala.Double = js.native
+  /* 4 */ val TRAM: TRAM with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.TransitMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.TransitMode with scala.Double] = js.native
 }
 

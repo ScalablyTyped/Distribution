@@ -31,14 +31,14 @@ object PageType extends js.Object {
   sealed trait WEB_PAGE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SitesNs.PageType
   
-  val ANNOUNCEMENT: ANNOUNCEMENT with java.lang.String = js.native
-  val ANNOUNCEMENTS_PAGE: ANNOUNCEMENTS_PAGE with java.lang.String = js.native
-  val FILE_CABINET_PAGE: FILE_CABINET_PAGE with java.lang.String = js.native
-  val LIST_PAGE: LIST_PAGE with java.lang.String = js.native
-  val WEB_PAGE: WEB_PAGE with java.lang.String = js.native
+  /* 2 */ val ANNOUNCEMENT: ANNOUNCEMENT with scala.Double = js.native
+  /* 3 */ val ANNOUNCEMENTS_PAGE: ANNOUNCEMENTS_PAGE with scala.Double = js.native
+  /* 4 */ val FILE_CABINET_PAGE: FILE_CABINET_PAGE with scala.Double = js.native
+  /* 1 */ val LIST_PAGE: LIST_PAGE with scala.Double = js.native
+  /* 0 */ val WEB_PAGE: WEB_PAGE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SitesNs.PageType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SitesNs.PageType with scala.Double
   ] = js.native
 }
 

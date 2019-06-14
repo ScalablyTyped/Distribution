@@ -31,11 +31,11 @@ object FilterHierarchyMode extends js.Object {
   sealed trait Parent
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.FilterHierarchyMode
   
-  val Both: Both with java.lang.String = js.native
-  val Child: Child with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Parent: Parent with java.lang.String = js.native
+  /* 2 */ val Both: Both with scala.Double = js.native
+  /* 1 */ val Child: Child with scala.Double = js.native
+  /* 3 */ val None: None with scala.Double = js.native
+  /* 0 */ val Parent: Parent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.FilterHierarchyMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.FilterHierarchyMode with scala.Double] = js.native
 }
 

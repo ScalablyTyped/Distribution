@@ -11,6 +11,10 @@ trait ClusterState extends js.Object {
     */
   val allowVersionUpgrade: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
+    * Amazon Resource Name (ARN) of cluster
+    */
+  val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with create-cluster-snapshot. Default is 1.
     */
   val automatedSnapshotRetentionPeriod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -169,6 +173,7 @@ object ClusterState {
   @scala.inline
   def apply(
     allowVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     automatedSnapshotRetentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -206,6 +211,7 @@ object ClusterState {
   ): ClusterState = {
     val __obj = js.Dynamic.literal()
     if (allowVersionUpgrade != null) __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (automatedSnapshotRetentionPeriod != null) __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])

@@ -55,18 +55,18 @@ object SpectrumStyle extends js.Object {
   sealed trait YIOrRd
     extends navermapsLib.naverNs.mapsNs.visualizationNs.SpectrumStyle
   
-  val COOL: COOL with java.lang.String = js.native
-  val GREYS: GREYS with java.lang.String = js.native
-  val HOT: HOT with java.lang.String = js.native
-  val HSV: HSV with java.lang.String = js.native
-  val JET: JET with java.lang.String = js.native
-  val OXYGEN: OXYGEN with java.lang.String = js.native
-  val PORTLAND: PORTLAND with java.lang.String = js.native
-  val RAINBOW: RAINBOW with java.lang.String = js.native
-  val RdBu: RdBu with java.lang.String = js.native
-  val YIGnBu: YIGnBu with java.lang.String = js.native
-  val YIOrRd: YIOrRd with java.lang.String = js.native
+  /* 3 */ val COOL: COOL with scala.Double = js.native
+  /* 4 */ val GREYS: GREYS with scala.Double = js.native
+  /* 2 */ val HOT: HOT with scala.Double = js.native
+  /* 1 */ val HSV: HSV with scala.Double = js.native
+  /* 0 */ val JET: JET with scala.Double = js.native
+  /* 10 */ val OXYGEN: OXYGEN with scala.Double = js.native
+  /* 9 */ val PORTLAND: PORTLAND with scala.Double = js.native
+  /* 8 */ val RAINBOW: RAINBOW with scala.Double = js.native
+  /* 7 */ val RdBu: RdBu with scala.Double = js.native
+  /* 5 */ val YIGnBu: YIGnBu with scala.Double = js.native
+  /* 6 */ val YIOrRd: YIOrRd with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[navermapsLib.naverNs.mapsNs.visualizationNs.SpectrumStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.visualizationNs.SpectrumStyle with scala.Double] = js.native
 }
 

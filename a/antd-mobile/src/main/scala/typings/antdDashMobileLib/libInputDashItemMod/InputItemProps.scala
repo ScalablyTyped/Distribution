@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLInputElement>, 'onChange' | 'onFocus' | 'onBlur' | 'value' | 'defaultValue' | 'type'> ]: react.react.HTMLProps<std.HTMLInputElement>[P]} */ trait InputItemProps
   extends antdDashMobileLib.libInputDashItemPropsTypeMod.InputItemPropsType {
+  var autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var onErrorClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var onExtraClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
@@ -18,6 +19,7 @@ import scala.scalajs.js.annotation._
 object InputItemProps {
   @scala.inline
   def apply(
+    autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     clear: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: java.lang.String = null,
@@ -48,6 +50,7 @@ object InputItemProps {
     value: java.lang.String = null
   ): InputItemProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

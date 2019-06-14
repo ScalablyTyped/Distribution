@@ -21,9 +21,9 @@ object ShapeType extends js.Object {
   sealed trait polyline
     extends bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.ShapeType
   
-  val polygon: polygon with java.lang.String = js.native
-  val polyline: polyline with java.lang.String = js.native
+  /* 0 */ val polygon: polygon with scala.Double = js.native
+  /* 1 */ val polyline: polyline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.ShapeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.ShapeType with scala.Double] = js.native
 }
 

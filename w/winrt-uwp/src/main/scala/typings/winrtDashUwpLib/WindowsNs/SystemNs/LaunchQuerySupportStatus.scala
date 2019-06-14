@@ -37,14 +37,12 @@ object LaunchQuerySupportStatus extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.SystemNs.LaunchQuerySupportStatus
   
-  val appNotInstalled: appNotInstalled with java.lang.String = js.native
-  val appUnavailable: appUnavailable with java.lang.String = js.native
-  val available: available with java.lang.String = js.native
-  val notSupported: notSupported with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val appNotInstalled: appNotInstalled with scala.Double = js.native
+  /* 2 */ val appUnavailable: appUnavailable with scala.Double = js.native
+  /* 0 */ val available: available with scala.Double = js.native
+  /* 3 */ val notSupported: notSupported with scala.Double = js.native
+  /* 4 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SystemNs.LaunchQuerySupportStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.LaunchQuerySupportStatus with scala.Double] = js.native
 }
 

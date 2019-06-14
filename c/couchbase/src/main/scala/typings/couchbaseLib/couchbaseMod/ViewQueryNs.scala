@@ -36,10 +36,10 @@ object ViewQueryNs extends js.Object {
     sealed trait STOP
       extends couchbaseLib.couchbaseMod.ViewQueryNs.ErrorMode
     
-    val CONTINUE: CONTINUE with java.lang.String = js.native
-    val STOP: STOP with java.lang.String = js.native
+    /* 0 */ val CONTINUE: CONTINUE with scala.Double = js.native
+    /* 1 */ val STOP: STOP with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.ViewQueryNs.ErrorMode with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.ViewQueryNs.ErrorMode with scala.Double] = js.native
   }
   
   /**
@@ -61,10 +61,10 @@ object ViewQueryNs extends js.Object {
     sealed trait DESCENDING
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Order
     
-    val ASCENDING: ASCENDING with java.lang.String = js.native
-    val DESCENDING: DESCENDING with java.lang.String = js.native
+    /* 0 */ val ASCENDING: ASCENDING with scala.Double = js.native
+    /* 1 */ val DESCENDING: DESCENDING with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.ViewQueryNs.Order with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.ViewQueryNs.Order with scala.Double] = js.native
   }
   
   /**
@@ -93,11 +93,11 @@ object ViewQueryNs extends js.Object {
     sealed trait NONE
       extends couchbaseLib.couchbaseMod.ViewQueryNs.Update
     
-    val AFTER: AFTER with java.lang.String = js.native
-    val BEFORE: BEFORE with java.lang.String = js.native
-    val NONE: NONE with java.lang.String = js.native
+    /* 2 */ val AFTER: AFTER with scala.Double = js.native
+    /* 0 */ val BEFORE: BEFORE with scala.Double = js.native
+    /* 1 */ val NONE: NONE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.ViewQueryNs.Update with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.ViewQueryNs.Update with scala.Double] = js.native
   }
   
 }

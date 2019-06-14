@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   var allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined
   var children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]]
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var classNames: js.UndefOr[js.Any] = js.undefined
   var inputRef: js.UndefOr[
     reactLib.reactMod.RefObject[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement]
   ] = js.undefined
@@ -50,6 +51,7 @@ object MentionsInputProps {
     children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]],
     allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
+    classNames: js.Any = null,
     inputRef: reactLib.reactMod.RefObject[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement] = null,
     onBlur: (/* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
     onChange: OnChangeHandlerFunc = null,
@@ -64,6 +66,7 @@ object MentionsInputProps {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSpaceInQuery)) __obj.updateDynamic("allowSpaceInQuery")(allowSpaceInQuery)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)

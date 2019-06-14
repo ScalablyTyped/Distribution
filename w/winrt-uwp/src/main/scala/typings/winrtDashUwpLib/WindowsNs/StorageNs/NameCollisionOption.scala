@@ -27,10 +27,10 @@ object NameCollisionOption extends js.Object {
   sealed trait replaceExisting
     extends winrtDashUwpLib.WindowsNs.StorageNs.NameCollisionOption
   
-  val failIfExists: failIfExists with java.lang.String = js.native
-  val generateUniqueName: generateUniqueName with java.lang.String = js.native
-  val replaceExisting: replaceExisting with java.lang.String = js.native
+  /* 2 */ val failIfExists: failIfExists with scala.Double = js.native
+  /* 0 */ val generateUniqueName: generateUniqueName with scala.Double = js.native
+  /* 1 */ val replaceExisting: replaceExisting with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.NameCollisionOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.NameCollisionOption with scala.Double] = js.native
 }
 

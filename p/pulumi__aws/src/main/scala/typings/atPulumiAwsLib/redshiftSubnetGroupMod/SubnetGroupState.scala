@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait SubnetGroupState extends js.Object {
   /**
+    * Amazon Resource Name (ARN) of the Redshift Subnet group name
+    */
+  val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The description of the Redshift Subnet group. Defaults to "Managed by Terraform".
     */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -29,12 +33,14 @@ trait SubnetGroupState extends js.Object {
 object SubnetGroupState {
   @scala.inline
   def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): SubnetGroupState = {
     val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])

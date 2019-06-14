@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait Endian extends js.Object
 
+object Endian {
+  @scala.inline
+  def Big: fridaDashGumLib.fridaDashGumLibStrings.be = this.cast("be")
+  @scala.inline
+  def Little: fridaDashGumLib.fridaDashGumLibStrings.le = this.cast("le")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

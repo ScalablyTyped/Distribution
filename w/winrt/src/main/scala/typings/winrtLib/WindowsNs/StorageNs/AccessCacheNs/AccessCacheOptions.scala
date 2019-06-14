@@ -31,14 +31,12 @@ object AccessCacheOptions extends js.Object {
   sealed trait useReadOnlyCachedCopy
     extends winrtLib.WindowsNs.StorageNs.AccessCacheNs.AccessCacheOptions
   
-  val disallowUserInput: disallowUserInput with java.lang.String = js.native
-  val fastLocationsOnly: fastLocationsOnly with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val suppressAccessTimeUpdate: suppressAccessTimeUpdate with java.lang.String = js.native
-  val useReadOnlyCachedCopy: useReadOnlyCachedCopy with java.lang.String = js.native
+  /* 1 */ val disallowUserInput: disallowUserInput with scala.Double = js.native
+  /* 2 */ val fastLocationsOnly: fastLocationsOnly with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val suppressAccessTimeUpdate: suppressAccessTimeUpdate with scala.Double = js.native
+  /* 3 */ val useReadOnlyCachedCopy: useReadOnlyCachedCopy with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.AccessCacheNs.AccessCacheOptions with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.AccessCacheNs.AccessCacheOptions with scala.Double] = js.native
 }
 

@@ -24,9 +24,9 @@ object State extends js.Object {
   sealed trait OPEN
     extends heremapsLib.HNs.uiNs.InfoBubbleNs.State
   
-  val CLOSED: CLOSED with java.lang.String = js.native
-  val OPEN: OPEN with java.lang.String = js.native
+  /* 1 */ val CLOSED: CLOSED with scala.Double = js.native
+  /* 0 */ val OPEN: OPEN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.uiNs.InfoBubbleNs.State with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.uiNs.InfoBubbleNs.State with scala.Double] = js.native
 }
 

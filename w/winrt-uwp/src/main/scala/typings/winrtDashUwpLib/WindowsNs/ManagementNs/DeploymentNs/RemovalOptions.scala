@@ -22,11 +22,11 @@ object RemovalOptions extends js.Object {
   sealed trait preserveApplicationData
     extends winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.RemovalOptions
   
-  val none: none with java.lang.String = js.native
-  val preserveApplicationData: preserveApplicationData with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val preserveApplicationData: preserveApplicationData with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.RemovalOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.RemovalOptions with scala.Double
   ] = js.native
 }
 

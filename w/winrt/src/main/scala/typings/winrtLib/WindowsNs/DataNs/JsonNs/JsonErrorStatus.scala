@@ -31,12 +31,12 @@ object JsonErrorStatus extends js.Object {
   sealed trait unknown
     extends winrtLib.WindowsNs.DataNs.JsonNs.JsonErrorStatus
   
-  val implementationLimit: implementationLimit with java.lang.String = js.native
-  val invalidJsonNumber: invalidJsonNumber with java.lang.String = js.native
-  val invalidJsonString: invalidJsonString with java.lang.String = js.native
-  val jsonValueNotFound: jsonValueNotFound with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 4 */ val implementationLimit: implementationLimit with scala.Double = js.native
+  /* 2 */ val invalidJsonNumber: invalidJsonNumber with scala.Double = js.native
+  /* 1 */ val invalidJsonString: invalidJsonString with scala.Double = js.native
+  /* 3 */ val jsonValueNotFound: jsonValueNotFound with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DataNs.JsonNs.JsonErrorStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DataNs.JsonNs.JsonErrorStatus with scala.Double] = js.native
 }
 

@@ -21,9 +21,9 @@ object SelectionMode extends js.Object {
   sealed trait Row
     extends ejDotWebDotAllLib.ejNs.GanttNs.SelectionMode
   
-  val Cell: Cell with java.lang.String = js.native
-  val Row: Row with java.lang.String = js.native
+  /* 1 */ val Cell: Cell with scala.Double = js.native
+  /* 0 */ val Row: Row with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.SelectionMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.SelectionMode with scala.Double] = js.native
 }
 

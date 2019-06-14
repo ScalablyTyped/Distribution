@@ -30,11 +30,11 @@ object ExportStatus extends js.Object {
   sealed trait started
     extends sharepointLib.SPNs.DiscoveryNs.ExportStatus
   
-  val complete: complete with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val notStarted: notStarted with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
+  /* 2 */ val complete: complete with scala.Double = js.native
+  /* 3 */ val failed: failed with scala.Double = js.native
+  /* 0 */ val notStarted: notStarted with scala.Double = js.native
+  /* 1 */ val started: started with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.DiscoveryNs.ExportStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.DiscoveryNs.ExportStatus with scala.Double] = js.native
 }
 

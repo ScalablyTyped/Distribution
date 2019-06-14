@@ -23,12 +23,12 @@ object ColumnType extends js.Object {
   sealed trait STRING
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ColumnType
   
-  val DATE: DATE with java.lang.String = js.native
-  val NUMBER: NUMBER with java.lang.String = js.native
-  val STRING: STRING with java.lang.String = js.native
+  /* 0 */ val DATE: DATE with scala.Double = js.native
+  /* 1 */ val NUMBER: NUMBER with scala.Double = js.native
+  /* 2 */ val STRING: STRING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ColumnType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ColumnType with scala.Double
   ] = js.native
 }
 

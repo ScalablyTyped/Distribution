@@ -19,11 +19,11 @@ object XFrameOptionsMode extends js.Object {
   sealed trait DEFAULT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.HTMLNs.XFrameOptionsMode
   
-  val ALLOWALL: ALLOWALL with java.lang.String = js.native
-  val DEFAULT: DEFAULT with java.lang.String = js.native
+  /* 0 */ val ALLOWALL: ALLOWALL with scala.Double = js.native
+  /* 1 */ val DEFAULT: DEFAULT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.HTMLNs.XFrameOptionsMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.HTMLNs.XFrameOptionsMode with scala.Double
   ] = js.native
 }
 

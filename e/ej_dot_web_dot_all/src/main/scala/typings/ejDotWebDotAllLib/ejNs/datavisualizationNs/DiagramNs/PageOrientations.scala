@@ -21,11 +21,11 @@ object PageOrientations extends js.Object {
   sealed trait Portrait
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PageOrientations
   
-  val Landscape: Landscape with java.lang.String = js.native
-  val Portrait: Portrait with java.lang.String = js.native
+  /* 0 */ val Landscape: Landscape with scala.Double = js.native
+  /* 1 */ val Portrait: Portrait with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PageOrientations with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PageOrientations with scala.Double
   ] = js.native
 }
 

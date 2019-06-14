@@ -27,13 +27,13 @@ object Position extends js.Object {
   sealed trait TOP
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Position
   
-  val BOTTOM: BOTTOM with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
-  val TOP: TOP with java.lang.String = js.native
+  /* 2 */ val BOTTOM: BOTTOM with scala.Double = js.native
+  /* 3 */ val NONE: NONE with scala.Double = js.native
+  /* 1 */ val RIGHT: RIGHT with scala.Double = js.native
+  /* 0 */ val TOP: TOP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Position with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Position with scala.Double
   ] = js.native
 }
 

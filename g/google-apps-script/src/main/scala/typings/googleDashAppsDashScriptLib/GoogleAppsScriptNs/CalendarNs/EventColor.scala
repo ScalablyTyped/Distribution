@@ -55,20 +55,20 @@ object EventColor extends js.Object {
   sealed trait YELLOW
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.EventColor
   
-  val BLUE: BLUE with java.lang.String = js.native
-  val CYAN: CYAN with java.lang.String = js.native
-  val GRAY: GRAY with java.lang.String = js.native
-  val GREEN: GREEN with java.lang.String = js.native
-  val MAUVE: MAUVE with java.lang.String = js.native
-  val ORANGE: ORANGE with java.lang.String = js.native
-  val PALE_BLUE: PALE_BLUE with java.lang.String = js.native
-  val PALE_GREEN: PALE_GREEN with java.lang.String = js.native
-  val PALE_RED: PALE_RED with java.lang.String = js.native
-  val RED: RED with java.lang.String = js.native
-  val YELLOW: YELLOW with java.lang.String = js.native
+  /* 8 */ val BLUE: BLUE with scala.Double = js.native
+  /* 6 */ val CYAN: CYAN with scala.Double = js.native
+  /* 7 */ val GRAY: GRAY with scala.Double = js.native
+  /* 9 */ val GREEN: GREEN with scala.Double = js.native
+  /* 2 */ val MAUVE: MAUVE with scala.Double = js.native
+  /* 5 */ val ORANGE: ORANGE with scala.Double = js.native
+  /* 0 */ val PALE_BLUE: PALE_BLUE with scala.Double = js.native
+  /* 1 */ val PALE_GREEN: PALE_GREEN with scala.Double = js.native
+  /* 3 */ val PALE_RED: PALE_RED with scala.Double = js.native
+  /* 10 */ val RED: RED with scala.Double = js.native
+  /* 4 */ val YELLOW: YELLOW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.EventColor with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.EventColor with scala.Double
   ] = js.native
 }
 

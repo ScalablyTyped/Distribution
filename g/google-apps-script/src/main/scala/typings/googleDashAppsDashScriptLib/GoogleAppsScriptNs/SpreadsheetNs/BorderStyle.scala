@@ -35,15 +35,15 @@ object BorderStyle extends js.Object {
   sealed trait SOLID_THICK
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.BorderStyle
   
-  val DASHED: DASHED with java.lang.String = js.native
-  val DOTTED: DOTTED with java.lang.String = js.native
-  val DOUBLE: DOUBLE with java.lang.String = js.native
-  val SOLID: SOLID with java.lang.String = js.native
-  val SOLID_MEDIUM: SOLID_MEDIUM with java.lang.String = js.native
-  val SOLID_THICK: SOLID_THICK with java.lang.String = js.native
+  /* 1 */ val DASHED: DASHED with scala.Double = js.native
+  /* 0 */ val DOTTED: DOTTED with scala.Double = js.native
+  /* 5 */ val DOUBLE: DOUBLE with scala.Double = js.native
+  /* 2 */ val SOLID: SOLID with scala.Double = js.native
+  /* 3 */ val SOLID_MEDIUM: SOLID_MEDIUM with scala.Double = js.native
+  /* 4 */ val SOLID_THICK: SOLID_THICK with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.BorderStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.BorderStyle with scala.Double
   ] = js.native
 }
 

@@ -27,11 +27,11 @@ object BitmapPixelFormat extends js.Object {
   sealed trait unknown
     extends winrtLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat
   
-  val bgra8: bgra8 with java.lang.String = js.native
-  val rgba16: rgba16 with java.lang.String = js.native
-  val rgba8: rgba8 with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val bgra8: bgra8 with scala.Double = js.native
+  /* 1 */ val rgba16: rgba16 with scala.Double = js.native
+  /* 2 */ val rgba8: rgba8 with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat with scala.Double] = js.native
 }
 

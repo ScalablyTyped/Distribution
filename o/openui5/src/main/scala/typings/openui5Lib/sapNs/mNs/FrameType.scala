@@ -30,11 +30,11 @@ object FrameType extends js.Object {
   sealed trait TwoThirds
     extends openui5Lib.sapNs.mNs.FrameType
   
-  val Auto: Auto with java.lang.String = js.native
-  val OneByOne: OneByOne with java.lang.String = js.native
-  val TwoByOne: TwoByOne with java.lang.String = js.native
-  val TwoThirds: TwoThirds with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val OneByOne: OneByOne with scala.Double = js.native
+  /* 2 */ val TwoByOne: TwoByOne with scala.Double = js.native
+  /* 3 */ val TwoThirds: TwoThirds with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.FrameType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.FrameType with scala.Double] = js.native
 }
 

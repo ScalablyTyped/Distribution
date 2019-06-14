@@ -35,15 +35,13 @@ object SyndicationErrorStatus extends js.Object {
   sealed trait unsupportedFormat
     extends winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationErrorStatus
   
-  val invalidXml: invalidXml with java.lang.String = js.native
-  val missingRequiredAttribute: missingRequiredAttribute with java.lang.String = js.native
-  val missingRequiredElement: missingRequiredElement with java.lang.String = js.native
-  val unexpectedContent: unexpectedContent with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val unsupportedFormat: unsupportedFormat with java.lang.String = js.native
+  /* 3 */ val invalidXml: invalidXml with scala.Double = js.native
+  /* 2 */ val missingRequiredAttribute: missingRequiredAttribute with scala.Double = js.native
+  /* 1 */ val missingRequiredElement: missingRequiredElement with scala.Double = js.native
+  /* 4 */ val unexpectedContent: unexpectedContent with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 5 */ val unsupportedFormat: unsupportedFormat with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationErrorStatus with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationErrorStatus with scala.Double] = js.native
 }
 

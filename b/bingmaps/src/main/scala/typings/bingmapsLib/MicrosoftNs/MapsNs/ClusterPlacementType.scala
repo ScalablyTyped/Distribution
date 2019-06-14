@@ -27,9 +27,9 @@ object ClusterPlacementType extends js.Object {
   sealed trait MeanAverage
     extends bingmapsLib.MicrosoftNs.MapsNs.ClusterPlacementType
   
-  val FirstLocation: FirstLocation with java.lang.String = js.native
-  val MeanAverage: MeanAverage with java.lang.String = js.native
+  /* 1 */ val FirstLocation: FirstLocation with scala.Double = js.native
+  /* 0 */ val MeanAverage: MeanAverage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.ClusterPlacementType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.ClusterPlacementType with scala.Double] = js.native
 }
 

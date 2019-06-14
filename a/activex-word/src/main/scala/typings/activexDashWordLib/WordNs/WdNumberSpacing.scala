@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdNumberSpacing extends js.Object
 
+object WdNumberSpacing {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdNumberSpacingDefault: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdNumberSpacingProportional: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdNumberSpacingTabular: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

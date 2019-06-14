@@ -26,10 +26,10 @@ object DurationUnit extends js.Object {
   sealed trait Minute
     extends ejDotWebDotAllLib.ejNs.GanttNs.DurationUnit
   
-  val Day: Day with java.lang.String = js.native
-  val Hour: Hour with java.lang.String = js.native
-  val Minute: Minute with java.lang.String = js.native
+  /* 0 */ val Day: Day with scala.Double = js.native
+  /* 1 */ val Hour: Hour with scala.Double = js.native
+  /* 2 */ val Minute: Minute with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.DurationUnit with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.DurationUnit with scala.Double] = js.native
 }
 

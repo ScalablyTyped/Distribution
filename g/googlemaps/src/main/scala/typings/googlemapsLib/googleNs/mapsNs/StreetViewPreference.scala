@@ -19,9 +19,9 @@ object StreetViewPreference extends js.Object {
   sealed trait NEAREST
     extends googlemapsLib.googleNs.mapsNs.StreetViewPreference
   
-  val BEST: BEST with java.lang.String = js.native
-  val NEAREST: NEAREST with java.lang.String = js.native
+  /* 0 */ val BEST: BEST with scala.Double = js.native
+  /* 1 */ val NEAREST: NEAREST with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.StreetViewPreference with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.StreetViewPreference with scala.Double] = js.native
 }
 

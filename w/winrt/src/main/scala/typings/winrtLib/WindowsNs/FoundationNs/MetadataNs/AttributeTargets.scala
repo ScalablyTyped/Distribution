@@ -59,21 +59,19 @@ object AttributeTargets extends js.Object {
   sealed trait struct
     extends winrtLib.WindowsNs.FoundationNs.MetadataNs.AttributeTargets
   
-  val all: all with java.lang.String = js.native
-  val delegate: delegate with java.lang.String = js.native
-  val enum: enum with java.lang.String = js.native
-  val event: event with java.lang.String = js.native
-  val field: field with java.lang.String = js.native
-  val interface: interface with java.lang.String = js.native
-  val interfaceImpl: interfaceImpl with java.lang.String = js.native
-  val method: method with java.lang.String = js.native
-  val parameter: parameter with java.lang.String = js.native
-  val property: property with java.lang.String = js.native
-  val runtimeClass: runtimeClass with java.lang.String = js.native
-  val struct: struct with java.lang.String = js.native
+  /* 0 */ val all: all with scala.Double = js.native
+  /* 1 */ val delegate: delegate with scala.Double = js.native
+  /* 2 */ val enum: enum with scala.Double = js.native
+  /* 3 */ val event: event with scala.Double = js.native
+  /* 4 */ val field: field with scala.Double = js.native
+  /* 5 */ val interface: interface with scala.Double = js.native
+  /* 11 */ val interfaceImpl: interfaceImpl with scala.Double = js.native
+  /* 6 */ val method: method with scala.Double = js.native
+  /* 7 */ val parameter: parameter with scala.Double = js.native
+  /* 8 */ val property: property with scala.Double = js.native
+  /* 9 */ val runtimeClass: runtimeClass with scala.Double = js.native
+  /* 10 */ val struct: struct with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.FoundationNs.MetadataNs.AttributeTargets with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.FoundationNs.MetadataNs.AttributeTargets with scala.Double] = js.native
 }
 

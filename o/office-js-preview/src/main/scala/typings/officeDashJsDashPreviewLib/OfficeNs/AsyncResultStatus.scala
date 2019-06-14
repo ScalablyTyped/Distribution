@@ -33,9 +33,9 @@ object AsyncResultStatus extends js.Object {
   sealed trait Succeeded
     extends officeDashJsDashPreviewLib.OfficeNs.AsyncResultStatus
   
-  val Failed: Failed with java.lang.String = js.native
-  val Succeeded: Succeeded with java.lang.String = js.native
+  /* 1 */ val Failed: Failed with scala.Double = js.native
+  /* 0 */ val Succeeded: Succeeded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.AsyncResultStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.AsyncResultStatus with scala.Double] = js.native
 }
 

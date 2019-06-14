@@ -47,16 +47,14 @@ object PngFilterMode extends js.Object {
   sealed trait up
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.PngFilterMode
   
-  val adaptive: adaptive with java.lang.String = js.native
-  val automatic: automatic with java.lang.String = js.native
-  val average: average with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val paeth: paeth with java.lang.String = js.native
-  val sub: sub with java.lang.String = js.native
-  val up: up with java.lang.String = js.native
+  /* 6 */ val adaptive: adaptive with scala.Double = js.native
+  /* 0 */ val automatic: automatic with scala.Double = js.native
+  /* 4 */ val average: average with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 5 */ val paeth: paeth with scala.Double = js.native
+  /* 2 */ val sub: sub with scala.Double = js.native
+  /* 3 */ val up: up with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.PngFilterMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.PngFilterMode with scala.Double] = js.native
 }
 

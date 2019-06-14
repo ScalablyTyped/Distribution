@@ -23,7 +23,7 @@ object Animation extends js.Object {
     extends navermapsLib.naverNs.mapsNs.Animation
   
   /* 1 */ val BOUNCE: BOUNCE with scala.Double = js.native
-  val DROP: DROP with scala.Double = js.native
+  /* 0 */ val DROP: DROP with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.Animation with scala.Double] = js.native
 }

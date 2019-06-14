@@ -26,10 +26,10 @@ object SortOrder extends js.Object {
   sealed trait None
     extends ejDotWebDotAllLib.ejNs.ListBoxNs.SortOrder
   
-  val Ascending: Ascending with java.lang.String = js.native
-  val Descending: Descending with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 1 */ val Ascending: Ascending with scala.Double = js.native
+  /* 2 */ val Descending: Descending with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ListBoxNs.SortOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ListBoxNs.SortOrder with scala.Double] = js.native
 }
 

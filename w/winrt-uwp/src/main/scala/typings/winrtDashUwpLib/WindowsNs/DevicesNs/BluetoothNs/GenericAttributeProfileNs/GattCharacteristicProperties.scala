@@ -67,21 +67,21 @@ object GattCharacteristicProperties extends js.Object {
   sealed trait writeWithoutResponse
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattCharacteristicProperties
   
-  val authenticatedSignedWrites: authenticatedSignedWrites with java.lang.String = js.native
-  val broadcast: broadcast with java.lang.String = js.native
-  val extendedProperties: extendedProperties with java.lang.String = js.native
-  val indicate: indicate with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  @JSName("notify")
-  val notify_FGattCharacteristicProperties: notify with java.lang.String = js.native
-  val read: read with java.lang.String = js.native
-  val reliableWrites: reliableWrites with java.lang.String = js.native
-  val writableAuxiliaries: writableAuxiliaries with java.lang.String = js.native
-  val write: write with java.lang.String = js.native
-  val writeWithoutResponse: writeWithoutResponse with java.lang.String = js.native
+  /* 7 */ val authenticatedSignedWrites: authenticatedSignedWrites with scala.Double = js.native
+  /* 1 */ val broadcast: broadcast with scala.Double = js.native
+  /* 8 */ val extendedProperties: extendedProperties with scala.Double = js.native
+  /* 6 */ val indicate: indicate with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 5 */ @JSName("notify")
+  val notify_FGattCharacteristicProperties: notify with scala.Double = js.native
+  /* 2 */ val read: read with scala.Double = js.native
+  /* 9 */ val reliableWrites: reliableWrites with scala.Double = js.native
+  /* 10 */ val writableAuxiliaries: writableAuxiliaries with scala.Double = js.native
+  /* 4 */ val write: write with scala.Double = js.native
+  /* 3 */ val writeWithoutResponse: writeWithoutResponse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattCharacteristicProperties with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattCharacteristicProperties with scala.Double
   ] = js.native
 }
 

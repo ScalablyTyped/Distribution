@@ -19,9 +19,9 @@ object ReadActivationMode extends js.Object {
   sealed trait notNeeded
     extends winrtLib.WindowsNs.StorageNs.ProviderNs.ReadActivationMode
   
-  val beforeAccess: beforeAccess with java.lang.String = js.native
-  val notNeeded: notNeeded with java.lang.String = js.native
+  /* 1 */ val beforeAccess: beforeAccess with scala.Double = js.native
+  /* 0 */ val notNeeded: notNeeded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.ProviderNs.ReadActivationMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.ProviderNs.ReadActivationMode with scala.Double] = js.native
 }
 

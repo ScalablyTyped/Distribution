@@ -27,13 +27,13 @@ object Visibility extends js.Object {
   sealed trait PUBLIC
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.Visibility
   
-  val CONFIDENTIAL: CONFIDENTIAL with java.lang.String = js.native
-  val DEFAULT: DEFAULT with java.lang.String = js.native
-  val PRIVATE: PRIVATE with java.lang.String = js.native
-  val PUBLIC: PUBLIC with java.lang.String = js.native
+  /* 0 */ val CONFIDENTIAL: CONFIDENTIAL with scala.Double = js.native
+  /* 1 */ val DEFAULT: DEFAULT with scala.Double = js.native
+  /* 2 */ val PRIVATE: PRIVATE with scala.Double = js.native
+  /* 3 */ val PUBLIC: PUBLIC with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.Visibility with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.Visibility with scala.Double
   ] = js.native
 }
 

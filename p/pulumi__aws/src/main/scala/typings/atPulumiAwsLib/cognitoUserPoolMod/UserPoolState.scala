@@ -42,7 +42,7 @@ trait UserPoolState extends js.Object {
     * The Email Configuration.
     */
   val emailConfiguration: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ReplyToEmailAddressSourceArn]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EmailSendingAccountReplyToEmailAddress]
   ] = js.undefined
   /**
     * A string representing the email verification message. Conflicts with `verification_message_template` configuration block `email_message` argument.
@@ -133,7 +133,7 @@ object UserPoolState {
     autoVerifiedAttributes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     creationDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     deviceConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ChallengeRequiredOnNewDeviceDeviceOnlyRememberedOnUserPrompt] = null,
-    emailConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ReplyToEmailAddressSourceArn] = null,
+    emailConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EmailSendingAccountReplyToEmailAddress] = null,
     emailVerificationMessage: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     emailVerificationSubject: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

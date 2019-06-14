@@ -23,12 +23,12 @@ object MatchType extends js.Object {
   sealed trait PREFIX
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.MatchType
   
-  val ANY: ANY with java.lang.String = js.native
-  val EXACT: EXACT with java.lang.String = js.native
-  val PREFIX: PREFIX with java.lang.String = js.native
+  /* 2 */ val ANY: ANY with scala.Double = js.native
+  /* 0 */ val EXACT: EXACT with scala.Double = js.native
+  /* 1 */ val PREFIX: PREFIX with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.MatchType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.MatchType with scala.Double
   ] = js.native
 }
 

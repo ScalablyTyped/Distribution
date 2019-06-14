@@ -22,11 +22,11 @@ object BluetoothLEScanningMode extends js.Object {
   sealed trait passive
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEScanningMode
   
-  val active: active with java.lang.String = js.native
-  val passive: passive with java.lang.String = js.native
+  /* 1 */ val active: active with scala.Double = js.native
+  /* 0 */ val passive: passive with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEScanningMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEScanningMode with scala.Double
   ] = js.native
 }
 

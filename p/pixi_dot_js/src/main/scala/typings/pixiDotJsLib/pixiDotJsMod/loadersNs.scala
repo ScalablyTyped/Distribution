@@ -29,21 +29,21 @@ object loadersNs extends js.Object {
   
   val shared: pixiDotJsLib.PIXINs.loadersNs.Loader = js.native
   def encodeBinary(input: java.lang.String): java.lang.String = js.native
-  @js.native
-  object LOAD_TYPE extends js.Object {
-    val AUDIO: pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE.AUDIO with java.lang.String = js.native
-    val IMAGE: pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE.IMAGE with java.lang.String = js.native
-    val VIDEO: pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE.VIDEO with java.lang.String = js.native
-    val XHR: pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE.XHR with java.lang.String = js.native
-    @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE with java.lang.String] = js.native
-  }
-  
   /* static members */
   @js.native
   object Loader extends js.Object {
-    var Resource: pixiDotJsLib.TypeofClassResource = js.native
-    var async: pixiDotJsLib.TypeofClassResource = js.native
+    var Resource: pixiDotJsLib.TypeofResource with (org.scalablytyped.runtime.Instantiable3[
+        /* name */ java.lang.String, 
+        /* url */ java.lang.String | js.Array[java.lang.String], 
+        js.UndefOr[/* options */ pixiDotJsLib.PIXINs.loadersNs.LoaderOptions], 
+        pixiDotJsLib.PIXINs.loadersNs.Resource
+      ]) = js.native
+    var async: pixiDotJsLib.TypeofResource with (org.scalablytyped.runtime.Instantiable3[
+        /* name */ java.lang.String, 
+        /* url */ java.lang.String | js.Array[java.lang.String], 
+        js.UndefOr[/* options */ pixiDotJsLib.PIXINs.loadersNs.LoaderOptions], 
+        pixiDotJsLib.PIXINs.loadersNs.Resource
+      ]) = js.native
     @JSName("base64")
     var base64_Original: js.Function1[/* input */ java.lang.String, java.lang.String] = js.native
     @JSName("encodeBinary")
@@ -56,47 +56,57 @@ object loadersNs extends js.Object {
     def use(fn: js.Function1[/* repeated */ js.Any, _]): pixiDotJsLib.PIXINs.loadersNs.Loader = js.native
   }
   
-  /* static members */
+  @JSName("Resource")
   @js.native
-  object Resource extends js.Object {
-    var EMPTY_GIF: java.lang.String = js.native
-    def setExtensionLoadType(extname: java.lang.String, loadType: pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE): scala.Unit = js.native
-    def setExtensionXhrType(extname: java.lang.String, xhrType: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE): scala.Unit = js.native
-  }
-  
-  @js.native
-  object STATUS_FLAGS extends js.Object {
-    val COMPLETE: pixiDotJsLib.PIXINs.loadersNs.STATUS_FLAGS.COMPLETE with java.lang.String = js.native
-    val DATA_URL: pixiDotJsLib.PIXINs.loadersNs.STATUS_FLAGS.DATA_URL with java.lang.String = js.native
-    val LOADING: pixiDotJsLib.PIXINs.loadersNs.STATUS_FLAGS.LOADING with java.lang.String = js.native
-    val NONE: pixiDotJsLib.PIXINs.loadersNs.STATUS_FLAGS.NONE with java.lang.String = js.native
-    @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.STATUS_FLAGS with java.lang.String] = js.native
-  }
-  
-  @js.native
-  object TYPE extends js.Object {
-    val AUDIO: pixiDotJsLib.PIXINs.loadersNs.TYPE.AUDIO with java.lang.String = js.native
-    val IMAGE: pixiDotJsLib.PIXINs.loadersNs.TYPE.IMAGE with java.lang.String = js.native
-    val JSON: pixiDotJsLib.PIXINs.loadersNs.TYPE.JSON with java.lang.String = js.native
-    val TEXT: pixiDotJsLib.PIXINs.loadersNs.TYPE.TEXT with java.lang.String = js.native
-    val UNKNOWN: pixiDotJsLib.PIXINs.loadersNs.TYPE.UNKNOWN with java.lang.String = js.native
-    val VIDEO: pixiDotJsLib.PIXINs.loadersNs.TYPE.VIDEO with java.lang.String = js.native
-    val XML: pixiDotJsLib.PIXINs.loadersNs.TYPE.XML with java.lang.String = js.native
-    @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.TYPE with java.lang.String] = js.native
-  }
-  
-  @js.native
-  object XHR_RESPONSE_TYPE extends js.Object {
-    val BLOB: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE.BLOB with java.lang.String = js.native
-    val BUFFER: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE.BUFFER with java.lang.String = js.native
-    val DEFAULT: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE.DEFAULT with java.lang.String = js.native
-    val DOCUMENT: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE.DOCUMENT with java.lang.String = js.native
-    val JSON: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE.JSON with java.lang.String = js.native
-    val TEXT: pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE.TEXT with java.lang.String = js.native
-    @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE with java.lang.String] = js.native
+  object ResourceNs extends js.Object {
+    val EMPTY_GIF: java.lang.String = js.native
+    def setExtensionLoadType(extname: java.lang.String, loadType: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE): scala.Unit = js.native
+    def setExtensionXhrType(extname: java.lang.String, xhrType: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE): scala.Unit = js.native
+    @js.native
+    object LOAD_TYPE extends js.Object {
+      /* 2 */ val AUDIO: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE.AUDIO with scala.Double = js.native
+      /* 1 */ val IMAGE: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE.IMAGE with scala.Double = js.native
+      /* 3 */ val VIDEO: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE.VIDEO with scala.Double = js.native
+      /* 0 */ val XHR: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE.XHR with scala.Double = js.native
+      @JSBracketAccess
+      def apply(value: scala.Double): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.ResourceNs.LOAD_TYPE with scala.Double] = js.native
+    }
+    
+    @js.native
+    object STATUS_FLAGS extends js.Object {
+      /* 2 */ val COMPLETE: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.STATUS_FLAGS.COMPLETE with scala.Double = js.native
+      /* 1 */ val DATA_URL: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.STATUS_FLAGS.DATA_URL with scala.Double = js.native
+      /* 3 */ val LOADING: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.STATUS_FLAGS.LOADING with scala.Double = js.native
+      /* 0 */ val NONE: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.STATUS_FLAGS.NONE with scala.Double = js.native
+      @JSBracketAccess
+      def apply(value: scala.Double): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.ResourceNs.STATUS_FLAGS with scala.Double] = js.native
+    }
+    
+    @js.native
+    object TYPE extends js.Object {
+      /* 4 */ val AUDIO: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.AUDIO with scala.Double = js.native
+      /* 3 */ val IMAGE: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.IMAGE with scala.Double = js.native
+      /* 1 */ val JSON: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.JSON with scala.Double = js.native
+      /* 6 */ val TEXT: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.TEXT with scala.Double = js.native
+      /* 0 */ val UNKNOWN: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.UNKNOWN with scala.Double = js.native
+      /* 5 */ val VIDEO: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.VIDEO with scala.Double = js.native
+      /* 2 */ val XML: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE.XML with scala.Double = js.native
+      @JSBracketAccess
+      def apply(value: scala.Double): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.ResourceNs.TYPE with scala.Double] = js.native
+    }
+    
+    @js.native
+    object XHR_RESPONSE_TYPE extends js.Object {
+      /* 2 */ val BLOB: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE.BLOB with scala.Double = js.native
+      /* 1 */ val BUFFER: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE.BUFFER with scala.Double = js.native
+      /* 0 */ val DEFAULT: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE.DEFAULT with scala.Double = js.native
+      /* 3 */ val DOCUMENT: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE.DOCUMENT with scala.Double = js.native
+      /* 4 */ val JSON: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE.JSON with scala.Double = js.native
+      /* 5 */ val TEXT: pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE.TEXT with scala.Double = js.native
+      @JSBracketAccess
+      def apply(value: scala.Double): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.ResourceNs.XHR_RESPONSE_TYPE with scala.Double] = js.native
+    }
+    
   }
   
 }

@@ -31,11 +31,11 @@ object ContextMenuType extends js.Object {
   sealed trait RowHeader
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.ContextMenuType
   
-  val Cell: Cell with java.lang.String = js.native
-  val ColumnHeader: ColumnHeader with java.lang.String = js.native
-  val Footer: Footer with java.lang.String = js.native
-  val RowHeader: RowHeader with java.lang.String = js.native
+  /* 0 */ val Cell: Cell with scala.Double = js.native
+  /* 2 */ val ColumnHeader: ColumnHeader with scala.Double = js.native
+  /* 3 */ val Footer: Footer with scala.Double = js.native
+  /* 1 */ val RowHeader: RowHeader with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.ContextMenuType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.ContextMenuType with scala.Double] = js.native
 }
 

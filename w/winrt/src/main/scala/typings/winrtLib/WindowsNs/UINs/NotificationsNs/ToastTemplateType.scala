@@ -43,15 +43,15 @@ object ToastTemplateType extends js.Object {
   sealed trait toastText04
     extends winrtLib.WindowsNs.UINs.NotificationsNs.ToastTemplateType
   
-  val toastImageAndText01: toastImageAndText01 with java.lang.String = js.native
-  val toastImageAndText02: toastImageAndText02 with java.lang.String = js.native
-  val toastImageAndText03: toastImageAndText03 with java.lang.String = js.native
-  val toastImageAndText04: toastImageAndText04 with java.lang.String = js.native
-  val toastText01: toastText01 with java.lang.String = js.native
-  val toastText02: toastText02 with java.lang.String = js.native
-  val toastText03: toastText03 with java.lang.String = js.native
-  val toastText04: toastText04 with java.lang.String = js.native
+  /* 0 */ val toastImageAndText01: toastImageAndText01 with scala.Double = js.native
+  /* 1 */ val toastImageAndText02: toastImageAndText02 with scala.Double = js.native
+  /* 2 */ val toastImageAndText03: toastImageAndText03 with scala.Double = js.native
+  /* 3 */ val toastImageAndText04: toastImageAndText04 with scala.Double = js.native
+  /* 4 */ val toastText01: toastText01 with scala.Double = js.native
+  /* 5 */ val toastText02: toastText02 with scala.Double = js.native
+  /* 6 */ val toastText03: toastText03 with scala.Double = js.native
+  /* 7 */ val toastText04: toastText04 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.NotificationsNs.ToastTemplateType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.NotificationsNs.ToastTemplateType with scala.Double] = js.native
 }
 

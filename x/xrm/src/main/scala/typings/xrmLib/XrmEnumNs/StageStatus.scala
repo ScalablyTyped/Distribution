@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
 */
 trait StageStatus extends js.Object
 
+object StageStatus {
+  @scala.inline
+  def Active: xrmLib.xrmLibStrings.active = this.cast("active")
+  @scala.inline
+  def Inactive: xrmLib.xrmLibStrings.inactive = this.cast("inactive")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

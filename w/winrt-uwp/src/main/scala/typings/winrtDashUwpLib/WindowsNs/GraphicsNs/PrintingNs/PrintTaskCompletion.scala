@@ -32,13 +32,13 @@ object PrintTaskCompletion extends js.Object {
   sealed trait submitted
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskCompletion
   
-  val abandoned: abandoned with java.lang.String = js.native
-  val canceled: canceled with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val submitted: submitted with java.lang.String = js.native
+  /* 0 */ val abandoned: abandoned with scala.Double = js.native
+  /* 1 */ val canceled: canceled with scala.Double = js.native
+  /* 2 */ val failed: failed with scala.Double = js.native
+  /* 3 */ val submitted: submitted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskCompletion with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskCompletion with scala.Double
   ] = js.native
 }
 

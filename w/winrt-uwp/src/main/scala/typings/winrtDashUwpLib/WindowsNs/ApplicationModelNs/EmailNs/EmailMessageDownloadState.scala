@@ -32,13 +32,13 @@ object EmailMessageDownloadState extends js.Object {
   sealed trait partiallyDownloaded
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMessageDownloadState
   
-  val downloaded: downloaded with java.lang.String = js.native
-  val downloading: downloading with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val partiallyDownloaded: partiallyDownloaded with java.lang.String = js.native
+  /* 2 */ val downloaded: downloaded with scala.Double = js.native
+  /* 1 */ val downloading: downloading with scala.Double = js.native
+  /* 3 */ val failed: failed with scala.Double = js.native
+  /* 0 */ val partiallyDownloaded: partiallyDownloaded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMessageDownloadState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMessageDownloadState with scala.Double
   ] = js.native
 }
 

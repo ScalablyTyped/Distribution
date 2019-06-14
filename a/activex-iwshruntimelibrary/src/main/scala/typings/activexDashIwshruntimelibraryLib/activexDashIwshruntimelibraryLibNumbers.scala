@@ -12,14 +12,16 @@ object activexDashIwshruntimelibraryLibNumbers {
   
   @js.native
   sealed trait `0`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshExecStatus
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshWindowStyle
   
   @js.native
   sealed trait `1`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ShortcutWindowStyle
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
@@ -45,7 +47,8 @@ object activexDashIwshruntimelibraryLibNumbers {
   
   @js.native
   sealed trait `2`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshExecStatus
@@ -57,7 +60,8 @@ object activexDashIwshruntimelibraryLibNumbers {
   
   @js.native
   sealed trait `3`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ShortcutWindowStyle
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
@@ -69,7 +73,8 @@ object activexDashIwshruntimelibraryLibNumbers {
   
   @js.native
   sealed trait `4`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshWindowStyle
@@ -84,7 +89,8 @@ object activexDashIwshruntimelibraryLibNumbers {
   
   @js.native
   sealed trait `5`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.EventType
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
@@ -98,7 +104,8 @@ object activexDashIwshruntimelibraryLibNumbers {
   
   @js.native
   sealed trait `6`
-    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ButtonType
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.PopupSelection
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
        with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WshWindowStyle
   

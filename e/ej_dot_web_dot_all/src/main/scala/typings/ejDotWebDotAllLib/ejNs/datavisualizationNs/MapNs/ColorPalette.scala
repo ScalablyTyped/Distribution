@@ -31,13 +31,11 @@ object ColorPalette extends js.Object {
   sealed trait Palette3
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.ColorPalette
   
-  val Custompalette: Custompalette with java.lang.String = js.native
-  val Palette1: Palette1 with java.lang.String = js.native
-  val Palette2: Palette2 with java.lang.String = js.native
-  val Palette3: Palette3 with java.lang.String = js.native
+  /* 3 */ val Custompalette: Custompalette with scala.Double = js.native
+  /* 0 */ val Palette1: Palette1 with scala.Double = js.native
+  /* 1 */ val Palette2: Palette2 with scala.Double = js.native
+  /* 2 */ val Palette3: Palette3 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.ColorPalette with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.ColorPalette with scala.Double] = js.native
 }
 

@@ -37,14 +37,14 @@ object PeriodicUpdateRecurrence extends js.Object {
   sealed trait twelveHours
     extends winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.PeriodicUpdateRecurrence
   
-  val daily: daily with java.lang.String = js.native
-  val halfHour: halfHour with java.lang.String = js.native
-  val hour: hour with java.lang.String = js.native
-  val sixHours: sixHours with java.lang.String = js.native
-  val twelveHours: twelveHours with java.lang.String = js.native
+  /* 4 */ val daily: daily with scala.Double = js.native
+  /* 0 */ val halfHour: halfHour with scala.Double = js.native
+  /* 1 */ val hour: hour with scala.Double = js.native
+  /* 2 */ val sixHours: sixHours with scala.Double = js.native
+  /* 3 */ val twelveHours: twelveHours with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.PeriodicUpdateRecurrence with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.PeriodicUpdateRecurrence with scala.Double
   ] = js.native
 }
 

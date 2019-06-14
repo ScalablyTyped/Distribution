@@ -34,12 +34,12 @@ object HorizontalAlign extends js.Object {
   sealed trait Right
     extends openui5Lib.sapNs.uiNs.coreNs.HorizontalAlign
   
-  val Begin: Begin with java.lang.String = js.native
-  val Center: Center with java.lang.String = js.native
-  val End: End with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
+  /* 0 */ val Begin: Begin with scala.Double = js.native
+  /* 1 */ val Center: Center with scala.Double = js.native
+  /* 2 */ val End: End with scala.Double = js.native
+  /* 3 */ val Left: Left with scala.Double = js.native
+  /* 4 */ val Right: Right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.HorizontalAlign with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.HorizontalAlign with scala.Double] = js.native
 }
 

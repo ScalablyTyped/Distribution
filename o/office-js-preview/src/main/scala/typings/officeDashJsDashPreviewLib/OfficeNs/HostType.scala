@@ -63,14 +63,14 @@ object HostType extends js.Object {
   sealed trait Word
     extends officeDashJsDashPreviewLib.OfficeNs.HostType
   
-  val Access: Access with java.lang.String = js.native
-  val Excel: Excel with java.lang.String = js.native
-  val OneNote: OneNote with java.lang.String = js.native
-  val Outlook: Outlook with java.lang.String = js.native
-  val PowerPoint: PowerPoint with java.lang.String = js.native
-  val Project: Project with java.lang.String = js.native
-  val Word: Word with java.lang.String = js.native
+  /* 6 */ val Access: Access with scala.Double = js.native
+  /* 1 */ val Excel: Excel with scala.Double = js.native
+  /* 4 */ val OneNote: OneNote with scala.Double = js.native
+  /* 3 */ val Outlook: Outlook with scala.Double = js.native
+  /* 2 */ val PowerPoint: PowerPoint with scala.Double = js.native
+  /* 5 */ val Project: Project with scala.Double = js.native
+  /* 0 */ val Word: Word with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.HostType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.HostType with scala.Double] = js.native
 }
 

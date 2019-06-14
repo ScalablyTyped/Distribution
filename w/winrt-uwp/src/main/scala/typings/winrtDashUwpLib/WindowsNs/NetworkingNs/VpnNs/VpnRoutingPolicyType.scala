@@ -22,11 +22,11 @@ object VpnRoutingPolicyType extends js.Object {
   sealed trait splitRouting
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnRoutingPolicyType
   
-  val forceAllTrafficOverVpn: forceAllTrafficOverVpn with java.lang.String = js.native
-  val splitRouting: splitRouting with java.lang.String = js.native
+  /* 1 */ val forceAllTrafficOverVpn: forceAllTrafficOverVpn with scala.Double = js.native
+  /* 0 */ val splitRouting: splitRouting with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnRoutingPolicyType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnRoutingPolicyType with scala.Double
   ] = js.native
 }
 

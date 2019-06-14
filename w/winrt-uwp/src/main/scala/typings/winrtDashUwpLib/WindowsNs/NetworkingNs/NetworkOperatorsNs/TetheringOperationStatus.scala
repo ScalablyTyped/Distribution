@@ -47,16 +47,16 @@ object TetheringOperationStatus extends js.Object {
   sealed trait wiFiDeviceOff
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.TetheringOperationStatus
   
-  val entitlementCheckFailure: entitlementCheckFailure with java.lang.String = js.native
-  val entitlementCheckTimeout: entitlementCheckTimeout with java.lang.String = js.native
-  val mobileBroadbandDeviceOff: mobileBroadbandDeviceOff with java.lang.String = js.native
-  val operationInProgress: operationInProgress with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val wiFiDeviceOff: wiFiDeviceOff with java.lang.String = js.native
+  /* 5 */ val entitlementCheckFailure: entitlementCheckFailure with scala.Double = js.native
+  /* 4 */ val entitlementCheckTimeout: entitlementCheckTimeout with scala.Double = js.native
+  /* 2 */ val mobileBroadbandDeviceOff: mobileBroadbandDeviceOff with scala.Double = js.native
+  /* 6 */ val operationInProgress: operationInProgress with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 1 */ val unknown: unknown with scala.Double = js.native
+  /* 3 */ val wiFiDeviceOff: wiFiDeviceOff with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.TetheringOperationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.TetheringOperationStatus with scala.Double
   ] = js.native
 }
 

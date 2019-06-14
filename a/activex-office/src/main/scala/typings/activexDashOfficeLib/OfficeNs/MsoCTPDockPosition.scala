@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait MsoCTPDockPosition extends js.Object
 
+object MsoCTPDockPosition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoCTPDockPositionBottom: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def msoCTPDockPositionFloating: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoCTPDockPositionLeft: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoCTPDockPositionRight: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoCTPDockPositionTop: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

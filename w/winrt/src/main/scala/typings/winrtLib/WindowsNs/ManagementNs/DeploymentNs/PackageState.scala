@@ -27,11 +27,11 @@ object PackageState extends js.Object {
   sealed trait tampered
     extends winrtLib.WindowsNs.ManagementNs.DeploymentNs.PackageState
   
-  val licenseInvalid: licenseInvalid with java.lang.String = js.native
-  val modified: modified with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val tampered: tampered with java.lang.String = js.native
+  /* 1 */ val licenseInvalid: licenseInvalid with scala.Double = js.native
+  /* 2 */ val modified: modified with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 3 */ val tampered: tampered with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.ManagementNs.DeploymentNs.PackageState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.ManagementNs.DeploymentNs.PackageState with scala.Double] = js.native
 }
 

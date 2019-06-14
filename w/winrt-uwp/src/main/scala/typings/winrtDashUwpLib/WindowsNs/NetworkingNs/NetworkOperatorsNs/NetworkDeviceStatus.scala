@@ -52,17 +52,17 @@ object NetworkDeviceStatus extends js.Object {
   sealed trait simNotInserted
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkDeviceStatus
   
-  val accountNotActivated: accountNotActivated with java.lang.String = js.native
-  val badSim: badSim with java.lang.String = js.native
-  val deviceBlocked: deviceBlocked with java.lang.String = js.native
-  val deviceHardwareFailure: deviceHardwareFailure with java.lang.String = js.native
-  val deviceLocked: deviceLocked with java.lang.String = js.native
-  val deviceNotReady: deviceNotReady with java.lang.String = js.native
-  val deviceReady: deviceReady with java.lang.String = js.native
-  val simNotInserted: simNotInserted with java.lang.String = js.native
+  /* 5 */ val accountNotActivated: accountNotActivated with scala.Double = js.native
+  /* 3 */ val badSim: badSim with scala.Double = js.native
+  /* 7 */ val deviceBlocked: deviceBlocked with scala.Double = js.native
+  /* 4 */ val deviceHardwareFailure: deviceHardwareFailure with scala.Double = js.native
+  /* 6 */ val deviceLocked: deviceLocked with scala.Double = js.native
+  /* 0 */ val deviceNotReady: deviceNotReady with scala.Double = js.native
+  /* 1 */ val deviceReady: deviceReady with scala.Double = js.native
+  /* 2 */ val simNotInserted: simNotInserted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkDeviceStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.NetworkDeviceStatus with scala.Double
   ] = js.native
 }
 

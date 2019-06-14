@@ -27,12 +27,12 @@ object HidReportType extends js.Object {
   sealed trait output
     extends winrtDashUwpLib.WindowsNs.DevicesNs.HumanInterfaceDeviceNs.HidReportType
   
-  val feature: feature with java.lang.String = js.native
-  val input: input with java.lang.String = js.native
-  val output: output with java.lang.String = js.native
+  /* 2 */ val feature: feature with scala.Double = js.native
+  /* 0 */ val input: input with scala.Double = js.native
+  /* 1 */ val output: output with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.HumanInterfaceDeviceNs.HidReportType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.HumanInterfaceDeviceNs.HidReportType with scala.Double
   ] = js.native
 }
 

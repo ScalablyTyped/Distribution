@@ -42,13 +42,13 @@ object SupportedPermissions extends js.Object {
   sealed trait UPDATE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SupportedPermissions
   
-  val DEVICE_COARSE_LOCATION: DEVICE_COARSE_LOCATION with java.lang.String = js.native
-  val DEVICE_PRECISE_LOCATION: DEVICE_PRECISE_LOCATION with java.lang.String = js.native
-  val NAME: NAME with java.lang.String = js.native
-  val UPDATE: UPDATE with java.lang.String = js.native
+  /* 2 */ val DEVICE_COARSE_LOCATION: DEVICE_COARSE_LOCATION with scala.Double = js.native
+  /* 1 */ val DEVICE_PRECISE_LOCATION: DEVICE_PRECISE_LOCATION with scala.Double = js.native
+  /* 0 */ val NAME: NAME with scala.Double = js.native
+  /* 3 */ val UPDATE: UPDATE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.SupportedPermissions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    actionsDashOnDashGoogleLib.assistantDashAppMod.SupportedPermissions with scala.Double
   ] = js.native
 }
 

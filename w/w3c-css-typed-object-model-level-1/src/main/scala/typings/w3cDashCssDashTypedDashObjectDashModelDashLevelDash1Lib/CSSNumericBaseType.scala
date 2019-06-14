@@ -39,16 +39,16 @@ object CSSNumericBaseType extends js.Object {
   sealed trait time
     extends w3cDashCssDashTypedDashObjectDashModelDashLevelDash1Lib.CSSNumericBaseType
   
-  val angle: angle with java.lang.String = js.native
-  val flex: flex with java.lang.String = js.native
-  val frequency: frequency with java.lang.String = js.native
-  val length: length with java.lang.String = js.native
-  val percent: percent with java.lang.String = js.native
-  val resolution: resolution with java.lang.String = js.native
-  val time: time with java.lang.String = js.native
+  /* 1 */ val angle: angle with scala.Double = js.native
+  /* 5 */ val flex: flex with scala.Double = js.native
+  /* 3 */ val frequency: frequency with scala.Double = js.native
+  /* 0 */ val length: length with scala.Double = js.native
+  /* 6 */ val percent: percent with scala.Double = js.native
+  /* 4 */ val resolution: resolution with scala.Double = js.native
+  /* 2 */ val time: time with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    w3cDashCssDashTypedDashObjectDashModelDashLevelDash1Lib.CSSNumericBaseType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    w3cDashCssDashTypedDashObjectDashModelDashLevelDash1Lib.CSSNumericBaseType with scala.Double
   ] = js.native
 }
 

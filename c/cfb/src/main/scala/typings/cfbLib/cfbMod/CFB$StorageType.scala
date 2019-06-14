@@ -19,10 +19,10 @@ object CFB$StorageType extends js.Object {
   sealed trait minifat
     extends cfbLib.cfbMod.CFB$StorageType
   
-  val fat: fat with java.lang.String = js.native
-  val minifat: minifat with java.lang.String = js.native
+  /* 0 */ val fat: fat with scala.Double = js.native
+  /* 1 */ val minifat: minifat with scala.Double = js.native
   @JSBracketAccess
   @JSName("CFB$StorageType")
-  def apply(value: java.lang.String): js.UndefOr[cfbLib.cfbMod.CFB$StorageType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cfbLib.cfbMod.CFB$StorageType with scala.Double] = js.native
 }
 

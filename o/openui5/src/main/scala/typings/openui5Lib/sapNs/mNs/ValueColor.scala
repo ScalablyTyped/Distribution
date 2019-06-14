@@ -30,11 +30,11 @@ object ValueColor extends js.Object {
   sealed trait Neutral
     extends openui5Lib.sapNs.mNs.ValueColor
   
-  val Critical: Critical with java.lang.String = js.native
-  val Error: Error with java.lang.String = js.native
-  val Good: Good with java.lang.String = js.native
-  val Neutral: Neutral with java.lang.String = js.native
+  /* 0 */ val Critical: Critical with scala.Double = js.native
+  /* 1 */ val Error: Error with scala.Double = js.native
+  /* 2 */ val Good: Good with scala.Double = js.native
+  /* 3 */ val Neutral: Neutral with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ValueColor with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ValueColor with scala.Double] = js.native
 }
 

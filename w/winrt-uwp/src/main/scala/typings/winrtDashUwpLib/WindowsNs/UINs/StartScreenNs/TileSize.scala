@@ -52,15 +52,15 @@ object TileSize extends js.Object {
   sealed trait wide310x150
     extends winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.TileSize
   
-  val default: default with java.lang.String = js.native
-  val square150x150: square150x150 with java.lang.String = js.native
-  val square30x30: square30x30 with java.lang.String = js.native
-  val square310x310: square310x310 with java.lang.String = js.native
-  val square44x44: square44x44 with java.lang.String = js.native
-  val square70x70: square70x70 with java.lang.String = js.native
-  val square71x71: square71x71 with java.lang.String = js.native
-  val wide310x150: wide310x150 with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 3 */ val square150x150: square150x150 with scala.Double = js.native
+  /* 1 */ val square30x30: square30x30 with scala.Double = js.native
+  /* 5 */ val square310x310: square310x310 with scala.Double = js.native
+  /* 7 */ val square44x44: square44x44 with scala.Double = js.native
+  /* 2 */ val square70x70: square70x70 with scala.Double = js.native
+  /* 6 */ val square71x71: square71x71 with scala.Double = js.native
+  /* 4 */ val wide310x150: wide310x150 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.TileSize with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.TileSize with scala.Double] = js.native
 }
 

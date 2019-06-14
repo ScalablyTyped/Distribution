@@ -22,11 +22,11 @@ object AppointmentSummaryCardView extends js.Object {
   sealed trait system
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentSummaryCardView
   
-  val app: app with java.lang.String = js.native
-  val system: system with java.lang.String = js.native
+  /* 1 */ val app: app with scala.Double = js.native
+  /* 0 */ val system: system with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentSummaryCardView with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentSummaryCardView with scala.Double
   ] = js.native
 }
 

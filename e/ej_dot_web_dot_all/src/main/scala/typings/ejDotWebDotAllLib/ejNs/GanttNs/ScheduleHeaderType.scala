@@ -36,12 +36,12 @@ object ScheduleHeaderType extends js.Object {
   sealed trait Year
     extends ejDotWebDotAllLib.ejNs.GanttNs.ScheduleHeaderType
   
-  val Day: Day with java.lang.String = js.native
-  val Hour: Hour with java.lang.String = js.native
-  val Month: Month with java.lang.String = js.native
-  val Week: Week with java.lang.String = js.native
-  val Year: Year with java.lang.String = js.native
+  /* 3 */ val Day: Day with scala.Double = js.native
+  /* 4 */ val Hour: Hour with scala.Double = js.native
+  /* 1 */ val Month: Month with scala.Double = js.native
+  /* 2 */ val Week: Week with scala.Double = js.native
+  /* 0 */ val Year: Year with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.ScheduleHeaderType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.ScheduleHeaderType with scala.Double] = js.native
 }
 

@@ -32,13 +32,13 @@ object AudioEncodingQuality extends js.Object {
   sealed trait medium
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingQuality
   
-  val auto: auto with java.lang.String = js.native
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val medium: medium with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 1 */ val high: high with scala.Double = js.native
+  /* 3 */ val low: low with scala.Double = js.native
+  /* 2 */ val medium: medium with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingQuality with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingQuality with scala.Double
   ] = js.native
 }
 

@@ -19,11 +19,11 @@ object InstallOptions extends js.Object {
   sealed trait none
     extends winrtLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.InstallOptions
   
-  val deleteExpired: deleteExpired with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val deleteExpired: deleteExpired with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.InstallOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.InstallOptions with scala.Double
   ] = js.native
 }
 

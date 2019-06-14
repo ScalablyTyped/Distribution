@@ -15,8 +15,8 @@ object EChatMemberStateChange extends js.Object {
   sealed trait Kicked
     extends steamLib.steamMod.EChatMemberStateChange
   
-  val Kicked: Kicked with java.lang.String = js.native
+  /* 0 */ val Kicked: Kicked with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[steamLib.steamMod.EChatMemberStateChange with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[steamLib.steamMod.EChatMemberStateChange with scala.Double] = js.native
 }
 

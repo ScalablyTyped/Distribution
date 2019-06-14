@@ -32,13 +32,13 @@ object TimedMetadataTrackPresentationMode extends js.Object {
   sealed trait platformPresented
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.TimedMetadataTrackPresentationMode
   
-  val applicationPresented: applicationPresented with java.lang.String = js.native
-  val disabled: disabled with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val platformPresented: platformPresented with java.lang.String = js.native
+  /* 2 */ val applicationPresented: applicationPresented with scala.Double = js.native
+  /* 0 */ val disabled: disabled with scala.Double = js.native
+  /* 1 */ val hidden: hidden with scala.Double = js.native
+  /* 3 */ val platformPresented: platformPresented with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.TimedMetadataTrackPresentationMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.TimedMetadataTrackPresentationMode with scala.Double
   ] = js.native
 }
 

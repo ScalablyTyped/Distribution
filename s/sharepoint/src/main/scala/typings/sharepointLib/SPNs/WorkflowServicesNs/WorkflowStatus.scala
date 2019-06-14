@@ -47,16 +47,16 @@ object WorkflowStatus extends js.Object {
   sealed trait terminated
     extends sharepointLib.SPNs.WorkflowServicesNs.WorkflowStatus
   
-  val canceled: canceled with java.lang.String = js.native
-  val canceling: canceling with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val notSpecified: notSpecified with java.lang.String = js.native
-  val notStarted: notStarted with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
-  val suspended: suspended with java.lang.String = js.native
-  val terminated: terminated with java.lang.String = js.native
+  /* 4 */ val canceled: canceled with scala.Double = js.native
+  /* 3 */ val canceling: canceling with scala.Double = js.native
+  /* 6 */ val completed: completed with scala.Double = js.native
+  /* 8 */ val invalid: invalid with scala.Double = js.native
+  /* 7 */ val notSpecified: notSpecified with scala.Double = js.native
+  /* 0 */ val notStarted: notStarted with scala.Double = js.native
+  /* 1 */ val started: started with scala.Double = js.native
+  /* 2 */ val suspended: suspended with scala.Double = js.native
+  /* 5 */ val terminated: terminated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.WorkflowServicesNs.WorkflowStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.WorkflowServicesNs.WorkflowStatus with scala.Double] = js.native
 }
 

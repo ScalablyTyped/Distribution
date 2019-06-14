@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait Theme extends js.Object
 
+object Theme {
+  @scala.inline
+  def Default: xrmLib.xrmLibStrings.default = this.cast("default")
+  @scala.inline
+  def Office12Blue: xrmLib.xrmLibStrings.Office12Blue = this.cast("Office12Blue")
+  @scala.inline
+  def Office14Silver: xrmLib.xrmLibStrings.Office14Silver = this.cast("Office14Silver")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -42,15 +42,15 @@ object PackageTypes extends js.Object {
   sealed trait xap
     extends winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageTypes
   
-  val bundle: bundle with java.lang.String = js.native
-  val framework: framework with java.lang.String = js.native
-  val main: main with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val resource: resource with java.lang.String = js.native
-  val xap: xap with java.lang.String = js.native
+  /* 4 */ val bundle: bundle with scala.Double = js.native
+  /* 2 */ val framework: framework with scala.Double = js.native
+  /* 1 */ val main: main with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val resource: resource with scala.Double = js.native
+  /* 5 */ val xap: xap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageTypes with scala.Double
   ] = js.native
 }
 

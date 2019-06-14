@@ -15,10 +15,10 @@ object TimeContextFrequency extends js.Object {
   sealed trait DAILY
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.TimeContextFrequency
   
-  val DAILY: DAILY with java.lang.String = js.native
+  /* 0 */ val DAILY: DAILY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.TimeContextFrequency with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    actionsDashOnDashGoogleLib.assistantDashAppMod.TimeContextFrequency with scala.Double
   ] = js.native
 }
 

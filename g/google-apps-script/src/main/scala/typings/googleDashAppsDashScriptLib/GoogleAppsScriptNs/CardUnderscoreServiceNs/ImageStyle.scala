@@ -19,11 +19,11 @@ object ImageStyle extends js.Object {
   sealed trait SQUARE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ImageStyle
   
-  val CIRCLE: CIRCLE with java.lang.String = js.native
-  val SQUARE: SQUARE with java.lang.String = js.native
+  /* 1 */ val CIRCLE: CIRCLE with scala.Double = js.native
+  /* 0 */ val SQUARE: SQUARE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ImageStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.ImageStyle with scala.Double
   ] = js.native
 }
 

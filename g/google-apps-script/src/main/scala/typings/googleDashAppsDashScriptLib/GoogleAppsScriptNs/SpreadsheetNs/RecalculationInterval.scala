@@ -23,12 +23,12 @@ object RecalculationInterval extends js.Object {
   sealed trait ON_CHANGE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.RecalculationInterval
   
-  val HOUR: HOUR with java.lang.String = js.native
-  val MINUTE: MINUTE with java.lang.String = js.native
-  val ON_CHANGE: ON_CHANGE with java.lang.String = js.native
+  /* 2 */ val HOUR: HOUR with scala.Double = js.native
+  /* 1 */ val MINUTE: MINUTE with scala.Double = js.native
+  /* 0 */ val ON_CHANGE: ON_CHANGE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.RecalculationInterval with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.RecalculationInterval with scala.Double
   ] = js.native
 }
 

@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait MFObjectWindowMode extends js.Object
 
+object MFObjectWindowMode {
+  @scala.inline
+  def Edit: mfilesLib.mfilesLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def EditApplicationModal: mfilesLib.mfilesLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def Insert: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def InsertSaveAsType: mfilesLib.mfilesLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def InsertSourceFiles: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

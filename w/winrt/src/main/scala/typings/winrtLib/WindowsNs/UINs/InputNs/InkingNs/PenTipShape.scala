@@ -19,9 +19,9 @@ object PenTipShape extends js.Object {
   sealed trait rectangle
     extends winrtLib.WindowsNs.UINs.InputNs.InkingNs.PenTipShape
   
-  val circle: circle with java.lang.String = js.native
-  val rectangle: rectangle with java.lang.String = js.native
+  /* 0 */ val circle: circle with scala.Double = js.native
+  /* 1 */ val rectangle: rectangle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.InkingNs.PenTipShape with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.InputNs.InkingNs.PenTipShape with scala.Double] = js.native
 }
 

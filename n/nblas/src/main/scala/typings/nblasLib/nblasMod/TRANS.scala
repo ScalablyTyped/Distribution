@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait TRANS extends js.Object
 
+object TRANS {
+  @scala.inline
+  def ConjTrans: nblasLib.nblasLibNumbers.`113` = this.cast(113)
+  @scala.inline
+  def NoTrans: nblasLib.nblasLibNumbers.`111` = this.cast(111)
+  @scala.inline
+  def Trans: nblasLib.nblasLibNumbers.`112` = this.cast(112)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

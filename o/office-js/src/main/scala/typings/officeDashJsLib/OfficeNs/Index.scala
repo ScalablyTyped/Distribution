@@ -42,11 +42,11 @@ object Index extends js.Object {
   sealed trait Previous
     extends officeDashJsLib.OfficeNs.Index
   
-  val First: First with java.lang.String = js.native
-  val Last: Last with java.lang.String = js.native
-  val Next: Next with java.lang.String = js.native
-  val Previous: Previous with java.lang.String = js.native
+  /* 0 */ val First: First with scala.Double = js.native
+  /* 1 */ val Last: Last with scala.Double = js.native
+  /* 2 */ val Next: Next with scala.Double = js.native
+  /* 3 */ val Previous: Previous with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.Index with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.Index with scala.Double] = js.native
 }
 

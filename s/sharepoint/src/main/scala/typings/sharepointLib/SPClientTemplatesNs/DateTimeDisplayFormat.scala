@@ -23,10 +23,10 @@ object DateTimeDisplayFormat extends js.Object {
   sealed trait TimeOnly
     extends sharepointLib.SPClientTemplatesNs.DateTimeDisplayFormat
   
-  val DateOnly: DateOnly with java.lang.String = js.native
-  val DateTime: DateTime with java.lang.String = js.native
-  val TimeOnly: TimeOnly with java.lang.String = js.native
+  /* 0 */ val DateOnly: DateOnly with scala.Double = js.native
+  /* 1 */ val DateTime: DateTime with scala.Double = js.native
+  /* 2 */ val TimeOnly: TimeOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientTemplatesNs.DateTimeDisplayFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientTemplatesNs.DateTimeDisplayFormat with scala.Double] = js.native
 }
 

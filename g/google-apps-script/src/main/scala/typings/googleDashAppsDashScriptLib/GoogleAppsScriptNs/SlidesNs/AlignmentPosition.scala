@@ -23,12 +23,12 @@ object AlignmentPosition extends js.Object {
   sealed trait VERTICAL_CENTER
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.AlignmentPosition
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val HORIZONTAL_CENTER: HORIZONTAL_CENTER with java.lang.String = js.native
-  val VERTICAL_CENTER: VERTICAL_CENTER with java.lang.String = js.native
+  /* 0 */ val CENTER: CENTER with scala.Double = js.native
+  /* 1 */ val HORIZONTAL_CENTER: HORIZONTAL_CENTER with scala.Double = js.native
+  /* 2 */ val VERTICAL_CENTER: VERTICAL_CENTER with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.AlignmentPosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.AlignmentPosition with scala.Double
   ] = js.native
 }
 

@@ -20,9 +20,9 @@ object GanttBarDateType extends js.Object {
   sealed trait Start
     extends sharepointLib.SPNs.JsGridNs.GanttBarDateType
   
-  val End: End with java.lang.String = js.native
-  val Start: Start with java.lang.String = js.native
+  /* 1 */ val End: End with scala.Double = js.native
+  /* 0 */ val Start: Start with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.GanttBarDateType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.GanttBarDateType with scala.Double] = js.native
 }
 

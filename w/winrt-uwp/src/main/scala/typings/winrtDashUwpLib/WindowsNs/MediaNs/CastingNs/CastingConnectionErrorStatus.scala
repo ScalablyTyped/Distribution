@@ -47,16 +47,16 @@ object CastingConnectionErrorStatus extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.CastingNs.CastingConnectionErrorStatus
   
-  val deviceDidNotRespond: deviceDidNotRespond with java.lang.String = js.native
-  val deviceError: deviceError with java.lang.String = js.native
-  val deviceLocked: deviceLocked with java.lang.String = js.native
-  val invalidCastingSource: invalidCastingSource with java.lang.String = js.native
-  val protectedPlaybackFailed: protectedPlaybackFailed with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val deviceDidNotRespond: deviceDidNotRespond with scala.Double = js.native
+  /* 2 */ val deviceError: deviceError with scala.Double = js.native
+  /* 3 */ val deviceLocked: deviceLocked with scala.Double = js.native
+  /* 5 */ val invalidCastingSource: invalidCastingSource with scala.Double = js.native
+  /* 4 */ val protectedPlaybackFailed: protectedPlaybackFailed with scala.Double = js.native
+  /* 0 */ val succeeded: succeeded with scala.Double = js.native
+  /* 6 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CastingNs.CastingConnectionErrorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CastingNs.CastingConnectionErrorStatus with scala.Double
   ] = js.native
 }
 

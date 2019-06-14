@@ -47,16 +47,16 @@ object NumericLogLevel extends js.Object {
   sealed trait Warn
     extends realmLib.RealmNs.SyncNs.NumericLogLevel
   
-  val All: All with java.lang.String = js.native
-  val Debug: Debug with java.lang.String = js.native
-  val Detail: Detail with java.lang.String = js.native
-  val Error: Error with java.lang.String = js.native
-  val Fatal: Fatal with java.lang.String = js.native
-  val Info: Info with java.lang.String = js.native
-  val Off: Off with java.lang.String = js.native
-  val Trace: Trace with java.lang.String = js.native
-  val Warn: Warn with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 2 */ val Debug: Debug with scala.Double = js.native
+  /* 3 */ val Detail: Detail with scala.Double = js.native
+  /* 6 */ val Error: Error with scala.Double = js.native
+  /* 7 */ val Fatal: Fatal with scala.Double = js.native
+  /* 4 */ val Info: Info with scala.Double = js.native
+  /* 8 */ val Off: Off with scala.Double = js.native
+  /* 1 */ val Trace: Trace with scala.Double = js.native
+  /* 5 */ val Warn: Warn with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.NumericLogLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[realmLib.RealmNs.SyncNs.NumericLogLevel with scala.Double] = js.native
 }
 

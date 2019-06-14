@@ -27,10 +27,10 @@ object MediaTrackKind extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaTrackKind
   
-  val audio: audio with java.lang.String = js.native
-  val timedMetadata: timedMetadata with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 0 */ val audio: audio with scala.Double = js.native
+  /* 2 */ val timedMetadata: timedMetadata with scala.Double = js.native
+  /* 1 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaTrackKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaTrackKind with scala.Double] = js.native
 }
 

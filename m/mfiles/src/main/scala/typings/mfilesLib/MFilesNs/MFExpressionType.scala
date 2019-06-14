@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait MFExpressionType extends js.Object
 
+object MFExpressionType {
+  @scala.inline
+  def AnyField: mfilesLib.mfilesLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def FileValue: mfilesLib.mfilesLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def ObjectIDSegment: mfilesLib.mfilesLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def Permissions: mfilesLib.mfilesLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def PropertyValue: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def StatusValue: mfilesLib.mfilesLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def TypedValue: mfilesLib.mfilesLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def Uninitialized: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

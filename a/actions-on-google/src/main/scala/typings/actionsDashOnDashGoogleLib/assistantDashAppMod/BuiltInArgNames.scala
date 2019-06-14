@@ -110,24 +110,22 @@ object BuiltInArgNames extends js.Object {
   sealed trait TRANSACTION_REQ_CHECK_RESULT
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames
   
-  val CONFIRMATION: CONFIRMATION with java.lang.String = js.native
-  val DATETIME: DATETIME with java.lang.String = js.native
-  val DELIVERY_ADDRESS_VALUE: DELIVERY_ADDRESS_VALUE with java.lang.String = js.native
-  val IS_FINAL_REPROMPT: IS_FINAL_REPROMPT with java.lang.String = js.native
-  val LINK: LINK with java.lang.String = js.native
-  val MEDIA_STATUS: MEDIA_STATUS with java.lang.String = js.native
-  val NEW_SURFACE: NEW_SURFACE with java.lang.String = js.native
-  val OPTION: OPTION with java.lang.String = js.native
-  val PERMISSION_GRANTED: PERMISSION_GRANTED with java.lang.String = js.native
-  val PLACE: PLACE with java.lang.String = js.native
-  val REGISTER_UPDATE: REGISTER_UPDATE with java.lang.String = js.native
-  val REPROMPT_COUNT: REPROMPT_COUNT with java.lang.String = js.native
-  val SIGN_IN: SIGN_IN with java.lang.String = js.native
-  val TRANSACTION_DECISION_VALUE: TRANSACTION_DECISION_VALUE with java.lang.String = js.native
-  val TRANSACTION_REQ_CHECK_RESULT: TRANSACTION_REQ_CHECK_RESULT with java.lang.String = js.native
+  /* 6 */ val CONFIRMATION: CONFIRMATION with scala.Double = js.native
+  /* 7 */ val DATETIME: DATETIME with scala.Double = js.native
+  /* 3 */ val DELIVERY_ADDRESS_VALUE: DELIVERY_ADDRESS_VALUE with scala.Double = js.native
+  /* 10 */ val IS_FINAL_REPROMPT: IS_FINAL_REPROMPT with scala.Double = js.native
+  /* 13 */ val LINK: LINK with scala.Double = js.native
+  /* 14 */ val MEDIA_STATUS: MEDIA_STATUS with scala.Double = js.native
+  /* 11 */ val NEW_SURFACE: NEW_SURFACE with scala.Double = js.native
+  /* 1 */ val OPTION: OPTION with scala.Double = js.native
+  /* 0 */ val PERMISSION_GRANTED: PERMISSION_GRANTED with scala.Double = js.native
+  /* 5 */ val PLACE: PLACE with scala.Double = js.native
+  /* 12 */ val REGISTER_UPDATE: REGISTER_UPDATE with scala.Double = js.native
+  /* 9 */ val REPROMPT_COUNT: REPROMPT_COUNT with scala.Double = js.native
+  /* 8 */ val SIGN_IN: SIGN_IN with scala.Double = js.native
+  /* 4 */ val TRANSACTION_DECISION_VALUE: TRANSACTION_DECISION_VALUE with scala.Double = js.native
+  /* 2 */ val TRANSACTION_REQ_CHECK_RESULT: TRANSACTION_REQ_CHECK_RESULT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[actionsDashOnDashGoogleLib.assistantDashAppMod.BuiltInArgNames with scala.Double] = js.native
 }
 

@@ -32,13 +32,13 @@ object IOControlBufferingMethod extends js.Object {
   sealed trait neither
     extends winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.IOControlBufferingMethod
   
-  val buffered: buffered with java.lang.String = js.native
-  val directInput: directInput with java.lang.String = js.native
-  val directOutput: directOutput with java.lang.String = js.native
-  val neither: neither with java.lang.String = js.native
+  /* 0 */ val buffered: buffered with scala.Double = js.native
+  /* 1 */ val directInput: directInput with scala.Double = js.native
+  /* 2 */ val directOutput: directOutput with scala.Double = js.native
+  /* 3 */ val neither: neither with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.IOControlBufferingMethod with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.IOControlBufferingMethod with scala.Double
   ] = js.native
 }
 

@@ -12,7 +12,7 @@ class InfoWindow protected () extends Overlay {
   def this(content: stdLib.HTMLElement) = this()
   def this(content: java.lang.String, opts: InfoWindowOptions) = this()
   def this(content: stdLib.HTMLElement, opts: InfoWindowOptions) = this()
-  def addEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
+  def addEventListener(event: java.lang.String, handler: Callback): scala.Unit = js.native
   def disableAutoPan(): scala.Unit = js.native
   def disableCloseOnClick(): scala.Unit = js.native
   def disableMaximize(): scala.Unit = js.native
@@ -30,7 +30,7 @@ class InfoWindow protected () extends Overlay {
   def onopen(event: baidumapDashWebDashSdkLib.Anon_Point): scala.Unit = js.native
   def onrestore(event: baidumapDashWebDashSdkLib.Anon_Target): scala.Unit = js.native
   def redraw(): scala.Unit = js.native
-  def removeEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
+  def removeEventListener(event: java.lang.String, handler: Callback): scala.Unit = js.native
   def restore(): scala.Unit = js.native
   def setContent(content: java.lang.String): scala.Unit = js.native
   def setContent(content: stdLib.HTMLElement): scala.Unit = js.native

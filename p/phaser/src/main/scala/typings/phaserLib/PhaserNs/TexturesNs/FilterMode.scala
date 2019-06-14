@@ -28,9 +28,9 @@ object FilterMode extends js.Object {
   sealed trait NEAREST
     extends phaserLib.PhaserNs.TexturesNs.FilterMode
   
-  val LINEAR: LINEAR with java.lang.String = js.native
-  val NEAREST: NEAREST with java.lang.String = js.native
+  /* 0 */ val LINEAR: LINEAR with scala.Double = js.native
+  /* 1 */ val NEAREST: NEAREST with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.TexturesNs.FilterMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.TexturesNs.FilterMode with scala.Double] = js.native
 }
 

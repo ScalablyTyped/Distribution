@@ -19,9 +19,9 @@ object HandPreference extends js.Object {
   sealed trait rightHanded
     extends winrtLib.WindowsNs.UINs.ViewManagementNs.HandPreference
   
-  val leftHanded: leftHanded with java.lang.String = js.native
-  val rightHanded: rightHanded with java.lang.String = js.native
+  /* 0 */ val leftHanded: leftHanded with scala.Double = js.native
+  /* 1 */ val rightHanded: rightHanded with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.ViewManagementNs.HandPreference with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.ViewManagementNs.HandPreference with scala.Double] = js.native
 }
 

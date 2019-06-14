@@ -22,9 +22,9 @@ object DialogType extends js.Object {
   sealed trait Standard
     extends openui5Lib.sapNs.mNs.DialogType
   
-  val Message: Message with java.lang.String = js.native
-  val Standard: Standard with java.lang.String = js.native
+  /* 0 */ val Message: Message with scala.Double = js.native
+  /* 1 */ val Standard: Standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.DialogType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.DialogType with scala.Double] = js.native
 }
 

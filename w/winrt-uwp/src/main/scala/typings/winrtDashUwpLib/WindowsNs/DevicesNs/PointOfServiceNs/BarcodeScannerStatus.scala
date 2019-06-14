@@ -37,14 +37,14 @@ object BarcodeScannerStatus extends js.Object {
   sealed trait online
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.BarcodeScannerStatus
   
-  val extended: extended with java.lang.String = js.native
-  val off: off with java.lang.String = js.native
-  val offOrOffline: offOrOffline with java.lang.String = js.native
-  val offline: offline with java.lang.String = js.native
-  val online: online with java.lang.String = js.native
+  /* 4 */ val extended: extended with scala.Double = js.native
+  /* 1 */ val off: off with scala.Double = js.native
+  /* 3 */ val offOrOffline: offOrOffline with scala.Double = js.native
+  /* 2 */ val offline: offline with scala.Double = js.native
+  /* 0 */ val online: online with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.BarcodeScannerStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.BarcodeScannerStatus with scala.Double
   ] = js.native
 }
 

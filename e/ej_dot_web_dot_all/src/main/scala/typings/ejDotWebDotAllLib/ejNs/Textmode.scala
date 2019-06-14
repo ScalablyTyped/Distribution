@@ -21,9 +21,9 @@ object Textmode extends js.Object {
   sealed trait None
     extends ejDotWebDotAllLib.ejNs.Textmode
   
-  val FullPath: FullPath with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 1 */ val FullPath: FullPath with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.Textmode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.Textmode with scala.Double] = js.native
 }
 

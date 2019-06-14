@@ -26,12 +26,10 @@ object SunburstLabelOverflowMode extends js.Object {
   sealed trait Trim
     extends ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLabelOverflowMode
   
-  val Hide: Hide with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Trim: Trim with java.lang.String = js.native
+  /* 1 */ val Hide: Hide with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 0 */ val Trim: Trim with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLabelOverflowMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstLabelOverflowMode with scala.Double] = js.native
 }
 

@@ -32,13 +32,13 @@ object ChatMessageTransportKind extends js.Object {
   sealed trait untriaged
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageTransportKind
   
-  val blocked: blocked with java.lang.String = js.native
-  val custom: custom with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
-  val untriaged: untriaged with java.lang.String = js.native
+  /* 2 */ val blocked: blocked with scala.Double = js.native
+  /* 3 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val text: text with scala.Double = js.native
+  /* 1 */ val untriaged: untriaged with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageTransportKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageTransportKind with scala.Double
   ] = js.native
 }
 

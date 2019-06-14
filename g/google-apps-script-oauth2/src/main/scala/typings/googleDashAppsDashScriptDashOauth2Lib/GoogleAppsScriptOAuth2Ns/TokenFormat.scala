@@ -25,11 +25,11 @@ object TokenFormat extends js.Object {
   sealed trait JSON
     extends googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.TokenFormat
   
-  val FORM_URL_ENCODED: FORM_URL_ENCODED with java.lang.String = js.native
-  val JSON: JSON with java.lang.String = js.native
+  /* 1 */ val FORM_URL_ENCODED: FORM_URL_ENCODED with scala.Double = js.native
+  /* 0 */ val JSON: JSON with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.TokenFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.TokenFormat with scala.Double
   ] = js.native
 }
 

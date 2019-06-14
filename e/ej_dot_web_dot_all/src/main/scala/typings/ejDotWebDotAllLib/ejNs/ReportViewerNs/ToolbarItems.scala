@@ -56,16 +56,16 @@ object ToolbarItems extends js.Object {
   sealed trait Zoom
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.ToolbarItems
   
-  val Export: Export with java.lang.String = js.native
-  val FittoPage: FittoPage with java.lang.String = js.native
-  val PageNavigation: PageNavigation with java.lang.String = js.native
-  val PageSetup: PageSetup with java.lang.String = js.native
-  val Parameters: Parameters with java.lang.String = js.native
-  val Print: Print with java.lang.String = js.native
-  val PrintLayout: PrintLayout with java.lang.String = js.native
-  val Refresh: Refresh with java.lang.String = js.native
-  val Zoom: Zoom with java.lang.String = js.native
+  /* 4 */ val Export: Export with scala.Double = js.native
+  /* 3 */ val FittoPage: FittoPage with scala.Double = js.native
+  /* 5 */ val PageNavigation: PageNavigation with scala.Double = js.native
+  /* 8 */ val PageSetup: PageSetup with scala.Double = js.native
+  /* 6 */ val Parameters: Parameters with scala.Double = js.native
+  /* 0 */ val Print: Print with scala.Double = js.native
+  /* 7 */ val PrintLayout: PrintLayout with scala.Double = js.native
+  /* 1 */ val Refresh: Refresh with scala.Double = js.native
+  /* 2 */ val Zoom: Zoom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ToolbarItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.ToolbarItems with scala.Double] = js.native
 }
 

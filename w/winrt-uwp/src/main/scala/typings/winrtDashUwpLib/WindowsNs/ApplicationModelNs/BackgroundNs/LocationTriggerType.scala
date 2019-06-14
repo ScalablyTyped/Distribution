@@ -17,10 +17,10 @@ object LocationTriggerType extends js.Object {
   sealed trait geofence
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.LocationTriggerType
   
-  val geofence: geofence with java.lang.String = js.native
+  /* 0 */ val geofence: geofence with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.LocationTriggerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.LocationTriggerType with scala.Double
   ] = js.native
 }
 

@@ -37,14 +37,14 @@ object DeviceUnpairingResultStatus extends js.Object {
   sealed trait unpaired
     extends winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceUnpairingResultStatus
   
-  val accessDenied: accessDenied with java.lang.String = js.native
-  val alreadyUnpaired: alreadyUnpaired with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val operationAlreadyInProgress: operationAlreadyInProgress with java.lang.String = js.native
-  val unpaired: unpaired with java.lang.String = js.native
+  /* 3 */ val accessDenied: accessDenied with scala.Double = js.native
+  /* 1 */ val alreadyUnpaired: alreadyUnpaired with scala.Double = js.native
+  /* 4 */ val failed: failed with scala.Double = js.native
+  /* 2 */ val operationAlreadyInProgress: operationAlreadyInProgress with scala.Double = js.native
+  /* 0 */ val unpaired: unpaired with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceUnpairingResultStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceUnpairingResultStatus with scala.Double
   ] = js.native
 }
 

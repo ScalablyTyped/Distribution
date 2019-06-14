@@ -11,3 +11,18 @@ import scala.scalajs.js.annotation._
 */
 trait RelatedVideos extends js.Object
 
+object RelatedVideos {
+  /**
+  		 * Hide related videos after playback is complete.
+  		 */
+  @scala.inline
+  def Hide: youtubeLib.youtubeLibNumbers.`0` = this.cast(0)
+  /**
+  		 * Show related videos after playback is complete.
+  		 */
+  @scala.inline
+  def Show: youtubeLib.youtubeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

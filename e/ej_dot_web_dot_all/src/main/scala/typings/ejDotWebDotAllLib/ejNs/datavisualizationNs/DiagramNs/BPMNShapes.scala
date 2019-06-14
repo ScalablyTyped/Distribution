@@ -46,16 +46,16 @@ object BPMNShapes extends js.Object {
   sealed trait Message
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNShapes
   
-  val Activity: Activity with java.lang.String = js.native
-  val DataObject: DataObject with java.lang.String = js.native
-  val DataSource: DataSource with java.lang.String = js.native
-  val Event: Event with java.lang.String = js.native
-  val Gateway: Gateway with java.lang.String = js.native
-  val Group: Group with java.lang.String = js.native
-  val Message: Message with java.lang.String = js.native
+  /* 5 */ val Activity: Activity with scala.Double = js.native
+  /* 3 */ val DataObject: DataObject with scala.Double = js.native
+  /* 4 */ val DataSource: DataSource with scala.Double = js.native
+  /* 0 */ val Event: Event with scala.Double = js.native
+  /* 1 */ val Gateway: Gateway with scala.Double = js.native
+  /* 6 */ val Group: Group with scala.Double = js.native
+  /* 2 */ val Message: Message with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNShapes with scala.Double
   ] = js.native
 }
 

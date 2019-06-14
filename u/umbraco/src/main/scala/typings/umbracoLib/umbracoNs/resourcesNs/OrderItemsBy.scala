@@ -18,8 +18,8 @@ object OrderItemsBy extends js.Object {
   sealed trait SortOrder
     extends umbracoLib.umbracoNs.resourcesNs.OrderItemsBy
   
-  val SortOrder: SortOrder with java.lang.String = js.native
+  /* 0 */ val SortOrder: SortOrder with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.OrderItemsBy with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.OrderItemsBy with scala.Double] = js.native
 }
 

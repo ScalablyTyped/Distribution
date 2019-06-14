@@ -31,13 +31,11 @@ object BPMNLoops extends js.Object {
   sealed trait Standard
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNLoops
   
-  val None: None with java.lang.String = js.native
-  val ParallelMultiInstance: ParallelMultiInstance with java.lang.String = js.native
-  val SequenceMultiInstance: SequenceMultiInstance with java.lang.String = js.native
-  val Standard: Standard with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val ParallelMultiInstance: ParallelMultiInstance with scala.Double = js.native
+  /* 3 */ val SequenceMultiInstance: SequenceMultiInstance with scala.Double = js.native
+  /* 1 */ val Standard: Standard with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNLoops with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNLoops with scala.Double] = js.native
 }
 

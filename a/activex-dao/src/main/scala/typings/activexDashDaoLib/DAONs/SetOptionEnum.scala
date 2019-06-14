@@ -23,3 +23,36 @@ import scala.scalajs.js.annotation._
 */
 trait SetOptionEnum extends js.Object
 
+object SetOptionEnum {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dbExclusiveAsyncDelay: activexDashDaoLib.activexDashDaoLibNumbers.`60` = this.cast(60)
+  @scala.inline
+  def dbFlushTransactionTimeout: activexDashDaoLib.activexDashDaoLibNumbers.`66` = this.cast(66)
+  @scala.inline
+  def dbImplicitCommitSync: activexDashDaoLib.activexDashDaoLibNumbers.`59` = this.cast(59)
+  @scala.inline
+  def dbLockDelay: activexDashDaoLib.activexDashDaoLibNumbers.`63` = this.cast(63)
+  @scala.inline
+  def dbLockRetry: activexDashDaoLib.activexDashDaoLibNumbers.`57` = this.cast(57)
+  @scala.inline
+  def dbMaxBufferSize: activexDashDaoLib.activexDashDaoLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def dbMaxLocksPerFile: activexDashDaoLib.activexDashDaoLibNumbers.`62` = this.cast(62)
+  @scala.inline
+  def dbPageTimeout: activexDashDaoLib.activexDashDaoLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def dbPasswordEncryptionAlgorithm: activexDashDaoLib.activexDashDaoLibNumbers.`81` = this.cast(81)
+  @scala.inline
+  def dbPasswordEncryptionKeyLength: activexDashDaoLib.activexDashDaoLibNumbers.`82` = this.cast(82)
+  @scala.inline
+  def dbPasswordEncryptionProvider: activexDashDaoLib.activexDashDaoLibNumbers.`80` = this.cast(80)
+  @scala.inline
+  def dbRecycleLVs: activexDashDaoLib.activexDashDaoLibNumbers.`65` = this.cast(65)
+  @scala.inline
+  def dbSharedAsyncDelay: activexDashDaoLib.activexDashDaoLibNumbers.`61` = this.cast(61)
+  @scala.inline
+  def dbUserCommitSync: activexDashDaoLib.activexDashDaoLibNumbers.`58` = this.cast(58)
+}
+

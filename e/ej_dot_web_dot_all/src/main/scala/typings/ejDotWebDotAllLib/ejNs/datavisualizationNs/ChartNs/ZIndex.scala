@@ -21,9 +21,9 @@ object ZIndex extends js.Object {
   sealed trait Over
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ZIndex
   
-  val Inside: Inside with java.lang.String = js.native
-  val Over: Over with java.lang.String = js.native
+  /* 0 */ val Inside: Inside with scala.Double = js.native
+  /* 1 */ val Over: Over with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ZIndex with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ZIndex with scala.Double] = js.native
 }
 

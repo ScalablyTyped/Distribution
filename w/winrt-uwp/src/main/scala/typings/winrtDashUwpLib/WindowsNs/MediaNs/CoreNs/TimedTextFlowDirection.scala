@@ -22,11 +22,11 @@ object TimedTextFlowDirection extends js.Object {
   sealed trait rightToLeft
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextFlowDirection
   
-  val leftToRight: leftToRight with java.lang.String = js.native
-  val rightToLeft: rightToLeft with java.lang.String = js.native
+  /* 0 */ val leftToRight: leftToRight with scala.Double = js.native
+  /* 1 */ val rightToLeft: rightToLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextFlowDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextFlowDirection with scala.Double
   ] = js.native
 }
 

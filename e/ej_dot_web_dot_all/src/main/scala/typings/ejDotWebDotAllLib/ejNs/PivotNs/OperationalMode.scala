@@ -21,9 +21,9 @@ object OperationalMode extends js.Object {
   sealed trait ServerMode
     extends ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode
   
-  val ClientMode: ClientMode with java.lang.String = js.native
-  val ServerMode: ServerMode with java.lang.String = js.native
+  /* 0 */ val ClientMode: ClientMode with scala.Double = js.native
+  /* 1 */ val ServerMode: ServerMode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode with scala.Double] = js.native
 }
 

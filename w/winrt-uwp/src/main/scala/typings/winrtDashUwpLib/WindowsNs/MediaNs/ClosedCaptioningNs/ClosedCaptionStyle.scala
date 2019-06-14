@@ -52,17 +52,17 @@ object ClosedCaptionStyle extends js.Object {
   sealed trait smallCapitals
     extends winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionStyle
   
-  val casual: casual with java.lang.String = js.native
-  val cursive: cursive with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val monospacedWithSerifs: monospacedWithSerifs with java.lang.String = js.native
-  val monospacedWithoutSerifs: monospacedWithoutSerifs with java.lang.String = js.native
-  val proportionalWithSerifs: proportionalWithSerifs with java.lang.String = js.native
-  val proportionalWithoutSerifs: proportionalWithoutSerifs with java.lang.String = js.native
-  val smallCapitals: smallCapitals with java.lang.String = js.native
+  /* 5 */ val casual: casual with scala.Double = js.native
+  /* 6 */ val cursive: cursive with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val monospacedWithSerifs: monospacedWithSerifs with scala.Double = js.native
+  /* 3 */ val monospacedWithoutSerifs: monospacedWithoutSerifs with scala.Double = js.native
+  /* 2 */ val proportionalWithSerifs: proportionalWithSerifs with scala.Double = js.native
+  /* 4 */ val proportionalWithoutSerifs: proportionalWithoutSerifs with scala.Double = js.native
+  /* 7 */ val smallCapitals: smallCapitals with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionStyle with scala.Double
   ] = js.native
 }
 

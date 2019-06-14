@@ -27,12 +27,10 @@ object PlaylistFormat extends js.Object {
   sealed trait zune
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlaylistsNs.PlaylistFormat
   
-  val m3u: m3u with java.lang.String = js.native
-  val windowsMedia: windowsMedia with java.lang.String = js.native
-  val zune: zune with java.lang.String = js.native
+  /* 2 */ val m3u: m3u with scala.Double = js.native
+  /* 0 */ val windowsMedia: windowsMedia with scala.Double = js.native
+  /* 1 */ val zune: zune with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlaylistsNs.PlaylistFormat with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.PlaylistsNs.PlaylistFormat with scala.Double] = js.native
 }
 

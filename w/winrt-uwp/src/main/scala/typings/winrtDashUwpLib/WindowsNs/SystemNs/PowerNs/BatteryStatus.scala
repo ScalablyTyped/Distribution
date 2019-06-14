@@ -32,11 +32,11 @@ object BatteryStatus extends js.Object {
   sealed trait notPresent
     extends winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.BatteryStatus
   
-  val charging: charging with java.lang.String = js.native
-  val discharging: discharging with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
-  val notPresent: notPresent with java.lang.String = js.native
+  /* 3 */ val charging: charging with scala.Double = js.native
+  /* 1 */ val discharging: discharging with scala.Double = js.native
+  /* 2 */ val idle: idle with scala.Double = js.native
+  /* 0 */ val notPresent: notPresent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.BatteryStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.PowerNs.BatteryStatus with scala.Double] = js.native
 }
 

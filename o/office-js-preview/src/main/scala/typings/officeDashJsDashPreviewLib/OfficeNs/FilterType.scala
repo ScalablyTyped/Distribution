@@ -28,9 +28,9 @@ object FilterType extends js.Object {
   sealed trait OnlyVisible
     extends officeDashJsDashPreviewLib.OfficeNs.FilterType
   
-  val All: All with java.lang.String = js.native
-  val OnlyVisible: OnlyVisible with java.lang.String = js.native
+  /* 0 */ val All: All with scala.Double = js.native
+  /* 1 */ val OnlyVisible: OnlyVisible with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.FilterType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.FilterType with scala.Double] = js.native
 }
 

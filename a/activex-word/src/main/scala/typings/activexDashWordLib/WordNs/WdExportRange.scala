@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait WdExportRange extends js.Object
 
+object WdExportRange {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdExportAllDocument: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdExportCurrentPage: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdExportFromTo: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdExportSelection: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

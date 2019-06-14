@@ -22,7 +22,15 @@ trait ReactPlayerProps
   var onDuration: js.UndefOr[js.Function1[/* duration */ scala.Double, scala.Unit]] = js.undefined
   var onEnablePIP: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onEnded: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* error */ js.Any, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[
+    js.Function4[
+      /* error */ js.Any, 
+      /* data */ js.UndefOr[js.Any], 
+      /* hlsInstance */ js.UndefOr[js.Any], 
+      /* hlsGlobal */ js.UndefOr[js.Any], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var onPause: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onProgress: js.UndefOr[js.Function1[/* state */ reactDashPlayerLib.Anon_Loaded, scala.Unit]] = js.undefined
@@ -64,7 +72,7 @@ object ReactPlayerProps {
     onDuration: /* duration */ scala.Double => scala.Unit = null,
     onEnablePIP: () => scala.Unit = null,
     onEnded: () => scala.Unit = null,
-    onError: /* error */ js.Any => scala.Unit = null,
+    onError: (/* error */ js.Any, /* data */ js.UndefOr[js.Any], /* hlsInstance */ js.UndefOr[js.Any], /* hlsGlobal */ js.UndefOr[js.Any]) => scala.Unit = null,
     onPause: () => scala.Unit = null,
     onPlay: () => scala.Unit = null,
     onProgress: /* state */ reactDashPlayerLib.Anon_Loaded => scala.Unit = null,
@@ -103,7 +111,7 @@ object ReactPlayerProps {
     if (onDuration != null) __obj.updateDynamic("onDuration")(js.Any.fromFunction1(onDuration))
     if (onEnablePIP != null) __obj.updateDynamic("onEnablePIP")(js.Any.fromFunction0(onEnablePIP))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction0(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction4(onError))
     if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction0(onPause))
     if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction0(onPlay))
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))

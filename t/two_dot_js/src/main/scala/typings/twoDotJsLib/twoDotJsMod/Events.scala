@@ -51,17 +51,17 @@ object Events extends js.Object {
   sealed trait update
     extends twoDotJsLib.twoDotJsMod.Events
   
-  val change: change with java.lang.String = js.native
-  val insert: insert with java.lang.String = js.native
-  val load: load with java.lang.String = js.native
-  val order: order with java.lang.String = js.native
-  val pause: pause with java.lang.String = js.native
-  val play: play with java.lang.String = js.native
-  val remove: remove with java.lang.String = js.native
-  val render: render with java.lang.String = js.native
-  val resize: resize with java.lang.String = js.native
-  val update: update with java.lang.String = js.native
+  /* 0 */ val change: change with scala.Double = js.native
+  /* 1 */ val insert: insert with scala.Double = js.native
+  /* 2 */ val load: load with scala.Double = js.native
+  /* 3 */ val order: order with scala.Double = js.native
+  /* 4 */ val pause: pause with scala.Double = js.native
+  /* 5 */ val play: play with scala.Double = js.native
+  /* 6 */ val remove: remove with scala.Double = js.native
+  /* 7 */ val render: render with scala.Double = js.native
+  /* 8 */ val resize: resize with scala.Double = js.native
+  /* 9 */ val update: update with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[twoDotJsLib.twoDotJsMod.Events with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[twoDotJsLib.twoDotJsMod.Events with scala.Double] = js.native
 }
 

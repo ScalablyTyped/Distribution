@@ -200,9 +200,9 @@ object policiesNs extends js.Object {
       sealed trait retry
         extends cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.retryDecision
       
-      val ignore: ignore with scala.Double = js.native
+      /* 1 */ val ignore: ignore with scala.Double = js.native
       /* 0 */ val rethrow: rethrow with scala.Double = js.native
-      val retry: retry with scala.Double = js.native
+      /* 0 */ val retry: retry with scala.Double = js.native
       @JSBracketAccess
       def apply(value: scala.Double): js.UndefOr[
             cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.retryDecision with scala.Double

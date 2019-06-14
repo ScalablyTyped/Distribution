@@ -24,10 +24,10 @@ object FilterType extends js.Object {
   sealed trait StartsWith
     extends ejDotWebDotAllLib.ejNs.FilterType
   
-  val Contains: Contains with java.lang.String = js.native
-  val StartsWith: StartsWith with java.lang.String = js.native
+  /* 0 */ val Contains: Contains with scala.Double = js.native
+  /* 1 */ val StartsWith: StartsWith with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.FilterType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.FilterType with scala.Double] = js.native
 }
 
 @JSGlobal("ej.filterType")
@@ -69,16 +69,16 @@ object filterType extends js.Object {
   sealed trait StartsWith
     extends ejDotWebDotAllLib.ejNs.filterType
   
-  val Contains: Contains with java.lang.String = js.native
-  val EndsWith: EndsWith with java.lang.String = js.native
-  val Equal: Equal with java.lang.String = js.native
-  val GreaterThan: GreaterThan with java.lang.String = js.native
-  val GreaterThanOrEqual: GreaterThanOrEqual with java.lang.String = js.native
-  val LessThan: LessThan with java.lang.String = js.native
-  val LessThanOrEqual: LessThanOrEqual with java.lang.String = js.native
-  val NotEqual: NotEqual with java.lang.String = js.native
-  val StartsWith: StartsWith with java.lang.String = js.native
+  /* 1 */ val Contains: Contains with scala.Double = js.native
+  /* 2 */ val EndsWith: EndsWith with scala.Double = js.native
+  /* 7 */ val Equal: Equal with scala.Double = js.native
+  /* 4 */ val GreaterThan: GreaterThan with scala.Double = js.native
+  /* 6 */ val GreaterThanOrEqual: GreaterThanOrEqual with scala.Double = js.native
+  /* 3 */ val LessThan: LessThan with scala.Double = js.native
+  /* 5 */ val LessThanOrEqual: LessThanOrEqual with scala.Double = js.native
+  /* 8 */ val NotEqual: NotEqual with scala.Double = js.native
+  /* 0 */ val StartsWith: StartsWith with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.filterType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.filterType with scala.Double] = js.native
 }
 

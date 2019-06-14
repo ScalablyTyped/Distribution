@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait XlColorIndex extends js.Object
 
+object XlColorIndex {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlColorIndexAutomatic: activexDashExcelLib.activexDashExcelLibNumbers.`-4105` = this.cast(-4105)
+  @scala.inline
+  def xlColorIndexNone: activexDashExcelLib.activexDashExcelLibNumbers.`-4142` = this.cast(-4142)
+}
+

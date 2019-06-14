@@ -30,11 +30,11 @@ object Scrolling extends js.Object {
   sealed trait Scroll
     extends openui5Lib.sapNs.uiNs.coreNs.Scrolling
   
-  val Auto: Auto with java.lang.String = js.native
-  val Hidden: Hidden with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Scroll: Scroll with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val Hidden: Hidden with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 3 */ val Scroll: Scroll with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.Scrolling with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.Scrolling with scala.Double] = js.native
 }
 

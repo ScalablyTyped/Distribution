@@ -21,9 +21,9 @@ object GroupButtonMode extends js.Object {
   sealed trait RadioButton
     extends ejDotWebDotAllLib.ejNs.GroupButtonMode
   
-  val CheckBox: CheckBox with java.lang.String = js.native
-  val RadioButton: RadioButton with java.lang.String = js.native
+  /* 0 */ val CheckBox: CheckBox with scala.Double = js.native
+  /* 1 */ val RadioButton: RadioButton with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GroupButtonMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GroupButtonMode with scala.Double] = js.native
 }
 

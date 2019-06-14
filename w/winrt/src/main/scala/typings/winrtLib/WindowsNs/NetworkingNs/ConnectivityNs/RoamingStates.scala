@@ -23,12 +23,10 @@ object RoamingStates extends js.Object {
   sealed trait roaming
     extends winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.RoamingStates
   
-  val none: none with java.lang.String = js.native
-  val notRoaming: notRoaming with java.lang.String = js.native
-  val roaming: roaming with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val notRoaming: notRoaming with scala.Double = js.native
+  /* 2 */ val roaming: roaming with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.RoamingStates with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.RoamingStates with scala.Double] = js.native
 }
 

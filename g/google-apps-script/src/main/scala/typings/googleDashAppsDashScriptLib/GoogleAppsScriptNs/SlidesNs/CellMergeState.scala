@@ -23,12 +23,12 @@ object CellMergeState extends js.Object {
   sealed trait NORMAL
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.CellMergeState
   
-  val HEAD: HEAD with java.lang.String = js.native
-  val MERGED: MERGED with java.lang.String = js.native
-  val NORMAL: NORMAL with java.lang.String = js.native
+  /* 1 */ val HEAD: HEAD with scala.Double = js.native
+  /* 2 */ val MERGED: MERGED with scala.Double = js.native
+  /* 0 */ val NORMAL: NORMAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.CellMergeState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.CellMergeState with scala.Double
   ] = js.native
 }
 

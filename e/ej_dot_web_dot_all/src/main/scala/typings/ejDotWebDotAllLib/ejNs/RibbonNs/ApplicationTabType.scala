@@ -21,9 +21,9 @@ object ApplicationTabType extends js.Object {
   sealed trait Menu
     extends ejDotWebDotAllLib.ejNs.RibbonNs.ApplicationTabType
   
-  val Backstage: Backstage with java.lang.String = js.native
-  val Menu: Menu with java.lang.String = js.native
+  /* 1 */ val Backstage: Backstage with scala.Double = js.native
+  /* 0 */ val Menu: Menu with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.ApplicationTabType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.ApplicationTabType with scala.Double] = js.native
 }
 

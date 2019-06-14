@@ -32,13 +32,13 @@ object MediaEffectClosedReason extends js.Object {
   sealed trait unsupportedEncodingFormat
     extends winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.MediaEffectClosedReason
   
-  val done: done with java.lang.String = js.native
-  val effectCurrentlyUnloaded: effectCurrentlyUnloaded with java.lang.String = js.native
-  val unknownError: unknownError with java.lang.String = js.native
-  val unsupportedEncodingFormat: unsupportedEncodingFormat with java.lang.String = js.native
+  /* 0 */ val done: done with scala.Double = js.native
+  /* 3 */ val effectCurrentlyUnloaded: effectCurrentlyUnloaded with scala.Double = js.native
+  /* 1 */ val unknownError: unknownError with scala.Double = js.native
+  /* 2 */ val unsupportedEncodingFormat: unsupportedEncodingFormat with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.MediaEffectClosedReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.MediaEffectClosedReason with scala.Double
   ] = js.native
 }
 

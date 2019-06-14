@@ -87,24 +87,24 @@ object RevocationAndRenewalReasons extends js.Object {
   sealed trait userModeComponentLoad
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.RevocationAndRenewalReasons
   
-  val appComponent: appComponent with java.lang.String = js.native
-  val bootDriverVerificationFailed: bootDriverVerificationFailed with java.lang.String = js.native
-  val componentCertificateRevoked: componentCertificateRevoked with java.lang.String = js.native
-  val componentHighSecurityCertificateRevoked: componentHighSecurityCertificateRevoked with java.lang.String = js.native
-  val componentLowSecurityCertificateRevoked: componentLowSecurityCertificateRevoked with java.lang.String = js.native
-  val componentRevoked: componentRevoked with java.lang.String = js.native
-  val componentSignedWithTestCertificate: componentSignedWithTestCertificate with java.lang.String = js.native
-  val encryptionFailure: encryptionFailure with java.lang.String = js.native
-  val globalRevocationListAbsent: globalRevocationListAbsent with java.lang.String = js.native
-  val globalRevocationListLoadFailed: globalRevocationListLoadFailed with java.lang.String = js.native
-  val invalidComponentCertificateExtendedKeyUse: invalidComponentCertificateExtendedKeyUse with java.lang.String = js.native
-  val invalidComponentCertificateRoot: invalidComponentCertificateRoot with java.lang.String = js.native
-  val invalidGlobalRevocationListSignature: invalidGlobalRevocationListSignature with java.lang.String = js.native
-  val kernelModeComponentLoad: kernelModeComponentLoad with java.lang.String = js.native
-  val userModeComponentLoad: userModeComponentLoad with java.lang.String = js.native
+  /* 2 */ val appComponent: appComponent with scala.Double = js.native
+  /* 12 */ val bootDriverVerificationFailed: bootDriverVerificationFailed with scala.Double = js.native
+  /* 8 */ val componentCertificateRevoked: componentCertificateRevoked with scala.Double = js.native
+  /* 10 */ val componentHighSecurityCertificateRevoked: componentHighSecurityCertificateRevoked with scala.Double = js.native
+  /* 11 */ val componentLowSecurityCertificateRevoked: componentLowSecurityCertificateRevoked with scala.Double = js.native
+  /* 6 */ val componentRevoked: componentRevoked with scala.Double = js.native
+  /* 13 */ val componentSignedWithTestCertificate: componentSignedWithTestCertificate with scala.Double = js.native
+  /* 14 */ val encryptionFailure: encryptionFailure with scala.Double = js.native
+  /* 5 */ val globalRevocationListAbsent: globalRevocationListAbsent with scala.Double = js.native
+  /* 3 */ val globalRevocationListLoadFailed: globalRevocationListLoadFailed with scala.Double = js.native
+  /* 7 */ val invalidComponentCertificateExtendedKeyUse: invalidComponentCertificateExtendedKeyUse with scala.Double = js.native
+  /* 9 */ val invalidComponentCertificateRoot: invalidComponentCertificateRoot with scala.Double = js.native
+  /* 4 */ val invalidGlobalRevocationListSignature: invalidGlobalRevocationListSignature with scala.Double = js.native
+  /* 1 */ val kernelModeComponentLoad: kernelModeComponentLoad with scala.Double = js.native
+  /* 0 */ val userModeComponentLoad: userModeComponentLoad with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.RevocationAndRenewalReasons with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.RevocationAndRenewalReasons with scala.Double
   ] = js.native
 }
 

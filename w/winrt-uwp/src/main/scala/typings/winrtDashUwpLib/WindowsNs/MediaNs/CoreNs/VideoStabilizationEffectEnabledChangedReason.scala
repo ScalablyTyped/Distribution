@@ -27,12 +27,12 @@ object VideoStabilizationEffectEnabledChangedReason extends js.Object {
   sealed trait runningSlowly
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.VideoStabilizationEffectEnabledChangedReason
   
-  val pixelRateTooHigh: pixelRateTooHigh with java.lang.String = js.native
-  val programmatic: programmatic with java.lang.String = js.native
-  val runningSlowly: runningSlowly with java.lang.String = js.native
+  /* 1 */ val pixelRateTooHigh: pixelRateTooHigh with scala.Double = js.native
+  /* 0 */ val programmatic: programmatic with scala.Double = js.native
+  /* 2 */ val runningSlowly: runningSlowly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.VideoStabilizationEffectEnabledChangedReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.VideoStabilizationEffectEnabledChangedReason with scala.Double
   ] = js.native
 }
 

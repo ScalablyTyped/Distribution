@@ -82,23 +82,23 @@ object ChatMessageStatus extends js.Object {
   sealed trait sent
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageStatus
   
-  val cancelled: cancelled with java.lang.String = js.native
-  val declined: declined with java.lang.String = js.native
-  val deleted: deleted with java.lang.String = js.native
-  val draft: draft with java.lang.String = js.native
-  val recalled: recalled with java.lang.String = js.native
-  val receiveDownloadFailed: receiveDownloadFailed with java.lang.String = js.native
-  val receiveDownloadNeeded: receiveDownloadNeeded with java.lang.String = js.native
-  val receiveDownloading: receiveDownloading with java.lang.String = js.native
-  val receiveRetryNeeded: receiveRetryNeeded with java.lang.String = js.native
-  val received: received with java.lang.String = js.native
-  val sendFailed: sendFailed with java.lang.String = js.native
-  val sendRetryNeeded: sendRetryNeeded with java.lang.String = js.native
-  val sending: sending with java.lang.String = js.native
-  val sent: sent with java.lang.String = js.native
+  /* 11 */ val cancelled: cancelled with scala.Double = js.native
+  /* 10 */ val declined: declined with scala.Double = js.native
+  /* 9 */ val deleted: deleted with scala.Double = js.native
+  /* 0 */ val draft: draft with scala.Double = js.native
+  /* 12 */ val recalled: recalled with scala.Double = js.native
+  /* 7 */ val receiveDownloadFailed: receiveDownloadFailed with scala.Double = js.native
+  /* 6 */ val receiveDownloadNeeded: receiveDownloadNeeded with scala.Double = js.native
+  /* 8 */ val receiveDownloading: receiveDownloading with scala.Double = js.native
+  /* 13 */ val receiveRetryNeeded: receiveRetryNeeded with scala.Double = js.native
+  /* 5 */ val received: received with scala.Double = js.native
+  /* 4 */ val sendFailed: sendFailed with scala.Double = js.native
+  /* 3 */ val sendRetryNeeded: sendRetryNeeded with scala.Double = js.native
+  /* 1 */ val sending: sending with scala.Double = js.native
+  /* 2 */ val sent: sent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ChatNs.ChatMessageStatus with scala.Double
   ] = js.native
 }
 

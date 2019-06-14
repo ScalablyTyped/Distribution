@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-dao"
-version := "16.0-dt-20190213Z-d50c52"
+version := "16.0-dt-20190213Z-3ff579"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

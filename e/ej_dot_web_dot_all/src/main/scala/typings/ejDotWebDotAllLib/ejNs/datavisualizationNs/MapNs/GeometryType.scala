@@ -21,11 +21,9 @@ object GeometryType extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.GeometryType
   
-  val Geographic: Geographic with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 0 */ val Geographic: Geographic with scala.Double = js.native
+  /* 1 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.GeometryType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.GeometryType with scala.Double] = js.native
 }
 

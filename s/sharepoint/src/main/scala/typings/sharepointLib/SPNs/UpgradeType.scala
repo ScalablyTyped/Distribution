@@ -19,9 +19,9 @@ object UpgradeType extends js.Object {
   sealed trait versionUpgrade
     extends sharepointLib.SPNs.UpgradeType
   
-  val buildUpgrade: buildUpgrade with java.lang.String = js.native
-  val versionUpgrade: versionUpgrade with java.lang.String = js.native
+  /* 0 */ val buildUpgrade: buildUpgrade with scala.Double = js.native
+  /* 1 */ val versionUpgrade: versionUpgrade with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UpgradeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UpgradeType with scala.Double] = js.native
 }
 

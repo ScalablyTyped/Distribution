@@ -19,6 +19,10 @@ trait NodeGroup extends js.Object {
     */
   var PrimaryEndpoint: js.UndefOr[Endpoint] = js.undefined
   /**
+    * The endpoint of the replica nodes in this node group (shard).
+    */
+  var ReaderEndpoint: js.UndefOr[Endpoint] = js.undefined
+  /**
     * The keyspace for this node group (shard).
     */
   var Slots: js.UndefOr[String] = js.undefined
@@ -34,6 +38,7 @@ object NodeGroup {
     NodeGroupId: String = null,
     NodeGroupMembers: NodeGroupMemberList = null,
     PrimaryEndpoint: Endpoint = null,
+    ReaderEndpoint: Endpoint = null,
     Slots: String = null,
     Status: String = null
   ): NodeGroup = {
@@ -41,6 +46,7 @@ object NodeGroup {
     if (NodeGroupId != null) __obj.updateDynamic("NodeGroupId")(NodeGroupId)
     if (NodeGroupMembers != null) __obj.updateDynamic("NodeGroupMembers")(NodeGroupMembers)
     if (PrimaryEndpoint != null) __obj.updateDynamic("PrimaryEndpoint")(PrimaryEndpoint)
+    if (ReaderEndpoint != null) __obj.updateDynamic("ReaderEndpoint")(ReaderEndpoint)
     if (Slots != null) __obj.updateDynamic("Slots")(Slots)
     if (Status != null) __obj.updateDynamic("Status")(Status)
     __obj.asInstanceOf[NodeGroup]

@@ -23,10 +23,10 @@ object DataType extends js.Object {
   sealed trait Xml
     extends jqueryDotAjaxfileLib.DataType
   
-  val Json: Json with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
-  val Xml: Xml with java.lang.String = js.native
+  /* 0 */ val Json: Json with scala.Double = js.native
+  /* 2 */ val Text: Text with scala.Double = js.native
+  /* 1 */ val Xml: Xml with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jqueryDotAjaxfileLib.DataType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jqueryDotAjaxfileLib.DataType with scala.Double] = js.native
 }
 

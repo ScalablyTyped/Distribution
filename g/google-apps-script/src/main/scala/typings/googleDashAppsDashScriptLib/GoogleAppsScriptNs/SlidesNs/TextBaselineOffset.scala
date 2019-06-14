@@ -27,13 +27,13 @@ object TextBaselineOffset extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.TextBaselineOffset
   
-  val NONE: NONE with java.lang.String = js.native
-  val SUBSCRIPT: SUBSCRIPT with java.lang.String = js.native
-  val SUPERSCRIPT: SUPERSCRIPT with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 1 */ val NONE: NONE with scala.Double = js.native
+  /* 3 */ val SUBSCRIPT: SUBSCRIPT with scala.Double = js.native
+  /* 2 */ val SUPERSCRIPT: SUPERSCRIPT with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.TextBaselineOffset with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.TextBaselineOffset with scala.Double
   ] = js.native
 }
 

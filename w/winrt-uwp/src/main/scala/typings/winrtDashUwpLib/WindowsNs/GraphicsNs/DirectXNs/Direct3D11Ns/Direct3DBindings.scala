@@ -62,19 +62,19 @@ object Direct3DBindings extends js.Object {
   sealed trait videoEncoder
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.Direct3DBindings
   
-  val constantBuffer: constantBuffer with java.lang.String = js.native
-  val decoder: decoder with java.lang.String = js.native
-  val depthStencil: depthStencil with java.lang.String = js.native
-  val indexBuffer: indexBuffer with java.lang.String = js.native
-  val renderTarget: renderTarget with java.lang.String = js.native
-  val shaderResource: shaderResource with java.lang.String = js.native
-  val streamOutput: streamOutput with java.lang.String = js.native
-  val unorderedAccess: unorderedAccess with java.lang.String = js.native
-  val vertexBuffer: vertexBuffer with java.lang.String = js.native
-  val videoEncoder: videoEncoder with java.lang.String = js.native
+  /* 2 */ val constantBuffer: constantBuffer with scala.Double = js.native
+  /* 8 */ val decoder: decoder with scala.Double = js.native
+  /* 6 */ val depthStencil: depthStencil with scala.Double = js.native
+  /* 1 */ val indexBuffer: indexBuffer with scala.Double = js.native
+  /* 5 */ val renderTarget: renderTarget with scala.Double = js.native
+  /* 3 */ val shaderResource: shaderResource with scala.Double = js.native
+  /* 4 */ val streamOutput: streamOutput with scala.Double = js.native
+  /* 7 */ val unorderedAccess: unorderedAccess with scala.Double = js.native
+  /* 0 */ val vertexBuffer: vertexBuffer with scala.Double = js.native
+  /* 9 */ val videoEncoder: videoEncoder with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.Direct3DBindings with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.Direct3DBindings with scala.Double
   ] = js.native
 }
 

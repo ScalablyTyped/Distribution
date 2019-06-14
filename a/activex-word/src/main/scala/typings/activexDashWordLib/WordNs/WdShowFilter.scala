@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait WdShowFilter extends js.Object
 
+object WdShowFilter {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdShowFilterFormattingAvailable: activexDashWordLib.activexDashWordLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def wdShowFilterFormattingInUse: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdShowFilterFormattingRecommended: activexDashWordLib.activexDashWordLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def wdShowFilterStylesAll: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdShowFilterStylesAvailable: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdShowFilterStylesInUse: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

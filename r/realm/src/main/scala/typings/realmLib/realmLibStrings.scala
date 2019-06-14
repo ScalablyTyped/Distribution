@@ -54,8 +54,7 @@ object realmLibStrings {
   
   @js.native
   sealed trait `after-upload`
-    extends realmLib.realmMod.SyncNs.SessionStopPolicy
-       with realmLib.RealmNs.SyncNs.SessionStopPolicy
+    extends realmLib.RealmNs.SyncNs.SessionStopPolicy
   
   @js.native
   sealed trait all
@@ -125,8 +124,7 @@ object realmLibStrings {
   
   @js.native
   sealed trait immediately
-    extends realmLib.realmMod.SyncNs.SessionStopPolicy
-       with realmLib.RealmNs.SyncNs.SessionStopPolicy
+    extends realmLib.RealmNs.SyncNs.SessionStopPolicy
   
   @js.native
   sealed trait inactive extends js.Object
@@ -152,8 +150,7 @@ object realmLibStrings {
   
   @js.native
   sealed trait never
-    extends realmLib.realmMod.SyncNs.SessionStopPolicy
-       with realmLib.RealmNs.SyncNs.SessionStopPolicy
+    extends realmLib.RealmNs.SyncNs.SessionStopPolicy
   
   @js.native
   sealed trait none

@@ -32,13 +32,13 @@ object KeyProtectionLevel extends js.Object {
   sealed trait noConsent
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.KeyProtectionLevel
   
-  val consentOnly: consentOnly with java.lang.String = js.native
-  val consentWithFingerprint: consentWithFingerprint with java.lang.String = js.native
-  val consentWithPassword: consentWithPassword with java.lang.String = js.native
-  val noConsent: noConsent with java.lang.String = js.native
+  /* 1 */ val consentOnly: consentOnly with scala.Double = js.native
+  /* 3 */ val consentWithFingerprint: consentWithFingerprint with scala.Double = js.native
+  /* 2 */ val consentWithPassword: consentWithPassword with scala.Double = js.native
+  /* 0 */ val noConsent: noConsent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.KeyProtectionLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.KeyProtectionLevel with scala.Double
   ] = js.native
 }
 

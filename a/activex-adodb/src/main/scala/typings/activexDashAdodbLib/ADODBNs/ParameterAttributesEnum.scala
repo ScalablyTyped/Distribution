@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait ParameterAttributesEnum extends js.Object
 
+object ParameterAttributesEnum {
+  @scala.inline
+  def adParamLong: activexDashAdodbLib.activexDashAdodbLibNumbers.`128` = this.cast(128)
+  @scala.inline
+  def adParamNullable: activexDashAdodbLib.activexDashAdodbLibNumbers.`64` = this.cast(64)
+  @scala.inline
+  def adParamSigned: activexDashAdodbLib.activexDashAdodbLibNumbers.`16` = this.cast(16)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

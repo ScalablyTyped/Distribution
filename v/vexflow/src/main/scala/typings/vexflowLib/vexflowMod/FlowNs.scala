@@ -480,8 +480,8 @@ object FlowNs extends js.Object {
   @js.native
   object AnnotationNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
-    type Justify = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
-    type VerticalJustify = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Justify = vexflowLib.VexNs.FlowNs.AnnotationNs.Justify
+    type VerticalJustify = vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify
   }
   
   /* static members */
@@ -506,7 +506,7 @@ object FlowNs extends js.Object {
   @JSName("Barline")
   @js.native
   object BarlineNs extends js.Object {
-    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type `type` = vexflowLib.VexNs.FlowNs.BarlineNs.`type`
   }
   
   /* static members */
@@ -570,7 +570,7 @@ object FlowNs extends js.Object {
   @JSName("Curve")
   @js.native
   object CurveNs extends js.Object {
-    type Position = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Position = vexflowLib.VexNs.FlowNs.CurveNs.Position
   }
   
   /* static members */
@@ -744,7 +744,7 @@ object FlowNs extends js.Object {
   @js.native
   object ModifierNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
-    type Position = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Position = vexflowLib.VexNs.FlowNs.ModifierNs.Position
   }
   
   @JSName("Music")
@@ -820,7 +820,7 @@ object FlowNs extends js.Object {
     object GLYPHS
       extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodeXshift]
     
-    type Styles = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Styles = vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles
   }
   
   /* static members */
@@ -901,32 +901,20 @@ object FlowNs extends js.Object {
   @JSName("Renderer")
   @js.native
   object RendererNs extends js.Object {
-    type Backends = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
-    type LineEndType = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Backends = vexflowLib.VexNs.FlowNs.RendererNs.Backends
+    type LineEndType = vexflowLib.VexNs.FlowNs.RendererNs.LineEndType
   }
   
   @JSName("Repetition")
   @js.native
   object RepetitionNs extends js.Object {
-    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type `type` = vexflowLib.VexNs.FlowNs.RepetitionNs.`type`
   }
   
   @JSName("StaveConnector")
   @js.native
   object StaveConnectorNs extends js.Object {
-    /* Rewritten from type alias, can be one of: 
-      - vexflowLib.vexflowLibNumbers.`0`
-      - vexflowLib.vexflowLibNumbers.`1`
-      - vexflowLib.vexflowLibNumbers.`2`
-      - vexflowLib.vexflowLibNumbers.`3`
-      - vexflowLib.vexflowLibNumbers.`4`
-      - vexflowLib.vexflowLibNumbers.`5`
-      - vexflowLib.vexflowLibNumbers.`6`
-      - vexflowLib.vexflowLibNumbers.`7`
-      - vexflowLib.vexflowLibNumbers.`8`
-    */
-    trait `type` extends js.Object
-    
+    type `type` = vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`
   }
   
   /* static members */
@@ -952,30 +940,21 @@ object FlowNs extends js.Object {
   @JSName("StaveHairpin")
   @js.native
   object StaveHairpinNs extends js.Object {
-    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type `type` = vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`
   }
   
   @JSName("StaveLine")
   @js.native
   object StaveLineNs extends js.Object {
-    type TextJustification = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
-    type TextVerticalPosition = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type TextJustification = vexflowLib.VexNs.FlowNs.StaveLineNs.TextJustification
+    type TextVerticalPosition = vexflowLib.VexNs.FlowNs.StaveLineNs.TextVerticalPosition
   }
   
   @JSName("StaveModifier")
   @js.native
   object StaveModifierNs extends js.Object {
     // @see https://github.com/0xfe/vexflow/blob/master/src/stavemodifier.js#L9
-    /* Rewritten from type alias, can be one of: 
-      - vexflowLib.vexflowLibNumbers.`1`
-      - vexflowLib.vexflowLibNumbers.`2`
-      - vexflowLib.vexflowLibNumbers.`3`
-      - vexflowLib.vexflowLibNumbers.`4`
-      - vexflowLib.vexflowLibNumbers.`5`
-      - vexflowLib.vexflowLibNumbers.`6`
-    */
-    trait Position extends js.Object
-    
+    type Position = vexflowLib.VexNs.FlowNs.StaveModifierNs.Position
   }
   
   /* static members */
@@ -1036,7 +1015,7 @@ object FlowNs extends js.Object {
   @js.native
   object StrokeNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
-    type Type = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Type = vexflowLib.VexNs.FlowNs.StrokeNs.Type
   }
   
   @js.native
@@ -1069,12 +1048,7 @@ object FlowNs extends js.Object {
   @JSName("TextBracket")
   @js.native
   object TextBracketNs extends js.Object {
-    /* Rewritten from type alias, can be one of: 
-      - vexflowLib.vexflowLibNumbers.`1`
-      - vexflowLib.vexflowLibNumbers.`-1`
-    */
-    trait Positions extends js.Object
-    
+    type Positions = vexflowLib.VexNs.FlowNs.TextBracketNs.Positions
   }
   
   /* static members */
@@ -1090,7 +1064,7 @@ object FlowNs extends js.Object {
     object GLYPHS
       extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodePoint]
     
-    type Justification = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Justification = vexflowLib.VexNs.FlowNs.TextNoteNs.Justification
   }
   
   /* static members */
@@ -1143,13 +1117,13 @@ object FlowNs extends js.Object {
   @JSName("Voice")
   @js.native
   object VoiceNs extends js.Object {
-    type Mode = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type Mode = vexflowLib.VexNs.FlowNs.VoiceNs.Mode
   }
   
   @JSName("Volta")
   @js.native
   object VoltaNs extends js.Object {
-    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type `type` = vexflowLib.VexNs.FlowNs.VoltaNs.`type`
   }
   
   @js.native

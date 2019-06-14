@@ -47,16 +47,16 @@ object PhotoImportSourceType extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSourceType
   
-  val audioRecorder: audioRecorder with java.lang.String = js.native
-  val camera: camera with java.lang.String = js.native
-  val generic: generic with java.lang.String = js.native
-  val mediaPlayer: mediaPlayer with java.lang.String = js.native
-  val personalInfoManager: personalInfoManager with java.lang.String = js.native
-  val phone: phone with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 6 */ val audioRecorder: audioRecorder with scala.Double = js.native
+  /* 1 */ val camera: camera with scala.Double = js.native
+  /* 0 */ val generic: generic with scala.Double = js.native
+  /* 2 */ val mediaPlayer: mediaPlayer with scala.Double = js.native
+  /* 5 */ val personalInfoManager: personalInfoManager with scala.Double = js.native
+  /* 3 */ val phone: phone with scala.Double = js.native
+  /* 4 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSourceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSourceType with scala.Double
   ] = js.native
 }
 

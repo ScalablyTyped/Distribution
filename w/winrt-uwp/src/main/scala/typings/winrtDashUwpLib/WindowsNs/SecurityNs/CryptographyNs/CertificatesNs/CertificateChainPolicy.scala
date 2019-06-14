@@ -32,13 +32,13 @@ object CertificateChainPolicy extends js.Object {
   sealed trait ssl
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.CertificateChainPolicy
   
-  val base: base with java.lang.String = js.native
-  val microsoftRoot: microsoftRoot with java.lang.String = js.native
-  val ntAuthentication: ntAuthentication with java.lang.String = js.native
-  val ssl: ssl with java.lang.String = js.native
+  /* 0 */ val base: base with scala.Double = js.native
+  /* 3 */ val microsoftRoot: microsoftRoot with scala.Double = js.native
+  /* 2 */ val ntAuthentication: ntAuthentication with scala.Double = js.native
+  /* 1 */ val ssl: ssl with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.CertificateChainPolicy with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs.CertificateChainPolicy with scala.Double
   ] = js.native
 }
 

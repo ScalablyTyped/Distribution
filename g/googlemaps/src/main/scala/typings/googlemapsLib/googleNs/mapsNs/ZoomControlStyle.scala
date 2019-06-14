@@ -23,10 +23,10 @@ object ZoomControlStyle extends js.Object {
   sealed trait SMALL
     extends googlemapsLib.googleNs.mapsNs.ZoomControlStyle
   
-  val DEFAULT: DEFAULT with java.lang.String = js.native
-  val LARGE: LARGE with java.lang.String = js.native
-  val SMALL: SMALL with java.lang.String = js.native
+  /* 0 */ val DEFAULT: DEFAULT with scala.Double = js.native
+  /* 1 */ val LARGE: LARGE with scala.Double = js.native
+  /* 2 */ val SMALL: SMALL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.ZoomControlStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.ZoomControlStyle with scala.Double] = js.native
 }
 

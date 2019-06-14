@@ -32,13 +32,13 @@ object DialAppLaunchResult extends js.Object {
   sealed trait notFound
     extends winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppLaunchResult
   
-  val failedToLaunch: failedToLaunch with java.lang.String = js.native
-  val launched: launched with java.lang.String = js.native
-  val networkFailure: networkFailure with java.lang.String = js.native
-  val notFound: notFound with java.lang.String = js.native
+  /* 1 */ val failedToLaunch: failedToLaunch with scala.Double = js.native
+  /* 0 */ val launched: launched with scala.Double = js.native
+  /* 3 */ val networkFailure: networkFailure with scala.Double = js.native
+  /* 2 */ val notFound: notFound with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppLaunchResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DialProtocolNs.DialAppLaunchResult with scala.Double
   ] = js.native
 }
 

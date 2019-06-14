@@ -27,12 +27,12 @@ object WiFiDirectError extends js.Object {
   sealed trait success
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectError
   
-  val radioNotAvailable: radioNotAvailable with java.lang.String = js.native
-  val resourceInUse: resourceInUse with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 1 */ val radioNotAvailable: radioNotAvailable with scala.Double = js.native
+  /* 2 */ val resourceInUse: resourceInUse with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectError with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectError with scala.Double
   ] = js.native
 }
 

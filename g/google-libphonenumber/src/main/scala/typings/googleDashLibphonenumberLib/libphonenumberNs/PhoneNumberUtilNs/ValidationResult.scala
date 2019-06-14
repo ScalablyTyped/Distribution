@@ -27,13 +27,13 @@ object ValidationResult extends js.Object {
   sealed trait TOO_SHORT
     extends googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.ValidationResult
   
-  val INVALID_COUNTRY_CODE: INVALID_COUNTRY_CODE with java.lang.String = js.native
-  val IS_POSSIBLE: IS_POSSIBLE with java.lang.String = js.native
-  val TOO_LONG: TOO_LONG with java.lang.String = js.native
-  val TOO_SHORT: TOO_SHORT with java.lang.String = js.native
+  /* 1 */ val INVALID_COUNTRY_CODE: INVALID_COUNTRY_CODE with scala.Double = js.native
+  /* 0 */ val IS_POSSIBLE: IS_POSSIBLE with scala.Double = js.native
+  /* 3 */ val TOO_LONG: TOO_LONG with scala.Double = js.native
+  /* 2 */ val TOO_SHORT: TOO_SHORT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.ValidationResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.ValidationResult with scala.Double
   ] = js.native
 }
 

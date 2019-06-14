@@ -35,15 +35,15 @@ object UssdResultCode extends js.Object {
   sealed trait terminated
     extends winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UssdResultCode
   
-  val actionRequired: actionRequired with java.lang.String = js.native
-  val networkTimeout: networkTimeout with java.lang.String = js.native
-  val noActionRequired: noActionRequired with java.lang.String = js.native
-  val operationNotSupported: operationNotSupported with java.lang.String = js.native
-  val otherLocalClient: otherLocalClient with java.lang.String = js.native
-  val terminated: terminated with java.lang.String = js.native
+  /* 1 */ val actionRequired: actionRequired with scala.Double = js.native
+  /* 5 */ val networkTimeout: networkTimeout with scala.Double = js.native
+  /* 0 */ val noActionRequired: noActionRequired with scala.Double = js.native
+  /* 4 */ val operationNotSupported: operationNotSupported with scala.Double = js.native
+  /* 3 */ val otherLocalClient: otherLocalClient with scala.Double = js.native
+  /* 2 */ val terminated: terminated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UssdResultCode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UssdResultCode with scala.Double
   ] = js.native
 }
 

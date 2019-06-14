@@ -27,11 +27,11 @@ object SceneMode extends js.Object {
   sealed trait SCENE3D
     extends cesiumLib.cesiumMod.SceneMode
   
-  val COLUMBUS_VIEW: COLUMBUS_VIEW with java.lang.String = js.native
-  val MORPHING: MORPHING with java.lang.String = js.native
-  val SCENE2D: SCENE2D with java.lang.String = js.native
-  val SCENE3D: SCENE3D with java.lang.String = js.native
+  /* 1 */ val COLUMBUS_VIEW: COLUMBUS_VIEW with scala.Double = js.native
+  /* 0 */ val MORPHING: MORPHING with scala.Double = js.native
+  /* 2 */ val SCENE2D: SCENE2D with scala.Double = js.native
+  /* 3 */ val SCENE3D: SCENE3D with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.SceneMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.SceneMode with scala.Double] = js.native
 }
 

@@ -12,6 +12,6 @@ sealed trait Mapping extends js.Object
 @js.native
 object Mapping extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.Mapping with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.Mapping with scala.Nothing] = js.native
 }
 

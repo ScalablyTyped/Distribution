@@ -34,12 +34,12 @@ object FlexDirection extends js.Object {
   sealed trait RowReverse
     extends openui5Lib.sapNs.mNs.FlexDirection
   
-  val Column: Column with java.lang.String = js.native
-  val ColumnReverse: ColumnReverse with java.lang.String = js.native
-  val Inherit: Inherit with java.lang.String = js.native
-  val Row: Row with java.lang.String = js.native
-  val RowReverse: RowReverse with java.lang.String = js.native
+  /* 0 */ val Column: Column with scala.Double = js.native
+  /* 1 */ val ColumnReverse: ColumnReverse with scala.Double = js.native
+  /* 2 */ val Inherit: Inherit with scala.Double = js.native
+  /* 3 */ val Row: Row with scala.Double = js.native
+  /* 4 */ val RowReverse: RowReverse with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.FlexDirection with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.FlexDirection with scala.Double] = js.native
 }
 

@@ -27,12 +27,12 @@ object PhoneCallHistoryStoreAccessType extends js.Object {
   sealed trait appEntriesReadWrite
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryStoreAccessType
   
-  val allEntriesLimitedReadWrite: allEntriesLimitedReadWrite with java.lang.String = js.native
-  val allEntriesReadWrite: allEntriesReadWrite with java.lang.String = js.native
-  val appEntriesReadWrite: appEntriesReadWrite with java.lang.String = js.native
+  /* 1 */ val allEntriesLimitedReadWrite: allEntriesLimitedReadWrite with scala.Double = js.native
+  /* 2 */ val allEntriesReadWrite: allEntriesReadWrite with scala.Double = js.native
+  /* 0 */ val appEntriesReadWrite: appEntriesReadWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryStoreAccessType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryStoreAccessType with scala.Double
   ] = js.native
 }
 

@@ -26,10 +26,10 @@ object State extends js.Object {
   sealed trait READY
     extends heremapsLib.HNs.mapNs.IconNs.State
   
-  val ERROR: ERROR with java.lang.String = js.native
-  val LOADING: LOADING with java.lang.String = js.native
-  val READY: READY with java.lang.String = js.native
+  /* 0 */ val ERROR: ERROR with scala.Double = js.native
+  /* 1 */ val LOADING: LOADING with scala.Double = js.native
+  /* 2 */ val READY: READY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.mapNs.IconNs.State with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.mapNs.IconNs.State with scala.Double] = js.native
 }
 

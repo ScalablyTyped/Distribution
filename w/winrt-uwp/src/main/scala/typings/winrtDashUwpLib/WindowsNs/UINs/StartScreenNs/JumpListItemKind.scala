@@ -22,11 +22,9 @@ object JumpListItemKind extends js.Object {
   sealed trait separator
     extends winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListItemKind
   
-  val arguments: arguments with java.lang.String = js.native
-  val separator: separator with java.lang.String = js.native
+  /* 0 */ val arguments: arguments with scala.Double = js.native
+  /* 1 */ val separator: separator with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListItemKind with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListItemKind with scala.Double] = js.native
 }
 

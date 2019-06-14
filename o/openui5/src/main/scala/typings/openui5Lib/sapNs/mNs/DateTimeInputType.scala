@@ -26,10 +26,10 @@ object DateTimeInputType extends js.Object {
   sealed trait Time
     extends openui5Lib.sapNs.mNs.DateTimeInputType
   
-  val Date: Date with java.lang.String = js.native
-  val DateTime: DateTime with java.lang.String = js.native
-  val Time: Time with java.lang.String = js.native
+  /* 0 */ val Date: Date with scala.Double = js.native
+  /* 1 */ val DateTime: DateTime with scala.Double = js.native
+  /* 2 */ val Time: Time with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.DateTimeInputType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.DateTimeInputType with scala.Double] = js.native
 }
 

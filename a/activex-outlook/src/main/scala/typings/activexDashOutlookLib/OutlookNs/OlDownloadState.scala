@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OlDownloadState extends js.Object
 
+object OlDownloadState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olFullItem: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def olHeaderOnly: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+}
+

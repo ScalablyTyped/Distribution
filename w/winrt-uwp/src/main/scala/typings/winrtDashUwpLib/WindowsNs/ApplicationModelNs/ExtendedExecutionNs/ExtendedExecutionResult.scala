@@ -22,11 +22,11 @@ object ExtendedExecutionResult extends js.Object {
   sealed trait denied
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionResult
   
-  val allowed: allowed with java.lang.String = js.native
-  val denied: denied with java.lang.String = js.native
+  /* 0 */ val allowed: allowed with scala.Double = js.native
+  /* 1 */ val denied: denied with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ExtendedExecutionNs.ExtendedExecutionResult with scala.Double
   ] = js.native
 }
 

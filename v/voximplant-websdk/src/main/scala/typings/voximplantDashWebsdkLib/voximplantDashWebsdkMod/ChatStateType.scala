@@ -53,15 +53,13 @@ object ChatStateType extends js.Object {
   sealed trait Paused
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.ChatStateType
   
-  val Active: Active with java.lang.String = js.native
-  val Composing: Composing with java.lang.String = js.native
-  val Gone: Gone with java.lang.String = js.native
-  val Inactive: Inactive with java.lang.String = js.native
-  val Invalid: Invalid with java.lang.String = js.native
-  val Paused: Paused with java.lang.String = js.native
+  /* 0 */ val Active: Active with scala.Double = js.native
+  /* 1 */ val Composing: Composing with scala.Double = js.native
+  /* 2 */ val Gone: Gone with scala.Double = js.native
+  /* 3 */ val Inactive: Inactive with scala.Double = js.native
+  /* 4 */ val Invalid: Invalid with scala.Double = js.native
+  /* 5 */ val Paused: Paused with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.ChatStateType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[voximplantDashWebsdkLib.voximplantDashWebsdkMod.ChatStateType with scala.Double] = js.native
 }
 

@@ -31,12 +31,12 @@ object BingMapsStyle extends js.Object {
   sealed trait ROAD
     extends cesiumLib.cesiumMod.BingMapsStyle
   
-  val AERIAL: AERIAL with java.lang.String = js.native
-  val AERIAL_WITH_LABELS: AERIAL_WITH_LABELS with java.lang.String = js.native
-  val COLLINS_BART: COLLINS_BART with java.lang.String = js.native
-  val ORDNANCE_SURVEY: ORDNANCE_SURVEY with java.lang.String = js.native
-  val ROAD: ROAD with java.lang.String = js.native
+  /* 0 */ val AERIAL: AERIAL with scala.Double = js.native
+  /* 1 */ val AERIAL_WITH_LABELS: AERIAL_WITH_LABELS with scala.Double = js.native
+  /* 4 */ val COLLINS_BART: COLLINS_BART with scala.Double = js.native
+  /* 3 */ val ORDNANCE_SURVEY: ORDNANCE_SURVEY with scala.Double = js.native
+  /* 2 */ val ROAD: ROAD with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.BingMapsStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.BingMapsStyle with scala.Double] = js.native
 }
 

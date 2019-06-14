@@ -26,10 +26,10 @@ object SelectionType extends js.Object {
   sealed trait Row
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.SelectionType
   
-  val Column: Column with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Row: Row with java.lang.String = js.native
+  /* 0 */ val Column: Column with scala.Double = js.native
+  /* 2 */ val Default: Default with scala.Double = js.native
+  /* 1 */ val Row: Row with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.SelectionType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.SelectionType with scala.Double] = js.native
 }
 

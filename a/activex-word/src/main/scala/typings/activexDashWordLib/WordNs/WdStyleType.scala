@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait WdStyleType extends js.Object
 
+object WdStyleType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdStyleTypeCharacter: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdStyleTypeLinked: activexDashWordLib.activexDashWordLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def wdStyleTypeList: activexDashWordLib.activexDashWordLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def wdStyleTypeParagraph: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdStyleTypeParagraphOnly: activexDashWordLib.activexDashWordLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def wdStyleTypeTable: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+}
+

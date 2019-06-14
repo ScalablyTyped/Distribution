@@ -27,13 +27,11 @@ object EntityEventType extends js.Object {
   sealed trait none
     extends sharepointLib.SPNs.BusinessDataNs.RuntimeNs.EntityEventType
   
-  val itemAdded: itemAdded with java.lang.String = js.native
-  val itemDeleted: itemDeleted with java.lang.String = js.native
-  val itemUpdated: itemUpdated with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val itemAdded: itemAdded with scala.Double = js.native
+  /* 3 */ val itemDeleted: itemDeleted with scala.Double = js.native
+  /* 2 */ val itemUpdated: itemUpdated with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.BusinessDataNs.RuntimeNs.EntityEventType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.BusinessDataNs.RuntimeNs.EntityEventType with scala.Double] = js.native
 }
 

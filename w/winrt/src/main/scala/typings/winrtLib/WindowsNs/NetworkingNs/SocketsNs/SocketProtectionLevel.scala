@@ -23,12 +23,12 @@ object SocketProtectionLevel extends js.Object {
   sealed trait sslAllowNullEncryption
     extends winrtLib.WindowsNs.NetworkingNs.SocketsNs.SocketProtectionLevel
   
-  val plainSocket: plainSocket with java.lang.String = js.native
-  val ssl: ssl with java.lang.String = js.native
-  val sslAllowNullEncryption: sslAllowNullEncryption with java.lang.String = js.native
+  /* 0 */ val plainSocket: plainSocket with scala.Double = js.native
+  /* 1 */ val ssl: ssl with scala.Double = js.native
+  /* 2 */ val sslAllowNullEncryption: sslAllowNullEncryption with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.NetworkingNs.SocketsNs.SocketProtectionLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.NetworkingNs.SocketsNs.SocketProtectionLevel with scala.Double
   ] = js.native
 }
 

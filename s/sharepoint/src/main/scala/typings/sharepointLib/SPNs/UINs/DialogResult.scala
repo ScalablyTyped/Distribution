@@ -27,10 +27,10 @@ object DialogResult extends js.Object {
   sealed trait invalid
     extends sharepointLib.SPNs.UINs.DialogResult
   
-  val OK: OK with java.lang.String = js.native
-  val cancel: cancel with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
+  /* 2 */ val OK: OK with scala.Double = js.native
+  /* 1 */ val cancel: cancel with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UINs.DialogResult with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UINs.DialogResult with scala.Double] = js.native
 }
 

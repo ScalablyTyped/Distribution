@@ -35,13 +35,13 @@ object PositionStatus extends js.Object {
   sealed trait ready
     extends winrtLib.WindowsNs.DevicesNs.GeolocationNs.PositionStatus
   
-  val disabled: disabled with java.lang.String = js.native
-  val initializing: initializing with java.lang.String = js.native
-  val noData: noData with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val notInitialized: notInitialized with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
+  /* 3 */ val disabled: disabled with scala.Double = js.native
+  /* 1 */ val initializing: initializing with scala.Double = js.native
+  /* 2 */ val noData: noData with scala.Double = js.native
+  /* 5 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 4 */ val notInitialized: notInitialized with scala.Double = js.native
+  /* 0 */ val ready: ready with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.GeolocationNs.PositionStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.GeolocationNs.PositionStatus with scala.Double] = js.native
 }
 

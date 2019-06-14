@@ -36,14 +36,14 @@ object FontStyle extends js.Object {
   sealed trait Underline
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.FontStyle
   
-  val Bold: Bold with java.lang.String = js.native
-  val Italic: Italic with java.lang.String = js.native
-  val Regular: Regular with java.lang.String = js.native
-  val Strikeout: Strikeout with java.lang.String = js.native
-  val Underline: Underline with java.lang.String = js.native
+  /* 0 */ val Bold: Bold with scala.Double = js.native
+  /* 1 */ val Italic: Italic with scala.Double = js.native
+  /* 2 */ val Regular: Regular with scala.Double = js.native
+  /* 3 */ val Strikeout: Strikeout with scala.Double = js.native
+  /* 4 */ val Underline: Underline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.FontStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.FontStyle with scala.Double
   ] = js.native
 }
 

@@ -31,14 +31,12 @@ object DisplayOrientations extends js.Object {
   sealed trait portraitFlipped
     extends winrtLib.WindowsNs.GraphicsNs.DisplayNs.DisplayOrientations
   
-  val landscape: landscape with java.lang.String = js.native
-  val landscapeFlipped: landscapeFlipped with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val portrait: portrait with java.lang.String = js.native
-  val portraitFlipped: portraitFlipped with java.lang.String = js.native
+  /* 1 */ val landscape: landscape with scala.Double = js.native
+  /* 3 */ val landscapeFlipped: landscapeFlipped with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val portrait: portrait with scala.Double = js.native
+  /* 4 */ val portraitFlipped: portraitFlipped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.GraphicsNs.DisplayNs.DisplayOrientations with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.DisplayNs.DisplayOrientations with scala.Double] = js.native
 }
 

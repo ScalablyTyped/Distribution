@@ -267,6 +267,23 @@ object route53Ns extends js.Object {
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ scala.Boolean = js.native
   }
   
+  @JSName("RecordTypes")
+  @js.native
+  object RecordTypesNs extends js.Object {
+    val A: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val AAAA: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val CAA: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val CNAME: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val MX: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val NAPTR: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val NS: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val PTR: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val SOA: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val SPF: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val SRV: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+    val TXT: atPulumiAwsLib.route53RecordTypeMod.RecordType = js.native
+  }
+  
   /* static members */
   @js.native
   object ResolverEndpoint extends js.Object {

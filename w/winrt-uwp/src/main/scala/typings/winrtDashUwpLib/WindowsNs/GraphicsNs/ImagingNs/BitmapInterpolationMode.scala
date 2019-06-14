@@ -32,13 +32,13 @@ object BitmapInterpolationMode extends js.Object {
   sealed trait nearestNeighbor
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapInterpolationMode
   
-  val cubic: cubic with java.lang.String = js.native
-  val fant: fant with java.lang.String = js.native
-  val linear: linear with java.lang.String = js.native
-  val nearestNeighbor: nearestNeighbor with java.lang.String = js.native
+  /* 2 */ val cubic: cubic with scala.Double = js.native
+  /* 3 */ val fant: fant with scala.Double = js.native
+  /* 1 */ val linear: linear with scala.Double = js.native
+  /* 0 */ val nearestNeighbor: nearestNeighbor with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapInterpolationMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapInterpolationMode with scala.Double
   ] = js.native
 }
 

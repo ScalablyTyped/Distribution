@@ -27,12 +27,10 @@ object MediaMemoryTypes extends js.Object {
   sealed trait gpuAndCpu
     extends winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.MediaMemoryTypes
   
-  val cpu: cpu with java.lang.String = js.native
-  val gpu: gpu with java.lang.String = js.native
-  val gpuAndCpu: gpuAndCpu with java.lang.String = js.native
+  /* 1 */ val cpu: cpu with scala.Double = js.native
+  /* 0 */ val gpu: gpu with scala.Double = js.native
+  /* 2 */ val gpuAndCpu: gpuAndCpu with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.MediaMemoryTypes with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.MediaMemoryTypes with scala.Double] = js.native
 }
 

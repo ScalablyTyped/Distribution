@@ -47,16 +47,16 @@ object ContactListSyncStatus extends js.Object {
   sealed trait upToDate
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactListSyncStatus
   
-  val authenticationError: authenticationError with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
-  val manualAccountRemovalRequired: manualAccountRemovalRequired with java.lang.String = js.native
-  val policyError: policyError with java.lang.String = js.native
-  val syncing: syncing with java.lang.String = js.native
-  val unknownError: unknownError with java.lang.String = js.native
-  val upToDate: upToDate with java.lang.String = js.native
+  /* 3 */ val authenticationError: authenticationError with scala.Double = js.native
+  /* 0 */ val idle: idle with scala.Double = js.native
+  /* 6 */ val manualAccountRemovalRequired: manualAccountRemovalRequired with scala.Double = js.native
+  /* 4 */ val policyError: policyError with scala.Double = js.native
+  /* 1 */ val syncing: syncing with scala.Double = js.native
+  /* 5 */ val unknownError: unknownError with scala.Double = js.native
+  /* 2 */ val upToDate: upToDate with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactListSyncStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactListSyncStatus with scala.Double
   ] = js.native
 }
 

@@ -46,14 +46,14 @@ object RosterItemEvent extends js.Object {
   sealed trait Updated
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.RosterItemEvent
   
-  val Added: Added with java.lang.String = js.native
-  val Removed: Removed with java.lang.String = js.native
-  val Subscribed: Subscribed with java.lang.String = js.native
-  val Unsubscribed: Unsubscribed with java.lang.String = js.native
-  val Updated: Updated with java.lang.String = js.native
+  /* 0 */ val Added: Added with scala.Double = js.native
+  /* 1 */ val Removed: Removed with scala.Double = js.native
+  /* 2 */ val Subscribed: Subscribed with scala.Double = js.native
+  /* 3 */ val Unsubscribed: Unsubscribed with scala.Double = js.native
+  /* 4 */ val Updated: Updated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.RosterItemEvent with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    voximplantDashWebsdkLib.voximplantDashWebsdkMod.RosterItemEvent with scala.Double
   ] = js.native
 }
 

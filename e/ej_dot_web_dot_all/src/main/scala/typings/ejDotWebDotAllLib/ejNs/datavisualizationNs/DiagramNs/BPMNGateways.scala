@@ -51,17 +51,17 @@ object BPMNGateways extends js.Object {
   sealed trait ParallelEventBased
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNGateways
   
-  val Complex: Complex with java.lang.String = js.native
-  val EventBased: EventBased with java.lang.String = js.native
-  val Exclusive: Exclusive with java.lang.String = js.native
-  val ExclusiveEventBased: ExclusiveEventBased with java.lang.String = js.native
-  val Inclusive: Inclusive with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Parallel: Parallel with java.lang.String = js.native
-  val ParallelEventBased: ParallelEventBased with java.lang.String = js.native
+  /* 4 */ val Complex: Complex with scala.Double = js.native
+  /* 5 */ val EventBased: EventBased with scala.Double = js.native
+  /* 1 */ val Exclusive: Exclusive with scala.Double = js.native
+  /* 6 */ val ExclusiveEventBased: ExclusiveEventBased with scala.Double = js.native
+  /* 2 */ val Inclusive: Inclusive with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 3 */ val Parallel: Parallel with scala.Double = js.native
+  /* 7 */ val ParallelEventBased: ParallelEventBased with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNGateways with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNGateways with scala.Double
   ] = js.native
 }
 

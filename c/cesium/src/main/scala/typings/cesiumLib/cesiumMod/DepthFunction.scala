@@ -43,15 +43,15 @@ object DepthFunction extends js.Object {
   sealed trait NOT_EQUAL
     extends cesiumLib.cesiumMod.DepthFunction
   
-  val ALWAYS: ALWAYS with java.lang.String = js.native
-  val EQUAL: EQUAL with java.lang.String = js.native
-  val GREATER: GREATER with java.lang.String = js.native
-  val GREATER_OR_EQUAL: GREATER_OR_EQUAL with java.lang.String = js.native
-  val LESS: LESS with java.lang.String = js.native
-  val LESS_OR_EQUAL: LESS_OR_EQUAL with java.lang.String = js.native
-  val NEVER: NEVER with java.lang.String = js.native
-  val NOT_EQUAL: NOT_EQUAL with java.lang.String = js.native
+  /* 7 */ val ALWAYS: ALWAYS with scala.Double = js.native
+  /* 2 */ val EQUAL: EQUAL with scala.Double = js.native
+  /* 4 */ val GREATER: GREATER with scala.Double = js.native
+  /* 6 */ val GREATER_OR_EQUAL: GREATER_OR_EQUAL with scala.Double = js.native
+  /* 1 */ val LESS: LESS with scala.Double = js.native
+  /* 3 */ val LESS_OR_EQUAL: LESS_OR_EQUAL with scala.Double = js.native
+  /* 0 */ val NEVER: NEVER with scala.Double = js.native
+  /* 5 */ val NOT_EQUAL: NOT_EQUAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.DepthFunction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.DepthFunction with scala.Double] = js.native
 }
 

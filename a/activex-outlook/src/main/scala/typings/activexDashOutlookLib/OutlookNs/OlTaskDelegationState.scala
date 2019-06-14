@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait OlTaskDelegationState extends js.Object
 
+object OlTaskDelegationState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olTaskDelegationAccepted: activexDashOutlookLib.activexDashOutlookLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def olTaskDelegationDeclined: activexDashOutlookLib.activexDashOutlookLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def olTaskDelegationUnknown: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def olTaskNotDelegated: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+}
+

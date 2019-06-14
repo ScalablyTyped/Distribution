@@ -32,13 +32,13 @@ object PosPrinterLineStyle extends js.Object {
   sealed trait singleSolid
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterLineStyle
   
-  val broken: broken with java.lang.String = js.native
-  val chain: chain with java.lang.String = js.native
-  val doubleSolid: doubleSolid with java.lang.String = js.native
-  val singleSolid: singleSolid with java.lang.String = js.native
+  /* 2 */ val broken: broken with scala.Double = js.native
+  /* 3 */ val chain: chain with scala.Double = js.native
+  /* 1 */ val doubleSolid: doubleSolid with scala.Double = js.native
+  /* 0 */ val singleSolid: singleSolid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterLineStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterLineStyle with scala.Double
   ] = js.native
 }
 

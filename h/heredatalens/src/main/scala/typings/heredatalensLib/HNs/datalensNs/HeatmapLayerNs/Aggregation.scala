@@ -26,9 +26,9 @@ object Aggregation extends js.Object {
   sealed trait SUM
     extends heredatalensLib.HNs.datalensNs.HeatmapLayerNs.Aggregation
   
-  val AVERAGE: AVERAGE with java.lang.String = js.native
-  val SUM: SUM with java.lang.String = js.native
+  /* 1 */ val AVERAGE: AVERAGE with scala.Double = js.native
+  /* 0 */ val SUM: SUM with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heredatalensLib.HNs.datalensNs.HeatmapLayerNs.Aggregation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heredatalensLib.HNs.datalensNs.HeatmapLayerNs.Aggregation with scala.Double] = js.native
 }
 

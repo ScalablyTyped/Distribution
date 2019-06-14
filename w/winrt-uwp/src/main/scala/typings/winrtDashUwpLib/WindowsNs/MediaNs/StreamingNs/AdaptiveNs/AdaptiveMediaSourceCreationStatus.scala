@@ -47,16 +47,16 @@ object AdaptiveMediaSourceCreationStatus extends js.Object {
   sealed trait unsupportedManifestVersion
     extends winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationStatus
   
-  val manifestDownloadFailure: manifestDownloadFailure with java.lang.String = js.native
-  val manifestParseFailure: manifestParseFailure with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknownFailure: unknownFailure with java.lang.String = js.native
-  val unsupportedManifestContentType: unsupportedManifestContentType with java.lang.String = js.native
-  val unsupportedManifestProfile: unsupportedManifestProfile with java.lang.String = js.native
-  val unsupportedManifestVersion: unsupportedManifestVersion with java.lang.String = js.native
+  /* 1 */ val manifestDownloadFailure: manifestDownloadFailure with scala.Double = js.native
+  /* 2 */ val manifestParseFailure: manifestParseFailure with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 6 */ val unknownFailure: unknownFailure with scala.Double = js.native
+  /* 3 */ val unsupportedManifestContentType: unsupportedManifestContentType with scala.Double = js.native
+  /* 5 */ val unsupportedManifestProfile: unsupportedManifestProfile with scala.Double = js.native
+  /* 4 */ val unsupportedManifestVersion: unsupportedManifestVersion with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationStatus with scala.Double
   ] = js.native
 }
 

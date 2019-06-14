@@ -31,12 +31,12 @@ object SmsMessageFilter extends js.Object {
   sealed trait unread
     extends winrtLib.WindowsNs.DevicesNs.SmsNs.SmsMessageFilter
   
-  val all: all with java.lang.String = js.native
-  val draft: draft with java.lang.String = js.native
-  val read: read with java.lang.String = js.native
-  val sent: sent with java.lang.String = js.native
-  val unread: unread with java.lang.String = js.native
+  /* 0 */ val all: all with scala.Double = js.native
+  /* 4 */ val draft: draft with scala.Double = js.native
+  /* 2 */ val read: read with scala.Double = js.native
+  /* 3 */ val sent: sent with scala.Double = js.native
+  /* 1 */ val unread: unread with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsMessageFilter with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsMessageFilter with scala.Double] = js.native
 }
 

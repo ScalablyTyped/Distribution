@@ -27,12 +27,12 @@ object PhoneCallBlockedReason extends js.Object {
   sealed trait unknownNumber
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneCallBlockedReason
   
-  val inCallBlockingList: inCallBlockingList with java.lang.String = js.native
-  val privateNumber: privateNumber with java.lang.String = js.native
-  val unknownNumber: unknownNumber with java.lang.String = js.native
+  /* 0 */ val inCallBlockingList: inCallBlockingList with scala.Double = js.native
+  /* 1 */ val privateNumber: privateNumber with scala.Double = js.native
+  /* 2 */ val unknownNumber: unknownNumber with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneCallBlockedReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneCallBlockedReason with scala.Double
   ] = js.native
 }
 

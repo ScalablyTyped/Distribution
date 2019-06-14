@@ -36,12 +36,12 @@ object RowPosition extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.RowPosition
   
-  val Above: Above with java.lang.String = js.native
-  val Below: Below with java.lang.String = js.native
-  val Bottom: Bottom with java.lang.String = js.native
-  val Child: Child with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 2 */ val Above: Above with scala.Double = js.native
+  /* 3 */ val Below: Below with scala.Double = js.native
+  /* 1 */ val Bottom: Bottom with scala.Double = js.native
+  /* 4 */ val Child: Child with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.RowPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.RowPosition with scala.Double] = js.native
 }
 

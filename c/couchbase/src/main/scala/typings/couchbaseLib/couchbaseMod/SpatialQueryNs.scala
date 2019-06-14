@@ -37,11 +37,11 @@ object SpatialQueryNs extends js.Object {
     sealed trait NONE
       extends couchbaseLib.couchbaseMod.SpatialQueryNs.Update
     
-    val AFTER: AFTER with java.lang.String = js.native
-    val BEFORE: BEFORE with java.lang.String = js.native
-    val NONE: NONE with java.lang.String = js.native
+    /* 2 */ val AFTER: AFTER with scala.Double = js.native
+    /* 0 */ val BEFORE: BEFORE with scala.Double = js.native
+    /* 1 */ val NONE: NONE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[couchbaseLib.couchbaseMod.SpatialQueryNs.Update with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[couchbaseLib.couchbaseMod.SpatialQueryNs.Update with scala.Double] = js.native
   }
   
 }

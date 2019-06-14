@@ -22,11 +22,11 @@ object TokenBindingKeyType extends js.Object {
   sealed trait rsa2048
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.TokenBindingKeyType
   
-  val ecdsaP256: ecdsaP256 with java.lang.String = js.native
-  val rsa2048: rsa2048 with java.lang.String = js.native
+  /* 1 */ val ecdsaP256: ecdsaP256 with scala.Double = js.native
+  /* 0 */ val rsa2048: rsa2048 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.TokenBindingKeyType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.TokenBindingKeyType with scala.Double
   ] = js.native
 }
 

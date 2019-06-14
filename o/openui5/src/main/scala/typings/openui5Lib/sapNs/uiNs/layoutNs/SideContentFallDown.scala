@@ -30,11 +30,11 @@ object SideContentFallDown extends js.Object {
   sealed trait OnMinimumWidth
     extends openui5Lib.sapNs.uiNs.layoutNs.SideContentFallDown
   
-  val BelowL: BelowL with java.lang.String = js.native
-  val BelowM: BelowM with java.lang.String = js.native
-  val BelowXL: BelowXL with java.lang.String = js.native
-  val OnMinimumWidth: OnMinimumWidth with java.lang.String = js.native
+  /* 0 */ val BelowL: BelowL with scala.Double = js.native
+  /* 1 */ val BelowM: BelowM with scala.Double = js.native
+  /* 2 */ val BelowXL: BelowXL with scala.Double = js.native
+  /* 3 */ val OnMinimumWidth: OnMinimumWidth with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.SideContentFallDown with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.layoutNs.SideContentFallDown with scala.Double] = js.native
 }
 

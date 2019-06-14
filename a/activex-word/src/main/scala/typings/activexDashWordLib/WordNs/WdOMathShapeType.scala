@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdOMathShapeType extends js.Object
 
+object WdOMathShapeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdOMathShapeCentered: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdOMathShapeMatch: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

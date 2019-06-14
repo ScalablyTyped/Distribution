@@ -22,11 +22,11 @@ object EmailMailboxAutoReplyMessageResponseKind extends js.Object {
   sealed trait plainText
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxAutoReplyMessageResponseKind
   
-  val html: html with java.lang.String = js.native
-  val plainText: plainText with java.lang.String = js.native
+  /* 0 */ val html: html with scala.Double = js.native
+  /* 1 */ val plainText: plainText with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxAutoReplyMessageResponseKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxAutoReplyMessageResponseKind with scala.Double
   ] = js.native
 }
 

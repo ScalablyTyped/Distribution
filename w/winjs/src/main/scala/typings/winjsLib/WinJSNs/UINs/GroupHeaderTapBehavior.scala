@@ -28,9 +28,9 @@ object GroupHeaderTapBehavior extends js.Object {
   sealed trait none
     extends winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior
   
-  val invoke: invoke with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 0 */ val invoke: invoke with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior with scala.Double] = js.native
 }
 

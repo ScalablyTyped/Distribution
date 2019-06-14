@@ -27,10 +27,10 @@ object GpioOpenStatus extends js.Object {
   sealed trait sharingViolation
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioOpenStatus
   
-  val pinOpened: pinOpened with java.lang.String = js.native
-  val pinUnavailable: pinUnavailable with java.lang.String = js.native
-  val sharingViolation: sharingViolation with java.lang.String = js.native
+  /* 0 */ val pinOpened: pinOpened with scala.Double = js.native
+  /* 1 */ val pinUnavailable: pinUnavailable with scala.Double = js.native
+  /* 2 */ val sharingViolation: sharingViolation with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioOpenStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioOpenStatus with scala.Double] = js.native
 }
 

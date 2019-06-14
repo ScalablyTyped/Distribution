@@ -72,21 +72,21 @@ object BackgroundTaskCancellationReason extends js.Object {
   sealed trait uninstall
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundTaskCancellationReason
   
-  val abort: abort with java.lang.String = js.native
-  val conditionLoss: conditionLoss with java.lang.String = js.native
-  val energySaver: energySaver with java.lang.String = js.native
-  val executionTimeExceeded: executionTimeExceeded with java.lang.String = js.native
-  val idleTask: idleTask with java.lang.String = js.native
-  val loggingOff: loggingOff with java.lang.String = js.native
-  val quietHoursEntered: quietHoursEntered with java.lang.String = js.native
-  val resourceRevocation: resourceRevocation with java.lang.String = js.native
-  val servicingUpdate: servicingUpdate with java.lang.String = js.native
-  val systemPolicy: systemPolicy with java.lang.String = js.native
-  val terminating: terminating with java.lang.String = js.native
-  val uninstall: uninstall with java.lang.String = js.native
+  /* 0 */ val abort: abort with scala.Double = js.native
+  /* 6 */ val conditionLoss: conditionLoss with scala.Double = js.native
+  /* 11 */ val energySaver: energySaver with scala.Double = js.native
+  /* 9 */ val executionTimeExceeded: executionTimeExceeded with scala.Double = js.native
+  /* 4 */ val idleTask: idleTask with scala.Double = js.native
+  /* 2 */ val loggingOff: loggingOff with scala.Double = js.native
+  /* 8 */ val quietHoursEntered: quietHoursEntered with scala.Double = js.native
+  /* 10 */ val resourceRevocation: resourceRevocation with scala.Double = js.native
+  /* 3 */ val servicingUpdate: servicingUpdate with scala.Double = js.native
+  /* 7 */ val systemPolicy: systemPolicy with scala.Double = js.native
+  /* 1 */ val terminating: terminating with scala.Double = js.native
+  /* 5 */ val uninstall: uninstall with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundTaskCancellationReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundTaskCancellationReason with scala.Double
   ] = js.native
 }
 

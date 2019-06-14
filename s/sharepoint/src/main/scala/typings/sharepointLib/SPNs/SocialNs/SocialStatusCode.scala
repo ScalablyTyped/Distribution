@@ -90,24 +90,24 @@ object SocialStatusCode extends js.Object {
   sealed trait personalSiteNotFound
     extends sharepointLib.SPNs.SocialNs.SocialStatusCode
   
-  val OK: OK with java.lang.String = js.native
-  val accessDenied: accessDenied with java.lang.String = js.native
-  val attachmentError: attachmentError with java.lang.String = js.native
-  val cacheReadError: cacheReadError with java.lang.String = js.native
-  val cacheUpdateError: cacheUpdateError with java.lang.String = js.native
-  val cannotCreatePersonalSite: cannotCreatePersonalSite with java.lang.String = js.native
-  val failedToCreatePersonalSite: failedToCreatePersonalSite with java.lang.String = js.native
-  val featureDisabled: featureDisabled with java.lang.String = js.native
-  val internalError: internalError with java.lang.String = js.native
-  val invalidOperation: invalidOperation with java.lang.String = js.native
-  val invalidRequest: invalidRequest with java.lang.String = js.native
-  val itemNotFound: itemNotFound with java.lang.String = js.native
-  val itemNotModified: itemNotModified with java.lang.String = js.native
-  val limitReached: limitReached with java.lang.String = js.native
-  val notAuthorizedToCreatePersonalSite: notAuthorizedToCreatePersonalSite with java.lang.String = js.native
-  val partialData: partialData with java.lang.String = js.native
-  val personalSiteNotFound: personalSiteNotFound with java.lang.String = js.native
+  /* 0 */ val OK: OK with scala.Double = js.native
+  /* 2 */ val accessDenied: accessDenied with scala.Double = js.native
+  /* 14 */ val attachmentError: attachmentError with scala.Double = js.native
+  /* 7 */ val cacheReadError: cacheReadError with scala.Double = js.native
+  /* 8 */ val cacheUpdateError: cacheUpdateError with scala.Double = js.native
+  /* 12 */ val cannotCreatePersonalSite: cannotCreatePersonalSite with scala.Double = js.native
+  /* 10 */ val failedToCreatePersonalSite: failedToCreatePersonalSite with scala.Double = js.native
+  /* 16 */ val featureDisabled: featureDisabled with scala.Double = js.native
+  /* 6 */ val internalError: internalError with scala.Double = js.native
+  /* 4 */ val invalidOperation: invalidOperation with scala.Double = js.native
+  /* 1 */ val invalidRequest: invalidRequest with scala.Double = js.native
+  /* 3 */ val itemNotFound: itemNotFound with scala.Double = js.native
+  /* 5 */ val itemNotModified: itemNotModified with scala.Double = js.native
+  /* 13 */ val limitReached: limitReached with scala.Double = js.native
+  /* 11 */ val notAuthorizedToCreatePersonalSite: notAuthorizedToCreatePersonalSite with scala.Double = js.native
+  /* 15 */ val partialData: partialData with scala.Double = js.native
+  /* 9 */ val personalSiteNotFound: personalSiteNotFound with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialStatusCode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialStatusCode with scala.Double] = js.native
 }
 

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdApplyQuickStyleSets extends js.Object
 
+object WdApplyQuickStyleSets {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdSessionStartSet: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdTemplateSet: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

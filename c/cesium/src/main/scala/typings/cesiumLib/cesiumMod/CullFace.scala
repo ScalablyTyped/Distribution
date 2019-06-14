@@ -23,10 +23,10 @@ object CullFace extends js.Object {
   sealed trait FRONT_AND_BACK
     extends cesiumLib.cesiumMod.CullFace
   
-  val BACK: BACK with java.lang.String = js.native
-  val FRONT: FRONT with java.lang.String = js.native
-  val FRONT_AND_BACK: FRONT_AND_BACK with java.lang.String = js.native
+  /* 1 */ val BACK: BACK with scala.Double = js.native
+  /* 0 */ val FRONT: FRONT with scala.Double = js.native
+  /* 2 */ val FRONT_AND_BACK: FRONT_AND_BACK with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.CullFace with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.CullFace with scala.Double] = js.native
 }
 

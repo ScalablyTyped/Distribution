@@ -83,27 +83,27 @@ object EVariableType extends js.Object {
   sealed trait VECTOR_4
     extends wonderDotJsLib.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType
   
-  val BUFFER: BUFFER with java.lang.String = js.native
-  val COLOR_3: COLOR_3 with java.lang.String = js.native
-  val FLOAT_1: FLOAT_1 with java.lang.String = js.native
-  val FLOAT_2: FLOAT_2 with java.lang.String = js.native
-  val FLOAT_3: FLOAT_3 with java.lang.String = js.native
-  val FLOAT_4: FLOAT_4 with java.lang.String = js.native
-  val FLOAT_MAT3: FLOAT_MAT3 with java.lang.String = js.native
-  val FLOAT_MAT4: FLOAT_MAT4 with java.lang.String = js.native
-  val FLOAT_MAT4_ARRAY: FLOAT_MAT4_ARRAY with java.lang.String = js.native
-  val NUMBER_1: NUMBER_1 with java.lang.String = js.native
-  val SAMPLER_2D: SAMPLER_2D with java.lang.String = js.native
-  val SAMPLER_ARRAY: SAMPLER_ARRAY with java.lang.String = js.native
-  val SAMPLER_CUBE: SAMPLER_CUBE with java.lang.String = js.native
-  val STRUCTURE: STRUCTURE with java.lang.String = js.native
-  val STRUCTURES: STRUCTURES with java.lang.String = js.native
-  val VECTOR_2: VECTOR_2 with java.lang.String = js.native
-  val VECTOR_3: VECTOR_3 with java.lang.String = js.native
-  val VECTOR_4: VECTOR_4 with java.lang.String = js.native
+  /* 10 */ val BUFFER: BUFFER with scala.Double = js.native
+  /* 7 */ val COLOR_3: COLOR_3 with scala.Double = js.native
+  /* 0 */ val FLOAT_1: FLOAT_1 with scala.Double = js.native
+  /* 1 */ val FLOAT_2: FLOAT_2 with scala.Double = js.native
+  /* 2 */ val FLOAT_3: FLOAT_3 with scala.Double = js.native
+  /* 3 */ val FLOAT_4: FLOAT_4 with scala.Double = js.native
+  /* 8 */ val FLOAT_MAT3: FLOAT_MAT3 with scala.Double = js.native
+  /* 9 */ val FLOAT_MAT4: FLOAT_MAT4 with scala.Double = js.native
+  /* 17 */ val FLOAT_MAT4_ARRAY: FLOAT_MAT4_ARRAY with scala.Double = js.native
+  /* 13 */ val NUMBER_1: NUMBER_1 with scala.Double = js.native
+  /* 12 */ val SAMPLER_2D: SAMPLER_2D with scala.Double = js.native
+  /* 16 */ val SAMPLER_ARRAY: SAMPLER_ARRAY with scala.Double = js.native
+  /* 11 */ val SAMPLER_CUBE: SAMPLER_CUBE with scala.Double = js.native
+  /* 14 */ val STRUCTURE: STRUCTURE with scala.Double = js.native
+  /* 15 */ val STRUCTURES: STRUCTURES with scala.Double = js.native
+  /* 4 */ val VECTOR_2: VECTOR_2 with scala.Double = js.native
+  /* 5 */ val VECTOR_3: VECTOR_3 with scala.Double = js.native
+  /* 6 */ val VECTOR_4: VECTOR_4 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType with scala.Double
   ] = js.native
 }
 

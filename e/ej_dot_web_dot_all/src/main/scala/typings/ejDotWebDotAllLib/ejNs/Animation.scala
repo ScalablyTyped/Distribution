@@ -23,10 +23,10 @@ object Animation extends js.Object {
   sealed trait Slide
     extends ejDotWebDotAllLib.ejNs.Animation
   
-  val Fade: Fade with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Slide: Slide with java.lang.String = js.native
+  /* 0 */ val Fade: Fade with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
+  /* 2 */ val Slide: Slide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.Animation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.Animation with scala.Double] = js.native
 }
 

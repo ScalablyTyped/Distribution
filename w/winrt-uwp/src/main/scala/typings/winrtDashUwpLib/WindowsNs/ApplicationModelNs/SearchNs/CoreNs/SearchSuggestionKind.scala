@@ -27,12 +27,12 @@ object SearchSuggestionKind extends js.Object {
   sealed trait separator
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.SearchNs.CoreNs.SearchSuggestionKind
   
-  val query: query with java.lang.String = js.native
-  val result: result with java.lang.String = js.native
-  val separator: separator with java.lang.String = js.native
+  /* 0 */ val query: query with scala.Double = js.native
+  /* 1 */ val result: result with scala.Double = js.native
+  /* 2 */ val separator: separator with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.SearchNs.CoreNs.SearchSuggestionKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.SearchNs.CoreNs.SearchSuggestionKind with scala.Double
   ] = js.native
 }
 

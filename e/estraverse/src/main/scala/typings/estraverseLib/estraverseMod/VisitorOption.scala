@@ -23,10 +23,10 @@ object VisitorOption extends js.Object {
   sealed trait Skip
     extends estraverseLib.estraverseMod.VisitorOption
   
-  val Break: Break with java.lang.String = js.native
-  val Remove: Remove with java.lang.String = js.native
-  val Skip: Skip with java.lang.String = js.native
+  /* 1 */ val Break: Break with scala.Double = js.native
+  /* 2 */ val Remove: Remove with scala.Double = js.native
+  /* 0 */ val Skip: Skip with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[estraverseLib.estraverseMod.VisitorOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[estraverseLib.estraverseMod.VisitorOption with scala.Double] = js.native
 }
 

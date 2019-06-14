@@ -21,11 +21,11 @@ object SunburstTheme extends js.Object {
   sealed trait FlatLight
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstTheme
   
-  val FlatDark: FlatDark with java.lang.String = js.native
-  val FlatLight: FlatLight with java.lang.String = js.native
+  /* 1 */ val FlatDark: FlatDark with scala.Double = js.native
+  /* 0 */ val FlatLight: FlatLight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstTheme with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstTheme with scala.Double
   ] = js.native
 }
 

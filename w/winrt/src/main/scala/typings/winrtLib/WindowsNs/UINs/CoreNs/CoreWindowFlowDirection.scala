@@ -19,9 +19,9 @@ object CoreWindowFlowDirection extends js.Object {
   sealed trait rightToLeft
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreWindowFlowDirection
   
-  val leftToRight: leftToRight with java.lang.String = js.native
-  val rightToLeft: rightToLeft with java.lang.String = js.native
+  /* 0 */ val leftToRight: leftToRight with scala.Double = js.native
+  /* 1 */ val rightToLeft: rightToLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreWindowFlowDirection with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreWindowFlowDirection with scala.Double] = js.native
 }
 

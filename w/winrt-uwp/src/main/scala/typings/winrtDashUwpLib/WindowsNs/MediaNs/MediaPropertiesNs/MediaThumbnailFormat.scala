@@ -22,11 +22,11 @@ object MediaThumbnailFormat extends js.Object {
   sealed trait bmp
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaThumbnailFormat
   
-  val bgra8: bgra8 with java.lang.String = js.native
-  val bmp: bmp with java.lang.String = js.native
+  /* 1 */ val bgra8: bgra8 with scala.Double = js.native
+  /* 0 */ val bmp: bmp with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaThumbnailFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaThumbnailFormat with scala.Double
   ] = js.native
 }
 

@@ -32,12 +32,12 @@ object SocialFeedType extends js.Object {
   sealed trait timeline
     extends sharepointLib.SPNs.SocialNs.SocialFeedType
   
-  val everyone: everyone with java.lang.String = js.native
-  val likes: likes with java.lang.String = js.native
-  val news: news with java.lang.String = js.native
-  val personal: personal with java.lang.String = js.native
-  val timeline: timeline with java.lang.String = js.native
+  /* 4 */ val everyone: everyone with scala.Double = js.native
+  /* 3 */ val likes: likes with scala.Double = js.native
+  /* 1 */ val news: news with scala.Double = js.native
+  /* 0 */ val personal: personal with scala.Double = js.native
+  /* 2 */ val timeline: timeline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialFeedType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.SocialNs.SocialFeedType with scala.Double] = js.native
 }
 

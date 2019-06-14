@@ -32,11 +32,11 @@ object KnownLibraryId extends js.Object {
   sealed trait videos
     extends winrtDashUwpLib.WindowsNs.StorageNs.KnownLibraryId
   
-  val documents: documents with java.lang.String = js.native
-  val music: music with java.lang.String = js.native
-  val pictures: pictures with java.lang.String = js.native
-  val videos: videos with java.lang.String = js.native
+  /* 3 */ val documents: documents with scala.Double = js.native
+  /* 0 */ val music: music with scala.Double = js.native
+  /* 1 */ val pictures: pictures with scala.Double = js.native
+  /* 2 */ val videos: videos with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.KnownLibraryId with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.KnownLibraryId with scala.Double] = js.native
 }
 

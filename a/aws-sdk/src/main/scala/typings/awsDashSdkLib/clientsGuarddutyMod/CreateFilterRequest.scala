@@ -34,6 +34,10 @@ trait CreateFilterRequest extends js.Object {
     * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
     */
   var Rank: js.UndefOr[FilterRank] = js.undefined
+  /**
+    * The tags to be added to a new filter resource.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 
 object CreateFilterRequest {
@@ -45,13 +49,15 @@ object CreateFilterRequest {
     Action: FilterAction = null,
     ClientToken: ClientToken = null,
     Description: FilterDescription = null,
-    Rank: js.UndefOr[FilterRank] = js.undefined
+    Rank: js.UndefOr[FilterRank] = js.undefined,
+    Tags: TagMap = null
   ): CreateFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, FindingCriteria = FindingCriteria, Name = Name)
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateFilterRequest]
   }
 }

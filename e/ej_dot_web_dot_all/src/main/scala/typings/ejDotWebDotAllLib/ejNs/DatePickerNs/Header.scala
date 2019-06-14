@@ -26,10 +26,10 @@ object Header extends js.Object {
   sealed trait Short
     extends ejDotWebDotAllLib.ejNs.DatePickerNs.Header
   
-  val Min: Min with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Short: Short with java.lang.String = js.native
+  /* 2 */ val Min: Min with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Short: Short with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.DatePickerNs.Header with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.DatePickerNs.Header with scala.Double] = js.native
 }
 

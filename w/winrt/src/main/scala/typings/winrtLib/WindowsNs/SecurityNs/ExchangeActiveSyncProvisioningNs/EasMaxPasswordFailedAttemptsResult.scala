@@ -31,14 +31,14 @@ object EasMaxPasswordFailedAttemptsResult extends js.Object {
   sealed trait requestedPolicyIsStricter
     extends winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasMaxPasswordFailedAttemptsResult
   
-  val canBeCompliant: canBeCompliant with java.lang.String = js.native
-  val compliant: compliant with java.lang.String = js.native
-  val invalidParameter: invalidParameter with java.lang.String = js.native
-  val notEvaluated: notEvaluated with java.lang.String = js.native
-  val requestedPolicyIsStricter: requestedPolicyIsStricter with java.lang.String = js.native
+  /* 2 */ val canBeCompliant: canBeCompliant with scala.Double = js.native
+  /* 1 */ val compliant: compliant with scala.Double = js.native
+  /* 4 */ val invalidParameter: invalidParameter with scala.Double = js.native
+  /* 0 */ val notEvaluated: notEvaluated with scala.Double = js.native
+  /* 3 */ val requestedPolicyIsStricter: requestedPolicyIsStricter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasMaxPasswordFailedAttemptsResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.SecurityNs.ExchangeActiveSyncProvisioningNs.EasMaxPasswordFailedAttemptsResult with scala.Double
   ] = js.native
 }
 

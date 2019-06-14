@@ -31,11 +31,11 @@ object Mode extends js.Object {
   sealed trait Series
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Mode
   
-  val Cluster: Cluster with java.lang.String = js.native
-  val Point: Point with java.lang.String = js.native
-  val Range: Range with java.lang.String = js.native
-  val Series: Series with java.lang.String = js.native
+  /* 2 */ val Cluster: Cluster with scala.Double = js.native
+  /* 1 */ val Point: Point with scala.Double = js.native
+  /* 3 */ val Range: Range with scala.Double = js.native
+  /* 0 */ val Series: Series with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Mode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Mode with scala.Double] = js.native
 }
 

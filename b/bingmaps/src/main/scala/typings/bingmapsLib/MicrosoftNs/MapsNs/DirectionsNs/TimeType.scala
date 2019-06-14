@@ -31,11 +31,11 @@ object TimeType extends js.Object {
   sealed trait lastAvailable
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.TimeType
   
-  val arrival: arrival with java.lang.String = js.native
-  val departure: departure with java.lang.String = js.native
-  val firstAvailable: firstAvailable with java.lang.String = js.native
-  val lastAvailable: lastAvailable with java.lang.String = js.native
+  /* 0 */ val arrival: arrival with scala.Double = js.native
+  /* 1 */ val departure: departure with scala.Double = js.native
+  /* 2 */ val firstAvailable: firstAvailable with scala.Double = js.native
+  /* 3 */ val lastAvailable: lastAvailable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.TimeType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.TimeType with scala.Double] = js.native
 }
 

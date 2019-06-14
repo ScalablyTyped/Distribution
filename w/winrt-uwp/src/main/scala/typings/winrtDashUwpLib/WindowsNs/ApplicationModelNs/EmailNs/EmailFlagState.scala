@@ -32,13 +32,13 @@ object EmailFlagState extends js.Object {
   sealed trait unflagged
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailFlagState
   
-  val cleared: cleared with java.lang.String = js.native
-  val completed: completed with java.lang.String = js.native
-  val flagged: flagged with java.lang.String = js.native
-  val unflagged: unflagged with java.lang.String = js.native
+  /* 3 */ val cleared: cleared with scala.Double = js.native
+  /* 2 */ val completed: completed with scala.Double = js.native
+  /* 1 */ val flagged: flagged with scala.Double = js.native
+  /* 0 */ val unflagged: unflagged with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailFlagState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailFlagState with scala.Double
   ] = js.native
 }
 

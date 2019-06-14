@@ -64,14 +64,14 @@ object Priority extends js.Object {
   sealed trait normal
     extends winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority
   
-  val aboveNormal: aboveNormal with java.lang.String = js.native
-  val belowNormal: belowNormal with java.lang.String = js.native
-  val high: high with java.lang.String = js.native
-  val idle: idle with java.lang.String = js.native
-  val max: max with java.lang.String = js.native
-  val min: min with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
+  /* 0 */ val aboveNormal: aboveNormal with scala.Double = js.native
+  /* 1 */ val belowNormal: belowNormal with scala.Double = js.native
+  /* 2 */ val high: high with scala.Double = js.native
+  /* 3 */ val idle: idle with scala.Double = js.native
+  /* 4 */ val max: max with scala.Double = js.native
+  /* 5 */ val min: min with scala.Double = js.native
+  /* 6 */ val normal: normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UtilitiesNs.SchedulerNs.Priority with scala.Double] = js.native
 }
 

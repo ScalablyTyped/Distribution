@@ -42,11 +42,11 @@ object EditError extends js.Object {
   sealed trait notPermitted
     extends winjsLib.WinJSNs.UINs.EditError
   
-  val canceled: canceled with java.lang.String = js.native
-  val noLongerMeaningful: noLongerMeaningful with java.lang.String = js.native
-  val noResponse: noResponse with java.lang.String = js.native
-  val notPermitted: notPermitted with java.lang.String = js.native
+  /* 1 */ val canceled: canceled with scala.Double = js.native
+  /* 3 */ val noLongerMeaningful: noLongerMeaningful with scala.Double = js.native
+  /* 0 */ val noResponse: noResponse with scala.Double = js.native
+  /* 2 */ val notPermitted: notPermitted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.EditError with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.EditError with scala.Double] = js.native
 }
 

@@ -37,14 +37,12 @@ object MediaPlayerError extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerError
   
-  val aborted: aborted with java.lang.String = js.native
-  val decodingError: decodingError with java.lang.String = js.native
-  val networkError: networkError with java.lang.String = js.native
-  val sourceNotSupported: sourceNotSupported with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val aborted: aborted with scala.Double = js.native
+  /* 3 */ val decodingError: decodingError with scala.Double = js.native
+  /* 2 */ val networkError: networkError with scala.Double = js.native
+  /* 4 */ val sourceNotSupported: sourceNotSupported with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerError with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerError with scala.Double] = js.native
 }
 

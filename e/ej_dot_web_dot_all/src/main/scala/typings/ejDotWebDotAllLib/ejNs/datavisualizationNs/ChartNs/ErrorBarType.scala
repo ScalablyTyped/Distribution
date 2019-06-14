@@ -31,13 +31,13 @@ object ErrorBarType extends js.Object {
   sealed trait StandardError
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ErrorBarType
   
-  val FixedValue: FixedValue with java.lang.String = js.native
-  val Percentage: Percentage with java.lang.String = js.native
-  val StandardDeviation: StandardDeviation with java.lang.String = js.native
-  val StandardError: StandardError with java.lang.String = js.native
+  /* 0 */ val FixedValue: FixedValue with scala.Double = js.native
+  /* 1 */ val Percentage: Percentage with scala.Double = js.native
+  /* 2 */ val StandardDeviation: StandardDeviation with scala.Double = js.native
+  /* 3 */ val StandardError: StandardError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ErrorBarType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ErrorBarType with scala.Double
   ] = js.native
 }
 

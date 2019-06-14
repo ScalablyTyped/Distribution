@@ -41,13 +41,13 @@ object DrawingMode extends js.Object {
   sealed trait pushpin
     extends bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingMode
   
-  val edit: edit with java.lang.String = js.native
-  val erase: erase with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val polygon: polygon with java.lang.String = js.native
-  val polyline: polyline with java.lang.String = js.native
-  val pushpin: pushpin with java.lang.String = js.native
+  /* 0 */ val edit: edit with scala.Double = js.native
+  /* 1 */ val erase: erase with scala.Double = js.native
+  /* 2 */ val none: none with scala.Double = js.native
+  /* 3 */ val polygon: polygon with scala.Double = js.native
+  /* 4 */ val polyline: polyline with scala.Double = js.native
+  /* 5 */ val pushpin: pushpin with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingMode with scala.Double] = js.native
 }
 

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OlFormRegionSize extends js.Object
 
+object OlFormRegionSize {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def olFormRegionTypeAdjoining: activexDashOutlookLib.activexDashOutlookLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def olFormRegionTypeSeparate: activexDashOutlookLib.activexDashOutlookLibNumbers.`0` = this.cast(0)
+}
+

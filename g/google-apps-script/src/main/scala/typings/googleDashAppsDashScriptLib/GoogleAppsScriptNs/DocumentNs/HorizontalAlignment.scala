@@ -27,13 +27,13 @@ object HorizontalAlignment extends js.Object {
   sealed trait RIGHT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.HorizontalAlignment
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val JUSTIFY: JUSTIFY with java.lang.String = js.native
-  val LEFT: LEFT with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
+  /* 1 */ val CENTER: CENTER with scala.Double = js.native
+  /* 3 */ val JUSTIFY: JUSTIFY with scala.Double = js.native
+  /* 0 */ val LEFT: LEFT with scala.Double = js.native
+  /* 2 */ val RIGHT: RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.HorizontalAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.HorizontalAlignment with scala.Double
   ] = js.native
 }
 

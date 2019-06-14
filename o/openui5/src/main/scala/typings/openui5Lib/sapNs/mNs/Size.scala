@@ -34,12 +34,12 @@ object Size extends js.Object {
   sealed trait XS
     extends openui5Lib.sapNs.mNs.Size
   
-  val Auto: Auto with java.lang.String = js.native
-  val L: L with java.lang.String = js.native
-  val M: M with java.lang.String = js.native
-  val S: S with java.lang.String = js.native
-  val XS: XS with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val L: L with scala.Double = js.native
+  /* 2 */ val M: M with scala.Double = js.native
+  /* 3 */ val S: S with scala.Double = js.native
+  /* 4 */ val XS: XS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.Size with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.Size with scala.Double] = js.native
 }
 

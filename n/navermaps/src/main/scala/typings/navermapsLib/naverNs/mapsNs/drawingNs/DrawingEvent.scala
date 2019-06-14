@@ -35,13 +35,13 @@ object DrawingEvent extends js.Object {
   sealed trait Selected
     extends navermapsLib.naverNs.mapsNs.drawingNs.DrawingEvent
   
-  val ADD: ADD with java.lang.String = js.native
-  val Added: Added with java.lang.String = js.native
-  val REMOVE: REMOVE with java.lang.String = js.native
-  val Removed: Removed with java.lang.String = js.native
-  val SELECT: SELECT with java.lang.String = js.native
-  val Selected: Selected with java.lang.String = js.native
+  /* 0 */ val ADD: ADD with scala.Double = js.native
+  /* 3 */ val Added: Added with scala.Double = js.native
+  /* 1 */ val REMOVE: REMOVE with scala.Double = js.native
+  /* 4 */ val Removed: Removed with scala.Double = js.native
+  /* 2 */ val SELECT: SELECT with scala.Double = js.native
+  /* 5 */ val Selected: Selected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[navermapsLib.naverNs.mapsNs.drawingNs.DrawingEvent with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.drawingNs.DrawingEvent with scala.Double] = js.native
 }
 

@@ -23,12 +23,12 @@ object VerticalAlignment extends js.Object {
   sealed trait TOP
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.VerticalAlignment
   
-  val BOTTOM: BOTTOM with java.lang.String = js.native
-  val CENTER: CENTER with java.lang.String = js.native
-  val TOP: TOP with java.lang.String = js.native
+  /* 0 */ val BOTTOM: BOTTOM with scala.Double = js.native
+  /* 1 */ val CENTER: CENTER with scala.Double = js.native
+  /* 2 */ val TOP: TOP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.VerticalAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.VerticalAlignment with scala.Double
   ] = js.native
 }
 

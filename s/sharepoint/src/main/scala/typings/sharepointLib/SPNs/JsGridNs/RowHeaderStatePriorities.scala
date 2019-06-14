@@ -40,13 +40,13 @@ object RowHeaderStatePriorities extends js.Object {
   sealed trait Transfer
     extends sharepointLib.SPNs.JsGridNs.RowHeaderStatePriorities
   
-  val CellError: CellError with java.lang.String = js.native
-  val Conflict: Conflict with java.lang.String = js.native
-  val Dirty: Dirty with java.lang.String = js.native
-  val NewRow: NewRow with java.lang.String = js.native
-  val RowError: RowError with java.lang.String = js.native
-  val Transfer: Transfer with java.lang.String = js.native
+  /* 2 */ val CellError: CellError with scala.Double = js.native
+  /* 3 */ val Conflict: Conflict with scala.Double = js.native
+  /* 0 */ val Dirty: Dirty with scala.Double = js.native
+  /* 5 */ val NewRow: NewRow with scala.Double = js.native
+  /* 4 */ val RowError: RowError with scala.Double = js.native
+  /* 1 */ val Transfer: Transfer with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.RowHeaderStatePriorities with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.RowHeaderStatePriorities with scala.Double] = js.native
 }
 

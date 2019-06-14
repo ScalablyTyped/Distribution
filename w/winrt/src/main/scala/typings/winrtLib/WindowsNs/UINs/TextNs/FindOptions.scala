@@ -23,10 +23,10 @@ object FindOptions extends js.Object {
   sealed trait word
     extends winrtLib.WindowsNs.UINs.TextNs.FindOptions
   
-  val case_ : case_ with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val word: word with java.lang.String = js.native
+  /* 2 */ val case_ : case_ with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val word: word with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.FindOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.FindOptions with scala.Double] = js.native
 }
 

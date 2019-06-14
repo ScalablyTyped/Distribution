@@ -42,15 +42,15 @@ object SimpleOrientation extends js.Object {
   sealed trait rotated90DegreesCounterclockwise
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SimpleOrientation
   
-  val facedown: facedown with java.lang.String = js.native
-  val faceup: faceup with java.lang.String = js.native
-  val notRotated: notRotated with java.lang.String = js.native
-  val rotated180DegreesCounterclockwise: rotated180DegreesCounterclockwise with java.lang.String = js.native
-  val rotated270DegreesCounterclockwise: rotated270DegreesCounterclockwise with java.lang.String = js.native
-  val rotated90DegreesCounterclockwise: rotated90DegreesCounterclockwise with java.lang.String = js.native
+  /* 5 */ val facedown: facedown with scala.Double = js.native
+  /* 4 */ val faceup: faceup with scala.Double = js.native
+  /* 0 */ val notRotated: notRotated with scala.Double = js.native
+  /* 2 */ val rotated180DegreesCounterclockwise: rotated180DegreesCounterclockwise with scala.Double = js.native
+  /* 3 */ val rotated270DegreesCounterclockwise: rotated270DegreesCounterclockwise with scala.Double = js.native
+  /* 1 */ val rotated90DegreesCounterclockwise: rotated90DegreesCounterclockwise with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SimpleOrientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SimpleOrientation with scala.Double
   ] = js.native
 }
 

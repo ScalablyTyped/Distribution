@@ -27,12 +27,12 @@ object OpticalImageStabilizationMode extends js.Object {
   sealed trait on
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.OpticalImageStabilizationMode
   
-  val auto: auto with java.lang.String = js.native
-  val off: off with java.lang.String = js.native
-  val on: on with java.lang.String = js.native
+  /* 2 */ val auto: auto with scala.Double = js.native
+  /* 0 */ val off: off with scala.Double = js.native
+  /* 1 */ val on: on with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.OpticalImageStabilizationMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.OpticalImageStabilizationMode with scala.Double
   ] = js.native
 }
 

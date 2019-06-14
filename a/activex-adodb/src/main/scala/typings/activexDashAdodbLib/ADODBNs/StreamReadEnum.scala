@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait StreamReadEnum extends js.Object
 
+object StreamReadEnum {
+  @scala.inline
+  def adReadAll: activexDashAdodbLib.activexDashAdodbLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def adReadLine: activexDashAdodbLib.activexDashAdodbLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

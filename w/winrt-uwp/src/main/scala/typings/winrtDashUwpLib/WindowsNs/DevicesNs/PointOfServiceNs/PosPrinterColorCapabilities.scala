@@ -72,21 +72,21 @@ object PosPrinterColorCapabilities extends js.Object {
   sealed trait yellow
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterColorCapabilities
   
-  val custom1: custom1 with java.lang.String = js.native
-  val custom2: custom2 with java.lang.String = js.native
-  val custom3: custom3 with java.lang.String = js.native
-  val custom4: custom4 with java.lang.String = js.native
-  val custom5: custom5 with java.lang.String = js.native
-  val custom6: custom6 with java.lang.String = js.native
-  val cyan: cyan with java.lang.String = js.native
-  val full: full with java.lang.String = js.native
-  val magenta: magenta with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val primary: primary with java.lang.String = js.native
-  val yellow: yellow with java.lang.String = js.native
+  /* 2 */ val custom1: custom1 with scala.Double = js.native
+  /* 3 */ val custom2: custom2 with scala.Double = js.native
+  /* 4 */ val custom3: custom3 with scala.Double = js.native
+  /* 5 */ val custom4: custom4 with scala.Double = js.native
+  /* 6 */ val custom5: custom5 with scala.Double = js.native
+  /* 7 */ val custom6: custom6 with scala.Double = js.native
+  /* 8 */ val cyan: cyan with scala.Double = js.native
+  /* 11 */ val full: full with scala.Double = js.native
+  /* 9 */ val magenta: magenta with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val primary: primary with scala.Double = js.native
+  /* 10 */ val yellow: yellow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterColorCapabilities with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterColorCapabilities with scala.Double
   ] = js.native
 }
 

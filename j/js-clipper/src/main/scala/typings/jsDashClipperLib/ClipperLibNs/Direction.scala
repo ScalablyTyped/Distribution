@@ -19,9 +19,9 @@ object Direction extends js.Object {
   sealed trait dRightToLeft
     extends jsDashClipperLib.ClipperLibNs.Direction
   
-  val dLeftToRight: dLeftToRight with java.lang.String = js.native
-  val dRightToLeft: dRightToLeft with java.lang.String = js.native
+  /* 1 */ val dLeftToRight: dLeftToRight with scala.Double = js.native
+  /* 0 */ val dRightToLeft: dRightToLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.Direction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.Direction with scala.Double] = js.native
 }
 

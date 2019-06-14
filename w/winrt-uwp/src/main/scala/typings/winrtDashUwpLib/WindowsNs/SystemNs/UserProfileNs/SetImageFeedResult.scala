@@ -27,12 +27,12 @@ object SetImageFeedResult extends js.Object {
   sealed trait userCanceled
     extends winrtDashUwpLib.WindowsNs.SystemNs.UserProfileNs.SetImageFeedResult
   
-  val changeDisabled: changeDisabled with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val userCanceled: userCanceled with java.lang.String = js.native
+  /* 1 */ val changeDisabled: changeDisabled with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 2 */ val userCanceled: userCanceled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SystemNs.UserProfileNs.SetImageFeedResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SystemNs.UserProfileNs.SetImageFeedResult with scala.Double
   ] = js.native
 }
 

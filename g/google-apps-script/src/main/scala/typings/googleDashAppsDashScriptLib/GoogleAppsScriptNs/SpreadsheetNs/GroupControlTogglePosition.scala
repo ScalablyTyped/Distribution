@@ -19,11 +19,11 @@ object GroupControlTogglePosition extends js.Object {
   sealed trait BEFORE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.GroupControlTogglePosition
   
-  val AFTER: AFTER with java.lang.String = js.native
-  val BEFORE: BEFORE with java.lang.String = js.native
+  /* 1 */ val AFTER: AFTER with scala.Double = js.native
+  /* 0 */ val BEFORE: BEFORE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.GroupControlTogglePosition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.GroupControlTogglePosition with scala.Double
   ] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-goby"
-version := "0.0.5-b82423"
+version := "0.0.5-ebd8b6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

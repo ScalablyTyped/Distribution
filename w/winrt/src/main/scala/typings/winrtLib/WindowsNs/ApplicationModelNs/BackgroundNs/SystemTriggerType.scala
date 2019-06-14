@@ -63,22 +63,22 @@ object SystemTriggerType extends js.Object {
   sealed trait userPresent
     extends winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.SystemTriggerType
   
-  val controlChannelReset: controlChannelReset with java.lang.String = js.native
-  val internetAvailable: internetAvailable with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val lockScreenApplicationAdded: lockScreenApplicationAdded with java.lang.String = js.native
-  val lockScreenApplicationRemoved: lockScreenApplicationRemoved with java.lang.String = js.native
-  val networkStateChange: networkStateChange with java.lang.String = js.native
-  val onlineIdConnectedStateChange: onlineIdConnectedStateChange with java.lang.String = js.native
-  val servicingComplete: servicingComplete with java.lang.String = js.native
-  val sessionConnected: sessionConnected with java.lang.String = js.native
-  val smsReceived: smsReceived with java.lang.String = js.native
-  val timeZoneChange: timeZoneChange with java.lang.String = js.native
-  val userAway: userAway with java.lang.String = js.native
-  val userPresent: userPresent with java.lang.String = js.native
+  /* 5 */ val controlChannelReset: controlChannelReset with scala.Double = js.native
+  /* 6 */ val internetAvailable: internetAvailable with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 9 */ val lockScreenApplicationAdded: lockScreenApplicationAdded with scala.Double = js.native
+  /* 10 */ val lockScreenApplicationRemoved: lockScreenApplicationRemoved with scala.Double = js.native
+  /* 4 */ val networkStateChange: networkStateChange with scala.Double = js.native
+  /* 12 */ val onlineIdConnectedStateChange: onlineIdConnectedStateChange with scala.Double = js.native
+  /* 8 */ val servicingComplete: servicingComplete with scala.Double = js.native
+  /* 7 */ val sessionConnected: sessionConnected with scala.Double = js.native
+  /* 1 */ val smsReceived: smsReceived with scala.Double = js.native
+  /* 11 */ val timeZoneChange: timeZoneChange with scala.Double = js.native
+  /* 3 */ val userAway: userAway with scala.Double = js.native
+  /* 2 */ val userPresent: userPresent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.SystemTriggerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.SystemTriggerType with scala.Double
   ] = js.native
 }
 

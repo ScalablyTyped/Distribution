@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MFSoftwarePlatformType extends js.Object
 
+object MFSoftwarePlatformType {
+  @scala.inline
+  def Win32: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def X64: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait DevicePickFileType extends js.Object
 
+object DevicePickFileType {
+  @scala.inline
+  def Audio: xrmLib.xrmLibStrings.audio = this.cast("audio")
+  @scala.inline
+  def Image: xrmLib.xrmLibStrings.image = this.cast("image")
+  @scala.inline
+  def Video: xrmLib.xrmLibStrings.video = this.cast("video")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

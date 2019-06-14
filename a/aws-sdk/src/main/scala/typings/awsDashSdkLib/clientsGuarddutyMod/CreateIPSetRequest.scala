@@ -30,6 +30,10 @@ trait CreateIPSetRequest extends js.Object {
     * The user friendly name to identify the IPSet. This name is displayed in all findings that are triggered by activity that involves IP addresses included in this IPSet.
     */
   var Name: awsDashSdkLib.clientsGuarddutyMod.Name
+  /**
+    * The tags to be added to a new IP set resource.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 
 object CreateIPSetRequest {
@@ -40,10 +44,12 @@ object CreateIPSetRequest {
     Format: IpSetFormat,
     Location: Location,
     Name: Name,
-    ClientToken: ClientToken = null
+    ClientToken: ClientToken = null,
+    Tags: TagMap = null
   ): CreateIPSetRequest = {
     val __obj = js.Dynamic.literal(Activate = Activate, DetectorId = DetectorId, Format = Format.asInstanceOf[js.Any], Location = Location, Name = Name)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateIPSetRequest]
   }
 }

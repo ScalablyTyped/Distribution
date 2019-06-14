@@ -19,9 +19,9 @@ object ConstraintAction extends js.Object {
   sealed trait RESTRICT
     extends lovefieldLib.lovefieldMod.ConstraintAction
   
-  val CASCADE: CASCADE with java.lang.String = js.native
-  val RESTRICT: RESTRICT with java.lang.String = js.native
+  /* 1 */ val CASCADE: CASCADE with scala.Double = js.native
+  /* 0 */ val RESTRICT: RESTRICT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[lovefieldLib.lovefieldMod.ConstraintAction with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[lovefieldLib.lovefieldMod.ConstraintAction with scala.Double] = js.native
 }
 

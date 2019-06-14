@@ -62,19 +62,19 @@ object BluetoothMajorClass extends js.Object {
   sealed trait wearable
     extends winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothMajorClass
   
-  val audioVideo: audioVideo with java.lang.String = js.native
-  val computer: computer with java.lang.String = js.native
-  val health: health with java.lang.String = js.native
-  val imaging: imaging with java.lang.String = js.native
-  val miscellaneous: miscellaneous with java.lang.String = js.native
-  val networkAccessPoint: networkAccessPoint with java.lang.String = js.native
-  val peripheral: peripheral with java.lang.String = js.native
-  val phone: phone with java.lang.String = js.native
-  val toy: toy with java.lang.String = js.native
-  val wearable: wearable with java.lang.String = js.native
+  /* 4 */ val audioVideo: audioVideo with scala.Double = js.native
+  /* 1 */ val computer: computer with scala.Double = js.native
+  /* 9 */ val health: health with scala.Double = js.native
+  /* 6 */ val imaging: imaging with scala.Double = js.native
+  /* 0 */ val miscellaneous: miscellaneous with scala.Double = js.native
+  /* 3 */ val networkAccessPoint: networkAccessPoint with scala.Double = js.native
+  /* 5 */ val peripheral: peripheral with scala.Double = js.native
+  /* 2 */ val phone: phone with scala.Double = js.native
+  /* 8 */ val toy: toy with scala.Double = js.native
+  /* 7 */ val wearable: wearable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothMajorClass with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothMajorClass with scala.Double
   ] = js.native
 }
 

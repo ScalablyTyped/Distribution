@@ -62,19 +62,17 @@ object UIColorType extends js.Object {
   sealed trait foreground
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIColorType
   
-  val accent: accent with java.lang.String = js.native
-  val accentDark1: accentDark1 with java.lang.String = js.native
-  val accentDark2: accentDark2 with java.lang.String = js.native
-  val accentDark3: accentDark3 with java.lang.String = js.native
-  val accentLight1: accentLight1 with java.lang.String = js.native
-  val accentLight2: accentLight2 with java.lang.String = js.native
-  val accentLight3: accentLight3 with java.lang.String = js.native
-  val background: background with java.lang.String = js.native
-  val complement: complement with java.lang.String = js.native
-  val foreground: foreground with java.lang.String = js.native
+  /* 5 */ val accent: accent with scala.Double = js.native
+  /* 4 */ val accentDark1: accentDark1 with scala.Double = js.native
+  /* 3 */ val accentDark2: accentDark2 with scala.Double = js.native
+  /* 2 */ val accentDark3: accentDark3 with scala.Double = js.native
+  /* 6 */ val accentLight1: accentLight1 with scala.Double = js.native
+  /* 7 */ val accentLight2: accentLight2 with scala.Double = js.native
+  /* 8 */ val accentLight3: accentLight3 with scala.Double = js.native
+  /* 0 */ val background: background with scala.Double = js.native
+  /* 9 */ val complement: complement with scala.Double = js.native
+  /* 1 */ val foreground: foreground with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIColorType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIColorType with scala.Double] = js.native
 }
 

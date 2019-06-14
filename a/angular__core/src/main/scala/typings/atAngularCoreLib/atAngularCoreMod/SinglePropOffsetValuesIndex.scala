@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait SinglePropOffsetValuesIndex extends js.Object
 
+object SinglePropOffsetValuesIndex {
+  @scala.inline
+  def ClassesCountPosition: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def StylesCountPosition: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def ValueStartPosition: atAngularCoreLib.atAngularCoreLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

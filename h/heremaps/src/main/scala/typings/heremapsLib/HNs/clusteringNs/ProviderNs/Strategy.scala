@@ -29,10 +29,10 @@ object Strategy extends js.Object {
   sealed trait GRID
     extends heremapsLib.HNs.clusteringNs.ProviderNs.Strategy
   
-  val DYNAMICGRID: DYNAMICGRID with java.lang.String = js.native
-  val FASTGRID: FASTGRID with java.lang.String = js.native
-  val GRID: GRID with java.lang.String = js.native
+  /* 2 */ val DYNAMICGRID: DYNAMICGRID with scala.Double = js.native
+  /* 0 */ val FASTGRID: FASTGRID with scala.Double = js.native
+  /* 1 */ val GRID: GRID with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.clusteringNs.ProviderNs.Strategy with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.clusteringNs.ProviderNs.Strategy with scala.Double] = js.native
 }
 

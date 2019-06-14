@@ -52,17 +52,17 @@ object ProtectedImportExportStatus extends js.Object {
   sealed trait unprotected
     extends winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.ProtectedImportExportStatus
   
-  val accessSuspended: accessSuspended with java.lang.String = js.native
-  val licenseExpired: licenseExpired with java.lang.String = js.native
-  val notRoamable: notRoamable with java.lang.String = js.native
-  val ok: ok with java.lang.String = js.native
-  val protectedToOtherIdentity: protectedToOtherIdentity with java.lang.String = js.native
-  val revoked: revoked with java.lang.String = js.native
-  val undetermined: undetermined with java.lang.String = js.native
-  val unprotected: unprotected with java.lang.String = js.native
+  /* 7 */ val accessSuspended: accessSuspended with scala.Double = js.native
+  /* 6 */ val licenseExpired: licenseExpired with scala.Double = js.native
+  /* 4 */ val notRoamable: notRoamable with scala.Double = js.native
+  /* 0 */ val ok: ok with scala.Double = js.native
+  /* 5 */ val protectedToOtherIdentity: protectedToOtherIdentity with scala.Double = js.native
+  /* 3 */ val revoked: revoked with scala.Double = js.native
+  /* 1 */ val undetermined: undetermined with scala.Double = js.native
+  /* 2 */ val unprotected: unprotected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.ProtectedImportExportStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.ProtectedImportExportStatus with scala.Double
   ] = js.native
 }
 

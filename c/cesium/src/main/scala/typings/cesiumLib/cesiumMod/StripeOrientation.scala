@@ -19,9 +19,9 @@ object StripeOrientation extends js.Object {
   sealed trait VERTICAL
     extends cesiumLib.cesiumMod.StripeOrientation
   
-  val HORIZONTAL: HORIZONTAL with java.lang.String = js.native
-  val VERTICAL: VERTICAL with java.lang.String = js.native
+  /* 0 */ val HORIZONTAL: HORIZONTAL with scala.Double = js.native
+  /* 1 */ val VERTICAL: VERTICAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.StripeOrientation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.StripeOrientation with scala.Double] = js.native
 }
 

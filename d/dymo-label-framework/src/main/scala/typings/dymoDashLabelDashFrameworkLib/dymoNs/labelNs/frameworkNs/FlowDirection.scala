@@ -25,11 +25,11 @@ object FlowDirection extends js.Object {
   sealed trait RightToLeft
     extends dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.FlowDirection
   
-  val LeftToRight: LeftToRight with java.lang.String = js.native
-  val RightToLeft: RightToLeft with java.lang.String = js.native
+  /* 0 */ val LeftToRight: LeftToRight with scala.Double = js.native
+  /* 1 */ val RightToLeft: RightToLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.FlowDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.FlowDirection with scala.Double
   ] = js.native
 }
 

@@ -21,10 +21,10 @@ object TransformNs extends js.Object {
     sealed trait World
       extends math3dLib.math3dMod.TransformNs.Space
     
-    val Self: Self with java.lang.String = js.native
-    val World: World with java.lang.String = js.native
+    /* 0 */ val Self: Self with scala.Double = js.native
+    /* 1 */ val World: World with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[math3dLib.math3dMod.TransformNs.Space with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[math3dLib.math3dMod.TransformNs.Space with scala.Double] = js.native
   }
   
 }

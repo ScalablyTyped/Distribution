@@ -27,12 +27,12 @@ object NDContentIDType extends js.Object {
   sealed trait playReadyObject
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDContentIDType
   
-  val custom: custom with java.lang.String = js.native
-  val keyID: keyID with java.lang.String = js.native
-  val playReadyObject: playReadyObject with java.lang.String = js.native
+  /* 2 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val keyID: keyID with scala.Double = js.native
+  /* 1 */ val playReadyObject: playReadyObject with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDContentIDType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDContentIDType with scala.Double
   ] = js.native
 }
 

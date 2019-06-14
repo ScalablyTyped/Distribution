@@ -12,6 +12,6 @@ sealed trait Blending extends js.Object
 @js.native
 object Blending extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.Blending with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.Blending with scala.Nothing] = js.native
 }
 

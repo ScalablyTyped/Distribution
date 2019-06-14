@@ -135,40 +135,40 @@ object Icon extends js.Object {
   sealed trait VIDEO_PLAY
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.Icon
   
-  val AIRPLANE: AIRPLANE with java.lang.String = js.native
-  val BOOKMARK: BOOKMARK with java.lang.String = js.native
-  val BUS: BUS with java.lang.String = js.native
-  val CAR: CAR with java.lang.String = js.native
-  val CLOCK: CLOCK with java.lang.String = js.native
-  val CONFIRMATION_NUMBER_ICON: CONFIRMATION_NUMBER_ICON with java.lang.String = js.native
-  val DESCRIPTION: DESCRIPTION with java.lang.String = js.native
-  val DOLLAR: DOLLAR with java.lang.String = js.native
-  val EMAIL: EMAIL with java.lang.String = js.native
-  val EVENT_PERFORMER: EVENT_PERFORMER with java.lang.String = js.native
-  val EVENT_SEAT: EVENT_SEAT with java.lang.String = js.native
-  val FLIGHT_ARRIVAL: FLIGHT_ARRIVAL with java.lang.String = js.native
-  val FLIGHT_DEPARTURE: FLIGHT_DEPARTURE with java.lang.String = js.native
-  val HOTEL: HOTEL with java.lang.String = js.native
-  val HOTEL_ROOM_TYPE: HOTEL_ROOM_TYPE with java.lang.String = js.native
-  val INVITE: INVITE with java.lang.String = js.native
-  val MAP_PIN: MAP_PIN with java.lang.String = js.native
-  val MEMBERSHIP: MEMBERSHIP with java.lang.String = js.native
-  val MULTIPLE_PEOPLE: MULTIPLE_PEOPLE with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val OFFER: OFFER with java.lang.String = js.native
-  val PERSON: PERSON with java.lang.String = js.native
-  val PHONE: PHONE with java.lang.String = js.native
-  val RESTAURANT_ICON: RESTAURANT_ICON with java.lang.String = js.native
-  val SHOPPING_CART: SHOPPING_CART with java.lang.String = js.native
-  val STAR: STAR with java.lang.String = js.native
-  val STORE: STORE with java.lang.String = js.native
-  val TICKET: TICKET with java.lang.String = js.native
-  val TRAIN: TRAIN with java.lang.String = js.native
-  val VIDEO_CAMERA: VIDEO_CAMERA with java.lang.String = js.native
-  val VIDEO_PLAY: VIDEO_PLAY with java.lang.String = js.native
+  /* 1 */ val AIRPLANE: AIRPLANE with scala.Double = js.native
+  /* 2 */ val BOOKMARK: BOOKMARK with scala.Double = js.native
+  /* 3 */ val BUS: BUS with scala.Double = js.native
+  /* 4 */ val CAR: CAR with scala.Double = js.native
+  /* 5 */ val CLOCK: CLOCK with scala.Double = js.native
+  /* 6 */ val CONFIRMATION_NUMBER_ICON: CONFIRMATION_NUMBER_ICON with scala.Double = js.native
+  /* 8 */ val DESCRIPTION: DESCRIPTION with scala.Double = js.native
+  /* 7 */ val DOLLAR: DOLLAR with scala.Double = js.native
+  /* 9 */ val EMAIL: EMAIL with scala.Double = js.native
+  /* 10 */ val EVENT_PERFORMER: EVENT_PERFORMER with scala.Double = js.native
+  /* 11 */ val EVENT_SEAT: EVENT_SEAT with scala.Double = js.native
+  /* 12 */ val FLIGHT_ARRIVAL: FLIGHT_ARRIVAL with scala.Double = js.native
+  /* 13 */ val FLIGHT_DEPARTURE: FLIGHT_DEPARTURE with scala.Double = js.native
+  /* 14 */ val HOTEL: HOTEL with scala.Double = js.native
+  /* 15 */ val HOTEL_ROOM_TYPE: HOTEL_ROOM_TYPE with scala.Double = js.native
+  /* 16 */ val INVITE: INVITE with scala.Double = js.native
+  /* 17 */ val MAP_PIN: MAP_PIN with scala.Double = js.native
+  /* 18 */ val MEMBERSHIP: MEMBERSHIP with scala.Double = js.native
+  /* 19 */ val MULTIPLE_PEOPLE: MULTIPLE_PEOPLE with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 20 */ val OFFER: OFFER with scala.Double = js.native
+  /* 21 */ val PERSON: PERSON with scala.Double = js.native
+  /* 22 */ val PHONE: PHONE with scala.Double = js.native
+  /* 23 */ val RESTAURANT_ICON: RESTAURANT_ICON with scala.Double = js.native
+  /* 24 */ val SHOPPING_CART: SHOPPING_CART with scala.Double = js.native
+  /* 25 */ val STAR: STAR with scala.Double = js.native
+  /* 26 */ val STORE: STORE with scala.Double = js.native
+  /* 27 */ val TICKET: TICKET with scala.Double = js.native
+  /* 28 */ val TRAIN: TRAIN with scala.Double = js.native
+  /* 29 */ val VIDEO_CAMERA: VIDEO_CAMERA with scala.Double = js.native
+  /* 30 */ val VIDEO_PLAY: VIDEO_PLAY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.Icon with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.Icon with scala.Double
   ] = js.native
 }
 

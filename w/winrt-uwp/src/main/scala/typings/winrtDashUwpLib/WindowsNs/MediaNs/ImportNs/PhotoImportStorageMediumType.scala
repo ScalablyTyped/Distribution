@@ -27,12 +27,12 @@ object PhotoImportStorageMediumType extends js.Object {
   sealed trait undefined
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportStorageMediumType
   
-  val fixed: fixed with java.lang.String = js.native
-  val removable: removable with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 1 */ val fixed: fixed with scala.Double = js.native
+  /* 2 */ val removable: removable with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportStorageMediumType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportStorageMediumType with scala.Double
   ] = js.native
 }
 

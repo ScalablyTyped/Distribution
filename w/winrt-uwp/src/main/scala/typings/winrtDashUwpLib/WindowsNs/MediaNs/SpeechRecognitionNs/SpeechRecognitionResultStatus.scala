@@ -67,20 +67,20 @@ object SpeechRecognitionResultStatus extends js.Object {
   sealed trait userCanceled
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionResultStatus
   
-  val audioQualityFailure: audioQualityFailure with java.lang.String = js.native
-  val grammarCompilationFailure: grammarCompilationFailure with java.lang.String = js.native
-  val grammarLanguageMismatch: grammarLanguageMismatch with java.lang.String = js.native
-  val microphoneUnavailable: microphoneUnavailable with java.lang.String = js.native
-  val networkFailure: networkFailure with java.lang.String = js.native
-  val pauseLimitExceeded: pauseLimitExceeded with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val timeoutExceeded: timeoutExceeded with java.lang.String = js.native
-  val topicLanguageNotSupported: topicLanguageNotSupported with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val userCanceled: userCanceled with java.lang.String = js.native
+  /* 4 */ val audioQualityFailure: audioQualityFailure with scala.Double = js.native
+  /* 3 */ val grammarCompilationFailure: grammarCompilationFailure with scala.Double = js.native
+  /* 2 */ val grammarLanguageMismatch: grammarLanguageMismatch with scala.Double = js.native
+  /* 10 */ val microphoneUnavailable: microphoneUnavailable with scala.Double = js.native
+  /* 9 */ val networkFailure: networkFailure with scala.Double = js.native
+  /* 8 */ val pauseLimitExceeded: pauseLimitExceeded with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 7 */ val timeoutExceeded: timeoutExceeded with scala.Double = js.native
+  /* 1 */ val topicLanguageNotSupported: topicLanguageNotSupported with scala.Double = js.native
+  /* 6 */ val unknown: unknown with scala.Double = js.native
+  /* 5 */ val userCanceled: userCanceled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionResultStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionResultStatus with scala.Double
   ] = js.native
 }
 

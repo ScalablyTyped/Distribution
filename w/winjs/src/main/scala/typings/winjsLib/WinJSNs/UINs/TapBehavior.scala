@@ -42,11 +42,11 @@ object TapBehavior extends js.Object {
   sealed trait toggleSelect
     extends winjsLib.WinJSNs.UINs.TapBehavior
   
-  val directSelect: directSelect with java.lang.String = js.native
-  val invokeOnly: invokeOnly with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val toggleSelect: toggleSelect with java.lang.String = js.native
+  /* 0 */ val directSelect: directSelect with scala.Double = js.native
+  /* 2 */ val invokeOnly: invokeOnly with scala.Double = js.native
+  /* 3 */ val none: none with scala.Double = js.native
+  /* 1 */ val toggleSelect: toggleSelect with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.TapBehavior with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.TapBehavior with scala.Double] = js.native
 }
 

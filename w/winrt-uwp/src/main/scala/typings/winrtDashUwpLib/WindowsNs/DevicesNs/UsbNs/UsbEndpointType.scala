@@ -32,11 +32,11 @@ object UsbEndpointType extends js.Object {
   sealed trait isochronous
     extends winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbEndpointType
   
-  val bulk: bulk with java.lang.String = js.native
-  val control: control with java.lang.String = js.native
-  val interrupt: interrupt with java.lang.String = js.native
-  val isochronous: isochronous with java.lang.String = js.native
+  /* 2 */ val bulk: bulk with scala.Double = js.native
+  /* 0 */ val control: control with scala.Double = js.native
+  /* 3 */ val interrupt: interrupt with scala.Double = js.native
+  /* 1 */ val isochronous: isochronous with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbEndpointType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbEndpointType with scala.Double] = js.native
 }
 

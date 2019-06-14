@@ -71,21 +71,21 @@ object SymbologyType extends js.Object {
   sealed trait QRBarcode
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BarcodeNs.SymbologyType
   
-  val Codabar: Codabar with java.lang.String = js.native
-  val Code11: Code11 with java.lang.String = js.native
-  val Code128A: Code128A with java.lang.String = js.native
-  val Code128B: Code128B with java.lang.String = js.native
-  val Code128C: Code128C with java.lang.String = js.native
-  val Code32: Code32 with java.lang.String = js.native
-  val Code39: Code39 with java.lang.String = js.native
-  val Code39Extended: Code39Extended with java.lang.String = js.native
-  val Code93: Code93 with java.lang.String = js.native
-  val Code93Extended: Code93Extended with java.lang.String = js.native
-  val DataMatrix: DataMatrix with java.lang.String = js.native
-  val QRBarcode: QRBarcode with java.lang.String = js.native
+  /* 5 */ val Codabar: Codabar with scala.Double = js.native
+  /* 4 */ val Code11: Code11 with scala.Double = js.native
+  /* 9 */ val Code128A: Code128A with scala.Double = js.native
+  /* 10 */ val Code128B: Code128B with scala.Double = js.native
+  /* 11 */ val Code128C: Code128C with scala.Double = js.native
+  /* 6 */ val Code32: Code32 with scala.Double = js.native
+  /* 2 */ val Code39: Code39 with scala.Double = js.native
+  /* 3 */ val Code39Extended: Code39Extended with scala.Double = js.native
+  /* 7 */ val Code93: Code93 with scala.Double = js.native
+  /* 8 */ val Code93Extended: Code93Extended with scala.Double = js.native
+  /* 1 */ val DataMatrix: DataMatrix with scala.Double = js.native
+  /* 0 */ val QRBarcode: QRBarcode with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BarcodeNs.SymbologyType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BarcodeNs.SymbologyType with scala.Double
   ] = js.native
 }
 

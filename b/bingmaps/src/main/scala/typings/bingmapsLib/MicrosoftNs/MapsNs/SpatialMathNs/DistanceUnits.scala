@@ -41,13 +41,13 @@ object DistanceUnits extends js.Object {
   sealed trait Yards
     extends bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits
   
-  val Feet: Feet with java.lang.String = js.native
-  val Kilometers: Kilometers with java.lang.String = js.native
-  val Meters: Meters with java.lang.String = js.native
-  val Miles: Miles with java.lang.String = js.native
-  val NauticalMiles: NauticalMiles with java.lang.String = js.native
-  val Yards: Yards with java.lang.String = js.native
+  /* 3 */ val Feet: Feet with scala.Double = js.native
+  /* 1 */ val Kilometers: Kilometers with scala.Double = js.native
+  /* 0 */ val Meters: Meters with scala.Double = js.native
+  /* 2 */ val Miles: Miles with scala.Double = js.native
+  /* 5 */ val NauticalMiles: NauticalMiles with scala.Double = js.native
+  /* 4 */ val Yards: Yards with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits with scala.Double] = js.native
 }
 

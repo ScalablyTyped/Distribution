@@ -22,9 +22,9 @@ object FileAccessMode extends js.Object {
   sealed trait readWrite
     extends winrtDashUwpLib.WindowsNs.StorageNs.FileAccessMode
   
-  val read: read with java.lang.String = js.native
-  val readWrite: readWrite with java.lang.String = js.native
+  /* 0 */ val read: read with scala.Double = js.native
+  /* 1 */ val readWrite: readWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.FileAccessMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.FileAccessMode with scala.Double] = js.native
 }
 

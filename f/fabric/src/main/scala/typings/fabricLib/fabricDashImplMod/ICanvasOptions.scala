@@ -58,6 +58,10 @@ trait ICanvasOptions extends IStaticCanvasOptions {
   	 */
   var defaultCursor: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Color of object's fill
+    */
+  var fill: js.UndefOr[java.lang.String | Pattern] = js.undefined
+  /**
   	 * Indicates if the canvas can fire middle click events
   	 * @type Boolean
   	 * @since 1.7.8
@@ -215,6 +219,7 @@ object ICanvasOptions {
     controlsAboveOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     defaultCursor: java.lang.String = null,
     enableRetinaScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: java.lang.String | Pattern = null,
     fireMiddleClick: js.UndefOr[scala.Boolean] = js.undefined,
     fireRightClick: js.UndefOr[scala.Boolean] = js.undefined,
     freeDrawingCursor: java.lang.String = null,
@@ -268,6 +273,7 @@ object ICanvasOptions {
     if (!js.isUndefined(controlsAboveOverlay)) __obj.updateDynamic("controlsAboveOverlay")(controlsAboveOverlay)
     if (defaultCursor != null) __obj.updateDynamic("defaultCursor")(defaultCursor)
     if (!js.isUndefined(enableRetinaScaling)) __obj.updateDynamic("enableRetinaScaling")(enableRetinaScaling)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (!js.isUndefined(fireMiddleClick)) __obj.updateDynamic("fireMiddleClick")(fireMiddleClick)
     if (!js.isUndefined(fireRightClick)) __obj.updateDynamic("fireRightClick")(fireRightClick)
     if (freeDrawingCursor != null) __obj.updateDynamic("freeDrawingCursor")(freeDrawingCursor)

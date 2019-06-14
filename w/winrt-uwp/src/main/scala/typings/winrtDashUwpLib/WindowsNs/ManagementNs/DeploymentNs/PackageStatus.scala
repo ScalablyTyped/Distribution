@@ -37,14 +37,14 @@ object PackageStatus extends js.Object {
   sealed trait tampered
     extends winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageStatus
   
-  val disabled: disabled with java.lang.String = js.native
-  val licenseIssue: licenseIssue with java.lang.String = js.native
-  val modified: modified with java.lang.String = js.native
-  val ok: ok with java.lang.String = js.native
-  val tampered: tampered with java.lang.String = js.native
+  /* 4 */ val disabled: disabled with scala.Double = js.native
+  /* 1 */ val licenseIssue: licenseIssue with scala.Double = js.native
+  /* 2 */ val modified: modified with scala.Double = js.native
+  /* 0 */ val ok: ok with scala.Double = js.native
+  /* 3 */ val tampered: tampered with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ManagementNs.DeploymentNs.PackageStatus with scala.Double
   ] = js.native
 }
 

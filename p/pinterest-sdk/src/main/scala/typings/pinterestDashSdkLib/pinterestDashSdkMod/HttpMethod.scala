@@ -27,11 +27,11 @@ object HttpMethod extends js.Object {
   sealed trait put
     extends pinterestDashSdkLib.pinterestDashSdkMod.HttpMethod
   
-  val delete: delete with java.lang.String = js.native
-  val get: get with java.lang.String = js.native
-  val post: post with java.lang.String = js.native
-  val put: put with java.lang.String = js.native
+  /* 3 */ val delete: delete with scala.Double = js.native
+  /* 0 */ val get: get with scala.Double = js.native
+  /* 2 */ val post: post with scala.Double = js.native
+  /* 1 */ val put: put with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[pinterestDashSdkLib.pinterestDashSdkMod.HttpMethod with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[pinterestDashSdkLib.pinterestDashSdkMod.HttpMethod with scala.Double] = js.native
 }
 

@@ -22,11 +22,11 @@ object VpnPacketBufferStatus extends js.Object {
   sealed trait ok
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnPacketBufferStatus
   
-  val invalidBufferSize: invalidBufferSize with java.lang.String = js.native
-  val ok: ok with java.lang.String = js.native
+  /* 1 */ val invalidBufferSize: invalidBufferSize with scala.Double = js.native
+  /* 0 */ val ok: ok with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnPacketBufferStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnPacketBufferStatus with scala.Double
   ] = js.native
 }
 

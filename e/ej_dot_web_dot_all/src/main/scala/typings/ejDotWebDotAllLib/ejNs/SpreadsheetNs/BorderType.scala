@@ -61,17 +61,17 @@ object BorderType extends js.Object {
   sealed trait TopandThickBottom
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.BorderType
   
-  val AllBorder: AllBorder with java.lang.String = js.native
-  val Bottom: Bottom with java.lang.String = js.native
-  val Left: Left with java.lang.String = js.native
-  val OutSide: OutSide with java.lang.String = js.native
-  val Right: Right with java.lang.String = js.native
-  val ThickBottom: ThickBottom with java.lang.String = js.native
-  val ThickBox: ThickBox with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
-  val TopandBottom: TopandBottom with java.lang.String = js.native
-  val TopandThickBottom: TopandThickBottom with java.lang.String = js.native
+  /* 5 */ val AllBorder: AllBorder with scala.Double = js.native
+  /* 3 */ val Bottom: Bottom with scala.Double = js.native
+  /* 1 */ val Left: Left with scala.Double = js.native
+  /* 4 */ val OutSide: OutSide with scala.Double = js.native
+  /* 2 */ val Right: Right with scala.Double = js.native
+  /* 7 */ val ThickBottom: ThickBottom with scala.Double = js.native
+  /* 6 */ val ThickBox: ThickBox with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
+  /* 8 */ val TopandBottom: TopandBottom with scala.Double = js.native
+  /* 9 */ val TopandThickBottom: TopandThickBottom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.BorderType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.BorderType with scala.Double] = js.native
 }
 

@@ -21,9 +21,9 @@ object DragBehavior extends js.Object {
   sealed trait Move
     extends ejDotWebDotAllLib.ejNs.GridNs.DragBehavior
   
-  val Copy: Copy with java.lang.String = js.native
-  val Move: Move with java.lang.String = js.native
+  /* 1 */ val Copy: Copy with scala.Double = js.native
+  /* 0 */ val Move: Move with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.DragBehavior with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.DragBehavior with scala.Double] = js.native
 }
 

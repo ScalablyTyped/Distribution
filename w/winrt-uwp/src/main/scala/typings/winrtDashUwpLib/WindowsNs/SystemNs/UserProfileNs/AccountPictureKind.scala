@@ -27,12 +27,12 @@ object AccountPictureKind extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.SystemNs.UserProfileNs.AccountPictureKind
   
-  val largeImage: largeImage with java.lang.String = js.native
-  val smallImage: smallImage with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 1 */ val largeImage: largeImage with scala.Double = js.native
+  /* 0 */ val smallImage: smallImage with scala.Double = js.native
+  /* 2 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SystemNs.UserProfileNs.AccountPictureKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SystemNs.UserProfileNs.AccountPictureKind with scala.Double
   ] = js.native
 }
 

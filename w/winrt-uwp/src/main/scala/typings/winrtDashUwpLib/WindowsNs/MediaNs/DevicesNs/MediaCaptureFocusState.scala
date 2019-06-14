@@ -37,14 +37,14 @@ object MediaCaptureFocusState extends js.Object {
   sealed trait uninitialized
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCaptureFocusState
   
-  val failed: failed with java.lang.String = js.native
-  val focused: focused with java.lang.String = js.native
-  val lost: lost with java.lang.String = js.native
-  val searching: searching with java.lang.String = js.native
-  val uninitialized: uninitialized with java.lang.String = js.native
+  /* 4 */ val failed: failed with scala.Double = js.native
+  /* 3 */ val focused: focused with scala.Double = js.native
+  /* 1 */ val lost: lost with scala.Double = js.native
+  /* 2 */ val searching: searching with scala.Double = js.native
+  /* 0 */ val uninitialized: uninitialized with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCaptureFocusState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCaptureFocusState with scala.Double
   ] = js.native
 }
 

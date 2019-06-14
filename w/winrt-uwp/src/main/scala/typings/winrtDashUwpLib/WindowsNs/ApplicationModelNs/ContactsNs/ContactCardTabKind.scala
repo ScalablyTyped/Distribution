@@ -37,14 +37,14 @@ object ContactCardTabKind extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactCardTabKind
   
-  val default: default with java.lang.String = js.native
-  val email: email with java.lang.String = js.native
-  val messaging: messaging with java.lang.String = js.native
-  val phone: phone with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val email: email with scala.Double = js.native
+  /* 2 */ val messaging: messaging with scala.Double = js.native
+  /* 3 */ val phone: phone with scala.Double = js.native
+  /* 4 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactCardTabKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactCardTabKind with scala.Double
   ] = js.native
 }
 

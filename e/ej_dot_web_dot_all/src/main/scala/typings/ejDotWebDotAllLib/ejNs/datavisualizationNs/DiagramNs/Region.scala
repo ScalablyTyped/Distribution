@@ -21,11 +21,9 @@ object Region extends js.Object {
   sealed trait PageSettings
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Region
   
-  val Content: Content with java.lang.String = js.native
-  val PageSettings: PageSettings with java.lang.String = js.native
+  /* 0 */ val Content: Content with scala.Double = js.native
+  /* 1 */ val PageSettings: PageSettings with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Region with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Region with scala.Double] = js.native
 }
 

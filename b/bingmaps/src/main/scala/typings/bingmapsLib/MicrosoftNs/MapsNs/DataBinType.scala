@@ -36,12 +36,12 @@ object DataBinType extends js.Object {
   sealed trait square
     extends bingmapsLib.MicrosoftNs.MapsNs.DataBinType
   
-  val circle: circle with java.lang.String = js.native
-  val hexCircle: hexCircle with java.lang.String = js.native
-  val hexagon: hexagon with java.lang.String = js.native
-  val pointyHexagon: pointyHexagon with java.lang.String = js.native
-  val square: square with java.lang.String = js.native
+  /* 0 */ val circle: circle with scala.Double = js.native
+  /* 2 */ val hexCircle: hexCircle with scala.Double = js.native
+  /* 1 */ val hexagon: hexagon with scala.Double = js.native
+  /* 3 */ val pointyHexagon: pointyHexagon with scala.Double = js.native
+  /* 4 */ val square: square with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DataBinType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DataBinType with scala.Double] = js.native
 }
 

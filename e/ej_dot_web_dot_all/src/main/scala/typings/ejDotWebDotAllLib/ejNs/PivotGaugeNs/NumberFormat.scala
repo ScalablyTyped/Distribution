@@ -46,14 +46,14 @@ object NumberFormat extends js.Object {
   sealed trait Text
     extends ejDotWebDotAllLib.ejNs.PivotGaugeNs.NumberFormat
   
-  val Currency: Currency with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Fraction: Fraction with java.lang.String = js.native
-  val Notation: Notation with java.lang.String = js.native
-  val Percentage: Percentage with java.lang.String = js.native
-  val Scientific: Scientific with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
+  /* 1 */ val Currency: Currency with scala.Double = js.native
+  /* 0 */ val Default: Default with scala.Double = js.native
+  /* 3 */ val Fraction: Fraction with scala.Double = js.native
+  /* 6 */ val Notation: Notation with scala.Double = js.native
+  /* 2 */ val Percentage: Percentage with scala.Double = js.native
+  /* 4 */ val Scientific: Scientific with scala.Double = js.native
+  /* 5 */ val Text: Text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotGaugeNs.NumberFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotGaugeNs.NumberFormat with scala.Double] = js.native
 }
 

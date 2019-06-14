@@ -49,14 +49,14 @@ object AltitudeContext extends js.Object {
   sealed trait undefined
     extends heremapsLib.HNs.geoNs.AltitudeContext
   
-  val GL: GL with java.lang.String = js.native
-  val OL: OL with java.lang.String = js.native
-  val SB: SB with java.lang.String = js.native
-  val SL: SL with java.lang.String = js.native
-  val WE: WE with java.lang.String = js.native
-  val WG: WG with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 1 */ val GL: GL with scala.Double = js.native
+  /* 2 */ val OL: OL with scala.Double = js.native
+  /* 4 */ val SB: SB with scala.Double = js.native
+  /* 3 */ val SL: SL with scala.Double = js.native
+  /* 5 */ val WE: WE with scala.Double = js.native
+  /* 6 */ val WG: WG with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.geoNs.AltitudeContext with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.geoNs.AltitudeContext with scala.Double] = js.native
 }
 

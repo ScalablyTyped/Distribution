@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-simple-maps"
-version := "0.12-dt-20190130Z-e71b5c"
+version := "0.12-dt-20190130Z-459d7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190212Z-c34c89",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-762b1c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

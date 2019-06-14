@@ -23,10 +23,10 @@ object ClockRange extends js.Object {
   sealed trait UNBOUNDED
     extends cesiumLib.cesiumMod.ClockRange
   
-  val CLAMPED: CLAMPED with java.lang.String = js.native
-  val LOOP_STOP: LOOP_STOP with java.lang.String = js.native
-  val UNBOUNDED: UNBOUNDED with java.lang.String = js.native
+  /* 1 */ val CLAMPED: CLAMPED with scala.Double = js.native
+  /* 2 */ val LOOP_STOP: LOOP_STOP with scala.Double = js.native
+  /* 0 */ val UNBOUNDED: UNBOUNDED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.ClockRange with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.ClockRange with scala.Double] = js.native
 }
 

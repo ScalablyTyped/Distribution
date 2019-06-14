@@ -27,12 +27,12 @@ object MediaPlayerAudioDeviceType extends js.Object {
   sealed trait multimedia
     extends winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerAudioDeviceType
   
-  val communications: communications with java.lang.String = js.native
-  val console: console with java.lang.String = js.native
-  val multimedia: multimedia with java.lang.String = js.native
+  /* 2 */ val communications: communications with scala.Double = js.native
+  /* 0 */ val console: console with scala.Double = js.native
+  /* 1 */ val multimedia: multimedia with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerAudioDeviceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.PlaybackNs.MediaPlayerAudioDeviceType with scala.Double
   ] = js.native
 }
 

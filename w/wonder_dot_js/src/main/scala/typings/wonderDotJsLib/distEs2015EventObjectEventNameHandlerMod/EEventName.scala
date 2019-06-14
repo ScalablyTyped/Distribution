@@ -67,23 +67,23 @@ object EEventName extends js.Object {
   sealed trait TOUCHUP
     extends wonderDotJsLib.distEs2015EventObjectEventNameHandlerMod.EEventName
   
-  val CLICK: CLICK with java.lang.String = js.native
-  val KEYDOWN: KEYDOWN with java.lang.String = js.native
-  val KEYPRESS: KEYPRESS with java.lang.String = js.native
-  val KEYUP: KEYUP with java.lang.String = js.native
-  val MOUSEDOWN: MOUSEDOWN with java.lang.String = js.native
-  val MOUSEDRAG: MOUSEDRAG with java.lang.String = js.native
-  val MOUSEMOVE: MOUSEMOVE with java.lang.String = js.native
-  val MOUSEOUT: MOUSEOUT with java.lang.String = js.native
-  val MOUSEOVER: MOUSEOVER with java.lang.String = js.native
-  val MOUSEUP: MOUSEUP with java.lang.String = js.native
-  val MOUSEWHEEL: MOUSEWHEEL with java.lang.String = js.native
-  val TOUCHDOWN: TOUCHDOWN with java.lang.String = js.native
-  val TOUCHMOVE: TOUCHMOVE with java.lang.String = js.native
-  val TOUCHUP: TOUCHUP with java.lang.String = js.native
+  /* 0 */ val CLICK: CLICK with scala.Double = js.native
+  /* 11 */ val KEYDOWN: KEYDOWN with scala.Double = js.native
+  /* 13 */ val KEYPRESS: KEYPRESS with scala.Double = js.native
+  /* 12 */ val KEYUP: KEYUP with scala.Double = js.native
+  /* 5 */ val MOUSEDOWN: MOUSEDOWN with scala.Double = js.native
+  /* 7 */ val MOUSEDRAG: MOUSEDRAG with scala.Double = js.native
+  /* 4 */ val MOUSEMOVE: MOUSEMOVE with scala.Double = js.native
+  /* 3 */ val MOUSEOUT: MOUSEOUT with scala.Double = js.native
+  /* 1 */ val MOUSEOVER: MOUSEOVER with scala.Double = js.native
+  /* 2 */ val MOUSEUP: MOUSEUP with scala.Double = js.native
+  /* 6 */ val MOUSEWHEEL: MOUSEWHEEL with scala.Double = js.native
+  /* 10 */ val TOUCHDOWN: TOUCHDOWN with scala.Double = js.native
+  /* 9 */ val TOUCHMOVE: TOUCHMOVE with scala.Double = js.native
+  /* 8 */ val TOUCHUP: TOUCHUP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015EventObjectEventNameHandlerMod.EEventName with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015EventObjectEventNameHandlerMod.EEventName with scala.Double
   ] = js.native
 }
 

@@ -21,9 +21,9 @@ object InputMode extends js.Object {
   sealed trait Text
     extends ejDotWebDotAllLib.ejNs.InputMode
   
-  val Password: Password with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
+  /* 0 */ val Password: Password with scala.Double = js.native
+  /* 1 */ val Text: Text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.InputMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.InputMode with scala.Double] = js.native
 }
 

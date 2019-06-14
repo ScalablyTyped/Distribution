@@ -42,15 +42,15 @@ object MagneticStripeReaderTrackErrorType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderTrackErrorType
   
-  val endSentinelError: endSentinelError with java.lang.String = js.native
-  val lrcError: lrcError with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val parityError: parityError with java.lang.String = js.native
-  val startSentinelError: startSentinelError with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 2 */ val endSentinelError: endSentinelError with scala.Double = js.native
+  /* 4 */ val lrcError: lrcError with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val parityError: parityError with scala.Double = js.native
+  /* 1 */ val startSentinelError: startSentinelError with scala.Double = js.native
+  /* 5 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderTrackErrorType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderTrackErrorType with scala.Double
   ] = js.native
 }
 

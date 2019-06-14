@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdEmailHTMLFidelity extends js.Object
 
+object WdEmailHTMLFidelity {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdEmailHTMLFidelityHigh: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def wdEmailHTMLFidelityLow: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdEmailHTMLFidelityMedium: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

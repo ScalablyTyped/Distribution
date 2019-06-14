@@ -26,10 +26,10 @@ object DraftIndicatorState extends js.Object {
   sealed trait Saving
     extends openui5Lib.sapNs.mNs.DraftIndicatorState
   
-  val Clear: Clear with java.lang.String = js.native
-  val Saved: Saved with java.lang.String = js.native
-  val Saving: Saving with java.lang.String = js.native
+  /* 0 */ val Clear: Clear with scala.Double = js.native
+  /* 1 */ val Saved: Saved with scala.Double = js.native
+  /* 2 */ val Saving: Saving with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.DraftIndicatorState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.DraftIndicatorState with scala.Double] = js.native
 }
 

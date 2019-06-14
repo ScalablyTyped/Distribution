@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eonasdan-bootstrap-datetimepicker"
-version := "v4.17.37-dt-20190322Z-08801d"
+version := "v4.17.37-dt-20190322Z-c440b9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

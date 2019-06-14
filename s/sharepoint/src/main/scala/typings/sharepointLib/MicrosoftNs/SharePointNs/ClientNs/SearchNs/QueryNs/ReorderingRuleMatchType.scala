@@ -47,18 +47,18 @@ object ReorderingRuleMatchType extends js.Object {
   sealed trait urlStartsWith
     extends sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.ReorderingRuleMatchType
   
-  val contentTypeIs: contentTypeIs with java.lang.String = js.native
-  val fileExtensionMatches: fileExtensionMatches with java.lang.String = js.native
-  val manualCondition: manualCondition with java.lang.String = js.native
-  val resultContainsKeyword: resultContainsKeyword with java.lang.String = js.native
-  val resultHasTag: resultHasTag with java.lang.String = js.native
-  val titleContainsKeyword: titleContainsKeyword with java.lang.String = js.native
-  val titleMatchesKeyword: titleMatchesKeyword with java.lang.String = js.native
-  val urlExactlyMatches: urlExactlyMatches with java.lang.String = js.native
-  val urlStartsWith: urlStartsWith with java.lang.String = js.native
+  /* 5 */ val contentTypeIs: contentTypeIs with scala.Double = js.native
+  /* 6 */ val fileExtensionMatches: fileExtensionMatches with scala.Double = js.native
+  /* 8 */ val manualCondition: manualCondition with scala.Double = js.native
+  /* 0 */ val resultContainsKeyword: resultContainsKeyword with scala.Double = js.native
+  /* 7 */ val resultHasTag: resultHasTag with scala.Double = js.native
+  /* 1 */ val titleContainsKeyword: titleContainsKeyword with scala.Double = js.native
+  /* 2 */ val titleMatchesKeyword: titleMatchesKeyword with scala.Double = js.native
+  /* 4 */ val urlExactlyMatches: urlExactlyMatches with scala.Double = js.native
+  /* 3 */ val urlStartsWith: urlStartsWith with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.ReorderingRuleMatchType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.ReorderingRuleMatchType with scala.Double
   ] = js.native
 }
 

@@ -172,39 +172,39 @@ object TextRangeUnit extends js.Object {
   sealed trait word
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.TextRangeUnit
   
-  val allCaps: allCaps with java.lang.String = js.native
-  val bold: bold with java.lang.String = js.native
-  val character: character with java.lang.String = js.native
-  val characterFormat: characterFormat with java.lang.String = js.native
-  val cluster: cluster with java.lang.String = js.native
-  val disabled: disabled with java.lang.String = js.native
-  val fontBound: fontBound with java.lang.String = js.native
-  val hardParagraph: hardParagraph with java.lang.String = js.native
-  val hidden: hidden with java.lang.String = js.native
-  val imprint: imprint with java.lang.String = js.native
-  val italic: italic with java.lang.String = js.native
-  val line: line with java.lang.String = js.native
-  val link: link with java.lang.String = js.native
-  val linkProtected: linkProtected with java.lang.String = js.native
-  val `object`: `object` with java.lang.String = js.native
-  val outline: outline with java.lang.String = js.native
-  val paragraph: paragraph with java.lang.String = js.native
-  val paragraphFormat: paragraphFormat with java.lang.String = js.native
-  val protectedText: protectedText with java.lang.String = js.native
-  val revised: revised with java.lang.String = js.native
-  val screen: screen with java.lang.String = js.native
-  val section: section with java.lang.String = js.native
-  val sentence: sentence with java.lang.String = js.native
-  val shadow: shadow with java.lang.String = js.native
-  val smallCaps: smallCaps with java.lang.String = js.native
-  val story: story with java.lang.String = js.native
-  val strikethrough: strikethrough with java.lang.String = js.native
-  val subscript: subscript with java.lang.String = js.native
-  val superscript: superscript with java.lang.String = js.native
-  val underline: underline with java.lang.String = js.native
-  val window: window with java.lang.String = js.native
-  val word: word with java.lang.String = js.native
+  /* 21 */ val allCaps: allCaps with scala.Double = js.native
+  /* 14 */ val bold: bold with scala.Double = js.native
+  /* 0 */ val character: character with scala.Double = js.native
+  /* 9 */ val characterFormat: characterFormat with scala.Double = js.native
+  /* 13 */ val cluster: cluster with scala.Double = js.native
+  /* 26 */ val disabled: disabled with scala.Double = js.native
+  /* 30 */ val fontBound: fontBound with scala.Double = js.native
+  /* 12 */ val hardParagraph: hardParagraph with scala.Double = js.native
+  /* 22 */ val hidden: hidden with scala.Double = js.native
+  /* 25 */ val imprint: imprint with scala.Double = js.native
+  /* 15 */ val italic: italic with scala.Double = js.native
+  /* 4 */ val line: line with scala.Double = js.native
+  /* 19 */ val link: link with scala.Double = js.native
+  /* 31 */ val linkProtected: linkProtected with scala.Double = js.native
+  /* 11 */ val `object`: `object` with scala.Double = js.native
+  /* 23 */ val outline: outline with scala.Double = js.native
+  /* 3 */ val paragraph: paragraph with scala.Double = js.native
+  /* 10 */ val paragraphFormat: paragraphFormat with scala.Double = js.native
+  /* 18 */ val protectedText: protectedText with scala.Double = js.native
+  /* 27 */ val revised: revised with scala.Double = js.native
+  /* 6 */ val screen: screen with scala.Double = js.native
+  /* 7 */ val section: section with scala.Double = js.native
+  /* 2 */ val sentence: sentence with scala.Double = js.native
+  /* 24 */ val shadow: shadow with scala.Double = js.native
+  /* 20 */ val smallCaps: smallCaps with scala.Double = js.native
+  /* 5 */ val story: story with scala.Double = js.native
+  /* 17 */ val strikethrough: strikethrough with scala.Double = js.native
+  /* 28 */ val subscript: subscript with scala.Double = js.native
+  /* 29 */ val superscript: superscript with scala.Double = js.native
+  /* 16 */ val underline: underline with scala.Double = js.native
+  /* 8 */ val window: window with scala.Double = js.native
+  /* 1 */ val word: word with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.TextRangeUnit with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.TextRangeUnit with scala.Double] = js.native
 }
 

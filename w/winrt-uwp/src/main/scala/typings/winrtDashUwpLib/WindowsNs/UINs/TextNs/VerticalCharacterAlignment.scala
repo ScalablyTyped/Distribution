@@ -27,12 +27,12 @@ object VerticalCharacterAlignment extends js.Object {
   sealed trait top
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.VerticalCharacterAlignment
   
-  val baseline: baseline with java.lang.String = js.native
-  val bottom: bottom with java.lang.String = js.native
-  val top: top with java.lang.String = js.native
+  /* 1 */ val baseline: baseline with scala.Double = js.native
+  /* 2 */ val bottom: bottom with scala.Double = js.native
+  /* 0 */ val top: top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.TextNs.VerticalCharacterAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.TextNs.VerticalCharacterAlignment with scala.Double
   ] = js.native
 }
 

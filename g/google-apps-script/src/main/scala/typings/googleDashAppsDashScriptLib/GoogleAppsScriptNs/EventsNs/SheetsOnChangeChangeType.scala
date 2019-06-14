@@ -47,18 +47,18 @@ object SheetsOnChangeChangeType extends js.Object {
   sealed trait REMOVE_ROW
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.EventsNs.SheetsOnChangeChangeType
   
-  val EDIT: EDIT with java.lang.String = js.native
-  val FORMAT: FORMAT with java.lang.String = js.native
-  val INSERT_COLUMN: INSERT_COLUMN with java.lang.String = js.native
-  val INSERT_GRID: INSERT_GRID with java.lang.String = js.native
-  val INSERT_ROW: INSERT_ROW with java.lang.String = js.native
-  val OTHER: OTHER with java.lang.String = js.native
-  val REMOVE_COLUMN: REMOVE_COLUMN with java.lang.String = js.native
-  val REMOVE_GRID: REMOVE_GRID with java.lang.String = js.native
-  val REMOVE_ROW: REMOVE_ROW with java.lang.String = js.native
+  /* 0 */ val EDIT: EDIT with scala.Double = js.native
+  /* 7 */ val FORMAT: FORMAT with scala.Double = js.native
+  /* 2 */ val INSERT_COLUMN: INSERT_COLUMN with scala.Double = js.native
+  /* 5 */ val INSERT_GRID: INSERT_GRID with scala.Double = js.native
+  /* 1 */ val INSERT_ROW: INSERT_ROW with scala.Double = js.native
+  /* 8 */ val OTHER: OTHER with scala.Double = js.native
+  /* 4 */ val REMOVE_COLUMN: REMOVE_COLUMN with scala.Double = js.native
+  /* 6 */ val REMOVE_GRID: REMOVE_GRID with scala.Double = js.native
+  /* 3 */ val REMOVE_ROW: REMOVE_ROW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.EventsNs.SheetsOnChangeChangeType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.EventsNs.SheetsOnChangeChangeType with scala.Double
   ] = js.native
 }
 

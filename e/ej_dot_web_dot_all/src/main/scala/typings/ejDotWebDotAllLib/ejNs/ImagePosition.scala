@@ -31,11 +31,11 @@ object ImagePosition extends js.Object {
   sealed trait ImageTop
     extends ejDotWebDotAllLib.ejNs.ImagePosition
   
-  val ImageBottom: ImageBottom with java.lang.String = js.native
-  val ImageLeft: ImageLeft with java.lang.String = js.native
-  val ImageRight: ImageRight with java.lang.String = js.native
-  val ImageTop: ImageTop with java.lang.String = js.native
+  /* 3 */ val ImageBottom: ImageBottom with scala.Double = js.native
+  /* 1 */ val ImageLeft: ImageLeft with scala.Double = js.native
+  /* 0 */ val ImageRight: ImageRight with scala.Double = js.native
+  /* 2 */ val ImageTop: ImageTop with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ImagePosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ImagePosition with scala.Double] = js.native
 }
 

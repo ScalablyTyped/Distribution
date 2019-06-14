@@ -39,16 +39,14 @@ object Weekday extends js.Object {
   sealed trait WEDNESDAY
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday
   
-  val FRIDAY: FRIDAY with java.lang.String = js.native
-  val MONDAY: MONDAY with java.lang.String = js.native
-  val SATURDAY: SATURDAY with java.lang.String = js.native
-  val SUNDAY: SUNDAY with java.lang.String = js.native
-  val THURSDAY: THURSDAY with java.lang.String = js.native
-  val TUESDAY: TUESDAY with java.lang.String = js.native
-  val WEDNESDAY: WEDNESDAY with java.lang.String = js.native
+  /* 5 */ val FRIDAY: FRIDAY with scala.Double = js.native
+  /* 1 */ val MONDAY: MONDAY with scala.Double = js.native
+  /* 6 */ val SATURDAY: SATURDAY with scala.Double = js.native
+  /* 0 */ val SUNDAY: SUNDAY with scala.Double = js.native
+  /* 4 */ val THURSDAY: THURSDAY with scala.Double = js.native
+  /* 2 */ val TUESDAY: TUESDAY with scala.Double = js.native
+  /* 3 */ val WEDNESDAY: WEDNESDAY with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday with scala.Double] = js.native
 }
 

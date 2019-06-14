@@ -107,20 +107,20 @@ object ProjectProjectFields extends js.Object {
   sealed trait WorkUnits
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
-  val CurrencyDigits: CurrencyDigits with java.lang.String = js.native
-  val CurrencySymbol: CurrencySymbol with java.lang.String = js.native
-  val CurrencySymbolPosition: CurrencySymbolPosition with java.lang.String = js.native
-  val DurationUnits: DurationUnits with java.lang.String = js.native
-  val Finish: Finish with java.lang.String = js.native
-  val GUID: GUID with java.lang.String = js.native
-  val ProjectServerUrl: ProjectServerUrl with java.lang.String = js.native
-  val ReadOnly: ReadOnly with java.lang.String = js.native
-  val Start: Start with java.lang.String = js.native
-  val VERSION: VERSION with java.lang.String = js.native
-  val WSSList: WSSList with java.lang.String = js.native
-  val WSSUrl: WSSUrl with java.lang.String = js.native
-  val WorkUnits: WorkUnits with java.lang.String = js.native
+  /* 0 */ val CurrencyDigits: CurrencyDigits with scala.Double = js.native
+  /* 1 */ val CurrencySymbol: CurrencySymbol with scala.Double = js.native
+  /* 2 */ val CurrencySymbolPosition: CurrencySymbolPosition with scala.Double = js.native
+  /* 3 */ val DurationUnits: DurationUnits with scala.Double = js.native
+  /* 5 */ val Finish: Finish with scala.Double = js.native
+  /* 4 */ val GUID: GUID with scala.Double = js.native
+  /* 10 */ val ProjectServerUrl: ProjectServerUrl with scala.Double = js.native
+  /* 7 */ val ReadOnly: ReadOnly with scala.Double = js.native
+  /* 6 */ val Start: Start with scala.Double = js.native
+  /* 8 */ val VERSION: VERSION with scala.Double = js.native
+  /* 12 */ val WSSList: WSSList with scala.Double = js.native
+  /* 11 */ val WSSUrl: WSSUrl with scala.Double = js.native
+  /* 9 */ val WorkUnits: WorkUnits with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.ProjectProjectFields with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.ProjectProjectFields with scala.Double] = js.native
 }
 

@@ -27,11 +27,11 @@ object RichTextMode extends js.Object {
   sealed trait ThemeHtml
     extends sharepointLib.SPClientTemplatesNs.RichTextMode
   
-  val Compatible: Compatible with java.lang.String = js.native
-  val FullHtml: FullHtml with java.lang.String = js.native
-  val HtmlAsXml: HtmlAsXml with java.lang.String = js.native
-  val ThemeHtml: ThemeHtml with java.lang.String = js.native
+  /* 0 */ val Compatible: Compatible with scala.Double = js.native
+  /* 1 */ val FullHtml: FullHtml with scala.Double = js.native
+  /* 2 */ val HtmlAsXml: HtmlAsXml with scala.Double = js.native
+  /* 3 */ val ThemeHtml: ThemeHtml with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientTemplatesNs.RichTextMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientTemplatesNs.RichTextMode with scala.Double] = js.native
 }
 

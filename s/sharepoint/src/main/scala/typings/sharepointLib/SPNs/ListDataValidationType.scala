@@ -35,13 +35,13 @@ object ListDataValidationType extends js.Object {
   sealed trait userFormulaItem
     extends sharepointLib.SPNs.ListDataValidationType
   
-  val choiceField: choiceField with java.lang.String = js.native
-  val minMaxField: minMaxField with java.lang.String = js.native
-  val requiredField: requiredField with java.lang.String = js.native
-  val textField: textField with java.lang.String = js.native
-  val userFormulaField: userFormulaField with java.lang.String = js.native
-  val userFormulaItem: userFormulaItem with java.lang.String = js.native
+  /* 3 */ val choiceField: choiceField with scala.Double = js.native
+  /* 4 */ val minMaxField: minMaxField with scala.Double = js.native
+  /* 2 */ val requiredField: requiredField with scala.Double = js.native
+  /* 5 */ val textField: textField with scala.Double = js.native
+  /* 0 */ val userFormulaField: userFormulaField with scala.Double = js.native
+  /* 1 */ val userFormulaItem: userFormulaItem with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ListDataValidationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ListDataValidationType with scala.Double] = js.native
 }
 

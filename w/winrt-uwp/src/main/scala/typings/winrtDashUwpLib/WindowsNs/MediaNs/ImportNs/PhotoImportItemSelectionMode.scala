@@ -27,12 +27,12 @@ object PhotoImportItemSelectionMode extends js.Object {
   sealed trait selectNone
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportItemSelectionMode
   
-  val selectAll: selectAll with java.lang.String = js.native
-  val selectNew: selectNew with java.lang.String = js.native
-  val selectNone: selectNone with java.lang.String = js.native
+  /* 0 */ val selectAll: selectAll with scala.Double = js.native
+  /* 2 */ val selectNew: selectNew with scala.Double = js.native
+  /* 1 */ val selectNone: selectNone with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportItemSelectionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportItemSelectionMode with scala.Double
   ] = js.native
 }
 

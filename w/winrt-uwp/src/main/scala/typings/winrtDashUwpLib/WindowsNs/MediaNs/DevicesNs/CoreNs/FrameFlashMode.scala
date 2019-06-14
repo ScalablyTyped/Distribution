@@ -27,12 +27,12 @@ object FrameFlashMode extends js.Object {
   sealed trait global
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CoreNs.FrameFlashMode
   
-  val disable: disable with java.lang.String = js.native
-  val enable: enable with java.lang.String = js.native
-  val global: global with java.lang.String = js.native
+  /* 0 */ val disable: disable with scala.Double = js.native
+  /* 1 */ val enable: enable with scala.Double = js.native
+  /* 2 */ val global: global with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CoreNs.FrameFlashMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CoreNs.FrameFlashMode with scala.Double
   ] = js.native
 }
 

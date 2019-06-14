@@ -59,21 +59,19 @@ object Month extends js.Object {
   sealed trait SEPTEMBER
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month
   
-  val APRIL: APRIL with java.lang.String = js.native
-  val AUGUST: AUGUST with java.lang.String = js.native
-  val DECEMBER: DECEMBER with java.lang.String = js.native
-  val FEBRUARY: FEBRUARY with java.lang.String = js.native
-  val JANUARY: JANUARY with java.lang.String = js.native
-  val JULY: JULY with java.lang.String = js.native
-  val JUNE: JUNE with java.lang.String = js.native
-  val MARCH: MARCH with java.lang.String = js.native
-  val MAY: MAY with java.lang.String = js.native
-  val NOVEMBER: NOVEMBER with java.lang.String = js.native
-  val OCTOBER: OCTOBER with java.lang.String = js.native
-  val SEPTEMBER: SEPTEMBER with java.lang.String = js.native
+  /* 3 */ val APRIL: APRIL with scala.Double = js.native
+  /* 7 */ val AUGUST: AUGUST with scala.Double = js.native
+  /* 11 */ val DECEMBER: DECEMBER with scala.Double = js.native
+  /* 1 */ val FEBRUARY: FEBRUARY with scala.Double = js.native
+  /* 0 */ val JANUARY: JANUARY with scala.Double = js.native
+  /* 6 */ val JULY: JULY with scala.Double = js.native
+  /* 5 */ val JUNE: JUNE with scala.Double = js.native
+  /* 2 */ val MARCH: MARCH with scala.Double = js.native
+  /* 4 */ val MAY: MAY with scala.Double = js.native
+  /* 10 */ val NOVEMBER: NOVEMBER with scala.Double = js.native
+  /* 9 */ val OCTOBER: OCTOBER with scala.Double = js.native
+  /* 8 */ val SEPTEMBER: SEPTEMBER with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month with scala.Double] = js.native
 }
 

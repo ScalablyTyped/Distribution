@@ -186,22 +186,22 @@ object RouterNs extends js.Object {
     sealed trait TRASH
       extends inboxsdkLib.inboxsdkMod.RouterNs.NativeListRouteIDs
     
-    val ALL_MAIL: ALL_MAIL with java.lang.String = js.native
-    val ANY_LIST: ANY_LIST with java.lang.String = js.native
-    val DONE: DONE with java.lang.String = js.native
-    val DRAFTS: DRAFTS with java.lang.String = js.native
-    val IMPORTANT: IMPORTANT with java.lang.String = js.native
-    val INBOX: INBOX with java.lang.String = js.native
-    val LABEL: LABEL with java.lang.String = js.native
-    val REMINDERS: REMINDERS with java.lang.String = js.native
-    val SEARCH: SEARCH with java.lang.String = js.native
-    val SENT: SENT with java.lang.String = js.native
-    val SNOOZED: SNOOZED with java.lang.String = js.native
-    val SPAM: SPAM with java.lang.String = js.native
-    val STARRED: STARRED with java.lang.String = js.native
-    val TRASH: TRASH with java.lang.String = js.native
+    /* 1 */ val ALL_MAIL: ALL_MAIL with scala.Double = js.native
+    /* 13 */ val ANY_LIST: ANY_LIST with scala.Double = js.native
+    /* 6 */ val DONE: DONE with scala.Double = js.native
+    /* 4 */ val DRAFTS: DRAFTS with scala.Double = js.native
+    /* 11 */ val IMPORTANT: IMPORTANT with scala.Double = js.native
+    /* 0 */ val INBOX: INBOX with scala.Double = js.native
+    /* 8 */ val LABEL: LABEL with scala.Double = js.native
+    /* 7 */ val REMINDERS: REMINDERS with scala.Double = js.native
+    /* 12 */ val SEARCH: SEARCH with scala.Double = js.native
+    /* 2 */ val SENT: SENT with scala.Double = js.native
+    /* 5 */ val SNOOZED: SNOOZED with scala.Double = js.native
+    /* 10 */ val SPAM: SPAM with scala.Double = js.native
+    /* 3 */ val STARRED: STARRED with scala.Double = js.native
+    /* 9 */ val TRASH: TRASH with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[inboxsdkLib.inboxsdkMod.RouterNs.NativeListRouteIDs with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[inboxsdkLib.inboxsdkMod.RouterNs.NativeListRouteIDs with scala.Double] = js.native
   }
   
   @js.native
@@ -286,28 +286,28 @@ object RouterNs extends js.Object {
     sealed trait TRASH
       extends inboxsdkLib.inboxsdkMod.RouterNs.NativeRouteIDs
     
-    val ALL_MAIL: ALL_MAIL with java.lang.String = js.native
-    val ANY_LIST: ANY_LIST with java.lang.String = js.native
-    val CHAT: CHAT with java.lang.String = js.native
-    val CHATS: CHATS with java.lang.String = js.native
-    val CONTACT: CONTACT with java.lang.String = js.native
-    val CONTACTS: CONTACTS with java.lang.String = js.native
-    val DONE: DONE with java.lang.String = js.native
-    val DRAFTS: DRAFTS with java.lang.String = js.native
-    val IMPORTANT: IMPORTANT with java.lang.String = js.native
-    val INBOX: INBOX with java.lang.String = js.native
-    val LABEL: LABEL with java.lang.String = js.native
-    val REMINDERS: REMINDERS with java.lang.String = js.native
-    val SEARCH: SEARCH with java.lang.String = js.native
-    val SENT: SENT with java.lang.String = js.native
-    val SETTINGS: SETTINGS with java.lang.String = js.native
-    val SNOOZED: SNOOZED with java.lang.String = js.native
-    val SPAM: SPAM with java.lang.String = js.native
-    val STARRED: STARRED with java.lang.String = js.native
-    val THREAD: THREAD with java.lang.String = js.native
-    val TRASH: TRASH with java.lang.String = js.native
+    /* 1 */ val ALL_MAIL: ALL_MAIL with scala.Double = js.native
+    /* 19 */ val ANY_LIST: ANY_LIST with scala.Double = js.native
+    /* 15 */ val CHAT: CHAT with scala.Double = js.native
+    /* 14 */ val CHATS: CHATS with scala.Double = js.native
+    /* 17 */ val CONTACT: CONTACT with scala.Double = js.native
+    /* 16 */ val CONTACTS: CONTACTS with scala.Double = js.native
+    /* 6 */ val DONE: DONE with scala.Double = js.native
+    /* 4 */ val DRAFTS: DRAFTS with scala.Double = js.native
+    /* 11 */ val IMPORTANT: IMPORTANT with scala.Double = js.native
+    /* 0 */ val INBOX: INBOX with scala.Double = js.native
+    /* 8 */ val LABEL: LABEL with scala.Double = js.native
+    /* 7 */ val REMINDERS: REMINDERS with scala.Double = js.native
+    /* 12 */ val SEARCH: SEARCH with scala.Double = js.native
+    /* 2 */ val SENT: SENT with scala.Double = js.native
+    /* 18 */ val SETTINGS: SETTINGS with scala.Double = js.native
+    /* 5 */ val SNOOZED: SNOOZED with scala.Double = js.native
+    /* 10 */ val SPAM: SPAM with scala.Double = js.native
+    /* 3 */ val STARRED: STARRED with scala.Double = js.native
+    /* 13 */ val THREAD: THREAD with scala.Double = js.native
+    /* 9 */ val TRASH: TRASH with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[inboxsdkLib.inboxsdkMod.RouterNs.NativeRouteIDs with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[inboxsdkLib.inboxsdkMod.RouterNs.NativeRouteIDs with scala.Double] = js.native
   }
   
   type RouteParams = (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]) with (org.scalablytyped.runtime.NumberDictionary[java.lang.String | scala.Double])

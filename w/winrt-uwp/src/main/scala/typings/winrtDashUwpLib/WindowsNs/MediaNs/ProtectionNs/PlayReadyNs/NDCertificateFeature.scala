@@ -47,16 +47,16 @@ object NDCertificateFeature extends js.Object {
   sealed trait transmitter
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificateFeature
   
-  val antiRollBackClock: antiRollBackClock with java.lang.String = js.native
-  val crls: crls with java.lang.String = js.native
-  val playReady3Features: playReady3Features with java.lang.String = js.native
-  val receiver: receiver with java.lang.String = js.native
-  val secureClock: secureClock with java.lang.String = js.native
-  val sharedCertificate: sharedCertificate with java.lang.String = js.native
-  val transmitter: transmitter with java.lang.String = js.native
+  /* 4 */ val antiRollBackClock: antiRollBackClock with scala.Double = js.native
+  /* 5 */ val crls: crls with scala.Double = js.native
+  /* 6 */ val playReady3Features: playReady3Features with scala.Double = js.native
+  /* 1 */ val receiver: receiver with scala.Double = js.native
+  /* 3 */ val secureClock: secureClock with scala.Double = js.native
+  /* 2 */ val sharedCertificate: sharedCertificate with scala.Double = js.native
+  /* 0 */ val transmitter: transmitter with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificateFeature with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDCertificateFeature with scala.Double
   ] = js.native
 }
 

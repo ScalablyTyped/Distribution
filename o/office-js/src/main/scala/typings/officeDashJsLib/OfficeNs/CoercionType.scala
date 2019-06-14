@@ -91,15 +91,15 @@ object CoercionType extends js.Object {
   sealed trait XmlSvg
     extends officeDashJsLib.OfficeNs.CoercionType
   
-  val Html: Html with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val Matrix: Matrix with java.lang.String = js.native
-  val Ooxml: Ooxml with java.lang.String = js.native
-  val SlideRange: SlideRange with java.lang.String = js.native
-  val Table: Table with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
-  val XmlSvg: XmlSvg with java.lang.String = js.native
+  /* 3 */ val Html: Html with scala.Double = js.native
+  /* 6 */ val Image: Image with scala.Double = js.native
+  /* 1 */ val Matrix: Matrix with scala.Double = js.native
+  /* 4 */ val Ooxml: Ooxml with scala.Double = js.native
+  /* 5 */ val SlideRange: SlideRange with scala.Double = js.native
+  /* 2 */ val Table: Table with scala.Double = js.native
+  /* 0 */ val Text: Text with scala.Double = js.native
+  /* 7 */ val XmlSvg: XmlSvg with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.CoercionType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.CoercionType with scala.Double] = js.native
 }
 

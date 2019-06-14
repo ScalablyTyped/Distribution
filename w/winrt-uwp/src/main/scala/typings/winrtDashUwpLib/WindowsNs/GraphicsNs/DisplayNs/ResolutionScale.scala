@@ -97,26 +97,24 @@ object ResolutionScale extends js.Object {
   sealed trait scale500Percent
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.DisplayNs.ResolutionScale
   
-  val invalid: invalid with java.lang.String = js.native
-  val scale100Percent: scale100Percent with java.lang.String = js.native
-  val scale120Percent: scale120Percent with java.lang.String = js.native
-  val scale125Percent: scale125Percent with java.lang.String = js.native
-  val scale140Percent: scale140Percent with java.lang.String = js.native
-  val scale150Percent: scale150Percent with java.lang.String = js.native
-  val scale160Percent: scale160Percent with java.lang.String = js.native
-  val scale175Percent: scale175Percent with java.lang.String = js.native
-  val scale180Percent: scale180Percent with java.lang.String = js.native
-  val scale200Percent: scale200Percent with java.lang.String = js.native
-  val scale225Percent: scale225Percent with java.lang.String = js.native
-  val scale250Percent: scale250Percent with java.lang.String = js.native
-  val scale300Percent: scale300Percent with java.lang.String = js.native
-  val scale350Percent: scale350Percent with java.lang.String = js.native
-  val scale400Percent: scale400Percent with java.lang.String = js.native
-  val scale450Percent: scale450Percent with java.lang.String = js.native
-  val scale500Percent: scale500Percent with java.lang.String = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 1 */ val scale100Percent: scale100Percent with scala.Double = js.native
+  /* 2 */ val scale120Percent: scale120Percent with scala.Double = js.native
+  /* 3 */ val scale125Percent: scale125Percent with scala.Double = js.native
+  /* 4 */ val scale140Percent: scale140Percent with scala.Double = js.native
+  /* 5 */ val scale150Percent: scale150Percent with scala.Double = js.native
+  /* 6 */ val scale160Percent: scale160Percent with scala.Double = js.native
+  /* 7 */ val scale175Percent: scale175Percent with scala.Double = js.native
+  /* 8 */ val scale180Percent: scale180Percent with scala.Double = js.native
+  /* 9 */ val scale200Percent: scale200Percent with scala.Double = js.native
+  /* 10 */ val scale225Percent: scale225Percent with scala.Double = js.native
+  /* 11 */ val scale250Percent: scale250Percent with scala.Double = js.native
+  /* 12 */ val scale300Percent: scale300Percent with scala.Double = js.native
+  /* 13 */ val scale350Percent: scale350Percent with scala.Double = js.native
+  /* 14 */ val scale400Percent: scale400Percent with scala.Double = js.native
+  /* 15 */ val scale450Percent: scale450Percent with scala.Double = js.native
+  /* 16 */ val scale500Percent: scale500Percent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.DisplayNs.ResolutionScale with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GraphicsNs.DisplayNs.ResolutionScale with scala.Double] = js.native
 }
 

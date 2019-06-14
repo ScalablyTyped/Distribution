@@ -53,15 +53,15 @@ object MessageEventType extends js.Object {
   sealed trait Offline
     extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.MessageEventType
   
-  val Cancel: Cancel with java.lang.String = js.native
-  val Composing: Composing with java.lang.String = js.native
-  val Delivered: Delivered with java.lang.String = js.native
-  val Displayed: Displayed with java.lang.String = js.native
-  val Invalid: Invalid with java.lang.String = js.native
-  val Offline: Offline with java.lang.String = js.native
+  /* 0 */ val Cancel: Cancel with scala.Double = js.native
+  /* 1 */ val Composing: Composing with scala.Double = js.native
+  /* 2 */ val Delivered: Delivered with scala.Double = js.native
+  /* 3 */ val Displayed: Displayed with scala.Double = js.native
+  /* 4 */ val Invalid: Invalid with scala.Double = js.native
+  /* 5 */ val Offline: Offline with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    voximplantDashWebsdkLib.voximplantDashWebsdkMod.MessageEventType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    voximplantDashWebsdkLib.voximplantDashWebsdkMod.MessageEventType with scala.Double
   ] = js.native
 }
 

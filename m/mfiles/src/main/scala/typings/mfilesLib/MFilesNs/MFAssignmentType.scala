@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait MFAssignmentType extends js.Object
 
+object MFAssignmentType {
+  @scala.inline
+  def Approval: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Task: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

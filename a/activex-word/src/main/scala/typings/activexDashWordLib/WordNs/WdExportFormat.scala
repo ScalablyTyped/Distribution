@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdExportFormat extends js.Object
 
+object WdExportFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdExportFormatPDF: activexDashWordLib.activexDashWordLibNumbers.`17` = this.cast(17)
+  @scala.inline
+  def wdExportFormatXPS: activexDashWordLib.activexDashWordLibNumbers.`18` = this.cast(18)
+}
+

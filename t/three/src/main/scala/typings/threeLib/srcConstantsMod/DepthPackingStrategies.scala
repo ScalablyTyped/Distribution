@@ -12,6 +12,6 @@ sealed trait DepthPackingStrategies extends js.Object
 @js.native
 object DepthPackingStrategies extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.DepthPackingStrategies with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.DepthPackingStrategies with scala.Nothing] = js.native
 }
 

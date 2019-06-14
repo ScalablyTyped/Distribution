@@ -47,16 +47,16 @@ object ImageScannerFormat extends js.Object {
   sealed trait xps
     extends winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerFormat
   
-  val deviceIndependentBitmap: deviceIndependentBitmap with java.lang.String = js.native
-  val jpeg: jpeg with java.lang.String = js.native
-  val openXps: openXps with java.lang.String = js.native
-  val pdf: pdf with java.lang.String = js.native
-  val png: png with java.lang.String = js.native
-  val tiff: tiff with java.lang.String = js.native
-  val xps: xps with java.lang.String = js.native
+  /* 2 */ val deviceIndependentBitmap: deviceIndependentBitmap with scala.Double = js.native
+  /* 0 */ val jpeg: jpeg with scala.Double = js.native
+  /* 5 */ val openXps: openXps with scala.Double = js.native
+  /* 6 */ val pdf: pdf with scala.Double = js.native
+  /* 1 */ val png: png with scala.Double = js.native
+  /* 3 */ val tiff: tiff with scala.Double = js.native
+  /* 4 */ val xps: xps with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.ScannersNs.ImageScannerFormat with scala.Double
   ] = js.native
 }
 

@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _POINTER_GRAVITY extends js.Object
 
+object _POINTER_GRAVITY {
+  @scala.inline
+  def POINTER_GRAVITY_Left: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def POINTER_GRAVITY_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+  @scala.inline
+  def POINTER_GRAVITY_Right: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

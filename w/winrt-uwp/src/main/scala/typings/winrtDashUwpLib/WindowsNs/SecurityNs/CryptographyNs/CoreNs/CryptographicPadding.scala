@@ -32,13 +32,13 @@ object CryptographicPadding extends js.Object {
   sealed trait rsaPss
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPadding
   
-  val none: none with java.lang.String = js.native
-  val rsaOaep: rsaOaep with java.lang.String = js.native
-  val rsaPkcs1V15: rsaPkcs1V15 with java.lang.String = js.native
-  val rsaPss: rsaPss with java.lang.String = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val rsaOaep: rsaOaep with scala.Double = js.native
+  /* 2 */ val rsaPkcs1V15: rsaPkcs1V15 with scala.Double = js.native
+  /* 3 */ val rsaPss: rsaPss with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPadding with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.CryptographicPadding with scala.Double
   ] = js.native
 }
 

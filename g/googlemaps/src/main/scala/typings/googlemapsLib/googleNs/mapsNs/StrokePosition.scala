@@ -32,10 +32,10 @@ object StrokePosition extends js.Object {
   sealed trait OUTSIDE
     extends googlemapsLib.googleNs.mapsNs.StrokePosition
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val INSIDE: INSIDE with java.lang.String = js.native
-  val OUTSIDE: OUTSIDE with java.lang.String = js.native
+  /* 0 */ val CENTER: CENTER with scala.Double = js.native
+  /* 1 */ val INSIDE: INSIDE with scala.Double = js.native
+  /* 2 */ val OUTSIDE: OUTSIDE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.StrokePosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.StrokePosition with scala.Double] = js.native
 }
 

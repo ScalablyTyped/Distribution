@@ -22,11 +22,9 @@ object DeviceSharingMode extends js.Object {
   sealed trait shared
     extends winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.DeviceSharingMode
   
-  val exclusive: exclusive with java.lang.String = js.native
-  val shared: shared with java.lang.String = js.native
+  /* 1 */ val exclusive: exclusive with scala.Double = js.native
+  /* 0 */ val shared: shared with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.DeviceSharingMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.CustomNs.DeviceSharingMode with scala.Double] = js.native
 }
 

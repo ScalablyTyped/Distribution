@@ -22,11 +22,11 @@ object ColorManagementMode extends js.Object {
   sealed trait doNotColorManage
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.ColorManagementMode
   
-  val colorManageToSRgb: colorManageToSRgb with java.lang.String = js.native
-  val doNotColorManage: doNotColorManage with java.lang.String = js.native
+  /* 1 */ val colorManageToSRgb: colorManageToSRgb with scala.Double = js.native
+  /* 0 */ val doNotColorManage: doNotColorManage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.ColorManagementMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.ColorManagementMode with scala.Double
   ] = js.native
 }
 

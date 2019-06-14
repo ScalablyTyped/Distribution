@@ -101,27 +101,25 @@ object StandardIntents extends js.Object {
   sealed trait TRANSACTION_REQUIREMENTS_CHECK
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.StandardIntents
   
-  val CANCEL: CANCEL with java.lang.String = js.native
-  val CONFIGURE_UPDATES: CONFIGURE_UPDATES with java.lang.String = js.native
-  val CONFIRMATION: CONFIRMATION with java.lang.String = js.native
-  val DATETIME: DATETIME with java.lang.String = js.native
-  val DELIVERY_ADDRESS: DELIVERY_ADDRESS with java.lang.String = js.native
-  val LINK: LINK with java.lang.String = js.native
-  val MAIN: MAIN with java.lang.String = js.native
-  val MEDIA_STATUS: MEDIA_STATUS with java.lang.String = js.native
-  val NEW_SURFACE: NEW_SURFACE with java.lang.String = js.native
-  val NO_INPUT: NO_INPUT with java.lang.String = js.native
-  val OPTION: OPTION with java.lang.String = js.native
-  val PERMISSION: PERMISSION with java.lang.String = js.native
-  val PLACE: PLACE with java.lang.String = js.native
-  val REGISTER_UPDATE: REGISTER_UPDATE with java.lang.String = js.native
-  val SIGN_IN: SIGN_IN with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
-  val TRANSACTION_DECISION: TRANSACTION_DECISION with java.lang.String = js.native
-  val TRANSACTION_REQUIREMENTS_CHECK: TRANSACTION_REQUIREMENTS_CHECK with java.lang.String = js.native
+  /* 12 */ val CANCEL: CANCEL with scala.Double = js.native
+  /* 15 */ val CONFIGURE_UPDATES: CONFIGURE_UPDATES with scala.Double = js.native
+  /* 8 */ val CONFIRMATION: CONFIRMATION with scala.Double = js.native
+  /* 9 */ val DATETIME: DATETIME with scala.Double = js.native
+  /* 5 */ val DELIVERY_ADDRESS: DELIVERY_ADDRESS with scala.Double = js.native
+  /* 16 */ val LINK: LINK with scala.Double = js.native
+  /* 0 */ val MAIN: MAIN with scala.Double = js.native
+  /* 17 */ val MEDIA_STATUS: MEDIA_STATUS with scala.Double = js.native
+  /* 13 */ val NEW_SURFACE: NEW_SURFACE with scala.Double = js.native
+  /* 11 */ val NO_INPUT: NO_INPUT with scala.Double = js.native
+  /* 3 */ val OPTION: OPTION with scala.Double = js.native
+  /* 2 */ val PERMISSION: PERMISSION with scala.Double = js.native
+  /* 7 */ val PLACE: PLACE with scala.Double = js.native
+  /* 14 */ val REGISTER_UPDATE: REGISTER_UPDATE with scala.Double = js.native
+  /* 10 */ val SIGN_IN: SIGN_IN with scala.Double = js.native
+  /* 1 */ val TEXT: TEXT with scala.Double = js.native
+  /* 6 */ val TRANSACTION_DECISION: TRANSACTION_DECISION with scala.Double = js.native
+  /* 4 */ val TRANSACTION_REQUIREMENTS_CHECK: TRANSACTION_REQUIREMENTS_CHECK with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    actionsDashOnDashGoogleLib.assistantDashAppMod.StandardIntents with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[actionsDashOnDashGoogleLib.assistantDashAppMod.StandardIntents with scala.Double] = js.native
 }
 

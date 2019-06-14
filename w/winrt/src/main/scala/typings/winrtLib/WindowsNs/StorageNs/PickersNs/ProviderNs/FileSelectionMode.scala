@@ -19,11 +19,11 @@ object FileSelectionMode extends js.Object {
   sealed trait single
     extends winrtLib.WindowsNs.StorageNs.PickersNs.ProviderNs.FileSelectionMode
   
-  val multiple: multiple with java.lang.String = js.native
-  val single: single with java.lang.String = js.native
+  /* 1 */ val multiple: multiple with scala.Double = js.native
+  /* 0 */ val single: single with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.PickersNs.ProviderNs.FileSelectionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.StorageNs.PickersNs.ProviderNs.FileSelectionMode with scala.Double
   ] = js.native
 }
 

@@ -12,6 +12,6 @@ sealed trait Combine extends js.Object
 @js.native
 object Combine extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.Combine with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.Combine with scala.Nothing] = js.native
 }
 

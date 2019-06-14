@@ -147,41 +147,41 @@ object FieldType extends js.Object {
   sealed trait workflowStatus
     extends sharepointLib.SPNs.FieldType
   
-  val URL: URL with java.lang.String = js.native
-  val allDayEvent: allDayEvent with java.lang.String = js.native
-  val attachments: attachments with java.lang.String = js.native
-  val boolean: boolean with java.lang.String = js.native
-  val calculated: calculated with java.lang.String = js.native
-  val choice: choice with java.lang.String = js.native
-  val computed: computed with java.lang.String = js.native
-  val contentTypeId: contentTypeId with java.lang.String = js.native
-  val counter: counter with java.lang.String = js.native
-  val crossProjectLink: crossProjectLink with java.lang.String = js.native
-  val currency: currency with java.lang.String = js.native
-  val dateTime: dateTime with java.lang.String = js.native
-  val error: error with java.lang.String = js.native
-  val file: file with java.lang.String = js.native
-  val geolocation: geolocation with java.lang.String = js.native
-  val gridChoice: gridChoice with java.lang.String = js.native
-  val guid: guid with java.lang.String = js.native
-  val integer: integer with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val lookup: lookup with java.lang.String = js.native
-  val maxItems: maxItems with java.lang.String = js.native
-  val modStat: modStat with java.lang.String = js.native
-  val multiChoice: multiChoice with java.lang.String = js.native
-  val note: note with java.lang.String = js.native
-  val number: number with java.lang.String = js.native
-  val outcomeChoice: outcomeChoice with java.lang.String = js.native
-  val pageSeparator: pageSeparator with java.lang.String = js.native
-  val recurrence: recurrence with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
-  val threadIndex: threadIndex with java.lang.String = js.native
-  val threading: threading with java.lang.String = js.native
-  val user: user with java.lang.String = js.native
-  val workflowEventType: workflowEventType with java.lang.String = js.native
-  val workflowStatus: workflowStatus with java.lang.String = js.native
+  /* 11 */ val URL: URL with scala.Double = js.native
+  /* 29 */ val allDayEvent: allDayEvent with scala.Double = js.native
+  /* 19 */ val attachments: attachments with scala.Double = js.native
+  /* 8 */ val boolean: boolean with scala.Double = js.native
+  /* 17 */ val calculated: calculated with scala.Double = js.native
+  /* 6 */ val choice: choice with scala.Double = js.native
+  /* 12 */ val computed: computed with scala.Double = js.native
+  /* 25 */ val contentTypeId: contentTypeId with scala.Double = js.native
+  /* 5 */ val counter: counter with scala.Double = js.native
+  /* 22 */ val crossProjectLink: crossProjectLink with scala.Double = js.native
+  /* 10 */ val currency: currency with scala.Double = js.native
+  /* 4 */ val dateTime: dateTime with scala.Double = js.native
+  /* 24 */ val error: error with scala.Double = js.native
+  /* 18 */ val file: file with scala.Double = js.native
+  /* 31 */ val geolocation: geolocation with scala.Double = js.native
+  /* 16 */ val gridChoice: gridChoice with scala.Double = js.native
+  /* 14 */ val guid: guid with scala.Double = js.native
+  /* 1 */ val integer: integer with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 7 */ val lookup: lookup with scala.Double = js.native
+  /* 33 */ val maxItems: maxItems with scala.Double = js.native
+  /* 23 */ val modStat: modStat with scala.Double = js.native
+  /* 15 */ val multiChoice: multiChoice with scala.Double = js.native
+  /* 3 */ val note: note with scala.Double = js.native
+  /* 9 */ val number: number with scala.Double = js.native
+  /* 32 */ val outcomeChoice: outcomeChoice with scala.Double = js.native
+  /* 26 */ val pageSeparator: pageSeparator with scala.Double = js.native
+  /* 21 */ val recurrence: recurrence with scala.Double = js.native
+  /* 2 */ val text: text with scala.Double = js.native
+  /* 27 */ val threadIndex: threadIndex with scala.Double = js.native
+  /* 13 */ val threading: threading with scala.Double = js.native
+  /* 20 */ val user: user with scala.Double = js.native
+  /* 30 */ val workflowEventType: workflowEventType with scala.Double = js.native
+  /* 28 */ val workflowStatus: workflowStatus with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.FieldType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.FieldType with scala.Double] = js.native
 }
 

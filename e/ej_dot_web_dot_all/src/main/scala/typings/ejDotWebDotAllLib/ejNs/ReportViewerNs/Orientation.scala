@@ -21,9 +21,9 @@ object Orientation extends js.Object {
   sealed trait Portrait
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.Orientation
   
-  val Landscape: Landscape with java.lang.String = js.native
-  val Portrait: Portrait with java.lang.String = js.native
+  /* 0 */ val Landscape: Landscape with scala.Double = js.native
+  /* 1 */ val Portrait: Portrait with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.Orientation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.Orientation with scala.Double] = js.native
 }
 

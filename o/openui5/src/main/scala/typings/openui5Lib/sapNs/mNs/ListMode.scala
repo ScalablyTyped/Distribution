@@ -38,13 +38,13 @@ object ListMode extends js.Object {
   sealed trait SingleSelectMaster
     extends openui5Lib.sapNs.mNs.ListMode
   
-  val Delete: Delete with java.lang.String = js.native
-  val MultiSelect: MultiSelect with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val SingleSelect: SingleSelect with java.lang.String = js.native
-  val SingleSelectLeft: SingleSelectLeft with java.lang.String = js.native
-  val SingleSelectMaster: SingleSelectMaster with java.lang.String = js.native
+  /* 0 */ val Delete: Delete with scala.Double = js.native
+  /* 1 */ val MultiSelect: MultiSelect with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 3 */ val SingleSelect: SingleSelect with scala.Double = js.native
+  /* 4 */ val SingleSelectLeft: SingleSelectLeft with scala.Double = js.native
+  /* 5 */ val SingleSelectMaster: SingleSelectMaster with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ListMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ListMode with scala.Double] = js.native
 }
 

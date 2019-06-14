@@ -31,13 +31,13 @@ object RangePadding extends js.Object {
   sealed trait Round
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.RangePadding
   
-  val Additional: Additional with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
-  val Round: Round with java.lang.String = js.native
+  /* 0 */ val Additional: Additional with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
+  /* 1 */ val Normal: Normal with scala.Double = js.native
+  /* 3 */ val Round: Round with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.RangePadding with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.RangePadding with scala.Double
   ] = js.native
 }
 

@@ -30,11 +30,11 @@ object PageBackgroundDesign extends js.Object {
   sealed trait Transparent
     extends openui5Lib.sapNs.mNs.PageBackgroundDesign
   
-  val List: List with java.lang.String = js.native
-  val Solid: Solid with java.lang.String = js.native
-  val Standard: Standard with java.lang.String = js.native
-  val Transparent: Transparent with java.lang.String = js.native
+  /* 0 */ val List: List with scala.Double = js.native
+  /* 1 */ val Solid: Solid with scala.Double = js.native
+  /* 2 */ val Standard: Standard with scala.Double = js.native
+  /* 3 */ val Transparent: Transparent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.PageBackgroundDesign with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.PageBackgroundDesign with scala.Double] = js.native
 }
 

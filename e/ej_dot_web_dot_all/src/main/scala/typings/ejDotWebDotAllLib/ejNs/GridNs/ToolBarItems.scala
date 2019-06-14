@@ -56,16 +56,16 @@ object ToolBarItems extends js.Object {
   sealed trait WordExport
     extends ejDotWebDotAllLib.ejNs.GridNs.ToolBarItems
   
-  val Add: Add with java.lang.String = js.native
-  val Cancel: Cancel with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Edit: Edit with java.lang.String = js.native
-  val PdfExport: PdfExport with java.lang.String = js.native
-  val PrintGrid: PrintGrid with java.lang.String = js.native
-  val Search: Search with java.lang.String = js.native
-  val Update: Update with java.lang.String = js.native
-  val WordExport: WordExport with java.lang.String = js.native
+  /* 0 */ val Add: Add with scala.Double = js.native
+  /* 4 */ val Cancel: Cancel with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 1 */ val Edit: Edit with scala.Double = js.native
+  /* 6 */ val PdfExport: PdfExport with scala.Double = js.native
+  /* 7 */ val PrintGrid: PrintGrid with scala.Double = js.native
+  /* 5 */ val Search: Search with scala.Double = js.native
+  /* 3 */ val Update: Update with scala.Double = js.native
+  /* 8 */ val WordExport: WordExport with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.ToolBarItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.ToolBarItems with scala.Double] = js.native
 }
 

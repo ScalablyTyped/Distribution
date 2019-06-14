@@ -35,13 +35,13 @@ object KiiSite extends js.Object {
   sealed trait US
     extends kiiDashCloudDashSdkLib.KiiCloudNs.KiiSite
   
-  val CN: CN with java.lang.String = js.native
-  val CN3: CN3 with java.lang.String = js.native
-  val EU: EU with java.lang.String = js.native
-  val JP: JP with java.lang.String = js.native
-  val SG: SG with java.lang.String = js.native
-  val US: US with java.lang.String = js.native
+  /* 2 */ val CN: CN with scala.Double = js.native
+  /* 4 */ val CN3: CN3 with scala.Double = js.native
+  /* 5 */ val EU: EU with scala.Double = js.native
+  /* 1 */ val JP: JP with scala.Double = js.native
+  /* 3 */ val SG: SG with scala.Double = js.native
+  /* 0 */ val US: US with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[kiiDashCloudDashSdkLib.KiiCloudNs.KiiSite with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[kiiDashCloudDashSdkLib.KiiCloudNs.KiiSite with scala.Double] = js.native
 }
 

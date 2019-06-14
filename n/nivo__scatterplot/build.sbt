@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "nivo__scatterplot"
-version := "0.58.0-121e00"
+version := "0.58.0-7696f8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "nivo__axes" % "0.58.0-46ce03",
+  "org.scalablytyped" %%% "nivo__axes" % "0.58.0-5d900c",
   "org.scalablytyped" %%% "nivo__colors" % "0.58.0-197c08",
-  "org.scalablytyped" %%% "nivo__core" % "0.58.0-4b71fa",
-  "org.scalablytyped" %%% "nivo__legends" % "0.58.0-183c01",
+  "org.scalablytyped" %%% "nivo__core" % "0.58.0-8429d9",
+  "org.scalablytyped" %%% "nivo__legends" % "0.58.0-5c23b1",
   "org.scalablytyped" %%% "nivo__scales" % "0.58.0-f42710",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

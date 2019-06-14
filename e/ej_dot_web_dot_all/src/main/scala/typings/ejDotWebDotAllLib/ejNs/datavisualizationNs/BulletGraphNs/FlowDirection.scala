@@ -21,11 +21,11 @@ object FlowDirection extends js.Object {
   sealed trait Forward
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FlowDirection
   
-  val Backward: Backward with java.lang.String = js.native
-  val Forward: Forward with java.lang.String = js.native
+  /* 1 */ val Backward: Backward with scala.Double = js.native
+  /* 0 */ val Forward: Forward with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FlowDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FlowDirection with scala.Double
   ] = js.native
 }
 

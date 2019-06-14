@@ -22,11 +22,11 @@ object RegionOfInterestType extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.RegionOfInterestType
   
-  val face: face with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val face: face with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.RegionOfInterestType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.RegionOfInterestType with scala.Double
   ] = js.native
 }
 

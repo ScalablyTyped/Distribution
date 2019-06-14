@@ -32,13 +32,13 @@ object MediaProcessingTriggerResult extends js.Object {
   sealed trait unknownError
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.MediaProcessingTriggerResult
   
-  val allowed: allowed with java.lang.String = js.native
-  val currentlyRunning: currentlyRunning with java.lang.String = js.native
-  val disabledByPolicy: disabledByPolicy with java.lang.String = js.native
-  val unknownError: unknownError with java.lang.String = js.native
+  /* 0 */ val allowed: allowed with scala.Double = js.native
+  /* 1 */ val currentlyRunning: currentlyRunning with scala.Double = js.native
+  /* 2 */ val disabledByPolicy: disabledByPolicy with scala.Double = js.native
+  /* 3 */ val unknownError: unknownError with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.MediaProcessingTriggerResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.MediaProcessingTriggerResult with scala.Double
   ] = js.native
 }
 

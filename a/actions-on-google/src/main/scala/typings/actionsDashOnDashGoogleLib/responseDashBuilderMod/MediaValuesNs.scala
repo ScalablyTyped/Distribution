@@ -36,11 +36,11 @@ object MediaValuesNs extends js.Object {
     sealed trait LARGE
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType
     
-    val ICON: ICON with java.lang.String = js.native
-    val LARGE: LARGE with java.lang.String = js.native
+    /* 0 */ val ICON: ICON with scala.Double = js.native
+    /* 1 */ val LARGE: LARGE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType with scala.Double
       ] = js.native
   }
   
@@ -63,11 +63,11 @@ object MediaValuesNs extends js.Object {
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status
     
-    val FINISHED: FINISHED with java.lang.String = js.native
-    val UNSPECIFIED: UNSPECIFIED with java.lang.String = js.native
+    /* 1 */ val FINISHED: FINISHED with scala.Double = js.native
+    /* 0 */ val UNSPECIFIED: UNSPECIFIED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status with scala.Double
       ] = js.native
   }
   
@@ -90,11 +90,11 @@ object MediaValuesNs extends js.Object {
     sealed trait MEDIA_TYPE_UNSPECIFIED
       extends actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type
     
-    val AUDIO: AUDIO with java.lang.String = js.native
-    val MEDIA_TYPE_UNSPECIFIED: MEDIA_TYPE_UNSPECIFIED with java.lang.String = js.native
+    /* 1 */ val AUDIO: AUDIO with scala.Double = js.native
+    /* 0 */ val MEDIA_TYPE_UNSPECIFIED: MEDIA_TYPE_UNSPECIFIED with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type with scala.Double
       ] = js.native
   }
   

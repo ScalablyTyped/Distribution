@@ -30,6 +30,11 @@ class Text protected () extends Object {
   var __lineHeights: js.Array[scala.Double] = js.native
   /**
     * @private
+    * @type boolean
+    */
+  var __skipDimension: scala.Boolean = js.native
+  /**
+    * @private
     * @type Number
     */
   var _fontSizeFraction: scala.Double = js.native
@@ -59,6 +64,12 @@ class Text protected () extends Object {
     * @type Array<string>
     */
   var _textLines: js.Array[js.Array[java.lang.String]] = js.native
+  /**
+    * List of unwrapped grapheme lines in text object
+    * @private
+    * @type Array<string>
+    */
+  var _unwrappedTextLines: js.Array[js.Array[java.lang.String]] = js.native
   /**
   	 * additional space between characters
   	 * expressed in thousands of em unit
@@ -162,6 +173,18 @@ class Text protected () extends Object {
     styleDeclaration: js.Any
   ): scala.Unit = js.native
   /**
+    * @private
+    */
+  def _clearCache(): scala.Unit = js.native
+  /**
+    * Generate an object that translates the style object so that it is
+    * broken up by visual lines (new lines and automatic wrapping).
+    * The original text styles object is broken up by actual lines (new lines only),
+    * which is only sufficient for Text / IText
+    * @private
+    */
+  def _generateStyleMap(textInfo: fabricLib.Anon_GraphemeLines): js.Array[fabricLib.Anon_Line] = js.native
+  /**
   	 * @private
   	 * @param {Number} lineIndex index text line
   	 * @return {Number} Line left offset
@@ -175,6 +198,17 @@ class Text protected () extends Object {
     */
   def _getStyleDeclaration(lineIndex: scala.Double, charIndex: scala.Double): js.Any = js.native
   /**
+    * @private
+    * Gets the width of character spacing
+    */
+  def _getWidthOfCharSpacing(): scala.Double = js.native
+  /**
+    * @private
+    * @param {Object} prevStyle
+    * @param {Object} thisStyle
+    */
+  def _hasStyleChanged(prevStyle: js.Any, thisStyle: js.Any): scala.Boolean = js.native
+  /**
     * measure and return the width of a single character.
     * possibly overridden to accommodate different measure logic or
     * to hook some external lib for character measurement
@@ -186,6 +220,26 @@ class Text protected () extends Object {
     * @return {Object} object contained char width anf kerned width
     */
   def _measureChar(_char: java.lang.String, charStyle: js.Any, previousChar: java.lang.String, prevCharStyle: js.Any): fabricLib.Anon_KernedWidth = js.native
+  /**
+    * @private
+    * @param {String} method
+    * @param {CanvasRenderingContext2D} ctx Context to render on
+    * @param {Number} lineIndex
+    * @param {Number} charIndex
+    * @param {String} _char
+    * @param {Number} left Left coordinate
+    * @param {Number} top Top coordinate
+    * @param {Number} lineHeight Height of the line
+    */
+  def _renderChar(
+    method: java.lang.String,
+    ctx: stdLib.CanvasRenderingContext2D,
+    lineIndex: scala.Double,
+    charIndex: scala.Double,
+    _char: java.lang.String,
+    left: scala.Double,
+    top: scala.Double
+  ): scala.Unit = js.native
   /**
     * @private
     * @param {String} method
@@ -204,6 +258,12 @@ class Text protected () extends Object {
     top: scala.Double,
     lineIndex: scala.Double
   ): scala.Unit = js.native
+  /**
+    * Divides text into lines of text and lines of graphemes.
+    * @private
+    * @returns {Object} Lines and text in the text
+    */
+  def _splitText(): fabricLib.Anon_GraphemeLines = js.native
   /**
   	 * Calculate text box height
   	 */

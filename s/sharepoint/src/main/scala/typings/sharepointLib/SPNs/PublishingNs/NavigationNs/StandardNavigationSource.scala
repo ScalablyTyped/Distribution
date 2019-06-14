@@ -27,13 +27,13 @@ object StandardNavigationSource extends js.Object {
   sealed trait unknown
     extends sharepointLib.SPNs.PublishingNs.NavigationNs.StandardNavigationSource
   
-  val inheritFromParentWeb: inheritFromParentWeb with java.lang.String = js.native
-  val portalProvider: portalProvider with java.lang.String = js.native
-  val taxonomyProvider: taxonomyProvider with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 3 */ val inheritFromParentWeb: inheritFromParentWeb with scala.Double = js.native
+  /* 1 */ val portalProvider: portalProvider with scala.Double = js.native
+  /* 2 */ val taxonomyProvider: taxonomyProvider with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.SPNs.PublishingNs.NavigationNs.StandardNavigationSource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.SPNs.PublishingNs.NavigationNs.StandardNavigationSource with scala.Double
   ] = js.native
 }
 

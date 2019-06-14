@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait AcFindField extends js.Object
 
+object AcFindField {
+  @scala.inline
+  def acAll: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def acCurrent: activexDashAccessLib.activexDashAccessLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

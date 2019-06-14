@@ -27,12 +27,10 @@ object UnicodeEncoding extends js.Object {
   sealed trait utf8
     extends winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.UnicodeEncoding
   
-  val utf16BE: utf16BE with java.lang.String = js.native
-  val utf16LE: utf16LE with java.lang.String = js.native
-  val utf8: utf8 with java.lang.String = js.native
+  /* 2 */ val utf16BE: utf16BE with scala.Double = js.native
+  /* 1 */ val utf16LE: utf16LE with scala.Double = js.native
+  /* 0 */ val utf8: utf8 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.UnicodeEncoding with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.UnicodeEncoding with scala.Double] = js.native
 }
 

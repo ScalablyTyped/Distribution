@@ -31,14 +31,14 @@ object MatchType extends js.Object {
   sealed trait SHORT_NSN_MATCH
     extends googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.MatchType
   
-  val EXACT_MATCH: EXACT_MATCH with java.lang.String = js.native
-  val NOT_A_NUMBER: NOT_A_NUMBER with java.lang.String = js.native
-  val NO_MATCH: NO_MATCH with java.lang.String = js.native
-  val NSN_MATCH: NSN_MATCH with java.lang.String = js.native
-  val SHORT_NSN_MATCH: SHORT_NSN_MATCH with java.lang.String = js.native
+  /* 0 */ val EXACT_MATCH: EXACT_MATCH with scala.Double = js.native
+  /* 2 */ val NOT_A_NUMBER: NOT_A_NUMBER with scala.Double = js.native
+  /* 1 */ val NO_MATCH: NO_MATCH with scala.Double = js.native
+  /* 3 */ val NSN_MATCH: NSN_MATCH with scala.Double = js.native
+  /* 4 */ val SHORT_NSN_MATCH: SHORT_NSN_MATCH with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.MatchType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.MatchType with scala.Double
   ] = js.native
 }
 

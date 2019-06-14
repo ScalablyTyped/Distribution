@@ -1282,205 +1282,205 @@ object UINs extends js.Object {
     **/
   @js.native
   object AppBarIcon extends js.Object {
-    val accept: winjsLib.WinJSNs.UINs.AppBarIcon.accept with java.lang.String = js.native
-    val accounts: winjsLib.WinJSNs.UINs.AppBarIcon.accounts with java.lang.String = js.native
-    val add: winjsLib.WinJSNs.UINs.AppBarIcon.add with java.lang.String = js.native
-    val addfriend: winjsLib.WinJSNs.UINs.AppBarIcon.addfriend with java.lang.String = js.native
-    val admin: winjsLib.WinJSNs.UINs.AppBarIcon.admin with java.lang.String = js.native
-    val aligncenter: winjsLib.WinJSNs.UINs.AppBarIcon.aligncenter with java.lang.String = js.native
-    val alignleft: winjsLib.WinJSNs.UINs.AppBarIcon.alignleft with java.lang.String = js.native
-    val alignright: winjsLib.WinJSNs.UINs.AppBarIcon.alignright with java.lang.String = js.native
-    val allapps: winjsLib.WinJSNs.UINs.AppBarIcon.allapps with java.lang.String = js.native
-    val attach: winjsLib.WinJSNs.UINs.AppBarIcon.attach with java.lang.String = js.native
-    val attachcamera: winjsLib.WinJSNs.UINs.AppBarIcon.attachcamera with java.lang.String = js.native
-    val audio: winjsLib.WinJSNs.UINs.AppBarIcon.audio with java.lang.String = js.native
-    val back: winjsLib.WinJSNs.UINs.AppBarIcon.back with java.lang.String = js.native
-    val backtowindow: winjsLib.WinJSNs.UINs.AppBarIcon.backtowindow with java.lang.String = js.native
-    val blockcontact: winjsLib.WinJSNs.UINs.AppBarIcon.blockcontact with java.lang.String = js.native
-    val bold: winjsLib.WinJSNs.UINs.AppBarIcon.bold with java.lang.String = js.native
-    val bookmarks: winjsLib.WinJSNs.UINs.AppBarIcon.bookmarks with java.lang.String = js.native
-    val browsephotos: winjsLib.WinJSNs.UINs.AppBarIcon.browsephotos with java.lang.String = js.native
-    val bullets: winjsLib.WinJSNs.UINs.AppBarIcon.bullets with java.lang.String = js.native
-    val calculator: winjsLib.WinJSNs.UINs.AppBarIcon.calculator with java.lang.String = js.native
-    val calendar: winjsLib.WinJSNs.UINs.AppBarIcon.calendar with java.lang.String = js.native
-    val calendarday: winjsLib.WinJSNs.UINs.AppBarIcon.calendarday with java.lang.String = js.native
-    val calendarreply: winjsLib.WinJSNs.UINs.AppBarIcon.calendarreply with java.lang.String = js.native
-    val calendarweek: winjsLib.WinJSNs.UINs.AppBarIcon.calendarweek with java.lang.String = js.native
-    val camera: winjsLib.WinJSNs.UINs.AppBarIcon.camera with java.lang.String = js.native
-    val cancel: winjsLib.WinJSNs.UINs.AppBarIcon.cancel with java.lang.String = js.native
-    val caption: winjsLib.WinJSNs.UINs.AppBarIcon.caption with java.lang.String = js.native
-    val cc: winjsLib.WinJSNs.UINs.AppBarIcon.cc with java.lang.String = js.native
-    val cellphone: winjsLib.WinJSNs.UINs.AppBarIcon.cellphone with java.lang.String = js.native
-    val characters: winjsLib.WinJSNs.UINs.AppBarIcon.characters with java.lang.String = js.native
-    val clear: winjsLib.WinJSNs.UINs.AppBarIcon.clear with java.lang.String = js.native
-    val clearselection: winjsLib.WinJSNs.UINs.AppBarIcon.clearselection with java.lang.String = js.native
-    val clock: winjsLib.WinJSNs.UINs.AppBarIcon.clock with java.lang.String = js.native
-    val closepane: winjsLib.WinJSNs.UINs.AppBarIcon.closepane with java.lang.String = js.native
-    val comment: winjsLib.WinJSNs.UINs.AppBarIcon.comment with java.lang.String = js.native
-    val contact: winjsLib.WinJSNs.UINs.AppBarIcon.contact with java.lang.String = js.native
-    val contact2: winjsLib.WinJSNs.UINs.AppBarIcon.contact2 with java.lang.String = js.native
-    val contactinfo: winjsLib.WinJSNs.UINs.AppBarIcon.contactinfo with java.lang.String = js.native
-    val contactpresence: winjsLib.WinJSNs.UINs.AppBarIcon.contactpresence with java.lang.String = js.native
-    val copy: winjsLib.WinJSNs.UINs.AppBarIcon.copy with java.lang.String = js.native
-    val crop: winjsLib.WinJSNs.UINs.AppBarIcon.crop with java.lang.String = js.native
-    val cut: winjsLib.WinJSNs.UINs.AppBarIcon.cut with java.lang.String = js.native
-    val delete: winjsLib.WinJSNs.UINs.AppBarIcon.delete with java.lang.String = js.native
-    val directions: winjsLib.WinJSNs.UINs.AppBarIcon.directions with java.lang.String = js.native
-    val disableupdates: winjsLib.WinJSNs.UINs.AppBarIcon.disableupdates with java.lang.String = js.native
-    val disconnectdrive: winjsLib.WinJSNs.UINs.AppBarIcon.disconnectdrive with java.lang.String = js.native
-    val dislike: winjsLib.WinJSNs.UINs.AppBarIcon.dislike with java.lang.String = js.native
-    val dockbottom: winjsLib.WinJSNs.UINs.AppBarIcon.dockbottom with java.lang.String = js.native
-    val dockleft: winjsLib.WinJSNs.UINs.AppBarIcon.dockleft with java.lang.String = js.native
-    val dockright: winjsLib.WinJSNs.UINs.AppBarIcon.dockright with java.lang.String = js.native
-    val document: winjsLib.WinJSNs.UINs.AppBarIcon.document with java.lang.String = js.native
-    val download: winjsLib.WinJSNs.UINs.AppBarIcon.download with java.lang.String = js.native
-    val edit: winjsLib.WinJSNs.UINs.AppBarIcon.edit with java.lang.String = js.native
-    val emoji: winjsLib.WinJSNs.UINs.AppBarIcon.emoji with java.lang.String = js.native
-    val emoji2: winjsLib.WinJSNs.UINs.AppBarIcon.emoji2 with java.lang.String = js.native
-    val favorite: winjsLib.WinJSNs.UINs.AppBarIcon.favorite with java.lang.String = js.native
-    val filter: winjsLib.WinJSNs.UINs.AppBarIcon.filter with java.lang.String = js.native
-    val find: winjsLib.WinJSNs.UINs.AppBarIcon.find with java.lang.String = js.native
-    val flag: winjsLib.WinJSNs.UINs.AppBarIcon.flag with java.lang.String = js.native
-    val folder: winjsLib.WinJSNs.UINs.AppBarIcon.folder with java.lang.String = js.native
-    val font: winjsLib.WinJSNs.UINs.AppBarIcon.font with java.lang.String = js.native
-    val fontcolor: winjsLib.WinJSNs.UINs.AppBarIcon.fontcolor with java.lang.String = js.native
-    val fontdecrease: winjsLib.WinJSNs.UINs.AppBarIcon.fontdecrease with java.lang.String = js.native
-    val fontincrease: winjsLib.WinJSNs.UINs.AppBarIcon.fontincrease with java.lang.String = js.native
-    val fontsize: winjsLib.WinJSNs.UINs.AppBarIcon.fontsize with java.lang.String = js.native
-    val forward: winjsLib.WinJSNs.UINs.AppBarIcon.forward with java.lang.String = js.native
-    val fourbars: winjsLib.WinJSNs.UINs.AppBarIcon.fourbars with java.lang.String = js.native
-    val fullscreen: winjsLib.WinJSNs.UINs.AppBarIcon.fullscreen with java.lang.String = js.native
-    val globe: winjsLib.WinJSNs.UINs.AppBarIcon.globe with java.lang.String = js.native
-    val go: winjsLib.WinJSNs.UINs.AppBarIcon.go with java.lang.String = js.native
-    val gotostart: winjsLib.WinJSNs.UINs.AppBarIcon.gotostart with java.lang.String = js.native
-    val gototoday: winjsLib.WinJSNs.UINs.AppBarIcon.gototoday with java.lang.String = js.native
-    val hamburger: winjsLib.WinJSNs.UINs.AppBarIcon.hamburger with java.lang.String = js.native
-    val hangup: winjsLib.WinJSNs.UINs.AppBarIcon.hangup with java.lang.String = js.native
-    val help: winjsLib.WinJSNs.UINs.AppBarIcon.help with java.lang.String = js.native
-    val hidebcc: winjsLib.WinJSNs.UINs.AppBarIcon.hidebcc with java.lang.String = js.native
-    val highlight: winjsLib.WinJSNs.UINs.AppBarIcon.highlight with java.lang.String = js.native
-    val home: winjsLib.WinJSNs.UINs.AppBarIcon.home with java.lang.String = js.native
-    val `import`: winjsLib.WinJSNs.UINs.AppBarIcon.`import` with java.lang.String = js.native
-    val importall: winjsLib.WinJSNs.UINs.AppBarIcon.importall with java.lang.String = js.native
-    val important: winjsLib.WinJSNs.UINs.AppBarIcon.important with java.lang.String = js.native
-    val italic: winjsLib.WinJSNs.UINs.AppBarIcon.italic with java.lang.String = js.native
-    val keyboard: winjsLib.WinJSNs.UINs.AppBarIcon.keyboard with java.lang.String = js.native
-    val leavechat: winjsLib.WinJSNs.UINs.AppBarIcon.leavechat with java.lang.String = js.native
-    val left: winjsLib.WinJSNs.UINs.AppBarIcon.left with java.lang.String = js.native
-    val library: winjsLib.WinJSNs.UINs.AppBarIcon.library with java.lang.String = js.native
-    val like: winjsLib.WinJSNs.UINs.AppBarIcon.like with java.lang.String = js.native
-    val likedislike: winjsLib.WinJSNs.UINs.AppBarIcon.likedislike with java.lang.String = js.native
-    val link: winjsLib.WinJSNs.UINs.AppBarIcon.link with java.lang.String = js.native
-    val list: winjsLib.WinJSNs.UINs.AppBarIcon.list with java.lang.String = js.native
-    val mail: winjsLib.WinJSNs.UINs.AppBarIcon.mail with java.lang.String = js.native
-    val mail2: winjsLib.WinJSNs.UINs.AppBarIcon.mail2 with java.lang.String = js.native
-    val mailforward: winjsLib.WinJSNs.UINs.AppBarIcon.mailforward with java.lang.String = js.native
-    val mailreply: winjsLib.WinJSNs.UINs.AppBarIcon.mailreply with java.lang.String = js.native
-    val mailreplyall: winjsLib.WinJSNs.UINs.AppBarIcon.mailreplyall with java.lang.String = js.native
-    val manage: winjsLib.WinJSNs.UINs.AppBarIcon.manage with java.lang.String = js.native
-    val map: winjsLib.WinJSNs.UINs.AppBarIcon.map with java.lang.String = js.native
-    val mapdrive: winjsLib.WinJSNs.UINs.AppBarIcon.mapdrive with java.lang.String = js.native
-    val mappin: winjsLib.WinJSNs.UINs.AppBarIcon.mappin with java.lang.String = js.native
-    val memo: winjsLib.WinJSNs.UINs.AppBarIcon.memo with java.lang.String = js.native
-    val message: winjsLib.WinJSNs.UINs.AppBarIcon.message with java.lang.String = js.native
-    val microphone: winjsLib.WinJSNs.UINs.AppBarIcon.microphone with java.lang.String = js.native
-    val more: winjsLib.WinJSNs.UINs.AppBarIcon.more with java.lang.String = js.native
-    val movetofolder: winjsLib.WinJSNs.UINs.AppBarIcon.movetofolder with java.lang.String = js.native
-    val musicinfo: winjsLib.WinJSNs.UINs.AppBarIcon.musicinfo with java.lang.String = js.native
-    val mute: winjsLib.WinJSNs.UINs.AppBarIcon.mute with java.lang.String = js.native
-    val newfolder: winjsLib.WinJSNs.UINs.AppBarIcon.newfolder with java.lang.String = js.native
-    val newwindow: winjsLib.WinJSNs.UINs.AppBarIcon.newwindow with java.lang.String = js.native
-    val next: winjsLib.WinJSNs.UINs.AppBarIcon.next with java.lang.String = js.native
-    val onebar: winjsLib.WinJSNs.UINs.AppBarIcon.onebar with java.lang.String = js.native
-    val openfile: winjsLib.WinJSNs.UINs.AppBarIcon.openfile with java.lang.String = js.native
-    val openlocal: winjsLib.WinJSNs.UINs.AppBarIcon.openlocal with java.lang.String = js.native
-    val openpane: winjsLib.WinJSNs.UINs.AppBarIcon.openpane with java.lang.String = js.native
-    val openwith: winjsLib.WinJSNs.UINs.AppBarIcon.openwith with java.lang.String = js.native
-    val orientation: winjsLib.WinJSNs.UINs.AppBarIcon.orientation with java.lang.String = js.native
-    val otheruser: winjsLib.WinJSNs.UINs.AppBarIcon.otheruser with java.lang.String = js.native
-    val outlinestar: winjsLib.WinJSNs.UINs.AppBarIcon.outlinestar with java.lang.String = js.native
-    val page: winjsLib.WinJSNs.UINs.AppBarIcon.page with java.lang.String = js.native
-    val page2: winjsLib.WinJSNs.UINs.AppBarIcon.page2 with java.lang.String = js.native
-    val paste: winjsLib.WinJSNs.UINs.AppBarIcon.paste with java.lang.String = js.native
-    val pause: winjsLib.WinJSNs.UINs.AppBarIcon.pause with java.lang.String = js.native
-    val people: winjsLib.WinJSNs.UINs.AppBarIcon.people with java.lang.String = js.native
-    val permissions: winjsLib.WinJSNs.UINs.AppBarIcon.permissions with java.lang.String = js.native
-    val phone: winjsLib.WinJSNs.UINs.AppBarIcon.phone with java.lang.String = js.native
-    val phonebook: winjsLib.WinJSNs.UINs.AppBarIcon.phonebook with java.lang.String = js.native
-    val pictures: winjsLib.WinJSNs.UINs.AppBarIcon.pictures with java.lang.String = js.native
-    val pin: winjsLib.WinJSNs.UINs.AppBarIcon.pin with java.lang.String = js.native
-    val placeholder: winjsLib.WinJSNs.UINs.AppBarIcon.placeholder with java.lang.String = js.native
-    val play: winjsLib.WinJSNs.UINs.AppBarIcon.play with java.lang.String = js.native
-    val postupdate: winjsLib.WinJSNs.UINs.AppBarIcon.postupdate with java.lang.String = js.native
-    val preview: winjsLib.WinJSNs.UINs.AppBarIcon.preview with java.lang.String = js.native
-    val previewlink: winjsLib.WinJSNs.UINs.AppBarIcon.previewlink with java.lang.String = js.native
-    val previous: winjsLib.WinJSNs.UINs.AppBarIcon.previous with java.lang.String = js.native
-    val priority: winjsLib.WinJSNs.UINs.AppBarIcon.priority with java.lang.String = js.native
-    val protecteddocument: winjsLib.WinJSNs.UINs.AppBarIcon.protecteddocument with java.lang.String = js.native
-    val read: winjsLib.WinJSNs.UINs.AppBarIcon.read with java.lang.String = js.native
-    val redo: winjsLib.WinJSNs.UINs.AppBarIcon.redo with java.lang.String = js.native
-    val refresh: winjsLib.WinJSNs.UINs.AppBarIcon.refresh with java.lang.String = js.native
-    val remote: winjsLib.WinJSNs.UINs.AppBarIcon.remote with java.lang.String = js.native
-    val remove: winjsLib.WinJSNs.UINs.AppBarIcon.remove with java.lang.String = js.native
-    val rename: winjsLib.WinJSNs.UINs.AppBarIcon.rename with java.lang.String = js.native
-    val repair: winjsLib.WinJSNs.UINs.AppBarIcon.repair with java.lang.String = js.native
-    val repeatall: winjsLib.WinJSNs.UINs.AppBarIcon.repeatall with java.lang.String = js.native
-    val repeatone: winjsLib.WinJSNs.UINs.AppBarIcon.repeatone with java.lang.String = js.native
-    val reporthacked: winjsLib.WinJSNs.UINs.AppBarIcon.reporthacked with java.lang.String = js.native
-    val reshare: winjsLib.WinJSNs.UINs.AppBarIcon.reshare with java.lang.String = js.native
-    val right: winjsLib.WinJSNs.UINs.AppBarIcon.right with java.lang.String = js.native
-    val rotate: winjsLib.WinJSNs.UINs.AppBarIcon.rotate with java.lang.String = js.native
-    val rotatecamera: winjsLib.WinJSNs.UINs.AppBarIcon.rotatecamera with java.lang.String = js.native
-    val save: winjsLib.WinJSNs.UINs.AppBarIcon.save with java.lang.String = js.native
-    val savelocal: winjsLib.WinJSNs.UINs.AppBarIcon.savelocal with java.lang.String = js.native
-    val scan: winjsLib.WinJSNs.UINs.AppBarIcon.scan with java.lang.String = js.native
-    val selectall: winjsLib.WinJSNs.UINs.AppBarIcon.selectall with java.lang.String = js.native
-    val send: winjsLib.WinJSNs.UINs.AppBarIcon.send with java.lang.String = js.native
-    val setlockscreen: winjsLib.WinJSNs.UINs.AppBarIcon.setlockscreen with java.lang.String = js.native
-    val settile: winjsLib.WinJSNs.UINs.AppBarIcon.settile with java.lang.String = js.native
-    val settings: winjsLib.WinJSNs.UINs.AppBarIcon.settings with java.lang.String = js.native
-    val shop: winjsLib.WinJSNs.UINs.AppBarIcon.shop with java.lang.String = js.native
-    val showbcc: winjsLib.WinJSNs.UINs.AppBarIcon.showbcc with java.lang.String = js.native
-    val showresults: winjsLib.WinJSNs.UINs.AppBarIcon.showresults with java.lang.String = js.native
-    val shuffle: winjsLib.WinJSNs.UINs.AppBarIcon.shuffle with java.lang.String = js.native
-    val slideshow: winjsLib.WinJSNs.UINs.AppBarIcon.slideshow with java.lang.String = js.native
-    val solidstar: winjsLib.WinJSNs.UINs.AppBarIcon.solidstar with java.lang.String = js.native
-    val sort: winjsLib.WinJSNs.UINs.AppBarIcon.sort with java.lang.String = js.native
-    val stop: winjsLib.WinJSNs.UINs.AppBarIcon.stop with java.lang.String = js.native
-    val stopslideshow: winjsLib.WinJSNs.UINs.AppBarIcon.stopslideshow with java.lang.String = js.native
-    val street: winjsLib.WinJSNs.UINs.AppBarIcon.street with java.lang.String = js.native
-    val switch: winjsLib.WinJSNs.UINs.AppBarIcon.switch with java.lang.String = js.native
-    val switchapps: winjsLib.WinJSNs.UINs.AppBarIcon.switchapps with java.lang.String = js.native
-    val sync: winjsLib.WinJSNs.UINs.AppBarIcon.sync with java.lang.String = js.native
-    val syncfolder: winjsLib.WinJSNs.UINs.AppBarIcon.syncfolder with java.lang.String = js.native
-    val tag: winjsLib.WinJSNs.UINs.AppBarIcon.tag with java.lang.String = js.native
-    val target: winjsLib.WinJSNs.UINs.AppBarIcon.target with java.lang.String = js.native
-    val threebars: winjsLib.WinJSNs.UINs.AppBarIcon.threebars with java.lang.String = js.native
-    val touchpointer: winjsLib.WinJSNs.UINs.AppBarIcon.touchpointer with java.lang.String = js.native
-    val trim: winjsLib.WinJSNs.UINs.AppBarIcon.trim with java.lang.String = js.native
-    val twobars: winjsLib.WinJSNs.UINs.AppBarIcon.twobars with java.lang.String = js.native
-    val twopage: winjsLib.WinJSNs.UINs.AppBarIcon.twopage with java.lang.String = js.native
-    val underline: winjsLib.WinJSNs.UINs.AppBarIcon.underline with java.lang.String = js.native
-    val undo: winjsLib.WinJSNs.UINs.AppBarIcon.undo with java.lang.String = js.native
-    val unfavorite: winjsLib.WinJSNs.UINs.AppBarIcon.unfavorite with java.lang.String = js.native
-    val unpin: winjsLib.WinJSNs.UINs.AppBarIcon.unpin with java.lang.String = js.native
-    val unsyncfolder: winjsLib.WinJSNs.UINs.AppBarIcon.unsyncfolder with java.lang.String = js.native
-    val up: winjsLib.WinJSNs.UINs.AppBarIcon.up with java.lang.String = js.native
-    val upload: winjsLib.WinJSNs.UINs.AppBarIcon.upload with java.lang.String = js.native
-    val uploadskydrive: winjsLib.WinJSNs.UINs.AppBarIcon.uploadskydrive with java.lang.String = js.native
-    val video: winjsLib.WinJSNs.UINs.AppBarIcon.video with java.lang.String = js.native
-    val videochat: winjsLib.WinJSNs.UINs.AppBarIcon.videochat with java.lang.String = js.native
-    val view: winjsLib.WinJSNs.UINs.AppBarIcon.view with java.lang.String = js.native
-    val viewall: winjsLib.WinJSNs.UINs.AppBarIcon.viewall with java.lang.String = js.native
-    val volume: winjsLib.WinJSNs.UINs.AppBarIcon.volume with java.lang.String = js.native
-    val webcam: winjsLib.WinJSNs.UINs.AppBarIcon.webcam with java.lang.String = js.native
-    val world: winjsLib.WinJSNs.UINs.AppBarIcon.world with java.lang.String = js.native
-    val zerobars: winjsLib.WinJSNs.UINs.AppBarIcon.zerobars with java.lang.String = js.native
-    val zoom: winjsLib.WinJSNs.UINs.AppBarIcon.zoom with java.lang.String = js.native
-    val zoomin: winjsLib.WinJSNs.UINs.AppBarIcon.zoomin with java.lang.String = js.native
-    val zoomout: winjsLib.WinJSNs.UINs.AppBarIcon.zoomout with java.lang.String = js.native
+    /* 11 */ val accept: winjsLib.WinJSNs.UINs.AppBarIcon.accept with scala.Double = js.native
+    /* 100 */ val accounts: winjsLib.WinJSNs.UINs.AppBarIcon.accounts with scala.Double = js.native
+    /* 9 */ val add: winjsLib.WinJSNs.UINs.AppBarIcon.add with scala.Double = js.native
+    /* 186 */ val addfriend: winjsLib.WinJSNs.UINs.AppBarIcon.addfriend with scala.Double = js.native
+    /* 155 */ val admin: winjsLib.WinJSNs.UINs.AppBarIcon.admin with scala.Double = js.native
+    /* 149 */ val aligncenter: winjsLib.WinJSNs.UINs.AppBarIcon.aligncenter with scala.Double = js.native
+    /* 150 */ val alignleft: winjsLib.WinJSNs.UINs.AppBarIcon.alignleft with scala.Double = js.native
+    /* 148 */ val alignright: winjsLib.WinJSNs.UINs.AppBarIcon.alignright with scala.Double = js.native
+    /* 114 */ val allapps: winjsLib.WinJSNs.UINs.AppBarIcon.allapps with scala.Double = js.native
+    /* 104 */ val attach: winjsLib.WinJSNs.UINs.AppBarIcon.attach with scala.Double = js.native
+    /* 47 */ val attachcamera: winjsLib.WinJSNs.UINs.AppBarIcon.attachcamera with scala.Double = js.native
+    /* 127 */ val audio: winjsLib.WinJSNs.UINs.AppBarIcon.audio with scala.Double = js.native
+    /* 19 */ val back: winjsLib.WinJSNs.UINs.AppBarIcon.back with scala.Double = js.native
+    /* 177 */ val backtowindow: winjsLib.WinJSNs.UINs.AppBarIcon.backtowindow with scala.Double = js.native
+    /* 184 */ val blockcontact: winjsLib.WinJSNs.UINs.AppBarIcon.blockcontact with scala.Double = js.native
+    /* 143 */ val bold: winjsLib.WinJSNs.UINs.AppBarIcon.bold with scala.Double = js.native
+    /* 49 */ val bookmarks: winjsLib.WinJSNs.UINs.AppBarIcon.bookmarks with scala.Double = js.native
+    /* 82 */ val browsephotos: winjsLib.WinJSNs.UINs.AppBarIcon.browsephotos with scala.Double = js.native
+    /* 53 */ val bullets: winjsLib.WinJSNs.UINs.AppBarIcon.bullets with scala.Double = js.native
+    /* 169 */ val calculator: winjsLib.WinJSNs.UINs.AppBarIcon.calculator with scala.Double = js.native
+    /* 95 */ val calendar: winjsLib.WinJSNs.UINs.AppBarIcon.calendar with scala.Double = js.native
+    /* 93 */ val calendarday: winjsLib.WinJSNs.UINs.AppBarIcon.calendarday with scala.Double = js.native
+    /* 180 */ val calendarreply: winjsLib.WinJSNs.UINs.AppBarIcon.calendarreply with scala.Double = js.native
+    /* 94 */ val calendarweek: winjsLib.WinJSNs.UINs.AppBarIcon.calendarweek with scala.Double = js.native
+    /* 22 */ val camera: winjsLib.WinJSNs.UINs.AppBarIcon.camera with scala.Double = js.native
+    /* 10 */ val cancel: winjsLib.WinJSNs.UINs.AppBarIcon.cancel with scala.Double = js.native
+    /* 86 */ val caption: winjsLib.WinJSNs.UINs.AppBarIcon.caption with scala.Double = js.native
+    /* 132 */ val cc: winjsLib.WinJSNs.UINs.AppBarIcon.cc with scala.Double = js.native
+    /* 162 */ val cellphone: winjsLib.WinJSNs.UINs.AppBarIcon.cellphone with scala.Double = js.native
+    /* 96 */ val characters: winjsLib.WinJSNs.UINs.AppBarIcon.characters with scala.Double = js.native
+    /* 6 */ val clear: winjsLib.WinJSNs.UINs.AppBarIcon.clear with scala.Double = js.native
+    /* 158 */ val clearselection: winjsLib.WinJSNs.UINs.AppBarIcon.clearselection with scala.Double = js.native
+    /* 35 */ val clock: winjsLib.WinJSNs.UINs.AppBarIcon.clock with scala.Double = js.native
+    /* 40 */ val closepane: winjsLib.WinJSNs.UINs.AppBarIcon.closepane with scala.Double = js.native
+    /* 54 */ val comment: winjsLib.WinJSNs.UINs.AppBarIcon.comment with scala.Double = js.native
+    /* 63 */ val contact: winjsLib.WinJSNs.UINs.AppBarIcon.contact with scala.Double = js.native
+    /* 125 */ val contact2: winjsLib.WinJSNs.UINs.AppBarIcon.contact2 with scala.Double = js.native
+    /* 56 */ val contactinfo: winjsLib.WinJSNs.UINs.AppBarIcon.contactinfo with scala.Double = js.native
+    /* 119 */ val contactpresence: winjsLib.WinJSNs.UINs.AppBarIcon.contactpresence with scala.Double = js.native
+    /* 107 */ val copy: winjsLib.WinJSNs.UINs.AppBarIcon.copy with scala.Double = js.native
+    /* 37 */ val crop: winjsLib.WinJSNs.UINs.AppBarIcon.crop with scala.Double = js.native
+    /* 103 */ val cut: winjsLib.WinJSNs.UINs.AppBarIcon.cut with scala.Double = js.native
+    /* 7 */ val delete: winjsLib.WinJSNs.UINs.AppBarIcon.delete with scala.Double = js.native
+    /* 170 */ val directions: winjsLib.WinJSNs.UINs.AppBarIcon.directions with scala.Double = js.native
+    /* 136 */ val disableupdates: winjsLib.WinJSNs.UINs.AppBarIcon.disableupdates with scala.Double = js.native
+    /* 115 */ val disconnectdrive: winjsLib.WinJSNs.UINs.AppBarIcon.disconnectdrive with scala.Double = js.native
+    /* 146 */ val dislike: winjsLib.WinJSNs.UINs.AppBarIcon.dislike with scala.Double = js.native
+    /* 71 */ val dockbottom: winjsLib.WinJSNs.UINs.AppBarIcon.dockbottom with scala.Double = js.native
+    /* 69 */ val dockleft: winjsLib.WinJSNs.UINs.AppBarIcon.dockleft with scala.Double = js.native
+    /* 70 */ val dockright: winjsLib.WinJSNs.UINs.AppBarIcon.dockright with scala.Double = js.native
+    /* 50 */ val document: winjsLib.WinJSNs.UINs.AppBarIcon.document with scala.Double = js.native
+    /* 26 */ val download: winjsLib.WinJSNs.UINs.AppBarIcon.download with scala.Double = js.native
+    /* 4 */ val edit: winjsLib.WinJSNs.UINs.AppBarIcon.edit with scala.Double = js.native
+    /* 31 */ val emoji: winjsLib.WinJSNs.UINs.AppBarIcon.emoji with scala.Double = js.native
+    /* 108 */ val emoji2: winjsLib.WinJSNs.UINs.AppBarIcon.emoji2 with scala.Double = js.native
+    /* 21 */ val favorite: winjsLib.WinJSNs.UINs.AppBarIcon.favorite with scala.Double = js.native
+    /* 106 */ val filter: winjsLib.WinJSNs.UINs.AppBarIcon.filter with scala.Double = js.native
+    /* 28 */ val find: winjsLib.WinJSNs.UINs.AppBarIcon.find with scala.Double = js.native
+    /* 43 */ val flag: winjsLib.WinJSNs.UINs.AppBarIcon.flag with scala.Double = js.native
+    /* 126 */ val folder: winjsLib.WinJSNs.UINs.AppBarIcon.folder with scala.Double = js.native
+    /* 123 */ val font: winjsLib.WinJSNs.UINs.AppBarIcon.font with scala.Double = js.native
+    /* 124 */ val fontcolor: winjsLib.WinJSNs.UINs.AppBarIcon.fontcolor with scala.Double = js.native
+    /* 159 */ val fontdecrease: winjsLib.WinJSNs.UINs.AppBarIcon.fontdecrease with scala.Double = js.native
+    /* 160 */ val fontincrease: winjsLib.WinJSNs.UINs.AppBarIcon.fontincrease with scala.Double = js.native
+    /* 161 */ val fontsize: winjsLib.WinJSNs.UINs.AppBarIcon.fontsize with scala.Double = js.native
+    /* 17 */ val forward: winjsLib.WinJSNs.UINs.AppBarIcon.forward with scala.Double = js.native
+    /* 193 */ val fourbars: winjsLib.WinJSNs.UINs.AppBarIcon.fourbars with scala.Double = js.native
+    /* 178 */ val fullscreen: winjsLib.WinJSNs.UINs.AppBarIcon.fullscreen with scala.Double = js.native
+    /* 45 */ val globe: winjsLib.WinJSNs.UINs.AppBarIcon.globe with scala.Double = js.native
+    /* 67 */ val go: winjsLib.WinJSNs.UINs.AppBarIcon.go with scala.Double = js.native
+    /* 188 */ val gotostart: winjsLib.WinJSNs.UINs.AppBarIcon.gotostart with scala.Double = js.native
+    /* 122 */ val gototoday: winjsLib.WinJSNs.UINs.AppBarIcon.gototoday with scala.Double = js.native
+    /* 196 */ val hamburger: winjsLib.WinJSNs.UINs.AppBarIcon.hamburger with scala.Double = js.native
+    /* 57 */ val hangup: winjsLib.WinJSNs.UINs.AppBarIcon.hangup with scala.Double = js.native
+    /* 29 */ val help: winjsLib.WinJSNs.UINs.AppBarIcon.help with scala.Double = js.native
+    /* 102 */ val hidebcc: winjsLib.WinJSNs.UINs.AppBarIcon.hidebcc with scala.Double = js.native
+    /* 135 */ val highlight: winjsLib.WinJSNs.UINs.AppBarIcon.highlight with scala.Double = js.native
+    /* 15 */ val home: winjsLib.WinJSNs.UINs.AppBarIcon.home with scala.Double = js.native
+    /* 80 */ val `import`: winjsLib.WinJSNs.UINs.AppBarIcon.`import` with scala.Double = js.native
+    /* 81 */ val importall: winjsLib.WinJSNs.UINs.AppBarIcon.importall with scala.Double = js.native
+    /* 109 */ val important: winjsLib.WinJSNs.UINs.AppBarIcon.important with scala.Double = js.native
+    /* 141 */ val italic: winjsLib.WinJSNs.UINs.AppBarIcon.italic with scala.Double = js.native
+    /* 68 */ val keyboard: winjsLib.WinJSNs.UINs.AppBarIcon.keyboard with scala.Double = js.native
+    /* 33 */ val leavechat: winjsLib.WinJSNs.UINs.AppBarIcon.leavechat with scala.Double = js.native
+    /* 20 */ val left: winjsLib.WinJSNs.UINs.AppBarIcon.left with scala.Double = js.native
+    /* 172 */ val library: winjsLib.WinJSNs.UINs.AppBarIcon.library with scala.Double = js.native
+    /* 147 */ val like: winjsLib.WinJSNs.UINs.AppBarIcon.like with scala.Double = js.native
+    /* 145 */ val likedislike: winjsLib.WinJSNs.UINs.AppBarIcon.likedislike with scala.Double = js.native
+    /* 99 */ val link: winjsLib.WinJSNs.UINs.AppBarIcon.link with scala.Double = js.native
+    /* 76 */ val list: winjsLib.WinJSNs.UINs.AppBarIcon.list with scala.Double = js.native
+    /* 27 */ val mail: winjsLib.WinJSNs.UINs.AppBarIcon.mail with scala.Double = js.native
+    /* 55 */ val mail2: winjsLib.WinJSNs.UINs.AppBarIcon.mail2 with scala.Double = js.native
+    /* 34 */ val mailforward: winjsLib.WinJSNs.UINs.AppBarIcon.mailforward with scala.Double = js.native
+    /* 110 */ val mailreply: winjsLib.WinJSNs.UINs.AppBarIcon.mailreply with scala.Double = js.native
+    /* 97 */ val mailreplyall: winjsLib.WinJSNs.UINs.AppBarIcon.mailreplyall with scala.Double = js.native
+    /* 113 */ val manage: winjsLib.WinJSNs.UINs.AppBarIcon.manage with scala.Double = js.native
+    /* 157 */ val map: winjsLib.WinJSNs.UINs.AppBarIcon.map with scala.Double = js.native
+    /* 116 */ val mapdrive: winjsLib.WinJSNs.UINs.AppBarIcon.mapdrive with scala.Double = js.native
+    /* 59 */ val mappin: winjsLib.WinJSNs.UINs.AppBarIcon.mappin with scala.Double = js.native
+    /* 174 */ val memo: winjsLib.WinJSNs.UINs.AppBarIcon.memo with scala.Double = js.native
+    /* 91 */ val message: winjsLib.WinJSNs.UINs.AppBarIcon.message with scala.Double = js.native
+    /* 175 */ val microphone: winjsLib.WinJSNs.UINs.AppBarIcon.microphone with scala.Double = js.native
+    /* 12 */ val more: winjsLib.WinJSNs.UINs.AppBarIcon.more with scala.Double = js.native
+    /* 144 */ val movetofolder: winjsLib.WinJSNs.UINs.AppBarIcon.movetofolder with scala.Double = js.native
+    /* 66 */ val musicinfo: winjsLib.WinJSNs.UINs.AppBarIcon.musicinfo with scala.Double = js.native
+    /* 140 */ val mute: winjsLib.WinJSNs.UINs.AppBarIcon.mute with scala.Double = js.native
+    /* 179 */ val newfolder: winjsLib.WinJSNs.UINs.AppBarIcon.newfolder with scala.Double = js.native
+    /* 117 */ val newwindow: winjsLib.WinJSNs.UINs.AppBarIcon.newwindow with scala.Double = js.native
+    /* 1 */ val next: winjsLib.WinJSNs.UINs.AppBarIcon.next with scala.Double = js.native
+    /* 190 */ val onebar: winjsLib.WinJSNs.UINs.AppBarIcon.onebar with scala.Double = js.native
+    /* 153 */ val openfile: winjsLib.WinJSNs.UINs.AppBarIcon.openfile with scala.Double = js.native
+    /* 139 */ val openlocal: winjsLib.WinJSNs.UINs.AppBarIcon.openlocal with scala.Double = js.native
+    /* 41 */ val openpane: winjsLib.WinJSNs.UINs.AppBarIcon.openpane with scala.Double = js.native
+    /* 118 */ val openwith: winjsLib.WinJSNs.UINs.AppBarIcon.openwith with scala.Double = js.native
+    /* 79 */ val orientation: winjsLib.WinJSNs.UINs.AppBarIcon.orientation with scala.Double = js.native
+    /* 154 */ val otheruser: winjsLib.WinJSNs.UINs.AppBarIcon.otheruser with scala.Double = js.native
+    /* 167 */ val outlinestar: winjsLib.WinJSNs.UINs.AppBarIcon.outlinestar with scala.Double = js.native
+    /* 52 */ val page: winjsLib.WinJSNs.UINs.AppBarIcon.page with scala.Double = js.native
+    /* 92 */ val page2: winjsLib.WinJSNs.UINs.AppBarIcon.page2 with scala.Double = js.native
+    /* 105 */ val paste: winjsLib.WinJSNs.UINs.AppBarIcon.paste with scala.Double = js.native
+    /* 3 */ val pause: winjsLib.WinJSNs.UINs.AppBarIcon.pause with scala.Double = js.native
+    /* 39 */ val people: winjsLib.WinJSNs.UINs.AppBarIcon.people with scala.Double = js.native
+    /* 134 */ val permissions: winjsLib.WinJSNs.UINs.AppBarIcon.permissions with scala.Double = js.native
+    /* 60 */ val phone: winjsLib.WinJSNs.UINs.AppBarIcon.phone with scala.Double = js.native
+    /* 173 */ val phonebook: winjsLib.WinJSNs.UINs.AppBarIcon.phonebook with scala.Double = js.native
+    /* 84 */ val pictures: winjsLib.WinJSNs.UINs.AppBarIcon.pictures with scala.Double = js.native
+    /* 65 */ val pin: winjsLib.WinJSNs.UINs.AppBarIcon.pin with scala.Double = js.native
+    /* 128 */ val placeholder: winjsLib.WinJSNs.UINs.AppBarIcon.placeholder with scala.Double = js.native
+    /* 2 */ val play: winjsLib.WinJSNs.UINs.AppBarIcon.play with scala.Double = js.native
+    /* 176 */ val postupdate: winjsLib.WinJSNs.UINs.AppBarIcon.postupdate with scala.Double = js.native
+    /* 195 */ val preview: winjsLib.WinJSNs.UINs.AppBarIcon.preview with scala.Double = js.native
+    /* 44 */ val previewlink: winjsLib.WinJSNs.UINs.AppBarIcon.previewlink with scala.Double = js.native
+    /* 0 */ val previous: winjsLib.WinJSNs.UINs.AppBarIcon.previous with scala.Double = js.native
+    /* 120 */ val priority: winjsLib.WinJSNs.UINs.AppBarIcon.priority with scala.Double = js.native
+    /* 51 */ val protecteddocument: winjsLib.WinJSNs.UINs.AppBarIcon.protecteddocument with scala.Double = js.native
+    /* 98 */ val read: winjsLib.WinJSNs.UINs.AppBarIcon.read with scala.Double = js.native
+    /* 13 */ val redo: winjsLib.WinJSNs.UINs.AppBarIcon.redo with scala.Double = js.native
+    /* 73 */ val refresh: winjsLib.WinJSNs.UINs.AppBarIcon.refresh with scala.Double = js.native
+    /* 72 */ val remote: winjsLib.WinJSNs.UINs.AppBarIcon.remote with scala.Double = js.native
+    /* 8 */ val remove: winjsLib.WinJSNs.UINs.AppBarIcon.remove with scala.Double = js.native
+    /* 64 */ val rename: winjsLib.WinJSNs.UINs.AppBarIcon.rename with scala.Double = js.native
+    /* 90 */ val repair: winjsLib.WinJSNs.UINs.AppBarIcon.repair with scala.Double = js.native
+    /* 166 */ val repeatall: winjsLib.WinJSNs.UINs.AppBarIcon.repeatall with scala.Double = js.native
+    /* 165 */ val repeatone: winjsLib.WinJSNs.UINs.AppBarIcon.repeatone with scala.Double = js.native
+    /* 182 */ val reporthacked: winjsLib.WinJSNs.UINs.AppBarIcon.reporthacked with scala.Double = js.native
+    /* 163 */ val reshare: winjsLib.WinJSNs.UINs.AppBarIcon.reshare with scala.Double = js.native
+    /* 18 */ val right: winjsLib.WinJSNs.UINs.AppBarIcon.right with scala.Double = js.native
+    /* 74 */ val rotate: winjsLib.WinJSNs.UINs.AppBarIcon.rotate with scala.Double = js.native
+    /* 38 */ val rotatecamera: winjsLib.WinJSNs.UINs.AppBarIcon.rotatecamera with scala.Double = js.native
+    /* 5 */ val save: winjsLib.WinJSNs.UINs.AppBarIcon.save with scala.Double = js.native
+    /* 85 */ val savelocal: winjsLib.WinJSNs.UINs.AppBarIcon.savelocal with scala.Double = js.native
+    /* 194 */ val scan: winjsLib.WinJSNs.UINs.AppBarIcon.scan with scala.Double = js.native
+    /* 78 */ val selectall: winjsLib.WinJSNs.UINs.AppBarIcon.selectall with scala.Double = js.native
+    /* 36 */ val send: winjsLib.WinJSNs.UINs.AppBarIcon.send with scala.Double = js.native
+    /* 130 */ val setlockscreen: winjsLib.WinJSNs.UINs.AppBarIcon.setlockscreen with scala.Double = js.native
+    /* 131 */ val settile: winjsLib.WinJSNs.UINs.AppBarIcon.settile with scala.Double = js.native
+    /* 23 */ val settings: winjsLib.WinJSNs.UINs.AppBarIcon.settings with scala.Double = js.native
+    /* 77 */ val shop: winjsLib.WinJSNs.UINs.AppBarIcon.shop with scala.Double = js.native
+    /* 101 */ val showbcc: winjsLib.WinJSNs.UINs.AppBarIcon.showbcc with scala.Double = js.native
+    /* 88 */ val showresults: winjsLib.WinJSNs.UINs.AppBarIcon.showresults with scala.Double = js.native
+    /* 75 */ val shuffle: winjsLib.WinJSNs.UINs.AppBarIcon.shuffle with scala.Double = js.native
+    /* 111 */ val slideshow: winjsLib.WinJSNs.UINs.AppBarIcon.slideshow with scala.Double = js.native
+    /* 168 */ val solidstar: winjsLib.WinJSNs.UINs.AppBarIcon.solidstar with scala.Double = js.native
+    /* 112 */ val sort: winjsLib.WinJSNs.UINs.AppBarIcon.sort with scala.Double = js.native
+    /* 87 */ val stop: winjsLib.WinJSNs.UINs.AppBarIcon.stop with scala.Double = js.native
+    /* 133 */ val stopslideshow: winjsLib.WinJSNs.UINs.AppBarIcon.stopslideshow with scala.Double = js.native
+    /* 156 */ val street: winjsLib.WinJSNs.UINs.AppBarIcon.street with scala.Double = js.native
+    /* 62 */ val switch: winjsLib.WinJSNs.UINs.AppBarIcon.switch with scala.Double = js.native
+    /* 185 */ val switchapps: winjsLib.WinJSNs.UINs.AppBarIcon.switchapps with scala.Double = js.native
+    /* 25 */ val sync: winjsLib.WinJSNs.UINs.AppBarIcon.sync with scala.Double = js.native
+    /* 183 */ val syncfolder: winjsLib.WinJSNs.UINs.AppBarIcon.syncfolder with scala.Double = js.native
+    /* 164 */ val tag: winjsLib.WinJSNs.UINs.AppBarIcon.tag with scala.Double = js.native
+    /* 171 */ val target: winjsLib.WinJSNs.UINs.AppBarIcon.target with scala.Double = js.native
+    /* 192 */ val threebars: winjsLib.WinJSNs.UINs.AppBarIcon.threebars with scala.Double = js.native
+    /* 187 */ val touchpointer: winjsLib.WinJSNs.UINs.AppBarIcon.touchpointer with scala.Double = js.native
+    /* 46 */ val trim: winjsLib.WinJSNs.UINs.AppBarIcon.trim with scala.Double = js.native
+    /* 191 */ val twobars: winjsLib.WinJSNs.UINs.AppBarIcon.twobars with scala.Double = js.native
+    /* 32 */ val twopage: winjsLib.WinJSNs.UINs.AppBarIcon.twopage with scala.Double = js.native
+    /* 142 */ val underline: winjsLib.WinJSNs.UINs.AppBarIcon.underline with scala.Double = js.native
+    /* 14 */ val undo: winjsLib.WinJSNs.UINs.AppBarIcon.undo with scala.Double = js.native
+    /* 137 */ val unfavorite: winjsLib.WinJSNs.UINs.AppBarIcon.unfavorite with scala.Double = js.native
+    /* 138 */ val unpin: winjsLib.WinJSNs.UINs.AppBarIcon.unpin with scala.Double = js.native
+    /* 181 */ val unsyncfolder: winjsLib.WinJSNs.UINs.AppBarIcon.unsyncfolder with scala.Double = js.native
+    /* 16 */ val up: winjsLib.WinJSNs.UINs.AppBarIcon.up with scala.Double = js.native
+    /* 30 */ val upload: winjsLib.WinJSNs.UINs.AppBarIcon.upload with scala.Double = js.native
+    /* 121 */ val uploadskydrive: winjsLib.WinJSNs.UINs.AppBarIcon.uploadskydrive with scala.Double = js.native
+    /* 24 */ val video: winjsLib.WinJSNs.UINs.AppBarIcon.video with scala.Double = js.native
+    /* 61 */ val videochat: winjsLib.WinJSNs.UINs.AppBarIcon.videochat with scala.Double = js.native
+    /* 129 */ val view: winjsLib.WinJSNs.UINs.AppBarIcon.view with scala.Double = js.native
+    /* 58 */ val viewall: winjsLib.WinJSNs.UINs.AppBarIcon.viewall with scala.Double = js.native
+    /* 89 */ val volume: winjsLib.WinJSNs.UINs.AppBarIcon.volume with scala.Double = js.native
+    /* 83 */ val webcam: winjsLib.WinJSNs.UINs.AppBarIcon.webcam with scala.Double = js.native
+    /* 42 */ val world: winjsLib.WinJSNs.UINs.AppBarIcon.world with scala.Double = js.native
+    /* 189 */ val zerobars: winjsLib.WinJSNs.UINs.AppBarIcon.zerobars with scala.Double = js.native
+    /* 151 */ val zoom: winjsLib.WinJSNs.UINs.AppBarIcon.zoom with scala.Double = js.native
+    /* 48 */ val zoomin: winjsLib.WinJSNs.UINs.AppBarIcon.zoomin with scala.Double = js.native
+    /* 152 */ val zoomout: winjsLib.WinJSNs.UINs.AppBarIcon.zoomout with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.AppBarIcon with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.AppBarIcon with scala.Double] = js.native
   }
   
   /* static members */
@@ -1543,9 +1543,9 @@ object UINs extends js.Object {
     **/
   @js.native
   object CountError extends js.Object {
-    val noResponse: winjsLib.WinJSNs.UINs.CountError.noResponse with java.lang.String = js.native
+    /* 0 */ val noResponse: winjsLib.WinJSNs.UINs.CountError.noResponse with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.CountError with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.CountError with scala.Double] = js.native
   }
   
   /**
@@ -1553,9 +1553,9 @@ object UINs extends js.Object {
     **/
   @js.native
   object CountResult extends js.Object {
-    val unknown: winjsLib.WinJSNs.UINs.CountResult.unknown with java.lang.String = js.native
+    /* 0 */ val unknown: winjsLib.WinJSNs.UINs.CountResult.unknown with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.CountResult with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.CountResult with scala.Double] = js.native
   }
   
   /**
@@ -1576,11 +1576,11 @@ object UINs extends js.Object {
     **/
   @js.native
   object DataSourceStatus extends js.Object {
-    val failure: winjsLib.WinJSNs.UINs.DataSourceStatus.failure with java.lang.String = js.native
-    val ready: winjsLib.WinJSNs.UINs.DataSourceStatus.ready with java.lang.String = js.native
-    val waiting: winjsLib.WinJSNs.UINs.DataSourceStatus.waiting with java.lang.String = js.native
+    /* 2 */ val failure: winjsLib.WinJSNs.UINs.DataSourceStatus.failure with scala.Double = js.native
+    /* 0 */ val ready: winjsLib.WinJSNs.UINs.DataSourceStatus.ready with scala.Double = js.native
+    /* 1 */ val waiting: winjsLib.WinJSNs.UINs.DataSourceStatus.waiting with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.DataSourceStatus with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.DataSourceStatus with scala.Double] = js.native
   }
   
   /* static members */
@@ -1603,12 +1603,12 @@ object UINs extends js.Object {
     **/
   @js.native
   object EditError extends js.Object {
-    val canceled: winjsLib.WinJSNs.UINs.EditError.canceled with java.lang.String = js.native
-    val noLongerMeaningful: winjsLib.WinJSNs.UINs.EditError.noLongerMeaningful with java.lang.String = js.native
-    val noResponse: winjsLib.WinJSNs.UINs.EditError.noResponse with java.lang.String = js.native
-    val notPermitted: winjsLib.WinJSNs.UINs.EditError.notPermitted with java.lang.String = js.native
+    /* 1 */ val canceled: winjsLib.WinJSNs.UINs.EditError.canceled with scala.Double = js.native
+    /* 3 */ val noLongerMeaningful: winjsLib.WinJSNs.UINs.EditError.noLongerMeaningful with scala.Double = js.native
+    /* 0 */ val noResponse: winjsLib.WinJSNs.UINs.EditError.noResponse with scala.Double = js.native
+    /* 2 */ val notPermitted: winjsLib.WinJSNs.UINs.EditError.notPermitted with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.EditError with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.EditError with scala.Double] = js.native
   }
   
   /**
@@ -1616,10 +1616,10 @@ object UINs extends js.Object {
     **/
   @js.native
   object FetchError extends js.Object {
-    val doesNotExist: winjsLib.WinJSNs.UINs.FetchError.doesNotExist with java.lang.String = js.native
-    val noResponse: winjsLib.WinJSNs.UINs.FetchError.noResponse with java.lang.String = js.native
+    /* 1 */ val doesNotExist: winjsLib.WinJSNs.UINs.FetchError.doesNotExist with scala.Double = js.native
+    /* 0 */ val noResponse: winjsLib.WinJSNs.UINs.FetchError.noResponse with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.FetchError with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.FetchError with scala.Double] = js.native
   }
   
   /* static members */
@@ -1709,10 +1709,10 @@ object UINs extends js.Object {
     **/
   @js.native
   object GroupHeaderTapBehavior extends js.Object {
-    val invoke: winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior.invoke with java.lang.String = js.native
-    val none: winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior.none with java.lang.String = js.native
+    /* 0 */ val invoke: winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior.invoke with scala.Double = js.native
+    /* 1 */ val none: winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior.none with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior with scala.Double] = js.native
   }
   
   /**
@@ -1720,10 +1720,10 @@ object UINs extends js.Object {
     **/
   @js.native
   object HeaderPosition extends js.Object {
-    val left: winjsLib.WinJSNs.UINs.HeaderPosition.left with java.lang.String = js.native
-    val top: winjsLib.WinJSNs.UINs.HeaderPosition.top with java.lang.String = js.native
+    /* 0 */ val left: winjsLib.WinJSNs.UINs.HeaderPosition.left with scala.Double = js.native
+    /* 1 */ val top: winjsLib.WinJSNs.UINs.HeaderPosition.top with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.HeaderPosition with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.HeaderPosition with scala.Double] = js.native
   }
   
   /* static members */
@@ -1812,10 +1812,10 @@ object UINs extends js.Object {
     **/
   @js.native
   object ListViewAnimationType extends js.Object {
-    val contentTransition: winjsLib.WinJSNs.UINs.ListViewAnimationType.contentTransition with java.lang.String = js.native
-    val entrance: winjsLib.WinJSNs.UINs.ListViewAnimationType.entrance with java.lang.String = js.native
+    /* 1 */ val contentTransition: winjsLib.WinJSNs.UINs.ListViewAnimationType.contentTransition with scala.Double = js.native
+    /* 0 */ val entrance: winjsLib.WinJSNs.UINs.ListViewAnimationType.entrance with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.ListViewAnimationType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.ListViewAnimationType with scala.Double] = js.native
   }
   
   /* static members */
@@ -1872,12 +1872,12 @@ object UINs extends js.Object {
     **/
   @js.native
   object ObjectType extends js.Object {
-    val footer: winjsLib.WinJSNs.UINs.ObjectType.footer with java.lang.String = js.native
-    val groupHeader: winjsLib.WinJSNs.UINs.ObjectType.groupHeader with java.lang.String = js.native
-    val header: winjsLib.WinJSNs.UINs.ObjectType.header with java.lang.String = js.native
-    val item: winjsLib.WinJSNs.UINs.ObjectType.item with java.lang.String = js.native
+    /* 3 */ val footer: winjsLib.WinJSNs.UINs.ObjectType.footer with scala.Double = js.native
+    /* 0 */ val groupHeader: winjsLib.WinJSNs.UINs.ObjectType.groupHeader with scala.Double = js.native
+    /* 2 */ val header: winjsLib.WinJSNs.UINs.ObjectType.header with scala.Double = js.native
+    /* 1 */ val item: winjsLib.WinJSNs.UINs.ObjectType.item with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.ObjectType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.ObjectType with scala.Double] = js.native
   }
   
   /**
@@ -1885,10 +1885,10 @@ object UINs extends js.Object {
     **/
   @js.native
   object Orientation extends js.Object {
-    val horizontal: winjsLib.WinJSNs.UINs.Orientation.horizontal with java.lang.String = js.native
-    val vertical: winjsLib.WinJSNs.UINs.Orientation.vertical with java.lang.String = js.native
+    /* 0 */ val horizontal: winjsLib.WinJSNs.UINs.Orientation.horizontal with scala.Double = js.native
+    /* 1 */ val vertical: winjsLib.WinJSNs.UINs.Orientation.vertical with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.Orientation with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.Orientation with scala.Double] = js.native
   }
   
   /**
@@ -1896,12 +1896,12 @@ object UINs extends js.Object {
     **/
   @js.native
   object PageNavigationAnimation extends js.Object {
-    val continuum: winjsLib.WinJSNs.UINs.PageNavigationAnimation.continuum with java.lang.String = js.native
-    val enterPage: winjsLib.WinJSNs.UINs.PageNavigationAnimation.enterPage with java.lang.String = js.native
-    val slide: winjsLib.WinJSNs.UINs.PageNavigationAnimation.slide with java.lang.String = js.native
-    val turnstile: winjsLib.WinJSNs.UINs.PageNavigationAnimation.turnstile with java.lang.String = js.native
+    /* 3 */ val continuum: winjsLib.WinJSNs.UINs.PageNavigationAnimation.continuum with scala.Double = js.native
+    /* 2 */ val enterPage: winjsLib.WinJSNs.UINs.PageNavigationAnimation.enterPage with scala.Double = js.native
+    /* 1 */ val slide: winjsLib.WinJSNs.UINs.PageNavigationAnimation.slide with scala.Double = js.native
+    /* 0 */ val turnstile: winjsLib.WinJSNs.UINs.PageNavigationAnimation.turnstile with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.PageNavigationAnimation with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.PageNavigationAnimation with scala.Double] = js.native
   }
   
   /**
@@ -2018,11 +2018,11 @@ object UINs extends js.Object {
     **/
   @js.native
   object SelectionMode extends js.Object {
-    val multi: winjsLib.WinJSNs.UINs.SelectionMode.multi with java.lang.String = js.native
-    val none: winjsLib.WinJSNs.UINs.SelectionMode.none with java.lang.String = js.native
-    val single: winjsLib.WinJSNs.UINs.SelectionMode.single with java.lang.String = js.native
+    /* 2 */ val multi: winjsLib.WinJSNs.UINs.SelectionMode.multi with scala.Double = js.native
+    /* 0 */ val none: winjsLib.WinJSNs.UINs.SelectionMode.none with scala.Double = js.native
+    /* 1 */ val single: winjsLib.WinJSNs.UINs.SelectionMode.single with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.SelectionMode with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.SelectionMode with scala.Double] = js.native
   }
   
   /* static members */
@@ -2112,10 +2112,10 @@ object UINs extends js.Object {
     **/
   @js.native
   object SwipeBehavior extends js.Object {
-    val none: winjsLib.WinJSNs.UINs.SwipeBehavior.none with java.lang.String = js.native
-    val select: winjsLib.WinJSNs.UINs.SwipeBehavior.select with java.lang.String = js.native
+    /* 1 */ val none: winjsLib.WinJSNs.UINs.SwipeBehavior.none with scala.Double = js.native
+    /* 0 */ val select: winjsLib.WinJSNs.UINs.SwipeBehavior.select with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.SwipeBehavior with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.SwipeBehavior with scala.Double] = js.native
   }
   
   /* static members */
@@ -2132,12 +2132,12 @@ object UINs extends js.Object {
     **/
   @js.native
   object TapBehavior extends js.Object {
-    val directSelect: winjsLib.WinJSNs.UINs.TapBehavior.directSelect with java.lang.String = js.native
-    val invokeOnly: winjsLib.WinJSNs.UINs.TapBehavior.invokeOnly with java.lang.String = js.native
-    val none: winjsLib.WinJSNs.UINs.TapBehavior.none with java.lang.String = js.native
-    val toggleSelect: winjsLib.WinJSNs.UINs.TapBehavior.toggleSelect with java.lang.String = js.native
+    /* 0 */ val directSelect: winjsLib.WinJSNs.UINs.TapBehavior.directSelect with scala.Double = js.native
+    /* 2 */ val invokeOnly: winjsLib.WinJSNs.UINs.TapBehavior.invokeOnly with scala.Double = js.native
+    /* 3 */ val none: winjsLib.WinJSNs.UINs.TapBehavior.none with scala.Double = js.native
+    /* 1 */ val toggleSelect: winjsLib.WinJSNs.UINs.TapBehavior.toggleSelect with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.TapBehavior with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.TapBehavior with scala.Double] = js.native
   }
   
   /* static members */

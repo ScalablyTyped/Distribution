@@ -52,17 +52,17 @@ object VideoEncodingQuality extends js.Object {
   sealed trait wvga
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingQuality
   
-  val auto: auto with java.lang.String = js.native
-  val hd1080p: hd1080p with java.lang.String = js.native
-  val hd720p: hd720p with java.lang.String = js.native
-  val ntsc: ntsc with java.lang.String = js.native
-  val pal: pal with java.lang.String = js.native
-  val qvga: qvga with java.lang.String = js.native
-  val vga: vga with java.lang.String = js.native
-  val wvga: wvga with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 1 */ val hd1080p: hd1080p with scala.Double = js.native
+  /* 2 */ val hd720p: hd720p with scala.Double = js.native
+  /* 4 */ val ntsc: ntsc with scala.Double = js.native
+  /* 5 */ val pal: pal with scala.Double = js.native
+  /* 7 */ val qvga: qvga with scala.Double = js.native
+  /* 6 */ val vga: vga with scala.Double = js.native
+  /* 3 */ val wvga: wvga with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingQuality with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingQuality with scala.Double
   ] = js.native
 }
 

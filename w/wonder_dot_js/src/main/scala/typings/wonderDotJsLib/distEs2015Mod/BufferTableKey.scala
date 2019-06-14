@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("wonder.js/dist/es2015", "BufferTableKey")
 @js.native
 object BufferTableKey extends js.Object {
-  val PROCEDURAL_INDEX: wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_INDEX with java.lang.String = js.native
-  val PROCEDURAL_VERTEX: wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_VERTEX with java.lang.String = js.native
+  /* 1 */ val PROCEDURAL_INDEX: wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_INDEX with scala.Double = js.native
+  /* 0 */ val PROCEDURAL_VERTEX: wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_VERTEX with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey with scala.Double
   ] = js.native
 }
 

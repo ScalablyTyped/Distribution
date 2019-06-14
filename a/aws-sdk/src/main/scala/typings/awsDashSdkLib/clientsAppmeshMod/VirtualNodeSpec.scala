@@ -11,7 +11,8 @@ trait VirtualNodeSpec extends js.Object {
     */
   var backends: js.UndefOr[Backends] = js.undefined
   /**
-    * The listeners that the virtual node is expected to receive inbound traffic from. Currently only one listener is supported per virtual node.
+    * The listeners that the virtual node is expected to receive inbound traffic from.
+    Currently only one listener is supported per virtual node.
     */
   var listeners: js.UndefOr[Listeners] = js.undefined
   /**

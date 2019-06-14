@@ -21,9 +21,9 @@ object ResponsiveType extends js.Object {
   sealed trait Popup
     extends ejDotWebDotAllLib.ejNs.ToolbarNs.ResponsiveType
   
-  val Inline: Inline with java.lang.String = js.native
-  val Popup: Popup with java.lang.String = js.native
+  /* 1 */ val Inline: Inline with scala.Double = js.native
+  /* 0 */ val Popup: Popup with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ToolbarNs.ResponsiveType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ToolbarNs.ResponsiveType with scala.Double] = js.native
 }
 

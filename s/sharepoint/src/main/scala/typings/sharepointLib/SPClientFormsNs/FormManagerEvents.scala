@@ -45,14 +45,14 @@ object FormManagerEvents extends js.Object {
   sealed trait Event_RegisterControlValidator
     extends sharepointLib.SPClientFormsNs.FormManagerEvents
   
-  val Event_GetControlValueCallback: Event_GetControlValueCallback with java.lang.String = js.native
-  val Event_GetHasValueChangedCallback: Event_GetHasValueChangedCallback with java.lang.String = js.native
-  val Event_OnControlFocusSetCallback: Event_OnControlFocusSetCallback with java.lang.String = js.native
-  val Event_OnControlInitializedCallback: Event_OnControlInitializedCallback with java.lang.String = js.native
-  val Event_OnControlValidationError: Event_OnControlValidationError with java.lang.String = js.native
-  val Event_OnControlValueChanged: Event_OnControlValueChanged with java.lang.String = js.native
-  val Event_RegisterControlValidator: Event_RegisterControlValidator with java.lang.String = js.native
+  /* 3 */ val Event_GetControlValueCallback: Event_GetControlValueCallback with scala.Double = js.native
+  /* 6 */ val Event_GetHasValueChangedCallback: Event_GetHasValueChangedCallback with scala.Double = js.native
+  /* 2 */ val Event_OnControlFocusSetCallback: Event_OnControlFocusSetCallback with scala.Double = js.native
+  /* 1 */ val Event_OnControlInitializedCallback: Event_OnControlInitializedCallback with scala.Double = js.native
+  /* 4 */ val Event_OnControlValidationError: Event_OnControlValidationError with scala.Double = js.native
+  /* 0 */ val Event_OnControlValueChanged: Event_OnControlValueChanged with scala.Double = js.native
+  /* 5 */ val Event_RegisterControlValidator: Event_RegisterControlValidator with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientFormsNs.FormManagerEvents with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientFormsNs.FormManagerEvents with scala.Double] = js.native
 }
 

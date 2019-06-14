@@ -40,14 +40,14 @@ object PersonalSiteCapabilities extends js.Object {
   sealed trait storage
     extends sharepointLib.SPNs.UserProfilesNs.PersonalSiteCapabilities
   
-  val education: education with java.lang.String = js.native
-  val guest: guest with java.lang.String = js.native
-  val myTasksDashboard: myTasksDashboard with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val profile: profile with java.lang.String = js.native
-  val social: social with java.lang.String = js.native
-  val storage: storage with java.lang.String = js.native
+  /* 5 */ val education: education with scala.Double = js.native
+  /* 6 */ val guest: guest with scala.Double = js.native
+  /* 4 */ val myTasksDashboard: myTasksDashboard with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val profile: profile with scala.Double = js.native
+  /* 2 */ val social: social with scala.Double = js.native
+  /* 3 */ val storage: storage with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.PersonalSiteCapabilities with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UserProfilesNs.PersonalSiteCapabilities with scala.Double] = js.native
 }
 

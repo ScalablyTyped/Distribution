@@ -75,23 +75,23 @@ object DateTimeCalendarType extends js.Object {
   sealed trait UmAlQura
     extends sharepointLib.SPClientTemplatesNs.DateTimeCalendarType
   
-  val ChineseLunar: ChineseLunar with java.lang.String = js.native
-  val Gregorian: Gregorian with java.lang.String = js.native
-  val GregorianArabic: GregorianArabic with java.lang.String = js.native
-  val GregorianMEFrench: GregorianMEFrench with java.lang.String = js.native
-  val GregorianXLITEnglish: GregorianXLITEnglish with java.lang.String = js.native
-  val GregorianXLITFrench: GregorianXLITFrench with java.lang.String = js.native
-  val Hebrew: Hebrew with java.lang.String = js.native
-  val Hijri: Hijri with java.lang.String = js.native
-  val Japan: Japan with java.lang.String = js.native
-  val Korea: Korea with java.lang.String = js.native
-  val KoreaJapanLunar: KoreaJapanLunar with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val SakaEra: SakaEra with java.lang.String = js.native
-  val Taiwan: Taiwan with java.lang.String = js.native
-  val Thai: Thai with java.lang.String = js.native
-  val UmAlQura: UmAlQura with java.lang.String = js.native
+  /* 13 */ val ChineseLunar: ChineseLunar with scala.Double = js.native
+  /* 1 */ val Gregorian: Gregorian with scala.Double = js.native
+  /* 9 */ val GregorianArabic: GregorianArabic with scala.Double = js.native
+  /* 8 */ val GregorianMEFrench: GregorianMEFrench with scala.Double = js.native
+  /* 10 */ val GregorianXLITEnglish: GregorianXLITEnglish with scala.Double = js.native
+  /* 11 */ val GregorianXLITFrench: GregorianXLITFrench with scala.Double = js.native
+  /* 7 */ val Hebrew: Hebrew with scala.Double = js.native
+  /* 5 */ val Hijri: Hijri with scala.Double = js.native
+  /* 2 */ val Japan: Japan with scala.Double = js.native
+  /* 4 */ val Korea: Korea with scala.Double = js.native
+  /* 12 */ val KoreaJapanLunar: KoreaJapanLunar with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 14 */ val SakaEra: SakaEra with scala.Double = js.native
+  /* 3 */ val Taiwan: Taiwan with scala.Double = js.native
+  /* 6 */ val Thai: Thai with scala.Double = js.native
+  /* 15 */ val UmAlQura: UmAlQura with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPClientTemplatesNs.DateTimeCalendarType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPClientTemplatesNs.DateTimeCalendarType with scala.Double] = js.native
 }
 

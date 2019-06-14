@@ -32,13 +32,13 @@ object WiFiDirectServiceSessionStatus extends js.Object {
   sealed trait requested
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceSessionStatus
   
-  val closed: closed with java.lang.String = js.native
-  val initiated: initiated with java.lang.String = js.native
-  val open: open with java.lang.String = js.native
-  val requested: requested with java.lang.String = js.native
+  /* 0 */ val closed: closed with scala.Double = js.native
+  /* 1 */ val initiated: initiated with scala.Double = js.native
+  /* 3 */ val open: open with scala.Double = js.native
+  /* 2 */ val requested: requested with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceSessionStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.ServicesNs.WiFiDirectServiceSessionStatus with scala.Double
   ] = js.native
 }
 

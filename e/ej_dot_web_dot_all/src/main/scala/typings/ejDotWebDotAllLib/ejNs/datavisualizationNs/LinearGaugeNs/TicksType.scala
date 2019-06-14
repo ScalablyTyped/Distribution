@@ -21,11 +21,11 @@ object TicksType extends js.Object {
   sealed trait Minorinterval
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.TicksType
   
-  val Majorinterval: Majorinterval with java.lang.String = js.native
-  val Minorinterval: Minorinterval with java.lang.String = js.native
+  /* 0 */ val Majorinterval: Majorinterval with scala.Double = js.native
+  /* 1 */ val Minorinterval: Minorinterval with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.TicksType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.TicksType with scala.Double
   ] = js.native
 }
 

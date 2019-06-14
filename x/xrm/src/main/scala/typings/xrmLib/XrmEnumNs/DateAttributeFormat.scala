@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
 */
 trait DateAttributeFormat extends js.Object
 
+object DateAttributeFormat {
+  @scala.inline
+  def Date: xrmLib.xrmLibStrings.date = this.cast("date")
+  @scala.inline
+  def DateTime: xrmLib.xrmLibStrings.datetime = this.cast("datetime")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

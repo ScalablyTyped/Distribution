@@ -19,11 +19,11 @@ object EBufferDataType extends js.Object {
   sealed trait VERTICE
     extends wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType
   
-  val INDICE: INDICE with java.lang.String = js.native
-  val VERTICE: VERTICE with java.lang.String = js.native
+  /* 1 */ val INDICE: INDICE with scala.Double = js.native
+  /* 0 */ val VERTICE: VERTICE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType with scala.Double
   ] = js.native
 }
 

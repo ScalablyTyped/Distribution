@@ -37,12 +37,12 @@ object SmsMessageClass extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageClass
   
-  val class0: class0 with java.lang.String = js.native
-  val class1: class1 with java.lang.String = js.native
-  val class2: class2 with java.lang.String = js.native
-  val class3: class3 with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val class0: class0 with scala.Double = js.native
+  /* 2 */ val class1: class1 with scala.Double = js.native
+  /* 3 */ val class2: class2 with scala.Double = js.native
+  /* 4 */ val class3: class3 with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageClass with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageClass with scala.Double] = js.native
 }
 

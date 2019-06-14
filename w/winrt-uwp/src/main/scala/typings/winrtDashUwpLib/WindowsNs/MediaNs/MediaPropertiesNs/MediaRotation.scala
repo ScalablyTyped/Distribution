@@ -32,13 +32,13 @@ object MediaRotation extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaRotation
   
-  val clockwise180Degrees: clockwise180Degrees with java.lang.String = js.native
-  val clockwise270Degrees: clockwise270Degrees with java.lang.String = js.native
-  val clockwise90Degrees: clockwise90Degrees with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val clockwise180Degrees: clockwise180Degrees with scala.Double = js.native
+  /* 3 */ val clockwise270Degrees: clockwise270Degrees with scala.Double = js.native
+  /* 1 */ val clockwise90Degrees: clockwise90Degrees with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaRotation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaRotation with scala.Double
   ] = js.native
 }
 

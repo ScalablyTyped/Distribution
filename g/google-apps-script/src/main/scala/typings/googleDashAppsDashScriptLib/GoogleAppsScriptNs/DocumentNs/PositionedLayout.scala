@@ -31,14 +31,14 @@ object PositionedLayout extends js.Object {
   sealed trait WRAP_TEXT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.PositionedLayout
   
-  val ABOVE_TEXT: ABOVE_TEXT with java.lang.String = js.native
-  val BREAK_BOTH: BREAK_BOTH with java.lang.String = js.native
-  val BREAK_LEFT: BREAK_LEFT with java.lang.String = js.native
-  val BREAK_RIGHT: BREAK_RIGHT with java.lang.String = js.native
-  val WRAP_TEXT: WRAP_TEXT with java.lang.String = js.native
+  /* 0 */ val ABOVE_TEXT: ABOVE_TEXT with scala.Double = js.native
+  /* 1 */ val BREAK_BOTH: BREAK_BOTH with scala.Double = js.native
+  /* 2 */ val BREAK_LEFT: BREAK_LEFT with scala.Double = js.native
+  /* 3 */ val BREAK_RIGHT: BREAK_RIGHT with scala.Double = js.native
+  /* 4 */ val WRAP_TEXT: WRAP_TEXT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.PositionedLayout with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.PositionedLayout with scala.Double
   ] = js.native
 }
 

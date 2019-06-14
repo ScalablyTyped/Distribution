@@ -22,9 +22,9 @@ object MapTypeControlStyle extends js.Object {
   sealed trait DROPDOWN
     extends navermapsLib.naverNs.mapsNs.MapTypeControlStyle
   
-  val BUTTON: BUTTON with java.lang.String = js.native
-  val DROPDOWN: DROPDOWN with java.lang.String = js.native
+  /* 0 */ val BUTTON: BUTTON with scala.Double = js.native
+  /* 1 */ val DROPDOWN: DROPDOWN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[navermapsLib.naverNs.mapsNs.MapTypeControlStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.MapTypeControlStyle with scala.Double] = js.native
 }
 

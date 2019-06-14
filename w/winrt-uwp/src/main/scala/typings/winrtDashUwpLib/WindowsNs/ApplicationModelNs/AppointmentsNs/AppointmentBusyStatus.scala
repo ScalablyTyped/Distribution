@@ -37,14 +37,14 @@ object AppointmentBusyStatus extends js.Object {
   sealed trait workingElsewhere
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentBusyStatus
   
-  val busy: busy with java.lang.String = js.native
-  val free: free with java.lang.String = js.native
-  val outOfOffice: outOfOffice with java.lang.String = js.native
-  val tentative: tentative with java.lang.String = js.native
-  val workingElsewhere: workingElsewhere with java.lang.String = js.native
+  /* 0 */ val busy: busy with scala.Double = js.native
+  /* 2 */ val free: free with scala.Double = js.native
+  /* 3 */ val outOfOffice: outOfOffice with scala.Double = js.native
+  /* 1 */ val tentative: tentative with scala.Double = js.native
+  /* 4 */ val workingElsewhere: workingElsewhere with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentBusyStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentBusyStatus with scala.Double
   ] = js.native
 }
 

@@ -21,11 +21,11 @@ object TickAlignment extends js.Object {
   sealed trait RightOrBottom
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.TickAlignment
   
-  val LeftOrTop: LeftOrTop with java.lang.String = js.native
-  val RightOrBottom: RightOrBottom with java.lang.String = js.native
+  /* 0 */ val LeftOrTop: LeftOrTop with scala.Double = js.native
+  /* 1 */ val RightOrBottom: RightOrBottom with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.TickAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.TickAlignment with scala.Double
   ] = js.native
 }
 

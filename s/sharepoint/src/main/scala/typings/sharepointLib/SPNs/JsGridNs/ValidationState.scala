@@ -25,10 +25,10 @@ object ValidationState extends js.Object {
   sealed trait Valid
     extends sharepointLib.SPNs.JsGridNs.ValidationState
   
-  val Invalid: Invalid with java.lang.String = js.native
-  val Pending: Pending with java.lang.String = js.native
-  val Valid: Valid with java.lang.String = js.native
+  /* 2 */ val Invalid: Invalid with scala.Double = js.native
+  /* 1 */ val Pending: Pending with scala.Double = js.native
+  /* 0 */ val Valid: Valid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.ValidationState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.ValidationState with scala.Double] = js.native
 }
 

@@ -22,11 +22,11 @@ object MediaCapturePauseBehavior extends js.Object {
   sealed trait retainHardwareResources
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCapturePauseBehavior
   
-  val releaseHardwareResources: releaseHardwareResources with java.lang.String = js.native
-  val retainHardwareResources: retainHardwareResources with java.lang.String = js.native
+  /* 1 */ val releaseHardwareResources: releaseHardwareResources with scala.Double = js.native
+  /* 0 */ val retainHardwareResources: retainHardwareResources with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCapturePauseBehavior with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.MediaCapturePauseBehavior with scala.Double
   ] = js.native
 }
 

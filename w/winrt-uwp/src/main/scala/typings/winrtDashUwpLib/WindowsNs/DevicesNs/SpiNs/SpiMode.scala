@@ -32,11 +32,11 @@ object SpiMode extends js.Object {
   sealed trait mode3
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SpiNs.SpiMode
   
-  val mode0: mode0 with java.lang.String = js.native
-  val mode1: mode1 with java.lang.String = js.native
-  val mode2: mode2 with java.lang.String = js.native
-  val mode3: mode3 with java.lang.String = js.native
+  /* 0 */ val mode0: mode0 with scala.Double = js.native
+  /* 1 */ val mode1: mode1 with scala.Double = js.native
+  /* 2 */ val mode2: mode2 with scala.Double = js.native
+  /* 3 */ val mode3: mode3 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SpiNs.SpiMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.SpiNs.SpiMode with scala.Double] = js.native
 }
 

@@ -36,14 +36,14 @@ object CharacterType extends js.Object {
   sealed trait SixteenSegment
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.CharacterType
   
-  val EightCrossEightDotMatrix: EightCrossEightDotMatrix with java.lang.String = js.native
-  val EightCrossEightSquareMatrix: EightCrossEightSquareMatrix with java.lang.String = js.native
-  val FourteenSegment: FourteenSegment with java.lang.String = js.native
-  val SevenSegment: SevenSegment with java.lang.String = js.native
-  val SixteenSegment: SixteenSegment with java.lang.String = js.native
+  /* 3 */ val EightCrossEightDotMatrix: EightCrossEightDotMatrix with scala.Double = js.native
+  /* 4 */ val EightCrossEightSquareMatrix: EightCrossEightSquareMatrix with scala.Double = js.native
+  /* 1 */ val FourteenSegment: FourteenSegment with scala.Double = js.native
+  /* 0 */ val SevenSegment: SevenSegment with scala.Double = js.native
+  /* 2 */ val SixteenSegment: SixteenSegment with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.CharacterType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.CharacterType with scala.Double
   ] = js.native
 }
 

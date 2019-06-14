@@ -57,18 +57,18 @@ object XboxLiveQualityOfServiceMetric extends js.Object {
   sealed trait minOutboundBitsPerSecond
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveQualityOfServiceMetric
   
-  val averageInboundBitsPerSecond: averageInboundBitsPerSecond with java.lang.String = js.native
-  val averageLatencyInMilliseconds: averageLatencyInMilliseconds with java.lang.String = js.native
-  val averageOutboundBitsPerSecond: averageOutboundBitsPerSecond with java.lang.String = js.native
-  val maxInboundBitsPerSecond: maxInboundBitsPerSecond with java.lang.String = js.native
-  val maxLatencyInMilliseconds: maxLatencyInMilliseconds with java.lang.String = js.native
-  val maxOutboundBitsPerSecond: maxOutboundBitsPerSecond with java.lang.String = js.native
-  val minInboundBitsPerSecond: minInboundBitsPerSecond with java.lang.String = js.native
-  val minLatencyInMilliseconds: minLatencyInMilliseconds with java.lang.String = js.native
-  val minOutboundBitsPerSecond: minOutboundBitsPerSecond with java.lang.String = js.native
+  /* 6 */ val averageInboundBitsPerSecond: averageInboundBitsPerSecond with scala.Double = js.native
+  /* 0 */ val averageLatencyInMilliseconds: averageLatencyInMilliseconds with scala.Double = js.native
+  /* 3 */ val averageOutboundBitsPerSecond: averageOutboundBitsPerSecond with scala.Double = js.native
+  /* 8 */ val maxInboundBitsPerSecond: maxInboundBitsPerSecond with scala.Double = js.native
+  /* 2 */ val maxLatencyInMilliseconds: maxLatencyInMilliseconds with scala.Double = js.native
+  /* 5 */ val maxOutboundBitsPerSecond: maxOutboundBitsPerSecond with scala.Double = js.native
+  /* 7 */ val minInboundBitsPerSecond: minInboundBitsPerSecond with scala.Double = js.native
+  /* 1 */ val minLatencyInMilliseconds: minLatencyInMilliseconds with scala.Double = js.native
+  /* 4 */ val minOutboundBitsPerSecond: minOutboundBitsPerSecond with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveQualityOfServiceMetric with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.XboxLiveNs.XboxLiveQualityOfServiceMetric with scala.Double
   ] = js.native
 }
 

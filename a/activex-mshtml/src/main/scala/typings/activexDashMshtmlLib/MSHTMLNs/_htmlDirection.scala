@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _htmlDirection extends js.Object
 
+object _htmlDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def htmlDirectionBackward: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`-99999` = this.cast(-99999)
+  @scala.inline
+  def htmlDirectionForward: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`99999` = this.cast(99999)
+  @scala.inline
+  def htmlDirection_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

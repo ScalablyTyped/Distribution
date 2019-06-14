@@ -42,15 +42,15 @@ object EmailMailboxSmimeEncryptionAlgorithm extends js.Object {
   sealed trait tripleDes
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxSmimeEncryptionAlgorithm
   
-  val any: any with java.lang.String = js.native
-  val des: des with java.lang.String = js.native
-  val rc2128Bit: rc2128Bit with java.lang.String = js.native
-  val rc240Bit: rc240Bit with java.lang.String = js.native
-  val rc264Bit: rc264Bit with java.lang.String = js.native
-  val tripleDes: tripleDes with java.lang.String = js.native
+  /* 0 */ val any: any with scala.Double = js.native
+  /* 2 */ val des: des with scala.Double = js.native
+  /* 3 */ val rc2128Bit: rc2128Bit with scala.Double = js.native
+  /* 5 */ val rc240Bit: rc240Bit with scala.Double = js.native
+  /* 4 */ val rc264Bit: rc264Bit with scala.Double = js.native
+  /* 1 */ val tripleDes: tripleDes with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxSmimeEncryptionAlgorithm with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailMailboxSmimeEncryptionAlgorithm with scala.Double
   ] = js.native
 }
 

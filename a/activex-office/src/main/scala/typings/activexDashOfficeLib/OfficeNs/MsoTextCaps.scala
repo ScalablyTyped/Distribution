@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait MsoTextCaps extends js.Object
 
+object MsoTextCaps {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoAllCaps: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoCapsMixed: activexDashOfficeLib.activexDashOfficeLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  def msoNoCaps: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoSmallCaps: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+}
+

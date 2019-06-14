@@ -23,10 +23,10 @@ object FileLevel extends js.Object {
   sealed trait published
     extends sharepointLib.SPNs.FileLevel
   
-  val checkout: checkout with java.lang.String = js.native
-  val draft: draft with java.lang.String = js.native
-  val published: published with java.lang.String = js.native
+  /* 2 */ val checkout: checkout with scala.Double = js.native
+  /* 1 */ val draft: draft with scala.Double = js.native
+  /* 0 */ val published: published with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.FileLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.FileLevel with scala.Double] = js.native
 }
 

@@ -26,10 +26,10 @@ object ObjectMarkerVisibility extends js.Object {
   sealed trait TextOnly
     extends openui5Lib.sapNs.mNs.ObjectMarkerVisibility
   
-  val IconAndText: IconAndText with java.lang.String = js.native
-  val IconOnly: IconOnly with java.lang.String = js.native
-  val TextOnly: TextOnly with java.lang.String = js.native
+  /* 0 */ val IconAndText: IconAndText with scala.Double = js.native
+  /* 1 */ val IconOnly: IconOnly with scala.Double = js.native
+  /* 2 */ val TextOnly: TextOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ObjectMarkerVisibility with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ObjectMarkerVisibility with scala.Double] = js.native
 }
 

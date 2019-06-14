@@ -55,18 +55,18 @@ object RecycleBinItemType extends js.Object {
   sealed trait web
     extends sharepointLib.SPNs.RecycleBinItemType
   
-  val attachment: attachment with java.lang.String = js.native
-  val cascadeParent: cascadeParent with java.lang.String = js.native
-  val file: file with java.lang.String = js.native
-  val fileVersion: fileVersion with java.lang.String = js.native
-  val folder: folder with java.lang.String = js.native
-  val folderWithLists: folderWithLists with java.lang.String = js.native
-  val list: list with java.lang.String = js.native
-  val listItem: listItem with java.lang.String = js.native
-  val listItemVersion: listItemVersion with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val web: web with java.lang.String = js.native
+  /* 7 */ val attachment: attachment with scala.Double = js.native
+  /* 9 */ val cascadeParent: cascadeParent with scala.Double = js.native
+  /* 1 */ val file: file with scala.Double = js.native
+  /* 2 */ val fileVersion: fileVersion with scala.Double = js.native
+  /* 5 */ val folder: folder with scala.Double = js.native
+  /* 6 */ val folderWithLists: folderWithLists with scala.Double = js.native
+  /* 4 */ val list: list with scala.Double = js.native
+  /* 3 */ val listItem: listItem with scala.Double = js.native
+  /* 8 */ val listItemVersion: listItemVersion with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 10 */ val web: web with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.RecycleBinItemType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.RecycleBinItemType with scala.Double] = js.native
 }
 

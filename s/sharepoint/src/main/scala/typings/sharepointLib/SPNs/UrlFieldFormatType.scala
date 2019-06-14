@@ -19,9 +19,9 @@ object UrlFieldFormatType extends js.Object {
   sealed trait image
     extends sharepointLib.SPNs.UrlFieldFormatType
   
-  val hyperlink: hyperlink with java.lang.String = js.native
-  val image: image with java.lang.String = js.native
+  /* 0 */ val hyperlink: hyperlink with scala.Double = js.native
+  /* 1 */ val image: image with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UrlFieldFormatType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UrlFieldFormatType with scala.Double] = js.native
 }
 

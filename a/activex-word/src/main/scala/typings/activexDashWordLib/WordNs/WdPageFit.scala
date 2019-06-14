@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait WdPageFit extends js.Object
 
+object WdPageFit {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdPageFitBestFit: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdPageFitFullPage: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdPageFitNone: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdPageFitTextFit: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+}
+

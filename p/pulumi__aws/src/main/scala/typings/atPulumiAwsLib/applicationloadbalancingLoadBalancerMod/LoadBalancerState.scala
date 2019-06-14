@@ -47,11 +47,15 @@ trait LoadBalancerState extends js.Object {
   /**
     * The type of IP addresses used by the subnets for your load balancer. The possible values are `ipv4` and `dualstack`
     */
-  val ipAddressType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val ipAddressType: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType]
+  ] = js.undefined
   /**
     * The type of load balancer to create. Possible values are `application` or `network`. The default value is `application`.
     */
-  val loadBalancerType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val loadBalancerType: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType]
+  ] = js.undefined
   /**
     * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
     * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
@@ -107,8 +111,8 @@ object LoadBalancerState {
     enableHttp2: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     idleTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     internal: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    ipAddressType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    loadBalancerType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipAddressType: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.applicationloadbalancingIpAddressTypeMod.IpAddressType] = null,
+    loadBalancerType: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,

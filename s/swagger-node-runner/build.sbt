@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.6-dt-20190212Z-b0160f"
+version := "0.6-dt-20190212Z-95e895"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-df6178",
   "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-30f96b",
   "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20190520Z-24907a")
+  "org.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20190613Z-4bf8c2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

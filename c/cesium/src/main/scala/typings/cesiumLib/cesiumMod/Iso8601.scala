@@ -23,10 +23,10 @@ object Iso8601 extends js.Object {
   sealed trait MINIMUM_VALUE
     extends cesiumLib.cesiumMod.Iso8601
   
-  val MAXIMUM_INTERVAL: MAXIMUM_INTERVAL with java.lang.String = js.native
-  val MAXIMUM_VALUE: MAXIMUM_VALUE with java.lang.String = js.native
-  val MINIMUM_VALUE: MINIMUM_VALUE with java.lang.String = js.native
+  /* 2 */ val MAXIMUM_INTERVAL: MAXIMUM_INTERVAL with scala.Double = js.native
+  /* 1 */ val MAXIMUM_VALUE: MAXIMUM_VALUE with scala.Double = js.native
+  /* 0 */ val MINIMUM_VALUE: MINIMUM_VALUE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.Iso8601 with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.Iso8601 with scala.Double] = js.native
 }
 

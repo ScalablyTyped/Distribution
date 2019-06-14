@@ -23,10 +23,10 @@ object Intersect extends js.Object {
   sealed trait OUTSIDE
     extends cesiumLib.cesiumMod.Intersect
   
-  val INSIDE: INSIDE with java.lang.String = js.native
-  val INTERSECTING: INTERSECTING with java.lang.String = js.native
-  val OUTSIDE: OUTSIDE with java.lang.String = js.native
+  /* 2 */ val INSIDE: INSIDE with scala.Double = js.native
+  /* 1 */ val INTERSECTING: INTERSECTING with scala.Double = js.native
+  /* 0 */ val OUTSIDE: OUTSIDE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.Intersect with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.Intersect with scala.Double] = js.native
 }
 

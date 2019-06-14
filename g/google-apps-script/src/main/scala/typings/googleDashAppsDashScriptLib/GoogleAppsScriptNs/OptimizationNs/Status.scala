@@ -39,16 +39,16 @@ object Status extends js.Object {
   sealed trait UNBOUNDED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.OptimizationNs.Status
   
-  val ABNORMAL: ABNORMAL with java.lang.String = js.native
-  val FEASIBLE: FEASIBLE with java.lang.String = js.native
-  val INFEASIBLE: INFEASIBLE with java.lang.String = js.native
-  val MODEL_INVALID: MODEL_INVALID with java.lang.String = js.native
-  val NOT_SOLVED: NOT_SOLVED with java.lang.String = js.native
-  val OPTIMAL: OPTIMAL with java.lang.String = js.native
-  val UNBOUNDED: UNBOUNDED with java.lang.String = js.native
+  /* 4 */ val ABNORMAL: ABNORMAL with scala.Double = js.native
+  /* 1 */ val FEASIBLE: FEASIBLE with scala.Double = js.native
+  /* 2 */ val INFEASIBLE: INFEASIBLE with scala.Double = js.native
+  /* 5 */ val MODEL_INVALID: MODEL_INVALID with scala.Double = js.native
+  /* 6 */ val NOT_SOLVED: NOT_SOLVED with scala.Double = js.native
+  /* 0 */ val OPTIMAL: OPTIMAL with scala.Double = js.native
+  /* 3 */ val UNBOUNDED: UNBOUNDED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.OptimizationNs.Status with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.OptimizationNs.Status with scala.Double
   ] = js.native
 }
 

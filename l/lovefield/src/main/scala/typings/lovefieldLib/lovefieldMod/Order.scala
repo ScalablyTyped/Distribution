@@ -19,9 +19,9 @@ object Order extends js.Object {
   sealed trait DESC
     extends lovefieldLib.lovefieldMod.Order
   
-  val ASC: ASC with java.lang.String = js.native
-  val DESC: DESC with java.lang.String = js.native
+  /* 0 */ val ASC: ASC with scala.Double = js.native
+  /* 1 */ val DESC: DESC with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[lovefieldLib.lovefieldMod.Order with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[lovefieldLib.lovefieldMod.Order with scala.Double] = js.native
 }
 

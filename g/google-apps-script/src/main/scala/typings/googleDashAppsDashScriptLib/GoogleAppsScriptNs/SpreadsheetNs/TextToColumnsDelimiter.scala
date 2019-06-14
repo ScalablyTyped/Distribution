@@ -27,13 +27,13 @@ object TextToColumnsDelimiter extends js.Object {
   sealed trait SPACE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.TextToColumnsDelimiter
   
-  val COMMA: COMMA with java.lang.String = js.native
-  val PERIOD: PERIOD with java.lang.String = js.native
-  val SEMICOLON: SEMICOLON with java.lang.String = js.native
-  val SPACE: SPACE with java.lang.String = js.native
+  /* 0 */ val COMMA: COMMA with scala.Double = js.native
+  /* 2 */ val PERIOD: PERIOD with scala.Double = js.native
+  /* 1 */ val SEMICOLON: SEMICOLON with scala.Double = js.native
+  /* 3 */ val SPACE: SPACE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.TextToColumnsDelimiter with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.TextToColumnsDelimiter with scala.Double
   ] = js.native
 }
 

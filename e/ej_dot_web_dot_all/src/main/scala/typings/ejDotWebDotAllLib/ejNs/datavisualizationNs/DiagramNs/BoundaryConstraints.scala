@@ -26,12 +26,12 @@ object BoundaryConstraints extends js.Object {
   sealed trait Page
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BoundaryConstraints
   
-  val Diagram: Diagram with java.lang.String = js.native
-  val Infinite: Infinite with java.lang.String = js.native
-  val Page: Page with java.lang.String = js.native
+  /* 1 */ val Diagram: Diagram with scala.Double = js.native
+  /* 0 */ val Infinite: Infinite with scala.Double = js.native
+  /* 2 */ val Page: Page with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BoundaryConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BoundaryConstraints with scala.Double
   ] = js.native
 }
 

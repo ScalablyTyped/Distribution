@@ -29,9 +29,9 @@ object VisibilityMode extends js.Object {
   sealed trait hide
     extends microsoftDashAjaxLib.SysNs.UINs.VisibilityMode
   
-  val collapse: collapse with java.lang.String = js.native
-  val hide: hide with java.lang.String = js.native
+  /* 1 */ val collapse: collapse with scala.Double = js.native
+  /* 0 */ val hide: hide with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[microsoftDashAjaxLib.SysNs.UINs.VisibilityMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[microsoftDashAjaxLib.SysNs.UINs.VisibilityMode with scala.Double] = js.native
 }
 

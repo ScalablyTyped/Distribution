@@ -70,11 +70,11 @@ trait ClusterArgs extends js.Object {
   /**
     * The name of the database engine to be used for this DB cluster. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`
     */
-  val engine: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val engine: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.rdsEngineTypeMod.EngineType]] = js.undefined
   /**
     * The database engine mode. Valid values: `global`, `parallelquery`, `provisioned`, `serverless`. Defaults to: `provisioned`. See the [RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/aurora-serverless.html) for limitations when using `serverless`.
     */
-  val engineMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val engineMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.rdsEngineModeMod.EngineMode]] = js.undefined
   /**
     * The database engine version. Updating this argument results in an outage. See the [Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.html) and [Aurora Postgres](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Updates.html) documentation for your configured engine to determine this value. For example with Aurora MySQL 2, a potential value for this argument is `5.7.mysql_aurora.2.03.2`.
     */
@@ -181,8 +181,8 @@ object ClusterArgs {
     dbSubnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     deletionProtection: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     enabledCloudwatchLogsExports: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
-    engine: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    engineMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.rdsEngineTypeMod.EngineType] = null,
+    engineMode: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.rdsEngineModeMod.EngineMode] = null,
     engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     finalSnapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     globalClusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

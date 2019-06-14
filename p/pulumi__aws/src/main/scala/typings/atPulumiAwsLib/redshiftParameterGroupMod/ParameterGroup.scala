@@ -19,6 +19,10 @@ class ParameterGroup protected ()
   def this(name: java.lang.String, args: ParameterGroupArgs) = this()
   def this(name: java.lang.String, args: ParameterGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of parameter group
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The description of the Redshift parameter group. Defaults to "Managed by Terraform".
     */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
@@ -34,6 +38,10 @@ class ParameterGroup protected ()
     * A list of Redshift parameters to apply.
     */
   val parameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

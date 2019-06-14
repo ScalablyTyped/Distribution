@@ -41,13 +41,13 @@ object Tool extends js.Object {
   sealed trait ZoomPan
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Tool
   
-  val ContinuesDraw: ContinuesDraw with java.lang.String = js.native
-  val DrawOnce: DrawOnce with java.lang.String = js.native
-  val MultipleSelect: MultipleSelect with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val SingleSelect: SingleSelect with java.lang.String = js.native
-  val ZoomPan: ZoomPan with java.lang.String = js.native
+  /* 5 */ val ContinuesDraw: ContinuesDraw with scala.Double = js.native
+  /* 4 */ val DrawOnce: DrawOnce with scala.Double = js.native
+  /* 2 */ val MultipleSelect: MultipleSelect with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val SingleSelect: SingleSelect with scala.Double = js.native
+  /* 3 */ val ZoomPan: ZoomPan with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Tool with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Tool with scala.Double] = js.native
 }
 

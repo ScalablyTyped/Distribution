@@ -23,12 +23,12 @@ object TextAlignment extends js.Object {
   sealed trait SUPERSCRIPT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.TextAlignment
   
-  val NORMAL: NORMAL with java.lang.String = js.native
-  val SUBSCRIPT: SUBSCRIPT with java.lang.String = js.native
-  val SUPERSCRIPT: SUPERSCRIPT with java.lang.String = js.native
+  /* 0 */ val NORMAL: NORMAL with scala.Double = js.native
+  /* 2 */ val SUBSCRIPT: SUBSCRIPT with scala.Double = js.native
+  /* 1 */ val SUPERSCRIPT: SUPERSCRIPT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.TextAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DocumentNs.TextAlignment with scala.Double
   ] = js.native
 }
 

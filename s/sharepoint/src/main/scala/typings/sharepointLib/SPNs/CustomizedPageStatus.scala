@@ -23,10 +23,10 @@ object CustomizedPageStatus extends js.Object {
   sealed trait uncustomized
     extends sharepointLib.SPNs.CustomizedPageStatus
   
-  val customized: customized with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val uncustomized: uncustomized with java.lang.String = js.native
+  /* 2 */ val customized: customized with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val uncustomized: uncustomized with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.CustomizedPageStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.CustomizedPageStatus with scala.Double] = js.native
 }
 

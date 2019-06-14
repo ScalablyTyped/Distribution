@@ -37,14 +37,14 @@ object AppServiceConnectionStatus extends js.Object {
   sealed trait unknown
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppServiceNs.AppServiceConnectionStatus
   
-  val appNotInstalled: appNotInstalled with java.lang.String = js.native
-  val appServiceUnavailable: appServiceUnavailable with java.lang.String = js.native
-  val appUnavailable: appUnavailable with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val appNotInstalled: appNotInstalled with scala.Double = js.native
+  /* 3 */ val appServiceUnavailable: appServiceUnavailable with scala.Double = js.native
+  /* 2 */ val appUnavailable: appUnavailable with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 4 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppServiceNs.AppServiceConnectionStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppServiceNs.AppServiceConnectionStatus with scala.Double
   ] = js.native
 }
 

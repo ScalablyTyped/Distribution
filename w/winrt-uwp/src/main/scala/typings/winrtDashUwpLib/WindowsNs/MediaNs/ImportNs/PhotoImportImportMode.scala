@@ -32,13 +32,13 @@ object PhotoImportImportMode extends js.Object {
   sealed trait importEverything
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportImportMode
   
-  val ignoreSiblings: ignoreSiblings with java.lang.String = js.native
-  val ignoreSidecars: ignoreSidecars with java.lang.String = js.native
-  val ignoreSidecarsAndSiblings: ignoreSidecarsAndSiblings with java.lang.String = js.native
-  val importEverything: importEverything with java.lang.String = js.native
+  /* 2 */ val ignoreSiblings: ignoreSiblings with scala.Double = js.native
+  /* 1 */ val ignoreSidecars: ignoreSidecars with scala.Double = js.native
+  /* 3 */ val ignoreSidecarsAndSiblings: ignoreSidecarsAndSiblings with scala.Double = js.native
+  /* 0 */ val importEverything: importEverything with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportImportMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportImportMode with scala.Double
   ] = js.native
 }
 

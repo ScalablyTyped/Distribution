@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdMultipleWordConversionsMode extends js.Object
 
+object WdMultipleWordConversionsMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdHangulToHanja: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdHanjaToHangul: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

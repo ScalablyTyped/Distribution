@@ -15,6 +15,6 @@ sealed trait IconTabHeaderMode extends js.Object
 @js.native
 object IconTabHeaderMode extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.IconTabHeaderMode with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[openui5Lib.sapNs.mNs.IconTabHeaderMode with scala.Nothing] = js.native
 }
 

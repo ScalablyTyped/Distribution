@@ -32,11 +32,11 @@ object UnicodeNumericType extends js.Object {
   sealed trait numeric
     extends winrtDashUwpLib.WindowsNs.DataNs.TextNs.UnicodeNumericType
   
-  val decimal: decimal with java.lang.String = js.native
-  val digit: digit with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val numeric: numeric with java.lang.String = js.native
+  /* 1 */ val decimal: decimal with scala.Double = js.native
+  /* 2 */ val digit: digit with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 3 */ val numeric: numeric with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DataNs.TextNs.UnicodeNumericType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DataNs.TextNs.UnicodeNumericType with scala.Double] = js.native
 }
 

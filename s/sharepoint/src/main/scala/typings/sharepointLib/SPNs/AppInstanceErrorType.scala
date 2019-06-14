@@ -23,10 +23,10 @@ object AppInstanceErrorType extends js.Object {
   sealed trait transient
     extends sharepointLib.SPNs.AppInstanceErrorType
   
-  val app: app with java.lang.String = js.native
-  val configuration: configuration with java.lang.String = js.native
-  val transient: transient with java.lang.String = js.native
+  /* 2 */ val app: app with scala.Double = js.native
+  /* 1 */ val configuration: configuration with scala.Double = js.native
+  /* 0 */ val transient: transient with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.AppInstanceErrorType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.AppInstanceErrorType with scala.Double] = js.native
 }
 

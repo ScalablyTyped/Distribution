@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdEndnoteLocation extends js.Object
 
+object WdEndnoteLocation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdEndOfDocument: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdEndOfSection: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

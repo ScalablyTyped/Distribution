@@ -21,11 +21,9 @@ object LegendType extends js.Object {
   sealed trait Layers
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LegendType
   
-  val Bubbles: Bubbles with java.lang.String = js.native
-  val Layers: Layers with java.lang.String = js.native
+  /* 1 */ val Bubbles: Bubbles with scala.Double = js.native
+  /* 0 */ val Layers: Layers with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LegendType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LegendType with scala.Double] = js.native
 }
 

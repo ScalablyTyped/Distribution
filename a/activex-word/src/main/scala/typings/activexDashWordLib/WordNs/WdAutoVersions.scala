@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdAutoVersions extends js.Object
 
+object WdAutoVersions {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdAutoVersionOff: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdAutoVersionOnClose: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

@@ -47,14 +47,14 @@ object MarkerStyle extends js.Object {
   sealed trait undefined
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.MarkerStyle
   
-  val minus: minus with java.lang.String = js.native
-  val noNumber: noNumber with java.lang.String = js.native
-  val parentheses: parentheses with java.lang.String = js.native
-  val parenthesis: parenthesis with java.lang.String = js.native
-  val period: period with java.lang.String = js.native
-  val plain: plain with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 5 */ val minus: minus with scala.Double = js.native
+  /* 6 */ val noNumber: noNumber with scala.Double = js.native
+  /* 2 */ val parentheses: parentheses with scala.Double = js.native
+  /* 1 */ val parenthesis: parenthesis with scala.Double = js.native
+  /* 3 */ val period: period with scala.Double = js.native
+  /* 4 */ val plain: plain with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.MarkerStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.MarkerStyle with scala.Double] = js.native
 }
 

@@ -19,9 +19,9 @@ object ByteOrder extends js.Object {
   sealed trait littleEndian
     extends winrtLib.WindowsNs.StorageNs.StreamsNs.ByteOrder
   
-  val bigEndian: bigEndian with java.lang.String = js.native
-  val littleEndian: littleEndian with java.lang.String = js.native
+  /* 1 */ val bigEndian: bigEndian with scala.Double = js.native
+  /* 0 */ val littleEndian: littleEndian with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.StreamsNs.ByteOrder with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.StreamsNs.ByteOrder with scala.Double] = js.native
 }
 

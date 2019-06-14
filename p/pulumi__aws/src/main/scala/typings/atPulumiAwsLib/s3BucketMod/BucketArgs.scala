@@ -71,7 +71,9 @@ trait BucketArgs extends js.Object {
   /**
     * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a `terraform plan`. In this case, please make sure you use the verbose/specific version of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val policy: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
+  ] = js.undefined
   /**
     * If specified, the AWS region this bucket should reside in. Otherwise, the region used by the callee.
     */
@@ -144,7 +146,7 @@ object BucketArgs {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TargetBucketTargetPrefix]]
     ] = null,
     objectLockConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ObjectLockEnabledRule] = null,
-    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument] = null,
     region: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     replicationConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RoleRules] = null,
     requestPayer: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

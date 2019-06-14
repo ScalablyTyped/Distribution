@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait PpFixedFormatIntent extends js.Object
 
+object PpFixedFormatIntent {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ppFixedFormatIntentPrint: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ppFixedFormatIntentScreen: activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1` = this.cast(1)
+}
+

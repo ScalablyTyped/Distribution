@@ -44,14 +44,14 @@ object AccessibleLandmarkRole extends js.Object {
   sealed trait Search
     extends openui5Lib.sapNs.uiNs.coreNs.AccessibleLandmarkRole
   
-  val Banner: Banner with java.lang.String = js.native
-  val Complementary: Complementary with java.lang.String = js.native
-  val Main: Main with java.lang.String = js.native
-  val Navigation: Navigation with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Region: Region with java.lang.String = js.native
-  val Search: Search with java.lang.String = js.native
+  /* 0 */ val Banner: Banner with scala.Double = js.native
+  /* 1 */ val Complementary: Complementary with scala.Double = js.native
+  /* 2 */ val Main: Main with scala.Double = js.native
+  /* 3 */ val Navigation: Navigation with scala.Double = js.native
+  /* 4 */ val None: None with scala.Double = js.native
+  /* 5 */ val Region: Region with scala.Double = js.native
+  /* 6 */ val Search: Search with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.AccessibleLandmarkRole with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.AccessibleLandmarkRole with scala.Double] = js.native
 }
 

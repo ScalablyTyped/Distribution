@@ -52,17 +52,15 @@ object GpioPinDriveMode extends js.Object {
   sealed trait outputOpenSourcePullDown
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinDriveMode
   
-  val input: input with java.lang.String = js.native
-  val inputPullDown: inputPullDown with java.lang.String = js.native
-  val inputPullUp: inputPullUp with java.lang.String = js.native
-  val output: output with java.lang.String = js.native
-  val outputOpenDrain: outputOpenDrain with java.lang.String = js.native
-  val outputOpenDrainPullUp: outputOpenDrainPullUp with java.lang.String = js.native
-  val outputOpenSource: outputOpenSource with java.lang.String = js.native
-  val outputOpenSourcePullDown: outputOpenSourcePullDown with java.lang.String = js.native
+  /* 0 */ val input: input with scala.Double = js.native
+  /* 3 */ val inputPullDown: inputPullDown with scala.Double = js.native
+  /* 2 */ val inputPullUp: inputPullUp with scala.Double = js.native
+  /* 1 */ val output: output with scala.Double = js.native
+  /* 4 */ val outputOpenDrain: outputOpenDrain with scala.Double = js.native
+  /* 5 */ val outputOpenDrainPullUp: outputOpenDrainPullUp with scala.Double = js.native
+  /* 6 */ val outputOpenSource: outputOpenSource with scala.Double = js.native
+  /* 7 */ val outputOpenSourcePullDown: outputOpenSourcePullDown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinDriveMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPinDriveMode with scala.Double] = js.native
 }
 

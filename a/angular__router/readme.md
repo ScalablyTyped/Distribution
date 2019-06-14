@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__router
 
-Typings are for version 8.0.0
+Typings are for version 8.0.1
 
 ## Library description:
 Angular - the routing library
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * @license Angular v8.0.0
+ * @license Angular v8.0.1
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-iwshruntimelibrary"
-version := "0.0-dt-20190213Z-c9a185"
+version := "0.0-dt-20190213Z-011f5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

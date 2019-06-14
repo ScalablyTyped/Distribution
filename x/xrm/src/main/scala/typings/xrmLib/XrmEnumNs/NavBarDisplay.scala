@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait NavBarDisplay extends js.Object
 
+object NavBarDisplay {
+  @scala.inline
+  def Entity: xrmLib.xrmLibStrings.entity = this.cast("entity")
+  @scala.inline
+  def Off: xrmLib.xrmLibStrings.off = this.cast("off")
+  @scala.inline
+  def On: xrmLib.xrmLibStrings.on = this.cast("on")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

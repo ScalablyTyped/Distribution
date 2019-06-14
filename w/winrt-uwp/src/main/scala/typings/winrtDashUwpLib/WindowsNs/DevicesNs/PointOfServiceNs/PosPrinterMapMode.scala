@@ -32,13 +32,13 @@ object PosPrinterMapMode extends js.Object {
   sealed trait twips
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterMapMode
   
-  val dots: dots with java.lang.String = js.native
-  val english: english with java.lang.String = js.native
-  val metric: metric with java.lang.String = js.native
-  val twips: twips with java.lang.String = js.native
+  /* 0 */ val dots: dots with scala.Double = js.native
+  /* 2 */ val english: english with scala.Double = js.native
+  /* 3 */ val metric: metric with scala.Double = js.native
+  /* 1 */ val twips: twips with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterMapMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinterMapMode with scala.Double
   ] = js.native
 }
 

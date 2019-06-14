@@ -27,12 +27,12 @@ object InkRecognitionTarget extends js.Object {
   sealed trait selected
     extends winrtDashUwpLib.WindowsNs.UINs.InputNs.InkingNs.InkRecognitionTarget
   
-  val all: all with java.lang.String = js.native
-  val recent: recent with java.lang.String = js.native
-  val selected: selected with java.lang.String = js.native
+  /* 0 */ val all: all with scala.Double = js.native
+  /* 2 */ val recent: recent with scala.Double = js.native
+  /* 1 */ val selected: selected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.InputNs.InkingNs.InkRecognitionTarget with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.InputNs.InkingNs.InkRecognitionTarget with scala.Double
   ] = js.native
 }
 

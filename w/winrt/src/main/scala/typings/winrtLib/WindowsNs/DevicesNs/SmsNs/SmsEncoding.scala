@@ -31,12 +31,12 @@ object SmsEncoding extends js.Object {
   sealed trait unknown
     extends winrtLib.WindowsNs.DevicesNs.SmsNs.SmsEncoding
   
-  val gsmSevenBit: gsmSevenBit with java.lang.String = js.native
-  val optimal: optimal with java.lang.String = js.native
-  val sevenBitAscii: sevenBitAscii with java.lang.String = js.native
-  val unicode: unicode with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 4 */ val gsmSevenBit: gsmSevenBit with scala.Double = js.native
+  /* 1 */ val optimal: optimal with scala.Double = js.native
+  /* 2 */ val sevenBitAscii: sevenBitAscii with scala.Double = js.native
+  /* 3 */ val unicode: unicode with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsEncoding with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsEncoding with scala.Double] = js.native
 }
 

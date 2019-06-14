@@ -31,12 +31,12 @@ object FileAttributes extends js.Object {
   sealed trait temporary
     extends winrtLib.WindowsNs.StorageNs.FileAttributes
   
-  val archive: archive with java.lang.String = js.native
-  val directory: directory with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val readOnly: readOnly with java.lang.String = js.native
-  val temporary: temporary with java.lang.String = js.native
+  /* 3 */ val archive: archive with scala.Double = js.native
+  /* 2 */ val directory: directory with scala.Double = js.native
+  /* 0 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val readOnly: readOnly with scala.Double = js.native
+  /* 4 */ val temporary: temporary with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.FileAttributes with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.FileAttributes with scala.Double] = js.native
 }
 

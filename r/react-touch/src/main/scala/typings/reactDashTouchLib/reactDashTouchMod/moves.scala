@@ -43,15 +43,15 @@ object moves extends js.Object {
   sealed trait UPRIGHT
     extends reactDashTouchLib.reactDashTouchMod.moves
   
-  val DOWN: DOWN with java.lang.String = js.native
-  val DOWNLEFT: DOWNLEFT with java.lang.String = js.native
-  val DOWNRIGHT: DOWNRIGHT with java.lang.String = js.native
-  val LEFT: LEFT with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
-  val UP: UP with java.lang.String = js.native
-  val UPLEFT: UPLEFT with java.lang.String = js.native
-  val UPRIGHT: UPRIGHT with java.lang.String = js.native
+  /* 6 */ val DOWN: DOWN with scala.Double = js.native
+  /* 7 */ val DOWNLEFT: DOWNLEFT with scala.Double = js.native
+  /* 5 */ val DOWNRIGHT: DOWNRIGHT with scala.Double = js.native
+  /* 3 */ val LEFT: LEFT with scala.Double = js.native
+  /* 4 */ val RIGHT: RIGHT with scala.Double = js.native
+  /* 1 */ val UP: UP with scala.Double = js.native
+  /* 0 */ val UPLEFT: UPLEFT with scala.Double = js.native
+  /* 2 */ val UPRIGHT: UPRIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[reactDashTouchLib.reactDashTouchMod.moves with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[reactDashTouchLib.reactDashTouchMod.moves with scala.Double] = js.native
 }
 

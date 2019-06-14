@@ -211,8 +211,18 @@ class Loader ()
 @JSGlobal("PIXI.loaders.Loader")
 @js.native
 object Loader extends js.Object {
-  var Resource: pixiDotJsLib.TypeofClassResource = js.native
-  var async: pixiDotJsLib.TypeofClassResource = js.native
+  var Resource: pixiDotJsLib.TypeofResource with (org.scalablytyped.runtime.Instantiable3[
+    /* name */ java.lang.String, 
+    /* url */ java.lang.String | js.Array[java.lang.String], 
+    js.UndefOr[/* options */ pixiDotJsLib.PIXINs.loadersNs.LoaderOptions], 
+    pixiDotJsLib.PIXINs.loadersNs.Resource
+  ]) = js.native
+  var async: pixiDotJsLib.TypeofResource with (org.scalablytyped.runtime.Instantiable3[
+    /* name */ java.lang.String, 
+    /* url */ java.lang.String | js.Array[java.lang.String], 
+    js.UndefOr[/* options */ pixiDotJsLib.PIXINs.loadersNs.LoaderOptions], 
+    pixiDotJsLib.PIXINs.loadersNs.Resource
+  ]) = js.native
   @JSName("base64")
   var base64_Original: js.Function1[/* input */ java.lang.String, java.lang.String] = js.native
   @JSName("encodeBinary")

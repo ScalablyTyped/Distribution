@@ -12,6 +12,6 @@ sealed trait NormalMapTypes extends js.Object
 @js.native
 object NormalMapTypes extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.NormalMapTypes with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.NormalMapTypes with scala.Nothing] = js.native
 }
 

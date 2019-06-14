@@ -26,12 +26,12 @@ object SunburstVerticalAlignment extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstVerticalAlignment
   
-  val Bottom: Bottom with java.lang.String = js.native
-  val Middle: Middle with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 1 */ val Bottom: Bottom with scala.Double = js.native
+  /* 2 */ val Middle: Middle with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstVerticalAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstVerticalAlignment with scala.Double
   ] = js.native
 }
 

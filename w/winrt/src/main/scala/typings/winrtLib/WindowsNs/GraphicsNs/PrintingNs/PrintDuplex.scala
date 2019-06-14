@@ -35,13 +35,13 @@ object PrintDuplex extends js.Object {
   sealed trait twoSidedShortEdge
     extends winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintDuplex
   
-  val default: default with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val oneSided: oneSided with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val twoSidedLongEdge: twoSidedLongEdge with java.lang.String = js.native
-  val twoSidedShortEdge: twoSidedShortEdge with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 3 */ val oneSided: oneSided with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 5 */ val twoSidedLongEdge: twoSidedLongEdge with scala.Double = js.native
+  /* 4 */ val twoSidedShortEdge: twoSidedShortEdge with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintDuplex with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintDuplex with scala.Double] = js.native
 }
 

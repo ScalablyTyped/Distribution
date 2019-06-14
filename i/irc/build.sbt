@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "irc"
-version := "v0.3.12-dt-20190322Z-e5738d"
+version := "v0.3.12-dt-20190322Z-6c78fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -22,11 +22,11 @@ object AppointmentDetailsKind extends js.Object {
   sealed trait plainText
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentDetailsKind
   
-  val html: html with java.lang.String = js.native
-  val plainText: plainText with java.lang.String = js.native
+  /* 1 */ val html: html with scala.Double = js.native
+  /* 0 */ val plainText: plainText with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentDetailsKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.AppointmentsNs.AppointmentDetailsKind with scala.Double
   ] = js.native
 }
 

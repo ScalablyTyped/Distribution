@@ -15,8 +15,8 @@ object ScaleControlStyle extends js.Object {
   sealed trait DEFAULT
     extends googlemapsLib.googleNs.mapsNs.ScaleControlStyle
   
-  val DEFAULT: DEFAULT with java.lang.String = js.native
+  /* 0 */ val DEFAULT: DEFAULT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.ScaleControlStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.ScaleControlStyle with scala.Double] = js.native
 }
 

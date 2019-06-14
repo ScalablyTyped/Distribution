@@ -32,13 +32,13 @@ object DirectXAlphaMode extends js.Object {
   sealed trait unspecified
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.DirectXAlphaMode
   
-  val ignore: ignore with java.lang.String = js.native
-  val premultiplied: premultiplied with java.lang.String = js.native
-  val straight: straight with java.lang.String = js.native
-  val unspecified: unspecified with java.lang.String = js.native
+  /* 3 */ val ignore: ignore with scala.Double = js.native
+  /* 1 */ val premultiplied: premultiplied with scala.Double = js.native
+  /* 2 */ val straight: straight with scala.Double = js.native
+  /* 0 */ val unspecified: unspecified with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.DirectXAlphaMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.DirectXAlphaMode with scala.Double
   ] = js.native
 }
 

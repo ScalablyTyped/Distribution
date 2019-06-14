@@ -21,9 +21,9 @@ object ReadOnlyActiveState extends js.Object {
   sealed trait ReadOnlyDisabled
     extends sharepointLib.SPNs.JsGridNs.ReadOnlyActiveState
   
-  val ReadOnlyActive: ReadOnlyActive with java.lang.String = js.native
-  val ReadOnlyDisabled: ReadOnlyDisabled with java.lang.String = js.native
+  /* 0 */ val ReadOnlyActive: ReadOnlyActive with scala.Double = js.native
+  /* 1 */ val ReadOnlyDisabled: ReadOnlyDisabled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.JsGridNs.ReadOnlyActiveState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.JsGridNs.ReadOnlyActiveState with scala.Double] = js.native
 }
 

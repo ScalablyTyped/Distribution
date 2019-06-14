@@ -37,14 +37,14 @@ object UserConsentVerifierAvailability extends js.Object {
   sealed trait notConfiguredForUser
     extends winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.UserConsentVerifierAvailability
   
-  val available: available with java.lang.String = js.native
-  val deviceBusy: deviceBusy with java.lang.String = js.native
-  val deviceNotPresent: deviceNotPresent with java.lang.String = js.native
-  val disabledByPolicy: disabledByPolicy with java.lang.String = js.native
-  val notConfiguredForUser: notConfiguredForUser with java.lang.String = js.native
+  /* 0 */ val available: available with scala.Double = js.native
+  /* 4 */ val deviceBusy: deviceBusy with scala.Double = js.native
+  /* 1 */ val deviceNotPresent: deviceNotPresent with scala.Double = js.native
+  /* 3 */ val disabledByPolicy: disabledByPolicy with scala.Double = js.native
+  /* 2 */ val notConfiguredForUser: notConfiguredForUser with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.UserConsentVerifierAvailability with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.UINs.UserConsentVerifierAvailability with scala.Double
   ] = js.native
 }
 

@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait MsoTabStopType extends js.Object
 
+object MsoTabStopType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoTabStopCenter: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def msoTabStopDecimal: activexDashOfficeLib.activexDashOfficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def msoTabStopLeft: activexDashOfficeLib.activexDashOfficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def msoTabStopMixed: activexDashOfficeLib.activexDashOfficeLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  def msoTabStopRight: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+}
+

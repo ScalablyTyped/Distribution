@@ -31,11 +31,11 @@ object EditMode extends js.Object {
   sealed trait RowEditing
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.EditMode
   
-  val BatchEditing: BatchEditing with java.lang.String = js.native
-  val CellEditing: CellEditing with java.lang.String = js.native
-  val DialogEditing: DialogEditing with java.lang.String = js.native
-  val RowEditing: RowEditing with java.lang.String = js.native
+  /* 3 */ val BatchEditing: BatchEditing with scala.Double = js.native
+  /* 0 */ val CellEditing: CellEditing with scala.Double = js.native
+  /* 2 */ val DialogEditing: DialogEditing with scala.Double = js.native
+  /* 1 */ val RowEditing: RowEditing with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.EditMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.EditMode with scala.Double] = js.native
 }
 

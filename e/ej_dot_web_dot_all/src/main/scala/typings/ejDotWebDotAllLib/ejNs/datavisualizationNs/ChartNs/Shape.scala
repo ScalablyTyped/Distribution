@@ -106,26 +106,26 @@ object Shape extends js.Object {
   sealed trait VertLine
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Shape
   
-  val Circle: Circle with java.lang.String = js.native
-  val Cross: Cross with java.lang.String = js.native
-  val Diamond: Diamond with java.lang.String = js.native
-  val DownArrow: DownArrow with java.lang.String = js.native
-  val Ellipse: Ellipse with java.lang.String = js.native
-  val Hexagon: Hexagon with java.lang.String = js.native
-  val HorizLine: HorizLine with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val LeftArrow: LeftArrow with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Pentagon: Pentagon with java.lang.String = js.native
-  val Rectangle: Rectangle with java.lang.String = js.native
-  val RightArrow: RightArrow with java.lang.String = js.native
-  val SeriesType: SeriesType with java.lang.String = js.native
-  val Star: Star with java.lang.String = js.native
-  val Trapezoid: Trapezoid with java.lang.String = js.native
-  val Triangle: Triangle with java.lang.String = js.native
-  val UpArrow: UpArrow with java.lang.String = js.native
-  val VertLine: VertLine with java.lang.String = js.native
+  /* 3 */ val Circle: Circle with scala.Double = js.native
+  /* 4 */ val Cross: Cross with scala.Double = js.native
+  /* 7 */ val Diamond: Diamond with scala.Double = js.native
+  /* 16 */ val DownArrow: DownArrow with scala.Double = js.native
+  /* 13 */ val Ellipse: Ellipse with scala.Double = js.native
+  /* 10 */ val Hexagon: Hexagon with scala.Double = js.native
+  /* 5 */ val HorizLine: HorizLine with scala.Double = js.native
+  /* 17 */ val Image: Image with scala.Double = js.native
+  /* 1 */ val LeftArrow: LeftArrow with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 11 */ val Pentagon: Pentagon with scala.Double = js.native
+  /* 8 */ val Rectangle: Rectangle with scala.Double = js.native
+  /* 2 */ val RightArrow: RightArrow with scala.Double = js.native
+  /* 18 */ val SeriesType: SeriesType with scala.Double = js.native
+  /* 12 */ val Star: Star with scala.Double = js.native
+  /* 14 */ val Trapezoid: Trapezoid with scala.Double = js.native
+  /* 9 */ val Triangle: Triangle with scala.Double = js.native
+  /* 15 */ val UpArrow: UpArrow with scala.Double = js.native
+  /* 6 */ val VertLine: VertLine with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Shape with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Shape with scala.Double] = js.native
 }
 

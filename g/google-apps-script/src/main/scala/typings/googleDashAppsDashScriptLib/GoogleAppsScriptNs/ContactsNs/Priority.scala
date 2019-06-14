@@ -23,12 +23,12 @@ object Priority extends js.Object {
   sealed trait NORMAL
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Priority
   
-  val HIGH: HIGH with java.lang.String = js.native
-  val LOW: LOW with java.lang.String = js.native
-  val NORMAL: NORMAL with java.lang.String = js.native
+  /* 0 */ val HIGH: HIGH with scala.Double = js.native
+  /* 1 */ val LOW: LOW with scala.Double = js.native
+  /* 2 */ val NORMAL: NORMAL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Priority with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Priority with scala.Double
   ] = js.native
 }
 

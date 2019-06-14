@@ -47,16 +47,16 @@ object SpeechRecognitionAudioProblem extends js.Object {
   sealed trait tooSlow
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionAudioProblem
   
-  val noSignal: noSignal with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val tooFast: tooFast with java.lang.String = js.native
-  val tooLoud: tooLoud with java.lang.String = js.native
-  val tooNoisy: tooNoisy with java.lang.String = js.native
-  val tooQuiet: tooQuiet with java.lang.String = js.native
-  val tooSlow: tooSlow with java.lang.String = js.native
+  /* 2 */ val noSignal: noSignal with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 5 */ val tooFast: tooFast with scala.Double = js.native
+  /* 3 */ val tooLoud: tooLoud with scala.Double = js.native
+  /* 1 */ val tooNoisy: tooNoisy with scala.Double = js.native
+  /* 4 */ val tooQuiet: tooQuiet with scala.Double = js.native
+  /* 6 */ val tooSlow: tooSlow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionAudioProblem with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionAudioProblem with scala.Double
   ] = js.native
 }
 

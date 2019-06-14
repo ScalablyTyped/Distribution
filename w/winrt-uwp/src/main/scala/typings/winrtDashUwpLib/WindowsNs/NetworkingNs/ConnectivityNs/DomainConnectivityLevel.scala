@@ -27,12 +27,12 @@ object DomainConnectivityLevel extends js.Object {
   sealed trait unauthenticated
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.DomainConnectivityLevel
   
-  val authenticated: authenticated with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val unauthenticated: unauthenticated with java.lang.String = js.native
+  /* 2 */ val authenticated: authenticated with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val unauthenticated: unauthenticated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.DomainConnectivityLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.DomainConnectivityLevel with scala.Double
   ] = js.native
 }
 

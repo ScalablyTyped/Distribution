@@ -27,12 +27,12 @@ object PhoneLineChangeKind extends js.Object {
   sealed trait removed
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneLineChangeKind
   
-  val added: added with java.lang.String = js.native
-  val propertiesChanged: propertiesChanged with java.lang.String = js.native
-  val removed: removed with java.lang.String = js.native
+  /* 0 */ val added: added with scala.Double = js.native
+  /* 2 */ val propertiesChanged: propertiesChanged with scala.Double = js.native
+  /* 1 */ val removed: removed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneLineChangeKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.BackgroundNs.PhoneLineChangeKind with scala.Double
   ] = js.native
 }
 

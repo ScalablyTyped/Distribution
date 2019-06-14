@@ -23,12 +23,10 @@ object GCPressureAmount extends js.Object {
   sealed trait medium
     extends winrtLib.WindowsNs.FoundationNs.MetadataNs.GCPressureAmount
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val medium: medium with java.lang.String = js.native
+  /* 2 */ val high: high with scala.Double = js.native
+  /* 0 */ val low: low with scala.Double = js.native
+  /* 1 */ val medium: medium with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.FoundationNs.MetadataNs.GCPressureAmount with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.FoundationNs.MetadataNs.GCPressureAmount with scala.Double] = js.native
 }
 

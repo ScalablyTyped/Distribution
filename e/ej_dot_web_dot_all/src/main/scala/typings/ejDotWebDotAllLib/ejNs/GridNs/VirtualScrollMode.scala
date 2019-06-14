@@ -21,9 +21,9 @@ object VirtualScrollMode extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.GridNs.VirtualScrollMode
   
-  val Continuous: Continuous with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 1 */ val Continuous: Continuous with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.VirtualScrollMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.VirtualScrollMode with scala.Double] = js.native
 }
 

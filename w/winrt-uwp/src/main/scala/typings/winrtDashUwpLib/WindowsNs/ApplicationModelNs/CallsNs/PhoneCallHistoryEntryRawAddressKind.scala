@@ -22,11 +22,11 @@ object PhoneCallHistoryEntryRawAddressKind extends js.Object {
   sealed trait phoneNumber
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryEntryRawAddressKind
   
-  val custom: custom with java.lang.String = js.native
-  val phoneNumber: phoneNumber with java.lang.String = js.native
+  /* 1 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val phoneNumber: phoneNumber with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryEntryRawAddressKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryEntryRawAddressKind with scala.Double
   ] = js.native
 }
 

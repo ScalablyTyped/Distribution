@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlCategoryType extends js.Object
 
+object XlCategoryType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlAutomaticScale: activexDashOfficeLib.activexDashOfficeLibNumbers.`-4105` = this.cast(-4105)
+  @scala.inline
+  def xlCategoryScale: activexDashOfficeLib.activexDashOfficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlTimeScale: activexDashOfficeLib.activexDashOfficeLibNumbers.`3` = this.cast(3)
+}
+

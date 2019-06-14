@@ -16,3 +16,22 @@ import scala.scalajs.js.annotation._
 */
 trait AcExportXMLObjectType extends js.Object
 
+object AcExportXMLObjectType {
+  @scala.inline
+  def acExportForm: activexDashAccessLib.activexDashAccessLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def acExportFunction: activexDashAccessLib.activexDashAccessLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def acExportQuery: activexDashAccessLib.activexDashAccessLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def acExportReport: activexDashAccessLib.activexDashAccessLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def acExportServerView: activexDashAccessLib.activexDashAccessLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def acExportStoredProcedure: activexDashAccessLib.activexDashAccessLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def acExportTable: activexDashAccessLib.activexDashAccessLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

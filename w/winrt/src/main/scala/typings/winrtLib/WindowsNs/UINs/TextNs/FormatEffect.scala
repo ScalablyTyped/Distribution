@@ -27,11 +27,11 @@ object FormatEffect extends js.Object {
   sealed trait undefined
     extends winrtLib.WindowsNs.UINs.TextNs.FormatEffect
   
-  val off: off with java.lang.String = js.native
-  val on: on with java.lang.String = js.native
-  val toggle: toggle with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 0 */ val off: off with scala.Double = js.native
+  /* 1 */ val on: on with scala.Double = js.native
+  /* 2 */ val toggle: toggle with scala.Double = js.native
+  /* 3 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.FormatEffect with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.FormatEffect with scala.Double] = js.native
 }
 

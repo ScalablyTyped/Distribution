@@ -22,11 +22,11 @@ object GeofenceRemovalReason extends js.Object {
   sealed trait used
     extends winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeofencingNs.GeofenceRemovalReason
   
-  val expired: expired with java.lang.String = js.native
-  val used: used with java.lang.String = js.native
+  /* 1 */ val expired: expired with scala.Double = js.native
+  /* 0 */ val used: used with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeofencingNs.GeofenceRemovalReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeofencingNs.GeofenceRemovalReason with scala.Double
   ] = js.native
 }
 

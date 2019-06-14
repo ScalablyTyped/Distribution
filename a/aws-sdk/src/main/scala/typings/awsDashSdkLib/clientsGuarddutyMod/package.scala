@@ -56,6 +56,7 @@ package object clientsGuarddutyMod {
   type FindingType = java.lang.String
   type FindingTypes = js.Array[FindingType]
   type Findings = js.Array[Finding]
+  type GuardDutyArn = java.lang.String
   type Integer = scala.Double
   type Invitations = js.Array[Invitation]
   /* Rewritten from type alias, can be one of: 
@@ -100,6 +101,10 @@ package object clientsGuarddutyMod {
   type ProductCodes = js.Array[ProductCode]
   type SecurityGroups = js.Array[SecurityGroup]
   type String = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagMap = org.scalablytyped.runtime.StringDictionary[TagValue]
+  type TagValue = java.lang.String
   type Tags = js.Array[Tag]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.TXT

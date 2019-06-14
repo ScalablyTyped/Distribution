@@ -26,10 +26,10 @@ object BackgroundDesign extends js.Object {
   sealed trait Transparent
     extends openui5Lib.sapNs.mNs.BackgroundDesign
   
-  val Solid: Solid with java.lang.String = js.native
-  val Translucent: Translucent with java.lang.String = js.native
-  val Transparent: Transparent with java.lang.String = js.native
+  /* 0 */ val Solid: Solid with scala.Double = js.native
+  /* 1 */ val Translucent: Translucent with scala.Double = js.native
+  /* 2 */ val Transparent: Transparent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.BackgroundDesign with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.BackgroundDesign with scala.Double] = js.native
 }
 

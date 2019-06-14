@@ -27,12 +27,12 @@ object SocketSslErrorSeverity extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketSslErrorSeverity
   
-  val fatal: fatal with java.lang.String = js.native
-  val ignorable: ignorable with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 2 */ val fatal: fatal with scala.Double = js.native
+  /* 1 */ val ignorable: ignorable with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketSslErrorSeverity with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.SocketSslErrorSeverity with scala.Double
   ] = js.native
 }
 

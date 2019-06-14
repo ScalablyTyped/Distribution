@@ -26,10 +26,10 @@ object Precision extends js.Object {
   sealed trait Half
     extends ejDotWebDotAllLib.ejNs.RatingNs.Precision
   
-  val Exact: Exact with java.lang.String = js.native
-  val Full: Full with java.lang.String = js.native
-  val Half: Half with java.lang.String = js.native
+  /* 0 */ val Exact: Exact with scala.Double = js.native
+  /* 1 */ val Full: Full with scala.Double = js.native
+  /* 2 */ val Half: Half with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RatingNs.Precision with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RatingNs.Precision with scala.Double] = js.native
 }
 

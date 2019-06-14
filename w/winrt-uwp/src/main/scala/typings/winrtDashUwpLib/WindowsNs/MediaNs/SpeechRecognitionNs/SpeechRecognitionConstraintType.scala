@@ -32,13 +32,13 @@ object SpeechRecognitionConstraintType extends js.Object {
   sealed trait voiceCommandDefinition
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionConstraintType
   
-  val grammar: grammar with java.lang.String = js.native
-  val list: list with java.lang.String = js.native
-  val topic: topic with java.lang.String = js.native
-  val voiceCommandDefinition: voiceCommandDefinition with java.lang.String = js.native
+  /* 2 */ val grammar: grammar with scala.Double = js.native
+  /* 1 */ val list: list with scala.Double = js.native
+  /* 0 */ val topic: topic with scala.Double = js.native
+  /* 3 */ val voiceCommandDefinition: voiceCommandDefinition with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionConstraintType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionConstraintType with scala.Double
   ] = js.native
 }
 

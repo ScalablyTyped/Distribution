@@ -27,12 +27,12 @@ object ContactCardHeaderKind extends js.Object {
   sealed trait enterprise
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactCardHeaderKind
   
-  val basic: basic with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val enterprise: enterprise with java.lang.String = js.native
+  /* 1 */ val basic: basic with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 2 */ val enterprise: enterprise with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactCardHeaderKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactCardHeaderKind with scala.Double
   ] = js.native
 }
 

@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MFSignaturePromptInfoType extends js.Object
 
+object MFSignaturePromptInfoType {
+  @scala.inline
+  def Fixed: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def MetadataBased: mfilesLib.mfilesLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def Selectable: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

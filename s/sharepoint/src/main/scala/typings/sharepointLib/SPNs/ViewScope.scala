@@ -27,11 +27,11 @@ object ViewScope extends js.Object {
   sealed trait recursiveAll
     extends sharepointLib.SPNs.ViewScope
   
-  val defaultValue: defaultValue with java.lang.String = js.native
-  val filesOnly: filesOnly with java.lang.String = js.native
-  val recursive: recursive with java.lang.String = js.native
-  val recursiveAll: recursiveAll with java.lang.String = js.native
+  /* 0 */ val defaultValue: defaultValue with scala.Double = js.native
+  /* 3 */ val filesOnly: filesOnly with scala.Double = js.native
+  /* 1 */ val recursive: recursive with scala.Double = js.native
+  /* 2 */ val recursiveAll: recursiveAll with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.ViewScope with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.ViewScope with scala.Double] = js.native
 }
 

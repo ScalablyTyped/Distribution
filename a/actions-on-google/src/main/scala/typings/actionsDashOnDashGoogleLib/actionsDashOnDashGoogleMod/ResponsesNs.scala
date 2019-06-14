@@ -125,12 +125,12 @@ object ResponsesNs extends js.Object {
   def isSsml(text: java.lang.String): scala.Boolean = js.native
   @js.native
   object ImageDisplays extends js.Object {
-    val CROPPED: actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays.CROPPED with java.lang.String = js.native
-    val DEFAULT: actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays.DEFAULT with java.lang.String = js.native
-    val WHITE: actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays.WHITE with java.lang.String = js.native
+    /* 2 */ val CROPPED: actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays.CROPPED with scala.Double = js.native
+    /* 0 */ val DEFAULT: actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays.DEFAULT with scala.Double = js.native
+    /* 1 */ val WHITE: actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays.WHITE with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays with java.lang.String
+    def apply(value: scala.Double): js.UndefOr[
+        actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays with scala.Double
       ] = js.native
   }
   
@@ -142,11 +142,11 @@ object ResponsesNs extends js.Object {
       */
     @js.native
     object ImageType extends js.Object {
-      val ICON: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType.ICON with java.lang.String = js.native
-      val LARGE: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType.LARGE with java.lang.String = js.native
+      /* 0 */ val ICON: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType.ICON with scala.Double = js.native
+      /* 1 */ val LARGE: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType.LARGE with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType with scala.Double
           ] = js.native
     }
     
@@ -155,11 +155,11 @@ object ResponsesNs extends js.Object {
       */
     @js.native
     object Status extends js.Object {
-      val FINISHED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status.FINISHED with java.lang.String = js.native
-      val UNSPECIFIED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status.UNSPECIFIED with java.lang.String = js.native
+      /* 1 */ val FINISHED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status.FINISHED with scala.Double = js.native
+      /* 0 */ val UNSPECIFIED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status.UNSPECIFIED with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status with scala.Double
           ] = js.native
     }
     
@@ -168,11 +168,11 @@ object ResponsesNs extends js.Object {
       */
     @js.native
     object Type extends js.Object {
-      val AUDIO: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type.AUDIO with java.lang.String = js.native
-      val MEDIA_TYPE_UNSPECIFIED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type.MEDIA_TYPE_UNSPECIFIED with java.lang.String = js.native
+      /* 1 */ val AUDIO: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type.AUDIO with scala.Double = js.native
+      /* 0 */ val MEDIA_TYPE_UNSPECIFIED: actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type.MEDIA_TYPE_UNSPECIFIED with scala.Double = js.native
       @JSBracketAccess
-      def apply(value: java.lang.String): js.UndefOr[
-            actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type with java.lang.String
+      def apply(value: scala.Double): js.UndefOr[
+            actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type with scala.Double
           ] = js.native
     }
     

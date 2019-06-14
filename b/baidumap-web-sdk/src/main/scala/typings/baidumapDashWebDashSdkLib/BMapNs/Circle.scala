@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Circle protected () extends Overlay {
   def this(center: Point, radius: scala.Double) = this()
   def this(center: Point, radius: scala.Double, opts: CircleOptions) = this()
-  def addEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
+  def addEventListener(event: java.lang.String, handler: Callback): scala.Unit = js.native
   def disableEditing(): scala.Unit = js.native
   def disableMassClear(): scala.Unit = js.native
   def enableEditing(): scala.Unit = js.native
@@ -33,7 +33,7 @@ class Circle protected () extends Overlay {
   def onmouseover(event: baidumapDashWebDashSdkLib.Anon_Pixel): scala.Unit = js.native
   def onmouseup(event: baidumapDashWebDashSdkLib.Anon_Pixel): scala.Unit = js.native
   def onremove(event: baidumapDashWebDashSdkLib.Anon_Target): scala.Unit = js.native
-  def removeEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
+  def removeEventListener(event: java.lang.String, handler: Callback): scala.Unit = js.native
   def setCenter(center: Point): scala.Unit = js.native
   def setFillColor(color: java.lang.String): scala.Unit = js.native
   def setFillOpacity(opacity: scala.Double): scala.Unit = js.native

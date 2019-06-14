@@ -72,19 +72,19 @@ object ParagraphStyle extends js.Object {
   sealed trait undefined
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.ParagraphStyle
   
-  val heading1: heading1 with java.lang.String = js.native
-  val heading2: heading2 with java.lang.String = js.native
-  val heading3: heading3 with java.lang.String = js.native
-  val heading4: heading4 with java.lang.String = js.native
-  val heading5: heading5 with java.lang.String = js.native
-  val heading6: heading6 with java.lang.String = js.native
-  val heading7: heading7 with java.lang.String = js.native
-  val heading8: heading8 with java.lang.String = js.native
-  val heading9: heading9 with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val undefined: undefined with java.lang.String = js.native
+  /* 3 */ val heading1: heading1 with scala.Double = js.native
+  /* 4 */ val heading2: heading2 with scala.Double = js.native
+  /* 5 */ val heading3: heading3 with scala.Double = js.native
+  /* 6 */ val heading4: heading4 with scala.Double = js.native
+  /* 7 */ val heading5: heading5 with scala.Double = js.native
+  /* 8 */ val heading6: heading6 with scala.Double = js.native
+  /* 9 */ val heading7: heading7 with scala.Double = js.native
+  /* 10 */ val heading8: heading8 with scala.Double = js.native
+  /* 11 */ val heading9: heading9 with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 2 */ val normal: normal with scala.Double = js.native
+  /* 0 */ val undefined: undefined with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.ParagraphStyle with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.ParagraphStyle with scala.Double] = js.native
 }
 

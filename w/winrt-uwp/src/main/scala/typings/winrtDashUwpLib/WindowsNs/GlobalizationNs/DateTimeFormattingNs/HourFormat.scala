@@ -22,11 +22,11 @@ object HourFormat extends js.Object {
   sealed trait none
     extends winrtDashUwpLib.WindowsNs.GlobalizationNs.DateTimeFormattingNs.HourFormat
   
-  val default: default with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
+  /* 1 */ val default: default with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GlobalizationNs.DateTimeFormattingNs.HourFormat with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GlobalizationNs.DateTimeFormattingNs.HourFormat with scala.Double
   ] = js.native
 }
 

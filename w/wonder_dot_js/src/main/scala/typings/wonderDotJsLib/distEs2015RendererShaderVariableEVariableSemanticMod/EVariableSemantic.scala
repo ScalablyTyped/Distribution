@@ -83,27 +83,27 @@ object EVariableSemantic extends js.Object {
   sealed trait VIEW_INVERSE
     extends wonderDotJsLib.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic
   
-  val COLOR: COLOR with java.lang.String = js.native
-  val MODEL: MODEL with java.lang.String = js.native
-  val MODEL_INVERSE: MODEL_INVERSE with java.lang.String = js.native
-  val MODEL_INVERSE_TRANSPOSE: MODEL_INVERSE_TRANSPOSE with java.lang.String = js.native
-  val MODEL_VIEW: MODEL_VIEW with java.lang.String = js.native
-  val MODEL_VIEW_INVERSE: MODEL_VIEW_INVERSE with java.lang.String = js.native
-  val MODEL_VIEW_INVERSE_TRANSPOSE: MODEL_VIEW_INVERSE_TRANSPOSE with java.lang.String = js.native
-  val MODEL_VIEW_PROJECTION: MODEL_VIEW_PROJECTION with java.lang.String = js.native
-  val MODEL_VIEW_PROJECTION_INVERSE: MODEL_VIEW_PROJECTION_INVERSE with java.lang.String = js.native
-  val NORMAL: NORMAL with java.lang.String = js.native
-  val POSITION: POSITION with java.lang.String = js.native
-  val PROJECTION: PROJECTION with java.lang.String = js.native
-  val PROJECTION_INVERSE: PROJECTION_INVERSE with java.lang.String = js.native
-  val TANGENT: TANGENT with java.lang.String = js.native
-  val TEXCOORD: TEXCOORD with java.lang.String = js.native
-  val VIEW: VIEW with java.lang.String = js.native
-  val VIEWPORT: VIEWPORT with java.lang.String = js.native
-  val VIEW_INVERSE: VIEW_INVERSE with java.lang.String = js.native
+  /* 4 */ val COLOR: COLOR with scala.Double = js.native
+  /* 5 */ val MODEL: MODEL with scala.Double = js.native
+  /* 10 */ val MODEL_INVERSE: MODEL_INVERSE with scala.Double = js.native
+  /* 15 */ val MODEL_INVERSE_TRANSPOSE: MODEL_INVERSE_TRANSPOSE with scala.Double = js.native
+  /* 8 */ val MODEL_VIEW: MODEL_VIEW with scala.Double = js.native
+  /* 13 */ val MODEL_VIEW_INVERSE: MODEL_VIEW_INVERSE with scala.Double = js.native
+  /* 16 */ val MODEL_VIEW_INVERSE_TRANSPOSE: MODEL_VIEW_INVERSE_TRANSPOSE with scala.Double = js.native
+  /* 9 */ val MODEL_VIEW_PROJECTION: MODEL_VIEW_PROJECTION with scala.Double = js.native
+  /* 14 */ val MODEL_VIEW_PROJECTION_INVERSE: MODEL_VIEW_PROJECTION_INVERSE with scala.Double = js.native
+  /* 1 */ val NORMAL: NORMAL with scala.Double = js.native
+  /* 0 */ val POSITION: POSITION with scala.Double = js.native
+  /* 7 */ val PROJECTION: PROJECTION with scala.Double = js.native
+  /* 12 */ val PROJECTION_INVERSE: PROJECTION_INVERSE with scala.Double = js.native
+  /* 3 */ val TANGENT: TANGENT with scala.Double = js.native
+  /* 2 */ val TEXCOORD: TEXCOORD with scala.Double = js.native
+  /* 6 */ val VIEW: VIEW with scala.Double = js.native
+  /* 17 */ val VIEWPORT: VIEWPORT with scala.Double = js.native
+  /* 11 */ val VIEW_INVERSE: VIEW_INVERSE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic with scala.Double
   ] = js.native
 }
 

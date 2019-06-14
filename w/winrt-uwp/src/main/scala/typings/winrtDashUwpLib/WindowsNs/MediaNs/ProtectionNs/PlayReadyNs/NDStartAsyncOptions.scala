@@ -22,11 +22,11 @@ object NDStartAsyncOptions extends js.Object {
   sealed trait waitForLicenseDescriptor
     extends winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDStartAsyncOptions
   
-  val mutualAuthentication: mutualAuthentication with java.lang.String = js.native
-  val waitForLicenseDescriptor: waitForLicenseDescriptor with java.lang.String = js.native
+  /* 0 */ val mutualAuthentication: mutualAuthentication with scala.Double = js.native
+  /* 1 */ val waitForLicenseDescriptor: waitForLicenseDescriptor with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDStartAsyncOptions with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDStartAsyncOptions with scala.Double
   ] = js.native
 }
 

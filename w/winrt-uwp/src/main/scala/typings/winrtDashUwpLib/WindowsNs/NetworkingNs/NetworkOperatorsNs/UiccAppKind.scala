@@ -47,16 +47,16 @@ object UiccAppKind extends js.Object {
   sealed trait usim
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UiccAppKind
   
-  val csim: csim with java.lang.String = js.native
-  val isim: isim with java.lang.String = js.native
-  val mf: mf with java.lang.String = js.native
-  val mfRuim: mfRuim with java.lang.String = js.native
-  val mfSim: mfSim with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val usim: usim with java.lang.String = js.native
+  /* 5 */ val csim: csim with scala.Double = js.native
+  /* 6 */ val isim: isim with scala.Double = js.native
+  /* 1 */ val mf: mf with scala.Double = js.native
+  /* 3 */ val mfRuim: mfRuim with scala.Double = js.native
+  /* 2 */ val mfSim: mfSim with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
+  /* 4 */ val usim: usim with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UiccAppKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UiccAppKind with scala.Double
   ] = js.native
 }
 

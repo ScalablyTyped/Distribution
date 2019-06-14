@@ -31,14 +31,14 @@ object TriggerSource extends js.Object {
   sealed trait SPREADSHEETS
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.TriggerSource
   
-  val CALENDAR: CALENDAR with java.lang.String = js.native
-  val CLOCK: CLOCK with java.lang.String = js.native
-  val DOCUMENTS: DOCUMENTS with java.lang.String = js.native
-  val FORMS: FORMS with java.lang.String = js.native
-  val SPREADSHEETS: SPREADSHEETS with java.lang.String = js.native
+  /* 4 */ val CALENDAR: CALENDAR with scala.Double = js.native
+  /* 1 */ val CLOCK: CLOCK with scala.Double = js.native
+  /* 3 */ val DOCUMENTS: DOCUMENTS with scala.Double = js.native
+  /* 2 */ val FORMS: FORMS with scala.Double = js.native
+  /* 0 */ val SPREADSHEETS: SPREADSHEETS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.TriggerSource with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.TriggerSource with scala.Double
   ] = js.native
 }
 

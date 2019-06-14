@@ -19,11 +19,11 @@ object AuthorizationStatus extends js.Object {
   sealed trait REQUIRED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.AuthorizationStatus
   
-  val NOT_REQUIRED: NOT_REQUIRED with java.lang.String = js.native
-  val REQUIRED: REQUIRED with java.lang.String = js.native
+  /* 1 */ val NOT_REQUIRED: NOT_REQUIRED with scala.Double = js.native
+  /* 0 */ val REQUIRED: REQUIRED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.AuthorizationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ScriptNs.AuthorizationStatus with scala.Double
   ] = js.native
 }
 

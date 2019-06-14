@@ -27,11 +27,11 @@ object BlendingState extends js.Object {
   sealed trait PRE_MULTIPLIED_ALPHA_BLEND
     extends cesiumLib.cesiumMod.BlendingState
   
-  val ADDITIVE_BLEND: ADDITIVE_BLEND with java.lang.String = js.native
-  val ALPHA_BLEND: ALPHA_BLEND with java.lang.String = js.native
-  val DISABLED: DISABLED with java.lang.String = js.native
-  val PRE_MULTIPLIED_ALPHA_BLEND: PRE_MULTIPLIED_ALPHA_BLEND with java.lang.String = js.native
+  /* 3 */ val ADDITIVE_BLEND: ADDITIVE_BLEND with scala.Double = js.native
+  /* 1 */ val ALPHA_BLEND: ALPHA_BLEND with scala.Double = js.native
+  /* 0 */ val DISABLED: DISABLED with scala.Double = js.native
+  /* 2 */ val PRE_MULTIPLIED_ALPHA_BLEND: PRE_MULTIPLIED_ALPHA_BLEND with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.BlendingState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.BlendingState with scala.Double] = js.native
 }
 

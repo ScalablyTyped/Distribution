@@ -27,13 +27,13 @@ object ButtonSet extends js.Object {
   sealed trait YES_NO_CANCEL
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.ButtonSet
   
-  val OK: OK with java.lang.String = js.native
-  val OK_CANCEL: OK_CANCEL with java.lang.String = js.native
-  val YES_NO: YES_NO with java.lang.String = js.native
-  val YES_NO_CANCEL: YES_NO_CANCEL with java.lang.String = js.native
+  /* 0 */ val OK: OK with scala.Double = js.native
+  /* 1 */ val OK_CANCEL: OK_CANCEL with scala.Double = js.native
+  /* 2 */ val YES_NO: YES_NO with scala.Double = js.native
+  /* 3 */ val YES_NO_CANCEL: YES_NO_CANCEL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.ButtonSet with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.ButtonSet with scala.Double
   ] = js.native
 }
 

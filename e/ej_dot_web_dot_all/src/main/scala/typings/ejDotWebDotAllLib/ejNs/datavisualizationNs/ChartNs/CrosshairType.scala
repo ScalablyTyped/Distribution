@@ -21,11 +21,11 @@ object CrosshairType extends js.Object {
   sealed trait Trackball
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CrosshairType
   
-  val Crosshair: Crosshair with java.lang.String = js.native
-  val Trackball: Trackball with java.lang.String = js.native
+  /* 0 */ val Crosshair: Crosshair with scala.Double = js.native
+  /* 1 */ val Trackball: Trackball with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CrosshairType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.CrosshairType with scala.Double
   ] = js.native
 }
 

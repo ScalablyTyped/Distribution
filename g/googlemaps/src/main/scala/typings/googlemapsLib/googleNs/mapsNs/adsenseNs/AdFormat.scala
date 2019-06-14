@@ -83,25 +83,25 @@ object AdFormat extends js.Object {
   sealed trait X_LARGE_VERTICAL_LINK_UNIT
     extends googlemapsLib.googleNs.mapsNs.adsenseNs.AdFormat
   
-  val BANNER: BANNER with java.lang.String = js.native
-  val BUTTON: BUTTON with java.lang.String = js.native
-  val HALF_BANNER: HALF_BANNER with java.lang.String = js.native
-  val LARGE_HORIZONTAL_LINK_UNIT: LARGE_HORIZONTAL_LINK_UNIT with java.lang.String = js.native
-  val LARGE_RECTANGLE: LARGE_RECTANGLE with java.lang.String = js.native
-  val LARGE_VERTICAL_LINK_UNIT: LARGE_VERTICAL_LINK_UNIT with java.lang.String = js.native
-  val LEADERBOARD: LEADERBOARD with java.lang.String = js.native
-  val MEDIUM_RECTANGLE: MEDIUM_RECTANGLE with java.lang.String = js.native
-  val MEDIUM_VERTICAL_LINK_UNIT: MEDIUM_VERTICAL_LINK_UNIT with java.lang.String = js.native
-  val SKYSCRAPER: SKYSCRAPER with java.lang.String = js.native
-  val SMALL_HORIZONTAL_LINK_UNIT: SMALL_HORIZONTAL_LINK_UNIT with java.lang.String = js.native
-  val SMALL_RECTANGLE: SMALL_RECTANGLE with java.lang.String = js.native
-  val SMALL_SQUARE: SMALL_SQUARE with java.lang.String = js.native
-  val SMALL_VERTICAL_LINK_UNIT: SMALL_VERTICAL_LINK_UNIT with java.lang.String = js.native
-  val SQUARE: SQUARE with java.lang.String = js.native
-  val VERTICAL_BANNER: VERTICAL_BANNER with java.lang.String = js.native
-  val WIDE_SKYSCRAPER: WIDE_SKYSCRAPER with java.lang.String = js.native
-  val X_LARGE_VERTICAL_LINK_UNIT: X_LARGE_VERTICAL_LINK_UNIT with java.lang.String = js.native
+  /* 0 */ val BANNER: BANNER with scala.Double = js.native
+  /* 1 */ val BUTTON: BUTTON with scala.Double = js.native
+  /* 2 */ val HALF_BANNER: HALF_BANNER with scala.Double = js.native
+  /* 3 */ val LARGE_HORIZONTAL_LINK_UNIT: LARGE_HORIZONTAL_LINK_UNIT with scala.Double = js.native
+  /* 4 */ val LARGE_RECTANGLE: LARGE_RECTANGLE with scala.Double = js.native
+  /* 5 */ val LARGE_VERTICAL_LINK_UNIT: LARGE_VERTICAL_LINK_UNIT with scala.Double = js.native
+  /* 6 */ val LEADERBOARD: LEADERBOARD with scala.Double = js.native
+  /* 7 */ val MEDIUM_RECTANGLE: MEDIUM_RECTANGLE with scala.Double = js.native
+  /* 8 */ val MEDIUM_VERTICAL_LINK_UNIT: MEDIUM_VERTICAL_LINK_UNIT with scala.Double = js.native
+  /* 9 */ val SKYSCRAPER: SKYSCRAPER with scala.Double = js.native
+  /* 10 */ val SMALL_HORIZONTAL_LINK_UNIT: SMALL_HORIZONTAL_LINK_UNIT with scala.Double = js.native
+  /* 11 */ val SMALL_RECTANGLE: SMALL_RECTANGLE with scala.Double = js.native
+  /* 12 */ val SMALL_SQUARE: SMALL_SQUARE with scala.Double = js.native
+  /* 13 */ val SMALL_VERTICAL_LINK_UNIT: SMALL_VERTICAL_LINK_UNIT with scala.Double = js.native
+  /* 14 */ val SQUARE: SQUARE with scala.Double = js.native
+  /* 15 */ val VERTICAL_BANNER: VERTICAL_BANNER with scala.Double = js.native
+  /* 16 */ val WIDE_SKYSCRAPER: WIDE_SKYSCRAPER with scala.Double = js.native
+  /* 17 */ val X_LARGE_VERTICAL_LINK_UNIT: X_LARGE_VERTICAL_LINK_UNIT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.adsenseNs.AdFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.adsenseNs.AdFormat with scala.Double] = js.native
 }
 

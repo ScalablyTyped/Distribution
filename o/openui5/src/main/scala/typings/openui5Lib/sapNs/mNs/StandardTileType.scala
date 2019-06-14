@@ -26,10 +26,10 @@ object StandardTileType extends js.Object {
   sealed trait None
     extends openui5Lib.sapNs.mNs.StandardTileType
   
-  val Create: Create with java.lang.String = js.native
-  val Monitor: Monitor with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 0 */ val Create: Create with scala.Double = js.native
+  /* 1 */ val Monitor: Monitor with scala.Double = js.native
+  /* 2 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.StandardTileType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.StandardTileType with scala.Double] = js.native
 }
 

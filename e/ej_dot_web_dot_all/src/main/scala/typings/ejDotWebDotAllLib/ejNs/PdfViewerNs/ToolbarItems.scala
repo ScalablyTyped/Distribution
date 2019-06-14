@@ -56,16 +56,16 @@ object ToolbarItems extends js.Object {
   sealed trait TextSearchTool
     extends ejDotWebDotAllLib.ejNs.PdfViewerNs.ToolbarItems
   
-  val All: All with java.lang.String = js.native
-  val DownloadTool: DownloadTool with java.lang.String = js.native
-  val MagnificationTools: MagnificationTools with java.lang.String = js.native
-  val PageNavigationTools: PageNavigationTools with java.lang.String = js.native
-  val PrintTools: PrintTools with java.lang.String = js.native
-  val SelectionTool: SelectionTool with java.lang.String = js.native
-  val SignatureTool: SignatureTool with java.lang.String = js.native
-  val TextMarkupAnnotationTools: TextMarkupAnnotationTools with java.lang.String = js.native
-  val TextSearchTool: TextSearchTool with java.lang.String = js.native
+  /* 8 */ val All: All with scala.Double = js.native
+  /* 3 */ val DownloadTool: DownloadTool with scala.Double = js.native
+  /* 0 */ val MagnificationTools: MagnificationTools with scala.Double = js.native
+  /* 1 */ val PageNavigationTools: PageNavigationTools with scala.Double = js.native
+  /* 2 */ val PrintTools: PrintTools with scala.Double = js.native
+  /* 7 */ val SelectionTool: SelectionTool with scala.Double = js.native
+  /* 6 */ val SignatureTool: SignatureTool with scala.Double = js.native
+  /* 5 */ val TextMarkupAnnotationTools: TextMarkupAnnotationTools with scala.Double = js.native
+  /* 4 */ val TextSearchTool: TextSearchTool with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.ToolbarItems with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PdfViewerNs.ToolbarItems with scala.Double] = js.native
 }
 

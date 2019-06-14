@@ -27,12 +27,12 @@ object CausalityTraceLevel extends js.Object {
   sealed trait verbose
     extends winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalityTraceLevel
   
-  val important: important with java.lang.String = js.native
-  val required: required with java.lang.String = js.native
-  val verbose: verbose with java.lang.String = js.native
+  /* 1 */ val important: important with scala.Double = js.native
+  /* 0 */ val required: required with scala.Double = js.native
+  /* 2 */ val verbose: verbose with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalityTraceLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.CausalityTraceLevel with scala.Double
   ] = js.native
 }
 

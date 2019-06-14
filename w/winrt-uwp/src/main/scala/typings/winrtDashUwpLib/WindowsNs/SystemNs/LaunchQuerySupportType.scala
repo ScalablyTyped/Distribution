@@ -22,9 +22,9 @@ object LaunchQuerySupportType extends js.Object {
   sealed trait uriForResults
     extends winrtDashUwpLib.WindowsNs.SystemNs.LaunchQuerySupportType
   
-  val uri: uri with java.lang.String = js.native
-  val uriForResults: uriForResults with java.lang.String = js.native
+  /* 0 */ val uri: uri with scala.Double = js.native
+  /* 1 */ val uriForResults: uriForResults with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.LaunchQuerySupportType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.SystemNs.LaunchQuerySupportType with scala.Double] = js.native
 }
 

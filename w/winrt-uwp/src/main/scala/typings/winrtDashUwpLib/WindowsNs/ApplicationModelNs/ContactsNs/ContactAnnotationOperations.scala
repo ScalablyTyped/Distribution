@@ -42,15 +42,15 @@ object ContactAnnotationOperations extends js.Object {
   sealed trait videoCall
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactAnnotationOperations
   
-  val audioCall: audioCall with java.lang.String = js.native
-  val contactProfile: contactProfile with java.lang.String = js.native
-  val message: message with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val socialFeeds: socialFeeds with java.lang.String = js.native
-  val videoCall: videoCall with java.lang.String = js.native
+  /* 3 */ val audioCall: audioCall with scala.Double = js.native
+  /* 1 */ val contactProfile: contactProfile with scala.Double = js.native
+  /* 2 */ val message: message with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 5 */ val socialFeeds: socialFeeds with scala.Double = js.native
+  /* 4 */ val videoCall: videoCall with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactAnnotationOperations with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactAnnotationOperations with scala.Double
   ] = js.native
 }
 

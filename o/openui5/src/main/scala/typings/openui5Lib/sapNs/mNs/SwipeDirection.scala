@@ -26,10 +26,10 @@ object SwipeDirection extends js.Object {
   sealed trait RightToLeft
     extends openui5Lib.sapNs.mNs.SwipeDirection
   
-  val Both: Both with java.lang.String = js.native
-  val LeftToRight: LeftToRight with java.lang.String = js.native
-  val RightToLeft: RightToLeft with java.lang.String = js.native
+  /* 0 */ val Both: Both with scala.Double = js.native
+  /* 1 */ val LeftToRight: LeftToRight with scala.Double = js.native
+  /* 2 */ val RightToLeft: RightToLeft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.SwipeDirection with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.SwipeDirection with scala.Double] = js.native
 }
 

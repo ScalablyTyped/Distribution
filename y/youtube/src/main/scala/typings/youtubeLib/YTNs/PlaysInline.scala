@@ -11,3 +11,18 @@ import scala.scalajs.js.annotation._
 */
 trait PlaysInline extends js.Object
 
+object PlaysInline {
+  /**
+  		 * Playback in fullscreen.
+  		 */
+  @scala.inline
+  def Fullscreen: youtubeLib.youtubeLibNumbers.`0` = this.cast(0)
+  /**
+  		 * Playback inline
+  		 */
+  @scala.inline
+  def Inline: youtubeLib.youtubeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

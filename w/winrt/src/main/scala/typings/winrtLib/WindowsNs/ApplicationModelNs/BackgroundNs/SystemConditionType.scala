@@ -39,16 +39,16 @@ object SystemConditionType extends js.Object {
   sealed trait userPresent
     extends winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.SystemConditionType
   
-  val internetAvailable: internetAvailable with java.lang.String = js.native
-  val internetNotAvailable: internetNotAvailable with java.lang.String = js.native
-  val invalid: invalid with java.lang.String = js.native
-  val sessionConnected: sessionConnected with java.lang.String = js.native
-  val sessionDisconnected: sessionDisconnected with java.lang.String = js.native
-  val userNotPresent: userNotPresent with java.lang.String = js.native
-  val userPresent: userPresent with java.lang.String = js.native
+  /* 3 */ val internetAvailable: internetAvailable with scala.Double = js.native
+  /* 4 */ val internetNotAvailable: internetNotAvailable with scala.Double = js.native
+  /* 0 */ val invalid: invalid with scala.Double = js.native
+  /* 5 */ val sessionConnected: sessionConnected with scala.Double = js.native
+  /* 6 */ val sessionDisconnected: sessionDisconnected with scala.Double = js.native
+  /* 2 */ val userNotPresent: userNotPresent with scala.Double = js.native
+  /* 1 */ val userPresent: userPresent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.SystemConditionType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.SystemConditionType with scala.Double
   ] = js.native
 }
 

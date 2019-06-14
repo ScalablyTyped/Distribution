@@ -19,9 +19,9 @@ object StringMatchOption extends js.Object {
   sealed trait startsWith
     extends sharepointLib.SPNs.TaxonomyNs.StringMatchOption
   
-  val exactMatch: exactMatch with java.lang.String = js.native
-  val startsWith: startsWith with java.lang.String = js.native
+  /* 1 */ val exactMatch: exactMatch with scala.Double = js.native
+  /* 0 */ val startsWith: startsWith with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.TaxonomyNs.StringMatchOption with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.TaxonomyNs.StringMatchOption with scala.Double] = js.native
 }
 

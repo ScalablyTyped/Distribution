@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
 */
 trait StageChangeDirection extends js.Object
 
+object StageChangeDirection {
+  @scala.inline
+  def Next: xrmLib.xrmLibStrings.Next = this.cast("Next")
+  @scala.inline
+  def Previous: xrmLib.xrmLibStrings.Previous = this.cast("Previous")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

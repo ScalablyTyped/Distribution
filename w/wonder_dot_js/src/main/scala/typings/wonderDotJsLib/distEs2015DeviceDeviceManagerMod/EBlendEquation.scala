@@ -23,12 +23,10 @@ object EBlendEquation extends js.Object {
   sealed trait SUBTRACT
     extends wonderDotJsLib.distEs2015DeviceDeviceManagerMod.EBlendEquation
   
-  val ADD: ADD with java.lang.String = js.native
-  val REVERSE_SUBTRAC: REVERSE_SUBTRAC with java.lang.String = js.native
-  val SUBTRACT: SUBTRACT with java.lang.String = js.native
+  /* 0 */ val ADD: ADD with scala.Double = js.native
+  /* 2 */ val REVERSE_SUBTRAC: REVERSE_SUBTRAC with scala.Double = js.native
+  /* 1 */ val SUBTRACT: SUBTRACT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015DeviceDeviceManagerMod.EBlendEquation with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[wonderDotJsLib.distEs2015DeviceDeviceManagerMod.EBlendEquation with scala.Double] = js.native
 }
 

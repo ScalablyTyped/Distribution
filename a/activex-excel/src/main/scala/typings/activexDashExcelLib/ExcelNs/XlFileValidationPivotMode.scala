@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlFileValidationPivotMode extends js.Object
 
+object XlFileValidationPivotMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlFileValidationPivotDefault: activexDashExcelLib.activexDashExcelLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def xlFileValidationPivotRun: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlFileValidationPivotSkip: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+}
+

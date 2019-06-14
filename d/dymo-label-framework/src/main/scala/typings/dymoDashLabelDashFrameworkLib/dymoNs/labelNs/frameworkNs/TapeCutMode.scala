@@ -22,11 +22,11 @@ object TapeCutMode extends js.Object {
   sealed trait ChainMarks
     extends dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.TapeCutMode
   
-  val AutoCut: AutoCut with java.lang.String = js.native
-  val ChainMarks: ChainMarks with java.lang.String = js.native
+  /* 0 */ val AutoCut: AutoCut with scala.Double = js.native
+  /* 1 */ val ChainMarks: ChainMarks with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.TapeCutMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    dymoDashLabelDashFrameworkLib.dymoNs.labelNs.frameworkNs.TapeCutMode with scala.Double
   ] = js.native
 }
 

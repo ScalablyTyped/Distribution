@@ -32,13 +32,13 @@ object SpeechRecognitionConfidence extends js.Object {
   sealed trait rejected
     extends winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionConfidence
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val medium: medium with java.lang.String = js.native
-  val rejected: rejected with java.lang.String = js.native
+  /* 0 */ val high: high with scala.Double = js.native
+  /* 2 */ val low: low with scala.Double = js.native
+  /* 1 */ val medium: medium with scala.Double = js.native
+  /* 3 */ val rejected: rejected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionConfidence with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.SpeechRecognitionNs.SpeechRecognitionConfidence with scala.Double
   ] = js.native
 }
 

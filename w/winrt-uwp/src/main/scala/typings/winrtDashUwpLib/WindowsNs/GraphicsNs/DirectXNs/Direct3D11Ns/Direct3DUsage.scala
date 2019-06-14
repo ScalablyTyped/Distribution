@@ -32,13 +32,13 @@ object Direct3DUsage extends js.Object {
   sealed trait staging
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.Direct3DUsage
   
-  val default: default with java.lang.String = js.native
-  val dynamic: dynamic with java.lang.String = js.native
-  val immutable: immutable with java.lang.String = js.native
-  val staging: staging with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 2 */ val dynamic: dynamic with scala.Double = js.native
+  /* 1 */ val immutable: immutable with scala.Double = js.native
+  /* 3 */ val staging: staging with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.Direct3DUsage with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.Direct3DUsage with scala.Double
   ] = js.native
 }
 

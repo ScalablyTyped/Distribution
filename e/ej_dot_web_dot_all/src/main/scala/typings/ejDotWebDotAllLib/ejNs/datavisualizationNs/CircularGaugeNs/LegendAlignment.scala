@@ -26,12 +26,12 @@ object LegendAlignment extends js.Object {
   sealed trait Near
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LegendAlignment
   
-  val Center: Center with java.lang.String = js.native
-  val Far: Far with java.lang.String = js.native
-  val Near: Near with java.lang.String = js.native
+  /* 0 */ val Center: Center with scala.Double = js.native
+  /* 2 */ val Far: Far with scala.Double = js.native
+  /* 1 */ val Near: Near with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LegendAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.LegendAlignment with scala.Double
   ] = js.native
 }
 

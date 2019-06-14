@@ -21,11 +21,11 @@ object RelativeMode extends js.Object {
   sealed trait Object
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.RelativeMode
   
-  val Mouse: Mouse with java.lang.String = js.native
-  val Object: Object with java.lang.String = js.native
+  /* 1 */ val Mouse: Mouse with scala.Double = js.native
+  /* 0 */ val Object: Object with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.RelativeMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.RelativeMode with scala.Double
   ] = js.native
 }
 

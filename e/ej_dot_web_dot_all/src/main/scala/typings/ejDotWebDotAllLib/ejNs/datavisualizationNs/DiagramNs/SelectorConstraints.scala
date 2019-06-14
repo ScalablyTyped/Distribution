@@ -51,17 +51,17 @@ object SelectorConstraints extends js.Object {
   sealed trait UserHandles
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.SelectorConstraints
   
-  val All: All with java.lang.String = js.native
-  val AutoHideThumbs: AutoHideThumbs with java.lang.String = js.native
-  val DragOnEmptySpace: DragOnEmptySpace with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Resizer: Resizer with java.lang.String = js.native
-  val Rotator: Rotator with java.lang.String = js.native
-  val Tooltip: Tooltip with java.lang.String = js.native
-  val UserHandles: UserHandles with java.lang.String = js.native
+  /* 7 */ val All: All with scala.Double = js.native
+  /* 6 */ val AutoHideThumbs: AutoHideThumbs with scala.Double = js.native
+  /* 5 */ val DragOnEmptySpace: DragOnEmptySpace with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val Resizer: Resizer with scala.Double = js.native
+  /* 1 */ val Rotator: Rotator with scala.Double = js.native
+  /* 4 */ val Tooltip: Tooltip with scala.Double = js.native
+  /* 3 */ val UserHandles: UserHandles with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.SelectorConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.SelectorConstraints with scala.Double
   ] = js.native
 }
 

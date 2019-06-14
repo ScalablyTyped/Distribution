@@ -31,14 +31,14 @@ object ParagraphAlignment extends js.Object {
   sealed trait UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ParagraphAlignment
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val END: END with java.lang.String = js.native
-  val JUSTIFIED: JUSTIFIED with java.lang.String = js.native
-  val START: START with java.lang.String = js.native
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
+  /* 2 */ val CENTER: CENTER with scala.Double = js.native
+  /* 3 */ val END: END with scala.Double = js.native
+  /* 4 */ val JUSTIFIED: JUSTIFIED with scala.Double = js.native
+  /* 1 */ val START: START with scala.Double = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ParagraphAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.ParagraphAlignment with scala.Double
   ] = js.native
 }
 

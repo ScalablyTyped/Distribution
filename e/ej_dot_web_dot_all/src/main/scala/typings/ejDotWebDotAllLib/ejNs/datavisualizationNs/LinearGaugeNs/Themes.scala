@@ -21,11 +21,11 @@ object Themes extends js.Object {
   sealed trait FlatLight
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.Themes
   
-  val FlatDark: FlatDark with java.lang.String = js.native
-  val FlatLight: FlatLight with java.lang.String = js.native
+  /* 1 */ val FlatDark: FlatDark with scala.Double = js.native
+  /* 0 */ val FlatLight: FlatLight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.Themes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.Themes with scala.Double
   ] = js.native
 }
 

@@ -27,11 +27,11 @@ object FeatureDefinitionScope extends js.Object {
   sealed trait web
     extends sharepointLib.SPNs.FeatureDefinitionScope
   
-  val farm: farm with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val site: site with java.lang.String = js.native
-  val web: web with java.lang.String = js.native
+  /* 1 */ val farm: farm with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val site: site with scala.Double = js.native
+  /* 3 */ val web: web with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.FeatureDefinitionScope with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.FeatureDefinitionScope with scala.Double] = js.native
 }
 

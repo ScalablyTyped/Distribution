@@ -32,13 +32,13 @@ object ContactQueryDesiredFields extends js.Object {
   sealed trait postalAddress
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQueryDesiredFields
   
-  val emailAddress: emailAddress with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val phoneNumber: phoneNumber with java.lang.String = js.native
-  val postalAddress: postalAddress with java.lang.String = js.native
+  /* 2 */ val emailAddress: emailAddress with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val phoneNumber: phoneNumber with scala.Double = js.native
+  /* 3 */ val postalAddress: postalAddress with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQueryDesiredFields with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQueryDesiredFields with scala.Double
   ] = js.native
 }
 

@@ -32,13 +32,13 @@ object DnssdRegistrationStatus extends js.Object {
   sealed trait success
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdRegistrationStatus
   
-  val invalidServiceName: invalidServiceName with java.lang.String = js.native
-  val securityError: securityError with java.lang.String = js.native
-  val serverError: serverError with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 1 */ val invalidServiceName: invalidServiceName with scala.Double = js.native
+  /* 3 */ val securityError: securityError with scala.Double = js.native
+  /* 2 */ val serverError: serverError with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdRegistrationStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdRegistrationStatus with scala.Double
   ] = js.native
 }
 

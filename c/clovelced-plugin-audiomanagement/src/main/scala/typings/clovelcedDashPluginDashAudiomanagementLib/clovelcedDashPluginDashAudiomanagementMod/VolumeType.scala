@@ -27,10 +27,10 @@ object VolumeType extends js.Object {
   sealed trait SYSTEM
     extends clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.VolumeType
   
-  val MUSIC: MUSIC with scala.Double = js.native
-  val NOTIFICATION: NOTIFICATION with scala.Double = js.native
+  /* 0 */ val MUSIC: MUSIC with scala.Double = js.native
+  /* 1 */ val NOTIFICATION: NOTIFICATION with scala.Double = js.native
   /* 0 */ val RING: RING with scala.Double = js.native
-  val SYSTEM: SYSTEM with scala.Double = js.native
+  /* 2 */ val SYSTEM: SYSTEM with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[
     clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.VolumeType with scala.Double

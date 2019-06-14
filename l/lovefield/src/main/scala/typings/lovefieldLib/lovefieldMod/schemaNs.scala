@@ -109,13 +109,13 @@ object schemaNs extends js.Object {
     sealed trait WEB_SQL
       extends lovefieldLib.lovefieldMod.schemaNs.DataStoreType
     
-    val FIREBASE: FIREBASE with java.lang.String = js.native
-    val INDEXED_DB: INDEXED_DB with java.lang.String = js.native
-    val LOCAL_STORAGE: LOCAL_STORAGE with java.lang.String = js.native
-    val MEMORY: MEMORY with java.lang.String = js.native
-    val WEB_SQL: WEB_SQL with java.lang.String = js.native
+    /* 3 */ val FIREBASE: FIREBASE with scala.Double = js.native
+    /* 0 */ val INDEXED_DB: INDEXED_DB with scala.Double = js.native
+    /* 2 */ val LOCAL_STORAGE: LOCAL_STORAGE with scala.Double = js.native
+    /* 1 */ val MEMORY: MEMORY with scala.Double = js.native
+    /* 4 */ val WEB_SQL: WEB_SQL with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[lovefieldLib.lovefieldMod.schemaNs.DataStoreType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[lovefieldLib.lovefieldMod.schemaNs.DataStoreType with scala.Double] = js.native
   }
   
   type Table = ITable with org.scalablytyped.runtime.StringDictionary[Column]

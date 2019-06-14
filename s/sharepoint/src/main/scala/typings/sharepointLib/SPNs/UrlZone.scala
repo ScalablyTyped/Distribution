@@ -31,12 +31,12 @@ object UrlZone extends js.Object {
   sealed trait intranet
     extends sharepointLib.SPNs.UrlZone
   
-  val custom: custom with java.lang.String = js.native
-  val defaultZone: defaultZone with java.lang.String = js.native
-  val extranet: extranet with java.lang.String = js.native
-  val internet: internet with java.lang.String = js.native
-  val intranet: intranet with java.lang.String = js.native
+  /* 3 */ val custom: custom with scala.Double = js.native
+  /* 0 */ val defaultZone: defaultZone with scala.Double = js.native
+  /* 4 */ val extranet: extranet with scala.Double = js.native
+  /* 2 */ val internet: internet with scala.Double = js.native
+  /* 1 */ val intranet: intranet with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UrlZone with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UrlZone with scala.Double] = js.native
 }
 

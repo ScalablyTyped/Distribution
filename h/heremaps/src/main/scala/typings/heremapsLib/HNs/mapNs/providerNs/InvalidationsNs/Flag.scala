@@ -38,13 +38,13 @@ object Flag extends js.Object {
   sealed trait Z_ORDER
     extends heremapsLib.HNs.mapNs.providerNs.InvalidationsNs.Flag
   
-  val ADD: ADD with java.lang.String = js.native
-  val NONE: NONE with java.lang.String = js.native
-  val REMOVE: REMOVE with java.lang.String = js.native
-  val SPATIAL: SPATIAL with java.lang.String = js.native
-  val VISUAL: VISUAL with java.lang.String = js.native
-  val Z_ORDER: Z_ORDER with java.lang.String = js.native
+  /* 3 */ val ADD: ADD with scala.Double = js.native
+  /* 0 */ val NONE: NONE with scala.Double = js.native
+  /* 4 */ val REMOVE: REMOVE with scala.Double = js.native
+  /* 2 */ val SPATIAL: SPATIAL with scala.Double = js.native
+  /* 1 */ val VISUAL: VISUAL with scala.Double = js.native
+  /* 5 */ val Z_ORDER: Z_ORDER with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.mapNs.providerNs.InvalidationsNs.Flag with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.mapNs.providerNs.InvalidationsNs.Flag with scala.Double] = js.native
 }
 

@@ -19,11 +19,11 @@ object Gender extends js.Object {
   sealed trait MALE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Gender
   
-  val FEMALE: FEMALE with java.lang.String = js.native
-  val MALE: MALE with java.lang.String = js.native
+  /* 1 */ val FEMALE: FEMALE with scala.Double = js.native
+  /* 0 */ val MALE: MALE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Gender with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContactsNs.Gender with scala.Double
   ] = js.native
 }
 

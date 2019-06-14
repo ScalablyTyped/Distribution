@@ -14,6 +14,7 @@ trait Anon_AcmAcmpca extends js.Object {
   var appsync: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var athena: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var autoscaling: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var autoscalingplans: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var backup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var batch: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var budgets: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -135,6 +136,7 @@ object Anon_AcmAcmpca {
     appsync: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     athena: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     autoscaling: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    autoscalingplans: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     backup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     batch: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     budgets: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -253,6 +255,7 @@ object Anon_AcmAcmpca {
     if (appsync != null) __obj.updateDynamic("appsync")(appsync.asInstanceOf[js.Any])
     if (athena != null) __obj.updateDynamic("athena")(athena.asInstanceOf[js.Any])
     if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
+    if (autoscalingplans != null) __obj.updateDynamic("autoscalingplans")(autoscalingplans.asInstanceOf[js.Any])
     if (backup != null) __obj.updateDynamic("backup")(backup.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
     if (budgets != null) __obj.updateDynamic("budgets")(budgets.asInstanceOf[js.Any])

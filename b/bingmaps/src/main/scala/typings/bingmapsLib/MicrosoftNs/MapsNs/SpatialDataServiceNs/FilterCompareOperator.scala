@@ -66,21 +66,21 @@ object FilterCompareOperator extends js.Object {
   sealed trait startsWith
     extends bingmapsLib.MicrosoftNs.MapsNs.SpatialDataServiceNs.FilterCompareOperator
   
-  val endsWith: endsWith with java.lang.String = js.native
-  @JSName("equals")
-  val equals_FFilterCompareOperator: equals with java.lang.String = js.native
-  val greaterThan: greaterThan with java.lang.String = js.native
-  val greaterThanOrEqual: greaterThanOrEqual with java.lang.String = js.native
-  val isIn: isIn with java.lang.String = js.native
-  val lessThan: lessThan with java.lang.String = js.native
-  val lessThanOrEqual: lessThanOrEqual with java.lang.String = js.native
-  val notEndsWith: notEndsWith with java.lang.String = js.native
-  val notEquals: notEquals with java.lang.String = js.native
-  val notStartsWith: notStartsWith with java.lang.String = js.native
-  val startsWith: startsWith with java.lang.String = js.native
+  /* 0 */ val endsWith: endsWith with scala.Double = js.native
+  /* 1 */ @JSName("equals")
+  val equals_FFilterCompareOperator: equals with scala.Double = js.native
+  /* 2 */ val greaterThan: greaterThan with scala.Double = js.native
+  /* 3 */ val greaterThanOrEqual: greaterThanOrEqual with scala.Double = js.native
+  /* 4 */ val isIn: isIn with scala.Double = js.native
+  /* 5 */ val lessThan: lessThan with scala.Double = js.native
+  /* 6 */ val lessThanOrEqual: lessThanOrEqual with scala.Double = js.native
+  /* 7 */ val notEndsWith: notEndsWith with scala.Double = js.native
+  /* 8 */ val notEquals: notEquals with scala.Double = js.native
+  /* 9 */ val notStartsWith: notStartsWith with scala.Double = js.native
+  /* 10 */ val startsWith: startsWith with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    bingmapsLib.MicrosoftNs.MapsNs.SpatialDataServiceNs.FilterCompareOperator with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    bingmapsLib.MicrosoftNs.MapsNs.SpatialDataServiceNs.FilterCompareOperator with scala.Double
   ] = js.native
 }
 

@@ -42,15 +42,15 @@ object WebTokenRequestStatus extends js.Object {
   sealed trait userInteractionRequired
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenRequestStatus
   
-  val accountProviderNotAvailable: accountProviderNotAvailable with java.lang.String = js.native
-  val accountSwitch: accountSwitch with java.lang.String = js.native
-  val providerError: providerError with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
-  val userCancel: userCancel with java.lang.String = js.native
-  val userInteractionRequired: userInteractionRequired with java.lang.String = js.native
+  /* 4 */ val accountProviderNotAvailable: accountProviderNotAvailable with scala.Double = js.native
+  /* 2 */ val accountSwitch: accountSwitch with scala.Double = js.native
+  /* 5 */ val providerError: providerError with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
+  /* 1 */ val userCancel: userCancel with scala.Double = js.native
+  /* 3 */ val userInteractionRequired: userInteractionRequired with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenRequestStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebTokenRequestStatus with scala.Double
   ] = js.native
 }
 

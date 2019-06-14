@@ -37,12 +37,12 @@ object MediaPlaybackStatus extends js.Object {
   sealed trait stopped
     extends winrtDashUwpLib.WindowsNs.MediaNs.MediaPlaybackStatus
   
-  val changing: changing with java.lang.String = js.native
-  val closed: closed with java.lang.String = js.native
-  val paused: paused with java.lang.String = js.native
-  val playing: playing with java.lang.String = js.native
-  val stopped: stopped with java.lang.String = js.native
+  /* 1 */ val changing: changing with scala.Double = js.native
+  /* 0 */ val closed: closed with scala.Double = js.native
+  /* 4 */ val paused: paused with scala.Double = js.native
+  /* 3 */ val playing: playing with scala.Double = js.native
+  /* 2 */ val stopped: stopped with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.MediaPlaybackStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.MediaPlaybackStatus with scala.Double] = js.native
 }
 

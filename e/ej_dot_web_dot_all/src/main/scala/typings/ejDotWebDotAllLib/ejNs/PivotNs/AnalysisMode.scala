@@ -21,9 +21,9 @@ object AnalysisMode extends js.Object {
   sealed trait Pivot
     extends ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode
   
-  val OLAP: OLAP with java.lang.String = js.native
-  val Pivot: Pivot with java.lang.String = js.native
+  /* 0 */ val OLAP: OLAP with scala.Double = js.native
+  /* 1 */ val Pivot: Pivot with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode with scala.Double] = js.native
 }
 

@@ -38,13 +38,13 @@ object EntryPoint extends js.Object {
   sealed trait SUGGEST
     extends heremapsLib.HNs.serviceNs.PlacesServiceNs.EntryPoint
   
-  val AROUND: AROUND with java.lang.String = js.native
-  val CATEGORIES: CATEGORIES with java.lang.String = js.native
-  val EXPLORE: EXPLORE with java.lang.String = js.native
-  val HERE: HERE with java.lang.String = js.native
-  val SEARCH: SEARCH with java.lang.String = js.native
-  val SUGGEST: SUGGEST with java.lang.String = js.native
+  /* 3 */ val AROUND: AROUND with scala.Double = js.native
+  /* 5 */ val CATEGORIES: CATEGORIES with scala.Double = js.native
+  /* 2 */ val EXPLORE: EXPLORE with scala.Double = js.native
+  /* 4 */ val HERE: HERE with scala.Double = js.native
+  /* 0 */ val SEARCH: SEARCH with scala.Double = js.native
+  /* 1 */ val SUGGEST: SUGGEST with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.serviceNs.PlacesServiceNs.EntryPoint with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.serviceNs.PlacesServiceNs.EntryPoint with scala.Double] = js.native
 }
 

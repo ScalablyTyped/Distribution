@@ -276,12 +276,10 @@ object flatbuffersNs extends js.Object {
     sealed trait UTF8_BYTES
       extends flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.Encoding
     
-    val UTF16_STRING: UTF16_STRING with java.lang.String = js.native
-    val UTF8_BYTES: UTF8_BYTES with java.lang.String = js.native
+    /* 1 */ val UTF16_STRING: UTF16_STRING with scala.Double = js.native
+    /* 0 */ val UTF8_BYTES: UTF8_BYTES with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.Encoding with java.lang.String
-      ] = js.native
+    def apply(value: scala.Double): js.UndefOr[flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.Encoding with scala.Double] = js.native
   }
   
   /* static members */

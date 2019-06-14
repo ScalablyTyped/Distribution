@@ -37,14 +37,14 @@ object ClosedCaptionSize extends js.Object {
   sealed trait twoHundredPercent
     extends winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionSize
   
-  val default: default with java.lang.String = js.native
-  val fiftyPercent: fiftyPercent with java.lang.String = js.native
-  val oneHundredFiftyPercent: oneHundredFiftyPercent with java.lang.String = js.native
-  val oneHundredPercent: oneHundredPercent with java.lang.String = js.native
-  val twoHundredPercent: twoHundredPercent with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 1 */ val fiftyPercent: fiftyPercent with scala.Double = js.native
+  /* 3 */ val oneHundredFiftyPercent: oneHundredFiftyPercent with scala.Double = js.native
+  /* 2 */ val oneHundredPercent: oneHundredPercent with scala.Double = js.native
+  /* 4 */ val twoHundredPercent: twoHundredPercent with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionSize with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ClosedCaptioningNs.ClosedCaptionSize with scala.Double
   ] = js.native
 }
 

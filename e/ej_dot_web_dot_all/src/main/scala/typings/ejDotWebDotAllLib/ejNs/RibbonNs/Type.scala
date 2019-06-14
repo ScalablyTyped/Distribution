@@ -41,13 +41,13 @@ object Type extends js.Object {
   sealed trait ToggleButton
     extends ejDotWebDotAllLib.ejNs.RibbonNs.Type
   
-  val Button: Button with java.lang.String = js.native
-  val Custom: Custom with java.lang.String = js.native
-  val DropDownList: DropDownList with java.lang.String = js.native
-  val Gallery: Gallery with java.lang.String = js.native
-  val SplitButton: SplitButton with java.lang.String = js.native
-  val ToggleButton: ToggleButton with java.lang.String = js.native
+  /* 0 */ val Button: Button with scala.Double = js.native
+  /* 3 */ val Custom: Custom with scala.Double = js.native
+  /* 2 */ val DropDownList: DropDownList with scala.Double = js.native
+  /* 5 */ val Gallery: Gallery with scala.Double = js.native
+  /* 1 */ val SplitButton: SplitButton with scala.Double = js.native
+  /* 4 */ val ToggleButton: ToggleButton with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.Type with scala.Double] = js.native
 }
 

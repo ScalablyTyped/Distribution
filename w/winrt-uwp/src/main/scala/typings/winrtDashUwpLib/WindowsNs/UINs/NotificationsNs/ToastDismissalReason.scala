@@ -27,12 +27,12 @@ object ToastDismissalReason extends js.Object {
   sealed trait userCanceled
     extends winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastDismissalReason
   
-  val applicationHidden: applicationHidden with java.lang.String = js.native
-  val timedOut: timedOut with java.lang.String = js.native
-  val userCanceled: userCanceled with java.lang.String = js.native
+  /* 1 */ val applicationHidden: applicationHidden with scala.Double = js.native
+  /* 2 */ val timedOut: timedOut with scala.Double = js.native
+  /* 0 */ val userCanceled: userCanceled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastDismissalReason with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastDismissalReason with scala.Double
   ] = js.native
 }
 

@@ -65,11 +65,11 @@ object distSrcCryptMod extends js.Object {
       * Base64-decode a string.
       *
       * @param input to decode.
-      * @param opt_webSafe True if we should use the
+      * @param webSafe True if we should use the
       *     alternative alphabet.
       * @return string representing the decoded value.
       */
-    def decodeString(input: java.lang.String, opt_webSafe: scala.Boolean): java.lang.String = js.native
+    def decodeString(input: java.lang.String, webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Base64-decode a string.
       *
@@ -82,33 +82,33 @@ object distSrcCryptMod extends js.Object {
       * to one byte.  If the group has three characters, it decodes to two bytes.
       *
       * @param input Input to decode.
-      * @param opt_webSafe True if we should use the web-safe alphabet.
+      * @param webSafe True if we should use the web-safe alphabet.
       * @return bytes representing the decoded value.
       */
-    def decodeStringToByteArray(input: java.lang.String, opt_webSafe: scala.Boolean): js.Array[scala.Double] = js.native
+    def decodeStringToByteArray(input: java.lang.String, webSafe: scala.Boolean): js.Array[scala.Double] = js.native
     def encodeByteArray(input: js.Array[scala.Double]): java.lang.String = js.native
-    def encodeByteArray(input: js.Array[scala.Double], opt_webSafe: scala.Boolean): java.lang.String = js.native
+    def encodeByteArray(input: js.Array[scala.Double], webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Base64-encode an array of bytes.
       *
       * @param input An array of bytes (numbers with
       *     value in [0, 255]) to encode.
-      * @param opt_webSafe Boolean indicating we should use the
+      * @param webSafe Boolean indicating we should use the
       *     alternative alphabet.
       * @return The base64 encoded string.
       */
     def encodeByteArray(input: stdLib.Uint8Array): java.lang.String = js.native
-    def encodeByteArray(input: stdLib.Uint8Array, opt_webSafe: scala.Boolean): java.lang.String = js.native
+    def encodeByteArray(input: stdLib.Uint8Array, webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Base64-encode a string.
       *
       * @param input A string to encode.
-      * @param opt_webSafe If true, we should use the
+      * @param webSafe If true, we should use the
       *     alternative alphabet.
       * @return The base64 encoded string.
       */
     def encodeString(input: java.lang.String): java.lang.String = js.native
-    def encodeString(input: java.lang.String, opt_webSafe: scala.Boolean): java.lang.String = js.native
+    def encodeString(input: java.lang.String, webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Lazy static initialization function. Called before
       * accessing any of the static map variables.

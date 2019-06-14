@@ -42,15 +42,15 @@ class Sha1 () extends js.Object {
   /**
     * Internal compress helper function.
     * @param {!number[]|!Uint8Array|string} buf Block to compress.
-    * @param {number=} opt_offset Offset of the block in the buffer.
+    * @param {number=} optOffset Offset of the block in the buffer.
     * @private
     */
   def compress_(buf: js.Any): scala.Unit = js.native
-  def compress_(buf: js.Any, opt_offset: js.Any): scala.Unit = js.native
+  def compress_(buf: js.Any, optOffset: js.Any): scala.Unit = js.native
   /** @override */
   def digest(): js.Array[scala.Double] = js.native
   def reset(): scala.Unit = js.native
   def update(bytes: js.Any): scala.Unit = js.native
-  def update(bytes: js.Any, opt_length: js.Any): scala.Unit = js.native
+  def update(bytes: js.Any, optLength: js.Any): scala.Unit = js.native
 }
 

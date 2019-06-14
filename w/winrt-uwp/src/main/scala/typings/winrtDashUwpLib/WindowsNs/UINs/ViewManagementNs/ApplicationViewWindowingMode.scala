@@ -27,12 +27,12 @@ object ApplicationViewWindowingMode extends js.Object {
   sealed trait preferredLaunchViewSize
     extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewWindowingMode
   
-  val auto: auto with java.lang.String = js.native
-  val fullScreen: fullScreen with java.lang.String = js.native
-  val preferredLaunchViewSize: preferredLaunchViewSize with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 2 */ val fullScreen: fullScreen with scala.Double = js.native
+  /* 1 */ val preferredLaunchViewSize: preferredLaunchViewSize with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewWindowingMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewWindowingMode with scala.Double
   ] = js.native
 }
 

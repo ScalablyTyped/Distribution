@@ -26,12 +26,12 @@ object ErrorBarDirection extends js.Object {
   sealed trait Plus
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ErrorBarDirection
   
-  val Both: Both with java.lang.String = js.native
-  val Minus: Minus with java.lang.String = js.native
-  val Plus: Plus with java.lang.String = js.native
+  /* 0 */ val Both: Both with scala.Double = js.native
+  /* 2 */ val Minus: Minus with scala.Double = js.native
+  /* 1 */ val Plus: Plus with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ErrorBarDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.ErrorBarDirection with scala.Double
   ] = js.native
 }
 

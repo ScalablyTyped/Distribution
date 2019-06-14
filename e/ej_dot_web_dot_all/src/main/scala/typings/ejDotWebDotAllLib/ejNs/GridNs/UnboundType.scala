@@ -31,11 +31,11 @@ object UnboundType extends js.Object {
   sealed trait Save
     extends ejDotWebDotAllLib.ejNs.GridNs.UnboundType
   
-  val Cancel: Cancel with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Edit: Edit with java.lang.String = js.native
-  val Save: Save with java.lang.String = js.native
+  /* 3 */ val Cancel: Cancel with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 0 */ val Edit: Edit with scala.Double = js.native
+  /* 1 */ val Save: Save with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.UnboundType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.UnboundType with scala.Double] = js.native
 }
 

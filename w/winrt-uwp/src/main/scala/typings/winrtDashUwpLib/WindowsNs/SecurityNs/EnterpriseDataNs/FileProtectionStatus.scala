@@ -67,20 +67,20 @@ object FileProtectionStatus extends js.Object {
   sealed trait unprotected
     extends winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.FileProtectionStatus
   
-  val accessSuspended: accessSuspended with java.lang.String = js.native
-  val licenseExpired: licenseExpired with java.lang.String = js.native
-  val notProtectable: notProtectable with java.lang.String = js.native
-  val `protected`: `protected` with java.lang.String = js.native
-  val protectedByOtherUser: protectedByOtherUser with java.lang.String = js.native
-  val protectedToOtherEnterprise: protectedToOtherEnterprise with java.lang.String = js.native
-  val protectedToOtherIdentity: protectedToOtherIdentity with java.lang.String = js.native
-  val revoked: revoked with java.lang.String = js.native
-  val undetermined: undetermined with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
-  val unprotected: unprotected with java.lang.String = js.native
+  /* 10 */ val accessSuspended: accessSuspended with scala.Double = js.native
+  /* 9 */ val licenseExpired: licenseExpired with scala.Double = js.native
+  /* 7 */ val notProtectable: notProtectable with scala.Double = js.native
+  /* 4 */ val `protected`: `protected` with scala.Double = js.native
+  /* 5 */ val protectedByOtherUser: protectedByOtherUser with scala.Double = js.native
+  /* 6 */ val protectedToOtherEnterprise: protectedToOtherEnterprise with scala.Double = js.native
+  /* 8 */ val protectedToOtherIdentity: protectedToOtherIdentity with scala.Double = js.native
+  /* 3 */ val revoked: revoked with scala.Double = js.native
+  /* 0 */ val undetermined: undetermined with scala.Double = js.native
+  /* 1 */ val unknown: unknown with scala.Double = js.native
+  /* 2 */ val unprotected: unprotected with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.FileProtectionStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.EnterpriseDataNs.FileProtectionStatus with scala.Double
   ] = js.native
 }
 

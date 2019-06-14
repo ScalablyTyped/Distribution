@@ -23,12 +23,12 @@ object SetFileNameResult extends js.Object {
   sealed trait unavailable
     extends winrtLib.WindowsNs.StorageNs.PickersNs.ProviderNs.SetFileNameResult
   
-  val notAllowed: notAllowed with java.lang.String = js.native
-  val succeeded: succeeded with java.lang.String = js.native
-  val unavailable: unavailable with java.lang.String = js.native
+  /* 1 */ val notAllowed: notAllowed with scala.Double = js.native
+  /* 0 */ val succeeded: succeeded with scala.Double = js.native
+  /* 2 */ val unavailable: unavailable with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.StorageNs.PickersNs.ProviderNs.SetFileNameResult with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.StorageNs.PickersNs.ProviderNs.SetFileNameResult with scala.Double
   ] = js.native
 }
 

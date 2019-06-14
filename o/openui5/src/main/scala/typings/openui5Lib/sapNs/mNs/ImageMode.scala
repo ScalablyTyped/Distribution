@@ -22,9 +22,9 @@ object ImageMode extends js.Object {
   sealed trait Image
     extends openui5Lib.sapNs.mNs.ImageMode
   
-  val Background: Background with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
+  /* 0 */ val Background: Background with scala.Double = js.native
+  /* 1 */ val Image: Image with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ImageMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ImageMode with scala.Double] = js.native
 }
 

@@ -19,11 +19,11 @@ object TextButtonStyle extends js.Object {
   sealed trait TEXT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.TextButtonStyle
   
-  val FILLED: FILLED with java.lang.String = js.native
-  val TEXT: TEXT with java.lang.String = js.native
+  /* 1 */ val FILLED: FILLED with scala.Double = js.native
+  /* 0 */ val TEXT: TEXT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.TextButtonStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.TextButtonStyle with scala.Double
   ] = js.native
 }
 

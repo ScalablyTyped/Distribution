@@ -19,9 +19,9 @@ object TransactionType extends js.Object {
   sealed trait READ_WRITE
     extends lovefieldLib.lovefieldMod.TransactionType
   
-  val READ_ONLY: READ_ONLY with java.lang.String = js.native
-  val READ_WRITE: READ_WRITE with java.lang.String = js.native
+  /* 0 */ val READ_ONLY: READ_ONLY with scala.Double = js.native
+  /* 1 */ val READ_WRITE: READ_WRITE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[lovefieldLib.lovefieldMod.TransactionType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[lovefieldLib.lovefieldMod.TransactionType with scala.Double] = js.native
 }
 

@@ -22,3 +22,34 @@ import scala.scalajs.js.annotation._
 */
 trait _styleFontStretch extends js.Object
 
+object _styleFontStretch {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def styleFontStretchCondensed: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def styleFontStretchExpanded: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def styleFontStretchExtraCondensed: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def styleFontStretchExtraExpanded: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def styleFontStretchNarrower: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def styleFontStretchNormal: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def styleFontStretchNotSet: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def styleFontStretchSemiCondensed: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def styleFontStretchSemiExpanded: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def styleFontStretchUltraCondensed: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def styleFontStretchUltraExpanded: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`11` = this.cast(11)
+  @scala.inline
+  def styleFontStretchWider: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def styleFontStretch_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+}
+

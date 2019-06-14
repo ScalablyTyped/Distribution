@@ -32,10 +32,10 @@ object RenderState extends js.Object {
   sealed trait PENDING
     extends heremapsLib.HNs.mapNs.renderNs.RenderState
   
-  val ACTIVE: ACTIVE with java.lang.String = js.native
-  val DONE: DONE with java.lang.String = js.native
-  val PENDING: PENDING with java.lang.String = js.native
+  /* 1 */ val ACTIVE: ACTIVE with scala.Double = js.native
+  /* 2 */ val DONE: DONE with scala.Double = js.native
+  /* 0 */ val PENDING: PENDING with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[heremapsLib.HNs.mapNs.renderNs.RenderState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[heremapsLib.HNs.mapNs.renderNs.RenderState with scala.Double] = js.native
 }
 

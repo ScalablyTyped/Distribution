@@ -37,12 +37,12 @@ object MediaCategory extends js.Object {
   sealed trait speech
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCategory
   
-  val communications: communications with java.lang.String = js.native
-  val gameChat: gameChat with java.lang.String = js.native
-  val media: media with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val speech: speech with java.lang.String = js.native
+  /* 1 */ val communications: communications with scala.Double = js.native
+  /* 3 */ val gameChat: gameChat with scala.Double = js.native
+  /* 2 */ val media: media with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 4 */ val speech: speech with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCategory with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCategory with scala.Double] = js.native
 }
 

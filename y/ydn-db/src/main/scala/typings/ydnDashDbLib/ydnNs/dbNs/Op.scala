@@ -35,13 +35,13 @@ object Op extends js.Object {
   sealed trait ^
     extends ydnDashDbLib.ydnNs.dbNs.Op
   
-  val `<`: `<` with java.lang.String = js.native
-  val `<=`: `<=` with java.lang.String = js.native
-  val `=`: `=` with java.lang.String = js.native
-  val `>`: `>` with java.lang.String = js.native
-  val `>=`: `>=` with java.lang.String = js.native
-  val ^ : ^  with java.lang.String = js.native
+  /* 1 */ val `<`: `<` with scala.Double = js.native
+  /* 4 */ val `<=`: `<=` with scala.Double = js.native
+  /* 2 */ val `=`: `=` with scala.Double = js.native
+  /* 0 */ val `>`: `>` with scala.Double = js.native
+  /* 3 */ val `>=`: `>=` with scala.Double = js.native
+  /* 5 */ val ^ : ^  with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.Op with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.Op with scala.Double] = js.native
 }
 

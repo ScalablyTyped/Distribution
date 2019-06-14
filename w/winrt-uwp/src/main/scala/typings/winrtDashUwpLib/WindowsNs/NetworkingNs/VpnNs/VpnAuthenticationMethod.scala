@@ -32,13 +32,13 @@ object VpnAuthenticationMethod extends js.Object {
   sealed trait presharedKey
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnAuthenticationMethod
   
-  val certificate: certificate with java.lang.String = js.native
-  val eap: eap with java.lang.String = js.native
-  val mschapv2: mschapv2 with java.lang.String = js.native
-  val presharedKey: presharedKey with java.lang.String = js.native
+  /* 2 */ val certificate: certificate with scala.Double = js.native
+  /* 1 */ val eap: eap with scala.Double = js.native
+  /* 0 */ val mschapv2: mschapv2 with scala.Double = js.native
+  /* 3 */ val presharedKey: presharedKey with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnAuthenticationMethod with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.VpnNs.VpnAuthenticationMethod with scala.Double
   ] = js.native
 }
 

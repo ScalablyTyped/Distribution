@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait WdBookmarkSortBy extends js.Object
 
+object WdBookmarkSortBy {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdSortByLocation: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def wdSortByName: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+}
+

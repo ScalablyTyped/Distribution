@@ -31,12 +31,12 @@ object RangeGravity extends js.Object {
   sealed trait uIBehavior
     extends winrtLib.WindowsNs.UINs.TextNs.RangeGravity
   
-  val backward: backward with java.lang.String = js.native
-  val forward: forward with java.lang.String = js.native
-  val inward: inward with java.lang.String = js.native
-  val outward: outward with java.lang.String = js.native
-  val uIBehavior: uIBehavior with java.lang.String = js.native
+  /* 1 */ val backward: backward with scala.Double = js.native
+  /* 2 */ val forward: forward with scala.Double = js.native
+  /* 3 */ val inward: inward with scala.Double = js.native
+  /* 4 */ val outward: outward with scala.Double = js.native
+  /* 0 */ val uIBehavior: uIBehavior with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.RangeGravity with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.RangeGravity with scala.Double] = js.native
 }
 

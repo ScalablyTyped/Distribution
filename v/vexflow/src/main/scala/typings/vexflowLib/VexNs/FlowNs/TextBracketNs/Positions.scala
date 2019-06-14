@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait Positions extends js.Object
 
+object Positions {
+  @scala.inline
+  def BOTTOM: vexflowLib.vexflowLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def TOP: vexflowLib.vexflowLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

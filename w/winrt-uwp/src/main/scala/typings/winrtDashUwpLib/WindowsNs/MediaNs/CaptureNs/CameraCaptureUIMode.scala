@@ -27,12 +27,12 @@ object CameraCaptureUIMode extends js.Object {
   sealed trait video
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMode
   
-  val photo: photo with java.lang.String = js.native
-  val photoOrVideo: photoOrVideo with java.lang.String = js.native
-  val video: video with java.lang.String = js.native
+  /* 1 */ val photo: photo with scala.Double = js.native
+  /* 0 */ val photoOrVideo: photoOrVideo with scala.Double = js.native
+  /* 2 */ val video: video with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.CameraCaptureUIMode with scala.Double
   ] = js.native
 }
 

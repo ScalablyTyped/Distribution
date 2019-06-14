@@ -63,20 +63,20 @@ object CommonFolderQuery extends js.Object {
   sealed trait groupByYear
     extends winrtLib.WindowsNs.StorageNs.SearchNs.CommonFolderQuery
   
-  val defaultQuery: defaultQuery with java.lang.String = js.native
-  val groupByAlbum: groupByAlbum with java.lang.String = js.native
-  val groupByAlbumArtist: groupByAlbumArtist with java.lang.String = js.native
-  val groupByArtist: groupByArtist with java.lang.String = js.native
-  val groupByAuthor: groupByAuthor with java.lang.String = js.native
-  val groupByComposer: groupByComposer with java.lang.String = js.native
-  val groupByGenre: groupByGenre with java.lang.String = js.native
-  val groupByMonth: groupByMonth with java.lang.String = js.native
-  val groupByPublishedYear: groupByPublishedYear with java.lang.String = js.native
-  val groupByRating: groupByRating with java.lang.String = js.native
-  val groupByTag: groupByTag with java.lang.String = js.native
-  val groupByType: groupByType with java.lang.String = js.native
-  val groupByYear: groupByYear with java.lang.String = js.native
+  /* 0 */ val defaultQuery: defaultQuery with scala.Double = js.native
+  /* 4 */ val groupByAlbum: groupByAlbum with scala.Double = js.native
+  /* 5 */ val groupByAlbumArtist: groupByAlbumArtist with scala.Double = js.native
+  /* 3 */ val groupByArtist: groupByArtist with scala.Double = js.native
+  /* 11 */ val groupByAuthor: groupByAuthor with scala.Double = js.native
+  /* 6 */ val groupByComposer: groupByComposer with scala.Double = js.native
+  /* 7 */ val groupByGenre: groupByGenre with scala.Double = js.native
+  /* 2 */ val groupByMonth: groupByMonth with scala.Double = js.native
+  /* 8 */ val groupByPublishedYear: groupByPublishedYear with scala.Double = js.native
+  /* 9 */ val groupByRating: groupByRating with scala.Double = js.native
+  /* 10 */ val groupByTag: groupByTag with scala.Double = js.native
+  /* 12 */ val groupByType: groupByType with scala.Double = js.native
+  /* 1 */ val groupByYear: groupByYear with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.StorageNs.SearchNs.CommonFolderQuery with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.StorageNs.SearchNs.CommonFolderQuery with scala.Double] = js.native
 }
 

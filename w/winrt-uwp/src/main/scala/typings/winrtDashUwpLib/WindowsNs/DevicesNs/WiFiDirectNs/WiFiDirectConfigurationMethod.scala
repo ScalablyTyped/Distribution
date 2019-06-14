@@ -27,12 +27,12 @@ object WiFiDirectConfigurationMethod extends js.Object {
   sealed trait pushButton
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectConfigurationMethod
   
-  val displayPin: displayPin with java.lang.String = js.native
-  val providePin: providePin with java.lang.String = js.native
-  val pushButton: pushButton with java.lang.String = js.native
+  /* 1 */ val displayPin: displayPin with scala.Double = js.native
+  /* 0 */ val providePin: providePin with scala.Double = js.native
+  /* 2 */ val pushButton: pushButton with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectConfigurationMethod with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiDirectNs.WiFiDirectConfigurationMethod with scala.Double
   ] = js.native
 }
 

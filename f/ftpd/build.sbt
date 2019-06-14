@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ftpd"
-version := "0.2.11-dt-20190322Z-7abd2c"
+version := "0.2.11-dt-20190322Z-aae42b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

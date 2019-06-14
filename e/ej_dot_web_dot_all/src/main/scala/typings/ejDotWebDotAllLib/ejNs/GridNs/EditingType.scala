@@ -41,13 +41,13 @@ object EditingType extends js.Object {
   sealed trait String
     extends ejDotWebDotAllLib.ejNs.GridNs.EditingType
   
-  val Boolean: Boolean with java.lang.String = js.native
-  val DatePicker: DatePicker with java.lang.String = js.native
-  val DateTimePicker: DateTimePicker with java.lang.String = js.native
-  val Dropdown: Dropdown with java.lang.String = js.native
-  val Numeric: Numeric with java.lang.String = js.native
-  val String: String with java.lang.String = js.native
+  /* 1 */ val Boolean: Boolean with scala.Double = js.native
+  /* 4 */ val DatePicker: DatePicker with scala.Double = js.native
+  /* 5 */ val DateTimePicker: DateTimePicker with scala.Double = js.native
+  /* 3 */ val Dropdown: Dropdown with scala.Double = js.native
+  /* 2 */ val Numeric: Numeric with scala.Double = js.native
+  /* 0 */ val String: String with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.EditingType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.EditingType with scala.Double] = js.native
 }
 

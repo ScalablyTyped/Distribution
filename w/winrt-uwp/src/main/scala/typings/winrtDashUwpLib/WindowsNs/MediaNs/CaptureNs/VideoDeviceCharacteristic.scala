@@ -37,14 +37,14 @@ object VideoDeviceCharacteristic extends js.Object {
   sealed trait recordPhotoStreamsIdentical
     extends winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.VideoDeviceCharacteristic
   
-  val allStreamsIdentical: allStreamsIdentical with java.lang.String = js.native
-  val allStreamsIndependent: allStreamsIndependent with java.lang.String = js.native
-  val previewPhotoStreamsIdentical: previewPhotoStreamsIdentical with java.lang.String = js.native
-  val previewRecordStreamsIdentical: previewRecordStreamsIdentical with java.lang.String = js.native
-  val recordPhotoStreamsIdentical: recordPhotoStreamsIdentical with java.lang.String = js.native
+  /* 4 */ val allStreamsIdentical: allStreamsIdentical with scala.Double = js.native
+  /* 0 */ val allStreamsIndependent: allStreamsIndependent with scala.Double = js.native
+  /* 2 */ val previewPhotoStreamsIdentical: previewPhotoStreamsIdentical with scala.Double = js.native
+  /* 1 */ val previewRecordStreamsIdentical: previewRecordStreamsIdentical with scala.Double = js.native
+  /* 3 */ val recordPhotoStreamsIdentical: recordPhotoStreamsIdentical with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.VideoDeviceCharacteristic with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.VideoDeviceCharacteristic with scala.Double
   ] = js.native
 }
 

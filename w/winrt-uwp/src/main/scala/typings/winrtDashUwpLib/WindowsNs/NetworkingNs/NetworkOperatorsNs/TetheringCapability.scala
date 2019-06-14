@@ -52,17 +52,17 @@ object TetheringCapability extends js.Object {
   sealed trait enabled
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.TetheringCapability
   
-  val disabledByGroupPolicy: disabledByGroupPolicy with java.lang.String = js.native
-  val disabledByHardwareLimitation: disabledByHardwareLimitation with java.lang.String = js.native
-  val disabledByOperator: disabledByOperator with java.lang.String = js.native
-  val disabledByRequiredAppNotInstalled: disabledByRequiredAppNotInstalled with java.lang.String = js.native
-  val disabledBySku: disabledBySku with java.lang.String = js.native
-  val disabledBySystemCapability: disabledBySystemCapability with java.lang.String = js.native
-  val disabledDueToUnknownCause: disabledDueToUnknownCause with java.lang.String = js.native
-  val enabled: enabled with java.lang.String = js.native
+  /* 1 */ val disabledByGroupPolicy: disabledByGroupPolicy with scala.Double = js.native
+  /* 2 */ val disabledByHardwareLimitation: disabledByHardwareLimitation with scala.Double = js.native
+  /* 3 */ val disabledByOperator: disabledByOperator with scala.Double = js.native
+  /* 5 */ val disabledByRequiredAppNotInstalled: disabledByRequiredAppNotInstalled with scala.Double = js.native
+  /* 4 */ val disabledBySku: disabledBySku with scala.Double = js.native
+  /* 7 */ val disabledBySystemCapability: disabledBySystemCapability with scala.Double = js.native
+  /* 6 */ val disabledDueToUnknownCause: disabledDueToUnknownCause with scala.Double = js.native
+  /* 0 */ val enabled: enabled with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.TetheringCapability with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.TetheringCapability with scala.Double
   ] = js.native
 }
 

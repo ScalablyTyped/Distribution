@@ -32,13 +32,13 @@ object CellularApnAuthenticationType extends js.Object {
   sealed trait pap
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.CellularApnAuthenticationType
   
-  val chap: chap with java.lang.String = js.native
-  val mschapv2: mschapv2 with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val pap: pap with java.lang.String = js.native
+  /* 2 */ val chap: chap with scala.Double = js.native
+  /* 3 */ val mschapv2: mschapv2 with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 1 */ val pap: pap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.CellularApnAuthenticationType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.CellularApnAuthenticationType with scala.Double
   ] = js.native
 }
 

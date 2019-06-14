@@ -23,10 +23,10 @@ object RelationshipDeleteBehaviorType extends js.Object {
   sealed trait restrict
     extends sharepointLib.SPNs.RelationshipDeleteBehaviorType
   
-  val cascade: cascade with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val restrict: restrict with java.lang.String = js.native
+  /* 1 */ val cascade: cascade with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val restrict: restrict with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.RelationshipDeleteBehaviorType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.RelationshipDeleteBehaviorType with scala.Double] = js.native
 }
 

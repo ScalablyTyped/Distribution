@@ -26,12 +26,12 @@ object UMLActivityFlow extends js.Object {
   sealed trait Object
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow
   
-  val Control: Control with java.lang.String = js.native
-  val Exception: Exception with java.lang.String = js.native
-  val Object: Object with java.lang.String = js.native
+  /* 1 */ val Control: Control with scala.Double = js.native
+  /* 2 */ val Exception: Exception with scala.Double = js.native
+  /* 0 */ val Object: Object with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow with scala.Double
   ] = js.native
 }
 

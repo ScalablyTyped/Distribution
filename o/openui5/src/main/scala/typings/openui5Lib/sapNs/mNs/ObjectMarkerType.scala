@@ -34,12 +34,12 @@ object ObjectMarkerType extends js.Object {
   sealed trait Unsaved
     extends openui5Lib.sapNs.mNs.ObjectMarkerType
   
-  val Draft: Draft with java.lang.String = js.native
-  val Favorite: Favorite with java.lang.String = js.native
-  val Flagged: Flagged with java.lang.String = js.native
-  val Locked: Locked with java.lang.String = js.native
-  val Unsaved: Unsaved with java.lang.String = js.native
+  /* 0 */ val Draft: Draft with scala.Double = js.native
+  /* 1 */ val Favorite: Favorite with scala.Double = js.native
+  /* 2 */ val Flagged: Flagged with scala.Double = js.native
+  /* 3 */ val Locked: Locked with scala.Double = js.native
+  /* 4 */ val Unsaved: Unsaved with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.ObjectMarkerType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.ObjectMarkerType with scala.Double] = js.native
 }
 

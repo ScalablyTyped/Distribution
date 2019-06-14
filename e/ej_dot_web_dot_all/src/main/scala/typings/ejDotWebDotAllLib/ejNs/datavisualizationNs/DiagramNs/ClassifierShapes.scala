@@ -51,17 +51,17 @@ object ClassifierShapes extends js.Object {
   sealed trait Interface
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ClassifierShapes
   
-  val Aggregation: Aggregation with java.lang.String = js.native
-  val Association: Association with java.lang.String = js.native
-  val Class: Class with java.lang.String = js.native
-  val Composition: Composition with java.lang.String = js.native
-  val Dependency: Dependency with java.lang.String = js.native
-  val Enumeration: Enumeration with java.lang.String = js.native
-  val Inheritance: Inheritance with java.lang.String = js.native
-  val Interface: Interface with java.lang.String = js.native
+  /* 4 */ val Aggregation: Aggregation with scala.Double = js.native
+  /* 3 */ val Association: Association with scala.Double = js.native
+  /* 0 */ val Class: Class with scala.Double = js.native
+  /* 5 */ val Composition: Composition with scala.Double = js.native
+  /* 6 */ val Dependency: Dependency with scala.Double = js.native
+  /* 2 */ val Enumeration: Enumeration with scala.Double = js.native
+  /* 7 */ val Inheritance: Inheritance with scala.Double = js.native
+  /* 1 */ val Interface: Interface with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ClassifierShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ClassifierShapes with scala.Double
   ] = js.native
 }
 

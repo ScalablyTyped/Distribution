@@ -23,12 +23,12 @@ object Alignment extends js.Object {
   sealed trait RIGHT
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.Alignment
   
-  val CENTER: CENTER with java.lang.String = js.native
-  val LEFT: LEFT with java.lang.String = js.native
-  val RIGHT: RIGHT with java.lang.String = js.native
+  /* 1 */ val CENTER: CENTER with scala.Double = js.native
+  /* 0 */ val LEFT: LEFT with scala.Double = js.native
+  /* 2 */ val RIGHT: RIGHT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.Alignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.FormsNs.Alignment with scala.Double
   ] = js.native
 }
 

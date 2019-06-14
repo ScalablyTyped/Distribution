@@ -21,9 +21,9 @@ object ColumnLayout extends js.Object {
   sealed trait Fixed
     extends ejDotWebDotAllLib.ejNs.GridNs.ColumnLayout
   
-  val Auto: Auto with java.lang.String = js.native
-  val Fixed: Fixed with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 1 */ val Fixed: Fixed with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.ColumnLayout with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GridNs.ColumnLayout with scala.Double] = js.native
 }
 

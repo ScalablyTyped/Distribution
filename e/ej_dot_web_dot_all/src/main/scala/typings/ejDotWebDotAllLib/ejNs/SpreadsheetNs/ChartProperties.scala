@@ -121,29 +121,29 @@ object ChartProperties extends js.Object {
   sealed trait TitleNone
     extends ejDotWebDotAllLib.ejNs.SpreadsheetNs.ChartProperties
   
-  val DataLabelCenter: DataLabelCenter with java.lang.String = js.native
-  val DataLabelInsideBase: DataLabelInsideBase with java.lang.String = js.native
-  val DataLabelInsideEnd: DataLabelInsideEnd with java.lang.String = js.native
-  val DataLabelNone: DataLabelNone with java.lang.String = js.native
-  val DataLabelOutsideEnd: DataLabelOutsideEnd with java.lang.String = js.native
-  val LegendsBottom: LegendsBottom with java.lang.String = js.native
-  val LegendsLeft: LegendsLeft with java.lang.String = js.native
-  val LegendsNone: LegendsNone with java.lang.String = js.native
-  val LegendsRight: LegendsRight with java.lang.String = js.native
-  val LegendsTop: LegendsTop with java.lang.String = js.native
-  val PrimaryHorizontal: PrimaryHorizontal with java.lang.String = js.native
-  val PrimaryHorizontalAxisTitle: PrimaryHorizontalAxisTitle with java.lang.String = js.native
-  val PrimaryMajorHorizontal: PrimaryMajorHorizontal with java.lang.String = js.native
-  val PrimaryMajorVertical: PrimaryMajorVertical with java.lang.String = js.native
-  val PrimaryMinorHorizontal: PrimaryMinorHorizontal with java.lang.String = js.native
-  val PrimaryMinorVertical: PrimaryMinorVertical with java.lang.String = js.native
-  val PrimaryVertical: PrimaryVertical with java.lang.String = js.native
-  val PrimaryVerticalAxisTitle: PrimaryVerticalAxisTitle with java.lang.String = js.native
-  val TitleCenter: TitleCenter with java.lang.String = js.native
-  val TitleFar: TitleFar with java.lang.String = js.native
-  val TitleNear: TitleNear with java.lang.String = js.native
-  val TitleNone: TitleNone with java.lang.String = js.native
+  /* 0 */ val DataLabelCenter: DataLabelCenter with scala.Double = js.native
+  /* 1 */ val DataLabelInsideBase: DataLabelInsideBase with scala.Double = js.native
+  /* 2 */ val DataLabelInsideEnd: DataLabelInsideEnd with scala.Double = js.native
+  /* 3 */ val DataLabelNone: DataLabelNone with scala.Double = js.native
+  /* 4 */ val DataLabelOutsideEnd: DataLabelOutsideEnd with scala.Double = js.native
+  /* 5 */ val LegendsBottom: LegendsBottom with scala.Double = js.native
+  /* 6 */ val LegendsLeft: LegendsLeft with scala.Double = js.native
+  /* 7 */ val LegendsNone: LegendsNone with scala.Double = js.native
+  /* 8 */ val LegendsRight: LegendsRight with scala.Double = js.native
+  /* 9 */ val LegendsTop: LegendsTop with scala.Double = js.native
+  /* 10 */ val PrimaryHorizontal: PrimaryHorizontal with scala.Double = js.native
+  /* 11 */ val PrimaryHorizontalAxisTitle: PrimaryHorizontalAxisTitle with scala.Double = js.native
+  /* 12 */ val PrimaryMajorHorizontal: PrimaryMajorHorizontal with scala.Double = js.native
+  /* 13 */ val PrimaryMajorVertical: PrimaryMajorVertical with scala.Double = js.native
+  /* 14 */ val PrimaryMinorHorizontal: PrimaryMinorHorizontal with scala.Double = js.native
+  /* 15 */ val PrimaryMinorVertical: PrimaryMinorVertical with scala.Double = js.native
+  /* 16 */ val PrimaryVertical: PrimaryVertical with scala.Double = js.native
+  /* 17 */ val PrimaryVerticalAxisTitle: PrimaryVerticalAxisTitle with scala.Double = js.native
+  /* 18 */ val TitleCenter: TitleCenter with scala.Double = js.native
+  /* 19 */ val TitleFar: TitleFar with scala.Double = js.native
+  /* 20 */ val TitleNear: TitleNear with scala.Double = js.native
+  /* 21 */ val TitleNone: TitleNone with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.ChartProperties with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SpreadsheetNs.ChartProperties with scala.Double] = js.native
 }
 

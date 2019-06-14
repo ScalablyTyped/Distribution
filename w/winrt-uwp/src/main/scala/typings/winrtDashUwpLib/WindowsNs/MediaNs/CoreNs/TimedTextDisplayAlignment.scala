@@ -27,12 +27,12 @@ object TimedTextDisplayAlignment extends js.Object {
   sealed trait center
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextDisplayAlignment
   
-  val after: after with java.lang.String = js.native
-  val before: before with java.lang.String = js.native
-  val center: center with java.lang.String = js.native
+  /* 1 */ val after: after with scala.Double = js.native
+  /* 0 */ val before: before with scala.Double = js.native
+  /* 2 */ val center: center with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextDisplayAlignment with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextDisplayAlignment with scala.Double
   ] = js.native
 }
 

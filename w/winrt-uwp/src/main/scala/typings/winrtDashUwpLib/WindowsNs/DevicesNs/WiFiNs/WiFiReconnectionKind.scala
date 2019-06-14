@@ -22,11 +22,11 @@ object WiFiReconnectionKind extends js.Object {
   sealed trait manual
     extends winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiReconnectionKind
   
-  val automatic: automatic with java.lang.String = js.native
-  val manual: manual with java.lang.String = js.native
+  /* 0 */ val automatic: automatic with scala.Double = js.native
+  /* 1 */ val manual: manual with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiReconnectionKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.WiFiNs.WiFiReconnectionKind with scala.Double
   ] = js.native
 }
 

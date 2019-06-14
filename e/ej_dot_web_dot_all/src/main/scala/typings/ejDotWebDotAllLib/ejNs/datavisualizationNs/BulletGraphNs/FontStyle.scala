@@ -26,12 +26,12 @@ object FontStyle extends js.Object {
   sealed trait Oblique
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FontStyle
   
-  val Italic: Italic with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
-  val Oblique: Oblique with java.lang.String = js.native
+  /* 1 */ val Italic: Italic with scala.Double = js.native
+  /* 0 */ val Normal: Normal with scala.Double = js.native
+  /* 2 */ val Oblique: Oblique with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FontStyle with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.FontStyle with scala.Double
   ] = js.native
 }
 

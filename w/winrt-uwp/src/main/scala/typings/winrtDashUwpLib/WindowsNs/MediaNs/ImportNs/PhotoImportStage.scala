@@ -32,13 +32,11 @@ object PhotoImportStage extends js.Object {
   sealed trait notStarted
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportStage
   
-  val deletingImportedItemsFromSource: deletingImportedItemsFromSource with java.lang.String = js.native
-  val findingItems: findingItems with java.lang.String = js.native
-  val importingItems: importingItems with java.lang.String = js.native
-  val notStarted: notStarted with java.lang.String = js.native
+  /* 3 */ val deletingImportedItemsFromSource: deletingImportedItemsFromSource with scala.Double = js.native
+  /* 1 */ val findingItems: findingItems with scala.Double = js.native
+  /* 2 */ val importingItems: importingItems with scala.Double = js.native
+  /* 0 */ val notStarted: notStarted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportStage with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportStage with scala.Double] = js.native
 }
 

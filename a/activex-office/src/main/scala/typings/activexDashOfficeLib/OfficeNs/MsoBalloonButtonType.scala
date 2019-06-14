@@ -25,3 +25,40 @@ import scala.scalajs.js.annotation._
 */
 trait MsoBalloonButtonType extends js.Object
 
+object MsoBalloonButtonType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def msoBalloonButtonAbort: activexDashOfficeLib.activexDashOfficeLibNumbers.`-8` = this.cast(-8)
+  @scala.inline
+  def msoBalloonButtonBack: activexDashOfficeLib.activexDashOfficeLibNumbers.`-5` = this.cast(-5)
+  @scala.inline
+  def msoBalloonButtonCancel: activexDashOfficeLib.activexDashOfficeLibNumbers.`-2` = this.cast(-2)
+  @scala.inline
+  def msoBalloonButtonClose: activexDashOfficeLib.activexDashOfficeLibNumbers.`-12` = this.cast(-12)
+  @scala.inline
+  def msoBalloonButtonIgnore: activexDashOfficeLib.activexDashOfficeLibNumbers.`-9` = this.cast(-9)
+  @scala.inline
+  def msoBalloonButtonNext: activexDashOfficeLib.activexDashOfficeLibNumbers.`-6` = this.cast(-6)
+  @scala.inline
+  def msoBalloonButtonNo: activexDashOfficeLib.activexDashOfficeLibNumbers.`-4` = this.cast(-4)
+  @scala.inline
+  def msoBalloonButtonNull: activexDashOfficeLib.activexDashOfficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def msoBalloonButtonOK: activexDashOfficeLib.activexDashOfficeLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def msoBalloonButtonOptions: activexDashOfficeLib.activexDashOfficeLibNumbers.`-14` = this.cast(-14)
+  @scala.inline
+  def msoBalloonButtonRetry: activexDashOfficeLib.activexDashOfficeLibNumbers.`-7` = this.cast(-7)
+  @scala.inline
+  def msoBalloonButtonSearch: activexDashOfficeLib.activexDashOfficeLibNumbers.`-10` = this.cast(-10)
+  @scala.inline
+  def msoBalloonButtonSnooze: activexDashOfficeLib.activexDashOfficeLibNumbers.`-11` = this.cast(-11)
+  @scala.inline
+  def msoBalloonButtonTips: activexDashOfficeLib.activexDashOfficeLibNumbers.`-13` = this.cast(-13)
+  @scala.inline
+  def msoBalloonButtonYes: activexDashOfficeLib.activexDashOfficeLibNumbers.`-3` = this.cast(-3)
+  @scala.inline
+  def msoBalloonButtonYesToAll: activexDashOfficeLib.activexDashOfficeLibNumbers.`-15` = this.cast(-15)
+}
+

@@ -27,24 +27,24 @@ object CFBNs extends js.Object {
   ): js.Any = js.native
   @js.native
   object CFB$EntryType extends js.Object {
-    val lockbytes: cfbLib.cfbMod.CFB$EntryType.lockbytes with java.lang.String = js.native
-    val property: cfbLib.cfbMod.CFB$EntryType.property with java.lang.String = js.native
-    val root: cfbLib.cfbMod.CFB$EntryType.root with java.lang.String = js.native
-    val storage: cfbLib.cfbMod.CFB$EntryType.storage with java.lang.String = js.native
-    val stream: cfbLib.cfbMod.CFB$EntryType.stream with java.lang.String = js.native
-    val unknown: cfbLib.cfbMod.CFB$EntryType.unknown with java.lang.String = js.native
+    /* 3 */ val lockbytes: cfbLib.cfbMod.CFB$EntryType.lockbytes with scala.Double = js.native
+    /* 4 */ val property: cfbLib.cfbMod.CFB$EntryType.property with scala.Double = js.native
+    /* 5 */ val root: cfbLib.cfbMod.CFB$EntryType.root with scala.Double = js.native
+    /* 1 */ val storage: cfbLib.cfbMod.CFB$EntryType.storage with scala.Double = js.native
+    /* 2 */ val stream: cfbLib.cfbMod.CFB$EntryType.stream with scala.Double = js.native
+    /* 0 */ val unknown: cfbLib.cfbMod.CFB$EntryType.unknown with scala.Double = js.native
     @JSBracketAccess
     @JSName("CFB$EntryType")
-    def apply(value: java.lang.String): js.UndefOr[cfbLib.cfbMod.CFB$EntryType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[cfbLib.cfbMod.CFB$EntryType with scala.Double] = js.native
   }
   
   @js.native
   object CFB$StorageType extends js.Object {
-    val fat: cfbLib.cfbMod.CFB$StorageType.fat with java.lang.String = js.native
-    val minifat: cfbLib.cfbMod.CFB$StorageType.minifat with java.lang.String = js.native
+    /* 0 */ val fat: cfbLib.cfbMod.CFB$StorageType.fat with scala.Double = js.native
+    /* 1 */ val minifat: cfbLib.cfbMod.CFB$StorageType.minifat with scala.Double = js.native
     @JSBracketAccess
     @JSName("CFB$StorageType")
-    def apply(value: java.lang.String): js.UndefOr[cfbLib.cfbMod.CFB$StorageType with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[cfbLib.cfbMod.CFB$StorageType with scala.Double] = js.native
   }
   
 }

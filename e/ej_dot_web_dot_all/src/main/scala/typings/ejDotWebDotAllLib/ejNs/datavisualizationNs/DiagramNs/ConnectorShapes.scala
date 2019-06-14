@@ -26,12 +26,12 @@ object ConnectorShapes extends js.Object {
   sealed trait UMLClassifier
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ConnectorShapes
   
-  val BPMN: BPMN with java.lang.String = js.native
-  val UMLActivity: UMLActivity with java.lang.String = js.native
-  val UMLClassifier: UMLClassifier with java.lang.String = js.native
+  /* 0 */ val BPMN: BPMN with scala.Double = js.native
+  /* 2 */ val UMLActivity: UMLActivity with scala.Double = js.native
+  /* 1 */ val UMLClassifier: UMLClassifier with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ConnectorShapes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.ConnectorShapes with scala.Double
   ] = js.native
 }
 

@@ -38,10 +38,10 @@ object FileType extends js.Object {
   sealed trait Text
     extends officeDashJsLib.OfficeNs.FileType
   
-  val Compressed: Compressed with java.lang.String = js.native
-  val Pdf: Pdf with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
+  /* 1 */ val Compressed: Compressed with scala.Double = js.native
+  /* 2 */ val Pdf: Pdf with scala.Double = js.native
+  /* 0 */ val Text: Text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.OfficeNs.FileType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsLib.OfficeNs.FileType with scala.Double] = js.native
 }
 

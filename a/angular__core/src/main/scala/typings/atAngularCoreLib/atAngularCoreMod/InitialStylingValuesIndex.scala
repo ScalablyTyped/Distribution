@@ -116,3 +116,58 @@ import scala.scalajs.js.annotation._
 */
 trait InitialStylingValuesIndex extends js.Object
 
+object InitialStylingValuesIndex {
+  @scala.inline
+  def AppliedFlagBitLength: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  /**
+    * The first bit set aside to mark if the initial style was already rendere
+    */
+  @scala.inline
+  def AppliedFlagBitPosition: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  /**
+    * Used for non-styling code to examine what the style or className string is:
+    * styles: ['width', '100px', 0, 'opacity', null, 0, 'height', '200px', 0]
+    *    => initialStyles[CachedStringValuePosition] = 'width:100px;height:200px';
+    * classes: ['foo', true, 0, 'bar', false, 0, 'baz', true, 0]
+    *    => initialClasses[CachedStringValuePosition] = 'foo bar';
+    *
+    * Note that this value is `null` by default and it will only be populated
+    * once `getInitialStyleStringValue` or `getInitialClassNameValue` is executed.
+    */
+  @scala.inline
+  def CachedStringValuePosition: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  /**
+    * The first value is always `null` so that `styles[0] == null` for unassigned values
+    */
+  @scala.inline
+  def DefaultNullValuePosition: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  /**
+    * The offset value (index + offset) for the style/class directive owner for each style/class
+    entry
+    */
+  @scala.inline
+  def DirectiveOwnerOffset: atAngularCoreLib.atAngularCoreLibNumbers.`2` = this.cast(2)
+  /**
+    * Where the style or class values start in the tuple
+    */
+  @scala.inline
+  def KeyValueStartPosition: atAngularCoreLib.atAngularCoreLibNumbers.`2` = this.cast(2)
+  /**
+    * The offset value (index + offset) for the property value for each style/class entry
+    */
+  @scala.inline
+  def PropOffset: atAngularCoreLib.atAngularCoreLibNumbers.`0` = this.cast(0)
+  /**
+    * The total size for each style/class entry (prop + value + directiveOwner)
+    */
+  @scala.inline
+  def Size: atAngularCoreLib.atAngularCoreLibNumbers.`3` = this.cast(3)
+  /**
+    * The offset value (index + offset) for the style/class value for each style/class entry
+    */
+  @scala.inline
+  def ValueOffset: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

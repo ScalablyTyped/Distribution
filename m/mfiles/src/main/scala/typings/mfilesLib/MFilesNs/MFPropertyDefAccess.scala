@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MFPropertyDefAccess extends js.Object
 
+object MFPropertyDefAccess {
+  @scala.inline
+  def Edit: mfilesLib.mfilesLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def None: mfilesLib.mfilesLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def See: mfilesLib.mfilesLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

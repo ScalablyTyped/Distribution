@@ -56,16 +56,16 @@ object MapTypeId extends js.Object {
   sealed trait streetside
     extends bingmapsLib.MicrosoftNs.MapsNs.MapTypeId
   
-  val aerial: aerial with java.lang.String = js.native
-  val birdseye: birdseye with java.lang.String = js.native
-  val canvasDark: canvasDark with java.lang.String = js.native
-  val canvasLight: canvasLight with java.lang.String = js.native
-  val grayscale: grayscale with java.lang.String = js.native
-  val mercator: mercator with java.lang.String = js.native
-  val ordnanceSurvey: ordnanceSurvey with java.lang.String = js.native
-  val road: road with java.lang.String = js.native
-  val streetside: streetside with java.lang.String = js.native
+  /* 0 */ val aerial: aerial with scala.Double = js.native
+  /* 1 */ val birdseye: birdseye with scala.Double = js.native
+  /* 2 */ val canvasDark: canvasDark with scala.Double = js.native
+  /* 3 */ val canvasLight: canvasLight with scala.Double = js.native
+  /* 4 */ val grayscale: grayscale with scala.Double = js.native
+  /* 5 */ val mercator: mercator with scala.Double = js.native
+  /* 6 */ val ordnanceSurvey: ordnanceSurvey with scala.Double = js.native
+  /* 7 */ val road: road with scala.Double = js.native
+  /* 8 */ val streetside: streetside with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.MapTypeId with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.MapTypeId with scala.Double] = js.native
 }
 

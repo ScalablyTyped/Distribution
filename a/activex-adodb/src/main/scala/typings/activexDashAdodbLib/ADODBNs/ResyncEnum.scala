@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait ResyncEnum extends js.Object
 
+object ResyncEnum {
+  @scala.inline
+  def adResyncAllValues: activexDashAdodbLib.activexDashAdodbLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def adResyncUnderlyingValues: activexDashAdodbLib.activexDashAdodbLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

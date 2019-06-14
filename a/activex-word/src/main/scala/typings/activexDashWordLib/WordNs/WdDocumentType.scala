@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdDocumentType extends js.Object
 
+object WdDocumentType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdTypeDocument: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdTypeFrameset: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdTypeTemplate: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

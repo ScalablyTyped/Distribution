@@ -37,14 +37,14 @@ object CastingConnectionState extends js.Object {
   sealed trait rendering
     extends winrtDashUwpLib.WindowsNs.MediaNs.CastingNs.CastingConnectionState
   
-  val connected: connected with java.lang.String = js.native
-  val connecting: connecting with java.lang.String = js.native
-  val disconnected: disconnected with java.lang.String = js.native
-  val disconnecting: disconnecting with java.lang.String = js.native
-  val rendering: rendering with java.lang.String = js.native
+  /* 1 */ val connected: connected with scala.Double = js.native
+  /* 4 */ val connecting: connecting with scala.Double = js.native
+  /* 0 */ val disconnected: disconnected with scala.Double = js.native
+  /* 3 */ val disconnecting: disconnecting with scala.Double = js.native
+  /* 2 */ val rendering: rendering with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CastingNs.CastingConnectionState with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CastingNs.CastingConnectionState with scala.Double
   ] = js.native
 }
 

@@ -23,12 +23,12 @@ object SortDirection extends js.Object {
   sealed trait fqlFormula
     extends sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.SortDirection
   
-  val ascending: ascending with java.lang.String = js.native
-  val descending: descending with java.lang.String = js.native
-  val fqlFormula: fqlFormula with java.lang.String = js.native
+  /* 0 */ val ascending: ascending with scala.Double = js.native
+  /* 1 */ val descending: descending with scala.Double = js.native
+  /* 2 */ val fqlFormula: fqlFormula with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.SortDirection with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.QueryNs.SortDirection with scala.Double
   ] = js.native
 }
 

@@ -37,14 +37,14 @@ object SmartCardReaderKind extends js.Object {
   sealed trait uicc
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardReaderKind
   
-  val any: any with java.lang.String = js.native
-  val generic: generic with java.lang.String = js.native
-  val nfc: nfc with java.lang.String = js.native
-  val tpm: tpm with java.lang.String = js.native
-  val uicc: uicc with java.lang.String = js.native
+  /* 0 */ val any: any with scala.Double = js.native
+  /* 1 */ val generic: generic with scala.Double = js.native
+  /* 3 */ val nfc: nfc with scala.Double = js.native
+  /* 2 */ val tpm: tpm with scala.Double = js.native
+  /* 4 */ val uicc: uicc with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardReaderKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SmartCardsNs.SmartCardReaderKind with scala.Double
   ] = js.native
 }
 

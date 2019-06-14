@@ -12,6 +12,6 @@ sealed trait AnimationActionLoopStyles extends js.Object
 @js.native
 object AnimationActionLoopStyles extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.AnimationActionLoopStyles with java.lang.String] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[threeLib.srcConstantsMod.AnimationActionLoopStyles with scala.Nothing] = js.native
 }
 

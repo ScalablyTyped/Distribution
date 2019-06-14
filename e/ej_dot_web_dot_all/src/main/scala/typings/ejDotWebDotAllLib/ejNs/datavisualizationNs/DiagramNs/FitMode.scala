@@ -26,12 +26,10 @@ object FitMode extends js.Object {
   sealed trait Width
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FitMode
   
-  val Height: Height with java.lang.String = js.native
-  val Page: Page with java.lang.String = js.native
-  val Width: Width with java.lang.String = js.native
+  /* 2 */ val Height: Height with scala.Double = js.native
+  /* 0 */ val Page: Page with scala.Double = js.native
+  /* 1 */ val Width: Width with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FitMode with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.FitMode with scala.Double] = js.native
 }
 

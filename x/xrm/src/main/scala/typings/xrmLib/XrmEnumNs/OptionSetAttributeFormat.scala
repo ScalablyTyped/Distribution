@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
 */
 trait OptionSetAttributeFormat extends js.Object
 
+object OptionSetAttributeFormat {
+  @scala.inline
+  def Language: xrmLib.xrmLibStrings.language = this.cast("language")
+  @scala.inline
+  def TimeZone: xrmLib.xrmLibStrings.timezone = this.cast("timezone")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

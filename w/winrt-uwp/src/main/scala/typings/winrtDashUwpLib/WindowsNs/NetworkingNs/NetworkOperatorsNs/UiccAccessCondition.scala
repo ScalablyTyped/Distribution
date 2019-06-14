@@ -52,17 +52,17 @@ object UiccAccessCondition extends js.Object {
   sealed trait pin4
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UiccAccessCondition
   
-  val administrative5: administrative5 with java.lang.String = js.native
-  val administrative6: administrative6 with java.lang.String = js.native
-  val alwaysAllowed: alwaysAllowed with java.lang.String = js.native
-  val neverAllowed: neverAllowed with java.lang.String = js.native
-  val pin1: pin1 with java.lang.String = js.native
-  val pin2: pin2 with java.lang.String = js.native
-  val pin3: pin3 with java.lang.String = js.native
-  val pin4: pin4 with java.lang.String = js.native
+  /* 5 */ val administrative5: administrative5 with scala.Double = js.native
+  /* 6 */ val administrative6: administrative6 with scala.Double = js.native
+  /* 0 */ val alwaysAllowed: alwaysAllowed with scala.Double = js.native
+  /* 7 */ val neverAllowed: neverAllowed with scala.Double = js.native
+  /* 1 */ val pin1: pin1 with scala.Double = js.native
+  /* 2 */ val pin2: pin2 with scala.Double = js.native
+  /* 3 */ val pin3: pin3 with scala.Double = js.native
+  /* 4 */ val pin4: pin4 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UiccAccessCondition with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.UiccAccessCondition with scala.Double
   ] = js.native
 }
 

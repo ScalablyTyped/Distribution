@@ -32,9 +32,9 @@ object DocumentMode extends js.Object {
   sealed trait ReadWrite
     extends officeDashJsDashPreviewLib.OfficeNs.DocumentMode
   
-  val ReadOnly: ReadOnly with java.lang.String = js.native
-  val ReadWrite: ReadWrite with java.lang.String = js.native
+  /* 0 */ val ReadOnly: ReadOnly with scala.Double = js.native
+  /* 1 */ val ReadWrite: ReadWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.DocumentMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.DocumentMode with scala.Double] = js.native
 }
 

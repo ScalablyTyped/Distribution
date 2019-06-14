@@ -21,11 +21,11 @@ object PointerType extends js.Object {
   sealed trait Needle
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.PointerType
   
-  val Marker: Marker with java.lang.String = js.native
-  val Needle: Needle with java.lang.String = js.native
+  /* 1 */ val Marker: Marker with scala.Double = js.native
+  /* 0 */ val Needle: Needle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.PointerType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.PointerType with scala.Double
   ] = js.native
 }
 

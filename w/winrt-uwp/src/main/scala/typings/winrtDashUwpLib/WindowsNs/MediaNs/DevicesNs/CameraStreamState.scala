@@ -32,13 +32,11 @@ object CameraStreamState extends js.Object {
   sealed trait streaming
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CameraStreamState
   
-  val blockedForPrivacy: blockedForPrivacy with java.lang.String = js.native
-  val notStreaming: notStreaming with java.lang.String = js.native
-  val shutdown: shutdown with java.lang.String = js.native
-  val streaming: streaming with java.lang.String = js.native
+  /* 2 */ val blockedForPrivacy: blockedForPrivacy with scala.Double = js.native
+  /* 0 */ val notStreaming: notStreaming with scala.Double = js.native
+  /* 3 */ val shutdown: shutdown with scala.Double = js.native
+  /* 1 */ val streaming: streaming with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CameraStreamState with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.CameraStreamState with scala.Double] = js.native
 }
 

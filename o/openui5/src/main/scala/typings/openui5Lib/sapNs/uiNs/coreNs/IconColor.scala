@@ -34,12 +34,12 @@ object IconColor extends js.Object {
   sealed trait Positive
     extends openui5Lib.sapNs.uiNs.coreNs.IconColor
   
-  val Critical: Critical with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Negative: Negative with java.lang.String = js.native
-  val Neutral: Neutral with java.lang.String = js.native
-  val Positive: Positive with java.lang.String = js.native
+  /* 0 */ val Critical: Critical with scala.Double = js.native
+  /* 1 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val Negative: Negative with scala.Double = js.native
+  /* 3 */ val Neutral: Neutral with scala.Double = js.native
+  /* 4 */ val Positive: Positive with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.IconColor with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.IconColor with scala.Double] = js.native
 }
 

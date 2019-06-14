@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _ELEMENTDESCRIPTOR_FLAGS extends js.Object
 
+object _ELEMENTDESCRIPTOR_FLAGS {
+  @scala.inline
+  def ELEMENTDESCRIPTORFLAGS_LITERAL: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def ELEMENTDESCRIPTORFLAGS_NESTED_LITERAL: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ELEMENTDESCRIPTOR_FLAGS_Max: activexDashMshtmlLib.activexDashMshtmlLibNumbers.`2147483647` = this.cast(2147483647)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

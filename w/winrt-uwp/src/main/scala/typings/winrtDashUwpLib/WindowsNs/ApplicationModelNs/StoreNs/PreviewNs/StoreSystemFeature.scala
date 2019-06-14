@@ -132,33 +132,33 @@ object StoreSystemFeature extends js.Object {
   sealed trait resolutionWxgaOr720P
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.StoreSystemFeature
   
-  val architectureArm: architectureArm with java.lang.String = js.native
-  val architectureX64: architectureX64 with java.lang.String = js.native
-  val architectureX86: architectureX86 with java.lang.String = js.native
-  val cameraFront: cameraFront with java.lang.String = js.native
-  val cameraRear: cameraRear with java.lang.String = js.native
-  val d3D12HardwareFL11: d3D12HardwareFL11 with java.lang.String = js.native
-  val d3D12HardwareFL12: d3D12HardwareFL12 with java.lang.String = js.native
-  val directX10: directX10 with java.lang.String = js.native
-  val directX11: directX11 with java.lang.String = js.native
-  val directX9: directX9 with java.lang.String = js.native
-  val gyroscope: gyroscope with java.lang.String = js.native
-  val hover: hover with java.lang.String = js.native
-  val magnetometer: magnetometer with java.lang.String = js.native
-  val memory1GB: memory1GB with java.lang.String = js.native
-  val memory2GB: memory2GB with java.lang.String = js.native
-  val memory300MB: memory300MB with java.lang.String = js.native
-  val memory750MB: memory750MB with java.lang.String = js.native
-  val nfc: nfc with java.lang.String = js.native
-  val resolution720P: resolution720P with java.lang.String = js.native
-  val resolutionWvga: resolutionWvga with java.lang.String = js.native
-  val resolutionWvgaOr720P: resolutionWvgaOr720P with java.lang.String = js.native
-  val resolutionWvgaOrWxga: resolutionWvgaOrWxga with java.lang.String = js.native
-  val resolutionWxga: resolutionWxga with java.lang.String = js.native
-  val resolutionWxgaOr720P: resolutionWxgaOr720P with java.lang.String = js.native
+  /* 2 */ val architectureArm: architectureArm with scala.Double = js.native
+  /* 1 */ val architectureX64: architectureX64 with scala.Double = js.native
+  /* 0 */ val architectureX86: architectureX86 with scala.Double = js.native
+  /* 12 */ val cameraFront: cameraFront with scala.Double = js.native
+  /* 13 */ val cameraRear: cameraRear with scala.Double = js.native
+  /* 6 */ val d3D12HardwareFL11: d3D12HardwareFL11 with scala.Double = js.native
+  /* 7 */ val d3D12HardwareFL12: d3D12HardwareFL12 with scala.Double = js.native
+  /* 4 */ val directX10: directX10 with scala.Double = js.native
+  /* 5 */ val directX11: directX11 with scala.Double = js.native
+  /* 3 */ val directX9: directX9 with scala.Double = js.native
+  /* 14 */ val gyroscope: gyroscope with scala.Double = js.native
+  /* 15 */ val hover: hover with scala.Double = js.native
+  /* 16 */ val magnetometer: magnetometer with scala.Double = js.native
+  /* 10 */ val memory1GB: memory1GB with scala.Double = js.native
+  /* 11 */ val memory2GB: memory2GB with scala.Double = js.native
+  /* 8 */ val memory300MB: memory300MB with scala.Double = js.native
+  /* 9 */ val memory750MB: memory750MB with scala.Double = js.native
+  /* 17 */ val nfc: nfc with scala.Double = js.native
+  /* 18 */ val resolution720P: resolution720P with scala.Double = js.native
+  /* 19 */ val resolutionWvga: resolutionWvga with scala.Double = js.native
+  /* 20 */ val resolutionWvgaOr720P: resolutionWvgaOr720P with scala.Double = js.native
+  /* 22 */ val resolutionWvgaOrWxga: resolutionWvgaOrWxga with scala.Double = js.native
+  /* 21 */ val resolutionWxga: resolutionWxga with scala.Double = js.native
+  /* 23 */ val resolutionWxgaOr720P: resolutionWxgaOr720P with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.StoreSystemFeature with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.StoreNs.PreviewNs.StoreSystemFeature with scala.Double
   ] = js.native
 }
 

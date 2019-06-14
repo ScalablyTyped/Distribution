@@ -72,19 +72,19 @@ object IsoSpeedPreset extends js.Object {
   sealed trait iso800
     extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.IsoSpeedPreset
   
-  val auto: auto with java.lang.String = js.native
-  val iso100: iso100 with java.lang.String = js.native
-  val iso12800: iso12800 with java.lang.String = js.native
-  val iso1600: iso1600 with java.lang.String = js.native
-  val iso200: iso200 with java.lang.String = js.native
-  val iso25600: iso25600 with java.lang.String = js.native
-  val iso3200: iso3200 with java.lang.String = js.native
-  val iso400: iso400 with java.lang.String = js.native
-  val iso50: iso50 with java.lang.String = js.native
-  val iso6400: iso6400 with java.lang.String = js.native
-  val iso80: iso80 with java.lang.String = js.native
-  val iso800: iso800 with java.lang.String = js.native
+  /* 0 */ val auto: auto with scala.Double = js.native
+  /* 3 */ val iso100: iso100 with scala.Double = js.native
+  /* 10 */ val iso12800: iso12800 with scala.Double = js.native
+  /* 7 */ val iso1600: iso1600 with scala.Double = js.native
+  /* 4 */ val iso200: iso200 with scala.Double = js.native
+  /* 11 */ val iso25600: iso25600 with scala.Double = js.native
+  /* 8 */ val iso3200: iso3200 with scala.Double = js.native
+  /* 5 */ val iso400: iso400 with scala.Double = js.native
+  /* 1 */ val iso50: iso50 with scala.Double = js.native
+  /* 9 */ val iso6400: iso6400 with scala.Double = js.native
+  /* 2 */ val iso80: iso80 with scala.Double = js.native
+  /* 6 */ val iso800: iso800 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.IsoSpeedPreset with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.IsoSpeedPreset with scala.Double] = js.native
 }
 

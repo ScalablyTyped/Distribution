@@ -37,12 +37,12 @@ object MediaSourceState extends js.Object {
   sealed trait opening
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSourceState
   
-  val closed: closed with java.lang.String = js.native
-  val failed: failed with java.lang.String = js.native
-  val initial: initial with java.lang.String = js.native
-  val opened: opened with java.lang.String = js.native
-  val opening: opening with java.lang.String = js.native
+  /* 4 */ val closed: closed with scala.Double = js.native
+  /* 3 */ val failed: failed with scala.Double = js.native
+  /* 0 */ val initial: initial with scala.Double = js.native
+  /* 2 */ val opened: opened with scala.Double = js.native
+  /* 1 */ val opening: opening with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSourceState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSourceState with scala.Double] = js.native
 }
 

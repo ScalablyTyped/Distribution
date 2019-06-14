@@ -51,17 +51,17 @@ object LabelIntersectAction extends js.Object {
   sealed trait WrapByword
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LabelIntersectAction
   
-  val Hide: Hide with java.lang.String = js.native
-  val MultipleRows: MultipleRows with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Rotate45: Rotate45 with java.lang.String = js.native
-  val Rotate90: Rotate90 with java.lang.String = js.native
-  val Trim: Trim with java.lang.String = js.native
-  val Wrap: Wrap with java.lang.String = js.native
-  val WrapByword: WrapByword with java.lang.String = js.native
+  /* 6 */ val Hide: Hide with scala.Double = js.native
+  /* 7 */ val MultipleRows: MultipleRows with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 2 */ val Rotate45: Rotate45 with scala.Double = js.native
+  /* 1 */ val Rotate90: Rotate90 with scala.Double = js.native
+  /* 5 */ val Trim: Trim with scala.Double = js.native
+  /* 3 */ val Wrap: Wrap with scala.Double = js.native
+  /* 4 */ val WrapByword: WrapByword with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LabelIntersectAction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.LabelIntersectAction with scala.Double
   ] = js.native
 }
 

@@ -56,18 +56,16 @@ object Shapes extends js.Object {
   sealed trait UMLClassifier
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Shapes
   
-  val BPMN: BPMN with java.lang.String = js.native
-  val Basic: Basic with java.lang.String = js.native
-  val Flow: Flow with java.lang.String = js.native
-  val HTML: HTML with java.lang.String = js.native
-  val Image: Image with java.lang.String = js.native
-  val Native: Native with java.lang.String = js.native
-  val Text: Text with java.lang.String = js.native
-  val UMLActivity: UMLActivity with java.lang.String = js.native
-  val UMLClassifier: UMLClassifier with java.lang.String = js.native
+  /* 6 */ val BPMN: BPMN with scala.Double = js.native
+  /* 4 */ val Basic: Basic with scala.Double = js.native
+  /* 5 */ val Flow: Flow with scala.Double = js.native
+  /* 2 */ val HTML: HTML with scala.Double = js.native
+  /* 1 */ val Image: Image with scala.Double = js.native
+  /* 3 */ val Native: Native with scala.Double = js.native
+  /* 0 */ val Text: Text with scala.Double = js.native
+  /* 8 */ val UMLActivity: UMLActivity with scala.Double = js.native
+  /* 7 */ val UMLClassifier: UMLClassifier with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Shapes with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Shapes with scala.Double] = js.native
 }
 

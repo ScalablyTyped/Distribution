@@ -23,10 +23,10 @@ object LogAppErrorResult extends js.Object {
   sealed trait success
     extends sharepointLib.SPNs.UtilitiesNs.LogAppErrorResult
   
-  val accessDenied: accessDenied with java.lang.String = js.native
-  val errorsThrottled: errorsThrottled with java.lang.String = js.native
-  val success: success with java.lang.String = js.native
+  /* 2 */ val accessDenied: accessDenied with scala.Double = js.native
+  /* 1 */ val errorsThrottled: errorsThrottled with scala.Double = js.native
+  /* 0 */ val success: success with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.LogAppErrorResult with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.LogAppErrorResult with scala.Double] = js.native
 }
 

@@ -30,11 +30,11 @@ object Wrapping extends js.Object {
   sealed trait Soft
     extends openui5Lib.sapNs.uiNs.coreNs.Wrapping
   
-  val Hard: Hard with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Off: Off with java.lang.String = js.native
-  val Soft: Soft with java.lang.String = js.native
+  /* 0 */ val Hard: Hard with scala.Double = js.native
+  /* 1 */ val None: None with scala.Double = js.native
+  /* 2 */ val Off: Off with scala.Double = js.native
+  /* 3 */ val Soft: Soft with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.Wrapping with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.uiNs.coreNs.Wrapping with scala.Double] = js.native
 }
 

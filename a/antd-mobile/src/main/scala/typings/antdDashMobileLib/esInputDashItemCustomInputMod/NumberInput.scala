@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NumberInput
   extends reactLib.reactMod.Component[NumberInputProps, js.Any, js.Any] {
-  var container: stdLib.Element = js.native
+  var container: stdLib.HTMLDivElement = js.native
   var inputRef: stdLib.HTMLDivElement | scala.Null = js.native
   def addBlurListener(): scala.Unit = js.native
   @JSName("componentDidUpdate")
@@ -20,7 +20,7 @@ trait NumberInput
   def doBlur(ev: stdLib.MouseEvent): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def getComponent(): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def getContainer(): stdLib.Element = js.native
+  def getContainer(): stdLib.HTMLDivElement = js.native
   def onChange(value: js.Any): scala.Unit = js.native
   def onConfirm(value: js.Any): scala.Unit = js.native
   def onFakeInputClick(): scala.Unit = js.native

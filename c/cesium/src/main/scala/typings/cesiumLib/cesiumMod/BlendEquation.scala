@@ -23,10 +23,10 @@ object BlendEquation extends js.Object {
   sealed trait SUBTRACT
     extends cesiumLib.cesiumMod.BlendEquation
   
-  val ADD: ADD with java.lang.String = js.native
-  val REVERSE_SUBTRACT: REVERSE_SUBTRACT with java.lang.String = js.native
-  val SUBTRACT: SUBTRACT with java.lang.String = js.native
+  /* 0 */ val ADD: ADD with scala.Double = js.native
+  /* 2 */ val REVERSE_SUBTRACT: REVERSE_SUBTRACT with scala.Double = js.native
+  /* 1 */ val SUBTRACT: SUBTRACT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.BlendEquation with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.BlendEquation with scala.Double] = js.native
 }
 

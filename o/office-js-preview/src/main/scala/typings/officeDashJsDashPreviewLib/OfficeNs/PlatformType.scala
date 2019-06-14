@@ -56,13 +56,13 @@ object PlatformType extends js.Object {
   sealed trait iOS
     extends officeDashJsDashPreviewLib.OfficeNs.PlatformType
   
-  val Android: Android with java.lang.String = js.native
-  val Mac: Mac with java.lang.String = js.native
-  val OfficeOnline: OfficeOnline with java.lang.String = js.native
-  val PC: PC with java.lang.String = js.native
-  val Universal: Universal with java.lang.String = js.native
-  val iOS: iOS with java.lang.String = js.native
+  /* 4 */ val Android: Android with scala.Double = js.native
+  /* 2 */ val Mac: Mac with scala.Double = js.native
+  /* 1 */ val OfficeOnline: OfficeOnline with scala.Double = js.native
+  /* 0 */ val PC: PC with scala.Double = js.native
+  /* 5 */ val Universal: Universal with scala.Double = js.native
+  /* 3 */ val iOS: iOS with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.PlatformType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.PlatformType with scala.Double] = js.native
 }
 

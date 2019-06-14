@@ -26,10 +26,10 @@ object IBarHTMLTag extends js.Object {
   sealed trait Header
     extends openui5Lib.sapNs.mNs.IBarHTMLTag
   
-  val Div: Div with java.lang.String = js.native
-  val Footer: Footer with java.lang.String = js.native
-  val Header: Header with java.lang.String = js.native
+  /* 0 */ val Div: Div with scala.Double = js.native
+  /* 1 */ val Footer: Footer with scala.Double = js.native
+  /* 2 */ val Header: Header with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.IBarHTMLTag with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.IBarHTMLTag with scala.Double] = js.native
 }
 

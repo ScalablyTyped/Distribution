@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nouislider"
-version := "v9.0.1-dt-20190322Z-ea0af8"
+version := "v9.0.1-dt-20190322Z-f26f09"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

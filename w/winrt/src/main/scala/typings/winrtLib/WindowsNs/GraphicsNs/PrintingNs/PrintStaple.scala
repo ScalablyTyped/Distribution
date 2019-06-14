@@ -63,20 +63,20 @@ object PrintStaple extends js.Object {
   sealed trait stapleTopRight
     extends winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintStaple
   
-  val default: default with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val saddleStitch: saddleStitch with java.lang.String = js.native
-  val stapleBottomLeft: stapleBottomLeft with java.lang.String = js.native
-  val stapleBottomRight: stapleBottomRight with java.lang.String = js.native
-  val stapleDualBottom: stapleDualBottom with java.lang.String = js.native
-  val stapleDualLeft: stapleDualLeft with java.lang.String = js.native
-  val stapleDualRight: stapleDualRight with java.lang.String = js.native
-  val stapleDualTop: stapleDualTop with java.lang.String = js.native
-  val stapleTopLeft: stapleTopLeft with java.lang.String = js.native
-  val stapleTopRight: stapleTopRight with java.lang.String = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 3 */ val none: none with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 12 */ val saddleStitch: saddleStitch with scala.Double = js.native
+  /* 6 */ val stapleBottomLeft: stapleBottomLeft with scala.Double = js.native
+  /* 7 */ val stapleBottomRight: stapleBottomRight with scala.Double = js.native
+  /* 11 */ val stapleDualBottom: stapleDualBottom with scala.Double = js.native
+  /* 8 */ val stapleDualLeft: stapleDualLeft with scala.Double = js.native
+  /* 9 */ val stapleDualRight: stapleDualRight with scala.Double = js.native
+  /* 10 */ val stapleDualTop: stapleDualTop with scala.Double = js.native
+  /* 4 */ val stapleTopLeft: stapleTopLeft with scala.Double = js.native
+  /* 5 */ val stapleTopRight: stapleTopRight with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintStaple with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintStaple with scala.Double] = js.native
 }
 

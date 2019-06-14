@@ -19,7 +19,7 @@ object Anon_Justification {
     shift_y: scala.Int | scala.Double = null
   ): Anon_Justification = {
     val __obj = js.Dynamic.literal()
-    if (justification != null) __obj.updateDynamic("justification")(justification.asInstanceOf[js.Any])
+    if (justification != null) __obj.updateDynamic("justification")(justification)
     if (shift_x != null) __obj.updateDynamic("shift_x")(shift_x.asInstanceOf[js.Any])
     if (shift_y != null) __obj.updateDynamic("shift_y")(shift_y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Justification]

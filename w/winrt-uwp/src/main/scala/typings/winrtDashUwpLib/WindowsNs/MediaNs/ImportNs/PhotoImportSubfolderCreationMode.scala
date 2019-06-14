@@ -32,13 +32,13 @@ object PhotoImportSubfolderCreationMode extends js.Object {
   sealed trait keepOriginalFolderStructure
     extends winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSubfolderCreationMode
   
-  val createSubfoldersFromExifDate: createSubfoldersFromExifDate with java.lang.String = js.native
-  val createSubfoldersFromFileDate: createSubfoldersFromFileDate with java.lang.String = js.native
-  val doNotCreateSubfolders: doNotCreateSubfolders with java.lang.String = js.native
-  val keepOriginalFolderStructure: keepOriginalFolderStructure with java.lang.String = js.native
+  /* 2 */ val createSubfoldersFromExifDate: createSubfoldersFromExifDate with scala.Double = js.native
+  /* 1 */ val createSubfoldersFromFileDate: createSubfoldersFromFileDate with scala.Double = js.native
+  /* 0 */ val doNotCreateSubfolders: doNotCreateSubfolders with scala.Double = js.native
+  /* 3 */ val keepOriginalFolderStructure: keepOriginalFolderStructure with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSubfolderCreationMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.ImportNs.PhotoImportSubfolderCreationMode with scala.Double
   ] = js.native
 }
 

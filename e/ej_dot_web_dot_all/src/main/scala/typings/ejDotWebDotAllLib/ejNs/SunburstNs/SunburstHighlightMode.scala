@@ -31,11 +31,11 @@ object SunburstHighlightMode extends js.Object {
   sealed trait Point
     extends ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHighlightMode
   
-  val All: All with java.lang.String = js.native
-  val Child: Child with java.lang.String = js.native
-  val Parent: Parent with java.lang.String = js.native
-  val Point: Point with java.lang.String = js.native
+  /* 3 */ val All: All with scala.Double = js.native
+  /* 2 */ val Child: Child with scala.Double = js.native
+  /* 1 */ val Parent: Parent with scala.Double = js.native
+  /* 0 */ val Point: Point with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHighlightMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHighlightMode with scala.Double] = js.native
 }
 

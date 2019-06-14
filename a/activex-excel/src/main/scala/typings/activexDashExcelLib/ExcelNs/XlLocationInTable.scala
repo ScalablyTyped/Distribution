@@ -18,3 +18,26 @@ import scala.scalajs.js.annotation._
 */
 trait XlLocationInTable extends js.Object
 
+object XlLocationInTable {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlColumnHeader: activexDashExcelLib.activexDashExcelLibNumbers.`-4110` = this.cast(-4110)
+  @scala.inline
+  def xlColumnItem: activexDashExcelLib.activexDashExcelLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def xlDataHeader: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlDataItem: activexDashExcelLib.activexDashExcelLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def xlPageHeader: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def xlPageItem: activexDashExcelLib.activexDashExcelLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def xlRowHeader: activexDashExcelLib.activexDashExcelLibNumbers.`-4153` = this.cast(-4153)
+  @scala.inline
+  def xlRowItem: activexDashExcelLib.activexDashExcelLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def xlTableBody: activexDashExcelLib.activexDashExcelLibNumbers.`8` = this.cast(8)
+}
+

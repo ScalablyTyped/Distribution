@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-adodb"
-version := "6.1-dt-20190213Z-a5ad82"
+version := "6.1-dt-20190213Z-875ad4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -35,10 +35,10 @@ object DataSourceStatus extends js.Object {
   sealed trait waiting
     extends winjsLib.WinJSNs.UINs.DataSourceStatus
   
-  val failure: failure with java.lang.String = js.native
-  val ready: ready with java.lang.String = js.native
-  val waiting: waiting with java.lang.String = js.native
+  /* 2 */ val failure: failure with scala.Double = js.native
+  /* 0 */ val ready: ready with scala.Double = js.native
+  /* 1 */ val waiting: waiting with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.DataSourceStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.DataSourceStatus with scala.Double] = js.native
 }
 

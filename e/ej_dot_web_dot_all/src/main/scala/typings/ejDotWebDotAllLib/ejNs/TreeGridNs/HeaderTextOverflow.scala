@@ -21,9 +21,9 @@ object HeaderTextOverflow extends js.Object {
   sealed trait Wrap
     extends ejDotWebDotAllLib.ejNs.TreeGridNs.HeaderTextOverflow
   
-  val None: None with java.lang.String = js.native
-  val Wrap: Wrap with java.lang.String = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Wrap: Wrap with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.HeaderTextOverflow with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.TreeGridNs.HeaderTextOverflow with scala.Double] = js.native
 }
 

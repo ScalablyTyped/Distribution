@@ -27,12 +27,12 @@ object CredentialPromptType extends js.Object {
   sealed trait retypeCredentials
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.OnlineIdNs.CredentialPromptType
   
-  val doNotPrompt: doNotPrompt with java.lang.String = js.native
-  val promptIfNeeded: promptIfNeeded with java.lang.String = js.native
-  val retypeCredentials: retypeCredentials with java.lang.String = js.native
+  /* 2 */ val doNotPrompt: doNotPrompt with scala.Double = js.native
+  /* 0 */ val promptIfNeeded: promptIfNeeded with scala.Double = js.native
+  /* 1 */ val retypeCredentials: retypeCredentials with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.OnlineIdNs.CredentialPromptType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.OnlineIdNs.CredentialPromptType with scala.Double
   ] = js.native
 }
 

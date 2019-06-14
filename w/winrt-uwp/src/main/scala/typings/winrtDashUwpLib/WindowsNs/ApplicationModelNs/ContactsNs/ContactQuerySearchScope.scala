@@ -22,11 +22,11 @@ object ContactQuerySearchScope extends js.Object {
   sealed trait server
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQuerySearchScope
   
-  val local: local with java.lang.String = js.native
-  val server: server with java.lang.String = js.native
+  /* 0 */ val local: local with scala.Double = js.native
+  /* 1 */ val server: server with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQuerySearchScope with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactQuerySearchScope with scala.Double
   ] = js.native
 }
 

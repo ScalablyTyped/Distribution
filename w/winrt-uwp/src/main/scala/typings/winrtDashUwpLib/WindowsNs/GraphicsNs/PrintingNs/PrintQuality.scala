@@ -62,19 +62,17 @@ object PrintQuality extends js.Object {
   sealed trait text
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintQuality
   
-  val automatic: automatic with java.lang.String = js.native
-  val default: default with java.lang.String = js.native
-  val draft: draft with java.lang.String = js.native
-  val fax: fax with java.lang.String = js.native
-  val high: high with java.lang.String = js.native
-  val normal: normal with java.lang.String = js.native
-  val notAvailable: notAvailable with java.lang.String = js.native
-  val photographic: photographic with java.lang.String = js.native
-  val printerCustom: printerCustom with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
+  /* 3 */ val automatic: automatic with scala.Double = js.native
+  /* 0 */ val default: default with scala.Double = js.native
+  /* 4 */ val draft: draft with scala.Double = js.native
+  /* 5 */ val fax: fax with scala.Double = js.native
+  /* 6 */ val high: high with scala.Double = js.native
+  /* 7 */ val normal: normal with scala.Double = js.native
+  /* 1 */ val notAvailable: notAvailable with scala.Double = js.native
+  /* 8 */ val photographic: photographic with scala.Double = js.native
+  /* 2 */ val printerCustom: printerCustom with scala.Double = js.native
+  /* 9 */ val text: text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintQuality with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintQuality with scala.Double] = js.native
 }
 

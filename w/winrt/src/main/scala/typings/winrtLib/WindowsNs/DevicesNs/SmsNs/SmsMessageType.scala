@@ -19,9 +19,9 @@ object SmsMessageType extends js.Object {
   sealed trait text
     extends winrtLib.WindowsNs.DevicesNs.SmsNs.SmsMessageType
   
-  val binary: binary with java.lang.String = js.native
-  val text: text with java.lang.String = js.native
+  /* 0 */ val binary: binary with scala.Double = js.native
+  /* 1 */ val text: text with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsMessageType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.SmsNs.SmsMessageType with scala.Double] = js.native
 }
 

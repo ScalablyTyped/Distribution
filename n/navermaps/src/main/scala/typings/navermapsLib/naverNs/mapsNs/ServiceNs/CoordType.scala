@@ -19,9 +19,9 @@ object CoordType extends js.Object {
   sealed trait TM128
     extends navermapsLib.naverNs.mapsNs.ServiceNs.CoordType
   
-  val LATLNG: LATLNG with java.lang.String = js.native
-  val TM128: TM128 with java.lang.String = js.native
+  /* 0 */ val LATLNG: LATLNG with scala.Double = js.native
+  /* 1 */ val TM128: TM128 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[navermapsLib.naverNs.mapsNs.ServiceNs.CoordType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[navermapsLib.naverNs.mapsNs.ServiceNs.CoordType with scala.Double] = js.native
 }
 

@@ -21,11 +21,11 @@ object LabelOrientation extends js.Object {
   sealed trait Vertical
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LabelOrientation
   
-  val Horizontal: Horizontal with java.lang.String = js.native
-  val Vertical: Vertical with java.lang.String = js.native
+  /* 0 */ val Horizontal: Horizontal with scala.Double = js.native
+  /* 1 */ val Vertical: Vertical with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LabelOrientation with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.LabelOrientation with scala.Double
   ] = js.native
 }
 

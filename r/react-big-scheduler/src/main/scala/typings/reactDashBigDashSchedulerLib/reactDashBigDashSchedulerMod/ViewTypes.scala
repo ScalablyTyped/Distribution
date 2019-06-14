@@ -43,17 +43,17 @@ object ViewTypes extends js.Object {
   sealed trait Year
     extends reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.ViewTypes
   
-  val Custom: Custom with java.lang.String = js.native
-  val Custom1: Custom1 with java.lang.String = js.native
-  val Custom2: Custom2 with java.lang.String = js.native
-  val Day: Day with java.lang.String = js.native
-  val Month: Month with java.lang.String = js.native
-  val Quarter: Quarter with java.lang.String = js.native
-  val Week: Week with java.lang.String = js.native
-  val Year: Year with java.lang.String = js.native
+  /* 5 */ val Custom: Custom with scala.Double = js.native
+  /* 6 */ val Custom1: Custom1 with scala.Double = js.native
+  /* 7 */ val Custom2: Custom2 with scala.Double = js.native
+  /* 0 */ val Day: Day with scala.Double = js.native
+  /* 2 */ val Month: Month with scala.Double = js.native
+  /* 3 */ val Quarter: Quarter with scala.Double = js.native
+  /* 1 */ val Week: Week with scala.Double = js.native
+  /* 4 */ val Year: Year with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.ViewTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    reactDashBigDashSchedulerLib.reactDashBigDashSchedulerMod.ViewTypes with scala.Double
   ] = js.native
 }
 

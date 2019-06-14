@@ -23,12 +23,12 @@ object EBufferUsage extends js.Object {
   sealed trait STREAM_DRAW
     extends wonderDotJsLib.distEs2015RendererBufferEBufferUsageMod.EBufferUsage
   
-  val DYNAMIC_DRAW: DYNAMIC_DRAW with java.lang.String = js.native
-  val STATIC_DRAW: STATIC_DRAW with java.lang.String = js.native
-  val STREAM_DRAW: STREAM_DRAW with java.lang.String = js.native
+  /* 2 */ val DYNAMIC_DRAW: DYNAMIC_DRAW with scala.Double = js.native
+  /* 1 */ val STATIC_DRAW: STATIC_DRAW with scala.Double = js.native
+  /* 0 */ val STREAM_DRAW: STREAM_DRAW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    wonderDotJsLib.distEs2015RendererBufferEBufferUsageMod.EBufferUsage with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    wonderDotJsLib.distEs2015RendererBufferEBufferUsageMod.EBufferUsage with scala.Double
   ] = js.native
 }
 

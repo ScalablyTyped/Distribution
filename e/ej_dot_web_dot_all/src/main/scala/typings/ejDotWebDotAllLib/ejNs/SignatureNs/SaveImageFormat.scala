@@ -31,11 +31,11 @@ object SaveImageFormat extends js.Object {
   sealed trait TIFF
     extends ejDotWebDotAllLib.ejNs.SignatureNs.SaveImageFormat
   
-  val BMP: BMP with java.lang.String = js.native
-  val JPG: JPG with java.lang.String = js.native
-  val PNG: PNG with java.lang.String = js.native
-  val TIFF: TIFF with java.lang.String = js.native
+  /* 2 */ val BMP: BMP with scala.Double = js.native
+  /* 1 */ val JPG: JPG with scala.Double = js.native
+  /* 0 */ val PNG: PNG with scala.Double = js.native
+  /* 3 */ val TIFF: TIFF with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SignatureNs.SaveImageFormat with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SignatureNs.SaveImageFormat with scala.Double] = js.native
 }
 

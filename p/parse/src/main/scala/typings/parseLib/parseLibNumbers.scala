@@ -9,387 +9,222 @@ object parseLibNumbers {
   @js.native
   sealed trait `-1`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `1`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `100`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `101`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `102`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `103`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `104`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `105`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `106`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `107`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `108`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `109`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `111`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `112`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `115`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `116`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `119`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `120`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `121`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `122`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `123`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `124`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `125`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `126`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `127`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `128`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `129`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `130`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `137`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `139`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `140`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `141`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `142`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `150`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `151`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `152`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `153`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `155`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `160`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `200`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `201`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `202`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `203`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `204`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `205`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `206`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `207`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `208`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `209`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `250`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `251`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `252`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `600`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `601`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `602`
     extends parseLib.ParseNs.ErrorCode
-       with parseLib.reactDashNativeMod.ErrorCode
-       with parseLib.nodeMod.ErrorCode
-       with parseLib.parseMod.ErrorCode
   
   @js.native
   sealed trait `false` extends js.Object

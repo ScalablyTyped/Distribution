@@ -37,14 +37,14 @@ object SerialError extends js.Object {
   sealed trait transmitFull
     extends winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialError
   
-  val bufferOverrun: bufferOverrun with java.lang.String = js.native
-  val frame: frame with java.lang.String = js.native
-  val receiveFull: receiveFull with java.lang.String = js.native
-  val receiveParity: receiveParity with java.lang.String = js.native
-  val transmitFull: transmitFull with java.lang.String = js.native
+  /* 1 */ val bufferOverrun: bufferOverrun with scala.Double = js.native
+  /* 0 */ val frame: frame with scala.Double = js.native
+  /* 2 */ val receiveFull: receiveFull with scala.Double = js.native
+  /* 3 */ val receiveParity: receiveParity with scala.Double = js.native
+  /* 4 */ val transmitFull: transmitFull with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialError with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.SerialCommunicationNs.SerialError with scala.Double
   ] = js.native
 }
 

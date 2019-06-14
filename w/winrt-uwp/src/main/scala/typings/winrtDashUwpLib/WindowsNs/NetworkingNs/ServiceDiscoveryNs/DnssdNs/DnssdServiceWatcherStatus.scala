@@ -42,15 +42,15 @@ object DnssdServiceWatcherStatus extends js.Object {
   sealed trait stopping
     extends winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdServiceWatcherStatus
   
-  val aborted: aborted with java.lang.String = js.native
-  val created: created with java.lang.String = js.native
-  val enumerationCompleted: enumerationCompleted with java.lang.String = js.native
-  val started: started with java.lang.String = js.native
-  val stopped: stopped with java.lang.String = js.native
-  val stopping: stopping with java.lang.String = js.native
+  /* 5 */ val aborted: aborted with scala.Double = js.native
+  /* 0 */ val created: created with scala.Double = js.native
+  /* 2 */ val enumerationCompleted: enumerationCompleted with scala.Double = js.native
+  /* 1 */ val started: started with scala.Double = js.native
+  /* 4 */ val stopped: stopped with scala.Double = js.native
+  /* 3 */ val stopping: stopping with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdServiceWatcherStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdServiceWatcherStatus with scala.Double
   ] = js.native
 }
 

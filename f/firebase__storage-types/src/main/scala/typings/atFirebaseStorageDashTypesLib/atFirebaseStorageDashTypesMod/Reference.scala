@@ -19,6 +19,7 @@ trait Reference extends js.Object {
   def getMetadata(): js.Promise[FullMetadata] = js.native
   def list(): js.Promise[ListResult] = js.native
   def list(options: ListOptions): js.Promise[ListResult] = js.native
+  def listAll(): js.Promise[ListResult] = js.native
   def put(data: stdLib.ArrayBuffer): UploadTask = js.native
   def put(data: stdLib.ArrayBuffer, metadata: UploadMetadata): UploadTask = js.native
   def put(data: stdLib.Blob): UploadTask = js.native

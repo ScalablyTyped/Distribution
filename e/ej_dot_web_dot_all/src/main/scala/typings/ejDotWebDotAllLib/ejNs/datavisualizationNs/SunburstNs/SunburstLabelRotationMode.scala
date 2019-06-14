@@ -21,11 +21,11 @@ object SunburstLabelRotationMode extends js.Object {
   sealed trait Normal
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLabelRotationMode
   
-  val Angle: Angle with java.lang.String = js.native
-  val Normal: Normal with java.lang.String = js.native
+  /* 0 */ val Angle: Angle with scala.Double = js.native
+  /* 1 */ val Normal: Normal with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLabelRotationMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLabelRotationMode with scala.Double
   ] = js.native
 }
 

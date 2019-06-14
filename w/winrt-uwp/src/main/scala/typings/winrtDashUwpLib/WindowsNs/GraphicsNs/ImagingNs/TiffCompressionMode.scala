@@ -52,17 +52,17 @@ object TiffCompressionMode extends js.Object {
   sealed trait zip
     extends winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.TiffCompressionMode
   
-  val automatic: automatic with java.lang.String = js.native
-  val ccitt3: ccitt3 with java.lang.String = js.native
-  val ccitt4: ccitt4 with java.lang.String = js.native
-  val lzw: lzw with java.lang.String = js.native
-  val lzwhDifferencing: lzwhDifferencing with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val rle: rle with java.lang.String = js.native
-  val zip: zip with java.lang.String = js.native
+  /* 0 */ val automatic: automatic with scala.Double = js.native
+  /* 2 */ val ccitt3: ccitt3 with scala.Double = js.native
+  /* 3 */ val ccitt4: ccitt4 with scala.Double = js.native
+  /* 4 */ val lzw: lzw with scala.Double = js.native
+  /* 7 */ val lzwhDifferencing: lzwhDifferencing with scala.Double = js.native
+  /* 1 */ val none: none with scala.Double = js.native
+  /* 5 */ val rle: rle with scala.Double = js.native
+  /* 6 */ val zip: zip with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.TiffCompressionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.TiffCompressionMode with scala.Double
   ] = js.native
 }
 

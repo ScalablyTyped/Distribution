@@ -22,11 +22,11 @@ object VideoFramePrecision extends js.Object {
   sealed trait nearestKeyFrame
     extends winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.VideoFramePrecision
   
-  val nearestFrame: nearestFrame with java.lang.String = js.native
-  val nearestKeyFrame: nearestKeyFrame with java.lang.String = js.native
+  /* 0 */ val nearestFrame: nearestFrame with scala.Double = js.native
+  /* 1 */ val nearestKeyFrame: nearestKeyFrame with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.VideoFramePrecision with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.VideoFramePrecision with scala.Double
   ] = js.native
 }
 

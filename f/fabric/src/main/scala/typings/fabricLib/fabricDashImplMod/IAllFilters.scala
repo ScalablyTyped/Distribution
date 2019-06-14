@@ -14,6 +14,7 @@ trait IAllFilters extends js.Object {
   var BlendImage: fabricLib.Anon_FromObjectObject
   var Brightness: fabricLib.Anon_FromObjectObjectOptions
   var ColorMatrix: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix
+  var Contrast: fabricLib.Anon_FromObjectObjectOptionsAnonContrast
   var Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrixOpaque
   var GradientTransparency: fabricLib.Anon_FromObjectObjectOptionsAnonThreshold
   var Grayscale: fabricLib.Anon_FromObjectObjectOptionsAny
@@ -24,6 +25,7 @@ trait IAllFilters extends js.Object {
   var Pixelate: fabricLib.Anon_FromObjectObjectOptionsAnonBlocksize
   var RemoveWhite: fabricLib.Anon_FromObjectObjectOptionsAnonDistance
   var Resize: fabricLib.Anon_FromObjectObjectOptionsAnyIResizeFilter
+  var Saturation: fabricLib.Anon_FromObjectObjectOptionsAnonSaturation
   var Sepia: fabricLib.Anon_FromObjectObjectOptionsAnyISepiaFilter
   var Sepia2: fabricLib.Anon_FromObjectObjectOptionsAnyISepia2Filter
   var Tint: fabricLib.Anon_FromObjectObjectOptionsAnonColorOpacity
@@ -37,6 +39,7 @@ object IAllFilters {
     BlendImage: fabricLib.Anon_FromObjectObject,
     Brightness: fabricLib.Anon_FromObjectObjectOptions,
     ColorMatrix: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix,
+    Contrast: fabricLib.Anon_FromObjectObjectOptionsAnonContrast,
     Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrixOpaque,
     GradientTransparency: fabricLib.Anon_FromObjectObjectOptionsAnonThreshold,
     Grayscale: fabricLib.Anon_FromObjectObjectOptionsAny,
@@ -47,11 +50,12 @@ object IAllFilters {
     Pixelate: fabricLib.Anon_FromObjectObjectOptionsAnonBlocksize,
     RemoveWhite: fabricLib.Anon_FromObjectObjectOptionsAnonDistance,
     Resize: fabricLib.Anon_FromObjectObjectOptionsAnyIResizeFilter,
+    Saturation: fabricLib.Anon_FromObjectObjectOptionsAnonSaturation,
     Sepia: fabricLib.Anon_FromObjectObjectOptionsAnyISepiaFilter,
     Sepia2: fabricLib.Anon_FromObjectObjectOptionsAnyISepia2Filter,
     Tint: fabricLib.Anon_FromObjectObjectOptionsAnonColorOpacity
   ): IAllFilters = {
-    val __obj = js.Dynamic.literal(BaseFilter = BaseFilter, BlendColor = BlendColor, BlendImage = BlendImage, Brightness = Brightness, ColorMatrix = ColorMatrix, Convolute = Convolute, GradientTransparency = GradientTransparency, Grayscale = Grayscale, Invert = Invert, Mask = Mask, Multiply = Multiply, Noise = Noise, Pixelate = Pixelate, RemoveWhite = RemoveWhite, Resize = Resize, Sepia = Sepia, Sepia2 = Sepia2, Tint = Tint)
+    val __obj = js.Dynamic.literal(BaseFilter = BaseFilter, BlendColor = BlendColor, BlendImage = BlendImage, Brightness = Brightness, ColorMatrix = ColorMatrix, Contrast = Contrast, Convolute = Convolute, GradientTransparency = GradientTransparency, Grayscale = Grayscale, Invert = Invert, Mask = Mask, Multiply = Multiply, Noise = Noise, Pixelate = Pixelate, RemoveWhite = RemoveWhite, Resize = Resize, Saturation = Saturation, Sepia = Sepia, Sepia2 = Sepia2, Tint = Tint)
   
     __obj.asInstanceOf[IAllFilters]
   }

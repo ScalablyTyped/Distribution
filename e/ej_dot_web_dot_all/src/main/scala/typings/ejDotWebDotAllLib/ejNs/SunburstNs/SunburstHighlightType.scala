@@ -21,9 +21,9 @@ object SunburstHighlightType extends js.Object {
   sealed trait Opacity
     extends ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHighlightType
   
-  val Color: Color with java.lang.String = js.native
-  val Opacity: Opacity with java.lang.String = js.native
+  /* 1 */ val Color: Color with scala.Double = js.native
+  /* 0 */ val Opacity: Opacity with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHighlightType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.SunburstNs.SunburstHighlightType with scala.Double] = js.native
 }
 

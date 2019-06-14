@@ -31,12 +31,12 @@ object MetadataType extends js.Object {
   sealed trait TV_SHOW
     extends chromeLib.chromeNs.castNs.mediaNs.MetadataType
   
-  val GENERIC: GENERIC with java.lang.String = js.native
-  val MOVIE: MOVIE with java.lang.String = js.native
-  val MUSIC_TRACK: MUSIC_TRACK with java.lang.String = js.native
-  val PHOTO: PHOTO with java.lang.String = js.native
-  val TV_SHOW: TV_SHOW with java.lang.String = js.native
+  /* 0 */ val GENERIC: GENERIC with scala.Double = js.native
+  /* 2 */ val MOVIE: MOVIE with scala.Double = js.native
+  /* 3 */ val MUSIC_TRACK: MUSIC_TRACK with scala.Double = js.native
+  /* 4 */ val PHOTO: PHOTO with scala.Double = js.native
+  /* 1 */ val TV_SHOW: TV_SHOW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[chromeLib.chromeNs.castNs.mediaNs.MetadataType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[chromeLib.chromeNs.castNs.mediaNs.MetadataType with scala.Double] = js.native
 }
 

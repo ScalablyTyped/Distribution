@@ -27,11 +27,11 @@ object AppLicenseType extends js.Object {
   sealed trait trialMultiUser
     extends sharepointLib.SPNs.AppLicenseType
   
-  val perpetualAllUsers: perpetualAllUsers with java.lang.String = js.native
-  val perpetualMultiUser: perpetualMultiUser with java.lang.String = js.native
-  val trialAllUsers: trialAllUsers with java.lang.String = js.native
-  val trialMultiUser: trialMultiUser with java.lang.String = js.native
+  /* 1 */ val perpetualAllUsers: perpetualAllUsers with scala.Double = js.native
+  /* 0 */ val perpetualMultiUser: perpetualMultiUser with scala.Double = js.native
+  /* 3 */ val trialAllUsers: trialAllUsers with scala.Double = js.native
+  /* 2 */ val trialMultiUser: trialMultiUser with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.AppLicenseType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.AppLicenseType with scala.Double] = js.native
 }
 

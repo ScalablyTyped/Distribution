@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait WdPrintOutPages extends js.Object
 
+object WdPrintOutPages {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def wdPrintAllPages: activexDashWordLib.activexDashWordLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def wdPrintEvenPagesOnly: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def wdPrintOddPagesOnly: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+}
+

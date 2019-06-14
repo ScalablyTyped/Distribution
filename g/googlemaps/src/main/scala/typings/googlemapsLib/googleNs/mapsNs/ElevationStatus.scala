@@ -31,12 +31,12 @@ object ElevationStatus extends js.Object {
   sealed trait UNKNOWN_ERROR
     extends googlemapsLib.googleNs.mapsNs.ElevationStatus
   
-  val INVALID_REQUEST: INVALID_REQUEST with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val OVER_QUERY_LIMIT: OVER_QUERY_LIMIT with java.lang.String = js.native
-  val REQUEST_DENIED: REQUEST_DENIED with java.lang.String = js.native
-  val UNKNOWN_ERROR: UNKNOWN_ERROR with java.lang.String = js.native
+  /* 0 */ val INVALID_REQUEST: INVALID_REQUEST with scala.Double = js.native
+  /* 1 */ val OK: OK with scala.Double = js.native
+  /* 2 */ val OVER_QUERY_LIMIT: OVER_QUERY_LIMIT with scala.Double = js.native
+  /* 3 */ val REQUEST_DENIED: REQUEST_DENIED with scala.Double = js.native
+  /* 4 */ val UNKNOWN_ERROR: UNKNOWN_ERROR with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.ElevationStatus with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.ElevationStatus with scala.Double] = js.native
 }
 

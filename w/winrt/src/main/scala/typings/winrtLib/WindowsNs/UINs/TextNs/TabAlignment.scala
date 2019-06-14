@@ -31,12 +31,12 @@ object TabAlignment extends js.Object {
   sealed trait right
     extends winrtLib.WindowsNs.UINs.TextNs.TabAlignment
   
-  val bar: bar with java.lang.String = js.native
-  val center: center with java.lang.String = js.native
-  val decimal: decimal with java.lang.String = js.native
-  val left: left with java.lang.String = js.native
-  val right: right with java.lang.String = js.native
+  /* 4 */ val bar: bar with scala.Double = js.native
+  /* 1 */ val center: center with scala.Double = js.native
+  /* 3 */ val decimal: decimal with scala.Double = js.native
+  /* 0 */ val left: left with scala.Double = js.native
+  /* 2 */ val right: right with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.TabAlignment with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.TabAlignment with scala.Double] = js.native
 }
 

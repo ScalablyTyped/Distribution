@@ -19,11 +19,11 @@ object ContactSelectionMode extends js.Object {
   sealed trait fields
     extends winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactSelectionMode
   
-  val contacts: contacts with java.lang.String = js.native
-  val fields: fields with java.lang.String = js.native
+  /* 0 */ val contacts: contacts with scala.Double = js.native
+  /* 1 */ val fields: fields with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactSelectionMode with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactSelectionMode with scala.Double
   ] = js.native
 }
 

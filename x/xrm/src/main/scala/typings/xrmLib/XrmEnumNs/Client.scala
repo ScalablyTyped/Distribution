@@ -17,3 +17,18 @@ import scala.scalajs.js.annotation._
 */
 trait Client extends js.Object
 
+object Client {
+  @scala.inline
+  def Mobile: xrmLib.xrmLibStrings.Mobile = this.cast("Mobile")
+  @scala.inline
+  def Outlook: xrmLib.xrmLibStrings.Outlook = this.cast("Outlook")
+  @scala.inline
+  def USD: xrmLib.xrmLibStrings.UnifiedServiceDesk = this.cast("UnifiedServiceDesk")
+  @scala.inline
+  def UnifiedServiceDesk: xrmLib.xrmLibStrings.UnifiedServiceDesk = this.cast("UnifiedServiceDesk")
+  @scala.inline
+  def Web: xrmLib.xrmLibStrings.Web = this.cast("Web")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

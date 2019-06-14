@@ -22,11 +22,11 @@ object EmailStoreAccessType extends js.Object {
   sealed trait appMailboxesReadWrite
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailStoreAccessType
   
-  val allMailboxesLimitedReadWrite: allMailboxesLimitedReadWrite with java.lang.String = js.native
-  val appMailboxesReadWrite: appMailboxesReadWrite with java.lang.String = js.native
+  /* 1 */ val allMailboxesLimitedReadWrite: allMailboxesLimitedReadWrite with scala.Double = js.native
+  /* 0 */ val appMailboxesReadWrite: appMailboxesReadWrite with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailStoreAccessType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.EmailNs.EmailStoreAccessType with scala.Double
   ] = js.native
 }
 

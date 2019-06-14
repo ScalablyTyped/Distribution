@@ -19,11 +19,11 @@ object DataSourceParameterType extends js.Object {
   sealed trait DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataSourceParameterType
   
-  val CELL: CELL with java.lang.String = js.native
-  val DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED: DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED with java.lang.String = js.native
+  /* 1 */ val CELL: CELL with scala.Double = js.native
+  /* 0 */ val DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED: DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataSourceParameterType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.DataSourceParameterType with scala.Double
   ] = js.native
 }
 

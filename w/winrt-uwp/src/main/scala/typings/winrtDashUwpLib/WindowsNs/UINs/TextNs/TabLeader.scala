@@ -42,14 +42,14 @@ object TabLeader extends js.Object {
   sealed trait thickLines
     extends winrtDashUwpLib.WindowsNs.UINs.TextNs.TabLeader
   
-  val dashes: dashes with java.lang.String = js.native
-  val dots: dots with java.lang.String = js.native
-  @JSName("equals")
-  val equals_FTabLeader: equals with java.lang.String = js.native
-  val lines: lines with java.lang.String = js.native
-  val spaces: spaces with java.lang.String = js.native
-  val thickLines: thickLines with java.lang.String = js.native
+  /* 2 */ val dashes: dashes with scala.Double = js.native
+  /* 1 */ val dots: dots with scala.Double = js.native
+  /* 5 */ @JSName("equals")
+  val equals_FTabLeader: equals with scala.Double = js.native
+  /* 3 */ val lines: lines with scala.Double = js.native
+  /* 0 */ val spaces: spaces with scala.Double = js.native
+  /* 4 */ val thickLines: thickLines with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.TabLeader with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.UINs.TextNs.TabLeader with scala.Double] = js.native
 }
 

@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait SubmitMode extends js.Object
 
+object SubmitMode {
+  @scala.inline
+  def Always: xrmLib.xrmLibStrings.always = this.cast("always")
+  @scala.inline
+  def Dirty: xrmLib.xrmLibStrings.dirty = this.cast("dirty")
+  @scala.inline
+  def Never: xrmLib.xrmLibStrings.never = this.cast("never")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

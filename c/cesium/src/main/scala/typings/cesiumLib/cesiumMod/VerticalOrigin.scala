@@ -23,10 +23,10 @@ object VerticalOrigin extends js.Object {
   sealed trait TOP
     extends cesiumLib.cesiumMod.VerticalOrigin
   
-  val BOTTOM: BOTTOM with java.lang.String = js.native
-  val CENTER: CENTER with java.lang.String = js.native
-  val TOP: TOP with java.lang.String = js.native
+  /* 1 */ val BOTTOM: BOTTOM with scala.Double = js.native
+  /* 0 */ val CENTER: CENTER with scala.Double = js.native
+  /* 2 */ val TOP: TOP with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.VerticalOrigin with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.VerticalOrigin with scala.Double] = js.native
 }
 

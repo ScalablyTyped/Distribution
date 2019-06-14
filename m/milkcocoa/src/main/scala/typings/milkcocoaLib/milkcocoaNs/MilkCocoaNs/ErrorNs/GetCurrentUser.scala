@@ -16,10 +16,8 @@ object GetCurrentUser extends js.Object {
   sealed trait NotLoggedIn
     extends milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.GetCurrentUser
   
-  val NotLoggedIn: NotLoggedIn with java.lang.String = js.native
+  /* 0 */ val NotLoggedIn: NotLoggedIn with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.GetCurrentUser with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[milkcocoaLib.milkcocoaNs.MilkCocoaNs.ErrorNs.GetCurrentUser with scala.Double] = js.native
 }
 

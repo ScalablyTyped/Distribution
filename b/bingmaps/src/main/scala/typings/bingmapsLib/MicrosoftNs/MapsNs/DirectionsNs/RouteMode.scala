@@ -31,11 +31,11 @@ object RouteMode extends js.Object {
   sealed trait walking
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteMode
   
-  val driving: driving with java.lang.String = js.native
-  val transit: transit with java.lang.String = js.native
-  val truck: truck with java.lang.String = js.native
-  val walking: walking with java.lang.String = js.native
+  /* 0 */ val driving: driving with scala.Double = js.native
+  /* 1 */ val transit: transit with scala.Double = js.native
+  /* 2 */ val truck: truck with scala.Double = js.native
+  /* 3 */ val walking: walking with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteMode with scala.Double] = js.native
 }
 

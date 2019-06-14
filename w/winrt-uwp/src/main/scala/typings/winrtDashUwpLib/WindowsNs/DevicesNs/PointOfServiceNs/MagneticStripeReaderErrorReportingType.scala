@@ -22,11 +22,11 @@ object MagneticStripeReaderErrorReportingType extends js.Object {
   sealed trait trackLevel
     extends winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderErrorReportingType
   
-  val cardLevel: cardLevel with java.lang.String = js.native
-  val trackLevel: trackLevel with java.lang.String = js.native
+  /* 0 */ val cardLevel: cardLevel with scala.Double = js.native
+  /* 1 */ val trackLevel: trackLevel with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderErrorReportingType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.MagneticStripeReaderErrorReportingType with scala.Double
   ] = js.native
 }
 

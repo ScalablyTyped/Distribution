@@ -75,23 +75,23 @@ object TelephonyKey extends js.Object {
   sealed trait star
     extends winrtLib.WindowsNs.MediaNs.DevicesNs.TelephonyKey
   
-  val a: a with java.lang.String = js.native
-  val b: b with java.lang.String = js.native
-  val c: c with java.lang.String = js.native
-  val d: d with java.lang.String = js.native
-  val d0: d0 with java.lang.String = js.native
-  val d1: d1 with java.lang.String = js.native
-  val d2: d2 with java.lang.String = js.native
-  val d3: d3 with java.lang.String = js.native
-  val d4: d4 with java.lang.String = js.native
-  val d5: d5 with java.lang.String = js.native
-  val d6: d6 with java.lang.String = js.native
-  val d7: d7 with java.lang.String = js.native
-  val d8: d8 with java.lang.String = js.native
-  val d9: d9 with java.lang.String = js.native
-  val pound: pound with java.lang.String = js.native
-  val star: star with java.lang.String = js.native
+  /* 12 */ val a: a with scala.Double = js.native
+  /* 13 */ val b: b with scala.Double = js.native
+  /* 14 */ val c: c with scala.Double = js.native
+  /* 15 */ val d: d with scala.Double = js.native
+  /* 0 */ val d0: d0 with scala.Double = js.native
+  /* 1 */ val d1: d1 with scala.Double = js.native
+  /* 2 */ val d2: d2 with scala.Double = js.native
+  /* 3 */ val d3: d3 with scala.Double = js.native
+  /* 4 */ val d4: d4 with scala.Double = js.native
+  /* 5 */ val d5: d5 with scala.Double = js.native
+  /* 6 */ val d6: d6 with scala.Double = js.native
+  /* 7 */ val d7: d7 with scala.Double = js.native
+  /* 8 */ val d8: d8 with scala.Double = js.native
+  /* 9 */ val d9: d9 with scala.Double = js.native
+  /* 11 */ val pound: pound with scala.Double = js.native
+  /* 10 */ val star: star with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.MediaNs.DevicesNs.TelephonyKey with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.MediaNs.DevicesNs.TelephonyKey with scala.Double] = js.native
 }
 

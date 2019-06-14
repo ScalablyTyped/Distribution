@@ -26,12 +26,10 @@ object RangeType extends js.Object {
   sealed trait Y
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.RangeType
   
-  val X: X with java.lang.String = js.native
-  val XY: XY with java.lang.String = js.native
-  val Y: Y with java.lang.String = js.native
+  /* 1 */ val X: X with scala.Double = js.native
+  /* 0 */ val XY: XY with scala.Double = js.native
+  /* 2 */ val Y: Y with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.RangeType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.RangeType with scala.Double] = js.native
 }
 

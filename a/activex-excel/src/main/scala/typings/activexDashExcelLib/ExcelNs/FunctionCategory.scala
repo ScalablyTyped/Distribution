@@ -23,3 +23,36 @@ import scala.scalajs.js.annotation._
 */
 trait FunctionCategory extends js.Object
 
+object FunctionCategory {
+  @scala.inline
+  def Commands: activexDashExcelLib.activexDashExcelLibNumbers.`10` = this.cast(10)
+  @scala.inline
+  def Customizing: activexDashExcelLib.activexDashExcelLibNumbers.`11` = this.cast(11)
+  @scala.inline
+  def DDEAndExternal: activexDashExcelLib.activexDashExcelLibNumbers.`13` = this.cast(13)
+  @scala.inline
+  def Database: activexDashExcelLib.activexDashExcelLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def DateAndTime: activexDashExcelLib.activexDashExcelLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def Financial: activexDashExcelLib.activexDashExcelLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Information: activexDashExcelLib.activexDashExcelLibNumbers.`9` = this.cast(9)
+  @scala.inline
+  def Logical: activexDashExcelLib.activexDashExcelLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def LookupAndReference: activexDashExcelLib.activexDashExcelLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def MacroControl: activexDashExcelLib.activexDashExcelLibNumbers.`12` = this.cast(12)
+  @scala.inline
+  def MathAndTrig: activexDashExcelLib.activexDashExcelLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def Statistical: activexDashExcelLib.activexDashExcelLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def Text: activexDashExcelLib.activexDashExcelLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def UserDefined: activexDashExcelLib.activexDashExcelLibNumbers.`14` = this.cast(14)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait XlAxisType extends js.Object
 
+object XlAxisType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def xlCategory: activexDashWordLib.activexDashWordLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def xlSeriesAxis: activexDashWordLib.activexDashWordLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def xlValue: activexDashWordLib.activexDashWordLibNumbers.`2` = this.cast(2)
+}
+

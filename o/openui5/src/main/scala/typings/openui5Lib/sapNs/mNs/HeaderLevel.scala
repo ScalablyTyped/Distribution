@@ -38,13 +38,13 @@ object HeaderLevel extends js.Object {
   sealed trait H6
     extends openui5Lib.sapNs.mNs.HeaderLevel
   
-  val H1: H1 with java.lang.String = js.native
-  val H2: H2 with java.lang.String = js.native
-  val H3: H3 with java.lang.String = js.native
-  val H4: H4 with java.lang.String = js.native
-  val H5: H5 with java.lang.String = js.native
-  val H6: H6 with java.lang.String = js.native
+  /* 0 */ val H1: H1 with scala.Double = js.native
+  /* 1 */ val H2: H2 with scala.Double = js.native
+  /* 2 */ val H3: H3 with scala.Double = js.native
+  /* 3 */ val H4: H4 with scala.Double = js.native
+  /* 4 */ val H5: H5 with scala.Double = js.native
+  /* 5 */ val H6: H6 with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[openui5Lib.sapNs.mNs.HeaderLevel with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[openui5Lib.sapNs.mNs.HeaderLevel with scala.Double] = js.native
 }
 

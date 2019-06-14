@@ -26,12 +26,12 @@ object BPMNSubProcessTypes extends js.Object {
   sealed trait Transaction
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNSubProcessTypes
   
-  val Event: Event with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val Transaction: Transaction with java.lang.String = js.native
+  /* 2 */ val Event: Event with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1 */ val Transaction: Transaction with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNSubProcessTypes with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.BPMNSubProcessTypes with scala.Double
   ] = js.native
 }
 

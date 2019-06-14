@@ -35,13 +35,13 @@ object PrincipalSource extends js.Object {
   sealed trait windows
     extends sharepointLib.SPNs.UtilitiesNs.PrincipalSource
   
-  val all: all with java.lang.String = js.native
-  val membershipProvider: membershipProvider with java.lang.String = js.native
-  val none: none with java.lang.String = js.native
-  val roleProvider: roleProvider with java.lang.String = js.native
-  val userInfoList: userInfoList with java.lang.String = js.native
-  val windows: windows with java.lang.String = js.native
+  /* 5 */ val all: all with scala.Double = js.native
+  /* 3 */ val membershipProvider: membershipProvider with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 4 */ val roleProvider: roleProvider with scala.Double = js.native
+  /* 1 */ val userInfoList: userInfoList with scala.Double = js.native
+  /* 2 */ val windows: windows with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.PrincipalSource with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.UtilitiesNs.PrincipalSource with scala.Double] = js.native
 }
 

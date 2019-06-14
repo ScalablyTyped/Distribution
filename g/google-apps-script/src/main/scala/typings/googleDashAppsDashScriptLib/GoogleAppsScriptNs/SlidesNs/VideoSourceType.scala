@@ -19,11 +19,11 @@ object VideoSourceType extends js.Object {
   sealed trait YOUTUBE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.VideoSourceType
   
-  val UNSUPPORTED: UNSUPPORTED with java.lang.String = js.native
-  val YOUTUBE: YOUTUBE with java.lang.String = js.native
+  /* 0 */ val UNSUPPORTED: UNSUPPORTED with scala.Double = js.native
+  /* 1 */ val YOUTUBE: YOUTUBE with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.VideoSourceType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesNs.VideoSourceType with scala.Double
   ] = js.native
 }
 

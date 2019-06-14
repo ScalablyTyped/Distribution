@@ -26,12 +26,12 @@ object TextAnchor extends js.Object {
   sealed trait Start
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TextAnchor
   
-  val End: End with java.lang.String = js.native
-  val Middle: Middle with java.lang.String = js.native
-  val Start: Start with java.lang.String = js.native
+  /* 2 */ val End: End with scala.Double = js.native
+  /* 1 */ val Middle: Middle with scala.Double = js.native
+  /* 0 */ val Start: Start with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TextAnchor with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.TextAnchor with scala.Double
   ] = js.native
 }
 

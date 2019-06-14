@@ -31,11 +31,11 @@ object MatchConfidence extends js.Object {
   sealed trait unknown
     extends bingmapsLib.MicrosoftNs.MapsNs.SearchNs.MatchConfidence
   
-  val high: high with java.lang.String = js.native
-  val low: low with java.lang.String = js.native
-  val medium: medium with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 0 */ val high: high with scala.Double = js.native
+  /* 2 */ val low: low with scala.Double = js.native
+  /* 1 */ val medium: medium with scala.Double = js.native
+  /* 3 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.SearchNs.MatchConfidence with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.SearchNs.MatchConfidence with scala.Double] = js.native
 }
 

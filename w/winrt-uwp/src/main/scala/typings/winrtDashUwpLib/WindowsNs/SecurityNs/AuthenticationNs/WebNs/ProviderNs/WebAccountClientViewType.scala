@@ -22,11 +22,11 @@ object WebAccountClientViewType extends js.Object {
   sealed trait idOnly
     extends winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountClientViewType
   
-  val idAndProperties: idAndProperties with java.lang.String = js.native
-  val idOnly: idOnly with java.lang.String = js.native
+  /* 1 */ val idAndProperties: idAndProperties with scala.Double = js.native
+  /* 0 */ val idOnly: idOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountClientViewType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.ProviderNs.WebAccountClientViewType with scala.Double
   ] = js.native
 }
 

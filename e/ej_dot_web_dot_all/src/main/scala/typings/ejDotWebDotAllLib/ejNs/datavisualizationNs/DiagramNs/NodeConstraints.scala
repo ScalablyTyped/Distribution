@@ -121,31 +121,31 @@ object NodeConstraints extends js.Object {
   sealed trait Shadow
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.NodeConstraints
   
-  val AllowPan: AllowPan with java.lang.String = js.native
-  val AspectRatio: AspectRatio with java.lang.String = js.native
-  val Connect: Connect with java.lang.String = js.native
-  val CrispEdges: CrispEdges with java.lang.String = js.native
-  val Default: Default with java.lang.String = js.native
-  val Delete: Delete with java.lang.String = js.native
-  val Drag: Drag with java.lang.String = js.native
-  val DragLabel: DragLabel with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
-  val PointerEvents: PointerEvents with java.lang.String = js.native
-  val Resize: Resize with java.lang.String = js.native
-  val ResizeEast: ResizeEast with java.lang.String = js.native
-  val ResizeNorth: ResizeNorth with java.lang.String = js.native
-  val ResizeNorthEast: ResizeNorthEast with java.lang.String = js.native
-  val ResizeNorthWest: ResizeNorthWest with java.lang.String = js.native
-  val ResizeSouth: ResizeSouth with java.lang.String = js.native
-  val ResizeSouthEast: ResizeSouthEast with java.lang.String = js.native
-  val ResizeSouthWest: ResizeSouthWest with java.lang.String = js.native
-  val ResizeWest: ResizeWest with java.lang.String = js.native
-  val Rotate: Rotate with java.lang.String = js.native
-  val Select: Select with java.lang.String = js.native
-  val Shadow: Shadow with java.lang.String = js.native
+  /* 17 */ val AllowPan: AllowPan with scala.Double = js.native
+  /* 18 */ val AspectRatio: AspectRatio with scala.Double = js.native
+  /* 5 */ val Connect: Connect with scala.Double = js.native
+  /* 20 */ val CrispEdges: CrispEdges with scala.Double = js.native
+  /* 21 */ val Default: Default with scala.Double = js.native
+  /* 2 */ val Delete: Delete with scala.Double = js.native
+  /* 3 */ val Drag: Drag with scala.Double = js.native
+  /* 16 */ val DragLabel: DragLabel with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 19 */ val PointerEvents: PointerEvents with scala.Double = js.native
+  /* 14 */ val Resize: Resize with scala.Double = js.native
+  /* 7 */ val ResizeEast: ResizeEast with scala.Double = js.native
+  /* 13 */ val ResizeNorth: ResizeNorth with scala.Double = js.native
+  /* 6 */ val ResizeNorthEast: ResizeNorthEast with scala.Double = js.native
+  /* 12 */ val ResizeNorthWest: ResizeNorthWest with scala.Double = js.native
+  /* 9 */ val ResizeSouth: ResizeSouth with scala.Double = js.native
+  /* 8 */ val ResizeSouthEast: ResizeSouthEast with scala.Double = js.native
+  /* 10 */ val ResizeSouthWest: ResizeSouthWest with scala.Double = js.native
+  /* 11 */ val ResizeWest: ResizeWest with scala.Double = js.native
+  /* 4 */ val Rotate: Rotate with scala.Double = js.native
+  /* 1 */ val Select: Select with scala.Double = js.native
+  /* 15 */ val Shadow: Shadow with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.NodeConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.NodeConstraints with scala.Double
   ] = js.native
 }
 

@@ -21,8 +21,8 @@ object CountResult extends js.Object {
   sealed trait unknown
     extends winjsLib.WinJSNs.UINs.CountResult
   
-  val unknown: unknown with java.lang.String = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.CountResult with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winjsLib.WinJSNs.UINs.CountResult with scala.Double] = js.native
 }
 

@@ -36,12 +36,12 @@ object RowPosition extends js.Object {
   sealed trait Top
     extends ejDotWebDotAllLib.ejNs.GanttNs.RowPosition
   
-  val AboveSelectedRow: AboveSelectedRow with java.lang.String = js.native
-  val BelowSelectedRow: BelowSelectedRow with java.lang.String = js.native
-  val Bottom: Bottom with java.lang.String = js.native
-  val Child: Child with java.lang.String = js.native
-  val Top: Top with java.lang.String = js.native
+  /* 2 */ val AboveSelectedRow: AboveSelectedRow with scala.Double = js.native
+  /* 3 */ val BelowSelectedRow: BelowSelectedRow with scala.Double = js.native
+  /* 1 */ val Bottom: Bottom with scala.Double = js.native
+  /* 4 */ val Child: Child with scala.Double = js.native
+  /* 0 */ val Top: Top with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.RowPosition with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.RowPosition with scala.Double] = js.native
 }
 

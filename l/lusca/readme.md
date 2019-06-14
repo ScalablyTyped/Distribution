@@ -1,7 +1,7 @@
 
 # Scala.js typings for lusca
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 Application security for express.
@@ -35,9 +35,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for lusca 1.5
+// Type definitions for lusca 1.6
 // Project: https://github.com/krakenjs/lusca#readme
-// Definitions by: Corbin Crutchley <https://github.com/crutchcorn>
+// Definitions by: Corbin Crutchley <https://github.com/crutchcorn>, Naoto Yokoyama <https://github.com/builtinnya>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

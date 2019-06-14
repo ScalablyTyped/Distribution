@@ -23,10 +23,10 @@ object CoreWindowActivationState extends js.Object {
   sealed trait pointerActivated
     extends winrtLib.WindowsNs.UINs.CoreNs.CoreWindowActivationState
   
-  val codeActivated: codeActivated with java.lang.String = js.native
-  val deactivated: deactivated with java.lang.String = js.native
-  val pointerActivated: pointerActivated with java.lang.String = js.native
+  /* 0 */ val codeActivated: codeActivated with scala.Double = js.native
+  /* 1 */ val deactivated: deactivated with scala.Double = js.native
+  /* 2 */ val pointerActivated: pointerActivated with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreWindowActivationState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.UINs.CoreNs.CoreWindowActivationState with scala.Double] = js.native
 }
 

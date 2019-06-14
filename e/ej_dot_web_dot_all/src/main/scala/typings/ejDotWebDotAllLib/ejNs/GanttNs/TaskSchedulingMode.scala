@@ -26,10 +26,10 @@ object TaskSchedulingMode extends js.Object {
   sealed trait Manual
     extends ejDotWebDotAllLib.ejNs.GanttNs.TaskSchedulingMode
   
-  val Auto: Auto with java.lang.String = js.native
-  val Custom: Custom with java.lang.String = js.native
-  val Manual: Manual with java.lang.String = js.native
+  /* 0 */ val Auto: Auto with scala.Double = js.native
+  /* 2 */ val Custom: Custom with scala.Double = js.native
+  /* 1 */ val Manual: Manual with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.TaskSchedulingMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.GanttNs.TaskSchedulingMode with scala.Double] = js.native
 }
 

@@ -1182,7 +1182,7 @@ object ^ extends js.Object {
   def ɵɵprojection(nodeIndex: scala.Double, selectorIndex: scala.Double): scala.Unit = js.native
   def ɵɵprojection(nodeIndex: scala.Double, selectorIndex: scala.Double, attrs: atAngularCoreLib.TAttributes): scala.Unit = js.native
   def ɵɵprojectionDef(): scala.Unit = js.native
-  def ɵɵprojectionDef(selectors: js.Array[ɵCssSelectorList]): scala.Unit = js.native
+  def ɵɵprojectionDef(projectionSlots: atAngularCoreLib.ProjectionSlots): scala.Unit = js.native
   def ɵɵproperty[T](propName: java.lang.String, value: T): atAngularCoreLib.TsickleIssue1009 = js.native
   def ɵɵproperty[T](propName: java.lang.String, value: T, sanitizer: SanitizerFn): atAngularCoreLib.TsickleIssue1009 = js.native
   def ɵɵproperty[T](propName: java.lang.String, value: T, sanitizer: SanitizerFn, nativeOnly: scala.Boolean): atAngularCoreLib.TsickleIssue1009 = js.native

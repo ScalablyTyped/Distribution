@@ -39,14 +39,14 @@ object AddFieldOptions extends js.Object {
   sealed trait defaultValue
     extends sharepointLib.SPNs.AddFieldOptions
   
-  val addFieldCheckDisplayName: addFieldCheckDisplayName with java.lang.String = js.native
-  val addFieldInternalNameHint: addFieldInternalNameHint with java.lang.String = js.native
-  val addFieldToDefaultView: addFieldToDefaultView with java.lang.String = js.native
-  val addToAllContentTypes: addToAllContentTypes with java.lang.String = js.native
-  val addToDefaultContentType: addToDefaultContentType with java.lang.String = js.native
-  val addToNoContentType: addToNoContentType with java.lang.String = js.native
-  val defaultValue: defaultValue with java.lang.String = js.native
+  /* 6 */ val addFieldCheckDisplayName: addFieldCheckDisplayName with scala.Double = js.native
+  /* 4 */ val addFieldInternalNameHint: addFieldInternalNameHint with scala.Double = js.native
+  /* 5 */ val addFieldToDefaultView: addFieldToDefaultView with scala.Double = js.native
+  /* 3 */ val addToAllContentTypes: addToAllContentTypes with scala.Double = js.native
+  /* 1 */ val addToDefaultContentType: addToDefaultContentType with scala.Double = js.native
+  /* 2 */ val addToNoContentType: addToNoContentType with scala.Double = js.native
+  /* 0 */ val defaultValue: defaultValue with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.AddFieldOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.AddFieldOptions with scala.Double] = js.native
 }
 

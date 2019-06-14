@@ -46,16 +46,16 @@ object IntervalType extends js.Object {
   sealed trait Years
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.IntervalType
   
-  val Days: Days with java.lang.String = js.native
-  val Hours: Hours with java.lang.String = js.native
-  val Milliseconds: Milliseconds with java.lang.String = js.native
-  val Minutes: Minutes with java.lang.String = js.native
-  val Months: Months with java.lang.String = js.native
-  val Seconds: Seconds with java.lang.String = js.native
-  val Years: Years with java.lang.String = js.native
+  /* 0 */ val Days: Days with scala.Double = js.native
+  /* 1 */ val Hours: Hours with scala.Double = js.native
+  /* 3 */ val Milliseconds: Milliseconds with scala.Double = js.native
+  /* 4 */ val Minutes: Minutes with scala.Double = js.native
+  /* 5 */ val Months: Months with scala.Double = js.native
+  /* 2 */ val Seconds: Seconds with scala.Double = js.native
+  /* 6 */ val Years: Years with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.IntervalType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.IntervalType with scala.Double
   ] = js.native
 }
 

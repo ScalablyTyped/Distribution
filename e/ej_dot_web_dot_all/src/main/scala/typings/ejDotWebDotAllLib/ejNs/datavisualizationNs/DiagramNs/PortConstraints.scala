@@ -26,12 +26,12 @@ object PortConstraints extends js.Object {
   sealed trait None
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortConstraints
   
-  val Connect: Connect with java.lang.String = js.native
-  val ConnectOnDrag: ConnectOnDrag with java.lang.String = js.native
-  val None: None with java.lang.String = js.native
+  /* 1 */ val Connect: Connect with scala.Double = js.native
+  /* 2 */ val ConnectOnDrag: ConnectOnDrag with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortConstraints with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.PortConstraints with scala.Double
   ] = js.native
 }
 

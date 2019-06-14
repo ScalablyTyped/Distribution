@@ -52,17 +52,17 @@ object MediaStreamSourceErrorStatus extends js.Object {
   sealed trait unsupportedMediaFormat
     extends winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSourceErrorStatus
   
-  val connectionToServerLost: connectionToServerLost with java.lang.String = js.native
-  val decodeError: decodeError with java.lang.String = js.native
-  val failedToConnectToServer: failedToConnectToServer with java.lang.String = js.native
-  val failedToOpenFile: failedToOpenFile with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val outOfMemory: outOfMemory with java.lang.String = js.native
-  val unspecifiedNetworkError: unspecifiedNetworkError with java.lang.String = js.native
-  val unsupportedMediaFormat: unsupportedMediaFormat with java.lang.String = js.native
+  /* 4 */ val connectionToServerLost: connectionToServerLost with scala.Double = js.native
+  /* 6 */ val decodeError: decodeError with scala.Double = js.native
+  /* 3 */ val failedToConnectToServer: failedToConnectToServer with scala.Double = js.native
+  /* 2 */ val failedToOpenFile: failedToOpenFile with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 1 */ val outOfMemory: outOfMemory with scala.Double = js.native
+  /* 5 */ val unspecifiedNetworkError: unspecifiedNetworkError with scala.Double = js.native
+  /* 7 */ val unsupportedMediaFormat: unsupportedMediaFormat with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSourceErrorStatus with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSourceErrorStatus with scala.Double
   ] = js.native
 }
 

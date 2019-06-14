@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   extends BaseParameter
      with Parameter {
   var allowEmptyValue: js.UndefOr[scala.Boolean] = js.undefined
-  var collectionFormat: js.UndefOr[java.lang.String] = js.undefined
+  var collectionFormat: js.UndefOr[
+    swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.csv | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.ssv | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.tsv | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.pipes | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.multi
+  ] = js.undefined
   var default: js.UndefOr[java.lang.String | scala.Boolean | scala.Double | js.Object] = js.undefined
   var enum: js.UndefOr[js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object]] = js.undefined
   var exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,7 +32,7 @@ import scala.scalajs.js.annotation._
   var multipleOf: js.UndefOr[scala.Double] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String]
+  var `type`: js.UndefOr[ParameterType | java.lang.String]
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -39,9 +41,9 @@ object FormDataParameter {
   def apply(
     in: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.formData,
     name: java.lang.String,
-    `type`: java.lang.String,
+    `type`: ParameterType,
     allowEmptyValue: js.UndefOr[scala.Boolean] = js.undefined,
-    collectionFormat: java.lang.String = null,
+    collectionFormat: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.csv | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.ssv | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.tsv | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.pipes | swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.multi = null,
     default: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
     description: java.lang.String = null,
     enum: js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object] = null,
@@ -66,7 +68,7 @@ object FormDataParameter {
     val __obj = js.Dynamic.literal(in = in, name = name)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue)
-    if (collectionFormat != null) __obj.updateDynamic("collectionFormat")(collectionFormat)
+    if (collectionFormat != null) __obj.updateDynamic("collectionFormat")(collectionFormat.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (enum != null) __obj.updateDynamic("enum")(enum)

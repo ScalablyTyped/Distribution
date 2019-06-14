@@ -66,18 +66,18 @@ object PaperSize extends js.Object {
   sealed trait Tabloid
     extends ejDotWebDotAllLib.ejNs.ReportViewerNs.PaperSize
   
-  val A3: A3 with java.lang.String = js.native
-  val B4_JIS: B4_JIS with java.lang.String = js.native
-  val B5_JIS: B5_JIS with java.lang.String = js.native
-  val Custom: Custom with java.lang.String = js.native
-  val Envelope_10: Envelope_10 with java.lang.String = js.native
-  val Envelope_Monarch: Envelope_Monarch with java.lang.String = js.native
-  val Executive: Executive with java.lang.String = js.native
-  val Legal: Legal with java.lang.String = js.native
-  val Letter: Letter with java.lang.String = js.native
-  val Portrait: Portrait with java.lang.String = js.native
-  val Tabloid: Tabloid with java.lang.String = js.native
+  /* 0 */ val A3: A3 with scala.Double = js.native
+  /* 2 */ val B4_JIS: B4_JIS with scala.Double = js.native
+  /* 3 */ val B5_JIS: B5_JIS with scala.Double = js.native
+  /* 10 */ val Custom: Custom with scala.Double = js.native
+  /* 4 */ val Envelope_10: Envelope_10 with scala.Double = js.native
+  /* 5 */ val Envelope_Monarch: Envelope_Monarch with scala.Double = js.native
+  /* 6 */ val Executive: Executive with scala.Double = js.native
+  /* 7 */ val Legal: Legal with scala.Double = js.native
+  /* 8 */ val Letter: Letter with scala.Double = js.native
+  /* 1 */ val Portrait: Portrait with scala.Double = js.native
+  /* 9 */ val Tabloid: Tabloid with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.PaperSize with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.ReportViewerNs.PaperSize with scala.Double] = js.native
 }
 

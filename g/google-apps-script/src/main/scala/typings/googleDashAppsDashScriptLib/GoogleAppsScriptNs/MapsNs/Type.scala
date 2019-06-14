@@ -27,11 +27,11 @@ object Type extends js.Object {
   sealed trait TERRAIN
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Type
   
-  val HYBRID: HYBRID with java.lang.String = js.native
-  val ROADMAP: ROADMAP with java.lang.String = js.native
-  val SATELLITE: SATELLITE with java.lang.String = js.native
-  val TERRAIN: TERRAIN with java.lang.String = js.native
+  /* 3 */ val HYBRID: HYBRID with scala.Double = js.native
+  /* 0 */ val ROADMAP: ROADMAP with scala.Double = js.native
+  /* 1 */ val SATELLITE: SATELLITE with scala.Double = js.native
+  /* 2 */ val TERRAIN: TERRAIN with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Type with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googleDashAppsDashScriptLib.GoogleAppsScriptNs.MapsNs.Type with scala.Double] = js.native
 }
 

@@ -31,13 +31,11 @@ object SplineType extends js.Object {
   sealed trait Natural
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SplineType
   
-  val Cardinal: Cardinal with java.lang.String = js.native
-  val Clamped: Clamped with java.lang.String = js.native
-  val Monotonic: Monotonic with java.lang.String = js.native
-  val Natural: Natural with java.lang.String = js.native
+  /* 2 */ val Cardinal: Cardinal with scala.Double = js.native
+  /* 3 */ val Clamped: Clamped with scala.Double = js.native
+  /* 1 */ val Monotonic: Monotonic with scala.Double = js.native
+  /* 0 */ val Natural: Natural with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SplineType with java.lang.String
-  ] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.SplineType with scala.Double] = js.native
 }
 

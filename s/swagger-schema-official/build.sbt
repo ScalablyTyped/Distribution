@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-schema-official"
-version := "2.0-dt-20190520Z-24907a"
+version := "2.0-dt-20190613Z-4bf8c2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

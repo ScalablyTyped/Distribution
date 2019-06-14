@@ -21,11 +21,11 @@ object ExportingType extends js.Object {
   sealed trait PNG
     extends ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.ExportingType
   
-  val JPG: JPG with java.lang.String = js.native
-  val PNG: PNG with java.lang.String = js.native
+  /* 1 */ val JPG: JPG with scala.Double = js.native
+  /* 0 */ val PNG: PNG with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.ExportingType with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.ExportingType with scala.Double
   ] = js.native
 }
 

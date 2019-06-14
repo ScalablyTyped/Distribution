@@ -23,12 +23,12 @@ object MessageLevel extends js.Object {
   sealed trait warning
     extends sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.WebControlsNs.MessageLevel
   
-  val error: error with java.lang.String = js.native
-  val information: information with java.lang.String = js.native
-  val warning: warning with java.lang.String = js.native
+  /* 2 */ val error: error with scala.Double = js.native
+  /* 0 */ val information: information with scala.Double = js.native
+  /* 1 */ val warning: warning with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.WebControlsNs.MessageLevel with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.WebControlsNs.MessageLevel with scala.Double
   ] = js.native
 }
 

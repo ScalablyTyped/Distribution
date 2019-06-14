@@ -200,12 +200,12 @@ object ScaleNs extends js.Object {
     */
   @js.native
   object Center extends js.Object {
-    val CENTER_BOTH: phaserLib.PhaserNs.ScaleNs.Center.CENTER_BOTH with java.lang.String = js.native
-    val CENTER_HORIZONTALLY: phaserLib.PhaserNs.ScaleNs.Center.CENTER_HORIZONTALLY with java.lang.String = js.native
-    val CENTER_VERTICALLY: phaserLib.PhaserNs.ScaleNs.Center.CENTER_VERTICALLY with java.lang.String = js.native
-    val NO_CENTER: phaserLib.PhaserNs.ScaleNs.Center.NO_CENTER with java.lang.String = js.native
+    /* 1 */ val CENTER_BOTH: phaserLib.PhaserNs.ScaleNs.Center.CENTER_BOTH with scala.Double = js.native
+    /* 2 */ val CENTER_HORIZONTALLY: phaserLib.PhaserNs.ScaleNs.Center.CENTER_HORIZONTALLY with scala.Double = js.native
+    /* 3 */ val CENTER_VERTICALLY: phaserLib.PhaserNs.ScaleNs.Center.CENTER_VERTICALLY with scala.Double = js.native
+    /* 0 */ val NO_CENTER: phaserLib.PhaserNs.ScaleNs.Center.NO_CENTER with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Center with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Center with scala.Double] = js.native
   }
   
   @JSName("Events")
@@ -248,10 +248,10 @@ object ScaleNs extends js.Object {
     */
   @js.native
   object Orientation extends js.Object {
-    val LANDSCAPE: phaserLib.PhaserNs.ScaleNs.Orientation.LANDSCAPE with java.lang.String = js.native
-    val PORTRAIT: phaserLib.PhaserNs.ScaleNs.Orientation.PORTRAIT with java.lang.String = js.native
+    /* 0 */ val LANDSCAPE: phaserLib.PhaserNs.ScaleNs.Orientation.LANDSCAPE with scala.Double = js.native
+    /* 1 */ val PORTRAIT: phaserLib.PhaserNs.ScaleNs.Orientation.PORTRAIT with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Orientation with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Orientation with scala.Double] = js.native
   }
   
   /**
@@ -259,14 +259,14 @@ object ScaleNs extends js.Object {
     */
   @js.native
   object ScaleModes extends js.Object {
-    val ENVELOP: phaserLib.PhaserNs.ScaleNs.ScaleModes.ENVELOP with java.lang.String = js.native
-    val FIT: phaserLib.PhaserNs.ScaleNs.ScaleModes.FIT with java.lang.String = js.native
-    val HEIGHT_CONTROLS_WIDTH: phaserLib.PhaserNs.ScaleNs.ScaleModes.HEIGHT_CONTROLS_WIDTH with java.lang.String = js.native
-    val NONE: phaserLib.PhaserNs.ScaleNs.ScaleModes.NONE with java.lang.String = js.native
-    val RESIZE: phaserLib.PhaserNs.ScaleNs.ScaleModes.RESIZE with java.lang.String = js.native
-    val WIDTH_CONTROLS_HEIGHT: phaserLib.PhaserNs.ScaleNs.ScaleModes.WIDTH_CONTROLS_HEIGHT with java.lang.String = js.native
+    /* 4 */ val ENVELOP: phaserLib.PhaserNs.ScaleNs.ScaleModes.ENVELOP with scala.Double = js.native
+    /* 3 */ val FIT: phaserLib.PhaserNs.ScaleNs.ScaleModes.FIT with scala.Double = js.native
+    /* 2 */ val HEIGHT_CONTROLS_WIDTH: phaserLib.PhaserNs.ScaleNs.ScaleModes.HEIGHT_CONTROLS_WIDTH with scala.Double = js.native
+    /* 0 */ val NONE: phaserLib.PhaserNs.ScaleNs.ScaleModes.NONE with scala.Double = js.native
+    /* 5 */ val RESIZE: phaserLib.PhaserNs.ScaleNs.ScaleModes.RESIZE with scala.Double = js.native
+    /* 1 */ val WIDTH_CONTROLS_HEIGHT: phaserLib.PhaserNs.ScaleNs.ScaleModes.WIDTH_CONTROLS_HEIGHT with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.ScaleModes with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.ScaleModes with scala.Double] = js.native
   }
   
   /**
@@ -274,12 +274,12 @@ object ScaleNs extends js.Object {
     */
   @js.native
   object Zoom extends js.Object {
-    val MAX_ZOOM: phaserLib.PhaserNs.ScaleNs.Zoom.MAX_ZOOM with java.lang.String = js.native
-    val NO_ZOOM: phaserLib.PhaserNs.ScaleNs.Zoom.NO_ZOOM with java.lang.String = js.native
-    val ZOOM_2X: phaserLib.PhaserNs.ScaleNs.Zoom.ZOOM_2X with java.lang.String = js.native
-    val ZOOM_4X: phaserLib.PhaserNs.ScaleNs.Zoom.ZOOM_4X with java.lang.String = js.native
+    /* 3 */ val MAX_ZOOM: phaserLib.PhaserNs.ScaleNs.Zoom.MAX_ZOOM with scala.Double = js.native
+    /* 0 */ val NO_ZOOM: phaserLib.PhaserNs.ScaleNs.Zoom.NO_ZOOM with scala.Double = js.native
+    /* 1 */ val ZOOM_2X: phaserLib.PhaserNs.ScaleNs.Zoom.ZOOM_2X with scala.Double = js.native
+    /* 2 */ val ZOOM_4X: phaserLib.PhaserNs.ScaleNs.Zoom.ZOOM_4X with scala.Double = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Zoom with java.lang.String] = js.native
+    def apply(value: scala.Double): js.UndefOr[phaserLib.PhaserNs.ScaleNs.Zoom with scala.Double] = js.native
   }
   
 }

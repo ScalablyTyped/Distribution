@@ -19,9 +19,9 @@ object UnityPlaybackState extends js.Object {
   sealed trait Playing
     extends unityDashWebapiLib.UnityPlaybackState
   
-  val Paused: Paused with java.lang.String = js.native
-  val Playing: Playing with java.lang.String = js.native
+  /* 1 */ val Paused: Paused with scala.Double = js.native
+  /* 0 */ val Playing: Playing with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[unityDashWebapiLib.UnityPlaybackState with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[unityDashWebapiLib.UnityPlaybackState with scala.Double] = js.native
 }
 

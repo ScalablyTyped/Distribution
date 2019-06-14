@@ -37,12 +37,12 @@ object RadioKind extends js.Object {
   sealed trait wiFi
     extends winrtDashUwpLib.WindowsNs.DevicesNs.RadiosNs.RadioKind
   
-  val bluetooth: bluetooth with java.lang.String = js.native
-  val fm: fm with java.lang.String = js.native
-  val mobileBroadband: mobileBroadband with java.lang.String = js.native
-  val other: other with java.lang.String = js.native
-  val wiFi: wiFi with java.lang.String = js.native
+  /* 3 */ val bluetooth: bluetooth with scala.Double = js.native
+  /* 4 */ val fm: fm with scala.Double = js.native
+  /* 2 */ val mobileBroadband: mobileBroadband with scala.Double = js.native
+  /* 0 */ val other: other with scala.Double = js.native
+  /* 1 */ val wiFi: wiFi with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.RadiosNs.RadioKind with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtDashUwpLib.WindowsNs.DevicesNs.RadiosNs.RadioKind with scala.Double] = js.native
 }
 

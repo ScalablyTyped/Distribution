@@ -23,10 +23,10 @@ object QuickLaunchOptions extends js.Object {
   sealed trait on
     extends sharepointLib.SPNs.QuickLaunchOptions
   
-  val defaultValue: defaultValue with java.lang.String = js.native
-  val off: off with java.lang.String = js.native
-  val on: on with java.lang.String = js.native
+  /* 2 */ val defaultValue: defaultValue with scala.Double = js.native
+  /* 0 */ val off: off with scala.Double = js.native
+  /* 1 */ val on: on with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.QuickLaunchOptions with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.QuickLaunchOptions with scala.Double] = js.native
 }
 

@@ -39,14 +39,14 @@ object InteractionModifiers extends js.Object {
   sealed trait ZOOM
     extends heremapsLib.HNs.mapNs.renderNs.RenderEngineNs.InteractionModifiers
   
-  val COORD: COORD with java.lang.String = js.native
-  val HEADING: HEADING with java.lang.String = js.native
-  val INCLINE: INCLINE with java.lang.String = js.native
-  val TILT: TILT with java.lang.String = js.native
-  val ZOOM: ZOOM with java.lang.String = js.native
+  /* 4 */ val COORD: COORD with scala.Double = js.native
+  /* 1 */ val HEADING: HEADING with scala.Double = js.native
+  /* 3 */ val INCLINE: INCLINE with scala.Double = js.native
+  /* 2 */ val TILT: TILT with scala.Double = js.native
+  /* 0 */ val ZOOM: ZOOM with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    heremapsLib.HNs.mapNs.renderNs.RenderEngineNs.InteractionModifiers with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    heremapsLib.HNs.mapNs.renderNs.RenderEngineNs.InteractionModifiers with scala.Double
   ] = js.native
 }
 

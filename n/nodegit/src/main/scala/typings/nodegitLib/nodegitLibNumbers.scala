@@ -9,1126 +9,709 @@ object nodegitLibNumbers {
   @js.native
   sealed trait `-1`
     extends nodegitLib.indexUnderscoreMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.ErrorNs.CODE
        with nodegitLib.errorMod.ErrorNs.CODE
        with nodegitLib.submoduleMod.SubmoduleNs.IGNORE
-       with nodegitLib.nodegitMod.SubmoduleNs.IGNORE
        with nodegitLib.configMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.ConfigNs.LEVEL
        with nodegitLib.objectMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
   
   @js.native
   sealed trait `-10`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-11`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-12`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-13`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-14`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-15`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-16`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-17`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-18`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-19`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-2`
     extends nodegitLib.objectMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
   
   @js.native
   sealed trait `-20`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-21`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-22`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-23`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-3`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-30`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-31`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-4`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-5`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-6`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-7`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-8`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `-9`
-    extends nodegitLib.nodegitMod.ErrorNs.CODE
-       with nodegitLib.errorMod.ErrorNs.CODE
+    extends nodegitLib.errorMod.ErrorNs.CODE
   
   @js.native
   sealed trait `0`
     extends nodegitLib.indexUnderscoreMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.MergeNs.ANALYSIS
        with nodegitLib.mergeMod.MergeNs.ANALYSIS
-       with nodegitLib.nodegitMod.StashNs.APPLY_FLAGS
        with nodegitLib.stashMod.StashNs.APPLY_FLAGS
-       with nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
        with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.nodegitMod.RemoteNs.AUTOTAG_OPTION
        with nodegitLib.remoteMod.RemoteNs.AUTOTAG_OPTION
-       with nodegitLib.nodegitMod.ErrorNs.CODE
        with nodegitLib.errorMod.ErrorNs.CODE
-       with nodegitLib.nodegitMod.RemoteNs.COMPLETION_TYPE
        with nodegitLib.remoteMod.RemoteNs.COMPLETION_TYPE
-       with nodegitLib.nodegitMod.EnumsNs.CVAR
        with nodegitLib.enumsMod.EnumsNs.CVAR
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
        with nodegitLib.diffDashBinaryMod.DiffBinaryNs.DIFF_BINARY
-       with nodegitLib.nodegitMod.DiffBinaryNs.DIFF_BINARY
-       with nodegitLib.nodegitMod.EnumsNs.DIRECTION
        with nodegitLib.enumsMod.EnumsNs.DIRECTION
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
        with nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.MergeNs.FILE_FAVOR
        with nodegitLib.mergeMod.MergeNs.FILE_FAVOR
-       with nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
        with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.blameMod.BlameNs.FLAG
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.BlameNs.FLAG
-       with nodegitLib.nodegitMod.FilterNs.FLAG
        with nodegitLib.filterMod.FilterNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.StashNs.FLAGS
        with nodegitLib.stashMod.StashNs.FLAGS
        with nodegitLib.diffMod.DiffNs.FORMAT_EMAIL_FLAGS
-       with nodegitLib.nodegitMod.DiffNs.FORMAT_EMAIL_FLAGS
-       with nodegitLib.nodegitMod.CloneNs.LOCAL
        with nodegitLib.cloneMod.CloneNs.LOCAL
-       with nodegitLib.nodegitMod.FilterNs.MODE
        with nodegitLib.filterMod.FilterNs.MODE
        with nodegitLib.referenceMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.CheckoutNs.NOTIFY
        with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.hashDashSigMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.MergeNs.PREFERENCE
        with nodegitLib.mergeMod.MergeNs.PREFERENCE
-       with nodegitLib.nodegitMod.FetchNs.PRUNE
        with nodegitLib.fetchMod.FetchNs.PRUNE
-       with nodegitLib.nodegitMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.submoduleMod.SubmoduleNs.RECURSE
-       with nodegitLib.nodegitMod.SubmoduleNs.RECURSE
-       with nodegitLib.nodegitMod.StatusNs.SHOW
        with nodegitLib.statusMod.StatusNs.SHOW
        with nodegitLib.revDashWalkMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.PackbuilderNs.STAGE
        with nodegitLib.packDashBuilderMod.PackbuilderNs.STAGE
-       with nodegitLib.nodegitMod.AttrNs.STATES
        with nodegitLib.attrMod.AttrNs.STATES
        with nodegitLib.diffMod.DiffNs.STATS_FORMAT
-       with nodegitLib.nodegitMod.DiffNs.STATS_FORMAT
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.objectMod.ObjectNs.TYPE
        with nodegitLib.referenceMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.CertNs.TYPE
        with nodegitLib.certMod.CertNs.TYPE
        with nodegitLib.submoduleMod.SubmoduleNs.UPDATE
-       with nodegitLib.nodegitMod.SubmoduleNs.UPDATE
        with nodegitLib.treeMod.TreeNs.WALK_MODE
-       with nodegitLib.nodegitMod.TreeNs.WALK_MODE
   
   @js.native
   sealed trait `1`
     extends nodegitLib.indexUnderscoreMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.MergeNs.ANALYSIS
        with nodegitLib.mergeMod.MergeNs.ANALYSIS
-       with nodegitLib.nodegitMod.StashNs.APPLY_FLAGS
        with nodegitLib.stashMod.StashNs.APPLY_FLAGS
-       with nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
        with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.nodegitMod.RemoteNs.AUTOTAG_OPTION
        with nodegitLib.remoteMod.RemoteNs.AUTOTAG_OPTION
-       with nodegitLib.nodegitMod.BranchNs.BRANCH
        with nodegitLib.branchMod.BranchNs.BRANCH
        with nodegitLib.indexUnderscoreMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.RemoteNs.COMPLETION_TYPE
        with nodegitLib.remoteMod.RemoteNs.COMPLETION_TYPE
-       with nodegitLib.nodegitMod.EnumsNs.CVAR
        with nodegitLib.enumsMod.EnumsNs.CVAR
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
        with nodegitLib.diffDashBinaryMod.DiffBinaryNs.DIFF_BINARY
-       with nodegitLib.nodegitMod.DiffBinaryNs.DIFF_BINARY
-       with nodegitLib.nodegitMod.EnumsNs.DIRECTION
        with nodegitLib.enumsMod.EnumsNs.DIRECTION
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.EnumsNs.FEATURE
        with nodegitLib.enumsMod.EnumsNs.FEATURE
-       with nodegitLib.nodegitMod.MergeNs.FILE_FAVOR
        with nodegitLib.mergeMod.MergeNs.FILE_FAVOR
-       with nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
        with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.blameMod.BlameNs.FLAG
        with nodegitLib.diffMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.BlameNs.FLAG
-       with nodegitLib.nodegitMod.FilterNs.FLAG
        with nodegitLib.filterMod.FilterNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.StashNs.FLAGS
        with nodegitLib.stashMod.StashNs.FLAGS
        with nodegitLib.diffMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.DiffNs.FORMAT
        with nodegitLib.diffMod.DiffNs.FORMAT_EMAIL_FLAGS
-       with nodegitLib.nodegitMod.DiffNs.FORMAT_EMAIL_FLAGS
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.submoduleMod.SubmoduleNs.IGNORE
-       with nodegitLib.nodegitMod.SubmoduleNs.IGNORE
        with nodegitLib.configMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.CloneNs.LOCAL
        with nodegitLib.cloneMod.CloneNs.LOCAL
        with nodegitLib.revDashParseMod.RevparseNs.MODE
-       with nodegitLib.nodegitMod.RevparseNs.MODE
-       with nodegitLib.nodegitMod.FilterNs.MODE
        with nodegitLib.filterMod.FilterNs.MODE
        with nodegitLib.referenceMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.CheckoutNs.NOTIFY
        with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.hashDashSigMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.MergeNs.PREFERENCE
        with nodegitLib.mergeMod.MergeNs.PREFERENCE
-       with nodegitLib.nodegitMod.FetchNs.PRUNE
        with nodegitLib.fetchMod.FetchNs.PRUNE
-       with nodegitLib.nodegitMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.submoduleMod.SubmoduleNs.RECURSE
-       with nodegitLib.nodegitMod.SubmoduleNs.RECURSE
-       with nodegitLib.nodegitMod.StatusNs.SHOW
        with nodegitLib.statusMod.StatusNs.SHOW
        with nodegitLib.revDashWalkMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.CertNs.SSH
        with nodegitLib.certMod.CertNs.SSH
-       with nodegitLib.nodegitMod.PackbuilderNs.STAGE
        with nodegitLib.packDashBuilderMod.PackbuilderNs.STAGE
-       with nodegitLib.nodegitMod.AttrNs.STATES
        with nodegitLib.attrMod.AttrNs.STATES
        with nodegitLib.diffMod.DiffNs.STATS_FORMAT
-       with nodegitLib.nodegitMod.DiffNs.STATS_FORMAT
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.resetMod.ResetNs.TYPE
        with nodegitLib.objectMod.ObjectNs.TYPE
        with nodegitLib.credMod.CredNs.TYPE
        with nodegitLib.referenceMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.CertNs.TYPE
-       with nodegitLib.nodegitMod.ResetNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
        with nodegitLib.certMod.CertNs.TYPE
        with nodegitLib.submoduleMod.SubmoduleNs.UPDATE
-       with nodegitLib.nodegitMod.SubmoduleNs.UPDATE
        with nodegitLib.treeMod.TreeNs.WALK_MODE
-       with nodegitLib.nodegitMod.TreeNs.WALK_MODE
   
   @js.native
   sealed trait `10`
     extends nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
   
   @js.native
   sealed trait `1024`
-    extends nodegitLib.nodegitMod.StatusNs.OPT
-       with nodegitLib.statusMod.StatusNs.OPT
+    extends nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `1048576`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `1073741824`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
   
   @js.native
   sealed trait `11`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
+    extends nodegitLib.errorMod.ErrorNs.ERROR
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
   
   @js.native
   sealed trait `12`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
+    extends nodegitLib.errorMod.ErrorNs.ERROR
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
   
   @js.native
   sealed trait `128`
-    extends nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
-       with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
+    extends nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `13`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `131072`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `14`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `15`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `16`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
+    extends nodegitLib.errorMod.ErrorNs.ERROR
        with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.blameMod.BlameNs.FLAG
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.BlameNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.CheckoutNs.NOTIFY
        with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.credMod.CredNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
   
   @js.native
   sealed trait `16384`
     extends nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.TreeEntryNs.FILEMODE
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.EnumsNs.INDXENTRY_FLAG
        with nodegitLib.enumsMod.EnumsNs.INDXENTRY_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
   
   @js.native
   sealed trait `16777216`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
   
   @js.native
   sealed trait `17`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `18`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `19`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `2`
     extends nodegitLib.indexUnderscoreMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.MergeNs.ANALYSIS
        with nodegitLib.mergeMod.MergeNs.ANALYSIS
-       with nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
        with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.nodegitMod.RemoteNs.AUTOTAG_OPTION
        with nodegitLib.remoteMod.RemoteNs.AUTOTAG_OPTION
-       with nodegitLib.nodegitMod.BranchNs.BRANCH
        with nodegitLib.branchMod.BranchNs.BRANCH
        with nodegitLib.indexUnderscoreMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.RemoteNs.COMPLETION_TYPE
        with nodegitLib.remoteMod.RemoteNs.COMPLETION_TYPE
-       with nodegitLib.nodegitMod.EnumsNs.CVAR
        with nodegitLib.enumsMod.EnumsNs.CVAR
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
        with nodegitLib.diffDashBinaryMod.DiffBinaryNs.DIFF_BINARY
-       with nodegitLib.nodegitMod.DiffBinaryNs.DIFF_BINARY
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.EnumsNs.FEATURE
        with nodegitLib.enumsMod.EnumsNs.FEATURE
-       with nodegitLib.nodegitMod.MergeNs.FILE_FAVOR
        with nodegitLib.mergeMod.MergeNs.FILE_FAVOR
-       with nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
        with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.blameMod.BlameNs.FLAG
        with nodegitLib.diffMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.BlameNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.StashNs.FLAGS
        with nodegitLib.stashMod.StashNs.FLAGS
        with nodegitLib.diffMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.submoduleMod.SubmoduleNs.IGNORE
-       with nodegitLib.nodegitMod.SubmoduleNs.IGNORE
        with nodegitLib.configMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.CloneNs.LOCAL
        with nodegitLib.cloneMod.CloneNs.LOCAL
        with nodegitLib.revDashParseMod.RevparseNs.MODE
-       with nodegitLib.nodegitMod.RevparseNs.MODE
        with nodegitLib.referenceMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.CheckoutNs.NOTIFY
        with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.hashDashSigMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.MergeNs.PREFERENCE
        with nodegitLib.mergeMod.MergeNs.PREFERENCE
-       with nodegitLib.nodegitMod.FetchNs.PRUNE
        with nodegitLib.fetchMod.FetchNs.PRUNE
-       with nodegitLib.nodegitMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.submoduleMod.SubmoduleNs.RECURSE
-       with nodegitLib.nodegitMod.SubmoduleNs.RECURSE
-       with nodegitLib.nodegitMod.StatusNs.SHOW
        with nodegitLib.statusMod.StatusNs.SHOW
        with nodegitLib.revDashWalkMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.CertNs.SSH
        with nodegitLib.certMod.CertNs.SSH
-       with nodegitLib.nodegitMod.AttrNs.STATES
        with nodegitLib.attrMod.AttrNs.STATES
        with nodegitLib.diffMod.DiffNs.STATS_FORMAT
-       with nodegitLib.nodegitMod.DiffNs.STATS_FORMAT
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.odbMod.OdbNs.STREAM
-       with nodegitLib.nodegitMod.OdbNs.STREAM
        with nodegitLib.resetMod.ResetNs.TYPE
        with nodegitLib.objectMod.ObjectNs.TYPE
        with nodegitLib.credMod.CredNs.TYPE
        with nodegitLib.referenceMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.CertNs.TYPE
-       with nodegitLib.nodegitMod.ResetNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
        with nodegitLib.certMod.CertNs.TYPE
        with nodegitLib.submoduleMod.SubmoduleNs.UPDATE
-       with nodegitLib.nodegitMod.SubmoduleNs.UPDATE
   
   @js.native
   sealed trait `20`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `2048`
-    extends nodegitLib.nodegitMod.StatusNs.OPT
-       with nodegitLib.statusMod.StatusNs.OPT
+    extends nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `2097152`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `21`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `22`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `23`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `24`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `24576`
-    extends nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
+    extends nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
   
   @js.native
   sealed trait `25`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `255`
     extends nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
   
   @js.native
   sealed trait `256`
-    extends nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
+    extends nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `26`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `262144`
-    extends nodegitLib.nodegitMod.CheckoutNs.STRATEGY
-       with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
+    extends nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `268435456`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
   
   @js.native
   sealed trait `27`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `28`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `29`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `3`
-    extends nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.nodegitMod.RemoteNs.AUTOTAG_OPTION
+    extends nodegitLib.stashMod.StashNs.APPLY_PROGRESS
        with nodegitLib.remoteMod.RemoteNs.AUTOTAG_OPTION
-       with nodegitLib.nodegitMod.BranchNs.BRANCH
        with nodegitLib.branchMod.BranchNs.BRANCH
-       with nodegitLib.nodegitMod.EnumsNs.CVAR
        with nodegitLib.enumsMod.EnumsNs.CVAR
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.MergeNs.FILE_FAVOR
        with nodegitLib.mergeMod.MergeNs.FILE_FAVOR
        with nodegitLib.diffMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.DiffNs.FORMAT
        with nodegitLib.submoduleMod.SubmoduleNs.IGNORE
-       with nodegitLib.nodegitMod.SubmoduleNs.IGNORE
        with nodegitLib.configMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.CloneNs.LOCAL
        with nodegitLib.cloneMod.CloneNs.LOCAL
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
-       with nodegitLib.nodegitMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
-       with nodegitLib.nodegitMod.AttrNs.STATES
        with nodegitLib.attrMod.AttrNs.STATES
        with nodegitLib.resetMod.ResetNs.TYPE
        with nodegitLib.objectMod.ObjectNs.TYPE
        with nodegitLib.referenceMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ReferenceNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.CertNs.TYPE
-       with nodegitLib.nodegitMod.ResetNs.TYPE
        with nodegitLib.certMod.CertNs.TYPE
        with nodegitLib.submoduleMod.SubmoduleNs.UPDATE
-       with nodegitLib.nodegitMod.SubmoduleNs.UPDATE
   
   @js.native
   sealed trait `30`
-    extends nodegitLib.nodegitMod.ErrorNs.ERROR
-       with nodegitLib.errorMod.ErrorNs.ERROR
+    extends nodegitLib.errorMod.ErrorNs.ERROR
   
   @js.native
   sealed trait `32`
-    extends nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
-       with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
+    extends nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.credMod.CredNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
   
   @js.native
   sealed trait `32768`
     extends nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.EnumsNs.INDXENTRY_FLAG
        with nodegitLib.enumsMod.EnumsNs.INDXENTRY_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
   
   @js.native
   sealed trait `33188`
     extends nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.TreeEntryNs.FILEMODE
   
   @js.native
   sealed trait `33261`
     extends nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.TreeEntryNs.FILEMODE
   
   @js.native
   sealed trait `33554432`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
   
   @js.native
   sealed trait `4`
     extends nodegitLib.indexUnderscoreMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.IndexNs.ADD_OPTION
-       with nodegitLib.nodegitMod.MergeNs.ANALYSIS
        with nodegitLib.mergeMod.MergeNs.ANALYSIS
-       with nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
        with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
        with nodegitLib.indexUnderscoreMod.IndexNs.CAP
-       with nodegitLib.nodegitMod.IndexNs.CAP
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.EnumsNs.FEATURE
        with nodegitLib.enumsMod.EnumsNs.FEATURE
-       with nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
        with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.blameMod.BlameNs.FLAG
        with nodegitLib.diffMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.BlameNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.StashNs.FLAGS
        with nodegitLib.stashMod.StashNs.FLAGS
        with nodegitLib.diffMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.submoduleMod.SubmoduleNs.IGNORE
-       with nodegitLib.nodegitMod.SubmoduleNs.IGNORE
        with nodegitLib.configMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.ConfigNs.LEVEL
        with nodegitLib.revDashParseMod.RevparseNs.MODE
-       with nodegitLib.nodegitMod.RevparseNs.MODE
        with nodegitLib.referenceMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.ReferenceNs.NORMALIZE
-       with nodegitLib.nodegitMod.CheckoutNs.NOTIFY
        with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.hashDashSigMod.HashsigNs.OPTION
-       with nodegitLib.nodegitMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.revDashWalkMod.RevwalkNs.SORT
-       with nodegitLib.nodegitMod.RevwalkNs.SORT
        with nodegitLib.diffMod.DiffNs.STATS_FORMAT
-       with nodegitLib.nodegitMod.DiffNs.STATS_FORMAT
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.odbMod.OdbNs.STREAM
-       with nodegitLib.nodegitMod.OdbNs.STREAM
        with nodegitLib.objectMod.ObjectNs.TYPE
        with nodegitLib.credMod.CredNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
        with nodegitLib.submoduleMod.SubmoduleNs.UPDATE
-       with nodegitLib.nodegitMod.SubmoduleNs.UPDATE
   
   @js.native
   sealed trait `4096`
     extends nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `40960`
     extends nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.TreeEntryNs.FILEMODE
   
   @js.native
   sealed trait `4194304`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `43`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `45`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `48`
     extends nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
   
   @js.native
   sealed trait `5`
-    extends nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
+    extends nodegitLib.stashMod.StashNs.APPLY_PROGRESS
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
        with nodegitLib.diffMod.DiffNs.FORMAT
-       with nodegitLib.nodegitMod.DiffNs.FORMAT
        with nodegitLib.configMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.ConfigNs.LEVEL
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
-       with nodegitLib.nodegitMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
        with nodegitLib.objectMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
   
   @js.native
   sealed trait `512`
-    extends nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
+    extends nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `524288`
-    extends nodegitLib.nodegitMod.CheckoutNs.STRATEGY
-       with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
+    extends nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `536870912`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
   
   @js.native
   sealed trait `57344`
     extends nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
-       with nodegitLib.nodegitMod.TreeEntryNs.FILEMODE
   
   @js.native
   sealed trait `6`
-    extends nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
+    extends nodegitLib.stashMod.StashNs.APPLY_PROGRESS
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.odbMod.OdbNs.STREAM
-       with nodegitLib.nodegitMod.OdbNs.STREAM
        with nodegitLib.objectMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
   
   @js.native
   sealed trait `60`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `61`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `62`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `64`
-    extends nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
-       with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
+    extends nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
        with nodegitLib.credMod.CredNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
   
   @js.native
   sealed trait `65535`
-    extends nodegitLib.nodegitMod.CheckoutNs.NOTIFY
-       with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
+    extends nodegitLib.checkoutMod.CheckoutNs.NOTIFY
   
   @js.native
   sealed trait `65536`
     extends nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `66`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `67108864`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
   
   @js.native
   sealed trait `7`
-    extends nodegitLib.nodegitMod.StashNs.APPLY_PROGRESS
-       with nodegitLib.stashMod.StashNs.APPLY_PROGRESS
+    extends nodegitLib.stashMod.StashNs.APPLY_PROGRESS
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.objectMod.ObjectNs.TYPE
-       with nodegitLib.nodegitMod.ObjectNs.TYPE
   
   @js.native
   sealed trait `70`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `72`
     extends nodegitLib.diffMod.DiffNs.LINE
-       with nodegitLib.nodegitMod.DiffNs.LINE
   
   @js.native
   sealed trait `8`
-    extends nodegitLib.nodegitMod.MergeNs.ANALYSIS
-       with nodegitLib.mergeMod.MergeNs.ANALYSIS
+    extends nodegitLib.mergeMod.MergeNs.ANALYSIS
        with nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.MergeNs.FILE_FLAGS
        with nodegitLib.mergeMod.MergeNs.FILE_FLAGS
        with nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
        with nodegitLib.blameMod.BlameNs.FLAG
        with nodegitLib.diffMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.DiffNs.FLAG
-       with nodegitLib.nodegitMod.BlameNs.FLAG
        with nodegitLib.pathDashSpecMod.PathspecNs.FLAG
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.CheckoutNs.NOTIFY
        with nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.diffMod.DiffNs.STATS_FORMAT
-       with nodegitLib.nodegitMod.DiffNs.STATS_FORMAT
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.StatusNs.STATUS
        with nodegitLib.statusMod.StatusNs.STATUS
        with nodegitLib.credMod.CredNs.TYPE
-       with nodegitLib.nodegitMod.CredNs.TYPE
   
   @js.native
   sealed trait `8192`
     extends nodegitLib.diffMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.DiffNs.FIND
-       with nodegitLib.nodegitMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
        with nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-       with nodegitLib.nodegitMod.StatusNs.OPT
        with nodegitLib.statusMod.StatusNs.OPT
        with nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
        with nodegitLib.submoduleMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.SubmoduleNs.STATUS
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `8388608`
     extends nodegitLib.diffMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.DiffNs.OPTION
-       with nodegitLib.nodegitMod.CheckoutNs.STRATEGY
        with nodegitLib.checkoutMod.CheckoutNs.STRATEGY
   
   @js.native
   sealed trait `9`
     extends nodegitLib.diffMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.DiffNs.DELTA
-       with nodegitLib.nodegitMod.ErrorNs.ERROR
        with nodegitLib.errorMod.ErrorNs.ERROR
-       with nodegitLib.nodegitMod.Libgit2Ns.OPT
        with nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
   
   @scala.inline

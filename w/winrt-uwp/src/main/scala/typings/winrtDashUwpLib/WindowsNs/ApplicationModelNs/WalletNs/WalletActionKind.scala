@@ -37,14 +37,14 @@ object WalletActionKind extends js.Object {
   sealed trait verb
     extends winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletActionKind
   
-  val message: message with java.lang.String = js.native
-  val moreTransactions: moreTransactions with java.lang.String = js.native
-  val openItem: openItem with java.lang.String = js.native
-  val transaction: transaction with java.lang.String = js.native
-  val verb: verb with java.lang.String = js.native
+  /* 3 */ val message: message with scala.Double = js.native
+  /* 2 */ val moreTransactions: moreTransactions with scala.Double = js.native
+  /* 0 */ val openItem: openItem with scala.Double = js.native
+  /* 1 */ val transaction: transaction with scala.Double = js.native
+  /* 4 */ val verb: verb with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletActionKind with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.ApplicationModelNs.WalletNs.WalletActionKind with scala.Double
   ] = js.native
 }
 

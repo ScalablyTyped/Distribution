@@ -26,10 +26,10 @@ object ClientExportMode extends js.Object {
   sealed trait GridOnly
     extends ejDotWebDotAllLib.ejNs.PivotClientNs.ClientExportMode
   
-  val ChartAndGrid: ChartAndGrid with java.lang.String = js.native
-  val ChartOnly: ChartOnly with java.lang.String = js.native
-  val GridOnly: GridOnly with java.lang.String = js.native
+  /* 0 */ val ChartAndGrid: ChartAndGrid with scala.Double = js.native
+  /* 1 */ val ChartOnly: ChartOnly with scala.Double = js.native
+  /* 2 */ val GridOnly: GridOnly with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotClientNs.ClientExportMode with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[ejDotWebDotAllLib.ejNs.PivotClientNs.ClientExportMode with scala.Double] = js.native
 }
 

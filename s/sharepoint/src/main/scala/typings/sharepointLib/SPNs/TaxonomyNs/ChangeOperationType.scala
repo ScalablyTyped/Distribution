@@ -51,17 +51,17 @@ object ChangeOperationType extends js.Object {
   sealed trait unknown
     extends sharepointLib.SPNs.TaxonomyNs.ChangeOperationType
   
-  val add: add with java.lang.String = js.native
-  val copy: copy with java.lang.String = js.native
-  val deleteObject: deleteObject with java.lang.String = js.native
-  val edit: edit with java.lang.String = js.native
-  val importObject: importObject with java.lang.String = js.native
-  val merge: merge with java.lang.String = js.native
-  val move: move with java.lang.String = js.native
-  val pathChange: pathChange with java.lang.String = js.native
-  val restore: restore with java.lang.String = js.native
-  val unknown: unknown with java.lang.String = js.native
+  /* 1 */ val add: add with scala.Double = js.native
+  /* 5 */ val copy: copy with scala.Double = js.native
+  /* 3 */ val deleteObject: deleteObject with scala.Double = js.native
+  /* 2 */ val edit: edit with scala.Double = js.native
+  /* 8 */ val importObject: importObject with scala.Double = js.native
+  /* 7 */ val merge: merge with scala.Double = js.native
+  /* 4 */ val move: move with scala.Double = js.native
+  /* 6 */ val pathChange: pathChange with scala.Double = js.native
+  /* 9 */ val restore: restore with scala.Double = js.native
+  /* 0 */ val unknown: unknown with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[sharepointLib.SPNs.TaxonomyNs.ChangeOperationType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[sharepointLib.SPNs.TaxonomyNs.ChangeOperationType with scala.Double] = js.native
 }
 

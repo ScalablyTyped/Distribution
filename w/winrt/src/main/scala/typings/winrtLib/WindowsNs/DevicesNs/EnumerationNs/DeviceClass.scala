@@ -31,12 +31,12 @@ object DeviceClass extends js.Object {
   sealed trait videoCapture
     extends winrtLib.WindowsNs.DevicesNs.EnumerationNs.DeviceClass
   
-  val all: all with java.lang.String = js.native
-  val audioCapture: audioCapture with java.lang.String = js.native
-  val audioRender: audioRender with java.lang.String = js.native
-  val portableStorageDevice: portableStorageDevice with java.lang.String = js.native
-  val videoCapture: videoCapture with java.lang.String = js.native
+  /* 0 */ val all: all with scala.Double = js.native
+  /* 1 */ val audioCapture: audioCapture with scala.Double = js.native
+  /* 2 */ val audioRender: audioRender with scala.Double = js.native
+  /* 3 */ val portableStorageDevice: portableStorageDevice with scala.Double = js.native
+  /* 4 */ val videoCapture: videoCapture with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.DevicesNs.EnumerationNs.DeviceClass with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[winrtLib.WindowsNs.DevicesNs.EnumerationNs.DeviceClass with scala.Double] = js.native
 }
 

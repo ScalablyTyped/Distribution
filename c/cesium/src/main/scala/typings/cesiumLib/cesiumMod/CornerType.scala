@@ -23,10 +23,10 @@ object CornerType extends js.Object {
   sealed trait ROUNDED
     extends cesiumLib.cesiumMod.CornerType
   
-  val BEVELED: BEVELED with java.lang.String = js.native
-  val MITERED: MITERED with java.lang.String = js.native
-  val ROUNDED: ROUNDED with java.lang.String = js.native
+  /* 2 */ val BEVELED: BEVELED with scala.Double = js.native
+  /* 1 */ val MITERED: MITERED with scala.Double = js.native
+  /* 0 */ val ROUNDED: ROUNDED with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.CornerType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.CornerType with scala.Double] = js.native
 }
 

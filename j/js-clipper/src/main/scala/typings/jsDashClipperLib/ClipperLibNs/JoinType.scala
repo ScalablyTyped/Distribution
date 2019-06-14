@@ -23,10 +23,10 @@ object JoinType extends js.Object {
   sealed trait jtSquare
     extends jsDashClipperLib.ClipperLibNs.JoinType
   
-  val jtMiter: jtMiter with java.lang.String = js.native
-  val jtRound: jtRound with java.lang.String = js.native
-  val jtSquare: jtSquare with java.lang.String = js.native
+  /* 2 */ val jtMiter: jtMiter with scala.Double = js.native
+  /* 1 */ val jtRound: jtRound with scala.Double = js.native
+  /* 0 */ val jtSquare: jtSquare with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[jsDashClipperLib.ClipperLibNs.JoinType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[jsDashClipperLib.ClipperLibNs.JoinType with scala.Double] = js.native
 }
 
