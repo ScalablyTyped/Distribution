@@ -21,7 +21,7 @@ trait DistributionConfig extends js.Object {
   /**
     * Any comments you want to include about the distribution. If you don't want to specify a comment, include an empty Comment element. To delete an existing comment, update the distribution configuration and include an empty Comment element. To add or change a comment, update the distribution configuration and specify the new comment.
     */
-  var Comment: java.lang.String
+  var Comment: CommentType
   /**
     * A complex type that controls the following:   Whether CloudFront replaces HTTP status codes in the 4xx and 5xx range with custom error messages before returning the response to the viewer.   How long CloudFront caches HTTP status codes in the 4xx and 5xx range.   For more information about custom error pages, see Customizing Error Responses in the Amazon CloudFront Developer Guide.
     */
@@ -63,11 +63,11 @@ trait DistributionConfig extends js.Object {
     */
   var PriceClass: js.UndefOr[PriceClass] = js.undefined
   /**
-    * 
+    * A complex type that identifies ways in which you want to restrict distribution of your content.
     */
   var Restrictions: js.UndefOr[Restrictions] = js.undefined
   /**
-    * 
+    * A complex type that specifies whether you want viewers to use HTTP or HTTPS to request your objects, whether you're using an alternate domain name with HTTPS, and if so, if you're using AWS Certificate Manager (ACM) or a third-party certificate authority.
     */
   var ViewerCertificate: js.UndefOr[ViewerCertificate] = js.undefined
   /**
@@ -80,7 +80,7 @@ object DistributionConfig {
   @scala.inline
   def apply(
     CallerReference: java.lang.String,
-    Comment: java.lang.String,
+    Comment: CommentType,
     DefaultCacheBehavior: DefaultCacheBehavior,
     Enabled: scala.Boolean,
     Origins: Origins,

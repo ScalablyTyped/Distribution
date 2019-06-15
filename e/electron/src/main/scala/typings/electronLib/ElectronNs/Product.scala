@@ -16,14 +16,15 @@ trait Product extends js.Object {
     */
   var contentVersion: java.lang.String
   /**
-    * A Boolean value that indicates whether the App Store has downloadable content
-    * for this product.
-    */
-  var downloadable: scala.Boolean
-  /**
     * The locale formatted price of the product.
     */
   var formattedPrice: java.lang.String
+  /**
+    * A Boolean value that indicates whether the App Store has downloadable content
+    * for this product. true if at least one file has been associated with the
+    * product.
+    */
+  var isDownloadable: scala.Boolean
   /**
     * A description of the product.
     */
@@ -47,14 +48,14 @@ object Product {
   def apply(
     contentLengths: js.Array[scala.Double],
     contentVersion: java.lang.String,
-    downloadable: scala.Boolean,
     formattedPrice: java.lang.String,
+    isDownloadable: scala.Boolean,
     localizedDescription: java.lang.String,
     localizedTitle: java.lang.String,
     price: scala.Double,
     productIdentifier: java.lang.String
   ): Product = {
-    val __obj = js.Dynamic.literal(contentLengths = contentLengths, contentVersion = contentVersion, downloadable = downloadable, formattedPrice = formattedPrice, localizedDescription = localizedDescription, localizedTitle = localizedTitle, price = price, productIdentifier = productIdentifier)
+    val __obj = js.Dynamic.literal(contentLengths = contentLengths, contentVersion = contentVersion, formattedPrice = formattedPrice, isDownloadable = isDownloadable, localizedDescription = localizedDescription, localizedTitle = localizedTitle, price = price, productIdentifier = productIdentifier)
   
     __obj.asInstanceOf[Product]
   }

@@ -41,6 +41,7 @@ object StrictFormSelectProps {
     clearable: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnChange: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
@@ -120,6 +121,7 @@ object StrictFormSelectProps {
     if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable)
     if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
     if (!js.isUndefined(closeOnChange)) __obj.updateDynamic("closeOnChange")(closeOnChange)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control)

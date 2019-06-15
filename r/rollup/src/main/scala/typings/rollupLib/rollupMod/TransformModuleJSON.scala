@@ -12,7 +12,7 @@ trait TransformModuleJSON extends js.Object {
   var customTransformCache: scala.Boolean
   var moduleSideEffects: scala.Boolean | scala.Null
   var originalCode: java.lang.String
-  var originalSourcemap: RawSourceMap | scala.Unit
+  var originalSourcemap: RawSourceMap | scala.Null
   var resolvedIds: js.UndefOr[ResolvedIdMap] = js.undefined
   var sourcemapChain: js.Array[RawSourceMap | rollupLib.Anon_Missing]
   var transformDependencies: js.Array[java.lang.String] | scala.Null
@@ -25,14 +25,15 @@ object TransformModuleJSON {
     code: java.lang.String,
     customTransformCache: scala.Boolean,
     originalCode: java.lang.String,
-    originalSourcemap: RawSourceMap | scala.Unit,
     sourcemapChain: js.Array[RawSourceMap | rollupLib.Anon_Missing],
     moduleSideEffects: js.UndefOr[scala.Boolean] = js.undefined,
+    originalSourcemap: RawSourceMap = null,
     resolvedIds: ResolvedIdMap = null,
     transformDependencies: js.Array[java.lang.String] = null
   ): TransformModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, originalCode = originalCode, originalSourcemap = originalSourcemap.asInstanceOf[js.Any], sourcemapChain = sourcemapChain)
+    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, originalCode = originalCode, sourcemapChain = sourcemapChain)
     if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
+    if (originalSourcemap != null) __obj.updateDynamic("originalSourcemap")(originalSourcemap)
     if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds)
     if (transformDependencies != null) __obj.updateDynamic("transformDependencies")(transformDependencies)
     __obj.asInstanceOf[TransformModuleJSON]

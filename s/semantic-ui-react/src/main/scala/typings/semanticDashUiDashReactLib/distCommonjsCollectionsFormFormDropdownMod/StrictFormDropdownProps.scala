@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.StrictDropdownProps because var conflicts: as, children, className, disabled, error, `inline`. Inlined additionLabel, additionPosition, allowAdditions, basic, button, clearable, closeOnBlur, closeOnChange, compact, deburr, defaultOpen, defaultSearchQuery, defaultSelectedLabel, defaultUpward, defaultValue, direction, floating, fluid, header, icon, item, labeled, lazyLoad, loading, minCharacters, multiple, noResultsMessage, onAddItem, onBlur, onChange, onClick, onClose, onFocus, onLabelClick, onMouseDown, onOpen, onSearchChange, open, openOnFocus, options, placeholder, pointing, renderLabel, scrolling, search, searchInput, searchQuery, selectOnBlur, selectOnNavigation, selectedLabel, selection, simple, tabIndex, text, trigger, value, upward, wrapSelection */ trait StrictFormDropdownProps
+- semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.StrictDropdownProps because var conflicts: as, children, className, disabled, error, `inline`. Inlined additionLabel, additionPosition, allowAdditions, basic, button, clearable, closeOnBlur, closeOnEscape, closeOnChange, compact, deburr, defaultOpen, defaultSearchQuery, defaultSelectedLabel, defaultUpward, defaultValue, direction, floating, fluid, header, icon, item, labeled, lazyLoad, loading, minCharacters, multiple, noResultsMessage, onAddItem, onBlur, onChange, onClick, onClose, onFocus, onLabelClick, onMouseDown, onOpen, onSearchChange, open, openOnFocus, options, placeholder, pointing, renderLabel, scrolling, search, searchInput, searchQuery, selectOnBlur, selectOnNavigation, selectedLabel, selection, simple, tabIndex, text, trigger, value, upward, wrapSelection */ trait StrictFormDropdownProps
   extends semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps {
   /** Label prefixed to an option added by a user. */
   var additionLabel: js.UndefOr[scala.Double | java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
@@ -33,6 +33,8 @@ import scala.scalajs.js.annotation._
     * selection dropdowns will close on change.
     */
   var closeOnChange: js.UndefOr[scala.Boolean] = js.undefined
+  /** Whether or not the dropdown should close when the escape key is pressed. */
+  var closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined
   /** A compact dropdown has no minimum width. */
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether or not the dropdown should strip diacritics in options and input search */
@@ -302,6 +304,7 @@ object StrictFormDropdownProps {
     clearable: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnChange: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
@@ -384,6 +387,7 @@ object StrictFormDropdownProps {
     if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable)
     if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
     if (!js.isUndefined(closeOnChange)) __obj.updateDynamic("closeOnChange")(closeOnChange)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control)

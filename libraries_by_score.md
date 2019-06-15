@@ -883,6 +883,7 @@
 | 0.7774991659361612 | [sanctuary](./s/sanctuary) | Refuge from unsafe JavaScript
 | 0.7774838476855415 | [d3-ease](./d/d3-ease) | Easing functions for smooth animation.
 | 0.7774550667146658 | [ioredis](./i/ioredis) | A robust, performance-focused and full-featured Re
+| 0.7774422775614589 | [npm-which](./n/npm-which) | Locate a program or locally installed node module'
 | 0.7774342431981676 | [user-home](./u/user-home) | Get the path to the user home directory
 | 0.7774136692683074 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript
 | 0.7773275010707823 | [lodash_dot_mapkeys](./l/lodash_dot_mapkeys) | The lodash method _.mapKeys exported as a module.
@@ -1503,6 +1504,7 @@
 | 0.7413842610351461 | [pouchdb-replication](./p/pouchdb-replication) | PouchDB's replication and sync algorithm, as a plu
 | 0.7413840402162011 | [apollo-link-http-common](./a/apollo-link-http-common) | Http utilities for Apollo Link shared across all l
 | 0.7413647275026063 | [deprecate](./d/deprecate) | Mark methods as deprecated and warn the user when 
+| 0.7413046563607957 | [npm-run](./n/npm-run) | Run executables for locally-installed packages wit
 | 0.7412716959565052 | [redux-mock-store](./r/redux-mock-store) | A mock store for testing your redux async action c
 | 0.7411950495653025 | [resemblejs](./r/resemblejs) | Image analysis and comparison with HTML5
 | 0.7410980056360841 | [lodash_dot_mixin](./l/lodash_dot_mixin) | The lodash method _.mixin exported as a module.
@@ -3481,6 +3483,7 @@
 | 0.6431002682558198 | [wcag-contrast](./w/wcag-contrast) | evaluate the wcag color contrast score for two col
 | 0.6428706865879233 | [passport-google-oauth](./p/passport-google-oauth) | Google (OAuth) authentication strategies for Passp
 | 0.6428399933407215 | [react-sortable-tree](./r/react-sortable-tree) | Drag-and-drop sortable component for nested data a
+| 0.6428009171451582 | [dos2unix](./d/dos2unix) | A Node.js module to convert text files with DOS li
 | 0.6427695040622132 | [event-emitter-es6](./e/event-emitter-es6) | Small event emitter for using in es6 and plain js
 | 0.6427585029988168 | [is-trademarked](./i/is-trademarked) | Check if a word is trademarked.
 | 0.6427314877355153 | [positive-zero](./p/positive-zero) | Check if a number is positive zero
@@ -3541,7 +3544,6 @@
 | 0.6395566877447401 | [phonegap-plugin-push](./p/phonegap-plugin-push) | Register and receive push notifications.
 | 0.6394377184556368 | [node-redis-pubsub](./n/node-redis-pubsub) | Redis PubSub client for Node
 | 0.6393357963608941 | [apigee-access](./a/apigee-access) | Provides access to Apigee-specific functionality
-| 0.6393111865231427 | [ecol](./e/ecol) | Event Collections
 | 0.6393099815054217 | [shopify-prime](./s/shopify-prime) | Shopify Prime is a NodeJS library built to help de
 | 0.6393039531517302 | [expo__vector-icons](./e/expo__vector-icons) | Built-in support for popular icon fonts and the to
 | 0.6392902966406129 | [redux-persist](./r/redux-persist) | persist and rehydrate redux stores
@@ -3551,7 +3553,6 @@
 | 0.6392491127861972 | [random-obj-key](./r/random-obj-key) | Get a random key from an object
 | 0.6392106678839176 | [recharts-scale](./r/recharts-scale) | Scale of Cartesian Coordinates
 | 0.639206324863886 | [hex-rgba](./h/hex-rgba) | Convert HEX to RGBA
-| 0.63919988049314 | [sxml](./s/sxml) | Simple XML
 | 0.6391572718849292 | [glob-to-regexp](./g/glob-to-regexp) | Convert globs to regular expressions
 | 0.6391447754106294 | [xstream](./x/xstream) | An extremely intuitive, small, and fast functional
 | 0.6390735161067322 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with
@@ -3598,7 +3599,6 @@
 | 0.636208968750732 | [intrinsic-scale](./i/intrinsic-scale) | Replicate background-size: cover/contain (scale+cr
 | 0.6361614322862086 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti
 | 0.6358682933708665 | [send](./s/send) | Better streaming static file server with Range and
-| 0.6358015358209748 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
 | 0.6357751906187945 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0.6357097208651624 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
 | 0.6356053132776762 | [highcharts](./h/highcharts) | JavaScript charting framework
@@ -3714,7 +3714,6 @@
 | 0.6261222872143226 | [detect-browser](./d/detect-browser) | Unpack a browser type and version from the userage
 | 0.6260653198960973 | [localized-countries](./l/localized-countries) | Country code to name mappings for several language
 | 0.6260325613273962 | [atlassian-crowd-client](./a/atlassian-crowd-client) | Atlassian Crowd API client for Node
-| 0.6259551061721065 | [url-variables](./u/url-variables) | URLVariables class for TypeScript
 | 0.6259166505327667 | [xhr-mock](./x/xhr-mock) | Utility for mocking XMLHttpRequest.
 | 0.6257917197394696 | [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget
 | 0.62577844133259 | [sendmail](./s/sendmail) | Sendmail without setting up SMTP server
@@ -4560,6 +4559,7 @@
 | 0.5139817456735376 | [rollup-plugin-delete](./r/rollup-plugin-delete) | Delete files and folders using Rollup
 | 0.513822957715274 | [suncalc](./s/suncalc) | A tiny JavaScript library for calculating sun/moon
 | 0.5135972758240946 | [passport-http-bearer](./p/passport-http-bearer) | HTTP Bearer authentication strategy for Passport.
+| 0.5135519534775572 | [bull-arena](./b/bull-arena) | An interactive UI dashboard for Bee Queue
 | 0.5134618244703875 | [sizzle](./s/sizzle) | A pure-JavaScript, bottom-up CSS selector engine d
 | 0.5134160124118643 | [medium-editor](./m/medium-editor) | Medium.com WYSIWYG editor clone.
 | 0.512978701496327 | [rickshaw](./r/rickshaw) | JavaScript toolkit for creating interactive real-t
@@ -5028,7 +5028,6 @@
 | 0.440462315540498 | [gulp-file-include](./g/gulp-file-include) | a gulp plugin for file include
 | 0.440450070083091 | [jump_dot_js](./j/jump_dot_js) | A modern smooth scrolling library.
 | 0.4403992476824781 | [angular-toastr](./a/angular-toastr) | -
-| 0.4402876301206501 | [samchon-framework](./s/samchon-framework) | Samchon, a OON (Object Oriented Network) Framework
 | 0.4402873644572759 | [angular-hotkeys](./a/angular-hotkeys) | Automatic keyboard shortcuts for your Angular Apps
 | 0.4399811001992316 | [chunked-dc](./c/chunked-dc) | Binary chunking for WebRTC data channels & more.
 | 0.4398739393097043 | [express-ntlm](./e/express-ntlm) | An express middleware to have simple NTLM-authenti
@@ -5134,7 +5133,6 @@
 | 0.4231479750241569 | [bootstrap-toggle](./b/bootstrap-toggle) | Bootstrap Toggle is a highly flexible Bootstrap pl
 | 0.42295330683774024 | [revalidate](./r/revalidate) | Elegant and composable validations
 | 0.4229360118473847 | [samlp](./s/samlp) | SAML Protocol server middleware
-| 0.4227109276330524 | [samchon](./s/samchon) | Samchon, a OON (Object Oriented Network) Framework
 | 0.4226979983109618 | [react-flexr](./r/react-flexr) | React flexbox grid made simple.
 | 0.42243409418031785 | [ftdomdelegate](./f/ftdomdelegate) | Create and manage a DOM event delegator.
 | 0.4222426706314506 | [atmosphere_dot_js](./a/atmosphere_dot_js) | Atmosphere client for Node.js
@@ -5275,6 +5273,7 @@
 | 0.4035042200141608 | [osmtogeojson](./o/osmtogeojson) | convert OSM to geojson
 | 0.40345273126188713 | [rx-lite-backpressure](./r/rx-lite-backpressure) | Lightweight library with backpressure functions fo
 | 0.40341502843349314 | [rx-lite-async](./r/rx-lite-async) | Lightweight library with asynchronous functions fo
+| 0.4030610829837875 | [wordpress__plugins](./w/wordpress__plugins) | Plugins module for WordPress.
 | 0.40286988943491603 | [storybook__addon-backgrou](./s/storybook__addon-backgrounds) | A storybook addon to show different backgrounds fo
 | 0.4027924482825381 | [express-urlrewrite](./e/express-urlrewrite) | URL rewrite middleware for express
 | 0.4027290343089356 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (

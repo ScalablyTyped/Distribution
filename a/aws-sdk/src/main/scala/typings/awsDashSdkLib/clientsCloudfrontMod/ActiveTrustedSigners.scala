@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ActiveTrustedSigners extends js.Object {
   /**
-    * Enabled is true if any of the AWS accounts listed in the TrustedSigners complex type for this RTMP distribution have active CloudFront key pairs. If not, Enabled is false. For more information, see ActiveTrustedSigners.
+    * Enabled is true if any of the AWS accounts listed in the TrustedSigners complex type for this distribution have active CloudFront key pairs. If not, Enabled is false.
     */
   var Enabled: scala.Boolean
   /**
-    * A complex type that contains one Signer complex type for each trusted signer that is specified in the TrustedSigners complex type. For more information, see ActiveTrustedSigners. 
+    * A complex type that contains one Signer complex type for each trusted signer that is specified in the TrustedSigners complex type.
     */
   var Items: js.UndefOr[SignerList] = js.undefined
   /**
-    * A complex type that contains one Signer complex type for each trusted signer specified in the TrustedSigners complex type. For more information, see ActiveTrustedSigners.
+    * The number of trusted signers specified in the TrustedSigners complex type.
     */
   var Quantity: integer
 }

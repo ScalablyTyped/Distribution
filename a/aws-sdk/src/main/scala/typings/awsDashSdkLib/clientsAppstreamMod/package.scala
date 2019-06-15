@@ -153,7 +153,13 @@ package object clientsAppstreamMod {
     - java.lang.String
   */
   type Permission = _Permission | java.lang.String
-  type PlatformType = awsDashSdkLib.awsDashSdkLibStrings.WINDOWS | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WINDOWS
+    - awsDashSdkLib.awsDashSdkLibStrings.WINDOWS_SERVER_2016
+    - awsDashSdkLib.awsDashSdkLibStrings.WINDOWS_SERVER_2019
+    - java.lang.String
+  */
+  type PlatformType = _PlatformType | java.lang.String
   type RedirectURL = java.lang.String
   type RegionName = java.lang.String
   type ResourceErrors = js.Array[ResourceError]

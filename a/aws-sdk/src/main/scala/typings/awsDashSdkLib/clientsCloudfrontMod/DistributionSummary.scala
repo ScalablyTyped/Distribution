@@ -11,6 +11,10 @@ trait DistributionSummary extends js.Object {
     */
   var ARN: java.lang.String
   /**
+    * AWS services in China customers must file for an Internet Content Provider (ICP) recordal if they want to serve content publicly on an alternate domain name, also known as a CNAME, that they've added to CloudFront. AliasICPRecordal provides the ICP recordal status for CNAMEs associated with distributions. For more information about ICP recordals, see  Signup, Accounts, and Credentials in Getting Started with AWS services in China.
+    */
+  var AliasICPRecordals: js.UndefOr[AliasICPRecordals] = js.undefined
+  /**
     * A complex type that contains information about CNAMEs (alternate domain names), if any, for this distribution.
     */
   var Aliases: awsDashSdkLib.clientsCloudfrontMod.Aliases
@@ -67,7 +71,7 @@ trait DistributionSummary extends js.Object {
     */
   var PriceClass: awsDashSdkLib.clientsCloudfrontMod.PriceClass
   /**
-    * 
+    * A complex type that identifies ways in which you want to restrict distribution of your content.
     */
   var Restrictions: awsDashSdkLib.clientsCloudfrontMod.Restrictions
   /**
@@ -75,7 +79,7 @@ trait DistributionSummary extends js.Object {
     */
   var Status: java.lang.String
   /**
-    * 
+    * A complex type that specifies whether you want viewers to use HTTP or HTTPS to request your objects, whether you're using an alternate domain name with HTTPS, and if so, if you're using AWS Certificate Manager (ACM) or a third-party certificate authority.
     */
   var ViewerCertificate: awsDashSdkLib.clientsCloudfrontMod.ViewerCertificate
   /**
@@ -105,9 +109,11 @@ object DistributionSummary {
     Status: java.lang.String,
     ViewerCertificate: ViewerCertificate,
     WebACLId: java.lang.String,
+    AliasICPRecordals: AliasICPRecordals = null,
     OriginGroups: OriginGroups = null
   ): DistributionSummary = {
     val __obj = js.Dynamic.literal(ARN = ARN, Aliases = Aliases, CacheBehaviors = CacheBehaviors, Comment = Comment, CustomErrorResponses = CustomErrorResponses, DefaultCacheBehavior = DefaultCacheBehavior, DomainName = DomainName, Enabled = Enabled, HttpVersion = HttpVersion.asInstanceOf[js.Any], Id = Id, IsIPV6Enabled = IsIPV6Enabled, LastModifiedTime = LastModifiedTime, Origins = Origins, PriceClass = PriceClass.asInstanceOf[js.Any], Restrictions = Restrictions, Status = Status, ViewerCertificate = ViewerCertificate, WebACLId = WebACLId)
+    if (AliasICPRecordals != null) __obj.updateDynamic("AliasICPRecordals")(AliasICPRecordals)
     if (OriginGroups != null) __obj.updateDynamic("OriginGroups")(OriginGroups)
     __obj.asInstanceOf[DistributionSummary]
   }

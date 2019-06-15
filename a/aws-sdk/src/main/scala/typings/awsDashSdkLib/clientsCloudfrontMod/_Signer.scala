@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait _Signer extends js.Object {
   /**
-    * An AWS account that is included in the TrustedSigners complex type for this RTMP distribution. Valid values include:    self, which is the AWS account used to create the distribution.   An AWS account number.  
+    * An AWS account that is included in the TrustedSigners complex type for this distribution. Valid values include:    self, which is the AWS account used to create the distribution.   An AWS account number.  
     */
   var AwsAccountNumber: js.UndefOr[java.lang.String] = js.undefined
   /**

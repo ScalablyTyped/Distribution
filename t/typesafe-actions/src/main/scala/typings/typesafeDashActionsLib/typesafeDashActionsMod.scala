@@ -37,11 +37,11 @@ object typesafeDashActionsMod extends js.Object {
   def createAsyncAction[TType1 /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */, TType2 /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */, TType3 /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */, TType4 /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */](requestType: TType1, successType: TType2, failureType: TType3, cancelType: TType4): typesafeDashActionsLib.distCreateDashAsyncDashActionMod.AsyncActionBuilder[TType1, TType2, TType3, TType4] = js.native
   def createCustomAction[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */, AC /* <: typesafeDashActionsLib.distTypeDashHelpersMod.ActionCreator[T] */](`type`: T): AC = js.native
   def createCustomAction[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */, AC /* <: typesafeDashActionsLib.distTypeDashHelpersMod.ActionCreator[T] */](`type`: T, createHandler: js.Function1[/* type */ T, AC]): AC = js.native
-  def createReducer[TState, TRootAction /* <: typesafeDashActionsLib.distTypeDashHelpersMod.Action[typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant] */](initialState: TState): (typesafeDashActionsLib.distTypeDashHelpersMod.Reducer[TState, TRootAction]) with (typesafeDashActionsLib.Anon_Action[TState, TRootAction]) = js.native
+  def createReducer[TState, TRootAction /* <: typesafeDashActionsLib.distTypeDashHelpersMod.Action[typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant] */](initialState: TState): (typesafeDashActionsLib.distTypeDashHelpersMod.Reducer[TState, TRootAction]) with (typesafeDashActionsLib.Anon_HandleAction[TState, TRootAction]) = js.native
   def createReducer[TState, TRootAction /* <: typesafeDashActionsLib.distTypeDashHelpersMod.Action[typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant] */](
     initialState: TState,
     initialHandlers: typesafeDashActionsLib.distCreateDashReducerMod.InitialHandler[TState, TRootAction]
-  ): (typesafeDashActionsLib.distTypeDashHelpersMod.Reducer[TState, TRootAction]) with (typesafeDashActionsLib.Anon_Action[TState, TRootAction]) = js.native
+  ): (typesafeDashActionsLib.distTypeDashHelpersMod.Reducer[TState, TRootAction]) with (typesafeDashActionsLib.Anon_HandleAction[TState, TRootAction]) = js.native
   def createStandardAction[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */](`type`: T): typesafeDashActionsLib.distCreateDashStandardDashActionMod.ActionBuilder[T] = js.native
   def getType[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */](
     actionCreator: typesafeDashActionsLib.distTypeDashHelpersMod.ActionCreator[T] with typesafeDashActionsLib.distTypeDashHelpersMod.TypeMeta[T]

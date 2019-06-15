@@ -34,7 +34,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateCloudFrontOriginAccessIdentityResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new web distribution. You create a CloudFront distribution to tell CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery. Send a POST request to the /CloudFront API version/distribution/distribution ID resource.  When you update a distribution, there are more required fields than when you create a distribution. When you update your distribution by using UpdateDistribution, follow the steps included in the documentation to get the current configuration and then make your updates. This helps to make sure that you include all of the required fields. To view a summary, see Required Fields for Create Distribution and Update Distribution in the Amazon CloudFront Developer Guide.  If you are using Adobe Flash Media Server's RTMP protocol, you set up a different kind of CloudFront distribution. For more information, see CreateStreamingDistribution.
+    * Creates a new web distribution. You create a CloudFront distribution to tell CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery. Send a POST request to the /CloudFront API version/distribution/distribution ID resource.  When you update a distribution, there are more required fields than when you create a distribution. When you update your distribution by using UpdateDistribution, follow the steps included in the documentation to get the current configuration and then make your updates. This helps to make sure that you include all of the required fields. To view a summary, see Required Fields for Create Distribution and Update Distribution in the Amazon CloudFront Developer Guide. 
     */
   def createDistribution(): awsDashSdkLib.libRequestMod.Request[CreateDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDistribution(
@@ -45,7 +45,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new web distribution. You create a CloudFront distribution to tell CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery. Send a POST request to the /CloudFront API version/distribution/distribution ID resource.  When you update a distribution, there are more required fields than when you create a distribution. When you update your distribution by using UpdateDistribution, follow the steps included in the documentation to get the current configuration and then make your updates. This helps to make sure that you include all of the required fields. To view a summary, see Required Fields for Create Distribution and Update Distribution in the Amazon CloudFront Developer Guide.  If you are using Adobe Flash Media Server's RTMP protocol, you set up a different kind of CloudFront distribution. For more information, see CreateStreamingDistribution.
+    * Creates a new web distribution. You create a CloudFront distribution to tell CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery. Send a POST request to the /CloudFront API version/distribution/distribution ID resource.  When you update a distribution, there are more required fields than when you create a distribution. When you update your distribution by using UpdateDistribution, follow the steps included in the documentation to get the current configuration and then make your updates. This helps to make sure that you include all of the required fields. To view a summary, see Required Fields for Create Distribution and Update Distribution in the Amazon CloudFront Developer Guide. 
     */
   def createDistribution(params: CreateDistributionRequest): awsDashSdkLib.libRequestMod.Request[CreateDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDistribution(
@@ -172,7 +172,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreatePublicKeyResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new RMTP distribution. An RTMP distribution is similar to a web distribution, but an RTMP distribution streams media files using the Adobe Real-Time Messaging Protocol (RTMP) instead of serving files using HTTP.  To create a new web distribution, submit a POST request to the CloudFront API version/distribution resource. The request body must include a document with a StreamingDistributionConfig element. The response echoes the StreamingDistributionConfig element and returns other information about the RTMP distribution. To get the status of your request, use the GET StreamingDistribution API action. When the value of Enabled is true and the value of Status is Deployed, your distribution is ready. A distribution usually deploys in less than 15 minutes. For more information about web distributions, see Working with RTMP Distributions in the Amazon CloudFront Developer Guide.  Beginning with the 2012-05-05 version of the CloudFront API, we made substantial changes to the format of the XML document that you include in the request body when you create or update a web distribution or an RTMP distribution, and when you invalidate objects. With previous versions of the API, we discovered that it was too easy to accidentally delete one or more values for an element that accepts multiple values, for example, CNAMEs and trusted signers. Our changes for the 2012-05-05 release are intended to prevent these accidental deletions and to notify you when there's a mismatch between the number of values you say you're specifying in the Quantity element and the number of values specified. 
+    * Creates a new RTMP distribution. An RTMP distribution is similar to a web distribution, but an RTMP distribution streams media files using the Adobe Real-Time Messaging Protocol (RTMP) instead of serving files using HTTP.  To create a new distribution, submit a POST request to the CloudFront API version/distribution resource. The request body must include a document with a StreamingDistributionConfig element. The response echoes the StreamingDistributionConfig element and returns other information about the RTMP distribution. To get the status of your request, use the GET StreamingDistribution API action. When the value of Enabled is true and the value of Status is Deployed, your distribution is ready. A distribution usually deploys in less than 15 minutes. For more information about web distributions, see Working with RTMP Distributions in the Amazon CloudFront Developer Guide.  Beginning with the 2012-05-05 version of the CloudFront API, we made substantial changes to the format of the XML document that you include in the request body when you create or update a web distribution or an RTMP distribution, and when you invalidate objects. With previous versions of the API, we discovered that it was too easy to accidentally delete one or more values for an element that accepts multiple values, for example, CNAMEs and trusted signers. Our changes for the 2012-05-05 release are intended to prevent these accidental deletions and to notify you when there's a mismatch between the number of values you say you're specifying in the Quantity element and the number of values specified. 
     */
   def createStreamingDistribution(): awsDashSdkLib.libRequestMod.Request[CreateStreamingDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createStreamingDistribution(
@@ -183,7 +183,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateStreamingDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new RMTP distribution. An RTMP distribution is similar to a web distribution, but an RTMP distribution streams media files using the Adobe Real-Time Messaging Protocol (RTMP) instead of serving files using HTTP.  To create a new web distribution, submit a POST request to the CloudFront API version/distribution resource. The request body must include a document with a StreamingDistributionConfig element. The response echoes the StreamingDistributionConfig element and returns other information about the RTMP distribution. To get the status of your request, use the GET StreamingDistribution API action. When the value of Enabled is true and the value of Status is Deployed, your distribution is ready. A distribution usually deploys in less than 15 minutes. For more information about web distributions, see Working with RTMP Distributions in the Amazon CloudFront Developer Guide.  Beginning with the 2012-05-05 version of the CloudFront API, we made substantial changes to the format of the XML document that you include in the request body when you create or update a web distribution or an RTMP distribution, and when you invalidate objects. With previous versions of the API, we discovered that it was too easy to accidentally delete one or more values for an element that accepts multiple values, for example, CNAMEs and trusted signers. Our changes for the 2012-05-05 release are intended to prevent these accidental deletions and to notify you when there's a mismatch between the number of values you say you're specifying in the Quantity element and the number of values specified. 
+    * Creates a new RTMP distribution. An RTMP distribution is similar to a web distribution, but an RTMP distribution streams media files using the Adobe Real-Time Messaging Protocol (RTMP) instead of serving files using HTTP.  To create a new distribution, submit a POST request to the CloudFront API version/distribution resource. The request body must include a document with a StreamingDistributionConfig element. The response echoes the StreamingDistributionConfig element and returns other information about the RTMP distribution. To get the status of your request, use the GET StreamingDistribution API action. When the value of Enabled is true and the value of Status is Deployed, your distribution is ready. A distribution usually deploys in less than 15 minutes. For more information about web distributions, see Working with RTMP Distributions in the Amazon CloudFront Developer Guide.  Beginning with the 2012-05-05 version of the CloudFront API, we made substantial changes to the format of the XML document that you include in the request body when you create or update a web distribution or an RTMP distribution, and when you invalidate objects. With previous versions of the API, we discovered that it was too easy to accidentally delete one or more values for an element that accepts multiple values, for example, CNAMEs and trusted signers. Our changes for the 2012-05-05 release are intended to prevent these accidental deletions and to notify you when there's a mismatch between the number of values you say you're specifying in the Quantity element and the number of values specified. 
     */
   def createStreamingDistribution(params: CreateStreamingDistributionRequest): awsDashSdkLib.libRequestMod.Request[CreateStreamingDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createStreamingDistribution(
@@ -354,7 +354,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCloudFrontOriginAccessIdentityConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get the information about a distribution. 
+    * Get the information about a distribution.
     */
   def getDistribution(): awsDashSdkLib.libRequestMod.Request[GetDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDistribution(
@@ -365,7 +365,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get the information about a distribution. 
+    * Get the information about a distribution.
     */
   def getDistribution(params: GetDistributionRequest): awsDashSdkLib.libRequestMod.Request[GetDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDistribution(
@@ -630,7 +630,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListCloudFrontOriginAccessIdentitiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * List distributions. 
+    * List CloudFront distributions.
     */
   def listDistributions(): awsDashSdkLib.libRequestMod.Request[ListDistributionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDistributions(
@@ -641,7 +641,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListDistributionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * List distributions. 
+    * List CloudFront distributions.
     */
   def listDistributions(params: ListDistributionsRequest): awsDashSdkLib.libRequestMod.Request[ListDistributionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDistributions(
@@ -982,7 +982,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateStreamingDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Waits for the distributionDeployed state by periodically calling the underlying CloudFront.getDistributionoperation every 60 seconds (at most 25 times). Wait until a distribution is deployed.
+    * Waits for the distributionDeployed state by periodically calling the underlying CloudFront.getDistributionoperation every 60 seconds (at most 35 times). Wait until a distribution is deployed.
     */
   @JSName("waitFor")
   def waitFor_distributionDeployed(state: awsDashSdkLib.awsDashSdkLibStrings.distributionDeployed): awsDashSdkLib.libRequestMod.Request[GetDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -996,7 +996,7 @@ trait CloudFront
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDistributionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Waits for the distributionDeployed state by periodically calling the underlying CloudFront.getDistributionoperation every 60 seconds (at most 25 times). Wait until a distribution is deployed.
+    * Waits for the distributionDeployed state by periodically calling the underlying CloudFront.getDistributionoperation every 60 seconds (at most 35 times). Wait until a distribution is deployed.
     */
   @JSName("waitFor")
   def waitFor_distributionDeployed(

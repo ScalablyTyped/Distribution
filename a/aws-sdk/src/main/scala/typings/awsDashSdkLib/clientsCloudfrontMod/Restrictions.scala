@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Restrictions extends js.Object {
+  /**
+    * A complex type that controls the countries in which your content is distributed. CloudFront determines the location of your users using MaxMind GeoIP databases.
+    */
   var GeoRestriction: awsDashSdkLib.clientsCloudfrontMod.GeoRestriction
 }
 

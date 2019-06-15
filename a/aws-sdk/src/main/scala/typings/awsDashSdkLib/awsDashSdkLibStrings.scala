@@ -825,6 +825,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAppmeshMod._apiVersion
   
   @js.native
+  sealed trait `2019-03-26`
+    extends awsDashSdkLib.clientsCloudfrontMod._apiVersion
+  
+  @js.native
   sealed trait `2019-05-23`
     extends awsDashSdkLib.clientsGroundstationMod._apiVersion
   
@@ -1891,7 +1895,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait APPROVED
-    extends awsDashSdkLib.clientsSsmMod._PatchDeploymentStatus
+    extends awsDashSdkLib.clientsCloudfrontMod._ICPRecordalStatus
+       with awsDashSdkLib.clientsSsmMod._PatchDeploymentStatus
        with awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
   
   @js.native
@@ -15212,6 +15217,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
        with awsDashSdkLib.clientsGameliftMod._GameSessionPlacementState
        with awsDashSdkLib.clientsCloudhsmMod._HsmStatus
+       with awsDashSdkLib.clientsCloudfrontMod._ICPRecordalStatus
        with awsDashSdkLib.clientsAppstreamMod._ImageBuilderState
        with awsDashSdkLib.clientsAppstreamMod._ImageState
        with awsDashSdkLib.clientsGameliftMod._InstanceStatus
@@ -19171,6 +19177,7 @@ object awsDashSdkLibStrings {
   sealed trait SUSPENDED
     extends awsDashSdkLib.clientsOrganizationsMod._AccountStatus
        with awsDashSdkLib.clientsCloudhsmMod._HsmStatus
+       with awsDashSdkLib.clientsCloudfrontMod._ICPRecordalStatus
        with awsDashSdkLib.clientsEmrMod._InstanceFleetState
        with awsDashSdkLib.clientsEmrMod._InstanceGroupState
        with awsDashSdkLib.clientsWorkspacesMod._WorkspaceState
@@ -22130,6 +22137,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._OperatingSystem
        with awsDashSdkLib.clientsWorkspacesMod._OperatingSystemType
        with awsDashSdkLib.clientsMobileMod._Platform
+       with awsDashSdkLib.clientsAppstreamMod._PlatformType
   
   @js.native
   sealed trait WINDOWS_2012
@@ -22142,6 +22150,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait WINDOWS_SERVER
     extends awsDashSdkLib.clientsCodebuildMod._PlatformType
+  
+  @js.native
+  sealed trait WINDOWS_SERVER_2016
+    extends awsDashSdkLib.clientsAppstreamMod._PlatformType
+  
+  @js.native
+  sealed trait WINDOWS_SERVER_2019
+    extends awsDashSdkLib.clientsAppstreamMod._PlatformType
   
   @js.native
   sealed trait WITHOUT_TRAFFIC_CONTROL
@@ -24721,34 +24737,6 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait g3sDOTxlarge
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOT12xlarge
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOT16xlarge
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOT2xlarge
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOT4xlarge
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOT8xlarge
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOTmetal
-    extends awsDashSdkLib.clientsEc2Mod._InstanceType
-  
-  @js.native
-  sealed trait g4dnDOTxlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -29227,6 +29215,8 @@ object awsDashSdkLibStrings {
   def `2018-11-29`: `2018-11-29` = "2018-11-29".asInstanceOf[`2018-11-29`]
   @scala.inline
   def `2019-01-25`: `2019-01-25` = "2019-01-25".asInstanceOf[`2019-01-25`]
+  @scala.inline
+  def `2019-03-26`: `2019-03-26` = "2019-03-26".asInstanceOf[`2019-03-26`]
   @scala.inline
   def `2019-05-23`: `2019-05-23` = "2019-05-23".asInstanceOf[`2019-05-23`]
   @scala.inline
@@ -38030,6 +38020,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def WINDOWS_SERVER: WINDOWS_SERVER = "WINDOWS_SERVER".asInstanceOf[WINDOWS_SERVER]
   @scala.inline
+  def WINDOWS_SERVER_2016: WINDOWS_SERVER_2016 = "WINDOWS_SERVER_2016".asInstanceOf[WINDOWS_SERVER_2016]
+  @scala.inline
+  def WINDOWS_SERVER_2019: WINDOWS_SERVER_2019 = "WINDOWS_SERVER_2019".asInstanceOf[WINDOWS_SERVER_2019]
+  @scala.inline
   def WITHOUT_TRAFFIC_CONTROL: WITHOUT_TRAFFIC_CONTROL = "WITHOUT_TRAFFIC_CONTROL".asInstanceOf[WITHOUT_TRAFFIC_CONTROL]
   @scala.inline
   def WITH_COMMENTS: WITH_COMMENTS = "WITH_COMMENTS".asInstanceOf[WITH_COMMENTS]
@@ -39145,20 +39139,6 @@ object awsDashSdkLibStrings {
   def g3DOT8xlarge: g3DOT8xlarge = "g3.8xlarge".asInstanceOf[g3DOT8xlarge]
   @scala.inline
   def g3sDOTxlarge: g3sDOTxlarge = "g3s.xlarge".asInstanceOf[g3sDOTxlarge]
-  @scala.inline
-  def g4dnDOT12xlarge: g4dnDOT12xlarge = "g4dn.12xlarge".asInstanceOf[g4dnDOT12xlarge]
-  @scala.inline
-  def g4dnDOT16xlarge: g4dnDOT16xlarge = "g4dn.16xlarge".asInstanceOf[g4dnDOT16xlarge]
-  @scala.inline
-  def g4dnDOT2xlarge: g4dnDOT2xlarge = "g4dn.2xlarge".asInstanceOf[g4dnDOT2xlarge]
-  @scala.inline
-  def g4dnDOT4xlarge: g4dnDOT4xlarge = "g4dn.4xlarge".asInstanceOf[g4dnDOT4xlarge]
-  @scala.inline
-  def g4dnDOT8xlarge: g4dnDOT8xlarge = "g4dn.8xlarge".asInstanceOf[g4dnDOT8xlarge]
-  @scala.inline
-  def g4dnDOTmetal: g4dnDOTmetal = "g4dn.metal".asInstanceOf[g4dnDOTmetal]
-  @scala.inline
-  def g4dnDOTxlarge: g4dnDOTxlarge = "g4dn.xlarge".asInstanceOf[g4dnDOTxlarge]
   @scala.inline
   def ga: ga = "ga".asInstanceOf[ga]
   @scala.inline

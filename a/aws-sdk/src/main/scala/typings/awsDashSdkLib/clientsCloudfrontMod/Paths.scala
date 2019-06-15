@@ -11,7 +11,7 @@ trait Paths extends js.Object {
     */
   var Items: js.UndefOr[PathList] = js.undefined
   /**
-    * The number of objects that you want to invalidate.
+    * The number of invalidation paths specified for the objects that you want to invalidate.
     */
   var Quantity: integer
 }

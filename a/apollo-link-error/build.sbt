@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "apollo-link-error"
-version := "1.1.10-a5f352"
+version := "1.1.11-d4fe7b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-d56c94",
-  "org.scalablytyped" %%% "apollo-link-http-common" % "0.2.13-f28b9e",
+  "org.scalablytyped" %%% "apollo-link-http-common" % "0.2.14-f28b9e",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-1af13e",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
   "org.scalablytyped" %%% "std" % "3.5-c5d119",

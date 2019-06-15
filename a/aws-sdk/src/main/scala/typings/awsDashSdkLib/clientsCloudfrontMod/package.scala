@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudfrontMod {
+  type AliasICPRecordals = js.Array[AliasICPRecordal]
   type AliasList = js.Array[java.lang.String]
   type AwsAccountNumberList = js.Array[java.lang.String]
   type CacheBehaviorList = js.Array[CacheBehavior]
@@ -18,6 +19,7 @@ package object clientsCloudfrontMod {
   type CertificateSource = _CertificateSource | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudFrontOriginAccessIdentitySummaryList = js.Array[CloudFrontOriginAccessIdentitySummary]
+  type CommentType = java.lang.String
   type ContentTypeProfileList = js.Array[ContentTypeProfile]
   type CookieNameList = js.Array[java.lang.String]
   type CustomErrorResponseList = js.Array[CustomErrorResponse]
@@ -49,6 +51,13 @@ package object clientsCloudfrontMod {
     - java.lang.String
   */
   type HttpVersion = _HttpVersion | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.APPROVED
+    - awsDashSdkLib.awsDashSdkLibStrings.SUSPENDED
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - java.lang.String
+  */
+  type ICPRecordalStatus = _ICPRecordalStatus | java.lang.String
   type InvalidationSummaryList = js.Array[InvalidationSummary]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.none
@@ -154,6 +163,7 @@ package object clientsCloudfrontMod {
     - awsDashSdkLib.awsDashSdkLibStrings.`2017-10-30`
     - awsDashSdkLib.awsDashSdkLibStrings.`2018-06-18`
     - awsDashSdkLib.awsDashSdkLibStrings.`2018-11-05`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2019-03-26`
     - awsDashSdkLib.awsDashSdkLibStrings.latest
     - java.lang.String
   */

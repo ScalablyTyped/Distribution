@@ -613,6 +613,7 @@
 | [builder-util-runtime](./b/builder-util-runtime) | HTTP utilities. Used by  | - |
 | [builtin-modules](./b/builtin-modules) | List of the Node.js builtin modules | builtin, built-in, builtins, node, modules, core, bundled, list, array, names |
 | [bull](./b/bull) | Job manager | job, queue, task, parallel |
+| [bull-arena](./b/bull-arena) | An interactive UI dashboard for Bee Queue | - |
 | [bump-regex](./b/bump-regex) | bump RegEx with semver | bump, regex, semver |
 | [bunnymq](./b/bunnymq) | BunnyMq is a RabbitMq wrapper | rabbitmq, broker, amqp, taskQueue, message, publish, subscribe |
 | [bunyan](./b/bunyan) | a JSON logging library for node.js services | log, logging, log4j, json, bunyan |
@@ -1281,6 +1282,7 @@
 | [domutils](./d/domutils) | utilities for working with htmlparser2's dom | dom, htmlparser2 |
 | [donna](./d/donna) | A CoffeeScript documentation generator. | coffeescript, doc, api |
 | [dookie](./d/dookie) | Stylus-inspired preprocessor for MongoDB data sets | mongodb, fixture, fixtures, test, data, dataset, import |
+| [dos2unix](./d/dos2unix) | A Node.js module to convert text files with DOS li | dos2unix, unix2dos, crlf, lf, carriage return, line feed, newline, new line, line endings |
 | [dot](./d/dot) | Concise and fast javascript templating compatible  | template, fast, simple, templating |
 | [dot-case](./d/dot-case) | Dot case a string | dot, case, period |
 | [dot-object](./d/dot-object) | dot-object makes it possible to transform and read | json, filter, transform, dot notation, dot |
@@ -1353,7 +1355,6 @@
 | [ecdsa-sig-formatter](./e/ecdsa-sig-formatter) | Translate ECDSA signatures between ASN.1/DER and J | ecdsa, der, asn.1, jwt, jwa, jsonwebtoken, jose |
 | [echarts](./e/echarts) | A powerful charting and visualization library for  | visualization, canvas |
 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
-| [ecol](./e/ecol) | Event Collections | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
 | [ecurve](./e/ecurve) | Elliptic curve cryptography | cryptography, crypto, bitcoin, litecoin, elliptic, curve |
 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
 | [ed2curve](./e/ed2curve) | Convert Ed25519 signing keys into Curve25519 Diffi | ed25519, curve25519, djb, crypto, public, keys, edwards, montgomery, elliptic |
@@ -4278,9 +4279,11 @@
 | [npm-packlist](./n/npm-packlist) | Get a list of the files to add from a folder into  | - |
 | [npm-paths](./n/npm-paths) | Returns an array of NPM directory paths based on t | directory, dirname, global, module, npm, package, path, paths, prefix, resolve |
 | [npm-registry-package-info](./n/npm-registry-package-info) | Get package info for one or more packages. | npm, list, info, details, show, view, url, cli, utility, utilities, utils, util, package, registry, meta, pkg, get |
+| [npm-run](./n/npm-run) | Run executables for locally-installed packages wit | npm, path, executable, .bin, run |
 | [npm-run-path](./n/npm-run-path) | Get your PATH prepended with locally installed bin | npm, run, path, package, bin, binary, binaries, script, cli, command-line, execute, executable |
 | [npm-user](./n/npm-user) | Get user info of an npm user | npm, user, username, homepage, email, get, website, scrape, info, profile |
 | [npm-user-packages](./n/npm-user-packages) | Get packages by a npm user | api, homepage, npm, packages, user, version |
+| [npm-which](./n/npm-which) | Locate a program or locally installed node module' | npm, path, executable, run |
 | [npmlog](./n/npmlog) | logger for npm | - |
 | [nprogress](./n/nprogress) | Simple slim progress bars | - |
 | [ns-api](./n/ns-api) | Public transit data from Nederlandse Spoorwegen AP | api, navigation, nl, ns, public transport, railway, traffic, trains, transit, transport, unlicense |
@@ -5750,8 +5753,6 @@
 | [safe-json-stringify](./s/safe-json-stringify) | Prevent defined property getters from throwing err | - |
 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
-| [samchon](./s/samchon) | Samchon, a OON (Object Oriented Network) Framework | samchon, framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, Entity |
-| [samchon-framework](./s/samchon-framework) | Samchon, a OON (Object Oriented Network) Framework | samchon framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, XML, Entity |
 | [saml2-js](./s/saml2-js) | SAML 2.0 node helpers | saml, node |
 | [saml20](./s/saml20) | SAML 2.0 and 1.1 token parser for Node.js | SAML 2.0, SAML 1.1, Token Parser |
 | [samlp](./s/samlp) | SAML Protocol server middleware | saml, auth |
@@ -6300,7 +6301,6 @@
 | [swipeview](./s/swipeview) | - | - |
 | [switchery](./s/switchery) | Browserify version of Switchery | switchery |
 | [swiz](./s/swiz) | Serialization and Validation Framework for objects | - |
-| [sxml](./s/sxml) | Simple XML | xml |
 | [sylvester](./s/sylvester) | node.js implementation of James Coglan's "Sylveste | matrix, vector, linear, line, algebra, matrices |
 | [sylvester-es6](./s/sylvester-es6) | Fork of the famous Sylvester vector, matrix and ge | sylvester, glutils, matrix, vector, geometry, es6 |
 | [symbol-observable](./s/symbol-observable) | Symbol.observable ponyfill | symbol, observable, observables, ponyfill, polyfill, shim |
@@ -6483,7 +6483,6 @@
 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS | cli, typescript, linter |
 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript | typescript, monad, functional |
 | [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo | promises, harmony, generators |
-| [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate | tstl, typescript stl, typescript standard template library, container, iterator, algorithm, functor, exception, functional, utility, thread, numeric, special_math, vector, deque, list, forward_list, stack, queue, priority_queue, set, multiset, unordered_set, unordered_multiset, map, multimap, unordered_map, unordered_multimap, TreeSet, TreeMultiSet, HashSet, HashMultiSet, TreeMap, TreeMultiMap, HashMap, HashMultiMap, mutex, shared_mutex, timed_mutex, shared_timed_mutex, unique_lock, shared_lock, semaphore, timed_semaphore, latch, barrier, flex_barrier |
 | [tsutils](./t/tsutils) | utilities for working with typescript's AST | typescript, ts, ast, typeguard, utils, helper, node |
 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones. | ttf, woff2, fonts |
 | [tunnel](./t/tunnel) | Node HTTP/HTTPS Agents for tunneling proxies | http, https, agent, proxy, tunnel |
@@ -6623,7 +6622,6 @@
 | [url-safe-base64](./u/url-safe-base64) | url safe base64 en- and decoding | base64, safe, url |
 | [url-search-params](./u/url-search-params) | Simple polyfill for URLSearchParams standard | DOM, URLSearchParams, polyfill, shim |
 | [url-template](./u/url-template) | This is a simple URI template implementation follo | uri-template, uri template, uri, url, rfc 6570, url template, url-template |
-| [url-variables](./u/url-variables) | URLVariables class for TypeScript | URLVariables, url, variables, encode, decode |
 | [urlencode](./u/urlencode) | encodeURIComponent with charset | urlencode, urldecode, encodeURIComponent, decodeURIComponent, querystring, parse |
 | [urllib](./u/urllib) | Help in opening URLs (mostly HTTP) in a complex wo | urllib, http, urlopen, curl, wget, request, https |
 | [urlparser](./u/urlparser) | Url parser | url, parse |
@@ -6904,6 +6902,7 @@
 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
+| [wordpress__plugins](./w/wordpress__plugins) | Plugins module for WordPress. | wordpress, plugins |
 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities. | wordpress, url |
 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz | - |
 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to sta | word, wrap, rule, format, column |

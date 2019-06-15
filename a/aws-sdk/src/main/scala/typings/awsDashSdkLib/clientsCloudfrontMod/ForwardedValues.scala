@@ -11,7 +11,7 @@ trait ForwardedValues extends js.Object {
     */
   var Cookies: CookiePreference
   /**
-    * A complex type that specifies the Headers, if any, that you want CloudFront to base caching on for this cache behavior. 
+    * A complex type that specifies the Headers, if any, that you want CloudFront to forward to the origin for this cache behavior (whitelisted headers). For the headers that you specify, CloudFront also caches separate versions of a specified object that is based on the header values in viewer requests. For more information, see  Caching Content Based on Request Headers in the Amazon CloudFront Developer Guide.
     */
   var Headers: js.UndefOr[Headers] = js.undefined
   /**

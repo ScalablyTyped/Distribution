@@ -24,6 +24,7 @@ object DropdownProps {
     clearable: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnChange: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     deburr: js.UndefOr[scala.Boolean] = js.undefined,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
@@ -101,6 +102,7 @@ object DropdownProps {
     if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable)
     if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
     if (!js.isUndefined(closeOnChange)) __obj.updateDynamic("closeOnChange")(closeOnChange)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (!js.isUndefined(deburr)) __obj.updateDynamic("deburr")(deburr)
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)

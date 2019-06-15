@@ -32,7 +32,7 @@ trait PluginContext extends MinimalPluginContext {
   def getChunkFileName(chunkReferenceId: java.lang.String): java.lang.String = js.native
   def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_HasModuleSideEffects = js.native
   /** @deprecated Use `this.resolve` instead */
-  def isExternal(source: java.lang.String, importer: java.lang.String, isResolved: scala.Boolean): scala.Boolean | scala.Unit = js.native
+  def isExternal(source: java.lang.String, importer: java.lang.String, isResolved: scala.Boolean): js.UndefOr[scala.Boolean | scala.Null] = js.native
   def parse(input: java.lang.String, options: js.Any): estreeLib.estreeMod.Program = js.native
   def resolve(source: java.lang.String, importer: java.lang.String): js.Promise[ResolvedId | scala.Null] = js.native
   def resolve(source: java.lang.String, importer: java.lang.String, options: rollupLib.Anon_SkipSelf): js.Promise[ResolvedId | scala.Null] = js.native

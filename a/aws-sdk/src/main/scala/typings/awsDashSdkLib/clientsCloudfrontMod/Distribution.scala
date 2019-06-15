@@ -15,6 +15,10 @@ trait Distribution extends js.Object {
     */
   var ActiveTrustedSigners: awsDashSdkLib.clientsCloudfrontMod.ActiveTrustedSigners
   /**
+    * AWS services in China customers must file for an Internet Content Provider (ICP) recordal if they want to serve content publicly on an alternate domain name, also known as a CNAME, that they've added to CloudFront. AliasICPRecordal provides the ICP recordal status for CNAMEs associated with distributions. For more information about ICP recordals, see  Signup, Accounts, and Credentials in Getting Started with AWS services in China.
+    */
+  var AliasICPRecordals: js.UndefOr[AliasICPRecordals] = js.undefined
+  /**
     * The current configuration information for the distribution. Send a GET request to the /CloudFront API version/distribution ID/config resource.
     */
   var DistributionConfig: awsDashSdkLib.clientsCloudfrontMod.DistributionConfig
@@ -50,10 +54,11 @@ object Distribution {
     Id: java.lang.String,
     InProgressInvalidationBatches: integer,
     LastModifiedTime: timestamp,
-    Status: java.lang.String
+    Status: java.lang.String,
+    AliasICPRecordals: AliasICPRecordals = null
   ): Distribution = {
     val __obj = js.Dynamic.literal(ARN = ARN, ActiveTrustedSigners = ActiveTrustedSigners, DistributionConfig = DistributionConfig, DomainName = DomainName, Id = Id, InProgressInvalidationBatches = InProgressInvalidationBatches, LastModifiedTime = LastModifiedTime, Status = Status)
-  
+    if (AliasICPRecordals != null) __obj.updateDynamic("AliasICPRecordals")(AliasICPRecordals)
     __obj.asInstanceOf[Distribution]
   }
 }

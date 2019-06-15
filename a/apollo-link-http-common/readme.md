@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-link-http-common
 
-Typings are for version 0.2.13
+Typings are for version 0.2.14
 
 ## Library description:
 Http utilities for Apollo Link shared across all links using http

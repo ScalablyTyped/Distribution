@@ -35,7 +35,7 @@ trait Recipe extends js.Object {
     */
   var recipeArn: js.UndefOr[Arn] = js.undefined
   /**
-    * One of the following values:   SEARCH_PERSONALIZATION   RELATED_ITEMS   USER_PERSONALIZATION  
+    * One of the following values:   PERSONALIZED_RANKING   RELATED_ITEMS   USER_PERSONALIZATION  
     */
   var recipeType: js.UndefOr[RecipeType] = js.undefined
   /**

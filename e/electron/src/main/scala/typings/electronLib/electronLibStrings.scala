@@ -94,6 +94,9 @@ object electronLibStrings {
   sealed trait `app-workspace` extends js.Object
   
   @js.native
+  sealed trait appMenu extends js.Object
+  
+  @js.native
   sealed trait `appearance-based` extends js.Object
   
   @js.native
@@ -463,6 +466,9 @@ object electronLibStrings {
   sealed trait durationchange extends js.Object
   
   @js.native
+  sealed trait editMenu extends js.Object
+  
+  @js.native
   sealed trait electron extends js.Object
   
   @js.native
@@ -500,6 +506,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait file extends js.Object
+  
+  @js.native
+  sealed trait fileMenu extends js.Object
   
   @js.native
   sealed trait `find-highlight` extends js.Object
@@ -1396,6 +1405,9 @@ object electronLibStrings {
   sealed trait video extends js.Object
   
   @js.native
+  sealed trait viewMenu extends js.Object
+  
+  @js.native
   sealed trait volumechange extends js.Object
   
   @js.native
@@ -1457,6 +1469,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `window-text` extends js.Object
+  
+  @js.native
+  sealed trait windowMenu extends js.Object
   
   @js.native
   sealed trait yellow extends js.Object
@@ -1528,6 +1543,8 @@ object electronLibStrings {
   def `app-command`: `app-command` = "app-command".asInstanceOf[`app-command`]
   @scala.inline
   def `app-workspace`: `app-workspace` = "app-workspace".asInstanceOf[`app-workspace`]
+  @scala.inline
+  def appMenu: appMenu = "appMenu".asInstanceOf[appMenu]
   @scala.inline
   def `appearance-based`: `appearance-based` = "appearance-based".asInstanceOf[`appearance-based`]
   @scala.inline
@@ -1775,6 +1792,8 @@ object electronLibStrings {
   @scala.inline
   def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
   @scala.inline
+  def editMenu: editMenu = "editMenu".asInstanceOf[editMenu]
+  @scala.inline
   def electron: electron = "electron".asInstanceOf[electron]
   @scala.inline
   def emptied: emptied = "emptied".asInstanceOf[emptied]
@@ -1800,6 +1819,8 @@ object electronLibStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
+  def fileMenu: fileMenu = "fileMenu".asInstanceOf[fileMenu]
   @scala.inline
   def `find-highlight`: `find-highlight` = "find-highlight".asInstanceOf[`find-highlight`]
   @scala.inline
@@ -2397,6 +2418,8 @@ object electronLibStrings {
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
+  def viewMenu: viewMenu = "viewMenu".asInstanceOf[viewMenu]
+  @scala.inline
   def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
@@ -2438,6 +2461,8 @@ object electronLibStrings {
   def `window-frame-text`: `window-frame-text` = "window-frame-text".asInstanceOf[`window-frame-text`]
   @scala.inline
   def `window-text`: `window-text` = "window-text".asInstanceOf[`window-text`]
+  @scala.inline
+  def windowMenu: windowMenu = "windowMenu".asInstanceOf[windowMenu]
   @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for typesafe-actions
 
-Typings are for version 4.4.0
+Typings are for version 4.4.1
 
 ## Library description:
 Typesafe Action Creators for Redux / Flux Architectures (in TypeScript)

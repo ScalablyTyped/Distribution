@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetDistributionConfigRequest extends js.Object {
   /**
-    * The distribution's ID.
+    * The distribution's ID. If the ID is empty, an empty distribution configuration is returned.
     */
   var Id: java.lang.String
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait QueryStringCacheKeys extends js.Object {
   /**
-    * (Optional) A list that contains the query string parameters that you want CloudFront to use as a basis for caching for this cache behavior. If Quantity is 0, you can omit Items. 
+    * A list that contains the query string parameters that you want CloudFront to use as a basis for caching for a cache behavior. If Quantity is 0, you can omit Items. 
     */
   var Items: js.UndefOr[QueryStringCacheKeysList] = js.undefined
   /**
-    * The number of whitelisted query string parameters for this cache behavior.
+    * The number of whitelisted query string parameters for a cache behavior.
     */
   var Quantity: integer
 }

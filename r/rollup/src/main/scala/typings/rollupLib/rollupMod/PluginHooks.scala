@@ -39,26 +39,30 @@ trait PluginHooks extends js.Object {
   def ongenerate(`this`: PluginContext, options: OnGenerateOptions, chunk: OutputChunk): scala.Unit | js.Promise[scala.Unit] = js.native
   /** @deprecated Use `writeBundle` instead */
   def onwrite(`this`: PluginContext, options: OnWriteOptions, chunk: OutputChunk): scala.Unit | js.Promise[scala.Unit] = js.native
-  def options(`this`: MinimalPluginContext, options: InputOptions): InputOptions | scala.Unit | scala.Null = js.native
-  def outputOptions(`this`: PluginContext, options: OutputOptions): OutputOptions | scala.Unit | scala.Null = js.native
+  def options(`this`: MinimalPluginContext, options: InputOptions): js.UndefOr[InputOptions | scala.Null] = js.native
+  def outputOptions(`this`: PluginContext, options: OutputOptions): js.UndefOr[OutputOptions | scala.Null] = js.native
   def renderChunk(`this`: PluginContext, code: java.lang.String, chunk: RenderedChunk, options: OutputOptions): (js.Promise[rollupLib.Anon_Code | scala.Null]) | rollupLib.Anon_Code | java.lang.String | scala.Null = js.native
   def renderError(`this`: PluginContext): js.Promise[scala.Unit] | scala.Unit = js.native
   def renderError(`this`: PluginContext, err: stdLib.Error): js.Promise[scala.Unit] | scala.Unit = js.native
   def renderStart(`this`: PluginContext): js.Promise[scala.Unit] | scala.Unit = js.native
   /** @deprecated Use `resolveFileUrl` instead */
-  def resolveAssetUrl(`this`: PluginContext, options: rollupLib.Anon_AssetFileName): java.lang.String | scala.Unit = js.native
+  def resolveAssetUrl(`this`: PluginContext, options: rollupLib.Anon_AssetFileName): js.UndefOr[java.lang.String | scala.Null] = js.native
   def resolveDynamicImport(`this`: PluginContext, specifier: estreeLib.estreeMod.Node, importer: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveDynamicImport(`this`: PluginContext, specifier: java.lang.String, importer: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveFileUrl(`this`: PluginContext, options: rollupLib.Anon_AssetReferenceId): java.lang.String | scala.Unit = js.native
+  def resolveFileUrl(`this`: PluginContext, options: rollupLib.Anon_AssetReferenceId): js.UndefOr[java.lang.String | scala.Null] = js.native
   def resolveId(`this`: PluginContext, source: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveId(`this`: PluginContext, source: java.lang.String, importer: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveImportMeta(`this`: PluginContext, prop: java.lang.String, options: rollupLib.Anon_ChunkId): java.lang.String | scala.Unit = js.native
-  def resolveImportMeta(`this`: PluginContext, prop: scala.Null, options: rollupLib.Anon_ChunkId): java.lang.String | scala.Unit = js.native
+  def resolveImportMeta(`this`: PluginContext, prop: java.lang.String, options: rollupLib.Anon_ChunkId): js.UndefOr[java.lang.String | scala.Null] = js.native
+  def resolveImportMeta(`this`: PluginContext, prop: scala.Null, options: rollupLib.Anon_ChunkId): js.UndefOr[java.lang.String | scala.Null] = js.native
   def transform(`this`: PluginContext, code: java.lang.String, id: java.lang.String): js.Promise[TransformResult] | TransformResult = js.native
   /** @deprecated Use `renderChunk` instead */
-  def transformBundle(`this`: PluginContext, code: java.lang.String, options: OutputOptions): (js.Promise[rollupLib.Anon_Code | scala.Unit]) | rollupLib.Anon_Code | scala.Unit | scala.Null = js.native
+  def transformBundle(`this`: PluginContext, code: java.lang.String, options: OutputOptions): js.UndefOr[
+    (js.Promise[js.UndefOr[rollupLib.Anon_Code | scala.Null]]) | rollupLib.Anon_Code | scala.Null
+  ] = js.native
   /** @deprecated Use `renderChunk` instead */
-  def transformChunk(`this`: PluginContext, code: java.lang.String, options: OutputOptions): (js.Promise[rollupLib.Anon_Code | scala.Unit]) | rollupLib.Anon_Code | scala.Unit | scala.Null = js.native
+  def transformChunk(`this`: PluginContext, code: java.lang.String, options: OutputOptions): js.UndefOr[
+    (js.Promise[js.UndefOr[rollupLib.Anon_Code | scala.Null]]) | rollupLib.Anon_Code | scala.Null
+  ] = js.native
   def watchChange(id: java.lang.String): scala.Unit = js.native
   def writeBundle(`this`: PluginContext, bundle: OutputBundle): scala.Unit | js.Promise[scala.Unit] = js.native
 }

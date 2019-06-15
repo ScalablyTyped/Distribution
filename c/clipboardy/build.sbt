@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clipboardy"
-version := "2.0.0-84f9ad"
+version := "2.1.0-84f9ad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
