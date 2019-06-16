@@ -1,7 +1,7 @@
 
 # Scala.js typings for wallpaper
 
-Typings are for version 4.4.0
+Typings are for version 4.4.1
 
 ## Library description:
 Manage the desktop wallpaper

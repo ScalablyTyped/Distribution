@@ -29,8 +29,8 @@ object ^ extends js.Object {
   	//=> 2
   	```
   	*/
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType /* <: js.Any */, CacheKeyType /* <: js.Any */](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType /* <: js.Any */, CacheKeyType /* <: js.Any */](
+  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
+  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType](
     fn: js.Function1[/* arguments */ ArgumentsType, ReturnType],
     options: Options[ArgumentsType, CacheKeyType, ReturnType]
   ): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
@@ -38,6 +38,6 @@ object ^ extends js.Object {
   	Clear all cached data of a memoized function.
   	@param fn - Memoized function.
   	*/
-  def clear[ArgumentsType /* <: js.Array[_] */, ReturnType /* <: js.Any */](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): scala.Unit = js.native
+  def clear[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): scala.Unit = js.native
 }
 

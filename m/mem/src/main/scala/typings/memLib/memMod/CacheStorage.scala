@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CacheStorage[KeyType /* <: js.Any */, ValueType /* <: js.Any */] extends js.Object {
+trait CacheStorage[KeyType, ValueType] extends js.Object {
   var clear: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   def delete(key: KeyType): scala.Unit
   def get(key: KeyType): js.UndefOr[ValueType]
@@ -15,7 +15,7 @@ trait CacheStorage[KeyType /* <: js.Any */, ValueType /* <: js.Any */] extends j
 
 object CacheStorage {
   @scala.inline
-  def apply[KeyType /* <: js.Any */, ValueType /* <: js.Any */](
+  def apply[KeyType, ValueType](
     delete: KeyType => scala.Unit,
     get: KeyType => js.UndefOr[ValueType],
     has: KeyType => scala.Boolean,

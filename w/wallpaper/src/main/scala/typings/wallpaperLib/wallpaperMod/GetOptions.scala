@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait GetOptions extends js.Object {
   /**
   		__macOS only.__
-  		The screen to get the wallpaper from. Values: `all` `main` or the index of a screen from `.screens()`.
+  		The screen to get the wallpaper from.
+  		Values: `all`, `main`, or the index of a screen from `.screens()`.
   		@default 'main'
   		*/
   val screen: js.UndefOr[

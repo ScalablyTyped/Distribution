@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options[ArgumentsType /* <: js.Array[_] */, CacheKeyType /* <: js.Any */, ReturnType /* <: js.Any */] extends js.Object {
+trait Options[ArgumentsType /* <: js.Array[_] */, CacheKeyType, ReturnType] extends js.Object {
   /**
   		Use a different cache storage. You could for example use a `WeakMap` instead or [`quick-lru`](https://github.com/sindresorhus/quick-lru) for a LRU cache.
   		@default new Map()
@@ -30,7 +30,7 @@ trait Options[ArgumentsType /* <: js.Array[_] */, CacheKeyType /* <: js.Any */, 
 
 object Options {
   @scala.inline
-  def apply[ArgumentsType /* <: js.Array[_] */, CacheKeyType /* <: js.Any */, ReturnType /* <: js.Any */](
+  def apply[ArgumentsType /* <: js.Array[_] */, CacheKeyType, ReturnType](
     cache: CacheStorage[CacheKeyType, memLib.Anon_Data[ReturnType]] = null,
     cacheKey: /* arguments */ ArgumentsType => CacheKeyType = null,
     cachePromiseRejection: js.UndefOr[scala.Boolean] = js.undefined,

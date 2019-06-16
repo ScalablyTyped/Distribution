@@ -16,7 +16,8 @@ trait SetOptions extends js.Object {
   ] = js.undefined
   /**
   		__macOS only.__
-  		The screen to set the wallpaper on. Values: `all` `main` or the index of a screen from `.screens()`.
+  		The screen to set the wallpaper on.
+  		Values: `all`, `main`, or the index of a screen from `.screens()`.
   		*On Linux and Windows it's hard-coded to `main`.*
   		@default 'all'
   		*/
