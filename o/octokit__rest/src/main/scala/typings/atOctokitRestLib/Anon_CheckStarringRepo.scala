@@ -13,7 +13,7 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("checkStarringRepo")
   var checkStarringRepo_Original: Anon_EndpointParamsActivityCheckStarringRepoParams = js.native
   /**
-    * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](#set-a-repository-subscription).
+    * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://developer.github.com/v3/activity/watching/#set-a-repository-subscription).
     */
   @JSName("deleteRepoSubscription")
   var deleteRepoSubscription_Original: Anon_EndpointParamsActivityDeleteRepoSubscriptionParams = js.native
@@ -124,7 +124,7 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("markThreadAsRead")
   var markThreadAsRead_Original: Anon_EndpointParamsActivityMarkThreadAsReadParams = js.native
   /**
-    * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](#delete-a-repository-subscription) completely.
+    * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://developer.github.com/v3/activity/watching/#delete-a-repository-subscription) completely.
     */
   @JSName("setRepoSubscription")
   var setRepoSubscription_Original: Anon_EndpointParamsActivitySetRepoSubscriptionParams = js.native
@@ -151,7 +151,7 @@ trait Anon_CheckStarringRepo extends js.Object {
   def checkStarringRepo(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def checkStarringRepo(params: atOctokitRestLib.atOctokitRestMod.ActivityCheckStarringRepoParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](#set-a-repository-subscription).
+    * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://developer.github.com/v3/activity/watching/#set-a-repository-subscription).
     */
   def deleteRepoSubscription(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityDeleteRepoSubscriptionResponse]
@@ -334,7 +334,7 @@ trait Anon_CheckStarringRepo extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityMarkThreadAsReadResponse]
   ] = js.native
   /**
-    * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](#delete-a-repository-subscription) completely.
+    * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://developer.github.com/v3/activity/watching/#delete-a-repository-subscription) completely.
     */
   def setRepoSubscription(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivitySetRepoSubscriptionResponse]

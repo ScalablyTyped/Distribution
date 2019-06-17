@@ -450,6 +450,7 @@ object jestNs extends js.Object {
     var runner: js.UndefOr[java.lang.String] = js.undefined
     var scriptPreprocessor: js.UndefOr[java.lang.String] = js.undefined
     var setupFiles: js.UndefOr[js.Array[Path]] = js.undefined
+    var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.undefined
     var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.undefined
     var silent: js.UndefOr[scala.Boolean] = js.undefined
     var skipFilter: js.UndefOr[scala.Boolean] = js.undefined

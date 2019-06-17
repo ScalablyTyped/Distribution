@@ -14,6 +14,10 @@ object promptsLibStrings {
     extends promptsLib.promptsMod.PromptType
   
   @js.native
+  sealed trait autocompleteMultiselect
+    extends promptsLib.promptsMod.PromptType
+  
+  @js.native
   sealed trait confirm
     extends promptsLib.promptsMod.PromptType
   
@@ -57,6 +61,8 @@ object promptsLibStrings {
   def Answers: Answers = "Answers".asInstanceOf[Answers]
   @scala.inline
   def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
+  @scala.inline
+  def autocompleteMultiselect: autocompleteMultiselect = "autocompleteMultiselect".asInstanceOf[autocompleteMultiselect]
   @scala.inline
   def confirm: confirm = "confirm".asInstanceOf[confirm]
   @scala.inline

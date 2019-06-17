@@ -19,6 +19,10 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
+    * The list of logs that the restored DB cluster is to export to CloudWatch Logs.
+    */
+  var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
+  /**
     * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
@@ -39,7 +43,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var RestoreToTime: js.UndefOr[TStamp] = js.undefined
   /**
-    * The type of restore to be performed. The only type of restore currently supported is full-copy (the default).
+    * The type of restore to be performed. You can specify one of the following values:    full-copy - The new DB cluster is restored as a full copy of the source DB cluster.    copy-on-write - The new DB cluster is restored as a clone of the source DB cluster.   If you don't specify a RestoreType value, then the new DB cluster is restored as a full copy of the source DB cluster.
     */
   var RestoreType: js.UndefOr[String] = js.undefined
   /**
@@ -67,6 +71,7 @@ object RestoreDBClusterToPointInTimeMessage {
     SourceDBClusterIdentifier: String,
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
+    EnableCloudwatchLogsExports: LogTypeList = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     KmsKeyId: String = null,
     OptionGroupName: String = null,
@@ -80,6 +85,7 @@ object RestoreDBClusterToPointInTimeMessage {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, SourceDBClusterIdentifier = SourceDBClusterIdentifier)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
+    if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName)

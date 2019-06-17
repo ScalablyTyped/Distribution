@@ -67,7 +67,7 @@ trait MockOptions extends js.Object {
     */
   var response: js.UndefOr[MockResponse | MockResponseFunction] = js.undefined
   /**
-    * Convert objects into JSON before delivering as stub reponses. Can
+    * Convert objects into JSON before delivering as stub responses. Can
     * be useful to set to false globally if e.g. dealing with a lot of
     * array buffers. If true, will also add content-type: application/json
     * header.

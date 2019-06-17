@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "1.1-dt-20181019Z-39cca0"
+version := "1.1-dt-20181019Z-f0cdb3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-375ab8",
   "org.scalablytyped" %%% "cookie" % "0.3-dt-20190524Z-098511",
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "next" % "8.0-dt-20190501Z-cc89cc",
+  "org.scalablytyped" %%% "next" % "8.0-dt-20190501Z-0e8ed3",
   "org.scalablytyped" %%% "next-server" % "8.1-dt-20190501Z-d8e2e6",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190612Z-5b58f0",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190616Z-6c6210",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-30bdb3",

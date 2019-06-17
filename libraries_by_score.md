@@ -1372,6 +1372,7 @@
 | 0.7482961243576062 | [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti
 | 0.748295614581576 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 0.7482908115543735 | [p-waterfall](./p/p-waterfall) | Run promise-returning & async functions in series,
+| 0.7482784567629094 | [level-js](./l/level-js) | An abstract-leveldown compliant store on top of In
 | 0.7480765187176996 | [countup_dot_js](./c/countup_dot_js) | Animates a numerical value by counting to it
 | 0.747970428663123 | [blueprintjs__timezone](./b/blueprintjs__timezone) | Components related to timezone selection and UI
 | 0.7477216048908453 | [lodash_dot_before](./l/lodash_dot_before) | The lodash method _.before exported as a module.
@@ -5233,8 +5234,10 @@
 | 0.4086602878611604 | [fluxxor](./f/fluxxor) | Flux architecture tools for React
 | 0.4083827976591474 | [roslib](./r/roslib) | The standard ROS Javascript Library
 | 0.40832651741183834 | [kuromoji](./k/kuromoji) | JavaScript implementation of Japanese morphologica
+| 0.40803082253740963 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP
 | 0.4079400724397526 | [passport-remember-me-exte](./p/passport-remember-me-extended) | Remember Me cookie authentication strategy for Pas
 | 0.40786560602631194 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly
+| 0.4077413230669079 | [baseui](./b/baseui) | A React Component library implementing the Base de
 | 0.40747024603271803 | [find-down](./f/find-down) | Find a file by walking down parent directories.
 | 0.4073715083311573 | [amplifier](./a/amplifier) | Use the awesome AmplifyJs v1.1.2 library as a Node
 | 0.40736863957346103 | [eq_dot_js](./e/eq_dot_js) | Element queries, fast and light
@@ -6257,6 +6260,7 @@
 | 0.21814263969541753 | [git-rev](./g/git-rev) | get the current git commit hash, tag or branch in 
 | 0.2181148622534853 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
 | 0.21778634452106732 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
+| 0.21721272058069163 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs).
 | 0.21660068750819997 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin
 | 0.21657662711177622 | [react-material-ui-form-va](./r/react-material-ui-form-validator) | Simple validator for forms designed with material-
 | 0.21605075426888742 | [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook

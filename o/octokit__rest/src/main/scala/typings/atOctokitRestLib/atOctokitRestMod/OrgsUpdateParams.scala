@@ -49,7 +49,7 @@ trait OrgsUpdateParams extends js.Object {
     * \* `all` - all organization members can create public and private repositories.
     * \* `private` - members can create private repositories. This option is only available to repositories that are part of an organization on [GitHub Business Cloud](https://github.com/pricing/business-cloud).
     * \* `none` - only admin members can create repositories.
-    * **Note:** Using this parameter will override values set in `members_can_create_repositories`. See [this note](#members_can_create_repositories) for details.
+    * **Note:** Using this parameter will override values set in `members_can_create_repositories`. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details.
     */
   var members_allowed_repository_creation_type: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.all | atOctokitRestLib.atOctokitRestLibStrings.`private` | atOctokitRestLib.atOctokitRestLibStrings.none
@@ -59,7 +59,7 @@ trait OrgsUpdateParams extends js.Object {
     * \* `true` - all organization members can create repositories.
     * \* `false` - only admin members can create repositories.
     * Default: `true`
-    * **Note:** Another parameter can override the this parameter. See [this note](#members_can_create_repositories) for details. **Note:** Another parameter can override the this parameter. See [this note](#members_can_create_repositories) for details.
+    * **Note:** Another parameter can override the this parameter. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details. **Note:** Another parameter can override the this parameter. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details.
     */
   var members_can_create_repositories: js.UndefOr[scala.Boolean] = js.undefined
   /**

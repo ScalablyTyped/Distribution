@@ -57,10 +57,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def delete(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def delete(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def delete(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodDelete): this.type = js.native
-  def delete(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodDelete): this.type = js.native
+  def delete(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def delete(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def delete(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodDelete): this.type = js.native
+  def delete(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodDelete): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -71,10 +71,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def deleteOnce(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def deleteOnce(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def deleteOnce(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodDelete): this.type = js.native
-  def deleteOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodDelete): this.type = js.native
+  def deleteOnce(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def deleteOnce(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def deleteOnce(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodDelete): this.type = js.native
+  def deleteOnce(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodDelete): this.type = js.native
   /**
     * Returns a Boolean indicating whether fetch was called the expected
     * number of times (or has been called at least once if repeat is
@@ -100,10 +100,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def get(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def get(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def get(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodGet): this.type = js.native
-  def get(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodGet): this.type = js.native
+  def get(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def get(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def get(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodGet): this.type = js.native
+  def get(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodGet): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -114,10 +114,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def getOnce(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def getOnce(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def getOnce(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodGet): this.type = js.native
-  def getOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodGet): this.type = js.native
+  def getOnce(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def getOnce(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def getOnce(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodGet): this.type = js.native
+  def getOnce(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodGet): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -127,10 +127,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def head(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def head(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def head(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
-  def head(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodHead): this.type = js.native
+  def head(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def head(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def head(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
+  def head(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodHead): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -141,10 +141,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def headOnce(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def headOnce(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def headOnce(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
-  def headOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodHead): this.type = js.native
+  def headOnce(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def headOnce(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def headOnce(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
+  def headOnce(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodHead): this.type = js.native
   /**
     * Returns the arguments for the last call to fetch matching the given
     * filter.
@@ -224,10 +224,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def patch(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def patch(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def patch(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
-  def patch(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodHead): this.type = js.native
+  def patch(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def patch(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def patch(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
+  def patch(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodHead): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -238,10 +238,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def patchOnce(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def patchOnce(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def patchOnce(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
-  def patchOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodHead): this.type = js.native
+  def patchOnce(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def patchOnce(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def patchOnce(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodHead): this.type = js.native
+  def patchOnce(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodHead): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -251,10 +251,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def post(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def post(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def post(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodPost): this.type = js.native
-  def post(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodPost): this.type = js.native
+  def post(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def post(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def post(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodPost): this.type = js.native
+  def post(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodPost): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -265,10 +265,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def postOnce(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def postOnce(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def postOnce(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodPost): this.type = js.native
-  def postOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodPost): this.type = js.native
+  def postOnce(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def postOnce(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def postOnce(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodPost): this.type = js.native
+  def postOnce(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodPost): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -278,10 +278,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def put(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def put(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def put(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodPut): this.type = js.native
-  def put(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodPut): this.type = js.native
+  def put(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def put(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def put(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodPut): this.type = js.native
+  def put(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodPut): this.type = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the
@@ -292,10 +292,10 @@ trait FetchMockStatic extends js.Object {
     * @param response Configures the http response returned by the mock
     * @param [options] Additional properties defining the route to mock
     */
-  def putOnce(matcher: MockMatcher, reponse: MockResponse): this.type = js.native
-  def putOnce(matcher: MockMatcher, reponse: MockResponseFunction): this.type = js.native
-  def putOnce(matcher: MockMatcher, reponse: MockResponseFunction, options: MockOptionsMethodPut): this.type = js.native
-  def putOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodPut): this.type = js.native
+  def putOnce(matcher: MockMatcher, response: MockResponse): this.type = js.native
+  def putOnce(matcher: MockMatcher, response: MockResponseFunction): this.type = js.native
+  def putOnce(matcher: MockMatcher, response: MockResponseFunction, options: MockOptionsMethodPut): this.type = js.native
+  def putOnce(matcher: MockMatcher, response: MockResponse, options: MockOptionsMethodPut): this.type = js.native
   /**
     * Restores fetch() to its unstubbed state and clears all data recorded
     * for its calls. reset() is an alias for restore().

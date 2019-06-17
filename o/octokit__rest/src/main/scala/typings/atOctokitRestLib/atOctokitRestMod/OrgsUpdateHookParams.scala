@@ -11,7 +11,7 @@ trait OrgsUpdateHookParams extends js.Object {
     */
   var active: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Key/value pairs to provide settings for this webhook. [These are defined below](#update-hook-config-params).
+    * Key/value pairs to provide settings for this webhook. [These are defined below](https://developer.github.com/v3/orgs/hooks/#update-hook-config-params).
     */
   var config: js.UndefOr[OrgsUpdateHookParamsConfig] = js.undefined
   /**

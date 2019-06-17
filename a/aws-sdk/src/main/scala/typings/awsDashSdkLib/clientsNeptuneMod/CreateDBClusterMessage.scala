@@ -35,6 +35,10 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
+    * The list of log types that need to be enabled for exporting to CloudWatch Logs.
+    */
+  var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
+  /**
     * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
@@ -107,6 +111,7 @@ object CreateDBClusterMessage {
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
+    EnableCloudwatchLogsExports: LogTypeList = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     EngineVersion: String = null,
     KmsKeyId: String = null,
@@ -129,6 +134,7 @@ object CreateDBClusterMessage {
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName)
+    if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)

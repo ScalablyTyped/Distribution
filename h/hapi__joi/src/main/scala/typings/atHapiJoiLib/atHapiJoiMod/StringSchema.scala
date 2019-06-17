@@ -28,6 +28,11 @@ trait StringSchema extends AnySchema {
   def dataUri(): this.type = js.native
   def dataUri(options: DataUriOptions): this.type = js.native
   /**
+    * Requires the string value to be a valid domain.
+    */
+  def domain(): this.type = js.native
+  def domain(options: DomainOptions): this.type = js.native
+  /**
     * Requires the string value to be a valid email address.
     */
   def email(): this.type = js.native

@@ -147,6 +147,7 @@ object ^ extends js.Object {
     * The tag must only include letters, numbers, and underscores and be 100 characters or less in length.
     * @param switchContextWhenMatched Optional extra parameter that specifies whether the player should be immediately switched to the new context when a match is found.
     * By default this will be false which will mean the player needs explicitly press play after being matched to switch to the new context.
+    * @param offlineMatch Optional extra parameter that specifies whether to start a match asynchronously. By default this will be false which means the game will start a match synchronously.
     * @returns A promise that resolves when the player has been added to a group thread and switched into the thread's context.
     * @throws INVALID_PARAM
     * @throws NETWORK_FAILURE
@@ -158,11 +159,21 @@ object ^ extends js.Object {
   def matchPlayerAsync(): js.Promise[scala.Unit] = js.native
   def matchPlayerAsync(matchTag: java.lang.String): js.Promise[scala.Unit] = js.native
   def matchPlayerAsync(matchTag: java.lang.String, switchContextWhenMatched: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def matchPlayerAsync(matchTag: java.lang.String, switchContextWhenMatched: scala.Boolean, offlineMatch: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
     * Set a callback to be fired when a pause event is triggered.
     * @param func A function to call when a pause event occurs.
     */
   def onPause(func: js.Function0[scala.Unit]): scala.Unit = js.native
+  /**
+    * Posts the player's best score for the session to Facebook.
+    * This API should be called whenever the player achieves their best score in a session, preferably at the end of an activity
+    * Scores posted using this API should be consistent & comparable across game sessions.
+    *
+    * @param score An integer value representing the player's best score in a session.
+    * @returns void
+    */
+  def postSessionScore(score: scala.Double): scala.Unit = js.native
   /**
     * Quits the game.
     */

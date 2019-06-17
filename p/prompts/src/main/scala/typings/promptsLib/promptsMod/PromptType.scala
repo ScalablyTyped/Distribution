@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   - promptsLib.promptsLibStrings.multiselect
   - promptsLib.promptsLibStrings.autocomplete
   - promptsLib.promptsLibStrings.date
+  - promptsLib.promptsLibStrings.autocompleteMultiselect
 */
 trait PromptType extends js.Object
 

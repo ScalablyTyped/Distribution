@@ -10,11 +10,19 @@ import scala.scalajs.js.annotation._
 class StreetViewService () extends js.Object {
   def getPanorama(
     request: StreetViewLocationRequest,
-    cb: js.Function2[/* data */ StreetViewPanoramaData, /* status */ StreetViewStatus, scala.Unit]
+    cb: js.Function2[
+      /* data */ StreetViewPanoramaData | scala.Null, 
+      /* status */ StreetViewStatus, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def getPanorama(
     request: StreetViewPanoRequest,
-    cb: js.Function2[/* data */ StreetViewPanoramaData, /* status */ StreetViewStatus, scala.Unit]
+    cb: js.Function2[
+      /* data */ StreetViewPanoramaData | scala.Null, 
+      /* status */ StreetViewStatus, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def getPanoramaById(
     pano: java.lang.String,

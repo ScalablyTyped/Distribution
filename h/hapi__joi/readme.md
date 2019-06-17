@@ -54,6 +54,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Simon Schick <https://github.com/SimonSchick>
 //                 Alejandro Fernandez Haro <https://github.com/afharo>
 //                 Silas Rech <https://github.com/lenovouser>
+//                 Anand Chowdhary <https://github.com/AnandChowdhary>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 // TODO express type of Schema in a type-parameter (.default, .valid, .example etc)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-timeago"
-version := "4.1-dt-20181002Z-36362e"
+version := "4.1-dt-20190616Z-0978e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,6 +12,7 @@ class FluentBundle protected () extends js.Object {
   def this(locales: js.Array[java.lang.String]) = this()
   def this(locales: java.lang.String, options: FluentBundleContructorOptions) = this()
   def this(locales: js.Array[java.lang.String], options: FluentBundleContructorOptions) = this()
+  var locales: js.Array[java.lang.String] = js.native
   var messages: stdLib.IterableIterator[js.Tuple2[java.lang.String, js.Array[FluentNode]]] = js.native
   def addMessages(source: java.lang.String): js.Array[java.lang.String] = js.native
   def addResource(res: FluentResource): js.Array[java.lang.String] = js.native

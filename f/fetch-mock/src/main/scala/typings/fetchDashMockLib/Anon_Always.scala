@@ -74,7 +74,7 @@ trait Anon_Always extends js.Object {
     */
   var overwriteRoutes: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Convert objects into JSON before delivering as stub reponses.
+    * Convert objects into JSON before delivering as stub responses.
     * Can be useful to set to false globally if e.g. dealing with a
     * lot of array buffers. If true, will also add
     * content-type: application/json header.

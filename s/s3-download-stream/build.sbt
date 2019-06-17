@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "s3-download-stream"
-version := "0.1-dt-20180214Z-f8ea47"
+version := "0.1-dt-20180214Z-ac76d5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.476.0-8cd2fc",
+  "org.scalablytyped" %%% "aws-sdk" % "2.477.0-95c9d2",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false

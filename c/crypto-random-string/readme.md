@@ -1,7 +1,7 @@
 
 # Scala.js typings for crypto-random-string
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Generate a cryptographically strong random string

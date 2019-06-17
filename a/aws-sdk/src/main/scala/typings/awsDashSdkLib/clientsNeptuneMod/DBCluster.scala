@@ -71,6 +71,10 @@ trait DBCluster extends js.Object {
     */
   var EarliestRestorableTime: js.UndefOr[TStamp] = js.undefined
   /**
+    * A list of log types that this DB cluster is configured to export to CloudWatch Logs.
+    */
+  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
+  /**
     * Specifies the connection endpoint for the primary instance of the DB cluster.
     */
   var Endpoint: js.UndefOr[String] = js.undefined
@@ -167,6 +171,7 @@ object DBCluster {
     DatabaseName: String = null,
     DbClusterResourceId: String = null,
     EarliestRestorableTime: TStamp = null,
+    EnabledCloudwatchLogsExports: LogTypeList = null,
     Endpoint: String = null,
     Engine: String = null,
     EngineVersion: String = null,
@@ -204,6 +209,7 @@ object DBCluster {
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName)
     if (DbClusterResourceId != null) __obj.updateDynamic("DbClusterResourceId")(DbClusterResourceId)
     if (EarliestRestorableTime != null) __obj.updateDynamic("EarliestRestorableTime")(EarliestRestorableTime)
+    if (EnabledCloudwatchLogsExports != null) __obj.updateDynamic("EnabledCloudwatchLogsExports")(EnabledCloudwatchLogsExports)
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint)
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)

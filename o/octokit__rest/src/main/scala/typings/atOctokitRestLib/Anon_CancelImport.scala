@@ -13,7 +13,7 @@ trait Anon_CancelImport extends js.Object {
   @JSName("cancelImport")
   var cancelImport_Original: Anon_EndpointParamsMigrationsCancelImportParams = js.native
   /**
-    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](#get-a-list-of-user-migrations) and [Get the status of a user migration](#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
+    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](https://developer.github.com/v3/migrations/users/#get-a-list-of-user-migrations) and [Get the status of a user migration](https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
     */
   @JSName("deleteArchiveForAuthenticatedUser")
   var deleteArchiveForAuthenticatedUser_Original: Anon_EndpointParamsMigrationsDeleteArchiveForAuthenticatedUserParams = js.native
@@ -76,11 +76,11 @@ trait Anon_CancelImport extends js.Object {
     *
     * If there are problems, you will see one of these in the `status` field:
     *
-    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update Existing Import](#update-existing-import) section.
+    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
     * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://github.com/contact) for more information.
-    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update Existing Import](#update-existing-import) section.
-    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](#cancel-an-import) and [retry](#start-an-import) with the correct URL.
-    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update Existing Import](#update-existing-import) section.
+    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
+    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://developer.github.com/v3/migrations/source_imports/#cancel-an-import) and [retry](https://developer.github.com/v3/migrations/source_imports/#start-an-import) with the correct URL.
+    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
     *
     * **The project_choices field**
     *
@@ -110,7 +110,7 @@ trait Anon_CancelImport extends js.Object {
     * *   `exported` - the migration finished successfully.
     * *   `failed` - the migration failed.
     *
-    * Once the migration has been `exported` you can [download the migration archive](#download-a-user-migration-archive).
+    * Once the migration has been `exported` you can [download the migration archive](https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive).
     */
   @JSName("getStatusForAuthenticatedUser")
   var getStatusForAuthenticatedUser_Original: Anon_EndpointParamsMigrationsGetStatusForAuthenticatedUserParams = js.native
@@ -162,7 +162,7 @@ trait Anon_CancelImport extends js.Object {
   @JSName("startImport")
   var startImport_Original: Anon_EndpointParamsMigrationsStartImportParams = js.native
   /**
-    * Unlocks a repository. You can lock repositories when you [start a user migration](#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
+    * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   @JSName("unlockRepoForAuthenticatedUser")
   var unlockRepoForAuthenticatedUser_Original: Anon_EndpointParamsMigrationsUnlockRepoForAuthenticatedUserParams = js.native
@@ -192,7 +192,7 @@ trait Anon_CancelImport extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.MigrationsCancelImportResponse]
   ] = js.native
   /**
-    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](#get-a-list-of-user-migrations) and [Get the status of a user migration](#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
+    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [Get a list of user migrations](https://developer.github.com/v3/migrations/users/#get-a-list-of-user-migrations) and [Get the status of a user migration](https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
     */
   def deleteArchiveForAuthenticatedUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -283,11 +283,11 @@ trait Anon_CancelImport extends js.Object {
     *
     * If there are problems, you will see one of these in the `status` field:
     *
-    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update Existing Import](#update-existing-import) section.
+    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
     * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://github.com/contact) for more information.
-    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update Existing Import](#update-existing-import) section.
-    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](#cancel-an-import) and [retry](#start-an-import) with the correct URL.
-    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update Existing Import](#update-existing-import) section.
+    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
+    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://developer.github.com/v3/migrations/source_imports/#cancel-an-import) and [retry](https://developer.github.com/v3/migrations/source_imports/#start-an-import) with the correct URL.
+    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
     *
     * **The project_choices field**
     *
@@ -325,7 +325,7 @@ trait Anon_CancelImport extends js.Object {
     * *   `exported` - the migration finished successfully.
     * *   `failed` - the migration failed.
     *
-    * Once the migration has been `exported` you can [download the migration archive](#download-a-user-migration-archive).
+    * Once the migration has been `exported` you can [download the migration archive](https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive).
     */
   def getStatusForAuthenticatedUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -417,7 +417,7 @@ trait Anon_CancelImport extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.MigrationsStartImportResponse]
   ] = js.native
   /**
-    * Unlocks a repository. You can lock repositories when you [start a user migration](#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
+    * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   def unlockRepoForAuthenticatedUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[

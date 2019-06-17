@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-color"
-version := "3.0-dt-20190606Z-24e1c5"
+version := "3.0-dt-20190616Z-24e1c5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

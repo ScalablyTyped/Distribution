@@ -29,6 +29,8 @@ object ^ extends js.Object {
   def registerStore[T](key: java.lang.String, config: StoreConfig[T]): scala.Unit = js.native
   def select(key: java.lang.String): SelectorMap = js.native
   def use[T](plugin: Plugin[T], options: T): DataRegistry = js.native
+  def useDispatch(): js.Function1[/* key */ java.lang.String, DispatcherMap] = js.native
+  def useDispatch(storeName: java.lang.String): DispatcherMap = js.native
   def useRegistry(): DataRegistry = js.native
   def useSelect[T](mapSelect: js.Function1[/* s */ js.Function1[/* key */ java.lang.String, SelectorMap], T]): T = js.native
   def useSelect[T](

@@ -40,5 +40,9 @@ package object gotMod {
     GotEmitter with nodeLib.streamMod.Duplex
   ]
   type GotUrl = java.lang.String | nodeLib.httpsMod.RequestOptions | nodeLib.urlMod.Url | nodeLib.urlMod.URL
+  /**
+    * @param options Unnormalized request options.
+    */
+  type InitHook[Options] = js.Function1[/* options */ Options, scala.Unit]
   type RetryFunction = js.Function2[/* retry */ scala.Double, /* error */ js.Any, scala.Double]
 }

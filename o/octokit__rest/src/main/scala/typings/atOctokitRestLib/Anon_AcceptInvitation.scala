@@ -375,7 +375,7 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.
     *
-    * Files and symlinks support [a custom media type](#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](#custom-media-types) to ensure the content is returned in a consistent object format.
+    * Files and symlinks support [a custom media type](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](https://developer.github.com/v3/repos/contents/#custom-media-types) to ensure the content is returned in a consistent object format.
     *
     * **Note**:
     *
@@ -387,7 +387,7 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * When listing the contents of a directory, submodules have their "type" specified as "file". Logically, the value _should_ be "submodule". This behavior exists in API v3 [for backwards compatibility purposes](https://git.io/v1YCW). In the next major version of the API, the type will be returned as "submodule".
     *
-    * If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](#response-if-content-is-a-file)).
+    * If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](https://developer.github.com/v3/repos/contents/#response-if-content-is-a-file)).
     *
     * Otherwise, the API responds with an object describing the symlink itself:
     *
@@ -487,7 +487,7 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Gets the preferred README for a repository.
     *
-    * READMEs support [custom media types](#custom-media-types) for retrieving the raw content or rendered HTML.
+    * READMEs support [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   @JSName("getReadme")
   var getReadme_Original: Anon_EndpointParamsPromiseReposGetReadmeParams = js.native
@@ -550,7 +550,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listCommentsForCommit")
   var listCommentsForCommit_Original: Anon_EndpointParamsPromiseReposListCommentsForCommitParams = js.native
   /**
-    * Commit Comments use [these custom media types](#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
+    * Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
     *
     * Comments are ordered by ascending ID.
     */
@@ -869,12 +869,12 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("updateRelease")
   var updateRelease_Original: Anon_EndpointParamsPromiseReposUpdateReleaseParams = js.native
   /**
-    * **Note**: To edit a repository's topics, use the [`topics` endpoint](#replace-all-topics-for-a-repository).
+    * **Note**: To edit a repository's topics, use the [`topics` endpoint](https://developer.github.com/v3/repos/#replace-all-topics-for-a-repository).
     */
   @JSName("update")
   var update_Original: Anon_EndpointParamsPromiseReposUpdateParams = js.native
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
+    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](https://developer.github.com/v3/repos/releases/#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
     *
     * The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
     *
@@ -1461,7 +1461,7 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.
     *
-    * Files and symlinks support [a custom media type](#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](#custom-media-types) to ensure the content is returned in a consistent object format.
+    * Files and symlinks support [a custom media type](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](https://developer.github.com/v3/repos/contents/#custom-media-types) to ensure the content is returned in a consistent object format.
     *
     * **Note**:
     *
@@ -1473,7 +1473,7 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * When listing the contents of a directory, submodules have their "type" specified as "file". Logically, the value _should_ be "submodule". This behavior exists in API v3 [for backwards compatibility purposes](https://git.io/v1YCW). In the next major version of the API, the type will be returned as "submodule".
     *
-    * If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](#response-if-content-is-a-file)).
+    * If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](https://developer.github.com/v3/repos/contents/#response-if-content-is-a-file)).
     *
     * Otherwise, the API responds with an object describing the symlink itself:
     *
@@ -1639,7 +1639,7 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Gets the preferred README for a repository.
     *
-    * READMEs support [custom media types](#custom-media-types) for retrieving the raw content or rendered HTML.
+    * READMEs support [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   def getReadme(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetReadmeResponse]
@@ -1755,7 +1755,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitResponse]
   ] = js.native
   /**
-    * Commit Comments use [these custom media types](#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
+    * Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
     *
     * Comments are ordered by ascending ID.
     */
@@ -2205,7 +2205,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposTransferResponse]
   ] = js.native
   /**
-    * **Note**: To edit a repository's topics, use the [`topics` endpoint](#replace-all-topics-for-a-repository).
+    * **Note**: To edit a repository's topics, use the [`topics` endpoint](https://developer.github.com/v3/repos/#replace-all-topics-for-a-repository).
     */
   def update(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateResponse]
@@ -2314,7 +2314,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateReleaseAssetResponse]
   ] = js.native
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
+    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](https://developer.github.com/v3/repos/releases/#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
     *
     * The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
     *

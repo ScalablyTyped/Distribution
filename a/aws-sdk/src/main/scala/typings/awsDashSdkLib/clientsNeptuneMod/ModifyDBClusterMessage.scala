@@ -15,6 +15,10 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   /**
+    * The configuration setting for the log types to be enabled for export to CloudWatch Logs for a specific DB cluster.
+    */
+  var CloudwatchLogsExportConfiguration: js.UndefOr[CloudwatchLogsExportConfiguration] = js.undefined
+  /**
     * The DB cluster identifier for the cluster being modified. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
     */
   var DBClusterIdentifier: String
@@ -66,6 +70,7 @@ object ModifyDBClusterMessage {
     DBClusterIdentifier: String,
     ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
     BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
     DBClusterParameterGroupName: String = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     EngineVersion: String = null,
@@ -80,6 +85,7 @@ object ModifyDBClusterMessage {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
     if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
+    if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)

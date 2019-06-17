@@ -1,7 +1,7 @@
 
 # Scala.js typings for got
 
-Typings are for version 9.4
+Typings are for version 9.6
 
 ## Library description:
 Simplified HTTP requests
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for got 9.4
+// Type definitions for got 9.6
 // Project: https://github.com/sindresorhus/got#readme
 // Definitions by: BendingBender <https://github.com/BendingBender>
 //                 Linus Unnebäck <https://github.com/LinusU>

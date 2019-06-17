@@ -17627,6 +17627,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRobomakerMod._SimulationJobErrorCode
   
   @js.native
+  sealed trait RobotDeploymentAborted
+    extends awsDashSdkLib.clientsRobomakerMod._DeploymentJobErrorCode
+  
+  @js.native
   sealed trait RobotDeploymentNoResponse
     extends awsDashSdkLib.clientsRobomakerMod._DeploymentJobErrorCode
   
@@ -36099,6 +36103,8 @@ object awsDashSdkLibStrings {
   def RobotApplicationCrash: RobotApplicationCrash = "RobotApplicationCrash".asInstanceOf[RobotApplicationCrash]
   @scala.inline
   def RobotApplicationVersionMismatchedEtag: RobotApplicationVersionMismatchedEtag = "RobotApplicationVersionMismatchedEtag".asInstanceOf[RobotApplicationVersionMismatchedEtag]
+  @scala.inline
+  def RobotDeploymentAborted: RobotDeploymentAborted = "RobotDeploymentAborted".asInstanceOf[RobotDeploymentAborted]
   @scala.inline
   def RobotDeploymentNoResponse: RobotDeploymentNoResponse = "RobotDeploymentNoResponse".asInstanceOf[RobotDeploymentNoResponse]
   @scala.inline

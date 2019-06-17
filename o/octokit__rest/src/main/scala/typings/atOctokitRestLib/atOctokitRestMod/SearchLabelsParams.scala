@@ -13,7 +13,7 @@ trait SearchLabelsParams extends js.Object {
     atOctokitRestLib.atOctokitRestLibStrings.desc | atOctokitRestLib.atOctokitRestLibStrings.asc
   ] = js.undefined
   /**
-    * The search keywords. This endpoint does not accept qualifiers in the query. To learn more about the format of the query, see [Constructing a search query](#constructing-a-search-query).
+    * The search keywords. This endpoint does not accept qualifiers in the query. To learn more about the format of the query, see [Constructing a search query](https://developer.github.com/v3/search/#constructing-a-search-query).
     */
   var q: java.lang.String
   /**

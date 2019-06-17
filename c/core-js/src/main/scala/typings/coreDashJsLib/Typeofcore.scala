@@ -26,8 +26,6 @@ trait Typeofcore extends js.Object {
   val WeakSet: stdLib.WeakSetConstructor = js.native
   val `_`: scala.Boolean = js.native
   val global: js.Any = js.native
-  @JSName("log")
-  val log_Original: Log = js.native
   val version: java.lang.String = js.native
   @JSName("$for")
   def $for[T](iterable: stdLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
@@ -43,8 +41,6 @@ trait Typeofcore extends js.Object {
   def isIterable(value: js.Any): scala.Boolean = js.native
   def locale(): java.lang.String = js.native
   def locale(lang: java.lang.String): java.lang.String = js.native
-  def log(): scala.Unit = js.native
-  def log(message: js.Any, optionalParams: js.Any*): scala.Unit = js.native
   def setImmediate(expression: js.Any, args: js.Any*): scala.Double = js.native
   def setInterval(handler: js.Any): scala.Double = js.native
   def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): scala.Double = js.native

@@ -27,6 +27,10 @@ trait RestoreDBClusterFromSnapshotMessage extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
+    * The list of logs that the restored DB cluster is to export to Amazon CloudWatch Logs.
+    */
+  var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
+  /**
     * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
@@ -74,6 +78,7 @@ object RestoreDBClusterFromSnapshotMessage {
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
+    EnableCloudwatchLogsExports: LogTypeList = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     EngineVersion: String = null,
     KmsKeyId: String = null,
@@ -87,6 +92,7 @@ object RestoreDBClusterFromSnapshotMessage {
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName)
+    if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)

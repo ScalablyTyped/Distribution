@@ -18,6 +18,7 @@ trait Hooks[Options, Body /* <: nodeLib.Buffer | java.lang.String | js.Object */
   var beforeRedirect: js.UndefOr[js.Array[BeforeRedirectHook[Options]]] = js.undefined
   var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook[Options]]] = js.undefined
   var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook[Options]]] = js.undefined
+  var init: js.UndefOr[js.Array[InitHook[Options]]] = js.undefined
 }
 
 object Hooks {
@@ -26,13 +27,15 @@ object Hooks {
     afterResponse: js.Array[AfterResponseHook[Options, Body]] = null,
     beforeRedirect: js.Array[BeforeRedirectHook[Options]] = null,
     beforeRequest: js.Array[BeforeRequestHook[Options]] = null,
-    beforeRetry: js.Array[BeforeRetryHook[Options]] = null
+    beforeRetry: js.Array[BeforeRetryHook[Options]] = null,
+    init: js.Array[InitHook[Options]] = null
   ): Hooks[Options, Body] = {
     val __obj = js.Dynamic.literal()
     if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse)
     if (beforeRedirect != null) __obj.updateDynamic("beforeRedirect")(beforeRedirect)
     if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
     if (beforeRetry != null) __obj.updateDynamic("beforeRetry")(beforeRetry)
+    if (init != null) __obj.updateDynamic("init")(init)
     __obj.asInstanceOf[Hooks[Options, Body]]
   }
 }

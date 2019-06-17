@@ -49,7 +49,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   ] = js.undefined
   var onRangeChange: js.UndefOr[
     js.Function1[
-      /* range */ js.Array[stdLib.Date | reactDashBigDashCalendarLib.Anon_EndStart], 
+      /* range */ js.Array[stdLib.Date] | reactDashBigDashCalendarLib.Anon_EndStart, 
       scala.Unit
     ]
   ] = js.undefined
@@ -123,7 +123,7 @@ object BigCalendarProps {
     onDoubleClickEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
     onDrillDown: (/* date */ stdLib.Date, /* view */ View) => scala.Unit = null,
     onNavigate: (/* newDate */ stdLib.Date, /* view */ View, /* action */ Navigate) => scala.Unit = null,
-    onRangeChange: /* range */ js.Array[stdLib.Date | reactDashBigDashCalendarLib.Anon_EndStart] => scala.Unit = null,
+    onRangeChange: /* range */ js.Array[stdLib.Date] | reactDashBigDashCalendarLib.Anon_EndStart => scala.Unit = null,
     onSelectEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
     onSelectSlot: /* slotInfo */ reactDashBigDashCalendarLib.Anon_Action => scala.Unit = null,
     onSelecting: /* range */ reactDashBigDashCalendarLib.Anon_EndStart => js.UndefOr[scala.Boolean | scala.Null] = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-fetch"
-version := "2.3-dt-20190612Z-5b58f0"
+version := "2.3-dt-20190616Z-6c6210"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

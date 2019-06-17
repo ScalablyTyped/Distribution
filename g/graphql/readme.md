@@ -56,6 +56,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Pavel Lang <https://github.com/langpavel>
 //                 Mark Caudill <https://github.com/mc0>
 //                 Martijn Walraven <https://github.com/martijnwalraven>
+//                 Jed Mao <https://github.com/jedmao>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.6
 // The primary entry point into fulfilling a GraphQL request.

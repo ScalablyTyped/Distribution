@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-calendar"
-version := "9.14.5-9c4ce4"
+version := "9.15.0-be412a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

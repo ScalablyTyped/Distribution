@@ -26,6 +26,7 @@ package object clientsRobomakerMod {
     - awsDashSdkLib.awsDashSdkLibStrings.EnvironmentSetupError
     - awsDashSdkLib.awsDashSdkLibStrings.EtagMismatch
     - awsDashSdkLib.awsDashSdkLibStrings.FailureThresholdBreached
+    - awsDashSdkLib.awsDashSdkLibStrings.RobotDeploymentAborted
     - awsDashSdkLib.awsDashSdkLibStrings.RobotDeploymentNoResponse
     - awsDashSdkLib.awsDashSdkLibStrings.RobotAgentConnectionTimeout
     - awsDashSdkLib.awsDashSdkLibStrings.GreengrassDeploymentFailed

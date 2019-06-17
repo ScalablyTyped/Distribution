@@ -53,7 +53,6 @@ These comments are from the typescript definitions and might be useful:
 //                 Ethan Setnik <https://github.com/esetnik>
 //                 Walter Barbagallo <https://github.com/bwlt>
 //                 Kota Marusue <https://github.com/mrsekut>
-//                 Andrew Luca <https://github.com/iamandrewluca>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 

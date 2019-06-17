@@ -9,7 +9,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   var afterDatasetDraw: js.UndefOr[
     js.Function3[
       /* chartInstance */ Chart, 
-      /* easing */ java.lang.String, 
+      /* easing */ Easing, 
       /* options */ js.UndefOr[js.Any], 
       scala.Unit
     ]
@@ -20,7 +20,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   var afterDatasetsDraw: js.UndefOr[
     js.Function3[
       /* chartInstance */ Chart, 
-      /* easing */ java.lang.String, 
+      /* easing */ Easing, 
       /* options */ js.UndefOr[js.Any], 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   var afterDraw: js.UndefOr[
     js.Function3[
       /* chartInstance */ Chart, 
-      /* easing */ java.lang.String, 
+      /* easing */ Easing, 
       /* options */ js.UndefOr[js.Any], 
       scala.Unit
     ]
@@ -73,7 +73,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   var beforeDatasetDraw: js.UndefOr[
     js.Function3[
       /* chartInstance */ Chart, 
-      /* easing */ java.lang.String, 
+      /* easing */ Easing, 
       /* options */ js.UndefOr[js.Any], 
       scala.Unit
     ]
@@ -85,7 +85,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   var beforeDatasetsDraw: js.UndefOr[
     js.Function3[
       /* chartInstance */ Chart, 
-      /* easing */ java.lang.String, 
+      /* easing */ Easing, 
       /* options */ js.UndefOr[js.Any], 
       scala.Unit
     ]
@@ -97,7 +97,7 @@ trait PluginServiceRegistrationOptions extends js.Object {
   var beforeDraw: js.UndefOr[
     js.Function3[
       /* chartInstance */ Chart, 
-      /* easing */ java.lang.String, 
+      /* easing */ Easing, 
       /* options */ js.UndefOr[js.Any], 
       scala.Unit
     ]
@@ -149,11 +149,11 @@ trait PluginServiceRegistrationOptions extends js.Object {
 object PluginServiceRegistrationOptions {
   @scala.inline
   def apply(
-    afterDatasetDraw: (/* chartInstance */ Chart, /* easing */ java.lang.String, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    afterDatasetDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterDatasetUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
-    afterDatasetsDraw: (/* chartInstance */ Chart, /* easing */ java.lang.String, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    afterDatasetsDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterDatasetsUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
-    afterDraw: (/* chartInstance */ Chart, /* easing */ java.lang.String, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    afterDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterEvent: (/* chartInstance */ Chart, /* event */ stdLib.Event, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterInit: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterLayout: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
@@ -161,11 +161,11 @@ object PluginServiceRegistrationOptions {
     afterScaleUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterTooltipDraw: (/* chartInstance */ Chart, /* tooltipData */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     afterUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
-    beforeDatasetDraw: (/* chartInstance */ Chart, /* easing */ java.lang.String, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    beforeDatasetDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     beforeDatasetUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
-    beforeDatasetsDraw: (/* chartInstance */ Chart, /* easing */ java.lang.String, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    beforeDatasetsDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     beforeDatasetsUpdate: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
-    beforeDraw: (/* chartInstance */ Chart, /* easing */ java.lang.String, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
+    beforeDraw: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     beforeEvent: (/* chartInstance */ Chart, /* event */ stdLib.Event, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     beforeInit: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,
     beforeLayout: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => scala.Unit = null,

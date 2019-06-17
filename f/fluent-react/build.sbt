@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fluent-react"
-version := "0.8-dt-20190326Z-51bec2"
+version := "0.8-dt-20190326Z-bdb41d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "fluent" % "0.11-dt-20190611Z-1eefdd",
+  "org.scalablytyped" %%% "fluent" % "0.11-dt-20190616Z-e3e2a5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")

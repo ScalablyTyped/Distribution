@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "set-cookie-parser"
-version := "0.0-unknown-dt-20190322Z-f9d681"
+version := "0.0-unknown-dt-20190617Z-d90741"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

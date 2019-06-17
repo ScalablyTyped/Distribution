@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-upload"
-version := "8.0-dt-20190513Z-888c74"
+version := "8.0-dt-20190513Z-f6a587"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-68e524",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-47e6a1",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-ae49a5",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-1af13e",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190616Z-a68a9c",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-a78834",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-504ce2",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-e59d91",

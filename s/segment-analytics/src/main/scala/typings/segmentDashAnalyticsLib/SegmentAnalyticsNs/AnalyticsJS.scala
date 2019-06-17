@@ -67,6 +67,7 @@ trait AnalyticsJS extends js.Object {
   ): scala.Unit = js.native
   /* Configure Segment with write key */
   def load(writeKey: java.lang.String): scala.Unit = js.native
+  def load(writeKey: java.lang.String, options: SegmentOpts): scala.Unit = js.native
   /* The global analytics object emits events whenever you call alias, group,
     identify, track or page. That way you can listen to those events and run
     your own custom code. */

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 package object levelDashSublevelMod {
   type Constructor = js.Function1[
     /* levelup */ levelupLib.levelupMod.LevelUp[
-      abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[js.Any, js.Any]
+      abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[js.Any, js.Any], 
+      abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIterator[js.Any, js.Any]
     ], 
     Sublevel
   ]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__data
 
-Typings are for version 4.5
+Typings are for version 4.6
 
 ## Library description:
 Data module for WordPress.
@@ -33,7 +33,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for @wordpress/data 4.5
+// Type definitions for @wordpress/data 4.6
 // Project: https://github.com/WordPress/gutenberg/tree/master/packages/data/README.md
 // Definitions by: Derek Sifford <https://github.com/dsifford>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

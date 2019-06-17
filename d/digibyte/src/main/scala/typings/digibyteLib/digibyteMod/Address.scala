@@ -25,3 +25,33 @@ class Address protected () extends js.Object {
   val `type`: java.lang.String = js.native
 }
 
+/* static members */
+@JSImport("digibyte", "Address")
+@js.native
+object Address extends js.Object {
+  def getValidationError(input: java.lang.String): stdLib.Error = js.native
+  def getValidationError(input: java.lang.String, network: digibyteLib.digibyteMod.NetworksNs.Network): stdLib.Error = js.native
+  def getValidationError(
+    input: java.lang.String,
+    network: digibyteLib.digibyteMod.NetworksNs.Network,
+    payToPublicKeyHash: java.lang.String
+  ): stdLib.Error = js.native
+  def getValidationError(
+    input: java.lang.String,
+    network: digibyteLib.digibyteMod.NetworksNs.Network,
+    payToPublicKeyHash: nodeLib.Buffer
+  ): stdLib.Error = js.native
+  def isValid(input: java.lang.String): scala.Boolean = js.native
+  def isValid(input: java.lang.String, network: digibyteLib.digibyteMod.NetworksNs.Network): scala.Boolean = js.native
+  def isValid(
+    input: java.lang.String,
+    network: digibyteLib.digibyteMod.NetworksNs.Network,
+    payToPublicKeyHash: java.lang.String
+  ): scala.Boolean = js.native
+  def isValid(
+    input: java.lang.String,
+    network: digibyteLib.digibyteMod.NetworksNs.Network,
+    payToPublicKeyHash: nodeLib.Buffer
+  ): scala.Boolean = js.native
+}
+

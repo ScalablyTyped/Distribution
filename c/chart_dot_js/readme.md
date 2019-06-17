@@ -53,6 +53,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Conrad Holtzhausen <https://github.com/Conrad777>
 //                 Adrián Caballero <https://github.com/adripanico>
 //                 wertzui <https://github.com/wertzui>
+//                 Martin Trobäck <https://github.com/lekoaf>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

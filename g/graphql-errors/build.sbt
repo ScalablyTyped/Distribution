@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "graphql-errors"
-version := "2.1-dt-20181218Z-da4185"
+version := "2.1-dt-20181218Z-bb39d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-1af13e",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190616Z-a68a9c",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-calendar
 
-Typings are for version 9.14.5
+Typings are for version 9.15.0
 
 ## Library description:
 React Calendar

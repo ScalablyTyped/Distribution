@@ -50,7 +50,7 @@ trait CreateOptions extends js.Object {
     */
   var noDirRecurse: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * uppress pax extended headers. Note that this means that long paths and
+    * Suppress pax extended headers. Note that this means that long paths and
     * linkpaths will be truncated, and large or negative numeric values
     * may be interpreted incorrectly.
     */
@@ -68,6 +68,10 @@ trait CreateOptions extends js.Object {
     * because this is necessary other time-based operations.
     */
   var portable: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * A path portion to prefix onto the entries in the archive.
+    */
+  var prefix: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Allow absolute paths. By default, / is stripped from absolute paths.
     */
@@ -98,6 +102,7 @@ object CreateOptions {
     noPax: js.UndefOr[scala.Boolean] = js.undefined,
     onwarn: (/* message */ java.lang.String, /* data */ nodeLib.Buffer) => scala.Unit = null,
     portable: js.UndefOr[scala.Boolean] = js.undefined,
+    prefix: java.lang.String = null,
     preservePaths: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     z: scala.Boolean | nodeLib.zlibMod.ZlibOptions = null
@@ -116,6 +121,7 @@ object CreateOptions {
     if (!js.isUndefined(noPax)) __obj.updateDynamic("noPax")(noPax)
     if (onwarn != null) __obj.updateDynamic("onwarn")(js.Any.fromFunction2(onwarn))
     if (!js.isUndefined(portable)) __obj.updateDynamic("portable")(portable)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (!js.isUndefined(preservePaths)) __obj.updateDynamic("preservePaths")(preservePaths)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])

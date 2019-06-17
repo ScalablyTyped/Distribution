@@ -11,7 +11,7 @@ trait ReposCreateHookParams extends js.Object {
     */
   var active: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Key/value pairs to provide settings for this webhook. [These are defined below](#create-hook-config-params).
+    * Key/value pairs to provide settings for this webhook. [These are defined below](https://developer.github.com/v3/repos/hooks/#create-hook-config-params).
     */
   var config: ReposCreateHookParamsConfig
   /**

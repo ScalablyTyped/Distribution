@@ -2160,6 +2160,7 @@
 | 60 | [isexe](./i/isexe) | Minimal module to check if a file is executable.
 | 60 | [istanbul-lib-instrument](./i/istanbul-lib-instrument) | Core istanbul API for JS code coverage
 | 60 | [jsonminify](./j/jsonminify) | JSON.minify() minifies blocks of JSON-like content
+| 60 | [level-js](./l/level-js) | An abstract-leveldown compliant store on top of In
 | 60 | [lodash_dot_forown](./l/lodash_dot_forown) | The lodash method _.forOwn exported as a module.
 | 60 | [phosphor__commands](./p/phosphor__commands) | PhosphorJS - Commands
 | 60 | [spin_dot_js](./s/spin_dot_js) | A spinning activity indicator
@@ -3621,6 +3622,7 @@
 | 17 | [ts-essentials](./t/ts-essentials) | All essential Typescript types in one place
 | 17 | [vfile-location](./v/vfile-location) | Convert between positions (line and column-based) 
 | 17 | [vimeo__player](./v/vimeo__player) | Interact with and control an embedded Vimeo Player
+| 17 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs).
 | 17 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
 | 17 | [zip-webpack-plugin](./z/zip-webpack-plugin) | Webpack plugin to zip up emitted files.
 | 16 | [backgrid](./b/backgrid) | Backgrid.js is a set of components for building se
@@ -5259,6 +5261,7 @@
 | 2 | [b2a](./b/b2a) | btoa and atob (ie base64 encoding and decoding) su
 | 2 | [backbone_dot_layoutmanage](./b/backbone_dot_layoutmanager) | A layout and template manager for Backbone.js appl
 | 2 | [badgen](./b/badgen) | Fast svg badge generator.
+| 2 | [baseui](./b/baseui) | A React Component library implementing the Base de
 | 2 | [bash-glob](./b/bash-glob) | Bash-powered globbing for node.js
 | 2 | [basicauth-middleware](./b/basicauth-middleware) | Express js basic auth middleware
 | 2 | [basiclightbox](./b/basiclightbox) | The lightest lightbox ever made
@@ -5976,6 +5979,7 @@
 | 1 | [word-extractor](./w/word-extractor) | Node.js package to read Word .doc files
 | 1 | [word-list-json](./w/word-list-json) | List of English words
 | 1 | [word2vector](./w/word2vector) | a word2vector interface for nodejs
+| 1 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP
 | 1 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads
 | 1 | [wry__equality](./w/wry__equality) | Structural equality checking for JavaScript values
 | 1 | [xdomain](./x/xdomain) | A pure JavaScript CORS alternative

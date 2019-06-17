@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg"
-version := "2.22.2-83ab29"
+version := "2.22.2-b5991a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-a78834",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-504ce2",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-e59d91",
-  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20190322Z-52a6ac",
+  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20190616Z-0af94a",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-51fe5c",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-39a594",

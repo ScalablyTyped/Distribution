@@ -291,7 +291,7 @@ object graphqlNs extends js.Object {
     newSchema: graphqlLib.typeSchemaMod.GraphQLSchema
   ): js.Array[graphqlLib.utilitiesFindBreakingChangesMod.DangerousChange] = js.native
   def findDeprecatedUsages(schema: graphqlLib.typeSchemaMod.GraphQLSchema, ast: graphqlLib.languageAstMod.DocumentNode): js.Array[graphqlLib.errorGraphQLErrorMod.GraphQLError] = js.native
-  def formatError(error: graphqlLib.errorGraphQLErrorMod.GraphQLError): graphqlLib.errorFormatErrorMod.GraphQLFormattedError = js.native
+  def formatError(error: graphqlLib.errorGraphQLErrorMod.GraphQLError): graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]] = js.native
   def getDescription(
     node: graphqlLib.Anon_Description,
     options: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.utilitiesBuildASTSchemaMod.BuildSchemaOptions]

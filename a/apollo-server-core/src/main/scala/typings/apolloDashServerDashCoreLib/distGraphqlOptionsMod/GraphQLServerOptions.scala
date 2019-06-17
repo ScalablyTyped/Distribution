@@ -34,7 +34,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var formatError: js.UndefOr[
     js.Function1[
       /* error */ graphqlLib.graphqlMod.GraphQLError, 
-      graphqlLib.errorFormatErrorMod.GraphQLFormattedError
+      graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]]
     ]
   ] = js.undefined
   var formatResponse: js.UndefOr[js.Function] = js.undefined
@@ -70,7 +70,7 @@ object GraphQLServerOptions {
       ]
     ] = null,
     fieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
-    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError = null,
+    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]] = null,
     formatResponse: js.Function = null,
     parseOptions: graphqlDashToolsLib.distInterfacesMod.GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions = null,

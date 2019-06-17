@@ -12,6 +12,7 @@ trait ScrollNumber
   @JSName("componentDidUpdate")
   def componentDidUpdate_MScrollNumber(`_`: js.Any, prevState: ScrollNumberState): scala.Unit = js.native
   def getPositionByNum(num: scala.Double, i: scala.Double): scala.Double = js.native
+  def onAnimated(): scala.Unit = js.native
   def renderCurrentNumber(prefixCls: java.lang.String, num: java.lang.String, i: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderCurrentNumber(prefixCls: java.lang.String, num: scala.Double, i: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderNumberElement(prefixCls: java.lang.String): js.UndefOr[

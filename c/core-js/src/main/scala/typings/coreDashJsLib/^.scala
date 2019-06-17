@@ -12,10 +12,6 @@ object ^ extends js.Object {
     * Non-standard.
     */
   var Dict: DictConstructor = js.native
-  /**
-    * Non-standard.
-    */
-  var log: Log = js.native
   @JSName("$for")
   def $for[T](iterable: stdLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
   // #############################################################################################

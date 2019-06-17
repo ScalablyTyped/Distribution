@@ -448,6 +448,7 @@
 | [base64topdf](./b/base64topdf) | base64topdf | base64, pdf, pdf, conversion, rtf, plain text, text, plain, encoding, decoding, string, stringtobase64, base64tostring, rtftobase64, base64tortf |
 | [base64url](./b/base64url) | For encoding to/from base64urls | base64, base64url |
 | [bases](./b/bases) | Utility for converting numbers to/from different b | alphabet, base, base-36, base-58, base-62 |
+| [baseui](./b/baseui) | A React Component library implementing the Base de | react, uber, baseui, baseweb |
 | [bash-glob](./b/bash-glob) | Bash-powered globbing for node.js | bash, expand, expansion, expression, file, files, filter, find, glob, globbing, globs, globstar, match, matcher, matches, matching, micromatch, minimatch, multimatch, nanomatch, path, pattern, patterns, regex, regexp, regular, shell, wildcard |
 | [basic-auth](./b/basic-auth) | node.js basic auth parser | basic, auth, authorization, basicauth |
 | [basicauth-middleware](./b/basicauth-middleware) | Express js basic auth middleware | - |
@@ -3336,6 +3337,7 @@
 | [less2sass](./l/less2sass) | A quick less to sass converter | - |
 | [lestate](./l/lestate) | - | - |
 | [level-codec](./l/level-codec) | Encode keys, values and range options, with built- | level |
+| [level-js](./l/level-js) | An abstract-leveldown compliant store on top of In | level, leveldb, indexeddb, abstract-leveldown |
 | [level-sublevel](./l/level-sublevel) | partition levelup databases | - |
 | [leveldown](./l/leveldown) | A low-level Node.js LevelDB binding | leveldb, level |
 | [levelup](./l/levelup) | Fast & simple storage - a Node.js-style LevelDB wr | level, leveldb, stream, database, db, store, storage, json |
@@ -6895,6 +6897,8 @@
 | [word-wrap](./w/word-wrap) | Wrap words to a specified length. | break, carriage, line, new-line, newline, return, soft, text, word, word-wrap, words, wrap |
 | [word2vector](./w/word2vector) | a word2vector interface for nodejs | word2vector, word2vec, word, vec, machine learning, chinese, deep-learning, 向量, vector, 文字, 機器學習 |
 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML | cloud, canvas, 2D, html, Wordle, presentation, tag |
+| [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
+| [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |

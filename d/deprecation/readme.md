@@ -1,7 +1,7 @@
 
 # Scala.js typings for deprecation
 
-Typings are for version 2.0.0
+Typings are for version 2.3.1
 
 ## Library description:
 Log a deprecation message with stack

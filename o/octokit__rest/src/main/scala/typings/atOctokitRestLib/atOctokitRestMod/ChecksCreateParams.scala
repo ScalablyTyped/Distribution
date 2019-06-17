@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ChecksCreateParams extends js.Object {
   /**
-    * Possible further actions the integrator can perform, which a user may trigger. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](#actions-object) description.
+    * Possible further actions the integrator can perform, which a user may trigger. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description.
     */
   var actions: js.UndefOr[js.Array[ChecksCreateParamsActions]] = js.undefined
   /**
@@ -38,7 +38,7 @@ trait ChecksCreateParams extends js.Object {
     */
   var name: java.lang.String
   /**
-    * Check runs can accept a variety of data in the `output` object, including a `title` and `summary` and can optionally provide descriptive details about the run. See the [`output` object](#output-object) description.
+    * Check runs can accept a variety of data in the `output` object, including a `title` and `summary` and can optionally provide descriptive details about the run. See the [`output` object](https://developer.github.com/v3/checks/runs/#output-object) description.
     */
   var output: js.UndefOr[ChecksCreateParamsOutput] = js.undefined
   var owner: java.lang.String

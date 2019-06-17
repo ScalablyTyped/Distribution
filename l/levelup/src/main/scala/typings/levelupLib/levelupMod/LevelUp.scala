@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LevelUp[DB]
+trait LevelUp[DB, Iterator]
   extends nodeLib.eventsMod.EventEmitter {
   var del: InferDBDel[DB] = js.native
   var get: InferDBGet[DB] = js.native
@@ -38,6 +38,8 @@ trait LevelUp[DB]
   def createValueStream(options: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIteratorOptions[_]): nodeLib.NodeJSNs.ReadableStream = js.native
   def isClosed(): scala.Boolean = js.native
   def isOpen(): scala.Boolean = js.native
+  def iterator(): Iterator = js.native
+  def iterator(options: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIteratorOptions[_]): Iterator = js.native
   /*
     emitted when a batch operation has executed
     */

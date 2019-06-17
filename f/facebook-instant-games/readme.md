@@ -1,7 +1,7 @@
 
 # Scala.js typings for facebook-instant-games
 
-Typings are for version 6.2
+Typings are for version 6.3
 
 
 
@@ -17,9 +17,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for non-npm package facebook-instant-games 6.2
+// Type definitions for non-npm package facebook-instant-games 6.3
 // Project: https://developers.facebook.com/docs/games/instant-games
-// Definitions by: Menushka Weeratunga <https://github.com/menushka>, Øyvind Johansen Amundrud <https://github.com/oyvindjam>
+// Definitions by: Menushka Weeratunga <https://github.com/menushka>,
+//                 Øyvind Johansen Amundrud <https://github.com/oyvindjam>,
+//                 Liana Pigeot <https://github.com/nialna>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /**
  * Top level namespace for the Instant Games SDK.

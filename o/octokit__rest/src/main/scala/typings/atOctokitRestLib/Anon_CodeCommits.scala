@@ -10,7 +10,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find file contents via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for code, you can get text match metadata for the file **content** and file **path** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for code, you can get text match metadata for the file **content** and file **path** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * **Note:** You must [authenticate](https://developer.github.com/v3/#authentication) to search for code across all public repositories.
     *
@@ -31,7 +31,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find commits via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * **Considerations for commit search**
     *
@@ -44,7 +44,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Let's say you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.
     *
@@ -55,7 +55,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Let's say you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.
     *
@@ -66,7 +66,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for labels, you can get text match metadata for the label **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for labels, you can get text match metadata for the label **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Suppose you want to find labels in the `linguist` repository that match `bug`, `defect`, or `enhancement`. Your query might look like this:
     *
@@ -77,7 +77,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for repositories, you can get text match metadata for the **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for repositories, you can get text match metadata for the **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Suppose you want to search for popular Tetris repositories written in Assembly. Your query might look like this.
     *
@@ -90,7 +90,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for topics, you can get text match metadata for the topic's **short\_description**, **description**, **name**, or **display\_name** field when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for topics, you can get text match metadata for the topic's **short\_description**, **description**, **name**, or **display\_name** field when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * See "[Searching topics](https://help.github.com/articles/searching-topics/)" for a detailed list of qualifiers.
     *
@@ -105,7 +105,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for users, you can get text match metadata for the issue **login**, **email**, and **name** fields when you pass the `text-match` media type. For more details about highlighting search results, see [Text match metadata](#text-match-metadata). For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for users, you can get text match metadata for the issue **login**, **email**, and **name** fields when you pass the `text-match` media type. For more details about highlighting search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata). For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Imagine you're looking for a list of popular users. You might try out this query:
     *
@@ -116,7 +116,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find file contents via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for code, you can get text match metadata for the file **content** and file **path** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for code, you can get text match metadata for the file **content** and file **path** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * **Note:** You must [authenticate](https://developer.github.com/v3/#authentication) to search for code across all public repositories.
     *
@@ -137,7 +137,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find commits via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * **Considerations for commit search**
     *
@@ -150,7 +150,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Let's say you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.
     *
@@ -161,7 +161,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for issues, you can get text match metadata for the issue **title**, issue **body**, and issue **comment body** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Let's say you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.
     *
@@ -172,7 +172,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for labels, you can get text match metadata for the label **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for labels, you can get text match metadata for the label **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Suppose you want to find labels in the `linguist` repository that match `bug`, `defect`, or `enhancement`. Your query might look like this:
     *
@@ -183,7 +183,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for repositories, you can get text match metadata for the **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for repositories, you can get text match metadata for the **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Suppose you want to search for popular Tetris repositories written in Assembly. Your query might look like this.
     *
@@ -196,7 +196,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for topics, you can get text match metadata for the topic's **short\_description**, **description**, **name**, or **display\_name** field when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for topics, you can get text match metadata for the topic's **short\_description**, **description**, **name**, or **display\_name** field when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * See "[Searching topics](https://help.github.com/articles/searching-topics/)" for a detailed list of qualifiers.
     *
@@ -211,7 +211,7 @@ trait Anon_CodeCommits extends js.Object {
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
-    * When searching for users, you can get text match metadata for the issue **login**, **email**, and **name** fields when you pass the `text-match` media type. For more details about highlighting search results, see [Text match metadata](#text-match-metadata). For more details about how to receive highlighted search results, see [Text match metadata](#text-match-metadata).
+    * When searching for users, you can get text match metadata for the issue **login**, **email**, and **name** fields when you pass the `text-match` media type. For more details about highlighting search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata). For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
     *
     * Imagine you're looking for a list of popular users. You might try out this query:
     *

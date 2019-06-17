@@ -1,0 +1,19 @@
+organization := "org.scalablytyped"
+name := "baseui"
+version := "6.20-dt-20190617Z-13c395"
+scalaVersion := "2.12.8"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119",
+  "org.scalablytyped" %%% "styletron-react" % "5.0-dt-20190514Z-9c8c57",
+  "org.scalablytyped" %%% "styletron-standard" % "2.0-dt-20190514Z-8818c1")
+publishArtifact in packageDoc := false
+scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
+        

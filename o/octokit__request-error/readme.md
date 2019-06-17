@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__request-error
 
-Typings are for version 1.0.2
+Typings are for version 1.0.4
 
 ## Library description:
 Error class for Octokit request errors

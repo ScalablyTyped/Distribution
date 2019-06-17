@@ -379,7 +379,7 @@ trait RoboMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeregisterRobotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes a deployment job. [Does it work regardless of deployment status, e.g. Failed?]
+    * Describes a deployment job.
     */
   def describeDeploymentJob(): awsDashSdkLib.libRequestMod.Request[DescribeDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDeploymentJob(
@@ -390,7 +390,7 @@ trait RoboMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes a deployment job. [Does it work regardless of deployment status, e.g. Failed?]
+    * Describes a deployment job.
     */
   def describeDeploymentJob(params: DescribeDeploymentJobRequest): awsDashSdkLib.libRequestMod.Request[DescribeDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDeploymentJob(

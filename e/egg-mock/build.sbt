@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-mock"
-version := "3.x-dt-20190327Z-6dc787"
+version := "3.x-dt-20190327Z-715814"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-07b727",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-68e524",
   "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-be8b1c",
-  "org.scalablytyped" %%% "egg" % "2.22.2-83ab29",
+  "org.scalablytyped" %%% "egg" % "2.22.2-b5991a",
   "org.scalablytyped" %%% "egg-cookies" % "2.2.7-29fff6",
   "org.scalablytyped" %%% "egg-core" % "4.17.2-b527fa",
   "org.scalablytyped" %%% "egg-logger" % "2.4.1-5e5b20",
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-a78834",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-504ce2",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-e59d91",
-  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20190322Z-52a6ac",
+  "org.scalablytyped" %%% "koa-router" % "v7.x-dt-20190616Z-0af94a",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-51fe5c",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-39a594",

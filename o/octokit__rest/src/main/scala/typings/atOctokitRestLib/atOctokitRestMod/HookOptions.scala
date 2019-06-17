@@ -11,7 +11,7 @@ trait HookOptions
   var data: js.Any
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var method: java.lang.String
-  // See https://Octokit.com/bitinn/node-fetch#options
+  // See https://github.com/bitinn/node-fetch#options
   var request: atOctokitRestLib.Anon_AgentCompress
   var url: java.lang.String
 }

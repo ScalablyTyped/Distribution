@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait RequestInit extends js.Object {
   // node-fetch extensions
-  var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
+  var agent: js.UndefOr[
+    nodeLib.httpMod.Agent | (js.Function1[/* parsedUrl */ nodeLib.urlMod.URL, nodeLib.httpMod.Agent])
+  ] = js.undefined
   // whatwg/fetch standard options
   var body: js.UndefOr[BodyInit] = js.undefined
    // =null http.Agent instance, allows custom proxy, certificate etc.
@@ -27,7 +29,7 @@ trait RequestInit extends js.Object {
 object RequestInit {
   @scala.inline
   def apply(
-    agent: nodeLib.httpMod.Agent = null,
+    agent: nodeLib.httpMod.Agent | (js.Function1[/* parsedUrl */ nodeLib.urlMod.URL, nodeLib.httpMod.Agent]) = null,
     body: BodyInit = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
     follow: scala.Int | scala.Double = null,
@@ -39,7 +41,7 @@ object RequestInit {
     timeout: scala.Int | scala.Double = null
   ): RequestInit = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])

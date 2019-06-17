@@ -16,4 +16,5 @@ package object reactDashTimeagoMod {
     ], 
     reactLib.reactMod.ReactNode
   ]
+  type ReactTimeago[T /* <: reactLib.reactMod.ComponentType[js.Object] */] = reactLib.reactMod.Component[ReactTimeagoProps[T] with reactLib.reactMod.ComponentProps[T], js.Object, js.Any]
 }

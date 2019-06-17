@@ -16,7 +16,6 @@ object ^ extends js.Object {
   val WeakSet: stdLib.WeakSetConstructor = js.native
   val `_`: scala.Boolean = js.native
   val global: js.Any = js.native
-  val log: coreDashJsLib.Log = js.native
   val version: java.lang.String = js.native
   @JSName("$for")
   def $for[T](iterable: stdLib.Iterable[T]): coreDashJsLib.$for[T] = js.native

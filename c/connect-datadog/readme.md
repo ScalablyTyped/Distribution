@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/datadog/node-connect-datadog
 // Definitions by: Moshe Good <https://github.com/moshegood>
 //                 Michael Mifsud <https://github.com/xzyfer>
+//                 Lewis Vail <https://github.com/lewisvail3>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 
