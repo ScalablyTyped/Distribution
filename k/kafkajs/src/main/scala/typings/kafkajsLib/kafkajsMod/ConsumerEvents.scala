@@ -10,13 +10,13 @@ trait ConsumerEvents extends js.Object {
   var CONNECT: kafkajsLib.kafkajsLibStrings.consumerDOTconnect
   var CRASH: kafkajsLib.kafkajsLibStrings.consumerDOTcrash
   var DISCONNECT: kafkajsLib.kafkajsLibStrings.consumerDOTdisconnect
-  var END_BATCH_PROCESS: kafkajsLib.kafkajsLibStrings.consumerDOTend_batch_process
+  var END_BATCH_PROCESS: kafkajsLib.kafkajsLibStrings.consumnerDOTend_batch_process
   var FETCH: kafkajsLib.kafkajsLibStrings.consumerDOTfetch
   var GROUP_JOIN: kafkajsLib.kafkajsLibStrings.consumerDOTgroup_join
   var HEARTBEAT: kafkajsLib.kafkajsLibStrings.consumerDOTheartbeat
-  var REQUEST: kafkajsLib.kafkajsLibStrings.consumerDOTnetworkDOTrequest
-  var REQUEST_QUEUE_SIZE: kafkajsLib.kafkajsLibStrings.consumerDOTnetworkDOTrequest_queue_size
-  var REQUEST_TIMEOUT: kafkajsLib.kafkajsLibStrings.consumerDOTnetworkDOTrequest_timeout
+  var REQUEST: kafkajsLib.kafkajsLibStrings.consumerDOTrequest
+  var REQUEST_QUEUE_SIZE: kafkajsLib.kafkajsLibStrings.consumerDOTrequest_queue_size
+  var REQUEST_TIMEOUT: kafkajsLib.kafkajsLibStrings.consumerDOTrequest_timeout
   var START_BATCH_PROCESS: kafkajsLib.kafkajsLibStrings.consumerDOTstart_batch_process
   var STOP: kafkajsLib.kafkajsLibStrings.consumerDOTstop
 }
@@ -28,13 +28,13 @@ object ConsumerEvents {
     CONNECT: kafkajsLib.kafkajsLibStrings.consumerDOTconnect,
     CRASH: kafkajsLib.kafkajsLibStrings.consumerDOTcrash,
     DISCONNECT: kafkajsLib.kafkajsLibStrings.consumerDOTdisconnect,
-    END_BATCH_PROCESS: kafkajsLib.kafkajsLibStrings.consumerDOTend_batch_process,
+    END_BATCH_PROCESS: kafkajsLib.kafkajsLibStrings.consumnerDOTend_batch_process,
     FETCH: kafkajsLib.kafkajsLibStrings.consumerDOTfetch,
     GROUP_JOIN: kafkajsLib.kafkajsLibStrings.consumerDOTgroup_join,
     HEARTBEAT: kafkajsLib.kafkajsLibStrings.consumerDOTheartbeat,
-    REQUEST: kafkajsLib.kafkajsLibStrings.consumerDOTnetworkDOTrequest,
-    REQUEST_QUEUE_SIZE: kafkajsLib.kafkajsLibStrings.consumerDOTnetworkDOTrequest_queue_size,
-    REQUEST_TIMEOUT: kafkajsLib.kafkajsLibStrings.consumerDOTnetworkDOTrequest_timeout,
+    REQUEST: kafkajsLib.kafkajsLibStrings.consumerDOTrequest,
+    REQUEST_QUEUE_SIZE: kafkajsLib.kafkajsLibStrings.consumerDOTrequest_queue_size,
+    REQUEST_TIMEOUT: kafkajsLib.kafkajsLibStrings.consumerDOTrequest_timeout,
     START_BATCH_PROCESS: kafkajsLib.kafkajsLibStrings.consumerDOTstart_batch_process,
     STOP: kafkajsLib.kafkajsLibStrings.consumerDOTstop
   ): ConsumerEvents = {

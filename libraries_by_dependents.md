@@ -4171,6 +4171,7 @@
 | 10 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
 | 10 | [virtual-keyboard](./v/virtual-keyboard) | Virtual Keyboard using jQuery UI
 | 10 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a
+| 10 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress.
 | 10 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo
 | 9 | [a11y-dialog](./a/a11y-dialog) | A tiny script to make dialog windows accessible to
 | 9 | [amazon-cognito-auth-js](./a/amazon-cognito-auth-js) | Amazon Cognito Auth JavaScript SDK
@@ -4663,7 +4664,9 @@
 | 6 | [vast-client](./v/vast-client) | JavaScript VAST Client
 | 6 | [vso-node-api](./v/vso-node-api) | Node client for Visual Studio Online/TFS REST APIs
 | 6 | [web-resource-inliner](./w/web-resource-inliner) | Inlines img, script and link tags into the same fi
+| 6 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress.
 | 6 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress.
+| 6 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API.
 | 6 | [wtfnode](./w/wtfnode) | Utility to help find out why Node isn't exiting
 | 6 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
 | 6 | [zipcodes](./z/zipcodes) | Useful zipcode database with helper methods
@@ -4995,6 +4998,7 @@
 | 4 | [webdriver](./w/webdriver) | A Node.js bindings implementation for the W3C WebD
 | 4 | [webpack-dotenv-plugin](./w/webpack-dotenv-plugin) | Use dotenv with webpack.
 | 4 | [wonder-frp](./w/wonder-frp) | * Wonder-FRP Wonder-FRP is a functional reactive p
+| 4 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an
 | 4 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded.
 | 4 | [xml-core](./x/xml-core) | xml-core is a set of classes that make it easier t
 | 4 | [xmlpoke](./x/xmlpoke) | Module for modifying XML files.
