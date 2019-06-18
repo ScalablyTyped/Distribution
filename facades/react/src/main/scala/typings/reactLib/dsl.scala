@@ -25,11 +25,11 @@ object dsl {
       _ctor: ComponentClass[P, _]): BuildComponent[P] = dsl.c(_ctor)
 
   @inline implicit def fromInstantiable1[P](
-      _ctor: Instantiable1[P, ReactElement[_]]): BuildComponent[P] =
+      _ctor: Instantiable1[P, ReactElement]): BuildComponent[P] =
     dsl.c(_ctor)
 
   @inline implicit def fromInstantiable2[P](
-      _ctor: Instantiable2[P, _, ReactElement[_]]): BuildComponent[P] =
+      _ctor: Instantiable2[P, _, ReactElement]): BuildComponent[P] =
     dsl.c(_ctor)
 
   @inline implicit def fromComponentType[P](
@@ -61,10 +61,10 @@ object dsl {
         props,
       )
 
-    @inline def noprops(children: ReactNode*): ReactElement[P[E]] =
+    @inline def noprops(children: ReactNode*): ReactElement =
       ^.createElement[P[E], E](tpe, fullProps(null), children: _*)
 
-    @inline def props(props: P[E], children: ReactNode*): ReactElement[P[E]] =
+    @inline def props(props: P[E], children: ReactNode*): ReactElement =
       ^.createElement[P[E], E](tpe, fullProps(props), children: _*)
   }
 
@@ -420,13 +420,13 @@ object dsl {
                           js.undefined)
 
   @inline def c[P](
-      _ctor: Instantiable1[P, ReactElement[_]]): BuildComponent[P] =
+      _ctor: Instantiable1[P, ReactElement]): BuildComponent[P] =
     new BuildComponent[P](_ctor.asInstanceOf[ComponentClass[P, ComponentState]],
                           js.undefined,
                           js.undefined)
 
   @inline def c[P](
-      _ctor: Instantiable2[P, _, ReactElement[_]]): BuildComponent[P] =
+      _ctor: Instantiable2[P, _, ReactElement]): BuildComponent[P] =
     new BuildComponent[P](_ctor.asInstanceOf[ComponentClass[P, ComponentState]],
                           js.undefined,
                           js.undefined)
@@ -453,7 +453,7 @@ object dsl {
     def createElement[P /* <: js.Object */ ](
         `type`: ComponentClass[P, ComponentState],
         props: Attributes with (P | scala.Null),
-        children: ReactNode*): ReactElement[P] = js.native
+        children: ReactNode*): ReactElement = js.native
   }
 
   @inline final class BuildComponent[P] private[dsl] (
@@ -478,7 +478,7 @@ object dsl {
         props,
       )
 
-    @inline def props(props: P, children: ReactNode*): ReactElement[P] = {
+    @inline def props(props: P, children: ReactNode*): ReactElement = {
       if (LinkingInfo.developmentMode && js.isUndefined(ctor))
         console.warn("Component was undefined",
                      props.asInstanceOf[js.Any],
@@ -489,7 +489,7 @@ object dsl {
       ^.asInstanceOf[Hack].createElement(ctor, fullProps(props), children: _*)
     }
 
-    @inline def noprops(children: ReactNode*): ReactElement[P] = {
+    @inline def noprops(children: ReactNode*): ReactElement = {
       if (LinkingInfo.developmentMode && js.isUndefined(ctor))
         console.warn("Component was undefined",
                      _key.asInstanceOf[js.Any],

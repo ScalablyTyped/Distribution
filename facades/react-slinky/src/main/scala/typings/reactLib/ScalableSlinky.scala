@@ -11,8 +11,8 @@ object ScalableSlinky {
   /* Support using ScalablyTyped components as slinky ExternalComponents */
   @inline implicit def fromExoticComponent[P <: js.Object](c: ExoticComponent[P]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
   @inline implicit def fromComponentClass[P <: js.Object](c: ComponentClass[P, _]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
-  @inline implicit def fromInstantiable1[P <: js.Object](c: Instantiable1[P, ReactElement[_]]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
-  @inline implicit def fromInstantiable2[P <: js.Object](c: Instantiable2[P, _, ReactElement[_]]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
+  @inline implicit def fromInstantiable1[P <: js.Object](c: Instantiable1[P, ReactElement]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
+  @inline implicit def fromInstantiable2[P <: js.Object](c: Instantiable2[P, _, ReactElement]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
   @inline implicit def fromComponentType[P <: js.Object](c: ComponentType[P]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
   @inline implicit def fromFc[P <: js.Object](c: FunctionComponent[P]): AwaitProps[P] = new AwaitProps[P](c.asInstanceOf[ComponentType[P]])
 
