@@ -12,12 +12,12 @@ trait FormItem
   @JSName("componentDidMount")
   def componentDidMount_MFormItem(): scala.Unit = js.native
   def getChildProp(prop: java.lang.String): js.Any = js.native
-  def getControls(children: reactLib.reactMod.ReactNode, recursively: scala.Boolean): js.Array[reactLib.reactMod.ReactElement[_]] = js.native
+  def getControls(children: reactLib.reactMod.ReactNode, recursively: scala.Boolean): js.Array[reactLib.reactMod.ReactElement] = js.native
   def getField(): js.Any = js.native
   def getHelpMessage(): js.UndefOr[js.Object | scala.Null] = js.native
   def getId(): js.Any = js.native
   def getMeta(): js.Any = js.native
-  def getOnlyControl(): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def getOnlyControl(): reactLib.reactMod.ReactElement | scala.Null = js.native
   def getValidateStatus(): antdLib.antdLibStrings.error | antdLib.antdLibStrings.Empty | antdLib.antdLibStrings.success | antdLib.antdLibStrings.validating = js.native
   def isRequired(): js.Any = js.native
   def onHelpAnimEnd(_key: java.lang.String, helpShow: scala.Boolean): scala.Unit = js.native

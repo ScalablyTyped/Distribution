@@ -13,7 +13,7 @@ object RefForwardProps {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactElement[_] = null,
+    children: reactLib.reactMod.ReactElement = null,
     innerRef: reactLib.reactMod.Ref[_] = null
   ): RefForwardProps = {
     val __obj = js.Dynamic.literal()

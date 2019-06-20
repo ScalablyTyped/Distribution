@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait CommandStateChangeConstants extends js.Object
 
+object CommandStateChangeConstants {
+  @scala.inline
+  def CSC_NAVIGATEBACK: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def CSC_NAVIGATEFORWARD: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def CSC_UPDATECOMMANDS: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

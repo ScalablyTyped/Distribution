@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait NavigationControlProps extends BaseControlProps {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var onViewStateChange: js.UndefOr[js.Function1[/* info */ ViewStateChangeInfo, scala.Unit]] = js.undefined
-  var onViewportChange: js.UndefOr[js.Function1[/* viewport */ ViewState, scala.Unit]] = js.undefined
+  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
+  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
   var showCompass: js.UndefOr[scala.Boolean] = js.undefined
   var showZoom: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -21,8 +21,8 @@ object NavigationControlProps {
     captureDrag: js.UndefOr[scala.Boolean] = js.undefined,
     captureScroll: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    onViewStateChange: /* info */ ViewStateChangeInfo => scala.Unit = null,
-    onViewportChange: /* viewport */ ViewState => scala.Unit = null,
+    onViewStateChange: ViewStateChangeHandler = null,
+    onViewportChange: ViewportChangeHandler = null,
     showCompass: js.UndefOr[scala.Boolean] = js.undefined,
     showZoom: js.UndefOr[scala.Boolean] = js.undefined
   ): NavigationControlProps = {
@@ -32,8 +32,8 @@ object NavigationControlProps {
     if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag)
     if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1(onViewportChange))
+    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(onViewStateChange)
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
     if (!js.isUndefined(showCompass)) __obj.updateDynamic("showCompass")(showCompass)
     if (!js.isUndefined(showZoom)) __obj.updateDynamic("showZoom")(showZoom)
     __obj.asInstanceOf[NavigationControlProps]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CancelSignal extends js.Object {
   /**
-    * Gets a value indicating whether cancellation was signalled.
+    * Gets a value indicating whether cancellation was signaled.
     */
   val signaled: scala.Boolean
   /**

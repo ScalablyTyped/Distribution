@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation._
     js.Function2[
       /* name */ java.lang.String, 
       /* index */ js.UndefOr[scala.Double], 
-      reactLib.reactMod.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
 }
@@ -57,7 +57,7 @@ object IColumnHeaderCellProps {
     menuIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element = null,
     menuRenderer: /* index */ js.UndefOr[scala.Double] => reactLib.reactMod.Global.JSXNs.Element = null,
     name: java.lang.String = null,
-    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps] = null,
+    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactElement = null,
     reorderHandle: reactLib.reactMod.Global.JSXNs.Element = null,
     resizeHandle: atBlueprintjsTableLib.libEsmInteractionsResizeHandleMod.ResizeHandle = null,
     style: reactLib.reactMod.CSSProperties = null

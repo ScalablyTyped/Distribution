@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait StepsProps
   extends antdDashMobileDashRnLib.libStepsPropsTypeMod.StepsPropsType {
   @JSName("children")
-  var children_StepsProps: js.Array[reactLib.reactMod.ReactElement[_]]
+  var children_StepsProps: js.Array[reactLib.reactMod.ReactElement]
   var direction: js.UndefOr[
     antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.vertical | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.horizontal
   ] = js.undefined
@@ -19,7 +19,7 @@ trait StepsProps
 object StepsProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactElement[_]],
+    children: js.Array[reactLib.reactMod.ReactElement],
     current: scala.Int | scala.Double = null,
     direction: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.vertical | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.horizontal = null,
     finishIcon: java.lang.String = null,

@@ -13,8 +13,6 @@ class DeviceOrientation ()
       DeviceOrientationProps, 
       js.Any
     ] {
-  @JSName("state")
-  var state_DeviceOrientation: DeviceOrientationProps = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDeviceOrientation(): scala.Unit = js.native
   @JSName("componentWillUnmount")

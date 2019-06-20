@@ -13,7 +13,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent], options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]], /**
     * The initial extended state
     */
-  context: stdLib.Readonly[TContext]) = this()
+  context: TContext) = this()
   var __cache: js.Any = js.native
   var __xstatenode: xstateLib.xstateLibNumbers.`true` = js.native
   /**
@@ -38,7 +38,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   /**
     * The initial extended state
     */
-  var context: js.UndefOr[stdLib.Readonly[TContext]] = js.native
+  var context: js.UndefOr[TContext] = js.native
   /**
     * The data sent with the "done.state._id_" event if this is a final state node.
     */

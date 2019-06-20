@@ -24,7 +24,7 @@ trait FooterData extends js.Object {
   var formatter: js.UndefOr[
     js.Function1[
       /* tableData */ js.Array[_], 
-      java.lang.String | scala.Double | reactLib.reactMod.ReactElement[_]
+      java.lang.String | scala.Double | reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   /**
@@ -39,7 +39,7 @@ object FooterData {
     columnIndex: scala.Double,
     label: java.lang.String,
     align: DataAlignType = null,
-    formatter: /* tableData */ js.Array[_] => java.lang.String | scala.Double | reactLib.reactMod.ReactElement[_] = null
+    formatter: /* tableData */ js.Array[_] => java.lang.String | scala.Double | reactLib.reactMod.ReactElement = null
   ): FooterData = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex, label = label)
     if (align != null) __obj.updateDynamic("align")(align)

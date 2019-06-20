@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DroppableProvided extends js.Object {
   var droppableProps: DroppableProvidedProps = js.native
-  var placeholder: js.UndefOr[reactLib.reactMod.ReactElement[stdLib.HTMLElement] | scala.Null] = js.native
+  var placeholder: js.UndefOr[reactLib.reactMod.ReactElement | scala.Null] = js.native
   def innerRef(): js.Any = js.native
   def innerRef(element: stdLib.HTMLElement): js.Any = js.native
 }

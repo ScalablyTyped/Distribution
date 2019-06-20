@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def CONTAINS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def CONTAINSNOT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def EQUAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def GREATEREQUAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def LESSEQUAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def NOTEQUAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def VALUE_FALSE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def VALUE_TRUE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

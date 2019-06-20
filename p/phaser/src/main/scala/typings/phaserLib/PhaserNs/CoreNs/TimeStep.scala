@@ -26,19 +26,21 @@ class TimeStep protected () extends js.Object {
   @JSName("callback")
   var callback_Original: phaserLib.PhaserNs.TypesNs.CoreNs.TimeStepCallback = js.native
   /**
-    * [description]
+    * The delta time, in ms, since the last game step. This is a clamped and smoothed average value.
     */
   var delta: phaserLib.integer = js.native
   /**
-    * [description]
+    * Internal array holding the previous delta values, used for delta smoothing.
     */
   var deltaHistory: js.Array[phaserLib.integer] = js.native
   /**
-    * [description]
+    * Internal index of the delta history position.
     */
   var deltaIndex: phaserLib.integer = js.native
   /**
-    * [description]
+    * The maximum number of delta values that are retained in order to calculate a smoothed moving average.
+    * 
+    * This can be changed in the Game Config via the `fps.deltaHistory` property. The default is 10.
     */
   var deltaSmoothingMax: phaserLib.integer = js.native
   /**
@@ -47,7 +49,8 @@ class TimeStep protected () extends js.Object {
     */
   val forceSetTimeOut: scala.Boolean = js.native
   /**
-    * [description]
+    * The current frame the game is on. This counter is incremented once every game step, regardless of how much
+    * time has passed and is unaffected by delta smoothing.
     */
   val frame: phaserLib.integer = js.native
   /**
@@ -59,13 +62,14 @@ class TimeStep protected () extends js.Object {
     */
   val game: phaserLib.PhaserNs.Game = js.native
   /**
-    * [description]
+    * Is the browser currently considered in focus by the Page Visibility API?
+    * This value is set in the `blur` method, which is called automatically by the Game instance.
     */
   val inFocus: scala.Boolean = js.native
   /**
-    * [description]
+    * The time, as returned by `performance.now` of the previous step.
     */
-  var lastTime: phaserLib.integer = js.native
+  var lastTime: scala.Double = js.native
   /**
     * The minimum fps rate you want the Time Step to run at.
     */
@@ -75,7 +79,15 @@ class TimeStep protected () extends js.Object {
     */
   val nextFpsUpdate: phaserLib.integer = js.native
   /**
-    * [description]
+    * The time, as returned by `performance.now` at the very start of the current step.
+    * This can differ from the `time` value in that it isn't calculated based on the delta value.
+    */
+  var now: scala.Double = js.native
+  /**
+    * The number of frames that the cooldown is set to after the browser panics over the FPS rate, usually
+    * as a result of switching tabs and regaining focus.
+    * 
+    * This can be changed in the Game Config via the `fps.panicMax` property. The default is 120.
     */
   var panicMax: phaserLib.integer = js.native
   /**
@@ -84,8 +96,9 @@ class TimeStep protected () extends js.Object {
   val raf: phaserLib.PhaserNs.DOMNs.RequestAnimationFrame = js.native
   /**
     * The actual elapsed time in ms between one update and the next.
-    * Unlike with `delta` no smoothing, capping, or averaging is applied to this value.
-    * So please be careful when using this value in calculations.
+    * 
+    * Unlike with `delta`, no smoothing, capping, or averaging is applied to this value.
+    * So please be careful when using this value in math calculations.
     */
   var rawDelta: scala.Double = js.native
   /**
@@ -96,9 +109,10 @@ class TimeStep protected () extends js.Object {
     */
   val running: scala.Boolean = js.native
   /**
-    * [description]
+    * The time at which the game started running. This value is adjusted if the game is then
+    * paused and resumes.
     */
-  var startTime: phaserLib.integer = js.native
+  var startTime: scala.Double = js.native
   /**
     * A flag that is set once the TimeStep has started running and toggled when it stops.
     */
@@ -112,11 +126,11 @@ class TimeStep protected () extends js.Object {
     */
   var targetFps: phaserLib.integer = js.native
   /**
-    * [description]
+    * The time, calculated at the start of the current step, as smoothed by the delta value.
     */
-  var time: phaserLib.integer = js.native
+  var time: scala.Double = js.native
   /**
-    * Called when the DOM window.onBlur event triggers.
+    * Called by the Game instance when the DOM window.onBlur event triggers.
     */
   def blur(): scala.Unit = js.native
   /**
@@ -129,7 +143,7 @@ class TimeStep protected () extends js.Object {
     */
   def destroy(): scala.Unit = js.native
   /**
-    * Called when the DOM window.onFocus event triggers.
+    * Called by the Game instance when the DOM window.onFocus event triggers.
     */
   def focus(): scala.Unit = js.native
   /**
@@ -145,7 +159,8 @@ class TimeStep protected () extends js.Object {
     */
   def pause(): scala.Unit = js.native
   /**
-    * [description]
+    * Resets the time, lastTime, fps averages and delta history.
+    * Called automatically when a browser sleeps them resumes.
     */
   def resetDelta(): scala.Unit = js.native
   /**
@@ -166,15 +181,14 @@ class TimeStep protected () extends js.Object {
     * The main step method. This is called each time the browser updates, either by Request Animation Frame,
     * or by Set Timeout. It is responsible for calculating the delta values, frame totals, cool down history and more.
     * You generally should never call this method directly.
-    * @param time The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.
     */
-  def step(time: scala.Double): scala.Unit = js.native
+  def step(): scala.Unit = js.native
   /**
     * Stops the TimeStep running.
     */
   def stop(): TimeStep = js.native
   /**
-    * Manually calls TimeStep.step, passing in the performance.now value to it.
+    * Manually calls `TimeStep.step`.
     */
   def tick(): scala.Unit = js.native
   /**

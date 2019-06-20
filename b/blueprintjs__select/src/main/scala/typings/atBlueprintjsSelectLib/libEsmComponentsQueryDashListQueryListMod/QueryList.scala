@@ -59,13 +59,13 @@ class QueryList[T] protected ()
   def setQuery(
     query: java.lang.String,
     resetActiveItem: js.UndefOr[scala.Nothing],
-    props: stdLib.Readonly[atBlueprintjsSelectLib.Anon_Children] with stdLib.Readonly[IQueryListProps[T]]
+    props: atBlueprintjsSelectLib.Anon_Children with IQueryListProps[T]
   ): scala.Unit = js.native
   def setQuery(query: java.lang.String, resetActiveItem: scala.Boolean): scala.Unit = js.native
   def setQuery(
     query: java.lang.String,
     resetActiveItem: scala.Boolean,
-    props: stdLib.Readonly[atBlueprintjsSelectLib.Anon_Children] with stdLib.Readonly[IQueryListProps[T]]
+    props: atBlueprintjsSelectLib.Anon_Children with IQueryListProps[T]
   ): scala.Unit = js.native
   /* private */ def wouldCreatedItemMatchSomeExistingItem(): js.Any = js.native
 }

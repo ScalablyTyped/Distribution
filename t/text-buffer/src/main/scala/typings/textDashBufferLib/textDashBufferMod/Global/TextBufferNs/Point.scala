@@ -25,7 +25,7 @@ trait Point extends js.Object {
   def copy(): Point
   // Operations
   /** Makes this point immutable and returns itself. */
-  def freeze(): stdLib.Readonly[Point]
+  def freeze(): Point
   /**
     *  Returns a boolean indicating whether this point has the same row and
     *  column as the given Point.
@@ -69,7 +69,7 @@ object Point {
     column: scala.Double,
     compare: PointCompatible => scala.Double,
     copy: () => Point,
-    freeze: () => stdLib.Readonly[Point],
+    freeze: () => Point,
     isEqual: PointCompatible => scala.Boolean,
     isGreaterThan: PointCompatible => scala.Boolean,
     isGreaterThanOrEqual: PointCompatible => scala.Boolean,

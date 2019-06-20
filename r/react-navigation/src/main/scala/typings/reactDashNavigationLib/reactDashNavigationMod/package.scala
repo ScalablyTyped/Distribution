@@ -23,7 +23,7 @@ package object reactDashNavigationMod {
   type NavigationRoute[Params] = NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   type NavigationRouteConfig = NavigationComponent | (reactDashNavigationLib.Anon_NavigationOptionsPath with NavigationScreenRouteConfig)
   type NavigationRouteConfigMap = org.scalablytyped.runtime.StringDictionary[NavigationRouteConfig]
-  type NavigationSceneRenderer = js.Function0[reactLib.reactMod.ReactElement[js.Any] | scala.Null]
+  type NavigationSceneRenderer = js.Function0[reactLib.reactMod.ReactElement | scala.Null]
   type NavigationSceneRendererProps = NavigationTransitionProps
   type NavigationScreenComponent[Params, Options, Props] = (reactLib.reactMod.ComponentType[(NavigationScreenProps[Params, Options]) with Props]) with reactDashNavigationLib.Anon_NavigationOptionsNavigationScreenConfig[Options]
   type NavigationScreenConfig[Options] = Options | (js.Function1[

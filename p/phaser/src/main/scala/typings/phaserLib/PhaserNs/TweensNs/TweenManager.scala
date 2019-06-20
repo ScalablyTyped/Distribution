@@ -30,26 +30,28 @@ class TweenManager protected () extends js.Object {
     * This value scales the time delta between two frames, thus influencing the speed of time for all Tweens owned by this Tween Manager.
     */
   var timeScale: scala.Double = js.native
-  /**
-    * Create a Tween and add it to the active Tween list.
-    * @param config The configuration object for the Tween as per the {@link Phaser.Tweens.Builders.TweenBuilder}.
-    */
   def add(config: js.Object): Tween = js.native
   /**
     * Create a Tween and add it to the active Tween list.
-    * @param config The configuration object for the Number Tween as per the {@link Phaser.Tweens.Builders.NumberTweenBuilder}.
+    * @param config The configuration object for the Tween.
     */
-  def addCounter(config: js.Object): Tween = js.native
+  def add(config: phaserLib.PhaserNs.TypesNs.TweensNs.TweenBuilderConfig): Tween = js.native
+  /**
+    * Create a Number Tween and add it to the active Tween list.
+    * @param config The configuration object for the Number Tween.
+    */
+  def addCounter(config: phaserLib.PhaserNs.TypesNs.TweensNs.NumberTweenBuilderConfig): Tween = js.native
+  def create(config: js.Object): Tween = js.native
   /**
     * Create a Tween and return it, but do NOT add it to the active or pending Tween lists.
-    * @param config The configuration object for the Tween as per {@link Phaser.Tweens.Builders.TweenBuilder}.
+    * @param config The configuration object for the Tween.
     */
-  def create(config: js.Object): Tween = js.native
+  def create(config: phaserLib.PhaserNs.TypesNs.TweensNs.TweenBuilderConfig): Tween = js.native
   /**
     * Create a Tween Timeline and return it, but do NOT add it to the active or pending Tween lists.
     * @param config The configuration object for the Timeline and its Tweens.
     */
-  def createTimeline(config: js.Object): Timeline = js.native
+  def createTimeline(config: phaserLib.PhaserNs.TypesNs.TweensNs.TimelineBuilderConfig): Timeline = js.native
   /**
     * The Scene that owns this plugin is being destroyed.
     * We need to shutdown and then kill off all external references.
@@ -137,7 +139,7 @@ class TweenManager protected () extends js.Object {
     * Create a Tween Timeline and add it to the active Tween list/
     * @param config The configuration object for the Timeline and its Tweens.
     */
-  def timeline(config: js.Object): Timeline = js.native
+  def timeline(config: phaserLib.PhaserNs.TypesNs.TweensNs.TimelineBuilderConfig): Timeline = js.native
   /**
     * Updates all Tweens and Timelines of the Tween Manager.
     * @param timestamp The current time in milliseconds.

@@ -11,12 +11,3 @@ import scala.scalajs.js.annotation._
 */
 trait CodeSigningPolicy extends js.Object
 
-object CodeSigningPolicy {
-  @scala.inline
-  def Optional: fridaDashGumLib.fridaDashGumLibStrings.optional = this.cast("optional")
-  @scala.inline
-  def Required: fridaDashGumLib.fridaDashGumLibStrings.required = this.cast("required")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-}
-

@@ -20,12 +20,12 @@ object jsx extends js.Object {
     reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
     reactLib.HTMLInputElement
   ] = js.native
-  def apply[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactElement[P] = js.native
+  def apply[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactElement = js.native
   def apply[P /* <: js.Object */](
     `type`: java.lang.String,
     props: reactLib.reactMod.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def apply[P /* <: js.Object */](
     `type`: reactLib.reactMod.ClassType[
       P, 
@@ -42,18 +42,18 @@ object jsx extends js.Object {
     props: (reactLib.reactMod.ClassAttributes[reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]]) with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.CElement[P, reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]] = js.native
-  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement[P] = js.native
+  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement = js.native
   def apply[P /* <: js.Object */](
     `type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState],
     props: reactLib.reactMod.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
-  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.FunctionComponent[P]): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
+  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.FunctionComponent[P]): reactLib.reactMod.ReactElement = js.native
   def apply[P /* <: js.Object */](
     `type`: reactLib.reactMod.FunctionComponent[P],
     props: reactLib.reactMod.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def apply[P /* <: reactLib.reactMod.DOMAttributes[T] */, T /* <: reactLib.Element */](
     `type`: java.lang.String,
     props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),

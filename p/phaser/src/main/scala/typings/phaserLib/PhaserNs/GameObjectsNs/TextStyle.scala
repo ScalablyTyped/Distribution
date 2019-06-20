@@ -20,7 +20,7 @@ class TextStyle protected () extends js.Object {
     * @param text The Text object that this TextStyle is styling.
     * @param style The style settings to set.
     */
-  def this(text: Text, style: js.Object) = this()
+  def this(text: Text, style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle) = this()
   /**
     * The text alignment.
     */
@@ -30,11 +30,11 @@ class TextStyle protected () extends js.Object {
     */
   var backgroundColor: java.lang.String = js.native
   /**
-    * The amount of horizontal padding adding to the width of the text when calculating the font metrics.
+    * The amount of horizontal padding added to the width of the text when calculating the font metrics.
     */
   var baselineX: scala.Double = js.native
   /**
-    * The amount of vertical padding adding to the width of the text when calculating the font metrics.
+    * The amount of vertical padding added to the height of the text when calculating the font metrics.
     */
   var baselineY: scala.Double = js.native
   /**
@@ -127,11 +127,14 @@ class TextStyle protected () extends js.Object {
     */
   def getTextMetrics(): phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextMetrics = js.native
   /**
-    * Set the text alignment.
+    * Set the alignment of the text in this Text object.
     * 
-    * Expects values like `'left'`, `'right'`, `'center'` or `'justified'`.
-    * @param align The text alignment.
+    * The argument can be one of: `left`, `right`, `center` or `justify`.
+    * 
+    * Alignment only works if the Text object has more than one line of text.
+    * @param align The text alignment for multi-line text. Default 'left'.
     */
+  def setAlign(): Text = js.native
   def setAlign(align: java.lang.String): Text = js.native
   /**
     * Set the background color.
@@ -265,9 +268,13 @@ class TextStyle protected () extends js.Object {
     * @param updateText Whether to update the text immediately. Default true.
     * @param setDefaults Use the default values is not set, or the local values. Default false.
     */
-  def setStyle(style: js.Object): Text = js.native
-  def setStyle(style: js.Object, updateText: scala.Boolean): Text = js.native
-  def setStyle(style: js.Object, updateText: scala.Boolean, setDefaults: scala.Boolean): Text = js.native
+  def setStyle(style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle): Text = js.native
+  def setStyle(style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle, updateText: scala.Boolean): Text = js.native
+  def setStyle(
+    style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle,
+    updateText: scala.Boolean,
+    setDefaults: scala.Boolean
+  ): Text = js.native
   /**
     * Set the test string to use when measuring the font.
     * @param string The test string to use when measuring the font.

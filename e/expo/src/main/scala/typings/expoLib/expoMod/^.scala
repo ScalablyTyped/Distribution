@@ -12,8 +12,8 @@ object ^ extends js.Object {
   val PROVIDER_DEFAULT: scala.Null = js.native
   val PROVIDER_GOOGLE: expoLib.expoLibStrings.google = js.native
   def registerRootComponent(component: reactLib.reactMod.ComponentType[js.Object]): scala.Unit = js.native
-  def takeSnapshotAsync(node: reactLib.reactMod.ReactElement[_]): js.Promise[java.lang.String] = js.native
-  def takeSnapshotAsync(node: reactLib.reactMod.ReactElement[_], options: expoLib.Anon_Base64): js.Promise[java.lang.String] = js.native
+  def takeSnapshotAsync(node: reactLib.reactMod.ReactElement): js.Promise[java.lang.String] = js.native
+  def takeSnapshotAsync(node: reactLib.reactMod.ReactElement, options: expoLib.Anon_Base64): js.Promise[java.lang.String] = js.native
   def takeSnapshotAsync(node: reactLib.reactMod.RefObject[_]): js.Promise[java.lang.String] = js.native
   def takeSnapshotAsync(node: reactLib.reactMod.RefObject[_], options: expoLib.Anon_Base64): js.Promise[java.lang.String] = js.native
   def takeSnapshotAsync(node: scala.Double): js.Promise[java.lang.String] = js.native

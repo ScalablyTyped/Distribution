@@ -40,13 +40,13 @@ trait DropdownProps extends js.Object {
     * argument should spread through to an element containing _both_ the
     * menu and toggle in order to handle keyboard events for focus management.
     */
-  def children(renderProps: DropdownRenderProps): reactLib.reactMod.ReactElement[_]
+  def children(renderProps: DropdownRenderProps): reactLib.reactMod.ReactElement
 }
 
 object DropdownProps {
   @scala.inline
   def apply(
-    children: DropdownRenderProps => reactLib.reactMod.ReactElement[_],
+    children: DropdownRenderProps => reactLib.reactMod.ReactElement,
     alignEnd: js.UndefOr[scala.Boolean] = js.undefined,
     drop: Directions = null,
     itemSelector: java.lang.String = null,

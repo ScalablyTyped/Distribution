@@ -10,23 +10,17 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * Rendered when the list is empty. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListEmptyComponent: js.UndefOr[
-    reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] | scala.Null
-  ] = js.undefined
+  var ListEmptyComponent: js.UndefOr[reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement | scala.Null] = js.undefined
   /**
     * Rendered at the bottom of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListFooterComponent: js.UndefOr[
-    reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] | scala.Null
-  ] = js.undefined
+  var ListFooterComponent: js.UndefOr[reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement | scala.Null] = js.undefined
   /**
     * Rendered at the top of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
-  var ListHeaderComponent: js.UndefOr[
-    reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] | scala.Null
-  ] = js.undefined
+  var ListHeaderComponent: js.UndefOr[reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement | scala.Null] = js.undefined
   /**
     * The default accessor functions assume this is an Array<{key: string}> but you can override
     * getItem, getItemCount, and keyExtractor to handle any type of index-based data.
@@ -119,9 +113,7 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
   /**
     * Render a custom scroll component, e.g. with a differently styled `RefreshControl`.
     */
-  var renderScrollComponent: js.UndefOr[
-    js.Function1[/* props */ ScrollViewProps, reactLib.reactMod.ReactElement[ScrollViewProps]]
-  ] = js.undefined
+  var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, reactLib.reactMod.ReactElement]] = js.undefined
   /**
     * Amount of time between low-pri item render batches, e.g. for rendering items quite a ways off
     * screen. Similar fill rate/responsiveness tradeoff as `maxToRenderPerBatch`.
@@ -142,9 +134,9 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
 object VirtualizedListWithoutRenderItemProps {
   @scala.inline
   def apply[ItemT](
-    ListEmptyComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    ListFooterComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    ListHeaderComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
+    ListEmptyComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    ListFooterComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    ListHeaderComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
@@ -237,10 +229,10 @@ object VirtualizedListWithoutRenderItemProps {
     pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     progressViewOffset: scala.Int | scala.Double = null,
-    refreshControl: reactLib.reactMod.ReactElement[RefreshControlProps] = null,
+    refreshControl: reactLib.reactMod.ReactElement = null,
     refreshing: js.UndefOr[scala.Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
-    renderScrollComponent: /* props */ ScrollViewProps => reactLib.reactMod.ReactElement[ScrollViewProps] = null,
+    renderScrollComponent: /* props */ ScrollViewProps => reactLib.reactMod.ReactElement = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEventThrottle: scala.Int | scala.Double = null,

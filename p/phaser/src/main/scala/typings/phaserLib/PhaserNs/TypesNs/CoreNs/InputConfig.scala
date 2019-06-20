@@ -15,10 +15,6 @@ trait InputConfig extends js.Object {
     */
   var gamepad: js.UndefOr[scala.Boolean | GamepadInputConfig] = js.undefined
   /**
-    * Should Phaser use a queued input system for native DOM Events or not?
-    */
-  var inputQueue: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * Keyboard input configuration. `true` uses the default configuration and `false` disables keyboard input.
     */
   var keyboard: js.UndefOr[scala.Boolean | KeyboardInputConfig] = js.undefined
@@ -45,7 +41,6 @@ object InputConfig {
   def apply(
     activePointers: js.UndefOr[phaserLib.integer] = js.undefined,
     gamepad: scala.Boolean | GamepadInputConfig = null,
-    inputQueue: js.UndefOr[scala.Boolean] = js.undefined,
     keyboard: scala.Boolean | KeyboardInputConfig = null,
     mouse: scala.Boolean | MouseInputConfig = null,
     smoothFactor: scala.Int | scala.Double = null,
@@ -55,7 +50,6 @@ object InputConfig {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(activePointers)) __obj.updateDynamic("activePointers")(activePointers)
     if (gamepad != null) __obj.updateDynamic("gamepad")(gamepad.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputQueue)) __obj.updateDynamic("inputQueue")(inputQueue)
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
     if (smoothFactor != null) __obj.updateDynamic("smoothFactor")(smoothFactor.asInstanceOf[js.Any])

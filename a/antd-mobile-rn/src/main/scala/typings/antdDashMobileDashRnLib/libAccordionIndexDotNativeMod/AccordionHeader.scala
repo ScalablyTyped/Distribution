@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AccordionHeader extends js.Object {
-  var content: reactLib.reactMod.ReactElement[_]
+  var content: reactLib.reactMod.ReactElement
   var style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   var title: java.lang.String
 }
@@ -14,7 +14,7 @@ trait AccordionHeader extends js.Object {
 object AccordionHeader {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactElement[_],
+    content: reactLib.reactMod.ReactElement,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle],
     title: java.lang.String
   ): AccordionHeader = {

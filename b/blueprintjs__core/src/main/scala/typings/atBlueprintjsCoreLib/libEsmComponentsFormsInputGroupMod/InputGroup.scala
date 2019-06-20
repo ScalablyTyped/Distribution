@@ -15,8 +15,6 @@ class InputGroup ()
     ] {
   var refHandlers: js.Any = js.native
   var rightElement: js.Any = js.native
-  @JSName("state")
-  var state_InputGroup: IInputGroupState = js.native
   @JSName("componentDidMount")
   def componentDidMount_MInputGroup(): scala.Unit = js.native
   @JSName("componentDidUpdate")

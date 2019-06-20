@@ -19,7 +19,7 @@ object KernelNs extends js.Object {
     /**
       * The message that is being signaled.
       */
-    var msg: stdLib.Readonly[atJupyterlabServicesLib.libKernelMessagesMod.KernelMessageNs.IMessage]
+    var msg: atJupyterlabServicesLib.libKernelMessagesMod.KernelMessageNs.IMessage
   }
   
   /**

@@ -277,7 +277,7 @@ trait MenuListProps extends js.Object {
   var slot: js.UndefOr[java.lang.String] = js.undefined
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  var subheader: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var subheader: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
@@ -463,7 +463,7 @@ object MenuListProps {
     slot: java.lang.String = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
-    subheader: reactLib.reactMod.ReactElement[_] = null,
+    subheader: reactLib.reactMod.ReactElement = null,
     suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,

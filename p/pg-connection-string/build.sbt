@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pg-connection-string"
-version := "2.0.0-db7ddf"
+version := "2.1.0-5d0bfb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

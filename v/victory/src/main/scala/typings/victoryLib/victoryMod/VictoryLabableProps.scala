@@ -19,12 +19,12 @@ trait VictoryLabableProps extends js.Object {
     * data point, they should be created by composing VictoryArea with VictoryScatter
     * @default <VictoryLabel/>
     */
-  var labelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var labelComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
 }
 
 object VictoryLabableProps {
   @scala.inline
-  def apply(labelComponent: reactLib.reactMod.ReactElement[_] = null): VictoryLabableProps = {
+  def apply(labelComponent: reactLib.reactMod.ReactElement = null): VictoryLabableProps = {
     val __obj = js.Dynamic.literal()
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
     __obj.asInstanceOf[VictoryLabableProps]

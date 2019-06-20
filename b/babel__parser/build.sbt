@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "babel__parser"
-version := "7.4.5-2f1a54"
+version := "7.4.5-f1edbb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "babel__types" % "7.4.4-127ebc",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "babel__types" % "7.4.4-b76834",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

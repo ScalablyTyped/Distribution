@@ -15,7 +15,6 @@ class UA ()
   var configuration: sipDotJsLib.libUAMod.UANs.Options = js.native
   var contact: sipDotJsLib.Anon_Options = js.native
   var data: js.Any = js.native
-  var environListener: js.Any = js.native
   var error: js.Any = js.native
   /**
     * Configuration checker.
@@ -54,6 +53,8 @@ class UA ()
   var subscriptions: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.libSubscriptionMod.Subscription] = js.native
   var transport: sipDotJsLib.libCoreMod.Transport = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
+  /** Unload listener. */
+  var unloadListener: js.Any = js.native
   var userAgentCore: sipDotJsLib.libCoreMod.UserAgentCore = js.native
   /**
     * Get the session to which the request belongs to, if any.

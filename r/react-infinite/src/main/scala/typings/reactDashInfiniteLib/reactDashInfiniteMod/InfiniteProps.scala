@@ -11,11 +11,11 @@ trait InfiniteProps
   var containerHeight: js.UndefOr[scala.Double] = js.undefined
   var displayBottomUpwards: js.UndefOr[scala.Boolean] = js.undefined
   var elementHeight: scala.Double | js.Array[scala.Double]
-  var handleScroll: js.UndefOr[js.Function1[/* node */ reactLib.reactMod.ReactElement[_], scala.Unit]] = js.undefined
+  var handleScroll: js.UndefOr[js.Function1[/* node */ reactLib.reactMod.ReactElement, scala.Unit]] = js.undefined
   var infiniteLoadBeginBottomOffset: js.UndefOr[scala.Double] = js.undefined
   var infiniteLoadBeginEdgeOffset: js.UndefOr[scala.Double] = js.undefined
   var isInfiniteLoading: js.UndefOr[scala.Boolean] = js.undefined
-  var loadingSpinnerDelegate: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var loadingSpinnerDelegate: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var onInfiniteLoad: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var preloadAdditionalHeight: js.UndefOr[scala.Double | js.Object] = js.undefined
   var preloadBatchSize: js.UndefOr[scala.Double | js.Object] = js.undefined
@@ -31,12 +31,12 @@ object InfiniteProps {
     className: java.lang.String = null,
     containerHeight: scala.Int | scala.Double = null,
     displayBottomUpwards: js.UndefOr[scala.Boolean] = js.undefined,
-    handleScroll: /* node */ reactLib.reactMod.ReactElement[_] => scala.Unit = null,
+    handleScroll: /* node */ reactLib.reactMod.ReactElement => scala.Unit = null,
     infiniteLoadBeginBottomOffset: scala.Int | scala.Double = null,
     infiniteLoadBeginEdgeOffset: scala.Int | scala.Double = null,
     isInfiniteLoading: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,
-    loadingSpinnerDelegate: reactLib.reactMod.ReactElement[_] = null,
+    loadingSpinnerDelegate: reactLib.reactMod.ReactElement = null,
     onInfiniteLoad: () => scala.Unit = null,
     preloadAdditionalHeight: scala.Double | js.Object = null,
     preloadBatchSize: scala.Double | js.Object = null,

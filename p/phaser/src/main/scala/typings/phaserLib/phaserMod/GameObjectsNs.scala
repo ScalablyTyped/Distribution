@@ -778,6 +778,9 @@ object GameObjectsNs extends js.Object {
     * thickness for the start and end of the line, allowing you to render lines that taper-off.
     * 
     * If you need to draw multiple lines in a sequence you may wish to use the Polygon Shape instead.
+    * 
+    * Be aware that as with all Game Objects the default origin is 0.5. If you need to draw a Line
+    * between two points and want the x1/y1 values to match the x/y values, then set the origin to 0.
     */
   @js.native
   class Line protected ()
@@ -1169,8 +1172,8 @@ object GameObjectsNs extends js.Object {
       * @param text The text this Text object will display.
       * @param style The text style configuration object.
       */
-    def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: java.lang.String, style: js.Object) = this()
-    def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: js.Array[java.lang.String], style: js.Object) = this()
+    def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: java.lang.String, style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle) = this()
+    def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: js.Array[java.lang.String], style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle) = this()
   }
   
   /**
@@ -1188,7 +1191,7 @@ object GameObjectsNs extends js.Object {
       * @param text The Text object that this TextStyle is styling.
       * @param style The style settings to set.
       */
-    def this(text: phaserLib.PhaserNs.GameObjectsNs.Text, style: js.Object) = this()
+    def this(text: phaserLib.PhaserNs.GameObjectsNs.Text, style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle) = this()
   }
   
   /**

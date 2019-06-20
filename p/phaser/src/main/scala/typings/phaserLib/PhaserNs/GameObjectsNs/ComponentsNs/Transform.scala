@@ -25,6 +25,14 @@ trait Transform extends js.Object {
     */
   var rotation: scala.Double = js.native
   /**
+    * This is a special setter that allows you to set both the horizontal and vertical scale of this Game Object
+    * to the same value, at the same time. When reading this value the result returned is `(scaleX + scaleY) / 2`.
+    * 
+    * Use of this property implies you wish the horizontal and vertical scales to be equal to each other. If this
+    * isn't the case, use the `scaleX` or `scaleY` properties instead.
+    */
+  var scale: scala.Double = js.native
+  /**
     * The horizontal scale of this Game Object.
     */
   var scaleX: scala.Double = js.native
@@ -55,6 +63,12 @@ trait Transform extends js.Object {
     */
   def getLocalTransformMatrix(): TransformMatrix = js.native
   def getLocalTransformMatrix(tempMatrix: TransformMatrix): TransformMatrix = js.native
+  /**
+    * Gets the sum total rotation of all of this Game Objects parent Containers.
+    * 
+    * The returned value is in radians and will be zero if this Game Object has no parent container.
+    */
+  def getParentRotation(): scala.Double = js.native
   /**
     * Gets the world transform matrix for this Game Object, factoring in any parent Containers.
     * @param tempMatrix The matrix to populate with the values from this Game Object.

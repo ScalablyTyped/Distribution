@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
-  var children: js.UndefOr[js.Function1[/* data */ RenderProps, reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[js.Function1[/* data */ RenderProps, reactLib.reactMod.ReactElement]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var decimal: js.UndefOr[java.lang.String] = js.undefined
   var decimals: js.UndefOr[scala.Double] = js.undefined
@@ -51,7 +51,7 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: /* data */ RenderProps => reactLib.reactMod.ReactElement[_] = null,
+    children: /* data */ RenderProps => reactLib.reactMod.ReactElement = null,
     className: java.lang.String = null,
     decimal: java.lang.String = null,
     decimals: scala.Int | scala.Double = null,

@@ -27,16 +27,16 @@ object ^ extends js.Object {
     reactLib.reactMod.ComponentType[_]
   ] = js.native
   def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = js.native
-  def createEagerElement(`type`: java.lang.String): reactLib.reactMod.ReactElement[_] = js.native
-  def createEagerElement(`type`: java.lang.String, props: js.Object): reactLib.reactMod.ReactElement[_] = js.native
-  def createEagerElement(`type`: java.lang.String, props: js.Object, children: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactElement[_] = js.native
-  def createEagerElement(`type`: reactLib.reactMod.ComponentType[_]): reactLib.reactMod.ReactElement[_] = js.native
-  def createEagerElement(`type`: reactLib.reactMod.ComponentType[_], props: js.Object): reactLib.reactMod.ReactElement[_] = js.native
+  def createEagerElement(`type`: java.lang.String): reactLib.reactMod.ReactElement = js.native
+  def createEagerElement(`type`: java.lang.String, props: js.Object): reactLib.reactMod.ReactElement = js.native
+  def createEagerElement(`type`: java.lang.String, props: js.Object, children: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactElement = js.native
+  def createEagerElement(`type`: reactLib.reactMod.ComponentType[_]): reactLib.reactMod.ReactElement = js.native
+  def createEagerElement(`type`: reactLib.reactMod.ComponentType[_], props: js.Object): reactLib.reactMod.ReactElement = js.native
   def createEagerElement(
     `type`: reactLib.reactMod.ComponentType[_],
     props: js.Object,
     children: reactLib.reactMod.ReactNode
-  ): reactLib.reactMod.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def createEagerFactory(`type`: java.lang.String): componentFactory = js.native
   def createEagerFactory(`type`: reactLib.reactMod.ComponentType[_]): componentFactory = js.native
   def createEventHandler[T, TSubs /* <: Subscribable[T] */](): EventHandlerOf[T, TSubs] = js.native

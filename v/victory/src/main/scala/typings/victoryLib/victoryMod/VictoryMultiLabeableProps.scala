@@ -20,7 +20,7 @@ trait VictoryMultiLabeableProps extends VictoryLabableProps {
 object VictoryMultiLabeableProps {
   @scala.inline
   def apply(
-    labelComponent: reactLib.reactMod.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement = null,
     labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null
   ): VictoryMultiLabeableProps = {
     val __obj = js.Dynamic.literal()

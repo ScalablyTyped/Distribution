@@ -7,79 +7,65 @@ import scala.scalajs.js.annotation._
 
 package object relayDashRuntimeMod {
   type CFragmentMap[TFragment] = org.scalablytyped.runtime.StringDictionary[TFragment]
-  type CSnapshot[TNode] = CSelector[TNode] with relayDashRuntimeLib.Anon_Data
-  type ConcreteBatchRequest = js.Any
-  type ConcreteFragment = js.Any
-  type ConcreteFragmentDefinition = js.Object
-  type ConcreteOperationDefinition = js.Object
-  type ConcreteRequest = js.Any
   type DataID = java.lang.String
   type ExecuteFunction = js.Function4[
-    /* operation */ js.Object, 
+    /* request */ RequestParameters, 
     /* variables */ Variables, 
     /* cacheConfig */ CacheConfig, 
-    /* uploadables */ js.UndefOr[UploadableMap], 
-    js.Promise[js.Any]
+    /* uploadables */ js.UndefOr[UploadableMap | scala.Null], 
+    RelayObservable[GraphQLResponse]
   ]
   type FetchFunction = js.Function4[
-    /* operation */ RequestNode, 
+    /* request */ RequestParameters, 
     /* variables */ Variables, 
     /* cacheConfig */ CacheConfig, 
-    /* uploadables */ js.UndefOr[UploadableMap], 
-    ObservableFromValue[QueryPayload]
+    /* uploadables */ js.UndefOr[UploadableMap | scala.Null], 
+    ObservableFromValue[GraphQLResponse]
   ]
+  type FragmentMap = CFragmentMap[ReaderFragment]
+  type FragmentReference = scala.Nothing with relayDashRuntimeLib.Anon_FragmentReference
   type FragmentSpecResults = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type GeneratedNodeMap = org.scalablytyped.runtime.StringDictionary[GraphQLTaggedNode]
-  type GraphQLTaggedNode = (js.Function0[ConcreteFragment | RequestNode]) | relayDashRuntimeLib.Anon_Classic
-  type HandlerProvider = js.Function1[/* name */ java.lang.String, HandlerInterface | scala.Null]
-  type MutableRecordSource = RecordSource
-  type Observable[T] = RelayObservable[T]
-  type ObservableFromValue[T] = RelayObservable[T] | js.Promise[T] | T
-  type OperationSelector = COperationSelector[js.Any, js.Any]
-  type OptimisticUpdate = js.Any
-  type PayloadData = js.Any
+  /* Rewritten from type alias, can be one of: 
+    - ReaderFragment
+    - ConcreteRequest
+    - js.Function0[ReaderFragment | ConcreteRequest]
+    - relayDashRuntimeLib.Anon_Modern
+  */
+  type GraphQLTaggedNode = _GraphQLTaggedNode | (js.Function0[ReaderFragment | ConcreteRequest])
+  type GraphiQLPrinter = js.Function2[/* request */ RequestParameters, /* variables */ Variables, java.lang.String]
+  type HandlerProvider = js.Function1[/* name */ java.lang.String, js.UndefOr[Handler | scala.Null]]
+  type NormalizationSelector = CNormalizationSelector[NormalizationSelectableNode]
+  type ObservableFromValue[T] = Subscribable[T] | js.Promise[T] | T
+  type OperationDescriptor = COperationDescriptor[ReaderSelectableNode, NormalizationSelectableNode, ConcreteRequest]
+  type PayloadData = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type PayloadExtensions = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type ProfileHandler = js.Function2[
+    /* name */ java.lang.String, 
+    /* state */ js.UndefOr[js.Any], 
+    js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
+  ]
   type Props = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type QueryPayload = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type RangeBehaviors = RangeBehaviorsFunction | RangeBehaviorsObject
-  type RangeBehaviorsFunction = js.Function1[
+  type RangeBehaviors = (js.Function1[
     /* connectionArgs */ org.scalablytyped.runtime.StringDictionary[js.Any], 
-    relayDashRuntimeLib.relayDashRuntimeLibStrings.APPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.IGNORE | relayDashRuntimeLib.relayDashRuntimeLibStrings.PREPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.REFETCH | relayDashRuntimeLib.relayDashRuntimeLibStrings.REMOVE
-  ]
-  type RangeBehaviorsObject = org.scalablytyped.runtime.StringDictionary[
-    relayDashRuntimeLib.relayDashRuntimeLibStrings.APPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.IGNORE | relayDashRuntimeLib.relayDashRuntimeLibStrings.PREPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.REFETCH | relayDashRuntimeLib.relayDashRuntimeLibStrings.REMOVE
-  ]
-  type ReaderFragment = js.Object
-  type ReadyStateChangeCallback = js.Function1[/* readyState */ ReadyState, scala.Unit]
-  type RecordMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[RelayInMemoryRecordSource | scala.Null]]
-  type RelayConcreteNode = js.Any
-  type RelayContainer = js.Any
-  type RelayDebugger = js.Any
-  type RelayInMemoryRecordSource = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type RelayMutationRequest = js.Any
-  type RelayMutationTransaction = js.Any
-  type RelayMutationTransactionCommitFailureCallback = js.Function2[
-    /* transaction */ RelayMutationTransaction, 
-    /* preventAutoRollback */ js.Function0[scala.Unit], 
-    scala.Unit
-  ]
-  type RelayMutationTransactionCommitSuccessCallback = js.Function1[/* response */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
-  type RelayQL = js.Function2[/* strings */ js.Array[java.lang.String], /* repeated */ js.Any, RelayConcreteNode]
-  type RelayQueryRequest = js.Any
-  type RelayQuerySet = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type RelayResponsePayload = js.Any
-  type RequestNode = ConcreteRequest | ConcreteBatchRequest
-  type Selector = CSelector[js.Any]
+    RangeOperation
+  ]) | org.scalablytyped.runtime.StringDictionary[RangeOperation]
+  type ReaderSelector = CReaderSelector[ReaderSelectableNode]
+  type Record = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type RecordMap = // theoretically, this should be `[dataID: DataID]`, but `DataID` is a string.
+  org.scalablytyped.runtime.StringDictionary[js.UndefOr[Record]]
+  type RelayContext = CRelayContext[Environment]
+  type Scheduler = js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]
   type SelectorData = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type SelectorStoreUpdater[T] = js.Function2[/* store */ RecordSourceSelectorProxy, /* data */ T, scala.Unit]
-  type Snapshot = CSnapshot[js.Any]
-  type Source[T] = js.Function0[js.Any]
+  type SelectorStoreUpdater[TData] = js.Function2[/* store */ RecordSourceSelectorProxy, /* data */ TData, scala.Unit]
+  type Snapshot = CSnapshot[ReaderSelectableNode, OperationDescriptor]
+  type Source[T] = js.Function1[/* sink */ Sink[T], scala.Unit | Subscription | js.Function0[js.Any]]
   type StoreUpdater = js.Function1[/* store */ RecordSourceProxy, scala.Unit]
   type SubscribeFunction = js.Function4[
-    /* operation */ RequestNode, 
+    /* request */ RequestParameters, 
     /* variables */ Variables, 
     /* cacheConfig */ CacheConfig, 
-    /* observer */ LegacyObserver[QueryPayload], 
-    RelayObservable[QueryPayload] | Disposable
+    /* observer */ js.UndefOr[LegacyObserver[GraphQLResponse]], 
+    RelayObservable[GraphQLResponse] | Disposable
   ]
   type Uploadable = stdLib.File | stdLib.Blob
   type UploadableMap = org.scalablytyped.runtime.StringDictionary[Uploadable]

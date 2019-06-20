@@ -14,3 +14,26 @@ import scala.scalajs.js.annotation._
 */
 trait DashStyle extends js.Object
 
+object DashStyle {
+  /** the dash is a rectangle */
+  @scala.inline
+  def RECT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** the dash is a rectangle, with the size of the dash given in relation to the length of the line */
+  @scala.inline
+  def RECTRELATIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /**
+    * the dash is a point
+    *
+    * the line will get a half circle as additional cap
+    *
+    * the lines join with an arc
+    */
+  @scala.inline
+  def ROUND: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** the dash is a point, with the size of the dash given in relation to the length of the line */
+  @scala.inline
+  def ROUNDRELATIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

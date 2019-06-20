@@ -29,7 +29,7 @@ object GridProps {
     itemStyle: reactLib.reactMod.CSSProperties = null,
     onClick: (/* dataItem */ js.UndefOr[antdDashMobileLib.esGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    renderItem: (/* dataItem */ js.UndefOr[antdDashMobileLib.esGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactElement[_] = null,
+    renderItem: (/* dataItem */ js.UndefOr[antdDashMobileLib.esGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactElement = null,
     square: js.UndefOr[scala.Boolean] = js.undefined
   ): GridProps = {
     val __obj = js.Dynamic.literal()

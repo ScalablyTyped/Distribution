@@ -9,7 +9,7 @@ trait ToastProps extends js.Object {
   var color: js.UndefOr[gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.orange] = js.undefined
   var icon: js.UndefOr[gestaltLib.gestaltLibStrings.`arrow-circle-forward`] = js.undefined
   var text: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var thumbnail: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var thumbnail: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
 }
 
 object ToastProps {
@@ -18,7 +18,7 @@ object ToastProps {
     color: gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.orange = null,
     icon: gestaltLib.gestaltLibStrings.`arrow-circle-forward` = null,
     text: java.lang.String | js.Array[java.lang.String] = null,
-    thumbnail: reactLib.reactMod.ReactElement[_] = null
+    thumbnail: reactLib.reactMod.ReactElement = null
   ): ToastProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

@@ -51,7 +51,7 @@ package object swanNs {
   type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type ScrollEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, Props]])
   type TouchCancelEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.touchcancel]
   type TouchEndEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.touchend]
   type TouchForceChangeEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.touchforcechange]

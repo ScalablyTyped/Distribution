@@ -1,7 +1,7 @@
 
 # Scala.js typings for linkify-issues
 
-Typings are for version 1.3
+Typings are for version 2.0.0
 
 ## Library description:
 Linkify GitHub issue references
@@ -24,21 +24,11 @@ Linkify GitHub issue references
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for linkify-issues 1.3
-// Project: https://github.com/sindresorhus/linkify-issues#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

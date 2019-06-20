@@ -320,8 +320,12 @@ class ScaleManager protected ()
     * 
     * This is called automatically by the Scale Manager when the browser window size changes,
     * as long as it is using a Scale Mode other than 'NONE'.
+    * @param previousWidth The previous width of the game. Only set if the gameSize has changed.
+    * @param previousHeight The previous height of the game. Only set if the gameSize has changed.
     */
   def refresh(): this.type = js.native
+  def refresh(previousWidth: scala.Double): this.type = js.native
+  def refresh(previousWidth: scala.Double, previousHeight: scala.Double): this.type = js.native
   /**
     * Removes the fullscreen target that was added to the DOM.
     */
@@ -334,7 +338,7 @@ class ScaleManager protected ()
     * If all you want to do is change the size of the parent, see the `setParentSize` method.
     * 
     * If all you want is to change the base size of the game, but still have the Scale Manager
-    * manage all the scaling, then see the `setGameSize` method.
+    * manage all the scaling (i.e. you're **not** using `NO_SCALE`), then see the `setGameSize` method.
     * 
     * This method will set the `gameSize`, `baseSize` and `displaySize` components to the given
     * dimensions. It will then resize the canvas width and height to the values given, by
@@ -351,6 +355,10 @@ class ScaleManager protected ()
   def resize(width: scala.Double, height: scala.Double): this.type = js.native
   /**
     * This method will set a new size for your game.
+    * 
+    * It should only be used if you're looking to change the base size of your game and are using
+    * one of the Scale Manager scaling modes, i.e. `FIT`. If you're using `NO_SCALE` and wish to
+    * change the game and canvas size directly, then please use the `resize` method instead.
     * @param width The new width of the game.
     * @param height The new height of the game.
     */

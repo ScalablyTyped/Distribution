@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashSortableDashGridMod {
   type SortableGrid = SortableGridStatic
-  type SortableGridItem = reactLib.reactMod.ReactElement[SortableGridItemProps]
+  type SortableGridItem = reactLib.reactMod.ReactElement
 }

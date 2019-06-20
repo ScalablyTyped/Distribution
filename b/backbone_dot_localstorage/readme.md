@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone_dot_localstorage
 
-Typings are for version 1.0.0
+Typings are for version 1.0
 
 ## Library description:
 [![Build Status](https://travis-ci.org/jeromegn/Backbone.localStorage.svg?branch=master)](https://travis-ci.org/jeromegn/Backbone.localStorage) [![Coverage Status](https://coveralls.io/repos/github/jeromegn/Backbone.localStorage/badge.svg?branch=master)](
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for backbone.localStorage 1.0.0
+// Type definitions for backbone.localStorage 1.0
 // Project: https://github.com/jeromegn/Backbone.localStorage
 // Definitions by: Louis Grignon <https://github.com/lgrignon>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

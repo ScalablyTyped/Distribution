@@ -21,7 +21,7 @@ trait IconMenuProps extends js.Object {
   var clickCloseDelay: js.UndefOr[scala.Double] = js.undefined
   var desktop: js.UndefOr[scala.Boolean] = js.undefined
   var disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var iconButtonElement: reactLib.reactMod.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton]
+  var iconButtonElement: reactLib.reactMod.ReactElement
   var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var initiallyKeyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
   var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -69,7 +69,7 @@ trait IconMenuProps extends js.Object {
 object IconMenuProps {
   @scala.inline
   def apply(
-    iconButtonElement: reactLib.reactMod.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton],
+    iconButtonElement: reactLib.reactMod.ReactElement,
     anchorOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     animation: reactLib.reactMod.ComponentClass[

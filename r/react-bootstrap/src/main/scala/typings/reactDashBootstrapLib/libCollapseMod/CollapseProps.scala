@@ -14,7 +14,7 @@ trait CollapseProps
   var getDimensionValue: js.UndefOr[
     js.Function2[
       /* dimension */ scala.Double, 
-      /* element */ reactLib.reactMod.ReactElement[_], 
+      /* element */ reactLib.reactMod.ReactElement, 
       scala.Double
     ]
   ] = js.undefined
@@ -28,7 +28,7 @@ object CollapseProps {
   @scala.inline
   def apply(
     dimension: reactDashBootstrapLib.reactDashBootstrapLibStrings.height | reactDashBootstrapLib.reactDashBootstrapLibStrings.width | reactDashBootstrapLib.Fn_String = null,
-    getDimensionValue: (/* dimension */ scala.Double, /* element */ reactLib.reactMod.ReactElement[_]) => scala.Double = null,
+    getDimensionValue: (/* dimension */ scala.Double, /* element */ reactLib.reactMod.ReactElement) => scala.Double = null,
     in: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,
     onEnter: /* node */ stdLib.HTMLElement => _ = null,

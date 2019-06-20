@@ -12,8 +12,6 @@ class Checkbox ()
   var handleChange: js.Any = js.native
   var handleInputRef: js.Any = js.native
   var input: js.Any = js.native
-  @JSName("state")
-  var state_Checkbox: ICheckboxState = js.native
   @JSName("componentDidMount")
   def componentDidMount_MCheckbox(): scala.Unit = js.native
   @JSName("componentDidUpdate")

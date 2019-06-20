@@ -12,8 +12,6 @@ class Portal ()
   @JSName("context")
   var context_Portal: IPortalContext = js.native
   var portalElement: js.Any = js.native
-  @JSName("state")
-  var state_Portal: IPortalState = js.native
   @JSName("componentDidMount")
   def componentDidMount_MPortal(): scala.Unit = js.native
   @JSName("componentDidUpdate")

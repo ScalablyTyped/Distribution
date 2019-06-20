@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait _Chain[T] extends js.Object {
+trait _Chain[T, V] extends js.Object {
   /**
     * Wrapped type `number`.
     * @see _.after
     **/
-  def after(func: js.Function): _Chain[T] = js.native
+  def after(func: js.Function): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.all
@@ -23,7 +23,7 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `object`.
     * @see _.allKeys
     **/
-  def allKeys(): _Chain[java.lang.String] = js.native
+  def allKeys(): _Chain[java.lang.String, java.lang.String] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.any
@@ -35,7 +35,7 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `number`.
     * @see _.before
     **/
-  def before(fn: js.Function): _Chain[T] = js.native
+  def before(fn: js.Function): _Chain[T, T] = js.native
   /* ***********
     * Functions *
     ************ */
@@ -43,12 +43,12 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `Function`.
     * @see _.bind
     **/
-  def bind(`object`: js.Any, args: js.Any*): _Chain[T] = js.native
+  def bind(`object`: js.Any, args: js.Any*): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.bindAll
     **/
-  def bindAll(methodNames: java.lang.String*): _Chain[T] = js.native
+  def bindAll(methodNames: java.lang.String*): _Chain[T, T] = js.native
   /********** *
     * Chaining *
     *********** */
@@ -56,27 +56,27 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any`.
     * @see _.chain
     **/
-  def chain(): _Chain[T] = js.native
+  def chain(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[][]`.
     * @see _.chunk
     **/
-  def chunk(): _Chain[T] = js.native
+  def chunk(): _Chain[T, T] = js.native
   /**
     * @see _.map
     **/
-  def collect[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult] = js.native
-  def collect[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult] = js.native
+  def collect[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult, TResult] = js.native
+  def collect[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult, TResult] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.compact
     **/
-  def compact(): _Chain[T] = js.native
+  def compact(): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function[]`.
     * @see _.compose
     **/
-  def compose(functions: js.Function*): _Chain[T] = js.native
+  def compose(functions: js.Function*): _Chain[T, T] = js.native
   /************* *
     * Array proxy *
     ************** */
@@ -86,12 +86,12 @@ trait _Chain[T] extends js.Object {
     * @param arr Arrays and/or values to concatenate into a new array. See the discussion below for details.
     * @return A new array comprised of the array on which it is called
     **/
-  def concat(arr: js.Array[T]*): _Chain[T] = js.native
+  def concat(arr: js.Array[T]*): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.constant
     **/
-  def constant(): _Chain[T] = js.native
+  def constant(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.contains
@@ -102,46 +102,46 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.countBy
     **/
-  def countBy(): _Chain[T] = js.native
+  def countBy(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.countBy
     **/
-  def countBy(iterator: java.lang.String): _Chain[T] = js.native
-  def countBy(iterator: java.lang.String, context: js.Any): _Chain[T] = js.native
-  def countBy(iterator: ListIterator[T, _]): _Chain[T] = js.native
-  def countBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T] = js.native
+  def countBy(iterator: java.lang.String): _Chain[T, T] = js.native
+  def countBy(iterator: java.lang.String, context: js.Any): _Chain[T, T] = js.native
+  def countBy(iterator: ListIterator[T, _]): _Chain[T, T] = js.native
+  def countBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.create
     **/
-  def create(): _Chain[T] = js.native
-  def create(props: js.Object): _Chain[T] = js.native
+  def create(): _Chain[T, T] = js.native
+  def create(props: js.Object): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.debounce
     **/
-  def debounce(wait: scala.Double): _Chain[T] = js.native
-  def debounce(wait: scala.Double, immediate: scala.Boolean): _Chain[T] = js.native
+  def debounce(wait: scala.Double): _Chain[T, T] = js.native
+  def debounce(wait: scala.Double, immediate: scala.Boolean): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.defaults
     **/
-  def defaults(defaults: js.Any*): _Chain[T] = js.native
+  def defaults(defaults: js.Any*): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.defer
     **/
-  def defer(args: js.Any*): _Chain[T] = js.native
+  def defer(args: js.Any*): _Chain[T, T] = js.native
   /**
     * @see _.delay
     **/
-  def delay(args: js.Any*): _Chain[T] = js.native
+  def delay(args: js.Any*): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.delay
     **/
-  def delay(wait: scala.Double, args: js.Any*): _Chain[T] = js.native
+  def delay(wait: scala.Double, args: js.Any*): _Chain[T, T] = js.native
   /**
     * @see _.find
     **/
@@ -159,12 +159,12 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.difference
     **/
-  def difference(others: List[T]*): _Chain[T] = js.native
+  def difference(others: List[T]*): _Chain[T, T] = js.native
   /**
     * @see _.rest
     **/
-  def drop(): _Chain[T] = js.native
-  def drop(n: scala.Double): _Chain[T] = js.native
+  def drop(): _Chain[T, T] = js.native
+  def drop(n: scala.Double): _Chain[T, T] = js.native
   /* *************
     * Collections *
     ************* */
@@ -175,13 +175,13 @@ trait _Chain[T] extends js.Object {
   /**
     * @see _.each
     **/
-  def each(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit])): _Chain[T] = js.native
-  def each(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit]), context: js.Any): _Chain[T] = js.native
+  def each(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit])): _Chain[T, T] = js.native
+  def each(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit]), context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `string`.
     * @see _.escape
     **/
-  def escape(): _Chain[T] = js.native
+  def escape(): _Chain[T, T] = js.native
   /**
     * @see _.all
     **/
@@ -192,13 +192,13 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `object`.
     * @see _.extend
     **/
-  def extend(sources: js.Any*): _Chain[T] = js.native
+  def extend(sources: js.Any*): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.filter
     **/
-  def filter(iterator: ListIterator[T, scala.Boolean]): _Chain[T] = js.native
-  def filter(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[T] = js.native
+  def filter(iterator: ListIterator[T, scala.Boolean]): _Chain[T, T] = js.native
+  def filter(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[T, T] = js.native
   /**
     * @see _.find
     **/
@@ -224,8 +224,8 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `object`.
     * @see _.extend
     **/
-  def findKey(predicate: ObjectIterator[_, scala.Boolean]): _Chain[T] = js.native
-  def findKey(predicate: ObjectIterator[_, scala.Boolean], context: js.Any): _Chain[T] = js.native
+  def findKey(predicate: ObjectIterator[_, scala.Boolean]): _Chain[T, T] = js.native
+  def findKey(predicate: ObjectIterator[_, scala.Boolean], context: js.Any): _Chain[T, T] = js.native
   def findLastIndex[T](predicate: js.Object): _ChainSingle[scala.Double] = js.native
   def findLastIndex[T](predicate: js.Object, context: js.Any): _ChainSingle[scala.Double] = js.native
   /**
@@ -250,13 +250,13 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.first
     **/
-  def first(n: scala.Double): _Chain[T] = js.native
+  def first(n: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.flatten
     **/
-  def flatten(): _Chain[_] = js.native
-  def flatten(shallow: scala.Boolean): _Chain[_] = js.native
+  def flatten(): _Chain[_, _] = js.native
+  def flatten(shallow: scala.Boolean): _Chain[_, _] = js.native
   /**
     * @see _.reduce
     **/
@@ -272,13 +272,13 @@ trait _Chain[T] extends js.Object {
   /**
     * @see _.each
     **/
-  def forEach(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit])): _Chain[T] = js.native
-  def forEach(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit]), context: js.Any): _Chain[T] = js.native
+  def forEach(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit])): _Chain[T, T] = js.native
+  def forEach(iterator: (ListIterator[T, scala.Unit]) | (ObjectIterator[T, scala.Unit]), context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.functions
     **/
-  def functions(): _Chain[T] = js.native
+  def functions(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.groupBy
@@ -296,15 +296,15 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `object`.
     * @see _.has
     **/
-  def has(key: java.lang.String): _Chain[T] = js.native
+  def has(key: java.lang.String): _Chain[T, T] = js.native
   /**
     * @see _.first
     **/
-  def head(): _Chain[T] = js.native
+  def head(): _Chain[T, T] = js.native
   /**
     * @see _.first
     **/
-  def head(n: scala.Double): _Chain[T] = js.native
+  def head(n: scala.Double): _Chain[T, T] = js.native
   /********* *
     * Utility *
     ********** */
@@ -312,7 +312,7 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any`.
     * @see _.identity
     **/
-  def identity(): _Chain[T] = js.native
+  def identity(): _Chain[T, T] = js.native
   /**
     * Alias for 'contains'.
     * @see contains
@@ -329,14 +329,14 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.indexBy
     **/
-  def indexBy(iterator: java.lang.String): _Chain[T] = js.native
-  def indexBy(iterator: java.lang.String, context: js.Any): _Chain[T] = js.native
+  def indexBy(iterator: java.lang.String): _Chain[T, T] = js.native
+  def indexBy(iterator: java.lang.String, context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.indexBy
     **/
-  def indexBy(iterator: ListIterator[T, _]): _Chain[T] = js.native
-  def indexBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T] = js.native
+  def indexBy(iterator: ListIterator[T, _]): _Chain[T, T] = js.native
+  def indexBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.indexOf
@@ -351,8 +351,8 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.initial
     **/
-  def initial(): _Chain[T] = js.native
-  def initial(n: scala.Double): _Chain[T] = js.native
+  def initial(): _Chain[T, T] = js.native
+  def initial(n: scala.Double): _Chain[T, T] = js.native
   /**
     * @see _.reduce
     **/
@@ -363,118 +363,118 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[][]`.
     * @see _.intersection
     **/
-  def intersection(arrays: List[T]*): _Chain[T] = js.native
+  def intersection(arrays: List[T]*): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.invert
     **/
-  def invert(): _Chain[T] = js.native
+  def invert(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.invoke
     **/
-  def invoke(methodName: java.lang.String, args: js.Any*): _Chain[T] = js.native
+  def invoke(methodName: java.lang.String, args: js.Any*): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isArguments
     **/
-  def isArguments(): _Chain[T] = js.native
+  def isArguments(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isArray
     **/
-  def isArray(): _Chain[T] = js.native
+  def isArray(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isBoolean
     **/
-  def isBoolean(): _Chain[T] = js.native
+  def isBoolean(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isDate
     **/
-  def isDate(): _Chain[T] = js.native
+  def isDate(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isElement
     **/
-  def isElement(): _Chain[T] = js.native
+  def isElement(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isEmpty
     **/
-  def isEmpty(): _Chain[T] = js.native
+  def isEmpty(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isEqual
     **/
-  def isEqual(other: js.Any): _Chain[T] = js.native
+  def isEqual(other: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isError
     **/
-  def isError(): _Chain[T] = js.native
+  def isError(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isFinite
     **/
-  def isFinite(): _Chain[T] = js.native
+  def isFinite(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isFunction
     **/
-  def isFunction(): _Chain[T] = js.native
+  def isFunction(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isMatch
     **/
-  def isMatch(): _Chain[T] = js.native
+  def isMatch(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isNaN
     **/
-  def isNaN(): _Chain[T] = js.native
+  def isNaN(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isNull
     **/
-  def isNull(): _Chain[T] = js.native
+  def isNull(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isNumber
     **/
-  def isNumber(): _Chain[T] = js.native
+  def isNumber(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isObject
     **/
-  def isObject(): _Chain[T] = js.native
+  def isObject(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isRegExp
     **/
-  def isRegExp(): _Chain[T] = js.native
+  def isRegExp(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isString
     **/
-  def isString(): _Chain[T] = js.native
+  def isString(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isSymbol
     **/
-  def isSymbol(): _Chain[T] = js.native
+  def isSymbol(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.isUndefined
     **/
-  def isUndefined(): _Chain[T] = js.native
+  def isUndefined(): _Chain[T, T] = js.native
   /**
     * Wrapped type `string|Function|Object`.
     * @see _.iteratee
     **/
-  def iteratee(): _Chain[T] = js.native
-  def iteratee(context: js.Any): _Chain[T] = js.native
+  def iteratee(): _Chain[T, T] = js.native
+  def iteratee(context: js.Any): _Chain[T, T] = js.native
   /**
     * Join all elements of an array into a string.
     * @param separator Optional. Specifies a string to separate each element of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma.
@@ -489,7 +489,7 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `object`.
     * @see _.keys
     **/
-  def keys(): _Chain[java.lang.String] = js.native
+  def keys(): _Chain[java.lang.String, java.lang.String] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.last
@@ -499,7 +499,7 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.last
     **/
-  def last(n: scala.Double): _Chain[T] = js.native
+  def last(n: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.lastIndexOf
@@ -510,13 +510,13 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.map
     **/
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult] = js.native
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult] = js.native
+  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult, TResult] = js.native
+  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult, TResult] = js.native
   /**
     * Wrapped type `object`.
     * @see _.mapObject
     **/
-  def mapObject(fn: ListIterator[T, _]): _Chain[T] = js.native
+  def mapObject(fn: ListIterator[T, _]): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.map
@@ -532,12 +532,12 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.matcher
     **/
-  def matcher(): _Chain[T] = js.native
+  def matcher(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.matches
     **/
-  def matches(): _Chain[T] = js.native
+  def matches(): _Chain[T, T] = js.native
   /**
     * Wrapped type `number[]`.
     * @see _.max
@@ -553,12 +553,12 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `Function`.
     * @see _.memoize
     **/
-  def memoize(): _Chain[T] = js.native
-  def memoize(hashFn: js.Function1[/* n */ js.Any, java.lang.String]): _Chain[T] = js.native
+  def memoize(): _Chain[T, T] = js.native
+  def memoize(hashFn: js.Function1[/* n */ js.Any, java.lang.String]): _Chain[T, T] = js.native
   /**
     * @see _.functions
     **/
-  def methods(): _Chain[T] = js.native
+  def methods(): _Chain[T, T] = js.native
   /**
     * Wrapped type `number[]`.
     * @see _.min
@@ -574,67 +574,72 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `object`.
     * @see _.mixin
     **/
-  def mixin(): _Chain[T] = js.native
+  def mixin(): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.negate
     **/
-  def negate(): _Chain[T] = js.native
+  def negate(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.noop
     **/
-  def noop(): _Chain[T] = js.native
+  def noop(): _Chain[T, T] = js.native
   /**
     * @see _.object
     **/
-  def `object`(): _Chain[T] = js.native
+  def `object`(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[][]`.
     * @see _.object
     **/
-  def `object`(keyValuePairs: js.Array[_]*): _Chain[T] = js.native
-  def `object`(values: js.Any): _Chain[T] = js.native
-  def omit(iteratee: js.Function): _Chain[T] = js.native
+  def `object`(keyValuePairs: js.Array[_]*): _Chain[T, T] = js.native
+  def `object`(values: js.Any): _Chain[T, T] = js.native
+  def omit(iteratee: js.Function): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.omit
     **/
-  def omit(keys: java.lang.String*): _Chain[T] = js.native
-  def omit(keys: js.Array[java.lang.String]): _Chain[T] = js.native
+  def omit(keys: java.lang.String*): _Chain[T, T] = js.native
+  def omit(keys: js.Array[java.lang.String]): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.once
     **/
-  def once(): _Chain[T] = js.native
+  def once(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.pairs
     **/
-  def pairs(): _Chain[js.Tuple2[java.lang.String, _]] = js.native
+  def pairs(): _Chain[js.Tuple2[java.lang.String, _], js.Tuple2[java.lang.String, _]] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.partial
     **/
-  def partial(args: js.Any*): _Chain[T] = js.native
+  def partial(args: js.Any*): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.partition
     **/
-  def partition(iterator: ListIterator[T, scala.Boolean]): _Chain[js.Array[T]] = js.native
-  def partition(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[js.Array[T]] = js.native
-  def pick(fn: js.Function3[/* value */ js.Any, /* key */ js.Any, /* object */ js.Any, _]): _Chain[T] = js.native
+  def partition(iterator: ListIterator[T, scala.Boolean]): _Chain[js.Array[T], js.Array[T]] = js.native
+  def partition(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[js.Array[T], js.Array[T]] = js.native
   /**
     * Wrapped type `object`.
     * @see _.pick
     **/
-  def pick(keys: js.Any*): _Chain[T] = js.native
-  def pick(keys: js.Array[_]): _Chain[T] = js.native
+  def pick[K /* <: java.lang.String */](keys: K*): _Chain[TypeOfDictionary[stdLib.Pick[V, K]], stdLib.Pick[V, K]] = js.native
+  def pick[K /* <: java.lang.String */](keys: js.Array[K]): _Chain[TypeOfDictionary[stdLib.Pick[V, K]], stdLib.Pick[V, K]] = js.native
+  def pick[K /* <: java.lang.String */](
+    predicate: ObjectIterator[
+      /* import warning: ImportType.apply Failed type conversion: V[K] */ js.Any, 
+      scala.Boolean
+    ]
+  ): _Chain[TypeOfDictionary[stdLib.Pick[V, K]], stdLib.Pick[V, K]] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.pluck
     **/
-  def pluck(propertyName: java.lang.String): _Chain[_] = js.native
+  def pluck(propertyName: java.lang.String): _Chain[_, _] = js.native
   /**
     * Removes the last element from an array and returns that element.
     * @return Returns the popped element.
@@ -644,39 +649,39 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `string`.
     * @see _.property
     **/
-  def property(): _Chain[T] = js.native
+  def property(): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.propertyOf
     **/
-  def propertyOf(): _Chain[T] = js.native
+  def propertyOf(): _Chain[T, T] = js.native
   /**
     * Adds one or more elements to the end of an array and returns the new length of the array.
     * @param item The elements to add to the end of the array.
     * @return The array with the element added to the end.
     **/
-  def push(item: T*): _Chain[T] = js.native
+  def push(item: T*): _Chain[T, T] = js.native
   /**
     * Wrapped type `number`.
     * @see _.random
     **/
-  def random(): _Chain[T] = js.native
+  def random(): _Chain[T, T] = js.native
   /**
     * Wrapped type `number`.
     * @see _.random
     **/
-  def random(max: scala.Double): _Chain[T] = js.native
+  def random(max: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `number`.
     * @see _.range
     **/
-  def range(): _Chain[T] = js.native
+  def range(): _Chain[T, T] = js.native
   /**
     * Wrapped type `number`.
     * @see _.range
     **/
-  def range(stop: scala.Double): _Chain[T] = js.native
-  def range(stop: scala.Double, step: scala.Double): _Chain[T] = js.native
+  def range(stop: scala.Double): _Chain[T, T] = js.native
+  def range(stop: scala.Double, step: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.reduce
@@ -695,45 +700,45 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.reject
     **/
-  def reject(iterator: ListIterator[T, scala.Boolean]): _Chain[T] = js.native
-  def reject(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[T] = js.native
+  def reject(iterator: ListIterator[T, scala.Boolean]): _Chain[T, T] = js.native
+  def reject(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.rest
     **/
-  def rest(): _Chain[T] = js.native
-  def rest(n: scala.Double): _Chain[T] = js.native
+  def rest(): _Chain[T, T] = js.native
+  def rest(n: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.once
     **/
-  def restArgs(): _Chain[T] = js.native
-  def restArgs(startIndex: scala.Double): _Chain[T] = js.native
+  def restArgs(): _Chain[T, T] = js.native
+  def restArgs(startIndex: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.result
     **/
-  def result(property: java.lang.String): _Chain[T] = js.native
-  def result(property: java.lang.String, defaultValue: js.Any): _Chain[T] = js.native
+  def result(property: java.lang.String): _Chain[T, T] = js.native
+  def result(property: java.lang.String, defaultValue: js.Any): _Chain[T, T] = js.native
   /**
     * Reverses an array in place. The first array element becomes the last and the last becomes the first.
     * @return The reversed array.
     **/
-  def reverse(): _Chain[T] = js.native
+  def reverse(): _Chain[T, T] = js.native
   /**
     * @see _.sample
     **/
-  def sample[T](): _Chain[T] = js.native
+  def sample[T](): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.sample
     **/
-  def sample[T](n: scala.Double): _Chain[T] = js.native
+  def sample[T](n: scala.Double): _Chain[T, T] = js.native
   /**
     * @see _.filter
     **/
-  def select(iterator: ListIterator[T, scala.Boolean]): _Chain[T] = js.native
-  def select(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[T] = js.native
+  def select(iterator: ListIterator[T, scala.Boolean]): _Chain[T, T] = js.native
+  def select(iterator: ListIterator[T, scala.Boolean], context: js.Any): _Chain[T, T] = js.native
   /**
     * Removes the first element from an array and returns that element. This method changes the length of the array.
     * @return The shifted element.
@@ -743,7 +748,7 @@ trait _Chain[T] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.shuffle
     **/
-  def shuffle(): _Chain[T] = js.native
+  def shuffle(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.size
@@ -755,8 +760,8 @@ trait _Chain[T] extends js.Object {
     * @param end Optional. Zero-based index at which to end extraction. slice extracts up to but not including end.
     * @return A shallow copy of a portion of an array into a new array object.
     **/
-  def slice(start: scala.Double): _Chain[T] = js.native
-  def slice(start: scala.Double, end: scala.Double): _Chain[T] = js.native
+  def slice(start: scala.Double): _Chain[T, T] = js.native
+  def slice(start: scala.Double, end: scala.Double): _Chain[T, T] = js.native
   /**
     * @see _.any
     **/
@@ -768,21 +773,21 @@ trait _Chain[T] extends js.Object {
     * @param compareFn Optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
     * @return The sorted array.
     **/
-  def sort(): _Chain[T] = js.native
-  def sort(compareFn: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): _Chain[T] = js.native
+  def sort(): _Chain[T, T] = js.native
+  def sort(compareFn: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.sortBy
     **/
-  def sortBy(): _Chain[T] = js.native
+  def sortBy(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.sortBy
     **/
-  def sortBy(iterator: java.lang.String): _Chain[T] = js.native
-  def sortBy(iterator: java.lang.String, context: js.Any): _Chain[T] = js.native
-  def sortBy(iterator: ListIterator[T, _]): _Chain[T] = js.native
-  def sortBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T] = js.native
+  def sortBy(iterator: java.lang.String): _Chain[T, T] = js.native
+  def sortBy(iterator: java.lang.String, context: js.Any): _Chain[T, T] = js.native
+  def sortBy(iterator: ListIterator[T, _]): _Chain[T, T] = js.native
+  def sortBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.sortedIndex
@@ -797,132 +802,132 @@ trait _Chain[T] extends js.Object {
     * @param items The element to add to the array. If you don't specify any elements, splice will only remove elements from the array.
     * @return An array containing the deleted elements. If only one element is removed, an array of one element is returned. If no elements are removed, an empty array is returned.
     **/
-  def splice(index: scala.Double, quantity: scala.Double, items: T*): _Chain[T] = js.native
+  def splice(index: scala.Double, quantity: scala.Double, items: T*): _Chain[T, T] = js.native
   /**
     * @see _.rest
     **/
-  def tail(): _Chain[T] = js.native
-  def tail(n: scala.Double): _Chain[T] = js.native
+  def tail(): _Chain[T, T] = js.native
+  def tail(n: scala.Double): _Chain[T, T] = js.native
   /**
     * @see _.first
     **/
-  def take(): _Chain[T] = js.native
+  def take(): _Chain[T, T] = js.native
   /**
     * @see _.first
     **/
-  def take(n: scala.Double): _Chain[T] = js.native
+  def take(n: scala.Double): _Chain[T, T] = js.native
   /**
     * Wrapped type `object`.
     * @see _.tap
     **/
-  def tap(interceptor: js.Function1[/* repeated */ js.Any, _]): _Chain[T] = js.native
+  def tap(interceptor: js.Function1[/* repeated */ js.Any, _]): _Chain[T, T] = js.native
   /**
     * Wrapped type `string`.
     * @see _.template
     **/
-  def template(): js.Function1[/* repeated */ js.Any, _Chain[T]] = js.native
-  def template(settings: TemplateSettings): js.Function1[/* repeated */ js.Any, _Chain[T]] = js.native
+  def template(): js.Function1[/* repeated */ js.Any, _Chain[T, T]] = js.native
+  def template(settings: TemplateSettings): js.Function1[/* repeated */ js.Any, _Chain[T, T]] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.throttle
     **/
-  def throttle(wait: scala.Double): _Chain[T] = js.native
-  def throttle(wait: scala.Double, options: ThrottleSettings): _Chain[T] = js.native
+  def throttle(wait: scala.Double): _Chain[T, T] = js.native
+  def throttle(wait: scala.Double, options: ThrottleSettings): _Chain[T, T] = js.native
   /**
     * Wrapped type `number`.
     * @see _.times
     **/
-  def times[TResult](iterator: js.Function1[/* n */ scala.Double, TResult]): _Chain[T] = js.native
-  def times[TResult](iterator: js.Function1[/* n */ scala.Double, TResult], context: js.Any): _Chain[T] = js.native
+  def times[TResult](iterator: js.Function1[/* n */ scala.Double, TResult]): _Chain[T, T] = js.native
+  def times[TResult](iterator: js.Function1[/* n */ scala.Double, TResult], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.toArray
     **/
-  def toArray(): _Chain[T] = js.native
+  def toArray(): _Chain[T, T] = js.native
   /**
     * Wrapped type `string`.
     * @see _.unescape
     **/
-  def unescape(): _Chain[T] = js.native
+  def unescape(): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[][]`.
     * @see _.union
     **/
-  def union(arrays: List[T]*): _Chain[T] = js.native
+  def union(arrays: List[T]*): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.uniq
     **/
-  def uniq(): _Chain[T] = js.native
-  def uniq(isSorted: scala.Boolean): _Chain[T] = js.native
-  def uniq(isSorted: scala.Boolean, iterator: IterateePropertyShorthand): _Chain[T] = js.native
-  def uniq(isSorted: scala.Boolean, iterator: ListIterator[T, _]): _Chain[T] = js.native
-  def uniq[TSort](iterator: IterateePropertyShorthand): _Chain[T] = js.native
-  def uniq[TSort](iterator: IterateePropertyShorthand, context: js.Any): _Chain[T] = js.native
-  def uniq[TSort](iterator: ListIterator[T, TSort]): _Chain[T] = js.native
-  def uniq[TSort](iterator: ListIterator[T, TSort], context: js.Any): _Chain[T] = js.native
+  def uniq(): _Chain[T, T] = js.native
+  def uniq(isSorted: scala.Boolean): _Chain[T, T] = js.native
+  def uniq(isSorted: scala.Boolean, iterator: IterateePropertyShorthand): _Chain[T, T] = js.native
+  def uniq(isSorted: scala.Boolean, iterator: ListIterator[T, _]): _Chain[T, T] = js.native
+  def uniq[TSort](iterator: IterateePropertyShorthand): _Chain[T, T] = js.native
+  def uniq[TSort](iterator: IterateePropertyShorthand, context: js.Any): _Chain[T, T] = js.native
+  def uniq[TSort](iterator: ListIterator[T, TSort]): _Chain[T, T] = js.native
+  def uniq[TSort](iterator: ListIterator[T, TSort], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.uniq
     **/
   @JSName("uniq")
-  def uniq_TSort[TSort](): _Chain[T] = js.native
+  def uniq_TSort[TSort](): _Chain[T, T] = js.native
   /**
     * @see _.uniq
     **/
-  def unique[TSort](): _Chain[T] = js.native
-  def unique[TSort](isSorted: scala.Boolean): _Chain[T] = js.native
-  def unique[TSort](isSorted: scala.Boolean, iterator: IterateePropertyShorthand): _Chain[T] = js.native
-  def unique[TSort](isSorted: scala.Boolean, iterator: ListIterator[T, TSort]): _Chain[T] = js.native
-  def unique[TSort](iterator: IterateePropertyShorthand): _Chain[T] = js.native
-  def unique[TSort](iterator: IterateePropertyShorthand, context: js.Any): _Chain[T] = js.native
-  def unique[TSort](iterator: ListIterator[T, TSort]): _Chain[T] = js.native
-  def unique[TSort](iterator: ListIterator[T, TSort], context: js.Any): _Chain[T] = js.native
+  def unique[TSort](): _Chain[T, T] = js.native
+  def unique[TSort](isSorted: scala.Boolean): _Chain[T, T] = js.native
+  def unique[TSort](isSorted: scala.Boolean, iterator: IterateePropertyShorthand): _Chain[T, T] = js.native
+  def unique[TSort](isSorted: scala.Boolean, iterator: ListIterator[T, TSort]): _Chain[T, T] = js.native
+  def unique[TSort](iterator: IterateePropertyShorthand): _Chain[T, T] = js.native
+  def unique[TSort](iterator: IterateePropertyShorthand, context: js.Any): _Chain[T, T] = js.native
+  def unique[TSort](iterator: ListIterator[T, TSort]): _Chain[T, T] = js.native
+  def unique[TSort](iterator: ListIterator[T, TSort], context: js.Any): _Chain[T, T] = js.native
   /**
     * Wrapped type `string`.
     * @see _.uniqueId
     **/
-  def uniqueId(): _Chain[T] = js.native
+  def uniqueId(): _Chain[T, T] = js.native
   /**
     * Adds one or more elements to the beginning of an array and returns the new length of the array.
     * @param items The elements to add to the front of the array.
     * @return The array with the element added to the beginning.
     **/
-  def unshift(items: T*): _Chain[T] = js.native
+  def unshift(items: T*): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[][]`.
     * @see _.unzip
     **/
-  def unzip(arrays: js.Array[_]*): _Chain[T] = js.native
+  def unzip(arrays: js.Array[_]*): _Chain[T, T] = js.native
   /**
     * Wrapped type `any`.
     * @see _.value
     **/
-  def value[TResult](): js.Array[T] = js.native
+  def value(): V = js.native
   /**
     * Wrapped type `object`.
     * @see _.values
     **/
-  def values(): _Chain[_] = js.native
+  def values(): _Chain[_, _] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.where
     **/
-  def where[U /* <: js.Object */](properties: U): _Chain[T] = js.native
+  def where[U /* <: js.Object */](properties: U): _Chain[T, T] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.without
     **/
-  def without(values: T*): _Chain[T] = js.native
+  def without(values: T*): _Chain[T, T] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.wrap
     **/
-  def wrap(wrapper: js.Function): js.Function0[_Chain[T]] = js.native
+  def wrap(wrapper: js.Function): js.Function0[_Chain[T, T]] = js.native
   /**
     * Wrapped type `any[][]`.
     * @see _.zip
     **/
-  def zip(arrays: js.Array[_]*): _Chain[T] = js.native
+  def zip(arrays: js.Array[_]*): _Chain[T, T] = js.native
 }
 

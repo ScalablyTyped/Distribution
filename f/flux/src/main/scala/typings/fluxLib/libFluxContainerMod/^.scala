@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def create[TProps](base: Component[TProps, _, _]): Component[TProps, _, _] = js.native
   def create[TProps](base: Component[TProps, _, _], options: RealOptions): Component[TProps, _, _] = js.native
   def createFunctional[TProps, TState](
-    viewFn: js.Function1[/* props */ TState, reactLib.reactMod.ReactElement[TState]],
+    viewFn: js.Function1[/* props */ TState, reactLib.reactMod.ReactElement],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 
@@ -25,7 +25,7 @@ object ^ extends js.Object {
     ]
   ): Component[TProps, TState, _] = js.native
   def createFunctional[TProps, TState](
-    viewFn: js.Function1[/* props */ TState, reactLib.reactMod.ReactElement[TState]],
+    viewFn: js.Function1[/* props */ TState, reactLib.reactMod.ReactElement],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 

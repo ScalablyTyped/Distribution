@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
   * interface.
   */
 trait Navigator extends js.Object {
-  var credentials: js.UndefOr[CredentialsContainer] = js.undefined
+  val credentials: CredentialsContainer
 }
 
 object Navigator {
   @scala.inline
-  def apply(credentials: CredentialsContainer = null): Navigator = {
-    val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+  def apply(credentials: CredentialsContainer): Navigator = {
+    val __obj = js.Dynamic.literal(credentials = credentials)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

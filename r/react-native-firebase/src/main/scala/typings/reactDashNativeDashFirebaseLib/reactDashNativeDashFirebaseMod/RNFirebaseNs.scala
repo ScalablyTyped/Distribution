@@ -648,43 +648,65 @@ object RNFirebaseNs extends js.Object {
   @JSName("crashlytics")
   @js.native
   object crashlyticsNs extends js.Object {
+    @js.native
     trait Crashlytics extends js.Object {
       /**
         * Forces a crash. Useful for testing your application is set up correctly.
         */
-      def crash(): scala.Unit
+      def crash(): scala.Unit = js.native
       /**
         * Enable Crashlytics reporting. Only avaliable when disabled automatic initialization
         */
-      def enableCrashlyticsCollection(): scala.Unit
+      def enableCrashlyticsCollection(): scala.Unit = js.native
       /**
         * Logs a message that will appear in any subsequent crash reports.
         */
-      def log(message: java.lang.String): scala.Unit
+      def log(message: java.lang.String): scala.Unit = js.native
+      /**
+        * Logs a custom non fatal exception.
+        */
+      def recordCustomError(name: java.lang.String, message: java.lang.String): scala.Unit = js.native
+      def recordCustomError(name: java.lang.String, message: java.lang.String, stack: js.Array[customError]): scala.Unit = js.native
       /**
         * Logs a non fatal exception.
         */
-      def recordError(code: scala.Double, message: java.lang.String): scala.Unit
+      def recordError(code: scala.Double, message: java.lang.String): scala.Unit = js.native
       /**
         * Set a boolean value to show alongside any subsequent crash reports.
         */
-      def setBoolValue(key: java.lang.String, value: scala.Boolean): scala.Unit
+      def setBoolValue(key: java.lang.String, value: scala.Boolean): scala.Unit = js.native
       /**
         * Set a float value to show alongside any subsequent crash reports.
         */
-      def setFloatValue(key: java.lang.String, value: scala.Double): scala.Unit
+      def setFloatValue(key: java.lang.String, value: scala.Double): scala.Unit = js.native
       /**
         * Set an integer value to show alongside any subsequent crash reports.
         */
-      def setIntValue(key: java.lang.String, value: scala.Double): scala.Unit
+      def setIntValue(key: java.lang.String, value: scala.Double): scala.Unit = js.native
       /**
         * Set a string value to show alongside any subsequent crash reports.
         */
-      def setStringValue(key: java.lang.String, value: java.lang.String): scala.Unit
+      def setStringValue(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
+      /**
+        * Set the user email to show alongside any subsequent crash reports.
+        */
+      def setUserEmail(userEmail: java.lang.String): scala.Unit = js.native
       /**
         * Set the user ID to show alongside any subsequent crash reports.
         */
-      def setUserIdentifier(userId: java.lang.String): scala.Unit
+      def setUserIdentifier(userId: java.lang.String): scala.Unit = js.native
+      /**
+        * Set the user name to show alongside any subsequent crash reports.
+        */
+      def setUserName(userName: java.lang.String): scala.Unit = js.native
+    }
+    
+    trait customError extends js.Object {
+      var additional: js.UndefOr[js.Object] = js.undefined
+      var className: js.UndefOr[java.lang.String] = js.undefined
+      var fileName: java.lang.String
+      var functionName: js.UndefOr[java.lang.String] = js.undefined
+      var lineNumber: js.UndefOr[scala.Double] = js.undefined
     }
     
   }
@@ -1063,7 +1085,7 @@ object RNFirebaseNs extends js.Object {
     @js.native
     trait DocumentReference extends js.Object {
       val firestore: Firestore = js.native
-      val id: java.lang.String | scala.Null = js.native
+      val id: java.lang.String = js.native
       val parent: CollectionReference = js.native
       val path: java.lang.String = js.native
       def collection(collectionPath: java.lang.String): CollectionReference = js.native
@@ -1147,7 +1169,7 @@ object RNFirebaseNs extends js.Object {
     @js.native
     trait DocumentSnapshot extends js.Object {
       val exists: scala.Boolean = js.native
-      val id: java.lang.String | scala.Null = js.native
+      val id: java.lang.String = js.native
       val metadata: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.SnapshotMetadata = js.native
       val ref: DocumentReference = js.native
       def data(): js.Object | scala.Unit = js.native
@@ -1786,7 +1808,7 @@ object RNFirebaseNs extends js.Object {
     
     @js.native
     class DynamicLink protected () extends js.Object {
-      def this(link: java.lang.String, dynamicLinkDomain: java.lang.String) = this()
+      def this(link: java.lang.String, domainURIPrefix: java.lang.String) = this()
       var analytics: AnalyticsParameters = js.native
       var android: AndroidParameters = js.native
       var ios: IOSParameters = js.native
@@ -1843,7 +1865,7 @@ object RNFirebaseNs extends js.Object {
     }
     
     trait LinksStatics extends js.Object {
-      var DynamicLink: org.scalablytyped.runtime.Instantiable2[/* link */ java.lang.String, /* dynamicLinkDomain */ java.lang.String, DynamicLink]
+      var DynamicLink: org.scalablytyped.runtime.Instantiable2[/* link */ java.lang.String, /* domainURIPrefix */ java.lang.String, DynamicLink]
     }
     
     trait NavigationParameters extends js.Object {

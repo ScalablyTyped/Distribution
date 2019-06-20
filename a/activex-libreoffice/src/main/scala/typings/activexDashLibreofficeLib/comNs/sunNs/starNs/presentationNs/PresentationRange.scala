@@ -13,3 +13,17 @@ import scala.scalajs.js.annotation._
 */
 trait PresentationRange extends js.Object
 
+object PresentationRange {
+  /** use all slides. */
+  @scala.inline
+  def PRESENTATIONRANGE_ALL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** use only the active slide. */
+  @scala.inline
+  def PRESENTATIONRANGE_FROM_PAGE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** use an individual choice of slides. */
+  @scala.inline
+  def PRESENTATIONRANGE_INDIVIDUAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

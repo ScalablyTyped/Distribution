@@ -21,21 +21,21 @@ trait ReactNativePhotoViewProps extends js.Object {
   var onScale: js.UndefOr[
     js.Function2[
       /* scale */ scala.Double, 
-      /* target */ js.UndefOr[reactLib.reactMod.ReactElement[_]], 
+      /* target */ js.UndefOr[reactLib.reactMod.ReactElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTap: js.UndefOr[
     js.Function2[
       /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
-      /* target */ js.UndefOr[reactLib.reactMod.ReactElement[_]], 
+      /* target */ js.UndefOr[reactLib.reactMod.ReactElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onViewTap: js.UndefOr[
     js.Function2[
       /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
-      /* target */ js.UndefOr[reactLib.reactMod.ReactElement[_]], 
+      /* target */ js.UndefOr[reactLib.reactMod.ReactElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -58,9 +58,9 @@ object ReactNativePhotoViewProps {
     onLoadEnd: () => scala.Unit = null,
     onLoadStart: () => scala.Unit = null,
     onProgress: (/* loaded */ scala.Double, /* total */ scala.Double) => scala.Unit = null,
-    onScale: (/* scale */ scala.Double, /* target */ js.UndefOr[reactLib.reactMod.ReactElement[_]]) => scala.Unit = null,
-    onTap: (/* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, /* target */ js.UndefOr[reactLib.reactMod.ReactElement[_]]) => scala.Unit = null,
-    onViewTap: (/* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, /* target */ js.UndefOr[reactLib.reactMod.ReactElement[_]]) => scala.Unit = null,
+    onScale: (/* scale */ scala.Double, /* target */ js.UndefOr[reactLib.reactMod.ReactElement]) => scala.Unit = null,
+    onTap: (/* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, /* target */ js.UndefOr[reactLib.reactMod.ReactElement]) => scala.Unit = null,
+    onViewTap: (/* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, /* target */ js.UndefOr[reactLib.reactMod.ReactElement]) => scala.Unit = null,
     scale: scala.Int | scala.Double = null,
     showsHorizontalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,

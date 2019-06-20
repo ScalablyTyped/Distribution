@@ -85,9 +85,9 @@ object VictoryAreaProps {
   def apply(
     animate: AnimatePropTypeInterface = null,
     categories: CategoryPropType = null,
-    containerComponent: reactLib.reactMod.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement = null,
     data: js.Array[_] = null,
-    dataComponent: reactLib.reactMod.ReactElement[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement = null,
     domain: DomainPropType = null,
     events: js.Array[
       EventPropTypeInterface[
@@ -95,12 +95,12 @@ object VictoryAreaProps {
         victoryLib.victoryLibStrings.all
       ]
     ] = null,
-    groupComponent: reactLib.reactMod.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement = null,
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     interpolation: InterpolationPropType = null,
     label: java.lang.String | victoryLib.Fn_DataAnyString = null,
-    labelComponent: reactLib.reactMod.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement = null,
     labels: (js.Array[scala.Double | java.lang.String]) | js.Function = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,

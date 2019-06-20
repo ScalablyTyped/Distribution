@@ -52,7 +52,7 @@ object FinalState {
     allVisibleColumns: js.Array[Column[D]],
     canNext: scala.Boolean,
     canPrevious: scala.Boolean,
-    children: (FinalState[D], js.Function0[reactLib.reactMod.ReactElement[_]], Instance[D]) => reactLib.reactMod.ReactNode,
+    children: (FinalState[D], js.Function0[reactLib.reactMod.ReactElement], Instance[D]) => reactLib.reactMod.ReactNode,
     className: java.lang.String,
     collapseOnDataChange: scala.Boolean,
     collapseOnPageChange: scala.Boolean,

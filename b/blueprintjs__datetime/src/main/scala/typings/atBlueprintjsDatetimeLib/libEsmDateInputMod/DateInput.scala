@@ -22,8 +22,6 @@ class DateInput ()
   var lastElementInPopover: js.Any = js.native
   var popoverContentEl: js.Any = js.native
   var registerPopoverBlurHandler: js.Any = js.native
-  @JSName("state")
-  var state_DateInput: IDateInputState = js.native
   var unregisterPopoverBlurHandler: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDateInput(nextProps: IDateInputProps): scala.Unit = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Editor protected ()
   extends reactLib.reactMod.Component[EditorProps, js.Object, js.Any] {
-  def this(props: stdLib.Readonly[EditorProps]) = this()
+  def this(props: EditorProps) = this()
   def focusEditor(): scala.Unit = js.native
 }
 

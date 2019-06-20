@@ -15,7 +15,7 @@ trait CreateElement extends js.Object {
     * @param children A single React node (string or ReactElement) or array of nodes.
     * Note that unlike with React itself, multiple children must be placed into an array.
     */
-  def apply[P](component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement[P] = js.native
+  def apply[P](component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement = js.native
   /**
     * Renders a React component, with children but no props
     * @param component A plain React component (created from React.createClass()) or
@@ -26,13 +26,13 @@ trait CreateElement extends js.Object {
   def apply[P](
     component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState],
     children: reactLib.reactMod.ReactNode
-  ): reactLib.reactMod.ReactElement[P] = js.native
-  def apply[P](component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState], props: P): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
+  def apply[P](component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState], props: P): reactLib.reactMod.ReactElement = js.native
   def apply[P](
     component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState],
     props: P,
     children: reactLib.reactMod.ReactNode
-  ): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   /**
     * Renders an HTML element from the given spec string, with optional props
     * and children

@@ -9,30 +9,30 @@ trait Anon_BtnGroup extends js.Object {
   /**
   		 * Button group components.
   		 */
-  var btnGroup: reactLib.reactMod.ReactElement[_]
+  var btnGroup: reactLib.reactMod.ReactElement
    // search field JSX
   /**
   		 * The button to clear the search field.
   		 */
-  var clearBtn: reactLib.reactMod.ReactElement[_]
+  var clearBtn: reactLib.reactMod.ReactElement
    // button groups JSX
   /**
   		 * The individual search field.
   		 */
-  var searchField: reactLib.reactMod.ReactElement[_]
+  var searchField: reactLib.reactMod.ReactElement
   /**
   		 * Search panel component.
   		 */
-  var searchPanel: reactLib.reactMod.ReactElement[_]
+  var searchPanel: reactLib.reactMod.ReactElement
 }
 
 object Anon_BtnGroup {
   @scala.inline
   def apply(
-    btnGroup: reactLib.reactMod.ReactElement[_],
-    clearBtn: reactLib.reactMod.ReactElement[_],
-    searchField: reactLib.reactMod.ReactElement[_],
-    searchPanel: reactLib.reactMod.ReactElement[_]
+    btnGroup: reactLib.reactMod.ReactElement,
+    clearBtn: reactLib.reactMod.ReactElement,
+    searchField: reactLib.reactMod.ReactElement,
+    searchPanel: reactLib.reactMod.ReactElement
   ): Anon_BtnGroup = {
     val __obj = js.Dynamic.literal(btnGroup = btnGroup, clearBtn = clearBtn, searchField = searchField, searchPanel = searchPanel)
   

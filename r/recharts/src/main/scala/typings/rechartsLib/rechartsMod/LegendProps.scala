@@ -11,7 +11,7 @@ trait LegendProps extends js.Object {
   ] = js.undefined
   var chartHeight: js.UndefOr[scala.Double] = js.undefined
   var chartWidth: js.UndefOr[scala.Double] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[LegendProps]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactElement | ContentRenderer[LegendProps]] = js.undefined
   var formatter: js.UndefOr[LegendValueFormatter] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var iconSize: js.UndefOr[scala.Double] = js.undefined
@@ -36,7 +36,7 @@ object LegendProps {
     align: rechartsLib.rechartsLibStrings.left | rechartsLib.rechartsLibStrings.center | rechartsLib.rechartsLibStrings.right = null,
     chartHeight: scala.Int | scala.Double = null,
     chartWidth: scala.Int | scala.Double = null,
-    content: reactLib.reactMod.ReactElement[_] | ContentRenderer[LegendProps] = null,
+    content: reactLib.reactMod.ReactElement | ContentRenderer[LegendProps] = null,
     formatter: LegendValueFormatter = null,
     height: scala.Int | scala.Double = null,
     iconSize: scala.Int | scala.Double = null,

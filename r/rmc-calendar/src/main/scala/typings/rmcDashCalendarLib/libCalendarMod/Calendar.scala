@@ -24,14 +24,14 @@ trait Calendar
     date: stdLib.Date,
     useDateTime: scala.Boolean,
     oldState: rmcDashCalendarLib.Anon_EndDate,
-    props: stdLib.Readonly[rmcDashCalendarLib.Anon_Children] with stdLib.Readonly[rmcDashCalendarLib.libCalendarPropsMod.PropsType]
+    props: rmcDashCalendarLib.Anon_Children with rmcDashCalendarLib.libCalendarPropsMod.PropsType
   ): StateType = js.native
   def setClientHeight(height: scala.Double): scala.Unit = js.native
   def shortcutSelect(startDate: stdLib.Date, endDate: stdLib.Date): scala.Unit = js.native
   def shortcutSelect(
     startDate: stdLib.Date,
     endDate: stdLib.Date,
-    props: stdLib.Readonly[rmcDashCalendarLib.Anon_Children] with stdLib.Readonly[rmcDashCalendarLib.libCalendarPropsMod.PropsType]
+    props: rmcDashCalendarLib.Anon_Children with rmcDashCalendarLib.libCalendarPropsMod.PropsType
   ): scala.Unit = js.native
 }
 

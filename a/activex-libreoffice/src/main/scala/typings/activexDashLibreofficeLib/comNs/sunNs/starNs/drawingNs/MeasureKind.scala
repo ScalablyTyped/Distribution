@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait MeasureKind extends js.Object
 
+object MeasureKind {
+  /** use the radius measurement. This option cannot be used from the GUI Interface. */
+  @scala.inline
+  def RADIUS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /**
+    * the graphic is rendered in the default color style of the output device,
+    *
+    * the connector is drawn with three lines, with the middle line perpendicular to the other two
+    *
+    * use the length measurement.
+    */
+  @scala.inline
+  def STANDARD: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

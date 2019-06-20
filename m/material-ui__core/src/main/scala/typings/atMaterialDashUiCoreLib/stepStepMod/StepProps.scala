@@ -85,7 +85,7 @@ trait StepProps extends js.Object {
   var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapStepClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
-  var connector: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var connector: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html] = js.undefined
@@ -355,7 +355,7 @@ object StepProps {
     classes: atMaterialDashUiCoreLib.PartialClassNameMapStepClasskey = null,
     color: java.lang.String = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
-    connector: reactLib.reactMod.ReactElement[_] = null,
+    connector: reactLib.reactMod.ReactElement = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,
     dangerouslySetInnerHTML: reactLib.Anon_Html = null,

@@ -24,7 +24,7 @@ object bcryptjsMod extends js.Object {
   @JSName("compare")
   def compare_Unit(s: java.lang.String, hash: java.lang.String): scala.Unit = js.native
   def decodeBase64(s: java.lang.String, len: scala.Double): js.Array[scala.Double] = js.native
-  def encodeBase64(b: stdLib.Readonly[stdLib.ArrayLike[scala.Double]], len: scala.Double): java.lang.String = js.native
+  def encodeBase64(b: stdLib.ArrayLike[scala.Double], len: scala.Double): java.lang.String = js.native
   def genSalt(): js.Promise[java.lang.String] = js.native
   def genSalt(callback: js.Function2[/* err */ stdLib.Error, /* salt */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def genSalt(rounds: scala.Double): js.Promise[java.lang.String] = js.native

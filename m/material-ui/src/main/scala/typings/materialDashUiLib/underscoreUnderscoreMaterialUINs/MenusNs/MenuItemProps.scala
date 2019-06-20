@@ -39,11 +39,11 @@ object MenuItemProps {
     innerDivStyle: reactLib.reactMod.CSSProperties = null,
     insetChildren: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String | reactLib.reactMod.ReactNode = null,
-    leftIcon: reactLib.reactMod.ReactElement[_] = null,
+    leftIcon: reactLib.reactMod.ReactElement = null,
     menuItems: reactLib.reactMod.ReactNode = null,
     onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     primaryText: reactLib.reactMod.ReactNode = null,
-    rightIcon: reactLib.reactMod.ReactElement[_] = null,
+    rightIcon: reactLib.reactMod.ReactElement = null,
     secondaryText: reactLib.reactMod.ReactNode = null,
     style: reactLib.reactMod.CSSProperties = null
   ): MenuItemProps = {

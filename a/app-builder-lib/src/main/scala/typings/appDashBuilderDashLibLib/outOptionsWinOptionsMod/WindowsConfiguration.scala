@@ -93,7 +93,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   /**
     * The URL of the time stamp server.
-    * @default http://timestamp.verisign.com/scripts/timstamp.dll
+    * @default http://timestamp.digicert.com
     */
   val timeStampServer: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

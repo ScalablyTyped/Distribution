@@ -12,7 +12,7 @@ trait TreemapProps
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[_]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactElement | ContentRenderer[_]] = js.undefined
   var data: js.UndefOr[js.Array[_]] = js.undefined
   var dataKey: js.UndefOr[DataKey] = js.undefined
   var fill: js.UndefOr[java.lang.String] = js.undefined
@@ -33,7 +33,7 @@ object TreemapProps {
     aspectRatio: scala.Int | scala.Double = null,
     children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    content: reactLib.reactMod.ReactElement[_] | ContentRenderer[_] = null,
+    content: reactLib.reactMod.ReactElement | ContentRenderer[_] = null,
     data: js.Array[_] = null,
     dataKey: DataKey = null,
     fill: java.lang.String = null,

@@ -35,7 +35,7 @@ class WithUpdate[P, S] ()
   // It works in combination with ElementAttributesProperty. It placed in jsx.d.ts.
   // more detail, see: https://www.typescriptlang.org/docs/handbook/jsx.html
   //               and https://github.com/skatejs/skatejs/pull/952#issuecomment-264500153
-  val props: stdLib.Readonly[P] = js.native
+  val props: P = js.native
   var state: S = js.native
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native

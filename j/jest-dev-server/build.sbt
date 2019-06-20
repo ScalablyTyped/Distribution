@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jest-dev-server"
-version := "4.2-dt-20190614Z-4553c8"
+version := "4.2-dt-20190614Z-268028"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "wait-on" % "3.2-dt-20190205Z-155f35")
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303",
+  "org.scalablytyped" %%% "wait-on" % "3.2-dt-20190205Z-9f23b9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -36,13 +36,13 @@ trait DropdownMenuProps extends js.Object {
     * A render prop that returns a Menu element. The `props`
     * argument should spread through to **a component that can accept a ref**.
     */
-  def children(renderProps: DropdownMenuRenderProps): reactLib.reactMod.ReactElement[_]
+  def children(renderProps: DropdownMenuRenderProps): reactLib.reactMod.ReactElement
 }
 
 object DropdownMenuProps {
   @scala.inline
   def apply(
-    children: DropdownMenuRenderProps => reactLib.reactMod.ReactElement[_],
+    children: DropdownMenuRenderProps => reactLib.reactMod.ReactElement,
     alignEnd: js.UndefOr[scala.Boolean] = js.undefined,
     flip: js.UndefOr[scala.Boolean] = js.undefined,
     popperConfig: js.Object = null,

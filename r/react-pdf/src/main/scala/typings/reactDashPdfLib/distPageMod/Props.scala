@@ -22,7 +22,7 @@ trait Props extends js.Object {
     * Defines what the component should display in case of an error.
     * @default 'Failed to load PDF file.'
     */
-  var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction] = js.undefined
+  var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement | RenderFunction] = js.undefined
   /**
     * Defines the height of the page.
     * If neither `height` nor `width` are defined, page will be rendered at the size defined in PDF.
@@ -39,12 +39,12 @@ trait Props extends js.Object {
     * Defines what the component should display while loading.
     * @default 'Loading page…'
     */
-  var loading: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction] = js.undefined
+  var loading: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement | RenderFunction] = js.undefined
   /**
     * Defines what the component should display in case of no data.
     * @default 'No page specified.'
     */
-  var noData: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction] = js.undefined
+  var noData: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement | RenderFunction] = js.undefined
   /**
     * Function called in case of an error while loading annotations.
     */
@@ -140,11 +140,11 @@ object Props {
   def apply(
     className: java.lang.String | js.Array[java.lang.String] = null,
     customTextRenderer: /* layer */ TextLayerItemInternal => reactLib.reactMod.Global.JSXNs.Element = null,
-    error: java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction = null,
+    error: java.lang.String | reactLib.reactMod.ReactElement | RenderFunction = null,
     height: scala.Int | scala.Double = null,
     inputRef: reactLib.reactMod.LegacyRef[stdLib.HTMLDivElement] = null,
-    loading: java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction = null,
-    noData: java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction = null,
+    loading: java.lang.String | reactLib.reactMod.ReactElement | RenderFunction = null,
+    noData: java.lang.String | reactLib.reactMod.ReactElement | RenderFunction = null,
     onGetAnnotationsError: /* error */ stdLib.Error => scala.Unit = null,
     onGetAnnotationsSuccess: /* annotations */ js.Any => scala.Unit = null,
     onGetTextError: /* error */ stdLib.Error => scala.Unit = null,

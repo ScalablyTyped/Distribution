@@ -10,8 +10,6 @@ trait DirectoryTree
   extends reactLib.reactMod.Component[DirectoryTreeProps, DirectoryTreeState, js.Any] {
   var cachedSelectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.native
   var lastSelectedKey: js.UndefOr[java.lang.String] = js.native
-  @JSName("state")
-  var state_DirectoryTree: DirectoryTreeState = js.native
   var tree: antdLib.libTreeTreeMod.default = js.native
   def expandFolderNode(
     event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],

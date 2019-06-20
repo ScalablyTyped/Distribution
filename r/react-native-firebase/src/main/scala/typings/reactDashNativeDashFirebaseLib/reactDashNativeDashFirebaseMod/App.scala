@@ -24,7 +24,6 @@ class App protected () extends js.Object {
   def functions(appOrRegion: App): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
   def functions(appOrRegion: App, region: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
   def iid(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.iidNs.InstanceId = js.native
-  // invites(): RNFirebase.invites.Invites;
   def links(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.linksNs.Links = js.native
   def messaging(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.messagingNs.Messaging = js.native
   def notifications(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.Notifications = js.native

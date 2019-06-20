@@ -18,3 +18,29 @@ import scala.scalajs.js.annotation._
 */
 trait SheetLinkMode extends js.Object
 
+object SheetLinkMode {
+  /**
+    * no cells are moved.
+    *
+    * no condition is specified.
+    *
+    * nothing is imported.
+    *
+    * nothing is calculated.
+    *
+    * new values are used without changes.
+    *
+    * sheet is not linked.
+    */
+  @scala.inline
+  def NONE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** all contents (values and formulas) are copied. */
+  @scala.inline
+  def NORMAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** instead of using formulas, the result values are copied. */
+  @scala.inline
+  def VALUE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -28,8 +28,8 @@ object ^ extends js.Object {
   ): ConfigItem = js.native
   def loadOptions(): js.Object | scala.Null = js.native
   def loadOptions(options: TransformOptions): js.Object | scala.Null = js.native
-  def loadPartialConfig(): stdLib.Readonly[PartialConfig] | scala.Null = js.native
-  def loadPartialConfig(options: TransformOptions): stdLib.Readonly[PartialConfig] | scala.Null = js.native
+  def loadPartialConfig(): PartialConfig | scala.Null = js.native
+  def loadPartialConfig(options: TransformOptions): PartialConfig | scala.Null = js.native
   def parse(code: java.lang.String): ParseResult | scala.Null = js.native
   def parse(code: java.lang.String, callback: FileParseCallback): scala.Unit = js.native
   def parse(code: java.lang.String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): scala.Unit = js.native

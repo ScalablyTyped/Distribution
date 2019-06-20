@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait MemberType extends js.Object
 
+object MemberType {
+  @scala.inline
+  def METHOD: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def PROPERTY: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def UNKNOWN: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -13,7 +13,7 @@ object Statistic extends js.Object {
   var defaultProps: js.UndefOr[antdLib.PartialStatisticProps] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
   var propTypes: js.UndefOr[antdLib.WeakValidationMapStatisticProps] = js.native
-  def apply(props: antdLib.PropsWithChildrenStatisticProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def apply(props: antdLib.PropsWithChildrenStatisticProps, context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def apply(props: antdLib.PropsWithChildrenStatisticProps): reactLib.reactMod.ReactElement | scala.Null = js.native
+  def apply(props: antdLib.PropsWithChildrenStatisticProps, context: js.Any): reactLib.reactMod.ReactElement | scala.Null = js.native
 }
 

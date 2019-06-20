@@ -45,16 +45,16 @@ object ^ extends js.Object {
   def MosaicFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
     props: reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T] with reactLib.reactMod.Attributes,
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T]] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def MosaicWindowFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
     props: reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T] with reactLib.reactMod.Attributes,
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T]] = js.native
-  def MosaicZeroStateFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T]] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
+  def MosaicZeroStateFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): reactLib.reactMod.ReactElement = js.native
   def MosaicZeroStateFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
     props: reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T] with reactLib.reactMod.Attributes,
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T]] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def buildSpecFromUpdate[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](mosaicUpdate: reactDashMosaicDashComponentLib.libTypesMod.MosaicUpdate[T]): reactDashMosaicDashComponentLib.libTypesMod.MosaicUpdateSpec[T] = js.native
   def createBalancedTreeFromLeaves[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](leaves: js.Array[reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T]]): reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T] | scala.Null = js.native
   def createBalancedTreeFromLeaves[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
@@ -65,13 +65,13 @@ object ^ extends js.Object {
     title: java.lang.String,
     className: java.lang.String,
     onClick: js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], _]
-  ): reactLib.reactMod.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def createDefaultToolbarButton(
     title: java.lang.String,
     className: java.lang.String,
     onClick: js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], _],
     text: java.lang.String
-  ): reactLib.reactMod.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def createDragToUpdates[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
     root: reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T],
     sourcePath: reactDashMosaicDashComponentLib.libTypesMod.MosaicPath,

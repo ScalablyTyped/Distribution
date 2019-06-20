@@ -285,14 +285,12 @@ class StaticBody protected () extends js.Object {
     * Resets the width and height to match current frame, if no width and height provided and a frame is found.
     * @param width The width of the Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame width.
     * @param height The height of the Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame height.
-    * @param offsetX The horizontal offset of the Body from the Game Object's center.
-    * @param offsetY The vertical offset of the Body from the Game Object's center.
+    * @param center Modify the Body's `offset`, placing the Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
     */
   def setSize(): StaticBody = js.native
   def setSize(width: phaserLib.integer): StaticBody = js.native
   def setSize(width: phaserLib.integer, height: phaserLib.integer): StaticBody = js.native
-  def setSize(width: phaserLib.integer, height: phaserLib.integer, offsetX: scala.Double): StaticBody = js.native
-  def setSize(width: phaserLib.integer, height: phaserLib.integer, offsetX: scala.Double, offsetY: scala.Double): StaticBody = js.native
+  def setSize(width: phaserLib.integer, height: phaserLib.integer, center: scala.Boolean): StaticBody = js.native
   /**
     * NOOP function. A Static Body cannot be stopped.
     */

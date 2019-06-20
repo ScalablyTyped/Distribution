@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridTileProps extends js.Object {
-  var actionIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var actionIcon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var actionPosition: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right
   ] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var containerElement: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState])
+    java.lang.String | reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState])
   ] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
@@ -30,10 +30,10 @@ trait GridTileProps extends js.Object {
 object GridTileProps {
   @scala.inline
   def apply(
-    actionIcon: reactLib.reactMod.ReactElement[_] = null,
+    actionIcon: reactLib.reactMod.ReactElement = null,
     actionPosition: materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right = null,
     cols: scala.Int | scala.Double = null,
-    containerElement: java.lang.String | reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) = null,
+    containerElement: java.lang.String | reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) = null,
     onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     rows: scala.Int | scala.Double = null,
     style: reactLib.reactMod.CSSProperties = null,

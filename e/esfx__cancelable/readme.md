@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__cancelable
 
-Typings are for version 1.0.0-pre.5
+Typings are for version 1.0.0-pre.6
 
 ## Library description:
 A low-level Symbol-based API for defining a common cancellation protocol.
@@ -50,9 +50,6 @@ These comments are from the typescript definitions and might be useful:
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-/**
- * An object that represents a cancellation signal.
- */
 /*!
    Copyright 2019 Ron Buckton
 

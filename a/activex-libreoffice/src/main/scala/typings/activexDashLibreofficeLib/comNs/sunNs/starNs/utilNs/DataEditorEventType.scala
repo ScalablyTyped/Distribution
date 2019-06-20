@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait DataEditorEventType extends js.Object
 
+object DataEditorEventType {
+  /** specifies that the data editing was canceled by the user (data not stored). */
+  @scala.inline
+  def CANCELED: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** specifies that the data editing is done (data stored). */
+  @scala.inline
+  def DONE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

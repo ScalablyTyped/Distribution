@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def ALL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def ATTRIBUTES: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def DANGEROUS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def METHODS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def PROPERTYSET: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

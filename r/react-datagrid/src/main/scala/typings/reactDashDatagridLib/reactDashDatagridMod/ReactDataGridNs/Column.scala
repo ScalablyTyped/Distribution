@@ -52,7 +52,7 @@ trait Column extends js.Object {
     * or anything that React can render, so you can customize it as you
     * please.
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Boolean - controlled (which means you have to manually set column
     * visibility when it changes, by using onColumnVisibilityChange).
@@ -73,7 +73,7 @@ object Column {
     render: (/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps) => _ = null,
     style: reactLib.reactMod.CSSProperties = null,
     textAlign: java.lang.String = null,
-    title: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    title: java.lang.String | reactLib.reactMod.ReactElement = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): Column = {

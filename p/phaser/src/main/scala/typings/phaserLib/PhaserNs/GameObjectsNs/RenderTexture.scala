@@ -98,15 +98,19 @@ class RenderTexture protected ()
   override var displayWidth: scala.Double = js.native
   /**
     * The horizontally flipped state of the Game Object.
+    * 
     * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override var flipX: scala.Boolean = js.native
   /**
     * The vertically flipped state of the Game Object.
+    * 
     * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override var flipY: scala.Boolean = js.native
@@ -372,7 +376,7 @@ class RenderTexture protected ()
     * 
     * If the dimensions given are the same as those already being used, calling this method will do nothing.
     * @param width The new width of the Render Texture.
-    * @param height The new height of the Render Texture. If not specified, will be set the same as the `width`.
+    * @param height The new height of the Render Texture. If not specified, will be set the same as the `width`. Default width.
     */
   def resize(width: scala.Double): this.type = js.native
   def resize(width: scala.Double, height: scala.Double): this.type = js.native
@@ -427,6 +431,10 @@ class RenderTexture protected ()
   override def setDisplaySize(width: scala.Double, height: scala.Double): this.type = js.native
   /**
     * Sets the horizontal and vertical flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped will render inversed on the flipped axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     */
@@ -434,6 +442,10 @@ class RenderTexture protected ()
   override def setFlip(x: scala.Boolean, y: scala.Boolean): this.type = js.native
   /**
     * Sets the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param value The flipped state. `false` for no flip, or `true` to be flipped.
     */
   /* CompleteClass */
@@ -479,6 +491,10 @@ class RenderTexture protected ()
   override def setVisible(value: scala.Boolean): this.type = js.native
   /**
     * Toggles the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override def toggleFlipX(): this.type = js.native

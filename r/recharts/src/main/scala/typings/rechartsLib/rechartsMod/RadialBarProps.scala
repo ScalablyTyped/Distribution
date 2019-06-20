@@ -9,45 +9,41 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof recharts.recharts.PresentationAttributes<number, number> ]:? recharts.recharts.PresentationAttributes<number, number>[P]} */ trait RadialBarProps
   extends EventAttributes
      with Animatable {
-  var activeShape: js.UndefOr[js.Object | ContentRenderer[_] | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var activeShape: js.UndefOr[js.Object | ContentRenderer[_] | reactLib.reactMod.ReactElement] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var angleAxisId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var background: js.UndefOr[
-    scala.Boolean | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | js.Object
-  ] = js.undefined
+  var background: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactElement | ContentRenderer[_] | js.Object] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cornerRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var data: js.UndefOr[js.Array[RadialBarData]] = js.undefined
   var dataKey: DataKey
   var hide: js.UndefOr[scala.Boolean] = js.undefined
-  var label: js.UndefOr[
-    scala.Boolean | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | js.Object
-  ] = js.undefined
+  var label: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactElement | ContentRenderer[_] | js.Object] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
   var maxBarSize: js.UndefOr[scala.Double] = js.undefined
   var minPointSize: js.UndefOr[scala.Double] = js.undefined
   var radiusAxisId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var shape: js.UndefOr[ContentRenderer[_] | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var shape: js.UndefOr[ContentRenderer[_] | reactLib.reactMod.ReactElement] = js.undefined
 }
 
 object RadialBarProps {
   @scala.inline
   def apply(
     dataKey: DataKey,
-    activeShape: js.Object | ContentRenderer[_] | reactLib.reactMod.ReactElement[_] = null,
+    activeShape: js.Object | ContentRenderer[_] | reactLib.reactMod.ReactElement = null,
     angleAxisId: java.lang.String | scala.Double = null,
     animationBegin: scala.Int | scala.Double = null,
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: AnimationEasingType = null,
     animationId: scala.Int | scala.Double = null,
-    background: scala.Boolean | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | js.Object = null,
+    background: scala.Boolean | reactLib.reactMod.ReactElement | ContentRenderer[_] | js.Object = null,
     className: java.lang.String = null,
     cornerRadius: scala.Double | java.lang.String = null,
     data: js.Array[RadialBarData] = null,
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
-    label: scala.Boolean | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | js.Object = null,
+    label: scala.Boolean | reactLib.reactMod.ReactElement | ContentRenderer[_] | js.Object = null,
     legendType: LegendType = null,
     maxBarSize: scala.Int | scala.Double = null,
     minPointSize: scala.Int | scala.Double = null,
@@ -66,7 +62,7 @@ object RadialBarProps {
     onTouchMove: RechartsFunction = null,
     onTouchStart: RechartsFunction = null,
     radiusAxisId: java.lang.String | scala.Double = null,
-    shape: ContentRenderer[_] | reactLib.reactMod.ReactElement[_] = null
+    shape: ContentRenderer[_] | reactLib.reactMod.ReactElement = null
   ): RadialBarProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (activeShape != null) __obj.updateDynamic("activeShape")(activeShape.asInstanceOf[js.Any])

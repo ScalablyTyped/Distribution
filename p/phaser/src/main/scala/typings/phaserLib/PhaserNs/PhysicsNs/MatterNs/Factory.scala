@@ -29,6 +29,14 @@ class Factory protected () extends js.Object {
     */
   var world: World = js.native
   /**
+    * Instantly sets the angular velocity of the given body. Position, angle, force etc. are unchanged.
+    * 
+    * See also `force`.
+    * @param body The Matter Body to set the velocity on.
+    * @param velocity The angular velocity to set.
+    */
+  def angularVelocity(body: phaserLib.MatterJSNs.Body, velocity: scala.Double): phaserLib.MatterJSNs.Body = js.native
+  /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @param x [description]
     * @param y [description]
@@ -79,6 +87,7 @@ class Factory protected () extends js.Object {
     * @param stiffness [description] Default 1.
     * @param options [description] Default {}.
     */
+  def constraint(bodyA: phaserLib.MatterJSNs.Body, bodyB: phaserLib.MatterJSNs.Body): phaserLib.MatterJSNs.Constraint = js.native
   def constraint(bodyA: phaserLib.MatterJSNs.Body, bodyB: phaserLib.MatterJSNs.Body, length: scala.Double): phaserLib.MatterJSNs.Constraint = js.native
   def constraint(
     bodyA: phaserLib.MatterJSNs.Body,
@@ -98,31 +107,86 @@ class Factory protected () extends js.Object {
     */
   def destroy(): scala.Unit = js.native
   /**
+    * Applies a force to a body from a given world-space position, including resulting torque.
+    * @param body The Matter Body to set the force on.
+    * @param position The world position to apply the force from. An object with public `x` and `y` components.
+    * @param force The force to set. An object with public `x` and `y` components.
+    */
+  def force(
+    body: phaserLib.MatterJSNs.Body,
+    position: phaserLib.PhaserNs.TypesNs.MathNs.Vector2Like,
+    force: phaserLib.PhaserNs.TypesNs.MathNs.Vector2Like
+  ): phaserLib.MatterJSNs.Body = js.native
+  /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices) and adds it to the World.
     * If the vertices are convex, they will pass through as supplied. Otherwise, if the vertices are concave, they will be decomposed. Note that this process is not guaranteed to support complex sets of vertices, e.g. ones with holes.
     * @param x The X coordinate of the center of the Body.
     * @param y The Y coordinate of the center of the Body.
     * @param vertexSets [description]
     * @param options [description]
-    * @param flagInternal Flag internal edges (coincident part edges)
-    * @param removeCollinear Whether Matter.js will discard collinear edges (to improve performance).
-    * @param minimumArea During decomposition discard parts that have an area less than this
+    * @param flagInternal Flag internal edges (coincident part edges) Default false.
+    * @param removeCollinear Whether Matter.js will discard collinear edges (to improve performance). Default 0.01.
+    * @param minimumArea During decomposition discard parts that have an area less than this. Default 10.
     */
+  def fromVertices(x: scala.Double, y: scala.Double, vertexSets: java.lang.String): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(x: scala.Double, y: scala.Double, vertexSets: java.lang.String, options: js.Object): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(
+    x: scala.Double,
+    y: scala.Double,
+    vertexSets: java.lang.String,
+    options: js.Object,
+    flagInternal: scala.Boolean
+  ): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(
+    x: scala.Double,
+    y: scala.Double,
+    vertexSets: java.lang.String,
+    options: js.Object,
+    flagInternal: scala.Boolean,
+    removeCollinear: scala.Double
+  ): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(
+    x: scala.Double,
+    y: scala.Double,
+    vertexSets: java.lang.String,
+    options: js.Object,
+    flagInternal: scala.Boolean,
+    removeCollinear: scala.Double,
+    minimumArea: scala.Double
+  ): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(x: scala.Double, y: scala.Double, vertexSets: js.Array[_]): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(x: scala.Double, y: scala.Double, vertexSets: js.Array[_], options: js.Object): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(
+    x: scala.Double,
+    y: scala.Double,
+    vertexSets: js.Array[_],
+    options: js.Object,
+    flagInternal: scala.Boolean
+  ): phaserLib.MatterJSNs.Body = js.native
   def fromVertices(
     x: scala.Double,
     y: scala.Double,
     vertexSets: js.Array[_],
     options: js.Object,
     flagInternal: scala.Boolean,
-    removeCollinear: scala.Boolean,
+    removeCollinear: scala.Double
+  ): phaserLib.MatterJSNs.Body = js.native
+  def fromVertices(
+    x: scala.Double,
+    y: scala.Double,
+    vertexSets: js.Array[_],
+    options: js.Object,
+    flagInternal: scala.Boolean,
+    removeCollinear: scala.Double,
     minimumArea: scala.Double
   ): phaserLib.MatterJSNs.Body = js.native
   /**
     * [description]
     * @param gameObject The Game Object to inject the Matter Body in to.
-    * @param options [description]
+    * @param options A Matter Body configuration object, or an instance of a Matter Body.
     */
   def gameObject(gameObject: phaserLib.PhaserNs.GameObjectsNs.GameObject, options: js.Object): phaserLib.PhaserNs.GameObjectsNs.GameObject = js.native
+  def gameObject(gameObject: phaserLib.PhaserNs.GameObjectsNs.GameObject, options: phaserLib.MatterJSNs.Body): phaserLib.PhaserNs.GameObjectsNs.GameObject = js.native
   /**
     * [description]
     * @param x The horizontal position of this Game Object in the world.
@@ -446,6 +510,14 @@ class Factory protected () extends js.Object {
     slope: scala.Double,
     options: js.Object
   ): phaserLib.MatterJSNs.Body = js.native
+  /**
+    * Instantly sets the linear velocity of the given body. Position, angle, force etc. are unchanged.
+    * 
+    * See also `force`.
+    * @param body The Matter Body to set the velocity on.
+    * @param velocity The velocity to set. An object with public `x` and `y` components.
+    */
+  def velocity(body: phaserLib.MatterJSNs.Body, velocity: phaserLib.PhaserNs.TypesNs.MathNs.Vector2Like): phaserLib.MatterJSNs.Body = js.native
   /**
     * [description]
     * @param bodyB [description]

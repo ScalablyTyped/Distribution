@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait AttrChangeType extends js.Object
 
+object AttrChangeType {
+  @scala.inline
+  def ADDITION: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def MODIFICATION: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def REMOVAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

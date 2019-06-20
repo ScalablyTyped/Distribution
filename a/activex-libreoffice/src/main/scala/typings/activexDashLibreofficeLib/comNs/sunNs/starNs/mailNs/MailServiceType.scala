@@ -13,3 +13,17 @@ import scala.scalajs.js.annotation._
 */
 trait MailServiceType extends js.Object
 
+object MailServiceType {
+  /** A IMAP service */
+  @scala.inline
+  def IMAP: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** A POP3 service */
+  @scala.inline
+  def POP3: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** A SMTP service */
+  @scala.inline
+  def SMTP: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

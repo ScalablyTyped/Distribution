@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait MozillaProductType extends js.Object
 
+object MozillaProductType {
+  /** Any product */
+  @scala.inline
+  def Default: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** Mozilla's next generation web browser. */
+  @scala.inline
+  def Firefox: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** Mozilla browse and mail suite */
+  @scala.inline
+  def Mozilla: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** Mozilla's next generation e-mail client. */
+  @scala.inline
+  def Thunderbird: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-virtualized-select"
-version := "3.0-dt-20180802Z-0bd904"
+version := "3.0-dt-20180802Z-f6f9b8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190528Z-643c97",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
+  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190528Z-e96947",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -21,6 +21,17 @@ package object ParticlesNs {
     /* value */ scala.Double, 
     scala.Unit
   ]
+  /* Rewritten from type alias, can be one of: 
+    - scala.Double
+    - js.Array[scala.Double]
+    - EmitterOpOnEmitCallback
+    - EmitterOpRandomConfig
+    - EmitterOpRandomMinMaxConfig
+    - EmitterOpRandomStartEndConfig
+    - EmitterOpSteppedConfig
+    - EmitterOpCustomEmitConfig
+  */
+  type EmitterOpOnEmitType = _EmitterOpOnEmitType | js.Array[scala.Double] | scala.Double | EmitterOpOnEmitCallback
   /**
     * The returned value updates the property for the duration of the particle's life.
     */
@@ -31,6 +42,12 @@ package object ParticlesNs {
     /* value */ scala.Double, 
     scala.Unit
   ]
+  /* Rewritten from type alias, can be one of: 
+    - EmitterOpOnUpdateCallback
+    - EmitterOpEaseConfig
+    - EmitterOpCustomUpdateConfig
+  */
+  type EmitterOpOnUpdateType = _EmitterOpOnUpdateType | EmitterOpOnUpdateCallback
   type ParticleDeathCallback = js.Function1[/* particle */ phaserLib.PhaserNs.GameObjectsNs.ParticlesNs.Particle, scala.Unit]
   type ParticleEmitterCallback = js.Function2[
     /* particle */ phaserLib.PhaserNs.GameObjectsNs.ParticlesNs.Particle, 

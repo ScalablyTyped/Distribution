@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DayPickerProps extends js.Object {
   var canChangeMonth: js.UndefOr[scala.Boolean] = js.undefined
   var captionElement: js.UndefOr[
-    reactLib.reactMod.ReactElement[stdLib.Partial[CaptionElementProps]] | (reactLib.reactMod.ComponentClass[CaptionElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[CaptionElementProps]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[CaptionElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[CaptionElementProps]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classNames: js.UndefOr[reactDashDayDashPickerLib.typesCommonMod.ClassNames] = js.undefined
@@ -32,7 +32,7 @@ trait DayPickerProps extends js.Object {
   var month: js.UndefOr[stdLib.Date] = js.undefined
   var months: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var navbarElement: js.UndefOr[
-    reactLib.reactMod.ReactElement[stdLib.Partial[NavbarElementProps]] | (reactLib.reactMod.ComponentClass[NavbarElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[NavbarElementProps]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[NavbarElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[NavbarElementProps]
   ] = js.undefined
   var numberOfMonths: js.UndefOr[scala.Double] = js.undefined
   var onBlur: js.UndefOr[
@@ -158,7 +158,7 @@ trait DayPickerProps extends js.Object {
   var toMonth: js.UndefOr[stdLib.Date] = js.undefined
   var todayButton: js.UndefOr[java.lang.String] = js.undefined
   var weekdayElement: js.UndefOr[
-    reactLib.reactMod.ReactElement[stdLib.Partial[WeekdayElementProps]] | (reactLib.reactMod.ComponentClass[WeekdayElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[WeekdayElementProps]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[WeekdayElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[WeekdayElementProps]
   ] = js.undefined
   var weekdaysLong: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var weekdaysShort: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -168,7 +168,7 @@ object DayPickerProps {
   @scala.inline
   def apply(
     canChangeMonth: js.UndefOr[scala.Boolean] = js.undefined,
-    captionElement: reactLib.reactMod.ReactElement[stdLib.Partial[CaptionElementProps]] | (reactLib.reactMod.ComponentClass[CaptionElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[CaptionElementProps] = null,
+    captionElement: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[CaptionElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[CaptionElementProps] = null,
     className: java.lang.String = null,
     classNames: reactDashDayDashPickerLib.typesCommonMod.ClassNames = null,
     containerProps: reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement], stdLib.HTMLDivElement] = null,
@@ -186,7 +186,7 @@ object DayPickerProps {
     modifiersStyles: js.Object = null,
     month: stdLib.Date = null,
     months: js.Array[java.lang.String] = null,
-    navbarElement: reactLib.reactMod.ReactElement[stdLib.Partial[NavbarElementProps]] | (reactLib.reactMod.ComponentClass[NavbarElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[NavbarElementProps] = null,
+    navbarElement: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[NavbarElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[NavbarElementProps] = null,
     numberOfMonths: scala.Int | scala.Double = null,
     onBlur: /* e */ reactLib.reactMod.FocusEvent[stdLib.HTMLDivElement] => scala.Unit = null,
     onCaptionClick: (/* month */ stdLib.Date, /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
@@ -213,7 +213,7 @@ object DayPickerProps {
     showWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     toMonth: stdLib.Date = null,
     todayButton: java.lang.String = null,
-    weekdayElement: reactLib.reactMod.ReactElement[stdLib.Partial[WeekdayElementProps]] | (reactLib.reactMod.ComponentClass[WeekdayElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[WeekdayElementProps] = null,
+    weekdayElement: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[WeekdayElementProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[WeekdayElementProps] = null,
     weekdaysLong: js.Array[java.lang.String] = null,
     weekdaysShort: js.Array[java.lang.String] = null
   ): DayPickerProps = {

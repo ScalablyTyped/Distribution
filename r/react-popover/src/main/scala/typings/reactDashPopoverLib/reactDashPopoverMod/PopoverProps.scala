@@ -16,7 +16,7 @@ trait PopoverProps extends js.Object {
   var preferPlace: js.UndefOr[PopoverPlace] = js.undefined
   var refreshIntervalMs: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  var target: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var target: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var tipSize: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -33,7 +33,7 @@ object PopoverProps {
     preferPlace: PopoverPlace = null,
     refreshIntervalMs: scala.Int | scala.Double = null,
     style: reactLib.reactMod.CSSProperties = null,
-    target: reactLib.reactMod.ReactElement[_] = null,
+    target: reactLib.reactMod.ReactElement = null,
     tipSize: scala.Int | scala.Double = null
   ): PopoverProps = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])

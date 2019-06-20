@@ -11,13 +11,13 @@ class Transport protected ()
   extends sipDotJsLib.libCoreMod.Transport {
   def this(logger: sipDotJsLib.libCoreMod.Logger) = this()
   def this(logger: sipDotJsLib.libCoreMod.Logger, options: js.Any) = this()
-  var WebSocket: js.Any = js.native
   var boundOnClose: js.Any = js.native
   var boundOnError: js.Any = js.native
   var boundOnMessage: js.Any = js.native
   var boundOnOpen: js.Any = js.native
   var clearKeepAliveTimeout: js.Any = js.native
   var configuration: js.Any = js.native
+  var connectDeferredReject: js.Any = js.native
   var connectDeferredResolve: js.Any = js.native
   var connectionPromise: js.Any = js.native
   var connectionTimeout: js.Any = js.native

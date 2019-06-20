@@ -120,7 +120,7 @@ trait BottomNavigationActionProps extends js.Object {
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var hrefLang: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
@@ -416,7 +416,7 @@ object BottomNavigationActionProps {
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
     hrefLang: java.lang.String = null,
-    icon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    icon: java.lang.String | reactLib.reactMod.ReactElement = null,
     id: java.lang.String = null,
     inlist: js.Any = null,
     innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,

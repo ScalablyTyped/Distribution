@@ -22,21 +22,21 @@ object DialogNs extends js.Object {
   /**
     * Create a reject button.
     */
-  def cancelButton(): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
-  def cancelButton(options: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
+  def cancelButton(): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
+  def cancelButton(options: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
   /**
     * Create a button item.
     */
-  def createButton(value: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
+  def createButton(value: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
   /**
     * Create an accept button.
     */
-  def okButton(): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
-  def okButton(options: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
+  def okButton(): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
+  def okButton(options: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
   /**
     * Create a warn button.
     */
-  def warnButton(): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
-  def warnButton(options: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): stdLib.Readonly[atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton] = js.native
+  def warnButton(): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
+  def warnButton(options: atJupyterlabApputilsLib.libDialogMod.DialogNs.ButtonOptions): atJupyterlabApputilsLib.libDialogMod.DialogNs.IButton = js.native
 }
 

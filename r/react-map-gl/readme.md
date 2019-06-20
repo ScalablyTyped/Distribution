@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-map-gl
 
-Typings are for version 4.1
+Typings are for version 5.0
 
 ## Library description:
 A React wrapper for MapboxGL-js and overlay API.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-map-gl 4.1
+// Type definitions for react-map-gl 5.0
 // Project: https://github.com/uber/react-map-gl#readme
 // Definitions by: Robert Imig <https://github.com/rimig>
 //                 Fabio Berta <https://github.com/fnberta>

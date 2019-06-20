@@ -5,21 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConnectionConfig[P] extends js.Object {
+trait ConnectionConfig[Props] extends js.Object {
   var direction: js.UndefOr[
     reactDashRelayLib.reactDashRelayLibStrings.backward | reactDashRelayLib.reactDashRelayLibStrings.forward
   ] = js.undefined
-  var getConnectionFromProps: js.UndefOr[js.Function1[/* props */ P, js.UndefOr[ConnectionData | scala.Null]]] = js.undefined
-  var getFragmentVariables: js.UndefOr[
-    js.Function2[
-      /* prevVars */ relayDashRuntimeLib.relayDashRuntimeMod.Variables, 
-      /* totalCount */ scala.Double, 
-      relayDashRuntimeLib.relayDashRuntimeMod.Variables
-    ]
-  ] = js.undefined
+  var getConnectionFromProps: js.UndefOr[js.Function1[/* props */ Props, js.UndefOr[ConnectionData | scala.Null]]] = js.undefined
+  var getFragmentVariables: js.UndefOr[FragmentVariablesGetter] = js.undefined
   var query: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   def getVariables(
-    props: org.scalablytyped.runtime.StringDictionary[js.Any],
+    props: Props,
     paginationInfo: reactDashRelayLib.Anon_Count,
     fragmentVariables: relayDashRuntimeLib.relayDashRuntimeMod.Variables
   ): relayDashRuntimeLib.relayDashRuntimeMod.Variables
@@ -27,18 +21,18 @@ trait ConnectionConfig[P] extends js.Object {
 
 object ConnectionConfig {
   @scala.inline
-  def apply[P](
-    getVariables: (org.scalablytyped.runtime.StringDictionary[js.Any], reactDashRelayLib.Anon_Count, relayDashRuntimeLib.relayDashRuntimeMod.Variables) => relayDashRuntimeLib.relayDashRuntimeMod.Variables,
+  def apply[Props](
+    getVariables: (Props, reactDashRelayLib.Anon_Count, relayDashRuntimeLib.relayDashRuntimeMod.Variables) => relayDashRuntimeLib.relayDashRuntimeMod.Variables,
     query: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     direction: reactDashRelayLib.reactDashRelayLibStrings.backward | reactDashRelayLib.reactDashRelayLibStrings.forward = null,
-    getConnectionFromProps: /* props */ P => js.UndefOr[ConnectionData | scala.Null] = null,
-    getFragmentVariables: (/* prevVars */ relayDashRuntimeLib.relayDashRuntimeMod.Variables, /* totalCount */ scala.Double) => relayDashRuntimeLib.relayDashRuntimeMod.Variables = null
-  ): ConnectionConfig[P] = {
+    getConnectionFromProps: /* props */ Props => js.UndefOr[ConnectionData | scala.Null] = null,
+    getFragmentVariables: FragmentVariablesGetter = null
+  ): ConnectionConfig[Props] = {
     val __obj = js.Dynamic.literal(getVariables = js.Any.fromFunction3(getVariables), query = query.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (getConnectionFromProps != null) __obj.updateDynamic("getConnectionFromProps")(js.Any.fromFunction1(getConnectionFromProps))
-    if (getFragmentVariables != null) __obj.updateDynamic("getFragmentVariables")(js.Any.fromFunction2(getFragmentVariables))
-    __obj.asInstanceOf[ConnectionConfig[P]]
+    if (getFragmentVariables != null) __obj.updateDynamic("getFragmentVariables")(getFragmentVariables)
+    __obj.asInstanceOf[ConnectionConfig[Props]]
   }
 }
 

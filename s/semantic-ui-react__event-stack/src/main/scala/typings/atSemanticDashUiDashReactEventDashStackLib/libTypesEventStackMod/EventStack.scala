@@ -14,7 +14,7 @@ trait EventStack
   def componentDidUpdate_MEventStack(prevProps: EventStackProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MEventStack(): scala.Unit = js.native
-  def subscribe(props: stdLib.Readonly[EventStackProps]): scala.Unit = js.native
-  def unsubscribe(props: stdLib.Readonly[EventStackProps]): scala.Unit = js.native
+  def subscribe(props: EventStackProps): scala.Unit = js.native
+  def unsubscribe(props: EventStackProps): scala.Unit = js.native
 }
 

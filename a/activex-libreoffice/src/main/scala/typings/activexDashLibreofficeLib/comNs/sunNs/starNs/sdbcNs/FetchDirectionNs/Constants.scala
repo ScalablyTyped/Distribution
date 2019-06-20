@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def FORWARD: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1000` = this.cast(1000)
+  @scala.inline
+  def REVERSE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1001` = this.cast(1001)
+  @scala.inline
+  def UNKNOWN: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1002` = this.cast(1002)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

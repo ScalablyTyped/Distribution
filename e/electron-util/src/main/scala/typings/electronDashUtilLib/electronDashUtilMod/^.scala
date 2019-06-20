@@ -17,7 +17,7 @@ object ^ extends js.Object {
   def aboutMenuItem(options: AboutMenuItemOptions): electronLib.ElectronNs.MenuItemConstructorOptions = js.native
   def activeWindow(): electronLib.electronMod.BrowserWindow = js.native
   def appMenu(): electronLib.ElectronNs.MenuItemConstructorOptions = js.native
-  def appMenu(menuItems: stdLib.Readonly[js.Array[electronLib.ElectronNs.MenuItemConstructorOptions]]): electronLib.ElectronNs.MenuItemConstructorOptions = js.native
+  def appMenu(menuItems: js.Array[electronLib.ElectronNs.MenuItemConstructorOptions]): electronLib.ElectronNs.MenuItemConstructorOptions = js.native
   def centerWindow(): scala.Unit = js.native
   def centerWindow(options: CenterWindowOptions): scala.Unit = js.native
   def debugInfo(): java.lang.String = js.native

@@ -16,3 +16,12 @@ import scala.scalajs.js.annotation._
 */
 trait ElementMarkType extends js.Object
 
+object ElementMarkType {
+  @scala.inline
+  def ELEMENTCOLLECTOR: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def ELEMENTMARK: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

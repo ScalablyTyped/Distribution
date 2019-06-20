@@ -21,8 +21,6 @@ class TagInput ()
   var inputElement: js.Any = js.native
   var maybeRenderTag: js.Any = js.native
   var refHandlers: js.Any = js.native
-  @JSName("state")
-  var state_TagInput: ITagInputState = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MTagInput(nextProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps with ITagInputProps): scala.Unit = js.native
   /* private */ def findNextIndex(startIndex: js.Any, direction: js.Any): js.Any = js.native

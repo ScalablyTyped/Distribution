@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JSON2CSVParser[T]
   extends json2csvLib.jSON2CSVBaseMod.default[T] {
-  def parse(data: js.Array[T]): java.lang.String = js.native
   /**
     * Main function that converts json to csv.
     *
     * @param {object|object[]} data Array of JSON objects to be converted to CSV
     * @returns {string} The CSV formated data as a string
     */
-  def parse(data: stdLib.Readonly[T]): java.lang.String = js.native
+  def parse(data: T): java.lang.String = js.native
+  def parse(data: js.Array[T]): java.lang.String = js.native
   /**
     * Preprocess the data according to the give opts (unwind, flatten, etc.)
     and calculate the fields and field names if they are not provided.

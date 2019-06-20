@@ -122,7 +122,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Custom header value/component/children to use for this column.
   	 * Comes from TableHeader.headerText || TableHeader.children properties.
   	 */
-  var text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactElement[_]
+  var text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactElement
   /**
   	 * Width setting for this column.
   	 * Comes from TableHeader.width property.
@@ -137,7 +137,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Column data format function.
   	 * Comes from TableHeader.dataFormat property.
   	 */
-  def format(cell: js.Any, row: TRow, formatExtraData: js.Any, rowIndex: scala.Double): java.lang.String | reactLib.reactMod.ReactElement[_]
+  def format(cell: js.Any, row: TRow, formatExtraData: js.Any, rowIndex: scala.Double): java.lang.String | reactLib.reactMod.ReactElement
   /**
   	 * Custom sort function to use for this column.
   	 * Comes from TableHeader.sortFunc property.
@@ -172,7 +172,7 @@ object ColumnDescription {
     export: scala.Boolean,
     filterFormatted: scala.Boolean,
     filterValue: (js.Any, TRow) => js.Any,
-    format: (js.Any, TRow, js.Any, scala.Double) => java.lang.String | reactLib.reactMod.ReactElement[_],
+    format: (js.Any, TRow, js.Any, scala.Double) => java.lang.String | reactLib.reactMod.ReactElement,
     formatExtraData: js.Any,
     hidden: scala.Boolean,
     hiddenOnInsert: scala.Boolean,
@@ -183,7 +183,7 @@ object ColumnDescription {
     sortFunc: (TRow, TRow, SortOrder, java.lang.String, js.Any) => scala.Double,
     sortFuncExtraData: js.Any,
     style: reactLib.reactMod.CSSProperties,
-    text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactElement[_],
+    text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactElement,
     width: java.lang.String
   ): ColumnDescription[TRow] = {
     val __obj = js.Dynamic.literal(align = align, attrs = attrs, className = className.asInstanceOf[js.Any], columnTitle = columnTitle, customEditor = customEditor, editAttrs = editAttrs, editClassName = editClassName.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], expandable = expandable, export = export, filterFormatted = filterFormatted, filterValue = js.Any.fromFunction2(filterValue), format = js.Any.fromFunction4(format), formatExtraData = formatExtraData, hidden = hidden, hiddenOnInsert = hiddenOnInsert, invalidEditColumnClassName = invalidEditColumnClassName.asInstanceOf[js.Any], name = name, searchable = searchable, sort = sort, sortFunc = js.Any.fromFunction5(sortFunc), sortFuncExtraData = sortFuncExtraData, style = style, text = text.asInstanceOf[js.Any], width = width)

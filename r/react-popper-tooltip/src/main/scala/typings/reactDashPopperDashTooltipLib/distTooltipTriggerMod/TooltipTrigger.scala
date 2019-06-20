@@ -24,8 +24,6 @@ trait TooltipTrigger
   var setTooltipState: js.Any = js.native
   var showTimeout: js.UndefOr[js.Any] = js.native
   var showTooltip: js.Any = js.native
-  @JSName("state")
-  var state_TooltipTrigger: reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerState = js.native
   var toggleTooltip: js.Any = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTooltipTrigger(): scala.Unit = js.native

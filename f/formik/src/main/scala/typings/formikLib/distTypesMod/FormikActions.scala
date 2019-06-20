@@ -20,7 +20,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_error(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.error]
     ]
@@ -28,7 +28,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_error(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.error]
     ],
@@ -44,7 +44,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_errors(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.errors]
     ]
@@ -52,7 +52,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_errors(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.errors]
     ],
@@ -68,7 +68,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_isSubmitting(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.isSubmitting]
     ]
@@ -76,7 +76,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_isSubmitting(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.isSubmitting]
     ],
@@ -92,7 +92,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_isValidating(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.isValidating]
     ]
@@ -100,7 +100,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_isValidating(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.isValidating]
     ],
@@ -116,7 +116,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_status(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.status]
     ]
@@ -124,7 +124,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_status(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.status]
     ],
@@ -140,7 +140,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_submitCount(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.submitCount]
     ]
@@ -148,7 +148,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_submitCount(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.submitCount]
     ],
@@ -164,7 +164,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_touched(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.touched]
     ]
@@ -172,7 +172,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_touched(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.touched]
     ],
@@ -188,7 +188,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_values(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.values]
     ]
@@ -196,7 +196,7 @@ trait FormikActions[Values] extends js.Object {
   @JSName("setFormikState")
   def setFormikState_values(
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[FormikState[Values]], 
+      /* prevState */ FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[FormikState[Values], formikLib.formikLibStrings.values]
     ],

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-redux-epic/client", JSImport.Namespace)
 @js.native
 object clientMod extends js.Object {
-  def render(element: reactLib.reactMod.ReactElement[_], container: stdLib.Element): js.Any = js.native
+  def render(element: reactLib.reactMod.ReactElement, container: stdLib.Element): js.Any = js.native
 }
 

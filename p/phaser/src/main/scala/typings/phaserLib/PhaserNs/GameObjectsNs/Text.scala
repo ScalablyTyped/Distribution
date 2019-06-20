@@ -70,8 +70,8 @@ class Text protected ()
     * @param text The text this Text object will display.
     * @param style The text style configuration object.
     */
-  def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: java.lang.String, style: js.Object) = this()
-  def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: js.Array[java.lang.String], style: js.Object) = this()
+  def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: java.lang.String, style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle) = this()
+  def this(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, text: js.Array[java.lang.String], style: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextSyle) = this()
   /**
     * Whether to automatically round line positions.
     */
@@ -121,15 +121,19 @@ class Text protected ()
   override var displayWidth: scala.Double = js.native
   /**
     * The horizontally flipped state of the Game Object.
+    * 
     * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override var flipX: scala.Boolean = js.native
   /**
     * The vertically flipped state of the Game Object.
+    * 
     * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override var flipY: scala.Boolean = js.native
@@ -240,11 +244,14 @@ class Text protected ()
     */
   def runWordWrap(text: java.lang.String): java.lang.String = js.native
   /**
-    * Set the text alignment.
+    * Set the alignment of the text in this Text object.
     * 
-    * Expects values like `'left'`, `'right'`, `'center'` or `'justified'`.
-    * @param align The text alignment.
+    * The argument can be one of: `left`, `right`, `center` or `justify`.
+    * 
+    * Alignment only works if the Text object has more than one line of text.
+    * @param align The text alignment for multi-line text. Default 'left'.
     */
+  def setAlign(): Text = js.native
   def setAlign(align: java.lang.String): Text = js.native
   /**
     * Set the background color.
@@ -300,6 +307,10 @@ class Text protected ()
   def setFixedSize(width: scala.Double, height: scala.Double): Text = js.native
   /**
     * Sets the horizontal and vertical flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped will render inversed on the flipped axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     */
@@ -307,6 +318,10 @@ class Text protected ()
   override def setFlip(x: scala.Boolean, y: scala.Boolean): this.type = js.native
   /**
     * Sets the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param value The flipped state. `false` for no flip, or `true` to be flipped.
     */
   /* CompleteClass */
@@ -384,7 +399,12 @@ class Text protected ()
     */
   def setMaxLines(): Text = js.native
   def setMaxLines(max: phaserLib.integer): Text = js.native
-  def setPadding(left: js.Object, top: scala.Double, right: scala.Double, bottom: scala.Double): Text = js.native
+  def setPadding(
+    left: phaserLib.PhaserNs.TypesNs.GameObjectsNs.TextNs.TextPadding,
+    top: scala.Double,
+    right: scala.Double,
+    bottom: scala.Double
+  ): Text = js.native
   /**
     * Set the text padding.
     * 
@@ -516,6 +536,10 @@ class Text protected ()
   def setWordWrapWidth(width: scala.Double, useAdvancedWrap: scala.Boolean): Text = js.native
   /**
     * Toggles the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override def toggleFlipX(): this.type = js.native

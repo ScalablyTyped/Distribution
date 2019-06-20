@@ -20,13 +20,21 @@ trait InteractiveObject extends js.Object {
     */
   var customHitArea: scala.Boolean = js.native
   /**
-    * The x coordinate that the Pointer started dragging this Interactive Object from.
+    * The x coordinate of the Game Object that owns this Interactive Object when the drag started.
     */
   var dragStartX: scala.Double = js.native
   /**
-    * The y coordinate that the Pointer started dragging this Interactive Object from.
+    * The x coordinate that the Pointer started dragging this Interactive Object from.
+    */
+  var dragStartXGlobal: scala.Double = js.native
+  /**
+    * The y coordinate of the Game Object that owns this Interactive Object when the drag started.
     */
   var dragStartY: scala.Double = js.native
+  /**
+    * The y coordinate that the Pointer started dragging this Interactive Object from.
+    */
+  var dragStartYGlobal: scala.Double = js.native
   /**
     * The current drag state of this Interactive Object. 0 = Not being dragged, 1 = being checked for drag, or 2 = being actively dragged.
     */

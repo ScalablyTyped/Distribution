@@ -11,7 +11,7 @@ object linksNs extends js.Object {
   @js.native
   class DynamicLink protected ()
     extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.linksNs.DynamicLink {
-    def this(link: java.lang.String, dynamicLinkDomain: java.lang.String) = this()
+    def this(link: java.lang.String, domainURIPrefix: java.lang.String) = this()
   }
   
 }

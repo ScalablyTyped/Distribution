@@ -1,7 +1,7 @@
 
 # Scala.js typings for underscore
 
-Typings are for version 1.8
+Typings are for version 1.9
 
 ## Library description:
 JavaScript's functional programming helper library.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Underscore 1.8
+// Type definitions for Underscore 1.9
 // Project: http://underscorejs.org/
 // Definitions by: Boris Yankov <https://github.com/borisyankov>,
 //                 Josh Baldwin <https://github.com/jbaldwin>,
@@ -45,7 +45,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Florian Keller <https://github.com/ffflorian>
 //                 Regev Brody <https://github.com/regevbr>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

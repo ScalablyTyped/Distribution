@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
     * If set to `true` spaces will not interrupt matching suggestions
     */
   var allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined
-  var children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]]
+  var children: reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classNames: js.UndefOr[js.Any] = js.undefined
   var inputRef: js.UndefOr[
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation._
 object MentionsInputProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]],
+    children: reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement],
     allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classNames: js.Any = null,

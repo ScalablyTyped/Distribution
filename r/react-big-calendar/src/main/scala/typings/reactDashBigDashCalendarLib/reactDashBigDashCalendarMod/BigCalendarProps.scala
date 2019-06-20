@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
+trait BigCalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */]
   extends reactLib.reactMod.Props[BigCalendar[TEvent, TResource]] {
   var allDayAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, scala.Boolean])] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -95,7 +95,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
 
 object BigCalendarProps {
   @scala.inline
-  def apply[TEvent /* <: Event */, TResource /* <: js.Object */](
+  def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](
     localizer: DateLocalizer,
     allDayAccessor: java.lang.String | (js.Function1[/* event */ TEvent, scala.Boolean]) = null,
     children: reactLib.reactMod.ReactNode = null,

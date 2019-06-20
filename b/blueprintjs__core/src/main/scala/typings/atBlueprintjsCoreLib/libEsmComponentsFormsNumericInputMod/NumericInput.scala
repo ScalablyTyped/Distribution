@@ -27,8 +27,6 @@ class NumericInput ()
   var inputElement: js.Any = js.native
   var inputRef: js.Any = js.native
   var intervalId: js.Any = js.native
-  @JSName("state")
-  var state_NumericInput: INumericInputState = js.native
   var stopContinuousChange: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MNumericInput(): scala.Unit = js.native

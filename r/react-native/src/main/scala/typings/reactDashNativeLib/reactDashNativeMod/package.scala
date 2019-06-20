@@ -62,10 +62,7 @@ package object reactDashNativeMod {
   type LayoutAnimation = LayoutAnimationStatic
   type Linking = LinkingStatic
   type LinkingIOS = LinkingIOSStatic
-  type ListRenderItem[ItemT] = js.Function1[
-    /* info */ ListRenderItemInfo[ItemT], 
-    reactLib.reactMod.ReactElement[js.Any] | scala.Null
-  ]
+  type ListRenderItem[ItemT] = js.Function1[/* info */ ListRenderItemInfo[ItemT], reactLib.reactMod.ReactElement | scala.Null]
   type ListViewComponent = reactLib.reactMod.Component[ListViewProps, js.Object, js.Any]
   /**
     * @see https://facebook.github.io/react-native/docs/maskedviewios.html
@@ -167,7 +164,7 @@ package object reactDashNativeMod {
   type SectionList[ItemT] = SectionListStatic[ItemT]
   type SectionListRenderItem[ItemT] = js.Function1[
     /* info */ SectionListRenderItemInfo[ItemT], 
-    reactLib.reactMod.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactElement | scala.Null
   ]
   /**
     * Use `SegmentedControlIOS` to render a UISegmentedControl iOS.

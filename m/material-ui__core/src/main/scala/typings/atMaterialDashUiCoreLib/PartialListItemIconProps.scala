@@ -78,7 +78,7 @@ trait PartialListItemIconProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapListItemIconClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
@@ -340,7 +340,7 @@ object PartialListItemIconProps {
     autoCapitalize: java.lang.String = null,
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
-    children: reactLib.reactMod.ReactElement[_] = null,
+    children: reactLib.reactMod.ReactElement = null,
     className: java.lang.String = null,
     classes: PartialClassNameMapListItemIconClassKey = null,
     color: java.lang.String = null,

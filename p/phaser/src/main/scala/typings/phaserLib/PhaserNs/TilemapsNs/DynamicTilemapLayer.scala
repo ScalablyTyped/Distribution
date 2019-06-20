@@ -113,15 +113,19 @@ class DynamicTilemapLayer protected ()
   override var displayWidth: scala.Double = js.native
   /**
     * The horizontally flipped state of the Game Object.
+    * 
     * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override var flipX: scala.Boolean = js.native
   /**
     * The vertically flipped state of the Game Object.
+    * 
     * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override var flipY: scala.Boolean = js.native
@@ -892,6 +896,10 @@ class DynamicTilemapLayer protected ()
   override def setDisplaySize(width: scala.Double, height: scala.Double): this.type = js.native
   /**
     * Sets the horizontal and vertical flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped will render inversed on the flipped axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     */
@@ -899,6 +907,10 @@ class DynamicTilemapLayer protected ()
   override def setFlip(x: scala.Boolean, y: scala.Boolean): this.type = js.native
   /**
     * Sets the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param value The flipped state. `false` for no flip, or `true` to be flipped.
     */
   /* CompleteClass */
@@ -1081,6 +1093,10 @@ class DynamicTilemapLayer protected ()
   def tileToWorldY(tileY: phaserLib.integer, camera: phaserLib.PhaserNs.CamerasNs.Scene2DNs.Camera): scala.Double = js.native
   /**
     * Toggles the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   /* CompleteClass */
   override def toggleFlipX(): this.type = js.native

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "meteor-prime8consulting-oauth2"
-version := "0.0-unknown-dt-20190322Z-2fe89c"
+version := "0.0-unknown-dt-20190322Z-f59c4b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-07b727",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "meteor" % "1.4-dt-20190429Z-8d2f33",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190617Z-cfadc7")
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-039467",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
+  "org.scalablytyped" %%% "meteor" % "1.4-dt-20190429Z-a63208",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303",
+  "org.scalablytyped" %%% "underscore" % "1.9-dt-20190619Z-a62032")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

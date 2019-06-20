@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMultiselectMod {
-  type Multiselect = reactLib.reactMod.ReactElement[MultiselectProps]
+  type Multiselect = reactLib.reactMod.ReactElement
 }

@@ -39,7 +39,7 @@ object EMarketingMessageFlags extends js.Object {
   /* 0 */ val None: None with scala.Double = js.native
   /* 8 */ val PlatformLinux: PlatformLinux with scala.Double = js.native
   /* 4 */ val PlatformMac: PlatformMac with scala.Double = js.native
-  /* PlatformWindows | PlatformMac | PlatformLinux */ val PlatformRestrictions: PlatformRestrictions with scala.Double = js.native
+  /* 2 | 4 | 8 */ val PlatformRestrictions: PlatformRestrictions with scala.Double = js.native
   /* 2 */ val PlatformWindows: PlatformWindows with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[steamDashClientLib.steamDashClientMod.EMarketingMessageFlags with scala.Double] = js.native

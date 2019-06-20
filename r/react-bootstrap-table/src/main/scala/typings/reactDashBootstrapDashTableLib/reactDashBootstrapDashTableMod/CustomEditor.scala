@@ -21,7 +21,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: java.lang.String */] extends
       scala.Unit
     ],
     props: CustomEditorProps[TRow, K]
-  ): reactLib.reactMod.ReactElement[_]
+  ): reactLib.reactMod.ReactElement
 }
 
 object CustomEditor {
@@ -30,7 +30,7 @@ object CustomEditor {
     getElement: (js.Function1[
       /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       scala.Unit
-    ], CustomEditorProps[TRow, K]) => reactLib.reactMod.ReactElement[_],
+    ], CustomEditorProps[TRow, K]) => reactLib.reactMod.ReactElement,
     customEditorParameters: js.Object = null
   ): CustomEditor[TRow, K] = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction2(getElement))

@@ -192,13 +192,14 @@ class GameObjectCreator protected () extends js.Object {
     */
   def tilemap(): phaserLib.PhaserNs.TilemapsNs.Tilemap = js.native
   def tilemap(config: phaserLib.PhaserNs.TypesNs.TilemapsNs.TilemapConfig): phaserLib.PhaserNs.TilemapsNs.Tilemap = js.native
+  def tween(config: js.Object): phaserLib.PhaserNs.TweensNs.Tween = js.native
   /**
     * Creates a new Tween object and returns it.
     * 
     * Note: This method will only be available if Tweens have been built into Phaser.
     * @param config The Tween configuration.
     */
-  def tween(config: js.Object): phaserLib.PhaserNs.TweensNs.Tween = js.native
+  def tween(config: phaserLib.PhaserNs.TypesNs.TweensNs.TweenBuilderConfig): phaserLib.PhaserNs.TweensNs.Tween = js.native
   /**
     * Creates a new Zone Game Object and returns it.
     * 

@@ -37,7 +37,7 @@ trait InfiniteScrollProps
   /**
     * Loader component for indicating "loading more".
     */
-  var loader: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var loader: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * The number of the first page to load, with the default of 0, the first page is 1.
     * Defaults to 0.
@@ -75,7 +75,7 @@ object InfiniteScrollProps {
     hasMore: js.UndefOr[scala.Boolean] = js.undefined,
     initialLoad: js.UndefOr[scala.Boolean] = js.undefined,
     isReverse: js.UndefOr[scala.Boolean] = js.undefined,
-    loader: reactLib.reactMod.ReactElement[_] = null,
+    loader: reactLib.reactMod.ReactElement = null,
     pageStart: scala.Int | scala.Double = null,
     threshold: scala.Int | scala.Double = null,
     useCapture: js.UndefOr[scala.Boolean] = js.undefined,

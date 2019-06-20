@@ -638,8 +638,10 @@ object baseuiLibComponents {
   def ToastProps: baseuiLib.toastMod.ToastProps.type = baseuiLib.toastMod.ToastProps
   type ToastProps = baseuiLib.toastMod.ToastProps
   @scala.inline
-  def ToasterContainer: reactLib.reactMod.ComponentType[stdLib.Readonly[baseuiLib.toastMod.ToasterProps]] = js.constructorOf[baseuiLib.toastMod.ToasterContainer].asInstanceOf[reactLib.reactMod.ComponentType[stdLib.Readonly[baseuiLib.toastMod.ToasterProps]]]
-  type ToasterContainerProps[T] = stdLib.Readonly[T]
+  def ToasterContainer: reactLib.reactMod.ComponentType[baseuiLib.toastMod.ToasterProps] = js.constructorOf[baseuiLib.toastMod.ToasterContainer].asInstanceOf[reactLib.reactMod.ComponentType[baseuiLib.toastMod.ToasterProps]]
+  @scala.inline
+  def ToasterContainerProps: baseuiLib.toastMod.ToasterProps.type = baseuiLib.toastMod.ToasterProps
+  type ToasterContainerProps = baseuiLib.toastMod.ToasterProps
   @scala.inline
   def Tooltip: reactLib.reactMod.ComponentType[baseuiLib.tooltipMod.TooltipProps] = js.constructorOf[baseuiLib.tooltipMod.Tooltip].asInstanceOf[reactLib.reactMod.ComponentType[baseuiLib.tooltipMod.TooltipProps]]
   type TooltipProps = baseuiLib.tooltipMod.TooltipProps

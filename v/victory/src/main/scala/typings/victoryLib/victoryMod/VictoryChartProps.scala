@@ -83,12 +83,12 @@ object VictoryChartProps {
   @scala.inline
   def apply(
     animate: AnimatePropTypeInterface = null,
-    containerComponent: reactLib.reactMod.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement = null,
     domain: DomainPropType = null,
     domainPadding: DomainPaddingPropType = null,
     eventKey: StringOrNumberOrCallback = null,
     events: js.Array[EventPropTypeInterface[java.lang.String, StringOrNumberOrCallback]] = null,
-    groupComponent: reactLib.reactMod.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement = null,
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,

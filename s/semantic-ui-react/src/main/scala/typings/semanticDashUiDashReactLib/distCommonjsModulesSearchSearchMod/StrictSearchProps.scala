@@ -27,7 +27,7 @@ trait StrictSearchProps extends js.Object {
   var categoryRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps, 
-      reactLib.reactMod.ReactElement[_]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   /** Additional classes. */
@@ -147,7 +147,7 @@ trait StrictSearchProps extends js.Object {
   var resultRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-      reactLib.reactMod.ReactElement[_]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   /**
@@ -174,7 +174,7 @@ object StrictSearchProps {
     aligned: java.lang.String = null,
     as: js.Any = null,
     category: js.UndefOr[scala.Boolean] = js.undefined,
-    categoryRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps => reactLib.reactMod.ReactElement[_] = null,
+    categoryRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps => reactLib.reactMod.ReactElement = null,
     className: java.lang.String = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: java.lang.String = null,
@@ -192,7 +192,7 @@ object StrictSearchProps {
     onSearchChange: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
     onSelectionChange: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    resultRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps => reactLib.reactMod.ReactElement[_] = null,
+    resultRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps => reactLib.reactMod.ReactElement = null,
     results: js.Array[_] | js.Object = null,
     selectFirstResult: js.UndefOr[scala.Boolean] = js.undefined,
     showNoResults: js.UndefOr[scala.Boolean] = js.undefined,

@@ -12,7 +12,7 @@ trait TransitionDefinition[TContext, TEvent /* <: EventObject */] extends Transi
   var cond_TransitionDefinition: js.UndefOr[Guard[TContext, TEvent]] = js.undefined
   var event: java.lang.String
   @JSName("target")
-  var target_TransitionDefinition: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var target_TransitionDefinition: js.UndefOr[TransitionTargets[TContext]] = js.undefined
 }
 
 object TransitionDefinition {
@@ -24,7 +24,7 @@ object TransitionDefinition {
     in: StateValue = null,
     internal: js.UndefOr[scala.Boolean] = js.undefined,
     meta: stdLib.Record[java.lang.String, _] = null,
-    target: js.Array[java.lang.String] = null
+    target: TransitionTargets[TContext] = null
   ): TransitionDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(actions = actions, event = event)
     if (cond != null) __obj.updateDynamic("cond")(cond.asInstanceOf[js.Any])

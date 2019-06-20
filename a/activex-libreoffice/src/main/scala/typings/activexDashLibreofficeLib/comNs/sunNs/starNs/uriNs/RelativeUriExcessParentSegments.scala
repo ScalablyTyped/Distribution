@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
 */
 trait RelativeUriExcessParentSegments extends js.Object
 
+object RelativeUriExcessParentSegments {
+  /** causes excess special parent segments to be treated as an error. */
+  @scala.inline
+  def ERROR: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** causes excess special parent segments to be removed. */
+  @scala.inline
+  def REMOVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** causes excess special parent segments to be retained, treating them like ordinary segments. */
+  @scala.inline
+  def RETAIN: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

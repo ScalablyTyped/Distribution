@@ -78,7 +78,7 @@ trait ChipProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var avatar: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapChipClassKey] = js.undefined
@@ -91,11 +91,11 @@ trait ChipProps extends js.Object {
   var datatype: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var defaultValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var deleteIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var deleteIcon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var dir: js.UndefOr[java.lang.String] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
@@ -350,7 +350,7 @@ object ChipProps {
     autoCapitalize: java.lang.String = null,
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
-    avatar: reactLib.reactMod.ReactElement[_] = null,
+    avatar: reactLib.reactMod.ReactElement = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: atMaterialDashUiCoreLib.PartialClassNameMapChipClassKey = null,
@@ -363,11 +363,11 @@ object ChipProps {
     datatype: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: java.lang.String | js.Array[java.lang.String] = null,
-    deleteIcon: reactLib.reactMod.ReactElement[_] = null,
+    deleteIcon: reactLib.reactMod.ReactElement = null,
     dir: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactElement[_] = null,
+    icon: reactLib.reactMod.ReactElement = null,
     id: java.lang.String = null,
     inlist: js.Any = null,
     innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,

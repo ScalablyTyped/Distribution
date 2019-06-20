@@ -12,10 +12,10 @@ trait Anon_AccentColor extends js.Object {
   val options: js.UndefOr[js.Array[Anon_Disabled]] = js.undefined
   val radioRenderer: js.UndefOr[
     js.Function3[
-      /* option */ reactLib.reactMod.ReactElement[_], 
+      /* option */ reactLib.reactMod.ReactElement, 
       /* idx */ scala.Double, 
-      /* options */ js.Array[reactLib.reactMod.ReactElement[_]], 
-      reactLib.reactMod.ReactElement[_]
+      /* options */ js.Array[reactLib.reactMod.ReactElement], 
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   val value: js.UndefOr[java.lang.String] = js.undefined
@@ -28,7 +28,7 @@ object Anon_AccentColor {
     idleColor: java.lang.String = null,
     onChange: /* value */ java.lang.String => scala.Unit = null,
     options: js.Array[Anon_Disabled] = null,
-    radioRenderer: (/* option */ reactLib.reactMod.ReactElement[_], /* idx */ scala.Double, /* options */ js.Array[reactLib.reactMod.ReactElement[_]]) => reactLib.reactMod.ReactElement[_] = null,
+    radioRenderer: (/* option */ reactLib.reactMod.ReactElement, /* idx */ scala.Double, /* options */ js.Array[reactLib.reactMod.ReactElement]) => reactLib.reactMod.ReactElement = null,
     value: java.lang.String = null
   ): Anon_AccentColor = {
     val __obj = js.Dynamic.literal()

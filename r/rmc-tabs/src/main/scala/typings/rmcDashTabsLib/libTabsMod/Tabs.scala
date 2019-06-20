@@ -18,14 +18,14 @@ class Tabs protected ()
     index: scala.Double,
     force: scala.Boolean,
     usePaged: js.UndefOr[scala.Nothing],
-    props: stdLib.Readonly[rmcDashTabsLib.Anon_Children] with stdLib.Readonly[PropsType]
+    props: rmcDashTabsLib.Anon_Children with PropsType
   ): scala.Boolean = js.native
   def goToTab(index: scala.Double, force: scala.Boolean, usePaged: scala.Boolean): scala.Boolean = js.native
   def goToTab(
     index: scala.Double,
     force: scala.Boolean,
     usePaged: scala.Boolean,
-    props: stdLib.Readonly[rmcDashTabsLib.Anon_Children] with stdLib.Readonly[PropsType]
+    props: rmcDashTabsLib.Anon_Children with PropsType
   ): scala.Boolean = js.native
   def onSwipe(status: rcDashGestureLib.rcDashGestureMod.IGestureStatus): scala.Unit = js.native
   def renderContent(): reactLib.reactMod.Global.JSXNs.Element = js.native

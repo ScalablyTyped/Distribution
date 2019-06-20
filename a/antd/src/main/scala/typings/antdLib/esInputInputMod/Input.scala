@@ -22,8 +22,8 @@ trait Input
   def renderClearIcon(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderComponent(hasGetPrefixCls: antdLib.esConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderInput(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderLabeledIcon(prefixCls: java.lang.String, children: reactLib.reactMod.ReactElement[_]): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderLabeledInput(prefixCls: java.lang.String, children: reactLib.reactMod.ReactElement[_]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderLabeledIcon(prefixCls: java.lang.String, children: reactLib.reactMod.ReactElement): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderLabeledInput(prefixCls: java.lang.String, children: reactLib.reactMod.ReactElement): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderSuffix(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def saveInput(node: stdLib.HTMLInputElement): scala.Unit = js.native
   def select(): scala.Unit = js.native

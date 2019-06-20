@@ -23,7 +23,7 @@ class Formik[Values] protected ()
   @JSName("componentDidMount")
   def componentDidMount_MFormik(): scala.Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MFormik(prevProps: stdLib.Readonly[formikLib.distTypesMod.FormikConfig[Values]]): scala.Unit = js.native
+  def componentDidUpdate_MFormik(prevProps: formikLib.distTypesMod.FormikConfig[Values]): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MFormik(): scala.Unit = js.native
   def executeSubmit(): scala.Unit = js.native

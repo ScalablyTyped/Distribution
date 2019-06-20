@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "highcharts"
-version := "5.0-dt-20190613Z-82d439"
+version := "5.0-dt-20190613Z-8879fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-762b1c",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-5c5531",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

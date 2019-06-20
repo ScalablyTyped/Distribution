@@ -23,7 +23,7 @@ object SearchResultProps {
     image: java.lang.String = null,
     onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ SearchResultProps) => scala.Unit = null,
     price: java.lang.String = null,
-    renderer: /* props */ SearchResultProps => js.Array[reactLib.reactMod.ReactElement[_]] = null
+    renderer: /* props */ SearchResultProps => js.Array[reactLib.reactMod.ReactElement] = null
   ): SearchResultProps = {
     val __obj = js.Dynamic.literal(title = title)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -15,7 +15,7 @@ object DropdownMenuRenderProps {
   @scala.inline
   def apply(
     alignEnd: scala.Boolean,
-    arrowProps: reactDashOverlaysLib.Anon_Element,
+    arrowProps: reactDashOverlaysLib.Anon_Key,
     close: reactLib.reactMod.SyntheticEvent[_, reactLib.Event] => scala.Unit,
     placement: reactDashOverlaysLib.libOverlayMod.Placements,
     props: reactDashOverlaysLib.Anon_Arialabelledby,

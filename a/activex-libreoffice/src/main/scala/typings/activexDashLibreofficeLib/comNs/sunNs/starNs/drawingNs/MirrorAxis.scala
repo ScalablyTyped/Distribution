@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait MirrorAxis extends js.Object
 
+object MirrorAxis {
+  /** mirror to the horizontal axis */
+  @scala.inline
+  def HORIZONTAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** mirror to the vertical axis */
+  @scala.inline
+  def VERTICAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def CURRENCY: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`8` = this.cast(8)
+  @scala.inline
+  def DATE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def DATE_TIME: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def FIXED_NUMBER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def FRACTION_NUMBER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def PERCENT_NUMBER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def SCIENTIFIC_NUMBER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def TIME: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

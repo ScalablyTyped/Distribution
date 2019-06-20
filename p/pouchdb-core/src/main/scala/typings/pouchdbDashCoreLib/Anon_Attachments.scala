@@ -10,7 +10,7 @@ trait Anon_Attachments extends js.Object {
   /** You can update an existing doc using _rev */
   var _rev: js.UndefOr[pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId] = js.undefined
   var filters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Anon_Map]] = js.undefined
 }
 
 object Anon_Attachments {
@@ -19,7 +19,7 @@ object Anon_Attachments {
     _attachments: pouchdbDashCoreLib.PouchDBNs.CoreNs.Attachments = null,
     _rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId = null,
     filters: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    views: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+    views: org.scalablytyped.runtime.StringDictionary[Anon_Map] = null
   ): Anon_Attachments = {
     val __obj = js.Dynamic.literal()
     if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)

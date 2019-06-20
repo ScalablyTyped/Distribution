@@ -21,6 +21,10 @@ object ^ extends js.Object {
     */
   var MOUSE_UP: phaserLib.integer = js.native
   /**
+    * The mouse wheel changes.
+    */
+  var MOUSE_WHEEL: phaserLib.integer = js.native
+  /**
     * The pointer lock has changed.
     */
   var POINTER_LOCK_CHANGE: phaserLib.integer = js.native

@@ -81,15 +81,11 @@ trait Renderer extends js.Object {
     container: stdLib.Element,
     callback: js.Function0[scala.Unit]
   ): T = js.native
-  def apply[P](element: reactLib.reactMod.ReactElement[P]): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
+  def apply[P](element: reactLib.reactMod.ReactElement): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
+  def apply[P](element: reactLib.reactMod.ReactElement, container: scala.Null, callback: js.Function0[scala.Unit]): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
+  def apply[P](element: reactLib.reactMod.ReactElement, container: stdLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
   def apply[P](
-    element: reactLib.reactMod.ReactElement[P],
-    container: scala.Null,
-    callback: js.Function0[scala.Unit]
-  ): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
-  def apply[P](element: reactLib.reactMod.ReactElement[P], container: stdLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
-  def apply[P](
-    element: reactLib.reactMod.ReactElement[P],
+    element: reactLib.reactMod.ReactElement,
     container: stdLib.Element,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native

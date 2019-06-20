@@ -10,12 +10,12 @@ trait DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HT
 object DetailedReactHTMLElement {
   @scala.inline
   def apply[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
-    props: P,
+    props: js.Any,
     ref: LegacyRef[T],
     `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     key: Key = null
   ): DetailedReactHTMLElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props, ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedReactHTMLElement[P, T]]

@@ -21,3 +21,23 @@ import scala.scalajs.js.annotation._
 */
 trait DockingArea extends js.Object
 
+object DockingArea {
+  /** the bottom docking area above the status bar. */
+  @scala.inline
+  def DOCKINGAREA_BOTTOM: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** a default docking area. It depends on the implementation how to treat this value. */
+  @scala.inline
+  def DOCKINGAREA_DEFAULT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4` = this.cast(4)
+  /** the left side docking area. */
+  @scala.inline
+  def DOCKINGAREA_LEFT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** the right side docking area. */
+  @scala.inline
+  def DOCKINGAREA_RIGHT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  /** the top docking area below the menu bar. */
+  @scala.inline
+  def DOCKINGAREA_TOP: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

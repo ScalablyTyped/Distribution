@@ -17,15 +17,14 @@ trait UnderscoreStatic extends js.Object {
     * following template settings to use alternative delimiters.
     **/
   var templateSettings: TemplateSettings = js.native
-  def apply[T](value: T): Underscore[T] = js.native
-  def apply[T](value: js.Array[T]): Underscore[T] = js.native
+  def apply[T](value: T): Underscore[T, T] = js.native
+  def apply[T](value: js.Array[T]): Underscore[T, js.Array[T]] = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
     * @param key First argument to Underscore object functions.
     **/
-  def apply[T](value: Dictionary[T]): Underscore[T] = js.native
-  def apply[T](value: List[T]): Underscore[T] = js.native
+  def apply[T](value: List[T]): Underscore[T, List[T]] = js.native
   /**
     * Creates a version of the function that will only be run after first being called count times. Useful
     * for grouping asynchronous responses, where you want to be sure that all the async calls have finished,
@@ -100,7 +99,7 @@ trait UnderscoreStatic extends js.Object {
     * methods are bound.
     **/
   def bindAll(`object`: js.Any, methodNames: java.lang.String*): js.Any = js.native
-  def chain[T /* <: js.Object */](obj: T): _Chain[T] = js.native
+  def chain[T /* <: js.Object */](obj: T): _Chain[T, T] = js.native
   /* **********
     * Chaining *
     *********** */
@@ -110,8 +109,9 @@ trait UnderscoreStatic extends js.Object {
     * @param obj Object to chain.
     * @return Wrapped `obj`.
     **/
-  def chain[T](obj: js.Array[T]): _Chain[T] = js.native
-  def chain[T](obj: Dictionary[T]): _Chain[T] = js.native
+  def chain[T](obj: js.Array[T]): _Chain[T, js.Array[T]] = js.native
+  @JSName("chain")
+  def chain_TTypeOfDictionaryVDictionary[T /* <: TypeOfDictionary[V] */, V /* <: Dictionary[_] */](obj: V): _Chain[T, V] = js.native
   /**
     * Split an **array** into several arrays containing **count** or less elements
     * of initial array.
@@ -2892,10 +2892,6 @@ trait UnderscoreStatic extends js.Object {
     **/
   def partition[T](array: js.Array[T], iterator: ListIterator[T, scala.Boolean]): js.Array[js.Array[T]] = js.native
   def partition[T](array: js.Array[T], iterator: ListIterator[T, scala.Boolean], context: js.Any): js.Array[js.Array[T]] = js.native
-  /**
-    * @see _.pick
-    **/
-  def pick(`object`: js.Any, fn: js.Function3[/* value */ js.Any, /* key */ js.Any, /* object */ js.Any, _]): js.Any = js.native
   /**
     * Return a copy of the object, filtered to only have values for the whitelisted keys
     * (or array of valid keys).

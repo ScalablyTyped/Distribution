@@ -25,9 +25,9 @@ trait ButtonProps extends js.Object {
   /** Provides a url for buttons being used as a link. */
   val href: js.UndefOr[java.lang.String] = js.undefined
   /** Places an icon within the button, after the button's text. */
-  val iconAfter: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  val iconAfter: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /** Places an icon within the button, before the button's text. */
-  val iconBefore: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  val iconBefore: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /** Provide a unique id to the button. */
   val id: js.UndefOr[java.lang.String] = js.undefined
   /** Pass a reference on to the styled component */
@@ -62,8 +62,8 @@ object ButtonProps {
     component: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = null,
     form: java.lang.String = null,
     href: java.lang.String = null,
-    iconAfter: reactLib.reactMod.ReactElement[_] = null,
-    iconBefore: reactLib.reactMod.ReactElement[_] = null,
+    iconAfter: reactLib.reactMod.ReactElement = null,
+    iconBefore: reactLib.reactMod.ReactElement = null,
     id: java.lang.String = null,
     innerRef: /* instance */ js.Any => scala.Unit = null,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,

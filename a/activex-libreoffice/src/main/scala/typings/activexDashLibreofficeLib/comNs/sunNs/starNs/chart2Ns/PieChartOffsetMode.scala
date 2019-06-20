@@ -12,3 +12,20 @@ import scala.scalajs.js.annotation._
 */
 trait PieChartOffsetMode extends js.Object
 
+object PieChartOffsetMode {
+  /** All pies are exploded by a certain percentage. The default is 10 percent. */
+  @scala.inline
+  def ALL_EXPLODED: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /**
+    * Default, no pies are exploded.
+    *
+    * The symbol is invisible
+    *
+    * no transparency attribute is evaluated
+    */
+  @scala.inline
+  def NONE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

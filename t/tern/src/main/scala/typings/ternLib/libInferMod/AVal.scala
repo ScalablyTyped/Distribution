@@ -10,7 +10,7 @@ trait AVal extends ANull {
   var originNode: js.UndefOr[estreeLib.estreeMod.Node] = js.native
   val propertyOf: js.UndefOr[Obj] = js.native
   /** An object mapping the object’s known properties to AVals. Don’t manipulate this directly (ever), only use it if you have to iterate over the properties. */
-  var props: stdLib.Partial[stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[AVal]]] = js.native
+  var props: stdLib.Partial[org.scalablytyped.runtime.StringDictionary[AVal]] = js.native
   val types: js.Array[Type] = js.native
   /**
     * Add a type to this abstract value. If the type is already in there,

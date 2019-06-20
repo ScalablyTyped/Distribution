@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StatefulPhoneInputContainer ()
   extends reactLib.reactMod.Component[StatefulPhoneInputContainerProps, State, js.Any] {
-  def internalSetState(`type`: StateChange, nextState: stdLib.Readonly[State]): scala.Unit = js.native
+  def internalSetState(`type`: StateChange, nextState: State): scala.Unit = js.native
   def onCountryChange(event: baseuiLib.selectMod.OnChangeParams): scala.Unit = js.native
   def onTextChange(event: reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event]): scala.Unit = js.native
 }

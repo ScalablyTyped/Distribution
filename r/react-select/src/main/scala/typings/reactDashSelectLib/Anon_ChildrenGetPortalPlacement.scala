@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenGetPortalPlacement extends js.Object {
   /** The children to be rendered. */
-  var children: reactLib.reactMod.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement
   /** Props to be passed to the menu wrapper. */
   var innerProps: js.Object
   /** Set the maximum height of the menu. */
@@ -27,7 +27,7 @@ trait Anon_ChildrenGetPortalPlacement extends js.Object {
 object Anon_ChildrenGetPortalPlacement {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[_],
+    children: reactLib.reactMod.ReactElement,
     getPortalPlacement: reactDashSelectLib.libComponentsMenuMod.MenuState => scala.Unit,
     innerProps: js.Object,
     maxMenuHeight: scala.Double,

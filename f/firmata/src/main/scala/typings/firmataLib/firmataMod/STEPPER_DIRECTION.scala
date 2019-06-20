@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 */
 trait STEPPER_DIRECTION extends js.Object
 
+object STEPPER_DIRECTION {
+  @scala.inline
+  def CCW: firmataLib.firmataLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def CW: firmataLib.firmataLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

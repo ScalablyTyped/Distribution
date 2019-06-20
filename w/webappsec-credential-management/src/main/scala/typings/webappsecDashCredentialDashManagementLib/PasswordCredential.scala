@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PasswordCredential protected ()
   extends SiteBoundCredential
-     with Credential {
+     with CredentialType {
   def this(data: stdLib.HTMLFormElement) = this()
   /**
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-passwordcredential-data}

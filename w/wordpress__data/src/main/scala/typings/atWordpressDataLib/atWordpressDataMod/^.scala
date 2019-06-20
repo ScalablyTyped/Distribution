@@ -23,25 +23,26 @@ object ^ extends js.Object {
       js.Function1[/* args */ org.scalablytyped.runtime.StringDictionary[_], T]
     ]
   ): R = js.native
-  def createRegistrySelector[S /* <: js.Function1[/* key */ java.lang.String, SelectorMap] */, T](registrySelector: js.Function1[/* select */ S, js.Function2[/* state */ _, /* repeated */ _, T]]): S = js.native
+  def createRegistrySelector[S /* <: atWordpressDataLib.Fn_CorerichtextKey */, T](registrySelector: js.Function1[/* select */ S, js.Function2[/* state */ _, /* repeated */ _, T]]): S = js.native
   def dispatch(key: java.lang.String): DispatcherMap = js.native
+  @JSName("dispatch")
+  def dispatch_corerichtext(key: atWordpressDataLib.atWordpressDataLibStrings.`core/rich-text`): js.Any = js.native
   def registerGenericStore(key: java.lang.String, config: GenericStoreConfig): scala.Unit = js.native
   def registerStore[T](key: java.lang.String, config: StoreConfig[T]): scala.Unit = js.native
   def select(key: java.lang.String): SelectorMap = js.native
+  @JSName("select")
+  def select_corerichtext(key: atWordpressDataLib.atWordpressDataLibStrings.`core/rich-text`): js.Any = js.native
   def use[T](plugin: Plugin[T], options: T): DataRegistry = js.native
-  def useDispatch(): js.Function1[/* key */ java.lang.String, DispatcherMap] = js.native
+  def useDispatch(): atWordpressDataLib.Fn_Corerichtext = js.native
   def useDispatch(storeName: java.lang.String): DispatcherMap = js.native
   def useRegistry(): DataRegistry = js.native
-  def useSelect[T](mapSelect: js.Function1[/* s */ js.Function1[/* key */ java.lang.String, SelectorMap], T]): T = js.native
-  def useSelect[T](
-    mapSelect: js.Function1[/* s */ js.Function1[/* key */ java.lang.String, SelectorMap], T],
-    deps: js.Array[_]
-  ): T = js.native
+  def useSelect[T](mapSelect: js.Function1[/* s */ atWordpressDataLib.Fn_CorerichtextKey, T]): T = js.native
+  def useSelect[T](mapSelect: js.Function1[/* s */ atWordpressDataLib.Fn_CorerichtextKey, T], deps: js.Array[_]): T = js.native
   def withDispatch[DP, P, IP](
     mapDispatchToProps: js.Function3[
-      /* disp */ js.Function1[/* key */ java.lang.String, DispatcherMap], 
+      /* disp */ atWordpressDataLib.Fn_Corerichtext, 
       /* ownProps */ P with IP, 
-      /* registry */ atWordpressDataLib.Anon_Key, 
+      /* registry */ atWordpressDataLib.Anon_Select, 
       DP
     ]
   ): js.Function1[
@@ -50,11 +51,7 @@ object ^ extends js.Object {
   ] = js.native
   def withRegistry[P](component: reactLib.reactMod.ComponentType[P]): reactLib.reactMod.ComponentType[P with atWordpressDataLib.Anon_Registry] = js.native
   def withSelect[SP, P, IP](
-    mapSelectToProps: js.Function2[
-      /* sel */ js.Function1[/* key */ java.lang.String, SelectorMap], 
-      /* ownProps */ P with IP, 
-      SP
-    ]
+    mapSelectToProps: js.Function2[/* sel */ atWordpressDataLib.Fn_CorerichtextKey, /* ownProps */ P with IP, SP]
   ): js.Function1[
     /* component */ reactLib.reactMod.ComponentType[P with IP with SP], 
     reactLib.reactMod.ComponentType[P]

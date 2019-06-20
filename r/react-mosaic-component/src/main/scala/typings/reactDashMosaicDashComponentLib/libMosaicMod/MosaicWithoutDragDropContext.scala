@@ -14,8 +14,6 @@ class MosaicWithoutDragDropContext[T /* <: reactDashMosaicDashComponentLib.libTy
   var getRoot: js.Any = js.native
   var renderTree: js.Any = js.native
   var replaceRoot: js.Any = js.native
-  @JSName("state")
-  var state_MosaicWithoutDragDropContext: MosaicState[T] = js.native
   var updateRoot: js.Any = js.native
   var validateTree: js.Any = js.native
   @JSName("componentWillMount")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-relay
 
-Typings are for version 1.3
+Typings are for version 5.0
 
 ## Library description:
 A framework for building GraphQL-driven React applications.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-relay 1.3
+// Type definitions for react-relay 5.0
 // Project: https://github.com/facebook/relay, https://facebook.github.io/relay
 // Definitions by: Johannes Schickling <https://github.com/graphcool>
 //                 Matt Martin <https://github.com/voxmatt>
@@ -45,10 +45,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Kaare Hoff Skovgaard <https://github.com/kastermester>
 //                 Matt Krick <https://github.com/mattkrick>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
-// Prettified with:
-// $ prettier --parser typescript --tab-width 4 --semi --trailing-comma es5 --write --print-width 120 \
-//   types/{react-relay,relay-runtime}/{,*}/*.ts*
+// TypeScript Version: 3.0
 
 ```
 

@@ -39,6 +39,11 @@ class TouchManager protected () extends js.Object {
     */
   var onTouchCancel: js.Function = js.native
   /**
+    * The Touch Cancel event handler function specifically for events on the Window.
+    * Initially empty and bound in the `startListeners` method.
+    */
+  var onTouchCancelWindow: js.Function = js.native
+  /**
     * The Touch End event handler function.
     * Initially empty and bound in the `startListeners` method.
     */

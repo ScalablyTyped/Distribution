@@ -14,7 +14,5 @@ class ResizeHandle ()
   var handleDoubleClick: js.Any = js.native
   var handleDragEnd: js.Any = js.native
   var handleDragMove: js.Any = js.native
-  @JSName("state")
-  var state_ResizeHandle: IResizeHandleState = js.native
 }
 

@@ -80,6 +80,12 @@ class MouseManager protected () extends js.Object {
     */
   var onMouseUpWindow: js.Function = js.native
   /**
+    * The Mouse Wheel Event handler.
+    * This function is sent the native DOM MouseEvent.
+    * Initially empty and bound in the `startListeners` method.
+    */
+  var onMouseWheel: js.Function = js.native
+  /**
     * Internal pointerLockChange handler.
     * This function is sent the native DOM MouseEvent.
     * Initially empty and bound in the `startListeners` method.

@@ -8,23 +8,17 @@ import scala.scalajs.js.annotation._
 trait Anon_Child
   extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var childFactory: js.UndefOr[
-    js.Function1[/* child */ reactLib.reactMod.ReactElement[_], reactLib.reactMod.ReactElement[_]]
+    js.Function1[/* child */ reactLib.reactMod.ReactElement, reactLib.reactMod.ReactElement]
   ] = js.undefined
-  var children: js.UndefOr[
-    reactLib.reactMod.ReactElement[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] | (js.Array[
-      reactLib.reactMod.ReactElement[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
-    ])
-  ] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]] = js.undefined
 }
 
 object Anon_Child {
   @scala.inline
   def apply(
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    childFactory: /* child */ reactLib.reactMod.ReactElement[_] => reactLib.reactMod.ReactElement[_] = null,
-    children: reactLib.reactMod.ReactElement[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] | (js.Array[
-      reactLib.reactMod.ReactElement[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
-    ]) = null
+    childFactory: /* child */ reactLib.reactMod.ReactElement => reactLib.reactMod.ReactElement = null,
+    children: reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement] = null
   ): Anon_Child = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

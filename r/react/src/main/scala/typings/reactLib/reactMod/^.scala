@@ -25,8 +25,8 @@ object ^ extends js.Object {
     props: stdLib.Partial[P] with Attributes,
     children: ReactNode*
   ): FunctionComponentElement[P] = js.native
-  def cloneElement[P](element: ReactElement[P]): ReactElement[P] = js.native
-  def cloneElement[P](element: ReactElement[P], props: stdLib.Partial[P] with Attributes, children: ReactNode*): ReactElement[P] = js.native
+  def cloneElement[P](element: ReactElement): ReactElement = js.native
+  def cloneElement[P](element: ReactElement, props: stdLib.Partial[P] with Attributes, children: ReactNode*): ReactElement = js.native
   def cloneElement[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T]): CElement[P, T] = js.native
   def cloneElement[P, T /* <: Component[P, ComponentState, _] */](element: CElement[P, T], props: stdLib.Partial[P] with ClassAttributes[T], children: ReactNode*): CElement[P, T] = js.native
   // DOM Element (has to be the last, because type checking stops at first overload that fits)
@@ -46,22 +46,22 @@ object ^ extends js.Object {
   def cloneElement_PHTMLAttributesTHTMLElementReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
   def createContext[T](defaultValue: T): Context[T] = js.native
   def createContext[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, scala.Double]): Context[T] = js.native
-  def createElement[P /* <: js.Object */](`type`: java.lang.String): ReactElement[P] = js.native
-  def createElement[P /* <: js.Object */](`type`: java.lang.String, props: Attributes with (P | scala.Null), children: ReactNode*): ReactElement[P] = js.native
+  def createElement[P /* <: js.Object */](`type`: java.lang.String): ReactElement = js.native
+  def createElement[P /* <: js.Object */](`type`: java.lang.String, props: Attributes with (P | scala.Null), children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CElement[P, ClassicComponent[P, ComponentState]] = js.native
   def createElement[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
     props: (ClassAttributes[ClassicComponent[P, ComponentState]]) with (P | scala.Null),
     children: ReactNode*
   ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-  def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState]): ReactElement[P] = js.native
+  def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState]): ReactElement = js.native
   def createElement[P /* <: js.Object */](
     `type`: ComponentClass[P, ComponentState],
     props: Attributes with (P | scala.Null),
     children: ReactNode*
-  ): ReactElement[P] = js.native
-  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P]): ReactElement[P] = js.native
-  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with (P | scala.Null), children: ReactNode*): ReactElement[P] = js.native
+  ): ReactElement = js.native
+  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P]): ReactElement = js.native
+  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with (P | scala.Null), children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: DOMAttributes[T] */, T /* <: reactLib.Element */](`type`: java.lang.String, props: ClassAttributes[T] with (P | scala.Null), children: ReactNode*): DOMElement[P, T] = js.native
   def createElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
   def createElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
@@ -114,24 +114,20 @@ object ^ extends js.Object {
   def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
   def createRef[T](): RefObject[T] = js.native
   def forwardRef[T, P](Component: RefForwardingComponent[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
-  def isValidElement[P](): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
-  def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
+  def isValidElement[P](): /* is react.react.ReactElement */ scala.Boolean = js.native
+  def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ scala.Boolean = js.native
   def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[reactLib.Anon_Default[T]]]): LazyExoticComponent[T] = js.native
   def memo[T /* <: ComponentType[_] */](Component: T): MemoExoticComponent[T] = js.native
   def memo[T /* <: ComponentType[_] */](
     Component: T,
-    propsAreEqual: js.Function2[
-      /* prevProps */ stdLib.Readonly[ComponentProps[T]], 
-      /* nextProps */ stdLib.Readonly[ComponentProps[T]], 
-      scala.Boolean
-    ]
+    propsAreEqual: js.Function2[/* prevProps */ ComponentProps[T], /* nextProps */ ComponentProps[T], scala.Boolean]
   ): MemoExoticComponent[T] = js.native
   def memo[P /* <: js.Object */](Component: SFC[P]): NamedExoticComponent[P] = js.native
   def memo[P /* <: js.Object */](
     Component: SFC[P],
     propsAreEqual: js.Function2[
-      /* prevProps */ stdLib.Readonly[PropsWithChildren[P]], 
-      /* nextProps */ stdLib.Readonly[PropsWithChildren[P]], 
+      /* prevProps */ PropsWithChildren[P], 
+      /* nextProps */ PropsWithChildren[P], 
       scala.Boolean
     ]
   ): NamedExoticComponent[P] = js.native

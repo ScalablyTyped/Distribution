@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__core
 
-Typings are for version 8.0.1
+Typings are for version 8.0.2
 
 ## Library description:
 Angular - the core framework
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * @license Angular v8.0.1
+ * @license Angular v8.0.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */

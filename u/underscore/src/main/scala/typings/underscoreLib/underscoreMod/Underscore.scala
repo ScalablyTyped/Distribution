@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Underscore[T] extends js.Object {
+trait Underscore[T, V] extends js.Object {
   /**
     * Wrapped type `number`.
     * @see _.after
@@ -56,7 +56,7 @@ trait Underscore[T] extends js.Object {
     * Wrapped type `any`.
     * @see _.chain
     **/
-  def chain(): _Chain[T] = js.native
+  def chain(): _Chain[T, V] = js.native
   /**
     * Wrapped type any[][].
     * @see _.chunk
@@ -605,13 +605,18 @@ trait Underscore[T] extends js.Object {
     **/
   def partition(iterator: ListIterator[T, scala.Boolean]): js.Array[js.Array[T]] = js.native
   def partition(iterator: ListIterator[T, scala.Boolean], context: js.Any): js.Array[js.Array[T]] = js.native
-  def pick(fn: js.Function3[/* value */ js.Any, /* key */ js.Any, /* object */ js.Any, _]): js.Any = js.native
   /**
     * Wrapped type `object`.
     * @see _.pick
     **/
-  def pick(keys: js.Any*): js.Any = js.native
-  def pick(keys: js.Array[_]): js.Any = js.native
+  def pick[K /* <: java.lang.String */](keys: K*): stdLib.Pick[V, K] = js.native
+  def pick[K /* <: java.lang.String */](keys: js.Array[K]): stdLib.Pick[V, K] = js.native
+  def pick[K /* <: java.lang.String */](
+    predicate: ObjectIterator[
+      /* import warning: ImportType.apply Failed type conversion: V[K] */ js.Any, 
+      scala.Boolean
+    ]
+  ): stdLib.Pick[V, K] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.pluck

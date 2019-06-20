@@ -101,9 +101,9 @@ class EmitterOp protected () extends js.Object {
     */
   def easeValueUpdate(particle: Particle, key: java.lang.String, t: scala.Double): scala.Double = js.native
   /**
-    * An `onEmit` callback that returns an eased value between the
-    * {@link Phaser.GameObjects.Particles.EmitterOp#start} and {@link Phaser.GameObjects.Particles.EmitterOp#end}
-    * range.
+    * An `onEmit` callback for an eased property.
+    * 
+    * It prepares the particle for easing by {@link Phaser.GameObjects.Particles.EmitterOp#easeValueUpdate}.
     * @param particle The particle.
     * @param key The name of the property.
     */

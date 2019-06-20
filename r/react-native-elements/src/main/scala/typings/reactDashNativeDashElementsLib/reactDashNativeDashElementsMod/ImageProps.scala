@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   /**
     * Content to render when image is loading
     */
-  var PlaceholderContent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var PlaceholderContent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Additional styling for the container
     */
@@ -35,7 +35,7 @@ object ImageProps {
   @scala.inline
   def apply(
     ImageComponent: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = null,
-    PlaceholderContent: reactLib.reactMod.ReactElement[_] = null,
+    PlaceholderContent: reactLib.reactMod.ReactElement = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     placeholderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): ImageProps = {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckboxProps extends CommonEnhancedSwitchProps[Checkbox] {
-  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
+  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var inputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var labelPosition: js.UndefOr[
@@ -20,7 +20,7 @@ trait CheckboxProps extends CommonEnhancedSwitchProps[Checkbox] {
       scala.Unit
     ]
   ] = js.undefined
-  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
+  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
    // Normally an SvgIcon
   var valueLink: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean]] = js.undefined
 }
@@ -30,7 +30,7 @@ object CheckboxProps {
   def apply(
     CommonEnhancedSwitchProps: CommonEnhancedSwitchProps[Checkbox] = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    checkedIcon: reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style] = null,
+    checkedIcon: reactLib.reactMod.ReactElement = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     iconStyle: reactLib.reactMod.CSSProperties = null,
@@ -39,7 +39,7 @@ object CheckboxProps {
     labelStyle: reactLib.reactMod.CSSProperties = null,
     onCheck: (/* event */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* checked */ scala.Boolean) => scala.Unit = null,
     style: reactLib.reactMod.CSSProperties = null,
-    uncheckedIcon: reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style] = null,
+    uncheckedIcon: reactLib.reactMod.ReactElement = null,
     valueLink: materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean] = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()

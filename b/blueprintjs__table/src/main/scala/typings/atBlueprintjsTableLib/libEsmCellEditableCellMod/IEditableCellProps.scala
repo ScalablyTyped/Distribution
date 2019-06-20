@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 trait IEditableCellProps
   extends atBlueprintjsTableLib.libEsmCellCellMod.ICellProps {
   /**
+    * Props that should be passed to the EditableText when it is used to edit
+    */
+  var editableTextProps: js.UndefOr[
+    atBlueprintjsCoreLib.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps
+  ] = js.undefined
+  /**
     * Whether the given cell is the current active/focused cell.
     */
   var isFocused: js.UndefOr[scala.Boolean] = js.undefined
@@ -67,6 +73,7 @@ object IEditableCellProps {
     cellRef: /* ref */ stdLib.HTMLElement | scala.Null => scala.Unit = null,
     className: java.lang.String = null,
     columnIndex: scala.Int | scala.Double = null,
+    editableTextProps: atBlueprintjsCoreLib.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
     isFocused: js.UndefOr[scala.Boolean] = js.undefined,
@@ -90,6 +97,7 @@ object IEditableCellProps {
     if (cellRef != null) __obj.updateDynamic("cellRef")(js.Any.fromFunction1(cellRef))
     if (className != null) __obj.updateDynamic("className")(className)
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (editableTextProps != null) __obj.updateDynamic("editableTextProps")(editableTextProps)
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)

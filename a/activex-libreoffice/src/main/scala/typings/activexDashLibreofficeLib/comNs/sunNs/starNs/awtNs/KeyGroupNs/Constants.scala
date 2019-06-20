@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def ALPHA: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`512` = this.cast(512)
+  @scala.inline
+  def CURSOR: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1024` = this.cast(1024)
+  @scala.inline
+  def FKEYS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`768` = this.cast(768)
+  @scala.inline
+  def MISC: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1280` = this.cast(1280)
+  @scala.inline
+  def NUM: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`256` = this.cast(256)
+  @scala.inline
+  def TYPE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3840` = this.cast(3840)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

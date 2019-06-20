@@ -19,7 +19,7 @@ object DelayedTransitionDefinition {
     in: StateValue = null,
     internal: js.UndefOr[scala.Boolean] = js.undefined,
     meta: stdLib.Record[java.lang.String, _] = null,
-    target: js.Array[java.lang.String] = null
+    target: TransitionTargets[TContext] = null
   ): DelayedTransitionDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(actions = actions, delay = delay.asInstanceOf[js.Any], event = event)
     if (cond != null) __obj.updateDynamic("cond")(cond.asInstanceOf[js.Any])

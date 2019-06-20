@@ -37,6 +37,7 @@ class ObservableQuery[TData, TVariables] protected ()
   def refetch(): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def refetch(variables: TVariables): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def resetLastResults(): scala.Unit = js.native
+  def resetQueryStoreErrors(): scala.Unit = js.native
   def result(): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def setOptions(
     opts: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]

@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait RefreshConstants extends js.Object
 
+object RefreshConstants {
+  @scala.inline
+  def Completely: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def IfExpired: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Normal: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

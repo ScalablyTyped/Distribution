@@ -83,7 +83,7 @@ trait TooltipProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var children: reactLib.reactMod.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapTooltipClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
@@ -306,7 +306,7 @@ trait TooltipProps extends js.Object {
 object TooltipProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[_],
+    children: reactLib.reactMod.ReactElement,
     title: reactLib.reactMod.ReactNode,
     PopperProps: js.Object = null,
     TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,

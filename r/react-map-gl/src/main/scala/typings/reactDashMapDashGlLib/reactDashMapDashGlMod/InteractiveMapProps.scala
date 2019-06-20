@@ -36,8 +36,8 @@ trait InteractiveMapProps extends StaticMapProps {
   var onTransitionEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onTransitionInterrupt: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onTransitionStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onViewStateChange: js.UndefOr[js.Function1[/* info */ ViewStateChangeInfo, scala.Unit]] = js.undefined
-  var onViewportChange: js.UndefOr[js.Function1[/* viewState */ ViewState, scala.Unit]] = js.undefined
+  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
+  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
   var onWheel: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
   var scrollZoom: js.UndefOr[scala.Boolean] = js.undefined
   var touchAction: js.UndefOr[java.lang.String] = js.undefined
@@ -95,8 +95,8 @@ object InteractiveMapProps {
     onTransitionEnd: () => scala.Unit = null,
     onTransitionInterrupt: () => scala.Unit = null,
     onTransitionStart: () => scala.Unit = null,
-    onViewStateChange: /* info */ ViewStateChangeInfo => scala.Unit = null,
-    onViewportChange: /* viewState */ ViewState => scala.Unit = null,
+    onViewStateChange: ViewStateChangeHandler = null,
+    onViewportChange: ViewportChangeHandler = null,
     onWheel: /* event */ PointerEvent => scala.Unit = null,
     preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[scala.Boolean] = js.undefined,
@@ -158,8 +158,8 @@ object InteractiveMapProps {
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
     if (onTransitionInterrupt != null) __obj.updateDynamic("onTransitionInterrupt")(js.Any.fromFunction0(onTransitionInterrupt))
     if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction0(onTransitionStart))
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1(onViewportChange))
+    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(onViewStateChange)
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
     if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing)

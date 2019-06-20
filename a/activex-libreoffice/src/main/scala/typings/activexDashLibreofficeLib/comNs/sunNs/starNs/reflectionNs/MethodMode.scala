@@ -15,3 +15,14 @@ import scala.scalajs.js.annotation._
 */
 trait MethodMode extends js.Object
 
+object MethodMode {
+  /** method may be run asynchronously */
+  @scala.inline
+  def ONEWAY: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** method is run The */
+  @scala.inline
+  def TWOWAY: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

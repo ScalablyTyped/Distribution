@@ -48,14 +48,14 @@ trait Anon_CallbackComp[Values] extends js.Object {
   def setFieldValue(field: java.lang.String, value: js.Any, shouldValidate: scala.Boolean): scala.Unit = js.native
   def setFormikState[K /* <: formikLib.formikLibStrings.error | formikLib.formikLibStrings.values | formikLib.formikLibStrings.errors | formikLib.formikLibStrings.touched | formikLib.formikLibStrings.isValidating | formikLib.formikLibStrings.isSubmitting | formikLib.formikLibStrings.status | formikLib.formikLibStrings.submitCount */](
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[formikLib.distTypesMod.FormikState[Values]], 
+      /* prevState */ formikLib.distTypesMod.FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[formikLib.distTypesMod.FormikState[Values], K]
     ]
   ): scala.Unit = js.native
   def setFormikState[K /* <: formikLib.formikLibStrings.error | formikLib.formikLibStrings.values | formikLib.formikLibStrings.errors | formikLib.formikLibStrings.touched | formikLib.formikLibStrings.isValidating | formikLib.formikLibStrings.isSubmitting | formikLib.formikLibStrings.status | formikLib.formikLibStrings.submitCount */](
     f: js.Function2[
-      /* prevState */ stdLib.Readonly[formikLib.distTypesMod.FormikState[Values]], 
+      /* prevState */ formikLib.distTypesMod.FormikState[Values], 
       /* props */ js.Any, 
       stdLib.Pick[formikLib.distTypesMod.FormikState[Values], K]
     ],

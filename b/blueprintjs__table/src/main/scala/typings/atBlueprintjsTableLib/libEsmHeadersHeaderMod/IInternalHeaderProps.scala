@@ -124,6 +124,6 @@ trait IInternalHeaderProps extends IHeaderProps {
   /**
     * A callback that wraps the rendered cell components in additional parent elements as needed.
     */
-  def wrapCells(cells: js.Array[reactLib.reactMod.ReactElement[_]]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def wrapCells(cells: js.Array[reactLib.reactMod.ReactElement]): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

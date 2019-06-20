@@ -21,8 +21,6 @@ class InternalMosaicWindow[T /* <: reactDashMosaicDashComponentLib.libTypesMod.M
   var rootElement: js.Any = js.native
   var setAdditionalControlsOpen: js.Any = js.native
   var split: js.Any = js.native
-  @JSName("state")
-  var state_InternalMosaicWindow: InternalMosaicWindowState = js.native
   var swap: js.Any = js.native
   def getChildContext(): stdLib.Partial[reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext[T]] = js.native
 }

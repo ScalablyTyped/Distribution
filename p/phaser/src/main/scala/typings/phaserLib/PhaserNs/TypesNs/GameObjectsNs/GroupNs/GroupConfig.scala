@@ -13,7 +13,7 @@ trait GroupConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Group#classType}.
     */
-  var classType: js.UndefOr[GroupClassTypeConstructor] = js.undefined
+  var classType: js.UndefOr[js.Function] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Group#createCallback}.
     */
@@ -35,6 +35,10 @@ trait GroupConfig extends js.Object {
     */
   var maxSize: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Sets {@link Phaser.GameObjects.Group#name}.
+    */
+  var name: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Sets {@link Phaser.GameObjects.Group#removeCallback}.
     */
   var removeCallback: js.UndefOr[GroupCallback] = js.undefined
@@ -48,12 +52,13 @@ object GroupConfig {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    classType: GroupClassTypeConstructor = null,
+    classType: js.Function = null,
     createCallback: GroupCallback = null,
     createMultipleCallback: GroupMultipleCreateCallback = null,
     defaultFrame: java.lang.String | phaserLib.integer = null,
     defaultKey: java.lang.String = null,
     maxSize: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
     removeCallback: GroupCallback = null,
     runChildUpdate: js.UndefOr[scala.Boolean] = js.undefined
   ): GroupConfig = {
@@ -65,6 +70,7 @@ object GroupConfig {
     if (defaultFrame != null) __obj.updateDynamic("defaultFrame")(defaultFrame.asInstanceOf[js.Any])
     if (defaultKey != null) __obj.updateDynamic("defaultKey")(defaultKey)
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
     if (removeCallback != null) __obj.updateDynamic("removeCallback")(removeCallback)
     if (!js.isUndefined(runChildUpdate)) __obj.updateDynamic("runChildUpdate")(runChildUpdate)
     __obj.asInstanceOf[GroupConfig]

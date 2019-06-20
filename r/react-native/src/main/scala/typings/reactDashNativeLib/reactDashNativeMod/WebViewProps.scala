@@ -75,11 +75,11 @@ trait WebViewProps
   /**
     * Function that returns a view to show if there's an error.
     */
-  var renderError: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[ViewProps]]] = js.undefined
+  var renderError: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement]] = js.undefined
   /**
     * Function that returns a loading indicator.
     */
-  var renderLoading: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[ViewProps]]] = js.undefined
+  var renderLoading: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement]] = js.undefined
   /**
     * sets whether the webpage scales to fit the view and the user can change the scale
     */
@@ -161,8 +161,8 @@ object WebViewProps {
     originWhitelist: js.Array[java.lang.String] = null,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
-    renderError: () => reactLib.reactMod.ReactElement[ViewProps] = null,
-    renderLoading: () => reactLib.reactMod.ReactElement[ViewProps] = null,
+    renderError: () => reactLib.reactMod.ReactElement = null,
+    renderLoading: () => reactLib.reactMod.ReactElement = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     saveFormDataDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     scalesPageToFit: js.UndefOr[scala.Boolean] = js.undefined,

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val CacheProvider: reactLib.reactMod.Provider[atEmotionUtilsLib.atEmotionUtilsMod.EmotionCache] = js.native
   val ThemeContext: reactLib.reactMod.Context[js.Object] = js.native
-  def ClassNames[Theme](props: ClassNamesProps[Theme]): reactLib.reactMod.ReactElement[_] = js.native
-  def Global[Theme](props: GlobalProps[Theme]): reactLib.reactMod.ReactElement[_] = js.native
+  def ClassNames[Theme](props: ClassNamesProps[Theme]): reactLib.reactMod.ReactElement = js.native
+  def Global[Theme](props: GlobalProps[Theme]): reactLib.reactMod.ReactElement = js.native
   def css(args: atEmotionSerializeLib.atEmotionSerializeMod.Interpolation[js.UndefOr[scala.Nothing]]*): atEmotionUtilsLib.atEmotionUtilsMod.SerializedStyles = js.native
   def css(
     template: stdLib.TemplateStringsArray,

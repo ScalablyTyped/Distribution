@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object reduxDashFormMod {
   type FormErrors[FormData, T] = reduxDashFormLib.reduxDashFormLibStrings.FormErrors with js.Any with ErrorOther[T]
   type FormWarnings[FormData, T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof FormData ]:? react.react.ReactElement<any> | string | redux-form.redux-form.WarningOther<T>}
+  {[ P in keyof FormData ]:? react.react.ReactElement | string | redux-form.redux-form.WarningOther<T>}
     */ reduxDashFormLib.reduxDashFormLibStrings.FormWarnings with js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[
     T, 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InvalidAssertion protected ()
   extends grammarkdownLib.distNodesMod.InvalidAssertion {
-  def this(openBracketToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
-  def this(openBracketToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], closeBracketToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
+  def this(openBracketToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.OpenBracketToken]) = this()
+  def this(openBracketToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.OpenBracketToken], closeBracketToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.CloseBracketToken]) = this()
 }
 

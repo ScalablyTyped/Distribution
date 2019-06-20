@@ -15,3 +15,28 @@ import scala.scalajs.js.annotation._
 */
 trait MeasureTextVertPos extends js.Object
 
+object MeasureTextVertPos {
+  /**
+    * the connection point is chosen automatically,
+    *
+    * Set this to have the application select the best horizontal position for the text.
+    */
+  @scala.inline
+  def AUTO: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def BREAKEDLINE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /**
+    * The text is positioned at the center.
+    *
+    * The text is positioned over the main line.
+    */
+  @scala.inline
+  def CENTERED: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def EAST: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def WEST: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

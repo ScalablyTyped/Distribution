@@ -55,7 +55,7 @@ trait Options[P, C] extends js.Object {
     * @example
     * (accumulated, props) => { accumulated.sum += props.sum; }
     */
-  var reduce: js.UndefOr[js.Function2[/* accumulated */ C, /* props */ stdLib.Readonly[C], scala.Unit]] = js.undefined
+  var reduce: js.UndefOr[js.Function2[/* accumulated */ C, /* props */ C, scala.Unit]] = js.undefined
 }
 
 object Options {
@@ -68,7 +68,7 @@ object Options {
     minZoom: scala.Int | scala.Double = null,
     nodeSize: scala.Int | scala.Double = null,
     radius: scala.Int | scala.Double = null,
-    reduce: (/* accumulated */ C, /* props */ stdLib.Readonly[C]) => scala.Unit = null
+    reduce: (/* accumulated */ C, /* props */ C) => scala.Unit = null
   ): Options[P, C] = {
     val __obj = js.Dynamic.literal()
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])

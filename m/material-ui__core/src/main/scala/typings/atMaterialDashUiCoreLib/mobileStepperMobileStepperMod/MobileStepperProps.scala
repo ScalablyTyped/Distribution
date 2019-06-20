@@ -80,7 +80,7 @@ trait MobileStepperProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var backButton: reactLib.reactMod.ReactElement[_]
+  var backButton: reactLib.reactMod.ReactElement
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapMobileStepperClassKey] = js.undefined
@@ -107,7 +107,7 @@ trait MobileStepperProps extends js.Object {
   var itemScope: js.UndefOr[scala.Boolean] = js.undefined
   var itemType: js.UndefOr[java.lang.String] = js.undefined
   var lang: js.UndefOr[java.lang.String] = js.undefined
-  var nextButton: reactLib.reactMod.ReactElement[_]
+  var nextButton: reactLib.reactMod.ReactElement
   var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLDivElement]] = js.undefined
@@ -301,8 +301,8 @@ trait MobileStepperProps extends js.Object {
 object MobileStepperProps {
   @scala.inline
   def apply(
-    backButton: reactLib.reactMod.ReactElement[_],
-    nextButton: reactLib.reactMod.ReactElement[_],
+    backButton: reactLib.reactMod.ReactElement,
+    nextButton: reactLib.reactMod.ReactElement,
     steps: scala.Double,
     LinearProgressProps: atMaterialDashUiCoreLib.PartialLinearProgressProps = null,
     about: java.lang.String = null,

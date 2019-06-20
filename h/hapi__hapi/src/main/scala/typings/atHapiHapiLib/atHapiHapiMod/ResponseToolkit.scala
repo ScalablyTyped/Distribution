@@ -37,7 +37,7 @@ trait ResponseToolkit extends js.Object {
     * The [request] object. This is a duplication of the request lifecycle method argument used by
     * [toolkit decorations](https://github.com/hapijs/hapi/blob/master/API.md#server.decorate()) to access the current request.
     */
-  val request: stdLib.Readonly[Request] = js.native
+  val request: Request = js.native
   /**
     * Used by the [authentication] method to pass back valid credentials where:
     * @param data - an object with:

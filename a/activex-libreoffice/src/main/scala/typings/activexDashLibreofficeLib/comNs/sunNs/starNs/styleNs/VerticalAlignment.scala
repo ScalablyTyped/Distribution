@@ -13,3 +13,17 @@ import scala.scalajs.js.annotation._
 */
 trait VerticalAlignment extends js.Object
 
+object VerticalAlignment {
+  /** set the vertical alignment to the bottom margin from the container object. */
+  @scala.inline
+  def BOTTOM: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** set the vertical alignment to the top margin from the container object. */
+  @scala.inline
+  def MIDDLE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** set the vertical alignment to the center between the top and bottom margins from the container object. */
+  @scala.inline
+  def TOP: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

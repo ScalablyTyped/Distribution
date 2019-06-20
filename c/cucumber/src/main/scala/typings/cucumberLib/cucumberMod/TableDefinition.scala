@@ -6,9 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableDefinition extends js.Object {
+  /** Returns an array of objects where each row is converted to an object (column header is the key). */
   def hashes(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
+  /** Returns the table as a 2-D array. */
   def raw(): js.Array[js.Array[java.lang.String]]
+  /** Returns the table as a 2-D array, without the first row. */
   def rows(): js.Array[js.Array[java.lang.String]]
+  /** Returns an object where each row corresponds to an entry (first column is the key, second column is the value). */
   def rowsHash(): org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

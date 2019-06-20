@@ -793,7 +793,9 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT4xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT9xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOT12xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT18xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5dDOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5dDOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5dDOT2xlarge

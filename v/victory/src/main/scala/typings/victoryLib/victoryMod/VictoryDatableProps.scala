@@ -36,7 +36,7 @@ trait VictoryDatableProps extends js.Object {
     * not provided, VictoryArea will use its default Area component.
     * @default <Area/>
     */
-  var dataComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var dataComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * The domain prop describes the range of values your chart will cover. This prop can be
     * given as a array of the minimum and maximum expected values for your bar chart,
@@ -84,7 +84,7 @@ object VictoryDatableProps {
   def apply(
     categories: CategoryPropType = null,
     data: js.Array[_] = null,
-    dataComponent: reactLib.reactMod.ReactElement[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement = null,
     domain: DomainPropType = null,
     x: DataGetterPropType = null,
     y: DataGetterPropType = null,

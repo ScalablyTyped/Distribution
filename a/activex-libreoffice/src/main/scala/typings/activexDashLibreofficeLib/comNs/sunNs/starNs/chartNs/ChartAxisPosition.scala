@@ -17,3 +17,20 @@ import scala.scalajs.js.annotation._
 */
 trait ChartAxisPosition extends js.Object
 
+object ChartAxisPosition {
+  /** Cross the other axes at their maximum scale value. */
+  @scala.inline
+  def END: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** Cross the other axes at their minimum scale value. */
+  @scala.inline
+  def START: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** Cross the other axes at the value specified in the property CrossoverValue. */
+  @scala.inline
+  def VALUE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  /** Cross the other axes at zero. If zero is not contained in the current scale the value is used which is nearest to zero. */
+  @scala.inline
+  def ZERO: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

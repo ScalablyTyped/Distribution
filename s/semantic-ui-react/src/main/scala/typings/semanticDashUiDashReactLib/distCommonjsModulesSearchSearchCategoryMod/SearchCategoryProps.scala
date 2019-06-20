@@ -19,7 +19,7 @@ object SearchCategoryProps {
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     name: java.lang.String = null,
-    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactElement[_] = null,
+    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactElement = null,
     results: js.Array[
       reactLib.reactMod.ComponentClass[
         semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 

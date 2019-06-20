@@ -25,7 +25,7 @@ package object typesOptionsMod {
     ]) | scala.Unit
   ]
   type Component[Data, Methods, Computed, Props] = vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue] | (FunctionalComponentOptions[Props, PropsDefinition[Props]]) | (ComponentOptions[scala.Nothing, Data, Methods, Computed, Props, DefaultProps])
-  type DataDef[Data, Props, V] = Data | (js.ThisFunction0[/* this */ stdLib.Readonly[Props] with V, Data])
+  type DataDef[Data, Props, V] = Data | (js.ThisFunction0[/* this */ Props with V, Data])
   type DefaultComputed = org.scalablytyped.runtime.StringDictionary[js.Any]
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
   type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
@@ -53,10 +53,8 @@ package object typesOptionsMod {
     js.Array[PropNames], 
     stdLib.Record[PropNames, _]
   ]) with (stdLib.ThisType[
-    vueLib.typesVueMod.CombinedVueInstance[V, Data, Methods, Computed, stdLib.Readonly[stdLib.Record[PropNames, _]]]
+    vueLib.typesVueMod.CombinedVueInstance[V, Data, Methods, Computed, stdLib.Record[PropNames, _]]
   ])
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Computed, Props] = js.Object with (ComponentOptions[V, DataDef[Data, Props, V], Methods, Computed, RecordPropsDefinition[Props], Props]) with (stdLib.ThisType[
-    vueLib.typesVueMod.CombinedVueInstance[V, Data, Methods, Computed, stdLib.Readonly[Props]]
-  ])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Computed, Props] = js.Object with (ComponentOptions[V, DataDef[Data, Props, V], Methods, Computed, RecordPropsDefinition[Props], Props]) with (stdLib.ThisType[vueLib.typesVueMod.CombinedVueInstance[V, Data, Methods, Computed, Props]])
   type WatchHandler[T] = js.Function2[/* val */ T, /* oldVal */ T, scala.Unit]
 }

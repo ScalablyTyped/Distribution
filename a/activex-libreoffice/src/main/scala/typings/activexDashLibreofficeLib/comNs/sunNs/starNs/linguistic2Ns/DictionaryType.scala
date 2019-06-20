@@ -20,3 +20,17 @@ import scala.scalajs.js.annotation._
 */
 trait DictionaryType extends js.Object
 
+object DictionaryType {
+  /** @deprecated Deprecated */
+  @scala.inline
+  def MIXED: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** all entries in the dictionary are negative. */
+  @scala.inline
+  def NEGATIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** all entries in the dictionary are positive. */
+  @scala.inline
+  def POSITIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

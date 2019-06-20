@@ -80,7 +80,7 @@ trait PartialMobileStepperProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var backButton: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var backButton: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapMobileStepperClassKey] = js.undefined
@@ -107,7 +107,7 @@ trait PartialMobileStepperProps extends js.Object {
   var itemScope: js.UndefOr[scala.Boolean] = js.undefined
   var itemType: js.UndefOr[java.lang.String] = js.undefined
   var lang: js.UndefOr[java.lang.String] = js.undefined
-  var nextButton: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var nextButton: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLDivElement]] = js.undefined
@@ -356,7 +356,7 @@ object PartialMobileStepperProps {
     autoCapitalize: java.lang.String = null,
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
-    backButton: reactLib.reactMod.ReactElement[_] = null,
+    backButton: reactLib.reactMod.ReactElement = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: PartialClassNameMapMobileStepperClassKey = null,
@@ -383,7 +383,7 @@ object PartialMobileStepperProps {
     itemScope: js.UndefOr[scala.Boolean] = js.undefined,
     itemType: java.lang.String = null,
     lang: java.lang.String = null,
-    nextButton: reactLib.reactMod.ReactElement[_] = null,
+    nextButton: reactLib.reactMod.ReactElement = null,
     onAbort: reactLib.reactMod.ReactEventHandler[stdLib.HTMLDivElement] = null,
     onAnimationEnd: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLDivElement] = null,
     onAnimationIteration: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLDivElement] = null,

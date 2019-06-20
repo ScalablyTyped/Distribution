@@ -25,3 +25,23 @@ import scala.scalajs.js.annotation._
 */
 trait TabulatorCycle extends js.Object
 
+object TabulatorCycle {
+  /**
+    * a navigation bar is provided and navigation will be performed on the current/active form.
+    *
+    * This is the default and most often encountered mode.
+    *
+    * pressing the TAB key from the last control moves the focus to the first control in the tab order of the same record.
+    */
+  @scala.inline
+  def CURRENT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** pressing the TAB key from the last control of a form moves the focus to the first control of the next form in the tab order. */
+  @scala.inline
+  def PAGE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** pressing the TAB key from the last control moves the focus to the first control in the tab order of the next record. */
+  @scala.inline
+  def RECORDS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

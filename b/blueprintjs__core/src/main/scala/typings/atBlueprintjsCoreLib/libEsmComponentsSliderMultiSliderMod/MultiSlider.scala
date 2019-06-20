@@ -18,8 +18,6 @@ class MultiSlider ()
   var handleRelease: js.Any = js.native
   var maybeHandleTrackClick: js.Any = js.native
   var maybeHandleTrackTouch: js.Any = js.native
-  @JSName("state")
-  var state_MultiSlider: ISliderState = js.native
   var trackElement: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MMultiSlider(): scala.Unit = js.native

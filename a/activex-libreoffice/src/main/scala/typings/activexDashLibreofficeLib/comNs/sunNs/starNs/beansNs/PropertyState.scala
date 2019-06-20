@@ -21,3 +21,45 @@ import scala.scalajs.js.annotation._
 */
 trait PropertyState extends js.Object
 
+object PropertyState {
+  /**
+    * The value of the property is only a recommendation because there are multiple values for this property (e.g., from a multi selection).
+    *
+    * The {@link PropertyAttribute} field in the struct {@link Property} must contain the {@link PropertyAttribute.MAYBEAMBIGUOUS} flag. The property value
+    * must be available and of the specified type. If the Attribute field in the struct {@link Property} contains {@link PropertyAttribute.MAYBEVOID} , then
+    * the value may be void.
+    */
+  @scala.inline
+  def AMBIGUOUS_VALUE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /**
+    * The value of the property is available from a master (e.g., template). <p>The PropertyAttribute field in the struct
+    *
+    * Property must contain the
+    *
+    * PropertyAttribute::MAYBEDEFAULT flag. The property
+    *
+    * value must be available and of the specified type. If the
+    *
+    * PropertyAttribute field in the struct Property
+    *
+    * contains PropertyAttribute::MAYBEVOID, then the
+    *
+    * value may be void. </p>
+    */
+  @scala.inline
+  def DEFAULT_VALUE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /**
+    * The value of the property is stored in the {@link PropertySet} itself. <p>The property value must be available and of the specified type.
+    *
+    * If the PropertyAttribute field in the struct
+    *
+    * Property contains PropertyAttribute::MAYBEVOID,
+    *
+    * then the value may be void. </p>
+    */
+  @scala.inline
+  def DIRECT_VALUE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

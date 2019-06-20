@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class OptionalSymbolBase[TKind /* <: OptionalSymbolKind */] protected () extends PrimarySymbolBase[TKind] {
   def this(kind: TKind) = this()
-  def this(kind: TKind, questionToken: Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
-  val questionToken: js.UndefOr[Token[grammarkdownLib.distTokensMod.SyntaxKind]] = js.native
+  def this(kind: TKind, questionToken: Token[grammarkdownLib.distTokensMod.SyntaxKind.QuestionToken]) = this()
+  val questionToken: js.UndefOr[Token[grammarkdownLib.distTokensMod.SyntaxKind.QuestionToken]] = js.native
 }
 

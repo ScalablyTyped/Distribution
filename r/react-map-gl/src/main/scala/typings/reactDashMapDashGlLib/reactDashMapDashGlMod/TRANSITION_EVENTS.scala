@@ -23,9 +23,14 @@ object TRANSITION_EVENTS extends js.Object {
   sealed trait SNAP_TO_END
     extends reactDashMapDashGlLib.reactDashMapDashGlMod.TRANSITION_EVENTS
   
+  @js.native
+  sealed trait UPDATE
+    extends reactDashMapDashGlLib.reactDashMapDashGlMod.TRANSITION_EVENTS
+  
   /* 1 */ val BREAK: BREAK with scala.Double = js.native
   /* 3 */ val IGNORE: IGNORE with scala.Double = js.native
   /* 2 */ val SNAP_TO_END: SNAP_TO_END with scala.Double = js.native
+  /* 4 */ val UPDATE: UPDATE with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[reactDashMapDashGlLib.reactDashMapDashGlMod.TRANSITION_EVENTS with scala.Double] = js.native
 }

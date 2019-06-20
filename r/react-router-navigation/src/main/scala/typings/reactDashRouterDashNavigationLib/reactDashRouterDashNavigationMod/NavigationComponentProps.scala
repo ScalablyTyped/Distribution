@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationComponentProps extends NavigationProps {
-  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactElement]] = js.undefined
 }
 
 object NavigationComponentProps {
@@ -15,7 +15,7 @@ object NavigationComponentProps {
     backButtonTintColor: java.lang.String = null,
     backButtonTitle: java.lang.String = null,
     cardStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    children: js.Array[reactLib.reactMod.ReactElement[_]] = null,
+    children: js.Array[reactLib.reactMod.ReactElement] = null,
     configureTransition: (/* transitionProps */ reactDashNavigationLib.reactDashNavigationMod.NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[reactDashNavigationLib.reactDashNavigationMod.NavigationTransitionProps]) => reactDashNavigationLib.reactDashNavigationMod.NavigationTransitionSpec = null,
     hideBackButton: js.UndefOr[scala.Boolean] = js.undefined,
     hideNavBar: js.UndefOr[scala.Boolean] = js.undefined,

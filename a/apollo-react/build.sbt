@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "apollo-react"
-version := "0.7.1-9ca142"
+version := "0.7.1-06526b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "apollo-cache" % "1.3.2-f74883",
-  "org.scalablytyped" %%% "apollo-client" % "2.6.2-b1c149",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.11-bede40",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.3.0-eeefd3",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190616Z-a68a9c",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "redux" % "4.0.1-2e6d53",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "typed-graphql" % "1.0.2-6250f5",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-cea422",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-4da704")
+  "org.scalablytyped" %%% "apollo-cache" % "1.3.2-ee11a6",
+  "org.scalablytyped" %%% "apollo-client" % "2.6.3-c2d451",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.11-644548",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.3.0-36a7b8",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190616Z-f0ece1",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
+  "org.scalablytyped" %%% "redux" % "4.0.1-3a783a",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303",
+  "org.scalablytyped" %%% "typed-graphql" % "1.0.2-773814",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-2b520b",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-7a20a3")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

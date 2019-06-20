@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TooltipProps extends js.Object {
   val bottom: js.UndefOr[scala.Boolean] = js.undefined
   val children: reactLib.reactMod.ReactNode
-  val contents: reactLib.reactMod.ReactElement[_]
+  val contents: reactLib.reactMod.ReactElement
   val offset: js.UndefOr[scala.Double] = js.undefined
   val persistent: js.UndefOr[scala.Boolean] = js.undefined
   val style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -20,7 +20,7 @@ object TooltipProps {
   @scala.inline
   def apply(
     children: reactLib.reactMod.ReactNode,
-    contents: reactLib.reactMod.ReactElement[_],
+    contents: reactLib.reactMod.ReactElement,
     bottom: js.UndefOr[scala.Boolean] = js.undefined,
     offset: scala.Int | scala.Double = null,
     persistent: js.UndefOr[scala.Boolean] = js.undefined,

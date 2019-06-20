@@ -19,7 +19,7 @@ trait Badge
   def isZero(): scala.Boolean = js.native
   def renderBadge(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderBadgeNumber(prefixCls: java.lang.String, scrollNumberPrefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
-  def renderDispayComponent(): js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.native
+  def renderDispayComponent(): js.UndefOr[reactLib.reactMod.ReactElement] = js.native
   def renderStatusText(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
 }
 

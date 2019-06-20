@@ -77,7 +77,7 @@ trait BootstrapTableProps
   	 * the expand row functionality on table.
   	 */
   var expandComponent: js.UndefOr[
-    js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactElement[_]]
+    js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactElement]
   ] = js.undefined
   /**
   	 * Tell react-bootstrap-table which rows are able to expand. This prop accepts
@@ -278,7 +278,7 @@ object BootstrapTableProps {
     deleteRow: js.UndefOr[scala.Boolean] = js.undefined,
     excludeCSVHeader: js.UndefOr[scala.Boolean] = js.undefined,
     expandColumnOptions: ExpandColumnOptions = null,
-    expandComponent: /* row */ js.Any => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    expandComponent: /* row */ js.Any => java.lang.String | reactLib.reactMod.ReactElement = null,
     expandableRow: /* row */ js.Any => scala.Boolean = null,
     exportCSV: js.UndefOr[scala.Boolean] = js.undefined,
     fetchInfo: FetchInfo = null,

@@ -57,13 +57,13 @@ trait OverlayProps
     * A render prop that returns an element to overlay and position. See
     * the [react-popper documentation](https://github.com/FezVrasta/react-popper#children) for more info.
     */
-  def children(renderProps: OverlayRenderProps): reactLib.reactMod.ReactElement[_]
+  def children(renderProps: OverlayRenderProps): reactLib.reactMod.ReactElement
 }
 
 object OverlayProps {
   @scala.inline
   def apply(
-    children: OverlayRenderProps => reactLib.reactMod.ReactElement[_],
+    children: OverlayRenderProps => reactLib.reactMod.ReactElement,
     container: reactLib.reactMod.ReactNode | js.Function = null,
     flip: js.UndefOr[scala.Boolean] = js.undefined,
     onEnter: /* node */ stdLib.HTMLElement => _ = null,

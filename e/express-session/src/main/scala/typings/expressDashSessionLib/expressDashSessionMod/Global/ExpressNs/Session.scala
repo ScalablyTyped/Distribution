@@ -13,7 +13,7 @@ trait Session extends SessionData {
   def regenerate(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit
   def reload(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit
   def save(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit
-  def touch(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit
+  def touch(): scala.Unit
 }
 
 object Session {
@@ -25,9 +25,9 @@ object Session {
     regenerate: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
     reload: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
     save: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,
-    touch: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit
+    touch: () => scala.Unit
   ): Session = {
-    val __obj = js.Dynamic.literal(cookie = cookie, destroy = js.Any.fromFunction1(destroy), id = id, regenerate = js.Any.fromFunction1(regenerate), reload = js.Any.fromFunction1(reload), save = js.Any.fromFunction1(save), touch = js.Any.fromFunction1(touch))
+    val __obj = js.Dynamic.literal(cookie = cookie, destroy = js.Any.fromFunction1(destroy), id = id, regenerate = js.Any.fromFunction1(regenerate), reload = js.Any.fromFunction1(reload), save = js.Any.fromFunction1(save), touch = js.Any.fromFunction0(touch))
   
     __obj.asInstanceOf[Session]
   }

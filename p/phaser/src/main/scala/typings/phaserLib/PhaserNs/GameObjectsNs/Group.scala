@@ -44,8 +44,7 @@ class Group protected ()
   /**
     * The class to create new group members from.
     */
-  @JSName("classType")
-  var classType_Original: phaserLib.PhaserNs.TypesNs.GameObjectsNs.GroupNs.GroupClassTypeConstructor = js.native
+  var classType: js.Function = js.native
   /**
     * A function to be called when adding or creating group members.
     */
@@ -75,6 +74,11 @@ class Group protected ()
     * The maximum size of this group, if used as a pool. -1 is no limit.
     */
   var maxSize: phaserLib.integer = js.native
+  /**
+    * The name of this group.
+    * Empty by default and never populated by Phaser, this is left for developers to use.
+    */
+  var name: java.lang.String = js.native
   /**
     * A function to be called when removing group members.
     */
@@ -106,24 +110,6 @@ class Group protected ()
     */
   def addMultiple(children: js.Array[GameObject]): Group = js.native
   def addMultiple(children: js.Array[GameObject], addToScene: scala.Boolean): Group = js.native
-  /**
-    * The class to create new group members from.
-    */
-  def classType(scene: phaserLib.PhaserNs.Scene, x: scala.Double, y: scala.Double, texture: java.lang.String): scala.Unit = js.native
-  def classType(
-    scene: phaserLib.PhaserNs.Scene,
-    x: scala.Double,
-    y: scala.Double,
-    texture: java.lang.String,
-    frame: java.lang.String
-  ): scala.Unit = js.native
-  def classType(
-    scene: phaserLib.PhaserNs.Scene,
-    x: scala.Double,
-    y: scala.Double,
-    texture: java.lang.String,
-    frame: phaserLib.integer
-  ): scala.Unit = js.native
   /**
     * Removes all members of this Group and optionally removes them from the Scene and / or destroys them.
     * 

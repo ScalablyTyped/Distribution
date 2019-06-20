@@ -73,7 +73,7 @@ package object reactMod {
   //
   // Factories
   // ----------------------------------------------------------------------
-  type Factory[P] = js.Function2[/* props */ js.UndefOr[Attributes with P], /* repeated */ ReactNode, ReactElement[P]]
+  type Factory[P] = js.Function2[/* props */ js.UndefOr[Attributes with P], /* repeated */ ReactNode, ReactElement]
   type FocusEventHandler[T] = EventHandler[FocusEvent[T]]
   // tslint:disable-next-line:no-empty-interface
   type FormEvent[T] = SyntheticEvent[T, reactLib.Event]
@@ -95,14 +95,10 @@ package object reactMod {
     *
     * Note: its presence prevents any of the deprecated lifecycle methods from being invoked
     */
-  js.Function2[
-    /* nextProps */ stdLib.Readonly[P], 
-    /* prevState */ S, 
-    stdLib.Partial[S] | scala.Null
-  ]
+  js.Function2[/* nextProps */ P, /* prevState */ S, stdLib.Partial[S] | scala.Null]
   // tslint:disable-next-line:no-empty-interface
   type HTMLFactory[T /* <: reactLib.HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes[T], T]
-  type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement[js.Any] | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
+  type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
   type LazyExoticComponent[T /* <: ComponentType[_] */] = ExoticComponent[ComponentPropsWithRef[T]] with reactLib.Anon_Result[T]
@@ -135,8 +131,8 @@ package object reactMod {
   // NOTE: only the Context object itself can get a displayName
   // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
   type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
-  type ReactChild = ReactElement[js.Any] | ReactText
-  type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, P] = ReactElement[P]
+  type ReactChild = ReactElement | ReactText
+  type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, P] = ReactElement
   type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, reactLib.Event]]
   type ReactFragment = js.Object | ReactNodeArray
   // ReactHTML for ReactHTMLElement
@@ -150,7 +146,7 @@ package object reactMod {
     (MergePropTypes[P, propDashTypesLib.propDashTypesMod.InferProps[js.Any]]) | P, 
     js.Any
   ]) | (MergePropTypes[P, propDashTypesLib.propDashTypesMod.InferProps[js.Any]])
-  type ReactNode = js.UndefOr[ReactChild | ReactFragment | ReactPortal | scala.Boolean | scala.Null]
+  type ReactNode = js.UndefOr[ReactChild | ReactFragment | ReactPortal | scala.Boolean]
   //
   // React Nodes
   // http://facebook.github.io/react/docs/glossary.html

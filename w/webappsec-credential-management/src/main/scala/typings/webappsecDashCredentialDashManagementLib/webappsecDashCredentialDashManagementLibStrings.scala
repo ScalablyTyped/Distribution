@@ -34,7 +34,7 @@ object webappsecDashCredentialDashManagementLibStrings {
   sealed trait none extends AttestationConveyancePreference
   
   @js.native
-  sealed trait optional extends CredentialMediationRequirement
+  sealed trait optional extends js.Object
   
   @js.native
   sealed trait password extends js.Object
@@ -49,12 +49,10 @@ object webappsecDashCredentialDashManagementLibStrings {
   sealed trait `public-key` extends js.Object
   
   @js.native
-  sealed trait required
-    extends CredentialMediationRequirement
-       with UserVerificationRequirement
+  sealed trait required extends UserVerificationRequirement
   
   @js.native
-  sealed trait silent extends CredentialMediationRequirement
+  sealed trait silent extends js.Object
   
   @js.native
   sealed trait usb extends AuthenticatorTransport

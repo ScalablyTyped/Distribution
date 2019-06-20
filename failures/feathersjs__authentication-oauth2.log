@@ -7,7 +7,7 @@
 [warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof Strategy [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsMemberProperty(Strategy) / TsTypeUnion() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(self)))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(feathersAuthenticationOAuth2) / TsTypeIntersect() / TsTypeQuery())] 
 [error] TsTreeScope.scala:241 Circular tree detected [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(default) / TsTypeIntersect() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeConstructor() / TsTypeFunction() / TsFunSig() / TsTypeParam() / TsTypeRef())] com.olvind.logging.Logger$LoggedException: Circular tree detected
-	at com.olvind.logging.Logger$LoggingOps$.fatal$extension(Logger.scala:173)
+	at com.olvind.logging.Logger$LoggingOps$.fatal$extension(Logger.scala:172)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.<init>(TsTreeScope.scala:241)
 	at com.olvind.tso.ts.TsTreeScope.$div(TsTreeScope.scala:30)
 	at com.olvind.tso.ts.TsTreeScope.$div$(TsTreeScope.scala:29)
@@ -135,7 +135,7 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:332)
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:328)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
-	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$9(Phase1ReadTypescript.scala:226)
+	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$13(Phase1ReadTypescript.scala:227)
 	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$38(Phase1ReadTypescript.scala:192)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)

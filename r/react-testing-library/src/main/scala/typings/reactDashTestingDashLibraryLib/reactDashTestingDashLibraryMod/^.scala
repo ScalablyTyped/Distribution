@@ -73,11 +73,11 @@ object ^ extends js.Object {
   def getQueriesForElement[T /* <: domDashTestingDashLibraryLib.typingsGetDashQueriesDashForDashElementMod.Queries */](element: stdLib.HTMLElement, queriesToBind: T): domDashTestingDashLibraryLib.typingsGetDashQueriesDashForDashElementMod.BoundFunctions[T] = js.native
   def prettyDOM(element: stdLib.HTMLElement): java.lang.String | reactDashTestingDashLibraryLib.reactDashTestingDashLibraryLibNumbers.`false` = js.native
   def prettyDOM(element: stdLib.HTMLElement, maxLength: scala.Double): java.lang.String | reactDashTestingDashLibraryLib.reactDashTestingDashLibraryLibNumbers.`false` = js.native
-  def render(ui: reactLib.reactMod.ReactElement[_]): RenderResult[reactDashTestingDashLibraryLib.Typeofqueries] = js.native
-  def render[Q /* <: Queries */](ui: reactLib.reactMod.ReactElement[_], options: RenderOptions[Q]): RenderResult[Q] = js.native
+  def render(ui: reactLib.reactMod.ReactElement): RenderResult[reactDashTestingDashLibraryLib.Typeofqueries] = js.native
+  def render[Q /* <: Queries */](ui: reactLib.reactMod.ReactElement, options: RenderOptions[Q]): RenderResult[Q] = js.native
   @JSName("render")
   def render_queries(
-    ui: reactLib.reactMod.ReactElement[_],
+    ui: reactLib.reactMod.ReactElement,
     options: reactDashTestingDashLibraryLib.Omit[
       RenderOptions[reactDashTestingDashLibraryLib.Typeofqueries], 
       reactDashTestingDashLibraryLib.reactDashTestingDashLibraryLibStrings.queries

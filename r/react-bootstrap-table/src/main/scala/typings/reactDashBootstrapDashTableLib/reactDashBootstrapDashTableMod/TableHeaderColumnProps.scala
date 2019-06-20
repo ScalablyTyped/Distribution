@@ -23,7 +23,7 @@ trait TableHeaderColumnProps
     js.Function2[
       /* direction */ SortOrder | scala.Null, 
       /* fieldName */ java.lang.String, 
-      java.lang.String | reactLib.reactMod.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait TableHeaderColumnProps
       /* row */ js.Any, 
       /* formatExtraData */ js.Any, 
       /* rowIndex */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   /**
@@ -319,7 +319,7 @@ object TableHeaderColumnProps {
   @scala.inline
   def apply(
     autoValue: scala.Boolean | js.Function0[_] = null,
-    caretRender: (/* direction */ SortOrder | scala.Null, /* fieldName */ java.lang.String) => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    caretRender: (/* direction */ SortOrder | scala.Null, /* fieldName */ java.lang.String) => java.lang.String | reactLib.reactMod.ReactElement = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String | (js.Function4[
       /* cell */ js.Any, 
@@ -351,7 +351,7 @@ object TableHeaderColumnProps {
     customInsertEditor: reactDashBootstrapDashTableLib.Anon_Attr = null,
     dataAlign: DataAlignType = null,
     dataField: java.lang.String = null,
-    dataFormat: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ scala.Double) => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    dataFormat: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ scala.Double) => java.lang.String | reactLib.reactMod.ReactElement = null,
     dataSort: js.UndefOr[scala.Boolean] = js.undefined,
     defaultASC: js.UndefOr[scala.Boolean] = js.undefined,
     editColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String]) = null,

@@ -27,7 +27,7 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
       scala.Unit
     ],
     customFilterParameters: CustomFilterParameters[FParams]
-  ): reactLib.reactMod.ReactElement[FElement]
+  ): reactLib.reactMod.ReactElement
 }
 
 object CustomFilter {
@@ -40,7 +40,7 @@ object CustomFilter {
         reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.CustomFilter
       ], 
       scala.Unit
-    ], CustomFilterParameters[FParams]) => reactLib.reactMod.ReactElement[FElement],
+    ], CustomFilterParameters[FParams]) => reactLib.reactMod.ReactElement,
     `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.CustomFilter
   ): CustomFilter[FParams, FElement] = {
     val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters)

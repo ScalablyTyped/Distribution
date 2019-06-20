@@ -12,7 +12,7 @@ trait ReactSVGElement
 object ReactSVGElement {
   @scala.inline
   def apply(
-    props: SVGAttributes[reactLib.SVGElement],
+    props: js.Any,
     ref: LegacyRef[reactLib.SVGElement],
     `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
     key: Key = null

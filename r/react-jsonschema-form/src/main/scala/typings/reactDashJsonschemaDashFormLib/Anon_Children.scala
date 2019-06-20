@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Children extends js.Object {
-  var children: reactLib.reactMod.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement
   var className: java.lang.String
   var disabled: scala.Boolean
   var hasMoveDown: scala.Boolean
@@ -22,7 +22,7 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[_],
+    children: reactLib.reactMod.ReactElement,
     className: java.lang.String,
     disabled: scala.Boolean,
     hasMoveDown: scala.Boolean,

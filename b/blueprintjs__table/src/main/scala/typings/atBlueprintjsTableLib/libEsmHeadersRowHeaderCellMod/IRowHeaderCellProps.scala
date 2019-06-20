@@ -15,6 +15,23 @@ trait IRowHeaderCellProps
     * Specifies whether the full row is part of a selection.
     */
   var isRowSelected: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * A callback to override the default name rendering behavior. The default
+    * behavior is to simply use the `RowHeaderCell`s name prop.
+    *
+    * This render callback can be used, for example, to provide a
+    * `EditableName` component for editing row names.
+    *
+    * The callback will also receive the row index if an `index` was originally
+    * provided via props.
+    */
+  var nameRenderer: js.UndefOr[
+    js.Function2[
+      /* name */ java.lang.String, 
+      /* index */ js.UndefOr[scala.Double], 
+      reactLib.reactMod.ReactElement
+    ]
+  ] = js.undefined
 }
 
 object IRowHeaderCellProps {
@@ -28,6 +45,7 @@ object IRowHeaderCellProps {
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     menuRenderer: /* index */ js.UndefOr[scala.Double] => reactLib.reactMod.Global.JSXNs.Element = null,
     name: java.lang.String = null,
+    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactElement = null,
     reorderHandle: reactLib.reactMod.Global.JSXNs.Element = null,
     resizeHandle: atBlueprintjsTableLib.libEsmInteractionsResizeHandleMod.ResizeHandle = null,
     style: reactLib.reactMod.CSSProperties = null
@@ -41,6 +59,7 @@ object IRowHeaderCellProps {
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (menuRenderer != null) __obj.updateDynamic("menuRenderer")(js.Any.fromFunction1(menuRenderer))
     if (name != null) __obj.updateDynamic("name")(name)
+    if (nameRenderer != null) __obj.updateDynamic("nameRenderer")(js.Any.fromFunction2(nameRenderer))
     if (reorderHandle != null) __obj.updateDynamic("reorderHandle")(reorderHandle)
     if (resizeHandle != null) __obj.updateDynamic("resizeHandle")(resizeHandle)
     if (style != null) __obj.updateDynamic("style")(style)

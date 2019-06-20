@@ -21,7 +21,7 @@ trait ToastOptions extends ToastAndToastContainerOptions {
   /**
     * String or React Element, only available when calling update.
     */
-  var render: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var render: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Kind of notification.
     * @default 'default'
@@ -47,7 +47,7 @@ object ToastOptions {
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     position: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-left` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left` = null,
     progressClassName: java.lang.String = null,
-    render: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    render: java.lang.String | reactLib.reactMod.ReactElement = null,
     transition: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = null,
     `type`: reactDashToastifyLib.reactDashToastifyLibStrings.default | reactDashToastifyLib.reactDashToastifyLibStrings.success | reactDashToastifyLib.reactDashToastifyLibStrings.info | reactDashToastifyLib.reactDashToastifyLibStrings.warning | reactDashToastifyLib.reactDashToastifyLibStrings.error = null
   ): ToastOptions = {

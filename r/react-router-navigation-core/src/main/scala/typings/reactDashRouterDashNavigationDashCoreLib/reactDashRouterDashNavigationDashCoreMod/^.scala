@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-navigation-core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def build[Item](children: js.Array[reactLib.reactMod.ReactElement[Item]]): js.Array[Item] = js.native
-  def build[Item](children: js.Array[reactLib.reactMod.ReactElement[Item]], oldBuild: js.Array[Item]): js.Array[Item] = js.native
+  def build[Item](children: js.Array[reactLib.reactMod.ReactElement]): js.Array[Item] = js.native
+  def build[Item](children: js.Array[reactLib.reactMod.ReactElement], oldBuild: js.Array[Item]): js.Array[Item] = js.native
   def createKey(route: Route[js.Object]): java.lang.String = js.native
   def get[Item /* <: Route[js.Object] */](items: js.Array[Item], route: Route[js.Object]): Item = js.native
   def getRoute(

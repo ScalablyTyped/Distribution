@@ -25,7 +25,7 @@ object ^ extends js.Object {
     /* WrappedComponent */ reactLib.reactMod.ComponentType[TProps with TChildProps], 
     reactLib.reactMod.ComponentClass[TProps, _]
   ] = js.native
-  def renderToStringWithData(component: reactLib.reactMod.ReactElement[_]): js.Promise[java.lang.String] = js.native
+  def renderToStringWithData(component: reactLib.reactMod.ReactElement): js.Promise[java.lang.String] = js.native
   def withApollo[TProps, TResult](
     WrappedComponent: reactLib.reactMod.ComponentType[reactDashApolloLib.withApolloMod.WithApolloClient[TProps]]
   ): reactLib.reactMod.ComponentClass[TProps, reactLib.reactMod.ComponentState] = js.native

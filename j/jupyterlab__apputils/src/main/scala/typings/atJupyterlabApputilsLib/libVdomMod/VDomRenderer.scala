@@ -31,6 +31,6 @@ abstract class VDomRenderer[T /* <: atJupyterlabApputilsLib.libVdomMod.VDomRende
     * Subclasses should define this method and use the current model state
     * to create a virtual node or nodes to render.
     */
-  /* protected */ def render(): js.Array[reactLib.reactMod.ReactElement[_]] | reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  /* protected */ def render(): js.Array[reactLib.reactMod.ReactElement] | reactLib.reactMod.ReactElement | scala.Null = js.native
 }
 

@@ -164,6 +164,36 @@ object SoundNs extends js.Object {
       */
     val COMPLETE: js.Any = js.native
     /**
+      * The Audio Data Decoded Event.
+      * 
+      * This event is dispatched by the Web Audio Sound Manager as a result of calling the `decodeAudio` method.
+      * 
+      * Listen to it from the Sound Manager in a Scene using `this.sound.on('decoded', listener)`, i.e.:
+      * 
+      * ```javascript
+      * this.sound.on('decoded', handler);
+      * this.sound.decodeAudio(key, audioData);
+      * ```
+      */
+    val DECODED: js.Any = js.native
+    /**
+      * The Audio Data Decoded All Event.
+      * 
+      * This event is dispatched by the Web Audio Sound Manager as a result of calling the `decodeAudio` method,
+      * once all files passed to the method have been decoded (or errored).
+      * 
+      * Use `Phaser.Sound.Events#DECODED` to listen for single sounds being decoded, and `DECODED_ALL` to
+      * listen for them all completing.
+      * 
+      * Listen to it from the Sound Manager in a Scene using `this.sound.on('decodedall', listener)`, i.e.:
+      * 
+      * ```javascript
+      * this.sound.once('decodedall', handler);
+      * this.sound.decodeAudio([ audioFiles ]);
+      * ```
+      */
+    val DECODED_ALL: js.Any = js.native
+    /**
       * The Sound Destroy Event.
       * 
       * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are destroyed, either

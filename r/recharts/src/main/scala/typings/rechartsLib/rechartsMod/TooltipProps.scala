@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 trait TooltipProps extends Animatable {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var content: js.UndefOr[
-    reactLib.reactMod.ReactElement[_] | reactLib.reactMod.StatelessComponent[_] | ContentRenderer[TooltipProps]
+    reactLib.reactMod.ReactElement | reactLib.reactMod.StatelessComponent[_] | ContentRenderer[TooltipProps]
   ] = js.undefined
   var coordinate: js.UndefOr[Coordinate] = js.undefined
   var cursor: js.UndefOr[
-    scala.Boolean | js.Object | reactLib.reactMod.ReactElement[_] | reactLib.reactMod.StatelessComponent[_]
+    scala.Boolean | js.Object | reactLib.reactMod.ReactElement | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   var filterNull: js.UndefOr[scala.Boolean] = js.undefined
   var formatter: js.UndefOr[TooltipFormatter] = js.undefined
@@ -38,9 +38,9 @@ object TooltipProps {
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: AnimationEasingType = null,
     animationId: scala.Int | scala.Double = null,
-    content: reactLib.reactMod.ReactElement[_] | reactLib.reactMod.StatelessComponent[_] | ContentRenderer[TooltipProps] = null,
+    content: reactLib.reactMod.ReactElement | reactLib.reactMod.StatelessComponent[_] | ContentRenderer[TooltipProps] = null,
     coordinate: Coordinate = null,
-    cursor: scala.Boolean | js.Object | reactLib.reactMod.ReactElement[_] | reactLib.reactMod.StatelessComponent[_] = null,
+    cursor: scala.Boolean | js.Object | reactLib.reactMod.ReactElement | reactLib.reactMod.StatelessComponent[_] = null,
     filterNull: js.UndefOr[scala.Boolean] = js.undefined,
     formatter: TooltipFormatter = null,
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,

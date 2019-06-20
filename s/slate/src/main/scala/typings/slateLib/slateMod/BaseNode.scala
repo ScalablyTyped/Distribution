@@ -28,7 +28,7 @@ trait BaseNode[DataMap] extends js.Object {
   def createSelection(properties: Selection): Selection = js.native
   def createSelection(properties: SelectionProperties): Selection = js.native
   def filterDescendants(iterator: js.Function1[/* node */ Node, scala.Boolean]): immutableLib.immutableMod.List[Node] = js.native
-  def findDescendants(iterator: js.Function1[/* node */ Node, scala.Boolean]): Node | scala.Null = js.native
+  def findDescendant(iterator: js.Function1[/* node */ Node, scala.Boolean]): Node | scala.Null = js.native
   def getActiveMarksAtRange(range: Range): immutableLib.immutableMod.Set[Mark] = js.native
   def getAncestors(path: Path): immutableLib.immutableMod.List[Node] | scala.Null = js.native
   def getBlocks(): immutableLib.immutableMod.List[Block] = js.native

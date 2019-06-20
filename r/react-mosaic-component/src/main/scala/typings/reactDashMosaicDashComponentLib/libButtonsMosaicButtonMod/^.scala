@@ -12,12 +12,12 @@ object ^ extends js.Object {
     title: java.lang.String,
     className: java.lang.String,
     onClick: js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], _]
-  ): reactLib.reactMod.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def createDefaultToolbarButton(
     title: java.lang.String,
     className: java.lang.String,
     onClick: js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], _],
     text: java.lang.String
-  ): reactLib.reactMod.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
 }
 

@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 */
 trait DeviceLocalMemType extends js.Object
 
+object DeviceLocalMemType {
+  @scala.inline
+  def GLOBAL: webclLib.webclLibNumbers.`0x2` = this.cast(0x2)
+  @scala.inline
+  def LOCAL: webclLib.webclLibNumbers.`0x1` = this.cast(0x1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

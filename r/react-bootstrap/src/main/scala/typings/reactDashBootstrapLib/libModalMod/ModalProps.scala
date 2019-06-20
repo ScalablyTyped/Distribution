@@ -31,7 +31,7 @@ trait ModalProps
   var onHide: js.Function
   var onShow: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
-  var transition: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var transition: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
 }
 
 object ModalProps {
@@ -59,7 +59,7 @@ object ModalProps {
     onEscapeKeyUp: /* node */ stdLib.HTMLElement => _ = null,
     onShow: /* node */ stdLib.HTMLElement => _ = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
-    transition: reactLib.reactMod.ReactElement[_] = null
+    transition: reactLib.reactMod.ReactElement = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal(onHide = onHide)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

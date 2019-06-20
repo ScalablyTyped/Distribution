@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown/dist/nodes", "SymbolSpan")
 @js.native
 class SymbolSpan protected ()
-  extends Node[grammarkdownLib.distTokensMod.SyntaxKind] {
+  extends Node[grammarkdownLib.distTokensMod.SyntaxKind.SymbolSpan] {
   def this(symbol: LexicalSymbol) = this()
   def this(symbol: LexicalSymbol, next: SymbolSpan) = this()
   val next: js.UndefOr[SymbolSpan] = js.native

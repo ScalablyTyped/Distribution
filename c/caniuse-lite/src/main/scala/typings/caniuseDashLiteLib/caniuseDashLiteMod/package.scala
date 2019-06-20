@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object caniuseDashLiteMod {
-  type AgentsByID = stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[js.UndefOr[stdLib.Readonly[Agent]]]]
+  type AgentsByID = org.scalablytyped.runtime.StringDictionary[js.UndefOr[Agent]]
   /* Rewritten from type alias, can be one of: 
     - caniuseDashLiteLib.caniuseDashLiteLibStrings.ls
     - caniuseDashLiteLib.caniuseDashLiteLibStrings.rec
@@ -20,7 +20,7 @@ package object caniuseDashLiteMod {
   type FeatureStatus = _FeatureStatus | java.lang.String
   type PackedFeature = org.scalablytyped.runtime.StringDictionary[js.Any]
   type PackedRegion = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type StatsByAgentID = stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[SupportStatusByVersion]]
+  type StatsByAgentID = org.scalablytyped.runtime.StringDictionary[SupportStatusByVersion]
   /* Rewritten from type alias, can be one of: 
     - caniuseDashLiteLib.caniuseDashLiteLibStrings.n
     - caniuseDashLiteLib.caniuseDashLiteLibStrings.p
@@ -32,6 +32,6 @@ package object caniuseDashLiteMod {
     - java.lang.String
   */
   type SupportStatus = _SupportStatus | java.lang.String
-  type SupportStatusByVersion = stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[SupportStatus]]
-  type UsageByVersion = stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]]
+  type SupportStatusByVersion = org.scalablytyped.runtime.StringDictionary[SupportStatus]
+  type UsageByVersion = org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
 }

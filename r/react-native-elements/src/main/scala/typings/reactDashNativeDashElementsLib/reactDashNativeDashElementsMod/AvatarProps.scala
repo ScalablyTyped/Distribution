@@ -84,7 +84,7 @@ trait AvatarProps extends js.Object {
   /**
     * Render a content inside placeholder
     */
-  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Determines the shape of avatar
     *
@@ -139,7 +139,7 @@ object AvatarProps {
     onPress: () => scala.Unit = null,
     overlayContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     placeholderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    renderPlaceholderContent: reactLib.reactMod.ReactElement[js.Object] = null,
+    renderPlaceholderContent: reactLib.reactMod.ReactElement = null,
     rounded: js.UndefOr[scala.Boolean] = js.undefined,
     showEditButton: js.UndefOr[scala.Boolean] = js.undefined,
     size: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.small | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.medium | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.large | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.xlarge | scala.Double = null,

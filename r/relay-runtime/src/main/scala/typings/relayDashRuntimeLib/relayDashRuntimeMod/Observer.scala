@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Observer[T] extends js.Object {
-  var complete: js.UndefOr[js.Function0[_]] = js.undefined
-  var error: js.UndefOr[js.Function1[/* error */ stdLib.Error, _]] = js.undefined
-  var next: js.UndefOr[js.Function1[/* nextThing */ T, _]] = js.undefined
-  var start: js.UndefOr[js.Function1[/* subscription */ Subscription, _]] = js.undefined
-  var unsubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, _]] = js.undefined
+  val complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  val error: js.UndefOr[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.undefined
+  val next: js.UndefOr[js.Function1[/* value */ T, scala.Unit]] = js.undefined
+  val start: js.UndefOr[js.Function1[/* subscription */ Subscription, scala.Unit]] = js.undefined
+  val unsubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, scala.Unit]] = js.undefined
 }
 
 object Observer {
   @scala.inline
   def apply[T](
-    complete: () => _ = null,
-    error: /* error */ stdLib.Error => _ = null,
-    next: /* nextThing */ T => _ = null,
-    start: /* subscription */ Subscription => _ = null,
-    unsubscribe: /* subscription */ Subscription => _ = null
+    complete: () => scala.Unit = null,
+    error: /* error */ stdLib.Error => scala.Unit = null,
+    next: /* value */ T => scala.Unit = null,
+    start: /* subscription */ Subscription => scala.Unit = null,
+    unsubscribe: /* subscription */ Subscription => scala.Unit = null
   ): Observer[T] = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

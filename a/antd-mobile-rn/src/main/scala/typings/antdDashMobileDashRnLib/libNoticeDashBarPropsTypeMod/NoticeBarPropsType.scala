@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NoticeBarPropsType extends js.Object {
-  var action: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var action: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var mode: js.UndefOr[
     antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.closable | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.link
   ] = js.undefined
@@ -17,8 +17,8 @@ trait NoticeBarPropsType extends js.Object {
 object NoticeBarPropsType {
   @scala.inline
   def apply(
-    action: reactLib.reactMod.ReactElement[_] = null,
-    icon: reactLib.reactMod.ReactElement[_] = null,
+    action: reactLib.reactMod.ReactElement = null,
+    icon: reactLib.reactMod.ReactElement = null,
     mode: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.closable | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.link = null,
     onClick: () => scala.Unit = null
   ): NoticeBarPropsType = {

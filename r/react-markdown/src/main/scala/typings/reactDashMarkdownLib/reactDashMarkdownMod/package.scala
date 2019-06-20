@@ -25,6 +25,6 @@ package object reactDashMarkdownMod {
     MarkdownAbstractSyntaxTree
   ]
   type ReactMarkdown = reactLib.reactMod.Component[ReactMarkdownProps, js.Object, js.Any]
-  type Renderer[T] = js.Function1[/* props */ T, reactLib.reactMod.ReactElement[T]]
+  type Renderer[T] = js.Function1[/* props */ T, reactLib.reactMod.ReactElement]
   type Renderers = org.scalablytyped.runtime.StringDictionary[java.lang.String | Renderer[js.Any]]
 }

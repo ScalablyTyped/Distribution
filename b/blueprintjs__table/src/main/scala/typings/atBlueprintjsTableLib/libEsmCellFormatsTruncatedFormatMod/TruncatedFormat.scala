@@ -13,8 +13,6 @@ class TruncatedFormat ()
   var handleContentDivRef: js.Any = js.native
   var handlePopoverClose: js.Any = js.native
   var handlePopoverOpen: js.Any = js.native
-  @JSName("state")
-  var state_TruncatedFormat: ITruncatedFormatState = js.native
   @JSName("componentDidMount")
   def componentDidMount_MTruncatedFormat(): scala.Unit = js.native
   @JSName("componentDidUpdate")

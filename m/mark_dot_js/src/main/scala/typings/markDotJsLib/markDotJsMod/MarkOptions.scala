@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MarkOptions extends js.Object {
-  var accuracy: js.UndefOr[MarkAccuracy | markDotJsLib.Anon_Value] = js.undefined
+  var accuracy: js.UndefOr[MarkAccuracy | MarkAccuracyObject] = js.undefined
   var acrossElements: js.UndefOr[scala.Boolean] = js.undefined
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -41,7 +41,7 @@ trait MarkOptions extends js.Object {
 object MarkOptions {
   @scala.inline
   def apply(
-    accuracy: MarkAccuracy | markDotJsLib.Anon_Value = null,
+    accuracy: MarkAccuracy | MarkAccuracyObject = null,
     acrossElements: js.UndefOr[scala.Boolean] = js.undefined,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,

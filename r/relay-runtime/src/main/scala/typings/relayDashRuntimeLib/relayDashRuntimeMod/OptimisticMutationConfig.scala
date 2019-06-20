@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OptimisticMutationConfig extends js.Object {
-  var configs: js.UndefOr[js.Array[RelayMutationConfig]] = js.undefined
+  var configs: js.UndefOr[js.Array[DeclarativeMutationConfig] | scala.Null] = js.undefined
   var mutation: GraphQLTaggedNode
   var optimisticResponse: js.UndefOr[js.Object] = js.undefined
-  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[_]] = js.undefined
+  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[_] | scala.Null] = js.undefined
   var variables: Variables
 }
 
@@ -18,7 +18,7 @@ object OptimisticMutationConfig {
   def apply(
     mutation: GraphQLTaggedNode,
     variables: Variables,
-    configs: js.Array[RelayMutationConfig] = null,
+    configs: js.Array[DeclarativeMutationConfig] = null,
     optimisticResponse: js.Object = null,
     optimisticUpdater: SelectorStoreUpdater[_] = null
   ): OptimisticMutationConfig = {

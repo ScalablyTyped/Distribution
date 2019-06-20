@@ -22,8 +22,6 @@ class Suggest[T] ()
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
   var selectText: js.Any = js.native
-  @JSName("state")
-  var state_Suggest: ISuggestState[T] = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSuggest(_prevProps: ISuggestProps[T], prevState: ISuggestState[T]): scala.Unit = js.native
   @JSName("componentWillReceiveProps")

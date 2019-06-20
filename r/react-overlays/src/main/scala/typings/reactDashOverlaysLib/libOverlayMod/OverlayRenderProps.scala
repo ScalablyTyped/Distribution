@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OverlayRenderProps extends js.Object {
-  var arrowProps: reactDashOverlaysLib.Anon_Element
+  var arrowProps: reactDashOverlaysLib.Anon_Key
   var outOfBoundaries: js.UndefOr[scala.Boolean] = js.undefined
   var placement: Placements
   var props: reactDashOverlaysLib.Anon_Arialabelledby
@@ -17,7 +17,7 @@ trait OverlayRenderProps extends js.Object {
 object OverlayRenderProps {
   @scala.inline
   def apply(
-    arrowProps: reactDashOverlaysLib.Anon_Element,
+    arrowProps: reactDashOverlaysLib.Anon_Key,
     placement: Placements,
     props: reactDashOverlaysLib.Anon_Arialabelledby,
     scheduleUpdate: () => scala.Unit,

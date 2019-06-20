@@ -112,7 +112,7 @@ object TilemapsNs extends js.Object {
     */
   class ObjectLayer ()
     extends phaserLib.PhaserNs.TilemapsNs.ObjectLayer {
-    def this(config: js.Object) = this()
+    def this(config: phaserLib.PhaserNs.TypesNs.TilemapsNs.ObjectLayerConfig) = this()
   }
   
   /**
@@ -451,16 +451,10 @@ object TilemapsNs extends js.Object {
         */
       def ParseTileLayers(json: js.Object, insertNull: scala.Boolean): js.Array[_] = js.native
       /**
-        * Tilesets & Image Collections
+        * Tilesets and Image Collections
         * @param json [description]
         */
       def ParseTilesets(json: js.Object): js.Object = js.native
-      /**
-        * Returns a new object that only contains the `keys` that were found on the object provided. If no `keys` are found, an empty object is returned.
-        * @param object The object to pick the provided keys from.
-        * @param keys An array of properties to retrieve from the provided object.
-        */
-      def Pick(`object`: js.Object, keys: js.Array[_]): js.Object = js.native
     }
     
   }

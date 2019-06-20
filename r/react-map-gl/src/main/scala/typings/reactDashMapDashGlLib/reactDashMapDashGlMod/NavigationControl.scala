@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-map-gl", "NavigationControl")
 @js.native
-class NavigationControl () extends BaseControl[NavigationControlProps]
+class NavigationControl ()
+  extends BaseControl[NavigationControlProps, stdLib.HTMLDivElement]
 

@@ -12,7 +12,7 @@ trait PathConfig extends js.Object {
   /**
     * The duration of the path follow in ms. Must be `> 0`.
     */
-  var duration: scala.Double
+  var duration: js.UndefOr[scala.Double] = js.undefined
   /**
     * The start position of the path follow, between 0 and 1. Must be less than `to`.
     */
@@ -42,7 +42,7 @@ trait PathConfig extends js.Object {
 object PathConfig {
   @scala.inline
   def apply(
-    duration: scala.Double,
+    duration: scala.Int | scala.Double = null,
     from: scala.Int | scala.Double = null,
     positionOnPath: js.UndefOr[scala.Boolean] = js.undefined,
     rotateToPath: js.UndefOr[scala.Boolean] = js.undefined,
@@ -50,7 +50,8 @@ object PathConfig {
     startAt: scala.Int | scala.Double = null,
     to: scala.Int | scala.Double = null
   ): PathConfig = {
-    val __obj = js.Dynamic.literal(duration = duration)
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (!js.isUndefined(positionOnPath)) __obj.updateDynamic("positionOnPath")(positionOnPath)
     if (!js.isUndefined(rotateToPath)) __obj.updateDynamic("rotateToPath")(rotateToPath)

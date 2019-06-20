@@ -21,6 +21,14 @@ class MatterPhysics protected () extends js.Object {
     */
   var add: Factory = js.native
   /**
+    * A reference to the `Matter.Bodies` module which contains methods for creating bodies.
+    */
+  var bodies: phaserLib.MatterJSNs.Bodies = js.native
+  /**
+    * A reference to the `Matter.Body` module which contains methods for creating and manipulating body models.
+    */
+  var body: phaserLib.MatterJSNs.Body = js.native
+  /**
     * [description]
     */
   var config: js.Object = js.native

@@ -21,7 +21,7 @@ abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
     property: P,
     defaultValue: stdLib.NonNullable[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]
   ): stdLib.NonNullable[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.native
-  def provideDefaults(c: stdLib.Partial[stdLib.Readonly[T]]): T = js.native
+  def provideDefaults(c: stdLib.Partial[T]): T = js.native
   def set[P /* <: java.lang.String */](property: P, value: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any): scala.Unit = js.native
   def unset[P /* <: java.lang.String */](property: P): scala.Unit = js.native
 }

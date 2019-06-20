@@ -12,7 +12,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * If a cursorComponent is not supplied, a new Line component will be rendered.
     * @default cursorComponent={<Line/>}
     */
-  var cursorComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var cursorComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * When the cursorDimension prop is set, the cursor will be a line to inspect the given dimension (either "x" or "y").
     * When this prop is not specified, the cursor will be a 2-dimensional crosshair.
@@ -35,7 +35,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * active, text. If cursorLabelComponent is omitted, a new VictoryLabel will be created with the props described above.
     * @default cursorLabelComponent={<VictoryLabel/>}
     */
-  var cursorLabelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var cursorLabelComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * The cursorLabelOffset prop determines the pixel offset of the cursor label
     * from the cursor point. This prop should be an Object with x and y properties, or a
@@ -69,10 +69,10 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
 object VictoryCursorContainerProps {
   @scala.inline
   def apply(
-    cursorComponent: reactLib.reactMod.ReactElement[_] = null,
+    cursorComponent: reactLib.reactMod.ReactElement = null,
     cursorDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
     cursorLabel: /* point */ CursorData => scala.Unit = null,
-    cursorLabelComponent: reactLib.reactMod.ReactElement[_] = null,
+    cursorLabelComponent: reactLib.reactMod.ReactElement = null,
     cursorLabelOffset: scala.Double | CursorData = null,
     defaultCursorValue: scala.Double | CursorData = null,
     desc: java.lang.String = null,

@@ -28,9 +28,7 @@ trait YAxisProps extends EventAttributes {
   var reversed: js.UndefOr[scala.Boolean] = js.undefined
   var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
-  var tick: js.UndefOr[
-    scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement[_]
-  ] = js.undefined
+  var tick: js.UndefOr[scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement] = js.undefined
   // The count of ticks
   var tickCount: js.UndefOr[scala.Double] = js.undefined
   // The formatter function of tick
@@ -83,7 +81,7 @@ object YAxisProps {
     reversed: js.UndefOr[scala.Boolean] = js.undefined,
     scale: ScaleType | RechartsFunction = null,
     stroke: java.lang.String = null,
-    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement[_] = null,
+    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement = null,
     tickCount: scala.Int | scala.Double = null,
     tickFormatter: TickFormatterFunction = null,
     tickLine: scala.Boolean | js.Object = null,

@@ -5,33 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait ImageViewErrorCode extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - wiiuLib.wiiuLibNumbers.`202`
+  - wiiuLib.wiiuLibNumbers.`203`
+  - wiiuLib.wiiuLibNumbers.`204`
+  - wiiuLib.wiiuLibNumbers.`205`
+*/
+trait ImageViewErrorCode extends js.Object
 
-@JSGlobal("wiiu.ImageViewErrorCode")
-@js.native
-object ImageViewErrorCode extends js.Object {
-  @js.native
-  sealed trait DIMENSIONS_TOO_LARGE
-    extends wiiuLib.wiiuNs.ImageViewErrorCode
-  
-  @js.native
-  sealed trait FILE_SIZE_TOO_LARGE
-    extends wiiuLib.wiiuNs.ImageViewErrorCode
-  
-  @js.native
-  sealed trait TOO_MANY_PIXELS_PROGRESSIVE_JPEG
-    extends wiiuLib.wiiuNs.ImageViewErrorCode
-  
-  @js.native
-  sealed trait UNSUPPORTED_FORMAT
-    extends wiiuLib.wiiuNs.ImageViewErrorCode
-  
-  /* 203 */ val DIMENSIONS_TOO_LARGE: DIMENSIONS_TOO_LARGE with scala.Double = js.native
-  /* 204 */ val FILE_SIZE_TOO_LARGE: FILE_SIZE_TOO_LARGE with scala.Double = js.native
-  /* 205 */ val TOO_MANY_PIXELS_PROGRESSIVE_JPEG: TOO_MANY_PIXELS_PROGRESSIVE_JPEG with scala.Double = js.native
-  /* 202 */ val UNSUPPORTED_FORMAT: UNSUPPORTED_FORMAT with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[wiiuLib.wiiuNs.ImageViewErrorCode with scala.Double] = js.native
+object ImageViewErrorCode {
+  @scala.inline
+  def DIMENSIONS_TOO_LARGE: wiiuLib.wiiuLibNumbers.`203` = this.cast(203)
+  @scala.inline
+  def FILE_SIZE_TOO_LARGE: wiiuLib.wiiuLibNumbers.`204` = this.cast(204)
+  @scala.inline
+  def TOO_MANY_PIXELS_PROGRESSIVE_JPEG: wiiuLib.wiiuLibNumbers.`205` = this.cast(205)
+  @scala.inline
+  def UNSUPPORTED_FORMAT: wiiuLib.wiiuLibNumbers.`202` = this.cast(202)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }
 

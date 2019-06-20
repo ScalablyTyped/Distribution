@@ -9,7 +9,7 @@ trait SearchPanelProps extends js.Object {
   /**
   	 * Default clear search field button component.
   	 */
-  var clearBtn: reactLib.reactMod.ReactElement[_]
+  var clearBtn: reactLib.reactMod.ReactElement
   /**
   	 * The default search text.
   	 */
@@ -21,7 +21,7 @@ trait SearchPanelProps extends js.Object {
   /**
   	 * Default search field component.
   	 */
-  var searchField: reactLib.reactMod.ReactElement[_]
+  var searchField: reactLib.reactMod.ReactElement
   /**
   	 * A callback to trigger the clear search field event.
   	 */
@@ -35,12 +35,12 @@ trait SearchPanelProps extends js.Object {
 object SearchPanelProps {
   @scala.inline
   def apply(
-    clearBtn: reactLib.reactMod.ReactElement[_],
+    clearBtn: reactLib.reactMod.ReactElement,
     clearBtnClick: () => scala.Unit,
     defaultValue: java.lang.String,
     placeholder: java.lang.String,
     search: java.lang.String => scala.Unit,
-    searchField: reactLib.reactMod.ReactElement[_]
+    searchField: reactLib.reactMod.ReactElement
   ): SearchPanelProps = {
     val __obj = js.Dynamic.literal(clearBtn = clearBtn, clearBtnClick = js.Any.fromFunction0(clearBtnClick), defaultValue = defaultValue, placeholder = placeholder, search = js.Any.fromFunction1(search), searchField = searchField)
   

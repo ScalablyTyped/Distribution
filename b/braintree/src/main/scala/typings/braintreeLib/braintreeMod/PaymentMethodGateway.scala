@@ -9,7 +9,7 @@ trait PaymentMethodGateway extends js.Object {
   def create(request: PaymentMethodCreateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
   def delete(token: java.lang.String): js.Promise[scala.Unit]
   def find(token: java.lang.String): js.Promise[PaymentMethod]
-  def grant(sharedPaymentMethodToken: java.lang.String, options: braintreeLib.Anon_AllowVaulting): js.Promise[stdLib.Readonly[java.lang.String]]
+  def grant(sharedPaymentMethodToken: java.lang.String, options: braintreeLib.Anon_AllowVaulting): js.Promise[java.lang.String]
   def revoke(sharedPaymentMethodToken: java.lang.String): js.Promise[scala.Unit]
   def update(token: java.lang.String, updates: PaymentMethodUpdateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
 }
@@ -20,7 +20,7 @@ object PaymentMethodGateway {
     create: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]],
     delete: java.lang.String => js.Promise[scala.Unit],
     find: java.lang.String => js.Promise[PaymentMethod],
-    grant: (java.lang.String, braintreeLib.Anon_AllowVaulting) => js.Promise[stdLib.Readonly[java.lang.String]],
+    grant: (java.lang.String, braintreeLib.Anon_AllowVaulting) => js.Promise[java.lang.String],
     revoke: java.lang.String => js.Promise[scala.Unit],
     update: (java.lang.String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]
   ): PaymentMethodGateway = {

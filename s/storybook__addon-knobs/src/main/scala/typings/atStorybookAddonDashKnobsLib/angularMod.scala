@@ -88,11 +88,11 @@ object angularMod extends js.Object {
   def withKnobs(
     storyFn: atStorybookReactLib.atStorybookReactMod.RenderFunction,
     context: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.StoryContext
-  ): reactLib.reactMod.ReactElement[atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.WrapStoryProps] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Debounce): js.Function2[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     /* context */ atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.StoryContext, 
-    reactLib.reactMod.ReactElement[atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.WrapStoryProps]
+    reactLib.reactMod.ReactElement
   ] = js.native
 }
 

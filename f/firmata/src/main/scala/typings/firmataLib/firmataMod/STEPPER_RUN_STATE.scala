@@ -14,3 +14,16 @@ import scala.scalajs.js.annotation._
 */
 trait STEPPER_RUN_STATE extends js.Object
 
+object STEPPER_RUN_STATE {
+  @scala.inline
+  def ACCEL: firmataLib.firmataLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def DECEL: firmataLib.firmataLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def RUN: firmataLib.firmataLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def STOP: firmataLib.firmataLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

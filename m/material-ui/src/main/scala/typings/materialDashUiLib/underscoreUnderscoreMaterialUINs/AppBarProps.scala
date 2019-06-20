@@ -9,8 +9,8 @@ trait AppBarProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var iconClassNameLeft: js.UndefOr[java.lang.String] = js.undefined
   var iconClassNameRight: js.UndefOr[java.lang.String] = js.undefined
-  var iconElementLeft: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
-  var iconElementRight: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var iconElementLeft: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
+  var iconElementRight: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var iconStyleLeft: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var iconStyleRight: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onLeftIconButtonClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
@@ -29,8 +29,8 @@ object AppBarProps {
     className: java.lang.String = null,
     iconClassNameLeft: java.lang.String = null,
     iconClassNameRight: java.lang.String = null,
-    iconElementLeft: reactLib.reactMod.ReactElement[_] = null,
-    iconElementRight: reactLib.reactMod.ReactElement[_] = null,
+    iconElementLeft: reactLib.reactMod.ReactElement = null,
+    iconElementRight: reactLib.reactMod.ReactElement = null,
     iconStyleLeft: reactLib.reactMod.CSSProperties = null,
     iconStyleRight: reactLib.reactMod.CSSProperties = null,
     onLeftIconButtonClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,

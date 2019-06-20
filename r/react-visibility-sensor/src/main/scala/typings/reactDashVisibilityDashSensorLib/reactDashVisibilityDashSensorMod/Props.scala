@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactElement[_] | ChildFunction] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactElement | ChildFunction] = js.undefined
   var containment: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var delayedCall: js.UndefOr[scala.Boolean] = js.undefined
   var intervalCheck: js.UndefOr[scala.Boolean] = js.undefined
@@ -28,7 +28,7 @@ object Props {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactElement[_] | ChildFunction = null,
+    children: reactLib.reactMod.ReactElement | ChildFunction = null,
     containment: stdLib.HTMLElement = null,
     delayedCall: js.UndefOr[scala.Boolean] = js.undefined,
     intervalCheck: js.UndefOr[scala.Boolean] = js.undefined,

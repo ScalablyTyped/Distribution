@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class UnicodeCharacterRange protected ()
   extends grammarkdownLib.distNodesMod.UnicodeCharacterRange {
-  def this(left: grammarkdownLib.distNodesMod.UnicodeCharacterLiteral, throughKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], right: grammarkdownLib.distNodesMod.UnicodeCharacterLiteral) = this()
+  def this(left: grammarkdownLib.distNodesMod.UnicodeCharacterLiteral, throughKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.ThroughKeyword], right: grammarkdownLib.distNodesMod.UnicodeCharacterLiteral) = this()
 }
 

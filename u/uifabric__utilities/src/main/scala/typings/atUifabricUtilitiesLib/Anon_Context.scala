@@ -12,7 +12,7 @@ trait Anon_Context extends js.Object {
     */
   var contextTransform: js.UndefOr[
     js.Function1[
-      /* context */ stdLib.Readonly[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext], 
+      /* context */ atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext, 
       atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext
     ]
   ] = js.undefined
@@ -21,7 +21,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(
-    contextTransform: /* context */ stdLib.Readonly[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext] => atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = null
+    contextTransform: /* context */ atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext => atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
     if (contextTransform != null) __obj.updateDynamic("contextTransform")(js.Any.fromFunction1(contextTransform))

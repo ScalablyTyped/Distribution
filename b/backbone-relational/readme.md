@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone-relational
 
-Typings are for version 0.10.0
+Typings are for version 0.10
 
 ## Library description:
 Get and set relations (one-to-one, one-to-many, many-to-one) for Backbone models
@@ -35,12 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Backbone-relational 0.10.0
+// Type definitions for Backbone-relational 0.10
 // Project: http://backbonerelational.org/
 // Definitions by: Eirik Hoem <https://github.com/eirikhm>
 //                 Julian Gonggrijp <https://github.com/jgonggrijp>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

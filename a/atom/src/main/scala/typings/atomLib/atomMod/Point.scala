@@ -27,7 +27,7 @@ class Point () extends js.Object {
   def copy(): Point = js.native
   // Operations
   /** Makes this point immutable and returns itself. */
-  def freeze(): stdLib.Readonly[Point] = js.native
+  def freeze(): Point = js.native
   /**
     *  Returns a boolean indicating whether this point has the same row and
     *  column as the given Point.

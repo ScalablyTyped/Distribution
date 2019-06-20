@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Locales ()
   extends reactLib.reactMod.Component[reactDashFnsLib.distTypesMod.SharedRenderProps[LocalesProps], LocalesProps, js.Any] {
-  @JSName("state")
-  var state_Locales: LocalesProps = js.native
   @JSName("componentDidMount")
   def componentDidMount_MLocales(): scala.Unit = js.native
   @JSName("componentWillUnmount")

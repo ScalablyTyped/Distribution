@@ -148,10 +148,6 @@ trait Configuration
   /** @private */
   val msi: js.UndefOr[appDashBuilderDashLibLib.outOptionsMsiOptionsMod.MsiOptions | scala.Null] = js.undefined
   /**
-    * The version of muon you are packaging for.
-    */
-  val muonVersion: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  /**
     * Whether to execute `node-gyp rebuild` before starting to package the app.
     *
     * Don't [use](https://github.com/electron-userland/electron-builder/issues/683#issuecomment-241214075) [npm](http://electron.atom.io/docs/tutorial/using-native-node-modules/#using-npm) (neither `.npmrc`) for configuring electron headers. Use `electron-builder node-gyp-rebuild` instead.
@@ -309,7 +305,6 @@ object Configuration {
     mac: appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacConfiguration = null,
     mas: appDashBuilderDashLibLib.outOptionsMacOptionsMod.MasConfiguration = null,
     msi: appDashBuilderDashLibLib.outOptionsMsiOptionsMod.MsiOptions = null,
-    muonVersion: java.lang.String = null,
     nodeGypRebuild: js.UndefOr[scala.Boolean] = js.undefined,
     nodeVersion: java.lang.String = null,
     npmArgs: js.Array[java.lang.String] | java.lang.String = null,
@@ -382,7 +377,6 @@ object Configuration {
     if (mac != null) __obj.updateDynamic("mac")(mac)
     if (mas != null) __obj.updateDynamic("mas")(mas)
     if (msi != null) __obj.updateDynamic("msi")(msi)
-    if (muonVersion != null) __obj.updateDynamic("muonVersion")(muonVersion)
     if (!js.isUndefined(nodeGypRebuild)) __obj.updateDynamic("nodeGypRebuild")(nodeGypRebuild)
     if (nodeVersion != null) __obj.updateDynamic("nodeVersion")(nodeVersion)
     if (npmArgs != null) __obj.updateDynamic("npmArgs")(npmArgs.asInstanceOf[js.Any])

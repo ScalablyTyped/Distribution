@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def FORWARD_ONLY: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1003` = this.cast(1003)
+  @scala.inline
+  def SCROLL_INSENSITIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1004` = this.cast(1004)
+  @scala.inline
+  def SCROLL_SENSITIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1005` = this.cast(1005)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

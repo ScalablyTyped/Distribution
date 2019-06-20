@@ -64,7 +64,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Header text/element for the column.
   	 * Comes from TableHeader.headerText or TableHeader.children.
   	 */
-  var name: java.lang.String | reactLib.reactMod.ReactElement[_]
+  var name: java.lang.String | reactLib.reactMod.ReactElement
   /**
   	 * Custom element to use for the Insert field element.
   	 * Comes from TableHeader.customInsertEditor.
@@ -75,13 +75,13 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
     editorClass: java.lang.String,
     ignoreEditable: scala.Boolean,
     defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any
-  ): reactLib.reactMod.ReactElement[_] | scala.Boolean
+  ): reactLib.reactMod.ReactElement | scala.Boolean
 }
 
 object InsertModalColumnDescription {
   @scala.inline
   def apply[TRow /* <: js.Object */](
-    customInsertEditor: (InsertModalColumnDescription[TRow], EditableAttrs, java.lang.String, scala.Boolean, /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any) => reactLib.reactMod.ReactElement[_] | scala.Boolean,
+    customInsertEditor: (InsertModalColumnDescription[TRow], EditableAttrs, java.lang.String, scala.Boolean, /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any) => reactLib.reactMod.ReactElement | scala.Boolean,
     editable: scala.Boolean | (Editable[TRow, java.lang.String]) | (js.Function4[
       /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
       /* row */ TRow, 
@@ -92,7 +92,7 @@ object InsertModalColumnDescription {
     field: java.lang.String,
     hiddenOnInsert: scala.Boolean,
     keyValidator: scala.Boolean,
-    name: java.lang.String | reactLib.reactMod.ReactElement[_],
+    name: java.lang.String | reactLib.reactMod.ReactElement,
     autoValue: js.UndefOr[scala.Boolean] = js.undefined,
     format: scala.Boolean | (js.Function1[
       /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 

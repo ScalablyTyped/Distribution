@@ -9,7 +9,7 @@ trait AvatarProps extends js.Object {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
@@ -22,7 +22,7 @@ object AvatarProps {
     backgroundColor: java.lang.String = null,
     className: java.lang.String = null,
     color: java.lang.String = null,
-    icon: reactLib.reactMod.ReactElement[_] = null,
+    icon: reactLib.reactMod.ReactElement = null,
     onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     size: scala.Int | scala.Double = null,
     src: java.lang.String = null,

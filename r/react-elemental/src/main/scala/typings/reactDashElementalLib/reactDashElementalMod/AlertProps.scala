@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AlertProps extends js.Object {
   val dismissible: js.UndefOr[scala.Boolean] = js.undefined
-  val message: java.lang.String | reactLib.reactMod.ReactElement[_]
+  val message: java.lang.String | reactLib.reactMod.ReactElement
   val onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   val size: js.UndefOr[AlertSize] = js.undefined
   val style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -18,7 +18,7 @@ trait AlertProps extends js.Object {
 object AlertProps {
   @scala.inline
   def apply(
-    message: java.lang.String | reactLib.reactMod.ReactElement[_],
+    message: java.lang.String | reactLib.reactMod.ReactElement,
     title: java.lang.String,
     dismissible: js.UndefOr[scala.Boolean] = js.undefined,
     onDismiss: () => scala.Unit = null,

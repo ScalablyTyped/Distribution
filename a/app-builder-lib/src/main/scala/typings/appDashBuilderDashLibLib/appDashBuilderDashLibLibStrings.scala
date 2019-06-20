@@ -11,13 +11,7 @@ object appDashBuilderDashLibLibStrings {
     extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait Brave extends js.Object
-  
-  @js.native
   sealed trait Editor extends js.Object
-  
-  @js.native
-  sealed trait Electron extends js.Object
   
   @js.native
   sealed trait None extends js.Object
@@ -72,9 +66,6 @@ object appDashBuilderDashLibLibStrings {
     extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
-  sealed trait brave extends js.Object
-  
-  @js.native
   sealed trait bzip2 extends js.Object
   
   @js.native
@@ -114,9 +105,6 @@ object appDashBuilderDashLibLibStrings {
   
   @js.native
   sealed trait doNotAsk extends js.Object
-  
-  @js.native
-  sealed trait electron extends js.Object
   
   @js.native
   sealed trait file extends js.Object
@@ -265,11 +253,7 @@ object appDashBuilderDashLibLibStrings {
   @scala.inline
   def `7z`: `7z` = "7z".asInstanceOf[`7z`]
   @scala.inline
-  def Brave: Brave = "Brave".asInstanceOf[Brave]
-  @scala.inline
   def Editor: Editor = "Editor".asInstanceOf[Editor]
-  @scala.inline
-  def Electron: Electron = "Electron".asInstanceOf[Electron]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
@@ -303,8 +287,6 @@ object appDashBuilderDashLibLibStrings {
   @scala.inline
   def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   @scala.inline
-  def brave: brave = "brave".asInstanceOf[brave]
-  @scala.inline
   def bzip2: bzip2 = "bzip2".asInstanceOf[bzip2]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -328,8 +310,6 @@ object appDashBuilderDashLibLibStrings {
   def dmg: dmg = "dmg".asInstanceOf[dmg]
   @scala.inline
   def doNotAsk: doNotAsk = "doNotAsk".asInstanceOf[doNotAsk]
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline

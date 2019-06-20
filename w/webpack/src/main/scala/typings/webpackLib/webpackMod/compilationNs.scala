@@ -289,6 +289,19 @@ object compilationNs extends js.Object {
     var render: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
   }
   
+  trait MultiCompilerHooks extends js.Object {
+    var done: tapableLib.tapableMod.SyncHook[MultiStats, _, _]
+    var invalid: tapableLib.tapableMod.SyncHook[java.lang.String, stdLib.Date, _]
+    var run: tapableLib.tapableMod.AsyncSeriesHook[webpackLib.webpackMod.Compiler, _, _]
+    var watchClose: tapableLib.tapableMod.SyncHook[_, _, _]
+    var watchRun: tapableLib.tapableMod.AsyncSeriesHook[webpackLib.webpackMod.Compiler, _, _]
+  }
+  
+  trait MultiStats extends js.Object {
+    var hash: java.lang.String
+    var stats: js.Array[webpackLib.webpackMod.Stats]
+  }
+  
   @js.native
   class NormalModuleFactory ()
     extends tapableLib.tapableMod.Tapable {

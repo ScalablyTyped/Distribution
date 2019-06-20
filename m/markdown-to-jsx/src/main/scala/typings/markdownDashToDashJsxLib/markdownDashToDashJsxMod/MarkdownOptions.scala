@@ -12,7 +12,7 @@ trait MarkdownOptions extends js.Object {
       /* type */ reactLib.reactMod.SFC[js.Object] | (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | java.lang.String, 
       /* props */ js.UndefOr[reactLib.reactMod.Attributes with (js.Object | scala.Null)], 
       /* repeated */ reactLib.reactMod.ReactNode, 
-      reactLib.reactMod.ReactElement[js.Object]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   /** Force all input strings to use block layout. */
@@ -28,7 +28,7 @@ trait MarkdownOptions extends js.Object {
 object MarkdownOptions {
   @scala.inline
   def apply(
-    createElement: (/* type */ reactLib.reactMod.SFC[js.Object] | (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | java.lang.String, /* props */ js.UndefOr[reactLib.reactMod.Attributes with (js.Object | scala.Null)], /* repeated */ reactLib.reactMod.ReactNode) => reactLib.reactMod.ReactElement[js.Object] = null,
+    createElement: (/* type */ reactLib.reactMod.SFC[js.Object] | (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | java.lang.String, /* props */ js.UndefOr[reactLib.reactMod.Attributes with (js.Object | scala.Null)], /* repeated */ reactLib.reactMod.ReactNode) => reactLib.reactMod.ReactElement = null,
     forceBlock: js.UndefOr[scala.Boolean] = js.undefined,
     forceInline: js.UndefOr[scala.Boolean] = js.undefined,
     overrides: markdownDashToDashJsxLib.Anon_A = null,

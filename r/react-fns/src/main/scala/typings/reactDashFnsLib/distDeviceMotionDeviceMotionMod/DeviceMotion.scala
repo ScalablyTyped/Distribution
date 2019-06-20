@@ -13,8 +13,6 @@ class DeviceMotion ()
       DeviceMotionProps, 
       js.Any
     ] {
-  @JSName("state")
-  var state_DeviceMotion: DeviceMotionProps = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDeviceMotion(): scala.Unit = js.native
   @JSName("componentWillUnmount")

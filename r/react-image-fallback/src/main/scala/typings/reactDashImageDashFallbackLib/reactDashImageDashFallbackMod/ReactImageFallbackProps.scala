@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactImageFallbackProps extends js.Object {
-  var fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Array[reactLib.reactMod.ReactElement[_] | java.lang.String])
-  var initialImage: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var fallbackImage: java.lang.String | reactLib.reactMod.ReactElement | (js.Array[reactLib.reactMod.ReactElement | java.lang.String])
+  var initialImage: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var initialTimeout: js.UndefOr[scala.Double] = js.undefined
   var onError: js.UndefOr[
     js.Function1[
@@ -27,9 +27,9 @@ trait ReactImageFallbackProps extends js.Object {
 object ReactImageFallbackProps {
   @scala.inline
   def apply(
-    fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Array[reactLib.reactMod.ReactElement[_] | java.lang.String]),
+    fallbackImage: java.lang.String | reactLib.reactMod.ReactElement | (js.Array[reactLib.reactMod.ReactElement | java.lang.String]),
     src: java.lang.String,
-    initialImage: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    initialImage: java.lang.String | reactLib.reactMod.ReactElement = null,
     initialTimeout: scala.Int | scala.Double = null,
     onError: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null,
     onLoad: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null

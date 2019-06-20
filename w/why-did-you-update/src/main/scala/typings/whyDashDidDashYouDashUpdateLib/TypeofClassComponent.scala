@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofClassComponent
   extends org.scalablytyped.runtime.Instantiable1[
-      /* props */ stdLib.Readonly[/* import warning: RewrittenClass.unapply cls $anonfun was tparam P */ js.Any], 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam P */ /* props */ js.Any, 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ] {
   // tslint won't let me format the sample code in a way that vscode likes it :(

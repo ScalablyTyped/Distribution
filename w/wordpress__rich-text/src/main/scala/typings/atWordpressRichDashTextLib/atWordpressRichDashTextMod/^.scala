@@ -28,7 +28,7 @@ object ^ extends js.Object {
   def join(values: js.Array[Value]): Value = js.native
   def join(values: js.Array[Value], separator: Value): Value = js.native
   def join(values: js.Array[Value], separator: java.lang.String): Value = js.native
-  def registerFormatType(name: java.lang.String, config: FormatConfiguration): js.UndefOr[FormatConfiguration] = js.native
+  def registerFormatType(name: java.lang.String, config: FormatConfiguration): js.UndefOr[NamedFormatConfiguration] = js.native
   def remove(value: Value): Value = js.native
   def remove(value: Value, startIndex: scala.Double): Value = js.native
   def remove(value: Value, startIndex: scala.Double, endIndex: scala.Double): Value = js.native
@@ -57,6 +57,6 @@ object ^ extends js.Object {
   def split(value: Value, separator: scala.Double, limit: scala.Double): js.Array[Value] = js.native
   def toHTMLString(args: atWordpressRichDashTextLib.Anon_AAbbr): java.lang.String = js.native
   def toggleFormat(value: Value, format: Format): Value = js.native
-  def unregisterFormatType(name: java.lang.String): js.UndefOr[FormatConfiguration] = js.native
+  def unregisterFormatType(name: java.lang.String): js.UndefOr[NamedFormatConfiguration] = js.native
 }
 

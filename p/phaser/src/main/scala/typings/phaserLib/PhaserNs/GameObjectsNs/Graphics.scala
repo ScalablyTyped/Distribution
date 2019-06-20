@@ -454,10 +454,16 @@ class Graphics protected ()
     */
   def restore(): Graphics = js.native
   /**
-    * Rotate the graphics.
+    * Inserts a rotation command into this Graphics objects command buffer.
+    * 
+    * All objects drawn _after_ calling this method will be rotated
+    * by the given amount.
+    * 
+    * This does not change the rotation of the Graphics object itself,
+    * only of the objects drawn by it after calling this method.
     * @param radians The rotation angle, in radians.
     */
-  def rotate(radians: scala.Double): Graphics = js.native
+  def rotateCanvas(radians: scala.Double): Graphics = js.native
   /**
     * Saves the state of the Graphics by pushing the current state onto a stack.
     * 
@@ -465,11 +471,17 @@ class Graphics protected ()
     */
   def save(): Graphics = js.native
   /**
-    * Scale the graphics.
+    * Inserts a scale command into this Graphics objects command buffer.
+    * 
+    * All objects drawn _after_ calling this method will be scaled
+    * by the given amount.
+    * 
+    * This does not change the scale of the Graphics object itself,
+    * only of the objects drawn by it after calling this method.
     * @param x The horizontal scale to apply.
     * @param y The vertical scale to apply.
     */
-  def scale(x: scala.Double, y: scala.Double): Graphics = js.native
+  def scaleCanvas(x: scala.Double, y: scala.Double): Graphics = js.native
   /**
     * Set the default style settings for this Graphics object.
     * @param options The styles to set as defaults.
@@ -689,11 +701,17 @@ class Graphics protected ()
     */
   def strokeTriangleShape(triangle: phaserLib.PhaserNs.GeomNs.Triangle): Graphics = js.native
   /**
-    * Translate the graphics.
+    * Inserts a translation command into this Graphics objects command buffer.
+    * 
+    * All objects drawn _after_ calling this method will be translated
+    * by the given amount.
+    * 
+    * This does not change the position of the Graphics object itself,
+    * only of the objects drawn by it after calling this method.
     * @param x The horizontal translation to apply.
     * @param y The vertical translation to apply.
     */
-  def translate(x: scala.Double, y: scala.Double): Graphics = js.native
+  def translateCanvas(x: scala.Double, y: scala.Double): Graphics = js.native
 }
 
 /* static members */

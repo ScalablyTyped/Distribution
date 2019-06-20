@@ -13,8 +13,6 @@ class OverflowList[T] ()
   var previousWidths: js.Any = js.native
   var resize: js.Any = js.native
   var spacer: js.Any = js.native
-  @JSName("state")
-  var state_OverflowList: IOverflowListState[T] = js.native
   @JSName("componentDidMount")
   def componentDidMount_MOverflowList(): scala.Unit = js.native
   @JSName("componentDidUpdate")

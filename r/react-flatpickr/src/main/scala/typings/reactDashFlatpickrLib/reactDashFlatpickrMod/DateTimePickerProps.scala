@@ -18,6 +18,16 @@ import scala.scalajs.js.annotation._
   var onValueUpdate: js.UndefOr[flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Hook] = js.undefined
   var onYearChange: js.UndefOr[flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Hook] = js.undefined
   var options: js.UndefOr[flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Options] = js.undefined
+  var render: js.UndefOr[
+    js.Function2[
+      /* props */ Omit[
+        DateTimePickerProps, 
+        reactDashFlatpickrLib.reactDashFlatpickrLibStrings.options | reactDashFlatpickrLib.reactDashFlatpickrLibStrings.render
+      ], 
+      /* ref */ js.Function1[/* node */ stdLib.HTMLInputElement, scala.Unit], 
+      reactLib.reactMod.ReactElement
+    ]
+  ] = js.undefined
   var value: js.UndefOr[
     java.lang.String | stdLib.Date | scala.Double | (js.Array[java.lang.String | stdLib.Date | scala.Double])
   ] = js.undefined
@@ -37,6 +47,10 @@ object DateTimePickerProps {
     onValueUpdate: flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Hook = null,
     onYearChange: flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Hook = null,
     options: flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Options = null,
+    render: (/* props */ Omit[
+      DateTimePickerProps, 
+      reactDashFlatpickrLib.reactDashFlatpickrLibStrings.options | reactDashFlatpickrLib.reactDashFlatpickrLibStrings.render
+    ], /* ref */ js.Function1[/* node */ stdLib.HTMLInputElement, scala.Unit]) => reactLib.reactMod.ReactElement = null,
     value: java.lang.String | stdLib.Date | scala.Double | (js.Array[java.lang.String | stdLib.Date | scala.Double]) = null
   ): DateTimePickerProps = {
     val __obj = js.Dynamic.literal()
@@ -51,6 +65,7 @@ object DateTimePickerProps {
     if (onValueUpdate != null) __obj.updateDynamic("onValueUpdate")(onValueUpdate)
     if (onYearChange != null) __obj.updateDynamic("onYearChange")(onYearChange)
     if (options != null) __obj.updateDynamic("options")(options)
+    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerProps]
   }

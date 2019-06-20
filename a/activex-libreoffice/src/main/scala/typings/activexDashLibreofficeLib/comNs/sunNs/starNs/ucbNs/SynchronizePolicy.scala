@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
 */
 trait SynchronizePolicy extends js.Object
 
+object SynchronizePolicy {
+  /** Client is master. */
+  @scala.inline
+  def CLIENT_IS_MASTER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** None is master. */
+  @scala.inline
+  def NONE_IS_MASTER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** Server is master. */
+  @scala.inline
+  def SERVER_IS_MASTER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

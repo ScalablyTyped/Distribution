@@ -1,7 +1,7 @@
 
 # Scala.js typings for ui-box
 
-Typings are for version 1.4
+Typings are for version 2.1.0
 
 ## Library description:
 Blazing Fast React UI Primitive
@@ -24,22 +24,11 @@ Blazing Fast React UI Primitive
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ui-box 1.4
-// Project: https://github.com/segmentio/ui-box
-// Definitions by: Netto Farah <https://github.com/nettofarah>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

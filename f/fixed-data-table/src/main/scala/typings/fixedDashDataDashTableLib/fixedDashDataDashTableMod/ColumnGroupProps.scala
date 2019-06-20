@@ -39,13 +39,13 @@ trait ColumnGroupProps
     * If you pass in a function, you will receive the same props
     * object as the first argument.
     */
-  var header: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]])
+  var header: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement])
 }
 
 object ColumnGroupProps {
   @scala.inline
   def apply(
-    header: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]]),
+    header: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement]),
     align: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,

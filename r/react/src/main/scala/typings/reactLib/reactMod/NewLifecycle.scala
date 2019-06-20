@@ -13,12 +13,7 @@ trait NewLifecycle[P, S, SS] extends js.Object {
     * The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.
     */
   var componentDidUpdate: js.UndefOr[
-    js.Function3[
-      /* prevProps */ stdLib.Readonly[P], 
-      /* prevState */ stdLib.Readonly[S], 
-      /* snapshot */ js.UndefOr[SS], 
-      scala.Unit
-    ]
+    js.Function3[/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS], scala.Unit]
   ] = js.undefined
   /**
     * Runs before React applies the result of `render` to the document, and
@@ -28,20 +23,14 @@ trait NewLifecycle[P, S, SS] extends js.Object {
     * Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
     * lifecycle events from running.
     */
-  var getSnapshotBeforeUpdate: js.UndefOr[
-    js.Function2[
-      /* prevProps */ stdLib.Readonly[P], 
-      /* prevState */ stdLib.Readonly[S], 
-      SS | scala.Null
-    ]
-  ] = js.undefined
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ P, /* prevState */ S, SS | scala.Null]] = js.undefined
 }
 
 object NewLifecycle {
   @scala.inline
   def apply[P, S, SS](
-    componentDidUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S], /* snapshot */ js.UndefOr[SS]) => scala.Unit = null,
-    getSnapshotBeforeUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S]) => SS | scala.Null = null
+    componentDidUpdate: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => scala.Unit = null,
+    getSnapshotBeforeUpdate: (/* prevProps */ P, /* prevState */ S) => SS | scala.Null = null
   ): NewLifecycle[P, S, SS] = {
     val __obj = js.Dynamic.literal()
     if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction3(componentDidUpdate))

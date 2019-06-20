@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait BorderType extends js.Object
 
+object BorderType {
+  @scala.inline
+  def INNER_BORDER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def OUTER_BORDER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def TOTAL_BORDER: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-map-gl", "Popup")
 @js.native
-class Popup () extends BaseControl[PopupProps]
+class Popup ()
+  extends BaseControl[PopupProps, stdLib.HTMLDivElement]
 

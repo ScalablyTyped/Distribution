@@ -12,6 +12,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetBounds extends js.Object {
   /**
+    * Gets the bottom-center coordinate of this Game Object, regardless of origin.
+    * The returned point is calculated in local space and does not factor in any parent containers
+    * @param output An object to store the values in. If not provided a new Vector2 will be created.
+    * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
+    */
+  def getBottomCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](): O = js.native
+  def getBottomCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O): O = js.native
+  def getBottomCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O, includeParent: scala.Boolean): O = js.native
+  /**
     * Gets the bottom-left corner coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
     * @param output An object to store the values in. If not provided a new Vector2 will be created.
@@ -43,6 +52,33 @@ trait GetBounds extends js.Object {
     */
   def getCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](): O = js.native
   def getCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O): O = js.native
+  /**
+    * Gets the left-center coordinate of this Game Object, regardless of origin.
+    * The returned point is calculated in local space and does not factor in any parent containers
+    * @param output An object to store the values in. If not provided a new Vector2 will be created.
+    * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
+    */
+  def getLeftCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](): O = js.native
+  def getLeftCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O): O = js.native
+  def getLeftCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O, includeParent: scala.Boolean): O = js.native
+  /**
+    * Gets the right-center coordinate of this Game Object, regardless of origin.
+    * The returned point is calculated in local space and does not factor in any parent containers
+    * @param output An object to store the values in. If not provided a new Vector2 will be created.
+    * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
+    */
+  def getRightCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](): O = js.native
+  def getRightCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O): O = js.native
+  def getRightCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O, includeParent: scala.Boolean): O = js.native
+  /**
+    * Gets the top-center coordinate of this Game Object, regardless of origin.
+    * The returned point is calculated in local space and does not factor in any parent containers
+    * @param output An object to store the values in. If not provided a new Vector2 will be created.
+    * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
+    */
+  def getTopCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](): O = js.native
+  def getTopCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O): O = js.native
+  def getTopCenter[O /* <: phaserLib.PhaserNs.MathNs.Vector2 */](output: O, includeParent: scala.Boolean): O = js.native
   /**
     * Gets the top-left corner coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers

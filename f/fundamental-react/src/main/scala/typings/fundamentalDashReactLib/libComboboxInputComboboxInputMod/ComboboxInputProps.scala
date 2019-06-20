@@ -12,7 +12,7 @@ trait ComboboxInputProps
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var inputProps: js.UndefOr[js.Object] = js.undefined
   /* An object containing a `Menu` component. */
-  var menu: reactLib.reactMod.ReactElement[fundamentalDashReactLib.libMenuMenuMod.MenuProps]
+  var menu: reactLib.reactMod.ReactElement
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var popoverProps: js.UndefOr[js.Object] = js.undefined
 }
@@ -20,7 +20,7 @@ trait ComboboxInputProps
 object ComboboxInputProps {
   @scala.inline
   def apply(
-    menu: reactLib.reactMod.ReactElement[fundamentalDashReactLib.libMenuMenuMod.MenuProps],
+    menu: reactLib.reactMod.ReactElement,
     StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     buttonProps: js.Object = null,
     className: java.lang.String = null,

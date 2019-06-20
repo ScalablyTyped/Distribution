@@ -16,3 +16,21 @@ import scala.scalajs.js.annotation._
 */
 trait FinishReason extends js.Object
 
+object FinishReason {
+  /**
+    * script in the engine was cancelled.
+    *
+    * script execution was cancelled.
+    */
+  @scala.inline
+  def Cancel: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** error occurred during script execution or compiling. */
+  @scala.inline
+  def Error: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** script in the engine terminated normally. */
+  @scala.inline
+  def OK: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

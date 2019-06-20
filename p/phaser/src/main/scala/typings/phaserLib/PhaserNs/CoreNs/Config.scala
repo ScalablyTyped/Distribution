@@ -85,6 +85,10 @@ class Config () extends js.Object {
     */
   val defaultPlugins: js.Any = js.native
   /**
+    * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
+    */
+  val desynchronized: scala.Boolean = js.native
+  /**
     * Set to `true` to disable the right-click context menu.
     */
   val disableContextMenu: scala.Boolean = js.native
@@ -172,10 +176,6 @@ class Config () extends js.Object {
     * The DOM Target to listen for mouse events on. Defaults to the game canvas if not specified.
     */
   val inputMouseEventTarget: js.Any = js.native
-  /**
-    * Should Phaser use a queued input system for native DOM Events or not?
-    */
-  val inputQueue: scala.Boolean = js.native
   /**
     * The smoothing factor to apply during Pointer movement. See {@link Phaser.Input.Pointer#smoothFactor}.
     */

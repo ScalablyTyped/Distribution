@@ -12,13 +12,13 @@ trait Anon_Attr extends js.Object {
     editorClass: java.lang.String,
     ignoreEditable: scala.Boolean,
     defaultValue: js.Any
-  ): reactLib.reactMod.ReactElement[_] | scala.Boolean
+  ): reactLib.reactMod.ReactElement | scala.Boolean
 }
 
 object Anon_Attr {
   @scala.inline
   def apply(
-    getElement: (reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalColumnDescription[_], reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditableAttrs, java.lang.String, scala.Boolean, js.Any) => reactLib.reactMod.ReactElement[_] | scala.Boolean
+    getElement: (reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalColumnDescription[_], reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditableAttrs, java.lang.String, scala.Boolean, js.Any) => reactLib.reactMod.ReactElement | scala.Boolean
   ): Anon_Attr = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction5(getElement))
   

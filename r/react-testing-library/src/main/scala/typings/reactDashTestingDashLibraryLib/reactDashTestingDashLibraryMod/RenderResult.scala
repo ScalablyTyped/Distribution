@@ -13,7 +13,7 @@ trait RenderResult[Q /* <: Queries */] extends js.Object {
   def debug(): scala.Unit = js.native
   def debug(baseElement: stdLib.DocumentFragment): scala.Unit = js.native
   def debug(baseElement: stdLib.HTMLElement): scala.Unit = js.native
-  def rerender(ui: reactLib.reactMod.ReactElement[_]): scala.Unit = js.native
+  def rerender(ui: reactLib.reactMod.ReactElement): scala.Unit = js.native
   def unmount(): scala.Boolean = js.native
 }
 

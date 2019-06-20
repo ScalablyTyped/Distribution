@@ -9,7 +9,7 @@ trait MosaicWindowActions extends js.Object {
   /**
     * Enables connecting a different drag source besides the react-mosaic toolbar
     */
-  def connectDragSource(connectedElements: reactLib.reactMod.ReactElement[_]): reactLib.reactMod.ReactElement[_]
+  def connectDragSource(connectedElements: reactLib.reactMod.ReactElement): reactLib.reactMod.ReactElement
   /**
     * Returns the path to this window
     */
@@ -35,7 +35,7 @@ trait MosaicWindowActions extends js.Object {
 object MosaicWindowActions {
   @scala.inline
   def apply(
-    connectDragSource: reactLib.reactMod.ReactElement[_] => reactLib.reactMod.ReactElement[_],
+    connectDragSource: reactLib.reactMod.ReactElement => reactLib.reactMod.ReactElement,
     getPath: () => reactDashMosaicDashComponentLib.libTypesMod.MosaicPath,
     replaceWithNew: /* repeated */ js.Any => js.Promise[scala.Unit],
     setAdditionalControlsOpen: scala.Boolean => scala.Unit,

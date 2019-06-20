@@ -16,7 +16,7 @@ trait Tree
   ): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderSwitcherIcon(
     prefixCls: java.lang.String,
-    switcherIcon: reactLib.reactMod.ReactElement[_],
+    switcherIcon: reactLib.reactMod.ReactElement,
     hasIsLeafExpandedLoading: AntTreeNodeProps
   ): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderTree(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native

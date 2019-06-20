@@ -19,10 +19,3 @@ trait Level
   ): scala.Unit = js.native
 }
 
-@JSImport("level-js", "Level")
-@js.native
-class LevelCls protected () extends Level {
-  def this(location: java.lang.String) = this()
-  def this(location: java.lang.String, options: LevelOptions) = this()
-}
-

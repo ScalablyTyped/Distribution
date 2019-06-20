@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait EmitterOpCustomUpdateConfig extends js.Object {
+trait EmitterOpCustomUpdateConfig extends _EmitterOpOnUpdateType {
   /**
     * A callback that is invoked each time the emitter emits a particle.
     */

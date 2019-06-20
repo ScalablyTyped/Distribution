@@ -117,6 +117,7 @@ object ^ extends js.Object {
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions
   ): js.Promise[_] = js.native
   def toLinuxArchString(arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
+  def toLinuxArchString(arch: builderDashUtilLib.outArchMod.Arch, isSnap: scala.Boolean): java.lang.String = js.native
   def use[T, R](value: T, task: js.Function1[/* it */ T, R]): R | scala.Null = js.native
   def use[T, R](value: scala.Null, task: js.Function1[/* it */ T, R]): R | scala.Null = js.native
 }

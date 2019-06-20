@@ -15,7 +15,7 @@ object InputNs extends js.Object {
     * 
     * Keyboard and Gamepad are plugins, handled directly by the InputPlugin class.
     * 
-    * It then manages the event queue, pointer creation and general hit test related operations.
+    * It then manages the events, pointer creation and general hit test related operations.
     * 
     * You rarely need to interact with the Input Manager directly, and as such, all of its properties and methods
     * should be considered private. Instead, you should use the Input Plugin, which is a Scene level system, responsible
@@ -54,7 +54,12 @@ object InputNs extends js.Object {
     * sprite.on('pointerdown', callback, context);
     * ```
     * 
-    * Please see the Input examples and tutorials for more information.
+    * There are lots of game configuration options available relating to input.
+    * See the [Input Config object]{@linkcode Phaser.Types.Core.InputConfig} for more details, including how to deal with Phaser
+    * listening for input events outside of the canvas, how to set a default number of pointers, input
+    * capture settings and more.
+    * 
+    * Please also see the Input examples and tutorials for further information.
     */
   @js.native
   class InputPlugin protected ()
@@ -103,6 +108,10 @@ object InputNs extends js.Object {
     * The mouse pointer is released.
     */
   var MOUSE_UP: phaserLib.integer = js.native
+  /**
+    * The mouse wheel changes.
+    */
+  var MOUSE_WHEEL: phaserLib.integer = js.native
   /**
     * The pointer lock has changed.
     */
@@ -528,6 +537,27 @@ object InputNs extends js.Object {
       */
     val GAMEOBJECT_POINTER_UP: js.Any = js.native
     /**
+      * The Game Object Pointer Wheel Event.
+      * 
+      * This event is dispatched by an interactive Game Object if a pointer has its wheel moved while over it.
+      * 
+      * Listen to this event from a Game Object using: `gameObject.on('wheel', listener)`.
+      * Note that the scope of the listener is automatically set to be the Game Object instance itself.
+      * 
+      * To receive this event, the Game Object must have been set as interactive.
+      * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
+      * 
+      * The event hierarchy is as follows:
+      * 
+      * 1. [GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL}
+      * 2. [GAMEOBJECT_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_WHEEL}
+      * 3. [POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:POINTER_WHEEL}
+      * 
+      * With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop
+      * the propagation of this event.
+      */
+    val GAMEOBJECT_POINTER_WHEEL: js.Any = js.native
+    /**
       * The Game Object Up Input Event.
       * 
       * This event is dispatched by the Input Plugin belonging to a Scene if a pointer is released while over _any_ interactive Game Object.
@@ -549,6 +579,28 @@ object InputNs extends js.Object {
       * the propagation of this event.
       */
     val GAMEOBJECT_UP: js.Any = js.native
+    /**
+      * The Game Object Wheel Input Event.
+      * 
+      * This event is dispatched by the Input Plugin belonging to a Scene if a pointer has its wheel moved while over _any_ interactive Game Object.
+      * 
+      * Listen to this event from within a Scene using: `this.input.on('gameobjectwheel', listener)`.
+      * 
+      * To receive this event, the Game Objects must have been set as interactive.
+      * See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.
+      * 
+      * To listen for this event from a _specific_ Game Object, use the [GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL} event instead.
+      * 
+      * The event hierarchy is as follows:
+      * 
+      * 1. [GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL}
+      * 2. [GAMEOBJECT_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_WHEEL}
+      * 3. [POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:POINTER_WHEEL}
+      * 
+      * With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop
+      * the propagation of this event.
+      */
+    val GAMEOBJECT_WHEEL: js.Any = js.native
     /**
       * The Input Plugin Game Out Event.
       * 
@@ -711,6 +763,23 @@ object InputNs extends js.Object {
       * the propagation of this event.
       */
     val POINTER_UP_OUTSIDE: js.Any = js.native
+    /**
+      * The Pointer Wheel Input Event.
+      * 
+      * This event is dispatched by the Input Plugin belonging to a Scene if a pointer has its wheel updated.
+      * 
+      * Listen to this event from within a Scene using: `this.input.on('wheel', listener)`.
+      * 
+      * The event hierarchy is as follows:
+      * 
+      * 1. [GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL}
+      * 2. [GAMEOBJECT_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_WHEEL}
+      * 3. [POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:POINTER_WHEEL}
+      * 
+      * With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop
+      * the propagation of this event.
+      */
+    val POINTER_WHEEL: js.Any = js.native
     /**
       * The Input Plugin Pre-Update Event.
       * 

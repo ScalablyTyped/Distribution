@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Defines an operation yielding a value incremented continuously across a range.
   */
-trait EmitterOpEaseConfig extends js.Object {
+trait EmitterOpEaseConfig extends _EmitterOpOnUpdateType {
   /**
     * The name of the easing function.
     */

@@ -54,6 +54,11 @@ trait PathFollower extends js.Object {
     path: phaserLib.PhaserNs.CurvesNs.Path,
     config: phaserLib.PhaserNs.TypesNs.GameObjectsNs.PathFollowerNs.PathConfig
   ): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
+  def setPath(
+    path: phaserLib.PhaserNs.CurvesNs.Path,
+    config: phaserLib.PhaserNs.TypesNs.TweensNs.NumberTweenBuilderConfig
+  ): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
+  def setPath(path: phaserLib.PhaserNs.CurvesNs.Path, config: scala.Double): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
   /**
     * Set whether the PathFollower should automatically rotate to point in the direction of the Path.
     * @param value Whether the PathFollower should automatically rotate to point in the direction of the Path.
@@ -69,6 +74,8 @@ trait PathFollower extends js.Object {
   def startFollow(): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
   def startFollow(config: phaserLib.PhaserNs.TypesNs.GameObjectsNs.PathFollowerNs.PathConfig): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
   def startFollow(config: phaserLib.PhaserNs.TypesNs.GameObjectsNs.PathFollowerNs.PathConfig, startAt: scala.Double): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
+  def startFollow(config: phaserLib.PhaserNs.TypesNs.TweensNs.NumberTweenBuilderConfig): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
+  def startFollow(config: phaserLib.PhaserNs.TypesNs.TweensNs.NumberTweenBuilderConfig, startAt: scala.Double): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
   def startFollow(config: scala.Double): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
   def startFollow(config: scala.Double, startAt: scala.Double): phaserLib.PhaserNs.GameObjectsNs.PathFollower = js.native
   /**

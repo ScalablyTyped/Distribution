@@ -16,13 +16,13 @@ trait ImageLoaderProps
   /** An optional handler for the load event. */
   var onLoad: js.UndefOr[js.Function1[/* event */ js.Any, scala.Unit]] = js.undefined
   /** An optional function that returns a React element to be shown while the image loads. */
-  var preloader: js.UndefOr[js.Function1[/* params */ js.Any, reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var preloader: js.UndefOr[js.Function1[/* params */ js.Any, reactLib.reactMod.ReactElement]] = js.undefined
   /** The URL of the image to be loaded. */
   var src: java.lang.String
   /** An optional object containing styles for the wrapper component. */
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** A function that takes a props argument and returns a React element to be used as the wrapper component. Defaults to React.DOM.span. */
-  var wrapper: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var wrapper: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactElement]] = js.undefined
 }
 
 object ImageLoaderProps {
@@ -35,10 +35,10 @@ object ImageLoaderProps {
     key: reactLib.reactMod.Key = null,
     onError: /* event */ js.Any => scala.Unit = null,
     onLoad: /* event */ js.Any => scala.Unit = null,
-    preloader: /* params */ js.Any => reactLib.reactMod.ReactElement[_] = null,
+    preloader: /* params */ js.Any => reactLib.reactMod.ReactElement = null,
     ref: reactLib.reactMod.LegacyRef[ImageLoader] = null,
     style: reactLib.reactMod.CSSProperties = null,
-    wrapper: /* props */ js.Any => reactLib.reactMod.ReactElement[_] = null
+    wrapper: /* props */ js.Any => reactLib.reactMod.ReactElement = null
   ): ImageLoaderProps = {
     val __obj = js.Dynamic.literal(src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

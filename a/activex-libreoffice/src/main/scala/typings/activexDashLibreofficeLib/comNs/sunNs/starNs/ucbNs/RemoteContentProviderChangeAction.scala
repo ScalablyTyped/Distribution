@@ -17,3 +17,14 @@ import scala.scalajs.js.annotation._
 */
 trait RemoteContentProviderChangeAction extends js.Object
 
+object RemoteContentProviderChangeAction {
+  /** The indicator that a remote content provider has been added. */
+  @scala.inline
+  def ADDED: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** The indicator that a remote content provider has been removed. */
+  @scala.inline
+  def REMOVED: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

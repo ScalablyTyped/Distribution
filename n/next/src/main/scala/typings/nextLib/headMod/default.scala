@@ -15,7 +15,7 @@ class default ()
 @js.native
 object default extends js.Object {
   var canUseDOM: scala.Boolean = js.native
-  def peek(): js.Array[reactLib.reactMod.ReactElement[_]] = js.native
-  def rewind(): js.Array[reactLib.reactMod.ReactElement[_]] = js.native
+  def peek(): js.Array[reactLib.reactMod.ReactElement] = js.native
+  def rewind(): js.Array[reactLib.reactMod.ReactElement] = js.native
 }
 

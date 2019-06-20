@@ -28,7 +28,7 @@ trait Column[T] extends js.Object {
     * @default A simple text editor
     */
   var editor: js.UndefOr[
-    reactLib.reactMod.ReactElement[EditorBaseProps] | (reactLib.reactMod.ComponentClass[EditorBaseProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[EditorBaseProps]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[EditorBaseProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[EditorBaseProps]
   ] = js.undefined
   /**
     * Events to be bound to the cells in this specific column.
@@ -41,7 +41,7 @@ trait Column[T] extends js.Object {
     * A custom formatter for this column's filter.
     */
   var filterRenderer: js.UndefOr[
-    reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * Whether the rows in the grid can be filtered by this column.
@@ -52,7 +52,7 @@ trait Column[T] extends js.Object {
     * A custom read-only formatter for this column. An image formatter is available in "react-data-grid/addons".
     */
   var formatter: js.UndefOr[
-    reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * Retrieve meta data about the row, optionally provide column as a second argument
@@ -62,7 +62,7 @@ trait Column[T] extends js.Object {
     * A custom formatter for this column's header.
     */
   var headerRenderer: js.UndefOr[
-    reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
+    reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * A unique key for this column. Required.
@@ -103,13 +103,13 @@ object Column {
     cellClass: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
-    editor: reactLib.reactMod.ReactElement[EditorBaseProps] | (reactLib.reactMod.ComponentClass[EditorBaseProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[EditorBaseProps] = null,
+    editor: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[EditorBaseProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[EditorBaseProps] = null,
     events: org.scalablytyped.runtime.StringDictionary[ColumnEventCallback] = null,
-    filterRenderer: reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
+    filterRenderer: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     filterable: js.UndefOr[scala.Boolean] = js.undefined,
-    formatter: reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
+    formatter: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     getRowMetaData: (/* rowdata */ T, /* column */ js.UndefOr[Column[T]]) => _ = null,
-    headerRenderer: reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
+    headerRenderer: reactLib.reactMod.ReactElement | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     locked: js.UndefOr[scala.Boolean] = js.undefined,
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
     sortable: js.UndefOr[scala.Boolean] = js.undefined,

@@ -12,5 +12,6 @@ object ^ extends js.Object {
   def getArchCliNames(): js.Array[java.lang.String] = js.native
   def getArchSuffix(arch: Arch): java.lang.String = js.native
   def toLinuxArchString(arch: Arch): java.lang.String = js.native
+  def toLinuxArchString(arch: Arch, isSnap: scala.Boolean): java.lang.String = js.native
 }
 

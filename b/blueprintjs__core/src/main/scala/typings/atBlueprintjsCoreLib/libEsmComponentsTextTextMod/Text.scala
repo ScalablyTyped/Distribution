@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Text ()
   extends reactLib.reactMod.PureComponent[ITextProps, ITextState, js.Any] {
-  @JSName("state")
-  var state_Text: ITextState = js.native
   var textRef: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MText(): scala.Unit = js.native

@@ -12,3 +12,18 @@ import scala.scalajs.js.annotation._
 */
 trait ProjectionMode extends js.Object
 
+object ProjectionMode {
+  /**
+    * the 3D objects are drawn in the parallel projection.
+    *
+    * This value specifies a flat parallel projection in the specified degree of freedom (X or Y).
+    */
+  @scala.inline
+  def PARALLEL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** the 3D objects are drawn in the perspective projection. */
+  @scala.inline
+  def PERSPECTIVE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

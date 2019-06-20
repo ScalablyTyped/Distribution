@@ -24,12 +24,12 @@ object UtilsNs extends js.Object {
   def deepCompareKeys(objA: js.Any, objB: js.Any): scala.Boolean = js.native
   def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[java.lang.String]): scala.Boolean = js.native
   def elementIsOrContains(element: stdLib.HTMLElement, testElement: stdLib.HTMLElement): scala.Boolean = js.native
-  def ensureElement(): reactLib.reactMod.ReactElement[_] = js.native
+  def ensureElement(): reactLib.reactMod.ReactElement = js.native
   def ensureElement(
     child: js.UndefOr[reactLib.reactMod.ReactNode],
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any
-  ): reactLib.reactMod.ReactElement[_] = js.native
-  def ensureElement(child: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
+  def ensureElement(child: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactElement = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
@@ -39,10 +39,10 @@ object UtilsNs extends js.Object {
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
-  def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ComponentType[P]): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
+  def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ComponentType[P]): /* is react.react.ReactElement */ scala.Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
   def isNodeEnv(env: java.lang.String): scala.Boolean = js.native
-  def isReactElement[T](child: reactLib.reactMod.ReactNode): /* is react.react.ReactElement<T> */ scala.Boolean = js.native
+  def isReactElement[T](child: reactLib.reactMod.ReactNode): /* is react.react.ReactElement */ scala.Boolean = js.native
   def isReactNodeEmpty(): scala.Boolean = js.native
   def isReactNodeEmpty(node: reactLib.reactMod.ReactNode): scala.Boolean = js.native
   def isReactNodeEmpty(node: reactLib.reactMod.ReactNode, skipArray: scala.Boolean): scala.Boolean = js.native

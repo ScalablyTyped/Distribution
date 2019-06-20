@@ -13,7 +13,7 @@ class Toast ()
   def animateOut(): scala.Unit = js.native
   def clearTimeout(): scala.Unit = js.native
   def dismiss(): scala.Unit = js.native
-  def getSharedProps(): stdLib.Readonly[SharedStylePropsArg] = js.native
+  def getSharedProps(): SharedStylePropsArg = js.native
   def onBlur(e: stdLib.Event): scala.Unit = js.native
   def onFocus(e: stdLib.Event): scala.Unit = js.native
   def onMouseEnter(e: stdLib.Event): scala.Unit = js.native

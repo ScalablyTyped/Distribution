@@ -24,7 +24,7 @@ trait EnhancedSwitchProps extends CommonEnhancedSwitchProps[EnhancedSwitch] {
   ] = js.undefined
   var rippleColor: js.UndefOr[java.lang.String] = js.undefined
   var rippleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  var switchElement: reactLib.reactMod.ReactElement[_]
+  var switchElement: reactLib.reactMod.ReactElement
   var switched: scala.Boolean
   var thumbStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var trackStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -39,7 +39,7 @@ object EnhancedSwitchProps {
     inputStyle: reactLib.reactMod.CSSProperties,
     inputType: java.lang.String,
     onParentShouldUpdate: scala.Boolean => scala.Unit,
-    switchElement: reactLib.reactMod.ReactElement[_],
+    switchElement: reactLib.reactMod.ReactElement,
     switched: scala.Boolean,
     CommonEnhancedSwitchProps: CommonEnhancedSwitchProps[EnhancedSwitch] = null,
     className: java.lang.String = null,

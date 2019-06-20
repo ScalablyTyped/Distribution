@@ -12,7 +12,7 @@ class ReactElementWidget ()
   /**
     * Creates a Phosphor widget that renders the element(s) `es`.
     */
-  def this(es: js.Array[reactLib.reactMod.ReactElement[_]]) = this()
-  def this(es: reactLib.reactMod.ReactElement[_]) = this()
+  def this(es: js.Array[reactLib.reactMod.ReactElement]) = this()
+  def this(es: reactLib.reactMod.ReactElement) = this()
 }
 

@@ -55,7 +55,7 @@ trait EditorProps extends js.Object {
   var textAlignment: js.UndefOr[java.lang.String] = js.undefined
   var toolbar: js.UndefOr[js.Object] = js.undefined
   var toolbarClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toolbarCustomButtons: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[stdLib.HTMLElement]]] = js.undefined
+  var toolbarCustomButtons: js.UndefOr[js.Array[reactLib.reactMod.ReactElement]] = js.undefined
   var toolbarHidden: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarStyle: js.UndefOr[js.Object] = js.undefined
@@ -109,7 +109,7 @@ object EditorProps {
     textAlignment: java.lang.String = null,
     toolbar: js.Object = null,
     toolbarClassName: java.lang.String = null,
-    toolbarCustomButtons: js.Array[reactLib.reactMod.ReactElement[stdLib.HTMLElement]] = null,
+    toolbarCustomButtons: js.Array[reactLib.reactMod.ReactElement] = null,
     toolbarHidden: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarStyle: js.Object = null,

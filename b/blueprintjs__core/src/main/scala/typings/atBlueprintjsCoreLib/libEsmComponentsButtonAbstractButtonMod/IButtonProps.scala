@@ -42,11 +42,13 @@ trait IButtonProps
   /** Whether this button should use small styles. */
   var small: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * HTML `type` attribute of button. Common values are `"button"` and `"submit"`.
+    * HTML `type` attribute of button. Accepted values are `"button"`, `"submit"`, and `"reset"`.
     * Note that this prop has no effect on `AnchorButton`; it only affects `Button`.
     * @default "button"
     */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[
+    atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.submit | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.reset | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.button
+  ] = js.undefined
 }
 
 object IButtonProps {
@@ -67,7 +69,7 @@ object IButtonProps {
     rightIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     small: js.UndefOr[scala.Boolean] = js.undefined,
     text: reactLib.reactMod.ReactNode = null,
-    `type`: java.lang.String = null
+    `type`: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.submit | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.reset | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.button = null
   ): IButtonProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
@@ -85,7 +87,7 @@ object IButtonProps {
     if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(small)) __obj.updateDynamic("small")(small)
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonProps]
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Terminal ()
   extends grammarkdownLib.distNodesMod.Terminal {
   def this(text: java.lang.String) = this()
-  def this(text: js.UndefOr[scala.Nothing], questionToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
-  def this(text: java.lang.String, questionToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
+  def this(text: js.UndefOr[scala.Nothing], questionToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.QuestionToken]) = this()
+  def this(text: java.lang.String, questionToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.QuestionToken]) = this()
 }
 

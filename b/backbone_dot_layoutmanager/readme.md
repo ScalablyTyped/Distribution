@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone_dot_layoutmanager
 
-Typings are for version 0.9.5
+Typings are for version 0.9
 
 ## Library description:
 A layout and template manager for Backbone.js applications.
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Backbone.LayoutManager 0.9.5
+// Type definitions for Backbone.LayoutManager 0.9
 // Project: http://layoutmanager.org/
 // Definitions by: He Jiang <https://github.com/hejiang2000>
 // Definitions: https://github.com/hejiang2000/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

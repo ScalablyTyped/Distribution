@@ -69,11 +69,11 @@ object ^ extends js.Object {
   def text(name: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def text(name: java.lang.String, value: java.lang.String, groupId: java.lang.String): java.lang.String = js.native
   def text(name: java.lang.String, value: scala.Null, groupId: java.lang.String): java.lang.String = js.native
-  def withKnobs(storyFn: atStorybookReactLib.atStorybookReactMod.RenderFunction, context: StoryContext): reactLib.reactMod.ReactElement[WrapStoryProps] = js.native
+  def withKnobs(storyFn: atStorybookReactLib.atStorybookReactMod.RenderFunction, context: StoryContext): reactLib.reactMod.ReactElement = js.native
   def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Debounce): js.Function2[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     /* context */ StoryContext, 
-    reactLib.reactMod.ReactElement[WrapStoryProps]
+    reactLib.reactMod.ReactElement
   ] = js.native
 }
 

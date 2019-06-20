@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_DayProp[TEvent /* <: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event */] extends js.Object {
+trait Anon_DayProp[TEvent /* <: js.Object */] extends js.Object {
   var dayProp: js.UndefOr[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.DayPropGetter] = js.undefined
   var eventProp: js.UndefOr[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.EventPropGetter[TEvent]] = js.undefined
   var slotProp: js.UndefOr[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.SlotPropGetter] = js.undefined
@@ -13,7 +13,7 @@ trait Anon_DayProp[TEvent /* <: reactDashBigDashCalendarLib.reactDashBigDashCale
 
 object Anon_DayProp {
   @scala.inline
-  def apply[TEvent /* <: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event */](
+  def apply[TEvent /* <: js.Object */](
     dayProp: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.DayPropGetter = null,
     eventProp: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.EventPropGetter[TEvent] = null,
     slotProp: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.SlotPropGetter = null

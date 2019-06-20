@@ -51,8 +51,8 @@ package object esTypesMod {
   type Expr[TContext, TEvent /* <: EventObject */, T] = js.Function2[/* context */ TContext, /* event */ TEvent, T]
   type Guard[TContext, TEvent /* <: EventObject */] = (GuardPredicate[TContext, TEvent]) | ((stdLib.Record[java.lang.String, _]) with xstateLib.Anon_TypeString)
   type InvokeCallback = js.Function2[/* sender */ Sender[js.Any], /* onEvent */ Receiver[EventObject], js.Any]
-  type InvokeConfig[TContext, TEvent /* <: EventObject */] = (xstateLib.Anon_Data[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any])
-  type InvokeCreator[TFinalContext, TContext] = js.Function2[
+  type InvokeConfig[TContext, TEvent /* <: EventObject */] = (xstateLib.Anon_AutoForwardData[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any])
+  type InvokeCreator[TContext, TFinalContext] = js.Function2[
     /* context */ TContext, 
     /* event */ EventObject, 
     js.Thenable[TFinalContext] | (StateMachine[TFinalContext, js.Any, js.Any]) | Subscribable[js.Any] | InvokeCallback
@@ -75,7 +75,7 @@ package object esTypesMod {
   type Receiver[TEvent /* <: EventObject */] = js.Function1[/* listener */ js.Function1[/* event */ TEvent, scala.Unit], scala.Unit]
   type SendExpr[TContext, TEvent /* <: EventObject */] = js.Function2[/* context */ TContext, /* event */ TEvent, OmniEvent[TEvent]]
   type Sender[TEvent /* <: EventObject */] = js.Function1[/* event */ Event[TEvent], scala.Unit]
-  type ServiceConfig[TContext] = java.lang.String | (StateMachine[js.Any, js.Any, js.Any]) | (InvokeCreator[js.Any, TContext])
+  type ServiceConfig[TContext] = java.lang.String | (StateMachine[js.Any, js.Any, js.Any]) | (InvokeCreator[TContext, stdLib.Partial[TContext]])
   type SingleOrArray[T] = js.Array[T] | T
   type StandardMachineConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] = CompoundStateNodeConfig[TContext, TStateSchema, TEvent]
   type StateKey = java.lang.String | (xstateLib.esStateMod.State[js.Any, EventObject])
@@ -99,6 +99,12 @@ package object esTypesMod {
   {[ K in keyof TStateSchema['states'] ]: xstate.xstate/es/types.StateNodeDefinition<TContext, TStateSchema['states'][K], TEvent>}
     */ xstateLib.xstateLibStrings.StatesDefinition with TStateSchema
   type Transition[TContext, TEvent /* <: EventObject */] = java.lang.String | (TransitionConfig[TContext, TEvent]) | (ConditionalTransitionConfig[TContext, TEvent])
+  type TransitionTarget[TContext] = SingleOrArray[
+    java.lang.String | (xstateLib.esStateNodeMod.StateNode[TContext, js.Any, OmniEventObject[EventObject]])
+  ]
+  type TransitionTargets[TContext] = js.Array[
+    java.lang.String | (xstateLib.esStateNodeMod.StateNode[TContext, js.Any, OmniEventObject[EventObject]])
+  ]
   type TransitionsConfig[TContext, TEvent /* <: EventObject */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in TEvent['type'] | xstate.xstate/es/types.BuiltInEvent<TEvent>['type'] ]:? string | number | xstate.xstate/es/StateNode.StateNode<TContext, any, TEvent> | xstate.xstate/es/types.SingleOrArray<xstate.xstate/es/types.TransitionConfig<TContext, TEvent extends {  type  :K}? TEvent : xstate.xstate/es/types.EventObject>>}
     */ xstateLib.xstateLibStrings.TransitionsConfig with js.Any

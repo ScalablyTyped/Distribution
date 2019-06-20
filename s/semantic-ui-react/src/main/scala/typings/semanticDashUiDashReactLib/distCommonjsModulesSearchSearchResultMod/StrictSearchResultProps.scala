@@ -42,7 +42,7 @@ trait StrictSearchResultProps extends js.Object {
     * @returns {*} - Renderable result contents.
     */
   var renderer: js.UndefOr[
-    js.Function1[/* props */ SearchResultProps, js.Array[reactLib.reactMod.ReactElement[_]]]
+    js.Function1[/* props */ SearchResultProps, js.Array[reactLib.reactMod.ReactElement]]
   ] = js.undefined
   /** Display title. */
   var title: java.lang.String
@@ -61,7 +61,7 @@ object StrictSearchResultProps {
     image: java.lang.String = null,
     onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ SearchResultProps) => scala.Unit = null,
     price: java.lang.String = null,
-    renderer: /* props */ SearchResultProps => js.Array[reactLib.reactMod.ReactElement[_]] = null
+    renderer: /* props */ SearchResultProps => js.Array[reactLib.reactMod.ReactElement] = null
   ): StrictSearchResultProps = {
     val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

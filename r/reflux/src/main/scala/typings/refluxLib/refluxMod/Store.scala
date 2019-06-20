@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Store () extends js.Object {
   var id: java.lang.String = js.native
   var listenables: js.Any = js.native
-  var state: stdLib.Readonly[_] = js.native
+  var state: js.Any = js.native
   def fetchInitialState(listenable: Listenable, defaultCallback: js.Function): scala.Unit = js.native
   def hasListener(listenable: Listenable): scala.Boolean = js.native
   def listen(callback: js.Function, bindContext: js.Any): js.Function = js.native

@@ -13,8 +13,6 @@ class WindowSize ()
       WindowSizeProps, 
       js.Any
     ] {
-  @JSName("state")
-  var state_WindowSize: WindowSizeProps = js.native
   @JSName("componentDidMount")
   def componentDidMount_MWindowSize(): scala.Unit = js.native
   @JSName("componentWillUnmount")

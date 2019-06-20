@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
-  var agent: js.UndefOr[atHapiWreckLib.Anon_Http | atHapiWreckLib.atHapiWreckLibNumbers.`false`] = js.undefined
+  var agent: js.UndefOr[nodeLib.httpMod.Agent | atHapiWreckLib.atHapiWreckLibNumbers.`false`] = js.undefined
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var beforeRedirect: js.UndefOr[
     js.Function6[
@@ -44,7 +44,7 @@ trait RequestOptions extends js.Object {
 object RequestOptions {
   @scala.inline
   def apply(
-    agent: atHapiWreckLib.Anon_Http | atHapiWreckLib.atHapiWreckLibNumbers.`false` = null,
+    agent: nodeLib.httpMod.Agent | atHapiWreckLib.atHapiWreckLibNumbers.`false` = null,
     baseUrl: java.lang.String = null,
     beforeRedirect: (/* redirectMethod */ java.lang.String, /* statusCode */ scala.Double, /* location */ java.lang.String, /* resHeaders */ org.scalablytyped.runtime.StringDictionary[js.Any], /* redirectOptions */ js.Any, /* next */ js.Function0[js.Object]) => scala.Unit = null,
     ciphers: java.lang.String = null,

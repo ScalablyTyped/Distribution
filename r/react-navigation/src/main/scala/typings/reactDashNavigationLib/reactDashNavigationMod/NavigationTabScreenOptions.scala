@@ -14,13 +14,13 @@ object NavigationTabScreenOptions {
   @scala.inline
   def apply(
     swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    tabBarIcon: reactLib.reactMod.ReactElement[_] | (js.Function1[
+    tabBarIcon: reactLib.reactMod.ReactElement | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_FocusedHorizontal, 
-      reactLib.reactMod.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement | scala.Null
     ]) = null,
-    tabBarLabel: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[
+    tabBarLabel: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactElement[_] | java.lang.String | scala.Null
+      reactLib.reactMod.ReactElement | java.lang.String | scala.Null
     ]) = null,
     tabBarOnPress: /* options */ reactDashNavigationLib.Anon_Index => scala.Unit = null,
     tabBarTestIDProps: reactDashNavigationLib.Anon_AccessibilityLabel = null,

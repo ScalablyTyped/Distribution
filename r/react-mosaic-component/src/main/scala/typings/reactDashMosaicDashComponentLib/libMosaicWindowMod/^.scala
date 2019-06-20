@@ -16,6 +16,6 @@ object ^ extends js.Object {
   def MosaicWindowFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
     props: MosaicWindowProps[T] with reactLib.reactMod.Attributes,
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[MosaicWindowProps[T]] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
 }
 

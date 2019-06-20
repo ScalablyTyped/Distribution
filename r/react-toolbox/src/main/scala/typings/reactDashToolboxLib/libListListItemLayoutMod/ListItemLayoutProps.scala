@@ -10,7 +10,7 @@ trait ListItemLayoutProps
   /**
     * A string URL to specify an avatar in the left side of the item.
     */
-  var avatar: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var avatar: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Main text of the item.
     */
@@ -35,7 +35,7 @@ trait ListItemLayoutProps
   /**
     * A string key of a font icon or element to display an icon in the left side of the item.
     */
-  var leftIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var leftIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Secondary text to display under the caption.
     */
@@ -47,7 +47,7 @@ trait ListItemLayoutProps
   /**
     * The same as the leftIcon but in this case the icon is displayed in the right side.
     */
-  var rightIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   /**
     * If true, the elements in the list will display a hover effect and a pointer cursor. Inherited from the parent.
     * @default false
@@ -68,7 +68,7 @@ trait ListItemLayoutProps
 object ListItemLayoutProps {
   @scala.inline
   def apply(
-    avatar: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    avatar: java.lang.String | reactLib.reactMod.ReactElement = null,
     caption: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
@@ -76,7 +76,7 @@ object ListItemLayoutProps {
     itemContent: reactLib.reactMod.ReactChild = null,
     key: reactLib.reactMod.Key = null,
     leftActions: js.Array[reactLib.reactMod.ReactNode] = null,
-    leftIcon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    leftIcon: java.lang.String | reactLib.reactMod.ReactElement = null,
     legend: java.lang.String = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -101,7 +101,7 @@ object ListItemLayoutProps {
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
     rightActions: js.Array[reactLib.reactMod.ReactNode] = null,
-    rightIcon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    rightIcon: java.lang.String | reactLib.reactMod.ReactElement = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
     theme: ListItemLayoutTheme with reactDashToolboxLib.libListListItemContentMod.ListItemContentTheme with reactDashToolboxLib.libListListItemActionsMod.ListItemActionsTheme = null,

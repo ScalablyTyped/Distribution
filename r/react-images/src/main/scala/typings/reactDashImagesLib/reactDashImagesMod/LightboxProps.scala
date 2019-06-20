@@ -90,7 +90,7 @@ trait LightboxProps extends js.Object {
   /**
     * Spinner component.
     */
-  var spinner: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var spinner: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement]] = js.undefined
   /**
     *  Color of spinner. Default value: 'white'
     */
@@ -132,7 +132,7 @@ object LightboxProps {
     showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
     showImageCount: js.UndefOr[scala.Boolean] = js.undefined,
     showThumbnails: js.UndefOr[scala.Boolean] = js.undefined,
-    spinner: () => reactLib.reactMod.ReactElement[_] = null,
+    spinner: () => reactLib.reactMod.ReactElement = null,
     spinnerColor: java.lang.String = null,
     spinnerSize: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null

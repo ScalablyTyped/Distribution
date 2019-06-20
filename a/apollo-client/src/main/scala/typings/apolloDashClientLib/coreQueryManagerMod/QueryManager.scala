@@ -126,7 +126,7 @@ class QueryManager[TStore] protected () extends js.Object {
   def stopPollingQuery(queryId: java.lang.String): scala.Unit = js.native
   def stopQuery(queryId: java.lang.String): scala.Unit = js.native
   def stopQueryInStore(queryId: java.lang.String): scala.Unit = js.native
-  def transform(document: graphqlLib.languageAstMod.DocumentNode): stdLib.Readonly[apolloDashClientLib.Anon_ClientQuery] = js.native
+  def transform(document: graphqlLib.languageAstMod.DocumentNode): apolloDashClientLib.Anon_ClientQuery = js.native
   def updateQueryWatch(
     queryId: java.lang.String,
     document: graphqlLib.languageAstMod.DocumentNode,

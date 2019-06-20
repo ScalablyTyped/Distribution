@@ -31,7 +31,7 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * props on VictoryClipContainer, such as clipPadding.
     * @example clipContainerComponent={<VictoryClipContainer clipPadding={{top: 10, right: 10}}}/>}
     */
-  var clipContainerComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var clipContainerComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * The defaultBrushArea prop specifies how the container will behave when a
     * region outside the active brush is clicked without selecting a new area. When the
@@ -92,7 +92,7 @@ object VictoryZoomContainerProps {
     allowPan: js.UndefOr[scala.Boolean] = js.undefined,
     allowZoom: js.UndefOr[scala.Boolean] = js.undefined,
     brushStyle: reactLib.reactMod.CSSProperties = null,
-    clipContainerComponent: reactLib.reactMod.ReactElement[_] = null,
+    clipContainerComponent: reactLib.reactMod.ReactElement = null,
     defaultBrushArea: victoryLib.victoryLibStrings.all | victoryLib.victoryLibStrings.none | victoryLib.victoryLibStrings.disable = null,
     desc: java.lang.String = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,

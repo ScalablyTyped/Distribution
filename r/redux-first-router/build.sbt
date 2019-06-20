@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-first-router"
-version := "2.1-dt-20190522Z-5a657e"
+version := "2.1-dt-20190522Z-90d8eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-0452b6",
-  "org.scalablytyped" %%% "redux" % "4.0.1-2e6d53",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-9e9935",
+  "org.scalablytyped" %%% "redux" % "4.0.1-3a783a",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

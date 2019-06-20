@@ -37,8 +37,12 @@ object PieChartProps {
     valueAccessor: AccessorFunction[T, scala.Double] = null,
     width: scala.Int | scala.Double = null,
     xAccessor: AccessorFunction[T, scala.Double] = null,
+    xMax: scala.Int | scala.Double = null,
+    xMin: scala.Int | scala.Double = null,
     xScale: ScaleFunction = null,
     yAccessor: AccessorFunction[T, scala.Double] = null,
+    yMax: scala.Int | scala.Double = null,
+    yMin: scala.Int | scala.Double = null,
     yScale: ScaleFunction = null
   ): PieChartProps[T] = {
     val __obj = js.Dynamic.literal(data = data)
@@ -61,8 +65,12 @@ object PieChartProps {
     if (valueAccessor != null) __obj.updateDynamic("valueAccessor")(valueAccessor)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xAccessor != null) __obj.updateDynamic("xAccessor")(xAccessor)
+    if (xMax != null) __obj.updateDynamic("xMax")(xMax.asInstanceOf[js.Any])
+    if (xMin != null) __obj.updateDynamic("xMin")(xMin.asInstanceOf[js.Any])
     if (xScale != null) __obj.updateDynamic("xScale")(xScale)
     if (yAccessor != null) __obj.updateDynamic("yAccessor")(yAccessor)
+    if (yMax != null) __obj.updateDynamic("yMax")(yMax.asInstanceOf[js.Any])
+    if (yMin != null) __obj.updateDynamic("yMin")(yMin.asInstanceOf[js.Any])
     if (yScale != null) __obj.updateDynamic("yScale")(yScale)
     __obj.asInstanceOf[PieChartProps[T]]
   }

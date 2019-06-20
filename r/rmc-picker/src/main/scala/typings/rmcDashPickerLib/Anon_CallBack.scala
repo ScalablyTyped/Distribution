@@ -10,8 +10,8 @@ trait Anon_CallBack extends js.Object {
   var componentDidMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentDidUpdate: js.UndefOr[
     js.Function3[
-      /* prevProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
-      /* prevState */ stdLib.Readonly[_], 
+      /* prevProps */ rmcDashPickerLib.esPickerTypesMod.IPickerProps, 
+      /* prevState */ js.Any, 
       /* prevContext */ js.Any, 
       scala.Unit
     ]
@@ -19,7 +19,7 @@ trait Anon_CallBack extends js.Object {
   var componentWillMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillReceiveProps: js.UndefOr[
     js.Function2[
-      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
+      /* nextProps */ rmcDashPickerLib.esPickerTypesMod.IPickerProps, 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
@@ -27,24 +27,24 @@ trait Anon_CallBack extends js.Object {
   var componentWillUnmount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
-      /* nextState */ stdLib.Readonly[_], 
+      /* nextProps */ rmcDashPickerLib.esPickerTypesMod.IPickerProps, 
+      /* nextState */ js.Any, 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
   ] = js.native
   var context: js.Any = js.native
-  var props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps] = js.native
+  var props: Anon_Children with rmcDashPickerLib.esPickerTypesMod.IPickerProps = js.native
   var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
-      /* nextState */ stdLib.Readonly[_], 
+      /* nextProps */ rmcDashPickerLib.esPickerTypesMod.IPickerProps, 
+      /* nextState */ js.Any, 
       /* nextContext */ js.Any, 
       scala.Boolean
     ]
   ] = js.native
-  var state: stdLib.Readonly[_] = js.native
+  var state: js.Any = js.native
   def computeChildIndex(top: js.Any, itemHeight: js.Any, childrenLength: js.Any): scala.Double = js.native
   def doScrollingComplete(top: js.Any, itemHeight: js.Any, fireValueChange: js.Any): scala.Unit = js.native
   def forceUpdate(): scala.Unit = js.native

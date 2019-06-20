@@ -22,8 +22,12 @@ trait ChartProps[T] extends js.Object {
   var svg: js.UndefOr[stdLib.Partial[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.PathProps]] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
   var xAccessor: js.UndefOr[AccessorFunction[T, scala.Double]] = js.undefined
+  var xMax: js.UndefOr[scala.Double] = js.undefined
+  var xMin: js.UndefOr[scala.Double] = js.undefined
   var xScale: js.UndefOr[ScaleFunction] = js.undefined
   var yAccessor: js.UndefOr[AccessorFunction[T, scala.Double]] = js.undefined
+  var yMax: js.UndefOr[scala.Double] = js.undefined
+  var yMin: js.UndefOr[scala.Double] = js.undefined
   var yScale: js.UndefOr[ScaleFunction] = js.undefined
 }
 
@@ -44,8 +48,12 @@ object ChartProps {
     svg: stdLib.Partial[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.PathProps] = null,
     width: scala.Int | scala.Double = null,
     xAccessor: AccessorFunction[T, scala.Double] = null,
+    xMax: scala.Int | scala.Double = null,
+    xMin: scala.Int | scala.Double = null,
     xScale: ScaleFunction = null,
     yAccessor: AccessorFunction[T, scala.Double] = null,
+    yMax: scala.Int | scala.Double = null,
+    yMin: scala.Int | scala.Double = null,
     yScale: ScaleFunction = null
   ): ChartProps[T] = {
     val __obj = js.Dynamic.literal(data = data)
@@ -62,8 +70,12 @@ object ChartProps {
     if (svg != null) __obj.updateDynamic("svg")(svg)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xAccessor != null) __obj.updateDynamic("xAccessor")(xAccessor)
+    if (xMax != null) __obj.updateDynamic("xMax")(xMax.asInstanceOf[js.Any])
+    if (xMin != null) __obj.updateDynamic("xMin")(xMin.asInstanceOf[js.Any])
     if (xScale != null) __obj.updateDynamic("xScale")(xScale)
     if (yAccessor != null) __obj.updateDynamic("yAccessor")(yAccessor)
+    if (yMax != null) __obj.updateDynamic("yMax")(yMax.asInstanceOf[js.Any])
+    if (yMin != null) __obj.updateDynamic("yMin")(yMin.asInstanceOf[js.Any])
     if (yScale != null) __obj.updateDynamic("yScale")(yScale)
     __obj.asInstanceOf[ChartProps[T]]
   }

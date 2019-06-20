@@ -78,7 +78,7 @@ trait ListItemIconProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var children: reactLib.reactMod.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapListItemIconClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
@@ -287,7 +287,7 @@ trait ListItemIconProps extends js.Object {
 object ListItemIconProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[_],
+    children: reactLib.reactMod.ReactElement,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     `aria-activedescendant`: java.lang.String = null,

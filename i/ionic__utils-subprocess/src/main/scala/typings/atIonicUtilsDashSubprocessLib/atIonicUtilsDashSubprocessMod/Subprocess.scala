@@ -13,7 +13,7 @@ class Subprocess protected () extends js.Object {
   var _options: nodeLib.childUnderscoreProcessMod.SpawnOptions = js.native
   var args: js.Array[java.lang.String] = js.native
   var name: java.lang.String = js.native
-  val options: stdLib.Readonly[nodeLib.childUnderscoreProcessMod.SpawnOptions] = js.native
+  val options: nodeLib.childUnderscoreProcessMod.SpawnOptions = js.native
   val path: js.UndefOr[java.lang.String] = js.native
   def bashify(): java.lang.String = js.native
   def bashify(hasMaskArgv0MaskArgv1ShiftArgv0: SubprocessBashifyOptions): java.lang.String = js.native

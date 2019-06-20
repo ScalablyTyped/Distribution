@@ -16,3 +16,18 @@ import scala.scalajs.js.annotation._
 */
 trait OfflineFolderStatus extends js.Object
 
+object OfflineFolderStatus {
+  @scala.inline
+  def OFS_DIRTYCACHE: activexDashShellLib.activexDashShellLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def OFS_INACTIVE: activexDashShellLib.activexDashShellLibNumbers.`-1` = this.cast(-1)
+  @scala.inline
+  def OFS_OFFLINE: activexDashShellLib.activexDashShellLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def OFS_ONLINE: activexDashShellLib.activexDashShellLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def OFS_SERVERBACK: activexDashShellLib.activexDashShellLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

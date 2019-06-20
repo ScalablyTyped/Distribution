@@ -26,7 +26,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * width, height, and style. When this prop is not specified, a <rect/> will be rendered.
     * @default brushComponent={<rect/>}
     */
-  var brushComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var brushComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * When the brushDimension prop is set, brushing will only be specific to the to
     * the given dimension (either "x" or "y"), and the entire domain of the other
@@ -71,7 +71,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * specified, a <rect/> will be rendered.
     * @default handleComponent={<rect/>}
     */
-  var handleComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var handleComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * The handleStyle adds custom styles to the handleComponents. This prop should be given as an object of SVG style attributes.
     *
@@ -98,7 +98,7 @@ object VictoryBrushContainerProps {
   def apply(
     allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
     allowResize: js.UndefOr[scala.Boolean] = js.undefined,
-    brushComponent: reactLib.reactMod.ReactElement[_] = null,
+    brushComponent: reactLib.reactMod.ReactElement = null,
     brushDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
     brushDomain: DomainPropType = null,
     brushStyle: reactLib.reactMod.CSSProperties = null,
@@ -106,7 +106,7 @@ object VictoryBrushContainerProps {
     desc: java.lang.String = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
     events: reactLib.reactMod.DOMAttributes[_] = null,
-    handleComponent: reactLib.reactMod.ReactElement[_] = null,
+    handleComponent: reactLib.reactMod.ReactElement = null,
     handleStyle: reactLib.reactMod.CSSProperties = null,
     height: scala.Int | scala.Double = null,
     onBrushDomainChange: (/* domain */ DomainPropType, /* props */ VictoryBrushContainerProps) => scala.Unit = null,

@@ -36,7 +36,7 @@ class Body protected () extends js.Object {
     */
   var allowRotation: scala.Boolean = js.native
   /**
-    * The calculated angle of this Body's velocity vector, in degrees, during the last step.
+    * The calculated angle of this Body's velocity vector, in radians, during the last step.
     */
   var angle: scala.Double = js.native
   /**
@@ -393,16 +393,17 @@ class Body protected () extends js.Object {
   /**
     * Feeds the Body results back into the parent Game Object.
     * 
-    * This method is only ever called once per game step.
+    * This method is called every game frame, regardless if the world steps or not.
     */
   def postUpdate(): scala.Unit = js.native
   /**
-    * Prepares the Body for a physics step by resetting all the states and syncing the position
-    * with the parent Game Object.
+    * Syncs the position body position with the parent Game Object.
     * 
-    * This method is only ever called once per game step.
+    * This method is called every game frame, regardless if the world steps or not.
+    * @param willStep Will this Body run an update as well?
+    * @param delta The delta time, in seconds, elapsed since the last frame.
     */
-  def preUpdate(): scala.Unit = js.native
+  def preUpdate(willStep: scala.Boolean, delta: scala.Double): scala.Unit = js.native
   /**
     * Resets this Body to the given coordinates. Also positions its parent Game Object to the same coordinates.
     * If the Body had any velocity or acceleration it is lost as a result of calling this.
@@ -410,6 +411,12 @@ class Body protected () extends js.Object {
     * @param y The vertical position to place the Game Object and Body.
     */
   def reset(x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Prepares the Body for a physics step by resetting the `wasTouching`, `touching` and `blocked` states.
+    * 
+    * This method is only called if the physics world is going to run a step this frame.
+    */
+  def resetFlags(): scala.Unit = js.native
   /**
     * Sets the Body's acceleration.
     * @param x The horizontal component, in pixels per second squared.
@@ -614,10 +621,9 @@ class Body protected () extends js.Object {
     */
   def stop(): Body = js.native
   /**
-    * Performs a single physics step and updates the body velocity, angle, speed and other
-    * properties.
+    * Performs a single physics step and updates the body velocity, angle, speed and other properties.
     * 
-    * This method can be called multiple times per game step.
+    * This method can be called multiple times per game frame, depending on the physics step rate.
     * 
     * The results are synced back to the Game Object in `postUpdate`.
     * @param delta The delta time, in seconds, elapsed since the last frame.

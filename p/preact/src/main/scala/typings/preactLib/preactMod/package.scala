@@ -24,5 +24,5 @@ package object preactMod {
   	 */
   type PreactHTMLAttributes = ClassAttributes[js.Any]
   type Ref[T] = js.Function1[/* instance */ T, scala.Unit]
-  type RenderableProps[P, RefType] = stdLib.Readonly[P with Attributes with preactLib.Anon_Children[RefType]]
+  type RenderableProps[P, RefType] = P with Attributes with preactLib.Anon_Children[RefType]
 }

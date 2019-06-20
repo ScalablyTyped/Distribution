@@ -16,8 +16,6 @@ trait EditorCore
   var plugins: js.Any = js.native
   @JSName("refs")
   var refs_EditorCore: rcDashEditorDashCoreLib.Anon_Editor = js.native
-  @JSName("state")
-  var state_EditorCore: EditorCoreState = js.native
   def Reset(): scala.Unit = js.native
   def SetText(text: java.lang.String): scala.Unit = js.native
   /* private */ def _focus(ev: js.Any): js.Any = js.native

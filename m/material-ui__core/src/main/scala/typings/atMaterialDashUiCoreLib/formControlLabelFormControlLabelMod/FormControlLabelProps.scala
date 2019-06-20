@@ -85,7 +85,7 @@ trait FormControlLabelProps extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
-  var control: reactLib.reactMod.ReactElement[_]
+  var control: reactLib.reactMod.ReactElement
   var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html] = js.undefined
   var datatype: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
@@ -305,7 +305,7 @@ trait FormControlLabelProps extends js.Object {
 object FormControlLabelProps {
   @scala.inline
   def apply(
-    control: reactLib.reactMod.ReactElement[_],
+    control: reactLib.reactMod.ReactElement,
     label: reactLib.reactMod.ReactNode,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,

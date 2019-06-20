@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone-associations
 
-Typings are for version 0.6.4
+Typings are for version 0.6
 
 ## Library description:
 Create object hierarchies with Backbone models. Respond to hierarchy changes using regular Backbone events
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Backbone-associations 0.6.4
+// Type definitions for Backbone-associations 0.6
 // Project: http://dhruvaray.github.io/backbone-associations
 // Definitions by: Craig Brett <https://github.com/craigbrett17>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

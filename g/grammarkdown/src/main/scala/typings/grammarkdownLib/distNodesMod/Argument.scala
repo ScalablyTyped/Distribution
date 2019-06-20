@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown/dist/nodes", "Argument")
 @js.native
 class Argument ()
-  extends Node[grammarkdownLib.distTokensMod.SyntaxKind] {
+  extends Node[grammarkdownLib.distTokensMod.SyntaxKind.Argument] {
   def this(operatorToken: Token[grammarkdownLib.distTokensMod.ArgumentOperatorKind]) = this()
   def this(operatorToken: js.UndefOr[scala.Nothing], name: Identifier) = this()
   def this(operatorToken: Token[grammarkdownLib.distTokensMod.ArgumentOperatorKind], name: Identifier) = this()

@@ -40,7 +40,7 @@ trait VictoryPieProps
     * the VictoryPie; and the d3 compatible slice object.
     * If a dataComponent is not provided, VictoryPie's Slice component will be used.
     */
-  var dataComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var dataComponent: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * The overall end angle of the pie in degrees. This prop is used in conjunction with
     * startAngle to create a pie that spans only a segment of a circle.
@@ -162,10 +162,10 @@ object VictoryPieProps {
   def apply(
     animate: AnimatePropTypeInterface = null,
     colorScale: ColorScalePropType = null,
-    containerComponent: reactLib.reactMod.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement = null,
     cornerRadius: scala.Int | scala.Double = null,
     data: js.Array[_] = null,
-    dataComponent: reactLib.reactMod.ReactElement[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement = null,
     endAngle: scala.Int | scala.Double = null,
     eventKey: StringOrNumberOrCallback = null,
     events: js.Array[
@@ -174,11 +174,11 @@ object VictoryPieProps {
         StringOrNumberOrCallback | (js.Array[scala.Double | java.lang.String])
       ]
     ] = null,
-    groupComponent: reactLib.reactMod.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement = null,
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     innerRadius: scala.Int | scala.Double = null,
-    labelComponent: reactLib.reactMod.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement = null,
     labelRadius: scala.Int | scala.Double = null,
     labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null,
     name: java.lang.String = null,

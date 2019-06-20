@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofClassBigCalendar
   extends org.scalablytyped.runtime.Instantiable0[
-      reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.default[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event, js.Object]
+      reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.default[js.Object, js.Object]
     ] {
   /**
     * action constants for Navigate

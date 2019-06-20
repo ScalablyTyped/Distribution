@@ -26,31 +26,19 @@ trait PlotParams extends js.Object {
   var onAfterPlot: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAnimated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAnimatingFrame: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.FrameAnimationEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.FrameAnimationEvent, scala.Unit]
   ] = js.undefined
   var onAnimationInterrupted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAutoSize: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onBeforeExport: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onButtonClicked: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ButtonClickEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.ButtonClickEvent, scala.Unit]
   ] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent, scala.Unit]
   ] = js.undefined
   var onClickAnnotation: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ClickAnnotationEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.ClickAnnotationEvent, scala.Unit]
   ] = js.undefined
   var onDeselect: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onDoubleClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -58,113 +46,62 @@ trait PlotParams extends js.Object {
     * Callback executed when a plotly.js API method rejects
     * @param err Error
     */
-  var onError: js.UndefOr[js.Function1[/* err */ stdLib.Readonly[stdLib.Error], scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.undefined
   var onFramework: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onHover: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent, scala.Unit]
   ] = js.undefined
   /**
     * Callback executed after plot is initialized.
     * @param figure Object with three keys corresponding to input props: data, layout and frames.
     * @param graphDiv Reference to the DOM node into which the figure was rendered.
     */
-  var onInitialized: js.UndefOr[
-    js.Function2[
-      /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement], 
-      scala.Unit
-    ]
-  ] = js.undefined
+  var onInitialized: js.UndefOr[js.Function2[/* figure */ Figure, /* graphDiv */ stdLib.HTMLElement, scala.Unit]] = js.undefined
   var onLegendClick: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent], 
-      scala.Boolean
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent, scala.Boolean]
   ] = js.undefined
   var onLegendDoubleClick: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent], 
-      scala.Boolean
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent, scala.Boolean]
   ] = js.undefined
   /**
     * Callback executed when component unmounts, before Plotly.purge strips the graphDiv of all private attributes.
     * @param figure Object with three keys corresponding to input props: data, layout and frames.
     * @param graphDiv Reference to the DOM node into which the figure was rendered.
     */
-  var onPurge: js.UndefOr[
-    js.Function2[
-      /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement], 
-      scala.Unit
-    ]
-  ] = js.undefined
+  var onPurge: js.UndefOr[js.Function2[/* figure */ Figure, /* graphDiv */ stdLib.HTMLElement, scala.Unit]] = js.undefined
   var onRedraw: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onRelayout: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRelayoutEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotRelayoutEvent, scala.Unit]
   ] = js.undefined
   var onRestyle: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRestyleEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotRestyleEvent, scala.Unit]
   ] = js.undefined
   var onSelected: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent, scala.Unit]
   ] = js.undefined
   var onSelecting: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent, scala.Unit]
   ] = js.undefined
   var onSliderChange: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderChangeEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.SliderChangeEvent, scala.Unit]
   ] = js.undefined
   var onSliderEnd: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderEndEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.SliderEndEvent, scala.Unit]
   ] = js.undefined
   var onSliderStart: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderStartEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.SliderStartEvent, scala.Unit]
   ] = js.undefined
   var onTransitionInterrupted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onTransitioning: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onUnhover: js.UndefOr[
-    js.Function1[
-      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent, scala.Unit]
   ] = js.undefined
   /**
     * Callback executed when when a plot is updated due to new data or layout, or when user interacts with a plot.
     * @param figure Object with three keys corresponding to input props: data, layout and frames.
     * @param graphDiv Reference to the DOM node into which the figure was rendered.
     */
-  var onUpdate: js.UndefOr[
-    js.Function2[
-      /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement], 
-      scala.Unit
-    ]
-  ] = js.undefined
+  var onUpdate: js.UndefOr[js.Function2[/* figure */ Figure, /* graphDiv */ stdLib.HTMLElement, scala.Unit]] = js.undefined
   /**
     * When provided, causes the plot to update only when the revision is incremented.
     */
@@ -192,34 +129,34 @@ object PlotParams {
     onAfterExport: () => scala.Unit = null,
     onAfterPlot: () => scala.Unit = null,
     onAnimated: () => scala.Unit = null,
-    onAnimatingFrame: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.FrameAnimationEvent] => scala.Unit = null,
+    onAnimatingFrame: /* event */ plotlyDotJsLib.plotlyDotJsMod.FrameAnimationEvent => scala.Unit = null,
     onAnimationInterrupted: () => scala.Unit = null,
     onAutoSize: () => scala.Unit = null,
     onBeforeExport: () => scala.Unit = null,
-    onButtonClicked: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ButtonClickEvent] => scala.Unit = null,
-    onClick: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent] => scala.Unit = null,
-    onClickAnnotation: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ClickAnnotationEvent] => scala.Unit = null,
+    onButtonClicked: /* event */ plotlyDotJsLib.plotlyDotJsMod.ButtonClickEvent => scala.Unit = null,
+    onClick: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent => scala.Unit = null,
+    onClickAnnotation: /* event */ plotlyDotJsLib.plotlyDotJsMod.ClickAnnotationEvent => scala.Unit = null,
     onDeselect: () => scala.Unit = null,
     onDoubleClick: () => scala.Unit = null,
-    onError: /* err */ stdLib.Readonly[stdLib.Error] => scala.Unit = null,
+    onError: /* err */ stdLib.Error => scala.Unit = null,
     onFramework: () => scala.Unit = null,
-    onHover: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent] => scala.Unit = null,
-    onInitialized: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
-    onLegendClick: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent] => scala.Boolean = null,
-    onLegendDoubleClick: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent] => scala.Boolean = null,
-    onPurge: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
+    onHover: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent => scala.Unit = null,
+    onInitialized: (/* figure */ Figure, /* graphDiv */ stdLib.HTMLElement) => scala.Unit = null,
+    onLegendClick: /* event */ plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent => scala.Boolean = null,
+    onLegendDoubleClick: /* event */ plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent => scala.Boolean = null,
+    onPurge: (/* figure */ Figure, /* graphDiv */ stdLib.HTMLElement) => scala.Unit = null,
     onRedraw: () => scala.Unit = null,
-    onRelayout: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRelayoutEvent] => scala.Unit = null,
-    onRestyle: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRestyleEvent] => scala.Unit = null,
-    onSelected: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent] => scala.Unit = null,
-    onSelecting: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent] => scala.Unit = null,
-    onSliderChange: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderChangeEvent] => scala.Unit = null,
-    onSliderEnd: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderEndEvent] => scala.Unit = null,
-    onSliderStart: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderStartEvent] => scala.Unit = null,
+    onRelayout: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotRelayoutEvent => scala.Unit = null,
+    onRestyle: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotRestyleEvent => scala.Unit = null,
+    onSelected: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent => scala.Unit = null,
+    onSelecting: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent => scala.Unit = null,
+    onSliderChange: /* event */ plotlyDotJsLib.plotlyDotJsMod.SliderChangeEvent => scala.Unit = null,
+    onSliderEnd: /* event */ plotlyDotJsLib.plotlyDotJsMod.SliderEndEvent => scala.Unit = null,
+    onSliderStart: /* event */ plotlyDotJsLib.plotlyDotJsMod.SliderStartEvent => scala.Unit = null,
     onTransitionInterrupted: () => scala.Unit = null,
     onTransitioning: () => scala.Unit = null,
-    onUnhover: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent] => scala.Unit = null,
-    onUpdate: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
+    onUnhover: /* event */ plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent => scala.Unit = null,
+    onUpdate: (/* figure */ Figure, /* graphDiv */ stdLib.HTMLElement) => scala.Unit = null,
     revision: scala.Int | scala.Double = null,
     style: reactLib.reactMod.CSSProperties = null,
     useResizeHandler: js.UndefOr[scala.Boolean] = js.undefined

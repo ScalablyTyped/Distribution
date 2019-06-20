@@ -133,7 +133,7 @@ package object wxNs {
   type SceneValues = _SceneValues | scala.Double
   type ScrollEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = js.Object with (ComponentOptions[V, Data, Methods, Props, Behaviors]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props], Behaviors]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = js.Object with (ComponentOptions[V, Data, Methods, Props, Behaviors]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, Props, Behaviors]])
   type TouchCancelEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchcancel]
   type TouchEndEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchend]
   type TouchForceChangeEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchforcechange]

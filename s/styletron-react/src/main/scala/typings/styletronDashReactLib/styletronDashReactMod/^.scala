@@ -124,6 +124,6 @@ object ^ extends js.Object {
   def staticComposeShallow(styletron: Styletron, style: styletronDashStandardLib.styletronDashStandardMod.StyleObject): stdLib.ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
   ] = js.native
-  def useStyletron(): stdLib.Readonly[js.Array[CSSFn]] = js.native
+  def useStyletron(): js.Array[CSSFn] = js.native
 }
 

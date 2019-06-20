@@ -43,6 +43,17 @@ class Pointer protected () extends js.Object {
     */
   val angle: scala.Double = js.native
   /**
+    * A read-only property that indicates which button was pressed, or released, on the pointer
+    * during the most recent event. It is only set during `up` and `down` events.
+    * 
+    * On Touch devices the value is always 0.
+    * 
+    * Users may change the configuration of buttons on their pointing device so that if an event's button property
+    * is zero, it may not have been caused by the button that is physically left–most on the pointing device;
+    * however, it should behave as if the left button was clicked in the standard button layout.
+    */
+  val button: phaserLib.integer = js.native
+  /**
     * 0: No button or un-initialized
     * 1: Left button
     * 2: Right button
@@ -62,9 +73,18 @@ class Pointer protected () extends js.Object {
     */
   var camera: phaserLib.PhaserNs.CamerasNs.Scene2DNs.Camera = js.native
   /**
-    * A dirty flag for this Pointer, used internally by the Input Plugin.
+    * The horizontal scroll amount that occurred due to the user moving a mouse wheel or similar input device.
     */
-  var dirty: scala.Boolean = js.native
+  var deltaX: scala.Double = js.native
+  /**
+    * The vertical scroll amount that occurred due to the user moving a mouse wheel or similar input device.
+    * This value will typically be less than 0 if the user scrolls up and greater than zero if scrolling down.
+    */
+  var deltaY: scala.Double = js.native
+  /**
+    * The z-axis scroll amount that occurred due to the user moving a mouse wheel or similar input device.
+    */
+  var deltaZ: scala.Double = js.native
   /**
     * The distance the Pointer has moved, based on its previous and current position.
     * 
@@ -79,6 +99,7 @@ class Pointer protected () extends js.Object {
   val distance: scala.Double = js.native
   /**
     * The DOM element the Pointer was pressed down on, taken from the DOM event.
+    * In a default set-up this will be the Canvas that Phaser is rendering to, or the Window element.
     */
   val downElement: js.Any = js.native
   /**
@@ -109,18 +130,6 @@ class Pointer protected () extends js.Object {
     * Is _any_ button on this pointer considered as being down?
     */
   var isDown: scala.Boolean = js.native
-  /**
-    * Is this Pointer considered as being "just down" or not?
-    */
-  var justDown: scala.Boolean = js.native
-  /**
-    * Is this Pointer considered as being "just moved" or not?
-    */
-  var justMoved: scala.Boolean = js.native
-  /**
-    * Is this Pointer considered as being "just up" or not?
-    */
-  var justUp: scala.Boolean = js.native
   /**
     * A reference to the Input Manager.
     */
@@ -183,11 +192,12 @@ class Pointer protected () extends js.Object {
     */
   var smoothFactor: scala.Double = js.native
   /**
-    * Time when this Pointer was most recently updated by the Game step.
+    * Time when this Pointer was most recently updated by a DOM Event.
     */
   var time: scala.Double = js.native
   /**
     * The DOM element the Pointer was released on, taken from the DOM event.
+    * In a default set-up this will be the Canvas that Phaser is rendering to, or the Window element.
     */
   val upElement: js.Any = js.native
   /**
@@ -246,6 +256,10 @@ class Pointer protected () extends js.Object {
     */
   def backButtonDown(): scala.Boolean = js.native
   /**
+    * Checks to see if the back button was just released on this Pointer.
+    */
+  def backButtonReleased(): scala.Boolean = js.native
+  /**
     * Destroys this Pointer instance and resets its external references.
     */
   def destroy(): scala.Unit = js.native
@@ -253,6 +267,10 @@ class Pointer protected () extends js.Object {
     * Checks to see if the forward button is being held down on this Pointer.
     */
   def forwardButtonDown(): scala.Boolean = js.native
+  /**
+    * Checks to see if the forward button was just released on this Pointer.
+    */
+  def forwardButtonReleased(): scala.Boolean = js.native
   /**
     * If the Pointer has a button pressed down at the time this method is called, it will return the
     * angle between the Pointer's `downX` and `downY` values and the current position.
@@ -333,9 +351,17 @@ class Pointer protected () extends js.Object {
     */
   def leftButtonDown(): scala.Boolean = js.native
   /**
+    * Checks to see if the left button was just released on this Pointer.
+    */
+  def leftButtonReleased(): scala.Boolean = js.native
+  /**
     * Checks to see if the middle button is being held down on this Pointer.
     */
   def middleButtonDown(): scala.Boolean = js.native
+  /**
+    * Checks to see if the middle button was just released on this Pointer.
+    */
+  def middleButtonReleased(): scala.Boolean = js.native
   /**
     * Checks to see if any buttons are being held down on this Pointer.
     */
@@ -353,5 +379,9 @@ class Pointer protected () extends js.Object {
     * Checks to see if the right button is being held down on this Pointer.
     */
   def rightButtonDown(): scala.Boolean = js.native
+  /**
+    * Checks to see if the right button was just released on this Pointer.
+    */
+  def rightButtonReleased(): scala.Boolean = js.native
 }
 

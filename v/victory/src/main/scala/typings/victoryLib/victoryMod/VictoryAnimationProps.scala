@@ -10,7 +10,7 @@ trait VictoryAnimationProps extends js.Object {
     * The child of should be a function that takes an object of tweened values and returns a component to render.
     * @param style
     */
-  var children: js.UndefOr[js.Function1[/* style */ AnimationStyle, reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[js.Function1[/* style */ AnimationStyle, reactLib.reactMod.ReactElement]] = js.undefined
   /**
     * The data prop specifies the latest set of values to tween to.
     * When this prop changes, VictoryAnimation will begin animating from the current value to the new value.
@@ -43,7 +43,7 @@ trait VictoryAnimationProps extends js.Object {
 object VictoryAnimationProps {
   @scala.inline
   def apply(
-    children: /* style */ AnimationStyle => reactLib.reactMod.ReactElement[_] = null,
+    children: /* style */ AnimationStyle => reactLib.reactMod.ReactElement = null,
     data: AnimationData = null,
     delay: scala.Int | scala.Double = null,
     duration: scala.Int | scala.Double = null,

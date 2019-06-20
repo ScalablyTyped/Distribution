@@ -24,7 +24,7 @@ trait StrictSearchCategoryProps extends js.Object {
     * @param {object} props - The SearchCategory props object.
     * @returns {*} - Renderable category contents.
     */
-  var renderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var renderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactElement]] = js.undefined
   /** Array of Search.Result props. */
   var results: js.UndefOr[
     js.Array[
@@ -45,7 +45,7 @@ object StrictSearchCategoryProps {
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     name: java.lang.String = null,
-    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactElement[_] = null,
+    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactElement = null,
     results: js.Array[
       reactLib.reactMod.ComponentClass[
         semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 

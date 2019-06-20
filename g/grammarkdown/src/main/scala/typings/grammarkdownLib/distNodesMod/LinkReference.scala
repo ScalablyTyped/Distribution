@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown/dist/nodes", "LinkReference")
 @js.native
 class LinkReference ()
-  extends Node[grammarkdownLib.distTokensMod.SyntaxKind] {
+  extends Node[grammarkdownLib.distTokensMod.SyntaxKind.LinkReference] {
   def this(text: java.lang.String) = this()
   val text: js.UndefOr[java.lang.String] = js.native
 }

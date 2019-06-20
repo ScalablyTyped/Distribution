@@ -13,7 +13,7 @@ trait StepsNativeProps extends StepsProps {
 object StepsNativeProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactElement[_]],
+    children: js.Array[reactLib.reactMod.ReactElement],
     current: scala.Int | scala.Double = null,
     direction: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.vertical | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.horizontal = null,
     finishIcon: java.lang.String = null,

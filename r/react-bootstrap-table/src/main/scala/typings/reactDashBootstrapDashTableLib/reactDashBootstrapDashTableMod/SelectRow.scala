@@ -43,10 +43,7 @@ trait SelectRow[TRow /* <: js.Object */] extends js.Object {
   	 * Function that returns a component to customize the display of the selection checkbox or radio button with.
   	 */
   var customComponent: js.UndefOr[
-    js.Function1[
-      /* props */ CustomSelectProps, 
-      java.lang.String | reactLib.reactMod.ReactElement[_]
-    ]
+    js.Function1[/* props */ CustomSelectProps, java.lang.String | reactLib.reactMod.ReactElement]
   ] = js.undefined
   /**
   	 * If true, the radio/checkbox column will be hidden.
@@ -122,7 +119,7 @@ object SelectRow {
     clickToSelect: js.UndefOr[scala.Boolean] = js.undefined,
     clickToSelectAndEditCell: js.UndefOr[scala.Boolean] = js.undefined,
     columnWidth: java.lang.String = null,
-    customComponent: /* props */ CustomSelectProps => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    customComponent: /* props */ CustomSelectProps => java.lang.String | reactLib.reactMod.ReactElement = null,
     hideSelectColumn: js.UndefOr[scala.Boolean] = js.undefined,
     onSelect: (/* row */ TRow, /* isSelected */ scala.Boolean, /* event */ js.Any, /* rowIndex */ scala.Double) => scala.Boolean | scala.Unit = null,
     onSelectAll: (/* isSelected */ scala.Boolean, /* rows */ js.Array[TRow]) => scala.Boolean | (js.Array[scala.Double | java.lang.String]) = null,

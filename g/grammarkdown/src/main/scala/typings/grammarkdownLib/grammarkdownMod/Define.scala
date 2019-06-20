@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Define protected ()
   extends grammarkdownLib.distNodesMod.Define {
-  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], defineKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], key: grammarkdownLib.distNodesMod.Identifier) = this()
-  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], defineKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], key: grammarkdownLib.distNodesMod.Identifier, valueToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.BooleanKind]) = this()
+  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.AtToken], defineKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.DefineKeyword], key: grammarkdownLib.distNodesMod.Identifier) = this()
+  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.AtToken], defineKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.DefineKeyword], key: grammarkdownLib.distNodesMod.Identifier, valueToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.BooleanKind]) = this()
 }
 

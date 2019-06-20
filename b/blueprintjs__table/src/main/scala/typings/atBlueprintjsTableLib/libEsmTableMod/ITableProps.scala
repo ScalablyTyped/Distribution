@@ -21,11 +21,7 @@ trait ITableProps
     * The children of a `Table` component, which must be React elements
     * that use `IColumnProps`.
     */
-  var children: js.UndefOr[
-    reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps] | (js.Array[
-      reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps]
-    ])
-  ] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]] = js.undefined
   /**
     * A sparse number array with a length equal to the number of columns. Any
     * non-null value will be used to set the width of the column at the same
@@ -277,9 +273,7 @@ object ITableProps {
   @scala.inline
   def apply(
     bodyContextMenuRenderer: atBlueprintjsTableLib.libEsmInteractionsMenusMenuContextMod.IContextMenuRenderer = null,
-    children: reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps] | (js.Array[
-      reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps]
-    ]) = null,
+    children: reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement] = null,
     className: java.lang.String = null,
     columnWidths: js.Array[js.UndefOr[scala.Double | scala.Null]] = null,
     defaultColumnWidth: scala.Int | scala.Double = null,

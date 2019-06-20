@@ -19,28 +19,3 @@ import scala.scalajs.js.annotation._
 */
 trait ArmShifter extends js.Object
 
-object ArmShifter {
-  @scala.inline
-  def Asr: fridaDashGumLib.fridaDashGumLibStrings.asr = this.cast("asr")
-  @scala.inline
-  def AsrReg: fridaDashGumLib.fridaDashGumLibStrings.`asr-reg` = this.cast("asr-reg")
-  @scala.inline
-  def Lsl: fridaDashGumLib.fridaDashGumLibStrings.lsl = this.cast("lsl")
-  @scala.inline
-  def LslReg: fridaDashGumLib.fridaDashGumLibStrings.`lsl-reg` = this.cast("lsl-reg")
-  @scala.inline
-  def Lsr: fridaDashGumLib.fridaDashGumLibStrings.lsr = this.cast("lsr")
-  @scala.inline
-  def LsrReg: fridaDashGumLib.fridaDashGumLibStrings.`lsr-reg` = this.cast("lsr-reg")
-  @scala.inline
-  def Ror: fridaDashGumLib.fridaDashGumLibStrings.ror = this.cast("ror")
-  @scala.inline
-  def RorReg: fridaDashGumLib.fridaDashGumLibStrings.`ror-reg` = this.cast("ror-reg")
-  @scala.inline
-  def Rrx: fridaDashGumLib.fridaDashGumLibStrings.rrx = this.cast("rrx")
-  @scala.inline
-  def RrxReg: fridaDashGumLib.fridaDashGumLibStrings.`rrx-reg` = this.cast("rrx-reg")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-}
-

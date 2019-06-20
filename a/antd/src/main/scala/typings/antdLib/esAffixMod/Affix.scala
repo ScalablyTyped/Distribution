@@ -10,8 +10,6 @@ trait Affix
   extends reactLib.reactMod.Component[AffixProps, AffixState, js.Any] {
   var fixedNode: stdLib.HTMLDivElement = js.native
   var placeholderNode: stdLib.HTMLDivElement = js.native
-  @JSName("state")
-  var state_Affix: AffixState = js.native
   var timeout: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MAffix(): scala.Unit = js.native

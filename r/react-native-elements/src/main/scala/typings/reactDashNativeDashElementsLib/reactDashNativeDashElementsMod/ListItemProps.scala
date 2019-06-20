@@ -12,12 +12,8 @@ trait ListItemProps extends js.Object {
   var bottomDivider: js.UndefOr[scala.Boolean] = js.undefined
   var buttonGroup: js.UndefOr[ButtonGroupProps] = js.undefined
   var checkBox: js.UndefOr[CheckBoxProps] = js.undefined
-  var checkmark: js.UndefOr[
-    scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object]
-  ] = js.undefined
-  var chevron: js.UndefOr[
-    scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object]
-  ] = js.undefined
+  var checkmark: js.UndefOr[scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement] = js.undefined
+  var chevron: js.UndefOr[scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement] = js.undefined
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
@@ -29,26 +25,26 @@ trait ListItemProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   var input: js.UndefOr[InputProps] = js.undefined
-  var leftAvatar: js.UndefOr[stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var leftElement: js.UndefOr[reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var leftIcon: js.UndefOr[stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var leftAvatar: js.UndefOr[stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement] = js.undefined
+  var leftElement: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
+  var leftIcon: js.UndefOr[stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement] = js.undefined
   var onLongPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var pad: js.UndefOr[scala.Double] = js.undefined
-  var rightAvatar: js.UndefOr[stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var rightAvatar: js.UndefOr[stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement] = js.undefined
   var rightContentContainerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
-  var rightElement: js.UndefOr[reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var rightIcon: js.UndefOr[stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var rightSubtitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var rightElement: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
+  var rightIcon: js.UndefOr[stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement] = js.undefined
+  var rightSubtitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var rightSubtitleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
   var rightSubtitleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
-  var rightTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var rightTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var rightTitleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
@@ -56,7 +52,7 @@ trait ListItemProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   var scaleProps: js.UndefOr[ScaleProps] = js.undefined
-  var subtitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var subtitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var subtitleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
@@ -66,7 +62,7 @@ trait ListItemProps extends js.Object {
   var switch: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.Any
   ] = js.undefined
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var titleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
@@ -85,35 +81,35 @@ object ListItemProps {
     bottomDivider: js.UndefOr[scala.Boolean] = js.undefined,
     buttonGroup: ButtonGroupProps = null,
     checkBox: CheckBoxProps = null,
-    checkmark: scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object] = null,
-    chevron: scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object] = null,
+    checkmark: scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement = null,
+    chevron: scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     contentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     input: InputProps = null,
-    leftAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement[js.Object] = null,
-    leftElement: reactLib.reactMod.ReactElement[js.Object] = null,
-    leftIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object] = null,
+    leftAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement = null,
+    leftElement: reactLib.reactMod.ReactElement = null,
+    leftIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement = null,
     onLongPress: () => scala.Unit = null,
     onPress: () => scala.Unit = null,
     pad: scala.Int | scala.Double = null,
-    rightAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement[js.Object] = null,
+    rightAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactElement = null,
     rightContentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    rightElement: reactLib.reactMod.ReactElement[js.Object] = null,
-    rightIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object] = null,
-    rightSubtitle: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
+    rightElement: reactLib.reactMod.ReactElement = null,
+    rightIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement = null,
+    rightSubtitle: java.lang.String | reactLib.reactMod.ReactElement = null,
     rightSubtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
     rightSubtitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    rightTitle: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
+    rightTitle: java.lang.String | reactLib.reactMod.ReactElement = null,
     rightTitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
     rightTitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     scaleProps: ScaleProps = null,
-    subtitle: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
+    subtitle: java.lang.String | reactLib.reactMod.ReactElement = null,
     subtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
     subtitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     switch: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.Any = null,
-    title: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
+    title: java.lang.String | reactLib.reactMod.ReactElement = null,
     titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     topDivider: js.UndefOr[scala.Boolean] = js.undefined

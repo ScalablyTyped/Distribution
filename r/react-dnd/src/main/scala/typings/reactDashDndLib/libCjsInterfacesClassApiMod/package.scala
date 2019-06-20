@@ -9,7 +9,7 @@ package object libCjsInterfacesClassApiMod {
   type ConnectDragPreview = DragElementWrapper[reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions]
   type ConnectDragSource = DragElementWrapper[reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions]
   type ConnectDropTarget = DragElementWrapper[js.Any]
-  type ConnectableElement = reactLib.reactMod.RefObject[js.Any] | reactLib.reactMod.ReactElement[js.Any] | stdLib.Element | scala.Null
+  type ConnectableElement = reactLib.reactMod.RefObject[js.Any] | reactLib.reactMod.ReactElement | stdLib.Element | scala.Null
   type DndComponentClass[C /* <: reactLib.reactMod.ComponentType[_] */, P] = (reactLib.reactMod.ComponentClass[
     reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, P], 
     reactLib.reactMod.ComponentState
@@ -21,7 +21,7 @@ package object libCjsInterfacesClassApiMod {
   type DragElementWrapper[Options] = js.Function2[
     /* elementOrNode */ ConnectableElement, 
     /* options */ js.UndefOr[Options], 
-    reactLib.reactMod.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactElement | scala.Null
   ]
   type DragLayerCollector[TargetProps, CollectedProps] = js.Function2[
     /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragLayerMonitor, 

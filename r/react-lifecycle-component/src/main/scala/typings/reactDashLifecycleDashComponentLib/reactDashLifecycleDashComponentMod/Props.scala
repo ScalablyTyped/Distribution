@@ -14,17 +14,17 @@ object Props {
   def apply[P, S](
     component: reactLib.reactMod.ComponentClass[P, S],
     UNSAFE_componentWillMount: () => scala.Unit = null,
-    UNSAFE_componentWillReceiveProps: (/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any) => scala.Unit = null,
-    UNSAFE_componentWillUpdate: (/* nextProps */ stdLib.Readonly[P], /* nextState */ stdLib.Readonly[S], /* nextContext */ js.Any) => scala.Unit = null,
+    UNSAFE_componentWillReceiveProps: (P, /* nextContext */ js.Any) => scala.Unit = null,
+    UNSAFE_componentWillUpdate: (P, S, /* nextContext */ js.Any) => scala.Unit = null,
     componentDidCatch: (/* error */ stdLib.Error, /* errorInfo */ reactLib.reactMod.ErrorInfo) => scala.Unit = null,
     componentDidMount: () => scala.Unit = null,
-    componentDidUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S], /* snapshot */ js.UndefOr[js.Any]) => scala.Unit = null,
+    componentDidUpdate: (P, S, /* snapshot */ js.UndefOr[js.Any]) => scala.Unit = null,
     componentWillMount: () => scala.Unit = null,
-    componentWillReceiveProps: (/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any) => scala.Unit = null,
+    componentWillReceiveProps: (P, /* nextContext */ js.Any) => scala.Unit = null,
     componentWillUnmount: () => scala.Unit = null,
-    componentWillUpdate: (/* nextProps */ stdLib.Readonly[P], /* nextState */ stdLib.Readonly[S], /* nextContext */ js.Any) => scala.Unit = null,
-    getSnapshotBeforeUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S]) => js.Any | scala.Null = null,
-    shouldComponentUpdate: (/* nextProps */ stdLib.Readonly[P], /* nextState */ stdLib.Readonly[S], /* nextContext */ js.Any) => scala.Boolean = null
+    componentWillUpdate: (P, S, /* nextContext */ js.Any) => scala.Unit = null,
+    getSnapshotBeforeUpdate: (P, S) => js.Any | scala.Null = null,
+    shouldComponentUpdate: (P, S, /* nextContext */ js.Any) => scala.Boolean = null
   ): Props[P, S] = {
     val __obj = js.Dynamic.literal(component = component)
     if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(js.Any.fromFunction0(UNSAFE_componentWillMount))

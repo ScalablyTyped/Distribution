@@ -16,3 +16,12 @@ import scala.scalajs.js.annotation._
 */
 trait RegistryKeyType extends js.Object
 
+object RegistryKeyType {
+  @scala.inline
+  def KEY: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def LINK: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

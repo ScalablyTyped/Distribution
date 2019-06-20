@@ -14,3 +14,21 @@ import scala.scalajs.js.annotation._
 */
 trait MeasureTextHorzPos extends js.Object
 
+object MeasureTextHorzPos {
+  /**
+    * the connection point is chosen automatically,
+    *
+    * Set this to have the application select the best horizontal position for the text.
+    */
+  @scala.inline
+  def AUTO: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def INSIDE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def LEFTOUTSIDE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def RIGHTOUTSIDE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

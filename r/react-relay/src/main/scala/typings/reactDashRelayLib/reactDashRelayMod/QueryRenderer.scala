@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-relay", "QueryRenderer")
 @js.native
-class QueryRenderer[T /* <: relayDashRuntimeLib.relayDashRuntimeMod.OperationBase */] () extends ReactRelayQueryRenderer[T]
+class QueryRenderer[TOperation /* <: relayDashRuntimeLib.relayDashRuntimeMod.OperationType */] () extends ReactRelayQueryRenderer[TOperation]
 

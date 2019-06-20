@@ -15,7 +15,7 @@ trait TypographyProps extends js.Object {
   var defaultProps: js.UndefOr[antdLib.PartialInternalTypographyProps] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
   var propTypes: js.UndefOr[antdLib.WeakValidationMapInternalTypographyProps] = js.native
-  def apply(props: antdLib.PropsWithChildrenInternalTypographyProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def apply(props: antdLib.PropsWithChildrenInternalTypographyProps, context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def apply(props: antdLib.PropsWithChildrenInternalTypographyProps): reactLib.reactMod.ReactElement | scala.Null = js.native
+  def apply(props: antdLib.PropsWithChildrenInternalTypographyProps, context: js.Any): reactLib.reactMod.ReactElement | scala.Null = js.native
 }
 

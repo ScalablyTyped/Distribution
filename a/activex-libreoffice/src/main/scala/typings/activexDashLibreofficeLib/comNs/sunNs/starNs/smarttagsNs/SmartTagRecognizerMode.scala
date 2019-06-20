@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
 */
 trait SmartTagRecognizerMode extends js.Object
 
+object SmartTagRecognizerMode {
+  @scala.inline
+  def CELL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def CHAR: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def PARAGRAPH: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def SINGLE_WORD: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -13,16 +13,3 @@ import scala.scalajs.js.annotation._
 */
 trait Platform extends js.Object
 
-object Platform {
-  @scala.inline
-  def Darwin: fridaDashGumLib.fridaDashGumLibStrings.darwin = this.cast("darwin")
-  @scala.inline
-  def Linux: fridaDashGumLib.fridaDashGumLibStrings.linux = this.cast("linux")
-  @scala.inline
-  def Qnx: fridaDashGumLib.fridaDashGumLibStrings.qnx = this.cast("qnx")
-  @scala.inline
-  def Windows: fridaDashGumLib.fridaDashGumLibStrings.windows = this.cast("windows")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-}
-

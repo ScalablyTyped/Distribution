@@ -14,7 +14,7 @@ trait EmptyType extends js.Object {
   var defaultProps: js.UndefOr[antdLib.PartialEmptyProps] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
   var propTypes: js.UndefOr[antdLib.WeakValidationMapEmptyProps] = js.native
-  def apply(props: antdLib.PropsWithChildrenEmptyProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def apply(props: antdLib.PropsWithChildrenEmptyProps, context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def apply(props: antdLib.PropsWithChildrenEmptyProps): reactLib.reactMod.ReactElement | scala.Null = js.native
+  def apply(props: antdLib.PropsWithChildrenEmptyProps, context: js.Any): reactLib.reactMod.ReactElement | scala.Null = js.native
 }
 

@@ -15,3 +15,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChartDataRowSource extends js.Object
 
+object ChartDataRowSource {
+  /** values displayed as data rows are taken from the columns of the data source. */
+  @scala.inline
+  def COLUMNS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** values displayed as data rows are taken from the rows of the data source. */
+  @scala.inline
+  def ROWS: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

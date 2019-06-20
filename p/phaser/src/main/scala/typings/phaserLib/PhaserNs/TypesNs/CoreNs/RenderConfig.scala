@@ -19,6 +19,10 @@ trait RenderConfig extends js.Object {
     */
   var clearBeforeRender: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
+    */
+  var desynchronized: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Let the browser abort creating a WebGL context if it judges performance would be unacceptable.
     */
   var failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined
@@ -43,7 +47,7 @@ trait RenderConfig extends js.Object {
     */
   var roundPixels: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Whether the game canvas will be transparent.
+    * Whether the game canvas will be transparent. Boolean that indicates if the canvas contains an alpha channel. If set to false, the browser now knows that the backdrop is always opaque, which can speed up drawing of transparent content and images.
     */
   var transparent: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -54,6 +58,7 @@ object RenderConfig {
     antialias: js.UndefOr[scala.Boolean] = js.undefined,
     batchSize: js.UndefOr[phaserLib.integer] = js.undefined,
     clearBeforeRender: js.UndefOr[scala.Boolean] = js.undefined,
+    desynchronized: js.UndefOr[scala.Boolean] = js.undefined,
     failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined,
     maxLights: js.UndefOr[phaserLib.integer] = js.undefined,
     pixelArt: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,6 +71,7 @@ object RenderConfig {
     if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
     if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize)
     if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender)
+    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized)
     if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat)
     if (!js.isUndefined(maxLights)) __obj.updateDynamic("maxLights")(maxLights)
     if (!js.isUndefined(pixelArt)) __obj.updateDynamic("pixelArt")(pixelArt)

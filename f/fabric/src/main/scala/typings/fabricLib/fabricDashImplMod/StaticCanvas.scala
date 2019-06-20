@@ -378,6 +378,13 @@ class StaticCanvas protected ()
   def toDatalessObject(): js.Any = js.native
   def toDatalessObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
+    * Returns JSON representation of canvas
+    * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
+    * @return {String} JSON string
+    */
+  def toJSON(): java.lang.String = js.native
+  def toJSON(propertiesToInclude: js.Array[java.lang.String]): java.lang.String = js.native
+  /**
   	 * Returns object representation of canvas
   	 * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
   	 * @return {Object} object representation of an instance

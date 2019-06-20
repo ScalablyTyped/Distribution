@@ -16,9 +16,9 @@ trait NoticeWebProps
 object NoticeWebProps {
   @scala.inline
   def apply(
-    action: reactLib.reactMod.ReactElement[_] = null,
+    action: reactLib.reactMod.ReactElement = null,
     className: java.lang.String = null,
-    icon: reactLib.reactMod.ReactElement[_] = null,
+    icon: reactLib.reactMod.ReactElement = null,
     marqueeProps: antdDashMobileLib.esNoticeDashBarMarqueeMod.MarqueeProps = null,
     mode: antdDashMobileLib.antdDashMobileLibStrings.closable | antdDashMobileLib.antdDashMobileLibStrings.link = null,
     onClick: () => scala.Unit = null,

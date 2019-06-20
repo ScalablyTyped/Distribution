@@ -53,6 +53,9 @@ trait ModalFilterPickerProps[T /* <: ModalFilterPickerOption */] extends js.Obje
     ]
   ] = js.undefined
   var selectedOption: js.UndefOr[java.lang.String] = js.undefined
+  var selectedOptionTextStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
   var showFilter: js.UndefOr[scala.Boolean] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
   var titleTextStyle: js.UndefOr[
@@ -90,6 +93,7 @@ object ModalFilterPickerProps {
     renderList: () => reactLib.reactMod.Global.JSXNs.Element = null,
     renderOption: (/* option */ T, /* isSelected */ scala.Boolean) => reactLib.reactMod.Global.JSXNs.Element = null,
     selectedOption: java.lang.String = null,
+    selectedOptionTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     showFilter: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null,
     titleTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
@@ -117,6 +121,7 @@ object ModalFilterPickerProps {
     if (renderList != null) __obj.updateDynamic("renderList")(js.Any.fromFunction0(renderList))
     if (renderOption != null) __obj.updateDynamic("renderOption")(js.Any.fromFunction2(renderOption))
     if (selectedOption != null) __obj.updateDynamic("selectedOption")(selectedOption)
+    if (selectedOptionTextStyle != null) __obj.updateDynamic("selectedOptionTextStyle")(selectedOptionTextStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter)
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])

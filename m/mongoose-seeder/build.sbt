@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mongoose-seeder"
-version := "1.2.1-dt-20190322Z-da5aca"
+version := "1.2.1-dt-20190322Z-88b15b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-37c6f2",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-e11d4d",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

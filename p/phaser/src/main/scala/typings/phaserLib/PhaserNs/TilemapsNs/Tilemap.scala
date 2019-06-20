@@ -333,13 +333,19 @@ class Tilemap protected () extends js.Object {
     tileWidth: js.UndefOr[phaserLib.integer],
     tileHeight: js.UndefOr[phaserLib.integer]
   ): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: java.lang.String, tileset: java.lang.String): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: java.lang.String, tileset: java.lang.String, x: scala.Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: java.lang.String, tileset: java.lang.String, x: scala.Double, y: scala.Double): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: java.lang.String, tileset: js.Array[java.lang.String | Tileset]): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: java.lang.String, tileset: js.Array[java.lang.String | Tileset], x: scala.Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(
     layerID: java.lang.String,
     tileset: js.Array[java.lang.String | Tileset],
     x: scala.Double,
     y: scala.Double
   ): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: java.lang.String, tileset: Tileset): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: java.lang.String, tileset: Tileset, x: scala.Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: java.lang.String, tileset: Tileset, x: scala.Double, y: scala.Double): DynamicTilemapLayer = js.native
   /**
     * Creates a new DynamicTilemapLayer that renders the LayerData associated with the given
@@ -353,16 +359,22 @@ class Tilemap protected () extends js.Object {
     * information.
     * @param layerID The layer array index value, or if a string is given, the layer name from Tiled.
     * @param tileset The tileset, or an array of tilesets, used to render this layer. Can be a string or a Tileset object.
-    * @param x The x position to place the layer in the world. If not specified, it will default to the layer offset from Tiled or 0.
-    * @param y The y position to place the layer in the world. If not specified, it will default to the layer offset from Tiled or 0.
+    * @param x The x position to place the layer in the world. If not specified, it will default to the layer offset from Tiled or 0. Default 0.
+    * @param y The y position to place the layer in the world. If not specified, it will default to the layer offset from Tiled or 0. Default 0.
     */
+  def createDynamicLayer(layerID: phaserLib.integer, tileset: java.lang.String): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: phaserLib.integer, tileset: java.lang.String, x: scala.Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: phaserLib.integer, tileset: java.lang.String, x: scala.Double, y: scala.Double): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: phaserLib.integer, tileset: js.Array[java.lang.String | Tileset]): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: phaserLib.integer, tileset: js.Array[java.lang.String | Tileset], x: scala.Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(
     layerID: phaserLib.integer,
     tileset: js.Array[java.lang.String | Tileset],
     x: scala.Double,
     y: scala.Double
   ): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: phaserLib.integer, tileset: Tileset): DynamicTilemapLayer = js.native
+  def createDynamicLayer(layerID: phaserLib.integer, tileset: Tileset, x: scala.Double): DynamicTilemapLayer = js.native
   def createDynamicLayer(layerID: phaserLib.integer, tileset: Tileset, x: scala.Double, y: scala.Double): DynamicTilemapLayer = js.native
   def createFromObjects(
     name: java.lang.String,
@@ -1484,7 +1496,7 @@ class Tilemap protected () extends js.Object {
   ): Tilemap = js.native
   /**
     * Randomizes the indexes of a rectangular region of tiles (in tile coordinates) within the
-    * specified layer. Each tile will recieve a new index. If an array of indexes is passed in, then
+    * specified layer. Each tile will receive a new index. If an array of indexes is passed in, then
     * those will be used for randomly assigning new tile indexes. If an array is not provided, the
     * indexes found within the region (excluding -1) will be used for randomly assigning new tile
     * indexes. This method only modifies tile indexes and does not change collision information.

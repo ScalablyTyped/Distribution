@@ -10,7 +10,7 @@ trait AutoCompleteProps
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var backfill: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
-    ValidInputElement | (reactLib.reactMod.ReactElement[antdLib.esInputInputMod.InputProps | antdLib.esSelectMod.OptionProps]) | js.Array[reactLib.reactMod.ReactElement[antdLib.esSelectMod.OptionProps]]
+    ValidInputElement | reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]
   ] = js.undefined
   var dataSource: js.UndefOr[js.Array[DataSourceItemType]] = js.undefined
   var defaultValue: js.UndefOr[antdLib.esSelectMod.SelectValue] = js.undefined
@@ -31,7 +31,7 @@ object AutoCompleteProps {
     autoClearSearchValue: js.UndefOr[scala.Boolean] = js.undefined,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     backfill: js.UndefOr[scala.Boolean] = js.undefined,
-    children: ValidInputElement | (reactLib.reactMod.ReactElement[antdLib.esInputInputMod.InputProps | antdLib.esSelectMod.OptionProps]) | js.Array[reactLib.reactMod.ReactElement[antdLib.esSelectMod.OptionProps]] = null,
+    children: ValidInputElement | reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement] = null,
     choiceTransitionName: java.lang.String = null,
     className: java.lang.String = null,
     dataSource: js.Array[DataSourceItemType] = null,
@@ -44,11 +44,7 @@ object AutoCompleteProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[antdLib.esSelectMod.SelectProps[antdLib.esSelectMod.SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[
-      /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactElement[antdLib.esSelectMod.OptionProps], 
-      _
-    ]) = null,
+    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,

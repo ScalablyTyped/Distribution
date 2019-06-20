@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-map-gl", "SVGOverlay")
 @js.native
-class SVGOverlay () extends BaseControl[SVGOverlayProps]
+class SVGOverlay ()
+  extends BaseControl[SVGOverlayProps, stdLib.Element]
 

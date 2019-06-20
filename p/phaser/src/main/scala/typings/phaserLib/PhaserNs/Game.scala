@@ -170,12 +170,12 @@ class Game () extends js.Object {
   def destroy(removeCanvas: scala.Boolean, noReturn: scala.Boolean): scala.Unit = js.native
   /**
     * Returns the current game frame.
+    * 
     * When the game starts running, the frame is incremented every time Request Animation Frame, or Set Timeout, fires.
     */
   def getFrame(): scala.Double = js.native
   /**
-    * Returns the current game timestamp.
-    * When the game starts running, the frame is incremented every time Request Animation Frame, or Set Timeout, fires.
+    * Returns the time that the current game step started at, as based on `performance.now`.
     */
   def getTime(): scala.Double = js.native
   /**

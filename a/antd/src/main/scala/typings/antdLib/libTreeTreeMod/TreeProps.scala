@@ -104,7 +104,7 @@ trait TreeProps extends js.Object {
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
   var showLine: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
 }
 
 object TreeProps {
@@ -150,7 +150,7 @@ object TreeProps {
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
     showLine: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
-    switcherIcon: reactLib.reactMod.ReactElement[_] = null
+    switcherIcon: reactLib.reactMod.ReactElement = null
   ): TreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent)

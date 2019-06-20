@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TransPropsWithoutI18n
   extends atLinguiReactLib.renderMod.RenderProps {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var components: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var components: js.UndefOr[js.Array[reactLib.reactMod.ReactElement]] = js.undefined
   var defaults: js.UndefOr[java.lang.String] = js.undefined
   var formats: js.UndefOr[js.Object] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ object TransPropsWithoutI18n {
   def apply(
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    components: js.Array[reactLib.reactMod.ReactElement[_]] = null,
+    components: js.Array[reactLib.reactMod.ReactElement] = null,
     defaults: java.lang.String = null,
     formats: js.Object = null,
     id: java.lang.String = null,

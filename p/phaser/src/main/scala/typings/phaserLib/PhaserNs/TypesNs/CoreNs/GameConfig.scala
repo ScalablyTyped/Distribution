@@ -95,7 +95,7 @@ trait GameConfig extends js.Object {
     */
   var scene: js.UndefOr[
     phaserLib.PhaserNs.Scene | (js.Array[
-      phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | phaserLib.PhaserNs.Scene | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig
+      phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Function | phaserLib.PhaserNs.Scene | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig
     ]) | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig | phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Function
   ] = js.undefined
   /**
@@ -157,7 +157,7 @@ object GameConfig {
     resolution: scala.Int | scala.Double = null,
     scale: ScaleConfig = null,
     scene: phaserLib.PhaserNs.Scene | (js.Array[
-      phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | phaserLib.PhaserNs.Scene | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig
+      phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Function | phaserLib.PhaserNs.Scene | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig
     ]) | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig | phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Function = null,
     seed: js.Array[java.lang.String] = null,
     title: java.lang.String = null,

@@ -10,7 +10,7 @@ trait ReactJsPaginationProps extends js.Object {
   var activeLinkClass: js.UndefOr[java.lang.String] = js.undefined
   var activePage: scala.Double
   var disabledClass: js.UndefOr[java.lang.String] = js.undefined
-  var firstPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var firstPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var getPageUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   var hideDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var hideFirstLastPages: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,15 +22,15 @@ trait ReactJsPaginationProps extends js.Object {
   var itemClassNext: js.UndefOr[java.lang.String] = js.undefined
   var itemClassPrev: js.UndefOr[java.lang.String] = js.undefined
   var itemsCountPerPage: js.UndefOr[scala.Double] = js.undefined
-  var lastPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var lastPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var linkClass: js.UndefOr[java.lang.String] = js.undefined
   var linkClassFirst: js.UndefOr[java.lang.String] = js.undefined
   var linkClassLast: js.UndefOr[java.lang.String] = js.undefined
   var linkClassNext: js.UndefOr[java.lang.String] = js.undefined
   var linkClassPrev: js.UndefOr[java.lang.String] = js.undefined
-  var nextPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var nextPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var pageRangeDisplayed: js.UndefOr[scala.Double] = js.undefined
-  var prevPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var prevPageText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   var totalItemsCount: scala.Double
   def onChange(pageNumber: scala.Double): scala.Unit
 }
@@ -44,7 +44,7 @@ object ReactJsPaginationProps {
     activeClass: java.lang.String = null,
     activeLinkClass: java.lang.String = null,
     disabledClass: java.lang.String = null,
-    firstPageText: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    firstPageText: java.lang.String | reactLib.reactMod.ReactElement = null,
     getPageUrl: () => java.lang.String = null,
     hideDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     hideFirstLastPages: js.UndefOr[scala.Boolean] = js.undefined,
@@ -56,15 +56,15 @@ object ReactJsPaginationProps {
     itemClassNext: java.lang.String = null,
     itemClassPrev: java.lang.String = null,
     itemsCountPerPage: scala.Int | scala.Double = null,
-    lastPageText: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    lastPageText: java.lang.String | reactLib.reactMod.ReactElement = null,
     linkClass: java.lang.String = null,
     linkClassFirst: java.lang.String = null,
     linkClassLast: java.lang.String = null,
     linkClassNext: java.lang.String = null,
     linkClassPrev: java.lang.String = null,
-    nextPageText: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    nextPageText: java.lang.String | reactLib.reactMod.ReactElement = null,
     pageRangeDisplayed: scala.Int | scala.Double = null,
-    prevPageText: java.lang.String | reactLib.reactMod.ReactElement[_] = null
+    prevPageText: java.lang.String | reactLib.reactMod.ReactElement = null
   ): ReactJsPaginationProps = {
     val __obj = js.Dynamic.literal(activePage = activePage, onChange = js.Any.fromFunction1(onChange), totalItemsCount = totalItemsCount)
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone-fetch-cache
 
-Typings are for version 1.4.0
+Typings are for version 1.4
 
 ## Library description:
 Caches calls to Backbone.[Model | Collection].fetch
@@ -32,11 +32,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for backbone-fetch-cache 1.4.0
+// Type definitions for backbone-fetch-cache 1.4
 // Project: https://github.com/madglory/backbone-fetch-cache
 // Definitions by: delphinus <https://github.com/delphinus35>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

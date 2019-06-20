@@ -10,7 +10,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var clearIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement]] = js.undefined
   var labelInValue: js.UndefOr[scala.Boolean] = js.undefined
   var maxTagCount: js.UndefOr[scala.Double] = js.undefined
   var maxTagPlaceholder: js.UndefOr[
@@ -25,7 +25,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var onChange: js.UndefOr[
     js.Function2[
       /* value */ T, 
-      /* option */ reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]], 
+      /* option */ reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -47,7 +47,7 @@ trait SelectProps[T] extends AbstractSelectProps {
     ]
   ] = js.undefined
   var onPopupScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement]] = js.undefined
-  var onSelect: js.UndefOr[js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactElement[_], _]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactElement, _]] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
   var removeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -74,13 +74,9 @@ object SelectProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[
-      /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactElement[OptionProps], 
-      _
-    ]) = null,
+    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
     firstActiveValue: java.lang.String | js.Array[java.lang.String] = null,
-    getInputElement: () => reactLib.reactMod.ReactElement[_] = null,
+    getInputElement: () => reactLib.reactMod.ReactElement = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     labelInValue: js.UndefOr[scala.Boolean] = js.undefined,
@@ -92,7 +88,7 @@ object SelectProps {
     mode: antdLib.antdLibStrings.default | antdLib.antdLibStrings.multiple | antdLib.antdLibStrings.tags | antdLib.antdLibStrings.combobox | java.lang.String = null,
     notFoundContent: reactLib.reactMod.ReactNode = null,
     onBlur: /* value */ T => scala.Unit = null,
-    onChange: (/* value */ T, /* option */ reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]]) => scala.Unit = null,
+    onChange: (/* value */ T, /* option */ reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]) => scala.Unit = null,
     onDeselect: /* value */ T => _ = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onFocus: () => scala.Unit = null,
@@ -101,7 +97,7 @@ object SelectProps {
     onMouseLeave: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
     onPopupScroll: reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement] = null,
     onSearch: /* value */ java.lang.String => _ = null,
-    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactElement[_]) => _ = null,
+    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactElement) => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     optionFilterProp: java.lang.String = null,
     optionLabelProp: java.lang.String = null,

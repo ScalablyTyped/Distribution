@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait DocumentStoreMode extends js.Object
 
+object DocumentStoreMode {
+  /** Document contents are stored locally. */
+  @scala.inline
+  def LOCAL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  /** Document contents are not stored locally. */
+  @scala.inline
+  def REMOTE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

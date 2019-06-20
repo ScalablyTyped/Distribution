@@ -27,7 +27,7 @@ trait TabsProps extends js.Object {
     js.Function2[
       /* props */ TabsProps, 
       /* DefaultTabBar */ reactLib.reactMod.ReactNode, 
-      reactLib.reactMod.ReactElement[_]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   var size: js.UndefOr[
@@ -55,7 +55,7 @@ object TabsProps {
     onPrevClick: reactLib.reactMod.MouseEventHandler[_] = null,
     onTabClick: js.Function = null,
     prefixCls: java.lang.String = null,
-    renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ reactLib.reactMod.ReactNode) => reactLib.reactMod.ReactElement[_] = null,
+    renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ reactLib.reactMod.ReactNode) => reactLib.reactMod.ReactElement = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
     style: reactLib.reactMod.CSSProperties = null,
     tabBarExtraContent: reactLib.reactMod.ReactNode = null,

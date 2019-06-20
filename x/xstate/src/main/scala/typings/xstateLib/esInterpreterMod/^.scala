@@ -15,5 +15,6 @@ object ^ extends js.Object {
   ): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def spawn[TContext](entity: Spawnable[TContext]): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
   def spawn[TContext](entity: Spawnable[TContext], name: java.lang.String): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
+  def spawn[TContext](entity: Spawnable[TContext], options: SpawnOptions): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
 }
 

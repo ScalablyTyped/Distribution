@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
 */
 trait Constants extends js.Object
 
+object Constants {
+  @scala.inline
+  def ANYTHING: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def CONSTANT_LARGE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def CONSTANT_SMALL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def CONSTANT_STANDARD: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def DUCKING_LARGE: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`7` = this.cast(7)
+  @scala.inline
+  def DUCKING_SMALL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`5` = this.cast(5)
+  @scala.inline
+  def DUCKING_STANDARD: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`6` = this.cast(6)
+  @scala.inline
+  def NO_FIT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

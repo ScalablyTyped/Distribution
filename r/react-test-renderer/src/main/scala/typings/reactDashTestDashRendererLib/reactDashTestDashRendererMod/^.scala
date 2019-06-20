@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def act(callback: js.Function0[js.UndefOr[scala.Unit]]): DebugPromiseLike | js.Object = js.native
-  def create(nextElement: reactLib.reactMod.ReactElement[_]): ReactTestRenderer = js.native
-  def create(nextElement: reactLib.reactMod.ReactElement[_], options: TestRendererOptions): ReactTestRenderer = js.native
+  def create(nextElement: reactLib.reactMod.ReactElement): ReactTestRenderer = js.native
+  def create(nextElement: reactLib.reactMod.ReactElement, options: TestRendererOptions): ReactTestRenderer = js.native
 }
 

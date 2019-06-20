@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "inversify-restify-utils"
-version := "3.4.0-070ba9"
+version := "3.4.0-20c697"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-105a17",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "restify" % "7.2-dt-20190528Z-925fcb",
-  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-30f96b",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-6b9a99",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "restify" % "7.2-dt-20190528Z-f3e474",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-bb2d51",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

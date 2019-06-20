@@ -28,7 +28,7 @@ trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.enterTypeR
   //   props: StyledComponentPropsWithAs<AsC, T, O, A>
   // ): React.ReactElement<StyledComponentPropsWithAs<AsC, T, O, A>>
   // TODO (TypeScript 3.2): delete this overload
-  def apply(props: (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_A): reactLib.reactMod.ReactElement[StyledComponentProps[C, T, O, A]] = js.native
+  def apply(props: (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_A): reactLib.reactMod.ReactElement = js.native
   def withComponent[WithC /* <: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.FunctionComponent[_] */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_WithCAnyStyledComponent[WithC /* <: AnyStyledComponent */](component: WithC): StyledComponent[

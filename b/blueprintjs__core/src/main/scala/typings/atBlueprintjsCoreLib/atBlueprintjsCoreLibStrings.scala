@@ -514,6 +514,9 @@ object atBlueprintjsCoreLibStrings {
   sealed trait rect extends js.Object
   
   @js.native
+  sealed trait reset extends js.Object
+  
+  @js.native
   sealed trait right
     extends atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment
        with atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
@@ -581,6 +584,9 @@ object atBlueprintjsCoreLibStrings {
   
   @js.native
   sealed trait sub extends js.Object
+  
+  @js.native
+  sealed trait submit extends js.Object
   
   @js.native
   sealed trait success
@@ -1007,6 +1013,8 @@ object atBlueprintjsCoreLibStrings {
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
@@ -1046,6 +1054,8 @@ object atBlueprintjsCoreLibStrings {
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline

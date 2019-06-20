@@ -11,9 +11,9 @@ object ^ extends js.Object {
   val CacheProvider: reactLib.reactMod.Provider[atEmotionUtilsLib.atEmotionUtilsMod.EmotionCache] = js.native
   val ThemeContext: reactLib.reactMod.Context[js.Object] = js.native
   val styled: atEmotionStyledLib.atEmotionStyledMod.CreateStyled[atStorybookThemingLib.distTypesMod.Theme] = js.native
-  def ClassNames[Theme](props: atEmotionCoreLib.atEmotionCoreMod.ClassNamesProps[Theme]): reactLib.reactMod.ReactElement[_] = js.native
-  def Global[Theme](props: atEmotionCoreLib.atEmotionCoreMod.GlobalProps[Theme]): reactLib.reactMod.ReactElement[_] = js.native
-  def ThemeProvider[Theme](props: emotionDashThemingLib.emotionDashThemingMod.ThemeProviderProps[Theme]): reactLib.reactMod.ReactElement[_] = js.native
+  def ClassNames[Theme](props: atEmotionCoreLib.atEmotionCoreMod.ClassNamesProps[Theme]): reactLib.reactMod.ReactElement = js.native
+  def Global[Theme](props: atEmotionCoreLib.atEmotionCoreMod.GlobalProps[Theme]): reactLib.reactMod.ReactElement = js.native
+  def ThemeProvider[Theme](props: emotionDashThemingLib.emotionDashThemingMod.ThemeProviderProps[Theme]): reactLib.reactMod.ReactElement = js.native
   def convert(): atStorybookThemingLib.distTypesMod.Theme = js.native
   def convert(inherit: atStorybookThemingLib.distTypesMod.ThemeVars): atStorybookThemingLib.distTypesMod.Theme = js.native
   def create(): atStorybookThemingLib.distTypesMod.ThemeVars = js.native

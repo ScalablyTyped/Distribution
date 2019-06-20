@@ -11,13 +11,13 @@ trait Addon extends js.Object {
   var route: js.UndefOr[js.Function1[/* routeOptions */ RouteOptions, java.lang.String]] = js.undefined
   var title: java.lang.String
   var `type`: js.UndefOr[Types] = js.undefined
-  def render(renderOptions: RenderOptions): reactLib.reactMod.ReactElement[_]
+  def render(renderOptions: RenderOptions): reactLib.reactMod.ReactElement
 }
 
 object Addon {
   @scala.inline
   def apply(
-    render: RenderOptions => reactLib.reactMod.ReactElement[_],
+    render: RenderOptions => reactLib.reactMod.ReactElement,
     title: java.lang.String,
     id: java.lang.String = null,
     `match`: /* matchOptions */ MatchOptions => scala.Boolean = null,

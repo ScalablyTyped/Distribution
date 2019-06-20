@@ -12,14 +12,18 @@ import scala.scalajs.js.annotation._
 trait Flip extends js.Object {
   /**
     * The horizontally flipped state of the Game Object.
+    * 
     * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   var flipX: scala.Boolean
   /**
     * The vertically flipped state of the Game Object.
+    * 
     * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
     * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   var flipY: scala.Boolean
   /**
@@ -28,12 +32,20 @@ trait Flip extends js.Object {
   def resetFlip(): this.type
   /**
     * Sets the horizontal and vertical flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped will render inversed on the flipped axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     */
   def setFlip(x: scala.Boolean, y: scala.Boolean): this.type
   /**
     * Sets the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     * @param value The flipped state. `false` for no flip, or `true` to be flipped.
     */
   def setFlipX(value: scala.Boolean): this.type
@@ -44,6 +56,10 @@ trait Flip extends js.Object {
   def setFlipY(value: scala.Boolean): this.type
   /**
     * Toggles the horizontal flipped state of this Game Object.
+    * 
+    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+    * Flipping always takes place from the middle of the texture and does not impact the scale value.
+    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
     */
   def toggleFlipX(): this.type
   /**

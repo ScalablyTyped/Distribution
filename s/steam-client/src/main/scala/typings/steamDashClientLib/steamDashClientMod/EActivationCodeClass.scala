@@ -45,7 +45,7 @@ object EActivationCodeClass extends js.Object {
   
   /* 3 */ val DBLookup: DBLookup with scala.Double = js.native
   /* 2 */ val Doom3CDKey: Doom3CDKey with scala.Double = js.native
-  /* 4294967295 */ val Invalid: Invalid with scala.Double = js.native
+  /* 4294967295.0 */ val Invalid: Invalid with scala.Double = js.native
   /* 5 */ val Max: Max with scala.Double = js.native
   /* 4 */ val Steam2010Key: Steam2010Key with scala.Double = js.native
   /* 2147483647 */ val Test: Test with scala.Double = js.native

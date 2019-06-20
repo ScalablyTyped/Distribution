@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EventWrapperProps[TEvent /* <: Event */] extends js.Object {
+trait EventWrapperProps[TEvent /* <: js.Object */] extends js.Object {
   var accessors: reactDashBigDashCalendarLib.Anon_End[TEvent]
   var className: java.lang.String
   var continuesEarlier: scala.Boolean
@@ -23,7 +23,7 @@ trait EventWrapperProps[TEvent /* <: Event */] extends js.Object {
 
 object EventWrapperProps {
   @scala.inline
-  def apply[TEvent /* <: Event */](
+  def apply[TEvent /* <: js.Object */](
     accessors: reactDashBigDashCalendarLib.Anon_End[TEvent],
     className: java.lang.String,
     continuesEarlier: scala.Boolean,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object JSXNs {
   // tslint:disable-next-line:no-empty-interface
-  type Element = reactLib.reactMod.ReactElement[js.Any]
+  type Element = reactLib.reactMod.ReactElement
   // tslint:disable-next-line:no-empty-interface
   type IntrinsicAttributes = reactLib.reactMod.Attributes
   // tslint:disable-next-line:no-empty-interface

@@ -24,3 +24,36 @@ import scala.scalajs.js.annotation._
 */
 trait PIN_MODE extends js.Object
 
+object PIN_MODE {
+  @scala.inline
+  def ANALOG: firmataLib.firmataLibNumbers.`0x02` = this.cast(0x02)
+  @scala.inline
+  def I2C: firmataLib.firmataLibNumbers.`0x06` = this.cast(0x06)
+  @scala.inline
+  def IGNORE: firmataLib.firmataLibNumbers.`0x7F` = this.cast(0x7F)
+  @scala.inline
+  def INPUT: firmataLib.firmataLibNumbers.`0x00` = this.cast(0x00)
+  @scala.inline
+  def ONEWIRE: firmataLib.firmataLibNumbers.`0x07` = this.cast(0x07)
+  @scala.inline
+  def OUTPUT: firmataLib.firmataLibNumbers.`0x01` = this.cast(0x01)
+  @scala.inline
+  def PING_READ: firmataLib.firmataLibNumbers.`0x75` = this.cast(0x75)
+  @scala.inline
+  def PULLUP: firmataLib.firmataLibNumbers.`0x0B` = this.cast(0x0B)
+  @scala.inline
+  def PWM: firmataLib.firmataLibNumbers.`0x03` = this.cast(0x03)
+  @scala.inline
+  def SERIAL: firmataLib.firmataLibNumbers.`0x0A` = this.cast(0x0A)
+  @scala.inline
+  def SERVO: firmataLib.firmataLibNumbers.`0x04` = this.cast(0x04)
+  @scala.inline
+  def SHIFT: firmataLib.firmataLibNumbers.`0x05` = this.cast(0x05)
+  @scala.inline
+  def STEPPER: firmataLib.firmataLibNumbers.`0x08` = this.cast(0x08)
+  @scala.inline
+  def UNKNOWN: firmataLib.firmataLibNumbers.`0x10` = this.cast(0x10)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -23,12 +23,12 @@ object CollectionChangedAction extends js.Object {
   sealed trait RESET
     extends nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.CollectionChangedAction
   
-  val DELETE: DELETE with java.lang.String = js.native
-  val INSERT: INSERT with java.lang.String = js.native
-  val RESET: RESET with java.lang.String = js.native
+  /* 1 */ val DELETE: DELETE with scala.Double = js.native
+  /* 0 */ val INSERT: INSERT with scala.Double = js.native
+  /* 2 */ val RESET: RESET with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[
-    nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.CollectionChangedAction with java.lang.String
+  def apply(value: scala.Double): js.UndefOr[
+    nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.CollectionChangedAction with scala.Double
   ] = js.native
 }
 

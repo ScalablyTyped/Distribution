@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConnectionOptions extends js.Object {
-  var application_name: java.lang.String | scala.Null
-  var client_encoding: java.lang.String | scala.Null
-  var database: java.lang.String | scala.Null
-  var fallback_application_name: java.lang.String | scala.Null
+  var application_name: js.UndefOr[java.lang.String] = js.undefined
+  var client_encoding: js.UndefOr[java.lang.String] = js.undefined
+  var database: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  var fallback_application_name: js.UndefOr[java.lang.String] = js.undefined
   var host: java.lang.String | scala.Null
-  var password: java.lang.String | scala.Null
-  var port: scala.Double | scala.Null
-  var ssl: scala.Boolean | scala.Null
-  var user: java.lang.String | scala.Null
+  var password: js.UndefOr[java.lang.String] = js.undefined
+  var port: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  var ssl: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
+  var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ConnectionOptions {
@@ -26,8 +26,8 @@ object ConnectionOptions {
     fallback_application_name: java.lang.String = null,
     host: java.lang.String = null,
     password: java.lang.String = null,
-    port: scala.Int | scala.Double = null,
-    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    port: java.lang.String = null,
+    ssl: scala.Boolean | java.lang.String = null,
     user: java.lang.String = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
@@ -37,8 +37,8 @@ object ConnectionOptions {
     if (fallback_application_name != null) __obj.updateDynamic("fallback_application_name")(fallback_application_name)
     if (host != null) __obj.updateDynamic("host")(host)
     if (password != null) __obj.updateDynamic("password")(password)
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (port != null) __obj.updateDynamic("port")(port)
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user)
     __obj.asInstanceOf[ConnectionOptions]
   }

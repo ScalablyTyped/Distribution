@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Components[TEvent /* <: Event */] extends js.Object {
+trait Components[TEvent /* <: js.Object */] extends js.Object {
   var agenda: js.UndefOr[reactDashBigDashCalendarLib.Anon_Date] = js.undefined
   var dateCellWrapper: js.UndefOr[
     reactLib.reactMod.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
@@ -40,7 +40,7 @@ trait Components[TEvent /* <: Event */] extends js.Object {
 
 object Components {
   @scala.inline
-  def apply[TEvent /* <: Event */](
+  def apply[TEvent /* <: js.Object */](
     agenda: reactDashBigDashCalendarLib.Anon_Date = null,
     dateCellWrapper: reactLib.reactMod.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
     day: reactDashBigDashCalendarLib.Anon_Event = null,

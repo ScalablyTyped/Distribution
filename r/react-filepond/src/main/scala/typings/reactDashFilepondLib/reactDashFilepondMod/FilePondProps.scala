@@ -26,7 +26,7 @@ object FilePondProps {
     allowRevert: js.UndefOr[scala.Boolean] = js.undefined,
     beforeRemoveFile: /* file */ File => scala.Boolean = null,
     captureMethod: js.Any = null,
-    children: reactLib.reactMod.ReactElement[File] | js.Array[reactLib.reactMod.ReactElement[File]] = null,
+    children: reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement] = null,
     className: java.lang.String = null,
     dropOnElement: js.UndefOr[scala.Boolean] = js.undefined,
     dropOnPage: js.UndefOr[scala.Boolean] = js.undefined,

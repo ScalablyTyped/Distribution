@@ -85,7 +85,7 @@ trait PartialFormControlLabelProps extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
-  var control: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var control: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html] = js.undefined
   var datatype: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
@@ -365,7 +365,7 @@ object PartialFormControlLabelProps {
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,
-    control: reactLib.reactMod.ReactElement[_] = null,
+    control: reactLib.reactMod.ReactElement = null,
     dangerouslySetInnerHTML: reactLib.Anon_Html = null,
     datatype: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,

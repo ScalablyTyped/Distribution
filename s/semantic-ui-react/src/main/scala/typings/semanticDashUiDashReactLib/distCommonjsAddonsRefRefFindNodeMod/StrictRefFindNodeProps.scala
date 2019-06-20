@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StrictRefFindNodeProps extends js.Object {
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Called when a child component will be mounted or updated.
     *
@@ -18,7 +18,7 @@ trait StrictRefFindNodeProps extends js.Object {
 
 object StrictRefFindNodeProps {
   @scala.inline
-  def apply(children: reactLib.reactMod.ReactElement[_] = null, innerRef: reactLib.reactMod.Ref[_] = null): StrictRefFindNodeProps = {
+  def apply(children: reactLib.reactMod.ReactElement = null, innerRef: reactLib.reactMod.Ref[_] = null): StrictRefFindNodeProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])

@@ -17,6 +17,7 @@ class FfmpegCommand ()
   def FPS(fps: scala.Double): FfmpegCommand = js.native
   def FPSInput(fps: scala.Double): FfmpegCommand = js.native
   def FPSOutput(fps: scala.Double): FfmpegCommand = js.native
+  def _getArguments(): js.Array[java.lang.String] = js.native
   def addInput(source: java.lang.String): FfmpegCommand = js.native
   def addInput(source: nodeLib.streamMod.Readable): FfmpegCommand = js.native
   def addInputOption(options: java.lang.String*): FfmpegCommand = js.native
@@ -61,8 +62,9 @@ class FfmpegCommand ()
   def availableEncoders(callback: EncodersCallback): scala.Unit = js.native
   def availableFilters(callback: FiltersCallback): scala.Unit = js.native
   def availableFormats(callback: FormatsCallback): scala.Unit = js.native
+  def complexFilter(spec: FilterSpecification, map: js.Array[java.lang.String]): FfmpegCommand = js.native
   def complexFilter(spec: java.lang.String, map: js.Array[java.lang.String]): FfmpegCommand = js.native
-  def complexFilter(spec: js.Array[FilterSpecification], map: js.Array[java.lang.String]): FfmpegCommand = js.native
+  def complexFilter(spec: js.Array[java.lang.String | FilterSpecification], map: js.Array[java.lang.String]): FfmpegCommand = js.native
   def concat(target: java.lang.String): FfmpegCommand = js.native
   def concat(target: java.lang.String, options: fluentDashFfmpegLib.Anon_End): FfmpegCommand = js.native
   def concat(target: nodeLib.streamMod.Writable): FfmpegCommand = js.native
@@ -86,8 +88,9 @@ class FfmpegCommand ()
     options: js.Array[java.lang.String],
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, scala.Unit]
   ): scala.Unit = js.native
+  def filterGraph(spec: FilterSpecification, map: js.Array[java.lang.String]): FfmpegCommand = js.native
   def filterGraph(spec: java.lang.String, map: js.Array[java.lang.String]): FfmpegCommand = js.native
-  def filterGraph(spec: js.Array[FilterSpecification], map: js.Array[java.lang.String]): FfmpegCommand = js.native
+  def filterGraph(spec: js.Array[java.lang.String | FilterSpecification], map: js.Array[java.lang.String]): FfmpegCommand = js.native
   def flvmeta(): FfmpegCommand = js.native
   def format(format: java.lang.String): FfmpegCommand = js.native
   def fps(fps: scala.Double): FfmpegCommand = js.native

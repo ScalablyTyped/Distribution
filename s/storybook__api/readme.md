@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__api
 
-Typings are for version 5.1.8
+Typings are for version 5.1.9
 
 ## Library description:
 Core Storybook API & Context

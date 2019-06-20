@@ -32,7 +32,7 @@ object EUCMFilePrivacyState extends js.Object {
   sealed trait Public
     extends steamDashClientLib.steamDashClientMod.EUCMFilePrivacyState
   
-  /* Public | FriendsOnly | Private */ val All: All with scala.Double = js.native
+  /* 8 | 4 | 2 */ val All: All with scala.Double = js.native
   /* 4 */ val FriendsOnly: FriendsOnly with scala.Double = js.native
   /* -1 */ val Invalid: Invalid with scala.Double = js.native
   /* 2 */ val Private: Private with scala.Double = js.native

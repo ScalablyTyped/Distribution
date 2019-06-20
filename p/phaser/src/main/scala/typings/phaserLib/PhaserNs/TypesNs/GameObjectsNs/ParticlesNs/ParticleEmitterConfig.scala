@@ -9,11 +9,11 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationX} (emit only).
     */
-  var accelerationX: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var accelerationX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationY} (emit only).
     */
-  var accelerationY: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var accelerationY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#active}.
     */
@@ -21,11 +21,11 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#alpha}.
     */
-  var alpha: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object] = js.undefined
+  var alpha: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#angle} (emit only)
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#angle} (emit only).
     */
-  var angle: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var angle: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#blendMode}.
     */
@@ -33,7 +33,7 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#bounce} (emit only).
     */
-  var bounce: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var bounce: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setBounds}.
     */
@@ -69,7 +69,7 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#delay} (emit only).
     */
-  var delay: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var delay: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallback}.
     */
@@ -119,7 +119,7 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#lifespan} (emit only).
     */
-  var lifespan: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var lifespan: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxParticles}.
     */
@@ -127,19 +127,19 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityX} (emit only).
     */
-  var maxVelocityX: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var maxVelocityX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityY} (emit only).
     */
-  var maxVelocityY: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var maxVelocityY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToX} (emit only).
     */
-  var moveToX: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var moveToX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToY} (emit only).
     */
-  var moveToY: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var moveToY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#name}.
     */
@@ -159,7 +159,7 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#quantity} (emit only).
     */
-  var quantity: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var quantity: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#radial}.
     */
@@ -167,31 +167,31 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#rotate}.
     */
-  var rotate: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object] = js.undefined
+  var rotate: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setScale}.
     */
-  var scale: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object] = js.undefined
+  var scale: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#scaleX}.
     */
-  var scaleX: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object] = js.undefined
+  var scaleX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#scaleY}.
     */
-  var scaleY: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object] = js.undefined
+  var scaleY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setSpeed} (emit only).
     */
-  var speed: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var speed: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#speedX} (emit only).
     */
-  var speedX: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var speedX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#speedY} (emit only).
     */
-  var speedY: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var speedY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#timeScale}.
     */
@@ -199,7 +199,7 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#tint}.
     */
-  var tint: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var tint: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#trackVisible}.
     */
@@ -211,23 +211,23 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#x} (emit only).
     */
-  var x: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var x: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#y} (emit only).
     */
-  var y: js.UndefOr[scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object] = js.undefined
+  var y: js.UndefOr[EmitterOpOnEmitType] = js.undefined
 }
 
 object ParticleEmitterConfig {
   @scala.inline
   def apply(
-    accelerationX: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    accelerationY: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    accelerationX: EmitterOpOnEmitType = null,
+    accelerationY: EmitterOpOnEmitType = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    alpha: scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object = null,
-    angle: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    alpha: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
+    angle: EmitterOpOnEmitType = null,
     blendMode: phaserLib.PhaserNs.BlendModes | java.lang.String = null,
-    bounce: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    bounce: EmitterOpOnEmitType = null,
     bounds: ParticleEmitterBounds | ParticleEmitterBoundsAlt = null,
     callbackScope: js.Any = null,
     collideBottom: js.UndefOr[scala.Boolean] = js.undefined,
@@ -236,7 +236,7 @@ object ParticleEmitterConfig {
     collideTop: js.UndefOr[scala.Boolean] = js.undefined,
     deathCallback: js.UndefOr[scala.Boolean] = js.undefined,
     deathCallbackScope: js.Any = null,
-    delay: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    delay: EmitterOpOnEmitType = null,
     emitCallback: js.Function = null,
     emitCallbackScope: js.Any = null,
     emitZone: js.Object = null,
@@ -248,31 +248,31 @@ object ParticleEmitterConfig {
     frequency: scala.Int | scala.Double = null,
     gravityX: scala.Int | scala.Double = null,
     gravityY: scala.Int | scala.Double = null,
-    lifespan: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    lifespan: EmitterOpOnEmitType = null,
     maxParticles: js.UndefOr[phaserLib.integer] = js.undefined,
-    maxVelocityX: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    maxVelocityY: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    moveToX: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    moveToY: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    maxVelocityX: EmitterOpOnEmitType = null,
+    maxVelocityY: EmitterOpOnEmitType = null,
+    moveToX: EmitterOpOnEmitType = null,
+    moveToY: EmitterOpOnEmitType = null,
     name: java.lang.String = null,
     on: js.UndefOr[scala.Boolean] = js.undefined,
     particleBringToTop: js.UndefOr[scala.Boolean] = js.undefined,
     particleClass: phaserLib.PhaserNs.GameObjectsNs.ParticlesNs.Particle = null,
-    quantity: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    quantity: EmitterOpOnEmitType = null,
     radial: js.UndefOr[scala.Boolean] = js.undefined,
-    rotate: scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object = null,
-    scale: scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object = null,
-    scaleX: scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object = null,
-    scaleY: scala.Double | js.Array[scala.Double] | EmitterOpOnUpdateCallback | js.Object = null,
-    speed: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    speedX: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    speedY: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    rotate: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
+    scale: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
+    scaleX: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
+    scaleY: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
+    speed: EmitterOpOnEmitType = null,
+    speedX: EmitterOpOnEmitType = null,
+    speedY: EmitterOpOnEmitType = null,
     timeScale: scala.Int | scala.Double = null,
-    tint: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
+    tint: EmitterOpOnEmitType | EmitterOpOnUpdateType = null,
     trackVisible: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
-    x: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null,
-    y: scala.Double | js.Array[scala.Double] | EmitterOpOnEmitCallback | js.Object = null
+    x: EmitterOpOnEmitType = null,
+    y: EmitterOpOnEmitType = null
   ): ParticleEmitterConfig = {
     val __obj = js.Dynamic.literal()
     if (accelerationX != null) __obj.updateDynamic("accelerationX")(accelerationX.asInstanceOf[js.Any])

@@ -54,7 +54,7 @@ object DirectoryTreeProps {
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
     showLine: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
-    switcherIcon: reactLib.reactMod.ReactElement[_] = null
+    switcherIcon: reactLib.reactMod.ReactElement = null
   ): DirectoryTreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent)

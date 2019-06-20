@@ -5,24 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Ariaexpanded extends js.Object {
-  var `aria-expanded`: scala.Boolean
-  var `aria-haspopup`: reactDashOverlaysLib.reactDashOverlaysLibNumbers.`true`
-  var ref: js.UndefOr[js.Function1[/* element */ stdLib.HTMLElement, scala.Unit]] = js.undefined
-}
-
-object Anon_Ariaexpanded {
-  @scala.inline
-  def apply(
-    `aria-expanded`: scala.Boolean,
-    `aria-haspopup`: reactDashOverlaysLib.reactDashOverlaysLibNumbers.`true`,
-    ref: /* element */ stdLib.HTMLElement => scala.Unit = null
-  ): Anon_Ariaexpanded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aria-expanded")(`aria-expanded`)
-    __obj.updateDynamic("aria-haspopup")(`aria-haspopup`)
-    if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
-    __obj.asInstanceOf[Anon_Ariaexpanded]
-  }
+  var `aria-expanded`: scala.Boolean = js.native
+  var `aria-haspopup`: reactDashOverlaysLib.reactDashOverlaysLibNumbers.`true` = js.native
+  def ref(): scala.Unit = js.native
+  def ref(popperNode: stdLib.HTMLElement): scala.Unit = js.native
 }
 

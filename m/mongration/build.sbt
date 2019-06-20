@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mongration"
-version := "1.0-dt-20181018Z-5c65f9"
+version := "1.0-dt-20181018Z-a618da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-6a2d22",
-  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190531Z-6b6006",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-0023ac",
+  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190531Z-465baf",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

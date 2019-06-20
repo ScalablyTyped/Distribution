@@ -53,7 +53,7 @@ trait ColumnProps
     * props object as the first argument.
     */
   var cell: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]])
+    java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement])
   ] = js.undefined
   /**
     * This is used to uniquely identify the column, and is not
@@ -98,7 +98,7 @@ trait ColumnProps
     * props object as the first argument.
     */
   var footer: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]])
+    java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement])
   ] = js.undefined
   /**
     * The header cell for this column. This can either be a
@@ -120,7 +120,7 @@ trait ColumnProps
     * If you pass in a function, you will receive the same props object as the first argument.
     */
   var header: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]])
+    java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement])
   ] = js.undefined
   /**
     * Whether the column can be resized with the
@@ -156,13 +156,13 @@ object ColumnProps {
     width: scala.Double,
     align: java.lang.String = null,
     allowCellsRecycling: js.UndefOr[scala.Boolean] = js.undefined,
-    cell: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]]) = null,
+    cell: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement]) = null,
     children: reactLib.reactMod.ReactNode = null,
     columnKey: java.lang.String | scala.Double = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     flexGrow: scala.Int | scala.Double = null,
-    footer: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]]) = null,
-    header: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement[_]]) = null,
+    footer: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement]) = null,
+    header: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactElement]) = null,
     isResizable: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,
     maxWidth: scala.Int | scala.Double = null,

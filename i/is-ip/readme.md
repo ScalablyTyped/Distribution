@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-ip
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Check if a string is an IP address

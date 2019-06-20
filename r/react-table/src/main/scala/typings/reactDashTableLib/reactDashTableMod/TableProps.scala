@@ -98,7 +98,7 @@ trait TableProps[D, ResolvedData]
   /** Control callback for functional rendering */
   def children(
     state: FinalState[ResolvedData],
-    makeTable: js.Function0[reactLib.reactMod.ReactElement[_]],
+    makeTable: js.Function0[reactLib.reactMod.ReactElement],
     instance: Instance[ResolvedData]
   ): reactLib.reactMod.ReactNode
   /** Server-side callbacks */
@@ -130,7 +130,7 @@ object TableProps {
     TrComponent: reactLib.reactMod.ReactType[_],
     TrGroupComponent: reactLib.reactMod.ReactType[_],
     aggregatedKey: java.lang.String,
-    children: (FinalState[ResolvedData], js.Function0[reactLib.reactMod.ReactElement[_]], Instance[ResolvedData]) => reactLib.reactMod.ReactNode,
+    children: (FinalState[ResolvedData], js.Function0[reactLib.reactMod.ReactElement], Instance[ResolvedData]) => reactLib.reactMod.ReactNode,
     className: java.lang.String,
     collapseOnDataChange: scala.Boolean,
     collapseOnPageChange: scala.Boolean,

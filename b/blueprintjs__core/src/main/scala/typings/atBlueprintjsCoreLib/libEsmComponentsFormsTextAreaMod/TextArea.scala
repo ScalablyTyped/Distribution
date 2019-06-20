@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 class TextArea ()
   extends reactLib.reactMod.PureComponent[ITextAreaProps, ITextAreaState, js.Any] {
   var handleChange: js.Any = js.native
-  @JSName("state")
-  var state_TextArea: ITextAreaState = js.native
 }
 
 /* static members */

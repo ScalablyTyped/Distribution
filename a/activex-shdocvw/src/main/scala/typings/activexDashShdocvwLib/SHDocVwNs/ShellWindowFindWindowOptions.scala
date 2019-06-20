@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait ShellWindowFindWindowOptions extends js.Object
 
+object ShellWindowFindWindowOptions {
+  @scala.inline
+  def SWFO_COOKIEPASSED: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def SWFO_INCLUDEPENDING: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  def SWFO_NEEDDISPATCH: activexDashShdocvwLib.activexDashShdocvwLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

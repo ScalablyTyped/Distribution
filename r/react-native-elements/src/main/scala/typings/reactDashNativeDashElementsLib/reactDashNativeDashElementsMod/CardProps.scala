@@ -66,7 +66,7 @@ trait CardProps extends js.Object {
   /**
     * Card title
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement] = js.undefined
   /**
     * Additional title styling (if title provided)
     */
@@ -96,7 +96,7 @@ object CardProps {
     ] = null,
     imageStyle: reactDashNativeLib.reactDashNativeMod.ImageStyle = null,
     imageWrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    title: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
+    title: java.lang.String | reactLib.reactMod.ReactElement = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): CardProps = {

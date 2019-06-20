@@ -5,33 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait TPValidity extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - wiiuLib.wiiuLibNumbers.`0`
+  - wiiuLib.wiiuLibNumbers.`1`
+  - wiiuLib.wiiuLibNumbers.`2`
+  - wiiuLib.wiiuLibNumbers.`3`
+*/
+trait TPValidity extends js.Object
 
-@JSGlobal("wiiu.TPValidity")
-@js.native
-object TPValidity extends js.Object {
-  @js.native
-  sealed trait INVALID
-    extends wiiuLib.wiiuNs.TPValidity
-  
-  @js.native
-  sealed trait VALID
-    extends wiiuLib.wiiuNs.TPValidity
-  
-  @js.native
-  sealed trait X_INVALID
-    extends wiiuLib.wiiuNs.TPValidity
-  
-  @js.native
-  sealed trait Y_INVALID
-    extends wiiuLib.wiiuNs.TPValidity
-  
-  /* 3 */ val INVALID: INVALID with scala.Double = js.native
-  /* 0 */ val VALID: VALID with scala.Double = js.native
-  /* 1 */ val X_INVALID: X_INVALID with scala.Double = js.native
-  /* 2 */ val Y_INVALID: Y_INVALID with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[wiiuLib.wiiuNs.TPValidity with scala.Double] = js.native
+object TPValidity {
+  @scala.inline
+  def INVALID: wiiuLib.wiiuLibNumbers.`3` = this.cast(3)
+  @scala.inline
+  def VALID: wiiuLib.wiiuLibNumbers.`0` = this.cast(0)
+  @scala.inline
+  def X_INVALID: wiiuLib.wiiuLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def Y_INVALID: wiiuLib.wiiuLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }
 

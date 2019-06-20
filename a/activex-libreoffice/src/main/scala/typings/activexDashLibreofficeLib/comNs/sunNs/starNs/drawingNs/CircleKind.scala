@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait CircleKind extends js.Object
 
+object CircleKind {
+  /** a circle with an open cut */
+  @scala.inline
+  def ARC: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3` = this.cast(3)
+  /** a circle with a cut connected by two lines */
+  @scala.inline
+  def CUT: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2` = this.cast(2)
+  /** a full circle */
+  @scala.inline
+  def FULL: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0` = this.cast(0)
+  /** a circle with a cut connected by a line */
+  @scala.inline
+  def SECTION: activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -19,8 +19,6 @@ class MultiSelect[T] ()
   var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
-  @JSName("state")
-  var state_MultiSelect: IMultiSelectState = js.native
 }
 
 /* static members */

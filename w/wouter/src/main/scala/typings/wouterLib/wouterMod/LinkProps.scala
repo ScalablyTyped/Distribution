@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps extends js.Object {
-  var children: reactLib.reactMod.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement
   var href: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var to: js.UndefOr[java.lang.String] = js.undefined
@@ -15,7 +15,7 @@ trait LinkProps extends js.Object {
 object LinkProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[_],
+    children: reactLib.reactMod.ReactElement,
     href: java.lang.String = null,
     onClick: () => scala.Unit = null,
     to: java.lang.String = null

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Defines an operation yielding a random value within a range.
   */
-trait EmitterOpRandomStartEndConfig extends js.Object {
+trait EmitterOpRandomStartEndConfig extends _EmitterOpOnEmitType {
   /**
     * The ending value.
     */

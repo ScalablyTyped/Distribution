@@ -11,15 +11,16 @@ trait Utils extends js.Object {
   @JSName("_")
   var __Original: underscoreLib.underscoreMod.UnderscoreStatic = js.native
   var unitMap: js.Any = js.native
-  def `_`[T](value: T): underscoreLib.underscoreMod.Underscore[T] = js.native
-  def `_`[T](value: js.Array[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
+  def `_`[T](value: T): underscoreLib.underscoreMod.Underscore[T, T] = js.native
+  def `_`[T](value: js.Array[T]): underscoreLib.underscoreMod.Underscore[T, js.Array[T]] = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
     * @param key First argument to Underscore object functions.
     **/
-  def `_`[T](value: underscoreLib.underscoreMod.Dictionary[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
-  def `_`[T](value: underscoreLib.underscoreMod.List[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
+  def `_`[T](value: underscoreLib.underscoreMod.List[T]): underscoreLib.underscoreMod.Underscore[T, underscoreLib.underscoreMod.List[T]] = js.native
+  @JSName("_")
+  def __TTypeOfDictionaryVDictionary[T /* <: underscoreLib.underscoreMod.TypeOfDictionary[V] */, V /* <: underscoreLib.underscoreMod.Dictionary[_] */](value: V): underscoreLib.underscoreMod.Underscore[T, V] = js.native
   def asciiToHex(`val`: java.lang.String): java.lang.String = js.native
   def bytesToHex(`val`: js.Array[scala.Double]): java.lang.String = js.native
   def checkAddressChecksum(address: java.lang.String): scala.Boolean = js.native

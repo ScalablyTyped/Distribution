@@ -16560,6 +16560,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REGION
     extends awsDashSdkLib.clientsCostexplorerMod._Dimension
+       with awsDashSdkLib.clientsResourcegroupstaggingapiMod._GroupByAttribute
   
   @js.native
   sealed trait REGIONAL
@@ -16886,7 +16887,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RESOURCE_TYPE
-    extends awsDashSdkLib.clientsConfigserviceMod._ResourceCountGroupKey
+    extends awsDashSdkLib.clientsResourcegroupstaggingapiMod._GroupByAttribute
+       with awsDashSdkLib.clientsConfigserviceMod._ResourceCountGroupKey
   
   @js.native
   sealed trait RESPOND
@@ -19932,6 +19934,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TAM
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
+  
+  @js.native
+  sealed trait TARGET_ID
+    extends awsDashSdkLib.clientsResourcegroupstaggingapiMod._GroupByAttribute
   
   @js.native
   sealed trait TASK
@@ -23177,7 +23183,15 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
+  sealed trait c5DOT12xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait c5DOT18xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait c5DOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -37078,6 +37092,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def TAM: TAM = "TAM".asInstanceOf[TAM]
   @scala.inline
+  def TARGET_ID: TARGET_ID = "TARGET_ID".asInstanceOf[TARGET_ID]
+  @scala.inline
   def TASK: TASK = "TASK".asInstanceOf[TASK]
   @scala.inline
   def TASK_DEFINITION: TASK_DEFINITION = "TASK_DEFINITION".asInstanceOf[TASK_DEFINITION]
@@ -38458,7 +38474,11 @@ object awsDashSdkLibStrings {
   @scala.inline
   def c4DOTxlargeDOTelasticsearch: c4DOTxlargeDOTelasticsearch = "c4.xlarge.elasticsearch".asInstanceOf[c4DOTxlargeDOTelasticsearch]
   @scala.inline
+  def c5DOT12xlarge: c5DOT12xlarge = "c5.12xlarge".asInstanceOf[c5DOT12xlarge]
+  @scala.inline
   def c5DOT18xlarge: c5DOT18xlarge = "c5.18xlarge".asInstanceOf[c5DOT18xlarge]
+  @scala.inline
+  def c5DOT24xlarge: c5DOT24xlarge = "c5.24xlarge".asInstanceOf[c5DOT24xlarge]
   @scala.inline
   def c5DOT2xlarge: c5DOT2xlarge = "c5.2xlarge".asInstanceOf[c5DOT2xlarge]
   @scala.inline

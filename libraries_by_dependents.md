@@ -105,6 +105,7 @@
 | 3152 | [styled-components](./s/styled-components) | Visual primitives for the component age. Use the b
 | 3144 | [node-uuid](./n/node-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI
 | 3137 | [jsonwebtoken](./j/jsonwebtoken) | JSON Web Token implementation (symmetric and asymm
+| 3114 | [mysql](./m/mysql) | A node.js driver for mysql. It is written in JavaS
 | 3108 | [reflect-metadata](./r/reflect-metadata) | Polyfill for Metadata Reflection API
 | 3073 | [es6-promise](./e/es6-promise) | A lightweight library that provides tools for orga
 | 3049 | [minimatch](./m/minimatch) | a glob matcher in javascript
@@ -383,6 +384,7 @@
 | 671 | [metalsmith](./m/metalsmith) | An extremely simple, pluggable static site generat
 | 668 | [cron](./c/cron) | Cron jobs for your node
 | 665 | [escape-html](./e/escape-html) | Escape string for use in HTML
+| 665 | [ssh2](./s/ssh2) | SSH2 client and server modules written in pure Jav
 | 658 | [xlsx](./x/xlsx) | SheetJS Spreadsheet data parser and writer
 | 656 | [sharp](./s/sharp) | High performance Node.js image processing, the fas
 | 655 | [find-up](./f/find-up) | Find a file or directory by walking up parent dire
@@ -487,6 +489,7 @@
 | 494 | [react-motion](./r/react-motion) | A spring that solves your animation problems.
 | 493 | [babel-traverse](./b/babel-traverse) | The Babel Traverse module maintains the overall tr
 | 493 | [react-tap-event-plugin](./r/react-tap-event-plugin) | Facebook's TapEventPlugin, temporarily available o
+| 492 | [node-forge](./n/node-forge) | JavaScript implementations of network transports, 
 | 492 | [raw-body](./r/raw-body) | Get and validate the raw body of a readable stream
 | 488 | [touch](./t/touch) | like touch(1) in node
 | 488 | [urijs](./u/urijs) | URI.js is a Javascript library for working with UR
@@ -916,6 +919,7 @@
 | 232 | [hat](./h/hat) | generate random IDs and avoid collisions
 | 232 | [less-middleware](./l/less-middleware) | LESS.js middleware for connect.
 | 232 | [load-json-file](./l/load-json-file) | Read and parse a JSON file
+| 232 | [tedious](./t/tedious) | A TDS driver, for connecting to MS SQLServer datab
 | 231 | [cookie-session](./c/cookie-session) | cookie session middleware
 | 231 | [find-cache-dir](./f/find-cache-dir) | Finds the common standard cache directory
 | 231 | [fs-extra-promise](./f/fs-extra-promise) | Node file system library and fs-extra module promi
@@ -1592,7 +1596,6 @@
 | 106 | [caseless](./c/caseless) | Caseless object set/get/has, very useful when work
 | 106 | [event-target-shim](./e/event-target-shim) | An implementation of WHATWG EventTarget interface.
 | 106 | [feathersjs__errors](./f/feathersjs__errors) | Common error types for Feathers apps
-| 106 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript
 | 106 | [gulp-newer](./g/gulp-newer) | Only pass through newer source files
 | 106 | [meshblu](./m/meshblu) | Meshblu IoT network and API
 | 106 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views
@@ -1684,6 +1687,7 @@
 | 95 | [images](./i/images) | Cross-platform image decoder(webp/png/jpeg/gif) an
 | 95 | [javascript-stringify](./j/javascript-stringify) | Stringify is to eval as JSON.stringify is to JSON.
 | 95 | [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs
+| 95 | [ol](./o/ol) | OpenLayers mapping library
 | 95 | [pouchdb-find](./p/pouchdb-find) | Easy-to-use query language for PouchDB
 | 95 | [python-shell](./p/python-shell) | Run Python scripts from Node.js with simple (but e
 | 95 | [watson-developer-cloud](./w/watson-developer-cloud) | Client library to use the IBM Watson Services
@@ -1724,6 +1728,7 @@
 | 92 | [blueprintjs__core](./b/blueprintjs__core) | Core styles & components
 | 92 | [chai-http](./c/chai-http) | Extend Chai Assertion library with tests for http 
 | 92 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for 
+| 92 | [imurmurhash](./i/imurmurhash) | An incremental implementation of MurmurHash3
 | 92 | [multistream](./m/multistream) | A stream that emits multiple other streams one aft
 | 92 | [oauth2orize](./o/oauth2orize) | OAuth 2.0 authorization server toolkit for Node.js
 | 92 | [oracledb](./o/oracledb) | A Node.js module for Oracle Database access
@@ -2040,6 +2045,7 @@
 | 67 | [rmc-picker](./r/rmc-picker) | React Mobile Picker Component(web and react-native
 | 67 | [sdk-base](./s/sdk-base) | a base class for sdk with default error handler
 | 67 | [socket_dot_io-parser](./s/socket_dot_io-parser) | socket.io protocol parser
+| 67 | [ssh2-sftp-client](./s/ssh2-sftp-client) | ssh2 sftp client for node
 | 67 | [string-replace-webpack-pl](./s/string-replace-webpack-plugin) | Replace string tokens in the contents of a file.
 | 67 | [vfile](./v/vfile) | Virtual file format for text processing
 | 67 | [web3-eth-abi](./w/web3-eth-abi) | Web3 module encode and decode EVM in/output.
@@ -2502,6 +2508,7 @@
 | 45 | [is-callable](./i/is-callable) | Is this JS value callable? Works with Functions an
 | 45 | [loader-runner](./l/loader-runner) | Runs (webpack) loaders
 | 45 | [lodash_dot_remove](./l/lodash_dot_remove) | The lodash method _.remove exported as a module.
+| 45 | [logfmt](./l/logfmt) | key=value logger and parser
 | 45 | [minio](./m/minio) | S3 Compatible Cloud Storage client
 | 45 | [nvd3](./n/nvd3) | A reusable charting library written in d3.js
 | 45 | [react-s-alert](./r/react-s-alert) | Alerts / Notifications for React with rich configu
@@ -2684,6 +2691,7 @@
 | 38 | [chai-subset](./c/chai-subset) | Object properties matcher for Chai
 | 38 | [constant-case](./c/constant-case) | Constant case a string
 | 38 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
+| 38 | [firmata](./f/firmata) | Firmata protocol implementation for programmatic i
 | 38 | [flush-write-stream](./f/flush-write-stream) | A write stream constructor that supports a flush f
 | 38 | [gulp-protractor](./g/gulp-protractor) | A helper for protactor and gulp
 | 38 | [icss-utils](./i/icss-utils) | ICSS utils for postcss ast
@@ -2792,6 +2800,7 @@
 | 35 | [multer-s3](./m/multer-s3) | Streaming multer storage engine for AWS S3
 | 35 | [mustache-express](./m/mustache-express) | Use mustache, including partials, in Express 3
 | 35 | [natural-compare](./n/natural-compare) | Compare strings containing a mix of letters and nu
+| 35 | [openid](./o/openid) | OpenID 1.1/2.0 library for node.js
 | 35 | [passport-auth0](./p/passport-auth0) | Auth0 platform authentication strategy for Passpor
 | 35 | [passport-github2](./p/passport-github2) | GitHub authentication strategy for Passport.
 | 35 | [qunit](./q/qunit) | An easy-to-use JavaScript Unit Testing framework.
@@ -3164,6 +3173,7 @@
 | 25 | [global-prefix](./g/global-prefix) | Get the npm global path prefix.
 | 25 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects)
 | 25 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and pa
+| 25 | [json-file-plus](./j/json-file-plus) | Read from and write to a JSON file, minimizing dif
 | 25 | [lodash_dot_maxby](./l/lodash_dot_maxby) | The lodash method _.maxBy exported as a module.
 | 25 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format
 | 25 | [node-json-db](./n/node-json-db) | Database using JSON file as storage for Node.JS
@@ -3328,6 +3338,7 @@
 | 22 | [urlrouter](./u/urlrouter) | connect missing router middleware, support express
 | 22 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress.
 | 22 | [workerpool](./w/workerpool) | Offload tasks to a pool of workers on node.js and 
+| 22 | [xml-formatter](./x/xml-formatter) | Converts XML into a human readable format (pretty 
 | 21 | [accept](./a/accept) | HTTP Accept-* headers parsing
 | 21 | [activex-helpers](./a/activex-helpers) | Event handler management, and parameterized proper
 | 21 | [angular-formly](./a/angular-formly) | AngularJS directive which takes JSON representing 
@@ -3370,6 +3381,7 @@
 | 21 | [passport-anonymous](./p/passport-anonymous) | Anonymous authentication strategy for Passport.
 | 21 | [phosphor__dragdrop](./p/phosphor__dragdrop) | PhosphorJS - Drag and Drop
 | 21 | [phosphor__properties](./p/phosphor__properties) | PhosphorJS - Attached Properties
+| 21 | [pi-spi](./p/pi-spi) | Simple async SPI library for Raspberry Pi
 | 21 | [pouchdb-replication](./p/pouchdb-replication) | PouchDB's replication and sync algorithm, as a plu
 | 21 | [prismic-dom](./p/prismic-dom) | render prismic json fragments in HTML
 | 21 | [prosemirror-dropcursor](./p/prosemirror-dropcursor) | Drop cursor plugin for ProseMirror
@@ -3496,6 +3508,7 @@
 | 19 | [structured-source](./s/structured-source) | Provides StructuredSource and functionality for co
 | 19 | [swfobject](./s/swfobject) | SWFObject is an easy-to-use and standards-friendly
 | 19 | [tarn](./t/tarn) | Simple and robust resource pool for node.js
+| 19 | [tedious-connection-pool](./t/tedious-connection-pool) | Connection Pool for tedious.
 | 19 | [textract](./t/textract) | Extracting text from files of various type includi
 | 19 | [tough-cookie-file-store](./t/tough-cookie-file-store) | Another file store for tough-cookie module
 | 19 | [vscode](./v/vscode) | The vscode NPM module provides VS Code extension a
@@ -3721,6 +3734,7 @@
 | 15 | [rx-lite-aggregates](./r/rx-lite-aggregates) | Lightweight library with aggregate functions for c
 | 15 | [sandboxed-module](./s/sandboxed-module) | A sandboxed Node.js module loader that lets you in
 | 15 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface
+| 15 | [ssh2-streams](./s/ssh2-streams) | SSH2 and SFTP(v3) client/server protocol streams f
 | 15 | [storybook__addon-a11y](./s/storybook__addon-a11y) | a11y addon for storybook
 | 15 | [storybook__addon-centered](./s/storybook__addon-centered) | Storybook decorator to center components
 | 15 | [streaming-json-stringify](./s/streaming-json-stringify) | Streaming JSON.stringify()
@@ -3847,7 +3861,6 @@
 | 13 | [lory_dot_js](./l/lory_dot_js) | Touch enabled minimalistic slider written in vanil
 | 13 | [material__grid-list](./m/material__grid-list) | The Material Components for the web grid list comp
 | 13 | [mobx-react-lite](./m/mobx-react-lite) | Lightweight React bindings for MobX based on React
-| 13 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 13 | [nanoajax](./n/nanoajax) | A small ajax lib
 | 13 | [nivo__axes](./n/nivo__axes) | -
 | 13 | [nodecredstash](./n/nodecredstash) | Node.js credstash implementation
@@ -3982,6 +3995,7 @@
 | 11 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations
 | 11 | [event-loop-lag](./e/event-loop-lag) | Measure event loop lag
 | 11 | [express-formidable](./e/express-formidable) | An Express middleware of Formidable that just work
+| 11 | [express-myconnection](./e/express-myconnection) | Connect/Express middleware that auto provides mysq
 | 11 | [fancybox](./f/fancybox) | fancyBox is a tool that offers a nice and elegant 
 | 11 | [fined](./f/fined) | Find a file given a declaration of locations.
 | 11 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o
@@ -4246,6 +4260,7 @@
 | 9 | [react-qr-reader](./r/react-qr-reader) | A react component for reading QR codes from the we
 | 9 | [react-resolver](./r/react-resolver) | Async-rendering & data-fetching for universal Reac
 | 9 | [react-weui](./r/react-weui) | weui for react
+| 9 | [receptacle](./r/receptacle) | In memory cache lru cache with ttl support.
 | 9 | [redis-mock](./r/redis-mock) | Redis client mock object for unit testing
 | 9 | [roslib](./r/roslib) | The standard ROS Javascript Library
 | 9 | [safe-compare](./s/safe-compare) | Constant-time comparison algorithm to prevent timi
@@ -4780,6 +4795,7 @@
 | 5 | [png_dot_js](./p/png_dot_js) | A PNG decoder fully written in JavaScript
 | 5 | [pouchdb-adapter-websql](./p/pouchdb-adapter-websql) | PouchDB adapter using WebSQL as its data store.
 | 5 | [preval_dot_macro](./p/preval_dot_macro) | Pre-evaluate code at build-time with babel-macros
+| 5 | [prex](./p/prex) | Async coordination primitives and extensions on to
 | 5 | [prosemirror-collab](./p/prosemirror-collab) | Collaborative editing for ProseMirror
 | 5 | [protoc-plugin](./p/protoc-plugin) | Create protoc code-generation plugins easily in no
 | 5 | [proxy-lists](./p/proxy-lists) | Get proxies from publicly available proxy lists.
@@ -4869,6 +4885,7 @@
 | 4 | [empty-trash](./e/empty-trash) | Empty the trash
 | 4 | [ensure-error](./e/ensure-error) | Ensures a value is a valid error by making it one 
 | 4 | [env-editor](./e/env-editor) | Get metadata on the default editor or a specific e
+| 4 | [esfx__cancelable](./e/esfx__cancelable) | A low-level Symbol-based API for defining a common
 | 4 | [espruino](./e/espruino) | Command Line Interface and library for Communicati
 | 4 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 4 | [express-oauth-server](./e/express-oauth-server) | OAuth provider for express
@@ -4936,12 +4953,14 @@
 | 4 | [nedb-logger](./n/nedb-logger) | Logger outputting messages to a file in a nedb-rea
 | 4 | [next-redux-saga](./n/next-redux-saga) | redux-saga HOC for Next.js
 | 4 | [ng-cordova](./n/ng-cordova) | -
+| 4 | [node-snap7](./n/node-snap7) | Native node.js addon/wrapper for snap7
 | 4 | [obj-str](./o/obj-str) | A tiny library for serializing Object values to St
 | 4 | [osrm](./o/osrm) | The Open Source Routing Machine is a high performa
 | 4 | [phosphor__keyboard](./p/phosphor__keyboard) | PhosphorJS - Keyboard
 | 4 | [plugapi](./p/plugapi) | Generic API for building plug.dj bots
 | 4 | [pouchdb-live-find](./p/pouchdb-live-find) | Live PouchDB queries that update automatically as 
 | 4 | [precise](./p/precise) | Precision timer for nanosecond differences
+| 4 | [promise-sftp](./p/promise-sftp) | a promise-based sftp client for node.js
 | 4 | [promised-temp](./p/promised-temp) | Tool for making temporary files asynchronously tha
 | 4 | [protractor-browser-logs](./p/protractor-browser-logs) | Provides tools for asserting browser logs inside p
 | 4 | [provinces](./p/provinces) | state and province lists for countries
@@ -5218,6 +5237,7 @@
 | 3 | [snowball-stemmers](./s/snowball-stemmers) | JS Port from Snowball Stemmers http://snowball.tar
 | 3 | [square-connect](./s/square-connect) | JavaScript client library for the Square Connect v
 | 3 | [starwars-names](./s/starwars-names) | Get random Star Wars names
+| 3 | [steam-client](./s/steam-client) | SteamClient from node-steam with proper versioning
 | 3 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr
 | 3 | [storybook-addon-jsx](./s/storybook-addon-jsx) | Display the JSX of the story
 | 3 | [storybook-react-router](./s/storybook-react-router) | A storybook decorator that allows you to use routi
@@ -5300,6 +5320,7 @@
 | 2 | [driftless](./d/driftless) | Driftless setInterval and setTimeout replacement f
 | 2 | [dropkickjs](./d/dropkickjs) | A JavaScript plugin for creating beautiful, gracef
 | 2 | [easeljs](./e/easeljs) | EaselJS is a library for building high-performance
+| 2 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for 
 | 2 | [electron-spellchecker](./e/electron-spellchecker) | Implement spellchecking, correctly
 | 2 | [eq_dot_js](./e/eq_dot_js) | Element queries, fast and light
 | 2 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam
@@ -5436,6 +5457,7 @@
 | 2 | [nivo__heatmap](./n/nivo__heatmap) | -
 | 2 | [nivo__radar](./n/nivo__radar) | -
 | 2 | [nivo__waffle](./n/nivo__waffle) | -
+| 2 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 2 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support
 | 2 | [npm-registry-package-info](./n/npm-registry-package-info) | Get package info for one or more packages.
 | 2 | [obelisk_dot_js](./o/obelisk_dot_js) | JavaScript Library for Building Pixel Isometric El
@@ -5636,6 +5658,7 @@
 | 1 | [dotfile-regex](./d/dotfile-regex) | Regular expresson for matching dotfiles.
 | 1 | [durandal](./d/durandal) | Durandal is a cross-device, cross-platform client 
 | 1 | [dv](./d/dv) | DocumentVision is a node.js library for processing
+| 1 | [dwt](./d/dwt) | Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanni
 | 1 | [easy-jsend](./e/easy-jsend) | Adds jSend response functions to express.response 
 | 1 | [easy-x-headers](./e/easy-x-headers) | X-headers to object mapper
 | 1 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos
@@ -5643,6 +5666,7 @@
 | 1 | [env-to-object](./e/env-to-object) | Maps environment variables to a configuration obje
 | 1 | [enzyme-adapter-react-15_d](./e/enzyme-adapter-react-15_dot_4) | JavaScript Testing utilities for React
 | 1 | [enzyme-redux](./e/enzyme-redux) | Test utils to simplify testing of containers in re
+| 1 | [esfx__disposable](./e/esfx__disposable) | A low-level API for defining explicit resource man
 | 1 | [esri-leaflet-geocoder](./e/esri-leaflet-geocoder) | Esri Geocoding utility and search plugin for Leafl
 | 1 | [event-hooks-webpack-plugi](./e/event-hooks-webpack-plugin) | Execute JavaScript on any available Webpack event 
 | 1 | [ex-react-native-i18n](./e/ex-react-native-i18n) | Exponentisation of => React Native and I18n.js int
@@ -5683,6 +5707,7 @@
 | 1 | [gl-react-expo](./g/gl-react-expo) | React Native via Expo implementation of gl-react, 
 | 1 | [go](./g/go) | Create and use boilerplates with ease
 | 1 | [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js
+| 1 | [grammarkdown](./g/grammarkdown) | Markdown-like DSL for defining syntactic grammars 
 | 1 | [graphql-api-koa](./g/graphql-api-koa) | GraphQL API Koa middleware; the first Node.js Grap
 | 1 | [graphql-react](./g/graphql-react) | A lightweight but powerful GraphQL client for Reac
 | 1 | [graphql-resolve-batch](./g/graphql-resolve-batch) | A GraphQL batching model which groups execution by
@@ -5783,6 +5808,8 @@
 | 1 | [leaflet_dot_polylinemeasu](./l/leaflet_dot_polylinemeasure) | Leaflet Plugin to measure distances of simple line
 | 1 | [libpq](./l/libpq) | Low-level native bindings to PostgreSQL libpq
 | 1 | [license-checker-webpack-p](./l/license-checker-webpack-plugin) | Verifies licenses of all external dependencies in 
+| 1 | [linkify-issues](./l/linkify-issues) | Linkify GitHub issue references
+| 1 | [linkify-urls](./l/linkify-urls) | Linkify URLs in a string
 | 1 | [localized-strings](./l/localized-strings) | Simple module to localize the strings of any JS ba
 | 1 | [lodash_dot_add](./l/lodash_dot_add) | The lodash method _.add exported as a module.
 | 1 | [lodash_dot_flatmapdeep](./l/lodash_dot_flatmapdeep) | The lodash method _.flatMapDeep exported as a modu
@@ -5821,6 +5848,7 @@
 | 1 | [native-toast](./n/native-toast) | Native-like toast notification but for the web.
 | 1 | [navigation](./n/navigation) | The data-first JavaScript router
 | 1 | [navigation-react](./n/navigation-react) | React plugin for the Navigation router
+| 1 | [ndn-js](./n/ndn-js) | A JavaScript client library for Named Data Network
 | 1 | [negative-array](./n/negative-array) | Negative array index support array
 | 1 | [new-github-release-url](./n/new-github-release-url) | Generate a URL for opening a new GitHub release wi
 | 1 | [ng-grid](./n/ng-grid) | __Contributors:__
@@ -6074,6 +6102,7 @@
 | 0 | [color-check](./c/color-check) | Color Check is a very tine library for checking yo
 | 0 | [com_dot_darktalker_dot_co](./c/com_dot_darktalker_dot_cordova_dot_screenshot) | screenshot PhoneGap Plugin for Android
 | 0 | [com_dot_wikitude_dot_phon](./c/com_dot_wikitude_dot_phonegap_dot_wikitudeplugin) | Augmented Reality Wikitude SDK Plugin 
+| 0 | [commons-validator-js](./c/commons-validator-js) | JavaScript port of Apache Commons Validator
 | 0 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0 | [complex](./c/complex) | Do calculations with Complex numbers
 | 0 | [confirmdialog](./c/confirmdialog) | -
@@ -6202,6 +6231,7 @@
 | 0 | [ignite-ui](./i/ignite-ui) | Ignite UI by Infragistics
 | 0 | [instabug-reactnative](./i/instabug-reactnative) | React Native plugin for integrating the Instabug S
 | 0 | [inversify-devtools](./i/inversify-devtools) | inversify-devtools
+| 0 | [iobroker](./i/iobroker) | automate your life - platfom
 | 0 | [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core
 | 0 | [isbn-utils](./i/isbn-utils) | Library to parse and normalize ISBNs
 | 0 | [iso8601-localizer](./i/iso8601-localizer) | Simple to use getTimezoneOffset based ISO8601 loca
@@ -6502,6 +6532,7 @@
 | 0 | [socket_dot_io_dot_users](./s/socket_dot_io_dot_users) | This module finds and manages which socket is from
 | 0 | [socketty](./s/socketty) | Server side socketty, based on ws
 | 0 | [soundjs](./s/soundjs) | A JavaScript library that provides a simple API, a
+| 0 | [soupbintcp](./s/soupbintcp) | NASDAQ SoupBinTCP 3.00 client and server
 | 0 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan
 | 0 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API"
 | 0 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a numb
@@ -6555,6 +6586,7 @@
 | 0 | [voximplant-websdk](./v/voximplant-websdk) | VoxImplant Web SDK for embedding voice and video c
 | 0 | [weapp-api](./w/weapp-api) | wechat api
 | 0 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices
+| 0 | [webcl](./w/webcl) | OpenCL bindings for Node.js
 | 0 | [webicon](./w/webicon) | Icon library
 | 0 | [webpack-env](./w/webpack-env) | read variables from a .env.js file and make them a
 | 0 | [webprogbase-console-view](./w/webprogbase-console-view) | Console browser and server app module with simplif

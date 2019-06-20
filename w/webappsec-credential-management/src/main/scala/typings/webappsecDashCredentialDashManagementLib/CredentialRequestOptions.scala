@@ -18,7 +18,9 @@ trait CredentialRequestOptions extends js.Object {
     * This property specifies the mediation requirements for a given credential
     * request.
     */
-  var mediation: js.UndefOr[CredentialMediationRequirement] = js.undefined
+  var mediation: js.UndefOr[
+    webappsecDashCredentialDashManagementLib.webappsecDashCredentialDashManagementLibStrings.silent | webappsecDashCredentialDashManagementLib.webappsecDashCredentialDashManagementLibStrings.optional | webappsecDashCredentialDashManagementLib.webappsecDashCredentialDashManagementLibStrings.required
+  ] = js.undefined
   /**
     * If set, the user agent will request {@link PasswordCredential} objects.
     * Defaults to {@code false}.
@@ -45,7 +47,7 @@ object CredentialRequestOptions {
   @scala.inline
   def apply(
     federated: FederatedCredentialRequestOptions = null,
-    mediation: CredentialMediationRequirement = null,
+    mediation: webappsecDashCredentialDashManagementLib.webappsecDashCredentialDashManagementLibStrings.silent | webappsecDashCredentialDashManagementLib.webappsecDashCredentialDashManagementLibStrings.optional | webappsecDashCredentialDashManagementLib.webappsecDashCredentialDashManagementLibStrings.required = null,
     password: js.UndefOr[scala.Boolean] = js.undefined,
     publicKey: PublicKeyCredentialRequestOptions = null,
     signal: stdLib.AbortSignal = null,
@@ -53,7 +55,7 @@ object CredentialRequestOptions {
   ): CredentialRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (federated != null) __obj.updateDynamic("federated")(federated)
-    if (mediation != null) __obj.updateDynamic("mediation")(mediation)
+    if (mediation != null) __obj.updateDynamic("mediation")(mediation.asInstanceOf[js.Any])
     if (!js.isUndefined(password)) __obj.updateDynamic("password")(password)
     if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
     if (signal != null) __obj.updateDynamic("signal")(signal)

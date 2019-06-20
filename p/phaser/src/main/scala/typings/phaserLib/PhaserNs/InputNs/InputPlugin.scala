@@ -27,7 +27,12 @@ import scala.scalajs.js.annotation._
   * sprite.on('pointerdown', callback, context);
   * ```
   * 
-  * Please see the Input examples and tutorials for more information.
+  * There are lots of game configuration options available relating to input.
+  * See the [Input Config object]{@linkcode Phaser.Types.Core.InputConfig} for more details, including how to deal with Phaser
+  * listening for input events outside of the canvas, how to set a default number of pointers, input
+  * capture settings and more.
+  * 
+  * Please also see the Input examples and tutorials for further information.
   */
 @JSGlobal("Phaser.Input.InputPlugin")
 @js.native
@@ -59,7 +64,7 @@ class InputPlugin protected ()
     */
   var dragTimeThreshold: scala.Double = js.native
   /**
-    * If set, the Input Plugin will run its update loop every frame.
+    * If `true` this Input Plugin will process DOM input events.
     */
   var enabled: scala.Boolean = js.native
   /**
@@ -155,7 +160,7 @@ class InputPlugin protected ()
     * 
     * This property only controls how often they will be polled if they have not been updated.
     * You should set this if you want to have Game Objects constantly check against the pointers, even
-    * if the pointer didn't move itself.
+    * if the pointer didn't itself move.
     * 
     * Set to 0 to poll constantly. Set to -1 to only poll on user movement.
     */
@@ -190,66 +195,6 @@ class InputPlugin protected ()
     */
   val y: scala.Double = js.native
   /**
-    * **Note:** As of Phaser 3.16 this method is no longer required _unless_ you have set `input.queue = true`
-    * in your game config, to force it to use the legacy event queue system. This method is deprecated and
-    * will be removed in a future version.
-    * 
-    * Adds a callback to be invoked whenever the native DOM `mousedown` or `touchstart` events are received.
-    * By setting the `isOnce` argument you can control if the callback is called once,
-    * or every time the DOM event occurs.
-    * 
-    * Callbacks passed to this method are invoked _immediately_ when the DOM event happens,
-    * within the scope of the DOM event handler. Therefore, they are considered as 'native'
-    * from the perspective of the browser. This means they can be used for tasks such as
-    * opening new browser windows, or anything which explicitly requires user input to activate.
-    * However, as a result of this, they come with their own risks, and as such should not be used
-    * for general game input, but instead be reserved for special circumstances.
-    * 
-    * If all you're trying to do is execute a callback when a pointer is down, then
-    * please use the internal Input event system instead.
-    * 
-    * Please understand that these callbacks are invoked when the browser feels like doing so,
-    * which may be entirely out of the normal flow of the Phaser Game Loop. Therefore, you should absolutely keep
-    * Phaser related operations to a minimum in these callbacks. For example, don't destroy Game Objects,
-    * change Scenes or manipulate internal systems, otherwise you run a very real risk of creating
-    * heisenbugs (https://en.wikipedia.org/wiki/Heisenbug) that prove a challenge to reproduce, never mind
-    * solve.
-    * @param callback The callback to be invoked on this dom event.
-    * @param isOnce `true` if the callback will only be invoked once, `false` to call every time this event happens. Default true.
-    */
-  def addDownCallback(callback: js.Function): this.type = js.native
-  def addDownCallback(callback: js.Function, isOnce: scala.Boolean): this.type = js.native
-  /**
-    * **Note:** As of Phaser 3.16 this method is no longer required _unless_ you have set `input.queue = true`
-    * in your game config, to force it to use the legacy event queue system. This method is deprecated and
-    * will be removed in a future version.
-    * 
-    * Adds a callback to be invoked whenever the native DOM `mousemove` or `touchmove` events are received.
-    * By setting the `isOnce` argument you can control if the callback is called once,
-    * or every time the DOM event occurs.
-    * 
-    * Callbacks passed to this method are invoked _immediately_ when the DOM event happens,
-    * within the scope of the DOM event handler. Therefore, they are considered as 'native'
-    * from the perspective of the browser. This means they can be used for tasks such as
-    * opening new browser windows, or anything which explicitly requires user input to activate.
-    * However, as a result of this, they come with their own risks, and as such should not be used
-    * for general game input, but instead be reserved for special circumstances.
-    * 
-    * If all you're trying to do is execute a callback when a pointer is moved, then
-    * please use the internal Input event system instead.
-    * 
-    * Please understand that these callbacks are invoked when the browser feels like doing so,
-    * which may be entirely out of the normal flow of the Phaser Game Loop. Therefore, you should absolutely keep
-    * Phaser related operations to a minimum in these callbacks. For example, don't destroy Game Objects,
-    * change Scenes or manipulate internal systems, otherwise you run a very real risk of creating
-    * heisenbugs (https://en.wikipedia.org/wiki/Heisenbug) that prove a challenge to reproduce, never mind
-    * solve.
-    * @param callback The callback to be invoked on this dom event.
-    * @param isOnce `true` if the callback will only be invoked once, `false` to call every time this event happens. Default false.
-    */
-  def addMoveCallback(callback: js.Function): this.type = js.native
-  def addMoveCallback(callback: js.Function, isOnce: scala.Boolean): this.type = js.native
-  /**
     * Adds new Pointer objects to the Input Manager.
     * 
     * By default Phaser creates 2 pointer objects: `mousePointer` and `pointer1`.
@@ -263,36 +208,6 @@ class InputPlugin protected ()
     */
   def addPointer(): js.Array[Pointer] = js.native
   def addPointer(quantity: phaserLib.integer): js.Array[Pointer] = js.native
-  /**
-    * **Note:** As of Phaser 3.16 this method is no longer required _unless_ you have set `input.queue = true`
-    * in your game config, to force it to use the legacy event queue system. This method is deprecated and
-    * will be removed in a future version.
-    * 
-    * Adds a callback to be invoked whenever the native DOM `mouseup` or `touchend` events are received.
-    * By setting the `isOnce` argument you can control if the callback is called once,
-    * or every time the DOM event occurs.
-    * 
-    * Callbacks passed to this method are invoked _immediately_ when the DOM event happens,
-    * within the scope of the DOM event handler. Therefore, they are considered as 'native'
-    * from the perspective of the browser. This means they can be used for tasks such as
-    * opening new browser windows, or anything which explicitly requires user input to activate.
-    * However, as a result of this, they come with their own risks, and as such should not be used
-    * for general game input, but instead be reserved for special circumstances.
-    * 
-    * If all you're trying to do is execute a callback when a pointer is released, then
-    * please use the internal Input event system instead.
-    * 
-    * Please understand that these callbacks are invoked when the browser feels like doing so,
-    * which may be entirely out of the normal flow of the Phaser Game Loop. Therefore, you should absolutely keep
-    * Phaser related operations to a minimum in these callbacks. For example, don't destroy Game Objects,
-    * change Scenes or manipulate internal systems, otherwise you run a very real risk of creating
-    * heisenbugs (https://en.wikipedia.org/wiki/Heisenbug) that prove a challenge to reproduce, never mind
-    * solve.
-    * @param callback The callback to be invoked on this DOM event.
-    * @param isOnce `true` if the callback will only be invoked once, `false` to call every time this event happens. Default true.
-    */
-  def addUpCallback(callback: js.Function): this.type = js.native
-  def addUpCallback(callback: js.Function, isOnce: scala.Boolean): this.type = js.native
   /**
     * Clears a Game Object so it no longer has an Interactive Object associated with it.
     * The Game Object is then queued for removal from the Input Plugin on the next update.
@@ -739,8 +654,16 @@ class InputPlugin protected ()
     */
   def sortGameObjects(gameObjects: js.Array[phaserLib.PhaserNs.GameObjectsNs.GameObject]): js.Array[phaserLib.PhaserNs.GameObjectsNs.GameObject] = js.native
   /**
-    * Causes the Input Manager to stop emitting any events for the remainder of this game step.
+    * This method should be called from within an input event handler, such as `pointerdown`.
+    * 
+    * When called, it stops the Input Manager from allowing _this specific event_ to be processed by any other Scene
+    * not yet handled in the scene list.
     */
   def stopPropagation(): InputPlugin = js.native
+  /**
+    * This is called automatically by the Input Manager.
+    * It emits events for plugins to listen to and also handles polling updates, if enabled.
+    */
+  def updatePoll(): scala.Boolean = js.native
 }
 

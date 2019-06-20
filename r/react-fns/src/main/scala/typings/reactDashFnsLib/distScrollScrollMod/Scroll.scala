@@ -13,8 +13,6 @@ class Scroll ()
       ScrollProps, 
       js.Any
     ] {
-  @JSName("state")
-  var state_Scroll: ScrollProps = js.native
   @JSName("componentDidMount")
   def componentDidMount_MScroll(): scala.Unit = js.native
   @JSName("componentWillUnmount")

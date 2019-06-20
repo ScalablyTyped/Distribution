@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "promise-pg"
-version := "0.0-unknown-dt-20190322Z-aa9145"
+version := "0.0-unknown-dt-20190322Z-b9c4fd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-858b0e",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-cba12e",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-37c6f2",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-8ae339",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-e22ffc",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-e11d4d",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

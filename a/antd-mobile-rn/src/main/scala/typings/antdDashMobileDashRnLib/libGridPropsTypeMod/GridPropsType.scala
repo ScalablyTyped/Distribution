@@ -18,7 +18,7 @@ trait GridPropsType extends js.Object {
     js.Function2[
       /* dataItem */ js.UndefOr[DataItem], 
       /* itemIndex */ scala.Double, 
-      reactLib.reactMod.ReactElement[_]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
 }
@@ -32,7 +32,7 @@ object GridPropsType {
     hasLine: js.UndefOr[scala.Boolean] = js.undefined,
     isCarousel: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ scala.Double) => scala.Unit = null,
-    renderItem: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactElement[_] = null
+    renderItem: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactElement = null
   ): GridPropsType = {
     val __obj = js.Dynamic.literal()
     if (carouselMaxRow != null) __obj.updateDynamic("carouselMaxRow")(carouselMaxRow.asInstanceOf[js.Any])

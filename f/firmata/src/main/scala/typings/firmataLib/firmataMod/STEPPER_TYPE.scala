@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait STEPPER_TYPE extends js.Object
 
+object STEPPER_TYPE {
+  @scala.inline
+  def DRIVER: firmataLib.firmataLibNumbers.`1` = this.cast(1)
+  @scala.inline
+  def FOUR_WIRE: firmataLib.firmataLibNumbers.`4` = this.cast(4)
+  @scala.inline
+  def TWO_WIRE: firmataLib.firmataLibNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

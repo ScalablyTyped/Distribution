@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sharepoint"
-version := "2016.1-dt-20190322Z-6deaa4"
+version := "2016.1-dt-20190322Z-e28231"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "microsoft-ajax" % "0.0-unknown-dt-20190322Z-4d3e68",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "microsoft-ajax" % "0.0-unknown-dt-20190620Z-3fb6a3",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

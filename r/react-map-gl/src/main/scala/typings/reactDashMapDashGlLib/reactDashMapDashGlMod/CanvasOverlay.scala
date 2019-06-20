@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-map-gl", "CanvasOverlay")
 @js.native
-class CanvasOverlay () extends BaseControl[CanvasOverlayProps]
+class CanvasOverlay ()
+  extends BaseControl[CanvasOverlayProps, stdLib.HTMLCanvasElement]
 

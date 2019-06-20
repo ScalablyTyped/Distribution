@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "universal-router"
-version := "8.2.0-5cb96c"
+version := "8.2.0-911e20"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-3f529a",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-8b96e9",
+  "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

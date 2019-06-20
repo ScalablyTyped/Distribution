@@ -15,14 +15,3 @@ import scala.scalajs.js.annotation._
 */
 trait ObjectKind extends js.Object
 
-object ObjectKind {
-  @scala.inline
-  def Class: fridaDashGumLib.fridaDashGumLibStrings.`class` = this.cast("class")
-  @scala.inline
-  def Instance: fridaDashGumLib.fridaDashGumLibStrings.instance = this.cast("instance")
-  @scala.inline
-  def MetaClass: fridaDashGumLib.fridaDashGumLibStrings.`meta-class` = this.cast("meta-class")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-}
-

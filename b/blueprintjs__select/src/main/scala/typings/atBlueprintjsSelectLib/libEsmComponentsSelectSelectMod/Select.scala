@@ -22,8 +22,6 @@ class Select[T] ()
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
   var resetQuery: js.Any = js.native
-  @JSName("state")
-  var state_Select: ISelectState = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSelect(_prevProps: ISelectProps[T], prevState: ISelectState): scala.Unit = js.native
   /* private */ def maybeRenderClearButton(query: js.Any): js.Any = js.native

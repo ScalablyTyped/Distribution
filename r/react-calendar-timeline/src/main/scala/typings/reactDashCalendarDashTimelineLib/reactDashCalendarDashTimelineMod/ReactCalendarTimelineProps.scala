@@ -19,7 +19,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   var groupRenderer: js.UndefOr[
     js.Function1[
       /* props */ reactDashCalendarDashTimelineLib.Anon_Group, 
-      reactLib.reactMod.ReactElement[js.Object]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   var groups: js.Array[TimelineGroup]
@@ -31,7 +31,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   var itemRenderer: js.UndefOr[
     js.Function1[
       /* props */ reactDashCalendarDashTimelineLib.Anon_Context, 
-      reactLib.reactMod.ReactElement[js.Object]
+      reactLib.reactMod.ReactElement
     ]
   ] = js.undefined
   var itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined
@@ -130,13 +130,13 @@ object ReactCalendarTimelineProps {
     defaultTimeEnd: js.Any = null,
     defaultTimeStart: js.Any = null,
     dragSnap: scala.Int | scala.Double = null,
-    groupRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Group => reactLib.reactMod.ReactElement[js.Object] = null,
+    groupRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Group => reactLib.reactMod.ReactElement = null,
     headerLabelFormats: TimelineHeaderLabelFormat = null,
     headerLabelGroupHeight: scala.Int | scala.Double = null,
     headerLabelHeight: scala.Int | scala.Double = null,
     headerRef: js.Any = null,
     itemHeightRatio: scala.Int | scala.Double = null,
-    itemRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Context => reactLib.reactMod.ReactElement[js.Object] = null,
+    itemRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Context => reactLib.reactMod.ReactElement = null,
     itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined,
     keys: reactDashCalendarDashTimelineLib.Anon_GroupIdKey = null,
     lineHeight: scala.Int | scala.Double = null,

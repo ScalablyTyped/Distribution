@@ -613,6 +613,27 @@ object UtilsNs extends js.Object {
     
   }
   
+  @JSName("Base64")
+  @js.native
+  object Base64Ns extends js.Object {
+    /**
+      * Converts an ArrayBuffer into a base64 string.
+      * 
+      * The resulting string can optionally be a data uri if the `mediaType` argument is provided.
+      * 
+      * See https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs for more details.
+      * @param arrayBuffer The Array Buffer to encode.
+      * @param mediaType An optional media type, i.e. `audio/ogg` or `image/jpeg`. If included the resulting string will be a data URI.
+      */
+    def ArrayBufferToBase64(arrayBuffer: stdLib.ArrayBuffer): java.lang.String = js.native
+    def ArrayBufferToBase64(arrayBuffer: stdLib.ArrayBuffer, mediaType: java.lang.String): java.lang.String = js.native
+    /**
+      * Converts a base64 string, either with or without a data uri, into an Array Buffer.
+      * @param base64 The base64 string to be decoded. Can optionally contain a data URI header, which will be stripped out prior to decoding.
+      */
+    def Base64ToArrayBuffer(base64: java.lang.String): stdLib.ArrayBuffer = js.native
+  }
+  
   @JSName("Objects")
   @js.native
   object ObjectsNs extends js.Object {
@@ -728,6 +749,13 @@ object UtilsNs extends js.Object {
       * @param obj2 The second object to merge. Keys from this object which also exist in `obj1` will be copied to `obj1`.
       */
     def MergeRight(obj1: js.Object, obj2: js.Object): js.Object = js.native
+    /**
+      * Returns a new object that only contains the `keys` that were found on the object provided.
+      * If no `keys` are found, an empty object is returned.
+      * @param object The object to pick the provided keys from.
+      * @param keys An array of properties to retrieve from the provided object.
+      */
+    def Pick(`object`: js.Object, keys: js.Array[_]): js.Object = js.native
     /**
       * Sets a value in an object, allowing for dot notation to control the depth of the property.
       * 

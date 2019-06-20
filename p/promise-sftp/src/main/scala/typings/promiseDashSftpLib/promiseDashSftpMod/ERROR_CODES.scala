@@ -139,39 +139,39 @@ object ERROR_CODES extends js.Object {
   sealed trait WRITE_PROTECT
     extends promiseDashSftpLib.promiseDashSftpMod.ERROR_CODES
   
-  val BAD_MESSAGE: BAD_MESSAGE with java.lang.String = js.native
-  val BYTE_RANGE_LOCK_CONFLICT: BYTE_RANGE_LOCK_CONFLICT with java.lang.String = js.native
-  val BYTE_RANGE_LOCK_REFUSED: BYTE_RANGE_LOCK_REFUSED with java.lang.String = js.native
-  val CANNOT_DELETE: CANNOT_DELETE with java.lang.String = js.native
-  val CONNECTION_LOST: CONNECTION_LOST with java.lang.String = js.native
-  val DELETE_PENDING: DELETE_PENDING with java.lang.String = js.native
-  val DIR_NOT_EMPTY: DIR_NOT_EMPTY with java.lang.String = js.native
-  val EOF: EOF with java.lang.String = js.native
-  val FAILURE: FAILURE with java.lang.String = js.native
-  val FILE_ALREADY_EXISTS: FILE_ALREADY_EXISTS with java.lang.String = js.native
-  val FILE_CORRUPT: FILE_CORRUPT with java.lang.String = js.native
-  val FILE_IS_A_DIRECTORY: FILE_IS_A_DIRECTORY with java.lang.String = js.native
-  val GROUP_INVALID: GROUP_INVALID with java.lang.String = js.native
-  val INVALID_FILENAME: INVALID_FILENAME with java.lang.String = js.native
-  val INVALID_HANDLE: INVALID_HANDLE with java.lang.String = js.native
-  val INVALID_PARAMETER: INVALID_PARAMETER with java.lang.String = js.native
-  val LINK_LOOP: LINK_LOOP with java.lang.String = js.native
-  val LOCK_CONFLICT: LOCK_CONFLICT with java.lang.String = js.native
-  val NOT_A_DIRECTORY: NOT_A_DIRECTORY with java.lang.String = js.native
-  val NO_CONNECTION: NO_CONNECTION with java.lang.String = js.native
-  val NO_MATCHING_BYTE_RANGE_LOCK: NO_MATCHING_BYTE_RANGE_LOCK with java.lang.String = js.native
-  val NO_MEDIA: NO_MEDIA with java.lang.String = js.native
-  val NO_SPACE_ON_FILESYSTEM: NO_SPACE_ON_FILESYSTEM with java.lang.String = js.native
-  val NO_SUCH_FILE: NO_SUCH_FILE with java.lang.String = js.native
-  val NO_SUCH_PATH: NO_SUCH_PATH with java.lang.String = js.native
-  val OK: OK with java.lang.String = js.native
-  val OP_UNSUPPORTED: OP_UNSUPPORTED with java.lang.String = js.native
-  val OWNER_INVALID: OWNER_INVALID with java.lang.String = js.native
-  val PERMISSION_DENIED: PERMISSION_DENIED with java.lang.String = js.native
-  val QUOTA_EXCEEDED: QUOTA_EXCEEDED with java.lang.String = js.native
-  val UNKNOWN_PRINCIPAL: UNKNOWN_PRINCIPAL with java.lang.String = js.native
-  val WRITE_PROTECT: WRITE_PROTECT with java.lang.String = js.native
+  /* 5 */ val BAD_MESSAGE: BAD_MESSAGE with scala.Double = js.native
+  /* 25 */ val BYTE_RANGE_LOCK_CONFLICT: BYTE_RANGE_LOCK_CONFLICT with scala.Double = js.native
+  /* 26 */ val BYTE_RANGE_LOCK_REFUSED: BYTE_RANGE_LOCK_REFUSED with scala.Double = js.native
+  /* 22 */ val CANNOT_DELETE: CANNOT_DELETE with scala.Double = js.native
+  /* 7 */ val CONNECTION_LOST: CONNECTION_LOST with scala.Double = js.native
+  /* 27 */ val DELETE_PENDING: DELETE_PENDING with scala.Double = js.native
+  /* 18 */ val DIR_NOT_EMPTY: DIR_NOT_EMPTY with scala.Double = js.native
+  /* 1 */ val EOF: EOF with scala.Double = js.native
+  /* 4 */ val FAILURE: FAILURE with scala.Double = js.native
+  /* 11 */ val FILE_ALREADY_EXISTS: FILE_ALREADY_EXISTS with scala.Double = js.native
+  /* 28 */ val FILE_CORRUPT: FILE_CORRUPT with scala.Double = js.native
+  /* 24 */ val FILE_IS_A_DIRECTORY: FILE_IS_A_DIRECTORY with scala.Double = js.native
+  /* 30 */ val GROUP_INVALID: GROUP_INVALID with scala.Double = js.native
+  /* 20 */ val INVALID_FILENAME: INVALID_FILENAME with scala.Double = js.native
+  /* 9 */ val INVALID_HANDLE: INVALID_HANDLE with scala.Double = js.native
+  /* 23 */ val INVALID_PARAMETER: INVALID_PARAMETER with scala.Double = js.native
+  /* 21 */ val LINK_LOOP: LINK_LOOP with scala.Double = js.native
+  /* 17 */ val LOCK_CONFLICT: LOCK_CONFLICT with scala.Double = js.native
+  /* 19 */ val NOT_A_DIRECTORY: NOT_A_DIRECTORY with scala.Double = js.native
+  /* 6 */ val NO_CONNECTION: NO_CONNECTION with scala.Double = js.native
+  /* 31 */ val NO_MATCHING_BYTE_RANGE_LOCK: NO_MATCHING_BYTE_RANGE_LOCK with scala.Double = js.native
+  /* 13 */ val NO_MEDIA: NO_MEDIA with scala.Double = js.native
+  /* 14 */ val NO_SPACE_ON_FILESYSTEM: NO_SPACE_ON_FILESYSTEM with scala.Double = js.native
+  /* 2 */ val NO_SUCH_FILE: NO_SUCH_FILE with scala.Double = js.native
+  /* 10 */ val NO_SUCH_PATH: NO_SUCH_PATH with scala.Double = js.native
+  /* 0 */ val OK: OK with scala.Double = js.native
+  /* 8 */ val OP_UNSUPPORTED: OP_UNSUPPORTED with scala.Double = js.native
+  /* 29 */ val OWNER_INVALID: OWNER_INVALID with scala.Double = js.native
+  /* 3 */ val PERMISSION_DENIED: PERMISSION_DENIED with scala.Double = js.native
+  /* 15 */ val QUOTA_EXCEEDED: QUOTA_EXCEEDED with scala.Double = js.native
+  /* 16 */ val UNKNOWN_PRINCIPAL: UNKNOWN_PRINCIPAL with scala.Double = js.native
+  /* 12 */ val WRITE_PROTECT: WRITE_PROTECT with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[promiseDashSftpLib.promiseDashSftpMod.ERROR_CODES with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[promiseDashSftpLib.promiseDashSftpMod.ERROR_CODES with scala.Double] = js.native
 }
 

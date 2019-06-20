@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ValueLabelProps
   extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLSpanElement] {
   @JSName("children")
-  var children_ValueLabelProps: reactLib.reactMod.ReactElement[_]
+  var children_ValueLabelProps: reactLib.reactMod.ReactElement
   var open: scala.Boolean
   var value: scala.Double
 }
@@ -16,7 +16,7 @@ trait ValueLabelProps
 object ValueLabelProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement[_],
+    children: reactLib.reactMod.ReactElement,
     open: scala.Boolean,
     value: scala.Double,
     HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLSpanElement] = null

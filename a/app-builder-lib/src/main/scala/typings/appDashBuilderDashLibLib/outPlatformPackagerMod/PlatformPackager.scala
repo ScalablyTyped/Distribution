@@ -20,8 +20,8 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   var copyAppFiles: js.Any = js.native
   val debugLogger: builderDashUtilLib.builderDashUtilMod.DebugLogger = js.native
   val defaultTarget: js.Array[java.lang.String] = js.native
-  val electronDistExecutableName: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.electron | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.brave = js.native
-  val electronDistMacOsExecutableName: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Electron | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Brave = js.native
+  val electronDistExecutableName: java.lang.String = js.native
+  val electronDistMacOsExecutableName: java.lang.String = js.native
   val fileAssociations: js.Array[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FileAssociation */ _
   ] = js.native

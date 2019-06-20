@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CountrySelectDropdownProps extends js.Object {
-  var children: js.UndefOr[stdLib.Readonly[js.Array[reactLib.reactMod.ReactNode]]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var country: js.UndefOr[Country] = js.undefined
   var mapIsoToLabel: js.UndefOr[js.Function1[/* iso */ java.lang.String, java.lang.String]] = js.undefined
   var maxDropdownHeight: js.UndefOr[java.lang.String] = js.undefined
@@ -16,7 +16,7 @@ trait CountrySelectDropdownProps extends js.Object {
 object CountrySelectDropdownProps {
   @scala.inline
   def apply(
-    children: stdLib.Readonly[js.Array[reactLib.reactMod.ReactNode]] = null,
+    children: js.Array[reactLib.reactMod.ReactNode] = null,
     country: Country = null,
     mapIsoToLabel: /* iso */ java.lang.String => java.lang.String = null,
     maxDropdownHeight: java.lang.String = null,

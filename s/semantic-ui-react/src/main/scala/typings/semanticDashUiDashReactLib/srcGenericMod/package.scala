@@ -13,6 +13,6 @@ package object srcGenericMod {
     /* component */ reactLib.reactMod.ReactType[TProps], 
     /* props */ TProps, 
     /* children */ js.UndefOr[reactLib.reactMod.ReactNode | reactLib.reactMod.ReactNodeArray], 
-    reactLib.reactMod.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactElement | scala.Null
   ]
 }

@@ -40,7 +40,6 @@ package object reactDashNativeDashFirebaseMod {
     reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.iidNs.InstanceId, 
     js.Object
   ]
-  // type InvitesModule = FirebaseModuleAndStatics<RNFirebase.invites.Invites>;
   type LinksModule = FirebaseModuleAndStatics[
     reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.linksNs.Links, 
     reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.linksNs.LinksStatics

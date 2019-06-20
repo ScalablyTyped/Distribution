@@ -19,7 +19,6 @@ class Firebase protected () extends js.Object {
   var firestore: FirestoreModule = js.native
   var functions: FunctionsModule = js.native
   var iid: IidModule = js.native
-  // invites: InvitesModule;
   var links: LinksModule = js.native
   var messaging: MessagingModule = js.native
   var notifications: NotificationsModule = js.native

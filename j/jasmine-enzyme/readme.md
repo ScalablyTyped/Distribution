@@ -1,7 +1,7 @@
 
 # Scala.js typings for jasmine-enzyme
 
-Typings are for version 3.6
+Typings are for version 7.0
 
 ## Library description:
 Jasmine assertions for enzyme
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for jasmine-enzyme 3.6
+// Type definitions for jasmine-enzyme 7.0
 // Project: https://github.com/formidablelabs/enzyme-matchers/packages/jasmine-enzyme
 // Definitions by: Umar Bolatov <https://github.com/bolatovumar>
+//                 Steve Gravrock <https://github.com/sgravrock>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.1
 

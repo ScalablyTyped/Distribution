@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val BASE_PATH: gcpDashMetadataLib.gcpDashMetadataLibStrings.`/computeMetadata/v1` = js.native
   val BASE_URL: java.lang.String = js.native
-  val HEADERS: stdLib.Readonly[gcpDashMetadataLib.Anon_HEADERNAME] = js.native
+  val HEADERS: gcpDashMetadataLib.Anon_HEADERNAME = js.native
   val HEADER_NAME: gcpDashMetadataLib.gcpDashMetadataLibStrings.`Metadata-Flavor` = js.native
   val HEADER_VALUE: gcpDashMetadataLib.gcpDashMetadataLibStrings.Google = js.native
   val HOST_ADDRESS: gcpDashMetadataLib.gcpDashMetadataLibStrings.`http://metadataDOTgoogleDOTinternalDOT` = js.native

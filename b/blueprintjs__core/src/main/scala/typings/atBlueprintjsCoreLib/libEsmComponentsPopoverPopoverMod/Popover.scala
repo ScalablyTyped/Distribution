@@ -29,8 +29,6 @@ class Popover ()
   var refHandlers: js.Any = js.native
   var renderPopover: js.Any = js.native
   var renderTarget: js.Any = js.native
-  @JSName("state")
-  var state_Popover: IPopoverState = js.native
   /** DOM element that contains the target. */
   var targetElement: stdLib.HTMLElement = js.native
   /** Popper modifier that updates React state (for style properties) based on latest data. */

@@ -13,7 +13,7 @@ trait PortalWithStateProps
   var node: js.UndefOr[stdLib.Element | scala.Null] = js.undefined
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var openByClickOn: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var openByClickOn: js.UndefOr[reactLib.reactMod.ReactElement] = js.undefined
   @JSName("children")
   def children_MPortalWithStateProps(params: PortalFunctionParams): reactLib.reactMod.ReactNode
 }
@@ -29,7 +29,7 @@ object PortalWithStateProps {
     node: stdLib.Element = null,
     onClose: () => scala.Unit = null,
     onOpen: () => scala.Unit = null,
-    openByClickOn: reactLib.reactMod.ReactElement[_] = null,
+    openByClickOn: reactLib.reactMod.ReactElement = null,
     ref: reactLib.reactMod.LegacyRef[js.Any] = null
   ): PortalWithStateProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))

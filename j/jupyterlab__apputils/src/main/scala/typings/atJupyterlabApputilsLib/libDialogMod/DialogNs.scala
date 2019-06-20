@@ -230,26 +230,26 @@ object DialogNs extends js.Object {
   /**
     * Create a reject button.
     */
-  def cancelButton(): stdLib.Readonly[IButton] = js.native
-  def cancelButton(options: ButtonOptions): stdLib.Readonly[IButton] = js.native
+  def cancelButton(): IButton = js.native
+  def cancelButton(options: ButtonOptions): IButton = js.native
   /**
     * Create a button item.
     */
-  def createButton(value: ButtonOptions): stdLib.Readonly[IButton] = js.native
+  def createButton(value: ButtonOptions): IButton = js.native
   /**
     * Create an accept button.
     */
-  def okButton(): stdLib.Readonly[IButton] = js.native
-  def okButton(options: ButtonOptions): stdLib.Readonly[IButton] = js.native
+  def okButton(): IButton = js.native
+  def okButton(options: ButtonOptions): IButton = js.native
   /**
     * Create a warn button.
     */
-  def warnButton(): stdLib.Readonly[IButton] = js.native
-  def warnButton(options: ButtonOptions): stdLib.Readonly[IButton] = js.native
+  def warnButton(): IButton = js.native
+  def warnButton(options: ButtonOptions): IButton = js.native
   /**
     * The body input types.
     */
-  type BodyType[T] = IBodyWidget[T] | reactLib.reactMod.ReactElement[js.Any] | java.lang.String
+  type BodyType[T] = IBodyWidget[T] | reactLib.reactMod.ReactElement | java.lang.String
   /**
     * The options used to create a button.
     */
@@ -257,6 +257,6 @@ object DialogNs extends js.Object {
   /**
     * The header input types.
     */
-  type HeaderType = reactLib.reactMod.ReactElement[js.Any] | java.lang.String
+  type HeaderType = reactLib.reactMod.ReactElement | java.lang.String
 }
 

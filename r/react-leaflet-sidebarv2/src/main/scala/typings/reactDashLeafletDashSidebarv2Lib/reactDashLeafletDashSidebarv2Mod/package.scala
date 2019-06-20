@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object reactDashLeafletDashSidebarv2Mod {
   type Icon = java.lang.String | reactLib.reactMod.ElementType[js.Any]
-  type TabType = reactLib.reactMod.ReactElement[Tab] | js.Array[reactLib.reactMod.ReactElement[Tab]]
+  type TabType = reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]
 }

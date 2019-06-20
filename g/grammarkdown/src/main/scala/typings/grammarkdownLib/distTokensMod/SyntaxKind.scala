@@ -21,11 +21,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait AtToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ButKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ButNotSymbol
@@ -33,31 +35,41 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait CloseBraceToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait CloseBracketToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait CloseParenToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ColonColonColonToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.ProductionSeperatorKind
   
   @js.native
   sealed trait ColonColonToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.ProductionSeperatorKind
   
   @js.native
   sealed trait ColonToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.ProductionSeperatorKind
   
   @js.native
   sealed trait CommaToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait Constraints
@@ -69,11 +81,14 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait DefineKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ElementOfToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait EmptyAssertion
@@ -81,27 +96,37 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait EmptyKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait EndOfFileToken
     extends grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.TokenKind
   
   @js.native
   sealed trait EqualsEqualsToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait EqualsToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait ExclamationEqualsToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait FalseKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.BooleanKind
   
   @js.native
   sealed trait FirstCommentTrivia
@@ -145,27 +170,33 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait GoalKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait GreaterThanToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait HereKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait HtmlCloseTagTrivia
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.HtmlTriviaKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait HtmlOpenTagTrivia
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.HtmlTriviaKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait Identifier
     extends grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.TextContentKind
   
   @js.native
   sealed trait Import
@@ -173,7 +204,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ImportKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait InvalidAssertion
@@ -225,11 +257,15 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait LessThanExclamationToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait LessThanMinusToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait LexicalGoalAssertion
@@ -237,7 +273,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait LexicalKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait LinkReference
@@ -249,15 +286,18 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait LookaheadKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait MultiLineCommentTrivia
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.CommentTriviaKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait NoKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait NoSymbolHereAssertion
@@ -269,23 +309,30 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait NotAnElementOfToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait NotEqualToToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.LookaheadOperatorKind
   
   @js.native
   sealed trait NotKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OfKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OneKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OneOfList
@@ -297,23 +344,28 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait OpenBraceToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OpenBracketGreaterThanToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OpenBracketToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OpenParenToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait OrKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait Parameter
@@ -329,7 +381,10 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait PlusToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.ArgumentOperatorKind
+       with grammarkdownLib.distTokensMod.ParameterOperatorKind
   
   @js.native
   sealed trait Production
@@ -345,23 +400,29 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ProseFull
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.ProseFragmentLiteralKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ProseHead
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.ProseFragmentLiteralKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ProseMiddle
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.ProseFragmentLiteralKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait ProseTail
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.ProseFragmentLiteralKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait QuestionToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.ArgumentOperatorKind
   
   @js.native
   sealed trait RightHandSide
@@ -373,7 +434,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait SingleLineCommentTrivia
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.CommentTriviaKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait SourceFile
@@ -382,6 +444,7 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait StringLiteral
     extends grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.TextContentKind
   
   @js.native
   sealed trait SymbolSet
@@ -394,22 +457,30 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait Terminal
     extends grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.TextContentKind
   
   @js.native
   sealed trait ThroughKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
   
   @js.native
   sealed trait TildeToken
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.PunctuationKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.ArgumentOperatorKind
+       with grammarkdownLib.distTokensMod.ParameterOperatorKind
   
   @js.native
   sealed trait TrueKeyword
-    extends grammarkdownLib.distTokensMod.SyntaxKind
+    extends grammarkdownLib.distTokensMod.KeywordKind
+       with grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.BooleanKind
   
   @js.native
   sealed trait UnicodeCharacterLiteral
     extends grammarkdownLib.distTokensMod.SyntaxKind
+       with grammarkdownLib.distTokensMod.TextContentKind
   
   @js.native
   sealed trait UnicodeCharacterRange

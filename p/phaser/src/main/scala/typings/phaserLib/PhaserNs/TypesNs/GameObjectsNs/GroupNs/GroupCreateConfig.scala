@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   *     key.length * frame.length * frameQuantity * (yoyo ? 2 : 1) * (1 + repeat)
   * 
-  * In the simplest case, 1 + `repeat` objects will be created.
-  * 
-  * If `max` is positive, then the total created will not exceed `max`.
+  * If `max` is nonzero, then the total created will not exceed `max`.
   * 
   * `key` is required. {@link Phaser.GameObjects.Group#defaultKey} is not used.
   */
@@ -24,11 +22,13 @@ trait GroupCreateConfig extends js.Object {
   /**
     * The class of each new Game Object.
     */
-  var classType: js.UndefOr[GroupClassTypeConstructor] = js.undefined
+  var classType: js.UndefOr[js.Function] = js.undefined
   /**
     * The texture frame of each new Game Object.
     */
-  var frame: js.UndefOr[java.lang.String | phaserLib.integer] = js.undefined
+  var frame: js.UndefOr[
+    java.lang.String | (js.Array[java.lang.String | phaserLib.integer]) | phaserLib.integer
+  ] = js.undefined
   /**
     * The number of times each `frame` should be combined with one `key`.
     */
@@ -50,7 +50,7 @@ trait GroupCreateConfig extends js.Object {
   /**
     * The texture key of each new Game Object.
     */
-  var key: js.UndefOr[java.lang.String] = js.undefined
+  var key: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
     * The maximum number of new Game Objects to create. 0 is no maximum.
     */
@@ -133,13 +133,13 @@ object GroupCreateConfig {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    classType: GroupClassTypeConstructor = null,
-    frame: java.lang.String | phaserLib.integer = null,
+    classType: js.Function = null,
+    frame: java.lang.String | (js.Array[java.lang.String | phaserLib.integer]) | phaserLib.integer = null,
     frameQuantity: scala.Int | scala.Double = null,
     gridAlign: phaserLib.phaserLibNumbers.`false` | phaserLib.PhaserNs.TypesNs.ActionsNs.GridAlignConfig = null,
     hitArea: js.Any = null,
     hitAreaCallback: phaserLib.PhaserNs.TypesNs.InputNs.HitAreaCallback = null,
-    key: java.lang.String = null,
+    key: java.lang.String | js.Array[java.lang.String] = null,
     max: scala.Int | scala.Double = null,
     randomFrame: js.UndefOr[scala.Boolean] = js.undefined,
     randomKey: js.UndefOr[scala.Boolean] = js.undefined,
@@ -171,7 +171,7 @@ object GroupCreateConfig {
     if (gridAlign != null) __obj.updateDynamic("gridAlign")(gridAlign.asInstanceOf[js.Any])
     if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea)
     if (hitAreaCallback != null) __obj.updateDynamic("hitAreaCallback")(hitAreaCallback)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (!js.isUndefined(randomFrame)) __obj.updateDynamic("randomFrame")(randomFrame)
     if (!js.isUndefined(randomKey)) __obj.updateDynamic("randomKey")(randomKey)

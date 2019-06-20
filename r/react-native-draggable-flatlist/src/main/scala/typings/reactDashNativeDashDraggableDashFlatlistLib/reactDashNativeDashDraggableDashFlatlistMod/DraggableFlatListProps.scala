@@ -29,16 +29,16 @@ trait DraggableFlatListProps[Item]
   /**
     * Function that calls move when the row should become active (in an onPress, onLongPress, etc). Calls moveEnd when the gesture is complete (in onPressOut).
     */
-  def renderItem(info: RenderItemInfo[Item]): reactLib.reactMod.ReactElement[_] | scala.Null
+  def renderItem(info: RenderItemInfo[Item]): reactLib.reactMod.ReactElement | scala.Null
 }
 
 object DraggableFlatListProps {
   @scala.inline
   def apply[Item](
-    renderItem: RenderItemInfo[Item] => reactLib.reactMod.ReactElement[_] | scala.Null,
-    ListEmptyComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    ListFooterComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    ListHeaderComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
+    renderItem: RenderItemInfo[Item] => reactLib.reactMod.ReactElement | scala.Null,
+    ListEmptyComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    ListFooterComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    ListHeaderComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
@@ -133,10 +133,10 @@ object DraggableFlatListProps {
     pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     progressViewOffset: scala.Int | scala.Double = null,
-    refreshControl: reactLib.reactMod.ReactElement[reactDashNativeLib.reactDashNativeMod.RefreshControlProps] = null,
+    refreshControl: reactLib.reactMod.ReactElement = null,
     refreshing: js.UndefOr[scala.Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
-    renderScrollComponent: /* props */ reactDashNativeLib.reactDashNativeMod.ScrollViewProps => reactLib.reactMod.ReactElement[reactDashNativeLib.reactDashNativeMod.ScrollViewProps] = null,
+    renderScrollComponent: /* props */ reactDashNativeLib.reactDashNativeMod.ScrollViewProps => reactLib.reactMod.ReactElement = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEventThrottle: scala.Int | scala.Double = null,

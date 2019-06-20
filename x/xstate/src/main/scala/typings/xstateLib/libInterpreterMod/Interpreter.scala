@@ -48,7 +48,7 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
   var listeners: js.Any = js.native
   var logger: js.Any = js.native
   var machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
-  var options: stdLib.Readonly[xstateLib.libTypesMod.InterpreterOptions] = js.native
+  var options: xstateLib.libTypesMod.InterpreterOptions = js.native
   var parent: js.UndefOr[Interpreter[_, _, xstateLib.libTypesMod.EventObject]] = js.native
   var reportUnhandledExceptionOnInvocation: js.Any = js.native
   var scheduler: js.Any = js.native
@@ -141,11 +141,18 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
     */
   def sender(event: xstateLib.libTypesMod.Event[TEvent]): js.Function0[xstateLib.libStateMod.State[TContext, TEvent]] = js.native
   def spawn[TChildContext](entity: Spawnable[TChildContext], name: java.lang.String): xstateLib.libActorMod.Actor[_, xstateLib.libTypesMod.EventObject] = js.native
-  def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: xstateLib.libTypesMod.EventObject */](machine: xstateLib.libTypesMod.StateMachine[TChildContext, TChildStateSchema, TChildEvents]): Interpreter[TChildContext, TChildStateSchema, TChildEvents] = js.native
+  def spawn[TChildContext](entity: Spawnable[TChildContext], name: java.lang.String, options: SpawnOptions): xstateLib.libActorMod.Actor[_, xstateLib.libTypesMod.EventObject] = js.native
+  def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: xstateLib.libTypesMod.EventObject */](machine: xstateLib.libTypesMod.StateMachine[TChildContext, TChildStateSchema, TChildEvents]): xstateLib.libActorMod.Actor[
+    xstateLib.libStateMod.State[TChildContext, TChildEvents], 
+    xstateLib.libTypesMod.EventObject
+  ] = js.native
   def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: xstateLib.libTypesMod.EventObject */](
     machine: xstateLib.libTypesMod.StateMachine[TChildContext, TChildStateSchema, TChildEvents],
     options: xstateLib.Anon_AutoForward
-  ): Interpreter[TChildContext, TChildStateSchema, TChildEvents] = js.native
+  ): xstateLib.libActorMod.Actor[
+    xstateLib.libStateMod.State[TChildContext, TChildEvents], 
+    xstateLib.libTypesMod.EventObject
+  ] = js.native
   /**
     * Starts the interpreter from the given state, or the initial state.
     * @param initialState The state to start the statechart from

@@ -404,6 +404,17 @@ object PhysicsNs extends js.Object {
         * Listen to it from a Scene using: `this.physics.world.on('worldbounds', listener)`.
         */
       val WORLD_BOUNDS: js.Any = js.native
+      /**
+        * The Arcade Physics World Step Event.
+        * 
+        * This event is dispatched by an Arcade Physics World instance whenever a physics step is run.
+        * It is emitted _after_ the bodies and colliders have been updated.
+        * 
+        * In high framerate settings this can be multiple times per game frame.
+        * 
+        * Listen to it from a Scene using: `this.physics.world.on('worldstep', listener)`.
+        */
+      val WORLD_STEP: js.Any = js.native
     }
     
     @JSName("Tilemap")
@@ -956,12 +967,17 @@ object PhysicsNs extends js.Object {
       * [description]
       * @param world The Matter world to add the body to.
       * @param gameObject The Game Object that will have the Matter body applied to it.
-      * @param options Matter options config object.
+      * @param options A Matter Body configuration object, or an instance of a Matter Body.
       */
     def MatterGameObject(
       world: phaserLib.PhaserNs.PhysicsNs.MatterNs.World,
       gameObject: phaserLib.PhaserNs.GameObjectsNs.GameObject,
       options: js.Object
+    ): phaserLib.PhaserNs.GameObjectsNs.GameObject = js.native
+    def MatterGameObject(
+      world: phaserLib.PhaserNs.PhysicsNs.MatterNs.World,
+      gameObject: phaserLib.PhaserNs.GameObjectsNs.GameObject,
+      options: phaserLib.MatterJSNs.Body
     ): phaserLib.PhaserNs.GameObjectsNs.GameObject = js.native
     @JSName("Events")
     @js.native

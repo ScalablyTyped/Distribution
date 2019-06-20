@@ -5,62 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload] extends js.Object {
-  var unstable_internal: CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]
-  /**
-    * Read the results of a selector from in-memory records in the store.
-    */
-  def lookup(selector: CSelector[TNode]): CSnapshot[TNode]
-  /**
-    * Ensure that all the records necessary to fulfill the given selector are
-    * retained in-memory. The records will not be eligible for garbage collection
-    * until the returned reference is disposed.
-    *
-    * Note: This is a no-op in the classic core.
-    */
-  def retain(selector: CSelector[TNode]): Disposable
-  /**
-    * Send a query to the server with request/response semantics: the query will
-    * either complete successfully (calling `onNext` and `onCompleted`) or fail
-    * (calling `onError`).
-    *
-    * Note: Most applications should use `streamQuery` in order to
-    * optionally receive updated information over time, should that feature be
-    * supported by the network/server. A good rule of thumb is to use this method
-    * if you would otherwise immediately dispose the `streamQuery()`
-    * after receving the first `onNext` result.
-    */
-  def sendQuery(config: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation]): Disposable
-  /**
-    * Send a query to the server with request/subscription semantics: one or more
-    * responses may be returned (via `onNext`) over time followed by either
-    * the request completing (`onCompleted`) or an error (`onError`).
-    *
-    * Networks/servers that support subscriptions may choose to hold the
-    * subscription open indefinitely such that `onCompleted` is not called.
-    */
-  def streamQuery(config: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation]): Disposable
-  /**
-    * Subscribe to changes to the results of a selector. The callback is called
-    * when data has been committed to the store that would cause the results of
-    * the snapshot's selector to change.
-    */
-  def subscribe(snapshot: CSnapshot[TNode], callback: js.Function1[/* snapshot */ CSnapshot[TNode], scala.Unit]): Disposable
+trait CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TReaderNode, TNormalizationNode, TRequest, TPayload, TReaderSelector] extends js.Object {
+  def check(selector: CNormalizationSelector[TNormalizationNode]): scala.Boolean
+  def execute(config: relayDashRuntimeLib.Anon_CacheConfig[TReaderNode, TNormalizationNode, TRequest]): RelayObservable[TPayload]
+  def lookup(selector: CReaderSelector[TReaderNode]): CSnapshot[TReaderNode, COperationDescriptor[TReaderNode, TNormalizationNode, TRequest]]
+  def retain(selector: CNormalizationSelector[TNormalizationNode]): Disposable
+  def subscribe(
+    snapshot: CSnapshot[TReaderNode, COperationDescriptor[TReaderNode, TNormalizationNode, TRequest]],
+    callback: js.Function1[
+      /* snapshot */ CSnapshot[TReaderNode, COperationDescriptor[TReaderNode, TNormalizationNode, TRequest]], 
+      scala.Unit
+    ]
+  ): Disposable
 }
 
 object CEnvironment {
   @scala.inline
-  def apply[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload](
-    lookup: CSelector[TNode] => CSnapshot[TNode],
-    retain: CSelector[TNode] => Disposable,
-    sendQuery: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation] => Disposable,
-    streamQuery: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation] => Disposable,
-    subscribe: (CSnapshot[TNode], js.Function1[/* snapshot */ CSnapshot[TNode], scala.Unit]) => Disposable,
-    unstable_internal: CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]
-  ): CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload] = {
-    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), retain = js.Any.fromFunction1(retain), sendQuery = js.Any.fromFunction1(sendQuery), streamQuery = js.Any.fromFunction1(streamQuery), subscribe = js.Any.fromFunction2(subscribe), unstable_internal = unstable_internal)
+  def apply[TEnvironment, TFragment, TGraphQLTaggedNode, TReaderNode, TNormalizationNode, TRequest, TPayload, TReaderSelector](
+    check: CNormalizationSelector[TNormalizationNode] => scala.Boolean,
+    execute: relayDashRuntimeLib.Anon_CacheConfig[TReaderNode, TNormalizationNode, TRequest] => RelayObservable[TPayload],
+    lookup: CReaderSelector[TReaderNode] => CSnapshot[TReaderNode, COperationDescriptor[TReaderNode, TNormalizationNode, TRequest]],
+    retain: CNormalizationSelector[TNormalizationNode] => Disposable,
+    subscribe: (CSnapshot[TReaderNode, COperationDescriptor[TReaderNode, TNormalizationNode, TRequest]], js.Function1[
+      /* snapshot */ CSnapshot[TReaderNode, COperationDescriptor[TReaderNode, TNormalizationNode, TRequest]], 
+      scala.Unit
+    ]) => Disposable
+  ): CEnvironment[
+    TEnvironment, 
+    TFragment, 
+    TGraphQLTaggedNode, 
+    TReaderNode, 
+    TNormalizationNode, 
+    TRequest, 
+    TPayload, 
+    TReaderSelector
+  ] = {
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), execute = js.Any.fromFunction1(execute), lookup = js.Any.fromFunction1(lookup), retain = js.Any.fromFunction1(retain), subscribe = js.Any.fromFunction2(subscribe))
   
-    __obj.asInstanceOf[CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload]]
+    __obj.asInstanceOf[CEnvironment[
+  TEnvironment, 
+  TFragment, 
+  TGraphQLTaggedNode, 
+  TReaderNode, 
+  TNormalizationNode, 
+  TRequest, 
+  TPayload, 
+  TReaderSelector]]
   }
 }
 

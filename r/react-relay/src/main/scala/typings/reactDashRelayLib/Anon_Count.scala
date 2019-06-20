@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Count extends js.Object {
   var count: scala.Double
-  var cursor: js.UndefOr[java.lang.String] = js.undefined
+  var cursor: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
 object Anon_Count {

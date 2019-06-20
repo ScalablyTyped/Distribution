@@ -14,6 +14,6 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent], options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]], /**
     * The initial extended state
     */
-  context: stdLib.Readonly[TContext]) = this()
+  context: TContext) = this()
 }
 

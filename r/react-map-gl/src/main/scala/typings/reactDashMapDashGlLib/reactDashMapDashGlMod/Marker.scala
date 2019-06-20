@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-map-gl", "Marker")
 @js.native
-class Marker () extends BaseControl[MarkerProps]
+class Marker () extends DraggableControl[MarkerProps]
 

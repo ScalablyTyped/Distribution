@@ -81,15 +81,15 @@ object EChatPermission extends js.Object {
   /* 512 */ val ChangeAccess: ChangeAccess with scala.Double = js.native
   /* 128 */ val ChangePermissions: ChangePermissions with scala.Double = js.native
   /* 1 */ val Close: Close with scala.Double = js.native
-  /* Talk | Invite */ val EveryoneDefault: EveryoneDefault with scala.Double = js.native
-  /* Talk */ val EveryoneNotInClanDefault: EveryoneNotInClanDefault with scala.Double = js.native
+  /* 8 | 2 */ val EveryoneDefault: EveryoneDefault with scala.Double = js.native
+  /* 8 */ val EveryoneNotInClanDefault: EveryoneNotInClanDefault with scala.Double = js.native
   /* 2 */ val Invite: Invite with scala.Double = js.native
   /* 16 */ val Kick: Kick with scala.Double = js.native
   /* 1019 */ val Mask: Mask with scala.Double = js.native
-  /* Ban | Kick | Talk | Invite */ val MemberDefault: MemberDefault with scala.Double = js.native
+  /* 256 | 16 | 8 | 2 */ val MemberDefault: MemberDefault with scala.Double = js.native
   /* 32 */ val Mute: Mute with scala.Double = js.native
-  /* Ban | Kick | Talk | Invite */ val OfficerDefault: OfficerDefault with scala.Double = js.native
-  /* ChangeAccess | Ban | SetMetadata | Mute | Kick | Talk | Invite | Close */ val OwnerDefault: OwnerDefault with scala.Double = js.native
+  /* 256 | 16 | 8 | 2 */ val OfficerDefault: OfficerDefault with scala.Double = js.native
+  /* 512 | 256 | 64 | 32 | 16 | 8 | 2 | 1 */ val OwnerDefault: OwnerDefault with scala.Double = js.native
   /* 64 */ val SetMetadata: SetMetadata with scala.Double = js.native
   /* 8 */ val Talk: Talk with scala.Double = js.native
   @JSBracketAccess

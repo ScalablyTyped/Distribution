@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__compiler
 
-Typings are for version 8.0.1
+Typings are for version 8.0.2
 
 ## Library description:
 Angular - the compiler library

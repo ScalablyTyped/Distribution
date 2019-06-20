@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-navigation", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def Card(props: CardProps): reactLib.reactMod.ReactElement[CardProps] = js.native
-  def Tab(props: TabProps): reactLib.reactMod.ReactElement[js.Object] = js.native
+  def Card(props: CardProps): reactLib.reactMod.ReactElement = js.native
+  def Tab(props: TabProps): reactLib.reactMod.ReactElement = js.native
 }
 

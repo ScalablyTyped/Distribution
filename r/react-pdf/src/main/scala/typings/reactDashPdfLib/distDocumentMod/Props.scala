@@ -15,7 +15,7 @@ trait Props extends js.Object {
     * Defines what the component should display in case of an error.
     * @default 'Failed to load PDF file.'
     */
-  var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction] = js.undefined
+  var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement | RenderFunction] = js.undefined
   /**
     * Defines link target for external links rendered in annotations.
     * Defaults to unset, which means that default behavior will be used.
@@ -46,12 +46,12 @@ trait Props extends js.Object {
     * Defines what the component should display while loading.
     * @default 'Loading PDF…'
     */
-  var loading: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction] = js.undefined
+  var loading: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement | RenderFunction] = js.undefined
   /**
     * Defines what the component should display in case of no data.
     * @default 'No PDF file specified.'
     */
-  var noData: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction] = js.undefined
+  var noData: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement | RenderFunction] = js.undefined
   /**
     * Function called when an outline item has been clicked.
     * Usually, you would like to use this callback to move the user wherever they requested to.
@@ -104,11 +104,11 @@ object Props {
   def apply(
     file: js.Any,
     className: java.lang.String | js.Array[java.lang.String] = null,
-    error: java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction = null,
+    error: java.lang.String | reactLib.reactMod.ReactElement | RenderFunction = null,
     externalLinkTarget: reactDashPdfLib.reactDashPdfLibStrings._self | reactDashPdfLib.reactDashPdfLibStrings._blank | reactDashPdfLib.reactDashPdfLibStrings._parent | reactDashPdfLib.reactDashPdfLibStrings._top = null,
     inputRef: reactLib.reactMod.LegacyRef[stdLib.HTMLDivElement] = null,
-    loading: java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction = null,
-    noData: java.lang.String | reactLib.reactMod.ReactElement[_] | RenderFunction = null,
+    loading: java.lang.String | reactLib.reactMod.ReactElement | RenderFunction = null,
+    noData: java.lang.String | reactLib.reactMod.ReactElement | RenderFunction = null,
     onItemClick: /* hasPageNumber */ reactDashPdfLib.Anon_PageNumber => scala.Unit = null,
     onLoadError: /* error */ stdLib.Error => scala.Unit = null,
     onLoadSuccess: /* pdf */ js.Any => scala.Unit = null,

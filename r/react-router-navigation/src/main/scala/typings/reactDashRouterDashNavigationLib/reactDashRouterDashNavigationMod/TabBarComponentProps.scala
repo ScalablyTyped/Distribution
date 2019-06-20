@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabBarComponentProps extends TabBarProps {
-  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactElement]] = js.undefined
 }
 
 object TabBarComponentProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactElement[_]] = null,
+    children: js.Array[reactLib.reactMod.ReactElement] = null,
     hideTabBar: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,

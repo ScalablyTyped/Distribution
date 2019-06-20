@@ -12,8 +12,6 @@ trait Transition
       reactDashPoseLib.libComponentsTransitionTypesMod.State, 
       js.Any
     ] {
-  @JSName("state")
-  var state_Transition: reactDashPoseLib.libComponentsTransitionTypesMod.State = js.native
   def removeChild(key: java.lang.String): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MTransition(

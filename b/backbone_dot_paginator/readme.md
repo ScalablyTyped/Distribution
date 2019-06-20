@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone_dot_paginator
 
-Typings are for version 2.0.2
+Typings are for version 2.0
 
 ## Library description:
 A pageable Backbone.Collection superset. Supports server-side/client-side/infinite pagination and sorting.
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for backbone.paginator 2.0.2
+// Type definitions for backbone.paginator 2.0
 // Project: https://github.com/backbone-paginator/backbone.paginator
 // Definitions by: Nyamazing <https://github.com/Nyamazing>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

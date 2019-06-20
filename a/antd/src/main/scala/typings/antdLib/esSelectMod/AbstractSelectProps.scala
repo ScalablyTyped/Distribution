@@ -25,11 +25,7 @@ trait AbstractSelectProps extends js.Object {
   ] = js.undefined
   var dropdownStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var filterOption: js.UndefOr[
-    scala.Boolean | (js.Function2[
-      /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactElement[OptionProps], 
-      _
-    ])
+    scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _])
   ] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -66,11 +62,7 @@ object AbstractSelectProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[
-      /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactElement[OptionProps], 
-      _
-    ]) = null,
+    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,

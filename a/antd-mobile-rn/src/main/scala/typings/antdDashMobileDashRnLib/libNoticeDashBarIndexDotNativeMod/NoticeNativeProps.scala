@@ -17,8 +17,8 @@ trait NoticeNativeProps
 object NoticeNativeProps {
   @scala.inline
   def apply(
-    action: reactLib.reactMod.ReactElement[_] = null,
-    icon: reactLib.reactMod.ReactElement[_] = null,
+    action: reactLib.reactMod.ReactElement = null,
+    icon: reactLib.reactMod.ReactElement = null,
     marqueeProps: antdDashMobileDashRnLib.libNoticeDashBarMarqueeDotNativeMod.MarqueeProps = null,
     mode: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.closable | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.link = null,
     onClick: () => scala.Unit = null,

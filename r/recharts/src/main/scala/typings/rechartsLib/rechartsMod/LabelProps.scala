@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   var angle: js.UndefOr[scala.Double] = js.undefined
   var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[_]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactElement | ContentRenderer[_]] = js.undefined
   var formatter: js.UndefOr[LabelFormatter] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
   var position: js.UndefOr[PositionType] = js.undefined
@@ -24,7 +24,7 @@ object LabelProps {
     angle: scala.Int | scala.Double = null,
     children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    content: reactLib.reactMod.ReactElement[_] | ContentRenderer[_] = null,
+    content: reactLib.reactMod.ReactElement | ContentRenderer[_] = null,
     formatter: LabelFormatter = null,
     offset: scala.Int | scala.Double = null,
     position: PositionType = null,

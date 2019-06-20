@@ -85,7 +85,7 @@ trait PartialStepperProps extends js.Object {
   var classes: js.UndefOr[PartialClassNameMapStepperClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var connector: js.UndefOr[reactLib.reactMod.ReactElement[_] | reactLib.reactMod.ReactNode] = js.undefined
+  var connector: js.UndefOr[reactLib.reactMod.ReactElement | reactLib.reactMod.ReactNode] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html] = js.undefined
@@ -355,7 +355,7 @@ object PartialStepperProps {
     classes: PartialClassNameMapStepperClasskey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    connector: reactLib.reactMod.ReactElement[_] | reactLib.reactMod.ReactNode = null,
+    connector: reactLib.reactMod.ReactElement | reactLib.reactMod.ReactNode = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,
     dangerouslySetInnerHTML: reactLib.Anon_Html = null,

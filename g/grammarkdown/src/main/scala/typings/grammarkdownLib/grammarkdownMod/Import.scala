@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Import protected ()
   extends grammarkdownLib.distNodesMod.Import {
-  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], importKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
-  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], importKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind], path: grammarkdownLib.distNodesMod.StringLiteral) = this()
+  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.AtToken], importKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.ImportKeyword]) = this()
+  def this(atToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.AtToken], importKeyword: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.ImportKeyword], path: grammarkdownLib.distNodesMod.StringLiteral) = this()
 }
 

@@ -333,13 +333,10 @@ class ParticleEmitter protected ()
     * @param count The number of particles to emit at each flow cycle. Default 1.
     */
   def flow(frequency: scala.Double): ParticleEmitter = js.native
-  def flow(frequency: scala.Double, count: js.Array[scala.Double]): ParticleEmitter = js.native
-  def flow(frequency: scala.Double, count: js.Object): ParticleEmitter = js.native
   def flow(
     frequency: scala.Double,
-    count: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback
+    count: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType
   ): ParticleEmitter = js.native
-  def flow(frequency: scala.Double, count: scala.Double): ParticleEmitter = js.native
   /**
     * Calls a function for each active particle in this emitter.
     * @param callback The function.
@@ -422,22 +419,18 @@ class ParticleEmitter protected ()
     * {@link Phaser.GameObjects.Particles.ParticleEmitter#active Activates} the emitter.
     */
   def resume(): ParticleEmitter = js.native
-  def setAlpha(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setAlpha(value: js.Object): ParticleEmitter = js.native
-  def setAlpha(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateCallback): ParticleEmitter = js.native
   /**
     * Sets the opacity of emitted particles.
     * @param value A value between 0 (transparent) and 1 (opaque).
     */
-  def setAlpha(value: scala.Double): ParticleEmitter = js.native
-  def setAngle(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setAngle(value: js.Object): ParticleEmitter = js.native
-  def setAngle(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
+  def setAlpha(
+    value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType | phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateType
+  ): ParticleEmitter = js.native
   /**
     * Sets the angle of a {@link Phaser.GameObjects.Particles.ParticleEmitter#radial} particle stream.
     * @param value The angle of the initial velocity of emitted particles.
     */
-  def setAngle(value: scala.Double): ParticleEmitter = js.native
+  def setAngle(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   def setBounds(
     x: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.ParticleEmitterBoundsAlt,
     y: scala.Double,
@@ -477,14 +470,11 @@ class ParticleEmitter protected ()
   def setEmitZone(): ParticleEmitter = js.native
   def setEmitZone(zoneConfig: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.ParticleEmitterEdgeZoneConfig): ParticleEmitter = js.native
   def setEmitZone(zoneConfig: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.ParticleEmitterRandomZoneConfig): ParticleEmitter = js.native
-  def setEmitterAngle(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setEmitterAngle(value: js.Object): ParticleEmitter = js.native
-  def setEmitterAngle(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
   /**
     * Sets the angle of a {@link Phaser.GameObjects.Particles.ParticleEmitter#radial} particle stream.
     * @param value The angle of the initial velocity of emitted particles.
     */
-  def setEmitterAngle(value: scala.Double): ParticleEmitter = js.native
+  def setEmitterAngle(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   def setFrame(frames: java.lang.String): ParticleEmitter = js.native
   def setFrame(frames: java.lang.String, pickRandom: scala.Boolean): ParticleEmitter = js.native
   def setFrame(frames: java.lang.String, pickRandom: scala.Boolean, quantity: phaserLib.integer): ParticleEmitter = js.native
@@ -517,13 +507,10 @@ class ParticleEmitter protected ()
     * @param quantity The number of particles to release at each flow cycle or explosion.
     */
   def setFrequency(frequency: scala.Double): ParticleEmitter = js.native
-  def setFrequency(frequency: scala.Double, quantity: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setFrequency(frequency: scala.Double, quantity: js.Object): ParticleEmitter = js.native
   def setFrequency(
     frequency: scala.Double,
-    quantity: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback
+    quantity: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType
   ): ParticleEmitter = js.native
-  def setFrequency(frequency: scala.Double, quantity: scala.Double): ParticleEmitter = js.native
   /**
     * Sets the gravity applied to emitted particles.
     * @param x Horizontal acceleration due to gravity, in pixels per second squared.
@@ -540,110 +527,71 @@ class ParticleEmitter protected ()
     * @param value Acceleration due to gravity, in pixels per second squared.
     */
   def setGravityY(value: scala.Double): ParticleEmitter = js.native
-  def setLifespan(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setLifespan(value: js.Object): ParticleEmitter = js.native
-  def setLifespan(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
   /**
     * Sets the lifespan of newly emitted particles.
     * @param value The particle lifespan, in ms.
     */
-  def setLifespan(value: scala.Double): ParticleEmitter = js.native
-  def setPosition(x: js.Array[scala.Double], y: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setPosition(x: js.Array[scala.Double], y: js.Object): ParticleEmitter = js.native
-  def setPosition(
-    x: js.Array[scala.Double],
-    y: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback
-  ): ParticleEmitter = js.native
-  def setPosition(x: js.Array[scala.Double], y: scala.Double): ParticleEmitter = js.native
-  def setPosition(x: js.Object, y: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setPosition(x: js.Object, y: js.Object): ParticleEmitter = js.native
-  def setPosition(x: js.Object, y: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
-  def setPosition(x: js.Object, y: scala.Double): ParticleEmitter = js.native
-  def setPosition(
-    x: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback,
-    y: js.Array[scala.Double]
-  ): ParticleEmitter = js.native
-  def setPosition(x: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback, y: js.Object): ParticleEmitter = js.native
-  def setPosition(
-    x: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback,
-    y: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback
-  ): ParticleEmitter = js.native
-  def setPosition(x: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback, y: scala.Double): ParticleEmitter = js.native
-  def setPosition(x: scala.Double, y: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setPosition(x: scala.Double, y: js.Object): ParticleEmitter = js.native
-  def setPosition(x: scala.Double, y: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
+  def setLifespan(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   /**
     * Sets the position of the emitter's particle origin.
     * New particles will be emitted here.
     * @param x The x-coordinate of the particle origin.
     * @param y The y-coordinate of the particle origin.
     */
-  def setPosition(x: scala.Double, y: scala.Double): ParticleEmitter = js.native
-  def setQuantity(quantity: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setQuantity(quantity: js.Object): ParticleEmitter = js.native
-  def setQuantity(quantity: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
+  def setPosition(
+    x: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType,
+    y: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType
+  ): ParticleEmitter = js.native
   /**
     * Sets the number of particles released at each flow cycle or explosion.
     * @param quantity The number of particles to release at each flow cycle or explosion.
     */
-  def setQuantity(quantity: scala.Double): ParticleEmitter = js.native
+  def setQuantity(quantity: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   /**
     * Turns {@link Phaser.GameObjects.Particles.ParticleEmitter#radial} particle movement on or off.
     * @param value Radial mode (true) or point mode (true). Default true.
     */
   def setRadial(): ParticleEmitter = js.native
   def setRadial(value: scala.Boolean): ParticleEmitter = js.native
-  def setScale(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setScale(value: js.Object): ParticleEmitter = js.native
-  def setScale(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateCallback): ParticleEmitter = js.native
   /**
     * Sets the scale of emitted particles.
     * @param value The scale, relative to 1.
     */
-  def setScale(value: scala.Double): ParticleEmitter = js.native
-  def setScaleX(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setScaleX(value: js.Object): ParticleEmitter = js.native
-  def setScaleX(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateCallback): ParticleEmitter = js.native
+  def setScale(
+    value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType | phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateType
+  ): ParticleEmitter = js.native
   /**
     * Sets the horizontal scale of emitted particles.
     * @param value The scale, relative to 1.
     */
-  def setScaleX(value: scala.Double): ParticleEmitter = js.native
-  def setScaleY(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setScaleY(value: js.Object): ParticleEmitter = js.native
-  def setScaleY(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateCallback): ParticleEmitter = js.native
+  def setScaleX(
+    value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType | phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateType
+  ): ParticleEmitter = js.native
   /**
     * Sets the vertical scale of emitted particles.
     * @param value The scale, relative to 1.
     */
-  def setScaleY(value: scala.Double): ParticleEmitter = js.native
-  def setSpeed(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setSpeed(value: js.Object): ParticleEmitter = js.native
-  def setSpeed(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
+  def setScaleY(
+    value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType | phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnUpdateType
+  ): ParticleEmitter = js.native
   /**
     * Sets the initial radial speed of emitted particles.
     * Changes the emitter to radial mode.
     * @param value The speed, in pixels per second.
     */
-  def setSpeed(value: scala.Double): ParticleEmitter = js.native
-  def setSpeedX(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setSpeedX(value: js.Object): ParticleEmitter = js.native
-  def setSpeedX(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
+  def setSpeed(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   /**
     * Sets the initial horizontal speed of emitted particles.
     * Changes the emitter to point mode.
     * @param value The speed, in pixels per second.
     */
-  def setSpeedX(value: scala.Double): ParticleEmitter = js.native
-  def setSpeedY(value: js.Array[scala.Double]): ParticleEmitter = js.native
-  def setSpeedY(value: js.Object): ParticleEmitter = js.native
-  def setSpeedY(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitCallback): ParticleEmitter = js.native
+  def setSpeedX(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   /**
     * Sets the initial vertical speed of emitted particles.
     * Changes the emitter to point mode.
     * @param value The speed, in pixels per second.
     */
-  def setSpeedY(value: scala.Double): ParticleEmitter = js.native
+  def setSpeedY(value: phaserLib.PhaserNs.TypesNs.GameObjectsNs.ParticlesNs.EmitterOpOnEmitType): ParticleEmitter = js.native
   /**
     * Sets the visibility of this Game Object.
     * 

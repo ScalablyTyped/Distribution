@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("level-js", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val Level: LevelConstructor = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[LevelConstructor]
 

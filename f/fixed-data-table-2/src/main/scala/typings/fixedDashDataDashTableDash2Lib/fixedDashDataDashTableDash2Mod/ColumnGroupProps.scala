@@ -39,9 +39,9 @@ trait ColumnGroupProps
     * props object above passed in as the first parameter.
     */
   var header: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[
+    java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[
       /* props */ ColumnGroupHeaderProps, 
-      java.lang.String | reactLib.reactMod.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement
     ])
   ] = js.undefined
 }
@@ -51,9 +51,9 @@ object ColumnGroupProps {
   def apply(
     align: fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.left | fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.center | fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.right = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
-    header: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[
+    header: java.lang.String | reactLib.reactMod.ReactElement | (js.Function1[
       /* props */ ColumnGroupHeaderProps, 
-      java.lang.String | reactLib.reactMod.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement
     ]) = null,
     key: reactLib.reactMod.Key = null,
     ref: reactLib.reactMod.LegacyRef[ColumnGroup] = null

@@ -34,15 +34,11 @@ object ^ extends js.Object {
   def appendContext(c: Context, key: java.lang.String, decoder: Decoder[_, _], actual: js.Any): Context = js.native
   def array[C /* <: Mixed */](codec: C): ArrayC[C] = js.native
   def array[C /* <: Mixed */](codec: C, name: java.lang.String): ArrayC[C] = js.native
-  @JSName("brand")
-  def brand_A[C /* <: Any */, N /* <: java.lang.String */, B /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def brand[C /* <: Any */, N /* <: java.lang.String */, B /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ K in N ]: symbol}
     */ ioDashTsLib.ioDashTsLibStrings.brand with js.Any */](
     codec: C,
-    predicate: fpDashTsLib.libFunctionMod.Refinement[
-      /* import warning: ImportType.apply Failed type conversion: C['_A'] */ js.Any, 
-      Branded[/* import warning: ImportType.apply Failed type conversion: C['_A'] */ js.Any, B]
-    ],
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Refinement<C['_A'], Branded<C['_A'], B>> */ js.Any,
     name: N
   ): BrandC[C, B] = js.native
   def clean[A, O, I](codec: Type[A, O, I]): Type[A, O, I] = js.native
@@ -54,9 +50,9 @@ object ^ extends js.Object {
   def exact(codec: HasPropsRefinement, name: java.lang.String): ExactC[HasPropsRefinement] = js.native
   def exact[C /* <: (InterfaceType[_, _, _, _]) | (StrictType[_, _, _, _]) | (PartialType[_, _, _, _]) */](codec: C): ExactC[C] = js.native
   def exact[C /* <: (InterfaceType[_, _, _, _]) | (StrictType[_, _, _, _]) | (PartialType[_, _, _, _]) */](codec: C, name: java.lang.String): ExactC[C] = js.native
-  def failure[T](value: js.Any, context: Context): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
-  def failure[T](value: js.Any, context: Context, message: java.lang.String): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
-  def failures[T](errors: Errors): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
+  def failure[T](value: js.Any, context: Context): js.Any = js.native
+  def failure[T](value: js.Any, context: Context, message: java.lang.String): js.Any = js.native
+  def failures[T](errors: Errors): Validation[T] = js.native
   def getContextEntry(key: java.lang.String, decoder: Decoder[_, _]): ContextEntry = js.native
   def getDefaultContext(decoder: Decoder[_, _]): Context = js.native
   def getFunctionName(f: js.Function): java.lang.String = js.native
@@ -89,11 +85,18 @@ object ^ extends js.Object {
   def record[D /* <: Mixed */, C /* <: Mixed */](domain: D, codomain: C): RecordC[D, C] = js.native
   def record[D /* <: Mixed */, C /* <: Mixed */](domain: D, codomain: C, name: java.lang.String): RecordC[D, C] = js.native
   def recursion[A, O, I, C /* <: Type[A, O, I] */](name: java.lang.String, definition: js.Function1[/* self */ C, C]): RecursiveType[C, A, O, I] = js.native
-  def refinement[C /* <: Any */](codec: C, predicate: fpDashTsLib.libFunctionMod.Predicate[TypeOf[C]]): RefinementC[C] = js.native
-  def refinement[C /* <: Any */](codec: C, predicate: fpDashTsLib.libFunctionMod.Predicate[TypeOf[C]], name: java.lang.String): RefinementC[C] = js.native
+  def refinement[C /* <: Any */](
+    codec: C,
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Predicate<TypeOf<C>> */ js.Any
+  ): RefinementC[C] = js.native
+  def refinement[C /* <: Any */](
+    codec: C,
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Predicate<TypeOf<C>> */ js.Any,
+    name: java.lang.String
+  ): RefinementC[C] = js.native
   def strict[P /* <: Props */](props: P): ExactC[TypeC[P]] = js.native
   def strict[P /* <: Props */](props: P, name: java.lang.String): ExactC[TypeC[P]] = js.native
-  def success[T](value: T): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
+  def success[T](value: T): Validation[T] = js.native
   def taggedUnion[Tag /* <: java.lang.String */, CS /* <: js.Array[Mixed] */](tag: Tag, codecs: CS): TaggedUnionC[Tag, CS] = js.native
   def taggedUnion[Tag /* <: java.lang.String */, CS /* <: js.Array[Mixed] */](tag: Tag, codecs: CS, name: java.lang.String): TaggedUnionC[Tag, CS] = js.native
   def tuple[A /* <: Mixed */](codecs: js.Array[A]): TupleC[js.Array[A]] = js.native

@@ -20,9 +20,7 @@ import scala.scalajs.js.annotation._
   var radius: js.UndefOr[Percentage | scala.Double] = js.undefined
   var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
-  var tick: js.UndefOr[
-    scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement[_]
-  ] = js.undefined
+  var tick: js.UndefOr[scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement] = js.undefined
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
   var tickLine: js.UndefOr[scala.Boolean | js.Object] = js.undefined
   var ticks: js.UndefOr[js.Array[PolarAngleAxisTick]] = js.undefined
@@ -55,7 +53,7 @@ object PolarAngleAxisProps {
     radius: Percentage | scala.Double = null,
     scale: ScaleType | RechartsFunction = null,
     stroke: java.lang.String = null,
-    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement[_] = null,
+    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement = null,
     tickFormatter: TickFormatterFunction = null,
     tickLine: scala.Boolean | js.Object = null,
     ticks: js.Array[PolarAngleAxisTick] = null,

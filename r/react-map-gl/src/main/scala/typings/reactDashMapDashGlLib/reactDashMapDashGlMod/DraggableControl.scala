@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-map-gl", "DraggableControl")
 @js.native
-class DraggableControl () extends BaseControl[DraggableControlProps]
+class DraggableControl[T /* <: DraggableControlProps */] ()
+  extends BaseControl[T, stdLib.HTMLDivElement]
 

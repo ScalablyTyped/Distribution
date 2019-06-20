@@ -28,12 +28,12 @@ trait Typeofreact extends js.Object {
     props: stdLib.Partial[P] with reactLib.reactMod.Attributes,
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.FunctionComponentElement[P] = js.native
-  def cloneElement[P](element: reactLib.reactMod.ReactElement[P]): reactLib.reactMod.ReactElement[P] = js.native
+  def cloneElement[P](element: reactLib.reactMod.ReactElement): reactLib.reactMod.ReactElement = js.native
   def cloneElement[P](
-    element: reactLib.reactMod.ReactElement[P],
+    element: reactLib.reactMod.ReactElement,
     props: stdLib.Partial[P] with reactLib.reactMod.Attributes,
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def cloneElement[P, T /* <: reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _] */](element: reactLib.reactMod.CElement[P, T]): reactLib.reactMod.CElement[P, T] = js.native
   def cloneElement[P, T /* <: reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _] */](
     element: reactLib.reactMod.CElement[P, T],
@@ -65,12 +65,12 @@ trait Typeofreact extends js.Object {
   def cloneElement_PHTMLAttributesTHTMLElementReactHTMLElement[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](element: reactLib.reactMod.ReactHTMLElement[T], props: P, children: reactLib.reactMod.ReactNode*): reactLib.reactMod.ReactHTMLElement[T] = js.native
   def createContext[T](defaultValue: T): reactLib.reactMod.Context[T] = js.native
   def createContext[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, scala.Double]): reactLib.reactMod.Context[T] = js.native
-  def createElement[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactElement[P] = js.native
+  def createElement[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactElement = js.native
   def createElement[P /* <: js.Object */](
     `type`: java.lang.String,
     props: reactLib.reactMod.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def createElement[P /* <: js.Object */](
     `type`: reactLib.reactMod.ClassType[
       P, 
@@ -87,18 +87,18 @@ trait Typeofreact extends js.Object {
     props: (reactLib.reactMod.ClassAttributes[reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]]) with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.CElement[P, reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]] = js.native
-  def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement[P] = js.native
+  def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement = js.native
   def createElement[P /* <: js.Object */](
     `type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState],
     props: reactLib.reactMod.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
-  def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.FunctionComponent[P]): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
+  def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.FunctionComponent[P]): reactLib.reactMod.ReactElement = js.native
   def createElement[P /* <: js.Object */](
     `type`: reactLib.reactMod.FunctionComponent[P],
     props: reactLib.reactMod.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement = js.native
   def createElement[P /* <: reactLib.reactMod.DOMAttributes[T] */, T /* <: reactLib.Element */](
     `type`: java.lang.String,
     props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
@@ -175,15 +175,15 @@ trait Typeofreact extends js.Object {
   def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): reactLib.reactMod.HTMLFactory[T] = js.native
   def createRef[T](): reactLib.reactMod.RefObject[T] = js.native
   def forwardRef[T, P](Component: reactLib.reactMod.RefForwardingComponent[T, P]): reactLib.reactMod.ForwardRefExoticComponent[reactLib.reactMod.PropsWithoutRef[P] with reactLib.reactMod.RefAttributes[T]] = js.native
-  def isValidElement[P](): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
-  def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
+  def isValidElement[P](): /* is react.react.ReactElement */ scala.Boolean = js.native
+  def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ scala.Boolean = js.native
   def `lazy`[T /* <: reactLib.reactMod.ComponentType[_] */](factory: js.Function0[js.Promise[reactLib.Anon_Default[T]]]): reactLib.reactMod.LazyExoticComponent[T] = js.native
   def memo[T /* <: reactLib.reactMod.ComponentType[_] */](Component: T): reactLib.reactMod.MemoExoticComponent[T] = js.native
   def memo[T /* <: reactLib.reactMod.ComponentType[_] */](
     Component: T,
     propsAreEqual: js.Function2[
-      /* prevProps */ stdLib.Readonly[reactLib.reactMod.ComponentProps[T]], 
-      /* nextProps */ stdLib.Readonly[reactLib.reactMod.ComponentProps[T]], 
+      /* prevProps */ reactLib.reactMod.ComponentProps[T], 
+      /* nextProps */ reactLib.reactMod.ComponentProps[T], 
       scala.Boolean
     ]
   ): reactLib.reactMod.MemoExoticComponent[T] = js.native
@@ -191,8 +191,8 @@ trait Typeofreact extends js.Object {
   def memo[P /* <: js.Object */](
     Component: reactLib.reactMod.SFC[P],
     propsAreEqual: js.Function2[
-      /* prevProps */ stdLib.Readonly[reactLib.reactMod.PropsWithChildren[P]], 
-      /* nextProps */ stdLib.Readonly[reactLib.reactMod.PropsWithChildren[P]], 
+      /* prevProps */ reactLib.reactMod.PropsWithChildren[P], 
+      /* nextProps */ reactLib.reactMod.PropsWithChildren[P], 
       scala.Boolean
     ]
   ): reactLib.reactMod.NamedExoticComponent[P] = js.native

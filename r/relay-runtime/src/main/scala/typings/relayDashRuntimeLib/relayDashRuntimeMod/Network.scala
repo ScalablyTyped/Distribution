@@ -5,22 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("relay-runtime", "Network")
 @js.native
-class Network () extends js.Object
+trait Network extends js.Object {
+  @JSName("execute")
+  var execute_Original: ExecuteFunction = js.native
+  def execute(request: RequestParameters, variables: Variables, cacheConfig: CacheConfig): RelayObservable[GraphQLResponse] = js.native
+  def execute(
+    request: RequestParameters,
+    variables: Variables,
+    cacheConfig: CacheConfig,
+    uploadables: UploadableMap
+  ): RelayObservable[GraphQLResponse] = js.native
+}
 
-/* static members */
+// ./network/RelayNetwork
 @JSImport("relay-runtime", "Network")
 @js.native
 object Network extends js.Object {
-  /**
-    * Creates an implementation of the `Network` interface defined in
-    * `RelayNetworkTypes` given `fetch` and `subscribe` functions.
-    */
-  def create(fetchFn: relayDashRuntimeLib.relayDashRuntimeMod.FetchFunction): relayDashRuntimeLib.relayDashRuntimeMod.RelayNetwork = js.native
+  def create(fetchFn: relayDashRuntimeLib.relayDashRuntimeMod.FetchFunction): relayDashRuntimeLib.relayDashRuntimeMod.Network = js.native
   def create(
     fetchFn: relayDashRuntimeLib.relayDashRuntimeMod.FetchFunction,
     subscribeFn: relayDashRuntimeLib.relayDashRuntimeMod.SubscribeFunction
-  ): relayDashRuntimeLib.relayDashRuntimeMod.RelayNetwork = js.native
+  ): relayDashRuntimeLib.relayDashRuntimeMod.Network = js.native
 }
 

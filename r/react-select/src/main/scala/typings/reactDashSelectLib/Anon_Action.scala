@@ -12,7 +12,7 @@ trait Anon_Action[OptionType] extends js.Object {
   var isMulti: scala.Boolean = js.native
   var isRtl: scala.Boolean = js.native
   var options: reactDashSelectLib.libTypesMod.OptionsType[_] = js.native
-  var selectProps: stdLib.Readonly[Anon_Children] with stdLib.Readonly[reactDashSelectLib.libSelectMod.Props[OptionType]] = js.native
+  var selectProps: Anon_Children with reactDashSelectLib.libSelectMod.Props[OptionType] = js.native
   def clearValue(): scala.Unit = js.native
   def getStyles(key: java.lang.String, props: js.Object): js.Object = js.native
   def getValue(): js.Array[OptionType] = js.native

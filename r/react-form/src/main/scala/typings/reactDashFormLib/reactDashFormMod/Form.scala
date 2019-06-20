@@ -13,7 +13,7 @@ class Form ()
   @JSName("componentWillMount")
   def componentWillMount_MForm(): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MForm(nextProps: stdLib.Readonly[stdLib.Partial[FormProps]], nextContext: js.Any): scala.Unit = js.native
+  def componentWillReceiveProps_MForm(nextProps: stdLib.Partial[FormProps], nextContext: js.Any): scala.Unit = js.native
   def componentWillUmount(): scala.Unit = js.native
   /* CompleteClass */
   override def getChildContext(): FormContext = js.native

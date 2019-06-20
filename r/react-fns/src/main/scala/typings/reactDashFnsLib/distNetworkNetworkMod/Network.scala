@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Network ()
   extends reactLib.reactMod.Component[reactDashFnsLib.distTypesMod.SharedRenderProps[NetworkProps], NetworkProps, js.Any] {
-  @JSName("state")
-  var state_Network: NetworkProps = js.native
   @JSName("componentDidMount")
   def componentDidMount_MNetwork(): scala.Unit = js.native
   @JSName("componentWillUnmount")

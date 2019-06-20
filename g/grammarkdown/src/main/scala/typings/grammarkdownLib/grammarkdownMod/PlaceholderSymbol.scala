@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PlaceholderSymbol protected ()
   extends grammarkdownLib.distNodesMod.PlaceholderSymbol {
-  def this(placeholderToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
+  def this(placeholderToken: grammarkdownLib.distNodesMod.Token[grammarkdownLib.distTokensMod.SyntaxKind.AtToken]) = this()
 }
 

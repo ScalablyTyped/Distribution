@@ -14,5 +14,6 @@ object ^ extends js.Object {
     handler: EventHandler[E, R],
     opts: atPulumiPulumiLib.resourceMod.ResourceOptions
   ): atPulumiAwsLib.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
+  def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ scala.Boolean = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_DateCellWrapper[TEvent /* <: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event */] extends js.Object {
+trait Anon_DateCellWrapper[TEvent /* <: js.Object */] extends js.Object {
   var dateCellWrapper: reactLib.reactMod.ComponentType[js.Object]
   var dayWrapper: reactLib.reactMod.ComponentType[js.Object]
   var eventWrapper: reactLib.reactMod.ComponentType[TEvent]
@@ -13,7 +13,7 @@ trait Anon_DateCellWrapper[TEvent /* <: reactDashBigDashCalendarLib.reactDashBig
 
 object Anon_DateCellWrapper {
   @scala.inline
-  def apply[TEvent /* <: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event */](
+  def apply[TEvent /* <: js.Object */](
     dateCellWrapper: reactLib.reactMod.ComponentType[js.Object],
     dayWrapper: reactLib.reactMod.ComponentType[js.Object],
     eventWrapper: reactLib.reactMod.ComponentType[TEvent]

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown/dist/nodes", "SingleLineCommentTrivia")
 @js.native
 class SingleLineCommentTrivia ()
-  extends CommentTriviaBase[grammarkdownLib.distTokensMod.SyntaxKind]
+  extends CommentTriviaBase[grammarkdownLib.distTokensMod.SyntaxKind.SingleLineCommentTrivia]
 

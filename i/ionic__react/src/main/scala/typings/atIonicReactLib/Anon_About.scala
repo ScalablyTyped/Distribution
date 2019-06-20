@@ -10,25 +10,21 @@ trait Anon_About extends js.Object {
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var UNSAFE_componentWillReceiveProps: js.UndefOr[
     js.Function2[
-      /* nextProps */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
+      /* nextProps */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
   ] = js.native
   var UNSAFE_componentWillUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
-      /* nextState */ stdLib.Readonly[js.Object], 
+      /* nextProps */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
+      /* nextState */ js.Object, 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
@@ -39,12 +35,10 @@ trait Anon_About extends js.Object {
   var componentWillMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillReceiveProps: js.UndefOr[
     js.Function2[
-      /* nextProps */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
+      /* nextProps */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
@@ -52,13 +46,11 @@ trait Anon_About extends js.Object {
   var componentWillUnmount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
-      /* nextState */ stdLib.Readonly[js.Object], 
+      /* nextProps */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
+      /* nextState */ js.Object, 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
@@ -69,37 +61,31 @@ trait Anon_About extends js.Object {
   var element: atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonModalElement = js.native
   var getSnapshotBeforeUpdate: js.UndefOr[
     js.Function2[
-      /* prevProps */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
-      /* prevState */ stdLib.Readonly[js.Object], 
+      /* prevProps */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
+      /* prevState */ js.Object, 
       _
     ]
   ] = js.native
-  val props: stdLib.Readonly[Anon_ChildrenReactNode] with (stdLib.Readonly[
-    Anon_ChildrenEvent with (stdLib.Pick[
-      atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-    ])
+  val props: Anon_ChildrenReactNode with Anon_ChildrenEvent with (stdLib.Pick[
+    atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
   ]) = js.native
   var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
-      /* nextState */ stdLib.Readonly[js.Object], 
+      /* nextProps */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
+      /* nextState */ js.Object, 
       /* nextContext */ js.Any, 
       scala.Boolean
     ]
   ] = js.native
-  var state: stdLib.Readonly[js.Object] = js.native
+  var state: js.Object = js.native
   def componentDidMount(): scala.Unit = js.native
   def componentDidUpdate(
     prevProps: Anon_ChildrenEvent with (stdLib.Pick[
@@ -112,25 +98,21 @@ trait Anon_About extends js.Object {
   def render(): reactLib.reactMod.ReactPortal = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
-      /* prevState */ stdLib.Readonly[js.Object], 
-      /* props */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
+      /* prevState */ js.Object, 
+      /* props */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
       js.Object | (stdLib.Pick[js.Object, K])
     ]
   ): scala.Unit = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
-      /* prevState */ stdLib.Readonly[js.Object], 
-      /* props */ stdLib.Readonly[
-        Anon_ChildrenEvent with (stdLib.Pick[
-          atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
-        ])
-      ], 
+      /* prevState */ js.Object, 
+      /* props */ Anon_ChildrenEvent with (stdLib.Pick[
+        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+      ]), 
       js.Object | (stdLib.Pick[js.Object, K])
     ],
     callback: js.Function0[scala.Unit]

@@ -66,11 +66,7 @@ object TreeSelectProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[
-      /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps], 
-      _
-    ]) = null,
+    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
     filterTreeNode: (/* inputValue */ java.lang.String, /* treeNode */ js.Any) => scala.Boolean = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,

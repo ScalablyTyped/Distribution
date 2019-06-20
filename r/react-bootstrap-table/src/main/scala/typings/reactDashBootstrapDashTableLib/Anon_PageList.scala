@@ -17,7 +17,7 @@ trait Anon_PageList extends js.Object {
   /**
   		 * Text/element to display when displaying the total number of rows.
   		 */
-  var totalText: java.lang.String | reactLib.reactMod.ReactElement[_]
+  var totalText: java.lang.String | reactLib.reactMod.ReactElement
 }
 
 object Anon_PageList {
@@ -25,7 +25,7 @@ object Anon_PageList {
   def apply(
     pageList: stdLib.HTMLUListElement,
     sizePerPageDropDown: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDown,
-    totalText: java.lang.String | reactLib.reactMod.ReactElement[_]
+    totalText: java.lang.String | reactLib.reactMod.ReactElement
   ): Anon_PageList = {
     val __obj = js.Dynamic.literal(pageList = pageList, sizePerPageDropDown = sizePerPageDropDown, totalText = totalText.asInstanceOf[js.Any])
   

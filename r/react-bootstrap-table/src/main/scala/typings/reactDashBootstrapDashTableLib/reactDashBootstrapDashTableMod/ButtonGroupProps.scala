@@ -9,28 +9,28 @@ trait ButtonGroupProps extends js.Object {
   /**
   	 * Delete button.
   	 */
-  var deleteBtn: reactLib.reactMod.ReactElement[_]
+  var deleteBtn: reactLib.reactMod.ReactElement
   /**
   	 * Export to CSV button.
   	 */
-  var exportCSVBtn: reactLib.reactMod.ReactElement[_]
+  var exportCSVBtn: reactLib.reactMod.ReactElement
   /**
   	 * Insert button (to add a row).
   	 */
-  var insertBtn: reactLib.reactMod.ReactElement[_]
+  var insertBtn: reactLib.reactMod.ReactElement
   /**
   	 * Toggle button to switch between showing all rows and showing selected rows only.
   	 */
-  var showSelectedOnlyBtn: reactLib.reactMod.ReactElement[_]
+  var showSelectedOnlyBtn: reactLib.reactMod.ReactElement
 }
 
 object ButtonGroupProps {
   @scala.inline
   def apply(
-    deleteBtn: reactLib.reactMod.ReactElement[_],
-    exportCSVBtn: reactLib.reactMod.ReactElement[_],
-    insertBtn: reactLib.reactMod.ReactElement[_],
-    showSelectedOnlyBtn: reactLib.reactMod.ReactElement[_]
+    deleteBtn: reactLib.reactMod.ReactElement,
+    exportCSVBtn: reactLib.reactMod.ReactElement,
+    insertBtn: reactLib.reactMod.ReactElement,
+    showSelectedOnlyBtn: reactLib.reactMod.ReactElement
   ): ButtonGroupProps = {
     val __obj = js.Dynamic.literal(deleteBtn = deleteBtn, exportCSVBtn = exportCSVBtn, insertBtn = insertBtn, showSelectedOnlyBtn = showSelectedOnlyBtn)
   

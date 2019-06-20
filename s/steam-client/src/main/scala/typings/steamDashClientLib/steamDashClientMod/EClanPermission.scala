@@ -78,21 +78,21 @@ object EClanPermission extends js.Object {
   sealed trait OwnerOfficerModerator
     extends steamDashClientLib.steamDashClientMod.EClanPermission
   
-  /* Owner | Officer | Moderator | Member */ val AllMembers: AllMembers with scala.Double = js.native
-  /* NonMember | Member | Moderator | Officer | Owner */ val Anybody: Anybody with scala.Double = js.native
+  /* 1 | 2 | 8 | 4 */ val AllMembers: AllMembers with scala.Double = js.native
+  /* 128 | 4 | 8 | 2 | 1 */ val Anybody: Anybody with scala.Double = js.native
   /* 4 */ val Member: Member with scala.Double = js.native
-  /* NonMember | Member */ val MemberAllowed: MemberAllowed with scala.Double = js.native
+  /* 128 | 4 */ val MemberAllowed: MemberAllowed with scala.Double = js.native
   /* 8 */ val Moderator: Moderator with scala.Double = js.native
-  /* NonMember | Member | Moderator */ val ModeratorAllowed: ModeratorAllowed with scala.Double = js.native
+  /* 128 | 4 | 8 */ val ModeratorAllowed: ModeratorAllowed with scala.Double = js.native
   /* 0 */ val Nobody: Nobody with scala.Double = js.native
   /* 128 */ val NonMember: NonMember with scala.Double = js.native
   /* 16 */ val OGGGameOwner: OGGGameOwner with scala.Double = js.native
   /* 2 */ val Officer: Officer with scala.Double = js.native
-  /* NonMember | Member | Moderator | Officer */ val OfficerAllowed: OfficerAllowed with scala.Double = js.native
+  /* 128 | 4 | 8 | 2 */ val OfficerAllowed: OfficerAllowed with scala.Double = js.native
   /* 1 */ val Owner: Owner with scala.Double = js.native
-  /* NonMember | Member | Moderator | Officer | Owner */ val OwnerAllowed: OwnerAllowed with scala.Double = js.native
+  /* 128 | 4 | 8 | 2 | 1 */ val OwnerAllowed: OwnerAllowed with scala.Double = js.native
   /* 3 */ val OwnerAndOfficer: OwnerAndOfficer with scala.Double = js.native
-  /* Owner | Officer | Moderator */ val OwnerOfficerModerator: OwnerOfficerModerator with scala.Double = js.native
+  /* 1 | 2 | 8 */ val OwnerOfficerModerator: OwnerOfficerModerator with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[steamDashClientLib.steamDashClientMod.EClanPermission with scala.Double] = js.native
 }

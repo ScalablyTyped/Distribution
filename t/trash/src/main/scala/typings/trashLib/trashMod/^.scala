@@ -19,16 +19,7 @@ object ^ extends js.Object {
   })();
   ```
   */
-  def apply(
-    input: java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify readonly */ js.Any),
-    string: js.Any,
-    has: js.Any
-  ): js.Promise[scala.Unit] = js.native
-  def apply(
-    input: java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify readonly */ js.Any),
-    string: js.Any,
-    has: js.Any,
-    options: Options
-  ): js.Promise[scala.Unit] = js.native
+  def apply(input: java.lang.String | js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
+  def apply(input: java.lang.String | js.Array[java.lang.String], options: Options): js.Promise[scala.Unit] = js.native
 }
 

@@ -31,12 +31,12 @@ trait TypeofReactDOM extends js.Object {
   ): T = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactElement[P],
+    element: reactLib.reactMod.ReactElement,
     container: stdLib.Element
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactElement[P],
+    element: reactLib.reactMod.ReactElement,
     container: stdLib.Element,
     callback: js.Function1[
       /* component */ js.UndefOr[

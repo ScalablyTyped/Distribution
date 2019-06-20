@@ -127,6 +127,7 @@ object lambdaNs extends js.Object {
     args: atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.lambdaGetLayerVersionMod.GetLayerVersionResult] = js.native
+  def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ scala.Boolean = js.native
   /* static members */
   @js.native
   object Alias extends js.Object {

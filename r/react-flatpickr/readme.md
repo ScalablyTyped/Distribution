@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-flatpickr
 
-Typings are for version 3.7
+Typings are for version 3.8
 
 ## Library description:
 flatpickr for React
@@ -35,11 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-flatpickr 3.7
+// Type definitions for react-flatpickr 3.8
 // Project: https://github.com/coderhaoxin/react-flatpickr
 // Definitions by: begincalendar <https://github.com/begincalendar>
 //                 snaveevans <https://github.com/snaveevans>
 //                 rigothedev <https://github.com/rigothedev>
+//                 doniyor2109 <https://github.com/doniyor2109>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

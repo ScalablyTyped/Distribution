@@ -13,9 +13,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
   /**
     * Rendered in between each section.
     */
-  var SectionSeparatorComponent: js.UndefOr[
-    reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] | scala.Null
-  ] = js.undefined
+  var SectionSeparatorComponent: js.UndefOr[reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement | scala.Null] = js.undefined
   /**
     * `getItemLayout` is an optional optimization that lets us skip measurement of dynamic
     * content if you know the height of items a priori. getItemLayout is the most efficient,
@@ -48,7 +46,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
   var renderSectionFooter: js.UndefOr[
     js.Function1[
       /* info */ reactDashNativeLib.Anon_Section[ItemT], 
-      reactLib.reactMod.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement | scala.Null
     ]
   ] = js.undefined
   /**
@@ -57,7 +55,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
   var renderSectionHeader: js.UndefOr[
     js.Function1[
       /* info */ reactDashNativeLib.Anon_Section[ItemT], 
-      reactLib.reactMod.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement | scala.Null
     ]
   ] = js.undefined
   /**
@@ -76,10 +74,10 @@ object SectionListProps {
   def apply[ItemT](
     sections: js.Array[SectionListData[ItemT]],
     ItemSeparatorComponent: reactLib.reactMod.ComponentType[_] = null,
-    ListEmptyComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    ListFooterComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    ListHeaderComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
-    SectionSeparatorComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement[_] = null,
+    ListEmptyComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    ListFooterComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    ListHeaderComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
+    SectionSeparatorComponent: reactLib.reactMod.ComponentType[_] | reactLib.reactMod.ReactElement = null,
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
@@ -173,13 +171,13 @@ object SectionListProps {
     pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     progressViewOffset: scala.Int | scala.Double = null,
-    refreshControl: reactLib.reactMod.ReactElement[RefreshControlProps] = null,
+    refreshControl: reactLib.reactMod.ReactElement = null,
     refreshing: js.UndefOr[scala.Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderItem: SectionListRenderItem[ItemT] = null,
-    renderScrollComponent: /* props */ ScrollViewProps => reactLib.reactMod.ReactElement[ScrollViewProps] = null,
-    renderSectionFooter: /* info */ reactDashNativeLib.Anon_Section[ItemT] => reactLib.reactMod.ReactElement[_] | scala.Null = null,
-    renderSectionHeader: /* info */ reactDashNativeLib.Anon_Section[ItemT] => reactLib.reactMod.ReactElement[_] | scala.Null = null,
+    renderScrollComponent: /* props */ ScrollViewProps => reactLib.reactMod.ReactElement = null,
+    renderSectionFooter: /* info */ reactDashNativeLib.Anon_Section[ItemT] => reactLib.reactMod.ReactElement | scala.Null = null,
+    renderSectionHeader: /* info */ reactDashNativeLib.Anon_Section[ItemT] => reactLib.reactMod.ReactElement | scala.Null = null,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEventThrottle: scala.Int | scala.Double = null,

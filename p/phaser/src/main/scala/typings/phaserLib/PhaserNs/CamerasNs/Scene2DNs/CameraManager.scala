@@ -163,6 +163,12 @@ class CameraManager protected () extends js.Object {
     */
   def getTotal(): phaserLib.integer = js.native
   def getTotal(isVisible: scala.Boolean): phaserLib.integer = js.native
+  /**
+    * The event handler that manages the `resize` event dispatched by the Scale Manager.
+    * @param gameSize The default Game Size object. This is the un-modified game dimensions.
+    * @param baseSize The base Size object. The game dimensions multiplied by the resolution. The canvas width / height values match this.
+    */
+  def onResize(gameSize: phaserLib.PhaserNs.StructsNs.Size, baseSize: phaserLib.PhaserNs.StructsNs.Size): scala.Unit = js.native
   def remove(camera: js.Array[Camera]): phaserLib.integer = js.native
   def remove(camera: js.Array[Camera], runDestroy: scala.Boolean): phaserLib.integer = js.native
   /**

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait PublicKeyCredential
   extends CredentialData
-     with Credential {
+     with CredentialType {
   val rawId: stdLib.ArrayBuffer
   val response: AuthenticatorAttestationResponse | AuthenticatorAssertionResponse
   val `type`: PublicKeyCredentialType

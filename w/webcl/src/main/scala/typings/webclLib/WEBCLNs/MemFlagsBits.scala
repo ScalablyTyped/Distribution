@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait MemFlagsBits extends js.Object
 
+object MemFlagsBits {
+  @scala.inline
+  def MEM_READ_ONLY: webclLib.webclLibNumbers.`0x4` = this.cast(0x4)
+  @scala.inline
+  def MEM_READ_WRITE: webclLib.webclLibNumbers.`0x1` = this.cast(0x1)
+  @scala.inline
+  def MEM_WRITE_ONLY: webclLib.webclLibNumbers.`0x2` = this.cast(0x2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

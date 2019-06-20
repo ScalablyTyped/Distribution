@@ -13,7 +13,6 @@ class SessionDescriptionHandler protected ()
   def this(logger: sipDotJsLib.libCoreMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
   var C: js.Any = js.native
   var CONTENT_TYPE: js.Any = js.native
-  var WebRTC: js.Any = js.native
   var acquire: js.Any = js.native
   var addDefaultIceCheckingTimeout: js.Any = js.native
   var addDefaultIceServers: js.Any = js.native

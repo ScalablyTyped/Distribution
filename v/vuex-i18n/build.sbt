@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "vuex-i18n"
-version := "1.10-dt-20190520Z-840600"
+version := "1.10-dt-20190520Z-4bc80e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "vue" % "2.6.10-1ed162")
+  "org.scalablytyped" %%% "std" % "3.5-d4a303",
+  "org.scalablytyped" %%% "vue" % "2.6.10-522cd1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -66,8 +66,8 @@ object ^ extends js.Object {
   val ViewPropTypes: reactLib.reactMod.ValidationMap[ViewProps] = js.native
   val YellowBox: (reactLib.reactMod.Component[_, _, _]) with reactDashNativeLib.Anon_IgnoreWarnings = js.native
   def __spread(target: js.Any, sources: js.Any*): js.Any = js.native
-  def createElement[P](`type`: reactLib.reactMod.ReactType[_]): reactLib.reactMod.ReactElement[P] = js.native
-  def createElement[P](`type`: reactLib.reactMod.ReactType[_], props: P, children: reactLib.reactMod.ReactNode*): reactLib.reactMod.ReactElement[P] = js.native
+  def createElement[P](`type`: reactLib.reactMod.ReactType[_]): reactLib.reactMod.ReactElement = js.native
+  def createElement[P](`type`: reactLib.reactMod.ReactType[_], props: P, children: reactLib.reactMod.ReactNode*): reactLib.reactMod.ReactElement = js.native
   def findNodeHandle(): scala.Null | scala.Double = js.native
   def findNodeHandle(componentOrHandle: reactLib.reactMod.Component[_, _, _]): scala.Null | scala.Double = js.native
   def findNodeHandle(componentOrHandle: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]): scala.Null | scala.Double = js.native

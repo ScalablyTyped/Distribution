@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Defines an operation yielding a value incremented by steps across a range.
   */
-trait EmitterOpSteppedConfig extends js.Object {
+trait EmitterOpSteppedConfig extends _EmitterOpOnEmitType {
   /**
     * The ending value.
     */
