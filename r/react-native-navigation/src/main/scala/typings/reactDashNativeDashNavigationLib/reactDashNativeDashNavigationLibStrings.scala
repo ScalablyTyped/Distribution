@@ -21,6 +21,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait afterInitialTab extends js.Object
   
   @js.native
+  sealed trait always extends js.Object
+  
+  @js.native
   sealed trait alwaysHide extends js.Object
   
   @js.native
@@ -99,6 +102,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait hidden extends js.Object
   
   @js.native
+  sealed trait ifRoom extends js.Object
+  
+  @js.native
   sealed trait landscape
     extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.LayoutOrientation
   
@@ -113,6 +119,9 @@ object reactDashNativeDashNavigationLibStrings {
   
   @js.native
   sealed trait ltr extends js.Object
+  
+  @js.native
+  sealed trait never extends js.Object
   
   @js.native
   sealed trait onSwitchToTab extends js.Object
@@ -199,6 +208,9 @@ object reactDashNativeDashNavigationLibStrings {
   @js.native
   sealed trait visible extends js.Object
   
+  @js.native
+  sealed trait withText extends js.Object
+  
   @scala.inline
   def accelerate: accelerate = "accelerate".asInstanceOf[accelerate]
   @scala.inline
@@ -207,6 +219,8 @@ object reactDashNativeDashNavigationLibStrings {
   def add: add = "add".asInstanceOf[add]
   @scala.inline
   def afterInitialTab: afterInitialTab = "afterInitialTab".asInstanceOf[afterInitialTab]
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
   @scala.inline
   def alwaysHide: alwaysHide = "alwaysHide".asInstanceOf[alwaysHide]
   @scala.inline
@@ -254,6 +268,8 @@ object reactDashNativeDashNavigationLibStrings {
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
+  def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   @scala.inline
   def leading: leading = "leading".asInstanceOf[leading]
@@ -263,6 +279,8 @@ object reactDashNativeDashNavigationLibStrings {
   def light: light = "light".asInstanceOf[light]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
   @scala.inline
   def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
   @scala.inline
@@ -311,5 +329,7 @@ object reactDashNativeDashNavigationLibStrings {
   def undo: undo = "undo".asInstanceOf[undo]
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
+  @scala.inline
+  def withText: withText = "withText".asInstanceOf[withText]
 }
 

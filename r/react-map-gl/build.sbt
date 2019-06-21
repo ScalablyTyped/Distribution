@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-map-gl"
-version := "5.0-dt-20190619Z-56c64e"
+version := "5.0-dt-20190619Z-e96711"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "gl-matrix" % "2.4-dt-20190322Z-1823ec",
   "org.scalablytyped" %%% "mapbox-gl" % "v0.51.0-dt-20190521Z-cffc45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
   "org.scalablytyped" %%% "std" % "3.5-d4a303",
   "org.scalablytyped" %%% "viewport-mercator-project" % "6.1-dt-20190313Z-c9e233")
 publishArtifact in packageDoc := false

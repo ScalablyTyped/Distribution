@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchPutMessageRequest extends js.Object {
   /**
-    * The list of messages to send. Each message has format: '{ "messageId": "string", "inputName": "string", "payload": "string"}'.
+    * The list of messages to send. Each message has the following format: '{ "messageId": "string", "inputName": "string", "payload": "string"}' 
     */
   var messages: Messages
 }

@@ -323,7 +323,6 @@ class Question protected ()
   def onAnyValueChanged(name: java.lang.String): scala.Unit = js.native
   /* protected */ def onCheckForErrors(errors: js.Array[SurveyError]): scala.Unit = js.native
   /* protected */ def onCreating(): scala.Unit = js.native
-  /* protected */ def onNameValueChanged(oldValue: java.lang.String, newValue: java.lang.String): scala.Unit = js.native
   /* protected */ def onParentChanged(): scala.Unit = js.native
   def onSurveyValueChanged(newValue: js.Any): scala.Unit = js.native
   @JSName("onSurveyValueChanged")

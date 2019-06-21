@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detox"
-version := "12.8-dt-20190603Z-1b36e0"
+version := "12.8-dt-20190621Z-9a1c59"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

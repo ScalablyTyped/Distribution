@@ -82,8 +82,6 @@ object base64 extends js.Object {
     * @return bytes representing the decoded value.
     */
   def decodeStringToByteArray(input: java.lang.String, webSafe: scala.Boolean): js.Array[scala.Double] = js.native
-  def encodeByteArray(input: js.Array[scala.Double]): java.lang.String = js.native
-  def encodeByteArray(input: js.Array[scala.Double], webSafe: scala.Boolean): java.lang.String = js.native
   /**
     * Base64-encode an array of bytes.
     *
@@ -93,6 +91,8 @@ object base64 extends js.Object {
     *     alternative alphabet.
     * @return The base64 encoded string.
     */
+  def encodeByteArray(input: js.Array[scala.Double]): java.lang.String = js.native
+  def encodeByteArray(input: js.Array[scala.Double], webSafe: scala.Boolean): java.lang.String = js.native
   def encodeByteArray(input: stdLib.Uint8Array): java.lang.String = js.native
   def encodeByteArray(input: stdLib.Uint8Array, webSafe: scala.Boolean): java.lang.String = js.native
   /**

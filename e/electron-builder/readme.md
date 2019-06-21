@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-builder
 
-Typings are for version 20.44.2
+Typings are for version 20.44.3
 
 ## Library description:
 A complete solution to package and build a ready for distribution Electron app for MacOS, Windows and Linux with “auto update” support out of the box

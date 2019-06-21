@@ -126,7 +126,7 @@ trait InstanceArgs extends js.Object {
   /**
     * The instance type of the RDS instance.
     */
-  val instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType]
   /**
     * The amount of provisioned IOPS. Setting this implies a
     * storage_type of "io1".
@@ -289,7 +289,7 @@ trait InstanceArgs extends js.Object {
 object InstanceArgs {
   @scala.inline
   def apply(
-    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType],
     allocatedStorage: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     allowMajorVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,

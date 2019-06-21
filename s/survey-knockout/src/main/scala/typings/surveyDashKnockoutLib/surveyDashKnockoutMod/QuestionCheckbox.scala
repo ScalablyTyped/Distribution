@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class QuestionCheckbox protected () extends QuestionCheckboxModel {
   def this(name: java.lang.String) = this()
   var koAllSelected: js.Any = js.native
-  def getItemClass(item: js.Any): java.lang.String = js.native
+  def getItemClass(item: js.Any): js.Any = js.native
   /* protected */ def updateAllSelected(): scala.Unit = js.native
 }
 

@@ -16,7 +16,7 @@ trait StringifyOptions extends js.Object {
   	- `index`: Serialize arrays using index representation:
   		```
   		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
-  		//=> 'foo[0]=1&foo[1]=2&foo[3]=3'
+  		//=> 'foo[0]=1&foo[1]=2&foo[2]=3'
   		```
   	- `comma`: Serialize arrays by separating elements with comma:
   		```

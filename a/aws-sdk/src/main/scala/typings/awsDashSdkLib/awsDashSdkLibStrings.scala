@@ -3902,6 +3902,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CANCELLED
     extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
+       with awsDashSdkLib.clientsGlueMod._CrawlState
        with awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
        with awsDashSdkLib.clientsGameliftMod._GameSessionPlacementState
        with awsDashSdkLib.clientsAmplifyMod._JobStatus
@@ -4460,6 +4461,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod._StepExecutionState
        with awsDashSdkLib.clientsEmrMod._StepState
        with awsDashSdkLib.clientsTranscribeserviceMod._TranscriptionJobStatus
+       with awsDashSdkLib.clientsGlueMod._WorkflowRunStatus
        with awsDashSdkLib.clientsIamMod._jobStatusType
   
   @js.native
@@ -4811,6 +4813,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait CRAWLER
+    extends awsDashSdkLib.clientsGlueMod._NodeType
   
   @js.native
   sealed trait CRE
@@ -8208,6 +8214,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsKmsMod._ConnectionStateType
        with awsDashSdkLib.clientsGroundstationMod._ContactStatus
        with awsDashSdkLib.clientsServicecatalogMod._CopyProductStatus
+       with awsDashSdkLib.clientsGlueMod._CrawlState
        with awsDashSdkLib.clientsOrganizationsMod._CreateAccountState
        with awsDashSdkLib.clientsIotanalyticsMod._DatasetContentState
        with awsDashSdkLib.clientsWorkspacesMod._DedicatedTenancyModificationStateEnum
@@ -11546,6 +11553,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait JOB
     extends awsDashSdkLib.clientsIotMod._EventType
+       with awsDashSdkLib.clientsGlueMod._NodeType
   
   @js.native
   sealed trait JOB_EXECUTION
@@ -17059,7 +17067,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ROOT
-    extends awsDashSdkLib.clientsOrganizationsMod._ParentType
+    extends awsDashSdkLib.clientsAcmpcaMod._CertificateAuthorityType
+       with awsDashSdkLib.clientsOrganizationsMod._ParentType
        with awsDashSdkLib.clientsOrganizationsMod._TargetType
   
   @js.native
@@ -17179,6 +17188,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAlexaforbusinessMod._BusinessReportStatus
        with awsDashSdkLib.clientsMedialiveMod._ChannelState
        with awsDashSdkLib.clientsEmrMod._ClusterState
+       with awsDashSdkLib.clientsGlueMod._CrawlState
        with awsDashSdkLib.clientsGlueMod._CrawlerState
        with awsDashSdkLib.clientsEcsMod._DesiredStatus
        with awsDashSdkLib.clientsDevicefarmMod._ExecutionStatus
@@ -17205,6 +17215,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod._StepState
        with awsDashSdkLib.clientsRekognitionMod._StreamProcessorStatus
        with awsDashSdkLib.clientsDatasyncMod._TaskStatus
+       with awsDashSdkLib.clientsGlueMod._WorkflowRunStatus
   
   @js.native
   sealed trait RUN_COMMAND
@@ -19052,7 +19063,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAppstreamMod._FleetErrorCode
   
   @js.native
-  sealed trait SUBORDINATE extends js.Object
+  sealed trait SUBORDINATE
+    extends awsDashSdkLib.clientsAcmpcaMod._CertificateAuthorityType
   
   @js.native
   sealed trait SUBSCRIBE
@@ -19073,6 +19085,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCognitosyncMod._BulkPublishStatus
        with awsDashSdkLib.clientsAlexaforbusinessMod._BusinessReportStatus
        with awsDashSdkLib.clientsServicecatalogMod._CopyProductStatus
+       with awsDashSdkLib.clientsGlueMod._CrawlState
        with awsDashSdkLib.clientsOrganizationsMod._CreateAccountState
        with awsDashSdkLib.clientsIotanalyticsMod._DatasetContentState
        with awsDashSdkLib.clientsIamMod._DeletionTaskStatusType
@@ -20472,6 +20485,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TREATMENT_NAME
     extends awsDashSdkLib.clientsComprehendmedicalMod._EntitySubType
+  
+  @js.native
+  sealed trait TRIGGER
+    extends awsDashSdkLib.clientsGlueMod._NodeType
   
   @js.native
   sealed trait TRIM_HORIZON
@@ -25288,6 +25305,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait invalidationCompleted extends js.Object
+  
+  @js.native
+  sealed trait investigation
+    extends awsDashSdkLib.clientsHealthMod._eventTypeCategory
   
   @js.native
   sealed trait `io-enabled`
@@ -30919,6 +30940,8 @@ object awsDashSdkLibStrings {
   def CPUUtilization: CPUUtilization = "CPUUtilization".asInstanceOf[CPUUtilization]
   @scala.inline
   def CR: CR = "CR".asInstanceOf[CR]
+  @scala.inline
+  def CRAWLER: CRAWLER = "CRAWLER".asInstanceOf[CRAWLER]
   @scala.inline
   def CRE: CRE = "CRE".asInstanceOf[CRE]
   @scala.inline
@@ -37322,6 +37345,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def TREATMENT_NAME: TREATMENT_NAME = "TREATMENT_NAME".asInstanceOf[TREATMENT_NAME]
   @scala.inline
+  def TRIGGER: TRIGGER = "TRIGGER".asInstanceOf[TRIGGER]
+  @scala.inline
   def TRIM_HORIZON: TRIM_HORIZON = "TRIM_HORIZON".asInstanceOf[TRIM_HORIZON]
   @scala.inline
   def TROJAN: TROJAN = "TROJAN".asInstanceOf[TROJAN]
@@ -39425,6 +39450,8 @@ object awsDashSdkLibStrings {
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
   def invalidationCompleted: invalidationCompleted = "invalidationCompleted".asInstanceOf[invalidationCompleted]
+  @scala.inline
+  def investigation: investigation = "investigation".asInstanceOf[investigation]
   @scala.inline
   def `io-enabled`: `io-enabled` = "io-enabled".asInstanceOf[`io-enabled`]
   @scala.inline

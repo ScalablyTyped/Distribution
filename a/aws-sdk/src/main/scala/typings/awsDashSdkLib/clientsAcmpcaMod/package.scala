@@ -43,7 +43,12 @@ package object clientsAcmpcaMod {
     - java.lang.String
   */
   type CertificateAuthorityStatus = _CertificateAuthorityStatus | java.lang.String
-  type CertificateAuthorityType = awsDashSdkLib.awsDashSdkLibStrings.SUBORDINATE | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ROOT
+    - awsDashSdkLib.awsDashSdkLibStrings.SUBORDINATE
+    - java.lang.String
+  */
+  type CertificateAuthorityType = _CertificateAuthorityType | java.lang.String
   type CertificateBody = java.lang.String
   type CertificateBodyBlob = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   type CertificateChain = java.lang.String

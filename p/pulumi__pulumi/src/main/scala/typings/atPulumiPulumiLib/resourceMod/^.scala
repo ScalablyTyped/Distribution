@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/pulumi/resource", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val rootStackResource: Resource = js.native
   def createUrn(
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]

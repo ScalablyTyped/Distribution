@@ -35,5 +35,15 @@ class StackReference protected ()
     * @param name The name of the stack output to fetch.
     */
   def getOutput(name: atPulumiPulumiLib.outputMod.Input[java.lang.String]): atPulumiPulumiLib.outputMod.Output[_] = js.native
+  /**
+    * Fetches the value promptly of the named stack output.  May return undefined if the value is
+    * not known for some reason.
+    *
+    * This operation is not supported (and will throw) if any exported values of the StackReference
+    * are secrets.
+    *
+    * @param name The name of the stack output to fetch.
+    */
+  def getOutputSync(name: java.lang.String): js.Any = js.native
 }
 

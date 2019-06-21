@@ -15,7 +15,7 @@ trait JobCommand extends js.Object {
     */
   var PythonVersion: js.UndefOr[PythonVersionString] = js.undefined
   /**
-    * Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that executes a job (required).
+    * Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that executes a job.
     */
   var ScriptLocation: js.UndefOr[ScriptLocationString] = js.undefined
 }

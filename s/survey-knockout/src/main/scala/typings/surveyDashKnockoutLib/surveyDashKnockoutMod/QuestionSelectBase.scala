@@ -35,6 +35,7 @@ class QuestionSelectBase protected () extends Question {
     * @see choicesEnableIf
     */
   var choicesVisibleIf: java.lang.String = js.native
+  val columns: js.Array[js.Array[ItemValue]] = js.native
   /**
     * The list of enabled items as they will be rendered. The disabled items are not included
     * @see hasOther
@@ -42,6 +43,7 @@ class QuestionSelectBase protected () extends Question {
     * @see visibleChoices
     */
   val enabledChoices: js.Array[ItemValue] = js.native
+  val hasColumns: scala.Boolean = js.native
   var hideIfChoicesEmpty: scala.Boolean = js.native
   /**
     * Returns true if a user select the 'other' item.
@@ -96,6 +98,7 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def filterItems(): scala.Boolean = js.native
   /* protected */ def getChoices(): js.Array[ItemValue] = js.native
   /* protected */ def getChoicesDisplayValue(items: js.Array[ItemValue], `val`: js.Any): js.Any = js.native
+  def getColumnClass(): js.Any = js.native
   /* protected */ def getHasOther(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def getStoreOthersAsComment(): scala.Boolean = js.native
   /* protected */ def hasUnknownValue(`val`: js.Any): scala.Boolean = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchUpdateDetectorRequest extends js.Object {
   /**
-    * The list of detectors (instances) to be updated, along with the values to be updated.
+    * The list of detectors (instances) to update, along with the values to update.
     */
   var detectors: UpdateDetectorRequests
 }

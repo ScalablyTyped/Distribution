@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionRadiogroup protected () extends QuestionRadiogroupModel {
   def this(name: java.lang.String) = this()
-  def getItemClass(item: js.Any): java.lang.String = js.native
+  def getItemClass(item: js.Any): js.Any = js.native
 }
 

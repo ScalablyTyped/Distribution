@@ -143,6 +143,10 @@ trait DBInstance extends js.Object {
     */
   var MasterUsername: js.UndefOr[String] = js.undefined
   /**
+    * The upper limit to which Amazon RDS can automatically scale the storage of the DB instance.
+    */
+  var MaxAllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
+  /**
     * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
     */
   var MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined
@@ -273,6 +277,7 @@ object DBInstance {
     LicenseModel: String = null,
     ListenerEndpoint: Endpoint = null,
     MasterUsername: String = null,
+    MaxAllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
     MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined,
     MonitoringRoleArn: String = null,
     MultiAZ: js.UndefOr[Boolean] = js.undefined,
@@ -332,6 +337,7 @@ object DBInstance {
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
     if (ListenerEndpoint != null) __obj.updateDynamic("ListenerEndpoint")(ListenerEndpoint)
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
+    if (!js.isUndefined(MaxAllocatedStorage)) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage)
     if (!js.isUndefined(MonitoringInterval)) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval)
     if (MonitoringRoleArn != null) __obj.updateDynamic("MonitoringRoleArn")(MonitoringRoleArn)
     if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)

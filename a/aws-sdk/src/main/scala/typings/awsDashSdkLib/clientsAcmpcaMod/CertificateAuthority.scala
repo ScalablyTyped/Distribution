@@ -35,7 +35,7 @@ trait CertificateAuthority extends js.Object {
     */
   var NotBefore: js.UndefOr[TStamp] = js.undefined
   /**
-    * The period during which a deleted CA can be restored. For more information, see the PermanentDeletionTimeInDays parameter of the DeleteCertificateAuthorityRequest operation. 
+    * The period during which a deleted CA can be restored. For more information, see the PermanentDeletionTimeInDays parameter of the DeleteCertificateAuthorityRequest action. 
     */
   var RestorableUntil: js.UndefOr[TStamp] = js.undefined
   /**

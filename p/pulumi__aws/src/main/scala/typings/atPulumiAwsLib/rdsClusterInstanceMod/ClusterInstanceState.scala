@@ -70,7 +70,9 @@ trait ClusterInstanceState extends js.Object {
     * The instance class to use. For details on CPU
     * and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
     */
-  val instanceClass: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val instanceClass: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType]
+  ] = js.undefined
   /**
     * The ARN for the KMS encryption key if one is set to the cluster.
     */
@@ -148,7 +150,7 @@ object ClusterInstanceState {
     engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     identifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     identifierPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType] = null,
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     monitoringInterval: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     monitoringRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

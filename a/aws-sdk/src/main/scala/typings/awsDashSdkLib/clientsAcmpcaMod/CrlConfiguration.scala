@@ -11,7 +11,7 @@ trait CrlConfiguration extends js.Object {
     */
   var CustomCname: js.UndefOr[String253] = js.undefined
   /**
-    * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. You can use this value to enable certificate revocation for a new CA when you call the CreateCertificateAuthority operation or for an existing CA when you call the UpdateCertificateAuthority operation. 
+    * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. You can use this value to enable certificate revocation for a new CA when you call the CreateCertificateAuthority action or for an existing CA when you call the UpdateCertificateAuthority action. 
     */
   var Enabled: Boolean
   /**
@@ -19,7 +19,7 @@ trait CrlConfiguration extends js.Object {
     */
   var ExpirationInDays: js.UndefOr[Integer1To5000] = js.undefined
   /**
-    * Name of the S3 bucket that contains the CRL. If you do not provide a value for the CustomCname argument, the name of your S3 bucket is placed into the CRL Distribution Points extension of the issued certificate. You can change the name of your bucket by calling the UpdateCertificateAuthority operation. You must specify a bucket policy that allows ACM PCA to write the CRL to your bucket.
+    * Name of the S3 bucket that contains the CRL. If you do not provide a value for the CustomCname argument, the name of your S3 bucket is placed into the CRL Distribution Points extension of the issued certificate. You can change the name of your bucket by calling the UpdateCertificateAuthority action. You must specify a bucket policy that allows ACM Private CA to write the CRL to your bucket.
     */
   var S3BucketName: js.UndefOr[String3To255] = js.undefined
 }

@@ -15,7 +15,7 @@ trait DetectorState extends js.Object {
     */
   var timers: Timers
   /**
-    * The current state of the detector's variables.
+    * The current values of the detector's variables.
     */
   var variables: Variables
 }

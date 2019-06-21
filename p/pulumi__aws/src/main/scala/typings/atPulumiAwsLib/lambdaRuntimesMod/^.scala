@@ -22,5 +22,7 @@ object ^ extends js.Object {
   var NodeJSRuntime: Runtime = js.native
   var Python2d7Runtime: Runtime = js.native
   var Python3d6Runtime: Runtime = js.native
+  var Python3d7Runtime: Runtime = js.native
+  var Ruby2d5Runtime: Runtime = js.native
 }
 

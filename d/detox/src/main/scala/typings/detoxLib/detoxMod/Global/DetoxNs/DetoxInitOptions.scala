@@ -15,17 +15,23 @@ trait DetoxInitOptions extends js.Object {
     * By default await detox.init(config); will launch the installed app. If you wish to control when your app is launched, add {launchApp: false} param to your init.
     */
   var launchApp: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * By default await detox.init(config); will uninstall and install the app. If you wish to reuse the existing app for a faster run, add {reuse: true} param to your init.
+    */
+  var reuse: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object DetoxInitOptions {
   @scala.inline
   def apply(
     initGlobals: js.UndefOr[scala.Boolean] = js.undefined,
-    launchApp: js.UndefOr[scala.Boolean] = js.undefined
+    launchApp: js.UndefOr[scala.Boolean] = js.undefined,
+    reuse: js.UndefOr[scala.Boolean] = js.undefined
   ): DetoxInitOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(initGlobals)) __obj.updateDynamic("initGlobals")(initGlobals)
     if (!js.isUndefined(launchApp)) __obj.updateDynamic("launchApp")(launchApp)
+    if (!js.isUndefined(reuse)) __obj.updateDynamic("reuse")(reuse)
     __obj.asInstanceOf[DetoxInitOptions]
   }
 }

@@ -73,7 +73,7 @@ trait CreateJobRequest extends js.Object {
   /**
     * The type of predefined worker that is allocated when a job runs. Accepts a value of Standard, G.1X, or G.2X.   For the Standard worker type, each worker provides 4 vCPU, 16 GB of memory and a 50GB disk, and 2 executors per worker.   For the G.1X worker type, each worker maps to 1 DPU (4 vCPU, 16 GB of memory, 64 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs.   For the G.2X worker type, each worker maps to 2 DPU (8 vCPU, 32 GB of memory, 128 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs.  
     */
-  var WorkerType: js.UndefOr[WorkerType] = js.undefined
+  var WorkerType: js.UndefOr[NameString] = js.undefined
 }
 
 object CreateJobRequest {
@@ -95,7 +95,7 @@ object CreateJobRequest {
     SecurityConfiguration: NameString = null,
     Tags: TagsMap = null,
     Timeout: js.UndefOr[Timeout] = js.undefined,
-    WorkerType: WorkerType = null
+    WorkerType: NameString = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(Command = Command, Name = Name, Role = Role)
     if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity)
@@ -111,7 +111,7 @@ object CreateJobRequest {
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout)
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
+    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType)
     __obj.asInstanceOf[CreateJobRequest]
   }
 }

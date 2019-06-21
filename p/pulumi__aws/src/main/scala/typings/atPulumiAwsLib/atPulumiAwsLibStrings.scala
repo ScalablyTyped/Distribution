@@ -592,6 +592,218 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
+  sealed trait dbDOTm1DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm1DOTmedium
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm1DOTsmall
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm1DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm2DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm2DOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm2DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm3DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm3DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm3DOTmedium
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm3DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm4DOT10xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm4DOT16xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm4DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm4DOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm4DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm4DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm5DOT12xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm5DOT24xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm5DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm5DOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm5DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTm5DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr3DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr3DOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr3DOT8xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr3DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr3DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr4DOT16xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr4DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr4DOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr4DOT8xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr4DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr4DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr5DOT12xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr5DOT24xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr5DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr5DOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr5DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTr5DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt2DOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt2DOTlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt2DOTmedium
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt2DOTmicro
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt2DOTsmall
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTt2DOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1DOT16xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1DOT32xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1eDOT2xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1eDOT32xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1eDOT4xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1eDOT8xlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait dbDOTx1eDOTxlarge
+    extends atPulumiAwsLib.rdsInstanceTypeMod.InstanceType
+  
+  @js.native
   sealed trait dedicated
     extends atPulumiAwsLib.ec2TenancyMod.Tenancy
   
@@ -980,6 +1192,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
+  sealed trait python3DOT7
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
   sealed trait r3DOT2xlarge
     extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
@@ -1106,6 +1322,10 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait rttime
     extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait ruby2DOT5
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
   sealed trait `sa-east-1`
@@ -1588,6 +1808,112 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
+  def dbDOTm1DOTlarge: dbDOTm1DOTlarge = "db.m1.large".asInstanceOf[dbDOTm1DOTlarge]
+  @scala.inline
+  def dbDOTm1DOTmedium: dbDOTm1DOTmedium = "db.m1.medium".asInstanceOf[dbDOTm1DOTmedium]
+  @scala.inline
+  def dbDOTm1DOTsmall: dbDOTm1DOTsmall = "db.m1.small".asInstanceOf[dbDOTm1DOTsmall]
+  @scala.inline
+  def dbDOTm1DOTxlarge: dbDOTm1DOTxlarge = "db.m1.xlarge".asInstanceOf[dbDOTm1DOTxlarge]
+  @scala.inline
+  def dbDOTm2DOT2xlarge: dbDOTm2DOT2xlarge = "db.m2.2xlarge".asInstanceOf[dbDOTm2DOT2xlarge]
+  @scala.inline
+  def dbDOTm2DOT4xlarge: dbDOTm2DOT4xlarge = "db.m2.4xlarge".asInstanceOf[dbDOTm2DOT4xlarge]
+  @scala.inline
+  def dbDOTm2DOTxlarge: dbDOTm2DOTxlarge = "db.m2.xlarge".asInstanceOf[dbDOTm2DOTxlarge]
+  @scala.inline
+  def dbDOTm3DOT2xlarge: dbDOTm3DOT2xlarge = "db.m3.2xlarge".asInstanceOf[dbDOTm3DOT2xlarge]
+  @scala.inline
+  def dbDOTm3DOTlarge: dbDOTm3DOTlarge = "db.m3.large".asInstanceOf[dbDOTm3DOTlarge]
+  @scala.inline
+  def dbDOTm3DOTmedium: dbDOTm3DOTmedium = "db.m3.medium".asInstanceOf[dbDOTm3DOTmedium]
+  @scala.inline
+  def dbDOTm3DOTxlarge: dbDOTm3DOTxlarge = "db.m3.xlarge".asInstanceOf[dbDOTm3DOTxlarge]
+  @scala.inline
+  def dbDOTm4DOT10xlarge: dbDOTm4DOT10xlarge = "db.m4.10xlarge".asInstanceOf[dbDOTm4DOT10xlarge]
+  @scala.inline
+  def dbDOTm4DOT16xlarge: dbDOTm4DOT16xlarge = "db.m4.16xlarge".asInstanceOf[dbDOTm4DOT16xlarge]
+  @scala.inline
+  def dbDOTm4DOT2xlarge: dbDOTm4DOT2xlarge = "db.m4.2xlarge".asInstanceOf[dbDOTm4DOT2xlarge]
+  @scala.inline
+  def dbDOTm4DOT4xlarge: dbDOTm4DOT4xlarge = "db.m4.4xlarge".asInstanceOf[dbDOTm4DOT4xlarge]
+  @scala.inline
+  def dbDOTm4DOTlarge: dbDOTm4DOTlarge = "db.m4.large".asInstanceOf[dbDOTm4DOTlarge]
+  @scala.inline
+  def dbDOTm4DOTxlarge: dbDOTm4DOTxlarge = "db.m4.xlarge".asInstanceOf[dbDOTm4DOTxlarge]
+  @scala.inline
+  def dbDOTm5DOT12xlarge: dbDOTm5DOT12xlarge = "db.m5.12xlarge".asInstanceOf[dbDOTm5DOT12xlarge]
+  @scala.inline
+  def dbDOTm5DOT24xlarge: dbDOTm5DOT24xlarge = "db.m5.24xlarge".asInstanceOf[dbDOTm5DOT24xlarge]
+  @scala.inline
+  def dbDOTm5DOT2xlarge: dbDOTm5DOT2xlarge = "db.m5.2xlarge".asInstanceOf[dbDOTm5DOT2xlarge]
+  @scala.inline
+  def dbDOTm5DOT4xlarge: dbDOTm5DOT4xlarge = "db.m5.4xlarge".asInstanceOf[dbDOTm5DOT4xlarge]
+  @scala.inline
+  def dbDOTm5DOTlarge: dbDOTm5DOTlarge = "db.m5.large".asInstanceOf[dbDOTm5DOTlarge]
+  @scala.inline
+  def dbDOTm5DOTxlarge: dbDOTm5DOTxlarge = "db.m5.xlarge".asInstanceOf[dbDOTm5DOTxlarge]
+  @scala.inline
+  def dbDOTr3DOT2xlarge: dbDOTr3DOT2xlarge = "db.r3.2xlarge".asInstanceOf[dbDOTr3DOT2xlarge]
+  @scala.inline
+  def dbDOTr3DOT4xlarge: dbDOTr3DOT4xlarge = "db.r3.4xlarge".asInstanceOf[dbDOTr3DOT4xlarge]
+  @scala.inline
+  def dbDOTr3DOT8xlarge: dbDOTr3DOT8xlarge = "db.r3.8xlarge".asInstanceOf[dbDOTr3DOT8xlarge]
+  @scala.inline
+  def dbDOTr3DOTlarge: dbDOTr3DOTlarge = "db.r3.large".asInstanceOf[dbDOTr3DOTlarge]
+  @scala.inline
+  def dbDOTr3DOTxlarge: dbDOTr3DOTxlarge = "db.r3.xlarge".asInstanceOf[dbDOTr3DOTxlarge]
+  @scala.inline
+  def dbDOTr4DOT16xlarge: dbDOTr4DOT16xlarge = "db.r4.16xlarge".asInstanceOf[dbDOTr4DOT16xlarge]
+  @scala.inline
+  def dbDOTr4DOT2xlarge: dbDOTr4DOT2xlarge = "db.r4.2xlarge".asInstanceOf[dbDOTr4DOT2xlarge]
+  @scala.inline
+  def dbDOTr4DOT4xlarge: dbDOTr4DOT4xlarge = "db.r4.4xlarge".asInstanceOf[dbDOTr4DOT4xlarge]
+  @scala.inline
+  def dbDOTr4DOT8xlarge: dbDOTr4DOT8xlarge = "db.r4.8xlarge".asInstanceOf[dbDOTr4DOT8xlarge]
+  @scala.inline
+  def dbDOTr4DOTlarge: dbDOTr4DOTlarge = "db.r4.large".asInstanceOf[dbDOTr4DOTlarge]
+  @scala.inline
+  def dbDOTr4DOTxlarge: dbDOTr4DOTxlarge = "db.r4.xlarge".asInstanceOf[dbDOTr4DOTxlarge]
+  @scala.inline
+  def dbDOTr5DOT12xlarge: dbDOTr5DOT12xlarge = "db.r5.12xlarge".asInstanceOf[dbDOTr5DOT12xlarge]
+  @scala.inline
+  def dbDOTr5DOT24xlarge: dbDOTr5DOT24xlarge = "db.r5.24xlarge".asInstanceOf[dbDOTr5DOT24xlarge]
+  @scala.inline
+  def dbDOTr5DOT2xlarge: dbDOTr5DOT2xlarge = "db.r5.2xlarge".asInstanceOf[dbDOTr5DOT2xlarge]
+  @scala.inline
+  def dbDOTr5DOT4xlarge: dbDOTr5DOT4xlarge = "db.r5.4xlarge".asInstanceOf[dbDOTr5DOT4xlarge]
+  @scala.inline
+  def dbDOTr5DOTlarge: dbDOTr5DOTlarge = "db.r5.large".asInstanceOf[dbDOTr5DOTlarge]
+  @scala.inline
+  def dbDOTr5DOTxlarge: dbDOTr5DOTxlarge = "db.r5.xlarge".asInstanceOf[dbDOTr5DOTxlarge]
+  @scala.inline
+  def dbDOTt2DOT2xlarge: dbDOTt2DOT2xlarge = "db.t2.2xlarge".asInstanceOf[dbDOTt2DOT2xlarge]
+  @scala.inline
+  def dbDOTt2DOTlarge: dbDOTt2DOTlarge = "db.t2.large".asInstanceOf[dbDOTt2DOTlarge]
+  @scala.inline
+  def dbDOTt2DOTmedium: dbDOTt2DOTmedium = "db.t2.medium".asInstanceOf[dbDOTt2DOTmedium]
+  @scala.inline
+  def dbDOTt2DOTmicro: dbDOTt2DOTmicro = "db.t2.micro".asInstanceOf[dbDOTt2DOTmicro]
+  @scala.inline
+  def dbDOTt2DOTsmall: dbDOTt2DOTsmall = "db.t2.small".asInstanceOf[dbDOTt2DOTsmall]
+  @scala.inline
+  def dbDOTt2DOTxlarge: dbDOTt2DOTxlarge = "db.t2.xlarge".asInstanceOf[dbDOTt2DOTxlarge]
+  @scala.inline
+  def dbDOTx1DOT16xlarge: dbDOTx1DOT16xlarge = "db.x1.16xlarge".asInstanceOf[dbDOTx1DOT16xlarge]
+  @scala.inline
+  def dbDOTx1DOT32xlarge: dbDOTx1DOT32xlarge = "db.x1.32xlarge".asInstanceOf[dbDOTx1DOT32xlarge]
+  @scala.inline
+  def dbDOTx1eDOT2xlarge: dbDOTx1eDOT2xlarge = "db.x1e.2xlarge".asInstanceOf[dbDOTx1eDOT2xlarge]
+  @scala.inline
+  def dbDOTx1eDOT32xlarge: dbDOTx1eDOT32xlarge = "db.x1e.32xlarge".asInstanceOf[dbDOTx1eDOT32xlarge]
+  @scala.inline
+  def dbDOTx1eDOT4xlarge: dbDOTx1eDOT4xlarge = "db.x1e.4xlarge".asInstanceOf[dbDOTx1eDOT4xlarge]
+  @scala.inline
+  def dbDOTx1eDOT8xlarge: dbDOTx1eDOT8xlarge = "db.x1e.8xlarge".asInstanceOf[dbDOTx1eDOT8xlarge]
+  @scala.inline
+  def dbDOTx1eDOTxlarge: dbDOTx1eDOTxlarge = "db.x1e.xlarge".asInstanceOf[dbDOTx1eDOTxlarge]
+  @scala.inline
   def dedicated: dedicated = "dedicated".asInstanceOf[dedicated]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
@@ -1782,6 +2108,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
   @scala.inline
+  def python3DOT7: python3DOT7 = "python3.7".asInstanceOf[python3DOT7]
+  @scala.inline
   def r3DOT2xlarge: r3DOT2xlarge = "r3.2xlarge".asInstanceOf[r3DOT2xlarge]
   @scala.inline
   def r3DOT4xlarge: r3DOT4xlarge = "r3.4xlarge".asInstanceOf[r3DOT4xlarge]
@@ -1845,6 +2173,8 @@ object atPulumiAwsLibStrings {
   def rtprio: rtprio = "rtprio".asInstanceOf[rtprio]
   @scala.inline
   def rttime: rttime = "rttime".asInstanceOf[rttime]
+  @scala.inline
+  def ruby2DOT5: ruby2DOT5 = "ruby2.5".asInstanceOf[ruby2DOT5]
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   @scala.inline

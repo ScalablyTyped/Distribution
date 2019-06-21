@@ -25,9 +25,11 @@ object distStitchingMod extends js.Object {
     fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher,
     linkContext: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
-  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolver: graphqlDashToolsLib.Anon_ArgName): graphqlLib.graphqlMod.GraphQLSchema = js.native
+  def makeRemoteExecutableSchema(
+    hasSchemaLinkFetcherCreateResolverBuildSchemaOptionsPrintSchemaOptions: graphqlDashToolsLib.Anon_ArgName
+  ): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def mergeSchemas(
-    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfaces: graphqlDashToolsLib.Anon_InheritResolversFromInterfaces
+    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfacesMergeDirectives: graphqlDashToolsLib.Anon_InheritResolversFromInterfaces
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
 }
 

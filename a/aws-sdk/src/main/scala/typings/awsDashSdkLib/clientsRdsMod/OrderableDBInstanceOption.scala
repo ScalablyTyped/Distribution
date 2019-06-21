@@ -87,6 +87,10 @@ trait OrderableDBInstanceOption extends js.Object {
     */
   var SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined
   /**
+    * Whether or not Amazon RDS can automatically scale storage for DB instances that use the specified instance class.
+    */
+  var SupportsStorageAutoscaling: js.UndefOr[BooleanOptional] = js.undefined
+  /**
     * Indicates whether a DB instance supports encrypted storage.
     */
   var SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined
@@ -119,6 +123,7 @@ object OrderableDBInstanceOption {
     SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined,
     SupportsIops: js.UndefOr[Boolean] = js.undefined,
     SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined,
+    SupportsStorageAutoscaling: js.UndefOr[BooleanOptional] = js.undefined,
     SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined,
     Vpc: js.UndefOr[Boolean] = js.undefined
   ): OrderableDBInstanceOption = {
@@ -143,6 +148,7 @@ object OrderableDBInstanceOption {
     if (!js.isUndefined(SupportsIAMDatabaseAuthentication)) __obj.updateDynamic("SupportsIAMDatabaseAuthentication")(SupportsIAMDatabaseAuthentication)
     if (!js.isUndefined(SupportsIops)) __obj.updateDynamic("SupportsIops")(SupportsIops)
     if (!js.isUndefined(SupportsPerformanceInsights)) __obj.updateDynamic("SupportsPerformanceInsights")(SupportsPerformanceInsights)
+    if (!js.isUndefined(SupportsStorageAutoscaling)) __obj.updateDynamic("SupportsStorageAutoscaling")(SupportsStorageAutoscaling)
     if (!js.isUndefined(SupportsStorageEncryption)) __obj.updateDynamic("SupportsStorageEncryption")(SupportsStorageEncryption)
     if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc)
     __obj.asInstanceOf[OrderableDBInstanceOption]

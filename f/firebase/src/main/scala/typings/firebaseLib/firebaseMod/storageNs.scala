@@ -197,6 +197,8 @@ object storageNs extends js.Object {
       *      folder. `nextPageToken` is never returned.
       */
     def listAll(): js.Promise[ListResult] = js.native
+    def put(data: stdLib.ArrayBuffer): UploadTask = js.native
+    def put(data: stdLib.ArrayBuffer, metadata: UploadMetadata): UploadTask = js.native
     /**
       * Uploads data to this reference's location.
       * @param data The data to upload.
@@ -205,8 +207,10 @@ object storageNs extends js.Object {
       * @return An object that can be used to monitor
       *     and manage the upload.
       */
-    def put(data: js.Any): UploadTask = js.native
-    def put(data: js.Any, metadata: UploadMetadata): UploadTask = js.native
+    def put(data: stdLib.Blob): UploadTask = js.native
+    def put(data: stdLib.Blob, metadata: UploadMetadata): UploadTask = js.native
+    def put(data: stdLib.Uint8Array): UploadTask = js.native
+    def put(data: stdLib.Uint8Array, metadata: UploadMetadata): UploadTask = js.native
     /**
       * Uploads string data to this reference's location.
       * @param data The string to upload.

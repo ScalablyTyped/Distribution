@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeletePermissionRequest extends js.Object {
   /**
-    * The Amazon Resource Number (ARN) of the private CA that issued the permissions. You can find the CA's ARN by calling the ListCertificateAuthorities operation. This must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
+    * The Amazon Resource Number (ARN) of the private CA that issued the permissions. You can find the CA's ARN by calling the ListCertificateAuthorities action. This must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
     */
   var CertificateAuthorityArn: Arn
   /**
@@ -15,7 +15,7 @@ trait DeletePermissionRequest extends js.Object {
     */
   var Principal: awsDashSdkLib.clientsAcmpcaMod.Principal
   /**
-    * The AWS account that calls this operation.
+    * The AWS account that calls this action.
     */
   var SourceAccount: js.UndefOr[AccountId] = js.undefined
 }

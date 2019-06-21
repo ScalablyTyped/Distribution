@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__util
 
-Typings are for version 0.2.19
+Typings are for version 0.2.20
 
 ## Library description:
 _NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a member of the Firebase team, please avoid using this package_
@@ -53,8 +53,6 @@ These comments are from the typescript definitions and might be useful:
  */
 /**
  * Throws an error if the provided assertion is falsy
- * @param {*} assertion The assertion to be tested for falsiness
- * @param {!string} message The message to display if the check fails
  */
 /**
  * @fileoverview Firebase constants.  Some of these (@defines) can be overridden at compile-time.
@@ -113,22 +111,9 @@ These comments are from the typescript definitions and might be useful:
  * @return {*} The javascript object representing the specified JSON.
  */
 /**
- * Decodes a Firebase auth. token into constituent parts.
- *
- * Notes:
- * - May return with invalid / incomplete claims if there's no native base64 decoding support.
- * - Doesn't check if the token is actually valid.
- *
- * @param {?string} token
- * @return {{header: *, claims: *, data: *, signature: string}}
- */
-/**
  * Returns a querystring-formatted string (e.g. &arg=val&arg2=val2) from a params
  * object (e.g. {arg: 'val', arg2: 'val2'})
  * Note: You must prepend it with ? when adding it to a URL.
- *
- * @param {!Object} querystringParams
- * @return {string}
  */
 /**
  * @fileoverview SHA-1 cryptographic hash.
@@ -161,10 +146,10 @@ These comments are from the typescript definitions and might be useful:
  * Check to make sure the appropriate number of arguments are provided for a public function.
  * Throws an error if it fails.
  *
- * @param {!string} fnName The function name
- * @param {!number} minCount The minimum number of arguments to allow for the function call
- * @param {!number} maxCount The maximum number of argument to allow for the function call
- * @param {!number} argCount The actual number of arguments provided.
+ * @param fnName The function name
+ * @param minCount The minimum number of arguments to allow for the function call
+ * @param maxCount The maximum number of argument to allow for the function call
+ * @param argCount The actual number of arguments provided.
  */
 
 ```

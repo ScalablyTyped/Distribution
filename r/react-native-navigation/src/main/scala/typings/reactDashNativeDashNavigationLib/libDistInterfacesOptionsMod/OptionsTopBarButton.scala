@@ -44,6 +44,13 @@ trait OptionsTopBarButton extends js.Object {
     */
   var id: java.lang.String
   /**
+    * (Android only) Set showAsAction value
+    * @see {@link https://developer.android.com/guide/topics/resources/menu-resource|Android developer guide: Menu resource}
+    */
+  var showAsAction: js.UndefOr[
+    reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.ifRoom | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.withText | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.always | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.never
+  ] = js.undefined
+  /**
     * (iOS only) Set the button as an iOS system icon
     */
   var systemItem: js.UndefOr[SystemItemIcon] = js.undefined
@@ -69,6 +76,7 @@ object OptionsTopBarButton {
     fontFamily: java.lang.String = null,
     icon: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
     iconInsets: IconInsets = null,
+    showAsAction: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.ifRoom | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.withText | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.always | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.never = null,
     systemItem: SystemItemIcon = null,
     testID: java.lang.String = null,
     text: java.lang.String = null
@@ -82,6 +90,7 @@ object OptionsTopBarButton {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)
+    if (showAsAction != null) __obj.updateDynamic("showAsAction")(showAsAction.asInstanceOf[js.Any])
     if (systemItem != null) __obj.updateDynamic("systemItem")(systemItem)
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (text != null) __obj.updateDynamic("text")(text)

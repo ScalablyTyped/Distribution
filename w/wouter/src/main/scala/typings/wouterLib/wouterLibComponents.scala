@@ -22,8 +22,7 @@ object wouterLibComponents {
   def RouteProps: wouterLib.wouterMod.RouteProps.type = wouterLib.wouterMod.RouteProps
   type RouteProps = wouterLib.wouterMod.RouteProps
   @scala.inline
-  def Router: reactLib.reactMod.ComponentType[stdLib.Partial[wouterLib.wouterMod.RouterProps]] = wouterLib.wouterMod.^.Router.asInstanceOf[reactLib.reactMod.ComponentType[stdLib.Partial[wouterLib.wouterMod.RouterProps]]]
-  type RouterProps[T] = stdLib.Partial[T]
+  def Router: reactLib.reactMod.ComponentType[stdLib.Partial[wouterLib.wouterMod.RouterProps] with Anon_Children] = wouterLib.wouterMod.^.Router.asInstanceOf[reactLib.reactMod.ComponentType[stdLib.Partial[wouterLib.wouterMod.RouterProps] with wouterLib.Anon_Children]]
   @scala.inline
   def Switch: reactLib.reactMod.ComponentType[wouterLib.wouterMod.SwitchProps] = wouterLib.wouterMod.^.Switch.asInstanceOf[reactLib.reactMod.ComponentType[wouterLib.wouterMod.SwitchProps]]
   @scala.inline

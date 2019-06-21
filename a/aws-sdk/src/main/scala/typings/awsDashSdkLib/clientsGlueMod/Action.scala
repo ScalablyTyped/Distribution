@@ -11,6 +11,10 @@ trait Action extends js.Object {
     */
   var Arguments: js.UndefOr[GenericMap] = js.undefined
   /**
+    * The name of the crawler to be used with this action.
+    */
+  var CrawlerName: js.UndefOr[NameString] = js.undefined
+  /**
     * The name of a job to be executed.
     */
   var JobName: js.UndefOr[NameString] = js.undefined
@@ -32,6 +36,7 @@ object Action {
   @scala.inline
   def apply(
     Arguments: GenericMap = null,
+    CrawlerName: NameString = null,
     JobName: NameString = null,
     NotificationProperty: NotificationProperty = null,
     SecurityConfiguration: NameString = null,
@@ -39,6 +44,7 @@ object Action {
   ): Action = {
     val __obj = js.Dynamic.literal()
     if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments)
+    if (CrawlerName != null) __obj.updateDynamic("CrawlerName")(CrawlerName)
     if (JobName != null) __obj.updateDynamic("JobName")(JobName)
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty)
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration)

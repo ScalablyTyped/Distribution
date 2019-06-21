@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "gatsby"
-version := "2.9.11-da68cb"
+version := "2.10.0-b268f0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "gatsby-link" % "2.1.1-9b5115",
+  "org.scalablytyped" %%% "gatsby-link" % "2.2.0-bc8509",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-9e9935",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190404Z-16d211",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
+  "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190404Z-499dc1",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

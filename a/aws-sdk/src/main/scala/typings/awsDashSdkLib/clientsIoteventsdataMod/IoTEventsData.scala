@@ -11,7 +11,7 @@ trait IoTEventsData
   @JSName("config")
   var config_IoTEventsData: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Sends a set of messages to the AWS IoT Events system. Each message payload will be transformed into the input you specify (inputName) and ingested into any detectors that monitor that input. If multiple messages are sent, the order in which the messages are processed is not guaranteed--you must send messages one at a time and wait for a successful response to guarantee ordering. 
+    * Sends a set of messages to the AWS IoT Events system. Each message payload is transformed into the input you specify ("inputName") and ingested into any detectors that monitor that input. If multiple messages are sent, the order in which the messages are processed isn't guaranteed. To guarantee ordering, you must send messages one at a time and wait for a successful response.
     */
   def batchPutMessage(): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchPutMessage(
@@ -22,7 +22,7 @@ trait IoTEventsData
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sends a set of messages to the AWS IoT Events system. Each message payload will be transformed into the input you specify (inputName) and ingested into any detectors that monitor that input. If multiple messages are sent, the order in which the messages are processed is not guaranteed--you must send messages one at a time and wait for a successful response to guarantee ordering. 
+    * Sends a set of messages to the AWS IoT Events system. Each message payload is transformed into the input you specify ("inputName") and ingested into any detectors that monitor that input. If multiple messages are sent, the order in which the messages are processed isn't guaranteed. To guarantee ordering, you must send messages one at a time and wait for a successful response.
     */
   def batchPutMessage(params: BatchPutMessageRequest): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchPutMessage(

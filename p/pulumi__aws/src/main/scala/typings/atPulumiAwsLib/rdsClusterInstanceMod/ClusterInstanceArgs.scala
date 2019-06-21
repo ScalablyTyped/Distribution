@@ -58,7 +58,7 @@ trait ClusterInstanceArgs extends js.Object {
     * The instance class to use. For details on CPU
     * and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
     */
-  val instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType]
   /**
     * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
     */
@@ -107,7 +107,7 @@ object ClusterInstanceArgs {
   @scala.inline
   def apply(
     clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType],
     applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     autoMinorVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

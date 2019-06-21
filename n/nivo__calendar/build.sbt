@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "nivo__calendar"
-version := "0.58.0-75bc73"
+version := "0.58.0-be3e7e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "nivo__core" % "0.58.0-306556",
-  "org.scalablytyped" %%% "nivo__legends" % "0.58.0-bf627e",
+  "org.scalablytyped" %%% "nivo__core" % "0.58.0-4966b7",
+  "org.scalablytyped" %%% "nivo__legends" % "0.58.0-89cea3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

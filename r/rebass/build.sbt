@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "rebass"
-version := "3.0-dt-20190514Z-0feccd"
+version := "3.0-dt-20190514Z-41d53a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190619Z-8d8143",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190613Z-27d7d1",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190613Z-c4532e",
   "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190604Z-f3ee43",
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190604Z-ea61fb",
   "org.scalablytyped" %%% "styled-system" % "4.2-dt-20190521Z-914908")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

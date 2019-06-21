@@ -1,7 +1,7 @@
 
 # Scala.js typings for wouter
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
 A minimalistic routing for React. Nothing extra, just HOOKS.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for wouter 1.2
+// Type definitions for wouter 2.0
 // Project: https://github.com/molefrog/wouter#readme
 // Definitions by: Tolkunov Alexander <https://github.com/StrayFromThePath>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

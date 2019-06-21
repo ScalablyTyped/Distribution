@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListDetectorsRequest extends js.Object {
   /**
-    * The name of the detector model whose instances you want to list.
+    * The name of the detector model whose detectors (instances) are listed.
     */
   var detectorModelName: DetectorModelName
   /**

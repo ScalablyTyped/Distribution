@@ -39,18 +39,27 @@ class Sha1 () extends js.Object {
     * @private {number}
     */
   var total_ : js.Any = js.native
+  def compress_(buf: java.lang.String): scala.Unit = js.native
+  def compress_(buf: java.lang.String, offset: scala.Double): scala.Unit = js.native
   /**
     * Internal compress helper function.
-    * @param {!number[]|!Uint8Array|string} buf Block to compress.
-    * @param {number=} optOffset Offset of the block in the buffer.
+    * @param buf Block to compress.
+    * @param offset Offset of the block in the buffer.
     * @private
     */
-  def compress_(buf: js.Any): scala.Unit = js.native
-  def compress_(buf: js.Any, optOffset: js.Any): scala.Unit = js.native
+  def compress_(buf: js.Array[scala.Double]): scala.Unit = js.native
+  def compress_(buf: js.Array[scala.Double], offset: scala.Double): scala.Unit = js.native
+  def compress_(buf: stdLib.Uint8Array): scala.Unit = js.native
+  def compress_(buf: stdLib.Uint8Array, offset: scala.Double): scala.Unit = js.native
   /** @override */
   def digest(): js.Array[scala.Double] = js.native
   def reset(): scala.Unit = js.native
-  def update(bytes: js.Any): scala.Unit = js.native
-  def update(bytes: js.Any, optLength: js.Any): scala.Unit = js.native
+  def update(): scala.Unit = js.native
+  def update(bytes: java.lang.String): scala.Unit = js.native
+  def update(bytes: java.lang.String, length: scala.Double): scala.Unit = js.native
+  def update(bytes: js.Array[scala.Double]): scala.Unit = js.native
+  def update(bytes: js.Array[scala.Double], length: scala.Double): scala.Unit = js.native
+  def update(bytes: stdLib.Uint8Array): scala.Unit = js.native
+  def update(bytes: stdLib.Uint8Array, length: scala.Double): scala.Unit = js.native
 }
 

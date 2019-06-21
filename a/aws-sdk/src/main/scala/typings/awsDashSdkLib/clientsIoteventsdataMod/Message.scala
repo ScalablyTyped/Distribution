@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Message extends js.Object {
   /**
-    * The name of the input into which the message payload will be transformed.
+    * The name of the input into which the message payload is transformed.
     */
   var inputName: InputName
   /**
-    * The ID you wish to assign to the message. Each "messageId" must be unique within each batch sent.
+    * The ID to assign to the message. Within each batch sent, each "messageId" must be unique.
     */
   var messageId: MessageId
   /**

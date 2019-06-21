@@ -111,8 +111,8 @@ trait Node extends js.Object {
     * @param {boolean=} exportFormat True for export format (also wire protocol format).
     * @return {*} Value of this node as JSON.
     */
-  def `val`(): js.Object = js.native
-  def `val`(exportFormat: scala.Boolean): js.Object = js.native
+  def `val`(): js.Any = js.native
+  def `val`(exportFormat: scala.Boolean): js.Any = js.native
   /**
     * @param {!Index} indexDefinition
     * @return {!Node} This node, with the specified index now available

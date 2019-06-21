@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/util/dist/src/jwt", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def decode(token: js.Any): DecodedToken = js.native
-  def isAdmin(token: js.Any): scala.Boolean = js.native
-  def isValidFormat(token: js.Any): scala.Boolean = js.native
-  def isValidTimestamp(token: js.Any): scala.Boolean = js.native
-  def issuedAtTime(token: js.Any): scala.Double | scala.Null = js.native
+  def decode(token: java.lang.String): DecodedToken = js.native
+  def isAdmin(token: java.lang.String): scala.Boolean = js.native
+  def isValidFormat(token: java.lang.String): scala.Boolean = js.native
+  def isValidTimestamp(token: java.lang.String): scala.Boolean = js.native
+  def issuedAtTime(token: java.lang.String): scala.Double | scala.Null = js.native
 }
 

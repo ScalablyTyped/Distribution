@@ -22,6 +22,8 @@ object ^ extends js.Object {
   var NodeJSRuntime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = js.native
   var Python2d7Runtime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = js.native
   var Python3d6Runtime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = js.native
+  var Python3d7Runtime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = js.native
+  var Ruby2d5Runtime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = js.native
   def createFunctionFromEventHandler[E, R](name: java.lang.String, handler: atPulumiAwsLib.lambdaLambdaMixinsMod.EventHandler[E, R]): atPulumiAwsLib.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
   def createFunctionFromEventHandler[E, R](
     name: java.lang.String,

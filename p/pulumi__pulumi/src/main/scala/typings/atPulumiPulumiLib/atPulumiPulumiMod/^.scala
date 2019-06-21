@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Output: atPulumiPulumiLib.outputMod.OutputConstructor = js.native
+  val rootStackResource: atPulumiPulumiLib.resourceMod.Resource = js.native
   def all[T](ds: js.Array[js.UndefOr[atPulumiPulumiLib.outputMod.Input[T]]]): atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiPulumiLib.outputMod.Unwrap[T]]] = js.native
   def all[T](`val`: stdLib.Record[java.lang.String, atPulumiPulumiLib.outputMod.Input[T]]): atPulumiPulumiLib.outputMod.Output[stdLib.Record[java.lang.String, atPulumiPulumiLib.outputMod.Unwrap[T]]] = js.native
   def all[T1, T2](

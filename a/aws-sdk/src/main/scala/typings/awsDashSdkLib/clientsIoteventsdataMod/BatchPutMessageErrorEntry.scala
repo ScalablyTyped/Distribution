@@ -15,7 +15,7 @@ trait BatchPutMessageErrorEntry extends js.Object {
     */
   var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   /**
-    * The ID of the message that caused the error. (See the value corresponding to the messageId key in the message object.)
+    * The ID of the message that caused the error. (See the value corresponding to the "messageId" key in the "message" object.)
     */
   var messageId: js.UndefOr[MessageId] = js.undefined
 }

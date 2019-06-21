@@ -15,7 +15,7 @@ trait UpdateDetectorRequest extends js.Object {
     */
   var keyValue: js.UndefOr[KeyValue] = js.undefined
   /**
-    * The ID you wish to assign to the detector update "message". Each "messageId" must be unique within each batch sent.
+    * The ID to assign to the detector update "message". Each "messageId" must be unique within each batch sent.
     */
   var messageId: MessageId
   /**

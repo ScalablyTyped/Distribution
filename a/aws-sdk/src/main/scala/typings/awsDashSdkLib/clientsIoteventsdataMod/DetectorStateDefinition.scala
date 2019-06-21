@@ -11,11 +11,11 @@ trait DetectorStateDefinition extends js.Object {
     */
   var stateName: StateName
   /**
-    * The new values of the detector's timers. Any timer whose value is not specified will be cleared and its timeout event will not occur.
+    * The new values of the detector's timers. Any timer whose value isn't specified is cleared, and its timeout event won't occur.
     */
   var timers: TimerDefinitions
   /**
-    * The new values of the detector's variables. Any variable whose value is not specified will be cleared.
+    * The new values of the detector's variables. Any variable whose value isn't specified is cleared.
     */
   var variables: VariableDefinitions
 }

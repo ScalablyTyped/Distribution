@@ -39,6 +39,7 @@ class JsonObjectProperty protected () extends IObject {
   def addDependedProperty(name: java.lang.String): scala.Unit = js.native
   def getBaseValue(): java.lang.String = js.native
   def getChoices(obj: js.Any): js.Array[_] = js.native
+  def getChoices(obj: js.Any, choicesCallback: js.Any): js.Array[_] = js.native
   def getClassName(className: java.lang.String): java.lang.String = js.native
   def getDependedProperties(): js.Array[java.lang.String] = js.native
   def getObjType(objType: java.lang.String): java.lang.String = js.native

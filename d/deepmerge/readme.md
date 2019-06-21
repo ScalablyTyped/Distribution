@@ -1,7 +1,7 @@
 
 # Scala.js typings for deepmerge
 
-Typings are for version 3.2.1
+Typings are for version 3.3.0
 
 ## Library description:
 A library for deep (recursive) merging of Javascript objects

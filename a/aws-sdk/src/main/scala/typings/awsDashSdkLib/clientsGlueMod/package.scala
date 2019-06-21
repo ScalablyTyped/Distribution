@@ -76,6 +76,15 @@ package object clientsGlueMod {
     - java.lang.String
   */
   type ConnectionType = _ConnectionType | java.lang.String
+  type CrawlList = js.Array[Crawl]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELLED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
+  type CrawlState = _CrawlState | java.lang.String
   type CrawlerConfiguration = java.lang.String
   type CrawlerList = js.Array[Crawler]
   type CrawlerMetricsList = js.Array[CrawlerMetrics]
@@ -118,6 +127,7 @@ package object clientsGlueMod {
   type DevEndpointNameList = js.Array[NameString]
   type DevEndpointNames = js.Array[GenericString]
   type DynamoDBTargetList = js.Array[DynamoDBTarget]
+  type EdgeList = js.Array[Edge]
   type ErrorByName = org.scalablytyped.runtime.StringDictionary[ErrorDetail]
   type ErrorString = java.lang.String
   type ExecutionTime = scala.Double
@@ -200,12 +210,21 @@ package object clientsGlueMod {
   type MillisecondsCount = scala.Double
   type NameString = java.lang.String
   type NameStringList = js.Array[NameString]
+  type NodeList = js.Array[Node]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CRAWLER
+    - awsDashSdkLib.awsDashSdkLibStrings.JOB
+    - awsDashSdkLib.awsDashSdkLibStrings.TRIGGER
+    - java.lang.String
+  */
+  type NodeType = _NodeType | java.lang.String
   type NonNegativeDouble = scala.Double
   type NonNegativeInteger = scala.Double
   type NotifyDelayAfter = scala.Double
   type NullableBoolean = scala.Boolean
   type NullableDouble = scala.Double
   type NullableInteger = scala.Double
+  type OrchestrationStringList = js.Array[GenericString]
   type OrderList = js.Array[Order]
   type PageSize = scala.Double
   type ParametersMap = org.scalablytyped.runtime.StringDictionary[ParametersMapValue]
@@ -319,6 +338,16 @@ package object clientsGlueMod {
     - java.lang.String
   */
   type WorkerType = _WorkerType | java.lang.String
+  type WorkflowNames = js.Array[NameString]
+  type WorkflowRunProperties = org.scalablytyped.runtime.StringDictionary[GenericString]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - java.lang.String
+  */
+  type WorkflowRunStatus = _WorkflowRunStatus | java.lang.String
+  type WorkflowRuns = js.Array[WorkflowRun]
+  type Workflows = js.Array[Workflow]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2017-03-31`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

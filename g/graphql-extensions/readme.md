@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-extensions
 
-Typings are for version 0.7.2
+Typings are for version 0.7.3
 
 ## Library description:
 Add extensions to GraphQL servers

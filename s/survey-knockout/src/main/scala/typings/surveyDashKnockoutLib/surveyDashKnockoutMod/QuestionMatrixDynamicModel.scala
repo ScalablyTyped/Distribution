@@ -98,6 +98,7 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
     */
   def addRow(): scala.Unit = js.native
   /* protected */ def createMatrixRow(value: js.Any): MatrixDynamicRowModel = js.native
+  def isRequireConfirmOnRowDelete(index: scala.Double): scala.Boolean = js.native
   /**
     * Removes a row by it's index.
     * @param index a row index, from 0 to rowCount - 1
@@ -110,12 +111,5 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
     * @see confirmDelete
     */
   def removeRowUI(value: js.Any): scala.Unit = js.native
-}
-
-/* static members */
-@JSImport("survey-knockout", "QuestionMatrixDynamicModel")
-@js.native
-object QuestionMatrixDynamicModel extends js.Object {
-  var MaxRowCount: scala.Double = js.native
 }
 

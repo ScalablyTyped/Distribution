@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Permission extends js.Object {
   /**
-    * The private CA operations that can be performed by the designated AWS service.
+    * The private CA actions that can be performed by the designated AWS service.
     */
   var Actions: js.UndefOr[ActionList] = js.undefined
   /**

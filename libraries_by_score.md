@@ -2356,6 +2356,7 @@
 | 0.6965271025001163 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API
 | 0.6964837307937327 | [insert-css](./i/insert-css) | insert a string of css into the 
 | 0.696339580935033 | [react-axe](./r/react-axe) | Dynamic accessibility analysis for React using axe
+| 0.6962785100630295 | [react-easy-crop](./r/react-easy-crop) | A React component to crop images with easy interac
 | 0.6962180028525404 | [react-hyperscript](./r/react-hyperscript) | Hyperscript syntax for React.js markup
 | 0.6962179526714708 | [integer](./i/integer) | Native 64-bit integers with overflow protection.
 | 0.6962139745428 | [js-data-angular](./j/js-data-angular) | Angular wrapper for js-data.
@@ -2977,6 +2978,7 @@
 | 0.6706354476256204 | [q](./q/q) | A library for promises (CommonJS/Promises/A,B,D)
 | 0.6705780567448472 | [add-matchers](./a/add-matchers) | Write useful test matchers compatible with Jest an
 | 0.6705526858013512 | [openid](./o/openid) | OpenID 1.1/2.0 library for node.js
+| 0.670550875417705 | [neverbounce](./n/neverbounce) | An API wrapper for the NeverBounce API
 | 0.6704997182020414 | [typescript-tuple](./t/typescript-tuple) | Generics to work with tuples in TypeScript
 | 0.6704518427434931 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node
 | 0.6704164584201769 | [ibm_db](./i/ibm_db) | IBM DB2 and IBM Informix bindings for node
@@ -3079,6 +3081,7 @@
 | 0.665998759178452 | [storm-react-diagrams](./s/storm-react-diagrams) | **PSA**: React Diagrams is currently getting a bit
 | 0.6658626940405894 | [react-split-pane](./r/react-split-pane) | React split-pane component
 | 0.6658299698009299 | [connect-redis](./c/connect-redis) | Redis session store for Connect
+| 0.6658274849982049 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt
 | 0.6657737644270008 | [carbon__layout](./c/carbon__layout) | Layout helpers for digital and software products u
 | 0.6657218995525797 | [react-native-version-chec](./r/react-native-version-check) | A version checker for react-native applications
 | 0.6655708436184947 | [react-scroll-into-view-if](./r/react-scroll-into-view-if-needed) | A thin component wrapper around scroll-into-view-i
@@ -3770,6 +3773,7 @@
 | 0.6224854151371593 | [electron-load-devtool](./e/electron-load-devtool) | Easily load dev-tool for electron
 | 0.6224707134032019 | [jsoneditor](./j/jsoneditor) | A web-based tool to view, edit, format, and valida
 | 0.6224624411055946 | [linkifyjs](./l/linkifyjs) | Intelligent link recognition, made easy
+| 0.622329802325316 | [commander-remaining-args](./c/commander-remaining-args) | Get the remaining unknown arguments after parsing 
 | 0.6222405098584649 | [rdf-data-model](./r/rdf-data-model) | A basic implementation of the RDFJS Data Model
 | 0.6222336726423449 | [module-alias](./m/module-alias) | Create aliases of directories and register custom 
 | 0.6221344873317929 | [openstack-wrapper](./o/openstack-wrapper) | A simple js wrapper for the Openstack APIs
@@ -4693,11 +4697,13 @@
 | 0.4960633083589669 | [jest-matcher-utils](./j/jest-matcher-utils) | A set of utility functions for expect and related 
 | 0.49572243594204357 | [tiny-slider-react](./t/tiny-slider-react) | wrapper tiny-slider plugin for react
 | 0.4952964824291271 | [traverse](./t/traverse) | traverse and transform objects by visiting every n
+| 0.4952020472777092 | [rsocket-flowable](./r/rsocket-flowable) | ReactiveStreams for JavaScript
 | 0.49497412658042994 | [torrent-stream](./t/torrent-stream) | Low level streaming torrent client that exposes fi
 | 0.4949259554595935 | [requestidlecallback](./r/requestidlecallback) | A polyfill for the requestIdleCallback.
 | 0.49437134795852133 | [jackrabbit](./j/jackrabbit) | Easy RabbitMQ for node
 | 0.4940326778994787 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for 
 | 0.4940268537012061 | [protractor-http-mock](./p/protractor-http-mock) | Mock HTTP calls in your protractor specs.
+| 0.4938777100210208 | [rsocket-types](./r/rsocket-types) | RSocket types
 | 0.4937527311889099 | [jsftp](./j/jsftp) | A sane FTP client implementation for NodeJS
 | 0.49324970574335314 | [react-resizable](./r/react-resizable) | A component that is resizable with handles.
 | 0.493185952074966 | [string](./s/string) | string contains methods that aren't included in th
@@ -5087,6 +5093,7 @@
 | 0.4341705020268035 | [material-ui-pagination](./m/material-ui-pagination) | An easy to use and customizable pagination compone
 | 0.43368038992174474 | [passport-cognito](./p/passport-cognito) | Express passport module for Cognito User Pools
 | 0.43347707275340264 | [weak](./w/weak) | Make weak references to JavaScript Objects.
+| 0.43312926258016865 | [xmljs](./x/xmljs) | A small and simple package which can traverse a XM
 | 0.43290285201096035 | [saslmechanisms](./s/saslmechanisms) | JavaScript framework for SASL authentication.
 | 0.43279364659244857 | [react-date-range](./r/react-date-range) | A React component for choosing dates and date rang
 | 0.43268901378031044 | [xmlserializer](./x/xmlserializer) | Serializes a document to XML/XHTML

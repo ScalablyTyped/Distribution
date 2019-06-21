@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/firestore", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def registerFirestore(instance: js.Any): scala.Unit = js.native
+  def registerFirestore(instance: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseNamespace): scala.Unit = js.native
 }
 

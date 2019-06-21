@@ -13,6 +13,7 @@ class QuestionRowModel protected () extends Base {
   val index: scala.Double = js.native
   var panel: PanelModelBase = js.native
   var visible: scala.Boolean = js.native
+  val visibleElements: js.Array[IElement] = js.native
   def addElement(q: IElement): scala.Unit = js.native
   def updateVisible(): scala.Unit = js.native
 }

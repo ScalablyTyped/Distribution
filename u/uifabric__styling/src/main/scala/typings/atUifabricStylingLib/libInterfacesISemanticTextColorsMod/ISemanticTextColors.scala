@@ -71,7 +71,7 @@ trait ISemanticTextColors extends js.Object {
     */
   var disabledText: java.lang.String
   /**
-    * The default color of error text, used on bodyBackground.
+    * The default color of text indicating error on bodyBackground.
     */
   var errorText: java.lang.String
   /**
@@ -118,7 +118,11 @@ trait ISemanticTextColors extends js.Object {
     */
   var primaryButtonTextPressed: java.lang.String
   /**
-    * The color of text on errorBackground, warningBackground, blockingBackground, or successBackground.
+    * The color of text on indicating success on bodyBackground.
+    */
+  var successText: java.lang.String
+  /**
+    * The color of text indicating warning on errorBackground, warningBackground, blockingBackground, or successBackground.
     */
   var warningText: java.lang.String
 }
@@ -154,9 +158,10 @@ object ISemanticTextColors {
     primaryButtonTextDisabled: java.lang.String,
     primaryButtonTextHovered: java.lang.String,
     primaryButtonTextPressed: java.lang.String,
+    successText: java.lang.String,
     warningText: java.lang.String
   ): ISemanticTextColors = {
-    val __obj = js.Dynamic.literal(accentButtonText = accentButtonText, actionLink = actionLink, actionLinkHovered = actionLinkHovered, bodySubtext = bodySubtext, bodyText = bodyText, bodyTextChecked = bodyTextChecked, buttonText = buttonText, buttonTextChecked = buttonTextChecked, buttonTextCheckedHovered = buttonTextCheckedHovered, buttonTextDisabled = buttonTextDisabled, buttonTextHovered = buttonTextHovered, buttonTextPressed = buttonTextPressed, disabledBodySubtext = disabledBodySubtext, disabledBodyText = disabledBodyText, disabledSubtext = disabledSubtext, disabledText = disabledText, errorText = errorText, inputPlaceholderText = inputPlaceholderText, inputText = inputText, inputTextHovered = inputTextHovered, link = link, linkHovered = linkHovered, listText = listText, listTextColor = listTextColor, primaryButtonText = primaryButtonText, primaryButtonTextDisabled = primaryButtonTextDisabled, primaryButtonTextHovered = primaryButtonTextHovered, primaryButtonTextPressed = primaryButtonTextPressed, warningText = warningText)
+    val __obj = js.Dynamic.literal(accentButtonText = accentButtonText, actionLink = actionLink, actionLinkHovered = actionLinkHovered, bodySubtext = bodySubtext, bodyText = bodyText, bodyTextChecked = bodyTextChecked, buttonText = buttonText, buttonTextChecked = buttonTextChecked, buttonTextCheckedHovered = buttonTextCheckedHovered, buttonTextDisabled = buttonTextDisabled, buttonTextHovered = buttonTextHovered, buttonTextPressed = buttonTextPressed, disabledBodySubtext = disabledBodySubtext, disabledBodyText = disabledBodyText, disabledSubtext = disabledSubtext, disabledText = disabledText, errorText = errorText, inputPlaceholderText = inputPlaceholderText, inputText = inputText, inputTextHovered = inputTextHovered, link = link, linkHovered = linkHovered, listText = listText, listTextColor = listTextColor, primaryButtonText = primaryButtonText, primaryButtonTextDisabled = primaryButtonTextDisabled, primaryButtonTextHovered = primaryButtonTextHovered, primaryButtonTextPressed = primaryButtonTextPressed, successText = successText, warningText = warningText)
   
     __obj.asInstanceOf[ISemanticTextColors]
   }

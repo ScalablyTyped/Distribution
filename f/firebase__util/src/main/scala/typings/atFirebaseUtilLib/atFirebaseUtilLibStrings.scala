@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseUtilLibStrings {
   @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
   sealed trait ErrorFactory extends js.Object
   
   @js.native
@@ -15,6 +18,8 @@ object atFirebaseUtilLibStrings {
   @js.native
   sealed trait FirebaseError extends js.Object
   
+  @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def ErrorFactory: ErrorFactory = "ErrorFactory".asInstanceOf[ErrorFactory]
   @scala.inline

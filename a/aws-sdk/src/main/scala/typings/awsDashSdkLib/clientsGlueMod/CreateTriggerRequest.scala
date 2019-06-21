@@ -38,6 +38,10 @@ trait CreateTriggerRequest extends js.Object {
     * The type of the new trigger.
     */
   var Type: TriggerType
+  /**
+    * The name of the workflow associated with the trigger.
+    */
+  var WorkflowName: js.UndefOr[NameString] = js.undefined
 }
 
 object CreateTriggerRequest {
@@ -50,7 +54,8 @@ object CreateTriggerRequest {
     Predicate: Predicate = null,
     Schedule: GenericString = null,
     StartOnCreation: js.UndefOr[BooleanValue] = js.undefined,
-    Tags: TagsMap = null
+    Tags: TagsMap = null,
+    WorkflowName: NameString = null
   ): CreateTriggerRequest = {
     val __obj = js.Dynamic.literal(Actions = Actions, Name = Name, Type = Type.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description)
@@ -58,6 +63,7 @@ object CreateTriggerRequest {
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
     if (!js.isUndefined(StartOnCreation)) __obj.updateDynamic("StartOnCreation")(StartOnCreation)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (WorkflowName != null) __obj.updateDynamic("WorkflowName")(WorkflowName)
     __obj.asInstanceOf[CreateTriggerRequest]
   }
 }

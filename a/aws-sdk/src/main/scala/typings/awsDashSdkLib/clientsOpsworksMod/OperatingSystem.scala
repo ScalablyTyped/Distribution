@@ -11,11 +11,11 @@ trait OperatingSystem extends js.Object {
     */
   var ConfigurationManagers: js.UndefOr[OperatingSystemConfigurationManagers] = js.undefined
   /**
-    * The ID of a supported operating system, such as Amazon Linux 2017.09.
+    * The ID of a supported operating system, such as Amazon Linux 2018.03.
     */
   var Id: js.UndefOr[String] = js.undefined
   /**
-    * The name of the operating system, such as Amazon Linux 2017.09.
+    * The name of the operating system, such as Amazon Linux 2018.03.
     */
   var Name: js.UndefOr[String] = js.undefined
   /**

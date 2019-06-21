@@ -30,6 +30,9 @@ trait Stack extends js.Object {
     * The date when the stack was created.
     */
   var CreatedAt: js.UndefOr[DateTime] = js.undefined
+  /**
+    * Contains the information required to retrieve an app or cookbook from a repository. For more information, see Adding Apps or Cookbooks and Recipes.
+    */
   var CustomCookbooksSource: js.UndefOr[Source] = js.undefined
   /**
     * A JSON object that contains user-defined attributes to be added to the stack configuration and deployment attributes. You can use custom JSON to override the corresponding default stack configuration attribute values or to pass data to recipes. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information on custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.

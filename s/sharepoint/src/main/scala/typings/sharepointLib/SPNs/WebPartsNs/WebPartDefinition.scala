@@ -13,6 +13,7 @@ class WebPartDefinition ()
   def deleteWebPart(): scala.Unit = js.native
   def get_id(): sharepointLib.SPNs.Guid = js.native
   def get_webPart(): WebPart = js.native
+  def get_zoneId(): java.lang.String = js.native
   def moveWebPartTo(zoneID: java.lang.String, zoneIndex: scala.Double): scala.Unit = js.native
   def openWebPart(): scala.Unit = js.native
   def saveWebPartChanges(): scala.Unit = js.native

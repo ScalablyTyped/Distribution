@@ -10,6 +10,9 @@ trait Deployment extends js.Object {
     * The app ID.
     */
   var AppId: js.UndefOr[String] = js.undefined
+  /**
+    * Used to specify a stack or deployment command.
+    */
   var Command: js.UndefOr[DeploymentCommand] = js.undefined
   /**
     * A user-defined comment.

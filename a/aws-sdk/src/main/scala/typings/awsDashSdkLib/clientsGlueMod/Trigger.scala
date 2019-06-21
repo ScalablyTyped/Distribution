@@ -38,6 +38,10 @@ trait Trigger extends js.Object {
     * The type of trigger that this is.
     */
   var Type: js.UndefOr[TriggerType] = js.undefined
+  /**
+    * The name of the workflow associated with the trigger.
+    */
+  var WorkflowName: js.UndefOr[NameString] = js.undefined
 }
 
 object Trigger {
@@ -50,7 +54,8 @@ object Trigger {
     Predicate: Predicate = null,
     Schedule: GenericString = null,
     State: TriggerState = null,
-    Type: TriggerType = null
+    Type: TriggerType = null,
+    WorkflowName: NameString = null
   ): Trigger = {
     val __obj = js.Dynamic.literal()
     if (Actions != null) __obj.updateDynamic("Actions")(Actions)
@@ -61,6 +66,7 @@ object Trigger {
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (WorkflowName != null) __obj.updateDynamic("WorkflowName")(WorkflowName)
     __obj.asInstanceOf[Trigger]
   }
 }

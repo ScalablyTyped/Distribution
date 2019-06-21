@@ -581,6 +581,7 @@
 | [braft-editor](./b/braft-editor) | Rich Text Editor Based On Draft.js | braft, draft, draft-js, rich, text, editor, rich-text-editor, wysiwyg |
 | [braintree](./b/braintree) | A library for integrating with Braintree. | braintree, payments |
 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the  | braintree, payments |
+| [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt | - |
 | [breeze](./b/breeze) | Functional async flow control library | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed  | grid, masonry, layout, packing |
 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with | fs, filesystem, html5-fs, html5-filesystem, html5-filesystem-api, browser-fs, browser-filesystem, web-fs, web-filesystem |
@@ -845,6 +846,7 @@
 | [command-line-commands](./c/command-line-commands) | Add a git-like command interface to your app. | argv, parse, argument, args, option, parser, parsing, cli, command, commands, line |
 | [command-line-usage](./c/command-line-usage) | Generates command-line usage information | terminal, command line, usage, generator |
 | [commander](./c/commander) | the complete solution for node.js command-line pro | commander, command, option, parser |
+| [commander-remaining-args](./c/commander-remaining-args) | Get the remaining unknown arguments after parsing  | commander.js, commander, remaining, unknown, arguments, args, options, pass |
 | [commangular](./c/commangular) | - | - |
 | [comment-json](./c/comment-json) | Parse and stringify JSON file with comments | comment-json, comments, annotations, json, json-stringify, json-parse, parser |
 | [commercetools__enzyme-ext](./c/commercetools__enzyme-extensions) | Enzyme extensions tailored at improving dealing wi | - |
@@ -4123,6 +4125,7 @@
 | [netlify-identity-widget](./n/netlify-identity-widget) | Netlify Identity widget for easy integration | authentication, identity, netlify |
 | [netmask](./n/netmask) | Parse and lookup IP network blocks | net, mask, ip, network, cidr, netmask, subnet, ipcalc |
 | [network-interfaces](./n/network-interfaces) | Utility functions for dealing with network interfa | interface, interfaces, network, ip |
+| [neverbounce](./n/neverbounce) | An API wrapper for the NeverBounce API | email, email verification, email validation, email cleaning, verification, validation, cleaning |
 | [new-github-issue-url](./n/new-github-issue-url) | Generate a URL for opening a new GitHub issue with | github, issue, new, generate, url, gh, query, search, parameters, params |
 | [new-github-release-url](./n/new-github-release-url) | Generate a URL for opening a new GitHub release wi | github, release, releases, new, generate, url, gh, query, search, parameters, params |
 | [new-relic-browser](./n/new-relic-browser) | - | - |
@@ -5091,6 +5094,7 @@
 | [react-dropzone](./r/react-dropzone) | Simple HTML5 drag-drop zone with React.js | react-component, react, drag, drop, upload |
 | [react-dynamic-number](./r/react-dynamic-number) | Highly customizable react component for numbers | react, component, number, format, comma, dot, number separator, thousand separator, decimal separator |
 | [react-easy-chart](./r/react-easy-chart) | React component implementations of Mike Bostok's D | - |
+| [react-easy-crop](./r/react-easy-crop) | A React component to crop images with easy interac | - |
 | [react-editext](./r/react-editext) | Editable Text Component for React Applications | react, editable, editable text, editable content, contenteditable, content editable, inline edit |
 | [react-elemental](./r/react-elemental) | Flat UI library for React | - |
 | [react-event-listener](./r/react-event-listener) | A React component that allow to bind events on the | react, event, listener, binding |
@@ -5738,6 +5742,8 @@
 | [rrule](./r/rrule) | JavaScript library for working with recurrence rul | dates, recurrences, calendar, icalendar, rfc |
 | [rsmq](./r/rsmq) | A really simple message queue based on Redis | queue, messagequeue, jobs, message-queue, redis |
 | [rsmq-worker](./r/rsmq-worker) | RSMQ helper to simply implement a worker around th | - |
+| [rsocket-flowable](./r/rsocket-flowable) | ReactiveStreams for JavaScript | - |
+| [rsocket-types](./r/rsocket-types) | RSocket types | - |
 | [rss](./r/rss) | RSS feed generator. Add RSS feeds to any project.  | rss, xml, atom, podcasts, ghost, feed, feed builder, rss feed |
 | [rsvp](./r/rsvp) | A lightweight library that provides tools for orga | promises, futures |
 | [rsync](./r/rsync) | Rsync cli wrapper | rsync, wrapper, cli, command |
@@ -6993,6 +6999,7 @@
 | [xmldoc](./x/xmldoc) | A lightweight XML Document class for JavaScript. | - |
 | [xmldom](./x/xmldom) | A W3C Standard XML DOM(Level2 CORE) implementation | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer |
 | [xmldsigjs](./x/xmldsigjs) | XMLDSIGjs provides an implementation of XMLDSIG in | xml, xmldsig, webcrypto, signature, rsa, ec |
+| [xmljs](./x/xmljs) | A small and simple package which can traverse a XM | xml, xmljs, soap |
 | [xmlpoke](./x/xmlpoke) | Module for modifying XML files. | xmlpoke, xml |
 | [xmlrpc](./x/xmlrpc) | A pure JavaScript XML-RPC client and server. | xml-rpc, xmlrpc, xml, rpc |
 | [xmlserializer](./x/xmlserializer) | Serializes a document to XML/XHTML | html, html5, xhtml, xml, serializer, XMLSerializer |

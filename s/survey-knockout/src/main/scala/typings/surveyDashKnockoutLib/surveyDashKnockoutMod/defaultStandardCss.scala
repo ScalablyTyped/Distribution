@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaultStandardCss extends js.Object {
   var body: java.lang.String = js.native
+  var bodyEmpty: java.lang.String = js.native
   var boolean: surveyDashKnockoutLib.Anon_Item = js.native
-  var checkbox: surveyDashKnockoutLib.Anon_ControlLabel = js.native
+  var checkbox: surveyDashKnockoutLib.Anon_Column = js.native
   var comment: java.lang.String = js.native
   var completedPage: java.lang.String = js.native
   var dropdown: surveyDashKnockoutLib.Anon_Control = js.native

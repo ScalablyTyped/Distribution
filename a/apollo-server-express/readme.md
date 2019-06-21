@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-express
 
-Typings are for version 2.6.3
+Typings are for version 2.6.4
 
 ## Library description:
 Production-ready Node.js GraphQL server for Express and Connect

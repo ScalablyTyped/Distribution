@@ -241,6 +241,29 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Returns a list of resource metadata for a given list of workflow names. After calling the ListWorkflows operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    */
+  def batchGetWorkflows(): awsDashSdkLib.libRequestMod.Request[BatchGetWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchGetWorkflows(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ BatchGetWorkflowsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[BatchGetWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of workflow names. After calling the ListWorkflows operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    */
+  def batchGetWorkflows(params: BatchGetWorkflowsRequest): awsDashSdkLib.libRequestMod.Request[BatchGetWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchGetWorkflows(
+    params: BatchGetWorkflowsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ BatchGetWorkflowsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[BatchGetWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Stops one or more job runs for a specified job definition.
     */
   def batchStopJobRun(): awsDashSdkLib.libRequestMod.Request[BatchStopJobRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -540,6 +563,29 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateUserDefinedFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a new workflow.
+    */
+  def createWorkflow(): awsDashSdkLib.libRequestMod.Request[CreateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createWorkflow(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a new workflow.
+    */
+  def createWorkflow(params: CreateWorkflowRequest): awsDashSdkLib.libRequestMod.Request[CreateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createWorkflow(
+    params: CreateWorkflowRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Removes a classifier from the Data Catalog.
     */
   def deleteClassifier(): awsDashSdkLib.libRequestMod.Request[DeleteClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -838,6 +884,29 @@ trait Glue
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteUserDefinedFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a workflow.
+    */
+  def deleteWorkflow(): awsDashSdkLib.libRequestMod.Request[DeleteWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteWorkflow(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a workflow.
+    */
+  def deleteWorkflow(params: DeleteWorkflowRequest): awsDashSdkLib.libRequestMod.Request[DeleteWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteWorkflow(
+    params: DeleteWorkflowRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the status of a migration operation.
     */
@@ -1589,6 +1658,98 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetUserDefinedFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Retrieves resource metadata for a workflow.
+    */
+  def getWorkflow(): awsDashSdkLib.libRequestMod.Request[GetWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflow(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves resource metadata for a workflow.
+    */
+  def getWorkflow(params: GetWorkflowRequest): awsDashSdkLib.libRequestMod.Request[GetWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflow(
+    params: GetWorkflowRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the metadata for a given workflow run. 
+    */
+  def getWorkflowRun(): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflowRun(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowRunResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the metadata for a given workflow run. 
+    */
+  def getWorkflowRun(params: GetWorkflowRunRequest): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflowRun(
+    params: GetWorkflowRunRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowRunResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the workflow run properties which were set during the run.
+    */
+  def getWorkflowRunProperties(): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflowRunProperties(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowRunPropertiesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the workflow run properties which were set during the run.
+    */
+  def getWorkflowRunProperties(params: GetWorkflowRunPropertiesRequest): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflowRunProperties(
+    params: GetWorkflowRunPropertiesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowRunPropertiesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves metadata for all runs of a given workflow.
+    */
+  def getWorkflowRuns(): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflowRuns(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowRunsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves metadata for all runs of a given workflow.
+    */
+  def getWorkflowRuns(params: GetWorkflowRunsRequest): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWorkflowRuns(
+    params: GetWorkflowRunsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWorkflowRunsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWorkflowRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Imports an existing Athena Data Catalog to AWS Glue
     */
   def importCatalogToGlue(): awsDashSdkLib.libRequestMod.Request[ImportCatalogToGlueResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1704,6 +1865,29 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Lists names of workflows created in the account.
+    */
+  def listWorkflows(): awsDashSdkLib.libRequestMod.Request[ListWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listWorkflows(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListWorkflowsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists names of workflows created in the account.
+    */
+  def listWorkflows(params: ListWorkflowsRequest): awsDashSdkLib.libRequestMod.Request[ListWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listWorkflows(
+    params: ListWorkflowsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListWorkflowsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListWorkflowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.
     */
   def putDataCatalogEncryptionSettings(): awsDashSdkLib.libRequestMod.Request[PutDataCatalogEncryptionSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1749,6 +1933,29 @@ trait Glue
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutResourcePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Puts the specified workflow run properties for the given workflow run. If a property already exists for the specified run, then it overrides the value otherwise adds the property to existing properties.
+    */
+  def putWorkflowRunProperties(): awsDashSdkLib.libRequestMod.Request[PutWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putWorkflowRunProperties(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutWorkflowRunPropertiesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Puts the specified workflow run properties for the given workflow run. If a property already exists for the specified run, then it overrides the value otherwise adds the property to existing properties.
+    */
+  def putWorkflowRunProperties(params: PutWorkflowRunPropertiesRequest): awsDashSdkLib.libRequestMod.Request[PutWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putWorkflowRunProperties(
+    params: PutWorkflowRunPropertiesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutWorkflowRunPropertiesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutWorkflowRunPropertiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Resets a bookmark entry.
     */
@@ -1864,6 +2071,29 @@ trait Glue
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[StartTriggerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Starts a new run of the specified workflow.
+    */
+  def startWorkflowRun(): awsDashSdkLib.libRequestMod.Request[StartWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startWorkflowRun(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartWorkflowRunResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Starts a new run of the specified workflow.
+    */
+  def startWorkflowRun(params: StartWorkflowRunRequest): awsDashSdkLib.libRequestMod.Request[StartWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startWorkflowRun(
+    params: StartWorkflowRunRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartWorkflowRunResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartWorkflowRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * If the specified crawler is running, stops the crawl.
     */
@@ -2232,5 +2462,28 @@ trait Glue
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateUserDefinedFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates an existing workflow.
+    */
+  def updateWorkflow(): awsDashSdkLib.libRequestMod.Request[UpdateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateWorkflow(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates an existing workflow.
+    */
+  def updateWorkflow(params: UpdateWorkflowRequest): awsDashSdkLib.libRequestMod.Request[UpdateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateWorkflow(
+    params: UpdateWorkflowRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateWorkflowResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateWorkflowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

@@ -15,7 +15,7 @@ trait BatchUpdateDetectorErrorEntry extends js.Object {
     */
   var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   /**
-    * The "messageId" of the update request that caused the error. (The value of the messageId in the update request Detector object.)
+    * The "messageId" of the update request that caused the error. (The value of the "messageId" in the update request "Detector" object.)
     */
   var messageId: js.UndefOr[MessageId] = js.undefined
 }

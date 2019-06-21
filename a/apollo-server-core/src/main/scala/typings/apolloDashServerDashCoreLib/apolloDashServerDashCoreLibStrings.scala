@@ -52,6 +52,9 @@ object apolloDashServerDashCoreLibStrings {
   sealed trait plugins extends js.Object
   
   @js.native
+  sealed trait queryHash extends js.Object
+  
+  @js.native
   sealed trait rootValue extends js.Object
   
   @js.native
@@ -96,6 +99,8 @@ object apolloDashServerDashCoreLibStrings {
   def operationName: operationName = "operationName".asInstanceOf[operationName]
   @scala.inline
   def plugins: plugins = "plugins".asInstanceOf[plugins]
+  @scala.inline
+  def queryHash: queryHash = "queryHash".asInstanceOf[queryHash]
   @scala.inline
   def rootValue: rootValue = "rootValue".asInstanceOf[rootValue]
   @scala.inline

@@ -3804,6 +3804,7 @@
 | 14 | [react-star-rating-compone](./r/react-star-rating-component) | React component for star (or any other icon based)
 | 14 | [react-toggled](./r/react-toggled) | Component to build simple, flexible, and accessibl
 | 14 | [redux-first-router](./r/redux-first-router) | think of your app in states not routes (and, yes, 
+| 14 | [rsocket-flowable](./r/rsocket-flowable) | ReactiveStreams for JavaScript
 | 14 | [sentence-case](./s/sentence-case) | Sentence case a string
 | 14 | [sequencify](./s/sequencify) | A module for sequencing tasks and dependencies
 | 14 | [spectacle](./s/spectacle) | ReactJS Powered Presentation Framework
@@ -4070,6 +4071,7 @@
 | 11 | [rivets](./r/rivets) | Declarative data binding + templating solution.
 | 11 | [rocksdb](./r/rocksdb) | A Node.js RocksDB binding, a backend for LevelUP
 | 11 | [router5-transition-path](./r/router5-transition-path) | Router5 transition path helper function
+| 11 | [rsocket-types](./r/rsocket-types) | RSocket types
 | 11 | [rtl-detect](./r/rtl-detect) | Library will help you to detect if the locale is r
 | 11 | [run-jxa](./r/run-jxa) | Run JXAcode and get the result
 | 11 | [sbd](./s/sbd) | Split text into sentences with Sentence Boundary D
@@ -4100,6 +4102,7 @@
 | 10 | [before-after-hook](./b/before-after-hook) | asynchronous before/error/after hooks for internal
 | 10 | [bin-pack](./b/bin-pack) | A packing algorithm for 2D bin packing. Largely ba
 | 10 | [bootstrap-toggle](./b/bootstrap-toggle) | Bootstrap Toggle is a highly flexible Bootstrap pl
+| 10 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt
 | 10 | [clientjs](./c/clientjs) | Device information and digital fingerprinting writ
 | 10 | [cordova-plugin-dialogs](./c/cordova-plugin-dialogs) | Cordova Notification Plugin
 | 10 | [cordova-plugin-globalizat](./c/cordova-plugin-globalization) | Cordova Globalization Plugin
@@ -5629,6 +5632,7 @@
 | 1 | [coinlist](./c/coinlist) | Comprehensive list of cryptocurrencies with metada
 | 1 | [collectionsjs](./c/collectionsjs) | A Collection class for working with JavaScript arr
 | 1 | [colresizable](./c/colresizable) | jQuery plugin to resize table columns
+| 1 | [commander-remaining-args](./c/commander-remaining-args) | Get the remaining unknown arguments after parsing 
 | 1 | [commercetools__enzyme-ext](./c/commercetools__enzyme-extensions) | Enzyme extensions tailored at improving dealing wi
 | 1 | [contextjs](./c/contextjs) | Context Oriented Programming (COP) for ECMAScript 
 | 1 | [cordova-plugin-battery-st](./c/cordova-plugin-battery-status) | Cordova Battery Plugin
@@ -5898,6 +5902,7 @@
 | 1 | [react-calendar-timeline](./r/react-calendar-timeline) | react calendar timeline
 | 1 | [react-close-on-escape](./r/react-close-on-escape) | close react component on press escape
 | 1 | [react-dynamic-number](./r/react-dynamic-number) | Highly customizable react component for numbers
+| 1 | [react-easy-crop](./r/react-easy-crop) | A React component to crop images with easy interac
 | 1 | [react-flags-select](./r/react-flags-select) | react-flags-select React component
 | 1 | [react-flexr](./r/react-flexr) | React flexbox grid made simple.
 | 1 | [react-global-configuratio](./r/react-global-configuration) | For setting a global config object managed as a re
@@ -6341,6 +6346,7 @@
 | 0 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
 | 0 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (
 | 0 | [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket 
+| 0 | [neverbounce](./n/neverbounce) | An API wrapper for the NeverBounce API
 | 0 | [next-nprogress](./n/next-nprogress) | Next.js HOC to integrate NProgress inside your app
 | 0 | [next-seo](./n/next-seo) | SEO plugin for Next.js projects
 | 0 | [ng-facebook](./n/ng-facebook) | Angular service to handle facebook api
@@ -6596,6 +6602,7 @@
 | 0 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services.
 | 0 | [winston-dynamodb](./w/winston-dynamodb) | A Winston transport for Amazon DynamoDB
 | 0 | [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j
+| 0 | [xmljs](./x/xmljs) | A small and simple package which can traverse a XM
 | 0 | [xrm](./x/xrm) | -
 | 0 | [xsockets](./x/xsockets) | a socket optimized for cross-domain use for the we
 | 0 | [yandex-money-sdk](./y/yandex-money-sdk) | SDK for working with yandex money API |

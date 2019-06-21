@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CertificateAuthorityConfiguration extends js.Object {
   /**
-    * Type of the public key algorithm and size, in bits, of the key pair that your key pair creates when it issues a certificate.
+    * Type of the public key algorithm and size, in bits, of the key pair that your CA creates when it issues a certificate. When you create a subordinate CA, you must use a key algorithm supported by the parent CA.
     */
   var KeyAlgorithm: awsDashSdkLib.clientsAcmpcaMod.KeyAlgorithm
   /**

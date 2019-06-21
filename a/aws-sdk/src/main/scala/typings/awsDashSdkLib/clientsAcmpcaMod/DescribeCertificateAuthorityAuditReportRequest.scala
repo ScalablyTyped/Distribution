@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeCertificateAuthorityAuditReportRequest extends js.Object {
   /**
-    * The report ID returned by calling the CreateCertificateAuthorityAuditReport operation.
+    * The report ID returned by calling the CreateCertificateAuthorityAuditReport action.
     */
   var AuditReportId: awsDashSdkLib.clientsAcmpcaMod.AuditReportId
   /**

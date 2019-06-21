@@ -148,7 +148,9 @@ trait InstanceState extends js.Object {
   /**
     * The instance type of the RDS instance.
     */
-  val instanceClass: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val instanceClass: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType]
+  ] = js.undefined
   /**
     * The amount of provisioned IOPS. Setting this implies a
     * storage_type of "io1".
@@ -347,7 +349,7 @@ object InstanceState {
     iamDatabaseAuthenticationEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     identifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     identifierPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.rdsInstanceTypeMod.InstanceType] = null,
     iops: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     licenseModel: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

@@ -663,7 +663,9 @@ class InputPlugin protected ()
   /**
     * This is called automatically by the Input Manager.
     * It emits events for plugins to listen to and also handles polling updates, if enabled.
+    * @param time The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.
+    * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
     */
-  def updatePoll(): scala.Boolean = js.native
+  def updatePoll(time: scala.Double, delta: scala.Double): scala.Boolean = js.native
 }
 

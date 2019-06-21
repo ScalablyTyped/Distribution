@@ -60,6 +60,7 @@ package object clientsHealthMod {
     - awsDashSdkLib.awsDashSdkLibStrings.issue
     - awsDashSdkLib.awsDashSdkLibStrings.accountNotification
     - awsDashSdkLib.awsDashSdkLibStrings.scheduledChange
+    - awsDashSdkLib.awsDashSdkLibStrings.investigation
     - java.lang.String
   */
   type eventTypeCategory = _eventTypeCategory | java.lang.String

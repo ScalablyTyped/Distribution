@@ -20,7 +20,7 @@ class SemVer protected () extends js.Object {
   var minor: scala.Double = js.native
   var options: Options = js.native
   var patch: scala.Double = js.native
-  var prerelease: js.Array[java.lang.String] = js.native
+  var prerelease: js.Array[java.lang.String | scala.Double] = js.native
   var raw: java.lang.String = js.native
   var version: java.lang.String = js.native
   def compare(other: java.lang.String): semverLib.semverLibNumbers.`1` | semverLib.semverLibNumbers.`0` | semverLib.semverLibNumbers.`-1` = js.native

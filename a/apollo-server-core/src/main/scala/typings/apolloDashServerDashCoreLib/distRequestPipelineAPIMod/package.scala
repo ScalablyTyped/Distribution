@@ -9,7 +9,7 @@ package object distRequestPipelineAPIMod {
   type GraphQLExecutor[TContext] = js.Function1[
     /* requestContext */ apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.WithRequired[
       GraphQLRequestContext[TContext], 
-      apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.document | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.operationName | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.operation
+      apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.document | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.operationName | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.operation | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.queryHash
     ], 
     apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.ValueOrPromise[GraphQLExecutionResult]
   ]

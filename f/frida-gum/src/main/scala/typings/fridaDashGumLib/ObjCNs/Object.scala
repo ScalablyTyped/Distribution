@@ -42,6 +42,11 @@ class Object protected ()
   @JSName("$methods")
   var $methods: js.Array[java.lang.String] = js.native
   /**
+    * Name of module where this object is implemented.
+    */
+  @JSName("$moduleName")
+  var $moduleName: java.lang.String = js.native
+  /**
     * Native method names exposed by this object’s class, not including parent classes.
     */
   @JSName("$ownMethods")

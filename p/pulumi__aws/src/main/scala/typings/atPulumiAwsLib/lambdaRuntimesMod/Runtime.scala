@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - atPulumiAwsLib.atPulumiAwsLibStrings.dotnetcore2DOT1
   - atPulumiAwsLib.atPulumiAwsLibStrings.go1DOTx
   - atPulumiAwsLib.atPulumiAwsLibStrings.java8
+  - atPulumiAwsLib.atPulumiAwsLibStrings.ruby2DOT5
   - atPulumiAwsLib.atPulumiAwsLibStrings.`nodejs4DOT3-edge`
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs4DOT3
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs6DOT10
@@ -19,6 +20,7 @@ import scala.scalajs.js.annotation._
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs
   - atPulumiAwsLib.atPulumiAwsLibStrings.python2DOT7
   - atPulumiAwsLib.atPulumiAwsLibStrings.python3DOT6
+  - atPulumiAwsLib.atPulumiAwsLibStrings.python3DOT7
   - atPulumiAwsLib.atPulumiAwsLibStrings.provided
 */
 trait Runtime extends js.Object

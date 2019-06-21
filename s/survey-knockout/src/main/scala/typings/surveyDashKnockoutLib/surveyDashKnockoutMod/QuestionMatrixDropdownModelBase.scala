@@ -120,7 +120,6 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
 @js.native
 object QuestionMatrixDropdownModelBase extends js.Object {
   var defaultCellType: java.lang.String = js.native
-  var totalValuePostFix: java.lang.String = js.native
   def addDefaultColumns(matrix: surveyDashKnockoutLib.surveyDashKnockoutMod.QuestionMatrixDropdownModelBase): scala.Unit = js.native
 }
 

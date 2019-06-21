@@ -15,13 +15,17 @@ trait IssueCertificateRequest extends js.Object {
     */
   var Csr: CsrBlob
   /**
-    * Custom string that can be used to distinguish between calls to the IssueCertificate operation. Idempotency tokens time out after one hour. Therefore, if you call IssueCertificate multiple times with the same idempotency token within 5 minutes, ACM PCA recognizes that you are requesting only one certificate and will issue only one. If you change the idempotency token for each call, PCA recognizes that you are requesting multiple certificates.
+    * Custom string that can be used to distinguish between calls to the IssueCertificate action. Idempotency tokens time out after one hour. Therefore, if you call IssueCertificate multiple times with the same idempotency token within 5 minutes, ACM Private CA recognizes that you are requesting only one certificate and will issue only one. If you change the idempotency token for each call, PCA recognizes that you are requesting multiple certificates.
     */
   var IdempotencyToken: js.UndefOr[IdempotencyToken] = js.undefined
   /**
     * The name of the algorithm that will be used to sign the certificate to be issued.
     */
   var SigningAlgorithm: awsDashSdkLib.clientsAcmpcaMod.SigningAlgorithm
+  /**
+    * Specifies a custom configuration template to use when issuing a certificate. If this parameter is not provided, ACM Private CA defaults to the EndEntityCertificate/V1 template. The following service-owned TemplateArn values are supported by ACM Private CA:    arn:aws:acm-pca:::template/EndEntityCertificate/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen0/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen1/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen2/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen3/V1   arn:aws:acm-pca:::template/RootCACertificate/V1   For more information, see Using Templates.
+    */
+  var TemplateArn: js.UndefOr[Arn] = js.undefined
   /**
     * The type of the validity period.
     */
@@ -35,10 +39,12 @@ object IssueCertificateRequest {
     Csr: CsrBlob,
     SigningAlgorithm: SigningAlgorithm,
     Validity: Validity,
-    IdempotencyToken: IdempotencyToken = null
+    IdempotencyToken: IdempotencyToken = null,
+    TemplateArn: Arn = null
   ): IssueCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn, Csr = Csr.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any], Validity = Validity)
     if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken)
+    if (TemplateArn != null) __obj.updateDynamic("TemplateArn")(TemplateArn)
     __obj.asInstanceOf[IssueCertificateRequest]
   }
 }
