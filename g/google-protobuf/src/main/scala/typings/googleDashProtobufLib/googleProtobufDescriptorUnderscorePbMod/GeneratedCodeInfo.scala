@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeneratedCodeInfo ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addAnnotation(): scala.Unit = js.native
+  def addAnnotation(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.Annotation = js.native
   def addAnnotation(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.Annotation
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.Annotation = js.native
   def addAnnotation(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.Annotation,
     index: scala.Double
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.Annotation = js.native
   def clearAnnotationList(): scala.Unit = js.native
   def getAnnotationList(): js.Array[
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.Annotation

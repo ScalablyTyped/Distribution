@@ -16,7 +16,7 @@ trait Upload
   var recentUploadStatus: scala.Boolean | js.Thenable[_] = js.native
   var upload: js.Any = js.native
   def autoUpdateProgress(`_`: js.Any, file: antdLib.esUploadInterfaceMod.UploadFile): scala.Unit = js.native
-  def beforeUpload(file: antdLib.esUploadInterfaceMod.RcFile, fileList: js.Array[antdLib.esUploadInterfaceMod.RcFile]): scala.Boolean | js.Thenable[_] = js.native
+  def beforeUpload(file: antdLib.esUploadInterfaceMod.RcFile, fileList: js.Array[antdLib.esUploadInterfaceMod.RcFile]): scala.Boolean | js.Thenable[scala.Unit] = js.native
   def clearProgressTimer(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MUpload(): scala.Unit = js.native

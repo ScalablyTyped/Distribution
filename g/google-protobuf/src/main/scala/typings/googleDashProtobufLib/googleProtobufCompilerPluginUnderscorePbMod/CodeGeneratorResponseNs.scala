@@ -21,9 +21,9 @@ object CodeGeneratorResponseNs extends js.Object {
     def clearContent(): scala.Unit = js.native
     def clearInsertionPoint(): scala.Unit = js.native
     def clearName(): scala.Unit = js.native
-    def getContent(): java.lang.String = js.native
-    def getInsertionPoint(): java.lang.String = js.native
-    def getName(): java.lang.String = js.native
+    def getContent(): js.UndefOr[java.lang.String] = js.native
+    def getInsertionPoint(): js.UndefOr[java.lang.String] = js.native
+    def getName(): js.UndefOr[java.lang.String] = js.native
     def hasContent(): scala.Boolean = js.native
     def hasInsertionPoint(): scala.Boolean = js.native
     def hasName(): scala.Boolean = js.native

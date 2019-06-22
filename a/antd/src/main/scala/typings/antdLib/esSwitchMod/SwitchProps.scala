@@ -13,8 +13,12 @@ trait SwitchProps extends js.Object {
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function2[/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent, _]] = js.undefined
-  var onClick: js.UndefOr[js.Function2[/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent, _]] = js.undefined
+  var onChange: js.UndefOr[
+    js.Function2[/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent, scala.Unit]
+  ] = js.undefined
+  var onClick: js.UndefOr[
+    js.Function2[/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent, scala.Unit]
+  ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -32,8 +36,8 @@ object SwitchProps {
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: (/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent) => _ = null,
-    onClick: (/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent) => _ = null,
+    onChange: (/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent) => scala.Unit = null,
+    onClick: (/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent) => scala.Unit = null,
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.CSSProperties = null,

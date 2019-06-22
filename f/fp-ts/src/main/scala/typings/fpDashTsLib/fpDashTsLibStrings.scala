@@ -19,6 +19,9 @@ object fpDashTsLibStrings {
   sealed trait Either extends js.Object
   
   @js.native
+  sealed trait Eq extends js.Object
+  
+  @js.native
   sealed trait Failure extends js.Object
   
   @js.native
@@ -61,6 +64,9 @@ object fpDashTsLibStrings {
   sealed trait Option extends js.Object
   
   @js.native
+  sealed trait Ord extends js.Object
+  
+  @js.native
   sealed trait Pair extends js.Object
   
   @js.native
@@ -71,6 +77,9 @@ object fpDashTsLibStrings {
   
   @js.native
   sealed trait ReaderTaskEither extends js.Object
+  
+  @js.native
+  sealed trait Record extends js.Object
   
   @js.native
   sealed trait Right extends js.Object
@@ -151,6 +160,9 @@ object fpDashTsLibStrings {
   sealed trait getRecordSetoid extends js.Object
   
   @js.native
+  sealed trait getStructEq extends js.Object
+  
+  @js.native
   sealed trait getStructMonoid extends js.Object
   
   @js.native
@@ -161,6 +173,9 @@ object fpDashTsLibStrings {
   
   @js.native
   sealed trait getStructShow extends js.Object
+  
+  @js.native
+  sealed trait getTupleEq extends js.Object
   
   @js.native
   sealed trait getTupleMonoid extends js.Object
@@ -192,6 +207,8 @@ object fpDashTsLibStrings {
   @scala.inline
   def Either: Either = "Either".asInstanceOf[Either]
   @scala.inline
+  def Eq: Eq = "Eq".asInstanceOf[Eq]
+  @scala.inline
   def Failure: Failure = "Failure".asInstanceOf[Failure]
   @scala.inline
   def Free: Free = "Free".asInstanceOf[Free]
@@ -220,6 +237,8 @@ object fpDashTsLibStrings {
   @scala.inline
   def Option: Option = "Option".asInstanceOf[Option]
   @scala.inline
+  def Ord: Ord = "Ord".asInstanceOf[Ord]
+  @scala.inline
   def Pair: Pair = "Pair".asInstanceOf[Pair]
   @scala.inline
   def Pure: Pure = "Pure".asInstanceOf[Pure]
@@ -227,6 +246,8 @@ object fpDashTsLibStrings {
   def Reader: Reader = "Reader".asInstanceOf[Reader]
   @scala.inline
   def ReaderTaskEither: ReaderTaskEither = "ReaderTaskEither".asInstanceOf[ReaderTaskEither]
+  @scala.inline
+  def Record: Record = "Record".asInstanceOf[Record]
   @scala.inline
   def Right: Right = "Right".asInstanceOf[Right]
   @scala.inline
@@ -280,6 +301,8 @@ object fpDashTsLibStrings {
   @scala.inline
   def getRecordSetoid: getRecordSetoid = "getRecordSetoid".asInstanceOf[getRecordSetoid]
   @scala.inline
+  def getStructEq: getStructEq = "getStructEq".asInstanceOf[getStructEq]
+  @scala.inline
   def getStructMonoid: getStructMonoid = "getStructMonoid".asInstanceOf[getStructMonoid]
   @scala.inline
   def getStructSemigroup: getStructSemigroup = "getStructSemigroup".asInstanceOf[getStructSemigroup]
@@ -287,6 +310,8 @@ object fpDashTsLibStrings {
   def getStructSetoid: getStructSetoid = "getStructSetoid".asInstanceOf[getStructSetoid]
   @scala.inline
   def getStructShow: getStructShow = "getStructShow".asInstanceOf[getStructShow]
+  @scala.inline
+  def getTupleEq: getTupleEq = "getTupleEq".asInstanceOf[getTupleEq]
   @scala.inline
   def getTupleMonoid: getTupleMonoid = "getTupleMonoid".asInstanceOf[getTupleMonoid]
   @scala.inline

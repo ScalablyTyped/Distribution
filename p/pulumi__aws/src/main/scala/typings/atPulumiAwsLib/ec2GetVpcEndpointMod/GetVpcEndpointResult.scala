@@ -20,6 +20,10 @@ trait GetVpcEndpointResult extends js.Object {
     */
   val networkInterfaceIds: js.Array[java.lang.String]
   /**
+    * The ID of the AWS account that owns the VPC endpoint.
+    */
+  val ownerId: java.lang.String
+  /**
     * The policy document associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
     */
   val policy: java.lang.String
@@ -31,6 +35,10 @@ trait GetVpcEndpointResult extends js.Object {
     * Whether or not the VPC is associated with a private hosted zone - `true` or `false`. Applicable for endpoints of type `Interface`.
     */
   val privateDnsEnabled: scala.Boolean
+  /**
+    * Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
+    */
+  val requesterManaged: scala.Boolean
   /**
     * One or more route tables associated with the VPC Endpoint. Applicable for endpoints of type `Gateway`.
     */
@@ -46,6 +54,10 @@ trait GetVpcEndpointResult extends js.Object {
     */
   val subnetIds: js.Array[java.lang.String]
   /**
+    * A mapping of tags assigned to the resource.
+    */
+  val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  /**
     * The VPC Endpoint type, `Gateway` or `Interface`.
     */
   val vpcEndpointType: java.lang.String
@@ -59,18 +71,21 @@ object GetVpcEndpointResult {
     dnsEntries: js.Array[atPulumiAwsLib.Anon_DnsName],
     id: java.lang.String,
     networkInterfaceIds: js.Array[java.lang.String],
+    ownerId: java.lang.String,
     policy: java.lang.String,
     prefixListId: java.lang.String,
     privateDnsEnabled: scala.Boolean,
+    requesterManaged: scala.Boolean,
     routeTableIds: js.Array[java.lang.String],
     securityGroupIds: js.Array[java.lang.String],
     serviceName: java.lang.String,
     state: java.lang.String,
     subnetIds: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcEndpointType: java.lang.String,
     vpcId: java.lang.String
   ): GetVpcEndpointResult = {
-    val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, dnsEntries = dnsEntries, id = id, networkInterfaceIds = networkInterfaceIds, policy = policy, prefixListId = prefixListId, privateDnsEnabled = privateDnsEnabled, routeTableIds = routeTableIds, securityGroupIds = securityGroupIds, serviceName = serviceName, state = state, subnetIds = subnetIds, vpcEndpointType = vpcEndpointType, vpcId = vpcId)
+    val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, dnsEntries = dnsEntries, id = id, networkInterfaceIds = networkInterfaceIds, ownerId = ownerId, policy = policy, prefixListId = prefixListId, privateDnsEnabled = privateDnsEnabled, requesterManaged = requesterManaged, routeTableIds = routeTableIds, securityGroupIds = securityGroupIds, serviceName = serviceName, state = state, subnetIds = subnetIds, tags = tags, vpcEndpointType = vpcEndpointType, vpcId = vpcId)
   
     __obj.asInstanceOf[GetVpcEndpointResult]
   }

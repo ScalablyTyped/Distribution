@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "multer-s3"
-version := "2.7-dt-20180425Z-8b5b61"
+version := "2.7-dt-20180425Z-765eae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.479.0-f9af0a",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-f78539",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-039467",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-046e36",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-f895cb",
+  "org.scalablytyped" %%% "aws-sdk" % "2.480.0-241f5e",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-d64a0e",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a1e1e0",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-cb6937",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-e7cc40",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c60c5",
-  "org.scalablytyped" %%% "multer" % "1.3-dt-20190326Z-7a64fc",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "multer" % "1.3-dt-20190326Z-870edd",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-eab0d2",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-d489cc",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-a3667a",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -9,9 +9,9 @@ trait BreadcrumbProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var itemRender: js.UndefOr[
     js.Function4[
-      /* route */ js.Any, 
+      /* route */ Route, 
       /* params */ js.Any, 
-      /* routes */ js.Array[_], 
+      /* routes */ js.Array[Route], 
       /* paths */ js.Array[java.lang.String], 
       reactLib.reactMod.ReactNode
     ]
@@ -27,7 +27,7 @@ object BreadcrumbProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    itemRender: (/* route */ js.Any, /* params */ js.Any, /* routes */ js.Array[_], /* paths */ js.Array[java.lang.String]) => reactLib.reactMod.ReactNode = null,
+    itemRender: (/* route */ Route, /* params */ js.Any, /* routes */ js.Array[Route], /* paths */ js.Array[java.lang.String]) => reactLib.reactMod.ReactNode = null,
     params: js.Any = null,
     prefixCls: java.lang.String = null,
     routes: js.Array[Route] = null,

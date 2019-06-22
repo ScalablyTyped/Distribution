@@ -160,7 +160,9 @@ class Distribution protected ()
   /**
     * If you're using AWS WAF to filter CloudFront
     * requests, the Id of the AWS WAF web ACL that is associated with the
-    * distribution.
+    * distribution. The WAF Web ACL must exist in the WAF Global (CloudFront)
+    * region and the credentials configuring this argument must have
+    * `waf:GetWebACL` permissions assigned.
     */
   val webAclId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }

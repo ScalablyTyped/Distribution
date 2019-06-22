@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectParam extends js.Object {
-  var domEvent: js.Any
+  var domEvent: stdLib.Event
   var item: js.Any
   var key: java.lang.String
   var keyPath: js.Array[java.lang.String]
@@ -16,7 +16,7 @@ trait SelectParam extends js.Object {
 object SelectParam {
   @scala.inline
   def apply(
-    domEvent: js.Any,
+    domEvent: stdLib.Event,
     item: js.Any,
     key: java.lang.String,
     keyPath: js.Array[java.lang.String],

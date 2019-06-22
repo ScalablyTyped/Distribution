@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TreeSelect
-  extends reactLib.reactMod.Component[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps, js.Any, js.Any] {
+trait TreeSelect[T /* <: antdLib.esTreeDashSelectInterfaceMod.TreeNodeValue */]
+  extends reactLib.reactMod.Component[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T], js.Any, js.Any] {
   var rcTreeSelect: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native

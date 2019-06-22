@@ -12,9 +12,9 @@ class EnumValueDescriptorProto ()
   def clearName(): scala.Unit = js.native
   def clearNumber(): scala.Unit = js.native
   def clearOptions(): scala.Unit = js.native
-  def getName(): java.lang.String = js.native
-  def getNumber(): scala.Double = js.native
-  def getOptions(): EnumValueOptions = js.native
+  def getName(): js.UndefOr[java.lang.String] = js.native
+  def getNumber(): js.UndefOr[scala.Double] = js.native
+  def getOptions(): js.UndefOr[EnumValueOptions] = js.native
   def hasName(): scala.Boolean = js.native
   def hasNumber(): scala.Boolean = js.native
   def hasOptions(): scala.Boolean = js.native

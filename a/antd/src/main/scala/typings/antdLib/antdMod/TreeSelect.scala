@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd", "TreeSelect")
 @js.native
-class TreeSelect protected ()
-  extends antdLib.libTreeDashSelectMod.default {
-  def this(props: antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps) = this()
+class TreeSelect[T /* <: antdLib.libTreeDashSelectInterfaceMod.TreeNodeValue */] protected ()
+  extends antdLib.libTreeDashSelectMod.default[T] {
+  def this(props: antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps[T]) = this()
 }
 
 /* static members */

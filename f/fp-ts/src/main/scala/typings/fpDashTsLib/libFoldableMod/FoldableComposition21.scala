@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FoldableComposition21[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
   def reduce[LF, A, B](
-    fga: fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, A]],
+    fga: fpDashTsLib.libHKTMod.Kind2[F, LF, fpDashTsLib.libHKTMod.Kind[G, A]],
     b: B,
     f: js.Function2[/* b */ B, /* a */ A, B]
   ): B
@@ -16,7 +16,7 @@ trait FoldableComposition21[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDa
 object FoldableComposition21 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */](
-    reduce: (fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
+    reduce: (fpDashTsLib.libHKTMod.Kind2[F, js.Any, fpDashTsLib.libHKTMod.Kind[G, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): FoldableComposition21[F, G] = {
     val __obj = js.Dynamic.literal(reduce = js.Any.fromFunction3(reduce))
   

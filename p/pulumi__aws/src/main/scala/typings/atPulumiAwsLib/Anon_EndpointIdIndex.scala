@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EndpointIdIndex extends js.Object {
-  var endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  var id: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  var index: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  var roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var endpoint: java.lang.String
+  var id: java.lang.String
+  var index: java.lang.String
+  var roleArn: java.lang.String
+  var `type`: java.lang.String
 }
 
 object Anon_EndpointIdIndex {
   @scala.inline
   def apply(
-    endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    id: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    index: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+    endpoint: java.lang.String,
+    id: java.lang.String,
+    index: java.lang.String,
+    roleArn: java.lang.String,
+    `type`: java.lang.String
   ): Anon_EndpointIdIndex = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endpoint = endpoint, id = id, index = index, roleArn = roleArn)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_EndpointIdIndex]
   }
 }

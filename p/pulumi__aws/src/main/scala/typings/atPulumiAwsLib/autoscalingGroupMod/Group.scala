@@ -145,7 +145,7 @@ class Group protected ()
     */
   val tagsCollection: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[_]]]] = js.native
   /**
-    * A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.
+    * A list of `aws_alb_target_group` ARNs, for use with Application or Network Load Balancing.
     */
   val targetGroupArns: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**

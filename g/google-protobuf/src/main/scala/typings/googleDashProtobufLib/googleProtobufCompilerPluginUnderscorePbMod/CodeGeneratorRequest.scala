@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class CodeGeneratorRequest ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addFileToGenerate(value: java.lang.String): scala.Unit = js.native
-  def addFileToGenerate(value: java.lang.String, index: scala.Double): scala.Unit = js.native
-  def addProtoFile(): scala.Unit = js.native
-  def addProtoFile(value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto): scala.Unit = js.native
+  def addFileToGenerate(value: java.lang.String): java.lang.String = js.native
+  def addFileToGenerate(value: java.lang.String, index: scala.Double): java.lang.String = js.native
+  def addProtoFile(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto = js.native
+  def addProtoFile(value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto = js.native
   def addProtoFile(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto,
     index: scala.Double
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto = js.native
   def clearCompilerVersion(): scala.Unit = js.native
   def clearFileToGenerateList(): scala.Unit = js.native
   def clearParameter(): scala.Unit = js.native
   def clearProtoFileList(): scala.Unit = js.native
-  def getCompilerVersion(): Version = js.native
+  def getCompilerVersion(): js.UndefOr[Version] = js.native
   def getFileToGenerateList(): js.Array[java.lang.String] = js.native
-  def getParameter(): java.lang.String = js.native
+  def getParameter(): js.UndefOr[java.lang.String] = js.native
   def getProtoFileList(): js.Array[
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto
   ] = js.native

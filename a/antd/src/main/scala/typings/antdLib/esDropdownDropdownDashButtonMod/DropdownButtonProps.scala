@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - antdLib.esDropdownDropdownMod.DropDownProps because var conflicts: className, prefixCls. Inlined trigger, overlay, onVisibleChange, visible, disabled, align, getPopupContainer, transitionName, placement, overlayClassName, overlayStyle, forceRender, mouseEnterDelay, mouseLeaveDelay, openClassName */ trait DropdownButtonProps
   extends antdLib.esButtonButtonDashGroupMod.ButtonGroupProps {
   var align: js.UndefOr[antdLib.esDropdownDropdownMod.Align] = js.undefined
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
@@ -43,7 +43,7 @@ object DropdownButtonProps {
   def apply(
     overlay: reactLib.reactMod.ReactNode | antdLib.esDropdownDropdownMod.OverlayFunc,
     align: antdLib.esDropdownDropdownMod.Align = null,
-    children: js.Any = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
@@ -71,7 +71,7 @@ object DropdownButtonProps {
   ): DropdownButtonProps = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)

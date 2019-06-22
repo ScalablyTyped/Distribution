@@ -36,6 +36,10 @@ class Pipeline protected ()
     */
   val roleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   val stages: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_Actions]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -27,9 +27,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -39,9 +39,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -51,9 +51,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -63,9 +63,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -75,9 +75,18 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Runs an action for every element in a data structure and accumulates the results
+    */
+  @JSName("traverse")
+  def traverse_Eq(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -87,9 +96,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -99,9 +108,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -111,9 +120,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -121,8 +130,8 @@ trait Traversable[T]
   @JSName("traverse")
   def traverse_IO(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.IO]): js.Function2[
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -132,9 +141,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -144,9 +153,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -156,9 +165,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -168,9 +177,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -180,9 +189,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -192,9 +201,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -204,9 +213,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -216,9 +225,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -228,9 +237,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -240,9 +249,18 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6HKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Runs an action for every element in a data structure and accumulates the results
+    */
+  @JSName("traverse")
+  def traverse_Ord(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -250,8 +268,8 @@ trait Traversable[T]
   @JSName("traverse")
   def traverse_Pair(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair]): js.Function2[
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -261,9 +279,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -273,9 +291,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -285,9 +303,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -299,9 +317,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, FU, FL, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, FU, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       FU, 
       FL, 
@@ -312,13 +330,25 @@ trait Traversable[T]
     * Runs an action for every element in a data structure and accumulates the results
     */
   @JSName("traverse")
+  def traverse_Record(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.es6HKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Runs an action for every element in a data structure and accumulates the results
+    */
+  @JSName("traverse")
   def traverse_State(F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State]): js.Function2[
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -328,9 +358,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -340,9 +370,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -352,9 +382,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -364,9 +394,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -374,8 +404,8 @@ trait Traversable[T]
   @JSName("traverse")
   def traverse_Task(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Task]): js.Function2[
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -385,9 +415,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -397,9 +427,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -409,9 +439,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -421,9 +451,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -433,9 +463,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -445,9 +475,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -455,8 +485,8 @@ trait Traversable[T]
   @JSName("traverse")
   def traverse_Tree(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -466,9 +496,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -478,9 +508,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -490,9 +520,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -502,9 +532,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -514,9 +544,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -526,9 +556,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Runs an action for every element in a data structure and accumulates the results
@@ -538,9 +568,9 @@ trait Traversable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
 }
 

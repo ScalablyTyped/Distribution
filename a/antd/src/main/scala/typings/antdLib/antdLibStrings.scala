@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT19DOT6` extends js.Object
+  sealed trait `3DOT19DOT7` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -134,6 +134,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait active extends js.Object
+  
+  @js.native
+  sealed trait add extends js.Object
   
   @js.native
   sealed trait additions extends js.Object
@@ -1327,6 +1330,9 @@ object antdLibStrings {
   sealed trait removals extends js.Object
   
   @js.native
+  sealed trait remove extends js.Object
+  
+  @js.native
   sealed trait removed
     extends antdLib.libUploadInterfaceMod.UploadFileStatus
        with antdLib.esUploadInterfaceMod.UploadFileStatus
@@ -2024,7 +2030,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT19DOT6`: `3DOT19DOT6` = "3.19.6".asInstanceOf[`3DOT19DOT6`]
+  def `3DOT19DOT7`: `3DOT19DOT7` = "3.19.7".asInstanceOf[`3DOT19DOT7`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2045,6 +2051,8 @@ object antdLibStrings {
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
+  def add: add = "add".asInstanceOf[add]
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
@@ -2689,6 +2697,8 @@ object antdLibStrings {
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
   @scala.inline

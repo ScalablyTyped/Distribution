@@ -13,6 +13,15 @@ package object clientsMediapackageMod {
     - java.lang.String
   */
   type AdMarkers = _AdMarkers | java.lang.String
+  type AdTriggers = js.Array[__AdTriggersElement]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.RESTRICTED
+    - awsDashSdkLib.awsDashSdkLibStrings.UNRESTRICTED
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTH
+    - java.lang.String
+  */
+  type AdsOnDeliveryRestrictions = _AdsOnDeliveryRestrictions | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.AES_128
@@ -55,6 +64,18 @@ package object clientsMediapackageMod {
   */
   type StreamOrder = _StreamOrder | java.lang.String
   type Tags = org.scalablytyped.runtime.StringDictionary[__string]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SPLICE_INSERT
+    - awsDashSdkLib.awsDashSdkLibStrings.BREAK
+    - awsDashSdkLib.awsDashSdkLibStrings.PROVIDER_ADVERTISEMENT
+    - awsDashSdkLib.awsDashSdkLibStrings.DISTRIBUTOR_ADVERTISEMENT
+    - awsDashSdkLib.awsDashSdkLibStrings.PROVIDER_PLACEMENT_OPPORTUNITY
+    - awsDashSdkLib.awsDashSdkLibStrings.DISTRIBUTOR_PLACEMENT_OPPORTUNITY
+    - awsDashSdkLib.awsDashSdkLibStrings.PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY
+    - awsDashSdkLib.awsDashSdkLibStrings.DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY
+    - java.lang.String
+  */
+  type __AdTriggersElement = ___AdTriggersElement | java.lang.String
   type __PeriodTriggersElement = awsDashSdkLib.awsDashSdkLibStrings.ADS | java.lang.String
   type __boolean = scala.Boolean
   type __integer = scala.Double

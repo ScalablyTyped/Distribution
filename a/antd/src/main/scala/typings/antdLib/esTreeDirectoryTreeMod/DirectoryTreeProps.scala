@@ -18,7 +18,7 @@ object DirectoryTreeProps {
     checkStrictly: js.UndefOr[scala.Boolean] = js.undefined,
     checkable: js.UndefOr[scala.Boolean] = js.undefined,
     checkedKeys: js.Array[java.lang.String] | antdLib.Anon_Checked = null,
-    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultCheckedKeys: js.Array[java.lang.String] = null,
     defaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,8 +31,11 @@ object DirectoryTreeProps {
     expandedKeys: js.Array[java.lang.String] = null,
     filterAntTreeNode: /* node */ antdLib.esTreeTreeMod.AntTreeNode => scala.Boolean = null,
     filterTreeNode: /* node */ antdLib.esTreeTreeMod.AntTreeNode => scala.Boolean = null,
-    icon: /* nodeProps */ antdLib.esTreeTreeMod.AntdTreeNodeAttribute => reactLib.reactMod.ReactNode = null,
-    loadData: /* node */ antdLib.esTreeTreeMod.AntTreeNode => js.Thenable[_] = null,
+    icon: (js.Function1[
+      /* nodeProps */ antdLib.esTreeTreeMod.AntdTreeNodeAttribute, 
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode = null,
+    loadData: /* node */ antdLib.esTreeTreeMod.AntTreeNode => js.Thenable[scala.Unit] = null,
     loadedKeys: js.Array[java.lang.String] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     onCheck: (/* checkedKeys */ js.Array[java.lang.String] | antdLib.Anon_Checked, /* e */ antdLib.esTreeTreeMod.AntTreeNodeCheckedEvent) => scala.Unit = null,
@@ -44,7 +47,7 @@ object DirectoryTreeProps {
     onDragOver: /* options */ antdLib.esTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDragStart: /* options */ antdLib.esTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDrop: /* options */ antdLib.esTreeTreeMod.AntTreeNodeDropEvent => scala.Unit = null,
-    onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ antdLib.esTreeTreeMod.AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[_] = null,
+    onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ antdLib.esTreeTreeMod.AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[scala.Unit] = null,
     onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_Event) => scala.Unit = null,
     onRightClick: /* options */ antdLib.esTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onSelect: (/* selectedKeys */ js.Array[java.lang.String], /* e */ antdLib.esTreeTreeMod.AntTreeNodeSelectedEvent) => scala.Unit = null,
@@ -75,7 +78,7 @@ object DirectoryTreeProps {
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys)
     if (filterAntTreeNode != null) __obj.updateDynamic("filterAntTreeNode")(js.Any.fromFunction1(filterAntTreeNode))
     if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(js.Any.fromFunction1(filterTreeNode))
-    if (icon != null) __obj.updateDynamic("icon")(js.Any.fromFunction1(icon))
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))
     if (loadedKeys != null) __obj.updateDynamic("loadedKeys")(loadedKeys)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)

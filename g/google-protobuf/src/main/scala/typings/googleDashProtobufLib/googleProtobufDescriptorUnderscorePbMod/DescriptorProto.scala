@@ -9,39 +9,39 @@ import scala.scalajs.js.annotation._
 @js.native
 class DescriptorProto ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addEnumType(): scala.Unit = js.native
-  def addEnumType(value: EnumDescriptorProto): scala.Unit = js.native
-  def addEnumType(value: EnumDescriptorProto, index: scala.Double): scala.Unit = js.native
-  def addExtension(): scala.Unit = js.native
-  def addExtension(value: FieldDescriptorProto): scala.Unit = js.native
-  def addExtension(value: FieldDescriptorProto, index: scala.Double): scala.Unit = js.native
-  def addExtensionRange(): scala.Unit = js.native
+  def addEnumType(): EnumDescriptorProto = js.native
+  def addEnumType(value: EnumDescriptorProto): EnumDescriptorProto = js.native
+  def addEnumType(value: EnumDescriptorProto, index: scala.Double): EnumDescriptorProto = js.native
+  def addExtension(): FieldDescriptorProto = js.native
+  def addExtension(value: FieldDescriptorProto): FieldDescriptorProto = js.native
+  def addExtension(value: FieldDescriptorProto, index: scala.Double): FieldDescriptorProto = js.native
+  def addExtensionRange(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ExtensionRange = js.native
   def addExtensionRange(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ExtensionRange
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ExtensionRange = js.native
   def addExtensionRange(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ExtensionRange,
     index: scala.Double
-  ): scala.Unit = js.native
-  def addField(): scala.Unit = js.native
-  def addField(value: FieldDescriptorProto): scala.Unit = js.native
-  def addField(value: FieldDescriptorProto, index: scala.Double): scala.Unit = js.native
-  def addNestedType(): scala.Unit = js.native
-  def addNestedType(value: DescriptorProto): scala.Unit = js.native
-  def addNestedType(value: DescriptorProto, index: scala.Double): scala.Unit = js.native
-  def addOneofDecl(): scala.Unit = js.native
-  def addOneofDecl(value: OneofDescriptorProto): scala.Unit = js.native
-  def addOneofDecl(value: OneofDescriptorProto, index: scala.Double): scala.Unit = js.native
-  def addReservedName(value: java.lang.String): scala.Unit = js.native
-  def addReservedName(value: java.lang.String, index: scala.Double): scala.Unit = js.native
-  def addReservedRange(): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ExtensionRange = js.native
+  def addField(): FieldDescriptorProto = js.native
+  def addField(value: FieldDescriptorProto): FieldDescriptorProto = js.native
+  def addField(value: FieldDescriptorProto, index: scala.Double): FieldDescriptorProto = js.native
+  def addNestedType(): DescriptorProto = js.native
+  def addNestedType(value: DescriptorProto): DescriptorProto = js.native
+  def addNestedType(value: DescriptorProto, index: scala.Double): DescriptorProto = js.native
+  def addOneofDecl(): OneofDescriptorProto = js.native
+  def addOneofDecl(value: OneofDescriptorProto): OneofDescriptorProto = js.native
+  def addOneofDecl(value: OneofDescriptorProto, index: scala.Double): OneofDescriptorProto = js.native
+  def addReservedName(value: java.lang.String): java.lang.String = js.native
+  def addReservedName(value: java.lang.String, index: scala.Double): java.lang.String = js.native
+  def addReservedRange(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRange = js.native
   def addReservedRange(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRange
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRange = js.native
   def addReservedRange(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRange,
     index: scala.Double
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRange = js.native
   def clearEnumTypeList(): scala.Unit = js.native
   def clearExtensionList(): scala.Unit = js.native
   def clearExtensionRangeList(): scala.Unit = js.native
@@ -58,10 +58,10 @@ class DescriptorProto ()
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ExtensionRange
   ] = js.native
   def getFieldList(): js.Array[FieldDescriptorProto] = js.native
-  def getName(): java.lang.String = js.native
+  def getName(): js.UndefOr[java.lang.String] = js.native
   def getNestedTypeList(): js.Array[DescriptorProto] = js.native
   def getOneofDeclList(): js.Array[OneofDescriptorProto] = js.native
-  def getOptions(): MessageOptions = js.native
+  def getOptions(): js.UndefOr[MessageOptions] = js.native
   def getReservedNameList(): js.Array[java.lang.String] = js.native
   def getReservedRangeList(): js.Array[
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRange

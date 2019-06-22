@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class FieldOptions ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addUninterpretedOption(): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): scala.Unit = js.native
+  def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): UninterpretedOption = js.native
   def clearCtype(): scala.Unit = js.native
   def clearDeprecated(): scala.Unit = js.native
   def clearJstype(): scala.Unit = js.native
@@ -19,13 +19,17 @@ class FieldOptions ()
   def clearPacked(): scala.Unit = js.native
   def clearUninterpretedOptionList(): scala.Unit = js.native
   def clearWeak(): scala.Unit = js.native
-  def getCtype(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldOptionsNs.CType = js.native
-  def getDeprecated(): scala.Boolean = js.native
-  def getJstype(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldOptionsNs.JSType = js.native
-  def getLazy(): scala.Boolean = js.native
-  def getPacked(): scala.Boolean = js.native
+  def getCtype(): js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldOptionsNs.CType
+  ] = js.native
+  def getDeprecated(): js.UndefOr[scala.Boolean] = js.native
+  def getJstype(): js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldOptionsNs.JSType
+  ] = js.native
+  def getLazy(): js.UndefOr[scala.Boolean] = js.native
+  def getPacked(): js.UndefOr[scala.Boolean] = js.native
   def getUninterpretedOptionList(): js.Array[UninterpretedOption] = js.native
-  def getWeak(): scala.Boolean = js.native
+  def getWeak(): js.UndefOr[scala.Boolean] = js.native
   def hasCtype(): scala.Boolean = js.native
   def hasDeprecated(): scala.Boolean = js.native
   def hasJstype(): scala.Boolean = js.native

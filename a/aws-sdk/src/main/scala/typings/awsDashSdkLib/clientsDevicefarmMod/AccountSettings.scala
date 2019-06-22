@@ -11,7 +11,7 @@ trait AccountSettings extends js.Object {
     */
   var awsAccountNumber: js.UndefOr[AWSAccountNumber] = js.undefined
   /**
-    * The default number of minutes (at the account level) a test run will execute before it times out. Default value is 60 minutes.
+    * The default number of minutes (at the account level) a test run will execute before it times out. The default value is 150 minutes.
     */
   var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   /**

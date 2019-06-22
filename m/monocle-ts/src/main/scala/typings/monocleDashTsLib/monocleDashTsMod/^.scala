@@ -28,6 +28,10 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("fromFoldable")
+  def fromFoldable_Eq(F: fpDashTsLib.libFoldableMod.Foldable1[monocleDashTsLib.monocleDashTsLibStrings.Eq]): js.Function0[
+    Fold[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Eq, _], _]
+  ] = js.native
+  @JSName("fromFoldable")
   def fromFoldable_Free(F: fpDashTsLib.libFoldableMod.Foldable2[monocleDashTsLib.monocleDashTsLibStrings.Free]): js.Function0[
     Fold[
       fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Free, _, _], 
@@ -89,6 +93,10 @@ object ^ extends js.Object {
     Fold[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Option, _], _]
   ] = js.native
   @JSName("fromFoldable")
+  def fromFoldable_Ord(F: fpDashTsLib.libFoldableMod.Foldable1[monocleDashTsLib.monocleDashTsLibStrings.Ord]): js.Function0[
+    Fold[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Ord, _], _]
+  ] = js.native
+  @JSName("fromFoldable")
   def fromFoldable_Pair(F: fpDashTsLib.libFoldableMod.Foldable1[monocleDashTsLib.monocleDashTsLibStrings.Pair]): js.Function0[
     Fold[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Pair, _], _]
   ] = js.native
@@ -105,6 +113,10 @@ object ^ extends js.Object {
       fpDashTsLib.libHKTMod.Type3[monocleDashTsLib.monocleDashTsLibStrings.ReaderTaskEither, _, _, _], 
       _
     ]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Record(F: fpDashTsLib.libFoldableMod.Foldable1[monocleDashTsLib.monocleDashTsLibStrings.Record]): js.Function0[
+    Fold[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Record, _], _]
   ] = js.native
   @JSName("fromFoldable")
   def fromFoldable_State(F: fpDashTsLib.libFoldableMod.Foldable2[monocleDashTsLib.monocleDashTsLibStrings.State]): js.Function0[
@@ -198,6 +210,10 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("fromTraversable")
+  def fromTraversable_Eq(T: fpDashTsLib.libTraversableMod.Traversable1[monocleDashTsLib.monocleDashTsLibStrings.Eq]): js.Function0[
+    Traversal[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Eq, _], _]
+  ] = js.native
+  @JSName("fromTraversable")
   def fromTraversable_Free(T: fpDashTsLib.libTraversableMod.Traversable2[monocleDashTsLib.monocleDashTsLibStrings.Free]): js.Function0[
     Traversal[
       fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Free, _, _], 
@@ -263,6 +279,10 @@ object ^ extends js.Object {
     Traversal[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Option, _], _]
   ] = js.native
   @JSName("fromTraversable")
+  def fromTraversable_Ord(T: fpDashTsLib.libTraversableMod.Traversable1[monocleDashTsLib.monocleDashTsLibStrings.Ord]): js.Function0[
+    Traversal[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Ord, _], _]
+  ] = js.native
+  @JSName("fromTraversable")
   def fromTraversable_Pair(T: fpDashTsLib.libTraversableMod.Traversable1[monocleDashTsLib.monocleDashTsLibStrings.Pair]): js.Function0[
     Traversal[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Pair, _], _]
   ] = js.native
@@ -281,6 +301,10 @@ object ^ extends js.Object {
       fpDashTsLib.libHKTMod.Type3[monocleDashTsLib.monocleDashTsLibStrings.ReaderTaskEither, _, _, _], 
       _
     ]
+  ] = js.native
+  @JSName("fromTraversable")
+  def fromTraversable_Record(T: fpDashTsLib.libTraversableMod.Traversable1[monocleDashTsLib.monocleDashTsLibStrings.Record]): js.Function0[
+    Traversal[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Record, _], _]
   ] = js.native
   @JSName("fromTraversable")
   def fromTraversable_State(T: fpDashTsLib.libTraversableMod.Traversable2[monocleDashTsLib.monocleDashTsLibStrings.State]): js.Function0[

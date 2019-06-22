@@ -29,7 +29,7 @@ class TopicRule protected ()
     */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   val dynamodb: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_HashKeyField]] = js.native
-  val elasticsearch: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EndpointId]] = js.native
+  val elasticsearch: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EndpointIdIndex]] = js.native
   /**
     * Specifies whether the rule is enabled.
     */

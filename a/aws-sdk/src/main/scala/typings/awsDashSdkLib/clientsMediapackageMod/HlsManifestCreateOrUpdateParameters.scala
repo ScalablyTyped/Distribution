@@ -15,6 +15,8 @@ trait HlsManifestCreateOrUpdateParameters extends js.Object {
   messages in the input source.
     */
   var AdMarkers: js.UndefOr[AdMarkers] = js.undefined
+  var AdTriggers: js.UndefOr[AdTriggers] = js.undefined
+  var AdsOnDeliveryRestrictions: js.UndefOr[AdsOnDeliveryRestrictions] = js.undefined
   /**
     * The ID of the manifest. The ID must be unique within the OriginEndpoint and it cannot be changed after it is created.
     */
@@ -56,6 +58,8 @@ object HlsManifestCreateOrUpdateParameters {
   def apply(
     Id: __string,
     AdMarkers: AdMarkers = null,
+    AdTriggers: AdTriggers = null,
+    AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
     IncludeIframeOnlyStream: js.UndefOr[__boolean] = js.undefined,
     ManifestName: __string = null,
     PlaylistType: PlaylistType = null,
@@ -64,6 +68,8 @@ object HlsManifestCreateOrUpdateParameters {
   ): HlsManifestCreateOrUpdateParameters = {
     val __obj = js.Dynamic.literal(Id = Id)
     if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
+    if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers)
+    if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
     if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream)
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName)
     if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])

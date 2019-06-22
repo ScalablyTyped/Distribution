@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ModifyF[S, A] extends js.Object {
   def apply(
     F: fpDashTsLib.libApplicativeMod.Applicative1[
-      monocleDashTsLib.monocleDashTsLibStrings.Array | monocleDashTsLib.monocleDashTsLibStrings.FreeGroup | monocleDashTsLib.monocleDashTsLibStrings.IO | monocleDashTsLib.monocleDashTsLibStrings.Identity | monocleDashTsLib.monocleDashTsLibStrings.NonEmptyArray | monocleDashTsLib.monocleDashTsLibStrings.NonEmptyArray2v | monocleDashTsLib.monocleDashTsLibStrings.Option | monocleDashTsLib.monocleDashTsLibStrings.Pair | monocleDashTsLib.monocleDashTsLibStrings.StrMap | monocleDashTsLib.monocleDashTsLibStrings.Task | monocleDashTsLib.monocleDashTsLibStrings.Tree | monocleDashTsLib.monocleDashTsLibStrings.Zipper
+      monocleDashTsLib.monocleDashTsLibStrings.Array | monocleDashTsLib.monocleDashTsLibStrings.Eq | monocleDashTsLib.monocleDashTsLibStrings.FreeGroup | monocleDashTsLib.monocleDashTsLibStrings.IO | monocleDashTsLib.monocleDashTsLibStrings.Identity | monocleDashTsLib.monocleDashTsLibStrings.NonEmptyArray | monocleDashTsLib.monocleDashTsLibStrings.NonEmptyArray2v | monocleDashTsLib.monocleDashTsLibStrings.Option | monocleDashTsLib.monocleDashTsLibStrings.Ord | monocleDashTsLib.monocleDashTsLibStrings.Pair | monocleDashTsLib.monocleDashTsLibStrings.Record | monocleDashTsLib.monocleDashTsLibStrings.StrMap | monocleDashTsLib.monocleDashTsLibStrings.Task | monocleDashTsLib.monocleDashTsLibStrings.Tree | monocleDashTsLib.monocleDashTsLibStrings.Zipper
     ]
   ): js.Function1[
     /* f */ js.Function1[

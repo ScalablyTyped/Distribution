@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsIamMod {
+  type AccessDetails = js.Array[AccessDetail]
   type ActionNameListType = js.Array[ActionNameType]
   type ActionNameType = java.lang.String
   type ArnListType = js.Array[arnType]
@@ -182,6 +183,8 @@ package object clientsIamMod {
   type maxPasswordAgeType = scala.Double
   type mfaDeviceListType = js.Array[MFADevice]
   type minimumPasswordLengthType = scala.Double
+  type organizationsEntityPathType = java.lang.String
+  type organizationsPolicyIdType = java.lang.String
   type passwordReusePreventionType = scala.Double
   type passwordType = java.lang.String
   type pathPrefixType = java.lang.String
@@ -236,6 +239,14 @@ package object clientsIamMod {
   type servicePassword = java.lang.String
   type serviceSpecificCredentialId = java.lang.String
   type serviceUserName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SERVICE_NAMESPACE_ASCENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.SERVICE_NAMESPACE_DESCENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.LAST_AUTHENTICATED_TIME_ASCENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.LAST_AUTHENTICATED_TIME_DESCENDING
+    - java.lang.String
+  */
+  type sortKeyType = _sortKeyType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.Active
     - awsDashSdkLib.awsDashSdkLibStrings.Inactive

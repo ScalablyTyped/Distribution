@@ -11,7 +11,7 @@ trait UpdateNetworkProfileRequest extends js.Object {
     */
   var arn: AmazonResourceName
   /**
-    * The descriptoin of the network profile about which you are returning information.
+    * The description of the network profile about which you are returning information.
     */
   var description: js.UndefOr[Message] = js.undefined
   /**

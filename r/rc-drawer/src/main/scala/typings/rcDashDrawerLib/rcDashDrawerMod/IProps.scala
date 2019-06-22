@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   var getContainer: js.UndefOr[IStringOrHtmlElement | js.Function0[IStringOrHtmlElement]] = js.undefined
   var handler: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNode] = js.undefined
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var level: js.UndefOr[scala.Null | java.lang.String | js.Array[java.lang.String]] = js.undefined
   var levelMove: js.UndefOr[ILevelMove | (js.Function1[/* e */ rcDashDrawerLib.Anon_Open, ILevelMove])] = js.undefined
   var maskStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -38,6 +39,7 @@ object IProps {
     getContainer: IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] = null,
     handler: scala.Boolean | reactLib.reactMod.ReactNode = null,
     height: java.lang.String | scala.Double = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     level: java.lang.String | js.Array[java.lang.String] = null,
     levelMove: ILevelMove | (js.Function1[/* e */ rcDashDrawerLib.Anon_Open, ILevelMove]) = null,
     maskStyle: reactLib.reactMod.CSSProperties = null,
@@ -59,6 +61,7 @@ object IProps {
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (levelMove != null) __obj.updateDynamic("levelMove")(levelMove.asInstanceOf[js.Any])
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)

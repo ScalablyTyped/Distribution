@@ -15,6 +15,8 @@ trait HlsPackage extends js.Object {
   messages in the input source.
     */
   var AdMarkers: js.UndefOr[AdMarkers] = js.undefined
+  var AdTriggers: js.UndefOr[AdTriggers] = js.undefined
+  var AdsOnDeliveryRestrictions: js.UndefOr[AdsOnDeliveryRestrictions] = js.undefined
   var Encryption: js.UndefOr[HlsEncryption] = js.undefined
   /**
     * When enabled, an I-Frame only stream will be included in the output.
@@ -58,6 +60,8 @@ object HlsPackage {
   @scala.inline
   def apply(
     AdMarkers: AdMarkers = null,
+    AdTriggers: AdTriggers = null,
+    AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
     Encryption: HlsEncryption = null,
     IncludeIframeOnlyStream: js.UndefOr[__boolean] = js.undefined,
     PlaylistType: PlaylistType = null,
@@ -69,6 +73,8 @@ object HlsPackage {
   ): HlsPackage = {
     val __obj = js.Dynamic.literal()
     if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
+    if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers)
+    if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream)
     if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])

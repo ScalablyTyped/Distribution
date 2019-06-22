@@ -519,20 +519,20 @@ object antdLibComponents {
   def TreeProps: antdLib.esTreeTreeMod.TreeProps.type = antdLib.esTreeTreeMod.TreeProps
   type TreeProps = antdLib.esTreeTreeMod.TreeProps
   @scala.inline
-  def TreeDashSelect: reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.esTreeDashSelectMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps]]
+  def TreeDashSelect[T /* <: antdLib.esTreeDashSelectInterfaceMod.TreeNodeValue */]: reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T]] = js.constructorOf[antdLib.esTreeDashSelectMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T]]]
   @scala.inline
   def TreeDashSelectProps: antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps.type = antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps
-  type TreeDashSelectProps = antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps
+  type TreeDashSelectProps[T /* <: antdLib.esTreeDashSelectInterfaceMod.TreeNodeValue */] = antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T]
   @scala.inline
   def TreeNode: reactLib.reactMod.ComponentType[antdLib.esTreeTreeMod.AntTreeNodeProps] = antdLib.esTreeMod.default.TreeNode.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTreeTreeMod.AntTreeNodeProps]]
   @scala.inline
   def TreeNodeProps: antdLib.esTreeTreeMod.AntTreeNodeProps.type = antdLib.esTreeTreeMod.AntTreeNodeProps
   type TreeNodeProps = antdLib.esTreeTreeMod.AntTreeNodeProps
   @scala.inline
-  def TreeSelect: reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.esMod.TreeSelect].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps]]
+  def TreeSelect[T /* <: antdLib.esTreeDashSelectInterfaceMod.TreeNodeValue */]: reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T]] = js.constructorOf[antdLib.esMod.TreeSelect[T]].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T]]]
   @scala.inline
   def TreeSelectProps: antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps.type = antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps
-  type TreeSelectProps = antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps
+  type TreeSelectProps[T /* <: antdLib.esTreeDashSelectInterfaceMod.TreeNodeValue */] = antdLib.esTreeDashSelectInterfaceMod.TreeSelectProps[T]
   @scala.inline
   def Typography: reactLib.reactMod.ComponentType[antdLib.esTypographyTypographyMod.InternalTypographyProps] = antdLib.esTypographyTypographyMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTypographyTypographyMod.InternalTypographyProps]]
   @scala.inline

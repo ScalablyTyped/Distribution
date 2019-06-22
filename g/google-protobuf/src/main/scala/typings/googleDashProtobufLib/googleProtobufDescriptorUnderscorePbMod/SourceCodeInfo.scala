@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class SourceCodeInfo ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addLocation(): scala.Unit = js.native
-  def addLocation(value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location): scala.Unit = js.native
+  def addLocation(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location = js.native
+  def addLocation(value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location = js.native
   def addLocation(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location,
     index: scala.Double
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location = js.native
   def clearLocationList(): scala.Unit = js.native
   def getLocationList(): js.Array[
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.Location

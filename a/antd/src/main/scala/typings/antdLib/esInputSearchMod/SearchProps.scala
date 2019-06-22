@@ -260,7 +260,7 @@ trait SearchProps extends js.Object {
       /* event */ js.UndefOr[
         (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement]
       ], 
-      _
+      scala.Unit
     ]
   ] = js.undefined
   var onSeeked: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement]] = js.undefined
@@ -498,7 +498,7 @@ object SearchProps {
     onScroll: reactLib.reactMod.UIEventHandler[stdLib.HTMLInputElement] = null,
     onSearch: (/* value */ java.lang.String, /* event */ js.UndefOr[
       (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement]
-    ]) => _ = null,
+    ]) => scala.Unit = null,
     onSeeked: reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement] = null,
     onSeeking: reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement] = null,
     onSelect: reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement] = null,

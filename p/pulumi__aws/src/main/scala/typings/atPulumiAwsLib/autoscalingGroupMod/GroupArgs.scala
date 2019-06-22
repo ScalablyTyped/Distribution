@@ -161,7 +161,7 @@ trait GroupArgs extends js.Object {
     ]
   ] = js.undefined
   /**
-    * A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.
+    * A list of `aws_alb_target_group` ARNs, for use with Application or Network Load Balancing.
     */
   val targetGroupArns: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]

@@ -25,8 +25,8 @@ object UninterpretedOptionNs extends js.Object {
     extends googleDashProtobufLib.googleDashProtobufMod.Message {
     def clearIsExtension(): scala.Unit = js.native
     def clearNamePart(): scala.Unit = js.native
-    def getIsExtension(): scala.Boolean = js.native
-    def getNamePart(): java.lang.String = js.native
+    def getIsExtension(): js.UndefOr[scala.Boolean] = js.native
+    def getNamePart(): js.UndefOr[java.lang.String] = js.native
     def hasIsExtension(): scala.Boolean = js.native
     def hasNamePart(): scala.Boolean = js.native
     def setIsExtension(value: scala.Boolean): scala.Unit = js.native

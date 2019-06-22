@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Method ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addOptions(): scala.Unit = js.native
-  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option): scala.Unit = js.native
-  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option, index: scala.Double): scala.Unit = js.native
+  def addOptions(): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option = js.native
+  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option = js.native
+  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option, index: scala.Double): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option = js.native
   def clearOptionsList(): scala.Unit = js.native
   def getName(): java.lang.String = js.native
   def getOptionsList(): js.Array[googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option] = js.native

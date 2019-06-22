@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def getFunctorWithIndexComposition[FI, GI](
     F: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       FI
     ],
     G: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): FunctorWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.StrMap, FI, fpDashTsLib.fpDashTsLibStrings.Pair, GI] = js.native
   def getFunctorWithIndexComposition[FI, GI](
     F: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       FI
     ],
     G: FunctorWithIndex2[
@@ -34,7 +34,7 @@ object ^ extends js.Object {
       FI
     ],
     G: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): FunctorWithIndexComposition21[fpDashTsLib.fpDashTsLibStrings.Writer, FI, fpDashTsLib.fpDashTsLibStrings.StrMap, GI] = js.native
@@ -50,7 +50,7 @@ object ^ extends js.Object {
   ): FunctorWithIndexComposition22[fpDashTsLib.fpDashTsLibStrings.Writer, FI, fpDashTsLib.fpDashTsLibStrings.IOEither, GI] = js.native
   def getFunctorWithIndexComposition[FI, GI, L](
     F: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       FI
     ],
     G: FunctorWithIndex2C[
@@ -66,7 +66,7 @@ object ^ extends js.Object {
       L
     ],
     G: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): FunctorWithIndexComposition2C1[fpDashTsLib.fpDashTsLibStrings.Writer, FI, fpDashTsLib.fpDashTsLibStrings.StrMap, GI, L] = js.native
@@ -95,7 +95,7 @@ object ^ extends js.Object {
       L
     ],
     G: FunctorWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       FI
     ]
   ): FunctorWithIndexComposition3C1[
@@ -132,6 +132,11 @@ object ^ extends js.Object {
     F: FunctorWithIndex2[fpDashTsLib.fpDashTsLibStrings.Either, FI],
     G: FunctorWithIndex2C[fpDashTsLib.fpDashTsLibStrings.Either, FI, L]
   ): FunctorWithIndexComposition22C[fpDashTsLib.fpDashTsLibStrings.Either, FI, fpDashTsLib.fpDashTsLibStrings.Either, GI, L] = js.native
+  @JSName("getFunctorWithIndexComposition")
+  def getFunctorWithIndexComposition_Eq[FI, GI](
+    F: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Eq, FI],
+    G: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Eq, GI]
+  ): FunctorWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Eq, FI, fpDashTsLib.fpDashTsLibStrings.Eq, GI] = js.native
   @JSName("getFunctorWithIndexComposition")
   def getFunctorWithIndexComposition_Free[FI, GI](
     F: FunctorWithIndex2[fpDashTsLib.fpDashTsLibStrings.Free, FI],
@@ -224,6 +229,11 @@ object ^ extends js.Object {
     G: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Option, GI]
   ): FunctorWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Option, FI, fpDashTsLib.fpDashTsLibStrings.Option, GI] = js.native
   @JSName("getFunctorWithIndexComposition")
+  def getFunctorWithIndexComposition_Ord[FI, GI](
+    F: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Ord, FI],
+    G: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Ord, GI]
+  ): FunctorWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Ord, FI, fpDashTsLib.fpDashTsLibStrings.Ord, GI] = js.native
+  @JSName("getFunctorWithIndexComposition")
   def getFunctorWithIndexComposition_Pair[FI, GI](
     F: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Pair, FI],
     G: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Pair, GI]
@@ -238,6 +248,11 @@ object ^ extends js.Object {
     F: FunctorWithIndex2[fpDashTsLib.fpDashTsLibStrings.Reader, FI],
     G: FunctorWithIndex2C[fpDashTsLib.fpDashTsLibStrings.Reader, FI, L]
   ): FunctorWithIndexComposition22C[fpDashTsLib.fpDashTsLibStrings.Reader, FI, fpDashTsLib.fpDashTsLibStrings.Reader, GI, L] = js.native
+  @JSName("getFunctorWithIndexComposition")
+  def getFunctorWithIndexComposition_Record[FI, GI](
+    F: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Record, FI],
+    G: FunctorWithIndex1[fpDashTsLib.fpDashTsLibStrings.Record, GI]
+  ): FunctorWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Record, FI, fpDashTsLib.fpDashTsLibStrings.Record, GI] = js.native
   @JSName("getFunctorWithIndexComposition")
   def getFunctorWithIndexComposition_State[FI, GI](
     F: FunctorWithIndex2[fpDashTsLib.fpDashTsLibStrings.State, FI],

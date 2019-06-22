@@ -13,7 +13,7 @@ trait CollapseProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultActiveKey: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined
-  var expandIcon: js.UndefOr[js.Function1[/* panelProps */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
+  var expandIcon: js.UndefOr[js.Function1[/* panelProps */ PanelProps, reactLib.reactMod.ReactNode]] = js.undefined
   var expandIconPosition: js.UndefOr[ExpandIconPosition] = js.undefined
   var onChange: js.UndefOr[
     js.Function1[/* key */ java.lang.String | js.Array[java.lang.String], scala.Unit]
@@ -31,7 +31,7 @@ object CollapseProps {
     className: java.lang.String = null,
     defaultActiveKey: js.Array[java.lang.String] = null,
     destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined,
-    expandIcon: /* panelProps */ js.Any => reactLib.reactMod.ReactNode = null,
+    expandIcon: /* panelProps */ PanelProps => reactLib.reactMod.ReactNode = null,
     expandIconPosition: ExpandIconPosition = null,
     onChange: /* key */ java.lang.String | js.Array[java.lang.String] => scala.Unit = null,
     prefixCls: java.lang.String = null,

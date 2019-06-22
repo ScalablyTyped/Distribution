@@ -1,7 +1,7 @@
 
 # Scala.js typings for builder-util
 
-Typings are for version 10.1.1
+Typings are for version 10.1.2
 
 ## Library description:
 Various utilities. Used by [electron-builder](https://github.com/electron-userland/electron-builder).

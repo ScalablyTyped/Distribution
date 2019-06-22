@@ -42,6 +42,10 @@ trait VpcEndpointArgs extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */
   val vpcEndpointType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -62,6 +66,7 @@ object VpcEndpointArgs {
     routeTableIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     vpcEndpointType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VpcEndpointArgs = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
@@ -71,6 +76,7 @@ object VpcEndpointArgs {
     if (routeTableIds != null) __obj.updateDynamic("routeTableIds")(routeTableIds.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (vpcEndpointType != null) __obj.updateDynamic("vpcEndpointType")(vpcEndpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointArgs]
   }

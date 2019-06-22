@@ -23,7 +23,7 @@ trait ServiceLastAccessed extends js.Object {
     */
   var ServiceNamespace: serviceNamespaceType
   /**
-    * The total number of authenticated entities that have attempted to access the service. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The total number of authenticated principals (root user, IAM users, or IAM roles) that have attempted to access the service. This field is null if no principals attempted to access the service within the reporting period.
     */
   var TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined
 }

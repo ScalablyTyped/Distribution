@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// compatibility with older typings
 trait Timer extends js.Object {
-  def ref(): scala.Unit
-  def refresh(): scala.Unit
-  def unref(): scala.Unit
+  def hasRef(): scala.Boolean
+  def ref(): this.type
+  def refresh(): this.type
+  def unref(): this.type
 }
 
 object Timer {
   @scala.inline
-  def apply(ref: () => scala.Unit, refresh: () => scala.Unit, unref: () => scala.Unit): Timer = {
-    val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), refresh = js.Any.fromFunction0(refresh), unref = js.Any.fromFunction0(unref))
+  def apply(hasRef: () => scala.Boolean, ref: () => Timer, refresh: () => Timer, unref: () => Timer): Timer = {
+    val __obj = js.Dynamic.literal(hasRef = js.Any.fromFunction0(hasRef), ref = js.Any.fromFunction0(ref), refresh = js.Any.fromFunction0(refresh), unref = js.Any.fromFunction0(unref))
   
     __obj.asInstanceOf[Timer]
   }

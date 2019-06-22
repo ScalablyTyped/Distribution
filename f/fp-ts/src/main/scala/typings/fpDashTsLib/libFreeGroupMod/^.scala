@@ -11,13 +11,14 @@ object ^ extends js.Object {
   val URI: fpDashTsLib.fpDashTsLibStrings.FreeGroup = js.native
   val empty: FreeGroup[scala.Nothing] = js.native
   val freeGroup: fpDashTsLib.libMonadMod.Monad1[URI] = js.native
-  def fromArray[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[
+  def fromArray[A](E: fpDashTsLib.libEqMod.Eq[A]): js.Function1[
     /* as */ fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libEitherMod.Either[A, A]], 
     FreeGroup[A]
   ] = js.native
-  def getGroup[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libGroupMod.Group[FreeGroup[A]] = js.native
-  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[FreeGroup[A]] = js.native
-  def normalize[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[
+  def getEq[A](S: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libEqMod.Eq[FreeGroup[A]] = js.native
+  def getGroup[A](E: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libGroupMod.Group[FreeGroup[A]] = js.native
+  def getSetoid[A](S: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libEqMod.Eq[FreeGroup[A]] = js.native
+  def normalize[A](E: fpDashTsLib.libEqMod.Eq[A]): js.Function1[
     /* g */ fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libEitherMod.Either[A, A]], 
     fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libEitherMod.Either[A, A]]
   ] = js.native

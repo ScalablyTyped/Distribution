@@ -13,7 +13,7 @@ trait CommentProps extends js.Object {
   /** The element to display as the comment avatar - generally an antd Avatar */
   var avatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Nested comments should be provided as children of the Comment */
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** className of comment */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** The main content of the comment */
@@ -33,7 +33,7 @@ object CommentProps {
     actions: js.Array[reactLib.reactMod.ReactNode] = null,
     author: reactLib.reactMod.ReactNode = null,
     avatar: reactLib.reactMod.ReactNode = null,
-    children: js.Any = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     datetime: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
@@ -43,7 +43,7 @@ object CommentProps {
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (datetime != null) __obj.updateDynamic("datetime")(datetime.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

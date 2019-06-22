@@ -29,7 +29,7 @@ trait SelectProps[T] extends AbstractSelectProps {
       scala.Unit
     ]
   ] = js.undefined
-  var onDeselect: js.UndefOr[js.Function1[/* value */ T, _]] = js.undefined
+  var onDeselect: js.UndefOr[js.Function1[/* value */ T, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onInputKeyDown: js.UndefOr[
     js.Function1[/* e */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement], scala.Unit]
@@ -37,17 +37,19 @@ trait SelectProps[T] extends AbstractSelectProps {
   var onMouseEnter: js.UndefOr[
     js.Function1[
       /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
-      _
+      scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
       /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
-      _
+      scala.Unit
     ]
   ] = js.undefined
   var onPopupScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement]] = js.undefined
-  var onSelect: js.UndefOr[js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactElement, _]] = js.undefined
+  var onSelect: js.UndefOr[
+    js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactElement, scala.Unit]
+  ] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
   var removeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -74,7 +76,11 @@ object SelectProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
+    filterOption: scala.Boolean | (js.Function2[
+      /* inputValue */ java.lang.String, 
+      /* option */ reactLib.reactMod.ReactElement, 
+      scala.Boolean
+    ]) = null,
     firstActiveValue: java.lang.String | js.Array[java.lang.String] = null,
     getInputElement: () => reactLib.reactMod.ReactElement = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
@@ -89,15 +95,15 @@ object SelectProps {
     notFoundContent: reactLib.reactMod.ReactNode = null,
     onBlur: /* value */ T => scala.Unit = null,
     onChange: (/* value */ T, /* option */ reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]) => scala.Unit = null,
-    onDeselect: /* value */ T => _ = null,
+    onDeselect: /* value */ T => scala.Unit = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onFocus: () => scala.Unit = null,
     onInputKeyDown: /* e */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
-    onMouseEnter: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
-    onMouseLeave: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
+    onMouseEnter: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     onPopupScroll: reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement] = null,
-    onSearch: /* value */ java.lang.String => _ = null,
-    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactElement) => _ = null,
+    onSearch: /* value */ java.lang.String => scala.Unit = null,
+    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactElement) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     optionFilterProp: java.lang.String = null,
     optionLabelProp: java.lang.String = null,

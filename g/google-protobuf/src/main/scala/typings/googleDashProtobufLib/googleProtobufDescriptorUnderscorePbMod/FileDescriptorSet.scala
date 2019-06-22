@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileDescriptorSet ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addFile(): scala.Unit = js.native
-  def addFile(value: FileDescriptorProto): scala.Unit = js.native
-  def addFile(value: FileDescriptorProto, index: scala.Double): scala.Unit = js.native
+  def addFile(): FileDescriptorProto = js.native
+  def addFile(value: FileDescriptorProto): FileDescriptorProto = js.native
+  def addFile(value: FileDescriptorProto, index: scala.Double): FileDescriptorProto = js.native
   def clearFileList(): scala.Unit = js.native
   def getFileList(): js.Array[FileDescriptorProto] = js.native
   def setFileList(value: js.Array[FileDescriptorProto]): scala.Unit = js.native

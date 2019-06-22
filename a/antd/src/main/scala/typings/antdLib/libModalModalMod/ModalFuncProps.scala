@@ -25,8 +25,8 @@ trait ModalFuncProps extends js.Object {
   var okCancel: js.UndefOr[scala.Boolean] = js.undefined
   var okText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
-  var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
+  var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -59,8 +59,8 @@ object ModalFuncProps {
     okCancel: js.UndefOr[scala.Boolean] = js.undefined,
     okText: reactLib.reactMod.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: /* repeated */ js.Any => _ | js.Thenable[_] = null,
-    onOk: /* repeated */ js.Any => _ | js.Thenable[_] = null,
+    onCancel: /* repeated */ js.Any => _ = null,
+    onOk: /* repeated */ js.Any => _ = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     title: reactLib.reactMod.ReactNode = null,

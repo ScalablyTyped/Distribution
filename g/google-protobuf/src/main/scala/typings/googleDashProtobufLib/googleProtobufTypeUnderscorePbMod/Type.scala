@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Type ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addFields(): scala.Unit = js.native
-  def addFields(value: Field): scala.Unit = js.native
-  def addFields(value: Field, index: scala.Double): scala.Unit = js.native
-  def addOneofs(value: java.lang.String): scala.Unit = js.native
-  def addOneofs(value: java.lang.String, index: scala.Double): scala.Unit = js.native
-  def addOptions(): scala.Unit = js.native
-  def addOptions(value: Option): scala.Unit = js.native
-  def addOptions(value: Option, index: scala.Double): scala.Unit = js.native
+  def addFields(): Field = js.native
+  def addFields(value: Field): Field = js.native
+  def addFields(value: Field, index: scala.Double): Field = js.native
+  def addOneofs(value: java.lang.String): java.lang.String = js.native
+  def addOneofs(value: java.lang.String, index: scala.Double): java.lang.String = js.native
+  def addOptions(): Option = js.native
+  def addOptions(value: Option): Option = js.native
+  def addOptions(value: Option, index: scala.Double): Option = js.native
   def clearFieldsList(): scala.Unit = js.native
   def clearOneofsList(): scala.Unit = js.native
   def clearOptionsList(): scala.Unit = js.native

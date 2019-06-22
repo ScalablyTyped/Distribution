@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class FieldMask ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addPaths(value: java.lang.String): scala.Unit = js.native
-  def addPaths(value: java.lang.String, index: scala.Double): scala.Unit = js.native
+  def addPaths(value: java.lang.String): java.lang.String = js.native
+  def addPaths(value: java.lang.String, index: scala.Double): java.lang.String = js.native
   def clearPathsList(): scala.Unit = js.native
   def getPathsList(): js.Array[java.lang.String] = js.native
   def setPathsList(value: js.Array[java.lang.String]): scala.Unit = js.native

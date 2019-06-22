@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class EnumOptions ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addUninterpretedOption(): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): scala.Unit = js.native
+  def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): UninterpretedOption = js.native
   def clearAllowAlias(): scala.Unit = js.native
   def clearDeprecated(): scala.Unit = js.native
   def clearUninterpretedOptionList(): scala.Unit = js.native
-  def getAllowAlias(): scala.Boolean = js.native
-  def getDeprecated(): scala.Boolean = js.native
+  def getAllowAlias(): js.UndefOr[scala.Boolean] = js.native
+  def getDeprecated(): js.UndefOr[scala.Boolean] = js.native
   def getUninterpretedOptionList(): js.Array[UninterpretedOption] = js.native
   def hasAllowAlias(): scala.Boolean = js.native
   def hasDeprecated(): scala.Boolean = js.native

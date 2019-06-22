@@ -12,7 +12,7 @@ trait AntTreeNodeDragEnterEvent extends AntTreeNodeMouseEvent {
 object AntTreeNodeDragEnterEvent {
   @scala.inline
   def apply(
-    event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent],
     expandedKeys: js.Array[java.lang.String],
     node: AntTreeNode
   ): AntTreeNodeDragEnterEvent = {

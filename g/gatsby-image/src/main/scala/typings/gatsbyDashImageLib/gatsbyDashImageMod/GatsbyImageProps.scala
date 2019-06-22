@@ -14,7 +14,9 @@ trait GatsbyImageProps extends js.Object {
   var crossOrigin: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var fadeIn: js.UndefOr[scala.Boolean] = js.undefined
   var fixed: js.UndefOr[FixedObject] = js.undefined
+  var fixedImages: js.UndefOr[js.Array[FixedObject]] = js.undefined
   var fluid: js.UndefOr[FluidObject] = js.undefined
+  var fluidImages: js.UndefOr[js.Array[FluidObject]] = js.undefined
   var imgStyle: js.UndefOr[js.Object] = js.undefined
   var itemProp: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[
@@ -41,7 +43,9 @@ object GatsbyImageProps {
     crossOrigin: java.lang.String | scala.Boolean = null,
     fadeIn: js.UndefOr[scala.Boolean] = js.undefined,
     fixed: FixedObject = null,
+    fixedImages: js.Array[FixedObject] = null,
     fluid: FluidObject = null,
+    fluidImages: js.Array[FluidObject] = null,
     imgStyle: js.Object = null,
     itemProp: java.lang.String = null,
     loading: gatsbyDashImageLib.gatsbyDashImageLibStrings.auto | gatsbyDashImageLib.gatsbyDashImageLibStrings.`lazy` | gatsbyDashImageLib.gatsbyDashImageLibStrings.eager = null,
@@ -63,7 +67,9 @@ object GatsbyImageProps {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn)
     if (fixed != null) __obj.updateDynamic("fixed")(fixed)
+    if (fixedImages != null) __obj.updateDynamic("fixedImages")(fixedImages)
     if (fluid != null) __obj.updateDynamic("fluid")(fluid)
+    if (fluidImages != null) __obj.updateDynamic("fluidImages")(fluidImages)
     if (imgStyle != null) __obj.updateDynamic("imgStyle")(imgStyle)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])

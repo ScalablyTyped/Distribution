@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DashPackage extends js.Object {
+  var AdTriggers: js.UndefOr[AdTriggers] = js.undefined
+  var AdsOnDeliveryRestrictions: js.UndefOr[AdsOnDeliveryRestrictions] = js.undefined
   var Encryption: js.UndefOr[DashEncryption] = js.undefined
   /**
     * Determines the position of some tags in the Media Presentation Description (MPD).  When set to FULL, elements like SegmentTemplate and ContentProtection are included in each Representation.  When set to COMPACT, duplicate elements are combined and presented at the AdaptationSet level.
@@ -53,6 +55,8 @@ trait DashPackage extends js.Object {
 object DashPackage {
   @scala.inline
   def apply(
+    AdTriggers: AdTriggers = null,
+    AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
     Encryption: DashEncryption = null,
     ManifestLayout: ManifestLayout = null,
     ManifestWindowSeconds: js.UndefOr[__integer] = js.undefined,
@@ -66,6 +70,8 @@ object DashPackage {
     SuggestedPresentationDelaySeconds: js.UndefOr[__integer] = js.undefined
   ): DashPackage = {
     val __obj = js.Dynamic.literal()
+    if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers)
+    if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
     if (ManifestLayout != null) __obj.updateDynamic("ManifestLayout")(ManifestLayout.asInstanceOf[js.Any])
     if (!js.isUndefined(ManifestWindowSeconds)) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds)

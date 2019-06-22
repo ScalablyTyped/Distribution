@@ -37,11 +37,17 @@ trait ModalProps extends js.Object {
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   /** 点击模态框右上角叉、取消按钮、Props.maskClosable 值为 true 时的遮罩层或键盘按下 Esc 时的回调*/
   var onCancel: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /** 点击确定回调*/
   var onOk: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -80,8 +86,8 @@ object ModalProps {
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     okText: reactLib.reactMod.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onOk: /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onCancel: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onOk: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     title: reactLib.reactMod.ReactNode | java.lang.String = null,

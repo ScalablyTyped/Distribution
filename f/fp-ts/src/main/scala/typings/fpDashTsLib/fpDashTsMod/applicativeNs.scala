@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object applicativeNs extends js.Object {
   def getApplicativeComposition(
     F: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     G: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition11[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.fpDashTsLibStrings.Pair] = js.native
   def getApplicativeComposition(
     F: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     G: fpDashTsLib.libApplicativeMod.Applicative2[
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
@@ -29,7 +29,7 @@ object applicativeNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     G: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition21[fpDashTsLib.fpDashTsLibStrings.Writer, fpDashTsLib.fpDashTsLibStrings.StrMap] = js.native
   def getApplicativeComposition(
@@ -42,7 +42,7 @@ object applicativeNs extends js.Object {
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition22[fpDashTsLib.fpDashTsLibStrings.Writer, fpDashTsLib.fpDashTsLibStrings.IOEither] = js.native
   def getApplicativeComposition[LG](
     F: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     G: fpDashTsLib.libApplicativeMod.Applicative2C[
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
@@ -65,7 +65,7 @@ object applicativeNs extends js.Object {
       LF
     ],
     G: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition3C1[
     fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
@@ -114,6 +114,16 @@ object applicativeNs extends js.Object {
     F: fpDashTsLib.libApplicativeMod.Applicative[F],
     G: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either]
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition[F, fpDashTsLib.fpDashTsLibStrings.Either] = js.native
+  @JSName("getApplicativeComposition")
+  def getApplicativeComposition_Eq(
+    F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq],
+    G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): fpDashTsLib.libApplicativeMod.ApplicativeComposition11[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.fpDashTsLibStrings.Eq] = js.native
+  @JSName("getApplicativeComposition")
+  def getApplicativeComposition_Eq[F](
+    F: fpDashTsLib.libApplicativeMod.Applicative[F],
+    G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): fpDashTsLib.libApplicativeMod.ApplicativeComposition[F, fpDashTsLib.fpDashTsLibStrings.Eq] = js.native
   @JSName("getApplicativeComposition")
   def getApplicativeComposition_Free(
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free],
@@ -226,6 +236,16 @@ object applicativeNs extends js.Object {
     G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition[F, fpDashTsLib.fpDashTsLibStrings.Option] = js.native
   @JSName("getApplicativeComposition")
+  def getApplicativeComposition_Ord(
+    F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord],
+    G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): fpDashTsLib.libApplicativeMod.ApplicativeComposition11[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.fpDashTsLibStrings.Ord] = js.native
+  @JSName("getApplicativeComposition")
+  def getApplicativeComposition_Ord[F](
+    F: fpDashTsLib.libApplicativeMod.Applicative[F],
+    G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): fpDashTsLib.libApplicativeMod.ApplicativeComposition[F, fpDashTsLib.fpDashTsLibStrings.Ord] = js.native
+  @JSName("getApplicativeComposition")
   def getApplicativeComposition_Pair(
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair],
     G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair]
@@ -250,6 +270,16 @@ object applicativeNs extends js.Object {
     F: fpDashTsLib.libApplicativeMod.Applicative[F],
     G: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader]
   ): fpDashTsLib.libApplicativeMod.ApplicativeComposition[F, fpDashTsLib.fpDashTsLibStrings.Reader] = js.native
+  @JSName("getApplicativeComposition")
+  def getApplicativeComposition_Record(
+    F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record],
+    G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): fpDashTsLib.libApplicativeMod.ApplicativeComposition11[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.fpDashTsLibStrings.Record] = js.native
+  @JSName("getApplicativeComposition")
+  def getApplicativeComposition_Record[F](
+    F: fpDashTsLib.libApplicativeMod.Applicative[F],
+    G: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): fpDashTsLib.libApplicativeMod.ApplicativeComposition[F, fpDashTsLib.fpDashTsLibStrings.Record] = js.native
   @JSName("getApplicativeComposition")
   def getApplicativeComposition_State(
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State],
@@ -430,154 +460,168 @@ object applicativeNs extends js.Object {
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Array],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Const[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Const],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Const[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Const, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Either[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Either[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Either, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, L, A]]
+  ] = js.native
+  @JSName("getMonoid")
+  def getMonoid_Eq[A](
+    F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq],
+    M: fpDashTsLib.libMonoidMod.Monoid[A]
+  ): js.Function0[
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Free[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Free[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Free, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_FreeGroup[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.FreeGroup],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_IO[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.IO],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_IOEither[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.IOEither],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_IOEither[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.IOEither, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Identity[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Identity],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_IxIO[A](
     F: fpDashTsLib.libApplicativeMod.Applicative3[fpDashTsLib.fpDashTsLibStrings.IxIO],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_IxIO[U, L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative3C[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Map[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Map],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Map[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Map, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_NonEmptyArray[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_NonEmptyArray2v[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Option[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, A]]
+  ] = js.native
+  @JSName("getMonoid")
+  def getMonoid_Ord[A](
+    F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord],
+    M: fpDashTsLib.libMonoidMod.Monoid[A]
+  ): js.Function0[
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Pair[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Reader[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Reader[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Reader, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_ReaderTaskEither[A](
@@ -585,7 +629,7 @@ object applicativeNs extends js.Object {
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
     fpDashTsLib.libMonoidMod.Monoid[
-      fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, A]
+      fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, A]
     ]
   ] = js.native
   @JSName("getMonoid")
@@ -594,148 +638,155 @@ object applicativeNs extends js.Object {
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
     fpDashTsLib.libMonoidMod.Monoid[
-      fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, A]
+      fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, A]
     ]
+  ] = js.native
+  @JSName("getMonoid")
+  def getMonoid_Record[A](
+    F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record],
+    M: fpDashTsLib.libMonoidMod.Monoid[A]
+  ): js.Function0[
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_State[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_State[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.State, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Store[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Store],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Store[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Store, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_StrMap[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.StrMap],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Task[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Task],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_TaskEither[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.TaskEither],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_TaskEither[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.TaskEither, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_These[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.These],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_These[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.These, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Traced[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Traced[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Tree[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Tuple[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Tuple],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Tuple[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Tuple, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Validation[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Validation],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Validation[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Validation, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Writer[A](
     F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Writer],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Writer[L, A](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Writer, L],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, L, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, L, A]]
   ] = js.native
   @JSName("getMonoid")
   def getMonoid_Zipper[A](
     F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Zipper],
     M: fpDashTsLib.libMonoidMod.Monoid[A]
   ): js.Function0[
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, A]]
+    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, A]]
   ] = js.native
   def when[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* condition */ scala.Boolean, 
@@ -745,268 +796,286 @@ object applicativeNs extends js.Object {
   @JSName("when")
   def when_Array(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Array]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Const(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Const]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Const[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Const, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Either(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Either[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Either, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, L, scala.Unit]
+  ] = js.native
+  @JSName("when")
+  def when_Eq(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]): js.Function2[
+    /* condition */ scala.Boolean, 
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Free(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Free[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Free, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_FreeGroup(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_IO(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.IO]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_IOEither(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.IOEither]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_IOEither[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.IOEither, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Identity(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Identity]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_IxIO(F: fpDashTsLib.libApplicativeMod.Applicative3[fpDashTsLib.fpDashTsLibStrings.IxIO]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_IxIO[U, L](F: fpDashTsLib.libApplicativeMod.Applicative3C[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Map(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Map]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Map[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Map, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_NonEmptyArray(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_NonEmptyArray2v(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Option(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, scala.Unit]
+  ] = js.native
+  @JSName("when")
+  def when_Ord(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]): js.Function2[
+    /* condition */ scala.Boolean, 
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Pair(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Reader(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Reader[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Reader, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_ReaderTaskEither(F: fpDashTsLib.libApplicativeMod.Applicative3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_ReaderTaskEither[U, L](
     F: fpDashTsLib.libApplicativeMod.Applicative3C[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L]
   ): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, scala.Unit]
+  ] = js.native
+  @JSName("when")
+  def when_Record(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]): js.Function2[
+    /* condition */ scala.Boolean, 
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_State(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_State[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.State, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Store(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Store]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Store[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Store, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_StrMap(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.StrMap]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Task(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Task]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_TaskEither(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.TaskEither]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_TaskEither[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.TaskEither, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_These(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.These]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_These[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.These, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Tuple(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Tuple]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Tuple[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Tuple, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Validation(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Validation]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Validation[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Validation, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Writer(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Writer]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Writer[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Writer, L]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, L, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, L, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, L, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, L, scala.Unit]
   ] = js.native
   @JSName("when")
   def when_Zipper(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Zipper]): js.Function2[
     /* condition */ scala.Boolean, 
-    /* fu */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, scala.Unit], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, scala.Unit]
+    /* fu */ fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, scala.Unit], 
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, scala.Unit]
   ] = js.native
 }
 

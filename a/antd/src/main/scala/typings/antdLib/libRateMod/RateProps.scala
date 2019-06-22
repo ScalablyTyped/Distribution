@@ -13,8 +13,8 @@ trait RateProps extends js.Object {
   var count: js.UndefOr[scala.Double] = js.undefined
   var defaultValue: js.UndefOr[scala.Double] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ scala.Double, _]] = js.undefined
-  var onHoverChange: js.UndefOr[js.Function1[/* value */ scala.Double, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Unit]] = js.undefined
+  var onHoverChange: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tooltips: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -31,8 +31,8 @@ object RateProps {
     count: scala.Int | scala.Double = null,
     defaultValue: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: /* value */ scala.Double => _ = null,
-    onHoverChange: /* value */ scala.Double => _ = null,
+    onChange: /* value */ scala.Double => scala.Unit = null,
+    onHoverChange: /* value */ scala.Double => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     tooltips: js.Array[java.lang.String] = null,

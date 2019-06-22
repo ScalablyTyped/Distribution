@@ -17,14 +17,14 @@ trait TreeNodeNormal extends js.Object {
   var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var value: java.lang.String | scala.Double
+  var value: TreeNodeValue
 }
 
 object TreeNodeNormal {
   @scala.inline
   def apply(
     key: java.lang.String,
-    value: java.lang.String | scala.Double,
+    value: TreeNodeValue,
     children: js.Array[TreeNodeNormal] = null,
     disableCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,

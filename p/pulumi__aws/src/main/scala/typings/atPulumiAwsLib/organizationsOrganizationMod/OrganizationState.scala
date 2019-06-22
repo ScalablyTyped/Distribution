@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait OrganizationState extends js.Object {
   /**
-    * List of organization accounts (including the master account). All elements have these attributes:
+    * List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
     */
   val accounts: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnEmailId]]]
@@ -45,6 +45,12 @@ trait OrganizationState extends js.Object {
     */
   val masterAccountId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+    */
+  val nonMasterAccounts: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnEmailId]]]
+  ] = js.undefined
+  /**
     * List of organization roots. All elements have these attributes:
     */
   val roots: js.UndefOr[
@@ -63,6 +69,7 @@ object OrganizationState {
     masterAccountArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     masterAccountEmail: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     masterAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    nonMasterAccounts: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnEmailId]]] = null,
     roots: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnIdName]]] = null
   ): OrganizationState = {
     val __obj = js.Dynamic.literal()
@@ -74,6 +81,7 @@ object OrganizationState {
     if (masterAccountArn != null) __obj.updateDynamic("masterAccountArn")(masterAccountArn.asInstanceOf[js.Any])
     if (masterAccountEmail != null) __obj.updateDynamic("masterAccountEmail")(masterAccountEmail.asInstanceOf[js.Any])
     if (masterAccountId != null) __obj.updateDynamic("masterAccountId")(masterAccountId.asInstanceOf[js.Any])
+    if (nonMasterAccounts != null) __obj.updateDynamic("nonMasterAccounts")(nonMasterAccounts.asInstanceOf[js.Any])
     if (roots != null) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationState]
   }

@@ -27,6 +27,10 @@ trait WebhookState extends js.Object {
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
     */
   val targetAction: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -49,6 +53,7 @@ object WebhookState {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_JsonPathMatchEquals]]
     ] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     targetAction: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     targetPipeline: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     url: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
@@ -58,6 +63,7 @@ object WebhookState {
     if (authenticationConfiguration != null) __obj.updateDynamic("authenticationConfiguration")(authenticationConfiguration.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (targetAction != null) __obj.updateDynamic("targetAction")(targetAction.asInstanceOf[js.Any])
     if (targetPipeline != null) __obj.updateDynamic("targetPipeline")(targetPipeline.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

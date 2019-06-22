@@ -21,6 +21,7 @@ class None[A] protected () extends Option[A] {
     * assert.deepStrictEqual(some(2).alt(some(4)), some(2))
     * const fa: Option<number> = none
     * assert.deepStrictEqual(fa.alt(some(4)), some(4))
+    * @obsolete
     */
   def alt(fa: Option[A]): Option[A] = js.native
   /**
@@ -32,6 +33,7 @@ class None[A] protected () extends Option[A] {
     *
     * assert.deepStrictEqual(some(2).ap(some((x: number) => x + 1)), some(3))
     * assert.deepStrictEqual(none.ap(some((x: number) => x + 1)), none)
+    * @obsolete
     */
   def ap[B](fab: Option[js.Function1[/* a */ A, B]]): Option[B] = js.native
   /**
@@ -42,25 +44,33 @@ class None[A] protected () extends Option[A] {
     *
     * assert.deepStrictEqual(some((x: number) => x + 1).ap_(some(2)), some(3))
     * assert.deepStrictEqual(none.ap_(some(2)), none)
+    * @obsolete
     */
   def ap_[B, C](`this`: Option[js.Function1[/* b */ B, C]], fb: Option[B]): Option[C] = js.native
   /**
     * Returns the result of applying f to this `Option`'s value if this `Option` is nonempty. Returns `None` if this
     * `Option` is empty. Slightly different from `map` in that `f` is expected to return an `Option` (which could be
     * `None`)
+    * @obsolete
     */
   def chain[B](f: js.Function1[/* a */ A, Option[B]]): Option[B] = js.native
-  /** Returns `true` if the option has an element that is equal (as determined by `S`) to `a`, `false` otherwise */
-  def contains(S: fpDashTsLib.libSetoidMod.Setoid[A], a: A): scala.Boolean = js.native
+  /**
+    * Returns `true` if the option has an element that is equal (as determined by `S`) to `a`, `false` otherwise
+    * @obsolete
+    */
+  def contains(E: fpDashTsLib.libEqMod.Eq[A], a: A): scala.Boolean = js.native
   /**
     * Returns `true` if this option is non empty and the predicate `p` returns `true` when applied to this Option's value
+    * @obsolete
     */
   def exists(p: js.Function1[/* a */ A, scala.Boolean]): scala.Boolean = js.native
+  /** @obsolete */
   def extend[B](f: js.Function1[/* ea */ Option[A], B]): Option[B] = js.native
   def filter(p: fpDashTsLib.libFunctionMod.Predicate[A]): Option[A] = js.native
   /**
     * Returns this option if it is non empty and the predicate `p` return `true` when applied to this Option's value.
     * Otherwise returns `None`
+    * @obsolete
     */
   @JSName("filter")
   def filter_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B]): Option[B] = js.native
@@ -72,9 +82,13 @@ class None[A] protected () extends Option[A] {
     *
     * assert.strictEqual(some(1).fold('none', a => `some: ${a}`), 'some: 1')
     * assert.strictEqual(none.fold('none', a => `some: ${a}`), 'none')
+    * @obsolete
     */
   def fold[B](b: B, onSome: js.Function1[/* a */ A, B]): B = js.native
-  /** Lazy version of `fold` */
+  /**
+    * Lazy version of `fold`
+    * @obsolete
+    */
   def foldL[B](onNone: js.Function0[B], onSome: js.Function1[/* a */ A, B]): B = js.native
   /**
     * Returns the value from this `Some` or the given argument if this is a `None`
@@ -85,14 +99,24 @@ class None[A] protected () extends Option[A] {
     * assert.strictEqual(some(1).getOrElse(0), 1)
     * const fa: Option<number> = none
     * assert.strictEqual(fa.getOrElse(0), 0)
+    * @obsolete
     */
   def getOrElse(a: A): A = js.native
-  /** Lazy version of `getOrElse` */
+  /**
+    * Lazy version of `getOrElse`
+    * @obsolete
+    */
   def getOrElseL(f: js.Function0[A]): A = js.native
   def inspect(): java.lang.String = js.native
-  /** Returns `true` if the option is `None`, `false` otherwise */
+  /**
+    * Returns `true` if the option is `None`, `false` otherwise
+    * @obsolete
+    */
   def isNone(): /* is fp-ts.fp-ts/lib/Option.None<A> */ scala.Boolean = js.native
-  /** Returns `true` if the option is an instance of `Some`, `false` otherwise */
+  /**
+    * Returns `true` if the option is an instance of `Some`, `false` otherwise
+    * @obsolete
+    */
   def isSome(): /* is fp-ts.fp-ts/lib/Option.Some<A> */ scala.Boolean = js.native
   /**
     * Takes a function `f` and an `Option` of `A`. Maps `f` either on `None` or `Some`, Option's data constructors. If it
@@ -102,6 +126,7 @@ class None[A] protected () extends Option[A] {
     * import { some } from 'fp-ts/lib/Option'
     *
     * assert.deepStrictEqual(some(1).map(n => n * 2), some(2))
+    * @obsolete
     */
   def map[B](f: js.Function1[/* a */ A, B]): Option[B] = js.native
   /**
@@ -134,6 +159,7 @@ class None[A] protected () extends Option[A] {
     *     .mapNullable(bar => bar.baz),
     *   none
     * )
+    * @obsolete
     */
   def mapNullable[B](f: js.Function1[/* a */ A, js.UndefOr[B | scala.Null]]): Option[B] = js.native
   /**
@@ -145,8 +171,10 @@ class None[A] protected () extends Option[A] {
     * assert.deepStrictEqual(some(1).orElse(() => some(2)), some(1))
     *
     * @since 1.6.0
+    * @obsolete
     */
   def orElse(fa: fpDashTsLib.libFunctionMod.Lazy[Option[A]]): Option[A] = js.native
+  /** @obsolete */
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
   /**
     * Use `filter` instead.
@@ -156,9 +184,15 @@ class None[A] protected () extends Option[A] {
     * @deprecated
     */
   def refine[B /* <: A */](refinement: fpDashTsLib.libFunctionMod.Refinement[A, B]): Option[B] = js.native
-  /** Returns the value from this `Some` or `null` if this is a `None` */
+  /**
+    * Returns the value from this `Some` or `null` if this is a `None`
+    * @obsolete
+    */
   def toNullable(): A | scala.Null = js.native
-  /** Returns the value from this `Some` or `undefined` if this is a `None` */
+  /**
+    * Returns the value from this `Some` or `undefined` if this is a `None`
+    * @obsolete
+    */
   def toUndefined(): js.UndefOr[A] = js.native
 }
 

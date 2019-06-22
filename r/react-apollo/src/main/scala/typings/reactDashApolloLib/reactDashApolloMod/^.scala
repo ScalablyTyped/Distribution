@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ApolloConsumer: reactLib.reactMod.StatelessComponent[reactDashApolloLib.apolloConsumerMod.ApolloConsumerProps] = js.native
-  val ApolloContext: reactLib.reactMod.Context[js.UndefOr[reactDashApolloLib.apolloContextMod.ApolloContextValue]] | scala.Null = js.native
+  val ApolloContext: reactLib.reactMod.Context[js.UndefOr[reactDashApolloLib.apolloContextMod.ApolloContextValue]] = js.native
   def compose(funcs: js.Function*): js.Function1[/* repeated */ js.Any, _] = js.native
   def getDataFromTree(tree: reactLib.reactMod.ReactNode): js.Promise[java.lang.String] = js.native
   def getDataFromTree(tree: reactLib.reactMod.ReactNode, context: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[java.lang.String] = js.native

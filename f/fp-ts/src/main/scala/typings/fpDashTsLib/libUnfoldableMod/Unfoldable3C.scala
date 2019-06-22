@@ -9,7 +9,7 @@ trait Unfoldable3C[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L] extends js.Obje
   val URI: F
   val _L: L
   val _U: U
-  def unfoldr[A, B](b: B, f: js.Function1[/* b */ B, fpDashTsLib.libOptionMod.Option[js.Tuple2[A, B]]]): fpDashTsLib.libHKTMod.Type3[F, U, L, A]
+  def unfoldr[A, B](b: B, f: js.Function1[/* b */ B, fpDashTsLib.libOptionMod.Option[js.Tuple2[A, B]]]): fpDashTsLib.libHKTMod.Kind3[F, U, L, A]
 }
 
 object Unfoldable3C {
@@ -18,7 +18,7 @@ object Unfoldable3C {
     URI: F,
     _L: L,
     _U: U,
-    unfoldr: (js.Any, js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
+    unfoldr: (js.Any, js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]]) => fpDashTsLib.libHKTMod.Kind3[F, U, L, js.Any]
   ): Unfoldable3C[F, U, L] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], unfoldr = js.Any.fromFunction2(unfoldr))
   

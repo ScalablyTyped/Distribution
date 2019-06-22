@@ -10,7 +10,7 @@ trait AntTreeNodeDropEvent extends js.Object {
   var dragNodesKeys: js.Array[java.lang.String]
   var dropPosition: scala.Double
   var dropToGap: js.UndefOr[scala.Boolean] = js.undefined
-  var event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]
+  var event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]
   var node: AntTreeNode
 }
 
@@ -20,7 +20,7 @@ object AntTreeNodeDropEvent {
     dragNode: AntTreeNode,
     dragNodesKeys: js.Array[java.lang.String],
     dropPosition: scala.Double,
-    event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent],
     node: AntTreeNode,
     dropToGap: js.UndefOr[scala.Boolean] = js.undefined
   ): AntTreeNodeDropEvent = {

@@ -3498,7 +3498,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait BOTH
-    extends awsDashSdkLib.clientsDatasyncMod._Gid
+    extends awsDashSdkLib.clientsMediapackageMod._AdsOnDeliveryRestrictions
+       with awsDashSdkLib.clientsDatasyncMod._Gid
        with awsDashSdkLib.clientsDatasyncMod._Uid
   
   @js.native
@@ -3550,6 +3551,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BRE
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
+  
+  @js.native
+  sealed trait BREAK
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
   
   @js.native
   sealed trait BROADCASTER_MIXED_AD
@@ -6439,6 +6444,18 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DISGUSTED
     extends awsDashSdkLib.clientsRekognitionMod._EmotionName
+  
+  @js.native
+  sealed trait DISTRIBUTOR_ADVERTISEMENT
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
+  
+  @js.native
+  sealed trait DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
+  
+  @js.native
+  sealed trait DISTRIBUTOR_PLACEMENT_OPPORTUNITY
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
   
   @js.native
   sealed trait DIV
@@ -11958,6 +11975,14 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsClouddirectoryMod._RangeMode
   
   @js.native
+  sealed trait LAST_AUTHENTICATED_TIME_ASCENDING
+    extends awsDashSdkLib.clientsIamMod._sortKeyType
+  
+  @js.native
+  sealed trait LAST_AUTHENTICATED_TIME_DESCENDING
+    extends awsDashSdkLib.clientsIamMod._sortKeyType
+  
+  @js.native
   sealed trait LAST_BEFORE_MISSING_VALUES
     extends awsDashSdkLib.clientsClouddirectoryMod._RangeMode
   
@@ -13856,6 +13881,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._Ac3DynamicRangeCompressionProfile
        with awsDashSdkLib.clientsMediapackageMod._AdMarkers
        with awsDashSdkLib.clientsMediapackagevodMod._AdMarkers
+       with awsDashSdkLib.clientsMediapackageMod._AdsOnDeliveryRestrictions
        with awsDashSdkLib.clientsMediaconvertMod._AfdSignaling
        with awsDashSdkLib.clientsMedialiveMod._AfdSignaling
        with awsDashSdkLib.clientsCodebuildMod._ArtifactNamespace
@@ -15736,6 +15762,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsComprehendmedicalMod._EntityType
   
   @js.native
+  sealed trait PROVIDER_ADVERTISEMENT
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
+  
+  @js.native
+  sealed trait PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
+  
+  @js.native
+  sealed trait PROVIDER_PLACEMENT_OPPORTUNITY
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
+  
+  @js.native
   sealed trait PROVISIONED
     extends awsDashSdkLib.clientsDynamodbMod._BillingMode
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BillingMode
@@ -16935,6 +16973,10 @@ object awsDashSdkLibStrings {
   sealed trait RESTORING
     extends awsDashSdkLib.clientsWorkdocsMod._ResourceStateType
        with awsDashSdkLib.clientsOpsworkscmMod._ServerStatus
+  
+  @js.native
+  sealed trait RESTRICTED
+    extends awsDashSdkLib.clientsMediapackageMod._AdsOnDeliveryRestrictions
   
   @js.native
   sealed trait RESTRICTED_AUTHOR
@@ -18180,6 +18222,14 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsTransferMod._IdentityProviderType
   
   @js.native
+  sealed trait SERVICE_NAMESPACE_ASCENDING
+    extends awsDashSdkLib.clientsIamMod._sortKeyType
+  
+  @js.native
+  sealed trait SERVICE_NAMESPACE_DESCENDING
+    extends awsDashSdkLib.clientsIamMod._sortKeyType
+  
+  @js.native
   sealed trait SERVICE_ROLE
     extends awsDashSdkLib.clientsCodebuildMod._ImagePullCredentialsType
   
@@ -18639,6 +18689,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SPF
     extends awsDashSdkLib.clientsRoute53Mod._RRType
+  
+  @js.native
+  sealed trait SPLICE_INSERT
+    extends awsDashSdkLib.clientsMediapackageMod.___AdTriggersElement
   
   @js.native
   sealed trait SPOT
@@ -21101,6 +21155,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UNMETERED
     extends awsDashSdkLib.clientsDevicefarmMod._BillingMethod
+  
+  @js.native
+  sealed trait UNRESTRICTED
+    extends awsDashSdkLib.clientsMediapackageMod._AdsOnDeliveryRestrictions
   
   @js.native
   sealed trait UNSPECIFIED
@@ -30413,6 +30471,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def BRE: BRE = "BRE".asInstanceOf[BRE]
   @scala.inline
+  def BREAK: BREAK = "BREAK".asInstanceOf[BREAK]
+  @scala.inline
   def BROADCASTER_MIXED_AD: BROADCASTER_MIXED_AD = "BROADCASTER_MIXED_AD".asInstanceOf[BROADCASTER_MIXED_AD]
   @scala.inline
   def BROKER: BROKER = "BROKER".asInstanceOf[BROKER]
@@ -31512,6 +31572,12 @@ object awsDashSdkLibStrings {
   def DISCOVER_EXISTING: DISCOVER_EXISTING = "DISCOVER_EXISTING".asInstanceOf[DISCOVER_EXISTING]
   @scala.inline
   def DISGUSTED: DISGUSTED = "DISGUSTED".asInstanceOf[DISGUSTED]
+  @scala.inline
+  def DISTRIBUTOR_ADVERTISEMENT: DISTRIBUTOR_ADVERTISEMENT = "DISTRIBUTOR_ADVERTISEMENT".asInstanceOf[DISTRIBUTOR_ADVERTISEMENT]
+  @scala.inline
+  def DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY: DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY = "DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY".asInstanceOf[DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY]
+  @scala.inline
+  def DISTRIBUTOR_PLACEMENT_OPPORTUNITY: DISTRIBUTOR_PLACEMENT_OPPORTUNITY = "DISTRIBUTOR_PLACEMENT_OPPORTUNITY".asInstanceOf[DISTRIBUTOR_PLACEMENT_OPPORTUNITY]
   @scala.inline
   def DIV: DIV = "DIV".asInstanceOf[DIV]
   @scala.inline
@@ -33751,6 +33817,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def LAST: LAST = "LAST".asInstanceOf[LAST]
   @scala.inline
+  def LAST_AUTHENTICATED_TIME_ASCENDING: LAST_AUTHENTICATED_TIME_ASCENDING = "LAST_AUTHENTICATED_TIME_ASCENDING".asInstanceOf[LAST_AUTHENTICATED_TIME_ASCENDING]
+  @scala.inline
+  def LAST_AUTHENTICATED_TIME_DESCENDING: LAST_AUTHENTICATED_TIME_DESCENDING = "LAST_AUTHENTICATED_TIME_DESCENDING".asInstanceOf[LAST_AUTHENTICATED_TIME_DESCENDING]
+  @scala.inline
   def LAST_BEFORE_MISSING_VALUES: LAST_BEFORE_MISSING_VALUES = "LAST_BEFORE_MISSING_VALUES".asInstanceOf[LAST_BEFORE_MISSING_VALUES]
   @scala.inline
   def LAST_MODIFIED_TIME: LAST_MODIFIED_TIME = "LAST_MODIFIED_TIME".asInstanceOf[LAST_MODIFIED_TIME]
@@ -35305,6 +35375,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PROTECTED_HEALTH_INFORMATION: PROTECTED_HEALTH_INFORMATION = "PROTECTED_HEALTH_INFORMATION".asInstanceOf[PROTECTED_HEALTH_INFORMATION]
   @scala.inline
+  def PROVIDER_ADVERTISEMENT: PROVIDER_ADVERTISEMENT = "PROVIDER_ADVERTISEMENT".asInstanceOf[PROVIDER_ADVERTISEMENT]
+  @scala.inline
+  def PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY: PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY = "PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY".asInstanceOf[PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY]
+  @scala.inline
+  def PROVIDER_PLACEMENT_OPPORTUNITY: PROVIDER_PLACEMENT_OPPORTUNITY = "PROVIDER_PLACEMENT_OPPORTUNITY".asInstanceOf[PROVIDER_PLACEMENT_OPPORTUNITY]
+  @scala.inline
   def PROVISIONED: PROVISIONED = "PROVISIONED".asInstanceOf[PROVISIONED]
   @scala.inline
   def PROVISIONING: PROVISIONING = "PROVISIONING".asInstanceOf[PROVISIONING]
@@ -35828,6 +35904,8 @@ object awsDashSdkLibStrings {
   def RESTORE_JOB_STARTED: RESTORE_JOB_STARTED = "RESTORE_JOB_STARTED".asInstanceOf[RESTORE_JOB_STARTED]
   @scala.inline
   def RESTORING: RESTORING = "RESTORING".asInstanceOf[RESTORING]
+  @scala.inline
+  def RESTRICTED: RESTRICTED = "RESTRICTED".asInstanceOf[RESTRICTED]
   @scala.inline
   def RESTRICTED_AUTHOR: RESTRICTED_AUTHOR = "RESTRICTED_AUTHOR".asInstanceOf[RESTRICTED_AUTHOR]
   @scala.inline
@@ -36385,6 +36463,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def SERVICE_MANAGED: SERVICE_MANAGED = "SERVICE_MANAGED".asInstanceOf[SERVICE_MANAGED]
   @scala.inline
+  def SERVICE_NAMESPACE_ASCENDING: SERVICE_NAMESPACE_ASCENDING = "SERVICE_NAMESPACE_ASCENDING".asInstanceOf[SERVICE_NAMESPACE_ASCENDING]
+  @scala.inline
+  def SERVICE_NAMESPACE_DESCENDING: SERVICE_NAMESPACE_DESCENDING = "SERVICE_NAMESPACE_DESCENDING".asInstanceOf[SERVICE_NAMESPACE_DESCENDING]
+  @scala.inline
   def SERVICE_ROLE: SERVICE_ROLE = "SERVICE_ROLE".asInstanceOf[SERVICE_ROLE]
   @scala.inline
   def SETTINGS: SETTINGS = "SETTINGS".asInstanceOf[SETTINGS]
@@ -36588,6 +36670,8 @@ object awsDashSdkLibStrings {
   def SPEKE: SPEKE = "SPEKE".asInstanceOf[SPEKE]
   @scala.inline
   def SPF: SPF = "SPF".asInstanceOf[SPF]
+  @scala.inline
+  def SPLICE_INSERT: SPLICE_INSERT = "SPLICE_INSERT".asInstanceOf[SPLICE_INSERT]
   @scala.inline
   def SPOT: SPOT = "SPOT".asInstanceOf[SPOT]
   @scala.inline
@@ -37614,6 +37698,8 @@ object awsDashSdkLibStrings {
   def UNMANAGED: UNMANAGED = "UNMANAGED".asInstanceOf[UNMANAGED]
   @scala.inline
   def UNMETERED: UNMETERED = "UNMETERED".asInstanceOf[UNMETERED]
+  @scala.inline
+  def UNRESTRICTED: UNRESTRICTED = "UNRESTRICTED".asInstanceOf[UNRESTRICTED]
   @scala.inline
   def UNSPECIFIED: UNSPECIFIED = "UNSPECIFIED".asInstanceOf[UNSPECIFIED]
   @scala.inline

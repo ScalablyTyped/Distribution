@@ -32,6 +32,7 @@ object RollupWatchOptions {
     preserveModules: js.UndefOr[scala.Boolean] = js.undefined,
     preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
     shimMissingExports: js.UndefOr[scala.Boolean] = js.undefined,
+    strictDeprecations: js.UndefOr[scala.Boolean] = js.undefined,
     treeshake: scala.Boolean | TreeshakingOptions = null,
     watch: WatcherOptions = null
   ): RollupWatchOptions = {
@@ -56,6 +57,7 @@ object RollupWatchOptions {
     if (!js.isUndefined(preserveModules)) __obj.updateDynamic("preserveModules")(preserveModules)
     if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks)
     if (!js.isUndefined(shimMissingExports)) __obj.updateDynamic("shimMissingExports")(shimMissingExports)
+    if (!js.isUndefined(strictDeprecations)) __obj.updateDynamic("strictDeprecations")(strictDeprecations)
     if (treeshake != null) __obj.updateDynamic("treeshake")(treeshake.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(watch)
     __obj.asInstanceOf[RollupWatchOptions]

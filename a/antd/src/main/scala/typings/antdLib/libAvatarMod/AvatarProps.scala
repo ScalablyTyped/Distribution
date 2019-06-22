@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AvatarProps extends js.Object {
   var alt: js.UndefOr[java.lang.String] = js.undefined
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Type of the Icon to be used in avatar */
   var icon: js.UndefOr[java.lang.String] = js.undefined
@@ -29,7 +29,7 @@ object AvatarProps {
   @scala.inline
   def apply(
     alt: java.lang.String = null,
-    children: js.Any = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     icon: java.lang.String = null,
     onError: () => scala.Boolean = null,
@@ -42,7 +42,7 @@ object AvatarProps {
   ): AvatarProps = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))

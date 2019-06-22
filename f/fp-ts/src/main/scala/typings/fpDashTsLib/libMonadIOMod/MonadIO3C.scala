@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MonadIO3C[M /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L]
   extends fpDashTsLib.libMonadMod.Monad3C[M, U, L] {
-  def fromIO[A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libHKTMod.Type3[M, U, L, A]
+  def fromIO[A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libHKTMod.Kind3[M, U, L, A]
 }
 
 object MonadIO3C {
@@ -16,11 +16,11 @@ object MonadIO3C {
     URI: M,
     _L: L,
     _U: U,
-    ap: (fpDashTsLib.libHKTMod.Type3[M, U, L, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any]) => fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any],
-    chain: (fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any], js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any]]) => fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any],
-    fromIO: fpDashTsLib.libIOMod.IO[js.Any] => fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any],
-    map: (fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any],
-    of: js.Any => fpDashTsLib.libHKTMod.Type3[M, U, L, js.Any]
+    ap: (fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Function1[js.Any, js.Any]], fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any]) => fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any],
+    chain: (fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any], js.Function1[js.Any, fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any]]) => fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any],
+    fromIO: fpDashTsLib.libIOMod.IO[js.Any] => fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any],
+    of: js.Any => fpDashTsLib.libHKTMod.Kind3[M, U, L, js.Any]
   ): MonadIO3C[M, U, L] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
   

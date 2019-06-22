@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class OneofOptions ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addUninterpretedOption(): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): scala.Unit = js.native
+  def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): UninterpretedOption = js.native
   def clearUninterpretedOptionList(): scala.Unit = js.native
   def getUninterpretedOptionList(): js.Array[UninterpretedOption] = js.native
   def setUninterpretedOptionList(value: js.Array[UninterpretedOption]): scala.Unit = js.native

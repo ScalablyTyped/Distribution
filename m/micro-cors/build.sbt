@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "micro-cors"
-version := "0.1-dt-20180629Z-ca1433"
+version := "0.1-dt-20180629Z-c49132"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "micro" % "7.3-dt-20181017Z-4a0bc5",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "micro" % "7.3-dt-20181017Z-ab9363",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

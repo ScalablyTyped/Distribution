@@ -266,6 +266,9 @@ object ionicLibStrings {
   sealed trait unknown extends js.Object
   
   @js.native
+  sealed trait `update-check` extends js.Object
+  
+  @js.native
   sealed trait utility
     extends ionicLib.definitionsMod.InfoItemGroup
   
@@ -429,6 +432,8 @@ object ionicLibStrings {
   def testing: testing = "testing".asInstanceOf[testing]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def `update-check`: `update-check` = "update-check".asInstanceOf[`update-check`]
   @scala.inline
   def utility: utility = "utility".asInstanceOf[utility]
   @scala.inline

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait Choice2[F /* <: fpDashTsLib.es6HKTMod.URIS2 */]
   extends fpDashTsLib.es6ProfunctorMod.Profunctor2[F] {
-  def left[A, B, C](pab: fpDashTsLib.es6HKTMod.Type2[F, A, B]): fpDashTsLib.es6HKTMod.Type2[F, fpDashTsLib.es6EitherMod.Either[A, C], fpDashTsLib.es6EitherMod.Either[B, C]]
-  def right[A, B, C](pbc: fpDashTsLib.es6HKTMod.Type2[F, B, C]): fpDashTsLib.es6HKTMod.Type2[F, fpDashTsLib.es6EitherMod.Either[A, B], fpDashTsLib.es6EitherMod.Either[A, C]]
+  def left[A, B, C](pab: fpDashTsLib.es6HKTMod.Kind2[F, A, B]): fpDashTsLib.es6HKTMod.Kind2[F, fpDashTsLib.es6EitherMod.Either[A, C], fpDashTsLib.es6EitherMod.Either[B, C]]
+  def right[A, B, C](pbc: fpDashTsLib.es6HKTMod.Kind2[F, B, C]): fpDashTsLib.es6HKTMod.Kind2[F, fpDashTsLib.es6EitherMod.Either[A, B], fpDashTsLib.es6EitherMod.Either[A, C]]
 }
 
 object Choice2 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.es6HKTMod.URIS2 */](
     URI: F,
-    left: fpDashTsLib.es6HKTMod.Type2[F, js.Any, js.Any] => fpDashTsLib.es6HKTMod.Type2[
+    left: fpDashTsLib.es6HKTMod.Kind2[F, js.Any, js.Any] => fpDashTsLib.es6HKTMod.Kind2[
       F, 
       fpDashTsLib.es6EitherMod.Either[js.Any, js.Any], 
       fpDashTsLib.es6EitherMod.Either[js.Any, js.Any]
     ],
-    map: (fpDashTsLib.es6HKTMod.Type2[F, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.es6HKTMod.Type2[F, js.Any, js.Any],
-    promap: (fpDashTsLib.es6HKTMod.Type2[F, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.es6HKTMod.Type2[F, js.Any, js.Any],
-    right: fpDashTsLib.es6HKTMod.Type2[F, js.Any, js.Any] => fpDashTsLib.es6HKTMod.Type2[
+    map: (fpDashTsLib.es6HKTMod.Kind2[F, js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.es6HKTMod.Kind2[F, js.Any, js.Any],
+    promap: (fpDashTsLib.es6HKTMod.Kind2[F, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.es6HKTMod.Kind2[F, js.Any, js.Any],
+    right: fpDashTsLib.es6HKTMod.Kind2[F, js.Any, js.Any] => fpDashTsLib.es6HKTMod.Kind2[
       F, 
       fpDashTsLib.es6EitherMod.Either[js.Any, js.Any], 
       fpDashTsLib.es6EitherMod.Either[js.Any, js.Any]

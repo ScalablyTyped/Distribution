@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 package object libTreeDashSelectInterfaceMod {
   type TreeNode = TreeNodeNormal | TreeNodeSimpleMode
   type TreeNodeSimpleMode = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | reactLib.reactMod.ReactNode]
+  type TreeNodeValue = java.lang.String | scala.Double | (js.Array[scala.Double | java.lang.String])
 }

@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Timeout () extends Timer {
   /* CompleteClass */
-  override def ref(): scala.Unit = js.native
+  override def hasRef(): scala.Boolean = js.native
   /* CompleteClass */
-  override def refresh(): scala.Unit = js.native
+  override def ref(): this.type = js.native
   /* CompleteClass */
-  override def unref(): scala.Unit = js.native
+  override def refresh(): this.type = js.native
+  /* CompleteClass */
+  override def unref(): this.type = js.native
 }
 

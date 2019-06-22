@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TreeSelectProps
+trait TreeSelectProps[T /* <: TreeNodeValue */]
   extends antdLib.libSelectMod.AbstractSelectProps {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var defaultValue: js.UndefOr[java.lang.String | scala.Double | js.Array[_]] = js.undefined
+  var defaultValue: js.UndefOr[T] = js.undefined
   var filterTreeNode: js.UndefOr[
     js.Function2[/* inputValue */ java.lang.String, /* treeNode */ js.Any, scala.Boolean]
   ] = js.undefined
@@ -22,9 +22,7 @@ trait TreeSelectProps
   @JSName("notFoundContent")
   var notFoundContent_TreeSelectProps: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
-  var onChange: js.UndefOr[
-    js.Function3[/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any, scala.Unit]
-  ] = js.undefined
+  var onChange: js.UndefOr[js.Function3[/* value */ T, /* label */ js.Any, /* extra */ js.Any, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
@@ -46,12 +44,12 @@ trait TreeSelectProps
   var treeIcon: js.UndefOr[scala.Boolean] = js.undefined
   var treeNodeFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var treeNodeLabelProp: js.UndefOr[java.lang.String] = js.undefined
-  var value: js.UndefOr[java.lang.String | scala.Double | js.Array[_]] = js.undefined
+  var value: js.UndefOr[T] = js.undefined
 }
 
 object TreeSelectProps {
   @scala.inline
-  def apply(
+  def apply[T /* <: TreeNodeValue */](
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     autoClearSearchValue: js.UndefOr[scala.Boolean] = js.undefined,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -59,14 +57,18 @@ object TreeSelectProps {
     className: java.lang.String = null,
     defaultActiveFirstOption: js.UndefOr[scala.Boolean] = js.undefined,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
-    defaultValue: java.lang.String | scala.Double | js.Array[_] = null,
+    defaultValue: T = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownClassName: java.lang.String = null,
     dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
+    filterOption: scala.Boolean | (js.Function2[
+      /* inputValue */ java.lang.String, 
+      /* option */ reactLib.reactMod.ReactElement, 
+      scala.Boolean
+    ]) = null,
     filterTreeNode: (/* inputValue */ java.lang.String, /* treeNode */ js.Any) => scala.Boolean = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
@@ -78,7 +80,7 @@ object TreeSelectProps {
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: reactLib.reactMod.ReactNode = null,
     onBlur: reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] = null,
-    onChange: (/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any) => scala.Unit = null,
+    onChange: (/* value */ T, /* label */ js.Any, /* extra */ js.Any) => scala.Unit = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onFocus: reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] = null,
     onSearch: /* value */ js.Any => scala.Unit = null,
@@ -108,8 +110,8 @@ object TreeSelectProps {
     treeIcon: js.UndefOr[scala.Boolean] = js.undefined,
     treeNodeFilterProp: java.lang.String = null,
     treeNodeLabelProp: java.lang.String = null,
-    value: java.lang.String | scala.Double | js.Array[_] = null
-  ): TreeSelectProps = {
+    value: T = null
+  ): TreeSelectProps[T] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
     if (!js.isUndefined(autoClearSearchValue)) __obj.updateDynamic("autoClearSearchValue")(autoClearSearchValue)
@@ -168,7 +170,7 @@ object TreeSelectProps {
     if (treeNodeFilterProp != null) __obj.updateDynamic("treeNodeFilterProp")(treeNodeFilterProp)
     if (treeNodeLabelProp != null) __obj.updateDynamic("treeNodeLabelProp")(treeNodeLabelProp)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TreeSelectProps]
+    __obj.asInstanceOf[TreeSelectProps[T]]
   }
 }
 

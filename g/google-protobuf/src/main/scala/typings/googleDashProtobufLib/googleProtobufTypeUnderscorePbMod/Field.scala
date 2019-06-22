@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Field ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addOptions(): scala.Unit = js.native
-  def addOptions(value: Option): scala.Unit = js.native
-  def addOptions(value: Option, index: scala.Double): scala.Unit = js.native
+  def addOptions(): Option = js.native
+  def addOptions(value: Option): Option = js.native
+  def addOptions(value: Option, index: scala.Double): Option = js.native
   def clearOptionsList(): scala.Unit = js.native
   def getCardinality(): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.FieldNs.Cardinality = js.native
   def getDefaultValue(): java.lang.String = js.native

@@ -12,16 +12,21 @@ class Reader[E, A] protected () extends js.Object {
   val _A: A = js.native
   val _L: E = js.native
   val _URI: URI = js.native
+  /** @obsolete */
   def ap[B](fab: Reader[E, js.Function1[/* a */ A, B]]): Reader[E, B] = js.native
   /**
     * Flipped version of `ap`
+    * @obsolete
     */
   def ap_[B, C](`this`: Reader[E, js.Function1[/* b */ B, C]], fb: Reader[E, B]): Reader[E, C] = js.native
+  /** @obsolete */
   def chain[B](f: js.Function1[/* a */ A, Reader[E, B]]): Reader[E, B] = js.native
   /**
     * @since 1.6.1
+    * @obsolete
     */
   def local[E2](f: js.Function1[/* e */ E2, E]): Reader[E2, A] = js.native
+  /** @obsolete */
   def map[B](f: js.Function1[/* a */ A, B]): Reader[E, B] = js.native
   def run(e: E): A = js.native
 }

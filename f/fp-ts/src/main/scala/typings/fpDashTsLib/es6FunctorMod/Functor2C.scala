@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Functor2C[F /* <: fpDashTsLib.es6HKTMod.URIS2 */, L] extends js.Object {
   val URI: F
   val _L: L
-  def map[A, B](fa: fpDashTsLib.es6HKTMod.Type2[F, L, A], f: js.Function1[/* a */ A, B]): fpDashTsLib.es6HKTMod.Type2[F, L, B]
+  def map[A, B](fa: fpDashTsLib.es6HKTMod.Kind2[F, L, A], f: js.Function1[/* a */ A, B]): fpDashTsLib.es6HKTMod.Kind2[F, L, B]
 }
 
 object Functor2C {
@@ -16,7 +16,7 @@ object Functor2C {
   def apply[F /* <: fpDashTsLib.es6HKTMod.URIS2 */, L](
     URI: F,
     _L: L,
-    map: (fpDashTsLib.es6HKTMod.Type2[F, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.es6HKTMod.Type2[F, L, js.Any]
+    map: (fpDashTsLib.es6HKTMod.Kind2[F, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.es6HKTMod.Kind2[F, L, js.Any]
   ): Functor2C[F, L] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], map = js.Any.fromFunction2(map))
   

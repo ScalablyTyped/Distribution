@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Filter3C[F /* <: fpDashTsLib.es6HKTMod.URIS3 */, U, L] extends js.Object {
-  def apply[A](fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A], predicate: fpDashTsLib.es6FunctionMod.Predicate[A]): fpDashTsLib.es6HKTMod.Type3[F, U, L, A] = js.native
+  def apply[A](fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], predicate: fpDashTsLib.es6FunctionMod.Predicate[A]): fpDashTsLib.es6HKTMod.Kind3[F, U, L, A] = js.native
 }
 

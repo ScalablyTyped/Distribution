@@ -17,22 +17,22 @@ object SourceCodeInfoNs extends js.Object {
   @js.native
   class Location ()
     extends googleDashProtobufLib.googleDashProtobufMod.Message {
-    def addLeadingDetachedComments(value: java.lang.String): scala.Unit = js.native
-    def addLeadingDetachedComments(value: java.lang.String, index: scala.Double): scala.Unit = js.native
-    def addPath(value: scala.Double): scala.Unit = js.native
-    def addPath(value: scala.Double, index: scala.Double): scala.Unit = js.native
-    def addSpan(value: scala.Double): scala.Unit = js.native
-    def addSpan(value: scala.Double, index: scala.Double): scala.Unit = js.native
+    def addLeadingDetachedComments(value: java.lang.String): java.lang.String = js.native
+    def addLeadingDetachedComments(value: java.lang.String, index: scala.Double): java.lang.String = js.native
+    def addPath(value: scala.Double): scala.Double = js.native
+    def addPath(value: scala.Double, index: scala.Double): scala.Double = js.native
+    def addSpan(value: scala.Double): scala.Double = js.native
+    def addSpan(value: scala.Double, index: scala.Double): scala.Double = js.native
     def clearLeadingComments(): scala.Unit = js.native
     def clearLeadingDetachedCommentsList(): scala.Unit = js.native
     def clearPathList(): scala.Unit = js.native
     def clearSpanList(): scala.Unit = js.native
     def clearTrailingComments(): scala.Unit = js.native
-    def getLeadingComments(): java.lang.String = js.native
+    def getLeadingComments(): js.UndefOr[java.lang.String] = js.native
     def getLeadingDetachedCommentsList(): js.Array[java.lang.String] = js.native
     def getPathList(): js.Array[scala.Double] = js.native
     def getSpanList(): js.Array[scala.Double] = js.native
-    def getTrailingComments(): java.lang.String = js.native
+    def getTrailingComments(): js.UndefOr[java.lang.String] = js.native
     def hasLeadingComments(): scala.Boolean = js.native
     def hasTrailingComments(): scala.Boolean = js.native
     def setLeadingComments(value: java.lang.String): scala.Unit = js.native

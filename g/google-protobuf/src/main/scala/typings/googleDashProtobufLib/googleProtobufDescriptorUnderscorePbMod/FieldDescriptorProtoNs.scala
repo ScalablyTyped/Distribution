@@ -16,7 +16,9 @@ object FieldDescriptorProtoNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var number: js.UndefOr[scala.Double] = js.undefined
     var oneofIndex: js.UndefOr[scala.Double] = js.undefined
-    var options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldOptionsNs.AsObject
+    var options: js.UndefOr[
+        googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldOptionsNs.AsObject
+      ] = js.undefined
     var `type`: js.UndefOr[Type] = js.undefined
     var typeName: js.UndefOr[java.lang.String] = js.undefined
   }

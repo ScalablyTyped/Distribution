@@ -23,6 +23,10 @@ trait GetVpcEndpointServiceResult extends js.Object {
     */
   val id: java.lang.String
   /**
+    * Whether or not the service manages its VPC endpoints - `true` or `false`.
+    */
+  val managesVpcEndpoints: scala.Boolean
+  /**
     * The AWS account ID of the service owner or `amazon`.
     */
   val owner: java.lang.String
@@ -31,11 +35,19 @@ trait GetVpcEndpointServiceResult extends js.Object {
     */
   val privateDnsName: java.lang.String
   val service: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The ID of the endpoint service.
+    */
+  val serviceId: java.lang.String
   val serviceName: java.lang.String
   /**
     * The service type, `Gateway` or `Interface`.
     */
   val serviceType: java.lang.String
+  /**
+    * A mapping of tags assigned to the resource.
+    */
+  val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
     * Whether or not the service supports endpoint policies - `true` or `false`.
     */
@@ -49,14 +61,17 @@ object GetVpcEndpointServiceResult {
     availabilityZones: js.Array[java.lang.String],
     baseEndpointDnsNames: js.Array[java.lang.String],
     id: java.lang.String,
+    managesVpcEndpoints: scala.Boolean,
     owner: java.lang.String,
     privateDnsName: java.lang.String,
+    serviceId: java.lang.String,
     serviceName: java.lang.String,
     serviceType: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcEndpointPolicySupported: scala.Boolean,
     service: java.lang.String = null
   ): GetVpcEndpointServiceResult = {
-    val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired, availabilityZones = availabilityZones, baseEndpointDnsNames = baseEndpointDnsNames, id = id, owner = owner, privateDnsName = privateDnsName, serviceName = serviceName, serviceType = serviceType, vpcEndpointPolicySupported = vpcEndpointPolicySupported)
+    val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired, availabilityZones = availabilityZones, baseEndpointDnsNames = baseEndpointDnsNames, id = id, managesVpcEndpoints = managesVpcEndpoints, owner = owner, privateDnsName = privateDnsName, serviceId = serviceId, serviceName = serviceName, serviceType = serviceType, tags = tags, vpcEndpointPolicySupported = vpcEndpointPolicySupported)
     if (service != null) __obj.updateDynamic("service")(service)
     __obj.asInstanceOf[GetVpcEndpointServiceResult]
   }

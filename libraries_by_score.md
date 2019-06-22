@@ -885,6 +885,7 @@
 | 0.7774550667146658 | [ioredis](./i/ioredis) | A robust, performance-focused and full-featured Re
 | 0.7774422775614589 | [npm-which](./n/npm-which) | Locate a program or locally installed node module'
 | 0.7774342431981676 | [user-home](./u/user-home) | Get the path to the user home directory
+| 0.7774136692683074 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript
 | 0.7773275010707823 | [lodash_dot_mapkeys](./l/lodash_dot_mapkeys) | The lodash method _.mapKeys exported as a module.
 | 0.7771771326009653 | [assets-webpack-plugin](./a/assets-webpack-plugin) | Emits a json file with assets paths
 | 0.7771613791039632 | [chart_dot_js](./c/chart_dot_js) | Simple HTML5 charts using the canvas element.
@@ -1720,6 +1721,7 @@
 | 0.729434558908407 | [rosie](./r/rosie) | factory for building JavaScript objects, mostly us
 | 0.7294018066937102 | [expect-puppeteer](./e/expect-puppeteer) | Assertion toolkit for Puppeteer.
 | 0.7293562858814312 | [papaparse](./p/papaparse) | Fast and powerful CSV parser for the browser that 
+| 0.7292150377060391 | [git-revision-webpack-plug](./g/git-revision-webpack-plugin) | Simple webpack plugin that generates VERSION and C
 | 0.7291761257086788 | [is-relative-url](./i/is-relative-url) | Check if an URL is relative
 | 0.7290965353800929 | [stream-array](./s/stream-array) | Pipe an Array through Node.js streams
 | 0.7290889172864595 | [redux-actions](./r/redux-actions) | Flux Standard Action utlities for Redux
@@ -1962,6 +1964,7 @@
 | 0.7170368024512558 | [coffeeify](./c/coffeeify) | browserify plugin for coffeescript with support fo
 | 0.7169458167065229 | [grunt](./g/grunt) | The JavaScript Task Runner
 | 0.7168341663641041 | [has-yarn](./h/has-yarn) | Check if a project is using Yarn
+| 0.7167819274182337 | [promise_dot_allsettled](./p/promise_dot_allsettled) | ES Proposal spec-compliant shim for Promise.allSet
 | 0.7166945175457109 | [couchbase](./c/couchbase) | The official Couchbase Node.js Client Library.
 | 0.7166657836538792 | [react-loader](./r/react-loader) | React component that displays a spinner via spin.j
 | 0.7165894382154243 | [vinyl-buffer](./v/vinyl-buffer) | Convert streaming vinyl files to use buffers
@@ -2055,6 +2058,7 @@
 | 0.7116174903614942 | [git-repo-name](./g/git-repo-name) | Get the repository name from the git remote origin
 | 0.7116001994942978 | [chai-string](./c/chai-string) | strings comparison matchers for chai
 | 0.7115298291634274 | [ltx](./l/ltx) | -
+| 0.7115135267714379 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.711502893569148 | [lazypipe](./l/lazypipe) | Use to create an immutable, lazily initialized pip
 | 0.7114984637270583 | [react-splitter-layout](./r/react-splitter-layout) | A simple split layout for React and modern browser
 | 0.7114843278229892 | [victory](./v/victory) | Data viz for React
@@ -2299,6 +2303,7 @@
 | 0.6989046080411659 | [resize-img](./r/resize-img) | Resize images in memory
 | 0.6988994821870853 | [relaxed-json](./r/relaxed-json) | Relaxed JSON is strict superset JSON, relaxing str
 | 0.6988728489595498 | [react-sketchapp](./r/react-sketchapp) | A React renderer for Sketch.app
+| 0.6988698101721122 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack
 | 0.698861175264347 | [image-type](./i/image-type) | Detect the image type of a Buffer/Uint8Array
 | 0.6987593145009425 | [eases](./e/eases) | grab bag of easing equations
 | 0.6986824899287469 | [tar-stream](./t/tar-stream) | tar-stream is a streaming tar parser and generator
@@ -2633,6 +2638,7 @@
 | 0.6845303141738672 | [active-win](./a/active-win) | Get metadata about the active window (title, id, b
 | 0.6845224085674495 | [apollo-env](./a/apollo-env) | -
 | 0.6845015089936664 | [express-formidable](./e/express-formidable) | An Express middleware of Formidable that just work
+| 0.6844482018832027 | [solid-auth-client](./s/solid-auth-client) | Opaquely authenticates solid clients
 | 0.6844276884411039 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt
 | 0.6844199375302997 | [inversify-logger-middlewa](./i/inversify-logger-middleware) | A basic logger middleware for InversifyJS
 | 0.6843763102819169 | [cordova-plugin-device-mot](./c/cordova-plugin-device-motion) | -
@@ -5971,6 +5977,7 @@
 | 0.30285042782372956 | [lodash_dot_sortedindex](./l/lodash_dot_sortedindex) | The lodash method _.sortedIndex exported as a modu
 | 0.30270723473256456 | [semantic-ui-nag](./s/semantic-ui-nag) | Single component release of nag
 | 0.3026642347301808 | [react-mce](./r/react-mce) | React TinyMCE component
+| 0.30253581460263795 | [styled-system__css](./s/styled-system__css) | Styled System for the css prop
 | 0.3021209448624608 | [node-slack](./n/node-slack) | Send and receive Slack Webhooks easily
 | 0.3019104167842412 | [semantic-ui-accordion](./s/semantic-ui-accordion) | Single component release of accordion
 | 0.3018517735412985 | [twilio-chat](./t/twilio-chat) | Twilio Chat service client library
@@ -6207,6 +6214,7 @@
 | 0.24750244204977348 | [nivo-slider](./n/nivo-slider) | The Most Awesome jQuery Image Slider.
 | 0.2472507075579189 | [leaflet_dot_heat](./l/leaflet_dot_heat) | A tiny and fast Leaflet heatmap plugin.
 | 0.24723257920502262 | [mina](./m/mina) | Lightweight deployer for node development, inspire
+| 0.24697415443099524 | [targz](./t/targz) | TarGz for NodeJS
 | 0.24672204170739448 | [react-native-dotenv](./r/react-native-dotenv) | A Babel preset let you import application configs 
 | 0.24626426468762488 | [typed-github-api](./t/typed-github-api) | Client for GitHub API written in Typescript. Inclu
 | 0.24624195998988602 | [r-script](./r/r-script) | A simple little module for passing data from NodeJ
@@ -6266,6 +6274,7 @@
 | 0.2317348224467418 | [assert-equal-jsx](./a/assert-equal-jsx) | assertEqualJSX
 | 0.23156202835314407 | [satnav](./s/satnav) | A micro front-end router
 | 0.2311900942426274 | [gulp-minify-css](./g/gulp-minify-css) | Minify css with clean-css.
+| 0.23047347170836374 | [places](./p/places) | About places.
 | 0.2301234991636546 | [c3](./c/c3) | D3-based reusable chart library
 | 0.2301066213502082 | [jwt-express](./j/jwt-express) | Climb aboard the JWT Express and use JWTs in your 
 | 0.22986116503628512 | [uploadcare](./u/uploadcare) | Library for uploadcare.com.

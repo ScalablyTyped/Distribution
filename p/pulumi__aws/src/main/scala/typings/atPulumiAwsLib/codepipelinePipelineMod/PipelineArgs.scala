@@ -20,6 +20,10 @@ trait PipelineArgs extends js.Object {
     */
   val roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   val stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object PipelineArgs {
@@ -28,10 +32,12 @@ object PipelineArgs {
     artifactStore: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionKeyLocation],
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]],
-    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): PipelineArgs = {
     val __obj = js.Dynamic.literal(artifactStore = artifactStore.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stages = stages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineArgs]
   }
 }

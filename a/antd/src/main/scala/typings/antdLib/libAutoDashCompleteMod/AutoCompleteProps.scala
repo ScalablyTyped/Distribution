@@ -44,7 +44,11 @@ object AutoCompleteProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
+    filterOption: scala.Boolean | (js.Function2[
+      /* inputValue */ java.lang.String, 
+      /* option */ reactLib.reactMod.ReactElement, 
+      scala.Boolean
+    ]) = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
@@ -53,7 +57,7 @@ object AutoCompleteProps {
     onChange: /* value */ antdLib.libSelectMod.SelectValue => scala.Unit = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onFocus: () => scala.Unit = null,
-    onSearch: /* value */ java.lang.String => _ = null,
+    onSearch: /* value */ java.lang.String => scala.Unit = null,
     onSelect: (/* value */ antdLib.libSelectMod.SelectValue, /* option */ js.Object) => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     optionLabelProp: java.lang.String = null,

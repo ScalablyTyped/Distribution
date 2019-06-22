@@ -11,11 +11,15 @@ trait UploadProps extends js.Object {
     java.lang.String | (js.Function1[/* file */ RcFile, java.lang.String | js.Thenable[java.lang.String]])
   ] = js.undefined
   var beforeUpload: js.UndefOr[
-    js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], scala.Boolean | js.Thenable[_]]
+    js.Function2[
+      /* file */ RcFile, 
+      /* FileList */ js.Array[RcFile], 
+      scala.Boolean | js.Thenable[scala.Unit]
+    ]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var customRequest: js.UndefOr[js.Function1[/* option */ js.Any, scala.Unit]] = js.undefined
-  var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile, _])] = js.undefined
+  var customRequest: js.UndefOr[js.Function1[/* option */ js.Object, scala.Unit]] = js.undefined
+  var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile, js.Object])] = js.undefined
   var defaultFileList: js.UndefOr[js.Array[UploadFile]] = js.undefined
   var directory: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -49,10 +53,10 @@ object UploadProps {
   def apply(
     accept: java.lang.String = null,
     action: java.lang.String | (js.Function1[/* file */ RcFile, java.lang.String | js.Thenable[java.lang.String]]) = null,
-    beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => scala.Boolean | js.Thenable[_] = null,
+    beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => scala.Boolean | js.Thenable[scala.Unit] = null,
     className: java.lang.String = null,
-    customRequest: /* option */ js.Any => scala.Unit = null,
-    data: js.Object | (js.Function1[/* file */ UploadFile, _]) = null,
+    customRequest: /* option */ js.Object => scala.Unit = null,
+    data: js.Object | (js.Function1[/* file */ UploadFile, js.Object]) = null,
     defaultFileList: js.Array[UploadFile] = null,
     directory: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,

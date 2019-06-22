@@ -1,7 +1,7 @@
 
 # Scala.js typings for fp-ts
 
-Typings are for version 1.18.2
+Typings are for version 1.19.0
 
 ## Library description:
 Functional programming in TypeScript
@@ -430,9 +430,6 @@ These comments are from the typescript definitions and might be useful:
  * - https://bartoszmilewski.com/2017/02/06/applicative-functors/
  */
 /**
- * @file Data structure which represents non-empty arrays
- */
-/**
  * @file If you have worked with JavaScript at all in the past, it is very likely that you have come across a `TypeError` at
  * some time (other languages will throw similarly named errors in such a case). Usually this happens because some
  * method returns `null` or `undefined` when you were not expecting it and thus not dealing with that possibility in
@@ -590,6 +587,10 @@ These comments are from the typescript definitions and might be useful:
  * 3. Transitivity: if `S.equals(a, b) === true` and `S.equals(b, c) === true`, then `S.equals(a, c) === true`
  *
  * See [Getting started with fp-ts: Setoid](https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3)
+ */
+/**
+ * @since 1.0.0
+ * @deprecated
  */
 /**
  * The `Show` type class represents those types which can be converted into

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def getTraversableComposition(
     F: Traversable2v1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     G: Traversable2v1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.fpDashTsLibStrings.Identity] = js.native
   def getTraversableComposition[F, G](F: Traversable2v[F], G: Traversable2v[G]): Traversable2vComposition[F, G] = js.native
@@ -22,6 +22,11 @@ object ^ extends js.Object {
     F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Array],
     G: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Array]
   ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.fpDashTsLibStrings.Array] = js.native
+  @JSName("getTraversableComposition")
+  def getTraversableComposition_Eq(
+    F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Eq],
+    G: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.fpDashTsLibStrings.Eq] = js.native
   @JSName("getTraversableComposition")
   def getTraversableComposition_FreeGroup(
     F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.FreeGroup],
@@ -59,10 +64,20 @@ object ^ extends js.Object {
     G: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.fpDashTsLibStrings.Option] = js.native
   @JSName("getTraversableComposition")
+  def getTraversableComposition_Ord(
+    F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Ord],
+    G: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.fpDashTsLibStrings.Ord] = js.native
+  @JSName("getTraversableComposition")
   def getTraversableComposition_Pair(
     F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Pair],
     G: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Pair]
   ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.fpDashTsLibStrings.Pair] = js.native
+  @JSName("getTraversableComposition")
+  def getTraversableComposition_Record(
+    F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Record],
+    G: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): Traversable2vComposition11[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.fpDashTsLibStrings.Record] = js.native
   @JSName("getTraversableComposition")
   def getTraversableComposition_StrMap(
     F: Traversable2v1[fpDashTsLib.fpDashTsLibStrings.StrMap],

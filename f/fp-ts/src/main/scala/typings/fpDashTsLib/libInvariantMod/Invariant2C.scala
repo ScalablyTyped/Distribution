@@ -12,7 +12,7 @@ trait Invariant2C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L] extends js.Object {
     fa: fpDashTsLib.libHKTMod.HKT2[F, L, A],
     f: js.Function1[/* a */ A, B],
     g: js.Function1[/* b */ B, A]
-  ): fpDashTsLib.libHKTMod.Type2[F, L, B]
+  ): fpDashTsLib.libHKTMod.Kind2[F, L, B]
 }
 
 object Invariant2C {
@@ -20,7 +20,7 @@ object Invariant2C {
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
     URI: F,
     _L: L,
-    imap: (fpDashTsLib.libHKTMod.HKT2[F, L, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
+    imap: (fpDashTsLib.libHKTMod.HKT2[F, L, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Kind2[F, L, js.Any]
   ): Invariant2C[F, L] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], imap = js.Any.fromFunction3(imap))
   

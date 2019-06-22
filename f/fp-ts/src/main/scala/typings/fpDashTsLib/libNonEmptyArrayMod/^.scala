@@ -11,9 +11,10 @@ object ^ extends js.Object {
   val URI: fpDashTsLib.fpDashTsLibStrings.NonEmptyArray = js.native
   val nonEmptyArray: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[URI, scala.Double]) with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[URI, scala.Double]) = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
+  def getEq[A](S: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libEqMod.Eq[NonEmptyArray[A]] = js.native
   def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[NonEmptyArray[A]] = js.native
-  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[NonEmptyArray[A]] = js.native
-  def group[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[
+  def getSetoid[A](S: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libEqMod.Eq[NonEmptyArray[A]] = js.native
+  def group[A](S: fpDashTsLib.libEqMod.Eq[A]): js.Function1[
     /* as */ fpDashTsLib.libArrayMod.Global.Array[A], 
     fpDashTsLib.libArrayMod.Global.Array[NonEmptyArray[A]]
   ] = js.native

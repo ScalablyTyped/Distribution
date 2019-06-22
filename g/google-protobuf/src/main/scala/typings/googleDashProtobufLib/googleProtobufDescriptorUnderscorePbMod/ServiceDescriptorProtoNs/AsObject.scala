@@ -10,7 +10,9 @@ trait AsObject extends js.Object {
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.MethodDescriptorProtoNs.AsObject
   ]
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ServiceOptionsNs.AsObject
+  var options: js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ServiceOptionsNs.AsObject
+  ] = js.undefined
 }
 
 object AsObject {
@@ -19,11 +21,12 @@ object AsObject {
     methodList: js.Array[
       googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.MethodDescriptorProtoNs.AsObject
     ],
-    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ServiceOptionsNs.AsObject,
-    name: java.lang.String = null
+    name: java.lang.String = null,
+    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ServiceOptionsNs.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(methodList = methodList, options = options)
+    val __obj = js.Dynamic.literal(methodList = methodList)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AsObject]
   }
 }

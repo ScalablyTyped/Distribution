@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Api ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addMethods(): scala.Unit = js.native
-  def addMethods(value: Method): scala.Unit = js.native
-  def addMethods(value: Method, index: scala.Double): scala.Unit = js.native
-  def addMixins(): scala.Unit = js.native
-  def addMixins(value: Mixin): scala.Unit = js.native
-  def addMixins(value: Mixin, index: scala.Double): scala.Unit = js.native
-  def addOptions(): scala.Unit = js.native
-  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option): scala.Unit = js.native
-  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option, index: scala.Double): scala.Unit = js.native
+  def addMethods(): Method = js.native
+  def addMethods(value: Method): Method = js.native
+  def addMethods(value: Method, index: scala.Double): Method = js.native
+  def addMixins(): Mixin = js.native
+  def addMixins(value: Mixin): Mixin = js.native
+  def addMixins(value: Mixin, index: scala.Double): Mixin = js.native
+  def addOptions(): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option = js.native
+  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option = js.native
+  def addOptions(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option, index: scala.Double): googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Option = js.native
   def clearMethodsList(): scala.Unit = js.native
   def clearMixinsList(): scala.Unit = js.native
   def clearOptionsList(): scala.Unit = js.native

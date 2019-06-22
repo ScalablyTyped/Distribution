@@ -86,6 +86,60 @@ object ^ extends js.Object {
   def curry[A, B, C, D, E, F, G, H, I, J](f: Function9[A, B, C, D, E, F, G, H, I, J]): Curried9[A, B, C, D, E, F, G, H, I, J] = js.native
   def decrement(n: scala.Double): scala.Double = js.native
   def flip[A, B, C](f: Curried2[A, B, C]): Curried2[B, A, C] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B](ab: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C](ab: js.Function1[/* a */ A, B], bc: js.Function1[/* b */ B, C]): js.Function1[/* a */ A, C] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D](ab: js.Function1[/* a */ A, B], bc: js.Function1[/* b */ B, C], cd: js.Function1[/* c */ C, D]): js.Function1[/* a */ A, D] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D, E](
+    ab: js.Function1[/* a */ A, B],
+    bc: js.Function1[/* b */ B, C],
+    cd: js.Function1[/* c */ C, D],
+    de: js.Function1[/* d */ D, E]
+  ): js.Function1[/* a */ A, E] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D, E, F](
+    ab: js.Function1[/* a */ A, B],
+    bc: js.Function1[/* b */ B, C],
+    cd: js.Function1[/* c */ C, D],
+    de: js.Function1[/* d */ D, E],
+    ef: js.Function1[/* e */ E, F]
+  ): js.Function1[/* a */ A, F] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D, E, F, G](
+    ab: js.Function1[/* a */ A, B],
+    bc: js.Function1[/* b */ B, C],
+    cd: js.Function1[/* c */ C, D],
+    de: js.Function1[/* d */ D, E],
+    ef: js.Function1[/* e */ E, F],
+    fg: js.Function1[/* f */ F, G]
+  ): js.Function1[/* a */ A, G] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D, E, F, G, H](
+    ab: js.Function1[/* a */ A, B],
+    bc: js.Function1[/* b */ B, C],
+    cd: js.Function1[/* c */ C, D],
+    de: js.Function1[/* d */ D, E],
+    ef: js.Function1[/* e */ E, F],
+    fg: js.Function1[/* f */ F, G],
+    gh: js.Function1[/* g */ G, H]
+  ): js.Function1[/* a */ A, H] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D, E, F, G, H, I](
+    ab: js.Function1[/* a */ A, B],
+    bc: js.Function1[/* b */ B, C],
+    cd: js.Function1[/* c */ C, D],
+    de: js.Function1[/* d */ D, E],
+    ef: js.Function1[/* e */ E, F],
+    fg: js.Function1[/* f */ F, G],
+    gh: js.Function1[/* g */ G, H],
+    hi: js.Function1[/* h */ H, I]
+  ): js.Function1[/* a */ A, I] = js.native
+  def flow[A /* <: fpDashTsLib.libArrayMod.Global.Array[_] */, B, C, D, E, F, G, H, I, J](
+    ab: js.Function1[/* a */ A, B],
+    bc: js.Function1[/* b */ B, C],
+    cd: js.Function1[/* c */ C, D],
+    de: js.Function1[/* d */ D, E],
+    ef: js.Function1[/* e */ E, F],
+    fg: js.Function1[/* f */ F, G],
+    gh: js.Function1[/* g */ G, H],
+    hi: js.Function1[/* h */ H, I],
+    ij: js.Function1[/* i */ I, J]
+  ): js.Function1[/* a */ A, J] = js.native
   def identity[A](a: A): A = js.native
   def increment(n: scala.Double): scala.Double = js.native
   def not[A](predicate: Predicate[A]): Predicate[A] = js.native

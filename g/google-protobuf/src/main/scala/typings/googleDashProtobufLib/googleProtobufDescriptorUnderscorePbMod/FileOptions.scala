@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileOptions ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addUninterpretedOption(): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): scala.Unit = js.native
+  def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): UninterpretedOption = js.native
   def clearCcEnableArenas(): scala.Unit = js.native
   def clearCcGenericServices(): scala.Unit = js.native
   def clearCsharpNamespace(): scala.Unit = js.native
@@ -25,24 +25,36 @@ class FileOptions ()
   def clearJavaStringCheckUtf8(): scala.Unit = js.native
   def clearObjcClassPrefix(): scala.Unit = js.native
   def clearOptimizeFor(): scala.Unit = js.native
+  def clearPhpClassPrefix(): scala.Unit = js.native
+  def clearPhpGenericServices(): scala.Unit = js.native
+  def clearPhpMetadataNamespace(): scala.Unit = js.native
+  def clearPhpNamespace(): scala.Unit = js.native
   def clearPyGenericServices(): scala.Unit = js.native
+  def clearRubyPackage(): scala.Unit = js.native
   def clearSwiftPrefix(): scala.Unit = js.native
   def clearUninterpretedOptionList(): scala.Unit = js.native
-  def getCcEnableArenas(): scala.Boolean = js.native
-  def getCcGenericServices(): scala.Boolean = js.native
-  def getCsharpNamespace(): java.lang.String = js.native
-  def getDeprecated(): scala.Boolean = js.native
-  def getGoPackage(): java.lang.String = js.native
-  def getJavaGenerateEqualsAndHash(): scala.Boolean = js.native
-  def getJavaGenericServices(): scala.Boolean = js.native
-  def getJavaMultipleFiles(): scala.Boolean = js.native
-  def getJavaOuterClassname(): java.lang.String = js.native
-  def getJavaPackage(): java.lang.String = js.native
-  def getJavaStringCheckUtf8(): scala.Boolean = js.native
-  def getObjcClassPrefix(): java.lang.String = js.native
-  def getOptimizeFor(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileOptionsNs.OptimizeMode = js.native
-  def getPyGenericServices(): scala.Boolean = js.native
-  def getSwiftPrefix(): java.lang.String = js.native
+  def getCcEnableArenas(): js.UndefOr[scala.Boolean] = js.native
+  def getCcGenericServices(): js.UndefOr[scala.Boolean] = js.native
+  def getCsharpNamespace(): js.UndefOr[java.lang.String] = js.native
+  def getDeprecated(): js.UndefOr[scala.Boolean] = js.native
+  def getGoPackage(): js.UndefOr[java.lang.String] = js.native
+  def getJavaGenerateEqualsAndHash(): js.UndefOr[scala.Boolean] = js.native
+  def getJavaGenericServices(): js.UndefOr[scala.Boolean] = js.native
+  def getJavaMultipleFiles(): js.UndefOr[scala.Boolean] = js.native
+  def getJavaOuterClassname(): js.UndefOr[java.lang.String] = js.native
+  def getJavaPackage(): js.UndefOr[java.lang.String] = js.native
+  def getJavaStringCheckUtf8(): js.UndefOr[scala.Boolean] = js.native
+  def getObjcClassPrefix(): js.UndefOr[java.lang.String] = js.native
+  def getOptimizeFor(): js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileOptionsNs.OptimizeMode
+  ] = js.native
+  def getPhpClassPrefix(): js.UndefOr[java.lang.String] = js.native
+  def getPhpGenericServices(): js.UndefOr[scala.Boolean] = js.native
+  def getPhpMetadataNamespace(): js.UndefOr[java.lang.String] = js.native
+  def getPhpNamespace(): js.UndefOr[java.lang.String] = js.native
+  def getPyGenericServices(): js.UndefOr[scala.Boolean] = js.native
+  def getRubyPackage(): js.UndefOr[java.lang.String] = js.native
+  def getSwiftPrefix(): js.UndefOr[java.lang.String] = js.native
   def getUninterpretedOptionList(): js.Array[UninterpretedOption] = js.native
   def hasCcEnableArenas(): scala.Boolean = js.native
   def hasCcGenericServices(): scala.Boolean = js.native
@@ -57,7 +69,12 @@ class FileOptions ()
   def hasJavaStringCheckUtf8(): scala.Boolean = js.native
   def hasObjcClassPrefix(): scala.Boolean = js.native
   def hasOptimizeFor(): scala.Boolean = js.native
+  def hasPhpClassPrefix(): scala.Boolean = js.native
+  def hasPhpGenericServices(): scala.Boolean = js.native
+  def hasPhpMetadataNamespace(): scala.Boolean = js.native
+  def hasPhpNamespace(): scala.Boolean = js.native
   def hasPyGenericServices(): scala.Boolean = js.native
+  def hasRubyPackage(): scala.Boolean = js.native
   def hasSwiftPrefix(): scala.Boolean = js.native
   def setCcEnableArenas(value: scala.Boolean): scala.Unit = js.native
   def setCcGenericServices(value: scala.Boolean): scala.Unit = js.native
@@ -72,7 +89,12 @@ class FileOptions ()
   def setJavaStringCheckUtf8(value: scala.Boolean): scala.Unit = js.native
   def setObjcClassPrefix(value: java.lang.String): scala.Unit = js.native
   def setOptimizeFor(value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileOptionsNs.OptimizeMode): scala.Unit = js.native
+  def setPhpClassPrefix(value: java.lang.String): scala.Unit = js.native
+  def setPhpGenericServices(value: scala.Boolean): scala.Unit = js.native
+  def setPhpMetadataNamespace(value: java.lang.String): scala.Unit = js.native
+  def setPhpNamespace(value: java.lang.String): scala.Unit = js.native
   def setPyGenericServices(value: scala.Boolean): scala.Unit = js.native
+  def setRubyPackage(value: java.lang.String): scala.Unit = js.native
   def setSwiftPrefix(value: java.lang.String): scala.Unit = js.native
   def setUninterpretedOptionList(value: js.Array[UninterpretedOption]): scala.Unit = js.native
 }

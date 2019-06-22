@@ -16,7 +16,12 @@ object identityNs extends js.Object {
   
   val URI: fpDashTsLib.fpDashTsLibStrings.Identity = js.native
   val identity: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libIdentityMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libIdentityMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libIdentityMod.URI] with fpDashTsLib.libAltMod.Alt1[fpDashTsLib.libIdentityMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libIdentityMod.URI] with fpDashTsLib.libChainRecMod.ChainRec1[fpDashTsLib.libIdentityMod.URI] = js.native
-  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libIdentityMod.Identity[A]] = js.native
+  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(ap, apFirst, apSecond, chain, chainFirst, duplicate, extend, flatten, foldMap, map, reduce, reduceRight) */ def alt[A](that: js.Function0[fpDashTsLib.libIdentityMod.Identity[A]]): js.Function1[
+    /* fa */ fpDashTsLib.libIdentityMod.Identity[A], 
+    fpDashTsLib.libIdentityMod.Identity[A]
+  ] = js.native
+  def getEq[A](E: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libEqMod.Eq[fpDashTsLib.libIdentityMod.Identity[A]] = js.native
+  def getSetoid[A](E: fpDashTsLib.libEqMod.Eq[A]): fpDashTsLib.libEqMod.Eq[fpDashTsLib.libIdentityMod.Identity[A]] = js.native
   def getShow[A](S: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libIdentityMod.Identity[A]] = js.native
 }
 

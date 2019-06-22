@@ -22,7 +22,12 @@ object FileOptionsNs extends js.Object {
     var javaStringCheckUtf8: js.UndefOr[scala.Boolean] = js.undefined
     var objcClassPrefix: js.UndefOr[java.lang.String] = js.undefined
     var optimizeFor: js.UndefOr[OptimizeMode] = js.undefined
+    var phpClassPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var phpGenericServices: js.UndefOr[scala.Boolean] = js.undefined
+    var phpMetadataNamespace: js.UndefOr[java.lang.String] = js.undefined
+    var phpNamespace: js.UndefOr[java.lang.String] = js.undefined
     var pyGenericServices: js.UndefOr[scala.Boolean] = js.undefined
+    var rubyPackage: js.UndefOr[java.lang.String] = js.undefined
     var swiftPrefix: js.UndefOr[java.lang.String] = js.undefined
     var uninterpretedOptionList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.AsObject

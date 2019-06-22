@@ -29,6 +29,10 @@ trait VpcEndpointServiceState extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
+    * Whether or not the service manages its VPC endpoints - `true` or `false`.
+    */
+  val managesVpcEndpoints: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  /**
     * The ARNs of one or more Network Load Balancers for the endpoint service.
     */
   val networkLoadBalancerArns: js.UndefOr[
@@ -50,6 +54,10 @@ trait VpcEndpointServiceState extends js.Object {
     * The state of the VPC endpoint service.
     */
   val state: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object VpcEndpointServiceState {
@@ -59,22 +67,26 @@ object VpcEndpointServiceState {
     allowedPrincipals: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     baseEndpointDnsNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    managesVpcEndpoints: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     networkLoadBalancerArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     privateDnsName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     serviceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): VpcEndpointServiceState = {
     val __obj = js.Dynamic.literal()
     if (acceptanceRequired != null) __obj.updateDynamic("acceptanceRequired")(acceptanceRequired.asInstanceOf[js.Any])
     if (allowedPrincipals != null) __obj.updateDynamic("allowedPrincipals")(allowedPrincipals.asInstanceOf[js.Any])
     if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
     if (baseEndpointDnsNames != null) __obj.updateDynamic("baseEndpointDnsNames")(baseEndpointDnsNames.asInstanceOf[js.Any])
+    if (managesVpcEndpoints != null) __obj.updateDynamic("managesVpcEndpoints")(managesVpcEndpoints.asInstanceOf[js.Any])
     if (networkLoadBalancerArns != null) __obj.updateDynamic("networkLoadBalancerArns")(networkLoadBalancerArns.asInstanceOf[js.Any])
     if (privateDnsName != null) __obj.updateDynamic("privateDnsName")(privateDnsName.asInstanceOf[js.Any])
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointServiceState]
   }
 }

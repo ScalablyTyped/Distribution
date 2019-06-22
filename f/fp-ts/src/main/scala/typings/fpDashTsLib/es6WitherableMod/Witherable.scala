@@ -43,9 +43,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Array, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -58,9 +58,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -74,9 +74,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -90,9 +90,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -106,11 +106,26 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       FL, 
+      fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
+    ]
+  ] = js.native
+  /**
+    * Partition a structure with effects
+    */
+  @JSName("wilt")
+  def wilt_Eq(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]): js.Function2[
+    /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.es6EitherMod.Either[_, _]]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Eq, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
   ] = js.native
@@ -122,9 +137,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -138,9 +153,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -154,9 +169,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.FreeGroup, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -169,9 +184,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.IO, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -184,9 +199,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -200,9 +215,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -216,9 +231,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Identity, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -231,9 +246,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.IxIO, 
       _, 
       _, 
@@ -248,9 +263,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.IxIO, 
       FU, 
       FL, 
@@ -265,9 +280,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -281,9 +296,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -297,12 +312,12 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[
+      fpDashTsLib.es6HKTMod.Kind[
         fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, 
         fpDashTsLib.es6EitherMod.Either[_, _]
       ]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -315,12 +330,12 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[
+      fpDashTsLib.es6HKTMod.Kind[
         fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, 
         fpDashTsLib.es6EitherMod.Either[_, _]
       ]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -333,10 +348,25 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Option, 
+      fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
+    ]
+  ] = js.native
+  /**
+    * Partition a structure with effects
+    */
+  @JSName("wilt")
+  def wilt_Ord(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]): js.Function2[
+    /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.es6EitherMod.Either[_, _]]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Ord, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
   ] = js.native
@@ -348,9 +378,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Pair, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -363,9 +393,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -379,9 +409,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -395,14 +425,14 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[
+      fpDashTsLib.es6HKTMod.Kind3[
         fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
         _, 
         _, 
         fpDashTsLib.es6EitherMod.Either[_, _]
       ]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       _, 
       _, 
@@ -419,17 +449,32 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[
+      fpDashTsLib.es6HKTMod.Kind3[
         fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
         FU, 
         FL, 
         fpDashTsLib.es6EitherMod.Either[_, _]
       ]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       FU, 
       FL, 
+      fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
+    ]
+  ] = js.native
+  /**
+    * Partition a structure with effects
+    */
+  @JSName("wilt")
+  def wilt_Record(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]): js.Function2[
+    /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.es6EitherMod.Either[_, _]]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Record, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
   ] = js.native
@@ -441,9 +486,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -457,9 +502,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -473,9 +518,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -489,9 +534,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -505,9 +550,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.StrMap, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -520,9 +565,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -535,9 +580,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -551,9 +596,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -567,9 +612,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -583,9 +628,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -599,9 +644,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -615,9 +660,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -631,9 +676,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Tree, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -646,9 +691,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -662,9 +707,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -678,9 +723,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -694,9 +739,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -710,9 +755,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -726,9 +771,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       FL, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
@@ -742,9 +787,9 @@ trait Witherable[T]
     /* wa */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6EitherMod.Either[_, _]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6EitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Zipper, 
       fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.HKT[T, _], fpDashTsLib.es6HKTMod.HKT[T, _]]
     ]
@@ -765,9 +810,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -777,9 +822,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -789,9 +834,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -801,9 +846,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -813,9 +858,21 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Filter a structure  with effects
+    */
+  @JSName("wither")
+  def wither_Eq(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.es6OptionMod.Option[_]]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -825,9 +882,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -837,9 +894,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -849,9 +906,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -861,9 +918,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -873,9 +930,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -885,9 +942,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -897,9 +954,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -909,9 +966,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -921,9 +978,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, FU, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -933,9 +990,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -945,9 +1002,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -957,9 +1014,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -969,9 +1026,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -981,9 +1038,21 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6HKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Filter a structure  with effects
+    */
+  @JSName("wither")
+  def wither_Ord(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.es6OptionMod.Option[_]]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -993,9 +1062,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1005,9 +1074,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1017,9 +1086,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1029,14 +1098,14 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[
+      fpDashTsLib.es6HKTMod.Kind3[
         fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
         _, 
         _, 
         fpDashTsLib.es6OptionMod.Option[_]
       ]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1048,14 +1117,14 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[
+      fpDashTsLib.es6HKTMod.Kind3[
         fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
         FU, 
         FL, 
         fpDashTsLib.es6OptionMod.Option[_]
       ]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       FU, 
       FL, 
@@ -1066,13 +1135,25 @@ trait Witherable[T]
     * Filter a structure  with effects
     */
   @JSName("wither")
+  def wither_Record(F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.es6OptionMod.Option[_]]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.es6HKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Filter a structure  with effects
+    */
+  @JSName("wither")
   def wither_State(F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State]): js.Function2[
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1082,9 +1163,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1094,9 +1175,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1106,9 +1187,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1118,9 +1199,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1130,9 +1211,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1142,9 +1223,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1154,9 +1235,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1166,9 +1247,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1178,9 +1259,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1190,9 +1271,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1202,9 +1283,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1214,9 +1295,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1226,9 +1307,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1238,9 +1319,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1250,9 +1331,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1262,9 +1343,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1274,9 +1355,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1286,9 +1367,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects
@@ -1298,9 +1379,9 @@ trait Witherable[T]
     /* ta */ fpDashTsLib.es6HKTMod.HKT[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6OptionMod.Option[_]]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6OptionMod.Option[_]]
     ], 
-    fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6HKTMod.HKT[T, _]]
+    fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6HKTMod.HKT[T, _]]
   ] = js.native
 }
 

@@ -26,11 +26,11 @@ trait ColumnProps[T] extends js.Object {
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var fixed: js.UndefOr[scala.Boolean | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
   var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
-  var onCell: js.UndefOr[js.Function2[/* record */ T, /* rowIndex */ scala.Double, _]] = js.undefined
-  var onCellClick: js.UndefOr[js.Function2[/* record */ T, /* event */ js.Any, scala.Unit]] = js.undefined
+  var onCell: js.UndefOr[js.Function2[/* record */ T, /* rowIndex */ scala.Double, TableEventListeners]] = js.undefined
+  var onCellClick: js.UndefOr[js.Function2[/* record */ T, /* event */ stdLib.Event, scala.Unit]] = js.undefined
   var onFilter: js.UndefOr[js.Function2[/* value */ js.Any, /* record */ T, scala.Boolean]] = js.undefined
   var onFilterDropdownVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
-  var onHeaderCell: js.UndefOr[js.Function1[/* props */ ColumnProps[T], _]] = js.undefined
+  var onHeaderCell: js.UndefOr[js.Function1[/* props */ ColumnProps[T], TableEventListeners]] = js.undefined
   var render: js.UndefOr[
     js.Function3[
       /* text */ js.Any, 
@@ -65,11 +65,11 @@ object ColumnProps {
     filters: js.Array[ColumnFilterItem] = null,
     fixed: scala.Boolean | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     key: reactLib.reactMod.Key = null,
-    onCell: (/* record */ T, /* rowIndex */ scala.Double) => _ = null,
-    onCellClick: (/* record */ T, /* event */ js.Any) => scala.Unit = null,
+    onCell: (/* record */ T, /* rowIndex */ scala.Double) => TableEventListeners = null,
+    onCellClick: (/* record */ T, /* event */ stdLib.Event) => scala.Unit = null,
     onFilter: (/* value */ js.Any, /* record */ T) => scala.Boolean = null,
     onFilterDropdownVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
-    onHeaderCell: /* props */ ColumnProps[T] => _ = null,
+    onHeaderCell: /* props */ ColumnProps[T] => TableEventListeners = null,
     render: (/* text */ js.Any, /* record */ T, /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | scala.Boolean = null,

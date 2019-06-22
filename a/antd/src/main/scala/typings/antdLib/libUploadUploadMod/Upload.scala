@@ -19,7 +19,7 @@ trait Upload
   def beforeUpload(
     file: antdLib.libUploadInterfaceMod.RcFile,
     fileList: js.Array[antdLib.libUploadInterfaceMod.RcFile]
-  ): scala.Boolean | js.Thenable[_] = js.native
+  ): scala.Boolean | js.Thenable[scala.Unit] = js.native
   def clearProgressTimer(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MUpload(): scala.Unit = js.native

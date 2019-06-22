@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-protobuf"
-version := "3.2-dt-20180214Z-b4ebf2"
+version := "3.7-dt-20190621Z-d33fbc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

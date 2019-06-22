@@ -68,7 +68,7 @@ object draftDashJsLibStrings {
   
   @js.native
   sealed trait atomic
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait backspace
@@ -96,7 +96,7 @@ object draftDashJsLibStrings {
   
   @js.native
   sealed trait blockquote
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait bold
@@ -124,7 +124,7 @@ object draftDashJsLibStrings {
   
   @js.native
   sealed trait `code-block`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait delete
@@ -152,27 +152,27 @@ object draftDashJsLibStrings {
   
   @js.native
   sealed trait `header-five`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait `header-four`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait `header-one`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait `header-six`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait `header-three`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait `header-two`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait `insert-characters`
@@ -208,11 +208,11 @@ object draftDashJsLibStrings {
   
   @js.native
   sealed trait `ordered-list-item`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait paragraph
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait redo
@@ -267,11 +267,11 @@ object draftDashJsLibStrings {
   
   @js.native
   sealed trait `unordered-list-item`
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @js.native
   sealed trait unstyled
-    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+    extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.CoreDraftBlockType
   
   @scala.inline
   def BOLD: BOLD = "BOLD".asInstanceOf[BOLD]

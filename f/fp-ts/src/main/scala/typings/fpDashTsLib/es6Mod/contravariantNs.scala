@@ -18,8 +18,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -28,8 +28,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -38,8 +38,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -48,8 +48,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -58,16 +58,24 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, L, _]
+    ]
+  ] = js.native
+  @JSName("lift")
+  def lift_Eq(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.Eq]): js.Function1[
+    /* f */ js.Function1[/* b */ js.Any, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_Free(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant2[fpDashTsLib.fpDashTsLibStrings.Free]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -76,8 +84,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -86,16 +94,16 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_IO(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.IO]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -104,8 +112,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -114,8 +122,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -124,16 +132,16 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_IxIO(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant3[fpDashTsLib.fpDashTsLibStrings.IxIO]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _], 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _], 
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -142,16 +150,16 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _], 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _], 
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_Map(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant2[fpDashTsLib.fpDashTsLibStrings.Map]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -160,8 +168,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -170,8 +178,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -180,8 +188,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -190,16 +198,24 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]
+    ]
+  ] = js.native
+  @JSName("lift")
+  def lift_Ord(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.Ord]): js.Function1[
+    /* f */ js.Function1[/* b */ js.Any, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_Pair(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.Pair]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -208,8 +224,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -218,8 +234,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -228,8 +244,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _], 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _], 
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -238,8 +254,18 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, _], 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, _], 
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, _]
+    ]
+  ] = js.native
+  @JSName("lift")
+  def lift_Record(
+    contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): js.Function1[
+    /* f */ js.Function1[/* b */ js.Any, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -248,8 +274,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -258,8 +284,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -268,8 +294,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -278,8 +304,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -288,16 +314,16 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_Task(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.Task]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -306,8 +332,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -316,8 +342,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -326,8 +352,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -336,8 +362,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -346,8 +372,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -356,16 +382,16 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
     ]
   ] = js.native
   @JSName("lift")
   def lift_Tree(contravariant: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -374,8 +400,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -384,8 +410,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -394,8 +420,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -404,8 +430,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -414,8 +440,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -424,8 +450,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, L, _], 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, L, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, L, _], 
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, L, _]
     ]
   ] = js.native
   @JSName("lift")
@@ -434,8 +460,8 @@ object contravariantNs extends js.Object {
   ): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _], 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _], 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
     ]
   ] = js.native
 }

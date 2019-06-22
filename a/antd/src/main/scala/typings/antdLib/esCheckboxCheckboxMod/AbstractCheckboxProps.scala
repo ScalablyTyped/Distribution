@@ -15,11 +15,11 @@ trait AbstractCheckboxProps[T] extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ T, scala.Unit]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
-  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[_]] = js.undefined
-  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[_]] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
@@ -38,11 +38,11 @@ object AbstractCheckboxProps {
     id: java.lang.String = null,
     name: java.lang.String = null,
     onChange: /* e */ T => scala.Unit = null,
-    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
-    onKeyDown: reactLib.reactMod.KeyboardEventHandler[_] = null,
-    onKeyPress: reactLib.reactMod.KeyboardEventHandler[_] = null,
-    onMouseEnter: reactLib.reactMod.MouseEventHandler[_] = null,
-    onMouseLeave: reactLib.reactMod.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,

@@ -27,7 +27,7 @@ class Rule protected ()
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The objects to include in a rule.
+    * The objects to include in a rule (documented below).
     */
   val predicates: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataId]]] = js.native
 }

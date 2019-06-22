@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ConstantsNs {
+  type CustomBlockType = java.lang.String
+  type DraftBlockType = CoreDraftBlockType | CustomBlockType
   /**
     * Possible entity types.
     */

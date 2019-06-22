@@ -19,16 +19,20 @@ class FieldDescriptorProto ()
   def clearOptions(): scala.Unit = js.native
   def clearType(): scala.Unit = js.native
   def clearTypeName(): scala.Unit = js.native
-  def getDefaultValue(): java.lang.String = js.native
-  def getExtendee(): java.lang.String = js.native
-  def getJsonName(): java.lang.String = js.native
-  def getLabel(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProtoNs.Label = js.native
-  def getName(): java.lang.String = js.native
-  def getNumber(): scala.Double = js.native
-  def getOneofIndex(): scala.Double = js.native
-  def getOptions(): FieldOptions = js.native
-  def getType(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProtoNs.Type = js.native
-  def getTypeName(): java.lang.String = js.native
+  def getDefaultValue(): js.UndefOr[java.lang.String] = js.native
+  def getExtendee(): js.UndefOr[java.lang.String] = js.native
+  def getJsonName(): js.UndefOr[java.lang.String] = js.native
+  def getLabel(): js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProtoNs.Label
+  ] = js.native
+  def getName(): js.UndefOr[java.lang.String] = js.native
+  def getNumber(): js.UndefOr[scala.Double] = js.native
+  def getOneofIndex(): js.UndefOr[scala.Double] = js.native
+  def getOptions(): js.UndefOr[FieldOptions] = js.native
+  def getType(): js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProtoNs.Type
+  ] = js.native
+  def getTypeName(): js.UndefOr[java.lang.String] = js.native
   def hasDefaultValue(): scala.Boolean = js.native
   def hasExtendee(): scala.Boolean = js.native
   def hasJsonName(): scala.Boolean = js.native

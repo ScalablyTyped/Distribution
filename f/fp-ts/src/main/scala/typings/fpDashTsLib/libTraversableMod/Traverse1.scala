@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
 trait Traverse1[T /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
   def apply(
     F: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[T, _], 
+    /* ta */ fpDashTsLib.libHKTMod.Kind[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ], 
-    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.libHKTMod.Type[T, _]]
+    fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.libHKTMod.Kind[T, _]]
   ] = js.native
   def apply(
     F: fpDashTsLib.libApplicativeMod.Applicative2[
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[T, _], 
+    /* ta */ fpDashTsLib.libHKTMod.Kind[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.libHKTMod.Type[T, _]]
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.libHKTMod.Kind[T, _]]
   ] = js.native
   def apply(
     F: fpDashTsLib.libApplicativeMod.Applicative3[
       fpDashTsLib.fpDashTsLibStrings.IxIO | fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[T, _], 
+    /* ta */ fpDashTsLib.libHKTMod.Kind[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
+      fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
     ], 
-    fpDashTsLib.libHKTMod.Type3[
+    fpDashTsLib.libHKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       _, 
       _, 
-      fpDashTsLib.libHKTMod.Type[T, _]
+      fpDashTsLib.libHKTMod.Kind[T, _]
     ]
   ] = js.native
   def apply[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[T, _], 
+    /* ta */ fpDashTsLib.libHKTMod.Kind[T, _], 
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]], 
-    fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.Type[T, _]]
+    fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.Kind[T, _]]
   ] = js.native
   def apply[FL](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[
@@ -59,12 +59,12 @@ trait Traverse1[T /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
       FL
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[T, _], 
+    /* ta */ fpDashTsLib.libHKTMod.Kind[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, _]
+      fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, _]
     ], 
-    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.libHKTMod.Type[T, _]]
+    fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.libHKTMod.Kind[T, _]]
   ] = js.native
   def apply[FU, FL](
     F: fpDashTsLib.libApplicativeMod.Applicative3C[
@@ -73,16 +73,16 @@ trait Traverse1[T /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
       FL
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[T, _], 
+    /* ta */ fpDashTsLib.libHKTMod.Kind[T, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, FU, FL, _]
+      fpDashTsLib.libHKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, FU, FL, _]
     ], 
-    fpDashTsLib.libHKTMod.Type3[
+    fpDashTsLib.libHKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       FU, 
       FL, 
-      fpDashTsLib.libHKTMod.Type[T, _]
+      fpDashTsLib.libHKTMod.Kind[T, _]
     ]
   ] = js.native
 }

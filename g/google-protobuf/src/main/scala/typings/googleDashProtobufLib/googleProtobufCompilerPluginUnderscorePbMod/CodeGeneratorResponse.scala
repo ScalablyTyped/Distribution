@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class CodeGeneratorResponse ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addFile(): scala.Unit = js.native
+  def addFile(): googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponseNs.File = js.native
   def addFile(
     value: googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponseNs.File
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponseNs.File = js.native
   def addFile(
     value: googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponseNs.File,
     index: scala.Double
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponseNs.File = js.native
   def clearError(): scala.Unit = js.native
   def clearFileList(): scala.Unit = js.native
-  def getError(): java.lang.String = js.native
+  def getError(): js.UndefOr[java.lang.String] = js.native
   def getFileList(): js.Array[
     googleDashProtobufLib.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponseNs.File
   ] = js.native

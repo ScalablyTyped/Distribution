@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Immediate () extends js.Object {
   var _onImmediate: js.Function = js.native
-  def ref(): scala.Unit = js.native
-  def unref(): scala.Unit = js.native
+  def hasRef(): scala.Boolean = js.native
+  def ref(): this.type = js.native
+  def unref(): this.type = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PutGroupPolicyRequest extends js.Object {
   /**
-    * The name of the group to associate the policy with. &amp;regex-name;.
+    * The name of the group to associate the policy with. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-.
     */
   var GroupName: groupNameType
   /**

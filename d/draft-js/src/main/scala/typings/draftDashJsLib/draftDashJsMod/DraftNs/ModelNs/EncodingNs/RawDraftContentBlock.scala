@@ -31,7 +31,7 @@ object RawDraftContentBlock {
     data: js.Object = null
   ): RawDraftContentBlock = {
     val __obj = js.Dynamic.literal(depth = depth, entityRanges = entityRanges, inlineStyleRanges = inlineStyleRanges, key = key, text = text)
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[RawDraftContentBlock]
   }

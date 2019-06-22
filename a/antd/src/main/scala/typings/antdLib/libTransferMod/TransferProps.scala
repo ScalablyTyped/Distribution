@@ -21,7 +21,9 @@ trait TransferProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dataSource: js.Array[TransferItem]
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var filterOption: js.UndefOr[js.Function2[/* inputValue */ js.Any, /* item */ js.Any, scala.Boolean]] = js.undefined
+  var filterOption: js.UndefOr[
+    js.Function2[/* inputValue */ java.lang.String, /* item */ TransferItem, scala.Boolean]
+  ] = js.undefined
   var footer: js.UndefOr[
     js.Function1[
       /* props */ antdLib.libTransferListMod.TransferListProps, 
@@ -36,7 +38,7 @@ trait TransferProps extends js.Object {
     js.Function3[
       /* targetKeys */ js.Array[java.lang.String], 
       /* direction */ java.lang.String, 
-      /* moveKeys */ js.Any, 
+      /* moveKeys */ js.Array[java.lang.String], 
       scala.Unit
     ]
   ] = js.undefined
@@ -86,13 +88,13 @@ object TransferProps {
     children: /* props */ antdLib.libTransferRenderListBodyMod.TransferListBodyProps => reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    filterOption: (/* inputValue */ js.Any, /* item */ js.Any) => scala.Boolean = null,
+    filterOption: (/* inputValue */ java.lang.String, /* item */ TransferItem) => scala.Boolean = null,
     footer: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNode = null,
     `lazy`: js.Object | scala.Boolean = null,
     listStyle: reactLib.reactMod.CSSProperties = null,
     locale: js.Object = null,
     notFoundContent: reactLib.reactMod.ReactNode = null,
-    onChange: (/* targetKeys */ js.Array[java.lang.String], /* direction */ java.lang.String, /* moveKeys */ js.Any) => scala.Unit = null,
+    onChange: (/* targetKeys */ js.Array[java.lang.String], /* direction */ java.lang.String, /* moveKeys */ js.Array[java.lang.String]) => scala.Unit = null,
     onScroll: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event]) => scala.Unit = null,
     onSearch: (/* direction */ TransferDirection, /* value */ java.lang.String) => scala.Unit = null,
     onSearchChange: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]) => scala.Unit = null,

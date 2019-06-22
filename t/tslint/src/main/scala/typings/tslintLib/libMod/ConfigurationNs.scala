@@ -48,6 +48,7 @@ object ConfigurationNs extends js.Object {
     readConfig: js.Function1[/* path */ java.lang.String, tslintLib.libConfigurationMod.RawConfigFile]
   ): tslintLib.libConfigurationMod.IConfigurationFile = js.native
   def readConfigurationFile(filepath: java.lang.String): tslintLib.libConfigurationMod.RawConfigFile = js.native
+  def stringifyConfiguration(configFile: tslintLib.libConfigurationMod.IConfigurationFile): java.lang.String = js.native
   def useAsPath(directory: java.lang.String): scala.Boolean = js.native
 }
 

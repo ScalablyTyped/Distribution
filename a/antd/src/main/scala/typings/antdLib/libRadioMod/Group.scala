@@ -18,6 +18,6 @@ class Group protected ()
 object Group extends js.Object {
   var childContextTypes: antdLib.Anon_RadioGroup = js.native
   var defaultProps: antdLib.Anon_ButtonStyleDisabled = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libRadioInterfaceMod.RadioGroupProps): antdLib.Anon_ValueAny | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libRadioInterfaceMod.RadioGroupProps): antdLib.Anon_ValueUnknown | scala.Null = js.native
 }
 

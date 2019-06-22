@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GroupProps extends js.Object {
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLSpanElement]] = js.undefined
@@ -23,7 +23,7 @@ trait GroupProps extends js.Object {
 object GroupProps {
   @scala.inline
   def apply(
-    children: js.Any = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     onBlur: reactLib.reactMod.FocusEventHandler[stdLib.HTMLSpanElement] = null,
@@ -35,7 +35,7 @@ object GroupProps {
     style: reactLib.reactMod.CSSProperties = null
   ): GroupProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class MessageOptions ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addUninterpretedOption(): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): scala.Unit = js.native
+  def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): UninterpretedOption = js.native
   def clearDeprecated(): scala.Unit = js.native
   def clearMapEntry(): scala.Unit = js.native
   def clearMessageSetWireFormat(): scala.Unit = js.native
   def clearNoStandardDescriptorAccessor(): scala.Unit = js.native
   def clearUninterpretedOptionList(): scala.Unit = js.native
-  def getDeprecated(): scala.Boolean = js.native
-  def getMapEntry(): scala.Boolean = js.native
-  def getMessageSetWireFormat(): scala.Boolean = js.native
-  def getNoStandardDescriptorAccessor(): scala.Boolean = js.native
+  def getDeprecated(): js.UndefOr[scala.Boolean] = js.native
+  def getMapEntry(): js.UndefOr[scala.Boolean] = js.native
+  def getMessageSetWireFormat(): js.UndefOr[scala.Boolean] = js.native
+  def getNoStandardDescriptorAccessor(): js.UndefOr[scala.Boolean] = js.native
   def getUninterpretedOptionList(): js.Array[UninterpretedOption] = js.native
   def hasDeprecated(): scala.Boolean = js.native
   def hasMapEntry(): scala.Boolean = js.native

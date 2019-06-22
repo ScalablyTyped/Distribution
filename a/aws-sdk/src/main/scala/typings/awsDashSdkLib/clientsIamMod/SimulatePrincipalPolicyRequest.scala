@@ -15,7 +15,7 @@ trait SimulatePrincipalPolicyRequest extends js.Object {
     */
   var CallerArn: js.UndefOr[ResourceNameType] = js.undefined
   /**
-    * A list of context keys and corresponding values for the simulation to use. Whenever a context key is evaluated in one of the simulated IAM permission policies, the corresponding value is supplied.
+    * A list of context keys and corresponding values for the simulation to use. Whenever a context key is evaluated in one of the simulated IAM permissions policies, the corresponding value is supplied.
     */
   var ContextEntries: js.UndefOr[ContextEntryListType] = js.undefined
   /**

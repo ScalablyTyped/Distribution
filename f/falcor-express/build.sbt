@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "falcor-express"
-version := "0.1.2-dt-20190322Z-5014c4"
+version := "0.1.2-dt-20190322Z-934664"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-f78539",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-039467",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-046e36",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-f895cb",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-d64a0e",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a1e1e0",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-cb6937",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-e7cc40",
   "org.scalablytyped" %%% "falcor" % "0.1-dt-20190212Z-366b82",
   "org.scalablytyped" %%% "falcor-http-datasource" % "0.1.3-dt-20190322Z-bd079c",
   "org.scalablytyped" %%% "falcor-json-graph" % "1.1.7-dt-20190322Z-5cfe0e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c60c5",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-eab0d2",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-d489cc",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-a3667a",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

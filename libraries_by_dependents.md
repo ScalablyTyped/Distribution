@@ -1596,6 +1596,7 @@
 | 106 | [caseless](./c/caseless) | Caseless object set/get/has, very useful when work
 | 106 | [event-target-shim](./e/event-target-shim) | An implementation of WHATWG EventTarget interface.
 | 106 | [feathersjs__errors](./f/feathersjs__errors) | Common error types for Feathers apps
+| 106 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript
 | 106 | [gulp-newer](./g/gulp-newer) | Only pass through newer source files
 | 106 | [meshblu](./m/meshblu) | Meshblu IoT network and API
 | 106 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views
@@ -1842,6 +1843,7 @@
 | 82 | [shasum](./s/shasum) | Single function that return the sha1sum. Installin
 | 82 | [svg_dot_js](./s/svg_dot_js) | A lightweight library for manipulating and animati
 | 82 | [sweetalert](./s/sweetalert) | A beautiful replacement for JavaScript's "alert"
+| 82 | [targz](./t/targz) | TarGz for NodeJS
 | 81 | [bloom-filter](./b/bloom-filter) | A bloom filter suitable for use in Bitcoin Connect
 | 81 | [deprecate](./d/deprecate) | Mark methods as deprecated and warn the user when 
 | 81 | [event-kit](./e/event-kit) | Simple library for implementing and consuming even
@@ -3466,6 +3468,7 @@
 | 19 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 19 | [falcor](./f/falcor) | A JavaScript library for efficient data fetching.
 | 19 | [ftpd](./f/ftpd) | Node FTP Server
+| 19 | [git-revision-webpack-plug](./g/git-revision-webpack-plugin) | Simple webpack plugin that generates VERSION and C
 | 19 | [gulp-terser](./g/gulp-terser) | gulp plugin, compressed es6+ code.
 | 19 | [html-tag-names](./h/html-tag-names) | List of known HTML tag-names
 | 19 | [intl-tel-input](./i/intl-tel-input) | A JavaScript plugin for entering and validating in
@@ -3682,6 +3685,7 @@
 | 16 | [req-cwd](./r/req-cwd) | Require a module like require() but from the curre
 | 16 | [resize-img](./r/resize-img) | Resize images in memory
 | 16 | [router5](./r/router5) | A simple, powerful, view-agnostic, modular and ext
+| 16 | [solid-auth-client](./s/solid-auth-client) | Opaquely authenticates solid clients
 | 16 | [stompit](./s/stompit) | STOMP client library for node.js
 | 16 | [to-absolute-glob](./t/to-absolute-glob) | Make a glob pattern absolute, ensuring that negati
 | 16 | [traceback](./t/traceback) | Easy access to the call stack, written in pure Jav
@@ -3862,6 +3866,7 @@
 | 13 | [lory_dot_js](./l/lory_dot_js) | Touch enabled minimalistic slider written in vanil
 | 13 | [material__grid-list](./m/material__grid-list) | The Material Components for the web grid list comp
 | 13 | [mobx-react-lite](./m/mobx-react-lite) | Lightweight React bindings for MobX based on React
+| 13 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 13 | [nanoajax](./n/nanoajax) | A small ajax lib
 | 13 | [nivo__axes](./n/nivo__axes) | -
 | 13 | [nodecredstash](./n/nodecredstash) | Node.js credstash implementation
@@ -4385,6 +4390,7 @@
 | 8 | [single-spa-react](./s/single-spa-react) | A single spa plugin for React apps
 | 8 | [slonik](./s/slonik) | A PostgreSQL client with strict types, detail logg
 | 8 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for 
+| 8 | [styled-system__css](./s/styled-system__css) | Styled System for the css prop
 | 8 | [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path 
 | 8 | [superagent-no-cache](./s/superagent-no-cache) | Plugin for visionmedia/superagent that adds header
 | 8 | [text-buffer](./t/text-buffer) | A container for large mutable strings with annotat
@@ -5885,6 +5891,7 @@
 | 1 | [pollyjs__persister-fs](./p/pollyjs__persister-fs) | File system persister for @pollyjs
 | 1 | [preact-i18n](./p/preact-i18n) | Preact internationalization, done simply.
 | 1 | [promise-pool](./p/promise-pool) | just another simple task pool based on promise (Q)
+| 1 | [promise_dot_allsettled](./p/promise_dot_allsettled) | ES Proposal spec-compliant shim for Promise.allSet
 | 1 | [prosemirror-test-builder](./p/prosemirror-test-builder) | Helpers for programatically building ProseMirror t
 | 1 | [protractor-http-mock](./p/protractor-http-mock) | Mock HTTP calls in your protractor specs.
 | 1 | [proxy-verifier](./p/proxy-verifier) | Check that proxies are working, verify their anony
@@ -6017,6 +6024,7 @@
 | 1 | [word-list-json](./w/word-list-json) | List of English words
 | 1 | [word2vector](./w/word2vector) | a word2vector interface for nodejs
 | 1 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP
+| 1 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack
 | 1 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads
 | 1 | [wry__equality](./w/wry__equality) | Structural equality checking for JavaScript values
 | 1 | [xdomain](./x/xdomain) | A pure JavaScript CORS alternative
@@ -6403,6 +6411,7 @@
 | 0 | [phonon](./p/phonon) | Phonon is a lightweight & scalable Javascript/CSS3
 | 0 | [photonui](./p/photonui) | A javascript framework to create user interfaces
 | 0 | [pinata-sdk](./p/pinata-sdk) | Unofficial SDK for 
+| 0 | [places](./p/places) | About places.
 | 0 | [polygons-intersect](./p/polygons-intersect) | This script finds all points where the polygons in
 | 0 | [polymer-ts](./p/polymer-ts) | Polymer 1.0 for TypeScript
 | 0 | [popcorn](./p/popcorn) | Pop up made easy

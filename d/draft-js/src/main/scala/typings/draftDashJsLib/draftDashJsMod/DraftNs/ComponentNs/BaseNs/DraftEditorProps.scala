@@ -40,14 +40,15 @@ trait DraftEditorProps extends js.Object {
   // Provide a function that will construct CSS style objects given inline
   // style names.
   var customStyleFn: js.UndefOr[
-    js.Function1[
+    js.Function2[
       /* style */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle, 
-      js.Object
+      /* block */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, 
+      DraftStyleMap
     ]
   ] = js.undefined
   // Provide a map of inline style names corresponding to CSS style objects
   // that will be rendered for matching ranges.
-  var customStyleMap: js.UndefOr[js.Any] = js.undefined
+  var customStyleMap: js.UndefOr[DraftStyleMap] = js.undefined
   var editorState: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState
   // Handle intended text insertion before the insertion occurs. This may be
   // useful in cases where the user has entered characters that you would like
@@ -55,9 +56,10 @@ trait DraftEditorProps extends js.Object {
   // emoji Unicode character, or replacing ASCII quote characters with smart
   // quotes.
   var handleBeforeInput: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* chars */ java.lang.String, 
       /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      /* eventTimeStamp */ scala.Double, 
       draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
     ]
   ] = js.undefined
@@ -81,9 +83,10 @@ trait DraftEditorProps extends js.Object {
   // Map a key command string provided by your key binding function to a
   // specified behavior.
   var handleKeyCommand: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* command */ EditorCommand, 
       /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      /* eventTimeStamp */ scala.Double, 
       draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
     ]
   ] = js.undefined
@@ -185,12 +188,12 @@ object DraftEditorProps {
     blockRenderMap: DraftBlockRenderMap = null,
     blockRendererFn: /* block */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock => _ = null,
     blockStyleFn: /* block */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock => java.lang.String = null,
-    customStyleFn: /* style */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle => js.Object = null,
-    customStyleMap: js.Any = null,
-    handleBeforeInput: (/* chars */ java.lang.String, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
+    customStyleFn: (/* style */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle, /* block */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock) => DraftStyleMap = null,
+    customStyleMap: DraftStyleMap = null,
+    handleBeforeInput: (/* chars */ java.lang.String, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, /* eventTimeStamp */ scala.Double) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handleDrop: (/* selection */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState, /* dataTransfer */ js.Object, /* isInternal */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftDragType) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handleDroppedFiles: (/* selection */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState, /* files */ js.Array[stdLib.Blob]) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
-    handleKeyCommand: (/* command */ EditorCommand, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
+    handleKeyCommand: (/* command */ EditorCommand, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, /* eventTimeStamp */ scala.Double) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handlePastedFiles: /* files */ js.Array[stdLib.Blob] => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handlePastedText: (/* text */ java.lang.String, /* html */ js.UndefOr[java.lang.String], /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handleReturn: (/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
@@ -226,12 +229,12 @@ object DraftEditorProps {
     if (blockRenderMap != null) __obj.updateDynamic("blockRenderMap")(blockRenderMap)
     if (blockRendererFn != null) __obj.updateDynamic("blockRendererFn")(js.Any.fromFunction1(blockRendererFn))
     if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(js.Any.fromFunction1(blockStyleFn))
-    if (customStyleFn != null) __obj.updateDynamic("customStyleFn")(js.Any.fromFunction1(customStyleFn))
+    if (customStyleFn != null) __obj.updateDynamic("customStyleFn")(js.Any.fromFunction2(customStyleFn))
     if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
-    if (handleBeforeInput != null) __obj.updateDynamic("handleBeforeInput")(js.Any.fromFunction2(handleBeforeInput))
+    if (handleBeforeInput != null) __obj.updateDynamic("handleBeforeInput")(js.Any.fromFunction3(handleBeforeInput))
     if (handleDrop != null) __obj.updateDynamic("handleDrop")(js.Any.fromFunction3(handleDrop))
     if (handleDroppedFiles != null) __obj.updateDynamic("handleDroppedFiles")(js.Any.fromFunction2(handleDroppedFiles))
-    if (handleKeyCommand != null) __obj.updateDynamic("handleKeyCommand")(js.Any.fromFunction2(handleKeyCommand))
+    if (handleKeyCommand != null) __obj.updateDynamic("handleKeyCommand")(js.Any.fromFunction3(handleKeyCommand))
     if (handlePastedFiles != null) __obj.updateDynamic("handlePastedFiles")(js.Any.fromFunction1(handlePastedFiles))
     if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(js.Any.fromFunction3(handlePastedText))
     if (handleReturn != null) __obj.updateDynamic("handleReturn")(js.Any.fromFunction2(handleReturn))

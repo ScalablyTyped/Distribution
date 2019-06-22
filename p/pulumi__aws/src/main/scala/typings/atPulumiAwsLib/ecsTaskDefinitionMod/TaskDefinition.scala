@@ -64,6 +64,10 @@ class TaskDefinition protected ()
     */
   val placementConstraints: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExpressionType]]] = js.native
   /**
+    * The proxy configuration details for the App Mesh proxy.
+    */
+  val proxyConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ContainerNameKey]] = js.native
+  /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
   val requiresCompatibilities: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native

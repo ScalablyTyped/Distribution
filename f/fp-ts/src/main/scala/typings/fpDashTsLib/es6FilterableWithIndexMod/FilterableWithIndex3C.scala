@@ -16,18 +16,18 @@ trait FilterableWithIndex3C[F /* <: fpDashTsLib.es6HKTMod.URIS3 */, I, U, L]
   /* InferMemberOverrides */
   override val _U: U = js.native
   def filterMapWithIndex[A, B](
-    fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A],
+    fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A],
     f: js.Function2[/* i */ I, /* a */ A, fpDashTsLib.es6OptionMod.Option[B]]
-  ): fpDashTsLib.es6HKTMod.Type3[F, U, L, B] = js.native
-  def filterWithIndex[A](fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A], predicateWithIndex: PredicateWithIndex[I, A]): fpDashTsLib.es6HKTMod.Type3[F, U, L, A] = js.native
+  ): fpDashTsLib.es6HKTMod.Kind3[F, U, L, B] = js.native
+  def filterWithIndex[A](fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], predicateWithIndex: PredicateWithIndex[I, A]): fpDashTsLib.es6HKTMod.Kind3[F, U, L, A] = js.native
   @JSName("filterWithIndex")
-  def filterWithIndex_ABA[A, B /* <: A */](fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A], refinementWithIndex: RefinementWithIndex[I, A, B]): fpDashTsLib.es6HKTMod.Type3[F, U, L, B] = js.native
+  def filterWithIndex_ABA[A, B /* <: A */](fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], refinementWithIndex: RefinementWithIndex[I, A, B]): fpDashTsLib.es6HKTMod.Kind3[F, U, L, B] = js.native
   def partitionMapWithIndex[RL, RR, A](
-    fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A],
+    fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A],
     f: js.Function2[/* i */ I, /* a */ A, fpDashTsLib.es6EitherMod.Either[RL, RR]]
-  ): fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.Type3[F, U, L, RL], fpDashTsLib.es6HKTMod.Type3[F, U, L, RR]] = js.native
-  def partitionWithIndex[A](fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A], predicateWithIndex: PredicateWithIndex[I, A]): fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.Type3[F, U, L, A], fpDashTsLib.es6HKTMod.Type3[F, U, L, A]] = js.native
+  ): fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.Kind3[F, U, L, RL], fpDashTsLib.es6HKTMod.Kind3[F, U, L, RR]] = js.native
+  def partitionWithIndex[A](fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], predicateWithIndex: PredicateWithIndex[I, A]): fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], fpDashTsLib.es6HKTMod.Kind3[F, U, L, A]] = js.native
   @JSName("partitionWithIndex")
-  def partitionWithIndex_ABA[A, B /* <: A */](fa: fpDashTsLib.es6HKTMod.Type3[F, U, L, A], refinementWithIndex: RefinementWithIndex[I, A, B]): fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.Type3[F, U, L, A], fpDashTsLib.es6HKTMod.Type3[F, U, L, B]] = js.native
+  def partitionWithIndex_ABA[A, B /* <: A */](fa: fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], refinementWithIndex: RefinementWithIndex[I, A, B]): fpDashTsLib.es6CompactableMod.Separated[fpDashTsLib.es6HKTMod.Kind3[F, U, L, A], fpDashTsLib.es6HKTMod.Kind3[F, U, L, B]] = js.native
 }
 

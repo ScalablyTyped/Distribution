@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "keyv__postgres"
-version := "1.0-dt-20181231Z-628746"
+version := "1.0-dt-20181231Z-86228c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-a85aff",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-28b0ba",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

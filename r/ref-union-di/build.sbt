@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ref-union-di"
-version := "1.0-dt-20190322Z-e4db6e"
+version := "1.0-dt-20190322Z-0d8295"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
-  "org.scalablytyped" %%% "ref-napi" % "1.4-dt-20190322Z-cd638b",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
+  "org.scalablytyped" %%% "ref-napi" % "1.4-dt-20190322Z-093897",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class UninterpretedOption ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addName(): scala.Unit = js.native
+  def addName(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart = js.native
   def addName(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart = js.native
   def addName(
     value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart,
     index: scala.Double
-  ): scala.Unit = js.native
+  ): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart = js.native
   def clearAggregateValue(): scala.Unit = js.native
   def clearDoubleValue(): scala.Unit = js.native
   def clearIdentifierValue(): scala.Unit = js.native
@@ -24,14 +24,14 @@ class UninterpretedOption ()
   def clearNegativeIntValue(): scala.Unit = js.native
   def clearPositiveIntValue(): scala.Unit = js.native
   def clearStringValue(): scala.Unit = js.native
-  def getAggregateValue(): java.lang.String = js.native
-  def getDoubleValue(): scala.Double = js.native
-  def getIdentifierValue(): java.lang.String = js.native
+  def getAggregateValue(): js.UndefOr[java.lang.String] = js.native
+  def getDoubleValue(): js.UndefOr[scala.Double] = js.native
+  def getIdentifierValue(): js.UndefOr[java.lang.String] = js.native
   def getNameList(): js.Array[
     googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart
   ] = js.native
-  def getNegativeIntValue(): scala.Double = js.native
-  def getPositiveIntValue(): scala.Double = js.native
+  def getNegativeIntValue(): js.UndefOr[scala.Double] = js.native
+  def getPositiveIntValue(): js.UndefOr[scala.Double] = js.native
   def getStringValue(): stdLib.Uint8Array | java.lang.String = js.native
   def getStringValue_asB64(): java.lang.String = js.native
   def getStringValue_asU8(): stdLib.Uint8Array = js.native

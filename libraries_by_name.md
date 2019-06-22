@@ -1835,6 +1835,7 @@
 | [fossil-delta](./f/fossil-delta) | Fossil SCM delta compression | delta, compression, encoding |
 | [foundation](./f/foundation) | You may also want to checkout: | zurb, foundation, stylus, express |
 | [foundation-sites](./f/foundation-sites) | The most advanced responsive front-end framework i | css, scss, sass, js, responsive, mobile-first, framework, eyeglass-module, handlebars-helper-rel, handlebars-helper-slugify |
+| [fp-ts](./f/fp-ts) | Functional programming in TypeScript | typescript, algebraic-data-types, functional-programming |
 | [fpsmeter](./f/fpsmeter) | Sexy, fast, and themable FPS meter. | - |
 | [frac](./f/frac) | Rational approximation with bounded denominator | math, fraction, rational, approximation |
 | [framebus](./f/framebus) | Framebus allows you to easily send messages across | - |
@@ -2089,6 +2090,7 @@
 | [git-repo-name](./g/git-repo-name) | Get the repository name from the git remote origin | gh, git, git repo, repo, repo name, repository |
 | [git-rev](./g/git-rev) | get the current git commit hash, tag or branch in  | - |
 | [git-rev-sync](./g/git-rev-sync) | Synchronously get the current git commit hash, tag | - |
+| [git-revision-webpack-plug](./g/git-revision-webpack-plugin) | Simple webpack plugin that generates VERSION and C | git, git-describe, plugin, version, webpack |
 | [git-root-dir](./g/git-root-dir) | Find the root directory of a git repository | .git, dir, directory, entry, file, find-up, find, findup, folder, git, look-up, look, match, parent, parents, path, resolve, root, search, up, walk, walking |
 | [git-url-parse](./g/git-url-parse) | A high level git url parser for common git provide | parse, git, url |
 | [git-user-email](./g/git-user-email) | Get the email address of the current user from git | config, email, git, github, user |
@@ -4023,6 +4025,7 @@
 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
 | [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
+| [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
 | [moo](./m/moo) | Optimised tokenizer/lexer generator | - |
 | [moonjs](./m/moonjs) | A minimal, blazing fast user interface library. | moon, mvvm, user interface, UI |
@@ -4674,6 +4677,7 @@
 | [pkg-versions](./p/pkg-versions) | Get the version numbers of a package from the npm  | versions, version, numbers, npm, registry, package, package.json, json, module |
 | [pkgcloud](./p/pkgcloud) | An infrastructure-as-a-service agnostic cloud libr | cloud, cloud computing, api, rackspace, joyent, aws, amazon, azure, google, iaas, servers, compute, storage, databases, client, mongolab, iriscouch, mongohq, openstack, redistogo, hpcloud, hp, helion |
 | [pkijs](./p/pkijs) | Public Key Infrastructure (PKI) is the basis of ho | ES6, ES2015, WebCrypto, Web Cryptography API, X.509, certificate, crl, cms, encrypted, enveloped, OCSP, timestamp, PKCS |
+| [places](./p/places) | About places. | nodejs |
 | [plaid-link](./p/plaid-link) | - | - |
 | [platform](./p/platform) | A platform detection library that works on nearly  | environment, platform, ua, useragent |
 | [playcanvas](./p/playcanvas) | - | - |
@@ -4814,6 +4818,7 @@
 | [promise-retry](./p/promise-retry) | Retries a function that returns a promise, leverag | retry, promise, backoff, repeat, replay |
 | [promise-sftp](./p/promise-sftp) | a promise-based sftp client for node.js | sftp, client, promise, node |
 | [promise-timeout](./p/promise-timeout) | Simple timeouts for promises | promise, timeout |
+| [promise_dot_allsettled](./p/promise_dot_allsettled) | ES Proposal spec-compliant shim for Promise.allSet | Promise, promises, allsettled, settled, fulfilled, resolved, rejected, promise.allsettled, shim, polyfill, es-shim, API |
 | [promise_dot_prototype_dot](./p/promise_dot_prototype_dot_finally) | ES Proposal spec-compliant shim for Promise.protot | Promise, promises, finally, promise.prototype.finally, ES7, ES8, ES2017, shim, polyfill, es-shim API |
 | [promised-ldap](./p/promised-ldap) | A thin wrapper over ldapjs to give a promise inter | ldap, promise, authentication |
 | [promised-temp](./p/promised-temp) | Tool for making temporary files asynchronously tha | tmp, promises, temp, temporary |
@@ -6075,6 +6080,7 @@
 | [sockjs](./s/sockjs) | SockJS-node is a server counterpart of SockJS-clie | websockets, websocket |
 | [sockjs-client](./s/sockjs-client) | SockJS-client is a browser JavaScript library that | websockets, websocket |
 | [socks](./s/socks) | Fully featured SOCKS proxy client supporting SOCKS | socks, proxy, tor, socks 4, socks 5, socks4, socks5 |
+| [solid-auth-client](./s/solid-auth-client) | Opaquely authenticates solid clients | - |
 | [solid__react](./s/solid__react) | Efficiently build Solid apps and components with R | - |
 | [solidity-parser-antlr](./s/solidity-parser-antlr) | A Solidity parser built from a robust ANTLR 4 gram | - |
 | [solr-client](./s/solr-client) | A Solr client library for indexing, adding, deleti | - |
@@ -6264,6 +6270,7 @@
 | [styled-jsx](./s/styled-jsx) | Full CSS support for JSX without compromises | babel-plugin-macros, zeit, css-in-js, css |
 | [styled-react-modal](./s/styled-react-modal) | A React modal built with styled-components. | react-modal, styled-components, modal, react |
 | [styled-system](./s/styled-system) | Responsive, theme-based style props for building d | react, css-in-js, styled-components, emotion |
+| [styled-system__css](./s/styled-system__css) | Styled System for the css prop | css, css-in-js, emotion, styled-components, style, react |
 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components | - |
 | [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path  | css, svg, svg, path, scroll, animation |
 | [stylelint](./s/stylelint) | A mighty, modern CSS linter. | css, less, sass, scss, sugarss, lint, linter, stylelint |
@@ -6365,6 +6372,7 @@
 | [tar-fs](./t/tar-fs) | filesystem bindings for tar-stream | tar, fs, file, tarball, directory, stream |
 | [tar-stream](./t/tar-stream) | tar-stream is a streaming tar parser and generator | tar, tarball, parse, parser, generate, generator, stream, stream2, streams, streams2, streaming, pack, extract, modify |
 | [tarantool-driver](./t/tarantool-driver) | Tarantool driver for 1.7 | tarantool, driver, db, msgpack |
+| [targz](./t/targz) | TarGz for NodeJS | targz, tar.gz, tar, gz, gzip, node |
 | [tarn](./t/tarn) | Simple and robust resource pool for node.js | pool, pooling, throttle |
 | [task-graph-runner](./t/task-graph-runner) | Run async tasks with dependencies | graph, adjacency, list, tasks, priority, priorities, sort, dependencies, topological, topo, sequencer, task, runner |
 | [task-worklet](./t/task-worklet) | Streamlined processing of tasks in a shared thread | tasks, task worklet, TaskWorklet, threads, multithreading |
@@ -6944,6 +6952,7 @@
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
+| [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack | wordpress, webpack, dependency |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |

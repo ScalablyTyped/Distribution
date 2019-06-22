@@ -16,6 +16,8 @@ object monoidalNs extends js.Object {
   @JSName("fromApplicative")
   def fromApplicative_Either(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either]): fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.Either] = js.native
   @JSName("fromApplicative")
+  def fromApplicative_Eq(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq]): fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Eq] = js.native
+  @JSName("fromApplicative")
   def fromApplicative_Free(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free]): fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.Free] = js.native
   @JSName("fromApplicative")
   def fromApplicative_FreeGroup(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]): fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.FreeGroup] = js.native
@@ -36,11 +38,15 @@ object monoidalNs extends js.Object {
   @JSName("fromApplicative")
   def fromApplicative_Option(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option]): fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Option] = js.native
   @JSName("fromApplicative")
+  def fromApplicative_Ord(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord]): fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Ord] = js.native
+  @JSName("fromApplicative")
   def fromApplicative_Pair(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair]): fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Pair] = js.native
   @JSName("fromApplicative")
   def fromApplicative_Reader(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader]): fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.Reader] = js.native
   @JSName("fromApplicative")
   def fromApplicative_ReaderTaskEither(F: fpDashTsLib.libApplicativeMod.Applicative3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither]): fpDashTsLib.libMonoidalMod.Monoidal3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither] = js.native
+  @JSName("fromApplicative")
+  def fromApplicative_Record(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record]): fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Record] = js.native
   @JSName("fromApplicative")
   def fromApplicative_State(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State]): fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.State] = js.native
   @JSName("fromApplicative")
@@ -73,6 +79,8 @@ object monoidalNs extends js.Object {
   @JSName("toApplicative")
   def toApplicative_Either(M: fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.Either]): fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either] = js.native
   @JSName("toApplicative")
+  def toApplicative_Eq(M: fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Eq]): fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq] = js.native
+  @JSName("toApplicative")
   def toApplicative_Free(M: fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.Free]): fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free] = js.native
   @JSName("toApplicative")
   def toApplicative_FreeGroup(M: fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]): fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.FreeGroup] = js.native
@@ -93,11 +101,15 @@ object monoidalNs extends js.Object {
   @JSName("toApplicative")
   def toApplicative_Option(M: fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Option]): fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option] = js.native
   @JSName("toApplicative")
+  def toApplicative_Ord(M: fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Ord]): fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord] = js.native
+  @JSName("toApplicative")
   def toApplicative_Pair(M: fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Pair]): fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair] = js.native
   @JSName("toApplicative")
   def toApplicative_Reader(M: fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.Reader]): fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader] = js.native
   @JSName("toApplicative")
   def toApplicative_ReaderTaskEither(M: fpDashTsLib.libMonoidalMod.Monoidal3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither]): fpDashTsLib.libApplicativeMod.Applicative3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither] = js.native
+  @JSName("toApplicative")
+  def toApplicative_Record(M: fpDashTsLib.libMonoidalMod.Monoidal1[fpDashTsLib.fpDashTsLibStrings.Record]): fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record] = js.native
   @JSName("toApplicative")
   def toApplicative_State(M: fpDashTsLib.libMonoidalMod.Monoidal2[fpDashTsLib.fpDashTsLibStrings.State]): fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State] = js.native
   @JSName("toApplicative")

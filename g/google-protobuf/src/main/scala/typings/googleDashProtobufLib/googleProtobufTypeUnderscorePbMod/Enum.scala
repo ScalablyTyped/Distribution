@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Enum ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addEnumvalue(): scala.Unit = js.native
-  def addEnumvalue(value: EnumValue): scala.Unit = js.native
-  def addEnumvalue(value: EnumValue, index: scala.Double): scala.Unit = js.native
-  def addOptions(): scala.Unit = js.native
-  def addOptions(value: Option): scala.Unit = js.native
-  def addOptions(value: Option, index: scala.Double): scala.Unit = js.native
+  def addEnumvalue(): EnumValue = js.native
+  def addEnumvalue(value: EnumValue): EnumValue = js.native
+  def addEnumvalue(value: EnumValue, index: scala.Double): EnumValue = js.native
+  def addOptions(): Option = js.native
+  def addOptions(value: Option): Option = js.native
+  def addOptions(value: Option, index: scala.Double): Option = js.native
   def clearEnumvalueList(): scala.Unit = js.native
   def clearOptionsList(): scala.Unit = js.native
   def clearSourceContext(): scala.Unit = js.native

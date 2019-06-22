@@ -15,13 +15,13 @@ trait PopconfirmProps
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   var onCancel: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
   var onConfirm: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -29,7 +29,7 @@ trait PopconfirmProps
   var onVisibleChange_PopconfirmProps: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -58,9 +58,9 @@ object PopconfirmProps {
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     okText: reactLib.reactMod.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
-    onConfirm: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
-    onVisibleChange: (/* visible */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]]) => scala.Unit = null,
+    onCancel: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]] => scala.Unit = null,
+    onConfirm: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]] => scala.Unit = null,
+    onVisibleChange: (/* visible */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]]) => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
     overlayStyle: reactLib.reactMod.CSSProperties = null,

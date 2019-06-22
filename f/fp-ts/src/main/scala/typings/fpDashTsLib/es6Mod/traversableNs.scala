@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object traversableNs extends js.Object {
   def getTraversableComposition(
     F: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     G: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.fpDashTsLibStrings.Identity] = js.native
   def getTraversableComposition[F, G](F: fpDashTsLib.es6TraversableMod.Traversable[F], G: fpDashTsLib.es6TraversableMod.Traversable[G]): fpDashTsLib.es6TraversableMod.TraversableComposition[F, G] = js.native
@@ -22,6 +22,11 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Array],
     G: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Array]
   ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.fpDashTsLibStrings.Array] = js.native
+  @JSName("getTraversableComposition")
+  def getTraversableComposition_Eq(
+    F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Eq],
+    G: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.fpDashTsLibStrings.Eq] = js.native
   @JSName("getTraversableComposition")
   def getTraversableComposition_FreeGroup(
     F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.FreeGroup],
@@ -59,10 +64,20 @@ object traversableNs extends js.Object {
     G: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.fpDashTsLibStrings.Option] = js.native
   @JSName("getTraversableComposition")
+  def getTraversableComposition_Ord(
+    F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Ord],
+    G: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.fpDashTsLibStrings.Ord] = js.native
+  @JSName("getTraversableComposition")
   def getTraversableComposition_Pair(
     F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Pair],
     G: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Pair]
   ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.fpDashTsLibStrings.Pair] = js.native
+  @JSName("getTraversableComposition")
+  def getTraversableComposition_Record(
+    F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Record],
+    G: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.fpDashTsLibStrings.Record] = js.native
   @JSName("getTraversableComposition")
   def getTraversableComposition_StrMap(
     F: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.StrMap],
@@ -85,37 +100,37 @@ object traversableNs extends js.Object {
   ): fpDashTsLib.es6TraversableMod.TraversableComposition11[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.fpDashTsLibStrings.Zipper] = js.native
   def sequence(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Identity, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ]
   ] = js.native
   def sequence(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable2[
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   def sequence(
@@ -123,17 +138,17 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def sequence(
@@ -144,15 +159,15 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   def sequence(
@@ -160,18 +175,18 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.IxIO | fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.IxIO, 
       _, 
       _, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def sequence[L](
@@ -180,17 +195,17 @@ object traversableNs extends js.Object {
       L
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       L, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def sequence[LF](
@@ -202,15 +217,15 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   def sequence[U, L](
@@ -220,18 +235,18 @@ object traversableNs extends js.Object {
       L
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.IxIO, 
       U, 
       L, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def sequence[F, T](F: fpDashTsLib.es6ApplicativeMod.Applicative[F], T: fpDashTsLib.es6TraversableMod.Traversable[T]): js.Function1[
@@ -243,13 +258,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Array],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Array]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Array, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Array, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -257,23 +272,23 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Array]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Const(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Const],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Const]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -281,15 +296,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Const, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Const]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -297,15 +312,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Either]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -313,31 +328,53 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Either, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Either]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Eq(
+    F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): js.Function1[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Eq, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Eq, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]
+    ]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Eq[F](
+    F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): js.Function1[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Free(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Free]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -345,15 +382,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Free, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Free]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -361,13 +398,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.FreeGroup],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.FreeGroup, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.FreeGroup, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -375,21 +412,21 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_IO(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.IO],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.IO]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.IO, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.IO, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -397,23 +434,23 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.IO]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_IOEither(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.IOEither],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.IOEither]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -421,15 +458,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.IOEither, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.IOEither]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -437,13 +474,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Identity],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Identity]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Identity, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Identity, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -451,23 +488,23 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Identity]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Map(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Map],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Map]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -475,15 +512,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Map, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Map]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -491,13 +528,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -505,21 +542,21 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_NonEmptyArray2v(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -527,21 +564,21 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Option(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Option, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Option, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -549,21 +586,43 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Ord(
+    F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): js.Function1[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Ord, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Ord, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]
+    ]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Ord[F](
+    F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): js.Function1[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Pair(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Pair]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Pair, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Pair, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -571,23 +630,23 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Pair]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Reader(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Reader]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -595,31 +654,53 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Reader, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Reader]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Record(
+    F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): js.Function1[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Record, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Record, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]
+    ]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Record[F](
+    F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): js.Function1[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_State(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.State]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -627,15 +708,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.State, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.State]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -643,15 +724,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Store],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Store]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -659,15 +740,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Store, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Store]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -675,13 +756,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.StrMap],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.StrMap]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.StrMap, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.StrMap, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -689,21 +770,21 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.StrMap]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Task(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Task],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Task]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -711,23 +792,23 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Task]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_TaskEither(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.TaskEither],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.TaskEither]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -735,15 +816,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.TaskEither, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.TaskEither]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -751,15 +832,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.These],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.These]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -767,15 +848,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.These, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.These]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -783,15 +864,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Traced]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -799,15 +880,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Traced]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -815,13 +896,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Tree]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Tree, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Tree, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -829,23 +910,23 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Tree]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]]
   ] = js.native
   @JSName("sequence")
   def sequence_Tuple(
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Tuple],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Tuple]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -853,15 +934,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Tuple, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Tuple]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -869,15 +950,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Validation],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Validation]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -885,15 +966,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Validation, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Validation]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -901,15 +982,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Writer],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Writer]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -917,15 +998,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Writer, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Writer]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type2[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -933,13 +1014,13 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Zipper],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Zipper]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Zipper, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Zipper, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
     ]
   ] = js.native
   @JSName("sequence")
@@ -947,37 +1028,37 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative[F],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Zipper]
   ): js.Function1[
-    /* tfa */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6HKTMod.HKT[F, _]], 
-    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]]
+    /* tfa */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, fpDashTsLib.es6HKTMod.HKT[F, _]], 
+    fpDashTsLib.es6HKTMod.HKT[F, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]]
   ] = js.native
   def traverse(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
-    fpDashTsLib.es6HKTMod.Type[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ]
   ] = js.native
   def traverse(
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable2[
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
-    fpDashTsLib.es6HKTMod.Type[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   def traverse(
@@ -985,18 +1066,18 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def traverse(
@@ -1007,15 +1088,15 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   def traverse(
@@ -1023,19 +1104,19 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.IxIO | fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.IxIO, 
       _, 
       _, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def traverse(
@@ -1046,16 +1127,16 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
+      fpDashTsLib.es6HKTMod.Kind3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type3[
+    fpDashTsLib.es6HKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.IxIO, 
       _, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   def traverse[L](
@@ -1064,18 +1145,18 @@ object traversableNs extends js.Object {
       L
     ],
     T: fpDashTsLib.es6TraversableMod.Traversable1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       L, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   def traverse[LF](
@@ -1087,15 +1168,15 @@ object traversableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   def traverse[F, T](F: fpDashTsLib.es6ApplicativeMod.Applicative[F], T: fpDashTsLib.es6TraversableMod.Traversable[T]): js.Function2[
@@ -1108,14 +1189,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Array],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Array]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Array, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Array, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1123,15 +1204,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Const],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Const]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1139,15 +1220,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Const, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Const]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Const, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1155,15 +1236,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Either],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Either]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1171,15 +1252,27 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Either, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Either]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Either, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+    ]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Eq(
+    F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Eq],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Eq]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Eq, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Eq, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1187,15 +1280,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Free],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Free]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1203,15 +1296,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Free, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Free]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Free, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1219,14 +1312,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.FreeGroup],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.FreeGroup, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1234,11 +1327,11 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.IO],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.IO]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]], 
-    fpDashTsLib.es6HKTMod.Type[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.IO, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.IO, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1246,15 +1339,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.IOEither],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.IOEither]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1262,15 +1355,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.IOEither, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.IOEither]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1278,14 +1371,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Identity],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Identity]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Identity, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Identity, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1293,15 +1386,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Map],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Map]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1309,15 +1402,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Map, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Map]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Map, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1325,14 +1418,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1340,14 +1433,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1355,14 +1448,26 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Option],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Option, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Option, _]
+    ]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Ord(
+    F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Ord],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Ord]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Ord, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Ord, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1370,11 +1475,11 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Pair],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Pair]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]], 
-    fpDashTsLib.es6HKTMod.Type[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Pair, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Pair, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1382,15 +1487,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Reader],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Reader]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1398,15 +1503,30 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Reader, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Reader]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+    ]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Record(
+    F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Record],
+    T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Record]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]
+    ], 
+    fpDashTsLib.es6HKTMod.Kind[
+      fpDashTsLib.fpDashTsLibStrings.Record, 
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Record, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1414,15 +1534,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.State],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.State]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1430,15 +1550,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.State, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.State]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.State, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1446,15 +1566,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Store],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Store]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1462,15 +1582,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Store, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Store]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Store, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1478,14 +1598,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.StrMap],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.StrMap]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.StrMap, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1493,11 +1613,11 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Task],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Task]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
-    fpDashTsLib.es6HKTMod.Type[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Task, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Task, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1505,15 +1625,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.TaskEither],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.TaskEither]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1521,15 +1641,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.TaskEither, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.TaskEither]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1537,15 +1657,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.These],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.These]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1553,15 +1673,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.These, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.These]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.These, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1569,15 +1689,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Traced]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1585,15 +1705,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Traced]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Traced, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1601,11 +1721,11 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Tree]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]], 
-    fpDashTsLib.es6HKTMod.Type[
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]], 
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Tree, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Tree, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1613,15 +1733,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Tuple],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Tuple]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1629,15 +1749,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Tuple, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Tuple]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1645,15 +1765,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Validation],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Validation]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1661,15 +1781,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Validation, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Validation]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1677,15 +1797,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Writer],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Writer]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1693,15 +1813,15 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Writer, LF],
     T: fpDashTsLib.es6TraversableMod.Traversable2[fpDashTsLib.fpDashTsLibStrings.Writer]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, LF, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, LF, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type2[
+    fpDashTsLib.es6HKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       LF, 
-      fpDashTsLib.es6HKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      fpDashTsLib.es6HKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
     ]
   ] = js.native
   @JSName("traverse")
@@ -1709,14 +1829,14 @@ object traversableNs extends js.Object {
     F: fpDashTsLib.es6ApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Zipper],
     T: fpDashTsLib.es6TraversableMod.Traversable1[fpDashTsLib.fpDashTsLibStrings.Zipper]
   ): js.Function2[
-    /* ta */ fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _], 
+    /* ta */ fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
     ], 
-    fpDashTsLib.es6HKTMod.Type[
+    fpDashTsLib.es6HKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.Zipper, 
-      fpDashTsLib.es6HKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      fpDashTsLib.es6HKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
     ]
   ] = js.native
 }

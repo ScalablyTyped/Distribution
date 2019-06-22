@@ -26,7 +26,7 @@ trait ListProps[T] extends js.Object {
   var renderItem: js.UndefOr[
     js.Function2[/* item */ T, /* index */ scala.Double, reactLib.reactMod.ReactNode]
   ] = js.undefined
-  var rowKey: js.UndefOr[js.Any] = js.undefined
+  var rowKey: js.UndefOr[(js.Function1[/* item */ T, java.lang.String]) | java.lang.String] = js.undefined
   var size: js.UndefOr[ListSize] = js.undefined
   var split: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -51,7 +51,7 @@ object ListProps {
     pagination: antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false` = null,
     prefixCls: java.lang.String = null,
     renderItem: (/* item */ T, /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
-    rowKey: js.Any = null,
+    rowKey: (js.Function1[/* item */ T, java.lang.String]) | java.lang.String = null,
     size: ListSize = null,
     split: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null
@@ -73,7 +73,7 @@ object ListProps {
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction2(renderItem))
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
     if (style != null) __obj.updateDynamic("style")(style)

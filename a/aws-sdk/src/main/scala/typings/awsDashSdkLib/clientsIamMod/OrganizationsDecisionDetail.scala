@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait OrganizationsDecisionDetail extends js.Object {
   /**
-    * Specifies whether the simulated operation is allowed by the AWS Organizations service control policies that impact the simulated user's account.
+    * Specifies whether the simulated operation is allowed by the Organizations service control policies that impact the simulated user's account.
     */
   var AllowedByOrganizations: js.UndefOr[booleanType] = js.undefined
 }

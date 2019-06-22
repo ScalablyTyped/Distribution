@@ -45,6 +45,7 @@ object ^ extends js.Object {
     readConfig: js.Function1[/* path */ java.lang.String, RawConfigFile]
   ): IConfigurationFile = js.native
   def readConfigurationFile(filepath: java.lang.String): RawConfigFile = js.native
+  def stringifyConfiguration(configFile: IConfigurationFile): java.lang.String = js.native
   def useAsPath(directory: java.lang.String): scala.Boolean = js.native
 }
 

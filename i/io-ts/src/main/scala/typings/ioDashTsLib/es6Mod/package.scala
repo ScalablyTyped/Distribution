@@ -218,7 +218,7 @@ package object es6Mod {
   type UnknownC = UnknownType
   type UnknownRecordC = AnyDictionaryType
   type Validate[I, A] = js.Function2[/* i */ I, /* context */ Context, Validation[A]]
-  type Validation[A] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Either<Errors, A> */ js.Any
+  type Validation[A] = fpDashTsLib.libEitherMod.Either[Errors, A]
   type VoidC = VoidType
   type mixed = js.Any
 }

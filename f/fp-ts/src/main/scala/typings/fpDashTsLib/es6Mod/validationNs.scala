@@ -30,12 +30,13 @@ object validationNs extends js.Object {
   def getAlt[L](S: fpDashTsLib.es6SemigroupMod.Semigroup[L]): fpDashTsLib.es6AltMod.Alt2C[fpDashTsLib.fpDashTsLibStrings.Validation, L] = js.native
   def getApplicative[L](S: fpDashTsLib.es6SemigroupMod.Semigroup[L]): fpDashTsLib.es6ApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Validation, L] = js.native
   def getCompactable[L](ML: fpDashTsLib.es6MonoidMod.Monoid[L]): fpDashTsLib.es6CompactableMod.Compactable2C[fpDashTsLib.es6ValidationMod.URI, L] = js.native
+  def getEq[L, A](EL: fpDashTsLib.es6EqMod.Eq[L], EA: fpDashTsLib.es6EqMod.Eq[A]): fpDashTsLib.es6EqMod.Eq[fpDashTsLib.es6ValidationMod.Validation[L, A]] = js.native
   def getFilterable[L](ML: fpDashTsLib.es6MonoidMod.Monoid[L]): fpDashTsLib.es6FilterableMod.Filterable2C[fpDashTsLib.es6ValidationMod.URI, L] = js.native
   def getMonad[L](S: fpDashTsLib.es6SemigroupMod.Semigroup[L]): fpDashTsLib.es6MonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Validation, L] = js.native
   def getMonadThrow[L](S: fpDashTsLib.es6SemigroupMod.Semigroup[L]): fpDashTsLib.es6MonadThrowMod.MonadThrow2C[fpDashTsLib.fpDashTsLibStrings.Validation, L] = js.native
   def getMonoid[L, A](SL: fpDashTsLib.es6SemigroupMod.Semigroup[L], SA: fpDashTsLib.es6MonoidMod.Monoid[A]): fpDashTsLib.es6MonoidMod.Monoid[fpDashTsLib.es6ValidationMod.Validation[L, A]] = js.native
   def getSemigroup[L, A](SL: fpDashTsLib.es6SemigroupMod.Semigroup[L], SA: fpDashTsLib.es6SemigroupMod.Semigroup[A]): fpDashTsLib.es6SemigroupMod.Semigroup[fpDashTsLib.es6ValidationMod.Validation[L, A]] = js.native
-  def getSetoid[L, A](SL: fpDashTsLib.es6SetoidMod.Setoid[L], SA: fpDashTsLib.es6SetoidMod.Setoid[A]): fpDashTsLib.es6SetoidMod.Setoid[fpDashTsLib.es6ValidationMod.Validation[L, A]] = js.native
+  def getSetoid[L, A](EL: fpDashTsLib.es6EqMod.Eq[L], EA: fpDashTsLib.es6EqMod.Eq[A]): fpDashTsLib.es6EqMod.Eq[fpDashTsLib.es6ValidationMod.Validation[L, A]] = js.native
   def getShow[L, A](SL: fpDashTsLib.es6ShowMod.Show[L], SA: fpDashTsLib.es6ShowMod.Show[A]): fpDashTsLib.es6ShowMod.Show[fpDashTsLib.es6ValidationMod.Validation[L, A]] = js.native
   def getWitherable[L](ML: fpDashTsLib.es6MonoidMod.Monoid[L]): fpDashTsLib.es6WitherableMod.Witherable2C[fpDashTsLib.es6ValidationMod.URI, L] = js.native
   def isFailure[L, A](fa: fpDashTsLib.es6ValidationMod.Validation[L, A]): /* is fp-ts.fp-ts/es6/Validation.Failure<L, A> */ scala.Boolean = js.native

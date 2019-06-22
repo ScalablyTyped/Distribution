@@ -35,6 +35,10 @@ class VpcEndpointService protected ()
     */
   val baseEndpointDnsNames: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
+    * Whether or not the service manages its VPC endpoints - `true` or `false`.
+    */
+  val managesVpcEndpoints: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
+  /**
     * The ARNs of one or more Network Load Balancers for the endpoint service.
     */
   val networkLoadBalancerArns: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
@@ -54,6 +58,10 @@ class VpcEndpointService protected ()
     * The state of the VPC endpoint service.
     */
   val state: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

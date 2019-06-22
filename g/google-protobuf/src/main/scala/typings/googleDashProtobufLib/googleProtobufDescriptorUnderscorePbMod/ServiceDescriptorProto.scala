@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServiceDescriptorProto ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addMethod(): scala.Unit = js.native
-  def addMethod(value: MethodDescriptorProto): scala.Unit = js.native
-  def addMethod(value: MethodDescriptorProto, index: scala.Double): scala.Unit = js.native
+  def addMethod(): MethodDescriptorProto = js.native
+  def addMethod(value: MethodDescriptorProto): MethodDescriptorProto = js.native
+  def addMethod(value: MethodDescriptorProto, index: scala.Double): MethodDescriptorProto = js.native
   def clearMethodList(): scala.Unit = js.native
   def clearName(): scala.Unit = js.native
   def clearOptions(): scala.Unit = js.native
   def getMethodList(): js.Array[MethodDescriptorProto] = js.native
-  def getName(): java.lang.String = js.native
-  def getOptions(): ServiceOptions = js.native
+  def getName(): js.UndefOr[java.lang.String] = js.native
+  def getOptions(): js.UndefOr[ServiceOptions] = js.native
   def hasName(): scala.Boolean = js.native
   def hasOptions(): scala.Boolean = js.native
   def setMethodList(value: js.Array[MethodDescriptorProto]): scala.Unit = js.native

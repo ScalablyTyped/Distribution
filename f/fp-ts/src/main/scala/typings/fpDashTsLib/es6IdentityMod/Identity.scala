@@ -12,17 +12,25 @@ class Identity[A] protected () extends js.Object {
   val _A: A = js.native
   val _URI: URI = js.native
   val value: A = js.native
+  /** @obsolete */
   def alt(fx: Identity[A]): Identity[A] = js.native
+  /** @obsolete */
   def ap[B](fab: Identity[js.Function1[/* a */ A, B]]): Identity[B] = js.native
   /**
     * Flipped version of `ap`
+    * @obsolete
     */
   def ap_[B, C](`this`: Identity[js.Function1[/* b */ B, C]], fb: Identity[B]): Identity[C] = js.native
+  /** @obsolete */
   def chain[B](f: js.Function1[/* a */ A, Identity[B]]): Identity[B] = js.native
+  /** @obsolete */
   def extend[B](f: js.Function1[/* ea */ Identity[A], B]): Identity[B] = js.native
+  /** @obsolete */
   def extract(): A = js.native
+  /** @obsolete */
   def fold[B](f: js.Function1[/* a */ A, B]): B = js.native
   def inspect(): java.lang.String = js.native
+  /** @obsolete */
   def map[B](f: js.Function1[/* a */ A, B]): Identity[B] = js.native
   /**
     * Lazy version of `alt`
@@ -34,8 +42,10 @@ class Identity[A] protected () extends js.Object {
     * assert.deepStrictEqual(a.orElse(() => new Identity(2)), a)
     *
     * @since 1.6.0
+    * @obsolete
     */
   def orElse(fx: fpDashTsLib.es6FunctionMod.Lazy[Identity[A]]): Identity[A] = js.native
+  /** @obsolete */
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
 }
 

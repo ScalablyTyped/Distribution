@@ -16,6 +16,10 @@ object readerNs extends js.Object {
   
   val URI: fpDashTsLib.fpDashTsLibStrings.Reader = js.native
   val reader: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libProfunctorMod.Profunctor2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libStrongMod.Strong2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libChoiceMod.Choice2[fpDashTsLib.libReaderMod.URI] = js.native
+  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(apFirst, apSecond, chain, chainFirst, compose, flatten, map, promap) */ def ap[L, A](fa: fpDashTsLib.libReaderMod.Reader[L, A]): js.Function1[
+    /* fab */ fpDashTsLib.libReaderMod.Reader[L, js.Function1[/* a */ A, _]], 
+    fpDashTsLib.libReaderMod.Reader[L, _]
+  ] = js.native
   def ask[E](): fpDashTsLib.libReaderMod.Reader[E, E] = js.native
   def asks[E, A](f: js.Function1[/* e */ E, A]): fpDashTsLib.libReaderMod.Reader[E, A] = js.native
   def getMonoid[E, A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libReaderMod.Reader[E, A]] = js.native
@@ -24,5 +28,6 @@ object readerNs extends js.Object {
     /* fa */ fpDashTsLib.libReaderMod.Reader[E, _], 
     fpDashTsLib.libReaderMod.Reader[E2, _]
   ] = js.native
+  def of[A](a: A): fpDashTsLib.libReaderMod.Reader[_, A] = js.native
 }
 

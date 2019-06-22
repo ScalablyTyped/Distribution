@@ -20,7 +20,7 @@ class Organization protected ()
   def this(name: java.lang.String, args: OrganizationArgs) = this()
   def this(name: java.lang.String, args: OrganizationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * List of organization accounts (including the master account). All elements have these attributes:
+    * List of organization accounts including the master account. For a list excluding the master account, see the `non_master_accounts` attribute. All elements have these attributes:
     */
   val accounts: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ArnEmail]] = js.native
   /**
@@ -51,6 +51,10 @@ class Organization protected ()
     * Identifier of the master account
     */
   val masterAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
+    */
+  val nonMasterAccounts: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ArnEmail]] = js.native
   /**
     * List of organization roots. All elements have these attributes:
     */

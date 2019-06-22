@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-protobuf
 
-Typings are for version 3.2
+Typings are for version 3.7
 
 ## Library description:
 Protocol Buffers for JavaScript
@@ -35,9 +35,24 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for google-protobuf 3.2
+// package: google.protobuf
+// file: any.proto
+// file: api.proto
+// package: google.protobuf.compiler
+// file: compiler/plugin.proto
+// file: descriptor.proto
+// file: duration.proto
+// file: empty.proto
+// file: field_mask.proto
+// file: source_context.proto
+// file: struct.proto
+// file: timestamp.proto
+// file: type.proto
+// file: wrappers.proto
+// Type definitions for google-protobuf 3.7
 // Project: https://github.com/google/google-protobuf
 // Definitions by: Marcus Longmuir <https://github.com/marcuslongmuir>
+//                 Chaitanya Kamatham <https://github.com/kamthamc>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

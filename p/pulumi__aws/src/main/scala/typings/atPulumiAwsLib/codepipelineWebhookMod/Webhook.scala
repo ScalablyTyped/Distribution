@@ -35,6 +35,10 @@ class Webhook protected ()
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
     */
   val targetAction: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

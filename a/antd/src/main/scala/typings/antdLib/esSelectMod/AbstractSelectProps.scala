@@ -25,14 +25,18 @@ trait AbstractSelectProps extends js.Object {
   ] = js.undefined
   var dropdownStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var filterOption: js.UndefOr[
-    scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _])
+    scala.Boolean | (js.Function2[
+      /* inputValue */ java.lang.String, 
+      /* option */ reactLib.reactMod.ReactElement, 
+      scala.Boolean
+    ])
   ] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNode | scala.Null] = js.undefined
   var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ scala.Boolean, scala.Unit]] = js.undefined
-  var onSearch: js.UndefOr[js.Function1[/* value */ java.lang.String, _]] = js.undefined
+  var onSearch: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Unit]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
@@ -62,13 +66,17 @@ object AbstractSelectProps {
     dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
     dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNode = null,
     dropdownStyle: reactLib.reactMod.CSSProperties = null,
-    filterOption: scala.Boolean | (js.Function2[/* inputValue */ java.lang.String, /* option */ reactLib.reactMod.ReactElement, _]) = null,
+    filterOption: scala.Boolean | (js.Function2[
+      /* inputValue */ java.lang.String, 
+      /* option */ reactLib.reactMod.ReactElement, 
+      scala.Boolean
+    ]) = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: reactLib.reactMod.ReactNode = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
-    onSearch: /* value */ java.lang.String => _ = null,
+    onSearch: /* value */ java.lang.String => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,

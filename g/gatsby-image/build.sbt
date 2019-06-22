@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gatsby-image"
-version := "2.2.0-18a2b9"
+version := "2.2.1-011cc5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -45,6 +45,7 @@ object ^ extends js.Object {
   def objectify(arg: js.Any): js.Any = js.native
   def readBufferWithDetectedEncoding(buffer: nodeLib.Buffer): java.lang.String = js.native
   def stripComments(content: java.lang.String): java.lang.String = js.native
+  def trimSingleQuotes(str: java.lang.String): java.lang.String = js.native
   def tryResolvePackage(packageName: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def tryResolvePackage(packageName: java.lang.String, relativeTo: java.lang.String): js.UndefOr[java.lang.String] = js.native
 }

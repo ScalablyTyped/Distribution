@@ -27,6 +27,7 @@ trait InputOptions extends js.Object {
   var preserveModules: js.UndefOr[scala.Boolean] = js.undefined
   var preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined
   var shimMissingExports: js.UndefOr[scala.Boolean] = js.undefined
+  var strictDeprecations: js.UndefOr[scala.Boolean] = js.undefined
   var treeshake: js.UndefOr[scala.Boolean | TreeshakingOptions] = js.undefined
   var watch: js.UndefOr[WatcherOptions] = js.undefined
 }
@@ -53,6 +54,7 @@ object InputOptions {
     preserveModules: js.UndefOr[scala.Boolean] = js.undefined,
     preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
     shimMissingExports: js.UndefOr[scala.Boolean] = js.undefined,
+    strictDeprecations: js.UndefOr[scala.Boolean] = js.undefined,
     treeshake: scala.Boolean | TreeshakingOptions = null,
     watch: WatcherOptions = null
   ): InputOptions = {
@@ -76,6 +78,7 @@ object InputOptions {
     if (!js.isUndefined(preserveModules)) __obj.updateDynamic("preserveModules")(preserveModules)
     if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks)
     if (!js.isUndefined(shimMissingExports)) __obj.updateDynamic("shimMissingExports")(shimMissingExports)
+    if (!js.isUndefined(strictDeprecations)) __obj.updateDynamic("strictDeprecations")(strictDeprecations)
     if (treeshake != null) __obj.updateDynamic("treeshake")(treeshake.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(watch)
     __obj.asInstanceOf[InputOptions]

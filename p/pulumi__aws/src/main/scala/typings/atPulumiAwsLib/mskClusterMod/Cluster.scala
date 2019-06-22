@@ -23,11 +23,11 @@ class Cluster protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster.
+    * A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
     */
   val bootstrapBrokers: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster.
+    * A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
     */
   val bootstrapBrokersTls: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

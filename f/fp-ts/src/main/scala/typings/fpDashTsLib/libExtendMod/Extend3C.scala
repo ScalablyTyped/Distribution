@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait Extend3C[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L]
   extends fpDashTsLib.libFunctorMod.Functor3C[F, U, L] {
   def extend[A, B](
-    ea: fpDashTsLib.libHKTMod.Type3[F, U, L, A],
-    f: js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type3[F, U, L, A], B]
-  ): fpDashTsLib.libHKTMod.Type3[F, U, L, B]
+    ea: fpDashTsLib.libHKTMod.Kind3[F, U, L, A],
+    f: js.Function1[/* fa */ fpDashTsLib.libHKTMod.Kind3[F, U, L, A], B]
+  ): fpDashTsLib.libHKTMod.Kind3[F, U, L, B]
 }
 
 object Extend3C {
@@ -19,8 +19,8 @@ object Extend3C {
     URI: F,
     _L: L,
     _U: U,
-    extend: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any],
-    map: (fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
+    extend: (fpDashTsLib.libHKTMod.Kind3[F, U, L, js.Any], js.Function1[/* fa */ fpDashTsLib.libHKTMod.Kind3[F, U, L, js.Any], js.Any]) => fpDashTsLib.libHKTMod.Kind3[F, U, L, js.Any],
+    map: (fpDashTsLib.libHKTMod.Kind3[F, U, L, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Kind3[F, U, L, js.Any]
   ): Extend3C[F, U, L] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], extend = js.Any.fromFunction2(extend), map = js.Any.fromFunction2(map))
   

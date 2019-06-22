@@ -26,6 +26,10 @@ trait PipelineState extends js.Object {
   val stages: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]]
   ] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object PipelineState {
@@ -35,7 +39,8 @@ object PipelineState {
     artifactStore: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionKeyLocation] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]] = null
+    stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): PipelineState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -43,6 +48,7 @@ object PipelineState {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     if (stages != null) __obj.updateDynamic("stages")(stages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineState]
   }
 }

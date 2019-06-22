@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "gulp-svg-sprite"
-version := "1.2.9-dt-20190322Z-bbbe8a"
+version := "1.2.9-dt-20190322Z-a1f399"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-ba716b",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "svg-sprite" % "0.0-unknown-dt-20190322Z-8b9055",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-459738",
-  "org.scalablytyped" %%% "winston" % "3.2.1-d62820",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-cdf7ba")
+  "org.scalablytyped" %%% "svg-sprite" % "0.0-unknown-dt-20190322Z-0f8668",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-14d596",
+  "org.scalablytyped" %%% "winston" % "3.2.1-fa07e2",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-3dc6a2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

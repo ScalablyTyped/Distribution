@@ -12,6 +12,7 @@ class Traced[P, A] protected () extends js.Object {
   val _A: A = js.native
   val _L: P = js.native
   val _URI: URI = js.native
+  /** @obsolete */
   def map[B](f: js.Function1[/* a */ A, B]): Traced[P, B] = js.native
   def run(p: P): A = js.native
 }

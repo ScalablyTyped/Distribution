@@ -15,12 +15,12 @@ trait TabsProps extends js.Object {
   var onEdit: js.UndefOr[
     js.Function2[
       /* targetKey */ java.lang.String | (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), 
-      /* action */ js.Any, 
+      /* action */ antdLib.antdLibStrings.add | antdLib.antdLibStrings.remove, 
       scala.Unit
     ]
   ] = js.undefined
-  var onNextClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
-  var onPrevClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onNextClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onPrevClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
   var onTabClick: js.UndefOr[js.Function] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var renderTabBar: js.UndefOr[
@@ -50,9 +50,9 @@ object TabsProps {
     defaultActiveKey: java.lang.String = null,
     hideAdd: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: /* activeKey */ java.lang.String => scala.Unit = null,
-    onEdit: (/* targetKey */ java.lang.String | (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), /* action */ js.Any) => scala.Unit = null,
-    onNextClick: reactLib.reactMod.MouseEventHandler[_] = null,
-    onPrevClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    onEdit: (/* targetKey */ java.lang.String | (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), /* action */ antdLib.antdLibStrings.add | antdLib.antdLibStrings.remove) => scala.Unit = null,
+    onNextClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
+    onPrevClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
     onTabClick: js.Function = null,
     prefixCls: java.lang.String = null,
     renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ reactLib.reactMod.ReactNode) => reactLib.reactMod.ReactElement = null,

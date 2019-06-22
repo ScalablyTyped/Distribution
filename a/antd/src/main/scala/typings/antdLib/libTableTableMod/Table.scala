@@ -62,7 +62,7 @@ trait Table[T]
     selectionKey: java.lang.String,
     index: scala.Double,
     onSelectFunc: antdLib.libTableInterfaceMod.SelectionItemSelectFn
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def handleShowSizeChange(current: scala.Double, pageSize: scala.Double): scala.Unit = js.native
   def hasPagination(): scala.Boolean = js.native
   def hasPagination(props: js.Any): scala.Boolean = js.native
@@ -72,7 +72,7 @@ trait Table[T]
   def isSameColumn(a: antdLib.libTableInterfaceMod.ColumnProps[T], b: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
   def isSameColumn(a: scala.Null, b: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
   def isSortColumn(column: antdLib.libTableInterfaceMod.ColumnProps[T]): scala.Boolean = js.native
-  def onRow(prefixCls: java.lang.String, record: T, index: scala.Double): js.Any = js.native
+  def onRow(prefixCls: java.lang.String, record: T, index: scala.Double): antdLib.Anon_ArgOnClick = js.native
   def prepareParamsArguments(state: js.Any): antdLib.libTableInterfaceMod.PrepareParamsArgumentsReturn[T] = js.native
   def recursiveSort(data: js.Array[T], sorterFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]): js.Array[T] = js.native
   def renderColumnTitle(): reactLib.reactMod.ReactNode = js.native

@@ -9,7 +9,7 @@ trait FilterMenuState[T] extends js.Object {
   var keyPathOfSelectedItem: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var prevProps: FilterMenuProps[T]
   var selectedKeys: js.Array[java.lang.String]
-  var valueKeys: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var valueKeys: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object FilterMenuState {
     keyPathOfSelectedItem: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     prevProps: FilterMenuProps[T],
     selectedKeys: js.Array[java.lang.String],
-    valueKeys: org.scalablytyped.runtime.StringDictionary[js.Any],
+    valueKeys: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): FilterMenuState[T] = {
     val __obj = js.Dynamic.literal(keyPathOfSelectedItem = keyPathOfSelectedItem, prevProps = prevProps, selectedKeys = selectedKeys, valueKeys = valueKeys)

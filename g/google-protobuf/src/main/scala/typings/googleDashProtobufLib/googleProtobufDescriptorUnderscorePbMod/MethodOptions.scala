@@ -9,14 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class MethodOptions ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def addUninterpretedOption(): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption): scala.Unit = js.native
-  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): scala.Unit = js.native
+  def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
+  def addUninterpretedOption(value: UninterpretedOption, index: scala.Double): UninterpretedOption = js.native
   def clearDeprecated(): scala.Unit = js.native
   def clearIdempotencyLevel(): scala.Unit = js.native
   def clearUninterpretedOptionList(): scala.Unit = js.native
-  def getDeprecated(): scala.Boolean = js.native
-  def getIdempotencyLevel(): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.MethodOptionsNs.IdempotencyLevel = js.native
+  def getDeprecated(): js.UndefOr[scala.Boolean] = js.native
+  def getIdempotencyLevel(): js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.MethodOptionsNs.IdempotencyLevel
+  ] = js.native
   def getUninterpretedOptionList(): js.Array[UninterpretedOption] = js.native
   def hasDeprecated(): scala.Boolean = js.native
   def hasIdempotencyLevel(): scala.Boolean = js.native

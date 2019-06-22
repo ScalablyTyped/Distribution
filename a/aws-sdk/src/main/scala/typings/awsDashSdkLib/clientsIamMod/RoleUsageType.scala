@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RoleUsageType extends js.Object {
   /**
-    * The name of the region where the service-linked role is being used.
+    * The name of the Region where the service-linked role is being used.
     */
   var Region: js.UndefOr[RegionNameType] = js.undefined
   /**

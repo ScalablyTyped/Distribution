@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Ord[A]
-  extends fpDashTsLib.es6SetoidMod.Setoid[A] {
+  extends fpDashTsLib.es6EqMod.Eq[A] {
   def compare(x: A, y: A): fpDashTsLib.es6OrderingMod.Ordering
 }
 

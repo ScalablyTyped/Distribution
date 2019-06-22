@@ -17,7 +17,7 @@ trait TopicRuleState extends js.Object {
     */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val dynamodb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HashKeyFieldHashKeyType]] = js.undefined
-  val elasticsearch: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointIdIndex]] = js.undefined
+  val elasticsearch: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointIdIndexRoleArn]] = js.undefined
   /**
     * Specifies whether the rule is enabled.
     */
@@ -51,7 +51,7 @@ object TopicRuleState {
     cloudwatchMetric: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MetricNameMetricNamespace] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     dynamodb: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HashKeyFieldHashKeyType] = null,
-    elasticsearch: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointIdIndex] = null,
+    elasticsearch: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointIdIndexRoleArn] = null,
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     firehose: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeliveryStreamNameRoleArn] = null,
     kinesis: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PartitionKeyRoleArn] = null,

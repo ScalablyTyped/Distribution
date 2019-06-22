@@ -8,14 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/es6", "ord")
 @js.native
 object ordNs extends js.Object {
+  val URI: fpDashTsLib.fpDashTsLibStrings.Ord = js.native
+  val ord: fpDashTsLib.es6ContravariantMod.Contravariant1[fpDashTsLib.es6OrdMod.URI] = js.native
   val ordBoolean: fpDashTsLib.es6OrdMod.Ord[scala.Boolean] = js.native
   val ordDate: fpDashTsLib.es6OrdMod.Ord[stdLib.Date] = js.native
   val ordNumber: fpDashTsLib.es6OrdMod.Ord[scala.Double] = js.native
   val ordString: fpDashTsLib.es6OrdMod.Ord[java.lang.String] = js.native
   def between[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, scala.Boolean]] = js.native
   def clamp[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, A]] = js.native
-  def contramap[A, B](f: js.Function1[/* b */ B, A], fa: fpDashTsLib.es6OrdMod.Ord[A]): fpDashTsLib.es6OrdMod.Ord[B] = js.native
+  def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* O */ fpDashTsLib.es6OrdMod.Ord[A], fpDashTsLib.es6OrdMod.Ord[B]] = js.native
+  def contramap[A, B](f: js.Function1[/* b */ B, A], O: fpDashTsLib.es6OrdMod.Ord[A]): fpDashTsLib.es6OrdMod.Ord[B] = js.native
   def fromCompare[A](compare: js.Function2[/* x */ A, /* y */ A, fpDashTsLib.es6OrderingMod.Ordering]): fpDashTsLib.es6OrdMod.Ord[A] = js.native
+  def geq[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def getDualOrd[A](O: fpDashTsLib.es6OrdMod.Ord[A]): fpDashTsLib.es6OrdMod.Ord[A] = js.native
   def getProductOrd[A, B](OA: fpDashTsLib.es6OrdMod.Ord[A], OB: fpDashTsLib.es6OrdMod.Ord[B]): fpDashTsLib.es6OrdMod.Ord[js.Tuple2[A, B]] = js.native
   def getSemigroup[A](): fpDashTsLib.es6SemigroupMod.Semigroup[fpDashTsLib.es6OrdMod.Ord[A]] = js.native
@@ -28,8 +32,11 @@ object ordNs extends js.Object {
   ] = js.native
   def greaterThan[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def greaterThanOrEq[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def gt[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def leq[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def lessThan[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def lessThanOrEq[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def lt[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def max[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, A] = js.native
   def min[A](O: fpDashTsLib.es6OrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, A] = js.native
   def unsafeCompare(x: js.Any, y: js.Any): fpDashTsLib.es6OrderingMod.Ordering = js.native

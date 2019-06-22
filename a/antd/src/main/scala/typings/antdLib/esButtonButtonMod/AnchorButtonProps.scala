@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  href  :string,   target ? :string,   onClick ? :react.react.MouseEventHandler<any>} & antd.antd/es/button/button.BaseButtonProps & antd.antd/es/_util/type.Omit<react.react.AnchorHTMLAttributes<any>, 'type'> */
+/* Inlined {  href  :string,   target ? :string,   onClick ? :react.react.MouseEventHandler<std.HTMLElement>} & antd.antd/es/button/button.BaseButtonProps & antd.antd/es/_util/type.Omit<react.react.AnchorHTMLAttributes<unknown>, 'type' | 'onClick'> */
 trait AnchorButtonProps extends js.Object {
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
@@ -124,7 +124,7 @@ trait AnchorButtonProps extends js.Object {
   var onCanPlayThroughCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[_]] = js.undefined
   var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[_]] = js.undefined
   var onChangeCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[_]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
   var onClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var onCompositionEnd: js.UndefOr[reactLib.reactMod.CompositionEventHandler[_]] = js.undefined
   var onCompositionEndCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[_]] = js.undefined
@@ -387,7 +387,7 @@ object AnchorButtonProps {
     onCanPlay: reactLib.reactMod.ReactEventHandler[_] = null,
     onCanPlayThrough: reactLib.reactMod.ReactEventHandler[_] = null,
     onChange: reactLib.reactMod.FormEventHandler[_] = null,
-    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
     onCompositionEnd: reactLib.reactMod.CompositionEventHandler[_] = null,
     onCompositionStart: reactLib.reactMod.CompositionEventHandler[_] = null,
     onCompositionUpdate: reactLib.reactMod.CompositionEventHandler[_] = null,

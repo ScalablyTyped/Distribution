@@ -11,16 +11,16 @@ object GeneratedCodeInfoNs extends js.Object {
   @js.native
   class Annotation ()
     extends googleDashProtobufLib.googleDashProtobufMod.Message {
-    def addPath(value: scala.Double): scala.Unit = js.native
-    def addPath(value: scala.Double, index: scala.Double): scala.Unit = js.native
+    def addPath(value: scala.Double): scala.Double = js.native
+    def addPath(value: scala.Double, index: scala.Double): scala.Double = js.native
     def clearBegin(): scala.Unit = js.native
     def clearEnd(): scala.Unit = js.native
     def clearPathList(): scala.Unit = js.native
     def clearSourceFile(): scala.Unit = js.native
-    def getBegin(): scala.Double = js.native
-    def getEnd(): scala.Double = js.native
+    def getBegin(): js.UndefOr[scala.Double] = js.native
+    def getEnd(): js.UndefOr[scala.Double] = js.native
     def getPathList(): js.Array[scala.Double] = js.native
-    def getSourceFile(): java.lang.String = js.native
+    def getSourceFile(): js.UndefOr[java.lang.String] = js.native
     def hasBegin(): scala.Boolean = js.native
     def hasEnd(): scala.Boolean = js.native
     def hasSourceFile(): scala.Boolean = js.native

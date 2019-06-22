@@ -9,7 +9,7 @@ trait StepProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
   var status: js.UndefOr[
     antdLib.antdLibStrings.wait | antdLib.antdLibStrings.process | antdLib.antdLibStrings.finish | antdLib.antdLibStrings.error
   ] = js.undefined
@@ -23,7 +23,7 @@ object StepProps {
     className: java.lang.String = null,
     description: reactLib.reactMod.ReactNode = null,
     icon: reactLib.reactMod.ReactNode = null,
-    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
     status: antdLib.antdLibStrings.wait | antdLib.antdLibStrings.process | antdLib.antdLibStrings.finish | antdLib.antdLibStrings.error = null,
     style: reactLib.reactMod.CSSProperties = null,
     title: reactLib.reactMod.ReactNode = null

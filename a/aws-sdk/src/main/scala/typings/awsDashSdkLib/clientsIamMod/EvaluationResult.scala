@@ -23,7 +23,7 @@ trait EvaluationResult extends js.Object {
     */
   var EvalResourceName: js.UndefOr[ResourceNameType] = js.undefined
   /**
-    * A list of the statements in the input policies that determine the result for this scenario. Remember that even if multiple statements allow the operation on the resource, if only one statement denies that operation, then the explicit deny overrides any allow. Inaddition, the deny statement is the only entry included in the result.
+    * A list of the statements in the input policies that determine the result for this scenario. Remember that even if multiple statements allow the operation on the resource, if only one statement denies that operation, then the explicit deny overrides any allow. In addition, the deny statement is the only entry included in the result.
     */
   var MatchedStatements: js.UndefOr[StatementListType] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait EvaluationResult extends js.Object {
     */
   var MissingContextValues: js.UndefOr[ContextKeyNamesResultListType] = js.undefined
   /**
-    * A structure that details how AWS Organizations and its service control policies affect the results of the simulation. Only applies if the simulated user's account is part of an organization.
+    * A structure that details how Organizations and its service control policies affect the results of the simulation. Only applies if the simulated user's account is part of an organization.
     */
   var OrganizationsDecisionDetail: js.UndefOr[OrganizationsDecisionDetail] = js.undefined
   /**

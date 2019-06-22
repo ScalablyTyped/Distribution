@@ -56,6 +56,12 @@ trait TaskDefinitionState extends js.Object {
     ]
   ] = js.undefined
   /**
+    * The proxy configuration details for the App Mesh proxy.
+    */
+  val proxyConfiguration: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ContainerNameKeyProperties]
+  ] = js.undefined
+  /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
   val requiresCompatibilities: js.UndefOr[
@@ -100,6 +106,7 @@ object TaskDefinitionState {
     placementConstraints: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExpressionTypeInput]]
     ] = null,
+    proxyConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ContainerNameKeyProperties] = null,
     requiresCompatibilities: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     revision: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
@@ -121,6 +128,7 @@ object TaskDefinitionState {
     if (networkMode != null) __obj.updateDynamic("networkMode")(networkMode.asInstanceOf[js.Any])
     if (pidMode != null) __obj.updateDynamic("pidMode")(pidMode.asInstanceOf[js.Any])
     if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
+    if (proxyConfiguration != null) __obj.updateDynamic("proxyConfiguration")(proxyConfiguration.asInstanceOf[js.Any])
     if (requiresCompatibilities != null) __obj.updateDynamic("requiresCompatibilities")(requiresCompatibilities.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

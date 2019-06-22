@@ -47,6 +47,10 @@ trait Options extends js.Object {
     */
   var outputAbsolutePaths: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Outputs the configuration to be used instead of linting.
+    */
+  var printConfig: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * tsconfig.json file.
     */
   var project: js.UndefOr[java.lang.String] = js.undefined
@@ -82,6 +86,7 @@ object Options {
     init: js.UndefOr[scala.Boolean] = js.undefined,
     out: java.lang.String = null,
     outputAbsolutePaths: js.UndefOr[scala.Boolean] = js.undefined,
+    printConfig: js.UndefOr[scala.Boolean] = js.undefined,
     project: java.lang.String = null,
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
     rulesDirectory: java.lang.String | js.Array[java.lang.String] = null,
@@ -97,6 +102,7 @@ object Options {
     if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
     if (out != null) __obj.updateDynamic("out")(out)
     if (!js.isUndefined(outputAbsolutePaths)) __obj.updateDynamic("outputAbsolutePaths")(outputAbsolutePaths)
+    if (!js.isUndefined(printConfig)) __obj.updateDynamic("printConfig")(printConfig)
     if (project != null) __obj.updateDynamic("project")(project)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
     if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])

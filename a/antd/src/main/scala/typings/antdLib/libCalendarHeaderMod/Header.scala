@@ -21,7 +21,7 @@ trait Header
   def getMonthsLocale(value: momentLib.momentMod.Moment): js.Array[_] = js.native
   def getTypeSwitch(): reactLib.reactMod.Global.JSXNs.Element = js.native
   def getYearSelectElement(prefixCls: java.lang.String, year: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def headerRenderCustom(): reactLib.reactMod.ReactNode = js.native
+  def headerRenderCustom(headerRender: HeaderRender): reactLib.reactMod.ReactNode = js.native
   def onInternalTypeChange(e: antdLib.libRadioInterfaceMod.RadioChangeEvent): scala.Unit = js.native
   def onMonthChange(month: java.lang.String): scala.Unit = js.native
   def onTypeChange(`type`: java.lang.String): scala.Unit = js.native

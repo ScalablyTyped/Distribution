@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 trait Wilt[W] extends js.Object {
   def apply(
     F: fpDashTsLib.libApplicativeMod.Applicative1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ]
   ): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[W, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.libEitherMod.Either[_, _]]
+      fpDashTsLib.libHKTMod.Kind[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.libEitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.libHKTMod.Type[
+    fpDashTsLib.libHKTMod.Kind[
       fpDashTsLib.fpDashTsLibStrings.StrMap, 
       fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[W, _], fpDashTsLib.libHKTMod.HKT[W, _]]
     ]
@@ -30,9 +30,9 @@ trait Wilt[W] extends js.Object {
     /* wa */ fpDashTsLib.libHKTMod.HKT[W, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.libEitherMod.Either[_, _]]
+      fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, _, fpDashTsLib.libEitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.libHKTMod.Type2[
+    fpDashTsLib.libHKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
       fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[W, _], fpDashTsLib.libHKTMod.HKT[W, _]]
@@ -46,14 +46,14 @@ trait Wilt[W] extends js.Object {
     /* wa */ fpDashTsLib.libHKTMod.HKT[W, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type3[
+      fpDashTsLib.libHKTMod.Kind3[
         fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
         _, 
         _, 
         fpDashTsLib.libEitherMod.Either[_, _]
       ]
     ], 
-    fpDashTsLib.libHKTMod.Type3[
+    fpDashTsLib.libHKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       _, 
       _, 
@@ -80,9 +80,9 @@ trait Wilt[W] extends js.Object {
     /* wa */ fpDashTsLib.libHKTMod.HKT[W, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.libEitherMod.Either[_, _]]
+      fpDashTsLib.libHKTMod.Kind2[fpDashTsLib.fpDashTsLibStrings.Writer, FL, fpDashTsLib.libEitherMod.Either[_, _]]
     ], 
-    fpDashTsLib.libHKTMod.Type2[
+    fpDashTsLib.libHKTMod.Kind2[
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       FL, 
       fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[W, _], fpDashTsLib.libHKTMod.HKT[W, _]]
@@ -98,14 +98,14 @@ trait Wilt[W] extends js.Object {
     /* wa */ fpDashTsLib.libHKTMod.HKT[W, _], 
     /* f */ js.Function1[
       /* a */ js.Any, 
-      fpDashTsLib.libHKTMod.Type3[
+      fpDashTsLib.libHKTMod.Kind3[
         fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
         FU, 
         FL, 
         fpDashTsLib.libEitherMod.Either[_, _]
       ]
     ], 
-    fpDashTsLib.libHKTMod.Type3[
+    fpDashTsLib.libHKTMod.Kind3[
       fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, 
       FU, 
       FL, 

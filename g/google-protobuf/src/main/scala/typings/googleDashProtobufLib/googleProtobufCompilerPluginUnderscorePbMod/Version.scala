@@ -13,10 +13,10 @@ class Version ()
   def clearMinor(): scala.Unit = js.native
   def clearPatch(): scala.Unit = js.native
   def clearSuffix(): scala.Unit = js.native
-  def getMajor(): scala.Double = js.native
-  def getMinor(): scala.Double = js.native
-  def getPatch(): scala.Double = js.native
-  def getSuffix(): java.lang.String = js.native
+  def getMajor(): js.UndefOr[scala.Double] = js.native
+  def getMinor(): js.UndefOr[scala.Double] = js.native
+  def getPatch(): js.UndefOr[scala.Double] = js.native
+  def getSuffix(): js.UndefOr[java.lang.String] = js.native
   def hasMajor(): scala.Boolean = js.native
   def hasMinor(): scala.Boolean = js.native
   def hasPatch(): scala.Boolean = js.native

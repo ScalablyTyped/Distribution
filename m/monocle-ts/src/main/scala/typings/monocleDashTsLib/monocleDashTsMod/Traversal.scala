@@ -117,6 +117,17 @@ class Traversal[S, A] protected () extends js.Object {
     ]
   ] = js.native
   @JSName("modifyF")
+  def modifyF_Eq(F: fpDashTsLib.libApplicativeMod.Applicative1[monocleDashTsLib.monocleDashTsLibStrings.Eq]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ A, 
+      fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Eq, A]
+    ], 
+    js.Function1[
+      /* s */ S, 
+      fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Eq, S]
+    ]
+  ] = js.native
+  @JSName("modifyF")
   def modifyF_Free(F: fpDashTsLib.libApplicativeMod.Applicative2[monocleDashTsLib.monocleDashTsLibStrings.Free]): js.Function1[
     /* f */ js.Function1[
       /* a */ A, 
@@ -279,6 +290,17 @@ class Traversal[S, A] protected () extends js.Object {
     ]
   ] = js.native
   @JSName("modifyF")
+  def modifyF_Ord(F: fpDashTsLib.libApplicativeMod.Applicative1[monocleDashTsLib.monocleDashTsLibStrings.Ord]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ A, 
+      fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Ord, A]
+    ], 
+    js.Function1[
+      /* s */ S, 
+      fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Ord, S]
+    ]
+  ] = js.native
+  @JSName("modifyF")
   def modifyF_Pair(F: fpDashTsLib.libApplicativeMod.Applicative1[monocleDashTsLib.monocleDashTsLibStrings.Pair]): js.Function1[
     /* f */ js.Function1[
       /* a */ A, 
@@ -335,6 +357,17 @@ class Traversal[S, A] protected () extends js.Object {
     js.Function1[
       /* s */ S, 
       fpDashTsLib.libHKTMod.Type3[monocleDashTsLib.monocleDashTsLibStrings.ReaderTaskEither, U, L, S]
+    ]
+  ] = js.native
+  @JSName("modifyF")
+  def modifyF_Record(F: fpDashTsLib.libApplicativeMod.Applicative1[monocleDashTsLib.monocleDashTsLibStrings.Record]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ A, 
+      fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Record, A]
+    ], 
+    js.Function1[
+      /* s */ S, 
+      fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Record, S]
     ]
   ] = js.native
   @JSName("modifyF")

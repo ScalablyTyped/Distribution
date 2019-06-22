@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait Foldable2vComposition12C[F /* <: fpDashTsLib.es6HKTMod.URIS */, G /* <: fpDashTsLib.es6HKTMod.URIS2 */, LG]
   extends fpDashTsLib.es6FoldableMod.FoldableComposition12C[F, G, LG] {
   def foldMap[M](M: fpDashTsLib.es6MonoidMod.Monoid[M]): js.Function2[
-    /* fa */ fpDashTsLib.es6HKTMod.Type[F, fpDashTsLib.es6HKTMod.Type2[G, LG, _]], 
+    /* fa */ fpDashTsLib.es6HKTMod.Kind[F, fpDashTsLib.es6HKTMod.Kind2[G, LG, _]], 
     /* f */ js.Function1[/* a */ js.Any, M], 
     M
   ]
   def foldr[A, B](
-    fa: fpDashTsLib.es6HKTMod.Type[F, fpDashTsLib.es6HKTMod.Type2[G, LG, A]],
+    fa: fpDashTsLib.es6HKTMod.Kind[F, fpDashTsLib.es6HKTMod.Kind2[G, LG, A]],
     b: B,
     f: js.Function2[/* a */ A, /* b */ B, B]
   ): B
@@ -23,12 +23,12 @@ object Foldable2vComposition12C {
   @scala.inline
   def apply[F /* <: fpDashTsLib.es6HKTMod.URIS */, G /* <: fpDashTsLib.es6HKTMod.URIS2 */, LG](
     foldMap: fpDashTsLib.es6MonoidMod.Monoid[js.Any] => js.Function2[
-      /* fa */ fpDashTsLib.es6HKTMod.Type[F, fpDashTsLib.es6HKTMod.Type2[G, LG, _]], 
+      /* fa */ fpDashTsLib.es6HKTMod.Kind[F, fpDashTsLib.es6HKTMod.Kind2[G, LG, _]], 
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Any
     ],
-    foldr: (fpDashTsLib.es6HKTMod.Type[F, fpDashTsLib.es6HKTMod.Type2[G, LG, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any,
-    reduce: (fpDashTsLib.es6HKTMod.Type[F, fpDashTsLib.es6HKTMod.Type2[G, LG, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
+    foldr: (fpDashTsLib.es6HKTMod.Kind[F, fpDashTsLib.es6HKTMod.Kind2[G, LG, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any,
+    reduce: (fpDashTsLib.es6HKTMod.Kind[F, fpDashTsLib.es6HKTMod.Kind2[G, LG, js.Any]], js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
   ): Foldable2vComposition12C[F, G, LG] = {
     val __obj = js.Dynamic.literal(foldMap = js.Any.fromFunction1(foldMap), foldr = js.Any.fromFunction3(foldr), reduce = js.Any.fromFunction3(reduce))
   

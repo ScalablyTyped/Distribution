@@ -27,7 +27,7 @@ trait RemoteAccessSession extends js.Object {
     */
   var device: js.UndefOr[Device] = js.undefined
   /**
-    * The number of minutes a device is used in a remote access sesssion (including setup and teardown minutes).
+    * The number of minutes a device is used in a remote access session (including setup and teardown minutes).
     */
   var deviceMinutes: js.UndefOr[DeviceMinutes] = js.undefined
   /**

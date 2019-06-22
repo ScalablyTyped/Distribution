@@ -50,10 +50,8 @@ trait TableProps[T] extends js.Object {
   var onExpandedRowsChange: js.UndefOr[
     js.Function1[/* expandedRowKeys */ js.Array[scala.Double | java.lang.String], scala.Unit]
   ] = js.undefined
-  var onHeaderRow: js.UndefOr[
-    js.Function2[/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double, _]
-  ] = js.undefined
-  var onRow: js.UndefOr[js.Function2[/* record */ T, /* index */ scala.Double, _]] = js.undefined
+  var onHeaderRow: js.UndefOr[js.Function1[/* columns */ js.Array[ColumnProps[T]], TableEventListeners]] = js.undefined
+  var onRow: js.UndefOr[js.Function2[/* record */ T, /* index */ scala.Double, TableEventListeners]] = js.undefined
   var onRowClick: js.UndefOr[
     js.Function3[/* record */ T, /* index */ scala.Double, /* event */ stdLib.Event, scala.Unit]
   ] = js.undefined
@@ -104,8 +102,8 @@ object TableProps {
     onChange: (/* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, /* filters */ antdLib.RecordkeyofTArraystring, /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => scala.Unit = null,
     onExpand: (/* expanded */ scala.Boolean, /* record */ T) => scala.Unit = null,
     onExpandedRowsChange: /* expandedRowKeys */ js.Array[scala.Double | java.lang.String] => scala.Unit = null,
-    onHeaderRow: (/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double) => _ = null,
-    onRow: (/* record */ T, /* index */ scala.Double) => _ = null,
+    onHeaderRow: /* columns */ js.Array[ColumnProps[T]] => TableEventListeners = null,
+    onRow: (/* record */ T, /* index */ scala.Double) => TableEventListeners = null,
     onRowClick: (/* record */ T, /* index */ scala.Double, /* event */ stdLib.Event) => scala.Unit = null,
     pagination: antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false` = null,
     prefixCls: java.lang.String = null,
@@ -145,7 +143,7 @@ object TableProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
     if (onExpandedRowsChange != null) __obj.updateDynamic("onExpandedRowsChange")(js.Any.fromFunction1(onExpandedRowsChange))
-    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction2(onHeaderRow))
+    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction1(onHeaderRow))
     if (onRow != null) __obj.updateDynamic("onRow")(js.Any.fromFunction2(onRow))
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction3(onRowClick))
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ trait TreeProps extends js.Object {
   var checkable: js.UndefOr[scala.Boolean] = js.undefined
   /** （受控）选中复选框的树节点 */
   var checkedKeys: js.UndefOr[js.Array[java.lang.String] | antdLib.Anon_Checked] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** 默认选中复选框的树节点 */
   var defaultCheckedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -36,9 +36,11 @@ trait TreeProps extends js.Object {
   /** filter some AntTreeNodes as you need. it should return true */
   var filterAntTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, scala.Boolean]] = js.undefined
   var filterTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, scala.Boolean]] = js.undefined
-  var icon: js.UndefOr[js.Function1[/* nodeProps */ AntdTreeNodeAttribute, reactLib.reactMod.ReactNode]] = js.undefined
+  var icon: js.UndefOr[
+    (js.Function1[/* nodeProps */ AntdTreeNodeAttribute, reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
+  ] = js.undefined
   /** 异步加载数据 */
-  var loadData: js.UndefOr[js.Function1[/* node */ AntTreeNode, js.Thenable[_]]] = js.undefined
+  var loadData: js.UndefOr[js.Function1[/* node */ AntTreeNode, js.Thenable[scala.Unit]]] = js.undefined
   var loadedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** 是否支持多选 */
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
@@ -77,7 +79,7 @@ trait TreeProps extends js.Object {
     js.Function2[
       /* expandedKeys */ js.Array[java.lang.String], 
       /* info */ AntTreeNodeExpandedEvent, 
-      scala.Unit | js.Thenable[_]
+      scala.Unit | js.Thenable[scala.Unit]
     ]
   ] = js.undefined
   var onLoad: js.UndefOr[
@@ -115,7 +117,7 @@ object TreeProps {
     checkStrictly: js.UndefOr[scala.Boolean] = js.undefined,
     checkable: js.UndefOr[scala.Boolean] = js.undefined,
     checkedKeys: js.Array[java.lang.String] | antdLib.Anon_Checked = null,
-    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultCheckedKeys: js.Array[java.lang.String] = null,
     defaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined,
@@ -127,8 +129,8 @@ object TreeProps {
     expandedKeys: js.Array[java.lang.String] = null,
     filterAntTreeNode: /* node */ AntTreeNode => scala.Boolean = null,
     filterTreeNode: /* node */ AntTreeNode => scala.Boolean = null,
-    icon: /* nodeProps */ AntdTreeNodeAttribute => reactLib.reactMod.ReactNode = null,
-    loadData: /* node */ AntTreeNode => js.Thenable[_] = null,
+    icon: (js.Function1[/* nodeProps */ AntdTreeNodeAttribute, reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
+    loadData: /* node */ AntTreeNode => js.Thenable[scala.Unit] = null,
     loadedKeys: js.Array[java.lang.String] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     onCheck: (/* checkedKeys */ js.Array[java.lang.String] | antdLib.Anon_Checked, /* e */ AntTreeNodeCheckedEvent) => scala.Unit = null,
@@ -140,7 +142,7 @@ object TreeProps {
     onDragOver: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDragStart: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDrop: /* options */ AntTreeNodeDropEvent => scala.Unit = null,
-    onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[_] = null,
+    onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[scala.Unit] = null,
     onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_Event) => scala.Unit = null,
     onRightClick: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onSelect: (/* selectedKeys */ js.Array[java.lang.String], /* e */ AntTreeNodeSelectedEvent) => scala.Unit = null,
@@ -170,7 +172,7 @@ object TreeProps {
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys)
     if (filterAntTreeNode != null) __obj.updateDynamic("filterAntTreeNode")(js.Any.fromFunction1(filterAntTreeNode))
     if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(js.Any.fromFunction1(filterTreeNode))
-    if (icon != null) __obj.updateDynamic("icon")(js.Any.fromFunction1(icon))
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))
     if (loadedKeys != null) __obj.updateDynamic("loadedKeys")(loadedKeys)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)

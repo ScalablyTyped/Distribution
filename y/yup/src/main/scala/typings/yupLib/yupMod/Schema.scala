@@ -23,16 +23,8 @@ trait Schema[T] extends js.Object {
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
-  def notRequired(): this.type = js.native
-  def nullable(): Schema[T | scala.Null] = js.native
-  @JSName("nullable")
-  def nullable_false(isNullable: yupLib.yupLibNumbers.`false`): Schema[stdLib.Exclude[T, scala.Null]] = js.native
-  @JSName("nullable")
-  def nullable_true(isNullable: yupLib.yupLibNumbers.`true`): Schema[T | scala.Null] = js.native
   def oneOf(arrayOfValues: js.Array[_]): this.type = js.native
   def oneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
-  def required(): this.type = js.native
-  def required(message: TestOptionsMessage): this.type = js.native
   def strict(isStrict: scala.Boolean): this.type = js.native
   def strip(strip: scala.Boolean): this.type = js.native
   def test(

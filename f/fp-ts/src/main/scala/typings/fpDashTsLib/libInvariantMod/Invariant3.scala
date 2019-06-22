@@ -11,14 +11,14 @@ trait Invariant3[F /* <: fpDashTsLib.libHKTMod.URIS3 */] extends js.Object {
     fa: fpDashTsLib.libHKTMod.HKT3[F, U, L, A],
     f: js.Function1[/* a */ A, B],
     g: js.Function1[/* b */ B, A]
-  ): fpDashTsLib.libHKTMod.Type3[F, U, L, B]
+  ): fpDashTsLib.libHKTMod.Kind3[F, U, L, B]
 }
 
 object Invariant3 {
   @scala.inline
   def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
     URI: F,
-    imap: (fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    imap: (fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => fpDashTsLib.libHKTMod.Kind3[F, js.Any, js.Any, js.Any]
   ): Invariant3[F] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], imap = js.Any.fromFunction3(imap))
   

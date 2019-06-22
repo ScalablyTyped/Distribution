@@ -35,6 +35,10 @@ class VpcEndpoint protected ()
     */
   val networkInterfaceIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
+    * The ID of the AWS account that owns the VPC endpoint.
+    */
+  val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
@@ -47,6 +51,10 @@ class VpcEndpoint protected ()
     * Defaults to `false`.
     */
   val privateDnsEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
+    * Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
+    */
+  val requesterManaged: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * One or more route table IDs. Applicable for endpoints of type `Gateway`.
     */
@@ -67,6 +75,10 @@ class VpcEndpoint protected ()
     * The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `Interface`.
     */
   val subnetIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */

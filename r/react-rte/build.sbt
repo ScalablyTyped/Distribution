@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-rte"
-version := "0.16-dt-20181209Z-2159dd"
+version := "0.16-dt-20181209Z-158341"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190513Z-dd4219",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190621Z-6f1d80",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-ff2953",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",

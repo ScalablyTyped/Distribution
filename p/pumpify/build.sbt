@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pumpify"
-version := "1.4-dt-20181017Z-36be6b"
+version := "1.4-dt-20181017Z-29c2e4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-4fa0b3",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-b8909f",
+  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-b373dc",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

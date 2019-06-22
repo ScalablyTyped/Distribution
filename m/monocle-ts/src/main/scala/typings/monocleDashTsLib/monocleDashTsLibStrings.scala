@@ -19,6 +19,9 @@ object monocleDashTsLibStrings {
   sealed trait Either extends js.Object
   
   @js.native
+  sealed trait Eq extends js.Object
+  
+  @js.native
   sealed trait Fold extends js.Object
   
   @js.native
@@ -67,6 +70,9 @@ object monocleDashTsLibStrings {
   sealed trait Optional extends js.Object
   
   @js.native
+  sealed trait Ord extends js.Object
+  
+  @js.native
   sealed trait Pair extends js.Object
   
   @js.native
@@ -77,6 +83,9 @@ object monocleDashTsLibStrings {
   
   @js.native
   sealed trait ReaderTaskEither extends js.Object
+  
+  @js.native
+  sealed trait Record extends js.Object
   
   @js.native
   sealed trait Setter extends js.Object
@@ -129,6 +138,8 @@ object monocleDashTsLibStrings {
   @scala.inline
   def Either: Either = "Either".asInstanceOf[Either]
   @scala.inline
+  def Eq: Eq = "Eq".asInstanceOf[Eq]
+  @scala.inline
   def Fold: Fold = "Fold".asInstanceOf[Fold]
   @scala.inline
   def Free: Free = "Free".asInstanceOf[Free]
@@ -161,6 +172,8 @@ object monocleDashTsLibStrings {
   @scala.inline
   def Optional: Optional = "Optional".asInstanceOf[Optional]
   @scala.inline
+  def Ord: Ord = "Ord".asInstanceOf[Ord]
+  @scala.inline
   def Pair: Pair = "Pair".asInstanceOf[Pair]
   @scala.inline
   def Prism: Prism = "Prism".asInstanceOf[Prism]
@@ -168,6 +181,8 @@ object monocleDashTsLibStrings {
   def Reader: Reader = "Reader".asInstanceOf[Reader]
   @scala.inline
   def ReaderTaskEither: ReaderTaskEither = "ReaderTaskEither".asInstanceOf[ReaderTaskEither]
+  @scala.inline
+  def Record: Record = "Record".asInstanceOf[Record]
   @scala.inline
   def Setter: Setter = "Setter".asInstanceOf[Setter]
   @scala.inline

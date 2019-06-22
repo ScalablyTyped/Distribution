@@ -7,17 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait AsObject extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofOptionsNs.AsObject
+  var options: js.UndefOr[
+    googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofOptionsNs.AsObject
+  ] = js.undefined
 }
 
 object AsObject {
   @scala.inline
   def apply(
-    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofOptionsNs.AsObject,
-    name: java.lang.String = null
+    name: java.lang.String = null,
+    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofOptionsNs.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(options = options)
+    val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AsObject]
   }
 }

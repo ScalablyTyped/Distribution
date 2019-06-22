@@ -15,7 +15,7 @@ trait RuleState extends js.Object {
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The objects to include in a rule.
+    * The objects to include in a rule (documented below).
     */
   val predicates: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]]

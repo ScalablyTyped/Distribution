@@ -26,7 +26,9 @@ object DescriptorProtoNs extends js.Object {
     var oneofDeclList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofDescriptorProtoNs.AsObject
       ]
-    var options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.MessageOptionsNs.AsObject
+    var options: js.UndefOr[
+        googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.MessageOptionsNs.AsObject
+      ] = js.undefined
     var reservedNameList: js.Array[java.lang.String]
     var reservedRangeList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.ReservedRangeNs.AsObject
@@ -37,12 +39,19 @@ object DescriptorProtoNs extends js.Object {
   class ExtensionRange ()
     extends googleDashProtobufLib.googleDashProtobufMod.Message {
     def clearEnd(): scala.Unit = js.native
+    def clearOptions(): scala.Unit = js.native
     def clearStart(): scala.Unit = js.native
-    def getEnd(): scala.Double = js.native
-    def getStart(): scala.Double = js.native
+    def getEnd(): js.UndefOr[scala.Double] = js.native
+    def getOptions(): js.UndefOr[
+        googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ExtensionRangeOptions
+      ] = js.native
+    def getStart(): js.UndefOr[scala.Double] = js.native
     def hasEnd(): scala.Boolean = js.native
+    def hasOptions(): scala.Boolean = js.native
     def hasStart(): scala.Boolean = js.native
     def setEnd(value: scala.Double): scala.Unit = js.native
+    def setOptions(): scala.Unit = js.native
+    def setOptions(value: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ExtensionRangeOptions): scala.Unit = js.native
     def setStart(value: scala.Double): scala.Unit = js.native
   }
   
@@ -51,8 +60,8 @@ object DescriptorProtoNs extends js.Object {
     extends googleDashProtobufLib.googleDashProtobufMod.Message {
     def clearEnd(): scala.Unit = js.native
     def clearStart(): scala.Unit = js.native
-    def getEnd(): scala.Double = js.native
-    def getStart(): scala.Double = js.native
+    def getEnd(): js.UndefOr[scala.Double] = js.native
+    def getStart(): js.UndefOr[scala.Double] = js.native
     def hasEnd(): scala.Boolean = js.native
     def hasStart(): scala.Boolean = js.native
     def setEnd(value: scala.Double): scala.Unit = js.native
@@ -88,6 +97,9 @@ object DescriptorProtoNs extends js.Object {
   object ExtensionRangeNs extends js.Object {
     trait AsObject extends js.Object {
       var end: js.UndefOr[scala.Double] = js.undefined
+      var options: js.UndefOr[
+            googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ExtensionRangeOptionsNs.AsObject
+          ] = js.undefined
       var start: js.UndefOr[scala.Double] = js.undefined
     }
     

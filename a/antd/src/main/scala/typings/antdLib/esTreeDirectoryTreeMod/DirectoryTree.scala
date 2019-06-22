@@ -27,7 +27,7 @@ trait DirectoryTree
     event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
     node: antdLib.esTreeTreeMod.AntTreeNode
   ): scala.Unit = js.native
-  def onExpand(expandedKeys: js.Array[java.lang.String], info: antdLib.esTreeTreeMod.AntTreeNodeExpandedEvent): scala.Unit | js.Thenable[_] = js.native
+  def onExpand(expandedKeys: js.Array[java.lang.String], info: antdLib.esTreeTreeMod.AntTreeNodeExpandedEvent): scala.Unit | js.Thenable[scala.Unit] = js.native
   def onSelect(keys: js.Array[java.lang.String], event: antdLib.esTreeTreeMod.AntTreeNodeSelectedEvent): scala.Unit = js.native
   def renderDirectoryTree(hasGetPrefixCls: antdLib.esConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setTreeRef(node: antdLib.esTreeTreeMod.default): scala.Unit = js.native

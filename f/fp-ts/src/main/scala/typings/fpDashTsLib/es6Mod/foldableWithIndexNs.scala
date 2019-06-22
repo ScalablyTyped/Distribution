@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 object foldableWithIndexNs extends js.Object {
   def getFoldableWithIndexComposition[FI, GI](
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       FI
     ],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Task, FI, fpDashTsLib.fpDashTsLibStrings.Identity, GI] = js.native
   def getFoldableWithIndexComposition[FI, GI](
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       FI
     ],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2[
@@ -34,7 +34,7 @@ object foldableWithIndexNs extends js.Object {
       FI
     ],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition21[fpDashTsLib.fpDashTsLibStrings.State, FI, fpDashTsLib.fpDashTsLibStrings.Task, GI] = js.native
@@ -60,7 +60,7 @@ object foldableWithIndexNs extends js.Object {
       LF
     ],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition2C1[fpDashTsLib.fpDashTsLibStrings.State, FI, fpDashTsLib.fpDashTsLibStrings.Task, GI, LF] = js.native
@@ -89,7 +89,7 @@ object foldableWithIndexNs extends js.Object {
       LF
     ],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[
-      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
+      fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.Eq | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Ord | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.Record | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper, 
       GI
     ]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition3C1[fpDashTsLib.fpDashTsLibStrings.IxIO, FI, fpDashTsLib.fpDashTsLibStrings.Task, GI, UF, LF] = js.native
@@ -122,6 +122,11 @@ object foldableWithIndexNs extends js.Object {
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2[fpDashTsLib.fpDashTsLibStrings.Either, FI],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2C[fpDashTsLib.fpDashTsLibStrings.Either, GI, LG]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition22C[fpDashTsLib.fpDashTsLibStrings.Either, FI, fpDashTsLib.fpDashTsLibStrings.Either, GI, LG] = js.native
+  @JSName("getFoldableWithIndexComposition")
+  def getFoldableWithIndexComposition_Eq[FI, GI](
+    F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Eq, FI],
+    G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Eq, GI]
+  ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Eq, FI, fpDashTsLib.fpDashTsLibStrings.Eq, GI] = js.native
   @JSName("getFoldableWithIndexComposition")
   def getFoldableWithIndexComposition_Free[FI, GI](
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2[fpDashTsLib.fpDashTsLibStrings.Free, FI],
@@ -214,6 +219,11 @@ object foldableWithIndexNs extends js.Object {
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Option, GI]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Option, FI, fpDashTsLib.fpDashTsLibStrings.Option, GI] = js.native
   @JSName("getFoldableWithIndexComposition")
+  def getFoldableWithIndexComposition_Ord[FI, GI](
+    F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Ord, FI],
+    G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Ord, GI]
+  ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Ord, FI, fpDashTsLib.fpDashTsLibStrings.Ord, GI] = js.native
+  @JSName("getFoldableWithIndexComposition")
   def getFoldableWithIndexComposition_Pair[FI, GI](
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Pair, FI],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Pair, GI]
@@ -228,6 +238,11 @@ object foldableWithIndexNs extends js.Object {
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2[fpDashTsLib.fpDashTsLibStrings.Reader, FI],
     G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2C[fpDashTsLib.fpDashTsLibStrings.Reader, GI, LG]
   ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition22C[fpDashTsLib.fpDashTsLibStrings.Reader, FI, fpDashTsLib.fpDashTsLibStrings.Reader, GI, LG] = js.native
+  @JSName("getFoldableWithIndexComposition")
+  def getFoldableWithIndexComposition_Record[FI, GI](
+    F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Record, FI],
+    G: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.fpDashTsLibStrings.Record, GI]
+  ): fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndexComposition11[fpDashTsLib.fpDashTsLibStrings.Record, FI, fpDashTsLib.fpDashTsLibStrings.Record, GI] = js.native
   @JSName("getFoldableWithIndexComposition")
   def getFoldableWithIndexComposition_State[FI, GI](
     F: fpDashTsLib.es6FoldableWithIndexMod.FoldableWithIndex2[fpDashTsLib.fpDashTsLibStrings.State, FI],

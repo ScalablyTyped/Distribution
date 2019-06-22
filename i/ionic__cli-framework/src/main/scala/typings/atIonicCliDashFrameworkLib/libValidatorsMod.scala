@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libValidatorsMod extends js.Object {
   val validators: atIonicCliDashFrameworkLib.definitionsMod.Validators = js.native
+  def combine(validators: atIonicCliDashFrameworkLib.definitionsMod.Validator*): atIonicCliDashFrameworkLib.definitionsMod.Validator = js.native
   def contains(
     values: js.Array[js.UndefOr[java.lang.String]],
     hasCaseSensitive: atIonicCliDashFrameworkLib.Anon_CaseSensitive

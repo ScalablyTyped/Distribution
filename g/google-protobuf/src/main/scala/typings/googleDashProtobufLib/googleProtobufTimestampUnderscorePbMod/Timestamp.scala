@@ -9,12 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Timestamp ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
-  def fromDate(date: stdLib.Date): scala.Unit = js.native
   def getNanos(): scala.Double = js.native
   def getSeconds(): scala.Double = js.native
   def setNanos(value: scala.Double): scala.Unit = js.native
   def setSeconds(value: scala.Double): scala.Unit = js.native
-  def toDate(): stdLib.Date = js.native
 }
 
 /* static members */
