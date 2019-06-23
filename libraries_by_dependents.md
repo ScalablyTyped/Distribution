@@ -3346,6 +3346,7 @@
 | 21 | [angular-formly](./a/angular-formly) | AngularJS directive which takes JSON representing 
 | 21 | [apollo-server-caching](./a/apollo-server-caching) | -
 | 21 | [array_dot_prototype_dot_f](./a/array_dot_prototype_dot_flatmap) | An ESnext spec-compliant Array.prototype.flatMap s
+| 21 | [asciichart](./a/asciichart) | Nice-looking lightweight console ASCII line charts
 | 21 | [axe-webdriverjs](./a/axe-webdriverjs) | Provides a method to inject and analyze web pages 
 | 21 | [bootstrap-notify](./b/bootstrap-notify) | This is a simple plugin that turns standard Bootst
 | 21 | [chai-datetime](./c/chai-datetime) | date / time comparison matchers for chai
@@ -6324,6 +6325,7 @@
 | 0 | [lodash_dot_meanby](./l/lodash_dot_meanby) | The lodash method _.meanBy exported as a module.
 | 0 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module.
 | 0 | [lodash_dot_updatewith](./l/lodash_dot_updatewith) | The lodash method _.updateWith exported as a modul
+| 0 | [macaca-circular-json](./m/macaca-circular-json) | JSON does not handle circular references. This ver
 | 0 | [macrotask](./m/macrotask) | A cross browser macrotask library
 | 0 | [magic-number](./m/magic-number) | Determine a file's type from its magic number.
 | 0 | [magicsuggest](./m/magicsuggest) | MagicSuggest is a multiple selection auto suggest 

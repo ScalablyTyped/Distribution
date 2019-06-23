@@ -1950,6 +1950,7 @@
 | 0.717621703231578 | [issue-parser](./i/issue-parser) | Parser for Github, GitLab, Bitbucket and Waffle is
 | 0.717618790908011 | [convert-hrtime](./c/convert-hrtime) | Convert the result of process.hrtime() to seconds,
 | 0.7175981926291908 | [p-some](./p/p-some) | Wait for a specified number of promises to be fulf
+| 0.7175707202018311 | [asciichart](./a/asciichart) | Nice-looking lightweight console ASCII line charts
 | 0.7175415706086626 | [common-errors](./c/common-errors) | Common error classes and utility functions
 | 0.7174475732527461 | [mongoose-unique-validator](./m/mongoose-unique-validator) | mongoose-unique-validator is a plugin which adds p
 | 0.7174259636579821 | [insert-module-globals](./i/insert-module-globals) | insert implicit module globals into a module-deps 
@@ -4543,6 +4544,7 @@
 | 0.5218379453045908 | [es-feature-detection](./e/es-feature-detection) | ECMAScript feature and API detection
 | 0.5216145469926482 | [vimeo](./v/vimeo) | A Node.js library for the new Vimeo API.
 | 0.5214639616728743 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for 
+| 0.5212731608368102 | [macaca-circular-json](./m/macaca-circular-json) | JSON does not handle circular references. This ver
 | 0.5210665664308438 | [telebot](./t/telebot) | The easy way to write Telegram bots.
 | 0.5207804202437392 | [dagre-d3](./d/dagre-d3) | A D3-based renderer for Dagre
 | 0.5207563536779434 | [tingle_dot_js](./t/tingle_dot_js) | A simple modal plugin written in pure JavaScript

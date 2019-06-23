@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CreateSelectorInstance extends Options {
+trait CreateSelectorInstance
+  extends Options[js.Any, js.Any, js.Any]
+     with ParametricOptions[js.Any, js.Any, js.Any, js.Any] {
   def apply[S1, R1, T](selector1: reselectLib.reselectMod.Selector[S1, R1], combiner: js.Function1[/* res1 */ R1, T]): reselectLib.reselectMod.OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
   def apply[S, R1, T](
     selectors: js.Array[reselectLib.reselectMod.Selector[S, R1]],

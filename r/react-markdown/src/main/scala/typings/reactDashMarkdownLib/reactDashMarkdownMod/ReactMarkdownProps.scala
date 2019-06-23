@@ -28,21 +28,21 @@ trait ReactMarkdownProps extends js.Object {
   val source: js.UndefOr[java.lang.String] = js.undefined
   val sourcePos: js.UndefOr[scala.Boolean] = js.undefined
   val transformImageUri: js.UndefOr[
-    js.Function4[
+    (js.Function4[
       /* uri */ java.lang.String, 
       /* children */ js.UndefOr[reactLib.reactMod.ReactNode], 
       /* title */ js.UndefOr[java.lang.String], 
       /* alt */ js.UndefOr[java.lang.String], 
       java.lang.String
-    ]
+    ]) | scala.Null
   ] = js.undefined
   val transformLinkUri: js.UndefOr[
-    js.Function3[
+    (js.Function3[
       /* uri */ java.lang.String, 
       /* children */ js.UndefOr[reactLib.reactMod.ReactNode], 
       /* title */ js.UndefOr[java.lang.String], 
       java.lang.String
-    ]
+    ]) | scala.Null
   ] = js.undefined
   val unwrapDisallowed: js.UndefOr[scala.Boolean] = js.undefined
 }

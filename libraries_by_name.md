@@ -301,6 +301,7 @@
 | [asap](./a/asap) | High-priority task queue for Node.js and browsers | event, task, queue |
 | [ascii-art](./a/ascii-art) | Ansi codes, figlet fonts, and ascii art. 100% JS | ascii, figlet, ansi, terminal, text, command-line, logging, log, xterm, shell, 256, rgb, formatting, tty, styles, style, str, string, cli, console, terminal, table, compositing, colors, colour, color, chalk |
 | [ascii2mathml](./a/ascii2mathml) | The second AsciiMath – MathML converter | mathml, asciimath, asciimathml |
+| [asciichart](./a/asciichart) | Nice-looking lightweight console ASCII line charts | asciichart, ascii, chart, charting, charts, console, terminal, draw, box-drawing, box drawing, drawing, stats, line, linear, plot, graph, ascii graphics, graphics, command line, commandline, bash, shell, sh, light |
 | [asciify](./a/asciify) | Plain text awesomizer. A hybrid npm module and CLI | ascii, art, figlet, banner, text |
 | [asenv](./a/asenv) | NODE_ENV accessor | NODE_ENV |
 | [askmethat-rating](./a/askmethat-rating) | Simple plugin providing to use fonts as rating | rating, font, askmethat, plugin, font-awesome, glyphicon |
@@ -3742,6 +3743,7 @@
 | [lyricist](./l/lyricist) | Fetches song lyrics using the Genius.com API and w | lyric, lyrics, scrape, genius |
 | [lz-string](./l/lz-string) | LZ-based compression algorithm | lz, compression, string |
 | [lzma-native](./l/lzma-native) | Provides bindings to the native liblzma library (. | lzma, compression, crc32, xz, liblzma |
+| [macaca-circular-json](./m/macaca-circular-json) | JSON does not handle circular references. This ver | JSON, circular, reference, recursive, recursion, parse, stringify |
 | [macos-release](./m/macos-release) | Get the name and version of a macOS release from t | macos, os, darwin, operating, system, platform, name, title, release, version |
 | [macos-version](./m/macos-version) | Get or check the current macOS version | macos, os, darwin, operating, system, platform, version, release, semver, check, assert, condition |
 | [macrotask](./m/macrotask) | A cross browser macrotask library | - |

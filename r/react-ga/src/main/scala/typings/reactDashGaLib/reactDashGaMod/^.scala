@@ -18,9 +18,7 @@ object ^ extends js.Object {
   def event(args: EventArgs, trackerNames: TrackerNames): scala.Unit = js.native
   def exception(fieldsObject: FieldsObject): scala.Unit = js.native
   def exception(fieldsObject: FieldsObject, trackerNames: TrackerNames): scala.Unit = js.native
-  def ga(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): scala.Unit = js.native
+  def ga(args: js.Any*): js.Any = js.native
   def initialize(trackers: js.Array[Tracker]): scala.Unit = js.native
   def initialize(trackers: js.Array[Tracker], options: InitializeOptions): scala.Unit = js.native
   def initialize(trackingCode: java.lang.String): scala.Unit = js.native

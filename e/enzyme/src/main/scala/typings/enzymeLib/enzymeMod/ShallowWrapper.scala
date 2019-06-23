@@ -39,12 +39,20 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * Note: can only be called on a wrapper of a single node.
     */
   def closest[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
+  def dive[P2, S2](): ShallowWrapper[P2, S2, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
+  def dive[P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   /**
     * Shallow render the one non-DOM child of the current wrapper, and return a wrapper around the result.
     * NOTE: can only be called on wrapper of a single non-DOM component element node.
     */
-  def dive[P2, S2](): ShallowWrapper[P2, S2, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
-  def dive[P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
+  @JSName("dive")
+  def dive_C2ComponentP2S2[C2 /* <: reactLib.reactMod.Component[js.Object, js.Object, _] */, P2, S2](): ShallowWrapper[P2, S2, C2] = js.native
+  @JSName("dive")
+  def dive_C2ComponentP2S2[C2 /* <: reactLib.reactMod.Component[js.Object, js.Object, _] */, P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
+  @JSName("dive")
+  def dive_P2S2C2[P2, S2, C2](): ShallowWrapper[P2, S2, C2] = js.native
+  @JSName("dive")
+  def dive_P2S2C2[P2, S2, C2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
   def filter(props: EnzymePropSelector): ShallowWrapper[P, S, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   def filter(props: java.lang.String): ShallowWrapper[P, S, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   def filter[P2](component: ComponentType[P2]): ShallowWrapper[P2, _, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
