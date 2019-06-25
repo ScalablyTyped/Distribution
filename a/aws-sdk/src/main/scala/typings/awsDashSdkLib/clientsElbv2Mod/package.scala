@@ -130,6 +130,8 @@ package object clientsElbv2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.HTTPS
     - awsDashSdkLib.awsDashSdkLibStrings.TCP
     - awsDashSdkLib.awsDashSdkLibStrings.TLS
+    - awsDashSdkLib.awsDashSdkLibStrings.UDP
+    - awsDashSdkLib.awsDashSdkLibStrings.TCP_UDP
     - java.lang.String
   */
   type ProtocolEnum = _ProtocolEnum | java.lang.String

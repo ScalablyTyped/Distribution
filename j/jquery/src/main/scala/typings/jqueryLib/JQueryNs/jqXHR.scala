@@ -27,6 +27,8 @@ trait jqXHR[TResolve]
       scala.Nothing
     ] {
   var responseJSON: js.UndefOr[js.Any] = js.native
+  def abort(): scala.Unit = js.native
+  def abort(statusText: java.lang.String): scala.Unit = js.native
   def statusCode(map: jqueryLib.JQueryNs.AjaxNs.StatusCodeCallbacks[_]): scala.Unit = js.native
 }
 

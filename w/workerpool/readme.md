@@ -1,7 +1,7 @@
 
 # Scala.js typings for workerpool
 
-Typings are for version 2.3
+Typings are for version 3.1
 
 ## Library description:
 Offload tasks to a pool of workers on node.js and in the browser
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for workerpool 2.3
+// Type definitions for workerpool 3.1
 // Project: https://github.com/josdejong/workerpool
 // Definitions by: Alorel <https://github.com/Alorel>
 //                 Seulgi Kim <https://github.com/sgkim126>

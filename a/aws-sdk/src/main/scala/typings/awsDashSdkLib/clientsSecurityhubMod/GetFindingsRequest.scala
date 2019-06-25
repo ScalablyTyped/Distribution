@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait GetFindingsRequest extends js.Object {
   /**
-    * A collection of attributes that is used for querying findings.
+    * The findings attributes used to define a condition to filter the findings returned.
     */
   var Filters: js.UndefOr[AwsSecurityFindingFilters] = js.undefined
   /**
-    * Indicates the maximum number of items that you want in the response.
+    * The maximum number of findings to return.
     */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait GetFindingsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * A collection of attributes used for sorting findings.
+    * Findings attributes used to sort the list of findings returned.
     */
   var SortCriteria: js.UndefOr[SortCriteria] = js.undefined
 }

@@ -27,7 +27,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var CreatedAt: js.UndefOr[DateFilterList] = js.undefined
   /**
-    * The level of importance assigned to the resources associated with the finding. A score of 0 means the underlying resources have no criticality, and a score of 100 is reserved for the most critical resources.
+    * The level of importance assigned to the resources associated with the finding. A score of 0 means that the underlying resources have no criticality, and a score of 100 is reserved for the most critical resources.
     */
   var Criticality: js.UndefOr[NumberFilterList] = js.undefined
   /**
@@ -331,7 +331,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var UserDefinedFields: js.UndefOr[MapFilterList] = js.undefined
   /**
-    * The veracity of a finding. 
+    * The veracity of a finding.
     */
   var VerificationState: js.UndefOr[StringFilterList] = js.undefined
   /**

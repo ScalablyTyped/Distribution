@@ -1,7 +1,7 @@
 
 # Scala.js typings for lingui__react
 
-Typings are for version 2.5
+Typings are for version 2.8
 
 ## Library description:
 React components for translations
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for @lingui/react 2.5
+// Type definitions for @lingui/react 2.8
 // Project: https://lingui.github.io/js-lingui/, https://github.com/lingui/js-lingui
 // Definitions by: Jeow Li Huan <https://github.com/huan086>
 // Definitions: https://github.com/huan086/lingui-typings

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ImportFindingsError extends js.Object {
   /**
-    * The code of the error made during the BatchImportFindings operation. 
+    * The code of the error made during the BatchImportFindings operation.
     */
   var ErrorCode: NonEmptyString
   /**
-    * The message of the error made during the BatchImportFindings operation. 
+    * The message of the error made during the BatchImportFindings operation.
     */
   var ErrorMessage: NonEmptyString
   /**

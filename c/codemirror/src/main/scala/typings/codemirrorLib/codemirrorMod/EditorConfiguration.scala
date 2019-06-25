@@ -11,7 +11,7 @@ trait EditorConfiguration extends js.Object {
     * By default, it'll auto-close ()[]{}''"", but you can pass it a string similar to that (containing pairs of matching characters),
     * or an object with pairs and optionally explode properties to customize it.
     */
-  var autoCloseBrackets: js.UndefOr[AutoCloseBrackets | java.lang.String] = js.undefined
+  var autoCloseBrackets: js.UndefOr[AutoCloseBrackets | scala.Boolean | java.lang.String] = js.undefined
   /**
     * Will auto-close XML tags when '>' or '/' is typed.
     * Depends on the fold/xml-fold.js addon.
@@ -183,7 +183,7 @@ trait EditorConfiguration extends js.Object {
 object EditorConfiguration {
   @scala.inline
   def apply(
-    autoCloseBrackets: AutoCloseBrackets | java.lang.String = null,
+    autoCloseBrackets: AutoCloseBrackets | scala.Boolean | java.lang.String = null,
     autoCloseTags: AutoCloseTags | scala.Boolean = null,
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
     coverGutterNextToScrollbar: js.UndefOr[scala.Boolean] = js.undefined,

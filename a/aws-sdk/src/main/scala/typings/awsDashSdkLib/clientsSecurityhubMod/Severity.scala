@@ -11,7 +11,7 @@ trait Severity extends js.Object {
     */
   var Normalized: Integer
   /**
-    * The native severity as defined by the security-findings provider's solution that generated the finding.
+    * The native severity as defined by the AWS service or integrated partner product that generated the finding.
     */
   var Product: js.UndefOr[Double] = js.undefined
 }

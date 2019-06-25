@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueryStringKeyValuePair extends js.Object {
+  /**
+    * The key. You can omit the key.
+    */
   var Key: js.UndefOr[StringValue] = js.undefined
+  /**
+    * The value.
+    */
   var Value: js.UndefOr[StringValue] = js.undefined
 }
 

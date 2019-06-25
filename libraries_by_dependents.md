@@ -53,6 +53,7 @@
 | 5813 | [std](./s/std) | TypeScript is a language for application scale Jav
 | 5813 | [typescript](./t/typescript) | TypeScript is a language for application scale Jav
 | 5456 | [angular__platform-browser](./a/angular__platform-browser) | Angular - library for using Angular in a web brows
+| 5323 | [eslint-plugin-react](./e/eslint-plugin-react) | React specific linting rules for ESLint
 | 5283 | [angular__compiler](./a/angular__compiler) | Angular - the compiler library
 | 5245 | [handlebars](./h/handlebars) | Handlebars provides the power necessary to let you
 | 5170 | [yosay](./y/yosay) | Tell Yeoman what to say
@@ -3557,6 +3558,7 @@
 | 18 | [protobufjs__base64](./p/protobufjs__base64) | A minimal base64 implementation for number arrays.
 | 18 | [protobufjs__utf8](./p/protobufjs__utf8) | A minimal UTF8 implementation for number arrays.
 | 18 | [purdy](./p/purdy) | Pretty print objects in real purdy colors. Allows 
+| 18 | [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog.
 | 18 | [react-bootstrap-date-pick](./r/react-bootstrap-date-picker) | React-Bootstrap based date picker.
 | 18 | [react-countup](./r/react-countup) | A React component wrapper around CountUp.js
 | 18 | [react-github-button](./r/react-github-button) | Unofficial GitHub buttons in React.
@@ -3784,6 +3786,7 @@
 | 14 | [json-editor](./j/json-editor) | JSON Schema based editor
 | 14 | [koa-hbs](./k/koa-hbs) | Handlebars Templates via Generators for Koa
 | 14 | [leaflet-fullscreen](./l/leaflet-fullscreen) | A fullscreen control for Leaflet
+| 14 | [little-loader](./l/little-loader) | A lightweight, IE8+ JavaScript loader.
 | 14 | [lodash_dot_cond](./l/lodash_dot_cond) | The lodash method _.cond exported as a module.
 | 14 | [lodash_dot_defer](./l/lodash_dot_defer) | The lodash method _.defer exported as a module.
 | 14 | [lodash_dot_isarraylike](./l/lodash_dot_isarraylike) | The lodash method _.isArrayLike exported as a modu
@@ -5906,6 +5909,7 @@
 | 1 | [raspi-pwm](./r/raspi-pwm) | Provides access to PWM on the Raspberry Pi as part
 | 1 | [raspi-serial](./r/raspi-serial) | Provides access to the serial port on the Raspberr
 | 1 | [raspi-soft-pwm](./r/raspi-soft-pwm) | Provides access to Soft PWM on the Raspberry Pi as
+| 1 | [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog.
 | 1 | [react-alice-carousel](./r/react-alice-carousel) | React image gallery, react slideshow carousel, rea
 | 1 | [react-calendar-timeline](./r/react-calendar-timeline) | react calendar timeline
 | 1 | [react-close-on-escape](./r/react-close-on-escape) | close react component on press escape
@@ -6233,6 +6237,7 @@
 | 0 | [hapi__hapi](./h/hapi__hapi) | HTTP Server framework
 | 0 | [hapi__inert](./h/hapi__inert) | Static file and directory handlers plugin for hapi
 | 0 | [hapi__lab](./h/hapi__lab) | Test utility
+| 0 | [hapi__marker](./h/hapi__marker) | Cross modules and cross versions shared symbols
 | 0 | [hapi__nes](./h/hapi__nes) | WebSocket adapter plugin for hapi routes
 | 0 | [hapi__vision](./h/hapi__vision) | Templates rendering plugin support for hapi.js
 | 0 | [hapi__yar](./h/hapi__yar) | Cookie jar plugin for Hapi

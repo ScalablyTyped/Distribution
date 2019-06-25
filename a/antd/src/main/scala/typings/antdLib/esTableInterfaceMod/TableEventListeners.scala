@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TableEventListeners extends js.Object {
+trait TableEventListeners
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var onClick: js.UndefOr[
     js.Function1[
       /* arg */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
@@ -41,6 +42,7 @@ trait TableEventListeners extends js.Object {
 object TableEventListeners {
   @scala.inline
   def apply(
+    StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     onClick: /* arg */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
     onContextMenu: /* arg */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
     onDoubleClick: /* arg */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
@@ -48,6 +50,7 @@ object TableEventListeners {
     onMouseLeave: /* arg */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null
   ): TableEventListeners = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
     if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))

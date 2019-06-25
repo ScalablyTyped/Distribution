@@ -11,7 +11,7 @@ trait ELBv2
   @JSName("config")
   var config_ELBv2: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Adds the specified certificate to the specified HTTPS listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
+    * Adds the specified SSL server certificate to the certificate list for the specified HTTPS listener. If the certificate in already in the certificate list, the call is successful but the certificate is not added again. To get the certificate list for a listener, use DescribeListenerCertificates. To remove certificates from the certificate list for a listener, use RemoveListenerCertificates. To replace the default certificate for a listener, use ModifyListener. For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def addListenerCertificates(): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addListenerCertificates(
@@ -22,7 +22,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Adds the specified certificate to the specified HTTPS listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
+    * Adds the specified SSL server certificate to the certificate list for the specified HTTPS listener. If the certificate in already in the certificate list, the call is successful but the certificate is not added again. To get the certificate list for a listener, use DescribeListenerCertificates. To remove certificates from the certificate list for a listener, use RemoveListenerCertificates. To replace the default certificate for a listener, use ModifyListener. For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def addListenerCertificates(params: AddListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addListenerCertificates(
@@ -279,7 +279,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeAccountLimitsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the certificates for the specified HTTPS listener.
+    * Describes the default certificate and the certificate list for the specified HTTPS listener. If the default certificate is also in the certificate list, it appears twice in the results (once with IsDefault set to true and once with IsDefault set to false). For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def describeListenerCertificates(): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeListenerCertificates(
@@ -290,7 +290,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the certificates for the specified HTTPS listener.
+    * Describes the default certificate and the certificate list for the specified HTTPS listener. If the default certificate is also in the certificate list, it appears twice in the results (once with IsDefault set to true and once with IsDefault set to false). For more information, see SSL Certificates in the Application Load Balancers Guide.
     */
   def describeListenerCertificates(params: DescribeListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeListenerCertificates(
@@ -302,7 +302,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the specified listeners or the listeners for the specified Application Load Balancer or Network Load Balancer. You must specify either a load balancer or one or more listeners.
+    * Describes the specified listeners or the listeners for the specified Application Load Balancer or Network Load Balancer. You must specify either a load balancer or one or more listeners. For an HTTPS or TLS listener, the output includes the default certificate for the listener. To describe the certificate list for the listener, use DescribeListenerCertificates.
     */
   def describeListeners(): awsDashSdkLib.libRequestMod.Request[DescribeListenersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeListeners(
@@ -313,7 +313,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeListenersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the specified listeners or the listeners for the specified Application Load Balancer or Network Load Balancer. You must specify either a load balancer or one or more listeners.
+    * Describes the specified listeners or the listeners for the specified Application Load Balancer or Network Load Balancer. You must specify either a load balancer or one or more listeners. For an HTTPS or TLS listener, the output includes the default certificate for the listener. To describe the certificate list for the listener, use DescribeListenerCertificates.
     */
   def describeListeners(params: DescribeListenersInput): awsDashSdkLib.libRequestMod.Request[DescribeListenersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeListeners(
@@ -509,7 +509,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeTargetHealthOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and server certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and server certificate properties.
+    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and default certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and default certificate properties.
     */
   def modifyListener(): awsDashSdkLib.libRequestMod.Request[ModifyListenerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyListener(
@@ -520,7 +520,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyListenerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and server certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and server certificate properties.
+    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and default certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and default certificate properties.
     */
   def modifyListener(params: ModifyListenerInput): awsDashSdkLib.libRequestMod.Request[ModifyListenerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyListener(
@@ -647,7 +647,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes the specified certificate from the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+    * Removes the specified certificate from the certificate list for the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
     */
   def removeListenerCertificates(): awsDashSdkLib.libRequestMod.Request[RemoveListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeListenerCertificates(
@@ -658,7 +658,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[RemoveListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes the specified certificate from the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+    * Removes the specified certificate from the certificate list for the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
     */
   def removeListenerCertificates(params: RemoveListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[RemoveListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeListenerCertificates(
@@ -693,7 +693,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[RemoveTagsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets the type of IP addresses used by the subnets of the specified Application Load Balancer or Network Load Balancer. Network Load Balancers must use ipv4.
+    * Sets the type of IP addresses used by the subnets of the specified Application Load Balancer or Network Load Balancer.
     */
   def setIpAddressType(): awsDashSdkLib.libRequestMod.Request[SetIpAddressTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setIpAddressType(
@@ -704,7 +704,7 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[SetIpAddressTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets the type of IP addresses used by the subnets of the specified Application Load Balancer or Network Load Balancer. Network Load Balancers must use ipv4.
+    * Sets the type of IP addresses used by the subnets of the specified Application Load Balancer or Network Load Balancer.
     */
   def setIpAddressType(params: SetIpAddressTypeInput): awsDashSdkLib.libRequestMod.Request[SetIpAddressTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setIpAddressType(

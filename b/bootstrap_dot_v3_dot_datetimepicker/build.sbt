@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "bootstrap_dot_v3_dot_datetimepicker"
-version := "4.17-dt-20190213Z-2bcb0f"
+version := "4.17-dt-20190213Z-2b591d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-3f7005",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190624Z-9b43ed",
   "org.scalablytyped" %%% "moment" % "2.24.0-7369bc",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-29a319",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")

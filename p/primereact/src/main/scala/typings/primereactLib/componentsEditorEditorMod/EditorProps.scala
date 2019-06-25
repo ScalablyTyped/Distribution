@@ -16,6 +16,7 @@ trait EditorProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readonly: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var theme: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -32,6 +33,7 @@ object EditorProps {
     placeholder: java.lang.String = null,
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Object = null,
+    theme: java.lang.String = null,
     value: java.lang.String = null
   ): EditorProps = {
     val __obj = js.Dynamic.literal()
@@ -45,6 +47,7 @@ object EditorProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[EditorProps]
   }

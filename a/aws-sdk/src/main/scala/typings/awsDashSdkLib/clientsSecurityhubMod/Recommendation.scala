@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Recommendation extends js.Object {
   /**
-    * The recommendation of what to do about the issue described in a finding. 
+    * Describes the recommended steps to take to remediate an issue identified in a finding.
     */
   var Text: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * A URL to link to general remediation information for the finding type of a finding. 
+    * A URL to a page or site that contains information about how to remediate a finding.
     */
   var Url: js.UndefOr[NonEmptyString] = js.undefined
 }

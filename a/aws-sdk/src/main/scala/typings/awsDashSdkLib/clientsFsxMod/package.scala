@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsFsxMod {
   type AWSAccountId = java.lang.String
+  type ActiveDirectoryFullyQualifiedName = java.lang.String
   type ArchivePath = java.lang.String
   type AutomaticBackupRetentionDays = scala.Double
   type BackupId = java.lang.String
@@ -32,7 +33,11 @@ package object clientsFsxMod {
   type DNSName = java.lang.String
   type DailyTime = java.lang.String
   type DirectoryId = java.lang.String
+  type DirectoryPassword = java.lang.String
+  type DirectoryUserName = java.lang.String
+  type DnsIps = js.Array[IpAddress]
   type ErrorMessage = java.lang.String
+  type FileSystemAdministratorsGroupName = java.lang.String
   type FileSystemId = java.lang.String
   type FileSystemIds = js.Array[FileSystemId]
   /* Rewritten from type alias, can be one of: 
@@ -40,6 +45,8 @@ package object clientsFsxMod {
     - awsDashSdkLib.awsDashSdkLibStrings.CREATING
     - awsDashSdkLib.awsDashSdkLibStrings.FAILED
     - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.MISCONFIGURED
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
     - java.lang.String
   */
   type FileSystemLifecycle = _FileSystemLifecycle | java.lang.String
@@ -67,6 +74,7 @@ package object clientsFsxMod {
   type FilterValues = js.Array[FilterValue]
   type Filters = js.Array[Filter]
   type Flag = scala.Boolean
+  type IpAddress = java.lang.String
   type KmsKeyId = java.lang.String
   type MaxResults = scala.Double
   type Megabytes = scala.Double
@@ -74,6 +82,7 @@ package object clientsFsxMod {
   type NetworkInterfaceId = java.lang.String
   type NetworkInterfaceIds = js.Array[NetworkInterfaceId]
   type NextToken = java.lang.String
+  type OrganizationalUnitDistinguishedName = java.lang.String
   type ProgressPercent = scala.Double
   type ResourceARN = java.lang.String
   type SecurityGroupId = java.lang.String

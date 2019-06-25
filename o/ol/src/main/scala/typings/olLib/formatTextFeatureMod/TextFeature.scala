@@ -15,12 +15,9 @@ trait TextFeature
   @JSName("readFeature")
   def readFeature_default(source: java.lang.String, opt_options: olLib.formatFeatureMod.ReadOptions): olLib.featureMod.default = js.native
   @JSName("readFeature")
-  def readFeature_default(source: org.scalablytyped.runtime.StringDictionary[js.Any]): olLib.featureMod.default = js.native
+  def readFeature_default(source: js.Object): olLib.featureMod.default = js.native
   @JSName("readFeature")
-  def readFeature_default(
-    source: org.scalablytyped.runtime.StringDictionary[js.Any],
-    opt_options: olLib.formatFeatureMod.ReadOptions
-  ): olLib.featureMod.default = js.native
+  def readFeature_default(source: js.Object, opt_options: olLib.formatFeatureMod.ReadOptions): olLib.featureMod.default = js.native
   @JSName("readFeature")
   def readFeature_default(source: stdLib.Document): olLib.featureMod.default = js.native
   @JSName("readFeature")

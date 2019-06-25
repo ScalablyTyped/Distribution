@@ -11,7 +11,7 @@ trait DescribeProductsResponse extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * A list of products.
+    * A list of products, including details for each product.
     */
   var Products: ProductsList
 }

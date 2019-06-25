@@ -13,6 +13,7 @@ trait GraphQLDirectiveConfig extends js.Object {
     graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.DirectiveDefinitionNode]
   ] = js.undefined
   var description: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]] = js.undefined
+  var isRepeatable: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[scala.Boolean]] = js.undefined
   var locations: js.Array[graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum]
   var name: java.lang.String
 }
@@ -24,12 +25,14 @@ object GraphQLDirectiveConfig {
     name: java.lang.String,
     args: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap] = null,
     astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.DirectiveDefinitionNode] = null,
-    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null,
+    isRepeatable: graphqlLib.tsutilsMaybeMod.Maybe[scala.Boolean] = null
   ): GraphQLDirectiveConfig = {
     val __obj = js.Dynamic.literal(locations = locations, name = name)
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (isRepeatable != null) __obj.updateDynamic("isRepeatable")(isRepeatable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }
 }

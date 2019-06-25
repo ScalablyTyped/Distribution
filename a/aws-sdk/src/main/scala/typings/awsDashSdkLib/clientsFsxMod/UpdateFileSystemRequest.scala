@@ -13,7 +13,7 @@ trait UpdateFileSystemRequest extends js.Object {
   var FileSystemId: awsDashSdkLib.clientsFsxMod.FileSystemId
   var LustreConfiguration: js.UndefOr[UpdateFileSystemLustreConfiguration] = js.undefined
   /**
-    * The configuration for this Microsoft Windows file system. The only supported options are for backup and maintenance.
+    * The configuration update for this Microsoft Windows file system. The only supported options are for backup and maintenance and for self-managed Active Directory configuration.
     */
   var WindowsConfiguration: js.UndefOr[UpdateFileSystemWindowsConfiguration] = js.undefined
 }

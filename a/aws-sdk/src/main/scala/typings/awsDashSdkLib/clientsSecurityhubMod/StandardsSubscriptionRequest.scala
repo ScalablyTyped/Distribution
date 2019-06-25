@@ -11,7 +11,7 @@ trait StandardsSubscriptionRequest extends js.Object {
     */
   var StandardsArn: NonEmptyString
   /**
-    * 
+    * A key-value pair of input for the standard.
     */
   var StandardsInput: js.UndefOr[StandardsInputParameterMap] = js.undefined
 }

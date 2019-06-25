@@ -36,6 +36,7 @@ class Value ()
   def setStringValue(value: java.lang.String): scala.Unit = js.native
   def setStructValue(): scala.Unit = js.native
   def setStructValue(value: Struct): scala.Unit = js.native
+  def toJavaScript(): JavaScriptValue = js.native
 }
 
 /* static members */
@@ -53,6 +54,7 @@ object Value extends js.Object {
     message: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Value,
     reader: googleDashProtobufLib.googleDashProtobufMod.BinaryReader
   ): googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Value = js.native
+  def fromJavaScript(value: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.JavaScriptValue): googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Value = js.native
   def serializeBinaryToWriter(
     message: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Value,
     writer: googleDashProtobufLib.googleDashProtobufMod.BinaryWriter

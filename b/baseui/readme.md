@@ -1,7 +1,7 @@
 
 # Scala.js typings for baseui
 
-Typings are for version 6.20
+Typings are for version 7.3
 
 ## Library description:
 A React Component library implementing the Base design language
@@ -35,9 +35,14 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for baseui 6.20
+// Type definitions for baseui 7.3
 // Project: https://github.com/uber-web/baseui#readme
 // Definitions by: Jhey Tompkins <https://github.com/jh3y>
+//                 Gergely Nemeth <https://github.com/gergelyke>
+//                 Chase Starr <https://github.com/chasestarr>
+//                 Nadiia <https://github.com/nadiia>
+//                 Vojtech Miksu <https://github.com/tajo>
+//                 Graham Murdoch <https://github.com/sandgraham>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.1
 

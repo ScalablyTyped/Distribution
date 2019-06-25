@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SetIpAddressTypeInput extends js.Object {
   /**
-    * The IP address type. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses). Internal load balancers must use ipv4.
+    * The IP address type. The possible values are ipv4 (for IPv4 addresses) and dualstack (for IPv4 and IPv6 addresses). Internal load balancers must use ipv4. Network Load Balancers must use ipv4.
     */
   var IpAddressType: awsDashSdkLib.clientsElbv2Mod.IpAddressType
   /**

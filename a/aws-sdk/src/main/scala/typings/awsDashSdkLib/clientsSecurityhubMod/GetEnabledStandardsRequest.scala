@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetEnabledStandardsRequest extends js.Object {
   /**
-    * The maximum number of items that you want in the response.
+    * The maximum number of results to return in the response.
     */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait GetEnabledStandardsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The list of standards subscription ARNS that you want to list and describe.
+    * A list of the standards subscription ARNs for the standards to retrieve.
     */
   var StandardsSubscriptionArns: js.UndefOr[StandardsSubscriptionArns] = js.undefined
 }

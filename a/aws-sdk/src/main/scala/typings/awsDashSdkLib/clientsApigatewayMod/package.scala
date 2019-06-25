@@ -72,6 +72,13 @@ package object clientsApigatewayMod {
     - java.lang.String
   */
   type DocumentationPartType = _DocumentationPartType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - java.lang.String
+  */
+  type DomainNameStatus = _DomainNameStatus | java.lang.String
   type Double = scala.Double
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.REGIONAL
@@ -185,6 +192,12 @@ package object clientsApigatewayMod {
     - java.lang.String
   */
   type QuotaPeriodType = _QuotaPeriodType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS_1_0
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS_1_2
+    - java.lang.String
+  */
+  type SecurityPolicy = _SecurityPolicy | java.lang.String
   type StatusCode = java.lang.String
   type String = java.lang.String
   type Timestamp = stdLib.Date

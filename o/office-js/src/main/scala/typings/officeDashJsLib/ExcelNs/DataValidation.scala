@@ -34,7 +34,8 @@ class DataValidation ()
   var ignoreBlanks: scala.Boolean = js.native
   /**
     *
-    * Prompt when users select a cell.
+    * Prompt when users select a cell. 
+    * The `DataValidationPrompt` object must be set as a JSON object (use `x.prompt = {...}` instead of `x.prompt.message = ...`).
     *
     * [Api set: ExcelApi 1.8]
     */

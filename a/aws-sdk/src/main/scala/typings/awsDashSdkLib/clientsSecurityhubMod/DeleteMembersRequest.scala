@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteMembersRequest extends js.Object {
   /**
-    * A list of account IDs of the Security Hub member accounts that you want to delete. 
+    * A list of account IDs of the member accounts to delete.
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.undefined
 }

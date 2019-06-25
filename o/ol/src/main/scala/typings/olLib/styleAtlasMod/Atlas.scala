@@ -28,7 +28,7 @@ trait Atlas extends js.Object {
       /* param2 */ scala.Double, 
       scala.Unit
     ],
-    opt_this: org.scalablytyped.runtime.StringDictionary[js.Any]
+    opt_this: js.Any
   ): AtlasInfo = js.native
   def get(id: java.lang.String): AtlasInfo = js.native
 }

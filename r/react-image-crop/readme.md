@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-image-crop
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 A responsive image cropping tool for React
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-image-crop 7.0
+// Type definitions for react-image-crop 8.0
 // Project: https://github.com/DominicTobias/react-image-crop
 // Definitions by: Daniela Yassuda <https://github.com/danielasy>
 //                 Elias Chaaya <https://github.com/chaaya>

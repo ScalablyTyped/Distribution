@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "devexpress-web"
-version := "182.3-dt-20190322Z-bfa750"
+version := "182.3-dt-20190322Z-316a3f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-3f7005",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190624Z-9b43ed",
   "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-ff2b58",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-29a319",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")

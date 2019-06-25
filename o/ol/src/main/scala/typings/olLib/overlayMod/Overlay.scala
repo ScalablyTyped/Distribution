@@ -16,7 +16,7 @@ trait Overlay
   var insertFirst: scala.Boolean = js.native
   var mapPostrenderListenerKey: olLib.eventsMod.EventsKey = js.native
   var options: Options = js.native
-  var rendered: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var rendered: js.Any = js.native
   var stopEvent: scala.Boolean = js.native
   def getElement(): stdLib.HTMLElement = js.native
   def getId(): scala.Double | java.lang.String = js.native

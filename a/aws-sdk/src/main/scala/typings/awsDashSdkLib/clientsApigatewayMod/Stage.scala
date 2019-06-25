@@ -55,7 +55,7 @@ trait Stage extends js.Object {
     */
   var methodSettings: js.UndefOr[MapOfMethodSettings] = js.undefined
   /**
-    * The name of the stage is the first path segment in the Uniform Resource Identifier (URI) of a call to API Gateway.
+    * The name of the stage is the first path segment in the Uniform Resource Identifier (URI) of a call to API Gateway. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
     */
   var stageName: js.UndefOr[String] = js.undefined
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteInvitationsRequest extends js.Object {
   /**
-    * A list of account IDs that specify accounts whose invitations to Security Hub you want to delete. 
+    * A list of the account IDs that sent the invitations to delete.
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.undefined
 }

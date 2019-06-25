@@ -11,7 +11,7 @@ trait GetEnabledStandardsResponse extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The standards subscription details returned by the operation.
+    * A list of StandardsSubscriptions objects that include information about the enabled standards.
     */
   var StandardsSubscriptions: js.UndefOr[StandardsSubscriptions] = js.undefined
 }

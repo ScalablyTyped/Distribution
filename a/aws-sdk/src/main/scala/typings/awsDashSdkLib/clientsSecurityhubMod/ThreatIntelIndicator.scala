@@ -11,15 +11,15 @@ trait ThreatIntelIndicator extends js.Object {
     */
   var Category: js.UndefOr[ThreatIntelIndicatorCategory] = js.undefined
   /**
-    * The date/time of the last observation of a threat intel indicator.
+    * The date and time when the most recent instance of a threat intel indicator was observed.
     */
   var LastObservedAt: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The source of the threat intel.
+    * The source of the threat intel indicator.
     */
   var Source: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The URL for more details from the source of the threat intel.
+    * The URL to the page or site where you can get more information about the threat intel indicator.
     */
   var SourceUrl: js.UndefOr[NonEmptyString] = js.undefined
   /**

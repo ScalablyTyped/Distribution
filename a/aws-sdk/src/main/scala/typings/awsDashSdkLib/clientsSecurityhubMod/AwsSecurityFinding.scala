@@ -23,13 +23,13 @@ trait AwsSecurityFinding extends js.Object {
     */
   var CreatedAt: NonEmptyString
   /**
-    * The level of importance assigned to the resources associated with the finding. A score of 0 means the underlying resources have no criticality, and a score of 100 is reserved for the most critical resources.
+    * The level of importance assigned to the resources associated with the finding. A score of 0 means that the underlying resources have no criticality, and a score of 100 is reserved for the most critical resources.
     */
   var Criticality: js.UndefOr[Integer] = js.undefined
   /**
     * A finding's description.  In this release, Description is a required property. 
     */
-  var Description: js.UndefOr[NonEmptyString] = js.undefined
+  var Description: NonEmptyString
   /**
     * An ISO8601-formatted timestamp that indicates when the security-findings provider first observed the potential security issue that a finding captured.
     */
@@ -79,7 +79,7 @@ trait AwsSecurityFinding extends js.Object {
     */
   var RelatedFindings: js.UndefOr[RelatedFindingList] = js.undefined
   /**
-    * An data type that describes the remediation options for a finding.
+    * A data type that describes the remediation options for a finding.
     */
   var Remediation: js.UndefOr[Remediation] = js.undefined
   /**
@@ -105,7 +105,7 @@ trait AwsSecurityFinding extends js.Object {
   /**
     * A finding's title.  In this release, Title is a required property. 
     */
-  var Title: js.UndefOr[NonEmptyString] = js.undefined
+  var Title: NonEmptyString
   /**
     * One or more finding types in the format of namespace/category/classifier that classify a finding. Valid namespace values are: Software and Configuration Checks | TTPs | Effects | Unusual Behaviors | Sensitive Data Identifications
     */
@@ -133,18 +133,19 @@ object AwsSecurityFinding {
   def apply(
     AwsAccountId: NonEmptyString,
     CreatedAt: NonEmptyString,
+    Description: NonEmptyString,
     GeneratorId: NonEmptyString,
     Id: NonEmptyString,
     ProductArn: NonEmptyString,
     Resources: ResourceList,
     SchemaVersion: NonEmptyString,
     Severity: Severity,
+    Title: NonEmptyString,
     Types: TypeList,
     UpdatedAt: NonEmptyString,
     Compliance: Compliance = null,
     Confidence: js.UndefOr[Integer] = js.undefined,
     Criticality: js.UndefOr[Integer] = js.undefined,
-    Description: NonEmptyString = null,
     FirstObservedAt: NonEmptyString = null,
     LastObservedAt: NonEmptyString = null,
     Malware: MalwareList = null,
@@ -157,16 +158,14 @@ object AwsSecurityFinding {
     Remediation: Remediation = null,
     SourceUrl: NonEmptyString = null,
     ThreatIntelIndicators: ThreatIntelIndicatorList = null,
-    Title: NonEmptyString = null,
     UserDefinedFields: FieldMap = null,
     VerificationState: VerificationState = null,
     WorkflowState: WorkflowState = null
   ): AwsSecurityFinding = {
-    val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId, CreatedAt = CreatedAt, GeneratorId = GeneratorId, Id = Id, ProductArn = ProductArn, Resources = Resources, SchemaVersion = SchemaVersion, Severity = Severity, Types = Types, UpdatedAt = UpdatedAt)
+    val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId, CreatedAt = CreatedAt, Description = Description, GeneratorId = GeneratorId, Id = Id, ProductArn = ProductArn, Resources = Resources, SchemaVersion = SchemaVersion, Severity = Severity, Title = Title, Types = Types, UpdatedAt = UpdatedAt)
     if (Compliance != null) __obj.updateDynamic("Compliance")(Compliance)
     if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)
     if (!js.isUndefined(Criticality)) __obj.updateDynamic("Criticality")(Criticality)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
     if (FirstObservedAt != null) __obj.updateDynamic("FirstObservedAt")(FirstObservedAt)
     if (LastObservedAt != null) __obj.updateDynamic("LastObservedAt")(LastObservedAt)
     if (Malware != null) __obj.updateDynamic("Malware")(Malware)
@@ -179,7 +178,6 @@ object AwsSecurityFinding {
     if (Remediation != null) __obj.updateDynamic("Remediation")(Remediation)
     if (SourceUrl != null) __obj.updateDynamic("SourceUrl")(SourceUrl)
     if (ThreatIntelIndicators != null) __obj.updateDynamic("ThreatIntelIndicators")(ThreatIntelIndicators)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
     if (UserDefinedFields != null) __obj.updateDynamic("UserDefinedFields")(UserDefinedFields)
     if (VerificationState != null) __obj.updateDynamic("VerificationState")(VerificationState.asInstanceOf[js.Any])
     if (WorkflowState != null) __obj.updateDynamic("WorkflowState")(WorkflowState.asInstanceOf[js.Any])

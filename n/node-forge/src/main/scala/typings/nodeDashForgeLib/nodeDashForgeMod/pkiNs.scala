@@ -123,6 +123,7 @@ object pkiNs extends js.Object {
   def certificateFromPem(pem: PEM): Certificate = js.native
   def certificateFromPem(pem: PEM, computeHash: scala.Boolean): Certificate = js.native
   def certificateFromPem(pem: PEM, computeHash: scala.Boolean, strict: scala.Boolean): Certificate = js.native
+  def certificateToAsn1(cert: Certificate): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
   def certificateToPem(cert: Certificate): PEM = js.native
   def certificateToPem(cert: Certificate, maxline: scala.Double): PEM = js.native
   def certificationRequestFromPem(pem: PEM): Certificate = js.native

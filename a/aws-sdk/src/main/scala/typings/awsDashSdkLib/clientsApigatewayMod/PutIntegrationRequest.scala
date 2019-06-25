@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait PutIntegrationRequest extends js.Object {
   /**
-    * Specifies a put integration input's cache key parameters.
+    * An API-specific tag group of related cached parameters.
     */
   var cacheKeyParameters: js.UndefOr[ListOfString] = js.undefined
   /**
-    * Specifies a put integration input's cache namespace.
+    * A list of request parameters whose values are to be cached.
     */
   var cacheNamespace: js.UndefOr[String] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait PutIntegrationRequest extends js.Object {
     */
   var connectionType: js.UndefOr[ConnectionType] = js.undefined
   /**
-    * Specifies how to handle request payload content type conversions. Supported values are CONVERT_TO_BINARY and CONVERT_TO_TEXT, with the following behaviors:  CONVERT_TO_BINARY: Converts a request payload from a Base64-encoded string to the corresponding binary blob. CONVERT_TO_TEXT: Converts a request payload from a binary blob to a Base64-encoded string.  If this property is not defined, the request payload will be passed through from the method request to integration request without modification, provided that the passthroughBehaviors is configured to support payload pass-through.
+    * Specifies how to handle request payload content type conversions. Supported values are CONVERT_TO_BINARY and CONVERT_TO_TEXT, with the following behaviors:  CONVERT_TO_BINARY: Converts a request payload from a Base64-encoded string to the corresponding binary blob. CONVERT_TO_TEXT: Converts a request payload from a binary blob to a Base64-encoded string.  If this property is not defined, the request payload will be passed through from the method request to integration request without modification, provided that the passthroughBehavior is configured to support payload pass-through.
     */
   var contentHandling: js.UndefOr[ContentHandlingStrategy] = js.undefined
   /**

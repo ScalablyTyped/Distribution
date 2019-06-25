@@ -15,6 +15,10 @@ trait Backup extends js.Object {
     */
   var CreationTime: awsDashSdkLib.clientsFsxMod.CreationTime
   /**
+    * The configuration of the self-managed Microsoft Active Directory (AD) to which the Windows File Server instance is joined.
+    */
+  var DirectoryInformation: js.UndefOr[ActiveDirectoryBackupAttributes] = js.undefined
+  /**
     * Details explaining any failures that occur when creating a backup.
     */
   var FailureDetails: js.UndefOr[BackupFailureDetails] = js.undefined
@@ -53,6 +57,7 @@ object Backup {
     FileSystem: FileSystem,
     Lifecycle: BackupLifecycle,
     Type: BackupType,
+    DirectoryInformation: ActiveDirectoryBackupAttributes = null,
     FailureDetails: BackupFailureDetails = null,
     KmsKeyId: KmsKeyId = null,
     ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
@@ -60,6 +65,7 @@ object Backup {
     Tags: Tags = null
   ): Backup = {
     val __obj = js.Dynamic.literal(BackupId = BackupId, CreationTime = CreationTime, FileSystem = FileSystem, Lifecycle = Lifecycle.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    if (DirectoryInformation != null) __obj.updateDynamic("DirectoryInformation")(DirectoryInformation)
     if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent)

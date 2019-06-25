@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object sourceRasterMod {
   type Operation = js.Function2[
     /* param0 */ js.Array[js.Array[scala.Double] | stdLib.ImageData], 
-    /* param1 */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+    /* param1 */ js.Object, 
     js.Array[scala.Double] | stdLib.ImageData
   ]
 }

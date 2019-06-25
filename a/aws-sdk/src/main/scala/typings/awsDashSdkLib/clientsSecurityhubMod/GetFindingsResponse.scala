@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetFindingsResponse extends js.Object {
   /**
-    * Findings details returned by the operation.
+    * The findings that matched the filters specified in the request.
     */
   var Findings: AwsSecurityFindingList
   /**

@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var account: java.lang.String
   var attributions: js.UndefOr[olLib.sourceSourceMod.AttributionLike] = js.undefined
   var cacheSize: js.UndefOr[scala.Double] = js.undefined
-  var config: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var config: js.UndefOr[js.Any] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined
   var map: js.UndefOr[java.lang.String] = js.undefined
   var maxZoom: js.UndefOr[scala.Double] = js.undefined
@@ -24,7 +24,7 @@ object Options {
     account: java.lang.String,
     attributions: olLib.sourceSourceMod.AttributionLike = null,
     cacheSize: scala.Int | scala.Double = null,
-    config: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    config: js.Any = null,
     crossOrigin: java.lang.String = null,
     map: java.lang.String = null,
     maxZoom: scala.Int | scala.Double = null,

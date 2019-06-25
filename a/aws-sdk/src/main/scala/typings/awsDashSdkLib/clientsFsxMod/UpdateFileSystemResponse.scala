@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateFileSystemResponse extends js.Object {
   /**
-    * A description of the file system.
+    * A description of the file system that was updated.
     */
   var FileSystem: js.UndefOr[FileSystem] = js.undefined
 }

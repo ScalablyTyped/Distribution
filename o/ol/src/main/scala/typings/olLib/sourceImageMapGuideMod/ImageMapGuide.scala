@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ImageMapGuide
   extends olLib.sourceImageMod.default {
   def getImageLoadFunction(): olLib.imageMod.LoadFunction = js.native
-  def getParams(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getParams(): js.Any = js.native
   def getUrl(
     baseUrl: java.lang.String,
     params: org.scalablytyped.runtime.StringDictionary[js.Any],
@@ -63,6 +63,6 @@ trait ImageMapGuide
     `type`: olLib.olLibStrings.imageloadstart,
     listener: js.Function1[/* evt */ olLib.sourceImageMod.ImageSourceEvent, scala.Unit]
   ): scala.Unit = js.native
-  def updateParams(params: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def updateParams(params: js.Any): scala.Unit = js.native
 }
 

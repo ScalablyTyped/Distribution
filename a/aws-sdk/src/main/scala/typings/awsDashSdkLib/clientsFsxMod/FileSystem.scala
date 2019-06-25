@@ -16,11 +16,11 @@ trait FileSystem extends js.Object {
   var DNSName: js.UndefOr[DNSName] = js.undefined
   var FailureDetails: js.UndefOr[FileSystemFailureDetails] = js.undefined
   /**
-    * The eight-digit ID of the file system that was automatically assigned by Amazon FSx.
+    * The system-generated, unique 17-digit ID of the file system.
     */
   var FileSystemId: js.UndefOr[FileSystemId] = js.undefined
   /**
-    * Type of file system. Currently the only supported type is WINDOWS.
+    * The type of Amazon FSx file system, either LUSTRE or WINDOWS.
     */
   var FileSystemType: js.UndefOr[FileSystemType] = js.undefined
   /**
@@ -28,28 +28,28 @@ trait FileSystem extends js.Object {
     */
   var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   /**
-    * The lifecycle status of the file system.
+    * The lifecycle status of the file system:    AVAILABLE indicates that the file system is reachable and available for use.    CREATING indicates that Amazon FSx is in the process of creating the new file system.    DELETING indicates that Amazon FSx is in the process of deleting the file system.    FAILED indicates that Amazon FSx was not able to create the file system.    MISCONFIGURED indicates that the file system is in a failed but recoverable state.    UPDATING indicates that the file system is undergoing a customer initiated update.  
     */
   var Lifecycle: js.UndefOr[FileSystemLifecycle] = js.undefined
   var LustreConfiguration: js.UndefOr[LustreFileSystemConfiguration] = js.undefined
   /**
-    * The IDs of the elastic network interface from which a specific file system is accessible. The elastic network interface is automatically created in the same VPC that the Amazon FSx file system was created in. For more information, see Elastic Network Interfaces in the Amazon EC2 User Guide.  For an Amazon FSx for Windows File Server file system, you can have one network interface Id. For an Amazon FSx for Lustre file system, you can have more than one.
+    * The IDs of the elastic network interface from which a specific file system is accessible. The elastic network interface is automatically created in the same VPC that the Amazon FSx file system was created in. For more information, see Elastic Network Interfaces in the Amazon EC2 User Guide.  For an Amazon FSx for Windows File Server file system, you can have one network interface ID. For an Amazon FSx for Lustre file system, you can have more than one.
     */
   var NetworkInterfaceIds: js.UndefOr[NetworkInterfaceIds] = js.undefined
   /**
-    * The AWS account that created the file system. If the file system was created by an IAM user, the AWS account to which the IAM user belongs is the owner.
+    * The AWS account that created the file system. If the file system was created by an AWS Identity and Access Management (IAM) user, the AWS account to which the IAM user belongs is the owner.
     */
   var OwnerId: js.UndefOr[AWSAccountId] = js.undefined
   /**
-    * The resource ARN of the file system.
+    * The Amazon Resource Name (ARN) for the file system resource.
     */
   var ResourceARN: js.UndefOr[ResourceARN] = js.undefined
   /**
-    * The storage capacity of the file system in gigabytes.
+    * The storage capacity of the file system in gigabytes (GB).
     */
   var StorageCapacity: js.UndefOr[StorageCapacity] = js.undefined
   /**
-    * The IDs of the subnets to contain the endpoint for the file system. One and only one is supported. The file system is launched in the Availability Zone associated with this subnet.
+    * The ID of the subnet to contain the endpoint for the file system. One and only one is supported. The file system is launched in the Availability Zone associated with this subnet.
     */
   var SubnetIds: js.UndefOr[SubnetIds] = js.undefined
   /**

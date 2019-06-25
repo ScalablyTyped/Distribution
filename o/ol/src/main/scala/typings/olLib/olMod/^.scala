@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val VERSION: java.lang.String = js.native
-  def getUid(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  def getUid(obj: js.Any): java.lang.String = js.native
   def inherits(childCtor: js.Function0[scala.Unit], parentCtor: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

@@ -30,6 +30,7 @@ object AxisValueOptions {
     floor: scala.Int | scala.Double = null,
     gridLineColor: java.lang.String = null,
     gridLineDashStyle: java.lang.String = null,
+    gridLineInterpolation: java.lang.String = null,
     gridLineWidth: scala.Int | scala.Double = null,
     gridZIndex: scala.Int | scala.Double = null,
     id: java.lang.String = null,
@@ -97,6 +98,7 @@ object AxisValueOptions {
     if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
     if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle)
+    if (gridLineInterpolation != null) __obj.updateDynamic("gridLineInterpolation")(gridLineInterpolation)
     if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
     if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

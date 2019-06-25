@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EventsKey extends js.Object {
-  var bindTo: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  var bindTo: js.UndefOr[js.Any] = js.native
   var boundListener: js.UndefOr[ListenerFunction] = js.native
   var callOnce: scala.Boolean = js.native
   var deleteIndex: js.UndefOr[scala.Double] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DisassociateMembersRequest extends js.Object {
   /**
-    * The account IDs of the member accounts that you want to disassociate from the master account.
+    * The account IDs of the member accounts to disassociate from the master account.
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.undefined
 }

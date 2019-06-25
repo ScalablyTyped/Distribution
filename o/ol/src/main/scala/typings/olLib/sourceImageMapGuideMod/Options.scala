@@ -11,7 +11,7 @@ trait Options extends js.Object {
   var hidpi: js.UndefOr[scala.Boolean] = js.undefined
   var imageLoadFunction: js.UndefOr[olLib.imageMod.LoadFunction] = js.undefined
   var metersPerUnit: js.UndefOr[scala.Double] = js.undefined
-  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[js.Any] = js.undefined
   var projection: js.UndefOr[olLib.projMod.ProjectionLike] = js.undefined
   var ratio: js.UndefOr[scala.Double] = js.undefined
   var resolutions: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -27,7 +27,7 @@ object Options {
     hidpi: js.UndefOr[scala.Boolean] = js.undefined,
     imageLoadFunction: olLib.imageMod.LoadFunction = null,
     metersPerUnit: scala.Int | scala.Double = null,
-    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    params: js.Any = null,
     projection: olLib.projMod.ProjectionLike = null,
     ratio: scala.Int | scala.Double = null,
     resolutions: js.Array[scala.Double] = null,

@@ -12,7 +12,7 @@ class ^ () extends ReactCrop
 @JSImport("react-image-crop", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def containCrop(previousCrop: Crop, crop: Crop, image: stdLib.HTMLImageElement): Crop = js.native
-  def makeAspectCrop(crop: Crop, image: stdLib.HTMLImageElement): Crop = js.native
+  def containCrop(prevCrop: Crop, crop: Crop, imageWidth: scala.Double, imageHeight: scala.Double): Crop = js.native
+  def makeAspectCrop(crop: Crop, imageWidth: scala.Double, imageHeight: scala.Double): Crop = js.native
 }
 

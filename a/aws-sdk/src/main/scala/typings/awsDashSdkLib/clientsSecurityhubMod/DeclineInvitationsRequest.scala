@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeclineInvitationsRequest extends js.Object {
   /**
-    * A list of account IDs that specify the accounts from which invitations to Security Hub are declined.
+    * A list of account IDs that specify the accounts that invitations to Security Hub are declined from.
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.undefined
 }

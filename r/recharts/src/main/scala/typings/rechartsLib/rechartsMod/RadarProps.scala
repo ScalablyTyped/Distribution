@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[js.Object | reactLib.reactMod.ReactElement | ContentRenderer[_] | scala.Boolean] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var points: js.UndefOr[js.Array[RadarPoint]] = js.undefined
   var shape: js.UndefOr[reactLib.reactMod.ReactElement | ContentRenderer[RadarProps]] = js.undefined
@@ -39,6 +40,7 @@ object RadarProps {
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     label: js.Object | reactLib.reactMod.ReactElement | ContentRenderer[_] | scala.Boolean = null,
     legendType: LegendType = null,
+    name: java.lang.String = null,
     onAnimationEnd: RechartsFunction = null,
     onAnimationStart: RechartsFunction = null,
     onClick: RechartsFunction = null,
@@ -69,6 +71,7 @@ object RadarProps {
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (legendType != null) __obj.updateDynamic("legendType")(legendType)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

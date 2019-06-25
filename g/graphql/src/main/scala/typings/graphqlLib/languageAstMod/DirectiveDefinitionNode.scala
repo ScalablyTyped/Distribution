@@ -14,6 +14,7 @@ trait DirectiveDefinitionNode
   val loc: js.UndefOr[Location] = js.undefined
   val locations: js.Array[NameNode]
   val name: NameNode
+  val repeatable: scala.Boolean
 }
 
 object DirectiveDefinitionNode {
@@ -22,11 +23,12 @@ object DirectiveDefinitionNode {
     kind: graphqlLib.graphqlLibStrings.DirectiveDefinition,
     locations: js.Array[NameNode],
     name: NameNode,
+    repeatable: scala.Boolean,
     arguments: js.Array[InputValueDefinitionNode] = null,
     description: StringValueNode = null,
     loc: Location = null
   ): DirectiveDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind, locations = locations, name = name)
+    val __obj = js.Dynamic.literal(kind = kind, locations = locations, name = name, repeatable = repeatable)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (description != null) __obj.updateDynamic("description")(description)
     if (loc != null) __obj.updateDynamic("loc")(loc)

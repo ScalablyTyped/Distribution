@@ -14,7 +14,7 @@ trait ServerInjectOptions
   /**
     * sets the initial value of request.app, defaults to {}.
     */
-  var app: js.UndefOr[ApplicationState] = js.undefined
+  var app: js.UndefOr[RequestApplicationState] = js.undefined
   /**
     * Authentication bypass options.
     */
@@ -30,7 +30,7 @@ object ServerInjectOptions {
   def apply(
     url: java.lang.String,
     allowInternals: js.UndefOr[scala.Boolean] = js.undefined,
-    app: ApplicationState = null,
+    app: RequestApplicationState = null,
     auth: atHapiHapiLib.Anon_Artifacts = null,
     authority: java.lang.String = null,
     headers: atHapiShotLib.atHapiShotMod.Headers = null,

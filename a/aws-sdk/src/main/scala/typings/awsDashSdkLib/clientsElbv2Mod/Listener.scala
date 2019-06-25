@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Listener extends js.Object {
   /**
-    * The SSL server certificate. You must provide a certificate if the protocol is HTTPS or TLS.
+    * [HTTPS or TLS listener] The default certificate for the listener.
     */
   var Certificates: js.UndefOr[CertificateList] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait Listener extends js.Object {
     */
   var Protocol: js.UndefOr[ProtocolEnum] = js.undefined
   /**
-    * The security policy that defines which ciphers and protocols are supported. The default is the current predefined security policy.
+    * [HTTPS or TLS listener] The security policy that defines which ciphers and protocols are supported. The default is the current predefined security policy.
     */
   var SslPolicy: js.UndefOr[SslPolicyName] = js.undefined
 }

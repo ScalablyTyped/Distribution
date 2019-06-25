@@ -12,7 +12,7 @@ trait WriteTransactionOptions extends js.Object {
   var gmlOptions: js.UndefOr[olLib.formatGMLBaseMod.Options] = js.undefined
   var handle: js.UndefOr[java.lang.String] = js.undefined
   var hasZ: js.UndefOr[scala.Boolean] = js.undefined
-  var nativeElements: js.Array[org.scalablytyped.runtime.StringDictionary[_]]
+  var nativeElements: js.Array[js.Object]
   var srsName: js.UndefOr[java.lang.String] = js.undefined
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -23,7 +23,7 @@ object WriteTransactionOptions {
     featureNS: java.lang.String,
     featurePrefix: java.lang.String,
     featureType: java.lang.String,
-    nativeElements: js.Array[org.scalablytyped.runtime.StringDictionary[_]],
+    nativeElements: js.Array[js.Object],
     gmlOptions: olLib.formatGMLBaseMod.Options = null,
     handle: java.lang.String = null,
     hasZ: js.UndefOr[scala.Boolean] = js.undefined,

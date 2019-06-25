@@ -11,7 +11,7 @@ trait SecurityHub
   @JSName("config")
   var config_SecurityHub: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Accepts the invitation to be monitored by a Security Hub master account.
+    * Accepts the invitation to be a member account and be monitored by the Security Hub master account that the invitation was sent from. When the member account accepts the invitation, permission is granted to the master account to view findings generated in the member account.
     */
   def acceptInvitation(): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptInvitation(
@@ -22,7 +22,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Accepts the invitation to be monitored by a Security Hub master account.
+    * Accepts the invitation to be a member account and be monitored by the Security Hub master account that the invitation was sent from. When the member account accepts the invitation, permission is granted to the master account to view findings generated in the member account.
     */
   def acceptInvitation(params: AcceptInvitationRequest): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptInvitation(
@@ -34,7 +34,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disables the standards specified by the standards subscription ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices.
+    * Disables the standards specified by the provided StandardsSubscriptionArns. For more information, see Standards Supported in AWS Security Hub.
     */
   def batchDisableStandards(): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchDisableStandards(
@@ -45,7 +45,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disables the standards specified by the standards subscription ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices.
+    * Disables the standards specified by the provided StandardsSubscriptionArns. For more information, see Standards Supported in AWS Security Hub.
     */
   def batchDisableStandards(params: BatchDisableStandardsRequest): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchDisableStandards(
@@ -57,7 +57,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enables the standards specified by the standards ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices. 
+    * Enables the standards specified by the provided standardsArn. In this release, only CIS AWS Foundations standards are supported. For more information, see Standards Supported in AWS Security Hub.
     */
   def batchEnableStandards(): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchEnableStandards(
@@ -68,7 +68,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enables the standards specified by the standards ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices. 
+    * Enables the standards specified by the provided standardsArn. In this release, only CIS AWS Foundations standards are supported. For more information, see Standards Supported in AWS Security Hub.
     */
   def batchEnableStandards(params: BatchEnableStandardsRequest): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchEnableStandards(
@@ -80,7 +80,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Imports security findings generated from an integrated third-party product into Security Hub.
+    * Imports security findings generated from an integrated third-party product into Security Hub. This action is requested by the integrated product to import its findings into Security Hub. The maximum allowed size for a finding is 240 Kb. An error is returned for any finding larger than 240 Kb.
     */
   def batchImportFindings(): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchImportFindings(
@@ -91,7 +91,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Imports security findings generated from an integrated third-party product into Security Hub.
+    * Imports security findings generated from an integrated third-party product into Security Hub. This action is requested by the integrated product to import its findings into Security Hub. The maximum allowed size for a finding is 240 Kb. An error is returned for any finding larger than 240 Kb.
     */
   def batchImportFindings(params: BatchImportFindingsRequest): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchImportFindings(
@@ -103,7 +103,30 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an insight, which is a consolidation of findings that identifies a security area that requires attention or intervention.
+    * Creates a custom action target in Security Hub. You can use custom actions on findings and insights in Security Hub to trigger target actions in Amazon CloudWatch Events.
+    */
+  def createActionTarget(): awsDashSdkLib.libRequestMod.Request[CreateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createActionTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateActionTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a custom action target in Security Hub. You can use custom actions on findings and insights in Security Hub to trigger target actions in Amazon CloudWatch Events.
+    */
+  def createActionTarget(params: CreateActionTargetRequest): awsDashSdkLib.libRequestMod.Request[CreateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createActionTarget(
+    params: CreateActionTargetRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateActionTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a custom insight in Security Hub. An insight is a consolidation of findings that relate to a security issue that requires attention or remediation. Use the GroupByAttribute to group the related findings in the insight.
     */
   def createInsight(): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInsight(
@@ -114,7 +137,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an insight, which is a consolidation of findings that identifies a security area that requires attention or intervention.
+    * Creates a custom insight in Security Hub. An insight is a consolidation of findings that relate to a security issue that requires attention or remediation. Use the GroupByAttribute to group the related findings in the insight.
     */
   def createInsight(params: CreateInsightRequest): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInsight(
@@ -126,7 +149,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates Security Hub member accounts associated with the account used for this action, which becomes the Security Hub Master account. Security Hub must be enabled in the account used to make this request.
+    * Creates a member association in Security Hub between the specified accounts and the account used to make the request, which is the master account. To successfully create a member, you must use this action from an account that already has Security Hub enabled. You can use the EnableSecurityHub to enable Security Hub. After you use CreateMembers to create member account associations in Security Hub, you need to use the InviteMembers action, which invites the accounts to enable Security Hub and become member accounts in Security Hub. If the invitation is accepted by the account owner, the account becomes a member account in Security Hub, and a permission policy is added that permits the master account to view the findings generated in the member account. When Security Hub is enabled in the invited account, findings start being sent to both the member and master accounts. You can remove the association between the master and member accounts by using the DisassociateFromMasterAccount or DisassociateMembers operation.
     */
   def createMembers(): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMembers(
@@ -137,7 +160,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates Security Hub member accounts associated with the account used for this action, which becomes the Security Hub Master account. Security Hub must be enabled in the account used to make this request.
+    * Creates a member association in Security Hub between the specified accounts and the account used to make the request, which is the master account. To successfully create a member, you must use this action from an account that already has Security Hub enabled. You can use the EnableSecurityHub to enable Security Hub. After you use CreateMembers to create member account associations in Security Hub, you need to use the InviteMembers action, which invites the accounts to enable Security Hub and become member accounts in Security Hub. If the invitation is accepted by the account owner, the account becomes a member account in Security Hub, and a permission policy is added that permits the master account to view the findings generated in the member account. When Security Hub is enabled in the invited account, findings start being sent to both the member and master accounts. You can remove the association between the master and member accounts by using the DisassociateFromMasterAccount or DisassociateMembers operation.
     */
   def createMembers(params: CreateMembersRequest): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMembers(
@@ -149,7 +172,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Declines invitations that are sent to this AWS account (invitee) from the AWS accounts (inviters) that are specified by the provided AccountIds.
+    * Declines invitations to become a member account.
     */
   def declineInvitations(): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def declineInvitations(
@@ -160,7 +183,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Declines invitations that are sent to this AWS account (invitee) from the AWS accounts (inviters) that are specified by the provided AccountIds.
+    * Declines invitations to become a member account.
     */
   def declineInvitations(params: DeclineInvitationsRequest): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def declineInvitations(
@@ -171,6 +194,29 @@ trait SecurityHub
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a custom action target from Security Hub. Deleting a custom action target doesn't affect any findings or insights that were already sent to Amazon CloudWatch Events using the custom action.
+    */
+  def deleteActionTarget(): awsDashSdkLib.libRequestMod.Request[DeleteActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteActionTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteActionTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a custom action target from Security Hub. Deleting a custom action target doesn't affect any findings or insights that were already sent to Amazon CloudWatch Events using the custom action.
+    */
+  def deleteActionTarget(params: DeleteActionTargetRequest): awsDashSdkLib.libRequestMod.Request[DeleteActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteActionTarget(
+    params: DeleteActionTargetRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteActionTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the insight specified by the InsightArn.
     */
@@ -195,7 +241,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes invitations that were sent to theis AWS account (invitee) by the AWS accounts (inviters) that are specified by their account IDs. 
+    * Deletes invitations received by the AWS account to become a member account.
     */
   def deleteInvitations(): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInvitations(
@@ -206,7 +252,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes invitations that were sent to theis AWS account (invitee) by the AWS accounts (inviters) that are specified by their account IDs. 
+    * Deletes invitations received by the AWS account to become a member account.
     */
   def deleteInvitations(params: DeleteInvitationsRequest): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInvitations(
@@ -218,7 +264,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the Security Hub member accounts that the account IDs specify.
+    * Deletes the specified member accounts from Security Hub.
     */
   def deleteMembers(): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMembers(
@@ -229,7 +275,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the Security Hub member accounts that the account IDs specify.
+    * Deletes the specified member accounts from Security Hub.
     */
   def deleteMembers(params: DeleteMembersRequest): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMembers(
@@ -241,7 +287,53 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the products available that you can subscribe to.
+    * Returns a list of the custom action targets in Security Hub in your account.
+    */
+  def describeActionTargets(): awsDashSdkLib.libRequestMod.Request[DescribeActionTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeActionTargets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeActionTargetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeActionTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns a list of the custom action targets in Security Hub in your account.
+    */
+  def describeActionTargets(params: DescribeActionTargetsRequest): awsDashSdkLib.libRequestMod.Request[DescribeActionTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeActionTargets(
+    params: DescribeActionTargetsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeActionTargetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeActionTargetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns details about the Hub resource in your account, including the HubArn and the time when you enabled Security Hub.
+    */
+  def describeHub(): awsDashSdkLib.libRequestMod.Request[DescribeHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeHub(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeHubResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns details about the Hub resource in your account, including the HubArn and the time when you enabled Security Hub.
+    */
+  def describeHub(params: DescribeHubRequest): awsDashSdkLib.libRequestMod.Request[DescribeHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeHub(
+    params: DescribeHubRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeHubResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about the products available that you can subscribe to and integrate with Security Hub to consolidate findings.
     */
   def describeProducts(): awsDashSdkLib.libRequestMod.Request[DescribeProductsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProducts(
@@ -252,7 +344,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeProductsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the products available that you can subscribe to.
+    * Returns information about the products available that you can subscribe to and integrate with Security Hub to consolidate findings.
     */
   def describeProducts(params: DescribeProductsRequest): awsDashSdkLib.libRequestMod.Request[DescribeProductsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProducts(
@@ -264,7 +356,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeProductsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Cancels the subscription that allows a findings-generating solution (product) to import its findings into Security Hub.
+    * Disables the integration of the specified product with Security Hub. Findings from that product are no longer sent to Security Hub after the integration is disabled.
     */
   def disableImportFindingsForProduct(): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableImportFindingsForProduct(
@@ -275,7 +367,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Cancels the subscription that allows a findings-generating solution (product) to import its findings into Security Hub.
+    * Disables the integration of the specified product with Security Hub. Findings from that product are no longer sent to Security Hub after the integration is disabled.
     */
   def disableImportFindingsForProduct(params: DisableImportFindingsForProductRequest): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableImportFindingsForProduct(
@@ -287,7 +379,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disables the Security Hub service.
+    * Disables Security Hub in your account only in the current Region. To disable Security Hub in all Regions, you must submit one request per Region where you have enabled Security Hub. When you disable Security Hub for a master account, it doesn't disable Security Hub for any associated member accounts. When you disable Security Hub, your existing findings and insights and any Security Hub configuration settings are deleted after 90 days and can't be recovered. Any standards that were enabled are disabled, and your master and member account associations are removed. If you want to save your existing findings, you must export them before you disable Security Hub.
     */
   def disableSecurityHub(): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableSecurityHub(
@@ -298,7 +390,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disables the Security Hub service.
+    * Disables Security Hub in your account only in the current Region. To disable Security Hub in all Regions, you must submit one request per Region where you have enabled Security Hub. When you disable Security Hub for a master account, it doesn't disable Security Hub for any associated member accounts. When you disable Security Hub, your existing findings and insights and any Security Hub configuration settings are deleted after 90 days and can't be recovered. Any standards that were enabled are disabled, and your master and member account associations are removed. If you want to save your existing findings, you must export them before you disable Security Hub.
     */
   def disableSecurityHub(params: DisableSecurityHubRequest): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableSecurityHub(
@@ -310,7 +402,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disassociates the current Security Hub member account from its master account.
+    * Disassociates the current Security Hub member account from the associated master account.
     */
   def disassociateFromMasterAccount(): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateFromMasterAccount(
@@ -321,7 +413,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disassociates the current Security Hub member account from its master account.
+    * Disassociates the current Security Hub member account from the associated master account.
     */
   def disassociateFromMasterAccount(params: DisassociateFromMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateFromMasterAccount(
@@ -333,7 +425,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disassociates the Security Hub member accounts that are specified by the account IDs from their master account. 
+    * Disassociates the specified member accounts from the associated master account.
     */
   def disassociateMembers(): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateMembers(
@@ -344,7 +436,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disassociates the Security Hub member accounts that are specified by the account IDs from their master account. 
+    * Disassociates the specified member accounts from the associated master account.
     */
   def disassociateMembers(params: DisassociateMembersRequest): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateMembers(
@@ -356,7 +448,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets up the subscription that enables a findings-generating solution (product) to import its findings into Security Hub.
+    * Enables the integration of a partner product with Security Hub. Integrated products send findings to Security Hub. When you enable a product integration, a permission policy that grants permission for the product to send findings to Security Hub is applied.
     */
   def enableImportFindingsForProduct(): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableImportFindingsForProduct(
@@ -367,7 +459,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets up the subscription that enables a findings-generating solution (product) to import its findings into Security Hub.
+    * Enables the integration of a partner product with Security Hub. Integrated products send findings to Security Hub. When you enable a product integration, a permission policy that grants permission for the product to send findings to Security Hub is applied.
     */
   def enableImportFindingsForProduct(params: EnableImportFindingsForProductRequest): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableImportFindingsForProduct(
@@ -379,7 +471,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enables the Security Hub service.
+    * Enables Security Hub for your account in the current Region or the Region you specify in the request. When you enable Security Hub, you grant to Security Hub the permissions necessary to gather findings from AWS Config, Amazon GuardDuty, Amazon Inspector, and Amazon Macie. To learn more, see Setting Up AWS Security Hub.
     */
   def enableSecurityHub(): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableSecurityHub(
@@ -390,7 +482,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enables the Security Hub service.
+    * Enables Security Hub for your account in the current Region or the Region you specify in the request. When you enable Security Hub, you grant to Security Hub the permissions necessary to gather findings from AWS Config, Amazon GuardDuty, Amazon Inspector, and Amazon Macie. To learn more, see Setting Up AWS Security Hub.
     */
   def enableSecurityHub(params: EnableSecurityHubRequest): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableSecurityHub(
@@ -402,7 +494,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists and describes enabled standards.
+    * Returns a list of the standards that are currently enabled.
     */
   def getEnabledStandards(): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEnabledStandards(
@@ -413,7 +505,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists and describes enabled standards.
+    * Returns a list of the standards that are currently enabled.
     */
   def getEnabledStandards(params: GetEnabledStandardsRequest): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEnabledStandards(
@@ -425,7 +517,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists and describes Security Hub-aggregated findings that filter attributes specify.
+    * Returns a list of findings that match the specified criteria.
     */
   def getFindings(): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindings(
@@ -436,7 +528,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists and describes Security Hub-aggregated findings that filter attributes specify.
+    * Returns a list of findings that match the specified criteria.
     */
   def getFindings(params: GetFindingsRequest): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindings(
@@ -563,7 +655,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Invites other AWS accounts to enable Security Hub and become Security Hub member accounts. When an account accepts the invitation and becomes a member account, the master account can view Security Hub findings of the member account. 
+    * Invites other AWS accounts to become member accounts for the Security Hub master account that the invitation is sent from. Before you can use this action to invite a member, you must first create the member account in Security Hub by using the CreateMembers action. When the account owner accepts the invitation to become a member account and enables Security Hub, the master account can view the findings generated from member account.
     */
   def inviteMembers(): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def inviteMembers(
@@ -574,7 +666,7 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Invites other AWS accounts to enable Security Hub and become Security Hub member accounts. When an account accepts the invitation and becomes a member account, the master account can view Security Hub findings of the member account. 
+    * Invites other AWS accounts to become member accounts for the Security Hub master account that the invitation is sent from. Before you can use this action to invite a member, you must first create the member account in Security Hub by using the CreateMembers action. When the account owner accepts the invitation to become a member account and enables Security Hub, the master account can view the findings generated from member account.
     */
   def inviteMembers(params: InviteMembersRequest): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def inviteMembers(
@@ -655,28 +747,97 @@ trait SecurityHub
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of account IDs that are subscribed to the product.
+    * Returns a list of tags associated with a resource.
     */
-  def listProductSubscribers(): awsDashSdkLib.libRequestMod.Request[ListProductSubscribersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def listProductSubscribers(
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ ListProductSubscribersResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[ListProductSubscribersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of account IDs that are subscribed to the product.
+    * Returns a list of tags associated with a resource.
     */
-  def listProductSubscribers(params: ListProductSubscribersRequest): awsDashSdkLib.libRequestMod.Request[ListProductSubscribersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def listProductSubscribers(
-    params: ListProductSubscribersRequest,
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ ListProductSubscribersResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[ListProductSubscribersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds one or more tags to a resource.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds one or more tags to a resource.
+    */
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes one or more tags from a resource.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes one or more tags from a resource.
+    */
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the name and description of a custom action target in Security Hub.
+    */
+  def updateActionTarget(): awsDashSdkLib.libRequestMod.Request[UpdateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateActionTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the name and description of a custom action target in Security Hub.
+    */
+  def updateActionTarget(params: UpdateActionTargetRequest): awsDashSdkLib.libRequestMod.Request[UpdateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateActionTarget(
+    params: UpdateActionTargetRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionTargetResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the Note and RecordState of the Security Hub-aggregated findings that the filter attributes specify. Any member account that can view the finding also sees the update to the finding.
     */

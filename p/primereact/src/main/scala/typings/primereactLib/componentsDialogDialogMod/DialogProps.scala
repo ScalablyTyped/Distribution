@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DialogProps extends js.Object {
   var appendTo: js.UndefOr[stdLib.HTMLElement] = js.undefined
+  var ariaCloseIconLabel: js.UndefOr[java.lang.String] = js.undefined
   var baseZIndex: js.UndefOr[scala.Double] = js.undefined
   var blockScroll: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -33,6 +34,7 @@ object DialogProps {
   def apply(
     onHide: () => scala.Unit,
     appendTo: stdLib.HTMLElement = null,
+    ariaCloseIconLabel: java.lang.String = null,
     baseZIndex: scala.Int | scala.Double = null,
     blockScroll: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
@@ -54,6 +56,7 @@ object DialogProps {
   ): DialogProps = {
     val __obj = js.Dynamic.literal(onHide = js.Any.fromFunction0(onHide))
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (ariaCloseIconLabel != null) __obj.updateDynamic("ariaCloseIconLabel")(ariaCloseIconLabel)
     if (baseZIndex != null) __obj.updateDynamic("baseZIndex")(baseZIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(blockScroll)) __obj.updateDynamic("blockScroll")(blockScroll)
     if (className != null) __obj.updateDynamic("className")(className)

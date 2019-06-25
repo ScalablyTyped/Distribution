@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var attributions: js.UndefOr[olLib.sourceSourceMod.AttributionLike] = js.undefined
   var cacheSize: js.UndefOr[scala.Double] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined
-  var dimensions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var dimensions: js.UndefOr[js.Any] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
   var layer: java.lang.String
   var matrixSet: java.lang.String
@@ -38,7 +38,7 @@ object Options {
     attributions: olLib.sourceSourceMod.AttributionLike = null,
     cacheSize: scala.Int | scala.Double = null,
     crossOrigin: java.lang.String = null,
-    dimensions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dimensions: js.Any = null,
     format: java.lang.String = null,
     projection: olLib.projMod.ProjectionLike = null,
     reprojectionErrorThreshold: scala.Int | scala.Double = null,

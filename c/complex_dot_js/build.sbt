@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "complex_dot_js"
-version := "2.0-dt-20190225Z-ae9706"
+version := "2.0-dt-20190624Z-59a85a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

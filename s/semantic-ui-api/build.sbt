@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-api"
-version := "2.2-dt-20180214Z-e3dc8d"
+version := "2.2-dt-20180214Z-5bd400"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-3f7005",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190624Z-9b43ed",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-29a319",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false

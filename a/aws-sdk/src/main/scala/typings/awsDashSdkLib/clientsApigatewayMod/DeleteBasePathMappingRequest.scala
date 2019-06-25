@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteBasePathMappingRequest extends js.Object {
   /**
-    * [Required] The base path name of the BasePathMapping resource to delete.
+    * [Required] The base path name of the BasePathMapping resource to delete. To specify an empty base path, set this parameter to '(none)'.
     */
   var basePath: String
   /**

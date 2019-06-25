@@ -71,7 +71,7 @@ trait ISemanticTextColors extends js.Object {
     */
   var disabledText: java.lang.String
   /**
-    * The default color of text indicating error on bodyBackground.
+    * The default color of error text on bodyBackground.
     */
   var errorText: java.lang.String
   /**
@@ -118,11 +118,11 @@ trait ISemanticTextColors extends js.Object {
     */
   var primaryButtonTextPressed: java.lang.String
   /**
-    * The color of text on indicating success on bodyBackground.
+    * The default color of success text on successBackground.
     */
   var successText: java.lang.String
   /**
-    * The color of text indicating warning on errorBackground, warningBackground, blockingBackground, or successBackground.
+    * The default color of text on errorBackground, warningBackground, blockingBackground, or successBackground.
     */
   var warningText: java.lang.String
 }

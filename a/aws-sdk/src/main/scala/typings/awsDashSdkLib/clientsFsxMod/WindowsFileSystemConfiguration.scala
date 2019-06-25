@@ -26,6 +26,7 @@ trait WindowsFileSystemConfiguration extends js.Object {
     * The list of maintenance operations in progress for this file system.
     */
   var MaintenanceOperationsInProgress: js.UndefOr[FileSystemMaintenanceOperations] = js.undefined
+  var SelfManagedActiveDirectoryConfiguration: js.UndefOr[SelfManagedActiveDirectoryAttributes] = js.undefined
   /**
     * The throughput of an Amazon FSx file system, measured in megabytes per second.
     */
@@ -44,6 +45,7 @@ object WindowsFileSystemConfiguration {
     CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
     DailyAutomaticBackupStartTime: DailyTime = null,
     MaintenanceOperationsInProgress: FileSystemMaintenanceOperations = null,
+    SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryAttributes = null,
     ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): WindowsFileSystemConfiguration = {
@@ -53,6 +55,7 @@ object WindowsFileSystemConfiguration {
     if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups)
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime)
     if (MaintenanceOperationsInProgress != null) __obj.updateDynamic("MaintenanceOperationsInProgress")(MaintenanceOperationsInProgress)
+    if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration)
     if (!js.isUndefined(ThroughputCapacity)) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity)
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime)
     __obj.asInstanceOf[WindowsFileSystemConfiguration]

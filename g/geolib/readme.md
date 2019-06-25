@@ -1,7 +1,7 @@
 
 # Scala.js typings for geolib
 
-Typings are for version 3.0.3
+Typings are for version 3.0.4
 
 ## Library description:
 Library to perform geo specific tasks

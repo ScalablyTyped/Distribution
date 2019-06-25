@@ -853,7 +853,7 @@ trait _Chain[T, V] extends js.Object {
     * Wrapped type `any[][]`.
     * @see _.union
     **/
-  def union(arrays: List[T]*): _Chain[T, T] = js.native
+  def union(arrays: List[T]*): _Chain[T, js.Array[T]] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.uniq
@@ -918,7 +918,7 @@ trait _Chain[T, V] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.without
     **/
-  def without(values: T*): _Chain[T, T] = js.native
+  def without(values: T*): _Chain[T, js.Array[T]] = js.native
   /**
     * Wrapped type `Function`.
     * @see _.wrap

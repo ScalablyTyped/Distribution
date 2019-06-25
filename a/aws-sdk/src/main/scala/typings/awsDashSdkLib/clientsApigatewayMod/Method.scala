@@ -35,7 +35,7 @@ trait Method extends js.Object {
     */
   var methodResponses: js.UndefOr[MapOfMethodResponse] = js.undefined
   /**
-    * A human-friendly operation identifier for the method. For example, you can assign the operationName of ListPets for the GET /pets method in PetStore example.
+    * A human-friendly operation identifier for the method. For example, you can assign the operationName of ListPets for the GET /pets method in the PetStore example.
     */
   var operationName: js.UndefOr[String] = js.undefined
   /**

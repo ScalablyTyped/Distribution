@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String): stdLib.Element = js.native
   def getAllTextContent(node: stdLib.Node, normalizeWhitespace: scala.Boolean): java.lang.String = js.native
   def getAttributeNS(node: stdLib.Element, namespaceURI: java.lang.String, name: java.lang.String): java.lang.String = js.native
-  def isDocument(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
+  def isDocument(`object`: js.Any): scala.Boolean = js.native
   def makeArrayExtender[T](
     valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Node, /* param2 */ js.Array[_], js.Array[_]]
   ): Parser = js.native

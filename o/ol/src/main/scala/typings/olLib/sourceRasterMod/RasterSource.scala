@@ -29,7 +29,7 @@ trait RasterSource
     listener: js.Function1[/* evt */ RasterSourceEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   def setOperation(operation: Operation): scala.Unit = js.native
-  def setOperation(operation: Operation, opt_lib: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setOperation(operation: Operation, opt_lib: js.Any): scala.Unit = js.native
   @JSName("un")
   def un_afteroperations(
     `type`: olLib.olLibStrings.afteroperations,

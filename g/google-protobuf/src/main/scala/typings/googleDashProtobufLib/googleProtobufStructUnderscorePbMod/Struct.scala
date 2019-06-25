@@ -11,6 +11,7 @@ class Struct ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message {
   def clearFieldsMap(): scala.Unit = js.native
   def getFieldsMap(): googleDashProtobufLib.googleDashProtobufMod.Map[java.lang.String, Value] = js.native
+  def toJavaScript(): org.scalablytyped.runtime.StringDictionary[JavaScriptValue] = js.native
 }
 
 /* static members */
@@ -27,6 +28,9 @@ object Struct extends js.Object {
   def deserializeBinaryFromReader(
     message: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Struct,
     reader: googleDashProtobufLib.googleDashProtobufMod.BinaryReader
+  ): googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Struct = js.native
+  def fromJavaScript(
+    value: org.scalablytyped.runtime.StringDictionary[googleDashProtobufLib.googleProtobufStructUnderscorePbMod.JavaScriptValue]
   ): googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Struct = js.native
   def serializeBinaryToWriter(
     message: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.Struct,

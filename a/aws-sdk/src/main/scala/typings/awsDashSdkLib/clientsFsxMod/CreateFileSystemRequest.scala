@@ -11,29 +11,29 @@ trait CreateFileSystemRequest extends js.Object {
     */
   var ClientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   /**
-    * The type of file system.
+    * The type of Amazon FSx file system to create.
     */
   var FileSystemType: awsDashSdkLib.clientsFsxMod.FileSystemType
   var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   var LustreConfiguration: js.UndefOr[CreateFileSystemLustreConfiguration] = js.undefined
   /**
-    * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces. This list isn't returned in later describe requests.
+    * A list of IDs specifying the security groups to apply to all network interfaces created for file system access. This list isn't returned in later requests to describe the file system.
     */
   var SecurityGroupIds: js.UndefOr[SecurityGroupIds] = js.undefined
   /**
-    * The storage capacity of the file system. For Windows file systems, the storage capacity has a minimum of 300 GiB, and a maximum of 65,536 GiB. For Lustre file systems, the storage capacity has a minimum of 3,600 GiB. Storage capacity is provisioned in increments of 3,600 GiB.
+    * The storage capacity of the file system being created. For Windows file systems, the storage capacity has a minimum of 300 GiB, and a maximum of 65,536 GiB. For Lustre file systems, the storage capacity has a minimum of 3,600 GiB. Storage capacity is provisioned in increments of 3,600 GiB.
     */
   var StorageCapacity: awsDashSdkLib.clientsFsxMod.StorageCapacity
   /**
-    * A list of IDs for the subnets that the file system will be accessible from. File systems support only one subnet. The file server is also launched in that subnet's Availability Zone.
+    * The IDs of the subnets that the file system will be accessible from. File systems support only one subnet. The file server is also launched in that subnet's Availability Zone.
     */
   var SubnetIds: awsDashSdkLib.clientsFsxMod.SubnetIds
   /**
-    * The tags to be applied to the file system at file system creation. The key value of the Name tag appears in the console as the file system name.
+    * The tags to apply to the file system being created. The key value of the Name tag appears in the console as the file system name.
     */
   var Tags: js.UndefOr[Tags] = js.undefined
   /**
-    * The configuration for this Microsoft Windows file system.
+    * The Microsoft Windows configuration for the file system being created. This value is required if FileSystemType is set to WINDOWS.
     */
   var WindowsConfiguration: js.UndefOr[CreateFileSystemWindowsConfiguration] = js.undefined
 }

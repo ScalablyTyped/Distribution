@@ -15,6 +15,7 @@ class ListValue ()
   def clearValuesList(): scala.Unit = js.native
   def getValuesList(): js.Array[Value] = js.native
   def setValuesList(value: js.Array[Value]): scala.Unit = js.native
+  def toJavaScript(): js.Array[JavaScriptValue] = js.native
 }
 
 /* static members */
@@ -32,6 +33,7 @@ object ListValue extends js.Object {
     message: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ListValue,
     reader: googleDashProtobufLib.googleDashProtobufMod.BinaryReader
   ): googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ListValue = js.native
+  def fromJavaScript(value: js.Array[googleDashProtobufLib.googleProtobufStructUnderscorePbMod.JavaScriptValue]): googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ListValue = js.native
   def serializeBinaryToWriter(
     message: googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ListValue,
     writer: googleDashProtobufLib.googleDashProtobufMod.BinaryWriter

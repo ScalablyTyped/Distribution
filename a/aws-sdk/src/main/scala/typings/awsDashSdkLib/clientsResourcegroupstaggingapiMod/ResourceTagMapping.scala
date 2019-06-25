@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ResourceTagMapping extends js.Object {
   /**
-    * Details on whether a resource is compliant with the effective tag policy, including information about any noncompliant tag keys.
-    */
-  var ComplianceDetails: js.UndefOr[ComplianceDetails] = js.undefined
-  /**
     * The ARN of the resource.
     */
   var ResourceARN: js.UndefOr[ResourceARN] = js.undefined
@@ -22,9 +18,8 @@ trait ResourceTagMapping extends js.Object {
 
 object ResourceTagMapping {
   @scala.inline
-  def apply(ComplianceDetails: ComplianceDetails = null, ResourceARN: ResourceARN = null, Tags: TagList = null): ResourceTagMapping = {
+  def apply(ResourceARN: ResourceARN = null, Tags: TagList = null): ResourceTagMapping = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceDetails != null) __obj.updateDynamic("ComplianceDetails")(ComplianceDetails)
     if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[ResourceTagMapping]

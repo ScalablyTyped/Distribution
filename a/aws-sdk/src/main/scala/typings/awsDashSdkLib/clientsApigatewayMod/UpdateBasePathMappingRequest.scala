@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateBasePathMappingRequest extends js.Object {
   /**
-    * [Required] The base path of the BasePathMapping resource to change.
+    * [Required] The base path of the BasePathMapping resource to change. To specify an empty base path, set this parameter to '(none)'.
     */
   var basePath: String
   /**

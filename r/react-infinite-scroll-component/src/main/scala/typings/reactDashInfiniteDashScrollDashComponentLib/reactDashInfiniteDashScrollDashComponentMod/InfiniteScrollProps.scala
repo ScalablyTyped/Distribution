@@ -11,6 +11,10 @@ trait InfiniteScrollProps extends js.Object {
     */
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
+    * Set any custom class you want
+    */
+  var className: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Set the length of the data.This will unlock the subsequent calls to next.
     */
   var dataLength: scala.Double
@@ -74,7 +78,7 @@ trait InfiniteScrollProps extends js.Object {
     */
   var scrollableTarget: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   /**
-    * Set a scroll y position for the component to render with.
+    * Set any style which you want to override.
     */
   var style: js.UndefOr[js.Any] = js.undefined
   /**
@@ -93,6 +97,7 @@ object InfiniteScrollProps {
     loader: reactLib.reactMod.ReactNode,
     next: () => scala.Unit,
     children: reactLib.reactMod.ReactNode = null,
+    className: java.lang.String = null,
     endMessage: reactLib.reactMod.ReactNode = null,
     hasChildren: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
@@ -109,6 +114,7 @@ object InfiniteScrollProps {
   ): InfiniteScrollProps = {
     val __obj = js.Dynamic.literal(dataLength = dataLength, hasMore = hasMore, loader = loader.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (endMessage != null) __obj.updateDynamic("endMessage")(endMessage.asInstanceOf[js.Any])
     if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

@@ -10,13 +10,13 @@ trait WFS
   extends olLib.formatXMLFeatureMod.default {
   def getFeatureType(): js.Array[java.lang.String] | java.lang.String = js.native
   def readFeatureCollectionMetadata(source: java.lang.String): FeatureCollectionMetadata = js.native
-  def readFeatureCollectionMetadata(source: org.scalablytyped.runtime.StringDictionary[js.Any]): FeatureCollectionMetadata = js.native
+  def readFeatureCollectionMetadata(source: js.Object): FeatureCollectionMetadata = js.native
   def readFeatureCollectionMetadata(source: stdLib.Document): FeatureCollectionMetadata = js.native
   def readFeatureCollectionMetadata(source: stdLib.Element): FeatureCollectionMetadata = js.native
   def readFeatureCollectionMetadataFromDocument(doc: stdLib.Document): FeatureCollectionMetadata = js.native
   def readFeatureCollectionMetadataFromNode(node: stdLib.Element): FeatureCollectionMetadata = js.native
   def readTransactionResponse(source: java.lang.String): TransactionResponse = js.native
-  def readTransactionResponse(source: org.scalablytyped.runtime.StringDictionary[js.Any]): TransactionResponse = js.native
+  def readTransactionResponse(source: js.Object): TransactionResponse = js.native
   def readTransactionResponse(source: stdLib.Document): TransactionResponse = js.native
   def readTransactionResponse(source: stdLib.Element): TransactionResponse = js.native
   def readTransactionResponseFromDocument(doc: stdLib.Document): TransactionResponse = js.native

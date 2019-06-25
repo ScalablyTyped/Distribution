@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-infinite-scroll-component"
-version := "4.2-dt-20181106Z-ec0ec1"
+version := "4.2-dt-20190624Z-129e0f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

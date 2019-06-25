@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class default protected () extends Event {
   def this(`type`: java.lang.String) = this()
   /* CompleteClass */
-  override var target: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  override var target: js.Any = js.native
   /* CompleteClass */
   override var `type`: java.lang.String = js.native
   /* CompleteClass */

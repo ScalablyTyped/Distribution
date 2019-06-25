@@ -11,7 +11,7 @@ trait Certificate extends js.Object {
     */
   var CertificateArn: js.UndefOr[CertificateArn] = js.undefined
   /**
-    * Indicates whether the certificate is the default certificate. Do not set IsDefault when specifying a certificate as an input parameter.
+    * Indicates whether the certificate is the default certificate. Do not set this value when specifying a certificate as an input. This value is not included in the output when describing a listener, but is included when describing listener certificates.
     */
   var IsDefault: js.UndefOr[Default] = js.undefined
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TagResourceRequest extends js.Object {
   /**
-    * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded. At present, Stage is the only taggable resource.
+    * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded.
     */
   var resourceArn: String
   /**

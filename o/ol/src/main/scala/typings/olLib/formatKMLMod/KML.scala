@@ -13,15 +13,15 @@ trait KML
   def readName(source: stdLib.Element): java.lang.String = js.native
   def readNameFromDocument(doc: stdLib.Document): java.lang.String = js.native
   def readNameFromNode(node: stdLib.Element): java.lang.String = js.native
-  def readNetworkLinks(source: java.lang.String): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readNetworkLinks(source: stdLib.Document): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readNetworkLinks(source: stdLib.Element): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readNetworkLinksFromDocument(doc: stdLib.Document): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readNetworkLinksFromNode(node: stdLib.Element): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readRegion(source: java.lang.String): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readRegion(source: stdLib.Document): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readRegion(source: stdLib.Element): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readRegionFromDocument(doc: stdLib.Document): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def readRegionFromNode(node: stdLib.Element): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def readNetworkLinks(source: java.lang.String): js.Array[js.Object] = js.native
+  def readNetworkLinks(source: stdLib.Document): js.Array[js.Object] = js.native
+  def readNetworkLinks(source: stdLib.Element): js.Array[js.Object] = js.native
+  def readNetworkLinksFromDocument(doc: stdLib.Document): js.Array[js.Object] = js.native
+  def readNetworkLinksFromNode(node: stdLib.Element): js.Array[js.Object] = js.native
+  def readRegion(source: java.lang.String): js.Array[js.Object] = js.native
+  def readRegion(source: stdLib.Document): js.Array[js.Object] = js.native
+  def readRegion(source: stdLib.Element): js.Array[js.Object] = js.native
+  def readRegionFromDocument(doc: stdLib.Document): js.Array[js.Object] = js.native
+  def readRegionFromNode(node: stdLib.Element): js.Array[js.Object] = js.native
 }
 

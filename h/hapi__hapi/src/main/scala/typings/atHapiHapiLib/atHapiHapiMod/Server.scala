@@ -20,7 +20,7 @@ class Server () extends js.Object {
     * Initialized with an empty object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverapp)
     */
-  var app: ApplicationState = js.native
+  var app: ServerApplicationState = js.native
   /**
     * Server Auth: properties and methods
     */

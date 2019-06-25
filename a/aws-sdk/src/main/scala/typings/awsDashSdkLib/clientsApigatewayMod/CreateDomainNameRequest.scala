@@ -43,6 +43,10 @@ trait CreateDomainNameRequest extends js.Object {
     */
   var regionalCertificateName: js.UndefOr[String] = js.undefined
   /**
+    * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are TLS_1_0 and TLS_1_2.
+    */
+  var securityPolicy: js.UndefOr[SecurityPolicy] = js.undefined
+  /**
     * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
     */
   var tags: js.UndefOr[MapOfStringToString] = js.undefined
@@ -60,6 +64,7 @@ object CreateDomainNameRequest {
     endpointConfiguration: EndpointConfiguration = null,
     regionalCertificateArn: String = null,
     regionalCertificateName: String = null,
+    securityPolicy: SecurityPolicy = null,
     tags: MapOfStringToString = null
   ): CreateDomainNameRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName)
@@ -71,6 +76,7 @@ object CreateDomainNameRequest {
     if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration)
     if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn)
     if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName)
+    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateDomainNameRequest]
   }

@@ -15,6 +15,10 @@ trait UpdateFileSystemWindowsConfiguration extends js.Object {
     */
   var DailyAutomaticBackupStartTime: js.UndefOr[DailyTime] = js.undefined
   /**
+    * The configuration Amazon FSx uses to join the Windows File Server instance to the self-managed Microsoft AD directory.
+    */
+  var SelfManagedActiveDirectoryConfiguration: js.UndefOr[SelfManagedActiveDirectoryConfigurationUpdates] = js.undefined
+  /**
     * The preferred time to perform weekly maintenance, in the UTC time zone.
     */
   var WeeklyMaintenanceStartTime: js.UndefOr[WeeklyTime] = js.undefined
@@ -25,11 +29,13 @@ object UpdateFileSystemWindowsConfiguration {
   def apply(
     AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
     DailyAutomaticBackupStartTime: DailyTime = null,
+    SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryConfigurationUpdates = null,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): UpdateFileSystemWindowsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays)
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime)
+    if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration)
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime)
     __obj.asInstanceOf[UpdateFileSystemWindowsConfiguration]
   }

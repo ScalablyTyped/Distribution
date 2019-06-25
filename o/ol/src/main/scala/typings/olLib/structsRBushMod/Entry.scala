@@ -10,7 +10,7 @@ trait Entry extends js.Object {
   var maxY: scala.Double
   var minX: scala.Double
   var minY: scala.Double
-  var value: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 
 object Entry {
@@ -20,7 +20,7 @@ object Entry {
     maxY: scala.Double,
     minX: scala.Double,
     minY: scala.Double,
-    value: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+    value: js.Any = null
   ): Entry = {
     val __obj = js.Dynamic.literal(maxX = maxX, maxY = maxY, minX = minX, minY = minY)
     if (value != null) __obj.updateDynamic("value")(value)

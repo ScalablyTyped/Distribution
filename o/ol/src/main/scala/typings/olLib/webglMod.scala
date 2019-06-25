@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
 object webglMod extends js.Object {
   val HAS: scala.Boolean = js.native
   def getContext(canvas: stdLib.HTMLCanvasElement): stdLib.WebGLRenderingContext = js.native
-  def getContext(
-    canvas: stdLib.HTMLCanvasElement,
-    opt_attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): stdLib.WebGLRenderingContext = js.native
+  def getContext(canvas: stdLib.HTMLCanvasElement, opt_attributes: js.Any): stdLib.WebGLRenderingContext = js.native
 }
 

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RasterSourceEvent protected ()
   extends olLib.eventsEventMod.default {
-  def this(`type`: java.lang.String, frameState: olLib.pluggableMapMod.FrameState, data: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  var data: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def this(`type`: java.lang.String, frameState: olLib.pluggableMapMod.FrameState, data: js.Any) = this()
+  var data: js.Any = js.native
   var extent: olLib.extentMod.Extent = js.native
   var resolution: scala.Double = js.native
 }

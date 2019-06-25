@@ -1500,6 +1500,7 @@
 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for & | - |
 | [eslint](./e/eslint) | An AST-based pattern checker for JavaScript. | ast, lint, javascript, ecmascript, espree |
 | [eslint-plugin-prettier](./e/eslint-plugin-prettier) | Runs prettier as an eslint rule | eslint, eslintplugin, eslint-plugin, prettier |
+| [eslint-plugin-react](./e/eslint-plugin-react) | React specific linting rules for ESLint | eslint, eslint-plugin, eslintplugin, react |
 | [eslint-scope](./e/eslint-scope) | ECMAScript scope analyzer for ESLint | - |
 | [eslint-visitor-keys](./e/eslint-visitor-keys) | Constants and utilities about visitor keys to trav | - |
 | [esprima](./e/esprima) | ECMAScript parsing infrastructure for multipurpose | ast, ecmascript, esprima, javascript, parser, syntax |
@@ -2367,6 +2368,7 @@
 | [hapi__iron](./h/hapi__iron) | Encapsulated tokens (encrypted and mac'ed objects) | authentication, encryption, data integrity |
 | [hapi__joi](./h/hapi__joi) | Object schema validation | schema, validation |
 | [hapi__lab](./h/hapi__lab) | Test utility | test, runner |
+| [hapi__marker](./h/hapi__marker) | Cross modules and cross versions shared symbols | utilities |
 | [hapi__mimos](./h/hapi__mimos) | Mime database interface | mime, database, content-type |
 | [hapi__nes](./h/hapi__nes) | WebSocket adapter plugin for hapi routes | hapi, plugin, websocket |
 | [hapi__podium](./h/hapi__podium) | Node compatible event emitter with extra features | emitter, event |
@@ -3391,6 +3393,7 @@
 | [list-stream](./l/list-stream) | Collect chunks / objects from a readable stream, w | buffer, stream |
 | [list_dot_js](./l/list_dot_js) | The perfect library for lists. Supports search, so | list, search, sort, table, dom, html, ui |
 | [listr](./l/listr) | Terminal task list | cli, task, list, tasklist, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
+| [little-loader](./l/little-loader) | A lightweight, IE8+ JavaScript loader. | - |
 | [lls](./l/lls) | show file info easily | - |
 | [load-google-maps-api](./l/load-google-maps-api) | A thin, Promise-returning helper for loading the G | api, google, google-maps, google-maps-api, loader, maps, promise |
 | [load-json-file](./l/load-json-file) | Read and parse a JSON file | read, json, parse, file, fs, graceful, load |
@@ -5005,6 +5008,8 @@
 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F | - |
 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization | react, redux, reselect, memoize, cache |
 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages. | - |
+| [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog. | - |
+| [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog. | - |
 | [reach__router](./r/reach__router) | Next generation Routing for React. | react, react router |
 | [react](./r/react) | React is a JavaScript library for building user in | react |
 | [react-ace](./r/react-ace) | A react component for Ace Editor | ace, ace editor, react-component, react, brace |

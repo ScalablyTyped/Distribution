@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var lib: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var lib: js.UndefOr[js.Any] = js.undefined
   var operation: js.UndefOr[Operation] = js.undefined
   var operationType: js.UndefOr[olLib.olLibStrings.pixel | olLib.olLibStrings.image] = js.undefined
   var sources: js.Array[_]
@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(
     sources: js.Array[_],
-    lib: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    lib: js.Any = null,
     operation: Operation = null,
     operationType: olLib.olLibStrings.pixel | olLib.olLibStrings.image = null,
     threads: scala.Int | scala.Double = null

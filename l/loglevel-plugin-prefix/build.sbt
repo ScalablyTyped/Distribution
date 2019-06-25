@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "loglevel-plugin-prefix"
-version := "0.8.4-17cba8"
+version := "0.8.4-35f2ce"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "loglevel" % "1.5-dt-20190205Z-4c8fdd",
+  "org.scalablytyped" %%% "loglevel" % "1.6.3-123167",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

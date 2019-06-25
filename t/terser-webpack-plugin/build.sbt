@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "terser-webpack-plugin"
-version := "1.2-dt-20190214Z-b08a83"
+version := "1.2-dt-20190214Z-19938e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-89a0aa",
   "org.scalablytyped" %%% "terser" % "4.0.0-e6e483",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-fae9fa",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190619Z-418513")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190624Z-8912b1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

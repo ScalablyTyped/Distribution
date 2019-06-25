@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait Member extends js.Object {
   /**
-    * The AWS account ID of a Security Hub member account.
+    * The AWS account ID of the member account.
     */
   var AccountId: js.UndefOr[AccountId] = js.undefined
   /**
-    * The email of a Security Hub member account.
+    * The email address of the member account.
     */
   var Email: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The timestamp of when the member account was invited to Security Hub.
+    * A timestamp for the date and time when the invitation was sent to the member account.
     */
   var InvitedAt: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The AWS account ID of the Security Hub master account to this member account.
+    * The AWS account ID of the Security Hub master account associated with this member account.
     */
   var MasterId: js.UndefOr[NonEmptyString] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait Member extends js.Object {
     */
   var MemberStatus: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The timestamp of when this member account was updated.
+    * The timestamp for the date and time when the member account was updated.
     */
   var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }

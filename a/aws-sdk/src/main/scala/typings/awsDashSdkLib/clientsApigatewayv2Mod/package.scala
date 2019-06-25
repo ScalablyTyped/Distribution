@@ -38,6 +38,12 @@ package object clientsApigatewayv2Mod {
   type DeploymentStatus = _DeploymentStatus | java.lang.String
   type DomainNameConfigurations = js.Array[DomainNameConfiguration]
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - java.lang.String
+  */
+  type DomainNameStatus = _DomainNameStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.REGIONAL
     - awsDashSdkLib.awsDashSdkLibStrings.EDGE
     - java.lang.String
@@ -77,6 +83,12 @@ package object clientsApigatewayv2Mod {
   type RouteModels = org.scalablytyped.runtime.StringDictionary[StringWithLengthBetween1And128]
   type RouteParameters = org.scalablytyped.runtime.StringDictionary[ParameterConstraints]
   type RouteSettingsMap = org.scalablytyped.runtime.StringDictionary[RouteSettings]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS_1_0
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS_1_2
+    - java.lang.String
+  */
+  type SecurityPolicy = _SecurityPolicy | java.lang.String
   type SelectionExpression = java.lang.String
   type SelectionKey = java.lang.String
   type StageVariablesMap = org.scalablytyped.runtime.StringDictionary[StringWithLengthBetween0And2048]

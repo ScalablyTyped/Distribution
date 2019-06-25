@@ -24,13 +24,7 @@ trait ReactTagsInputProps
   var preventSubmit: js.UndefOr[scala.Boolean] = js.undefined
   var removeKeys: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps, reactLib.reactMod.ReactNode]] = js.undefined
-  var renderLayout: js.UndefOr[
-    js.Function2[
-      /* tagComponents */ js.Array[reactLib.reactMod.Component[js.Object, js.Object, _]], 
-      /* inputComponent */ reactLib.reactMod.Component[js.Object, js.Object, _], 
-      reactLib.reactMod.ReactChild
-    ]
-  ] = js.undefined
+  var renderLayout: js.UndefOr[RenderLayout] = js.undefined
   var renderTag: js.UndefOr[js.Function1[/* props */ RenderTagProps, reactLib.reactMod.ReactNode]] = js.undefined
   var tagDisplayProp: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var tagProps: js.UndefOr[TagProps] = js.undefined
@@ -68,7 +62,7 @@ object ReactTagsInputProps {
     ref: reactLib.reactMod.LegacyRef[TagsInput] = null,
     removeKeys: js.Array[scala.Double] = null,
     renderInput: /* props */ RenderInputProps => reactLib.reactMod.ReactNode = null,
-    renderLayout: (/* tagComponents */ js.Array[reactLib.reactMod.Component[js.Object, js.Object, _]], /* inputComponent */ reactLib.reactMod.Component[js.Object, js.Object, _]) => reactLib.reactMod.ReactChild = null,
+    renderLayout: RenderLayout = null,
     renderTag: /* props */ RenderTagProps => reactLib.reactMod.ReactNode = null,
     tagDisplayProp: java.lang.String = null,
     tagProps: TagProps = null,
@@ -95,7 +89,7 @@ object ReactTagsInputProps {
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (removeKeys != null) __obj.updateDynamic("removeKeys")(removeKeys)
     if (renderInput != null) __obj.updateDynamic("renderInput")(js.Any.fromFunction1(renderInput))
-    if (renderLayout != null) __obj.updateDynamic("renderLayout")(js.Any.fromFunction2(renderLayout))
+    if (renderLayout != null) __obj.updateDynamic("renderLayout")(renderLayout)
     if (renderTag != null) __obj.updateDynamic("renderTag")(js.Any.fromFunction1(renderTag))
     if (tagDisplayProp != null) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp)
     if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps)

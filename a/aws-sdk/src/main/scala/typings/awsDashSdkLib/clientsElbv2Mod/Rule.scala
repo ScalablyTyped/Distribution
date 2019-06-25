@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Rule extends js.Object {
   /**
-    * The actions.
+    * The actions. Each rule must include exactly one of the following types of actions: forward, redirect, or fixed-response, and it must be the last action to be performed.
     */
   var Actions: js.UndefOr[Actions] = js.undefined
   /**
-    * The conditions.
+    * The conditions. Each rule can include zero or one of the following conditions: http-request-method, host-header, path-pattern, and source-ip, and zero or more of the following conditions: http-header and query-string.
     */
   var Conditions: js.UndefOr[RuleConditionList] = js.undefined
   /**

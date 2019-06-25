@@ -17,7 +17,7 @@ trait GMLBase
   var schemaLocation: java.lang.String = js.native
   var srsName: java.lang.String = js.native
   def readFeatureElement(node: stdLib.Element, objectStack: js.Array[_]): olLib.featureMod.default = js.native
-  def readFeatureElementInternal(node: stdLib.Element, objectStack: js.Array[_], asFeature: scala.Boolean): olLib.featureMod.default | org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def readFeatureElementInternal(node: stdLib.Element, objectStack: js.Array[_], asFeature: scala.Boolean): olLib.featureMod.default | js.Object = js.native
   def readFeaturesInternal(node: stdLib.Element, objectStack: js.Array[_]): js.Array[olLib.featureMod.default] = js.native
   def readGeometryElement(node: stdLib.Element, objectStack: js.Array[_]): olLib.geomGeometryMod.default = js.native
   def readLineString(node: stdLib.Element, objectStack: js.Array[_]): olLib.geomLineStringMod.default = js.native

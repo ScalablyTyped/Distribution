@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait SortCriterion extends js.Object {
   /**
-    * The finding attribute used for sorting findings.
+    * The finding attribute used to sort findings.
     */
   var Field: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The order used for sorting findings.
+    * The order used to sort findings.
     */
   var SortOrder: js.UndefOr[SortOrder] = js.undefined
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FileSystemFailureDetails extends js.Object {
   /**
-    * Message describing the failures that occurred during file system creation.
+    * A message describing any failures that occurred during file system creation.
     */
   var Message: js.UndefOr[ErrorMessage] = js.undefined
 }

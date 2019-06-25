@@ -5,258 +5,209 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Complex extends js.Object {
+  // the imaginary part of this complex number
+  var im: scala.Double = js.native
+  // the real part of this complex number
+  var re: scala.Double = js.native
   /**
     * Calculates the magnitude of the complex number.
     */
-  def abs(): scala.Double
+  def abs(): scala.Double = js.native
   /**
     * Calculate the complex arcus cosinus.
     */
-  def acos(): Complex
+  def acos(): Complex = js.native
   /**
     * Calculate the complex asinh.
     */
-  def acosh(): Complex
+  def acosh(): Complex = js.native
   /**
     * Calculate the complex arcus cotangent.
     */
-  def acot(): Complex
+  def acot(): Complex = js.native
   /**
     * Calculate the complex acoth.
     */
-  def acoth(): Complex
+  def acoth(): Complex = js.native
   /**
     * Calculate the complex arcus cosecans.
     */
-  def acsc(): Complex
+  def acsc(): Complex = js.native
   /**
     * Calculate the complex acsch.
     */
-  def acsch(): Complex
+  def acsch(): Complex = js.native
+  def add(a: Complex): Complex = js.native
   /**
     * Adds another complex number.
     */
-  def add(a: scala.Double, b: scala.Double): Complex
+  def add(a: scala.Double, b: scala.Double): Complex = js.native
   /**
     * Calculate the angle of the complex number.
     */
-  def arg(): scala.Double
+  def arg(): scala.Double = js.native
   /**
     * Calculate the complex arcus secant.
     */
-  def asec(): Complex
+  def asec(): Complex = js.native
   /**
     * Calculate the complex asech.
     */
-  def asech(): Complex
+  def asech(): Complex = js.native
   /**
     * Calculate the complex arcus sinus.
     */
-  def asin(): Complex
+  def asin(): Complex = js.native
   /**
     * Calculate the complex asinh.
     */
-  def asinh(): Complex
+  def asinh(): Complex = js.native
   /**
     * Calculate the complex arcus tangent.
     */
-  def atan(): Complex
+  def atan(): Complex = js.native
   /**
     * Calculate the complex atanh.
     */
-  def atanh(): Complex
+  def atanh(): Complex = js.native
   /**
     * Ceils the complex number parts off zero.
     */
-  def ceil(places: scala.Double): Complex
+  def ceil(places: scala.Double): Complex = js.native
   /**
     * Calculates the conjugate of the complex number (multiplies the imaginary part with -1).
     */
-  def conjugate(): Complex
+  def conjugate(): Complex = js.native
   /**
     * Calculate the cosine.
     */
-  def cos(): Complex
+  def cos(): Complex = js.native
   /**
     * Calculate the complex cosh.
     */
-  def cosh(): Complex
+  def cosh(): Complex = js.native
   /**
     * Calculate the cotangent.
     */
-  def cot(): Complex
+  def cot(): Complex = js.native
   /**
     * Calculate the complex coth.
     */
-  def coth(): Complex
+  def coth(): Complex = js.native
   /**
     * Calculate the cosecans.
     */
-  def csc(): Complex
+  def csc(): Complex = js.native
   /**
     * Calculate the complex csch.
     */
-  def csch(): Complex
+  def csch(): Complex = js.native
+  def div(a: Complex): Complex = js.native
   /**
     * Divides the number by another complex number.
     */
-  def div(a: scala.Double, b: scala.Double): Complex
+  def div(a: scala.Double, b: scala.Double): Complex = js.native
+  def equals(a: Complex): scala.Boolean = js.native
   /**
     * Checks if both numbers are exactly the same,
     * if both numbers are infinite they are considered not equal.
     */
-  def equals(a: scala.Double, b: scala.Double): scala.Boolean
+  def equals(a: scala.Double, b: scala.Double): scala.Boolean = js.native
   /**
     * Returns e^n with complex exponent n
     */
-  def exp(): Complex
+  def exp(): Complex = js.native
   /**
     * Floors the complex number parts towards zero.
     */
-  def floor(places: scala.Double): Complex
+  def floor(places: scala.Double): Complex = js.native
   /**
     * Calculates the multiplicative inverse of the complex number (1 / z).
     */
-  def inverse(): Complex
+  def inverse(): Complex = js.native
   /**
     * Checks if the given number is finite.
     */
-  def isFinite(): scala.Boolean
+  def isFinite(): scala.Boolean = js.native
   /**
     * Determines whether or not a complex number is at the infinity pole of the
     * Riemann sphere.
     */
-  def isInfinite(): scala.Boolean
+  def isInfinite(): scala.Boolean = js.native
   /**
     * Checks if the given number is not a number.
     */
-  def isNaN(): scala.Boolean
+  def isNaN(): scala.Boolean = js.native
   /**
     * Determines whether or not a complex number is at the zero pole of the
     * Riemann sphere.
     */
-  def isZero(): scala.Boolean
+  def isZero(): scala.Boolean = js.native
   /**
     * Returns the natural logarithm (base E) of the actual complex number.
     */
-  def log(): Complex
+  def log(): Complex = js.native
+  def mul(a: Complex): Complex = js.native
   /**
     * Multiplies the number with another complex number.
     */
-  def mul(a: scala.Double, b: scala.Double): Complex
+  def mul(a: scala.Double, b: scala.Double): Complex = js.native
   /**
     * Negates the number (multiplies both the real and imaginary part with -1) in order to get the additive inverse.
     */
-  def neg(): Complex
+  def neg(): Complex = js.native
+  def pow(a: Complex): Complex = js.native
   /**
     * Returns the number raised to the complex exponent.
     */
-  def pow(a: scala.Double, b: scala.Double): Complex
+  def pow(a: scala.Double, b: scala.Double): Complex = js.native
   /**
     * Rounds the complex number parts.
     */
-  def round(places: scala.Double): Complex
+  def round(places: scala.Double): Complex = js.native
   /**
     * Calculate the secant.
     */
-  def sec(): Complex
+  def sec(): Complex = js.native
   /**
     * Calculate the complex sech.
     */
-  def sech(): Complex
+  def sech(): Complex = js.native
   /**
     * Returns the complex sign, defined as the complex number
     * normalized by it's absolute value.
     */
-  def sign(): Complex
+  def sign(): Complex = js.native
   /**
     * Calculate the sine of the complex number.
     */
-  def sin(): Complex
+  def sin(): Complex = js.native
   /**
     * Calculate the complex sinh.
     */
-  def sinh(): Complex
+  def sinh(): Complex = js.native
   /**
     * Returns the complex square root of the number.
     */
-  def sqrt(): Complex
+  def sqrt(): Complex = js.native
+  def sub(a: Complex): Complex = js.native
   /**
     * Subtracts another complex number.
     */
-  def sub(a: scala.Double, b: scala.Double): Complex
+  def sub(a: scala.Double, b: scala.Double): Complex = js.native
   /**
     * Calculate the tangent.
     */
-  def tan(): Complex
+  def tan(): Complex = js.native
   /**
     * Calculate the complex tanh.
     */
-  def tanh(): Complex
+  def tanh(): Complex = js.native
   /**
     * Returns a Vector of the actual complex number with two components.
     */
-  def toVector(): js.Array[scala.Double]
-}
-
-object Complex {
-  @scala.inline
-  def apply(
-    abs: () => scala.Double,
-    acos: () => Complex,
-    acosh: () => Complex,
-    acot: () => Complex,
-    acoth: () => Complex,
-    acsc: () => Complex,
-    acsch: () => Complex,
-    add: (scala.Double, scala.Double) => Complex,
-    arg: () => scala.Double,
-    asec: () => Complex,
-    asech: () => Complex,
-    asin: () => Complex,
-    asinh: () => Complex,
-    atan: () => Complex,
-    atanh: () => Complex,
-    ceil: scala.Double => Complex,
-    clone: () => Complex,
-    conjugate: () => Complex,
-    cos: () => Complex,
-    cosh: () => Complex,
-    cot: () => Complex,
-    coth: () => Complex,
-    csc: () => Complex,
-    csch: () => Complex,
-    div: (scala.Double, scala.Double) => Complex,
-    equals: (scala.Double, scala.Double) => scala.Boolean,
-    exp: () => Complex,
-    floor: scala.Double => Complex,
-    inverse: () => Complex,
-    isFinite: () => scala.Boolean,
-    isInfinite: () => scala.Boolean,
-    isNaN: () => scala.Boolean,
-    isZero: () => scala.Boolean,
-    log: () => Complex,
-    mul: (scala.Double, scala.Double) => Complex,
-    neg: () => Complex,
-    pow: (scala.Double, scala.Double) => Complex,
-    round: scala.Double => Complex,
-    sec: () => Complex,
-    sech: () => Complex,
-    sign: () => Complex,
-    sin: () => Complex,
-    sinh: () => Complex,
-    sqrt: () => Complex,
-    sub: (scala.Double, scala.Double) => Complex,
-    tan: () => Complex,
-    tanh: () => Complex,
-    toString: () => java.lang.String,
-    toVector: () => js.Array[scala.Double],
-    valueOf: () => js.UndefOr[scala.Double]
-  ): Complex = {
-    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction0(abs), acos = js.Any.fromFunction0(acos), acosh = js.Any.fromFunction0(acosh), acot = js.Any.fromFunction0(acot), acoth = js.Any.fromFunction0(acoth), acsc = js.Any.fromFunction0(acsc), acsch = js.Any.fromFunction0(acsch), add = js.Any.fromFunction2(add), arg = js.Any.fromFunction0(arg), asec = js.Any.fromFunction0(asec), asech = js.Any.fromFunction0(asech), asin = js.Any.fromFunction0(asin), asinh = js.Any.fromFunction0(asinh), atan = js.Any.fromFunction0(atan), atanh = js.Any.fromFunction0(atanh), ceil = js.Any.fromFunction1(ceil), clone = js.Any.fromFunction0(clone), conjugate = js.Any.fromFunction0(conjugate), cos = js.Any.fromFunction0(cos), cosh = js.Any.fromFunction0(cosh), cot = js.Any.fromFunction0(cot), coth = js.Any.fromFunction0(coth), csc = js.Any.fromFunction0(csc), csch = js.Any.fromFunction0(csch), div = js.Any.fromFunction2(div), equals = js.Any.fromFunction2(equals), exp = js.Any.fromFunction0(exp), floor = js.Any.fromFunction1(floor), inverse = js.Any.fromFunction0(inverse), isFinite = js.Any.fromFunction0(isFinite), isInfinite = js.Any.fromFunction0(isInfinite), isNaN = js.Any.fromFunction0(isNaN), isZero = js.Any.fromFunction0(isZero), log = js.Any.fromFunction0(log), mul = js.Any.fromFunction2(mul), neg = js.Any.fromFunction0(neg), pow = js.Any.fromFunction2(pow), round = js.Any.fromFunction1(round), sec = js.Any.fromFunction0(sec), sech = js.Any.fromFunction0(sech), sign = js.Any.fromFunction0(sign), sin = js.Any.fromFunction0(sin), sinh = js.Any.fromFunction0(sinh), sqrt = js.Any.fromFunction0(sqrt), sub = js.Any.fromFunction2(sub), tan = js.Any.fromFunction0(tan), tanh = js.Any.fromFunction0(tanh), toString = js.Any.fromFunction0(toString), toVector = js.Any.fromFunction0(toVector), valueOf = js.Any.fromFunction0(valueOf))
-  
-    __obj.asInstanceOf[Complex]
-  }
+  def toVector(): js.Array[scala.Double] = js.native
 }
 

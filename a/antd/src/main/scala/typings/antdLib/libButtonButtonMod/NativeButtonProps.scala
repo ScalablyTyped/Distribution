@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  htmlType ? :antd.antd/lib/button/button.ButtonHTMLType,   onClick ? :react.react.MouseEventHandler<std.HTMLElement>} & antd.antd/lib/button/button.BaseButtonProps & antd.antd/lib/_util/type.Omit<react.react.ButtonHTMLAttributes<unknown>, 'type' | 'onClick'> */
+/* Inlined {  htmlType ? :antd.antd/lib/button/button.ButtonHTMLType,   onClick ? :react.react.MouseEventHandler<std.HTMLElement>} & antd.antd/lib/button/button.BaseButtonProps & antd.antd/lib/_util/type.Omit<react.react.ButtonHTMLAttributes<any>, 'type' | 'onClick'> */
 trait NativeButtonProps extends js.Object {
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined

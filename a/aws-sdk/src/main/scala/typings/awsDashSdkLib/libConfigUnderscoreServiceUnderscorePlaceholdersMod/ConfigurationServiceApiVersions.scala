@@ -14,6 +14,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var apigatewaymanagementapi: js.UndefOr[awsDashSdkLib.clientsApigatewaymanagementapiMod.apiVersion] = js.undefined
   var apigatewayv2: js.UndefOr[awsDashSdkLib.clientsApigatewayv2Mod.apiVersion] = js.undefined
   var applicationautoscaling: js.UndefOr[awsDashSdkLib.clientsApplicationautoscalingMod.apiVersion] = js.undefined
+  var applicationinsights: js.UndefOr[awsDashSdkLib.clientsApplicationinsightsMod.apiVersion] = js.undefined
   var appmesh: js.UndefOr[awsDashSdkLib.clientsAppmeshMod.apiVersion] = js.undefined
   var appstream: js.UndefOr[awsDashSdkLib.clientsAppstreamMod.apiVersion] = js.undefined
   var appsync: js.UndefOr[awsDashSdkLib.clientsAppsyncMod.apiVersion] = js.undefined
@@ -163,6 +164,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var serverlessapplicationrepository: js.UndefOr[awsDashSdkLib.clientsServerlessapplicationrepositoryMod.apiVersion] = js.undefined
   var servicecatalog: js.UndefOr[awsDashSdkLib.clientsServicecatalogMod.apiVersion] = js.undefined
   var servicediscovery: js.UndefOr[awsDashSdkLib.clientsServicediscoveryMod.apiVersion] = js.undefined
+  var servicequotas: js.UndefOr[awsDashSdkLib.clientsServicequotasMod.apiVersion] = js.undefined
   var ses: js.UndefOr[awsDashSdkLib.clientsSesMod.apiVersion] = js.undefined
   var shield: js.UndefOr[awsDashSdkLib.clientsShieldMod.apiVersion] = js.undefined
   var signer: js.UndefOr[awsDashSdkLib.clientsSignerMod.apiVersion] = js.undefined
@@ -201,6 +203,7 @@ object ConfigurationServiceApiVersions {
     apigatewaymanagementapi: awsDashSdkLib.clientsApigatewaymanagementapiMod.apiVersion = null,
     apigatewayv2: awsDashSdkLib.clientsApigatewayv2Mod.apiVersion = null,
     applicationautoscaling: awsDashSdkLib.clientsApplicationautoscalingMod.apiVersion = null,
+    applicationinsights: awsDashSdkLib.clientsApplicationinsightsMod.apiVersion = null,
     appmesh: awsDashSdkLib.clientsAppmeshMod.apiVersion = null,
     appstream: awsDashSdkLib.clientsAppstreamMod.apiVersion = null,
     appsync: awsDashSdkLib.clientsAppsyncMod.apiVersion = null,
@@ -350,6 +353,7 @@ object ConfigurationServiceApiVersions {
     serverlessapplicationrepository: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.apiVersion = null,
     servicecatalog: awsDashSdkLib.clientsServicecatalogMod.apiVersion = null,
     servicediscovery: awsDashSdkLib.clientsServicediscoveryMod.apiVersion = null,
+    servicequotas: awsDashSdkLib.clientsServicequotasMod.apiVersion = null,
     ses: awsDashSdkLib.clientsSesMod.apiVersion = null,
     shield: awsDashSdkLib.clientsShieldMod.apiVersion = null,
     signer: awsDashSdkLib.clientsSignerMod.apiVersion = null,
@@ -385,6 +389,7 @@ object ConfigurationServiceApiVersions {
     if (apigatewaymanagementapi != null) __obj.updateDynamic("apigatewaymanagementapi")(apigatewaymanagementapi.asInstanceOf[js.Any])
     if (apigatewayv2 != null) __obj.updateDynamic("apigatewayv2")(apigatewayv2.asInstanceOf[js.Any])
     if (applicationautoscaling != null) __obj.updateDynamic("applicationautoscaling")(applicationautoscaling.asInstanceOf[js.Any])
+    if (applicationinsights != null) __obj.updateDynamic("applicationinsights")(applicationinsights.asInstanceOf[js.Any])
     if (appmesh != null) __obj.updateDynamic("appmesh")(appmesh.asInstanceOf[js.Any])
     if (appstream != null) __obj.updateDynamic("appstream")(appstream.asInstanceOf[js.Any])
     if (appsync != null) __obj.updateDynamic("appsync")(appsync.asInstanceOf[js.Any])
@@ -534,6 +539,7 @@ object ConfigurationServiceApiVersions {
     if (serverlessapplicationrepository != null) __obj.updateDynamic("serverlessapplicationrepository")(serverlessapplicationrepository.asInstanceOf[js.Any])
     if (servicecatalog != null) __obj.updateDynamic("servicecatalog")(servicecatalog.asInstanceOf[js.Any])
     if (servicediscovery != null) __obj.updateDynamic("servicediscovery")(servicediscovery.asInstanceOf[js.Any])
+    if (servicequotas != null) __obj.updateDynamic("servicequotas")(servicequotas.asInstanceOf[js.Any])
     if (ses != null) __obj.updateDynamic("ses")(ses.asInstanceOf[js.Any])
     if (shield != null) __obj.updateDynamic("shield")(shield.asInstanceOf[js.Any])
     if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])

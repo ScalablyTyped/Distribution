@@ -31,6 +31,14 @@ trait DomainName extends js.Object {
     */
   var domainName: js.UndefOr[String] = js.undefined
   /**
+    * The status of the DomainName migration. The valid values are AVAILABLE and UPDATING. If the status is UPDATING, the domain cannot be modified further until the existing operation is complete. If it is AVAILABLE, the domain can be updated.
+    */
+  var domainNameStatus: js.UndefOr[DomainNameStatus] = js.undefined
+  /**
+    * An optional text message containing detailed information about status of the DomainName migration.
+    */
+  var domainNameStatusMessage: js.UndefOr[String] = js.undefined
+  /**
     * The endpoint configuration of this DomainName showing the endpoint types of the domain name. 
     */
   var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.undefined
@@ -51,6 +59,10 @@ trait DomainName extends js.Object {
     */
   var regionalHostedZoneId: js.UndefOr[String] = js.undefined
   /**
+    * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are TLS_1_0 and TLS_1_2.
+    */
+  var securityPolicy: js.UndefOr[SecurityPolicy] = js.undefined
+  /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
   var tags: js.UndefOr[MapOfStringToString] = js.undefined
@@ -65,11 +77,14 @@ object DomainName {
     distributionDomainName: String = null,
     distributionHostedZoneId: String = null,
     domainName: String = null,
+    domainNameStatus: DomainNameStatus = null,
+    domainNameStatusMessage: String = null,
     endpointConfiguration: EndpointConfiguration = null,
     regionalCertificateArn: String = null,
     regionalCertificateName: String = null,
     regionalDomainName: String = null,
     regionalHostedZoneId: String = null,
+    securityPolicy: SecurityPolicy = null,
     tags: MapOfStringToString = null
   ): DomainName = {
     val __obj = js.Dynamic.literal()
@@ -79,11 +94,14 @@ object DomainName {
     if (distributionDomainName != null) __obj.updateDynamic("distributionDomainName")(distributionDomainName)
     if (distributionHostedZoneId != null) __obj.updateDynamic("distributionHostedZoneId")(distributionHostedZoneId)
     if (domainName != null) __obj.updateDynamic("domainName")(domainName)
+    if (domainNameStatus != null) __obj.updateDynamic("domainNameStatus")(domainNameStatus.asInstanceOf[js.Any])
+    if (domainNameStatusMessage != null) __obj.updateDynamic("domainNameStatusMessage")(domainNameStatusMessage)
     if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration)
     if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn)
     if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName)
     if (regionalDomainName != null) __obj.updateDynamic("regionalDomainName")(regionalDomainName)
     if (regionalHostedZoneId != null) __obj.updateDynamic("regionalHostedZoneId")(regionalHostedZoneId)
+    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[DomainName]
   }

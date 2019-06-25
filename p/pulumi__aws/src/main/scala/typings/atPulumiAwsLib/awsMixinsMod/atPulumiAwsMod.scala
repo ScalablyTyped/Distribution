@@ -50,6 +50,8 @@ object atPulumiAwsMod extends js.Object {
     val AppSyncNs: atPulumiAwsLib.TypeofAppSync = js.native
     var ApplicationAutoScaling: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ApplicationAutoScaling] = js.native
     val ApplicationAutoScalingNs: atPulumiAwsLib.TypeofApplicationAutoScaling = js.native
+    var ApplicationInsights: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ApplicationInsights] = js.native
+    val ApplicationInsightsNs: atPulumiAwsLib.TypeofApplicationInsights = js.native
     var Athena: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Athena] = js.native
     val AthenaNs: atPulumiAwsLib.TypeofAthena = js.native
     var AutoScaling: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.AutoScaling] = js.native
@@ -401,6 +403,8 @@ object atPulumiAwsMod extends js.Object {
     val ServiceCatalogNs: atPulumiAwsLib.TypeofServiceCatalog = js.native
     var ServiceDiscovery: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ServiceDiscovery] = js.native
     val ServiceDiscoveryNs: atPulumiAwsLib.TypeofServiceDiscovery = js.native
+    var ServiceQuotas: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ServiceQuotas] = js.native
+    val ServiceQuotasNs: atPulumiAwsLib.TypeofServiceQuotas = js.native
     var SharedIniFileCredentials: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.SharedIniFileCredentials] = js.native
     var Shield: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Shield] = js.native
     val ShieldNs: atPulumiAwsLib.TypeofShield = js.native

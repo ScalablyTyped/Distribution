@@ -41,7 +41,7 @@ trait AtlasManager extends js.Object {
       scala.Unit
     ],
     opt_renderHitCallback: js.Function0[scala.Unit],
-    opt_this: org.scalablytyped.runtime.StringDictionary[js.Any]
+    opt_this: js.Any
   ): AtlasManagerInfo = js.native
   def getInfo(id: java.lang.String): AtlasManagerInfo = js.native
 }

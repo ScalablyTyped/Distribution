@@ -35,7 +35,7 @@ trait Product extends js.Object {
     */
   var ProductName: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The resource policy asasociated with the product.
+    * The resource policy associated with the product.
     */
   var ProductSubscriptionResourcePolicy: js.UndefOr[NonEmptyString] = js.undefined
 }

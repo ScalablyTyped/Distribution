@@ -7,17 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait VictoryGroupProps
   extends VictoryMultiLabeableProps
-     with VictoryCommonProps {
-  /**
-    * The categories prop specifies how categorical data for a chart should be ordered.
-    * This prop should be given as an array of string values, or an object with
-    * these values for x and y. When categories are not given as an object
-    * When this prop is set on a wrapper component, it will dictate the categories of
-    * its the children. If this prop is not set, any categories on child component
-    * or categorical data, will be merged to create a shared set of categories.
-    * @example ["dogs", "cats", "mice"]
-    */
-  var categories: js.UndefOr[CategoryPropType] = js.undefined
+     with VictoryCommonProps
+     with VictoryDatableProps {
   /**
     * The color prop is an optional prop that defines a single color to be applied to the
     * children of VictoryGroup. The color prop will override colors specified via colorScale.
@@ -31,15 +22,6 @@ trait VictoryGroupProps
     * `dataAttributes` prop.
     */
   var colorScale: js.UndefOr[ColorScalePropType] = js.undefined
-  /**
-    * The domain prop describes the range of values your chart will include. This prop can be
-    * given as a array of the minimum and maximum expected values for your chart,
-    * or as an object that specifies separate arrays for x and y.
-    * If this prop is not provided, a domain will be calculated from data, or other
-    * available information.
-    * @examples: [-1, 1], {x: [0, 100], y: [0, 1]}
-    */
-  var domain: js.UndefOr[DomainPropType] = js.undefined
   /**
     * The domainPadding prop specifies a number of pixels of padding to add to the
     * beginning and end of a domain. This prop is useful for explicitly spacing ticks farther
@@ -123,6 +105,8 @@ object VictoryGroupProps {
     color: java.lang.String = null,
     colorScale: ColorScalePropType = null,
     containerComponent: reactLib.reactMod.ReactElement = null,
+    data: js.Array[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement = null,
     domain: DomainPropType = null,
     domainPadding: DomainPaddingPropType = null,
     eventKey: StringOrNumberOrCallback = null,
@@ -144,7 +128,10 @@ object VictoryGroupProps {
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     theme: VictoryThemeDefinition = null,
-    width: scala.Int | scala.Double = null
+    width: scala.Int | scala.Double = null,
+    x: DataGetterPropType = null,
+    y: DataGetterPropType = null,
+    y0: DataGetterPropType = null
   ): VictoryGroupProps = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate)
@@ -152,6 +139,8 @@ object VictoryGroupProps {
     if (color != null) __obj.updateDynamic("color")(color)
     if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (domainPadding != null) __obj.updateDynamic("domainPadding")(domainPadding.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
@@ -169,6 +158,9 @@ object VictoryGroupProps {
     if (style != null) __obj.updateDynamic("style")(style)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryGroupProps]
   }
 }

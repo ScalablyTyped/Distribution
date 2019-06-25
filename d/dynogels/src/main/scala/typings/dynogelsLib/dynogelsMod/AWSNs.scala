@@ -115,6 +115,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class ApplicationInsights ()
+    extends awsDashSdkLib.awsDashSdkMod.ApplicationInsights {
+    def this(options: awsDashSdkLib.clientsApplicationinsightsMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Athena ()
     extends awsDashSdkLib.awsDashSdkMod.Athena {
     def this(options: awsDashSdkLib.clientsAthenaMod.ClientConfiguration) = this()
@@ -1681,6 +1690,15 @@ object AWSNs extends js.Object {
   class ServiceDiscovery ()
     extends awsDashSdkLib.awsDashSdkMod.ServiceDiscovery {
     def this(options: awsDashSdkLib.clientsServicediscoveryMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class ServiceQuotas ()
+    extends awsDashSdkLib.awsDashSdkMod.ServiceQuotas {
+    def this(options: awsDashSdkLib.clientsServicequotasMod.ClientConfiguration) = this()
   }
   
   @js.native

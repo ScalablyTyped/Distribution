@@ -15,7 +15,7 @@ trait BatchImportFindingsResponse extends js.Object {
     */
   var FailedFindings: js.UndefOr[ImportFindingsErrorList] = js.undefined
   /**
-    * The number of findings that were successfully imported
+    * The number of findings that were successfully imported.
     */
   var SuccessCount: Integer
 }

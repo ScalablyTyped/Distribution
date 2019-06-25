@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DisableImportFindingsForProductRequest extends js.Object {
   /**
-    * The ARN of a resource that represents your subscription to a supported product.
+    * The ARN of the integrated product to disable the integration for.
     */
   var ProductSubscriptionArn: NonEmptyString
 }

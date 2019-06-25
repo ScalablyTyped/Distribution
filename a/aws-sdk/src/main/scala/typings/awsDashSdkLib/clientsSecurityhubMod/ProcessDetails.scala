@@ -27,7 +27,7 @@ trait ProcessDetails extends js.Object {
     */
   var Pid: js.UndefOr[Integer] = js.undefined
   /**
-    * The date/time that the process was terminated.
+    * The date and time when the process was terminated.
     */
   var TerminatedAt: js.UndefOr[NonEmptyString] = js.undefined
 }

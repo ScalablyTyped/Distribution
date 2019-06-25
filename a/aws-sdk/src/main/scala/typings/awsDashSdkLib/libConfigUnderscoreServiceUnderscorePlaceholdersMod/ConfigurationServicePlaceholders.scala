@@ -16,6 +16,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var apigatewaymanagementapi: js.UndefOr[awsDashSdkLib.clientsApigatewaymanagementapiMod.ClientConfiguration] = js.native
   var apigatewayv2: js.UndefOr[awsDashSdkLib.clientsApigatewayv2Mod.ClientConfiguration] = js.native
   var applicationautoscaling: js.UndefOr[awsDashSdkLib.clientsApplicationautoscalingMod.ClientConfiguration] = js.native
+  var applicationinsights: js.UndefOr[awsDashSdkLib.clientsApplicationinsightsMod.ClientConfiguration] = js.native
   var appmesh: js.UndefOr[awsDashSdkLib.clientsAppmeshMod.ClientConfiguration] = js.native
   var appstream: js.UndefOr[awsDashSdkLib.clientsAppstreamMod.ClientConfiguration] = js.native
   var appsync: js.UndefOr[awsDashSdkLib.clientsAppsyncMod.ClientConfiguration] = js.native
@@ -165,6 +166,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var serverlessapplicationrepository: js.UndefOr[awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ClientConfiguration] = js.native
   var servicecatalog: js.UndefOr[awsDashSdkLib.clientsServicecatalogMod.ClientConfiguration] = js.native
   var servicediscovery: js.UndefOr[awsDashSdkLib.clientsServicediscoveryMod.ClientConfiguration] = js.native
+  var servicequotas: js.UndefOr[awsDashSdkLib.clientsServicequotasMod.ClientConfiguration] = js.native
   var ses: js.UndefOr[awsDashSdkLib.clientsSesMod.ClientConfiguration] = js.native
   var shield: js.UndefOr[awsDashSdkLib.clientsShieldMod.ClientConfiguration] = js.native
   var signer: js.UndefOr[awsDashSdkLib.clientsSignerMod.ClientConfiguration] = js.native

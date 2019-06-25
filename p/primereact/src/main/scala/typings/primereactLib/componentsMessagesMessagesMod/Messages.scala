@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 class Messages ()
   extends reactLib.reactMod.Component[MessagesProps, js.Any, js.Any] {
   def clear(): scala.Unit = js.native
+  def replace(message: js.Array[Message]): scala.Unit = js.native
+  def replace(message: Message): scala.Unit = js.native
   def show(message: js.Array[Message]): scala.Unit = js.native
   def show(message: Message): scala.Unit = js.native
 }

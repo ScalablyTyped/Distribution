@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait StandardsSubscription extends js.Object {
   /**
-    * The ARN of a standard.  In this release, Security Hub supports only the CIS AWS Foundations standard.  Its ARN is arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0. 
+    * The ARN of a standard. In this release, Security Hub supports only the CIS AWS Foundations standard, which uses the following ARN: arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0. 
     */
   var StandardsArn: NonEmptyString
   /**
-    * 
+    * A key-value pair of input for the standard.
     */
   var StandardsInput: StandardsInputParameterMap
   /**
-    * The standard's status.
+    * The status of the standards subscription.
     */
   var StandardsStatus: awsDashSdkLib.clientsSecurityhubMod.StandardsStatus
   /**

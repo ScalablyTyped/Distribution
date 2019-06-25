@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Resource extends js.Object {
   /**
-    * Additional details about the resource.
+    * Additional details about the resource related to a finding.
     */
   var Details: js.UndefOr[ResourceDetails] = js.undefined
   /**

@@ -622,6 +622,7 @@
 | 0.7981254349315113 | [dir-glob](./d/dir-glob) | Convert directories to glob compatible strings
 | 0.7979857677737542 | [abbrev](./a/abbrev) | Like ruby's abbrev module, but in js
 | 0.7976684163688506 | [archy](./a/archy) | render nested hierarchies npm ls style with unicod
+| 0.7974612297276197 | [eslint-plugin-react](./e/eslint-plugin-react) | React specific linting rules for ESLint
 | 0.7974527895883495 | [tsutils](./t/tsutils) | utilities for working with typescript's AST
 | 0.7974436712463074 | [p-is-promise](./p/p-is-promise) | Check if something is a promise
 | 0.7974243888767146 | [array-uniq](./a/array-uniq) | Create an array without duplicates
@@ -3708,6 +3709,7 @@
 | 0.6287376313275548 | [socketcluster](./s/socketcluster) | SocketCluster - A Highly parallelized WebSocket se
 | 0.6287358955402416 | [graphql-query-complexity](./g/graphql-query-complexity) | Validation rule for GraphQL query complexity analy
 | 0.6286794770823723 | [mixpanel-browser](./m/mixpanel-browser) | The official Mixpanel JavaScript browser client li
+| 0.6286000311515848 | [hapi__marker](./h/hapi__marker) | Cross modules and cross versions shared symbols
 | 0.6284329722824474 | [koa-router](./k/koa-router) | Router middleware for koa. Provides RESTful resour
 | 0.6284325931397711 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
 | 0.628127608585056 | [vega-lib](./v/vega-lib) | Include Vega in projects using minimal dependencie
@@ -5257,6 +5259,7 @@
 | 0.411236565144845 | [react-document-meta](./r/react-document-meta) | Declarative, nested and stateful HTML document met
 | 0.41117503949024226 | [semantic-ui-shape](./s/semantic-ui-shape) | Single component release of shape
 | 0.41085681090178117 | [tinajs__tina-redux](./t/tinajs__tina-redux) | Tina.js bindings for Redux
+| 0.410812321585336 | [little-loader](./l/little-loader) | A lightweight, IE8+ JavaScript loader.
 | 0.41078487147812226 | [falcor-express](./f/falcor-express) | A falcor server for express.
 | 0.41078397306692066 | [gulp-rev-replace](./g/gulp-rev-replace) | Rewrite occurences of filenames which have been re
 | 0.4107514930580343 | [angular-scroll](./a/angular-scroll) | Scrollspy, animated scrollTo and scroll events
@@ -5684,6 +5687,7 @@
 | 0.35145294957763346 | [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console
 | 0.35120617372480556 | [react-virtual-keyboard](./r/react-virtual-keyboard) | Use jQuery Virtual Keyboard in react.js
 | 0.35119046949913424 | [react-native-drawer-layou](./r/react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript
+| 0.35071792583563177 | [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog.
 | 0.35066161446831257 | [shelljs-exec-proxy](./s/shelljs-exec-proxy) | Unlimited shelljs commands with ES6 proxies
 | 0.35062841353365914 | [lodash_dot_startswith](./l/lodash_dot_startswith) | The lodash method _.startsWith exported as a modul
 | 0.35062748853265885 | [fxn](./f/fxn) | Stateless Architecture
@@ -6271,6 +6275,7 @@
 | 0.23408378677877123 | [material__toolbar](./m/material__toolbar) | The Material Components for the web toolbar compon
 | 0.23369083596073334 | [apollo-engine-reporting-p](./a/apollo-engine-reporting-protobuf) | Protobuf format for Apollo Engine
 | 0.23321940577416628 | [uniq](./u/uniq) | Removes duplicates from a sorted array in place
+| 0.2326142181598329 | [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog.
 | 0.23241850288829358 | [vertx3-eventbus-client](./v/vertx3-eventbus-client) | Vert.x 3 Event Bus Client as NPM
 | 0.23199670800722005 | [react-addons-css-transiti](./r/react-addons-css-transition-group) | The code in this package has moved. We recommend y
 | 0.2317348224467418 | [assert-equal-jsx](./a/assert-equal-jsx) | assertEqualJSX

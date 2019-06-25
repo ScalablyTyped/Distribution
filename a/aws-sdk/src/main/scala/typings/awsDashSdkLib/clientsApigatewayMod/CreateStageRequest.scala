@@ -35,7 +35,7 @@ trait CreateStageRequest extends js.Object {
     */
   var restApiId: String
   /**
-    * [Required] The name for the Stage resource.
+    * [Required] The name for the Stage resource. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
     */
   var stageName: String
   /**

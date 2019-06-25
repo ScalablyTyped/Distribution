@@ -179,7 +179,7 @@ trait Static extends js.Object {
     * Makes an ascending comparator function out of a function that returns a value that can be compared with < and >.
     */
   def ascend[T](fn: js.Function1[/* obj */ T, _], a: T, b: T): scala.Double = js.native
-  def assoc[K /* <: java.lang.String */](prop: K): js.Function2[/* val */ js.Any, /* obj */ js.Any, (stdLib.Record[K, _]) with js.Any] = js.native
+  def assoc[K /* <: java.lang.String */](prop: K): AssocPartialOne[K] = js.native
   /**
     * Makes a shallow clone of an object, setting or overriding the specified property with the given value.
     */

@@ -10,6 +10,7 @@ trait TabsProps extends js.Object {
   var animated: js.UndefOr[scala.Boolean | antdLib.Anon_InkBar] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultActiveKey: js.UndefOr[java.lang.String] = js.undefined
+  var destroyInactiveTabPane: js.UndefOr[scala.Boolean] = js.undefined
   var hideAdd: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* activeKey */ java.lang.String, scala.Unit]] = js.undefined
   var onEdit: js.UndefOr[
@@ -48,6 +49,7 @@ object TabsProps {
     animated: scala.Boolean | antdLib.Anon_InkBar = null,
     className: java.lang.String = null,
     defaultActiveKey: java.lang.String = null,
+    destroyInactiveTabPane: js.UndefOr[scala.Boolean] = js.undefined,
     hideAdd: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: /* activeKey */ java.lang.String => scala.Unit = null,
     onEdit: (/* targetKey */ java.lang.String | (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), /* action */ antdLib.antdLibStrings.add | antdLib.antdLibStrings.remove) => scala.Unit = null,
@@ -69,6 +71,7 @@ object TabsProps {
     if (animated != null) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
+    if (!js.isUndefined(destroyInactiveTabPane)) __obj.updateDynamic("destroyInactiveTabPane")(destroyInactiveTabPane)
     if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction2(onEdit))

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchDisableStandardsRequest extends js.Object {
   /**
-    * The ARNs of the standards subscriptions that you want to disable.
+    * The ARNs of the standards subscriptions to disable.
     */
   var StandardsSubscriptionArns: awsDashSdkLib.clientsSecurityhubMod.StandardsSubscriptionArns
 }

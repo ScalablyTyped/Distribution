@@ -11,7 +11,7 @@ trait DescribeLoadBalancersOutput extends js.Object {
     */
   var LoadBalancers: js.UndefOr[LoadBalancers] = js.undefined
   /**
-    * The marker to use when requesting the next set of results. If there are no additional results, the string is empty.
+    * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
     */
   var NextMarker: js.UndefOr[Marker] = js.undefined
 }

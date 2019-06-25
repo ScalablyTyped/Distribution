@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait EnableImportFindingsForProductRequest extends js.Object {
   /**
-    * The ARN of the product that generates findings that you want to import into Security Hub.
+    * The ARN of the product to enable the integration for.
     */
   var ProductArn: NonEmptyString
 }

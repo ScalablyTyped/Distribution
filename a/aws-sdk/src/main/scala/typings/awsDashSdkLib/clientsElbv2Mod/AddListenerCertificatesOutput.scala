@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AddListenerCertificatesOutput extends js.Object {
   /**
-    * Information about the certificates.
+    * Information about the certificates in the certificate list.
     */
   var Certificates: js.UndefOr[CertificateList] = js.undefined
 }

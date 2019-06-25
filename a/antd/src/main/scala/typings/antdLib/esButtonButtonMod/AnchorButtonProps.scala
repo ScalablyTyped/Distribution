@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  href  :string,   target ? :string,   onClick ? :react.react.MouseEventHandler<std.HTMLElement>} & antd.antd/es/button/button.BaseButtonProps & antd.antd/es/_util/type.Omit<react.react.AnchorHTMLAttributes<unknown>, 'type' | 'onClick'> */
+/* Inlined {  href  :string,   target ? :string,   onClick ? :react.react.MouseEventHandler<std.HTMLElement>} & antd.antd/es/button/button.BaseButtonProps & antd.antd/es/_util/type.Omit<react.react.AnchorHTMLAttributes<any>, 'type' | 'onClick'> */
 trait AnchorButtonProps extends js.Object {
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined

@@ -12,10 +12,10 @@ trait ImageWMS
     coordinate: olLib.coordinateMod.Coordinate,
     resolution: scala.Double,
     projection: olLib.projMod.ProjectionLike,
-    params: org.scalablytyped.runtime.StringDictionary[js.Any]
+    params: js.Any
   ): java.lang.String = js.native
   def getImageLoadFunction(): olLib.imageMod.LoadFunction = js.native
-  def getParams(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getParams(): js.Any = js.native
   def getUrl(): java.lang.String = js.native
   @JSName("on")
   def on_imageloadend(
@@ -64,6 +64,6 @@ trait ImageWMS
     `type`: olLib.olLibStrings.imageloadstart,
     listener: js.Function1[/* evt */ olLib.sourceImageMod.ImageSourceEvent, scala.Unit]
   ): scala.Unit = js.native
-  def updateParams(params: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def updateParams(params: js.Any): scala.Unit = js.native
 }
 

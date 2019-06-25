@@ -15,7 +15,7 @@ trait ContainerDetails extends js.Object {
     */
   var ImageName: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The date/time that the container was started.
+    * The date and time when the container started.
     */
   var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   /**

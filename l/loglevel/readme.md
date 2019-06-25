@@ -1,7 +1,7 @@
 
 # Scala.js typings for loglevel
 
-Typings are for version 1.5
+Typings are for version 1.6.3
 
 ## Library description:
 Minimal lightweight logging for JavaScript, adding reliable log level methods to any available console.log methods
@@ -24,7 +24,7 @@ Minimal lightweight logging for JavaScript, adding reliable log level methods to
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,13 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for loglevel 1.5
-// Project: https://github.com/pimterry/loglevel
-// Definitions by: Stefan Profanter <https://github.com/Pro>
-//                 Gabor Szmetanko <https://github.com/szmeti>
-//                 Christian Rackerseder <https://github.com/screendriver>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
+// Originally from Definitely Typed, see:
+// https://github.com/DefinitelyTyped/DefinitelyTyped/blob/b4683d7/types/loglevel/index.d.ts
+// Original definitions by: Stefan Profanter <https://github.com/Pro>
+//                          Gabor Szmetanko <https://github.com/szmeti>
+//                          Christian Rackerseder <https://github.com/screendriver>
 
 ```
 

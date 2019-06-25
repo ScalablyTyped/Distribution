@@ -9,6 +9,7 @@ package object clientsSecurityhubMod {
   type AccountDetailsList = js.Array[AccountDetails]
   type AccountId = java.lang.String
   type AccountIdList = js.Array[NonEmptyString]
+  type ActionTargetList = js.Array[ActionTarget]
   type ArnList = js.Array[NonEmptyString]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.Active
@@ -86,7 +87,6 @@ package object clientsSecurityhubMod {
     - java.lang.String
   */
   type Partition = _Partition | java.lang.String
-  type ProductSubscribersList = js.Array[NonEmptyString]
   type ProductSubscriptionArnList = js.Array[NonEmptyString]
   type ProductsList = js.Array[Product]
   /* Rewritten from type alias, can be one of: 
@@ -96,6 +96,7 @@ package object clientsSecurityhubMod {
   */
   type RecordState = _RecordState | java.lang.String
   type RelatedFindingList = js.Array[RelatedFinding]
+  type ResourceArn = java.lang.String
   type ResourceList = js.Array[Resource]
   type ResultList = js.Array[Result]
   type SortCriteria = js.Array[SortCriterion]
@@ -126,6 +127,10 @@ package object clientsSecurityhubMod {
   type StringFilterComparison = _StringFilterComparison | java.lang.String
   type StringFilterList = js.Array[StringFilter]
   type StringList = js.Array[NonEmptyString]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagMap = org.scalablytyped.runtime.StringDictionary[TagValue]
+  type TagValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.BACKDOOR
     - awsDashSdkLib.awsDashSdkLibStrings.CARD_STEALER

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait RelatedFinding extends js.Object {
   /**
-    * The solution-generated identifier for a related finding.
+    * The product-generated identifier for a related finding.
     */
   var Id: NonEmptyString
   /**
-    * The ARN of the solution that generated a related finding.
+    * The ARN of the product that generated a related finding.
     */
   var ProductArn: NonEmptyString
 }

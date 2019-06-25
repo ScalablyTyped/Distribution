@@ -15,7 +15,7 @@ trait GetTagsRequest extends js.Object {
     */
   var position: js.UndefOr[String] = js.undefined
   /**
-    * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded. At present, Stage is the only taggable resource.
+    * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded.
     */
   var resourceArn: String
 }

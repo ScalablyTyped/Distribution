@@ -65,7 +65,7 @@ object MergeViewEditorConfiguration {
   def apply(
     orig: js.Any,
     allowEditingOriginals: js.UndefOr[scala.Boolean] = js.undefined,
-    autoCloseBrackets: codemirrorLib.codemirrorMod.AutoCloseBrackets | java.lang.String = null,
+    autoCloseBrackets: codemirrorLib.codemirrorMod.AutoCloseBrackets | scala.Boolean | java.lang.String = null,
     autoCloseTags: codemirrorLib.codemirrorMod.AutoCloseTags | scala.Boolean = null,
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
     collapseIdentical: scala.Boolean | scala.Double = null,

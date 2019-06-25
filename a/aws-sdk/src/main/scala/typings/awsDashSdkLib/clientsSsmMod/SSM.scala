@@ -195,7 +195,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def createOpsItem(): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createOpsItem(
@@ -206,7 +206,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def createOpsItem(params: CreateOpsItemRequest): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createOpsItem(
@@ -1150,7 +1150,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsForTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def describeOpsItems(): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeOpsItems(
@@ -1161,7 +1161,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def describeOpsItems(params: DescribeOpsItemsRequest): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeOpsItems(
@@ -1622,7 +1622,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def getOpsItem(): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getOpsItem(
@@ -1633,7 +1633,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def getOpsItem(params: GetOpsItemRequest): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getOpsItem(
@@ -2726,7 +2726,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateManagedInstanceRoleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def updateOpsItem(): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateOpsItem(
@@ -2737,7 +2737,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def updateOpsItem(params: UpdateOpsItemRequest): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateOpsItem(
