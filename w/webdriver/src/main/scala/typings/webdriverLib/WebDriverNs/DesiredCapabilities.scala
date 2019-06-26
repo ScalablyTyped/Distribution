@@ -81,6 +81,7 @@ trait DesiredCapabilities extends Capabilities {
   var environment: js.UndefOr[java.lang.String] = js.undefined
   var espressoServerLaunchTimeout: js.UndefOr[scala.Double] = js.undefined
   var eventTimings: js.UndefOr[scala.Boolean] = js.undefined
+  var exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var executablePath: js.UndefOr[java.lang.String] = js.undefined
   var extractPath: js.UndefOr[java.lang.String] = js.undefined
   var firefoxProfileTemplate: js.UndefOr[java.lang.String] = js.undefined
@@ -128,6 +129,10 @@ trait DesiredCapabilities extends Capabilities {
   var maxInstances: js.UndefOr[scala.Double] = js.undefined
   var mobileEmulationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var `moz:firefoxOptions`: js.UndefOr[FirefoxOptions] = js.undefined
+  var `ms:extensionPaths`: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  // Edge specific
+  var `ms:inPrivate`: js.UndefOr[scala.Boolean] = js.undefined
+  var `ms:startPage`: js.UndefOr[java.lang.String] = js.undefined
   var nativeEvents: js.UndefOr[scala.Boolean] = js.undefined
   var nativeInstrumentsLib: js.UndefOr[scala.Boolean] = js.undefined
   var nativeWebScreenshot: js.UndefOr[scala.Boolean] = js.undefined
@@ -176,6 +181,8 @@ trait DesiredCapabilities extends Capabilities {
   var skipLogcatCapture: js.UndefOr[scala.Boolean] = js.undefined
   var skipServerInstallation: js.UndefOr[scala.Boolean] = js.undefined
   var skipUnlock: js.UndefOr[scala.Boolean] = js.undefined
+  // webdriverio specific
+  var specs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var systemPort: js.UndefOr[scala.Double] = js.undefined
   var timeoutInSeconds: js.UndefOr[scala.Double] = js.undefined
   var trustAllSSLCertificates: js.UndefOr[scala.Boolean] = js.undefined
@@ -275,6 +282,7 @@ object DesiredCapabilities {
     environment: java.lang.String = null,
     espressoServerLaunchTimeout: scala.Int | scala.Double = null,
     eventTimings: js.UndefOr[scala.Boolean] = js.undefined,
+    exclude: js.Array[java.lang.String] = null,
     executablePath: java.lang.String = null,
     extractPath: java.lang.String = null,
     firefoxProfileTemplate: java.lang.String = null,
@@ -319,6 +327,9 @@ object DesiredCapabilities {
     maxInstances: scala.Int | scala.Double = null,
     mobileEmulationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     `moz:firefoxOptions`: FirefoxOptions = null,
+    `ms:extensionPaths`: js.Array[java.lang.String] = null,
+    `ms:inPrivate`: js.UndefOr[scala.Boolean] = js.undefined,
+    `ms:startPage`: java.lang.String = null,
     nativeEvents: js.UndefOr[scala.Boolean] = js.undefined,
     nativeInstrumentsLib: js.UndefOr[scala.Boolean] = js.undefined,
     nativeWebScreenshot: js.UndefOr[scala.Boolean] = js.undefined,
@@ -368,6 +379,7 @@ object DesiredCapabilities {
     skipLogcatCapture: js.UndefOr[scala.Boolean] = js.undefined,
     skipServerInstallation: js.UndefOr[scala.Boolean] = js.undefined,
     skipUnlock: js.UndefOr[scala.Boolean] = js.undefined,
+    specs: js.Array[java.lang.String] = null,
     systemPort: scala.Int | scala.Double = null,
     timeoutInSeconds: scala.Int | scala.Double = null,
     timeouts: Timeouts = null,
@@ -465,6 +477,7 @@ object DesiredCapabilities {
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (espressoServerLaunchTimeout != null) __obj.updateDynamic("espressoServerLaunchTimeout")(espressoServerLaunchTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(eventTimings)) __obj.updateDynamic("eventTimings")(eventTimings)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (executablePath != null) __obj.updateDynamic("executablePath")(executablePath)
     if (extractPath != null) __obj.updateDynamic("extractPath")(extractPath)
     if (firefoxProfileTemplate != null) __obj.updateDynamic("firefoxProfileTemplate")(firefoxProfileTemplate)
@@ -509,6 +522,9 @@ object DesiredCapabilities {
     if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
     if (!js.isUndefined(mobileEmulationEnabled)) __obj.updateDynamic("mobileEmulationEnabled")(mobileEmulationEnabled)
     if (`moz:firefoxOptions` != null) __obj.updateDynamic("moz:firefoxOptions")(`moz:firefoxOptions`)
+    if (`ms:extensionPaths` != null) __obj.updateDynamic("ms:extensionPaths")(`ms:extensionPaths`)
+    if (!js.isUndefined(`ms:inPrivate`)) __obj.updateDynamic("ms:inPrivate")(`ms:inPrivate`)
+    if (`ms:startPage` != null) __obj.updateDynamic("ms:startPage")(`ms:startPage`)
     if (!js.isUndefined(nativeEvents)) __obj.updateDynamic("nativeEvents")(nativeEvents)
     if (!js.isUndefined(nativeInstrumentsLib)) __obj.updateDynamic("nativeInstrumentsLib")(nativeInstrumentsLib)
     if (!js.isUndefined(nativeWebScreenshot)) __obj.updateDynamic("nativeWebScreenshot")(nativeWebScreenshot)
@@ -558,6 +574,7 @@ object DesiredCapabilities {
     if (!js.isUndefined(skipLogcatCapture)) __obj.updateDynamic("skipLogcatCapture")(skipLogcatCapture)
     if (!js.isUndefined(skipServerInstallation)) __obj.updateDynamic("skipServerInstallation")(skipServerInstallation)
     if (!js.isUndefined(skipUnlock)) __obj.updateDynamic("skipUnlock")(skipUnlock)
+    if (specs != null) __obj.updateDynamic("specs")(specs)
     if (systemPort != null) __obj.updateDynamic("systemPort")(systemPort.asInstanceOf[js.Any])
     if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
     if (timeouts != null) __obj.updateDynamic("timeouts")(timeouts)

@@ -17,10 +17,10 @@ class EngineReportingExtension[TContext] protected () extends js.Object {
   var addTrace: js.Any = js.native
   var documentAST: js.UndefOr[js.Any] = js.native
   var ensureParentNode: js.Any = js.native
+  var explicitOperationName: js.UndefOr[js.Any] = js.native
   var generateClientInfo: js.Any = js.native
   var newNode: js.Any = js.native
   var nodes: js.Any = js.native
-  var operationName: js.UndefOr[js.Any] = js.native
   var options: js.Any = js.native
   var queryString: js.UndefOr[js.Any] = js.native
   var rewriteError: js.Any = js.native

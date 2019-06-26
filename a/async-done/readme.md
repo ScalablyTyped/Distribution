@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-done
 
-Typings are for version 1.3.1
+Typings are for version 1.3.2
 
 ## Library description:
 Allows libraries to handle various caller provided asynchronous functions uniformly. Maps promises, observables, child processes and streams, and callbacks to callback style.

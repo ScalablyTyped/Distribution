@@ -5,34 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @class
+  * @alias Map
+  * @classdesc Represents a Sync Map, which stores an unordered set of key:value pairs.
+  * Use the {@link Client#map} method to obtain a reference to a Sync Map.
+  * @property {String} sid An immutable identifier (a SID) assigned by the system on creation.
+  * @property {String} [uniqueName=null] - An optional immutable identifier that may be assigned by the
+  * programmer to this map on creation. Unique among other Maps.
+  * @property {Date} dateUpdated Date when the Map was last updated.
+  *
+  * @fires Map#removed
+  * @fires Map#itemAdded
+  * @fires Map#itemRemoved
+  * @fires Map#itemUpdated
+  */
 @JSImport("twilio-sync/lib/syncmap", "SyncMap")
 @js.native
 class SyncMap protected ()
-  extends twilioDashSyncLib.libEntityMod.SyncEntity {
-  /**
-    * @private
-    */
-  def this(services: MapServices, descriptor: MapDescriptor, removalHandler: twilioDashSyncLib.libEntityMod.RemovalHandler) = this()
-  var _getItemFromServer: js.Any = js.native
-  var _handleItemMutated: js.Any = js.native
-  var _putItemToServer: js.Any = js.native
-  var _putItemUnconditionally: js.Any = js.native
-  var _putItemWithIfMatch: js.Any = js.native
-  var _updateRootDateUpdated: js.Any = js.native
-  val cache: js.Any = js.native
+  extends twilioDashSyncLib.libCloseableMod.Closeable {
+  def this(syncMapImpl: SyncMapImpl) = this()
   val dateExpires: java.lang.String = js.native
   val dateUpdated: stdLib.Date = js.native
-  val descriptor: js.Any = js.native
-  var emitItemMutationEvent: js.Any = js.native
+  val lastEventId: scala.Double = js.native
   val links: js.Any = js.native
   val revision: java.lang.String = js.native
-  var shouldIgnoreEvent: js.Any = js.native
-  val updateMergingQueue: js.Any = js.native
+  val sid: java.lang.String = js.native
+  val syncMapImpl: js.Any = js.native
+  val `type`: java.lang.String = js.native
+  val uniqueName: java.lang.String = js.native
   val uri: java.lang.String = js.native
-  /**
-    * @private
-    */
-  /* protected */ def _handleItemRemoved(key: js.Any, eventId: js.Any, oldData: js.Any, dateUpdated: stdLib.Date, remote: scala.Boolean): scala.Unit = js.native
   /**
     * Enumerate all items in this Map.
     * This always triggers server interaction when being called for the first time on a Map; this may be latent.
@@ -40,7 +42,7 @@ class SyncMap protected ()
     * @param {Function} handler Function to handle each argument.
     * @private
     */
-  def forEach(handler: js.Any): js.Promise[js.Object] = js.native
+  def forEach(handler: js.Any): scala.Unit = js.native
   /**
     * Retrieve an item by key.
     * @param {String} key Identifies the desired item.
@@ -116,15 +118,6 @@ class SyncMap protected ()
     mutator: twilioDashSyncLib.libInterfacesMutatorMod.Mutator,
     itemMetadataUpdates: ItemMetadata
   ): js.Promise[twilioDashSyncLib.libMapitemMod.MapItem] = js.native
-  /**
-    * @private
-    */
-  /* protected */ def queryItems(): js.Promise[
-    twilioDashSyncLib.libPaginatorMod.Paginator[twilioDashSyncLib.libMapitemMod.MapItem]
-  ] = js.native
-  /* protected */ def queryItems(args: js.Any): js.Promise[
-    twilioDashSyncLib.libPaginatorMod.Paginator[twilioDashSyncLib.libMapitemMod.MapItem]
-  ] = js.native
   /**
     * Delete an item, given its key.
     * @param {String} key Selects the item to delete.

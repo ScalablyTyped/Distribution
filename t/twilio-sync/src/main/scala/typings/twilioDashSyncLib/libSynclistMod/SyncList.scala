@@ -22,43 +22,17 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-sync/lib/synclist", "SyncList")
 @js.native
 class SyncList protected ()
-  extends twilioDashSyncLib.libEntityMod.SyncEntity {
-  /**
-    * @private
-    */
-  def this(services: ListServices, descriptor: ListDescriptor, removalHandler: twilioDashSyncLib.libEntityMod.RemovalHandler) = this()
-  var _addOrUpdateItemOnServer: js.Any = js.native
-  var _getItemFromServer: js.Any = js.native
-  /**
-    * @private
-    */
-  var _handleContextUpdate: js.Any = js.native
-  var _handleItemMutated: js.Any = js.native
-  /**
-    * @private
-    */
-  var _handleItemRemoved: js.Any = js.native
-  /**
-    * @private
-    */
-  var _updateContextIfRequired: js.Any = js.native
-  var _updateItemUnconditionally: js.Any = js.native
-  var _updateItemWithIfMatch: js.Any = js.native
-  var _updateRootDateUpdated: js.Any = js.native
-  var cache: js.Any = js.native
-  var context: js.Any = js.native
-  var contextEventId: js.Any = js.native
+  extends twilioDashSyncLib.libCloseableMod.default {
+  def this(syncListImpl: SyncListImpl) = this()
   val dateExpires: java.lang.String = js.native
   val dateUpdated: stdLib.Date = js.native
-  var descriptor: js.Any = js.native
-  /**
-    * @private
-    */
-  var emitItemMutationEvent: js.Any = js.native
+  val lastEventId: scala.Double = js.native
   val links: js.Any = js.native
   val revision: java.lang.String = js.native
-  var shouldIgnoreEvent: js.Any = js.native
-  var updateMergingQueue: js.Any = js.native
+  val sid: java.lang.String = js.native
+  val syncListImpl: js.Any = js.native
+  val `type`: java.lang.String = js.native
+  val uniqueName: java.lang.String = js.native
   val uri: java.lang.String = js.native
   /**
     * Retrieve an item by List index.
@@ -77,8 +51,9 @@ class SyncList protected ()
     */
   def get(index: scala.Double): js.Promise[twilioDashSyncLib.libListitemMod.ListItem] = js.native
   /**
-    * @return {Promise<Object>} Context of List
-    * @private
+    * Retrieve a List context
+    * @returns {Promise<Object>} A promise with a List's context
+    * @ignore
     */
   def getContext(): js.Promise[js.Object] = js.native
   /**
@@ -152,13 +127,6 @@ class SyncList protected ()
     */
   def push(value: js.Any): js.Promise[twilioDashSyncLib.libListitemMod.ListItem] = js.native
   def push(value: js.Any, itemMetadata: ItemMetadata): js.Promise[twilioDashSyncLib.libListitemMod.ListItem] = js.native
-  /**
-    * Query items from the List
-    * @private
-    */
-  /* protected */ def queryItems(arg: js.Any): js.Promise[
-    twilioDashSyncLib.libPaginatorMod.Paginator[twilioDashSyncLib.libListitemMod.ListItem]
-  ] = js.native
   /**
     * Delete an item, given its index.
     * @param {Number} index Index of an item to be removed.

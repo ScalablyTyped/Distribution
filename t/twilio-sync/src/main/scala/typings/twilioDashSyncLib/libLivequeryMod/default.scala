@@ -11,8 +11,7 @@ class default protected () extends LiveQuery {
   /**
     * @private
     */
-  def this(proxy: LiveQueryProxy) = this()
-  def this(proxy: LiveQueryProxy, items: js.Any) = this()
+  def this(liveQueryImpl: LiveQueryImpl) = this()
 }
 
 /* static members */

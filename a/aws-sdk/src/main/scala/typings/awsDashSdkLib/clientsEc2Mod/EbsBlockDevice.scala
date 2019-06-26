@@ -11,7 +11,7 @@ trait EbsBlockDevice extends js.Object {
     */
   var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   /**
-    * Indicates whether the encryption state of an EBS volume is changed while being restored from a backing snapshot. The default effect of setting the Encrypted parameter to true through the console, API, or CLI depends on the volume's origin (new or from a snapshot), starting encryption state, ownership, and whether account-level encryption is enabled. Each default case can be overridden by specifying a customer master key (CMK) with the KmsKeyId parameter in addition to setting Encrypted to true. For a complete list of possible encryption cases, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide. In no case can you remove encryption from an encrypted volume. Encrypted volumes can only be attached to instances that support Amazon EBS encryption. For more information, see Supported Instance Types.
+    * Indicates whether the encryption state of an EBS volume is changed while being restored from a backing snapshot. The effect of setting the encryption state to true depends on the volume origin (new or from a snapshot), starting encryption state, ownership, and whether encryption by default is enabled. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide. In no case can you remove encryption from an encrypted volume. Encrypted volumes can only be attached to instances that support Amazon EBS encryption. For more information, see Supported Instance Types.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait EbsBlockDevice extends js.Object {
     */
   var Iops: js.UndefOr[Integer] = js.undefined
   /**
-    * Identifier (key ID, key alias, ID ARN, or alias ARN) for a user-managed CMK under which the EBS volume is encrypted. This parameter is only supported on BlockDeviceMapping objects called by RunInstances, RequestSpotFleet, and RequestSpotInstances.
+    * Identifier (key ID, key alias, ID ARN, or alias ARN) for a customer managed CMK under which the EBS volume is encrypted. This parameter is only supported on BlockDeviceMapping objects called by RunInstances, RequestSpotFleet, and RequestSpotInstances.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**

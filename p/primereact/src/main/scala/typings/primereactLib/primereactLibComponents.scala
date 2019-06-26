@@ -145,6 +145,17 @@ object primereactLibComponents {
   def GrowlProps: primereactLib.componentsGrowlGrowlMod.GrowlProps.type = primereactLib.componentsGrowlGrowlMod.GrowlProps
   type GrowlProps = primereactLib.componentsGrowlGrowlMod.GrowlProps
   @scala.inline
+  def Inplace: reactLib.reactMod.ComponentType[primereactLib.componentsInplaceInplaceMod.InplaceProps] = js.constructorOf[primereactLib.inplaceMod.Inplace].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsInplaceInplaceMod.InplaceProps]]
+  @scala.inline
+  def InplaceProps: primereactLib.componentsInplaceInplaceMod.InplaceProps.type = primereactLib.componentsInplaceInplaceMod.InplaceProps
+  type InplaceProps = primereactLib.componentsInplaceInplaceMod.InplaceProps
+  @scala.inline
+  def InplaceContent: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[primereactLib.inplaceMod.InplaceContent].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
+  type InplaceContentProps = js.Object
+  @scala.inline
+  def InplaceDisplay: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[primereactLib.inplaceMod.InplaceDisplay].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
+  type InplaceDisplayProps = js.Object
+  @scala.inline
   def InputMask: reactLib.reactMod.ComponentType[primereactLib.componentsInputmaskInputMaskMod.InputMaskProps] = js.constructorOf[primereactLib.inputmaskMod.InputMask].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsInputmaskInputMaskMod.InputMaskProps]]
   @scala.inline
   def InputMaskProps: primereactLib.componentsInputmaskInputMaskMod.InputMaskProps.type = primereactLib.componentsInputmaskInputMaskMod.InputMaskProps

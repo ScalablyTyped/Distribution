@@ -39,7 +39,7 @@ class Session protected () extends js.Object {
     * Sends the command to the server
     * @returns Promise the promise, which is being fulfilled only when service will reply
     */
-  def addCommand(action: java.lang.String, params: js.Object): js.Promise[js.Object] = js.native
+  def addCommand(action: java.lang.String, params: js.Object): js.Promise[_] = js.native
   def getChannelsId(): js.Promise[java.lang.String] = js.native
   def getConsumptionReportInterval(): js.Promise[scala.Double] = js.native
   def getHttpCacheInterval(): js.Promise[scala.Double] = js.native

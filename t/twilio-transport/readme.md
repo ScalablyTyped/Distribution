@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-transport
 
-Typings are for version 0.3.3
+Typings are for version 0.3.5
 
 ## Library description:
 Twilio generic transport interface

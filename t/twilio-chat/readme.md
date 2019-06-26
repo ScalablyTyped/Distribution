@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-chat
 
-Typings are for version 3.2.3
+Typings are for version 3.2.4
 
 ## Library description:
 Twilio Chat service client library

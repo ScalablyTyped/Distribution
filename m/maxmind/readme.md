@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxmind
 
-Typings are for version 3.0.4
+Typings are for version 3.0.5
 
 ## Library description:
 IP lookup using Maxmind databases

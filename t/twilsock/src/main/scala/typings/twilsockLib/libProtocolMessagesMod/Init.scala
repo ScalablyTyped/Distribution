@@ -11,5 +11,6 @@ class Init protected ()
   extends twilsockLib.libProtocolMessagesInitMod.Init {
   def this(token: java.lang.String, continuationToken: java.lang.String, metadata: js.Object) = this()
   def this(token: java.lang.String, continuationToken: java.lang.String, metadata: js.Object, registrations: js.Array[twilsockLib.libProtocolInitregistrationMod.InitRegistration]) = this()
+  def this(token: java.lang.String, continuationToken: java.lang.String, metadata: js.Object, registrations: js.Array[twilsockLib.libProtocolInitregistrationMod.InitRegistration], tweaks: js.Object) = this()
 }
 

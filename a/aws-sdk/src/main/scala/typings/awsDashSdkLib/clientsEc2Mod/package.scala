@@ -1217,6 +1217,9 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.snapshot
     - awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request`
     - awsDashSdkLib.awsDashSdkLibStrings.subnet
+    - awsDashSdkLib.awsDashSdkLibStrings.`traffic-mirror-filter`
+    - awsDashSdkLib.awsDashSdkLibStrings.`traffic-mirror-session`
+    - awsDashSdkLib.awsDashSdkLibStrings.`traffic-mirror-target`
     - awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway`
     - awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-attachment`
     - awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-route-table`
@@ -1419,6 +1422,48 @@ package object clientsEc2Mod {
   */
   type Tenancy = _Tenancy | java.lang.String
   type TerminateConnectionStatusSet = js.Array[TerminateConnectionStatus]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ingress
+    - awsDashSdkLib.awsDashSdkLibStrings.egress
+    - java.lang.String
+  */
+  type TrafficDirection = _TrafficDirection | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`destination-port-range`
+    - awsDashSdkLib.awsDashSdkLibStrings.`source-port-range`
+    - awsDashSdkLib.awsDashSdkLibStrings.protocol
+    - awsDashSdkLib.awsDashSdkLibStrings.description
+    - java.lang.String
+  */
+  type TrafficMirrorFilterRuleField = _TrafficMirrorFilterRuleField | java.lang.String
+  type TrafficMirrorFilterRuleFieldList = js.Array[TrafficMirrorFilterRuleField]
+  type TrafficMirrorFilterRuleList = js.Array[TrafficMirrorFilterRule]
+  type TrafficMirrorFilterSet = js.Array[TrafficMirrorFilter]
+  type TrafficMirrorNetworkService = awsDashSdkLib.awsDashSdkLibStrings.`amazon-dns` | java.lang.String
+  type TrafficMirrorNetworkServiceList = js.Array[TrafficMirrorNetworkService]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.accept
+    - awsDashSdkLib.awsDashSdkLibStrings.reject
+    - java.lang.String
+  */
+  type TrafficMirrorRuleAction = _TrafficMirrorRuleAction | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`packet-length`
+    - awsDashSdkLib.awsDashSdkLibStrings.description
+    - awsDashSdkLib.awsDashSdkLibStrings.`virtual-network-id`
+    - java.lang.String
+  */
+  type TrafficMirrorSessionField = _TrafficMirrorSessionField | java.lang.String
+  type TrafficMirrorSessionFieldList = js.Array[TrafficMirrorSessionField]
+  type TrafficMirrorSessionSet = js.Array[TrafficMirrorSession]
+  type TrafficMirrorTargetSet = js.Array[TrafficMirrorTarget]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`network-interface`
+    - awsDashSdkLib.awsDashSdkLibStrings.`network-load-balancer`
+    - java.lang.String
+  */
+  type TrafficMirrorTargetType = _TrafficMirrorTargetType | java.lang.String
+  type TrafficMirroringMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACCEPT
     - awsDashSdkLib.awsDashSdkLibStrings.REJECT

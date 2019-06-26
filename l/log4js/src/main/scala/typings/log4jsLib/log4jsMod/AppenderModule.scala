@@ -1,0 +1,20 @@
+package typings
+package log4jsLib.log4jsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AppenderModule extends js.Object {
+  var configure: js.Function
+}
+
+object AppenderModule {
+  @scala.inline
+  def apply(configure: js.Function): AppenderModule = {
+    val __obj = js.Dynamic.literal(configure = configure)
+  
+    __obj.asInstanceOf[AppenderModule]
+  }
+}
+

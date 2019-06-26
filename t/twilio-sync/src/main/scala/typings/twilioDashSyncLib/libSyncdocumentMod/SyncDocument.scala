@@ -22,45 +22,18 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-sync/lib/syncdocument", "SyncDocument")
 @js.native
 class SyncDocument protected ()
-  extends twilioDashSyncLib.libEntityMod.SyncEntity {
-  /**
-    * @private
-    */
-  def this(services: DocumentServices, descriptor: DocumentDescriptor, removalHandler: twilioDashSyncLib.libEntityMod.RemovalHandler) = this()
-  /**
-    * @private
-    */
-  var _handleSuccessfulUpdateResult: js.Any = js.native
-  /**
-    * @private
-    */
-  var _postUpdateToServer: js.Any = js.native
-  /**
-    * @private
-    */
-  var _setUnconditionally: js.Any = js.native
-  /**
-    * @private
-    */
-  var _setWithIfMatch: js.Any = js.native
-  /**
-    * Get new data from server
-    * @private
-    */
-  var _softSync: js.Any = js.native
+  extends twilioDashSyncLib.libCloseableMod.default {
+  def this(syncDocumentImpl: SyncDocumentImpl) = this()
   val dateExpires: java.lang.String = js.native
   val dateUpdated: stdLib.Date = js.native
-  val descriptor: js.Any = js.native
-  var isDeleted: js.Any = js.native
+  val lastEventId: scala.Double = js.native
   val revision: java.lang.String = js.native
-  val updateMergingQueue: js.Any = js.native
+  val sid: java.lang.String = js.native
+  val syncDocumentImpl: js.Any = js.native
+  val `type`: java.lang.String = js.native
+  val uniqueName: java.lang.String = js.native
   val uri: java.lang.String = js.native
   val value: js.Object = js.native
-  /**
-    * Update data entity with new data
-    * @private
-    */
-  def _update(update: js.Any): scala.Unit = js.native
   /**
     * Schedules a modification to this document that will apply a mutation function.
     * @param {Document~Mutator} mutator A function that outputs a new value based on the existing value.

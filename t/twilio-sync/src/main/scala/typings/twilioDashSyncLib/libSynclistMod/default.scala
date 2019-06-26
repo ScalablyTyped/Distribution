@@ -22,10 +22,7 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-sync/lib/synclist", JSImport.Default)
 @js.native
 class default protected () extends SyncList {
-  /**
-    * @private
-    */
-  def this(services: ListServices, descriptor: ListDescriptor, removalHandler: twilioDashSyncLib.libEntityMod.RemovalHandler) = this()
+  def this(syncListImpl: SyncListImpl) = this()
 }
 
 /* static members */

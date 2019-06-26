@@ -111,7 +111,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   /**
-    * The network interfaces to associate with the instance. If you specify a network interface, you must specify any security groups as part of the network interface.
+    * The network interfaces to associate with the instance. If you specify a network interface, you must specify any security groups and subnets as part of the network interface.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   /**
@@ -135,7 +135,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.undefined
   /**
-    * [EC2-VPC] The ID of the subnet to launch the instance into. You cannot specify this option and the network interfaces option in the same request.
+    * [EC2-VPC] The ID of the subnet to launch the instance into. If you specify a network interface, you must specify any subnets as part of the network interface.
     */
   var SubnetId: js.UndefOr[String] = js.undefined
   /**

@@ -18,8 +18,9 @@ class Pointer () extends js.Object {
   def add(token: java.lang.String): Pointer = js.native
   /**
     Returns an object with 'parent', 'key', and 'value' properties.
-    In the special case that pointer = "", parent and key will be null, and `value = obj`
-    Otherwise, parent will be the such that `parent[key] == value`
+    In the special case that this Pointer's path == "",
+    this object will be {parent: null, key: '', value: object}.
+    Otherwise, parent and key will have the property such that parent[key] == value.
     */
   def evaluate(`object`: js.Any): PointerEvaluation = js.native
   def get(`object`: js.Any): js.Any = js.native

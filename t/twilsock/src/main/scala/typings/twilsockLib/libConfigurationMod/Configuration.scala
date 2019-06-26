@@ -26,6 +26,7 @@ class Configuration protected () extends js.Object {
   val logLevel: loglevelLib.loglevelMod.LogLevelDesc = js.native
   val retryPolicy: js.Any = js.native
   val token: java.lang.String = js.native
+  val tweaks: js.Any = js.native
   val url: java.lang.String = js.native
   def updateContinuationToken(continuationToken: java.lang.String): scala.Unit = js.native
   def updateToken(token: java.lang.String): scala.Unit = js.native

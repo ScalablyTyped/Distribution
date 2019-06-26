@@ -42,6 +42,7 @@ These comments are from the typescript definitions and might be useful:
 //                 John Kleinschmidt <https://github.com/jkleinsc>
 //                 Brendan Forster <https://github.com/shiftkey>
 //                 Mark Lee <https://github.com/malept>
+//                 Florian Keller <https://github.com/ffflorian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

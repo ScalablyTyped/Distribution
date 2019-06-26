@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-node-resolve"
-version := "5.0.4-b3eafc"
+version := "5.1.0-b3eafc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

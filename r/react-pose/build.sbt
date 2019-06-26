@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-pose"
-version := "4.0.8-86dc30"
+version := "4.0.8-8115df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "framesync" % "4.0.2-26816d",
-  "org.scalablytyped" %%% "popmotion" % "8.6.10-724718",
-  "org.scalablytyped" %%% "popmotion-pose" % "3.4.8-8f58d9",
+  "org.scalablytyped" %%% "popmotion" % "8.7.0-40920c",
+  "org.scalablytyped" %%% "popmotion-pose" % "3.4.8-2b47c7",
   "org.scalablytyped" %%% "popmotion__easing" % "1.0.2-905b80",
   "org.scalablytyped" %%% "popmotion__popcorn" % "0.4.0-7060d0",
   "org.scalablytyped" %%% "pose-core" % "2.1.0-5f29c9",

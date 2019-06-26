@@ -34,7 +34,6 @@ class Transport () extends js.Object {
 @JSImport("twilio-transport", "Transport")
 @js.native
 object Transport extends js.Object {
-  /* private */ def request(method: js.Any, url: js.Any, headers: js.Any): js.Any = js.native
-  /* private */ def request(method: js.Any, url: js.Any, headers: js.Any, body: js.Any): js.Any = js.native
+  var request: js.Any = js.native
 }
 

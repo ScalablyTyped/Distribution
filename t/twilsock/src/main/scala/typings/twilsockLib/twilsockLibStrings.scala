@@ -23,6 +23,9 @@ object twilsockLibStrings {
     extends twilsockLib.libProtocolProtocolMod.ProtocolNs.Method
   
   @js.native
+  sealed trait `application/json` extends js.Object
+  
+  @js.native
   sealed trait close
     extends twilsockLib.libProtocolProtocolMod.ProtocolNs.MessageType
   
@@ -90,6 +93,8 @@ object twilsockLibStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
+  def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline

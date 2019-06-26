@@ -13,7 +13,7 @@ class Reply protected ()
   val body: js.Any = js.native
   val header: js.Any = js.native
   val method: twilsockLib.libProtocolProtocolMod.ProtocolNs.MessageType = js.native
-  val payload_type: java.lang.String = js.native
+  val payload_type: twilsockLib.twilsockLibStrings.`application/json` = js.native
   val status: twilsockLib.Anon_Code = js.native
 }
 

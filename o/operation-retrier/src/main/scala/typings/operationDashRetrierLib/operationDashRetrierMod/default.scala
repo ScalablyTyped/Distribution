@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("operation-retrier", JSImport.Default)
 @js.native
-class default protected () extends Retrier {
+class default protected ()
+  extends operationDashRetrierLib.libRetrierMod.Retrier {
   /**
     * Creates a new Retrier instance
     */

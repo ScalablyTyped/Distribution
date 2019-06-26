@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-htmlview"
-version := "0.12-dt-20180806Z-88a931"
+version := "0.12-dt-20180806Z-9d43cf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190613Z-c4532e",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190625Z-5d5e58",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

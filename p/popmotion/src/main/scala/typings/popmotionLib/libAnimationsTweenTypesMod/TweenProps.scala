@@ -17,6 +17,7 @@ trait TweenProps extends js.Object {
   var loop: js.UndefOr[scala.Double] = js.undefined
   var loopCount: js.UndefOr[scala.Double] = js.undefined
   var playDirection: js.UndefOr[scala.Double] = js.undefined
+  var repeatDelay: js.UndefOr[scala.Double] = js.undefined
   var to: js.UndefOr[popmotionLib.libReactionsValueMod.Value] = js.undefined
   var yoyo: js.UndefOr[scala.Double] = js.undefined
   var yoyoCount: js.UndefOr[scala.Double] = js.undefined
@@ -34,6 +35,7 @@ object TweenProps {
     loop: scala.Int | scala.Double = null,
     loopCount: scala.Int | scala.Double = null,
     playDirection: scala.Int | scala.Double = null,
+    repeatDelay: scala.Int | scala.Double = null,
     to: popmotionLib.libReactionsValueMod.Value = null,
     yoyo: scala.Int | scala.Double = null,
     yoyoCount: scala.Int | scala.Double = null
@@ -48,6 +50,7 @@ object TweenProps {
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (loopCount != null) __obj.updateDynamic("loopCount")(loopCount.asInstanceOf[js.Any])
     if (playDirection != null) __obj.updateDynamic("playDirection")(playDirection.asInstanceOf[js.Any])
+    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (yoyo != null) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
     if (yoyoCount != null) __obj.updateDynamic("yoyoCount")(yoyoCount.asInstanceOf[js.Any])

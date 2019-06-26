@@ -23,7 +23,7 @@ trait CreateVpnConnectionRequest extends js.Object {
     */
   var TransitGatewayId: js.UndefOr[String] = js.undefined
   /**
-    * The type of VPN connection (ipsec.1 | ipsec.2).
+    * The type of VPN connection (ipsec.1).
     */
   var Type: String
   /**

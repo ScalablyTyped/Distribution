@@ -28,6 +28,7 @@ class TwilsockChannel protected ()
   var confirmReceiving: js.Any = js.native
   var disconnectedPromiseResolve: js.Any = js.native
   var disconnectingTimer: js.Any = js.native
+  var emitReplyConnectionError: js.Any = js.native
   var finalizeSocket: js.Any = js.native
   val fsm: js.Any = js.native
   var initRetry: js.Any = js.native

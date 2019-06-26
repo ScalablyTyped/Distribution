@@ -23,10 +23,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SyncList protected ()
   extends twilioDashSyncLib.libSynclistMod.SyncList {
-  /**
-    * @private
-    */
-  def this(services: twilioDashSyncLib.libSynclistMod.ListServices, descriptor: twilioDashSyncLib.libSynclistMod.ListDescriptor, removalHandler: twilioDashSyncLib.libEntityMod.RemovalHandler) = this()
+  def this(syncListImpl: twilioDashSyncLib.libSynclistMod.SyncListImpl) = this()
 }
 
 /* static members */

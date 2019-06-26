@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * @property {User} user - Information for logged in user
   * @property {String} version - Current version of Chat client
   *
+  * @fires Client#connectionError
   * @fires Client#connectionStateChanged
   * @fires Client#channelAdded
   * @fires Client#channelInvited

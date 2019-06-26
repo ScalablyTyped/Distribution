@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flatted"
-version := "2.0.0-81d2dd"
+version := "2.0.1-81d2dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twilsock"
-version := "0.5.7-5e075c"
+version := "0.5.10-2cb095"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

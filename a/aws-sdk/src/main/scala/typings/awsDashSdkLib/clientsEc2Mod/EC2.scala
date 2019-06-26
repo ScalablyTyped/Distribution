@@ -1552,6 +1552,98 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a Traffic Mirror filter. A Traffic Mirror filter is a set of rules that defines the traffic to mirror. By default, no traffic is mirrored. To mirror traffic, use CreateTrafficMirrorFilterRule to add Traffic Mirror rules to the filter. The rules you add define what traffic gets mirrored. You can also use ModifyTrafficMirrorFilterNetworkServices to mirror supported network services.
+    */
+  def createTrafficMirrorFilter(): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorFilter(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorFilterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror filter. A Traffic Mirror filter is a set of rules that defines the traffic to mirror. By default, no traffic is mirrored. To mirror traffic, use CreateTrafficMirrorFilterRule to add Traffic Mirror rules to the filter. The rules you add define what traffic gets mirrored. You can also use ModifyTrafficMirrorFilterNetworkServices to mirror supported network services.
+    */
+  def createTrafficMirrorFilter(params: CreateTrafficMirrorFilterRequest): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorFilter(
+    params: CreateTrafficMirrorFilterRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorFilterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror rule.  A Traffic Mirror rule defines the Traffic Mirror source traffic to mirror. You need the Traffic Mirror filter ID when you create the rule.
+    */
+  def createTrafficMirrorFilterRule(): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorFilterRule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorFilterRuleResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror rule.  A Traffic Mirror rule defines the Traffic Mirror source traffic to mirror. You need the Traffic Mirror filter ID when you create the rule.
+    */
+  def createTrafficMirrorFilterRule(params: CreateTrafficMirrorFilterRuleRequest): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorFilterRule(
+    params: CreateTrafficMirrorFilterRuleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorFilterRuleResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror session. A Traffic Mirror session actively copies packets from a Traffic Mirror source to a Traffic Mirror target. Create a filter, and then assign it to the session to define a subset of the traffic to mirror, for example all TCP traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in a different VPC connected via VPC peering or a transit gateway.  By default, no traffic is mirrored. Use CreateTrafficMirrorFilter to create filter rules that specify the traffic to mirror.
+    */
+  def createTrafficMirrorSession(): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorSession(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorSessionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror session. A Traffic Mirror session actively copies packets from a Traffic Mirror source to a Traffic Mirror target. Create a filter, and then assign it to the session to define a subset of the traffic to mirror, for example all TCP traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in a different VPC connected via VPC peering or a transit gateway.  By default, no traffic is mirrored. Use CreateTrafficMirrorFilter to create filter rules that specify the traffic to mirror.
+    */
+  def createTrafficMirrorSession(params: CreateTrafficMirrorSessionRequest): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorSession(
+    params: CreateTrafficMirrorSessionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorSessionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a target for your Traffic Mirror session. A Traffic Mirror target is the destination for mirrored traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in different VPCs connected via VPC peering or a transit gateway. A Traffic Mirror target can be a network interface, or a Network Load Balancer. To use the target in a Traffic Mirror session, use CreateTrafficMirrorSession.
+    */
+  def createTrafficMirrorTarget(): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorTargetResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a target for your Traffic Mirror session. A Traffic Mirror target is the destination for mirrored traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in different VPCs connected via VPC peering or a transit gateway. A Traffic Mirror target can be a network interface, or a Network Load Balancer. To use the target in a Traffic Mirror session, use CreateTrafficMirrorSession.
+    */
+  def createTrafficMirrorTarget(params: CreateTrafficMirrorTargetRequest): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTrafficMirrorTarget(
+    params: CreateTrafficMirrorTargetRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTrafficMirrorTargetResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
     */
   def createTransitGateway(): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1766,7 +1858,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateVpcPeeringConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The supported connection types are ipsec.1 and ipsec.2. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
+    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The supported connection types is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnection(): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createVpnConnection(
@@ -1777,7 +1869,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The supported connection types are ipsec.1 and ipsec.2. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
+    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The supported connection types is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnection(params: CreateVpnConnectionRequest): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createVpnConnection(
@@ -2281,6 +2373,98 @@ trait EC2
     params: DeleteTagsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror filter. You cannot delete a Traffic Mirror filter that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorFilter(): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorFilter(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorFilterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror filter. You cannot delete a Traffic Mirror filter that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorFilter(params: DeleteTrafficMirrorFilterRequest): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorFilter(
+    params: DeleteTrafficMirrorFilterRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorFilterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror rule.
+    */
+  def deleteTrafficMirrorFilterRule(): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorFilterRule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorFilterRuleResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror rule.
+    */
+  def deleteTrafficMirrorFilterRule(params: DeleteTrafficMirrorFilterRuleRequest): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorFilterRule(
+    params: DeleteTrafficMirrorFilterRuleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorFilterRuleResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror session.
+    */
+  def deleteTrafficMirrorSession(): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorSession(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorSessionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror session.
+    */
+  def deleteTrafficMirrorSession(params: DeleteTrafficMirrorSessionRequest): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorSession(
+    params: DeleteTrafficMirrorSessionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorSessionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror target. You cannot delete a Traffic Mirror target that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorTarget(): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorTargetResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror target. You cannot delete a Traffic Mirror target that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorTarget(params: DeleteTrafficMirrorTargetRequest): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTrafficMirrorTarget(
+    params: DeleteTrafficMirrorTargetRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteTrafficMirrorTargetResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTrafficMirrorTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified transit gateway.
     */
@@ -4273,6 +4457,75 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Describes one or more Traffic Mirror filters.
+    */
+  def describeTrafficMirrorFilters(): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorFiltersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeTrafficMirrorFilters(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeTrafficMirrorFiltersResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorFiltersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes one or more Traffic Mirror filters.
+    */
+  def describeTrafficMirrorFilters(params: DescribeTrafficMirrorFiltersRequest): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorFiltersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeTrafficMirrorFilters(
+    params: DescribeTrafficMirrorFiltersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeTrafficMirrorFiltersResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorFiltersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes one or more Traffic Mirror sessions. By default, all Traffic Mirror sessions are described. Alternatively, you can filter the results.
+    */
+  def describeTrafficMirrorSessions(): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeTrafficMirrorSessions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeTrafficMirrorSessionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes one or more Traffic Mirror sessions. By default, all Traffic Mirror sessions are described. Alternatively, you can filter the results.
+    */
+  def describeTrafficMirrorSessions(params: DescribeTrafficMirrorSessionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeTrafficMirrorSessions(
+    params: DescribeTrafficMirrorSessionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeTrafficMirrorSessionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Information about one or more Traffic Mirror targets.
+    */
+  def describeTrafficMirrorTargets(): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeTrafficMirrorTargets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeTrafficMirrorTargetsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Information about one or more Traffic Mirror targets.
+    */
+  def describeTrafficMirrorTargets(params: DescribeTrafficMirrorTargetsRequest): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeTrafficMirrorTargets(
+    params: DescribeTrafficMirrorTargetsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeTrafficMirrorTargetsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTrafficMirrorTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
     */
   def describeTransitGatewayAttachments(): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -6156,6 +6409,75 @@ trait EC2
     params: ModifySubnetAttributeRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Allows or restricts mirroring network services.  By default, Amazon DNS network services are not eligible for Traffic Mirror. Use AddNetworkServices to add network services to a Traffic Mirror filter. When a network service is added to the Traffic Mirror filter, all traffic related to that network service will be mirrored. When you no longer want to mirror network services, use RemoveNetworkServices to remove the network services from the Traffic Mirror filter.  FFor information about filter rule properties, see Network Services in the Traffic Mirroring User Guide .
+    */
+  def modifyTrafficMirrorFilterNetworkServices(): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterNetworkServicesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyTrafficMirrorFilterNetworkServices(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyTrafficMirrorFilterNetworkServicesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterNetworkServicesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Allows or restricts mirroring network services.  By default, Amazon DNS network services are not eligible for Traffic Mirror. Use AddNetworkServices to add network services to a Traffic Mirror filter. When a network service is added to the Traffic Mirror filter, all traffic related to that network service will be mirrored. When you no longer want to mirror network services, use RemoveNetworkServices to remove the network services from the Traffic Mirror filter.  FFor information about filter rule properties, see Network Services in the Traffic Mirroring User Guide .
+    */
+  def modifyTrafficMirrorFilterNetworkServices(params: ModifyTrafficMirrorFilterNetworkServicesRequest): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterNetworkServicesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyTrafficMirrorFilterNetworkServices(
+    params: ModifyTrafficMirrorFilterNetworkServicesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyTrafficMirrorFilterNetworkServicesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterNetworkServicesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Modifies the specified Traffic Mirror rule.  DestinationCidrBlock and SourceCidrBlock must both be an IPv4 range or an IPv6 range.
+    */
+  def modifyTrafficMirrorFilterRule(): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyTrafficMirrorFilterRule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyTrafficMirrorFilterRuleResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Modifies the specified Traffic Mirror rule.  DestinationCidrBlock and SourceCidrBlock must both be an IPv4 range or an IPv6 range.
+    */
+  def modifyTrafficMirrorFilterRule(params: ModifyTrafficMirrorFilterRuleRequest): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyTrafficMirrorFilterRule(
+    params: ModifyTrafficMirrorFilterRuleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyTrafficMirrorFilterRuleResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorFilterRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Modifies a Traffic Mirror session.
+    */
+  def modifyTrafficMirrorSession(): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyTrafficMirrorSession(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyTrafficMirrorSessionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Modifies a Traffic Mirror session.
+    */
+  def modifyTrafficMirrorSession(params: ModifyTrafficMirrorSessionRequest): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyTrafficMirrorSession(
+    params: ModifyTrafficMirrorSessionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyTrafficMirrorSessionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyTrafficMirrorSessionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Modifies the specified VPC attachment.
     */

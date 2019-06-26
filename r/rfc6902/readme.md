@@ -1,7 +1,7 @@
 
 # Scala.js typings for rfc6902
 
-Typings are for version 2.4.0
+Typings are for version 3.0.2
 
 ## Library description:
 Complete implementation of RFC6902 (patch and diff)
@@ -36,26 +36,11 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
-`compare()` returns true if `left` and `right` are materially equal
-(i.e., would produce equivalent JSON), false otherwise.
+Recursively copy a value.
 
-> Here, "equal" means that the value at the target location and the
-> value conveyed by "value" are of the same JSON type, and that they
-> are considered equal by the following rules for that type:
-> o  strings: are considered equal if they contain the same number of
->    Unicode characters and their code points are byte-by-byte equal.
-> o  numbers: are considered equal if their values are numerically
->    equal.
-> o  arrays: are considered equal if they contain the same number of
->    values, and if each value can be considered equal to the value at
->    the corresponding position in the other array, using this list of
->    type-specific rules.
-> o  objects: are considered equal if they contain the same number of
->    members, and if each member can be considered equal to a member in
->    the other object, by comparing their keys (as strings) and their
->    values (using this list of type-specific rules).
-> o  literals (false, true, and null): are considered equal if they are
->    the same.
+@param source - should be a JavaScript primitive, Array, or (plain old) Object.
+@returns copy of source where every Array and Object have been recursively
+         reconstructed from their constituent elements
 */
 
 ```

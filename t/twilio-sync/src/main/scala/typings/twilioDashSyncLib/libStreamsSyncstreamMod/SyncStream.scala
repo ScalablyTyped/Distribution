@@ -5,24 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @class
+  * @alias Stream
+  * @classdesc A Sync primitive for pub-sub messaging. Stream Messages are not persisted, exist
+  *     only in transit, and will be dropped if (due to congestion or network anomalies) they
+  *     cannot be delivered promptly. Use the {@link Client#stream} method to obtain a reference to a Sync Message Stream.
+  * @property {String} sid The immutable system-assigned identifier of this stream. Never null.
+  * @property {String} [uniqueName=null] A unique identifier optionally assigned to the stream on creation.
+  *
+  * @fires Stream#messagePublished
+  * @fires Stream#removed
+  */
 @JSImport("twilio-sync/lib/streams/syncstream", "SyncStream")
 @js.native
 class SyncStream protected ()
-  extends twilioDashSyncLib.libEntityMod.SyncEntity {
-  /**
-    * @private
-    */
-  def this(services: StreamServices, descriptor: twilioDashSyncLib.libStreamsServerapiMod.StreamDescriptor, removalHandler: twilioDashSyncLib.libEntityMod.RemovalHandler) = this()
-  var _handleMessagePublished: js.Any = js.native
+  extends twilioDashSyncLib.libCloseableMod.default {
+  def this(syncStreamImpl: SyncStreamImpl) = this()
   val dateExpires: java.lang.String = js.native
-  val descriptor: js.Any = js.native
+  val lastEventId: js.Any = js.native
   val links: js.Any = js.native
-  val uri: js.Any = js.native
-  /**
-    * Handle event from the server
-    * @private
-    */
-  def _update(update: js.Any): scala.Unit = js.native
+  val sid: java.lang.String = js.native
+  val syncStreamImpl: js.Any = js.native
+  val `type`: java.lang.String = js.native
+  val uniqueName: java.lang.String = js.native
+  val uri: java.lang.String = js.native
   /**
     * Publish a Message to the Stream. The system will attempt delivery to all online subscribers.
     * @param {Object} value The body of the dispatched message. Maximum size in serialized JSON: 4KB.

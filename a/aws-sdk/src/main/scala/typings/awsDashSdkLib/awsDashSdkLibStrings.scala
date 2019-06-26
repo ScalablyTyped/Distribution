@@ -22758,6 +22758,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsGreengrassMod._UpdateTargetsArchitecture
   
   @js.native
+  sealed trait accept
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorRuleAction
+  
+  @js.native
   sealed trait accepted
     extends awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayAssociationProposalState
   
@@ -22847,6 +22851,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait allowed
     extends awsDashSdkLib.clientsIamMod._PolicyEvaluationDecisionType
+  
+  @js.native
+  sealed trait `amazon-dns` extends js.Object
   
   @js.native
   sealed trait amazon_linux
@@ -24250,6 +24257,12 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._FpgaImageAttributeName
        with awsDashSdkLib.clientsEc2Mod._ImageAttributeName
        with awsDashSdkLib.clientsEc2Mod._NetworkInterfaceAttribute
+       with awsDashSdkLib.clientsEc2Mod._TrafficMirrorFilterRuleField
+       with awsDashSdkLib.clientsEc2Mod._TrafficMirrorSessionField
+  
+  @js.native
+  sealed trait `destination-port-range`
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorFilterRuleField
   
   @js.native
   sealed trait detached
@@ -24474,6 +24487,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait efa
     extends awsDashSdkLib.clientsEc2Mod._NetworkInterfaceType
+  
+  @js.native
+  sealed trait egress
+    extends awsDashSdkLib.clientsEc2Mod._TrafficDirection
   
   @js.native
   sealed trait el
@@ -25331,6 +25348,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait information
     extends awsDashSdkLib.clientsEc2Mod._AvailabilityZoneState
+  
+  @js.native
+  sealed trait ingress
+    extends awsDashSdkLib.clientsEc2Mod._TrafficDirection
   
   @js.native
   sealed trait initial
@@ -26740,6 +26761,11 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `network-interface`
     extends awsDashSdkLib.clientsEc2Mod._ResourceType
+       with awsDashSdkLib.clientsEc2Mod._TrafficMirrorTargetType
+  
+  @js.native
+  sealed trait `network-load-balancer`
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorTargetType
   
   @js.native
   sealed trait networkInterfaceAvailable extends js.Object
@@ -27012,6 +27038,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait `packet-length`
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorSessionField
+  
+  @js.native
   sealed trait paravirtual
     extends awsDashSdkLib.clientsEc2Mod._VirtualizationType
        with awsDashSdkLib.clientsOpsworksMod._VirtualizationType
@@ -27223,6 +27253,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait propagated
     extends awsDashSdkLib.clientsEc2Mod._TransitGatewayRouteType
+  
+  @js.native
+  sealed trait protocol
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorFilterRuleField
   
   @js.native
   sealed trait provided
@@ -27583,6 +27617,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait reject
     extends awsDashSdkLib.clientsSesMod._EventType
+       with awsDashSdkLib.clientsEc2Mod._TrafficMirrorRuleAction
   
   @js.native
   sealed trait rejected
@@ -28071,6 +28106,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDmsMod._ReplicationEndpointTypeValue
   
   @js.native
+  sealed trait `source-port-range`
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorFilterRuleField
+  
+  @js.native
   sealed trait sourceDestCheck
     extends awsDashSdkLib.clientsEc2Mod._InstanceAttributeName
        with awsDashSdkLib.clientsEc2Mod._NetworkInterfaceAttribute
@@ -28529,6 +28568,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSesMod._ConfigurationSetAttribute
   
   @js.native
+  sealed trait `traffic-mirror-filter`
+    extends awsDashSdkLib.clientsEc2Mod._ResourceType
+  
+  @js.native
+  sealed trait `traffic-mirror-session`
+    extends awsDashSdkLib.clientsEc2Mod._ResourceType
+  
+  @js.native
+  sealed trait `traffic-mirror-target`
+    extends awsDashSdkLib.clientsEc2Mod._ResourceType
+  
+  @js.native
   sealed trait trainingJobCompletedOrStopped extends js.Object
   
   @js.native
@@ -28822,6 +28873,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait vip
     extends awsDashSdkLib.clientsCloudfrontMod._SSLSupportMethod
+  
+  @js.native
+  sealed trait `virtual-network-id`
+    extends awsDashSdkLib.clientsEc2Mod._TrafficMirrorSessionField
   
   @js.native
   sealed trait virtualPrivateGateway
@@ -38484,6 +38539,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def aarch64: aarch64 = "aarch64".asInstanceOf[aarch64]
   @scala.inline
+  def accept: accept = "accept".asInstanceOf[accept]
+  @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
   def accountNotification: accountNotification = "accountNotification".asInstanceOf[accountNotification]
@@ -38517,6 +38574,8 @@ object awsDashSdkLibStrings {
   def `allow-all`: `allow-all` = "allow-all".asInstanceOf[`allow-all`]
   @scala.inline
   def allowed: allowed = "allowed".asInstanceOf[allowed]
+  @scala.inline
+  def `amazon-dns`: `amazon-dns` = "amazon-dns".asInstanceOf[`amazon-dns`]
   @scala.inline
   def amazon_linux: amazon_linux = "amazon_linux".asInstanceOf[amazon_linux]
   @scala.inline
@@ -39134,6 +39193,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def description: description = "description".asInstanceOf[description]
   @scala.inline
+  def `destination-port-range`: `destination-port-range` = "destination-port-range".asInstanceOf[`destination-port-range`]
+  @scala.inline
   def detached: detached = "detached".asInstanceOf[detached]
   @scala.inline
   def detaching: detaching = "detaching".asInstanceOf[detaching]
@@ -39225,6 +39286,8 @@ object awsDashSdkLibStrings {
   def `ecs:service:DesiredCount`: `ecs:service:DesiredCount` = "ecs:service:DesiredCount".asInstanceOf[`ecs:service:DesiredCount`]
   @scala.inline
   def efa: efa = "efa".asInstanceOf[efa]
+  @scala.inline
+  def egress: egress = "egress".asInstanceOf[egress]
   @scala.inline
   def el: el = "el".asInstanceOf[el]
   @scala.inline
@@ -39607,6 +39670,8 @@ object awsDashSdkLibStrings {
   def include: include = "include".asInstanceOf[include]
   @scala.inline
   def information: information = "information".asInstanceOf[information]
+  @scala.inline
+  def ingress: ingress = "ingress".asInstanceOf[ingress]
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
@@ -40170,6 +40235,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `network-interface`: `network-interface` = "network-interface".asInstanceOf[`network-interface`]
   @scala.inline
+  def `network-load-balancer`: `network-load-balancer` = "network-load-balancer".asInstanceOf[`network-load-balancer`]
+  @scala.inline
   def networkInterfaceAvailable: networkInterfaceAvailable = "networkInterfaceAvailable".asInstanceOf[networkInterfaceAvailable]
   @scala.inline
   def nice: nice = "nice".asInstanceOf[nice]
@@ -40296,6 +40363,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def p3dnDOT24xlarge: p3dnDOT24xlarge = "p3dn.24xlarge".asInstanceOf[p3dnDOT24xlarge]
   @scala.inline
+  def `packet-length`: `packet-length` = "packet-length".asInstanceOf[`packet-length`]
+  @scala.inline
   def paravirtual: paravirtual = "paravirtual".asInstanceOf[paravirtual]
   @scala.inline
   def parquet: parquet = "parquet".asInstanceOf[parquet]
@@ -40379,6 +40448,8 @@ object awsDashSdkLibStrings {
   def productCodes: productCodes = "productCodes".asInstanceOf[productCodes]
   @scala.inline
   def propagated: propagated = "propagated".asInstanceOf[propagated]
+  @scala.inline
+  def protocol: protocol = "protocol".asInstanceOf[protocol]
   @scala.inline
   def provided: provided = "provided".asInstanceOf[provided]
   @scala.inline
@@ -40788,6 +40859,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline
+  def `source-port-range`: `source-port-range` = "source-port-range".asInstanceOf[`source-port-range`]
+  @scala.inline
   def sourceDestCheck: sourceDestCheck = "sourceDestCheck".asInstanceOf[sourceDestCheck]
   @scala.inline
   def speke: speke = "speke".asInstanceOf[speke]
@@ -41008,6 +41081,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def trackingOptions: trackingOptions = "trackingOptions".asInstanceOf[trackingOptions]
   @scala.inline
+  def `traffic-mirror-filter`: `traffic-mirror-filter` = "traffic-mirror-filter".asInstanceOf[`traffic-mirror-filter`]
+  @scala.inline
+  def `traffic-mirror-session`: `traffic-mirror-session` = "traffic-mirror-session".asInstanceOf[`traffic-mirror-session`]
+  @scala.inline
+  def `traffic-mirror-target`: `traffic-mirror-target` = "traffic-mirror-target".asInstanceOf[`traffic-mirror-target`]
+  @scala.inline
   def trainingJobCompletedOrStopped: trainingJobCompletedOrStopped = "trainingJobCompletedOrStopped".asInstanceOf[trainingJobCompletedOrStopped]
   @scala.inline
   def transformJobCompletedOrStopped: transformJobCompletedOrStopped = "transformJobCompletedOrStopped".asInstanceOf[transformJobCompletedOrStopped]
@@ -41139,6 +41218,8 @@ object awsDashSdkLibStrings {
   def `viewer-response`: `viewer-response` = "viewer-response".asInstanceOf[`viewer-response`]
   @scala.inline
   def vip: vip = "vip".asInstanceOf[vip]
+  @scala.inline
+  def `virtual-network-id`: `virtual-network-id` = "virtual-network-id".asInstanceOf[`virtual-network-id`]
   @scala.inline
   def virtualPrivateGateway: virtualPrivateGateway = "virtualPrivateGateway".asInstanceOf[virtualPrivateGateway]
   @scala.inline

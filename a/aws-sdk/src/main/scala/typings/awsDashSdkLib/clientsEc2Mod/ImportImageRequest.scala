@@ -43,7 +43,7 @@ trait ImportImageRequest extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
-    * The license type to be used for the Amazon Machine Image (AMI) after importing.  Note: You may only use BYOL if you have existing licenses with rights to use these licenses in a third party cloud like AWS. For more information, see Prerequisites in the VM Import/Export User Guide. Valid values include:    Auto - Detects the source-system operating system (OS) and applies the appropriate license.    AWS - Replaces the source-system license with an AWS license, if appropriate.    BYOL - Retains the source-system license, if appropriate.   Default value: Auto 
+    * The license type to be used for the Amazon Machine Image (AMI) after importing. By default, we detect the source-system operating system (OS) and apply the appropriate license. Specify AWS to replace the source-system license with an AWS license, if appropriate. Specify BYOL to retain the source-system license, if appropriate. To use BYOL, you must have existing licenses with rights to use these licenses in a third party cloud, such as AWS. For more information, see Prerequisites in the VM Import/Export User Guide.
     */
   var LicenseType: js.UndefOr[String] = js.undefined
   /**
