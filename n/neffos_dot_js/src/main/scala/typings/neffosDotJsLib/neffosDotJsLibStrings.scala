@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object neffosDotJsLibStrings {
   @js.native
+  sealed trait `X-Websocket-Header-` extends js.Object
+  
+  @js.native
   sealed trait _OnAnyEvent extends js.Object
   
   @js.native
@@ -33,6 +36,8 @@ object neffosDotJsLibStrings {
   @js.native
   sealed trait _OnRoomLeft extends js.Object
   
+  @scala.inline
+  def `X-Websocket-Header-`: `X-Websocket-Header-` = "X-Websocket-Header-".asInstanceOf[`X-Websocket-Header-`]
   @scala.inline
   def _OnAnyEvent: _OnAnyEvent = "_OnAnyEvent".asInstanceOf[_OnAnyEvent]
   @scala.inline

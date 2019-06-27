@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var features: js.UndefOr[olLib.collectionMod.default[olLib.featureMod.default]] = js.undefined
   var hitTolerance: js.UndefOr[scala.Double] = js.undefined
   var layers: js.UndefOr[
-    js.Array[olLib.layerLayerMod.default] | (js.Function1[/* param0 */ olLib.layerLayerMod.default, scala.Boolean])
+    js.Array[olLib.layerLayerMod.default] | (js.Function1[/* p0 */ olLib.layerLayerMod.default, scala.Boolean])
   ] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object Options {
   def apply(
     features: olLib.collectionMod.default[olLib.featureMod.default] = null,
     hitTolerance: scala.Int | scala.Double = null,
-    layers: js.Array[olLib.layerLayerMod.default] | (js.Function1[/* param0 */ olLib.layerLayerMod.default, scala.Boolean]) = null
+    layers: js.Array[olLib.layerLayerMod.default] | (js.Function1[/* p0 */ olLib.layerLayerMod.default, scala.Boolean]) = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (features != null) __obj.updateDynamic("features")(features)

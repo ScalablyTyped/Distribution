@@ -23,7 +23,9 @@ trait IonToggle extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * The name of the control, which is submitted with the form data.
     */
@@ -39,13 +41,14 @@ object IonToggle {
   def apply(
     checked: scala.Boolean,
     disabled: scala.Boolean,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     name: java.lang.String,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     value: java.lang.String = null
   ): IonToggle = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, mode = mode, name = name)
+    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, name = name)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IonToggle]
   }

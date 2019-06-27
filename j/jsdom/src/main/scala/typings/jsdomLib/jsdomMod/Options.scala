@@ -16,6 +16,14 @@ trait Options extends js.Object {
     */
   var includeNodeLocations: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * jsdom does not have the capability to render visual content, and will act like a headless browser by default.
+    * It provides hints to web pages through APIs such as document.hidden that their content is not visible.
+    *
+    * When the pretendToBeVisual option is set to true, jsdom will pretend that it is rendering and displaying
+    * content.
+    */
+  var pretendToBeVisual: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * referrer just affects the value read from document.referrer.
     * It defaults to no referrer (which reflects as the empty string).
     */
@@ -36,6 +44,7 @@ object Options {
     beforeParse: /* window */ DOMWindow => scala.Unit = null,
     cookieJar: CookieJar = null,
     includeNodeLocations: js.UndefOr[scala.Boolean] = js.undefined,
+    pretendToBeVisual: js.UndefOr[scala.Boolean] = js.undefined,
     referrer: java.lang.String = null,
     resources: jsdomLib.jsdomLibStrings.usable | ResourceLoader = null,
     runScripts: jsdomLib.jsdomLibStrings.dangerously | jsdomLib.jsdomLibStrings.`outside-only` = null,
@@ -46,6 +55,7 @@ object Options {
     if (beforeParse != null) __obj.updateDynamic("beforeParse")(js.Any.fromFunction1(beforeParse))
     if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
     if (!js.isUndefined(includeNodeLocations)) __obj.updateDynamic("includeNodeLocations")(includeNodeLocations)
+    if (!js.isUndefined(pretendToBeVisual)) __obj.updateDynamic("pretendToBeVisual")(pretendToBeVisual)
     if (referrer != null) __obj.updateDynamic("referrer")(referrer)
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (runScripts != null) __obj.updateDynamic("runScripts")(runScripts.asInstanceOf[js.Any])

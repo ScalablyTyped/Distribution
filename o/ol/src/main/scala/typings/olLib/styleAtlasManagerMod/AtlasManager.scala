@@ -12,9 +12,9 @@ trait AtlasManager extends js.Object {
     width: scala.Double,
     height: scala.Double,
     renderCallback: js.Function3[
-      /* param0 */ stdLib.CanvasRenderingContext2D, 
-      /* param1 */ scala.Double, 
-      /* param2 */ scala.Double, 
+      /* p0 */ stdLib.CanvasRenderingContext2D, 
+      /* p1 */ scala.Double, 
+      /* p2 */ scala.Double, 
       scala.Unit
     ]
   ): AtlasManagerInfo = js.native
@@ -23,9 +23,9 @@ trait AtlasManager extends js.Object {
     width: scala.Double,
     height: scala.Double,
     renderCallback: js.Function3[
-      /* param0 */ stdLib.CanvasRenderingContext2D, 
-      /* param1 */ scala.Double, 
-      /* param2 */ scala.Double, 
+      /* p0 */ stdLib.CanvasRenderingContext2D, 
+      /* p1 */ scala.Double, 
+      /* p2 */ scala.Double, 
       scala.Unit
     ],
     opt_renderHitCallback: js.Function0[scala.Unit]
@@ -35,9 +35,9 @@ trait AtlasManager extends js.Object {
     width: scala.Double,
     height: scala.Double,
     renderCallback: js.Function3[
-      /* param0 */ stdLib.CanvasRenderingContext2D, 
-      /* param1 */ scala.Double, 
-      /* param2 */ scala.Double, 
+      /* p0 */ stdLib.CanvasRenderingContext2D, 
+      /* p1 */ scala.Double, 
+      /* p2 */ scala.Double, 
       scala.Unit
     ],
     opt_renderHitCallback: js.Function0[scala.Unit],

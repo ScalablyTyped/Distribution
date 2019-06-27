@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - PluginCleanupAttrs
+  - PluginInlineStyles
   - PluginRemoveDoctype
   - PluginRemoveXMLProcInst
   - PluginRemoveComments
@@ -31,6 +32,7 @@ import scala.scalajs.js.annotation._
   - PluginRemoveNonInheritableGroupAttrs
   - PluginRemoveUselessStrokeAndFill
   - PluginRemoveUnusedNS
+  - PluginPrefixIds
   - PluginCleanupIDs
   - PluginCleanupNumericValues
   - PluginCleanupListOfValues
@@ -41,14 +43,16 @@ import scala.scalajs.js.annotation._
   - PluginMergePaths
   - PluginConvertShapeToPath
   - PluginSortAttrs
-  - PluginTransformsWithOnePath
   - PluginRemoveDimensions
   - PluginRemoveAttrs
+  - PluginRemoveAttributesBySelector
   - PluginRemoveElementsByAttr
   - PluginAddClassesToSVGElement
   - PluginAddAttributesToSVGElement
+  - PluginRemoveOffCanvasPaths
   - PluginRemoveStyleElement
   - PluginRemoveScriptElement
+  - PluginReusePaths
 */
 trait PluginConfig extends js.Object
 

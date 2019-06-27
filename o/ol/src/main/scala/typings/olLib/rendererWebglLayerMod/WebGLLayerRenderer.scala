@@ -25,8 +25,8 @@ trait WebGLLayerRenderer
     frameState: olLib.pluggableMapMod.FrameState,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* param1 */ olLib.layerLayerMod.default, 
-      /* param2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
+      /* p1 */ olLib.layerLayerMod.default, 
+      /* p2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
       T
     ],
     thisArg: S

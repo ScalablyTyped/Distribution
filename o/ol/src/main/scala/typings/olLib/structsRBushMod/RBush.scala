@@ -9,15 +9,12 @@ import scala.scalajs.js.annotation._
 trait RBush[T] extends js.Object {
   def clear(): scala.Unit = js.native
   def concat(rbush: RBush[T]): scala.Unit = js.native
-  def forEach[S](callback: js.ThisFunction1[/* this */ S, /* param1 */ T, scala.Unit]): js.Any = js.native
-  def forEach[S](callback: js.ThisFunction1[/* this */ S, /* param1 */ T, scala.Unit], opt_this: S): js.Any = js.native
+  def forEach[S](callback: js.ThisFunction1[/* this */ S, /* p1 */ T, scala.Unit]): js.Any = js.native
+  def forEach[S](callback: js.ThisFunction1[/* this */ S, /* p1 */ T, scala.Unit], opt_this: S): js.Any = js.native
+  def forEachInExtent[S](extent: olLib.extentMod.Extent, callback: js.ThisFunction1[/* this */ S, /* p1 */ T, scala.Unit]): js.Any = js.native
   def forEachInExtent[S](
     extent: olLib.extentMod.Extent,
-    callback: js.ThisFunction1[/* this */ S, /* param1 */ T, scala.Unit]
-  ): js.Any = js.native
-  def forEachInExtent[S](
-    extent: olLib.extentMod.Extent,
-    callback: js.ThisFunction1[/* this */ S, /* param1 */ T, scala.Unit],
+    callback: js.ThisFunction1[/* this */ S, /* p1 */ T, scala.Unit],
     opt_this: S
   ): js.Any = js.native
   def getAll(): js.Array[T] = js.native

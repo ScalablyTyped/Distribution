@@ -16,13 +16,15 @@ object BuildOptions {
     engine: java.lang.String,
     `type`: T,
     platform: java.lang.String = null,
-    project: java.lang.String = null
+    project: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): BuildOptions[T] = {
     val __obj = js.Dynamic.literal(engine = engine)
     __obj.updateDynamic("--")(`--`)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[BuildOptions[T]]
   }
 }

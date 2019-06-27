@@ -12,15 +12,13 @@ trait Projection extends js.Object {
   def getDefaultTileGrid(): olLib.tilegridTileGridMod.default
   def getExtent(): olLib.extentMod.Extent
   def getMetersPerUnit(): scala.Double
-  def getPointResolutionFunc(): js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double]
+  def getPointResolutionFunc(): js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double]
   def getUnits(): olLib.projUnitsMod.Units
   def getWorldExtent(): olLib.extentMod.Extent
   def isGlobal(): scala.Boolean
   def setDefaultTileGrid(tileGrid: olLib.tilegridTileGridMod.default): scala.Unit
   def setExtent(extent: olLib.extentMod.Extent): scala.Unit
-  def setGetPointResolution(
-    func: js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double]
-  ): scala.Unit
+  def setGetPointResolution(func: js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double]): scala.Unit
   def setGlobal(global: scala.Boolean): scala.Unit
   def setWorldExtent(worldExtent: olLib.extentMod.Extent): scala.Unit
 }
@@ -34,13 +32,13 @@ object Projection {
     getDefaultTileGrid: () => olLib.tilegridTileGridMod.default,
     getExtent: () => olLib.extentMod.Extent,
     getMetersPerUnit: () => scala.Double,
-    getPointResolutionFunc: () => js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double],
+    getPointResolutionFunc: () => js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double],
     getUnits: () => olLib.projUnitsMod.Units,
     getWorldExtent: () => olLib.extentMod.Extent,
     isGlobal: () => scala.Boolean,
     setDefaultTileGrid: olLib.tilegridTileGridMod.default => scala.Unit,
     setExtent: olLib.extentMod.Extent => scala.Unit,
-    setGetPointResolution: js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double] => scala.Unit,
+    setGetPointResolution: js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double] => scala.Unit,
     setGlobal: scala.Boolean => scala.Unit,
     setWorldExtent: olLib.extentMod.Extent => scala.Unit
   ): Projection = {

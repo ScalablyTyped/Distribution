@@ -1,7 +1,7 @@
 
 # Scala.js typings for svgo
 
-Typings are for version 1.0
+Typings are for version 1.2
 
 ## Library description:
 Nodejs-based tool for optimizing SVG vector graphics files
@@ -35,11 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for svgo 1.0
+// Type definitions for svgo 1.2
 // Project: https://github.com/svg/svgo
 // Definitions by: Bradley Ayers <https://github.com/bradleyayers>
 //                 Gilad Gray <https://github.com/giladgray>
 //                 Aankhen <https://github.com/Aankhen>
+//                 Jan Karres <https://github.com/jankarres>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

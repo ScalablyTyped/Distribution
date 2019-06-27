@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonPopoverElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonPopover
      with atIonicCoreLib.distTypesUtilsOverlaysDashInterfaceMod.OverlaySelect {
   /* InferMemberOverrides */

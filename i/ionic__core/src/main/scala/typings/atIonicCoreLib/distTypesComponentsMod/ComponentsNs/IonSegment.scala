@@ -19,7 +19,9 @@ trait IonSegment extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * If `true`, the segment buttons will overflow and the user can swipe to see them.
     */
@@ -34,13 +36,14 @@ object IonSegment {
   @scala.inline
   def apply(
     disabled: scala.Boolean,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     scrollable: scala.Boolean,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     value: java.lang.String = null
   ): IonSegment = {
-    val __obj = js.Dynamic.literal(disabled = disabled, mode = mode, scrollable = scrollable)
+    val __obj = js.Dynamic.literal(disabled = disabled, scrollable = scrollable)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IonSegment]
   }

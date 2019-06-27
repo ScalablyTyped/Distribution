@@ -24,7 +24,8 @@ object ReactBuildOptions {
     platform: java.lang.String = null,
     project: java.lang.String = null,
     publicUrl: java.lang.String = null,
-    sourceMap: js.UndefOr[scala.Boolean] = js.undefined
+    sourceMap: js.UndefOr[scala.Boolean] = js.undefined,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine)
     __obj.updateDynamic("--")(`--`)
@@ -35,6 +36,7 @@ object ReactBuildOptions {
     if (project != null) __obj.updateDynamic("project")(project)
     if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl)
     if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[ReactBuildOptions]
   }
 }

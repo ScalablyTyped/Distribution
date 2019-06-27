@@ -10,7 +10,9 @@ trait IonSlides extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.native
   /**
     * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
     */

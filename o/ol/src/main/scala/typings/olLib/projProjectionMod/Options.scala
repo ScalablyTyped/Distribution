@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var code: java.lang.String
   var extent: js.UndefOr[olLib.extentMod.Extent] = js.undefined
   var getPointResolution: js.UndefOr[
-    js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double]
+    js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double]
   ] = js.undefined
   var global: js.UndefOr[scala.Boolean] = js.undefined
   var metersPerUnit: js.UndefOr[scala.Double] = js.undefined
@@ -24,7 +24,7 @@ object Options {
     code: java.lang.String,
     axisOrientation: java.lang.String = null,
     extent: olLib.extentMod.Extent = null,
-    getPointResolution: (/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate) => scala.Double = null,
+    getPointResolution: (/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate) => scala.Double = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     metersPerUnit: scala.Int | scala.Double = null,
     units: olLib.projUnitsMod.Units | java.lang.String = null,

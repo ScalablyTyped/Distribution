@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonMenuButtonElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonMenuButton {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
@@ -51,17 +51,17 @@ class HTMLIonMenuButtonElementCls () extends HTMLIonMenuButtonElement {
   override var autoHide: scala.Boolean = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /**
+    * If `true`, the user cannot interact with the menu button.
+    */
+  /* CompleteClass */
+  override var disabled: scala.Boolean = js.native
   /* CompleteClass */
   override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native
-  /**
-    * The mode determines which platform styles to use.
-    */
-  /* CompleteClass */
-  override var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.
@@ -76,6 +76,11 @@ class HTMLIonMenuButtonElementCls () extends HTMLIonMenuButtonElement {
   override val previousElementSibling: stdLib.Element | scala.Null = js.native
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native
+  /**
+    * The type of the button.
+    */
+  /* CompleteClass */
+  override var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button = js.native
 }
 
 @JSGlobal("HTMLIonMenuButtonElement")

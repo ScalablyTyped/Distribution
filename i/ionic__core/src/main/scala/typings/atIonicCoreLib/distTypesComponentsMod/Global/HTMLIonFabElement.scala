@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonFabElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonFab {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
@@ -80,7 +80,7 @@ class HTMLIonFabElementCls () extends HTMLIonFabElement {
     * Close an active FAB list container.
     */
   /* CompleteClass */
-  override def close(): scala.Unit = js.native
+  override def close(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("HTMLIonFabElement")

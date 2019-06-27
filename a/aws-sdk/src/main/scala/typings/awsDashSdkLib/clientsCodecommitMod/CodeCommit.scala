@@ -141,7 +141,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an unerferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge.   This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
+    * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy, as that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
     */
   def createUnreferencedMergeCommit(): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createUnreferencedMergeCommit(
@@ -152,7 +152,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an unerferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge.   This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
+    * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy, as that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
     */
   def createUnreferencedMergeCommit(params: CreateUnreferencedMergeCommitInput): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createUnreferencedMergeCommit(
@@ -768,7 +768,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergeBranchesByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy.
+    * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy. If the merge is successful, it closes the pull request.
     */
   def mergePullRequestByFastForward(): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByFastForward(
@@ -779,7 +779,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy.
+    * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy. If the merge is successful, it closes the pull request.
     */
   def mergePullRequestByFastForward(params: MergePullRequestByFastForwardInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByFastForward(
@@ -791,7 +791,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy.
+    * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy. If the merge is successful, it closes the pull request.
     */
   def mergePullRequestBySquash(): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestBySquash(
@@ -802,7 +802,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy.
+    * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy. If the merge is successful, it closes the pull request.
     */
   def mergePullRequestBySquash(params: MergePullRequestBySquashInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestBySquash(
@@ -814,7 +814,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy.
+    * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy. If the merge is successful, it closes the pull request.
     */
   def mergePullRequestByThreeWay(): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByThreeWay(
@@ -825,7 +825,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy.
+    * Attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy. If the merge is successful, it closes the pull request.
     */
   def mergePullRequestByThreeWay(params: MergePullRequestByThreeWayInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByThreeWay(

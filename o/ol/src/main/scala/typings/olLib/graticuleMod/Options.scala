@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var intervals: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var latLabelFormatter: js.UndefOr[js.Function1[/* param0 */ scala.Double, java.lang.String]] = js.undefined
+  var latLabelFormatter: js.UndefOr[js.Function1[/* p0 */ scala.Double, java.lang.String]] = js.undefined
   var latLabelPosition: js.UndefOr[scala.Double] = js.undefined
   var latLabelStyle: js.UndefOr[olLib.styleTextMod.default] = js.undefined
-  var lonLabelFormatter: js.UndefOr[js.Function1[/* param0 */ scala.Double, java.lang.String]] = js.undefined
+  var lonLabelFormatter: js.UndefOr[js.Function1[/* p0 */ scala.Double, java.lang.String]] = js.undefined
   var lonLabelPosition: js.UndefOr[scala.Double] = js.undefined
   var lonLabelStyle: js.UndefOr[olLib.styleTextMod.default] = js.undefined
   var map: js.UndefOr[olLib.pluggableMapMod.default] = js.undefined
@@ -24,10 +24,10 @@ object Options {
   @scala.inline
   def apply(
     intervals: js.Array[scala.Double] = null,
-    latLabelFormatter: /* param0 */ scala.Double => java.lang.String = null,
+    latLabelFormatter: /* p0 */ scala.Double => java.lang.String = null,
     latLabelPosition: scala.Int | scala.Double = null,
     latLabelStyle: olLib.styleTextMod.default = null,
-    lonLabelFormatter: /* param0 */ scala.Double => java.lang.String = null,
+    lonLabelFormatter: /* p0 */ scala.Double => java.lang.String = null,
     lonLabelPosition: scala.Int | scala.Double = null,
     lonLabelStyle: olLib.styleTextMod.default = null,
     map: olLib.pluggableMapMod.default = null,

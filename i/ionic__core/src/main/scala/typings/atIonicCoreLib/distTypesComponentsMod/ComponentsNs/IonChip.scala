@@ -15,7 +15,9 @@ trait IonChip extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * Display an outline style button.
     */
@@ -25,12 +27,13 @@ trait IonChip extends js.Object {
 object IonChip {
   @scala.inline
   def apply(
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     outline: scala.Boolean,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null
   ): IonChip = {
-    val __obj = js.Dynamic.literal(mode = mode, outline = outline)
+    val __obj = js.Dynamic.literal(outline = outline)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonChip]
   }
 }

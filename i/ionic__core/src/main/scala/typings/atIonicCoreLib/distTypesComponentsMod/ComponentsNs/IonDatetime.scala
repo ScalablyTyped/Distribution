@@ -53,7 +53,9 @@ trait IonDatetime extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * Full names for each month name. This can be used to provide locale month names. Defaults to English.
     */
@@ -109,7 +111,6 @@ object IonDatetime {
     disabled: scala.Boolean,
     displayFormat: java.lang.String,
     doneText: java.lang.String,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     name: java.lang.String,
     open: () => js.Promise[scala.Unit],
     readonly: scala.Boolean,
@@ -120,6 +121,7 @@ object IonDatetime {
     max: java.lang.String = null,
     min: java.lang.String = null,
     minuteValues: js.Array[scala.Double] | scala.Double | java.lang.String = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     monthNames: js.Array[java.lang.String] | java.lang.String = null,
     monthShortNames: js.Array[java.lang.String] | java.lang.String = null,
     monthValues: js.Array[scala.Double] | scala.Double | java.lang.String = null,
@@ -129,7 +131,7 @@ object IonDatetime {
     value: java.lang.String = null,
     yearValues: js.Array[scala.Double] | scala.Double | java.lang.String = null
   ): IonDatetime = {
-    val __obj = js.Dynamic.literal(cancelText = cancelText, disabled = disabled, displayFormat = displayFormat, doneText = doneText, mode = mode, name = name, open = js.Any.fromFunction0(open), readonly = readonly)
+    val __obj = js.Dynamic.literal(cancelText = cancelText, disabled = disabled, displayFormat = displayFormat, doneText = doneText, name = name, open = js.Any.fromFunction0(open), readonly = readonly)
     if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
     if (dayShortNames != null) __obj.updateDynamic("dayShortNames")(dayShortNames.asInstanceOf[js.Any])
     if (dayValues != null) __obj.updateDynamic("dayValues")(dayValues.asInstanceOf[js.Any])
@@ -137,6 +139,7 @@ object IonDatetime {
     if (max != null) __obj.updateDynamic("max")(max)
     if (min != null) __obj.updateDynamic("min")(min)
     if (minuteValues != null) __obj.updateDynamic("minuteValues")(minuteValues.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (monthShortNames != null) __obj.updateDynamic("monthShortNames")(monthShortNames.asInstanceOf[js.Any])
     if (monthValues != null) __obj.updateDynamic("monthValues")(monthValues.asInstanceOf[js.Any])

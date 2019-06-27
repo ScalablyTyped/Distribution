@@ -62,9 +62,11 @@ trait Options extends js.Object {
   /** The source directory. */
   var dir: java.lang.String
   /**
-    * If present, passes custom options to electron-download
+    * If present, passes custom options to `@electron/get`
     */
-  var download: js.UndefOr[ElectronDownloadOptions] = js.undefined
+  var download: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
+  ] = js.undefined
   /**
     * The Electron version with which the app is built (without the leading 'v') - for example, 1.4.13
     */
@@ -160,7 +162,7 @@ object Options {
     buildVersion: java.lang.String = null,
     darwinDarkModeSupport: js.UndefOr[scala.Boolean] = js.undefined,
     derefSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
-    download: ElectronDownloadOptions = null,
+    download: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any = null,
     electronVersion: java.lang.String = null,
     executableName: java.lang.String = null,
     extendInfo: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null,

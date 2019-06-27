@@ -16,8 +16,8 @@ trait Animation extends js.Object {
   var targetCenter: js.UndefOr[olLib.coordinateMod.Coordinate] = js.undefined
   var targetResolution: js.UndefOr[scala.Double] = js.undefined
   var targetRotation: js.UndefOr[scala.Double] = js.undefined
-  def callback(param0: scala.Boolean): scala.Unit
-  def easing(param0: scala.Double): scala.Double
+  def callback(p0: scala.Boolean): scala.Unit
+  def easing(p0: scala.Double): scala.Double
 }
 
 object Animation {

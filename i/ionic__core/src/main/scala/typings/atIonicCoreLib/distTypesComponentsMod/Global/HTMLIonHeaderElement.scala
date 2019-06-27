@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonHeaderElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonHeader {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
@@ -53,11 +53,6 @@ class HTMLIonHeaderElementCls () extends HTMLIonHeaderElement {
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native
   /**
-    * The mode determines which platform styles to use.
-    */
-  /* CompleteClass */
-  override var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
-  /**
     * Returns the first following sibling that
     * is an element, and null otherwise.
     */
@@ -72,7 +67,7 @@ class HTMLIonHeaderElementCls () extends HTMLIonHeaderElement {
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native
   /**
-    * If `true`, the header will be translucent. Note: In order to scroll content behind the header, the `fullscreen` attribute needs to be set on the content.
+    * If `true`, the header will be translucent. Only applies to `ios` mode. Note: In order to scroll content behind the header, the `fullscreen` attribute needs to be set on the content.
     */
   /* CompleteClass */
   override var translucent: scala.Boolean = js.native

@@ -72,8 +72,8 @@ class Query[T /* <: Object */] protected () extends BaseObject {
   def addAscending(key: js.Array[java.lang.String]): Query[T] = js.native
   def addDescending(key: java.lang.String): Query[T] = js.native
   def addDescending(key: js.Array[java.lang.String]): Query[T] = js.native
-  def aggregate(pipeline: js.Array[parseLib.ParseNs.QueryNs.AggregationOptions]): Query[T] = js.native
-  def aggregate(pipeline: parseLib.ParseNs.QueryNs.AggregationOptions): Query[T] = js.native
+  def aggregate[V](pipeline: js.Array[parseLib.ParseNs.QueryNs.AggregationOptions]): js.Promise[V] = js.native
+  def aggregate[V](pipeline: parseLib.ParseNs.QueryNs.AggregationOptions): js.Promise[V] = js.native
   def ascending(key: java.lang.String): Query[T] = js.native
   def ascending(key: js.Array[java.lang.String]): Query[T] = js.native
   def containedBy(key: java.lang.String, values: js.Array[_]): Query[T] = js.native
@@ -85,7 +85,7 @@ class Query[T /* <: Object */] protected () extends BaseObject {
   def count(options: parseLib.ParseNs.QueryNs.CountOptions): js.Promise[scala.Double] = js.native
   def descending(key: java.lang.String): Query[T] = js.native
   def descending(key: js.Array[java.lang.String]): Query[T] = js.native
-  def distinct(key: java.lang.String): Query[T] = js.native
+  def distinct[V](key: java.lang.String): js.Promise[V] = js.native
   def doesNotExist(key: java.lang.String): Query[T] = js.native
   def doesNotMatchKeyInQuery[U /* <: Object */](key: java.lang.String, queryKey: java.lang.String, query: Query[U]): Query[T] = js.native
   def doesNotMatchQuery[U /* <: Object */](key: java.lang.String, query: Query[U]): Query[T] = js.native

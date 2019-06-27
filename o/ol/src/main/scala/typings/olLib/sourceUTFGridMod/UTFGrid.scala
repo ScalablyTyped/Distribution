@@ -11,12 +11,12 @@ trait UTFGrid
   def forDataAtCoordinateAndResolution(
     coordinate: olLib.coordinateMod.Coordinate,
     resolution: scala.Double,
-    callback: js.Function1[/* param0 */ js.Any, scala.Unit]
+    callback: js.Function1[/* p0 */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: olLib.coordinateMod.Coordinate,
     resolution: scala.Double,
-    callback: js.Function1[/* param0 */ js.Any, scala.Unit],
+    callback: js.Function1[/* p0 */ js.Any, scala.Unit],
     opt_request: scala.Boolean
   ): scala.Unit = js.native
   def getTemplate(): java.lang.String = js.native

@@ -112,6 +112,9 @@ object stripeLibStrings {
   sealed trait authorized extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait automatic extends js.Object
   
   @js.native
@@ -205,11 +208,17 @@ object stripeLibStrings {
   sealed trait customer extends js.Object
   
   @js.native
+  sealed trait da extends js.Object
+  
+  @js.native
   sealed trait daily extends js.Object
   
   @js.native
   sealed trait day
     extends stripeLib.stripeMod.plansNs.IntervalUnit
+  
+  @js.native
+  sealed trait de extends js.Object
   
   @js.native
   sealed trait debit extends js.Object
@@ -250,6 +259,9 @@ object stripeLibStrings {
   sealed trait email extends js.Object
   
   @js.native
+  sealed trait en extends js.Object
+  
+  @js.native
   sealed trait ephemeral_key extends js.Object
   
   @js.native
@@ -257,6 +269,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait errored extends js.Object
+  
+  @js.native
+  sealed trait es extends js.Object
   
   @js.native
   sealed trait event extends js.Object
@@ -282,6 +297,9 @@ object stripeLibStrings {
   sealed trait female extends js.Object
   
   @js.native
+  sealed trait fi extends js.Object
+  
+  @js.native
   sealed trait file_upload extends js.Object
   
   @js.native
@@ -289,6 +307,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait forever extends js.Object
+  
+  @js.native
+  sealed trait fr extends js.Object
   
   @js.native
   sealed trait fraud extends js.Object
@@ -388,6 +409,12 @@ object stripeLibStrings {
   sealed trait issuer_declined extends js.Object
   
   @js.native
+  sealed trait it extends js.Object
+  
+  @js.native
+  sealed trait ja extends js.Object
+  
+  @js.native
   sealed trait jpg extends js.Object
   
   @js.native
@@ -449,6 +476,9 @@ object stripeLibStrings {
   sealed trait multibanco extends js.Object
   
   @js.native
+  sealed trait nb extends js.Object
+  
+  @js.native
   sealed trait needs_response extends js.Object
   
   @js.native
@@ -456,6 +486,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait `new` extends js.Object
+  
+  @js.native
+  sealed trait nl extends js.Object
   
   @js.native
   sealed trait none extends js.Object
@@ -534,6 +567,9 @@ object stripeLibStrings {
   sealed trait per_unit extends js.Object
   
   @js.native
+  sealed trait pl extends js.Object
+  
+  @js.native
   sealed trait plan extends js.Object
   
   @js.native
@@ -556,6 +592,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait product_unacceptable extends js.Object
+  
+  @js.native
+  sealed trait pt extends js.Object
   
   @js.native
   sealed trait publishable extends js.Object
@@ -593,6 +632,9 @@ object stripeLibStrings {
   @js.native
   sealed trait requested_by_customer
     extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
+  
+  @js.native
+  sealed trait required extends js.Object
   
   @js.native
   sealed trait requires_action extends js.Object
@@ -706,6 +748,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait sunday extends js.Object
+  
+  @js.native
+  sealed trait sv extends js.Object
   
   @js.native
   sealed trait tax extends js.Object
@@ -825,6 +870,9 @@ object stripeLibStrings {
   sealed trait year
     extends stripeLib.stripeMod.plansNs.IntervalUnit
   
+  @js.native
+  sealed trait zh extends js.Object
+  
   @scala.inline
   def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]
   @scala.inline
@@ -894,6 +942,8 @@ object stripeLibStrings {
   @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]
   @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def automatic: automatic = "automatic".asInstanceOf[automatic]
   @scala.inline
   def available: available = "available".asInstanceOf[available]
@@ -948,9 +998,13 @@ object stripeLibStrings {
   @scala.inline
   def customer: customer = "customer".asInstanceOf[customer]
   @scala.inline
+  def da: da = "da".asInstanceOf[da]
+  @scala.inline
   def daily: daily = "daily".asInstanceOf[daily]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
+  @scala.inline
+  def de: de = "de".asInstanceOf[de]
   @scala.inline
   def debit: debit = "debit".asInstanceOf[debit]
   @scala.inline
@@ -976,11 +1030,15 @@ object stripeLibStrings {
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline
+  def en: en = "en".asInstanceOf[en]
+  @scala.inline
   def ephemeral_key: ephemeral_key = "ephemeral_key".asInstanceOf[ephemeral_key]
   @scala.inline
   def eps: eps = "eps".asInstanceOf[eps]
   @scala.inline
   def errored: errored = "errored".asInstanceOf[errored]
+  @scala.inline
+  def es: es = "es".asInstanceOf[es]
   @scala.inline
   def event: event = "event".asInstanceOf[event]
   @scala.inline
@@ -996,11 +1054,15 @@ object stripeLibStrings {
   @scala.inline
   def female: female = "female".asInstanceOf[female]
   @scala.inline
+  def fi: fi = "fi".asInstanceOf[fi]
+  @scala.inline
   def file_upload: file_upload = "file_upload".asInstanceOf[file_upload]
   @scala.inline
   def finite: finite = "finite".asInstanceOf[finite]
   @scala.inline
   def forever: forever = "forever".asInstanceOf[forever]
+  @scala.inline
+  def fr: fr = "fr".asInstanceOf[fr]
   @scala.inline
   def fraud: fraud = "fraud".asInstanceOf[fraud]
   @scala.inline
@@ -1058,6 +1120,10 @@ object stripeLibStrings {
   @scala.inline
   def issuer_declined: issuer_declined = "issuer_declined".asInstanceOf[issuer_declined]
   @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  @scala.inline
+  def ja: ja = "ja".asInstanceOf[ja]
+  @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   @scala.inline
   def last_during_period: last_during_period = "last_during_period".asInstanceOf[last_during_period]
@@ -1098,11 +1164,15 @@ object stripeLibStrings {
   @scala.inline
   def multibanco: multibanco = "multibanco".asInstanceOf[multibanco]
   @scala.inline
+  def nb: nb = "nb".asInstanceOf[nb]
+  @scala.inline
   def needs_response: needs_response = "needs_response".asInstanceOf[needs_response]
   @scala.inline
   def network_cost: network_cost = "network_cost".asInstanceOf[network_cost]
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
+  @scala.inline
+  def nl: nl = "nl".asInstanceOf[nl]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -1152,6 +1222,8 @@ object stripeLibStrings {
   @scala.inline
   def per_unit: per_unit = "per_unit".asInstanceOf[per_unit]
   @scala.inline
+  def pl: pl = "pl".asInstanceOf[pl]
+  @scala.inline
   def plan: plan = "plan".asInstanceOf[plan]
   @scala.inline
   def png: png = "png".asInstanceOf[png]
@@ -1167,6 +1239,8 @@ object stripeLibStrings {
   def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
   @scala.inline
   def product_unacceptable: product_unacceptable = "product_unacceptable".asInstanceOf[product_unacceptable]
+  @scala.inline
+  def pt: pt = "pt".asInstanceOf[pt]
   @scala.inline
   def publishable: publishable = "publishable".asInstanceOf[publishable]
   @scala.inline
@@ -1191,6 +1265,8 @@ object stripeLibStrings {
   def requested: requested = "requested".asInstanceOf[requested]
   @scala.inline
   def requested_by_customer: requested_by_customer = "requested_by_customer".asInstanceOf[requested_by_customer]
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
   @scala.inline
   def requires_action: requires_action = "requires_action".asInstanceOf[requires_action]
   @scala.inline
@@ -1263,6 +1339,8 @@ object stripeLibStrings {
   def sum: sum = "sum".asInstanceOf[sum]
   @scala.inline
   def sunday: sunday = "sunday".asInstanceOf[sunday]
+  @scala.inline
+  def sv: sv = "sv".asInstanceOf[sv]
   @scala.inline
   def tax: tax = "tax".asInstanceOf[tax]
   @scala.inline
@@ -1339,5 +1417,7 @@ object stripeLibStrings {
   def won: won = "won".asInstanceOf[won]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def zh: zh = "zh".asInstanceOf[zh]
 }
 

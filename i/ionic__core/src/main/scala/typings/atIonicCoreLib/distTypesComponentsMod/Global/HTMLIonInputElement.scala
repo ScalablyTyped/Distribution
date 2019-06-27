@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonInput because var conflicts: autocapitalize, spellcheck. Inlined accept, autocomplete, autocorrect, autofocus, clearInput, clearOnEdit, color, debounce, disabled, getInputElement, inputmode, max, maxlength, min, minlength, mode, multiple, name, pattern, placeholder, readonly, required, setFocus, size, step, `type`, value */ @js.native
 trait HTMLIonInputElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement {
   /**
     * If the value of the type attribute is `"file"`, then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.
     */
@@ -70,7 +70,9 @@ trait HTMLIonInputElement
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.native
   /**
     * If `true`, the user can enter more than one value. This attribute applies when the type attribute is set to `"email"` or `"file"`, otherwise it is ignored.
     */
@@ -118,7 +120,7 @@ trait HTMLIonInputElement
   /**
     * Sets focus on the specified `ion-input`. Use this method instead of the global `input.focus()`.
     */
-  def setFocus(): scala.Unit = js.native
+  def setFocus(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("HTMLIonInputElement")

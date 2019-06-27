@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonBadge'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonBadge")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonBadge")
 @js.native
-class IonBadge protected () extends js.Object {
+class IonBadge protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonBadge {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
 }

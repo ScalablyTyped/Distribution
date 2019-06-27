@@ -3176,6 +3176,12 @@ trait LoDashStatic extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](`object`: TObject, path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: js.UndefOr[scala.Nothing], path: TKey, defaultValue: TDefault): (stdLib.Exclude[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
@@ -3184,12 +3190,91 @@ trait LoDashStatic extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](`object`: js.UndefOr[scala.Nothing], path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: scala.Null, path: TKey, defaultValue: TDefault): (stdLib.Exclude[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: scala.Null, path: js.Array[TKey], defaultValue: TDefault): (stdLib.Exclude[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](`object`: scala.Null, path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](`object`: TObject, path: js.Tuple2[TKey1, TKey2], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](`object`: TObject, path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](`object`: js.UndefOr[scala.Nothing], path: js.Tuple2[TKey1, TKey2], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](`object`: js.UndefOr[scala.Nothing], path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](`object`: scala.Null, path: js.Tuple2[TKey1, TKey2], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](`object`: scala.Null, path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](`object`: TObject, path: js.Tuple3[TKey1, TKey2, TKey3], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](`object`: TObject, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](`object`: js.UndefOr[scala.Nothing], path: js.Tuple3[TKey1, TKey2, TKey3], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](`object`: js.UndefOr[scala.Nothing], path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](`object`: scala.Null, path: js.Tuple3[TKey1, TKey2, TKey3], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](`object`: scala.Null, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](`object`: TObject, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](
+    `object`: js.UndefOr[scala.Nothing],
+    path: js.Tuple4[TKey1, TKey2, TKey3, TKey4],
+    defaultValue: TDefault
+  ): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](`object`: scala.Null, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
   /**

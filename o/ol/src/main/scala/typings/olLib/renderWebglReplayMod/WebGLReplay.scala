@@ -28,14 +28,14 @@ trait WebGLReplay
     gl: stdLib.WebGLRenderingContext,
     context: olLib.webglContextMod.default,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
     oneByOne: scala.Boolean
   ): T = js.native
   /* protected */ def drawHitDetectionReplay[T](
     gl: stdLib.WebGLRenderingContext,
     context: olLib.webglContextMod.default,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
     oneByOne: scala.Boolean,
     opt_hitExtent: olLib.extentMod.Extent
   ): T = js.native
@@ -43,19 +43,19 @@ trait WebGLReplay
     gl: stdLib.WebGLRenderingContext,
     context: olLib.webglContextMod.default,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T]
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T]
   ): T = js.native
   /* protected */ def drawHitDetectionReplayOneByOne[T](
     gl: stdLib.WebGLRenderingContext,
     context: olLib.webglContextMod.default,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T]
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T]
   ): T = js.native
   /* protected */ def drawHitDetectionReplayOneByOne[T](
     gl: stdLib.WebGLRenderingContext,
     context: olLib.webglContextMod.default,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
     opt_hitExtent: olLib.extentMod.Extent
   ): T = js.native
   /* protected */ def drawReplay(
@@ -75,7 +75,7 @@ trait WebGLReplay
     pixelRatio: scala.Double,
     opacity: scala.Double,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
     oneByOne: scala.Boolean
   ): T = js.native
   def replay[T](
@@ -87,7 +87,7 @@ trait WebGLReplay
     pixelRatio: scala.Double,
     opacity: scala.Double,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    featureCallback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
+    featureCallback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
     oneByOne: scala.Boolean,
     opt_hitExtent: olLib.extentMod.Extent
   ): T = js.native

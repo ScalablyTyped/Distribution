@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModalController protected ()
   extends atIonicAngularLib.distProvidersModalDashControllerMod.ModalController {
-  def this(angularDelegate: atIonicAngularLib.distProvidersAngularDashDelegateMod.AngularDelegate, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, injector: atAngularCoreLib.atAngularCoreMod.Injector, doc: js.Any) = this()
+  def this(angularDelegate: atIonicAngularLib.distProvidersAngularDashDelegateMod.AngularDelegate, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, injector: atAngularCoreLib.atAngularCoreMod.Injector) = this()
 }
 

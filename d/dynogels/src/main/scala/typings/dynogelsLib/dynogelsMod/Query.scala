@@ -24,6 +24,7 @@ trait Query extends js.Object {
   def projectionExpression(data: js.Any): Query = js.native
   def returnConsumedCapacity(value: js.Any): Query = js.native
   def select(value: js.Any): Query = js.native
+  def startKey(hashKey: js.Any): Query = js.native
   def startKey(hashKey: js.Any, rangeKey: js.Any): Query = js.native
   def usingIndex(name: java.lang.String): Query = js.native
   def where(keyName: java.lang.String): QueryWhereChain = js.native

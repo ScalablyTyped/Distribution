@@ -5,23 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FileData extends js.Object {
-  var content_type: js.UndefOr[java.lang.String] = js.undefined
-  var data: java.lang.String | k6Lib.k6Mod.bytes
-  var filename: js.UndefOr[java.lang.String] = js.undefined
-}
-
-object FileData {
-  @scala.inline
-  def apply(
-    data: java.lang.String | k6Lib.k6Mod.bytes,
-    content_type: java.lang.String = null,
-    filename: java.lang.String = null
-  ): FileData = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    __obj.asInstanceOf[FileData]
-  }
+@JSImport("k6/http", "FileData")
+@js.native
+abstract class FileData () extends js.Object {
+  var __brand: scala.Nothing = js.native
+  var content_type: js.UndefOr[java.lang.String] = js.native
+  var data: java.lang.String | k6Lib.k6Mod.bytes = js.native
+  var filename: js.UndefOr[java.lang.String] = js.native
 }
 

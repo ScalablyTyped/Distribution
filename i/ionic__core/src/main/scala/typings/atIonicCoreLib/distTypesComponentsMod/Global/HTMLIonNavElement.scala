@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonNavElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonNav {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native

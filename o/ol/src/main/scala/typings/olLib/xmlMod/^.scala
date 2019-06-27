@@ -13,105 +13,81 @@ object ^ extends js.Object {
   def getAttributeNS(node: stdLib.Element, namespaceURI: java.lang.String, name: java.lang.String): java.lang.String = js.native
   def isDocument(`object`: js.Any): scala.Boolean = js.native
   def makeArrayExtender[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Node, /* param2 */ js.Array[_], js.Array[_]]
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], js.Array[_]]
   ): Parser = js.native
   def makeArrayExtender[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Node, /* param2 */ js.Array[_], js.Array[_]],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], js.Array[_]],
     opt_this: T
   ): Parser = js.native
   def makeArrayPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeArrayPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Parser = js.native
   def makeArraySerializer[T, V](
-    nodeWriter: js.ThisFunction3[
-      /* this */ T, 
-      /* param1 */ stdLib.Element, 
-      /* param2 */ V, 
-      /* param3 */ js.Array[_], 
-      scala.Unit
-    ]
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit]
   ): Serializer = js.native
   def makeArraySerializer[T, V](
-    nodeWriter: js.ThisFunction3[
-      /* this */ T, 
-      /* param1 */ stdLib.Element, 
-      /* param2 */ V, 
-      /* param3 */ js.Array[_], 
-      scala.Unit
-    ],
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Serializer = js.native
   def makeChildAppender[T, V](
-    nodeWriter: js.ThisFunction3[
-      /* this */ T, 
-      /* param1 */ stdLib.Node, 
-      /* param2 */ V, 
-      /* param3 */ js.Array[_], 
-      scala.Unit
-    ]
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit]
   ): Serializer = js.native
   def makeChildAppender[T, V](
-    nodeWriter: js.ThisFunction3[
-      /* this */ T, 
-      /* param1 */ stdLib.Node, 
-      /* param2 */ V, 
-      /* param3 */ js.Array[_], 
-      scala.Unit
-    ],
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Serializer = js.native
   def makeObjectPropertyPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeObjectPropertyPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String
   ): Parser = js.native
   def makeObjectPropertyPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String,
     opt_this: T
   ): Parser = js.native
   def makeObjectPropertySetter[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeObjectPropertySetter[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String
   ): Parser = js.native
   def makeObjectPropertySetter[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Element, /* param2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String,
     opt_this: T
   ): Parser = js.native
   def makeReplacer[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Node, /* param2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeReplacer[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* param1 */ stdLib.Node, /* param2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Parser = js.native
   def makeSequence[V](`object`: org.scalablytyped.runtime.StringDictionary[V], orderedKeys: js.Array[java.lang.String]): js.Array[V] = js.native
   def makeSimpleNodeFactory(): js.Function3[
-    /* param0 */ js.Any, 
-    /* param1 */ js.Array[_], 
-    /* param2 */ java.lang.String, 
+    /* p0 */ js.Any, 
+    /* p1 */ js.Array[_], 
+    /* p2 */ js.UndefOr[java.lang.String], 
     stdLib.Node
   ] = js.native
   def makeSimpleNodeFactory(opt_nodeName: java.lang.String): js.Function3[
-    /* param0 */ js.Any, 
-    /* param1 */ js.Array[_], 
-    /* param2 */ java.lang.String, 
+    /* p0 */ js.Any, 
+    /* p1 */ js.Array[_], 
+    /* p2 */ js.UndefOr[java.lang.String], 
     stdLib.Node
   ] = js.native
   def makeSimpleNodeFactory(opt_nodeName: java.lang.String, opt_namespaceURI: java.lang.String): js.Function3[
-    /* param0 */ js.Any, 
-    /* param1 */ js.Array[_], 
-    /* param2 */ java.lang.String, 
+    /* p0 */ js.Any, 
+    /* p1 */ js.Array[_], 
+    /* p2 */ js.UndefOr[java.lang.String], 
     stdLib.Node
   ] = js.native
   def makeStructureNS[T](namespaceURIs: js.Array[java.lang.String], structure: T): org.scalablytyped.runtime.StringDictionary[T] = js.native
@@ -150,9 +126,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* param1 */ js.Any, 
-      /* param2 */ js.Array[_], 
-      /* param3 */ java.lang.String, 
+      /* p1 */ js.Any, 
+      /* p2 */ js.Array[_], 
+      /* p3 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -163,9 +139,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* param1 */ js.Any, 
-      /* param2 */ js.Array[_], 
-      /* param3 */ java.lang.String, 
+      /* p1 */ js.Any, 
+      /* p2 */ js.Array[_], 
+      /* p3 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -177,9 +153,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* param1 */ js.Any, 
-      /* param2 */ js.Array[_], 
-      /* param3 */ java.lang.String, 
+      /* p1 */ js.Any, 
+      /* p2 */ js.Array[_], 
+      /* p3 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -191,9 +167,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* param1 */ js.Any, 
-      /* param2 */ js.Array[_], 
-      /* param3 */ java.lang.String, 
+      /* p1 */ js.Any, 
+      /* p2 */ js.Array[_], 
+      /* p3 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -203,9 +179,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* param1 */ js.Any, 
-      /* param2 */ js.Array[_], 
-      /* param3 */ java.lang.String, 
+      /* p1 */ js.Any, 
+      /* p2 */ js.Array[_], 
+      /* p3 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -216,9 +192,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* param1 */ js.Any, 
-      /* param2 */ js.Array[_], 
-      /* param3 */ java.lang.String, 
+      /* p1 */ js.Any, 
+      /* p2 */ js.Array[_], 
+      /* p3 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],

@@ -20,7 +20,6 @@ trait IonRouterOutlet extends js.Object {
   var delegate: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
   ] = js.native
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
   var swipeHandler: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwipeGestureHandler */ js.Any
   ] = js.native
@@ -50,7 +49,7 @@ trait IonRouterOutlet extends js.Object {
   ] = js.native
   def setRouteId(
     id: java.lang.String,
-    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<null> */ js.Any,
     direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   ): js.Promise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouteWrite */ _

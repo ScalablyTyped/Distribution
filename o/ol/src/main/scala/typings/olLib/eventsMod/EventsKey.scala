@@ -15,6 +15,6 @@ trait EventsKey extends js.Object {
   var listener_Original: ListenerFunction = js.native
   var target: olLib.eventsTargetMod.EventTargetLike = js.native
   var `type`: java.lang.String = js.native
-  def listener(param0: olLib.eventsEventMod.default): scala.Unit | scala.Boolean = js.native
+  def listener(p0: olLib.eventsEventMod.default): scala.Unit | scala.Boolean = js.native
 }
 

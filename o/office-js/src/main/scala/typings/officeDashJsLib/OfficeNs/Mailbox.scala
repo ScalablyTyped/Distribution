@@ -35,12 +35,12 @@ trait Mailbox extends js.Object {
     * It be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
     * 
     *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. 
-    * If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the 
-    * host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
+    * If the mail add-in is running in Outlook on desktop clients or iOS, the hostVersion property returns the version of the 
+    * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
     * 
-    *  - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook Web App. 
-    * If the host application is not Outlook Web App, then accessing this property results in undefined. 
-    * Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, 
+    *  - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook on the web. 
+    * If the host application is not Outlook on the web, then accessing this property results in undefined. 
+    * Outlook on the web has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, 
     * and ThreeColumns - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns 
     * that can be displayed.
     *
@@ -73,7 +73,7 @@ trait Mailbox extends js.Object {
     *
     * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.
     *
-    * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This member is not supported in Outlook on iOS or Android.
     */
   var ewsUrl: java.lang.String = js.native
   /**
@@ -169,7 +169,7 @@ trait Mailbox extends js.Object {
     * Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by 
     * Exchange Web Services (EWS). The convertToEwsId method converts a REST-formatted ID into the proper format for EWS.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.3]
     *
@@ -186,14 +186,14 @@ trait Mailbox extends js.Object {
   /**
     * Gets a dictionary containing time information in local client time.
     *
-    * The dates and times used by a mail app for Outlook or Outlook Web App can use different time zones. 
-    * Outlook uses the client computer time zone; Outlook Web App uses the time zone set on the Exchange Admin Center (EAC). 
+    * The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones. 
+    * Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center (EAC). 
     * You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that 
     * the user expects.
     *
-    * If the mail app is running in Outlook, the convertToLocalClientTime method will return a dictionary object with the values set to the 
+    * If the mail app is running in Outlook on desktop clients, the convertToLocalClientTime method will return a dictionary object with the values set to the 
     * client computer time zone. 
-    * If the mail app is running in Outlook Web App, the convertToLocalClientTime method will return a dictionary object with the values set to 
+    * If the mail app is running in Outlook on the web, the convertToLocalClientTime method will return a dictionary object with the values set to 
     * the time zone specified in the EAC.
     *
     * [Api set: Mailbox 1.0]
@@ -211,7 +211,7 @@ trait Mailbox extends js.Object {
   /**
     * Converts an item ID formatted for EWS into REST format.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.3]
     *
@@ -253,16 +253,16 @@ trait Mailbox extends js.Object {
     * The displayAppointmentForm method opens an existing calendar appointment in a new window on the desktop or in a dialog box on 
     * mobile devices.
     *
-    * In Outlook for Mac, you can use this method to display a single appointment that is not part of a recurring series, or the 
+    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the 
     * master appointment of a recurring series, but you cannot display an instance of the series. 
-    * This is because in Outlook for Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
+    * This is because in Outlook on Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
     *
-    * In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.
     *
     * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
     * no error message will be returned.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -280,7 +280,7 @@ trait Mailbox extends js.Object {
     *
     * The displayMessageForm method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
     *
-    * In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.
+    * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.
     *
     * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and 
     * no error message will be returned.
@@ -288,7 +288,7 @@ trait Mailbox extends js.Object {
     * Do not use the displayMessageForm with an itemId that represents an appointment. Use the displayAppointmentForm method to display 
     * an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -307,7 +307,7 @@ trait Mailbox extends js.Object {
     * The displayNewAppointmentForm method opens a form that enables the user to create a new appointment or meeting. 
     * If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.
     *
-    * In Outlook Web App and OWA for Devices, this method always displays a form with an attendees field. 
+    * In Outlook on the web, this method always displays a form with an attendees field. 
     * If you do not specify any attendees as input arguments, the method displays a form with a Save button. 
     * If you have specified attendees, the form would include the attendees and a Send button.
     *
@@ -317,7 +317,7 @@ trait Mailbox extends js.Object {
     *
     * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -500,7 +500,7 @@ trait Mailbox extends js.Object {
     *
     * **Note**: This method is not supported in the following scenarios:
     * 
-    * - In Outlook for iOS or Outlook for Android.
+    * - In Outlook on iOS or Android.
     * 
     * - When the add-in is loaded in a Gmail mailbox.
     *

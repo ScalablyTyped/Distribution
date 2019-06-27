@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonItemDivider'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonItemDivider")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonItemDivider")
 @js.native
-class IonItemDivider protected () extends js.Object {
+class IonItemDivider protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonItemDivider {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
+  /**
+    * When it's set to `true`, the item-divider will stay visible when it reaches the top of the viewport until the next `ion-item-divider` replaces it.  This feature relies in `position:sticky`: https://caniuse.com/#feat=css-sticky
+    */
+  /* CompleteClass */
+  override var sticky: scala.Boolean = js.native
 }
 

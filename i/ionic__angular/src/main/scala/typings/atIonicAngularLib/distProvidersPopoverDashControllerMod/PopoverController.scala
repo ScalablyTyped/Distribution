@@ -14,7 +14,7 @@ class PopoverController protected ()
       ], 
       atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPopoverElement
     ] {
-  def this(angularDelegate: atIonicAngularLib.distProvidersAngularDashDelegateMod.AngularDelegate, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, injector: atAngularCoreLib.atAngularCoreMod.Injector, doc: js.Any) = this()
+  def this(angularDelegate: atIonicAngularLib.distProvidersAngularDashDelegateMod.AngularDelegate, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, injector: atAngularCoreLib.atAngularCoreMod.Injector) = this()
   var angularDelegate: js.Any = js.native
   var injector: js.Any = js.native
   var resolver: js.Any = js.native

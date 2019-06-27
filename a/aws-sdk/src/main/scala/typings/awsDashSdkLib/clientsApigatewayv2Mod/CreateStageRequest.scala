@@ -44,6 +44,10 @@ trait CreateStageRequest extends js.Object {
     [A-Za-z0-9-._~:/?#&=,]+.
     */
   var StageVariables: js.UndefOr[StageVariablesMap] = js.undefined
+  /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters..
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
 }
 
 object CreateStageRequest {
@@ -57,7 +61,8 @@ object CreateStageRequest {
     DeploymentId: Id = null,
     Description: StringWithLengthBetween0And1024 = null,
     RouteSettings: RouteSettingsMap = null,
-    StageVariables: StageVariablesMap = null
+    StageVariables: StageVariablesMap = null,
+    Tags: Tags = null
   ): CreateStageRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId, StageName = StageName)
     if (AccessLogSettings != null) __obj.updateDynamic("AccessLogSettings")(AccessLogSettings)
@@ -67,6 +72,7 @@ object CreateStageRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (RouteSettings != null) __obj.updateDynamic("RouteSettings")(RouteSettings)
     if (StageVariables != null) __obj.updateDynamic("StageVariables")(StageVariables)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateStageRequest]
   }
 }

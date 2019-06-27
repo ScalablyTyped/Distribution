@@ -196,6 +196,10 @@ object mapboxDashGlLibStrings {
   sealed trait click extends js.Object
   
   @js.native
+  sealed trait coalesce
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
+  
+  @js.native
   sealed trait collator
     extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
@@ -774,6 +778,8 @@ object mapboxDashGlLibStrings {
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
+  def coalesce: coalesce = "coalesce".asInstanceOf[coalesce]
   @scala.inline
   def collator: collator = "collator".asInstanceOf[collator]
   @scala.inline

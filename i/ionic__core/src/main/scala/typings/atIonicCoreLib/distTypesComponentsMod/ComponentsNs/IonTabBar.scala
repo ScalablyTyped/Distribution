@@ -15,7 +15,9 @@ trait IonTabBar extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * The selected tab component
     */
@@ -29,13 +31,14 @@ trait IonTabBar extends js.Object {
 object IonTabBar {
   @scala.inline
   def apply(
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     translucent: scala.Boolean,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     selectedTab: java.lang.String = null
   ): IonTabBar = {
-    val __obj = js.Dynamic.literal(mode = mode, translucent = translucent)
+    val __obj = js.Dynamic.literal(translucent = translucent)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (selectedTab != null) __obj.updateDynamic("selectedTab")(selectedTab)
     __obj.asInstanceOf[IonTabBar]
   }

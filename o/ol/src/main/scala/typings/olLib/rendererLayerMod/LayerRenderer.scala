@@ -12,16 +12,12 @@ trait LayerRenderer
     source: olLib.sourceTileMod.default,
     projection: olLib.projProjectionMod.default,
     tiles: org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.StringDictionary[olLib.tileMod.default]]
-  ): js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.tileRangeMod.default, scala.Boolean] = js.native
+  ): js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.tileRangeMod.default, scala.Boolean] = js.native
   def forEachFeatureAtCoordinate[T](
     coordinate: olLib.coordinateMod.Coordinate,
     frameState: olLib.pluggableMapMod.FrameState,
     hitTolerance: scala.Double,
-    callback: js.Function2[
-      /* param0 */ olLib.featureMod.FeatureLike, 
-      /* param1 */ olLib.layerLayerMod.default, 
-      T
-    ]
+    callback: js.Function2[/* p0 */ olLib.featureMod.FeatureLike, /* p1 */ olLib.layerLayerMod.default, T]
   ): T | scala.Unit = js.native
   def getLayer(): olLib.layerLayerMod.default = js.native
   def hasFeatureAtCoordinate(coordinate: olLib.coordinateMod.Coordinate, frameState: olLib.pluggableMapMod.FrameState): scala.Boolean = js.native

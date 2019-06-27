@@ -1,7 +1,7 @@
 
 # Scala.js typings for user-event
 
-Typings are for version 1.4
+Typings are for version 4.1
 
 ## Library description:
 Simulate user events for react-testing-library
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for user-event 1.4
+// Type definitions for user-event 4.1
 // Project: https://github.com/testing-library/user-event
 // Definitions by: Wu Haotian <https://github.com/whtsky>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

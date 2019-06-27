@@ -12,6 +12,12 @@ object electronDashPackagerLibStrings {
        with electronDashPackagerLib.electronDashPackagerMod.platform
   
   @js.native
+  sealed trait appBundleId extends js.Object
+  
+  @js.native
+  sealed trait appPath extends js.Object
+  
+  @js.native
   sealed trait arm64
     extends electronDashPackagerLib.electronDashPackagerMod.arch
   
@@ -58,6 +64,10 @@ object electronDashPackagerLibStrings {
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def appBundleId: appBundleId = "appBundleId".asInstanceOf[appBundleId]
+  @scala.inline
+  def appPath: appPath = "appPath".asInstanceOf[appPath]
   @scala.inline
   def arm64: arm64 = "arm64".asInstanceOf[arm64]
   @scala.inline

@@ -74,7 +74,7 @@ trait Item extends js.Object {
   /**
     * Gets the id of the series that an instance belongs to.
     * 
-    * In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. 
+    * In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. 
     * However, in iOS and Android, the seriesId returns the REST ID of the parent item.
     * 
     * **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. 
@@ -148,7 +148,7 @@ trait Item extends js.Object {
     * 
     * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
     * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-    * `item.attachments` call. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
+    * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
     * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
     * continue in a separate window.
     * 
@@ -187,7 +187,7 @@ trait Item extends js.Object {
   /**
     * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
     * 
-    * **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
+    * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
     * for Office 365.
     * 
     * [Api set: Mailbox Preview]

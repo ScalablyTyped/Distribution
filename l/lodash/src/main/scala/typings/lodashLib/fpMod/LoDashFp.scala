@@ -3302,11 +3302,11 @@ trait LoDashFp extends js.Object {
   def functionsIn(`object`: js.Any): js.Array[java.lang.String] = js.native
   def get(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def get(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def get(path: lodashLib.lodashMod.__): LodashGet5x2 = js.native
-  def get(path: lodashLib.lodashMod.__, `object`: js.Any): LodashGet6x2 = js.native
-  def get(path: scala.Double): LodashGet3x1 = js.native
+  def get(path: lodashLib.lodashMod.__): LodashGet8x2 = js.native
+  def get(path: lodashLib.lodashMod.__, `object`: js.Any): LodashGet9x2 = js.native
+  def get(path: scala.Double): LodashGet6x1 = js.native
   def get[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashGet2x2[TObject] = js.native
-  def get[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashGet4x2[T] = js.native
+  def get[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashGet7x2[T] = js.native
   def get[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): js.UndefOr[T] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
@@ -3320,36 +3320,52 @@ trait LoDashFp extends js.Object {
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
-  def getOr(defaultValue: js.Any): LodashGetOr4x1 = js.native
-  def getOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath): LodashGetOr4x3 = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashGet5x1[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def getOr(defaultValue: js.Any): LodashGetOr7x1 = js.native
+  def getOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath): LodashGetOr7x3 = js.native
   def getOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def getOr(defaultValue: js.Any, path: lodashLib.lodashMod.__, `object`: js.Any): LodashGetOr4x5 = js.native
-  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashGetOr3x6 = js.native
-  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): LodashGetOr4x6 = js.native
-  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashGetOr3x4 = js.native
-  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: js.Any): LodashGetOr4x4 = js.native
-  def getOr(defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashGetOr2x2 = js.native
+  def getOr(defaultValue: js.Any, path: lodashLib.lodashMod.__, `object`: js.Any): LodashGetOr7x5 = js.native
+  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashGetOr6x6 = js.native
+  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): LodashGetOr7x6 = js.native
+  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashGetOr6x4 = js.native
+  def getOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: js.Any): LodashGetOr7x4 = js.native
+  def getOr(defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashGetOr5x2 = js.native
   def getOr[TDefault](defaultValue: TDefault): LodashGetOr1x1[TDefault] = js.native
   def getOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): TDefault = js.native
-  def getOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashGetOr3x5[TDefault] = js.native
-  def getOr[TDefault](defaultValue: TDefault, path: scala.Double): LodashGetOr2x3[TDefault] = js.native
+  def getOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashGetOr6x5[TDefault] = js.native
+  def getOr[TDefault](defaultValue: TDefault, path: scala.Double): LodashGetOr5x3[TDefault] = js.native
   def getOr[TObject /* <: js.Object */](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: TObject): LodashGetOr1x4[TObject] = js.native
   def getOr[T](
     defaultValue: lodashLib.lodashMod.__,
     path: lodashLib.lodashMod.__,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashGetOr2x4[T] = js.native
+  ): LodashGetOr5x4[T] = js.native
   def getOr[T](
     defaultValue: lodashLib.lodashMod.__,
     path: scala.Double,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashGetOr2x6[T] = js.native
+  ): LodashGetOr5x6[T] = js.native
   def getOr[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__, `object`: TObject): LodashGetOr1x5[TObject, TDefault] = js.native
   def getOr[T, TDefault](
     defaultValue: TDefault,
     path: lodashLib.lodashMod.__,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashGetOr2x5[T, TDefault] = js.native
+  ): LodashGetOr5x5[T, TDefault] = js.native
   def getOr[T, TDefault](defaultValue: TDefault, path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T | TDefault = js.native
   def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey): LodashGetOr1x6[TObject, TKey] = js.native
   def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey, `object`: TObject): LodashGetOr1x6[TObject, TKey] = js.native
@@ -3365,18 +3381,64 @@ trait LoDashFp extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2]): LodashGetOr2x2[TObject, TKey1, TKey2] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2], `object`: TObject): LodashGetOr2x6[TObject, TKey1, TKey2] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashGetOr3x2[TObject, TKey1, TKey2, TKey3] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): LodashGetOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashGetOr3x3[TObject, TKey1, TKey2, TKey3, TDefault] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashGetOr4x6[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](
+    defaultValue: lodashLib.lodashMod.__,
+    path: js.Tuple4[TKey1, TKey2, TKey3, TKey4],
+    `object`: TObject
+  ): LodashGetOr4x6[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
   @JSName("getOr")
-  def getOr_LodashGetOr3x2(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashGetOr3x2 = js.native
+  def getOr_LodashGetOr6x2(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashGetOr6x2 = js.native
   @JSName("getOr")
-  def getOr_TDefaultLodashGetOr3x3[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): LodashGetOr3x3[TDefault] = js.native
+  def getOr_TDefaultLodashGetOr6x3[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): LodashGetOr6x3[TDefault] = js.native
   @JSName("getOr")
-  def getOr_TLodashGetOr2x4[T](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashGetOr2x4[T] = js.native
+  def getOr_TLodashGetOr5x4[T](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashGetOr5x4[T] = js.native
   @JSName("getOr")
-  def getOr_TLodashGetOr2x6[T](defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashGetOr2x6[T] = js.native
+  def getOr_TLodashGetOr5x6[T](defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashGetOr5x6[T] = js.native
   @JSName("getOr")
   def getOr_TObjectObjectLodashGetOr1x4[TObject /* <: js.Object */](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashGetOr1x4[TObject] = js.native
   @JSName("getOr")
   def getOr_TObjectObjectTDefaultLodashGetOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashGetOr1x5[TObject, TDefault] = js.native
+  @JSName("getOr")
+  def getOr_TObjectObjectTKey1StringTKey2AnyLodashGetOr2x6[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2]): LodashGetOr2x6[TObject, TKey1, TKey2] = js.native
+  @JSName("getOr")
+  def getOr_TObjectObjectTKey1StringTKey2AnyTDefaultLodashGetOr2x3[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): LodashGetOr2x3[TObject, TKey1, TKey2, TDefault] = js.native
+  @JSName("getOr")
+  def getOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashGetOr3x6[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashGetOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("getOr")
+  def `getOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTDefault<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  @JSName("getOr")
+  def getOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyLodashGetOr4x2[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashGetOr4x2[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  @JSName("getOr")
+  def getOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyTDefaultLodashGetOr4x3[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashGetOr4x3[TObject, TKey1, TKey2, TKey3, TKey4, TDefault] = js.native
   @JSName("getOr")
   def getOr_TObjectObjectTKeyStringLodashGetOr1x2[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey): LodashGetOr1x2[TObject, TKey] = js.native
   @JSName("getOr")
@@ -3394,19 +3456,27 @@ trait LoDashFp extends js.Object {
   @JSName("getOr")
   def `getOr_TTDefault<union>`[T, TDefault](defaultValue: TDefault, path: scala.Double): T | TDefault = js.native
   @JSName("getOr")
-  def getOr_TTDefaultLodashGetOr2x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashGetOr2x5[T, TDefault] = js.native
+  def getOr_TTDefaultLodashGetOr5x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashGetOr5x5[T, TDefault] = js.native
   @JSName("get")
-  def get_LodashGet5x1(path: lodashLib.lodashMod.PropertyPath): LodashGet5x1 = js.native
+  def get_LodashGet8x1(path: lodashLib.lodashMod.PropertyPath): LodashGet8x1 = js.native
   @JSName("get")
   def `get_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
   @JSName("get")
-  def get_TLodashGet3x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashGet3x2[T] = js.native
+  def get_TLodashGet6x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashGet6x2[T] = js.native
   @JSName("get")
-  def get_TLodashGet4x2[T](path: lodashLib.lodashMod.__): LodashGet4x2[T] = js.native
+  def get_TLodashGet7x2[T](path: lodashLib.lodashMod.__): LodashGet7x2[T] = js.native
   @JSName("get")
   def get_TObjectObjectLodashGet1x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashGet1x2[TObject] = js.native
   @JSName("get")
   def get_TObjectObjectLodashGet2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__): LodashGet2x2[TObject] = js.native
+  @JSName("get")
+  def get_TObjectObjectTKey1StringTKey2AnyLodashGet3x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashGet3x1[TObject, TKey1, TKey2] = js.native
+  @JSName("get")
+  def get_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashGet4x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LodashGet4x1[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("get")
+  def `get_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4Any<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
   @JSName("get")
   def get_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("get")
@@ -4628,11 +4698,11 @@ trait LoDashFp extends js.Object {
   def partition_TUTTuple2[T, U /* <: T */](callback: lodashLib.lodashMod.ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]] = js.native
   def path(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def path(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def path(path: lodashLib.lodashMod.__): LodashPath5x2 = js.native
-  def path(path: lodashLib.lodashMod.__, `object`: js.Any): LodashPath6x2 = js.native
-  def path(path: scala.Double): LodashPath3x1 = js.native
+  def path(path: lodashLib.lodashMod.__): LodashPath8x2 = js.native
+  def path(path: lodashLib.lodashMod.__, `object`: js.Any): LodashPath9x2 = js.native
+  def path(path: scala.Double): LodashPath6x1 = js.native
   def path[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashPath1x2[TObject] = js.native
-  def path[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPath3x2[T] = js.native
+  def path[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPath7x2[T] = js.native
   def path[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): js.UndefOr[T] = js.native
   def path[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
@@ -4646,39 +4716,57 @@ trait LoDashFp extends js.Object {
   def path[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
+  def path[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def path[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def path[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def path[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def path[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def path[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
   def pathEq(path: lodashLib.lodashMod.PropertyPath): LodashMatchesProperty1x1 = js.native
   def pathEq[T](path: lodashLib.lodashMod.PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, scala.Boolean] = js.native
   def pathEq[T](path: lodashLib.lodashMod.__, srcValue: T): LodashMatchesProperty1x2 = js.native
-  def pathOr(defaultValue: js.Any): LodashPathOr4x1 = js.native
-  def pathOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath): LodashPathOr4x3 = js.native
+  def pathOr(defaultValue: js.Any): LodashPathOr7x1 = js.native
+  def pathOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath): LodashPathOr7x3 = js.native
   def pathOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def pathOr(defaultValue: js.Any, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPathOr4x5 = js.native
-  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPathOr3x6 = js.native
-  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): LodashPathOr4x6 = js.native
-  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPathOr3x4 = js.native
-  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPathOr4x4 = js.native
-  def pathOr(defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPathOr2x2 = js.native
+  def pathOr(defaultValue: js.Any, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPathOr7x5 = js.native
+  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPathOr6x6 = js.native
+  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): LodashPathOr7x6 = js.native
+  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPathOr6x4 = js.native
+  def pathOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPathOr7x4 = js.native
+  def pathOr(defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPathOr5x2 = js.native
   def pathOr[TDefault](defaultValue: TDefault): LodashPathOr1x1[TDefault] = js.native
   def pathOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): TDefault = js.native
-  def pathOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPathOr3x5[TDefault] = js.native
-  def pathOr[TDefault](defaultValue: TDefault, path: scala.Double): LodashPathOr2x3[TDefault] = js.native
+  def pathOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPathOr6x5[TDefault] = js.native
+  def pathOr[TDefault](defaultValue: TDefault, path: scala.Double): LodashPathOr5x3[TDefault] = js.native
   def pathOr[TObject /* <: js.Object */](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: TObject): LodashPathOr1x4[TObject] = js.native
   def pathOr[T](
     defaultValue: lodashLib.lodashMod.__,
     path: lodashLib.lodashMod.__,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashPathOr2x4[T] = js.native
+  ): LodashPathOr5x4[T] = js.native
   def pathOr[T](
     defaultValue: lodashLib.lodashMod.__,
     path: scala.Double,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashPathOr2x6[T] = js.native
+  ): LodashPathOr5x6[T] = js.native
   def pathOr[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__, `object`: TObject): LodashPathOr1x5[TObject, TDefault] = js.native
   def pathOr[T, TDefault](
     defaultValue: TDefault,
     path: lodashLib.lodashMod.__,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashPathOr2x5[T, TDefault] = js.native
+  ): LodashPathOr5x5[T, TDefault] = js.native
   def pathOr[T, TDefault](defaultValue: TDefault, path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T | TDefault = js.native
   def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey): LodashPathOr1x2[TObject, TKey] = js.native
   def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey, `object`: TObject): LodashPathOr1x6[TObject, TKey] = js.native
@@ -4694,18 +4782,64 @@ trait LoDashFp extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2]): LodashPathOr2x2[TObject, TKey1, TKey2] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2], `object`: TObject): LodashPathOr2x6[TObject, TKey1, TKey2] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPathOr3x2[TObject, TKey1, TKey2, TKey3] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): LodashPathOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPathOr3x3[TObject, TKey1, TKey2, TKey3, TDefault] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPathOr4x2[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](
+    defaultValue: lodashLib.lodashMod.__,
+    path: js.Tuple4[TKey1, TKey2, TKey3, TKey4],
+    `object`: TObject
+  ): LodashPathOr4x6[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
   @JSName("pathOr")
-  def pathOr_LodashPathOr3x2(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPathOr3x2 = js.native
+  def pathOr_LodashPathOr6x2(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPathOr6x2 = js.native
   @JSName("pathOr")
-  def pathOr_TDefaultLodashPathOr3x3[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): LodashPathOr3x3[TDefault] = js.native
+  def pathOr_TDefaultLodashPathOr6x3[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): LodashPathOr6x3[TDefault] = js.native
   @JSName("pathOr")
-  def pathOr_TLodashPathOr2x4[T](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPathOr2x4[T] = js.native
+  def pathOr_TLodashPathOr5x4[T](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPathOr5x4[T] = js.native
   @JSName("pathOr")
-  def pathOr_TLodashPathOr2x6[T](defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPathOr2x6[T] = js.native
+  def pathOr_TLodashPathOr5x6[T](defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPathOr5x6[T] = js.native
   @JSName("pathOr")
   def pathOr_TObjectObjectLodashPathOr1x4[TObject /* <: js.Object */](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPathOr1x4[TObject] = js.native
   @JSName("pathOr")
   def pathOr_TObjectObjectTDefaultLodashPathOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPathOr1x5[TObject, TDefault] = js.native
+  @JSName("pathOr")
+  def pathOr_TObjectObjectTKey1StringTKey2AnyLodashPathOr2x6[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2]): LodashPathOr2x6[TObject, TKey1, TKey2] = js.native
+  @JSName("pathOr")
+  def pathOr_TObjectObjectTKey1StringTKey2AnyTDefaultLodashPathOr2x3[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): LodashPathOr2x3[TObject, TKey1, TKey2, TDefault] = js.native
+  @JSName("pathOr")
+  def pathOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashPathOr3x6[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPathOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("pathOr")
+  def `pathOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTDefault<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  @JSName("pathOr")
+  def pathOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyLodashPathOr4x6[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPathOr4x6[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  @JSName("pathOr")
+  def pathOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyTDefaultLodashPathOr4x3[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPathOr4x3[TObject, TKey1, TKey2, TKey3, TKey4, TDefault] = js.native
   @JSName("pathOr")
   def pathOr_TObjectObjectTKeyStringLodashPathOr1x6[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey): LodashPathOr1x6[TObject, TKey] = js.native
   @JSName("pathOr")
@@ -4723,19 +4857,25 @@ trait LoDashFp extends js.Object {
   @JSName("pathOr")
   def `pathOr_TTDefault<union>`[T, TDefault](defaultValue: TDefault, path: scala.Double): T | TDefault = js.native
   @JSName("pathOr")
-  def pathOr_TTDefaultLodashPathOr2x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPathOr2x5[T, TDefault] = js.native
+  def pathOr_TTDefaultLodashPathOr5x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPathOr5x5[T, TDefault] = js.native
   @JSName("path")
-  def path_LodashPath5x1(path: lodashLib.lodashMod.PropertyPath): LodashPath5x1 = js.native
+  def path_LodashPath8x1(path: lodashLib.lodashMod.PropertyPath): LodashPath8x1 = js.native
   @JSName("path")
   def `path_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
   @JSName("path")
-  def path_TLodashPath4x2[T](path: lodashLib.lodashMod.__): LodashPath4x2[T] = js.native
+  def path_TLodashPath6x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPath6x2[T] = js.native
   @JSName("path")
-  def path_TLodashPath4x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPath4x2[T] = js.native
+  def path_TLodashPath7x2[T](path: lodashLib.lodashMod.__): LodashPath7x2[T] = js.native
   @JSName("path")
   def path_TObjectObjectLodashPath2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__): LodashPath2x2[TObject] = js.native
   @JSName("path")
   def path_TObjectObjectLodashPath2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashPath2x2[TObject] = js.native
+  @JSName("path")
+  def path_TObjectObjectTKey1StringTKey2AnyLodashPath3x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashPath3x1[TObject, TKey1, TKey2] = js.native
+  @JSName("path")
+  def path_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashPath4x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPath4x1[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("path")
+  def path_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyLodashPath5x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPath5x1[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
   @JSName("path")
   def path_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("path")
@@ -5233,13 +5373,13 @@ trait LoDashFp extends js.Object {
   ): LodashMap3x1[T, TResult] = js.native
   @JSName("pluck")
   def pluck_TTResultLodashMap1x1[T, TResult](iteratee: js.Function1[/* value */ T, TResult]): LodashMap1x1[T, TResult] = js.native
-  def prop(path: lodashLib.lodashMod.PropertyPath): LodashProp5x1 = js.native
+  def prop(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def prop(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def prop(path: lodashLib.lodashMod.__): LodashProp5x2 = js.native
-  def prop(path: lodashLib.lodashMod.__, `object`: js.Any): LodashProp6x2 = js.native
-  def prop(path: scala.Double): LodashProp3x1 = js.native
+  def prop(path: lodashLib.lodashMod.__): LodashProp8x2 = js.native
+  def prop(path: lodashLib.lodashMod.__, `object`: js.Any): LodashProp9x2 = js.native
+  def prop(path: scala.Double): LodashProp6x1 = js.native
   def prop[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashProp1x2[TObject] = js.native
-  def prop[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProp3x2[T] = js.native
+  def prop[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProp7x2[T] = js.native
   def prop[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): js.UndefOr[T] = js.native
   def prop[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
@@ -5253,39 +5393,53 @@ trait LoDashFp extends js.Object {
   def prop[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
+  def prop[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashProp3x1[TObject, TKey1, TKey2] = js.native
+  def prop[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def prop[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def prop[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def prop[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashProp5x1[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def prop[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
   def propEq(path: lodashLib.lodashMod.PropertyPath): LodashMatchesProperty1x1 = js.native
   def propEq[T](path: lodashLib.lodashMod.PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, scala.Boolean] = js.native
   def propEq[T](path: lodashLib.lodashMod.__, srcValue: T): LodashMatchesProperty1x2 = js.native
-  def propOr(defaultValue: js.Any): LodashPropOr4x1 = js.native
-  def propOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath): LodashPropOr4x3 = js.native
+  def propOr(defaultValue: js.Any): LodashPropOr7x1 = js.native
+  def propOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath): LodashPropOr7x3 = js.native
   def propOr(defaultValue: js.Any, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def propOr(defaultValue: js.Any, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPropOr4x5 = js.native
-  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPropOr3x2 = js.native
-  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): LodashPropOr4x6 = js.native
-  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPropOr3x4 = js.native
-  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPropOr4x4 = js.native
-  def propOr(defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPropOr2x2 = js.native
+  def propOr(defaultValue: js.Any, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPropOr7x5 = js.native
+  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPropOr6x6 = js.native
+  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): LodashPropOr7x6 = js.native
+  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPropOr6x4 = js.native
+  def propOr(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: js.Any): LodashPropOr7x4 = js.native
+  def propOr(defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPropOr5x2 = js.native
   def propOr[TDefault](defaultValue: TDefault): LodashPropOr1x1[TDefault] = js.native
-  def propOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): LodashPropOr3x3[TDefault] = js.native
-  def propOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPropOr3x5[TDefault] = js.native
-  def propOr[TDefault](defaultValue: TDefault, path: scala.Double): LodashPropOr2x3[TDefault] = js.native
+  def propOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): LodashPropOr6x3[TDefault] = js.native
+  def propOr[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPropOr6x5[TDefault] = js.native
+  def propOr[TDefault](defaultValue: TDefault, path: scala.Double): LodashPropOr5x3[TDefault] = js.native
   def propOr[TObject /* <: js.Object */](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__, `object`: TObject): LodashPropOr1x4[TObject] = js.native
   def propOr[T](
     defaultValue: lodashLib.lodashMod.__,
     path: lodashLib.lodashMod.__,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashPropOr2x4[T] = js.native
+  ): LodashPropOr5x4[T] = js.native
   def propOr[T](
     defaultValue: lodashLib.lodashMod.__,
     path: scala.Double,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashPropOr2x6[T] = js.native
+  ): LodashPropOr5x6[T] = js.native
   def propOr[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__, `object`: TObject): LodashPropOr1x5[TObject, TDefault] = js.native
   def propOr[T, TDefault](
     defaultValue: TDefault,
     path: lodashLib.lodashMod.__,
     `object`: lodashLib.lodashMod.NumericDictionary[T]
-  ): LodashPropOr2x5[T, TDefault] = js.native
+  ): LodashPropOr5x5[T, TDefault] = js.native
   def propOr[T, TDefault](defaultValue: TDefault, path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T | TDefault = js.native
   def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey): LodashPropOr1x6[TObject, TKey] = js.native
   def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey, `object`: TObject): LodashPropOr1x6[TObject, TKey] = js.native
@@ -5301,18 +5455,64 @@ trait LoDashFp extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2]): LodashPropOr2x6[TObject, TKey1, TKey2] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2], `object`: TObject): LodashPropOr2x6[TObject, TKey1, TKey2] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPropOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): LodashPropOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPropOr3x3[TObject, TKey1, TKey2, TKey3, TDefault] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPropOr4x6[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](
+    defaultValue: lodashLib.lodashMod.__,
+    path: js.Tuple4[TKey1, TKey2, TKey3, TKey4],
+    `object`: TObject
+  ): LodashPropOr4x6[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
   @JSName("propOr")
-  def propOr_LodashPropOr3x6(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPropOr3x6 = js.native
+  def propOr_LodashPropOr6x2(defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.PropertyPath): LodashPropOr6x2 = js.native
   @JSName("propOr")
   def propOr_TDefaultTDefault[TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.PropertyPath): TDefault = js.native
   @JSName("propOr")
-  def propOr_TLodashPropOr2x4[T](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPropOr2x4[T] = js.native
+  def propOr_TLodashPropOr5x4[T](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPropOr5x4[T] = js.native
   @JSName("propOr")
-  def propOr_TLodashPropOr2x6[T](defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPropOr2x6[T] = js.native
+  def propOr_TLodashPropOr5x6[T](defaultValue: lodashLib.lodashMod.__, path: scala.Double): LodashPropOr5x6[T] = js.native
   @JSName("propOr")
   def propOr_TObjectObjectLodashPropOr1x4[TObject /* <: js.Object */](defaultValue: lodashLib.lodashMod.__, path: lodashLib.lodashMod.__): LodashPropOr1x4[TObject] = js.native
   @JSName("propOr")
   def propOr_TObjectObjectTDefaultLodashPropOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPropOr1x5[TObject, TDefault] = js.native
+  @JSName("propOr")
+  def propOr_TObjectObjectTKey1StringTKey2AnyLodashPropOr2x2[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple2[TKey1, TKey2]): LodashPropOr2x2[TObject, TKey1, TKey2] = js.native
+  @JSName("propOr")
+  def propOr_TObjectObjectTKey1StringTKey2AnyTDefaultLodashPropOr2x3[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): LodashPropOr2x3[TObject, TKey1, TKey2, TDefault] = js.native
+  @JSName("propOr")
+  def propOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashPropOr3x2[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPropOr3x2[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("propOr")
+  def `propOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTDefault<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple3[TKey1, TKey2, TKey3]): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  @JSName("propOr")
+  def propOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyLodashPropOr4x2[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](defaultValue: lodashLib.lodashMod.__, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPropOr4x2[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
+  @JSName("propOr")
+  def propOr_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyTDefaultLodashPropOr4x3[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPropOr4x3[TObject, TKey1, TKey2, TKey3, TKey4, TDefault] = js.native
   @JSName("propOr")
   def propOr_TObjectObjectTKeyStringLodashPropOr1x2[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.__, path: TKey): LodashPropOr1x2[TObject, TKey] = js.native
   @JSName("propOr")
@@ -5330,19 +5530,29 @@ trait LoDashFp extends js.Object {
   @JSName("propOr")
   def `propOr_TTDefault<union>`[T, TDefault](defaultValue: TDefault, path: scala.Double): T | TDefault = js.native
   @JSName("propOr")
-  def propOr_TTDefaultLodashPropOr2x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPropOr2x5[T, TDefault] = js.native
+  def propOr_TTDefaultLodashPropOr5x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPropOr5x5[T, TDefault] = js.native
   @JSName("prop")
-  def `prop_<union>`(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
+  def prop_LodashProp8x1(path: lodashLib.lodashMod.PropertyPath): LodashProp8x1 = js.native
   @JSName("prop")
   def `prop_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
   @JSName("prop")
-  def prop_TLodashProp4x2[T](path: lodashLib.lodashMod.__): LodashProp4x2[T] = js.native
+  def prop_TLodashProp6x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProp6x2[T] = js.native
   @JSName("prop")
-  def prop_TLodashProp4x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProp4x2[T] = js.native
+  def prop_TLodashProp7x2[T](path: lodashLib.lodashMod.__): LodashProp7x2[T] = js.native
   @JSName("prop")
   def prop_TObjectObjectLodashProp2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__): LodashProp2x2[TObject] = js.native
   @JSName("prop")
   def prop_TObjectObjectLodashProp2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashProp2x2[TObject] = js.native
+  @JSName("prop")
+  def `prop_TObjectObjectTKey1StringTKey2Any<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  @JSName("prop")
+  def prop_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashProp4x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LodashProp4x1[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("prop")
+  def `prop_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4Any<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
   @JSName("prop")
   def prop_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("prop")
@@ -5355,11 +5565,11 @@ trait LoDashFp extends js.Object {
   def prop_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
   def property(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def property(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def property(path: lodashLib.lodashMod.__): LodashProperty5x2 = js.native
-  def property(path: lodashLib.lodashMod.__, `object`: js.Any): LodashProperty6x2 = js.native
-  def property(path: scala.Double): LodashProperty3x1 = js.native
+  def property(path: lodashLib.lodashMod.__): LodashProperty8x2 = js.native
+  def property(path: lodashLib.lodashMod.__, `object`: js.Any): LodashProperty9x2 = js.native
+  def property(path: scala.Double): LodashProperty6x1 = js.native
   def property[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashProperty1x2[TObject] = js.native
-  def property[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProperty4x2[T] = js.native
+  def property[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProperty7x2[T] = js.native
   def property[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): js.UndefOr[T] = js.native
   def property[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
@@ -5373,13 +5583,29 @@ trait LoDashFp extends js.Object {
   def property[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
-  def propertyOf(path: lodashLib.lodashMod.PropertyPath): LodashPropertyOf5x1 = js.native
+  def property[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashProperty3x1[TObject, TKey1, TKey2] = js.native
+  def property[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def property[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def property[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def property[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def property[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def propertyOf(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def propertyOf(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
-  def propertyOf(path: lodashLib.lodashMod.__): LodashPropertyOf5x2 = js.native
-  def propertyOf(path: lodashLib.lodashMod.__, `object`: js.Any): LodashPropertyOf6x2 = js.native
-  def propertyOf(path: scala.Double): LodashPropertyOf3x1 = js.native
+  def propertyOf(path: lodashLib.lodashMod.__): LodashPropertyOf8x2 = js.native
+  def propertyOf(path: lodashLib.lodashMod.__, `object`: js.Any): LodashPropertyOf9x2 = js.native
+  def propertyOf(path: scala.Double): LodashPropertyOf6x1 = js.native
   def propertyOf[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashPropertyOf2x2[TObject] = js.native
-  def propertyOf[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPropertyOf3x2[T] = js.native
+  def propertyOf[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPropertyOf7x2[T] = js.native
   def propertyOf[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): js.UndefOr[T] = js.native
   def propertyOf[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
@@ -5393,18 +5619,42 @@ trait LoDashFp extends js.Object {
   def propertyOf[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
+  def propertyOf[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashPropertyOf3x1[TObject, TKey1, TKey2] = js.native
+  def propertyOf[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  def propertyOf[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def propertyOf[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+  ] = js.native
+  def propertyOf[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  def propertyOf[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
   @JSName("propertyOf")
-  def `propertyOf_<union>`(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
+  def propertyOf_LodashPropertyOf8x1(path: lodashLib.lodashMod.PropertyPath): LodashPropertyOf8x1 = js.native
   @JSName("propertyOf")
   def `propertyOf_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
   @JSName("propertyOf")
-  def propertyOf_TLodashPropertyOf4x2[T](path: lodashLib.lodashMod.__): LodashPropertyOf4x2[T] = js.native
+  def propertyOf_TLodashPropertyOf6x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPropertyOf6x2[T] = js.native
   @JSName("propertyOf")
-  def propertyOf_TLodashPropertyOf4x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPropertyOf4x2[T] = js.native
+  def propertyOf_TLodashPropertyOf7x2[T](path: lodashLib.lodashMod.__): LodashPropertyOf7x2[T] = js.native
   @JSName("propertyOf")
   def propertyOf_TObjectObjectLodashPropertyOf1x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashPropertyOf1x2[TObject] = js.native
   @JSName("propertyOf")
   def propertyOf_TObjectObjectLodashPropertyOf2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__): LodashPropertyOf2x2[TObject] = js.native
+  @JSName("propertyOf")
+  def `propertyOf_TObjectObjectTKey1StringTKey2Any<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  @JSName("propertyOf")
+  def propertyOf_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashPropertyOf4x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LodashPropertyOf4x1[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("propertyOf")
+  def propertyOf_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyLodashPropertyOf5x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashPropertyOf5x1[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
   @JSName("propertyOf")
   def propertyOf_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("propertyOf")
@@ -5416,17 +5666,25 @@ trait LoDashFp extends js.Object {
   @JSName("propertyOf")
   def propertyOf_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
   @JSName("property")
-  def property_LodashProperty5x1(path: lodashLib.lodashMod.PropertyPath): LodashProperty5x1 = js.native
+  def property_LodashProperty8x1(path: lodashLib.lodashMod.PropertyPath): LodashProperty8x1 = js.native
   @JSName("property")
   def `property_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
   @JSName("property")
-  def property_TLodashProperty3x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProperty3x2[T] = js.native
+  def property_TLodashProperty6x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProperty6x2[T] = js.native
   @JSName("property")
-  def property_TLodashProperty4x2[T](path: lodashLib.lodashMod.__): LodashProperty4x2[T] = js.native
+  def property_TLodashProperty7x2[T](path: lodashLib.lodashMod.__): LodashProperty7x2[T] = js.native
   @JSName("property")
   def property_TObjectObjectLodashProperty2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__): LodashProperty2x2[TObject] = js.native
   @JSName("property")
   def property_TObjectObjectLodashProperty2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.__, `object`: TObject): LodashProperty2x2[TObject] = js.native
+  @JSName("property")
+  def `property_TObjectObjectTKey1StringTKey2Any<union>`[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  @JSName("property")
+  def property_TObjectObjectTKey1StringTKey2AnyTKey3AnyLodashProperty4x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LodashProperty4x1[TObject, TKey1, TKey2, TKey3] = js.native
+  @JSName("property")
+  def property_TObjectObjectTKey1StringTKey2AnyTKey3AnyTKey4AnyLodashProperty5x1[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LodashProperty5x1[TObject, TKey1, TKey2, TKey3, TKey4] = js.native
   @JSName("property")
   def property_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("property")

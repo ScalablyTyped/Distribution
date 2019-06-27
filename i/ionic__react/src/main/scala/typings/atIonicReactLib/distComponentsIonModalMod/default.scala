@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class default protected ()
   extends atIonicReactLib.Anon_About {
   def this(props: atIonicReactLib.Anon_ChildrenEvent with (stdLib.Pick[
-      atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonModalAttributes */ _, 
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
     ])) = this()
 }
@@ -20,7 +20,7 @@ class default protected ()
 object default
   extends org.scalablytyped.runtime.Instantiable1[
       /* props */ atIonicReactLib.Anon_ChildrenEvent with (stdLib.Pick[
-        atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonModalAttributes */ _, 
         /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
       ]), 
       atIonicReactLib.Anon_About

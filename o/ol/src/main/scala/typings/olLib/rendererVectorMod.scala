@@ -16,7 +16,7 @@ object rendererVectorMod extends js.Object {
     feature: olLib.featureMod.FeatureLike,
     style: olLib.styleStyleMod.default,
     squaredTolerance: scala.Double,
-    listener: js.ThisFunction1[/* this */ T, /* param1 */ olLib.eventsEventMod.default, scala.Unit],
+    listener: js.ThisFunction1[/* this */ T, /* p1 */ olLib.eventsEventMod.default, scala.Unit],
     thisArg: T
   ): scala.Boolean = js.native
 }

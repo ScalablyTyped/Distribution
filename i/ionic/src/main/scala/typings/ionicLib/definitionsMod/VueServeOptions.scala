@@ -32,7 +32,8 @@ object VueServeOptions {
     platform: java.lang.String = null,
     project: java.lang.String = null,
     sourcemaps: js.UndefOr[scala.Boolean] = js.undefined,
-    ssl: js.UndefOr[scala.Boolean] = js.undefined
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): VueServeOptions = {
     val __obj = js.Dynamic.literal(address = address, devapp = devapp, engine = engine, lab = lab, labHost = labHost, labPort = labPort, livereload = livereload, open = open, port = port, proxy = proxy)
     __obj.updateDynamic("--")(`--`)
@@ -44,6 +45,7 @@ object VueServeOptions {
     if (project != null) __obj.updateDynamic("project")(project)
     if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps)
     if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[VueServeOptions]
   }
 }

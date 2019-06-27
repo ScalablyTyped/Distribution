@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonOverlayElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement {
   var backdropDismiss: js.UndefOr[scala.Boolean] = js.native
   var overlayIndex: scala.Double = js.native
   def dismiss(): js.Promise[scala.Boolean] = js.native

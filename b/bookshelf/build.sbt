@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bookshelf"
-version := "v0.13.0-dt-20190524Z-34d0fb"
+version := "v0.13.0-dt-20190524Z-2ba98c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-1ea477",
   "org.scalablytyped" %%% "create-error" % "0.3.1-dt-20190322Z-b85b22",
   "org.scalablytyped" %%% "knex" % "0.17.6-98f1e8",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190606Z-454408",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190626Z-4ba0df",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false

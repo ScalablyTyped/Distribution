@@ -1328,6 +1328,12 @@ object resourcesNs extends js.Object {
   }
   
   @js.native
+  class Checkout ()
+    extends stripeLib.stripeMod.StripeResource {
+    var sessions: Sessions = js.native
+  }
+  
+  @js.native
   class CountrySpecs ()
     extends stripeLib.stripeMod.StripeResource {
     def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
@@ -4072,6 +4078,21 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.skusNs.ISkuUpdateOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.skusNs.ISku]
     ): js.Promise[stripeLib.stripeMod.skusNs.ISku] = js.native
+  }
+  
+  @js.native
+  class Sessions ()
+    extends stripeLib.stripeMod.StripeResource {
+    def create(data: stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutCreationOptions): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
+    def create(
+      data: stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutCreationOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession]
+    ): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
+    def retrieve(data: java.lang.String): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
+    def retrieve(
+      data: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession]
+    ): js.Promise[stripeLib.stripeMod.checkoutsNs.sessionsNs.ICheckoutSession] = js.native
   }
   
   @js.native

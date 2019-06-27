@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "apollo-server-core"
-version := "2.6.6-8a6844"
+version := "2.6.7-c1782b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "apollo-datasource" % "0.5.0-fc5f0a",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.3.4-236a55",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.3.5-236a55",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.3.1-669761",
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-3add98",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.4.0-93f406",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.0-b740f3",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.0-9363cf",
-  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.5.5-8cf26a",
+  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.5.6-8cf26a",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.7-8b782f",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.20-5ee42a",
   "org.scalablytyped" %%% "eventemitter3" % "3.1.2-ef4b6c",

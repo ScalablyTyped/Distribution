@@ -40,8 +40,9 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: imechZhangLY <https://github.com/imechZhangLY>
 //                 brunoMaurice <https://github.com/brunoMaurice>
 //                 ldanet <https://github.com/ldanet>
+//                 Munif Tanjim <https://github.com/MunifTanjim>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 2.9
 
 ```
 

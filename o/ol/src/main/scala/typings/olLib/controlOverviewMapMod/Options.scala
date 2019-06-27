@@ -14,7 +14,7 @@ trait Options extends js.Object {
   var layers: js.UndefOr[
     js.Array[olLib.layerLayerMod.default] | olLib.collectionMod.default[olLib.layerLayerMod.default]
   ] = js.undefined
-  var render: js.UndefOr[js.Function1[/* param0 */ olLib.mapEventMod.default, scala.Unit]] = js.undefined
+  var render: js.UndefOr[js.Function1[/* p0 */ olLib.mapEventMod.default, scala.Unit]] = js.undefined
   var target: js.UndefOr[stdLib.HTMLElement | java.lang.String] = js.undefined
   var tipLabel: js.UndefOr[java.lang.String] = js.undefined
   var view: js.UndefOr[olLib.viewMod.default] = js.undefined
@@ -29,7 +29,7 @@ object Options {
     collapsible: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String | stdLib.HTMLElement = null,
     layers: js.Array[olLib.layerLayerMod.default] | olLib.collectionMod.default[olLib.layerLayerMod.default] = null,
-    render: /* param0 */ olLib.mapEventMod.default => scala.Unit = null,
+    render: /* p0 */ olLib.mapEventMod.default => scala.Unit = null,
     target: stdLib.HTMLElement | java.lang.String = null,
     tipLabel: java.lang.String = null,
     view: olLib.viewMod.default = null

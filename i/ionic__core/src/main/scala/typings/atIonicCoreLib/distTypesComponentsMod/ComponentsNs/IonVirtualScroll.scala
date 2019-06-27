@@ -63,14 +63,14 @@ trait IonVirtualScroll extends js.Object {
     */
   var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ scala.Double, _]] = js.native
   /**
-    * Marks the tail of the items array as dirty, so they can be re-rendered. It's equivalent to calling `checkRange(length)` where `length` is the total length of the items.
+    * This method marks the tail the items array as dirty, so they can be re-rendered.  It's equivalent to calling:  ```js virtualScroll.checkRange(lastItemLen); ```
     */
-  def checkEnd(): scala.Unit = js.native
+  def checkEnd(): js.Promise[scala.Unit] = js.native
   /**
-    * Marks a subset of the items as dirty so they can be re-rendered. Items should be marked as dirty any time the content or their style changes.  The subset of items to be updated are specified by an offset and a length. If a length is not provided it will check all of the items beginning at the offset.
+    * This method marks a subset of items as dirty, so they can be re-rendered. Items should be marked as dirty any time the content or their style changes.  The subset of items to be updated can are specifing by an offset and a length.
     */
-  def checkRange(offset: scala.Double): scala.Unit = js.native
-  def checkRange(offset: scala.Double, length: scala.Double): scala.Unit = js.native
+  def checkRange(offset: scala.Double): js.Promise[scala.Unit] = js.native
+  def checkRange(offset: scala.Double, len: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Returns the position of the virtual item at the given index.
     */

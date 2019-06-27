@@ -141,7 +141,7 @@ trait ItemCompose extends Item {
     *
     * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
     *
-    * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+    * If your Office add-in is running in Outlook on the web, the addItemAttachmentAsync method can attach items to items other than the item that 
     * you are editing; however, this is not supported and is not recommended.
     *
     * [Api set: Mailbox 1.1]
@@ -296,7 +296,7 @@ trait ItemCompose extends Item {
     *
     * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
     * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
-    * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
+    * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
     * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
     * continue in a separate window.
     *
@@ -334,7 +334,7 @@ trait ItemCompose extends Item {
     * Asynchronously saves an item.
     *
     * When invoked, this method saves the current message as a draft and returns the item id via the callback method. 
-    * In Outlook Web App or Outlook in online mode, the item is saved to the server. 
+    * In Outlook on the web or Outlook in online mode, the item is saved to the server. 
     * In Outlook in cached mode, the item is saved to the local cache.
     *
     * Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be saved as a normal 
@@ -347,7 +347,7 @@ trait ItemCompose extends Item {
     *
     * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
     *
-    * - Outlook for Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in compose mode.
+    * - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in compose mode.
     * See {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API} for a workaround.
     *
     * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
@@ -373,7 +373,7 @@ trait ItemCompose extends Item {
     * Asynchronously saves an item.
     *
     * When invoked, this method saves the current message as a draft and returns the item id via the callback method. 
-    * In Outlook Web App or Outlook in online mode, the item is saved to the server. 
+    * In Outlook on the web or Outlook in online mode, the item is saved to the server. 
     * In Outlook in cached mode, the item is saved to the local cache.
     *
     * Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be saved as a normal 
@@ -386,7 +386,7 @@ trait ItemCompose extends Item {
     *
     * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
     *
-    * - Outlook for Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in compose mode.
+    * - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in compose mode.
     * See {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API} for a workaround.
     *
     * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
@@ -436,10 +436,10 @@ trait ItemCompose extends Item {
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    *        coercionType: If text, the current style is applied in Outlook Web App and Outlook. 
+    *        coercionType: If text, the current style is applied in Outlook on the web and desktop clients. 
     *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML. 
-    *        If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook Web App and the default style is 
-    *        applied in Outlook. 
+    *        If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the default style is 
+    *        applied in Outlook on desktop clients.
     *        If the field is a text field, an InvalidDataFormat error is returned. 
     *        If coercionType is not set, the result depends on the field: if the field is HTML then HTML is used; 
     *        if the field is text, then plain text is used.

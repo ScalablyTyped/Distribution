@@ -34,7 +34,8 @@ object Ionic1ServeOptions {
     browserOption: java.lang.String = null,
     externalAddressRequired: js.UndefOr[scala.Boolean] = js.undefined,
     platform: java.lang.String = null,
-    project: java.lang.String = null
+    project: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Ionic1ServeOptions = {
     val __obj = js.Dynamic.literal(address = address, consolelogs = consolelogs, devapp = devapp, engine = engine, lab = lab, labHost = labHost, labPort = labPort, livereload = livereload, livereloadPort = livereloadPort, notificationPort = notificationPort, open = open, port = port, proxy = proxy, serverlogs = serverlogs)
     __obj.updateDynamic("--")(`--`)
@@ -43,6 +44,7 @@ object Ionic1ServeOptions {
     if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired)
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[Ionic1ServeOptions]
   }
 }

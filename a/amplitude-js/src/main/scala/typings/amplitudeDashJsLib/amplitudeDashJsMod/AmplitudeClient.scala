@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class AmplitudeClient () extends js.Object {
   def this(instanceName: java.lang.String) = this()
+  var Identify: org.scalablytyped.runtime.Instantiable0[Identify] = js.native
+  var Revenue: org.scalablytyped.runtime.Instantiable0[Revenue] = js.native
   var options: Config = js.native
   def clearUserProperties(): scala.Unit = js.native
   def getSessionId(): scala.Double = js.native

@@ -19,7 +19,7 @@ trait WebGLReplayGroup
     pixelRatio: scala.Double,
     opacity: scala.Double,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    callback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T]
+    callback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T]
   ): T = js.native
   def getDeleteResourcesFunction(context: olLib.webglContextMod.default): js.Function0[scala.Unit] = js.native
   def hasFeatureAtCoordinate(

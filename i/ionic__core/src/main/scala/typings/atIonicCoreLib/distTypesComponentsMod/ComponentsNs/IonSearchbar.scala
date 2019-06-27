@@ -47,7 +47,9 @@ trait IonSearchbar extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * Set the input's placeholder. `placeholder` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
@@ -79,7 +81,7 @@ trait IonSearchbar extends js.Object {
   /**
     * Sets focus on the specified `ion-searchbar`. Use this method instead of the global `input.focus()`.
     */
-  def setFocus(): scala.Unit
+  def setFocus(): js.Promise[scala.Unit]
 }
 
 object IonSearchbar {
@@ -93,21 +95,22 @@ object IonSearchbar {
     debounce: scala.Double,
     disabled: scala.Boolean,
     getInputElement: () => js.Promise[stdLib.HTMLInputElement],
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     placeholder: java.lang.String,
     searchIcon: java.lang.String,
-    setFocus: () => scala.Unit,
+    setFocus: () => js.Promise[scala.Unit],
     showCancelButton: scala.Boolean | java.lang.String,
     spellcheck: scala.Boolean,
     `type`: atIonicCoreLib.atIonicCoreLibStrings.text | atIonicCoreLib.atIonicCoreLibStrings.password | atIonicCoreLib.atIonicCoreLibStrings.email | atIonicCoreLib.atIonicCoreLibStrings.number | atIonicCoreLib.atIonicCoreLibStrings.search | atIonicCoreLib.atIonicCoreLibStrings.tel | atIonicCoreLib.atIonicCoreLibStrings.url,
     clearIcon: java.lang.String = null,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     value: java.lang.String = null
   ): IonSearchbar = {
-    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IonSearchbar]
   }

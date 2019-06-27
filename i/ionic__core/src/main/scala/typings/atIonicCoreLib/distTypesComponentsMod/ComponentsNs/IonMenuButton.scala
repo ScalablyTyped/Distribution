@@ -17,24 +17,30 @@ trait IonMenuButton extends js.Object {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
   ] = js.undefined
   /**
+    * If `true`, the user cannot interact with the menu button.
+    */
+  var disabled: scala.Boolean
+  /**
     * Optional property that maps to a Menu's `menuId` prop. Can also be `start` or `end` for the menu side. This is used to find the correct menu to toggle
     */
   var menu: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The mode determines which platform styles to use.
+    * The type of the button.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button
 }
 
 object IonMenuButton {
   @scala.inline
   def apply(
     autoHide: scala.Boolean,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
+    disabled: scala.Boolean,
+    `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     menu: java.lang.String = null
   ): IonMenuButton = {
-    val __obj = js.Dynamic.literal(autoHide = autoHide, mode = mode)
+    val __obj = js.Dynamic.literal(autoHide = autoHide, disabled = disabled)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (menu != null) __obj.updateDynamic("menu")(menu)
     __obj.asInstanceOf[IonMenuButton]

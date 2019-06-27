@@ -506,7 +506,7 @@ trait IonNav extends js.Object {
   ] = js.native
   def setRouteId(
     id: java.lang.String,
-    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<null> */ js.Any,
     direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   ): js.Promise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouteWrite */ _

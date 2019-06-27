@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonListElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonList {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
@@ -57,11 +57,6 @@ class HTMLIonListElementCls () extends HTMLIonListElement {
   override var inset: scala.Boolean = js.native
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native
-  /**
-    * The mode determines which platform styles to use.
-    */
-  /* CompleteClass */
-  override var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

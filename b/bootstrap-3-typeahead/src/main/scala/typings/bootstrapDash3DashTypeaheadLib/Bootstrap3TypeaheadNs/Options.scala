@@ -13,7 +13,7 @@ trait Options extends js.Object {
   /**
     * Call back function to execute after selected an item
     */
-  var afterSelect: js.UndefOr[js.Function1[/* item */ java.lang.String, scala.Unit]] = js.undefined
+  var afterSelect: js.UndefOr[js.Function1[/* item */ java.lang.String | js.Object, scala.Unit]] = js.undefined
   /**
     * Use this option to add the menu to another div
     */
@@ -91,7 +91,7 @@ object Options {
   @scala.inline
   def apply(
     addItem: js.Object = null,
-    afterSelect: /* item */ java.lang.String => scala.Unit = null,
+    afterSelect: /* item */ java.lang.String | js.Object => scala.Unit = null,
     appendTo: bootstrapDash3DashTypeaheadLib.JQuery = null,
     autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
     delay: scala.Int | scala.Double = null,

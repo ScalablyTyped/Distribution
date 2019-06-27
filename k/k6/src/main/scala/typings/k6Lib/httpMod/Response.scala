@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Response extends js.Object {
-  var body: java.lang.String = js.native
-  var cookies: js.Object = js.native
+  var body: ResponseBody = js.native
+  var cookies: org.scalablytyped.runtime.StringDictionary[js.Array[ResponseCookie]] = js.native
   var error: java.lang.String = js.native
+  var error_code: scala.Double = js.native
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var ocsp: k6Lib.Anon_Nextupdate = js.native
   var proto: java.lang.String = js.native
@@ -21,12 +22,13 @@ trait Response extends js.Object {
   var tls_cipher_suite: java.lang.String = js.native
   var tls_version: java.lang.String = js.native
   var url: java.lang.String = js.native
-  def clickLink(): Response = js.native
-  def clickLink(params: k6Lib.Anon_Params): Response = js.native
-  def html(): js.Any = js.native
-  def html(selector: java.lang.String): js.Any = js.native
-  def json(): js.Any = js.native
-  def submitForm(): Response = js.native
-  def submitForm(params: k6Lib.Anon_Fields): Response = js.native
+  def clickLink[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
+  def clickLink[RT /* <: js.UndefOr[ResponseType] */](args: k6Lib.Anon_Params[RT]): RefinedResponse[RT] = js.native
+  def html(): k6Lib.htmlMod.Selection = js.native
+  def html(selector: java.lang.String): k6Lib.htmlMod.Selection = js.native
+  def json(): js.UndefOr[k6Lib.k6Mod.JSON] = js.native
+  def json(selector: java.lang.String): js.UndefOr[k6Lib.k6Mod.JSON] = js.native
+  def submitForm[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
+  def submitForm[RT /* <: js.UndefOr[ResponseType] */](args: k6Lib.Anon_Fields[RT]): RefinedResponse[RT] = js.native
 }
 

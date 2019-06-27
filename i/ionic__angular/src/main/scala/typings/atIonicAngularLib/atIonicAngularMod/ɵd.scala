@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ɵd[Opts, Overlay] protected ()
   extends atIonicAngularLib.distUtilOverlayMod.OverlayBaseController[Opts, Overlay] {
-  def this(ctrl: java.lang.String, doc: stdLib.Document) = this()
+  def this(ctrl: atIonicAngularLib.distUtilOverlayMod.ControllerShape[Opts, Overlay]) = this()
 }
 

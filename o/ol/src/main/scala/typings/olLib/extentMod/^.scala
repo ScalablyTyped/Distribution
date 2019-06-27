@@ -59,11 +59,11 @@ object ^ extends js.Object {
   def extendXY(extent: Extent, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def forEachCorner[S, T](
     extent: Extent,
-    callback: js.ThisFunction1[/* this */ T, /* param1 */ olLib.coordinateMod.Coordinate, S]
+    callback: js.ThisFunction1[/* this */ T, /* p1 */ olLib.coordinateMod.Coordinate, S]
   ): S | scala.Boolean = js.native
   def forEachCorner[S, T](
     extent: Extent,
-    callback: js.ThisFunction1[/* this */ T, /* param1 */ olLib.coordinateMod.Coordinate, S],
+    callback: js.ThisFunction1[/* this */ T, /* p1 */ olLib.coordinateMod.Coordinate, S],
     opt_this: T
   ): S | scala.Boolean = js.native
   def getArea(extent: Extent): scala.Double = js.native

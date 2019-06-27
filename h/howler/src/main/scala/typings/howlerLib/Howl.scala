@@ -12,7 +12,8 @@ trait Howl extends js.Object {
   def fade(from: scala.Double, to: scala.Double, duration: scala.Double): this.type = js.native
   def fade(from: scala.Double, to: scala.Double, duration: scala.Double, id: scala.Double): this.type = js.native
   def load(): this.type = js.native
-  def loop(): this.type = js.native
+  def loop(): scala.Boolean = js.native
+  def loop(id: scala.Double): scala.Boolean = js.native
   def loop(loop: scala.Boolean): this.type = js.native
   def loop(loop: scala.Boolean, id: scala.Double): this.type = js.native
   def mute(): scala.Boolean = js.native

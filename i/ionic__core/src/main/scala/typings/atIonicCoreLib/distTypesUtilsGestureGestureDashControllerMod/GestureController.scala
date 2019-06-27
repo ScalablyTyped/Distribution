@@ -10,7 +10,6 @@ trait GestureController extends js.Object {
   var capturedId: js.UndefOr[js.Any] = js.native
   var disabledGestures: js.Any = js.native
   var disabledScroll: js.Any = js.native
-  var doc: js.Any = js.native
   var gestureId: js.Any = js.native
   var newID: js.Any = js.native
   var requestedStart: js.Any = js.native

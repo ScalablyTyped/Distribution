@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 6.41.2
+Typings are for version 6.41.3
 
 ## Library description:
 Office UI Fabric utilities for building React components.

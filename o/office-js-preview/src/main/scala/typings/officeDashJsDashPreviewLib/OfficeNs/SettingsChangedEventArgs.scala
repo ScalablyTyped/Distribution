@@ -16,12 +16,12 @@ import scala.scalajs.js.annotation._
   * Settings.set or Settings.remove methods are called.
   * 
   * The settingsChanged event was designed to let you to handle potential conflicts when two or more users are 
-  * attempting to save settings at the same time when your add-in is used in a shared (co-authored) document.
+  * attempting to save settings at the same time when your add-in is used in a shared (coauthored) document.
   * 
   * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in 
   * is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet 
-  * that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). 
-  * Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+  * that is opened in Excel on the web, and more than one user is editing the spreadsheet (coauthoring). 
+  * Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
   */
 trait SettingsChangedEventArgs extends js.Object {
   /**

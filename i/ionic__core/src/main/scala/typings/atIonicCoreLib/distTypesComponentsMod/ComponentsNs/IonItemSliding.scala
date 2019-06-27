@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IonItemSliding extends js.Object {
   /**
-    * If `true`, the user cannot interact with the sliding-item.
+    * If `true`, the user cannot interact with the sliding item.
     */
   var disabled: scala.Boolean = js.native
   /**

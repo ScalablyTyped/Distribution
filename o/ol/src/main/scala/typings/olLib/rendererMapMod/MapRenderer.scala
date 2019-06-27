@@ -16,12 +16,12 @@ trait MapRenderer
     hitTolerance: scala.Double,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* param1 */ olLib.featureMod.FeatureLike, 
-      /* param2 */ olLib.layerLayerMod.default, 
+      /* p1 */ olLib.featureMod.FeatureLike, 
+      /* p2 */ olLib.layerLayerMod.default, 
       T
     ],
     thisArg: S,
-    layerFilter: js.ThisFunction1[/* this */ U, /* param1 */ olLib.layerLayerMod.default, scala.Boolean],
+    layerFilter: js.ThisFunction1[/* this */ U, /* p1 */ olLib.layerLayerMod.default, scala.Boolean],
     thisArg2: U
   ): T = js.native
   def forEachLayerAtPixel[S, T, U](
@@ -30,12 +30,12 @@ trait MapRenderer
     hitTolerance: scala.Double,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* param1 */ olLib.layerLayerMod.default, 
-      /* param2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
+      /* p1 */ olLib.layerLayerMod.default, 
+      /* p2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
       T
     ],
     thisArg: S,
-    layerFilter: js.ThisFunction1[/* this */ U, /* param1 */ olLib.layerLayerMod.default, scala.Boolean],
+    layerFilter: js.ThisFunction1[/* this */ U, /* p1 */ olLib.layerLayerMod.default, scala.Boolean],
     thisArg2: U
   ): T = js.native
   /* protected */ def getLayerRenderer(layer: olLib.layerBaseMod.default): olLib.rendererLayerMod.default = js.native
@@ -46,7 +46,7 @@ trait MapRenderer
     coordinate: olLib.coordinateMod.Coordinate,
     frameState: olLib.pluggableMapMod.FrameState,
     hitTolerance: scala.Double,
-    layerFilter: js.ThisFunction1[/* this */ U, /* param1 */ olLib.layerLayerMod.default, scala.Boolean],
+    layerFilter: js.ThisFunction1[/* this */ U, /* p1 */ olLib.layerLayerMod.default, scala.Boolean],
     thisArg: U
   ): scala.Boolean = js.native
   def registerLayerRenderers(constructors: js.Array[olLib.rendererLayerMod.default]): scala.Unit = js.native

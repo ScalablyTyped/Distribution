@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-fbsdk
 
-Typings are for version 0.6
+Typings are for version 0.7
 
 ## Library description:
 Facebook SDK support for React Native apps.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-native-fbsdk 0.6
+// Type definitions for react-native-fbsdk 0.7
 // Project: https://github.com/facebook/react-native-fbsdk
 // Definitions by: Ifiok Jr. <https://github.com/ifiokjr>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

@@ -12,11 +12,7 @@ trait VectorLayer
   def getDeclutter(): scala.Boolean = js.native
   def getRenderBuffer(): scala.Double = js.native
   def getRenderMode(): olLib.layerVectorRenderTypeMod.VectorRenderType | java.lang.String = js.native
-  def getRenderOrder(): js.Function2[
-    /* param0 */ olLib.featureMod.default, 
-    /* param1 */ olLib.featureMod.default, 
-    scala.Double
-  ] = js.native
+  def getRenderOrder(): js.Function2[/* p0 */ olLib.featureMod.default, /* p1 */ olLib.featureMod.default, scala.Double] = js.native
   @JSName("getSource")
   def getSource_default(): olLib.sourceSourceMod.default = js.native
   def getStyle(): olLib.styleStyleMod.StyleLike = js.native

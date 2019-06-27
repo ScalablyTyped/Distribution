@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/structs/PriorityQueue", JSImport.Default)
 @js.native
 class default[T] protected () extends PriorityQueue[T] {
-  def this(priorityFunction: js.Function1[/* param0 */ T, scala.Double], keyFunction: js.Function1[/* param0 */ T, java.lang.String]) = this()
+  def this(priorityFunction: js.Function1[/* p0 */ T, scala.Double], keyFunction: js.Function1[/* p0 */ T, java.lang.String]) = this()
   /* CompleteClass */
   override def clear(): scala.Unit = js.native
   /* CompleteClass */

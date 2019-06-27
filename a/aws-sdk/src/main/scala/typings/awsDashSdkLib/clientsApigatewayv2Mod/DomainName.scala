@@ -18,6 +18,10 @@ trait DomainName extends js.Object {
     * The domain name configurations.
     */
   var DomainNameConfigurations: js.UndefOr[DomainNameConfigurations] = js.undefined
+  /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters..
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
 }
 
 object DomainName {
@@ -25,11 +29,13 @@ object DomainName {
   def apply(
     DomainName: StringWithLengthBetween1And512,
     ApiMappingSelectionExpression: SelectionExpression = null,
-    DomainNameConfigurations: DomainNameConfigurations = null
+    DomainNameConfigurations: DomainNameConfigurations = null,
+    Tags: Tags = null
   ): DomainName = {
     val __obj = js.Dynamic.literal(DomainName = DomainName)
     if (ApiMappingSelectionExpression != null) __obj.updateDynamic("ApiMappingSelectionExpression")(ApiMappingSelectionExpression)
     if (DomainNameConfigurations != null) __obj.updateDynamic("DomainNameConfigurations")(DomainNameConfigurations)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[DomainName]
   }
 }

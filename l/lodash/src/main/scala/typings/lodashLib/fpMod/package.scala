@@ -476,27 +476,32 @@ package object fpMod {
     /* path */ java.lang.String | js.Array[java.lang.String], 
     /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
-  type LodashGet2x2[TObject] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
+  type LodashGet3x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
     ]
   ]
-  type LodashGet3x2[T] = js.Function1[/* path */ scala.Double, T]
-  type LodashGet4x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
-  type LodashGet5x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
-  type LodashGet6x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashGet4x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+    ]
+  ]
+  type LodashGet5x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+    ]
+  ]
+  type LodashGet6x2[T] = js.Function1[/* path */ scala.Double, T]
+  type LodashGet7x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
+  type LodashGet8x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
+  type LodashGet9x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
   type LodashGetOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
     (stdLib.Exclude[
       /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
-      js.UndefOr[scala.Nothing]
-    ]) | TDefault
-  ]
-  type LodashGetOr1x5[TObject, TDefault] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
-    (stdLib.Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ]
@@ -507,18 +512,60 @@ package object fpMod {
       js.UndefOr[scala.Nothing]
     ]) | js.Any
   ]
-  type LodashGetOr2x3[TDefault] = js.Function1[
+  type LodashGetOr2x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashGetOr2x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashGetOr3x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashGetOr3x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashGetOr4x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashGetOr4x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashGetOr5x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.NumericDictionary[js.Any] | scala.Null], 
     js.Any | TDefault
   ]
-  type LodashGetOr2x5[T, TDefault] = js.Function1[/* path */ scala.Double, T | TDefault]
-  type LodashGetOr2x6[T] = js.Function1[/* defaultValue */ js.Any, T | js.Any]
-  type LodashGetOr3x3[TDefault] = js.Function1[/* object */ js.UndefOr[scala.Null], TDefault]
-  type LodashGetOr3x5[TDefault] = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, TDefault]
-  type LodashGetOr3x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
-  type LodashGetOr4x3 = js.Function1[/* object */ js.Any, js.Any]
-  type LodashGetOr4x5 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
-  type LodashGetOr4x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
+  type LodashGetOr5x5[T, TDefault] = js.Function1[/* path */ scala.Double, T | TDefault]
+  type LodashGetOr5x6[T] = js.Function1[/* defaultValue */ js.Any, T | js.Any]
+  type LodashGetOr6x3[TDefault] = js.Function1[/* object */ js.UndefOr[scala.Null], TDefault]
+  type LodashGetOr6x5[TDefault] = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, TDefault]
+  type LodashGetOr6x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
+  type LodashGetOr7x3 = js.Function1[/* object */ js.Any, js.Any]
+  type LodashGetOr7x5 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashGetOr7x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
   type LodashGroupBy1x1[T] = js.Function1[
     /* collection */ js.UndefOr[lodashLib.lodashMod.List[T] | js.Object | scala.Null], 
     lodashLib.lodashMod.Dictionary[js.Array[T]]
@@ -1071,27 +1118,32 @@ package object fpMod {
     /* path */ java.lang.String | js.Array[java.lang.String], 
     /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
-  type LodashPath2x2[TObject] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
+  type LodashPath3x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
     ]
   ]
-  type LodashPath3x2[T] = js.Function1[/* path */ scala.Double, T]
-  type LodashPath4x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
-  type LodashPath5x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
-  type LodashPath6x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashPath4x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+    ]
+  ]
+  type LodashPath5x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+    ]
+  ]
+  type LodashPath6x2[T] = js.Function1[/* path */ scala.Double, T]
+  type LodashPath7x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
+  type LodashPath8x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
+  type LodashPath9x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
   type LodashPathOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
     (stdLib.Exclude[
       /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
-      js.UndefOr[scala.Nothing]
-    ]) | TDefault
-  ]
-  type LodashPathOr1x5[TObject, TDefault] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
-    (stdLib.Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ]
@@ -1102,18 +1154,60 @@ package object fpMod {
       js.UndefOr[scala.Nothing]
     ]) | js.Any
   ]
-  type LodashPathOr2x3[TDefault] = js.Function1[
+  type LodashPathOr2x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashPathOr2x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashPathOr3x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashPathOr3x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashPathOr4x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashPathOr4x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashPathOr5x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.NumericDictionary[js.Any] | scala.Null], 
     js.Any | TDefault
   ]
-  type LodashPathOr2x5[T, TDefault] = js.Function1[/* path */ scala.Double, T | TDefault]
-  type LodashPathOr2x6[T] = js.Function1[/* defaultValue */ js.Any, T | js.Any]
-  type LodashPathOr3x3[TDefault] = js.Function1[/* object */ js.UndefOr[scala.Null], TDefault]
-  type LodashPathOr3x5[TDefault] = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, TDefault]
-  type LodashPathOr3x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
-  type LodashPathOr4x3 = js.Function1[/* object */ js.Any, js.Any]
-  type LodashPathOr4x5 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
-  type LodashPathOr4x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
+  type LodashPathOr5x5[T, TDefault] = js.Function1[/* path */ scala.Double, T | TDefault]
+  type LodashPathOr5x6[T] = js.Function1[/* defaultValue */ js.Any, T | js.Any]
+  type LodashPathOr6x3[TDefault] = js.Function1[/* object */ js.UndefOr[scala.Null], TDefault]
+  type LodashPathOr6x5[TDefault] = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, TDefault]
+  type LodashPathOr6x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
+  type LodashPathOr7x3 = js.Function1[/* object */ js.Any, js.Any]
+  type LodashPathOr7x5 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashPathOr7x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
   type LodashPick1x1[T, U /* <: java.lang.String */] = js.Function1[/* object */ T, stdLib.Pick[T, U]]
   type LodashPick1x2[T] = js.Function1[
     /* props */ lodashLib.lodashMod.Many[java.lang.String], 
@@ -1132,27 +1226,32 @@ package object fpMod {
     /* path */ java.lang.String | js.Array[java.lang.String], 
     /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
-  type LodashProp2x2[TObject] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
+  type LodashProp3x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
     ]
   ]
-  type LodashProp3x2[T] = js.Function1[/* path */ scala.Double, T]
-  type LodashProp4x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
-  type LodashProp5x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
-  type LodashProp6x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashProp4x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+    ]
+  ]
+  type LodashProp5x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+    ]
+  ]
+  type LodashProp6x2[T] = js.Function1[/* path */ scala.Double, T]
+  type LodashProp7x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
+  type LodashProp8x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
+  type LodashProp9x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
   type LodashPropOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
     (stdLib.Exclude[
       /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
-      js.UndefOr[scala.Nothing]
-    ]) | TDefault
-  ]
-  type LodashPropOr1x5[TObject, TDefault] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
-    (stdLib.Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ]
@@ -1163,46 +1262,112 @@ package object fpMod {
       js.UndefOr[scala.Nothing]
     ]) | js.Any
   ]
-  type LodashPropOr2x3[TDefault] = js.Function1[
+  type LodashPropOr2x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashPropOr2x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashPropOr3x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashPropOr3x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashPropOr4x3[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
+  ]
+  type LodashPropOr4x6[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* defaultValue */ js.Any, 
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
+  ]
+  type LodashPropOr5x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.NumericDictionary[js.Any] | scala.Null], 
     js.Any | TDefault
   ]
-  type LodashPropOr2x5[T, TDefault] = js.Function1[/* path */ scala.Double, T | TDefault]
-  type LodashPropOr2x6[T] = js.Function1[/* defaultValue */ js.Any, T | js.Any]
-  type LodashPropOr3x3[TDefault] = js.Function1[/* object */ js.UndefOr[scala.Null], TDefault]
-  type LodashPropOr3x5[TDefault] = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, TDefault]
-  type LodashPropOr3x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
-  type LodashPropOr4x3 = js.Function1[/* object */ js.Any, js.Any]
-  type LodashPropOr4x5 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
-  type LodashPropOr4x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
+  type LodashPropOr5x5[T, TDefault] = js.Function1[/* path */ scala.Double, T | TDefault]
+  type LodashPropOr5x6[T] = js.Function1[/* defaultValue */ js.Any, T | js.Any]
+  type LodashPropOr6x3[TDefault] = js.Function1[/* object */ js.UndefOr[scala.Null], TDefault]
+  type LodashPropOr6x5[TDefault] = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, TDefault]
+  type LodashPropOr6x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
+  type LodashPropOr7x3 = js.Function1[/* object */ js.Any, js.Any]
+  type LodashPropOr7x5 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashPropOr7x6 = js.Function1[/* defaultValue */ js.Any, js.Any]
   type LodashProperty1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
-  type LodashProperty2x2[TObject] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
+  type LodashProperty3x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
     ]
   ]
-  type LodashProperty3x2[T] = js.Function1[/* path */ scala.Double, T]
-  type LodashProperty4x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
-  type LodashProperty5x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
-  type LodashProperty6x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashProperty4x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+    ]
+  ]
+  type LodashProperty5x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+    ]
+  ]
+  type LodashProperty6x2[T] = js.Function1[/* path */ scala.Double, T]
+  type LodashProperty7x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
+  type LodashProperty8x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
+  type LodashProperty9x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
   type LodashPropertyOf1x2[TObject] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
     /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ]
-  type LodashPropertyOf2x2[TObject] = js.Function1[
-    /* path */ java.lang.String | js.Array[java.lang.String], 
+  type LodashPropertyOf3x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
     ]
   ]
-  type LodashPropertyOf3x2[T] = js.Function1[/* path */ scala.Double, T]
-  type LodashPropertyOf4x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
-  type LodashPropertyOf5x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
-  type LodashPropertyOf6x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
+  type LodashPropertyOf4x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+    ]
+  ]
+  type LodashPropertyOf5x1[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */] = js.Function1[
+    /* object */ js.UndefOr[TObject | scala.Null], 
+    js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+    ]
+  ]
+  type LodashPropertyOf6x2[T] = js.Function1[/* path */ scala.Double, T]
+  type LodashPropertyOf7x2[T] = js.Function1[/* path */ scala.Double, js.UndefOr[T]]
+  type LodashPropertyOf8x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.UndefOr[scala.Nothing]]
+  type LodashPropertyOf9x2 = js.Function1[/* path */ lodashLib.lodashMod.PropertyPath, js.Any]
   type LodashPull1x2[T] = js.Function1[/* values */ T, js.Array[T]]
   type LodashPull2x2[T] = js.Function1[/* values */ T, lodashLib.lodashMod.List[T]]
   type LodashPullAll1x2[T] = js.Function1[/* values */ lodashLib.lodashMod.List[T], js.Array[T]]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-packager
 
-Typings are for version 13.0
+Typings are for version 14.0
 
 ## Library description:
 Customize and package your Electron app with OS-specific bundles (.app, .exe, etc.) via JS or CLI
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for electron-packager 13.0
+// Type definitions for electron-packager 14.0
 // Project: https://github.com/electron-userland/electron-packager
 // Definitions by: Maxime LUCE <https://github.com/SomaticIT>
 //                 Juan Jimenez-Anca <https://github.com/cortopy>
@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Mark Lee <https://github.com/malept>
 //                 Florian Keller <https://github.com/ffflorian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.9
 
 ```
 

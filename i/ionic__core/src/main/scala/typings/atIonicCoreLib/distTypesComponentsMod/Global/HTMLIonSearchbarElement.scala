@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSearchbar because var conflicts: spellcheck. Inlined animated, autocomplete, autocorrect, cancelButtonIcon, cancelButtonText, clearIcon, color, debounce, disabled, getInputElement, mode, placeholder, searchIcon, setFocus, showCancelButton, `type`, value */ @js.native
 trait HTMLIonSearchbarElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement {
   /**
     * If `true`, enable searchbar animation.
     */
@@ -50,7 +50,9 @@ trait HTMLIonSearchbarElement
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.native
   /**
     * Set the input's placeholder. `placeholder` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
@@ -78,7 +80,7 @@ trait HTMLIonSearchbarElement
   /**
     * Sets focus on the specified `ion-searchbar`. Use this method instead of the global `input.focus()`.
     */
-  def setFocus(): scala.Unit = js.native
+  def setFocus(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("HTMLIonSearchbarElement")

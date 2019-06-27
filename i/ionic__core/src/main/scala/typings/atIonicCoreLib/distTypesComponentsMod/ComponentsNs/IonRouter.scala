@@ -22,7 +22,7 @@ trait IonRouter extends js.Object {
   def navChanged(
     direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   ): js.Promise[scala.Boolean] = js.native
-  def printDebug(): scala.Unit = js.native
+  def printDebug(): js.Promise[scala.Unit] = js.native
   /**
     * Navigate to the specified URL.
     */

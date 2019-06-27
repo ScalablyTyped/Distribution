@@ -6,6 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object electronDashPackagerMod {
+  // see https://github.com/electron-userland/electron-packager/blob/92d09bba34599283a794fd6f24b88470f0cb1074/src/mac.js#L372
+  type ElectronNotarizeOptions = electronDashPackagerLib.Omit[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotarizeOptions */ js.Any, 
+    electronDashPackagerLib.electronDashPackagerLibStrings.appBundleId | electronDashPackagerLib.electronDashPackagerLibStrings.appPath
+  ]
   /**
     * Callback which is called when electron-packager is done.
     *

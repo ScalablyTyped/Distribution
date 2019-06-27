@@ -10,5 +10,5 @@ package object distComponentsNavigationIonTabBarMod {
     js.Object, 
     reactDashRouterLib.reactDashRouterMod.StaticContext, 
     historyLib.historyMod.LocationState
-  ]) with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTabBarAttributes with atIonicReactLib.Anon_ChildrenReactNode_262814360
+  ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonTabBarAttributes */ js.Any) with atIonicReactLib.Anon_ChildrenReactNode_262814360
 }

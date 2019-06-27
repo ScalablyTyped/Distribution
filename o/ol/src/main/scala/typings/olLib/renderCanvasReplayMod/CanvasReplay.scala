@@ -153,8 +153,8 @@ trait CanvasReplay
     state: olLib.renderCanvasMod.FillStrokeState,
     createFill: js.ThisFunction2[
       /* this */ this.type, 
-      /* param1 */ olLib.renderCanvasMod.FillStrokeState, 
-      /* param2 */ olLib.geomGeometryMod.default | olLib.renderFeatureMod.default, 
+      /* p1 */ olLib.renderCanvasMod.FillStrokeState, 
+      /* p2 */ olLib.geomGeometryMod.default | olLib.renderFeatureMod.default, 
       js.Array[_]
     ],
     geometry: olLib.geomGeometryMod.default
@@ -163,15 +163,15 @@ trait CanvasReplay
     state: olLib.renderCanvasMod.FillStrokeState,
     createFill: js.ThisFunction2[
       /* this */ this.type, 
-      /* param1 */ olLib.renderCanvasMod.FillStrokeState, 
-      /* param2 */ olLib.geomGeometryMod.default | olLib.renderFeatureMod.default, 
+      /* p1 */ olLib.renderCanvasMod.FillStrokeState, 
+      /* p2 */ olLib.geomGeometryMod.default | olLib.renderFeatureMod.default, 
       js.Array[_]
     ],
     geometry: olLib.renderFeatureMod.default
   ): scala.Unit = js.native
   def updateStrokeStyle(
     state: olLib.renderCanvasMod.FillStrokeState,
-    applyStroke: js.ThisFunction1[/* this */ this.type, /* param1 */ olLib.renderCanvasMod.FillStrokeState, scala.Unit]
+    applyStroke: js.ThisFunction1[/* this */ this.type, /* p1 */ olLib.renderCanvasMod.FillStrokeState, scala.Unit]
   ): scala.Unit = js.native
 }
 

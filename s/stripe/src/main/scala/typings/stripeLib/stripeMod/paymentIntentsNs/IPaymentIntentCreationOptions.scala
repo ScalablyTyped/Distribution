@@ -23,6 +23,10 @@ trait IPaymentIntentCreationOptions extends js.Object {
     */
   var confirm: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Whether to use the publishable key automatic method, or the secret key manual method
+    */
+  var confirmation_method: js.UndefOr[stripeLib.stripeLibStrings.automatic | stripeLib.stripeLibStrings.manual] = js.undefined
+  /**
     * Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
   var currency: java.lang.String
@@ -46,6 +50,10 @@ trait IPaymentIntentCreationOptions extends js.Object {
     */
   var on_behalf_of: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The ID of the payment method used to pay
+    */
+  var payment_method: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
     */
   var payment_method_types: js.Array[java.lang.String]
@@ -65,10 +73,6 @@ trait IPaymentIntentCreationOptions extends js.Object {
     * Shipping information for this PaymentIntent.
     */
   var shipping: js.UndefOr[stripeLib.stripeMod.IShippingInformation] = js.undefined
-  /**
-    * ID of the Source object to attach to this PaymentIntent.
-    */
-  var source: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Extra information about a PaymentIntent. This will appear on your customer’s statement when this PaymentIntent succeeds in creating a charge.
     */
@@ -92,15 +96,16 @@ object IPaymentIntentCreationOptions {
     application_fee_amount: scala.Int | scala.Double = null,
     capture_method: stripeLib.stripeLibStrings.automatic | stripeLib.stripeLibStrings.manual = null,
     confirm: js.UndefOr[scala.Boolean] = js.undefined,
+    confirmation_method: stripeLib.stripeLibStrings.automatic | stripeLib.stripeLibStrings.manual = null,
     customer: java.lang.String = null,
     description: java.lang.String = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
     on_behalf_of: java.lang.String = null,
+    payment_method: java.lang.String = null,
     receipt_email: java.lang.String = null,
     return_url: java.lang.String = null,
     save_payment_method: js.UndefOr[scala.Boolean] = js.undefined,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
-    source: java.lang.String = null,
     statement_descriptor: java.lang.String = null,
     transfer_data: IPaymentIntentTransferData = null,
     transfer_group: java.lang.String = null
@@ -109,15 +114,16 @@ object IPaymentIntentCreationOptions {
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
     if (capture_method != null) __obj.updateDynamic("capture_method")(capture_method.asInstanceOf[js.Any])
     if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm)
+    if (confirmation_method != null) __obj.updateDynamic("confirmation_method")(confirmation_method.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (description != null) __obj.updateDynamic("description")(description)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (return_url != null) __obj.updateDynamic("return_url")(return_url)
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (source != null) __obj.updateDynamic("source")(source)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)

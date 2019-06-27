@@ -15,6 +15,7 @@ trait Props extends js.Object {
   var clickable: js.UndefOr[scala.Boolean] = js.undefined
   var delayHide: js.UndefOr[scala.Double] = js.undefined
   var delayShow: js.UndefOr[scala.Double] = js.undefined
+  var delayUpdate: js.UndefOr[scala.Double] = js.undefined
   var disable: js.UndefOr[scala.Boolean] = js.undefined
   var effect: js.UndefOr[Effect] = js.undefined
   var event: js.UndefOr[ElementEvents] = js.undefined
@@ -51,6 +52,7 @@ object Props {
     clickable: js.UndefOr[scala.Boolean] = js.undefined,
     delayHide: scala.Int | scala.Double = null,
     delayShow: scala.Int | scala.Double = null,
+    delayUpdate: scala.Int | scala.Double = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
     effect: Effect = null,
     event: ElementEvents = null,
@@ -82,6 +84,7 @@ object Props {
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (delayHide != null) __obj.updateDynamic("delayHide")(delayHide.asInstanceOf[js.Any])
     if (delayShow != null) __obj.updateDynamic("delayShow")(delayShow.asInstanceOf[js.Any])
+    if (delayUpdate != null) __obj.updateDynamic("delayUpdate")(delayUpdate.asInstanceOf[js.Any])
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
     if (effect != null) __obj.updateDynamic("effect")(effect)
     if (event != null) __obj.updateDynamic("event")(event)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AtPixelOptions extends js.Object {
   var hitTolerance: js.UndefOr[scala.Double] = js.undefined
-  def layerFilter(param0: olLib.layerLayerMod.default): scala.Boolean
+  def layerFilter(p0: olLib.layerLayerMod.default): scala.Boolean
 }
 
 object AtPixelOptions {

@@ -34,10 +34,16 @@ object ioniconsLibStrings {
   sealed trait central extends js.Object
   
   @js.native
+  sealed trait eager extends js.Object
+  
+  @js.native
   sealed trait evenodd extends js.Object
   
   @js.native
   sealed trait hanging extends js.Object
+  
+  @js.native
+  sealed trait high extends js.Object
   
   @js.native
   sealed trait ideographic extends js.Object
@@ -55,7 +61,13 @@ object ioniconsLibStrings {
   sealed trait isolated extends js.Object
   
   @js.native
+  sealed trait `lazy` extends js.Object
+  
+  @js.native
   sealed trait linearRGB extends js.Object
+  
+  @js.native
+  sealed trait low extends js.Object
   
   @js.native
   sealed trait mathematical extends js.Object
@@ -130,9 +142,13 @@ object ioniconsLibStrings {
   @scala.inline
   def central: central = "central".asInstanceOf[central]
   @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
+  @scala.inline
+  def high: high = "high".asInstanceOf[high]
   @scala.inline
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   @scala.inline
@@ -144,7 +160,11 @@ object ioniconsLibStrings {
   @scala.inline
   def isolated: isolated = "isolated".asInstanceOf[isolated]
   @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  @scala.inline
   def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
   @scala.inline
   def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
   @scala.inline

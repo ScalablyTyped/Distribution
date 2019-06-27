@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLIonItemOptionsElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement
      with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonItemOptions {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
@@ -72,7 +72,7 @@ class HTMLIonItemOptionsElementCls () extends HTMLIonItemOptionsElement {
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native
   /* CompleteClass */
-  override def fireSwipeEvent(): scala.Unit = js.native
+  override def fireSwipeEvent(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("HTMLIonItemOptionsElement")

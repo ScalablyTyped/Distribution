@@ -1611,6 +1611,10 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.get
     */
+  def get[TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): /* import warning: ImportType.apply Failed type conversion: TValue[TKey1][TKey2] */ js.Any = js.native
+  /**
+    * @see _.get
+    */
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](`this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]], path: TKey): js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
@@ -1642,6 +1646,47 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     defaultValue: TDefault
   ): (stdLib.Exclude[
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](`this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]], path: js.Tuple2[TKey1, TKey2]): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+  ] = js.native
+  /**
+    * @see _.get
+    */
+  def get[TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): /* import warning: ImportType.apply Failed type conversion: TValue[TKey1][TKey2][TKey3][TKey4] */ js.Any = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](
+    `this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]],
+    path: js.Tuple3[TKey1, TKey2, TKey3],
+    defaultValue: TDefault
+  ): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]],
+    path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]
+  ): js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  ] = js.native
+  /**
+    * @see _.get
+    */
+  def get[TObject /* <: js.Object */, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](
+    `this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]],
+    path: js.Tuple4[TKey1, TKey2, TKey3, TKey4],
+    defaultValue: TDefault
+  ): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
     js.UndefOr[scala.Nothing]
   ]) | TDefault = js.native
   /**

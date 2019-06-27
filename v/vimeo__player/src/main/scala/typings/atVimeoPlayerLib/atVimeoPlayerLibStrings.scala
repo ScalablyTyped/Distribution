@@ -7,6 +7,34 @@ import scala.scalajs.js.annotation._
 
 object atVimeoPlayerLibStrings {
   @js.native
+  sealed trait `1080p`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
+  sealed trait `240p`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
+  sealed trait `2K`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
+  sealed trait `360p`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
+  sealed trait `4K`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
+  sealed trait `540p`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
+  sealed trait `720p`
+    extends atVimeoPlayerLib.atVimeoPlayerMod.VimeoVideoQuality
+  
+  @js.native
   sealed trait ContrastError extends js.Object
   
   @js.native
@@ -82,6 +110,10 @@ object atVimeoPlayerLibStrings {
     extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
+  sealed trait seeking
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
+  
+  @js.native
   sealed trait texttrackchange
     extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
@@ -93,6 +125,20 @@ object atVimeoPlayerLibStrings {
   sealed trait volumechange
     extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
+  @scala.inline
+  def `1080p`: `1080p` = "1080p".asInstanceOf[`1080p`]
+  @scala.inline
+  def `240p`: `240p` = "240p".asInstanceOf[`240p`]
+  @scala.inline
+  def `2K`: `2K` = "2K".asInstanceOf[`2K`]
+  @scala.inline
+  def `360p`: `360p` = "360p".asInstanceOf[`360p`]
+  @scala.inline
+  def `4K`: `4K` = "4K".asInstanceOf[`4K`]
+  @scala.inline
+  def `540p`: `540p` = "540p".asInstanceOf[`540p`]
+  @scala.inline
+  def `720p`: `720p` = "720p".asInstanceOf[`720p`]
   @scala.inline
   def ContrastError: ContrastError = "ContrastError".asInstanceOf[ContrastError]
   @scala.inline
@@ -135,6 +181,8 @@ object atVimeoPlayerLibStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def seeked: seeked = "seeked".asInstanceOf[seeked]
+  @scala.inline
+  def seeking: seeking = "seeking".asInstanceOf[seeking]
   @scala.inline
   def texttrackchange: texttrackchange = "texttrackchange".asInstanceOf[texttrackchange]
   @scala.inline

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * For more details, see the ["Dependency Injection Guide"](guide/dependency-injection).
   *
   * @usageNotes
+  *
   * ### Example
   *
   * {@example core/di/ts/provider_spec.ts region='ConstructorProvider'}
@@ -18,6 +19,8 @@ import scala.scalajs.js.annotation._
   * ### Multi-value example
   *
   * {@example core/di/ts/provider_spec.ts region='MultiProviderAspect'}
+  *
+  * @publicApi
   */
 trait ConstructorProvider
   extends ConstructorSansProvider

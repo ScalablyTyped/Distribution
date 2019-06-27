@@ -37,7 +37,7 @@ trait AppointmentRead extends ItemRead {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
-    * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This member is not supported in Outlook on iOS or Android.
     */
   var dateTimeModified: stdLib.Date = js.native
   /**

@@ -27,6 +27,7 @@ object ChronoUnit extends js.Object {
   var MILLIS: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native
   var MINUTES: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native
   var MONTHS: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native
+  var NANOS: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native
   var SECONDS: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native
   var WEEKS: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native
   var YEARS: jsDashJodaLib.jsDashJodaMod.ChronoUnit = js.native

@@ -58,7 +58,7 @@ trait IonMenuController extends js.Object {
   def registerAnimation(
     name: java.lang.String,
     animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ): scala.Unit = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
     * Enable or disable the ability to swipe open the menu.
     */

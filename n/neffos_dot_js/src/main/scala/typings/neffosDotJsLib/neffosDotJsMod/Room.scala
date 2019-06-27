@@ -14,7 +14,8 @@ class Room protected () extends js.Object {
   /* The emit method sends a message to the server with its `Message.Room` filled to this specific room
     and `Message.Namespace` to the underline `NSConn`'s namespace. */
   def emit(event: java.lang.String, body: WSData): scala.Boolean = js.native
-  /* The leave method sends a room leave signal to the server and if succeed it fires the `OnRoomLeave` and `OnRoomLeft` events. */
+  /* The leave method sends a local and server room leave signal `OnRoomLeave`
+    and if succeed it fires the OnRoomLeft` event. */
   def leave(): js.Promise[stdLib.Error] = js.native
 }
 

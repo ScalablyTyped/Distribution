@@ -23,7 +23,13 @@ trait IonSegmentButton extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
+  /**
+    * The type of the button.
+    */
+  var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button
   /**
     * The value of the segment button.
     */
@@ -35,12 +41,15 @@ object IonSegmentButton {
   def apply(
     checked: scala.Boolean,
     disabled: scala.Boolean,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
+    `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button,
     value: java.lang.String,
-    layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentButtonLayout */ js.Any = null
+    layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentButtonLayout */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null
   ): IonSegmentButton = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, mode = mode, value = value)
+    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSegmentButton]
   }
 }

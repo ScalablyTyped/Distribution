@@ -21,7 +21,7 @@ trait IonIcon extends js.Object {
   /**
     * A combination of both `name` and `src`. If a `src` url is detected it will set the `src` property. Otherwise it assumes it's a built-in named SVG and set the `name` property.
     */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[js.Any] = js.undefined
   /**
     * Specifies which icon to use on `ios` mode.
     */
@@ -35,7 +35,7 @@ trait IonIcon extends js.Object {
     */
   var md: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The mode determines which platform styles to use. Possible values are: `"ios"` or `"md"`.
+    * The mode determines which platform styles to use.
     */
   var mode: js.UndefOr[ioniconsLib.ioniconsLibStrings.ios | ioniconsLib.ioniconsLibStrings.md] = js.undefined
   /**
@@ -59,7 +59,7 @@ object IonIcon {
     ariaLabel: java.lang.String = null,
     color: java.lang.String = null,
     flipRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: java.lang.String = null,
+    icon: js.Any = null,
     ios: java.lang.String = null,
     md: java.lang.String = null,
     mode: ioniconsLib.ioniconsLibStrings.ios | ioniconsLib.ioniconsLibStrings.md = null,

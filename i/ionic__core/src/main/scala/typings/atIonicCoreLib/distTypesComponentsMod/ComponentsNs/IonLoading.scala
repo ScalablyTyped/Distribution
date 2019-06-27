@@ -46,7 +46,9 @@ trait IonLoading extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.native
   var overlayIndex: scala.Double = js.native
   /**
     * If `true`, a backdrop will be displayed behind the loading indicator.

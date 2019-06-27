@@ -5273,7 +5273,6 @@
 | 3 | [webpack-watched-glob-entr](./w/webpack-watched-glob-entries-plugin) | Webpack plugin to glob directories for entry files
 | 3 | [webscopeio__react-textare](./w/webscopeio__react-textarea-autocomplete) | Offers autocomplete over textarea in style of GitH
 | 3 | [windows-release](./w/windows-release) | Get the name of a Windows version from the release
-| 3 | [wordpress__plugins](./w/wordpress__plugins) | Plugins module for WordPress.
 | 3 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru
 | 3 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work
 | 3 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js
@@ -5521,6 +5520,7 @@
 | 2 | [react-sticky-box](./r/react-sticky-box) | Boxes that behave nicely while scrolling
 | 2 | [react-touch](./r/react-touch) | React wrapper components that make touch events ea
 | 2 | [react-tracking](./r/react-tracking) | Declarative tracking for React apps.
+| 2 | [react-window-infinite-loa](./r/react-window-infinite-loader) | InfiniteLoader component inspired by react-virtual
 | 2 | [redux-action](./r/redux-action) | redux action utils
 | 2 | [redux-bootstrap](./r/redux-bootstrap) | Bootstrapping for Redux applications
 | 2 | [redux-first-router-restor](./r/redux-first-router-restore-scroll) | think of your app in states not routes (and, yes, 
@@ -6419,6 +6419,7 @@
 | 0 | [photonui](./p/photonui) | A javascript framework to create user interfaces
 | 0 | [pinata-sdk](./p/pinata-sdk) | Unofficial SDK for 
 | 0 | [places](./p/places) | About places.
+| 0 | [pnpapi](./p/pnpapi) | -
 | 0 | [polygons-intersect](./p/polygons-intersect) | This script finds all points where the polygons in
 | 0 | [polymer-ts](./p/polymer-ts) | Polymer 1.0 for TypeScript
 | 0 | [popcorn](./p/popcorn) | Pop up made easy

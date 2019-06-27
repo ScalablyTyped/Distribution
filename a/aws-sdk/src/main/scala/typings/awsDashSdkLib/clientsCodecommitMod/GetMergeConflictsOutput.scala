@@ -11,7 +11,7 @@ trait GetMergeConflictsOutput extends js.Object {
     */
   var baseCommitId: js.UndefOr[ObjectId] = js.undefined
   /**
-    * A list of metadata for any conflicts found.
+    * A list of metadata for any conflicting files. If the specified merge strategy is FAST_FORWARD_MERGE, this list will always be empty.
     */
   var conflictMetadataList: ConflictMetadataList
   /**

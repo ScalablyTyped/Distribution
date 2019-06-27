@@ -3062,6 +3062,7 @@
 | 0.6671370272279166 | [purl](./p/purl) | A minuscule library to parse URLs
 | 0.6671182003010283 | [graphql-depth-limit](./g/graphql-depth-limit) | Limit the complexity of your GraphQL queries based
 | 0.6670766089512127 | [jquery-easy-loading](./j/jquery-easy-loading) | Easily add and manipulate loading states of any el
+| 0.6670152380249497 | [react-window-infinite-loa](./r/react-window-infinite-loader) | InfiniteLoader component inspired by react-virtual
 | 0.6669998890970079 | [standard-error](./s/standard-error) | Tiny library that simplifies subclassing and inher
 | 0.6668979514298998 | [jquery-focusable](./j/jquery-focusable) | Gets all focusable descendant elements for the fir
 | 0.6668385664688008 | [prosemirror-keymap](./p/prosemirror-keymap) | Keymap plugin for ProseMirror
@@ -5322,7 +5323,6 @@
 | 0.4035042200141608 | [osmtogeojson](./o/osmtogeojson) | convert OSM to geojson
 | 0.40345273126188713 | [rx-lite-backpressure](./r/rx-lite-backpressure) | Lightweight library with backpressure functions fo
 | 0.40341502843349314 | [rx-lite-async](./r/rx-lite-async) | Lightweight library with asynchronous functions fo
-| 0.4030610829837875 | [wordpress__plugins](./w/wordpress__plugins) | Plugins module for WordPress.
 | 0.40286988943491603 | [storybook__addon-backgrou](./s/storybook__addon-backgrounds) | A storybook addon to show different backgrounds fo
 | 0.4027924482825381 | [express-urlrewrite](./e/express-urlrewrite) | URL rewrite middleware for express
 | 0.4027290343089356 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (
@@ -6514,6 +6514,7 @@
 | 0.12106217476987309 | [lodash_dot_split](./l/lodash_dot_split) | The lodash method _.split exported as a module.
 | 0.12048809062076415 | [jquery_dot_qrcode](./j/jquery_dot_qrcode) | http://jeromeetienne.github.com/jquery-qrcode
 | 0.12028576032281636 | [grecaptcha](./g/grecaptcha) | reCAPTCHA v3 / v2 client for Node
+| 0.11972257361926625 | [pnpapi](./p/pnpapi) | -
 | 0.11969895998245414 | [succinct](./s/succinct) | -
 | 0.11841640947688357 | [leaflet-gpx](./l/leaflet-gpx) | npm for https://github.com/mpetazzoni/leaflet-gpx
 | 0.11833950450032768 | [jquery-steps](./j/jquery-steps) | A powerful jQuery wizard plugin that supports acce

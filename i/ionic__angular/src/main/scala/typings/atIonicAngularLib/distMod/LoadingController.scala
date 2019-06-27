@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/angular/dist", "LoadingController")
 @js.native
-class LoadingController protected ()
-  extends atIonicAngularLib.distProvidersLoadingDashControllerMod.LoadingController {
-  def this(doc: js.Any) = this()
-}
+class LoadingController ()
+  extends atIonicAngularLib.distProvidersLoadingDashControllerMod.LoadingController
 

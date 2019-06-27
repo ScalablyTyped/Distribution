@@ -71,7 +71,9 @@ trait IonInput extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * If `true`, the user can enter more than one value. This attribute applies when the type attribute is set to `"email"` or `"file"`, otherwise it is ignored.
     */
@@ -123,7 +125,7 @@ trait IonInput extends js.Object {
   /**
     * Sets focus on the specified `ion-input`. Use this method instead of the global `input.focus()`.
     */
-  def setFocus(): scala.Unit
+  def setFocus(): js.Promise[scala.Unit]
 }
 
 object IonInput {
@@ -137,11 +139,10 @@ object IonInput {
     debounce: scala.Double,
     disabled: scala.Boolean,
     getInputElement: () => js.Promise[stdLib.HTMLInputElement],
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     name: java.lang.String,
     readonly: scala.Boolean,
     required: scala.Boolean,
-    setFocus: () => scala.Unit,
+    setFocus: () => js.Promise[scala.Unit],
     spellcheck: scala.Boolean,
     `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any,
     accept: java.lang.String = null,
@@ -152,6 +153,7 @@ object IonInput {
     maxlength: scala.Int | scala.Double = null,
     min: java.lang.String = null,
     minlength: scala.Int | scala.Double = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     pattern: java.lang.String = null,
     placeholder: java.lang.String = null,
@@ -159,7 +161,7 @@ object IonInput {
     step: java.lang.String = null,
     value: java.lang.String = null
   ): IonInput = {
-    val __obj = js.Dynamic.literal(autocapitalize = autocapitalize, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], autofocus = autofocus, clearInput = clearInput, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(autocapitalize = autocapitalize, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], autofocus = autofocus, clearInput = clearInput, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
     __obj.updateDynamic("type")(`type`)
     if (accept != null) __obj.updateDynamic("accept")(accept)
     if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit)
@@ -169,6 +171,7 @@ object IonInput {
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min)
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

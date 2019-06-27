@@ -32,7 +32,8 @@ object ReactServeOptions {
     https: js.UndefOr[scala.Boolean] = js.undefined,
     platform: java.lang.String = null,
     project: java.lang.String = null,
-    reactEditor: java.lang.String = null
+    reactEditor: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactServeOptions = {
     val __obj = js.Dynamic.literal(address = address, devapp = devapp, engine = engine, lab = lab, labHost = labHost, labPort = labPort, livereload = livereload, open = open, port = port, proxy = proxy)
     __obj.updateDynamic("--")(`--`)
@@ -44,6 +45,7 @@ object ReactServeOptions {
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)
     if (reactEditor != null) __obj.updateDynamic("reactEditor")(reactEditor)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[ReactServeOptions]
   }
 }

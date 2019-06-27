@@ -22,8 +22,11 @@ object ^ extends js.Object {
   val OnRoomJoined: neffosDotJsLib.neffosDotJsLibStrings._OnRoomJoined = js.native
   val OnRoomLeave: neffosDotJsLib.neffosDotJsLibStrings._OnRoomLeave = js.native
   val OnRoomLeft: neffosDotJsLib.neffosDotJsLibStrings._OnRoomLeft = js.native
-  def dial(endpoint: java.lang.String, connHandler: Namespaces): js.Promise[Conn] = js.native
-  def dial(endpoint: java.lang.String, connHandler: Namespaces, protocols: js.Array[java.lang.String]): js.Promise[Conn] = js.native
+  val URLParamAsHeaderPrefix: neffosDotJsLib.neffosDotJsLibStrings.`X-Websocket-Header-` = js.native
+  def dial(endpoint: java.lang.String, connHandler: js.Any): js.Promise[Conn] = js.native
+  def dial(endpoint: java.lang.String, connHandler: js.Any, options: js.Any): js.Promise[Conn] = js.native
+  def dial(endpoint: java.lang.String, connHandler: js.Any, options: Options): js.Promise[Conn] = js.native
   def isSystemEvent(event: java.lang.String): scala.Boolean = js.native
+  def marshal(obj: js.Any): java.lang.String = js.native
 }
 

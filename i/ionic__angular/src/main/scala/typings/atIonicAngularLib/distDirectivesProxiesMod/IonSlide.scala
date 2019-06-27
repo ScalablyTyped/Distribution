@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonSlide'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonSlide")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonSlide")
 @js.native
-class IonSlide protected () extends js.Object {
+class IonSlide protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSlide {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
 }

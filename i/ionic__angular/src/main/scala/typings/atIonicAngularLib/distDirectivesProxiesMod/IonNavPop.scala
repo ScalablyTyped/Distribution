@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonNavPop'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonNavPop")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonNavPop")
 @js.native
-class IonNavPop protected () extends js.Object {
+class IonNavPop protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonNavPop {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
 }

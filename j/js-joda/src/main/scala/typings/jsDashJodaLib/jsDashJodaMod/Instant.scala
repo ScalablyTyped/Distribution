@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Instant protected () extends Temporal {
   def adjustInto(temporal: Temporal): Temporal = js.native
+  def atZone(zone: ZoneId): ZonedDateTime = js.native
   def compareTo(otherInstant: Instant): scala.Double = js.native
   def epochSecond(): scala.Double = js.native
   def equals(otherInstant: js.Any): scala.Boolean = js.native

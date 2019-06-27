@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonTabBar'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonTabBar")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonTabBar")
 @js.native
-class IonTabBar protected () extends js.Object {
+class IonTabBar protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTabBar {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
+  /**
+    * If `true`, the tab bar will be translucent.
+    */
+  /* CompleteClass */
+  override var translucent: scala.Boolean = js.native
 }
 

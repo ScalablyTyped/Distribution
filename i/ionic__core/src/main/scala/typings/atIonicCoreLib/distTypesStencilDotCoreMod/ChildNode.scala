@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ChildNode extends js.Object {
   var vattrs: js.UndefOr[js.Any] = js.undefined
-  var vchildren: js.UndefOr[js.Array[ChildNode]] = js.undefined
+  var vchildren: js.UndefOr[js.Array[VNode]] = js.undefined
   var vkey: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var vname: js.UndefOr[java.lang.String] = js.undefined
   var vtag: js.UndefOr[java.lang.String | scala.Double | js.Function] = js.undefined
@@ -18,7 +18,7 @@ object ChildNode {
   @scala.inline
   def apply(
     vattrs: js.Any = null,
-    vchildren: js.Array[ChildNode] = null,
+    vchildren: js.Array[VNode] = null,
     vkey: java.lang.String | scala.Double = null,
     vname: java.lang.String = null,
     vtag: java.lang.String | scala.Double | js.Function = null,

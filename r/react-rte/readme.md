@@ -38,8 +38,9 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for react-rte 0.16
 // Project: https://github.com/sstur/react-rte
 // Definitions by: jclyons52 <https://github.com/jclyons52>
+//                 Munif Tanjim <https://github.com/MunifTanjim>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 2.9
 
 ```
 

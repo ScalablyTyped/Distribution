@@ -20,6 +20,7 @@ class Player protected () extends js.Object {
   def enableTextTrack(language: java.lang.String): VimeoPromise[VimeoTextTrack, InvalidTrackLanguageError | InvalidTrackError | Error] = js.native
   def enableTextTrack(language: java.lang.String, kind: java.lang.String): VimeoPromise[VimeoTextTrack, InvalidTrackLanguageError | InvalidTrackError | Error] = js.native
   def getAutopause(): VimeoPromise[scala.Boolean, UnsupportedError | Error] = js.native
+  def getBuffered(): VimeoPromise[js.Array[VimeoTimeRange], Error] = js.native
   def getColor(): VimeoPromise[java.lang.String, Error] = js.native
   def getCuePoints(): VimeoPromise[js.Array[VimeoCuePoint], UnsupportedError | Error] = js.native
   def getCurrentTime(): VimeoPromise[scala.Double, Error] = js.native
@@ -28,6 +29,9 @@ class Player protected () extends js.Object {
   def getLoop(): VimeoPromise[scala.Boolean, Error] = js.native
   def getPaused(): VimeoPromise[scala.Boolean, Error] = js.native
   def getPlaybackRate(): VimeoPromise[scala.Double, Error] = js.native
+  def getPlayed(): VimeoPromise[js.Array[VimeoTimeRange], Error] = js.native
+  def getSeekable(): VimeoPromise[js.Array[VimeoTimeRange], Error] = js.native
+  def getSeeking(): VimeoPromise[scala.Boolean, Error] = js.native
   def getTextTracks(): VimeoPromise[js.Array[VimeoTextTrack], Error] = js.native
   def getVideoEmbedCode(): VimeoPromise[java.lang.String, Error] = js.native
   def getVideoHeight(): VimeoPromise[scala.Double, Error] = js.native

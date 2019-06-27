@@ -17,11 +17,14 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Parse.User")
 @js.native
 class User () extends Object {
+  def _linkWith(provider: js.Any, options: parseLib.Anon_AuthData): js.Promise[User] = js.native
+  def _linkWith(provider: js.Any, options: parseLib.Anon_AuthData, saveOpts: FullOptions): js.Promise[User] = js.native
   def authenticated(): scala.Boolean = js.native
   def getEmail(): js.UndefOr[java.lang.String] = js.native
   def getSessionToken(): java.lang.String = js.native
   def getUsername(): js.UndefOr[java.lang.String] = js.native
   def isCurrent(): scala.Boolean = js.native
+  def linkWith(user: User, authData: AuthData, options: FullOptions): js.Promise[User] = js.native
   def logIn(): js.Promise[this.type] = js.native
   def logIn(options: SuccessFailureOptions): js.Promise[this.type] = js.native
   def setEmail(email: java.lang.String): scala.Boolean = js.native

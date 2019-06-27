@@ -71,7 +71,7 @@ trait MessageRead extends Message {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     *
-    * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This member is not supported in Outlook on iOS or Android.
     */
   var dateTimeModified: stdLib.Date = js.native
   /**
@@ -270,15 +270,15 @@ trait MessageRead extends Message {
     * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
     * selected appointment.
     *
-    * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
     *
     * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
     *
-    * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and 
+    * When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients attempt to download all attachments and 
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -297,15 +297,15 @@ trait MessageRead extends Message {
     * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
     * selected appointment.
     *
-    * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
     *
     * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
     *
-    * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and 
+    * When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients attempt to download all attachments and 
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -333,15 +333,15 @@ trait MessageRead extends Message {
   /**
     * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
     *
-    * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
     *
     * If any of the string parameters exceed their limits, displayReplyForm throws an exception.
     *
-    * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and 
+    * When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients attempt to download all attachments and 
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -359,15 +359,15 @@ trait MessageRead extends Message {
   /**
     * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
     *
-    * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
     *
     * If any of the string parameters exceed their limits, displayReplyForm throws an exception.
     *
-    * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and 
+    * When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients attempt to download all attachments and 
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -395,7 +395,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in the selected item's body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -408,7 +408,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in the selected item's body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -423,7 +423,7 @@ trait MessageRead extends Message {
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -489,7 +489,7 @@ trait MessageRead extends Message {
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     * 
@@ -559,7 +559,7 @@ trait MessageRead extends Message {
     * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
     * in the manifest XML file with the specified FilterName element value.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -581,7 +581,7 @@ trait MessageRead extends Message {
     * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
     * in the manifest XML file with the specified FilterName element value.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -611,7 +611,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -639,7 +639,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -665,7 +665,7 @@ trait MessageRead extends Message {
     * and should not attempt to return the entire body of the item. 
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -690,7 +690,7 @@ trait MessageRead extends Message {
     * and should not attempt to return the entire body of the item. 
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -709,7 +709,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.6]
     *
@@ -724,7 +724,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.6]
     *
@@ -751,7 +751,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.6]
     *
@@ -778,7 +778,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
     *
     * [Api set: Mailbox 1.6]
     *

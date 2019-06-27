@@ -51,7 +51,9 @@ trait IonTextarea extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * The name of the control, which is submitted with the form data.
     */
@@ -93,7 +95,7 @@ trait IonTextarea extends js.Object {
   /**
     * Sets focus on the specified `ion-textarea`. Use this method instead of the global `input.focus()`.
     */
-  def setFocus(): scala.Unit
+  def setFocus(): js.Promise[scala.Unit]
 }
 
 object IonTextarea {
@@ -106,26 +108,27 @@ object IonTextarea {
     debounce: scala.Double,
     disabled: scala.Boolean,
     getInputElement: () => js.Promise[stdLib.HTMLTextAreaElement],
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     name: java.lang.String,
     readonly: scala.Boolean,
     required: scala.Boolean,
-    setFocus: () => scala.Unit,
+    setFocus: () => js.Promise[scala.Unit],
     spellcheck: scala.Boolean,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     cols: scala.Int | scala.Double = null,
     maxlength: scala.Int | scala.Double = null,
     minlength: scala.Int | scala.Double = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     placeholder: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
     value: java.lang.String = null,
     wrap: atIonicCoreLib.atIonicCoreLibStrings.hard | atIonicCoreLib.atIonicCoreLibStrings.soft | atIonicCoreLib.atIonicCoreLibStrings.off = null
   ): IonTextarea = {
-    val __obj = js.Dynamic.literal(autoGrow = autoGrow, autocapitalize = autocapitalize, autofocus = autofocus, clearOnEdit = clearOnEdit, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(autoGrow = autoGrow, autocapitalize = autocapitalize, autofocus = autofocus, clearOnEdit = clearOnEdit, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
     if (color != null) __obj.updateDynamic("color")(color)
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)

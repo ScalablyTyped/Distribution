@@ -24,7 +24,7 @@ class NSConn protected () extends js.Object {
   /* The joinRoom method can be used to join to a specific room, rooms are dynamic.
     Returns a `Room` or an error. */
   def joinRoom(roomName: java.lang.String): js.Promise[Room] = js.native
-  /* The leaveAll method sends a leave room signal to all rooms and fires the `OnRoomLeave` and `OnRoomLeft` (if no error caused) events. */
+  /* The leaveAll method sends a leave room signal to all rooms and fires the `OnRoomLeave` and `OnRoomLeft` (if no error occurred) events. */
   def leaveAll(): js.Promise[stdLib.Error] = js.native
   /* The room method returns a joined `Room`. */
   def room(roomName: java.lang.String): Room = js.native

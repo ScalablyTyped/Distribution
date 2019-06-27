@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonSelect'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonSelect")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonSelect")
 @js.native
-class IonSelect protected () extends js.Object {
+class IonSelect protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSelect {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
   var ionBlur: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native

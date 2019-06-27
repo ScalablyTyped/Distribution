@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-joda
 
-Typings are for version 1.10.1
+Typings are for version 1.11.0
 
 ## Library description:
 a date and time library for javascript

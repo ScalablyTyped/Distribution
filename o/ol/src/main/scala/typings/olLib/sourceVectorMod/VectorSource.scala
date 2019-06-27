@@ -14,13 +14,13 @@ trait VectorSource
   /* protected */ def addFeaturesInternal(features: js.Array[olLib.featureMod.default]): scala.Unit = js.native
   def clear(): scala.Unit = js.native
   def clear(opt_fast: scala.Boolean): scala.Unit = js.native
-  def forEachFeature[T](callback: js.Function1[/* param0 */ olLib.featureMod.default, T]): T = js.native
+  def forEachFeature[T](callback: js.Function1[/* p0 */ olLib.featureMod.default, T]): T = js.native
   def forEachFeatureAtCoordinateDirect[T](
     coordinate: olLib.coordinateMod.Coordinate,
-    callback: js.Function1[/* param0 */ olLib.featureMod.default, T]
+    callback: js.Function1[/* p0 */ olLib.featureMod.default, T]
   ): T = js.native
-  def forEachFeatureInExtent[T](extent: olLib.extentMod.Extent, callback: js.Function1[/* param0 */ olLib.featureMod.default, T]): T = js.native
-  def forEachFeatureIntersectingExtent[T](extent: olLib.extentMod.Extent, callback: js.Function1[/* param0 */ olLib.featureMod.default, T]): T = js.native
+  def forEachFeatureInExtent[T](extent: olLib.extentMod.Extent, callback: js.Function1[/* p0 */ olLib.featureMod.default, T]): T = js.native
+  def forEachFeatureIntersectingExtent[T](extent: olLib.extentMod.Extent, callback: js.Function1[/* p0 */ olLib.featureMod.default, T]): T = js.native
   def getClosestFeatureToCoordinate(coordinate: olLib.coordinateMod.Coordinate): olLib.featureMod.default = js.native
   def getClosestFeatureToCoordinate(coordinate: olLib.coordinateMod.Coordinate, opt_filter: js.Function0[scala.Unit]): olLib.featureMod.default = js.native
   def getExtent(): olLib.extentMod.Extent = js.native

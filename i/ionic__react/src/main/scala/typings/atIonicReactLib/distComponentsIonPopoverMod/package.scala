@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object distComponentsIonPopoverMod {
   type PopoverOptions = (atIonicReactLib.distTypesMod.Omit[
-    atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonPopoverAttributes, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonPopoverAttributes */ _, 
     atIonicReactLib.atIonicReactLibStrings.component | atIonicReactLib.atIonicReactLibStrings.componentProps
   ]) with atIonicReactLib.Anon_ChildrenReactNode_262814360
 }

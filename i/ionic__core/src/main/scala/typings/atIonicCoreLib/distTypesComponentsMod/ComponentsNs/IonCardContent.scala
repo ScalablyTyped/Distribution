@@ -9,14 +9,16 @@ trait IonCardContent extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
 }
 
 object IonCardContent {
   @scala.inline
-  def apply(mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any): IonCardContent = {
-    val __obj = js.Dynamic.literal(mode = mode)
-  
+  def apply(mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null): IonCardContent = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonCardContent]
   }
 }

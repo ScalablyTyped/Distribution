@@ -26,6 +26,10 @@ trait ModalProps
   var enforceFocus: js.UndefOr[scala.Boolean] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var onBackdropClick: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
+  var onEscapeKeyDown: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
+  /**
+    * @deprecated since Sept 25, 2017, use onEscapeKeyDown instead
+    **/
   var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, _]] = js.undefined
   // Required
   var onHide: js.Function
@@ -56,6 +60,7 @@ object ModalProps {
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     onBackdropClick: /* node */ stdLib.HTMLElement => _ = null,
+    onEscapeKeyDown: /* node */ stdLib.HTMLElement => _ = null,
     onEscapeKeyUp: /* node */ stdLib.HTMLElement => _ = null,
     onShow: /* node */ stdLib.HTMLElement => _ = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
@@ -80,6 +85,7 @@ object ModalProps {
     if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(js.Any.fromFunction1(onBackdropClick))
+    if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(js.Any.fromFunction1(onEscapeKeyDown))
     if (onEscapeKeyUp != null) __obj.updateDynamic("onEscapeKeyUp")(js.Any.fromFunction1(onEscapeKeyUp))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)

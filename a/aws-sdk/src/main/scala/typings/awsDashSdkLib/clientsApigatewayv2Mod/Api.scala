@@ -45,6 +45,10 @@ trait Api extends js.Object {
     */
   var RouteSelectionExpression: SelectionExpression
   /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters..
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
+  /**
     * A version identifier for the API.
     */
   var Version: js.UndefOr[StringWithLengthBetween1And64] = js.undefined
@@ -67,6 +71,7 @@ object Api {
     CreatedDate: __timestampIso8601 = null,
     Description: StringWithLengthBetween0And1024 = null,
     DisableSchemaValidation: js.UndefOr[__boolean] = js.undefined,
+    Tags: Tags = null,
     Version: StringWithLengthBetween1And64 = null,
     Warnings: __listOf__string = null
   ): Api = {
@@ -77,6 +82,7 @@ object Api {
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DisableSchemaValidation)) __obj.updateDynamic("DisableSchemaValidation")(DisableSchemaValidation)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (Version != null) __obj.updateDynamic("Version")(Version)
     if (Warnings != null) __obj.updateDynamic("Warnings")(Warnings)
     __obj.asInstanceOf[Api]

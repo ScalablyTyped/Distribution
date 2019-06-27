@@ -29,14 +29,14 @@ trait IonFab extends js.Object {
   /**
     * Close an active FAB list container.
     */
-  def close(): scala.Unit
+  def close(): js.Promise[scala.Unit]
 }
 
 object IonFab {
   @scala.inline
   def apply(
     activated: scala.Boolean,
-    close: () => scala.Unit,
+    close: () => js.Promise[scala.Unit],
     edge: scala.Boolean,
     horizontal: atIonicCoreLib.atIonicCoreLibStrings.start | atIonicCoreLib.atIonicCoreLibStrings.end | atIonicCoreLib.atIonicCoreLibStrings.center = null,
     vertical: atIonicCoreLib.atIonicCoreLibStrings.top | atIonicCoreLib.atIonicCoreLibStrings.bottom | atIonicCoreLib.atIonicCoreLibStrings.center = null

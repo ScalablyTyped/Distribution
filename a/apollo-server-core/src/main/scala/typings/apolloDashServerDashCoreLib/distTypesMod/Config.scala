@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
     stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false`
   ] = js.undefined
   var typeDefs: js.UndefOr[
-    graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode]
+    graphqlLib.languageAstMod.DocumentNode | (js.Array[graphqlLib.languageAstMod.DocumentNode | java.lang.String]) | java.lang.String
   ] = js.undefined
   var uploads: js.UndefOr[scala.Boolean | FileUploadOptions] = js.undefined
 }
@@ -74,7 +74,7 @@ object Config {
     schema: graphqlLib.graphqlMod.GraphQLSchema = null,
     schemaDirectives: stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.TypeofClassSchemaDirectiveVisitor] = null,
     subscriptions: stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false` = null,
-    typeDefs: graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode] = null,
+    typeDefs: graphqlLib.languageAstMod.DocumentNode | (js.Array[graphqlLib.languageAstMod.DocumentNode | java.lang.String]) | java.lang.String = null,
     uploads: scala.Boolean | FileUploadOptions = null
   ): Config = {
     val __obj = js.Dynamic.literal()

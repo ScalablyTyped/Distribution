@@ -30,14 +30,14 @@ trait TableBinding extends Binding {
     * Gets the number of rows in the TableBinding, as an integer value.
     *
     * @remarks
-    * When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert tab), both Office host 
+    * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host 
     * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this 
     * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the 
-    * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel Online.
+    * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
     * 
     * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
     *
-    * - In Excel Online, rowCount will return 1 (the blank row following the headers is counted).
+    * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
     *
     * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
     * strings.
@@ -75,7 +75,7 @@ trait TableBinding extends Binding {
     *
     *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
     *
-    * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+    * Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
     * a single call to this method.
     *
     * @param tableData An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the table. Required.
@@ -117,7 +117,7 @@ trait TableBinding extends Binding {
     *
     *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
     *
-    * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+    * Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
     * a single call to this method.
     *
     * @param rows An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the table. Required.

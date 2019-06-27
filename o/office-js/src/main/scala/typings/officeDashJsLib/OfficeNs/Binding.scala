@@ -225,7 +225,7 @@ trait Binding extends js.Object {
     *   </tr>
     * </table>
     * 
-    * For Excel Online:
+    * For Excel on the web:
     * 
     *  - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method.
     * 
@@ -265,13 +265,13 @@ trait Binding extends js.Object {
     *
     * @param data The data to be set in the current selection. Possible data types by host:
     *
-    *        string: Excel, Excel Online, Word, and Word Online only
+    *        string: Excel on the web and Windows, and Word on the web and Windows only
     *
     *        array of arrays: Excel and Word only
     *
     *        `TableData`: Access, Excel, and Word only
     *
-    *        HTML: Word and Word Online only
+    *        HTML: Word on the web and Windows only
     *
     *        Office Open XML: Word only
     *

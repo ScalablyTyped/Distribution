@@ -11,7 +11,7 @@ trait ConflictResolution extends js.Object {
     */
   var deleteFiles: js.UndefOr[DeleteFileEntries] = js.undefined
   /**
-    * Information about how a conflict in a merge will be resolved.
+    * Files that will have content replaced as part of the merge conflict resolution.
     */
   var replaceContents: js.UndefOr[ReplaceContentEntries] = js.undefined
   /**

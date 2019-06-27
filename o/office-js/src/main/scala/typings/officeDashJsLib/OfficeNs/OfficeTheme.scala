@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @remarks
   * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
   * 
-  * `OfficeTheme` is only supported on Office for Windows desktop.
+  * `OfficeTheme` is only supported in Office on Windows.
   */
 trait OfficeTheme extends js.Object {
   /**

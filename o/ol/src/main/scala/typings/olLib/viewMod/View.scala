@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait View
   extends olLib.objectMod.default {
-  def animate(var_args: (AnimationOptions | (js.Function1[/* param0 */ scala.Boolean, scala.Unit]))*): scala.Unit = js.native
+  def animate(var_args: (AnimationOptions | (js.Function1[/* p0 */ scala.Boolean, scala.Unit]))*): scala.Unit = js.native
   def applyOptions_(options: ViewOptions): scala.Unit = js.native
   def calculateCenterRotate(rotation: scala.Double, anchor: olLib.coordinateMod.Coordinate): olLib.coordinateMod.Coordinate = js.native
   def calculateCenterZoom(resolution: scala.Double, anchor: olLib.coordinateMod.Coordinate): olLib.coordinateMod.Coordinate = js.native
@@ -44,15 +44,15 @@ trait View
   def getResolution(): scala.Double = js.native
   def getResolutionForExtent(extent: olLib.extentMod.Extent): scala.Double = js.native
   def getResolutionForExtent(extent: olLib.extentMod.Extent, opt_size: olLib.sizeMod.Size): scala.Double = js.native
-  def getResolutionForValueFunction(): js.Function1[/* param0 */ scala.Double, scala.Double] = js.native
-  def getResolutionForValueFunction(opt_power: scala.Double): js.Function1[/* param0 */ scala.Double, scala.Double] = js.native
+  def getResolutionForValueFunction(): js.Function1[/* p0 */ scala.Double, scala.Double] = js.native
+  def getResolutionForValueFunction(opt_power: scala.Double): js.Function1[/* p0 */ scala.Double, scala.Double] = js.native
   def getResolutionForZoom(zoom: scala.Double): scala.Double = js.native
   def getResolutions(): js.Array[scala.Double] = js.native
   def getRotation(): scala.Double = js.native
   def getState(pixelRatio: scala.Double): State = js.native
   def getUpdatedOptions_(newOptions: ViewOptions): ViewOptions = js.native
-  def getValueForResolutionFunction(): js.Function1[/* param0 */ scala.Double, scala.Double] = js.native
-  def getValueForResolutionFunction(opt_power: scala.Double): js.Function1[/* param0 */ scala.Double, scala.Double] = js.native
+  def getValueForResolutionFunction(): js.Function1[/* p0 */ scala.Double, scala.Double] = js.native
+  def getValueForResolutionFunction(opt_power: scala.Double): js.Function1[/* p0 */ scala.Double, scala.Double] = js.native
   def getZoom(): scala.Double = js.native
   def getZoomForResolution(resolution: scala.Double): scala.Double = js.native
   def isDef(): scala.Boolean = js.native

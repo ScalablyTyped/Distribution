@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object distComponentsIonModalMod {
   type ModalOptions = (atIonicReactLib.distTypesMod.Omit[
-    atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonModalAttributes, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonModalAttributes */ _, 
     atIonicReactLib.atIonicReactLibStrings.component | atIonicReactLib.atIonicReactLibStrings.componentProps
   ]) with atIonicReactLib.Anon_ChildrenReactNode_262814360
 }

@@ -16,7 +16,7 @@ trait CanvasReplayGroup
     rotation: scala.Double,
     hitTolerance: scala.Double,
     skippedFeaturesHash: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
-    callback: js.Function1[/* param0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
+    callback: js.Function1[/* p0 */ olLib.featureMod.default | olLib.renderFeatureMod.default, T],
     declutterReplays: org.scalablytyped.runtime.StringDictionary[olLib.renderCanvasMod.DeclutterGroup]
   ): T = js.native
   def getClipCoords(transform: olLib.transformMod.Transform): js.Array[scala.Double] = js.native

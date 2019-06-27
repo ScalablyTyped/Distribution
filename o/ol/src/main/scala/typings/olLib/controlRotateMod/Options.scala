@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
   var label: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
-  var render: js.UndefOr[js.Function1[/* param0 */ olLib.mapEventMod.default, scala.Unit]] = js.undefined
+  var render: js.UndefOr[js.Function1[/* p0 */ olLib.mapEventMod.default, scala.Unit]] = js.undefined
   var resetNorth: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var target: js.UndefOr[stdLib.HTMLElement | java.lang.String] = js.undefined
   var tipLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -23,7 +23,7 @@ object Options {
     className: java.lang.String = null,
     duration: scala.Int | scala.Double = null,
     label: java.lang.String | stdLib.HTMLElement = null,
-    render: /* param0 */ olLib.mapEventMod.default => scala.Unit = null,
+    render: /* p0 */ olLib.mapEventMod.default => scala.Unit = null,
     resetNorth: () => scala.Unit = null,
     target: stdLib.HTMLElement | java.lang.String = null,
     tipLabel: java.lang.String = null

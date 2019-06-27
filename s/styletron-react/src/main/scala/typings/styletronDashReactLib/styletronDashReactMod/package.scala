@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styletronDashReactMod {
+  type $StyleProp[P /* <: js.Object */] = styletronDashStandardLib.styletronDashStandardMod.StyleObject | StyleObjectFn[P]
   type CSSFn = js.Function1[
     /* style */ styletronDashStandardLib.styletronDashStandardMod.StyleObject, 
     java.lang.String
@@ -16,8 +17,9 @@ package object styletronDashReactMod {
     styletronDashStandardLib.styletronDashStandardMod.StyleObject
   ]
   type StackIndex = scala.Double
+  type StyleObjectFn[P /* <: js.Object */] = js.Function1[/* props */ P, styletronDashStandardLib.styletronDashStandardMod.StyleObject]
   type StyletronBase = reactLib.reactMod.ElementType[js.Any]
-  type StyletronComponent[Props] = reactLib.reactMod.FC[Props] with styletronDashReactLib.Anon_STYLETRON
+  type StyletronComponent[P /* <: js.Object */] = (reactLib.reactMod.FC[P with StyletronComponentInjectedProps[P]]) with styletronDashReactLib.Anon_STYLETRON
   type StyletronDriver = js.Function2[
     /* style */ styletronDashStandardLib.styletronDashStandardMod.StyleObject, 
     /* styletron */ styletronDashStandardLib.styletronDashStandardMod.StandardEngine, 

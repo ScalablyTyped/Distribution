@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ionic__react"
-version := "0.0.5-9917fb"
+version := "0.0.5-888949"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-9e9935",
-  "org.scalablytyped" %%% "ionic__core" % "4.5.0-2624f4",
-  "org.scalablytyped" %%% "ionicons" % "4.5.8-91de2b",
+  "org.scalablytyped" %%% "ionic__core" % "4.6.0-dac93c",
+  "org.scalablytyped" %%% "ionicons" % "4.5.10-2-23a2a4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
   "org.scalablytyped" %%% "react-router" % "5.0-dt-20190613Z-bd96e4",

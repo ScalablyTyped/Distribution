@@ -35,7 +35,9 @@ trait IonRange extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * The name of the control, which is submitted with the form data.
     */
@@ -70,17 +72,18 @@ object IonRange {
     dualKnobs: scala.Boolean,
     max: scala.Double,
     min: scala.Double,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     name: java.lang.String,
     pin: scala.Boolean,
     snaps: scala.Boolean,
     step: scala.Double,
     ticks: scala.Boolean,
     value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null
   ): IonRange = {
-    val __obj = js.Dynamic.literal(debounce = debounce, disabled = disabled, dualKnobs = dualKnobs, max = max, min = min, mode = mode, name = name, pin = pin, snaps = snaps, step = step, ticks = ticks, value = value)
+    val __obj = js.Dynamic.literal(debounce = debounce, disabled = disabled, dualKnobs = dualKnobs, max = max, min = min, name = name, pin = pin, snaps = snaps, step = step, ticks = ticks, value = value)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRange]
   }
 }

@@ -17,6 +17,10 @@ trait IonAnchor extends js.Object {
     */
   var href: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
+    */
+  var rel: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
@@ -27,11 +31,13 @@ object IonAnchor {
   def apply(
     routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
-    href: java.lang.String = null
+    href: java.lang.String = null,
+    rel: java.lang.String = null
   ): IonAnchor = {
     val __obj = js.Dynamic.literal(routerDirection = routerDirection)
     if (color != null) __obj.updateDynamic("color")(color)
     if (href != null) __obj.updateDynamic("href")(href)
+    if (rel != null) __obj.updateDynamic("rel")(rel)
     __obj.asInstanceOf[IonAnchor]
   }
 }

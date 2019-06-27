@@ -5,11 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonTabButton'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonTabButton")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonTabButton")
 @js.native
-class IonTabButton protected () extends js.Object {
+class IonTabButton protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTabButton {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  /**
+    * If `true`, the user cannot interact with the tab button.
+    */
+  /* CompleteClass */
+  override var disabled: scala.Boolean = js.native
   var el: stdLib.HTMLElement = js.native
+  /**
+    * The selected tab component
+    */
+  /* CompleteClass */
+  override var selected: scala.Boolean = js.native
 }
 

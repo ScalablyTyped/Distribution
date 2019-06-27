@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object interactionSelectMod {
   type FilterFunction = js.Function2[
-    /* param0 */ olLib.featureMod.FeatureLike, 
-    /* param1 */ olLib.layerLayerMod.default, 
+    /* p0 */ olLib.featureMod.FeatureLike, 
+    /* p1 */ olLib.layerLayerMod.default, 
     scala.Boolean
   ]
 }

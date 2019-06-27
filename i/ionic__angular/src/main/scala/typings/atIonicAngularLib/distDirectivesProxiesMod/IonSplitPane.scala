@@ -5,12 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonSplitPane'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonSplitPane")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonSplitPane")
 @js.native
-class IonSplitPane protected () extends js.Object {
+class IonSplitPane protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSplitPane {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  /**
+    * If `true`, the split pane will be hidden.
+    */
+  /* CompleteClass */
+  override var disabled: scala.Boolean = js.native
   var el: stdLib.HTMLElement = js.native
   var ionSplitPaneVisible: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+  /**
+    * When the split-pane should be shown. Can be a CSS media query expression, or a shortcut expression. Can also be a boolean expression.
+    */
+  /* CompleteClass */
+  override var when: java.lang.String | scala.Boolean = js.native
 }
 

@@ -11,7 +11,7 @@ trait PostCommentForComparedCommitInput extends js.Object {
     */
   var afterCommitId: CommitId
   /**
-    * To establish the directionality of the comparison, the full commit ID of the 'before' commit.
+    * To establish the directionality of the comparison, the full commit ID of the 'before' commit.  This is required for commenting on any commit unless that commit is the initial commit. 
     */
   var beforeCommitId: js.UndefOr[CommitId] = js.undefined
   /**

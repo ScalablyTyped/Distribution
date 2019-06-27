@@ -52,12 +52,8 @@ trait UrlTile
   def setTileUrlFunction(tileUrlFunction: olLib.tileMod.UrlFunction, key: java.lang.String): scala.Unit = js.native
   def setUrl(url: java.lang.String): scala.Unit = js.native
   def setUrls(urls: js.Array[java.lang.String]): scala.Unit = js.native
-  /* protected */ def tileLoadFunction(param0: olLib.tileMod.Tile, param1: java.lang.String): scala.Unit = js.native
-  /* protected */ def tileUrlFunction(
-    param0: olLib.tilecoordMod.TileCoord,
-    param1: scala.Double,
-    param2: olLib.projProjectionMod.default
-  ): java.lang.String = js.native
+  /* protected */ def tileLoadFunction(p0: olLib.tileMod.Tile, p1: java.lang.String): scala.Unit = js.native
+  /* protected */ def tileUrlFunction(p0: olLib.tilecoordMod.TileCoord, p1: scala.Double, p2: olLib.projProjectionMod.default): java.lang.String = js.native
   @JSName("un")
   def un_tileloadend(
     `type`: olLib.olLibStrings.tileloadend,

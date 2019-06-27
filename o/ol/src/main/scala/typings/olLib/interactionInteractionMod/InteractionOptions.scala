@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InteractionOptions extends js.Object {
-  def handleEvent(param0: olLib.mapBrowserEventMod.default): scala.Boolean
+  def handleEvent(p0: olLib.mapBrowserEventMod.default): scala.Boolean
 }
 
 object InteractionOptions {

@@ -27,7 +27,9 @@ trait IonCheckbox extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * The name of the control, which is submitted with the form data.
     */
@@ -44,13 +46,14 @@ object IonCheckbox {
     checked: scala.Boolean,
     disabled: scala.Boolean,
     indeterminate: scala.Boolean,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     name: java.lang.String,
     value: java.lang.String,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null
   ): IonCheckbox = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, indeterminate = indeterminate, mode = mode, name = name, value = value)
+    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, indeterminate = indeterminate, name = name, value = value)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonCheckbox]
   }
 }

@@ -45,6 +45,7 @@ class Queue protected ()
   def shutdown(timeout: scala.Double, `type`: java.lang.String, fn: js.Function): Queue = js.native
   def state(string: java.lang.String, fn: js.Function): Queue = js.native
   def types(fn: js.Function): Queue = js.native
+  def watchStuckJobs(): scala.Unit = js.native
   def watchStuckJobs(ms: scala.Double): scala.Unit = js.native
   def workTime(fn: js.Function): Queue = js.native
 }

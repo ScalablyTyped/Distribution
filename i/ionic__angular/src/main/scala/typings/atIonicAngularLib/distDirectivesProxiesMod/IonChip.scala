@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonChip'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonChip")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonChip")
 @js.native
-class IonChip protected () extends js.Object {
+class IonChip protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonChip {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
+  /**
+    * Display an outline style button.
+    */
+  /* CompleteClass */
+  override var outline: scala.Boolean = js.native
 }
 

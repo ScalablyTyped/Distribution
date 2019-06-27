@@ -23,6 +23,6 @@ trait Options extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.native
   var urls: js.UndefOr[js.Array[java.lang.String]] = js.native
   var wrapX: js.UndefOr[scala.Boolean] = js.native
-  def tileLoadFunction(param0: olLib.tileMod.Tile, param1: java.lang.String): scala.Unit = js.native
+  def tileLoadFunction(p0: olLib.tileMod.Tile, p1: java.lang.String): scala.Unit = js.native
 }
 

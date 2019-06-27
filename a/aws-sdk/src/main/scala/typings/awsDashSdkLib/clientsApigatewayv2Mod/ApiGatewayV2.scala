@@ -942,6 +942,59 @@ trait ApiGatewayV2
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetStagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Gets the Tags for an API.
+    */
+  def getTags(): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getTags(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTagsResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Gets the Tags for an API.
+    */
+  def getTags(params: GetTagsRequest): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getTags(
+    params: GetTagsRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTagsResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Tag an APIGW resource
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Tag an APIGW resource
+    */
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Untag an APIGW resource
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Untag an APIGW resource
+    */
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Updates an Api resource.
     */
   def updateApi(): awsDashSdkLib.libRequestMod.Request[UpdateApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native

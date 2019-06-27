@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait OverlayComponentElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @js.native
+trait OverlayComponentElement extends js.Object {
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any, role: java.lang.String): js.Promise[scala.Boolean] = js.native

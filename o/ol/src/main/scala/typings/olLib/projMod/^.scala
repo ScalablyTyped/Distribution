@@ -12,8 +12,8 @@ object ^ extends js.Object {
   def addCoordinateTransforms(
     source: ProjectionLike,
     destination: ProjectionLike,
-    forward: js.Function1[/* param0 */ olLib.coordinateMod.Coordinate, olLib.coordinateMod.Coordinate],
-    inverse: js.Function1[/* param0 */ olLib.coordinateMod.Coordinate, olLib.coordinateMod.Coordinate]
+    forward: js.Function1[/* p0 */ olLib.coordinateMod.Coordinate, olLib.coordinateMod.Coordinate],
+    inverse: js.Function1[/* p0 */ olLib.coordinateMod.Coordinate, olLib.coordinateMod.Coordinate]
   ): scala.Unit = js.native
   def addEquivalentProjections(projections: js.Array[olLib.projProjectionMod.default]): scala.Unit = js.native
   def addEquivalentTransforms(
@@ -31,7 +31,7 @@ object ^ extends js.Object {
   def createProjection(projection: java.lang.String, defaultCode: java.lang.String): olLib.projProjectionMod.default = js.native
   def createProjection(projection: olLib.projProjectionMod.default, defaultCode: java.lang.String): olLib.projProjectionMod.default = js.native
   def createTransformFromCoordinateTransform(
-    coordTransform: js.Function1[/* param0 */ olLib.coordinateMod.Coordinate, olLib.coordinateMod.Coordinate]
+    coordTransform: js.Function1[/* p0 */ olLib.coordinateMod.Coordinate, olLib.coordinateMod.Coordinate]
   ): TransformFunction = js.native
   def equivalent(projection1: olLib.projProjectionMod.default, projection2: olLib.projProjectionMod.default): scala.Boolean = js.native
   def fromLonLat(coordinate: olLib.coordinateMod.Coordinate): olLib.coordinateMod.Coordinate = js.native

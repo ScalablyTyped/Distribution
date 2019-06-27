@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DayOfWeek protected () extends Temporal {
   def adjustInto(temporal: TemporalAdjuster): this.type = js.native
+  def compareTo(other: DayOfWeek): scala.Double = js.native
   def equals(other: js.Any): scala.Boolean = js.native
   def getDisplayName(style: TextStyle, locale: Locale): java.lang.String = js.native
   def getLong(field: TemporalField): scala.Double = js.native

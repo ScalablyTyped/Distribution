@@ -14,7 +14,7 @@ object geomFlatTextpathMod extends js.Object {
     end: scala.Double,
     stride: scala.Double,
     text: java.lang.String,
-    measure: js.Function1[/* param0 */ java.lang.String, scala.Double],
+    measure: js.Function1[/* p0 */ java.lang.String, scala.Double],
     startM: scala.Double,
     maxAngle: scala.Double
   ): js.Array[js.Array[_]] = js.native

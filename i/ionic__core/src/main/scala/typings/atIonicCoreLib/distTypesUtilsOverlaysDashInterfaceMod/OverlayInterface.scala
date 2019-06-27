@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait OverlayInterface extends js.Object {
   var animated: scala.Boolean = js.native
   var animation: js.UndefOr[stdLib.Animation] = js.native
-  var config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Config */ js.Any = js.native
   var didDismiss: atIonicCoreLib.distTypesStencilDotCoreMod.EventEmitter[OverlayEventDetail[_]] = js.native
   var didPresent: atIonicCoreLib.distTypesStencilDotCoreMod.EventEmitter[scala.Unit] = js.native
   var el: stdLib.HTMLElement = js.native

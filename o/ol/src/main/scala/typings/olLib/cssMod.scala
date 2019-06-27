@@ -14,6 +14,6 @@ object cssMod extends js.Object {
   val CLASS_SELECTABLE: java.lang.String = js.native
   val CLASS_UNSELECTABLE: java.lang.String = js.native
   val CLASS_UNSUPPORTED: java.lang.String = js.native
-  def getFontFamilies(param0: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getFontFamilies(p0: java.lang.String): js.Array[java.lang.String] = js.native
 }
 

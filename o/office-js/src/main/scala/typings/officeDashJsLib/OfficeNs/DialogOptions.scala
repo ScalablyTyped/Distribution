@@ -14,7 +14,7 @@ trait DialogOptions extends js.Object {
     */
   var asyncContext: js.UndefOr[js.Any] = js.undefined
   /**
-    * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office Online clients, and is 
+    * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office on the web, and is 
     * ignored by other platforms. If false (default), the dialog will be displayed as a new browser window (pop-up). Recommended for 
     * authentication pages that cannot be displayed in an IFrame. If true, the dialog will be displayed as a floating overlay with an IFrame. 
     * This is best for user experience and performance.

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait MergeHunkDetail extends js.Object {
   /**
-    * The line number where a merge conflict ends.
+    * The end position of the hunk in the merge result.
     */
   var endLine: js.UndefOr[LineNumber] = js.undefined
   /**
-    * The base-64 encoded content of the hunk that contains the conflict.
+    * The base-64 encoded content of the hunk merged region that might or might not contain a conflict.
     */
   var hunkContent: js.UndefOr[HunkContent] = js.undefined
   /**
-    * The line number where a merge conflict begins.
+    * The start position of the hunk in the merge result.
     */
   var startLine: js.UndefOr[LineNumber] = js.undefined
 }

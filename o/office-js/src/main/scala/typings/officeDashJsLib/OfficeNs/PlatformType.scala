@@ -29,7 +29,7 @@ object PlatformType extends js.Object {
     extends officeDashJsLib.OfficeNs.PlatformType
   
   /**
-    * The platform is Office Online.
+    * The platform is Office on the web (in a browser).
     */
   @js.native
   sealed trait OfficeOnline

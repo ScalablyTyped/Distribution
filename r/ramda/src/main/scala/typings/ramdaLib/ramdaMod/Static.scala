@@ -123,6 +123,7 @@ trait Static extends js.Object {
     * ap applies a list of functions to a list of values.
     */
   def ap[T, U](fns: js.Array[js.Function1[/* a */ T, U]], vs: js.Array[T]): js.Array[U] = js.native
+  def ap[X0, X1, R](fn: js.Function2[/* x1 */ X1, /* x0 */ X0, R], fn1: js.Function1[/* x1 */ X1, X0]): js.Function1[/* x1 */ X1, R] = js.native
   def aperture(n: scala.Double): js.Function1[/* list */ js.Array[_], js.Array[js.Array[_]]] = js.native
   def aperture[T](n: scala.Double, list: js.Array[T]): js.Array[js.Array[T]] = js.native
   /**
@@ -225,6 +226,7 @@ trait Static extends js.Object {
     * This implementation is compatible with the Fantasy-land Chain spec
     */
   def chain[T, U](fn: js.Function1[/* n */ T, js.Array[U]], list: js.Array[T]): js.Array[U] = js.native
+  def chain[X0, X1, R](fn: js.Function2[/* x0 */ X0, /* x1 */ X1, R], fn1: js.Function1[/* x1 */ X1, X0]): js.Function1[/* x1 */ X1, R] = js.native
   def clamp[T](min: T): js.Function1[/* max */ T, js.Function1[/* value */ T, T]] = js.native
   def clamp[T](min: T, max: T): js.Function1[/* value */ T, T] = js.native
   /**

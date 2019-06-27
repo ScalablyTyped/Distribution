@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-fbsdk"
-version := "0.6-dt-20190125Z-072e0e"
+version := "0.7-dt-20190626Z-0f9bd0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

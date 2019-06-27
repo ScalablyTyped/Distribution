@@ -15,7 +15,9 @@ trait IonLabel extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * The position determines where and how the label behaves inside an item.
     */
@@ -27,12 +29,13 @@ trait IonLabel extends js.Object {
 object IonLabel {
   @scala.inline
   def apply(
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     position: atIonicCoreLib.atIonicCoreLibStrings.fixed | atIonicCoreLib.atIonicCoreLibStrings.stacked | atIonicCoreLib.atIonicCoreLibStrings.floating = null
   ): IonLabel = {
-    val __obj = js.Dynamic.literal(mode = mode)
+    val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonLabel]
   }

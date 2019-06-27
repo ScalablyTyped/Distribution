@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "serialport"
-version := "7.0-dt-20190430Z-af0710"
+version := "7.0-dt-20190626Z-28bd2b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

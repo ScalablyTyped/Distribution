@@ -12,7 +12,7 @@ sealed trait FileType extends js.Object
   * Specifies the format in which to return the document.
   *
   * @remarks
-  * `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word for Windows, Word for Mac, Word Online, and PowerPoint.
+  * `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word on the web, Windows, and Mac, and PowerPoint.
   */
 @JSGlobal("Office.FileType")
 @js.native

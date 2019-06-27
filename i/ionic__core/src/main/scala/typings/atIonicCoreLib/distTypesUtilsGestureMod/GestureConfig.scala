@@ -19,7 +19,6 @@ trait GestureConfig extends js.Object {
   var onStart: js.UndefOr[GestureCallback] = js.undefined
   var onWillStart: js.UndefOr[js.Function1[/* _ */ GestureDetail, js.Promise[scala.Unit]]] = js.undefined
   var passive: js.UndefOr[scala.Boolean] = js.undefined
-  var queue: atIonicCoreLib.distTypesStencilDotCoreMod.QueueApi
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -28,7 +27,6 @@ object GestureConfig {
   def apply(
     el: stdLib.Node,
     gestureName: java.lang.String,
-    queue: atIonicCoreLib.distTypesStencilDotCoreMod.QueueApi,
     canStart: GestureCallback = null,
     direction: atIonicCoreLib.atIonicCoreLibStrings.x | atIonicCoreLib.atIonicCoreLibStrings.y = null,
     disableScroll: js.UndefOr[scala.Boolean] = js.undefined,
@@ -42,7 +40,7 @@ object GestureConfig {
     passive: js.UndefOr[scala.Boolean] = js.undefined,
     threshold: scala.Int | scala.Double = null
   ): GestureConfig = {
-    val __obj = js.Dynamic.literal(el = el, gestureName = gestureName, queue = queue)
+    val __obj = js.Dynamic.literal(el = el, gestureName = gestureName)
     if (canStart != null) __obj.updateDynamic("canStart")(canStart)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)

@@ -4702,6 +4702,7 @@
 | [pngjs](./p/pngjs) | PNG encoder/decoder in pure JS, supporting any bit | PNG, decoder, encoder, js-png, node-png, parser, png, png-js, png-parse, pngjs |
 | [pngjs2](./p/pngjs2) | PNG encoder/decoder in pure JS, supporting any bit | PNG, decoder, encoder, js-png, node-png, parser, png, png-js, png-parse, pngjs |
 | [pngquant-bin](./p/pngquant-bin) | pngquant wrapper that makes it seamlessly availabl | imagemin, compress, image, img, minify, optimize, png, pngquant |
+| [pnpapi](./p/pnpapi) | - | - |
 | [podcast](./p/podcast) | Podcast RSS feed generator. A really simple API to | - |
 | [podium](./p/podium) | Node compatible event emitter with extra features | emitter, event |
 | [poi](./p/poi) | A zero-config bundler for JavaScript applications. | poi, webpack, zero-config, bundler, vue-cli, parcel, create-react-app, babel |
@@ -5484,6 +5485,7 @@
 | [react-widgets](./r/react-widgets) | An à la carte set of polished, extensible, and acc | react, widgets, dropdown, combobox, calendar, datepicker, date picker, numberpicker, number picker, radio group, checkbox list, multiselect, form, input, react-ui, react-component |
 | [react-widgets-moment](./r/react-widgets-moment) | A moment.js localizer for react-widgets | react-widgets |
 | [react-window](./r/react-window) | React components for efficiently rendering large,  | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
+| [react-window-infinite-loa](./r/react-window-infinite-loader) | InfiniteLoader component inspired by react-virtual | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
 | [react-window-size](./r/react-window-size) | React HOC that passes browser window size to wrapp | react-component, react, hoc, browser, window, size, reactive |
 | [react-wow](./r/react-wow) | Using CSS animation in your react components. | react, react-component, animation |
 | [react-youtube](./r/react-youtube) | react.js powered YouTube player component | react, youtube, player, react-component |
@@ -6966,7 +6968,6 @@
 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
-| [wordpress__plugins](./w/wordpress__plugins) | Plugins module for WordPress. | wordpress, plugins |
 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API. | wordpress, rich-text |
 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities. | wordpress, url |
 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz | - |

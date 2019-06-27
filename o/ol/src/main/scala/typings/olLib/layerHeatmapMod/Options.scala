@@ -18,7 +18,7 @@ trait Options extends js.Object {
   var source: js.UndefOr[olLib.sourceVectorMod.default] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var weight: js.UndefOr[
-    java.lang.String | (js.Function1[/* param0 */ olLib.featureMod.default, scala.Double])
+    java.lang.String | (js.Function1[/* p0 */ olLib.featureMod.default, scala.Double])
   ] = js.undefined
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
@@ -37,7 +37,7 @@ object Options {
     shadow: scala.Int | scala.Double = null,
     source: olLib.sourceVectorMod.default = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
-    weight: java.lang.String | (js.Function1[/* param0 */ olLib.featureMod.default, scala.Double]) = null,
+    weight: java.lang.String | (js.Function1[/* p0 */ olLib.featureMod.default, scala.Double]) = null,
     zIndex: scala.Int | scala.Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()

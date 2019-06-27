@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("openid-client", "Client")
 @js.native
-class Client protected () extends js.Object {
+class Client () extends js.Object {
   def this(metadata: ClientMetadata) = this()
   val metadata: ClientMetadata = js.native
   def authorizationUrl(): java.lang.String = js.native

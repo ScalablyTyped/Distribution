@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object yupMod {
   type InferType[T] = InnerInferType[js.Any]
+  type InferredArrayType[T] = T
   type InnerInferType[T] = yupLib.NotRequiredProps[T] with yupLib.RequiredProps[T]
   type KeyOfUndefined[T] = /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: -? undefined extends T[P]? P : never}[keyof T] */ js.Any
   type Lazy = Schema[js.Any]

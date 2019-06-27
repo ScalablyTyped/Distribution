@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object renderMod {
   type OrderFunction = js.Function2[
-    /* param0 */ olLib.featureMod.FeatureLike, 
-    /* param1 */ olLib.featureMod.FeatureLike, 
+    /* p0 */ olLib.featureMod.FeatureLike, 
+    /* p1 */ olLib.featureMod.FeatureLike, 
     scala.Double
   ]
 }

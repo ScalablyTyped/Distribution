@@ -11,7 +11,7 @@ trait HostListener extends js.Object {
     */
   var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * The CSS event to listen for.
+    * The DOM event to listen for.
     */
   var eventName: js.UndefOr[java.lang.String] = js.undefined
 }

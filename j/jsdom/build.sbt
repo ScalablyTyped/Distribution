@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsdom"
-version := "12.2-dt-20190228Z-57ad76"
+version := "12.2-dt-20190626Z-775491"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

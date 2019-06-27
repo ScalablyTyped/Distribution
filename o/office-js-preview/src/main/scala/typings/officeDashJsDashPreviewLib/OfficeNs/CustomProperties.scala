@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * If the user revisits the same message in the future and activates the mail add-in again, the add-in will be able to retrieve the data that had 
   * been saved as custom properties.
   *
-  * Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
+  * Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
   *
   * [Api set: Mailbox 1.0]
   *

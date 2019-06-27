@@ -27,5 +27,10 @@ class Message () extends js.Object {
   var Namespace: java.lang.String = js.native
   /* The Room that this message sent to. */
   var Room: java.lang.String = js.native
+  /* unmarshal method returns this Message's `Body` as an object,
+    equivalent to the Go's `neffos.Message.Unmarshal` method.
+    It can be used inside an event's callbacks.
+    See library-level `marshal` function too. */
+  def unmarshal(): js.Any = js.native
 }
 

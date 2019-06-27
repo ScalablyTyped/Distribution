@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashGetOr2x2 extends js.Object {
-  def apply[TDefault](defaultValue: TDefault): LodashGetOr2x3[TDefault] = js.native
-  def apply[T](defaultValue: lodashLib.lodashMod.__): LodashGetOr2x6[T] = js.native
-  def apply[T](defaultValue: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashGetOr2x6[T] = js.native
-  def apply[T, TDefault](defaultValue: TDefault, `object`: lodashLib.lodashMod.NumericDictionary[T]): T | TDefault = js.native
+trait LodashGetOr2x2[TObject, TKey1 /* <: java.lang.String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */] extends js.Object {
+  def apply(defaultValue: lodashLib.lodashMod.__): LodashGetOr2x6[TObject, TKey1, TKey2] = js.native
+  def apply(defaultValue: lodashLib.lodashMod.__, `object`: TObject): LodashGetOr2x6[TObject, TKey1, TKey2] = js.native
+  def apply[TDefault](defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def apply[TDefault](defaultValue: TDefault, `object`: TObject): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
 }
 

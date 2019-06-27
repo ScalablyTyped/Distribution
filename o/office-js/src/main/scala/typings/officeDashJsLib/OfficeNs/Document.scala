@@ -98,7 +98,7 @@ trait Document extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-    * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is supported up to 65536 (64 KB). 
+    * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is supported up to 65536 (64 KB). 
     * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
     *
     * @remarks
@@ -111,20 +111,20 @@ trait Document extends js.Object {
     * 
     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
     *
-    * For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports getting files in slices of up 
-    * to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the getFileAsync method supports getting files in slices of up to 
+    * For add-ins running in Office host applications other than Office on iOS, the getFileAsync method supports getting files in slices of up 
+    * to 4194304 bytes (4 MB). For add-ins running in Office apps on iOS, the getFileAsync method supports getting files in slices of up to 
     * 65536 (64 KB).
     *
     * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
     * the host:
     *
-    * Excel for Windows desktop and Excel Online: `Office.FileType.Compressed`
+    * Excel on the web and Windows desktop: `Office.FileType.Compressed`
     * 
-    * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+    * Excel on Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
     *
-    * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+    * PowerPoint on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`, `Office.FileType.Pdf`
     *
-    * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
+    * Word on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
     *
     * @param fileType The format in which the file will be returned
     * @param options Provides options for setting the size of slices that the document will be divided into.
@@ -324,7 +324,7 @@ trait Document extends js.Object {
     *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
     *   </tr>
     *   <tr>
-    *     <td>PowerPoint and PowerPoint Online</td>
+    *     <td>PowerPoint on the web and Windows</td>
     *     <td>`Office.CoercionType.SlideRange`</td>
     *   </tr>
     *   <tr>
@@ -727,8 +727,8 @@ trait Document extends js.Object {
     *   </tr>
     * 
     *   <tr>
-    *     <td>Excel Online</td>
-    *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td>
+    *     <td>Excel on the web</td>
+    *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
     *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
     *   </tr>
     *   <tr>
@@ -772,7 +772,7 @@ trait Document extends js.Object {
     *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
     *   </tr>
     *   <tr>
-    *     <td>PowerPoint and PowerPoint Online</td>
+    *     <td>PowerPoint on the web and Windows</td>
     *     <td>`Office.CoercionType.SlideRange`</td>
     *   </tr>
     *   <tr>

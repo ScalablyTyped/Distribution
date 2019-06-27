@@ -12,6 +12,6 @@ class default protected () extends EventSource {
   /* CompleteClass */
   override def getEvents(): js.Array[java.lang.String] = js.native
   /* CompleteClass */
-  override def getHandlerForEvent(eventType: java.lang.String): js.Function1[/* param0 */ stdLib.Event, scala.Unit] = js.native
+  override def getHandlerForEvent(eventType: java.lang.String): js.Function1[/* p0 */ stdLib.Event, scala.Unit] = js.native
 }
 

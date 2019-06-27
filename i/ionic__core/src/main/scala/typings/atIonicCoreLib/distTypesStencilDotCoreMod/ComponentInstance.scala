@@ -50,6 +50,8 @@ trait ComponentInstance
     * componentWillUpdate is not called on the first render.
     */
   var componentWillUpdate: js.UndefOr[js.Function0[js.Promise[scala.Unit] | scala.Unit]] = js.undefined
+  var connectedCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var disconnectedCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
     * Used to dynamically set host element attributes.
     * Should be placed directly above render()
@@ -67,6 +69,8 @@ object ComponentInstance {
     componentDidUpdate: () => scala.Unit = null,
     componentWillLoad: () => js.Promise[scala.Unit] | scala.Unit = null,
     componentWillUpdate: () => js.Promise[scala.Unit] | scala.Unit = null,
+    connectedCallback: () => scala.Unit = null,
+    disconnectedCallback: () => scala.Unit = null,
     hostData: () => atIonicCoreLib.Anon_AttrName = null,
     render: () => _ = null
   ): ComponentInstance = {
@@ -77,6 +81,8 @@ object ComponentInstance {
     if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction0(componentDidUpdate))
     if (componentWillLoad != null) __obj.updateDynamic("componentWillLoad")(js.Any.fromFunction0(componentWillLoad))
     if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(js.Any.fromFunction0(componentWillUpdate))
+    if (connectedCallback != null) __obj.updateDynamic("connectedCallback")(js.Any.fromFunction0(connectedCallback))
+    if (disconnectedCallback != null) __obj.updateDynamic("disconnectedCallback")(js.Any.fromFunction0(disconnectedCallback))
     if (hostData != null) __obj.updateDynamic("hostData")(js.Any.fromFunction0(hostData))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
     __obj.asInstanceOf[ComponentInstance]

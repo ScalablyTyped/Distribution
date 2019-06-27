@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FitOptions extends js.Object {
-  var callback: js.UndefOr[js.Function1[/* param0 */ scala.Boolean, scala.Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* p0 */ scala.Boolean, scala.Unit]] = js.undefined
   var constrainResolution: js.UndefOr[scala.Boolean] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
-  var easing: js.UndefOr[js.Function1[/* param0 */ scala.Double, scala.Double]] = js.undefined
+  var easing: js.UndefOr[js.Function1[/* p0 */ scala.Double, scala.Double]] = js.undefined
   var maxZoom: js.UndefOr[scala.Double] = js.undefined
   var minResolution: js.UndefOr[scala.Double] = js.undefined
   var nearest: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,10 +20,10 @@ trait FitOptions extends js.Object {
 object FitOptions {
   @scala.inline
   def apply(
-    callback: /* param0 */ scala.Boolean => scala.Unit = null,
+    callback: /* p0 */ scala.Boolean => scala.Unit = null,
     constrainResolution: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Int | scala.Double = null,
-    easing: /* param0 */ scala.Double => scala.Double = null,
+    easing: /* p0 */ scala.Double => scala.Double = null,
     maxZoom: scala.Int | scala.Double = null,
     minResolution: scala.Int | scala.Double = null,
     nearest: js.UndefOr[scala.Boolean] = js.undefined,

@@ -11,9 +11,12 @@ import scala.scalajs.js.annotation._
   * For more details, see the ["Dependency Injection Guide"](guide/dependency-injection).
   *
   * @usageNotes
+  *
   * ### Example
   *
   * {@example core/di/ts/provider_spec.ts region='ExistingSansProvider'}
+  *
+  * @publicApi
   */
 trait ExistingSansProvider extends InjectableProvider {
   /**

@@ -97,9 +97,11 @@ package object clientsApigatewayv2Mod {
   type StringWithLengthBetween0And32K = java.lang.String
   type StringWithLengthBetween1And1024 = java.lang.String
   type StringWithLengthBetween1And128 = java.lang.String
+  type StringWithLengthBetween1And1600 = java.lang.String
   type StringWithLengthBetween1And256 = java.lang.String
   type StringWithLengthBetween1And512 = java.lang.String
   type StringWithLengthBetween1And64 = java.lang.String
+  type Tags = org.scalablytyped.runtime.StringDictionary[StringWithLengthBetween1And1600]
   type TemplateMap = org.scalablytyped.runtime.StringDictionary[StringWithLengthBetween0And32K]
   type UriWithLengthBetween1And2048 = java.lang.String
   type __boolean = scala.Boolean
@@ -117,6 +119,7 @@ package object clientsApigatewayv2Mod {
   type __listOfRouteResponse = js.Array[RouteResponse]
   type __listOfStage = js.Array[Stage]
   type __listOf__string = js.Array[__string]
+  type __mapOf__string = org.scalablytyped.runtime.StringDictionary[__string]
   type __string = java.lang.String
   type __timestampIso8601 = stdLib.Date
   /* Rewritten from type alias, can be one of: 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object interactionDrawMod {
   type GeometryFunction = js.Function2[
-    /* param0 */ SketchCoordType, 
-    /* param1 */ olLib.geomSimpleGeometryMod.default, 
+    /* p0 */ SketchCoordType, 
+    /* p1 */ js.UndefOr[olLib.geomSimpleGeometryMod.default], 
     olLib.geomSimpleGeometryMod.default
   ]
   type LineCoordType = js.Array[olLib.coordinateMod.Coordinate]

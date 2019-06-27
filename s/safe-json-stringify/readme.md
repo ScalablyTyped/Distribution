@@ -1,7 +1,7 @@
 
 # Scala.js typings for safe-json-stringify
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Prevent defined property getters from throwing errors
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for safe-json-stringify 1.0
+// Type definitions for safe-json-stringify 1.1
 // Project: https://github.com/debitoor/safe-json-stringify
 // Definitions by: Eric Byers <https://github.com/ericbyers>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped"

@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonCardHeader'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonCardHeader")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonCardHeader")
 @js.native
-class IonCardHeader protected () extends js.Object {
+class IonCardHeader protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonCardHeader {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
+  /**
+    * If `true`, the card header will be translucent.
+    */
+  /* CompleteClass */
+  override var translucent: scala.Boolean = js.native
 }
 

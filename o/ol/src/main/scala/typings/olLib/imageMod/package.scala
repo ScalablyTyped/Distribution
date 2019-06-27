@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object imageMod {
-  type LoadFunction = js.Function2[/* param0 */ ImageWrapper, /* param1 */ java.lang.String, scala.Unit]
+  type LoadFunction = js.Function2[/* p0 */ ImageWrapper, /* p1 */ java.lang.String, scala.Unit]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__rich-text"
-version := "3.4-dt-20190619Z-8c8469"
+version := "3.4-dt-20190626Z-814539"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

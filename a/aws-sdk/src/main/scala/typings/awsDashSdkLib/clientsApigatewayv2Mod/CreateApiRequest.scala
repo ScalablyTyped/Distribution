@@ -31,6 +31,10 @@ trait CreateApiRequest extends js.Object {
     */
   var RouteSelectionExpression: SelectionExpression
   /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters..
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
+  /**
     * A version identifier for the API.
     */
   var Version: js.UndefOr[StringWithLengthBetween1And64] = js.undefined
@@ -45,12 +49,14 @@ object CreateApiRequest {
     ApiKeySelectionExpression: SelectionExpression = null,
     Description: StringWithLengthBetween0And1024 = null,
     DisableSchemaValidation: js.UndefOr[__boolean] = js.undefined,
+    Tags: Tags = null,
     Version: StringWithLengthBetween1And64 = null
   ): CreateApiRequest = {
     val __obj = js.Dynamic.literal(Name = Name, ProtocolType = ProtocolType.asInstanceOf[js.Any], RouteSelectionExpression = RouteSelectionExpression)
     if (ApiKeySelectionExpression != null) __obj.updateDynamic("ApiKeySelectionExpression")(ApiKeySelectionExpression)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DisableSchemaValidation)) __obj.updateDynamic("DisableSchemaValidation")(DisableSchemaValidation)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (Version != null) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[CreateApiRequest]
   }

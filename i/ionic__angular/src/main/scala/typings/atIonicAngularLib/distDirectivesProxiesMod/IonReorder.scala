@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonReorder'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonReorder")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonReorder")
 @js.native
-class IonReorder protected () extends js.Object {
+class IonReorder protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonReorder {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
 }

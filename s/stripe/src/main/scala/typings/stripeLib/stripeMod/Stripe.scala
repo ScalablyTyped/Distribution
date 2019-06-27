@@ -21,6 +21,7 @@ trait Stripe extends js.Object {
   var balance: stripeLib.stripeMod.resourcesNs.Balance = js.native
   var bitcoinReceivers: stripeLib.stripeMod.resourcesNs.BitcoinReceivers = js.native
   var charges: stripeLib.stripeMod.resourcesNs.Charges = js.native
+  var checkout: stripeLib.stripeMod.resourcesNs.Checkout = js.native
   var countrySpecs: stripeLib.stripeMod.resourcesNs.CountrySpecs = js.native
   var coupons: stripeLib.stripeMod.resourcesNs.Coupons = js.native
   var customers: stripeLib.stripeMod.resourcesNs.Customers = js.native

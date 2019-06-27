@@ -22,7 +22,7 @@ class default protected () extends Projection {
   /* CompleteClass */
   override def getMetersPerUnit(): scala.Double = js.native
   /* CompleteClass */
-  override def getPointResolutionFunc(): js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double] = js.native
+  override def getPointResolutionFunc(): js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double] = js.native
   /* CompleteClass */
   override def getUnits(): olLib.projUnitsMod.Units = js.native
   /* CompleteClass */
@@ -34,9 +34,7 @@ class default protected () extends Projection {
   /* CompleteClass */
   override def setExtent(extent: olLib.extentMod.Extent): scala.Unit = js.native
   /* CompleteClass */
-  override def setGetPointResolution(
-    func: js.Function2[/* param0 */ scala.Double, /* param1 */ olLib.coordinateMod.Coordinate, scala.Double]
-  ): scala.Unit = js.native
+  override def setGetPointResolution(func: js.Function2[/* p0 */ scala.Double, /* p1 */ olLib.coordinateMod.Coordinate, scala.Double]): scala.Unit = js.native
   /* CompleteClass */
   override def setGlobal(global: scala.Boolean): scala.Unit = js.native
   /* CompleteClass */

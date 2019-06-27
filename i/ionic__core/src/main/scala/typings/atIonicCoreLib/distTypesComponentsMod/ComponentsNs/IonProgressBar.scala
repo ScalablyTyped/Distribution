@@ -19,7 +19,9 @@ trait IonProgressBar extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
     * If true, reverse the progress bar direction.
     */
@@ -38,15 +40,16 @@ object IonProgressBar {
   @scala.inline
   def apply(
     buffer: scala.Double,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     reversed: scala.Boolean,
     `type`: atIonicCoreLib.atIonicCoreLibStrings.determinate | atIonicCoreLib.atIonicCoreLibStrings.indeterminate,
     value: scala.Double,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null
   ): IonProgressBar = {
-    val __obj = js.Dynamic.literal(buffer = buffer, mode = mode, reversed = reversed, value = value)
+    val __obj = js.Dynamic.literal(buffer = buffer, reversed = reversed, value = value)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonProgressBar]
   }
 }

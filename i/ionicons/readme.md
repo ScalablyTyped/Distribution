@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionicons
 
-Typings are for version 4.5.8
+Typings are for version 4.5.10-2
 
 ## Library description:
 Premium icons for Ionic.
@@ -42,6 +42,9 @@ These comments are from the typescript definitions and might be useful:
  */
 
 
+/**
+ * @virtualProp {"ios" | "md"} mode - The mode determines which platform styles to use.
+ */
 /**
  * This file gets copied to all distributions of stencil component collections.
  * - no imports

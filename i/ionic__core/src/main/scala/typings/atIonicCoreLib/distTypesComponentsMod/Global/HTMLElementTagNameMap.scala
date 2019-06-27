@@ -77,6 +77,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var `ion-route`: HTMLIonRouteElement
   var `ion-route-redirect`: HTMLIonRouteRedirectElement
   var `ion-router`: HTMLIonRouterElement
+  var `ion-router-link`: HTMLIonRouterLinkElement
   var `ion-router-outlet`: HTMLIonRouterOutletElement
   var `ion-row`: HTMLIonRowElement
   var `ion-searchbar`: HTMLIonSearchbarElement
@@ -179,6 +180,7 @@ object HTMLElementTagNameMap {
     `ion-route`: HTMLIonRouteElement,
     `ion-route-redirect`: HTMLIonRouteRedirectElement,
     `ion-router`: HTMLIonRouterElement,
+    `ion-router-link`: HTMLIonRouterLinkElement,
     `ion-router-outlet`: HTMLIonRouterOutletElement,
     `ion-row`: HTMLIonRowElement,
     `ion-searchbar`: HTMLIonSearchbarElement,
@@ -278,6 +280,7 @@ object HTMLElementTagNameMap {
     __obj.updateDynamic("ion-route")(`ion-route`)
     __obj.updateDynamic("ion-route-redirect")(`ion-route-redirect`)
     __obj.updateDynamic("ion-router")(`ion-router`)
+    __obj.updateDynamic("ion-router-link")(`ion-router-link`)
     __obj.updateDynamic("ion-router-outlet")(`ion-router-outlet`)
     __obj.updateDynamic("ion-row")(`ion-row`)
     __obj.updateDynamic("ion-searchbar")(`ion-searchbar`)

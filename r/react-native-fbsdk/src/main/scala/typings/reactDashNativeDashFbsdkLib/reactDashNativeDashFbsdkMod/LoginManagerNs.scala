@@ -17,13 +17,9 @@ object LoginManagerNs extends js.Object {
     */
   def getLoginBehavior(): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehavior] = js.native
   /**
-    * Logs the user in with the requested publish permissions.
+    * Logs the user in with the requested read and/or publish permissions.
     */
-  def logInWithPublishPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
-  /**
-    * Logs the user in with the requested read permissions.
-    */
-  def logInWithReadPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
+  def logInWithPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
   /**
     * Logs out the user.
     */

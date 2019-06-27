@@ -5,11 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonRippleEffect'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRippleEffect")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonRippleEffect")
 @js.native
-class IonRippleEffect protected () extends js.Object {
+class IonRippleEffect protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonRippleEffect {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
+  /**
+    * Sets the type of ripple-effect:  - `bounded`: the ripple effect expands from the user's click position - `unbounded`: the ripple effect expands from the center of the button and overflows the container.  NOTE: Surfaces for bounded ripples should have the overflow property set to hidden, while surfaces for unbounded ripples should have it set to visible.
+    */
+  /* CompleteClass */
+  override var `type`: atIonicCoreLib.atIonicCoreLibStrings.bounded | atIonicCoreLib.atIonicCoreLibStrings.unbounded = js.native
+  /**
+    * Adds the ripple effect to the parent element.
+    */
+  /* CompleteClass */
+  override def addRipple(x: scala.Double, y: scala.Double): js.Promise[js.Function0[scala.Unit]] = js.native
 }
 

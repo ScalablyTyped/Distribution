@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@wordpress/data", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val RegistryConsumer: reactLib.reactMod.Consumer[DataRegistry] = js.native
-  val RegistryProvider: reactLib.reactMod.Provider[DataRegistry] = js.native
+  val RegistryConsumer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Consumer<DataRegistry> */ js.Any = js.native
+  val RegistryProvider: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Provider<DataRegistry> */ js.Any = js.native
   val subscribe: Subscriber = js.native
   def combineReducers[S](reducers: reduxLib.reduxMod.ReducersMapObject[S, _]): reduxLib.reduxMod.Reducer[S, reduxLib.reduxMod.AnyAction] = js.native
   @JSName("combineReducers")
@@ -23,38 +23,43 @@ object ^ extends js.Object {
       js.Function1[/* args */ org.scalablytyped.runtime.StringDictionary[_], T]
     ]
   ): R = js.native
-  def createRegistrySelector[S /* <: atWordpressDataLib.Fn_CorerichtextKey */, T](registrySelector: js.Function1[/* select */ S, js.Function2[/* state */ _, /* repeated */ _, T]]): S = js.native
+  def createRegistrySelector[S /* <: js.Function1[/* key */ java.lang.String, SelectorMap] */, T](registrySelector: js.Function1[/* select */ S, js.Function2[/* state */ _, /* repeated */ _, T]]): S = js.native
   def dispatch(key: java.lang.String): DispatcherMap = js.native
-  @JSName("dispatch")
-  def dispatch_corerichtext(key: atWordpressDataLib.atWordpressDataLibStrings.`core/rich-text`): js.Any = js.native
   def registerGenericStore(key: java.lang.String, config: GenericStoreConfig): scala.Unit = js.native
   def registerStore[T](key: java.lang.String, config: StoreConfig[T]): scala.Unit = js.native
   def select(key: java.lang.String): SelectorMap = js.native
-  @JSName("select")
-  def select_corerichtext(key: atWordpressDataLib.atWordpressDataLibStrings.`core/rich-text`): js.Any = js.native
   def use[T](plugin: Plugin[T], options: T): DataRegistry = js.native
-  def useDispatch(): atWordpressDataLib.Fn_Corerichtext = js.native
+  def useDispatch(): js.Function1[/* key */ java.lang.String, DispatcherMap] = js.native
   def useDispatch(storeName: java.lang.String): DispatcherMap = js.native
   def useRegistry(): DataRegistry = js.native
-  def useSelect[T](mapSelect: js.Function1[/* s */ atWordpressDataLib.Fn_CorerichtextKey, T]): T = js.native
-  def useSelect[T](mapSelect: js.Function1[/* s */ atWordpressDataLib.Fn_CorerichtextKey, T], deps: js.Array[_]): T = js.native
+  def useSelect[T](mapSelect: js.Function1[/* s */ js.Function1[/* key */ java.lang.String, SelectorMap], T]): T = js.native
+  def useSelect[T](
+    mapSelect: js.Function1[/* s */ js.Function1[/* key */ java.lang.String, SelectorMap], T],
+    deps: js.Array[_]
+  ): T = js.native
   def withDispatch[DP, P, IP](
     mapDispatchToProps: js.Function3[
-      /* disp */ atWordpressDataLib.Fn_Corerichtext, 
+      /* disp */ js.Function1[/* key */ java.lang.String, DispatcherMap], 
       /* ownProps */ P with IP, 
-      /* registry */ atWordpressDataLib.Anon_Select, 
+      /* registry */ atWordpressDataLib.Anon_Key, 
       DP
     ]
   ): js.Function1[
-    /* component */ reactLib.reactMod.ComponentType[P with IP with DP], 
-    reactLib.reactMod.ComponentType[P]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P & IP & DP> */ /* component */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P> */ _
   ] = js.native
-  def withRegistry[P](component: reactLib.reactMod.ComponentType[P]): reactLib.reactMod.ComponentType[P with atWordpressDataLib.Anon_Registry] = js.native
+  def withRegistry[P](
+    component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P> */ js.Any
+  ): js.Any = js.native
   def withSelect[SP, P, IP](
-    mapSelectToProps: js.Function2[/* sel */ atWordpressDataLib.Fn_CorerichtextKey, /* ownProps */ P with IP, SP]
+    mapSelectToProps: js.Function2[
+      /* sel */ js.Function1[/* key */ java.lang.String, SelectorMap], 
+      /* ownProps */ P with IP, 
+      SP
+    ]
   ): js.Function1[
-    /* component */ reactLib.reactMod.ComponentType[P with IP with SP], 
-    reactLib.reactMod.ComponentType[P]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P & IP & SP> */ /* component */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P> */ _
   ] = js.native
 }
 

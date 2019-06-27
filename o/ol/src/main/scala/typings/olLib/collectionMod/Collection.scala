@@ -10,7 +10,7 @@ trait Collection[T]
   extends olLib.objectMod.default {
   def clear(): scala.Unit = js.native
   def extend(arr: js.Array[T]): Collection[T] = js.native
-  def forEach(f: js.Function3[/* param0 */ T, /* param1 */ scala.Double, /* param2 */ js.Array[T], scala.Unit]): scala.Unit = js.native
+  def forEach(f: js.Function3[/* p0 */ T, /* p1 */ scala.Double, /* p2 */ js.Array[T], scala.Unit]): scala.Unit = js.native
   def getArray(): js.Array[T] = js.native
   def getLength(): scala.Double = js.native
   def insertAt(index: scala.Double, elem: T): scala.Unit = js.native

@@ -32,7 +32,9 @@ trait IonSelect extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.native
   /**
     * If `true`, the select can accept multiple values.
     */
@@ -60,15 +62,7 @@ trait IonSelect extends js.Object {
   /**
     * Open the select overlay. The overlay is either an alert, action sheet, or popover, depending on the `interface` property on the `ion-select`.
     */
-  def open(): js.Promise[
-    js.UndefOr[
-      atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonActionSheetElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonAlertElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPopoverElement
-    ]
-  ] = js.native
-  def open(event: stdLib.UIEvent): js.Promise[
-    js.UndefOr[
-      atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonActionSheetElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonAlertElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPopoverElement
-    ]
-  ] = js.native
+  def open(): js.Promise[_] = js.native
+  def open(event: stdLib.UIEvent): js.Promise[_] = js.native
 }
 

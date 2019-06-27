@@ -33,11 +33,11 @@ trait IonRefresher extends js.Object {
   /**
     * Changes the refresher's state from `refreshing` to `cancelling`.
     */
-  def cancel(): scala.Unit
+  def cancel(): js.Promise[scala.Unit]
   /**
     * Call `complete()` when your async operation has completed. For example, the `refreshing` state is while the app is performing an asynchronous operation, such as receiving more data from an AJAX request. Once the data has been received, you then call this method to signify that the refreshing has completed and to close the refresher. This method also changes the refresher's state from `refreshing` to `completing`.
     */
-  def complete(): scala.Unit
+  def complete(): js.Promise[scala.Unit]
   /**
     * A number representing how far down the user has pulled. The number `0` represents the user hasn't pulled down at all. The number `1`, and anything greater than `1`, represents that the user has pulled far enough down that when they let go then the refresh will happen. If they let go and the number is less than `1`, then the refresh will not happen, and the content will return to it's original position.
     */
@@ -47,9 +47,9 @@ trait IonRefresher extends js.Object {
 object IonRefresher {
   @scala.inline
   def apply(
-    cancel: () => scala.Unit,
+    cancel: () => js.Promise[scala.Unit],
     closeDuration: java.lang.String,
-    complete: () => scala.Unit,
+    complete: () => js.Promise[scala.Unit],
     disabled: scala.Boolean,
     getProgress: () => js.Promise[scala.Double],
     pullFactor: scala.Double,

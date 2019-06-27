@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTextarea because var conflicts: autocapitalize, spellcheck. Inlined autoGrow, autofocus, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
 trait HTMLIonTextareaElement
-  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.HTMLStencilElement {
   /**
     * If `true`, the element height will increase based on the value.
     */
@@ -50,7 +50,9 @@ trait HTMLIonTextareaElement
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.native
   /**
     * The name of the control, which is submitted with the form data.
     */
@@ -88,7 +90,7 @@ trait HTMLIonTextareaElement
   /**
     * Sets focus on the specified `ion-textarea`. Use this method instead of the global `input.focus()`.
     */
-  def setFocus(): scala.Unit = js.native
+  def setFocus(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("HTMLIonTextareaElement")

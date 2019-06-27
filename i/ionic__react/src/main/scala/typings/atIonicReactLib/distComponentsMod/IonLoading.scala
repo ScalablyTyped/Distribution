@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonLoading protected ()
   extends atIonicReactLib.Anon_CallBackCallbackComponentDidCatch {
-  def this(props: atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonLoadingAttributes with atIonicReactLib.Anon_Event) = this()
+  def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonLoadingAttributes */ js.Any) with atIonicReactLib.Anon_Event) = this()
 }
 
 @JSImport("@ionic/react/dist/components", "IonLoading")
 @js.native
 object IonLoading
   extends org.scalablytyped.runtime.Instantiable1[
-      /* props */ atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonLoadingAttributes with atIonicReactLib.Anon_Event, 
+      /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonLoadingAttributes */ js.Any) with atIonicReactLib.Anon_Event, 
       atIonicReactLib.Anon_CallBackCallbackComponentDidCatch
     ] {
   var contextType: js.UndefOr[reactLib.reactMod.Context[_]] = js.native

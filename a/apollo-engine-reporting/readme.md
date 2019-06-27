@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-engine-reporting
 
-Typings are for version 1.3.4
+Typings are for version 1.3.5
 
 ## Library description:
 Send reports about your GraphQL services to Apollo Engine

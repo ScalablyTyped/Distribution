@@ -39,7 +39,7 @@ trait ConflictMetadata extends js.Object {
     */
   var numberOfConflicts: js.UndefOr[NumberOfConflicts] = js.undefined
   /**
-    * A boolean value (true or false) indicating whether there are conflicts in the object type of a file.
+    * A boolean value (true or false) indicating whether there are conflicts between the branches in the object type of a file, folder, or submodule.
     */
   var objectTypeConflict: js.UndefOr[IsObjectTypeConflict] = js.undefined
   /**

@@ -15,8 +15,12 @@ class DateTimeFormatterBuilder () extends js.Object {
   def appendOffset(pattern: java.lang.String, noOffsetText: java.lang.String): DateTimeFormatterBuilder = js.native
   def appendOffsetId(): DateTimeFormatterBuilder = js.native
   def appendPattern(pattern: java.lang.String): DateTimeFormatterBuilder = js.native
-  def appendValue(): DateTimeFormatterBuilder = js.native
-  def appendValueReduced(): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: scala.Double): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: scala.Double, maxWidth: scala.Double): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: scala.Double, maxWidth: scala.Double, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
+  def appendValueReduced(field: TemporalField, width: scala.Double, maxWidth: scala.Double, base: ChronoLocalDate): DateTimeFormatterBuilder = js.native
+  def appendValueReduced(field: TemporalField, width: scala.Double, maxWidth: scala.Double, base: scala.Double): DateTimeFormatterBuilder = js.native
   def appendZoneId(): DateTimeFormatterBuilder = js.native
   def optionalEnd(): DateTimeFormatterBuilder = js.native
   def optionalStart(): DateTimeFormatterBuilder = js.native

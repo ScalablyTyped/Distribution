@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var filter: js.UndefOr[FilterFunction] = js.undefined
   var hitTolerance: js.UndefOr[scala.Double] = js.undefined
   var layers: js.UndefOr[
-    js.Array[olLib.layerLayerMod.default] | (js.Function1[/* param0 */ olLib.layerLayerMod.default, scala.Boolean])
+    js.Array[olLib.layerLayerMod.default] | (js.Function1[/* p0 */ olLib.layerLayerMod.default, scala.Boolean])
   ] = js.undefined
   var multi: js.UndefOr[scala.Boolean] = js.undefined
   var removeCondition: js.UndefOr[olLib.eventsConditionMod.Condition] = js.undefined
@@ -29,7 +29,7 @@ object Options {
     features: olLib.collectionMod.default[olLib.featureMod.default] = null,
     filter: FilterFunction = null,
     hitTolerance: scala.Int | scala.Double = null,
-    layers: js.Array[olLib.layerLayerMod.default] | (js.Function1[/* param0 */ olLib.layerLayerMod.default, scala.Boolean]) = null,
+    layers: js.Array[olLib.layerLayerMod.default] | (js.Function1[/* p0 */ olLib.layerLayerMod.default, scala.Boolean]) = null,
     multi: js.UndefOr[scala.Boolean] = js.undefined,
     removeCondition: olLib.eventsConditionMod.Condition = null,
     style: olLib.styleStyleMod.StyleLike = null,

@@ -37,7 +37,7 @@ class default protected () extends ImageStyle {
   override def getSnapToPixel(): scala.Boolean = js.native
   /* CompleteClass */
   override def listenImageChange[T](
-    listener: js.ThisFunction1[/* this */ T, /* param1 */ olLib.eventsEventMod.default, scala.Unit],
+    listener: js.ThisFunction1[/* this */ T, /* p1 */ olLib.eventsEventMod.default, scala.Unit],
     thisArg: T
   ): olLib.eventsMod.EventsKey = js.native
   /* CompleteClass */
@@ -54,7 +54,7 @@ class default protected () extends ImageStyle {
   override def setSnapToPixel(snapToPixel: scala.Boolean): scala.Unit = js.native
   /* CompleteClass */
   override def unlistenImageChange[T](
-    listener: js.ThisFunction1[/* this */ T, /* param1 */ olLib.eventsEventMod.default, scala.Unit],
+    listener: js.ThisFunction1[/* this */ T, /* p1 */ olLib.eventsEventMod.default, scala.Unit],
     thisArg: T
   ): scala.Unit = js.native
 }

@@ -15,6 +15,7 @@ package object atVimeoPlayerMod {
     - atVimeoPlayerLib.atVimeoPlayerLibStrings.timeupdate
     - atVimeoPlayerLib.atVimeoPlayerLibStrings.progress
     - atVimeoPlayerLib.atVimeoPlayerLibStrings.seeked
+    - atVimeoPlayerLib.atVimeoPlayerLibStrings.seeking
     - atVimeoPlayerLib.atVimeoPlayerLibStrings.texttrackchange
     - atVimeoPlayerLib.atVimeoPlayerLibStrings.cuechange
     - atVimeoPlayerLib.atVimeoPlayerLibStrings.cuepoint
@@ -28,4 +29,5 @@ package object atVimeoPlayerMod {
   */
   type EventName = _EventName | java.lang.String
   type VimeoCuePointData = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type VimeoTimeRange = js.Tuple2[scala.Double, scala.Double]
 }

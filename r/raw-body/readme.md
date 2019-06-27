@@ -1,7 +1,7 @@
 
 # Scala.js typings for raw-body
 
-Typings are for version 2.4.0
+Typings are for version 2.4.1
 
 ## Library description:
 Get and validate the raw body of a readable stream.

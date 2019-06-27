@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amplitude-js"
-version := "4.4.0-dt-20190322Z-22af0c"
+version := "4.4.0-dt-20190626Z-9e6efa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

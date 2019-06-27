@@ -50,7 +50,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Kevin Hawkinson <https://github.com/khawkinson>
 //                 Munif Tanjim <https://github.com/MunifTanjim>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 2.9
 
 ```
 

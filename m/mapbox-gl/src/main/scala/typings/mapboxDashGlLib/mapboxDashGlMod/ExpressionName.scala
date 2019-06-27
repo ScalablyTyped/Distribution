@@ -39,6 +39,7 @@ import scala.scalajs.js.annotation._
   - mapboxDashGlLib.mapboxDashGlLibStrings.any
   - mapboxDashGlLib.mapboxDashGlLibStrings.`case`
   - mapboxDashGlLib.mapboxDashGlLibStrings.`match`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.coalesce
   - mapboxDashGlLib.mapboxDashGlLibStrings.interpolate
   - mapboxDashGlLib.mapboxDashGlLibStrings.`interpolate-hcl`
   - mapboxDashGlLib.mapboxDashGlLibStrings.`interpolate-lab`

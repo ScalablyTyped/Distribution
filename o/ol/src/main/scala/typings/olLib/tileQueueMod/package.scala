@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 package object tileQueueMod {
   type PriorityFunction = js.Function4[
-    /* param0 */ olLib.tileMod.default, 
-    /* param1 */ java.lang.String, 
-    /* param2 */ olLib.coordinateMod.Coordinate, 
-    /* param3 */ scala.Double, 
+    /* p0 */ olLib.tileMod.default, 
+    /* p1 */ java.lang.String, 
+    /* p2 */ olLib.coordinateMod.Coordinate, 
+    /* p3 */ scala.Double, 
     scala.Double
   ]
 }

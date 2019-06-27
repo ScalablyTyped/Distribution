@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Month protected () extends Temporal {
   def adjustInto(temporal: Temporal): Temporal = js.native
+  def compareTo(other: Month): scala.Double = js.native
+  def equals(other: Month): scala.Boolean = js.native
   def firstDayOfYear(leapYear: scala.Boolean): scala.Double = js.native
   def firstMonthOfQuarter(): Month = js.native
   def getDisplayName(style: TextStyle, locale: Locale): java.lang.String = js.native
@@ -18,6 +20,8 @@ class Month protected () extends Temporal {
   def maxLength(): scala.Double = js.native
   def minLength(): scala.Double = js.native
   def minus(months: scala.Double): Month = js.native
+  def name(): java.lang.String = js.native
+  def ordinal(): scala.Double = js.native
   def plus(months: scala.Double): Month = js.native
   def value(): scala.Double = js.native
 }
@@ -40,6 +44,7 @@ object Month extends js.Object {
   var SEPTEMBER: jsDashJodaLib.jsDashJodaMod.Month = js.native
   def from(temporal: jsDashJodaLib.jsDashJodaMod.TemporalAccessor): jsDashJodaLib.jsDashJodaMod.Month = js.native
   def of(month: scala.Double): jsDashJodaLib.jsDashJodaMod.Month = js.native
+  def valueOf(name: java.lang.String): jsDashJodaLib.jsDashJodaMod.Month = js.native
   def values(): js.Array[jsDashJodaLib.jsDashJodaMod.Month] = js.native
 }
 

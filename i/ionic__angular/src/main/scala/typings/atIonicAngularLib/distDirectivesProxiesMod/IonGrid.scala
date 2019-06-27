@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonGrid'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonGrid")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonGrid")
 @js.native
-class IonGrid protected () extends js.Object {
+class IonGrid protected ()
+  extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonGrid {
   def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: stdLib.HTMLElement = js.native
+  /**
+    * If `true`, the grid will have a fixed width based on the screen size.
+    */
+  /* CompleteClass */
+  override var fixed: scala.Boolean = js.native
 }
 

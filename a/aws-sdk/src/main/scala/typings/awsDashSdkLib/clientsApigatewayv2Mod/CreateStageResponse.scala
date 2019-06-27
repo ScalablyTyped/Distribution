@@ -49,6 +49,10 @@ trait CreateStageResponse extends js.Object {
     [A-Za-z0-9-._~:/?#&=,]+.
     */
   var StageVariables: js.UndefOr[StageVariablesMap] = js.undefined
+  /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters..
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
 }
 
 object CreateStageResponse {
@@ -63,7 +67,8 @@ object CreateStageResponse {
     LastUpdatedDate: __timestampIso8601 = null,
     RouteSettings: RouteSettingsMap = null,
     StageName: StringWithLengthBetween1And128 = null,
-    StageVariables: StageVariablesMap = null
+    StageVariables: StageVariablesMap = null,
+    Tags: Tags = null
   ): CreateStageResponse = {
     val __obj = js.Dynamic.literal()
     if (AccessLogSettings != null) __obj.updateDynamic("AccessLogSettings")(AccessLogSettings)
@@ -76,6 +81,7 @@ object CreateStageResponse {
     if (RouteSettings != null) __obj.updateDynamic("RouteSettings")(RouteSettings)
     if (StageName != null) __obj.updateDynamic("StageName")(StageName)
     if (StageVariables != null) __obj.updateDynamic("StageVariables")(StageVariables)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateStageResponse]
   }
 }

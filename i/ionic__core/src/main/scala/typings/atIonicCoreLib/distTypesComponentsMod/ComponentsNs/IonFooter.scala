@@ -9,9 +9,11 @@ trait IonFooter extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
   /**
-    * If `true`, the footer will be translucent. Note: In order to scroll content behind the footer, the `fullscreen` attribute needs to be set on the content.
+    * If `true`, the footer will be translucent. Only applies to `ios` mode. Note: In order to scroll content behind the footer, the `fullscreen` attribute needs to be set on the content.
     */
   var translucent: scala.Boolean
 }
@@ -19,11 +21,11 @@ trait IonFooter extends js.Object {
 object IonFooter {
   @scala.inline
   def apply(
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
-    translucent: scala.Boolean
+    translucent: scala.Boolean,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null
   ): IonFooter = {
-    val __obj = js.Dynamic.literal(mode = mode, translucent = translucent)
-  
+    val __obj = js.Dynamic.literal(translucent = translucent)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFooter]
   }
 }
