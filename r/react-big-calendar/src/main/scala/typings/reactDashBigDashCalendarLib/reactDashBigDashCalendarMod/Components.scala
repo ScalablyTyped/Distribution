@@ -38,6 +38,12 @@ trait Components[TEvent /* <: js.Object */] extends js.Object {
   var week: js.UndefOr[reactDashBigDashCalendarLib.Anon_Event] = js.undefined
 }
 
+trait components extends js.Object {
+  var dateCellWrapper: reactLib.reactMod.ComponentType[js.Object]
+  var dayWrapper: reactLib.reactMod.ComponentType[js.Object]
+  var eventWrapper: reactLib.reactMod.ComponentType[Event]
+}
+
 object Components {
   @scala.inline
   def apply[TEvent /* <: js.Object */](
@@ -74,6 +80,19 @@ object Components {
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (week != null) __obj.updateDynamic("week")(week)
     __obj.asInstanceOf[Components[TEvent]]
+  }
+}
+
+object components {
+  @scala.inline
+  def apply(
+    dateCellWrapper: reactLib.reactMod.ComponentType[js.Object],
+    dayWrapper: reactLib.reactMod.ComponentType[js.Object],
+    eventWrapper: reactLib.reactMod.ComponentType[Event]
+  ): components = {
+    val __obj = js.Dynamic.literal(dateCellWrapper = dateCellWrapper.asInstanceOf[js.Any], dayWrapper = dayWrapper.asInstanceOf[js.Any], eventWrapper = eventWrapper.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[components]
   }
 }
 

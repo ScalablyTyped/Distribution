@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait SimpleEmail extends js.Object {
   /**
-    * The content of the message, in HTML format. Use this for email clients that can process HTML. You can include clickable links, formatted text, and much more in an HTML message.
+    * The body of the email message, in HTML format. We recommend using an HTML part for email clients that support HTML. You can include links, formatted text, and more in an HTML message.
     */
   var HtmlPart: js.UndefOr[SimpleEmailPart] = js.undefined
   /**
-    * The subject of the message: A short summary of the content, which will appear in the recipient's inbox.
+    * The subject line, or title, of the email.
     */
   var Subject: js.UndefOr[SimpleEmailPart] = js.undefined
   /**
-    * The content of the message, in text format. Use this for text-based email clients, or clients on high-latency networks (such as mobile devices).
+    * The body of the email message, in text format. We recommend using a text part for email clients that don't support HTML and clients that are connected to high-latency networks, such as mobile devices.
     */
   var TextPart: js.UndefOr[SimpleEmailPart] = js.undefined
 }

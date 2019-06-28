@@ -7,35 +7,35 @@ import scala.scalajs.js.annotation._
 
 trait APNSSandboxChannelRequest extends js.Object {
   /**
-    * The bundle id used for APNs Tokens.
+    * The bundle identifier that's assigned to your iOS app. This identifier is used for APNs tokens.
     */
   var BundleId: js.UndefOr[__string] = js.undefined
   /**
-    * The distribution certificate from Apple.
+    * The APNs client certificate that you received from Apple, if you want Amazon Pinpoint to communicate with the APNs sandbox environment by using an APNs certificate.
     */
   var Certificate: js.UndefOr[__string] = js.undefined
   /**
-    * The default authentication method used for APNs.
+    * The default authentication method that you want Amazon Pinpoint to use when authenticating with the APNs sandbox environment, key or certificate.
     */
   var DefaultAuthenticationMethod: js.UndefOr[__string] = js.undefined
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether to enable the APNs sandbox channel for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
   /**
-    * The certificate private key.
+    * The private key for the APNs client certificate that you want Amazon Pinpoint to use to communicate with the APNs sandbox environment.
     */
   var PrivateKey: js.UndefOr[__string] = js.undefined
   /**
-    * The team id used for APNs Tokens.
+    * The identifier that's assigned to your Apple developer account team. This identifier is used for APNs tokens.
     */
   var TeamId: js.UndefOr[__string] = js.undefined
   /**
-    * The token key used for APNs Tokens.
+    * The authentication key to use for APNs tokens.
     */
   var TokenKey: js.UndefOr[__string] = js.undefined
   /**
-    * The token key used for APNs Tokens.
+    * The key identifier that's assigned to your APNs signing key, if you want Amazon Pinpoint to communicate with the APNs sandbox environment by using APNs tokens.
     */
   var TokenKeyId: js.UndefOr[__string] = js.undefined
 }

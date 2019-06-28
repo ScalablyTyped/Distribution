@@ -11,13 +11,13 @@ trait Session extends js.Object {
     */
   var Duration: js.UndefOr[__integer] = js.undefined
   /**
-    * A unique identifier for the session.
+    * The unique identifier for the session.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
     * The date and time when the session began.
     */
-  var StartTimestamp: js.UndefOr[__string] = js.undefined
+  var StartTimestamp: __string
   /**
     * The date and time when the session ended.
     */
@@ -27,15 +27,13 @@ trait Session extends js.Object {
 object Session {
   @scala.inline
   def apply(
+    Id: __string,
+    StartTimestamp: __string,
     Duration: js.UndefOr[__integer] = js.undefined,
-    Id: __string = null,
-    StartTimestamp: __string = null,
     StopTimestamp: __string = null
   ): Session = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(Id = Id, StartTimestamp = StartTimestamp)
     if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (StartTimestamp != null) __obj.updateDynamic("StartTimestamp")(StartTimestamp)
     if (StopTimestamp != null) __obj.updateDynamic("StopTimestamp")(StopTimestamp)
     __obj.asInstanceOf[Session]
   }

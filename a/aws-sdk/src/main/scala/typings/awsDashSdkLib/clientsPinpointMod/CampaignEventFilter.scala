@@ -7,23 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait CampaignEventFilter extends js.Object {
   /**
-    * An object that defines the dimensions for the event filter.
+    * The dimension settings of the event filter for the campaign.
     */
-  var Dimensions: js.UndefOr[EventDimensions] = js.undefined
+  var Dimensions: EventDimensions
   /**
-    * The type of event that causes the campaign to be sent. Possible values:
-  SYSTEM - Send the campaign when a system event occurs. See the System resource for more information.
-  ENDPOINT - Send the campaign when an endpoint event occurs. See the Event resource for more information.
+    * The type of event that causes the campaign to be sent. Valid values are: SYSTEM, sends the campaign when a system event occurs; and, ENDPOINT, sends the campaign when an endpoint event (Events resource) occurs.
     */
-  var FilterType: js.UndefOr[FilterType] = js.undefined
+  var FilterType: awsDashSdkLib.clientsPinpointMod.FilterType
 }
 
 object CampaignEventFilter {
   @scala.inline
-  def apply(Dimensions: EventDimensions = null, FilterType: FilterType = null): CampaignEventFilter = {
-    val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (FilterType != null) __obj.updateDynamic("FilterType")(FilterType.asInstanceOf[js.Any])
+  def apply(Dimensions: EventDimensions, FilterType: FilterType): CampaignEventFilter = {
+    val __obj = js.Dynamic.literal(Dimensions = Dimensions, FilterType = FilterType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CampaignEventFilter]
   }
 }

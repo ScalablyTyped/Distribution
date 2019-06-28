@@ -19,7 +19,7 @@ trait UpdateGlobalTableSettingsInput extends js.Object {
     */
   var GlobalTableName: TableName
   /**
-    * AutoScaling settings for managing provisioned write capacity for the global table.
+    * Auto scaling settings for managing provisioned write capacity for the global table.
     */
   var GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait UpdateGlobalTableSettingsInput extends js.Object {
     */
   var GlobalTableProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   /**
-    * Represents the settings for a global table in a region that will be modified.
+    * Represents the settings for a global table in a Region that will be modified.
     */
   var ReplicaSettingsUpdate: js.UndefOr[ReplicaSettingsUpdateList] = js.undefined
 }

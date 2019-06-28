@@ -7,30 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait ApplicationResponse extends js.Object {
   /**
-    * The arn for the application.
+    * The Amazon Resource Name (ARN) of the application.
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: __string
   /**
-    * The unique application ID.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
-    * The display name of the application.
+    * The display name of the application. This name is displayed as the Project name on the Amazon Pinpoint console.
     */
-  var Name: js.UndefOr[__string] = js.undefined
+  var Name: __string
   /**
-    * The Tags for the application.
+    * A string-to-string map of key-value pairs that identifies the tags that are associated with the application. Each tag consists of a required tag key and an associated tag value.
     */
   var tags: js.UndefOr[MapOf__string] = js.undefined
 }
 
 object ApplicationResponse {
   @scala.inline
-  def apply(Arn: __string = null, Id: __string = null, Name: __string = null, tags: MapOf__string = null): ApplicationResponse = {
-    val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+  def apply(Arn: __string, Id: __string, Name: __string, tags: MapOf__string = null): ApplicationResponse = {
+    val __obj = js.Dynamic.literal(Arn = Arn, Id = Id, Name = Name)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[ApplicationResponse]
   }

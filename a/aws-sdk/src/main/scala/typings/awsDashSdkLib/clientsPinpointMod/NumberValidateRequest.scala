@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait NumberValidateRequest extends js.Object {
   /**
-    * (Optional) The two-character ISO country code for the country or region where the phone number was originally registered.
+    * The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the phone number was originally registered.
     */
   var IsoCountryCode: js.UndefOr[__string] = js.undefined
   /**
-    * The phone number to get information about. The phone number that you provide should include a country code. If the number doesn't include a valid country code, the operation might result in an error.
+    * The phone number to retrieve information about. The phone number that you provide should include a valid numeric country code. Otherwise, the operation might result in an error.
     */
   var PhoneNumber: js.UndefOr[__string] = js.undefined
 }

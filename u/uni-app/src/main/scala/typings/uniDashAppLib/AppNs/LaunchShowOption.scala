@@ -6,11 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LaunchShowOption extends js.Object {
-  /** 打开小程序的路径 */
+  /**
+    * 打开小程序的路径
+    */
   var path: java.lang.String
-  /** 打开小程序的query */
+  /**
+    * 打开小程序的query
+    */
   var query: uniDashAppLib.AnyObject
-  /** 当场景为由从另一个小程序或公众号或App打开时，返回此字段 */
+  /**
+    * 当场景为由从另一个小程序或公众号或App打开时，返回此字段
+    */
   var referrerInfo: js.UndefOr[ReferrerInfo] = js.undefined
   /**
     * 打开小程序的场景值
@@ -45,7 +51,7 @@ trait LaunchShowOption extends js.Object {
     * - 1039: 摇电视
     * - 1042: 添加好友搜索框的搜索结果页
     * - 1043: 公众号模板消息
-    * - 1044: 带 shareTicket 的小程序消息卡片 [详情]((转发#获取更多转发信息))
+    * - 1044: 带 shareTicket 的小程序消息卡片
     * - 1045: 朋友圈广告
     * - 1046: 朋友圈广告详情页
     * - 1047: 扫描小程序码
@@ -84,8 +90,10 @@ trait LaunchShowOption extends js.Object {
     * - 1103: 发现栏小程序主入口，「我的小程序」列表（基础库2.2.4版本起废弃）
     * - 1104: 微信聊天主界面下拉，「我的小程序」栏（基础库2.2.4版本起废弃）
     */
-  var scene: SceneValues
-  /** shareTicket，详见 [获取更多转发信息]((转发#获取更多转发信息)) */
+  var scene: scala.Double
+  /**
+    * 打开小程序的场景值
+    */
   var shareTicket: java.lang.String
 }
 
@@ -94,11 +102,11 @@ object LaunchShowOption {
   def apply(
     path: java.lang.String,
     query: uniDashAppLib.AnyObject,
-    scene: SceneValues,
+    scene: scala.Double,
     shareTicket: java.lang.String,
     referrerInfo: ReferrerInfo = null
   ): LaunchShowOption = {
-    val __obj = js.Dynamic.literal(path = path, query = query, scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket)
+    val __obj = js.Dynamic.literal(path = path, query = query, scene = scene, shareTicket = shareTicket)
     if (referrerInfo != null) __obj.updateDynamic("referrerInfo")(referrerInfo)
     __obj.asInstanceOf[LaunchShowOption]
   }

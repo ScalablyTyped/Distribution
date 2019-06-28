@@ -11,6 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Chainable[Subject] extends js.Object {
   /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  var $$_Original: cypressLib.JQueryStatic = js.native
+  /**
     * Create an assertion. Assertions are automatically retried until they pass or time out.
     *
     * @alias should
@@ -37,6 +46,170 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("should")
   var should_Original: Chainer[Subject] = js.native
+  // HACK: This is the factory function returned when importing jQuery without a DOM. Declaring it separately breaks using the type parameter on JQueryStatic.
+  // HACK: The discriminator parameter handles the edge case of passing a Window object to JQueryStatic. It doesn't actually exist on the factory function.
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$(window: stdLib.Window, discriminator: scala.Boolean): cypressLib.JQueryStatic = js.native
+  /**
+    * Returns an empty jQuery set.
+    *
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.4
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$[TElement](): cypressLib.JQuery[TElement] = js.native
+  /**
+    * Binds a function to be executed when the DOM has finished loading.
+    *
+    * @param callback The function to execute when the DOM is ready.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // tslint:disable-next-line:no-unnecessary-generics unified-signatures
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$[TElement](callback: js.ThisFunction1[/* this */ stdLib.Document, /* $ */ this.type, scala.Unit]): cypressLib.JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
+    *
+    * @param elementArray An array containing a set of DOM elements to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
+  // tslint:disable-next-line:unified-signatures
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$[T /* <: stdLib.Element */](elementArray: js.Array[T]): cypressLib.JQuery[T] = js.native
+  @JSName("$$")
+  def $$[TElement /* <: stdLib.HTMLElement */](html: cypressLib.JQueryNs.htmlString, ownerDocument_attributes: cypressLib.JQueryNs.PlainObject[_]): cypressLib.JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    *
+    * @param object A plain object to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$[T /* <: cypressLib.JQueryNs.PlainObject[_] */](`object`: T): cypressLib.JQuery[T] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
+    *
+    * @param selection An existing jQuery object to clone.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$[T](selection: cypressLib.JQuery[T]): cypressLib.JQuery[T] = js.native
+  /**
+    * Accepts a string containing a CSS selector which is then used to match a set of elements.
+    *
+    * @param selector A string containing a selector expression
+    * @param context A DOM Element, Document, or jQuery to use as context
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector): cypressLib.JQuery[TElement] = js.native
+  @JSName("$$")
+  def $$[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector, context: cypressLib.JQuery[stdLib.HTMLElement]): cypressLib.JQuery[TElement] = js.native
+  @JSName("$$")
+  def $$[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector, context: stdLib.Document): cypressLib.JQuery[TElement] = js.native
+  @JSName("$$")
+  def $$[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector, context: stdLib.Element): cypressLib.JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
+    *
+    * @param element A DOM element to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
+  // tslint:disable-next-line:unified-signatures
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$_TElement[T /* <: stdLib.Element */](element: T): cypressLib.JQuery[T] = js.native
+  /**
+    * Creates DOM elements on the fly from the provided string of raw HTML.
+    *
+    * @param html A string of HTML to create on the fly. Note that this parses HTML, not XML.
+    *             A string defining a single, standalone, HTML element (e.g. <div/> or <div></div>).
+    * @param ownerDocument_attributes A document in which the new elements will be created.
+    *                                 An object of attributes, events, and methods to call on the newly-created element.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @since 1.4
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def $$_TElementHTMLElement[TElement /* <: stdLib.HTMLElement */](html: cypressLib.JQueryNs.htmlString): cypressLib.JQuery[TElement] = js.native
+  @JSName("$$")
+  def $$_TElementHTMLElement[TElement /* <: stdLib.HTMLElement */](html: cypressLib.JQueryNs.htmlString, ownerDocument_attributes: stdLib.Document): cypressLib.JQuery[TElement] = js.native
   // fallback
   /**
     * Create an assertion. Assertions are automatically retried until they pass or time out.
@@ -10805,7 +10978,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("off")
   def off_windowalert(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -10861,7 +11034,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("off")
   def off_windowconfirm(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
@@ -11106,7 +11279,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def on_windowalert(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -11162,7 +11335,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def on_windowconfirm(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
@@ -22088,6 +22261,20 @@ trait Chainable[Subject] extends js.Object {
   @JSName("wrap")
   def wrap_FPromiseS[F /* <: js.Promise[S] */, S](promise: F, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[S] = js.native
   /**
+    * Write to a file with the specified encoding and contents.
+    *
+    * @see https://on.cypress.io/writefile
+    ```
+    cy.writeFile('path/to/ascii.txt', 'Hello World', {
+    flag: 'a+',
+    encoding: 'ascii'
+    }).then((text) => {
+    expect(text).to.equal('Hello World') // true
+    })
+    ```
+    */
+  def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C): Chainable[C] = js.native
+  /**
     * Write to a file with the specified contents.
     *
     * @see https://on.cypress.io/writefile
@@ -22098,14 +22285,7 @@ trait Chainable[Subject] extends js.Object {
     })
     ```
     */
-  def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C): Chainable[C] = js.native
-  /**
-    * Write to a file with the specified encoding and contents.
-    *
-    * @see https://on.cypress.io/writefile
-    */
   def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C, encoding: Encodings): Chainable[C] = js.native
-  def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C, encoding: Encodings, options: stdLib.Partial[Loggable]): Chainable[C] = js.native
-  def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C, options: stdLib.Partial[Loggable]): Chainable[C] = js.native
+  def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C, options: stdLib.Partial[WriteFileOptions]): Chainable[C] = js.native
 }
 

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait LayerVersionArgs extends js.Object {
   /**
+    * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+    */
+  val code: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive]
+  ] = js.undefined
+  /**
     * A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
     */
   val compatibleRuntimes: js.UndefOr[
@@ -16,10 +22,6 @@ trait LayerVersionArgs extends js.Object {
     * Description of what your Lambda Layer does.
     */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-    */
-  val filename: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A unique name for your Lambda Layer
     */
@@ -50,9 +52,9 @@ object LayerVersionArgs {
   @scala.inline
   def apply(
     layerName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    code: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive] = null,
     compatibleRuntimes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    filename: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     licenseInfo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     s3Bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     s3Key: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -60,9 +62,9 @@ object LayerVersionArgs {
     sourceCodeHash: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): LayerVersionArgs = {
     val __obj = js.Dynamic.literal(layerName = layerName.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (compatibleRuntimes != null) __obj.updateDynamic("compatibleRuntimes")(compatibleRuntimes.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (licenseInfo != null) __obj.updateDynamic("licenseInfo")(licenseInfo.asInstanceOf[js.Any])
     if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
     if (s3Key != null) __obj.updateDynamic("s3Key")(s3Key.asInstanceOf[js.Any])

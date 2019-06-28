@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait WriteCampaignRequest extends js.Object {
   /**
-    * Treatments that are defined in addition to the default treatment.
+    * An array of requests that defines additional treatments for the campaign, in addition to the default treatment for the campaign.
     */
   var AdditionalTreatments: js.UndefOr[ListOfWriteTreatmentResource] = js.undefined
   /**
-    * A description of the campaign.
+    * The custom description of the campaign.
     */
   var Description: js.UndefOr[__string] = js.undefined
   /**
-    * The allocated percentage of end users who will not receive messages from this campaign.
+    * The allocated percentage of users (segment members) who shouldn't receive messages from the campaign.
     */
   var HoldoutPercent: js.UndefOr[__integer] = js.undefined
   /**
-    * Campaign hook information.
+    * The settings for the AWS Lambda function to use as a code hook for the campaign.
     */
   var Hook: js.UndefOr[CampaignHook] = js.undefined
   /**
-    * Indicates whether the campaign is paused. A paused campaign does not send messages unless you resume it by setting IsPaused to false.
+    * Specifies whether to pause the campaign. A paused campaign doesn't run unless you resume it by setting this value to false.
     */
   var IsPaused: js.UndefOr[__boolean] = js.undefined
   /**
-    * The campaign limits settings.
+    * The messaging limits for the campaign.
     */
   var Limits: js.UndefOr[CampaignLimits] = js.undefined
   /**
-    * The message configuration settings.
+    * The message configuration settings for the campaign.
     */
   var MessageConfiguration: js.UndefOr[MessageConfiguration] = js.undefined
   /**
@@ -39,27 +39,27 @@ trait WriteCampaignRequest extends js.Object {
     */
   var Name: js.UndefOr[__string] = js.undefined
   /**
-    * The campaign schedule.
+    * The schedule settings for the campaign.
     */
   var Schedule: js.UndefOr[Schedule] = js.undefined
   /**
-    * The ID of the segment to which the campaign sends messages.
+    * The unique identifier for the segment to associate with the campaign.
     */
   var SegmentId: js.UndefOr[__string] = js.undefined
   /**
-    * The version of the segment to which the campaign sends messages.
+    * The version of the segment to associate with the campaign.
     */
   var SegmentVersion: js.UndefOr[__integer] = js.undefined
   /**
-    * A custom description for the treatment.
+    * The custom description of a variation of the campaign to use for A/B testing.
     */
   var TreatmentDescription: js.UndefOr[__string] = js.undefined
   /**
-    * The custom name of a variation of the campaign used for A/B testing.
+    * The custom name of a variation of the campaign to use for A/B testing.
     */
   var TreatmentName: js.UndefOr[__string] = js.undefined
   /**
-    * The Tags for the campaign.
+    * A string-to-string map of key-value pairs that defines the tags to associate with the campaign. Each tag consists of a required tag key and an associated tag value.
     */
   var tags: js.UndefOr[MapOf__string] = js.undefined
 }

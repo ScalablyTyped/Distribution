@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonapi-serializer"
-version := "3.6-dt-20190410Z-2b66c1"
+version := "3.6-dt-20190627Z-134c45"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

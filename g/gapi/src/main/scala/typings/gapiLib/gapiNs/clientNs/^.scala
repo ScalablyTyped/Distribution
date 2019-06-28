@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.client")
 @js.native
 object ^ extends js.Object {
+  def getToken(): gapiLib.GoogleApiOAuth2TokenObject = js.native
   def init(args: gapiLib.Anon_ApiKey): js.Promise[scala.Unit] = js.native
   def load(name: java.lang.String, version: java.lang.String): js.Promise[scala.Unit] = js.native
   def load(name: java.lang.String, version: java.lang.String, callback: js.Function0[_]): scala.Unit = js.native

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait CampaignHook extends js.Object {
   /**
-    * Lambda function name or arn to be called for delivery
+    * The name or Amazon Resource Name (ARN) of the AWS Lambda function that Amazon Pinpoint invokes to send messages for a campaign.
     */
   var LambdaFunctionName: js.UndefOr[__string] = js.undefined
   /**
-    * What mode Lambda should be invoked in.
+    * Specifies which Lambda mode to use when invoking the AWS Lambda function.
     */
   var Mode: js.UndefOr[Mode] = js.undefined
   /**
-    * Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request
+    *  The web URL that Amazon Pinpoint calls to invoke the AWS Lambda function over HTTPS.
     */
   var WebUrl: js.UndefOr[__string] = js.undefined
 }

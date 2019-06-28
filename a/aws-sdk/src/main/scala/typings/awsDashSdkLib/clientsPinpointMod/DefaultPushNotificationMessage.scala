@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait DefaultPushNotificationMessage extends js.Object {
   /**
-    * The action that occurs if the user taps a push notification delivered by the campaign: OPEN_APP - Your app launches, or it becomes the foreground app if it has been sent to the background. This is the default action. DEEP_LINK - Uses deep linking features in iOS and Android to open your app and display a designated user interface within the app. URL - The default mobile browser on the user's device launches and opens a web page at the URL you specify. Possible values include: OPEN_APP | DEEP_LINK | URL
+    * The default action to occur if a recipient taps the push notification. Valid values are: OPEN_APP - Your app opens or it becomes the foreground app if it was sent to the background. This is the default action. DEEP_LINK - Your app opens and displays a designated user interface in the app. This setting uses the deep-linking features of the iOS and Android platforms. URL - The default mobile browser on the recipient's device opens and loads the web page at a URL that you specify.
     */
   var Action: js.UndefOr[Action] = js.undefined
   /**
-    * The message body of the notification.
+    * The default body of the notification message.
     */
   var Body: js.UndefOr[__string] = js.undefined
   /**
-    * The data payload used for a silent push. This payload is added to the notifications' data.pinpoint.jsonBody' object
+    * The JSON data payload to use for the default push notification, if the notification is a silent push notification. This payload is added to the data.pinpoint.jsonBody object of the notification.
     */
   var Data: js.UndefOr[MapOf__string] = js.undefined
   /**
-    * Indicates if the message should display on the recipient's device. You can use silent pushes for remote configuration or to deliver messages to in-app notification centers.
+    * Specifies whether the default notification is a silent push notification, which is a push notification that doesn't display on a recipient's device. Silent push notifications can be used for cases such as updating an app's configuration or delivering messages to an in-app notification center.
     */
   var SilentPush: js.UndefOr[__boolean] = js.undefined
   /**
-    * Default message substitutions. Can be overridden by individual address substitutions.
+    * The default message variables to use in the notification message. You can override the default variables with individual address variables.
     */
   var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
   /**
-    * The message title that displays above the message on the user's device.
+    * The default title to display above the notification message on a recipient's device.
     */
   var Title: js.UndefOr[__string] = js.undefined
   /**
-    * The URL to open in the user's mobile browser. Used if the value for Action is URL.
+    * The default URL to open in a recipient's default mobile browser, if a recipient taps the push notification and the value of the Action property is URL.
     */
   var Url: js.UndefOr[__string] = js.undefined
 }

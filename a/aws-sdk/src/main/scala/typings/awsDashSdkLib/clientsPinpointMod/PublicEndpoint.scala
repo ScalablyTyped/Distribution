@@ -7,50 +7,47 @@ import scala.scalajs.js.annotation._
 
 trait PublicEndpoint extends js.Object {
   /**
-    * The unique identifier for the recipient. For example, an address could be a device token, email address, or mobile phone number.
+    * The unique identifier for the recipient, such as a device token, email address, or mobile phone number.
     */
   var Address: js.UndefOr[__string] = js.undefined
   /**
-    * Custom attributes that your app reports to Amazon Pinpoint. You can use these attributes as selection criteria when you create a segment.
+    * One or more custom attributes that describe the endpoint by associating a name with an array of values. You can use these attributes as filter criteria when you create segments.
     */
   var Attributes: js.UndefOr[MapOfListOf__string] = js.undefined
   /**
-    * The channel type.
-  Valid values: APNS, GCM
+    * The channel that's used when sending messages or push notifications to the endpoint.
     */
   var ChannelType: js.UndefOr[ChannelType] = js.undefined
   /**
-    * The endpoint demographic attributes.
+    * The demographic information for the endpoint, such as the time zone and platform.
     */
   var Demographic: js.UndefOr[EndpointDemographic] = js.undefined
   /**
-    * The date and time when the endpoint was last updated, in  ISO 8601 format.
+    * The date and time, in ISO 8601 format, when the endpoint was last updated.
     */
   var EffectiveDate: js.UndefOr[__string] = js.undefined
   /**
-    * The status of the endpoint. If the update fails, the value is INACTIVE. If the endpoint is updated successfully, the value is ACTIVE.
+    * The status of the update request for the endpoint. Possible values are: INACTIVE, the update failed; and, ACTIVE, the endpoint was updated successfully.
     */
   var EndpointStatus: js.UndefOr[__string] = js.undefined
   /**
-    * The endpoint location attributes.
+    * The geographic information for the endpoint.
     */
   var Location: js.UndefOr[EndpointLocation] = js.undefined
   /**
-    * Custom metrics that your app reports to Amazon Pinpoint.
+    * One or more custom metrics that your app reports to Amazon Pinpoint for the endpoint.
     */
   var Metrics: js.UndefOr[MapOf__double] = js.undefined
   /**
-    * Indicates whether a user has opted out of receiving messages with one of the following values:
-  ALL - User has opted out of all messages.
-  NONE - Users has not opted out and receives all messages.
+    * Specifies whether the user who's associated with the endpoint has opted out of receiving messages and push notifications from you. Possible values are: ALL, the user has opted out and doesn't want to receive any messages or push notifications; and, NONE, the user hasn't opted out and wants to receive all messages and push notifications.
     */
   var OptOut: js.UndefOr[__string] = js.undefined
   /**
-    * A unique identifier that is generated each time the endpoint is updated.
+    * A unique identifier that's generated each time the endpoint is updated.
     */
   var RequestId: js.UndefOr[__string] = js.undefined
   /**
-    * Custom user-specific attributes that your app reports to Amazon Pinpoint.
+    * One or more custom user attributes that your app reports to Amazon Pinpoint for the user who's associated with the endpoint.
     */
   var User: js.UndefOr[EndpointUser] = js.undefined
 }

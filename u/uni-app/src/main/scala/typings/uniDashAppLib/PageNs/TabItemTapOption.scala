@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait TabItemTapOption extends js.Object {
   /**
-    * 被点击tabItem的序号，从0开始
+    * 被点击 tabItem 的序号，从0开始
     */
   var index: java.lang.String
   /**
-    * 被点击tabItem的页面路径
+    * 被点击 tabItem 的页面路径
     */
   var pagePath: java.lang.String
   /**
-    * 被点击tabItem的按钮文字
+    * 被点击 tabItem 的按钮文字
     */
   var text: java.lang.String
 }

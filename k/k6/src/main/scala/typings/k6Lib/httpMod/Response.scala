@@ -26,8 +26,8 @@ trait Response extends js.Object {
   def clickLink[RT /* <: js.UndefOr[ResponseType] */](args: k6Lib.Anon_Params[RT]): RefinedResponse[RT] = js.native
   def html(): k6Lib.htmlMod.Selection = js.native
   def html(selector: java.lang.String): k6Lib.htmlMod.Selection = js.native
-  def json(): js.UndefOr[k6Lib.k6Mod.JSON] = js.native
-  def json(selector: java.lang.String): js.UndefOr[k6Lib.k6Mod.JSON] = js.native
+  def json(): js.UndefOr[k6Lib.k6Mod.JSONValue] = js.native
+  def json(selector: java.lang.String): js.UndefOr[k6Lib.k6Mod.JSONValue] = js.native
   def submitForm[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
   def submitForm[RT /* <: js.UndefOr[ResponseType] */](args: k6Lib.Anon_Fields[RT]): RefinedResponse[RT] = js.native
 }

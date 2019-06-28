@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pkgcloud"
-version := "1.7-dt-20190606Z-3183fa"
+version := "1.7-dt-20190627Z-80a26b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

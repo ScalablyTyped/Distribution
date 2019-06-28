@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait EndpointLocation extends js.Object {
   /**
-    * The city where the endpoint is located.
+    * The name of the city where the endpoint is located.
     */
   var City: js.UndefOr[__string] = js.undefined
   /**
-    * The two-letter code for the country or region of the endpoint. Specified as an ISO 3166-1 alpha-2 code, such as "US" for the United States.
+    * The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the endpoint is located. For example, US for the United States.
     */
   var Country: js.UndefOr[__string] = js.undefined
   /**
-    * The latitude of the endpoint location, rounded to one decimal place.
+    * The latitude coordinate of the endpoint location, rounded to one decimal place.
     */
   var Latitude: js.UndefOr[__double] = js.undefined
   /**
-    * The longitude of the endpoint location, rounded to one decimal place.
+    * The longitude coordinate of the endpoint location, rounded to one decimal place.
     */
   var Longitude: js.UndefOr[__double] = js.undefined
   /**
-    * The postal code or zip code of the endpoint.
+    * The postal or ZIP code for the area where the endpoint is located.
     */
   var PostalCode: js.UndefOr[__string] = js.undefined
   /**
-    * The region of the endpoint location. For example, in the United States, this corresponds to a state.
+    * The name of the region where the endpoint is located. For locations in the United States, this value is the name of a state.
     */
   var Region: js.UndefOr[__string] = js.undefined
 }

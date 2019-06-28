@@ -7,28 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait AddressConfiguration extends js.Object {
   /**
-    * Body override. If specified will override default body.
+    * The message body to use instead of the default message body. This value overrides the default message body.
     */
   var BodyOverride: js.UndefOr[__string] = js.undefined
   /**
-    * The channel type.
-  Valid values: GCM | APNS | APNS_SANDBOX | APNS_VOIP | APNS_VOIP_SANDBOX | ADM | SMS | EMAIL | BAIDU
+    * The channel to use when sending the message.
     */
   var ChannelType: js.UndefOr[ChannelType] = js.undefined
   /**
-    * A map of custom attributes to attributes to be attached to the message for this address. This payload is added to the push notification's 'data.pinpoint' object or added to the email/sms delivery receipt event attributes.
+    * An object that maps custom attributes to attributes for the address and is attached to the message. For a push notification, this payload is added to the data.pinpoint object. For an email or text message, this payload is added to email/SMS delivery receipt event attributes.
     */
   var Context: js.UndefOr[MapOf__string] = js.undefined
   /**
-    * The Raw JSON formatted string to be used as the payload. This value overrides the message.
+    * The raw, JSON-formatted string to use as the payload for the notification message. This value overrides the message.
     */
   var RawContent: js.UndefOr[__string] = js.undefined
   /**
-    * A map of substitution values for the message to be merged with the DefaultMessage's substitutions. Substitutions on this map take precedence over the all other substitutions.
+    * An object that maps variable values for the message. Amazon Pinpoint merges these values with the variable values specified by properties of the DefaultMessage object. The substitutions in this map take precedence over all other substitutions.
     */
   var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
   /**
-    * Title override. If specified will override default title if applicable.
+    * The message title to use instead of the default message title. This value overrides the default message title.
     */
   var TitleOverride: js.UndefOr[__string] = js.undefined
 }

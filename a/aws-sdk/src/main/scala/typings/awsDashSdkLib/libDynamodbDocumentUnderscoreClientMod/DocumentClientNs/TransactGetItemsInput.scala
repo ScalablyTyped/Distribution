@@ -11,7 +11,7 @@ trait TransactGetItemsInput extends js.Object {
     */
   var ReturnConsumedCapacity: js.UndefOr[ReturnConsumedCapacity] = js.undefined
   /**
-    * An ordered array of up to 10 TransactGetItem objects, each of which contains a Get structure.
+    * An ordered array of up to 25 TransactGetItem objects, each of which contains a Get structure.
     */
   var TransactItems: TransactGetItemList
 }

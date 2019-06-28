@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-parser
 
-Typings are for version 4.x
+Typings are for version 8.0.0
 
 ## Library description:
 Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers
@@ -24,22 +24,11 @@ Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for swagger-parser 4.x
-// Project: https://apidevtools.org/swagger-parser
-// Definitions by: Tobias Wolff <https://github.com/Tobias4872>
-//                 Eric Henry <https://github.com/EricHenry>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

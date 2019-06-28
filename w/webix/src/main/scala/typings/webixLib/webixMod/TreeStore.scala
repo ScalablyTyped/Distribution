@@ -49,5 +49,6 @@ trait TreeStore extends js.Object {
   def remove(id: java.lang.String): scala.Unit = js.native
   def remove(id: scala.Double): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
+  def serialize(all: scala.Boolean): js.Array[_] = js.native
 }
 

@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait NumberValidateResponse extends js.Object {
   /**
-    * The carrier or servive provider that the phone number is currently registered with.
+    * The carrier or service provider that the phone number is currently registered with.
     */
   var Carrier: js.UndefOr[__string] = js.undefined
   /**
-    * The city where the phone number was originally registered.
+    * The name of the city where the phone number was originally registered.
     */
   var City: js.UndefOr[__string] = js.undefined
   /**
-    * The cleansed phone number, shown in E.164 format.
+    * The cleansed phone number, in E.164 format, for the location where the phone number was originally registered.
     */
   var CleansedPhoneNumberE164: js.UndefOr[__string] = js.undefined
   /**
-    * The cleansed phone number, shown in the local phone number format.
+    * The cleansed phone number, in the format for the location where the phone number was originally registered.
     */
   var CleansedPhoneNumberNational: js.UndefOr[__string] = js.undefined
   /**
-    * The country or region where the phone number was originally registered.
+    * The name of the country or region where the phone number was originally registered.
     */
   var Country: js.UndefOr[__string] = js.undefined
   /**
-    * The two-character ISO code for the country or region where the phone number was originally registered.
+    * The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the phone number was originally registered.
     */
   var CountryCodeIso2: js.UndefOr[__string] = js.undefined
   /**
@@ -35,23 +35,24 @@ trait NumberValidateResponse extends js.Object {
     */
   var CountryCodeNumeric: js.UndefOr[__string] = js.undefined
   /**
-    * The county where the phone number was originally registered.
+    * The name of the county where the phone number was originally registered.
     */
   var County: js.UndefOr[__string] = js.undefined
   /**
-    * The two-character code (in ISO 3166-1 alpha-2 format) for the country or region in the request body.
+    * The two-character code, in ISO 3166-1 alpha-2 format, that was sent in the request body.
     */
   var OriginalCountryCodeIso2: js.UndefOr[__string] = js.undefined
   /**
-    * The phone number that you included in the request body.
+    * The phone number that was sent in the request body.
     */
   var OriginalPhoneNumber: js.UndefOr[__string] = js.undefined
   /**
-    * A description of the phone type. Possible values are MOBILE, LANDLINE, VOIP, INVALID, PREPAID, and OTHER.
+    * The description of the phone type. Valid values are: MOBILE, LANDLINE, VOIP,
+    INVALID, PREPAID, and OTHER.
     */
   var PhoneType: js.UndefOr[__string] = js.undefined
   /**
-    * The phone type, represented by an integer. Possible values include 0 (MOBILE), 1 (LANDLINE), 2 (VOIP), 3 (INVALID), 4 (OTHER), and 5 (PREPAID).
+    * The phone type, represented by an integer. Valid values are: 0 (mobile), 1 (landline), 2 (VoIP), 3 (invalid), 4 (other), and 5 (prepaid).
     */
   var PhoneTypeCode: js.UndefOr[__integer] = js.undefined
   /**
@@ -59,7 +60,7 @@ trait NumberValidateResponse extends js.Object {
     */
   var Timezone: js.UndefOr[__string] = js.undefined
   /**
-    * The postal code for the location where the phone number was originally registered.
+    * The postal or ZIP code for the location where the phone number was originally registered.
     */
   var ZipCode: js.UndefOr[__string] = js.undefined
 }

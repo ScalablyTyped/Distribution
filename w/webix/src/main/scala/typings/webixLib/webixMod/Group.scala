@@ -5,17 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Group extends js.Object {
-  def group(config: js.Any, mode: scala.Boolean): scala.Unit
-  def ungroup(mode: scala.Boolean): scala.Unit
-}
-
-object Group {
-  @scala.inline
-  def apply(group: (js.Any, scala.Boolean) => scala.Unit, ungroup: scala.Boolean => scala.Unit): Group = {
-    val __obj = js.Dynamic.literal(group = js.Any.fromFunction2(group), ungroup = js.Any.fromFunction1(ungroup))
-  
-    __obj.asInstanceOf[Group]
-  }
+  def group(config: js.Any): scala.Unit = js.native
+  def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+  def group(config: js.Any, target: scala.Double): scala.Unit = js.native
+  def ungroup(mode: scala.Boolean): scala.Unit = js.native
 }
 

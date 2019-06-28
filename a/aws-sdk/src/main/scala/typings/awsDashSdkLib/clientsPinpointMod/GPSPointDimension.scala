@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait GPSPointDimension extends js.Object {
   /**
-    * Coordinate to measure distance from.
+    * The GPS coordinates to measure distance from.
     */
-  var Coordinates: js.UndefOr[GPSCoordinates] = js.undefined
+  var Coordinates: GPSCoordinates
   /**
-    * Range in kilometers from the coordinate.
+    * The range, in kilometers, from the GPS coordinates.
     */
   var RangeInKilometers: js.UndefOr[__double] = js.undefined
 }
 
 object GPSPointDimension {
   @scala.inline
-  def apply(Coordinates: GPSCoordinates = null, RangeInKilometers: js.UndefOr[__double] = js.undefined): GPSPointDimension = {
-    val __obj = js.Dynamic.literal()
-    if (Coordinates != null) __obj.updateDynamic("Coordinates")(Coordinates)
+  def apply(Coordinates: GPSCoordinates, RangeInKilometers: js.UndefOr[__double] = js.undefined): GPSPointDimension = {
+    val __obj = js.Dynamic.literal(Coordinates = Coordinates)
     if (!js.isUndefined(RangeInKilometers)) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers)
     __obj.asInstanceOf[GPSPointDimension]
   }

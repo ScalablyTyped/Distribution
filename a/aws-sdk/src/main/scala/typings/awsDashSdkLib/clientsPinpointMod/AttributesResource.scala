@@ -7,25 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait AttributesResource extends js.Object {
   /**
-    * The unique ID for the application.
+    * The unique identifier for the application.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: __string
   /**
-    * The attribute type for the application.
+    * The type of attribute or attributes that were removed from the endpoints. Valid values are: endpoint-custom-attributes - Custom attributes that describe endpoints endpoint-custom-metrics - Custom metrics that your app reports to Amazon Pinpoint for endpoints endpoint-user-attributes - Custom attributes that describe users
     */
-  var AttributeType: js.UndefOr[__string] = js.undefined
+  var AttributeType: __string
   /**
-    * The attributes for the application.
+    * An array that specifies the names of the attributes that were removed from the endpoints.
     */
   var Attributes: js.UndefOr[ListOf__string] = js.undefined
 }
 
 object AttributesResource {
   @scala.inline
-  def apply(ApplicationId: __string = null, AttributeType: __string = null, Attributes: ListOf__string = null): AttributesResource = {
-    val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType)
+  def apply(ApplicationId: __string, AttributeType: __string, Attributes: ListOf__string = null): AttributesResource = {
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, AttributeType = AttributeType)
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
     __obj.asInstanceOf[AttributesResource]
   }

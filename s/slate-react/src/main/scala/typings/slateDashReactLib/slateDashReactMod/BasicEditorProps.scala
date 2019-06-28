@@ -11,7 +11,7 @@ trait BasicEditorProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* change */ slateDashReactLib.Anon_Operations, _]] = js.undefined
   var placeholder: js.UndefOr[js.Any] = js.undefined
-  var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
+  var plugins: js.UndefOr[Plugins] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var schema: js.UndefOr[slateLib.slateMod.SchemaProperties] = js.undefined
@@ -30,7 +30,7 @@ object BasicEditorProps {
     className: java.lang.String = null,
     onChange: /* change */ slateDashReactLib.Anon_Operations => _ = null,
     placeholder: js.Any = null,
-    plugins: js.Array[Plugin] = null,
+    plugins: Plugins = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null,
     schema: slateLib.slateMod.SchemaProperties = null,

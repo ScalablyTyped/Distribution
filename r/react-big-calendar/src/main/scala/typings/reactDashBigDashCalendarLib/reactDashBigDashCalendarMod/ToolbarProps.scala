@@ -12,9 +12,9 @@ trait ToolbarProps extends js.Object {
   var label: java.lang.String = js.native
   var localizer: reactDashBigDashCalendarLib.Anon_Messages = js.native
   var view: View = js.native
-  var views: Views = js.native
-  def onNavigate(navigate: Navigate): scala.Unit = js.native
-  def onNavigate(navigate: Navigate, date: stdLib.Date): scala.Unit = js.native
+  var views: ViewsProps = js.native
+  def onNavigate(navigate: NavigateAction): scala.Unit = js.native
+  def onNavigate(navigate: NavigateAction, date: stdLib.Date): scala.Unit = js.native
   def onView(view: View): scala.Unit = js.native
 }
 

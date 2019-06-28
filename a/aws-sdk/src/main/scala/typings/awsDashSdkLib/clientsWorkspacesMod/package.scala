@@ -109,6 +109,7 @@ package object clientsWorkspacesMod {
     - java.lang.String
   */
   type ReconnectEnum = _ReconnectEnum | java.lang.String
+  type Region = java.lang.String
   type RegistrationCode = java.lang.String
   type ResourceIdList = js.Array[NonEmptyString]
   type RootVolumeSizeGib = scala.Double
@@ -120,6 +121,7 @@ package object clientsWorkspacesMod {
   type RunningMode = _RunningMode | java.lang.String
   type RunningModeAutoStopTimeoutInMinutes = scala.Double
   type SecurityGroupId = java.lang.String
+  type SnapshotList = js.Array[Snapshot]
   type StartWorkspaceRequests = js.Array[StartRequest]
   type StopWorkspaceRequests = js.Array[StopRequest]
   type SubnetId = java.lang.String
@@ -194,6 +196,7 @@ package object clientsWorkspacesMod {
     - awsDashSdkLib.awsDashSdkLibStrings.REBOOTING
     - awsDashSdkLib.awsDashSdkLibStrings.STARTING
     - awsDashSdkLib.awsDashSdkLibStrings.REBUILDING
+    - awsDashSdkLib.awsDashSdkLibStrings.RESTORING
     - awsDashSdkLib.awsDashSdkLibStrings.MAINTENANCE
     - awsDashSdkLib.awsDashSdkLibStrings.ADMIN_MAINTENANCE
     - awsDashSdkLib.awsDashSdkLibStrings.TERMINATING

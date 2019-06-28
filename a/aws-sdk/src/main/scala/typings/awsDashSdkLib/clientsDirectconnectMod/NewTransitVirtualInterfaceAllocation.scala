@@ -27,9 +27,13 @@ trait NewTransitVirtualInterfaceAllocation extends js.Object {
     */
   var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
   /**
-    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500. 
+    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 8500. The default value is 1500. 
     */
   var mtu: js.UndefOr[MTU] = js.undefined
+  /**
+    * Any tags assigned to the transit virtual interface.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
   /**
     * The name of the virtual interface assigned by the customer network.
     */
@@ -49,6 +53,7 @@ object NewTransitVirtualInterfaceAllocation {
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null,
     mtu: js.UndefOr[MTU] = js.undefined,
+    tags: TagList = null,
     virtualInterfaceName: VirtualInterfaceName = null,
     vlan: js.UndefOr[VLAN] = js.undefined
   ): NewTransitVirtualInterfaceAllocation = {
@@ -59,6 +64,7 @@ object NewTransitVirtualInterfaceAllocation {
     if (authKey != null) __obj.updateDynamic("authKey")(authKey)
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress)
     if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (virtualInterfaceName != null) __obj.updateDynamic("virtualInterfaceName")(virtualInterfaceName)
     if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan)
     __obj.asInstanceOf[NewTransitVirtualInterfaceAllocation]

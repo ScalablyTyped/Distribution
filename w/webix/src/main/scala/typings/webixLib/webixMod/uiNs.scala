@@ -64,6 +64,7 @@ object uiNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait abslayoutEventName extends js.Object
   
@@ -113,7 +114,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multi: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var panelClass: js.UndefOr[java.lang.String] = js.undefined
@@ -130,6 +131,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterExpand
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait accordionEventName extends js.Object
   
@@ -178,6 +180,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -215,8 +218,63 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait accordionitemEventName extends js.Object
+  
+  @js.native
+  class align () extends baseview {
+    @JSName("$scope")
+    var $scope: js.Any = js.native
+    @JSName("config")
+    var config_align: alignConfig = js.native
+    def getBody(): baseview = js.native
+  }
+  
+  trait alignConfig extends js.Object {
+    var align: js.UndefOr[java.lang.String] = js.undefined
+    var animate: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[js.Any] = js.undefined
+    var borderless: js.UndefOr[scala.Boolean] = js.undefined
+    var bottom: js.UndefOr[scala.Double] = js.undefined
+    var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
+    var css: js.UndefOr[js.Any] = js.undefined
+    var disabled: js.UndefOr[scala.Boolean] = js.undefined
+    var gravity: js.UndefOr[scala.Double] = js.undefined
+    var height: js.UndefOr[scala.Double] = js.undefined
+    var hidden: js.UndefOr[scala.Boolean] = js.undefined
+    var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
+    var left: js.UndefOr[scala.Double] = js.undefined
+    var maxHeight: js.UndefOr[scala.Double] = js.undefined
+    var maxWidth: js.UndefOr[scala.Double] = js.undefined
+    var minHeight: js.UndefOr[scala.Double] = js.undefined
+    var minWidth: js.UndefOr[scala.Double] = js.undefined
+    var right: js.UndefOr[scala.Double] = js.undefined
+    var top: js.UndefOr[scala.Double] = js.undefined
+    var view: js.UndefOr[java.lang.String] = js.undefined
+    var width: js.UndefOr[scala.Double] = js.undefined
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
+  */
+  trait alignEventName extends js.Object
   
   @js.native
   class barcode () extends baseview {
@@ -242,6 +300,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -271,6 +330,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait barcodeEventName extends js.Object
   
@@ -326,6 +386,7 @@ object uiNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait baselayoutEventName extends js.Object
   
@@ -393,6 +454,7 @@ object uiNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait baseviewEventName extends js.Object
   
@@ -402,16 +464,9 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_bullet: bulletConfig = js.native
-    def attachEvent(`type`: bulletEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: bulletEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
-    def blockEvent(): scala.Unit = js.native
-    def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def getValue(): scala.Double = js.native
-    def hasEvent(name: java.lang.String): scala.Boolean = js.native
-    def mapEvent(map: js.Any): scala.Unit = js.native
+    def getValue(bullet_value: scala.Double): scala.Unit = js.native
+    def refresh(): scala.Unit = js.native
     def setValue(new_value: scala.Double): scala.Unit = js.native
-    def unblockEvent(): scala.Unit = js.native
   }
   
   trait bulletConfig extends js.Object {
@@ -428,6 +483,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelHeight: js.UndefOr[scala.Double] = js.undefined
     var labelWidth: js.UndefOr[scala.Double] = js.undefined
@@ -439,11 +495,11 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minRange: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var placeholder: js.UndefOr[java.lang.String] = js.undefined
+    var placeholder: js.UndefOr[js.Any] = js.undefined
     var scale: js.UndefOr[js.Any] = js.undefined
     var smoothFlow: js.UndefOr[scala.Boolean] = js.undefined
     var stroke: js.UndefOr[scala.Double] = js.undefined
+    var tickSize: js.UndefOr[scala.Double] = js.undefined
     var value: js.UndefOr[scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -465,6 +521,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait bulletEventName extends js.Object
   
@@ -491,6 +548,12 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: buttonEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: buttonEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -529,6 +592,7 @@ object uiNs extends js.Object {
     var image: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -539,7 +603,7 @@ object uiNs extends js.Object {
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -566,6 +630,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait buttonEventName extends js.Object
   
@@ -612,6 +677,7 @@ object uiNs extends js.Object {
   trait calendarConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var blockDates: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var blockTime: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var calendarHeader: js.UndefOr[java.lang.String] = js.undefined
     var calendarTime: js.UndefOr[java.lang.String] = js.undefined
@@ -629,6 +695,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var icons: js.UndefOr[js.Any] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxDate: js.UndefOr[webixLib.webixMod.Date | java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxTime: js.UndefOr[java.lang.String] = js.undefined
@@ -649,6 +716,7 @@ object uiNs extends js.Object {
     var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var select: js.UndefOr[scala.Boolean] = js.undefined
     var skipEmptyWeeks: js.UndefOr[scala.Boolean] = js.undefined
+    var timeIcon: js.UndefOr[java.lang.String] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
     var timepickerHeight: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -693,6 +761,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait calendarEventName extends js.Object
   
@@ -735,6 +804,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -765,6 +835,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait carouselEventName extends js.Object
   
@@ -785,6 +856,12 @@ object uiNs extends js.Object {
     var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var presets: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addSeries(obj: js.Any): scala.Unit = js.native
@@ -822,7 +899,9 @@ object uiNs extends js.Object {
     def getNextId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def hideSeries(index: scala.Double): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
@@ -834,7 +913,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def on_click(args: js.Any*): js.Any = js.native
@@ -850,6 +929,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def showSeries(index: scala.Double): scala.Unit = js.native
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
@@ -859,6 +939,7 @@ object uiNs extends js.Object {
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait chartConfig extends js.Object {
@@ -869,6 +950,7 @@ object uiNs extends js.Object {
     var barWidth: js.UndefOr[scala.Double] = js.undefined
     var border: js.UndefOr[scala.Boolean] = js.undefined
     var borderColor: js.UndefOr[java.lang.String] = js.undefined
+    var borderWidth: js.UndefOr[scala.Double] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var cant: js.UndefOr[scala.Double] = js.undefined
     var cellWidth: js.UndefOr[scala.Double] = js.undefined
@@ -890,6 +972,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var labelOffset: js.UndefOr[scala.Double] = js.undefined
     var legend: js.UndefOr[js.Any] = js.undefined
@@ -919,7 +1002,7 @@ object uiNs extends js.Object {
     var scheme: js.UndefOr[js.Any] = js.undefined
     var series: js.UndefOr[js.Any] = js.undefined
     var shadow: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var value: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
@@ -957,6 +1040,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onItemClick
     - webixLib.webixLibStrings.onItemDblClick
     - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLegendClick
     - webixLib.webixLibStrings.onLoadError
     - webixLib.webixLibStrings.onLongTouch
     - webixLib.webixLibStrings.onMouseMove
@@ -964,16 +1048,20 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onMouseOut
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait chartEventName extends js.Object
   
   @js.native
   class checkbox () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -1009,6 +1097,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: checkboxEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: checkboxEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -1036,7 +1130,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -1054,9 +1147,9 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -1073,7 +1166,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var uncheckValue: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
@@ -1102,6 +1195,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait checkboxEventName extends js.Object
   
@@ -1119,7 +1213,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: checksuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getButton(): baseview = js.native
@@ -1214,6 +1307,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait checksuggestEventName extends js.Object
   
@@ -1252,6 +1346,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxLightness: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -1287,11 +1382,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait colorboardEventName extends js.Object
   
   @js.native
   class colorpicker () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -1327,6 +1425,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: colorpickerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: colorpickerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -1373,10 +1477,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -1388,6 +1492,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
+    var point: js.UndefOr[scala.Boolean] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
     var relatedAction: js.UndefOr[java.lang.String] = js.undefined
@@ -1396,7 +1501,7 @@ object uiNs extends js.Object {
     var stringResult: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -1424,11 +1529,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait colorpickerEventName extends js.Object
   
   @js.native
   class combo () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -1464,6 +1572,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: comboEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: comboEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -1493,7 +1607,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -1511,10 +1624,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -1534,7 +1647,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
@@ -1563,8 +1676,92 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait comboEventName extends js.Object
+  
+  @js.native
+  class comments () extends baseview {
+    @JSName("$onLoad")
+    var $onLoad_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("config")
+    var config_comments: commentsConfig = js.native
+    @JSName("$exportView")
+    def $exportView(): baseview = js.native
+    @JSName("$onLoad")
+    def $onLoad(args: js.Any*): js.Any = js.native
+    def attachEvent(`type`: commentsEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: commentsEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def blockEvent(): scala.Unit = js.native
+    def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
+    def detachEvent(id: java.lang.String): scala.Unit = js.native
+    def edit(id: java.lang.String): scala.Unit = js.native
+    def edit(id: scala.Double): scala.Unit = js.native
+    def getMenu(): js.Any = js.native
+    def getUsers(): webixLib.webixMod.DataCollection = js.native
+    def hasEvent(name: java.lang.String): scala.Boolean = js.native
+    def load(url: java.lang.String): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def mapEvent(map: js.Any): scala.Unit = js.native
+    def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
+    def setCurrentUser(id: java.lang.String): scala.Unit = js.native
+    def setCurrentUser(id: scala.Double): scala.Unit = js.native
+    def unblockEvent(): scala.Unit = js.native
+  }
+  
+  trait commentsConfig extends js.Object {
+    var animate: js.UndefOr[js.Any] = js.undefined
+    var borderless: js.UndefOr[scala.Boolean] = js.undefined
+    var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
+    var css: js.UndefOr[js.Any] = js.undefined
+    var currentUser: js.UndefOr[scala.Double] = js.undefined
+    var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
+    var datatype: js.UndefOr[java.lang.String] = js.undefined
+    var disabled: js.UndefOr[scala.Boolean] = js.undefined
+    var gravity: js.UndefOr[scala.Double] = js.undefined
+    var height: js.UndefOr[scala.Double] = js.undefined
+    var hidden: js.UndefOr[scala.Boolean] = js.undefined
+    var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var listItem: js.UndefOr[js.Any] = js.undefined
+    var maxHeight: js.UndefOr[scala.Double] = js.undefined
+    var maxWidth: js.UndefOr[scala.Double] = js.undefined
+    var mentions: js.UndefOr[scala.Boolean] = js.undefined
+    var minHeight: js.UndefOr[scala.Double] = js.undefined
+    var minWidth: js.UndefOr[scala.Double] = js.undefined
+    var mode: js.UndefOr[java.lang.String] = js.undefined
+    var moreButton: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
+    var paddingX: js.UndefOr[scala.Double] = js.undefined
+    var paddingY: js.UndefOr[scala.Double] = js.undefined
+    var readonly: js.UndefOr[scala.Boolean] = js.undefined
+    var scheme: js.UndefOr[js.Any] = js.undefined
+    var sendAction: js.UndefOr[java.lang.String] = js.undefined
+    var `type`: js.UndefOr[java.lang.String] = js.undefined
+    var url: js.UndefOr[js.Any] = js.undefined
+    var users: js.UndefOr[js.Array[_] | java.lang.String | webixLib.webixMod.DataCollection] = js.undefined
+    var view: js.UndefOr[java.lang.String] = js.undefined
+    var width: js.UndefOr[scala.Double] = js.undefined
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterEditStart
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeEditStart
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeMenuAction
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onUserMentioned
+    - webixLib.webixLibStrings.onViewShow
+  */
+  trait commentsEventName extends js.Object
   
   @js.native
   class context () extends baseview {
@@ -1577,7 +1774,6 @@ object uiNs extends js.Object {
     def attachTo(view: js.Any): scala.Unit = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getContext(): js.Any = js.native
@@ -1608,6 +1804,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var left: js.UndefOr[scala.Double] = js.undefined
     var master: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -1650,6 +1847,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait contextEventName extends js.Object
   
@@ -1661,6 +1859,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -1697,6 +1897,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -1713,7 +1921,6 @@ object uiNs extends js.Object {
     def clearCss(css: java.lang.String): scala.Unit = js.native
     def clearCss(css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def clearValidation(): scala.Unit = js.native
-    def close(): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: js.Any): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: js.Any, details: js.Any): scala.Unit = js.native
@@ -1786,7 +1993,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -1824,6 +2031,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setContext(context: js.Any): scala.Unit = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def setPosition(x: scala.Double, y: scala.Double): scala.Unit = js.native
@@ -1845,6 +2053,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait contextmenuConfig extends js.Object {
@@ -1860,14 +2069,11 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var dynamic: js.UndefOr[scala.Boolean] = js.undefined
     var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -1876,6 +2082,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layout: js.UndefOr[java.lang.String] = js.undefined
     var left: js.UndefOr[scala.Double] = js.undefined
     var master: js.UndefOr[java.lang.String] = js.undefined
@@ -1913,7 +2120,7 @@ object uiNs extends js.Object {
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -1929,7 +2136,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -1941,7 +2147,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -1972,6 +2177,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onShow
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -1981,11 +2187,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait contextmenuEventName extends js.Object
   
   @js.native
   class counter () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -2021,6 +2230,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: counterEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: counterEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -2053,7 +2268,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -2069,9 +2283,9 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -2090,7 +2304,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var step: js.UndefOr[scala.Double] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -2118,6 +2332,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait counterEventName extends js.Object
   
@@ -2171,6 +2386,7 @@ object uiNs extends js.Object {
   
   trait dashboardConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
+    var autoplace: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var cellHeight: js.UndefOr[scala.Double] = js.undefined
     var cellWidth: js.UndefOr[scala.Double] = js.undefined
@@ -2203,9 +2419,15 @@ object uiNs extends js.Object {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onChange
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onViewShow
   */
   trait dashboardEventName extends js.Object
   
@@ -2264,7 +2486,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def reconstruct(): scala.Unit = js.native
@@ -2287,6 +2509,7 @@ object uiNs extends js.Object {
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait datalayoutConfig extends js.Object {
@@ -2310,7 +2533,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
@@ -2340,6 +2563,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onDataUpdate
     - webixLib.webixLibStrings.onDestruct
     - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onViewShow
   */
   trait datalayoutEventName extends js.Object
   
@@ -2357,7 +2581,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: datasuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getHead(): js.Any = js.native
@@ -2449,6 +2672,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait datasuggestEventName extends js.Object
   
@@ -2460,6 +2684,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touch")
@@ -2497,6 +2723,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     @JSName("$touch")
     def $touch(args: js.Any*): js.Any = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
@@ -2559,8 +2793,8 @@ object uiNs extends js.Object {
     def clearValidation(): scala.Unit = js.native
     def closeSub(id: java.lang.String): scala.Unit = js.native
     def closeSub(id: scala.Double): scala.Unit = js.native
-    def collectValues(id: java.lang.String): js.Array[_] = js.native
-    def collectValues(id: scala.Double): js.Array[_] = js.native
+    def collectValues(id: java.lang.String, mode: js.Any): js.Array[_] = js.native
+    def collectValues(id: scala.Double, mode: js.Any): js.Array[_] = js.native
     def columnId(index: scala.Double): java.lang.String | scala.Double = js.native
     def copy(sid: java.lang.String, tindex: scala.Double): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: js.Any): scala.Unit = js.native
@@ -2662,7 +2896,9 @@ object uiNs extends js.Object {
     def getText(rowid: scala.Double, colid: java.lang.String): java.lang.String = js.native
     def getText(rowid: scala.Double, colid: scala.Double): java.lang.String = js.native
     def getVisibleCount(): scala.Double = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -2675,6 +2911,7 @@ object uiNs extends js.Object {
     def hideColumn(id: scala.Double, options: js.Any, silent: scala.Boolean): scala.Unit = js.native
     def hideColumn(id: scala.Double, options: js.Any, silent: scala.Boolean, mode: scala.Boolean): scala.Unit = js.native
     def hideOverlay(): scala.Unit = js.native
+    def ignoreUndo(functor: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def isColumnVisible(id: java.lang.String): scala.Boolean = js.native
     def isColumnVisible(id: scala.Double): scala.Boolean = js.native
     def isSelected(id: java.lang.String): scala.Unit = js.native
@@ -2688,7 +2925,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(node: stdLib.Event): js.Any = js.native
     def locate(node: stdLib.HTMLElement): js.Any = js.native
     def mapCells(
@@ -2741,6 +2978,7 @@ object uiNs extends js.Object {
     def removeSelectArea(area_name: java.lang.String): scala.Unit = js.native
     def removeSpan(id: java.lang.String, column: java.lang.String): scala.Unit = js.native
     def removeSpan(id: scala.Double, column: java.lang.String): scala.Unit = js.native
+    def removeUndo(id: java.lang.String): scala.Unit = js.native
     def render(id: java.lang.String, data: js.Any, operation: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, operation: java.lang.String): scala.Unit = js.native
     def resizeSubView(id: java.lang.String): scala.Unit = js.native
@@ -2758,6 +2996,7 @@ object uiNs extends js.Object {
     def selectRange(row_id: scala.Double, end_row_id: scala.Double): scala.Unit = js.native
     def selectRange(row_id: scala.Double, end_row_id: scala.Double, preserve: scala.Boolean): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setColumnWidth(id: java.lang.String, width: scala.Double): scala.Unit = js.native
     def setColumnWidth(id: scala.Double, width: scala.Double): scala.Unit = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
@@ -2778,6 +3017,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
     def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
+    def undo(id: java.lang.String): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def unselect(row_id: java.lang.String): scala.Unit = js.native
     def unselect(row_id: scala.Double): scala.Unit = js.native
@@ -2789,6 +3029,7 @@ object uiNs extends js.Object {
     def validateEditor(): scala.Boolean = js.native
     def validateEditor(id: java.lang.String): scala.Boolean = js.native
     def validateEditor(id: scala.Double): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait datatableConfig extends js.Object {
@@ -2832,6 +3073,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var hover: js.UndefOr[java.lang.String] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var leftSplit: js.UndefOr[scala.Double] = js.undefined
     var liveValidation: js.UndefOr[scala.Boolean] = js.undefined
     var loadahead: js.UndefOr[scala.Double] = js.undefined
@@ -2876,6 +3118,7 @@ object uiNs extends js.Object {
     var tooltip: js.UndefOr[scala.Boolean] = js.undefined
     var topSplit: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
+    var undo: js.UndefOr[scala.Boolean] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -2894,7 +3137,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterEditStart
     - webixLib.webixLibStrings.onAfterEditStop
     - webixLib.webixLibStrings.onAfterFilter
@@ -2919,7 +3161,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeEditStart
     - webixLib.webixLibStrings.onBeforeEditStop
@@ -2933,6 +3174,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBlur
     - webixLib.webixLibStrings.onCheck
     - webixLib.webixLibStrings.onCollectValues
+    - webixLib.webixLibStrings.onColumnGroupCollapse
     - webixLib.webixLibStrings.onColumnResize
     - webixLib.webixLibStrings.onDataRequest
     - webixLib.webixLibStrings.onDataUpdate
@@ -2965,6 +3207,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSubViewRender
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -2972,6 +3215,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait datatableEventName extends js.Object
   
@@ -2983,6 +3227,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -3019,6 +3265,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -3089,7 +3343,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -3126,6 +3380,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -3141,6 +3396,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait dataviewConfig extends js.Object {
@@ -3163,6 +3419,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var loadahead: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -3186,7 +3443,7 @@ object uiNs extends js.Object {
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -3200,7 +3457,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -3212,7 +3468,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -3238,6 +3493,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -3245,11 +3501,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait dataviewEventName extends js.Object
   
   @js.native
   class datepicker () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -3285,6 +3544,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: datepickerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: datepickerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -3313,7 +3578,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -3332,10 +3596,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -3359,7 +3623,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var timeIcon: js.UndefOr[java.lang.String] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
@@ -3388,6 +3652,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait datepickerEventName extends js.Object
   
@@ -3429,7 +3694,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
@@ -3447,11 +3712,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onDateClear
     - webixLib.webixLibStrings.onDestruct
     - webixLib.webixLibStrings.onTodaySet
+    - webixLib.webixLibStrings.onViewShow
   */
   trait daterangeEventName extends js.Object
   
   @js.native
   class daterangepicker () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
@@ -3487,6 +3755,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: daterangepickerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: daterangepickerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -3515,7 +3789,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -3534,10 +3807,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -3550,6 +3823,7 @@ object uiNs extends js.Object {
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pattern: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
+    var point: js.UndefOr[scala.Boolean] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
     var relatedAction: js.UndefOr[java.lang.String] = js.undefined
@@ -3559,8 +3833,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var timeIcon: js.UndefOr[java.lang.String] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var `type`: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -3588,6 +3861,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait daterangepickerEventName extends js.Object
   
@@ -3605,7 +3879,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: daterangesuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getButton(): baseview = js.native
@@ -3696,6 +3969,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait daterangesuggestEventName extends js.Object
   
@@ -3755,7 +4029,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -3772,6 +4046,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onChange
     - webixLib.webixLibStrings.onDestruct
     - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onViewShow
   */
   trait dbllistEventName extends js.Object
   
@@ -3783,6 +4058,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touch")
@@ -3820,6 +4097,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     @JSName("$touch")
     def $touch(args: js.Any*): js.Any = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
@@ -3830,6 +4115,23 @@ object uiNs extends js.Object {
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addRowCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
+    def addSelectArea(start: js.Any, end: js.Any, preserve: scala.Boolean): scala.Unit = js.native
+    def addSelectArea(start: js.Any, end: js.Any, preserve: scala.Boolean, area_name: java.lang.String): scala.Unit = js.native
+    def addSelectArea(
+      start: js.Any,
+      end: js.Any,
+      preserve: scala.Boolean,
+      area_name: java.lang.String,
+      css: java.lang.String
+    ): scala.Unit = js.native
+    def addSelectArea(
+      start: js.Any,
+      end: js.Any,
+      preserve: scala.Boolean,
+      area_name: java.lang.String,
+      css: java.lang.String,
+      handle: scala.Boolean
+    ): scala.Unit = js.native
     def addSpan(id: js.Any, column: java.lang.String, width: scala.Double, height: scala.Double): scala.Unit = js.native
     def addSpan(
       id: js.Any,
@@ -3864,8 +4166,8 @@ object uiNs extends js.Object {
     def clearValidation(): scala.Unit = js.native
     def closeSub(id: java.lang.String): scala.Unit = js.native
     def closeSub(id: scala.Double): scala.Unit = js.native
-    def collectValues(id: java.lang.String): js.Array[_] = js.native
-    def collectValues(id: scala.Double): js.Array[_] = js.native
+    def collectValues(id: java.lang.String, mode: js.Any): js.Array[_] = js.native
+    def collectValues(id: scala.Double, mode: js.Any): js.Array[_] = js.native
     def columnId(index: scala.Double): java.lang.String | scala.Double = js.native
     def copy(sid: java.lang.String, tindex: scala.Double): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: js.Any): scala.Unit = js.native
@@ -3915,6 +4217,7 @@ object uiNs extends js.Object {
     def focusEditor(id: js.Any): scala.Unit = js.native
     def freezeRow(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def freezeRow(id: scala.Double, state: scala.Boolean): scala.Unit = js.native
+    def getAllSelectAreas(): js.Any = js.native
     def getColumnConfig(id: java.lang.String): js.Any = js.native
     def getColumnIndex(id: java.lang.String): scala.Double = js.native
     def getColumnIndex(id: scala.Double): scala.Double = js.native
@@ -3950,6 +4253,7 @@ object uiNs extends js.Object {
     def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
     def getScrollState(): js.Any = js.native
+    def getSelectArea(area_name: java.lang.String): js.Any = js.native
     def getSelectedId(asArray: scala.Boolean, asString: scala.Boolean): js.Any = js.native
     def getSelectedItem(): js.Any = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
@@ -3964,7 +4268,9 @@ object uiNs extends js.Object {
     def getText(rowid: scala.Double, colid: java.lang.String): java.lang.String = js.native
     def getText(rowid: scala.Double, colid: scala.Double): java.lang.String = js.native
     def getVisibleCount(): scala.Double = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -3988,7 +4294,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(node: stdLib.Event): js.Any = js.native
     def locate(node: stdLib.HTMLElement): js.Any = js.native
     def mapCells(
@@ -4027,6 +4333,7 @@ object uiNs extends js.Object {
     def refreshColumns(config: js.Array[_], reset: scala.Boolean): scala.Unit = js.native
     def refreshFilter(id: java.lang.String): scala.Unit = js.native
     def refreshFilter(id: scala.Double): scala.Unit = js.native
+    def refreshSelectArea(): scala.Unit = js.native
     def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): scala.Unit = js.native
     def remove(id: java.lang.String): scala.Unit = js.native
     def remove(id: scala.Double): scala.Unit = js.native
@@ -4036,6 +4343,7 @@ object uiNs extends js.Object {
     def removeCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def removeCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def removeRowCss(id: java.lang.String, css_name: java.lang.String): scala.Unit = js.native
+    def removeSelectArea(area_name: java.lang.String): scala.Unit = js.native
     def removeSpan(id: java.lang.String, column: java.lang.String): scala.Unit = js.native
     def removeSpan(id: scala.Double, column: java.lang.String): scala.Unit = js.native
     def render(id: java.lang.String, data: js.Any, operation: java.lang.String): scala.Unit = js.native
@@ -4044,6 +4352,7 @@ object uiNs extends js.Object {
     def resizeSubView(id: scala.Double): scala.Unit = js.native
     def scrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setColumnWidth(id: java.lang.String, width: scala.Double): scala.Unit = js.native
     def setColumnWidth(id: scala.Double, width: scala.Double): scala.Unit = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
@@ -4073,6 +4382,7 @@ object uiNs extends js.Object {
     def validateEditor(): scala.Boolean = js.native
     def validateEditor(id: java.lang.String): scala.Boolean = js.native
     def validateEditor(id: scala.Double): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait excelviewerConfig extends js.Object {
@@ -4116,6 +4426,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var hover: js.UndefOr[java.lang.String] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var leftSplit: js.UndefOr[scala.Double] = js.undefined
     var liveValidation: js.UndefOr[scala.Boolean] = js.undefined
     var loadahead: js.UndefOr[scala.Double] = js.undefined
@@ -4158,9 +4469,10 @@ object uiNs extends js.Object {
     var subview: js.UndefOr[baseview | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toolbar: js.UndefOr[java.lang.String] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var topSplit: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
+    var undo: js.UndefOr[scala.Boolean] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -4179,7 +4491,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterEditStart
     - webixLib.webixLibStrings.onAfterEditStop
     - webixLib.webixLibStrings.onAfterFilter
@@ -4204,7 +4515,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeEditStart
     - webixLib.webixLibStrings.onBeforeEditStop
@@ -4250,6 +4560,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSubViewRender
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -4257,6 +4568,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait excelviewerEventName extends js.Object
   
@@ -4283,6 +4595,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -4310,6 +4623,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait fieldsetEventName extends js.Object
   
@@ -4410,15 +4724,15 @@ object uiNs extends js.Object {
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def markCopy(id: java.lang.String): scala.Unit = js.native
     def markCopy(id: js.Array[_]): scala.Unit = js.native
@@ -4437,6 +4751,7 @@ object uiNs extends js.Object {
     def remove(id: java.lang.String): scala.Unit = js.native
     def remove(id: scala.Double): scala.Unit = js.native
     def renameFile(id: java.lang.String, name: java.lang.String, property: java.lang.String): scala.Unit = js.native
+    def setDefaultHandlers(url: java.lang.String): scala.Unit = js.native
     def setPath(id: java.lang.String): scala.Unit = js.native
     def showProgress(): scala.Unit = js.native
     def showProgress(config: js.Any): scala.Unit = js.native
@@ -4451,6 +4766,7 @@ object uiNs extends js.Object {
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def uploadFile(target: java.lang.String): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait filemanagerConfig extends js.Object {
@@ -4473,13 +4789,14 @@ object uiNs extends js.Object {
     var legacyUploader: js.UndefOr[scala.Boolean] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
+    var menuFilter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mode: js.UndefOr[java.lang.String] = js.undefined
     var modes: js.UndefOr[js.Array[_]] = js.undefined
     var noFileCache: js.UndefOr[scala.Boolean] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
@@ -4576,6 +4893,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onShowSearchResults
     - webixLib.webixLibStrings.onSuccessResponse
     - webixLib.webixLibStrings.onViewInit
+    - webixLib.webixLibStrings.onViewShow
   */
   trait filemanagerEventName extends js.Object
   
@@ -4657,7 +4975,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
@@ -4686,6 +5004,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onValues
+    - webixLib.webixLibStrings.onViewShow
   */
   trait formEventName extends js.Object
   
@@ -4716,6 +5035,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelWidth: js.UndefOr[scala.Double] = js.undefined
@@ -4744,6 +5064,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait forminputEventName extends js.Object
   
@@ -4761,6 +5082,7 @@ object uiNs extends js.Object {
     def getValue(): scala.Double = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
+    def refresh(): scala.Unit = js.native
     def setValue(new_value: scala.Double): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
@@ -4775,6 +5097,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxRange: js.UndefOr[scala.Double] = js.undefined
@@ -4808,6 +5131,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait gageEventName extends js.Object
   
@@ -4864,7 +5188,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def refresh(): scala.Unit = js.native
@@ -4874,6 +5198,7 @@ object uiNs extends js.Object {
     def remove(id: scala.Double): scala.Unit = js.native
     def render(): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setDisplayMode(mode: java.lang.String): scala.Unit = js.native
     def setRegion(region: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String): scala.Unit = js.native
@@ -4883,6 +5208,7 @@ object uiNs extends js.Object {
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait geochartConfig extends js.Object {
@@ -4901,6 +5227,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var key: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -4910,7 +5237,7 @@ object uiNs extends js.Object {
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -4942,11 +5269,13 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onRegionClick
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait geochartEventName extends js.Object
   
@@ -4994,6 +5323,7 @@ object uiNs extends js.Object {
     def getItem(id: scala.Double): js.Any = js.native
     def getLastId(): java.lang.String | scala.Double = js.native
     def getMap(): js.Any = js.native
+    def getMap(waitMap: scala.Boolean): js.Any = js.native
     def getNextId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
     def getNextId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
@@ -5008,7 +5338,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def refresh(): scala.Unit = js.native
@@ -5018,6 +5348,7 @@ object uiNs extends js.Object {
     def remove(id: scala.Double): scala.Unit = js.native
     def render(): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
@@ -5025,6 +5356,7 @@ object uiNs extends js.Object {
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait googleMapConfig extends js.Object {
@@ -5043,6 +5375,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layerType: js.UndefOr[java.lang.String] = js.undefined
     var mapType: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -5083,11 +5416,13 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onLongTouch
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait googleMapEventName extends js.Object
   
@@ -5122,6 +5457,7 @@ object uiNs extends js.Object {
   
   trait gridlayoutConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
+    var autoplace: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var cellHeight: js.UndefOr[scala.Double] = js.undefined
     var cellWidth: js.UndefOr[scala.Double] = js.undefined
@@ -5157,6 +5493,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onChange
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait gridlayoutEventName extends js.Object
   
@@ -5174,7 +5511,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: gridsuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getHead(): js.Any = js.native
@@ -5266,6 +5602,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait gridsuggestEventName extends js.Object
   
@@ -5277,6 +5614,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -5313,6 +5652,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -5371,7 +5718,9 @@ object uiNs extends js.Object {
     def getSelectedId(as_array: scala.Boolean): java.lang.String | js.Array[_] = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
     def getVisibleCount(): scala.Double = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -5386,7 +5735,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -5423,6 +5772,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -5439,6 +5789,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait grouplistConfig extends js.Object {
@@ -5451,20 +5802,18 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var dynamic: js.UndefOr[scala.Boolean] = js.undefined
     var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layout: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -5492,7 +5841,7 @@ object uiNs extends js.Object {
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var templateGroup: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateItem: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -5506,7 +5855,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -5518,7 +5866,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -5545,6 +5892,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -5552,6 +5900,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait grouplistEventName extends js.Object
   
@@ -5601,7 +5950,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multi: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var panelClass: js.UndefOr[java.lang.String] = js.undefined
@@ -5618,6 +5967,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterExpand
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait headerlayoutEventName extends js.Object
   
@@ -5654,6 +6004,8 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
+    var left: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -5661,7 +6013,9 @@ object uiNs extends js.Object {
     var nextButton: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var prevButton: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
+    var stepTimeout: js.UndefOr[scala.Double] = js.undefined
     var steps: js.UndefOr[js.Array[_]] = js.undefined
+    var top: js.UndefOr[scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
@@ -5688,6 +6042,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait hintEventName extends js.Object
   
@@ -5697,6 +6052,12 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_htmlform: htmlformConfig = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: htmlformEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: htmlformEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -5750,6 +6111,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -5760,6 +6122,7 @@ object uiNs extends js.Object {
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var src: js.UndefOr[java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -5788,6 +6151,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onValues
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait htmlformEventName extends js.Object
   
@@ -5814,6 +6178,12 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: iconEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: iconEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -5851,6 +6221,7 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -5858,7 +6229,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -5884,6 +6255,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait iconEventName extends js.Object
   
@@ -5916,6 +6288,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -5944,6 +6317,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait iframeEventName extends js.Object
   
@@ -5963,6 +6337,8 @@ object uiNs extends js.Object {
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
     def clearAll(soft: scala.Boolean): scala.Unit = js.native
+    def copy(id: java.lang.String): scala.Unit = js.native
+    def copy(id: scala.Double): scala.Unit = js.native
     def count(): scala.Double = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def eachList(func: webixLib.webixMod.WebixCallback): scala.Unit = js.native
@@ -5980,6 +6356,9 @@ object uiNs extends js.Object {
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
     def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
     def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def getColors(): webixLib.webixMod.DataCollection = js.native
+    def getComments(): baseview = js.native
+    def getEditor(): baseview = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -5987,6 +6366,7 @@ object uiNs extends js.Object {
     def getItem(id: java.lang.String): js.Any = js.native
     def getItem(id: scala.Double): js.Any = js.native
     def getLastId(): java.lang.String | scala.Double = js.native
+    def getMenu(): baseview = js.native
     def getNextId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
     def getNextId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
     def getOwnerList(itemId: java.lang.String): js.Any = js.native
@@ -5994,6 +6374,10 @@ object uiNs extends js.Object {
     def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
     def getSelectedId(): java.lang.String | scala.Double = js.native
+    def getStatuses(): js.Array[_] = js.native
+    def getTags(): webixLib.webixMod.DataCollection = js.native
+    def getUserList(): baseview = js.native
+    def getUsers(): webixLib.webixMod.DataCollection = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def index(obj: js.Any): scala.Double = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
@@ -6005,7 +6389,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def reconstruct(): scala.Unit = js.native
@@ -6021,10 +6405,11 @@ object uiNs extends js.Object {
     def select(id: java.lang.String): scala.Unit = js.native
     def select(id: scala.Double): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
-    def setIndex(id: java.lang.String, index: scala.Double): scala.Unit = js.native
-    def setIndex(id: scala.Double, index: scala.Double): scala.Unit = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
+    def showEditor(): scala.Unit = js.native
+    def showEditor(obj: js.Any): scala.Unit = js.native
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
@@ -6032,20 +6417,26 @@ object uiNs extends js.Object {
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait kanbanConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
+    var attachments: js.UndefOr[java.lang.String] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
+    var cardActions: js.UndefOr[scala.Boolean | js.Array[_]] = js.undefined
     var collapsed: js.UndefOr[scala.Boolean] = js.undefined
+    var colors: js.UndefOr[js.Array[_] | java.lang.String] = js.undefined
     var cols: js.UndefOr[js.Array[_]] = js.undefined
+    var comments: js.UndefOr[js.Any] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
+    var delimiter: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
+    var editor: js.UndefOr[js.Any] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -6059,7 +6450,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multi: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var panelClass: js.UndefOr[java.lang.String] = js.undefined
@@ -6069,8 +6460,11 @@ object uiNs extends js.Object {
     var rows: js.UndefOr[js.Array[_]] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
+    var tags: js.UndefOr[js.Array[_] | java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
+    var userList: js.UndefOr[js.Any] = js.undefined
+    var users: js.UndefOr[js.Array[_] | java.lang.String] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -6079,14 +6473,19 @@ object uiNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - webixLib.webixLibStrings.onAfterAdd
     - webixLib.webixLibStrings.onAfterCollapse
+    - webixLib.webixLibStrings.onAfterCopy
     - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterEditorShow
     - webixLib.webixLibStrings.onAfterExpand
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterSort
     - webixLib.webixLibStrings.onAfterStatusChange
     - webixLib.webixLibStrings.onAvatarClick
     - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeCopy
     - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeEditorAction
+    - webixLib.webixLibStrings.onBeforeEditorShow
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeSort
     - webixLib.webixLibStrings.onBeforeStatusChange
@@ -6106,6 +6505,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onListItemClick
     - webixLib.webixLibStrings.onListItemDblClick
     - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onViewShow
   */
   trait kanbanEventName extends js.Object
   
@@ -6132,6 +6532,12 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: labelEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: labelEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -6169,6 +6575,7 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -6178,7 +6585,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -6204,6 +6611,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait labelEventName extends js.Object
   
@@ -6250,7 +6658,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
@@ -6264,6 +6672,7 @@ object uiNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait layoutEventName extends js.Object
   
@@ -6275,6 +6684,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -6311,6 +6722,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -6382,7 +6801,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -6419,6 +6838,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -6434,6 +6854,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait listConfig extends js.Object {
@@ -6460,6 +6881,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layout: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -6484,7 +6906,7 @@ object uiNs extends js.Object {
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -6498,7 +6920,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -6510,7 +6931,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -6537,6 +6957,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -6544,6 +6965,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait listEventName extends js.Object
   
@@ -6555,6 +6977,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -6591,6 +7015,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -6675,7 +7107,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -6712,6 +7144,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -6728,6 +7161,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait menuConfig extends js.Object {
@@ -6740,20 +7174,18 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var dynamic: js.UndefOr[scala.Boolean] = js.undefined
     var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layout: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -6781,7 +7213,7 @@ object uiNs extends js.Object {
     var submenuConfig: js.UndefOr[js.Any] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -6795,7 +7227,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -6807,7 +7238,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -6835,6 +7265,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -6842,11 +7273,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait menuEventName extends js.Object
   
   @js.native
   class multicombo () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
@@ -6880,6 +7314,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: multicomboEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: multicomboEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -6909,7 +7349,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -6926,11 +7365,11 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
     var keepText: js.UndefOr[scala.Boolean] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -6955,7 +7394,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tagMode: js.UndefOr[scala.Boolean] = js.undefined
     var tagTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -6983,11 +7422,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait multicomboEventName extends js.Object
   
   @js.native
   class multiselect () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
@@ -7025,6 +7467,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: multiselectEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: multiselectEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -7054,7 +7502,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -7071,10 +7518,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -7096,7 +7543,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var separator: js.UndefOr[java.lang.String] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -7124,6 +7571,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait multiselectEventName extends js.Object
   
@@ -7141,7 +7589,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: multisuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getButton(): baseview = js.native
@@ -7235,11 +7682,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait multisuggestEventName extends js.Object
   
   @js.native
   class multitext () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
@@ -7277,6 +7727,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def addSection(): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: multitextEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: multitextEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
@@ -7310,7 +7766,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -7328,10 +7783,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -7351,7 +7806,7 @@ object uiNs extends js.Object {
     var separator: js.UndefOr[java.lang.String] = js.undefined
     var subConfig: js.UndefOr[js.Any] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -7381,6 +7836,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait multitextEventName extends js.Object
   
@@ -7396,7 +7852,7 @@ object uiNs extends js.Object {
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def getActiveId(): scala.Unit = js.native
+    def getActiveId(): java.lang.String = js.native
     def getValue(): java.lang.String | scala.Double = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def index(obj: js.Any): scala.Double = js.native
@@ -7442,6 +7898,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
     - webixLib.webixLibStrings.onViewChange
+    - webixLib.webixLibStrings.onViewShow
   */
   trait multiviewEventName extends js.Object
   
@@ -7462,6 +7919,12 @@ object uiNs extends js.Object {
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -7528,7 +7991,9 @@ object uiNs extends js.Object {
     def getSelectedId(as_array: scala.Boolean): java.lang.String | js.Array[_] = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
     def getState(): js.Any = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -7541,15 +8006,15 @@ object uiNs extends js.Object {
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def on_click(args: js.Any*): js.Any = js.native
@@ -7579,6 +8044,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setState(state: js.Any): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -7593,6 +8059,7 @@ object uiNs extends js.Object {
     def unselectAll(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait organogramConfig extends js.Object {
@@ -7615,6 +8082,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -7635,7 +8103,7 @@ object uiNs extends js.Object {
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -7682,11 +8150,13 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait organogramEventName extends js.Object
   
@@ -7739,7 +8209,10 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
+    var level: js.UndefOr[scala.Double] = js.undefined
     var limit: js.UndefOr[scala.Double] = js.undefined
+    var master: js.UndefOr[scala.Boolean] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -7784,6 +8257,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait pagerEventName extends js.Object
   
@@ -7822,7 +8296,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
@@ -7835,6 +8309,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait panelEventName extends js.Object
   
@@ -7859,6 +8334,7 @@ object uiNs extends js.Object {
     def clear(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def download(): scala.Unit = js.native
+    def getPopup(): baseview = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
@@ -7881,7 +8357,6 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var downloadName: js.UndefOr[java.lang.String] = js.undefined
@@ -7889,6 +8364,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -7923,6 +8399,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait pdfviewerEventName extends js.Object
   
@@ -8002,6 +8479,7 @@ object uiNs extends js.Object {
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait pivotConfig extends js.Object {
@@ -8011,7 +8489,9 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
+    var datatable: js.UndefOr[js.Any] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
+    var defaultOperation: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var externalProcessing: js.UndefOr[scala.Boolean] = js.undefined
     var fieldMap: js.UndefOr[js.Any] = js.undefined
@@ -8035,7 +8515,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var ping: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
@@ -8063,7 +8543,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterSort
-    - webixLib.webixLibStrings.onApply
     - webixLib.webixLibStrings.onBeforeAdd
     - webixLib.webixLibStrings.onBeforeApply
     - webixLib.webixLibStrings.onBeforeCancel
@@ -8083,6 +8562,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onLoadError
     - webixLib.webixLibStrings.onPopup
     - webixLib.webixLibStrings.onViewInit
+    - webixLib.webixLibStrings.onViewShow
     - webixLib.webixLibStrings.onWebWorkerEnd
     - webixLib.webixLibStrings.onWebWorkerStart
   */
@@ -8098,7 +8578,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: popupEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getHead(): js.Any = js.native
@@ -8117,7 +8596,6 @@ object uiNs extends js.Object {
     var autofit: js.UndefOr[scala.Boolean] = js.undefined
     var autofocus: js.UndefOr[scala.Boolean] = js.undefined
     var body: js.UndefOr[java.lang.String | baseview] = js.undefined
-    var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -8127,6 +8605,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var left: js.UndefOr[scala.Double] = js.undefined
     var master: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -8169,6 +8648,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait popupEventName extends js.Object
   
@@ -8223,7 +8703,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mode: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
@@ -8239,6 +8719,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforePortletMove
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait portletEventName extends js.Object
   
@@ -8258,10 +8739,17 @@ object uiNs extends js.Object {
     var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var on_render: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: propertyEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: propertyEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
+    def clear(): scala.Unit = js.native
     def customize(obj: js.Any): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def edit(id: js.Any): scala.Unit = js.native
@@ -8326,6 +8814,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var map: js.UndefOr[js.Any] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -8341,7 +8830,7 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -8381,6 +8870,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait propertyEventName extends js.Object
   
@@ -8394,6 +8884,12 @@ object uiNs extends js.Object {
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -8453,7 +8949,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
@@ -8469,6 +8965,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -8481,6 +8978,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait protoConfig extends js.Object {
@@ -8498,6 +8996,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -8510,7 +9009,7 @@ object uiNs extends js.Object {
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -8542,6 +9041,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onLongTouch
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -8549,8 +9049,57 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait protoEventName extends js.Object
+  
+  @js.native
+  class proxy () extends baseview {
+    @JSName("$scope")
+    var $scope: js.Any = js.native
+    @JSName("config")
+    var config_proxy: proxyConfig = js.native
+  }
+  
+  trait proxyConfig extends js.Object {
+    var animate: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[js.Any] = js.undefined
+    var borderless: js.UndefOr[scala.Boolean] = js.undefined
+    var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
+    var css: js.UndefOr[js.Any] = js.undefined
+    var disabled: js.UndefOr[scala.Boolean] = js.undefined
+    var gravity: js.UndefOr[scala.Double] = js.undefined
+    var height: js.UndefOr[scala.Double] = js.undefined
+    var hidden: js.UndefOr[scala.Boolean] = js.undefined
+    var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
+    var maxHeight: js.UndefOr[scala.Double] = js.undefined
+    var maxWidth: js.UndefOr[scala.Double] = js.undefined
+    var minHeight: js.UndefOr[scala.Double] = js.undefined
+    var minWidth: js.UndefOr[scala.Double] = js.undefined
+    var view: js.UndefOr[java.lang.String] = js.undefined
+    var width: js.UndefOr[scala.Double] = js.undefined
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
+  */
+  trait proxyEventName extends js.Object
   
   @js.native
   class querybuilder () extends baseview {
@@ -8562,16 +9111,15 @@ object uiNs extends js.Object {
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
+    def eachLine(callback: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def focus(): scala.Unit = js.native
     def getFilterHelper(): webixLib.webixMod.WebixCallback = js.native
-    def getFilters(): js.Array[_] = js.native
     def getSortingElements(): js.Array[_] = js.native
     def getSortingHelper(): webixLib.webixMod.WebixCallback = js.native
-    def getValue(): js.Array[_] = js.native
+    def getValue(): js.Any = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
-    def setFilters(filters: js.Array[_]): scala.Unit = js.native
-    def setValue(rules: js.Any, fields: js.Array[_]): scala.Unit = js.native
+    def setValue(value: js.Any): scala.Unit = js.native
     def toSQL(): js.Any = js.native
     def toSQL(config: js.Any): js.Any = js.native
     def toSQL(config: js.Any, rules: js.Any): js.Any = js.native
@@ -8588,6 +9136,8 @@ object uiNs extends js.Object {
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var fields: js.UndefOr[js.Array[_]] = js.undefined
     var filtering: js.UndefOr[scala.Boolean] = js.undefined
+    var filters: js.UndefOr[js.Array[_] | webixLib.webixMod.DataCollection] = js.undefined
+    var glue: js.UndefOr[java.lang.String] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -8600,7 +9150,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var sorting: js.UndefOr[scala.Boolean] = js.undefined
@@ -8613,11 +9163,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
     - webixLib.webixLibStrings.onKeySelect
+    - webixLib.webixLibStrings.onViewShow
   */
   trait querybuilderEventName extends js.Object
   
   @js.native
   class radio () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -8653,6 +9206,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: radioEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: radioEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -8661,6 +9220,8 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def focus(): scala.Unit = js.native
     def getInputNode(): stdLib.HTMLElement = js.native
+    def getOption(id: java.lang.String): js.Any = js.native
+    def getOption(id: scala.Double): js.Any = js.native
     def getValue(): java.lang.String = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
@@ -8696,9 +9257,9 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -8717,7 +9278,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -8746,6 +9307,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait radioEventName extends js.Object
   
@@ -8766,6 +9328,12 @@ object uiNs extends js.Object {
     var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var presets: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addSeries(obj: js.Any): scala.Unit = js.native
@@ -8805,7 +9373,9 @@ object uiNs extends js.Object {
     def getNextId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
     def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def hideSeries(index: scala.Double): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
@@ -8817,7 +9387,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def on_click(args: js.Any*): js.Any = js.native
@@ -8833,6 +9403,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setFrameRange(range: js.Any): scala.Unit = js.native
     def showSeries(index: scala.Double): scala.Unit = js.native
     def sort(by: java.lang.String): scala.Unit = js.native
@@ -8843,6 +9414,7 @@ object uiNs extends js.Object {
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait rangechartConfig extends js.Object {
@@ -8852,6 +9424,7 @@ object uiNs extends js.Object {
     var barWidth: js.UndefOr[scala.Double] = js.undefined
     var border: js.UndefOr[scala.Boolean] = js.undefined
     var borderColor: js.UndefOr[java.lang.String] = js.undefined
+    var borderWidth: js.UndefOr[scala.Double] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var cant: js.UndefOr[scala.Double] = js.undefined
     var color: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
@@ -8872,6 +9445,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var labelOffset: js.UndefOr[scala.Double] = js.undefined
     var legend: js.UndefOr[js.Any] = js.undefined
@@ -8902,7 +9476,7 @@ object uiNs extends js.Object {
     var scheme: js.UndefOr[js.Any] = js.undefined
     var series: js.UndefOr[js.Any] = js.undefined
     var shadow: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var value: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
@@ -8941,6 +9515,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onItemClick
     - webixLib.webixLibStrings.onItemDblClick
     - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLegendClick
     - webixLib.webixLibStrings.onLoadError
     - webixLib.webixLibStrings.onLongTouch
     - webixLib.webixLibStrings.onMouseMove
@@ -8948,16 +9523,20 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onMouseOut
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait rangechartEventName extends js.Object
   
   @js.native
   class rangeslider () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
@@ -8997,6 +9576,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: rangesliderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: rangesliderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -9023,7 +9608,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -9039,9 +9623,9 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -9052,6 +9636,7 @@ object uiNs extends js.Object {
     var min: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
+    var moveTitle: js.UndefOr[scala.Boolean] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -9063,10 +9648,12 @@ object uiNs extends js.Object {
     var stringResult: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var title: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
+    var vertical: js.UndefOr[scala.Boolean] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
@@ -9092,6 +9679,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait rangesliderEventName extends js.Object
   
@@ -9158,6 +9746,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -9168,33 +9757,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - webixLib.webixLibStrings.onAfterContextMenu
-    - webixLib.webixLibStrings.onAfterScroll
-    - webixLib.webixLibStrings.onBeforeContextMenu
-    - webixLib.webixLibStrings.onBindRequest
-    - webixLib.webixLibStrings.onBlur
-    - webixLib.webixLibStrings.onDestruct
-    - webixLib.webixLibStrings.onEnter
-    - webixLib.webixLibStrings.onFocus
-    - webixLib.webixLibStrings.onItemClick
-    - webixLib.webixLibStrings.onItemDblClick
-    - webixLib.webixLibStrings.onKeyPress
-    - webixLib.webixLibStrings.onLongTouch
-    - webixLib.webixLibStrings.onMouseMoving
-    - webixLib.webixLibStrings.onMouseOut
-    - webixLib.webixLibStrings.onSwipeX
-    - webixLib.webixLibStrings.onSwipeY
-    - webixLib.webixLibStrings.onTimedKeyPress
-    - webixLib.webixLibStrings.onTouchEnd
-    - webixLib.webixLibStrings.onTouchMove
-    - webixLib.webixLibStrings.onTouchStart
-    - webixLib.webixLibStrings.onViewResize
-  */
-  trait resizerEventName extends js.Object
-  
   @js.native
   class richselect () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -9230,6 +9796,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: richselectEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: richselectEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -9259,7 +9831,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -9276,10 +9847,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -9299,7 +9870,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -9327,6 +9898,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait richselectEventName extends js.Object
   
@@ -9372,7 +9944,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -9385,6 +9957,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onChange
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait richtextEventName extends js.Object
   
@@ -9421,6 +9994,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -9448,11 +10022,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait scrollviewEventName extends js.Object
   
   @js.native
   class search () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -9488,6 +10065,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: searchEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: searchEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -9531,10 +10114,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -9553,7 +10136,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
@@ -9583,11 +10166,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait searchEventName extends js.Object
   
   @js.native
   class segmented () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -9623,15 +10209,18 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def addOption(id: java.lang.String, value: js.Any): scala.Unit = js.native
     def addOption(id: java.lang.String, value: js.Any, show: scala.Boolean): scala.Unit = js.native
     def addOption(id: java.lang.String, value: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
     def addOption(id: scala.Double, value: js.Any): scala.Unit = js.native
     def addOption(id: scala.Double, value: js.Any, show: scala.Boolean): scala.Unit = js.native
     def addOption(id: scala.Double, value: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
-    def addOption(obj: js.Any): scala.Unit = js.native
-    def addOption(obj: js.Any, show: scala.Boolean): scala.Unit = js.native
-    def addOption(obj: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
     def attachEvent(`type`: segmentedEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: segmentedEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -9640,6 +10229,8 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def focus(): scala.Unit = js.native
     def getInputNode(): stdLib.HTMLElement = js.native
+    def getOption(id: java.lang.String): js.Any = js.native
+    def getOption(id: scala.Double): js.Any = js.native
     def getValue(): java.lang.String = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def hideOption(id: java.lang.String): scala.Unit = js.native
@@ -9681,9 +10272,9 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -9702,7 +10293,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -9733,11 +10324,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait segmentedEventName extends js.Object
   
   @js.native
   class select () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -9773,6 +10367,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: selectEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: selectEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -9798,7 +10398,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -9814,10 +10413,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -9836,7 +10435,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -9864,6 +10463,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait selectEventName extends js.Object
   
@@ -9873,6 +10473,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$fixEditor")
     var $fixEditor_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
@@ -9909,8 +10511,16 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
     @JSName("$fixEditor")
     def $fixEditor(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -9994,7 +10604,9 @@ object uiNs extends js.Object {
     def getSelectedId(as_array: scala.Boolean): java.lang.String | js.Array[_] = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
     def getState(): js.Any = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -10009,15 +10621,15 @@ object uiNs extends js.Object {
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -10051,6 +10663,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def setState(state: js.Any): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
@@ -10073,6 +10686,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait sidebarConfig extends js.Object {
@@ -10098,11 +10712,13 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
+    var multipleOpen: js.UndefOr[scala.Boolean] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
@@ -10124,7 +10740,7 @@ object uiNs extends js.Object {
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var titleHeight: js.UndefOr[scala.Double] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -10137,7 +10753,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterOpen
     - webixLib.webixLibStrings.onAfterRender
@@ -10151,7 +10766,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeOpen
@@ -10181,6 +10795,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -10188,6 +10803,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait sidebarEventName extends js.Object
   
@@ -10201,7 +10817,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: sidemenuEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getHead(): js.Any = js.native
@@ -10227,6 +10842,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var left: js.UndefOr[scala.Double] = js.undefined
     var master: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -10263,6 +10879,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onShow
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -10270,11 +10887,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait sidemenuEventName extends js.Object
   
   @js.native
   class slider () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -10312,6 +10932,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: sliderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: sliderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -10338,7 +10964,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -10354,10 +10979,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -10380,7 +11005,8 @@ object uiNs extends js.Object {
     var step: js.UndefOr[scala.Double] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var title: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -10410,6 +11036,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait sliderEventName extends js.Object
   
@@ -10431,6 +11058,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -10455,6 +11083,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait spacerEventName extends js.Object
   
@@ -10462,6 +11091,7 @@ object uiNs extends js.Object {
   class spreadsheet () extends baseview {
     @JSName("$$")
     var $$: js.Any = js.native
+    var comments: js.Any = js.native
     @JSName("config")
     var config_spreadsheet: spreadsheetConfig = js.native
     def addFilter(rowId: scala.Double, columnId: scala.Double): scala.Unit = js.native
@@ -10474,6 +11104,7 @@ object uiNs extends js.Object {
     def attachEvent(`type`: spreadsheetEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
+    def changeDecimals(row: scala.Double, column: scala.Double, change: scala.Double): scala.Unit = js.native
     def clearRange(rangeStr: java.lang.String, `type`: js.Any): scala.Unit = js.native
     def clearSheet(): scala.Unit = js.native
     def combineCells(): scala.Unit = js.native
@@ -10497,11 +11128,13 @@ object uiNs extends js.Object {
     def getSelectedRange(): java.lang.String = js.native
     def getSheetData(sheet_name: java.lang.String): scala.Unit = js.native
     def getStyle(row: scala.Double, column: scala.Double): js.Any = js.native
+    def groupUndo(func: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def hideColumn(columnId: scala.Double, state: scala.Boolean): scala.Unit = js.native
     def hideGridlines(state: scala.Boolean): scala.Unit = js.native
     def hideHeaders(state: scala.Boolean): scala.Unit = js.native
     def hideRow(rowId: scala.Double, state: scala.Boolean): scala.Unit = js.native
+    def ignoreUndo(func: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def innerId(id: java.lang.String): scala.Double | java.lang.String = js.native
     def innerId(id: scala.Double): scala.Double | java.lang.String = js.native
     def insertColumn(columnId: scala.Double): scala.Unit = js.native
@@ -10551,6 +11184,8 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottombar: js.UndefOr[scala.Boolean] = js.undefined
     var buttons: js.UndefOr[js.Any] = js.undefined
+    var clipboard: js.UndefOr[scala.Boolean] = js.undefined
+    var clipboardDecimalDelimiter: js.UndefOr[java.lang.String] = js.undefined
     var columnCount: js.UndefOr[scala.Double] = js.undefined
     var conditionStyle: js.UndefOr[js.Array[_]] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
@@ -10569,7 +11204,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
@@ -10585,9 +11220,14 @@ object uiNs extends js.Object {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterConditionSet
     - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRangeSet
     - webixLib.webixLibStrings.onAfterSelect
     - webixLib.webixLibStrings.onAfterSheetShow
+    - webixLib.webixLibStrings.onAfterSpan
+    - webixLib.webixLibStrings.onAfterSplit
+    - webixLib.webixLibStrings.onBeforeCommentShow
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeSheetShow
     - webixLib.webixLibStrings.onBeforeSpan
@@ -10595,6 +11235,8 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeValueChange
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onCellChange
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onCommentHide
     - webixLib.webixLibStrings.onComponentInit
     - webixLib.webixLibStrings.onDataParse
     - webixLib.webixLibStrings.onDataSerialize
@@ -10606,6 +11248,8 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSheetRemove
     - webixLib.webixLibStrings.onSheetRename
     - webixLib.webixLibStrings.onStyleSet
+    - webixLib.webixLibStrings.onViewInit
+    - webixLib.webixLibStrings.onViewShow
   */
   trait spreadsheetEventName extends js.Object
   
@@ -10617,6 +11261,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -10653,6 +11299,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -10668,7 +11322,6 @@ object uiNs extends js.Object {
     def clearCss(css: java.lang.String): scala.Unit = js.native
     def clearCss(css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def clearValidation(): scala.Unit = js.native
-    def close(): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: js.Any): scala.Unit = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: js.Any, details: js.Any): scala.Unit = js.native
@@ -10740,7 +11393,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -10778,6 +11431,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def setPosition(x: scala.Double, y: scala.Double): scala.Unit = js.native
     def show(node: stdLib.HTMLElement): scala.Unit = js.native
@@ -10798,6 +11452,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait submenuConfig extends js.Object {
@@ -10813,14 +11468,11 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
-    var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var dynamic: js.UndefOr[scala.Boolean] = js.undefined
     var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -10829,6 +11481,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layout: js.UndefOr[java.lang.String] = js.undefined
     var left: js.UndefOr[scala.Double] = js.undefined
     var master: js.UndefOr[java.lang.String] = js.undefined
@@ -10866,7 +11519,7 @@ object uiNs extends js.Object {
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -10882,7 +11535,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -10894,7 +11546,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -10925,6 +11576,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onShow
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -10934,6 +11586,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait submenuEventName extends js.Object
   
@@ -10951,7 +11604,6 @@ object uiNs extends js.Object {
     def attachEvent(`type`: suggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
-    def close(): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def getBody(): js.Any = js.native
     def getHead(): js.Any = js.native
@@ -11043,11 +11695,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait suggestEventName extends js.Object
   
   @js.native
   class switchButton () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -11081,6 +11736,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: switchButtonEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: switchButtonEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -11108,7 +11769,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var badge: js.UndefOr[scala.Double | java.lang.String] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -11123,16 +11783,15 @@ object uiNs extends js.Object {
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
-    var hotkey: js.UndefOr[java.lang.String] = js.undefined
     var icon: js.UndefOr[java.lang.String] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var image: js.UndefOr[java.lang.String] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -11152,7 +11811,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var uncheckValue: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
@@ -11182,11 +11841,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait switchButtonEventName extends js.Object
   
   @js.native
   class tabbar () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -11222,15 +11884,18 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def addOption(id: java.lang.String, value: js.Any): scala.Unit = js.native
     def addOption(id: java.lang.String, value: js.Any, show: scala.Boolean): scala.Unit = js.native
     def addOption(id: java.lang.String, value: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
     def addOption(id: scala.Double, value: js.Any): scala.Unit = js.native
     def addOption(id: scala.Double, value: js.Any, show: scala.Boolean): scala.Unit = js.native
     def addOption(id: scala.Double, value: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
-    def addOption(obj: js.Any): scala.Unit = js.native
-    def addOption(obj: js.Any, show: scala.Boolean): scala.Unit = js.native
-    def addOption(obj: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
     def attachEvent(`type`: tabbarEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: tabbarEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -11239,6 +11904,8 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def focus(): scala.Unit = js.native
     def getInputNode(): stdLib.HTMLElement = js.native
+    def getOption(id: java.lang.String): js.Any = js.native
+    def getOption(id: scala.Double): js.Any = js.native
     def getPopup(): baseview = js.native
     def getValue(): java.lang.String = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -11266,7 +11933,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomOffset: js.UndefOr[scala.Double] = js.undefined
@@ -11283,10 +11949,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -11300,7 +11966,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var optionWidth: js.UndefOr[scala.Double] = js.undefined
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[js.Array[_]] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var popupTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
@@ -11315,6 +11981,7 @@ object uiNs extends js.Object {
     var tabMoreWidth: js.UndefOr[scala.Double] = js.undefined
     var tabOffset: js.UndefOr[scala.Double] = js.undefined
     var tabbarPopup: js.UndefOr[baseview] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var topOffset: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
@@ -11349,6 +12016,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait tabbarEventName extends js.Object
   
@@ -11389,7 +12057,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multiview: js.UndefOr[js.Any] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var tabbar: js.UndefOr[js.Any] = js.undefined
@@ -11401,6 +12069,7 @@ object uiNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - webixLib.webixLibStrings.onBindRequest
     - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewShow
   */
   trait tabviewEventName extends js.Object
   
@@ -11410,6 +12079,12 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_template: templateConfig = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: templateEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: templateEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -11443,13 +12118,13 @@ object uiNs extends js.Object {
     var content: js.UndefOr[java.lang.String | scala.Double | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -11460,6 +12135,7 @@ object uiNs extends js.Object {
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var src: js.UndefOr[java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11487,11 +12163,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait templateEventName extends js.Object
   
   @js.native
   class text () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -11525,6 +12204,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: textEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: textEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -11551,7 +12236,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -11568,10 +12252,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -11590,7 +12274,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
@@ -11619,11 +12303,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait textEventName extends js.Object
   
   @js.native
   class textarea () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -11659,6 +12346,12 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: textareaEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: textareaEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -11685,7 +12378,6 @@ object uiNs extends js.Object {
     var align: js.UndefOr[java.lang.String] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var attributes: js.UndefOr[js.Any] = js.undefined
-    var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
@@ -11701,10 +12393,10 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputAlign: js.UndefOr[java.lang.String] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
-    var inputPadding: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
     var invalid: js.UndefOr[scala.Boolean] = js.undefined
     var invalidMessage: js.UndefOr[java.lang.String] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var labelAlign: js.UndefOr[java.lang.String] = js.undefined
     var labelPosition: js.UndefOr[java.lang.String] = js.undefined
@@ -11723,7 +12415,7 @@ object uiNs extends js.Object {
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -11751,11 +12443,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait textareaEventName extends js.Object
   
   @js.native
   class toggle () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
@@ -11777,6 +12472,12 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def attachEvent(`type`: toggleEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: toggleEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -11815,6 +12516,7 @@ object uiNs extends js.Object {
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -11826,7 +12528,7 @@ object uiNs extends js.Object {
     var onIcon: js.UndefOr[java.lang.String] = js.undefined
     var onLabel: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11853,6 +12555,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait toggleEventName extends js.Object
   
@@ -11932,7 +12635,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
-    var padding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[js.Any] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
@@ -11960,6 +12663,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onValues
+    - webixLib.webixLibStrings.onViewShow
   */
   trait toolbarEventName extends js.Object
   
@@ -12026,6 +12730,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -12054,6 +12759,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait tooltipEventName extends js.Object
   
@@ -12063,6 +12769,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$fixEditor")
     var $fixEditor_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
@@ -12099,8 +12807,16 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
     @JSName("$fixEditor")
     def $fixEditor(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String = js.native
     def add(obj: js.Any, index: scala.Double, parentId: java.lang.String): java.lang.String = js.native
@@ -12180,7 +12896,9 @@ object uiNs extends js.Object {
     def getSelectedId(as_array: scala.Boolean): java.lang.String | js.Array[_] = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
     def getState(): js.Any = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -12195,15 +12913,15 @@ object uiNs extends js.Object {
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -12236,7 +12954,8 @@ object uiNs extends js.Object {
     def selectAll(): scala.Unit = js.native
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
-    def serialize(): js.Array[_] = js.native
+    def serialize(rootId: java.lang.String, all: scala.Boolean): js.Array[_] = js.native
+    def serialize(rootId: scala.Double, all: scala.Boolean): js.Array[_] = js.native
     def setState(state: js.Any): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -12257,6 +12976,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait treeConfig extends js.Object {
@@ -12270,7 +12990,7 @@ object uiNs extends js.Object {
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var drag: js.UndefOr[scala.Boolean] = js.undefined
+    var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var filterMode: js.UndefOr[js.Any] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
@@ -12278,6 +12998,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -12301,7 +13022,7 @@ object uiNs extends js.Object {
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -12314,7 +13035,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterOpen
     - webixLib.webixLibStrings.onAfterRender
@@ -12328,7 +13048,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeOpen
@@ -12358,6 +13077,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -12365,6 +13085,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait treeEventName extends js.Object
   
@@ -12385,6 +13106,12 @@ object uiNs extends js.Object {
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -12454,7 +13181,9 @@ object uiNs extends js.Object {
     def getSelectedId(as_array: scala.Boolean): java.lang.String | js.Array[_] = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
     def getState(): js.Any = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -12467,15 +13196,15 @@ object uiNs extends js.Object {
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def moveSelection(direction: java.lang.String): scala.Unit = js.native
@@ -12506,6 +13235,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def setState(state: js.Any): scala.Unit = js.native
     def showBranch(branchId: java.lang.String): scala.Unit = js.native
@@ -12525,6 +13255,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait treemapConfig extends js.Object {
@@ -12550,6 +13281,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -12575,7 +13307,7 @@ object uiNs extends js.Object {
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var value: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
@@ -12625,6 +13357,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -12632,6 +13365,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait treemapEventName extends js.Object
   
@@ -12643,6 +13377,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touch")
@@ -12680,6 +13416,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     @JSName("$touch")
     def $touch(args: js.Any*): js.Any = js.native
     def add(obj: js.Any): java.lang.String = js.native
@@ -12691,6 +13435,39 @@ object uiNs extends js.Object {
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addRowCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
+    def addSelectArea(start: js.Any, end: js.Any, preserve: scala.Boolean): scala.Unit = js.native
+    def addSelectArea(start: js.Any, end: js.Any, preserve: scala.Boolean, area_name: java.lang.String): scala.Unit = js.native
+    def addSelectArea(
+      start: js.Any,
+      end: js.Any,
+      preserve: scala.Boolean,
+      area_name: java.lang.String,
+      css: java.lang.String
+    ): scala.Unit = js.native
+    def addSelectArea(
+      start: js.Any,
+      end: js.Any,
+      preserve: scala.Boolean,
+      area_name: java.lang.String,
+      css: java.lang.String,
+      handle: scala.Boolean
+    ): scala.Unit = js.native
+    def addSpan(id: js.Any, column: java.lang.String, width: scala.Double, height: scala.Double): scala.Unit = js.native
+    def addSpan(
+      id: js.Any,
+      column: java.lang.String,
+      width: scala.Double,
+      height: scala.Double,
+      value: java.lang.String
+    ): scala.Unit = js.native
+    def addSpan(
+      id: js.Any,
+      column: java.lang.String,
+      width: scala.Double,
+      height: scala.Double,
+      value: java.lang.String,
+      css: java.lang.String
+    ): scala.Unit = js.native
     def adjustColumn(id: java.lang.String): scala.Unit = js.native
     def adjustColumn(id: java.lang.String, mode: java.lang.String): scala.Unit = js.native
     def adjustColumn(id: scala.Double): scala.Unit = js.native
@@ -12715,8 +13492,10 @@ object uiNs extends js.Object {
     def close(id: java.lang.String): scala.Unit = js.native
     def close(id: scala.Double): scala.Unit = js.native
     def closeAll(): scala.Unit = js.native
-    def collectValues(id: java.lang.String): js.Array[_] = js.native
-    def collectValues(id: scala.Double): js.Array[_] = js.native
+    def closeSub(id: java.lang.String): scala.Unit = js.native
+    def closeSub(id: scala.Double): scala.Unit = js.native
+    def collectValues(id: java.lang.String, mode: js.Any): js.Array[_] = js.native
+    def collectValues(id: scala.Double, mode: js.Any): js.Array[_] = js.native
     def columnId(index: scala.Double): java.lang.String | scala.Double = js.native
     def copy(sid: java.lang.String, tindex: scala.Double): scala.Double = js.native
     def copy(sid: java.lang.String, tindex: scala.Double, tobj: baseview): scala.Double = js.native
@@ -12763,8 +13542,7 @@ object uiNs extends js.Object {
     def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
     def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def focusEditor(id: js.Any): scala.Unit = js.native
-    def freezeRow(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
-    def freezeRow(id: scala.Double, state: scala.Boolean): scala.Unit = js.native
+    def getAllSelectAreas(): js.Any = js.native
     def getBranchIndex(id: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: scala.Double): scala.Double = js.native
@@ -12818,16 +13596,23 @@ object uiNs extends js.Object {
     def getPrevSiblingId(id: java.lang.String): java.lang.String | scala.Double = js.native
     def getPrevSiblingId(id: scala.Double): java.lang.String | scala.Double = js.native
     def getScrollState(): js.Any = js.native
+    def getSelectArea(area_name: java.lang.String): js.Any = js.native
     def getSelectedId(asArray: scala.Boolean, asString: scala.Boolean): js.Any = js.native
     def getSelectedItem(): js.Any = js.native
     def getSelectedItem(as_array: scala.Boolean): js.Any = js.native
+    def getSpan(): js.Array[_] = js.native
+    def getSpanNode(id: js.Any): stdLib.HTMLElement = js.native
     def getState(): js.Any = js.native
+    def getSubView(id: java.lang.String): js.Any = js.native
+    def getSubView(id: scala.Double): js.Any = js.native
     def getText(rowid: java.lang.String, colid: java.lang.String): java.lang.String = js.native
     def getText(rowid: java.lang.String, colid: scala.Double): java.lang.String = js.native
     def getText(rowid: scala.Double, colid: java.lang.String): java.lang.String = js.native
     def getText(rowid: scala.Double, colid: scala.Double): java.lang.String = js.native
     def getVisibleCount(): scala.Double = js.native
-    def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
+    def group(config: js.Any): scala.Unit = js.native
+    def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+    def group(config: js.Any, target: scala.Double): scala.Unit = js.native
     def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
     def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
@@ -12840,6 +13625,7 @@ object uiNs extends js.Object {
     def hideColumn(id: scala.Double, options: js.Any, silent: scala.Boolean): scala.Unit = js.native
     def hideColumn(id: scala.Double, options: js.Any, silent: scala.Boolean, mode: scala.Boolean): scala.Unit = js.native
     def hideOverlay(): scala.Unit = js.native
+    def ignoreUndo(functor: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def isBranch(id: java.lang.String): scala.Boolean = js.native
     def isBranch(id: scala.Double): scala.Boolean = js.native
     def isBranchOpen(id: java.lang.String): scala.Boolean = js.native
@@ -12853,15 +13639,15 @@ object uiNs extends js.Object {
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(node: stdLib.Event): js.Any = js.native
     def locate(node: stdLib.HTMLElement): js.Any = js.native
     def mapCells(
@@ -12898,6 +13684,8 @@ object uiNs extends js.Object {
     def open(id: scala.Double): scala.Unit = js.native
     def open(id: scala.Double, show: scala.Boolean): scala.Unit = js.native
     def openAll(): scala.Unit = js.native
+    def openSub(id: java.lang.String): scala.Unit = js.native
+    def openSub(id: scala.Double): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def refresh(): scala.Unit = js.native
     def refresh(id: java.lang.String): scala.Unit = js.native
@@ -12907,6 +13695,7 @@ object uiNs extends js.Object {
     def refreshColumns(config: js.Array[_], reset: scala.Boolean): scala.Unit = js.native
     def refreshFilter(id: java.lang.String): scala.Unit = js.native
     def refreshFilter(id: scala.Double): scala.Unit = js.native
+    def refreshSelectArea(): scala.Unit = js.native
     def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): scala.Unit = js.native
     def remove(id: java.lang.String): scala.Unit = js.native
     def remove(id: scala.Double): scala.Unit = js.native
@@ -12916,8 +13705,14 @@ object uiNs extends js.Object {
     def removeCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def removeCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def removeRowCss(id: java.lang.String, css_name: java.lang.String): scala.Unit = js.native
+    def removeSelectArea(area_name: java.lang.String): scala.Unit = js.native
+    def removeSpan(id: java.lang.String, column: java.lang.String): scala.Unit = js.native
+    def removeSpan(id: scala.Double, column: java.lang.String): scala.Unit = js.native
+    def removeUndo(id: java.lang.String): scala.Unit = js.native
     def render(id: java.lang.String, data: js.Any, operation: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, operation: java.lang.String): scala.Unit = js.native
+    def resizeSubView(id: java.lang.String): scala.Unit = js.native
+    def resizeSubView(id: scala.Double): scala.Unit = js.native
     def scrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
     def select(row_id: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
     def select(row_id: scala.Double, preserve: scala.Boolean): scala.Unit = js.native
@@ -12931,6 +13726,7 @@ object uiNs extends js.Object {
     def selectRange(row_id: scala.Double, end_row_id: scala.Double): scala.Unit = js.native
     def selectRange(row_id: scala.Double, end_row_id: scala.Double, preserve: scala.Boolean): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setColumnWidth(id: java.lang.String, width: scala.Double): scala.Unit = js.native
     def setColumnWidth(id: scala.Double, width: scala.Double): scala.Unit = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
@@ -12955,6 +13751,7 @@ object uiNs extends js.Object {
     def uncheckAll(id: java.lang.String): scala.Unit = js.native
     def uncheckAll(id: scala.Double): scala.Unit = js.native
     def uncheckItem(id: java.lang.String): scala.Unit = js.native
+    def undo(id: java.lang.String): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def unselect(row_id: java.lang.String): scala.Unit = js.native
     def unselect(row_id: scala.Double): scala.Unit = js.native
@@ -12966,6 +13763,7 @@ object uiNs extends js.Object {
     def validateEditor(): scala.Boolean = js.native
     def validateEditor(id: java.lang.String): scala.Boolean = js.native
     def validateEditor(id: scala.Double): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait treetableConfig extends js.Object {
@@ -13008,6 +13806,7 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var hover: js.UndefOr[java.lang.String] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var leftSplit: js.UndefOr[scala.Double] = js.undefined
     var liveValidation: js.UndefOr[scala.Boolean] = js.undefined
     var loadahead: js.UndefOr[scala.Double] = js.undefined
@@ -13051,8 +13850,8 @@ object uiNs extends js.Object {
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[scala.Boolean] = js.undefined
-    var topSplit: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
+    var undo: js.UndefOr[scala.Boolean] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -13072,7 +13871,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterEditStart
     - webixLib.webixLibStrings.onAfterEditStop
     - webixLib.webixLibStrings.onAfterFilter
@@ -13099,7 +13897,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeEditStart
     - webixLib.webixLibStrings.onBeforeEditStop
@@ -13114,6 +13911,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBlur
     - webixLib.webixLibStrings.onCheck
     - webixLib.webixLibStrings.onCollectValues
+    - webixLib.webixLibStrings.onColumnGroupCollapse
     - webixLib.webixLibStrings.onColumnResize
     - webixLib.webixLibStrings.onDataRequest
     - webixLib.webixLibStrings.onDataUpdate
@@ -13147,6 +13945,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSubViewRender
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -13154,6 +13953,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait treetableEventName extends js.Object
   
@@ -13165,6 +13965,8 @@ object uiNs extends js.Object {
     var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
     var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
+    @JSName("$dropHTML")
+    var $dropHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -13201,6 +14003,14 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     @JSName("$dropAllow")
     def $dropAllow(args: js.Any*): js.Any = js.native
+    @JSName("$dropHTML")
+    def $dropHTML(args: js.Any*): js.Any = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -13274,7 +14084,7 @@ object uiNs extends js.Object {
       callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
-    ): scala.Unit = js.native
+    ): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
@@ -13311,6 +14121,7 @@ object uiNs extends js.Object {
     def selectAll(from: java.lang.String): scala.Unit = js.native
     def selectAll(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
+    def serialize(all: scala.Boolean): js.Array[_] = js.native
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
@@ -13323,6 +14134,7 @@ object uiNs extends js.Object {
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
     def validate(id: java.lang.String): scala.Boolean = js.native
+    def waitSave(handler: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
   }
   
   trait unitlistConfig extends js.Object {
@@ -13335,19 +14147,18 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var dynamic: js.UndefOr[scala.Boolean] = js.undefined
     var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var layout: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
@@ -13372,7 +14183,7 @@ object uiNs extends js.Object {
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var uniteBy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -13387,7 +14198,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onAfterContextMenu
     - webixLib.webixLibStrings.onAfterDelete
     - webixLib.webixLibStrings.onAfterDrop
-    - webixLib.webixLibStrings.onAfterDropOrder
     - webixLib.webixLibStrings.onAfterLoad
     - webixLib.webixLibStrings.onAfterRender
     - webixLib.webixLibStrings.onAfterScroll
@@ -13399,7 +14209,6 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onBeforeDrag
     - webixLib.webixLibStrings.onBeforeDragIn
     - webixLib.webixLibStrings.onBeforeDrop
-    - webixLib.webixLibStrings.onBeforeDropOrder
     - webixLib.webixLibStrings.onBeforeDropOut
     - webixLib.webixLibStrings.onBeforeLoad
     - webixLib.webixLibStrings.onBeforeRender
@@ -13426,6 +14235,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onSelectChange
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
@@ -13433,11 +14243,14 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onValidationError
     - webixLib.webixLibStrings.onValidationSuccess
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait unitlistEventName extends js.Object
   
   @js.native
   class uploader () extends baseview {
+    @JSName("$allowsClear")
+    var $allowsClear: scala.Boolean = js.native
     @JSName("$compareValue")
     var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
@@ -13452,6 +14265,7 @@ object uiNs extends js.Object {
     var $updateProgress_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_uploader: uploaderConfig = js.native
+    var files: js.Any = js.native
     @JSName("on_click")
     var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
@@ -13467,11 +14281,17 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipIn")
+    def $tooltipIn(node: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+    @JSName("$tooltipMove")
+    def $tooltipMove(t: stdLib.HTMLElement, e: stdLib.Event, text: java.lang.String): scala.Unit = js.native
+    @JSName("$tooltipOut")
+    def $tooltipOut(): scala.Unit = js.native
     @JSName("$updateProgress")
     def $updateProgress(args: js.Any*): js.Any = js.native
     def addDropZone(element: stdLib.HTMLElement): scala.Unit = js.native
-    def addFile(name: java.lang.String, size: scala.Double): scala.Unit = js.native
-    def addFile(name: java.lang.String, size: scala.Double, `type`: java.lang.String): scala.Unit = js.native
+    def addFile(name: js.Any, size: scala.Double): scala.Unit = js.native
+    def addFile(name: js.Any, size: scala.Double, `type`: java.lang.String): scala.Unit = js.native
     def attachEvent(`type`: uploaderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
     def attachEvent(`type`: uploaderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
@@ -13523,6 +14343,7 @@ object uiNs extends js.Object {
     var inputHeight: js.UndefOr[scala.Double] = js.undefined
     var inputName: js.UndefOr[java.lang.String] = js.undefined
     var inputWidth: js.UndefOr[scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
     var link: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -13533,7 +14354,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
-    var tooltip: js.UndefOr[java.lang.String] = js.undefined
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var upload: js.UndefOr[java.lang.String] = js.undefined
     var urlData: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
@@ -13566,6 +14387,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onUploadComplete
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait uploaderEventName extends js.Object
   
@@ -13589,6 +14411,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -13614,6 +14437,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait videoEventName extends js.Object
   
@@ -13635,6 +14459,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
@@ -13654,11 +14479,13 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onLongTouch
     - webixLib.webixLibStrings.onSwipeX
     - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTabFocus
     - webixLib.webixLibStrings.onTimedKeyPress
     - webixLib.webixLibStrings.onTouchEnd
     - webixLib.webixLibStrings.onTouchMove
     - webixLib.webixLibStrings.onTouchStart
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait viewEventName extends js.Object
   
@@ -13728,6 +14555,7 @@ object uiNs extends js.Object {
     var autofocus: js.UndefOr[scala.Boolean] = js.undefined
     var body: js.UndefOr[java.lang.String | baseview] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
+    var close: js.UndefOr[scala.Boolean] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -13738,6 +14566,7 @@ object uiNs extends js.Object {
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+    var keyPressTimeout: js.UndefOr[scala.Double] = js.undefined
     var left: js.UndefOr[scala.Double] = js.undefined
     var master: js.UndefOr[java.lang.String] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
@@ -13780,6 +14609,7 @@ object uiNs extends js.Object {
     - webixLib.webixLibStrings.onViewMove
     - webixLib.webixLibStrings.onViewMoveEnd
     - webixLib.webixLibStrings.onViewResize
+    - webixLib.webixLibStrings.onViewShow
   */
   trait windowEventName extends js.Object
   
@@ -13851,6 +14681,7 @@ object uiNs extends js.Object {
     
   }
   
+  type resizerEventName = webixLib.webixLibStrings.onViewShow
   type vscrollEventName = webixLib.webixLibStrings.onScroll
 }
 

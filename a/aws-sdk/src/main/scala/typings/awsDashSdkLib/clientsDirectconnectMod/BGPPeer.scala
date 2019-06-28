@@ -19,7 +19,7 @@ trait BGPPeer extends js.Object {
     */
   var asn: js.UndefOr[ASN] = js.undefined
   /**
-    * The authentication key for BGP configuration.
+    * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   /**

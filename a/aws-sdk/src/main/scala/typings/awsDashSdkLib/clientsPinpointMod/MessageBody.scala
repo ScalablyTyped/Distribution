@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MessageBody extends js.Object {
   /**
-    * The error message that's returned from the API.
+    * The message that's returned from the API.
     */
   var Message: js.UndefOr[__string] = js.undefined
   /**
-    * The unique message body ID.
+    * The unique identifier for the request or response.
     */
   var RequestID: js.UndefOr[__string] = js.undefined
 }

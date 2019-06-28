@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait GetCampaignVersionRequest extends js.Object {
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
   /**
-    * The unique ID of the campaign.
+    * The unique identifier for the campaign.
     */
   var CampaignId: __string
   /**
-    * The version of the campaign.
+    * The unique version number (Version property) for the campaign version.
     */
   var Version: __string
 }

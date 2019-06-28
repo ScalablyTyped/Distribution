@@ -7,63 +7,63 @@ import scala.scalajs.js.annotation._
 
 trait EmailChannelResponse extends js.Object {
   /**
-    * The unique ID of the application to which the email channel belongs.
+    * The unique identifier for the application that the email channel applies to.
     */
   var ApplicationId: js.UndefOr[__string] = js.undefined
   /**
-    * The configuration set that you want to use when you send email using the Pinpoint Email API.
+    * The configuration set that's applied to email that's sent through the channel by using the Amazon Pinpoint Email API.
     */
   var ConfigurationSet: js.UndefOr[__string] = js.undefined
   /**
-    * The date that the settings were last updated in ISO 8601 format.
+    * The date and time, in ISO 8601 format, when the email channel was enabled.
     */
   var CreationDate: js.UndefOr[__string] = js.undefined
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether the email channel is enabled for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
   /**
-    * The email address used to send emails from.
+    * The verified email address that you send email from when you send email through the channel.
     */
   var FromAddress: js.UndefOr[__string] = js.undefined
   /**
-    * Not used. Retained for backwards compatibility.
+    * (Not used) This property is retained only for backward compatibility.
     */
   var HasCredential: js.UndefOr[__boolean] = js.undefined
   /**
-    * Channel ID. Not used, only for backwards compatibility.
+    * (Deprecated) An identifier for the email channel. This property is retained only for backward compatibility.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * The ARN of an identity verified with SES.
+    *  The Amazon Resource Name (ARN) of the identity, verified with Amazon Simple Email Service (Amazon SES), that you use when you send email through the channel.
     */
   var Identity: js.UndefOr[__string] = js.undefined
   /**
-    * Is this channel archived
+    * Specifies whether the email channel is archived.
     */
   var IsArchived: js.UndefOr[__boolean] = js.undefined
   /**
-    * Who last updated this entry
+    * The user who last modified the email channel.
     */
   var LastModifiedBy: js.UndefOr[__string] = js.undefined
   /**
-    * Last date this was updated
+    * The date and time, in ISO 8601 format, when the email channel was last modified.
     */
   var LastModifiedDate: js.UndefOr[__string] = js.undefined
   /**
-    * Messages per second that can be sent
+    * The maximum number of emails that you can send through the channel each second.
     */
   var MessagesPerSecond: js.UndefOr[__integer] = js.undefined
   /**
-    * Platform type. Will be "EMAIL"
+    * The type of messaging or notification platform for the channel. For the email channel, this value is EMAIL.
     */
-  var Platform: js.UndefOr[__string] = js.undefined
+  var Platform: __string
   /**
-    * The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service
+    *  The ARN of the AWS Identity and Access Management (IAM) role that Amazon Pinpoint uses to submit email-related event data for the channel.
     */
   var RoleArn: js.UndefOr[__string] = js.undefined
   /**
-    * Version of channel
+    * The current version of the email channel.
     */
   var Version: js.UndefOr[__integer] = js.undefined
 }
@@ -71,6 +71,7 @@ trait EmailChannelResponse extends js.Object {
 object EmailChannelResponse {
   @scala.inline
   def apply(
+    Platform: __string,
     ApplicationId: __string = null,
     ConfigurationSet: __string = null,
     CreationDate: __string = null,
@@ -83,11 +84,10 @@ object EmailChannelResponse {
     LastModifiedBy: __string = null,
     LastModifiedDate: __string = null,
     MessagesPerSecond: js.UndefOr[__integer] = js.undefined,
-    Platform: __string = null,
     RoleArn: __string = null,
     Version: js.UndefOr[__integer] = js.undefined
   ): EmailChannelResponse = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(Platform = Platform)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
     if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
@@ -100,7 +100,6 @@ object EmailChannelResponse {
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
     if (!js.isUndefined(MessagesPerSecond)) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond)
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform)
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[EmailChannelResponse]

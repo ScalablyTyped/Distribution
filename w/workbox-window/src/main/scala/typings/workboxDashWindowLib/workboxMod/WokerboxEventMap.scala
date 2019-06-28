@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WokerboxEventMap extends js.Object {
-  var activated: workboxDashWindowLib.utilsWorkboxEventMod.WorkboxEvent
+  var activated: WorkboxUpdatableEvent
   var controlling: workboxDashWindowLib.utilsWorkboxEventMod.WorkboxEvent
   var externalactivated: WorkboxExtendableEvent
   var externalinstalled: WorkboxExtendableEvent
@@ -20,7 +20,7 @@ trait WokerboxEventMap extends js.Object {
 object WokerboxEventMap {
   @scala.inline
   def apply(
-    activated: workboxDashWindowLib.utilsWorkboxEventMod.WorkboxEvent,
+    activated: WorkboxUpdatableEvent,
     controlling: workboxDashWindowLib.utilsWorkboxEventMod.WorkboxEvent,
     externalactivated: WorkboxExtendableEvent,
     externalinstalled: WorkboxExtendableEvent,

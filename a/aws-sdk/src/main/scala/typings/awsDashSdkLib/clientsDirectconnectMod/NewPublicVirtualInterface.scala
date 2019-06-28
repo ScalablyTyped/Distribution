@@ -19,7 +19,7 @@ trait NewPublicVirtualInterface extends js.Object {
     */
   var asn: ASN
   /**
-    * The authentication key for BGP configuration.
+    * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   /**
@@ -30,6 +30,10 @@ trait NewPublicVirtualInterface extends js.Object {
     * The routes to be advertised to the AWS network in this Region. Applies to public virtual interfaces.
     */
   var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.undefined
+  /**
+    * Any tags assigned to the public virtual interface.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
   /**
     * The name of the virtual interface assigned by the customer network.
     */
@@ -50,7 +54,8 @@ object NewPublicVirtualInterface {
     amazonAddress: AmazonAddress = null,
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null,
-    routeFilterPrefixes: RouteFilterPrefixList = null
+    routeFilterPrefixes: RouteFilterPrefixList = null,
+    tags: TagList = null
   ): NewPublicVirtualInterface = {
     val __obj = js.Dynamic.literal(asn = asn, virtualInterfaceName = virtualInterfaceName, vlan = vlan)
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
@@ -58,6 +63,7 @@ object NewPublicVirtualInterface {
     if (authKey != null) __obj.updateDynamic("authKey")(authKey)
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress)
     if (routeFilterPrefixes != null) __obj.updateDynamic("routeFilterPrefixes")(routeFilterPrefixes)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[NewPublicVirtualInterface]
   }
 }

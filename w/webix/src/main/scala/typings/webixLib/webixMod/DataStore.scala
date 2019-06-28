@@ -80,6 +80,7 @@ trait DataStore extends js.Object {
   def removeMark(id: java.lang.String, name: java.lang.String, css: scala.Boolean): scala.Unit = js.native
   def scheme(config: js.Any): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
+  def serialize(all: scala.Boolean): js.Array[_] = js.native
   def setDriver(`type`: java.lang.String): scala.Unit = js.native
   def silent(code: WebixCallback): scala.Unit = js.native
   def sort(by: java.lang.String): scala.Unit = js.native

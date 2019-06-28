@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // TODO export the top-level functions
 // TODO figure out curry arguments
 // TODO create more overloads for nested data, like streams-of-streams or streams-of-array-of-streams etc
-// TODO use externalised Thenable
 // TODO use externalised Readable/Writable (not node's)
 /**
   * Highland: the high-level streams library
@@ -54,6 +53,21 @@ trait HighlandStatic extends js.Object {
   	 * it with the Highland API. Reading from the resulting Highland Stream will
   	 * begin piping the data from the Node Stream to the Highland Stream.
   	 *
+    * A stream constructed in this way relies on Readable#pipe to end the
+    * Highland Stream once there is no more data. Not all Readable Streams do this.
+    * For example, IncomingMessage will only emit close when the client aborts
+    * communications and will not properly call end. In this case, you can provide
+    * an optional onFinished function with the signature onFinished(readable, callback)
+    * as the second argument.
+    *
+    * This function will be passed the Readable and a callback that should called
+    * when the Readable ends. If the Readable ended from an error, the error should
+    * be passed as the first argument to the callback. onFinished should bind to
+    * whatever listener is necessary to detect the Readable's completion. If the
+    * callback is called multiple times, only the first invocation counts. If the
+    * callback is called after the Readable has already ended (e.g., the pipe method
+    * already called end), it will be ignored.
+    *
   	 * **EventEmitter / jQuery Elements -** Pass in both an event name and an
   	 * event emitter as the two arguments to the constructor and the first
   	 * argument emitted to the event handler will be written to the new Stream.
@@ -86,8 +100,6 @@ trait HighlandStatic extends js.Object {
     mappingHint: highlandLib.HighlandNs.MappingHint
   ): highlandLib.HighlandNs.Stream[R] = js.native
   def apply[R](xs: highlandLib.HighlandNs.Stream[R]): highlandLib.HighlandNs.Stream[R] = js.native
-  // moar (promise for everything?)
-  def apply[R](xs: highlandLib.HighlandNs.Thenable[R | highlandLib.HighlandNs.Stream[R]]): highlandLib.HighlandNs.Stream[R] = js.native
   def apply[R](xs: js.Array[R | highlandLib.HighlandNs.Stream[R]]): highlandLib.HighlandNs.Stream[R] = js.native
   def apply[R](
     xs: js.Function2[
@@ -100,7 +112,10 @@ trait HighlandStatic extends js.Object {
       scala.Unit
     ]
   ): highlandLib.HighlandNs.Stream[R] = js.native
+  // moar (promise for everything?)
+  def apply[R](xs: js.Thenable[R | highlandLib.HighlandNs.Stream[R]]): highlandLib.HighlandNs.Stream[R] = js.native
   def apply[R](xs: nodeLib.NodeJSNs.ReadableStream): highlandLib.HighlandNs.Stream[R] = js.native
+  def apply[R](xs: nodeLib.NodeJSNs.ReadableStream, of: highlandLib.HighlandNs.OnFinished): highlandLib.HighlandNs.Stream[R] = js.native
   def add(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // OPERATORS

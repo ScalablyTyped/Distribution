@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation._
 
 trait ChannelResponse extends js.Object {
   /**
-    * Application id
+    * The unique identifier for the application.
     */
   var ApplicationId: js.UndefOr[__string] = js.undefined
   /**
-    * When was this segment created
+    * The date and time, in ISO 8601 format, when the channel was enabled.
     */
   var CreationDate: js.UndefOr[__string] = js.undefined
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether the channel is enabled for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
   /**
-    * Not used. Retained for backwards compatibility.
+    * (Not used) This property is retained only for backward compatibility.
     */
   var HasCredential: js.UndefOr[__boolean] = js.undefined
   /**
-    * Channel ID. Not used, only for backwards compatibility.
+    * (Deprecated) An identifier for the channel. This property is retained only for backward compatibility.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * Is this channel archived
+    * Specifies whether the channel is archived.
     */
   var IsArchived: js.UndefOr[__boolean] = js.undefined
   /**
-    * Who made the last change
+    * The user who last modified the channel.
     */
   var LastModifiedBy: js.UndefOr[__string] = js.undefined
   /**
-    * Last date this was updated
+    * The date and time, in ISO 8601 format, when the channel was last modified.
     */
   var LastModifiedDate: js.UndefOr[__string] = js.undefined
   /**
-    * Version of channel
+    * The current version of the channel.
     */
   var Version: js.UndefOr[__integer] = js.undefined
 }

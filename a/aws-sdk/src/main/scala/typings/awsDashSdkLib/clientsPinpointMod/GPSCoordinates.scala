@@ -7,21 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait GPSCoordinates extends js.Object {
   /**
-    * Latitude
+    * The latitude coordinate of the location.
     */
-  var Latitude: js.UndefOr[__double] = js.undefined
+  var Latitude: __double
   /**
-    * Longitude
+    * The longitude coordinate of the location.
     */
-  var Longitude: js.UndefOr[__double] = js.undefined
+  var Longitude: __double
 }
 
 object GPSCoordinates {
   @scala.inline
-  def apply(Latitude: js.UndefOr[__double] = js.undefined, Longitude: js.UndefOr[__double] = js.undefined): GPSCoordinates = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Latitude)) __obj.updateDynamic("Latitude")(Latitude)
-    if (!js.isUndefined(Longitude)) __obj.updateDynamic("Longitude")(Longitude)
+  def apply(Latitude: __double, Longitude: __double): GPSCoordinates = {
+    val __obj = js.Dynamic.literal(Latitude = Latitude, Longitude = Longitude)
+  
     __obj.asInstanceOf[GPSCoordinates]
   }
 }

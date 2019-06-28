@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SegmentBehaviors extends js.Object {
   /**
-    * The recency of use.
+    * The dimension settings that are based on how recently an endpoint was active.
     */
   var Recency: js.UndefOr[RecencyDimension] = js.undefined
 }

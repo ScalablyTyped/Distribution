@@ -7,92 +7,84 @@ import scala.scalajs.js.annotation._
 
 trait ImportJobResponse extends js.Object {
   /**
-    * The unique ID of the application to which the import job applies.
+    * The unique identifier for the application that's associated with the import job.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: __string
   /**
-    * The number of pieces that have successfully imported as of the time of the request.
+    * The number of pieces that were processed successfully (completed) by the import job, as of the time of the request.
     */
   var CompletedPieces: js.UndefOr[__integer] = js.undefined
   /**
-    * The date the import job completed in ISO 8601 format.
+    * The date, in ISO 8601 format, when the import job was completed.
     */
   var CompletionDate: js.UndefOr[__string] = js.undefined
   /**
-    * The date the import job was created in ISO 8601 format.
+    * The date, in ISO 8601 format, when the import job was created.
     */
-  var CreationDate: js.UndefOr[__string] = js.undefined
+  var CreationDate: __string
   /**
-    * The import job settings.
+    * The resource settings that apply to the import job.
     */
-  var Definition: js.UndefOr[ImportJobResource] = js.undefined
+  var Definition: ImportJobResource
   /**
-    * The number of pieces that have failed to import as of the time of the request.
+    * The number of pieces that weren't processed successfully (failed) by the import job, as of the time of the request.
     */
   var FailedPieces: js.UndefOr[__integer] = js.undefined
   /**
-    * Provides up to 100 of the first failed entries for the job, if any exist.
+    * An array of entries, one for each of the first 100 entries that weren't processed successfully (failed) by the import job, if any.
     */
   var Failures: js.UndefOr[ListOf__string] = js.undefined
   /**
-    * The unique ID of the import job.
+    * The unique identifier for the import job.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
-    * The status of the import job.
-  Valid values: CREATED, INITIALIZING, PROCESSING, COMPLETING, COMPLETED, FAILING, FAILED
-  The job status is FAILED if one or more pieces failed to import.
+    * The status of the import job. The job status is FAILED if Amazon Pinpoint wasn't able to process one or more pieces in the job.
     */
-  var JobStatus: js.UndefOr[JobStatus] = js.undefined
+  var JobStatus: awsDashSdkLib.clientsPinpointMod.JobStatus
   /**
-    * The number of endpoints that failed to import; for example, because of syntax errors.
+    * The total number of endpoint definitions that weren't processed successfully (failed) by the import job, typically because an error, such as a syntax error, occurred.
     */
   var TotalFailures: js.UndefOr[__integer] = js.undefined
   /**
-    * The total number of pieces that must be imported to finish the job. Each piece is an approximately equal portion of the endpoints to import.
+    * The total number of pieces that must be processed to complete the import job. Each piece consists of an approximately equal portion of the endpoint definitions that are part of the import job.
     */
   var TotalPieces: js.UndefOr[__integer] = js.undefined
   /**
-    * The number of endpoints that were processed by the import job.
+    * The total number of endpoint definitions that were processed by the import job.
     */
   var TotalProcessed: js.UndefOr[__integer] = js.undefined
   /**
-    * The job type. Will be Import.
+    * The job type. This value is IMPORT for import jobs.
     */
-  var Type: js.UndefOr[__string] = js.undefined
+  var Type: __string
 }
 
 object ImportJobResponse {
   @scala.inline
   def apply(
-    ApplicationId: __string = null,
+    ApplicationId: __string,
+    CreationDate: __string,
+    Definition: ImportJobResource,
+    Id: __string,
+    JobStatus: JobStatus,
+    Type: __string,
     CompletedPieces: js.UndefOr[__integer] = js.undefined,
     CompletionDate: __string = null,
-    CreationDate: __string = null,
-    Definition: ImportJobResource = null,
     FailedPieces: js.UndefOr[__integer] = js.undefined,
     Failures: ListOf__string = null,
-    Id: __string = null,
-    JobStatus: JobStatus = null,
     TotalFailures: js.UndefOr[__integer] = js.undefined,
     TotalPieces: js.UndefOr[__integer] = js.undefined,
-    TotalProcessed: js.UndefOr[__integer] = js.undefined,
-    Type: __string = null
+    TotalProcessed: js.UndefOr[__integer] = js.undefined
   ): ImportJobResponse = {
-    val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, CreationDate = CreationDate, Definition = Definition, Id = Id, JobStatus = JobStatus.asInstanceOf[js.Any], Type = Type)
     if (!js.isUndefined(CompletedPieces)) __obj.updateDynamic("CompletedPieces")(CompletedPieces)
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (Definition != null) __obj.updateDynamic("Definition")(Definition)
     if (!js.isUndefined(FailedPieces)) __obj.updateDynamic("FailedPieces")(FailedPieces)
     if (Failures != null) __obj.updateDynamic("Failures")(Failures)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
     if (!js.isUndefined(TotalFailures)) __obj.updateDynamic("TotalFailures")(TotalFailures)
     if (!js.isUndefined(TotalPieces)) __obj.updateDynamic("TotalPieces")(TotalPieces)
     if (!js.isUndefined(TotalProcessed)) __obj.updateDynamic("TotalProcessed")(TotalProcessed)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
     __obj.asInstanceOf[ImportJobResponse]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa2-session-redis"
-version := "0.0-dt-20190126Z-33fd8f"
+version := "0.0-dt-20190126Z-dd57bf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9b0098",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-62e70e",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-97aa3d",
-  "org.scalablytyped" %%% "koa-session" % "5.10-dt-20190126Z-a1c53f",
+  "org.scalablytyped" %%% "koa-session" % "5.10-dt-20190627Z-c6d86f",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c60c5",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-eab0d2",

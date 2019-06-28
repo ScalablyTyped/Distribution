@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /** allow unkown commit types */
+  var allowUnknown: js.UndefOr[scala.Boolean] = js.undefined
   /** exclude listed commit types (e.g. `['chore', 'style', 'refactor']`) */
   var exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** whether it should be a major changelog */
@@ -23,6 +25,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    allowUnknown: js.UndefOr[scala.Boolean] = js.undefined,
     exclude: js.Array[java.lang.String] = null,
     major: js.UndefOr[scala.Boolean] = js.undefined,
     minor: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,6 +34,7 @@ object Options {
     tag: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (!js.isUndefined(major)) __obj.updateDynamic("major")(major)
     if (!js.isUndefined(minor)) __obj.updateDynamic("minor")(minor)

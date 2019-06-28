@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait GetSegmentsRequest extends js.Object {
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
   /**
-    * The number of entries you want on each page in the response.
+    * The maximum number of items to include on each page in a paginated response.
     */
   var PageSize: js.UndefOr[__string] = js.undefined
   /**
-    * The NextToken string returned on a previous page that you use to get the next page of results in a paginated response.
+    * The NextToken string that specifies which page of results to return in a paginated response.
     */
   var Token: js.UndefOr[__string] = js.undefined
 }

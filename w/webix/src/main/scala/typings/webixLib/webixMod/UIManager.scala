@@ -16,7 +16,7 @@ trait UIManager extends js.Object {
   def getFocus(): webixLib.webixMod.uiNs.baseview = js.native
   def getNext(view: js.Any): js.Any = js.native
   def getPrev(view: js.Any): js.Any = js.native
-  def getState(id: java.lang.String, childs: scala.Boolean): js.Any = js.native
+  def getState(id: java.lang.String, children: scala.Boolean): js.Any = js.native
   def getTop(id: java.lang.String): js.Any = js.native
   def getTop(id: scala.Double): js.Any = js.native
   def hasFocus(id: java.lang.String): scala.Boolean = js.native

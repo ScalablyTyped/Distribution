@@ -35,5 +35,6 @@ trait html extends js.Object {
   def remove(node: stdLib.HTMLElement): scala.Unit = js.native
   def removeCss(node: stdLib.HTMLElement, name: java.lang.String): scala.Unit = js.native
   def stopEvent(ev: stdLib.Event): scala.Boolean = js.native
+  def triggerEvent(node: stdLib.HTMLElement, `type`: java.lang.String, name: java.lang.String): scala.Unit = js.native
 }
 

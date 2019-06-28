@@ -7,51 +7,51 @@ import scala.scalajs.js.annotation._
 
 trait APNSVoipSandboxChannelResponse extends js.Object {
   /**
-    * Application id
+    * The unique identifier for the application that the APNs VoIP sandbox channel applies to.
     */
   var ApplicationId: js.UndefOr[__string] = js.undefined
   /**
-    * When was this segment created
+    * The date and time when the APNs VoIP sandbox channel was enabled.
     */
   var CreationDate: js.UndefOr[__string] = js.undefined
   /**
-    * The default authentication method used for APNs.
+    * The default authentication method that Amazon Pinpoint uses to authenticate with the APNs sandbox environment for this channel, key or certificate.
     */
   var DefaultAuthenticationMethod: js.UndefOr[__string] = js.undefined
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether the APNs VoIP sandbox channel is enabled for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
   /**
-    * Not used. Retained for backwards compatibility.
+    * (Not used) This property is retained only for backward compatibility.
     */
   var HasCredential: js.UndefOr[__boolean] = js.undefined
   /**
-    * If the channel is registered with a token key for authentication.
+    * Specifies whether the APNs VoIP sandbox channel is configured to communicate with APNs by using APNs tokens. To provide an authentication key for APNs tokens, set the TokenKey property of the channel.
     */
   var HasTokenKey: js.UndefOr[__boolean] = js.undefined
   /**
-    * Channel ID. Not used, only for backwards compatibility.
+    * (Deprecated) An identifier for the APNs VoIP sandbox channel. This property is retained only for backward compatibility.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * Is this channel archived
+    * Specifies whether the APNs VoIP sandbox channel is archived.
     */
   var IsArchived: js.UndefOr[__boolean] = js.undefined
   /**
-    * Who made the last change
+    * The user who last modified the APNs VoIP sandbox channel.
     */
   var LastModifiedBy: js.UndefOr[__string] = js.undefined
   /**
-    * Last date this was updated
+    * The date and time when the APNs VoIP sandbox channel was last modified.
     */
   var LastModifiedDate: js.UndefOr[__string] = js.undefined
   /**
-    * The platform type. Will be APNS.
+    * The type of messaging or notification platform for the channel. For the APNs VoIP sandbox channel, this value is APNS_VOIP_SANDBOX.
     */
-  var Platform: js.UndefOr[__string] = js.undefined
+  var Platform: __string
   /**
-    * Version of channel
+    * The current version of the APNs VoIP sandbox channel.
     */
   var Version: js.UndefOr[__integer] = js.undefined
 }
@@ -59,6 +59,7 @@ trait APNSVoipSandboxChannelResponse extends js.Object {
 object APNSVoipSandboxChannelResponse {
   @scala.inline
   def apply(
+    Platform: __string,
     ApplicationId: __string = null,
     CreationDate: __string = null,
     DefaultAuthenticationMethod: __string = null,
@@ -69,10 +70,9 @@ object APNSVoipSandboxChannelResponse {
     IsArchived: js.UndefOr[__boolean] = js.undefined,
     LastModifiedBy: __string = null,
     LastModifiedDate: __string = null,
-    Platform: __string = null,
     Version: js.UndefOr[__integer] = js.undefined
   ): APNSVoipSandboxChannelResponse = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(Platform = Platform)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
     if (DefaultAuthenticationMethod != null) __obj.updateDynamic("DefaultAuthenticationMethod")(DefaultAuthenticationMethod)
@@ -83,7 +83,6 @@ object APNSVoipSandboxChannelResponse {
     if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform)
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[APNSVoipSandboxChannelResponse]
   }

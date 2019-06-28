@@ -150,7 +150,14 @@ trait CanvasContext extends js.Object {
     */
   def createPattern(): scala.Unit = js.native
   def createPattern(image: java.lang.String): scala.Unit = js.native
-  def createPattern(image: java.lang.String, repetition: java.lang.String): scala.Unit = js.native
+  @JSName("createPattern")
+  def createPattern_norepeat(image: java.lang.String, repetition: uniDashAppLib.uniDashAppLibStrings.`no-repeat`): scala.Unit = js.native
+  @JSName("createPattern")
+  def createPattern_repeat(image: java.lang.String, repetition: uniDashAppLib.uniDashAppLibStrings.repeat): scala.Unit = js.native
+  @JSName("createPattern")
+  def createPattern_repeatx(image: java.lang.String, repetition: uniDashAppLib.uniDashAppLibStrings.`repeat-x`): scala.Unit = js.native
+  @JSName("createPattern")
+  def createPattern_repeaty(image: java.lang.String, repetition: uniDashAppLib.uniDashAppLibStrings.`repeat-y`): scala.Unit = js.native
   /**
     * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中
     */
@@ -262,7 +269,12 @@ trait CanvasContext extends js.Object {
     * 设置线条的端点样式
     */
   def setLineCap(): scala.Unit = js.native
-  def setLineCap(lineCap: java.lang.String): scala.Unit = js.native
+  @JSName("setLineCap")
+  def setLineCap_butt(lineCap: uniDashAppLib.uniDashAppLibStrings.butt): scala.Unit = js.native
+  @JSName("setLineCap")
+  def setLineCap_round(lineCap: uniDashAppLib.uniDashAppLibStrings.round): scala.Unit = js.native
+  @JSName("setLineCap")
+  def setLineCap_square(lineCap: uniDashAppLib.uniDashAppLibStrings.square): scala.Unit = js.native
   /**
     * 设置线条的宽度
     */
@@ -273,7 +285,12 @@ trait CanvasContext extends js.Object {
     * 设置线条的交点样式
     */
   def setLineJoin(): scala.Unit = js.native
-  def setLineJoin(lineJoin: java.lang.String): scala.Unit = js.native
+  @JSName("setLineJoin")
+  def setLineJoin_bevel(lineJoin: uniDashAppLib.uniDashAppLibStrings.bevel): scala.Unit = js.native
+  @JSName("setLineJoin")
+  def setLineJoin_miter(lineJoin: uniDashAppLib.uniDashAppLibStrings.miter): scala.Unit = js.native
+  @JSName("setLineJoin")
+  def setLineJoin_round(lineJoin: uniDashAppLib.uniDashAppLibStrings.round): scala.Unit = js.native
   /**
     * 设置线条的宽度
     */
@@ -301,12 +318,24 @@ trait CanvasContext extends js.Object {
     * 设置文字的对齐
     */
   def setTextAlign(): scala.Unit = js.native
-  def setTextAlign(align: java.lang.String): scala.Unit = js.native
+  @JSName("setTextAlign")
+  def setTextAlign_center(align: uniDashAppLib.uniDashAppLibStrings.center): scala.Unit = js.native
+  @JSName("setTextAlign")
+  def setTextAlign_left(align: uniDashAppLib.uniDashAppLibStrings.left): scala.Unit = js.native
+  @JSName("setTextAlign")
+  def setTextAlign_right(align: uniDashAppLib.uniDashAppLibStrings.right): scala.Unit = js.native
   /**
     * 设置文字的水平对齐
     */
   def setTextBaseline(): scala.Unit = js.native
-  def setTextBaseline(textBaseline: java.lang.String): scala.Unit = js.native
+  @JSName("setTextBaseline")
+  def setTextBaseline_bottom(textBaseline: uniDashAppLib.uniDashAppLibStrings.bottom): scala.Unit = js.native
+  @JSName("setTextBaseline")
+  def setTextBaseline_middle(textBaseline: uniDashAppLib.uniDashAppLibStrings.middle): scala.Unit = js.native
+  @JSName("setTextBaseline")
+  def setTextBaseline_normal(textBaseline: uniDashAppLib.uniDashAppLibStrings.normal): scala.Unit = js.native
+  @JSName("setTextBaseline")
+  def setTextBaseline_top(textBaseline: uniDashAppLib.uniDashAppLibStrings.top): scala.Unit = js.native
   /**
     * 使用矩阵重新设置（覆盖）当前变换的方法
     */

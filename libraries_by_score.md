@@ -1803,6 +1803,7 @@
 | 0.7252635445663629 | [mui-datatables](./m/mui-datatables) | Datatables for React using Material-UI
 | 0.7252193325542444 | [download](./d/download) | Download and extract files
 | 0.7252031862687007 | [restify](./r/restify) | REST framework
+| 0.725157656688317 | [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC
 | 0.7251454346268168 | [react-geosuggest](./r/react-geosuggest) | A React autosuggest for the Google Maps Places API
 | 0.7251072187067119 | [web-push](./w/web-push) | Web Push library for Node.js
 | 0.7250361196606947 | [lingui__macro](./l/lingui__macro) | Macro for generating messages in ICU MessageFormat
@@ -1985,6 +1986,7 @@
 | 0.7158288629214221 | [systeminformation](./s/systeminformation) | Simple system and OS information library
 | 0.7157049447006805 | [express-promise-router](./e/express-promise-router) | A lightweight wrapper for Express 4's Router that 
 | 0.715693293308141 | [sudo-block](./s/sudo-block) | Block users from running your app with root permis
+| 0.7155837291714654 | [express-request-id](./e/express-request-id) | Generate UUID for request and add it to headers
 | 0.7155595996781762 | [cson-parser](./c/cson-parser) | Safe parsing of CSON files
 | 0.7155307516543297 | [reconnect-core](./r/reconnect-core) | Generic stream reconnection module.
 | 0.7155185186806841 | [iconv](./i/iconv) | Text recoding in JavaScript for fun and profit
@@ -2472,6 +2474,7 @@
 | 0.6914976073725445 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components
 | 0.691416102648011 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views
 | 0.6913752844722203 | [inquirer-npm-name](./i/inquirer-npm-name) | Helper function using inquirer to validate a value
+| 0.691295405892692 | [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io
 | 0.6912593350044549 | [styled-react-modal](./s/styled-react-modal) | A React modal built with styled-components.
 | 0.691143507462022 | [hapi__cryptiles](./h/hapi__cryptiles) | General purpose crypto utilities
 | 0.6910725454812717 | [redux-recycle](./r/redux-recycle) | higher-order reducer to reset the redux state on c
@@ -2752,6 +2755,7 @@
 | 0.680145145630295 | [electron-unhandled](./e/electron-unhandled) | Catch unhandled errors and promise rejections in y
 | 0.680113569363325 | [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j
 | 0.6800034542479293 | [connect-slashes](./c/connect-slashes) | Trailing slash redirect middleware for Connect and
+| 0.6798577984965651 | [facebook-locales](./f/facebook-locales) | Maps locales to Facebook locales
 | 0.6798034689976044 | [typesettable](./t/typesettable) | A typesetting library for SVG and Canvas
 | 0.6797660928601352 | [impress](./i/impress) | Impress Application Server for Node.js
 | 0.6797121516474967 | [error-subclass](./e/error-subclass) | Extendable Error Class
@@ -3093,6 +3097,7 @@
 | 0.6658274849982049 | [braintree-web-drop-in](./b/braintree-web-drop-in) | A pre-made payments UI for accepting cards and alt
 | 0.6657737644270008 | [carbon__layout](./c/carbon__layout) | Layout helpers for digital and software products u
 | 0.6657218995525797 | [react-native-version-chec](./r/react-native-version-check) | A version checker for react-native applications
+| 0.6656847563462427 | [logrocket-react](./l/logrocket-react) | React library for 
 | 0.6655708436184947 | [react-scroll-into-view-if](./r/react-scroll-into-view-if-needed) | A thin component wrapper around scroll-into-view-i
 | 0.6654508928991723 | [any-db-transaction](./a/any-db-transaction) | Transaction object for Any-DB adapters
 | 0.6654204216694325 | [precise](./p/precise) | Precision timer for nanosecond differences
@@ -3467,6 +3472,7 @@
 | 0.6458397688175308 | [app-builder-bin](./a/app-builder-bin) | app-builder precompiled binaries
 | 0.6458009641415094 | [styletron-engine-atomic](./s/styletron-engine-atomic) | Universal, high-performance JavaScript styles
 | 0.6457319779507781 | [react-sticky-el](./r/react-sticky-el) | Sticky component for React
+| 0.6456855443041933 | [openapi-schemas](./o/openapi-schemas) | JSON Schemas for every version of the OpenAPI Spec
 | 0.6456385217060276 | [coinbase-commerce-node](./c/coinbase-commerce-node) | The Official Coinbase Commerce SDK for Node.js
 | 0.6454607358951159 | [dc](./d/dc) | A multi-dimensional charting library built to work
 | 0.6454014111762849 | [knockout-pre-rendered](./k/knockout-pre-rendered) | Knockout pre-rendered
@@ -3813,6 +3819,7 @@
 | 0.6203886782279797 | [gulp-jsonmin](./g/gulp-jsonmin) | Minifies json files by parsing and re-stringifying
 | 0.6202956743437127 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript
 | 0.6202841867037523 | [camljs](./c/camljs) | Library for creating SharePoint CAML queries clien
+| 0.6202331676792763 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.6201724170003912 | [bidirectional-map](./b/bidirectional-map) | Create 'key/value' collections of one-to-one corre
 | 0.6199243804367737 | [ffi](./f/ffi) | A foreign function interface (FFI) for Node.js
 | 0.6198596602008837 | [frecency](./f/frecency) | Frecency sorting for search results.
@@ -3880,6 +3887,7 @@
 | 0.6133529657717333 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos
 | 0.6132801459202337 | [react-scroll](./r/react-scroll) | A scroll component for React.js
 | 0.6131918467390426 | [websocket-stream](./w/websocket-stream) | Use websockets with the node streams API. Works in
+| 0.6131462916934841 | [muibox](./m/muibox) | Promise-based dialog boxes (alert, confirm, prompt
 | 0.6131154914522612 | [chui](./c/chui) | A module for creating Web apps with ChocolateChip-
 | 0.6130003283003347 | [match-media-mock](./m/match-media-mock) | server side compatible replacement for Window.matc
 | 0.6128086118136308 | [inline-css](./i/inline-css) | Inline css into an html file.
@@ -5021,6 +5029,7 @@
 | 0.4472791457276004 | [passport-oauth2-client-pa](./p/passport-oauth2-client-password) | OAuth 2.0 client password authentication strategy 
 | 0.4470595511184037 | [redux-router](./r/redux-router) | Redux bindings for React Router — keep your router
 | 0.4470427785808571 | [restler](./r/restler) | An HTTP client library for node.js
+| 0.44689246497652924 | [moment-hijri](./m/moment-hijri) | A Hijri calendar (Based on Umm al-Qura calculation
 | 0.4467645194384356 | [moment-duration-format](./m/moment-duration-format) | A moment.js plugin for formatting durations.
 | 0.4467125293296752 | [material__line-ripple](./m/material__line-ripple) | The Material Components for the web line-ripple co
 | 0.44656271452886037 | [dagre-layout](./d/dagre-layout) | Graph layout for JavaScript
@@ -5229,6 +5238,7 @@
 | 0.41645645235904843 | [nblas](./n/nblas) | C++ bindings for all single- and double-precision 
 | 0.4160158594038382 | [rolling-rate-limiter](./r/rolling-rate-limiter) | Rate limiter that supports a rolling window, eithe
 | 0.4159881492905315 | [reservoir](./r/reservoir) | Fast random sampling using reservoir sampling
+| 0.4158488310741368 | [human-interval](./h/human-interval) | Human readable time measurements
 | 0.4158381081761064 | [unidecode](./u/unidecode) | ASCII transliterations of Unicode text
 | 0.4157178977846943 | [wordpress__data](./w/wordpress__data) | Data module for WordPress.
 | 0.41556676925068337 | [sasl-digest-md5](./s/sasl-digest-md5) | JavaScript implementation of DIGEST-MD5 SASL mecha
@@ -6255,6 +6265,7 @@
 | 0.2396275649985213 | [material-components-web](./m/material-components-web) | Modular and customizable Material Design UI compon
 | 0.23957231270000307 | [jest-matchers](./j/jest-matchers) | -
 | 0.23922424047455082 | [material__radio](./m/material__radio) | The Material Components for the web radio componen
+| 0.23873053829013574 | [reach__tabs](./r/reach__tabs) | Accessible React Tabs Component
 | 0.23860646616372785 | [nivo__annotations](./n/nivo__annotations) | -
 | 0.23831689620550206 | [sammy](./s/sammy) | Sammy is a RESTful Evented JavaScript framework bu
 | 0.23826116075404344 | [i18next-ko](./i/i18next-ko) | KnockoutJS bindings for i18next.
@@ -6323,6 +6334,7 @@
 | 0.21471949639878457 | [dragster](./d/dragster) | Better HTML5 drag events
 | 0.2147041245029741 | [pulumi__aws](./p/pulumi__aws) | A Pulumi package for creating and managing Amazon 
 | 0.21408416091560445 | [react-native-sensor-manag](./r/react-native-sensor-manager) | A react-native module that allows you to use the a
+| 0.21314809173181976 | [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests.
 | 0.21289719627081888 | [paho-mqtt](./p/paho-mqtt) | Eclipse Paho JavaScript MQTT client for Browsers
 | 0.21287783116199996 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
 | 0.21273519266237287 | [js-combinatorics](./j/js-combinatorics) | Simple combinatorics like power set, combination, 

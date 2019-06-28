@@ -23,7 +23,7 @@ trait VirtualInterface extends js.Object {
     */
   var asn: js.UndefOr[ASN] = js.undefined
   /**
-    * The authentication key for BGP configuration.
+    * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   /**
@@ -75,6 +75,10 @@ trait VirtualInterface extends js.Object {
     */
   var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.undefined
   /**
+    * Any tags assigned to the virtual interface.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
+  /**
     * The ID of the virtual private gateway. Applies only to private virtual interfaces.
     */
   var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
@@ -120,6 +124,7 @@ object VirtualInterface {
     ownerAccount: OwnerAccount = null,
     region: Region = null,
     routeFilterPrefixes: RouteFilterPrefixList = null,
+    tags: TagList = null,
     virtualGatewayId: VirtualGatewayId = null,
     virtualInterfaceId: VirtualInterfaceId = null,
     virtualInterfaceName: VirtualInterfaceName = null,
@@ -145,6 +150,7 @@ object VirtualInterface {
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount)
     if (region != null) __obj.updateDynamic("region")(region)
     if (routeFilterPrefixes != null) __obj.updateDynamic("routeFilterPrefixes")(routeFilterPrefixes)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId)
     if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId)
     if (virtualInterfaceName != null) __obj.updateDynamic("virtualInterfaceName")(virtualInterfaceName)

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait EndpointItemResponse extends js.Object {
   /**
-    * A custom message associated with the registration of an endpoint when issuing a response.
+    * The custom message that's returned in the response as a result of processing the endpoint data.
     */
   var Message: js.UndefOr[__string] = js.undefined
   /**
-    * The status code associated with the merging of an endpoint when issuing a response.
+    * The status code that's returned in the response as a result of processing the endpoint data.
     */
   var StatusCode: js.UndefOr[__integer] = js.undefined
 }

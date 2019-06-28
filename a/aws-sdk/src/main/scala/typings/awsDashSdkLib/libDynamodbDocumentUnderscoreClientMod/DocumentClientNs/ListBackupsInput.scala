@@ -11,7 +11,7 @@ trait ListBackupsInput extends js.Object {
     */
   var BackupType: js.UndefOr[BackupTypeFilter] = js.undefined
   /**
-    *  LastEvaluatedBackupArn is the ARN of the backup last evaluated when the current page of results was returned, inclusive of the current page of results. This value may be specified as the ExclusiveStartBackupArn of a new ListBackups operation in order to fetch the next page of results. 
+    *  LastEvaluatedBackupArn is the Amazon Resource Name (ARN) of the backup last evaluated when the current page of results was returned, inclusive of the current page of results. This value may be specified as the ExclusiveStartBackupArn of a new ListBackups operation in order to fetch the next page of results. 
     */
   var ExclusiveStartBackupArn: js.UndefOr[BackupArn] = js.undefined
   /**

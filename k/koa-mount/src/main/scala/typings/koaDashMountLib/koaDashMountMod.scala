@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-mount", JSImport.Namespace)
 @js.native
 object koaDashMountMod extends js.Object {
-  def apply(app: (koaLib.koaMod.Middleware[_, js.Object]) | (koaLib.koaMod.^[_, js.Object])): koaLib.koaMod.Middleware[_, js.Object] = js.native
-  def apply(
+  def apply[StateT, CustomT](app: (koaLib.koaMod.Middleware[StateT, CustomT]) | (koaLib.koaMod.^[StateT, CustomT])): koaLib.koaMod.Middleware[StateT, CustomT] = js.native
+  def apply[StateT, CustomT](
     prefix: java.lang.String,
-    app: (koaLib.koaMod.Middleware[_, js.Object]) | (koaLib.koaMod.^[_, js.Object])
-  ): koaLib.koaMod.Middleware[_, js.Object] = js.native
+    app: (koaLib.koaMod.Middleware[StateT, CustomT]) | (koaLib.koaMod.^[StateT, CustomT])
+  ): koaLib.koaMod.Middleware[StateT, CustomT] = js.native
 }
 

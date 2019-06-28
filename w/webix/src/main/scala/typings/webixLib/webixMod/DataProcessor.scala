@@ -28,9 +28,13 @@ trait DataProcessor extends js.Object {
   def on(): scala.Unit = js.native
   def processResult(data: js.Any): scala.Unit = js.native
   def reset(): scala.Unit = js.native
-  def save(id: java.lang.String, operation: java.lang.String): scala.Unit = js.native
-  def save(id: scala.Double, operation: java.lang.String): scala.Unit = js.native
-  def send(): scala.Unit = js.native
+  def save(id: java.lang.String): js.Promise[_] = js.native
+  def save(id: java.lang.String, operation: java.lang.String): js.Promise[_] = js.native
+  def save(id: java.lang.String, operation: java.lang.String, obj: js.Any): js.Promise[_] = js.native
+  def save(id: scala.Double): js.Promise[_] = js.native
+  def save(id: scala.Double, operation: java.lang.String): js.Promise[_] = js.native
+  def save(id: scala.Double, operation: java.lang.String, obj: js.Any): js.Promise[_] = js.native
+  def send(): js.Promise[_] = js.native
   def setItemState(itemId: java.lang.String, state: scala.Boolean): scala.Unit = js.native
   def setItemState(itemId: scala.Double, state: scala.Boolean): scala.Unit = js.native
   def unblockEvent(): scala.Unit = js.native

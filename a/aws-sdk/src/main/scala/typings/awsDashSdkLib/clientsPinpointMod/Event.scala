@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Event extends js.Object {
   /**
-    * The package name associated with the app that's recording the event.
+    * The package name of the app that's recording the event.
     */
   var AppPackageName: js.UndefOr[__string] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait Event extends js.Object {
     */
   var AppVersionCode: js.UndefOr[__string] = js.undefined
   /**
-    * Custom attributes that are associated with the event you're adding or updating.
+    * One or more custom attributes that are associated with the event.
     */
   var Attributes: js.UndefOr[MapOf__string] = js.undefined
   /**
@@ -27,11 +27,11 @@ trait Event extends js.Object {
     */
   var ClientSdkVersion: js.UndefOr[__string] = js.undefined
   /**
-    * The name of the custom event that you're recording.
+    * The name of the event.
     */
-  var EventType: js.UndefOr[__string] = js.undefined
+  var EventType: __string
   /**
-    * Custom metrics related to the event.
+    * One or more custom metrics that are associated with the event.
     */
   var Metrics: js.UndefOr[MapOf__double] = js.undefined
   /**
@@ -43,36 +43,34 @@ trait Event extends js.Object {
     */
   var Session: js.UndefOr[Session] = js.undefined
   /**
-    * The date and time when the event occurred, in ISO 8601 format.
+    * The date and time, in ISO 8601 format, when the event occurred.
     */
-  var Timestamp: js.UndefOr[__string] = js.undefined
+  var Timestamp: __string
 }
 
 object Event {
   @scala.inline
   def apply(
+    EventType: __string,
+    Timestamp: __string,
     AppPackageName: __string = null,
     AppTitle: __string = null,
     AppVersionCode: __string = null,
     Attributes: MapOf__string = null,
     ClientSdkVersion: __string = null,
-    EventType: __string = null,
     Metrics: MapOf__double = null,
     SdkName: __string = null,
-    Session: Session = null,
-    Timestamp: __string = null
+    Session: Session = null
   ): Event = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(EventType = EventType, Timestamp = Timestamp)
     if (AppPackageName != null) __obj.updateDynamic("AppPackageName")(AppPackageName)
     if (AppTitle != null) __obj.updateDynamic("AppTitle")(AppTitle)
     if (AppVersionCode != null) __obj.updateDynamic("AppVersionCode")(AppVersionCode)
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
     if (ClientSdkVersion != null) __obj.updateDynamic("ClientSdkVersion")(ClientSdkVersion)
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType)
     if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
     if (SdkName != null) __obj.updateDynamic("SdkName")(SdkName)
     if (Session != null) __obj.updateDynamic("Session")(Session)
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
     __obj.asInstanceOf[Event]
   }
 }

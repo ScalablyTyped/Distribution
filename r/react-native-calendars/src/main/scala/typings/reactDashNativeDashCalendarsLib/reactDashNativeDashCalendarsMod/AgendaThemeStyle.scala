@@ -24,6 +24,7 @@ object AgendaThemeStyle {
     calendarBackground: java.lang.String = null,
     dayTextColor: java.lang.String = null,
     dotColor: java.lang.String = null,
+    indicatorColor: java.lang.String = null,
     monthTextColor: java.lang.String = null,
     selectedDayBackgroundColor: java.lang.String = null,
     selectedDayTextColor: java.lang.String = null,
@@ -39,8 +40,10 @@ object AgendaThemeStyle {
     `stylesheet.day.single`: CalendarThemeIdStyle = null,
     textDayFontFamily: java.lang.String = null,
     textDayFontSize: scala.Int | scala.Double = null,
+    textDayFontWeight: java.lang.String = null,
     textDayHeaderFontFamily: java.lang.String = null,
     textDayHeaderFontSize: scala.Int | scala.Double = null,
+    textDayHeaderFontWeight: java.lang.String = null,
     textDisabledColor: java.lang.String = null,
     textMonthFontFamily: java.lang.String = null,
     textMonthFontSize: scala.Int | scala.Double = null,
@@ -58,6 +61,7 @@ object AgendaThemeStyle {
     if (calendarBackground != null) __obj.updateDynamic("calendarBackground")(calendarBackground)
     if (dayTextColor != null) __obj.updateDynamic("dayTextColor")(dayTextColor)
     if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor)
+    if (indicatorColor != null) __obj.updateDynamic("indicatorColor")(indicatorColor)
     if (monthTextColor != null) __obj.updateDynamic("monthTextColor")(monthTextColor)
     if (selectedDayBackgroundColor != null) __obj.updateDynamic("selectedDayBackgroundColor")(selectedDayBackgroundColor)
     if (selectedDayTextColor != null) __obj.updateDynamic("selectedDayTextColor")(selectedDayTextColor)
@@ -73,8 +77,10 @@ object AgendaThemeStyle {
     if (`stylesheet.day.single` != null) __obj.updateDynamic("stylesheet.day.single")(`stylesheet.day.single`)
     if (textDayFontFamily != null) __obj.updateDynamic("textDayFontFamily")(textDayFontFamily)
     if (textDayFontSize != null) __obj.updateDynamic("textDayFontSize")(textDayFontSize.asInstanceOf[js.Any])
+    if (textDayFontWeight != null) __obj.updateDynamic("textDayFontWeight")(textDayFontWeight)
     if (textDayHeaderFontFamily != null) __obj.updateDynamic("textDayHeaderFontFamily")(textDayHeaderFontFamily)
     if (textDayHeaderFontSize != null) __obj.updateDynamic("textDayHeaderFontSize")(textDayHeaderFontSize.asInstanceOf[js.Any])
+    if (textDayHeaderFontWeight != null) __obj.updateDynamic("textDayHeaderFontWeight")(textDayHeaderFontWeight)
     if (textDisabledColor != null) __obj.updateDynamic("textDisabledColor")(textDisabledColor)
     if (textMonthFontFamily != null) __obj.updateDynamic("textMonthFontFamily")(textMonthFontFamily)
     if (textMonthFontSize != null) __obj.updateDynamic("textMonthFontSize")(textMonthFontSize.asInstanceOf[js.Any])

@@ -15,11 +15,11 @@ object StoreConfig {
   @scala.inline
   def apply(
     store: java.lang.String,
-    ttl: scala.Double,
+    ttl: scala.Double | TtlFunction,
     isCacheableValue: /* value */ js.Any => scala.Boolean = null,
     max: scala.Int | scala.Double = null
   ): StoreConfig = {
-    val __obj = js.Dynamic.literal(store = store, ttl = ttl)
+    val __obj = js.Dynamic.literal(store = store, ttl = ttl.asInstanceOf[js.Any])
     if (isCacheableValue != null) __obj.updateDynamic("isCacheableValue")(js.Any.fromFunction1(isCacheableValue))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreConfig]

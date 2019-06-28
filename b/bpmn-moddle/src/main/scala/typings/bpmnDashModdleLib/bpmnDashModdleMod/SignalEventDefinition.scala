@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SignalEventDefinition extends BaseElement {
-  var singalRef: Signal
+  var signalRef: Signal
 }
 
 object SignalEventDefinition {
@@ -15,13 +15,13 @@ object SignalEventDefinition {
     $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
-    singalRef: Signal,
+    signalRef: Signal,
     $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     documentation: js.Array[Documentation] = null,
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): SignalEventDefinition = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, singalRef = singalRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, signalRef = signalRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

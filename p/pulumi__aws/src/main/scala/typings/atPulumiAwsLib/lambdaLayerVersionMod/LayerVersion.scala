@@ -23,6 +23,10 @@ class LayerVersion protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+    */
+  val code: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive]] = js.native
+  /**
     * A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
     */
   val compatibleRuntimes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
@@ -34,10 +38,6 @@ class LayerVersion protected ()
     * Description of what your Lambda Layer does.
     */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-    */
-  val filename: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the Lambda Layer without version.
     */

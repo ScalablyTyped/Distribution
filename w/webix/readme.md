@@ -1,7 +1,7 @@
 
 # Scala.js typings for webix
 
-Typings are for version 6.3.1
+Typings are for version 6.4.0
 
 ## Library description:
 Webix UI
@@ -32,8 +32,8 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Webix UI 6.0.0
-// Project: https://webix.com
+// Type definitions for Webix UI 6.4
+// Project: http://webix.com
 
 ```
 

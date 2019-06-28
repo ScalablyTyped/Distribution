@@ -54,6 +54,10 @@ trait Interconnect extends js.Object {
     * The AWS Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
+  /**
+    * Any tags assigned to the interconnect.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 
 object Interconnect {
@@ -70,7 +74,8 @@ object Interconnect {
     lagId: LagId = null,
     loaIssueTime: LoaIssueTime = null,
     location: LocationCode = null,
-    region: Region = null
+    region: Region = null,
+    tags: TagList = null
   ): Interconnect = {
     val __obj = js.Dynamic.literal()
     if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice)
@@ -85,6 +90,7 @@ object Interconnect {
     if (loaIssueTime != null) __obj.updateDynamic("loaIssueTime")(loaIssueTime)
     if (location != null) __obj.updateDynamic("location")(location)
     if (region != null) __obj.updateDynamic("region")(region)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[Interconnect]
   }
 }

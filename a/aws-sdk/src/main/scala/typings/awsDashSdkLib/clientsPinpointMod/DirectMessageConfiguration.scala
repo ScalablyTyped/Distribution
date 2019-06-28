@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait DirectMessageConfiguration extends js.Object {
   /**
-    * The message to ADM channels. Overrides the default push notification message.
+    * The default push notification message for the ADM (Amazon Device Messaging) channel. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
   var ADMMessage: js.UndefOr[ADMMessage] = js.undefined
   /**
-    * The message to APNS channels. Overrides the default push notification message.
+    * The default push notification message for the APNs (Apple Push Notification service) channel. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
   var APNSMessage: js.UndefOr[APNSMessage] = js.undefined
   /**
-    * The message to Baidu GCM channels. Overrides the default push notification message.
+    * The default push notification message for the Baidu (Baidu Cloud Push) channel. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
   var BaiduMessage: js.UndefOr[BaiduMessage] = js.undefined
   /**
-    * The default message for all channels.
+    * The default message body for all channels.
     */
   var DefaultMessage: js.UndefOr[DefaultMessage] = js.undefined
   /**
@@ -27,19 +27,19 @@ trait DirectMessageConfiguration extends js.Object {
     */
   var DefaultPushNotificationMessage: js.UndefOr[DefaultPushNotificationMessage] = js.undefined
   /**
-    * The message to Email channels. Overrides the default message.
+    * The default message for the email channel. This message overrides the default message (DefaultMessage).
     */
   var EmailMessage: js.UndefOr[EmailMessage] = js.undefined
   /**
-    * The message to GCM channels. Overrides the default push notification message.
+    * The default push notification message for the GCM channel, which is used to send notifications through the Firebase Cloud Messaging (FCM), formerly Google Cloud Messaging (GCM), service. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
   var GCMMessage: js.UndefOr[GCMMessage] = js.undefined
   /**
-    * The message to SMS channels. Overrides the default message.
+    * The default message for the SMS channel. This message overrides the default message (DefaultMessage).
     */
   var SMSMessage: js.UndefOr[SMSMessage] = js.undefined
   /**
-    * The message to Voice channels. Overrides the default message.
+    * The default message for the voice channel. This message overrides the default message (DefaultMessage).
     */
   var VoiceMessage: js.UndefOr[VoiceMessage] = js.undefined
 }

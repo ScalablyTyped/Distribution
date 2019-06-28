@@ -11,7 +11,7 @@ trait TransactWriteItemsOutput extends js.Object {
     */
   var ConsumedCapacity: js.UndefOr[ConsumedCapacityMultiple] = js.undefined
   /**
-    * A list of tables that were processed by TransactWriteItems and, for each table, information about any item collections that were affected by individual UpdateItem, PutItem or DeleteItem operations. 
+    * A list of tables that were processed by TransactWriteItems and, for each table, information about any item collections that were affected by individual UpdateItem, PutItem, or DeleteItem operations. 
     */
   var ItemCollectionMetrics: js.UndefOr[ItemCollectionMetricsPerTable] = js.undefined
 }

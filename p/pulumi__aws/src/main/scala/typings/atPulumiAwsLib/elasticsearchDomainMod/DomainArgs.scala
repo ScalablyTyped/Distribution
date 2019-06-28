@@ -9,7 +9,9 @@ trait DomainArgs extends js.Object {
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val accessPolicies: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
+  ] = js.undefined
   /**
     * Key-value string pairs to specify advanced configuration options.
     * Note that the values for these configuration options must be strings (wrapped in quotes) or they
@@ -79,7 +81,7 @@ trait DomainArgs extends js.Object {
 object DomainArgs {
   @scala.inline
   def apply(
-    accessPolicies: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    accessPolicies: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument] = null,
     advancedOptions: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     clusterConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DedicatedMasterCountDedicatedMasterEnabled] = null,
     cognitoOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledIdentityPoolIdRoleArn] = null,

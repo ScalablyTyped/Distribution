@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__aws
 
-Typings are for version 0.18.14
+Typings are for version 0.18.15
 
 ## Library description:
 A Pulumi package for creating and managing Amazon Web Services (AWS) cloud resources.
@@ -73,6 +73,13 @@ These comments are from the typescript definitions and might be useful:
  */
 /**
  * Runtime is a union type containing all available AWS Lambda runtimes.
+ */
+/**
+ * A rule that identifies a condition and the redirect that is applied when the condition is met.
+ * If a condition is not included, the rule is applied to all requests.
+ *
+ * For more details, please refer to the AWS documentation online:
+ * https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html#advanced-conditional-redirects
  */
 /**
  * Tags represents a set of key-value string pairs to which can be applied

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateDirectConnectGatewayAssociationRequest extends js.Object {
   /**
-    * The Amazon VPC prefixes to advertise to the Direct Connect gateway
+    * The Amazon VPC prefixes to advertise to the Direct Connect gateway For information about how to set the prefixes, see Allowed Prefixes in the AWS Direct Connect User Guide.
     */
   var addAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   /**

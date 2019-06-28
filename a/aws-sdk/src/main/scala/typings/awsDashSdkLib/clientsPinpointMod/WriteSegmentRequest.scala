@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait WriteSegmentRequest extends js.Object {
   /**
-    * The segment dimensions attributes.
+    * The criteria that define the dimensions for the segment.
     */
   var Dimensions: js.UndefOr[SegmentDimensions] = js.undefined
   /**
-    * The name of segment
+    * The name of the segment.
     */
   var Name: js.UndefOr[__string] = js.undefined
   /**
-    * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments. Your request can only include one segment group. Your request can include either a SegmentGroups object or a Dimensions object, but not both.
+    * The segment group to use and the dimensions to apply to the group's base segments in order to build the segment. A segment group can consist of zero or more base segments. Your request can include only one segment group.
     */
   var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
   /**
-    * The Tags for the segments.
+    * A string-to-string map of key-value pairs that defines the tags to associate with the segment. Each tag consists of a required tag key and an associated tag value.
     */
   var tags: js.UndefOr[MapOf__string] = js.undefined
 }

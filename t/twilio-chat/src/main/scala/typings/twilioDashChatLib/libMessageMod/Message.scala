@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @property {Number} index - Index of Message in the Channel's messages list
   * @property {String} lastUpdatedBy - Identity of the last user that updated Message
   * @property {Media} media - Contains Media information (if present)
+  * @property {String} memberSid - Authoring Member's server-assigned unique identifier
   * @property {String} sid - The server-assigned unique identifier for Message
   * @property {Date} timestamp - When Message was created
   * @property {'text' | 'media' } type - Type of message: 'text' or 'media'
@@ -37,6 +38,7 @@ class Message protected ()
   val index: scala.Double = js.native
   val lastUpdatedBy: java.lang.String = js.native
   val media: twilioDashChatLib.libMediaMod.Media = js.native
+  val memberSid: java.lang.String = js.native
   var services: js.Any = js.native
   val sid: java.lang.String = js.native
   var state: js.Any = js.native
@@ -44,10 +46,15 @@ class Message protected ()
   val `type`: twilioDashChatLib.libMessageMod.MessageNs.Type = js.native
   def _update(data: js.Any): scala.Unit = js.native
   /**
+    * Get Member who is author of the Message
+    * @returns {Promise<Member>}
+    */
+  def getMember(): js.Promise[twilioDashChatLib.libMemberMod.Member] = js.native
+  /**
     * Remove the Message.
     * @returns {Promise<Message|SessionError>}
     */
-  def remove(): js.Promise[this.type] = js.native
+  def remove(): js.Promise[Message | twilioDashChatLib.libSessionerrorMod.SessionError] = js.native
   /**
     * Edit message attributes.
     * @param {Object} attributes new attributes for Message.
@@ -59,6 +66,6 @@ class Message protected ()
     * @param {String} body - new body of Message.
     * @returns {Promise<Message|Error|SessionError>}
     */
-  def updateBody(body: java.lang.String): js.Promise[Message] = js.native
+  def updateBody(body: java.lang.String): js.Promise[Message | stdLib.Error | twilioDashChatLib.libSessionerrorMod.SessionError] = js.native
 }
 

@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait GCMChannelRequest extends js.Object {
   /**
-    * Platform credential API key from Google.
+    * The API key, also referred to as a server key, that you received from Google to communicate with Google services.
     */
-  var ApiKey: js.UndefOr[__string] = js.undefined
+  var ApiKey: __string
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether to enable the GCM channel for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
 }
 
 object GCMChannelRequest {
   @scala.inline
-  def apply(ApiKey: __string = null, Enabled: js.UndefOr[__boolean] = js.undefined): GCMChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey)
+  def apply(ApiKey: __string, Enabled: js.UndefOr[__boolean] = js.undefined): GCMChannelRequest = {
+    val __obj = js.Dynamic.literal(ApiKey = ApiKey)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
     __obj.asInstanceOf[GCMChannelRequest]
   }

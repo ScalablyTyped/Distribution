@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait UpdateAdmChannelRequest extends js.Object {
   var ADMChannelRequest: awsDashSdkLib.clientsPinpointMod.ADMChannelRequest
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
 }

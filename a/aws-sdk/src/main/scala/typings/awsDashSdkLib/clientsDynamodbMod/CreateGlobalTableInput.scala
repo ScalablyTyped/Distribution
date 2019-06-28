@@ -11,7 +11,7 @@ trait CreateGlobalTableInput extends js.Object {
     */
   var GlobalTableName: TableName
   /**
-    * The regions where the global table needs to be created.
+    * The Regions where the global table needs to be created.
     */
   var ReplicationGroup: ReplicaList
 }

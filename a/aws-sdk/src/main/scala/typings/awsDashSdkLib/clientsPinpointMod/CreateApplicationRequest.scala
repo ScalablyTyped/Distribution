@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait CreateApplicationRequest extends js.Object {
   /**
-    * The display name of the application. Used in the Amazon Pinpoint console.
+    * The display name of the application. This name is displayed as the Project name on the Amazon Pinpoint console.
     */
-  var Name: js.UndefOr[__string] = js.undefined
+  var Name: __string
   /**
-    * The Tags for the app.
+    * A string-to-string map of key-value pairs that defines the tags to associate with the application. Each tag consists of a required tag key and an associated tag value.
     */
   var tags: js.UndefOr[MapOf__string] = js.undefined
 }
 
 object CreateApplicationRequest {
   @scala.inline
-  def apply(Name: __string = null, tags: MapOf__string = null): CreateApplicationRequest = {
-    val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+  def apply(Name: __string, tags: MapOf__string = null): CreateApplicationRequest = {
+    val __obj = js.Dynamic.literal(Name = Name)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateApplicationRequest]
   }

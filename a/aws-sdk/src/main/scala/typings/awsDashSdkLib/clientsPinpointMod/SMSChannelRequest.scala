@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait SMSChannelRequest extends js.Object {
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether to enable the SMS channel for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
   /**
-    * Sender identifier of your messages.
+    * The identity that you want to display on recipients' devices when they receive messages from the SMS channel.
     */
   var SenderId: js.UndefOr[__string] = js.undefined
   /**
-    * ShortCode registered with phone provider.
+    * The registered short code that you want to use when you send messages through the SMS channel.
     */
   var ShortCode: js.UndefOr[__string] = js.undefined
 }

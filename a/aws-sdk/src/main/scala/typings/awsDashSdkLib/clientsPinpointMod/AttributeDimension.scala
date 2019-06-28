@@ -7,23 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait AttributeDimension extends js.Object {
   /**
-    * The type of dimension:
-  INCLUSIVE - Endpoints that match the criteria are included in the segment.
-  EXCLUSIVE - Endpoints that match the criteria are excluded from the segment.
+    * The type of segment dimension to use. Valid values are: INCLUSIVE, endpoints that match the criteria are included in the segment; and, EXCLUSIVE, endpoints that match the criteria are excluded from the segment.
     */
   var AttributeType: js.UndefOr[AttributeType] = js.undefined
   /**
-    * The criteria values for the segment dimension. Endpoints with matching attribute values are included or excluded from the segment, depending on the setting for Type.
+    * The criteria values to use for the segment dimension. Depending on the value of the AttributeType property, endpoints are included or excluded from the segment if their attribute values match the criteria values.
     */
-  var Values: js.UndefOr[ListOf__string] = js.undefined
+  var Values: ListOf__string
 }
 
 object AttributeDimension {
   @scala.inline
-  def apply(AttributeType: AttributeType = null, Values: ListOf__string = null): AttributeDimension = {
-    val __obj = js.Dynamic.literal()
+  def apply(Values: ListOf__string, AttributeType: AttributeType = null): AttributeDimension = {
+    val __obj = js.Dynamic.literal(Values = Values)
     if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values)
     __obj.asInstanceOf[AttributeDimension]
   }
 }

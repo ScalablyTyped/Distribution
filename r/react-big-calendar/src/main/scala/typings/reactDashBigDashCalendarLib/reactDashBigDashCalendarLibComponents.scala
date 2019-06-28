@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object reactDashBigDashCalendarLibComponents {
   @scala.inline
-  def ReactDashBigDashCalendar[TEvent /* <: js.Object */, TResource /* <: js.Object */]: reactLib.reactMod.ComponentType[
-    reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.BigCalendarProps[TEvent, TResource]
-  ] = js.constructorOf[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.default[TEvent, TResource]].asInstanceOf[reactLib.reactMod.ComponentType[
-  reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.BigCalendarProps[TEvent, TResource]]]
+  def Calendar[TEvent /* <: js.Object */, TResource /* <: js.Object */]: reactLib.reactMod.ComponentType[
+    reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource]
+  ] = js.constructorOf[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Calendar[TEvent, TResource]].asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource]]]
   @scala.inline
-  def ReactDashBigDashCalendarProps: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.BigCalendarProps.type = reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.BigCalendarProps
-  type ReactDashBigDashCalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] = reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.BigCalendarProps[TEvent, TResource]
+  def CalendarProps: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.CalendarProps.type = reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.CalendarProps
+  type CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] = reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource]
 }
 

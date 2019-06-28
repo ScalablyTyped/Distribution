@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataValueFactory
   extends org.scalablytyped.runtime.Instantiable0[DataValue]
-     with org.scalablytyped.runtime.Instantiable1[/* config */ js.Any, DataValue]
+     with org.scalablytyped.runtime.Instantiable1[/* config */ DataValueConfig, DataValue]
 

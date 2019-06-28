@@ -1,7 +1,7 @@
 
 # Scala.js typings for mock-knex
 
-Typings are for version 0.3
+Typings are for version 0.4
 
 ## Library description:
 a knex mock adapter for simulating a db during testing
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for mock-knex 0.3
+// Type definitions for mock-knex 0.4
 // Project: https://github.com/colonyamerican/mock-knex
 // Definitions by: Jesse Zhang <https://github.com/jessezhang91>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 
 ```
 

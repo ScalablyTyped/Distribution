@@ -44,7 +44,7 @@ trait DataLoader extends js.Object {
     callback: WebixCallback,
     url: java.lang.String,
     now: scala.Boolean
-  ): scala.Unit = js.native
+  ): js.Promise[_] = js.native
   def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
   def refresh(): scala.Unit = js.native
   def refresh(id: java.lang.String): scala.Unit = js.native
@@ -52,11 +52,13 @@ trait DataLoader extends js.Object {
   def remove(id: java.lang.String): scala.Unit = js.native
   def remove(id: scala.Double): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
+  def serialize(all: scala.Boolean): js.Array[_] = js.native
   def sort(by: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: scala.Boolean): scala.Unit = js.native
   def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
   def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
+  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
 

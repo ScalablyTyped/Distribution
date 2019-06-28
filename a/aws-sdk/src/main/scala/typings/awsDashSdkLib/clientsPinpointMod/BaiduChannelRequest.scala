@@ -7,26 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait BaiduChannelRequest extends js.Object {
   /**
-    * Platform credential API key from Baidu.
+    * The API key that you received from the Baidu Cloud Push service to communicate with the service.
     */
-  var ApiKey: js.UndefOr[__string] = js.undefined
+  var ApiKey: __string
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether to enable the Baidu channel for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
   /**
-    * Platform credential Secret key from Baidu.
+    * The secret key that you received from the Baidu Cloud Push service to communicate with the service.
     */
-  var SecretKey: js.UndefOr[__string] = js.undefined
+  var SecretKey: __string
 }
 
 object BaiduChannelRequest {
   @scala.inline
-  def apply(ApiKey: __string = null, Enabled: js.UndefOr[__boolean] = js.undefined, SecretKey: __string = null): BaiduChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey)
+  def apply(ApiKey: __string, SecretKey: __string, Enabled: js.UndefOr[__boolean] = js.undefined): BaiduChannelRequest = {
+    val __obj = js.Dynamic.literal(ApiKey = ApiKey, SecretKey = SecretKey)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey)
     __obj.asInstanceOf[BaiduChannelRequest]
   }
 }

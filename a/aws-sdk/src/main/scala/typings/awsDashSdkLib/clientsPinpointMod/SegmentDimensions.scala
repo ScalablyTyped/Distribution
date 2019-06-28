@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait SegmentDimensions extends js.Object {
   /**
-    * Custom segment attributes.
+    * One or more custom attributes to use as criteria for the segment.
     */
   var Attributes: js.UndefOr[MapOfAttributeDimension] = js.undefined
   /**
-    * The segment behaviors attributes.
+    * The behavior-based criteria, such as how recently users have used your app, for the segment.
     */
   var Behavior: js.UndefOr[SegmentBehaviors] = js.undefined
   /**
-    * The segment demographics attributes.
+    * The demographic-based criteria, such as device platform, for the segment.
     */
   var Demographic: js.UndefOr[SegmentDemographics] = js.undefined
   /**
-    * The segment location attributes.
+    * The location-based criteria, such as region or GPS coordinates, for the segment.
     */
   var Location: js.UndefOr[SegmentLocation] = js.undefined
   /**
-    * Custom segment metrics.
+    * One or more custom metrics to use as criteria for the segment.
     */
   var Metrics: js.UndefOr[MapOfMetricDimension] = js.undefined
   /**
-    * Custom segment user attributes.
+    * One or more custom user attributes to use as criteria for the segment.
     */
   var UserAttributes: js.UndefOr[MapOfAttributeDimension] = js.undefined
 }

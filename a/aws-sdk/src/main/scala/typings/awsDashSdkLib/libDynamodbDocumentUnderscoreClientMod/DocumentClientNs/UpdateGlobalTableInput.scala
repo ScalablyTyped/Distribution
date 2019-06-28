@@ -11,7 +11,7 @@ trait UpdateGlobalTableInput extends js.Object {
     */
   var GlobalTableName: TableName
   /**
-    * A list of regions that should be added or removed from the global table.
+    * A list of Regions that should be added or removed from the global table.
     */
   var ReplicaUpdates: ReplicaUpdateList
 }

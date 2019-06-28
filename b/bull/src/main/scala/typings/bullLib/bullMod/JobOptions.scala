@@ -41,7 +41,7 @@ trait JobOptions extends js.Object {
     * A boolean which, if true, removes the job when it successfully completes.
     * Default behavior is to keep the job in the completed set.
     */
-  var removeOnComplete: js.UndefOr[scala.Boolean] = js.undefined
+  var removeOnComplete: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
   /**
     * A boolean which, if true, removes the job when it fails after all attempts
     * Default behavior is to keep the job in the completed set.
@@ -70,7 +70,7 @@ object JobOptions {
     jobId: JobId = null,
     lifo: js.UndefOr[scala.Boolean] = js.undefined,
     priority: scala.Int | scala.Double = null,
-    removeOnComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    removeOnComplete: scala.Boolean | scala.Double = null,
     removeOnFail: js.UndefOr[scala.Boolean] = js.undefined,
     repeat: CronRepeatOptions | EveryRepeatOptions = null,
     stackTraceLimit: scala.Int | scala.Double = null,
@@ -83,7 +83,7 @@ object JobOptions {
     if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
     if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeOnComplete)) __obj.updateDynamic("removeOnComplete")(removeOnComplete)
+    if (removeOnComplete != null) __obj.updateDynamic("removeOnComplete")(removeOnComplete.asInstanceOf[js.Any])
     if (!js.isUndefined(removeOnFail)) __obj.updateDynamic("removeOnFail")(removeOnFail)
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     if (stackTraceLimit != null) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.asInstanceOf[js.Any])

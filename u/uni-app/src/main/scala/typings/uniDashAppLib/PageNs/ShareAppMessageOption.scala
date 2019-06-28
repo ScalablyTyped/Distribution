@@ -11,15 +11,14 @@ trait ShareAppMessageOption extends js.Object {
     * 可选值：
     * - `button`：页面内转发按钮；
     * - `menu`：右上角转发菜单。
-    *
     */
-  var from: uniDashAppLib.uniDashAppLibStrings.button | uniDashAppLib.uniDashAppLibStrings.menu | java.lang.String
+  var from: uniDashAppLib.uniDashAppLibStrings.button | uniDashAppLib.uniDashAppLibStrings.menu
   /**
     * 如果 `from` 值是 `button`，则 `target` 是触发这次转发事件的 `button`，否则为 `undefined`
     */
   var target: js.Any
   /**
-    * 页面中包含`<web-view>`组件时，返回当前`<web-view>`的url
+    * 页面中包含 `<web-view>` 组件时，返回当前 `<web-view>` 的url
     */
   var webViewUrl: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -27,7 +26,7 @@ trait ShareAppMessageOption extends js.Object {
 object ShareAppMessageOption {
   @scala.inline
   def apply(
-    from: uniDashAppLib.uniDashAppLibStrings.button | uniDashAppLib.uniDashAppLibStrings.menu | java.lang.String,
+    from: uniDashAppLib.uniDashAppLibStrings.button | uniDashAppLib.uniDashAppLibStrings.menu,
     target: js.Any,
     webViewUrl: java.lang.String = null
   ): ShareAppMessageOption = {

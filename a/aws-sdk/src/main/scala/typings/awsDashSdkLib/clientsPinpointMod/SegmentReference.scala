@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait SegmentReference extends js.Object {
   /**
-    * A unique identifier for the segment.
+    * The unique identifier for the segment.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
-    * If specified contains a specific version of the segment included.
+    * The version number of the segment.
     */
   var Version: js.UndefOr[__integer] = js.undefined
 }
 
 object SegmentReference {
   @scala.inline
-  def apply(Id: __string = null, Version: js.UndefOr[__integer] = js.undefined): SegmentReference = {
-    val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+  def apply(Id: __string, Version: js.UndefOr[__integer] = js.undefined): SegmentReference = {
+    val __obj = js.Dynamic.literal(Id = Id)
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[SegmentReference]
   }

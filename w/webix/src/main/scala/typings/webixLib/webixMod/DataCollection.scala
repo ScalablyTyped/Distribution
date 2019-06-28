@@ -69,7 +69,7 @@ trait DataCollection extends js.Object {
     callback: WebixCallback,
     url: java.lang.String,
     now: scala.Boolean
-  ): scala.Unit = js.native
+  ): js.Promise[_] = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
   def move(sid: java.lang.String, tindex: scala.Double, tobj: js.Any): java.lang.String = js.native
@@ -92,6 +92,7 @@ trait DataCollection extends js.Object {
   def removeBind(source: js.Any): scala.Unit = js.native
   def saveBatch(handler: WebixCallback): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
+  def serialize(all: scala.Boolean): js.Array[_] = js.native
   def setBindData(data: js.Any, key: java.lang.String): scala.Unit = js.native
   def setBindData(data: js.Any, key: scala.Double): scala.Unit = js.native
   def setCursor(cursor: java.lang.String): scala.Unit = js.native
@@ -106,6 +107,7 @@ trait DataCollection extends js.Object {
   def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
   def validate(): scala.Boolean = js.native
   def validate(id: java.lang.String): scala.Boolean = js.native
+  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
 
 @JSImport("webix", "DataCollection")

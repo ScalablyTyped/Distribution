@@ -64,6 +64,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var dynamodb: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.apiVersion] = js.undefined
   var dynamodbstreams: js.UndefOr[awsDashSdkLib.clientsDynamodbstreamsMod.apiVersion] = js.undefined
   var ec2: js.UndefOr[awsDashSdkLib.clientsEc2Mod.apiVersion] = js.undefined
+  var ec2instanceconnect: js.UndefOr[awsDashSdkLib.clientsEc2instanceconnectMod.apiVersion] = js.undefined
   var ecr: js.UndefOr[awsDashSdkLib.clientsEcrMod.apiVersion] = js.undefined
   var ecs: js.UndefOr[awsDashSdkLib.clientsEcsMod.apiVersion] = js.undefined
   var efs: js.UndefOr[awsDashSdkLib.clientsEfsMod.apiVersion] = js.undefined
@@ -253,6 +254,7 @@ object ConfigurationServiceApiVersions {
     dynamodb: awsDashSdkLib.clientsDynamodbMod.apiVersion = null,
     dynamodbstreams: awsDashSdkLib.clientsDynamodbstreamsMod.apiVersion = null,
     ec2: awsDashSdkLib.clientsEc2Mod.apiVersion = null,
+    ec2instanceconnect: awsDashSdkLib.clientsEc2instanceconnectMod.apiVersion = null,
     ecr: awsDashSdkLib.clientsEcrMod.apiVersion = null,
     ecs: awsDashSdkLib.clientsEcsMod.apiVersion = null,
     efs: awsDashSdkLib.clientsEfsMod.apiVersion = null,
@@ -439,6 +441,7 @@ object ConfigurationServiceApiVersions {
     if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
     if (dynamodbstreams != null) __obj.updateDynamic("dynamodbstreams")(dynamodbstreams.asInstanceOf[js.Any])
     if (ec2 != null) __obj.updateDynamic("ec2")(ec2.asInstanceOf[js.Any])
+    if (ec2instanceconnect != null) __obj.updateDynamic("ec2instanceconnect")(ec2instanceconnect.asInstanceOf[js.Any])
     if (ecr != null) __obj.updateDynamic("ecr")(ecr.asInstanceOf[js.Any])
     if (ecs != null) __obj.updateDynamic("ecs")(ecs.asInstanceOf[js.Any])
     if (efs != null) __obj.updateDynamic("efs")(efs.asInstanceOf[js.Any])

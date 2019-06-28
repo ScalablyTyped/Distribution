@@ -18,7 +18,7 @@ object CreateWebpackConfigArgs {
   def apply(
     actions: Actions,
     boundActionCreators: Actions,
-    cache: Cache,
+    cache: gatsbyLib.Anon_Del,
     createContentDigest: js.Function,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,

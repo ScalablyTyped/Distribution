@@ -11,7 +11,7 @@ trait DeleteItemOutput extends js.Object {
     */
   var Attributes: js.UndefOr[AttributeMap] = js.undefined
   /**
-    * The capacity units consumed by the DeleteItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Throughput in the Amazon DynamoDB Developer Guide.
+    * The capacity units consumed by the DeleteItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Mode in the Amazon DynamoDB Developer Guide.
     */
   var ConsumedCapacity: js.UndefOr[ConsumedCapacity] = js.undefined
   /**

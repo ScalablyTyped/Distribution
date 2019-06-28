@@ -19,7 +19,7 @@ trait NewPrivateVirtualInterfaceAllocation extends js.Object {
     */
   var asn: ASN
   /**
-    * The authentication key for BGP configuration.
+    * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   /**
@@ -30,6 +30,10 @@ trait NewPrivateVirtualInterfaceAllocation extends js.Object {
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     */
   var mtu: js.UndefOr[MTU] = js.undefined
+  /**
+    * Any tags assigned to the private virtual interface to be provisioned on a connection.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
   /**
     * The name of the virtual interface assigned by the customer network.
     */
@@ -50,7 +54,8 @@ object NewPrivateVirtualInterfaceAllocation {
     amazonAddress: AmazonAddress = null,
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null,
-    mtu: js.UndefOr[MTU] = js.undefined
+    mtu: js.UndefOr[MTU] = js.undefined,
+    tags: TagList = null
   ): NewPrivateVirtualInterfaceAllocation = {
     val __obj = js.Dynamic.literal(asn = asn, virtualInterfaceName = virtualInterfaceName, vlan = vlan)
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
@@ -58,6 +63,7 @@ object NewPrivateVirtualInterfaceAllocation {
     if (authKey != null) __obj.updateDynamic("authKey")(authKey)
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress)
     if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[NewPrivateVirtualInterfaceAllocation]
   }
 }

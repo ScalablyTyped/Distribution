@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DeleteUserEndpointsRequest extends js.Object {
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
   /**
-    * The unique ID of the user.
+    * The unique identifier for the user.
     */
   var UserId: __string
 }

@@ -5,17 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupStore extends js.Object {
-  def group(stats: js.Any): scala.Unit
-  def ungroup(): scala.Unit
-}
-
-object GroupStore {
-  @scala.inline
-  def apply(group: js.Any => scala.Unit, ungroup: () => scala.Unit): GroupStore = {
-    val __obj = js.Dynamic.literal(group = js.Any.fromFunction1(group), ungroup = js.Any.fromFunction0(ungroup))
-  
-    __obj.asInstanceOf[GroupStore]
-  }
+  def group(config: js.Any): scala.Unit = js.native
+  def group(config: js.Any, target: java.lang.String): scala.Unit = js.native
+  def ungroup(): scala.Unit = js.native
 }
 

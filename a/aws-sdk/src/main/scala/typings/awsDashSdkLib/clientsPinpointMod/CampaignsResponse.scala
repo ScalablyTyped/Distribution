@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait CampaignsResponse extends js.Object {
   /**
-    * A list of campaigns.
+    * An array of responses, one for each campaign that's associated with the application.
     */
-  var Item: js.UndefOr[ListOfCampaignResponse] = js.undefined
+  var Item: ListOfCampaignResponse
   /**
-    * The string that you use in a subsequent request to get the next page of results in a paginated response.
+    * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null if there are no additional pages.
     */
   var NextToken: js.UndefOr[__string] = js.undefined
 }
 
 object CampaignsResponse {
   @scala.inline
-  def apply(Item: ListOfCampaignResponse = null, NextToken: __string = null): CampaignsResponse = {
-    val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item)
+  def apply(Item: ListOfCampaignResponse, NextToken: __string = null): CampaignsResponse = {
+    val __obj = js.Dynamic.literal(Item = Item)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[CampaignsResponse]
   }

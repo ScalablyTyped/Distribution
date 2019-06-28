@@ -66,6 +66,10 @@ trait Lag extends js.Object {
     * The AWS Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
+  /**
+    * Any tags assigned to link aggregation group (LAG).
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 
 object Lag {
@@ -85,7 +89,8 @@ object Lag {
     minimumLinks: js.UndefOr[Count] = js.undefined,
     numberOfConnections: js.UndefOr[Count] = js.undefined,
     ownerAccount: OwnerAccount = null,
-    region: Region = null
+    region: Region = null,
+    tags: TagList = null
   ): Lag = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowsHostedConnections)) __obj.updateDynamic("allowsHostedConnections")(allowsHostedConnections)
@@ -103,6 +108,7 @@ object Lag {
     if (!js.isUndefined(numberOfConnections)) __obj.updateDynamic("numberOfConnections")(numberOfConnections)
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount)
     if (region != null) __obj.updateDynamic("region")(region)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[Lag]
   }
 }

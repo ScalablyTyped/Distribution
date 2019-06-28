@@ -9,7 +9,7 @@ trait NodePluginArgs
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actions: Actions
   var boundActionCreators: Actions
-  var cache: Cache
+  var cache: gatsbyLib.Anon_Del
   var createContentDigest: js.Function
   var createNodeId: js.Function
   var emitter: nodeLib.eventsMod.EventEmitter
@@ -30,7 +30,7 @@ object NodePluginArgs {
   def apply(
     actions: Actions,
     boundActionCreators: Actions,
-    cache: Cache,
+    cache: gatsbyLib.Anon_Del,
     createContentDigest: js.Function,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,

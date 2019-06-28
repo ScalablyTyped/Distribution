@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait VoiceChannelRequest extends js.Object {
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether to enable the voice channel for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
 }

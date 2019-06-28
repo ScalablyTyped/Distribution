@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait MessageResponse extends js.Object {
   /**
-    * Application id of the message.
+    * The unique identifier for the application that was used to send the message.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: __string
   /**
-    * A map containing a multi part response for each address, with the endpointId as the key and the result as the value.
+    * A map that contains a multipart response for each address that the message was sent to. In the map, the endpoint ID is the key and the result is the value.
     */
   var EndpointResult: js.UndefOr[MapOfEndpointMessageResult] = js.undefined
   /**
-    * Original request Id for which this message was delivered.
+    * The identifier for the original request that the message was delivered for.
     */
   var RequestId: js.UndefOr[__string] = js.undefined
   /**
-    * A map containing a multi part response for each address, with the address as the key(Email address, phone number or push token) and the result as the value.
+    * A map that contains a multipart response for each address (email address, phone number, or push notification token) that the message was sent to. In the map, the address is the key and the result is the value.
     */
   var Result: js.UndefOr[MapOfMessageResult] = js.undefined
 }
@@ -27,13 +27,12 @@ trait MessageResponse extends js.Object {
 object MessageResponse {
   @scala.inline
   def apply(
-    ApplicationId: __string = null,
+    ApplicationId: __string,
     EndpointResult: MapOfEndpointMessageResult = null,
     RequestId: __string = null,
     Result: MapOfMessageResult = null
   ): MessageResponse = {
-    val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId)
     if (EndpointResult != null) __obj.updateDynamic("EndpointResult")(EndpointResult)
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
     if (Result != null) __obj.updateDynamic("Result")(Result)

@@ -39,11 +39,7 @@ class Workbox protected ()
   @JSName("addEventListener")
   def addEventListener_activated(
     `type`: workboxDashWindowLib.workboxDashWindowLibStrings.activated,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* ev */ workboxDashWindowLib.utilsWorkboxEventMod.WorkboxEvent, 
-      scala.Unit
-    ]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxUpdatableEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_controlling(
@@ -121,7 +117,7 @@ class Workbox protected ()
     * returned by `messageSW()`. If no response is set, the promise will never
     * resolve.
     */
-  def messageSW(): js.Promise[js.Object] = js.native
+  def messageSW(data: js.Any): js.Promise[js.Object] = js.native
   /**
     * Registers a service worker for this instances script URL and service
     * worker options. By default this method delays registration until after
@@ -131,11 +127,7 @@ class Workbox protected ()
   @JSName("removeEventListener")
   def removeEventListener_activated(
     `type`: workboxDashWindowLib.workboxDashWindowLibStrings.activated,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* ev */ workboxDashWindowLib.utilsWorkboxEventMod.WorkboxEvent, 
-      scala.Unit
-    ]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WorkboxUpdatableEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_controlling(

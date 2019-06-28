@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait SegmentLocation extends js.Object {
   /**
-    * The country or region, in ISO 3166-1 alpha-2 format.
+    * The country or region code, in ISO 3166-1 alpha-2 format, for the segment.
     */
   var Country: js.UndefOr[SetDimension] = js.undefined
   /**
-    * The GPS Point dimension.
+    * The GPS location and range for the segment.
     */
   var GPSPoint: js.UndefOr[GPSPointDimension] = js.undefined
 }

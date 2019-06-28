@@ -78,7 +78,7 @@ object SqlJsNs extends js.Object {
     def step(): scala.Boolean = js.native
   }
   
-  type Config = stdLib.Partial[sqlDotJsLib.TypeofModule]
+  type Config = stdLib.Partial[emscriptenLib.EmscriptenModule]
   type ParamsCallback = js.Function1[/* obj */ ParamsObject, scala.Unit]
   type ParamsObject = stdLib.Record[java.lang.String, ValueType]
   type ValueType = scala.Double | java.lang.String | stdLib.Uint8Array

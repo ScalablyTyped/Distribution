@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mock-knex"
-version := "0.3-dt-20190314Z-c04614"
+version := "0.4-dt-20190627Z-c04614"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

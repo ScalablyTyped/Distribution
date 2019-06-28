@@ -15,7 +15,7 @@ object CreateDevServerArgs {
     actions: Actions,
     app: js.Any,
     boundActionCreators: Actions,
-    cache: Cache,
+    cache: gatsbyLib.Anon_Del,
     createContentDigest: js.Function,
     createNodeId: js.Function,
     emitter: nodeLib.eventsMod.EventEmitter,

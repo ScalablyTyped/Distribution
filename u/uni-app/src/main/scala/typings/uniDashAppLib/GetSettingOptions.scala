@@ -13,7 +13,7 @@ trait GetSettingOptions extends js.Object {
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* result */ AuthSetting, scala.Unit]] = js.undefined
   /**
     * 接口调用成功的回调函数
     */
@@ -22,10 +22,14 @@ trait GetSettingOptions extends js.Object {
 
 object GetSettingOptions {
   @scala.inline
-  def apply(complete: () => scala.Unit = null, fail: () => scala.Unit = null, success: () => scala.Unit = null): GetSettingOptions = {
+  def apply(
+    complete: () => scala.Unit = null,
+    fail: /* result */ AuthSetting => scala.Unit = null,
+    success: () => scala.Unit = null
+  ): GetSettingOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[GetSettingOptions]
   }

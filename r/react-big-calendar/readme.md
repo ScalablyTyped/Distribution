@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-big-calendar
 
-Typings are for version 0.20
+Typings are for version 0.22
 
 ## Library description:
 Calendar! with events
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-big-calendar 0.20
+// Type definitions for react-big-calendar 0.22
 // Project: https://github.com/intljusticemission/react-big-calendar
 // Definitions by: Piotr Witek <https://github.com/piotrwitek>
 //                 Austin Turner <https://github.com/paustint>
@@ -50,6 +50,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Siarhey Belofost <https://github.com/SergeyBelofost>
 //                 Mark Nelissen <https://github.com/marknelissen>
 //                 Eric Kenney <https://github.com/KenneyE>
+//                 Paito Anderson <https://github.com/PaitoAnderson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

@@ -23,6 +23,10 @@ trait AllocateHostedConnectionRequest extends js.Object {
     */
   var ownerAccount: OwnerAccount
   /**
+    * The tags to assign to the hosted connection.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
+  /**
     * The dedicated VLAN provisioned to the hosted connection.
     */
   var vlan: VLAN
@@ -35,10 +39,11 @@ object AllocateHostedConnectionRequest {
     connectionId: ConnectionId,
     connectionName: ConnectionName,
     ownerAccount: OwnerAccount,
-    vlan: VLAN
+    vlan: VLAN,
+    tags: TagList = null
   ): AllocateHostedConnectionRequest = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth, connectionId = connectionId, connectionName = connectionName, ownerAccount = ownerAccount, vlan = vlan)
-  
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[AllocateHostedConnectionRequest]
   }
 }

@@ -11,27 +11,27 @@ trait EmailMessage extends js.Object {
     */
   var Body: js.UndefOr[__string] = js.undefined
   /**
-    * The email address that bounces and complaints will be forwarded to when feedback forwarding is enabled.
+    * The email address to forward bounces and complaints to, if feedback forwarding is enabled.
     */
   var FeedbackForwardingAddress: js.UndefOr[__string] = js.undefined
   /**
-    * The email address used to send the email from. Defaults to use FromAddress specified in the Email Channel.
+    * The verified email address to send the email message from. The default value is the FromAddress specified for the email channel.
     */
   var FromAddress: js.UndefOr[__string] = js.undefined
   /**
-    * An email represented as a raw MIME message.
+    * The email message, represented as a raw MIME message.
     */
   var RawEmail: js.UndefOr[RawEmail] = js.undefined
   /**
-    * The reply-to email address(es) for the email. If the recipient replies to the email, each reply-to address will receive the reply.
+    * The reply-to email address(es) for the email message. If a recipient replies to the email, each reply-to address receives the reply.
     */
   var ReplyToAddresses: js.UndefOr[ListOf__string] = js.undefined
   /**
-    * An email composed of a subject, a text part and a html part.
+    * The email message, composed of a subject, a text part, and an HTML part.
     */
   var SimpleEmail: js.UndefOr[SimpleEmail] = js.undefined
   /**
-    * Default message substitutions. Can be overridden by individual address substitutions.
+    * The default message variables to use in the email message. You can override the default variables with individual address variables.
     */
   var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
 }

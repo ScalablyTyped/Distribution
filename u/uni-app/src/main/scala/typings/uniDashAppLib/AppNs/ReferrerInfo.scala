@@ -18,7 +18,9 @@ trait ReferrerInfo extends js.Object {
     * - 1043（公众号模板消息）：来源公众号 appId
     */
   var appId: java.lang.String
-  /** 来源小程序传过来的数据，scene=1037或1038时支持 */
+  /**
+    * 来源小程序传过来的数据，scene=1037或1038时支持
+    */
   var extraData: js.UndefOr[js.Any] = js.undefined
 }
 

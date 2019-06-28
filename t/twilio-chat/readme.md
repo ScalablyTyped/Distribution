@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-chat
 
-Typings are for version 3.2.4
+Typings are for version 3.3.0
 
 ## Library description:
 Twilio Chat service client library
@@ -41,6 +41,13 @@ These comments are from the typescript definitions and might be useful:
  * @property {boolean} hasPrevPage Indicates the existence of previous page
  * @function {Promise<Paginator>} nextPage() Request next page. Does not modify existing object
  * @function {Promise<Paginator>} prevPage() Request previous page. Does not modify existing object
+ */
+/**
+ * @class
+ * @classdesc Exception type for service-side errors.
+ *
+ * @property {Number} code - Error code
+ * @property {String} message - Error description
  */
 /**
  * Contains sync list item information.

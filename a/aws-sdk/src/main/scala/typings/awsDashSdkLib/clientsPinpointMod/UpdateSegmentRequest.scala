@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait UpdateSegmentRequest extends js.Object {
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
   /**
-    * The unique ID of the segment.
+    * The unique identifier for the segment.
     */
   var SegmentId: __string
   var WriteSegmentRequest: awsDashSdkLib.clientsPinpointMod.WriteSegmentRequest

@@ -7,55 +7,51 @@ import scala.scalajs.js.annotation._
 
 trait EndpointBatchItem extends js.Object {
   /**
-    * The destination for messages that you send to this endpoint. The address varies by channel. For mobile push channels, use the token provided by the push notification service, such as the APNs device token or the FCM registration token. For the SMS channel, use a phone number in E.164 format, such as +12065550100. For the email channel, use an email address.
+    * The destination address for messages or push notifications that you send to the endpoint. The address varies by channel. For a push-notification channel, use the token provided by the push notification service, such as an Apple Push Notification service (APNs) device token or a Firebase Cloud Messaging (FCM) registration token. For the SMS channel, use a phone number in E.164 format, such as +12065550100. For the email channel, use an email address.
     */
   var Address: js.UndefOr[__string] = js.undefined
   /**
-    * Custom attributes that describe the endpoint by associating a name with an array of values. For example, an attribute named "interests" might have the values ["science", "politics", "travel"]. You can use these attributes as selection criteria when you create a segment of users to engage with a messaging campaign.
-  The following characters are not recommended in attribute names: # : ? \ /. The Amazon Pinpoint console does not display attributes that include these characters in the name. This limitation does not apply to attribute values.
+    * One or more custom attributes that describe the endpoint by associating a name with an array of values. For example, the value of a custom attribute named Interests might be: ["science", "music", "travel"]. You can use these attributes as filter criteria when you create segments. When you define the name of a custom attribute, avoid using the following characters: number sign (#), colon (:), question mark (?), backslash (\), and slash (/). The Amazon Pinpoint console can't display attribute names that contain these characters. This limitation doesn't apply to attribute values.
     */
   var Attributes: js.UndefOr[MapOfListOf__string] = js.undefined
   /**
-    * The channel type.
-  Valid values: GCM | APNS | APNS_SANDBOX | APNS_VOIP | APNS_VOIP_SANDBOX | ADM | SMS | EMAIL | BAIDU
+    * The channel to use when sending messages or push notifications to the endpoint.
     */
   var ChannelType: js.UndefOr[ChannelType] = js.undefined
   /**
-    * The endpoint demographic attributes.
+    * The demographic information for the endpoint, such as the time zone and platform.
     */
   var Demographic: js.UndefOr[EndpointDemographic] = js.undefined
   /**
-    * The last time the endpoint was updated. Provided in ISO 8601 format.
+    * The date and time, in ISO 8601 format, when the endpoint was created or updated.
     */
   var EffectiveDate: js.UndefOr[__string] = js.undefined
   /**
-    * Unused.
+    * Not used.
     */
   var EndpointStatus: js.UndefOr[__string] = js.undefined
   /**
-    * The unique Id for the Endpoint in the batch.
+    * The unique identifier for the endpoint in the context of the batch.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * The endpoint location attributes.
+    * The geographic information for the endpoint.
     */
   var Location: js.UndefOr[EndpointLocation] = js.undefined
   /**
-    * Custom metrics that your app reports to Amazon Pinpoint.
+    * One or more custom metrics that your app reports to Amazon Pinpoint for the endpoint.
     */
   var Metrics: js.UndefOr[MapOf__double] = js.undefined
   /**
-    * Indicates whether a user has opted out of receiving messages with one of the following values:
-  ALL - User has opted out of all messages.
-  NONE - Users has not opted out and receives all messages.
+    * Specifies whether the user who's associated with the endpoint has opted out of receiving messages and push notifications from you. Possible values are: ALL, the user has opted out and doesn't want to receive any messages or push notifications; and, NONE, the user hasn't opted out and wants to receive all messages and push notifications.
     */
   var OptOut: js.UndefOr[__string] = js.undefined
   /**
-    * The unique ID for the most recent request to update the endpoint.
+    * The unique identifier for the request to create or update the endpoint.
     */
   var RequestId: js.UndefOr[__string] = js.undefined
   /**
-    * Custom user-specific attributes that your app reports to Amazon Pinpoint.
+    * One or more custom user attributes that your app reports to Amazon Pinpoint for the user who's associated with the endpoint.
     */
   var User: js.UndefOr[EndpointUser] = js.undefined
 }

@@ -600,6 +600,15 @@ object AWSNs extends js.Object {
   
   @js.native
   /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class EC2InstanceConnect ()
+    extends awsDashSdkLib.awsDashSdkMod.EC2InstanceConnect {
+    def this(options: awsDashSdkLib.clientsEc2instanceconnectMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
   		 * Creates credentials from the metadata service on an EC2 instance.
   		 * @param {object} options - Override the default (1s) timeout period.
   		 */

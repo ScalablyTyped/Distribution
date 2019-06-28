@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait GetExportJobRequest extends js.Object {
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
   /**
-    * The unique ID of the job.
+    * The unique identifier for the job.
     */
   var JobId: __string
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PageInstanceBaseProps[D /* <: uniDashAppLib.AnyObject */] extends js.Object {
   /**
-    * 到当前页面的路径，类型为`String`
+    * 到当前页面的路径，类型为 `String`
     */
   var route: js.UndefOr[java.lang.String] = js.undefined
 }

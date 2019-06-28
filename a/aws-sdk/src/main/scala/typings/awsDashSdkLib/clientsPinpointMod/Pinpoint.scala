@@ -11,7 +11,7 @@ trait Pinpoint
   @JSName("config")
   var config_Pinpoint: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates or updates an app.
+    *  Creates an application.
     */
   def createApp(): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createApp(
@@ -22,7 +22,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates an app.
+    *  Creates an application.
     */
   def createApp(params: CreateAppRequest): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createApp(
@@ -34,7 +34,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates a campaign.
+    * Creates a new campaign for an application or updates the settings of an existing campaign for an application.
     */
   def createCampaign(): awsDashSdkLib.libRequestMod.Request[CreateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCampaign(
@@ -45,7 +45,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates a campaign.
+    * Creates a new campaign for an application or updates the settings of an existing campaign for an application.
     */
   def createCampaign(params: CreateCampaignRequest): awsDashSdkLib.libRequestMod.Request[CreateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCampaign(
@@ -57,7 +57,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an export job.
+    * Creates a new export job for an application.
     */
   def createExportJob(): awsDashSdkLib.libRequestMod.Request[CreateExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createExportJob(
@@ -68,7 +68,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an export job.
+    * Creates a new export job for an application.
     */
   def createExportJob(params: CreateExportJobRequest): awsDashSdkLib.libRequestMod.Request[CreateExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createExportJob(
@@ -80,7 +80,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates an import job.
+    * Creates a new import job for an application.
     */
   def createImportJob(): awsDashSdkLib.libRequestMod.Request[CreateImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createImportJob(
@@ -91,7 +91,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates an import job.
+    * Creates a new import job for an application.
     */
   def createImportJob(params: CreateImportJobRequest): awsDashSdkLib.libRequestMod.Request[CreateImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createImportJob(
@@ -103,7 +103,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to create or update a segment.
+    * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
   def createSegment(): awsDashSdkLib.libRequestMod.Request[CreateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSegment(
@@ -114,7 +114,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to create or update a segment.
+    * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
   def createSegment(params: CreateSegmentRequest): awsDashSdkLib.libRequestMod.Request[CreateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSegment(
@@ -126,7 +126,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an ADM channel.
+    * Disables the ADM channel for an application and deletes any existing settings for the channel.
     */
   def deleteAdmChannel(): awsDashSdkLib.libRequestMod.Request[DeleteAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAdmChannel(
@@ -137,7 +137,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an ADM channel.
+    * Disables the ADM channel for an application and deletes any existing settings for the channel.
     */
   def deleteAdmChannel(params: DeleteAdmChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAdmChannel(
@@ -149,7 +149,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the APNs channel for an app.
+    * Disables the APNs channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsChannel(): awsDashSdkLib.libRequestMod.Request[DeleteApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsChannel(
@@ -160,7 +160,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the APNs channel for an app.
+    * Disables the APNs channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsChannel(params: DeleteApnsChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsChannel(
@@ -172,7 +172,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an APNS sandbox channel.
+    * Disables the APNs sandbox channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsSandboxChannel(): awsDashSdkLib.libRequestMod.Request[DeleteApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsSandboxChannel(
@@ -183,7 +183,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an APNS sandbox channel.
+    * Disables the APNs sandbox channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsSandboxChannel(params: DeleteApnsSandboxChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsSandboxChannel(
@@ -195,7 +195,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an APNS VoIP channel
+    * Disables the APNs VoIP channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsVoipChannel(): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsVoipChannel(
@@ -206,7 +206,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an APNS VoIP channel
+    * Disables the APNs VoIP channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsVoipChannel(params: DeleteApnsVoipChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsVoipChannel(
@@ -218,7 +218,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an APNS VoIP sandbox channel
+    * Disables the APNs VoIP sandbox channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsVoipSandboxChannel(): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsVoipSandboxChannel(
@@ -229,7 +229,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an APNS VoIP sandbox channel
+    * Disables the APNs VoIP sandbox channel for an application and deletes any existing settings for the channel.
     */
   def deleteApnsVoipSandboxChannel(params: DeleteApnsVoipSandboxChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApnsVoipSandboxChannel(
@@ -241,7 +241,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes an app.
+    * Deletes an application.
     */
   def deleteApp(): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApp(
@@ -252,7 +252,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes an app.
+    * Deletes an application.
     */
   def deleteApp(params: DeleteAppRequest): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApp(
@@ -264,7 +264,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete a BAIDU GCM channel
+    * Disables the Baidu channel for an application and deletes any existing settings for the channel.
     */
   def deleteBaiduChannel(): awsDashSdkLib.libRequestMod.Request[DeleteBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBaiduChannel(
@@ -275,7 +275,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete a BAIDU GCM channel
+    * Disables the Baidu channel for an application and deletes any existing settings for the channel.
     */
   def deleteBaiduChannel(params: DeleteBaiduChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBaiduChannel(
@@ -287,7 +287,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a campaign.
+    * Deletes a campaign from an application.
     */
   def deleteCampaign(): awsDashSdkLib.libRequestMod.Request[DeleteCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCampaign(
@@ -298,7 +298,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a campaign.
+    * Deletes a campaign from an application.
     */
   def deleteCampaign(params: DeleteCampaignRequest): awsDashSdkLib.libRequestMod.Request[DeleteCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCampaign(
@@ -310,7 +310,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an email channel.
+    * Disables the email channel for an application and deletes any existing settings for the channel.
     */
   def deleteEmailChannel(): awsDashSdkLib.libRequestMod.Request[DeleteEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEmailChannel(
@@ -321,7 +321,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an email channel.
+    * Disables the email channel for an application and deletes any existing settings for the channel.
     */
   def deleteEmailChannel(params: DeleteEmailChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEmailChannel(
@@ -333,7 +333,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes an endpoint.
+    * Deletes an endpoint from an application.
     */
   def deleteEndpoint(): awsDashSdkLib.libRequestMod.Request[DeleteEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEndpoint(
@@ -344,7 +344,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes an endpoint.
+    * Deletes an endpoint from an application.
     */
   def deleteEndpoint(params: DeleteEndpointRequest): awsDashSdkLib.libRequestMod.Request[DeleteEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEndpoint(
@@ -356,7 +356,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the event stream for an app.
+    * Deletes the event stream for an application.
     */
   def deleteEventStream(): awsDashSdkLib.libRequestMod.Request[DeleteEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEventStream(
@@ -367,7 +367,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the event stream for an app.
+    * Deletes the event stream for an application.
     */
   def deleteEventStream(params: DeleteEventStreamRequest): awsDashSdkLib.libRequestMod.Request[DeleteEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEventStream(
@@ -379,7 +379,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the GCM channel for an app.
+    * Disables the GCM channel for an application and deletes any existing settings for the channel.
     */
   def deleteGcmChannel(): awsDashSdkLib.libRequestMod.Request[DeleteGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteGcmChannel(
@@ -390,7 +390,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the GCM channel for an app.
+    * Disables the GCM channel for an application and deletes any existing settings for the channel.
     */
   def deleteGcmChannel(params: DeleteGcmChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteGcmChannel(
@@ -402,7 +402,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a segment.
+    * Deletes a segment from an application.
     */
   def deleteSegment(): awsDashSdkLib.libRequestMod.Request[DeleteSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteSegment(
@@ -413,7 +413,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a segment.
+    * Deletes a segment from an application.
     */
   def deleteSegment(params: DeleteSegmentRequest): awsDashSdkLib.libRequestMod.Request[DeleteSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteSegment(
@@ -425,7 +425,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an SMS channel.
+    * Disables the SMS channel for an application and deletes any existing settings for the channel.
     */
   def deleteSmsChannel(): awsDashSdkLib.libRequestMod.Request[DeleteSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteSmsChannel(
@@ -436,7 +436,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an SMS channel.
+    * Disables the SMS channel for an application and deletes any existing settings for the channel.
     */
   def deleteSmsChannel(params: DeleteSmsChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteSmsChannel(
@@ -448,7 +448,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes endpoints that are associated with a User ID.
+    * Deletes all the endpoints that are associated with a specific user ID.
     */
   def deleteUserEndpoints(): awsDashSdkLib.libRequestMod.Request[DeleteUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteUserEndpoints(
@@ -459,7 +459,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes endpoints that are associated with a User ID.
+    * Deletes all the endpoints that are associated with a specific user ID.
     */
   def deleteUserEndpoints(params: DeleteUserEndpointsRequest): awsDashSdkLib.libRequestMod.Request[DeleteUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteUserEndpoints(
@@ -471,7 +471,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an Voice channel
+    * Disables the voice channel for an application and deletes any existing settings for the channel.
     */
   def deleteVoiceChannel(): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteVoiceChannel(
@@ -482,7 +482,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Delete an Voice channel
+    * Disables the voice channel for an application and deletes any existing settings for the channel.
     */
   def deleteVoiceChannel(params: DeleteVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteVoiceChannel(
@@ -494,7 +494,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an ADM channel.
+    * Retrieves information about the status and settings of the ADM channel for an application.
     */
   def getAdmChannel(): awsDashSdkLib.libRequestMod.Request[GetAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAdmChannel(
@@ -505,7 +505,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an ADM channel.
+    * Retrieves information about the status and settings of the ADM channel for an application.
     */
   def getAdmChannel(params: GetAdmChannelRequest): awsDashSdkLib.libRequestMod.Request[GetAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAdmChannel(
@@ -517,7 +517,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the APNs channel for an app.
+    * Retrieves information about the status and settings of the APNs channel for an application.
     */
   def getApnsChannel(): awsDashSdkLib.libRequestMod.Request[GetApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsChannel(
@@ -528,7 +528,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the APNs channel for an app.
+    * Retrieves information about the status and settings of the APNs channel for an application.
     */
   def getApnsChannel(params: GetApnsChannelRequest): awsDashSdkLib.libRequestMod.Request[GetApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsChannel(
@@ -540,7 +540,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an APNS sandbox channel.
+    * Retrieves information about the status and settings of the APNs sandbox channel for an application.
     */
   def getApnsSandboxChannel(): awsDashSdkLib.libRequestMod.Request[GetApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsSandboxChannel(
@@ -551,7 +551,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an APNS sandbox channel.
+    * Retrieves information about the status and settings of the APNs sandbox channel for an application.
     */
   def getApnsSandboxChannel(params: GetApnsSandboxChannelRequest): awsDashSdkLib.libRequestMod.Request[GetApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsSandboxChannel(
@@ -563,7 +563,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an APNS VoIP channel
+    * Retrieves information about the status and settings of the APNs VoIP channel for an application.
     */
   def getApnsVoipChannel(): awsDashSdkLib.libRequestMod.Request[GetApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsVoipChannel(
@@ -574,7 +574,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an APNS VoIP channel
+    * Retrieves information about the status and settings of the APNs VoIP channel for an application.
     */
   def getApnsVoipChannel(params: GetApnsVoipChannelRequest): awsDashSdkLib.libRequestMod.Request[GetApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsVoipChannel(
@@ -586,7 +586,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an APNS VoIPSandbox channel
+    * Retrieves information about the status and settings of the APNs VoIP sandbox channel for an application.
     */
   def getApnsVoipSandboxChannel(): awsDashSdkLib.libRequestMod.Request[GetApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsVoipSandboxChannel(
@@ -597,7 +597,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an APNS VoIPSandbox channel
+    * Retrieves information about the status and settings of the APNs VoIP sandbox channel for an application.
     */
   def getApnsVoipSandboxChannel(params: GetApnsVoipSandboxChannelRequest): awsDashSdkLib.libRequestMod.Request[GetApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApnsVoipSandboxChannel(
@@ -609,14 +609,14 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an app.
+    * Retrieves information about an application.
     */
   def getApp(): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApp(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppResponse, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an app.
+    * Retrieves information about an application.
     */
   def getApp(params: GetAppRequest): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApp(
@@ -624,7 +624,7 @@ trait Pinpoint
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppResponse, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to request the settings for an app.
+    * Retrieves information about the settings for an application.
     */
   def getApplicationSettings(): awsDashSdkLib.libRequestMod.Request[GetApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApplicationSettings(
@@ -635,7 +635,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to request the settings for an app.
+    * Retrieves information about the settings for an application.
     */
   def getApplicationSettings(params: GetApplicationSettingsRequest): awsDashSdkLib.libRequestMod.Request[GetApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApplicationSettings(
@@ -647,14 +647,14 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your apps.
+    * Retrieves information about all of your applications.
     */
   def getApps(): awsDashSdkLib.libRequestMod.Request[GetAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApps(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppsResponse, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your apps.
+    * Retrieves information about all of your applications.
     */
   def getApps(params: GetAppsRequest): awsDashSdkLib.libRequestMod.Request[GetAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApps(
@@ -662,7 +662,7 @@ trait Pinpoint
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppsResponse, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get a BAIDU GCM channel
+    * Retrieves information about the status and settings of the Baidu Cloud Push channel for an application.
     */
   def getBaiduChannel(): awsDashSdkLib.libRequestMod.Request[GetBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBaiduChannel(
@@ -673,7 +673,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get a BAIDU GCM channel
+    * Retrieves information about the status and settings of the Baidu Cloud Push channel for an application.
     */
   def getBaiduChannel(params: GetBaiduChannelRequest): awsDashSdkLib.libRequestMod.Request[GetBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBaiduChannel(
@@ -685,7 +685,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a campaign.
+    * Retrieves information about the status, configuration, and other settings for a campaign.
     */
   def getCampaign(): awsDashSdkLib.libRequestMod.Request[GetCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaign(
@@ -696,7 +696,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a campaign.
+    * Retrieves information about the status, configuration, and other settings for a campaign.
     */
   def getCampaign(params: GetCampaignRequest): awsDashSdkLib.libRequestMod.Request[GetCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaign(
@@ -708,7 +708,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the activity performed by a campaign.
+    * Retrieves information about the activity performed by a campaign.
     */
   def getCampaignActivities(): awsDashSdkLib.libRequestMod.Request[GetCampaignActivitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaignActivities(
@@ -719,7 +719,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignActivitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the activity performed by a campaign.
+    * Retrieves information about the activity performed by a campaign.
     */
   def getCampaignActivities(params: GetCampaignActivitiesRequest): awsDashSdkLib.libRequestMod.Request[GetCampaignActivitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaignActivities(
@@ -731,7 +731,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignActivitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a specific version of a campaign.
+    * Retrieves information about the status, configuration, and other settings for a specific version of a campaign.
     */
   def getCampaignVersion(): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaignVersion(
@@ -742,7 +742,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a specific version of a campaign.
+    * Retrieves information about the status, configuration, and other settings for a specific version of a campaign.
     */
   def getCampaignVersion(params: GetCampaignVersionRequest): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaignVersion(
@@ -754,7 +754,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your campaign versions.
+    * Retrieves information about the status, configuration, and other settings for all versions of a specific campaign.
     */
   def getCampaignVersions(): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaignVersions(
@@ -765,7 +765,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your campaign versions.
+    * Retrieves information about the status, configuration, and other settings for all versions of a specific campaign.
     */
   def getCampaignVersions(params: GetCampaignVersionsRequest): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaignVersions(
@@ -777,7 +777,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your campaigns.
+    * Retrieves information about the status, configuration, and other settings for all the campaigns that are associated with an application.
     */
   def getCampaigns(): awsDashSdkLib.libRequestMod.Request[GetCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaigns(
@@ -788,7 +788,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your campaigns.
+    * Retrieves information about the status, configuration, and other settings for all the campaigns that are associated with an application.
     */
   def getCampaigns(params: GetCampaignsRequest): awsDashSdkLib.libRequestMod.Request[GetCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCampaigns(
@@ -800,7 +800,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get all channels.
+    * Retrieves information about the history and status of each channel for an application.
     */
   def getChannels(): awsDashSdkLib.libRequestMod.Request[GetChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getChannels(
@@ -811,7 +811,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get all channels.
+    * Retrieves information about the history and status of each channel for an application.
     */
   def getChannels(params: GetChannelsRequest): awsDashSdkLib.libRequestMod.Request[GetChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getChannels(
@@ -823,7 +823,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an email channel.
+    * Retrieves information about the status and settings of the email channel for an application.
     */
   def getEmailChannel(): awsDashSdkLib.libRequestMod.Request[GetEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEmailChannel(
@@ -834,7 +834,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an email channel.
+    * Retrieves information about the status and settings of the email channel for an application.
     */
   def getEmailChannel(params: GetEmailChannelRequest): awsDashSdkLib.libRequestMod.Request[GetEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEmailChannel(
@@ -846,7 +846,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an endpoint.
+    * Retrieves information about the settings and attributes of a specific endpoint for an application.
     */
   def getEndpoint(): awsDashSdkLib.libRequestMod.Request[GetEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEndpoint(
@@ -857,7 +857,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an endpoint.
+    * Retrieves information about the settings and attributes of a specific endpoint for an application.
     */
   def getEndpoint(params: GetEndpointRequest): awsDashSdkLib.libRequestMod.Request[GetEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEndpoint(
@@ -869,7 +869,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns the event stream for an app.
+    * Retrieves information about the event stream settings for an application.
     */
   def getEventStream(): awsDashSdkLib.libRequestMod.Request[GetEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEventStream(
@@ -880,7 +880,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns the event stream for an app.
+    * Retrieves information about the event stream settings for an application.
     */
   def getEventStream(params: GetEventStreamRequest): awsDashSdkLib.libRequestMod.Request[GetEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEventStream(
@@ -892,7 +892,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an export job.
+    * Retrieves information about the status and settings of a specific export job for an application.
     */
   def getExportJob(): awsDashSdkLib.libRequestMod.Request[GetExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getExportJob(
@@ -903,7 +903,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an export job.
+    * Retrieves information about the status and settings of a specific export job for an application.
     */
   def getExportJob(params: GetExportJobRequest): awsDashSdkLib.libRequestMod.Request[GetExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getExportJob(
@@ -915,7 +915,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetExportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your export jobs.
+    * Retrieves information about the status and settings of all the export jobs for an application.
     */
   def getExportJobs(): awsDashSdkLib.libRequestMod.Request[GetExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getExportJobs(
@@ -926,7 +926,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your export jobs.
+    * Retrieves information about the status and settings of all the export jobs for an application.
     */
   def getExportJobs(params: GetExportJobsRequest): awsDashSdkLib.libRequestMod.Request[GetExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getExportJobs(
@@ -938,7 +938,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the GCM channel for an app.
+    * Retrieves information about the status and settings of the GCM channel for an application.
     */
   def getGcmChannel(): awsDashSdkLib.libRequestMod.Request[GetGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getGcmChannel(
@@ -949,7 +949,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the GCM channel for an app.
+    * Retrieves information about the status and settings of the GCM channel for an application.
     */
   def getGcmChannel(params: GetGcmChannelRequest): awsDashSdkLib.libRequestMod.Request[GetGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getGcmChannel(
@@ -961,7 +961,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an import job.
+    * Retrieves information about the status and settings of a specific import job for an application.
     */
   def getImportJob(): awsDashSdkLib.libRequestMod.Request[GetImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getImportJob(
@@ -972,7 +972,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about an import job.
+    * Retrieves information about the status and settings of a specific import job for an application.
     */
   def getImportJob(params: GetImportJobRequest): awsDashSdkLib.libRequestMod.Request[GetImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getImportJob(
@@ -984,7 +984,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your import jobs.
+    * Retrieves information about the status and settings of all the import jobs for an application.
     */
   def getImportJobs(): awsDashSdkLib.libRequestMod.Request[GetImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getImportJobs(
@@ -995,7 +995,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your import jobs.
+    * Retrieves information about the status and settings of all the import jobs for an application.
     */
   def getImportJobs(params: GetImportJobsRequest): awsDashSdkLib.libRequestMod.Request[GetImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getImportJobs(
@@ -1007,7 +1007,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a segment.
+    * Retrieves information about the configuration, dimension, and other settings for a specific segment that's associated with an application.
     */
   def getSegment(): awsDashSdkLib.libRequestMod.Request[GetSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegment(
@@ -1018,7 +1018,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a segment.
+    * Retrieves information about the configuration, dimension, and other settings for a specific segment that's associated with an application.
     */
   def getSegment(params: GetSegmentRequest): awsDashSdkLib.libRequestMod.Request[GetSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegment(
@@ -1030,7 +1030,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of export jobs for a specific segment.
+    * Retrieves information about the status and settings of the export jobs for a segment.
     */
   def getSegmentExportJobs(): awsDashSdkLib.libRequestMod.Request[GetSegmentExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentExportJobs(
@@ -1041,7 +1041,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of export jobs for a specific segment.
+    * Retrieves information about the status and settings of the export jobs for a segment.
     */
   def getSegmentExportJobs(params: GetSegmentExportJobsRequest): awsDashSdkLib.libRequestMod.Request[GetSegmentExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentExportJobs(
@@ -1053,7 +1053,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentExportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of import jobs for a specific segment.
+    * Retrieves information about the status and settings of the import jobs for a segment.
     */
   def getSegmentImportJobs(): awsDashSdkLib.libRequestMod.Request[GetSegmentImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentImportJobs(
@@ -1064,7 +1064,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of import jobs for a specific segment.
+    * Retrieves information about the status and settings of the import jobs for a segment.
     */
   def getSegmentImportJobs(params: GetSegmentImportJobsRequest): awsDashSdkLib.libRequestMod.Request[GetSegmentImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentImportJobs(
@@ -1076,7 +1076,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a segment version.
+    * Retrieves information about the configuration, dimension, and other settings for a specific version of a segment that's associated with an application.
     */
   def getSegmentVersion(): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentVersion(
@@ -1087,7 +1087,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about a segment version.
+    * Retrieves information about the configuration, dimension, and other settings for a specific version of a segment that's associated with an application.
     */
   def getSegmentVersion(params: GetSegmentVersionRequest): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentVersion(
@@ -1099,7 +1099,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your segment versions.
+    * Retrieves information about the configuration, dimension, and other settings for all versions of a specific segment that's associated with an application.
     */
   def getSegmentVersions(): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentVersions(
@@ -1110,7 +1110,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about your segment versions.
+    * Retrieves information about the configuration, dimension, and other settings for all versions of a specific segment that's associated with an application.
     */
   def getSegmentVersions(params: GetSegmentVersionsRequest): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegmentVersions(
@@ -1122,7 +1122,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to get information about your segments.
+    * Retrieves information about the configuration, dimension, and other settings for all the segments that are associated with an application.
     */
   def getSegments(): awsDashSdkLib.libRequestMod.Request[GetSegmentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegments(
@@ -1133,7 +1133,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to get information about your segments.
+    * Retrieves information about the configuration, dimension, and other settings for all the segments that are associated with an application.
     */
   def getSegments(params: GetSegmentsRequest): awsDashSdkLib.libRequestMod.Request[GetSegmentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSegments(
@@ -1145,7 +1145,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSegmentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an SMS channel.
+    * Retrieves information about the status and settings of the SMS channel for an application.
     */
   def getSmsChannel(): awsDashSdkLib.libRequestMod.Request[GetSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSmsChannel(
@@ -1156,7 +1156,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get an SMS channel.
+    * Retrieves information about the status and settings of the SMS channel for an application.
     */
   def getSmsChannel(params: GetSmsChannelRequest): awsDashSdkLib.libRequestMod.Request[GetSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSmsChannel(
@@ -1168,7 +1168,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the endpoints that are associated with a User ID.
+    * Retrieves information about all the endpoints that are associated with a specific user ID.
     */
   def getUserEndpoints(): awsDashSdkLib.libRequestMod.Request[GetUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getUserEndpoints(
@@ -1179,7 +1179,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the endpoints that are associated with a User ID.
+    * Retrieves information about all the endpoints that are associated with a specific user ID.
     */
   def getUserEndpoints(params: GetUserEndpointsRequest): awsDashSdkLib.libRequestMod.Request[GetUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getUserEndpoints(
@@ -1191,7 +1191,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get a Voice Channel
+    * Retrieves information about the status and settings of the voice channel for an application.
     */
   def getVoiceChannel(): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getVoiceChannel(
@@ -1202,7 +1202,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Get a Voice Channel
+    * Retrieves information about the status and settings of the voice channel for an application.
     */
   def getVoiceChannel(params: GetVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getVoiceChannel(
@@ -1214,7 +1214,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * 
+    * Retrieves all the tags (keys and values) that are associated with an application, campaign, or segment.
     */
   def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
@@ -1225,7 +1225,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * 
+    * Retrieves all the tags (keys and values) that are associated with an application, campaign, or segment.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
@@ -1237,7 +1237,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the specified phone number.
+    * Retrieves information about a phone number.
     */
   def phoneNumberValidate(): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def phoneNumberValidate(
@@ -1248,7 +1248,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns information about the specified phone number.
+    * Retrieves information about a phone number.
     */
   def phoneNumberValidate(params: PhoneNumberValidateRequest): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def phoneNumberValidate(
@@ -1260,7 +1260,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to create or update the event stream for an app.
+    * Creates a new event stream for an application or updates the settings of an existing event stream for an application.
     */
   def putEventStream(): awsDashSdkLib.libRequestMod.Request[PutEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEventStream(
@@ -1271,7 +1271,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to create or update the event stream for an app.
+    * Creates a new event stream for an application or updates the settings of an existing event stream for an application.
     */
   def putEventStream(params: PutEventStreamRequest): awsDashSdkLib.libRequestMod.Request[PutEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEventStream(
@@ -1283,7 +1283,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutEventStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to record events for endpoints. This method creates events and creates or updates the endpoints that those events are associated with.
+    * Creates a new event to record for endpoints, or creates or updates endpoint data that existing events are associated with.
     */
   def putEvents(): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEvents(
@@ -1294,7 +1294,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to record events for endpoints. This method creates events and creates or updates the endpoints that those events are associated with.
+    * Creates a new event to record for endpoints, or creates or updates endpoint data that existing events are associated with.
     */
   def putEvents(params: PutEventsRequest): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEvents(
@@ -1306,7 +1306,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to remove the attributes for an app
+    * Removes one or more attributes, of the same attribute type, from all the endpoints that are associated with an application.
     */
   def removeAttributes(): awsDashSdkLib.libRequestMod.Request[RemoveAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeAttributes(
@@ -1317,7 +1317,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[RemoveAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to remove the attributes for an app
+    * Removes one or more attributes, of the same attribute type, from all the endpoints that are associated with an application.
     */
   def removeAttributes(params: RemoveAttributesRequest): awsDashSdkLib.libRequestMod.Request[RemoveAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeAttributes(
@@ -1329,7 +1329,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[RemoveAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to send a direct message.
+    * Creates and sends a direct message.
     */
   def sendMessages(): awsDashSdkLib.libRequestMod.Request[SendMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendMessages(
@@ -1340,7 +1340,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to send a direct message.
+    * Creates and sends a direct message.
     */
   def sendMessages(params: SendMessagesRequest): awsDashSdkLib.libRequestMod.Request[SendMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendMessages(
@@ -1352,7 +1352,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to send a message to a list of users.
+    * Creates and sends a message to a list of users.
     */
   def sendUsersMessages(): awsDashSdkLib.libRequestMod.Request[SendUsersMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendUsersMessages(
@@ -1363,7 +1363,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendUsersMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to send a message to a list of users.
+    * Creates and sends a message to a list of users.
     */
   def sendUsersMessages(params: SendUsersMessagesRequest): awsDashSdkLib.libRequestMod.Request[SendUsersMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendUsersMessages(
@@ -1375,14 +1375,14 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendUsersMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * 
+    * Adds one or more tags (keys and values) to an application, campaign, or segment.
     */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * 
+    * Adds one or more tags (keys and values) to an application, campaign, or segment.
     */
   def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
@@ -1390,14 +1390,14 @@ trait Pinpoint
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * 
+    * Removes one or more tags (keys and values) from an application, campaign, or segment.
     */
   def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * 
+    * Removes one or more tags (keys and values) from an application, campaign, or segment.
     */
   def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
@@ -1405,7 +1405,7 @@ trait Pinpoint
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an ADM channel.
+    * Updates the ADM channel settings for an application.
     */
   def updateAdmChannel(): awsDashSdkLib.libRequestMod.Request[UpdateAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAdmChannel(
@@ -1416,7 +1416,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an ADM channel.
+    * Updates the ADM channel settings for an application.
     */
   def updateAdmChannel(params: UpdateAdmChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAdmChannel(
@@ -1428,7 +1428,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateAdmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update the APNs channel for an app.
+    * Updates the APNs channel settings for an application.
     */
   def updateApnsChannel(): awsDashSdkLib.libRequestMod.Request[UpdateApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsChannel(
@@ -1439,7 +1439,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update the APNs channel for an app.
+    * Updates the APNs channel settings for an application.
     */
   def updateApnsChannel(params: UpdateApnsChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsChannel(
@@ -1451,7 +1451,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an APNS sandbox channel.
+    * Updates the APNs sandbox channel settings for an application.
     */
   def updateApnsSandboxChannel(): awsDashSdkLib.libRequestMod.Request[UpdateApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsSandboxChannel(
@@ -1462,7 +1462,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an APNS sandbox channel.
+    * Updates the APNs sandbox channel settings for an application.
     */
   def updateApnsSandboxChannel(params: UpdateApnsSandboxChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsSandboxChannel(
@@ -1474,7 +1474,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an APNS VoIP channel
+    * Updates the APNs VoIP channel settings for an application.
     */
   def updateApnsVoipChannel(): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsVoipChannel(
@@ -1485,7 +1485,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an APNS VoIP channel
+    * Updates the APNs VoIP channel settings for an application.
     */
   def updateApnsVoipChannel(params: UpdateApnsVoipChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsVoipChannel(
@@ -1497,7 +1497,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an APNS VoIP sandbox channel
+    * Updates the settings for the APNs VoIP sandbox channel for an application.
     */
   def updateApnsVoipSandboxChannel(): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsVoipSandboxChannel(
@@ -1508,7 +1508,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an APNS VoIP sandbox channel
+    * Updates the settings for the APNs VoIP sandbox channel for an application.
     */
   def updateApnsVoipSandboxChannel(params: UpdateApnsVoipSandboxChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApnsVoipSandboxChannel(
@@ -1520,7 +1520,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApnsVoipSandboxChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to update the settings for an app.
+    * Updates the settings for an application.
     */
   def updateApplicationSettings(): awsDashSdkLib.libRequestMod.Request[UpdateApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApplicationSettings(
@@ -1531,7 +1531,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to update the settings for an app.
+    * Updates the settings for an application.
     */
   def updateApplicationSettings(params: UpdateApplicationSettingsRequest): awsDashSdkLib.libRequestMod.Request[UpdateApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApplicationSettings(
@@ -1543,7 +1543,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateApplicationSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update a BAIDU GCM channel
+    * Updates the settings of the Baidu channel for an application.
     */
   def updateBaiduChannel(): awsDashSdkLib.libRequestMod.Request[UpdateBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBaiduChannel(
@@ -1554,7 +1554,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update a BAIDU GCM channel
+    * Updates the settings of the Baidu channel for an application.
     */
   def updateBaiduChannel(params: UpdateBaiduChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBaiduChannel(
@@ -1566,7 +1566,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateBaiduChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update a campaign.
+    * Updates the settings for a campaign.
     */
   def updateCampaign(): awsDashSdkLib.libRequestMod.Request[UpdateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateCampaign(
@@ -1577,7 +1577,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update a campaign.
+    * Updates the settings for a campaign.
     */
   def updateCampaign(params: UpdateCampaignRequest): awsDashSdkLib.libRequestMod.Request[UpdateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateCampaign(
@@ -1589,7 +1589,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an email channel.
+    * Updates the status and settings of the email channel for an application.
     */
   def updateEmailChannel(): awsDashSdkLib.libRequestMod.Request[UpdateEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEmailChannel(
@@ -1600,7 +1600,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an email channel.
+    * Updates the status and settings of the email channel for an application.
     */
   def updateEmailChannel(params: UpdateEmailChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEmailChannel(
@@ -1612,7 +1612,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateEmailChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates an endpoint.
+    * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for an endpoint.
     */
   def updateEndpoint(): awsDashSdkLib.libRequestMod.Request[UpdateEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEndpoint(
@@ -1623,7 +1623,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates or updates an endpoint.
+    * Creates a new endpoint for an application or updates the settings and attributes of an existing endpoint for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for an endpoint.
     */
   def updateEndpoint(params: UpdateEndpointRequest): awsDashSdkLib.libRequestMod.Request[UpdateEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEndpoint(
@@ -1635,7 +1635,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update a batch of endpoints.
+    *  Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for a batch of endpoints.
     */
   def updateEndpointsBatch(): awsDashSdkLib.libRequestMod.Request[UpdateEndpointsBatchResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEndpointsBatch(
@@ -1646,7 +1646,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateEndpointsBatchResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update a batch of endpoints.
+    *  Creates a new batch of endpoints for an application or updates the settings and attributes of a batch of existing endpoints for an application. You can also use this operation to define custom attributes (Attributes, Metrics, and UserAttributes properties) for a batch of endpoints.
     */
   def updateEndpointsBatch(params: UpdateEndpointsBatchRequest): awsDashSdkLib.libRequestMod.Request[UpdateEndpointsBatchResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEndpointsBatch(
@@ -1658,7 +1658,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateEndpointsBatchResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update the GCM channel for an app.
+    * Updates the status and settings of the GCM channel for an application.
     */
   def updateGcmChannel(): awsDashSdkLib.libRequestMod.Request[UpdateGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateGcmChannel(
@@ -1669,7 +1669,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Use to update the GCM channel for an app.
+    * Updates the status and settings of the GCM channel for an application.
     */
   def updateGcmChannel(params: UpdateGcmChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateGcmChannel(
@@ -1681,7 +1681,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateGcmChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to update a segment.
+    * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
   def updateSegment(): awsDashSdkLib.libRequestMod.Request[UpdateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateSegment(
@@ -1692,7 +1692,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Used to update a segment.
+    * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
   def updateSegment(params: UpdateSegmentRequest): awsDashSdkLib.libRequestMod.Request[UpdateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateSegment(
@@ -1704,7 +1704,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateSegmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an SMS channel.
+    * Updates the status and settings of the SMS channel for an application.
     */
   def updateSmsChannel(): awsDashSdkLib.libRequestMod.Request[UpdateSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateSmsChannel(
@@ -1715,7 +1715,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an SMS channel.
+    * Updates the status and settings of the SMS channel for an application.
     */
   def updateSmsChannel(params: UpdateSmsChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateSmsChannel(
@@ -1727,7 +1727,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an Voice channel
+    * Updates the status and settings of the voice channel for an application.
     */
   def updateVoiceChannel(): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateVoiceChannel(
@@ -1738,7 +1738,7 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Update an Voice channel
+    * Updates the status and settings of the voice channel for an application.
     */
   def updateVoiceChannel(params: UpdateVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateVoiceChannel(

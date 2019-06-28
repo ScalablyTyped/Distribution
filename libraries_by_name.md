@@ -1066,6 +1066,7 @@
 | [cycled](./c/cycled) | Cycle through the items of an array | cycle, cycled, iterable, iterables, array, item, next, previous, loop, repeat, value, values, iterator |
 | [cypress](./c/cypress) | Cypress.io end to end testing tool | browser, cypress, cypress.io, automation, end-to-end, e2e, integration, mocks, test, testing, runner, spies, stubs |
 | [cypress-axe](./c/cypress-axe) | Custom cypress commands to inject axe-core and tes | a11y, accessibility, axe, axe-core, cypress |
+| [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io | cucumber, gherkin, cypress, testing |
 | [d](./d/d) | Property descriptor factory | descriptor, es, ecmascript, ecma, property, descriptors, meta, properties |
 | [d3](./d/d3) | Data-Driven Documents | dom, visualization, svg, animation, canvas |
 | [d3-array](./d/d3-array) | Array manipulation, ordering, searching, summarizi | d3, d3-module, histogram, bisect, shuffle, statistics, search, sort, array |
@@ -1599,6 +1600,7 @@
 | [express-promise-router](./e/express-promise-router) | A lightweight wrapper for Express 4's Router that  | express, promise, router |
 | [express-rate-limit](./e/express-rate-limit) | Basic IP rate-limiting middleware for Express. Use | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
 | [express-redis-cache](./e/express-redis-cache) | A module to make Express interact with Redis (crea | - |
+| [express-request-id](./e/express-request-id) | Generate UUID for request and add it to headers | express, middleware, request, id, uuid |
 | [express-route-fs](./e/express-route-fs) | File system-based approach for handling routes in  | express, route, fs, file, system |
 | [express-routemap](./e/express-routemap) | Display express server routes in your terminal | express, routes |
 | [express-routers](./e/express-routers) | Express Routers 🚦 - just another way to create ro | express, router, express router, express routing, typescript |
@@ -1636,6 +1638,7 @@
 | [fabric](./f/fabric) | Object model for HTML5 canvas, and SVG-to-canvas p | canvas, graphic, graphics, SVG, node-canvas, parser, HTML5, object model |
 | [facebook-instant-games](./f/facebook-instant-games) | - | - |
 | [facebook-js-sdk](./f/facebook-js-sdk) | - | - |
+| [facebook-locales](./f/facebook-locales) | Maps locales to Facebook locales | i18n, facebook, locales, locale |
 | [facebook-pixel](./f/facebook-pixel) | - | - |
 | [facepaint](./f/facepaint) | Responsive style values for css-in-js. | styles, emotion, react, css, css-in-js |
 | [factory-girl](./f/factory-girl) | A factory library for Node.js and JavaScript inspi | factory, test, bdd, tdd, fixture |
@@ -2486,6 +2489,7 @@
 | [httperr](./h/httperr) | HTTP status codes as JavaScript errors. | http, errors, error, request, response, errorclass |
 | [hubot](./h/hubot) | A simple helpful robot for your Company | github, hubot, campfire, bot |
 | [hubspot-pace](./h/hubspot-pace) | - | - |
+| [human-interval](./h/human-interval) | Human readable time measurements | interval, time, date |
 | [humane](./h/humane) | - | - |
 | [humanize-duration](./h/humanize-duration) | Convert millisecond durations to English and many  | humanize, duration, time, hours, minutes, seconds, days, years, months |
 | [humanize-ms](./h/humanize-ms) | transform humanize time to ms | humanize, ms |
@@ -3719,6 +3723,7 @@
 | [login-with-amazon-sdk-bro](./l/login-with-amazon-sdk-browser) | - | - |
 | [loglevel](./l/loglevel) | Minimal lightweight logging for JavaScript, adding | log, logger, logging, browser |
 | [loglevel-plugin-prefix](./l/loglevel-plugin-prefix) | Plugin for loglevel message prefixing | log, logger, logging, browser, node, prefix, colored, loglevel, plugin |
+| [logrocket-react](./l/logrocket-react) | React library for  | - |
 | [logrotate-stream](./l/logrotate-stream) | Pipe log data to a stream, fuggetabout rotation | log, rotate, pipe, stream |
 | [lokijs](./l/lokijs) | Fast document oriented javascript in-memory databa | javascript, document-oriented, mmdb, json, nosql, lokijs, in-memory |
 | [lolex](./l/lolex) | Fake JavaScript timers | - |
@@ -4001,6 +4006,7 @@
 | [moment-business](./m/moment-business) | Methods to work with week days and weekends in mom | moment, momentjs, moment.js, business, workday, workweek, saturday, sunday, weekend, weekends |
 | [moment-business-time](./m/moment-business-time) | Query and manipulate moment objects within the con | moment, working time, workings days, working hours, business time, business hours |
 | [moment-duration-format](./m/moment-duration-format) | A moment.js plugin for formatting durations. | moment, duration, format |
+| [moment-hijri](./m/moment-hijri) | A Hijri calendar (Based on Umm al-Qura calculation | hijri, hijriah, arabic, lunar, Umm al-Qura, date, calendar, conversion, convert |
 | [moment-holiday](./m/moment-holiday) | A Moment.js plugin for handling holidays. | moment, momentjs, holiday, holidays, calculation, united states, us, canada, croatia, denmark, hrvatska, india, easter, finland, germany |
 | [moment-jalaali](./m/moment-jalaali) | Jalaali (Jalali, Persian, Khorshidi, Shamsi) calen | jalaali, jalali, persian, khorshidi, shamsi, date, calendar, conversion, convert |
 | [moment-precise-range-plug](./m/moment-precise-range-plugin) | This is a plugin for the moment.js JavaScript libr | - |
@@ -4062,6 +4068,7 @@
 | [mssql](./m/mssql) | Microsoft SQL Server client for Node.js. | database, mssql, sql, server, msnodesql, sqlserver, tds, node-tds, tedious, node-sqlserver, sqlserver, msnodesqlv8, azure, node-mssql |
 | [mu2](./m/mu2) | A Mustache template engine for Node.js | template, mustache |
 | [mui-datatables](./m/mui-datatables) | Datatables for React using Material-UI | material-ui, datatables, react |
+| [muibox](./m/muibox) | Promise-based dialog boxes (alert, confirm, prompt | react, material, material-design, material-ui, mui, dialog, modal |
 | [muicss](./m/muicss) | Lightweight CSS framework based on Google's Materi | MUI, CSS, CSS Framework, Material Design, React |
 | [multer](./m/multer) | Middleware for handling multipart/form-data. | form, post, multipart, form-data, formdata, express, middleware |
 | [multer-gridfs-storage](./m/multer-gridfs-storage) | Multer storage engine for GridFS | multer, mongodb, storage, gridfs |
@@ -4403,6 +4410,7 @@
 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij |
 | [open-graph](./o/open-graph) | An Open Graph implementation for Node.js. | open graph, open, graph, opengraph, og |
 | [openapi-factory](./o/openapi-factory) | Build API's and serverless code using node and fir | aws, cloudfront, package creation, microservice, api gateway, serverless, api gateway, aws api gateway, lambda, aws lambda, api, openapi, api factory, openapi factory |
+| [openapi-schemas](./o/openapi-schemas) | JSON Schemas for every version of the OpenAPI Spec | openapi, open-api, swagger, oas, api, rest, json, specification, definition, schema |
 | [openapi-types](./o/openapi-types) | Types for OpenAPI documents. | openapi, swagger, types, typescript |
 | [opener](./o/opener) | Opens stuff, like webpages and files and executabl | - |
 | [openid](./o/openid) | OpenID 1.1/2.0 library for node.js | openid, auth, authentication, identity, identifier, relying, party, 1.1, 2.0, library |
@@ -5012,6 +5020,7 @@
 | [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog. | - |
 | [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog. | - |
 | [reach__router](./r/reach__router) | Next generation Routing for React. | react, react router |
+| [reach__tabs](./r/reach__tabs) | Accessible React Tabs Component | - |
 | [react](./r/react) | React is a JavaScript library for building user in | react |
 | [react-ace](./r/react-ace) | A react component for Ace Editor | ace, ace editor, react-component, react, brace |
 | [react-adal](./r/react-adal) | Azure Active Directory (ADAL) support for ReactJS | react, implicit, js, AAD, adal, oauth, oauth2, azure, react-adal, actve, directory, msal |
@@ -5987,6 +5996,7 @@
 | [signals_dot_js](./s/signals_dot_js) | TypeScript port of AS3 Signals. | Signals, TypeScript |
 | [signature_pad](./s/signature_pad) | Library for drawing smooth signatures. | - |
 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic | Simmer, css, css selector, sizzle |
+| [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for | selection, selecting, user-selection |
 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v | - |
 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign | - |
 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI | chatwork, api |
@@ -6541,6 +6551,7 @@
 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS | cli, typescript, linter |
 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript | typescript, monad, functional |
 | [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo | promises, harmony, generators |
+| [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC | timing safe string compare, double hmac string compare, safe string compare, hmac |
 | [tsutils](./t/tsutils) | utilities for working with typescript's AST | typescript, ts, ast, typeguard, utils, helper, node |
 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones. | ttf, woff2, fonts |
 | [tunnel](./t/tunnel) | Node HTTP/HTTPS Agents for tunneling proxies | http, https, agent, proxy, tunnel |
@@ -6956,6 +6967,7 @@
 | [word2vector](./w/word2vector) | a word2vector interface for nodejs | word2vector, word2vec, word, vec, machine learning, chinese, deep-learning, 向量, vector, 文字, 機器學習 |
 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML | cloud, canvas, 2D, html, Wordle, presentation, tag |
 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress. | wordpress, a11y, aria-live |
+| [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests. | wordpress, rest-api, fetch |
 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an | wordpress, autop |
 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress. | wordpress, blob |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |

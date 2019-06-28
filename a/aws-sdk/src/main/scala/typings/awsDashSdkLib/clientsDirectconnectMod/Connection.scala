@@ -63,6 +63,10 @@ trait Connection extends js.Object {
     */
   var region: js.UndefOr[Region] = js.undefined
   /**
+    * Any tags assigned to the connection.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
+  /**
     * The ID of the VLAN.
     */
   var vlan: js.UndefOr[VLAN] = js.undefined
@@ -85,6 +89,7 @@ object Connection {
     ownerAccount: OwnerAccount = null,
     partnerName: PartnerName = null,
     region: Region = null,
+    tags: TagList = null,
     vlan: js.UndefOr[VLAN] = js.undefined
   ): Connection = {
     val __obj = js.Dynamic.literal()
@@ -102,6 +107,7 @@ object Connection {
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount)
     if (partnerName != null) __obj.updateDynamic("partnerName")(partnerName)
     if (region != null) __obj.updateDynamic("region")(region)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan)
     __obj.asInstanceOf[Connection]
   }

@@ -2299,6 +2299,7 @@
 | 53 | [domhandler](./d/domhandler) | handler for htmlparser2 that turns pages into a do
 | 53 | [gulp-svg-sprite](./g/gulp-svg-sprite) | SVG sprites & stacks galore — Gulp plugin wrapping
 | 53 | [gun](./g/gun) | A realtime, decentralized, offline-first, graph da
+| 53 | [human-interval](./h/human-interval) | Human readable time measurements
 | 53 | [incremental-dom](./i/incremental-dom) | An in-place virtual DOM library
 | 53 | [ionic__core](./i/ionic__core) | Base components for Ionic
 | 53 | [iota_dot_lib_dot_js](./i/iota_dot_lib_dot_js) | Javascript Library for IOTA
@@ -3106,6 +3107,7 @@
 | 27 | [storybook__addon-storysho](./s/storybook__addon-storyshots) | StoryShots is a Jest Snapshot Testing Addon for St
 | 27 | [stream-json](./s/stream-json) | stream-json is the micro-library of Node.js stream
 | 27 | [tilebelt](./t/tilebelt) | simple tile utilities
+| 27 | [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC
 | 27 | [umd](./u/umd) | Universal Module Definition for use in automated b
 | 27 | [vega-lite](./v/vega-lite) | Vega-Lite is a concise high-level language for int
 | 27 | [vega-util](./v/vega-util) | JavaScript utilities for Vega.
@@ -3296,6 +3298,7 @@
 | 22 | [dbus](./d/dbus) | A D-Bus binding for Node
 | 22 | [dc](./d/dc) | A multi-dimensional charting library built to work
 | 22 | [enzyme-adapter-react-15](./e/enzyme-adapter-react-15) | JavaScript Testing utilities for React
+| 22 | [express-request-id](./e/express-request-id) | Generate UUID for request and add it to headers
 | 22 | [feathersjs__configuration](./f/feathersjs__configuration) | A small configuration module for your Feathers app
 | 22 | [first-run](./f/first-run) | Check if it's the first time the process is run
 | 22 | [global-dirs](./g/global-dirs) | Get the directory of globally installed packages a
@@ -3614,6 +3617,7 @@
 | 17 | [material__chips](./m/material__chips) | The Material Components for the Web chips componen
 | 17 | [mathjax](./m/mathjax) | Beautiful math in all browsers. MathJax is an open
 | 17 | [minimist-options](./m/minimist-options) | Pretty options for minimist
+| 17 | [moment-hijri](./m/moment-hijri) | A Hijri calendar (Based on Umm al-Qura calculation
 | 17 | [multireducer](./m/multireducer) | A utility to wrap many copies of a single Redux re
 | 17 | [node-waves](./n/node-waves) | Click effect insipired by Google Material Design
 | 17 | [npm-keyword](./n/npm-keyword) | Get a list of npm packages with a certain keyword
@@ -4198,6 +4202,7 @@
 | 10 | [virtual-keyboard](./v/virtual-keyboard) | Virtual Keyboard using jQuery UI
 | 10 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a
 | 10 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress.
+| 10 | [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests.
 | 10 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo
 | 9 | [a11y-dialog](./a/a11y-dialog) | A tiny script to make dialog windows accessible to
 | 9 | [amazon-cognito-auth-js](./a/amazon-cognito-auth-js) | Amazon Cognito Auth JavaScript SDK
@@ -4882,6 +4887,7 @@
 | 4 | [crypto-hash](./c/crypto-hash) | Tiny hashing module that uses the native crypto AP
 | 4 | [csv2json](./c/csv2json) | Stream and CLI to convert CSV to JSON
 | 4 | [cwise-parser](./c/cwise-parser) | Parser for cwise
+| 4 | [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io
 | 4 | [dav](./d/dav) | WebDAV, CalDAV, and CardDAV client for nodejs and 
 | 4 | [debounce-fn](./d/debounce-fn) | Debounce a function
 | 4 | [digibyte](./d/digibyte) | A pure and powerful JavaScript DigiByte library.
@@ -5696,6 +5702,7 @@
 | 1 | [express-ws-routes](./e/express-ws-routes) | Handle WebSocket connections using express routes.
 | 1 | [extjs](./e/extjs) | Run ExtJS4 data models on Node.js
 | 1 | [ez-plus](./e/ez-plus) | A jQuery image zoom plug-in, with tints, easing an
+| 1 | [facebook-locales](./f/facebook-locales) | Maps locales to Facebook locales
 | 1 | [featherlight](./f/featherlight) | Featherlight is a very lightweight jQuery lightbox
 | 1 | [feathersjs__primus](./f/feathersjs__primus) | The Feathers Primus real-time API provider
 | 1 | [feathersjs__primus-client](./f/feathersjs__primus-client) | Client services for Primus and feathers-primus
@@ -5846,6 +5853,7 @@
 | 1 | [lodash_dot_unzipwith](./l/lodash_dot_unzipwith) | The lodash method _.unzipWith exported as a module
 | 1 | [lodash_dot_xorby](./l/lodash_dot_xorby) | The lodash method _.xorBy exported as a module.
 | 1 | [lodash_dot_zipobjectdeep](./l/lodash_dot_zipobjectdeep) | The lodash method _.zipObjectDeep exported as a mo
+| 1 | [logrocket-react](./l/logrocket-react) | React library for 
 | 1 | [makeup-expander](./m/makeup-expander) | Creates the basic interactivity for an element tha
 | 1 | [makeup-floating-label](./m/makeup-floating-label) | Module for creating an accessible, progressively e
 | 1 | [makeup-prevent-scroll-key](./m/makeup-prevent-scroll-keys) | Prevents default scroll event when pressing down a
@@ -5910,6 +5918,7 @@
 | 1 | [raspi-serial](./r/raspi-serial) | Provides access to the serial port on the Raspberr
 | 1 | [raspi-soft-pwm](./r/raspi-soft-pwm) | Provides access to Soft PWM on the Raspberry Pi as
 | 1 | [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog.
+| 1 | [reach__tabs](./r/reach__tabs) | Accessible React Tabs Component
 | 1 | [react-alice-carousel](./r/react-alice-carousel) | React image gallery, react slideshow carousel, rea
 | 1 | [react-calendar-timeline](./r/react-calendar-timeline) | react calendar timeline
 | 1 | [react-close-on-escape](./r/react-close-on-escape) | close react component on press escape
@@ -6358,6 +6367,7 @@
 | 0 | [motion-scroll](./m/motion-scroll) | scroll to an element or a position with easing
 | 0 | [motor-hat](./m/motor-hat) | Node Module to control Adafruits MotorHAT for the 
 | 0 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
+| 0 | [muibox](./m/muibox) | Promise-based dialog boxes (alert, confirm, prompt
 | 0 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
 | 0 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (
 | 0 | [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket 
@@ -6393,6 +6403,7 @@
 | 0 | [on-wake-up](./o/on-wake-up) | Small module that calls a function when your compu
 | 0 | [onionoo](./o/onionoo) | Node.js client library for the Tor Onionoo API
 | 0 | [openapi-factory](./o/openapi-factory) | Build API's and serverless code using node and fir
+| 0 | [openapi-schemas](./o/openapi-schemas) | JSON Schemas for every version of the OpenAPI Spec
 | 0 | [oracle__oraclejet](./o/oracle__oraclejet) | Oracle JavaScript Extension Toolkit (JET) empowers
 | 0 | [overwatch-api](./o/overwatch-api) | An Unoffical Overwatch API.
 | 0 | [owlcarousel](./o/owlcarousel) | Owl Carousel. Touch enabled jQuery plugin that let
@@ -6545,6 +6556,7 @@
 | 0 | [shorten-repo-url](./s/shorten-repo-url) | Shorten GitHub URLs like GitHub shortens Issues an
 | 0 | [siesta](./s/siesta) | prototype RESTful services quickly
 | 0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
+| 0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0 | [simple-lru](./s/simple-lru) | minimal Least Recently Used Cache
 | 0 | [simple-url-cache](./s/simple-url-cache) | A simple cache engine used to store html document 
 | 0 | [sipml](./s/sipml) | NPM package for SIPml.js

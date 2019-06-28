@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait EndpointUser extends js.Object {
   /**
-    * Custom attributes that describe the user by associating a name with an array of values. For example, an attribute named "interests" might have the following values: ["science", "politics", "travel"]. You can use these attributes as selection criteria when you create segments.
-  The Amazon Pinpoint console can't display attribute names that include the following characters: hash/pound sign (#), colon (:), question mark (?), backslash (\), and forward slash (/). For this reason, you should avoid using these characters in the names of custom attributes.
+    * One or more custom attributes that describe the user by associating a name with an array of values. For example, the value of an attribute named Interests might be: ["science", "music", "travel"]. You can use these attributes as filter criteria when you create segments. When you define the name of a custom attribute, avoid using the following characters: number sign (#), colon (:), question mark (?), backslash (\), and slash (/). The Amazon Pinpoint console can't display attribute names that contain these characters. This limitation doesn't apply to attribute values.
     */
   var UserAttributes: js.UndefOr[MapOfListOf__string] = js.undefined
   /**
-    * The unique ID of the user.
+    * The unique identifier for the user.
     */
   var UserId: js.UndefOr[__string] = js.undefined
 }

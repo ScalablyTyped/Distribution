@@ -7,21 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait MetricDimension extends js.Object {
   /**
-    * The operator that you're using to compare metric values. Possible values: GREATER_THAN, LESS_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN_OR_EQUAL, or EQUAL
+    * The operator to use when comparing metric values. Valid values are: GREATER_THAN, LESS_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN_OR_EQUAL, and EQUAL.
     */
-  var ComparisonOperator: js.UndefOr[__string] = js.undefined
+  var ComparisonOperator: __string
   /**
-    * The value to be compared.
+    * The value to compare.
     */
-  var Value: js.UndefOr[__double] = js.undefined
+  var Value: __double
 }
 
 object MetricDimension {
   @scala.inline
-  def apply(ComparisonOperator: __string = null, Value: js.UndefOr[__double] = js.undefined): MetricDimension = {
-    val __obj = js.Dynamic.literal()
-    if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator)
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value)
+  def apply(ComparisonOperator: __string, Value: __double): MetricDimension = {
+    val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator, Value = Value)
+  
     __obj.asInstanceOf[MetricDimension]
   }
 }

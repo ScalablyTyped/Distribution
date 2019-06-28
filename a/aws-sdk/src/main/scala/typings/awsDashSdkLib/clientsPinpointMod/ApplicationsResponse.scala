@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ApplicationsResponse extends js.Object {
   /**
-    * List of applications returned in this page.
+    * An array of responses, one for each application that was returned.
     */
   var Item: js.UndefOr[ListOfApplicationResponse] = js.undefined
   /**
-    * The string that you use in a subsequent request to get the next page of results in a paginated response.
+    * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null if there are no additional pages.
     */
   var NextToken: js.UndefOr[__string] = js.undefined
 }

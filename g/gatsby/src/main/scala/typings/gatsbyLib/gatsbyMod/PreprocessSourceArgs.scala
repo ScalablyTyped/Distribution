@@ -15,7 +15,7 @@ object PreprocessSourceArgs {
   def apply(
     actions: Actions,
     boundActionCreators: Actions,
-    cache: Cache,
+    cache: gatsbyLib.Anon_Del,
     contents: java.lang.String,
     createContentDigest: js.Function,
     createNodeId: js.Function,

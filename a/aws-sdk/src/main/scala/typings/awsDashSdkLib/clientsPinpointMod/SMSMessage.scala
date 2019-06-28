@@ -15,19 +15,19 @@ trait SMSMessage extends js.Object {
     */
   var Keyword: js.UndefOr[__string] = js.undefined
   /**
-    * Is this a transaction priority message or lower priority.
+    * The SMS message type. Valid values are: TRANSACTIONAL, the message is critical or time-sensitive, such as a one-time password that supports a customer transaction; and, PROMOTIONAL, the message is not critical or time-sensitive, such as a marketing message.
     */
   var MessageType: js.UndefOr[MessageType] = js.undefined
   /**
-    * The phone number that the SMS message originates from. Specify one of the dedicated long codes or short codes that you requested from AWS Support and that is assigned to your account. If this attribute is not specified, Amazon Pinpoint randomly assigns a long code.
+    * The number that the SMS message originates from. This should be one of the dedicated long codes or short codes that you requested from AWS Support and is assigned to your AWS account. If you don't specify a long or short code, Amazon Pinpoint assigns a random long code to the SMS message.
     */
   var OriginationNumber: js.UndefOr[__string] = js.undefined
   /**
-    * The sender ID that is shown as the message sender on the recipient's device. Support for sender IDs varies by country or region.
+    * The sender ID to display as the sender of the message on a recipient's device. Support for sender IDs varies by country or region.
     */
   var SenderId: js.UndefOr[__string] = js.undefined
   /**
-    * Default message substitutions. Can be overridden by individual address substitutions.
+    * The message variables to use in the SMS message. You can override the default variables with individual address variables.
     */
   var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
 }

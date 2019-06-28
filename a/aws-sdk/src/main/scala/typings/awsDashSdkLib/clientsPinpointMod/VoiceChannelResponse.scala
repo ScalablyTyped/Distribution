@@ -7,40 +7,43 @@ import scala.scalajs.js.annotation._
 
 trait VoiceChannelResponse extends js.Object {
   /**
-    * Application id
+    * The unique identifier for the application that the voice channel applies to.
     */
   var ApplicationId: js.UndefOr[__string] = js.undefined
   /**
-    * The date that the settings were last updated in ISO 8601 format.
+    * The date and time, in ISO 8601 format, when the voice channel was enabled.
     */
   var CreationDate: js.UndefOr[__string] = js.undefined
   /**
-    * If the channel is enabled for sending messages.
+    * Specifies whether the voice channel is enabled for the application.
     */
   var Enabled: js.UndefOr[__boolean] = js.undefined
+  /**
+    * (Not used) This property is retained only for backward compatibility.
+    */
   var HasCredential: js.UndefOr[__boolean] = js.undefined
   /**
-    * Channel ID. Not used, only for backwards compatibility.
+    * (Deprecated) An identifier for the voice channel. This property is retained only for backward compatibility.
     */
   var Id: js.UndefOr[__string] = js.undefined
   /**
-    * Is this channel archived
+    * Specifies whether the voice channel is archived.
     */
   var IsArchived: js.UndefOr[__boolean] = js.undefined
   /**
-    * Who made the last change
+    * The user who last modified the voice channel.
     */
   var LastModifiedBy: js.UndefOr[__string] = js.undefined
   /**
-    * Last date this was updated
+    * The date and time, in ISO 8601 format, when the voice channel was last modified.
     */
   var LastModifiedDate: js.UndefOr[__string] = js.undefined
   /**
-    * Platform type. Will be "Voice"
+    * The type of messaging or notification platform for the channel. For the voice channel, this value is VOICE.
     */
-  var Platform: js.UndefOr[__string] = js.undefined
+  var Platform: __string
   /**
-    * Version of channel
+    * The current version of the voice channel.
     */
   var Version: js.UndefOr[__integer] = js.undefined
 }
@@ -48,6 +51,7 @@ trait VoiceChannelResponse extends js.Object {
 object VoiceChannelResponse {
   @scala.inline
   def apply(
+    Platform: __string,
     ApplicationId: __string = null,
     CreationDate: __string = null,
     Enabled: js.UndefOr[__boolean] = js.undefined,
@@ -56,10 +60,9 @@ object VoiceChannelResponse {
     IsArchived: js.UndefOr[__boolean] = js.undefined,
     LastModifiedBy: __string = null,
     LastModifiedDate: __string = null,
-    Platform: __string = null,
     Version: js.UndefOr[__integer] = js.undefined
   ): VoiceChannelResponse = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(Platform = Platform)
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
     if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
@@ -68,7 +71,6 @@ object VoiceChannelResponse {
     if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived)
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform)
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[VoiceChannelResponse]
   }

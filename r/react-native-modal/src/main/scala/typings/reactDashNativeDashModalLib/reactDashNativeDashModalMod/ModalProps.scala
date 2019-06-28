@@ -17,6 +17,7 @@ trait ModalProps extends js.Object {
   var backdropTransitionOutTiming: js.UndefOr[scala.Double] = js.undefined
   var children: reactLib.reactMod.ReactNode
   var coverScreen: js.UndefOr[scala.Boolean] = js.undefined
+  var customBackdrop: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var deviceHeight: js.UndefOr[scala.Double] = js.undefined
   var deviceWidth: js.UndefOr[scala.Double] = js.undefined
   var hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined
@@ -73,6 +74,7 @@ object ModalProps {
     backdropTransitionInTiming: scala.Int | scala.Double = null,
     backdropTransitionOutTiming: scala.Int | scala.Double = null,
     coverScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    customBackdrop: reactLib.reactMod.ReactNode = null,
     deviceHeight: scala.Int | scala.Double = null,
     deviceWidth: scala.Int | scala.Double = null,
     hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined,
@@ -114,6 +116,7 @@ object ModalProps {
     if (backdropTransitionInTiming != null) __obj.updateDynamic("backdropTransitionInTiming")(backdropTransitionInTiming.asInstanceOf[js.Any])
     if (backdropTransitionOutTiming != null) __obj.updateDynamic("backdropTransitionOutTiming")(backdropTransitionOutTiming.asInstanceOf[js.Any])
     if (!js.isUndefined(coverScreen)) __obj.updateDynamic("coverScreen")(coverScreen)
+    if (customBackdrop != null) __obj.updateDynamic("customBackdrop")(customBackdrop.asInstanceOf[js.Any])
     if (deviceHeight != null) __obj.updateDynamic("deviceHeight")(deviceHeight.asInstanceOf[js.Any])
     if (deviceWidth != null) __obj.updateDynamic("deviceWidth")(deviceWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)

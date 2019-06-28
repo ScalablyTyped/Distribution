@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-mount
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Mounting middleware for koa
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for koa-mount 3.0
+// Type definitions for koa-mount 4.0
 // Project: https://github.com/koajs/mount
 // Definitions by: AmirSaber Sharifi <https://github.com/amirsaber>
 //                 Tomek Łaziuk <https://github.com/tlaziuk>
+//                 Vladislav Polyakov <https://github.com/polrk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

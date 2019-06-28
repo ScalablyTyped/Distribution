@@ -11,6 +11,12 @@ trait LayerVersionState extends js.Object {
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
+    */
+  val code: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive]
+  ] = js.undefined
+  /**
     * A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
     */
   val compatibleRuntimes: js.UndefOr[
@@ -24,10 +30,6 @@ trait LayerVersionState extends js.Object {
     * Description of what your Lambda Layer does.
     */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
-    */
-  val filename: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the Lambda Layer without version.
     */
@@ -70,10 +72,10 @@ object LayerVersionState {
   @scala.inline
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    code: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive] = null,
     compatibleRuntimes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    filename: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     layerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     layerName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     licenseInfo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -86,10 +88,10 @@ object LayerVersionState {
   ): LayerVersionState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (compatibleRuntimes != null) __obj.updateDynamic("compatibleRuntimes")(compatibleRuntimes.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (layerArn != null) __obj.updateDynamic("layerArn")(layerArn.asInstanceOf[js.Any])
     if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
     if (licenseInfo != null) __obj.updateDynamic("licenseInfo")(licenseInfo.asInstanceOf[js.Any])

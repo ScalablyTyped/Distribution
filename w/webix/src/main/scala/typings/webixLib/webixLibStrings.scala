@@ -11,6 +11,7 @@ object webixLibStrings {
     extends webixLib.webixMod.DataCollectionEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -95,6 +96,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.treetableEventName
   
   @js.native
+  sealed trait onAfterConditionSet
+    extends webixLib.webixMod.uiNs.spreadsheetEventName
+  
+  @js.native
   sealed trait onAfterContextMenu
     extends webixLib.webixMod.uiNs.accordionitemEventName
        with webixLib.webixMod.uiNs.calendarEventName
@@ -110,13 +115,16 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.pagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.rangechartEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.sidebarEventName
        with webixLib.webixMod.uiNs.submenuEventName
        with webixLib.webixMod.uiNs.treeEventName
        with webixLib.webixMod.uiNs.treemapEventName
        with webixLib.webixMod.uiNs.treetableEventName
        with webixLib.webixMod.uiNs.unitlistEventName
+  
+  @js.native
+  sealed trait onAfterCopy
+    extends webixLib.webixMod.uiNs.kanbanEventName
   
   @js.native
   sealed trait onAfterCreateFolder
@@ -137,6 +145,7 @@ object webixLibStrings {
     extends webixLib.webixMod.DataCollectionEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -167,25 +176,11 @@ object webixLibStrings {
   @js.native
   sealed trait onAfterDrop
     extends webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.dashboardEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.filemanagerEventName
-       with webixLib.webixMod.uiNs.grouplistEventName
-       with webixLib.webixMod.uiNs.listEventName
-       with webixLib.webixMod.uiNs.menuEventName
-       with webixLib.webixMod.uiNs.sidebarEventName
-       with webixLib.webixMod.uiNs.submenuEventName
-       with webixLib.webixMod.uiNs.treeEventName
-       with webixLib.webixMod.uiNs.treetableEventName
-       with webixLib.webixMod.uiNs.unitlistEventName
-  
-  @js.native
-  sealed trait onAfterDropOrder
-    extends webixLib.webixMod.uiNs.contextmenuEventName
-       with webixLib.webixMod.uiNs.datatableEventName
-       with webixLib.webixMod.uiNs.dataviewEventName
-       with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.grouplistEventName
        with webixLib.webixMod.uiNs.listEventName
        with webixLib.webixMod.uiNs.menuEventName
@@ -205,7 +200,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onAfterEditStart
-    extends webixLib.webixMod.uiNs.datatableEventName
+    extends webixLib.webixMod.uiNs.commentsEventName
+       with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.treetableEventName
@@ -217,6 +213,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.filemanagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.treetableEventName
+  
+  @js.native
+  sealed trait onAfterEditorShow
+    extends webixLib.webixMod.uiNs.kanbanEventName
   
   @js.native
   sealed trait onAfterExpand
@@ -253,8 +253,10 @@ object webixLibStrings {
   @js.native
   sealed trait onAfterLoad
     extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.DataRecordEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -336,6 +338,10 @@ object webixLibStrings {
     extends webixLib.webixMod.uiNs.rangechartEventName
   
   @js.native
+  sealed trait onAfterRangeSet
+    extends webixLib.webixMod.uiNs.spreadsheetEventName
+  
+  @js.native
   sealed trait onAfterRender
     extends webixLib.webixMod.uiNs.buttonEventName
        with webixLib.webixMod.uiNs.calendarEventName
@@ -394,6 +400,7 @@ object webixLibStrings {
   @js.native
   sealed trait onAfterScroll
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -440,10 +447,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -531,6 +538,14 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.unitlistEventName
   
   @js.native
+  sealed trait onAfterSpan
+    extends webixLib.webixMod.uiNs.spreadsheetEventName
+  
+  @js.native
+  sealed trait onAfterSplit
+    extends webixLib.webixMod.uiNs.spreadsheetEventName
+  
+  @js.native
   sealed trait onAfterStart
     extends webixLib.webixMod.uiNs.hintEventName
   
@@ -563,10 +578,6 @@ object webixLibStrings {
     extends webixLib.webixMod.uiNs.calendarEventName
   
   @js.native
-  sealed trait onApply
-    extends webixLib.webixMod.uiNs.pivotEventName
-  
-  @js.native
   sealed trait onAreaDrag
     extends webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
@@ -581,6 +592,7 @@ object webixLibStrings {
     extends webixLib.webixMod.DataCollectionEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -674,6 +686,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.treetableEventName
   
   @js.native
+  sealed trait onBeforeCommentShow
+    extends webixLib.webixMod.uiNs.spreadsheetEventName
+  
+  @js.native
   sealed trait onBeforeContextMenu
     extends webixLib.webixMod.uiNs.accordionitemEventName
        with webixLib.webixMod.uiNs.calendarEventName
@@ -689,13 +705,16 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.pagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.rangechartEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.sidebarEventName
        with webixLib.webixMod.uiNs.submenuEventName
        with webixLib.webixMod.uiNs.treeEventName
        with webixLib.webixMod.uiNs.treemapEventName
        with webixLib.webixMod.uiNs.treetableEventName
        with webixLib.webixMod.uiNs.unitlistEventName
+  
+  @js.native
+  sealed trait onBeforeCopy
+    extends webixLib.webixMod.uiNs.kanbanEventName
   
   @js.native
   sealed trait onBeforeCreateFolder
@@ -716,6 +735,7 @@ object webixLibStrings {
     extends webixLib.webixMod.DataCollectionEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -746,6 +766,7 @@ object webixLibStrings {
   @js.native
   sealed trait onBeforeDrag
     extends webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.dashboardEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
@@ -762,6 +783,7 @@ object webixLibStrings {
   @js.native
   sealed trait onBeforeDragIn
     extends webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.dashboardEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
@@ -778,25 +800,11 @@ object webixLibStrings {
   @js.native
   sealed trait onBeforeDrop
     extends webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.dashboardEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.filemanagerEventName
-       with webixLib.webixMod.uiNs.grouplistEventName
-       with webixLib.webixMod.uiNs.listEventName
-       with webixLib.webixMod.uiNs.menuEventName
-       with webixLib.webixMod.uiNs.sidebarEventName
-       with webixLib.webixMod.uiNs.submenuEventName
-       with webixLib.webixMod.uiNs.treeEventName
-       with webixLib.webixMod.uiNs.treetableEventName
-       with webixLib.webixMod.uiNs.unitlistEventName
-  
-  @js.native
-  sealed trait onBeforeDropOrder
-    extends webixLib.webixMod.uiNs.contextmenuEventName
-       with webixLib.webixMod.uiNs.datatableEventName
-       with webixLib.webixMod.uiNs.dataviewEventName
-       with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.grouplistEventName
        with webixLib.webixMod.uiNs.listEventName
        with webixLib.webixMod.uiNs.menuEventName
@@ -835,7 +843,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBeforeEditStart
-    extends webixLib.webixMod.uiNs.datatableEventName
+    extends webixLib.webixMod.uiNs.commentsEventName
+       with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.treetableEventName
@@ -847,6 +856,14 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.filemanagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.treetableEventName
+  
+  @js.native
+  sealed trait onBeforeEditorAction
+    extends webixLib.webixMod.uiNs.kanbanEventName
+  
+  @js.native
+  sealed trait onBeforeEditorShow
+    extends webixLib.webixMod.uiNs.kanbanEventName
   
   @js.native
   sealed trait onBeforeFileAdd
@@ -877,8 +894,10 @@ object webixLibStrings {
   @js.native
   sealed trait onBeforeLoad
     extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.DataRecordEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -922,6 +941,10 @@ object webixLibStrings {
   @js.native
   sealed trait onBeforeMenu
     extends webixLib.webixMod.uiNs.filemanagerEventName
+  
+  @js.native
+  sealed trait onBeforeMenuAction
+    extends webixLib.webixMod.uiNs.commentsEventName
   
   @js.native
   sealed trait onBeforeModeChange
@@ -1139,10 +1162,13 @@ object webixLibStrings {
   @js.native
   sealed trait onBindRequest
     extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.DataRecordEventName
+       with webixLib.webixMod.DataValueEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.abslayoutEventName
        with webixLib.webixMod.uiNs.accordionEventName
        with webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.baselayoutEventName
        with webixLib.webixMod.uiNs.baseviewEventName
@@ -1156,6 +1182,7 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.colorboardEventName
        with webixLib.webixMod.uiNs.colorpickerEventName
        with webixLib.webixMod.uiNs.comboEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.counterEventName
@@ -1204,11 +1231,11 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.portletEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.querybuilderEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.richtextEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
@@ -1248,6 +1275,7 @@ object webixLibStrings {
   @js.native
   sealed trait onBlur
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -1293,10 +1321,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -1334,7 +1362,9 @@ object webixLibStrings {
   
   @js.native
   sealed trait onChange
-    extends webixLib.webixMod.uiNs.buttonEventName
+    extends webixLib.webixMod.DataRecordEventName
+       with webixLib.webixMod.DataValueEventName
+       with webixLib.webixMod.uiNs.buttonEventName
        with webixLib.webixMod.uiNs.calendarEventName
        with webixLib.webixMod.uiNs.checkboxEventName
        with webixLib.webixMod.uiNs.colorpickerEventName
@@ -1361,6 +1391,7 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.segmentedEventName
        with webixLib.webixMod.uiNs.selectEventName
        with webixLib.webixMod.uiNs.sliderEventName
+       with webixLib.webixMod.uiNs.spreadsheetEventName
        with webixLib.webixMod.uiNs.switchButtonEventName
        with webixLib.webixMod.uiNs.tabbarEventName
        with webixLib.webixMod.uiNs.textEventName
@@ -1382,10 +1413,19 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.treetableEventName
   
   @js.native
+  sealed trait onColumnGroupCollapse
+    extends webixLib.webixMod.uiNs.datatableEventName
+       with webixLib.webixMod.uiNs.treetableEventName
+  
+  @js.native
   sealed trait onColumnResize
     extends webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
        with webixLib.webixMod.uiNs.treetableEventName
+  
+  @js.native
+  sealed trait onCommentHide
+    extends webixLib.webixMod.uiNs.spreadsheetEventName
   
   @js.native
   sealed trait onComponentInit
@@ -1476,6 +1516,7 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.abslayoutEventName
        with webixLib.webixMod.uiNs.accordionEventName
        with webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.baselayoutEventName
        with webixLib.webixMod.uiNs.baseviewEventName
@@ -1489,6 +1530,7 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.colorboardEventName
        with webixLib.webixMod.uiNs.colorpickerEventName
        with webixLib.webixMod.uiNs.comboEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.counterEventName
@@ -1537,11 +1579,11 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.portletEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.querybuilderEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.richtextEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
@@ -1580,6 +1622,7 @@ object webixLibStrings {
   @js.native
   sealed trait onDragOut
     extends webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.dashboardEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName
        with webixLib.webixMod.uiNs.excelviewerEventName
@@ -1609,6 +1652,7 @@ object webixLibStrings {
   @js.native
   sealed trait onEnter
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -1654,10 +1698,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -1708,6 +1752,7 @@ object webixLibStrings {
   @js.native
   sealed trait onFocus
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -1753,10 +1798,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -1865,7 +1910,6 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.searchEventName
        with webixLib.webixMod.uiNs.segmentedEventName
@@ -1900,7 +1944,6 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.pagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.rangechartEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.sidebarEventName
        with webixLib.webixMod.uiNs.submenuEventName
        with webixLib.webixMod.uiNs.treeEventName
@@ -1934,6 +1977,7 @@ object webixLibStrings {
   @js.native
   sealed trait onKeyPress
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -1979,10 +2023,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2013,6 +2057,11 @@ object webixLibStrings {
   @js.native
   sealed trait onKeySelect
     extends webixLib.webixMod.uiNs.querybuilderEventName
+  
+  @js.native
+  sealed trait onLegendClick
+    extends webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.rangechartEventName
   
   @js.native
   sealed trait onListAfterContextMenu
@@ -2068,8 +2117,10 @@ object webixLibStrings {
   @js.native
   sealed trait onLoadError
     extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.DataRecordEventName
        with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.commentsEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
        with webixLib.webixMod.uiNs.datatableEventName
@@ -2104,6 +2155,7 @@ object webixLibStrings {
   @js.native
   sealed trait onLongTouch
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2149,10 +2201,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2237,7 +2289,6 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.pagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.rangechartEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.sidebarEventName
        with webixLib.webixMod.uiNs.submenuEventName
        with webixLib.webixMod.uiNs.treeEventName
@@ -2261,7 +2312,6 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.pagerEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.rangechartEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.sidebarEventName
        with webixLib.webixMod.uiNs.submenuEventName
        with webixLib.webixMod.uiNs.treeEventName
@@ -2492,6 +2542,7 @@ object webixLibStrings {
   @js.native
   sealed trait onSwipeX
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2537,10 +2588,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2571,6 +2622,7 @@ object webixLibStrings {
   @js.native
   sealed trait onSwipeY
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2616,10 +2668,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2648,8 +2700,33 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.windowEventName
   
   @js.native
+  sealed trait onTabFocus
+    extends webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.datatableEventName
+       with webixLib.webixMod.uiNs.dataviewEventName
+       with webixLib.webixMod.uiNs.excelviewerEventName
+       with webixLib.webixMod.uiNs.geochartEventName
+       with webixLib.webixMod.uiNs.googleMapEventName
+       with webixLib.webixMod.uiNs.grouplistEventName
+       with webixLib.webixMod.uiNs.listEventName
+       with webixLib.webixMod.uiNs.menuEventName
+       with webixLib.webixMod.uiNs.organogramEventName
+       with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.rangechartEventName
+       with webixLib.webixMod.uiNs.sidebarEventName
+       with webixLib.webixMod.uiNs.sidemenuEventName
+       with webixLib.webixMod.uiNs.submenuEventName
+       with webixLib.webixMod.uiNs.treeEventName
+       with webixLib.webixMod.uiNs.treemapEventName
+       with webixLib.webixMod.uiNs.treetableEventName
+       with webixLib.webixMod.uiNs.unitlistEventName
+       with webixLib.webixMod.uiNs.viewEventName
+  
+  @js.native
   sealed trait onTimedKeyPress
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2695,10 +2772,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2734,6 +2811,7 @@ object webixLibStrings {
   @js.native
   sealed trait onTouchEnd
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2779,10 +2857,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2813,6 +2891,7 @@ object webixLibStrings {
   @js.native
   sealed trait onTouchMove
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2858,10 +2937,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2892,6 +2971,7 @@ object webixLibStrings {
   @js.native
   sealed trait onTouchStart
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -2937,10 +3017,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -2971,6 +3051,10 @@ object webixLibStrings {
   @js.native
   sealed trait onUploadComplete
     extends webixLib.webixMod.uiNs.uploaderEventName
+  
+  @js.native
+  sealed trait onUserMentioned
+    extends webixLib.webixMod.uiNs.commentsEventName
   
   @js.native
   sealed trait onValidationError
@@ -3037,6 +3121,7 @@ object webixLibStrings {
   sealed trait onViewInit
     extends webixLib.webixMod.uiNs.filemanagerEventName
        with webixLib.webixMod.uiNs.pivotEventName
+       with webixLib.webixMod.uiNs.spreadsheetEventName
   
   @js.native
   sealed trait onViewMove
@@ -3071,6 +3156,7 @@ object webixLibStrings {
   @js.native
   sealed trait onViewResize
     extends webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
        with webixLib.webixMod.uiNs.barcodeEventName
        with webixLib.webixMod.uiNs.bulletEventName
        with webixLib.webixMod.uiNs.buttonEventName
@@ -3117,10 +3203,10 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.popupEventName
        with webixLib.webixMod.uiNs.propertyEventName
        with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
        with webixLib.webixMod.uiNs.radioEventName
        with webixLib.webixMod.uiNs.rangechartEventName
        with webixLib.webixMod.uiNs.rangesliderEventName
-       with webixLib.webixMod.uiNs.resizerEventName
        with webixLib.webixMod.uiNs.richselectEventName
        with webixLib.webixMod.uiNs.scrollviewEventName
        with webixLib.webixMod.uiNs.searchEventName
@@ -3138,6 +3224,110 @@ object webixLibStrings {
        with webixLib.webixMod.uiNs.textEventName
        with webixLib.webixMod.uiNs.textareaEventName
        with webixLib.webixMod.uiNs.toggleEventName
+       with webixLib.webixMod.uiNs.tooltipEventName
+       with webixLib.webixMod.uiNs.treeEventName
+       with webixLib.webixMod.uiNs.treemapEventName
+       with webixLib.webixMod.uiNs.treetableEventName
+       with webixLib.webixMod.uiNs.unitlistEventName
+       with webixLib.webixMod.uiNs.uploaderEventName
+       with webixLib.webixMod.uiNs.videoEventName
+       with webixLib.webixMod.uiNs.viewEventName
+       with webixLib.webixMod.uiNs.windowEventName
+  
+  @js.native
+  sealed trait onViewShow
+    extends webixLib.webixMod.uiNs.abslayoutEventName
+       with webixLib.webixMod.uiNs.accordionEventName
+       with webixLib.webixMod.uiNs.accordionitemEventName
+       with webixLib.webixMod.uiNs.alignEventName
+       with webixLib.webixMod.uiNs.barcodeEventName
+       with webixLib.webixMod.uiNs.baselayoutEventName
+       with webixLib.webixMod.uiNs.baseviewEventName
+       with webixLib.webixMod.uiNs.bulletEventName
+       with webixLib.webixMod.uiNs.buttonEventName
+       with webixLib.webixMod.uiNs.calendarEventName
+       with webixLib.webixMod.uiNs.carouselEventName
+       with webixLib.webixMod.uiNs.chartEventName
+       with webixLib.webixMod.uiNs.checkboxEventName
+       with webixLib.webixMod.uiNs.checksuggestEventName
+       with webixLib.webixMod.uiNs.colorboardEventName
+       with webixLib.webixMod.uiNs.colorpickerEventName
+       with webixLib.webixMod.uiNs.comboEventName
+       with webixLib.webixMod.uiNs.commentsEventName
+       with webixLib.webixMod.uiNs.contextEventName
+       with webixLib.webixMod.uiNs.contextmenuEventName
+       with webixLib.webixMod.uiNs.counterEventName
+       with webixLib.webixMod.uiNs.dashboardEventName
+       with webixLib.webixMod.uiNs.datalayoutEventName
+       with webixLib.webixMod.uiNs.datasuggestEventName
+       with webixLib.webixMod.uiNs.datatableEventName
+       with webixLib.webixMod.uiNs.dataviewEventName
+       with webixLib.webixMod.uiNs.datepickerEventName
+       with webixLib.webixMod.uiNs.daterangeEventName
+       with webixLib.webixMod.uiNs.daterangepickerEventName
+       with webixLib.webixMod.uiNs.daterangesuggestEventName
+       with webixLib.webixMod.uiNs.dbllistEventName
+       with webixLib.webixMod.uiNs.excelviewerEventName
+       with webixLib.webixMod.uiNs.fieldsetEventName
+       with webixLib.webixMod.uiNs.filemanagerEventName
+       with webixLib.webixMod.uiNs.formEventName
+       with webixLib.webixMod.uiNs.forminputEventName
+       with webixLib.webixMod.uiNs.gageEventName
+       with webixLib.webixMod.uiNs.geochartEventName
+       with webixLib.webixMod.uiNs.googleMapEventName
+       with webixLib.webixMod.uiNs.gridlayoutEventName
+       with webixLib.webixMod.uiNs.gridsuggestEventName
+       with webixLib.webixMod.uiNs.grouplistEventName
+       with webixLib.webixMod.uiNs.headerlayoutEventName
+       with webixLib.webixMod.uiNs.hintEventName
+       with webixLib.webixMod.uiNs.htmlformEventName
+       with webixLib.webixMod.uiNs.iconEventName
+       with webixLib.webixMod.uiNs.iframeEventName
+       with webixLib.webixMod.uiNs.kanbanEventName
+       with webixLib.webixMod.uiNs.labelEventName
+       with webixLib.webixMod.uiNs.layoutEventName
+       with webixLib.webixMod.uiNs.listEventName
+       with webixLib.webixMod.uiNs.menuEventName
+       with webixLib.webixMod.uiNs.multicomboEventName
+       with webixLib.webixMod.uiNs.multiselectEventName
+       with webixLib.webixMod.uiNs.multisuggestEventName
+       with webixLib.webixMod.uiNs.multitextEventName
+       with webixLib.webixMod.uiNs.multiviewEventName
+       with webixLib.webixMod.uiNs.organogramEventName
+       with webixLib.webixMod.uiNs.pagerEventName
+       with webixLib.webixMod.uiNs.panelEventName
+       with webixLib.webixMod.uiNs.pdfviewerEventName
+       with webixLib.webixMod.uiNs.pivotEventName
+       with webixLib.webixMod.uiNs.popupEventName
+       with webixLib.webixMod.uiNs.portletEventName
+       with webixLib.webixMod.uiNs.propertyEventName
+       with webixLib.webixMod.uiNs.protoEventName
+       with webixLib.webixMod.uiNs.proxyEventName
+       with webixLib.webixMod.uiNs.querybuilderEventName
+       with webixLib.webixMod.uiNs.radioEventName
+       with webixLib.webixMod.uiNs.rangechartEventName
+       with webixLib.webixMod.uiNs.rangesliderEventName
+       with webixLib.webixMod.uiNs.richselectEventName
+       with webixLib.webixMod.uiNs.richtextEventName
+       with webixLib.webixMod.uiNs.scrollviewEventName
+       with webixLib.webixMod.uiNs.searchEventName
+       with webixLib.webixMod.uiNs.segmentedEventName
+       with webixLib.webixMod.uiNs.selectEventName
+       with webixLib.webixMod.uiNs.sidebarEventName
+       with webixLib.webixMod.uiNs.sidemenuEventName
+       with webixLib.webixMod.uiNs.sliderEventName
+       with webixLib.webixMod.uiNs.spacerEventName
+       with webixLib.webixMod.uiNs.spreadsheetEventName
+       with webixLib.webixMod.uiNs.submenuEventName
+       with webixLib.webixMod.uiNs.suggestEventName
+       with webixLib.webixMod.uiNs.switchButtonEventName
+       with webixLib.webixMod.uiNs.tabbarEventName
+       with webixLib.webixMod.uiNs.tabviewEventName
+       with webixLib.webixMod.uiNs.templateEventName
+       with webixLib.webixMod.uiNs.textEventName
+       with webixLib.webixMod.uiNs.textareaEventName
+       with webixLib.webixMod.uiNs.toggleEventName
+       with webixLib.webixMod.uiNs.toolbarEventName
        with webixLib.webixMod.uiNs.tooltipEventName
        with webixLib.webixMod.uiNs.treeEventName
        with webixLib.webixMod.uiNs.treemapEventName
@@ -3179,7 +3369,11 @@ object webixLibStrings {
   @scala.inline
   def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
   @scala.inline
+  def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
+  @scala.inline
   def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
+  @scala.inline
+  def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
   @scala.inline
   def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
   @scala.inline
@@ -3193,8 +3387,6 @@ object webixLibStrings {
   @scala.inline
   def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
   @scala.inline
-  def onAfterDropOrder: onAfterDropOrder = "onAfterDropOrder".asInstanceOf[onAfterDropOrder]
-  @scala.inline
   def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
   @scala.inline
   def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
@@ -3202,6 +3394,8 @@ object webixLibStrings {
   def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
   @scala.inline
   def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
+  @scala.inline
+  def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
   @scala.inline
   def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
   @scala.inline
@@ -3241,6 +3435,8 @@ object webixLibStrings {
   @scala.inline
   def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
   @scala.inline
+  def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
+  @scala.inline
   def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
   @scala.inline
   def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
@@ -3257,6 +3453,10 @@ object webixLibStrings {
   @scala.inline
   def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
   @scala.inline
+  def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
+  @scala.inline
+  def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
+  @scala.inline
   def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
   @scala.inline
   def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
@@ -3270,8 +3470,6 @@ object webixLibStrings {
   def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
   @scala.inline
   def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
-  @scala.inline
-  def onApply: onApply = "onApply".asInstanceOf[onApply]
   @scala.inline
   def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
   @scala.inline
@@ -3303,7 +3501,11 @@ object webixLibStrings {
   @scala.inline
   def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
   @scala.inline
+  def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
+  @scala.inline
   def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
+  @scala.inline
+  def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
   @scala.inline
   def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
   @scala.inline
@@ -3321,8 +3523,6 @@ object webixLibStrings {
   @scala.inline
   def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
   @scala.inline
-  def onBeforeDropOrder: onBeforeDropOrder = "onBeforeDropOrder".asInstanceOf[onBeforeDropOrder]
-  @scala.inline
   def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
   @scala.inline
   def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
@@ -3334,6 +3534,10 @@ object webixLibStrings {
   def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
   @scala.inline
   def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
+  @scala.inline
+  def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
+  @scala.inline
+  def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
   @scala.inline
   def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
   @scala.inline
@@ -3354,6 +3558,8 @@ object webixLibStrings {
   def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
   @scala.inline
   def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
+  @scala.inline
+  def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
   @scala.inline
   def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
   @scala.inline
@@ -3425,7 +3631,11 @@ object webixLibStrings {
   @scala.inline
   def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
   @scala.inline
+  def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
+  @scala.inline
   def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
+  @scala.inline
+  def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
   @scala.inline
   def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
   @scala.inline
@@ -3498,6 +3708,8 @@ object webixLibStrings {
   def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
   @scala.inline
   def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
+  @scala.inline
+  def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
   @scala.inline
   def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
   @scala.inline
@@ -3625,6 +3837,8 @@ object webixLibStrings {
   @scala.inline
   def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
   @scala.inline
+  def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
+  @scala.inline
   def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
   @scala.inline
   def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
@@ -3636,6 +3850,8 @@ object webixLibStrings {
   def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
   @scala.inline
   def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
+  @scala.inline
+  def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
   @scala.inline
   def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
   @scala.inline
@@ -3654,6 +3870,8 @@ object webixLibStrings {
   def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
   @scala.inline
   def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
+  @scala.inline
+  def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
   @scala.inline
   def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
   @scala.inline

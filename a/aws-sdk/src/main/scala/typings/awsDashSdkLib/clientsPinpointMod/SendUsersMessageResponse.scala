@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait SendUsersMessageResponse extends js.Object {
   /**
-    * The unique ID of the Amazon Pinpoint project used to send the message.
+    * The unique identifier for the application that was used to send the message.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: __string
   /**
-    * The unique ID assigned to the users-messages request.
+    * The unique identifier that was assigned to the message request.
     */
   var RequestId: js.UndefOr[__string] = js.undefined
   /**
-    * An object that shows the endpoints that were messaged for each user. The object provides a list of user IDs. For each user ID, it provides the endpoint IDs that were messaged. For each endpoint ID, it provides an EndpointMessageResult object.
+    * An object that indicates which endpoints the message was sent to, for each user. The object lists user IDs and, for each user ID, provides the endpoint IDs that the message was sent to. For each endpoint ID, it provides an EndpointMessageResult object.
     */
   var Result: js.UndefOr[MapOfMapOfEndpointMessageResult] = js.undefined
 }
@@ -23,12 +23,11 @@ trait SendUsersMessageResponse extends js.Object {
 object SendUsersMessageResponse {
   @scala.inline
   def apply(
-    ApplicationId: __string = null,
+    ApplicationId: __string,
     RequestId: __string = null,
     Result: MapOfMapOfEndpointMessageResult = null
   ): SendUsersMessageResponse = {
-    val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId)
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
     if (Result != null) __obj.updateDynamic("Result")(Result)
     __obj.asInstanceOf[SendUsersMessageResponse]

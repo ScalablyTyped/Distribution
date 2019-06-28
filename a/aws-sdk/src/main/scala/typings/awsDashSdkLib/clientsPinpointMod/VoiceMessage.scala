@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait VoiceMessage extends js.Object {
   /**
-    * The message body of the notification, the email body or the text message.
+    * The text script for the voice message.
     */
   var Body: js.UndefOr[__string] = js.undefined
   /**
-    * Language of sent message
+    * The language to use when delivering the message. For a list of supported languages, see the Amazon Polly Developer Guide.
     */
   var LanguageCode: js.UndefOr[__string] = js.undefined
   /**
-    * Is the number from the pool or messaging service to send from.
+    * The phone number from the pool or messaging service to send the message from. Although it isn't required, we recommend that you specify the phone number in E.164 format to ensure prompt and accurate delivery.
     */
   var OriginationNumber: js.UndefOr[__string] = js.undefined
   /**
-    * Default message substitutions. Can be overridden by individual address substitutions.
+    * The default message variables to use in the voice message. You can override the default variables with individual address variables.
     */
   var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
   /**
-    * Voice ID of sent message.
+    * The name of the voice to use when delivering the message. For a list of supported voices, see the Amazon Polly Developer Guide.
     */
   var VoiceId: js.UndefOr[__string] = js.undefined
 }

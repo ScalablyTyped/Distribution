@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JSONArray
-  extends stdLib.Array[JSON]
-     with _JSON
+  extends stdLib.Array[JSONValue]
+     with _JSONValue
 

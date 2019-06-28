@@ -707,6 +707,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsQuicksightMod._apiVersion
   
   @js.native
+  sealed trait `2018-04-02`
+    extends awsDashSdkLib.clientsEc2instanceconnectMod._apiVersion
+  
+  @js.native
   sealed trait `2018-04-23`
     extends awsDashSdkLib.clientsMediatailorMod._apiVersion
   
@@ -17047,6 +17051,7 @@ object awsDashSdkLibStrings {
   sealed trait RESTORING
     extends awsDashSdkLib.clientsWorkdocsMod._ResourceStateType
        with awsDashSdkLib.clientsOpsworkscmMod._ServerStatus
+       with awsDashSdkLib.clientsWorkspacesMod._WorkspaceState
   
   @js.native
   sealed trait RESTRICTED
@@ -25904,6 +25909,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCostexplorerMod._apiVersion
        with awsDashSdkLib.clientsMedialiveMod._apiVersion
        with awsDashSdkLib.clientsCloudwatchMod._apiVersion
+       with awsDashSdkLib.clientsEc2instanceconnectMod._apiVersion
        with awsDashSdkLib.clientsAcmpcaMod._apiVersion
        with awsDashSdkLib.clientsSecurityhubMod._apiVersion
   
@@ -29412,6 +29418,8 @@ object awsDashSdkLibStrings {
   def `2018-03-22`: `2018-03-22` = "2018-03-22".asInstanceOf[`2018-03-22`]
   @scala.inline
   def `2018-04-01`: `2018-04-01` = "2018-04-01".asInstanceOf[`2018-04-01`]
+  @scala.inline
+  def `2018-04-02`: `2018-04-02` = "2018-04-02".asInstanceOf[`2018-04-02`]
   @scala.inline
   def `2018-04-23`: `2018-04-23` = "2018-04-23".asInstanceOf[`2018-04-23`]
   @scala.inline

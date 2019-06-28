@@ -11,6 +11,10 @@ trait GetLocationSuccess extends js.Object {
     */
   var accuracy: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * 地址信息
+    */
+  var address: js.UndefOr[js.Any] = js.undefined
+  /**
     * 高度，单位 m
     */
   var altitude: js.UndefOr[scala.Double] = js.undefined
@@ -40,6 +44,7 @@ object GetLocationSuccess {
   @scala.inline
   def apply(
     accuracy: java.lang.String = null,
+    address: js.Any = null,
     altitude: scala.Int | scala.Double = null,
     horizontalAccuracy: scala.Int | scala.Double = null,
     latitude: scala.Int | scala.Double = null,
@@ -49,6 +54,7 @@ object GetLocationSuccess {
   ): GetLocationSuccess = {
     val __obj = js.Dynamic.literal()
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
+    if (address != null) __obj.updateDynamic("address")(address)
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (horizontalAccuracy != null) __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])

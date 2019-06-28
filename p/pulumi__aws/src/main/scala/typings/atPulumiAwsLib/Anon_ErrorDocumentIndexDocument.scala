@@ -9,7 +9,9 @@ trait Anon_ErrorDocumentIndexDocument extends js.Object {
   var errorDocument: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var indexDocument: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var redirectAllRequestsTo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  var routingRules: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var routingRules: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | js.Array[atPulumiAwsLib.s3RoutingRulesMod.RoutingRule]]
+  ] = js.undefined
 }
 
 object Anon_ErrorDocumentIndexDocument {
@@ -18,7 +20,7 @@ object Anon_ErrorDocumentIndexDocument {
     errorDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     indexDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     redirectAllRequestsTo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    routingRules: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    routingRules: atPulumiPulumiLib.outputMod.Input[java.lang.String | js.Array[atPulumiAwsLib.s3RoutingRulesMod.RoutingRule]] = null
   ): Anon_ErrorDocumentIndexDocument = {
     val __obj = js.Dynamic.literal()
     if (errorDocument != null) __obj.updateDynamic("errorDocument")(errorDocument.asInstanceOf[js.Any])

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait EndpointDemographic extends js.Object {
   /**
-    * The version of the application associated with the endpoint.
+    * The version of the app that's associated with the endpoint.
     */
   var AppVersion: js.UndefOr[__string] = js.undefined
   /**
-    * The endpoint locale in the following format: The ISO 639-1 alpha-2 code, followed by an underscore, followed by an ISO 3166-1 alpha-2 value.
+    * The locale of the endpoint, in the following format: the ISO 639-1 alpha-2 code, followed by an underscore (_), followed by an ISO 3166-1 alpha-2 value.
     */
   var Locale: js.UndefOr[__string] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait EndpointDemographic extends js.Object {
     */
   var PlatformVersion: js.UndefOr[__string] = js.undefined
   /**
-    * The timezone of the endpoint. Specified as a tz database value, such as Americas/Los_Angeles.
+    * The time zone of the endpoint, specified as a tz database name value, such as America/Los_Angeles.
     */
   var Timezone: js.UndefOr[__string] = js.undefined
 }

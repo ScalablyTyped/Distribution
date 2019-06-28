@@ -80,15 +80,15 @@ trait TreeCollection extends js.Object {
   def load(url: java.lang.String): js.Promise[_] = js.native
   def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
   def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
-  def loadBranch(id: java.lang.String, callback: WebixCallback, url: java.lang.String): scala.Unit = js.native
-  def loadBranch(id: scala.Double, callback: WebixCallback, url: java.lang.String): scala.Unit = js.native
+  def loadBranch(id: java.lang.String, callback: WebixCallback, url: java.lang.String): js.Promise[_] = js.native
+  def loadBranch(id: scala.Double, callback: WebixCallback, url: java.lang.String): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,
     callback: WebixCallback,
     url: java.lang.String,
     now: scala.Boolean
-  ): scala.Unit = js.native
+  ): js.Promise[_] = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def move(sid: java.lang.String, tindex: scala.Double): java.lang.String | scala.Double = js.native
   def move(sid: java.lang.String, tindex: scala.Double, tobj: webixLib.webixMod.uiNs.baseview): java.lang.String | scala.Double = js.native
@@ -115,6 +115,7 @@ trait TreeCollection extends js.Object {
   def removeBind(source: js.Any): scala.Unit = js.native
   def saveBatch(handler: WebixCallback): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
+  def serialize(all: scala.Boolean): js.Array[_] = js.native
   def setBindData(data: js.Any, key: java.lang.String): scala.Unit = js.native
   def setBindData(data: js.Any, key: scala.Double): scala.Unit = js.native
   def setCursor(cursor: java.lang.String): scala.Unit = js.native
@@ -129,6 +130,7 @@ trait TreeCollection extends js.Object {
   def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
   def validate(): scala.Boolean = js.native
   def validate(id: java.lang.String): scala.Boolean = js.native
+  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
 
 @JSImport("webix", "TreeCollection")

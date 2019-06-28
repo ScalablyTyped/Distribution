@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait ChannelsResponse extends js.Object {
   /**
-    * A map of channels, with the ChannelType as the key and the Channel as the value.
+    * A map that contains a multipart response for each channel. For each item in this object, the ChannelType is the key and the Channel is the value.
     */
-  var Channels: js.UndefOr[MapOfChannelResponse] = js.undefined
+  var Channels: MapOfChannelResponse
 }
 
 object ChannelsResponse {
   @scala.inline
-  def apply(Channels: MapOfChannelResponse = null): ChannelsResponse = {
-    val __obj = js.Dynamic.literal()
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels)
+  def apply(Channels: MapOfChannelResponse): ChannelsResponse = {
+    val __obj = js.Dynamic.literal(Channels = Channels)
+  
     __obj.asInstanceOf[ChannelsResponse]
   }
 }

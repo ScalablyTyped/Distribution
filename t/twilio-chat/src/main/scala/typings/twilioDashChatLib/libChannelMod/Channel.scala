@@ -129,7 +129,7 @@ class Channel protected ()
     * @returns {Promise}
     * @private
     */
-  def _unsubscribe(): js.Promise[js.Tuple2[_, _]] = js.native
+  def _unsubscribe(): js.Promise[js.Tuple2[scala.Unit, _]] = js.native
   /**
     * Updates local channel object with new values
     * @private
@@ -140,7 +140,7 @@ class Channel protected ()
     * @param {String} identity - Identity of the Client to add
     * @returns {Promise<void|Error|SessionError>}
     */
-  def add(identity: java.lang.String): js.Promise[_] = js.native
+  def add(identity: java.lang.String): js.Promise[js.Object] = js.native
   /**
     * Advance last consumed Channel's Message index to current consumption horizon.
     * Rejects if User is not Member of Channel.
@@ -166,6 +166,18 @@ class Channel protected ()
     * @returns {Promise<Object>}
     */
   def getAttributes(): js.Promise[js.Object] = js.native
+  /**
+    * Get a Member by its identity.
+    * @param {String} identity - Member identity
+    * @returns {Promise<Member>}
+    */
+  def getMemberByIdentity(identity: java.lang.String): js.Promise[twilioDashChatLib.libMemberMod.Member] = js.native
+  /**
+    * Get a Member by its SID.
+    * @param {String} memberSid - Member sid
+    * @returns {Promise<Member>}
+    */
+  def getMemberBySid(memberSid: java.lang.String): js.Promise[twilioDashChatLib.libMemberMod.Member] = js.native
   /**
     * Get a list of all Members joined to this Channel.
     * @returns {Promise<Array<Member>>}

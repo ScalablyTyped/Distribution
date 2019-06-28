@@ -21,8 +21,19 @@ class RelyingParty protected () extends js.Object {
   ): scala.Unit = js.native
   def verifyAssertion(
     requestOrUrl: java.lang.String,
-    callback: js.Function1[/* err */ OpenIdError | scala.Null, scala.Unit]
+    callback: js.Function2[
+      /* err */ OpenIdError | scala.Null, 
+      /* result */ js.UndefOr[openidLib.Anon_Authenticated], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
-  def verifyAssertion(requestOrUrl: js.Object, callback: js.Function1[/* err */ OpenIdError | scala.Null, scala.Unit]): scala.Unit = js.native
+  def verifyAssertion(
+    requestOrUrl: js.Object,
+    callback: js.Function2[
+      /* err */ OpenIdError | scala.Null, 
+      /* result */ js.UndefOr[openidLib.Anon_Authenticated], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
 }
 

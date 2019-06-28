@@ -7,37 +7,35 @@ import scala.scalajs.js.annotation._
 
 trait ImportJobResource extends js.Object {
   /**
-    * Sets whether the endpoints create a segment when they are imported.
+    * Specifies whether the import job creates a segment that contains the endpoints, when the endpoint definitions are imported.
     */
   var DefineSegment: js.UndefOr[__boolean] = js.undefined
   /**
-    * (Deprecated) Your AWS account ID, which you assigned to the ExternalID key in an IAM trust policy. Used by Amazon Pinpoint to assume an IAM role. This requirement is removed, and external IDs are not recommended for IAM roles assumed by Amazon Pinpoint.
+    * (Deprecated) Your AWS account ID, which you assigned to an external ID key in an IAM trust policy. Amazon Pinpoint previously used this value to assume an IAM role when importing endpoint definitions, but we removed this requirement. We don't recommend use of external IDs for IAM roles that are assumed by Amazon Pinpoint.
     */
   var ExternalId: js.UndefOr[__string] = js.undefined
   /**
-    * The format of the files that contain the endpoint definitions.
-  Valid values: CSV, JSON
+    * The format of the files that contain the endpoint definitions to import. Valid values are: CSV, for comma-separated values format; and, JSON, for newline-delimited JSON format. If the files are stored in an Amazon S3 location and that location contains multiple files that use different formats, Amazon Pinpoint imports data only from the files that use the specified format.
     */
-  var Format: js.UndefOr[Format] = js.undefined
+  var Format: awsDashSdkLib.clientsPinpointMod.Format
   /**
-    * Sets whether the endpoints are registered with Amazon Pinpoint when they are imported.
+    * Specifies whether the import job registers the endpoints with Amazon Pinpoint, when the endpoint definitions are imported.
     */
   var RegisterEndpoints: js.UndefOr[__boolean] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of an IAM role that grants Amazon Pinpoint access to the Amazon S3 location that contains the endpoints to import.
+    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that authorizes Amazon Pinpoint to access the Amazon S3 location to import endpoint definitions from.
     */
-  var RoleArn: js.UndefOr[__string] = js.undefined
+  var RoleArn: __string
   /**
-    * The URL of the S3 bucket that contains the segment information to import. The location can be a folder or a single file. The URL should use the following format: s3://bucket-name/folder-name/file-name
-  Amazon Pinpoint imports endpoints from this location and any subfolders it contains.
+    * The URL of the Amazon Simple Storage Service (Amazon S3) bucket that contains the endpoint definitions to import. This location can be a folder or a single file. If the location is a folder, Amazon Pinpoint imports endpoint definitions from the files in this location, including any subfolders that the folder contains. The URL should be in the following format: s3://bucket-name/folder-name/file-name. The location can end with the key for an individual object or a prefix that qualifies multiple objects.
     */
-  var S3Url: js.UndefOr[__string] = js.undefined
+  var S3Url: __string
   /**
-    * The ID of the segment to update if the import job is meant to update an existing segment.
+    * The identifier for the segment that the import job updates or adds endpoint definitions to, if the import job updates an existing segment.
     */
   var SegmentId: js.UndefOr[__string] = js.undefined
   /**
-    * A custom name for the segment created by the import job. Use if DefineSegment is true.
+    * The custom name for the segment that's created by the import job, if the value of the DefineSegment property is true.
     */
   var SegmentName: js.UndefOr[__string] = js.undefined
 }
@@ -45,22 +43,19 @@ trait ImportJobResource extends js.Object {
 object ImportJobResource {
   @scala.inline
   def apply(
+    Format: Format,
+    RoleArn: __string,
+    S3Url: __string,
     DefineSegment: js.UndefOr[__boolean] = js.undefined,
     ExternalId: __string = null,
-    Format: Format = null,
     RegisterEndpoints: js.UndefOr[__boolean] = js.undefined,
-    RoleArn: __string = null,
-    S3Url: __string = null,
     SegmentId: __string = null,
     SegmentName: __string = null
   ): ImportJobResource = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], RoleArn = RoleArn, S3Url = S3Url)
     if (!js.isUndefined(DefineSegment)) __obj.updateDynamic("DefineSegment")(DefineSegment)
     if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId)
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
     if (!js.isUndefined(RegisterEndpoints)) __obj.updateDynamic("RegisterEndpoints")(RegisterEndpoints)
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url)
     if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId)
     if (SegmentName != null) __obj.updateDynamic("SegmentName")(SegmentName)
     __obj.asInstanceOf[ImportJobResource]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeBackupInput extends js.Object {
   /**
-    * The ARN associated with the backup.
+    * The Amazon Resource Name (ARN) associated with the backup.
     */
   var BackupArn: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupArn
 }

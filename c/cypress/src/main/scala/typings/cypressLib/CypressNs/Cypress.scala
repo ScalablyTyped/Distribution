@@ -727,7 +727,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def off_windowalert(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -783,7 +783,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def off_windowconfirm(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
@@ -1028,7 +1028,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def on_windowalert(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -1084,7 +1084,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def on_windowconfirm(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+    fn: SinonSpyAgent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.

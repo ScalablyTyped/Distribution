@@ -31,9 +31,13 @@ trait NewTransitVirtualInterface extends js.Object {
     */
   var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   /**
-    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
+    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 8500. The default value is 1500. 
     */
   var mtu: js.UndefOr[MTU] = js.undefined
+  /**
+    * Any tags assigned to the transit virtual interface.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
   /**
     * The name of the virtual interface assigned by the customer network.
     */
@@ -54,6 +58,7 @@ object NewTransitVirtualInterface {
     customerAddress: CustomerAddress = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
     mtu: js.UndefOr[MTU] = js.undefined,
+    tags: TagList = null,
     virtualInterfaceName: VirtualInterfaceName = null,
     vlan: js.UndefOr[VLAN] = js.undefined
   ): NewTransitVirtualInterface = {
@@ -65,6 +70,7 @@ object NewTransitVirtualInterface {
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress)
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId)
     if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (virtualInterfaceName != null) __obj.updateDynamic("virtualInterfaceName")(virtualInterfaceName)
     if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan)
     __obj.asInstanceOf[NewTransitVirtualInterface]

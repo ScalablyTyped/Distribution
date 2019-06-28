@@ -389,6 +389,17 @@ trait Router[StateT, CustomT] extends js.Object {
     */
   def redirect(source: java.lang.String, destination: java.lang.String): Router[StateT, CustomT] = js.native
   def redirect(source: java.lang.String, destination: java.lang.String, code: scala.Double): Router[StateT, CustomT] = js.native
+  def register(
+    path: java.lang.String,
+    methods: js.Array[java.lang.String],
+    middleware: js.Array[IMiddleware[StateT, CustomT]]
+  ): Layer = js.native
+  def register(
+    path: java.lang.String,
+    methods: js.Array[java.lang.String],
+    middleware: js.Array[IMiddleware[StateT, CustomT]],
+    opts: ILayerOptions
+  ): Layer = js.native
   /**
     * Create and register a route.
     */
@@ -401,14 +412,25 @@ trait Router[StateT, CustomT] extends js.Object {
     path: java.lang.String,
     methods: js.Array[java.lang.String],
     middleware: IMiddleware[StateT, CustomT],
-    opts: js.Object
+    opts: ILayerOptions
+  ): Layer = js.native
+  def register(
+    path: stdLib.RegExp,
+    methods: js.Array[java.lang.String],
+    middleware: js.Array[IMiddleware[StateT, CustomT]]
+  ): Layer = js.native
+  def register(
+    path: stdLib.RegExp,
+    methods: js.Array[java.lang.String],
+    middleware: js.Array[IMiddleware[StateT, CustomT]],
+    opts: ILayerOptions
   ): Layer = js.native
   def register(path: stdLib.RegExp, methods: js.Array[java.lang.String], middleware: IMiddleware[StateT, CustomT]): Layer = js.native
   def register(
     path: stdLib.RegExp,
     methods: js.Array[java.lang.String],
     middleware: IMiddleware[StateT, CustomT],
-    opts: js.Object
+    opts: ILayerOptions
   ): Layer = js.native
   /**
     * Lookup route with given `name`.

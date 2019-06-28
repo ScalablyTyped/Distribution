@@ -16,7 +16,7 @@ package object k6Mod {
     - JSONArray
     - JSONObject
   */
-  type JSON = _JSON | scala.Null | scala.Boolean | scala.Double | java.lang.String
+  type JSONValue = _JSONValue | scala.Null | scala.Boolean | scala.Double | java.lang.String
   type byte = scala.Double
   type bytes = js.Array[byte]
 }

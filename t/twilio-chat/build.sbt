@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twilio-chat"
-version := "3.2.4-e8533c"
+version := "3.3.0-dfd254"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

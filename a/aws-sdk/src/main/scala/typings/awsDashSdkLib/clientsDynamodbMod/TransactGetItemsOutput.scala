@@ -11,7 +11,7 @@ trait TransactGetItemsOutput extends js.Object {
     */
   var ConsumedCapacity: js.UndefOr[ConsumedCapacityMultiple] = js.undefined
   /**
-    * An ordered array of up to 10 ItemResponse objects, each of which corresponds to the TransactGetItem object in the same position in the TransactItems array. Each ItemResponse object contains a Map of the name-value pairs that are the projected attributes of the requested item. If a requested item could not be retrieved, the corresponding ItemResponse object is Null, or if the requested item has no projected attributes, the corresponding ItemResponse object is an empty Map. 
+    * An ordered array of up to 25 ItemResponse objects, each of which corresponds to the TransactGetItem object in the same position in the TransactItems array. Each ItemResponse object contains a Map of the name-value pairs that are the projected attributes of the requested item. If a requested item could not be retrieved, the corresponding ItemResponse object is Null, or if the requested item has no projected attributes, the corresponding ItemResponse object is an empty Map. 
     */
   var Responses: js.UndefOr[ItemResponseList] = js.undefined
 }

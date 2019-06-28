@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Schema extends js.Object {
+  /**
+    * If set to `false`, then validating against the Swagger 2.0 Schema or OpenAPI 3.0 Schema is disabled.
+    */
   var schema: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * If set to `false`, then validating against the Swagger 2.0 Specification is disabled.
+    */
   var spec: js.UndefOr[scala.Boolean] = js.undefined
 }
 

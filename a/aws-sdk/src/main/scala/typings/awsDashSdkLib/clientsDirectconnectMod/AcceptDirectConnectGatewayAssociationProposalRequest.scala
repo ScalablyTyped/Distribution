@@ -15,7 +15,7 @@ trait AcceptDirectConnectGatewayAssociationProposalRequest extends js.Object {
     */
   var directConnectGatewayId: DirectConnectGatewayId
   /**
-    * Overrides the existing Amazon VPC prefixes advertised to the Direct Connect gateway.
+    * Overrides the Amazon VPC prefixes advertised to the Direct Connect gateway. For information about how to set the prefixes, see Allowed Prefixes in the AWS Direct Connect User Guide.
     */
   var overrideAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   /**

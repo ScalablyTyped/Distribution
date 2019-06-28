@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait TimeToLiveDescription extends js.Object {
   /**
-    *  The name of the Time to Live attribute for items in the table.
+    *  The name of the TTL attribute for items in the table.
     */
   var AttributeName: js.UndefOr[TimeToLiveAttributeName] = js.undefined
   /**
-    *  The Time to Live status for the table.
+    *  The TTL status for the table.
     */
   var TimeToLiveStatus: js.UndefOr[TimeToLiveStatus] = js.undefined
 }

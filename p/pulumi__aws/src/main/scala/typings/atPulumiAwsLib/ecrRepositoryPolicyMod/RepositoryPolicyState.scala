@@ -9,7 +9,9 @@ trait RepositoryPolicyState extends js.Object {
   /**
     * The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
     */
-  val policy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val policy: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
+  ] = js.undefined
   /**
     * The registry ID where the repository was created.
     */
@@ -23,7 +25,7 @@ trait RepositoryPolicyState extends js.Object {
 object RepositoryPolicyState {
   @scala.inline
   def apply(
-    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument] = null,
     registryId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     repository: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RepositoryPolicyState = {

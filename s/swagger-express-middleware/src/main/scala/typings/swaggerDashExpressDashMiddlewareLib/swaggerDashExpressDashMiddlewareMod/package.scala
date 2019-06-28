@@ -38,7 +38,7 @@ package object swaggerDashExpressDashMiddlewareMod {
     /* err */ js.Any, 
     /* middleware */ SwaggerMiddleware, 
     /* api */ SwaggerObject, 
-    /* parser */ SwaggerParser, 
+    /* parser */ swaggerDashParserLib.swaggerDashParserMod.^, 
     scala.Unit
   ]
 }

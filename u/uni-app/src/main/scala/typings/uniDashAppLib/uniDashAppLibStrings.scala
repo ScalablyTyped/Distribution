@@ -52,6 +52,9 @@ object uniDashAppLibStrings {
   sealed trait TRACE extends js.Object
   
   @js.native
+  sealed trait absolute extends js.Object
+  
+  @js.native
   sealed trait alipay extends js.Object
   
   @js.native
@@ -64,16 +67,31 @@ object uniDashAppLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait back extends js.Object
+  
+  @js.native
+  sealed trait backbutton extends js.Object
+  
+  @js.native
   sealed trait baidu extends js.Object
   
   @js.native
   sealed trait bevel extends js.Object
   
   @js.native
+  sealed trait bottom extends js.Object
+  
+  @js.native
   sealed trait butt extends js.Object
   
   @js.native
   sealed trait button extends js.Object
+  
+  @js.native
+  sealed trait center extends js.Object
+  
+  @js.native
+  sealed trait dock extends js.Object
   
   @js.native
   sealed trait ease extends js.Object
@@ -109,10 +127,16 @@ object uniDashAppLibStrings {
   sealed trait fingerPrint extends js.Object
   
   @js.native
+  sealed trait front extends js.Object
+  
+  @js.native
   sealed trait igexin extends js.Object
   
   @js.native
   sealed trait image extends js.Object
+  
+  @js.native
+  sealed trait left extends js.Object
   
   @js.native
   sealed trait linear extends js.Object
@@ -124,13 +148,28 @@ object uniDashAppLibStrings {
   sealed trait menu extends js.Object
   
   @js.native
+  sealed trait middle extends js.Object
+  
+  @js.native
   sealed trait mipush extends js.Object
   
   @js.native
   sealed trait miter extends js.Object
   
   @js.native
+  sealed trait navigateBack extends js.Object
+  
+  @js.native
+  sealed trait navigationBar extends js.Object
+  
+  @js.native
+  sealed trait `no-repeat` extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait normal extends js.Object
   
   @js.native
   sealed trait oauth extends js.Object
@@ -145,10 +184,25 @@ object uniDashAppLibStrings {
   sealed trait `pop-out` extends js.Object
   
   @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
   sealed trait push extends js.Object
   
   @js.native
   sealed trait qq extends js.Object
+  
+  @js.native
+  sealed trait repeat extends js.Object
+  
+  @js.native
+  sealed trait `repeat-x` extends js.Object
+  
+  @js.native
+  sealed trait `repeat-y` extends js.Object
+  
+  @js.native
+  sealed trait right extends js.Object
   
   @js.native
   sealed trait round extends js.Object
@@ -190,6 +244,9 @@ object uniDashAppLibStrings {
   sealed trait square extends js.Object
   
   @js.native
+  sealed trait static extends js.Object
+  
+  @js.native
   sealed trait `step-end` extends js.Object
   
   @js.native
@@ -197,6 +254,9 @@ object uniDashAppLibStrings {
   
   @js.native
   sealed trait success extends js.Object
+  
+  @js.native
+  sealed trait top extends js.Object
   
   @js.native
   sealed trait unipush extends js.Object
@@ -256,6 +316,8 @@ object uniDashAppLibStrings {
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   @scala.inline
+  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  @scala.inline
   def alipay: alipay = "alipay".asInstanceOf[alipay]
   @scala.inline
   def appleiap: appleiap = "appleiap".asInstanceOf[appleiap]
@@ -264,13 +326,23 @@ object uniDashAppLibStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def back: back = "back".asInstanceOf[back]
+  @scala.inline
+  def backbutton: backbutton = "backbutton".asInstanceOf[backbutton]
+  @scala.inline
   def baidu: baidu = "baidu".asInstanceOf[baidu]
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def dock: dock = "dock".asInstanceOf[dock]
   @scala.inline
   def ease: ease = "ease".asInstanceOf[ease]
   @scala.inline
@@ -294,9 +366,13 @@ object uniDashAppLibStrings {
   @scala.inline
   def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
   @scala.inline
+  def front: front = "front".asInstanceOf[front]
+  @scala.inline
   def igexin: igexin = "igexin".asInstanceOf[igexin]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
@@ -304,11 +380,21 @@ object uniDashAppLibStrings {
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def mipush: mipush = "mipush".asInstanceOf[mipush]
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   @scala.inline
+  def navigateBack: navigateBack = "navigateBack".asInstanceOf[navigateBack]
+  @scala.inline
+  def navigationBar: navigationBar = "navigationBar".asInstanceOf[navigationBar]
+  @scala.inline
+  def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def oauth: oauth = "oauth".asInstanceOf[oauth]
   @scala.inline
@@ -318,9 +404,19 @@ object uniDashAppLibStrings {
   @scala.inline
   def `pop-out`: `pop-out` = "pop-out".asInstanceOf[`pop-out`]
   @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
   def qq: qq = "qq".asInstanceOf[qq]
+  @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  @scala.inline
+  def `repeat-x`: `repeat-x` = "repeat-x".asInstanceOf[`repeat-x`]
+  @scala.inline
+  def `repeat-y`: `repeat-y` = "repeat-y".asInstanceOf[`repeat-y`]
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
@@ -348,11 +444,15 @@ object uniDashAppLibStrings {
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   @scala.inline
+  def static: static = "static".asInstanceOf[static]
+  @scala.inline
   def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
   @scala.inline
   def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def unipush: unipush = "unipush".asInstanceOf[unipush]
   @scala.inline

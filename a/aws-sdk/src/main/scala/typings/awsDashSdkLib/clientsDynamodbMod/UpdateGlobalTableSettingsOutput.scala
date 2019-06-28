@@ -11,7 +11,7 @@ trait UpdateGlobalTableSettingsOutput extends js.Object {
     */
   var GlobalTableName: js.UndefOr[TableName] = js.undefined
   /**
-    * The region specific settings for the global table.
+    * The Region-specific settings for the global table.
     */
   var ReplicaSettings: js.UndefOr[ReplicaSettingsDescriptionList] = js.undefined
 }

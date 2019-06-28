@@ -12,7 +12,7 @@ object reactDashBigDashCalendarLibStrings {
   
   @js.native
   sealed trait DATE
-    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.NavigateAction
   
   @js.native
   sealed trait DAY
@@ -24,15 +24,15 @@ object reactDashBigDashCalendarLibStrings {
   
   @js.native
   sealed trait NEXT
-    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.NavigateAction
   
   @js.native
   sealed trait PREV
-    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.NavigateAction
   
   @js.native
   sealed trait TODAY
-    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.NavigateAction
   
   @js.native
   sealed trait WEEK

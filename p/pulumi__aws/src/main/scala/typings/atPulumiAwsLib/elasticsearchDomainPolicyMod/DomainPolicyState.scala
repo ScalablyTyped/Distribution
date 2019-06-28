@@ -9,7 +9,9 @@ trait DomainPolicyState extends js.Object {
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val accessPolicies: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
+  ] = js.undefined
   /**
     * Name of the domain.
     */
@@ -19,7 +21,7 @@ trait DomainPolicyState extends js.Object {
 object DomainPolicyState {
   @scala.inline
   def apply(
-    accessPolicies: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    accessPolicies: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument] = null,
     domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DomainPolicyState = {
     val __obj = js.Dynamic.literal()

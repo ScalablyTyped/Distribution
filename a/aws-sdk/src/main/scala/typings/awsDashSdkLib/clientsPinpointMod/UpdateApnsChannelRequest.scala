@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait UpdateApnsChannelRequest extends js.Object {
   var APNSChannelRequest: awsDashSdkLib.clientsPinpointMod.APNSChannelRequest
   /**
-    * The unique ID of your Amazon Pinpoint application.
+    * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
   var ApplicationId: __string
 }

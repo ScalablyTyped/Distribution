@@ -66,6 +66,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var dynamodb: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ClientConfiguration] = js.native
   var dynamodbstreams: js.UndefOr[awsDashSdkLib.clientsDynamodbstreamsMod.ClientConfiguration] = js.native
   var ec2: js.UndefOr[awsDashSdkLib.clientsEc2Mod.ClientConfiguration] = js.native
+  var ec2instanceconnect: js.UndefOr[awsDashSdkLib.clientsEc2instanceconnectMod.ClientConfiguration] = js.native
   var ecr: js.UndefOr[awsDashSdkLib.clientsEcrMod.ClientConfiguration] = js.native
   var ecs: js.UndefOr[awsDashSdkLib.clientsEcsMod.ClientConfiguration] = js.native
   var efs: js.UndefOr[awsDashSdkLib.clientsEfsMod.ClientConfiguration] = js.native

@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esTypesMod {
-  /* Rewritten from type alias, can be one of: 
-    - ActionType
-    - ActionObject[TContext, TEvent]
-    - ActionFunction[TContext, TEvent]
-  */
-  type Action[TContext, TEvent /* <: EventObject */] = (_Action[TContext, TEvent]) | ActionType
+  type Action[TContext, TEvent /* <: EventObject */] = ActionType | (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent])
+  type ActionFunction[TContext, TEvent /* <: EventObject */] = js.Function3[
+    /* context */ TContext, 
+    /* event */ TEvent, 
+    /* meta */ ActionMeta[TContext, TEvent], 
+    js.Any | scala.Unit
+  ]
   type ActionFunctionMap[TContext, TEvent /* <: EventObject */] = stdLib.Record[
     java.lang.String, 
     (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent])

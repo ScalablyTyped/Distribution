@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RawEmail extends js.Object {
   /**
-    * The raw email message itself. Then entire message must be base64-encoded.
+    * The email message, represented as a raw MIME message. The entire message must be base64 encoded.
     */
   var Data: js.UndefOr[__blob] = js.undefined
 }

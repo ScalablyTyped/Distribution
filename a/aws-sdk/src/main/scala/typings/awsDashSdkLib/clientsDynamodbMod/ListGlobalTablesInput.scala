@@ -15,7 +15,7 @@ trait ListGlobalTablesInput extends js.Object {
     */
   var Limit: js.UndefOr[PositiveIntegerObject] = js.undefined
   /**
-    * Lists the global tables in a specific region.
+    * Lists the global tables in a specific Region.
     */
   var RegionName: js.UndefOr[RegionName] = js.undefined
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "griddle-react"
-version := "1.13.1-ec33d8"
+version := "1.13.1-35acbd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-ff2953",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190612Z-922f0a",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20190627Z-922f0a",
   "org.scalablytyped" %%% "redux" % "4.0.1-3a783a",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false

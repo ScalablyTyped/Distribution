@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UntagResourceRequest extends js.Object {
+  /**
+    * The Amazon Resource Name (ARN) of the application, campaign, or segment.
+    */
   var ResourceArn: __string
   /**
-    * The key(s) of tag to be deleted
+    * The key of the tag to remove from the application, campaign, or segment. To remove multiple tags, append the tagKeys parameter and argument for each additional tag to remove, separated by an ampersand (&amp;).
     */
   var TagKeys: ListOf__string
 }

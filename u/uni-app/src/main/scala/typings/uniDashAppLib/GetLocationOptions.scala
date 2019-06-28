@@ -19,6 +19,10 @@ trait GetLocationOptions extends js.Object {
     */
   var fail: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
+    * 传入 true 会解析地址
+    */
+  var geocode: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function1[/* result */ GetLocationSuccess, scala.Unit]] = js.undefined
@@ -34,6 +38,7 @@ object GetLocationOptions {
     altitude: js.UndefOr[scala.Boolean] = js.undefined,
     complete: () => scala.Unit = null,
     fail: () => scala.Unit = null,
+    geocode: js.UndefOr[scala.Boolean] = js.undefined,
     success: /* result */ GetLocationSuccess => scala.Unit = null,
     `type`: java.lang.String = null
   ): GetLocationOptions = {
@@ -41,6 +46,7 @@ object GetLocationOptions {
     if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (!js.isUndefined(geocode)) __obj.updateDynamic("geocode")(geocode)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GetLocationOptions]

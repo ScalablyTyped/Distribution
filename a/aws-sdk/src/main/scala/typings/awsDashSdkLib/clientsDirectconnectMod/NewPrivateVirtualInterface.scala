@@ -19,7 +19,7 @@ trait NewPrivateVirtualInterface extends js.Object {
     */
   var asn: ASN
   /**
-    * The authentication key for BGP configuration.
+    * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   /**
@@ -34,6 +34,10 @@ trait NewPrivateVirtualInterface extends js.Object {
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     */
   var mtu: js.UndefOr[MTU] = js.undefined
+  /**
+    * Any tags assigned to the private virtual interface.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
   /**
     * The ID of the virtual private gateway.
     */
@@ -60,6 +64,7 @@ object NewPrivateVirtualInterface {
     customerAddress: CustomerAddress = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
     mtu: js.UndefOr[MTU] = js.undefined,
+    tags: TagList = null,
     virtualGatewayId: VirtualGatewayId = null
   ): NewPrivateVirtualInterface = {
     val __obj = js.Dynamic.literal(asn = asn, virtualInterfaceName = virtualInterfaceName, vlan = vlan)
@@ -69,6 +74,7 @@ object NewPrivateVirtualInterface {
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress)
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId)
     if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId)
     __obj.asInstanceOf[NewPrivateVirtualInterface]
   }

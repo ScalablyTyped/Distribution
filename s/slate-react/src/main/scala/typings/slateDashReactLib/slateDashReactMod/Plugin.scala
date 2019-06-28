@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Plugin
-  extends slateLib.slateMod.Plugin {
+  extends slateLib.slateMod.Plugin
+     with PluginOrPlugins {
   var decorateNode: js.UndefOr[
     js.Function3[
       /* node */ slateLib.slateMod.Node, 

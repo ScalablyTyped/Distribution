@@ -9,6 +9,54 @@ import scala.scalajs.js.annotation._
 @js.native
 class Uni () extends js.Object {
   /**
+    * 触发自定义事件，附加的参数会传递给事件监听器。
+    *
+    * 参考: [http://uniapp.dcloud.io/api/window/communication?id=emit](http://uniapp.dcloud.io/api/window/communication?id=emit)
+    */
+  @JSName("$emit")
+  def $emit(): scala.Unit = js.native
+  @JSName("$emit")
+  def $emit(eventName: java.lang.String): scala.Unit = js.native
+  @JSName("$emit")
+  def $emit(eventName: java.lang.String, param: js.Any): scala.Unit = js.native
+  /**
+    * 移除自定义事件监听器。如果没有指定事件名，则移除所有事件监听器。如果提供事件名，则移除该事件的所有监听器。如果提供了事件名和回调，则只移除这个回调的监听器。
+    *
+    * 参考: [http://uniapp.dcloud.io/api/window/communication?id=off](http://uniapp.dcloud.io/api/window/communication?id=off)
+    */
+  @JSName("$off")
+  def $off(): scala.Unit = js.native
+  @JSName("$off")
+  def $off(eventName: java.lang.String): scala.Unit = js.native
+  @JSName("$off")
+  def $off(eventName: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  @JSName("$off")
+  def $off(eventName: js.Array[_]): scala.Unit = js.native
+  @JSName("$off")
+  def $off(eventName: js.Array[_], callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  /**
+    * 监听自定义事件。事件可以由 uni.$emit 触发。回调函数会接收 uni.$emit 传递的参数。
+    *
+    * 参考: [http://uniapp.dcloud.io/api/window/communication?id=on](http://uniapp.dcloud.io/api/window/communication?id=on)
+    */
+  @JSName("$on")
+  def $on(): scala.Unit = js.native
+  @JSName("$on")
+  def $on(eventName: java.lang.String): scala.Unit = js.native
+  @JSName("$on")
+  def $on(eventName: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  /**
+    * 监听一个自定义事件。事件只触发一次，在第一次触发之后移除事件监听器。
+    *
+    * 参考: [http://uniapp.dcloud.io/api/window/communication?id=once](http://uniapp.dcloud.io/api/window/communication?id=once)
+    */
+  @JSName("$once")
+  def $once(): scala.Unit = js.native
+  @JSName("$once")
+  def $once(eventName: java.lang.String): scala.Unit = js.native
+  @JSName("$once")
+  def $once(eventName: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  /**
     * 手机通讯录联系人和联系方式的增加
     *
     * 参考: [http://uniapp.dcloud.io/api/system/contact?id=addphonecontact](http://uniapp.dcloud.io/api/system/contact?id=addphonecontact)
@@ -262,6 +310,12 @@ class Uni () extends js.Object {
   def getConnectedBluetoothDevices(): scala.Unit = js.native
   def getConnectedBluetoothDevices(options: GetConnectedBluetoothDevicesOptions): scala.Unit = js.native
   /**
+    * 获取当前 subNVues 原生子窗体的实例
+    *
+    * 参考: [http://uniapp.dcloud.io/api/window/subNVues?id=app-getsubnvuebyid](http://uniapp.dcloud.io/api/window/subNVues?id=app-getsubnvuebyid)
+    */
+  def getCurrentSubNVue(): SubNVue = js.native
+  /**
     * 获取第三方平台自定义的数据字段
     *
     * 参考: [http://uniapp.dcloud.io/api/other/get-extconfig?id=getextconfig](http://uniapp.dcloud.io/api/other/get-extconfig?id=getextconfig)
@@ -369,14 +423,21 @@ class Uni () extends js.Object {
   def getStorageSync(): js.Any = js.native
   def getStorageSync(key: java.lang.String): js.Any = js.native
   /**
-    * 获取系统信息
+    * 通过id 获取 subNVues 原生子窗体的实例
+    *
+    * 参考: [http://uniapp.dcloud.io/api/window/subNVues?id=app-getsubnvuebyid](http://uniapp.dcloud.io/api/window/subNVues?id=app-getsubnvuebyid)
+    */
+  def getSubNVueById(): SubNVue = js.native
+  def getSubNVueById(subNvueId: java.lang.String): SubNVue = js.native
+  /**
+    * 异步获取系统信息
     *
     * 参考: [http://uniapp.dcloud.io/api/system/info?id=getsysteminfo](http://uniapp.dcloud.io/api/system/info?id=getsysteminfo)
     */
   def getSystemInfo(): scala.Unit = js.native
   def getSystemInfo(options: GetSystemInfoOptions): scala.Unit = js.native
   /**
-    * 获取系统信息
+    * 同步获取系统信息
     *
     * 参考: [http://uniapp.dcloud.io/api/system/info?id=getsysteminfosync](http://uniapp.dcloud.io/api/system/info?id=getsysteminfosync)
     */

@@ -38,6 +38,6 @@ trait DataRecord extends js.Object {
 @JSImport("webix", "DataRecord")
 @js.native
 class DataRecordCls () extends DataRecord {
-  def this(config: js.Any) = this()
+  def this(config: DataRecordConfig) = this()
 }
 

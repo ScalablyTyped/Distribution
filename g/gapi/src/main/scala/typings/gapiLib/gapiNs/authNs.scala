@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object authNs extends js.Object {
   def authorize(
-    params: gapiLib.Anon_Authuser,
+    params: gapiLib.Anon_AuthuserClientid,
     callback: js.Function1[/* token */ gapiLib.GoogleApiOAuth2TokenObject, _]
   ): scala.Unit = js.native
   def getToken(): gapiLib.GoogleApiOAuth2TokenObject = js.native

@@ -27,7 +27,7 @@ trait UpdateTableInput extends js.Object {
     */
   var SSESpecification: js.UndefOr[SSESpecification] = js.undefined
   /**
-    * Represents the DynamoDB Streams configuration for the table.  You will receive a ResourceInUseException if you attempt to enable a stream on a table that already has a stream, or if you attempt to disable a stream on a table which does not have a stream. 
+    * Represents the DynamoDB Streams configuration for the table.  You receive a ResourceInUseException if you try to enable a stream on a table that already has a stream, or if you try to disable a stream on a table that doesn't have a stream. 
     */
   var StreamSpecification: js.UndefOr[StreamSpecification] = js.undefined
   /**

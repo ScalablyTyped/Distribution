@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait SegmentResponse extends js.Object {
   /**
-    * The ID of the application that the segment applies to.
+    * The unique identifier for the application that the segment is associated with.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: __string
   /**
-    * The arn for the segment.
+    * The Amazon Resource Name (ARN) of the segment.
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: __string
   /**
     * The date and time when the segment was created.
     */
-  var CreationDate: js.UndefOr[__string] = js.undefined
+  var CreationDate: __string
   /**
-    * The segment dimensions attributes.
+    * The dimension settings for the segment.
     */
   var Dimensions: js.UndefOr[SegmentDimensions] = js.undefined
   /**
-    * The unique segment ID.
+    * The unique identifier for the segment.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
-    * The import job settings.
+    * The settings for the import job that's associated with the segment.
     */
   var ImportDefinition: js.UndefOr[SegmentImportResource] = js.undefined
   /**
@@ -39,21 +39,19 @@ trait SegmentResponse extends js.Object {
     */
   var Name: js.UndefOr[__string] = js.undefined
   /**
-    * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments.
+    * A list of one or more segment groups that apply to the segment. Each segment group consists of zero or more base segments and the dimensions that are applied to those base segments.
     */
   var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
   /**
-    * The segment type:
-  DIMENSIONAL - A dynamic segment built from selection criteria based on endpoint data reported by your app. You create this type of segment by using the segment builder in the Amazon Pinpoint console or by making a POST request to the segments resource.
-  IMPORT - A static segment built from an imported set of endpoint definitions. You create this type of segment by importing a segment in the Amazon Pinpoint console or by making a POST request to the jobs/import resource.
+    * The segment type. Valid values are: DIMENSIONAL - A dynamic segment, which is a segment that uses selection criteria that you specify and is based on endpoint data that's reported by your app. Dynamic segments can change over time. IMPORT - A static segment, which is a segment that uses selection criteria that you specify and is based on endpoint definitions that you import from a file. Imported segments are static; they don't change over time.
     */
-  var SegmentType: js.UndefOr[SegmentType] = js.undefined
+  var SegmentType: awsDashSdkLib.clientsPinpointMod.SegmentType
   /**
-    * The segment version number.
+    * The version number of the segment.
     */
   var Version: js.UndefOr[__integer] = js.undefined
   /**
-    * The Tags for the segment.
+    * A string-to-string map of key-value pairs that identifies the tags that are associated with the segment. Each tag consists of a required tag key and an associated tag value.
     */
   var tags: js.UndefOr[MapOf__string] = js.undefined
 }
@@ -61,30 +59,25 @@ trait SegmentResponse extends js.Object {
 object SegmentResponse {
   @scala.inline
   def apply(
-    ApplicationId: __string = null,
-    Arn: __string = null,
-    CreationDate: __string = null,
+    ApplicationId: __string,
+    Arn: __string,
+    CreationDate: __string,
+    Id: __string,
+    SegmentType: SegmentType,
     Dimensions: SegmentDimensions = null,
-    Id: __string = null,
     ImportDefinition: SegmentImportResource = null,
     LastModifiedDate: __string = null,
     Name: __string = null,
     SegmentGroups: SegmentGroupList = null,
-    SegmentType: SegmentType = null,
     Version: js.UndefOr[__integer] = js.undefined,
     tags: MapOf__string = null
   ): SegmentResponse = {
-    val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, Arn = Arn, CreationDate = CreationDate, Id = Id, SegmentType = SegmentType.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
     if (ImportDefinition != null) __obj.updateDynamic("ImportDefinition")(ImportDefinition)
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups)
-    if (SegmentType != null) __obj.updateDynamic("SegmentType")(SegmentType.asInstanceOf[js.Any])
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[SegmentResponse]

@@ -7,36 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait SendUsersMessageRequest extends js.Object {
   /**
-    * A map of custom attribute-value pairs. Amazon Pinpoint adds these attributes to the data.pinpoint object in the body of the push notification payload. Amazon Pinpoint also provides these attributes in the events that it generates for users-messages deliveries.
+    * A map of custom attribute-value pairs. For a push notification, Amazon Pinpoint adds these attributes to the data.pinpoint object in the body of the notification payload. Amazon Pinpoint also provides these attributes in the events that it generates for users-messages deliveries.
     */
   var Context: js.UndefOr[MapOf__string] = js.undefined
   /**
-    * Message definitions for the default message and any messages that are tailored for specific channels.
+    * The message definitions for the default message and any default messages that you defined for specific channels.
     */
-  var MessageConfiguration: js.UndefOr[DirectMessageConfiguration] = js.undefined
+  var MessageConfiguration: DirectMessageConfiguration
   /**
-    * A unique ID that you can use to trace a message. This ID is visible to recipients.
+    * The unique identifier for tracing the message. This identifier is visible to message recipients.
     */
   var TraceId: js.UndefOr[__string] = js.undefined
   /**
-    * A map that associates user IDs with EndpointSendConfiguration objects. Within an EndpointSendConfiguration object, you can tailor the message for a user by specifying message overrides or substitutions.
+    * A map that associates user IDs with EndpointSendConfiguration objects. You can use an EndpointSendConfiguration object to tailor the message for a user by specifying settings such as content overrides and message variables.
     */
-  var Users: js.UndefOr[MapOfEndpointSendConfiguration] = js.undefined
+  var Users: MapOfEndpointSendConfiguration
 }
 
 object SendUsersMessageRequest {
   @scala.inline
   def apply(
+    MessageConfiguration: DirectMessageConfiguration,
+    Users: MapOfEndpointSendConfiguration,
     Context: MapOf__string = null,
-    MessageConfiguration: DirectMessageConfiguration = null,
-    TraceId: __string = null,
-    Users: MapOfEndpointSendConfiguration = null
+    TraceId: __string = null
   ): SendUsersMessageRequest = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(MessageConfiguration = MessageConfiguration, Users = Users)
     if (Context != null) __obj.updateDynamic("Context")(Context)
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
     if (TraceId != null) __obj.updateDynamic("TraceId")(TraceId)
-    if (Users != null) __obj.updateDynamic("Users")(Users)
     __obj.asInstanceOf[SendUsersMessageRequest]
   }
 }

@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait TreatmentResource extends js.Object {
   /**
-    * The unique treatment ID.
+    * The unique identifier for the treatment.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
-    * The message configuration settings.
+    * The message configuration settings for the treatment.
     */
   var MessageConfiguration: js.UndefOr[MessageConfiguration] = js.undefined
   /**
-    * The campaign schedule.
+    * The schedule settings for the treatment.
     */
   var Schedule: js.UndefOr[Schedule] = js.undefined
   /**
-    * The allocated percentage of users for this treatment.
+    * The allocated percentage of users (segment members) that the treatment is sent to.
     */
-  var SizePercent: js.UndefOr[__integer] = js.undefined
+  var SizePercent: __integer
   /**
-    * The treatment status.
+    * The status of the treatment.
     */
   var State: js.UndefOr[CampaignState] = js.undefined
   /**
-    * A custom description for the treatment.
+    * The custom description of the treatment.
     */
   var TreatmentDescription: js.UndefOr[__string] = js.undefined
   /**
-    * The custom name of a variation of the campaign used for A/B testing.
+    * The custom name of the treatment. A treatment is a variation of a campaign that's used for A/B testing of a campaign.
     */
   var TreatmentName: js.UndefOr[__string] = js.undefined
 }
@@ -39,19 +39,17 @@ trait TreatmentResource extends js.Object {
 object TreatmentResource {
   @scala.inline
   def apply(
-    Id: __string = null,
+    Id: __string,
+    SizePercent: __integer,
     MessageConfiguration: MessageConfiguration = null,
     Schedule: Schedule = null,
-    SizePercent: js.UndefOr[__integer] = js.undefined,
     State: CampaignState = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null
   ): TreatmentResource = {
-    val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    val __obj = js.Dynamic.literal(Id = Id, SizePercent = SizePercent)
     if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
-    if (!js.isUndefined(SizePercent)) __obj.updateDynamic("SizePercent")(SizePercent)
     if (State != null) __obj.updateDynamic("State")(State)
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)

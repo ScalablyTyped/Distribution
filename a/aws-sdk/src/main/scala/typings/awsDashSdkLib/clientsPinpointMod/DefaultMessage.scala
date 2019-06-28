@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DefaultMessage extends js.Object {
   /**
-    * The message body of the notification, the email body or the text message.
+    * The default message body of the push notification, email, or SMS message.
     */
   var Body: js.UndefOr[__string] = js.undefined
   /**
-    * Default message substitutions. Can be overridden by individual address substitutions.
+    * The default message variables to use in the push notification, email, or SMS message. You can override these default variables with individual address variables.
     */
   var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
 }

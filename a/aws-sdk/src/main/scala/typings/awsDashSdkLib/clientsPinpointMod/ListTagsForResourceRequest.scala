@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListTagsForResourceRequest extends js.Object {
+  /**
+    * The Amazon Resource Name (ARN) of the application, campaign, or segment.
+    */
   var ResourceArn: __string
 }
 

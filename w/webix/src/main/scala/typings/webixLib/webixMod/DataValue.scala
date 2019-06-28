@@ -29,6 +29,6 @@ trait DataValue extends js.Object {
 @JSImport("webix", "DataValue")
 @js.native
 class DataValueCls () extends DataValue {
-  def this(config: js.Any) = this()
+  def this(config: DataValueConfig) = this()
 }
 

@@ -158,6 +158,8 @@ object atPulumiAwsMod extends js.Object {
     var DynamoDBStreams: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.DynamoDBStreams] = js.native
     val DynamoDBStreamsNs: atPulumiAwsLib.TypeofDynamoDBStreams = js.native
     var EC2: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.EC2] = js.native
+    var EC2InstanceConnect: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.EC2InstanceConnect] = js.native
+    val EC2InstanceConnectNs: atPulumiAwsLib.TypeofEC2InstanceConnect = js.native
     var EC2MetadataCredentials: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.EC2MetadataCredentials] = js.native
     val EC2Ns: atPulumiAwsLib.TypeofEC2 = js.native
     var ECR: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ECR] = js.native

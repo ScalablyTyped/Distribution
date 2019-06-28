@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait ChooseVideoOptions extends js.Object {
   /**
+    * 摄像切换
+    * - front: 前置摄像头
+    * - back: 后置摄像头
+    */
+  var camera: js.UndefOr[
+    uniDashAppLib.uniDashAppLibStrings.front | uniDashAppLib.uniDashAppLibStrings.back
+  ] = js.undefined
+  /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -35,6 +43,7 @@ trait ChooseVideoOptions extends js.Object {
 object ChooseVideoOptions {
   @scala.inline
   def apply(
+    camera: uniDashAppLib.uniDashAppLibStrings.front | uniDashAppLib.uniDashAppLibStrings.back = null,
     complete: () => scala.Unit = null,
     compressed: js.UndefOr[scala.Boolean] = js.undefined,
     fail: () => scala.Unit = null,
@@ -43,6 +52,7 @@ object ChooseVideoOptions {
     success: /* result */ ChooseVideoSuccess => scala.Unit = null
   ): ChooseVideoOptions = {
     val __obj = js.Dynamic.literal()
+    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))

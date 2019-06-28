@@ -57,6 +57,29 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[AuthorizeIpRulesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Copies the specified image from the specified Region to the current Region.
+    */
+  def copyWorkspaceImage(): awsDashSdkLib.libRequestMod.Request[CopyWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def copyWorkspaceImage(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CopyWorkspaceImageResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CopyWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Copies the specified image from the specified Region to the current Region.
+    */
+  def copyWorkspaceImage(params: CopyWorkspaceImageRequest): awsDashSdkLib.libRequestMod.Request[CopyWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def copyWorkspaceImage(
+    params: CopyWorkspaceImageRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CopyWorkspaceImageResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CopyWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates an IP access control group. An IP access control group provides you with the ability to control the IP addresses from which users are allowed to access their WorkSpaces. To specify the CIDR address ranges, add rules to your IP access control group and then associate the group with your directory. You can add rules when you create the group or at any time using AuthorizeIpRules. There is a default IP access control group associated with your directory. If you don't associate an IP access control group with your directory, the default group is used. The default group includes a default rule that allows users to access their WorkSpaces from anywhere. You cannot modify the default IP access control group for your directory.
     */
   def createIpGroup(): awsDashSdkLib.libRequestMod.Request[CreateIpGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -172,7 +195,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image. 
+    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and un-share the image if it is shared with other accounts. 
     */
   def deleteWorkspaceImage(): awsDashSdkLib.libRequestMod.Request[DeleteWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteWorkspaceImage(
@@ -183,7 +206,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image. 
+    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and un-share the image if it is shared with other accounts. 
     */
   def deleteWorkspaceImage(params: DeleteWorkspaceImageRequest): awsDashSdkLib.libRequestMod.Request[DeleteWorkspaceImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteWorkspaceImage(
@@ -379,6 +402,29 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Describes the snapshots for the specified WorkSpace.
+    */
+  def describeWorkspaceSnapshots(): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeWorkspaceSnapshots(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeWorkspaceSnapshotsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes the snapshots for the specified WorkSpace.
+    */
+  def describeWorkspaceSnapshots(params: DescribeWorkspaceSnapshotsRequest): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeWorkspaceSnapshots(
+    params: DescribeWorkspaceSnapshotsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeWorkspaceSnapshotsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
     */
   def describeWorkspaces(): awsDashSdkLib.libRequestMod.Request[DescribeWorkspacesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -563,7 +609,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyWorkspacePropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets the state of the specified WorkSpace. To maintain a WorkSpace without being interrupted, set the WorkSpace state to ADMIN_MAINTENANCE. WorkSpaces in this state do not respond to requests to reboot, stop, start, or rebuild. An AutoStop WorkSpace in this state is not stopped. Users can log into a WorkSpace in the ADMIN_MAINTENANCE state.
+    * Sets the state of the specified WorkSpace. To maintain a WorkSpace without being interrupted, set the WorkSpace state to ADMIN_MAINTENANCE. WorkSpaces in this state do not respond to requests to reboot, stop, start, rebuild, or restore. An AutoStop WorkSpace in this state is not stopped. Users cannot log into a WorkSpace in the ADMIN_MAINTENANCE state.
     */
   def modifyWorkspaceState(): awsDashSdkLib.libRequestMod.Request[ModifyWorkspaceStateResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyWorkspaceState(
@@ -574,7 +620,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyWorkspaceStateResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sets the state of the specified WorkSpace. To maintain a WorkSpace without being interrupted, set the WorkSpace state to ADMIN_MAINTENANCE. WorkSpaces in this state do not respond to requests to reboot, stop, start, or rebuild. An AutoStop WorkSpace in this state is not stopped. Users can log into a WorkSpace in the ADMIN_MAINTENANCE state.
+    * Sets the state of the specified WorkSpace. To maintain a WorkSpace without being interrupted, set the WorkSpace state to ADMIN_MAINTENANCE. WorkSpaces in this state do not respond to requests to reboot, stop, start, rebuild, or restore. An AutoStop WorkSpace in this state is not stopped. Users cannot log into a WorkSpace in the ADMIN_MAINTENANCE state.
     */
   def modifyWorkspaceState(params: ModifyWorkspaceStateRequest): awsDashSdkLib.libRequestMod.Request[ModifyWorkspaceStateResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyWorkspaceState(
@@ -631,6 +677,29 @@ trait WorkSpaces
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[RebuildWorkspacesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
+    */
+  def restoreWorkspace(): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def restoreWorkspace(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RestoreWorkspaceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
+    */
+  def restoreWorkspace(params: RestoreWorkspaceRequest): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def restoreWorkspace(
+    params: RestoreWorkspaceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RestoreWorkspaceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes one or more rules from the specified IP access control group.
     */

@@ -11,6 +11,8 @@ trait DragItem extends js.Object {
   var $dragHTML_Original: WebixCallback = js.native
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback = js.native
+  @JSName("$dropHTML")
+  var $dropHTML_Original: WebixCallback = js.native
   @JSName("$drag")
   def $drag(source: stdLib.HTMLElement, ev: stdLib.Event): java.lang.String = js.native
   @JSName("$dragHTML")
@@ -30,5 +32,7 @@ trait DragItem extends js.Object {
   def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
   @JSName("$dropAllow")
   def $dropAllow(args: js.Any*): js.Any = js.native
+  @JSName("$dropHTML")
+  def $dropHTML(args: js.Any*): js.Any = js.native
 }
 

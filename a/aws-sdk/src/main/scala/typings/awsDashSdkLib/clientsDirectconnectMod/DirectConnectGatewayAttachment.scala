@@ -11,7 +11,7 @@ trait DirectConnectGatewayAttachment extends js.Object {
     */
   var attachmentState: js.UndefOr[DirectConnectGatewayAttachmentState] = js.undefined
   /**
-    * The type of attachment.
+    * The interface type.
     */
   var attachmentType: js.UndefOr[DirectConnectGatewayAttachmentType] = js.undefined
   /**

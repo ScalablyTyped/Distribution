@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait EndpointBatchRequest extends js.Object {
   /**
-    * List of items to update. Maximum 100 items
+    * An array that defines the endpoints to create or update and, for each endpoint, the property values to set or change. An array can contain a maximum of 100 items.
     */
-  var Item: js.UndefOr[ListOfEndpointBatchItem] = js.undefined
+  var Item: ListOfEndpointBatchItem
 }
 
 object EndpointBatchRequest {
   @scala.inline
-  def apply(Item: ListOfEndpointBatchItem = null): EndpointBatchRequest = {
-    val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item)
+  def apply(Item: ListOfEndpointBatchItem): EndpointBatchRequest = {
+    val __obj = js.Dynamic.literal(Item = Item)
+  
     __obj.asInstanceOf[EndpointBatchRequest]
   }
 }

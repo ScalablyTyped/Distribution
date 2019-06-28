@@ -7,57 +7,55 @@ import scala.scalajs.js.annotation._
 
 trait ActivityResponse extends js.Object {
   /**
-    * The ID of the application to which the campaign applies.
+    * The unique identifier for the application that the campaign applies to.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: __string
   /**
-    * The ID of the campaign to which the activity applies.
+    * The unique identifier for the campaign that the activity applies to.
     */
-  var CampaignId: js.UndefOr[__string] = js.undefined
+  var CampaignId: __string
   /**
-    * The actual time the activity was marked CANCELLED or COMPLETED. Provided in ISO 8601 format.
+    * The actual time, in ISO 8601 format, when the activity was marked CANCELLED or COMPLETED.
     */
   var End: js.UndefOr[__string] = js.undefined
   /**
-    * The unique activity ID.
+    * The unique identifier for the activity.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: __string
   /**
-    * Indicates whether the activity succeeded.
-  Valid values: SUCCESS, FAIL
+    * Specifies whether the activity succeeded. Possible values are SUCCESS and FAIL.
     */
   var Result: js.UndefOr[__string] = js.undefined
   /**
-    * The scheduled start time for the activity in ISO 8601 format.
+    * The scheduled start time, in ISO 8601 format, for the activity.
     */
   var ScheduledStart: js.UndefOr[__string] = js.undefined
   /**
-    * The actual start time of the activity in ISO 8601 format.
+    * The actual start time, in ISO 8601 format, of the activity.
     */
   var Start: js.UndefOr[__string] = js.undefined
   /**
-    * The state of the activity.
-  Valid values: PENDING, INITIALIZING, RUNNING, PAUSED, CANCELLED, COMPLETED
+    * The state of the activity. Possible values are: PENDING, INITIALIZING, RUNNING, PAUSED, CANCELLED, and COMPLETED.
     */
   var State: js.UndefOr[__string] = js.undefined
   /**
-    * The total number of endpoints to which the campaign successfully delivered messages.
+    * The total number of endpoints that the campaign successfully delivered messages to.
     */
   var SuccessfulEndpointCount: js.UndefOr[__integer] = js.undefined
   /**
-    * The total number of timezones completed.
+    * The total number of time zones that were completed.
     */
   var TimezonesCompletedCount: js.UndefOr[__integer] = js.undefined
   /**
-    * The total number of unique timezones present in the segment.
+    * The total number of unique time zones that are in the segment for the campaign.
     */
   var TimezonesTotalCount: js.UndefOr[__integer] = js.undefined
   /**
-    * The total number of endpoints to which the campaign attempts to deliver messages.
+    * The total number of endpoints that the campaign attempted to deliver messages to.
     */
   var TotalEndpointCount: js.UndefOr[__integer] = js.undefined
   /**
-    * The ID of a variation of the campaign used for A/B testing.
+    * The unique identifier for the campaign treatment that the activity applies to. A treatment is a variation of a campaign that's used for A/B testing of a campaign.
     */
   var TreatmentId: js.UndefOr[__string] = js.undefined
 }
@@ -65,10 +63,10 @@ trait ActivityResponse extends js.Object {
 object ActivityResponse {
   @scala.inline
   def apply(
-    ApplicationId: __string = null,
-    CampaignId: __string = null,
+    ApplicationId: __string,
+    CampaignId: __string,
+    Id: __string,
     End: __string = null,
-    Id: __string = null,
     Result: __string = null,
     ScheduledStart: __string = null,
     Start: __string = null,
@@ -79,11 +77,8 @@ object ActivityResponse {
     TotalEndpointCount: js.UndefOr[__integer] = js.undefined,
     TreatmentId: __string = null
   ): ActivityResponse = {
-    val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (CampaignId != null) __obj.updateDynamic("CampaignId")(CampaignId)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, CampaignId = CampaignId, Id = Id)
     if (End != null) __obj.updateDynamic("End")(End)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Result != null) __obj.updateDynamic("Result")(Result)
     if (ScheduledStart != null) __obj.updateDynamic("ScheduledStart")(ScheduledStart)
     if (Start != null) __obj.updateDynamic("Start")(Start)

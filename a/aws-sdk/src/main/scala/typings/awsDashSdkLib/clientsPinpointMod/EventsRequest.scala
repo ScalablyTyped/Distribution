@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait EventsRequest extends js.Object {
   /**
-    * A batch of events to process. Each BatchItem consists of an endpoint ID as the key, and an EventsBatch object as the value.
+    * The batch of events to process. For each item in a batch, the endpoint ID acts as a key that has an EventsBatch object as its value.
     */
-  var BatchItem: js.UndefOr[MapOfEventsBatch] = js.undefined
+  var BatchItem: MapOfEventsBatch
 }
 
 object EventsRequest {
   @scala.inline
-  def apply(BatchItem: MapOfEventsBatch = null): EventsRequest = {
-    val __obj = js.Dynamic.literal()
-    if (BatchItem != null) __obj.updateDynamic("BatchItem")(BatchItem)
+  def apply(BatchItem: MapOfEventsBatch): EventsRequest = {
+    val __obj = js.Dynamic.literal(BatchItem = BatchItem)
+  
     __obj.asInstanceOf[EventsRequest]
   }
 }

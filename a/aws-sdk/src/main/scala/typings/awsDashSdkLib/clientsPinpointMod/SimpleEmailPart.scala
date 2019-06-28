@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait SimpleEmailPart extends js.Object {
   /**
-    * The character set of the content.
+    * The applicable character set for the message content.
     */
   var Charset: js.UndefOr[__string] = js.undefined
   /**
-    * The textual data of the content.
+    * The textual data of the message content.
     */
   var Data: js.UndefOr[__string] = js.undefined
 }
