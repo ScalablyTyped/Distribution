@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-websocket"
-version := "5.0-dt-20181017Z-cb33c6"
+version := "5.0-dt-20190628Z-4fe3a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

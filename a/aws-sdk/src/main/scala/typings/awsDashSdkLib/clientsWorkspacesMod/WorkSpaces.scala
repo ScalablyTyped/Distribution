@@ -402,29 +402,6 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the snapshots for the specified WorkSpace.
-    */
-  def describeWorkspaceSnapshots(): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def describeWorkspaceSnapshots(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ DescribeWorkspaceSnapshotsResult, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  /**
-    * Describes the snapshots for the specified WorkSpace.
-    */
-  def describeWorkspaceSnapshots(params: DescribeWorkspaceSnapshotsRequest): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def describeWorkspaceSnapshots(
-    params: DescribeWorkspaceSnapshotsRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ DescribeWorkspaceSnapshotsResult, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[DescribeWorkspaceSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  /**
     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
     */
   def describeWorkspaces(): awsDashSdkLib.libRequestMod.Request[DescribeWorkspacesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -677,29 +654,6 @@ trait WorkSpaces
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[RebuildWorkspacesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  /**
-    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
-    */
-  def restoreWorkspace(): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def restoreWorkspace(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ RestoreWorkspaceResult, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  /**
-    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
-    */
-  def restoreWorkspace(params: RestoreWorkspaceRequest): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def restoreWorkspace(
-    params: RestoreWorkspaceRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ RestoreWorkspaceResult, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[RestoreWorkspaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes one or more rules from the specified IP access control group.
     */

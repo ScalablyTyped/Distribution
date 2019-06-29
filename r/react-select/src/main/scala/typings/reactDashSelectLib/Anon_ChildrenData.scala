@@ -11,9 +11,9 @@ trait Anon_ChildrenData extends js.Object {
   /* The data of the selected option. */
   var data: js.Any
   /** props passed to the wrapping element for the group. */
-  var innerProps: reactDashSelectLib.libComponentsOptionMod.InnerProps
+  var innerProps: reactDashSelectLib.srcComponentsOptionMod.InnerProps
   /** Inner ref to DOM Node */
-  var innerRef: reactDashSelectLib.libTypesMod.InnerRef
+  var innerRef: reactDashSelectLib.srcTypesMod.InnerRef
   /* Text to be displayed representing the option. */
   var label: java.lang.String
   /* Type is used by the menu to determine whether this is an option or a group.
@@ -26,8 +26,8 @@ object Anon_ChildrenData {
   def apply(
     children: reactLib.reactMod.ReactNode,
     data: js.Any,
-    innerProps: reactDashSelectLib.libComponentsOptionMod.InnerProps,
-    innerRef: reactDashSelectLib.libTypesMod.InnerRef,
+    innerProps: reactDashSelectLib.srcComponentsOptionMod.InnerProps,
+    innerRef: reactDashSelectLib.srcTypesMod.InnerRef,
     label: java.lang.String,
     `type`: reactDashSelectLib.reactDashSelectLibStrings.option
   ): Anon_ChildrenData = {

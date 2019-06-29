@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait InstanceArgs extends js.Object {
   /**
-    * (Required unless a `snapshot_identifier` or
-    * `replicate_source_db` is provided) The allocated storage in gibibytes.
+    * The allocated storage in gibibytes. If `max_allocated_storage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.
     */
   val allocatedStorage: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
@@ -150,6 +149,10 @@ trait InstanceArgs extends js.Object {
     * for more information.
     */
   val maintenanceWindow: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocated_storage`. Must be greater than or equal to `allocated_storage` or `0` to disable Storage Autoscaling.
+    */
+  val maxAllocatedStorage: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
     * The interval, in seconds, between points
     * when Enhanced Monitoring metrics are collected for the DB instance. To disable
@@ -314,6 +317,7 @@ object InstanceArgs {
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     licenseModel: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     maintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    maxAllocatedStorage: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     monitoringInterval: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     monitoringRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     multiAz: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
@@ -363,6 +367,7 @@ object InstanceArgs {
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (licenseModel != null) __obj.updateDynamic("licenseModel")(licenseModel.asInstanceOf[js.Any])
     if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
+    if (maxAllocatedStorage != null) __obj.updateDynamic("maxAllocatedStorage")(maxAllocatedStorage.asInstanceOf[js.Any])
     if (monitoringInterval != null) __obj.updateDynamic("monitoringInterval")(monitoringInterval.asInstanceOf[js.Any])
     if (monitoringRoleArn != null) __obj.updateDynamic("monitoringRoleArn")(monitoringRoleArn.asInstanceOf[js.Any])
     if (multiAz != null) __obj.updateDynamic("multiAz")(multiAz.asInstanceOf[js.Any])

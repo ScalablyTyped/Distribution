@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MarkSpec extends js.Object {
+trait MarkSpec
+  extends /**
+  * Allow specifying arbitrary fields on a MarkSpec.
+  */
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
     * The attributes that marks of this type get.
     */
@@ -59,6 +63,10 @@ trait MarkSpec extends js.Object {
 object MarkSpec {
   @scala.inline
   def apply(
+    StringDictionary: /**
+    * Allow specifying arbitrary fields on a MarkSpec.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     attrs: org.scalablytyped.runtime.StringDictionary[AttributeSpec] = null,
     excludes: java.lang.String = null,
     group: java.lang.String = null,
@@ -68,6 +76,7 @@ object MarkSpec {
     toDOM: (/* mark */ Mark[_], /* inline */ scala.Boolean) => DOMOutputSpec = null
   ): MarkSpec = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (excludes != null) __obj.updateDynamic("excludes")(excludes)
     if (group != null) __obj.updateDynamic("group")(group)

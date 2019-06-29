@@ -7,17 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Country extends js.Object {
   var dialCode: java.lang.String
-  var id: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 241 */ js.Any
+  var id: java.lang.String
   var label: java.lang.String
 }
 
 object Country {
   @scala.inline
-  def apply(
-    dialCode: java.lang.String,
-    id: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 241 */ js.Any,
-    label: java.lang.String
-  ): Country = {
+  def apply(dialCode: java.lang.String, id: java.lang.String, label: java.lang.String): Country = {
     val __obj = js.Dynamic.literal(dialCode = dialCode, id = id, label = label)
   
     __obj.asInstanceOf[Country]

@@ -13,26 +13,26 @@ trait Anon_ChildrenGetPortalPlacement extends js.Object {
   /** Set the maximum height of the menu. */
   var maxMenuHeight: scala.Double
   /** Set whether the menu should be at the top, at the bottom. The auto options sets it to bottom. */
-  var menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement
+  var menuPlacement: reactDashSelectLib.srcTypesMod.MenuPlacement
   /* The CSS position value of the menu, when "fixed" extra layout management is required */
-  var menuPosition: reactDashSelectLib.libTypesMod.MenuPosition
+  var menuPosition: reactDashSelectLib.srcTypesMod.MenuPosition
   /** Set whether the page should scroll to show the menu. */
   var menuShouldScrollIntoView: scala.Boolean
   /** Set the minimum height of the menu. */
   var minMenuHeight: scala.Double
   /** Callback to update the portal after possible flip. */
-  def getPortalPlacement(state: reactDashSelectLib.libComponentsMenuMod.MenuState): scala.Unit
+  def getPortalPlacement(state: reactDashSelectLib.srcComponentsMenuMod.MenuState): scala.Unit
 }
 
 object Anon_ChildrenGetPortalPlacement {
   @scala.inline
   def apply(
     children: reactLib.reactMod.ReactElement,
-    getPortalPlacement: reactDashSelectLib.libComponentsMenuMod.MenuState => scala.Unit,
+    getPortalPlacement: reactDashSelectLib.srcComponentsMenuMod.MenuState => scala.Unit,
     innerProps: js.Object,
     maxMenuHeight: scala.Double,
-    menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement,
-    menuPosition: reactDashSelectLib.libTypesMod.MenuPosition,
+    menuPlacement: reactDashSelectLib.srcTypesMod.MenuPlacement,
+    menuPosition: reactDashSelectLib.srcTypesMod.MenuPosition,
     menuShouldScrollIntoView: scala.Boolean,
     minMenuHeight: scala.Double
   ): Anon_ChildrenGetPortalPlacement = {

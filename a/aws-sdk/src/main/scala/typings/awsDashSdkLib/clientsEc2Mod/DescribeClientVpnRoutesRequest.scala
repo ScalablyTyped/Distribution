@@ -21,7 +21,7 @@ trait DescribeClientVpnRoutesRequest extends js.Object {
   /**
     * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
     */
-  var MaxResults: js.UndefOr[MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[DescribeClientVpnRoutesMaxResults] = js.undefined
   /**
     * The token to retrieve the next page of results.
     */
@@ -34,7 +34,7 @@ object DescribeClientVpnRoutesRequest {
     ClientVpnEndpointId: String,
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: js.UndefOr[DescribeClientVpnRoutesMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribeClientVpnRoutesRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId)

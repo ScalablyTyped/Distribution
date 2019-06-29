@@ -48,6 +48,10 @@ trait ParameterState extends js.Object {
     * The value of the parameter.
     */
   val value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The version of the parameter.
+    */
+  val version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
 object ParameterState {
@@ -62,7 +66,8 @@ object ParameterState {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     tier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ssmParameterTypeMod.ParameterType] = null,
-    value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    version: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): ParameterState = {
     val __obj = js.Dynamic.literal()
     if (allowedPattern != null) __obj.updateDynamic("allowedPattern")(allowedPattern.asInstanceOf[js.Any])
@@ -75,6 +80,7 @@ object ParameterState {
     if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterState]
   }
 }

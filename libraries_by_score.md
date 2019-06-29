@@ -3169,6 +3169,7 @@
 | 0.6622073254696742 | [asenv](./a/asenv) | NODE_ENV accessor
 | 0.6621869997672357 | [cavy](./c/cavy) | An integration test framework for React Native.
 | 0.6621460670619517 | [fontfaceobserver](./f/fontfaceobserver) | Detect if web fonts are available
+| 0.6621112641366661 | [smpte-timecode](./s/smpte-timecode) | JavaScript implementation of SMPTE timecode type
 | 0.6619225073110262 | [rc-time-picker](./r/rc-time-picker) | React TimePicker
 | 0.6618651436352434 | [json-to-ast](./j/json-to-ast) | JSON AST parser
 | 0.6617995253714086 | [fill-pdf](./f/fill-pdf) | Fill out pdf forms
@@ -3195,6 +3196,7 @@
 | 0.6606086663099527 | [webpack-stream](./w/webpack-stream) | Run webpack as a stream
 | 0.6605856300965124 | [hapi__sntp](./h/hapi__sntp) | SNTP Client
 | 0.6605311670987146 | [is-admin](./i/is-admin) | Check if the process is running as Administrator o
+| 0.6604866330561084 | [express-sslify](./e/express-sslify) | Enforces SSL for node.js express projects
 | 0.6604015522879685 | [js-data-adapter](./j/js-data-adapter) | Base adapter class that all other js-data adapters
 | 0.6603782541063442 | [redux-saga-routines](./r/redux-saga-routines) | Routines for redux-saga also useful with redux-for
 | 0.6603305581850926 | [react-native-uuid-generat](./r/react-native-uuid-generator) | A simple wrapper around the native iOS and Android
@@ -3335,6 +3337,7 @@
 | 0.6540646252332394 | [chai-roughly](./c/chai-roughly) | deep equals assertions with tolerance for chai
 | 0.6540567731301338 | [v-chart-plugin](./v/v-chart-plugin) | This plugin is designed to allow Vue.js developers
 | 0.654052508564311 | [hapi__basic](./h/hapi__basic) | Basic authentication plugin
+| 0.6540312885548776 | [node-timecodes](./n/node-timecodes) | Time and SMTPE Timecodes conversions
 | 0.6540283343553965 | [base32-encode](./b/base32-encode) | Base32 encoder with support for multiple variants.
 | 0.6538423477060898 | [bash-glob](./b/bash-glob) | Bash-powered globbing for node.js
 | 0.6538362199492362 | [react-click-outside-hook](./r/react-click-outside-hook) | Simple to use React Hook with click outside functi
@@ -4402,6 +4405,7 @@
 | 0.5461560562838292 | [electron-spellchecker](./e/electron-spellchecker) | Implement spellchecking, correctly
 | 0.5459011710897049 | [cordova-plugin-media](./c/cordova-plugin-media) | Cordova Media Plugin
 | 0.5457418158632131 | [filter-console](./f/filter-console) | Filter out unwanted console.log() output
+| 0.5456156152691239 | [react-beforeunload](./r/react-beforeunload) | React component and hook which listens to beforeun
 | 0.545425398659792 | [optimist](./o/optimist) | Light-weight option parsing with an argv hash. No 
 | 0.5454095242347496 | [vscode-uri](./v/vscode-uri) | The URI implementation that is used by VS Code and
 | 0.5451756954008871 | [graphql-resolvers](./g/graphql-resolvers) | Resolver composition library for GraphQL.
@@ -5282,6 +5286,7 @@
 | 0.4099913093876357 | [lodash_dot_isarguments](./l/lodash_dot_isarguments) | The lodash method _.isArguments exported as a modu
 | 0.4099744936540203 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
 | 0.40985866229697704 | [musicmetadata](./m/musicmetadata) | Streaming music metadata parser for node and the b
+| 0.40972679990136196 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress.
 | 0.40950957589333437 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an
 | 0.40935139229439077 | [rx-lite-virtualtime](./r/rx-lite-virtualtime) | Lightweight library with virtual time functions fo
 | 0.4090581649963611 | [dynogels](./d/dynogels) | DynamoDB data mapper
@@ -5344,6 +5349,7 @@
 | 0.4023623308121943 | [toobusy-js](./t/toobusy-js) | Don't fall over when your Node.JS server is too bu
 | 0.40224861976749765 | [sandboxed-module](./s/sandboxed-module) | A sandboxed Node.js module loader that lets you in
 | 0.4020170402563557 | [rx-lite-testing](./r/rx-lite-testing) | Lightweight library with testing functions for com
+| 0.401952542230729 | [node-windows](./n/node-windows) | Support for Windows services, event logging, UAC, 
 | 0.40157546888019874 | [angular-websocket](./a/angular-websocket) | An Angular WebSocket service for connecting client
 | 0.4013683793572822 | [swaggerize-express](./s/swaggerize-express) | Design-driven apis with swagger 2.0 and express.
 | 0.4013503630823229 | [angular-file-saver](./a/angular-file-saver) | An AngularJS service that implements the HTML5 W3C
@@ -6115,6 +6121,7 @@
 | 0.27455107523954037 | [color-check](./c/color-check) | Color Check is a very tine library for checking yo
 | 0.2739178063019898 | [websocket-async](./w/websocket-async) | An async/await WebSocket client for browsers
 | 0.2738605991317472 | [nivo__geo](./n/nivo__geo) | -
+| 0.27378376002277016 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of 
 | 0.2735730133960045 | [cordova-plugin-insomnia](./c/cordova-plugin-insomnia) | Prevent the screen of the mobile device from falli
 | 0.27348350867998483 | [noisejs](./n/noisejs) | Perlin noise implementation
 | 0.2734593170963468 | [gyronorm](./g/gyronorm) | Accesses the gyroscope and accelerometer data from
@@ -6163,6 +6170,7 @@
 | 0.26346626698337666 | [react-native-sortable-gri](./r/react-native-sortable-grid) | Drag-and-drop sortable grid view for React Native.
 | 0.26343982136805366 | [jsqrcode](./j/jsqrcode) | a node port of Lazar Laszlo's jsqrcode qr code dec
 | 0.2634128739103551 | [orderedmap](./o/orderedmap) | Persistent ordered mapping from strings
+| 0.2632331065273267 | [reach__utils](./r/reach__utils) | Internal, shared utilities for Reach UI.
 | 0.2629899124448849 | [twilio-mcs-client](./t/twilio-mcs-client) | Twilio Media Content Service client library
 | 0.26261187123171975 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys
 | 0.2621452023607836 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
@@ -6179,12 +6187,15 @@
 | 0.2593215859485115 | [flexmonster](./f/flexmonster) | Pivot table component for web reporting. The most 
 | 0.2592326258858422 | [apex_dot_js](./a/apex_dot_js) | λ improves AWS Lambda's UX with promises
 | 0.25909043511259466 | [react-json](./r/react-json) | A JSON editor packed as a React.js component and t
+| 0.2589372012852833 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts 
 | 0.25891952921022904 | [gl-react](./g/gl-react) | Universal React library, write and compose WebGL s
 | 0.25883187161207016 | [preval_dot_macro](./p/preval_dot_macro) | Pre-evaluate code at build-time with babel-macros
 | 0.2585675104355046 | [react-native-modal](./r/react-native-modal) | An enhanced React-Native modal
 | 0.25847202838983296 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet
 | 0.2583868473607568 | [terminal-menu](./t/terminal-menu) | retro ansi terminal menus for serious 80s technico
+| 0.25838156890484715 | [reach__rect](./r/reach__rect) | Measure React elements position in the DOM
 | 0.25787373178245504 | [multi-progress](./m/multi-progress) | Multiple progress bars based on the "progress" pac
+| 0.2577641400520777 | [reach__visually-hidden](./r/reach__visually-hidden) | Render text that is announced to screen readers bu
 | 0.2576453543766476 | [di-lite](./d/di-lite) | A ultra light-weight dependency injection containe
 | 0.25739905626968973 | [zen-push](./z/zen-push) | An Observable push stream
 | 0.2573217859304642 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel
@@ -6218,7 +6229,9 @@
 | 0.2509672099525135 | [seamless](./s/seamless) | Beautiful, seamless iframes with seamless.js -----
 | 0.2506514720836033 | [google-cloud__paginator](./g/google-cloud__paginator) | A result paging utility used by Google node.js mod
 | 0.25053434738652886 | [youtube-dl](./y/youtube-dl) | youtube-dl driver for node
+| 0.25026689807248026 | [reach__window-size](./r/reach__window-size) | Measure the window size in React
 | 0.24988564728852566 | [tinder](./t/tinder) | Programmatically access the Tinder dating service 
+| 0.24966519183907 | [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu.
 | 0.249547156748934 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion.
 | 0.24928470318201168 | [datatables_dot_net-rowgro](./d/datatables_dot_net-rowgroup) | RowGroup for DataTables
 | 0.24845831491339465 | [lodash_dot_isstring](./l/lodash_dot_isstring) | The lodash method _.isString exported as a module.
@@ -6237,6 +6250,7 @@
 | 0.24602427997595075 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl
 | 0.24597339537121324 | [requirejs](./r/requirejs) | Node adapter for RequireJS, for loading AMD module
 | 0.2458790019665542 | [bootstrap-menu](./b/bootstrap-menu) | Context menu plugin using Bootstrap's style
+| 0.24565001010930043 | [reach__auto-id](./r/reach__auto-id) | Autogenerate IDs to facilitate WAI-ARIA and server
 | 0.24549134903716402 | [react-native-firebase](./r/react-native-firebase) | A well tested, feature rich Firebase implementatio
 | 0.24543167973463695 | [whatwg-streams](./w/whatwg-streams) | An implementation of the whatwg/streams spec
 | 0.2449709470252312 | [semantic-ui-site](./s/semantic-ui-site) | Single component release of site
@@ -6249,10 +6263,12 @@
 | 0.2439302319737026 | [bunyan-blackhole](./b/bunyan-blackhole) | create a fully functional bunyan logger that doesn
 | 0.2430993722290748 | [uifabric__styling](./u/uifabric__styling) | Defines the core Office UI Fabric styles through a
 | 0.242816450825178 | [semantic-ui-sidebar](./s/semantic-ui-sidebar) | Single component release of sidebar
+| 0.24231304133245818 | [reach__skip-nav](./r/reach__skip-nav) | Skip navigation links for screen reader and keyboa
 | 0.24225999573449564 | [apollo-cache-control](./a/apollo-cache-control) | A GraphQL extension for cache control
 | 0.24216063506170663 | [settings](./s/settings) | Simple environment-based application settings
 | 0.2420974583902906 | [skatejs](./s/skatejs) | Skate is a library built on top of the W3C web com
 | 0.24208133039884608 | [absolute](./a/absolute) | Test if a path (string) is absolute
+| 0.2418169295854879 | [reach__tooltip](./r/reach__tooltip) | Accessible tooltips
 | 0.24143230544704292 | [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes.
 | 0.24140141220506414 | [semantic-ui-tab](./s/semantic-ui-tab) | Single component release of tab
 | 0.24130805546313705 | [riotcontrol](./r/riotcontrol) | Event Controller / Dispatcher For RiotJS, Inspired
@@ -6326,6 +6342,7 @@
 | 0.2181148622534853 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
 | 0.21778634452106732 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
 | 0.21721272058069163 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs).
+| 0.21687662964812549 | [reach__combobox](./r/reach__combobox) | Accessible React Combobox (Autocomplete).
 | 0.21660068750819997 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin
 | 0.21657662711177622 | [react-material-ui-form-va](./r/react-material-ui-form-validator) | Simple validator for forms designed with material-
 | 0.21605075426888742 | [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook
@@ -6499,6 +6516,7 @@
 | 0.1380756461549345 | [lodash_dot_size](./l/lodash_dot_size) | The lodash method _.size exported as a module.
 | 0.13685808446193382 | [flowjs](./f/flowjs) | asynchronous flow-control micro library
 | 0.1366816406668962 | [jquery_dot_cookie](./j/jquery_dot_cookie) | A simple, lightweight jQuery plugin for reading, w
+| 0.13662605240873926 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
 | 0.13647861035163508 | [reveal](./r/reveal) | The HTML presentation framework
 | 0.13566061692972997 | [siesta](./s/siesta) | prototype RESTful services quickly
 | 0.13556648548360978 | [gulp-pug-i18n](./g/gulp-pug-i18n) | Gulp plugin for Pug with i18n support

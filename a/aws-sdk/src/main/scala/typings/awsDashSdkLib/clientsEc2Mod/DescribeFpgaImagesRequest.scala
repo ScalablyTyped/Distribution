@@ -21,7 +21,7 @@ trait DescribeFpgaImagesRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[DescribeFpgaImagesMaxResults] = js.undefined
   /**
     * The token to retrieve the next page of results.
     */
@@ -38,7 +38,7 @@ object DescribeFpgaImagesRequest {
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     FpgaImageIds: FpgaImageIdList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: js.UndefOr[DescribeFpgaImagesMaxResults] = js.undefined,
     NextToken: NextToken = null,
     Owners: OwnerStringList = null
   ): DescribeFpgaImagesRequest = {

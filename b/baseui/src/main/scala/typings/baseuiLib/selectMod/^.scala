@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val MultiValue: reactLib.reactMod.FC[js.Any] = js.native
+  val STATE_CHANGE_TYPE: baseuiLib.selectMod.STATE_CHANGE_TYPE = js.native
   val SingleValue: reactLib.reactMod.FC[js.Any] = js.native
   val StatefulSelect: reactLib.reactMod.FC[StatefulSelectProps] = js.native
   val StyledClearIcon: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
@@ -27,5 +28,6 @@ object ^ extends js.Object {
   val StyledSelectArrow: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
   val StyledSingleValue: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
   val StyledValueContainer: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
+  val TYPE: baseuiLib.selectMod.TYPE = js.native
 }
 

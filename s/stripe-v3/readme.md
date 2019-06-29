@@ -27,6 +27,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Kamil Gałuszka <https://github.com/galuszkak>
 //                 Stefan Langeder <https://github.com/slangeder>
 //                 Marlos Borges <https://github.com/marlosin>
+//                 Thomas Marek <https://github.com/ttmarek>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

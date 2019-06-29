@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TypeofClassWebDriver
   extends org.scalablytyped.runtime.Instantiable2[
       /* session */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session, 
-      /* executor */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, 
+      /* executor */ seleniumDashWebdriverLib.httpMod.Executor, 
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver
     ] {
   // endregion

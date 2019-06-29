@@ -29,11 +29,19 @@ class Resolver protected ()
   /**
     * The DataSource name.
     */
-  val dataSource: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val dataSource: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The field name from the schema defined in the GraphQL API.
     */
   val field: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The resolver type. Valid values are `UNIT` and `PIPELINE`.
+    */
+  val kind: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * The PipelineConfig. A `pipeline_config` block is documented below.
+    */
+  val pipelineConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Functions]] = js.native
   /**
     * The request mapping template for this resolver.
     */

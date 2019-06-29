@@ -683,23 +683,6 @@ object resourcesNs extends js.Object {
       feeId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
     ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
-    def retreiveRefund(feeId: java.lang.String, refundId: java.lang.String): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
-    /**
-      * By default, you can see the 10 most recent refunds stored directly on the application fee object, but you can also retrieve details
-      * about a specific refund stored on the application fee.
-      */
-    def retreiveRefund(feeId: java.lang.String, refundId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
-    def retreiveRefund(
-      feeId: java.lang.String,
-      refundId: java.lang.String,
-      options: stripeLib.stripeMod.HeaderOptions,
-      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-    ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
-    def retreiveRefund(
-      feeId: java.lang.String,
-      refundId: java.lang.String,
-      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-    ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     /**
@@ -732,6 +715,23 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]
     ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
+    def retrieveRefund(feeId: java.lang.String, refundId: java.lang.String): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    /**
+      * By default, you can see the 10 most recent refunds stored directly on the application fee object, but you can also retrieve details
+      * about a specific refund stored on the application fee.
+      */
+    def retrieveRefund(feeId: java.lang.String, refundId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    def retrieveRefund(
+      feeId: java.lang.String,
+      refundId: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
+    ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    def retrieveRefund(
+      feeId: java.lang.String,
+      refundId: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
+    ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def updateRefund(feeId: java.lang.String, refundId: java.lang.String, data: stripeLib.Anon_Metadata): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     /**
       * Updates the specified application fee refund by setting the values of the parameters passed. Any parameters not provided will be left
@@ -1273,7 +1273,7 @@ object resourcesNs extends js.Object {
     def update(id: java.lang.String, data: stripeLib.stripeMod.chargesNs.IChargeUpdateOptions): js.Promise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     /**
       * Updates the specified charge by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
-      * This request accepts only the description, metadata, receipt_emailand fraud_details as arguments.
+      * This request accepts only the description, metadata, receipt_email and fraud_details as arguments.
       *
       * @param id The identifier of the charge to be updated
       * @param data An object containing the updated properties.

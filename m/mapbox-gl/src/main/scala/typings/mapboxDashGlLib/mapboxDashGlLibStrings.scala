@@ -138,6 +138,9 @@ object mapboxDashGlLibStrings {
   sealed trait background extends js.Object
   
   @js.native
+  sealed trait bearing extends js.Object
+  
+  @js.native
   sealed trait bevel extends js.Object
   
   @js.native
@@ -744,6 +747,8 @@ object mapboxDashGlLibStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def background: background = "background".asInstanceOf[background]
+  @scala.inline
+  def bearing: bearing = "bearing".asInstanceOf[bearing]
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline

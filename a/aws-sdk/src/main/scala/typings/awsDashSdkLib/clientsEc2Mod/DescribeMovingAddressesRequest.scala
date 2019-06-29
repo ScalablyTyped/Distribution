@@ -17,7 +17,7 @@ trait DescribeMovingAddressesRequest extends js.Object {
   /**
     * The maximum number of results to return for the request in a single page. The remaining results of the initial request can be seen by sending another request with the returned NextToken value. This value can be between 5 and 1000; if MaxResults is given a value outside of this range, an error is returned. Default: If no value is provided, the default is 1000.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeMovingAddressesMaxResults] = js.undefined
   /**
     * The token for the next page of results.
     */
@@ -33,7 +33,7 @@ object DescribeMovingAddressesRequest {
   def apply(
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeMovingAddressesMaxResults] = js.undefined,
     NextToken: String = null,
     PublicIps: ValueStringList = null
   ): DescribeMovingAddressesRequest = {

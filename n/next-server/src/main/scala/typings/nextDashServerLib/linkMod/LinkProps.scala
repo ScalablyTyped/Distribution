@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait LinkProps extends js.Object {
   var as: js.UndefOr[java.lang.String | nextDashServerLib.routerMod.UrlLike] = js.undefined
-  var children: reactLib.reactMod.ReactElement
+  var children: reactLib.reactMod.ReactNode
   var href: js.UndefOr[java.lang.String | nextDashServerLib.routerMod.UrlLike] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ js.Any, scala.Unit]] = js.undefined
   var passHref: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ trait LinkProps extends js.Object {
 object LinkProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactElement,
+    children: reactLib.reactMod.ReactNode,
     as: java.lang.String | nextDashServerLib.routerMod.UrlLike = null,
     href: java.lang.String | nextDashServerLib.routerMod.UrlLike = null,
     onError: /* error */ js.Any => scala.Unit = null,
@@ -30,7 +30,7 @@ object LinkProps {
     scroll: js.UndefOr[scala.Boolean] = js.undefined,
     shallow: js.UndefOr[scala.Boolean] = js.undefined
   ): LinkProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))

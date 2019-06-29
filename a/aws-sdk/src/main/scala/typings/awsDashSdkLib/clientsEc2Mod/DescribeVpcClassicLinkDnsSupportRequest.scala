@@ -9,11 +9,11 @@ trait DescribeVpcClassicLinkDnsSupportRequest extends js.Object {
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: js.UndefOr[MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[DescribeVpcClassicLinkDnsSupportMaxResults] = js.undefined
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[NextToken] = js.undefined
+  var NextToken: js.UndefOr[DescribeVpcClassicLinkDnsSupportNextToken] = js.undefined
   /**
     * One or more VPC IDs.
     */
@@ -23,8 +23,8 @@ trait DescribeVpcClassicLinkDnsSupportRequest extends js.Object {
 object DescribeVpcClassicLinkDnsSupportRequest {
   @scala.inline
   def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
+    MaxResults: js.UndefOr[DescribeVpcClassicLinkDnsSupportMaxResults] = js.undefined,
+    NextToken: DescribeVpcClassicLinkDnsSupportNextToken = null,
     VpcIds: VpcClassicLinkIdList = null
   ): DescribeVpcClassicLinkDnsSupportRequest = {
     val __obj = js.Dynamic.literal()

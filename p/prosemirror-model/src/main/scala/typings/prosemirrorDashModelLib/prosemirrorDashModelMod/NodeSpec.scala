@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NodeSpec extends js.Object {
+trait NodeSpec
+  extends /**
+  * Allow specifying arbitrary fields on a NodeSpec.
+  */
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
     * Can be set to true to indicate that, though this isn't a [leaf
     * node](#model.NodeType.isLeaf), it doesn't have directly editable
@@ -108,6 +112,10 @@ trait NodeSpec extends js.Object {
 object NodeSpec {
   @scala.inline
   def apply(
+    StringDictionary: /**
+    * Allow specifying arbitrary fields on a NodeSpec.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     atom: js.UndefOr[scala.Boolean] = js.undefined,
     attrs: org.scalablytyped.runtime.StringDictionary[AttributeSpec] = null,
     code: js.UndefOr[scala.Boolean] = js.undefined,
@@ -124,6 +132,7 @@ object NodeSpec {
     toDebugString: /* node */ ProsemirrorNode[_] => java.lang.String = null
   ): NodeSpec = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(atom)) __obj.updateDynamic("atom")(atom)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (!js.isUndefined(code)) __obj.updateDynamic("code")(code)

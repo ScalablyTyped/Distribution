@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object koaDashWebsocketMod {
-  type Middleware = koaDashComposeLib.koaDashComposeMod.Middleware[MiddlewareContext]
+  type Middleware[StateT, CustomT] = koaDashComposeLib.koaDashComposeMod.Middleware[MiddlewareContext[StateT] with CustomT]
 }

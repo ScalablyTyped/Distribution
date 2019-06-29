@@ -144,7 +144,6 @@ package object clientsAlexaforbusinessMod {
     - java.lang.String
   */
   type DistanceUnit = _DistanceUnit | java.lang.String
-  type E164PhoneNumber = java.lang.String
   type Email = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
@@ -224,12 +223,21 @@ package object clientsAlexaforbusinessMod {
   type OneClickPinDelay = java.lang.String
   type OrganizationName = java.lang.String
   type OutboundPhoneNumber = java.lang.String
+  type PhoneNumberList = js.Array[PhoneNumber]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MOBILE
+    - awsDashSdkLib.awsDashSdkLibStrings.WORK
+    - awsDashSdkLib.awsDashSdkLibStrings.HOME
+    - java.lang.String
+  */
+  type PhoneNumberType = _PhoneNumberType | java.lang.String
   type PrivacyPolicy = java.lang.String
   type ProductDescription = java.lang.String
   type ProductId = java.lang.String
   type ProfileDataList = js.Array[ProfileData]
   type ProfileName = java.lang.String
   type ProviderCalendarId = java.lang.String
+  type RawPhoneNumber = java.lang.String
   type ReleaseDate = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.YES
@@ -251,6 +259,9 @@ package object clientsAlexaforbusinessMod {
   type SampleUtterances = js.Array[Utterance]
   type ShortDescription = java.lang.String
   type ShortSkillIdList = js.Array[SkillId]
+  type SipAddressList = js.Array[SipAddress]
+  type SipType = awsDashSdkLib.awsDashSdkLibStrings.WORK | java.lang.String
+  type SipUri = java.lang.String
   type SkillGroupDataList = js.Array[SkillGroupData]
   type SkillGroupDescription = java.lang.String
   type SkillGroupName = java.lang.String

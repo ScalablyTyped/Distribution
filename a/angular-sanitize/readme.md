@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-sanitize
 
-Typings are for version 1.3
+Typings are for version 1.7
 
 ## Library description:
 AngularJS module for sanitizing HTML
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Angular JS (ngSanitize module) 1.3
+// Type definitions for Angular JS (ngSanitize module) 1.7
 // Project: http://angularjs.org
 // Definitions by: Diego Vilar <https://github.com/diegovilar>
+//                 Michał Lipiński <https://github.com/falsyvalues>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

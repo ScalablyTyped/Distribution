@@ -1,7 +1,7 @@
 
 # Scala.js typings for dwt
 
-Typings are for version 14.3
+Typings are for version 15.0
 
 ## Library description:
 Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanning SDK software specifically designed for web applications running on Windows/macOS/Linux. With just a few lines of code, you can develop robust applications to scan documents from TWAIN/ICA/SANE-compatibl
@@ -47,7 +47,7 @@ These comments are from the typescript definitions and might be useful:
 */
 
 /** -2400 to -2499 is webcam error code */
-// Type definitions for dwt 14.3
+// Type definitions for dwt 15.0
 // Project: https://www.dynamsoft.com/products/webtwain_overview.aspx
 // Definitions by: Xiao Ling <https://github.com/yushulx>
 //                 Josh Hall <https://github.com/jbh>

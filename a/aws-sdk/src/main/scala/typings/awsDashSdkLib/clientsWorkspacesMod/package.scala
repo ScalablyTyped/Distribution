@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 package object clientsWorkspacesMod {
   type ARN = java.lang.String
   type AccountModificationList = js.Array[AccountModification]
-  type AdditionalInfo = java.lang.String
   type Alias = java.lang.String
   type BooleanObject = scala.Boolean
   type BundleId = java.lang.String
@@ -121,7 +120,6 @@ package object clientsWorkspacesMod {
   type RunningMode = _RunningMode | java.lang.String
   type RunningModeAutoStopTimeoutInMinutes = scala.Double
   type SecurityGroupId = java.lang.String
-  type SnapshotList = js.Array[Snapshot]
   type StartWorkspaceRequests = js.Array[StartRequest]
   type StopWorkspaceRequests = js.Array[StopRequest]
   type SubnetId = java.lang.String
@@ -196,7 +194,6 @@ package object clientsWorkspacesMod {
     - awsDashSdkLib.awsDashSdkLibStrings.REBOOTING
     - awsDashSdkLib.awsDashSdkLibStrings.STARTING
     - awsDashSdkLib.awsDashSdkLibStrings.REBUILDING
-    - awsDashSdkLib.awsDashSdkLibStrings.RESTORING
     - awsDashSdkLib.awsDashSdkLibStrings.MAINTENANCE
     - awsDashSdkLib.awsDashSdkLibStrings.ADMIN_MAINTENANCE
     - awsDashSdkLib.awsDashSdkLibStrings.TERMINATING

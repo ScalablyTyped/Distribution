@@ -58,6 +58,10 @@ class Parameter protected ()
     * The value of the parameter.
     */
   val value: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The version of the parameter.
+    */
+  val version: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

@@ -685,10 +685,19 @@ object baseuiLibStrings {
   sealed trait `+998` extends js.Object
   
   @js.native
+  sealed trait `100%` extends js.Object
+  
+  @js.native
   sealed trait `12` extends js.Object
   
   @js.native
   sealed trait `24` extends js.Object
+  
+  @js.native
+  sealed trait `400px` extends js.Object
+  
+  @js.native
+  sealed trait `500px` extends js.Object
   
   @js.native
   sealed trait AD extends js.Object
@@ -1423,6 +1432,9 @@ object baseuiLibStrings {
   sealed trait `Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)` extends js.Object
   
   @js.native
+  sealed trait L extends js.Object
+  
+  @js.native
   sealed trait LA extends js.Object
   
   @js.native
@@ -2147,6 +2159,12 @@ object baseuiLibStrings {
   
   @js.native
   sealed trait YT extends js.Object
+  
+  @js.native
+  sealed trait `YYYY-MM` extends js.Object
+  
+  @js.native
+  sealed trait `YYYY-MM-DD` extends js.Object
   
   @js.native
   sealed trait `Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
@@ -3751,9 +3769,15 @@ object baseuiLibStrings {
   @scala.inline
   def `+998`: `+998` = "+998".asInstanceOf[`+998`]
   @scala.inline
+  def `100%`: `100%` = "100%".asInstanceOf[`100%`]
+  @scala.inline
   def `12`: `12` = "12".asInstanceOf[`12`]
   @scala.inline
   def `24`: `24` = "24".asInstanceOf[`24`]
+  @scala.inline
+  def `400px`: `400px` = "400px".asInstanceOf[`400px`]
+  @scala.inline
+  def `500px`: `500px` = "500px".asInstanceOf[`500px`]
   @scala.inline
   def AD: AD = "AD".asInstanceOf[AD]
   @scala.inline
@@ -4243,6 +4267,8 @@ object baseuiLibStrings {
   @scala.inline
   def `Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)`: `Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)` = "Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)".asInstanceOf[`Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)`]
   @scala.inline
+  def L: L = "L".asInstanceOf[L]
+  @scala.inline
   def LA: LA = "LA".asInstanceOf[LA]
   @scala.inline
   def LB: LB = "LB".asInstanceOf[LB]
@@ -4726,6 +4752,10 @@ object baseuiLibStrings {
   def YE: YE = "YE".asInstanceOf[YE]
   @scala.inline
   def YT: YT = "YT".asInstanceOf[YT]
+  @scala.inline
+  def `YYYY-MM`: `YYYY-MM` = "YYYY-MM".asInstanceOf[`YYYY-MM`]
+  @scala.inline
+  def `YYYY-MM-DD`: `YYYY-MM-DD` = "YYYY-MM-DD".asInstanceOf[`YYYY-MM-DD`]
   @scala.inline
   def `Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)".asInstanceOf[`Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
   @scala.inline

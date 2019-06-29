@@ -10,6 +10,7 @@ trait Anon_Acm extends js.Object {
   var acmpca: js.UndefOr[java.lang.String] = js.undefined
   var apigateway: js.UndefOr[java.lang.String] = js.undefined
   var applicationautoscaling: js.UndefOr[java.lang.String] = js.undefined
+  var applicationinsights: js.UndefOr[java.lang.String] = js.undefined
   var appmesh: js.UndefOr[java.lang.String] = js.undefined
   var appsync: js.UndefOr[java.lang.String] = js.undefined
   var athena: js.UndefOr[java.lang.String] = js.undefined
@@ -108,6 +109,7 @@ trait Anon_Acm extends js.Object {
   var serverlessrepo: js.UndefOr[java.lang.String] = js.undefined
   var servicecatalog: js.UndefOr[java.lang.String] = js.undefined
   var servicediscovery: js.UndefOr[java.lang.String] = js.undefined
+  var servicequotas: js.UndefOr[java.lang.String] = js.undefined
   var ses: js.UndefOr[java.lang.String] = js.undefined
   var shield: js.UndefOr[java.lang.String] = js.undefined
   var sns: js.UndefOr[java.lang.String] = js.undefined
@@ -132,6 +134,7 @@ object Anon_Acm {
     acmpca: java.lang.String = null,
     apigateway: java.lang.String = null,
     applicationautoscaling: java.lang.String = null,
+    applicationinsights: java.lang.String = null,
     appmesh: java.lang.String = null,
     appsync: java.lang.String = null,
     athena: java.lang.String = null,
@@ -230,6 +233,7 @@ object Anon_Acm {
     serverlessrepo: java.lang.String = null,
     servicecatalog: java.lang.String = null,
     servicediscovery: java.lang.String = null,
+    servicequotas: java.lang.String = null,
     ses: java.lang.String = null,
     shield: java.lang.String = null,
     sns: java.lang.String = null,
@@ -251,6 +255,7 @@ object Anon_Acm {
     if (acmpca != null) __obj.updateDynamic("acmpca")(acmpca)
     if (apigateway != null) __obj.updateDynamic("apigateway")(apigateway)
     if (applicationautoscaling != null) __obj.updateDynamic("applicationautoscaling")(applicationautoscaling)
+    if (applicationinsights != null) __obj.updateDynamic("applicationinsights")(applicationinsights)
     if (appmesh != null) __obj.updateDynamic("appmesh")(appmesh)
     if (appsync != null) __obj.updateDynamic("appsync")(appsync)
     if (athena != null) __obj.updateDynamic("athena")(athena)
@@ -349,6 +354,7 @@ object Anon_Acm {
     if (serverlessrepo != null) __obj.updateDynamic("serverlessrepo")(serverlessrepo)
     if (servicecatalog != null) __obj.updateDynamic("servicecatalog")(servicecatalog)
     if (servicediscovery != null) __obj.updateDynamic("servicediscovery")(servicediscovery)
+    if (servicequotas != null) __obj.updateDynamic("servicequotas")(servicequotas)
     if (ses != null) __obj.updateDynamic("ses")(ses)
     if (shield != null) __obj.updateDynamic("shield")(shield)
     if (sns != null) __obj.updateDynamic("sns")(sns)

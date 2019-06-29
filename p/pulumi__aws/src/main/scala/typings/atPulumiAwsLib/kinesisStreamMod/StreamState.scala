@@ -23,8 +23,7 @@ trait StreamState extends js.Object {
     */
   val kmsKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * A name to identify the stream. This is unique to the
-    * AWS account and region the Stream is created in.
+    * A name to identify the stream. This is unique to the AWS account and region the Stream is created in.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -33,8 +32,7 @@ trait StreamState extends js.Object {
   val retentionPeriod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
     * The number of shards that the stream will use.
-    * Amazon has guidlines for specifying the Stream size that should be referenced
-    * when creating a Kinesis stream. See [Amazon Kinesis Streams][2] for more.
+    * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams][2] for more.
     */
   val shardCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**

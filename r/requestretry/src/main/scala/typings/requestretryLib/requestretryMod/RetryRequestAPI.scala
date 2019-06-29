@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RetryRequestAPI
-  extends requestLib.requestMod.RequestAPI[
-      requestLib.requestMod.Request, 
-      RequestRetryOptions, 
-      requestLib.requestMod.RequiredUriUrl
-    ] {
+  extends requestLib.requestMod.RequestAPI[RequestPromise, RequestRetryOptions, requestLib.requestMod.RequiredUriUrl] {
   var RetryStrategies: requestretryLib.Anon_HTTPOrNetworkError = js.native
 }
 

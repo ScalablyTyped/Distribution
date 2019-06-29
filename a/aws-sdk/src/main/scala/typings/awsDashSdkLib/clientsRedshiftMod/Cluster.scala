@@ -19,6 +19,10 @@ trait Cluster extends js.Object {
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**
+    * The availability status of the cluster for queries. Possible values are the following:   Available - The cluster is available for queries.    Unavailable - The cluster is not available for queries.   Maintenance - The cluster is intermittently available for queries due to maintenance activities.   Modifying - The cluster is intermittently available for queries due to changes that modify the cluster.   Failed - The cluster failed and is not available for queries.  
+    */
+  var ClusterAvailabilityStatus: js.UndefOr[String] = js.undefined
+  /**
     * The date and time that the cluster was created.
     */
   var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
@@ -182,6 +186,7 @@ object Cluster {
     AllowVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     AutomatedSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined,
     AvailabilityZone: String = null,
+    ClusterAvailabilityStatus: String = null,
     ClusterCreateTime: TStamp = null,
     ClusterIdentifier: String = null,
     ClusterNodes: ClusterNodesList = null,
@@ -226,6 +231,7 @@ object Cluster {
     if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade)
     if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod)
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
+    if (ClusterAvailabilityStatus != null) __obj.updateDynamic("ClusterAvailabilityStatus")(ClusterAvailabilityStatus)
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier)
     if (ClusterNodes != null) __obj.updateDynamic("ClusterNodes")(ClusterNodes)

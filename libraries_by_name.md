@@ -1611,6 +1611,7 @@
 | [express-sitemap-xml](./e/express-sitemap-xml) | Express middleware to serve sitemap.xml from a lis | express, google, serve sitemap, serve sitemap.xml, site map, site map xml, sitemap, sitemap generator, sitemap xml, sitemap.xml, sitemaps, xml |
 | [express-slow-down](./e/express-slow-down) | Basic IP rate-limiting middleware for Express that | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
 | [express-socket_dot_io-ses](./e/express-socket_dot_io-session) | Share a cookie-based express-session middleware wi | socket.io, express, express-session |
+| [express-sslify](./e/express-sslify) | Enforces SSL for node.js express projects | express, node.js, node, ssl, sslify, http, redirect |
 | [express-to-koa](./e/express-to-koa) | Use express middlewares in Koa2, the one that real | express-to-koa, express, koa, koa2, middleware, converter, connect, framework |
 | [express-unless](./e/express-unless) | Conditionally add a middleware to express with som | - |
 | [express-urlrewrite](./e/express-urlrewrite) | URL rewrite middleware for express | express, middleware, rewrite, redirect, url |
@@ -2156,6 +2157,7 @@
 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
+| [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts  | google, fonts, webfonts, inline, embed, append |
 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP | google, images, google images, image search |
 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe | browserify, e164, format, formatting, international, libphonenumber, number, phone, phonenumber, rfc3966, standardize, wrapper |
 | [google-map-react](./g/google-map-react) | isomorphic google map react component, allows rend | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
@@ -3324,6 +3326,7 @@
 | [leaflet](./l/leaflet) | JavaScript library for mobile-friendly interactive | gis, map |
 | [leaflet-areaselect](./l/leaflet-areaselect) | - | - |
 | [leaflet-curve](./l/leaflet-curve) | A Leaflet plugin for drawing Bézier curves and oth | leaflet, Bezier, curve, SVG |
+| [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet | Leaflet, DeepZoom, tiles |
 | [leaflet-draw](./l/leaflet-draw) | Vector drawing plugin for Leaflet | maps, leaflet, client, vector, drawing, draw |
 | [leaflet-editable](./l/leaflet-editable) | Make geometries editable in Leaflet | leaflet, map |
 | [leaflet-fullscreen](./l/leaflet-fullscreen) | A fullscreen control for Leaflet | leaflet, maps, fullscreen, client |
@@ -4266,11 +4269,13 @@
 | [node-static](./n/node-static) | simple, compliant file streaming module for node | http, static, file, server |
 | [node-statsd](./n/node-statsd) | node client for Etsy'd StatsD server | - |
 | [node-telegram-bot-api](./n/node-telegram-bot-api) | Telegram Bot API | telegram, telegram bot, telegram bot api, bot |
+| [node-timecodes](./n/node-timecodes) | Time and SMTPE Timecodes conversions | node, timecode, smtpe, time, conversion |
 | [node-uuid](./n/node-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI | guid, rfc4122, uuid |
 | [node-validator](./n/node-validator) | A simple, extensible object property validator for | validator, validation, express, check, test, request-validation, koa, koajs |
 | [node-vault](./n/node-vault) | Javascript client for HashiCorp's Vault | vault, hashicorp, secrets, manage, client |
 | [node-waves](./n/node-waves) | Click effect insipired by Google Material Design | - |
 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support | download, http, promise, request, wget |
+| [node-windows](./n/node-windows) | Support for Windows services, event logging, UAC,  | ngn, windows, service, daemon, logging, event, event logging, elevate, sudo, task |
 | [node-wit](./n/node-wit) | Wit.ai Node.js SDK | wit, wit.ai, bot, botengine, bots, nlp, automation |
 | [node-xlsx](./n/node-xlsx) | NodeJS Excel files parser & builder | excel, parser, builder, xlsx, xls |
 | [node-xmpp-client](./n/node-xmpp-client) | XMPP client for JavaScript | client, XMPP, C2S, WebSocket, BOSH |
@@ -5018,9 +5023,18 @@
 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization | react, redux, reselect, memoize, cache |
 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages. | - |
 | [reach__alert-dialog](./r/reach__alert-dialog) | Accessible React Alert Dialog. | - |
+| [reach__auto-id](./r/reach__auto-id) | Autogenerate IDs to facilitate WAI-ARIA and server | - |
+| [reach__combobox](./r/reach__combobox) | Accessible React Combobox (Autocomplete). | - |
 | [reach__dialog](./r/reach__dialog) | Accessible React Modal Dialog. | - |
+| [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu. | - |
+| [reach__rect](./r/reach__rect) | Measure React elements position in the DOM | - |
 | [reach__router](./r/reach__router) | Next generation Routing for React. | react, react router |
+| [reach__skip-nav](./r/reach__skip-nav) | Skip navigation links for screen reader and keyboa | - |
 | [reach__tabs](./r/reach__tabs) | Accessible React Tabs Component | - |
+| [reach__tooltip](./r/reach__tooltip) | Accessible tooltips | - |
+| [reach__utils](./r/reach__utils) | Internal, shared utilities for Reach UI. | - |
+| [reach__visually-hidden](./r/reach__visually-hidden) | Render text that is announced to screen readers bu | - |
+| [reach__window-size](./r/reach__window-size) | Measure the window size in React | - |
 | [react](./r/react) | React is a JavaScript library for building user in | react |
 | [react-ace](./r/react-ace) | A react component for Ace Editor | ace, ace editor, react-component, react, brace |
 | [react-adal](./r/react-adal) | Azure Active Directory (ADAL) support for ReactJS | react, implicit, js, AAD, adal, oauth, oauth2, azure, react-adal, actve, directory, msal |
@@ -5048,6 +5062,7 @@
 | [react-avatar-editor](./r/react-avatar-editor) | Avatar / profile picture component. Resize and cro | react-component, reactjs, react, canvas, avatar, editor, profile, image |
 | [react-axe](./r/react-axe) | Dynamic accessibility analysis for React using axe | accessibility, a11y, lint, test |
 | [react-beautiful-dnd](./r/react-beautiful-dnd) | Beautiful and accessible drag and drop for lists w | drag and drop, dnd, sortable, reorder, reorderable, react, react.js, natural, beautiful |
+| [react-beforeunload](./r/react-beforeunload) | React component and hook which listens to beforeun | beforeunload, component, event, hook, onbeforeunload, react, unload, window |
 | [react-better-password](./r/react-better-password) | Password input for ReactJS that mimics mobile pass | react, react-component, password, mask, mobile, timeout, last, character |
 | [react-big-calendar](./r/react-big-calendar) | Calendar | scheduler, react-component, react, calendar, events, full calendar |
 | [react-big-scheduler](./r/react-big-scheduler) | A scheduler and resource planning component built  | scheduler, react-component, react, react-big-scheduler, resource planning, antd |
@@ -6069,6 +6084,7 @@
 | [smooth-scrollbar](./s/smooth-scrollbar) | Customize scrollbar in modern browsers with smooth | scrollbar, customize, acceleration, performance |
 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for  | charts, charting, realtime, stock-ticker, time series, time-series, responsive |
 | [smoothscroll-polyfill](./s/smoothscroll-polyfill) | Smooth Scroll behavior polyfill | smooth, scroll, CSSOM, polyfill |
+| [smpte-timecode](./s/smpte-timecode) | JavaScript implementation of SMPTE timecode type | SMPTE, Timecode, dropframe, drop-frame, video, time |
 | [smtp-server](./s/smtp-server) | Create custom SMTP servers on the fly | SMTP |
 | [smtpapi](./s/smtpapi) | Build SendGrid X-SMTPAPI headers in nodejs. | smtpapi, x-smtpapi, smtp, sendgrid, headers, email |
 | [snabbdom](./s/snabbdom) | A virtual DOM library with focus on simplicity, mo | virtual, dom, light, kiss, performance |
@@ -6835,6 +6851,7 @@
 | [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr | jest, expect, wait, async, await, promise, integration, testing, unit |
 | [wait-for-localhost](./w/wait-for-localhost) | Wait for localhost to be ready | wait, localhost, server, port, delay, sleep, ready |
 | [wait-on](./w/wait-on) | wait-on is a cross platform command line utility a | wait, delay, cli, files, tcp, ports, sockets, http, exist, ready, available, portable, cross-platform, unix, linux, windows, win32, osx |
+| [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of  | promise, node, wait, before, after, every, and, until, till, async |
 | [waitme](./w/waitme) | - | - |
 | [wake_on_lan](./w/wake_on_lan) | generate and send Wake-on-LAN magic packets | - |
 | [walk](./w/walk) | A node port of python's os.walk | util, os, sys, fs, walk, walkSync |
@@ -6974,6 +6991,7 @@
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack | wordpress, webpack, dependency |
+| [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress. | wordpress, dom, utils |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |

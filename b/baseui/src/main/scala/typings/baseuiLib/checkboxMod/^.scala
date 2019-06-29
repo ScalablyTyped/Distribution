@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui/checkbox", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val STATE_TYPE: baseuiLib.checkboxMod.STATE_TYPE = js.native
+  val STYLE_TYPE: baseuiLib.checkboxMod.STYLE_TYPE = js.native
   val StatefulCheckbox: reactLib.reactMod.FC[StatefulCheckboxProps] = js.native
   val StatefulContainer: reactLib.reactMod.FC[StatefulContainerProps] = js.native
   val StyledCheckmark: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native

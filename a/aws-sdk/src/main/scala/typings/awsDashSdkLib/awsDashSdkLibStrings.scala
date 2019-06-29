@@ -10042,6 +10042,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsConnectMod._HistoricalMetricName
   
   @js.native
+  sealed trait HOME
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._PhoneNumberType
+  
+  @js.native
   sealed trait HOMEFOLDERS
     extends awsDashSdkLib.clientsAppstreamMod._StorageConnectorType
   
@@ -13209,6 +13213,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait MOBILE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._PhoneNumberType
   
   @js.native
   sealed trait MOCK
@@ -17051,7 +17059,6 @@ object awsDashSdkLibStrings {
   sealed trait RESTORING
     extends awsDashSdkLib.clientsWorkdocsMod._ResourceStateType
        with awsDashSdkLib.clientsOpsworkscmMod._ServerStatus
-       with awsDashSdkLib.clientsWorkspacesMod._WorkspaceState
   
   @js.native
   sealed trait RESTRICTED
@@ -22374,6 +22381,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRekognitionMod._TextTypes
   
   @js.native
+  sealed trait WORK
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._PhoneNumberType
+  
+  @js.native
   sealed trait WORKFLOW_ALREADY_RUNNING
     extends awsDashSdkLib.clientsSwfMod._StartChildWorkflowExecutionFailedCause
   
@@ -23394,6 +23405,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait c5DOTlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait c5DOTmetal
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -25353,6 +25368,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait information
     extends awsDashSdkLib.clientsEc2Mod._AvailabilityZoneState
+       with awsDashSdkLib.clientsEc2Mod._EventType
   
   @js.native
   sealed trait ingress
@@ -26179,6 +26195,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait m5DOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait m5DOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -26188,6 +26208,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait m5DOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait m5DOT8xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -26207,6 +26231,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait m5aDOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait m5aDOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -26216,6 +26244,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait m5aDOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait m5aDOT8xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -26263,6 +26295,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait m5dDOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait m5dDOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -26272,6 +26308,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait m5dDOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait m5dDOT8xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -27436,6 +27476,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait r5DOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait r5DOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -27445,6 +27489,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait r5DOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait r5DOT8xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -27464,6 +27512,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait r5aDOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait r5aDOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -27473,6 +27525,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait r5aDOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait r5aDOT8xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -27520,6 +27576,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait r5dDOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait r5dDOT24xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -27529,6 +27589,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait r5dDOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait r5dDOT8xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
@@ -33173,6 +33237,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def HOLD_TIME: HOLD_TIME = "HOLD_TIME".asInstanceOf[HOLD_TIME]
   @scala.inline
+  def HOME: HOME = "HOME".asInstanceOf[HOME]
+  @scala.inline
   def HOMEFOLDERS: HOMEFOLDERS = "HOMEFOLDERS".asInstanceOf[HOMEFOLDERS]
   @scala.inline
   def HOOK_EXECUTION_FAILURE: HOOK_EXECUTION_FAILURE = "HOOK_EXECUTION_FAILURE".asInstanceOf[HOOK_EXECUTION_FAILURE]
@@ -34514,6 +34580,8 @@ object awsDashSdkLibStrings {
   def MN: MN = "MN".asInstanceOf[MN]
   @scala.inline
   def MO: MO = "MO".asInstanceOf[MO]
+  @scala.inline
+  def MOBILE: MOBILE = "MOBILE".asInstanceOf[MOBILE]
   @scala.inline
   def MOCK: MOCK = "MOCK".asInstanceOf[MOCK]
   @scala.inline
@@ -38371,6 +38439,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def WORD: WORD = "WORD".asInstanceOf[WORD]
   @scala.inline
+  def WORK: WORK = "WORK".asInstanceOf[WORK]
+  @scala.inline
   def WORKFLOW_ALREADY_RUNNING: WORKFLOW_ALREADY_RUNNING = "WORKFLOW_ALREADY_RUNNING".asInstanceOf[WORKFLOW_ALREADY_RUNNING]
   @scala.inline
   def WORKFLOW_TYPE_DEPRECATED: WORKFLOW_TYPE_DEPRECATED = "WORKFLOW_TYPE_DEPRECATED".asInstanceOf[WORKFLOW_TYPE_DEPRECATED]
@@ -38804,6 +38874,8 @@ object awsDashSdkLibStrings {
   def c5DOT9xlarge: c5DOT9xlarge = "c5.9xlarge".asInstanceOf[c5DOT9xlarge]
   @scala.inline
   def c5DOTlarge: c5DOTlarge = "c5.large".asInstanceOf[c5DOTlarge]
+  @scala.inline
+  def c5DOTmetal: c5DOTmetal = "c5.metal".asInstanceOf[c5DOTmetal]
   @scala.inline
   def c5DOTxlarge: c5DOTxlarge = "c5.xlarge".asInstanceOf[c5DOTxlarge]
   @scala.inline
@@ -39991,11 +40063,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def m5DOT12xlarge: m5DOT12xlarge = "m5.12xlarge".asInstanceOf[m5DOT12xlarge]
   @scala.inline
+  def m5DOT16xlarge: m5DOT16xlarge = "m5.16xlarge".asInstanceOf[m5DOT16xlarge]
+  @scala.inline
   def m5DOT24xlarge: m5DOT24xlarge = "m5.24xlarge".asInstanceOf[m5DOT24xlarge]
   @scala.inline
   def m5DOT2xlarge: m5DOT2xlarge = "m5.2xlarge".asInstanceOf[m5DOT2xlarge]
   @scala.inline
   def m5DOT4xlarge: m5DOT4xlarge = "m5.4xlarge".asInstanceOf[m5DOT4xlarge]
+  @scala.inline
+  def m5DOT8xlarge: m5DOT8xlarge = "m5.8xlarge".asInstanceOf[m5DOT8xlarge]
   @scala.inline
   def m5DOTlarge: m5DOTlarge = "m5.large".asInstanceOf[m5DOTlarge]
   @scala.inline
@@ -40005,11 +40081,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def m5aDOT12xlarge: m5aDOT12xlarge = "m5a.12xlarge".asInstanceOf[m5aDOT12xlarge]
   @scala.inline
+  def m5aDOT16xlarge: m5aDOT16xlarge = "m5a.16xlarge".asInstanceOf[m5aDOT16xlarge]
+  @scala.inline
   def m5aDOT24xlarge: m5aDOT24xlarge = "m5a.24xlarge".asInstanceOf[m5aDOT24xlarge]
   @scala.inline
   def m5aDOT2xlarge: m5aDOT2xlarge = "m5a.2xlarge".asInstanceOf[m5aDOT2xlarge]
   @scala.inline
   def m5aDOT4xlarge: m5aDOT4xlarge = "m5a.4xlarge".asInstanceOf[m5aDOT4xlarge]
+  @scala.inline
+  def m5aDOT8xlarge: m5aDOT8xlarge = "m5a.8xlarge".asInstanceOf[m5aDOT8xlarge]
   @scala.inline
   def m5aDOTlarge: m5aDOTlarge = "m5a.large".asInstanceOf[m5aDOTlarge]
   @scala.inline
@@ -40033,11 +40113,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def m5dDOT12xlarge: m5dDOT12xlarge = "m5d.12xlarge".asInstanceOf[m5dDOT12xlarge]
   @scala.inline
+  def m5dDOT16xlarge: m5dDOT16xlarge = "m5d.16xlarge".asInstanceOf[m5dDOT16xlarge]
+  @scala.inline
   def m5dDOT24xlarge: m5dDOT24xlarge = "m5d.24xlarge".asInstanceOf[m5dDOT24xlarge]
   @scala.inline
   def m5dDOT2xlarge: m5dDOT2xlarge = "m5d.2xlarge".asInstanceOf[m5dDOT2xlarge]
   @scala.inline
   def m5dDOT4xlarge: m5dDOT4xlarge = "m5d.4xlarge".asInstanceOf[m5dDOT4xlarge]
+  @scala.inline
+  def m5dDOT8xlarge: m5dDOT8xlarge = "m5d.8xlarge".asInstanceOf[m5dDOT8xlarge]
   @scala.inline
   def m5dDOTlarge: m5dDOTlarge = "m5d.large".asInstanceOf[m5dDOTlarge]
   @scala.inline
@@ -40531,11 +40615,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def r5DOT12xlarge: r5DOT12xlarge = "r5.12xlarge".asInstanceOf[r5DOT12xlarge]
   @scala.inline
+  def r5DOT16xlarge: r5DOT16xlarge = "r5.16xlarge".asInstanceOf[r5DOT16xlarge]
+  @scala.inline
   def r5DOT24xlarge: r5DOT24xlarge = "r5.24xlarge".asInstanceOf[r5DOT24xlarge]
   @scala.inline
   def r5DOT2xlarge: r5DOT2xlarge = "r5.2xlarge".asInstanceOf[r5DOT2xlarge]
   @scala.inline
   def r5DOT4xlarge: r5DOT4xlarge = "r5.4xlarge".asInstanceOf[r5DOT4xlarge]
+  @scala.inline
+  def r5DOT8xlarge: r5DOT8xlarge = "r5.8xlarge".asInstanceOf[r5DOT8xlarge]
   @scala.inline
   def r5DOTlarge: r5DOTlarge = "r5.large".asInstanceOf[r5DOTlarge]
   @scala.inline
@@ -40545,11 +40633,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def r5aDOT12xlarge: r5aDOT12xlarge = "r5a.12xlarge".asInstanceOf[r5aDOT12xlarge]
   @scala.inline
+  def r5aDOT16xlarge: r5aDOT16xlarge = "r5a.16xlarge".asInstanceOf[r5aDOT16xlarge]
+  @scala.inline
   def r5aDOT24xlarge: r5aDOT24xlarge = "r5a.24xlarge".asInstanceOf[r5aDOT24xlarge]
   @scala.inline
   def r5aDOT2xlarge: r5aDOT2xlarge = "r5a.2xlarge".asInstanceOf[r5aDOT2xlarge]
   @scala.inline
   def r5aDOT4xlarge: r5aDOT4xlarge = "r5a.4xlarge".asInstanceOf[r5aDOT4xlarge]
+  @scala.inline
+  def r5aDOT8xlarge: r5aDOT8xlarge = "r5a.8xlarge".asInstanceOf[r5aDOT8xlarge]
   @scala.inline
   def r5aDOTlarge: r5aDOTlarge = "r5a.large".asInstanceOf[r5aDOTlarge]
   @scala.inline
@@ -40573,11 +40665,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def r5dDOT12xlarge: r5dDOT12xlarge = "r5d.12xlarge".asInstanceOf[r5dDOT12xlarge]
   @scala.inline
+  def r5dDOT16xlarge: r5dDOT16xlarge = "r5d.16xlarge".asInstanceOf[r5dDOT16xlarge]
+  @scala.inline
   def r5dDOT24xlarge: r5dDOT24xlarge = "r5d.24xlarge".asInstanceOf[r5dDOT24xlarge]
   @scala.inline
   def r5dDOT2xlarge: r5dDOT2xlarge = "r5d.2xlarge".asInstanceOf[r5dDOT2xlarge]
   @scala.inline
   def r5dDOT4xlarge: r5dDOT4xlarge = "r5d.4xlarge".asInstanceOf[r5dDOT4xlarge]
+  @scala.inline
+  def r5dDOT8xlarge: r5dDOT8xlarge = "r5d.8xlarge".asInstanceOf[r5dDOT8xlarge]
   @scala.inline
   def r5dDOTlarge: r5dDOTlarge = "r5d.large".asInstanceOf[r5dDOTlarge]
   @scala.inline

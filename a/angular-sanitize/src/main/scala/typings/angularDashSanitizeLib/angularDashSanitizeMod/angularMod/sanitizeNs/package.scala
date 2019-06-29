@@ -13,9 +13,17 @@ package object sanitizeNs {
     angularDashSanitizeLib.angularDashSanitizeLibStrings.linky, 
     angularDashSanitizeLib.angularDashSanitizeMod.angularMod.sanitizeNs.filterNs.ILinky
   ]
-  ///////////////////////////////////////////////////////////////////////////
-  // SanitizeService
-  // see http://docs.angularjs.org/api/ngSanitize.$sanitize
-  ///////////////////////////////////////////////////////////////////////////
+  /**
+    * Sanitizes an html string by stripping all potentially dangerous tokens.
+    *
+    * The input is sanitized by parsing the HTML into tokens.
+    * All safe tokens (from a whitelist) are then serialized back to a properly escaped HTML string.
+    * This means that no unsafe input can make it into the returned string.
+    *
+    * The whitelist for URL sanitization of attribute values is configured using the functions aHrefSanitizationWhitelist and imgSrcSanitizationWhitelist of $compileProvider.
+    * The input may also contain SVG markup if this is enabled via $sanitizeProvider.
+    *
+    * @param html HTML input.
+    */
   type ISanitizeService = js.Function1[/* html */ java.lang.String, java.lang.String]
 }

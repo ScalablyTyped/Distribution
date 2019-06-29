@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Actions protected ()
   extends seleniumDashWebdriverLib.libInputMod.Actions {
   // region Constructors
-  def this(executor: Executor) = this()
-  def this(executor: Executor, options: seleniumDashWebdriverLib.Anon_Async) = this()
-  def this(executor: Executor, options: seleniumDashWebdriverLib.Anon_AsyncBoolean) = this()
-  def this(executor: Executor, options: seleniumDashWebdriverLib.Anon_Bridge) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor, options: seleniumDashWebdriverLib.Anon_Async) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor, options: seleniumDashWebdriverLib.Anon_AsyncBoolean) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor, options: seleniumDashWebdriverLib.Anon_Bridge) = this()
 }
 

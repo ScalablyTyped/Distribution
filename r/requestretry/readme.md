@@ -37,8 +37,9 @@ These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for requestretry 1.12
 // Project: https://github.com/FGRibreau/node-request-retry
-// Definitions by: Eric Byers <https://github.com/EricByers>
-// 				   Andrew Throener <https://github.com/trainerbill>
+// Definitions by: 	Eric Byers <https://github.com/EricByers>
+// 				   				Andrew Throener <https://github.com/trainerbill>
+// 									Aniket Patel <https://github.com/baaka-ani>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

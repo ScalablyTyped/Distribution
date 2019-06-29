@@ -517,7 +517,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device. When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
     */
   def deleteDeviceUsageData(): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDeviceUsageData(
@@ -528,7 +528,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device. When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
     */
   def deleteDeviceUsageData(params: DeleteDeviceUsageDataRequest): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDeviceUsageData(
@@ -1774,7 +1774,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sends an enrollment invitation email with a URL to a user. The URL is valid for 72 hours or until you call this operation again, whichever comes first. 
+    * Sends an enrollment invitation email with a URL to a user. The URL is valid for 30 days or until you call this operation again, whichever comes first. 
     */
   def sendInvitation(): awsDashSdkLib.libRequestMod.Request[SendInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendInvitation(
@@ -1785,7 +1785,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Sends an enrollment invitation email with a URL to a user. The URL is valid for 72 hours or until you call this operation again, whichever comes first. 
+    * Sends an enrollment invitation email with a URL to a user. The URL is valid for 30 days or until you call this operation again, whichever comes first. 
     */
   def sendInvitation(params: SendInvitationRequest): awsDashSdkLib.libRequestMod.Request[SendInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendInvitation(

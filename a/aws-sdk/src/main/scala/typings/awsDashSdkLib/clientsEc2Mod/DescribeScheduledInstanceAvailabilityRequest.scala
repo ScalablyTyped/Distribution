@@ -21,7 +21,7 @@ trait DescribeScheduledInstanceAvailabilityRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. This value can be between 5 and 300. The default value is 300. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeScheduledInstanceAvailabilityMaxResults] = js.undefined
   /**
     * The maximum available duration, in hours. This value must be greater than MinSlotDurationInHours and less than 1,720.
     */
@@ -47,7 +47,7 @@ object DescribeScheduledInstanceAvailabilityRequest {
     Recurrence: ScheduledInstanceRecurrenceRequest,
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeScheduledInstanceAvailabilityMaxResults] = js.undefined,
     MaxSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
     MinSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
     NextToken: String = null

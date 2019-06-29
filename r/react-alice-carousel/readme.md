@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-alice-carousel
 
-Typings are for version 1.13
+Typings are for version 1.15
 
 ## Library description:
 React image gallery, react slideshow carousel, react content rotator
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-alice-carousel 1.13
+// Type definitions for react-alice-carousel 1.15
 // Project: https://github.com/maxmarinich/react-alice-carousel
 // Definitions by: endigo <https://github.com/endigo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

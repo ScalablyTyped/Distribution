@@ -23,8 +23,7 @@ class Instance protected ()
     */
   val address: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * (Required unless a `snapshot_identifier` or
-    * `replicate_source_db` is provided) The allocated storage in gibibytes.
+    * The allocated storage in gibibytes. If `max_allocated_storage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.
     */
   val allocatedStorage: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
@@ -182,6 +181,10 @@ class Instance protected ()
     * for more information.
     */
   val maintenanceWindow: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocated_storage`. Must be greater than or equal to `allocated_storage` or `0` to disable Storage Autoscaling.
+    */
+  val maxAllocatedStorage: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The interval, in seconds, between points
     * when Enhanced Monitoring metrics are collected for the DB instance. To disable

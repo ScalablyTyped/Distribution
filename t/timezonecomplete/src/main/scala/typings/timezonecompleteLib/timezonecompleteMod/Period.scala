@@ -16,6 +16,16 @@ class Period protected ()
     * This is due to the enormous processing power required by these cases. They are not
     * implemented and you will get an assert.
     *
+    * @param json period represented as JSON object
+    */
+  def this(json: timezonecompleteLib.distLibPeriodMod.PeriodJson) = this()
+  /**
+    * Constructor
+    * LIMITATION: if dst equals RegularLocalTime, and unit is Second, Minute or Hour,
+    * then the amount must be a factor of 24. So 120 seconds is allowed while 121 seconds is not.
+    * This is due to the enormous processing power required by these cases. They are not
+    * implemented and you will get an assert.
+    *
     * @param reference The reference date of the period. If the period is in Months or Years, and
     *                  the day is 29 or 30 or 31, the results are maximised to end-of-month.
     * @param interval The interval of the period

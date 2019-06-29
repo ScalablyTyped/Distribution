@@ -17,7 +17,7 @@ trait DescribeIamInstanceProfileAssociationsRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[DescribeIamInstanceProfileAssociationsMaxResults] = js.undefined
   /**
     * The token to request the next page of results.
     */
@@ -29,7 +29,7 @@ object DescribeIamInstanceProfileAssociationsRequest {
   def apply(
     AssociationIds: AssociationIdList = null,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    MaxResults: js.UndefOr[DescribeIamInstanceProfileAssociationsMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribeIamInstanceProfileAssociationsRequest = {
     val __obj = js.Dynamic.literal()

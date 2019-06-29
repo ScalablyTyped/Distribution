@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
   /**
-    * Prevent the browser's touchmove event when carousel is swiping
+    * Set auto height for the stage
     *
     * Default: false.
     */
-  var autoHeight: js.UndefOr[reactDashAliceDashCarouselLib.reactDashAliceDashCarouselLibNumbers.`false`] = js.undefined
+  var autoHeight: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *  Set auto play mode
     *
@@ -117,7 +117,7 @@ trait Props extends js.Object {
     *
     * Default: false.
     */
-  var preventEventOnTouchMove: js.UndefOr[reactDashAliceDashCarouselLib.reactDashAliceDashCarouselLibNumbers.`false`] = js.undefined
+  var preventEventOnTouchMove: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Number of items in the slide.
     *
@@ -125,11 +125,15 @@ trait Props extends js.Object {
     */
   var responsive: js.UndefOr[js.Object] = js.undefined
   /**
+    * Fired during resize event to determine whether the event handler should be called / return boolean
+    */
+  var shouldHandleResizeEvent: js.UndefOr[js.Function1[/* e */ js.Any, scala.Boolean]] = js.undefined
+  /**
     * Show slide info
     *
     * Default: false.
     */
-  var showSlideInfo: js.UndefOr[reactDashAliceDashCarouselLib.reactDashAliceDashCarouselLibNumbers.`false`] = js.undefined
+  var showSlideInfo: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Sets the carousel at the specified position
     *
@@ -165,7 +169,7 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    autoHeight: reactDashAliceDashCarouselLib.reactDashAliceDashCarouselLibNumbers.`false` = null,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
     autoPlay: js.UndefOr[scala.Boolean] = js.undefined,
     autoPlayActionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     autoPlayDirection: java.lang.String = null,
@@ -184,9 +188,10 @@ object Props {
     onSlideChange: /* e */ EventObject => scala.Unit = null,
     onSlideChanged: /* e */ EventObject => scala.Unit = null,
     playButtonEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    preventEventOnTouchMove: reactDashAliceDashCarouselLib.reactDashAliceDashCarouselLibNumbers.`false` = null,
+    preventEventOnTouchMove: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: js.Object = null,
-    showSlideInfo: reactDashAliceDashCarouselLib.reactDashAliceDashCarouselLibNumbers.`false` = null,
+    shouldHandleResizeEvent: /* e */ js.Any => scala.Boolean = null,
+    showSlideInfo: js.UndefOr[scala.Boolean] = js.undefined,
     slideToIndex: scala.Int | scala.Double = null,
     stagePadding: js.Object = null,
     startIndex: scala.Int | scala.Double = null,
@@ -194,7 +199,7 @@ object Props {
     swipeDisabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (autoHeight != null) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
     if (!js.isUndefined(autoPlayActionDisabled)) __obj.updateDynamic("autoPlayActionDisabled")(autoPlayActionDisabled)
     if (autoPlayDirection != null) __obj.updateDynamic("autoPlayDirection")(autoPlayDirection)
@@ -213,9 +218,10 @@ object Props {
     if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(js.Any.fromFunction1(onSlideChange))
     if (onSlideChanged != null) __obj.updateDynamic("onSlideChanged")(js.Any.fromFunction1(onSlideChanged))
     if (!js.isUndefined(playButtonEnabled)) __obj.updateDynamic("playButtonEnabled")(playButtonEnabled)
-    if (preventEventOnTouchMove != null) __obj.updateDynamic("preventEventOnTouchMove")(preventEventOnTouchMove)
+    if (!js.isUndefined(preventEventOnTouchMove)) __obj.updateDynamic("preventEventOnTouchMove")(preventEventOnTouchMove)
     if (responsive != null) __obj.updateDynamic("responsive")(responsive)
-    if (showSlideInfo != null) __obj.updateDynamic("showSlideInfo")(showSlideInfo)
+    if (shouldHandleResizeEvent != null) __obj.updateDynamic("shouldHandleResizeEvent")(js.Any.fromFunction1(shouldHandleResizeEvent))
+    if (!js.isUndefined(showSlideInfo)) __obj.updateDynamic("showSlideInfo")(showSlideInfo)
     if (slideToIndex != null) __obj.updateDynamic("slideToIndex")(slideToIndex.asInstanceOf[js.Any])
     if (stagePadding != null) __obj.updateDynamic("stagePadding")(stagePadding)
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])

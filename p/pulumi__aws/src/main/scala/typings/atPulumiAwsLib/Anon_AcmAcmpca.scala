@@ -10,6 +10,7 @@ trait Anon_AcmAcmpca extends js.Object {
   var acmpca: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var apigateway: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var applicationautoscaling: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var applicationinsights: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var appmesh: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var appsync: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var athena: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -108,6 +109,7 @@ trait Anon_AcmAcmpca extends js.Object {
   var serverlessrepo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var servicecatalog: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var servicediscovery: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var servicequotas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var ses: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var shield: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var sns: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -132,6 +134,7 @@ object Anon_AcmAcmpca {
     acmpca: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     apigateway: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     applicationautoscaling: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    applicationinsights: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     appmesh: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     appsync: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     athena: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -230,6 +233,7 @@ object Anon_AcmAcmpca {
     serverlessrepo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     servicecatalog: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     servicediscovery: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    servicequotas: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ses: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     shield: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -251,6 +255,7 @@ object Anon_AcmAcmpca {
     if (acmpca != null) __obj.updateDynamic("acmpca")(acmpca.asInstanceOf[js.Any])
     if (apigateway != null) __obj.updateDynamic("apigateway")(apigateway.asInstanceOf[js.Any])
     if (applicationautoscaling != null) __obj.updateDynamic("applicationautoscaling")(applicationautoscaling.asInstanceOf[js.Any])
+    if (applicationinsights != null) __obj.updateDynamic("applicationinsights")(applicationinsights.asInstanceOf[js.Any])
     if (appmesh != null) __obj.updateDynamic("appmesh")(appmesh.asInstanceOf[js.Any])
     if (appsync != null) __obj.updateDynamic("appsync")(appsync.asInstanceOf[js.Any])
     if (athena != null) __obj.updateDynamic("athena")(athena.asInstanceOf[js.Any])
@@ -349,6 +354,7 @@ object Anon_AcmAcmpca {
     if (serverlessrepo != null) __obj.updateDynamic("serverlessrepo")(serverlessrepo.asInstanceOf[js.Any])
     if (servicecatalog != null) __obj.updateDynamic("servicecatalog")(servicecatalog.asInstanceOf[js.Any])
     if (servicediscovery != null) __obj.updateDynamic("servicediscovery")(servicediscovery.asInstanceOf[js.Any])
+    if (servicequotas != null) __obj.updateDynamic("servicequotas")(servicequotas.asInstanceOf[js.Any])
     if (ses != null) __obj.updateDynamic("ses")(ses.asInstanceOf[js.Any])
     if (shield != null) __obj.updateDynamic("shield")(shield.asInstanceOf[js.Any])
     if (sns != null) __obj.updateDynamic("sns")(sns.asInstanceOf[js.Any])

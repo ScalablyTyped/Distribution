@@ -14,6 +14,7 @@ trait GetParameterResult extends js.Object {
   val name: java.lang.String
   val `type`: java.lang.String
   val value: java.lang.String
+  val version: scala.Double
   val withDecryption: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -25,9 +26,10 @@ object GetParameterResult {
     name: java.lang.String,
     `type`: java.lang.String,
     value: java.lang.String,
+    version: scala.Double,
     withDecryption: js.UndefOr[scala.Boolean] = js.undefined
   ): GetParameterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, id = id, name = name, value = value)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, name = name, value = value, version = version)
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(withDecryption)) __obj.updateDynamic("withDecryption")(withDecryption)
     __obj.asInstanceOf[GetParameterResult]

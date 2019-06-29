@@ -79,6 +79,10 @@ object ebsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.ebsVolumeMod.VolumeArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getDefaultKmsKey(): js.Promise[atPulumiAwsLib.ebsGetDefaultKmsKeyMod.GetDefaultKmsKeyResult] = js.native
+  def getDefaultKmsKey(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ebsGetDefaultKmsKeyMod.GetDefaultKmsKeyResult] = js.native
+  def getEncryptionByDefault(): js.Promise[atPulumiAwsLib.ebsGetEncryptionByDefaultMod.GetEncryptionByDefaultResult] = js.native
+  def getEncryptionByDefault(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ebsGetEncryptionByDefaultMod.GetEncryptionByDefaultResult] = js.native
   def getSnapshot(): js.Promise[atPulumiAwsLib.ebsGetSnapshotMod.GetSnapshotResult] = js.native
   def getSnapshot(args: atPulumiAwsLib.ebsGetSnapshotMod.GetSnapshotArgs): js.Promise[atPulumiAwsLib.ebsGetSnapshotMod.GetSnapshotResult] = js.native
   def getSnapshot(

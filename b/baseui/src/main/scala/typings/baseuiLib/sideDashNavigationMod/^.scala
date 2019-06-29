@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui/side-navigation", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val STATE_CHANGE_TYPE: baseuiLib.sideDashNavigationMod.STATE_CHANGE_TYPE = js.native
   val StyledNavItem: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
   val StyledNavItemContainer: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
   val StyledNavLink: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native

@@ -52,12 +52,12 @@ trait IIndividualShared extends js.Object {
     */
   var last_name: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The Kana varation of the individual’s last name (Japan only).
+    * The Kana variation of the individual’s last name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
   var last_name_kana: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The Kanji varation of the individual’s last name (Japan only).
+    * The Kanji variation of the individual’s last name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
   var last_name_kanji: js.UndefOr[java.lang.String] = js.undefined

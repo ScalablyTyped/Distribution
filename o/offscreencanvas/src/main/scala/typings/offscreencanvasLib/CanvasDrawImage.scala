@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage
 @js.native
 trait CanvasDrawImage extends js.Object {
   def drawImage(image: OffscreenCanvas, dx: scala.Double, dy: scala.Double): scala.Unit = js.native

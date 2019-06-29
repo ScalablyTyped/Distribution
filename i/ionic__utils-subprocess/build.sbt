@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__utils-subprocess"
-version := "1.0.2-d454a6"
+version := "1.0.3-d454a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

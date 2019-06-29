@@ -13,8 +13,8 @@ trait Anon_Data extends js.Object {
   var isFocused: scala.Boolean
   var isSelected: scala.Boolean
   var label: java.lang.String
-  var onClick: reactDashSelectLib.libTypesMod.MouseEventHandler
-  var onMouseOver: reactDashSelectLib.libTypesMod.MouseEventHandler
+  var onClick: reactDashSelectLib.srcTypesMod.MouseEventHandler
+  var onMouseOver: reactDashSelectLib.srcTypesMod.MouseEventHandler
   var value: js.Any
 }
 
@@ -28,8 +28,8 @@ object Anon_Data {
     isFocused: scala.Boolean,
     isSelected: scala.Boolean,
     label: java.lang.String,
-    onClick: reactDashSelectLib.libTypesMod.MouseEventHandler,
-    onMouseOver: reactDashSelectLib.libTypesMod.MouseEventHandler,
+    onClick: reactDashSelectLib.srcTypesMod.MouseEventHandler,
+    onMouseOver: reactDashSelectLib.srcTypesMod.MouseEventHandler,
     value: js.Any
   ): Anon_Data = {
     val __obj = js.Dynamic.literal(data = data, id = id, index = index, isDisabled = isDisabled, isFocused = isFocused, isSelected = isSelected, label = label, onClick = onClick, onMouseOver = onMouseOver, value = value)

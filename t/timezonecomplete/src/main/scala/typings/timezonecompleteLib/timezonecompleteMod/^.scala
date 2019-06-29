@@ -78,8 +78,10 @@ object ^ extends js.Object {
   def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ scala.Boolean = js.native
   def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ scala.Boolean = js.native
   def isLeapYear(year: scala.Double): scala.Boolean = js.native
+  def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ scala.Boolean = js.native
   def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ scala.Boolean = js.native
   def isValidOffsetString(s: java.lang.String): scala.Boolean = js.native
+  def isValidPeriodJson(json: timezonecompleteLib.distLibPeriodMod.PeriodJson): scala.Boolean = js.native
   def lastWeekDayOfMonth(year: scala.Double, month: scala.Double, weekDay: timezonecompleteLib.distLibBasicsMod.WeekDay): scala.Double = js.native
   def local(): timezonecompleteLib.distLibTimezoneMod.TimeZone = js.native
   def max(

@@ -15,6 +15,16 @@ class Period protected () extends js.Object {
     * This is due to the enormous processing power required by these cases. They are not
     * implemented and you will get an assert.
     *
+    * @param json period represented as JSON object
+    */
+  def this(json: PeriodJson) = this()
+  /**
+    * Constructor
+    * LIMITATION: if dst equals RegularLocalTime, and unit is Second, Minute or Hour,
+    * then the amount must be a factor of 24. So 120 seconds is allowed while 121 seconds is not.
+    * This is due to the enormous processing power required by these cases. They are not
+    * implemented and you will get an assert.
+    *
     * @param reference The reference date of the period. If the period is in Months or Years, and
     *                  the day is 29 or 30 or 31, the results are maximised to end-of-month.
     * @param interval The interval of the period
@@ -91,6 +101,10 @@ class Period protected () extends js.Object {
     * Reference moment of period
     */
   var _reference: js.Any = js.native
+  /**
+    * Allow not using instanceof
+    */
+  var kind: java.lang.String = js.native
   /**
     * The amount of units of the interval
     */
@@ -170,6 +184,10 @@ class Period protected () extends js.Object {
     * 2014-01-01T12:00:00.000+01:00/P1M   (one month)
     */
   def toIsoString(): java.lang.String = js.native
+  /**
+    * Returns a JSON-compatible representation of this period
+    */
+  def toJson(): PeriodJson = js.native
   /**
     * The unit of the interval
     */

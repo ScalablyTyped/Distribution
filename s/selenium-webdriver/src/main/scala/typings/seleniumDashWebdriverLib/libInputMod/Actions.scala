@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Actions protected () extends js.Object {
   // region Constructors
-  def this(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
-  def this(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, options: seleniumDashWebdriverLib.Anon_Async) = this()
-  def this(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, options: seleniumDashWebdriverLib.Anon_AsyncBoolean) = this()
-  def this(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, options: seleniumDashWebdriverLib.Anon_Bridge) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor, options: seleniumDashWebdriverLib.Anon_Async) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor, options: seleniumDashWebdriverLib.Anon_AsyncBoolean) = this()
+  def this(executor: seleniumDashWebdriverLib.libCommandMod.Executor, options: seleniumDashWebdriverLib.Anon_Bridge) = this()
   /**
     * Executes this action sequence.
     * @return {!Promise} A promise that will be resolved once

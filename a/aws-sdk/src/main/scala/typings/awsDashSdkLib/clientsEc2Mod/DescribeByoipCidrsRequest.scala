@@ -13,7 +13,7 @@ trait DescribeByoipCidrsRequest extends js.Object {
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: awsDashSdkLib.clientsEc2Mod.MaxResults
+  var MaxResults: DescribeByoipCidrsMaxResults
   /**
     * The token for the next page of results.
     */
@@ -22,7 +22,11 @@ trait DescribeByoipCidrsRequest extends js.Object {
 
 object DescribeByoipCidrsRequest {
   @scala.inline
-  def apply(MaxResults: MaxResults, DryRun: js.UndefOr[Boolean] = js.undefined, NextToken: NextToken = null): DescribeByoipCidrsRequest = {
+  def apply(
+    MaxResults: DescribeByoipCidrsMaxResults,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    NextToken: NextToken = null
+  ): DescribeByoipCidrsRequest = {
     val __obj = js.Dynamic.literal(MaxResults = MaxResults)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)

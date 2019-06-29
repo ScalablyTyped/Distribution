@@ -13,7 +13,7 @@ trait DescribeSpotFleetInstancesRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. Specify a value between 1 and 1000. The default value is 1000. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeSpotFleetInstancesMaxResults] = js.undefined
   /**
     * The token for the next set of results.
     */
@@ -29,7 +29,7 @@ object DescribeSpotFleetInstancesRequest {
   def apply(
     SpotFleetRequestId: String,
     DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeSpotFleetInstancesMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeSpotFleetInstancesRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId)

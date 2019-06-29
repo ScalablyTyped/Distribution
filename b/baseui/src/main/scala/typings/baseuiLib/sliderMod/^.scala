@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui/slider", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val STATE_CHANGE_TYPE: baseuiLib.sliderMod.STATE_CHANGE_TYPE = js.native
   val Slider: reactLib.reactMod.FC[SliderProps] = js.native
   val StatefulSlider: reactLib.reactMod.FC[StatefulSliderProps] = js.native
   val StyledInnerThumb: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native

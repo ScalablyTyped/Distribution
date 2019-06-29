@@ -10,8 +10,8 @@ trait Anon_AppendTo extends js.Object {
   var children: reactLib.reactMod.ReactNode
    // ideally Menu<MenuProps>
   var controlElement: stdLib.HTMLElement
-  var menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement
-  var menuPosition: reactDashSelectLib.libTypesMod.MenuPosition
+  var menuPlacement: reactDashSelectLib.srcTypesMod.MenuPlacement
+  var menuPosition: reactDashSelectLib.srcTypesMod.MenuPosition
 }
 
 object Anon_AppendTo {
@@ -20,8 +20,8 @@ object Anon_AppendTo {
     appendTo: stdLib.HTMLElement,
     children: reactLib.reactMod.ReactNode,
     controlElement: stdLib.HTMLElement,
-    menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement,
-    menuPosition: reactDashSelectLib.libTypesMod.MenuPosition
+    menuPlacement: reactDashSelectLib.srcTypesMod.MenuPlacement,
+    menuPosition: reactDashSelectLib.srcTypesMod.MenuPosition
   ): Anon_AppendTo = {
     val __obj = js.Dynamic.literal(appendTo = appendTo, children = children.asInstanceOf[js.Any], controlElement = controlElement, menuPlacement = menuPlacement, menuPosition = menuPosition)
   

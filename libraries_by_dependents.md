@@ -2363,6 +2363,7 @@
 | 51 | [material__checkbox](./m/material__checkbox) | The Material Components for the web checkbox compo
 | 51 | [mersenne-twister](./m/mersenne-twister) | Mersenne twister pseudorandom number generator
 | 51 | [mock-fs](./m/mock-fs) | A configurable mock file system.  You know, for te
+| 51 | [node-windows](./n/node-windows) | Support for Windows services, event logging, UAC, 
 | 51 | [nodemailer-mailgun-transp](./n/nodemailer-mailgun-transport) | A transport module to use with nodemailer to lever
 | 51 | [openid-client](./o/openid-client) | OpenID Connect Relying Party (RP, Client) implemen
 | 51 | [p-map-series](./p/p-map-series) | Map over promises serially
@@ -3682,6 +3683,7 @@
 | 16 | [polyfill-service](./p/polyfill-service) | A polyfill combinator
 | 16 | [protobufjs__pool](./p/protobufjs__pool) | A general purpose buffer pool.
 | 16 | [quoted-printable](./q/quoted-printable) | A robust & character encoding–agnostic JavaScript 
+| 16 | [reach__visually-hidden](./r/reach__visually-hidden) | Render text that is announced to screen readers bu
 | 16 | [react-flatpickr](./r/react-flatpickr) | flatpickr for React
 | 16 | [react-form](./r/react-form) | React Form is a lightweight framework and utility 
 | 16 | [react-js-pagination](./r/react-js-pagination) | Simple, easy to use component for pagination. Comp
@@ -4063,6 +4065,7 @@
 | 11 | [proj4leaflet](./p/proj4leaflet) | Smooth Proj4js integration with Leaflet
 | 11 | [pulumi__aws](./p/pulumi__aws) | A Pulumi package for creating and managing Amazon 
 | 11 | [raven-for-redux](./r/raven-for-redux) | Middleware for propagating Redux state/actions to 
+| 11 | [reach__rect](./r/reach__rect) | Measure React elements position in the DOM
 | 11 | [react-circular-progressba](./r/react-circular-progressbar) | A circular progress indicator component
 | 11 | [react-gateway](./r/react-gateway) | Render React DOM into a new context
 | 11 | [react-infinite-scroll-com](./r/react-infinite-scroll-component) | An Infinite Scroll component in react.
@@ -4167,6 +4170,7 @@
 | 10 | [p-catch-if](./p/p-catch-if) | Conditional promise catch handler
 | 10 | [pollyjs__utils](./p/pollyjs__utils) | Shared utilities and constants between @pollyjs pa
 | 10 | [precond](./p/precond) | Precondition checking utilities.
+| 10 | [reach__utils](./r/reach__utils) | Internal, shared utilities for Reach UI.
 | 10 | [react-addons-linked-state](./r/react-addons-linked-state-mixin) | >**Note:** >This is a legacy React addon, and is n
 | 10 | [react-alert](./r/react-alert) | A simple react alert component
 | 10 | [react-app](./r/react-app) | Boilerplate and tooling for JavaScript application
@@ -4319,6 +4323,7 @@
 | 8 | [epilogue](./e/epilogue) | Create REST resources and controllers with Sequeli
 | 8 | [evaporate](./e/evaporate) | Javascript library for browser to S3 multipart res
 | 8 | [express-enforces-ssl](./e/express-enforces-ssl) | Enforces SSL for node.js express projects
+| 8 | [express-sslify](./e/express-sslify) | Enforces SSL for node.js express projects
 | 8 | [fast-list](./f/fast-list) | A fast linked list (good for queues, stacks, etc.)
 | 8 | [firebase__functions](./f/firebase__functions) | This is the Firebase Functions component of the Fi
 | 8 | [firebase__polyfill](./f/firebase__polyfill) | This is the a set of polyfills/shims used by the F
@@ -4327,6 +4332,7 @@
 | 8 | [gcp-metadata](./g/gcp-metadata) | Get the metadata from a Google Cloud Platform envi
 | 8 | [git-root-dir](./g/git-root-dir) | Find the root directory of a git repository
 | 8 | [global-paths](./g/global-paths) | Returns an array of unique "global" directories ba
+| 8 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts 
 | 8 | [graphql-deduplicator](./g/graphql-deduplicator) | A GraphQL response deduplicator. Removes duplicate
 | 8 | [imap-simple](./i/imap-simple) | Wrapper over node-imap, providing a simpler api fo
 | 8 | [ionic__utils-fs](./i/ionic__utils-fs) | Filesystem utils for Node
@@ -4654,6 +4660,7 @@
 | 6 | [poly2tri](./p/poly2tri) | A 2D constrained Delaunay triangulation library
 | 6 | [popmotion__popcorn](./p/popmotion__popcorn) | Utility functions for animation and interactions.
 | 6 | [raspi](./r/raspi) | Provides access to Raspberry Pi peripherals from N
+| 6 | [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu.
 | 6 | [react-body-classname](./r/react-body-classname) | A declarative, nested way to manipulate your body'
 | 6 | [react-currency-formatter](./r/react-currency-formatter) | react currency formatter Component
 | 6 | [react-hamburger-menu](./r/react-hamburger-menu) | Dead simple Hamburger Menu to use as a mobile nav,
@@ -4868,6 +4875,7 @@
 | 5 | [websequencediagrams](./w/websequencediagrams) | Interface to websequencediagrams.com
 | 5 | [which-pm](./w/which-pm) | Detects what package manager was used for installa
 | 5 | [winjs](./w/winjs) | WinJS is a set of JavaScript toolkits that allow d
+| 5 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress.
 | 5 | [xtuc__long](./x/xtuc__long) | A Long class for representing a 64-bit two's-compl
 | 5 | [yog-log](./y/yog-log) | yog logger
 | 4 | [active-win](./a/active-win) | Get metadata about the active window (title, id, b
@@ -4984,6 +4992,10 @@
 | 4 | [protractor-browser-logs](./p/protractor-browser-logs) | Provides tools for asserting browser logs inside p
 | 4 | [provinces](./p/provinces) | state and province lists for countries
 | 4 | [qs-middleware](./q/qs-middleware) | Connect querystring middleware
+| 4 | [reach__auto-id](./r/reach__auto-id) | Autogenerate IDs to facilitate WAI-ARIA and server
+| 4 | [reach__skip-nav](./r/reach__skip-nav) | Skip navigation links for screen reader and keyboa
+| 4 | [reach__tooltip](./r/reach__tooltip) | Accessible tooltips
+| 4 | [reach__window-size](./r/reach__window-size) | Measure the window size in React
 | 4 | [react-datagrid](./r/react-datagrid) | React DataGrid
 | 4 | [react-daterange-picker](./r/react-daterange-picker) | A React based date range picker
 | 4 | [react-draggable-list](./r/react-draggable-list) | Make a list of draggable collapsible items.
@@ -5588,6 +5600,7 @@
 | 2 | [vega-themes](./v/vega-themes) | Themes for stylized Vega and Vega-Lite visualizati
 | 2 | [vssln-parser](./v/vssln-parser) | Parses Visual Studio Solution (sln) files and retu
 | 2 | [vue-chartkick](./v/vue-chartkick) | Create beautiful JavaScript charts with one line o
+| 2 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of 
 | 2 | [webix](./w/webix) | Webix UI
 | 2 | [webrtc](./w/webrtc) | WebRTC abstraction for making it simple to manage 
 | 2 | [wepy-redux](./w/wepy-redux) | WePY bindings for Redux
@@ -5877,6 +5890,7 @@
 | 1 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 1 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
 | 1 | [node-sql-parser](./n/node-sql-parser) | simple node sql parser
+| 1 | [node-timecodes](./n/node-timecodes) | Time and SMTPE Timecodes conversions
 | 1 | [notify](./n/notify) | Native Node.js C++ extension for displaying deskto
 | 1 | [notyf](./n/notyf) | A dead simple, responsive, a11y, dependency-free, 
 | 1 | [novnc-core](./n/novnc-core) | noVNC core files for using with node
@@ -6322,6 +6336,7 @@
 | 0 | [lambda-phi](./l/lambda-phi) | Typescript framework for AWS API Gateway and Lambd
 | 0 | [ldap-filters](./l/ldap-filters) | Library for generating, parsing, and evaluating LD
 | 0 | [leaflet-curve](./l/leaflet-curve) | A Leaflet plugin for drawing Bézier curves and oth
+| 0 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
 | 0 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps
 | 0 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
 | 0 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
@@ -6449,8 +6464,10 @@
 | 0 | [raspi-onewire](./r/raspi-onewire) | Provides access to 1-Wire on the Raspberry Pi from
 | 0 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
 | 0 | [rc-mentions](./r/rc-mentions) | React Mentions
+| 0 | [reach__combobox](./r/reach__combobox) | Accessible React Combobox (Autocomplete).
 | 0 | [react-albus](./r/react-albus) | React component library for building declarative m
 | 0 | [react-amplitude](./r/react-amplitude) | React Amplitude Analytics
+| 0 | [react-beforeunload](./r/react-beforeunload) | React component and hook which listens to beforeun
 | 0 | [react-better-password](./r/react-better-password) | Password input for ReactJS that mimics mobile pass
 | 0 | [react-big-scheduler](./r/react-big-scheduler) | A scheduler and resource planning component built 
 | 0 | [react-bytesize-icons](./r/react-bytesize-icons) | Bytesize Icons as React Components.
@@ -6564,6 +6581,7 @@
 | 0 | [six-runtime](./s/six-runtime) | six koa
 | 0 | [skyway](./s/skyway) | An express routing library that leverages swagger 
 | 0 | [slack-mock](./s/slack-mock) | Slack API mocker
+| 0 | [smpte-timecode](./s/smpte-timecode) | JavaScript implementation of SMPTE timecode type
 | 0 | [socket_dot_io_dot_users](./s/socket_dot_io_dot_users) | This module finds and manages which socket is from
 | 0 | [socketty](./s/socketty) | Server side socketty, based on ws
 | 0 | [soundjs](./s/soundjs) | A JavaScript library that provides a simple API, a

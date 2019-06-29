@@ -13,7 +13,7 @@ trait IDisputeEvidence extends js.Object {
     */
   var access_activity_log: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The billing addess provided by the customer.
+    * The billing address provided by the customer.
     */
   var billing_address: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
 class WebDriver protected () extends js.Object {
-  def this(session: js.Promise[Session], executor: Executor) = this()
+  def this(session: js.Promise[Session], executor: seleniumDashWebdriverLib.httpMod.Executor) = this()
   // region Constructors
   /**
     * @param {!(Session|Promise<!Session>)} session Either a
@@ -16,7 +16,7 @@ class WebDriver protected () extends js.Object {
     * @param {!command.Executor} executor The executor to use when sending
     *     commands to the browser.
     */
-  def this(session: Session, executor: Executor) = this()
+  def this(session: Session, executor: seleniumDashWebdriverLib.httpMod.Executor) = this()
   /**
     * Creates a new action sequence using this driver. The sequence will not be
     * scheduled for execution until {@link actions.ActionSequence#perform} is
@@ -241,7 +241,7 @@ class WebDriver protected () extends js.Object {
     *     resolved with the current URL.
     */
   def getCurrentUrl(): js.Promise[java.lang.String] = js.native
-  def getExecutor(): Executor = js.native
+  def getExecutor(): seleniumDashWebdriverLib.libCommandMod.Executor = js.native
   /**
     * Schedules a command to retrieve the current page's source. The page source
     * returned is a representation of the underlying DOM: do not expect it to be

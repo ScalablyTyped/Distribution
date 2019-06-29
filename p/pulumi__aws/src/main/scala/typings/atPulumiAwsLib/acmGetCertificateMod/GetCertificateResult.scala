@@ -15,6 +15,7 @@ trait GetCertificateResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val keyTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   val mostRecent: js.UndefOr[scala.Boolean] = js.undefined
   val statuses: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   val types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -26,11 +27,13 @@ object GetCertificateResult {
     arn: java.lang.String,
     domain: java.lang.String,
     id: java.lang.String,
+    keyTypes: js.Array[java.lang.String] = null,
     mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
     statuses: js.Array[java.lang.String] = null,
     types: js.Array[java.lang.String] = null
   ): GetCertificateResult = {
     val __obj = js.Dynamic.literal(arn = arn, domain = domain, id = id)
+    if (keyTypes != null) __obj.updateDynamic("keyTypes")(keyTypes)
     if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
     if (statuses != null) __obj.updateDynamic("statuses")(statuses)
     if (types != null) __obj.updateDynamic("types")(types)

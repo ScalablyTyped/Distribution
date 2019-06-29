@@ -5535,6 +5535,8 @@ object Global extends js.Object {
     *   @param sd the standard deviation
     *   @return the random number
     */
+  def randomGaussian(): scala.Double = js.native
+  def randomGaussian(mean: scala.Double): scala.Double = js.native
   def randomGaussian(mean: scala.Double, sd: scala.Double): scala.Double = js.native
   /**
     *   Sets the seed value for random(). By default,

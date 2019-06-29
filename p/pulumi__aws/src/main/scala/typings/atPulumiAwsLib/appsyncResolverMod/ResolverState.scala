@@ -23,6 +23,14 @@ trait ResolverState extends js.Object {
     */
   val field: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The resolver type. Valid values are `UNIT` and `PIPELINE`.
+    */
+  val kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The PipelineConfig. A `pipeline_config` block is documented below.
+    */
+  val pipelineConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FunctionsArray]] = js.undefined
+  /**
     * The request mapping template for this resolver.
     */
   val requestTemplate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -43,6 +51,8 @@ object ResolverState {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     dataSource: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     field: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kind: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pipelineConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FunctionsArray] = null,
     requestTemplate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     responseTemplate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
@@ -52,6 +62,8 @@ object ResolverState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (pipelineConfig != null) __obj.updateDynamic("pipelineConfig")(pipelineConfig.asInstanceOf[js.Any])
     if (requestTemplate != null) __obj.updateDynamic("requestTemplate")(requestTemplate.asInstanceOf[js.Any])
     if (responseTemplate != null) __obj.updateDynamic("responseTemplate")(responseTemplate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

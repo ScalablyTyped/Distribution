@@ -314,24 +314,42 @@ package object clientsEc2Mod {
   type DeleteFleetSuccessSet = js.Array[DeleteFleetSuccessItem]
   type DeleteLaunchTemplateVersionsResponseErrorSet = js.Array[DeleteLaunchTemplateVersionsResponseErrorItem]
   type DeleteLaunchTemplateVersionsResponseSuccessSet = js.Array[DeleteLaunchTemplateVersionsResponseSuccessItem]
+  type DescribeByoipCidrsMaxResults = scala.Double
   type DescribeCapacityReservationsMaxResults = scala.Double
+  type DescribeClassicLinkInstancesMaxResults = scala.Double
+  type DescribeClientVpnAuthorizationRulesMaxResults = scala.Double
+  type DescribeClientVpnConnectionsMaxResults = scala.Double
+  type DescribeClientVpnEndpointMaxResults = scala.Double
+  type DescribeClientVpnRoutesMaxResults = scala.Double
+  type DescribeClientVpnTargetNetworksMaxResults = scala.Double
   type DescribeConversionTaskList = js.Array[ConversionTask]
   type DescribeDhcpOptionsMaxResults = scala.Double
+  type DescribeEgressOnlyInternetGatewaysMaxResults = scala.Double
   type DescribeElasticGpusMaxResults = scala.Double
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
+  type DescribeFpgaImagesMaxResults = scala.Double
   type DescribeHostReservationsMaxResults = scala.Double
+  type DescribeIamInstanceProfileAssociationsMaxResults = scala.Double
   type DescribeInstanceCreditSpecificationsMaxResults = scala.Double
   type DescribeInternetGatewaysMaxResults = scala.Double
   type DescribeLaunchTemplatesMaxResults = scala.Double
+  type DescribeMovingAddressesMaxResults = scala.Double
+  type DescribeNatGatewaysMaxResults = scala.Double
   type DescribeNetworkAclsMaxResults = scala.Double
   type DescribeNetworkInterfacePermissionsMaxResults = scala.Double
   type DescribeNetworkInterfacesMaxResults = scala.Double
+  type DescribePrincipalIdFormatMaxResults = scala.Double
   type DescribeRouteTablesMaxResults = scala.Double
+  type DescribeScheduledInstanceAvailabilityMaxResults = scala.Double
   type DescribeSecurityGroupsMaxResults = scala.Double
+  type DescribeSpotFleetInstancesMaxResults = scala.Double
+  type DescribeSpotFleetRequestHistoryMaxResults = scala.Double
   type DescribeStaleSecurityGroupsMaxResults = scala.Double
   type DescribeStaleSecurityGroupsNextToken = java.lang.String
   type DescribeSubnetsMaxResults = scala.Double
+  type DescribeVpcClassicLinkDnsSupportMaxResults = scala.Double
+  type DescribeVpcClassicLinkDnsSupportNextToken = java.lang.String
   type DescribeVpcPeeringConnectionsMaxResults = scala.Double
   type DescribeVpcsMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -404,6 +422,7 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.instanceChange
     - awsDashSdkLib.awsDashSdkLibStrings.fleetRequestChange
     - awsDashSdkLib.awsDashSdkLibStrings.error
+    - awsDashSdkLib.awsDashSdkLibStrings.information
     - java.lang.String
   */
   type EventType = _EventType | java.lang.String
@@ -724,20 +743,26 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.r5DOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5DOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5DOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5DOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5DOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5DOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5DOTmetal
     - awsDashSdkLib.awsDashSdkLibStrings.r5aDOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5aDOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5aDOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5aDOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5aDOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5aDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5aDOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5aDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOTmetal
     - awsDashSdkLib.awsDashSdkLibStrings.r5adDOTlarge
@@ -796,6 +821,7 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT12xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT18xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5DOT24xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.c5DOTmetal
     - awsDashSdkLib.awsDashSdkLibStrings.c5dDOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5dDOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c5dDOT2xlarge
@@ -835,20 +861,26 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.m5DOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5DOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5DOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5DOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5DOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5DOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5DOTmetal
     - awsDashSdkLib.awsDashSdkLibStrings.m5aDOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5aDOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5aDOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5aDOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5aDOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5aDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5aDOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5aDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOTmetal
     - awsDashSdkLib.awsDashSdkLibStrings.m5adDOTlarge
@@ -962,7 +994,6 @@ package object clientsEc2Mod {
   type LogDestinationType = _LogDestinationType | java.lang.String
   type Long = scala.Double
   type MarketType = awsDashSdkLib.awsDashSdkLibStrings.spot | java.lang.String
-  type MaxResults = scala.Double
   type MillisecondDateTime = stdLib.Date
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.disabled

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebDriver protected ()
   extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver {
-  def this(session: js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session], executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
+  def this(session: js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session], executor: seleniumDashWebdriverLib.httpMod.Executor) = this()
   // region Constructors
   /**
     * @param {!(Session|Promise<!Session>)} session Either a
@@ -17,7 +17,7 @@ class WebDriver protected ()
     * @param {!command.Executor} executor The executor to use when sending
     *     commands to the browser.
     */
-  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session, executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
+  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session, executor: seleniumDashWebdriverLib.httpMod.Executor) = this()
 }
 
 /* static members */

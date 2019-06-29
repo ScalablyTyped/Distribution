@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "zeit__next-typescript"
-version := "0.1-dt-20190213Z-235820"
+version := "0.1-dt-20190213Z-167a56"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-228aa6",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "next" % "8.0-dt-20190501Z-14d267",
-  "org.scalablytyped" %%% "next-server" % "8.1-dt-20190501Z-0bbc10",
+  "org.scalablytyped" %%% "next" % "8.0-dt-20190501Z-6f5a55",
+  "org.scalablytyped" %%% "next-server" % "8.1-dt-20190629Z-4736d0",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190616Z-af27f2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",

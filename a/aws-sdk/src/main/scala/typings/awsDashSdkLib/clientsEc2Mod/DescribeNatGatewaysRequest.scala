@@ -13,7 +13,7 @@ trait DescribeNatGatewaysRequest extends js.Object {
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeNatGatewaysMaxResults] = js.undefined
   /**
     * One or more NAT gateway IDs.
     */
@@ -28,7 +28,7 @@ object DescribeNatGatewaysRequest {
   @scala.inline
   def apply(
     Filter: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeNatGatewaysMaxResults] = js.undefined,
     NatGatewayIds: ValueStringList = null,
     NextToken: String = null
   ): DescribeNatGatewaysRequest = {

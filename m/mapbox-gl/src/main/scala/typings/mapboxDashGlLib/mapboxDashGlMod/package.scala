@@ -6,6 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mapboxDashGlMod {
+  type CameraForBoundsResult = (stdLib.Required[
+    stdLib.Pick[
+      CameraOptions, 
+      mapboxDashGlLib.mapboxDashGlLibStrings.zoom | mapboxDashGlLib.mapboxDashGlLibStrings.bearing
+    ]
+  ]) with mapboxDashGlLib.Anon_Center
   type EventData = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Expression = js.Array[ExpressionName | js.Any]
   type LngLatBoundsLike = LngLatBounds | (js.Tuple2[LngLatLike, LngLatLike]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])

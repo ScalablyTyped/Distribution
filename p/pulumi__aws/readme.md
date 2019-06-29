@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__aws
 
-Typings are for version 0.18.15
+Typings are for version 0.18.16
 
 ## Library description:
 A Pulumi package for creating and managing Amazon Web Services (AWS) cloud resources.

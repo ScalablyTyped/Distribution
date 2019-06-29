@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui/dnd-list", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val STATE_CHANGE_TYPE: baseuiLib.dndDashListMod.STATE_CHANGE_TYPE = js.native
   val StatefulList: reactLib.reactMod.FC[StatefulListProps] = js.native
   val StyledCloseHandle: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native
   val StyledDragHandle: styletronDashReactLib.styletronDashReactMod.StyletronComponent[js.Any] = js.native

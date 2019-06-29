@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "requestretry"
-version := "1.12-dt-20190212Z-5d99fc"
+version := "1.12-dt-20190628Z-45bbe9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

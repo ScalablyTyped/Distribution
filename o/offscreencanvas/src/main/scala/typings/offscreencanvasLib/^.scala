@@ -19,5 +19,11 @@ object ^ extends js.Object {
     sw: scala.Double,
     sh: scala.Double
   ): js.Promise[stdLib.ImageBitmap] = js.native
+  def postMessage(message: js.Any, targetOrigin: java.lang.String): scala.Unit = js.native
+  def postMessage(
+    message: js.Any,
+    targetOrigin: java.lang.String,
+    transfer: js.Array[stdLib.Transferable | OffscreenCanvas]
+  ): scala.Unit = js.native
 }
 

@@ -35,8 +35,7 @@ class Stream protected ()
     */
   val kmsKeyId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * A name to identify the stream. This is unique to the
-    * AWS account and region the Stream is created in.
+    * A name to identify the stream. This is unique to the AWS account and region the Stream is created in.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -45,8 +44,7 @@ class Stream protected ()
   val retentionPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The number of shards that the stream will use.
-    * Amazon has guidlines for specifying the Stream size that should be referenced
-    * when creating a Kinesis stream. See [Amazon Kinesis Streams][2] for more.
+    * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams][2] for more.
     */
   val shardCount: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**

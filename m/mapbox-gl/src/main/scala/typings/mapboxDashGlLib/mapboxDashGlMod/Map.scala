@@ -49,8 +49,8 @@ class Map () extends Evented {
   def addLayer(layer: Layer, before: java.lang.String): this.type = js.native
   def addSource(id: java.lang.String, source: AnySourceData): this.type = js.native
   def areTilesLoaded(): scala.Boolean = js.native
-  def cameraForBounds(bounds: LngLatBoundsLike): js.UndefOr[CameraOptions] = js.native
-  def cameraForBounds(bounds: LngLatBoundsLike, options: CameraForBoundsOptions): js.UndefOr[CameraOptions] = js.native
+  def cameraForBounds(bounds: LngLatBoundsLike): js.UndefOr[CameraForBoundsResult] = js.native
+  def cameraForBounds(bounds: LngLatBoundsLike, options: CameraForBoundsOptions): js.UndefOr[CameraForBoundsResult] = js.native
   def easeTo(options: EaseToOptions): this.type = js.native
   def easeTo(options: EaseToOptions, eventData: EventData): this.type = js.native
   def fitBounds(bounds: LngLatBoundsLike): this.type = js.native

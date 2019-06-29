@@ -11,19 +11,19 @@ trait Anon_Action[OptionType] extends js.Object {
   var hasValue: scala.Boolean = js.native
   var isMulti: scala.Boolean = js.native
   var isRtl: scala.Boolean = js.native
-  var options: reactDashSelectLib.libTypesMod.OptionsType[_] = js.native
-  var selectProps: Anon_Children with reactDashSelectLib.libSelectMod.Props[OptionType] = js.native
+  var options: reactDashSelectLib.srcTypesMod.OptionsType[_] = js.native
+  var selectProps: Anon_Children with reactDashSelectLib.srcSelectMod.Props[OptionType] = js.native
   def clearValue(): scala.Unit = js.native
   def getStyles(key: java.lang.String, props: js.Object): js.Object = js.native
   def getValue(): js.Array[OptionType] = js.native
   def selectOption(newValue: OptionType): scala.Unit = js.native
   def setValue(
-    newValue: reactDashSelectLib.libTypesMod.ValueType[OptionType],
-    action: reactDashSelectLib.libTypesMod.ActionTypes
+    newValue: reactDashSelectLib.srcTypesMod.ValueType[OptionType],
+    action: reactDashSelectLib.srcTypesMod.ActionTypes
   ): scala.Unit = js.native
   def setValue(
-    newValue: reactDashSelectLib.libTypesMod.ValueType[OptionType],
-    action: reactDashSelectLib.libTypesMod.ActionTypes,
+    newValue: reactDashSelectLib.srcTypesMod.ValueType[OptionType],
+    action: reactDashSelectLib.srcTypesMod.ActionTypes,
     option: OptionType
   ): scala.Unit = js.native
 }
