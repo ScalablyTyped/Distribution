@@ -1,0 +1,19 @@
+package typings
+package reactDashNativeDashTabDashNavigatorLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashTabDashNavigatorLibProps {
+  @scala.inline
+  def ItemProps: reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps.type = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  type ItemProps = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
+  @scala.inline
+  def ReactDashNativeDashTabDashNavigatorProps: reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps.type = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
+  type ReactDashNativeDashTabDashNavigatorProps = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
+  @scala.inline
+  def TabNavigatorProps: reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps.type = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
+  type TabNavigatorProps = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
+}
+

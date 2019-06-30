@@ -5,102 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashSyntaxDashHighlighterLibComponents {
+object reactDashSyntaxDashHighlighterLibComponents extends reactDashSyntaxDashHighlighterLibProps {
   @scala.inline
   def DefaultDashHighlight: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.defaultDashHighlightMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
   @scala.inline
-  def DefaultDashHighlightProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type DefaultDashHighlightProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  @scala.inline
   def Light: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.lightMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
-  @scala.inline
-  def LightProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type LightProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   @scala.inline
   def LightAsync: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.LightAsync].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
   @scala.inline
-  def LightAsyncProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type LightAsyncProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  @scala.inline
   def LightDashAsync: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.lightDashAsyncMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
-  @scala.inline
-  def LightDashAsyncProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type LightDashAsyncProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   @scala.inline
   def Prism: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.prismMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
   @scala.inline
-  def PrismProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  @scala.inline
   def PrismAsync: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.PrismAsync].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
-  @scala.inline
-  def PrismAsyncProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismAsyncProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   @scala.inline
   def PrismAsyncLight: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.PrismAsyncLight].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
   @scala.inline
-  def PrismAsyncLightProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismAsyncLightProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  @scala.inline
   def PrismDashAsync: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.prismDashAsyncMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
-  @scala.inline
-  def PrismDashAsyncProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismDashAsyncProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   @scala.inline
   def PrismDashAsyncDashLight: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.prismDashAsyncDashLightMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
   @scala.inline
-  def PrismDashAsyncDashLightProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismDashAsyncDashLightProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  @scala.inline
   def PrismDashLight: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.prismDashLightMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
-  @scala.inline
-  def PrismDashLightProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismDashLightProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   @scala.inline
   def PrismLight: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.PrismLight].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
   @scala.inline
-  def PrismLightProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type PrismLightProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  @scala.inline
   def ReactDashSyntaxDashHighlighter: reactLib.reactMod.ComponentType[
     reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
   ] = js.constructorOf[reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps]]
-  @scala.inline
-  def ReactDashSyntaxDashHighlighterProps: reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps.type = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
-  type ReactDashSyntaxDashHighlighterProps = reactDashSyntaxDashHighlighterLib.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
 }
 

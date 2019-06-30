@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashCountupLibComponents {
+object reactDashCountupLibComponents extends reactDashCountupLibProps {
   @scala.inline
   def ReactDashCountup: reactLib.reactMod.ComponentType[reactDashCountupLib.reactDashCountupMod.Props] = js.constructorOf[reactDashCountupLib.reactDashCountupMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCountupLib.reactDashCountupMod.Props]]
-  @scala.inline
-  def ReactDashCountupProps: reactDashCountupLib.reactDashCountupMod.Props.type = reactDashCountupLib.reactDashCountupMod.Props
-  type ReactDashCountupProps = reactDashCountupLib.reactDashCountupMod.Props
 }
 

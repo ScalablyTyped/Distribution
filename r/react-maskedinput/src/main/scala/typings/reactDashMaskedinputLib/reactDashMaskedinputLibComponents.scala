@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashMaskedinputLibComponents {
+object reactDashMaskedinputLibComponents extends reactDashMaskedinputLibProps {
   @scala.inline
   def ReactDashMaskedinput: reactLib.reactMod.ComponentType[reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps] = js.constructorOf[reactDashMaskedinputLib.reactDashMaskedinputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps]]
-  @scala.inline
-  def ReactDashMaskedinputProps: reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps.type = reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps
-  type ReactDashMaskedinputProps = reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps
 }
 

@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashMultiDashSliderLibComponents {
+object reactDashNativeDashMultiDashSliderLibComponents extends reactDashNativeDashMultiDashSliderLibProps {
   @scala.inline
   def ReactDashNativeDashMultiDashSlider: reactLib.reactMod.ComponentType[
     reactDashNativeDashMultiDashSliderLib.reactDashNativeDashMultiDashSliderMod.MultiSliderProps
   ] = js.constructorOf[reactDashNativeDashMultiDashSliderLib.reactDashNativeDashMultiDashSliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMultiDashSliderLib.reactDashNativeDashMultiDashSliderMod.MultiSliderProps]]
-  @scala.inline
-  def ReactDashNativeDashMultiDashSliderProps: reactDashNativeDashMultiDashSliderLib.reactDashNativeDashMultiDashSliderMod.MultiSliderProps.type = reactDashNativeDashMultiDashSliderLib.reactDashNativeDashMultiDashSliderMod.MultiSliderProps
-  type ReactDashNativeDashMultiDashSliderProps = reactDashNativeDashMultiDashSliderLib.reactDashNativeDashMultiDashSliderMod.MultiSliderProps
 }
 

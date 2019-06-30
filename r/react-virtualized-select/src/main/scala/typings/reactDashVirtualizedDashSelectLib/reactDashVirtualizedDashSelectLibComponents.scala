@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashVirtualizedDashSelectLibComponents {
+object reactDashVirtualizedDashSelectLibComponents extends reactDashVirtualizedDashSelectLibProps {
   @scala.inline
   def ReactDashVirtualizedDashSelect[TValue]: reactLib.reactMod.ComponentType[
     reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]
   ] = js.constructorOf[reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.default[TValue]].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]]]
-  type ReactDashVirtualizedDashSelectProps[TValue] = reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]
 }
 

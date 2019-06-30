@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNotificationDashSystemDashReduxLibComponents {
+object reactDashNotificationDashSystemDashReduxLibComponents extends reactDashNotificationDashSystemDashReduxLibProps {
   @scala.inline
   def ReactDashNotificationDashSystemDashRedux: reactLib.reactMod.ComponentType[
     reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsProps
   ] = js.constructorOf[reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsProps]]
-  @scala.inline
-  def ReactDashNotificationDashSystemDashReduxProps: reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsProps.type = reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsProps
-  type ReactDashNotificationDashSystemDashReduxProps = reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsProps
 }
 

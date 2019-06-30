@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashCustomDashScrollbarsLibComponents {
+object reactDashCustomDashScrollbarsLibComponents extends reactDashCustomDashScrollbarsLibProps {
   @scala.inline
   def ReactDashCustomDashScrollbars: reactLib.reactMod.ComponentType[reactDashCustomDashScrollbarsLib.reactDashCustomDashScrollbarsMod.ScrollbarProps] = js.constructorOf[reactDashCustomDashScrollbarsLib.reactDashCustomDashScrollbarsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCustomDashScrollbarsLib.reactDashCustomDashScrollbarsMod.ScrollbarProps]]
-  @scala.inline
-  def ReactDashCustomDashScrollbarsProps: reactDashCustomDashScrollbarsLib.reactDashCustomDashScrollbarsMod.ScrollbarProps.type = reactDashCustomDashScrollbarsLib.reactDashCustomDashScrollbarsMod.ScrollbarProps
-  type ReactDashCustomDashScrollbarsProps = reactDashCustomDashScrollbarsLib.reactDashCustomDashScrollbarsMod.ScrollbarProps
 }
 

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashRndLibComponents {
+object reactDashRndLibComponents extends reactDashRndLibProps {
   @scala.inline
   def ReactDashRnd: reactLib.reactMod.ComponentType[stdLib.Partial[reactDashRndLib.reactDashRndMod.Options]] = js.constructorOf[reactDashRndLib.reactDashRndMod.default].asInstanceOf[reactLib.reactMod.ComponentType[stdLib.Partial[reactDashRndLib.reactDashRndMod.Options]]]
-  type ReactDashRndProps[T] = stdLib.Partial[T]
 }
 

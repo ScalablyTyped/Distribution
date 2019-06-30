@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashLeafletLibComponents {
+object reactDashLeafletLibComponents extends reactDashLeafletLibProps {
   @scala.inline
   def AttributionControl[P /* <: reactDashLeafletLib.reactDashLeafletMod.AttributionControlProps */, E /* <: leafletLib.leafletMod.ControlNs.Attribution */]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reactDashLeafletLib.reactDashLeafletMod.AttributionControl[P, E]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline
@@ -36,16 +36,10 @@ object reactDashLeafletLibComponents {
   ] = reactDashLeafletLib.reactDashLeafletMod.^.LeafletConsumer.asInstanceOf[reactLib.reactMod.ComponentType[
   reactLib.reactMod.ConsumerProps[reactDashLeafletLib.reactDashLeafletMod.LeafletContext]]]
   @scala.inline
-  def LeafletConsumerProps: reactLib.reactMod.ConsumerProps.type = reactLib.reactMod.ConsumerProps
-  type LeafletConsumerProps[T] = reactLib.reactMod.ConsumerProps[T]
-  @scala.inline
   def LeafletProvider: reactLib.reactMod.ComponentType[
     reactLib.reactMod.ProviderProps[reactDashLeafletLib.reactDashLeafletMod.LeafletContext]
   ] = reactDashLeafletLib.reactDashLeafletMod.^.LeafletProvider.asInstanceOf[reactLib.reactMod.ComponentType[
   reactLib.reactMod.ProviderProps[reactDashLeafletLib.reactDashLeafletMod.LeafletContext]]]
-  @scala.inline
-  def LeafletProviderProps: reactLib.reactMod.ProviderProps.type = reactLib.reactMod.ProviderProps
-  type LeafletProviderProps[T] = reactLib.reactMod.ProviderProps[T]
   @scala.inline
   def Map[P /* <: reactDashLeafletLib.reactDashLeafletMod.MapProps */, E /* <: leafletLib.leafletMod.Map */]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reactDashLeafletLib.reactDashLeafletMod.Map[P, E]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline

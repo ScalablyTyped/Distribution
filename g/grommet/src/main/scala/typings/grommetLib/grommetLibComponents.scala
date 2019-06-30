@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object grommetLibComponents {
+object grommetLibComponents extends grommetLibProps {
   @scala.inline
   def Accordion: reactLib.reactMod.ComponentType[
     grommetLib.componentsAccordionMod.AccordionProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])
@@ -67,9 +67,6 @@ object grommetLibComponents {
   grommetLib.componentsCarouselMod.CarouselProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])]]
   @scala.inline
   def Chart: reactLib.reactMod.ComponentType[grommetLib.componentsChartMod.ChartProps] = js.constructorOf[grommetLib.grommetMod.Chart].asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsChartMod.ChartProps]]
-  @scala.inline
-  def ChartProps: grommetLib.componentsChartMod.ChartProps.type = grommetLib.componentsChartMod.ChartProps
-  type ChartProps = grommetLib.componentsChartMod.ChartProps
   @scala.inline
   def CheckBox: reactLib.reactMod.ComponentType[
     grommetLib.componentsCheckBoxMod.CheckBoxProps with (reactLib.reactMod.DetailedHTMLProps[
@@ -185,13 +182,7 @@ object grommetLibComponents {
   @scala.inline
   def InfiniteScroll: reactLib.reactMod.ComponentType[grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps] = js.constructorOf[grommetLib.grommetMod.InfiniteScroll].asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps]]
   @scala.inline
-  def InfiniteScrollProps: grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps.type = grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps
-  type InfiniteScrollProps = grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps
-  @scala.inline
   def Keyboard: reactLib.reactMod.ComponentType[grommetLib.componentsKeyboardMod.KeyboardProps] = js.constructorOf[grommetLib.grommetMod.Keyboard].asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsKeyboardMod.KeyboardProps]]
-  @scala.inline
-  def KeyboardProps: grommetLib.componentsKeyboardMod.KeyboardProps.type = grommetLib.componentsKeyboardMod.KeyboardProps
-  type KeyboardProps = grommetLib.componentsKeyboardMod.KeyboardProps
   @scala.inline
   def Layer: reactLib.reactMod.ComponentType[
     grommetLib.componentsLayerMod.LayerProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])
@@ -226,9 +217,6 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def Meter: reactLib.reactMod.ComponentType[grommetLib.componentsMeterMod.MeterProps] = js.constructorOf[grommetLib.grommetMod.Meter].asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsMeterMod.MeterProps]]
-  @scala.inline
-  def MeterProps: grommetLib.componentsMeterMod.MeterProps.type = grommetLib.componentsMeterMod.MeterProps
-  type MeterProps = grommetLib.componentsMeterMod.MeterProps
   @scala.inline
   def Paragraph: reactLib.reactMod.ComponentType[
     grommetLib.componentsParagraphMod.ParagraphProps with (grommetLib.utilsMod.Omit[
@@ -297,23 +285,11 @@ object grommetLibComponents {
   @scala.inline
   def Select: reactLib.reactMod.ComponentType[grommetLib.componentsSelectMod.SelectProps] = js.constructorOf[grommetLib.grommetMod.Select].asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsSelectMod.SelectProps]]
   @scala.inline
-  def SelectProps: grommetLib.componentsSelectMod.SelectProps.type = grommetLib.componentsSelectMod.SelectProps
-  type SelectProps = grommetLib.componentsSelectMod.SelectProps
-  @scala.inline
   def SkipLink: reactLib.reactMod.ComponentType[grommetLib.componentsSkipLinkMod.SkipLinkProps] = grommetLib.grommetMod.^.SkipLink.asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsSkipLinkMod.SkipLinkProps]]
-  @scala.inline
-  def SkipLinkProps: grommetLib.componentsSkipLinkMod.SkipLinkProps.type = grommetLib.componentsSkipLinkMod.SkipLinkProps
-  type SkipLinkProps = grommetLib.componentsSkipLinkMod.SkipLinkProps
   @scala.inline
   def SkipLinkTarget: reactLib.reactMod.ComponentType[grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps] = grommetLib.grommetMod.^.SkipLinkTarget.asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps]]
   @scala.inline
-  def SkipLinkTargetProps: grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps.type = grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps
-  type SkipLinkTargetProps = grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps
-  @scala.inline
   def SkipLinks: reactLib.reactMod.ComponentType[grommetLib.componentsSkipLinksMod.SkipLinksProps] = js.constructorOf[grommetLib.grommetMod.SkipLinks].asInstanceOf[reactLib.reactMod.ComponentType[grommetLib.componentsSkipLinksMod.SkipLinksProps]]
-  @scala.inline
-  def SkipLinksProps: grommetLib.componentsSkipLinksMod.SkipLinksProps.type = grommetLib.componentsSkipLinksMod.SkipLinksProps
-  type SkipLinksProps = grommetLib.componentsSkipLinksMod.SkipLinksProps
   @scala.inline
   def Stack: reactLib.reactMod.ComponentType[
     grommetLib.componentsStackMod.StackProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])

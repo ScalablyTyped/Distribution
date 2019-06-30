@@ -1,0 +1,15 @@
+package typings
+package reactDashNativeDashScrollableDashTabDashViewLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashScrollableDashTabDashViewLibProps {
+  type DefaultTabBarProps[T] = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[T]
+  @scala.inline
+  def ReactDashNativeDashScrollableDashTabDashViewProps: reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties.type = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
+  type ReactDashNativeDashScrollableDashTabDashViewProps = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
+  type ScrollableTabBarProps[T] = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[T]
+}
+

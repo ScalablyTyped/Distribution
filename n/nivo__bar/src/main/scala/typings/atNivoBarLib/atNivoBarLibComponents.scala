@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atNivoBarLibComponents {
+object atNivoBarLibComponents extends atNivoBarLibProps {
   @scala.inline
   def Bar: reactLib.reactMod.ComponentType[
     atNivoBarLib.atNivoBarMod.BarSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions
@@ -18,9 +18,7 @@ object atNivoBarLibComponents {
   atNivoBarLib.atNivoBarMod.BarCanvasProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsiveBar: reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarSvgProps] = js.constructorOf[atNivoBarLib.atNivoBarMod.ResponsiveBar].asInstanceOf[reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarSvgProps]]
-  type ResponsiveBarProps = atNivoBarLib.atNivoBarMod.BarSvgProps
   @scala.inline
   def ResponsiveBarCanvas: reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarCanvasProps] = js.constructorOf[atNivoBarLib.atNivoBarMod.ResponsiveBarCanvas].asInstanceOf[reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarCanvasProps]]
-  type ResponsiveBarCanvasProps = atNivoBarLib.atNivoBarMod.BarCanvasProps
 }
 

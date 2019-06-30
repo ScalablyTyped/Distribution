@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashSpinkitLibComponents {
+object reactDashSpinkitLibComponents extends reactDashSpinkitLibProps {
   @scala.inline
   def ReactDashSpinkit: reactLib.reactMod.ComponentType[reactDashSpinkitLib.reactDashSpinkitMod.SpinnerProps] = js.constructorOf[reactDashSpinkitLib.reactDashSpinkitMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSpinkitLib.reactDashSpinkitMod.SpinnerProps]]
-  @scala.inline
-  def ReactDashSpinkitProps: reactDashSpinkitLib.reactDashSpinkitMod.SpinnerProps.type = reactDashSpinkitLib.reactDashSpinkitMod.SpinnerProps
-  type ReactDashSpinkitProps = reactDashSpinkitLib.reactDashSpinkitMod.SpinnerProps
 }
 

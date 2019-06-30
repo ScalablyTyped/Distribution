@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashSoundLibComponents {
+object reactDashSoundLibComponents extends reactDashSoundLibProps {
   @scala.inline
   def ReactDashSound: reactLib.reactMod.ComponentType[reactDashSoundLib.reactDashSoundMod.ReactSoundProps] = js.constructorOf[reactDashSoundLib.reactDashSoundMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSoundLib.reactDashSoundMod.ReactSoundProps]]
-  @scala.inline
-  def ReactDashSoundProps: reactDashSoundLib.reactDashSoundMod.ReactSoundProps.type = reactDashSoundLib.reactDashSoundMod.ReactSoundProps
-  type ReactDashSoundProps = reactDashSoundLib.reactDashSoundMod.ReactSoundProps
 }
 

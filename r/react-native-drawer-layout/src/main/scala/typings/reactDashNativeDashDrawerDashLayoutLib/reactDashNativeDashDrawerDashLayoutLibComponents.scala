@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashDrawerDashLayoutLibComponents {
+object reactDashNativeDashDrawerDashLayoutLibComponents extends reactDashNativeDashDrawerDashLayoutLibProps {
   @scala.inline
   def ReactDashNativeDashDrawerDashLayout: reactLib.reactMod.ComponentType[
     reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
   ] = js.constructorOf[reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties]]
-  @scala.inline
-  def ReactDashNativeDashDrawerDashLayoutProps: reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties.type = reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
-  type ReactDashNativeDashDrawerDashLayoutProps = reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutMod.DrawerLayoutProperties
 }
 

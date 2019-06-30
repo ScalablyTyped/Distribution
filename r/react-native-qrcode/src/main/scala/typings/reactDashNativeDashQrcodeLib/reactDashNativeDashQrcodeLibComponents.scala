@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashQrcodeLibComponents {
+object reactDashNativeDashQrcodeLibComponents extends reactDashNativeDashQrcodeLibProps {
   @scala.inline
   def ReactDashNativeDashQrcode: reactLib.reactMod.ComponentType[reactDashNativeDashQrcodeLib.reactDashNativeDashQrcodeMod.QRCodeProperties] = js.constructorOf[reactDashNativeDashQrcodeLib.reactDashNativeDashQrcodeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashQrcodeLib.reactDashNativeDashQrcodeMod.QRCodeProperties]]
-  @scala.inline
-  def ReactDashNativeDashQrcodeProps: reactDashNativeDashQrcodeLib.reactDashNativeDashQrcodeMod.QRCodeProperties.type = reactDashNativeDashQrcodeLib.reactDashNativeDashQrcodeMod.QRCodeProperties
-  type ReactDashNativeDashQrcodeProps = reactDashNativeDashQrcodeLib.reactDashNativeDashQrcodeMod.QRCodeProperties
 }
 

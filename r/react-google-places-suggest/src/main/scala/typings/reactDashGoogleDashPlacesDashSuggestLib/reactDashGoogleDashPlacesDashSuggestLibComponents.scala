@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashGoogleDashPlacesDashSuggestLibComponents {
+object reactDashGoogleDashPlacesDashSuggestLibComponents extends reactDashGoogleDashPlacesDashSuggestLibProps {
   @scala.inline
   def ReactDashGoogleDashPlacesDashSuggest: reactLib.reactMod.ComponentType[
     reactDashGoogleDashPlacesDashSuggestLib.reactDashGoogleDashPlacesDashSuggestMod.ReactGooglePlacesSuggestNs.Props
   ] = js.constructorOf[reactDashGoogleDashPlacesDashSuggestLib.reactDashGoogleDashPlacesDashSuggestMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashGoogleDashPlacesDashSuggestLib.reactDashGoogleDashPlacesDashSuggestMod.ReactGooglePlacesSuggestNs.Props]]
-  @scala.inline
-  def ReactDashGoogleDashPlacesDashSuggestProps: reactDashGoogleDashPlacesDashSuggestLib.reactDashGoogleDashPlacesDashSuggestMod.ReactGooglePlacesSuggestNs.Props.type = reactDashGoogleDashPlacesDashSuggestLib.reactDashGoogleDashPlacesDashSuggestMod.ReactGooglePlacesSuggestNs.Props
-  type ReactDashGoogleDashPlacesDashSuggestProps = reactDashGoogleDashPlacesDashSuggestLib.reactDashGoogleDashPlacesDashSuggestMod.ReactGooglePlacesSuggestNs.Props
 }
 

@@ -1,0 +1,16 @@
+package typings
+package reactDashNativeDashSortableDashListLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSortableDashListLibProps {
+  @scala.inline
+  def ReactDashNativeDashSortableDashListProps: reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps.type = reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps
+  type ReactDashNativeDashSortableDashListProps = reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps
+  @scala.inline
+  def defaultClsProps: reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps.type = reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps
+  type defaultClsProps = reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps
+}
+

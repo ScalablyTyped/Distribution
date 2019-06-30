@@ -5,16 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atSemanticDashUiDashReactEventDashStackLibComponents {
+object atSemanticDashUiDashReactEventDashStackLibComponents extends atSemanticDashUiDashReactEventDashStackLibProps {
   @scala.inline
   def EventDashStack: reactLib.reactMod.ComponentType[atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps] = js.constructorOf[atSemanticDashUiDashReactEventDashStackLib.atSemanticDashUiDashReactEventDashStackMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps]]
   @scala.inline
-  def EventDashStackProps: atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps.type = atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps
-  type EventDashStackProps = atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps
-  @scala.inline
   def EventStack: reactLib.reactMod.ComponentType[atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps] = js.constructorOf[atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps]]
-  @scala.inline
-  def EventStackProps: atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps.type = atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps
-  type EventStackProps = atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.EventStackProps
 }
 

@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashSwipeDashGesturesLibComponents {
+object reactDashNativeDashSwipeDashGesturesLibComponents extends reactDashNativeDashSwipeDashGesturesLibProps {
   @scala.inline
   def ReactDashNativeDashSwipeDashGestures: reactLib.reactMod.ComponentType[
     reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps
   ] = js.constructorOf[reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps]]
-  @scala.inline
-  def ReactDashNativeDashSwipeDashGesturesProps: reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps.type = reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps
-  type ReactDashNativeDashSwipeDashGesturesProps = reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps
 }
 

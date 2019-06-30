@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashScrollableDashAnchorLibComponents {
+object reactDashScrollableDashAnchorLibComponents extends reactDashScrollableDashAnchorLibProps {
   @scala.inline
   def ReactDashScrollableDashAnchor: reactLib.reactMod.ComponentType[
     reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
   ] = js.constructorOf[reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps]]
-  @scala.inline
-  def ReactDashScrollableDashAnchorProps: reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps.type = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
-  type ReactDashScrollableDashAnchorProps = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
 }
 

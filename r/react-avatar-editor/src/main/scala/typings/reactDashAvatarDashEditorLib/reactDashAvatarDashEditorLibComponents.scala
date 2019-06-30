@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashAvatarDashEditorLibComponents {
+object reactDashAvatarDashEditorLibComponents extends reactDashAvatarDashEditorLibProps {
   @scala.inline
   def ReactDashAvatarDashEditor: reactLib.reactMod.ComponentType[reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps] = js.constructorOf[reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps]]
-  @scala.inline
-  def ReactDashAvatarDashEditorProps: reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps.type = reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps
-  type ReactDashAvatarDashEditorProps = reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps
 }
 

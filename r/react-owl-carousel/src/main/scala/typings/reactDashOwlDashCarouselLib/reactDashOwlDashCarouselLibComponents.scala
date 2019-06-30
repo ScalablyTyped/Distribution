@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashOwlDashCarouselLibComponents {
+object reactDashOwlDashCarouselLibComponents extends reactDashOwlDashCarouselLibProps {
   @scala.inline
   def ReactDashOwlDashCarousel: reactLib.reactMod.ComponentType[reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options] = js.constructorOf[reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options]]
-  @scala.inline
-  def ReactDashOwlDashCarouselProps: reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options.type = reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options
-  type ReactDashOwlDashCarouselProps = reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options
 }
 

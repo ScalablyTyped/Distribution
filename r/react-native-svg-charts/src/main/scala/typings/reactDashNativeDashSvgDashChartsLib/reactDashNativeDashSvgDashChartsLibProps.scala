@@ -1,0 +1,52 @@
+package typings
+package reactDashNativeDashSvgDashChartsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSvgDashChartsLibProps {
+  @scala.inline
+  def AreaChartProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.AreaChartProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.AreaChartProps
+  type AreaChartProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.AreaChartProps[T]
+  @scala.inline
+  def BarChartProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.BarChartProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.BarChartProps
+  type BarChartProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.BarChartProps[T]
+  @scala.inline
+  def GridProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.GridProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.GridProps
+  type GridProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.GridProps[T]
+  @scala.inline
+  def HorizontalLineProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps
+  type HorizontalLineProps = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.HorizontalLineProps
+  @scala.inline
+  def LineChartProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.ChartProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.ChartProps
+  type LineChartProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.ChartProps[T]
+  @scala.inline
+  def PathProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.AnimatedPathProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.AnimatedPathProps
+  type PathProps = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.AnimatedPathProps
+  @scala.inline
+  def PieChartProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PieChartProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PieChartProps
+  type PieChartProps[T /* <: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PieChartData */] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PieChartProps[T]
+  @scala.inline
+  def PointProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PointProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PointProps
+  type PointProps = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.PointProps
+  @scala.inline
+  def ProgressCircleProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.ProgressCircleProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.ProgressCircleProps
+  type ProgressCircleProps = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.ProgressCircleProps
+  @scala.inline
+  def StackedAreaChartProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.StackedAreaChartProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.StackedAreaChartProps
+  type StackedAreaChartProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.StackedAreaChartProps[T]
+  @scala.inline
+  def StackedBarChartProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.StackedBarChartProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.StackedBarChartProps
+  type StackedBarChartProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.StackedBarChartProps[T]
+  @scala.inline
+  def TooltipProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.TooltipProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.TooltipProps
+  type TooltipProps = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.TooltipProps
+  @scala.inline
+  def XAxisProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.XAxisProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.XAxisProps
+  type XAxisProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.XAxisProps[T]
+  @scala.inline
+  def YAxisProps: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.YAxisProps.type = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.YAxisProps
+  type YAxisProps[T] = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.YAxisProps[T]
+}
+

@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashBetterDashPasswordLibComponents {
+object reactDashBetterDashPasswordLibComponents extends reactDashBetterDashPasswordLibProps {
   @scala.inline
   def ReactDashBetterDashPassword: reactLib.reactMod.ComponentType[reactDashBetterDashPasswordLib.reactDashBetterDashPasswordMod.PasswordProps] = js.constructorOf[reactDashBetterDashPasswordLib.reactDashBetterDashPasswordMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBetterDashPasswordLib.reactDashBetterDashPasswordMod.PasswordProps]]
-  @scala.inline
-  def ReactDashBetterDashPasswordProps: reactDashBetterDashPasswordLib.reactDashBetterDashPasswordMod.PasswordProps.type = reactDashBetterDashPasswordLib.reactDashBetterDashPasswordMod.PasswordProps
-  type ReactDashBetterDashPasswordProps = reactDashBetterDashPasswordLib.reactDashBetterDashPasswordMod.PasswordProps
 }
 

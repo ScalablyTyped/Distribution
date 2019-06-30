@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashMaterialDashUiDashFormDashValidatorLibComponents {
+object reactDashMaterialDashUiDashFormDashValidatorLibComponents extends reactDashMaterialDashUiDashFormDashValidatorLibProps {
   @scala.inline
   def TextValidator: reactLib.reactMod.ComponentType[
     reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with materialDashUiLib.underscoreUnderscoreMaterialUINs.TextFieldProps
@@ -21,8 +21,5 @@ object reactDashMaterialDashUiDashFormDashValidatorLibComponents {
     reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
   ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorForm].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps]]
-  @scala.inline
-  def ValidatorFormProps: reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps.type = reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
-  type ValidatorFormProps = reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
 }
 

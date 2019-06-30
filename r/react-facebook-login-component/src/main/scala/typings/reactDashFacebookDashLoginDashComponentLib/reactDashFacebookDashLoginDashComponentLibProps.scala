@@ -1,0 +1,13 @@
+package typings
+package reactDashFacebookDashLoginDashComponentLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashFacebookDashLoginDashComponentLibProps {
+  @scala.inline
+  def FacebookLoginProps: reactDashFacebookDashLoginDashComponentLib.reactDashFacebookDashLoginDashComponentMod.FacebookLoginProps.type = reactDashFacebookDashLoginDashComponentLib.reactDashFacebookDashLoginDashComponentMod.FacebookLoginProps
+  type FacebookLoginProps = reactDashFacebookDashLoginDashComponentLib.reactDashFacebookDashLoginDashComponentMod.FacebookLoginProps
+}
+

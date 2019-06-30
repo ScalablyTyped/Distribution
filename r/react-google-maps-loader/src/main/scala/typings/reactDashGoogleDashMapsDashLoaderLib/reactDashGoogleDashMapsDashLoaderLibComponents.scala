@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashGoogleDashMapsDashLoaderLibComponents {
+object reactDashGoogleDashMapsDashLoaderLibComponents extends reactDashGoogleDashMapsDashLoaderLibProps {
   @scala.inline
   def ReactDashGoogleDashMapsDashLoader: reactLib.reactMod.ComponentType[
     reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
   ] = js.constructorOf[reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props]]
-  type ReactDashGoogleDashMapsDashLoaderProps = reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
 }
 

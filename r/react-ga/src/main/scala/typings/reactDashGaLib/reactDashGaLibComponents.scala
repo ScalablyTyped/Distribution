@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashGaLibComponents {
+object reactDashGaLibComponents extends reactDashGaLibProps {
   @scala.inline
   def OutboundLink: reactLib.reactMod.ComponentType[
     reactDashGaLib.reactDashGaMod.OutboundLinkProps with reactLib.reactMod.HTMLProps[stdLib.HTMLAnchorElement]

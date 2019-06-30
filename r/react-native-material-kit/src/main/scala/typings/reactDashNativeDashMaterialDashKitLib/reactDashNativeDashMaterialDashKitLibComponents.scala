@@ -5,31 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashMaterialDashKitLibComponents {
+object reactDashNativeDashMaterialDashKitLibComponents extends reactDashNativeDashMaterialDashKitLibProps {
   @scala.inline
   def Indeterminate: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgressNs.Indeterminate].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties]]
   @scala.inline
-  def IndeterminateProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
-  type IndeterminateProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.IndeterminateProgressProperties
-  @scala.inline
   def MKButton: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKButtonProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKButton].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKButtonProperties]]
   @scala.inline
-  def MKButtonProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKButtonProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKButtonProperties
-  type MKButtonProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKButtonProperties
-  @scala.inline
   def MKCheckbox: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKCheckboxProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKCheckbox].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKCheckboxProperties]]
-  @scala.inline
-  def MKCheckboxProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKCheckboxProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKCheckboxProperties
-  type MKCheckboxProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKCheckboxProperties
   @scala.inline
   def MKComponent[P, S]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKComponent[P, S]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline
@@ -38,71 +29,44 @@ object reactDashNativeDashMaterialDashKitLibComponents {
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKIconToggle].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKIconToggleProperties]]
   @scala.inline
-  def MKIconToggleProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKIconToggleProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKIconToggleProperties
-  type MKIconToggleProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKIconToggleProperties
-  @scala.inline
   def MKProgress: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgressProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgress].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgressProperties]]
-  @scala.inline
-  def MKProgressProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgressProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgressProperties
-  type MKProgressProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKProgressProperties
   @scala.inline
   def MKRadioButton: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRadioButton].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties]]
   @scala.inline
-  def MKRadioButtonProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties
-  type MKRadioButtonProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRadioButtonProperties
-  @scala.inline
   def MKRangeSlider: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRangeSliderProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRangeSlider].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRangeSliderProperties]]
-  @scala.inline
-  def MKRangeSliderProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRangeSliderProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRangeSliderProperties
-  type MKRangeSliderProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRangeSliderProperties
   @scala.inline
   def MKRipple: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRippleProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRipple].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRippleProperties]]
   @scala.inline
-  def MKRippleProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRippleProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRippleProperties
-  type MKRippleProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKRippleProperties
-  @scala.inline
   def MKSlider: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSliderProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSlider].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSliderProperties]]
-  @scala.inline
-  def MKSliderProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSliderProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSliderProperties
-  type MKSliderProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSliderProperties
   @scala.inline
   def MKSpinner: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSpinnerProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSpinner].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSpinnerProperties]]
   @scala.inline
-  def MKSpinnerProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSpinnerProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSpinnerProperties
-  type MKSpinnerProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSpinnerProperties
-  @scala.inline
   def MKSwitch: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSwitchProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSwitch].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSwitchProperties]]
   @scala.inline
-  def MKSwitchProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSwitchProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSwitchProperties
-  type MKSwitchProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKSwitchProperties
-  @scala.inline
   def MKTextField: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKTextFieldProperties
   ] = js.constructorOf[reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKTextField].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKTextFieldProperties]]
-  @scala.inline
-  def MKTextFieldProps: reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKTextFieldProperties.type = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKTextFieldProperties
-  type MKTextFieldProps = reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKTextFieldProperties
 }
 

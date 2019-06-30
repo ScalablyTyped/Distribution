@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashMeasureLibComponents {
+object reactDashMeasureLibComponents extends reactDashMeasureLibProps {
   @scala.inline
   def ReactDashMeasure: reactLib.reactMod.ComponentType[reactDashMeasureLib.reactDashMeasureMod.MeasureProps] = js.constructorOf[reactDashMeasureLib.reactDashMeasureMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMeasureLib.reactDashMeasureMod.MeasureProps]]
-  @scala.inline
-  def ReactDashMeasureProps: reactDashMeasureLib.reactDashMeasureMod.MeasureProps.type = reactDashMeasureLib.reactDashMeasureMod.MeasureProps
-  type ReactDashMeasureProps = reactDashMeasureLib.reactDashMeasureMod.MeasureProps
 }
 

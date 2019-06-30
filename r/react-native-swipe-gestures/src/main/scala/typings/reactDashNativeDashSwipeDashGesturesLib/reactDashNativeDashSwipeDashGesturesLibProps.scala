@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashSwipeDashGesturesLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSwipeDashGesturesLibProps {
+  @scala.inline
+  def ReactDashNativeDashSwipeDashGesturesProps: reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps.type = reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps
+  type ReactDashNativeDashSwipeDashGesturesProps = reactDashNativeDashSwipeDashGesturesLib.reactDashNativeDashSwipeDashGesturesMod.GestureRecognizerProps
+}
+

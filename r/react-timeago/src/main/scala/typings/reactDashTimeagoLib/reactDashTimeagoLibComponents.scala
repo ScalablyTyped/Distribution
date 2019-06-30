@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashTimeagoLibComponents {
+object reactDashTimeagoLibComponents extends reactDashTimeagoLibProps {
   @scala.inline
   def ReactDashTimeago[T /* <: reactLib.reactMod.ComponentType[js.Object] */]: reactLib.reactMod.ComponentType[
     reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoProps[T] with reactLib.reactMod.ComponentProps[T]

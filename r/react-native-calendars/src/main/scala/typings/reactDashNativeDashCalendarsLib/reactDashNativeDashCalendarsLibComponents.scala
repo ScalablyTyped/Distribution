@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashCalendarsLibComponents {
+object reactDashNativeDashCalendarsLibComponents extends reactDashNativeDashCalendarsLibProps {
   @scala.inline
   def Agenda[TItem]: reactLib.reactMod.ComponentType[
     reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsMod.AgendaProps[TItem] with reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsMod.CalendarMarkingProps

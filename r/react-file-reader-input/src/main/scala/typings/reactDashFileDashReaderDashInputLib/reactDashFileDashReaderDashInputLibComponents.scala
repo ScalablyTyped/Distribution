@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashFileDashReaderDashInputLibComponents {
+object reactDashFileDashReaderDashInputLibComponents extends reactDashFileDashReaderDashInputLibProps {
   @scala.inline
   def ReactDashFileDashReaderDashInput: reactLib.reactMod.ComponentType[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props] = js.constructorOf[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props]]
-  @scala.inline
-  def ReactDashFileDashReaderDashInputProps: reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props.type = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
-  type ReactDashFileDashReaderDashInputProps = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
 }
 

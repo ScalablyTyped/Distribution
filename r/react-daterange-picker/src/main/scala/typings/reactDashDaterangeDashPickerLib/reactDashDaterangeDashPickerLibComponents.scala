@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashDaterangeDashPickerLibComponents {
+object reactDashDaterangeDashPickerLibComponents extends reactDashDaterangeDashPickerLibProps {
   @scala.inline
   def ReactDashDaterangeDashPicker: reactLib.reactMod.ComponentType[
     reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.DateRangePicker]
   ] = js.constructorOf[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.DateRangePicker]]]
-  @scala.inline
-  def ReactDashDaterangeDashPickerProps: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props.type = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props
-  type ReactDashDaterangeDashPickerProps[T] = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[T]
 }
 

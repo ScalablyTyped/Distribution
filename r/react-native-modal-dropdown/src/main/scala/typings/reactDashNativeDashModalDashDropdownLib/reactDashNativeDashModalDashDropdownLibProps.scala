@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashModalDashDropdownLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashModalDashDropdownLibProps {
+  @scala.inline
+  def ReactDashNativeDashModalDashDropdownProps: reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps.type = reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps
+  type ReactDashNativeDashModalDashDropdownProps = reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps
+}
+

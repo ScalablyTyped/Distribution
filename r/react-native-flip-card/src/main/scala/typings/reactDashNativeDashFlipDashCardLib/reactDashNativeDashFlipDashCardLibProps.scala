@@ -1,0 +1,19 @@
+package typings
+package reactDashNativeDashFlipDashCardLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashFlipDashCardLibProps {
+  @scala.inline
+  def BackProps: reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps.type = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps
+  type BackProps = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps
+  @scala.inline
+  def FaceProps: reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps.type = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps
+  type FaceProps = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps
+  @scala.inline
+  def ReactDashNativeDashFlipDashCardProps: reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FlipCardProps.type = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FlipCardProps
+  type ReactDashNativeDashFlipDashCardProps = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FlipCardProps
+}
+

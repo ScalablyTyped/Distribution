@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashScrollableDashTabDashViewLibComponents {
+object reactDashNativeDashScrollableDashTabDashViewLibComponents extends reactDashNativeDashScrollableDashTabDashViewLibProps {
   @scala.inline
   def DefaultTabBar: reactLib.reactMod.ComponentType[
     reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
@@ -15,15 +15,11 @@ object reactDashNativeDashScrollableDashTabDashViewLibComponents {
   reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
     reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.DefaultTabBarProps
   ]]]
-  type DefaultTabBarProps[T] = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[T]
   @scala.inline
   def ReactDashNativeDashScrollableDashTabDashView: reactLib.reactMod.ComponentType[
     reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
   ] = js.constructorOf[reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties]]
-  @scala.inline
-  def ReactDashNativeDashScrollableDashTabDashViewProps: reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties.type = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
-  type ReactDashNativeDashScrollableDashTabDashViewProps = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabViewProperties
   @scala.inline
   def ScrollableTabBar: reactLib.reactMod.ComponentType[
     reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
@@ -33,6 +29,5 @@ object reactDashNativeDashScrollableDashTabDashViewLibComponents {
   reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[
     reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.ScrollableTabBarProps
   ]]]
-  type ScrollableTabBarProps[T] = reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewMod.TabBarProps[T]
 }
 

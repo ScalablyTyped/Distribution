@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object grommetDashIconsLibComponents {
+object grommetDashIconsLibComponents extends grommetDashIconsLibProps {
   @scala.inline
   def Accessibility: reactLib.reactMod.ComponentType[
     grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.SVGProps[reactLib.SVGSVGElement]

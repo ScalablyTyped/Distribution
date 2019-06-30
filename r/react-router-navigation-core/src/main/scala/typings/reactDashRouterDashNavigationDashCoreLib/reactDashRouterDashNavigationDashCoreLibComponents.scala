@@ -5,22 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashRouterDashNavigationDashCoreLibComponents {
+object reactDashRouterDashNavigationDashCoreLibComponents extends reactDashRouterDashNavigationDashCoreLibProps {
   @scala.inline
   def CardStack: reactLib.reactMod.ComponentType[
     reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.CardStackProps
   ] = js.constructorOf[reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.CardStack].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.CardStackProps]]
   @scala.inline
-  def CardStackProps: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.CardStackProps.type = reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.CardStackProps
-  type CardStackProps = reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.CardStackProps
-  @scala.inline
   def TabStack: reactLib.reactMod.ComponentType[
     reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.TabStackProps
   ] = js.constructorOf[reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.TabStack].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.TabStackProps]]
-  @scala.inline
-  def TabStackProps: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.TabStackProps.type = reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.TabStackProps
-  type TabStackProps = reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.TabStackProps
 }
 

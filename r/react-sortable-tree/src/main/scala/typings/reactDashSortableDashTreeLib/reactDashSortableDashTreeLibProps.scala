@@ -1,0 +1,16 @@
+package typings
+package reactDashSortableDashTreeLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashSortableDashTreeLibProps {
+  @scala.inline
+  def ReactDashSortableDashTreeProps: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps.type = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
+  type ReactDashSortableDashTreeProps = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
+  @scala.inline
+  def SortableTreeWithoutDndContextProps: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps.type = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
+  type SortableTreeWithoutDndContextProps = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
+}
+

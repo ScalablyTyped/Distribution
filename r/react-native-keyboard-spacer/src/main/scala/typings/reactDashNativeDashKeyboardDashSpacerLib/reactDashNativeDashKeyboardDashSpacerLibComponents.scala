@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashKeyboardDashSpacerLibComponents {
+object reactDashNativeDashKeyboardDashSpacerLibComponents extends reactDashNativeDashKeyboardDashSpacerLibProps {
   @scala.inline
   def ReactDashNativeDashKeyboardDashSpacer: reactLib.reactMod.ComponentType[
     reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps
   ] = js.constructorOf[reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps]]
-  @scala.inline
-  def ReactDashNativeDashKeyboardDashSpacerProps: reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps.type = reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps
-  type ReactDashNativeDashKeyboardDashSpacerProps = reactDashNativeDashKeyboardDashSpacerLib.reactDashNativeDashKeyboardDashSpacerMod.KeyboardSpacerProps
 }
 

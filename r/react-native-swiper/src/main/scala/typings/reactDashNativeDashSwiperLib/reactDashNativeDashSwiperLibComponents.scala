@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashSwiperLibComponents {
+object reactDashNativeDashSwiperLibComponents extends reactDashNativeDashSwiperLibProps {
   @scala.inline
   def ReactDashNativeDashSwiper: reactLib.reactMod.ComponentType[reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties] = js.constructorOf[reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties]]
-  @scala.inline
-  def ReactDashNativeDashSwiperProps: reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties.type = reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties
-  type ReactDashNativeDashSwiperProps = reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties
 }
 

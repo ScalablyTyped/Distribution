@@ -84,8 +84,8 @@
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => numeric, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
 	at scala.sys.package$.error(package.scala:30)
 	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:48)
-	at com.olvind.tso.scalajs.MethodTree.renamed(tree.scala:148)
-	at com.olvind.tso.scalajs.MethodTree.withSuffix(tree.scala:143)
+	at com.olvind.tso.scalajs.MethodTree.renamed(tree.scala:147)
+	at com.olvind.tso.scalajs.MethodTree.withSuffix(tree.scala:142)
 	at com.olvind.tso.scalajs.transforms.CombineOverloads$.$anonfun$combineSameErasureSameTypeParams$7(CombineOverloads.scala:68)
 	at com.olvind.tso.scalajs.transforms.CombineOverloads$.$anonfun$combineSameErasureSameTypeParams$7$adapted(CombineOverloads.scala:67)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)

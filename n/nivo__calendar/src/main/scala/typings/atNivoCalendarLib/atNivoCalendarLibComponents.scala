@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atNivoCalendarLibComponents {
+object atNivoCalendarLibComponents extends atNivoCalendarLibProps {
   @scala.inline
   def Calendar: reactLib.reactMod.ComponentType[
     atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions
@@ -13,6 +13,5 @@ object atNivoCalendarLibComponents {
   atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsiveCalendar: reactLib.reactMod.ComponentType[atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps] = js.constructorOf[atNivoCalendarLib.atNivoCalendarMod.ResponsiveCalendar].asInstanceOf[reactLib.reactMod.ComponentType[atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps]]
-  type ResponsiveCalendarProps = atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps
 }
 

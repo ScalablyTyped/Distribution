@@ -1,0 +1,13 @@
+package typings
+package reduxDashDevtoolsDashDockDashMonitorLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reduxDashDevtoolsDashDockDashMonitorLibProps {
+  @scala.inline
+  def ReduxDashDevtoolsDashDockDashMonitorProps: reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps.type = reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps
+  type ReduxDashDevtoolsDashDockDashMonitorProps = reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps
+}
+

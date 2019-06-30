@@ -5,16 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashSortableDashTreeLibComponents {
+object reactDashSortableDashTreeLibComponents extends reactDashSortableDashTreeLibProps {
   @scala.inline
   def ReactDashSortableDashTree: reactLib.reactMod.ComponentType[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps] = js.constructorOf[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps]]
   @scala.inline
-  def ReactDashSortableDashTreeProps: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps.type = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
-  type ReactDashSortableDashTreeProps = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
-  @scala.inline
   def SortableTreeWithoutDndContext: reactLib.reactMod.ComponentType[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps] = js.constructorOf[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.SortableTreeWithoutDndContext].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps]]
-  @scala.inline
-  def SortableTreeWithoutDndContextProps: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps.type = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
-  type SortableTreeWithoutDndContextProps = reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.ReactSortableTreeProps
 }
 

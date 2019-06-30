@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashGoogleDashLoginDashComponentLibComponents {
+object reactDashGoogleDashLoginDashComponentLibComponents extends reactDashGoogleDashLoginDashComponentLibProps {
   @scala.inline
   def GoogleLogin: reactLib.reactMod.ComponentType[
     reactDashGoogleDashLoginDashComponentLib.reactDashGoogleDashLoginDashComponentMod.GoogleLoginProps
   ] = js.constructorOf[reactDashGoogleDashLoginDashComponentLib.reactDashGoogleDashLoginDashComponentMod.GoogleLogin].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashGoogleDashLoginDashComponentLib.reactDashGoogleDashLoginDashComponentMod.GoogleLoginProps]]
-  @scala.inline
-  def GoogleLoginProps: reactDashGoogleDashLoginDashComponentLib.reactDashGoogleDashLoginDashComponentMod.GoogleLoginProps.type = reactDashGoogleDashLoginDashComponentLib.reactDashGoogleDashLoginDashComponentMod.GoogleLoginProps
-  type GoogleLoginProps = reactDashGoogleDashLoginDashComponentLib.reactDashGoogleDashLoginDashComponentMod.GoogleLoginProps
 }
 

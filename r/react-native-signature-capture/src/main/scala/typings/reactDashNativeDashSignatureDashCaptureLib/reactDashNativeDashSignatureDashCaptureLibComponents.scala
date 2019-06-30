@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashSignatureDashCaptureLibComponents {
+object reactDashNativeDashSignatureDashCaptureLibComponents extends reactDashNativeDashSignatureDashCaptureLibProps {
   @scala.inline
   def ReactDashNativeDashSignatureDashCapture: reactLib.reactMod.ComponentType[
     reactDashNativeDashSignatureDashCaptureLib.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps
   ] = js.constructorOf[reactDashNativeDashSignatureDashCaptureLib.reactDashNativeDashSignatureDashCaptureMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSignatureDashCaptureLib.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps]]
-  @scala.inline
-  def ReactDashNativeDashSignatureDashCaptureProps: reactDashNativeDashSignatureDashCaptureLib.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps.type = reactDashNativeDashSignatureDashCaptureLib.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps
-  type ReactDashNativeDashSignatureDashCaptureProps = reactDashNativeDashSignatureDashCaptureLib.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps
 }
 

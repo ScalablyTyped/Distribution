@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashDialogLibComponents {
+object reactDashNativeDashDialogLibComponents extends reactDashNativeDashDialogLibProps {
   @scala.inline
   def Button: reactLib.reactMod.ComponentType[
     reactDashNativeDashDialogLib.reactDashNativeDashDialogMod.ButtonProps with reactDashNativeLib.reactDashNativeMod.ViewProps with reactDashNativeLib.reactDashNativeMod.TextProps

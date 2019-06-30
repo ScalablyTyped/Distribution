@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashReadDashMoreDashTextLibComponents {
+object reactDashNativeDashReadDashMoreDashTextLibComponents extends reactDashNativeDashReadDashMoreDashTextLibProps {
   @scala.inline
   def ReactDashNativeDashReadDashMoreDashText: reactLib.reactMod.ComponentType[
     reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
   ] = js.constructorOf[reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps]]
-  @scala.inline
-  def ReactDashNativeDashReadDashMoreDashTextProps: reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps.type = reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
-  type ReactDashNativeDashReadDashMoreDashTextProps = reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
 }
 

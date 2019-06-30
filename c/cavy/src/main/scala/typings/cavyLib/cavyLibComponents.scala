@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object cavyLibComponents {
+object cavyLibComponents extends cavyLibProps {
   @scala.inline
   def Tester: reactLib.reactMod.ComponentType[cavyLib.cavyMod.TesterProps] = js.constructorOf[cavyLib.cavyMod.Tester].asInstanceOf[reactLib.reactMod.ComponentType[cavyLib.cavyMod.TesterProps]]
-  @scala.inline
-  def TesterProps: cavyLib.cavyMod.TesterProps.type = cavyLib.cavyMod.TesterProps
-  type TesterProps = cavyLib.cavyMod.TesterProps
 }
 

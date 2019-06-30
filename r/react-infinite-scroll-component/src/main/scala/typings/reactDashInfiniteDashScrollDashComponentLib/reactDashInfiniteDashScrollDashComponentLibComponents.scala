@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashInfiniteDashScrollDashComponentLibComponents {
+object reactDashInfiniteDashScrollDashComponentLibComponents extends reactDashInfiniteDashScrollDashComponentLibProps {
   @scala.inline
   def ReactDashInfiniteDashScrollDashComponent: reactLib.reactMod.ComponentType[
     reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollProps
   ] = js.constructorOf[reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollProps]]
-  @scala.inline
-  def ReactDashInfiniteDashScrollDashComponentProps: reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollProps.type = reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollProps
-  type ReactDashInfiniteDashScrollDashComponentProps = reactDashInfiniteDashScrollDashComponentLib.reactDashInfiniteDashScrollDashComponentMod.InfiniteScrollProps
 }
 

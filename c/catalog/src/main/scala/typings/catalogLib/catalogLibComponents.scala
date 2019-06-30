@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object catalogLibComponents {
+object catalogLibComponents extends catalogLibProps {
   @scala.inline
   def AudioSpecimen: reactLib.reactMod.ComponentType[
     catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.AudioSpecimenProps
@@ -13,9 +13,6 @@ object catalogLibComponents {
   catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.AudioSpecimenProps]]
   @scala.inline
   def Catalog: reactLib.reactMod.ComponentType[catalogLib.catalogMod.Config] = js.constructorOf[catalogLib.catalogMod.Catalog].asInstanceOf[reactLib.reactMod.ComponentType[catalogLib.catalogMod.Config]]
-  @scala.inline
-  def CatalogProps: catalogLib.catalogMod.Config.type = catalogLib.catalogMod.Config
-  type CatalogProps = catalogLib.catalogMod.Config
   @scala.inline
   def CodeSpecimen: reactLib.reactMod.ComponentType[catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.CodeSpecimenProps] = js.constructorOf[catalogLib.catalogMod.CodeSpecimen].asInstanceOf[reactLib.reactMod.ComponentType[catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.CodeSpecimenProps]]
   @scala.inline
@@ -44,7 +41,6 @@ object catalogLibComponents {
   catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.ImageSpecimenProps]]
   @scala.inline
   def Page: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[catalogLib.catalogMod.Page].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
-  type PageProps = js.Object
   @scala.inline
   def ReactSpecimen: reactLib.reactMod.ComponentType[
     catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.ReactSpecimenProps

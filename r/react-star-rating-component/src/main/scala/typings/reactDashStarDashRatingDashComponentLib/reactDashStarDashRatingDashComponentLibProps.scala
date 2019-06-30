@@ -1,0 +1,13 @@
+package typings
+package reactDashStarDashRatingDashComponentLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashStarDashRatingDashComponentLibProps {
+  @scala.inline
+  def ReactDashStarDashRatingDashComponentProps: reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps.type = reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps
+  type ReactDashStarDashRatingDashComponentProps = reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps
+}
+

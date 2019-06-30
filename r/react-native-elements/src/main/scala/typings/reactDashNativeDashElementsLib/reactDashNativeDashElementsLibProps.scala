@@ -1,0 +1,78 @@
+package typings
+package reactDashNativeDashElementsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashElementsLibProps {
+  @scala.inline
+  def AirbnbRatingProps: reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.AirbnbRatingProps.type = reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.AirbnbRatingProps
+  type AirbnbRatingProps = reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.AirbnbRatingProps
+  @scala.inline
+  def AvatarProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.AvatarProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.AvatarProps
+  type AvatarProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.AvatarProps
+  @scala.inline
+  def BadgeProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.BadgeProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.BadgeProps
+  type BadgeProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.BadgeProps
+  @scala.inline
+  def ButtonProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ButtonProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ButtonProps
+  type ButtonProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ButtonProps
+  @scala.inline
+  def ButtonGroupProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ButtonGroupProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ButtonGroupProps
+  type ButtonGroupProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ButtonGroupProps
+  @scala.inline
+  def CardProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.CardProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.CardProps
+  type CardProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.CardProps
+  @scala.inline
+  def CheckBoxProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.CheckBoxProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.CheckBoxProps
+  type CheckBoxProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.CheckBoxProps
+  type DividerProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.DividerProps
+  @scala.inline
+  def HeaderProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.HeaderProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.HeaderProps
+  type HeaderProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.HeaderProps
+  @scala.inline
+  def IconProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.IconProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.IconProps
+  type IconProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.IconProps
+  @scala.inline
+  def ImageProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ImageProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ImageProps
+  type ImageProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ImageProps
+  @scala.inline
+  def InputProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.InputProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.InputProps
+  type InputProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.InputProps
+  @scala.inline
+  def ListItemProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ListItemProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ListItemProps
+  type ListItemProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ListItemProps
+  @scala.inline
+  def OverlayProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.OverlayProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.OverlayProps
+  type OverlayProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.OverlayProps
+  @scala.inline
+  def PricingCardProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.PricingCardProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.PricingCardProps
+  type PricingCardProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.PricingCardProps
+  @scala.inline
+  def RatingProps: reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps.type = reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps
+  type RatingProps = reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps
+  type SearchBarProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SearchBarProps
+  @scala.inline
+  def SliderProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps
+  type SliderProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps
+  @scala.inline
+  def SocialIconProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialIconProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialIconProps
+  type SocialIconProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialIconProps
+  @scala.inline
+  def TextProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TextProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TextProps
+  type TextProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TextProps
+  @scala.inline
+  def ThemeConsumerProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeConsumerProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeConsumerProps
+  type ThemeConsumerProps[T] = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeConsumerProps[T]
+  @scala.inline
+  def ThemeProviderProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeProviderProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeProviderProps
+  type ThemeProviderProps[T] = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.ThemeProviderProps[T]
+  @scala.inline
+  def TileProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TileProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TileProps
+  type TileProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TileProps
+  @scala.inline
+  def TooltipProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TooltipProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TooltipProps
+  type TooltipProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.TooltipProps
+}
+

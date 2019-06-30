@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashElevatedDashViewLibComponents {
+object reactDashNativeDashElevatedDashViewLibComponents extends reactDashNativeDashElevatedDashViewLibProps {
   @scala.inline
   def ReactDashNativeDashElevatedDashView: reactLib.reactMod.ComponentType[
     reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties
   ] = js.constructorOf[reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties]]
-  @scala.inline
-  def ReactDashNativeDashElevatedDashViewProps: reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties.type = reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties
-  type ReactDashNativeDashElevatedDashViewProps = reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties
 }
 

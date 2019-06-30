@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashWaitLibComponents {
+object reactDashWaitLibComponents extends reactDashWaitLibProps {
   @scala.inline
   def Waiter: reactLib.reactMod.ComponentType[js.Object] = reactDashWaitLib.reactDashWaitMod.^.Waiter.asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
-  type WaiterProps = js.Object
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashOnsenuiLibComponents {
+object reactDashOnsenuiLibComponents extends reactDashOnsenuiLibProps {
   @scala.inline
   def ActionSheet: reactLib.reactMod.ComponentType[
     (reactDashOnsenuiLib.reactDashOnsenuiMod.HTMLAttributes[

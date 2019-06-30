@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atNivoSankeyLibComponents {
+object atNivoSankeyLibComponents extends atNivoSankeyLibProps {
   @scala.inline
   def ResponsiveSankey: reactLib.reactMod.ComponentType[
     atNivoSankeyLib.atNivoSankeyMod.Data with atNivoSankeyLib.atNivoSankeyMod.SankeyProps

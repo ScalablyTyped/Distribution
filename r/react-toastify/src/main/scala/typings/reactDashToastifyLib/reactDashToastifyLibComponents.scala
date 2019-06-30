@@ -5,31 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashToastifyLibComponents {
+object reactDashToastifyLibComponents extends reactDashToastifyLibProps {
   @scala.inline
   def Bounce: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = reactDashToastifyLib.reactDashToastifyMod.^.Bounce.asInstanceOf[reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]]
   @scala.inline
-  def BounceProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps.type = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
-  type BounceProps = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
-  @scala.inline
   def Flip: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = reactDashToastifyLib.reactDashToastifyMod.^.Flip.asInstanceOf[reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]]
-  @scala.inline
-  def FlipProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps.type = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
-  type FlipProps = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
   @scala.inline
   def Slide: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = reactDashToastifyLib.reactDashToastifyMod.^.Slide.asInstanceOf[reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]]
   @scala.inline
-  def SlideProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps.type = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
-  type SlideProps = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
-  @scala.inline
   def ToastContainer: reactLib.reactMod.ComponentType[reactDashToastifyLib.reactDashToastifyMod.ToastContainerProps] = reactDashToastifyLib.reactDashToastifyMod.^.ToastContainer.asInstanceOf[reactLib.reactMod.ComponentType[reactDashToastifyLib.reactDashToastifyMod.ToastContainerProps]]
   @scala.inline
-  def ToastContainerProps: reactDashToastifyLib.reactDashToastifyMod.ToastContainerProps.type = reactDashToastifyLib.reactDashToastifyMod.ToastContainerProps
-  type ToastContainerProps = reactDashToastifyLib.reactDashToastifyMod.ToastContainerProps
-  @scala.inline
   def Zoom: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = reactDashToastifyLib.reactDashToastifyMod.^.Zoom.asInstanceOf[reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]]
-  @scala.inline
-  def ZoomProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps.type = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
-  type ZoomProps = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
 }
 

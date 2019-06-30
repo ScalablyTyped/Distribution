@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atIonicReactLibComponents {
+object atIonicReactLibComponents extends atIonicReactLibProps {
   @scala.inline
   def IonAnchor: reactLib.reactMod.ComponentType[
     (stdLib.Pick[
@@ -41,7 +41,6 @@ object atIonicReactLibComponents {
   ]) with reactLib.reactMod.RefAttributes[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonAvatarElement]]]
   @scala.inline
   def IonBackButton: reactLib.reactMod.ComponentType[atIonicReactLib.distComponentsNavigationIonRouterOutletMod.ButtonProps] = js.constructorOf[atIonicReactLib.atIonicReactMod.IonBackButton].asInstanceOf[reactLib.reactMod.ComponentType[atIonicReactLib.distComponentsNavigationIonRouterOutletMod.ButtonProps]]
-  type IonBackButtonProps = atIonicReactLib.distComponentsNavigationIonRouterOutletMod.ButtonProps
   @scala.inline
   def IonBackButtonInner: reactLib.reactMod.ComponentType[
     (stdLib.Pick[
@@ -614,7 +613,6 @@ object atIonicReactLibComponents {
     atIonicReactLib.distComponentsNavigationIonRouterOutletMod.Props, 
     atIonicReactLib.atIonicReactLibStrings.children
   ]]]
-  type IonRouterOutletProps[T, K /* <: java.lang.String */] = stdLib.Pick[T, K]
   @scala.inline
   def IonRouterOutletInner: reactLib.reactMod.ComponentType[
     (stdLib.Pick[
@@ -780,7 +778,6 @@ object atIonicReactLibComponents {
     atIonicReactLib.distComponentsNavigationIonTabBarMod.Props, 
     /* import warning: LimitUnionLength.enterTypeRef Was union type with length 167 */ js.Any
   ]]]
-  type IonTabBarProps[T, K /* <: java.lang.String */] = stdLib.Pick[T, K]
   @scala.inline
   def IonTabBarInner: reactLib.reactMod.ComponentType[
     (stdLib.Pick[
@@ -805,9 +802,6 @@ object atIonicReactLibComponents {
   ]) with reactLib.reactMod.RefAttributes[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonTabButtonElement]]]
   @scala.inline
   def IonTabs: reactLib.reactMod.ComponentType[atIonicReactLib.distComponentsNavigationIonTabsMod.Props] = js.constructorOf[atIonicReactLib.distComponentsNavigationIonTabsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atIonicReactLib.distComponentsNavigationIonTabsMod.Props]]
-  @scala.inline
-  def IonTabsProps: atIonicReactLib.distComponentsNavigationIonTabsMod.Props.type = atIonicReactLib.distComponentsNavigationIonTabsMod.Props
-  type IonTabsProps = atIonicReactLib.distComponentsNavigationIonTabsMod.Props
   @scala.inline
   def IonText: reactLib.reactMod.ComponentType[
     (stdLib.Pick[

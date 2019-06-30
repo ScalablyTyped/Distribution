@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashInstantsearchDashNativeLibComponents {
+object reactDashInstantsearchDashNativeLibComponents extends reactDashInstantsearchDashNativeLibProps {
   @scala.inline
   def Configure: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.Configure].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -15,8 +15,5 @@ object reactDashInstantsearchDashNativeLibComponents {
     reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.InstantSearchProps
   ] = js.constructorOf[reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.InstantSearch].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.InstantSearchProps]]
-  @scala.inline
-  def InstantSearchProps: reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.InstantSearchProps.type = reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.InstantSearchProps
-  type InstantSearchProps = reactDashInstantsearchDashNativeLib.reactDashInstantsearchDashNativeMod.InstantSearchProps
 }
 

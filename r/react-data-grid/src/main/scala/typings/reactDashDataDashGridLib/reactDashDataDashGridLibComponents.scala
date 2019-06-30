@@ -5,12 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashDataDashGridLibComponents {
+object reactDashDataDashGridLibComponents extends reactDashDataDashGridLibProps {
   @scala.inline
   def AutoComplete: reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteEditorProps] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.EditorsNs.AutoComplete].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteEditorProps]]
-  @scala.inline
-  def AutoCompleteProps: reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteEditorProps.type = reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteEditorProps
-  type AutoCompleteProps = reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteEditorProps
   @scala.inline
   def AutoCompleteFilter: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.FiltersNs.AutoCompleteFilter].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -18,9 +15,6 @@ object reactDashDataDashGridLibComponents {
     reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteTokensEditorProps
   ] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.EditorsNs.AutoCompleteTokensEditor].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteTokensEditorProps]]
-  @scala.inline
-  def AutoCompleteTokensEditorProps: reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteTokensEditorProps.type = reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteTokensEditorProps
-  type AutoCompleteTokensEditorProps = reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.AutoCompleteTokensEditorProps
   @scala.inline
   def Cell: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashDataDashGridLib.reactDashDataDashGridMod.Cell].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -31,9 +25,6 @@ object reactDashDataDashGridLibComponents {
   def DraggableContainer: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.DraggableHeaderNs.DraggableContainer].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
   def DropDownEditor: reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.DropDownEditorProps] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.EditorsNs.DropDownEditor].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.DropDownEditorProps]]
-  @scala.inline
-  def DropDownEditorProps: reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.DropDownEditorProps.type = reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.DropDownEditorProps
-  type DropDownEditorProps = reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.DropDownEditorProps
   @scala.inline
   def DropDownFormatter: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridPluginsNs.FormattersNs.DropDownFormatter].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -51,13 +42,7 @@ object reactDashDataDashGridLibComponents {
   @scala.inline
   def ReactDashDataDashGrid[T]: reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps[T]] = js.constructorOf[reactDashDataDashGridLib.reactDashDataDashGridMod.^[T]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps[T]]]
   @scala.inline
-  def ReactDashDataDashGridProps: reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps.type = reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps
-  type ReactDashDataDashGridProps[T] = reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps[T]
-  @scala.inline
   def ReactDataGrid[T]: reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps[T]] = js.constructorOf[reactDashDataDashGridLib.AdazzleReactDataGridNs.ReactDataGrid[T]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps[T]]]
-  @scala.inline
-  def ReactDataGridProps: reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps.type = reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps
-  type ReactDataGridProps[T] = reactDashDataDashGridLib.AdazzleReactDataGridNs.GridProps[T]
   @scala.inline
   def Row: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashDataDashGridLib.reactDashDataDashGridMod.Row].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline

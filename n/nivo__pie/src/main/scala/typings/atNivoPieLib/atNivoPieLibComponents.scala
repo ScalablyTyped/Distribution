@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atNivoPieLibComponents {
+object atNivoPieLibComponents extends atNivoPieLibProps {
   @scala.inline
   def Pie: reactLib.reactMod.ComponentType[
     atNivoPieLib.atNivoPieMod.PieSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions
@@ -18,9 +18,7 @@ object atNivoPieLibComponents {
   atNivoPieLib.atNivoPieMod.PieCanvasProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsivePie: reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieSvgProps] = js.constructorOf[atNivoPieLib.atNivoPieMod.ResponsivePie].asInstanceOf[reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieSvgProps]]
-  type ResponsivePieProps = atNivoPieLib.atNivoPieMod.PieSvgProps
   @scala.inline
   def ResponsivePieCanvas: reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieCanvasProps] = js.constructorOf[atNivoPieLib.atNivoPieMod.ResponsivePieCanvas].asInstanceOf[reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieCanvasProps]]
-  type ResponsivePieCanvasProps = atNivoPieLib.atNivoPieMod.PieCanvasProps
 }
 

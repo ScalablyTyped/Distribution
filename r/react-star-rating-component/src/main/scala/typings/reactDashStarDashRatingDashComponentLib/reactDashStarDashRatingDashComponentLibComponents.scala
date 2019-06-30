@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashStarDashRatingDashComponentLibComponents {
+object reactDashStarDashRatingDashComponentLibComponents extends reactDashStarDashRatingDashComponentLibProps {
   @scala.inline
   def ReactDashStarDashRatingDashComponent: reactLib.reactMod.ComponentType[
     reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps
   ] = js.constructorOf[reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps]]
-  @scala.inline
-  def ReactDashStarDashRatingDashComponentProps: reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps.type = reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps
-  type ReactDashStarDashRatingDashComponentProps = reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atReachSkipDashNavLibComponents {
+object atReachSkipDashNavLibComponents extends atReachSkipDashNavLibProps {
   @scala.inline
   def SkipNavContent: reactLib.reactMod.ComponentType[
     atReachSkipDashNavLib.atReachSkipDashNavMod.SkipNavProps with reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]

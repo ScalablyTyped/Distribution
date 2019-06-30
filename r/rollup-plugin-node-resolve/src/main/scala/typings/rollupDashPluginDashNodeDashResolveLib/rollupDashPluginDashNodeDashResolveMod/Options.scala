@@ -24,7 +24,9 @@ trait Options extends js.Object {
   	 * to prevent bundling the same package multiple times if package is
   	 * imported from dependencies.
   	 */
-  var dedupe: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var dedupe: js.UndefOr[
+    js.Array[java.lang.String] | (js.Function1[/* importee */ java.lang.String, scala.Boolean])
+  ] = js.undefined
   /**
   	 * not all files you want to resolve are .js files
   	 * @default [ '.mjs', '.js', '.json', '.node' ]
@@ -92,7 +94,7 @@ object Options {
   def apply(
     browser: js.UndefOr[scala.Boolean] = js.undefined,
     customResolveOptions: resolveLib.resolveMod.AsyncOpts = null,
-    dedupe: js.Array[java.lang.String] = null,
+    dedupe: js.Array[java.lang.String] | (js.Function1[/* importee */ java.lang.String, scala.Boolean]) = null,
     extensions: js.Array[java.lang.String] = null,
     jail: java.lang.String = null,
     jsnext: js.UndefOr[scala.Boolean] = js.undefined,
@@ -106,7 +108,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser)
     if (customResolveOptions != null) __obj.updateDynamic("customResolveOptions")(customResolveOptions)
-    if (dedupe != null) __obj.updateDynamic("dedupe")(dedupe)
+    if (dedupe != null) __obj.updateDynamic("dedupe")(dedupe.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (jail != null) __obj.updateDynamic("jail")(jail)
     if (!js.isUndefined(jsnext)) __obj.updateDynamic("jsnext")(jsnext)

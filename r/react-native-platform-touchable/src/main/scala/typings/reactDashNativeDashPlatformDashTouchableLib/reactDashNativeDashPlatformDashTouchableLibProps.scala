@@ -1,0 +1,16 @@
+package typings
+package reactDashNativeDashPlatformDashTouchableLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashPlatformDashTouchableLibProps {
+  @scala.inline
+  def ReactDashNativeDashPlatformDashTouchableProps: reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps.type = reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
+  type ReactDashNativeDashPlatformDashTouchableProps = reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
+  @scala.inline
+  def TouchableProps: reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps.type = reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
+  type TouchableProps = reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
+}
+

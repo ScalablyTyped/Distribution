@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashFormLibComponents {
+object reactDashFormLibComponents extends reactDashFormLibProps {
   @scala.inline
   def Checkbox: reactLib.reactMod.ComponentType[
     reactDashFormLib.reactDashFormMod.FieldProps with reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement]
@@ -16,9 +16,6 @@ object reactDashFormLibComponents {
   @scala.inline
   def NestedForm: reactLib.reactMod.ComponentType[reactDashFormLib.reactDashFormMod.FieldProps] = reactDashFormLib.reactDashFormMod.^.NestedForm.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFormLib.reactDashFormMod.FieldProps]]
   @scala.inline
-  def NestedFormProps: reactDashFormLib.reactDashFormMod.FieldProps.type = reactDashFormLib.reactDashFormMod.FieldProps
-  type NestedFormProps = reactDashFormLib.reactDashFormMod.FieldProps
-  @scala.inline
   def Radio: reactLib.reactMod.ComponentType[
     reactDashFormLib.reactDashFormMod.FieldProps with reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] with Anon_Group
   ] = reactDashFormLib.reactDashFormMod.^.Radio.asInstanceOf[reactLib.reactMod.ComponentType[
@@ -28,9 +25,6 @@ object reactDashFormLibComponents {
   reactDashFormLib.reactDashFormMod.FieldProps with reactDashFormLib.Anon_ChildrenProps]]
   @scala.inline
   def Select: reactLib.reactMod.ComponentType[reactDashFormLib.reactDashFormMod.SelectProps] = reactDashFormLib.reactDashFormMod.^.Select.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFormLib.reactDashFormMod.SelectProps]]
-  @scala.inline
-  def SelectProps: reactDashFormLib.reactDashFormMod.SelectProps.type = reactDashFormLib.reactDashFormMod.SelectProps
-  type SelectProps = reactDashFormLib.reactDashFormMod.SelectProps
   @scala.inline
   def StyledCheckbox: reactLib.reactMod.ComponentType[
     reactDashFormLib.reactDashFormMod.StyledProps with reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] with Anon_LabelString

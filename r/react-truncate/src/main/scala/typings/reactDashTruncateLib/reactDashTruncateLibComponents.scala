@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashTruncateLibComponents {
+object reactDashTruncateLibComponents extends reactDashTruncateLibProps {
   @scala.inline
   def ReactDashTruncate: reactLib.reactMod.ComponentType[reactDashTruncateLib.reactDashTruncateMod.TruncateProps] = js.constructorOf[reactDashTruncateLib.reactDashTruncateMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTruncateLib.reactDashTruncateMod.TruncateProps]]
-  @scala.inline
-  def ReactDashTruncateProps: reactDashTruncateLib.reactDashTruncateMod.TruncateProps.type = reactDashTruncateLib.reactDashTruncateMod.TruncateProps
-  type ReactDashTruncateProps = reactDashTruncateLib.reactDashTruncateMod.TruncateProps
 }
 

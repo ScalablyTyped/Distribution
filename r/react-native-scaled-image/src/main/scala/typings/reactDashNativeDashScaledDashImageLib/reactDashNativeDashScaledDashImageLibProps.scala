@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashScaledDashImageLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashScaledDashImageLibProps {
+  @scala.inline
+  def ReactDashNativeDashScaledDashImageProps: reactDashNativeDashScaledDashImageLib.reactDashNativeDashScaledDashImageMod.ScaledImageProps.type = reactDashNativeDashScaledDashImageLib.reactDashNativeDashScaledDashImageMod.ScaledImageProps
+  type ReactDashNativeDashScaledDashImageProps = reactDashNativeDashScaledDashImageLib.reactDashNativeDashScaledDashImageMod.ScaledImageProps
+}
+

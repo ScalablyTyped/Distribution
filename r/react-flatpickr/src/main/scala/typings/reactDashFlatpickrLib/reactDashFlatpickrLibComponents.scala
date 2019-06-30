@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashFlatpickrLibComponents {
+object reactDashFlatpickrLibComponents extends reactDashFlatpickrLibProps {
   @scala.inline
   def ReactDashFlatpickr: reactLib.reactMod.ComponentType[reactDashFlatpickrLib.reactDashFlatpickrMod.DateTimePickerProps] = js.constructorOf[reactDashFlatpickrLib.reactDashFlatpickrMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFlatpickrLib.reactDashFlatpickrMod.DateTimePickerProps]]
-  @scala.inline
-  def ReactDashFlatpickrProps: reactDashFlatpickrLib.reactDashFlatpickrMod.DateTimePickerProps.type = reactDashFlatpickrLib.reactDashFlatpickrMod.DateTimePickerProps
-  type ReactDashFlatpickrProps = reactDashFlatpickrLib.reactDashFlatpickrMod.DateTimePickerProps
 }
 

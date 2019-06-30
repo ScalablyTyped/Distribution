@@ -5,36 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashContentDashLoaderLibComponents {
+object reactDashContentDashLoaderLibComponents extends reactDashContentDashLoaderLibProps {
   @scala.inline
   def BulletList: reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.BulletList].asInstanceOf[reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
   @scala.inline
-  def BulletListProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  type BulletListProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  @scala.inline
   def Code: reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.Code].asInstanceOf[reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
-  @scala.inline
-  def CodeProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  type CodeProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
   @scala.inline
   def Facebook: reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.Facebook].asInstanceOf[reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
   @scala.inline
-  def FacebookProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  type FacebookProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  @scala.inline
   def Instagram: reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.Instagram].asInstanceOf[reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
-  @scala.inline
-  def InstagramProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  type InstagramProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
   @scala.inline
   def List: reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.List].asInstanceOf[reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
   @scala.inline
-  def ListProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  type ListProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  @scala.inline
   def ReactDashContentDashLoader: reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps] = js.constructorOf[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps]]
-  @scala.inline
-  def ReactDashContentDashLoaderProps: reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps.type = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
-  type ReactDashContentDashLoaderProps = reactDashContentDashLoaderLib.reactDashContentDashLoaderMod.ContentLoaderProps
 }
 

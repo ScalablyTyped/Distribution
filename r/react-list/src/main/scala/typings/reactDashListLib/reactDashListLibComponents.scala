@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashListLibComponents {
+object reactDashListLibComponents extends reactDashListLibProps {
   @scala.inline
   def ReactDashList: reactLib.reactMod.ComponentType[reactDashListLib.reactDashListMod.ReactListProps] = js.constructorOf[reactDashListLib.reactDashListMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashListLib.reactDashListMod.ReactListProps]]
-  @scala.inline
-  def ReactDashListProps: reactDashListLib.reactDashListMod.ReactListProps.type = reactDashListLib.reactDashListMod.ReactListProps
-  type ReactDashListProps = reactDashListLib.reactDashListMod.ReactListProps
 }
 

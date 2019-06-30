@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object hedronLibComponents {
+object hedronLibComponents extends hedronLibProps {
   @scala.inline
   def BreakpointProvider: reactLib.reactMod.ComponentType[
     hedronLib.hedronMod.BreakpointsProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]

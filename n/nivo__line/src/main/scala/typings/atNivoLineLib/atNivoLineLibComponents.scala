@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atNivoLineLibComponents {
+object atNivoLineLibComponents extends atNivoLineLibProps {
   @scala.inline
   def Line: reactLib.reactMod.ComponentType[
     atNivoLineLib.atNivoLineMod.LineSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions
@@ -19,12 +19,6 @@ object atNivoLineLibComponents {
   @scala.inline
   def ResponsiveLine: reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineSvgProps] = js.constructorOf[atNivoLineLib.atNivoLineMod.ResponsiveLine].asInstanceOf[reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineSvgProps]]
   @scala.inline
-  def ResponsiveLineProps: atNivoLineLib.atNivoLineMod.LineSvgProps.type = atNivoLineLib.atNivoLineMod.LineSvgProps
-  type ResponsiveLineProps = atNivoLineLib.atNivoLineMod.LineSvgProps
-  @scala.inline
   def ResponsiveLineCanvas: reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineCanvasProps] = js.constructorOf[atNivoLineLib.atNivoLineMod.ResponsiveLineCanvas].asInstanceOf[reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineCanvasProps]]
-  @scala.inline
-  def ResponsiveLineCanvasProps: atNivoLineLib.atNivoLineMod.LineCanvasProps.type = atNivoLineLib.atNivoLineMod.LineCanvasProps
-  type ResponsiveLineCanvasProps = atNivoLineLib.atNivoLineMod.LineCanvasProps
 }
 

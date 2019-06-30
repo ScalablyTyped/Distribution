@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashDropzoneLibComponents {
+object reactDashDropzoneLibComponents extends reactDashDropzoneLibProps {
   @scala.inline
   def ReactDashDropzone: reactLib.reactMod.ComponentType[reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps] = js.constructorOf[reactDashDropzoneLib.reactDashDropzoneMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps]]
-  @scala.inline
-  def ReactDashDropzoneProps: reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps.type = reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps
-  type ReactDashDropzoneProps = reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps
 }
 

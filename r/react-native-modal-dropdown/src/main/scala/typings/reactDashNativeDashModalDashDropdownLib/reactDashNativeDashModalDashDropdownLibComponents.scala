@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashModalDashDropdownLibComponents {
+object reactDashNativeDashModalDashDropdownLibComponents extends reactDashNativeDashModalDashDropdownLibProps {
   @scala.inline
   def ReactDashNativeDashModalDashDropdown: reactLib.reactMod.ComponentType[
     reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps
   ] = js.constructorOf[reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps]]
-  @scala.inline
-  def ReactDashNativeDashModalDashDropdownProps: reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps.type = reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps
-  type ReactDashNativeDashModalDashDropdownProps = reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdownProps
 }
 

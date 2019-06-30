@@ -5,16 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object glDashReactDashExpoLibComponents {
+object glDashReactDashExpoLibComponents extends glDashReactDashExpoLibProps {
   @scala.inline
   def GLViewNative: reactLib.reactMod.ComponentType[glDashReactDashExpoLib.gLViewNativeMod.GLViewNativeProps] = js.constructorOf[glDashReactDashExpoLib.gLViewNativeMod.GLViewNative].asInstanceOf[reactLib.reactMod.ComponentType[glDashReactDashExpoLib.gLViewNativeMod.GLViewNativeProps]]
   @scala.inline
-  def GLViewNativeProps: glDashReactDashExpoLib.gLViewNativeMod.GLViewNativeProps.type = glDashReactDashExpoLib.gLViewNativeMod.GLViewNativeProps
-  type GLViewNativeProps = glDashReactDashExpoLib.gLViewNativeMod.GLViewNativeProps
-  @scala.inline
   def Surface: reactLib.reactMod.ComponentType[glDashReactLib.glDashReactMod.SurfaceProps] = js.constructorOf[glDashReactDashExpoLib.glDashReactDashExpoMod.Surface].asInstanceOf[reactLib.reactMod.ComponentType[glDashReactLib.glDashReactMod.SurfaceProps]]
-  @scala.inline
-  def SurfaceProps: glDashReactLib.glDashReactMod.SurfaceProps.type = glDashReactLib.glDashReactMod.SurfaceProps
-  type SurfaceProps = glDashReactLib.glDashReactMod.SurfaceProps
 }
 

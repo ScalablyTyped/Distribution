@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashCreditDashCardsLibComponents {
+object reactDashCreditDashCardsLibComponents extends reactDashCreditDashCardsLibProps {
   @scala.inline
   def ReactDashCreditDashCards: reactLib.reactMod.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps] = js.constructorOf[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps]]
-  @scala.inline
-  def ReactDashCreditDashCardsProps: reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps.type = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
-  type ReactDashCreditDashCardsProps = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
 }
 

@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashAutocompleteDashInputLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashAutocompleteDashInputLibProps {
+  @scala.inline
+  def ReactDashNativeDashAutocompleteDashInputProps: reactDashNativeDashAutocompleteDashInputLib.reactDashNativeDashAutocompleteDashInputMod.AutocompleteProps.type = reactDashNativeDashAutocompleteDashInputLib.reactDashNativeDashAutocompleteDashInputMod.AutocompleteProps
+  type ReactDashNativeDashAutocompleteDashInputProps[T] = reactDashNativeDashAutocompleteDashInputLib.reactDashNativeDashAutocompleteDashInputMod.AutocompleteProps[T]
+}
+

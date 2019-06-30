@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object refluxLibComponents {
+object refluxLibComponents extends refluxLibProps {
   @scala.inline
   def Component[TOfStore /* <: org.scalablytyped.runtime.Instantiable0[refluxLib.refluxMod.Store] */, P, S]: reactLib.reactMod.ComponentType[P] = js.constructorOf[refluxLib.refluxMod.Component[TOfStore, P, S]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline

@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reduxDashDevtoolsDashDockDashMonitorLibComponents {
+object reduxDashDevtoolsDashDockDashMonitorLibComponents extends reduxDashDevtoolsDashDockDashMonitorLibProps {
   @scala.inline
   def ReduxDashDevtoolsDashDockDashMonitor: reactLib.reactMod.ComponentType[
     reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps
   ] = js.constructorOf[reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps]]
-  @scala.inline
-  def ReduxDashDevtoolsDashDockDashMonitorProps: reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps.type = reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps
-  type ReduxDashDevtoolsDashDockDashMonitorProps = reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorMod.IDockMonitorProps
 }
 

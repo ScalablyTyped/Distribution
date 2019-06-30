@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atStorybookAddonDashLinksLibComponents {
+object atStorybookAddonDashLinksLibComponents extends atStorybookAddonDashLinksLibProps {
   @scala.inline
   def React: reactLib.reactMod.ComponentType[
     (reactLib.reactMod.DetailedHTMLProps[

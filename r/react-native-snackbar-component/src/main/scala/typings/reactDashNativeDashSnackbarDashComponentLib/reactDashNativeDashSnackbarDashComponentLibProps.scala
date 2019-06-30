@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashSnackbarDashComponentLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashSnackbarDashComponentLibProps {
+  @scala.inline
+  def ReactDashNativeDashSnackbarDashComponentProps: reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps.type = reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps
+  type ReactDashNativeDashSnackbarDashComponentProps = reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps
+}
+

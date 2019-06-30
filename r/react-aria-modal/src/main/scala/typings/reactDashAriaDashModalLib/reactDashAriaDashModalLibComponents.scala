@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashAriaDashModalLibComponents {
+object reactDashAriaDashModalLibComponents extends reactDashAriaDashModalLibProps {
   @scala.inline
   def ReactDashAriaDashModal: reactLib.reactMod.ComponentType[
     reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps with (reactDashAriaDashModalLib.reactDashAriaDashModalMod.RequiredAriaTypes[

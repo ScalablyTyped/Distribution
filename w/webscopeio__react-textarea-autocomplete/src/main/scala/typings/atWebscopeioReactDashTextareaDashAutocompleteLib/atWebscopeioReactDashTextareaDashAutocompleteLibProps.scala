@@ -1,0 +1,13 @@
+package typings
+package atWebscopeioReactDashTextareaDashAutocompleteLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait atWebscopeioReactDashTextareaDashAutocompleteLibProps {
+  @scala.inline
+  def ReactDashTextareaDashAutocompleteProps: atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.TextareaProps.type = atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.TextareaProps
+  type ReactDashTextareaDashAutocompleteProps[TItem] = atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.TextareaProps[TItem]
+}
+

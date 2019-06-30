@@ -1,0 +1,13 @@
+package typings
+package reactDashMaterialDashUiDashFormDashValidatorLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashMaterialDashUiDashFormDashValidatorLibProps {
+  @scala.inline
+  def ValidatorFormProps: reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps.type = reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
+  type ValidatorFormProps = reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
+}
+

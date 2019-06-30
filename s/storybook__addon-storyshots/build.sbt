@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-storyshots"
-version := "4.0-dt-20190605Z-f0d107"
+version := "4.0-dt-20190605Z-31b6da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
   "org.scalablytyped" %%% "puppeteer" % "1.12-dt-20190503Z-abe040",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-8d8143",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-9e424f",
   "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-4557f6")
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-583d35")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashInstantsearchLibComponents {
+object reactDashInstantsearchLibComponents extends reactDashInstantsearchLibProps {
   @scala.inline
   def Breadcrumb: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.Breadcrumb].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -21,9 +21,6 @@ object reactDashInstantsearchLibComponents {
   @scala.inline
   def Hits[T]: reactLib.reactMod.ComponentType[reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.HitsProps[T]] = js.constructorOf[reactDashInstantsearchLib.domMod.Hits[T]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.HitsProps[T]]]
   @scala.inline
-  def HitsProps: reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.HitsProps.type = reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.HitsProps
-  type HitsProps[T] = reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.HitsProps[T]
-  @scala.inline
   def HitsPerPage: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.HitsPerPage].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
   def Index: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.Index].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
@@ -34,9 +31,6 @@ object reactDashInstantsearchLibComponents {
     reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.InstantSearchProps
   ] = js.constructorOf[reactDashInstantsearchLib.domMod.InstantSearch].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.InstantSearchProps]]
-  @scala.inline
-  def InstantSearchProps: reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.InstantSearchProps.type = reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.InstantSearchProps
-  type InstantSearchProps = reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.InstantSearchProps
   @scala.inline
   def Menu: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.Menu].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -62,17 +56,11 @@ object reactDashInstantsearchLibComponents {
   @scala.inline
   def SearchBox: reactLib.reactMod.ComponentType[reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.SearchBoxProps] = js.constructorOf[reactDashInstantsearchLib.domMod.SearchBox].asInstanceOf[reactLib.reactMod.ComponentType[reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.SearchBoxProps]]
   @scala.inline
-  def SearchBoxProps: reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.SearchBoxProps.type = reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.SearchBoxProps
-  type SearchBoxProps = reactDashInstantsearchDashDomLib.reactDashInstantsearchDashDomMod.SearchBoxProps
-  @scala.inline
   def Snippet: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.Snippet].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
   def SortBy: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.SortBy].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
   def Stats: reactLib.reactMod.ComponentType[reactDashInstantsearchDashDomLib.Anon_Key] = js.constructorOf[reactDashInstantsearchLib.domMod.Stats].asInstanceOf[reactLib.reactMod.ComponentType[reactDashInstantsearchDashDomLib.Anon_Key]]
-  @scala.inline
-  def StatsProps: reactDashInstantsearchDashDomLib.Anon_Key.type = reactDashInstantsearchDashDomLib.Anon_Key
-  type StatsProps = reactDashInstantsearchDashDomLib.Anon_Key
   @scala.inline
   def ToggleRefinement: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashInstantsearchLib.domMod.ToggleRefinement].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
 }

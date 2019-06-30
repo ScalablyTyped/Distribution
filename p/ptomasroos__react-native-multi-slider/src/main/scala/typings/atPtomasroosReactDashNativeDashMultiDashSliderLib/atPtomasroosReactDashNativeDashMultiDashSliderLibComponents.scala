@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atPtomasroosReactDashNativeDashMultiDashSliderLibComponents {
+object atPtomasroosReactDashNativeDashMultiDashSliderLibComponents extends atPtomasroosReactDashNativeDashMultiDashSliderLibProps {
   @scala.inline
   def ReactDashNativeDashMultiDashSlider: reactLib.reactMod.ComponentType[
     atPtomasroosReactDashNativeDashMultiDashSliderLib.atPtomasroosReactDashNativeDashMultiDashSliderMod.MultiSliderProps
   ] = js.constructorOf[atPtomasroosReactDashNativeDashMultiDashSliderLib.atPtomasroosReactDashNativeDashMultiDashSliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   atPtomasroosReactDashNativeDashMultiDashSliderLib.atPtomasroosReactDashNativeDashMultiDashSliderMod.MultiSliderProps]]
-  @scala.inline
-  def ReactDashNativeDashMultiDashSliderProps: atPtomasroosReactDashNativeDashMultiDashSliderLib.atPtomasroosReactDashNativeDashMultiDashSliderMod.MultiSliderProps.type = atPtomasroosReactDashNativeDashMultiDashSliderLib.atPtomasroosReactDashNativeDashMultiDashSliderMod.MultiSliderProps
-  type ReactDashNativeDashMultiDashSliderProps = atPtomasroosReactDashNativeDashMultiDashSliderLib.atPtomasroosReactDashNativeDashMultiDashSliderMod.MultiSliderProps
 }
 

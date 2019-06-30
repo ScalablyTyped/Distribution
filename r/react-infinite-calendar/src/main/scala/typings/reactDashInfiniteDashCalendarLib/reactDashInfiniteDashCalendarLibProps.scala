@@ -1,0 +1,16 @@
+package typings
+package reactDashInfiniteDashCalendarLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashInfiniteDashCalendarLibProps {
+  @scala.inline
+  def CalendarProps: reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.ReactInfiniteCalendarProps.type = reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.ReactInfiniteCalendarProps
+  type CalendarProps = reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.ReactInfiniteCalendarProps
+  @scala.inline
+  def ReactDashInfiniteDashCalendarProps: reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.ReactInfiniteCalendarProps.type = reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.ReactInfiniteCalendarProps
+  type ReactDashInfiniteDashCalendarProps = reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarMod.ReactInfiniteCalendarProps
+}
+

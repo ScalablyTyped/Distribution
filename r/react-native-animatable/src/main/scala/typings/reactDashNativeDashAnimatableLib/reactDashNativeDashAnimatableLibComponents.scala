@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashNativeDashAnimatableLibComponents {
+object reactDashNativeDashAnimatableLibComponents extends reactDashNativeDashAnimatableLibProps {
   @scala.inline
   def Image: reactLib.reactMod.ComponentType[
     reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.AnimatableProperties[reactDashNativeLib.reactDashNativeMod.ImageStyle] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ js.Any)

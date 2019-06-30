@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atAtlaskitCalendarLibComponents {
+object atAtlaskitCalendarLibComponents extends atAtlaskitCalendarLibProps {
   @scala.inline
   def Calendar: reactLib.reactMod.ComponentType[atAtlaskitCalendarLib.atAtlaskitCalendarMod.Props] = js.constructorOf[atAtlaskitCalendarLib.atAtlaskitCalendarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atAtlaskitCalendarLib.atAtlaskitCalendarMod.Props]]
-  @scala.inline
-  def CalendarProps: atAtlaskitCalendarLib.atAtlaskitCalendarMod.Props.type = atAtlaskitCalendarLib.atAtlaskitCalendarMod.Props
-  type CalendarProps = atAtlaskitCalendarLib.atAtlaskitCalendarMod.Props
 }
 

@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object braftDashEditorLibComponents {
+object braftDashEditorLibComponents extends braftDashEditorLibProps {
   @scala.inline
   def BraftDashEditor: reactLib.reactMod.ComponentType[braftDashEditorLib.braftDashEditorMod.editorProps] = js.constructorOf[braftDashEditorLib.braftDashEditorMod.^].asInstanceOf[reactLib.reactMod.ComponentType[braftDashEditorLib.braftDashEditorMod.editorProps]]
-  @scala.inline
-  def BraftDashEditorProps: braftDashEditorLib.braftDashEditorMod.editorProps.type = braftDashEditorLib.braftDashEditorMod.editorProps
-  type BraftDashEditorProps = braftDashEditorLib.braftDashEditorMod.editorProps
 }
 

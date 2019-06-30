@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object materialDashUiDashPaginationLibComponents {
+object materialDashUiDashPaginationLibComponents extends materialDashUiDashPaginationLibProps {
   @scala.inline
   def MaterialDashUiDashPagination: reactLib.reactMod.ComponentType[materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps] = js.constructorOf[materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.default].asInstanceOf[reactLib.reactMod.ComponentType[materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps]]
-  @scala.inline
-  def MaterialDashUiDashPaginationProps: materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps.type = materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps
-  type MaterialDashUiDashPaginationProps = materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps
 }
 

@@ -1,0 +1,13 @@
+package typings
+package reactDashNativeDashElevatedDashViewLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashNativeDashElevatedDashViewLibProps {
+  @scala.inline
+  def ReactDashNativeDashElevatedDashViewProps: reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties.type = reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties
+  type ReactDashNativeDashElevatedDashViewProps = reactDashNativeDashElevatedDashViewLib.reactDashNativeDashElevatedDashViewMod.ElevatedViewProperties
+}
+

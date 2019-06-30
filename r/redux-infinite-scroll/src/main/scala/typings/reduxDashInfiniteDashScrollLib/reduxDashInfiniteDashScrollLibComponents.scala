@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reduxDashInfiniteDashScrollLibComponents {
+object reduxDashInfiniteDashScrollLibComponents extends reduxDashInfiniteDashScrollLibProps {
   @scala.inline
   def ReduxDashInfiniteDashScroll: reactLib.reactMod.ComponentType[
     reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.InfiniteScrollerProps with reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]

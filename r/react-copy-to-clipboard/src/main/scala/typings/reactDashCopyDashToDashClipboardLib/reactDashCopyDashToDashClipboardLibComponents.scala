@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashCopyDashToDashClipboardLibComponents {
+object reactDashCopyDashToDashClipboardLibComponents extends reactDashCopyDashToDashClipboardLibProps {
   @scala.inline
   def ReactDashCopyDashToDashClipboard: reactLib.reactMod.ComponentType[reactDashCopyDashToDashClipboardLib.reactDashCopyDashToDashClipboardMod.Props] = js.constructorOf[reactDashCopyDashToDashClipboardLib.reactDashCopyDashToDashClipboardMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCopyDashToDashClipboardLib.reactDashCopyDashToDashClipboardMod.Props]]
-  @scala.inline
-  def ReactDashCopyDashToDashClipboardProps: reactDashCopyDashToDashClipboardLib.reactDashCopyDashToDashClipboardMod.Props.type = reactDashCopyDashToDashClipboardLib.reactDashCopyDashToDashClipboardMod.Props
-  type ReactDashCopyDashToDashClipboardProps = reactDashCopyDashToDashClipboardLib.reactDashCopyDashToDashClipboardMod.Props
 }
 

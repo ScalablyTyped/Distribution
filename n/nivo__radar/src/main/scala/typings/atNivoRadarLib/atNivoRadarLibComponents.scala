@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atNivoRadarLibComponents {
+object atNivoRadarLibComponents extends atNivoRadarLibProps {
   @scala.inline
   def Radar: reactLib.reactMod.ComponentType[
     atNivoRadarLib.atNivoRadarMod.RadarProps with atNivoCoreLib.atNivoCoreMod.Dimensions
@@ -13,6 +13,5 @@ object atNivoRadarLibComponents {
   atNivoRadarLib.atNivoRadarMod.RadarProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsiveRadar: reactLib.reactMod.ComponentType[atNivoRadarLib.atNivoRadarMod.RadarProps] = js.constructorOf[atNivoRadarLib.atNivoRadarMod.ResponsiveRadar].asInstanceOf[reactLib.reactMod.ComponentType[atNivoRadarLib.atNivoRadarMod.RadarProps]]
-  type ResponsiveRadarProps = atNivoRadarLib.atNivoRadarMod.RadarProps
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashImageDashFallbackLibComponents {
+object reactDashImageDashFallbackLibComponents extends reactDashImageDashFallbackLibProps {
   @scala.inline
   def ReactDashImageDashFallback: reactLib.reactMod.ComponentType[
     reactDashImageDashFallbackLib.reactDashImageDashFallbackMod.ReactImageFallbackProps with (reactLib.reactMod.DetailedHTMLProps[

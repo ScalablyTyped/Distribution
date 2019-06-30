@@ -1,0 +1,16 @@
+package typings
+package reduxDashFirstDashRouterDashLinkLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reduxDashFirstDashRouterDashLinkLibProps {
+  @scala.inline
+  def NavLinkProps: reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLinkProps.type = reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLinkProps
+  type NavLinkProps = reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLinkProps
+  @scala.inline
+  def ReduxDashFirstDashRouterDashLinkProps: reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps.type = reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps
+  type ReduxDashFirstDashRouterDashLinkProps = reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps
+}
+

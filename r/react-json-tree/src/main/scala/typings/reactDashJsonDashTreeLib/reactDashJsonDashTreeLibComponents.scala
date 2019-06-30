@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object reactDashJsonDashTreeLibComponents {
+object reactDashJsonDashTreeLibComponents extends reactDashJsonDashTreeLibProps {
   @scala.inline
   def ReactDashJsonDashTree: reactLib.reactMod.ComponentType[reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps] = js.constructorOf[reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps]]
-  @scala.inline
-  def ReactDashJsonDashTreeProps: reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps.type = reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps
-  type ReactDashJsonDashTreeProps = reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps
 }
 

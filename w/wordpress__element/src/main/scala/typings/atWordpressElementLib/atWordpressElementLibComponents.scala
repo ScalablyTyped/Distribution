@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object atWordpressElementLibComponents {
+object atWordpressElementLibComponents extends atWordpressElementLibProps {
   @scala.inline
   def RawHTML: reactLib.reactMod.ComponentType[
     Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)

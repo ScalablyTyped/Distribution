@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /**
   		The dock state to open DevTools in.
-  		@default 'undocked'
+  		@default 'previous'
   		*/
   val devToolsMode: js.UndefOr[
     electronDashDebugLib.electronDashDebugLibStrings.undocked | electronDashDebugLib.electronDashDebugLibStrings.right | electronDashDebugLib.electronDashDebugLibStrings.bottom | electronDashDebugLib.electronDashDebugLibStrings.previous | electronDashDebugLib.electronDashDebugLibStrings.detach

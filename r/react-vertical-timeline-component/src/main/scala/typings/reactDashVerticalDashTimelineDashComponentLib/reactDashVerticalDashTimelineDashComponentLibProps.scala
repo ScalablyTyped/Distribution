@@ -1,0 +1,16 @@
+package typings
+package reactDashVerticalDashTimelineDashComponentLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashVerticalDashTimelineDashComponentLibProps {
+  @scala.inline
+  def VerticalTimelineProps: reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps.type = reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps
+  type VerticalTimelineProps = reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps
+  @scala.inline
+  def VerticalTimelineElementProps: reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps.type = reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps
+  type VerticalTimelineElementProps = reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps
+}
+
