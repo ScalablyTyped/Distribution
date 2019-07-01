@@ -13,6 +13,7 @@ class default () extends Switch
 @JSImport("antd/es/switch", JSImport.Default)
 @js.native
 object default extends js.Object {
+  var __ANT_SWITCH: scala.Boolean = js.native
   var propTypes: antdLib.Anon_ClassNameDefault = js.native
 }
 

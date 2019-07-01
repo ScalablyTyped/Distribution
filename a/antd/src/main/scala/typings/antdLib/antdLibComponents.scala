@@ -142,6 +142,8 @@ object antdLibComponents extends antdLibProps {
   @scala.inline
   def Option: reactLib.reactMod.ComponentType[antdLib.esSelectMod.OptionProps] = antdLib.esSelectMod.default.Option.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esSelectMod.OptionProps]]
   @scala.inline
+  def OriginResult: reactLib.reactMod.ComponentType[antdLib.esResultMod.ResultProps] = antdLib.esResultMod.^.OriginResult.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esResultMod.ResultProps]]
+  @scala.inline
   def PageDashHeader: reactLib.reactMod.ComponentType[antdLib.esPageDashHeaderMod.PageHeaderProps] = antdLib.esPageDashHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esPageDashHeaderMod.PageHeaderProps]]
   @scala.inline
   def PageHeader: reactLib.reactMod.ComponentType[antdLib.esPageDashHeaderMod.PageHeaderProps] = antdLib.esMod.^.PageHeader.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esPageDashHeaderMod.PageHeaderProps]]

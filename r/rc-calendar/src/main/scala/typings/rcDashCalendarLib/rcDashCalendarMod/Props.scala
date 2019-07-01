@@ -20,7 +20,7 @@ trait Props extends js.Object {
     js.Function1[/* current */ js.UndefOr[momentLib.momentMod.Moment], scala.Boolean]
   ] = js.undefined
   var disabledTime: js.UndefOr[js.Function1[/* current */ js.UndefOr[momentLib.momentMod.Moment], js.Object]] = js.undefined
-  var format: js.UndefOr[java.lang.String] = js.undefined
+  var format: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var inputMode: js.UndefOr[java.lang.String] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
   var mode: js.UndefOr[Mode] = js.undefined
@@ -54,7 +54,7 @@ object Props {
     defaultValue: momentLib.momentMod.Moment = null,
     disabledDate: /* current */ js.UndefOr[momentLib.momentMod.Moment] => scala.Boolean = null,
     disabledTime: /* current */ js.UndefOr[momentLib.momentMod.Moment] => js.Object = null,
-    format: java.lang.String = null,
+    format: java.lang.String | js.Array[java.lang.String] = null,
     inputMode: java.lang.String = null,
     locale: js.Object = null,
     mode: Mode = null,
@@ -83,7 +83,7 @@ object Props {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
     if (disabledTime != null) __obj.updateDynamic("disabledTime")(js.Any.fromFunction1(disabledTime))
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (mode != null) __obj.updateDynamic("mode")(mode)

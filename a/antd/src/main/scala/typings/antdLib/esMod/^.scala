@@ -14,6 +14,7 @@ object ^ extends js.Object {
   val Empty: antdLib.esEmptyMod.EmptyType = js.native
   val Icon: antdLib.esIconMod.IconComponent[antdLib.esIconMod.IconProps] = js.native
   val PageHeader: reactLib.reactMod.SFC[antdLib.esPageDashHeaderMod.PageHeaderProps] = js.native
+  val Result: antdLib.esResultMod.ResultType = js.native
   val Typography: antdLib.esTypographyMod.TypographyProps = js.native
   val message: antdLib.esMessageMod.MessageApi = js.native
   val notification: antdLib.esNotificationMod.NotificationApi = js.native

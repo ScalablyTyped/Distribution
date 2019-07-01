@@ -13,15 +13,22 @@ object ^ extends js.Object {
   @JSName("default")
   var default_Original: npmDashNameLib.Anon_Default = js.native
   /**
-  	Check whether a package name is available (not registered) on npm.
+  	Check whether a package/organization name is available (not registered) on npm.
+  	An organization name should start with `@` and should not be a scoped package.
   	@param name - Name to check.
   	@returns Whether the given name is available.
   	@example
   	```
   	import npmName = require('npm-name');
   	(async () => {
+  		// Check a package name
   		console.log(await npmName('chalk'));
   		//=> false
+  		// Check an organization name
+  		console.log(await npmName('@ava'));
+  		//=> false
+  		console.log(await npmName('@abc123'));
+  		//=> true
   		try {
   			await npmName('_ABC');
   		} catch (error) {
@@ -36,15 +43,22 @@ object ^ extends js.Object {
   def apply(name: java.lang.String): js.Promise[scala.Boolean] = js.native
   def apply(name: java.lang.String, options: Options): js.Promise[scala.Boolean] = js.native
   /**
-  	Check whether a package name is available (not registered) on npm.
+  	Check whether a package/organization name is available (not registered) on npm.
+  	An organization name should start with `@` and should not be a scoped package.
   	@param name - Name to check.
   	@returns Whether the given name is available.
   	@example
   	```
   	import npmName = require('npm-name');
   	(async () => {
+  		// Check a package name
   		console.log(await npmName('chalk'));
   		//=> false
+  		// Check an organization name
+  		console.log(await npmName('@ava'));
+  		//=> false
+  		console.log(await npmName('@abc123'));
+  		//=> true
   		try {
   			await npmName('_ABC');
   		} catch (error) {
@@ -60,7 +74,8 @@ object ^ extends js.Object {
   def default(name: java.lang.String): js.Promise[scala.Boolean] = js.native
   def default(name: java.lang.String, options: Options): js.Promise[scala.Boolean] = js.native
   /**
-  	Check whether multiple package names are available (not registered) on npm.
+  	Check whether multiple package/organization names are available (not registered) on npm.
+  	An organization name should start with `@` and should not be a scoped package.
   	@param names - Multiple names to check.
   	@returns A `Map` of name and status.
   	@example

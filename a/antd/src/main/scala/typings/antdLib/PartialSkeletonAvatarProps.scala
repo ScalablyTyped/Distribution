@@ -11,7 +11,7 @@ trait PartialSkeletonAvatarProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var shape: js.UndefOr[antdLib.antdLibStrings.circle | antdLib.antdLibStrings.square] = js.undefined
   var size: js.UndefOr[
-    antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default
+    antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | scala.Double
   ] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
 }
@@ -22,7 +22,7 @@ object PartialSkeletonAvatarProps {
     className: java.lang.String = null,
     prefixCls: java.lang.String = null,
     shape: antdLib.antdLibStrings.circle | antdLib.antdLibStrings.square = null,
-    size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
+    size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | scala.Double = null,
     style: js.Object = null
   ): PartialSkeletonAvatarProps = {
     val __obj = js.Dynamic.literal()

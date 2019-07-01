@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-redux-facade"
-version := "201904220330-f4385e"
+version := "201907010820-f4385e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

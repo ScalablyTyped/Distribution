@@ -205,6 +205,9 @@ trait antdLibProps {
   def OptionProps: antdLib.esSelectMod.OptionProps.type = antdLib.esSelectMod.OptionProps
   type OptionProps = antdLib.esSelectMod.OptionProps
   @scala.inline
+  def OriginResultProps: antdLib.esResultMod.ResultProps.type = antdLib.esResultMod.ResultProps
+  type OriginResultProps = antdLib.esResultMod.ResultProps
+  @scala.inline
   def PageDashHeaderProps: antdLib.esPageDashHeaderMod.PageHeaderProps.type = antdLib.esPageDashHeaderMod.PageHeaderProps
   type PageDashHeaderProps = antdLib.esPageDashHeaderMod.PageHeaderProps
   @scala.inline

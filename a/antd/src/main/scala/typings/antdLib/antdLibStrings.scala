@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT19DOT8` extends js.Object
+  sealed trait `3DOT20DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -510,6 +510,8 @@ object antdLibStrings {
        with antdLib.libProgressProgressMod.ProgressSize
        with antdLib.esSpinMod.SpinSize
        with antdLib.libSpinMod.SpinSize
+       with antdLib.libSwitchMod.SwitchSize
+       with antdLib.esSwitchMod.SwitchSize
        with antdLib.libTableInterfaceMod.TableSize
        with antdLib.esTableInterfaceMod.TableSize
   
@@ -1586,6 +1588,8 @@ object antdLibStrings {
        with antdLib.libProgressProgressMod.ProgressSize
        with antdLib.esSpinMod.SpinSize
        with antdLib.libSpinMod.SpinSize
+       with antdLib.libSwitchMod.SwitchSize
+       with antdLib.esSwitchMod.SwitchSize
        with antdLib.libTableInterfaceMod.TableSize
        with antdLib.esTableInterfaceMod.TableSize
   
@@ -2030,7 +2034,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT19DOT8`: `3DOT19DOT8` = "3.19.8".asInstanceOf[`3DOT19DOT8`]
+  def `3DOT20DOT0`: `3DOT20DOT0` = "3.20.0".asInstanceOf[`3DOT20DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline

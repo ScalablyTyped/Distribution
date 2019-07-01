@@ -14,6 +14,7 @@ trait DrawerProps extends js.Object {
   var getContainer: js.UndefOr[java.lang.String | stdLib.HTMLElement | getContainerFunc] = js.undefined
   var handler: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
   var maskStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -40,6 +41,7 @@ object DrawerProps {
     getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc = null,
     handler: reactLib.reactMod.ReactNode = null,
     height: scala.Double | java.lang.String = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
     maskStyle: reactLib.reactMod.CSSProperties = null,
@@ -63,6 +65,7 @@ object DrawerProps {
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)

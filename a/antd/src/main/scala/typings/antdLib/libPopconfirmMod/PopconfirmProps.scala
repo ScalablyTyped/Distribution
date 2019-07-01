@@ -9,6 +9,7 @@ trait PopconfirmProps
   extends antdLib.libTooltipMod.AbstractTooltipProps {
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var cancelText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var okText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -50,6 +51,7 @@ object PopconfirmProps {
     className: java.lang.String = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     destroyTooltipOnHide: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     icon: reactLib.reactMod.ReactNode = null,
@@ -82,6 +84,7 @@ object PopconfirmProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
     if (!js.isUndefined(destroyTooltipOnHide)) __obj.updateDynamic("destroyTooltipOnHide")(destroyTooltipOnHide)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

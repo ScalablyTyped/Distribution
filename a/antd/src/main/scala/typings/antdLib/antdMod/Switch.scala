@@ -14,6 +14,7 @@ class Switch ()
 @JSImport("antd", "Switch")
 @js.native
 object Switch extends js.Object {
+  var __ANT_SWITCH: scala.Boolean = js.native
   var propTypes: antdLib.Anon_ClassNameDefault = js.native
 }
 

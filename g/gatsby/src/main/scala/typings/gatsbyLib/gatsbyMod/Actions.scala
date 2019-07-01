@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Actions extends js.Object {
   /** @see https://www.gatsbyjs.org/docs/actions/#addThirdPartySchema */
+  def addThirdPartySchema(args: gatsbyLib.Anon_Schema): scala.Unit = js.native
   def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: ActionPlugin): scala.Unit = js.native
   def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createJob */
@@ -31,11 +32,14 @@ trait Actions extends js.Object {
   /** @see https://www.gatsbyjs.org/docs/actions/#createRedirect */
   def createRedirect(redirect: gatsbyLib.Anon_Force): scala.Unit = js.native
   def createRedirect(redirect: gatsbyLib.Anon_Force, plugin: ActionPlugin): scala.Unit = js.native
-  /** TODO create jsdoc on gatsbyjs.org */
+  /** @see https://www.gatsbyjs.org/docs/actions/#createTypes */
+  def createTypes(types: java.lang.String): scala.Unit = js.native
   def createTypes(types: java.lang.String, plugin: ActionPlugin): scala.Unit = js.native
   def createTypes(types: java.lang.String, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
+  def createTypes(types: js.Array[java.lang.String | js.Object]): scala.Unit = js.native
   def createTypes(types: js.Array[java.lang.String | js.Object], plugin: ActionPlugin): scala.Unit = js.native
   def createTypes(types: js.Array[java.lang.String | js.Object], plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
+  def createTypes(types: js.Object): scala.Unit = js.native
   def createTypes(types: js.Object, plugin: ActionPlugin): scala.Unit = js.native
   def createTypes(types: js.Object, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#deletePage */

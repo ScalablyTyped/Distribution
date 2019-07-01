@@ -85,6 +85,9 @@ object libMod extends js.Object {
   val BoxPlotOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val BoxPlotTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val BranchesOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val BugFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val BugOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val BugTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val BuildFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val BuildOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val BuildTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native

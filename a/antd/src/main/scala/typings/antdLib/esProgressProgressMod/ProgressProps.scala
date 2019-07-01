@@ -26,7 +26,9 @@ trait ProgressProps extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.exception | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success
   ] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String | ProgressGradient] = js.undefined
-  var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined
+  var strokeLinecap: js.UndefOr[
+    antdLib.antdLibStrings.butt | antdLib.antdLibStrings.square | antdLib.antdLibStrings.round
+  ] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var successPercent: js.UndefOr[scala.Double] = js.undefined
@@ -48,7 +50,7 @@ object ProgressProps {
     size: ProgressSize = null,
     status: antdLib.antdLibStrings.normal | antdLib.antdLibStrings.exception | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success = null,
     strokeColor: java.lang.String | ProgressGradient = null,
-    strokeLinecap: java.lang.String = null,
+    strokeLinecap: antdLib.antdLibStrings.butt | antdLib.antdLibStrings.square | antdLib.antdLibStrings.round = null,
     strokeWidth: scala.Int | scala.Double = null,
     style: reactLib.reactMod.CSSProperties = null,
     successPercent: scala.Int | scala.Double = null,
@@ -67,7 +69,7 @@ object ProgressProps {
     if (size != null) __obj.updateDynamic("size")(size)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
+    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (successPercent != null) __obj.updateDynamic("successPercent")(successPercent.asInstanceOf[js.Any])
