@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 trait IMultiSelectProps[T]
   extends atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.IListItemsProps[T] {
   /**
+    * Whether the component should take up the full width of its container.
+    * This overrides `popoverProps.fill` and `tagInputProps.fill`.
+    */
+  var fill: js.UndefOr[scala.Boolean] = js.native
+  /**
     * Whether the popover opens on key down or when `TagInput` is focused.
     * @default false
     */

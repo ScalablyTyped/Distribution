@@ -40,6 +40,9 @@ object ramdaLibStrings {
   sealed trait RegExp extends js.Object
   
   @js.native
+  sealed trait Static extends js.Object
+  
+  @js.native
   sealed trait String extends js.Object
   
   @js.native
@@ -73,6 +76,8 @@ object ramdaLibStrings {
   def PartialGaps: PartialGaps = "PartialGaps".asInstanceOf[PartialGaps]
   @scala.inline
   def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
+  @scala.inline
+  def Static: Static = "Static".asInstanceOf[Static]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   @scala.inline

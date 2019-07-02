@@ -23,7 +23,7 @@ trait CreateFleetRequest extends js.Object {
     */
   var LaunchTemplateConfigs: FleetLaunchTemplateConfigListRequest
   /**
-    * The allocation strategy of On-Demand Instances in an EC2 Fleet.
+    * Describes the configuration of On-Demand Instances in an EC2 Fleet.
     */
   var OnDemandOptions: js.UndefOr[OnDemandOptionsRequest] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait CreateFleetRequest extends js.Object {
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   /**
-    * The TotalTargetCapacity, OnDemandTargetCapacity, SpotTargetCapacity, and DefaultCapacityType structure.
+    * The number of units to request.
     */
   var TargetCapacitySpecification: TargetCapacitySpecificationRequest
   /**

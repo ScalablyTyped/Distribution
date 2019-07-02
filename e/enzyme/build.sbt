@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "enzyme"
-version := "3.9-dt-20190622Z-681b9e"
+version := "3.10-dt-20190701Z-4d3a81"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

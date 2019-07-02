@@ -22,7 +22,7 @@ trait ButtonGroupProps extends js.Object {
     baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square
   ] = js.undefined
   var size: js.UndefOr[
-    baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square
+    baseuiLib.baseuiLibStrings.compact | baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.large
   ] = js.undefined
 }
 
@@ -37,7 +37,7 @@ object ButtonGroupProps {
     overrides: ButtonGroupOverrides = null,
     selected: scala.Double | js.Array[scala.Double] = null,
     shape: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,
-    size: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null
+    size: baseuiLib.baseuiLibStrings.compact | baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.large = null
   ): ButtonGroupProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)

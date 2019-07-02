@@ -15,6 +15,10 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
+    * Specifies whether this cluster can be deleted. If DeletionProtection is enabled, the cluster cannot be deleted unless it is modified and DeletionProtection is disabled. DeletionProtection protects clusters from being accidentally deleted.
+    */
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+  /**
     * A list of log types that must be enabled for exporting to Amazon CloudWatch Logs.
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
@@ -54,6 +58,7 @@ object RestoreDBClusterToPointInTimeMessage {
     DBClusterIdentifier: String,
     SourceDBClusterIdentifier: String,
     DBSubnetGroupName: String = null,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
     KmsKeyId: String = null,
     Port: js.UndefOr[IntegerOptional] = js.undefined,
@@ -64,6 +69,7 @@ object RestoreDBClusterToPointInTimeMessage {
   ): RestoreDBClusterToPointInTimeMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, SourceDBClusterIdentifier = SourceDBClusterIdentifier)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
     if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)

@@ -21,6 +21,11 @@ trait ISuggestProps[T]
   /** Whether the input field should be disabled. */
   var disabled: js.UndefOr[scala.Boolean] = js.native
   /**
+    * Whether the component should take up the full width of its container.
+    * This overrides `popoverProps.fill` and `inputProps.fill`.
+    */
+  var fill: js.UndefOr[scala.Boolean] = js.native
+  /**
     * Props to spread to the query `InputGroup`. To control this input, use
     * `query` and `onQueryChange` instead of `inputProps.value` and
     * `inputProps.onChange`.

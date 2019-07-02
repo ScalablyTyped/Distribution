@@ -11,6 +11,10 @@ trait OnDemandOptionsRequest extends js.Object {
     */
   var AllocationStrategy: js.UndefOr[FleetOnDemandAllocationStrategy] = js.undefined
   /**
+    * The maximum amount per hour for On-Demand Instances that you're willing to pay.
+    */
+  var MaxTotalPrice: js.UndefOr[String] = js.undefined
+  /**
     * The minimum target capacity for On-Demand Instances in the fleet. If the minimum target capacity is not reached, the fleet launches no instances.
     */
   var MinTargetCapacity: js.UndefOr[Integer] = js.undefined
@@ -28,12 +32,14 @@ object OnDemandOptionsRequest {
   @scala.inline
   def apply(
     AllocationStrategy: FleetOnDemandAllocationStrategy = null,
+    MaxTotalPrice: String = null,
     MinTargetCapacity: js.UndefOr[Integer] = js.undefined,
     SingleAvailabilityZone: js.UndefOr[Boolean] = js.undefined,
     SingleInstanceType: js.UndefOr[Boolean] = js.undefined
   ): OnDemandOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
+    if (MaxTotalPrice != null) __obj.updateDynamic("MaxTotalPrice")(MaxTotalPrice)
     if (!js.isUndefined(MinTargetCapacity)) __obj.updateDynamic("MinTargetCapacity")(MinTargetCapacity)
     if (!js.isUndefined(SingleAvailabilityZone)) __obj.updateDynamic("SingleAvailabilityZone")(SingleAvailabilityZone)
     if (!js.isUndefined(SingleInstanceType)) __obj.updateDynamic("SingleInstanceType")(SingleInstanceType)

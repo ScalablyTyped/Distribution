@@ -14,7 +14,7 @@ class MultiSelect[T] ()
 @JSImport("@blueprintjs/select", "MultiSelect")
 @js.native
 object MultiSelect extends js.Object {
-  var defaultProps: atBlueprintjsSelectLib.Anon_Placeholder = js.native
+  var defaultProps: atBlueprintjsSelectLib.Anon_Fill = js.native
   var displayName: java.lang.String = js.native
   def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsSelectLib.libEsmComponentsSelectMultiSelectMod.IMultiSelectProps[T], 

@@ -29,7 +29,7 @@ object StatefulButtonGroupProps {
     overrides: ButtonGroupOverrides = null,
     selected: scala.Double | js.Array[scala.Double] = null,
     shape: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,
-    size: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,
+    size: baseuiLib.baseuiLibStrings.compact | baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.large = null,
     stateReducer: (/* stateType */ STATE_CHANGE_TYPE, /* nextState */ State, /* currentState */ State) => State = null
   ): StatefulButtonGroupProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

@@ -343,6 +343,7 @@
 | [atom-keymap](./a/atom-keymap) | Atom's DOM-aware keymap module | - |
 | [atom-mocha-test-runner](./a/atom-mocha-test-runner) | Run your Atom package tests using Mocha | - |
 | [atpl](./a/atpl) | A complete and fast template engine fully compatib | template, engine, inheritance, twig, jinja, django, swig, consolidate, express |
+| [audiobuffer-to-wav](./a/audiobuffer-to-wav) | convert an AudioBuffer to .wav format | convert, AudioBuffer, to, wav, format, for, browser, webaudio, web audio, audio, buffer, conversion, formats, fmt, riff, wave, sound |
 | [audiosprite](./a/audiosprite) | Concat small audio files into single file and expo | audio, audio-sprite, jukebox, ffmpeg |
 | [aurelia-binding](./a/aurelia-binding) | A modern databinding library for JavaScript and HT | aurelia, binding, databinding |
 | [aurelia-dependency-inject](./a/aurelia-dependency-injection) | A lightweight, extensible dependency injection con | aurelia, di, dependency injection, ioc |
@@ -899,6 +900,7 @@
 | [connect-redis](./c/connect-redis) | Redis session store for Connect | - |
 | [connect-slashes](./c/connect-slashes) | Trailing slash redirect middleware for Connect and | trailing, slash, connect, middleware, express |
 | [connect-timeout](./c/connect-timeout) | Request timeout middleware for Connect/Express | - |
+| [connect-trim-body](./c/connect-trim-body) | Connect/Express middleware to trim all parameters  | trim, sanitize, body, connect, express |
 | [consola](./c/consola) | Elegant Console Logger for Node.js and Browser | console, logger, reporter, elegant, cli, universal, unified, winston |
 | [console-log-level](./c/console-log-level) | The most simple logger imaginable | log, logging, logger, console, console.log, stdout, stderr |
 | [console-stamp](./c/console-stamp) | Patch NodeJS console methods in order to add times | console, timestamp, log, jslog, debug |
@@ -1188,6 +1190,7 @@
 | [define-lazy-prop](./d/define-lazy-prop) | Define a lazily evaluated property on an object | lazy, property, properties, prop, define, object, value, lazily, laziness, evaluation, eval, execute, getter, function, fn, memoize, cache, defer, deferred |
 | [defined](./d/defined) | return the first argument that is  | undefined, short-circuit, ||, or, //, defined-or |
 | [deglob](./d/deglob) | Take a list of glob patterns and return an array o | cli, command, deglob, files, glob, unglob, gitignore, ignore, file |
+| [deindent](./d/deindent) | ES6 template string helper for deindentation | es6, template, strings, indendation, dedent |
 | [deku](./d/deku) | Render interfaces using pure functions and virtual | deku, functional, react, virtual, dom, elm, redux |
 | [del](./d/del) | Delete files and folders | delete, files, folders, directories, del, remove, destroy, trash, unlink, clean, cleaning, cleanup, rm, rmrf, rimraf, rmdir, glob, gulpfriendly, file, folder, directory, dir, fs, filesystem |
 | [delaunator](./d/delaunator) | An incredibly fast JavaScript library for Delaunay | delaunay triangulation, computational geometry, algorithms |
@@ -1676,6 +1679,7 @@
 | [fb-watchman](./f/fb-watchman) | Bindings for the Watchman file watching service | facebook, watchman, file, watch, watcher, watching, fs.watch, fswatcher, fs, glob, utility |
 | [fbemitter](./f/fbemitter) | Facebook's EventEmitter is a simple emitter implem | clientside |
 | [feather-icons](./f/feather-icons) | Simply beautiful open source icons | - |
+| [feather-route-matcher](./f/feather-route-matcher) | featherweight url to handler matching | feather, matcher, router, routing, url |
 | [featherlight](./f/featherlight) | Featherlight is a very lightweight jQuery lightbox | ajax, customizable, dialog, easy, fancy, fast, html5, image, jquery, lightbox, lightweight, minimal, modal, popup, simple, slim, small, ui, window, jquery-plugin, ecosystem:jquery |
 | [feathersjs__authenticatio](./f/feathersjs__authentication) | Add Authentication to your FeathersJS app. | feathers, feathers-plugin |
 | [feathersjs__authenticatio](./f/feathersjs__authentication-client) | The authentication plugin for feathers-client | feathers, feathers-plugin |
@@ -2147,6 +2151,7 @@
 | [google-closure-compiler](./g/google-closure-compiler) | Check, compile, optimize and compress Javascript w | javascript, compiler, optimizer, minifier, closure, gulpplugin, gruntplugin |
 | [google-cloud__common](./g/google-cloud__common) | Common components for Cloud APIs Node.js Client Li | - |
 | [google-cloud__datastore](./g/google-cloud__datastore) | Cloud Datastore Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google datastore, datastore |
+| [google-cloud__firestore](./g/google-cloud__firestore) | Firestore Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, firestore |
 | [google-cloud__kms](./g/google-cloud__kms) | Google Cloud Key Management Service (KMS) API clie | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google kms, kms, Google Cloud Key Management Service (KMS) API |
 | [google-cloud__paginator](./g/google-cloud__paginator) | A result paging utility used by Google node.js mod | - |
 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | - | - |
@@ -2223,6 +2228,7 @@
 | [grecaptcha](./g/grecaptcha) | reCAPTCHA v3 / v2 client for Node | recaptcha, recaptcha-v3, v3, recaptcha-v2, v2, verify, recaptcha-verify, recaptcha2 |
 | [gregorian-calendar](./g/gregorian-calendar) | date time utils ported from java | date, time |
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
+| [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | gridstack.js is a jQuery plugin for widget layout | gridstack, grid, gridster, layout, jquery |
@@ -4233,6 +4239,7 @@
 | [node-geocoder](./n/node-geocoder) | Node Geocoder, node geocoding library, supports go | geocoder, geocoding, geo, google, maps, mapquest, agol, arcgis, tomtom |
 | [node-getopt](./n/node-getopt) | featured command line args parser | getopt, arg, parser |
 | [node-gettext](./n/node-gettext) | A JavaScript implementation of gettext, a localiza | i18n, l10n, internationalization, localization, translation, gettext |
+| [node-gzip](./n/node-gzip) | Simply gzip and ungzip in Node.js with promises | node, gzip, compress, promise, gunzip, ungzip, decompress, uncompress, gz, zlib, async, await, promises |
 | [node-hid](./n/node-hid) | USB HID device access library | - |
 | [node-horseman](./n/node-horseman) | Run PhantomJS from Node | phantomjs, horseman, headless, browser |
 | [node-hue-api](./n/node-hue-api) | Phillips Hue API Library for Node.js | philips, hue, api, living, color, colour, automation, light, lighting, bridge |
@@ -4521,6 +4528,7 @@
 | [parity-pmr](./p/parity-pmr) | Parity's native market reporting protocol | - |
 | [parity-poe](./p/parity-poe) | Parity's native order entry protocol | - |
 | [park-miller](./p/park-miller) | Park-Miller pseudorandom number generator (PRNG) | park-miller, park, miller, pseudorandom, number, generator, algorithm, random, lcg, congruential, integer, int, float, boolean, seed, seeded, prng, rng, lehmer |
+| [parquetjs](./p/parquetjs) | fully asynchronous, pure JavaScript implementation | dremel, parquet |
 | [parse](./p/parse) | The Parse JavaScript SDK | cloud, mobile, api |
 | [parse-color](./p/parse-color) | parse a css color string (plus hsv and cmyk) into  | rgb, rgba, hsl, hsla, hsv, hsva, cmyk, cmyka, color, css, alpha |
 | [parse-columns](./p/parse-columns) | Parse text columns, like the output of unix comman | parse, parser, columns, column, col, row, text, string, str, unix, command, cmd, output, csv, shell, sh, term, table |
@@ -4682,6 +4690,7 @@
 | [pino](./p/pino) | super fast, all natural json logger | fast, logger, stream, json |
 | [pino-http](./p/pino-http) | High-speed HTTP logger for Node.js | - |
 | [pino-multi-stream](./p/pino-multi-stream) | A wrapper for the Pino logger that provides Bunyan | pino, logger |
+| [pino-std-serializers](./p/pino-std-serializers) | A collection of standard object serializers for Pi | pino, logging |
 | [pinterest-sdk](./p/pinterest-sdk) | - | - |
 | [pinyin](./p/pinyin) | 汉语拼音转换工具。 | 拼音, 汉语, 汉字, 中文, Pinyin |
 | [piwik-tracker](./p/piwik-tracker) | A wrapper for the Piwik tracking HTTP API | piwik, analytics, tracking |
@@ -4764,6 +4773,7 @@
 | [postmark](./p/postmark) | Official Node.js client library for the Postmark H | - |
 | [pouch-redux-middleware](./p/pouch-redux-middleware) | PouchDB Redux Middleware | pouchdb, redux, react, middleware |
 | [pouchdb](./p/pouchdb) | PouchDB is a pocket-sized database | db, couchdb, pouchdb |
+| [pouchdb-adapter-cordova-s](./p/pouchdb-adapter-cordova-sqlite) | PouchDB adapter using Cordova SQLite Plugin as its | - |
 | [pouchdb-adapter-fruitdown](./p/pouchdb-adapter-fruitdown) | PouchDB adapter using fruitdown as the data store. | - |
 | [pouchdb-adapter-http](./p/pouchdb-adapter-http) | PouchDB adapter using HTTP (e.g. a remote CouchDB) | - |
 | [pouchdb-adapter-idb](./p/pouchdb-adapter-idb) | PouchDB adapter using IndexedDB as its data store. | - |
@@ -5284,6 +5294,8 @@
 | [react-native-fbsdk](./r/react-native-fbsdk) | Facebook SDK support for React Native apps. | react, react-native, react-component, ios, android, facebook, core |
 | [react-native-fetch-blob](./r/react-native-fetch-blob) | A module provides upload, download, and files acce | react-native, fetch, blob, fs, upload, file, download, filestream, image header |
 | [react-native-firebase](./r/react-native-firebase) | A well tested, feature rich Firebase implementatio | react, admob, auth, config, digits, fabric, functions, phone-auth, sms, firestore, cloud-firestore, datastore, remote-config, transactions, react-native, react-native-firebase, firebase, fcm, apn, gcm, analytics, messaging, database, android, ios, crash, firestack, performance, firestore, dynamic-links, crashlytics |
+| [react-native-firebase__ap](./r/react-native-firebase__app) | A well tested, feature rich Firebase implementatio | react, admob, auth, config, digits, fabric, functions, phone-auth, sms, firestore, cloud-firestore, datastore, remote-config, transactions, react-native, react-native-firebase, firebase, fcm, apn, gcm, analytics, messaging, database, android, ios, crash, firestack, performance, firestore, dynamic-links, crashlytics |
+| [react-native-firebase__ap](./r/react-native-firebase__app-types) | @react-native-firebase/app-types | - |
 | [react-native-flip-card](./r/react-native-flip-card) | The card component which has a motion of flip for  | react-component, react-native, ios, android, card, flip |
 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form  | react-component, react-native, react native form, android, ios |
 | [react-native-fs](./r/react-native-fs) | Native filesystem access for react-native | react-component, react-native, ios, android, fs, filesystem, download, upload, file-transfer |
@@ -6987,6 +6999,7 @@
 | [wordpress__api-fetch](./w/wordpress__api-fetch) | Utility to make WordPress REST API requests. | wordpress, rest-api, fetch |
 | [wordpress__autop](./w/wordpress__autop) | WordPress's automatic paragraph functions autop an | wordpress, autop |
 | [wordpress__blob](./w/wordpress__blob) | Blob utilities for WordPress. | wordpress, blob |
+| [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP | wordpress, block, parser |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
@@ -6996,9 +7009,11 @@
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |
 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
+| [wordpress__is-shallow-equ](./w/wordpress__is-shallow-equal) | Test for shallow equality between two objects or a | wordpress, shallow, shallow-equal, shallowequal |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API. | wordpress, rich-text |
+| [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress. | wordpress, shortcode |
 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities. | wordpress, url |
 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz | - |
 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to sta | word, wrap, rule, format, column |

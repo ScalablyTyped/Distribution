@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebGLImageReplay
   extends olLib.renderWebglTextureReplayMod.default {
-  var hitDetectionImages_ : js.Array[_] = js.native
-  var images_ : js.Array[_] = js.native
+  var hitDetectionImages_ : js.Array[stdLib.HTMLCanvasElement | stdLib.HTMLImageElement | stdLib.HTMLVideoElement] = js.native
+  var images_ : js.Array[stdLib.HTMLCanvasElement | stdLib.HTMLImageElement | stdLib.HTMLVideoElement] = js.native
 }
 

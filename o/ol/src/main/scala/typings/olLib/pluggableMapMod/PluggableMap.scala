@@ -19,8 +19,8 @@ trait PluggableMap
     pixel: olLib.pixelMod.Pixel,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* p1 */ olLib.featureMod.FeatureLike, 
-      /* p2 */ olLib.layerLayerMod.default, 
+      /* p0 */ olLib.featureMod.FeatureLike, 
+      /* p1 */ olLib.layerLayerMod.default, 
       T
     ]
   ): T = js.native
@@ -28,8 +28,8 @@ trait PluggableMap
     pixel: olLib.pixelMod.Pixel,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* p1 */ olLib.featureMod.FeatureLike, 
-      /* p2 */ olLib.layerLayerMod.default, 
+      /* p0 */ olLib.featureMod.FeatureLike, 
+      /* p1 */ olLib.layerLayerMod.default, 
       T
     ],
     opt_options: AtPixelOptions
@@ -38,8 +38,8 @@ trait PluggableMap
     pixel: olLib.pixelMod.Pixel,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* p1 */ olLib.layerLayerMod.default, 
-      /* p2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
+      /* p0 */ olLib.layerLayerMod.default, 
+      /* p1 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
       T
     ]
   ): T = js.native
@@ -47,8 +47,8 @@ trait PluggableMap
     pixel: olLib.pixelMod.Pixel,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* p1 */ olLib.layerLayerMod.default, 
-      /* p2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
+      /* p0 */ olLib.layerLayerMod.default, 
+      /* p1 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
       T
     ],
     opt_options: AtPixelOptions

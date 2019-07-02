@@ -27,6 +27,10 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
+    * Specifies whether this cluster can be deleted. If DeletionProtection is enabled, the cluster cannot be deleted unless it is modified and DeletionProtection is disabled. DeletionProtection protects clusters from being accidentally deleted.
+    */
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+  /**
     * A list of log types that need to be enabled for exporting to Amazon CloudWatch Logs.
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
@@ -43,13 +47,13 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
-    * The password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
+    * The password for the master database user. This password can contain any printable ASCII character except forward slash (/), double quote ("), or the "at" symbol (@). Constraints: Must contain from 8 to 41 characters.
     */
-  var MasterUserPassword: js.UndefOr[String] = js.undefined
+  var MasterUserPassword: String
   /**
     * The name of the master user for the DB cluster. Constraints:   Must be from 1 to 16 letters or numbers.   The first character must be a letter.   Cannot be a reserved word for the chosen database engine.  
     */
-  var MasterUsername: js.UndefOr[String] = js.undefined
+  var MasterUsername: String
   /**
     * The port number on which the instances in the DB cluster accept connections.
     */
@@ -81,15 +85,16 @@ object CreateDBClusterMessage {
   def apply(
     DBClusterIdentifier: String,
     Engine: String,
+    MasterUserPassword: String,
+    MasterUsername: String,
     AvailabilityZones: AvailabilityZones = null,
     BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     EnableCloudwatchLogsExports: LogTypeList = null,
     EngineVersion: String = null,
     KmsKeyId: String = null,
-    MasterUserPassword: String = null,
-    MasterUsername: String = null,
     Port: js.UndefOr[IntegerOptional] = js.undefined,
     PreferredBackupWindow: String = null,
     PreferredMaintenanceWindow: String = null,
@@ -97,16 +102,15 @@ object CreateDBClusterMessage {
     Tags: TagList = null,
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): CreateDBClusterMessage = {
-    val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, Engine = Engine)
+    val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, Engine = Engine, MasterUserPassword = MasterUserPassword, MasterUsername = MasterUsername)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
     if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (EnableCloudwatchLogsExports != null) __obj.updateDynamic("EnableCloudwatchLogsExports")(EnableCloudwatchLogsExports)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
-    if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
-    if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
     if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow)
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow)

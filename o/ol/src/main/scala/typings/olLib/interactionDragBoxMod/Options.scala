@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var condition: js.UndefOr[olLib.eventsConditionMod.Condition] = js.undefined
   var minArea: js.UndefOr[scala.Double] = js.undefined
-  def onBoxEnd(`this`: DragBox, p1: olLib.mapBrowserEventMod.default): scala.Unit
+  def onBoxEnd(`this`: DragBox, p0: olLib.mapBrowserEventMod.default): scala.Unit
 }
 
 object Options {

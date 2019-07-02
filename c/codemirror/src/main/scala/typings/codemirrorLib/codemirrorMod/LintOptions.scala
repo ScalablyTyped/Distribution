@@ -10,18 +10,21 @@ import scala.scalajs.js.annotation._
   * linter.
   */
 trait LintOptions extends LintStateOptions {
-  var getAnnotations: Linter | AsyncLinter
+  var getAnnotations: js.UndefOr[Linter | AsyncLinter] = js.undefined
 }
 
 object LintOptions {
   @scala.inline
   def apply(
-    async: scala.Boolean,
-    getAnnotations: Linter | AsyncLinter,
-    hasGutters: scala.Boolean,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    getAnnotations: Linter | AsyncLinter = null,
+    hasGutters: js.UndefOr[scala.Boolean] = js.undefined,
     onUpdateLinting: (/* annotationsNotSorted */ js.Array[Annotation], /* annotations */ js.Array[Annotation], /* codeMirror */ Editor) => scala.Unit = null
   ): LintOptions = {
-    val __obj = js.Dynamic.literal(async = async, getAnnotations = getAnnotations.asInstanceOf[js.Any], hasGutters = hasGutters)
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (getAnnotations != null) __obj.updateDynamic("getAnnotations")(getAnnotations.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasGutters)) __obj.updateDynamic("hasGutters")(hasGutters)
     if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(js.Any.fromFunction3(onUpdateLinting))
     __obj.asInstanceOf[LintOptions]
   }

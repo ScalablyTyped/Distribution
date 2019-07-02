@@ -13,62 +13,62 @@ object ^ extends js.Object {
   def getAttributeNS(node: stdLib.Element, namespaceURI: java.lang.String, name: java.lang.String): java.lang.String = js.native
   def isDocument(`object`: js.Any): scala.Boolean = js.native
   def makeArrayExtender[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], js.Array[_]]
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Node, /* p1 */ js.Array[_], js.Array[_]]
   ): Parser = js.native
   def makeArrayExtender[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], js.Array[_]],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Node, /* p1 */ js.Array[_], js.Array[_]],
     opt_this: T
   ): Parser = js.native
   def makeArrayPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeArrayPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Parser = js.native
   def makeArraySerializer[T, V](
-    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit]
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ V, /* p2 */ js.Array[_], scala.Unit]
   ): Serializer = js.native
   def makeArraySerializer[T, V](
-    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit],
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ V, /* p2 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Serializer = js.native
   def makeChildAppender[T, V](
-    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit]
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p0 */ stdLib.Node, /* p1 */ V, /* p2 */ js.Array[_], scala.Unit]
   ): Serializer = js.native
   def makeChildAppender[T, V](
-    nodeWriter: js.ThisFunction3[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ V, /* p3 */ js.Array[_], scala.Unit],
+    nodeWriter: js.ThisFunction3[/* this */ T, /* p0 */ stdLib.Node, /* p1 */ V, /* p2 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Serializer = js.native
   def makeObjectPropertyPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeObjectPropertyPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String
   ): Parser = js.native
   def makeObjectPropertyPusher[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String,
     opt_this: T
   ): Parser = js.native
   def makeObjectPropertySetter[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeObjectPropertySetter[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String
   ): Parser = js.native
   def makeObjectPropertySetter[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Element, /* p2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Element, /* p1 */ js.Array[_], scala.Unit],
     opt_property: java.lang.String,
     opt_this: T
   ): Parser = js.native
   def makeReplacer[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], scala.Unit]
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Node, /* p1 */ js.Array[_], scala.Unit]
   ): Parser = js.native
   def makeReplacer[T](
-    valueReader: js.ThisFunction2[/* this */ T, /* p1 */ stdLib.Node, /* p2 */ js.Array[_], scala.Unit],
+    valueReader: js.ThisFunction2[/* this */ T, /* p0 */ stdLib.Node, /* p1 */ js.Array[_], scala.Unit],
     opt_this: T
   ): Parser = js.native
   def makeSequence[V](`object`: org.scalablytyped.runtime.StringDictionary[V], orderedKeys: js.Array[java.lang.String]): js.Array[V] = js.native
@@ -126,9 +126,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* p1 */ js.Any, 
-      /* p2 */ js.Array[_], 
-      /* p3 */ java.lang.String, 
+      /* p0 */ js.Any, 
+      /* p1 */ js.Array[_], 
+      /* p2 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -139,9 +139,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* p1 */ js.Any, 
-      /* p2 */ js.Array[_], 
-      /* p3 */ java.lang.String, 
+      /* p0 */ js.Any, 
+      /* p1 */ js.Array[_], 
+      /* p2 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -153,9 +153,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* p1 */ js.Any, 
-      /* p2 */ js.Array[_], 
-      /* p3 */ java.lang.String, 
+      /* p0 */ js.Any, 
+      /* p1 */ js.Array[_], 
+      /* p2 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -167,9 +167,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* p1 */ js.Any, 
-      /* p2 */ js.Array[_], 
-      /* p3 */ java.lang.String, 
+      /* p0 */ js.Any, 
+      /* p1 */ js.Array[_], 
+      /* p2 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -179,9 +179,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* p1 */ js.Any, 
-      /* p2 */ js.Array[_], 
-      /* p3 */ java.lang.String, 
+      /* p0 */ js.Any, 
+      /* p1 */ js.Array[_], 
+      /* p2 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],
@@ -192,9 +192,9 @@ object ^ extends js.Object {
     serializersNS: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[Serializer]],
     nodeFactory: js.ThisFunction3[
       /* this */ T, 
-      /* p1 */ js.Any, 
-      /* p2 */ js.Array[_], 
-      /* p3 */ java.lang.String, 
+      /* p0 */ js.Any, 
+      /* p1 */ js.Array[_], 
+      /* p2 */ java.lang.String, 
       stdLib.Node
     ],
     values: js.Array[_],

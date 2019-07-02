@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "double-ended-queue"
-version := "2.1-dt-20180214Z-58d753"
+version := "2.1-dt-20190701Z-8af871"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

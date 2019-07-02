@@ -94,7 +94,7 @@ trait MessageRead extends Message {
     */
   var from: EmailAddressDetails = js.native
   /**
-    * Gets the internet headers of a message.
+    * Gets or sets the custom internet headers of a message.
     * 
     * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
     *

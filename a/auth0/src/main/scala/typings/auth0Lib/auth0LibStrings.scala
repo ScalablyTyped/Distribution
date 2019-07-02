@@ -48,6 +48,10 @@ object auth0LibStrings {
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
   
   @js.native
+  sealed trait authorization_code
+    extends auth0Lib.auth0Mod.Grant
+  
+  @js.native
   sealed trait baidu
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -67,6 +71,10 @@ object auth0LibStrings {
     extends auth0Lib.auth0Mod.ClientAppType
        with auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
+  
+  @js.native
+  sealed trait client_credentials
+    extends auth0Lib.auth0Mod.Grant
   
   @js.native
   sealed trait cloudbees
@@ -184,6 +192,10 @@ object auth0LibStrings {
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
   
   @js.native
+  sealed trait `implicit`
+    extends auth0Lib.auth0Mod.Grant
+  
+  @js.native
   sealed trait instagram
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -244,6 +256,10 @@ object auth0LibStrings {
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
   
   @js.native
+  sealed trait password
+    extends auth0Lib.auth0Mod.Grant
+  
+  @js.native
   sealed trait paypal
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -270,6 +286,10 @@ object auth0LibStrings {
   @js.native
   sealed trait processing
     extends auth0Lib.auth0Mod.JobStatus
+  
+  @js.native
+  sealed trait refresh_token
+    extends auth0Lib.auth0Mod.Grant
   
   @js.native
   sealed trait regular_web
@@ -446,6 +466,8 @@ object auth0LibStrings {
   @scala.inline
   def `auth0-oidc`: `auth0-oidc` = "auth0-oidc".asInstanceOf[`auth0-oidc`]
   @scala.inline
+  def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
+  @scala.inline
   def baidu: baidu = "baidu".asInstanceOf[baidu]
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
@@ -453,6 +475,8 @@ object auth0LibStrings {
   def bitly: bitly = "bitly".asInstanceOf[bitly]
   @scala.inline
   def box: box = "box".asInstanceOf[box]
+  @scala.inline
+  def client_credentials: client_credentials = "client_credentials".asInstanceOf[client_credentials]
   @scala.inline
   def cloudbees: cloudbees = "cloudbees".asInstanceOf[cloudbees]
   @scala.inline
@@ -504,6 +528,8 @@ object auth0LibStrings {
   @scala.inline
   def guardian: guardian = "guardian".asInstanceOf[guardian]
   @scala.inline
+  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
+  @scala.inline
   def instagram: instagram = "instagram".asInstanceOf[instagram]
   @scala.inline
   def ip: ip = "ip".asInstanceOf[ip]
@@ -530,6 +556,8 @@ object auth0LibStrings {
   @scala.inline
   def office365: office365 = "office365".asInstanceOf[office365]
   @scala.inline
+  def password: password = "password".asInstanceOf[password]
+  @scala.inline
   def paypal: paypal = "paypal".asInstanceOf[paypal]
   @scala.inline
   def `paypal-sandbox`: `paypal-sandbox` = "paypal-sandbox".asInstanceOf[`paypal-sandbox`]
@@ -541,6 +569,8 @@ object auth0LibStrings {
   def planningcenter: planningcenter = "planningcenter".asInstanceOf[planningcenter]
   @scala.inline
   def processing: processing = "processing".asInstanceOf[processing]
+  @scala.inline
+  def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   @scala.inline
   def regular_web: regular_web = "regular_web".asInstanceOf[regular_web]
   @scala.inline

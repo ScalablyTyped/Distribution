@@ -20,4 +20,5 @@ package object ToolsNs {
   type Prev[I /* <: js.Array[_] */] = Tail[I]
   type Reverse[T /* <: js.Array[_] */, R /* <: js.Array[_] */, I /* <: js.Array[_] */] = /* import warning: ImportType.apply Failed type conversion: ramda.Anon_01Object<R>[ramda.Tools.Pos<I> extends ramda.Tools.Length<T> ? 1 : 0] */ js.Any
   type Tail[T /* <: js.Array[_] */] = js.Array[js.Any]
+  type ValueOfRecord[R] = js.Any
 }

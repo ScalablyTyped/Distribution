@@ -61,7 +61,7 @@ trait MessageCompose extends Message {
     */
   var from: From = js.native
   /**
-    * Sets the internet headers of a message.
+    * Gets or sets the custom internet headers of a message.
     * 
     * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
     *

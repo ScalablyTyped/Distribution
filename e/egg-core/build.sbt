@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-core"
-version := "4.17.2-5916ce"
+version := "4.17.2-026fde"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-cb6937",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-e7cc40",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9b0098",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-62e70e",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-d47d77",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-97aa3d",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c60c5",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",

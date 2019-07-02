@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 package object interactionDragBoxMod {
   type EndCondition = js.ThisFunction3[
     /* this */ js.Any, 
-    /* p1 */ olLib.mapBrowserEventMod.default, 
+    /* p0 */ olLib.mapBrowserEventMod.default, 
+    /* p1 */ olLib.pixelMod.Pixel, 
     /* p2 */ olLib.pixelMod.Pixel, 
-    /* p3 */ olLib.pixelMod.Pixel, 
     scala.Boolean
   ]
 }

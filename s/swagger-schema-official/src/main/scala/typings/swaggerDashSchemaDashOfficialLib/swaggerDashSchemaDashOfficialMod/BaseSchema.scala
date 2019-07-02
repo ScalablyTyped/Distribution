@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseSchema extends js.Object {
-  var default: js.UndefOr[java.lang.String | scala.Boolean | scala.Double | js.Object] = js.undefined
+  var default: js.UndefOr[js.Any] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var enum: js.UndefOr[js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object]] = js.undefined
+  var enum: js.UndefOr[js.Array[_]] = js.undefined
   var exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined
   var exclusiveMinimum: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
@@ -24,16 +24,16 @@ trait BaseSchema extends js.Object {
   var multipleOf: js.UndefOr[scala.Double] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[ParameterType] = js.undefined
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object BaseSchema {
   @scala.inline
   def apply(
-    default: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
+    default: js.Any = null,
     description: java.lang.String = null,
-    enum: js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object] = null,
+    enum: js.Array[_] = null,
     exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined,
     exclusiveMinimum: js.UndefOr[scala.Boolean] = js.undefined,
     format: java.lang.String = null,
@@ -49,11 +49,11 @@ object BaseSchema {
     multipleOf: scala.Int | scala.Double = null,
     pattern: java.lang.String = null,
     title: java.lang.String = null,
-    `type`: java.lang.String = null,
+    `type`: ParameterType = null,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   ): BaseSchema = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default)
     if (description != null) __obj.updateDynamic("description")(description)
     if (enum != null) __obj.updateDynamic("enum")(enum)
     if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum)

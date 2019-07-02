@@ -89,6 +89,7 @@ object RouterNs extends js.Object {
   trait RowDescriptor extends js.Object {
     var body: java.lang.String
     var iconClass: js.UndefOr[java.lang.String] = js.undefined
+    var iconHtml: js.UndefOr[java.lang.String] = js.undefined
     var iconUrl: js.UndefOr[java.lang.String] = js.undefined
     var isRead: java.lang.String
     var labels: js.Array[inboxsdkLib.inboxsdkMod.ListsNs.LabelDescriptor]

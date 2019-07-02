@@ -15,10 +15,10 @@ trait EventSource extends js.Object {
   val withCredentials: scala.Boolean = js.native
   def addEventListener(`type`: java.lang.String, listener: stdLib.EventListener): scala.Unit = js.native
   def close(): scala.Unit = js.native
-  def dispatchEvent(evt: stdLib.Event): scala.Boolean = js.native
-  def onerror(evt: stdLib.MessageEvent): js.Any = js.native
-  def onmessage(evt: stdLib.MessageEvent): js.Any = js.native
-  def onopen(evt: stdLib.MessageEvent): js.Any = js.native
+  def dispatchEvent(evt: eventsourceLib.Event): scala.Boolean = js.native
+  def onerror(evt: eventsourceLib.MessageEvent): js.Any = js.native
+  def onmessage(evt: eventsourceLib.MessageEvent): js.Any = js.native
+  def onopen(evt: eventsourceLib.MessageEvent): js.Any = js.native
   def removeEventListener(`type`: java.lang.String): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: stdLib.EventListener): scala.Unit = js.native
 }

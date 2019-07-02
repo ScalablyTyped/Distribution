@@ -15,8 +15,8 @@ object geomFlatSegmentsMod extends js.Object {
     stride: scala.Double,
     callback: js.ThisFunction2[
       /* this */ S, 
+      /* p0 */ olLib.coordinateMod.Coordinate, 
       /* p1 */ olLib.coordinateMod.Coordinate, 
-      /* p2 */ olLib.coordinateMod.Coordinate, 
       T
     ]
   ): T | scala.Boolean = js.native
@@ -27,8 +27,8 @@ object geomFlatSegmentsMod extends js.Object {
     stride: scala.Double,
     callback: js.ThisFunction2[
       /* this */ S, 
+      /* p0 */ olLib.coordinateMod.Coordinate, 
       /* p1 */ olLib.coordinateMod.Coordinate, 
-      /* p2 */ olLib.coordinateMod.Coordinate, 
       T
     ],
     opt_this: S

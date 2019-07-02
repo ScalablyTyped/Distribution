@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends ParserCore {
   /* CompleteClass */
+  override var State: markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.^ = js.native
+  /* CompleteClass */
   override var ruler: markdownDashItLib.libRulerMod.^[markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.^] = js.native
   /* CompleteClass */
   override def process(state: js.Any): scala.Unit = js.native

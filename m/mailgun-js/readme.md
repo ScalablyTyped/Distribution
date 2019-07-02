@@ -1,7 +1,7 @@
 
 # Scala.js typings for mailgun-js
 
-Typings are for version 0.16
+Typings are for version 0.22
 
 ## Library description:
 Simple Node.js helper module for Mailgun API
@@ -35,12 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for mailgun-js 0.16
+// Type definitions for mailgun-js 0.22
 // Project: https://github.com/bojand/mailgun-js
 // Definitions by: Sampson Oliver <https://github.com/sampsonjoliver>
 //                 Andi Pätzold <https://github.com/andipaetzold>
+//                 Jiri Balcar <https://github.com/JiriBalcar>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+// TypeScript Version: 2.3
 
 ```
 

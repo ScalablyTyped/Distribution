@@ -79,6 +79,12 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     ]
   ): ShallowWrapper[_, _, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   /**
+    * If a wrappingComponent was passed in options,
+    * this methods returns a ShallowWrapper around the rendered wrappingComponent.
+    * This ShallowWrapper can be used to update the wrappingComponent's props and state
+    */
+  def getWrappingComponent(): ShallowWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
+  /**
     * Strips out all the not host-nodes from the list of nodes
     *
     * This method is useful if you want to check for the presence of host nodes

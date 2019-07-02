@@ -1,7 +1,6 @@
 
 # Scala.js typings for gapi
 
-Typings are for version 0.0
 
 ## Library description:
 Node implementation of Google's JavaScript Library (Currently Implemented: Google+ & Google WebFonts)
@@ -35,9 +34,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Google API Client 0.0
-// Project: https://code.google.com/p/google-api-javascript-client/
-// Definitions by: Frank M <https://github.com/sgtfrankieboy>
+// Type definitions for Google API Client
+// Project: https://github.com/google/google-api-javascript-client
+// Definitions by: Frank M <https://github.com/sgtfrankieboy>, grant <https://github.com/grant>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 /**

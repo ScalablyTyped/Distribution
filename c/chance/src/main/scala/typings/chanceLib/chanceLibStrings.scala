@@ -95,6 +95,9 @@ object chanceLibStrings {
   sealed trait lastNames extends js.Object
   
   @js.native
+  sealed trait lower extends js.Object
+  
+  @js.native
   sealed trait male extends js.Object
   
   @js.native
@@ -116,6 +119,9 @@ object chanceLibStrings {
   @js.native
   sealed trait uk
     extends chanceLib.ChanceNs.LastNameNationalities
+  
+  @js.native
+  sealed trait upper extends js.Object
   
   @js.native
   sealed trait us_states_and_dc extends js.Object
@@ -175,6 +181,8 @@ object chanceLibStrings {
   @scala.inline
   def lastNames: lastNames = "lastNames".asInstanceOf[lastNames]
   @scala.inline
+  def lower: lower = "lower".asInstanceOf[lower]
+  @scala.inline
   def male: male = "male".asInstanceOf[male]
   @scala.inline
   def months: months = "months".asInstanceOf[months]
@@ -188,6 +196,8 @@ object chanceLibStrings {
   def territories: territories = "territories".asInstanceOf[territories]
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
+  @scala.inline
+  def upper: upper = "upper".asInstanceOf[upper]
   @scala.inline
   def us_states_and_dc: us_states_and_dc = "us_states_and_dc".asInstanceOf[us_states_and_dc]
 }

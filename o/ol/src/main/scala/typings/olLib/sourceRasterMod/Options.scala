@@ -9,14 +9,14 @@ trait Options extends js.Object {
   var lib: js.UndefOr[js.Any] = js.undefined
   var operation: js.UndefOr[Operation] = js.undefined
   var operationType: js.UndefOr[olLib.olLibStrings.pixel | olLib.olLibStrings.image] = js.undefined
-  var sources: js.Array[_]
+  var sources: js.Array[olLib.sourceSourceMod.default | olLib.layerLayerMod.default]
   var threads: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    sources: js.Array[_],
+    sources: js.Array[olLib.sourceSourceMod.default | olLib.layerLayerMod.default],
     lib: js.Any = null,
     operation: Operation = null,
     operationType: olLib.olLibStrings.pixel | olLib.olLibStrings.image = null,

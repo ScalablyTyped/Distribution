@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("intl-messageformat", JSImport.Default)
 @js.native
-class default protected () extends IntlMessageFormat {
+class default protected ()
+  extends intlDashMessageformatLib.libCoreMod.IntlMessageFormat {
   def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern) = this()
   def this(message: java.lang.String) = this()
   def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: java.lang.String) = this()

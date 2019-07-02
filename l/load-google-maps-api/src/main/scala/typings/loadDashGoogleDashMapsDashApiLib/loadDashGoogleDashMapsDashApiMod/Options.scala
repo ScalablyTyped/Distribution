@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
+    * The Google Maps API `script` tag URL
+    *
+    * Default Value `'https://maps.googleapis.com/maps/api/js'`
+    */
+  var apiUrl: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Client usage reporting channel
     *
     * https://developers.google.com/maps/premium/reports/usage-reports#channels
@@ -57,6 +63,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    apiUrl: java.lang.String = null,
     channel: java.lang.String = null,
     client: java.lang.String = null,
     key: java.lang.String = null,
@@ -67,6 +74,7 @@ object Options {
     v: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (client != null) __obj.updateDynamic("client")(client)
     if (key != null) __obj.updateDynamic("key")(key)

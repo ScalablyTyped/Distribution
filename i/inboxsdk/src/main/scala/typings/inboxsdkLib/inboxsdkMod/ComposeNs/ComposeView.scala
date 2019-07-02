@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait ComposeView extends js.Object {
   var destroyed: scala.Boolean = js.native
   def addButton(buttonDescriptor: ComposeButtonDescriptor): scala.Unit = js.native
+  def addComposeNotice(composeNoticeDescriptor: ComposeNoticeDescriptor): scala.Unit = js.native
   def addStatusBar(statusBarDescriptor: StatusBarDescriptor): StatusBarView = js.native
   def attachFiles(files: js.Array[stdLib.Blob]): js.Promise[scala.Unit] = js.native
   def attachInlineFiles(Files: js.Array[stdLib.Blob]): js.Promise[scala.Unit] = js.native
@@ -22,6 +23,7 @@ trait ComposeView extends js.Object {
   def getFromContactChoices(): js.Array[inboxsdkLib.inboxsdkMod.CommonNs.Contact] = js.native
   def getHTMLContent(): java.lang.String = js.native
   def getInitialMessageID(): java.lang.String = js.native
+  def getMetadataFormElement(): stdLib.HTMLElement = js.native
   def getSelectedBodyHTML(): java.lang.String = js.native
   def getSelectedBodyText(): java.lang.String = js.native
   def getSubject(): java.lang.String = js.native
@@ -33,6 +35,7 @@ trait ComposeView extends js.Object {
   def insertLinkChipIntoBodyAtCursor(text: java.lang.String, url: java.lang.String, iconUrl: java.lang.String): stdLib.HTMLElement = js.native
   def insertLinkIntoBodyAtCursor(text: java.lang.String, url: java.lang.String): stdLib.HTMLElement = js.native
   def insertTextIntoBodyAtCursor(text: java.lang.String): scala.Unit = js.native
+  def isForward(): scala.Boolean = js.native
   def isFullscreen(): scala.Boolean = js.native
   def isInlineReplyForm(): scala.Boolean = js.native
   def isMinimized(): scala.Boolean = js.native
@@ -87,6 +90,11 @@ trait ComposeView extends js.Object {
   def on_recipientsChanged(
     name: inboxsdkLib.inboxsdkLibStrings.recipientsChanged,
     cb: js.Function1[/* event */ RecipientsChangedEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_responseTypeChanged(
+    name: inboxsdkLib.inboxsdkLibStrings.responseTypeChanged,
+    cb: js.Function1[/* event */ inboxsdkLib.Anon_IsForward, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_restored(name: inboxsdkLib.inboxsdkLibStrings.restored, cb: js.Function0[scala.Unit]): scala.Unit = js.native

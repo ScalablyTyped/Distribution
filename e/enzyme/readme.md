@@ -1,7 +1,7 @@
 
 # Scala.js typings for enzyme
 
-Typings are for version 3.9
+Typings are for version 3.10
 
 ## Library description:
 JavaScript Testing utilities for React
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Enzyme 3.9
+// Type definitions for Enzyme 3.10
 // Project: https://github.com/airbnb/enzyme
 // Definitions by: Marian Palkus <https://github.com/MarianPalkus>
 //                 Cap3 <http://www.cap3.de>

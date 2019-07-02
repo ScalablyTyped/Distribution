@@ -12,12 +12,12 @@ trait ToolbarsInstance extends js.Object {
     * @deprecated. use registerThreadButton
     * @param toolbarButtonDescriptor
     */
-  def registerToolbarButtonForList(toolbarButtonDescriptor: ToolbarButtonDescriptor): js.Function0[scala.Unit]
+  def registerToolbarButtonForList(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[scala.Unit]
   /**
     * @deprecated. use registerThreadButton
     * @param toolbarButtonDescriptor
     */
-  def registerToolbarButtonForThreadView(toolbarButtonDescriptor: ToolbarButtonDescriptor): js.Function0[scala.Unit]
+  def registerToolbarButtonForThreadView(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[scala.Unit]
 }
 
 object ToolbarsInstance {
@@ -25,8 +25,8 @@ object ToolbarsInstance {
   def apply(
     addToolbarButtonForApp: AppToolbarButtonDescriptor => AppToolbarButtonView,
     registerThreadButton: ToolbarButtonDescriptor => js.Function0[scala.Unit],
-    registerToolbarButtonForList: ToolbarButtonDescriptor => js.Function0[scala.Unit],
-    registerToolbarButtonForThreadView: ToolbarButtonDescriptor => js.Function0[scala.Unit]
+    registerToolbarButtonForList: LegacyToolbarButtonDescriptor => js.Function0[scala.Unit],
+    registerToolbarButtonForThreadView: LegacyToolbarButtonDescriptor => js.Function0[scala.Unit]
   ): ToolbarsInstance = {
     val __obj = js.Dynamic.literal(addToolbarButtonForApp = js.Any.fromFunction1(addToolbarButtonForApp), registerThreadButton = js.Any.fromFunction1(registerThreadButton), registerToolbarButtonForList = js.Any.fromFunction1(registerToolbarButtonForList), registerToolbarButtonForThreadView = js.Any.fromFunction1(registerToolbarButtonForThreadView))
   

@@ -18,8 +18,8 @@ trait TileGrid extends js.Object {
     tileCoord: olLib.tilecoordMod.TileCoord,
     callback: js.ThisFunction2[
       /* this */ T, 
-      /* p1 */ scala.Double, 
-      /* p2 */ olLib.tileRangeMod.default, 
+      /* p0 */ scala.Double, 
+      /* p1 */ olLib.tileRangeMod.default, 
       scala.Boolean
     ]
   ): scala.Boolean = js.native
@@ -27,8 +27,8 @@ trait TileGrid extends js.Object {
     tileCoord: olLib.tilecoordMod.TileCoord,
     callback: js.ThisFunction2[
       /* this */ T, 
-      /* p1 */ scala.Double, 
-      /* p2 */ olLib.tileRangeMod.default, 
+      /* p0 */ scala.Double, 
+      /* p1 */ olLib.tileRangeMod.default, 
       scala.Boolean
     ],
     opt_this: T
@@ -37,8 +37,8 @@ trait TileGrid extends js.Object {
     tileCoord: olLib.tilecoordMod.TileCoord,
     callback: js.ThisFunction2[
       /* this */ T, 
-      /* p1 */ scala.Double, 
-      /* p2 */ olLib.tileRangeMod.default, 
+      /* p0 */ scala.Double, 
+      /* p1 */ olLib.tileRangeMod.default, 
       scala.Boolean
     ],
     opt_this: T,
@@ -48,8 +48,8 @@ trait TileGrid extends js.Object {
     tileCoord: olLib.tilecoordMod.TileCoord,
     callback: js.ThisFunction2[
       /* this */ T, 
-      /* p1 */ scala.Double, 
-      /* p2 */ olLib.tileRangeMod.default, 
+      /* p0 */ scala.Double, 
+      /* p1 */ olLib.tileRangeMod.default, 
       scala.Boolean
     ],
     opt_this: T,

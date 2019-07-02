@@ -17,7 +17,7 @@ class QueryList[T] protected ()
 @JSImport("@blueprintjs/select/lib/esm/components", "QueryList")
 @js.native
 object QueryList extends js.Object {
-  var defaultProps: atBlueprintjsSelectLib.Anon_ResetOnQuery = js.native
+  var defaultProps: atBlueprintjsSelectLib.Anon_Disabled = js.native
   var displayName: java.lang.String = js.native
   def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsSelectLib.libEsmComponentsQueryDashListQueryListMod.IQueryListProps[T], 

@@ -27,11 +27,15 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
   /**
+    * Specifies whether this cluster can be deleted. If DeletionProtection is enabled, the cluster cannot be deleted unless it is modified and DeletionProtection is disabled. DeletionProtection protects clusters from being accidentally deleted.
+    */
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+  /**
     * The version number of the database engine to which you want to upgrade. Changing this parameter results in an outage. The change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true.
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    * The new password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
+    * The password for the master database user. This password can contain any printable ASCII character except forward slash (/), double quote ("), or the "at" symbol (@). Constraints: Must contain from 8 to 41 characters.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   /**
@@ -64,6 +68,7 @@ object ModifyDBClusterMessage {
     BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
     DBClusterParameterGroupName: String = null,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     EngineVersion: String = null,
     MasterUserPassword: String = null,
     NewDBClusterIdentifier: String = null,
@@ -77,6 +82,7 @@ object ModifyDBClusterMessage {
     if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
     if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
     if (NewDBClusterIdentifier != null) __obj.updateDynamic("NewDBClusterIdentifier")(NewDBClusterIdentifier)

@@ -13,4 +13,5 @@ package object ChanceNs {
   type Options = org.scalablytyped.runtime.StringDictionary[js.Any]
   type PrefixOptions = chanceLib.Anon_All with SuffixOptions
   type Seed = scala.Double | java.lang.String
+  type StringOptions = CharacterOptions with chanceLib.Anon_Length
 }

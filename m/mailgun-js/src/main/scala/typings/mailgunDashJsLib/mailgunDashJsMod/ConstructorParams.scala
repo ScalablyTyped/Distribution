@@ -16,6 +16,15 @@ trait ConstructorParams extends js.Object {
   var proxy: js.UndefOr[java.lang.String] = js.undefined
   var publicApiKey: js.UndefOr[java.lang.String] = js.undefined
   var retry: js.UndefOr[scala.Double | mailgunDashJsLib.Anon_Interval] = js.undefined
+  var testMode: js.UndefOr[scala.Boolean] = js.undefined
+  var testModeLogger: js.UndefOr[
+    js.Function3[
+      /* httpOptions */ LoggerHttpOptions, 
+      /* payload */ java.lang.String, 
+      /* form */ formDashDataLib.formDashDataMod.^, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -32,6 +41,8 @@ object ConstructorParams {
     proxy: java.lang.String = null,
     publicApiKey: java.lang.String = null,
     retry: scala.Double | mailgunDashJsLib.Anon_Interval = null,
+    testMode: js.UndefOr[scala.Boolean] = js.undefined,
+    testModeLogger: (/* httpOptions */ LoggerHttpOptions, /* payload */ java.lang.String, /* form */ formDashDataLib.formDashDataMod.^) => scala.Unit = null,
     timeout: scala.Int | scala.Double = null
   ): ConstructorParams = {
     val __obj = js.Dynamic.literal(apiKey = apiKey, domain = domain)
@@ -43,6 +54,8 @@ object ConstructorParams {
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     if (publicApiKey != null) __obj.updateDynamic("publicApiKey")(publicApiKey)
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode)
+    if (testModeLogger != null) __obj.updateDynamic("testModeLogger")(js.Any.fromFunction3(testModeLogger))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorParams]
   }

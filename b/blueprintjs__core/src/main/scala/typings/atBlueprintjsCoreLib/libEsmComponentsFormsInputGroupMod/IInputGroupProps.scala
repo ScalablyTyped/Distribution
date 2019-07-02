@@ -15,6 +15,10 @@ trait IInputGroupProps
     * @default false
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Whether the component should take up the full width of its container.
+    */
+  var fill: js.UndefOr[scala.Boolean] = js.undefined
   /** Ref handler that receives HTML `<input>` element backing this component. */
   var inputRef: js.UndefOr[js.Function1[/* ref */ stdLib.HTMLInputElement | scala.Null, _]] = js.undefined
   /** Whether this input should use large styles. */
@@ -50,6 +54,7 @@ object IInputGroupProps {
     className: java.lang.String = null,
     defaultValue: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
     inputRef: /* ref */ stdLib.HTMLInputElement | scala.Null => _ = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,6 +71,7 @@ object IInputGroupProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)

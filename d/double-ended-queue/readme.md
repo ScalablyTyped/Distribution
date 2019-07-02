@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for double-ended-queue 2.1
 // Project: https://github.com/petkaantonov/deque
 // Definitions by: Dmitry <https://github.com/dsagal>
+//                 Dmitry Parzhitsky <https://github.com/parzh>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

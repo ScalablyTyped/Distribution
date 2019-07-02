@@ -117,6 +117,15 @@ trait CommonWrapper[P, S, C] extends js.Object {
     */
   def instance(): C = js.native
   /**
+    * Invokes a function prop.
+    * @param invokePropName The function prop to call.
+    * @param ...args The argments to the invokePropName function
+    * @returns The value of the function.
+    */
+  def invoke[K /* <: stdLib.NonNullable[
+    /* import warning: ImportType.apply Failed type conversion: {[ K in keyof P ]: P[K] extends (arg : ...any): void | undefined? K : never}[keyof P] */ js.Any
+  ] */](invokePropName: K): /* import warning: ImportType.apply Failed type conversion: P[K] */ js.Any = js.native
+  /**
     * Returns whether or not the current node matches a provided selector.
     */
   def is(selector: EnzymeSelector): scala.Boolean = js.native

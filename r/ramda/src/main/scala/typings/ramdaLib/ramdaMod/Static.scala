@@ -168,6 +168,12 @@ trait Static extends js.Object {
     * of the same structure, by mapping each property to the result of calling its associated function with
     * the supplied arguments.
     */
+  def applySpec[Obj /* <: stdLib.Record[java.lang.String, js.Function1[/* repeated */ _, _]] */](obj: Obj): js.Function1[
+    /* args */ stdLib.Parameters[ramdaLib.ToolsNs.ValueOfRecord[Obj]], 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ Key in keyof Obj ]: std.ReturnType<Obj[Key]>}
+    */ ramdaLib.ramdaLibStrings.Static with Obj
+  ] = js.native
   def applySpec[T](obj: js.Any): js.Function1[/* repeated */ js.Any, T] = js.native
   def applyTo[T](el: T): js.Function1[/* fn */ js.Function1[/* t */ T, _], _] = js.native
   /**
@@ -465,15 +471,17 @@ trait Static extends js.Object {
   def cond(fns: js.Array[js.Tuple2[Pred, js.Function1[/* repeated */ _, _]]]): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("cond")
   def cond_AB[A, B](fns: js.Array[js.Tuple2[SafePred[A], js.Function1[/* repeated */ A, B]]]): js.Function1[/* repeated */ A, B] = js.native
+  def construct[A /* <: js.Array[_] */, T](constructor: js.Function1[/* a */ A, T]): js.Function1[/* a */ A, T] = js.native
   /**
     * Wraps a constructor function inside a curried function that can be called with the same arguments and returns the same type.
     */
-  def construct(fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
+  def construct[A /* <: js.Array[_] */, T](constructor: ramdaLib.Anon_AT[A, T]): js.Function1[/* a */ A, T] = js.native
+  def constructN[A /* <: js.Array[_] */, T](n: scala.Double, constructor: js.Function1[/* a */ A, T]): js.Function1[/* a */ stdLib.Partial[A], T] = js.native
   /**
     * Wraps a constructor function inside a curried function that can be called with the same arguments and returns the same type.
     * The arity of the function returned is specified to allow using variadic constructor functions.
     */
-  def constructN(n: scala.Double, fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
+  def constructN[A /* <: js.Array[_] */, T](n: scala.Double, constructor: ramdaLib.Anon_AT[A, T]): js.Function1[/* a */ stdLib.Partial[A], T] = js.native
   def contains(__ : Placeholder): js.Function2[/* list */ java.lang.String, /* a */ java.lang.String, scala.Boolean] = js.native
   /**
     * Returns `true` if the specified item is somewhere in the list, `false` otherwise.
@@ -779,12 +787,14 @@ trait Static extends js.Object {
     * Returns whether or not a path exists in an object. Only the object's own properties are checked.
     */
   def hasPath[T](list: js.Array[java.lang.String], obj: T): scala.Boolean = js.native
-  def head(list: java.lang.String): java.lang.String = js.native
+  def head(list: js.Array[js.Any]): js.UndefOr[scala.Nothing] = js.native
   /**
     * Returns the first element in a list.
     * In some libraries this function is named `first`.
     */
-  def head[T](list: js.Array[T]): js.UndefOr[T] = js.native
+  def head(str: java.lang.String): java.lang.String = js.native
+  @JSName("head")
+  def head_TAnyT[T /* <: js.Any */](list: js.Array[T]): T = js.native
   def identical[T](a: T): js.Function1[/* b */ T, scala.Boolean] = js.native
   /**
     * Returns true if its arguments are identical, false otherwise. Values are identical if they reference the
@@ -936,10 +946,35 @@ trait Static extends js.Object {
     * element and concatenating all the elements into a single string.
     */
   def join(x: java.lang.String, xs: js.Array[_]): java.lang.String = js.native
+  def juxt[A /* <: js.Array[_] */, U](fns: js.Array[js.Function1[/* args */ A, U]]): js.Function1[/* args */ A, js.Array[U]] = js.native
   /**
     * Applies a list of functions to a list of values.
     */
-  def juxt[T, U](fns: js.Array[js.Function1[/* repeated */ T, U]]): js.Function1[/* repeated */ T, js.Array[U]] = js.native
+  def juxt[A /* <: js.Array[_] */, R1, R2](fns: js.Tuple2[js.Function1[/* a */ A, R1], js.Function1[/* a */ A, R2]]): js.Function1[/* a */ A, js.Tuple2[R1, R2]] = js.native
+  def juxt[A /* <: js.Array[_] */, R1, R2, R3](
+    fns: js.Tuple3[
+      js.Function1[/* a */ A, R1], 
+      js.Function1[/* a */ A, R2], 
+      js.Function1[/* a */ A, R3]
+    ]
+  ): js.Function1[/* a */ A, js.Tuple3[R1, R2, R3]] = js.native
+  def juxt[A /* <: js.Array[_] */, R1, R2, R3, R4](
+    fns: js.Tuple4[
+      js.Function1[/* a */ A, R1], 
+      js.Function1[/* a */ A, R2], 
+      js.Function1[/* a */ A, R3], 
+      js.Function1[/* a */ A, R4]
+    ]
+  ): js.Function1[/* a */ A, js.Tuple4[R1, R2, R3, R4]] = js.native
+  def juxt[A /* <: js.Array[_] */, R1, R2, R3, R4, R5](
+    fns: js.Tuple5[
+      js.Function1[/* a */ A, R1], 
+      js.Function1[/* a */ A, R2], 
+      js.Function1[/* a */ A, R3], 
+      js.Function1[/* a */ A, R4], 
+      js.Function1[/* a */ A, R5]
+    ]
+  ): js.Function1[/* a */ A, js.Tuple5[R1, R2, R3, R4, R5]] = js.native
   def keys[T](x: T): js.Array[java.lang.String] = js.native
   /**
     * Returns a list containing the names of all the
@@ -952,16 +987,18 @@ trait Static extends js.Object {
     */
   @JSName("keys")
   def keys_TObject[T /* <: js.Object */](x: T): js.Array[java.lang.String] = js.native
-  def last(list: java.lang.String): java.lang.String = js.native
+  def last(list: js.Array[js.Any]): js.UndefOr[scala.Nothing] = js.native
   /**
     * Returns the last element from a list.
     */
-  def last[T](list: js.Array[T]): js.UndefOr[T] = js.native
+  def last(str: java.lang.String): java.lang.String = js.native
   /**
     * Returns the position of the last occurrence of an item (by strict equality) in
     * an array, or -1 if the item is not included in the array.
     */
   def lastIndexOf[T](target: T, list: js.Array[T]): scala.Double = js.native
+  @JSName("last")
+  def last_TAnyT[T /* <: js.Any */](list: js.Array[T]): T = js.native
   /**
     * Returns the number of elements in the array by returning list.length.
     */
@@ -1361,13 +1398,13 @@ trait Static extends js.Object {
     * in `R.equals` terms. Most likely used to filter a list.
     */
   def pathEq(path: Path, `val`: js.Any, obj: js.Any): scala.Boolean = js.native
-  def pathOr[T](defaultValue: T): ramdaLib.CurryNs.Curry[js.Function2[/* a */ Path, /* b */ _, _]] = js.native
-  def pathOr[T](defaultValue: T, path: Path): js.Function1[/* obj */ js.Any, _] = js.native
+  def pathOr[T](defaultValue: T): ramdaLib.CurryNs.Curry[js.Function2[/* a */ Path, /* b */ _, T]] = js.native
+  def pathOr[T](defaultValue: T, path: Path): js.Function1[/* obj */ js.Any, T] = js.native
   /**
     * If the given, non-null object has a value at the given path, returns the value at that path.
     * Otherwise returns the provided default value.
     */
-  def pathOr[T](defaultValue: T, path: Path, obj: js.Any): js.Any = js.native
+  def pathOr[T](defaultValue: T, path: Path, obj: js.Any): T = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ Path, /* b */ U, scala.Boolean]] = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean], path: Path): js.Function1[/* obj */ U, scala.Boolean] = js.native
   /**
@@ -2175,11 +2212,11 @@ trait Static extends js.Object {
     * Duplication is determined according to the value returned by applying the supplied predicate to two list elements.
     */
   def symmetricDifferenceWith[T](pred: js.Function2[/* a */ T, /* b */ T, scala.Boolean], list1: js.Array[T], list2: js.Array[T]): js.Array[T] = js.native
-  def tail(list: java.lang.String): java.lang.String = js.native
   /**
     * Returns all but the first element of a list or string.
     */
-  def tail[T](list: js.Array[T]): js.Array[T] = js.native
+  def tail(list: java.lang.String): java.lang.String = js.native
+  def tail[T /* <: js.Any */](list: js.Array[T]): js.Array[T] = js.native
   def take(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
   def take[T](n: scala.Double): ramdaLib.Fn_Xs[T] = js.native
   /**

@@ -20,7 +20,7 @@ trait ContainerInspectInfo extends js.Object {
   var Image: java.lang.String
   var LogPath: java.lang.String
   var MountLabel: java.lang.String
-  var Mounts: js.Array[dockerodeLib.Anon_Destination]
+  var Mounts: js.Array[dockerodeLib.Anon_DestinationMode]
   var Name: java.lang.String
   var NetworkSettings: dockerodeLib.Anon_Bridge
   var Path: java.lang.String
@@ -46,7 +46,7 @@ object ContainerInspectInfo {
     Image: java.lang.String,
     LogPath: java.lang.String,
     MountLabel: java.lang.String,
-    Mounts: js.Array[dockerodeLib.Anon_Destination],
+    Mounts: js.Array[dockerodeLib.Anon_DestinationMode],
     Name: java.lang.String,
     NetworkSettings: dockerodeLib.Anon_Bridge,
     Path: java.lang.String,

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait URIStatic
   extends org.scalablytyped.runtime.Instantiable0[URI]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* value */ stdLib.HTMLElement) | (/* value */ java.lang.String) | (/* value */ URIOptions), 
+      (/* value */ urijsLib.HTMLElement) | (/* value */ java.lang.String) | (/* value */ URIOptions), 
       URI
     ] {
   def apply(): URI = js.native
   def apply(value: java.lang.String): URI = js.native
-  def apply(value: stdLib.HTMLElement): URI = js.native
+  def apply(value: urijsLib.HTMLElement): URI = js.native
   def apply(value: URIOptions): URI = js.native
   def addQuery(data: js.Object, prop: java.lang.String, value: java.lang.String): js.Object = js.native
   def addQuery(data: js.Object, qryObj: js.Object): js.Object = js.native

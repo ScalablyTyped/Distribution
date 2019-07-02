@@ -16,6 +16,11 @@ trait DrawerView extends js.Object {
   @JSName("on")
   def on_destroy(name: inboxsdkLib.inboxsdkLibStrings.destroy, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
+  def on_preautoclose(
+    name: inboxsdkLib.inboxsdkLibStrings.preautoclose,
+    cb: js.Function1[/* event */ inboxsdkLib.inboxsdkMod.CommonNs.PreAutoCloseEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
   def on_slideAnimationDone(name: inboxsdkLib.inboxsdkLibStrings.slideAnimationDone, cb: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

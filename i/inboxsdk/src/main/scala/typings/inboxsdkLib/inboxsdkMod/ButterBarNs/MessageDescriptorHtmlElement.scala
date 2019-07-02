@@ -15,6 +15,7 @@ object MessageDescriptorHtmlElement {
   @scala.inline
   def apply(
     el: stdLib.HTMLElement,
+    buttons: js.Array[MessageButtonDescriptor] = null,
     className: java.lang.String = null,
     hideOnViewChanged: js.UndefOr[scala.Boolean] = js.undefined,
     messageKey: js.Object | java.lang.String = null,
@@ -23,6 +24,7 @@ object MessageDescriptorHtmlElement {
     time: scala.Int | scala.Double = null
   ): MessageDescriptorHtmlElement = {
     val __obj = js.Dynamic.literal(el = el)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged)
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])

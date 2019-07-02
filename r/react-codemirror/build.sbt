@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-codemirror"
-version := "v1.0.0-dt-20190322Z-4e9663"
+version := "v1.0.0-dt-20190322Z-227c91"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20190624Z-38c7ab",
+  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20190701Z-321851",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-83b406",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",

@@ -19,7 +19,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var DBClusterIdentifier: String
   /**
-    * The compute and memory capacity of the DB instance; for example, db.m4.large. 
+    * The compute and memory capacity of the DB instance; for example, db.r5.large. 
     */
   var DBInstanceClass: String
   /**

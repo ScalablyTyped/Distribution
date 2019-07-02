@@ -25,7 +25,7 @@ trait ButtonProps extends js.Object {
     baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square
   ] = js.undefined
   var size: js.UndefOr[
-    baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square
+    baseuiLib.baseuiLibStrings.compact | baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.large
   ] = js.undefined
   var startEnhancer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
@@ -42,7 +42,7 @@ object ButtonProps {
     onClick: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event] => _ = null,
     overrides: ButtonOverrides = null,
     shape: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,
-    size: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,
+    size: baseuiLib.baseuiLibStrings.compact | baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.large = null,
     startEnhancer: reactLib.reactMod.ReactNode = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pouchdb
 
-Typings are for version 6.3
+Typings are for version 6.4
 
 ## Library description:
 PouchDB is a pocket-sized database
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for pouchdb 6.3
+// Type definitions for pouchdb 6.4
 // Project: https://pouchdb.com/, https://github.com/pouchdb/pouchdb
 // Definitions by: Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

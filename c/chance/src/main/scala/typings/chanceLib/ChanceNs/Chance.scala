@@ -49,7 +49,14 @@ trait Chance extends Seeded {
   def cf(): java.lang.String = js.native
   def cf(opts: Options): java.lang.String = js.native
   def character(): java.lang.String = js.native
-  def character(opts: Options): java.lang.String = js.native
+  def character(
+    opts: chanceLib.AtLeastOneKey[
+      CharacterOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'casing' | 'pool' | 'alpha' | 'numeric' | 'symbols' ]: std.Pick<chance.Chance.CharacterOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def city(): java.lang.String = js.native
   // Miscellaneous
   def coin(): java.lang.String = js.native
@@ -265,7 +272,7 @@ trait Chance extends Seeded {
     opts: chanceLib.AtLeastOneKey[
       StringOptions, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in 'length' | 'pool' ]: std.Pick<chance.Chance.StringOptions, K>}
+  {[ K in keyof chance.Chance.StringOptions ]: std.Pick<chance.Chance.StringOptions, K>}
     */ chanceLib.chanceLibStrings.Chance with js.Any
     ]
   ): java.lang.String = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixelmatch
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 The smallest and fastest pixel-level image comparison library.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for pixelmatch 4.0
+// Type definitions for pixelmatch 5.0
 // Project: https://github.com/mapbox/pixelmatch#readme
 // Definitions by: Oleg Repin <https://github.com/iamolegga>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

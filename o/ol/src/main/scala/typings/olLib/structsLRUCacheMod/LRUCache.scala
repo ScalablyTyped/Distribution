@@ -12,22 +12,10 @@ trait LRUCache[T]
   def clear(): scala.Unit = js.native
   def containsKey(key: java.lang.String): scala.Boolean = js.native
   def forEach[S](
-    f: js.ThisFunction3[
-      /* this */ S, 
-      /* p1 */ js.Any, 
-      /* p2 */ java.lang.String, 
-      /* p3 */ LRUCache[_], 
-      scala.Unit
-    ]
+    f: js.ThisFunction3[/* this */ S, /* p0 */ T, /* p1 */ java.lang.String, /* p2 */ LRUCache[T], scala.Unit]
   ): scala.Unit = js.native
   def forEach[S](
-    f: js.ThisFunction3[
-      /* this */ S, 
-      /* p1 */ js.Any, 
-      /* p2 */ java.lang.String, 
-      /* p3 */ LRUCache[_], 
-      scala.Unit
-    ],
+    f: js.ThisFunction3[/* this */ S, /* p0 */ T, /* p1 */ java.lang.String, /* p2 */ LRUCache[T], scala.Unit],
     opt_this: S
   ): scala.Unit = js.native
   def get(key: java.lang.String): T = js.native

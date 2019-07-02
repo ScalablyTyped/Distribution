@@ -27,7 +27,7 @@ class Map () extends MVCObject {
   def getDiv(): stdLib.Element = js.native
   def getHeading(): scala.Double = js.native
   def getMapTypeId(): MapTypeId | java.lang.String = js.native
-  def getProjection(): Projection = js.native
+  def getProjection(): Projection | scala.Null = js.native
   def getStreetView(): StreetViewPanorama = js.native
   def getTilt(): scala.Double = js.native
   def getZoom(): scala.Double = js.native

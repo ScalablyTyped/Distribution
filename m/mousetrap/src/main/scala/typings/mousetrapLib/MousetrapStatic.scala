@@ -14,21 +14,21 @@ trait MousetrapStatic
   def bind(
     keys: java.lang.String,
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _]
-  ): scala.Unit = js.native
+  ): MousetrapInstance = js.native
   def bind(
     keys: java.lang.String,
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _],
     action: java.lang.String
-  ): scala.Unit = js.native
+  ): MousetrapInstance = js.native
   def bind(
     keys: js.Array[java.lang.String],
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _]
-  ): scala.Unit = js.native
+  ): MousetrapInstance = js.native
   def bind(
     keys: js.Array[java.lang.String],
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _],
     action: java.lang.String
-  ): scala.Unit = js.native
+  ): MousetrapInstance = js.native
   /** https://craig.is/killing/mice#extensions.global */
   def bindGlobal(
     keyArray: java.lang.String,
@@ -48,13 +48,13 @@ trait MousetrapStatic
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _],
     action: java.lang.String
   ): scala.Unit = js.native
-  def reset(): scala.Unit = js.native
+  def reset(): MousetrapInstance = js.native
   def stopCallback(e: ExtendedKeyboardEvent, element: stdLib.Element, combo: java.lang.String): scala.Boolean = js.native
-  def trigger(keys: java.lang.String): scala.Unit = js.native
-  def trigger(keys: java.lang.String, action: java.lang.String): scala.Unit = js.native
-  def unbind(keys: java.lang.String): scala.Unit = js.native
-  def unbind(keys: java.lang.String, action: java.lang.String): scala.Unit = js.native
-  def unbind(keys: js.Array[java.lang.String]): scala.Unit = js.native
-  def unbind(keys: js.Array[java.lang.String], action: java.lang.String): scala.Unit = js.native
+  def trigger(keys: java.lang.String): MousetrapInstance = js.native
+  def trigger(keys: java.lang.String, action: java.lang.String): MousetrapInstance = js.native
+  def unbind(keys: java.lang.String): MousetrapInstance = js.native
+  def unbind(keys: java.lang.String, action: java.lang.String): MousetrapInstance = js.native
+  def unbind(keys: js.Array[java.lang.String]): MousetrapInstance = js.native
+  def unbind(keys: js.Array[java.lang.String], action: java.lang.String): MousetrapInstance = js.native
 }
 

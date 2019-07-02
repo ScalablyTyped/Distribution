@@ -15,7 +15,7 @@ package object formatGeoJSONMod {
   type GeoJSONMultiLineString = geojsonLib.geojsonMod.MultiLineString
   type GeoJSONMultiPoint = geojsonLib.geojsonMod.MultiPoint
   type GeoJSONMultiPolygon = geojsonLib.geojsonMod.MultiPolygon
-  type GeoJSONObject = GeoJSON
+  type GeoJSONObject = geojsonLib.geojsonMod.GeoJSON
   type GeoJSONPoint = geojsonLib.geojsonMod.Point
   type GeoJSONPolygon = geojsonLib.geojsonMod.Polygon
 }

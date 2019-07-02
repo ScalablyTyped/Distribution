@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SavingMessageDescriptorBase extends MessageDescriptorBase {
+trait SavingMessageDescriptorBase extends js.Object {
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var confirmationText: js.UndefOr[java.lang.String] = js.undefined
   var confirmationTime: js.UndefOr[scala.Double] = js.undefined
+  var hideOnViewChanged: js.UndefOr[scala.Boolean] = js.undefined
+  var messageKey: js.UndefOr[js.Object | java.lang.String] = js.undefined
+  var persistent: js.UndefOr[scala.Boolean] = js.undefined
+  var priority: js.UndefOr[scala.Double] = js.undefined
   var showConfirmation: js.UndefOr[scala.Boolean] = js.undefined
+  var time: js.UndefOr[scala.Double] = js.undefined
 }
 
 object SavingMessageDescriptorBase {

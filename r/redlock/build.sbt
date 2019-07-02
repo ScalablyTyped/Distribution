@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redlock"
-version := "3.0-dt-20190524Z-273dfb"
+version := "3.0-dt-20190701Z-3a1926"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,7 +14,7 @@ trait WebGLReplay
   var maxExtent: olLib.extentMod.Extent = js.native
   var origin: olLib.coordinateMod.Coordinate = js.native
   var startIndices: js.Array[scala.Double] = js.native
-  var startIndicesFeature: js.Array[_] = js.native
+  var startIndicesFeature: js.Array[olLib.featureMod.default | olLib.renderFeatureMod.default] = js.native
   var tolerance: scala.Double = js.native
   var vertices: js.Array[scala.Double] = js.native
   var verticesBuffer: olLib.webglBufferMod.default = js.native

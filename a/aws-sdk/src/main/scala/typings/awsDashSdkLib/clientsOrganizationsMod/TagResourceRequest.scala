@@ -11,7 +11,7 @@ trait TagResourceRequest extends js.Object {
     */
   var ResourceId: TaggableResourceId
   /**
-    * The tag to add to the specified resource.
+    * The tag to add to the specified resource. Specifying the tag key is required. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
     */
   var Tags: awsDashSdkLib.clientsOrganizationsMod.Tags
 }

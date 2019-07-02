@@ -25,7 +25,7 @@ trait WebGLTextureReplay
   var width: scala.Double = js.native
   /* protected */ def createTextures(
     textures: js.Array[stdLib.WebGLTexture],
-    images: js.Array[_],
+    images: js.Array[stdLib.HTMLCanvasElement | stdLib.HTMLImageElement | stdLib.HTMLVideoElement],
     texturePerImage: org.scalablytyped.runtime.StringDictionary[stdLib.WebGLTexture],
     gl: stdLib.WebGLRenderingContext
   ): scala.Unit = js.native

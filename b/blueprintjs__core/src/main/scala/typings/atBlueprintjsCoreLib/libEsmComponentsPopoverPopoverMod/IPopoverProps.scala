@@ -15,6 +15,12 @@ trait IPopoverProps
     */
   var content: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   /**
+    * Whether the wrapper and target should take up the full width of their container.
+    * Note that supplying `true` for this prop will force  `targetTagName="div"` and
+    * `wrapperTagName="div"`.
+    */
+  var fill: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Enables an invisible overlay beneath the popover that captures clicks and
     * prevents interaction with the rest of the document until the popover is
     * closed. This prop is only available when `interactionKind` is
@@ -59,6 +65,7 @@ object IPopoverProps {
     defaultIsOpen: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
     hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     hoverCloseDelay: scala.Int | scala.Double = null,
     hoverOpenDelay: scala.Int | scala.Double = null,
@@ -99,6 +106,7 @@ object IPopoverProps {
     if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
     if (hoverCloseDelay != null) __obj.updateDynamic("hoverCloseDelay")(hoverCloseDelay.asInstanceOf[js.Any])
     if (hoverOpenDelay != null) __obj.updateDynamic("hoverOpenDelay")(hoverOpenDelay.asInstanceOf[js.Any])

@@ -11,6 +11,10 @@ trait ModifySpotFleetRequestRequest extends js.Object {
     */
   var ExcessCapacityTerminationPolicy: js.UndefOr[ExcessCapacityTerminationPolicy] = js.undefined
   /**
+    * The number of On-Demand Instances in the fleet.
+    */
+  var OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined
+  /**
     * The ID of the Spot Fleet request.
     */
   var SpotFleetRequestId: String
@@ -25,10 +29,12 @@ object ModifySpotFleetRequestRequest {
   def apply(
     SpotFleetRequestId: String,
     ExcessCapacityTerminationPolicy: ExcessCapacityTerminationPolicy = null,
+    OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
     TargetCapacity: js.UndefOr[Integer] = js.undefined
   ): ModifySpotFleetRequestRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId)
     if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity)
     if (!js.isUndefined(TargetCapacity)) __obj.updateDynamic("TargetCapacity")(TargetCapacity)
     __obj.asInstanceOf[ModifySpotFleetRequestRequest]
   }

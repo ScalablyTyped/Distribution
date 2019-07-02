@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ModifyDBClusterMessage extends js.Object {
   /**
+    * A value that indicates whether major version upgrades are allowed. Constraints: You must allow major version upgrades when specifying a value for the EngineVersion parameter that is a different major version than the DB cluster's current version.
+    */
+  var AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+  /**
     * A value that indicates whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is disabled, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values. If the ApplyImmediately parameter is disabled, then changes to the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. By default, this parameter is disabled.
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
@@ -27,13 +31,17 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The DB cluster identifier for the cluster being modified. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
+    * The DB cluster identifier for the cluster being modified. This parameter is not case-sensitive. Constraints: This identifier must match the identifier of an existing DB cluster.
     */
   var DBClusterIdentifier: String
   /**
     * The name of the DB cluster parameter group to use for the DB cluster.
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
+  /**
+    * The name of the DB parameter group to apply to all instances of the DB cluster.   When you apply a parameter group using the DBInstanceParameterGroupName parameter, the DB cluster isn't rebooted automatically. Also, parameter changes aren't applied during the next maintenance window but instead are applied immediately.  Default: The existing name setting Constraints:   The DB parameter group must be in the same DB parameter group family as this DB cluster.   The DBInstanceParameterGroupName parameter is only valid in combination with the AllowMajorVersionUpgrade parameter.  
+    */
+  var DBInstanceParameterGroupName: js.UndefOr[String] = js.undefined
   /**
     * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. 
     */
@@ -88,12 +96,14 @@ object ModifyDBClusterMessage {
   @scala.inline
   def apply(
     DBClusterIdentifier: String,
+    AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
     BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
     BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
     CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
     DBClusterParameterGroupName: String = null,
+    DBInstanceParameterGroupName: String = null,
     DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
@@ -108,12 +118,14 @@ object ModifyDBClusterMessage {
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): ModifyDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier)
+    if (!js.isUndefined(AllowMajorVersionUpgrade)) __obj.updateDynamic("AllowMajorVersionUpgrade")(AllowMajorVersionUpgrade)
     if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately)
     if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow)
     if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod)
     if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
     if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
+    if (DBInstanceParameterGroupName != null) __obj.updateDynamic("DBInstanceParameterGroupName")(DBInstanceParameterGroupName)
     if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (!js.isUndefined(EnableHttpEndpoint)) __obj.updateDynamic("EnableHttpEndpoint")(EnableHttpEndpoint)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)

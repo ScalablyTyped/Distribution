@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-webpack"
-version := "5.0-dt-20180605Z-3e6a31"
+version := "5.0-dt-20180605Z-f2d92f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-cb6937",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-e7cc40",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-9b0098",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-62e70e",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190701Z-d47d77",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-97aa3d",
   "org.scalablytyped" %%% "loglevel" % "1.6.3-123167",
   "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20190322Z-d81a9c",

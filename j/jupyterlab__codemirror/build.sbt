@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codemirror"
-version := "0.19.1-559162"
+version := "0.19.1-d8b8c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20190624Z-38c7ab",
+  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20190701Z-321851",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-83b406",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "2.2.1-1df345",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-6b8368",

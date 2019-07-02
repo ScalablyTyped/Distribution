@@ -860,6 +860,52 @@ trait DocDB
     ]
   ): awsDashSdkLib.libRequestMod.Request[RestoreDBClusterToPointInTimeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Restarts the stopped cluster that is specified by DBClusterIdentifier. For more information, see Stopping and Starting an Amazon DocumentDB Cluster.
+    */
+  def startDBCluster(): awsDashSdkLib.libRequestMod.Request[StartDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startDBCluster(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartDBClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Restarts the stopped cluster that is specified by DBClusterIdentifier. For more information, see Stopping and Starting an Amazon DocumentDB Cluster.
+    */
+  def startDBCluster(params: StartDBClusterMessage): awsDashSdkLib.libRequestMod.Request[StartDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startDBCluster(
+    params: StartDBClusterMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartDBClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Stops the running cluster that is specified by DBClusterIdentifier. The cluster must be in the available state. For more information, see Stopping and Starting an Amazon DocumentDB Cluster.
+    */
+  def stopDBCluster(): awsDashSdkLib.libRequestMod.Request[StopDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def stopDBCluster(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StopDBClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StopDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Stops the running cluster that is specified by DBClusterIdentifier. The cluster must be in the available state. For more information, see Stopping and Starting an Amazon DocumentDB Cluster.
+    */
+  def stopDBCluster(params: StopDBClusterMessage): awsDashSdkLib.libRequestMod.Request[StopDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def stopDBCluster(
+    params: StopDBClusterMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StopDBClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StopDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Waits for the dBInstanceAvailable state by periodically calling the underlying DocDB.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */
   @JSName("waitFor")

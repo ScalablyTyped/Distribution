@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("eventsource/lib/eventsource-polyfill", JSImport.Namespace)
 @js.native
-class ^ protected () extends EventSource {
+class ^ protected ()
+  extends eventsourceLib.eventsourceMod.^ {
   def this(url: java.lang.String) = this()
-  def this(url: java.lang.String, eventSourceInitDict: EventSourceInitDict) = this()
+  def this(url: java.lang.String, eventSourceInitDict: eventsourceLib.eventsourceMod.EventSourceInitDict) = this()
 }
 
 @JSImport("eventsource/lib/eventsource-polyfill", JSImport.Namespace)

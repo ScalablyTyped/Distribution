@@ -13,6 +13,7 @@ trait ContainerInfo extends js.Object {
   var Image: java.lang.String
   var ImageID: java.lang.String
   var Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var Mounts: js.Array[dockerodeLib.Anon_Destination]
   var Names: js.Array[java.lang.String]
   var NetworkSettings: dockerodeLib.Anon_NetworkType
   var Ports: js.Array[Port]
@@ -30,13 +31,14 @@ object ContainerInfo {
     Image: java.lang.String,
     ImageID: java.lang.String,
     Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    Mounts: js.Array[dockerodeLib.Anon_Destination],
     Names: js.Array[java.lang.String],
     NetworkSettings: dockerodeLib.Anon_NetworkType,
     Ports: js.Array[Port],
     State: java.lang.String,
     Status: java.lang.String
   ): ContainerInfo = {
-    val __obj = js.Dynamic.literal(Command = Command, Created = Created, HostConfig = HostConfig, Id = Id, Image = Image, ImageID = ImageID, Labels = Labels, Names = Names, NetworkSettings = NetworkSettings, Ports = Ports, State = State, Status = Status)
+    val __obj = js.Dynamic.literal(Command = Command, Created = Created, HostConfig = HostConfig, Id = Id, Image = Image, ImageID = ImageID, Labels = Labels, Mounts = Mounts, Names = Names, NetworkSettings = NetworkSettings, Ports = Ports, State = State, Status = Status)
   
     __obj.asInstanceOf[ContainerInfo]
   }

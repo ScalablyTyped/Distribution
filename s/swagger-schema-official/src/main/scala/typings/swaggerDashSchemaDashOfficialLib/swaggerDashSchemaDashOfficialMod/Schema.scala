@@ -25,10 +25,10 @@ object Schema {
     $ref: java.lang.String = null,
     additionalProperties: Schema = null,
     allOf: js.Array[Schema] = null,
-    default: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
+    default: js.Any = null,
     description: java.lang.String = null,
     discriminator: java.lang.String = null,
-    enum: js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object] = null,
+    enum: js.Array[_] = null,
     example: js.Any = null,
     exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined,
     exclusiveMinimum: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,7 +49,7 @@ object Schema {
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.Array[java.lang.String] = null,
     title: java.lang.String = null,
-    `type`: java.lang.String = null,
+    `type`: ParameterType = null,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined,
     xml: XML = null
   ): Schema = {
@@ -57,7 +57,7 @@ object Schema {
     if ($ref != null) __obj.updateDynamic("$ref")($ref)
     if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
     if (allOf != null) __obj.updateDynamic("allOf")(allOf)
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default)
     if (description != null) __obj.updateDynamic("description")(description)
     if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator)
     if (enum != null) __obj.updateDynamic("enum")(enum)

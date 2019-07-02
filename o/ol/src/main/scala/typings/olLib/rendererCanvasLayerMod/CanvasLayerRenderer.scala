@@ -31,8 +31,8 @@ trait CanvasLayerRenderer
     hitTolerance: scala.Double,
     callback: js.ThisFunction2[
       /* this */ S, 
-      /* p1 */ olLib.layerLayerMod.default, 
-      /* p2 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
+      /* p0 */ olLib.layerLayerMod.default, 
+      /* p1 */ stdLib.Uint8ClampedArray | stdLib.Uint8Array, 
       T
     ],
     thisArg: S

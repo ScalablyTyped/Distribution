@@ -40,16 +40,13 @@ object inboxsdkLibStrings {
     extends inboxsdkLib.inboxsdkMod.ToolbarsNs.SectionNames
   
   @js.native
-  sealed trait LINK extends js.Object
+  sealed trait LINK
+    extends inboxsdkLib.inboxsdkMod.NavMenuNs.NavItemTypes
   
   @js.native
   sealed trait LIST
     extends inboxsdkLib.inboxsdkMod.RouterNs.RouteTypes
        with inboxsdkLib.inboxsdkMod.ToolbarsNs.ToolbarButtonPosition
-  
-  @js.native
-  sealed trait MANAGE
-    extends inboxsdkLib.inboxsdkMod.NavMenuNs.NavItemTypes
   
   @js.native
   sealed trait METADATA_STATE
@@ -168,6 +165,9 @@ object inboxsdkLibStrings {
   sealed trait recipientsChanged extends js.Object
   
   @js.native
+  sealed trait responseTypeChanged extends js.Object
+  
+  @js.native
   sealed trait restore extends js.Object
   
   @js.native
@@ -219,8 +219,6 @@ object inboxsdkLibStrings {
   def LINK: LINK = "LINK".asInstanceOf[LINK]
   @scala.inline
   def LIST: LIST = "LIST".asInstanceOf[LIST]
-  @scala.inline
-  def MANAGE: MANAGE = "MANAGE".asInstanceOf[MANAGE]
   @scala.inline
   def METADATA_STATE: METADATA_STATE = "METADATA_STATE".asInstanceOf[METADATA_STATE]
   @scala.inline
@@ -293,6 +291,8 @@ object inboxsdkLibStrings {
   def recipient: recipient = "recipient".asInstanceOf[recipient]
   @scala.inline
   def recipientsChanged: recipientsChanged = "recipientsChanged".asInstanceOf[recipientsChanged]
+  @scala.inline
+  def responseTypeChanged: responseTypeChanged = "responseTypeChanged".asInstanceOf[responseTypeChanged]
   @scala.inline
   def restore: restore = "restore".asInstanceOf[restore]
   @scala.inline

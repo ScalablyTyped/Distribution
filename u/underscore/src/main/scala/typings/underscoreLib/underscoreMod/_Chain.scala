@@ -510,8 +510,8 @@ trait _Chain[T, V] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.map
     **/
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult, TResult] = js.native
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult, TResult] = js.native
+  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult, js.Array[TResult]] = js.native
+  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult, js.Array[TResult]] = js.native
   /**
     * Wrapped type `object`.
     * @see _.mapObject

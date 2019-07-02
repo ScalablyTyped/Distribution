@@ -15,6 +15,7 @@ object MessageDescriptorText {
   @scala.inline
   def apply(
     text: java.lang.String,
+    buttons: js.Array[MessageButtonDescriptor] = null,
     className: java.lang.String = null,
     hideOnViewChanged: js.UndefOr[scala.Boolean] = js.undefined,
     messageKey: js.Object | java.lang.String = null,
@@ -23,6 +24,7 @@ object MessageDescriptorText {
     time: scala.Int | scala.Double = null
   ): MessageDescriptorText = {
     val __obj = js.Dynamic.literal(text = text)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged)
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])

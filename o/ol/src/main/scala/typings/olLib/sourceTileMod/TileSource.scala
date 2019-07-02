@@ -21,7 +21,7 @@ trait TileSource
     projection: olLib.projProjectionMod.default,
     z: scala.Double,
     tileRange: olLib.tileRangeMod.default,
-    callback: js.Function1[/* p0 */ olLib.tileMod.default, scala.Boolean | scala.Unit]
+    callback: js.Function1[/* p0 */ olLib.tileMod.default, scala.Boolean]
   ): scala.Boolean = js.native
   def getGutterForProjection(projection: olLib.projProjectionMod.default): scala.Double = js.native
   /* protected */ def getKey(): java.lang.String = js.native

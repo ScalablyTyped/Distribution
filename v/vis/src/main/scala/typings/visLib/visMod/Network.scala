@@ -151,6 +151,15 @@ class Network protected () extends js.Object {
     */
   def getBaseEdge(clusteredEdgeId: IdType): IdType = js.native
   /**
+    * For the given clusteredEdgeId, this method will return all the original
+    * base edge id's provided in data.edges.
+    * For a non-clustered (i.e. 'base') edge, clusteredEdgeId is returned.
+    * Only the base edge id's are returned.
+    * All clustered edges id's under clusteredEdgeId are skipped,
+    * but scanned recursively to return their base id's.
+    */
+  def getBaseEdges(clusteredEdgeId: IdType): js.Array[IdType] = js.native
+  /**
     * Returns a bounding box for the node including label.
     *
     */

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait Header extends BaseSchema {
   @JSName("type")
-  var type_Header: java.lang.String
+  var type_Header: ParameterType
 }
 
 object Header {
   @scala.inline
   def apply(
-    `type`: java.lang.String,
-    default: java.lang.String | scala.Boolean | scala.Double | js.Object = null,
+    `type`: ParameterType,
+    default: js.Any = null,
     description: java.lang.String = null,
-    enum: js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object] = null,
+    enum: js.Array[_] = null,
     exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined,
     exclusiveMinimum: js.UndefOr[scala.Boolean] = js.undefined,
     format: java.lang.String = null,
@@ -36,7 +36,7 @@ object Header {
   ): Header = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default)
     if (description != null) __obj.updateDynamic("description")(description)
     if (enum != null) __obj.updateDynamic("enum")(enum)
     if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum)

@@ -16,7 +16,10 @@ object arrayMod extends js.Object {
   def equals(arr1: stdLib.Uint8ClampedArray, arr2: stdLib.Uint8ClampedArray): scala.Boolean = js.native
   def extend[VALUE](arr: js.Array[VALUE], data: VALUE): scala.Unit = js.native
   def extend[VALUE](arr: js.Array[VALUE], data: js.Array[VALUE]): scala.Unit = js.native
-  def find[VALUE](arr: js.Array[VALUE], func: js.Function0[scala.Unit]): VALUE = js.native
+  def find[VALUE](
+    arr: js.Array[VALUE],
+    func: js.Function3[/* p0 */ VALUE, /* p1 */ scala.Double, /* p2 */ js.Any, scala.Boolean]
+  ): VALUE = js.native
   def findIndex(arr: js.Array[_], func: js.Function0[scala.Unit]): scala.Double = js.native
   def includes(arr: js.Array[_], obj: js.Any): scala.Boolean = js.native
   def isSorted(arr: js.Array[_]): scala.Boolean = js.native

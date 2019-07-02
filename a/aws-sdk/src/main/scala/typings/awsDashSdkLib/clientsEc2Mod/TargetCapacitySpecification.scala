@@ -11,11 +11,11 @@ trait TargetCapacitySpecification extends js.Object {
     */
   var DefaultTargetCapacityType: js.UndefOr[DefaultTargetCapacityType] = js.undefined
   /**
-    * The number of On-Demand units to request.
+    * The number of On-Demand units to request. If you specify a target capacity for Spot units, you cannot specify a target capacity for On-Demand units.
     */
   var OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined
   /**
-    * The maximum number of Spot units to launch.
+    * The maximum number of Spot units to launch. If you specify a target capacity for On-Demand units, you cannot specify a target capacity for Spot units.
     */
   var SpotTargetCapacity: js.UndefOr[Integer] = js.undefined
   /**

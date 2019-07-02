@@ -6,10 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * The InternetHeaders object represents properties that are preserved after the message item leaves Exchange and is converted to a MIME message. 
-  * These properties are stored as x-headers in the MIME message.
+  * The InternetHeaders object represents custom internet headers that are preserved after the message item leaves Exchange and is converted to a MIME message. 
+  * These headers are stored as x-headers in the MIME message.
   * 
   * InternetHeaders are stored as key/value pairs on a per-item basis.
+  * 
+  * **Note**: This object is intended for you to set and get your custom headers on a message item.
   *
   * [Api set: Mailbox Preview]
   *
@@ -25,7 +27,9 @@ import scala.scalajs.js.annotation._
 trait InternetHeaders extends js.Object {
   /**
     * Given an array of internet header names, this method returns a dictionary containing those internet headers and their values. 
-    * If the add-in requests an x-header that is not available, that x-header will not be returned in the results. 
+    * If the add-in requests an x-header that is not available, that x-header will not be returned in the results.
+    * 
+    * **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
     *
     * [Api set: Mailbox Preview]
     *
@@ -56,6 +60,8 @@ trait InternetHeaders extends js.Object {
   ): scala.Unit = js.native
   /**
     * Given an array of internet header names, this method removes the specified headers from the internet header collection.
+    * 
+    * **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
     *
     * [Api set: Mailbox Preview]
     *
@@ -87,8 +93,10 @@ trait InternetHeaders extends js.Object {
   /**
     * Sets the specified internet headers to the specified values.
     * 
-    * The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing value is replaced with 
+    * The setAsync method creates a new header if the specified header doesn't already exist; otherwise, the existing value is replaced with 
     * the new value.
+    *
+    * **Note**: This method is intended to set the values of your custom headers.
     *
     * [Api set: Mailbox Preview]
     *

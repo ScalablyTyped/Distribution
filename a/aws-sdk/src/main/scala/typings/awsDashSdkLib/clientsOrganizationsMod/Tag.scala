@@ -9,19 +9,18 @@ trait Tag extends js.Object {
   /**
     * The key identifier, or name, of the tag.
     */
-  var Key: js.UndefOr[TagKey] = js.undefined
+  var Key: TagKey
   /**
-    * The string value that's associated with the key of the tag.
+    * The string value that's associated with the key of the tag. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
     */
-  var Value: js.UndefOr[TagValue] = js.undefined
+  var Value: TagValue
 }
 
 object Tag {
   @scala.inline
-  def apply(Key: TagKey = null, Value: TagValue = null): Tag = {
-    val __obj = js.Dynamic.literal()
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+  def apply(Key: TagKey, Value: TagValue): Tag = {
+    val __obj = js.Dynamic.literal(Key = Key, Value = Value)
+  
     __obj.asInstanceOf[Tag]
   }
 }

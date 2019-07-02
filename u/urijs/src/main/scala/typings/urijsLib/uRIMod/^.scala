@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ^ ()
   extends urijsLib.uriNs.URI {
   def this(value: java.lang.String) = this()
-  def this(value: stdLib.HTMLElement) = this()
+  def this(value: urijsLib.HTMLElement) = this()
   def this(value: urijsLib.uriNs.URIOptions) = this()
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixelmatch"
-version := "4.0-dt-20180214Z-daf6ca"
+version := "5.0-dt-20190701Z-54141e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

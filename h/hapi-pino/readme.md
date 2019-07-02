@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi-pino
 
-Typings are for version 5.2
+Typings are for version 6.0
 
 ## Library description:
 Hapi plugin for the Pino logger
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for hapi-pino 5.2
+// Type definitions for hapi-pino 6.0
 // Project: https://github.com/pinojs/hapi-pino#readme
 // Definitions by: Rodrigo Saboya <https://github.com/saboya>
+//                 Todd Bealmear <https://github.com/todd>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

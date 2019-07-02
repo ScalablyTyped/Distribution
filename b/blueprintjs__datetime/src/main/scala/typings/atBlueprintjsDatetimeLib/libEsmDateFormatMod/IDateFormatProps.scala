@@ -13,7 +13,7 @@ trait IDateFormatProps extends js.Object {
     */
   var invalidDateMessage: js.UndefOr[java.lang.String] = js.native
   /**
-    * The locale name, which is passed to `formatDate`, `parseDate` and the functions in `localeUtils`.
+    * The locale name, which is passed to `formatDate`, `parseDate`, and the functions in `localeUtils`.
     */
   var locale: js.UndefOr[java.lang.String] = js.native
   /**

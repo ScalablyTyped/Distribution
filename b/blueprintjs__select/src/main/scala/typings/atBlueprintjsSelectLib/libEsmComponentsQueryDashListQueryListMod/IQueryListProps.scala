@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 trait IQueryListProps[T]
   extends atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.IListItemsProps[T] {
   /**
+    * Whether the list is disabled.
+    * @default false
+    */
+  var disabled: js.UndefOr[scala.Boolean] = js.native
+  /**
     * Callback invoked when user presses a key, after processing `QueryList`'s own key events
     * (up/down to navigate active item). This callback is passed to `renderer` and (along with
     * `onKeyUp`) can be attached to arbitrary content elements to support keyboard selection.

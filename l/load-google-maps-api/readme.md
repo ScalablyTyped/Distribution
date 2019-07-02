@@ -1,7 +1,7 @@
 
 # Scala.js typings for load-google-maps-api
 
-Typings are for version 1.3
+Typings are for version 2.0
 
 ## Library description:
 A thin, Promise-returning helper for loading the Google Maps JavaScript API.
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for load-google-maps-api 1.3
+// Type definitions for load-google-maps-api 2.0
 // Project: https://github.com/yuanqing/load-google-maps-api#readme
 // Definitions by: Oscar Busk <https://github.com/oBusk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 
 ```
 

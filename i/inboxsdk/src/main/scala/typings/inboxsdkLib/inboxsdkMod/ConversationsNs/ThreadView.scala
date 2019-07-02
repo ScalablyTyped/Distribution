@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ThreadView extends js.Object {
   var destroyed: scala.Boolean = js.native
+  def addLabel(): inboxsdkLib.inboxsdkMod.CommonNs.SimpleElementView = js.native
   def addNoticeBar(): inboxsdkLib.inboxsdkMod.CommonNs.SimpleElementView = js.native
   def addSidebarContentPanel(contentPanelDescriptor: ContentPanelDescriptor): ContentPanelView = js.native
   def getMessageViews(): js.Array[MessageView] = js.native

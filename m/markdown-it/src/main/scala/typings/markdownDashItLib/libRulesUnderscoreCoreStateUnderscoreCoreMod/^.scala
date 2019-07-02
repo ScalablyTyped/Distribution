@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("markdown-it/lib/rules_core/state_core", JSImport.Namespace)
 @js.native
-class ^ () extends StateCore {
+class ^ protected () extends StateCore {
+  def this(src: java.lang.String, md: markdownDashItLib.libMod.MarkdownIt, env: js.Any) = this()
   /* CompleteClass */
   override var env: js.Any = js.native
   /* CompleteClass */

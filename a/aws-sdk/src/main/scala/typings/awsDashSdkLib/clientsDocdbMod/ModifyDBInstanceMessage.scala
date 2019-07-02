@@ -15,7 +15,7 @@ trait ModifyDBInstanceMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The new compute and memory capacity of the DB instance; for example, db.m4.large. Not all DB instance classes are available in all AWS Regions.  If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is specified as true for this request.  Default: Uses existing setting.
+    * The new compute and memory capacity of the DB instance; for example, db.r5.large. Not all DB instance classes are available in all AWS Regions.  If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is specified as true for this request.  Default: Uses existing setting.
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
   /**

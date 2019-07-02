@@ -23,8 +23,8 @@ trait Schema[T] extends js.Object {
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
+  def oneOf(arrayOfValues: js.Array[T | Ref]): this.type = js.native
+  def oneOf(arrayOfValues: js.Array[T | Ref], message: TestOptionsMessage): this.type = js.native
   def strict(isStrict: scala.Boolean): this.type = js.native
   def strip(strip: scala.Boolean): this.type = js.native
   def test(

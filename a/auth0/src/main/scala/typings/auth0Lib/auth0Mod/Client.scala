@@ -46,13 +46,17 @@ trait Client extends js.Object {
     * Free text description of the purpose of the Client. (Max character length: `140`).
     */
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var encryption_key: js.UndefOr[js.Any] = js.undefined
+  var encryption_key: js.UndefOr[auth0Lib.Anon_Cert] = js.undefined
   var form_template: js.UndefOr[java.lang.String] = js.undefined
+  /** 
+    * A set of grant types that the client is authorized to use
+    */
+  var grant_types: js.UndefOr[js.Array[Grant]] = js.undefined
   /**
     * Whether this client a first party client or not.
     */
   var is_first_party: js.UndefOr[scala.Boolean] = js.undefined
-  var jwt_configuration: js.UndefOr[js.Any] = js.undefined
+  var jwt_configuration: js.UndefOr[auth0Lib.Anon_Alg] = js.undefined
   /**
     * The URL of the client logo (recommended size: 150x150).
     */
@@ -101,10 +105,11 @@ object Client {
     custom_login_page_on: js.UndefOr[scala.Boolean] = js.undefined,
     custom_login_page_preview: java.lang.String = null,
     description: java.lang.String = null,
-    encryption_key: js.Any = null,
+    encryption_key: auth0Lib.Anon_Cert = null,
     form_template: java.lang.String = null,
+    grant_types: js.Array[Grant] = null,
     is_first_party: js.UndefOr[scala.Boolean] = js.undefined,
-    jwt_configuration: js.Any = null,
+    jwt_configuration: auth0Lib.Anon_Alg = null,
     logo_uri: java.lang.String = null,
     mobile: js.Any = null,
     name: java.lang.String = null,
@@ -134,6 +139,7 @@ object Client {
     if (description != null) __obj.updateDynamic("description")(description)
     if (encryption_key != null) __obj.updateDynamic("encryption_key")(encryption_key)
     if (form_template != null) __obj.updateDynamic("form_template")(form_template)
+    if (grant_types != null) __obj.updateDynamic("grant_types")(grant_types)
     if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party)
     if (jwt_configuration != null) __obj.updateDynamic("jwt_configuration")(jwt_configuration)
     if (logo_uri != null) __obj.updateDynamic("logo_uri")(logo_uri)

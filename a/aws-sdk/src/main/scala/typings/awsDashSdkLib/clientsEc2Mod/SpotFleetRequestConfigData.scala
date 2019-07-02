@@ -55,6 +55,10 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var OnDemandFulfilledCapacity: js.UndefOr[Double] = js.undefined
   /**
+    * The maximum amount per hour for On-Demand Instances that you're willing to pay. You can use the onDemandMaxTotalPrice parameter, the spotMaxTotalPrice parameter, or both parameters to ensure that your fleet cost does not exceed your budget. If you set a maximum price per hour for the On-Demand Instances and Spot Instances in your request, Spot Fleet will launch instances until it reaches the maximum amount you're willing to pay. When the maximum amount you're willing to pay is reached, the fleet stops launching instances even if it hasn’t met the target capacity.
+    */
+  var OnDemandMaxTotalPrice: js.UndefOr[String] = js.undefined
+  /**
     * The number of On-Demand units to request. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O. If the request type is maintain, you can specify a target capacity of 0 and add capacity later.
     */
   var OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined
@@ -62,6 +66,10 @@ trait SpotFleetRequestConfigData extends js.Object {
     * Indicates whether Spot Fleet should replace unhealthy instances.
     */
   var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The maximum amount per hour for Spot Instances that you're willing to pay. You can use the spotdMaxTotalPrice parameter, the onDemandMaxTotalPrice parameter, or both parameters to ensure that your fleet cost does not exceed your budget. If you set a maximum price per hour for the On-Demand Instances and Spot Instances in your request, Spot Fleet will launch instances until it reaches the maximum amount you're willing to pay. When the maximum amount you're willing to pay is reached, the fleet stops launching instances even if it hasn’t met the target capacity.
+    */
+  var SpotMaxTotalPrice: js.UndefOr[String] = js.undefined
   /**
     * The maximum price per unit hour that you are willing to pay for a Spot Instance. The default is the On-Demand price.
     */
@@ -104,8 +112,10 @@ object SpotFleetRequestConfigData {
     LoadBalancersConfig: LoadBalancersConfig = null,
     OnDemandAllocationStrategy: OnDemandAllocationStrategy = null,
     OnDemandFulfilledCapacity: js.UndefOr[Double] = js.undefined,
+    OnDemandMaxTotalPrice: String = null,
     OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
     ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined,
+    SpotMaxTotalPrice: String = null,
     SpotPrice: String = null,
     TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined,
     Type: FleetType = null,
@@ -124,8 +134,10 @@ object SpotFleetRequestConfigData {
     if (LoadBalancersConfig != null) __obj.updateDynamic("LoadBalancersConfig")(LoadBalancersConfig)
     if (OnDemandAllocationStrategy != null) __obj.updateDynamic("OnDemandAllocationStrategy")(OnDemandAllocationStrategy.asInstanceOf[js.Any])
     if (!js.isUndefined(OnDemandFulfilledCapacity)) __obj.updateDynamic("OnDemandFulfilledCapacity")(OnDemandFulfilledCapacity)
+    if (OnDemandMaxTotalPrice != null) __obj.updateDynamic("OnDemandMaxTotalPrice")(OnDemandMaxTotalPrice)
     if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity)
     if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances)
+    if (SpotMaxTotalPrice != null) __obj.updateDynamic("SpotMaxTotalPrice")(SpotMaxTotalPrice)
     if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice)
     if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

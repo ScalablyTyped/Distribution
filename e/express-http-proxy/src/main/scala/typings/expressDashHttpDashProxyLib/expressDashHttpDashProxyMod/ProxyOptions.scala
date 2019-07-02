@@ -31,6 +31,9 @@ trait ProxyOptions extends js.Object {
       _
     ]
   ] = js.undefined
+  var proxyReqBodyDecorator: js.UndefOr[
+    js.Function2[/* bodyContent */ js.Any, /* srcReq */ expressLib.expressMod.Request, _]
+  ] = js.undefined
   var proxyReqOptDecorator: js.UndefOr[
     js.Function2[
       /* proxyReqOpts */ nodeLib.httpMod.RequestOptions, 
@@ -74,6 +77,7 @@ object ProxyOptions {
     parseReqBody: js.UndefOr[scala.Boolean] = js.undefined,
     preserveHostHdr: js.UndefOr[scala.Boolean] = js.undefined,
     proxyErrorHandler: (/* err */ js.Any, /* res */ expressLib.expressMod.Response, /* next */ expressLib.expressMod.NextFunction) => _ = null,
+    proxyReqBodyDecorator: (/* bodyContent */ js.Any, /* srcReq */ expressLib.expressMod.Request) => _ = null,
     proxyReqOptDecorator: (/* proxyReqOpts */ nodeLib.httpMod.RequestOptions, /* srcReq */ expressLib.expressMod.Request) => nodeLib.httpMod.RequestOptions | js.Promise[nodeLib.httpMod.RequestOptions] = null,
     proxyReqPathResolver: /* req */ expressLib.expressMod.Request => java.lang.String = null,
     reqAsBuffer: js.UndefOr[scala.Boolean] = js.undefined,
@@ -91,6 +95,7 @@ object ProxyOptions {
     if (!js.isUndefined(parseReqBody)) __obj.updateDynamic("parseReqBody")(parseReqBody)
     if (!js.isUndefined(preserveHostHdr)) __obj.updateDynamic("preserveHostHdr")(preserveHostHdr)
     if (proxyErrorHandler != null) __obj.updateDynamic("proxyErrorHandler")(js.Any.fromFunction3(proxyErrorHandler))
+    if (proxyReqBodyDecorator != null) __obj.updateDynamic("proxyReqBodyDecorator")(js.Any.fromFunction2(proxyReqBodyDecorator))
     if (proxyReqOptDecorator != null) __obj.updateDynamic("proxyReqOptDecorator")(js.Any.fromFunction2(proxyReqOptDecorator))
     if (proxyReqPathResolver != null) __obj.updateDynamic("proxyReqPathResolver")(js.Any.fromFunction1(proxyReqPathResolver))
     if (!js.isUndefined(reqAsBuffer)) __obj.updateDynamic("reqAsBuffer")(reqAsBuffer)

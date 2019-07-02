@@ -45,11 +45,11 @@ object luxonLibStrings {
   @js.native
   sealed trait day
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait days
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait deva
@@ -106,11 +106,11 @@ object luxonLibStrings {
   @js.native
   sealed trait hour
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait hours
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait indian
@@ -171,11 +171,11 @@ object luxonLibStrings {
   @js.native
   sealed trait minute
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait minutes
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait mlym
@@ -188,11 +188,11 @@ object luxonLibStrings {
   @js.native
   sealed trait month
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait months
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait mymr
@@ -218,11 +218,11 @@ object luxonLibStrings {
   @js.native
   sealed trait quarter
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait quarters
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait roc
@@ -231,11 +231,11 @@ object luxonLibStrings {
   @js.native
   sealed trait second
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait seconds
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait short
@@ -265,20 +265,20 @@ object luxonLibStrings {
   @js.native
   sealed trait week
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait weeks
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait year
     extends luxonLib.luxonMod.DurationUnit
-       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
   sealed trait years
     extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @scala.inline
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]

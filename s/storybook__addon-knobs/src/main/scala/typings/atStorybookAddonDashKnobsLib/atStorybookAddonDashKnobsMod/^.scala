@@ -34,7 +34,7 @@ object ^ extends js.Object {
   def number(name: java.lang.String, value: scala.Double, options: NumberOptions, groupId: java.lang.String): scala.Double = js.native
   def `object`[T](name: java.lang.String, value: T): T = js.native
   def `object`[T](name: java.lang.String, value: T, groupId: java.lang.String): T = js.native
-  def optionsKnob[T](label: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[T]): T = js.native
+  def optionsKnob[T](label: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[T]): js.Array[T] = js.native
   def optionsKnob[T](label: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[T], defaultValue: T): T = js.native
   def optionsKnob[T](
     label: java.lang.String,
@@ -42,6 +42,19 @@ object ^ extends js.Object {
     defaultValue: T,
     options: OptionsKnobOptions
   ): T = js.native
+  def optionsKnob[T](
+    label: java.lang.String,
+    values: org.scalablytyped.runtime.StringDictionary[T],
+    defaultValue: js.Array[T]
+  ): js.Array[T] = js.native
+  def optionsKnob[T](
+    label: java.lang.String,
+    values: org.scalablytyped.runtime.StringDictionary[T],
+    defaultValue: js.Array[T],
+    options: OptionsKnobOptions
+  ): js.Array[T] = js.native
+  @JSName("optionsKnob")
+  def optionsKnob_TT[T](label: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[T]): T = js.native
   def radios[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T]): T = js.native
   def radios[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): T = js.native
   def radios[T](

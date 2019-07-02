@@ -47,6 +47,10 @@ trait DBCluster extends js.Object {
     */
   var DbClusterResourceId: js.UndefOr[String] = js.undefined
   /**
+    * Specifies whether this cluster can be deleted. If DeletionProtection is enabled, the cluster cannot be deleted unless it is modified and DeletionProtection is disabled. DeletionProtection protects clusters from being accidentally deleted.
+    */
+  var DeletionProtection: js.UndefOr[Boolean] = js.undefined
+  /**
     * The earliest time to which a database can be restored with point-in-time restore.
     */
   var EarliestRestorableTime: js.UndefOr[TStamp] = js.undefined
@@ -133,6 +137,7 @@ object DBCluster {
     DBClusterParameterGroup: String = null,
     DBSubnetGroup: String = null,
     DbClusterResourceId: String = null,
+    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
     EarliestRestorableTime: TStamp = null,
     EnabledCloudwatchLogsExports: LogTypeList = null,
     Endpoint: String = null,
@@ -163,6 +168,7 @@ object DBCluster {
     if (DBClusterParameterGroup != null) __obj.updateDynamic("DBClusterParameterGroup")(DBClusterParameterGroup)
     if (DBSubnetGroup != null) __obj.updateDynamic("DBSubnetGroup")(DBSubnetGroup)
     if (DbClusterResourceId != null) __obj.updateDynamic("DbClusterResourceId")(DbClusterResourceId)
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection)
     if (EarliestRestorableTime != null) __obj.updateDynamic("EarliestRestorableTime")(EarliestRestorableTime)
     if (EnabledCloudwatchLogsExports != null) __obj.updateDynamic("EnabledCloudwatchLogsExports")(EnabledCloudwatchLogsExports)
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint)

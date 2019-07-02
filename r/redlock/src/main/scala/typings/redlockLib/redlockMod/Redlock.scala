@@ -17,6 +17,8 @@ trait Redlock
   var servers: js.Array[CompatibleRedisClient] = js.native
   def acquire(resource: java.lang.String, ttl: scala.Double): bluebirdLib.bluebirdMod.^[Lock] = js.native
   def acquire(resource: java.lang.String, ttl: scala.Double, callback: Callback[Lock]): bluebirdLib.bluebirdMod.^[Lock] = js.native
+  def acquire(resource: js.Array[java.lang.String], ttl: scala.Double): bluebirdLib.bluebirdMod.^[Lock] = js.native
+  def acquire(resource: js.Array[java.lang.String], ttl: scala.Double, callback: Callback[Lock]): bluebirdLib.bluebirdMod.^[Lock] = js.native
   @JSName("addListener")
   def addListener_clientError(
     event: redlockLib.redlockLibStrings.clientError,
@@ -28,6 +30,8 @@ trait Redlock
   def extend(lock: Lock, ttl: scala.Double, callback: Callback[Lock]): bluebirdLib.bluebirdMod.^[Lock] = js.native
   def lock(resource: java.lang.String, ttl: scala.Double): bluebirdLib.bluebirdMod.^[Lock] = js.native
   def lock(resource: java.lang.String, ttl: scala.Double, callback: Callback[Lock]): bluebirdLib.bluebirdMod.^[Lock] = js.native
+  def lock(resource: js.Array[java.lang.String], ttl: scala.Double): bluebirdLib.bluebirdMod.^[Lock] = js.native
+  def lock(resource: js.Array[java.lang.String], ttl: scala.Double, callback: Callback[Lock]): bluebirdLib.bluebirdMod.^[Lock] = js.native
   @JSName("on")
   def on_clientError(
     event: redlockLib.redlockLibStrings.clientError,

@@ -41,7 +41,7 @@ trait Theme extends BaseTheme {
       csstypeLib.csstypeMod.StandardProperties[java.lang.String | styledDashSystemLib.styledDashSystemLibNumbers.`0`]
     ]
   ] = js.undefined
-  var zIndeces: js.UndefOr[ObjectOrArray[csstypeLib.csstypeMod.ZIndexProperty]] = js.undefined
+  var zIndices: js.UndefOr[ObjectOrArray[csstypeLib.csstypeMod.ZIndexProperty]] = js.undefined
 }
 
 object Theme {
@@ -78,7 +78,7 @@ object Theme {
     textStyles: ObjectOrArray[
       csstypeLib.csstypeMod.StandardProperties[java.lang.String | styledDashSystemLib.styledDashSystemLibNumbers.`0`]
     ] = null,
-    zIndeces: ObjectOrArray[csstypeLib.csstypeMod.ZIndexProperty] = null
+    zIndices: ObjectOrArray[csstypeLib.csstypeMod.ZIndexProperty] = null
   ): Theme = {
     val __obj = js.Dynamic.literal()
     if (borderStyles != null) __obj.updateDynamic("borderStyles")(borderStyles.asInstanceOf[js.Any])
@@ -104,7 +104,7 @@ object Theme {
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
-    if (zIndeces != null) __obj.updateDynamic("zIndeces")(zIndeces.asInstanceOf[js.Any])
+    if (zIndices != null) __obj.updateDynamic("zIndices")(zIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
 }

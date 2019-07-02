@@ -2199,6 +2199,7 @@
 | 58 | [email-addresses](./e/email-addresses) | An email address parser based on rfc5322
 | 58 | [eonasdan-bootstrap-dateti](./e/eonasdan-bootstrap-datetimepicker) | A date/time picker component designed to work with
 | 58 | [express-unless](./e/express-unless) | Conditionally add a middleware to express with som
+| 58 | [google-cloud__firestore](./g/google-cloud__firestore) | Firestore Client Library for Node.js
 | 58 | [gregorian-calendar](./g/gregorian-calendar) | date time utils ported from java
 | 58 | [gulp-ruby-sass](./g/gulp-ruby-sass) | Compile Sass to CSS with Ruby Sass
 | 58 | [js-combinatorics](./j/js-combinatorics) | Simple combinatorics like power set, combination, 
@@ -3568,6 +3569,7 @@
 | 18 | [react-github-button](./r/react-github-button) | Unofficial GitHub buttons in React.
 | 18 | [react-instantsearch](./r/react-instantsearch) | ⚡ Lightning-fast search for React and React Native
 | 18 | [react-native-calendars](./r/react-native-calendars) | React Native Calendar Components
+| 18 | [react-native-firebase__ap](./r/react-native-firebase__app-types) | @react-native-firebase/app-types
 | 18 | [react-native-loading-spin](./r/react-native-loading-spinner-overlay) | The only pure React Native Native iOS and Android 
 | 18 | [react-rte](./r/react-rte) | React Rich Text Editor
 | 18 | [react-timeago](./r/react-timeago) | A simple Time-Ago component for ReactJs
@@ -4165,6 +4167,7 @@
 | 10 | [nanomsg](./n/nanomsg) | Node bindings for nanomsg
 | 10 | [nanoscroller](./n/nanoscroller) | A jQuery plugin that offers a simplistic way of im
 | 10 | [ng-tags-input](./n/ng-tags-input) | Tags input directive for AngularJS
+| 10 | [node-gzip](./n/node-gzip) | Simply gzip and ungzip in Node.js with promises
 | 10 | [node-ral](./n/node-ral) | a rpc client for node
 | 10 | [octokit__request](./o/octokit__request) | Send parameterized requests to GitHub’s APIs with 
 | 10 | [p-catch-if](./p/p-catch-if) | Conditional promise catch handler
@@ -4427,6 +4430,7 @@
 | 7 | [apollographql__apollo-too](./a/apollographql__apollo-tools) | -
 | 7 | [asana](./a/asana) | Official NodeJS and BrowserJS client for the Asana
 | 7 | [atob-lite](./a/atob-lite) | Smallest/simplest possible means of using atob wit
+| 7 | [audiobuffer-to-wav](./a/audiobuffer-to-wav) | convert an AudioBuffer to .wav format
 | 7 | [bagpipes](./b/bagpipes) | Less code, more flow. Let's dance
 | 7 | [batch-stream](./b/batch-stream) | Transform a stream into batches
 | 7 | [binaryextensions](./b/binaryextensions) | A package that contains an array of every single f
@@ -4443,6 +4447,7 @@
 | 7 | [datatables_dot_net-autofi](./d/datatables_dot_net-autofill) | AutoFill for DataTables
 | 7 | [datatables_dot_net-rowgro](./d/datatables_dot_net-rowgroup) | RowGroup for DataTables
 | 7 | [datatables_dot_net-rowreo](./d/datatables_dot_net-rowreorder) | RowReorder for DataTables
+| 7 | [deindent](./d/deindent) | ES6 template string helper for deindentation
 | 7 | [dinero_dot_js](./d/dinero_dot_js) | An immutable library to create, calculate and form
 | 7 | [disposable-email-domains](./d/disposable-email-domains) | A list of 
 | 7 | [easystarjs](./e/easystarjs) | Asynchronous A* Pathfinding API
@@ -4562,6 +4567,7 @@
 | 7 | [when-dom-ready](./w/when-dom-ready) | $(document).ready() for the 21st century
 | 7 | [windows-1251](./w/windows-1251) | A robust windows-1251 encoder/decoder written in J
 | 7 | [wink-tokenizer](./w/wink-tokenizer) | Multilingual tokenizer that automatically tags eac
+| 7 | [wordpress__is-shallow-equ](./w/wordpress__is-shallow-equal) | Test for shallow equality between two objects or a
 | 7 | [x-ray-crawler](./x/x-ray-crawler) | x-ray's crawler
 | 6 | [amazon-product-api](./a/amazon-product-api) | Amazon Product Advertising API client
 | 6 | [angular-tooltips](./a/angular-tooltips) | Angular.js tooltips module.
@@ -4655,6 +4661,7 @@
 | 6 | [p-min-delay](./p/p-min-delay) | Delay a promise a minimum amount of time
 | 6 | [parse-torrent-file](./p/parse-torrent-file) | Parse a .torrent file and return an object of keys
 | 6 | [pid-from-port](./p/pid-from-port) | Get PID from a port
+| 6 | [pino-std-serializers](./p/pino-std-serializers) | A collection of standard object serializers for Pi
 | 6 | [png-async](./p/png-async) | A simple and non-blocking PNG encoder / decoder.
 | 6 | [pollyjs__adapter](./p/pollyjs__adapter) | Extendable base adapter class used by @pollyjs
 | 6 | [poly2tri](./p/poly2tri) | A 2D constrained Delaunay triangulation library
@@ -5203,6 +5210,7 @@
 | 3 | [nodelib__fs_dot_stat](./n/nodelib__fs_dot_stat) | Get the status of a file with some features
 | 3 | [notifyjs-browser](./n/notifyjs-browser) | Notify.js =====
 | 3 | [oauth-shim](./o/oauth-shim) | OAuth2 shim for OAuth1 services, works with the cl
+| 3 | [parquetjs](./p/parquetjs) | fully asynchronous, pure JavaScript implementation
 | 3 | [parse5-parser-stream](./p/parse5-parser-stream) | Streaming HTML parser with scripting support.
 | 3 | [path-case](./p/path-case) | Path case a string
 | 3 | [piwik-tracker](./p/piwik-tracker) | A wrapper for the Piwik tracking HTTP API
@@ -5210,6 +5218,7 @@
 | 3 | [podium](./p/podium) | Node compatible event emitter with extra features
 | 3 | [pollyjs__core](./p/pollyjs__core) | Record, replay, and stub HTTP Interactions
 | 3 | [pollyjs__persister](./p/pollyjs__persister) | Extendable base persister class used by @pollyjs
+| 3 | [pouchdb-adapter-cordova-s](./p/pouchdb-adapter-cordova-sqlite) | PouchDB adapter using Cordova SQLite Plugin as its
 | 3 | [private-ip](./p/private-ip) | Check if IP address is private.
 | 3 | [probability-distributions](./p/probability-distributions) | Generate random variables from a variety of probab
 | 3 | [purl](./p/purl) | A minuscule library to parse URLs
@@ -5606,7 +5615,9 @@
 | 2 | [wepy-redux](./w/wepy-redux) | WePY bindings for Redux
 | 2 | [wonder_dot_js](./w/wonder_dot_js) | 3d webgl engine
 | 2 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML
+| 2 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP
 | 2 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
+| 2 | [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress.
 | 2 | [write-file-atomically](./w/write-file-atomically) | Promisified version of write-file-atomic
 | 2 | [xadesjs](./x/xadesjs) | A pure Typescript/Javascript implementation of XAd
 | 2 | [xmldsigjs](./x/xmldsigjs) | XMLDSIGjs provides an implementation of XMLDSIG in
@@ -6148,6 +6159,7 @@
 | 0 | [complex](./c/complex) | Do calculations with Complex numbers
 | 0 | [confirmdialog](./c/confirmdialog) | -
 | 0 | [connect-history-api-fallb](./c/connect-history-api-fallback-exclusions) | Provides a fallback for non-existing directories s
+| 0 | [connect-trim-body](./c/connect-trim-body) | Connect/Express middleware to trim all parameters 
 | 0 | [cordova-plugin-background](./c/cordova-plugin-background-mode) | Prevent app from going to sleep in background.
 | 0 | [cordova-plugin-device-nam](./c/cordova-plugin-device-name) | Cordova Device Name Plugin
 | 0 | [cordova-plugin-device-ori](./c/cordova-plugin-device-orientation) | -
@@ -6214,6 +6226,7 @@
 | 0 | [extended-listbox](./e/extended-listbox) | A simple to use javascript component as powerful a
 | 0 | [fast64](./f/fast64) | The fastest in-browser base64 library
 | 0 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
+| 0 | [feather-route-matcher](./f/feather-route-matcher) | featherweight url to handler matching
 | 0 | [feathersjs__authenticatio](./f/feathersjs__authentication-oauth1) | A Feathers OAuth1 authentication strategy
 | 0 | [fetch_dot_io](./f/fetch_dot_io) | extends the whatwg fetch api, makes it easier to u
 | 0 | [fhir](./f/fhir) | Library that assists in handling FHIR resources. S
@@ -6244,6 +6257,7 @@
 | 0 | [google-apps-script](./g/google-apps-script) | gas, the complete CLI for Google Apps Script
 | 0 | [greasemonkey](./g/greasemonkey) | -
 | 0 | [grecaptcha](./g/grecaptcha) | reCAPTCHA v3 / v2 client for Node
+| 0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0 | [guardian__prosemirror-inv](./g/guardian__prosemirror-invisibles) | A plugin to show invisibles in prosemirror
 | 0 | [gulp-json-validator](./g/gulp-json-validator) | A json validator that has an option to check for d
 | 0 | [gulp-pug-i18n](./g/gulp-pug-i18n) | Gulp plugin for Pug with i18n support
@@ -6493,6 +6507,7 @@
 | 0 | [react-native-audio](./r/react-native-audio) | React Native extension for recording audio
 | 0 | [react-native-bluetooth-se](./r/react-native-bluetooth-serial) | 'Bluetooth serial for react native'
 | 0 | [react-native-canvas](./r/react-native-canvas) |   react-native-canvas 
+| 0 | [react-native-firebase__ap](./r/react-native-firebase__app) | A well tested, feature rich Firebase implementatio
 | 0 | [react-native-goby](./r/react-native-goby) | React Native plugin for the Goby service
 | 0 | [react-native-honeywell-sc](./r/react-native-honeywell-scanner) | A barcode scanner for Honeywell handheld devices l
 | 0 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery

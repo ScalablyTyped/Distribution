@@ -12,7 +12,7 @@ trait ImageMapGuide
   def getParams(): js.Any = js.native
   def getUrl(
     baseUrl: java.lang.String,
-    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
     extent: olLib.extentMod.Extent,
     size: olLib.sizeMod.Size,
     projection: olLib.projProjectionMod.default
