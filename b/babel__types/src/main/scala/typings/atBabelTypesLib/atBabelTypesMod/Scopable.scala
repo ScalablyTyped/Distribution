@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   - ForOfStatement
   - ClassMethod
   - ClassPrivateMethod
+  - TSModuleBlock
 */
 trait Scopable extends _Node
 

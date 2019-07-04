@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esfx__cancelable"
-version := "1.0.0-pre.6-9f1060"
+version := "1.0.0-pre.6-1291cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

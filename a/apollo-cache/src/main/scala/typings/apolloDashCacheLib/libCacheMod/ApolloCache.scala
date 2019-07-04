@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ApolloCache[TSerialized] ()
   extends apolloDashCacheLib.libTypesDataProxyMod.DataProxy {
-  def diff[T](query: apolloDashCacheLib.libTypesCacheMod.CacheNs.DiffOptions): js.Any = js.native
+  def diff[T](query: apolloDashCacheLib.libTypesCacheMod.CacheNs.DiffOptions): apolloDashCacheLib.libTypesCacheMod.CacheNs.DiffResult[T] = js.native
   def evict[TVariables](query: apolloDashCacheLib.libTypesCacheMod.CacheNs.EvictOptions[TVariables]): apolloDashCacheLib.libTypesCacheMod.CacheNs.EvictionResult = js.native
   def extract(): TSerialized = js.native
   def extract(optimistic: scala.Boolean): TSerialized = js.native
@@ -23,14 +23,8 @@ abstract class ApolloCache[TSerialized] ()
   def transformForLink(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def watch(watch: apolloDashCacheLib.libTypesCacheMod.CacheNs.WatchOptions): js.Function0[scala.Unit] = js.native
   def write[TResult, TVariables](write: apolloDashCacheLib.libTypesCacheMod.CacheNs.WriteOptions[TResult, TVariables]): scala.Unit = js.native
-  def writeData[TData](
-    hasIdData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.WriteDataOptions<TData> */ js.Any
-  ): scala.Unit = js.native
-  def writeFragment[TData, TVariables](
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.WriteFragmentOptions<TData, TVariables> */ js.Any
-  ): scala.Unit = js.native
-  def writeQuery[TData, TVariables](
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.WriteQueryOptions<TData, TVariables> */ js.Any
-  ): scala.Unit = js.native
+  def writeData[TData](hasIdData: apolloDashCacheLib.libTypesCacheMod.CacheNs.WriteDataOptions[TData]): scala.Unit = js.native
+  def writeFragment[TData, TVariables](options: apolloDashCacheLib.libTypesCacheMod.CacheNs.WriteFragmentOptions[TData, TVariables]): scala.Unit = js.native
+  def writeQuery[TData, TVariables](options: apolloDashCacheLib.libTypesCacheMod.CacheNs.WriteQueryOptions[TData, TVariables]): scala.Unit = js.native
 }
 

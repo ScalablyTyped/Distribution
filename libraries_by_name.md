@@ -1749,6 +1749,7 @@
 | [fingerprintjs](./f/fingerprintjs) | - | - |
 | [fingerprintjs2](./f/fingerprintjs2) | Modern & flexible browser fingerprinting library | browser, identification, fingerprint, fingerprinting, privacy |
 | [firebase](./f/firebase) | Firebase JavaScript library for web and Node.js | authentication, database, Firebase, firebase, realtime, storage |
+| [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js | admin, database, Firebase, realtime, authentication |
 | [firebase-client](./f/firebase-client) | A simple Node.js client for Firebase | firebase, rest, api, client |
 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati | Firebase, JWT |
 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK | - |

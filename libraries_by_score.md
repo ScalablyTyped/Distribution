@@ -817,6 +817,7 @@
 | 0.782656809733393 | [lodash_dot_findkey](./l/lodash_dot_findkey) | The lodash method _.findKey exported as a module.
 | 0.7826139062948954 | [touch](./t/touch) | like touch(1) in node
 | 0.7826046682651735 | [bitcoinjs-lib](./b/bitcoinjs-lib) | Client-side Bitcoin JavaScript library
+| 0.7825910748658951 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js
 | 0.7825861393539217 | [promise_dot_prototype_dot](./p/promise_dot_prototype_dot_finally) | ES Proposal spec-compliant shim for Promise.protot
 | 0.7825286457927183 | [stackframe](./s/stackframe) | JS Object representation of a stack frame
 | 0.7823836467953517 | [emotion__css](./e/emotion__css) | a function to serialize css and object styless

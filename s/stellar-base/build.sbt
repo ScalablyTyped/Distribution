@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stellar-base"
-version := "0.10-dt-20190212Z-7b0ffd"
+version := "0.10-dt-20190212Z-ac1077"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

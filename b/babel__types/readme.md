@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__types
 
-Typings are for version 7.4.4
+Typings are for version 7.5.0
 
 ## Library description:
 Babel Types is a Lodash-esque utility library for AST nodes

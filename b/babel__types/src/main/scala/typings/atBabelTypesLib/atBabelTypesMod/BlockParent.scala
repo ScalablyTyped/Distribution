@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   - ForOfStatement
   - ClassMethod
   - ClassPrivateMethod
+  - TSModuleBlock
 */
 trait BlockParent extends _Node
 

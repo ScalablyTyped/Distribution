@@ -11,7 +11,7 @@ trait QueryInfo extends js.Object {
   var invalidated: scala.Boolean
   var lastRequestId: scala.Double
   var listeners: stdLib.Set[apolloDashClientLib.coreTypesMod.QueryListener]
-  var newData: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.DiffResult<any> */ js.Any) | scala.Null
+  var newData: apolloDashCacheLib.libTypesCacheMod.CacheNs.DiffResult[_] | scala.Null
   var observableQuery: (apolloDashClientLib.coreObservableQueryMod.ObservableQuery[_, apolloDashClientLib.coreTypesMod.OperationVariables]) | scala.Null
   var subscriptions: stdLib.Set[apolloDashClientLib.utilObservableMod.Subscription]
 }
@@ -25,7 +25,7 @@ object QueryInfo {
     subscriptions: stdLib.Set[apolloDashClientLib.utilObservableMod.Subscription],
     cancel: () => scala.Unit = null,
     document: graphqlLib.languageAstMod.DocumentNode = null,
-    newData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.DiffResult<any> */ js.Any = null,
+    newData: apolloDashCacheLib.libTypesCacheMod.CacheNs.DiffResult[_] = null,
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[_, apolloDashClientLib.coreTypesMod.OperationVariables] = null
   ): QueryInfo = {
     val __obj = js.Dynamic.literal(invalidated = invalidated, lastRequestId = lastRequestId, listeners = listeners, subscriptions = subscriptions)

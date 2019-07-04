@@ -22,6 +22,11 @@ object xdrNs extends js.Object {
   class Memo ()
     extends stellarDashBaseLib.stellarDashBaseMod.xdrNs.Memo
   
+  // tslint:disable-line:strict-export-declare-modifiers
+  @js.native
+  class Operation[T /* <: stellarDashBaseLib.stellarDashBaseMod.Operation */] ()
+    extends stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[T]
+  
   @js.native
   class TransactionEnvelope ()
     extends stellarDashBaseLib.stellarDashBaseMod.xdrNs.TransactionEnvelope
@@ -50,6 +55,12 @@ object xdrNs extends js.Object {
   @js.native
   object Memo extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Memo = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Operation extends js.Object {
+    def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[stellarDashBaseLib.stellarDashBaseMod.Operation] = js.native
   }
   
   /* static members */

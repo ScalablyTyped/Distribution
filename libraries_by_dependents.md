@@ -651,6 +651,7 @@
 | 362 | [is-promise](./i/is-promise) | Test whether an object looks like a promises-a+ pr
 | 361 | [envify](./e/envify) | Selectively replace Node-style environment variabl
 | 360 | [rc-slider](./r/rc-slider) | Slider UI component for React
+| 357 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js
 | 357 | [pako](./p/pako) | zlib port to javascript - fast, modularized, with 
 | 356 | [bson](./b/bson) | A bson parser for node.js and the browser
 | 356 | [gray-matter](./g/gray-matter) | Parse front-matter from a string or file. Fast, re

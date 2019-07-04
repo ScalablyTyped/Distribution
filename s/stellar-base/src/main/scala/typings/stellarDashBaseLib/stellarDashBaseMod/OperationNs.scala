@@ -105,19 +105,19 @@ object OperationNs extends js.Object {
     var signer: stellarDashBaseLib.stellarDashBaseMod.SignerNs.PreAuthTx | stellarDashBaseLib.stellarDashBaseMod.SignerNs.Sha256Hash | stellarDashBaseLib.stellarDashBaseMod.SignerNs.Ed25519PublicKey
   }
   
-  def accountMerge(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.AccountMerge): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def allowTrust(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.AllowTrust): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def bumpSequence(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.BumpSequence): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def changeTrust(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.ChangeTrust): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def createAccount(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.CreateAccount): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def createPassiveOffer(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.CreatePassiveOffer): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def fromXDRObject[T /* <: stellarDashBaseLib.stellarDashBaseMod.Operation */](xdrOperation: stellarDashBaseLib.stellarDashBaseMod.Operation): T = js.native
-  def inflation(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.Inflation): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def manageData(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.ManageData): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def manageOffer(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.ManageOffer): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def pathPayment(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.PathPayment): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def payment(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.Payment): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
-  def setOptions[T /* <: stellarDashBaseLib.stellarDashBaseMod.SignerOptions */](options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.SetOptions[T]): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
+  def accountMerge(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.AccountMerge): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[AccountMerge] = js.native
+  def allowTrust(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.AllowTrust): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[AllowTrust] = js.native
+  def bumpSequence(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.BumpSequence): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[BumpSequence] = js.native
+  def changeTrust(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.ChangeTrust): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[ChangeTrust] = js.native
+  def createAccount(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.CreateAccount): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[CreateAccount] = js.native
+  def createPassiveOffer(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.CreatePassiveOffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[CreatePassiveOffer] = js.native
+  def fromXDRObject[T /* <: stellarDashBaseLib.stellarDashBaseMod.Operation */](xdrOperation: stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[T]): T = js.native
+  def inflation(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.Inflation): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[Inflation] = js.native
+  def manageData(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.ManageData): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[ManageData] = js.native
+  def manageOffer(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.ManageOffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[ManageOffer] = js.native
+  def pathPayment(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.PathPayment): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[PathPayment] = js.native
+  def payment(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.Payment): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[Payment] = js.native
+  def setOptions[T /* <: stellarDashBaseLib.stellarDashBaseMod.SignerOptions */](options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.SetOptions[T]): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Operation[SetOptions[T]] = js.native
   type Inflation = BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.Inflation]
 }
 

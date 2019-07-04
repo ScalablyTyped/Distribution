@@ -772,13 +772,10 @@ object ^ extends js.Object {
     mixins: js.Array[InterfaceExtends]
   ): DeclareClass = js.native
   def declareExportAllDeclaration(source: StringLiteral): DeclareExportAllDeclaration = js.native
-  def declareExportAllDeclaration(
-    source: StringLiteral,
-    exportKind: js.Tuple2[
-      atBabelTypesLib.atBabelTypesLibStrings.`type`, 
-      atBabelTypesLib.atBabelTypesLibStrings.value
-    ]
-  ): DeclareExportAllDeclaration = js.native
+  @JSName("declareExportAllDeclaration")
+  def declareExportAllDeclaration_type(source: StringLiteral, exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`): DeclareExportAllDeclaration = js.native
+  @JSName("declareExportAllDeclaration")
+  def declareExportAllDeclaration_value(source: StringLiteral, exportKind: atBabelTypesLib.atBabelTypesLibStrings.value): DeclareExportAllDeclaration = js.native
   def declareExportDeclaration(): DeclareExportDeclaration = js.native
   def declareExportDeclaration(declaration: Flow): DeclareExportDeclaration = js.native
   def declareExportDeclaration(declaration: Flow, specifiers: js.Array[ExportNamespaceSpecifier | ExportSpecifier]): DeclareExportDeclaration = js.native
@@ -886,7 +883,7 @@ object ^ extends js.Object {
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: js.UndefOr[scala.Nothing],
-    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    specifiers: js.Array[ExportDefaultSpecifier | ExportNamespaceSpecifier | ExportSpecifier],
     source: StringLiteral
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
@@ -895,7 +892,7 @@ object ^ extends js.Object {
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: Declaration,
-    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    specifiers: js.Array[ExportDefaultSpecifier | ExportNamespaceSpecifier | ExportSpecifier],
     source: StringLiteral
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
@@ -904,8 +901,92 @@ object ^ extends js.Object {
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: scala.Null,
-    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    specifiers: js.Array[ExportDefaultSpecifier | ExportNamespaceSpecifier | ExportSpecifier],
     source: StringLiteral
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_type(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_type(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: scala.Null,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_type(
+    declaration: Declaration,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_type(
+    declaration: Declaration,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: scala.Null,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_type(
+    declaration: scala.Null,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_type(
+    declaration: scala.Null,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: scala.Null,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.`type`
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_value(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.value
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_value(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: scala.Null,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.value
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_value(
+    declaration: Declaration,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.value
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_value(
+    declaration: Declaration,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: scala.Null,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.value
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_value(
+    declaration: scala.Null,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: StringLiteral,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.value
+  ): ExportNamedDeclaration = js.native
+  @JSName("exportNamedDeclaration")
+  def exportNamedDeclaration_value(
+    declaration: scala.Null,
+    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    source: scala.Null,
+    exportKind: atBabelTypesLib.atBabelTypesLibStrings.value
   ): ExportNamedDeclaration = js.native
   def exportNamespaceSpecifier(exported: Identifier): ExportNamespaceSpecifier = js.native
   def exportSpecifier(local: Identifier, exported: Identifier): ExportSpecifier = js.native

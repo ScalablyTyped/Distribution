@@ -5,9 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSModuleBlock
-  extends BaseNode
-     with _Node {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSModuleBlock
+  extends Block
+     with BaseNode
+     with BlockParent
+     with Scopable {
   var body: js.Array[Statement]
   @JSName("type")
   var type_TSModuleBlock: atBabelTypesLib.atBabelTypesLibStrings.TSModuleBlock
