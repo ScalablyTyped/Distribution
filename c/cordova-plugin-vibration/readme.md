@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-vibration
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Cordova Vibration Plugin
@@ -35,13 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Apache Cordova Vibration plugin
+// Type definitions for cordova-plugin-vibration 3.1
 // Project: https://github.com/apache/cordova-plugin-vibration
-// Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>, Louis Lagrange <https://github.com/Minishlink/>
+// Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>
+//                 Louis Lagrange <https://github.com/Minishlink>
+//                 Tim Brust <https://github.com/timbru31>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-//
-// Copyright (c) Microsoft Open Technologies Inc
-// Licensed under the MIT license.
 
 ```
 

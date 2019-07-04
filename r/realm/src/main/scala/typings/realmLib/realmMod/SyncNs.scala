@@ -71,6 +71,8 @@ object SyncNs extends js.Object {
   class User ()
     extends realmLib.RealmNs.SyncNs.User
   
+  var downloadBeforeOpenBehavior: realmLib.RealmNs.SyncNs.OpenRealmBehaviorConfiguration = js.native
+  var openLocalRealmBehavior: realmLib.RealmNs.SyncNs.OpenRealmBehaviorConfiguration = js.native
   def _hasExistingSessions(): scala.Boolean = js.native
   def addListener(
     config: realmLib.RealmNs.SyncNs.RealmListenerConfiguration,
@@ -199,6 +201,8 @@ object SyncNs extends js.Object {
     def requestPasswordReset(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
   }
   
+  type OpenRealmBehaviorType = realmLib.RealmNs.SyncNs.OpenRealmBehaviorType
+  type OpenRealmTimeOutBehavior = realmLib.RealmNs.SyncNs.OpenRealmTimeOutBehavior
   type SessionStopPolicy = realmLib.RealmNs.SyncNs.SessionStopPolicy
 }
 

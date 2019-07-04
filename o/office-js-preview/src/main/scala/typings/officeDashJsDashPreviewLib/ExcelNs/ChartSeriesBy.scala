@@ -10,7 +10,7 @@ sealed trait ChartSeriesBy extends js.Object
 
 /**
   *
-  * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+  * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
   *
   * [Api set: ExcelApi 1.1]
   */
@@ -19,7 +19,7 @@ sealed trait ChartSeriesBy extends js.Object
 object ChartSeriesBy extends js.Object {
   /**
     *
-    * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+    * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
     *
     */
   @js.native

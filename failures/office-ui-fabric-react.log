@@ -2640,7 +2640,7 @@
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - atUifabricFoundationLib.libIComponentMod.IStyleableComponentProps because var conflicts: className. Inlined styles, theme, tokens [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libComponentsTextTextDotTypesMod) / Name(ITextProps)] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
-- officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsItemProps because var conflicts: indentWidth, selectionMode, viewport. Inlined columns, groupNestingDepth, selection, checkboxVisibility, cellStyleProps [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libComponentsDetailsListDetailsListDotTypesMod) / Name(IDetailsGroupDividerProps)] 
+- officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsItemProps because var conflicts: indentWidth, selectionMode, viewport. Inlined columns, groupNestingDepth, selection, checkboxVisibility, cellStyleProps, rowWidth [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libComponentsDetailsListDetailsListDotTypesMod) / Name(IDetailsGroupDividerProps)] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - officeDashUiDashFabricDashReactLib.libPickersMod.BaseAutoFill because Inheritance from two classes. Inlined  [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(officeDashUiDashFabricDashReactMod) / Name(BaseAutoFill)] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * the styling is applied).
   *
   * This queue is used when any `hostStyling` instructions are executed from the `hostBindings`
-  * function. Template-level styling functions (e.g. `elementStylingMap` and `elementClassProp`)
+  * function. Template-level styling functions (e.g. `styleMap` and `classProp`)
   * do not make use of this queue (they are applied to the styling context immediately).
   *
   * Due to the nature of how components/directives are evaluated, directives (both parent and
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
   * inside of `renderStyling`).
   *
   * Right now each directive's hostBindings function, as well the template function, both
-  * call `elementStylingApply()` and `hostStylingApply()`. The fact that this is called
+  * call `stylingApply()` and `hostStylingApply()`. The fact that this is called
   * multiple times for the same element (b/c of change detection) causes some issues. To avoid
   * having styling code be rendered on an element multiple times, the `HostInstructionsQueue`
   * reserves a slot for a reference pointing to the very last directive that was registered and

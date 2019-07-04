@@ -11,6 +11,9 @@ trait Actions extends js.Object {
   def addThirdPartySchema(args: gatsbyLib.Anon_Schema): scala.Unit = js.native
   def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: ActionPlugin): scala.Unit = js.native
   def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
+  /** @see https://www.gatsbyjs.org/docs/actions/#createFieldExtension */
+  def createFieldExtension(extension: js.Object, plugin: ActionPlugin): scala.Unit = js.native
+  def createFieldExtension(extension: js.Object, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createJob */
   def createJob(job: (stdLib.Record[java.lang.String, _]) with gatsbyLib.Anon_Id): scala.Unit = js.native
   def createJob(job: (stdLib.Record[java.lang.String, _]) with gatsbyLib.Anon_Id, plugin: ActionPlugin): scala.Unit = js.native
@@ -79,6 +82,7 @@ trait Actions extends js.Object {
   def setWebpackConfig(config: js.Object): scala.Unit = js.native
   def setWebpackConfig(config: js.Object, plugin: ActionPlugin): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#touchNode */
-  def touchNode(node: gatsbyLib.Anon_NodeIdPlugin): scala.Unit = js.native
+  def touchNode(node: gatsbyLib.Anon_NodeIdString): scala.Unit = js.native
+  def touchNode(node: gatsbyLib.Anon_NodeIdString, plugin: ActionPlugin): scala.Unit = js.native
 }
 

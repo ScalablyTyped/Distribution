@@ -105,6 +105,16 @@ class WorksheetCollection ()
   val onFormatChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
     *
+    * Occurs when any worksheet in the workbook has row hidden state changed.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onRowHiddenChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
+  /**
+    *
     * Occurs when sorting on rows.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -122,6 +132,16 @@ class WorksheetCollection ()
     * @eventproperty
     */
   val onSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when left-clicked/tapped operation happens in the worksheet collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onSingleClicked: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetSingleClickedEventArgs] = js.native
   /**
     *
     * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.

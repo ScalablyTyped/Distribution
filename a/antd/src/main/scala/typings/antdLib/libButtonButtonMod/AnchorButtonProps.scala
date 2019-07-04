@@ -264,6 +264,7 @@ trait AnchorButtonProps extends js.Object {
   var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[_]] = js.undefined
   var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[_]] = js.undefined
   var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[_]] = js.undefined
+  var ping: js.UndefOr[java.lang.String] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
@@ -456,6 +457,7 @@ object AnchorButtonProps {
     onVolumeChange: reactLib.reactMod.ReactEventHandler[_] = null,
     onWaiting: reactLib.reactMod.ReactEventHandler[_] = null,
     onWheel: reactLib.reactMod.WheelEventHandler[_] = null,
+    ping: java.lang.String = null,
     placeholder: java.lang.String = null,
     prefix: java.lang.String = null,
     prefixCls: java.lang.String = null,
@@ -644,6 +646,7 @@ object AnchorButtonProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (ping != null) __obj.updateDynamic("ping")(ping)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

@@ -15,7 +15,7 @@ trait WorkflowTypeConfiguration extends js.Object {
     */
   var defaultExecutionStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   /**
-    * The default IAM role attached to this workflow type.  Executions of this workflow type need IAM roles to invoke Lambda functions. If you don't specify an IAM role when starting this workflow type, the default Lambda role is attached to the execution. For more information, see http://docs.aws.amazon.com/amazonswf/latest/developerguide/lambda-task.html in the Amazon SWF Developer Guide. 
+    * The default IAM role attached to this workflow type.  Executions of this workflow type need IAM roles to invoke Lambda functions. If you don't specify an IAM role when starting this workflow type, the default Lambda role is attached to the execution. For more information, see https://docs.aws.amazon.com/amazonswf/latest/developerguide/lambda-task.html in the Amazon SWF Developer Guide. 
     */
   var defaultLambdaRole: js.UndefOr[Arn] = js.undefined
   /**

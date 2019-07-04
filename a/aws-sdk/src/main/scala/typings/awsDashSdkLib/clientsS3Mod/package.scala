@@ -409,6 +409,7 @@ package object clientsS3Mod {
   type SSECustomerAlgorithm = java.lang.String
   type SSECustomerKey = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   type SSECustomerKeyMD5 = java.lang.String
+  type SSEKMSEncryptionContext = java.lang.String
   type SSEKMSKeyId = java.lang.String
   type SelectObjectContentEventStream = awsDashSdkLib.libEventDashStreamEventDashStreamMod.EventStream[awsDashSdkLib.Anon_Cont]
   /* Rewritten from type alias, can be one of: 

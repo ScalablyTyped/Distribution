@@ -33,6 +33,11 @@ trait IDatePickerProps
     */
   var defaultValue: js.UndefOr[stdLib.Date] = js.undefined
   /**
+    * Whether the current day should be highlighted in the calendar.
+    * @default false
+    */
+  var highlightCurrentDay: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Called when the user selects a day.
     * If being used in an uncontrolled manner, `selectedDate` will be `null` if the user clicks the currently selected
     * day. If being used in a controlled manner, `selectedDate` will contain the day clicked no matter what.
@@ -66,6 +71,7 @@ object IDatePickerProps {
     clearButtonText: java.lang.String = null,
     dayPickerProps: reactDashDayDashPickerLib.typesPropsMod.DayPickerProps = null,
     defaultValue: stdLib.Date = null,
+    highlightCurrentDay: js.UndefOr[scala.Boolean] = js.undefined,
     initialMonth: stdLib.Date = null,
     locale: java.lang.String = null,
     localeUtils: reactDashDayDashPickerLib.typesUtilsMod.LocaleUtils = null,
@@ -86,6 +92,7 @@ object IDatePickerProps {
     if (clearButtonText != null) __obj.updateDynamic("clearButtonText")(clearButtonText)
     if (dayPickerProps != null) __obj.updateDynamic("dayPickerProps")(dayPickerProps)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(highlightCurrentDay)) __obj.updateDynamic("highlightCurrentDay")(highlightCurrentDay)
     if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (localeUtils != null) __obj.updateDynamic("localeUtils")(localeUtils)

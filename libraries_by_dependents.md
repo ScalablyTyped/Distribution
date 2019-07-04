@@ -3181,6 +3181,7 @@
 | 25 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects)
 | 25 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and pa
 | 25 | [json-file-plus](./j/json-file-plus) | Read from and write to a JSON file, minimizing dif
+| 25 | [koa-graphql](./k/koa-graphql) | Production ready GraphQL Koa middleware.
 | 25 | [lodash_dot_maxby](./l/lodash_dot_maxby) | The lodash method _.maxBy exported as a module.
 | 25 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format
 | 25 | [node-json-db](./n/node-json-db) | Database using JSON file as storage for Node.JS
@@ -3460,6 +3461,7 @@
 | 20 | [stream-shift](./s/stream-shift) | Returns the next buffer/object in a stream's reada
 | 20 | [timsort](./t/timsort) | TimSort: Fast Sorting for Node.js
 | 20 | [uifabric__utilities](./u/uifabric__utilities) | Office UI Fabric utilities for building React comp
+| 20 | [vue-splitpane](./v/vue-splitpane) | vue split-pane component
 | 20 | [webpack-cleanup-plugin](./w/webpack-cleanup-plugin) | Plugin for webpack to cleanup extraneous files fro
 | 20 | [winston-mail](./w/winston-mail) | A mail transport for winston
 | 20 | [wpapi](./w/wpapi) | An isomorphic JavaScript client for interacting wi
@@ -3996,6 +3998,7 @@
 | 12 | [vimeo](./v/vimeo) | A Node.js library for the new Vimeo API.
 | 12 | [website-scraper](./w/website-scraper) | Download website to a local directory (including a
 | 12 | [wheel](./w/wheel) | Mouse wheel event unified for all browsers
+| 12 | [wordpress__hooks](./w/wordpress__hooks) | WordPress hooks library.
 | 12 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz
 | 11 | [ably](./a/ably) | Realtime client library for Ably.io, the realtime 
 | 11 | [angular-cookie](./a/angular-cookie) | Lightweight Angular module for access to cookies
@@ -4054,6 +4057,7 @@
 | 11 | [mock-aws-s3](./m/mock-aws-s3) | Mock AWS S3 SDK for Node.js
 | 11 | [navigo](./n/navigo) | A simple vanilla JavaScript router with a fallback
 | 11 | [neat-csv](./n/neat-csv) | Fast CSV parser
+| 11 | [node-zendesk](./n/node-zendesk) | zendesk API client wrapper
 | 11 | [notie](./n/notie) | notie - a clean and simple notification, input, an
 | 11 | [object-refs](./o/object-refs) | Minimal bi-directional object references for JavaS
 | 11 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c
@@ -4666,6 +4670,7 @@
 | 6 | [pollyjs__adapter](./p/pollyjs__adapter) | Extendable base adapter class used by @pollyjs
 | 6 | [poly2tri](./p/poly2tri) | A 2D constrained Delaunay triangulation library
 | 6 | [popmotion__popcorn](./p/popmotion__popcorn) | Utility functions for animation and interactions.
+| 6 | [postlight__mercury-parser](./p/postlight__mercury-parser) | Mercury transforms web pages into clean text. Publ
 | 6 | [raspi](./r/raspi) | Provides access to Raspberry Pi peripherals from N
 | 6 | [reach__menu-button](./r/reach__menu-button) | Accessible React button dropdown menu.
 | 6 | [react-body-classname](./r/react-body-classname) | A declarative, nested way to manipulate your body'
@@ -4864,6 +4869,7 @@
 | 5 | [stale-lru-cache](./s/stale-lru-cache) | Resilient and performant in-memory cache for node.
 | 5 | [std-mocks](./s/std-mocks) | Mock node stdout and stderr without pain.
 | 5 | [storm-react-diagrams](./s/storm-react-diagrams) | **PSA**: React Diagrams is currently getting a bit
+| 5 | [stubby](./s/stubby) | a lightweight server for stubbing external systems
 | 5 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 5 | [swipe](./s/swipe) | Swipe component with touch support
 | 5 | [temp-fs](./t/temp-fs) | Temporary files, directories or names
@@ -4976,6 +4982,7 @@
 | 4 | [lodash_dot_update](./l/lodash_dot_update) | The lodash method _.update exported as a module.
 | 4 | [lodash_dot_uppercase](./l/lodash_dot_uppercase) | The lodash method _.upperCase exported as a module
 | 4 | [log-process-errors](./l/log-process-errors) | Show some ❤️ to process errors
+| 4 | [lossless-json](./l/lossless-json) | Parse JSON without risk of losing numeric informat
 | 4 | [map-age-cleaner](./m/map-age-cleaner) | Automatically cleanup expired items in a Map
 | 4 | [match-media-mock](./m/match-media-mock) | server side compatible replacement for Window.matc
 | 4 | [merkle](./m/merkle) | Javascript implementation of merkle trees
@@ -5031,6 +5038,7 @@
 | 4 | [settings](./s/settings) | Simple environment-based application settings
 | 4 | [simplestorage_dot_js](./s/simplestorage_dot_js) | Cross-browser key-value store database to store da
 | 4 | [sindresorhus__class-names](./s/sindresorhus__class-names) | Conditionally join CSS class names together - Espe
+| 4 | [sisteransi](./s/sisteransi) | ANSI escape codes for some terminal swag
 | 4 | [slack-winston](./s/slack-winston) | A Slack transport for winston
 | 4 | [socketio-jwt-auth](./s/socketio-jwt-auth) | Socket.io authentication middleware using Json Web
 | 4 | [spotify-web-api-js](./s/spotify-web-api-js) | A client-side JS wrapper for the Spotify Web API
@@ -5556,6 +5564,7 @@
 | 2 | [redux-saga__delay-p](./r/redux-saga__delay-p) | Promisified setTimeout
 | 2 | [ref-array-di](./r/ref-array-di) | Create C "array" instances on top of Buffers
 | 2 | [request-as-curl](./r/request-as-curl) | Serializes http.ClientRequest as curl(1) command s
+| 2 | [resolve-protobuf-schema](./r/resolve-protobuf-schema) | Read a protobuf schema from the disk, parse it and
 | 2 | [retinajs](./r/retinajs) | -
 | 2 | [roads](./r/roads) | An isomophic http framework
 | 2 | [rollup-typescript](./r/rollup-typescript) | Seamless integration between Rollup and TypeScript
@@ -5669,6 +5678,7 @@
 | 1 | [clamp-js-main](./c/clamp-js-main) | Clamp JS main (ie. cuts off) an HTML element's con
 | 1 | [clndr](./c/clndr) | A jQuery calendar plugin that uses HTML templates.
 | 1 | [clockpicker](./c/clockpicker) | A clock-style timepicker for Bootstrap (or jQuery)
+| 1 | [codegen_dot_macro](./c/codegen_dot_macro) | Generate code at build-time with babel-macros
 | 1 | [coinlist](./c/coinlist) | Comprehensive list of cryptocurrencies with metada
 | 1 | [collectionsjs](./c/collectionsjs) | A Collection class for working with JavaScript arr
 | 1 | [colresizable](./c/colresizable) | jQuery plugin to resize table columns
@@ -6018,6 +6028,7 @@
 | 1 | [snazzy-info-window](./s/snazzy-info-window) | Customizable info windows using the Google Maps Ja
 | 1 | [solid__react](./s/solid__react) | Efficiently build Solid apps and components with R
 | 1 | [spatialite](./s/spatialite) | SpatiaLite for node
+| 1 | [splitpanes](./s/splitpanes) | A Vue JS reliable, simple and touch-ready panes sp
 | 1 | [squirrelly](./s/squirrelly) | Simple and powerful template engine that supports 
 | 1 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys
 | 1 | [storage-helper](./s/storage-helper) | A very simple way to manage browser storage
@@ -6285,6 +6296,7 @@
 | 0 | [hyperloris__tyson](./h/hyperloris__tyson) | A TypeScript serialization/deserialization library
 | 0 | [idyll](./i/idyll) | Command line interface for idyll lang
 | 0 | [ignite-ui](./i/ignite-ui) | Ignite UI by Infragistics
+| 0 | [imsi-grok](./i/imsi-grok) | Analyze IMSI (international mobile subscriber iden
 | 0 | [instabug-reactnative](./i/instabug-reactnative) | React Native plugin for integrating the Instabug S
 | 0 | [inversify-devtools](./i/inversify-devtools) | inversify-devtools
 | 0 | [iobroker](./i/iobroker) | automate your life - platfom

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-statusbar
 
-Typings are for version 2.4.2
+Typings are for version 2.4.3
 
 ## Library description:
 Cordova StatusBar Plugin
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Apache Cordova StatusBar plugin
+// Type definitions for cordova-plugin-statusbar
 // Project: https://github.com/apache/cordova-plugin-statusbar
 // Definitions by: Xinkai Chen <https://github.com/Xinkai>
+//                 Tim Brust <https://github.com/timbru31>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /**
 * Global object StatusBar.

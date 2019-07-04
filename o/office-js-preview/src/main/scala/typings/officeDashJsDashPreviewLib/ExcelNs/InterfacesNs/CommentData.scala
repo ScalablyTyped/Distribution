@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CommentData extends js.Object {
   /**
     *
-    * Get author email of the comment.
+    * Gets the email of the comment's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -17,7 +17,7 @@ trait CommentData extends js.Object {
   var authorEmail: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Get author name of the comment.
+    * Gets the name of the comment's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait CommentData extends js.Object {
   var authorName: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Get or set the content.
+    * Gets or sets the comment's content. The string is plain text.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait CommentData extends js.Object {
   var content: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+    * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

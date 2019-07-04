@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-intercept"
-version := "0.1-dt-20190330Z-cf9ae2"
+version := "0.1-dt-20190330Z-6a9d66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-0260d9",
   "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-14d596")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-42356f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

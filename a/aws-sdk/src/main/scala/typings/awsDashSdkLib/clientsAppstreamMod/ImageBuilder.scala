@@ -50,6 +50,7 @@ trait ImageBuilder extends js.Object {
     * The name of the image builder.
     */
   var Name: String
+  var NetworkAccessConfiguration: js.UndefOr[NetworkAccessConfiguration] = js.undefined
   /**
     * The operating system platform of the image builder.
     */
@@ -82,6 +83,7 @@ object ImageBuilder {
     ImageArn: Arn = null,
     ImageBuilderErrors: ResourceErrors = null,
     InstanceType: String = null,
+    NetworkAccessConfiguration: NetworkAccessConfiguration = null,
     Platform: PlatformType = null,
     State: ImageBuilderState = null,
     StateChangeReason: ImageBuilderStateChangeReason = null,
@@ -98,6 +100,7 @@ object ImageBuilder {
     if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn)
     if (ImageBuilderErrors != null) __obj.updateDynamic("ImageBuilderErrors")(ImageBuilderErrors)
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)
+    if (NetworkAccessConfiguration != null) __obj.updateDynamic("NetworkAccessConfiguration")(NetworkAccessConfiguration)
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason)

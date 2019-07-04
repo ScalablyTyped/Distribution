@@ -1,7 +1,7 @@
 
 # Scala.js typings for fp-ts
 
-Typings are for version 1.19.0
+Typings are for version 1.19.3
 
 ## Library description:
 Functional programming in TypeScript
@@ -203,6 +203,17 @@ These comments are from the typescript definitions and might be useful:
  * right(12).map(double) // right(24)
  * left(23).map(double)  // left(23)
  * ```
+ */
+/**
+ * @file The `Eq` type class represents types which support decidable equality.
+ *
+ * Instances must satisfy the following laws:
+ *
+ * 1. Reflexivity: `E.equals(a, a) === true`
+ * 2. Symmetry: `E.equals(a, b) === E.equals(b, a)`
+ * 3. Transitivity: if `E.equals(a, b) === true` and `E.equals(b, c) === true`, then `E.equals(a, c) === true`
+ *
+ * See [Getting started with fp-ts: Eq](https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3)
  */
 /**
  * @file Adapted from https://github.com/purescript/purescript-exceptions
@@ -578,17 +589,10 @@ These comments are from the typescript definitions and might be useful:
  * @since 1.0.0
  */
 /**
- * @file The `Setoid` type class represents types which support decidable equality.
- *
- * Instances must satisfy the following laws:
- *
- * 1. Reflexivity: `S.equals(a, a) === true`
- * 2. Symmetry: `S.equals(a, b) === S.equals(b, a)`
- * 3. Transitivity: if `S.equals(a, b) === true` and `S.equals(b, c) === true`, then `S.equals(a, c) === true`
- *
- * See [Getting started with fp-ts: Setoid](https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3)
+ * @file This type class is deprecated, please use `Eq` instead.
  */
 /**
+ * Use `Eq` instead
  * @since 1.0.0
  * @deprecated
  */

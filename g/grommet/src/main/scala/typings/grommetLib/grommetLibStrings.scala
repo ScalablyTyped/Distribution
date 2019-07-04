@@ -76,6 +76,18 @@ object grommetLibStrings {
   sealed trait `South America` extends js.Object
   
   @js.native
+  sealed trait _blank extends js.Object
+  
+  @js.native
+  sealed trait _parent extends js.Object
+  
+  @js.native
+  sealed trait _self extends js.Object
+  
+  @js.native
+  sealed trait _top extends js.Object
+  
+  @js.native
   sealed trait a
     extends grommetLib.utilsMod._PolymorphicType
   
@@ -255,6 +267,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait contain extends js.Object
+  
+  @js.native
+  sealed trait controls extends js.Object
   
   @js.native
   sealed trait cover extends js.Object
@@ -1142,6 +1157,14 @@ object grommetLibStrings {
   @scala.inline
   def `South America`: `South America` = "South America".asInstanceOf[`South America`]
   @scala.inline
+  def _blank: _blank = "_blank".asInstanceOf[_blank]
+  @scala.inline
+  def _parent: _parent = "_parent".asInstanceOf[_parent]
+  @scala.inline
+  def _self: _self = "_self".asInstanceOf[_self]
+  @scala.inline
+  def _top: _top = "_top".asInstanceOf[_top]
+  @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
@@ -1243,6 +1266,8 @@ object grommetLibStrings {
   def component: component = "component".asInstanceOf[component]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
+  @scala.inline
+  def controls: controls = "controls".asInstanceOf[controls]
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
   @scala.inline

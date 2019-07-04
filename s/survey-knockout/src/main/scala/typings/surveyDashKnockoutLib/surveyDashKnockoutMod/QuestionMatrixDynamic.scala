@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionMatrixDynamic protected () extends QuestionMatrixDynamicModel {
   def this(name: java.lang.String) = this()
-  var koCellAfterRender: js.Any = js.native
 }
 

@@ -9,11 +9,11 @@ trait TaskProcessEndEvent extends js.Object {
   /**
   		 * The task execution for which the process got started.
   		 */
-  var execution: TaskExecution
+  val execution: TaskExecution
   /**
   		 * The process's exit code.
   		 */
-  var exitCode: scala.Double
+  val exitCode: scala.Double
 }
 
 object TaskProcessEndEvent {

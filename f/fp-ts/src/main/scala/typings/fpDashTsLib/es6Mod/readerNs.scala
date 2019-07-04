@@ -28,6 +28,6 @@ object readerNs extends js.Object {
     /* fa */ fpDashTsLib.es6ReaderMod.Reader[E, _], 
     fpDashTsLib.es6ReaderMod.Reader[E2, _]
   ] = js.native
-  def of[A](a: A): fpDashTsLib.es6ReaderMod.Reader[_, A] = js.native
+  def of[R, A](a: A): fpDashTsLib.es6ReaderMod.Reader[R, A] = js.native
 }
 

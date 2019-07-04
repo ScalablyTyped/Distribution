@@ -41,8 +41,6 @@ trait TableBinding extends Binding {
     *
     * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
     * strings.
-    *
-    * In content add-ins for Access, for performance reasons the rowCount property always returns -1.
     */
   var rowCount: scala.Double = js.native
   def addColumnsAsync(tableData: js.Array[js.Array[_]]): scala.Unit = js.native

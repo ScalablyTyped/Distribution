@@ -21,14 +21,14 @@ object ^ extends js.Object {
   def fromReader[E, L, A](fa: fpDashTsLib.libReaderMod.Reader[E, A]): ReaderTaskEither[E, L, A] = js.native
   def fromTaskEither[E, L, A](fa: fpDashTsLib.libTaskEitherMod.TaskEither[L, A]): ReaderTaskEither[E, L, A] = js.native
   def left[E, L, A](fa: fpDashTsLib.libTaskMod.Task[L]): ReaderTaskEither[E, L, A] = js.native
-  def left2v[E, L](e: L): ReaderTaskEither[E, L, scala.Nothing] = js.native
-  def leftTask[E, L, A](fa: fpDashTsLib.libTaskMod.Task[L]): ReaderTaskEither[E, L, A] = js.native
+  def left2v[R, E, A](e: E): ReaderTaskEither[R, E, A] = js.native
+  def leftTask[R, E, A](fa: fpDashTsLib.libTaskMod.Task[E]): ReaderTaskEither[R, E, A] = js.native
   def local[E, E2](f: js.Function1[/* e */ E2, E]): js.Function1[/* fa */ ReaderTaskEither[E, _, _], ReaderTaskEither[E2, _, _]] = js.native
   def right[E, L, A](fa: fpDashTsLib.libTaskMod.Task[A]): ReaderTaskEither[E, L, A] = js.native
-  def right2v[E, A](a: A): ReaderTaskEither[E, scala.Nothing, A] = js.native
-  def rightIO[E, A](ma: fpDashTsLib.libIOMod.IO[A]): ReaderTaskEither[E, scala.Nothing, A] = js.native
-  def rightReader[E, A](ma: fpDashTsLib.libReaderMod.Reader[E, A]): ReaderTaskEither[E, scala.Nothing, A] = js.native
-  def rightTask[E, L, A](fa: fpDashTsLib.libTaskMod.Task[A]): ReaderTaskEither[E, L, A] = js.native
+  def right2v[R, E, A](a: A): ReaderTaskEither[R, E, A] = js.native
+  def rightIO[R, E, A](ma: fpDashTsLib.libIOMod.IO[A]): ReaderTaskEither[R, E, A] = js.native
+  def rightReader[R, E, A](ma: fpDashTsLib.libReaderMod.Reader[R, A]): ReaderTaskEither[R, E, A] = js.native
+  def rightTask[R, E, A](fa: fpDashTsLib.libTaskMod.Task[A]): ReaderTaskEither[R, E, A] = js.native
   def tryCatch[E, L, A](
     f: js.Function1[/* e */ E, js.Promise[A]],
     onrejected: js.Function2[/* reason */ js.Any, /* e */ E, L]

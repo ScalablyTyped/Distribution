@@ -17,6 +17,7 @@ class MatrixDropdownRowModelBase protected ()
   var data: IMatrixDropdownData = js.native
   val id: java.lang.String = js.native
   val isEmpty: scala.Boolean = js.native
+  val locText: LocalizableString = js.native
   val rowIndex: scala.Double = js.native
   val rowName: js.Any = js.native
   var value: js.Any = js.native

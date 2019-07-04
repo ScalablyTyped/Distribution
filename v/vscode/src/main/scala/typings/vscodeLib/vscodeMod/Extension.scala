@@ -12,6 +12,14 @@ trait Extension[T] extends js.Object {
   		 */
   val exports: T
   /**
+  		 * The extension kind describes if an extension runs where the UI runs
+  		 * or if an extension runs where the remote extension host runs. The extension kind
+  		 * if defined in the `package.json` file of extensions but can also be refined
+  		 * via the the `remote.extensionKind`-setting. When no remote extension host exists,
+  		 * the value is [`ExtensionKind.UI`](#ExtensionKind.UI).
+  		 */
+  var extensionKind: ExtensionKind
+  /**
   		 * The absolute file path of the directory containing this extension.
   		 */
   val extensionPath: java.lang.String
@@ -40,12 +48,13 @@ object Extension {
   def apply[T](
     activate: () => vscodeLib.Thenable[T],
     exports: T,
+    extensionKind: ExtensionKind,
     extensionPath: java.lang.String,
     id: java.lang.String,
     isActive: scala.Boolean,
     packageJSON: js.Any
   ): Extension[T] = {
-    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionPath = extensionPath, id = id, isActive = isActive, packageJSON = packageJSON)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionKind = extensionKind, extensionPath = extensionPath, id = id, isActive = isActive, packageJSON = packageJSON)
   
     __obj.asInstanceOf[Extension[T]]
   }

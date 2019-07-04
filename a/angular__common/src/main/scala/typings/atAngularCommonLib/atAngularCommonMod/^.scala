@@ -17,14 +17,14 @@ object ^ extends js.Object {
   val ɵPLATFORM_WORKER_APP_ID: atAngularCommonLib.atAngularCommonLibStrings.browserWorkerApp = js.native
   val ɵPLATFORM_WORKER_UI_ID: atAngularCommonLib.atAngularCommonLibStrings.browserWorkerUi = js.native
   val ɵangular_packages_common_common_a: atAngularCoreLib.atAngularCoreMod.InjectionToken[scala.Boolean] = js.native
-  val ɵangular_packages_common_common_e: js.Array[atAngularCoreLib.atAngularCoreMod.Provider] = js.native
-  val ɵangular_packages_common_common_f: js.Array[
+  val ɵangular_packages_common_common_c: js.Array[atAngularCoreLib.atAngularCoreMod.Provider] = js.native
+  val ɵangular_packages_common_common_d: js.Array[
     (org.scalablytyped.runtime.Instantiable1[
       (/* _ref */ atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) | (/* differs */ atAngularCoreLib.atAngularCoreMod.KeyValueDiffers) | (/* _localization */ NgLocalization) | (/* _locale */ java.lang.String), 
       AsyncPipe | CurrencyPipe | DatePipe | DecimalPipe | I18nPluralPipe | KeyValuePipe | PercentPipe
     ]) | (org.scalablytyped.runtime.Instantiable0[I18nSelectPipe | SlicePipe])
   ] = js.native
-  val ɵangular_packages_common_common_g: js.Array[atAngularCoreLib.atAngularCoreMod.Provider] = js.native
+  val ɵangular_packages_common_common_e: js.Array[atAngularCoreLib.atAngularCoreMod.Provider] = js.native
   val ɵngClassDirectiveDef__POST_R3__ : scala.Nothing = js.native
   val ɵngStyleDirectiveDef__POST_R3__ : scala.Nothing = js.native
   def formatCurrency(value: scala.Double, locale: java.lang.String, currency: java.lang.String): java.lang.String = js.native
@@ -112,7 +112,6 @@ object ^ extends js.Object {
   def registerLocaleData(data: js.Any, localeId: js.Any, extraData: js.Any): scala.Unit = js.native
   def ɵangular_packages_common_common_b(locale: java.lang.String, nLike: java.lang.String): Plural = js.native
   def ɵangular_packages_common_common_b(locale: java.lang.String, nLike: scala.Double): Plural = js.native
-  def ɵangular_packages_common_common_d(locale: java.lang.String): js.Any = js.native
   def ɵparseCookieValue(cookieStr: java.lang.String, name: java.lang.String): java.lang.String | scala.Null = js.native
   /**
     * Register global data to be used internally by Angular. See the

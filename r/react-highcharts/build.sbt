@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-highcharts"
-version := "16.0-dt-20190315Z-2d21be"
+version := "16.0-dt-20190315Z-431037"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-5c5531",
   "org.scalablytyped" %%% "highcharts" % "5.0-dt-20190624Z-0a166f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-9e424f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -107,6 +107,10 @@ object realmLibStrings {
     extends realmLib.RealmNs.SyncNs.ProgressDirection
   
   @js.native
+  sealed trait downloadBeforeOpen
+    extends realmLib.RealmNs.SyncNs.OpenRealmBehaviorType
+  
+  @js.native
   sealed trait error
     extends realmLib.RealmNs.SyncNs.LogLevel
   
@@ -161,6 +165,14 @@ object realmLibStrings {
     extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
+  sealed trait openImmediately
+    extends realmLib.RealmNs.SyncNs.OpenRealmBehaviorType
+  
+  @js.native
+  sealed trait openLocalRealm
+    extends realmLib.RealmNs.SyncNs.OpenRealmTimeOutBehavior
+  
+  @js.native
   sealed trait otherUser extends js.Object
   
   @js.native
@@ -177,6 +189,10 @@ object realmLibStrings {
   @js.native
   sealed trait string
     extends realmLib.RealmNs._PropertyType
+  
+  @js.native
+  sealed trait throwException
+    extends realmLib.RealmNs.SyncNs.OpenRealmTimeOutBehavior
   
   @js.native
   sealed trait trace
@@ -253,6 +269,8 @@ object realmLibStrings {
   @scala.inline
   def download: download = "download".asInstanceOf[download]
   @scala.inline
+  def downloadBeforeOpen: downloadBeforeOpen = "downloadBeforeOpen".asInstanceOf[downloadBeforeOpen]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
@@ -281,6 +299,10 @@ object realmLibStrings {
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
+  def openImmediately: openImmediately = "openImmediately".asInstanceOf[openImmediately]
+  @scala.inline
+  def openLocalRealm: openLocalRealm = "openLocalRealm".asInstanceOf[openLocalRealm]
+  @scala.inline
   def otherUser: otherUser = "otherUser".asInstanceOf[otherUser]
   @scala.inline
   def read: read = "read".asInstanceOf[read]
@@ -290,6 +312,8 @@ object realmLibStrings {
   def schema: schema = "schema".asInstanceOf[schema]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def throwException: throwException = "throwException".asInstanceOf[throwException]
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   @scala.inline

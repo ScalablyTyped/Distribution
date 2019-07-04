@@ -14,7 +14,7 @@ trait TaskEndEvent extends js.Object {
   /**
   		 * The task item representing the task that finished.
   		 */
-  var execution: TaskExecution
+  val execution: TaskExecution
 }
 
 object TaskEndEvent {

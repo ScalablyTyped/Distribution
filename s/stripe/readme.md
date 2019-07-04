@@ -61,8 +61,9 @@ These comments are from the typescript definitions and might be useful:
 //                 Christopher Eck <https://github.com/chrisleck>
 //                 Joshua Feltimo <https://github.com/opticalgenesis>
 //                 Josiah <https://github.com/spacetag>
+//                 Oleg Vaskevich <https://github.com/vaskevich>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+// TypeScript Version: 2.3
 
 ```
 

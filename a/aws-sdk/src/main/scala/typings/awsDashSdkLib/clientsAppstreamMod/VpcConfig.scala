@@ -11,7 +11,7 @@ trait VpcConfig extends js.Object {
     */
   var SecurityGroupIds: js.UndefOr[SecurityGroupIdList] = js.undefined
   /**
-    * The identifiers of the subnets to which a network interface is attached from the fleet instance or image builder instance. Fleet instances use one or two subnets. Image builder instances use one subnet.
+    * The identifiers of the subnets to which a network interface is attached from the fleet instance or image builder instance. Fleet instances use one or more subnets. Image builder instances use one subnet.
     */
   var SubnetIds: js.UndefOr[SubnetIdList] = js.undefined
 }

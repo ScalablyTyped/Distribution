@@ -260,6 +260,13 @@ trait Pivot extends js.Object {
   def on(eventType: java.lang.String, handler: java.lang.String): scala.Unit = js.native
   def on(eventType: java.lang.String, handler: js.Function1[/* repeated */ js.Any, _]): scala.Unit = js.native
   def open(): scala.Unit = js.native
+  def openCalculatedValueEditor(): scala.Unit = js.native
+  def openCalculatedValueEditor(uniqueName: java.lang.String): scala.Unit = js.native
+  def openCalculatedValueEditor(uniqueName: java.lang.String, callbackHandler: java.lang.String): scala.Unit = js.native
+  def openCalculatedValueEditor(
+    uniqueName: java.lang.String,
+    callbackHandler: js.Function1[/* response */ flexmonsterLib.Anon_IsRemoved, scala.Unit]
+  ): scala.Unit = js.native
   def openFieldsList(): scala.Unit = js.native
   def openFilter(hierarchyName: java.lang.String): scala.Unit = js.native
   def print(): scala.Unit = js.native

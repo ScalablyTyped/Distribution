@@ -9,11 +9,11 @@ trait TextEditorOptionsChangeEvent extends js.Object {
   /**
   		 * The new value for the [text editor's options](#TextEditor.options).
   		 */
-  var options: TextEditorOptions
+  val options: TextEditorOptions
   /**
   		 * The [text editor](#TextEditor) for which the options have changed.
   		 */
-  var textEditor: TextEditor
+  val textEditor: TextEditor
 }
 
 object TextEditorOptionsChangeEvent {

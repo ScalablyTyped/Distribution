@@ -11,6 +11,10 @@ trait Anon_ContentQueries[T] extends js.Object {
     */
   var contentQueries: js.UndefOr[atAngularCoreLib.atAngularCoreMod.ContentQueriesFunction[T] | scala.Null] = js.undefined
   /**
+    * Function executed by the parent template to allow children to apply host bindings.
+    */
+  var hostBindings: js.UndefOr[atAngularCoreLib.atAngularCoreMod.HostBindingsFunction[T]] = js.undefined
+  /**
     * A map of input names.
     *
     * The format is in: `{[actualPropertyName: string]:(string|[string, string])}`.
@@ -84,6 +88,7 @@ object Anon_ContentQueries {
   @scala.inline
   def apply[T](
     contentQueries: atAngularCoreLib.atAngularCoreMod.ContentQueriesFunction[T] = null,
+    hostBindings: atAngularCoreLib.atAngularCoreMod.HostBindingsFunction[T] = null,
     inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
     */ atAngularCoreLib.atAngularCoreLibStrings.Anon_ContentQueries with js.Any = null,
@@ -94,6 +99,7 @@ object Anon_ContentQueries {
   ): Anon_ContentQueries[T] = {
     val __obj = js.Dynamic.literal()
     if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries)
+    if (hostBindings != null) __obj.updateDynamic("hostBindings")(hostBindings)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (outputs != null) __obj.updateDynamic("outputs")(outputs)
     if (viewQuery != null) __obj.updateDynamic("viewQuery")(viewQuery)

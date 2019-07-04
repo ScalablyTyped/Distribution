@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   *
   * @remarks
   * 
-  * **Hosts**: Access, Excel, Word
+  * **Hosts**: Excel, Word
   * 
   * **Requirement sets**: 
   * 
@@ -269,7 +269,7 @@ trait Binding extends js.Object {
     *
     *        array of arrays: Excel and Word only
     *
-    *        `TableData`: Access, Excel, and Word only
+    *        `TableData`: Excel and Word only
     *
     *        HTML: Word on the web and Windows only
     *

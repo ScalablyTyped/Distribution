@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def compileBaseDefFromMetadata(
     meta: R3BaseRefMetaData,
-    constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool
+    constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool,
+    bindingParser: atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser
   ): atAngularCompilerLib.Anon_ExpressionType = js.native
   def compileComponentFromMetadata(
     meta: atAngularCompilerLib.srcRender3ViewApiMod.R3ComponentMetadata,

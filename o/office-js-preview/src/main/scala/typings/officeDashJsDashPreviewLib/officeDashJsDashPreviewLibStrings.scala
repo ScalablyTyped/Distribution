@@ -3250,6 +3250,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Undefined extends js.Object
   
   @js.native
+  sealed trait Unhidden extends js.Object
+  
+  @js.native
   sealed trait UniqueValues extends js.Object
   
   @js.native
@@ -3404,6 +3407,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait WorksheetFormatChanged extends js.Object
+  
+  @js.native
+  sealed trait WorksheetRowHiddenChanged extends js.Object
   
   @js.native
   sealed trait WorksheetRowSorted extends js.Object
@@ -5628,6 +5634,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
   @scala.inline
+  def Unhidden: Unhidden = "Unhidden".asInstanceOf[Unhidden]
+  @scala.inline
   def UniqueValues: UniqueValues = "UniqueValues".asInstanceOf[UniqueValues]
   @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
@@ -5731,6 +5739,8 @@ object officeDashJsDashPreviewLibStrings {
   def WorksheetFiltered: WorksheetFiltered = "WorksheetFiltered".asInstanceOf[WorksheetFiltered]
   @scala.inline
   def WorksheetFormatChanged: WorksheetFormatChanged = "WorksheetFormatChanged".asInstanceOf[WorksheetFormatChanged]
+  @scala.inline
+  def WorksheetRowHiddenChanged: WorksheetRowHiddenChanged = "WorksheetRowHiddenChanged".asInstanceOf[WorksheetRowHiddenChanged]
   @scala.inline
   def WorksheetRowSorted: WorksheetRowSorted = "WorksheetRowSorted".asInstanceOf[WorksheetRowSorted]
   @scala.inline

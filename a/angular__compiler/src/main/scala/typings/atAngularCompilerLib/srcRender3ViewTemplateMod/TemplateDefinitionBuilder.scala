@@ -54,6 +54,7 @@ class TemplateDefinitionBuilder protected ()
     */
   var _updateCodeFns: js.Any = js.native
   var _valueConverter: js.Any = js.native
+  var addSelectInstructionIfNecessary: js.Any = js.native
   var allocateBindingSlots: js.Any = js.native
   var allocateDataSlot: js.Any = js.native
   var allocatePureFunctionSlots: js.Any = js.native
@@ -102,7 +103,8 @@ class TemplateDefinitionBuilder protected ()
     *   CLASSES, class1, class2,
     *   STYLES, style1, value1, style2, value2,
     *   BINDINGS, name1, name2, name3,
-    *   TEMPLATE, name4, name5, ...]
+    *   TEMPLATE, name4, name5, name6,
+    *   I18N, name7, name8, ...]
     * ```
     *
     * Note that this function will fully ignore all synthetic (@foo) attribute values
@@ -117,6 +119,7 @@ class TemplateDefinitionBuilder protected ()
   var templatePropertyBindings: js.Any = js.native
   var toAttrsParam: js.Any = js.native
   var updateInstruction: js.Any = js.native
+  var updateInstructionChain: js.Any = js.native
   def addNamespaceInstruction(
     nsInstruction: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
     element: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element
@@ -195,6 +198,18 @@ class TemplateDefinitionBuilder protected ()
     ]
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nUpdateRef(context: atAngularCompilerLib.srcRender3ViewI18nContextMod.I18nContext): scala.Unit = js.native
+  /**
+    * Adds an update instruction for an interpolated property or attribute, such as
+    * `prop="{{value}}"` or `attr.title="{{value}}"`
+    */
+  def interpolatedUpdateInstruction(
+    instruction: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
+    elementIndex: scala.Double,
+    attrName: java.lang.String,
+    input: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.BoundAttribute,
+    value: js.Any,
+    params: js.Array[_]
+  ): scala.Unit = js.native
   /* CompleteClass */
   override def notifyImplicitReceiverUse(): scala.Unit = js.native
   def registerContextVariables(variable: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable): scala.Unit = js.native

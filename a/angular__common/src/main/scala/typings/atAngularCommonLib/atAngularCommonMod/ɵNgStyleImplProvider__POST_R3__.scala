@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵNgStyleImplProvider__POST_R3__ extends js.Object {
   var provide: org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.atAngularCommonMod.ɵNgStyleImpl] = js.native
-  var useClass: org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.atAngularCommonMod.ɵangular_packages_common_common_k] = js.native
+  var useClass: org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.atAngularCommonMod.ɵangular_packages_common_common_i] = js.native
 }
 

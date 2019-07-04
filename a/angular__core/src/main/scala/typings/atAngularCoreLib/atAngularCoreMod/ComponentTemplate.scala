@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ComponentTemplate[T] extends js.Object {
-  var ngPrivateData: js.UndefOr[scala.Nothing] = js.native
   def apply[U /* <: T */](rf: ɵRenderFlags, ctx: T | U): scala.Unit = js.native
 }
 

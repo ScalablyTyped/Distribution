@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("intl-messageformat", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: intlDashMessageformatLib.libCoreMod.IntlMessageFormat = js.native
+  def createDefaultFormatters(): intlDashMessageformatLib.libCompilerMod.Formatters = js.native
 }
 

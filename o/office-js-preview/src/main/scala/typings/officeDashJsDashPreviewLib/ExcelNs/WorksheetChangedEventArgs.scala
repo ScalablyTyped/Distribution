@@ -28,7 +28,7 @@ trait WorksheetChangedEventArgs extends js.Object {
   var changeType: DataChangeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RangeEdited | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellDeleted
   /**
     *
-    * Represents the information about the change detail
+    * Represents the information about the change detail. This property can be retrieved when the Changed event is triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
     *
     * [Api set: ExcelApi 1.9]
     */

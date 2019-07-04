@@ -12,6 +12,7 @@ object atAngularCoreLibNumbers {
        with atAngularCoreLib.atAngularCoreMod.DirectiveRegistryValuesIndex
        with atAngularCoreLib.atAngularCoreMod.IcuType
        with atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
+       with atAngularCoreLib.atAngularCoreMod.LStylingMapIndex
        with atAngularCoreLib.atAngularCoreMod.MapBasedOffsetValuesIndex
        with atAngularCoreLib.atAngularCoreMod.OutputType
        with atAngularCoreLib.atAngularCoreMod.PlayerIndex
@@ -19,6 +20,8 @@ object atAngularCoreLibNumbers {
        with atAngularCoreLib.atAngularCoreMod.SinglePropOffsetValuesIndex
        with atAngularCoreLib.atAngularCoreMod.StylingIndex
        with atAngularCoreLib.atAngularCoreMod.TNodeType
+       with atAngularCoreLib.atAngularCoreMod.TStylingConfigFlags
+       with atAngularCoreLib.atAngularCoreMod.TStylingContextIndex
        with atAngularCoreLib.atAngularCoreMod.ViewState
        with atAngularCoreLib.atAngularCoreMod.ɵArgumentType
        with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
@@ -35,6 +38,7 @@ object atAngularCoreLibNumbers {
        with atAngularCoreLib.atAngularCoreMod.DirectiveRegistryValuesIndex
        with atAngularCoreLib.atAngularCoreMod.IcuType
        with atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
+       with atAngularCoreLib.atAngularCoreMod.LStylingMapIndex
        with atAngularCoreLib.atAngularCoreMod.LViewFlags
        with atAngularCoreLib.atAngularCoreMod.MapBasedOffsetValuesIndex
        with atAngularCoreLib.atAngularCoreMod.OutputType
@@ -42,9 +46,12 @@ object atAngularCoreLibNumbers {
        with atAngularCoreLib.atAngularCoreMod.RootContextFlags
        with atAngularCoreLib.atAngularCoreMod.SelectorFlags
        with atAngularCoreLib.atAngularCoreMod.SinglePropOffsetValuesIndex
+       with atAngularCoreLib.atAngularCoreMod.StyleSanitizeMode
        with atAngularCoreLib.atAngularCoreMod.StylingIndex
        with atAngularCoreLib.atAngularCoreMod.TNodeFlags
        with atAngularCoreLib.atAngularCoreMod.TNodeType
+       with atAngularCoreLib.atAngularCoreMod.TStylingConfigFlags
+       with atAngularCoreLib.atAngularCoreMod.TStylingContextIndex
        with atAngularCoreLib.atAngularCoreMod.ViewState
        with atAngularCoreLib.atAngularCoreMod.ɵArgumentType
        with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
@@ -144,14 +151,17 @@ object atAngularCoreLibNumbers {
     extends atAngularCoreLib.atAngularCoreMod.BindingType
        with atAngularCoreLib.atAngularCoreMod.DirectiveRegistryValuesIndex
        with atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
+       with atAngularCoreLib.atAngularCoreMod.LStylingMapIndex
        with atAngularCoreLib.atAngularCoreMod.MapBasedOffsetValuesIndex
        with atAngularCoreLib.atAngularCoreMod.PlayerIndex
        with atAngularCoreLib.atAngularCoreMod.RootContextFlags
        with atAngularCoreLib.atAngularCoreMod.SelectorFlags
        with atAngularCoreLib.atAngularCoreMod.SinglePropOffsetValuesIndex
+       with atAngularCoreLib.atAngularCoreMod.StyleSanitizeMode
        with atAngularCoreLib.atAngularCoreMod.StylingIndex
        with atAngularCoreLib.atAngularCoreMod.TNodeFlags
        with atAngularCoreLib.atAngularCoreMod.TNodeType
+       with atAngularCoreLib.atAngularCoreMod.TStylingContextIndex
        with atAngularCoreLib.atAngularCoreMod.ViewState
        with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
        with atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
@@ -210,8 +220,10 @@ object atAngularCoreLibNumbers {
        with atAngularCoreLib.atAngularCoreMod.LViewFlags
        with atAngularCoreLib.atAngularCoreMod.MapBasedOffsetValuesIndex
        with atAngularCoreLib.atAngularCoreMod.PlayerIndex
+       with atAngularCoreLib.atAngularCoreMod.StyleSanitizeMode
        with atAngularCoreLib.atAngularCoreMod.StylingIndex
        with atAngularCoreLib.atAngularCoreMod.TNodeType
+       with atAngularCoreLib.atAngularCoreMod.TStylingContextIndex
        with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
        with atAngularCoreLib.atAngularCoreMod.ɵNodeFlags
        with atAngularCoreLib.atAngularCoreMod.ɵQueryValueType
@@ -219,6 +231,7 @@ object atAngularCoreLibNumbers {
   @js.native
   sealed trait `32`
     extends atAngularCoreLib.atAngularCoreMod.LViewFlags
+       with atAngularCoreLib.atAngularCoreMod.TNodeFlags
        with atAngularCoreLib.atAngularCoreMod.ViewState
        with atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
        with atAngularCoreLib.atAngularCoreMod.ɵNodeFlags
@@ -244,6 +257,7 @@ object atAngularCoreLibNumbers {
        with atAngularCoreLib.atAngularCoreMod.StylingIndex
        with atAngularCoreLib.atAngularCoreMod.TNodeFlags
        with atAngularCoreLib.atAngularCoreMod.TNodeType
+       with atAngularCoreLib.atAngularCoreMod.TStylingContextIndex
        with atAngularCoreLib.atAngularCoreMod.ViewState
        with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
        with atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
@@ -268,6 +282,7 @@ object atAngularCoreLibNumbers {
     extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
        with atAngularCoreLib.atAngularCoreMod.StylingIndex
        with atAngularCoreLib.atAngularCoreMod.TNodeType
+       with atAngularCoreLib.atAngularCoreMod.TStylingContextIndex
        with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
   
   @js.native
@@ -287,6 +302,7 @@ object atAngularCoreLibNumbers {
   @js.native
   sealed trait `6`
     extends atAngularCoreLib.atAngularCoreMod.StylingIndex
+       with atAngularCoreLib.atAngularCoreMod.ɵAttributeMarker
   
   @js.native
   sealed trait `64`

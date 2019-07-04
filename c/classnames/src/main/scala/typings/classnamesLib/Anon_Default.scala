@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Default extends js.Object {
-  @JSName("default")
-  var default_Original: classnamesLib.classnamesMod.ClassNamesFn = js.native
-  def default(classes: classnamesLib.typesMod.ClassValue*): java.lang.String = js.native
+  var default: classnamesLib.bindMod.ClassNamesBind
+}
+
+object Anon_Default {
+  @scala.inline
+  def apply(default: classnamesLib.bindMod.ClassNamesBind): Anon_Default = {
+    val __obj = js.Dynamic.literal(default = default)
+  
+    __obj.asInstanceOf[Anon_Default]
+  }
 }
 

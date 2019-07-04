@@ -35,6 +35,9 @@ trait ButtonProps extends js.Object {
   var plain: js.UndefOr[scala.Boolean] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
   var reverse: js.UndefOr[scala.Boolean] = js.undefined
+  var target: js.UndefOr[
+    grommetLib.grommetLibStrings._self | grommetLib.grommetLibStrings._blank | grommetLib.grommetLibStrings._parent | grommetLib.grommetLibStrings._top
+  ] = js.undefined
   var `type`: js.UndefOr[
     grommetLib.grommetLibStrings.button | grommetLib.grommetLibStrings.reset | grommetLib.grommetLibStrings.submit
   ] = js.undefined
@@ -62,6 +65,7 @@ object ButtonProps {
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
+    target: grommetLib.grommetLibStrings._self | grommetLib.grommetLibStrings._blank | grommetLib.grommetLibStrings._parent | grommetLib.grommetLibStrings._top = null,
     `type`: grommetLib.grommetLibStrings.button | grommetLib.grommetLibStrings.reset | grommetLib.grommetLibStrings.submit = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
@@ -84,6 +88,7 @@ object ButtonProps {
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }

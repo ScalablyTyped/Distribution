@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "monocle-ts"
-version := "1.7.2-3475e6"
+version := "1.7.2-46a080"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "fp-ts" % "1.19.0-633d80",
+  "org.scalablytyped" %%% "fp-ts" % "1.19.3-a7bbf8",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

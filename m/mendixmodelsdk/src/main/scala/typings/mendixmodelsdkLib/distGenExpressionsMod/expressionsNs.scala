@@ -104,6 +104,7 @@ object expressionsNs extends js.Object {
     val containerAsEndEvent: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.EndEvent = js.native
     val containerAsExpressionSplitCondition: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ExpressionSplitCondition = js.native
     val containerAsExpressionValue: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue = js.native
+    val containerAsFormDataPart: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart = js.native
     val containerAsFunctionCallExpression: FunctionCallExpression = js.native
     val containerAsGenerateDocumentAction: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.GenerateDocumentAction = js.native
     val containerAsHttpConfiguration: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.HttpConfiguration = js.native
@@ -468,6 +469,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BinaryExpression = js.native
+    /**
+      * Creates and returns a new BinaryExpression instance in the SDK and on the server.
+      * The new BinaryExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BinaryExpression = js.native
     /**
       * Creates and returns a new BinaryExpression instance in the SDK and on the server.
       * The new BinaryExpression will be automatically stored in the 'arguments' property
@@ -908,6 +918,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BooleanLiteral = js.native
     /**
       * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
+      * The new BooleanLiteral will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BooleanLiteral = js.native
+    /**
+      * Creates and returns a new BooleanLiteral instance in the SDK and on the server.
       * The new BooleanLiteral will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -1324,6 +1343,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.ConstantRefExpression = js.native
+    /**
+      * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
+      * The new ConstantRefExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.ConstantRefExpression = js.native
     /**
       * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
       * The new ConstantRefExpression will be automatically stored in the 'arguments' property
@@ -1744,6 +1772,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.EmptyLiteral = js.native
     /**
       * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
+      * The new EmptyLiteral will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.EmptyLiteral = js.native
+    /**
+      * Creates and returns a new EmptyLiteral instance in the SDK and on the server.
       * The new EmptyLiteral will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -2160,6 +2197,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.EnumerationValueRefExpression = js.native
+    /**
+      * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
+      * The new EnumerationValueRefExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.EnumerationValueRefExpression = js.native
     /**
       * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
       * The new EnumerationValueRefExpression will be automatically stored in the 'arguments' property
@@ -2587,6 +2633,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.FloatLiteral = js.native
     /**
       * Creates and returns a new FloatLiteral instance in the SDK and on the server.
+      * The new FloatLiteral will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.FloatLiteral = js.native
+    /**
+      * Creates and returns a new FloatLiteral instance in the SDK and on the server.
       * The new FloatLiteral will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -3003,6 +3058,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.FunctionCallExpression = js.native
+    /**
+      * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
+      * The new FunctionCallExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.FunctionCallExpression = js.native
     /**
       * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
       * The new FunctionCallExpression will be automatically stored in the 'arguments' property
@@ -3445,6 +3509,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.IfExpression = js.native
     /**
       * Creates and returns a new IfExpression instance in the SDK and on the server.
+      * The new IfExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.IfExpression = js.native
+    /**
+      * Creates and returns a new IfExpression instance in the SDK and on the server.
       * The new IfExpression will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -3861,6 +3934,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.IntegerLiteral = js.native
+    /**
+      * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
+      * The new IntegerLiteral will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.IntegerLiteral = js.native
     /**
       * Creates and returns a new IntegerLiteral instance in the SDK and on the server.
       * The new IntegerLiteral will be automatically stored in the 'arguments' property
@@ -4286,6 +4368,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.NoExpression = js.native
+    /**
+      * Creates and returns a new NoExpression instance in the SDK and on the server.
+      * The new NoExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.NoExpression = js.native
     /**
       * Creates and returns a new NoExpression instance in the SDK and on the server.
       * The new NoExpression will be automatically stored in the 'arguments' property
@@ -4728,6 +4819,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.ParenthesisExpression = js.native
     /**
       * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
+      * The new ParenthesisExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.ParenthesisExpression = js.native
+    /**
+      * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
       * The new ParenthesisExpression will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -5146,6 +5246,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.StringLiteral = js.native
     /**
       * Creates and returns a new StringLiteral instance in the SDK and on the server.
+      * The new StringLiteral will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.StringLiteral = js.native
+    /**
+      * Creates and returns a new StringLiteral instance in the SDK and on the server.
       * The new StringLiteral will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -5562,6 +5671,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnaryExpression = js.native
+    /**
+      * Creates and returns a new UnaryExpression instance in the SDK and on the server.
+      * The new UnaryExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnaryExpression = js.native
     /**
       * Creates and returns a new UnaryExpression instance in the SDK and on the server.
       * The new UnaryExpression will be automatically stored in the 'arguments' property
@@ -5989,6 +6107,15 @@ object expressionsNs extends js.Object {
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnparsableExpression = js.native
     /**
       * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
+      * The new UnparsableExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnparsableExpression = js.native
+    /**
+      * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
       * The new UnparsableExpression will be automatically stored in the 'arguments' property
       * of the parent FunctionCallExpression element passed as argument.
       *
@@ -6412,6 +6539,15 @@ object expressionsNs extends js.Object {
       *  7.9.0 to 7.18.0
       */
     def createInExpressionValueUnderValueModel(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.VariableRefExpression = js.native
+    /**
+      * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
+      * The new VariableRefExpression will be automatically stored in the 'valueModel' property
+      * of the parent microflows.FormDataPart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInFormDataPartUnderValueModel(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.VariableRefExpression = js.native
     /**
       * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
       * The new VariableRefExpression will be automatically stored in the 'arguments' property

@@ -24,7 +24,6 @@ object libUtilsMod extends js.Object {
   def isBuiltInEvent(eventType: xstateLib.libTypesMod.EventType): scala.Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
   def isMachine(value: js.Any): /* is xstate.xstate/lib/types.StateMachine<any, any, any> */ scala.Boolean = js.native
-  def isMachine(value: xstateLib.libTypesMod.StateMachine[_, _, _]): /* is xstate.xstate/lib/types.StateMachine<any, any, any> */ scala.Boolean = js.native
   def isObservable[T](value: js.Any): /* is xstate.xstate/lib/types.Subscribable<T> */ scala.Boolean = js.native
   def isObservable[T](value: xstateLib.libTypesMod.Subscribable[T]): /* is xstate.xstate/lib/types.Subscribable<T> */ scala.Boolean = js.native
   def isPromiseLike(value: js.Any): /* is std.PromiseLike<any> */ scala.Boolean = js.native

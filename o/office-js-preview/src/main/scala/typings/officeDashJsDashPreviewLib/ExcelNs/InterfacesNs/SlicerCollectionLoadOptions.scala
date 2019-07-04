@@ -42,7 +42,7 @@ trait SlicerCollectionLoadOptions extends js.Object {
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: True if all filters currently applied on the slicer is cleared.
+    * For EACH ITEM in the collection: True if all filters currently applied on the slicer are cleared.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -67,7 +67,7 @@ trait SlicerCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the name used in the formula.
+    * For EACH ITEM in the collection: Represents the slicer name used in the formula.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -83,7 +83,7 @@ trait SlicerCollectionLoadOptions extends js.Object {
   var sortBy: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 through SlicerStyleLight6, TableStyleOther1 through TableStyleOther2, SlicerStyleDark1 through SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+    * For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

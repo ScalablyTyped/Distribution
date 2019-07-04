@@ -200,7 +200,7 @@ class Range ()
   def getBookmarks(includeHidden: scala.Boolean, includeAdjacent: scala.Boolean): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[java.lang.String]] = js.native
   /**
     *
-    * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+    * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */

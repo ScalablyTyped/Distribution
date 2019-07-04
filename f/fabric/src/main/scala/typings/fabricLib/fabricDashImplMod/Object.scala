@@ -460,7 +460,7 @@ class Object ()
   	 * This callback function is called every time _discardActiveObject or _setActiveObject
   	 * try to to select this object. If the function returns true, the process is cancelled
   	 */
-  def onSelect(): scala.Unit = js.native
+  def onSelect(options: fabricLib.Anon_EEvent): scala.Boolean = js.native
   /**
   	 * Renders an object on a specified context
   	 * @param {CanvasRenderingContext2D} ctx Context to render on

@@ -48,6 +48,12 @@ object fabricLibStrings {
   @js.native
   sealed trait `use-credentials` extends js.Object
   
+  @js.native
+  sealed trait x extends js.Object
+  
+  @js.native
+  sealed trait y extends js.Object
+  
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
@@ -76,5 +82,9 @@ object fabricLibStrings {
   def toDataURLWithQuality: toDataURLWithQuality = "toDataURLWithQuality".asInstanceOf[toDataURLWithQuality]
   @scala.inline
   def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
 }
 

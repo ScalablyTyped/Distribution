@@ -9,7 +9,7 @@ package object libUtilsDecoratorsMod {
   type BabelDescriptor = stdLib.PropertyDescriptor with mobxLib.Anon_Initializer
   type PropertyCreator = js.Function5[
     /* instance */ js.Any, 
-    /* propertyName */ java.lang.String, 
+    /* propertyName */ stdLib.PropertyKey, 
     /* descriptor */ js.UndefOr[BabelDescriptor], 
     /* decoratorTarget */ js.Any, 
     /* decoratorArgs */ js.Array[js.Any], 

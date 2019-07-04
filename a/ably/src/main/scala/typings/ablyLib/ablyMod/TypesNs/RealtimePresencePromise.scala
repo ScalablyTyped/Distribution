@@ -11,8 +11,8 @@ trait RealtimePresencePromise extends RealtimePresenceBase {
   def enter(data: js.Any): js.Promise[scala.Unit] = js.native
   def enterClient(clientId: java.lang.String): js.Promise[scala.Unit] = js.native
   def enterClient(clientId: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
-  def get(): js.Promise[PaginatedResult[PresenceMessage]] = js.native
-  def get(params: RealtimePresenceParams): js.Promise[PaginatedResult[PresenceMessage]] = js.native
+  def get(): js.Promise[js.Array[PresenceMessage]] = js.native
+  def get(params: RealtimePresenceParams): js.Promise[js.Array[PresenceMessage]] = js.native
   def history(): js.Promise[PaginatedResult[PresenceMessage]] = js.native
   def history(params: RealtimeHistoryParams): js.Promise[PaginatedResult[PresenceMessage]] = js.native
   def leave(): js.Promise[scala.Unit] = js.native

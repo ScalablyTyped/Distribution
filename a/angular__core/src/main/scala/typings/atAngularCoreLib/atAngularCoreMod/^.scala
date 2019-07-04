@@ -45,6 +45,7 @@ object ^ extends js.Object {
   val ViewChildren: ViewChildrenDecorator = js.native
   val ɵALLOW_MULTIPLE_PLATFORMS: InjectionToken[scala.Boolean] = js.native
   val ɵAPP_ROOT: InjectionToken[scala.Boolean] = js.native
+  val ɵDEFAULT_LOCALE_ID: atAngularCoreLib.atAngularCoreLibStrings.`en-US` = js.native
   val ɵEMPTY_ARRAY: js.Array[js.Any] = js.native
   val ɵNG_BASE_DEF: java.lang.String = js.native
   val ɵNG_COMPONENT_DEF: java.lang.String = js.native
@@ -115,6 +116,8 @@ object ^ extends js.Object {
   def ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__[T](moduleType: Type[T]): ModuleWithComponentFactories[T] = js.native
   def ɵCompiler_compileModuleAsync__POST_R3__[T](moduleType: Type[T]): js.Promise[NgModuleFactory[T]] = js.native
   def ɵCompiler_compileModuleSync__POST_R3__[T](moduleType: Type[T]): NgModuleFactory[T] = js.native
+  def ɵINJECTOR_IMPL__POST_R3__(providers: js.Array[StaticProvider], parent: js.UndefOr[scala.Nothing], name: java.lang.String): Injector = js.native
+  def ɵINJECTOR_IMPL__POST_R3__(providers: js.Array[StaticProvider], parent: Injector, name: java.lang.String): Injector = js.native
   def ɵLifecycleHooksFeature(component: js.Any, `def`: ɵComponentDef[_]): scala.Unit = js.native
   def ɵ_sanitizeHtml(defaultDoc: js.Any, unsafeHtmlInput: java.lang.String): java.lang.String = js.native
   def ɵ_sanitizeStyle(value: java.lang.String): java.lang.String = js.native
@@ -237,14 +240,14 @@ object ^ extends js.Object {
     handleEvent: scala.Null,
     templateFactory: ViewDefinitionFactory
   ): NodeDef = js.native
-  def ɵangular_packages_core_core_b[T](token: InjectionToken[T]): T | scala.Null = js.native
-  def ɵangular_packages_core_core_b[T](token: InjectionToken[T], flags: InjectFlags): T | scala.Null = js.native
-  def ɵangular_packages_core_core_b[T](token: Type[T]): T | scala.Null = js.native
-  def ɵangular_packages_core_core_b[T](token: Type[T], flags: InjectFlags): T | scala.Null = js.native
-  @JSName("ɵangular_packages_core_core_b")
-  def ɵangular_packages_core_core_b_TT[T](token: InjectionToken[T]): T = js.native
-  @JSName("ɵangular_packages_core_core_b")
-  def ɵangular_packages_core_core_b_TT[T](token: Type[T]): T = js.native
+  def ɵangular_packages_core_core_a[T](token: InjectionToken[T]): T | scala.Null = js.native
+  def ɵangular_packages_core_core_a[T](token: InjectionToken[T], flags: InjectFlags): T | scala.Null = js.native
+  def ɵangular_packages_core_core_a[T](token: Type[T]): T | scala.Null = js.native
+  def ɵangular_packages_core_core_a[T](token: Type[T], flags: InjectFlags): T | scala.Null = js.native
+  @JSName("ɵangular_packages_core_core_a")
+  def ɵangular_packages_core_core_a_TT[T](token: InjectionToken[T]): T = js.native
+  @JSName("ɵangular_packages_core_core_a")
+  def ɵangular_packages_core_core_a_TT[T](token: Type[T]): T = js.native
   def ɵangular_packages_core_core_bc(tNode: TNode, attrNameToInject: java.lang.String): java.lang.String | scala.Null = js.native
   def ɵangular_packages_core_core_bd(): ɵangular_packages_core_core_bm = js.native
   def ɵangular_packages_core_core_be(): TNode = js.native
@@ -398,6 +401,7 @@ object ^ extends js.Object {
   def ɵcompileNgModule(moduleType: Type[_]): scala.Unit = js.native
   def ɵcompileNgModule(moduleType: Type[_], ngModule: NgModule): scala.Unit = js.native
   def ɵcompileNgModuleDefs(moduleType: ɵNgModuleType[_], ngModule: NgModule): scala.Unit = js.native
+  def ɵcompileNgModuleDefs(moduleType: ɵNgModuleType[_], ngModule: NgModule, allowDuplicateDeclarationsInRoot: scala.Boolean): scala.Unit = js.native
   def ɵcompileNgModuleFactory__POST_R3__[M](injector: Injector, options: CompilerOptions, moduleType: Type[M]): js.Promise[NgModuleFactory[M]] = js.native
   def ɵcompilePipe(`type`: Type[_], meta: Pipe): scala.Unit = js.native
   def ɵcreateInjector(defType: js.Any): Injector = js.native
@@ -513,6 +517,7 @@ object ^ extends js.Object {
     componentView: js.UndefOr[scala.Null | ViewDefinitionFactory],
     componentRendererType: js.UndefOr[RendererType2 | scala.Null]
   ): NodeDef = js.native
+  def ɵfindLocaleData(locale: java.lang.String): js.Any = js.native
   def ɵflushModuleScopingQueueAsMuchAsPossible(): scala.Unit = js.native
   def ɵgetComponentViewDefinitionFactory(componentFactory: ComponentFactory[_]): ViewDefinitionFactory = js.native
   def ɵgetDebugNode__POST_R3__(): scala.Null = js.native
@@ -522,6 +527,7 @@ object ^ extends js.Object {
   def ɵgetHostElement[T](directive: T): stdLib.Element = js.native
   def ɵgetInjectableDef[T](`type`: js.Any): ɵɵInjectableDef[T] | scala.Null = js.native
   def ɵgetLContext(target: js.Any): ɵLContext | scala.Null = js.native
+  def ɵgetLocalePluralCase(locale: java.lang.String): js.Function1[/* value */ scala.Double, scala.Double] = js.native
   def ɵgetModuleFactory__POST_R3__(id: java.lang.String): NgModuleFactory[_] = js.native
   def ɵgetPlayers(ref: ComponentInstance | DirectiveInstance): js.Array[ɵPlayer] = js.native
   def ɵgetPlayers(ref: stdLib.HTMLElement): js.Array[ɵPlayer] = js.native
@@ -609,7 +615,7 @@ object ^ extends js.Object {
     bindings: org.scalablytyped.runtime.StringDictionary[ɵQueryBindingType]
   ): NodeDef = js.native
   def ɵregisterModuleFactory(id: java.lang.String, factory: NgModuleFactory[_]): scala.Unit = js.native
-  def ɵregisterNgModuleType(id: java.lang.String, ngModuleType: ɵNgModuleType[_]): scala.Unit = js.native
+  def ɵregisterNgModuleType(ngModuleType: ɵNgModuleType[_]): scala.Unit = js.native
   def ɵrenderComponent[T](componentType: Type[T]): T = js.native
   def ɵrenderComponent[T](componentType: Type[T], opts: CreateComponentOptions): T = js.native
   def ɵrenderComponent[T](componentType: ɵComponentType[T]): T = js.native
@@ -651,6 +657,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def ɵsetCurrentInjector(): js.UndefOr[Injector | scala.Null] = js.native
   def ɵsetCurrentInjector(injector: Injector): js.UndefOr[Injector | scala.Null] = js.native
+  def ɵsetLocaleId(localeId: java.lang.String): scala.Unit = js.native
   def ɵstore[T](index: scala.Double, value: T): scala.Unit = js.native
   def ɵstringify(token: js.Any): java.lang.String = js.native
   def ɵted(checkIndex: scala.Double, ngContentIndex: scala.Double, staticText: js.Array[java.lang.String]): NodeDef = js.native
@@ -679,7 +686,357 @@ object ^ extends js.Object {
   def ɵɵProvidersFeature[T](providers: js.Array[Provider]): js.Function1[/* definition */ ɵDirectiveDef[T], scala.Unit] = js.native
   def ɵɵProvidersFeature[T](providers: js.Array[Provider], viewProviders: js.Array[Provider]): js.Function1[/* definition */ ɵDirectiveDef[T], scala.Unit] = js.native
   def ɵɵallocHostVars(count: scala.Double): scala.Unit = js.native
-  def ɵɵbind[T](value: T): T | ɵNO_CHANGE = js.native
+  def ɵɵattribute(name: java.lang.String, value: js.Any): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattribute(name: java.lang.String, value: js.Any, sanitizer: SanitizerFn): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattribute(name: java.lang.String, value: js.Any, sanitizer: SanitizerFn, namespace: java.lang.String): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattribute(name: java.lang.String, value: js.Any, sanitizer: scala.Null, namespace: java.lang.String): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate1(attrName: java.lang.String, prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate1(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate1(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate2(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate2(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate2(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate3(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate3(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate3(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate4(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate4(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate4(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate5(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate5(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate5(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate6(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate6(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate6(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate7(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate7(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate7(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate8(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    i6: java.lang.String,
+    v7: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate8(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    i6: java.lang.String,
+    v7: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolate8(
+    attrName: java.lang.String,
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    i6: java.lang.String,
+    v7: js.Any,
+    suffix: java.lang.String,
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolateV(attrName: java.lang.String, values: js.Array[_]): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolateV(attrName: java.lang.String, values: js.Array[_], sanitizer: SanitizerFn): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵattributeInterpolateV(
+    attrName: java.lang.String,
+    values: js.Array[_],
+    sanitizer: SanitizerFn,
+    namespace: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵclassMap(): scala.Unit = js.native
+  def ɵɵclassMap(classes: ɵNO_CHANGE): scala.Unit = js.native
+  def ɵɵclassMap(classes: java.lang.String): scala.Unit = js.native
+  def ɵɵclassMap(classes: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def ɵɵclassProp(classIndex: scala.Double, value: ɵPlayerFactory): scala.Unit = js.native
+  def ɵɵclassProp(classIndex: scala.Double, value: ɵPlayerFactory, forceOverride: scala.Boolean): scala.Unit = js.native
+  def ɵɵclassProp(classIndex: scala.Double, value: scala.Boolean): scala.Unit = js.native
+  def ɵɵclassProp(classIndex: scala.Double, value: scala.Boolean, forceOverride: scala.Boolean): scala.Unit = js.native
   def ɵɵcomponentHostSyntheticListener[T](eventName: java.lang.String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _]): scala.Unit = js.native
   def ɵɵcomponentHostSyntheticListener[T](
     eventName: java.lang.String,
@@ -691,38 +1048,6 @@ object ^ extends js.Object {
     listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _],
     useCapture: scala.Boolean,
     eventTargetResolver: GlobalTargetResolver
-  ): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](index: scala.Double, propName: java.lang.String, value: T): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](index: scala.Double, propName: java.lang.String, value: T, sanitizer: SanitizerFn): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: T,
-    sanitizer: SanitizerFn,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: T,
-    sanitizer: scala.Null,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](index: scala.Double, propName: java.lang.String, value: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](index: scala.Double, propName: java.lang.String, value: ɵNO_CHANGE, sanitizer: SanitizerFn): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: ɵNO_CHANGE,
-    sanitizer: SanitizerFn,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵcomponentHostSyntheticProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: ɵNO_CHANGE,
-    sanitizer: scala.Null,
-    nativeOnly: scala.Boolean
   ): scala.Unit = js.native
   def ɵɵcontainer(index: scala.Double): scala.Unit = js.native
   def ɵɵcontainerRefreshEnd(): scala.Unit = js.native
@@ -760,26 +1085,6 @@ object ^ extends js.Object {
     attrs: scala.Null,
     localRefs: js.Array[java.lang.String]
   ): scala.Unit = js.native
-  def ɵɵelementAttribute(index: scala.Double, name: java.lang.String, value: js.Any): scala.Unit = js.native
-  def ɵɵelementAttribute(index: scala.Double, name: java.lang.String, value: js.Any, sanitizer: SanitizerFn): scala.Unit = js.native
-  def ɵɵelementAttribute(
-    index: scala.Double,
-    name: java.lang.String,
-    value: js.Any,
-    sanitizer: SanitizerFn,
-    namespace: java.lang.String
-  ): scala.Unit = js.native
-  def ɵɵelementAttribute(
-    index: scala.Double,
-    name: java.lang.String,
-    value: js.Any,
-    sanitizer: scala.Null,
-    namespace: java.lang.String
-  ): scala.Unit = js.native
-  def ɵɵelementClassProp(index: scala.Double, classIndex: scala.Double, value: ɵPlayerFactory): scala.Unit = js.native
-  def ɵɵelementClassProp(index: scala.Double, classIndex: scala.Double, value: ɵPlayerFactory, forceOverride: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementClassProp(index: scala.Double, classIndex: scala.Double, value: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementClassProp(index: scala.Double, classIndex: scala.Double, value: scala.Boolean, forceOverride: scala.Boolean): scala.Unit = js.native
   def ɵɵelementContainerEnd(): scala.Unit = js.native
   def ɵɵelementContainerStart(index: scala.Double): scala.Unit = js.native
   def ɵɵelementContainerStart(index: scala.Double, attrs: atAngularCoreLib.TAttributes): scala.Unit = js.native
@@ -787,119 +1092,6 @@ object ^ extends js.Object {
   def ɵɵelementContainerStart(index: scala.Double, attrs: scala.Null, localRefs: js.Array[java.lang.String]): scala.Unit = js.native
   def ɵɵelementEnd(): scala.Unit = js.native
   def ɵɵelementHostAttrs(attrs: atAngularCoreLib.TAttributes): scala.Unit = js.native
-  def ɵɵelementHostClassProp(classIndex: scala.Double, value: ɵPlayerFactory): scala.Unit = js.native
-  def ɵɵelementHostClassProp(classIndex: scala.Double, value: ɵPlayerFactory, forceOverride: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementHostClassProp(classIndex: scala.Double, value: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementHostClassProp(classIndex: scala.Double, value: scala.Boolean, forceOverride: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: ɵPlayerFactory): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: ɵPlayerFactory, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(
-    styleIndex: scala.Double,
-    value: ɵPlayerFactory,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: ɵPlayerFactory, suffix: scala.Null, forceOverride: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(
-    styleIndex: scala.Double,
-    value: java.lang.String,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(
-    styleIndex: scala.Double,
-    value: java.lang.String,
-    suffix: scala.Null,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(
-    styleIndex: scala.Double,
-    value: scala.Double,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: scala.Double, suffix: scala.Null, forceOverride: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(
-    styleIndex: scala.Double,
-    value: scala.Null,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyleProp(styleIndex: scala.Double, value: scala.Null, suffix: scala.Null, forceOverride: scala.Boolean): scala.Unit = js.native
-  def ɵɵelementHostStyling(): scala.Unit = js.native
-  def ɵɵelementHostStyling(classBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def ɵɵelementHostStyling(classBindingNames: js.Array[java.lang.String], styleBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def ɵɵelementHostStyling(
-    classBindingNames: js.Array[java.lang.String],
-    styleBindingNames: js.Array[java.lang.String],
-    styleSanitizer: StyleSanitizeFn
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyling(
-    classBindingNames: js.Array[java.lang.String],
-    styleBindingNames: scala.Null,
-    styleSanitizer: StyleSanitizeFn
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyling(classBindingNames: scala.Null, styleBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def ɵɵelementHostStyling(
-    classBindingNames: scala.Null,
-    styleBindingNames: js.Array[java.lang.String],
-    styleSanitizer: StyleSanitizeFn
-  ): scala.Unit = js.native
-  def ɵɵelementHostStyling(classBindingNames: scala.Null, styleBindingNames: scala.Null, styleSanitizer: StyleSanitizeFn): scala.Unit = js.native
-  def ɵɵelementHostStylingApply(): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: ɵNO_CHANGE, styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: ɵNO_CHANGE, styles: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: java.lang.String): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: java.lang.String, styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: java.lang.String, styles: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: org.scalablytyped.runtime.StringDictionary[js.Any], styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(
-    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
-    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: scala.Null, styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementHostStylingMap(classes: scala.Null, styles: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵɵelementProperty[T](index: scala.Double, propName: java.lang.String, value: T): scala.Unit = js.native
-  def ɵɵelementProperty[T](index: scala.Double, propName: java.lang.String, value: T, sanitizer: SanitizerFn): scala.Unit = js.native
-  def ɵɵelementProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: T,
-    sanitizer: SanitizerFn,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: T,
-    sanitizer: scala.Null,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementProperty[T](index: scala.Double, propName: java.lang.String, value: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementProperty[T](index: scala.Double, propName: java.lang.String, value: ɵNO_CHANGE, sanitizer: SanitizerFn): scala.Unit = js.native
-  def ɵɵelementProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: ɵNO_CHANGE,
-    sanitizer: SanitizerFn,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementProperty[T](
-    index: scala.Double,
-    propName: java.lang.String,
-    value: ɵNO_CHANGE,
-    sanitizer: scala.Null,
-    nativeOnly: scala.Boolean
-  ): scala.Unit = js.native
   def ɵɵelementStart(index: scala.Double, name: java.lang.String): scala.Unit = js.native
   def ɵɵelementStart(index: scala.Double, name: java.lang.String, attrs: atAngularCoreLib.TAttributes): scala.Unit = js.native
   def ɵɵelementStart(
@@ -914,136 +1106,18 @@ object ^ extends js.Object {
     attrs: scala.Null,
     localRefs: js.Array[java.lang.String]
   ): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: ɵPlayerFactory): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: ɵPlayerFactory, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: ɵPlayerFactory,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: ɵPlayerFactory,
-    suffix: scala.Null,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: java.lang.String,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: java.lang.String,
-    suffix: scala.Null,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: scala.Double,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: scala.Double,
-    suffix: scala.Null,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: scala.Null,
-    suffix: java.lang.String,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: scala.Null,
-    suffix: scala.Null,
-    forceOverride: scala.Boolean
-  ): scala.Unit = js.native
-  def ɵɵelementStyling(): scala.Unit = js.native
-  def ɵɵelementStyling(classBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def ɵɵelementStyling(classBindingNames: js.Array[java.lang.String], styleBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def ɵɵelementStyling(
-    classBindingNames: js.Array[java.lang.String],
-    styleBindingNames: js.Array[java.lang.String],
-    styleSanitizer: StyleSanitizeFn
-  ): scala.Unit = js.native
-  def ɵɵelementStyling(
-    classBindingNames: js.Array[java.lang.String],
-    styleBindingNames: scala.Null,
-    styleSanitizer: StyleSanitizeFn
-  ): scala.Unit = js.native
-  def ɵɵelementStyling(classBindingNames: scala.Null, styleBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def ɵɵelementStyling(
-    classBindingNames: scala.Null,
-    styleBindingNames: js.Array[java.lang.String],
-    styleSanitizer: StyleSanitizeFn
-  ): scala.Unit = js.native
-  def ɵɵelementStyling(classBindingNames: scala.Null, styleBindingNames: scala.Null, styleSanitizer: StyleSanitizeFn): scala.Unit = js.native
-  def ɵɵelementStylingApply(index: scala.Double): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double, classes: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double, classes: ɵNO_CHANGE, styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementStylingMap(
-    index: scala.Double,
-    classes: ɵNO_CHANGE,
-    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double, classes: java.lang.String): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double, classes: java.lang.String, styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementStylingMap(
-    index: scala.Double,
-    classes: java.lang.String,
-    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double, classes: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵɵelementStylingMap(
-    index: scala.Double,
-    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
-    styles: ɵNO_CHANGE
-  ): scala.Unit = js.native
-  def ɵɵelementStylingMap(
-    index: scala.Double,
-    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
-    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵɵelementStylingMap(index: scala.Double, classes: scala.Null, styles: ɵNO_CHANGE): scala.Unit = js.native
-  def ɵɵelementStylingMap(
-    index: scala.Double,
-    classes: scala.Null,
-    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
   def ɵɵembeddedViewEnd(): scala.Unit = js.native
   def ɵɵembeddedViewStart(viewBlockId: scala.Double, consts: scala.Double, vars: scala.Double): ɵRenderFlags = js.native
   def ɵɵenableBindings(): scala.Unit = js.native
   def ɵɵgetCurrentView(): OpaqueViewState = js.native
-  def ɵɵgetFactoryOf[T](`type`: Type[_]): (js.Function1[/* type */ Type[T] | scala.Null, T]) | scala.Null = js.native
+  def ɵɵgetFactoryOf[T](`type`: Type[_]): FactoryFn[T] | scala.Null = js.native
   def ɵɵgetInheritedFactory[T](`type`: Type[_]): js.Function1[/* type */ Type[T], T] = js.native
   def ɵɵi18n(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def ɵɵi18n(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native
   def ɵɵi18nApply(index: scala.Double): scala.Unit = js.native
   def ɵɵi18nAttributes(index: scala.Double, values: js.Array[java.lang.String]): scala.Unit = js.native
   def ɵɵi18nEnd(): scala.Unit = js.native
-  def ɵɵi18nExp[T](expression: T): scala.Unit = js.native
-  def ɵɵi18nExp[T](expression: ɵNO_CHANGE): scala.Unit = js.native
+  def ɵɵi18nExp[T](value: T): atAngularCoreLib.TsickleIssue1009 = js.native
   def ɵɵi18nLocalize(input: java.lang.String): java.lang.String = js.native
   def ɵɵi18nLocalize(
     input: java.lang.String,
@@ -1624,6 +1698,71 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def ɵɵstaticViewQuery[T](predicate: Type[_], descend: scala.Boolean, read: js.Any): scala.Unit = js.native
   def ɵɵstaticViewQuery[T](predicate: js.Array[java.lang.String], descend: scala.Boolean, read: js.Any): scala.Unit = js.native
+  def ɵɵstyleMap(): scala.Unit = js.native
+  def ɵɵstyleMap(styles: ɵNO_CHANGE): scala.Unit = js.native
+  def ɵɵstyleMap(styles: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: ɵPlayerFactory): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: ɵPlayerFactory, suffix: java.lang.String): scala.Unit = js.native
+  def ɵɵstyleProp(
+    styleIndex: scala.Double,
+    value: ɵPlayerFactory,
+    suffix: java.lang.String,
+    forceOverride: scala.Boolean
+  ): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: ɵPlayerFactory, suffix: scala.Null, forceOverride: scala.Boolean): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
+  def ɵɵstyleProp(
+    styleIndex: scala.Double,
+    value: java.lang.String,
+    suffix: java.lang.String,
+    forceOverride: scala.Boolean
+  ): scala.Unit = js.native
+  def ɵɵstyleProp(
+    styleIndex: scala.Double,
+    value: java.lang.String,
+    suffix: scala.Null,
+    forceOverride: scala.Boolean
+  ): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
+  def ɵɵstyleProp(
+    styleIndex: scala.Double,
+    value: scala.Double,
+    suffix: java.lang.String,
+    forceOverride: scala.Boolean
+  ): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: scala.Double, suffix: scala.Null, forceOverride: scala.Boolean): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
+  def ɵɵstyleProp(
+    styleIndex: scala.Double,
+    value: scala.Null,
+    suffix: java.lang.String,
+    forceOverride: scala.Boolean
+  ): scala.Unit = js.native
+  def ɵɵstyleProp(styleIndex: scala.Double, value: scala.Null, suffix: scala.Null, forceOverride: scala.Boolean): scala.Unit = js.native
+  def ɵɵstyling(): scala.Unit = js.native
+  def ɵɵstyling(classBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
+  def ɵɵstyling(classBindingNames: js.Array[java.lang.String], styleBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
+  def ɵɵstyling(
+    classBindingNames: js.Array[java.lang.String],
+    styleBindingNames: js.Array[java.lang.String],
+    styleSanitizer: StyleSanitizeFn
+  ): scala.Unit = js.native
+  def ɵɵstyling(
+    classBindingNames: js.Array[java.lang.String],
+    styleBindingNames: scala.Null,
+    styleSanitizer: StyleSanitizeFn
+  ): scala.Unit = js.native
+  def ɵɵstyling(classBindingNames: scala.Null, styleBindingNames: js.Array[java.lang.String]): scala.Unit = js.native
+  def ɵɵstyling(
+    classBindingNames: scala.Null,
+    styleBindingNames: js.Array[java.lang.String],
+    styleSanitizer: StyleSanitizeFn
+  ): scala.Unit = js.native
+  def ɵɵstyling(classBindingNames: scala.Null, styleBindingNames: scala.Null, styleSanitizer: StyleSanitizeFn): scala.Unit = js.native
+  def ɵɵstylingApply(): scala.Unit = js.native
   def ɵɵtemplate(index: scala.Double, templateFn: ComponentTemplate[_], consts: scala.Double, vars: scala.Double): scala.Unit = js.native
   def ɵɵtemplate(
     index: scala.Double,
@@ -1907,8 +2046,104 @@ object ^ extends js.Object {
   def ɵɵtemplateRefExtractor(tNode: TNode, currentView: ɵangular_packages_core_core_bm): TemplateRef[js.Object] | scala.Null = js.native
   def ɵɵtext(index: scala.Double): scala.Unit = js.native
   def ɵɵtext(index: scala.Double, value: js.Any): scala.Unit = js.native
-  def ɵɵtextBinding[T](index: scala.Double, value: T): scala.Unit = js.native
-  def ɵɵtextBinding[T](index: scala.Double, value: ɵNO_CHANGE): scala.Unit = js.native
+  def ɵɵtextBinding[T](value: T): scala.Unit = js.native
+  def ɵɵtextBinding[T](value: ɵNO_CHANGE): scala.Unit = js.native
+  def ɵɵtextInterpolate(v0: js.Any): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate1(prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate2(prefix: java.lang.String, v0: js.Any, i0: java.lang.String, v1: js.Any, suffix: java.lang.String): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate3(
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate4(
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate5(
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate6(
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate7(
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolate8(
+    prefix: java.lang.String,
+    v0: js.Any,
+    i0: java.lang.String,
+    v1: js.Any,
+    i1: java.lang.String,
+    v2: js.Any,
+    i2: java.lang.String,
+    v3: js.Any,
+    i3: java.lang.String,
+    v4: js.Any,
+    i4: java.lang.String,
+    v5: js.Any,
+    i5: java.lang.String,
+    v6: js.Any,
+    i6: java.lang.String,
+    v7: js.Any,
+    suffix: java.lang.String
+  ): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵtextInterpolateV(values: js.Array[_]): atAngularCoreLib.TsickleIssue1009 = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: T): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: T, sanitizer: SanitizerFn): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: T, sanitizer: SanitizerFn, nativeOnly: scala.Boolean): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: T, sanitizer: scala.Null, nativeOnly: scala.Boolean): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: ɵNO_CHANGE): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: ɵNO_CHANGE, sanitizer: SanitizerFn): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: ɵNO_CHANGE, sanitizer: SanitizerFn, nativeOnly: scala.Boolean): scala.Unit = js.native
+  def ɵɵupdateSyntheticHostBinding[T](propName: java.lang.String, value: ɵNO_CHANGE, sanitizer: scala.Null, nativeOnly: scala.Boolean): scala.Unit = js.native
   def ɵɵviewQuery[T](predicate: Type[_], descend: scala.Boolean, read: js.Any): QueryList[T] = js.native
   def ɵɵviewQuery[T](predicate: js.Array[java.lang.String], descend: scala.Boolean, read: js.Any): QueryList[T] = js.native
 }

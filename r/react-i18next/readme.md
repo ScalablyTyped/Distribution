@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-i18next
 
-Typings are for version 10.11.2
+Typings are for version 10.11.4
 
 ## Library description:
 Internationalization for react done right. Using the i18next i18n ecosystem.

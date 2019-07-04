@@ -5,15 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("intl-messageformat/lib/compiler", "PluralFormat")
-@js.native
-class PluralFormat protected () extends _Pattern {
-  def this(id: java.lang.String, useOrdinal: scala.Boolean, offset: scala.Double, options: stdLib.Record[java.lang.String, js.Array[Pattern]], locales: java.lang.String) = this()
-  def this(id: java.lang.String, useOrdinal: scala.Boolean, offset: scala.Double, options: stdLib.Record[java.lang.String, js.Array[Pattern]], locales: js.Array[java.lang.String]) = this()
-  var id: java.lang.String = js.native
-  var offset: js.Any = js.native
-  var options: js.Any = js.native
-  var pluralRules: js.Any = js.native
-  def getOption(value: scala.Double): js.Array[Pattern] = js.native
+trait PluralFormat extends _Pattern {
+  var id: java.lang.String
+  var offset: js.Any
+  var options: js.Any
+  var pluralRules: js.Any
+  def getOption(value: scala.Double): js.Array[Pattern]
+}
+
+object PluralFormat {
+  @scala.inline
+  def apply(
+    getOption: scala.Double => js.Array[Pattern],
+    id: java.lang.String,
+    offset: js.Any,
+    options: js.Any,
+    pluralRules: js.Any
+  ): PluralFormat = {
+    val __obj = js.Dynamic.literal(getOption = js.Any.fromFunction1(getOption), id = id, offset = offset, options = options, pluralRules = pluralRules)
+  
+    __obj.asInstanceOf[PluralFormat]
+  }
 }
 

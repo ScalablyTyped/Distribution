@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "commander-remaining-args"
-version := "1.2-dt-20190620Z-359abe"
+version := "1.2-dt-20190620Z-457b52"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "commander" % "2.20.0-5f4916",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
+  "org.scalablytyped" %%% "commander" % "2.20.0-bb07d5",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-0260d9",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

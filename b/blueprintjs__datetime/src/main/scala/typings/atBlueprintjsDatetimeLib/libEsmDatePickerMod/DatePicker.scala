@@ -12,6 +12,7 @@ class DatePicker protected ()
   def this(props: IDatePickerProps) = this()
   def this(props: IDatePickerProps, context: js.Any) = this()
   var disabledDays: js.Any = js.native
+  var getDatePickerModifiers: js.Any = js.native
   var getDisabledDaysModifier: js.Any = js.native
   var handleClearClick: js.Any = js.native
   var handleDayClick: js.Any = js.native
@@ -19,8 +20,11 @@ class DatePicker protected ()
   var handleTimeChange: js.Any = js.native
   var handleTodayClick: js.Any = js.native
   var ignoreNextMonthChange: js.Any = js.native
+  var isToday: js.Any = js.native
   var renderCaption: js.Any = js.native
+  var renderDay: js.Any = js.native
   var renderNavbar: js.Any = js.native
+  var shouldHighlightCurrentDay: js.Any = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDatePicker(nextProps: IDatePickerProps): scala.Unit = js.native
   /* private */ def computeValidDateInSpecifiedMonthYear(displayYear: js.Any, displayMonth: js.Any): js.Any = js.native

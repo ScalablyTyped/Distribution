@@ -1,7 +1,7 @@
 
 # Scala.js typings for papaparse
 
-Typings are for version v4.5
+Typings are for version v5.0
 
 ## Library description:
 Fast and powerful CSV parser for the browser that supports web workers and streaming large files. Converts CSV to JSON and JSON to CSV.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for PapaParse v4.5
+// Type definitions for PapaParse v5.0
 // Project: https://github.com/mholt/PapaParse
 // Definitions by: Pedro Flemming <https://github.com/torpedro>
 //                 Rain Shen <https://github.com/rainshen49>

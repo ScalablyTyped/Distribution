@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-dialogs"
-version := "2.0.1-df994c"
+version := "2.0.2-df994c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

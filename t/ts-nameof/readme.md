@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-nameof
 
-Typings are for version 2.0
+Typings are for version 3.2
 
 ## Library description:
 nameof in TypeScript
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for ts-nameof 2.0
+// Type definitions for ts-nameof 3.2
 // Project: https://github.com/dsherret/ts-nameof#readme
 // Definitions by: David Sherret <https://github.com/dsherret>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

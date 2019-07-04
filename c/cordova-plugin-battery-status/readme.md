@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-battery-status
 
-Typings are for version 2.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 Cordova Battery Plugin
@@ -35,13 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Apache Cordova BatteryStatus plugin
+// Type definitions for cordova-plugin-battery-status
 // Project: https://github.com/apache/cordova-plugin-battery-status
 // Definitions by: Microsoft Open Technologies Inc <http://msopentech.com>
+//                 Tim Brust <https://github.com/timbru31>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// 
-// Copyright (c) Microsoft Open Technologies Inc
-// Licensed under the MIT license. 
 
 ```
 

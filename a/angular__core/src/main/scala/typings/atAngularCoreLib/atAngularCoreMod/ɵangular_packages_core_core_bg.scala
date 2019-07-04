@@ -46,6 +46,8 @@ object ɵangular_packages_core_core_bg {
     initialInputs: atAngularCoreLib.InitialInputData = null,
     inputs: PropertyAliases = null,
     localNames: js.Array[java.lang.String | scala.Double] = null,
+    newClasses: TStylingContext = null,
+    newStyles: TStylingContext = null,
     next: TNode = null,
     onElementCreationFns: js.Array[js.Function] = null,
     outputs: PropertyAliases = null,
@@ -62,6 +64,8 @@ object ɵangular_packages_core_core_bg {
     if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (localNames != null) __obj.updateDynamic("localNames")(localNames)
+    if (newClasses != null) __obj.updateDynamic("newClasses")(newClasses)
+    if (newStyles != null) __obj.updateDynamic("newStyles")(newStyles)
     if (next != null) __obj.updateDynamic("next")(next)
     if (onElementCreationFns != null) __obj.updateDynamic("onElementCreationFns")(onElementCreationFns)
     if (outputs != null) __obj.updateDynamic("outputs")(outputs)

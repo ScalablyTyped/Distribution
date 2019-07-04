@@ -16,6 +16,6 @@ object ^ extends js.Object {
   def getMonoid[E, A](M: fpDashTsLib.es6MonoidMod.Monoid[A]): fpDashTsLib.es6MonoidMod.Monoid[Reader[E, A]] = js.native
   def getSemigroup[E, A](S: fpDashTsLib.es6SemigroupMod.Semigroup[A]): fpDashTsLib.es6SemigroupMod.Semigroup[Reader[E, A]] = js.native
   def local[E, E2](f: js.Function1[/* e */ E2, E]): js.Function1[/* fa */ Reader[E, _], Reader[E2, _]] = js.native
-  def of[A](a: A): Reader[_, A] = js.native
+  def of[R, A](a: A): Reader[R, A] = js.native
 }
 

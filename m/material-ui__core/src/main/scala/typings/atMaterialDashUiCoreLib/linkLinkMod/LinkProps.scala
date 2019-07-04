@@ -275,6 +275,7 @@ trait LinkProps extends js.Object {
   var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
   var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
   var paragraph: js.UndefOr[scala.Boolean] = js.undefined
+  var ping: js.UndefOr[java.lang.String] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var property: js.UndefOr[java.lang.String] = js.undefined
@@ -479,6 +480,7 @@ object LinkProps {
     onWaiting: reactLib.reactMod.ReactEventHandler[stdLib.HTMLAnchorElement] = null,
     onWheel: reactLib.reactMod.WheelEventHandler[stdLib.HTMLAnchorElement] = null,
     paragraph: js.UndefOr[scala.Boolean] = js.undefined,
+    ping: java.lang.String = null,
     placeholder: java.lang.String = null,
     prefix: java.lang.String = null,
     property: java.lang.String = null,
@@ -674,6 +676,7 @@ object LinkProps {
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
     if (!js.isUndefined(paragraph)) __obj.updateDynamic("paragraph")(paragraph)
+    if (ping != null) __obj.updateDynamic("ping")(ping)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)

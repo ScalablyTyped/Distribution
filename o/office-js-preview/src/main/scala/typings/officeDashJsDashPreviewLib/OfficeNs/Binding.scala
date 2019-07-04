@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   * and table-specific features, such as counting the number of rows and columns.
   *
   * @remarks
-  * **Hosts**: Access, Excel, Word
+  * **Hosts**: Excel, Word
   * 
   * **Requirement sets**: 
   * 
@@ -268,7 +268,7 @@ trait Binding extends js.Object {
     *
     *        array of arrays: Excel and Word only
     *
-    *        {@link Office.TableData}: Access, Excel, and Word only
+    *        {@link Office.TableData}: Excel and Word only
     *
     *        HTML: Word on the web and Windows only
     *

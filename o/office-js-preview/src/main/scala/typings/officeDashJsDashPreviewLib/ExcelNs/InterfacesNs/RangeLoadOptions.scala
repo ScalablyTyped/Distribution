@@ -194,6 +194,16 @@ trait RangeLoadOptions extends js.Object {
   var rowIndex: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents if ALL the cells would be saved as an array formula.
+    Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+    Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var savedAsArray: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the style of the current range.
     If the styles of the cells are inconsistent, null will be returned.
     For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
@@ -276,6 +286,7 @@ object RangeLoadOptions {
     rowCount: js.UndefOr[scala.Boolean] = js.undefined,
     rowHidden: js.UndefOr[scala.Boolean] = js.undefined,
     rowIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    savedAsArray: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.UndefOr[scala.Boolean] = js.undefined,
     text: js.UndefOr[scala.Boolean] = js.undefined,
     top: js.UndefOr[scala.Boolean] = js.undefined,
@@ -310,6 +321,7 @@ object RangeLoadOptions {
     if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount)
     if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden)
     if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
+    if (!js.isUndefined(savedAsArray)) __obj.updateDynamic("savedAsArray")(savedAsArray)
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
     if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)

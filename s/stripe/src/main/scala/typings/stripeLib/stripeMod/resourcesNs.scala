@@ -129,30 +129,30 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
-    def list(data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
     /**
       * Returns a list of accounts connected to your platform via Connect. If you’re not a platform, the list will be empty.
       */
-    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.accountsNs.IAccount]] = js.native
-    def listExternalAccounts(accId: java.lang.String, data: stripeLib.stripeMod.accountsNs.IBankAccountListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
+    def listExternalAccounts(accId: java.lang.String, data: stripeLib.stripeMod.accountsNs.IBankAccountListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     /**
       * You can see a list of the bank accounts belonging to a managed account. Note that the 10 most recent external accounts are always
       * available by default on the corresponding Stripe object. If you need more than those 10, you can use this API method and the limit
@@ -162,19 +162,19 @@ object resourcesNs extends js.Object {
       accId: java.lang.String,
       data: stripeLib.stripeMod.accountsNs.IBankAccountListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def listExternalAccounts(
       accId: java.lang.String,
       data: stripeLib.stripeMod.accountsNs.IBankAccountListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def listExternalAccounts(
       accId: java.lang.String,
       data: stripeLib.stripeMod.accountsNs.IBankAccountListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
-    def listExternalAccounts(accId: java.lang.String, data: stripeLib.stripeMod.accountsNs.ICardListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
+    def listExternalAccounts(accId: java.lang.String, data: stripeLib.stripeMod.accountsNs.ICardListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     /**
       * You can see a list of the cards belonging to a managed account. Note that the 10 most recent external accounts are available on the
       * account object. If you need more than those 10, you can use this API method and the limit and starting_after parameters to page
@@ -184,18 +184,18 @@ object resourcesNs extends js.Object {
       accId: java.lang.String,
       data: stripeLib.stripeMod.accountsNs.ICardListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listExternalAccounts(
       accId: java.lang.String,
       data: stripeLib.stripeMod.accountsNs.ICardListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listExternalAccounts(
       accId: java.lang.String,
       data: stripeLib.stripeMod.accountsNs.ICardListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def reject(id: java.lang.String, data: stripeLib.stripeMod.accountsNs.IRejectReason): js.Promise[stripeLib.stripeMod.accountsNs.IAccount] = js.native
     /**
       * With Connect, you may flag managed accounts as suspicious.
@@ -410,55 +410,39 @@ object resourcesNs extends js.Object {
     def create(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
     ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
-    def list(): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
-    def list(data: stripeLib.stripeMod.IListOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     /**
       * You can see a list of the refunds belonging to a specific application fee. Note that the 10 most recent refunds are always available
       * by default on the application fee object. If you need more than those 10, you can use this API method and the limit and starting_after
       * parameters to page through additional refunds.
       */
-    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def retrieve(refundId: java.lang.String): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     /**
       * By default, you can see the 10 most recent refunds stored directly on the application fee object, but you can also retrieve details
@@ -559,8 +543,8 @@ object resourcesNs extends js.Object {
       feeId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
     ): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
-    def list(data: stripeLib.stripeMod.applicationFeesNs.IApplicationFeeListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
+    def list(data: stripeLib.stripeMod.applicationFeesNs.IApplicationFeeListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     /**
       * Returns a list of application fees you’ve previously collected. The application fees are returned in sorted order, with the most
       * recent fees appearing first.
@@ -568,30 +552,26 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.applicationFeesNs.IApplicationFeeListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     def list(
       data: stripeLib.stripeMod.applicationFeesNs.IApplicationFeeListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     def list(
       data: stripeLib.stripeMod.applicationFeesNs.IApplicationFeeListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFee]] = js.native
-    def listRefunds(feeId: java.lang.String): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
-    def listRefunds(feeId: java.lang.String, data: stripeLib.stripeMod.IListOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFee] = js.native
+    def listRefunds(feeId: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    def listRefunds(feeId: java.lang.String, data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     /**
       * You can see a list of the refunds belonging to a specific application fee. Note that the 10 most recent refunds are always available
       * by default on the application fee object. If you need more than those 10, you can use this API method and the limit and starting_after
@@ -601,9 +581,7 @@ object resourcesNs extends js.Object {
       feeId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def listRefunds(
       feeId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
@@ -611,38 +589,28 @@ object resourcesNs extends js.Object {
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def listRefunds(
       feeId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
-    def listRefunds(feeId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
+    def listRefunds(feeId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def listRefunds(
       feeId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def listRefunds(
       feeId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def refund(feeId: java.lang.String): js.Promise[stripeLib.stripeMod.applicationFeesNs.IApplicationFeeRefund] = js.native
     def refund(
       feeId: java.lang.String,
@@ -763,27 +731,27 @@ object resourcesNs extends js.Object {
   @js.native
   class Balance ()
     extends stripeLib.stripeMod.StripeResource {
-    def listTransactions(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
-    def listTransactions(data: stripeLib.stripeMod.balanceNs.IBalanceListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
+    def listTransactions(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def listTransactions(data: stripeLib.stripeMod.balanceNs.IBalanceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def listTransactions(
       data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def listTransactions(
       data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def listTransactions(
       data: stripeLib.stripeMod.balanceNs.IBalanceListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
-    def listTransactions(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def listTransactions(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def listTransactions(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
-    def listTransactions(response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.balanceNs.IBalanceTransaction]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
+    def listTransactions(response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.balanceNs.IBalanceTransaction]): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.balanceNs.IBalanceTransaction] = js.native
     def retrieve(): js.Promise[stripeLib.stripeMod.balanceNs.IBalance] = js.native
     def retrieve(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.balanceNs.IBalance] = js.native
     def retrieve(
@@ -827,35 +795,27 @@ object resourcesNs extends js.Object {
     ): js.Promise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
      // TODO: Implement placeholder method
     def getMetadata(): scala.Unit = js.native
-    def list(data: stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiverListOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver]
-      ] = js.native
+    def list(data: stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiverListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
     /**
       * Returns a list of your receivers. Receivers are returned sorted by creation date, with the most recently created receivers appearing first.
       */
     def list(
       data: stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiverListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
     def list(
       data: stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiverListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
     def list(
       data: stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiverListOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver] = js.native
     /**
@@ -938,24 +898,24 @@ object resourcesNs extends js.Object {
           /* response */ js.UndefOr[
             stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
           ], 
-          js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
+          stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund]
         ]) with (js.Function2[
           /* data */ stripeLib.stripeMod.refundsNs.IRefundListOptions, 
           /* response */ js.UndefOr[
             stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
           ], 
-          js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
+          stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund]
         ]) with (js.Function2[
           /* options */ stripeLib.stripeMod.HeaderOptions, 
           /* response */ js.UndefOr[
             stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
           ], 
-          js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
+          stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund]
         ]) with (js.Function1[
           /* response */ js.UndefOr[
             stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
           ], 
-          js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
+          stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund]
         ])
       ] = js.native
     /**
@@ -1098,8 +1058,8 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.refundsNs.IRefund]
     ): js.Promise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
-    def list(data: stripeLib.stripeMod.chargesNs.IChargeListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
+    def list(data: stripeLib.stripeMod.chargesNs.IChargeListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     /**
       * Returns a list of charges you've previously created. The charges are returned in sorted order, with the most recent charges
       * appearing first.
@@ -1111,26 +1071,26 @@ object resourcesNs extends js.Object {
       *
       * @param data Filtering options for the returned items.
       */
-    def list(data: stripeLib.stripeMod.chargesNs.IChargeListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    def list(data: stripeLib.stripeMod.chargesNs.IChargeListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def list(
       data: stripeLib.stripeMod.chargesNs.IChargeListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def list(
       data: stripeLib.stripeMod.chargesNs.IChargeListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
-    def listRefunds(chargeId: java.lang.String): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
-    def listRefunds(chargeId: java.lang.String, data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
+    def listRefunds(chargeId: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
+    def listRefunds(chargeId: java.lang.String, data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     /**
       * You can see a list of the refunds belonging to a specific charge. Note that the 10 most recent refunds are always available by default on
       * the charge object. If you need more than those 10, you can use this API method and the limit and starting_after parameters to page through
@@ -1148,28 +1108,28 @@ object resourcesNs extends js.Object {
       chargeId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def listRefunds(
       chargeId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def listRefunds(
       chargeId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
-    def listRefunds(chargeId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
+    def listRefunds(chargeId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def listRefunds(
       chargeId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def listRefunds(
       chargeId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def markAsFraudulent(chargeId: java.lang.String): js.Promise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def markAsFraudulent(
       chargeId: java.lang.String,
@@ -1336,29 +1296,29 @@ object resourcesNs extends js.Object {
   @js.native
   class CountrySpecs ()
     extends stripeLib.stripeMod.StripeResource {
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
-    def list(data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     /**
       * Lists all Country Spec objects available in the API.
       */
-    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.countrySpecsNs.ICountrySpec]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.countrySpecsNs.ICountrySpec] = js.native
     /**
@@ -1443,8 +1403,8 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
-    def list(data: stripeLib.stripeMod.IListOptionsCreated): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
+    def list(data: stripeLib.stripeMod.IListOptionsCreated): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     /**
       * Returns a list of your coupons.
       *
@@ -1455,24 +1415,24 @@ object resourcesNs extends js.Object {
       *
       * @param data Filtering options for the list.
       */
-    def list(data: stripeLib.stripeMod.IListOptionsCreated, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
+    def list(data: stripeLib.stripeMod.IListOptionsCreated, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptionsCreated,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptionsCreated,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.couponsNs.ICoupon]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.couponsNs.ICoupon] = js.native
     /**
@@ -1582,8 +1542,8 @@ object resourcesNs extends js.Object {
       cardId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
-    def list(data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     /**
       * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
       * cards are always available by default on the customer or recipient object. If you need more than
@@ -1595,24 +1555,24 @@ object resourcesNs extends js.Object {
       * specify include[]=total_count in your request.
       * @param data Filtering options
       */
-    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def retrieve(cardId: java.lang.String): js.Promise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     /**
       * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
@@ -2006,8 +1966,8 @@ object resourcesNs extends js.Object {
       subscriptionId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
-    def list(data: stripeLib.stripeMod.customersNs.ICustomerListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
+    def list(data: stripeLib.stripeMod.customersNs.ICustomerListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     /**
       * Returns a list of your customers. The customers are returned sorted by creation date, with the most recently created customers
       * appearing first.
@@ -2022,26 +1982,26 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.customersNs.ICustomerListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     def list(
       data: stripeLib.stripeMod.customersNs.ICustomerListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     def list(
       data: stripeLib.stripeMod.customersNs.ICustomerListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.customersNs.ICustomer]] = js.native
-    def listCards(customerId: java.lang.String): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
-    def listCards(customerId: java.lang.String, data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
+    def listCards(customerId: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    def listCards(customerId: java.lang.String, data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     /**
       * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
       * cards are always available by default on the customer or recipient object. If you need more than
@@ -2059,29 +2019,29 @@ object resourcesNs extends js.Object {
       customerId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listCards(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listCards(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
-    def listCards(customerId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    def listCards(customerId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listCards(
       customerId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listCards(
       customerId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
-    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.IBankAccountSourceListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.IBankAccountSourceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     /**
       * You can see a list of the bank accounts belonging to a customer or recipient. Note that the 10 most recent
       * bank accounts are always available by default on the customer or recipient object. If you need more than
@@ -2099,19 +2059,19 @@ object resourcesNs extends js.Object {
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.IBankAccountSourceListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.IBankAccountSourceListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.IBankAccountSourceListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.bankAccountsNs.IBankAccount]] = js.native
-    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ICardSourceListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
+    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ICardSourceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     /**
       * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
       * cards are always available by default on the customer or recipient object. If you need more than
@@ -2129,37 +2089,37 @@ object resourcesNs extends js.Object {
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ICardSourceListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ICardSourceListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ICardSourceListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
-    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ISourceListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ISourceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ISourceListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ISourceListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
     def listSources(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ISourceListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
-    def listSubscriptions(customerId: java.lang.String): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
-    def listSubscriptions(customerId: java.lang.String, data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def listSubscriptions(customerId: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
+    def listSubscriptions(customerId: java.lang.String, data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     /**
       * You can see a list of the customer's active subscriptions. Note that the 10 most recent active subscriptions are always available
       * by default on the customer object. If you need more than those 10, you can use the limit and starting_after parameters to page
@@ -2175,28 +2135,28 @@ object resourcesNs extends js.Object {
       customerId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def listSubscriptions(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def listSubscriptions(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
-    def listSubscriptions(customerId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
+    def listSubscriptions(customerId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def listSubscriptions(
       customerId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def listSubscriptions(
       customerId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.customersNs.ICustomer] = js.native
     /**
@@ -2536,29 +2496,29 @@ object resourcesNs extends js.Object {
     ): js.Promise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
      // TODO: Implement placeholder method
     def getMetadata(): scala.Unit = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
-    def list(data: stripeLib.stripeMod.IListOptionsCreated): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
+    def list(data: stripeLib.stripeMod.IListOptionsCreated): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     /**
       * Returns a list of your disputes.
       */
-    def list(data: stripeLib.stripeMod.IListOptionsCreated, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
+    def list(data: stripeLib.stripeMod.IListOptionsCreated, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptionsCreated,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptionsCreated,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.disputesNs.IDispute]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     def retrieve(disputeId: java.lang.String): js.Promise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     def retrieve(disputeId: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.disputesNs.IDispute] = js.native
     /**
@@ -2635,29 +2595,29 @@ object resourcesNs extends js.Object {
   @js.native
   class Events ()
     extends stripeLib.stripeMod.StripeResource {
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
-    def list(data: stripeLib.stripeMod.eventsNs.IEventListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
+    def list(data: stripeLib.stripeMod.eventsNs.IEventListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     /**
       * List events, going back up to 30 days.
       */
-    def list(data: stripeLib.stripeMod.eventsNs.IEventListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
+    def list(data: stripeLib.stripeMod.eventsNs.IEventListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     def list(
       data: stripeLib.stripeMod.eventsNs.IEventListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     def list(
       data: stripeLib.stripeMod.eventsNs.IEventListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.eventsNs.IEvent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.eventsNs.IEvent] = js.native
     /**
@@ -2715,8 +2675,8 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.fileUploadsNs.IFileUploadCreationOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]
     ): js.Promise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
-    def list(data: stripeLib.stripeMod.fileUploadsNs.IFileUploadListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
+    def list(data: stripeLib.stripeMod.fileUploadsNs.IFileUploadListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     /**
       * Returns a list of the files that you have uploaded to Stripe.
       * The file uploads are returned sorted by creation date, with the most recently created file uploads appearing first.
@@ -2724,24 +2684,24 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.fileUploadsNs.IFileUploadListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     def list(
       data: stripeLib.stripeMod.fileUploadsNs.IFileUploadListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     def list(
       data: stripeLib.stripeMod.fileUploadsNs.IFileUploadListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.fileUploadsNs.IFileUpdate]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.fileUploadsNs.IFileUpdate] = js.native
     /**
@@ -2823,8 +2783,8 @@ object resourcesNs extends js.Object {
       invoiceItemId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
-    def list(data: stripeLib.stripeMod.invoiceItemsNs.InvoiceItemListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
+    def list(data: stripeLib.stripeMod.invoiceItemsNs.InvoiceItemListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     /**
       * Returns a list of your invoice items. Invoice items are returned sorted by creation date, with the most recently created invoice
       * items appearing first.
@@ -2832,24 +2792,24 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.invoiceItemsNs.InvoiceItemListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     def list(
       data: stripeLib.stripeMod.invoiceItemsNs.InvoiceItemListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     def list(
       data: stripeLib.stripeMod.invoiceItemsNs.InvoiceItemListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     def retrieve(invoiceItemId: java.lang.String): js.Promise[stripeLib.stripeMod.invoiceItemsNs.InvoiceItem] = js.native
     /**
       * Retrieves the invoice item with the given ID.
@@ -2915,8 +2875,45 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.invoicesNs.IInvoiceCreationOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
     ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]] = js.native
-    def list(data: stripeLib.stripeMod.invoicesNs.IInvoiceListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]] = js.native
+    def finalizeInvoice(id: java.lang.String): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def finalizeInvoice(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoiceFinalizeOptions): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    /**
+      * Stripe automatically finalizes drafts before sending and attempting payment on invoices. However, if
+      * you’d like to finalize a draft invoice manually, you can do so using this method.
+      *
+      * @returns Returns the invoice object.
+      *
+      * @param id The ID of the invoice to pay.
+      * @param data Additional arguments.
+      */
+    def finalizeInvoice(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceFinalizeOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def finalizeInvoice(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceFinalizeOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def finalizeInvoice(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceFinalizeOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def finalizeInvoice(id: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def finalizeInvoice(
+      id: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def finalizeInvoice(
+      id: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def list(data: stripeLib.stripeMod.invoicesNs.IInvoiceListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     /**
       * You can list all invoices, or list the invoices for a specific customer. The invoices are returned
       * sorted by creation date, with the most recently created invoices appearing first.
@@ -2929,19 +2926,19 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.invoicesNs.IInvoiceListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def list(
       data: stripeLib.stripeMod.invoicesNs.IInvoiceListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def list(
       data: stripeLib.stripeMod.invoicesNs.IInvoiceListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def pay(id: java.lang.String): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def pay(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoicePayOptions): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     /**
@@ -3025,8 +3022,8 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
     ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
-    def retrieveLines(id: java.lang.String): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
-    def retrieveLines(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoiceLineItemRetrievalOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
+    def retrieveLines(id: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def retrieveLines(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoiceLineItemRetrievalOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     /**
       * When retrieving an invoice, you'll get a lines property containing the total count of line items and the first
       * handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.
@@ -3040,28 +3037,28 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       data: stripeLib.stripeMod.invoicesNs.IInvoiceLineItemRetrievalOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     def retrieveLines(
       id: java.lang.String,
       data: stripeLib.stripeMod.invoicesNs.IInvoiceLineItemRetrievalOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     def retrieveLines(
       id: java.lang.String,
       data: stripeLib.stripeMod.invoicesNs.IInvoiceLineItemRetrievalOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
-    def retrieveLines(id: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def retrieveLines(id: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     def retrieveLines(
       id: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     def retrieveLines(
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     /**
       * At any time, you can preview the upcoming invoice for a customer. This will show you all the charges that are pending,
       * including subscription renewal charges, invoice item charges, etc. It will also show you any discount that is applicable
@@ -3160,29 +3157,29 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.ordersNs.IOrderCreationOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.ordersNs.IOrder]
     ): js.Promise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
-    def list(data: stripeLib.stripeMod.ordersNs.IOrderListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
+    def list(data: stripeLib.stripeMod.ordersNs.IOrderListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     /**
       * Returns a list of your orders. The orders are returned sorted by creation date, with the most recently created orders appearing first.
       */
-    def list(data: stripeLib.stripeMod.ordersNs.IOrderListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
+    def list(data: stripeLib.stripeMod.ordersNs.IOrderListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     def list(
       data: stripeLib.stripeMod.ordersNs.IOrderListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     def list(
       data: stripeLib.stripeMod.ordersNs.IOrderListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.ordersNs.IOrder]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     def pay(orderId: java.lang.String, data: stripeLib.stripeMod.ordersNs.IOrderPayOptions): js.Promise[stripeLib.stripeMod.ordersNs.IOrder] = js.native
     /**
       * Pay an order by providing a source to create a payment.
@@ -3387,8 +3384,8 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentCreationOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]
     ): js.Promise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
-    def list(data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
+    def list(data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     /**
       * Returns a list of PaymentIntents.
       *
@@ -3397,24 +3394,24 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     def list(
       data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     def list(
       data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntentRetrieveOptions): js.Promise[stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent] = js.native
     /**
@@ -3511,29 +3508,29 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.payoutsNs.IPayoutCreationOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.payoutsNs.IPayout]
     ): js.Promise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
-    def list(data: stripeLib.stripeMod.payoutsNs.IPayoutListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
+    def list(data: stripeLib.stripeMod.payoutsNs.IPayoutListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     /**
       * Returns a list of existing payouts sent to third-party bank accounts or that Stripe has sent you. The payouts are returned in sorted order, with the most recently created payouts appearing first.
       */
-    def list(data: stripeLib.stripeMod.payoutsNs.IPayoutListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
+    def list(data: stripeLib.stripeMod.payoutsNs.IPayoutListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     def list(
       data: stripeLib.stripeMod.payoutsNs.IPayoutListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     def list(
       data: stripeLib.stripeMod.payoutsNs.IPayoutListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.payoutsNs.IPayout]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     def retrieve(payoutId: java.lang.String): js.Promise[stripeLib.stripeMod.payoutsNs.IPayout] = js.native
     /**
       * Retrieves the details of an existing payout. Supply the unique payout ID from either a payout creation request or the payout list, and Stripe will return the corresponding payout information.
@@ -3612,8 +3609,8 @@ object resourcesNs extends js.Object {
       planName: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
-    def list(data: IPlanListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
+    def list(data: IPlanListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     /**
       * Returns a list of your plans.
       *
@@ -3622,24 +3619,24 @@ object resourcesNs extends js.Object {
       * request should never throw an error. You can optionally request that the response include the total count of all plans. To
       * do so, specify include[]=total_count in your request.
       */
-    def list(data: IPlanListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
+    def list(data: IPlanListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     def list(
       data: IPlanListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     def list(
       data: IPlanListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.plansNs.IPlan]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     def retrieve(planName: java.lang.String): js.Promise[stripeLib.stripeMod.plansNs.IPlan] = js.native
     /**
       * Retrieves the plan with the given ID.
@@ -3718,32 +3715,32 @@ object resourcesNs extends js.Object {
       productId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
-    def list(data: stripeLib.stripeMod.productsNs.IProductListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
+    def list(data: stripeLib.stripeMod.productsNs.IProductListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     /**
       * Returns a list of your products. The products are returned sorted by creation date, with the most recently created products appearing first.
       */
     def list(
       data: stripeLib.stripeMod.productsNs.IProductListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     def list(
       data: stripeLib.stripeMod.productsNs.IProductListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     def list(
       data: stripeLib.stripeMod.productsNs.IProductListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.productsNs.IProduct]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     def retrieve(productId: java.lang.String): js.Promise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     def retrieve(productId: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.productsNs.IProduct] = js.native
     /**
@@ -3889,31 +3886,31 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.refundsNs.IRefundCreationOptionsWithCharge,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.refundsNs.IRefund]
     ): js.Promise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
-    def list(data: stripeLib.stripeMod.refundsNs.IRefundListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
+    def list(data: stripeLib.stripeMod.refundsNs.IRefundListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     /**
       * Returns a list of all refunds you’ve previously created. The refunds are returned in sorted order,
       * with the most recent refunds appearing first.
       * For convenience, the 10 most recent refunds are always available by default on the charge object.
       */
-    def list(data: stripeLib.stripeMod.refundsNs.IRefundListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    def list(data: stripeLib.stripeMod.refundsNs.IRefundListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def list(
       data: stripeLib.stripeMod.refundsNs.IRefundListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def list(
       data: stripeLib.stripeMod.refundsNs.IRefundListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.refundsNs.IRefund]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.refundsNs.IRefund] = js.native
     /**
@@ -4000,29 +3997,29 @@ object resourcesNs extends js.Object {
       skuId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
-    def list(data: stripeLib.stripeMod.skusNs.ISkuListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
+    def list(data: stripeLib.stripeMod.skusNs.ISkuListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
     /**
       * Returns a list of your SKUs. The SKUs are returned sorted by creation date, with the most recently created SKUs appearing first.
       */
-    def list(data: stripeLib.stripeMod.skusNs.ISkuListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
+    def list(data: stripeLib.stripeMod.skusNs.ISkuListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
     def list(
       data: stripeLib.stripeMod.skusNs.ISkuListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
     def list(
       data: stripeLib.stripeMod.skusNs.ISkuListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.skusNs.ISku]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.skusNs.ISku] = js.native
     def retrieve(skuId: java.lang.String): js.Promise[stripeLib.stripeMod.skusNs.ISku] = js.native
     def retrieve(skuId: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.skusNs.ISku] = js.native
     /**
@@ -4223,9 +4220,7 @@ object resourcesNs extends js.Object {
       subscriptionItemId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
     ): js.Promise[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem] = js.native
-    def list(data: stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItemListOptions): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
-      ] = js.native
+    def list(data: stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItemListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem] = js.native
     /**
       * Returns a list of your subscription items for a given subscription.
       *
@@ -4236,26 +4231,20 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItemListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem] = js.native
     def list(
       data: stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItemListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem] = js.native
     def list(
       data: stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItemListOptions,
       response: stripeLib.stripeMod.IResponseFn[
           stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
         ]
-    ): js.Promise[
-        stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem]
-      ] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem] = js.native
     def retrieve(subscriptionItemId: java.lang.String): js.Promise[stripeLib.stripeMod.subscriptionItemsNs.ISubscriptionItem] = js.native
     /**
       * Retrieves the subscription item with the given ID.
@@ -4400,8 +4389,8 @@ object resourcesNs extends js.Object {
       subscriptionId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IDeleteConfirmation]
     ): js.Promise[stripeLib.stripeMod.IDeleteConfirmation] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
-    def list(data: stripeLib.stripeMod.subscriptionsNs.ISubscriptionListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
+    def list(data: stripeLib.stripeMod.subscriptionsNs.ISubscriptionListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     /**
       * You can see a list of the customer's active subscriptions. Note that the 10 most recent active subscriptions are always available
       * by default on the customer object. If you need more than those 10, you can use the limit and starting_after parameters to page
@@ -4415,24 +4404,24 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.subscriptionsNs.ISubscriptionListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def list(
       data: stripeLib.stripeMod.subscriptionsNs.ISubscriptionListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def list(
       data: stripeLib.stripeMod.subscriptionsNs.ISubscriptionListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     def retrieve(subscriptionId: java.lang.String): js.Promise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     /**
       * By default, you can see the 10 most recent active subscriptions stored on a customer directly on the customer
@@ -4622,31 +4611,31 @@ object resourcesNs extends js.Object {
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.transferReversalsNs.IReversal]
     ): js.Promise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def create(response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.transferReversalsNs.IReversal]): js.Promise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
-    def list(data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     /**
       * You can see a list of the reversals belonging to a specific transfer. Note that the 10 most recent reversals are always available by
       * default on the transfer object. If you need more than those 10, you can use this API method and the limit and starting_after
       * parameters to page through additional reversals.
       */
-    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    def list(data: stripeLib.stripeMod.IListOptions, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def list(
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def retrieve(reversalId: java.lang.String): js.Promise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def retrieve(reversalId: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     /**
@@ -4777,8 +4766,8 @@ object resourcesNs extends js.Object {
     ): js.Promise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
      // TODO: Implement placeholder method
     def getMetadata(): scala.Unit = js.native
-    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
-    def list(data: stripeLib.stripeMod.transfersNs.ITransferListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
+    def list(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
+    def list(data: stripeLib.stripeMod.transfersNs.ITransferListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     /**
       * Returns a list of existing transfers sent to third-party bank accounts or that Stripe has sent you. The transfers are
       * returned in sorted order, with the most recently created transfers appearing first.
@@ -4786,26 +4775,26 @@ object resourcesNs extends js.Object {
     def list(
       data: stripeLib.stripeMod.transfersNs.ITransferListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     def list(
       data: stripeLib.stripeMod.transfersNs.ITransferListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     def list(
       data: stripeLib.stripeMod.transfersNs.ITransferListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
-    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     def list(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transfersNs.ITransfer]] = js.native
-    def listReversals(transferId: java.lang.String): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
-    def listReversals(transferId: java.lang.String, data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
+    def listReversals(transferId: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
+    def listReversals(transferId: java.lang.String, data: stripeLib.stripeMod.IListOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     /**
       * You can see a list of the reversals belonging to a specific transfer. Note that the 10 most recent reversals are always available by
       * default on the transfer object. If you need more than those 10, you can use this API method and the limit and starting_after
@@ -4815,38 +4804,38 @@ object resourcesNs extends js.Object {
       transferId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def listReversals(
       transferId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def listReversals(
       transferId: java.lang.String,
       data: stripeLib.stripeMod.IListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
-    def listReversals(transferId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
+    def listReversals(transferId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def listReversals(
       transferId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
     def listReversals(
       transferId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.transferReversalsNs.IReversal]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.transferReversalsNs.IReversal] = js.native
      // TODO: Not sure if this should be a list of balance transactions or charges.
-    def listTransactions(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
-    def listTransactions(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    def listTransactions(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
+    def listTransactions(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def listTransactions(
       options: stripeLib.stripeMod.HeaderOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def listTransactions(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]]
-    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.chargesNs.ICharge]] = js.native
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.chargesNs.ICharge] = js.native
     def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     def retrieve(id: java.lang.String, data: stripeLib.stripeMod.IDataOptions): js.Promise[stripeLib.stripeMod.transfersNs.ITransfer] = js.native
     /**

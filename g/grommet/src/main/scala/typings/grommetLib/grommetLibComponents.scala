@@ -379,14 +379,20 @@ object grommetLibComponents extends grommetLibProps {
   grommetLib.componentsTabsMod.TabsProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])]]
   @scala.inline
   def Text: reactLib.reactMod.ComponentType[
-    grommetLib.componentsTextMod.TextProps with (reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
-      reactLib.HTMLSpanElement
+    grommetLib.componentsTextMod.TextProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
+        reactLib.HTMLSpanElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = grommetLib.grommetMod.^.Text.asInstanceOf[reactLib.reactMod.ComponentType[
-  grommetLib.componentsTextMod.TextProps with (reactLib.reactMod.DetailedHTMLProps[
-    reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
-    reactLib.HTMLSpanElement
+  grommetLib.componentsTextMod.TextProps with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
+      reactLib.HTMLSpanElement
+    ], 
+    grommetLib.grommetLibStrings.color
   ])]]
   @scala.inline
   def TextArea: reactLib.reactMod.ComponentType[
@@ -421,11 +427,23 @@ object grommetLibComponents extends grommetLibProps {
     grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
+    ]) with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+        reactLib.HTMLVideoElement
+      ], 
+      grommetLib.grommetLibStrings.controls
     ])
   ] = js.constructorOf[grommetLib.grommetMod.Video].asInstanceOf[reactLib.reactMod.ComponentType[
   grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
     reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
     reactLib.HTMLVideoElement
+  ]) with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+      reactLib.HTMLVideoElement
+    ], 
+    grommetLib.grommetLibStrings.controls
   ])]]
   @scala.inline
   def WorldMap: reactLib.reactMod.ComponentType[

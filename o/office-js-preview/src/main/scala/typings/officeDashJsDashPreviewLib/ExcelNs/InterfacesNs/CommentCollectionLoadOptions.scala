@@ -17,7 +17,7 @@ trait CommentCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Get author email of the comment.
+    * For EACH ITEM in the collection: Gets the email of the comment's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait CommentCollectionLoadOptions extends js.Object {
   var authorEmail: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Get author name of the comment.
+    * For EACH ITEM in the collection: Gets the name of the comment's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait CommentCollectionLoadOptions extends js.Object {
   var authorName: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Get or set the content.
+    * For EACH ITEM in the collection: Gets or sets the comment's content. The string is plain text.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -41,7 +41,7 @@ trait CommentCollectionLoadOptions extends js.Object {
   var content: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+    * For EACH ITEM in the collection: Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

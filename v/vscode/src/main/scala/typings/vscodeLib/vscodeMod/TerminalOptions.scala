@@ -15,6 +15,14 @@ trait TerminalOptions extends js.Object {
   		 */
   var env: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]] = js.undefined
   /**
+  		 * When enabled the terminal will run the process as normal but not be surfaced to the user
+  		 * until `Terminal.show` is called. The typical usage for this is when you need to run
+  		 * something that may need interactivity but only want to tell the user about it when
+  		 * interaction is needed. Note that the terminals will still be exposed to all extensions
+  		 * as normal.
+  		 */
+  var hideFromUser: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   		 * A human-readable string which will be used to represent the terminal in the UI.
   		 */
   var name: js.UndefOr[java.lang.String] = js.undefined
@@ -42,6 +50,7 @@ object TerminalOptions {
   def apply(
     cwd: java.lang.String | Uri = null,
     env: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null] = null,
+    hideFromUser: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     shellArgs: js.Array[java.lang.String] | java.lang.String = null,
     shellPath: java.lang.String = null,
@@ -50,6 +59,7 @@ object TerminalOptions {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env)
+    if (!js.isUndefined(hideFromUser)) __obj.updateDynamic("hideFromUser")(hideFromUser)
     if (name != null) __obj.updateDynamic("name")(name)
     if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs.asInstanceOf[js.Any])
     if (shellPath != null) __obj.updateDynamic("shellPath")(shellPath)

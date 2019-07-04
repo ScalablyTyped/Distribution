@@ -65,7 +65,11 @@ trait DBCluster extends js.Object {
   /**
     * Specifies whether tags are copied from the DB cluster to snapshots of the DB cluster.
     */
-  var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined
+  var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
+  /**
+    * Specifies whether the DB cluster is a clone of a DB cluster owned by a different AWS account.
+    */
+  var CrossAccountClone: js.UndefOr[BooleanOptional] = js.undefined
   /**
     * Identifies all custom endpoints associated with the cluster.
     */
@@ -105,7 +109,7 @@ trait DBCluster extends js.Object {
   /**
     * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. 
     */
-  var DeletionProtection: js.UndefOr[Boolean] = js.undefined
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
     * The earliest time to which a DB cluster can be backtracked.
     */
@@ -141,11 +145,11 @@ trait DBCluster extends js.Object {
   /**
     * A value that indicates whether the HTTP endpoint for an Aurora Serverless DB cluster is enabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information, see Using the Data API for Aurora Serverless in the Amazon Aurora User Guide.
     */
-  var HttpEndpointEnabled: js.UndefOr[Boolean] = js.undefined
+  var HttpEndpointEnabled: js.UndefOr[BooleanOptional] = js.undefined
   /**
     * A value that indicates whether the mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled.
     */
-  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
+  var IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined
   /**
     * If StorageEncrypted is enabled, the AWS KMS key identifier for the encrypted DB cluster.
     */
@@ -161,7 +165,7 @@ trait DBCluster extends js.Object {
   /**
     * Specifies whether the DB cluster has instances in multiple Availability Zones.
     */
-  var MultiAZ: js.UndefOr[Boolean] = js.undefined
+  var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**
     * Specifies the progress of the operation as a percentage.
     */
@@ -222,7 +226,8 @@ object DBCluster {
     CharacterSetName: String = null,
     CloneGroupId: String = null,
     ClusterCreateTime: TStamp = null,
-    CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined,
+    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
+    CrossAccountClone: js.UndefOr[BooleanOptional] = js.undefined,
     CustomEndpoints: StringList = null,
     DBClusterArn: String = null,
     DBClusterIdentifier: String = null,
@@ -232,7 +237,7 @@ object DBCluster {
     DBSubnetGroup: String = null,
     DatabaseName: String = null,
     DbClusterResourceId: String = null,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     EarliestBacktrackTime: TStamp = null,
     EarliestRestorableTime: TStamp = null,
     EnabledCloudwatchLogsExports: LogTypeList = null,
@@ -241,12 +246,12 @@ object DBCluster {
     EngineMode: String = null,
     EngineVersion: String = null,
     HostedZoneId: String = null,
-    HttpEndpointEnabled: js.UndefOr[Boolean] = js.undefined,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
+    HttpEndpointEnabled: js.UndefOr[BooleanOptional] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined,
     KmsKeyId: String = null,
     LatestRestorableTime: TStamp = null,
     MasterUsername: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
+    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
     PercentProgress: String = null,
     Port: js.UndefOr[IntegerOptional] = js.undefined,
     PreferredBackupWindow: String = null,
@@ -275,6 +280,7 @@ object DBCluster {
     if (CloneGroupId != null) __obj.updateDynamic("CloneGroupId")(CloneGroupId)
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
     if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot)
+    if (!js.isUndefined(CrossAccountClone)) __obj.updateDynamic("CrossAccountClone")(CrossAccountClone)
     if (CustomEndpoints != null) __obj.updateDynamic("CustomEndpoints")(CustomEndpoints)
     if (DBClusterArn != null) __obj.updateDynamic("DBClusterArn")(DBClusterArn)
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier)

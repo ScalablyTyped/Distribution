@@ -1,7 +1,7 @@
 
 # Scala.js typings for rmc-picker
 
-Typings are for version 5.0.9
+Typings are for version 5.0.10
 
 ## Library description:
 React Mobile Picker Component(web and react-native)

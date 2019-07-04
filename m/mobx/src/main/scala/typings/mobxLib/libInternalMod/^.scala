@@ -37,8 +37,12 @@ object ^ extends js.Object {
   def allowStateChangesStart(allowStateChanges: scala.Boolean): scala.Boolean = js.native
   def asCreateObservableOptions(thing: js.Any): mobxLib.libApiObservableMod.CreateObservableOptions = js.native
   def asObservableObject(target: js.Any): mobxLib.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
-  def asObservableObject(target: js.Any, name: java.lang.String): mobxLib.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
-  def asObservableObject(target: js.Any, name: java.lang.String, defaultEnhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]): mobxLib.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
+  def asObservableObject(target: js.Any, name: stdLib.PropertyKey): mobxLib.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
+  def asObservableObject(
+    target: js.Any,
+    name: stdLib.PropertyKey,
+    defaultEnhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]
+  ): mobxLib.libTypesObservableobjectMod.ObservableObjectAdministration = js.native
   def assertPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Unit = js.native
   def autorun(view: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, _]): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
   def autorun(
@@ -166,6 +170,7 @@ object ^ extends js.Object {
   def getObserverTree(thing: js.Any): mobxLib.libApiExtrasMod.IObserverTree = js.native
   def getObserverTree(thing: js.Any, property: java.lang.String): mobxLib.libApiExtrasMod.IObserverTree = js.native
   def getObservers(observable: mobxLib.libCoreObservableMod.IObservable): stdLib.Set[mobxLib.libCoreDerivationMod.IDerivation] = js.native
+  def getPlainObjectKeys(`object`: js.Any): js.Array[java.lang.String | scala.Double | js.Symbol] = js.native
   def has[T /* <: js.Object */](obj: T, key: java.lang.String): scala.Boolean = js.native
   def has[K](obj: ObservableMap[K, _], key: K): scala.Boolean = js.native
   def has[T](obj: ObservableSet[T], key: T): scala.Boolean = js.native
@@ -263,7 +268,7 @@ object ^ extends js.Object {
   def isolateGlobalState(): scala.Unit = js.native
   def keys[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[scala.Double] = js.native
   def keys[K](map: ObservableMap[K, _]): js.Array[K] = js.native
-  def keys[T /* <: js.Object */](obj: T): js.Array[java.lang.String] = js.native
+  def keys[T /* <: js.Object */](obj: T): js.Array[stdLib.PropertyKey] = js.native
   def keys[T](set: ObservableSet[T]): js.Array[T] = js.native
   def makeIterable[T](iterator: stdLib.Iterator[T]): stdLib.IterableIterator[T] = js.native
   def makeNonEnumerable(`object`: js.Any, propNames: js.Array[stdLib.PropertyKey]): scala.Unit = js.native
@@ -432,9 +437,10 @@ object ^ extends js.Object {
   def runInAction[T](block: js.Function0[T]): T = js.native
   def runInAction[T](name: java.lang.String, block: js.Function0[T]): T = js.native
   def runReactions(): scala.Unit = js.native
-  def set[T /* <: js.Object */](obj: T, key: java.lang.String, value: js.Any): js.Any = js.native
+  def set[T /* <: js.Object */](obj: T, key: stdLib.PropertyKey, value: js.Any): js.Any = js.native
   def set[T /* <: js.Object */](obj: T, values: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def set[V](obj: ObservableMap[java.lang.String, V], values: org.scalablytyped.runtime.StringDictionary[V]): js.Any = js.native
+  def set[V](obj: ObservableMap[stdLib.PropertyKey, V], values: org.scalablytyped.runtime.StringDictionary[V]): js.Any = js.native
+  def set[T](obj: ObservableSet[T], value: T): js.Any = js.native
   def set[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double, value: T): js.Any = js.native
   def set[K, V](obj: ObservableMap[K, V], key: K, value: V): js.Any = js.native
   def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[scala.Unit], scala.Unit]): scala.Unit = js.native
@@ -446,6 +452,7 @@ object ^ extends js.Object {
   def spyReportEnd(change: js.Any): scala.Unit = js.native
   def spyReportStart(event: js.Any): scala.Unit = js.native
   def startBatch(): scala.Unit = js.native
+  def stringifyKey(key: js.Any): java.lang.String = js.native
   def toJS(source: js.Any): js.Any = js.native
   def toJS(source: js.Any, options: mobxLib.libApiTojsMod.ToJSOptions): js.Any = js.native
   def toJS[T](source: T): T = js.native

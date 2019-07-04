@@ -101,6 +101,8 @@ trait TNode extends js.Object {
     * - `<div #foo #bar="directiveExportAs">` => `["foo", -1, "bar", directiveIdx]`
     */
   var localNames: (js.Array[java.lang.String | scala.Double]) | scala.Null
+  var newClasses: TStylingContext | scala.Null
+  var newStyles: TStylingContext | scala.Null
   /**
     * The next sibling node. Necessary so we can propagate through the root nodes of a view
     * to insert them or remove them from the DOM.
@@ -174,7 +176,7 @@ trait TNode extends js.Object {
     *   - This would return the first head node to project:
     *     `getHost(currentTNode).projection[currentTNode.projection]`.
     * - When projecting nodes the parent node retrieved may be a `<ng-content>` node, in which case
-    *   the process is recursive in nature (not implementation).
+    *   the process is recursive in nature.
     *
     * If `projection` is of type `RNode[][]` than we have a collection of native nodes passed as
     * projectable nodes during dynamic component creation.
@@ -249,6 +251,8 @@ object TNode {
     initialInputs: atAngularCoreLib.InitialInputData = null,
     inputs: PropertyAliases = null,
     localNames: js.Array[java.lang.String | scala.Double] = null,
+    newClasses: TStylingContext = null,
+    newStyles: TStylingContext = null,
     next: TNode = null,
     onElementCreationFns: js.Array[js.Function] = null,
     outputs: PropertyAliases = null,
@@ -266,6 +270,8 @@ object TNode {
     if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)
     if (localNames != null) __obj.updateDynamic("localNames")(localNames)
+    if (newClasses != null) __obj.updateDynamic("newClasses")(newClasses)
+    if (newStyles != null) __obj.updateDynamic("newStyles")(newStyles)
     if (next != null) __obj.updateDynamic("next")(next)
     if (onElementCreationFns != null) __obj.updateDynamic("onElementCreationFns")(onElementCreationFns)
     if (outputs != null) __obj.updateDynamic("outputs")(outputs)

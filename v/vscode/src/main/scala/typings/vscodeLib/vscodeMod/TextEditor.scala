@@ -25,7 +25,7 @@ trait TextEditor extends js.Object {
   var selections: js.Array[Selection] = js.native
   /**
   		 * The column in which this editor shows. Will be `undefined` in case this
-  		 * isn't one of the main editors, e.g an embedded editor, or when the editor
+  		 * isn't one of the main editors, e.g. an embedded editor, or when the editor
   		 * column is larger than three.
   		 */
   var viewColumn: js.UndefOr[ViewColumn] = js.native

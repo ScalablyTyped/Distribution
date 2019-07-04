@@ -18,7 +18,7 @@ trait Comment extends js.Object {
   		 * Context value of the comment. This can be used to contribute comment specific actions.
   		 * For example, a comment is given a context value as `editable`. When contributing actions to `comments/comment/title`
   		 * using `menus` extension point, you can specify context value for key `comment` in `when` expression like `comment == editable`.
-  		 * ```
+  		 * ```json
   		 *	"contributes": {
   		 *		"menus": {
   		 *			"comments/comment/title": [
@@ -42,6 +42,10 @@ trait Comment extends js.Object {
   		 * [Comment mode](#CommentMode) of the comment
   		 */
   var mode: CommentMode
+  /**
+  		 * Optional reactions of the [comment](#Comment)
+  		 */
+  var reactions: js.UndefOr[js.Array[CommentReaction]] = js.undefined
 }
 
 object Comment {
@@ -51,11 +55,13 @@ object Comment {
     body: java.lang.String | MarkdownString,
     mode: CommentMode,
     contextValue: java.lang.String = null,
-    label: java.lang.String = null
+    label: java.lang.String = null,
+    reactions: js.Array[CommentReaction] = null
   ): Comment = {
     val __obj = js.Dynamic.literal(author = author, body = body.asInstanceOf[js.Any], mode = mode)
     if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
     if (label != null) __obj.updateDynamic("label")(label)
+    if (reactions != null) __obj.updateDynamic("reactions")(reactions)
     __obj.asInstanceOf[Comment]
   }
 }

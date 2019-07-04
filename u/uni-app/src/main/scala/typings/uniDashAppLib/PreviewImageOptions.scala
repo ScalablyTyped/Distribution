@@ -23,6 +23,23 @@ trait PreviewImageOptions extends js.Object {
     */
   var fail: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
+    * 图片指示器样式
+    * - default: 底部圆点指示器
+    * - number: 顶部数字指示器
+    * - none: 不显示指示器
+    */
+  var indicator: js.UndefOr[
+    uniDashAppLib.uniDashAppLibStrings.default | uniDashAppLib.uniDashAppLibStrings.number | uniDashAppLib.uniDashAppLibStrings.none
+  ] = js.undefined
+  /**
+    * 长按图片显示操作菜单，如不填默认为保存相册，1.9.5 起支持。
+    */
+  var longPressActions: js.UndefOr[LongPressActionsOptions] = js.undefined
+  /**
+    * 是否可循环预览
+    */
+  var loop: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -39,6 +56,9 @@ object PreviewImageOptions {
     count: java.lang.String = null,
     current: java.lang.String = null,
     fail: () => scala.Unit = null,
+    indicator: uniDashAppLib.uniDashAppLibStrings.default | uniDashAppLib.uniDashAppLibStrings.number | uniDashAppLib.uniDashAppLibStrings.none = null,
+    longPressActions: LongPressActionsOptions = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
     success: () => scala.Unit = null,
     urls: java.lang.String | js.Array[_] = null
   ): PreviewImageOptions = {
@@ -47,6 +67,9 @@ object PreviewImageOptions {
     if (count != null) __obj.updateDynamic("count")(count)
     if (current != null) __obj.updateDynamic("current")(current)
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
+    if (longPressActions != null) __obj.updateDynamic("longPressActions")(longPressActions)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewImageOptions]

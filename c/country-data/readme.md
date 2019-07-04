@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/OpenBookPrices/country-data
 // Definitions by: Logan Dam <https://github.com/biltongza>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.6
 
 ```
 

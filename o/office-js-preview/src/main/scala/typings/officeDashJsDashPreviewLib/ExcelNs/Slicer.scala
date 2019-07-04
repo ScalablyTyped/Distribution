@@ -95,7 +95,7 @@ class Slicer ()
   var sortBy: SlicerSortType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DataSourceOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending = js.native
   /**
     *
-    * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 through SlicerStyleLight6, TableStyleOther1 through TableStyleOther2, SlicerStyleDark1 through SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+    * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

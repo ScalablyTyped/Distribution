@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-vibration"
-version := "3.1.0-faaade"
+version := "3.1.1-3adc4d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

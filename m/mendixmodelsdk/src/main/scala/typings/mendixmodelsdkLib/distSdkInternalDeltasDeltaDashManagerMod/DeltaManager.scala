@@ -11,7 +11,6 @@ class DeltaManager protected () extends IDeltaManager {
   def this(model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel) = this()
   var callCloseCallback: js.Any = js.native
   var callErrorCallback: js.Any = js.native
-  var checkDetachedStructures: scala.Boolean = js.native
   var closeCallback: js.Any = js.native
   var commitTransaction: js.Any = js.native
   var deltaProcessor: js.Any = js.native

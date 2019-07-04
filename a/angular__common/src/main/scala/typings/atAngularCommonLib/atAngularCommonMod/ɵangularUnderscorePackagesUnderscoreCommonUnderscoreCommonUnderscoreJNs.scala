@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 object ɵangularUnderscorePackagesUnderscoreCommonUnderscoreCommonUnderscoreJNs extends js.Object {
   @js.native
   class provide ()
-    extends atAngularCommonLib.atAngularCommonMod.ɵNgClassImpl
+    extends atAngularCommonLib.atAngularCommonMod.ɵNgStyleImpl
   
   @js.native
   class useClass protected ()
-    extends atAngularCommonLib.atAngularCommonMod.ɵNgClassR2Impl {
-    def this(_iterableDiffers: atAngularCoreLib.atAngularCoreMod.IterableDiffers, _keyValueDiffers: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers, _ngEl: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _renderer: atAngularCoreLib.atAngularCoreMod.Renderer2) = this()
+    extends atAngularCommonLib.atAngularCommonMod.ɵNgStyleR2Impl {
+    def this(_ngEl: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _differs: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers, _renderer: atAngularCoreLib.atAngularCoreMod.Renderer2) = this()
   }
   
 }

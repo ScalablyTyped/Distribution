@@ -50,6 +50,7 @@ class QuestionSelectBase protected () extends Question {
     */
   val isOtherSelected: scala.Boolean = js.native
   var isSettingDefaultValue: scala.Boolean = js.native
+  var keepIncorrectValues: scala.Boolean = js.native
   val locOtherErrorText: LocalizableString = js.native
   val locOtherPlaceHolder: LocalizableString = js.native
   val locOtherText: LocalizableString = js.native

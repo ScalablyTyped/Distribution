@@ -133,6 +133,7 @@ class Question protected ()
     * The rendered width of the question.
     */
   var renderWidth: java.lang.String = js.native
+  val requireUpdateCommentValue: scala.Boolean = js.native
   /**
     * The custom text that will be shown on required error. Use this property, if you do not want to show the default text.
     */
@@ -310,6 +311,7 @@ class Question protected ()
   def hasErrors(fireCallback: scala.Boolean): scala.Boolean = js.native
   /* protected */ def hasOtherChanged(): scala.Unit = js.native
   /* protected */ def hasRequiredError(): scala.Boolean = js.native
+  /* protected */ def initCommentFromSurvey(): scala.Unit = js.native
   /* protected */ def initDataFromSurvey(): scala.Unit = js.native
   def isAnswerCorrect(): scala.Boolean = js.native
   /* protected */ def isDefaultValueEmpty(): scala.Boolean = js.native
@@ -320,6 +322,14 @@ class Question protected ()
   def isLayoutTypeSupported(layoutType: java.lang.String): scala.Boolean = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): scala.Unit with js.Any = js.native
+  /**
+    * Move question to a new container Page/Panel. Add as a last element if insertBefore parameter is not used or inserted into the given index,
+    * if insert parameter is number, or before the given element, if the insertBefore parameter is a question or panel
+    * @param container Page or Panel to where a question is relocated.
+    * @param insertBefore Use it if you want to set the question to a specific position. You may use a number (use 0 to insert int the beginning) or element, if you want to insert before this element.
+    */
+  def moveTo(container: IPanel): scala.Boolean = js.native
+  def moveTo(container: IPanel, insertBefore: js.Any): scala.Boolean = js.native
   def onAnyValueChanged(name: java.lang.String): scala.Unit = js.native
   /* protected */ def onCheckForErrors(errors: js.Array[SurveyError]): scala.Unit = js.native
   /* protected */ def onCreating(): scala.Unit = js.native

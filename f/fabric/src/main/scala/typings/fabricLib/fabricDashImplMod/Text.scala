@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fabricLib.fabricDashImplMod.TextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, underline, overline, linethrough, textAlign, fontStyle, lineHeight, superscript, subscript, textBackgroundColor, charSpacing, styles, deltaY, text, __charBounds */ @JSImport("fabric/fabric-impl", "Text")
+- fabricLib.fabricDashImplMod.TextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, underline, overline, linethrough, textAlign, fontStyle, lineHeight, superscript, subscript, textBackgroundColor, charSpacing, styles, deltaY, text */ @JSImport("fabric/fabric-impl", "Text")
 @js.native
 class Text protected () extends Object {
   /**
@@ -17,8 +17,8 @@ class Text protected () extends Object {
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, options: TextOptions) = this()
   /**
-    * @private
     * Contains characters bounding boxes for each line and char
+    * @private
     * @type Array of char grapheme bounding boxes
     */
   var __charBounds: js.UndefOr[js.Array[js.Array[fabricLib.Anon_DeltaY]]] = js.native
@@ -28,6 +28,12 @@ class Text protected () extends Object {
     * @type Array<Number>
     */
   var __lineHeights: js.Array[scala.Double] = js.native
+  /**
+    * List of line widths
+    * @private
+    * @type Array<Number>
+    */
+  var __lineWidths: js.Array[scala.Double] = js.native
   /**
     * @private
     * @type boolean
@@ -254,6 +260,23 @@ class Text protected () extends Object {
     method: java.lang.String,
     ctx: stdLib.CanvasRenderingContext2D,
     line: java.lang.String,
+    left: scala.Double,
+    top: scala.Double,
+    lineIndex: scala.Double
+  ): scala.Unit = js.native
+  /**
+    * @private
+    * @param {String} method Method name ("fillText" or "strokeText")
+    * @param {CanvasRenderingContext2D} ctx Context to render on
+    * @param {Array} line Text to render
+    * @param {Number} left Left position of text
+    * @param {Number} top Top position of text
+    * @param {Number} lineIndex Index of a line in a text
+    */
+  def _renderTextLine(
+    method: java.lang.String,
+    ctx: stdLib.CanvasRenderingContext2D,
+    line: js.Array[java.lang.String],
     left: scala.Double,
     top: scala.Double,
     lineIndex: scala.Double

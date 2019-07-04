@@ -91,6 +91,9 @@ object uniDashAppLibStrings {
   sealed trait center extends js.Object
   
   @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
   sealed trait dock extends js.Object
   
   @js.native
@@ -170,6 +173,9 @@ object uniDashAppLibStrings {
   
   @js.native
   sealed trait normal extends js.Object
+  
+  @js.native
+  sealed trait number extends js.Object
   
   @js.native
   sealed trait oauth extends js.Object
@@ -342,6 +348,8 @@ object uniDashAppLibStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def dock: dock = "dock".asInstanceOf[dock]
   @scala.inline
   def ease: ease = "ease".asInstanceOf[ease]
@@ -395,6 +403,8 @@ object uniDashAppLibStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
   def oauth: oauth = "oauth".asInstanceOf[oauth]
   @scala.inline

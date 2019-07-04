@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Realm.Sync")
 @js.native
 object ^ extends js.Object {
+  var downloadBeforeOpenBehavior: OpenRealmBehaviorConfiguration = js.native
+  var openLocalRealmBehavior: OpenRealmBehaviorConfiguration = js.native
   def _hasExistingSessions(): scala.Boolean = js.native
   def addListener(
     config: RealmListenerConfiguration,

@@ -226,6 +226,10 @@ object pagesNs extends js.Object {
   @js.native
   class CheckBox protected () extends AttributeWidget {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    /**
+      * In version 8.0.0: introduced
+      */
+    var labelPosition: LabelPosition = js.native
   }
   
   @js.native
@@ -1414,6 +1418,10 @@ object pagesNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var caption: mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
   }
+  
+  @js.native
+  class LabelPosition ()
+    extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/layout relevant section in reference guide}
@@ -13660,6 +13668,14 @@ object pagesNs extends js.Object {
       *  8.0.0 and higher
       */
     def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object LabelPosition extends js.Object {
+    var AfterControl: mendixmodelsdkLib.distGenPagesMod.pagesNs.LabelPosition = js.native
+    var BeforeControl: mendixmodelsdkLib.distGenPagesMod.pagesNs.LabelPosition = js.native
+    var Default: mendixmodelsdkLib.distGenPagesMod.pagesNs.LabelPosition = js.native
   }
   
   /* static members */

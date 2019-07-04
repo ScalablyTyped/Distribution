@@ -18,12 +18,12 @@ object ^ extends js.Object {
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): IOEither[L, A] = js.native
   def fromLeft[L, A](l: L): IOEither[L, A] = js.native
   def left[L, A](fa: fpDashTsLib.libIOMod.IO[L]): IOEither[L, A] = js.native
-  def left2v[L](l: L): IOEither[L, scala.Nothing] = js.native
-  def leftIO[E](me: fpDashTsLib.libIOMod.IO[E]): IOEither[E, scala.Nothing] = js.native
+  def left2v[E, A](l: E): IOEither[E, A] = js.native
+  def leftIO[E, A](me: fpDashTsLib.libIOMod.IO[E]): IOEither[E, A] = js.native
   def orElse[E, A, M](f: js.Function1[/* e */ E, IOEither[M, A]]): js.Function1[/* ma */ IOEither[E, A], IOEither[M, A]] = js.native
   def right[L, A](fa: fpDashTsLib.libIOMod.IO[A]): IOEither[L, A] = js.native
-  def right2v[A](a: A): IOEither[scala.Nothing, A] = js.native
-  def rightIO[A](ma: fpDashTsLib.libIOMod.IO[A]): IOEither[scala.Nothing, A] = js.native
+  def right2v[E, A](a: A): IOEither[E, A] = js.native
+  def rightIO[E, A](ma: fpDashTsLib.libIOMod.IO[A]): IOEither[E, A] = js.native
   def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A]): IOEither[stdLib.Error, A] = js.native
   def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, stdLib.Error]): IOEither[stdLib.Error, A] = js.native
   def tryCatch2v[L, A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, L]): IOEither[L, A] = js.native

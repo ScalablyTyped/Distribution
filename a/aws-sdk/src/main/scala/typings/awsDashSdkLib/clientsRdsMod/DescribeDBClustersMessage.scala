@@ -15,6 +15,10 @@ trait DescribeDBClustersMessage extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
+    * Optional Boolean parameter that specifies whether the output includes information about clusters shared from other AWS accounts.
+    */
+  var IncludeShared: js.UndefOr[Boolean] = js.undefined
+  /**
     * An optional pagination token provided by a previous DescribeDBClusters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
     */
   var Marker: js.UndefOr[String] = js.undefined
@@ -29,12 +33,14 @@ object DescribeDBClustersMessage {
   def apply(
     DBClusterIdentifier: String = null,
     Filters: FilterList = null,
+    IncludeShared: js.UndefOr[Boolean] = js.undefined,
     Marker: String = null,
     MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeDBClustersMessage = {
     val __obj = js.Dynamic.literal()
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
+    if (!js.isUndefined(IncludeShared)) __obj.updateDynamic("IncludeShared")(IncludeShared)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
     __obj.asInstanceOf[DescribeDBClustersMessage]

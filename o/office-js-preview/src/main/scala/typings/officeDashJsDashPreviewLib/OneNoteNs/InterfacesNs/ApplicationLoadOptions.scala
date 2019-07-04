@@ -16,7 +16,7 @@ trait ApplicationLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance.
+    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only one notebook at a time is open in the application instance.
     *
     * [Api set: OneNoteApi 1.1]
     */

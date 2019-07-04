@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * A collection of PivotField objects within a PivotHierarchy.
+  * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
   *
   * [Api set: ExcelApi 1.8]
   */
@@ -22,14 +22,14 @@ class PivotFieldCollection ()
   val items: js.Array[PivotField] = js.native
   /**
     *
-    * Gets the number of pivot fields in the collection.
+    * Gets the number of pivot hierarchies in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
     *
-    * Gets a PivotField by its name or id.
+    * Gets a PivotHierarchy by its name or id.
     *
     * [Api set: ExcelApi 1.8]
     *
@@ -38,11 +38,11 @@ class PivotFieldCollection ()
   def getItem(name: java.lang.String): PivotField = js.native
   /**
     *
-    * Gets a PivotField by name. If the PivotField does not exist, will return a null object.
+    * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param name Name of the PivotField to be retrieved.
+    * @param name Name of the PivotHierarchy to be retrieved.
     */
   def getItemOrNullObject(name: java.lang.String): PivotField = js.native
   /**

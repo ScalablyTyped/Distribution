@@ -150,6 +150,16 @@ class Worksheet ()
   val onFormatChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
     *
+    * Occurs when row hidden state changed on a specific worksheet.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onRowHiddenChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
+  /**
+    *
     * Occurs when sorting on rows.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -346,7 +356,7 @@ class Worksheet ()
   ): Worksheet = js.native
   /**
     *
-    * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
+    * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
     *
     * [Api set: ExcelApi 1.1]
     */

@@ -114,7 +114,7 @@ trait IPaymentIntent
   /**
     * The several states the PaymentIntent goes through until it it either canceled or succeeds.
     */
-  var status: stripeLib.stripeLibStrings.requires_payment_method | stripeLib.stripeLibStrings.requires_action | stripeLib.stripeLibStrings.processing | stripeLib.stripeLibStrings.requires_authorization | stripeLib.stripeLibStrings.requires_capture | stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.succeeded
+  var status: stripeLib.stripeLibStrings.requires_payment_method | stripeLib.stripeLibStrings.requires_confirmation | stripeLib.stripeLibStrings.requires_action | stripeLib.stripeLibStrings.processing | stripeLib.stripeLibStrings.requires_capture | stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.succeeded
   /**
     * The data with which to automatically create a Transfer when the payment is finalized.
     */
@@ -144,7 +144,7 @@ object IPaymentIntent {
     `object`: stripeLib.stripeLibStrings.payment_intent,
     payment_method_types: js.Array[java.lang.String],
     source: java.lang.String | stripeLib.stripeMod.IStripeSource,
-    status: stripeLib.stripeLibStrings.requires_payment_method | stripeLib.stripeLibStrings.requires_action | stripeLib.stripeLibStrings.processing | stripeLib.stripeLibStrings.requires_authorization | stripeLib.stripeLibStrings.requires_capture | stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.succeeded,
+    status: stripeLib.stripeLibStrings.requires_payment_method | stripeLib.stripeLibStrings.requires_confirmation | stripeLib.stripeLibStrings.requires_action | stripeLib.stripeLibStrings.processing | stripeLib.stripeLibStrings.requires_capture | stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.succeeded,
     application: java.lang.String | stripeLib.stripeMod.applicationsNs.IApplication = null,
     application_fee_amount: scala.Int | scala.Double = null,
     cancelation_reason: PaymentIntentCancelationReason = null,

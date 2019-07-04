@@ -18,6 +18,10 @@ trait ɵɵBaseDef[T] extends js.Object {
   {[ P in keyof T ]: string}
     */ atAngularCoreLib.atAngularCoreLibStrings.ɵɵBaseDef with js.Any
   /**
+    * Refreshes host bindings on the associated directive.
+    */
+  var hostBindings: HostBindingsFunction[T] | scala.Null
+  /**
     * A dictionary mapping the inputs' minified property names to their public API names, which
     * are their aliases if any, or their original unminified property names
     * (as in `@Input('alias') propertyName: any;`).
@@ -54,10 +58,12 @@ object ɵɵBaseDef {
   {[ P in keyof T ]: string}
     */ atAngularCoreLib.atAngularCoreLibStrings.ɵɵBaseDef with js.Any,
     contentQueries: ContentQueriesFunction[T] = null,
+    hostBindings: HostBindingsFunction[T] = null,
     viewQuery: ViewQueriesFunction[T] = null
   ): ɵɵBaseDef[T] = {
     val __obj = js.Dynamic.literal(declaredInputs = declaredInputs, inputs = inputs, outputs = outputs)
     if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries)
+    if (hostBindings != null) __obj.updateDynamic("hostBindings")(hostBindings)
     if (viewQuery != null) __obj.updateDynamic("viewQuery")(viewQuery)
     __obj.asInstanceOf[ɵɵBaseDef[T]]
   }

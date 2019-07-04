@@ -53,7 +53,7 @@ object customwidgetsNs extends js.Object {
     /**
       * In version 8.0.0: introduced
       */
-    var supportedPlatform: SupportedPlatformEnum = js.native
+    var supportedPlatform: mendixmodelsdkLib.distGenClientMod.clientNs.SupportedPlatform = js.native
     var widgetId: java.lang.String = js.native
   }
   
@@ -63,10 +63,6 @@ object customwidgetsNs extends js.Object {
   
   @js.native
   class PathType ()
-    extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
-  
-  @js.native
-  class SupportedPlatformEnum ()
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   @js.native
@@ -774,14 +770,6 @@ object customwidgetsNs extends js.Object {
     var None: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
     var Reference: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
     var ReferenceSet: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SupportedPlatformEnum extends js.Object {
-    var All: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
-    var Native: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
-    var Web: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
   }
   
   /* static members */

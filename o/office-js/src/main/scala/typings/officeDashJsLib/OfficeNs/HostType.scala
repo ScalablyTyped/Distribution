@@ -16,6 +16,10 @@ sealed trait HostType extends js.Object
 object HostType extends js.Object {
   /**
     * The Office host is Microsoft Access.
+    * 
+    * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+    * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+    * to build no-code business solutions for web and mobile devices.
     */
   @js.native
   sealed trait Access

@@ -20,6 +20,7 @@ trait CheerioElement extends js.Object {
   var parentNode: CheerioElement
   var prev: CheerioElement
   var previousSibling: CheerioElement
+  var startIndex: js.UndefOr[scala.Double] = js.undefined
   // Document References
   // Node Console
   var tagName: java.lang.String
@@ -44,11 +45,13 @@ object CheerioElement {
     previousSibling: CheerioElement,
     tagName: java.lang.String,
     `type`: java.lang.String,
-    data: java.lang.String = null
+    data: java.lang.String = null,
+    startIndex: scala.Int | scala.Double = null
   ): CheerioElement = {
     val __obj = js.Dynamic.literal(attribs = attribs, childNodes = childNodes, children = children, firstChild = firstChild, lastChild = lastChild, name = name, next = next, nextSibling = nextSibling, nodeValue = nodeValue, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling, tagName = tagName)
     __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheerioElement]
   }
 }

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - atAngularCoreLib.atAngularCoreLibNumbers.`3`
   - atAngularCoreLib.atAngularCoreLibNumbers.`4`
   - atAngularCoreLib.atAngularCoreLibNumbers.`5`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`6`
 */
 trait ɵAttributeMarker extends js.Object
 
@@ -51,6 +52,22 @@ object ɵAttributeMarker {
     */
   @scala.inline
   def Classes: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  /**
+    * Signals that the following attribute will be translated by runtime i18n
+    *
+    * For example, given the following HTML:
+    *
+    * ```
+    * <div moo="car" foo="value" i18n-foo [bar]="binding" i18n-bar>
+    * ```
+    *
+    * the generated code is:
+    *
+    * ```
+    * var _c1 = ['moo', 'car', AttributeMarker.I18n, 'foo', 'bar'];
+    */
+  @scala.inline
+  def I18n: atAngularCoreLib.atAngularCoreLibNumbers.`6` = this.cast(6)
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue

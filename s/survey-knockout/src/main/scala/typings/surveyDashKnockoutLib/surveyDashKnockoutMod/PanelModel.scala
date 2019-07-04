@@ -66,6 +66,14 @@ class PanelModel () extends PanelModelBase {
     * @see state
     */
   def expand(): scala.Unit = js.native
+  /**
+    * Move panel to a new container Page/Panel. Add as a last element if insertBefore parameter is not used or inserted into the given index,
+    * if insert parameter is number, or before the given element, if the insertBefore parameter is a question or panel
+    * @param container Page or Panel to where a question is relocated.
+    * @param insertBefore Use it if you want to set the panel to a specific position. You may use a number (use 0 to insert int the beginning) or element, if you want to insert before this element.
+    */
+  def moveTo(container: IPanel): scala.Boolean = js.native
+  def moveTo(container: IPanel, insertBefore: js.Any): scala.Boolean = js.native
   def stateChangedCallback(): scala.Unit = js.native
 }
 

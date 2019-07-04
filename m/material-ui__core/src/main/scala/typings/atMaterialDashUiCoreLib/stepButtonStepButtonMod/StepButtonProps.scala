@@ -301,6 +301,7 @@ trait StepButtonProps extends js.Object {
   var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLElement]] = js.undefined
   var optional: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var orientation: js.UndefOr[atMaterialDashUiCoreLib.stepperStepperMod.Orientation] = js.undefined
+  var ping: js.UndefOr[java.lang.String] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var property: js.UndefOr[java.lang.String] = js.undefined
@@ -517,6 +518,7 @@ object StepButtonProps {
     onWheel: reactLib.reactMod.WheelEventHandler[stdLib.HTMLElement] = null,
     optional: reactLib.reactMod.ReactNode = null,
     orientation: atMaterialDashUiCoreLib.stepperStepperMod.Orientation = null,
+    ping: java.lang.String = null,
     placeholder: java.lang.String = null,
     prefix: java.lang.String = null,
     property: java.lang.String = null,
@@ -728,6 +730,7 @@ object StepButtonProps {
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
     if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (ping != null) __obj.updateDynamic("ping")(ping)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)

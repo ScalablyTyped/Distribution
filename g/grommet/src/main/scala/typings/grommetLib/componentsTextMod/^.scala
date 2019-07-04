@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Text: reactLib.reactMod.FC[
-    TextProps with (reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
-      reactLib.HTMLSpanElement
+    TextProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
+        reactLib.HTMLSpanElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = js.native
 }

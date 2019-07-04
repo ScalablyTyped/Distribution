@@ -34,9 +34,9 @@ object ^ extends js.Object {
   def isRight[E, A](fa: These[E, A]): /* is fp-ts.fp-ts/lib/These.That<E, A> */ scala.Boolean = js.native
   def isThat[L, A](fa: These[L, A]): /* is fp-ts.fp-ts/lib/These.That<L, A> */ scala.Boolean = js.native
   def isThis[L, A](fa: These[L, A]): /* is fp-ts.fp-ts/lib/These.This<L, A> */ scala.Boolean = js.native
-  def left[E](left: E): These[E, scala.Nothing] = js.native
+  def left[E, A](left: E): These[E, A] = js.native
   def leftOrBoth[E](defaultLeft: E): js.Function1[/* ma */ fpDashTsLib.libOptionMod.Option[_], These[E, _]] = js.native
-  def right[A](right: A): These[scala.Nothing, A] = js.native
+  def right[E, A](right: A): These[E, A] = js.native
   def rightOrBoth[A](defaultRight: A): js.Function1[/* me */ fpDashTsLib.libOptionMod.Option[_], These[_, A]] = js.native
   def that[L, A](a: A): These[L, A] = js.native
   def thatOrBoth[L, A](defaultThat: A, ml: fpDashTsLib.libOptionMod.Option[L]): These[L, A] = js.native

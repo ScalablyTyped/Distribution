@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Object, that passed into battery event listener */
 @js.native
 trait BatteryStatusEvent
   extends stdLib.Event {

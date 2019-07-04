@@ -34,7 +34,7 @@ trait SlicerData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * True if all filters currently applied on the slicer is cleared.
+    * True if all filters currently applied on the slicer are cleared.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -59,7 +59,7 @@ trait SlicerData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents the name used in the formula.
+    * Represents the slicer name used in the formula.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -85,7 +85,7 @@ trait SlicerData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 through SlicerStyleLight6, TableStyleOther1 through TableStyleOther2, SlicerStyleDark1 through SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+    * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

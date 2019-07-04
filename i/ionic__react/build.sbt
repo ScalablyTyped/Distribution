@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__react"
-version := "0.0.5-8c8a0a"
+version := "0.0.5-97579e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ionic__core" % "4.6.0-dac93c",
   "org.scalablytyped" %%% "ionicons" % "4.5.10-2-23a2a4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-9e424f",
-  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190613Z-498bce",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
+  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-99459e",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

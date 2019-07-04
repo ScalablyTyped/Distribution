@@ -31,6 +31,8 @@ trait IObservableFactory extends js.Object {
   ): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
   def apply[T](value: js.Array[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
   def apply[T](value: js.Array[T], options: CreateObservableOptions): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
+  def apply[T](value: stdLib.Set[T]): mobxLib.libInternalMod.ObservableSet[T] = js.native
+  def apply[T](value: stdLib.Set[T], options: CreateObservableOptions): mobxLib.libInternalMod.ObservableSet[T] = js.native
   def apply[K, V](value: stdLib.Map[K, V]): mobxLib.libInternalMod.ObservableMap[K, V] = js.native
   def apply[K, V](value: stdLib.Map[K, V], options: CreateObservableOptions): mobxLib.libInternalMod.ObservableMap[K, V] = js.native
 }

@@ -151,7 +151,7 @@ object ^ extends js.Object {
   def isObservableSet(thing: js.Any): /* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ scala.Boolean = js.native
   def keys[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[scala.Double] = js.native
   def keys[K](map: mobxLib.libInternalMod.ObservableMap[K, _]): js.Array[K] = js.native
-  def keys[T /* <: js.Object */](obj: T): js.Array[java.lang.String] = js.native
+  def keys[T /* <: js.Object */](obj: T): js.Array[stdLib.PropertyKey] = js.native
   def keys[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[T] = js.native
   def observe(
     `object`: js.Object,
@@ -297,12 +297,13 @@ object ^ extends js.Object {
   def remove[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K): js.Any = js.native
   def runInAction[T](block: js.Function0[T]): T = js.native
   def runInAction[T](name: java.lang.String, block: js.Function0[T]): T = js.native
-  def set[T /* <: js.Object */](obj: T, key: java.lang.String, value: js.Any): js.Any = js.native
+  def set[T /* <: js.Object */](obj: T, key: stdLib.PropertyKey, value: js.Any): js.Any = js.native
   def set[T /* <: js.Object */](obj: T, values: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def set[V](
-    obj: mobxLib.libInternalMod.ObservableMap[java.lang.String, V],
+    obj: mobxLib.libInternalMod.ObservableMap[stdLib.PropertyKey, V],
     values: org.scalablytyped.runtime.StringDictionary[V]
   ): js.Any = js.native
+  def set[T](obj: mobxLib.libInternalMod.ObservableSet[T], value: T): js.Any = js.native
   def set[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double, value: T): js.Any = js.native
   def set[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K, value: V): js.Any = js.native
   def spy(listener: js.Function1[/* change */ js.Any, scala.Unit]): mobxLib.libUtilsUtilsMod.Lambda = js.native

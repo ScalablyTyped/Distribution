@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * The static data for an LView (shared between all templates of a
   * given type).
   *
-  * Stored on the template function as ngPrivateData.
+  * Stored on the `ComponentDef.tView`.
   */
 trait TView extends js.Object {
   /**
@@ -126,7 +126,7 @@ trait TView extends js.Object {
     */
   val id: scala.Double
   /**
-    * Pointer to the `TNode` that represents the root of the view.
+    * Pointer to the host `TNode` (not part of this TView).
     *
     * If this is a `TViewNode` for an `LViewNode`, this is an embedded view of a container.
     * We need this pointer to be able to efficiently find this node when inserting the view

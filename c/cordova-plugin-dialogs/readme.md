@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-dialogs
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Cordova Notification Plugin

@@ -199,6 +199,10 @@ package object clientsSwfMod {
     - java.lang.String
   */
   type RequestCancelExternalWorkflowExecutionFailedCause = _RequestCancelExternalWorkflowExecutionFailedCause | java.lang.String
+  type ResourceTagKey = java.lang.String
+  type ResourceTagKeyList = js.Array[ResourceTagKey]
+  type ResourceTagList = js.Array[ResourceTag]
+  type ResourceTagValue = java.lang.String
   type ReverseOrder = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVITY_TYPE_DEPRECATED

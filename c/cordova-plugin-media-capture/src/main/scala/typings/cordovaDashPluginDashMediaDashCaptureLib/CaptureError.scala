@@ -58,5 +58,6 @@ org.scalablytyped.runtime.Instantiable2[/* code */ scala.Double, /* message */ j
   var CAPTURE_INVALID_ARGUMENT: scala.Double = js.native
   var CAPTURE_NOT_SUPPORTED: scala.Double = js.native
   var CAPTURE_NO_MEDIA_FILES: scala.Double = js.native
+  var CAPTURE_PERMISSION_DENIED: scala.Double = js.native
 }
 

@@ -16,5 +16,8 @@ object nameofNs extends js.Object {
   def full[T](func: js.Function1[/* obj */ T, scala.Unit]): java.lang.String = js.native
   def full[T](func: js.Function1[/* obj */ T, scala.Unit], periodIndex: scala.Double): java.lang.String = js.native
   def full[T](periodIndex: scala.Double): java.lang.String = js.native
+  def toArray(args: js.Any*): js.Array[java.lang.String] = js.native
+  // tslint:disable-next-line no-unnecessary-generics
+  def toArray[T](func: js.Function1[/* obj */ T, js.Array[_]]): js.Array[java.lang.String] = js.native
 }
 

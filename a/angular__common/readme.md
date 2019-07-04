@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__common
 
-Typings are for version 8.0.3
+Typings are for version 8.1.0
 
 ## Library description:
 Angular - commonly needed directives and services
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * @license Angular v8.0.3
+ * @license Angular v8.1.0
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */

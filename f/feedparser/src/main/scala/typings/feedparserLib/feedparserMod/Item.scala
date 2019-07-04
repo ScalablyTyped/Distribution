@@ -11,7 +11,7 @@ trait Item extends js.Object {
   var comments: java.lang.String
   var date: stdLib.Date | scala.Null
   var description: java.lang.String
-  var enclosures: js.Array[java.lang.String]
+  var enclosures: js.Array[Enclosure]
   var guid: java.lang.String
   var image: Image
   var link: java.lang.String
@@ -29,7 +29,7 @@ object Item {
     categories: js.Array[java.lang.String],
     comments: java.lang.String,
     description: java.lang.String,
-    enclosures: js.Array[java.lang.String],
+    enclosures: js.Array[Enclosure],
     guid: java.lang.String,
     image: Image,
     link: java.lang.String,

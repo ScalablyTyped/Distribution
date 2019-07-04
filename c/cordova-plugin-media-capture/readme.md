@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-media-capture
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 Cordova Media Capture Plugin

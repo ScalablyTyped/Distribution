@@ -24,8 +24,13 @@ trait AddBindingFromPromptOptions extends js.Object {
   var promptText: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. 
-    * The headers provided in the TableData object specify the labels used in the field selection UI. 
+    * The headers provided in the TableData object specify the labels used in the field selection UI.
+    * 
     * **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
+    * 
+    * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+    * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+    * to build no-code business solutions for web and mobile devices.
     */
   var sampleData: js.UndefOr[TableData] = js.undefined
 }

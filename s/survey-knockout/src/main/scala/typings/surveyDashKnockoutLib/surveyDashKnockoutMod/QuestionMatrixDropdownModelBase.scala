@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseModel[MatrixDropdownRowModelBase, MatrixDropdownColumn] {
   def this(name: java.lang.String) = this()
+  val canRemoveRow: scala.Boolean = js.native
   /**
     * Use this property to change the default cell type.
     */
@@ -34,6 +35,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   var columnMinWidth: java.lang.String = js.native
   var columnsLocation: java.lang.String = js.native
   val hasFooter: scala.Boolean = js.native
+  val hasRowText: scala.Boolean = js.native
   val hasTotal: scala.Boolean = js.native
   /**
     * Set this property to true to show the horizontal scroll.
@@ -51,6 +53,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     * The default options caption for dropdown cell type.
     */
   var optionsCaption: java.lang.String = js.native
+  val renderedTable: QuestionMatrixDropdownRenderedTable = js.native
   val totalValue: js.Any = js.native
   val visibleTotalRow: MatrixDropdownRowModelBase = js.native
   def addColumn(name: java.lang.String): MatrixDropdownColumn = js.native
@@ -60,6 +63,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def createNewValue(): js.Any = js.native
   def createQuestion(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
   /* protected */ def createQuestionCore(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
+  /* protected */ def createRenderedTable(): QuestionMatrixDropdownRenderedTable = js.native
   /* protected */ def deleteRowValue(newValue: js.Any, row: MatrixDropdownRowModelBase): js.Any = js.native
   /* protected */ def generateRows(): js.Array[MatrixDropdownRowModelBase] = js.native
   /* protected */ def generateTotalRow(): MatrixDropdownRowModelBase = js.native
@@ -93,7 +97,11 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def onBeforeValueChanged(`val`: js.Any): scala.Unit = js.native
   /* protected */ def onCellValueChanged(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): scala.Unit = js.native
   def onColumnPropertiesChanged(column: MatrixDropdownColumn): scala.Unit = js.native
+  /* protected */ def onEndRowAdding(): scala.Unit = js.native
+  /* protected */ def onEndRowRemoving(index: scala.Double): scala.Unit = js.native
   /* protected */ def onMatrixRowCreated(row: MatrixDropdownRowModelBase): scala.Unit = js.native
+  def onRenderedTableCreatedCallback(table: QuestionMatrixDropdownRenderedTable): scala.Unit = js.native
+  def onRenderedTableResetCallback(): scala.Unit = js.native
   def onRowChanged(
     row: MatrixDropdownRowModelBase,
     columnName: java.lang.String,
@@ -101,7 +109,9 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     isDeletingValue: scala.Boolean
   ): scala.Unit = js.native
   def onRowChanging(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): js.Any = js.native
+  /* protected */ def onStartRowAddingRemoving(): scala.Unit = js.native
   def onTotalValueChanged(): js.Any = js.native
+  /* protected */ def resetRenderedTable(): scala.Unit = js.native
   /* protected */ def runCellsCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /* protected */ def runTotalsCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /**

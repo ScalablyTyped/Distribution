@@ -44,6 +44,7 @@ class QuestionMultipleTextModel protected () extends Question {
   def getRows(): js.Array[_] = js.native
   def getSurvey(): ISurvey = js.native
   def getTextProcessor(): ITextProcessor = js.native
+  def indexOf(el: IElement): scala.Double = js.native
   /* protected */ def onItemValueChanged(): scala.Unit = js.native
   def setMultipleTextValue(name: java.lang.String, value: js.Any): scala.Unit = js.native
   @JSName("setMultipleTextValue")

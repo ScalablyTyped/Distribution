@@ -8,12 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("intl-messageformat/lib/compiler", JSImport.Default)
 @js.native
 class default protected () extends Compiler {
-  def this(locales: java.lang.String, formats: Formats) = this()
-  def this(locales: js.Array[java.lang.String], formats: Formats) = this()
+  def this(locales: java.lang.String, formats: Formats, formatters: Formatters) = this()
+  def this(locales: js.Array[java.lang.String], formats: Formats, formatters: Formatters) = this()
   /* CompleteClass */
   override var currentPlural: js.Any = js.native
   /* CompleteClass */
   override var formats: js.Any = js.native
+  /* CompleteClass */
+  override var formatters: js.Any = js.native
   /* CompleteClass */
   override var locales: js.Any = js.native
   /* CompleteClass */

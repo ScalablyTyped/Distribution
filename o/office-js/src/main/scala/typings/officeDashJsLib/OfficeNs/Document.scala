@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * An abstract class that represents the document the add-in is interacting with.
   *
   * @remarks
-  * **Hosts**: Access, Excel, PowerPoint, Project, Word
+  * **Hosts**: Excel, PowerPoint, Project, Word
   */
 @js.native
 trait Document extends js.Object {
@@ -312,7 +312,7 @@ trait Document extends js.Object {
     *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
     *   </tr>
     *   <tr>
-    *     <td>Access, Excel, and Word</td>
+    *     <td>Excel and Word</td>
     *     <td>`Office.CoercionType.Table` (TableData object)</td>
     *   </tr>
     *   <tr>
@@ -760,7 +760,7 @@ trait Document extends js.Object {
     *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
     *   </tr>
     *   <tr>
-    *     <td>Access, Excel, and Word</td>
+    *     <td>Excel and Word</td>
     *     <td>`Office.CoercionType.Table` (TableData object)</td>
     *   </tr>
     *   <tr>

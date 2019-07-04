@@ -19,7 +19,7 @@ trait R3DirectiveMetadata extends js.Object {
     * Mappings indicating how the directive interacts with its host element (host bindings,
     * listeners, etc).
     */
-  var host: atAngularCompilerLib.Anon_Attributes
+  var host: R3HostMetadata
   /**
     * A mapping of input field names to the property names.
     */
@@ -74,7 +74,7 @@ trait R3DirectiveMetadata extends js.Object {
 object R3DirectiveMetadata {
   @scala.inline
   def apply(
-    host: atAngularCompilerLib.Anon_Attributes,
+    host: R3HostMetadata,
     inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])],
     lifecycle: atAngularCompilerLib.Anon_UsesOnChanges,
     name: java.lang.String,

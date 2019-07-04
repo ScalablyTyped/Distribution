@@ -38,7 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/astronaughts/simple-cw-node
 // Definitions by: vvakame <https://github.com/vvakame>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+// TypeScript Version: 3.0
 
 ```
 

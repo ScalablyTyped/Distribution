@@ -33,14 +33,19 @@ trait SelectProps extends js.Object {
   ] = js.undefined
   var messages: js.UndefOr[grommetLib.Anon_Multiple] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var options: js.Array[java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object]
-  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[
+    java.lang.String | reactLib.reactMod.ReactNode | reactLib.reactMod.Global.JSXNs.Element
+  ] = js.undefined
   var plain: js.UndefOr[scala.Boolean] = js.undefined
+  var replace: js.UndefOr[scala.Boolean] = js.undefined
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var selected: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var size: js.UndefOr[
@@ -76,13 +81,16 @@ object SelectProps {
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     messages: grommetLib.Anon_Multiple = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
     onChange: /* repeated */ js.Any => _ = null,
     onClose: /* repeated */ js.Any => _ = null,
+    onMore: /* repeated */ js.Any => _ = null,
     onOpen: /* repeated */ js.Any => _ = null,
     onSearch: /* repeated */ js.Any => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
+    placeholder: java.lang.String | reactLib.reactMod.ReactNode | reactLib.reactMod.Global.JSXNs.Element = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
+    replace: js.UndefOr[scala.Boolean] = js.undefined,
     searchPlaceholder: java.lang.String = null,
     selected: scala.Double | js.Array[scala.Double] = null,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
@@ -110,13 +118,16 @@ object SelectProps {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1(onMore))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

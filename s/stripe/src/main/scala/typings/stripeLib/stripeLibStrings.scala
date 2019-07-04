@@ -640,10 +640,10 @@ object stripeLibStrings {
   sealed trait requires_action extends js.Object
   
   @js.native
-  sealed trait requires_authorization extends js.Object
+  sealed trait requires_capture extends js.Object
   
   @js.native
-  sealed trait requires_capture extends js.Object
+  sealed trait requires_confirmation extends js.Object
   
   @js.native
   sealed trait requires_payment_method extends js.Object
@@ -1270,9 +1270,9 @@ object stripeLibStrings {
   @scala.inline
   def requires_action: requires_action = "requires_action".asInstanceOf[requires_action]
   @scala.inline
-  def requires_authorization: requires_authorization = "requires_authorization".asInstanceOf[requires_authorization]
-  @scala.inline
   def requires_capture: requires_capture = "requires_capture".asInstanceOf[requires_capture]
+  @scala.inline
+  def requires_confirmation: requires_confirmation = "requires_confirmation".asInstanceOf[requires_confirmation]
   @scala.inline
   def requires_payment_method: requires_payment_method = "requires_payment_method".asInstanceOf[requires_payment_method]
   @scala.inline

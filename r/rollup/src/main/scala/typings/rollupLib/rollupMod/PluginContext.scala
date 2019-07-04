@@ -26,8 +26,10 @@ trait PluginContext extends MinimalPluginContext {
   def emitChunk(name: java.lang.String, options: rollupLib.Anon_Name): java.lang.String = js.native
   def error(err: java.lang.String): scala.Nothing = js.native
   def error(err: java.lang.String, pos: rollupLib.Anon_ColumnLine): scala.Nothing = js.native
+  def error(err: java.lang.String, pos: scala.Double): scala.Nothing = js.native
   def error(err: RollupError): scala.Nothing = js.native
   def error(err: RollupError, pos: rollupLib.Anon_ColumnLine): scala.Nothing = js.native
+  def error(err: RollupError, pos: scala.Double): scala.Nothing = js.native
   def getAssetFileName(assetReferenceId: java.lang.String): java.lang.String = js.native
   def getChunkFileName(chunkReferenceId: java.lang.String): java.lang.String = js.native
   def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_HasModuleSideEffects = js.native
@@ -42,7 +44,9 @@ trait PluginContext extends MinimalPluginContext {
   def setAssetSource(assetReferenceId: java.lang.String, source: nodeLib.Buffer): scala.Unit = js.native
   def warn(warning: java.lang.String): scala.Unit = js.native
   def warn(warning: java.lang.String, pos: rollupLib.Anon_ColumnLine): scala.Unit = js.native
+  def warn(warning: java.lang.String, pos: scala.Double): scala.Unit = js.native
   def warn(warning: RollupWarning): scala.Unit = js.native
   def warn(warning: RollupWarning, pos: rollupLib.Anon_ColumnLine): scala.Unit = js.native
+  def warn(warning: RollupWarning, pos: scala.Double): scala.Unit = js.native
 }
 

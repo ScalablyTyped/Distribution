@@ -52,9 +52,9 @@ object theseNs extends js.Object {
   def isRight[E, A](fa: fpDashTsLib.libTheseMod.These[E, A]): /* is fp-ts.fp-ts/lib/These.That<E, A> */ scala.Boolean = js.native
   def isThat[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is fp-ts.fp-ts/lib/These.That<L, A> */ scala.Boolean = js.native
   def isThis[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is fp-ts.fp-ts/lib/These.This<L, A> */ scala.Boolean = js.native
-  def left[E](left: E): fpDashTsLib.libTheseMod.These[E, scala.Nothing] = js.native
+  def left[E, A](left: E): fpDashTsLib.libTheseMod.These[E, A] = js.native
   def leftOrBoth[E](defaultLeft: E): js.Function1[/* ma */ fpDashTsLib.libOptionMod.Option[_], fpDashTsLib.libTheseMod.These[E, _]] = js.native
-  def right[A](right: A): fpDashTsLib.libTheseMod.These[scala.Nothing, A] = js.native
+  def right[E, A](right: A): fpDashTsLib.libTheseMod.These[E, A] = js.native
   def rightOrBoth[A](defaultRight: A): js.Function1[/* me */ fpDashTsLib.libOptionMod.Option[_], fpDashTsLib.libTheseMod.These[_, A]] = js.native
   def that[L, A](a: A): fpDashTsLib.libTheseMod.These[L, A] = js.native
   def thatOrBoth[L, A](defaultThat: A, ml: fpDashTsLib.libOptionMod.Option[L]): fpDashTsLib.libTheseMod.These[L, A] = js.native

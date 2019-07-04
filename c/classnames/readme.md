@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Michal Adamczyk <https://github.com/mradamczyk>
 //                 Marvin Hagemeister <https://github.com/marvinhagemeister>
 //                 Josh McCullough <https://github.com/joshmccullough>
+//                 uhyo <https://github.com/uhyo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // This is the only way I found to break circular references between ClassArray and ClassValue

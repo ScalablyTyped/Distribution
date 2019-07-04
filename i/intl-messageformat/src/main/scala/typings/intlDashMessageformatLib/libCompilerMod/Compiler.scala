@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait Compiler extends js.Object {
   var currentPlural: js.Any
   var formats: js.Any
+  var formatters: js.Any
   var locales: js.Any
   var pluralNumberFormat: js.Any
   var pluralStack: js.Any
@@ -28,11 +29,12 @@ object Compiler {
     compileOptions: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.ArgumentElement => js.Object,
     currentPlural: js.Any,
     formats: js.Any,
+    formatters: js.Any,
     locales: js.Any,
     pluralNumberFormat: js.Any,
     pluralStack: js.Any
   ): Compiler = {
-    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction1(compile), compileArgument = js.Any.fromFunction1(compileArgument), compileMessage = js.Any.fromFunction1(compileMessage), compileMessageText = js.Any.fromFunction1(compileMessageText), compileOptions = js.Any.fromFunction1(compileOptions), currentPlural = currentPlural, formats = formats, locales = locales, pluralNumberFormat = pluralNumberFormat, pluralStack = pluralStack)
+    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction1(compile), compileArgument = js.Any.fromFunction1(compileArgument), compileMessage = js.Any.fromFunction1(compileMessage), compileMessageText = js.Any.fromFunction1(compileMessageText), compileOptions = js.Any.fromFunction1(compileOptions), currentPlural = currentPlural, formats = formats, formatters = formatters, locales = locales, pluralNumberFormat = pluralNumberFormat, pluralStack = pluralStack)
   
     __obj.asInstanceOf[Compiler]
   }

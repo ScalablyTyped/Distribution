@@ -36,10 +36,6 @@ object customwidgetsNs extends js.Object {
     extends mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType
   
   @js.native
-  class SupportedPlatformEnum ()
-    extends mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum
-  
-  @js.native
   class SystemPropertyEnum ()
     extends mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum
   
@@ -609,14 +605,6 @@ object customwidgetsNs extends js.Object {
     var None: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
     var Reference: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
     var ReferenceSet: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SupportedPlatformEnum extends js.Object {
-    var All: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
-    var Native: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
-    var Web: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
   }
   
   /* static members */

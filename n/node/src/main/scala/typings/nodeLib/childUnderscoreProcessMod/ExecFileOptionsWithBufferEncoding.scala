@@ -18,6 +18,7 @@ object ExecFileOptionsWithBufferEncoding {
     gid: scala.Int | scala.Double = null,
     killSignal: java.lang.String = null,
     maxBuffer: scala.Int | scala.Double = null,
+    shell: scala.Boolean | java.lang.String = null,
     timeout: scala.Int | scala.Double = null,
     uid: scala.Int | scala.Double = null,
     windowsHide: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,6 +31,7 @@ object ExecFileOptionsWithBufferEncoding {
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal)
     if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide)

@@ -251,9 +251,12 @@ object ^ extends js.Object {
     reactLib.reactMod.ComponentState
   ] = js.native
   val Text: reactLib.reactMod.FC[
-    grommetLib.componentsTextMod.TextProps with (reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
-      reactLib.HTMLSpanElement
+    grommetLib.componentsTextMod.TextProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
+        reactLib.HTMLSpanElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = js.native
   val TextArea: reactLib.reactMod.ComponentClass[
@@ -278,6 +281,12 @@ object ^ extends js.Object {
     grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
+    ]) with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+        reactLib.HTMLVideoElement
+      ], 
+      grommetLib.grommetLibStrings.controls
     ]), 
     reactLib.reactMod.ComponentState
   ] = js.native

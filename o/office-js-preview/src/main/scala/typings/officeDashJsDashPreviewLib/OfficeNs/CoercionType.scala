@@ -70,7 +70,7 @@ object CoercionType extends js.Object {
   /**
     * Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
     * 
-    * **Note**: Only applies to data in Access, Excel, and Word.
+    * **Note**: Only applies to data in Excel and Word.
     */
   @js.native
   sealed trait Table

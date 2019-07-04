@@ -25,10 +25,6 @@ trait ɵDirectiveDef[T] extends ɵɵBaseDef[T] {
     * The features applied to this directive
     */
   val features: js.Array[DirectiveDefFeature] | scala.Null = js.native
-  /**
-    * Refreshes host bindings on the associated directive.
-    */
-  var hostBindings: HostBindingsFunction[T] | scala.Null = js.native
   var onChanges: js.Function0[scala.Unit] | scala.Null = js.native
   var onDestroy: js.Function0[scala.Unit] | scala.Null = js.native
   var onInit: js.Function0[scala.Unit] | scala.Null = js.native

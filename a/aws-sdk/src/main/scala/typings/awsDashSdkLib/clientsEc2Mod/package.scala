@@ -56,6 +56,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type ArchitectureValues = _ArchitectureValues | java.lang.String
+  type AssignedPrivateIpAddressList = js.Array[AssignedPrivateIpAddress]
   type AssociatedNetworkType = awsDashSdkLib.awsDashSdkLibStrings.vpc | java.lang.String
   type AssociatedTargetNetworkSet = js.Array[AssociatedTargetNetwork]
   type AssociationIdList = js.Array[String]

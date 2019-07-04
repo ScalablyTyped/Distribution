@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Extracted nested Instantiables into classes in ɵangular_packages_common_common_kNs */
 @JSImport("@angular/common", "ɵangular_packages_common_common_k")
 @js.native
-class ɵangular_packages_common_common_k () extends ɵNgStyleImpl {
-  var _differ: js.Any = js.native
-  var _value: js.Any = js.native
+object ɵangular_packages_common_common_k extends js.Object {
+  var provide: org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.atAngularCommonMod.ɵNgStyleImpl] = js.native
+  var useClass: org.scalablytyped.runtime.Instantiable3[
+    /* _ngEl */ atAngularCoreLib.atAngularCoreMod.ElementRef[js.Any], 
+    /* _differs */ atAngularCoreLib.atAngularCoreMod.KeyValueDiffers, 
+    /* _renderer */ atAngularCoreLib.atAngularCoreMod.Renderer2, 
+    atAngularCommonLib.atAngularCommonMod.ɵNgStyleR2Impl
+  ] = js.native
 }
 

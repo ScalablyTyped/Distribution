@@ -27,15 +27,15 @@ object ioEitherNs extends js.Object {
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
   def fromLeft[L, A](l: L): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
   def left[L, A](fa: fpDashTsLib.libIOMod.IO[L]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
-  def left2v[L](l: L): fpDashTsLib.libIOEitherMod.IOEither[L, scala.Nothing] = js.native
-  def leftIO[E](me: fpDashTsLib.libIOMod.IO[E]): fpDashTsLib.libIOEitherMod.IOEither[E, scala.Nothing] = js.native
+  def left2v[E, A](l: E): fpDashTsLib.libIOEitherMod.IOEither[E, A] = js.native
+  def leftIO[E, A](me: fpDashTsLib.libIOMod.IO[E]): fpDashTsLib.libIOEitherMod.IOEither[E, A] = js.native
   def orElse[E, A, M](f: js.Function1[/* e */ E, fpDashTsLib.libIOEitherMod.IOEither[M, A]]): js.Function1[
     /* ma */ fpDashTsLib.libIOEitherMod.IOEither[E, A], 
     fpDashTsLib.libIOEitherMod.IOEither[M, A]
   ] = js.native
   def right[L, A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
-  def right2v[A](a: A): fpDashTsLib.libIOEitherMod.IOEither[scala.Nothing, A] = js.native
-  def rightIO[A](ma: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libIOEitherMod.IOEither[scala.Nothing, A] = js.native
+  def right2v[E, A](a: A): fpDashTsLib.libIOEitherMod.IOEither[E, A] = js.native
+  def rightIO[E, A](ma: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libIOEitherMod.IOEither[E, A] = js.native
   def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A]): fpDashTsLib.libIOEitherMod.IOEither[stdLib.Error, A] = js.native
   def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, stdLib.Error]): fpDashTsLib.libIOEitherMod.IOEither[stdLib.Error, A] = js.native
   def tryCatch2v[L, A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, L]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native

@@ -39,6 +39,10 @@ package object clientsMediastoreMod {
   type MethodName = _MethodName | java.lang.String
   type Origin = java.lang.String
   type PaginationToken = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type TimeStamp = stdLib.Date
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2017-09-01`

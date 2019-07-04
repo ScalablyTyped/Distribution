@@ -68,6 +68,9 @@ object atAngularCoreLibStrings {
   sealed trait element extends js.Object
   
   @js.native
+  sealed trait `en-US` extends js.Object
+  
+  @js.native
   sealed trait noop extends js.Object
   
   @js.native
@@ -119,6 +122,8 @@ object atAngularCoreLibStrings {
   def document: document = "document".asInstanceOf[document]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
+  @scala.inline
+  def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   @scala.inline
   def noop: noop = "noop".asInstanceOf[noop]
   @scala.inline

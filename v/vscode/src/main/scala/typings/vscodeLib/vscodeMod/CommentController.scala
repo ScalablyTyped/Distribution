@@ -21,6 +21,12 @@ trait CommentController extends js.Object {
   		 */
   val label: java.lang.String
   /**
+  		 * Optional reaction handler for creating and deleting reactions on a [comment](#Comment).
+  		 */
+  var reactionHandler: js.UndefOr[
+    js.Function2[/* comment */ Comment, /* reaction */ CommentReaction, js.Promise[scala.Unit]]
+  ] = js.undefined
+  /**
   		 * Create a [comment thread](#CommentThread). The comment thread will be displayed in visible text editors (if the resource matches)
   		 * and Comments Panel once created.
   		 *
@@ -45,10 +51,12 @@ object CommentController {
     dispose: () => scala.Unit,
     id: java.lang.String,
     label: java.lang.String,
-    commentingRangeProvider: CommentingRangeProvider = null
+    commentingRangeProvider: CommentingRangeProvider = null,
+    reactionHandler: (/* comment */ Comment, /* reaction */ CommentReaction) => js.Promise[scala.Unit] = null
   ): CommentController = {
     val __obj = js.Dynamic.literal(createCommentThread = js.Any.fromFunction3(createCommentThread), dispose = js.Any.fromFunction0(dispose), id = id, label = label)
     if (commentingRangeProvider != null) __obj.updateDynamic("commentingRangeProvider")(commentingRangeProvider)
+    if (reactionHandler != null) __obj.updateDynamic("reactionHandler")(js.Any.fromFunction2(reactionHandler))
     __obj.asInstanceOf[CommentController]
   }
 }

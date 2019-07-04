@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object cordovaDashPluginDashBatteryDashStatusLibStrings {
   @js.native
-  sealed trait batterycritical extends js.Object
+  sealed trait batterycritical extends batteryEvent
   
   @js.native
-  sealed trait batterylow extends js.Object
+  sealed trait batterylow extends batteryEvent
   
   @js.native
-  sealed trait batterystatus extends js.Object
+  sealed trait batterystatus extends batteryEvent
   
   @scala.inline
   def batterycritical: batterycritical = "batterycritical".asInstanceOf[batterycritical]

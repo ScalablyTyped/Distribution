@@ -74,7 +74,7 @@ object R3ComponentMetadata {
   def apply(
     directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelectorString],
     encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation,
-    host: atAngularCompilerLib.Anon_Attributes,
+    host: R3HostMetadata,
     i18nUseExternalIds: scala.Boolean,
     inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])],
     interpolation: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig,

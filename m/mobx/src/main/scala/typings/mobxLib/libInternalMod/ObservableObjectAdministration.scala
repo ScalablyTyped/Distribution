@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObservableObjectAdministration protected ()
   extends mobxLib.libTypesObservableobjectMod.ObservableObjectAdministration {
-  def this(target: js.Any, values: stdLib.Map[java.lang.String, ObservableValue[_] | ComputedValue[_]], name: java.lang.String, defaultEnhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]) = this()
+  def this(target: js.Any, values: stdLib.Map[java.lang.String | scala.Double | js.Symbol, ObservableValue[_] | ComputedValue[_]], name: java.lang.String, defaultEnhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]) = this()
 }
 

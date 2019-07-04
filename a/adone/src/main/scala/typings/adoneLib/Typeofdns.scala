@@ -39,6 +39,7 @@ trait Typeofdns extends js.Object {
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val lookupNs: Typeoflookup = js.native
   val lookupServiceNs: TypeoflookupService = js.native
+  val promisesNs: TypeofpromisesA = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val resolve4Ns: Typeofresolve4 = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.

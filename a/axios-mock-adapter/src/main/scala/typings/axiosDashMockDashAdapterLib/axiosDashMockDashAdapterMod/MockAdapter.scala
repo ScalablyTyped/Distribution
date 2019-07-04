@@ -114,6 +114,8 @@ trait MockAdapter extends js.Object {
   def onPut(matcher: stdLib.RegExp, body: java.lang.String): RequestHandler = js.native
   def onPut(matcher: stdLib.RegExp, body: java.lang.String, headers: HeadersMatcher): RequestHandler = js.native
   def reset(): scala.Unit = js.native
+  def resetHandlers(): scala.Unit = js.native
+  def resetHistory(): scala.Unit = js.native
   def restore(): scala.Unit = js.native
 }
 

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   - atAngularCoreLib.atAngularCoreLibNumbers.`4`
   - atAngularCoreLib.atAngularCoreLibNumbers.`8`
   - atAngularCoreLib.atAngularCoreLibNumbers.`16`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`32`
 */
 trait TNodeFlags extends js.Object
 
@@ -32,6 +33,9 @@ object TNodeFlags {
   /** This bit is set if the node is a component */
   @scala.inline
   def isComponent: atAngularCoreLib.atAngularCoreLibNumbers.`1` = this.cast(1)
+  /** This bit is set if the node has been detached by i18n */
+  @scala.inline
+  def isDetached: atAngularCoreLib.atAngularCoreLibNumbers.`32` = this.cast(32)
   /** This bit is set if the node has been projected */
   @scala.inline
   def isProjected: atAngularCoreLib.atAngularCoreLibNumbers.`2` = this.cast(2)

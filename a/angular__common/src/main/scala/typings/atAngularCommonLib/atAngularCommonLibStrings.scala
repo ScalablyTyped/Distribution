@@ -10,6 +10,9 @@ object atAngularCommonLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait binding extends js.Object
+  
+  @js.native
   sealed trait browser extends js.Object
   
   @js.native
@@ -41,6 +44,8 @@ object atAngularCommonLibStrings {
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def binding: binding = "binding".asInstanceOf[binding]
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline

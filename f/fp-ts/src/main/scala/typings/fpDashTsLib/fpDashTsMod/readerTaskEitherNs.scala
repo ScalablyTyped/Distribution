@@ -30,17 +30,17 @@ object readerTaskEitherNs extends js.Object {
   def fromReader[E, L, A](fa: fpDashTsLib.libReaderMod.Reader[E, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
   def fromTaskEither[E, L, A](fa: fpDashTsLib.libTaskEitherMod.TaskEither[L, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
   def left[E, L, A](fa: fpDashTsLib.libTaskMod.Task[L]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
-  def left2v[E, L](e: L): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, scala.Nothing] = js.native
-  def leftTask[E, L, A](fa: fpDashTsLib.libTaskMod.Task[L]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
+  def left2v[R, E, A](e: E): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[R, E, A] = js.native
+  def leftTask[R, E, A](fa: fpDashTsLib.libTaskMod.Task[E]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[R, E, A] = js.native
   def local[E, E2](f: js.Function1[/* e */ E2, E]): js.Function1[
     /* fa */ fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, _, _], 
     fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E2, _, _]
   ] = js.native
   def right[E, L, A](fa: fpDashTsLib.libTaskMod.Task[A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
-  def right2v[E, A](a: A): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, scala.Nothing, A] = js.native
-  def rightIO[E, A](ma: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, scala.Nothing, A] = js.native
-  def rightReader[E, A](ma: fpDashTsLib.libReaderMod.Reader[E, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, scala.Nothing, A] = js.native
-  def rightTask[E, L, A](fa: fpDashTsLib.libTaskMod.Task[A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
+  def right2v[R, E, A](a: A): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[R, E, A] = js.native
+  def rightIO[R, E, A](ma: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[R, E, A] = js.native
+  def rightReader[R, E, A](ma: fpDashTsLib.libReaderMod.Reader[R, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[R, E, A] = js.native
+  def rightTask[R, E, A](fa: fpDashTsLib.libTaskMod.Task[A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[R, E, A] = js.native
   def tryCatch[E, L, A](
     f: js.Function1[/* e */ E, js.Promise[A]],
     onrejected: js.Function2[/* reason */ js.Any, /* e */ E, L]

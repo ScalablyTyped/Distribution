@@ -11,7 +11,7 @@ trait SourceMap extends js.Object {
   var names: js.Array[java.lang.String]
   var sources: js.Array[java.lang.String]
   var sourcesContent: js.Array[java.lang.String]
-  var version: java.lang.String
+  var version: scala.Double
   def toUrl(): java.lang.String
 }
 
@@ -25,7 +25,7 @@ object SourceMap {
     sourcesContent: js.Array[java.lang.String],
     toString: () => java.lang.String,
     toUrl: () => java.lang.String,
-    version: java.lang.String
+    version: scala.Double
   ): SourceMap = {
     val __obj = js.Dynamic.literal(file = file, mappings = mappings, names = names, sources = sources, sourcesContent = sourcesContent, toString = js.Any.fromFunction0(toString), toUrl = js.Any.fromFunction0(toUrl), version = version)
   

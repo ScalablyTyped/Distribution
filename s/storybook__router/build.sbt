@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.1.9-4f172e"
+version := "5.1.9-2733bf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-9e9935",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190404Z-3eea46",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-9e424f",
+  "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190404Z-b1e871",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

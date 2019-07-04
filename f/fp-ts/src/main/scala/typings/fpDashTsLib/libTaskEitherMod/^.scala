@@ -30,14 +30,14 @@ object ^ extends js.Object {
   def getOrElse[E, A](f: js.Function1[/* e */ E, fpDashTsLib.libTaskMod.Task[A]]): js.Function1[/* ma */ TaskEither[E, A], fpDashTsLib.libTaskMod.Task[A]] = js.native
   def getSemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[TaskEither[L, A]] = js.native
   def left[L, A](fl: fpDashTsLib.libTaskMod.Task[L]): TaskEither[L, A] = js.native
-  def left2v[L](l: L): TaskEither[L, scala.Nothing] = js.native
-  def leftIO[E](me: fpDashTsLib.libIOMod.IO[E]): TaskEither[E, scala.Nothing] = js.native
-  def leftTask[E](me: fpDashTsLib.libTaskMod.Task[E]): TaskEither[E, scala.Nothing] = js.native
+  def left2v[E, A](e: E): TaskEither[E, A] = js.native
+  def leftIO[E, A](me: fpDashTsLib.libIOMod.IO[E]): TaskEither[E, A] = js.native
+  def leftTask[E, A](me: fpDashTsLib.libTaskMod.Task[E]): TaskEither[E, A] = js.native
   def orElse[E, A, M](f: js.Function1[/* e */ E, TaskEither[M, A]]): js.Function1[/* ma */ TaskEither[E, A], TaskEither[M, A]] = js.native
   def right[L, A](fa: fpDashTsLib.libTaskMod.Task[A]): TaskEither[L, A] = js.native
-  def right2v[A](a: A): TaskEither[scala.Nothing, A] = js.native
-  def rightIO[A](ma: fpDashTsLib.libIOMod.IO[A]): TaskEither[scala.Nothing, A] = js.native
-  def rightTask[A](ma: fpDashTsLib.libTaskMod.Task[A]): TaskEither[scala.Nothing, A] = js.native
+  def right2v[E, A](a: A): TaskEither[E, A] = js.native
+  def rightIO[E, A](ma: fpDashTsLib.libIOMod.IO[A]): TaskEither[E, A] = js.native
+  def rightTask[E, A](ma: fpDashTsLib.libTaskMod.Task[A]): TaskEither[E, A] = js.native
   def taskify[L, R](
     f: js.Function1[
       /* cb */ js.Function2[/* e */ js.UndefOr[L | scala.Null], /* r */ js.UndefOr[R], scala.Unit], 

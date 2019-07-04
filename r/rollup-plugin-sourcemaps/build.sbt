@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-sourcemaps"
-version := "0.4-dt-20190419Z-ac20d6"
+version := "0.4-dt-20190419Z-0aa4de"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-83b406",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
-  "org.scalablytyped" %%% "rollup" % "1.16.3-527d7f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-0260d9",
+  "org.scalablytyped" %%% "rollup" % "1.16.4-e6af41",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

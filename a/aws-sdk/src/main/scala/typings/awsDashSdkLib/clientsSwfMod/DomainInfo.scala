@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait DomainInfo extends js.Object {
   /**
+    * The ARN of the domain.
+    */
+  var arn: js.UndefOr[Arn] = js.undefined
+  /**
     * The description of the domain provided through RegisterDomain.
     */
   var description: js.UndefOr[Description] = js.undefined
@@ -22,8 +26,9 @@ trait DomainInfo extends js.Object {
 
 object DomainInfo {
   @scala.inline
-  def apply(name: DomainName, status: RegistrationStatus, description: Description = null): DomainInfo = {
+  def apply(name: DomainName, status: RegistrationStatus, arn: Arn = null, description: Description = null): DomainInfo = {
     val __obj = js.Dynamic.literal(name = name, status = status.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[DomainInfo]
   }

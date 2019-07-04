@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a single pivot hierarchy within a PivotTable.
+  * Represents the Excel PivotHierarchy.
   *
   * [Api set: ExcelApi 1.8]
   */

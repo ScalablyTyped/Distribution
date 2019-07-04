@@ -37,6 +37,7 @@ class I18nContext protected () extends js.Object {
     closed: scala.Boolean
   ): scala.Unit = js.native
   def appendIcu(name: java.lang.String, ref: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression): scala.Unit = js.native
+  def appendProjection(node: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST, index: scala.Double): scala.Unit = js.native
   def appendTemplate(node: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST, index: scala.Double): scala.Unit = js.native
   /**
     * Generates an instance of a child context based on the root one,

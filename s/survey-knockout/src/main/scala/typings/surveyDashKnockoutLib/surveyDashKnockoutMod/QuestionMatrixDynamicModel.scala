@@ -27,13 +27,6 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
     */
   val canAddRow: scala.Boolean = js.native
   /**
-    * Returns true, if a row can be removed.
-    * @see minRowCount
-    * @see canAddRow
-    * @see rowCount
-    */
-  val canRemoveRow: scala.Boolean = js.native
-  /**
     * Set it to true, to show a confirmation dialog on removing a row
     * @see ConfirmDeleteText
     */

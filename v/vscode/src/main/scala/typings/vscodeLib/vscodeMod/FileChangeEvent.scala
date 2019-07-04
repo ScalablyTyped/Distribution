@@ -9,11 +9,11 @@ trait FileChangeEvent extends js.Object {
   /**
   		 * The type of change.
   		 */
-  var `type`: FileChangeType
+  val `type`: FileChangeType
   /**
   		 * The uri of the file that has changed.
   		 */
-  var uri: Uri
+  val uri: Uri
 }
 
 object FileChangeEvent {

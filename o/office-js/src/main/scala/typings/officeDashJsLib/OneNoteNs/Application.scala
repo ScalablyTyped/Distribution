@@ -20,7 +20,7 @@ class Application ()
   var context_Application: RequestContext = js.native
   /**
     *
-    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
+    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only one notebook at a time is open in the application instance. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */

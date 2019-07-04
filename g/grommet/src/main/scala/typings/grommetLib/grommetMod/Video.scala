@@ -12,6 +12,12 @@ class Video protected ()
       grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
         reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
         reactLib.HTMLVideoElement
+      ]) with (grommetLib.utilsMod.Omit[
+        reactLib.reactMod.DetailedHTMLProps[
+          reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+          reactLib.HTMLVideoElement
+        ], 
+        grommetLib.grommetLibStrings.controls
       ]), 
       reactLib.reactMod.ComponentState, 
       js.Any
@@ -19,10 +25,22 @@ class Video protected ()
   def this(props: grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
+    ]) with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+        reactLib.HTMLVideoElement
+      ], 
+      grommetLib.grommetLibStrings.controls
     ])) = this()
   def this(props: grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
+    ]) with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+        reactLib.HTMLVideoElement
+      ], 
+      grommetLib.grommetLibStrings.controls
     ]), context: js.Any) = this()
 }
 

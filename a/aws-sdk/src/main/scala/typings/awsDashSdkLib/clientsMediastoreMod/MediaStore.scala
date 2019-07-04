@@ -241,6 +241,29 @@ trait MediaStore
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListContainersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Returns a list of the tags assigned to the specified container. 
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns a list of the tags assigned to the specified container. 
+    */
+  def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates an access policy for the specified container to restrict the users and clients that can access it. For information about the data that is included in an access policy, see the AWS Identity and Access Management User Guide. For this release of the REST API, you can create only one policy for a container. If you enter PutContainerPolicy twice, the second command modifies the existing policy. 
     */
   def putContainerPolicy(): awsDashSdkLib.libRequestMod.Request[PutContainerPolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -355,5 +378,51 @@ trait MediaStore
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[StopAccessLoggingOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds tags to the specified AWS Elemental MediaStore container. Tags are key:value pairs that you can associate with AWS resources. For example, the tag key might be "customer" and the tag value might be "companyA." You can specify one or more tags to add to each container. You can add up to 50 tags to each container. For more information about tagging, including naming and usage conventions, see Tagging Resources in MediaStore.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds tags to the specified AWS Elemental MediaStore container. Tags are key:value pairs that you can associate with AWS resources. For example, the tag key might be "customer" and the tag value might be "companyA." You can specify one or more tags to add to each container. You can add up to 50 tags to each container. For more information about tagging, including naming and usage conventions, see Tagging Resources in MediaStore.
+    */
+  def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags from the specified container. You can specify one or more tags to remove. 
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags from the specified container. You can specify one or more tags to remove. 
+    */
+  def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

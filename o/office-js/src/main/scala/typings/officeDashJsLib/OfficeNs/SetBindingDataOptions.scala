@@ -29,10 +29,18 @@ trait SetBindingDataOptions extends js.Object {
   var coercionType: js.UndefOr[CoercionType | java.lang.String] = js.undefined
   /**
     * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
+    * 
+    * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+    * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+    * to build no-code business solutions for web and mobile devices.
     */
   var columns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
+    * 
+    * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+    * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+    * to build no-code business solutions for web and mobile devices.
     */
   var rows: js.UndefOr[java.lang.String] = js.undefined
   /**

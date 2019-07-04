@@ -300,6 +300,7 @@ object codeactionsNs extends js.Object {
     val caption: java.lang.String = js.native
     val category: java.lang.String = js.native
     val containerAsCodeAction: ICodeAction = js.native
+    val containerAsMicroflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow = js.native
     val icon: mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage | scala.Null = js.native
     val iconQualifiedName: java.lang.String | scala.Null = js.native
     @JSName("model")
@@ -396,13 +397,14 @@ object codeactionsNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsCodeAction, caption, category, icon, iconQualifiedName */ @js.native
+  - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsCodeAction, containerAsMicroflow, caption, category, icon, iconQualifiedName */ @js.native
   class MicroflowActionInfo protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var caption: java.lang.String = js.native
     var category: java.lang.String = js.native
     val containerAsCodeAction: CodeAction | ICodeAction = js.native
+    val containerAsMicroflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.Microflow = js.native
     var icon: mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage | scala.Null = js.native
     val iconQualifiedName: scala.Null | java.lang.String = js.native
     @JSName("model")
@@ -805,9 +807,27 @@ object codeactionsNs extends js.Object {
       * of the parent CodeAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createIn(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo = js.native
+    /**
+      * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
+      * The new MicroflowActionInfo will be automatically stored in the 'modelerActionInfo' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
+    def createInCodeActionUnderModelerActionInfo(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo = js.native
+    /**
+      * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
+      * The new MicroflowActionInfo will be automatically stored in the 'microflowActionInfo' property
+      * of the parent microflows.Microflow element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInMicroflowUnderMicroflowActionInfo(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.Microflow): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo = js.native
   }
   
   /* static members */

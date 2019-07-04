@@ -9,11 +9,11 @@ trait TextEditorVisibleRangesChangeEvent extends js.Object {
   /**
   		 * The [text editor](#TextEditor) for which the visible ranges have changed.
   		 */
-  var textEditor: TextEditor
+  val textEditor: TextEditor
   /**
   		 * The new value for the [text editor's visible ranges](#TextEditor.visibleRanges).
   		 */
-  var visibleRanges: js.Array[Range]
+  val visibleRanges: js.Array[Range]
 }
 
 object TextEditorVisibleRangesChangeEvent {

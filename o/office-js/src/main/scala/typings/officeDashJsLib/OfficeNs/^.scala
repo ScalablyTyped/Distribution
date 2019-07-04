@@ -28,7 +28,6 @@ object ^ extends js.Object {
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -64,7 +63,6 @@ object ^ extends js.Object {
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -106,7 +104,6 @@ object ^ extends js.Object {
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                   </td><td> Y                     </td><td>                </td></tr>
     *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
     *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
     *  </table>
@@ -129,7 +126,6 @@ object ^ extends js.Object {
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                          </td><td>           </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                          </td><td> Y         </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                          </td><td>           </td><td> Y                         </td><td> Y             </td></tr>
     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                          </td><td> Y         </td><td>                           </td><td>               </td></tr>

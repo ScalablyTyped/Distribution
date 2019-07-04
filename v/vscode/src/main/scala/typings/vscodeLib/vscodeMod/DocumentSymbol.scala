@@ -23,7 +23,7 @@ class DocumentSymbol protected () extends js.Object {
   		 */
   var children: js.Array[DocumentSymbol] = js.native
   /**
-  		 * More detail for this symbol, e.g the signature of a function.
+  		 * More detail for this symbol, e.g. the signature of a function.
   		 */
   var detail: java.lang.String = js.native
   /**
@@ -35,11 +35,11 @@ class DocumentSymbol protected () extends js.Object {
   		 */
   var name: java.lang.String = js.native
   /**
-  		 * The range enclosing this symbol not including leading/trailing whitespace but everything else, e.g comments and code.
+  		 * The range enclosing this symbol not including leading/trailing whitespace but everything else, e.g. comments and code.
   		 */
   var range: Range = js.native
   /**
-  		 * The range that should be selected and reveal when this symbol is being picked, e.g the name of a function.
+  		 * The range that should be selected and reveal when this symbol is being picked, e.g. the name of a function.
   		 * Must be contained by the [`range`](#DocumentSymbol.range).
   		 */
   var selectionRange: Range = js.native

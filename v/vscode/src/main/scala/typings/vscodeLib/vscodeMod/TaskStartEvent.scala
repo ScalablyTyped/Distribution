@@ -14,7 +14,7 @@ trait TaskStartEvent extends js.Object {
   /**
   		 * The task item representing the task that got started.
   		 */
-  var execution: TaskExecution
+  val execution: TaskExecution
 }
 
 object TaskStartEvent {

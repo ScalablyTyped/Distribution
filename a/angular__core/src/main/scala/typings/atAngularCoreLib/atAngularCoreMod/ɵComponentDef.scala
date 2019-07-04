@@ -67,10 +67,10 @@ trait ɵComponentDef[T] extends ɵDirectiveDef[T] {
     */
   val styles: js.Array[java.lang.String] = js.native
   /**
-    * The View template of the component.
+    * Ivy runtime uses this place to store the computed tView for the component. This gets filled on
+    * the first run of component.
     */
-  @JSName("template")
-  val template_Original: ComponentTemplate[T] = js.native
+  var tView: TView | scala.Null = js.native
   /**
     * The number of bindings in this component template (including pure fn bindings).
     *

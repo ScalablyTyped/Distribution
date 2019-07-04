@@ -815,6 +815,7 @@
 | [co-body](./c/co-body) | request body parsing for co | request, parse, parser, json, co, generators, urlencoded |
 | [co-views](./c/co-views) | Higher level promise-based template rendering for  | template, render, consolidate, engine, koa |
 | [code](./c/code) | assertion library | test, expect, assertion |
+| [codegen_dot_macro](./c/codegen_dot_macro) | Generate code at build-time with babel-macros | babel-plugin-macros, babel-macros |
 | [codemirror](./c/codemirror) | Full-featured in-browser code editor | JavaScript, CodeMirror, Editor |
 | [codepage](./c/codepage) | pure-JS library to handle codepages | codepage, iconv, convert, strings |
 | [codependency](./c/codependency) | Optional peer dependencies | peer, dependency, dependencies, require, module, semver |
@@ -2568,6 +2569,7 @@
 | [immutable](./i/immutable) | Immutable Data Collections | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
 | [imperium](./i/imperium) | Imperium is a role-based user's authorizations (AC | node acl, acl, auth, authorization, user acl, security, imperium |
 | [impress](./i/impress) | Impress Application Server for Node.js | application, server, api, rpc, soa, service, stateful, rest, restful, web, framework, router, routing, cluster, cloud, cache, http, https, sse, eventstream, static, websocket, websockets |
+| [imsi-grok](./i/imsi-grok) | Analyze IMSI (international mobile subscriber iden | IMSI |
 | [imul](./i/imul) | ES2015 Math.imul() ponyfill | es2015, ponyfill, polyfill, shim, number, math, imul, multiplication |
 | [imurmurhash](./i/imurmurhash) | An incremental implementation of MurmurHash3 | murmur, murmurhash, murmurhash3, hash, incremental |
 | [in-app-purchase](./i/in-app-purchase) | In-App-Purchase validation and subscription manage | Apple, iOS, Android, Windows, Amazon, Roku, Purchase, Subscription, App, in-app-purchase, in-app-billing, Validation, IAP |
@@ -3253,6 +3255,7 @@
 | [koa-etag](./k/koa-etag) | ETag support for koa | koa, middleware, cache, caching, etag, file, static, sendfile |
 | [koa-favicon](./k/koa-favicon) | favicon bounce middleware for koa | koa, middleware, favicon |
 | [koa-generic-session](./k/koa-generic-session) | koa generic session store by memory, redis or othe | koa, middleware, session |
+| [koa-graphql](./k/koa-graphql) | Production ready GraphQL Koa middleware. | koa, http, graphql, middleware, api |
 | [koa-hbs](./k/koa-hbs) | Handlebars Templates via Generators for Koa | koa, handlebars, template, view, render |
 | [koa-helmet](./k/koa-helmet) | Security header middleware collection for koa | security, headers, koa, x-frame-options, csp, hsts |
 | [koa-html-minifier](./k/koa-html-minifier) | minify HTML responses like some crazy guy | - |
@@ -3743,6 +3746,7 @@
 | [loopbench](./l/loopbench) | Benchmark your event loop | benchmark, event, loop |
 | [lorem-ipsum](./l/lorem-ipsum) | Generates passages of lorem ipsum text suitable fo | lorem, ipsum, placeholder, text, dummy, filler |
 | [lory_dot_js](./l/lory_dot_js) | Touch enabled minimalistic slider written in vanil | responsive, lightweight, minimalistic, carousel, slider, touch, slideshow, jQuery, mobile |
+| [lossless-json](./l/lossless-json) | Parse JSON without risk of losing numeric informat | json, lossless, circular, parse, stringify, number, long, bignumber |
 | [loud-rejection](./l/loud-rejection) | Make unhandled promise rejections fail loudly inst | promise, promises, unhandled, uncaught, rejection, loud, fail, catch, throw, handler, exit, debug, debugging, verbose |
 | [lovefield](./l/lovefield) | Lovefield - A relational database for web apps | lovefield |
 | [lowdb](./l/lowdb) | Small JSON database for Node, Electron and the bro | flat, file, local, database, storage, JSON, lodash, localStorage, electron, embed, embeddable |
@@ -4287,6 +4291,7 @@
 | [node-xlsx](./n/node-xlsx) | NodeJS Excel files parser & builder | excel, parser, builder, xlsx, xls |
 | [node-xmpp-client](./n/node-xmpp-client) | XMPP client for JavaScript | client, XMPP, C2S, WebSocket, BOSH |
 | [node-xmpp-core](./n/node-xmpp-core) | core files for the node-xmpp project | XMPP, JID, SRV, stanza, iq, message, presence |
+| [node-zendesk](./n/node-zendesk) | zendesk API client wrapper | zendesk, API, support, supportdesk, buddha, radar, wrapper, help center, zopim, voice, reseller, knowledge base |
 | [node-zookeeper-client](./n/node-zookeeper-client) | A pure Javascript ZooKeeper client for Node.js. | zookeeper, client, pure, javascript |
 | [node-zopfli](./n/node-zopfli) | Bindings for Zopfli compressing lib. Compress gzip | zopfli, zlib, compress, gzip, deflate |
 | [node-zopfli-es](./n/node-zopfli-es) | Bindings for Zopfli compressing lib. Compress gzip | zopfli, zlib, compress, gzip, deflate, es6, node-addon-api |
@@ -4769,6 +4774,7 @@
 | [postcss-url](./p/postcss-url) | PostCSS plugin to rebase or inline on url(). | css, postcss, postcss-plugin, url, rebase, inline, base64, assets |
 | [postgres-array](./p/postgres-array) | Parse postgres array columns | postgres, array, parser |
 | [postgres-interval](./p/postgres-interval) | Parse Postgres interval columns | postgres, interval, parser |
+| [postlight__mercury-parser](./p/postlight__mercury-parser) | Mercury transforms web pages into clean text. Publ | mercury, parser, reader, web, content |
 | [postman-collection](./p/postman-collection) | Enables developers to use a unified Postman Collec | postman |
 | [postmark](./p/postmark) | Official Node.js client library for the Postmark H | - |
 | [pouch-redux-middleware](./p/pouch-redux-middleware) | PouchDB Redux Middleware | pouchdb, redux, react, middleware |
@@ -5693,6 +5699,7 @@
 | [resolve-global](./r/resolve-global) | Resolve the path of a globally installed module | resolve, global, package, module, globally, path, npm, yarn, packages, require |
 | [resolve-options](./r/resolve-options) | Resolve an options object based on configuration. | options, functions, resolver, type, configuration, config, opts, opt, default |
 | [resolve-pkg](./r/resolve-pkg) | Resolve the path of a package regardless of it hav | require, resolve, path, module, from, like, path, cwd, current, working, directory, grunt, main, entry, point |
+| [resolve-protobuf-schema](./r/resolve-protobuf-schema) | Read a protobuf schema from the disk, parse it and | - |
 | [resourcejs](./r/resourcejs) | A simple Express library to reflect Mongoose model | Express, Mongoose, Node, MEAN |
 | [response-time](./r/response-time) | Response time for Node.js servers | http, res, response time, x-response-time |
 | [responselike](./r/responselike) | A response-like object for mocking a Node.js HTTP  | http, https, response, mock, request, responselike |
@@ -6059,6 +6066,7 @@
 | [sinon-test](./s/sinon-test) | > Automatic sandbox setup and teardown for SinonJS | - |
 | [sip_dot_js](./s/sip_dot_js) | A simple, intuitive, and powerful JavaScript signa | sip, webrtc, library, websocket, javascript, typescript |
 | [sipml](./s/sipml) | NPM package for SIPml.js | - |
+| [sisteransi](./s/sisteransi) | ANSI escape codes for some terminal swag | ansi, escape codes, escape, terminal, style |
 | [sitemap2](./s/sitemap2) | Sitemap-generating framework | sitemap, sitemap.xml, nested sitemaps |
 | [six-runtime](./s/six-runtime) | six koa | six, koa |
 | [sizzle](./s/sizzle) | A pure-JavaScript, bottom-up CSS selector engine d | sizzle, javascript, CSS, selector, jquery |
@@ -6166,6 +6174,7 @@
 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given s | split, string, first, occurrence, separator, delimiter, text |
 | [split2](./s/split2) | split a Text Stream into a Line Stream, using Stre | - |
 | [split_dot_js](./s/split_dot_js) | 2kb unopinionated utility for resizeable split vie | css, split, flexbox, tiny, split-layout |
+| [splitpanes](./s/splitpanes) | A Vue JS reliable, simple and touch-ready panes sp | split panes, panes resizer, vue, vuejs, ui |
 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan | splunk, HTTP, event, collector, logging, stream, bunyan |
 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface | splunk, HTTP, event, collector, logging, stream |
 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API" | spotify, web, api, rest |
@@ -6312,6 +6321,7 @@
 | [strophe_dot_js](./s/strophe_dot_js) | Strophe.js is an XMPP library for JavaScript | xmpp, message, bosh, websocket, browser |
 | [strophejs-plugin-roster](./s/strophejs-plugin-roster) | A strophe.js plugin for Roster Versioning (XEP-023 | - |
 | [structured-source](./s/structured-source) | Provides StructuredSource and functionality for co | location, range, abstract, syntax, tree |
+| [stubby](./s/stubby) | a lightweight server for stubbing external systems | server, stub, mock, testing, service, endpoint, http, https, api, rest |
 | [style-value-types](./s/style-value-types) | Parsers, transformers and tests for special value  | css, svg, hex, rgba, hsla |
 | [styled-components](./s/styled-components) | Visual primitives for the component age. Use the b | react, css, css-in-js, styled-components, babel-macro, babel-macros, styling |
 | [styled-jsx](./s/styled-jsx) | Full CSS support for JSX without compromises | babel-plugin-macros, zeit, css-in-js, css |
@@ -6847,6 +6857,7 @@
 | [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and | vue, vuejs, directive, scroll, scrollto, scroll to |
 | [vue-select](./v/vue-select) | Everything you wish the HTML  element could do, wr | - |
 | [vue-server-renderer](./v/vue-server-renderer) | server renderer for Vue 2.0 | vue, server, ssr |
+| [vue-splitpane](./v/vue-splitpane) | vue split-pane component | - |
 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue | vue, telephone, phone, vue-tel-input, phone input, telephone input |
 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2 | vue, datepicker |
 | [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open  | vue, vue-component, quill, html editor, text editor |
@@ -7007,6 +7018,7 @@
 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress. | wordpress, dom, utils |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
+| [wordpress__hooks](./w/wordpress__hooks) | WordPress hooks library. | wordpress, hooks |
 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |
 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
 | [wordpress__is-shallow-equ](./w/wordpress__is-shallow-equal) | Test for shallow equality between two objects or a | wordpress, shallow, shallow-equal, shallowequal |

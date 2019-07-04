@@ -35,7 +35,6 @@ trait ITextboxOptions extends ITextOptions {
 object ITextboxOptions {
   @scala.inline
   def apply(
-    __charBounds: js.Array[js.Array[fabricLib.Anon_DeltaY]] = null,
     aCoords: fabricLib.Anon_BlBrTlTr = null,
     absolutePositioned: js.UndefOr[scala.Boolean] = js.undefined,
     angle: scala.Int | scala.Double = null,
@@ -163,7 +162,6 @@ object ITextboxOptions {
     width: scala.Int | scala.Double = null
   ): ITextboxOptions = {
     val __obj = js.Dynamic.literal()
-    if (__charBounds != null) __obj.updateDynamic("__charBounds")(__charBounds)
     if (aCoords != null) __obj.updateDynamic("aCoords")(aCoords)
     if (!js.isUndefined(absolutePositioned)) __obj.updateDynamic("absolutePositioned")(absolutePositioned)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])

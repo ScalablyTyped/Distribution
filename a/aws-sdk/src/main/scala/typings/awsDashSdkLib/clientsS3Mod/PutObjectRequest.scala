@@ -100,6 +100,10 @@ trait PutObjectRequest extends js.Object {
     */
   var SSECustomerKeyMD5: js.UndefOr[SSECustomerKeyMD5] = js.undefined
   /**
+    * Specifies the AWS KMS Encryption Context to use for object encryption. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
+    */
+  var SSEKMSEncryptionContext: js.UndefOr[SSEKMSEncryptionContext] = js.undefined
+  /**
     * Specifies the AWS KMS key ID to use for object encryption. All GET and PUT requests for an object protected by AWS KMS will fail if not made via SSL or using SigV4. Documentation on configuring any of the officially supported AWS SDKs and CLI can be found at http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingAWSSDK.html#specify-signature-version
     */
   var SSEKMSKeyId: js.UndefOr[SSEKMSKeyId] = js.undefined
@@ -148,6 +152,7 @@ object PutObjectRequest {
     SSECustomerAlgorithm: SSECustomerAlgorithm = null,
     SSECustomerKey: SSECustomerKey = null,
     SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
+    SSEKMSEncryptionContext: SSEKMSEncryptionContext = null,
     SSEKMSKeyId: SSEKMSKeyId = null,
     ServerSideEncryption: ServerSideEncryption = null,
     StorageClass: StorageClass = null,
@@ -177,6 +182,7 @@ object PutObjectRequest {
     if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm)
     if (SSECustomerKey != null) __obj.updateDynamic("SSECustomerKey")(SSECustomerKey.asInstanceOf[js.Any])
     if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5)
+    if (SSEKMSEncryptionContext != null) __obj.updateDynamic("SSEKMSEncryptionContext")(SSEKMSEncryptionContext)
     if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])

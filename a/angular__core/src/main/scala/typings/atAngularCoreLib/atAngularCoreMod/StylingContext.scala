@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
   * Once the styling context is created then single and multi properties can be stored within it.
   * For this to happen, the following function needs to be called:
   *
-  * `elementStyling` (called with style properties, class properties and a sanitizer + a directive
+  * `styling` (called with style properties, class properties and a sanitizer + a directive
   * instance).
   *
   * When this instruction is called it will populate the styling context with the provided style
@@ -115,8 +115,8 @@ import scala.scalajs.js.annotation._
   * values are and how they work.
   *
   * Each time a binding property is updated (whether it be through a single
-  * property instruction like `elementStyleProp`, `elementClassProp` or
-  * `elementStylingMap`) then the values in the context will be updated as
+  * property instruction like `styleProp`, `classProp`,
+  * `styleMap` or `classMap`) then the values in the context will be updated as
   * well.
   *
   * If for example `[style.width]` updates to `555px` then its value will be reflected
@@ -135,9 +135,9 @@ import scala.scalajs.js.annotation._
   *
   * Despite the context being updated, nothing has been rendered on screen (not styles or
   * classes have been set on the element). To kick off rendering for an element the following
-  * function needs to be run `elementStylingApply`.
+  * function needs to be run `stylingApply`.
   *
-  * `elementStylingApply` will run through the context and find each dirty value and render them onto
+  * `stylingApply` will run through the context and find each dirty value and render them onto
   * the element. Once complete, all styles/classes will be set to clean. Because of this, the render
   * function will now know not to rerun itself again if called again unless new style/class values
   * have changed.
@@ -151,11 +151,12 @@ import scala.scalajs.js.annotation._
   * Each of the following instructions supports accepting a directive instance as an input parameter:
   *
   * - `elementHostAttrs`
-  * - `elementStyling`
-  * - `elementStyleProp`
-  * - `elementClassProp`
-  * - `elementStylingMap`
-  * - `elementStylingApply`
+  * - `styling`
+  * - `styleProp`
+  * - `classProp`
+  * - `styleMap`
+  * - `classMap`
+  * - `stylingApply`
   *
   * Each time a directive value is passed in, it will be converted into an index by examining the
   * directive registry (which lives in the context configuration area). The index is then used
@@ -249,7 +250,7 @@ import scala.scalajs.js.annotation._
   *
   * ## Rendering
   * The rendering mechanism (when the styling data is applied on screen) occurs via the
-  * `elementStylingApply` function and is designed to run after **all** styling functions have been
+  * `stylingApply` function and is designed to run after **all** styling functions have been
   * evaluated. The rendering algorithm will loop over the context and only apply the styles that are
   * flagged as dirty (either because they are new, updated or have been removed via multi or
   * single bindings).

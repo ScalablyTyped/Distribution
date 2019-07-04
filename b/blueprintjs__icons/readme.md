@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__icons
 
-Typings are for version 3.9.0
+Typings are for version 3.9.1
 
 ## Library description:
 Components, fonts, icons, and css files for creating and displaying icons.

@@ -9,6 +9,7 @@ trait AgentConfigOptions extends js.Object {
   var abortedErrorThreshold: js.UndefOr[java.lang.String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
   var active: js.UndefOr[scala.Boolean] = js.undefined
+  var addPatch: js.UndefOr[KeyValueConfig] = js.undefined
   var apiRequestSize: js.UndefOr[java.lang.String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
   var apiRequestTime: js.UndefOr[java.lang.String] = js.undefined
@@ -21,12 +22,14 @@ trait AgentConfigOptions extends js.Object {
   var captureSpanStackTraces: js.UndefOr[scala.Boolean] = js.undefined
   var containerId: js.UndefOr[java.lang.String] = js.undefined
   var disableInstrumentations: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var environment: js.UndefOr[java.lang.String] = js.undefined
   var errorMessageMaxLength: js.UndefOr[java.lang.String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
   var errorOnAbortedRequests: js.UndefOr[scala.Boolean] = js.undefined
   var filterHttpHeaders: js.UndefOr[scala.Boolean] = js.undefined
   var frameworkName: js.UndefOr[java.lang.String] = js.undefined
   var frameworkVersion: js.UndefOr[java.lang.String] = js.undefined
+  var globalLabels: js.UndefOr[KeyValueConfig] = js.undefined
   var hostname: js.UndefOr[java.lang.String] = js.undefined
   var ignoreUrls: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
   var ignoreUserAgents: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
@@ -53,6 +56,7 @@ trait AgentConfigOptions extends js.Object {
   var stackTraceLimit: js.UndefOr[scala.Double] = js.undefined
   var transactionMaxSpans: js.UndefOr[scala.Double] = js.undefined
   var transactionSampleRate: js.UndefOr[scala.Double] = js.undefined
+  var usePathAsTransactionName: js.UndefOr[scala.Boolean] = js.undefined
   var verifyServerCert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -61,6 +65,7 @@ object AgentConfigOptions {
   def apply(
     abortedErrorThreshold: java.lang.String = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
+    addPatch: KeyValueConfig = null,
     apiRequestSize: java.lang.String = null,
     apiRequestTime: java.lang.String = null,
     asyncHooks: js.UndefOr[scala.Boolean] = js.undefined,
@@ -71,11 +76,13 @@ object AgentConfigOptions {
     captureSpanStackTraces: js.UndefOr[scala.Boolean] = js.undefined,
     containerId: java.lang.String = null,
     disableInstrumentations: java.lang.String | js.Array[java.lang.String] = null,
+    environment: java.lang.String = null,
     errorMessageMaxLength: java.lang.String = null,
     errorOnAbortedRequests: js.UndefOr[scala.Boolean] = js.undefined,
     filterHttpHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     frameworkName: java.lang.String = null,
     frameworkVersion: java.lang.String = null,
+    globalLabels: KeyValueConfig = null,
     hostname: java.lang.String = null,
     ignoreUrls: js.Array[java.lang.String | stdLib.RegExp] = null,
     ignoreUserAgents: js.Array[java.lang.String | stdLib.RegExp] = null,
@@ -100,11 +107,13 @@ object AgentConfigOptions {
     stackTraceLimit: scala.Int | scala.Double = null,
     transactionMaxSpans: scala.Int | scala.Double = null,
     transactionSampleRate: scala.Int | scala.Double = null,
+    usePathAsTransactionName: js.UndefOr[scala.Boolean] = js.undefined,
     verifyServerCert: js.UndefOr[scala.Boolean] = js.undefined
   ): AgentConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (abortedErrorThreshold != null) __obj.updateDynamic("abortedErrorThreshold")(abortedErrorThreshold)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (addPatch != null) __obj.updateDynamic("addPatch")(addPatch.asInstanceOf[js.Any])
     if (apiRequestSize != null) __obj.updateDynamic("apiRequestSize")(apiRequestSize)
     if (apiRequestTime != null) __obj.updateDynamic("apiRequestTime")(apiRequestTime)
     if (!js.isUndefined(asyncHooks)) __obj.updateDynamic("asyncHooks")(asyncHooks)
@@ -115,11 +124,13 @@ object AgentConfigOptions {
     if (!js.isUndefined(captureSpanStackTraces)) __obj.updateDynamic("captureSpanStackTraces")(captureSpanStackTraces)
     if (containerId != null) __obj.updateDynamic("containerId")(containerId)
     if (disableInstrumentations != null) __obj.updateDynamic("disableInstrumentations")(disableInstrumentations.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment)
     if (errorMessageMaxLength != null) __obj.updateDynamic("errorMessageMaxLength")(errorMessageMaxLength)
     if (!js.isUndefined(errorOnAbortedRequests)) __obj.updateDynamic("errorOnAbortedRequests")(errorOnAbortedRequests)
     if (!js.isUndefined(filterHttpHeaders)) __obj.updateDynamic("filterHttpHeaders")(filterHttpHeaders)
     if (frameworkName != null) __obj.updateDynamic("frameworkName")(frameworkName)
     if (frameworkVersion != null) __obj.updateDynamic("frameworkVersion")(frameworkVersion)
+    if (globalLabels != null) __obj.updateDynamic("globalLabels")(globalLabels.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (ignoreUrls != null) __obj.updateDynamic("ignoreUrls")(ignoreUrls)
     if (ignoreUserAgents != null) __obj.updateDynamic("ignoreUserAgents")(ignoreUserAgents)
@@ -144,6 +155,7 @@ object AgentConfigOptions {
     if (stackTraceLimit != null) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.asInstanceOf[js.Any])
     if (transactionMaxSpans != null) __obj.updateDynamic("transactionMaxSpans")(transactionMaxSpans.asInstanceOf[js.Any])
     if (transactionSampleRate != null) __obj.updateDynamic("transactionSampleRate")(transactionSampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePathAsTransactionName)) __obj.updateDynamic("usePathAsTransactionName")(usePathAsTransactionName)
     if (!js.isUndefined(verifyServerCert)) __obj.updateDynamic("verifyServerCert")(verifyServerCert)
     __obj.asInstanceOf[AgentConfigOptions]
   }

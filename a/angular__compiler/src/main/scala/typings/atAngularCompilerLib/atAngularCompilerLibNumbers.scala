@@ -197,6 +197,10 @@ object atAngularCompilerLibNumbers {
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
   
   @js.native
+  sealed trait `6`
+    extends atAngularCompilerLib.srcCoreMod.AttributeMarker
+  
+  @js.native
   sealed trait `64`
     extends atAngularCompilerLib.srcCoreMod.NodeFlags
   
@@ -297,6 +301,8 @@ object atAngularCompilerLibNumbers {
   def `524288`: `524288` = 524288.asInstanceOf[`524288`]
   @scala.inline
   def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
+  @scala.inline
+  def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
   def `64`: `64` = 64.asInstanceOf[`64`]
   @scala.inline

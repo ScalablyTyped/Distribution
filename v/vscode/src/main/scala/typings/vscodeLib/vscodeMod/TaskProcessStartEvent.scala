@@ -9,11 +9,11 @@ trait TaskProcessStartEvent extends js.Object {
   /**
   		 * The task execution for which the process got started.
   		 */
-  var execution: TaskExecution
+  val execution: TaskExecution
   /**
   		 * The underlying process id.
   		 */
-  var processId: scala.Double
+  val processId: scala.Double
 }
 
 object TaskProcessStartEvent {

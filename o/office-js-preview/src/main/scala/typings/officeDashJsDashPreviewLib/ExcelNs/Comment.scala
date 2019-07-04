@@ -34,7 +34,7 @@ class Comment ()
   val authorName: java.lang.String = js.native
   /**
     *
-    * Gets or sets the comment's content.
+    * Gets or sets the comment's content. The string is plain text.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

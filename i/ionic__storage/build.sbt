@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ionic__storage"
-version := "2.2.0-e4c5fe"
+version := "2.2.0-0eb2e9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "angular__core" % "8.0.3-810222",
+  "org.scalablytyped" %%% "angular__core" % "8.1.0-f5b09e",
   "org.scalablytyped" %%% "localforage" % "1.7.3-0cdb03",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-990046",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")

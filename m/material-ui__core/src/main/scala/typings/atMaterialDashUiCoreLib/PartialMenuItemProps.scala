@@ -305,6 +305,7 @@ trait PartialMenuItemProps extends js.Object {
   var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLElement]] = js.undefined
   var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLElement]] = js.undefined
   var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLElement]] = js.undefined
+  var ping: js.UndefOr[java.lang.String] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var property: js.UndefOr[java.lang.String] = js.undefined
@@ -522,6 +523,7 @@ object PartialMenuItemProps {
     onVolumeChange: reactLib.reactMod.ReactEventHandler[stdLib.HTMLElement] = null,
     onWaiting: reactLib.reactMod.ReactEventHandler[stdLib.HTMLElement] = null,
     onWheel: reactLib.reactMod.WheelEventHandler[stdLib.HTMLElement] = null,
+    ping: java.lang.String = null,
     placeholder: java.lang.String = null,
     prefix: java.lang.String = null,
     property: java.lang.String = null,
@@ -734,6 +736,7 @@ object PartialMenuItemProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
+    if (ping != null) __obj.updateDynamic("ping")(ping)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)

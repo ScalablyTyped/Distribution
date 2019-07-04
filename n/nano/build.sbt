@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "nano"
-version := "8.1.0-0703e6"
+version := "8.1.0-c53ef7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-ecc6d0",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-0a8dd6",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190621Z-8f9d23",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-90a9f7",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-1dc7ff",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-0260d9",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-fad17f",
   "org.scalablytyped" %%% "std" % "3.5-d4a303",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-7c4806")
 publishArtifact in packageDoc := false

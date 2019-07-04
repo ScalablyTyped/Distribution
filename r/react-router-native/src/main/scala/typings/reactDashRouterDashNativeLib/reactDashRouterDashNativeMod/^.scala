@@ -32,9 +32,9 @@ object ^ extends js.Object {
     _, 
     reactDashRouterLib.reactDashRouterMod.StaticContext, 
     historyLib.historyMod.LocationState
-  ] */](component: reactLib.reactMod.ComponentType[P]): reactLib.reactMod.ComponentClass[
-    reactDashRouterLib.reactDashRouterMod.Omit[P, java.lang.String], 
+  ] */, C /* <: reactLib.reactMod.ComponentType[P] */](component: C with reactLib.reactMod.ComponentType[P]): (reactLib.reactMod.ComponentClass[
+    (reactDashRouterLib.reactDashRouterMod.Omit[P, java.lang.String]) with reactDashRouterLib.reactDashRouterMod.WithRouterProps[C], 
     reactLib.reactMod.ComponentState
-  ] = js.native
+  ]) with reactDashRouterLib.reactDashRouterMod.WithRouterStatics[C] = js.native
 }
 

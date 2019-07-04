@@ -15,6 +15,8 @@ trait ɵNgModuleDef[T] extends js.Object {
     * module.
     */
   var exports: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]
+  /** Unique ID for the module with which it should be registered.  */
+  var id: java.lang.String | scala.Null
   /** List of modules or `ModuleWithProviders` imported by this module. */
   var imports: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]
   /** The set of schemas that declare elements to be allowed in the NgModule. */
@@ -37,11 +39,13 @@ object ɵNgModuleDef {
     exports: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]],
     imports: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]],
     `type`: T,
+    id: java.lang.String = null,
     schemas: js.Array[SchemaMetadata] = null,
     transitiveCompileScopes: ɵNgModuleTransitiveScopes = null
   ): ɵNgModuleDef[T] = {
     val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
     if (schemas != null) __obj.updateDynamic("schemas")(schemas)
     if (transitiveCompileScopes != null) __obj.updateDynamic("transitiveCompileScopes")(transitiveCompileScopes)
     __obj.asInstanceOf[ɵNgModuleDef[T]]

@@ -212,6 +212,39 @@ class Canvas protected () extends StaticCanvas {
   	 * @type Boolean
   	 */
   var uniScaleTransform: js.UndefOr[scala.Boolean] = js.native
+  def _setObjectScale(
+    localMouse: Point,
+    transform: js.Any,
+    lockScalingX: scala.Boolean,
+    lockScalingY: scala.Boolean,
+    by: js.UndefOr[scala.Nothing],
+    lockScalingFlip: scala.Boolean,
+    _dim: Point
+  ): scala.Boolean = js.native
+  /**
+    * @private
+    * @return {Boolean} true if the scaling occurred
+    */
+  @JSName("_setObjectScale")
+  def _setObjectScale_x(
+    localMouse: Point,
+    transform: js.Any,
+    lockScalingX: scala.Boolean,
+    lockScalingY: scala.Boolean,
+    by: fabricLib.fabricLibStrings.x,
+    lockScalingFlip: scala.Boolean,
+    _dim: Point
+  ): scala.Boolean = js.native
+  @JSName("_setObjectScale")
+  def _setObjectScale_y(
+    localMouse: Point,
+    transform: js.Any,
+    lockScalingX: scala.Boolean,
+    lockScalingY: scala.Boolean,
+    by: fabricLib.fabricLibStrings.y,
+    lockScalingFlip: scala.Boolean,
+    _dim: Point
+  ): scala.Boolean = js.native
   /**
   	 * Checks if point is contained within an area of given object
   	 * @param {Event} e Event object

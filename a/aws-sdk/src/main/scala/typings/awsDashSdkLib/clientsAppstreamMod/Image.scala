@@ -35,6 +35,10 @@ trait Image extends js.Object {
     */
   var DisplayName: js.UndefOr[String] = js.undefined
   /**
+    * The name of the image builder that was used to create the private image. If the image is shared, this value is null.
+    */
+  var ImageBuilderName: js.UndefOr[String] = js.undefined
+  /**
     * Indicates whether an image builder can be launched from this image.
     */
   var ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined
@@ -79,6 +83,7 @@ object Image {
     CreatedTime: Timestamp = null,
     Description: String = null,
     DisplayName: String = null,
+    ImageBuilderName: String = null,
     ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined,
     ImagePermissions: ImagePermissions = null,
     Platform: PlatformType = null,
@@ -95,6 +100,7 @@ object Image {
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
+    if (ImageBuilderName != null) __obj.updateDynamic("ImageBuilderName")(ImageBuilderName)
     if (!js.isUndefined(ImageBuilderSupported)) __obj.updateDynamic("ImageBuilderSupported")(ImageBuilderSupported)
     if (ImagePermissions != null) __obj.updateDynamic("ImagePermissions")(ImagePermissions)
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])

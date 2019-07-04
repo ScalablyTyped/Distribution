@@ -1,7 +1,7 @@
 
 # Scala.js typings for fabric
 
-Typings are for version 2.6
+Typings are for version 3.0
 
 ## Library description:
 Object model for HTML5 canvas, and SVG-to-canvas parser. Backed by jsdom and node-canvas.
@@ -37,7 +37,7 @@ These comments are from the typescript definitions and might be useful:
 ```
 // This module does not really exist.
 // This is just to get `export as namespace fabric;` to work and to be re-exportable from `index.d.ts`.
-// Type definitions for FabricJS 2.6
+// Type definitions for FabricJS 3.0
 // Project: http://fabricjs.com/
 // Definitions by: Oliver Klemencic <https://github.com/oklemencic>
 //                 Joseph Livecchi <https://github.com/joewashear007>

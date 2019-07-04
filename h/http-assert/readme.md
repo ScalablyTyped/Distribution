@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/jshttp/http-assert
 // Definitions by: jKey Lu <https://github.com/jkeylu>
 //                 Peter Squicciarini <https://github.com/stripedpajamas>
+//                 Alex Bulanov <https://github.com/sapfear>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 /**

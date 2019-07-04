@@ -245,6 +245,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
+    *
+    */
+  @js.native
+  sealed trait worksheetRowHiddenChanged
+    extends officeDashJsDashPreviewLib.ExcelNs.EventType
+  
+  /**
+    *
     * WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on rows happened.
     *
     */
@@ -296,6 +305,7 @@ object EventType extends js.Object {
   /* "WorksheetDeleted" */ val worksheetDeleted: worksheetDeleted with java.lang.String = js.native
   /* "WorksheetFiltered" */ val worksheetFiltered: worksheetFiltered with java.lang.String = js.native
   /* "WorksheetFormatChanged" */ val worksheetFormatChanged: worksheetFormatChanged with java.lang.String = js.native
+  /* "WorksheetRowHiddenChanged" */ val worksheetRowHiddenChanged: worksheetRowHiddenChanged with java.lang.String = js.native
   /* "WorksheetRowSorted" */ val worksheetRowSorted: worksheetRowSorted with java.lang.String = js.native
   /* "WorksheetSelectionChanged" */ val worksheetSelectionChanged: worksheetSelectionChanged with java.lang.String = js.native
   /* "WorksheetSingleClicked" */ val worksheetSingleClicked: worksheetSingleClicked with java.lang.String = js.native

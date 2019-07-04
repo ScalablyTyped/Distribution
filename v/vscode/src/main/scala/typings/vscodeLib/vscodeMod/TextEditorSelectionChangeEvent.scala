@@ -10,15 +10,15 @@ trait TextEditorSelectionChangeEvent extends js.Object {
   		 * The [change kind](#TextEditorSelectionChangeKind) which has triggered this
   		 * event. Can be `undefined`.
   		 */
-  var kind: js.UndefOr[TextEditorSelectionChangeKind] = js.undefined
+  val kind: js.UndefOr[TextEditorSelectionChangeKind] = js.undefined
   /**
   		 * The new value for the [text editor's selections](#TextEditor.selections).
   		 */
-  var selections: js.Array[Selection]
+  val selections: js.Array[Selection]
   /**
   		 * The [text editor](#TextEditor) for which the selections have changed.
   		 */
-  var textEditor: TextEditor
+  val textEditor: TextEditor
 }
 
 object TextEditorSelectionChangeEvent {

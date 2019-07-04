@@ -37,6 +37,12 @@ trait ParseTemplateOptions extends js.Object {
     atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
   ] = js.undefined
   /**
+    * An array of characters that should be considered as leading trivia.
+    * Leading trivia are characters that are not important to the developer, and so should not be
+    * included in source-map segments.  A common example is whitespace.
+    */
+  var leadingTriviaChars: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
     * Include whitespace nodes in the parsed output.
     */
   var preserveWhitespaces: js.UndefOr[scala.Boolean] = js.undefined
@@ -52,12 +58,14 @@ object ParseTemplateOptions {
   def apply(
     escapedString: js.UndefOr[scala.Boolean] = js.undefined,
     interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig = null,
+    leadingTriviaChars: js.Array[java.lang.String] = null,
     preserveWhitespaces: js.UndefOr[scala.Boolean] = js.undefined,
     range: atAngularCompilerLib.srcMlUnderscoreParserLexerMod.LexerRange = null
   ): ParseTemplateOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString)
     if (interpolationConfig != null) __obj.updateDynamic("interpolationConfig")(interpolationConfig)
+    if (leadingTriviaChars != null) __obj.updateDynamic("leadingTriviaChars")(leadingTriviaChars)
     if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[ParseTemplateOptions]

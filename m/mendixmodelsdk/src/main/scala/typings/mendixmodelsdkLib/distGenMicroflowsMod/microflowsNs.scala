@@ -629,6 +629,36 @@ object microflowsNs extends js.Object {
   }
   
   /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class FormDataPart protected ()
+    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    val containerAsFormDataRequestHandling: FormDataRequestHandling = js.native
+    var key: java.lang.String = js.native
+    @JSName("model")
+    var model_FormDataPart: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+    /**
+      * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+      */
+    var value: java.lang.String = js.native
+    /**
+      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      */
+    var valueModel: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.Expression = js.native
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class FormDataRequestHandling protected () extends RequestHandling {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    val parts: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[FormDataPart] = js.native
+  }
+  
+  /**
     * See: {@link https://docs.mendix.com/refguide7/generate-document relevant section in reference guide}
     */
   @js.native
@@ -783,6 +813,10 @@ object microflowsNs extends js.Object {
       */
     val allowedModuleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole] = js.native
     val allowedModuleRolesQualifiedNames: js.Array[java.lang.String] = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    val microflowActionInfo: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IMicroflowActionInfo | scala.Null = js.native
   }
   
   @js.native
@@ -1170,7 +1204,7 @@ object microflowsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/microflows relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames */ @js.native
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames, microflowActionInfo */ @js.native
   class Microflow protected () extends ServerSideMicroflow {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     var allowConcurrentExecution: scala.Boolean = js.native
@@ -1182,6 +1216,10 @@ object microflowsNs extends js.Object {
     var concurrencyErrorMessage: mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
     var concurrencyErrorMicroflow: IMicroflow | scala.Null = js.native
     val concurrencyErrorMicroflowQualifiedName: java.lang.String | scala.Null = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var microflowActionInfo: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IMicroflowActionInfo | mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo | scala.Null = js.native
   }
   
   @js.native
@@ -3018,6 +3056,68 @@ object microflowsNs extends js.Object {
   
   /* static members */
   @js.native
+  object FormDataPart extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new FormDataPart instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart = js.native
+    /**
+      * Creates and returns a new FormDataPart instance in the SDK and on the server.
+      * The new FormDataPart will be automatically stored in the 'parts' property
+      * of the parent FormDataRequestHandling element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataRequestHandling): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataPart = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object FormDataRequestHandling extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new FormDataRequestHandling instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataRequestHandling = js.native
+    /**
+      * Creates and returns a new FormDataRequestHandling instance in the SDK and on the server.
+      * The new FormDataRequestHandling will be automatically stored in the 'requestHandling' property
+      * of the parent RestCallAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInRestCallActionUnderRequestHandling(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RestCallAction): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataRequestHandling = js.native
+    /**
+      * Creates and returns a new FormDataRequestHandling instance in the SDK and on the server.
+      * The new FormDataRequestHandling will be automatically stored in the 'requestBodyHandling' property
+      * of the parent WebServiceCallAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebServiceCallActionUnderRequestBodyHandling(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.WebServiceCallAction): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataRequestHandling = js.native
+    /**
+      * Creates and returns a new FormDataRequestHandling instance in the SDK and on the server.
+      * The new FormDataRequestHandling will be automatically stored in the 'requestHeaderHandling' property
+      * of the parent WebServiceCallAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebServiceCallActionUnderRequestHeaderHandling(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.WebServiceCallAction): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.FormDataRequestHandling = js.native
+  }
+  
+  /* static members */
+  @js.native
   object GenerateDocumentAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
@@ -3847,6 +3947,7 @@ object microflowsNs extends js.Object {
     var Advanced: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestHandlingType = js.native
     var Binary: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestHandlingType = js.native
     var Custom: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestHandlingType = js.native
+    var FormData: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestHandlingType = js.native
     var Mapping: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestHandlingType = js.native
     var Simple: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestHandlingType = js.native
   }

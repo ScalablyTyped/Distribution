@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("classnames", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[ClassNamesExport]
+  extends org.scalablytyped.runtime.TopLevel[classnamesLib.typesMod.ClassNamesExport]
 

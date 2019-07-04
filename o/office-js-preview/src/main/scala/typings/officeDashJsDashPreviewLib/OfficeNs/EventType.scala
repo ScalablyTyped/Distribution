@@ -16,7 +16,7 @@ sealed trait EventType extends js.Object
   * 
   * @remarks
   * 
-  * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Access, Excel, Word.
+  * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
   * 
   */
 @JSGlobal("Office.EventType")
@@ -58,7 +58,7 @@ object EventType extends js.Object {
     * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
     * 
     * @remarks 
-    * **Hosts**: Access, Excel, Word
+    * **Hosts**: Excel, Word
     */
   @js.native
   sealed trait BindingDataChanged
@@ -69,7 +69,7 @@ object EventType extends js.Object {
     * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
     * 
     * @remarks 
-    * **Hosts**: Access, Excel, Word 
+    * **Hosts**: Excel, Word 
     */
   @js.native
   sealed trait BindingSelectionChanged
@@ -178,7 +178,7 @@ object EventType extends js.Object {
     * A Settings.settingsChanged event was raised.
     * 
     * @remarks 
-    * **Hosts**: Access, Excel, PowerPoint, Word
+    * **Hosts**: Excel, PowerPoint, Word
     */
   @js.native
   sealed trait SettingsChanged

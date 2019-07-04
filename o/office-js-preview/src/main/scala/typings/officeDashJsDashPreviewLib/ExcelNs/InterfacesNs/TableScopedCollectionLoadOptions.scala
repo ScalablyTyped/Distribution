@@ -114,7 +114,7 @@ trait TableScopedCollectionLoadOptions extends js.Object {
   var sort: js.UndefOr[TableSortLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+    * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
     *
     * [Api set: ExcelApi 1.1]
     */

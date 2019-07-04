@@ -55,6 +55,8 @@ class SurveyElement protected ()
   override def getType(): java.lang.String = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): scala.Unit with js.Any = js.native
+  /* protected */ def moveToBase(parent: IPanel, container: IPanel): scala.Boolean = js.native
+  /* protected */ def moveToBase(parent: IPanel, container: IPanel, insertBefore: js.Any): scala.Boolean = js.native
   /* CompleteClass */
   override def onFirstRendering(): js.Any = js.native
   /* protected */ def onNameChanged(oldValue: java.lang.String): scala.Unit = js.native

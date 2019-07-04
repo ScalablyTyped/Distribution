@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CommentReplyUpdateData extends js.Object {
   /**
     *
-    * Get or set the content.
+    * Gets or sets the comment reply's content. The string is plain text.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

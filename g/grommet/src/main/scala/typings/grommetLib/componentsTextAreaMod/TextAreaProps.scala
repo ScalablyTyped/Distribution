@@ -16,6 +16,9 @@ trait TextAreaProps extends js.Object {
   var resize: js.UndefOr[
     grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.horizontal | scala.Boolean
   ] = js.undefined
+  var size: js.UndefOr[
+    grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
+  ] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -30,6 +33,7 @@ object TextAreaProps {
     placeholder: java.lang.String = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     resize: grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.horizontal | scala.Boolean = null,
+    size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     value: java.lang.String = null
   ): TextAreaProps = {
     val __obj = js.Dynamic.literal()
@@ -41,6 +45,7 @@ object TextAreaProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[TextAreaProps]
   }

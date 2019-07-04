@@ -181,6 +181,10 @@ object restNs extends js.Object {
     /**
       * In version 8.0.0: introduced
       */
+    var serviceName: java.lang.String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
     var version: java.lang.String = js.native
   }
   

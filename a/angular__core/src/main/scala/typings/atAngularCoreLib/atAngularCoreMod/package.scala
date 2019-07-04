@@ -263,6 +263,19 @@ package object atAngularCoreMod {
     - js.Array[js.Any]
   */
   type StaticProvider = _StaticProvider | js.Array[js.Any]
+  /**
+    * Used to intercept and sanitize style values before they are written to the renderer.
+    *
+    * This function is designed to be called in two modes. When a value is not provided
+    * then the function will return a boolean whether a property will be sanitized later.
+    * If a value is provided then the sanitized version of that will be returned.
+    */
+  type StyleSanitizeFn = js.Function3[
+    /* prop */ java.lang.String, 
+    /* value */ java.lang.String | scala.Null, 
+    /* mode */ js.UndefOr[StyleSanitizeMode], 
+    js.Any
+  ]
   type TrackByFunction[T] = js.Function2[/* index */ scala.Double, /* item */ T, js.Any]
   type TypeProvider = Type[js.Any]
   type ViewChild = Query

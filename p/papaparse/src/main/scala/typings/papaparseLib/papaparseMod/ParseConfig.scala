@@ -48,6 +48,8 @@ trait ParseConfig extends js.Object {
   var transform: js.UndefOr[
     js.Function2[/* value */ java.lang.String, /* field */ java.lang.String | scala.Double, _]
   ] = js.undefined
+   // default: undefined
+  var transformHeader: js.UndefOr[js.Function1[/* header */ java.lang.String, java.lang.String]] = js.undefined
    // default: false
   var trimHeaders: js.UndefOr[scala.Boolean] = js.undefined
    // default: undefined
@@ -76,6 +78,7 @@ object ParseConfig {
     skipEmptyLines: scala.Boolean | papaparseLib.papaparseLibStrings.greedy = null,
     step: (/* results */ ParseResult, /* parser */ Parser) => scala.Unit = null,
     transform: (/* value */ java.lang.String, /* field */ java.lang.String | scala.Double) => _ = null,
+    transformHeader: /* header */ java.lang.String => java.lang.String = null,
     trimHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     worker: js.UndefOr[scala.Boolean] = js.undefined
@@ -98,6 +101,7 @@ object ParseConfig {
     if (skipEmptyLines != null) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction2(step))
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
+    if (transformHeader != null) __obj.updateDynamic("transformHeader")(js.Any.fromFunction1(transformHeader))
     if (!js.isUndefined(trimHeaders)) __obj.updateDynamic("trimHeaders")(trimHeaders)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker)

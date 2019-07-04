@@ -9,6 +9,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LQueries extends js.Object {
   /**
+    * The index of the node on which this LQueries instance was created / cloned in a given LView.
+    *
+    * This index is stored to minimize LQueries cloning: we can observe that LQueries can be mutated
+    * only under 2 conditions:
+    * - we are crossing an element that has directives with content queries (new queries are added);
+    * - we are descending into element hierarchy (creating a child element of an existing element)
+    * and the current LQueries object is tracking shallow queries (shallow queries are removed).
+    *
+    * Since LQueries are not cloned systematically we need to know exactly where (on each element)
+    * cloning occurred, so we can properly restore the set of tracked queries when going up the
+    * elements hierarchy.
+    *
+    * Always set to -1 for view queries as view queries are created before we process any node in a
+    * given view.
+    */
+  var nodeIndex: scala.Double = js.native
+  /**
     * The parent LQueries instance.
     *
     * When there is a content query, a new LQueries instance is created to avoid mutating any
@@ -24,6 +41,15 @@ trait LQueries extends js.Object {
     * if matching query predicate.
     */
   def addNode(tNode: ɵangular_packages_core_core_bg): scala.Unit = js.native
+  /**
+    * Ask queries to prepare a copy of itself. This ensures that:
+    * - tracking new queries on content nodes doesn't mutate list of queries tracked on a parent
+    * node;
+    * - we don't track shallow queries when descending into elements hierarchy.
+    *
+    * We will clone LQueries before constructing content queries
+    */
+  def clone(tNode: TNode): LQueries = js.native
   /**
     * Notify `LQueries` that a new LContainer was added to ivy data structures. As a result we need
     * to prepare room for views that might be inserted into this container.

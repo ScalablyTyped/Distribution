@@ -11,7 +11,9 @@ trait SyncConfiguration extends js.Object {
   var customQueryBasedSyncIdentifier: js.UndefOr[java.lang.String] = js.undefined
   var custom_http_headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var error: js.UndefOr[ErrorCallback] = js.undefined
+  var existingRealmFileBehavior: js.UndefOr[OpenRealmBehaviorConfiguration] = js.undefined
   var fullSynchronization: js.UndefOr[scala.Boolean] = js.undefined
+  var newRealmFileBehavior: js.UndefOr[OpenRealmBehaviorConfiguration] = js.undefined
   /** @deprecated use `ssl` instead */
   var open_ssl_verify_callback: js.UndefOr[SSLVerifyCallback] = js.undefined
   var partial: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,7 +36,9 @@ object SyncConfiguration {
     customQueryBasedSyncIdentifier: java.lang.String = null,
     custom_http_headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     error: ErrorCallback = null,
+    existingRealmFileBehavior: OpenRealmBehaviorConfiguration = null,
     fullSynchronization: js.UndefOr[scala.Boolean] = js.undefined,
+    newRealmFileBehavior: OpenRealmBehaviorConfiguration = null,
     open_ssl_verify_callback: SSLVerifyCallback = null,
     partial: js.UndefOr[scala.Boolean] = js.undefined,
     ssl: SSLConfiguration = null,
@@ -47,7 +51,9 @@ object SyncConfiguration {
     if (customQueryBasedSyncIdentifier != null) __obj.updateDynamic("customQueryBasedSyncIdentifier")(customQueryBasedSyncIdentifier)
     if (custom_http_headers != null) __obj.updateDynamic("custom_http_headers")(custom_http_headers)
     if (error != null) __obj.updateDynamic("error")(error)
+    if (existingRealmFileBehavior != null) __obj.updateDynamic("existingRealmFileBehavior")(existingRealmFileBehavior)
     if (!js.isUndefined(fullSynchronization)) __obj.updateDynamic("fullSynchronization")(fullSynchronization)
+    if (newRealmFileBehavior != null) __obj.updateDynamic("newRealmFileBehavior")(newRealmFileBehavior)
     if (open_ssl_verify_callback != null) __obj.updateDynamic("open_ssl_verify_callback")(open_ssl_verify_callback)
     if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
     if (ssl != null) __obj.updateDynamic("ssl")(ssl)

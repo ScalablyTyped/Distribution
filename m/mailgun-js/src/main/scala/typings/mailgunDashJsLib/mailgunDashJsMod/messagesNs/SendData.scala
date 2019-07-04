@@ -33,7 +33,7 @@ trait SendData extends js.Object {
     mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | mailgunDashJsLib.mailgunDashJsLibStrings.True | mailgunDashJsLib.mailgunDashJsLibStrings.False
   ] = js.undefined
   // Mailgun options
-  var `o:tag`: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var `o:tag`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var `o:tracking`: js.UndefOr[
     mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | scala.Boolean
   ] = js.undefined
@@ -67,7 +67,7 @@ object SendData {
     `o:dkim`: mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | scala.Boolean = null,
     `o:require-tls`: mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | mailgunDashJsLib.mailgunDashJsLibStrings.True | mailgunDashJsLib.mailgunDashJsLibStrings.False = null,
     `o:skip-verification`: mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | mailgunDashJsLib.mailgunDashJsLibStrings.True | mailgunDashJsLib.mailgunDashJsLibStrings.False = null,
-    `o:tag`: js.Array[java.lang.String] = null,
+    `o:tag`: java.lang.String | js.Array[java.lang.String] = null,
     `o:tracking`: mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | scala.Boolean = null,
     `o:tracking-clicks`: mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | mailgunDashJsLib.mailgunDashJsLibStrings.htmlonly | scala.Boolean = null,
     `o:tracking-opens`: mailgunDashJsLib.mailgunDashJsLibStrings.yes | mailgunDashJsLib.mailgunDashJsLibStrings.no | scala.Boolean = null,
@@ -90,7 +90,7 @@ object SendData {
     if (`o:dkim` != null) __obj.updateDynamic("o:dkim")(`o:dkim`.asInstanceOf[js.Any])
     if (`o:require-tls` != null) __obj.updateDynamic("o:require-tls")(`o:require-tls`.asInstanceOf[js.Any])
     if (`o:skip-verification` != null) __obj.updateDynamic("o:skip-verification")(`o:skip-verification`.asInstanceOf[js.Any])
-    if (`o:tag` != null) __obj.updateDynamic("o:tag")(`o:tag`)
+    if (`o:tag` != null) __obj.updateDynamic("o:tag")(`o:tag`.asInstanceOf[js.Any])
     if (`o:tracking` != null) __obj.updateDynamic("o:tracking")(`o:tracking`.asInstanceOf[js.Any])
     if (`o:tracking-clicks` != null) __obj.updateDynamic("o:tracking-clicks")(`o:tracking-clicks`.asInstanceOf[js.Any])
     if (`o:tracking-opens` != null) __obj.updateDynamic("o:tracking-opens")(`o:tracking-opens`.asInstanceOf[js.Any])

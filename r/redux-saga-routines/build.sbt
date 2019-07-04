@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "redux-saga-routines"
-version := "3.1-dt-20190417Z-83b8e3"
+version := "3.1-dt-20190417Z-93f36a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-9e424f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
   "org.scalablytyped" %%% "redux" % "4.0.1-3a783a",
   "org.scalablytyped" %%% "redux-actions" % "2.6-dt-20190508Z-45c45f",
-  "org.scalablytyped" %%% "redux-form" % "8.1-dt-20190616Z-c43928",
+  "org.scalablytyped" %%% "redux-form" % "8.1-dt-20190616Z-1ebb05",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

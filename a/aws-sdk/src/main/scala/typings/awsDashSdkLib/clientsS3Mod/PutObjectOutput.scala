@@ -24,6 +24,10 @@ trait PutObjectOutput extends js.Object {
     */
   var SSECustomerKeyMD5: js.UndefOr[SSECustomerKeyMD5] = js.undefined
   /**
+    * If present, specifies the AWS KMS Encryption Context to use for object encryption. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
+    */
+  var SSEKMSEncryptionContext: js.UndefOr[SSEKMSEncryptionContext] = js.undefined
+  /**
     * If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.
     */
   var SSEKMSKeyId: js.UndefOr[SSEKMSKeyId] = js.undefined
@@ -45,6 +49,7 @@ object PutObjectOutput {
     RequestCharged: RequestCharged = null,
     SSECustomerAlgorithm: SSECustomerAlgorithm = null,
     SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
+    SSEKMSEncryptionContext: SSEKMSEncryptionContext = null,
     SSEKMSKeyId: SSEKMSKeyId = null,
     ServerSideEncryption: ServerSideEncryption = null,
     VersionId: ObjectVersionId = null
@@ -55,6 +60,7 @@ object PutObjectOutput {
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm)
     if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5)
+    if (SSEKMSEncryptionContext != null) __obj.updateDynamic("SSEKMSEncryptionContext")(SSEKMSEncryptionContext)
     if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)

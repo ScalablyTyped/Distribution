@@ -43,7 +43,7 @@ trait SlicerItemCollectionLoadOptions extends js.Object {
   var key: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the value displayed on UI.
+    * For EACH ITEM in the collection: Represents the title displayed in the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

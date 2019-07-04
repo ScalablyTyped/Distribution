@@ -231,6 +231,10 @@ object Realm extends js.Object {
     */
   def deleteFile(config: realmLib.RealmNs.Configuration): scala.Unit = js.native
   /**
+    * Checks if the Realm already exists on disk.
+    */
+  def exists(config: realmLib.RealmNs.Configuration): scala.Boolean = js.native
+  /**
     * Open a realm asynchronously with a promise. If the realm is synced, it will be fully synchronized before it is available.
     * @param {Configuration} config
     */

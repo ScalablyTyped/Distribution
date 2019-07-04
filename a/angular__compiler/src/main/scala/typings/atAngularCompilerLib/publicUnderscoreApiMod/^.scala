@@ -44,7 +44,8 @@ object ^ extends js.Object {
   def collectExternalReferences(stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference] = js.native
   def compileBaseDefFromMetadata(
     meta: atAngularCompilerLib.srcRender3ViewCompilerMod.R3BaseRefMetaData,
-    constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool
+    constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool,
+    bindingParser: atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser
   ): atAngularCompilerLib.Anon_ExpressionType = js.native
   def compileComponentFromMetadata(
     meta: atAngularCompilerLib.srcRender3ViewApiMod.R3ComponentMetadata,

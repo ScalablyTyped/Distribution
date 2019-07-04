@@ -9,15 +9,15 @@ trait DebugSessionCustomEvent extends js.Object {
   /**
   		 * Event specific information.
   		 */
-  var body: js.UndefOr[js.Any] = js.undefined
+  val body: js.UndefOr[js.Any] = js.undefined
   /**
   		 * Type of event.
   		 */
-  var event: java.lang.String
+  val event: java.lang.String
   /**
   		 * The [debug session](#DebugSession) for which the custom event was received.
   		 */
-  var session: DebugSession
+  val session: DebugSession
 }
 
 object DebugSessionCustomEvent {

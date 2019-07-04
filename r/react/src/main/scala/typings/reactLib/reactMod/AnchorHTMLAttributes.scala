@@ -10,6 +10,7 @@ trait AnchorHTMLAttributes[T] extends HTMLAttributes[T] {
   var href: js.UndefOr[java.lang.String] = js.undefined
   var hrefLang: js.UndefOr[java.lang.String] = js.undefined
   var media: js.UndefOr[java.lang.String] = js.undefined
+  var ping: js.UndefOr[java.lang.String] = js.undefined
   var referrerPolicy: js.UndefOr[java.lang.String] = js.undefined
   var rel: js.UndefOr[java.lang.String] = js.undefined
   var target: js.UndefOr[java.lang.String] = js.undefined
@@ -24,6 +25,7 @@ object AnchorHTMLAttributes {
     href: java.lang.String = null,
     hrefLang: java.lang.String = null,
     media: java.lang.String = null,
+    ping: java.lang.String = null,
     referrerPolicy: java.lang.String = null,
     rel: java.lang.String = null,
     target: java.lang.String = null,
@@ -35,6 +37,7 @@ object AnchorHTMLAttributes {
     if (href != null) __obj.updateDynamic("href")(href)
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang)
     if (media != null) __obj.updateDynamic("media")(media)
+    if (ping != null) __obj.updateDynamic("ping")(ping)
     if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
     if (rel != null) __obj.updateDynamic("rel")(rel)
     if (target != null) __obj.updateDynamic("target")(target)

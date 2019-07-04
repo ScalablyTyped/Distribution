@@ -27,6 +27,6 @@ object constNs extends js.Object {
   def getEq[L, A](S: fpDashTsLib.libEqMod.Eq[L]): fpDashTsLib.libEqMod.Eq[fpDashTsLib.libConstMod.Const[L, A]] = js.native
   def getSetoid[L, A](S: fpDashTsLib.libEqMod.Eq[L]): fpDashTsLib.libEqMod.Eq[fpDashTsLib.libConstMod.Const[L, A]] = js.native
   def getShow[L, A](S: fpDashTsLib.libShowMod.Show[L]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libConstMod.Const[L, A]] = js.native
-  def make[L](l: L): fpDashTsLib.libConstMod.Const[L, scala.Nothing] = js.native
+  def make[L, A](l: L): fpDashTsLib.libConstMod.Const[L, A] = js.native
 }
 

@@ -205,6 +205,16 @@ class Range ()
   val rowIndex: scala.Double = js.native
   /**
     *
+    * Represents if ALL the cells would be saved as an array formula.
+    Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+    Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val savedAsArray: scala.Boolean = js.native
+  /**
+    *
     * Represents the range sort of the current range. Read-only.
     *
     * [Api set: ExcelApi 1.2]

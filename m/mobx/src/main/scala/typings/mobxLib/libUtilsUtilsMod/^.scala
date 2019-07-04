@@ -25,6 +25,7 @@ object ^ extends js.Object {
   def getMapLikeKeys[V](map: mobxLib.libTypesObservablemapMod.IKeyValueMap[V]): js.Array[java.lang.String] = js.native
   def getMapLikeKeys[K, V](map: mobxLib.libInternalMod.ObservableMap[K, V]): js.Array[K] = js.native
   def getNextId(): scala.Double = js.native
+  def getPlainObjectKeys(`object`: js.Any): js.Array[java.lang.String | scala.Double | js.Symbol] = js.native
   def invariant(check: js.Any): scala.Unit = js.native
   def invariant(check: js.Any, message: java.lang.String): scala.Unit = js.native
   def invariant(check: js.Any, message: scala.Boolean): scala.Unit = js.native
@@ -49,6 +50,7 @@ object ^ extends js.Object {
   def makeNonEnumerable(`object`: js.Any, propNames: js.Array[stdLib.PropertyKey]): scala.Unit = js.native
   def noop(): scala.Unit = js.native
   def once(func: Lambda): Lambda = js.native
+  def stringifyKey(key: js.Any): java.lang.String = js.native
   def toPrimitive(value: js.Any): js.Any = js.native
   def unique[T](list: js.Array[T]): js.Array[T] = js.native
 }

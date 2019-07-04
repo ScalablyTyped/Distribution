@@ -53,9 +53,9 @@ object reactDashBootstrapLibComponents extends reactDashBootstrapLibProps {
   @scala.inline
   def FormControl: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlMod.FormControlProps] = js.constructorOf[reactDashBootstrapLib.libMod.FormControl].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlMod.FormControlProps]]
   @scala.inline
-  def FormControlFeedback: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlFeedbackMod.FormControlFeedbackProps] = js.constructorOf[reactDashBootstrapLib.libFormControlFeedbackMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlFeedbackMod.FormControlFeedbackProps]]
+  def FormControlFeedback: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlFeedbackMod.FormControlFeedbackProps] = js.constructorOf[reactDashBootstrapLib.libMod.FormControlFeedback].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlFeedbackMod.FormControlFeedbackProps]]
   @scala.inline
-  def FormControlStatic: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlStaticMod.FormControlStaticProps] = js.constructorOf[reactDashBootstrapLib.libFormControlStaticMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlStaticMod.FormControlStaticProps]]
+  def FormControlStatic: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlStaticMod.FormControlStaticProps] = js.constructorOf[reactDashBootstrapLib.libMod.FormControlStatic].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormControlStaticMod.FormControlStaticProps]]
   @scala.inline
   def FormGroup: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormGroupMod.FormGroupProps] = js.constructorOf[reactDashBootstrapLib.libMod.FormGroup].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libFormGroupMod.FormGroupProps]]
   @scala.inline
@@ -69,9 +69,9 @@ object reactDashBootstrapLibComponents extends reactDashBootstrapLibProps {
   @scala.inline
   def InputGroup: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupMod.InputGroupProps] = js.constructorOf[reactDashBootstrapLib.libMod.InputGroup].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupMod.InputGroupProps]]
   @scala.inline
-  def InputGroupAddon: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupAddonMod.InputGroupAddonProps] = js.constructorOf[reactDashBootstrapLib.libInputGroupAddonMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupAddonMod.InputGroupAddonProps]]
+  def InputGroupAddon: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupAddonMod.InputGroupAddonProps] = js.constructorOf[reactDashBootstrapLib.libMod.InputGroupAddon].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupAddonMod.InputGroupAddonProps]]
   @scala.inline
-  def InputGroupButton: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupButtonMod.InputGroupButtonProps] = js.constructorOf[reactDashBootstrapLib.libInputGroupButtonMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupButtonMod.InputGroupButtonProps]]
+  def InputGroupButton: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupButtonMod.InputGroupButtonProps] = js.constructorOf[reactDashBootstrapLib.libMod.InputGroupButton].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libInputGroupButtonMod.InputGroupButtonProps]]
   @scala.inline
   def Jumbotron: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libJumbotronMod.JumbotronProps] = js.constructorOf[reactDashBootstrapLib.libMod.Jumbotron].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libJumbotronMod.JumbotronProps]]
   @scala.inline
@@ -181,7 +181,7 @@ object reactDashBootstrapLibComponents extends reactDashBootstrapLibProps {
   @scala.inline
   def SplitButton: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libSplitButtonMod.SplitButtonProps] = js.constructorOf[reactDashBootstrapLib.libMod.SplitButton].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libSplitButtonMod.SplitButtonProps]]
   @scala.inline
-  def SplitToggle: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libSplitToggleMod.SplitToggleProps] = js.constructorOf[reactDashBootstrapLib.libSplitToggleMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libSplitToggleMod.SplitToggleProps]]
+  def SplitToggle: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libSplitToggleMod.SplitToggleProps] = js.constructorOf[reactDashBootstrapLib.libMod.SplitToggle].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libSplitToggleMod.SplitToggleProps]]
   @scala.inline
   def Tab: reactLib.reactMod.ComponentType[reactDashBootstrapLib.libTabMod.TabProps] = js.constructorOf[reactDashBootstrapLib.libMod.Tab].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapLib.libTabMod.TabProps]]
   @scala.inline

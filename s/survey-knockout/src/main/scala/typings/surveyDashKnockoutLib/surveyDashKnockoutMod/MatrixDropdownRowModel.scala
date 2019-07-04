@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class MatrixDropdownRowModel protected () extends MatrixDropdownRowModelBase {
   def this(name: java.lang.String, item: ItemValue, data: IMatrixDropdownData, value: js.Any) = this()
-  val locText: LocalizableString = js.native
   var name: java.lang.String = js.native
   @JSName("rowName")
   val rowName_MatrixDropdownRowModel: java.lang.String = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-router"
-version := "3.0.6-618992"
+version := "3.0.7-618992"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

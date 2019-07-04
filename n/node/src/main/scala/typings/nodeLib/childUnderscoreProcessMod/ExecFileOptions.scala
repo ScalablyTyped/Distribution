@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait ExecFileOptions extends CommonOptions {
   var killSignal: js.UndefOr[java.lang.String] = js.undefined
   var maxBuffer: js.UndefOr[scala.Double] = js.undefined
+  var shell: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var windowsVerbatimArguments: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -19,6 +20,7 @@ object ExecFileOptions {
     gid: scala.Int | scala.Double = null,
     killSignal: java.lang.String = null,
     maxBuffer: scala.Int | scala.Double = null,
+    shell: scala.Boolean | java.lang.String = null,
     timeout: scala.Int | scala.Double = null,
     uid: scala.Int | scala.Double = null,
     windowsHide: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,6 +32,7 @@ object ExecFileOptions {
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal)
     if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide)

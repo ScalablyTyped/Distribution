@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged */ @JSImport("survey-knockout", "PanelModelBase")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged, indexOf */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 class PanelModelBase ()
   extends SurveyElement
@@ -105,12 +105,14 @@ class PanelModelBase ()
   def addNewPanel(): PanelModel = js.native
   def addNewPanel(name: java.lang.String): PanelModel = js.native
   /**
-    * Creates a new question and adds it into the end of the elements list. Returns null, if the question could not be created or could not be added into page or panel.
+    * Creates a new question and adds it at location of index, by default the end of the elements list. Returns null, if the question could not be created or could not be added into page or panel.
     * @param questionType the possible values are: "text", "checkbox", "dropdown", "matrix", "html", "matrixdynamic", "matrixdropdown" and so on.
     * @param name a question name
+    * @param index element index in the elements array
     */
   def addNewQuestion(questionType: java.lang.String): Question = js.native
   def addNewQuestion(questionType: java.lang.String, name: java.lang.String): Question = js.native
+  def addNewQuestion(questionType: java.lang.String, name: java.lang.String, index: scala.Double): Question = js.native
   /**
     * Add a panel into Panel or Page.  Returns true if the panel added successfully. Otherwise returns false.
     * @param panel
@@ -216,6 +218,11 @@ class PanelModelBase ()
   def hasErrors(fireCallback: scala.Boolean): scala.Boolean = js.native
   def hasErrors(fireCallback: scala.Boolean, focuseOnFirstError: scala.Boolean): scala.Boolean = js.native
   /* protected */ def hasErrorsCore(rec: js.Any): scala.Unit = js.native
+  /**
+    * Returns the index of element parameter in the elements list.
+    * @param element question or panel
+    */
+  def indexOf(element: IElement): scala.Double = js.native
   def isLayoutTypeSupported(layoutType: java.lang.String): scala.Boolean = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): scala.Unit with js.Any = js.native

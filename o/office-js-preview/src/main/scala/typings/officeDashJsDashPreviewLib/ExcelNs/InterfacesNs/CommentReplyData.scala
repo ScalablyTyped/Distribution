@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CommentReplyData extends js.Object {
   /**
     *
-    * Get author email of the comment reply.
+    * Gets the email of the comment reply's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -17,7 +17,7 @@ trait CommentReplyData extends js.Object {
   var authorEmail: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Get author name of the comment reply.
+    * Gets the name of the comment reply's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait CommentReplyData extends js.Object {
   var authorName: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Get or set the content.
+    * Gets or sets the comment reply's content. The string is plain text.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait CommentReplyData extends js.Object {
   var content: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Get creation time of the comment reply.
+    * Gets the creation time of the comment reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

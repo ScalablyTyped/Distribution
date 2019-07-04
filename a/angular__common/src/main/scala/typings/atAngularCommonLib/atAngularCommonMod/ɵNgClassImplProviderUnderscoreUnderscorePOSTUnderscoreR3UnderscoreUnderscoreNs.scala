@@ -14,7 +14,7 @@ object ɵNgClassImplProviderUnderscoreUnderscorePOSTUnderscoreR3UnderscoreUnders
   
   @js.native
   class useClass ()
-    extends atAngularCommonLib.atAngularCommonMod.ɵangular_packages_common_common_h
+    extends atAngularCommonLib.atAngularCommonMod.ɵangular_packages_common_common_f
   
 }
 

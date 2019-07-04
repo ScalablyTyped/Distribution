@@ -35,8 +35,8 @@ trait ApplicationData extends js.Object {
   /**
     *
     * Returns the Iterative Calculation settings.
-    On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-    On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+    In Excel on Windows and Mac, the settings will apply to the Excel Application.
+    In Excel on the web and other platforms, the settings will apply to the active workbook.
     *
     * [Api set: ExcelApi 1.9]
     */

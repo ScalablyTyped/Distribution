@@ -49,17 +49,17 @@ object taskEitherNs extends js.Object {
   ] = js.native
   def getSemigroup[L, A](S: fpDashTsLib.es6SemigroupMod.Semigroup[A]): fpDashTsLib.es6SemigroupMod.Semigroup[fpDashTsLib.es6TaskEitherMod.TaskEither[L, A]] = js.native
   def left[L, A](fl: fpDashTsLib.es6TaskMod.Task[L]): fpDashTsLib.es6TaskEitherMod.TaskEither[L, A] = js.native
-  def left2v[L](l: L): fpDashTsLib.es6TaskEitherMod.TaskEither[L, scala.Nothing] = js.native
-  def leftIO[E](me: fpDashTsLib.es6IOMod.IO[E]): fpDashTsLib.es6TaskEitherMod.TaskEither[E, scala.Nothing] = js.native
-  def leftTask[E](me: fpDashTsLib.es6TaskMod.Task[E]): fpDashTsLib.es6TaskEitherMod.TaskEither[E, scala.Nothing] = js.native
+  def left2v[E, A](e: E): fpDashTsLib.es6TaskEitherMod.TaskEither[E, A] = js.native
+  def leftIO[E, A](me: fpDashTsLib.es6IOMod.IO[E]): fpDashTsLib.es6TaskEitherMod.TaskEither[E, A] = js.native
+  def leftTask[E, A](me: fpDashTsLib.es6TaskMod.Task[E]): fpDashTsLib.es6TaskEitherMod.TaskEither[E, A] = js.native
   def orElse[E, A, M](f: js.Function1[/* e */ E, fpDashTsLib.es6TaskEitherMod.TaskEither[M, A]]): js.Function1[
     /* ma */ fpDashTsLib.es6TaskEitherMod.TaskEither[E, A], 
     fpDashTsLib.es6TaskEitherMod.TaskEither[M, A]
   ] = js.native
   def right[L, A](fa: fpDashTsLib.es6TaskMod.Task[A]): fpDashTsLib.es6TaskEitherMod.TaskEither[L, A] = js.native
-  def right2v[A](a: A): fpDashTsLib.es6TaskEitherMod.TaskEither[scala.Nothing, A] = js.native
-  def rightIO[A](ma: fpDashTsLib.es6IOMod.IO[A]): fpDashTsLib.es6TaskEitherMod.TaskEither[scala.Nothing, A] = js.native
-  def rightTask[A](ma: fpDashTsLib.es6TaskMod.Task[A]): fpDashTsLib.es6TaskEitherMod.TaskEither[scala.Nothing, A] = js.native
+  def right2v[E, A](a: A): fpDashTsLib.es6TaskEitherMod.TaskEither[E, A] = js.native
+  def rightIO[E, A](ma: fpDashTsLib.es6IOMod.IO[A]): fpDashTsLib.es6TaskEitherMod.TaskEither[E, A] = js.native
+  def rightTask[E, A](ma: fpDashTsLib.es6TaskMod.Task[A]): fpDashTsLib.es6TaskEitherMod.TaskEither[E, A] = js.native
   def taskify[L, R](
     f: js.Function1[
       /* cb */ js.Function2[/* e */ js.UndefOr[L | scala.Null], /* r */ js.UndefOr[R], scala.Unit], 

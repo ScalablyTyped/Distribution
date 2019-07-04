@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-media-capture"
-version := "3.0.2-cae479"
+version := "3.0.3-dd7a8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

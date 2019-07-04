@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * The current context exists as a property of Office. It is accessed using `Office.context`.
   *
   * @remarks 
-  * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+  * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
   */     
 trait Context extends js.Object {
   /**
@@ -39,8 +39,6 @@ trait Context extends js.Object {
     * The `contentLanguage` value reflects the **Editing Language** setting specified with **File \> Options \> Language** in the Office host 
     * application.
     * 
-    * In content add-ins for Access web apps, the `contentLanguage` property gets the add-in culture (e.g., "en-GB").
-    * 
     * **Support details**
     * 
     * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
@@ -52,7 +50,6 @@ trait Context extends js.Object {
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -75,8 +72,6 @@ trait Context extends js.Object {
     * The `displayLanguage` value reflects the current **Display Language** setting specified with **File \> Options \> Language** in the Office 
     * host application.
     * 
-    * In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
-    * 
     * When using in Outlook, the applicable modes are Compose or Read.
     * 
     * **Support details**
@@ -90,7 +85,6 @@ trait Context extends js.Object {
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>

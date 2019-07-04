@@ -9,11 +9,11 @@ trait TextDocumentChangeEvent extends js.Object {
   /**
   		 * An array of content changes.
   		 */
-  var contentChanges: js.Array[TextDocumentContentChangeEvent]
+  val contentChanges: js.Array[TextDocumentContentChangeEvent]
   /**
   		 * The affected document.
   		 */
-  var document: TextDocument
+  val document: TextDocument
 }
 
 object TextDocumentChangeEvent {

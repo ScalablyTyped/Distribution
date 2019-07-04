@@ -12,6 +12,12 @@ object ^ extends js.Object {
     VideoProps with (reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
+    ]) with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+        reactLib.HTMLVideoElement
+      ], 
+      grommetLib.grommetLibStrings.controls
     ]), 
     reactLib.reactMod.ComponentState
   ] = js.native

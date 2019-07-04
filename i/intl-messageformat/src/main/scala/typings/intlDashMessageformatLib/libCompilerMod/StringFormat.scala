@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("intl-messageformat/lib/compiler", "StringFormat")
 @js.native
-class StringFormat ()
+trait StringFormat
   extends Formatter
      with _Pattern
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-battery-status"
-version := "2.0.2-917a70"
+version := "2.0.3-0e5d37"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

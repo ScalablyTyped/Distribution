@@ -10,11 +10,11 @@ trait TextDocumentWillSaveEvent extends js.Object {
   /**
   		 * The document that will be saved.
   		 */
-  var document: TextDocument = js.native
+  val document: TextDocument = js.native
   /**
   		 * The reason why save was triggered.
   		 */
-  var reason: TextDocumentSaveReason = js.native
+  val reason: TextDocumentSaveReason = js.native
   /**
   		 * Allows to pause the event loop and to apply [pre-save-edits](#TextEdit).
   		 * Edits of subsequent calls to this function will be applied in order. The

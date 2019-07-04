@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "redux-persist-transform-encrypt"
-version := "2.0-dt-20181017Z-36b7f0"
+version := "2.0-dt-20181017Z-dec73c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190621Z-9e424f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
   "org.scalablytyped" %%% "redux" % "4.0.1-3a783a",
-  "org.scalablytyped" %%% "redux-persist" % "5.10.0-b5156d",
+  "org.scalablytyped" %%% "redux-persist" % "5.10.0-0eb375",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
