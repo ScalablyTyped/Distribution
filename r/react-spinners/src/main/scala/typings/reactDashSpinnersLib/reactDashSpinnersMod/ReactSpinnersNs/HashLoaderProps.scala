@@ -15,7 +15,7 @@ object HashLoaderProps {
   @scala.inline
   def apply(
     color: java.lang.String = null,
-    css: java.lang.String = null,
+    css: java.lang.String | PrecompiledCss = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     margin: java.lang.String = null,
     size: scala.Int | scala.Double = null,
@@ -23,7 +23,7 @@ object HashLoaderProps {
   ): HashLoaderProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

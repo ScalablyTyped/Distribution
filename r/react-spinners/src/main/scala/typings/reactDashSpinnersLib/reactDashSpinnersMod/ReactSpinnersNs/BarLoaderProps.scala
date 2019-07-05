@@ -16,7 +16,7 @@ object BarLoaderProps {
   @scala.inline
   def apply(
     color: java.lang.String = null,
-    css: java.lang.String = null,
+    css: java.lang.String | PrecompiledCss = null,
     height: scala.Int | scala.Double = null,
     heightUnit: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
@@ -25,7 +25,7 @@ object BarLoaderProps {
   ): BarLoaderProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)

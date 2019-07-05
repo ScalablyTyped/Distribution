@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-locales-supported
 
-Typings are for version 1.3.1
+Typings are for version 1.3.2
 
 ## Library description:
 Utility to help you polyfill the Node.js runtime when the Intl APIs are missing, or if the built-in Intl is missing locale data that you need.

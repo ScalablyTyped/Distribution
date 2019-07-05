@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simplesignal"
-version := "4.0.1-7e7d59"
+version := "4.0.2-7e7d59"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

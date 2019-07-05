@@ -29,8 +29,13 @@ class IntlMessageFormat protected ()
 @JSImport("intl-messageformat", "IntlMessageFormat")
 @js.native
 object IntlMessageFormat extends js.Object {
+  var __parse: js.UndefOr[
+    js.Function1[
+      /* msg */ java.lang.String, 
+      intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern
+    ]
+  ] = js.native
   var defaultLocale: java.lang.String = js.native
   var formats: intlDashMessageformatLib.Anon_Date = js.native
-  def __parse(msg: java.lang.String): intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern = js.native
 }
 

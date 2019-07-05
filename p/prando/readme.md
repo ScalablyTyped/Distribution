@@ -1,7 +1,7 @@
 
 # Scala.js typings for prando
 
-Typings are for version 5.1.0
+Typings are for version 5.1.1
 
 ## Library description:
 Deterministic pseudo-random number generator for JavaScript and TypeScript
