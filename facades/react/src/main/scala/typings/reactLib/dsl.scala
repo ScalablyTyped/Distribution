@@ -473,7 +473,7 @@ object dsl {
       Object.assign[ClassAttributes[Component[P, ComponentState, _]], P | Null](
         new ClassAttributes[Component[P, ComponentState, _]] {
           key = _key
-          ref = _ref
+          ref = _ref.map(r => r: LegacyRef[Component[P, ComponentState, _]])
         },
         props,
       )
