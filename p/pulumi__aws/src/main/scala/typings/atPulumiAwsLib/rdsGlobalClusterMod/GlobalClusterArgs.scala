@@ -22,6 +22,9 @@ trait GlobalClusterArgs extends js.Object {
     * Engine version of the Aurora global database.
     */
   val engineVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The global cluster identifier.
+    */
   val globalClusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Specifies whether the DB cluster is encrypted. The default is `false`.

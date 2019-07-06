@@ -12,6 +12,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   var args: graphqlDashComposeLib.libObjectTypeComposerMod.ComposeFieldConfigArgumentMap[_] = js.native
   var description: java.lang.String | scala.Unit = js.native
   var displayName: java.lang.String | scala.Unit = js.native
+  var extensions: js.UndefOr[graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions] = js.native
   var kind: ResolverKinds | scala.Unit = js.native
   var name: java.lang.String = js.native
   var parent: (Resolver[TSource, TContext, _, _]) | scala.Unit = js.native

@@ -7131,6 +7131,7 @@
 | [yup](./y/yup) | Dead simple Object schema validation | - |
 | [z-schema](./z/z-schema) | JSON schema validator | JSON, Schema, Validator |
 | [zapier-platform-core](./z/zapier-platform-core) | The core SDK for CLI apps in the Zapier Developer  | - |
+| [zchat-browser](./z/zchat-browser) | - | - |
 | [zeit__next-source-maps](./z/zeit__next-source-maps) | Generate source maps during production build in yo | - |
 | [zeit__next-typescript](./z/zeit__next-typescript) | Use  | - |
 | [zen-observable](./z/zen-observable) | An Implementation of ES Observables | - |

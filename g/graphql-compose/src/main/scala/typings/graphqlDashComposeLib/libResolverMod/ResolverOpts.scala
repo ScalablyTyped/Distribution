@@ -11,6 +11,7 @@ trait ResolverOpts[TSource, TContext, TArgs, TReturn] extends js.Object {
   ] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var displayName: js.UndefOr[java.lang.String] = js.undefined
+  var extensions: js.UndefOr[graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions] = js.undefined
   var kind: js.UndefOr[ResolverKinds] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var parent: js.UndefOr[Resolver[_, TContext, _, _]] = js.undefined
@@ -26,6 +27,7 @@ object ResolverOpts {
     args: graphqlDashComposeLib.libObjectTypeComposerMod.ComposeFieldConfigArgumentMap[TArgs] = null,
     description: java.lang.String = null,
     displayName: java.lang.String = null,
+    extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = null,
     kind: ResolverKinds = null,
     name: java.lang.String = null,
     parent: Resolver[_, TContext, _, _] = null,
@@ -36,6 +38,7 @@ object ResolverOpts {
     if (args != null) __obj.updateDynamic("args")(args)
     if (description != null) __obj.updateDynamic("description")(description)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parent != null) __obj.updateDynamic("parent")(parent)

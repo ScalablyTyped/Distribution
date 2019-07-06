@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pg-minify"
-version := "1.2.0-d08792"
+version := "1.4.1-73d8a4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

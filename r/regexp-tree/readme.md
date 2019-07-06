@@ -1,7 +1,7 @@
 
 # Scala.js typings for regexp-tree
 
-Typings are for version 0.1.10
+Typings are for version 0.1.11
 
 ## Library description:
 Regular Expressions parser in JavaScript

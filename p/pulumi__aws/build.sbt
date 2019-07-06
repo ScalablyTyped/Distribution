@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "0.18.16-94fe0a"
+version := "0.18.18-f878aa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

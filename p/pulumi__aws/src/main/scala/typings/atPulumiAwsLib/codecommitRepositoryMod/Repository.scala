@@ -46,6 +46,10 @@ class Repository protected ()
     * The name for the repository. This needs to be less than 100 characters.
     */
   val repositoryName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

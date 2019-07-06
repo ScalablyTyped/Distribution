@@ -43,11 +43,11 @@ class Resolver protected ()
     */
   val pipelineConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Functions]] = js.native
   /**
-    * The request mapping template for this resolver.
+    * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
     */
   val requestTemplate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The response mapping template for this resolver.
+    * The response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.
     */
   val responseTemplate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

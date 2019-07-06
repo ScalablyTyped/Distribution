@@ -42,6 +42,10 @@ class VirtualNode protected ()
     * The virtual node specification to apply.
     */
   val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

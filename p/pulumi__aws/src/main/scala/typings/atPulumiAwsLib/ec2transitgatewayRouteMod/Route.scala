@@ -19,13 +19,17 @@ class Route protected ()
   def this(name: java.lang.String, args: RouteArgs) = this()
   def this(name: java.lang.String, args: RouteArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * Indicates whether to drop traffic that matches this route (default to `false`).
+    */
+  val blackhole: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
     * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
   val destinationCidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * Identifier of EC2 Transit Gateway Attachment.
+    * Identifier of EC2 Transit Gateway Attachment (required if `blackhole` is set to false).
     */
-  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */

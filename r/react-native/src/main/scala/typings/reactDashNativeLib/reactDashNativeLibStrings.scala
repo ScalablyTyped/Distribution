@@ -257,6 +257,10 @@ object reactDashNativeLibStrings {
        with reactDashNativeLib.reactDashNativeMod.AccessibilityTrait
   
   @js.native
+  sealed trait alert
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait all
     extends reactDashNativeLib.reactDashNativeMod.DataDetectorTypes
   
@@ -428,6 +432,10 @@ object reactDashNativeLibStrings {
   sealed trait `box-only` extends js.Object
   
   @js.native
+  sealed trait busy
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
+  
+  @js.native
   sealed trait butt extends js.Object
   
   @js.native
@@ -481,6 +489,14 @@ object reactDashNativeLibStrings {
   sealed trait characters extends js.Object
   
   @js.native
+  sealed trait checkbox
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
+  sealed trait checked
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
+  
+  @js.native
   sealed trait clamp
     extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ExtrapolateType
   
@@ -494,6 +510,10 @@ object reactDashNativeLibStrings {
   sealed trait clock extends js.Object
   
   @js.native
+  sealed trait collapsed
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
+  
+  @js.native
   sealed trait column extends js.Object
   
   @js.native
@@ -502,6 +522,10 @@ object reactDashNativeLibStrings {
   @js.native
   sealed trait comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL
     extends reactDashNativeLib.reactDashNativeMod.Permission
+  
+  @js.native
+  sealed trait combobox
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
   
   @js.native
   sealed trait compatibility extends js.Object
@@ -574,7 +598,7 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait disabled
-    extends reactDashNativeLib.reactDashNativeMod.AccessibilityState
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
        with reactDashNativeLib.reactDashNativeMod.AccessibilityTrait
   
   @js.native
@@ -636,6 +660,10 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait error extends ResponseType_
+  
+  @js.native
+  sealed trait expanded
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
   
   @js.native
   sealed trait extend
@@ -713,6 +741,10 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait hardwareBackPress extends js.Object
+  
+  @js.native
+  sealed trait hasPopup
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
   
   @js.native
   sealed trait head extends js.Object
@@ -911,6 +943,18 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.AppStateEvent
   
   @js.native
+  sealed trait menu
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
+  sealed trait menubar
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
+  sealed trait menuitem
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait middle extends js.Object
   
   @js.native
@@ -921,6 +965,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait miter extends js.Object
+  
+  @js.native
+  sealed trait mixed extends js.Object
   
   @js.native
   sealed trait month extends js.Object
@@ -1102,14 +1149,26 @@ object reactDashNativeLibStrings {
   sealed trait progress extends js.Object
   
   @js.native
+  sealed trait progressbar
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait `proportional-nums`
     extends reactDashNativeLib.reactDashNativeMod.FontVariant
+  
+  @js.native
+  sealed trait radio
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
   
   @js.native
   sealed trait radiobutton_checked extends js.Object
   
   @js.native
   sealed trait radiobutton_unchecked extends js.Object
+  
+  @js.native
+  sealed trait radiogroup
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
   
   @js.native
   sealed trait readystatechange extends js.Object
@@ -1175,6 +1234,10 @@ object reactDashNativeLibStrings {
   sealed trait scrollableAxes extends js.Object
   
   @js.native
+  sealed trait scrollbar
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait search
     extends reactDashNativeLib.reactDashNativeMod.ReturnKeyType
        with reactDashNativeLib.reactDashNativeMod.AccessibilityRole
@@ -1186,7 +1249,7 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait selected
-    extends reactDashNativeLib.reactDashNativeMod.AccessibilityState
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
        with reactDashNativeLib.reactDashNativeMod.AccessibilityTrait
   
   @js.native
@@ -1226,6 +1289,10 @@ object reactDashNativeLibStrings {
   sealed trait `space-evenly` extends js.Object
   
   @js.native
+  sealed trait spinbutton
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait spinner extends js.Object
   
   @js.native
@@ -1261,6 +1328,18 @@ object reactDashNativeLibStrings {
        with reactDashNativeLib.reactDashNativeMod.AccessibilityTrait
   
   @js.native
+  sealed trait switch
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
+  sealed trait tab
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
+  sealed trait tablist
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait `tabular-nums`
     extends reactDashNativeLib.reactDashNativeMod.FontVariant
   
@@ -1289,6 +1368,14 @@ object reactDashNativeLibStrings {
   sealed trait timeout extends js.Object
   
   @js.native
+  sealed trait timer
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
+  sealed trait toolbar
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+  
+  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -1300,6 +1387,10 @@ object reactDashNativeLibStrings {
   @js.native
   sealed trait twitter
     extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
+  
+  @js.native
+  sealed trait unchecked
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityStates
   
   @js.native
   sealed trait underline extends js.Object
@@ -1527,6 +1618,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def adjustable: adjustable = "adjustable".asInstanceOf[adjustable]
   @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def allowsDirectInteraction: allowsDirectInteraction = "allowsDirectInteraction".asInstanceOf[allowsDirectInteraction]
@@ -1621,6 +1714,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   @scala.inline
+  def busy: busy = "busy".asInstanceOf[busy]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
@@ -1651,6 +1746,10 @@ object reactDashNativeLibStrings {
   @scala.inline
   def characters: characters = "characters".asInstanceOf[characters]
   @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
+  def checked: checked = "checked".asInstanceOf[checked]
+  @scala.inline
   def clamp: clamp = "clamp".asInstanceOf[clamp]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
@@ -1659,11 +1758,15 @@ object reactDashNativeLibStrings {
   @scala.inline
   def clock: clock = "clock".asInstanceOf[clock]
   @scala.inline
+  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   @scala.inline
   def comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL: comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL]
+  @scala.inline
+  def combobox: combobox = "combobox".asInstanceOf[combobox]
   @scala.inline
   def compatibility: compatibility = "compatibility".asInstanceOf[compatibility]
   @scala.inline
@@ -1741,6 +1844,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def expanded: expanded = "expanded".asInstanceOf[expanded]
+  @scala.inline
   def extend: extend = "extend".asInstanceOf[extend]
   @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
@@ -1786,6 +1891,8 @@ object reactDashNativeLibStrings {
   def handled: handled = "handled".asInstanceOf[handled]
   @scala.inline
   def hardwareBackPress: hardwareBackPress = "hardwareBackPress".asInstanceOf[hardwareBackPress]
+  @scala.inline
+  def hasPopup: hasPopup = "hasPopup".asInstanceOf[hasPopup]
   @scala.inline
   def head: head = "head".asInstanceOf[head]
   @scala.inline
@@ -1899,6 +2006,12 @@ object reactDashNativeLibStrings {
   @scala.inline
   def memoryWarning: memoryWarning = "memoryWarning".asInstanceOf[memoryWarning]
   @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
+  def menubar: menubar = "menubar".asInstanceOf[menubar]
+  @scala.inline
+  def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
   def middleName: middleName = "middleName".asInstanceOf[middleName]
@@ -1906,6 +2019,8 @@ object reactDashNativeLibStrings {
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
@@ -2013,11 +2128,17 @@ object reactDashNativeLibStrings {
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
+  def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
+  @scala.inline
   def `proportional-nums`: `proportional-nums` = "proportional-nums".asInstanceOf[`proportional-nums`]
+  @scala.inline
+  def radio: radio = "radio".asInstanceOf[radio]
   @scala.inline
   def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
   @scala.inline
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
+  @scala.inline
+  def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
   @scala.inline
   def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   @scala.inline
@@ -2057,6 +2178,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def scrollableAxes: scrollableAxes = "scrollableAxes".asInstanceOf[scrollableAxes]
   @scala.inline
+  def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
+  @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
   def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
@@ -2085,6 +2208,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
   @scala.inline
+  def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
+  @scala.inline
   def spinner: spinner = "spinner".asInstanceOf[spinner]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
@@ -2105,6 +2230,12 @@ object reactDashNativeLibStrings {
   @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
+  def switch: switch = "switch".asInstanceOf[switch]
+  @scala.inline
+  def tab: tab = "tab".asInstanceOf[tab]
+  @scala.inline
+  def tablist: tablist = "tablist".asInstanceOf[tablist]
+  @scala.inline
   def `tabular-nums`: `tabular-nums` = "tabular-nums".asInstanceOf[`tabular-nums`]
   @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
@@ -2121,6 +2252,10 @@ object reactDashNativeLibStrings {
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
+  def timer: timer = "timer".asInstanceOf[timer]
+  @scala.inline
+  def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
   def `top-rated`: `top-rated` = "top-rated".asInstanceOf[`top-rated`]
@@ -2128,6 +2263,8 @@ object reactDashNativeLibStrings {
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
+  @scala.inline
+  def unchecked: unchecked = "unchecked".asInstanceOf[unchecked]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline

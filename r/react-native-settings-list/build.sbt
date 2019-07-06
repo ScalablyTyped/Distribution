@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-settings-list"
-version := "1.8-dt-20180806Z-ecc627"
+version := "1.8-dt-20180806Z-9e9fb7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190701Z-836108",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190705Z-7fbf06",
   "org.scalablytyped" %%% "std" % "3.5-d4a303")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

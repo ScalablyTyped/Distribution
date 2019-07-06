@@ -38,6 +38,9 @@ class GlobalCluster protected ()
     * Engine version of the Aurora global database.
     */
   val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The global cluster identifier.
+    */
   val globalClusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed

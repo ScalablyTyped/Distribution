@@ -73,7 +73,7 @@ trait RecordState extends js.Object {
     * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
     */
   val `type`: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.route53RecordTypeMod.RecordType]
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.route53RecordTypeMod.RecordType]
   ] = js.undefined
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
@@ -106,7 +106,7 @@ object RecordState {
     records: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     setIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ttl: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
-    `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.route53RecordTypeMod.RecordType] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.route53RecordTypeMod.RecordType] = null,
     weightedRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_WeightInput]]] = null,
     zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RecordState = {

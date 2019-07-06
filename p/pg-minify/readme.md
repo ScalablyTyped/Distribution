@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-minify
 
-Typings are for version 1.2.0
+Typings are for version 1.4.1
 
 ## Library description:
 Minifies PostgreSQL scripts.
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 ////////////////////////////////////////
-// For pg-minify v1.2.0 or later.
+// For pg-minify v1.3.0 or later.
 
 ```
 

@@ -18,6 +18,10 @@ trait VirtualNodeArgs extends js.Object {
     * The virtual node specification to apply.
     */
   val spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BackendsListener]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object VirtualNodeArgs {
@@ -25,10 +29,12 @@ object VirtualNodeArgs {
   def apply(
     meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BackendsListener],
-    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): VirtualNodeArgs = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeArgs]
   }
 }

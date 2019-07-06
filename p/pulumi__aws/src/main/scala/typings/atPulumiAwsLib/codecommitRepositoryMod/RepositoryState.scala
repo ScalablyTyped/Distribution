@@ -34,6 +34,10 @@ trait RepositoryState extends js.Object {
     * The name for the repository. This needs to be less than 100 characters.
     */
   val repositoryName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object RepositoryState {
@@ -45,7 +49,8 @@ object RepositoryState {
     defaultBranch: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     repositoryId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    repositoryName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    repositoryName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): RepositoryState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object RepositoryState {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (repositoryId != null) __obj.updateDynamic("repositoryId")(repositoryId.asInstanceOf[js.Any])
     if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryState]
   }
 }

@@ -43,6 +43,10 @@ class Route protected ()
     */
   val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_HttpRoute] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * The name of the virtual router in which to create the route.
     */
   val virtualRouterName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

@@ -31,6 +31,10 @@ trait RouteState extends js.Object {
     */
   val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteTcpRoute]] = js.undefined
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * The name of the virtual router in which to create the route.
     */
   val virtualRouterName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -45,6 +49,7 @@ object RouteState {
     meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteTcpRoute] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     virtualRouterName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RouteState = {
     val __obj = js.Dynamic.literal()
@@ -54,6 +59,7 @@ object RouteState {
     if (meshName != null) __obj.updateDynamic("meshName")(meshName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (virtualRouterName != null) __obj.updateDynamic("virtualRouterName")(virtualRouterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteState]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-cwd
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 Check if a path is CWD

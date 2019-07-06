@@ -27,11 +27,11 @@ trait ResolverArgs extends js.Object {
     */
   val pipelineConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FunctionsArray]] = js.undefined
   /**
-    * The request mapping template for this resolver.
+    * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
     */
   val requestTemplate: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
-    * The response mapping template for this resolver.
+    * The response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.
     */
   val responseTemplate: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-compose"
-version := "6.3.2-d84530"
+version := "6.3.5-fb86a8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

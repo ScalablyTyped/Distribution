@@ -70,7 +70,7 @@ class Record protected ()
   /**
     * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
     */
-  val `type`: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.route53RecordTypeMod.RecordType] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */

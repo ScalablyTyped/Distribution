@@ -24,7 +24,12 @@ trait AccessibilityProps
   /**
     * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
     */
-  var accessibilityStates: js.UndefOr[js.Array[AccessibilityState]] = js.undefined
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
+  /**
+    * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
+    * @deprecated: accessibilityState available in 0.60+
+    */
+  var accessibilityStates: js.UndefOr[js.Array[AccessibilityStates]] = js.undefined
   /**
     * When true, indicates that the view is an accessibility element.
     * By default, all the touchable elements are accessible.
@@ -42,7 +47,8 @@ object AccessibilityProps {
     accessibilityLabel: java.lang.String = null,
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: AccessibilityRole = null,
-    accessibilityStates: js.Array[AccessibilityState] = null,
+    accessibilityState: AccessibilityState = null,
+    accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
@@ -57,6 +63,7 @@ object AccessibilityProps {
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
     if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
     if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState)
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)

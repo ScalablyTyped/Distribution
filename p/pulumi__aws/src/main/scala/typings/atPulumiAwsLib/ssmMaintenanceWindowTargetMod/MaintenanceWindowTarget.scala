@@ -35,7 +35,7 @@ class MaintenanceWindowTarget protected ()
     */
   val resourceType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The targets (either instances or tags). Instances are specified using Key=instanceids,Values=instanceid1,instanceid2. Tags are specified using Key=tag name,Values=tag value.
+    * The targets (either instances or tags). Instances are specified using Key=InstanceIds,Values=InstanceId1,InstanceId2. Tags are specified using Key=tag name,Values=tag value.
     */
   val targets: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
   /**
