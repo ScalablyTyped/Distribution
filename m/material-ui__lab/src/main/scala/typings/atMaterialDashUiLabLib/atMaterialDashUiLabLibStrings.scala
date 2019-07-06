@@ -30,9 +30,6 @@ object atMaterialDashUiLabLibStrings {
   sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
-  
-  @js.native
   sealed trait both extends js.Object
   
   @js.native
@@ -82,10 +79,6 @@ object atMaterialDashUiLabLibStrings {
   @js.native
   sealed trait directionUp
     extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
-  
-  @js.native
-  sealed trait disabled
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait down extends js.Object
@@ -156,26 +149,6 @@ object atMaterialDashUiLabLibStrings {
   sealed trait location extends js.Object
   
   @js.native
-  sealed trait mark
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait markActive
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait markLabel
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait markLabelActive
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait marked
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait medium extends js.Object
   
   @js.native
@@ -220,10 +193,6 @@ object atMaterialDashUiLabLibStrings {
   sealed trait popup extends js.Object
   
   @js.native
-  sealed trait rail
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait raised extends js.Object
   
   @js.native
@@ -243,15 +212,10 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait root
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-       with atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
+    extends atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
        with atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
        with atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
        with atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
-  
-  @js.native
-  sealed trait rtl
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait selected
@@ -274,10 +238,6 @@ object atMaterialDashUiLabLibStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait thumb
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait time extends js.Object
   
   @js.native
@@ -290,22 +250,13 @@ object atMaterialDashUiLabLibStrings {
   sealed trait `top-start` extends js.Object
   
   @js.native
-  sealed trait track
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
   sealed trait tree extends js.Object
   
   @js.native
   sealed trait up extends js.Object
   
   @js.native
-  sealed trait valueLabel
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
-  
-  @js.native
-  sealed trait vertical
-    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+  sealed trait vertical extends js.Object
   
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
@@ -321,8 +272,6 @@ object atMaterialDashUiLabLibStrings {
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
@@ -353,8 +302,6 @@ object atMaterialDashUiLabLibStrings {
   def directionRight: directionRight = "directionRight".asInstanceOf[directionRight]
   @scala.inline
   def directionUp: directionUp = "directionUp".asInstanceOf[directionUp]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
@@ -398,16 +345,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
-  def mark: mark = "mark".asInstanceOf[mark]
-  @scala.inline
-  def markActive: markActive = "markActive".asInstanceOf[markActive]
-  @scala.inline
-  def markLabel: markLabel = "markLabel".asInstanceOf[markLabel]
-  @scala.inline
-  def markLabelActive: markLabelActive = "markLabelActive".asInstanceOf[markLabelActive]
-  @scala.inline
-  def marked: marked = "marked".asInstanceOf[marked]
-  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
@@ -436,8 +373,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
-  def rail: rail = "rail".asInstanceOf[rail]
-  @scala.inline
   def raised: raised = "raised".asInstanceOf[raised]
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
@@ -452,8 +387,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
@@ -466,8 +399,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
-  def thumb: thumb = "thumb".asInstanceOf[thumb]
-  @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
@@ -476,13 +407,9 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
   @scala.inline
-  def track: track = "track".asInstanceOf[track]
-  @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def valueLabel: valueLabel = "valueLabel".asInstanceOf[valueLabel]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

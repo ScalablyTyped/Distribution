@@ -50,13 +50,14 @@ trait Options extends js.Object {
   ] = js.undefined
   var sourceCode: js.UndefOr[scala.Boolean] = js.undefined
   var strictDefaults: js.UndefOr[scala.Boolean | ajvLib.ajvLibStrings.log] = js.undefined
+  var strictKeywords: js.UndefOr[scala.Boolean | ajvLib.ajvLibStrings.log] = js.undefined
   var transpile: js.UndefOr[java.lang.String | (js.Function1[/* code */ java.lang.String, java.lang.String])] = js.undefined
   var unicode: js.UndefOr[scala.Boolean] = js.undefined
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   var unknownFormats: js.UndefOr[
     ajvLib.ajvLibNumbers.`true` | js.Array[java.lang.String] | ajvLib.ajvLibStrings.ignore
   ] = js.undefined
-  var useDefaults: js.UndefOr[scala.Boolean | ajvLib.ajvLibStrings.shared] = js.undefined
+  var useDefaults: js.UndefOr[scala.Boolean | ajvLib.ajvLibStrings.empty | ajvLib.ajvLibStrings.shared] = js.undefined
   var validateSchema: js.UndefOr[scala.Boolean | ajvLib.ajvLibStrings.log] = js.undefined
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -93,11 +94,12 @@ object Options {
     serialize: (js.Function1[/* schema */ js.Object | scala.Boolean, _]) | ajvLib.ajvLibNumbers.`false` = null,
     sourceCode: js.UndefOr[scala.Boolean] = js.undefined,
     strictDefaults: scala.Boolean | ajvLib.ajvLibStrings.log = null,
+    strictKeywords: scala.Boolean | ajvLib.ajvLibStrings.log = null,
     transpile: java.lang.String | (js.Function1[/* code */ java.lang.String, java.lang.String]) = null,
     unicode: js.UndefOr[scala.Boolean] = js.undefined,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined,
     unknownFormats: ajvLib.ajvLibNumbers.`true` | js.Array[java.lang.String] | ajvLib.ajvLibStrings.ignore = null,
-    useDefaults: scala.Boolean | ajvLib.ajvLibStrings.shared = null,
+    useDefaults: scala.Boolean | ajvLib.ajvLibStrings.empty | ajvLib.ajvLibStrings.shared = null,
     validateSchema: scala.Boolean | ajvLib.ajvLibStrings.log = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
@@ -131,6 +133,7 @@ object Options {
     if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
     if (!js.isUndefined(sourceCode)) __obj.updateDynamic("sourceCode")(sourceCode)
     if (strictDefaults != null) __obj.updateDynamic("strictDefaults")(strictDefaults.asInstanceOf[js.Any])
+    if (strictKeywords != null) __obj.updateDynamic("strictKeywords")(strictKeywords.asInstanceOf[js.Any])
     if (transpile != null) __obj.updateDynamic("transpile")(transpile.asInstanceOf[js.Any])
     if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
     if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems)

@@ -19,6 +19,9 @@ object ajvLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait empty extends js.Object
+  
+  @js.native
   sealed trait fail extends js.Object
   
   @js.native
@@ -50,6 +53,8 @@ object ajvLibStrings {
   def array: array = "array".asInstanceOf[array]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def empty: empty = "empty".asInstanceOf[empty]
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline

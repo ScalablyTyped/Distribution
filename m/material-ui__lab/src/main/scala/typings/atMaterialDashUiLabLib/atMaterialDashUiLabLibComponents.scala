@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabLibComponents extends atMaterialDashUiLabLibProps {
   @scala.inline
-  def Slider: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps] = js.constructorOf[atMaterialDashUiLabLib.sliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps]]
-  @scala.inline
   def SpeedDial: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps] = js.constructorOf[atMaterialDashUiLabLib.speedDialMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps]]
   @scala.inline
   def SpeedDialAction: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps] = js.constructorOf[atMaterialDashUiLabLib.speedDialActionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps]]
