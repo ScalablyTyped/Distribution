@@ -1,0 +1,13 @@
+{
+  "typings": [
+    "react-router-dom",
+    "react-slinky-facade"
+  ],
+  "dependencies": [
+    {
+      "org": "me.shadaj",
+      "artifact": "slinky-web",
+      "version": "0.6.2"
+    }
+  ]
+}
