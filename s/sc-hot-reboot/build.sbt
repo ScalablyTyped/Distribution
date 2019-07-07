@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sc-hot-reboot"
-version := "1.0-dt-20190224Z-fb6c73"
+version := "1.0-dt-20190224Z-837508"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chokidar" % "3.0.1-951f09",
+  "org.scalablytyped" %%% "chokidar" % "3.0.2-951f09",
   "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-db4a3b",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-0260d9",
   "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-97a6cc",

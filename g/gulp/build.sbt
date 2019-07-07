@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp"
-version := "4.0-dt-20190405Z-d0e658"
+version := "4.0-dt-20190405Z-10ad88"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chokidar" % "3.0.1-951f09",
+  "org.scalablytyped" %%% "chokidar" % "3.0.2-951f09",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-de5e99",
   "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-7f0d42",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e56e4c",

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hibp
 
-Typings are for version 7.5.1
+Typings are for version 7.5.2
 
 ## Library description:
 A Promise-based API for querying the 'Have I been pwned?' service.
