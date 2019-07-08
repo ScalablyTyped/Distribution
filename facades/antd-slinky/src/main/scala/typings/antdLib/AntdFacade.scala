@@ -4,7 +4,7 @@ import slinky.core.TagMod
 import slinky.core.facade.ReactElement
 import typings.antdLib.esFormFormMod.default.{create => createForm}
 import typings.antdLib.esFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
-import typings.antdLib.{antdLibProps, esConfigDashProviderMod, antdLibComponents => Antd}
+import typings.antdLib.{antdLibComponents => Antd}
 import typings.reactLib.ScalableSlinky._
 import typings.reactLib.reactMod.ComponentType
 
@@ -90,7 +90,6 @@ object AntdFacade extends antdLibProps {
   @inline def Operation:          ExternalComponentP[OperationProps]                                                   = importSTComponent(Antd.Operation)
   @inline def OptGroup:           ExternalComponentP[OptGroupProps]                                                    = importSTComponent(Antd.OptGroup)
   @inline def Option:             ExternalComponentP[OptionProps]                                                      = importSTComponent(Antd.Option)
-  @inline def OriginResult:       ExternalComponentP[OriginResultProps]                                                = importSTComponent(Antd.OriginResult)
   @inline def PageDashHeader:     ExternalComponentP[PageDashHeaderProps]                                              = importSTComponent(Antd.PageDashHeader)
   @inline def PageHeader:         ExternalComponentP[PageHeaderProps]                                                  = importSTComponent(Antd.PageHeader)
   @inline def Pagination:         ExternalComponentP[PaginationProps]                                                  = importSTComponent(Antd.Pagination)
@@ -128,9 +127,9 @@ object AntdFacade extends antdLibProps {
   @inline def Tooltip:            ExternalComponentP[TooltipProps]                                                     = importSTComponent(Antd.Tooltip)
   @inline def Transfer:           ExternalComponentP[TransferProps]                                                    = importSTComponent(Antd.Transfer)
   @inline def Tree:               ExternalComponentP[TreeProps]                                                        = importSTComponent(Antd.Tree)
-  @inline def TreeDashSelect[T]:  ExternalComponentP[TreeDashSelectProps[T]]                                           = importSTComponent(Antd.TreeDashSelect[T])
+  @inline def TreeDashSelect:     ExternalComponentP[TreeDashSelectProps]                                              = importSTComponent(Antd.TreeDashSelect)
   @inline def TreeNode:           ExternalComponentP[TreeNodeProps]                                                    = importSTComponent(Antd.TreeNode)
-  @inline def TreeSelect[T]:      ExternalComponentP[TreeSelectProps[T]]                                               = importSTComponent(Antd.TreeSelect[T])
+  @inline def TreeSelect:         ExternalComponentP[TreeSelectProps]                                                  = importSTComponent(Antd.TreeSelect)
   @inline def Typography:         ExternalComponentP[TypographyProps]                                                  = importSTComponent(Antd.Typography)
   @inline def Upload:             ExternalComponentP[UploadProps]                                                      = importSTComponent(Antd.Upload)
 
