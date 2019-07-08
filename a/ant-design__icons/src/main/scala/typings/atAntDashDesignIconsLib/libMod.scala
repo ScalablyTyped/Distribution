@@ -160,6 +160,7 @@ object libMod extends js.Object {
   val CodepenSquareFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CoffeeOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val ColumHeightOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val ColumnHeightOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val ColumnWidthOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CompassFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CompassOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native

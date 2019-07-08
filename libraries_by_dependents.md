@@ -211,7 +211,6 @@
 | 1349 | [cli-color](./c/cli-color) | Colors, formatting and other tools for the console
 | 1347 | [webpack-dev-middleware](./w/webpack-dev-middleware) | A development middleware for webpack
 | 1340 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
-| 1336 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 1327 | [lodash_dot_get](./l/lodash_dot_get) | The lodash method _.get exported as a module.
 | 1325 | [strip-ansi](./s/strip-ansi) | Strip ANSI escape codes from a string
 | 1321 | [warning](./w/warning) | A mirror of Facebook's Warning
@@ -3780,6 +3779,7 @@
 | 14 | [closure-compiler](./c/closure-compiler) | Bindings to Google's Closure Compiler
 | 14 | [coinbase](./c/coinbase) | The Coinbase API for Node.js
 | 14 | [decompress-response](./d/decompress-response) | Decompress a HTTP response if needed
+| 14 | [dts-dom](./d/dts-dom) | DOM for TypeScript Declaration Files
 | 14 | [egjs__component](./e/egjs__component) | A base class utility that manages events and optio
 | 14 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
 | 14 | [falcor-router](./f/falcor-router) | A router DataSource constructor for falcor that al

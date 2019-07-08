@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "microsoft-live-connect"
-version := "v5.0-dt-20190322Z-d4fca1"
+version := "v5.0-dt-20190322Z-b23b10"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "winrt" % "0.0-unknown-dt-20190322Z-71d9e7")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.5-983486",
+  "org.scalablytyped" %%% "winrt" % "0.0-unknown-dt-20190322Z-c1c2ab")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

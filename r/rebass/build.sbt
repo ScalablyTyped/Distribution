@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "rebass"
-version := "3.0-dt-20190514Z-a6e243"
+version := "3.0-dt-20190514Z-80ae4b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190705Z-7fbf06",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190604Z-9be1d6",
-  "org.scalablytyped" %%% "styled-system" % "4.2-dt-20190701Z-2ec8eb")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20190705Z-39a76d",
+  "org.scalablytyped" %%% "std" % "3.5-983486",
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190604Z-0beb31",
+  "org.scalablytyped" %%% "styled-system" % "4.2-dt-20190701Z-a7f92c")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

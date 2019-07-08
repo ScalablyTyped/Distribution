@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "ionic__react"
-version := "0.0.5-97579e"
+version := "0.0.5-ed52d1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-9e9935",
-  "org.scalablytyped" %%% "ionic__core" % "4.6.0-dac93c",
-  "org.scalablytyped" %%% "ionicons" % "4.5.10-2-23a2a4",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
-  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-99459e",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-d70631",
+  "org.scalablytyped" %%% "ionic__core" % "4.6.0-b52fab",
+  "org.scalablytyped" %%% "ionicons" % "4.5.10-2-7ec91e",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
+  "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-a4a098",
+  "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -97,18 +97,18 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ChildrenArray) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclFunction($) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing tabris [id => tabris, phase => scala.js] 
-[warn ] ImportTree.scala:378 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(ElementClass) / TsMemberIndex())] 
+[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclNamespace(JSX) / TsDeclInterface(ElementClass) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(MethodKeysOf) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: Target['selection'] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(TabFolderSelectEvent) / TsMemberProperty(selection) / TsTypeUnion() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: T[K] extends tabris.tabris.Listeners<any>? K : never}[keyof T] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(ListenersKeysOf) / TsTypeLookup())] 
-[warn ] ImportTree.scala:378 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheetItem) / TsMemberIndex())] 
+[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ActionSheetItem) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: Target['selection'] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(TabFolderScrollEvent) / TsMemberProperty(selection) / TsTypeUnion() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: T['jsxAttributes'] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(Attributes) / TsTypeLookup())] 
-[warn ] ImportTree.scala:378 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WidgetCollection) / TsMemberIndex())] 
-[warn ] ImportTree.scala:378 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Popup) / TsMemberIndex())] 
+[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(WidgetCollection) / TsMemberIndex())] 
+[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Popup) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: Target[Property] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(ChangeListeners) / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ P in keyof T ]: tabris.tabris.IfEquals<{[ Q in P ]: T[P]}, {  readonly , [ Q in P ]: T[P]}, never, P>}[keyof T] [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclTypeAlias(ReadOnlyKeysOf) / TsTypeLookup())] 
-[warn ] ImportTree.scala:378 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Widget) / TsMemberIndex())] 
+[warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(JSX), TsIdentSimple(jsxFactory)) [id => tabris, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclClass(Widget) / TsMemberIndex())] 
 [info ] InferMemberOverrides.scala:86 added override methods List(Name(addEventListener), Name(addEventListener)) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(XMLHttpRequestUpload)] 
 [info ] InferMemberOverrides.scala:86 added override methods List(Name(addEventListener), Name(addEventListener)) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(XMLHttpRequest)] 
 [info ] CompleteClass.scala:64 Completed implementations Vector(wasClean, code, reason, initCloseEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(CloseEventCls)] 
@@ -117,70 +117,928 @@
 [info ] CompleteClass.scala:64 Completed implementations Vector(data, source, ports, origin, initMessageEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(MessageEventCls)] 
 [info ] CompleteClass.scala:64 Completed implementations Vector(total, loaded, lengthComputable, initProgressEvent, CAPTURING_PHASE, currentTarget, isTrusted, BUBBLING_PHASE, timeStamp, defaultPrevented, eventPhase, bubbles, target, `type`, AT_TARGET, cancelable, initEvent, stopImmediatePropagation, stopPropagation, preventDefault) [id => tabris, phase => scala.js, this => Name(tabrisLib) / Name(ProgressEventCls)] 
 [debug] PhaseRunner.scala:84 Success [id => tabris, phase => scala.js] 
-[error] Action.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Action, tabrisLib.Omit[Action, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Action.scala:23 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Action: (JSXAttributes[ [id => tabris, phase => build] 
-[error] ActionSheet.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ActionSheet, tabrisLib.Omit[ActionSheet, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ActionSheet.scala:27 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_ActionSheet: (JSXAttributes[ [id => tabris, phase => build] 
-[error] ActivityIndicator.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ [id => tabris, phase => build] 
-[error] ActivityIndicator.scala:19 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_ActivityIndicator: (JSXAttributes[ [id => tabris, phase => build] 
-[error] AlertDialog.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[AlertDialog, tabrisLib.Omit[AlertDialog, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] AlertDialog.scala:22 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_AlertDialog: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Button.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Button, tabrisLib.Omit[Button, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Button.scala:28 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Button: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Canvas.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Canvas, tabrisLib.Omit[Canvas, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] CheckBox.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[CheckBox, tabrisLib.Omit[CheckBox, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] CheckBox.scala:28 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_CheckBox: (JSXAttributes[ [id => tabris, phase => build] 
-[error] CollectionView.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: (Properties[ [id => tabris, phase => build] 
-[error] CollectionView.scala:59 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_CollectionView: (JSXAttributes[ [id => tabris, phase => build] 
-[error] CollectionView.scala:201 cyclic aliasing or subtyping involving type Omit,     properties: (Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]) with (stdLib.Partial[ [id => tabris, phase => build] 
-[error] Composite.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ [id => tabris, phase => build] 
-[error] Composite.scala:22 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Composite: (JSXAttributes[ [id => tabris, phase => build] 
-[error] ContentView.scala:11 cyclic aliasing or subtyping involving type Omit,   protected def this(properties: Properties[ [id => tabris, phase => build] 
-[error] DateDialog.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[DateDialog, tabrisLib.Omit[DateDialog, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ImageView.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ImageView, tabrisLib.Omit[ImageView, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ImageView.scala:22 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_ImageView: (JSXAttributes[ [id => tabris, phase => build] 
-[error] InactivityTimer.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[InactivityTimer, tabrisLib.Omit[InactivityTimer, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] NativeObject.scala:27 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes: JSXAttributes[ [id => tabris, phase => build] 
-[error] NativeObject.scala:269 cyclic aliasing or subtyping involving type Omit,   def set_set[T /* <: NativeObject */](properties: Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]): this.type = js.native [id => tabris, phase => build] 
-[error] NavigationBar.scala:11 cyclic aliasing or subtyping involving type Omit,   protected def this(properties: Properties[NavigationBar, tabrisLib.Omit[NavigationBar, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] NavigationBar.scala:32 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_NavigationBar: (JSXAttributes[ [id => tabris, phase => build] 
-[error] NavigationView.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ [id => tabris, phase => build] 
-[error] Page.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Page, tabrisLib.Omit[Page, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Picker.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: (Properties[Picker, tabrisLib.Omit[Picker, tabrisLib.tabrisLibStrings.set]]) with (stdLib.Partial[stdLib.Pick[Picker, tabrisLib.tabrisLibStrings.itemText]])) = this() [id => tabris, phase => build] 
-[error] Picker.scala:33 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Picker: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Picker.scala:107 cyclic aliasing or subtyping involving type Omit,     properties: (Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]) with (stdLib.Partial[stdLib.Pick[this.type, tabrisLib.tabrisLibStrings.itemText]]) [id => tabris, phase => build] 
-[error] Popover.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Popover, tabrisLib.Omit[Popover, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Popover.scala:31 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Popover: (JSXAttributes[ [id => tabris, phase => build] 
-[error] ProgressBar.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ProgressBar, tabrisLib.Omit[ProgressBar, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ProgressBar.scala:16 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_ProgressBar: (JSXAttributes[ [id => tabris, phase => build] 
-[error] RadioButton.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[RadioButton, tabrisLib.Omit[RadioButton, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] RadioButton.scala:28 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_RadioButton: (JSXAttributes[ [id => tabris, phase => build] 
-[error] RefreshComposite.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[RefreshComposite, tabrisLib.Omit[RefreshComposite, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ScrollView.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ScrollView, tabrisLib.Omit[ScrollView, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] SearchAction.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[SearchAction, tabrisLib.Omit[SearchAction, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Slider.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Slider, tabrisLib.Omit[Slider, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Slider.scala:16 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Slider: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Stack.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Stack, tabrisLib.Omit[Stack, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] StatusBar.scala:11 cyclic aliasing or subtyping involving type Omit,   protected def this(properties: Properties[StatusBar, tabrisLib.Omit[StatusBar, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] StatusBar.scala:33 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_StatusBar: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Switch.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Switch, tabrisLib.Omit[Switch, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Switch.scala:20 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Switch: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Tab.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Tab, tabrisLib.Omit[Tab, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] TabFolder.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[TabFolder[Tab], tabrisLib.Omit[TabFolder[Tab], tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] TextInput.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[TextInput, tabrisLib.Omit[TextInput, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] TextInput.scala:67 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_TextInput: (JSXAttributes[ [id => tabris, phase => build] 
-[error] TextView.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[TextView, tabrisLib.Omit[TextView, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] TextView.scala:24 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_TextView: (JSXAttributes[ [id => tabris, phase => build] 
-[error] TimeDialog.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[TimeDialog, tabrisLib.Omit[TimeDialog, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ToggleButton.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[ToggleButton, tabrisLib.Omit[ToggleButton, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] ToggleButton.scala:32 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_ToggleButton: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Video.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[Video, tabrisLib.Omit[Video, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] Video.scala:28 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_Video: (JSXAttributes[ [id => tabris, phase => build] 
-[error] WebView.scala:11 cyclic aliasing or subtyping involving type Omit,   def this(properties: Properties[WebView, tabrisLib.Omit[WebView, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] WebView.scala:35 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes_WebView: (JSXAttributes[ [id => tabris, phase => build] 
-[error] Widget.scala:11 cyclic aliasing or subtyping involving type Omit,   protected def this(properties: Properties[Widget, tabrisLib.Omit[Widget, tabrisLib.tabrisLibStrings.set]]) = this() [id => tabris, phase => build] 
-[error] WidgetCollection.scala:24 cyclic aliasing or subtyping involving type Omit,   val jsxAttributes: (JSXAttributes[ [id => tabris, phase => build] 
-[error] WidgetCollection.scala:168 cyclic aliasing or subtyping involving type Omit,   def set_set(properties: Properties[T, tabrisLib.Omit[T, tabrisLib.tabrisLibStrings.set]]): this.type = js.native [id => tabris, phase => build] 
-[error] package.scala:56 cyclic aliasing or subtyping involving type Omit,   type JSXAttributes[T /* <: tabrisLib.Anon_JsxAttributes */, U] = (Properties[U, tabrisLib.Omit[U, tabrisLib.tabrisLibStrings.set]]) with ListenersMap[U] with JSXShorthands[U] [id => tabris, phase => build] 
+[warn ] Phase3Compile.scala:204 Building tabris... [id => tabris, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E222] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:184:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L184: }
+[E]              ^
+[E] [E221] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:183:3
+[E]        expected class or object definition
+[E]        L183:   type _PrinterProperties = _NativeObjectProperties
+[E]                ^
+[E] [E220] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:181:3
+[E]        expected class or object definition
+[E]        L181:   type _PopupProperties = _NativeObjectProperties
+[E]                ^
+[E] [E219] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:179:3
+[E]        expected class or object definition
+[E]        L179:   type _FileSystemProperties = _NativeObjectProperties
+[E]                ^
+[E] [E218] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:177:3
+[E]        expected class or object definition
+[E]        L177:   type _CanvasProperties = _CompositeProperties
+[E]                ^
+[E] [E217] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:172:3
+[E]        expected class or object definition
+[E]        L172:   type WidgetProperties = Partial[
+[E]                ^
+[E] [E216] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:168:3
+[E]        expected class or object definition
+[E]        L168:   type WebViewProperties = Partial[
+[E]                ^
+[E] [E215] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:164:3
+[E]        expected class or object definition
+[E]        L164:   type VideoProperties = Partial[
+[E]                ^
+[E] [E214] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:160:3
+[E]        expected class or object definition
+[E]        L160:   type UIProperties = Partial[
+[E]                ^
+[E] [E213] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:159:3
+[E]        expected class or object definition
+[E]        L159:   type UIEvents = CompositeEvents
+[E]                ^
+[E] [E212] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:158:3
+[E]        expected class or object definition
+[E]        L158:   type TypeScriptPropertiesKey = tabrisLib.tabrisLibStrings.tsProperties
+[E]                ^
+[E] [E211] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:154:3
+[E]        expected class or object definition
+[E]        L154:   type ToggleButtonProperties = Partial[
+[E]                ^
+[E] [E210] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:153:3
+[E]        expected class or object definition
+[E]        L153:   type TimeDialogProperties = Partial[_TimeDialogProperties, tabrisLib.tabrisLibStrings.date]
+[E]                ^
+[E] [E209] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:149:3
+[E]        expected class or object definition
+[E]        L149:   type TextViewProperties = Partial[
+[E]                ^
+[E] [E208] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:145:3
+[E]        expected class or object definition
+[E]        L145:   type TextInputProperties = Partial[
+[E]                ^
+[E] [E207] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:141:3
+[E]        expected class or object definition
+[E]        L141:   type TabProperties = Partial[
+[E]                ^
+[E] [E206] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:137:3
+[E]        expected class or object definition
+[E]        L137:   type TabFolderProperties = Partial[
+[E]                ^
+[E] [E205] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:133:3
+[E]        expected class or object definition
+[E]        L133:   type SwitchProperties = Partial[
+[E]                ^
+[E] [E204] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:129:3
+[E]        expected class or object definition
+[E]        L129:   type StatusBarProperties = Partial[
+[E]                ^
+[E] [E203] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:125:3
+[E]        expected class or object definition
+[E]        L125:   type SliderProperties = Partial[
+[E]                ^
+[E] [E202] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:124:3
+[E]        expected class or object definition
+[E]        L124:   type SelectorFunction = js.Function1[/* widget */ Widget, scala.Boolean]
+[E]                ^
+[E] [E201] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:123:3
+[E]        expected class or object definition
+[E]        L123:   type Selector = java.lang.String | SelectorFunction
+[E]                ^
+[E] [E200] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:116:3
+[E]        expected class or object definition
+[E]        L116:   type SearchActionProperties = Partial[
+[E]                ^
+[E] [E199] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:115:3
+[E]        expected class or object definition
+[E]        L115:   type ScrollViewProperties = Partial[_ScrollViewProperties, tabrisLib.tabrisLibStrings.direction]
+[E]                ^
+[E] [E198] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:111:3
+[E]        expected class or object definition
+[E]        L111:   type RefreshCompositeProperties = Partial[
+[E]                ^
+[E] [E197] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:107:3
+[E]        expected class or object definition
+[E]        L107:   type RadioButtonProperties = Partial[
+[E]                ^
+[E] [E196] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:106:3
+[E]        expected class or object definition
+[E]        L106:   type Properties[T /* <: NativeObject */, U /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: T[U] */ js.Any
+[E]                ^
+[E] [E195] src/main/scala/typings/tabrisLib/tabrisMod/package.scala:104:1
+[E]        expected class or object definition
+[E]        L104: Strings.maximum | tabrisLib.tabrisLibStrings.minimum | tabrisLib.tabrisLibStrings.selection | tabrisLib.tabrisLibStrings.state | tabrisLib.tabrisLibStrings.tintColor
+[E]              ^
+[E] [E194] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala:107:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L107: }
+[E]              ^
+[E] [E193] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala:106:3
+[E]        expected class or object definition
+[E]        L106:   def seek(position: scala.Double): scala.Unit = js.native
+[E]                ^
+[E] [E192] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala:103:2
+[E]        expected class or object definition
+[E]        L103:  `empty` or `fail`.
+[E]               ^
+[E] [E191] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala:80:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L80: }
+[E]             ^
+[E] [E190] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala:79:3
+[E]        expected class or object definition
+[E]        L79:   def once(listeners: ToggleButtonEvents): this.type = js.native
+[E]               ^
+[E] [E189] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala:77:2
+[E]        expected class or object definition
+[E]        L77:  key-value map where the keys are event types and the values are the listeners to register for these events, e.g. `{tap: onTap, scroll: onScroll}`.
+[E]              ^
+[E] [E188] src/main/scala/typings/tabrisLib/tabrisMod/TimeDialog.scala:52:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L52: }
+[E]             ^
+[E] [E187] src/main/scala/typings/tabrisLib/tabrisMod/TimeDialog.scala:51:3
+[E]        expected class or object definition
+[E]        L51:   def once(listeners: TimeDialogEvents): this.type = js.native
+[E]               ^
+[E] [E186] src/main/scala/typings/tabrisLib/tabrisMod/TimeDialog.scala:48:1
+[E]        expected class or object definition
+[E]        L48: emoves the listener after it has been invoked by an event.
+[E]             ^
+[E] [E185] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala:75:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L75: }
+[E]             ^
+[E] [E184] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala:74:3
+[E]        expected class or object definition
+[E]        L74:   def once(listeners: SwitchEvents): this.type = js.native
+[E]               ^
+[E] [E183] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala:69:1
+[E]        expected class or object definition
+[E]        L69: s.type = js.native
+[E]             ^
+[E] [E182] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:78:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L78: }
+[E]             ^
+[E] [E181] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:77:3
+[E]        expected class or object definition
+[E]        L77:   def once(listeners: StatusBarEvents): this.type = js.native
+[E]               ^
+[E] [E180] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:72:3
+[E]        expected class or object definition
+[E]        L72:   def on(listeners: StatusBarEvents): this.type = js.native
+[E]               ^
+[E] [E179] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:67:3
+[E]        expected class or object definition
+[E]        L67:   def off(listeners: StatusBarEvents): this.type = js.native
+[E]               ^
+[E] [E178] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:65:10
+[E]        unclosed quoted identifier
+[E]        L65: onScroll}`.
+[E]                      ^
+[E] [E177] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:65:9
+[E]        Unmatched closing brace '}' ignored here
+[E]        L65: onScroll}`.
+[E]                     ^
+[E] [E176] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala:65:1
+[E]        expected class or object definition
+[E]        L65: onScroll}`.
+[E]             ^
+[E] [E175] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E174] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala:69:3
+[E]        expected class or object definition
+[E]        L69:   def once(listeners: SliderEvents): this.type = js.native
+[E]               ^
+[E] [E173] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala:64:3
+[E]        expected class or object definition
+[E]        L64:   def on(listeners: SliderEvents): this.type = js.native
+[E]               ^
+[E] [E172] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala:61:1
+[E]        expected class or object definition
+[E]        L61: cated by their key.
+[E]             ^
+[E] [E171] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:68:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L68: }
+[E]             ^
+[E] [E170] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:67:3
+[E]        expected class or object definition
+[E]        L67:   def open(): scala.Unit = js.native
+[E]               ^
+[E] [E169] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:63:3
+[E]        expected class or object definition
+[E]        L63:   def once(listeners: SearchActionEvents): this.type = js.native
+[E]               ^
+[E] [E168] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:58:3
+[E]        expected class or object definition
+[E]        L58:   def on(listeners: SearchActionEvents): this.type = js.native
+[E]               ^
+[E] [E167] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:53:3
+[E]        expected class or object definition
+[E]        L53:   def off(listeners: SearchActionEvents): this.type = js.native
+[E]               ^
+[E] [E166] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala:50:1
+[E]        expected class or object definition
+[E]        L50: type indicated by their key.
+[E]             ^
+[E] [E165] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala:60:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L60: }
+[E]             ^
+[E] [E164] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala:59:3
+[E]        expected class or object definition
+[E]        L59:   def once(listeners: RefreshCompositeEvents): this.type = js.native
+[E]               ^
+[E] [E163] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala:54:3
+[E]        expected class or object definition
+[E]        L54:   def on(listeners: RefreshCompositeEvents): this.type = js.native
+[E]               ^
+[E] [E162] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala:49:3
+[E]        expected class or object definition
+[E]        L49:   def off(listeners: RefreshCompositeEvents): this.type = js.native
+[E]               ^
+[E] [E161] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala:44:1
+[E]        expected class or object definition
+[E]        L44: e: RefreshCompositeProperties = js.native
+[E]             ^
+[E] [E160] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala:80:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L80: }
+[E]             ^
+[E] [E159] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala:79:3
+[E]        expected class or object definition
+[E]        L79:   def once(listeners: RadioButtonEvents): this.type = js.native
+[E]               ^
+[E] [E158] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala:77:1
+[E]        expected class or object definition
+[E]        L77: ue map where the keys are event types and the values are the listeners to register for these events, e.g. `{tap: onTap, scroll: onScroll}`.
+[E]             ^
+[E] [E157] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala:74:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L74: }
+[E]             ^
+[E] [E156] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala:73:3
+[E]        expected class or object definition
+[E]        L73:   def once(listeners: ProgressBarEvents): this.type = js.native
+[E]               ^
+[E] [E155] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala:68:3
+[E]        expected class or object definition
+[E]        L68:   def on(listeners: ProgressBarEvents): this.type = js.native
+[E]               ^
+[E] [E154] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala:65:1
+[E]        expected class or object definition
+[E]        L65: y their key.
+[E]             ^
+[E] [E153] src/main/scala/typings/tabrisLib/tabrisMod/Printer.scala:29:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L29: }
+[E]             ^
+[E] [E152] src/main/scala/typings/tabrisLib/tabrisMod/Printer.scala:28:3
+[E]        expected class or object definition
+[E]        L28:   def print(data: js.Any, options: tabrisLib.Anon_ContentType): js.Promise[_] = js.native
+[E]               ^
+[E] [E151] src/main/scala/typings/tabrisLib/tabrisMod/Printer.scala:27:3
+[E]        expected class or object definition
+[E]        L27:   def print(data: js.Any): js.Promise[_] = js.native
+[E]               ^
+[E] [E150] src/main/scala/typings/tabrisLib/tabrisMod/Printer.scala:26:5
+[E]        expected class or object definition
+[E]        L26:     */
+[E]                 ^
+[E] [E149] src/main/scala/typings/tabrisLib/tabrisMod/Printer.scala:24:1
+[E]        expected class or object definition
+[E]        L24: r or a typed array containing the bytes of a PDF document or image.
+[E]             ^
+[E] [E148] src/main/scala/typings/tabrisLib/tabrisMod/Popup.scala:22:1
+[E]        expected class or object definition
+[E]        L22: - tabrisLib.tabrisMod._PopupProperties because Already inherited */ @JSImport("tabris", "Popup")
+[E]             ^
+[E] [E147] src/main/scala/typings/tabrisLib/tabrisMod/Popup.scala:21:1
+[E]        expected class or object definition
+[E]        L21: s 
+[E]             ^
+[E] [E146] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala:81:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L81: }
+[E]             ^
+[E] [E145] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala:80:3
+[E]        expected class or object definition
+[E]        L80:   def once(listeners: PopoverEvents): this.type = js.native
+[E]               ^
+[E] [E144] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala:75:3
+[E]        expected class or object definition
+[E]        L75:   def on(listeners: PopoverEvents): this.type = js.native
+[E]               ^
+[E] [E143] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala:72:1
+[E]        expected class or object definition
+[E]        L72: y their key.
+[E]             ^
+[E] [E142] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E141] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:69:3
+[E]        expected class or object definition
+[E]        L69:   def once(listeners: PageEvents): this.type = js.native
+[E]               ^
+[E] [E140] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:64:3
+[E]        expected class or object definition
+[E]        L64:   def on(listeners: PageEvents): this.type = js.native
+[E]               ^
+[E] [E139] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:62:4
+[E]        unclosed quoted identifier
+[E]        L62: ll}`.
+[E]                ^
+[E] [E138] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:62:3
+[E]        Unmatched closing brace '}' ignored here
+[E]        L62: ll}`.
+[E]               ^
+[E] [E137] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala:62:1
+[E]        expected class or object definition
+[E]        L62: ll}`.
+[E]             ^
+[E] [E136] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:133:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L133: }
+[E]              ^
+[E] [E135] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:132:3
+[E]        expected class or object definition
+[E]        L132:   def pages[U /* <: Page */](constructor: tabrisLib.Anon_ArgsAny[U]): WidgetCollection[U] = js.native
+[E]                ^
+[E] [E134] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:126:3
+[E]        expected class or object definition
+[E]        L126:   def pages(selector: Selector): WidgetCollection[Page] = js.native
+[E]                ^
+[E] [E133] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:125:3
+[E]        expected class or object definition
+[E]        L125:   def pages(): WidgetCollection[Page] = js.native
+[E]                ^
+[E] [E132] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:118:3
+[E]        expected class or object definition
+[E]        L118:   def once(listeners: NavigationViewEvents): this.type = js.native
+[E]                ^
+[E] [E131] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:113:3
+[E]        expected class or object definition
+[E]        L113:   def on(listeners: NavigationViewEvents): this.type = js.native
+[E]                ^
+[E] [E130] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:108:3
+[E]        expected class or object definition
+[E]        L108:   def off(listeners: NavigationViewEvents): this.type = js.native
+[E]                ^
+[E] [E129] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:103:3
+[E]        expected class or object definition
+[E]        L103:   var win_toolbarTheme: tabrisLib.tabrisLibStrings.dark | tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.light = js.native
+[E]                ^
+[E] [E128] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:98:3
+[E]        expected class or object definition
+[E]        L98:   var win_toolbarOverflowTheme: tabrisLib.tabrisLibStrings.dark | tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.light = js.native
+[E]               ^
+[E] [E127] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala:96:1
+[E]        expected class or object definition
+[E]        L96: ws.
+[E]             ^
+[E] [E126] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:74:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L74: }
+[E]             ^
+[E] [E125] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:73:3
+[E]        expected class or object definition
+[E]        L73:   def once(listeners: NavigationBarEvents): this.type = js.native
+[E]               ^
+[E] [E124] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:68:3
+[E]        expected class or object definition
+[E]        L68:   def on(listeners: NavigationBarEvents): this.type = js.native
+[E]               ^
+[E] [E123] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:63:3
+[E]        expected class or object definition
+[E]        L63:   def off(listeners: NavigationBarEvents): this.type = js.native
+[E]               ^
+[E] [E122] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala:60:1
+[E]        expected class or object definition
+[E]        L60: dicated by their key.
+[E]             ^
+[E] [E121] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:54:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L54: }
+[E]             ^
+[E] [E120] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:53:3
+[E]        expected class or object definition
+[E]        L53:   def start(): scala.Unit = js.native
+[E]               ^
+[E] [E119] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:48:3
+[E]        expected class or object definition
+[E]        L48:   def once(listeners: InactivityTimerEvents): this.type = js.native
+[E]               ^
+[E] [E118] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:43:3
+[E]        expected class or object definition
+[E]        L43:   def on(listeners: InactivityTimerEvents): this.type = js.native
+[E]               ^
+[E] [E117] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:38:3
+[E]        expected class or object definition
+[E]        L38:   def off(listeners: InactivityTimerEvents): this.type = js.native
+[E]               ^
+[E] [E116] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala:36:1
+[E]        expected class or object definition
+[E]        L36: ap where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.
+[E]             ^
+[E] [E115] src/main/scala/typings/tabrisLib/tabrisMod/FileSystem.scala:75:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L75: }
+[E]             ^
+[E] [E114] src/main/scala/typings/tabrisLib/tabrisMod/FileSystem.scala:74:3
+[E]        expected class or object definition
+[E]        L74:   def writeFile(path: java.lang.String, text: java.lang.String, encoding: java.lang.String): js.Promise[scala.Unit] = js.native
+[E]               ^
+[E] [E113] src/main/scala/typings/tabrisLib/tabrisMod/FileSystem.scala:73:3
+[E]        expected class or object definition
+[E]        L73:   def writeFile(path: java.lang.String, text: java.lang.String): js.Promise[scala.Unit] = js.native
+[E]               ^
+[E] [E112] src/main/scala/typings/tabrisLib/tabrisMod/FileSystem.scala:71:9
+[E]        expected start of definition
+[E]        L71:  @param encoding The encoding to use to write a text file. When omitted, `utf-8` will be used.
+[E]                     ^
+[E] [E111] src/main/scala/typings/tabrisLib/tabrisMod/Drawer.scala:30:1
+[E]        expected class or object definition
+[E]        L30: p, transform, visible, width, win_theme. Inlined win_displayMode, win_targetView */ @JSImport("tabris", "Drawer")
+[E]             ^
+[E] [E110] src/main/scala/typings/tabrisLib/tabrisMod/Device.scala:107:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L107: }
+[E]              ^
+[E] [E109] src/main/scala/typings/tabrisLib/tabrisMod/Device.scala:83:1
+[E]        expected class or object definition
+[E]        L83: hat case. Available only on windows.
+[E]             ^
+[E] [E108] src/main/scala/typings/tabrisLib/tabrisMod/DateDialog.scala:65:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L65: }
+[E]             ^
+[E] [E107] src/main/scala/typings/tabrisLib/tabrisMod/DateDialog.scala:64:1
+[E]        ';' expected but ':' found.
+[E]        L64: : DateDialogEvents): this.type = js.native
+[E]             ^
+[E] [E106] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala:80:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L80: }
+[E]             ^
+[E] [E105] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala:79:3
+[E]        expected class or object definition
+[E]        L79:   def once(listeners: CheckBoxEvents): this.type = js.native
+[E]               ^
+[E] [E104] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala:77:1
+[E]        expected class or object definition
+[E]        L77: g. `{tap: onTap, scroll: onScroll}`.
+[E]             ^
+[E] [E103] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala:31:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L31: }
+[E]             ^
+[E] [E102] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala:30:3
+[E]        expected class or object definition
+[E]        L30:   def getContext(contextType: java.lang.String, width: scala.Double, height: scala.Double): CanvasContext = js.native
+[E]               ^
+[E] [E101] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala:23:3
+[E]        expected start of definition
+[E]        L23:   val tsProperties_Canvas: CanvasProperties = js.native
+[E]               ^
+[E] [E100] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala:21:1
+[E]        expected class or object definition
+[E]        L21: /
+[E]             ^
+[E] [E99] src/main/scala/typings/tabrisLib/tabrisMod/Bounds.scala:38:1
+[E]       eof expected but '}' found.
+[E]       L38: }
+[E]            ^
+[E] [E98] src/main/scala/typings/tabrisLib/tabrisMod/Bounds.scala:37:3
+[E]       Unmatched closing brace '}' ignored here
+[E]       L37:   }
+[E]              ^
+[E] [E97] src/main/scala/typings/tabrisLib/tabrisMod/Bounds.scala:36:1
+[E]       expected class or object definition
+[E]       L36: bj.asInstanceOf[Bounds]
+[E]            ^
+[E] [E96] src/main/scala/typings/tabrisLib/tabrisMod/App.scala:138:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L138: }
+[E]             ^
+[E] [E95] src/main/scala/typings/tabrisLib/tabrisMod/App.scala:137:3
+[E]       expected class or object definition
+[E]       L137:   def reload(): scala.Unit = js.native
+[E]               ^
+[E] [E94] src/main/scala/typings/tabrisLib/tabrisMod/App.scala:133:3
+[E]       expected class or object definition
+[E]       L133:   def registerFont(alias: java.lang.String, file: java.lang.String): scala.Unit = js.native
+[E]               ^
+[E] [E93] src/main/scala/typings/tabrisLib/tabrisMod/App.scala:131:2
+[E]       expected class or object definition
+[E]       L131:  the font in the given file. The font-family name is provided as a fragment postfix to the file name. For example `arial.ttf#Arial` can be used the load a font named 'Arial' from the file 'arial.ttf'. The file also has to be bundled with the app to work, loading it remotely (e.g. via the developer app) will not work.
+[E]              ^
+[E] [E92] src/main/scala/typings/tabrisLib/tabrisMod/App.scala:131:199
+[E]       unclosed character literal (or use " not ' for string literal)
+[E]       L131:  the font in the given file. The font-family name is provided as a fragment postfix to the file name. For example `arial.ttf#Arial` can be used the load a font named 'Arial' from the file 'arial.ttf'. The file also has to be bundled with the app to work, loading it remotely (e.g. via the developer app) will not work.
+[E]                                                                                                                                                                                                                   ^
+[E] [E91] src/main/scala/typings/tabrisLib/tabrisMod/App.scala:131:173
+[E]       unclosed character literal (or use " for string literal "Arial")
+[E]       L131:  the font in the given file. The font-family name is provided as a fragment postfix to the file name. For example `arial.ttf#Arial` can be used the load a font named 'Arial' from the file 'arial.ttf'. The file also has to be bundled with the app to work, loading it remotely (e.g. via the developer app) will not work.
+[E]                                                                                                                                                                                         ^
+[E] [E90] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:56:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L56: }
+[E]            ^
+[E] [E89] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:55:3
+[E]       expected class or object definition
+[E]       L55:   def once(listeners: ActivityIndicatorEvents): this.type = js.native
+[E]              ^
+[E] [E88] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:50:3
+[E]       expected class or object definition
+[E]       L50:   def on(listeners: ActivityIndicatorEvents): this.type = js.native
+[E]              ^
+[E] [E87] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:45:3
+[E]       expected class or object definition
+[E]       L45:   def off(listeners: ActivityIndicatorEvents): this.type = js.native
+[E]              ^
+[E] [E86] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:40:3
+[E]       expected start of definition
+[E]       L40:   val tsProperties_ActivityIndicator: ActivityIndicatorProperties = js.native
+[E]              ^
+[E] [E85] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:37:5
+[E]       expected class or object definition
+[E]       L37:     * the `Properties` interface. It's value is always undefined.
+[E]                ^
+[E] [E84] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala:36:1
+[E]       expected class or object definition
+[E]       L36: property defines the interface used by `set`, `get`, and
+[E]            ^
+[E] [E83] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala:79:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L79: }
+[E]            ^
+[E] [E82] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala:78:3
+[E]       expected class or object definition
+[E]       L78:   def once(listeners: ActionEvents): this.type = js.native
+[E]              ^
+[E] [E81] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala:76:1
+[E]       expected class or object definition
+[E]       L76: -value map where the keys are event types and the values are the listeners to register for these events, e.g. `{tap: onTap, scroll: onScroll}`.
+[E]            ^
+[E] [E80] src/main/scala/typings/tabrisLib/package.scala:57:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L57: }
+[E]            ^
+[E] [E79] src/main/scala/typings/tabrisLib/package.scala:56:3
+[E]       expected class or object definition
+[E]       L56:   type offset = scala.Double
+[E]              ^
+[E] [E78] src/main/scala/typings/tabrisLib/package.scala:52:3
+[E]       expected class or object definition
+[E]       L52:   type margin = js.Any
+[E]              ^
+[E] [E77] src/main/scala/typings/tabrisLib/package.scala:35:3
+[E]       expected class or object definition
+[E]       L35:   type dimension = scala.Double
+[E]              ^
+[E] [E76] src/main/scala/typings/tabrisLib/package.scala:31:3
+[E]       expected class or object definition
+[E]       L31:   type Selector = tabrisLib.tabrisMod.Selector
+[E]              ^
+[E] [E75] src/main/scala/typings/tabrisLib/package.scala:30:3
+[E]       expected class or object definition
+[E]       L30:   type RequestInfo = Request | java.lang.String
+[E]              ^
+[E] [E74] src/main/scala/typings/tabrisLib/package.scala:29:3
+[E]       expected class or object definition
+[E]       L29:   type Image = tabrisLib.tabrisMod.Image
+[E]              ^
+[E] [E73] src/main/scala/typings/tabrisLib/package.scala:28:3
+[E]       expected class or object definition
+[E]       L28:   type HeaderInit = Headers | js.Array[java.lang.String]
+[E]              ^
+[E] [E72] src/main/scala/typings/tabrisLib/package.scala:27:3
+[E]       expected class or object definition
+[E]       L27:   type Font = java.lang.String
+[E]              ^
+[E] [E71] src/main/scala/typings/tabrisLib/package.scala:23:3
+[E]       expected class or object definition
+[E]       L23:   type EventListener = js.Function1[/* evt */ Event, scala.Unit]
+[E]              ^
+[E] [E70] src/main/scala/typings/tabrisLib/package.scala:22:3
+[E]       expected class or object definition
+[E]       L22:   type CustomEvent = Event
+[E]              ^
+[E] [E69] src/main/scala/typings/tabrisLib/package.scala:21:3
+[E]       expected class or object definition
+[E]       L21:   type Color = java.lang.String
+[E]              ^
+[E] [E68] src/main/scala/typings/tabrisLib/package.scala:17:1
+[E]       expected class or object definition
+[E]       L17: e CSS3 specification.
+[E]            ^
+[E] [E67] src/main/scala/typings/tabrisLib/JSXNs/package.scala:64:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L64: }
+[E]            ^
+[E] [E66] src/main/scala/typings/tabrisLib/JSXNs/package.scala:63:3
+[E]       expected class or object definition
+[E]       L63:   type WidgetProperties = tabrisLib.tabrisMod.WidgetProperties with WidgetEvents
+[E]              ^
+[E] [E65] src/main/scala/typings/tabrisLib/JSXNs/package.scala:62:3
+[E]       expected class or object definition
+[E]       L62:   type WebViewProperties = tabrisLib.tabrisMod.WebViewProperties with WebViewEvents
+[E]              ^
+[E] [E64] src/main/scala/typings/tabrisLib/JSXNs/package.scala:61:3
+[E]       expected class or object definition
+[E]       L61:   type VideoProperties = tabrisLib.tabrisMod.VideoProperties with VideoEvents
+[E]              ^
+[E] [E63] src/main/scala/typings/tabrisLib/JSXNs/package.scala:60:3
+[E]       expected class or object definition
+[E]       L60:   type UIProperties = tabrisLib.tabrisMod.UIProperties with UIEvents
+[E]              ^
+[E] [E62] src/main/scala/typings/tabrisLib/JSXNs/package.scala:59:3
+[E]       expected class or object definition
+[E]       L59:   type UIEvents = CompositeEvents
+[E]              ^
+[E] [E61] src/main/scala/typings/tabrisLib/JSXNs/package.scala:58:3
+[E]       expected class or object definition
+[E]       L58:   type ToggleButtonProperties = tabrisLib.tabrisMod.ToggleButtonProperties with ToggleButtonEvents
+[E]              ^
+[E] [E60] src/main/scala/typings/tabrisLib/JSXNs/package.scala:57:3
+[E]       expected class or object definition
+[E]       L57:   type TimeDialogProperties = tabrisLib.tabrisMod.TimeDialogProperties with TimeDialogEvents
+[E]              ^
+[E] [E59] src/main/scala/typings/tabrisLib/JSXNs/package.scala:56:3
+[E]       expected class or object definition
+[E]       L56:   type TextViewProperties = tabrisLib.tabrisMod.TextViewProperties with TextViewEvents
+[E]              ^
+[E] [E58] src/main/scala/typings/tabrisLib/JSXNs/package.scala:55:3
+[E]       expected class or object definition
+[E]       L55:   type TextInputProperties = tabrisLib.tabrisMod.TextInputProperties with TextInputEvents
+[E]              ^
+[E] [E57] src/main/scala/typings/tabrisLib/JSXNs/package.scala:54:3
+[E]       expected class or object definition
+[E]       L54:   type TabProperties = tabrisLib.tabrisMod.TabProperties with TabEvents
+[E]              ^
+[E] [E56] src/main/scala/typings/tabrisLib/JSXNs/package.scala:53:3
+[E]       expected class or object definition
+[E]       L53:   type TabFolderProperties = tabrisLib.tabrisMod.TabFolderProperties with TabFolderEvents
+[E]              ^
+[E] [E55] src/main/scala/typings/tabrisLib/JSXNs/package.scala:52:3
+[E]       expected class or object definition
+[E]       L52:   type SwitchProperties = tabrisLib.tabrisMod.SwitchProperties with SwitchEvents
+[E]              ^
+[E] [E54] src/main/scala/typings/tabrisLib/JSXNs/package.scala:51:3
+[E]       expected class or object definition
+[E]       L51:   type StatusBarProperties = tabrisLib.tabrisMod.StatusBarProperties with StatusBarEvents
+[E]              ^
+[E] [E53] src/main/scala/typings/tabrisLib/JSXNs/package.scala:50:3
+[E]       expected class or object definition
+[E]       L50:   type SliderProperties = tabrisLib.tabrisMod.SliderProperties with SliderEvents
+[E]              ^
+[E] [E52] src/main/scala/typings/tabrisLib/JSXNs/package.scala:49:3
+[E]       expected class or object definition
+[E]       L49:   type SearchActionProperties = tabrisLib.tabrisMod.SearchActionProperties with SearchActionEvents
+[E]              ^
+[E] [E51] src/main/scala/typings/tabrisLib/JSXNs/package.scala:48:3
+[E]       expected class or object definition
+[E]       L48:   type ScrollViewProperties = tabrisLib.tabrisMod.ScrollViewProperties with ScrollViewEvents
+[E]              ^
+[E] [E50] src/main/scala/typings/tabrisLib/JSXNs/package.scala:47:3
+[E]       expected class or object definition
+[E]       L47:   type RefreshCompositeProperties = tabrisLib.tabrisMod.RefreshCompositeProperties with RefreshCompositeEvents
+[E]              ^
+[E] [E49] src/main/scala/typings/tabrisLib/JSXNs/package.scala:46:3
+[E]       expected class or object definition
+[E]       L46:   type RadioButtonProperties = tabrisLib.tabrisMod.RadioButtonProperties with RadioButtonEvents
+[E]              ^
+[E] [E48] src/main/scala/typings/tabrisLib/JSXNs/package.scala:45:3
+[E]       expected class or object definition
+[E]       L45:   type ProgressBarProperties = tabrisLib.tabrisMod.ProgressBarProperties with ProgressBarEvents
+[E]              ^
+[E] [E47] src/main/scala/typings/tabrisLib/JSXNs/package.scala:44:3
+[E]       expected class or object definition
+[E]       L44:   type PrinterProperties = tabrisLib.tabrisMod.PrinterProperties with PrinterEvents
+[E]              ^
+[E] [E46] src/main/scala/typings/tabrisLib/JSXNs/package.scala:43:3
+[E]       expected class or object definition
+[E]       L43:   type PrinterEvents = NativeObjectEvents
+[E]              ^
+[E] [E45] src/main/scala/typings/tabrisLib/JSXNs/package.scala:42:3
+[E]       expected class or object definition
+[E]       L42:   type PopupProperties = tabrisLib.tabrisMod.PopupProperties with PopupEvents
+[E]              ^
+[E] [E44] src/main/scala/typings/tabrisLib/JSXNs/package.scala:41:3
+[E]       expected class or object definition
+[E]       L41:   type PopupEvents = NativeObjectEvents
+[E]              ^
+[E] [E43] src/main/scala/typings/tabrisLib/JSXNs/package.scala:40:3
+[E]       expected class or object definition
+[E]       L40:   type PopoverProperties = tabrisLib.tabrisMod.PopoverProperties with PopoverEvents
+[E]              ^
+[E] [E42] src/main/scala/typings/tabrisLib/JSXNs/package.scala:39:3
+[E]       expected class or object definition
+[E]       L39:   type PickerProperties = tabrisLib.tabrisMod.PickerProperties with PickerEvents
+[E]              ^
+[E] [E41] src/main/scala/typings/tabrisLib/JSXNs/package.scala:38:3
+[E]       expected class or object definition
+[E]       L38:   type PageProperties = tabrisLib.tabrisMod.PageProperties with PageEvents
+[E]              ^
+[E] [E40] src/main/scala/typings/tabrisLib/JSXNs/package.scala:37:3
+[E]       expected class or object definition
+[E]       L37:   type NavigationViewProperties = tabrisLib.tabrisMod.NavigationViewProperties with NavigationViewEvents
+[E]              ^
+[E] [E39] src/main/scala/typings/tabrisLib/JSXNs/package.scala:36:3
+[E]       expected class or object definition
+[E]       L36:   type NavigationBarProperties = tabrisLib.tabrisMod.NavigationBarProperties with NavigationBarEvents
+[E]              ^
+[E] [E38] src/main/scala/typings/tabrisLib/JSXNs/package.scala:35:3
+[E]       expected class or object definition
+[E]       L35:   type NativeObjectProperties = tabrisLib.tabrisMod.NativeObjectProperties with NativeObjectEvents
+[E]              ^
+[E] [E37] src/main/scala/typings/tabrisLib/JSXNs/package.scala:34:3
+[E]       expected class or object definition
+[E]       L34:   type InactivityTimerProperties = tabrisLib.tabrisMod.InactivityTimerProperties with InactivityTimerEvents
+[E]              ^
+[E] [E36] src/main/scala/typings/tabrisLib/JSXNs/package.scala:33:3
+[E]       expected class or object definition
+[E]       L33:   type ImageViewProperties = tabrisLib.tabrisMod.ImageViewProperties with ImageViewEvents
+[E]              ^
+[E] [E35] src/main/scala/typings/tabrisLib/JSXNs/package.scala:32:3
+[E]       expected class or object definition
+[E]       L32:   type FileSystemProperties = tabrisLib.tabrisMod.FileSystemProperties with FileSystemEvents
+[E]              ^
+[E] [E34] src/main/scala/typings/tabrisLib/JSXNs/package.scala:31:3
+[E]       expected class or object definition
+[E]       L31:   type FileSystemEvents = NativeObjectEvents
+[E]              ^
+[E] [E33] src/main/scala/typings/tabrisLib/JSXNs/package.scala:30:3
+[E]       expected class or object definition
+[E]       L30:   type ElementClass = tabrisLib.tabrisMod.Widget
+[E]              ^
+[E] [E32] src/main/scala/typings/tabrisLib/JSXNs/package.scala:29:3
+[E]       expected class or object definition
+[E]       L29:   type Element = js.Any
+[E]              ^
+[E] [E31] src/main/scala/typings/tabrisLib/JSXNs/package.scala:28:3
+[E]       expected class or object definition
+[E]       L28:   type DrawerProperties = tabrisLib.tabrisMod.DrawerProperties with DrawerEvents
+[E]              ^
+[E] [E30] src/main/scala/typings/tabrisLib/JSXNs/package.scala:27:3
+[E]       expected class or object definition
+[E]       L27:   type DeviceProperties = tabrisLib.tabrisMod.DeviceProperties with DeviceEvents
+[E]              ^
+[E] [E29] src/main/scala/typings/tabrisLib/JSXNs/package.scala:26:3
+[E]       expected class or object definition
+[E]       L26:   type DateDialogProperties = tabrisLib.tabrisMod.DateDialogProperties with DateDialogEvents
+[E]              ^
+[E] [E28] src/main/scala/typings/tabrisLib/JSXNs/package.scala:25:3
+[E]       expected class or object definition
+[E]       L25:   type CompositeProperties = tabrisLib.tabrisMod.CompositeProperties with CompositeEvents
+[E]              ^
+[E] [E27] src/main/scala/typings/tabrisLib/JSXNs/package.scala:24:3
+[E]       expected class or object definition
+[E]       L24:   type CollectionViewProperties = tabrisLib.tabrisMod.CollectionViewProperties with CollectionViewEvents
+[E]              ^
+[E] [E26] src/main/scala/typings/tabrisLib/JSXNs/package.scala:23:3
+[E]       expected class or object definition
+[E]       L23:   type CheckBoxProperties = tabrisLib.tabrisMod.CheckBoxProperties with CheckBoxEvents
+[E]              ^
+[E] [E25] src/main/scala/typings/tabrisLib/JSXNs/package.scala:22:3
+[E]       expected class or object definition
+[E]       L22:   type CanvasProperties = tabrisLib.tabrisMod.CanvasProperties with CanvasEvents
+[E]              ^
+[E] [E24] src/main/scala/typings/tabrisLib/JSXNs/package.scala:21:3
+[E]       expected class or object definition
+[E]       L21:   type CanvasEvents = CompositeEvents
+[E]              ^
+[E] [E23] src/main/scala/typings/tabrisLib/JSXNs/package.scala:20:3
+[E]       expected class or object definition
+[E]       L20:   type ButtonProperties = tabrisLib.tabrisMod.ButtonProperties with ButtonEvents
+[E]              ^
+[E] [E22] src/main/scala/typings/tabrisLib/JSXNs/package.scala:19:3
+[E]       expected class or object definition
+[E]       L19:   type AppProperties = tabrisLib.tabrisMod.AppProperties with AppEvents
+[E]              ^
+[E] [E21] src/main/scala/typings/tabrisLib/JSXNs/package.scala:18:3
+[E]       expected class or object definition
+[E]       L18:   type AlertDialogProperties = tabrisLib.tabrisMod.AlertDialogProperties with AlertDialogEvents
+[E]              ^
+[E] [E20] src/main/scala/typings/tabrisLib/JSXNs/package.scala:17:1
+[E]       expected class or object definition
+[E]       L17: tyIndicatorProperties = tabrisLib.tabrisMod.ActivityIndicatorProperties with ActivityIndicatorEvents
+[E]            ^
+[E] [E19] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:53:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L53: }
+[E]            ^
+[E] [E18] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:52:3
+[E]       expected class or object definition
+[E]       L52:   var widget: WidgetProperties
+[E]              ^
+[E] [E17] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:51:3
+[E]       expected class or object definition
+[E]       L51:   var webView: WebViewProperties
+[E]              ^
+[E] [E16] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:50:3
+[E]       expected class or object definition
+[E]       L50:   var video: VideoProperties
+[E]              ^
+[E] [E15] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:49:3
+[E]       expected class or object definition
+[E]       L49:   var uI: UIProperties
+[E]              ^
+[E] [E14] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:48:3
+[E]       expected class or object definition
+[E]       L48:   var toggleButton: ToggleButtonProperties
+[E]              ^
+[E] [E13] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:47:3
+[E]       expected class or object definition
+[E]       L47:   var timeDialog: TimeDialogProperties
+[E]              ^
+[E] [E12] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:46:3
+[E]       expected class or object definition
+[E]       L46:   var textView: TextViewProperties
+[E]              ^
+[E] [E11] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:45:3
+[E]       expected class or object definition
+[E]       L45:   var textInput: TextInputProperties
+[E]              ^
+[E] [E10] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:44:3
+[E]       expected class or object definition
+[E]       L44:   var tabFolder: TabFolderProperties
+[E]              ^
+[E] [E9] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:43:3
+[E]      expected class or object definition
+[E]      L43:   var tab: TabProperties
+[E]             ^
+[E] [E8] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:42:3
+[E]      expected class or object definition
+[E]      L42:   var switch: SwitchProperties
+[E]             ^
+[E] [E7] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala:41:1
+[E]      expected class or object definition
+[E]      L41: erties
+[E]           ^
+[E] [E6] src/main/scala/typings/tabrisLib/Console.scala:92:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L92: }
+[E]           ^
+[E] [E5] src/main/scala/typings/tabrisLib/Console.scala:91:3
+[E]      expected class or object definition
+[E]      L91:   def warn(objects: js.Any*): scala.Unit = js.native
+[E]             ^
+[E] [E4] src/main/scala/typings/tabrisLib/Console.scala:86:3
+[E]      expected class or object definition
+[E]      L86:   def warn(message: java.lang.String, substitutions: js.Any*): scala.Unit = js.native
+[E]             ^
+[E] [E3] src/main/scala/typings/tabrisLib/Console.scala:85:3
+[E]      expected class or object definition
+[E]      L85:   def warn(): scala.Unit = js.native
+[E]             ^
+[E] [E2] src/main/scala/typings/tabrisLib/Console.scala:84:5
+[E]      expected class or object definition
+[E]      L84:     */
+[E]               ^
+[E] [E1] src/main/scala/typings/tabrisLib/Console.scala:83:1
+[E]      expected class or object definition
+[E]      L83: stitutions JavaScript objects with which to replace substitution strings within message
+[E]           ^
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Popup.scala: L21 [E147], L22 [E148]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Printer.scala: L24 [E149], L26 [E150], L27 [E151], L28 [E152], L29 [E153]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/NavigationView.scala: L96 [E127], L98 [E128], L103 [E129], L108 [E130], L113 [E131], L118 [E132], L125 [E133], L126 [E134], L132 [E135], L133 [E136]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/ActivityIndicator.scala: L36 [E84], L37 [E85], L40 [E86], L45 [E87], L50 [E88], L55 [E89], L56 [E90]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Popover.scala: L72 [E143], L75 [E144], L80 [E145], L81 [E146]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Video.scala: L103 [E192], L106 [E193], L107 [E194]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Action.scala: L76 [E81], L78 [E82], L79 [E83]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Slider.scala: L61 [E172], L64 [E173], L69 [E174], L70 [E175]
+[E] src/main/scala/typings/tabrisLib/Console.scala: L83 [E1], L84 [E2], L85 [E3], L86 [E4], L91 [E5], L92 [E6]
+[E] src/main/scala/typings/tabrisLib/package.scala: L17 [E68], L21 [E69], L22 [E70], L23 [E71], L27 [E72], L28 [E73], L29 [E74], L30 [E75], L31 [E76], L35 [E77], L52 [E78], L56 [E79], L57 [E80]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/StatusBar.scala: L65 [E176], L65 [E177], L65 [E178], L67 [E179], L72 [E180], L77 [E181], L78 [E182]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Bounds.scala: L36 [E97], L37 [E98], L38 [E99]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/ToggleButton.scala: L77 [E189], L79 [E190], L80 [E191]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/ProgressBar.scala: L65 [E154], L68 [E155], L73 [E156], L74 [E157]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/CheckBox.scala: L77 [E104], L79 [E105], L80 [E106]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/App.scala: L131 [E91], L131 [E92], L131 [E93], L133 [E94], L137 [E95], L138 [E96]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Drawer.scala: L30 [E111]
+[E] src/main/scala/typings/tabrisLib/JSXNs/package.scala: L17 [E20], L18 [E21], L19 [E22], L20 [E23], L21 [E24], L22 [E25], L23 [E26], L24 [E27], L25 [E28], L26 [E29], L27 [E30], L28 [E31], L29 [E32], L30 [E33], L31 [E34], L32 [E35], L33 [E36], L34 [E37], L35 [E38], L36 [E39], L37 [E40], L38 [E41], L39 [E42], L40 [E43], L41 [E44], L42 [E45], L43 [E46], L44 [E47], L45 [E48], L46 [E49], L47 [E50], L48 [E51], L49 [E52], L50 [E53], L51 [E54], L52 [E55], L53 [E56], L54 [E57], L55 [E58], L56 [E59], L57 [E60], L58 [E61], L59 [E62], L60 [E63], L61 [E64], L62 [E65], L63 [E66], L64 [E67]
+[E] src/main/scala/typings/tabrisLib/JSXNs/IntrinsicElements.scala: L41 [E7], L42 [E8], L43 [E9], L44 [E10], L45 [E11], L46 [E12], L47 [E13], L48 [E14], L49 [E15], L50 [E16], L51 [E17], L52 [E18], L53 [E19]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/FileSystem.scala: L71 [E112], L73 [E113], L74 [E114], L75 [E115]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Canvas.scala: L21 [E100], L23 [E101], L30 [E102], L31 [E103]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/TimeDialog.scala: L48 [E186], L51 [E187], L52 [E188]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/package.scala: L104 [E195], L106 [E196], L107 [E197], L111 [E198], L115 [E199], L116 [E200], L123 [E201], L124 [E202], L125 [E203], L129 [E204], L133 [E205], L137 [E206], L141 [E207], L145 [E208], L149 [E209], L153 [E210], L154 [E211], L158 [E212], L159 [E213], L160 [E214], L164 [E215], L168 [E216], L172 [E217], L177 [E218], L179 [E219], L181 [E220], L183 [E221], L184 [E222]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/DateDialog.scala: L64 [E107], L65 [E108]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Page.scala: L62 [E137], L62 [E138], L62 [E139], L64 [E140], L69 [E141], L70 [E142]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/InactivityTimer.scala: L36 [E116], L38 [E117], L43 [E118], L48 [E119], L53 [E120], L54 [E121]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/NavigationBar.scala: L60 [E122], L63 [E123], L68 [E124], L73 [E125], L74 [E126]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Switch.scala: L69 [E183], L74 [E184], L75 [E185]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/SearchAction.scala: L50 [E166], L53 [E167], L58 [E168], L63 [E169], L67 [E170], L68 [E171]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/RefreshComposite.scala: L44 [E161], L49 [E162], L54 [E163], L59 [E164], L60 [E165]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/RadioButton.scala: L77 [E158], L79 [E159], L80 [E160]
+[E] src/main/scala/typings/tabrisLib/tabrisMod/Device.scala: L83 [E109], L107 [E110]
+[E] Failed to compile 'tabris'
+ [id => tabris, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris, phase => publish] 

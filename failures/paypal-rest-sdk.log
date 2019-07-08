@@ -22,25 +22,30 @@
 [info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(AuthorizationResponse)] 
 [info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(PaymentResponse)] 
 [debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => scala.js] 
-[error] PaymentResponse.scala:8 trait PaymentResponse inherits conflicting members:
-  value create_time in trait Payment of type scala.scalajs.js.UndefOr[String]  and
-  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
-(Note: this can be resolved by declaring an override in trait PaymentResponse.), trait PaymentResponse [id => paypal-rest-sdk, phase => build] 
-[error] paymentNs.scala:11 trait AuthorizationResponse inherits conflicting members:
-  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
-  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
-(Note: this can be resolved by declaring an override in trait AuthorizationResponse.),   trait AuthorizationResponse [id => paypal-rest-sdk, phase => build] 
-[error] paymentNs.scala:18 trait CaptureResponse inherits conflicting members:
-  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
-  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
-(Note: this can be resolved by declaring an override in trait CaptureResponse.),   trait CaptureResponse [id => paypal-rest-sdk, phase => build] 
-[error] paymentNs.scala:37 trait RefundResponse inherits conflicting members:
-  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
-  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
-(Note: this can be resolved by declaring an override in trait RefundResponse.),   trait RefundResponse [id => paypal-rest-sdk, phase => build] 
-[error] paymentNs.scala:44 trait SaleResponse inherits conflicting members:
-  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
-  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
-(Note: this can be resolved by declaring an override in trait SaleResponse.),   trait SaleResponse [id => paypal-rest-sdk, phase => build] 
+[warn ] Phase3Compile.scala:204 Building paypal-rest-sdk... [id => paypal-rest-sdk, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E5] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:186:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L186: }
+[E]            ^
+[E] [E4] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:184:1
+[E]      expected class or object definition
+[E]      L184: tDashSdkMod.PaymentResponse]
+[E]            ^
+[E] [E3] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:52:1
+[E]      eof expected but '}' found.
+[E]      L52: }
+[E]           ^
+[E] [E2] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:51:3
+[E]      Unmatched closing brace '}' ignored here
+[E]      L51:   }
+[E]             ^
+[E] [E1] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:50:1
+[E]      expected class or object definition
+[E]      L50: sponse]
+[E]           ^
+[E] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala: L50 [E1], L51 [E2], L52 [E3]
+[E] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala: L184 [E4], L186 [E5]
+[E] Failed to compile 'paypal-rest-sdk'
+ [id => paypal-rest-sdk, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [paypal-rest-sdk => Compilation failed] [id => paypal-rest-sdk, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [paypal-rest-sdk => Compilation failed] [id => paypal-rest-sdk, phase => publish] 

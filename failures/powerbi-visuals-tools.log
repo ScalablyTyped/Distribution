@@ -22,6 +22,53 @@
 [debug] PhaseRunner.scala:84 Success [id => powerbi-visuals-tools, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing powerbi-visuals-tools [id => powerbi-visuals-tools, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => powerbi-visuals-tools, phase => scala.js] 
-[error] package.scala:12 illegal cyclic reference involving type DataViewObject,   type DataViewObjectMap = org.scalablytyped.runtime.StringDictionary[DataViewObject] [id => powerbi-visuals-tools, phase => build] 
+[warn ] Phase3Compile.scala:204 Building powerbi-visuals-tools... [id => powerbi-visuals-tools, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E10] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/SortDirection.scala:24:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L24: }
+[E]            ^
+[E] [E9] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/SortDirection.scala:23:1
+[E]      expected class or object definition
+[E]      L23: ative
+[E]           ^
+[E] [E8] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/PromiseResultType.scala:24:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L24: }
+[E]           ^
+[E] [E7] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/PromiseResultType.scala:23:2
+[E]      ';' expected but '=' found.
+[E]      L23:  = js.native
+[E]            ^
+[E] [E6] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/JoinPredicateBehavior.scala:19:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L19: }
+[E]           ^
+[E] [E5] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/JoinPredicateBehavior.scala:16:1
+[E]      expected class or object definition
+[E]      L16: y(value: scala.Double): js.UndefOr[
+[E]           ^
+[E] [E4] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/CartesianRoleKind.scala:24:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L24: }
+[E]           ^
+[E] [E3] src/main/scala/typings/powerbiDashVisualsDashToolsLib/Anon_ColorFillSolidColorTypeDescriptor.scala:27:1
+[E]      eof expected but '}' found.
+[E]      L27: }
+[E]           ^
+[E] [E2] src/main/scala/typings/powerbiDashVisualsDashToolsLib/Anon_ColorFillSolidColorTypeDescriptor.scala:26:3
+[E]      Unmatched closing brace '}' ignored here
+[E]      L26:   }
+[E]             ^
+[E] [E1] src/main/scala/typings/powerbiDashVisualsDashToolsLib/Anon_ColorFillSolidColorTypeDescriptor.scala:25:1
+[E]      expected class or object definition
+[E]      L25: eDescriptor]
+[E]           ^
+[E] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/CartesianRoleKind.scala: L24 [E4]
+[E] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/PromiseResultType.scala: L23 [E7], L24 [E8]
+[E] src/main/scala/typings/powerbiDashVisualsDashToolsLib/Anon_ColorFillSolidColorTypeDescriptor.scala: L25 [E1], L26 [E2], L27 [E3]
+[E] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/JoinPredicateBehavior.scala: L16 [E5], L19 [E6]
+[E] src/main/scala/typings/powerbiDashVisualsDashToolsLib/powerbiDashVisualsDashToolsMod/SortDirection.scala: L23 [E9], L24 [E10]
+[E] Failed to compile 'powerbi-visuals-tools'
+ [id => powerbi-visuals-tools, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [powerbi-visuals-tools => Compilation failed] [id => powerbi-visuals-tools, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [powerbi-visuals-tools => Compilation failed] [id => powerbi-visuals-tools, phase => publish] 

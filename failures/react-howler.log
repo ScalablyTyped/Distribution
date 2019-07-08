@@ -209,16 +209,63 @@
 [info ] ImportType.scala:245 Failed type conversion: infer D [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_DefaultProps) / TsMemberProperty(defaultProps) / TsTypeInfer())] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))) at Name(reactDashHowlerLib) / Name(reactMod) / Name(ClassicComponentClass) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(reactDashHowlerLib), Name(reactMod), Name(StaticLifecycle))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable1))),List(),NoComments), TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(Instantiable2))),List(),NoComments)) [id => react-howler, phase => scala.js, this => Name(reactDashHowlerLib) / Name(reactMod) / Name(ClassicComponentClass)] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => scala.js] 
-[error] AnimationEvent.scala:10 illegal cyclic reference involving trait AnimationEvent,       NativeAnimationEvent,  [id => react-howler, phase => build] 
-[error] ClipboardEvent.scala:10 illegal cyclic reference involving trait ClipboardEvent,       NativeClipboardEvent,  [id => react-howler, phase => build] 
-[error] CompositionEvent.scala:10 illegal cyclic reference involving trait CompositionEvent,       NativeCompositionEvent,  [id => react-howler, phase => build] 
-[error] DragEvent.scala:8 illegal cyclic reference involving trait DragEvent, trait DragEvent[T] extends MouseEvent[T, NativeDragEvent] { [id => react-howler, phase => build] 
-[error] FocusEvent.scala:10 illegal cyclic reference involving trait FocusEvent,       NativeFocusEvent,  [id => react-howler, phase => build] 
-[error] KeyboardEvent.scala:10 illegal cyclic reference involving trait KeyboardEvent,       NativeKeyboardEvent,  [id => react-howler, phase => build] 
-[error] PointerEvent.scala:8 illegal cyclic reference involving trait PointerEvent, trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] { [id => react-howler, phase => build] 
-[error] TouchEvent.scala:10 illegal cyclic reference involving trait TouchEvent,       NativeTouchEvent,  [id => react-howler, phase => build] 
-[error] TransitionEvent.scala:10 illegal cyclic reference involving trait TransitionEvent,       NativeTransitionEvent,  [id => react-howler, phase => build] 
-[error] UIEvent.scala:9 illegal cyclic reference involving trait UIEvent,   extends BaseSyntheticEvent[NativeUIEvent, reactDashHowlerLib.EventTarget with T, reactDashHowlerLib.EventTarget] { [id => react-howler, phase => build] 
-[error] WheelEvent.scala:8 illegal cyclic reference involving trait WheelEvent, trait WheelEvent[T] extends MouseEvent[T, NativeWheelEvent] { [id => react-howler, phase => build] 
+[warn ] Phase3Compile.scala:204 Building react-howler... [id => react-howler, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E11] src/main/scala/typings/reactDashHowlerLib/reactMod/WheelEvent.scala:8:43
+[E]       illegal cyclic reference involving trait WheelEvent
+[E]       L8: trait WheelEvent[T] extends MouseEvent[T, NativeWheelEvent] {
+[E]                                                     ^
+[E] [E10] src/main/scala/typings/reactDashHowlerLib/reactMod/UIEvent.scala:9:30
+[E]       illegal cyclic reference involving trait UIEvent
+[E]       L9:   extends BaseSyntheticEvent[NativeUIEvent, reactDashHowlerLib.EventTarget with T, reactDashHowlerLib.EventTarget] {
+[E]                                        ^
+[E] [E9] src/main/scala/typings/reactDashHowlerLib/reactMod/TransitionEvent.scala:10:7
+[E]      illegal cyclic reference involving trait TransitionEvent
+[E]      L10:       NativeTransitionEvent, 
+[E]                 ^
+[E] [E8] src/main/scala/typings/reactDashHowlerLib/reactMod/TouchEvent.scala:10:7
+[E]      illegal cyclic reference involving trait TouchEvent
+[E]      L10:       NativeTouchEvent, 
+[E]                 ^
+[E] [E7] src/main/scala/typings/reactDashHowlerLib/reactMod/PointerEvent.scala:8:45
+[E]      illegal cyclic reference involving trait PointerEvent
+[E]      L8: trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] {
+[E]                                                      ^
+[E] [E6] src/main/scala/typings/reactDashHowlerLib/reactMod/KeyboardEvent.scala:10:7
+[E]      illegal cyclic reference involving trait KeyboardEvent
+[E]      L10:       NativeKeyboardEvent, 
+[E]                 ^
+[E] [E5] src/main/scala/typings/reactDashHowlerLib/reactMod/FocusEvent.scala:10:7
+[E]      illegal cyclic reference involving trait FocusEvent
+[E]      L10:       NativeFocusEvent, 
+[E]                 ^
+[E] [E4] src/main/scala/typings/reactDashHowlerLib/reactMod/DragEvent.scala:8:42
+[E]      illegal cyclic reference involving trait DragEvent
+[E]      L8: trait DragEvent[T] extends MouseEvent[T, NativeDragEvent] {
+[E]                                                   ^
+[E] [E3] src/main/scala/typings/reactDashHowlerLib/reactMod/CompositionEvent.scala:10:7
+[E]      illegal cyclic reference involving trait CompositionEvent
+[E]      L10:       NativeCompositionEvent, 
+[E]                 ^
+[E] [E2] src/main/scala/typings/reactDashHowlerLib/reactMod/ClipboardEvent.scala:10:7
+[E]      illegal cyclic reference involving trait ClipboardEvent
+[E]      L10:       NativeClipboardEvent, 
+[E]                 ^
+[E] [E1] src/main/scala/typings/reactDashHowlerLib/reactMod/AnimationEvent.scala:10:7
+[E]      illegal cyclic reference involving trait AnimationEvent
+[E]      L10:       NativeAnimationEvent, 
+[E]                 ^
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/WheelEvent.scala: L8 [E11]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/ClipboardEvent.scala: L10 [E2]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/CompositionEvent.scala: L10 [E3]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/TouchEvent.scala: L10 [E8]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/KeyboardEvent.scala: L10 [E6]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/FocusEvent.scala: L10 [E5]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/DragEvent.scala: L8 [E4]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/TransitionEvent.scala: L10 [E9]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/UIEvent.scala: L9 [E10]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/PointerEvent.scala: L8 [E7]
+[E] src/main/scala/typings/reactDashHowlerLib/reactMod/AnimationEvent.scala: L10 [E1]
+[E] Failed to compile 'react-howler'
+ [id => react-howler, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [react-howler => Compilation failed] [id => react-howler, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [react-howler => Compilation failed] [id => react-howler, phase => publish] 

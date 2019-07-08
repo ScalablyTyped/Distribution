@@ -7,6 +7,13 @@
 [warn ] Phase2ToScalaJs.scala:42 Processing x-ray [id => x-ray, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(NumberDictionary))) at Name(xDashRayLib) / Name(xDashRayMod) / Name(SelectorArray) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(NumberDictionary))),List(),Comments(1))) [id => x-ray, phase => scala.js, this => Name(xDashRayLib) / Name(xDashRayMod) / Name(SelectorArray)] 
 [debug] PhaseRunner.scala:84 Success [id => x-ray, phase => scala.js] 
-[error] package.scala:14 illegal cyclic reference involving type Selector,   type ScalarSelector = java.lang.String | InstanceInvocation | org.scalablytyped.runtime.StringDictionary[Selector] [id => x-ray, phase => build] 
+[warn ] Phase3Compile.scala:204 Building x-ray... [id => x-ray, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/xDashRayLib/xDashRayMod/package.scala:14:108
+[E]      illegal cyclic reference involving type Selector
+[E]      L14:   type ScalarSelector = java.lang.String | InstanceInvocation | org.scalablytyped.runtime.StringDictionary[Selector]
+[E]                                                                                                                      ^
+[E] src/main/scala/typings/xDashRayLib/xDashRayMod/package.scala: L14 [E1]
+[E] Failed to compile 'x-ray'
+ [id => x-ray, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [x-ray => Compilation failed] [id => x-ray, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [x-ray => Compilation failed] [id => x-ray, phase => publish] 

@@ -16,6 +16,135 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[error] ganttMod.scala:15 ganttMod is already defined as object ganttMod, object ganttMod [id => dhtmlxgantt, phase => build] 
+[warn ] Phase3Compile.scala:204 Building dhtmlxgantt... [id => dhtmlxgantt, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E31] src/main/scala/typings/dhtmlxganttLib/package.scala:11:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L11: }
+[E]            ^
+[E] [E30] src/main/scala/typings/dhtmlxganttLib/package.scala:10:1
+[E]       expected class or object definition
+[E]       L10: ype GanttEventName = /* LimitUnionLength: was union type with length 89 */java.lang.String
+[E]            ^
+[E] [E29] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:299:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L299: }
+[E]             ^
+[E] [E28] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:298:3
+[E]       expected class or object definition
+[E]       L298:   def xml_format(date: stdLib.Date): java.lang.String = js.native
+[E]               ^
+[E] [E27] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:293:3
+[E]       expected class or object definition
+[E]       L293:   def xml_date(date: stdLib.Date): java.lang.String = js.native
+[E]               ^
+[E] [E26] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:288:3
+[E]       expected class or object definition
+[E]       L288:   def tooltip_text(start: stdLib.Date, end: stdLib.Date, task: js.Any): java.lang.String = js.native
+[E]               ^
+[E] [E25] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:286:5
+[E]       expected class or object definition
+[E]       L286:   	 * @param task the task object
+[E]               	 ^
+[E] [E24] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:285:5
+[E]       expected class or object definition
+[E]       L285:   	 * @param end the date when a task is scheduled to be completed
+[E]               	 ^
+[E] [E23] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:284:5
+[E]       expected class or object definition
+[E]       L284:   	 * @param start the date when a task is scheduled to begin
+[E]               	 ^
+[E] [E22] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala:283:1
+[E]       expected class or object definition
+[E]       L283: xt of tooltips
+[E]             ^
+[E] [E21] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1237:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L1237: }
+[E]              ^
+[E] [E20] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1236:3
+[E]       expected class or object definition
+[E]       L1236:   def updateTask(id: java.lang.String): scala.Unit = js.native
+[E]                ^
+[E] [E19] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1231:3
+[E]       expected class or object definition
+[E]       L1231:   def updateMarker(markerId: java.lang.String): scala.Unit = js.native
+[E]                ^
+[E] [E18] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1226:3
+[E]       expected class or object definition
+[E]       L1226:   def updateLink(id: java.lang.String): scala.Unit = js.native
+[E]                ^
+[E] [E17] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1221:3
+[E]       expected class or object definition
+[E]       L1221:   def updateCollection(collection: java.lang.String, options: js.Array[_]): scala.Boolean = js.native
+[E]                ^
+[E] [E16] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1215:3
+[E]       expected class or object definition
+[E]       L1215:   def unselectTask(): scala.Unit = js.native
+[E]                ^
+[E] [E15] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1211:3
+[E]       expected class or object definition
+[E]       L1211:   def undo(): scala.Unit = js.native
+[E]                ^
+[E] [E14] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1207:3
+[E]       expected class or object definition
+[E]       L1207:   def uid(): scala.Double = js.native
+[E]                ^
+[E] [E13] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1203:3
+[E]       expected class or object definition
+[E]       L1203:   def toggleTaskSelection(task: scala.Double): scala.Unit = js.native
+[E]                ^
+[E] [E12] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1198:3
+[E]       expected class or object definition
+[E]       L1198:   def toggleTaskSelection(task: java.lang.String): scala.Unit = js.native
+[E]                ^
+[E] [E11] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1193:3
+[E]       expected class or object definition
+[E]       L1193:   def sort(field: java.lang.String, desc: scala.Boolean, parent: scala.Double, silent: scala.Boolean): scala.Unit = js.native
+[E]                ^
+[E] [E10] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1185:3
+[E]       expected class or object definition
+[E]       L1185:   def sort(field: java.lang.String, desc: scala.Boolean, parent: scala.Double): scala.Unit = js.native
+[E]                ^
+[E] [E9] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1177:3
+[E]      expected class or object definition
+[E]      L1177:   def sort(field: java.lang.String, desc: scala.Boolean, parent: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
+[E]               ^
+[E] [E8] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1169:3
+[E]      expected class or object definition
+[E]      L1169:   def sort(field: java.lang.String, desc: scala.Boolean, parent: java.lang.String): scala.Unit = js.native
+[E]               ^
+[E] [E7] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1161:3
+[E]      expected class or object definition
+[E]      L1161:   def sort(field: java.lang.String, desc: scala.Boolean): scala.Unit = js.native
+[E]               ^
+[E] [E6] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1153:3
+[E]      expected class or object definition
+[E]      L1153:   def sort(field: java.lang.String): scala.Unit = js.native
+[E]               ^
+[E] [E5] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1145:3
+[E]      expected class or object definition
+[E]      L1145:   def sort(field: GanttCallback, desc: scala.Boolean, parent: scala.Double, silent: scala.Boolean): scala.Unit = js.native
+[E]               ^
+[E] [E4] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1137:3
+[E]      expected class or object definition
+[E]      L1137:   def sort(field: GanttCallback, desc: scala.Boolean, parent: scala.Double): scala.Unit = js.native
+[E]               ^
+[E] [E3] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1136:4
+[E]      expected class or object definition
+[E]      L1136:   	*/
+[E]               	^
+[E] [E2] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1134:5
+[E]      expected class or object definition
+[E]      L1134:   	 * @param parent the id of the parent task. Specify the parameter if you want to sort tasks only in <br> the branch of the specified parent.
+[E]               	 ^
+[E] [E1] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala:1133:1
+[E]      expected class or object definition
+[E]      L1133: y default, <i>false</i>
+[E]             ^
+[E] src/main/scala/typings/dhtmlxganttLib/GanttStatic.scala: L1133 [E1], L1134 [E2], L1136 [E3], L1137 [E4], L1145 [E5], L1153 [E6], L1161 [E7], L1169 [E8], L1177 [E9], L1185 [E10], L1193 [E11], L1198 [E12], L1203 [E13], L1207 [E14], L1211 [E15], L1215 [E16], L1221 [E17], L1226 [E18], L1231 [E19], L1236 [E20], L1237 [E21]
+[E] src/main/scala/typings/dhtmlxganttLib/package.scala: L10 [E30], L11 [E31]
+[E] src/main/scala/typings/dhtmlxganttLib/GanttTemplates.scala: L283 [E22], L284 [E23], L285 [E24], L286 [E25], L288 [E26], L293 [E27], L298 [E28], L299 [E29]
+[E] Failed to compile 'dhtmlxgantt'
+ [id => dhtmlxgantt, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => publish] 

@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "vega-embed"
-version := "3.18.2-c05511"
+version := "3.18.2-def185"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "json-stable-stringify" % "1.0-dt-20180214Z-239a1a",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "vega-lib" % "4.4.0-8bd5b5",
-  "org.scalablytyped" %%% "vega-lite" % "2.6.0-1aea95",
-  "org.scalablytyped" %%% "vega-tooltip" % "0.12.0-b2643b",
-  "org.scalablytyped" %%% "vega-typings" % "0.7.1-68bbe1",
-  "org.scalablytyped" %%% "vega-util" % "1.10.0-3cd54c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "json-stable-stringify" % "1.0-dt-20180214Z-b08cd3",
+  "org.scalablytyped" %%% "std" % "3.5-983486",
+  "org.scalablytyped" %%% "vega-lib" % "4.4.0-28fad4",
+  "org.scalablytyped" %%% "vega-lite" % "2.6.0-66ae76",
+  "org.scalablytyped" %%% "vega-tooltip" % "0.12.0-778ef9",
+  "org.scalablytyped" %%% "vega-typings" % "0.7.1-e0167e",
+  "org.scalablytyped" %%% "vega-util" % "1.10.0-2c2358")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

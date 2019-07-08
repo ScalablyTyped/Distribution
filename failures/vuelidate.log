@@ -15,6 +15,13 @@
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing vuelidate [id => vuelidate, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => scala.js] 
-[error] RuleDecl.scala:9 illegal cyclic reference involving trait RuleDecl,   extends /* rule */ org.scalablytyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl] [id => vuelidate, phase => build] 
+[warn ] Phase3Compile.scala:204 Building vuelidate... [id => vuelidate, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/vuelidateLib/typesOptionsMod/RuleDecl.scala:9:106
+[E]      illegal cyclic reference involving trait RuleDecl
+[E]      L9:   extends /* rule */ org.scalablytyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
+[E]                                                                                                                   ^
+[E] src/main/scala/typings/vuelidateLib/typesOptionsMod/RuleDecl.scala: L9 [E1]
+[E] Failed to compile 'vuelidate'
+ [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => publish] 

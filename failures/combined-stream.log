@@ -7,6 +7,13 @@
 [warn ] Phase2ToScalaJs.scala:42 Processing combined-stream [id => combined-stream, phase => scala.js] 
 [info ] InferMemberOverrides.scala:86 added override methods List(Name(off), Name(on), Name(prependOnceListener), Name(rawListeners), Name(listeners), Name(removeAllListeners), Name(listenerCount), Name(listenerCount), Name(removeListener), Name(prependListener), Name(addListener), Name(once), Name(setMaxListeners), Name(eventNames), Name(removeAllListeners), Name(rawListeners), Name(emit), Name(prependListener), Name(addListener), Name(removeAllListeners), Name(getMaxListeners), Name(off), Name(listeners), Name(prependOnceListener), Name(on), Name(once), Name(removeListener), Name(emit)) [id => combined-stream, phase => scala.js, this => Name(combinedDashStreamLib) / Name(combinedDashStreamMod) / Name(CombinedStream)] 
 [debug] PhaseRunner.scala:84 Success [id => combined-stream, phase => scala.js] 
-[error] package.scala:10 illegal cyclic reference involving type Appendable,   type NextFunction = js.Function1[/* next */ js.Function1[/* stream */ Appendable, js.Any], js.Any] [id => combined-stream, phase => build] 
+[warn ] Phase3Compile.scala:204 Building combined-stream... [id => combined-stream, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/combinedDashStreamLib/combinedDashStreamMod/package.scala:10:73
+[E]      illegal cyclic reference involving type Appendable
+[E]      L10:   type NextFunction = js.Function1[/* next */ js.Function1[/* stream */ Appendable, js.Any], js.Any]
+[E]                                                                                   ^
+[E] src/main/scala/typings/combinedDashStreamLib/combinedDashStreamMod/package.scala: L10 [E1]
+[E] Failed to compile 'combined-stream'
+ [id => combined-stream, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [combined-stream => Compilation failed] [id => combined-stream, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [combined-stream => Compilation failed] [id => combined-stream, phase => publish] 

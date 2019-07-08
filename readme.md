@@ -12,18 +12,16 @@
 
 Beware: While these typings generally work, some details of the encoding are still subject to change.
 All currently published artifacts should be considered snapshots and will be deleted without notice.
-Expect the first stable release early May.
-
-## While you're here
-There will be a talk about this project at [flatMap(Oslo)](https://2019.flatmap.no/talks/berg) in May,
-which will be available online shortly after.
+Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **7160** Javascript libraries,
+This is the home of Scala.js typings for **7159** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet with millions of lines of code
+
+The project was introduced in a talk at [flatMap(Oslo) 2019](https://www.youtube.com/watch?v=R1Z_u2rEDj4)
 
 ## Typing?
 
@@ -86,7 +84,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201907070530")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201907080530")
 ```
 
 ### `build.sbt`
@@ -119,7 +117,6 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we just have the following facades:
-- [antd-slinky](facades/antd-slinky)
 - [std](facades/std)
 - [react-router-dom-slinky](facades/react-router-dom-slinky)
 - [react](facades/react)

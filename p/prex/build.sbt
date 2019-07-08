@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "prex"
-version := "0.4.6-fcc97d"
+version := "0.4.6-b64361"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.6-1291cd",
-  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.6-e08eed",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.6-0992d2",
+  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.6-af7e02",
+  "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

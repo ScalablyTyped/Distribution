@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AbstractNode extends js.Object {
-  var attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean]
   var children: js.UndefOr[js.Array[AbstractNode]] = js.undefined
   var tag: java.lang.String
 }
@@ -14,7 +14,7 @@ trait AbstractNode extends js.Object {
 object AbstractNode {
   @scala.inline
   def apply(
-    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean],
     tag: java.lang.String,
     children: js.Array[AbstractNode] = null
   ): AbstractNode = {

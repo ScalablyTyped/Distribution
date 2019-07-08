@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pollyjs__adapter-fetch"
-version := "2.0-dt-20190131Z-4e38ca"
+version := "2.0-dt-20190131Z-db0bdb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "pollyjs__adapter" % "2.0-dt-20190131Z-21c80d")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "pollyjs__adapter" % "2.0-dt-20190131Z-d31ce9")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

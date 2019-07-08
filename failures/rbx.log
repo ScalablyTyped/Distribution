@@ -2040,14 +2040,51 @@
 [info ] ImportType.scala:245 Failed type conversion: rbx.rbx/base/helpers/variables.Variables['displays'] [id => rbx, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_Displays) / TsMemberProperty(value) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: rbx.rbx/grid/columns/column-group.ColumnGroupVariables['gapSizes'] [id => rbx, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(rbx/grid/columns/column-group) / TsDeclInterface(ColumnGroupBreakpointOptions) / TsMemberProperty(gapSize) / TsTypeLookup())] 
 [debug] PhaseRunner.scala:84 Success [id => rbx, phase => scala.js] 
-[error] Anon_AAbbrActive.scala:19 illegal cyclic reference involving type Pick,   var defaultProps: Anon_AsAnyElementType with (stdLib.Partial[ [id => rbx, phase => build] 
-[error] Anon_AAbbrActive.scala:29 illegal cyclic reference involving type Pick,   def apply[TAsComponent /* <: reactLib.reactMod.ElementType[_] */]( [id => rbx, phase => build] 
-[error] Anon_AAbbrActiveAddressAnimateAnimateMotion.scala:25 illegal cyclic reference involving type Pick,   var defaultProps: Anon_AsAnyElementType with (stdLib.Partial[ [id => rbx, phase => build] 
-[error] Anon_AAbbrActiveAddressAnimateAnimateMotion.scala:35 illegal cyclic reference involving type Pick,   def apply[TAsComponent /* <: reactLib.reactMod.ElementType[_] */]( [id => rbx, phase => build] 
-[error] ^.scala:11 illegal cyclic reference involving type Pick,   def forwardRefAs[TOwnProps, TDefaultComponent /* <: reactLib.reactMod.ReactType[_] */]( [id => rbx, phase => build] 
-[error] baseMod.scala:12 illegal cyclic reference involving type Pick,   def forwardRefAs[TOwnProps, TDefaultComponent /* <: reactLib.reactMod.ReactType[_] */]( [id => rbx, phase => build] 
-[error] package.scala:9 illegal cyclic reference involving type Omit,   type DropdownProps = stdLib.Omit[ [id => rbx, phase => build] 
-[error] package.scala:9 illegal cyclic reference involving type Omit,   type NavbarProps = stdLib.Omit[ [id => rbx, phase => build] 
-[error] rbxMod.scala:129 illegal cyclic reference involving type Pick,   def forwardRefAs[TOwnProps, TDefaultComponent /* <: reactLib.reactMod.ReactType[_] */]( [id => rbx, phase => build] 
+[warn ] Phase3Compile.scala:204 Building rbx... [id => rbx, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E9] src/main/scala/typings/rbxLib/rbxMod.scala:129:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L129:   def forwardRefAs[TOwnProps, TDefaultComponent /* <: reactLib.reactMod.ReactType[_] */](
+[E]                  ^
+[E] [E8] src/main/scala/typings/rbxLib/componentsNavbarNavbarMod/package.scala:9:8
+[E]      illegal cyclic reference involving type Omit
+[E]      L9:   type NavbarProps = stdLib.Omit[
+[E]                 ^
+[E] [E7] src/main/scala/typings/rbxLib/componentsDropdownDropdownMod/package.scala:9:8
+[E]      illegal cyclic reference involving type Omit
+[E]      L9:   type DropdownProps = stdLib.Omit[
+[E]                 ^
+[E] [E6] src/main/scala/typings/rbxLib/baseMod.scala:12:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L12:   def forwardRefAs[TOwnProps, TDefaultComponent /* <: reactLib.reactMod.ReactType[_] */](
+[E]                 ^
+[E] [E5] src/main/scala/typings/rbxLib/baseExoticMod/^.scala:11:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L11:   def forwardRefAs[TOwnProps, TDefaultComponent /* <: reactLib.reactMod.ReactType[_] */](
+[E]                 ^
+[E] [E4] src/main/scala/typings/rbxLib/Anon_AAbbrActiveAddressAnimateAnimateMotion.scala:35:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L35:   def apply[TAsComponent /* <: reactLib.reactMod.ElementType[_] */](
+[E]                 ^
+[E] [E3] src/main/scala/typings/rbxLib/Anon_AAbbrActiveAddressAnimateAnimateMotion.scala:25:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L25:   var defaultProps: Anon_AsAnyElementType with (stdLib.Partial[
+[E]             ^^^^
+[E] [E2] src/main/scala/typings/rbxLib/Anon_AAbbrActive.scala:29:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L29:   def apply[TAsComponent /* <: reactLib.reactMod.ElementType[_] */](
+[E]                 ^
+[E] [E1] src/main/scala/typings/rbxLib/Anon_AAbbrActive.scala:19:7
+[E]      illegal cyclic reference involving type Pick
+[E]      L19:   var defaultProps: Anon_AsAnyElementType with (stdLib.Partial[
+[E]             ^^^^
+[E] src/main/scala/typings/rbxLib/Anon_AAbbrActive.scala: L19 [E1], L29 [E2]
+[E] src/main/scala/typings/rbxLib/Anon_AAbbrActiveAddressAnimateAnimateMotion.scala: L25 [E3], L35 [E4]
+[E] src/main/scala/typings/rbxLib/baseMod.scala: L12 [E6]
+[E] src/main/scala/typings/rbxLib/baseExoticMod/^.scala: L11 [E5]
+[E] src/main/scala/typings/rbxLib/componentsDropdownDropdownMod/package.scala: L9 [E7]
+[E] src/main/scala/typings/rbxLib/rbxMod.scala: L129 [E9]
+[E] src/main/scala/typings/rbxLib/componentsNavbarNavbarMod/package.scala: L9 [E8]
+[E] Failed to compile 'rbx'
+ [id => rbx, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rbx => Compilation failed] [id => rbx, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rbx => Compilation failed] [id => rbx, phase => publish] 

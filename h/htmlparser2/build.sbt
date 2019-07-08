@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "htmlparser2"
-version := "v3.10.x-dt-20190326Z-4f054a"
+version := "v3.10.x-dt-20190326Z-19c7df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-c637a3",
-  "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-a6599d",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-0260d9",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-9b11f7",
+  "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-37fcfe",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

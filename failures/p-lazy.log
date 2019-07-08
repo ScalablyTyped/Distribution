@@ -6,7 +6,23 @@
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing p-lazy [id => p-lazy, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => scala.js] 
-[error] ^.scala:11 class Promise is inherited twice,   extends js.Promise[ValueType] [id => p-lazy, phase => build] 
-[error] ^.scala:12 class Promise is inherited twice,      with PLazy[ValueType] [id => p-lazy, phase => build] 
+[warn ] Phase3Compile.scala:204 Building p-lazy... [id => p-lazy, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E3] src/main/scala/typings/pDashLazyLib/pDashLazyMod/namespaced.scala:10:32
+[E]      not enough arguments for constructor Promise: (executor: scala.scalajs.js.Function2[scala.scalajs.js.Function1[T | scala.scalajs.js.Thenable[T], _], scala.scalajs.js.Function1[Any, _], _])scala.scalajs.js.Promise[T].
+[E]      Unspecified value parameter executor.
+[E]      L10: class namespaced[T] () extends PLazy[T]
+[E]                                          ^
+[E] [E2] src/main/scala/typings/pDashLazyLib/pDashLazyMod/^.scala:12:11
+[E]      class Promise is inherited twice
+[E]      L12:      with PLazy[ValueType]
+[E]                     ^
+[E] [E1] src/main/scala/typings/pDashLazyLib/pDashLazyMod/^.scala:11:14
+[E]      class Promise is inherited twice
+[E]      L11:   extends js.Promise[ValueType]
+[E]                        ^
+[E] src/main/scala/typings/pDashLazyLib/pDashLazyMod/namespaced.scala: L10 [E3]
+[E] src/main/scala/typings/pDashLazyLib/pDashLazyMod/^.scala: L11 [E1], L12 [E2]
+[E] Failed to compile 'p-lazy'
+ [id => p-lazy, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [p-lazy => Compilation failed] [id => p-lazy, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [p-lazy => Compilation failed] [id => p-lazy, phase => publish] 

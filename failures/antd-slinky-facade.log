@@ -1,0 +1,5 @@
+[debug] PhaseRunner.scala:84 Success [id => antd-slinky-facade, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => antd-slinky-facade, phase => scala.js] 
+[warn ] PhaseRunner.scala:70 Failed because of, [antd => Compilation failed] [id => antd-slinky-facade, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [antd => Compilation failed] [id => antd-slinky-facade, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [antd => Compilation failed] [id => antd-slinky-facade, phase => publish] 

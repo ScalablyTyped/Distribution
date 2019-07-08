@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "create-html-element"
-version := "3.0.0-9ee90a"
+version := "3.0.0-7e1240"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303",
-  "org.scalablytyped" %%% "stringify-attributes" % "1.0-dt-20181213Z-4dc1f8",
-  "org.scalablytyped" %%% "type-fest" % "0.3.1-0eb3f0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.5-983486",
+  "org.scalablytyped" %%% "stringify-attributes" % "1.0-dt-20181213Z-f09669",
+  "org.scalablytyped" %%% "type-fest" % "0.3.1-312d32")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

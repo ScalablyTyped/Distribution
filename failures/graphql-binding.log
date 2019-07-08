@@ -55,7 +55,17 @@
 [debug] PhaseRunner.scala:84 Success [id => graphql-binding, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing graphql-binding [id => graphql-binding, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => graphql-binding, phase => scala.js] 
-[error] Options.scala:10 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,   var transforms: js.UndefOr[js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform]] = js.undefined [id => graphql-binding, phase => build] 
-[error] Options.scala:17 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,     transforms: js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform] = null [id => graphql-binding, phase => build] 
+[warn ] Phase3Compile.scala:204 Building graphql-binding... [id => graphql-binding, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E2] src/main/scala/typings/graphqlDashBindingLib/distTypesMod/Options.scala:17:66
+[E]      type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod
+[E]      L17:     transforms: js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform] = null
+[E]                                                                            ^
+[E] [E1] src/main/scala/typings/graphqlDashBindingLib/distTypesMod/Options.scala:10:79
+[E]      type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod
+[E]      L10:   var transforms: js.UndefOr[js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform]] = js.undefined
+[E]                                                                                         ^
+[E] src/main/scala/typings/graphqlDashBindingLib/distTypesMod/Options.scala: L10 [E1], L17 [E2]
+[E] Failed to compile 'graphql-binding'
+ [id => graphql-binding, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => publish] 

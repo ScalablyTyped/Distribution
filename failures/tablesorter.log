@@ -358,7 +358,17 @@
 [debug] PhaseRunner.scala:84 Success [id => tablesorter, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing tablesorter [id => tablesorter, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => tablesorter, phase => scala.js] 
-[error] GlobalizeSettings.scala:13 type ^ is not a member of package typings.globalizeLib.globalizeMod,   var Globalize: globalizeLib.globalizeMod.^ [id => tablesorter, phase => build] 
-[error] GlobalizeSettings.scala:23 type ^ is not a member of package typings.globalizeLib.globalizeMod,     Globalize: globalizeLib.globalizeMod.^, [id => tablesorter, phase => build] 
+[warn ] Phase3Compile.scala:204 Building tablesorter... [id => tablesorter, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E2] src/main/scala/typings/tablesorterLib/globalizationGlobalizeSettingsMod/GlobalizeSettings.scala:23:42
+[E]      type ^ is not a member of package typings.globalizeLib.globalizeMod
+[E]      L23:     Globalize: globalizeLib.globalizeMod.^,
+[E]                                                    ^
+[E] [E1] src/main/scala/typings/tablesorterLib/globalizationGlobalizeSettingsMod/GlobalizeSettings.scala:13:44
+[E]      type ^ is not a member of package typings.globalizeLib.globalizeMod
+[E]      L13:   var Globalize: globalizeLib.globalizeMod.^
+[E]                                                      ^
+[E] src/main/scala/typings/tablesorterLib/globalizationGlobalizeSettingsMod/GlobalizeSettings.scala: L13 [E1], L23 [E2]
+[E] Failed to compile 'tablesorter'
+ [id => tablesorter, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tablesorter => Compilation failed] [id => tablesorter, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tablesorter => Compilation failed] [id => tablesorter, phase => publish] 

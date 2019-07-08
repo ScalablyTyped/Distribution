@@ -607,13 +607,1448 @@
 [info ] CompleteClass.scala:64 Completed implementations Vector(second, first, less) [id => tstl, phase => scala.js, this => Name(tstlLib) / Name(utilityEntryMod) / Name(Entry)] 
 [info ] CompleteClass.scala:64 Completed implementations Vector(second, first, less) [id => tstl, phase => scala.js, this => Name(tstlLib) / Name(utilityPairMod) / Name(Pair)] 
 [debug] PhaseRunner.scala:84 Success [id => tstl, phase => scala.js] 
-[error] FlatMap.scala:70 has is already defined as value has,   /* protected */ def _Handle_erase(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatMap.scala:74 has is already defined as value has,   /* protected */ def _Handle_insert(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatMultiMap.scala:70 has is already defined as value has,   /* protected */ def _Handle_erase(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatMultiMap.scala:74 has is already defined as value has,   /* protected */ def _Handle_insert(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatMultiSet.scala:53 has is already defined as value has,   /* protected */ def _Handle_erase(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatMultiSet.scala:57 has is already defined as value has,   /* protected */ def _Handle_insert(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatSet.scala:53 has is already defined as value has,   /* protected */ def _Handle_erase(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
-[error] FlatSet.scala:57 has is already defined as value has,   /* protected */ def _Handle_insert(has: js.Object, has: js.Object): scala.Unit = js.native [id => tstl, phase => build] 
+[warn ] Phase3Compile.scala:204 Building tstl... [id => tstl, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E327] src/main/scala/typings/tstlLib/tstlMod/vetor_bool.scala:52:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L52: }
+[E]             ^
+[E] [E326] src/main/scala/typings/tstlLib/tstlMod/vetor_bool.scala:51:3
+[E]        expected class or object definition
+[E]        L51:   def this(n: scala.Double, `val`: scala.Boolean) = this()
+[E]               ^
+[E] [E325] src/main/scala/typings/tstlLib/tstlMod/vetor_bool.scala:50:5
+[E]        expected class or object definition
+[E]        L50:     */
+[E]                 ^
+[E] [E324] src/main/scala/typings/tstlLib/tstlMod/unordered_set.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E323] src/main/scala/typings/tstlLib/tstlMod/unordered_set.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E322] src/main/scala/typings/tstlLib/tstlMod/unordered_multiset.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E321] src/main/scala/typings/tstlLib/tstlMod/unordered_multiset.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E320] src/main/scala/typings/tstlLib/tstlMod/unordered_multimap.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E319] src/main/scala/typings/tstlLib/tstlMod/unordered_multimap.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E318] src/main/scala/typings/tstlLib/tstlMod/unordered_map.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E317] src/main/scala/typings/tstlLib/tstlMod/unordered_map.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E316] src/main/scala/typings/tstlLib/tstlMod/unorderedUnderscoreMultimapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E315] src/main/scala/typings/tstlLib/tstlMod/unorderedUnderscoreMultimapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E314] src/main/scala/typings/tstlLib/tstlMod/unorderedUnderscoreMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E313] src/main/scala/typings/tstlLib/tstlMod/unorderedUnderscoreMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E312] src/main/scala/typings/tstlLib/tstlMod/set.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E311] src/main/scala/typings/tstlLib/tstlMod/set.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E310] src/main/scala/typings/tstlLib/tstlMod/multiset.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E309] src/main/scala/typings/tstlLib/tstlMod/multiset.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E308] src/main/scala/typings/tstlLib/tstlMod/multimapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E307] src/main/scala/typings/tstlLib/tstlMod/multimapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E306] src/main/scala/typings/tstlLib/tstlMod/multimap.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E305] src/main/scala/typings/tstlLib/tstlMod/multimap.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E304] src/main/scala/typings/tstlLib/tstlMod/mapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E303] src/main/scala/typings/tstlLib/tstlMod/mapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E302] src/main/scala/typings/tstlLib/tstlMod/map.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E301] src/main/scala/typings/tstlLib/tstlMod/map.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E300] src/main/scala/typings/tstlLib/tstlMod/forward_list.scala:46:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L46: }
+[E]             ^
+[E] [E299] src/main/scala/typings/tstlLib/tstlMod/forward_list.scala:45:3
+[E]        expected class or object definition
+[E]        L45:   def this(n: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E298] src/main/scala/typings/tstlLib/tstlMod/forward_list.scala:44:5
+[E]        expected class or object definition
+[E]        L44:     */
+[E]                 ^
+[E] [E297] src/main/scala/typings/tstlLib/tstlMod/forwardUnderscoreListNs.scala:29:1
+[E]        eof expected but '}' found.
+[E]        L29: }
+[E]             ^
+[E] [E296] src/main/scala/typings/tstlLib/tstlMod/forwardUnderscoreListNs.scala:27:3
+[E]        Unmatched closing brace '}' ignored here
+[E]        L27:   }
+[E]               ^
+[E] [E295] src/main/scala/typings/tstlLib/tstlMod/forwardUnderscoreListNs.scala:25:1
+[E]        expected class or object definition
+[E]        L25: nctionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]) = this()
+[E]             ^
+[E] [E294] src/main/scala/typings/tstlLib/tstlMod/^.scala:1397:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L1397: }
+[E]               ^
+[E] [E293] src/main/scala/typings/tstlLib/tstlMod/^.scala:1382:3
+[E]        expected class or object definition
+[E]        L1382:   def upper_bound[ForwardIterator /* <: stdLib.Readonly[
+[E]                 ^
+[E] [E292] src/main/scala/typings/tstlLib/tstlMod/^.scala:1372:3
+[E]        expected class or object definition
+[E]        L1372:   def upper_bound[ForwardIterator /* <: stdLib.Readonly[
+[E]                 ^
+[E] [E291] src/main/scala/typings/tstlLib/tstlMod/^.scala:1358:3
+[E]        expected class or object definition
+[E]        L1358:   def unique_copy[InputIterator /* <: stdLib.Readonly[
+[E]                 ^
+[E] [E290] src/main/scala/typings/tstlLib/tstlMod/^.scala:1353:3
+[E]        expected class or object definition
+[E]        L1353:   def unique_copy[InputIterator /* <: stdLib.Readonly[
+[E]                 ^
+[E] [E289] src/main/scala/typings/tstlLib/tstlMod/^.scala:1342:3
+[E]        expected class or object definition
+[E]        L1342:   def unique[InputIterator /* <: tstlLib.iteratorIFakeMod.General[
+[E]                 ^
+[E] [E288] src/main/scala/typings/tstlLib/tstlMod/^.scala:1339:3
+[E]        expected class or object definition
+[E]        L1339:   def unique[InputIterator /* <: tstlLib.iteratorIFakeMod.General[
+[E]                 ^
+[E] [E287] src/main/scala/typings/tstlLib/tstlMod/^.scala:1338:1
+[E]        expected class or object definition
+[E]        L1338: js.Promise[scala.Double] = js.native
+[E]               ^
+[E] [E286] src/main/scala/typings/tstlLib/tstlMod/VectorBoolean.scala:52:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L52: }
+[E]             ^
+[E] [E285] src/main/scala/typings/tstlLib/tstlMod/VectorBoolean.scala:51:3
+[E]        expected class or object definition
+[E]        L51:   def this(n: scala.Double, `val`: scala.Boolean) = this()
+[E]               ^
+[E] [E284] src/main/scala/typings/tstlLib/tstlMod/VectorBoolean.scala:50:5
+[E]        expected class or object definition
+[E]        L50:     */
+[E]                 ^
+[E] [E283] src/main/scala/typings/tstlLib/tstlMod/Vector.scala:82:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L82: }
+[E]             ^
+[E] [E282] src/main/scala/typings/tstlLib/tstlMod/Vector.scala:81:3
+[E]        expected class or object definition
+[E]        L81:   def this(n: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E281] src/main/scala/typings/tstlLib/tstlMod/Vector.scala:78:9
+[E]        expected start of definition
+[E]        L78:  @param size Initial size.
+[E]                     ^
+[E] [E280] src/main/scala/typings/tstlLib/tstlMod/TreeSet.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E279] src/main/scala/typings/tstlLib/tstlMod/TreeSet.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E278] src/main/scala/typings/tstlLib/tstlMod/TreeMultiSet.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E277] src/main/scala/typings/tstlLib/tstlMod/TreeMultiSet.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E276] src/main/scala/typings/tstlLib/tstlMod/TreeMultiMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E275] src/main/scala/typings/tstlLib/tstlMod/TreeMultiMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E274] src/main/scala/typings/tstlLib/tstlMod/TreeMultiMap.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E273] src/main/scala/typings/tstlLib/tstlMod/TreeMultiMap.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E272] src/main/scala/typings/tstlLib/tstlMod/TreeMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E271] src/main/scala/typings/tstlLib/tstlMod/TreeMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E270] src/main/scala/typings/tstlLib/tstlMod/TreeMap.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E269] src/main/scala/typings/tstlLib/tstlMod/TreeMap.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E268] src/main/scala/typings/tstlLib/tstlMod/PriorityQueue.scala:37:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L37: }
+[E]             ^
+[E] [E267] src/main/scala/typings/tstlLib/tstlMod/PriorityQueue.scala:35:1
+[E]        expected class or object definition
+[E]        L35: wardIteratorMod.IForwardIterator[T, _]]
+[E]             ^
+[E] [E266] src/main/scala/typings/tstlLib/tstlMod/ListNs.scala:79:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L79: }
+[E]             ^
+[E] [E265] src/main/scala/typings/tstlLib/tstlMod/ListNs.scala:60:1
+[E]        expected class or object definition
+[E]        L60: ss Iterator[T] protected ()
+[E]             ^
+[E] [E264] src/main/scala/typings/tstlLib/tstlMod/List.scala:82:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L82: }
+[E]             ^
+[E] [E263] src/main/scala/typings/tstlLib/tstlMod/List.scala:81:3
+[E]        expected class or object definition
+[E]        L81:   def this(size: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E262] src/main/scala/typings/tstlLib/tstlMod/List.scala:78:1
+[E]        expected class or object definition
+[E]        L78: aram size Initial size.
+[E]             ^
+[E] [E261] src/main/scala/typings/tstlLib/tstlMod/HashSet.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E260] src/main/scala/typings/tstlLib/tstlMod/HashSet.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E259] src/main/scala/typings/tstlLib/tstlMod/HashMultiSet.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E258] src/main/scala/typings/tstlLib/tstlMod/HashMultiSet.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E257] src/main/scala/typings/tstlLib/tstlMod/HashMultiMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E256] src/main/scala/typings/tstlLib/tstlMod/HashMultiMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E255] src/main/scala/typings/tstlLib/tstlMod/HashMultiMap.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E254] src/main/scala/typings/tstlLib/tstlMod/HashMultiMap.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E253] src/main/scala/typings/tstlLib/tstlMod/HashMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E252] src/main/scala/typings/tstlLib/tstlMod/HashMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E251] src/main/scala/typings/tstlLib/tstlMod/HashMap.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E250] src/main/scala/typings/tstlLib/tstlMod/HashMap.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E249] src/main/scala/typings/tstlLib/tstlMod/ForwardListNs.scala:29:1
+[E]        eof expected but '}' found.
+[E]        L29: }
+[E]             ^
+[E] [E248] src/main/scala/typings/tstlLib/tstlMod/ForwardListNs.scala:27:3
+[E]        Unmatched closing brace '}' ignored here
+[E]        L27:   }
+[E]               ^
+[E] [E247] src/main/scala/typings/tstlLib/tstlMod/ForwardListNs.scala:25:1
+[E]        expected class or object definition
+[E]        L25: nctionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]) = this()
+[E]             ^
+[E] [E246] src/main/scala/typings/tstlLib/tstlMod/ForwardList.scala:46:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L46: }
+[E]             ^
+[E] [E245] src/main/scala/typings/tstlLib/tstlMod/ForwardList.scala:45:3
+[E]        expected class or object definition
+[E]        L45:   def this(n: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E244] src/main/scala/typings/tstlLib/tstlMod/ForwardList.scala:44:5
+[E]        expected class or object definition
+[E]        L44:     */
+[E]                 ^
+[E] [E243] src/main/scala/typings/tstlLib/tstlMod/Deque.scala:121:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L121: }
+[E]              ^
+[E] [E242] src/main/scala/typings/tstlLib/tstlMod/Deque.scala:120:3
+[E]        expected class or object definition
+[E]        L120:   val ROW_SIZE: js.Any = js.native
+[E]                ^
+[E] [E241] src/main/scala/typings/tstlLib/tstlMod/Deque.scala:116:3
+[E]        expected class or object definition
+[E]        L116:   val MIN_CAPACITY: js.Any = js.native
+[E]                ^
+[E] [E240] src/main/scala/typings/tstlLib/tstlMod/Deque.scala:115:5
+[E]        expected class or object definition
+[E]        L115:     */
+[E]                  ^
+[E] [E239] src/main/scala/typings/tstlLib/tstlMod/Deque.scala:114:1
+[E]        expected class or object definition
+[E]        L114: dden
+[E]              ^
+[E] [E238] src/main/scala/typings/tstlLib/numericOperationsMod/^.scala:87:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L87: }
+[E]             ^
+[E] [E237] src/main/scala/typings/tstlLib/numericOperationsMod/^.scala:80:2
+[E]        expected class or object definition
+[E]        L80:  first: InputIterator,
+[E]              ^
+[E] [E236] src/main/scala/typings/tstlLib/numericMod.scala:139:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L139: }
+[E]              ^
+[E] [E235] src/main/scala/typings/tstlLib/numericMod.scala:133:1
+[E]        expected class or object definition
+[E]        L133: st: InputIterator,
+[E]              ^
+[E] [E234] src/main/scala/typings/tstlLib/experimentalThreadMod/^.scala:26:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L26: }
+[E]             ^
+[E] [E233] src/main/scala/typings/tstlLib/experimentalThreadMod/^.scala:24:1
+[E]        expected class or object definition
+[E]        L24: b.experimentalThreadTimedSemaphoreMod.TimedSemaphore
+[E]             ^
+[E] [E232] src/main/scala/typings/tstlLib/experimentalMod/^.scala:61:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L61: }
+[E]             ^
+[E] [E231] src/main/scala/typings/tstlLib/experimentalMod/^.scala:57:1
+[E]        expected class or object definition
+[E]        L57: Type[Iterator], 
+[E]             ^
+[E] [E230] src/main/scala/typings/tstlLib/containerVectorMod/Vector.scala:94:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L94: }
+[E]             ^
+[E] [E229] src/main/scala/typings/tstlLib/containerVectorMod/Vector.scala:84:1
+[E]        expected class or object definition
+[E]        L84: last: stdLib.Readonly[
+[E]             ^
+[E] [E228] src/main/scala/typings/tstlLib/containerVectorBooleanMod/vetor_bool.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E227] src/main/scala/typings/tstlLib/containerVectorBooleanMod/vetor_bool.scala:50:3
+[E]        expected class or object definition
+[E]        L50:   def this(n: scala.Double, `val`: scala.Boolean) = this()
+[E]               ^
+[E] [E226] src/main/scala/typings/tstlLib/containerVectorBooleanMod/vetor_bool.scala:49:5
+[E]        expected class or object definition
+[E]        L49:     */
+[E]                 ^
+[E] [E225] src/main/scala/typings/tstlLib/containerTreeSetMod/set.scala:44:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L44: }
+[E]             ^
+[E] [E224] src/main/scala/typings/tstlLib/containerTreeSetMod/set.scala:42:1
+[E]        expected class or object definition
+[E]        L42: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E223] src/main/scala/typings/tstlLib/containerTreeSetMod/TreeSet.scala:81:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L81: }
+[E]             ^
+[E] [E222] src/main/scala/typings/tstlLib/containerTreeSetMod/TreeSet.scala:52:1
+[E]        expected class or object definition
+[E]        L52: y, _]]
+[E]             ^
+[E] [E221] src/main/scala/typings/tstlLib/containerTreeMultiSetMod/multiset.scala:44:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L44: }
+[E]             ^
+[E] [E220] src/main/scala/typings/tstlLib/containerTreeMultiSetMod/multiset.scala:42:1
+[E]        expected class or object definition
+[E]        L42: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E219] src/main/scala/typings/tstlLib/containerTreeMultiSetMod/TreeMultiSet.scala:80:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L80: }
+[E]             ^
+[E] [E218] src/main/scala/typings/tstlLib/containerTreeMultiSetMod/TreeMultiSet.scala:52:1
+[E]        expected class or object definition
+[E]        L52: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
+[E]             ^
+[E] [E217] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/multimapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E216] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/multimapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E215] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/multimap.scala:57:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L57: }
+[E]             ^
+[E] [E214] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/multimap.scala:54:1
+[E]        expected class or object definition
+[E]        L54: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E213] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMapNs.scala:129:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L129: }
+[E]              ^
+[E] [E212] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMapNs.scala:128:3
+[E]        expected class or object definition
+[E]        L128:   type reverse_iterator[Key, T] = ReverseIterator[Key, T]
+[E]                ^
+[E] [E211] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMapNs.scala:127:1
+[E]        expected class or object definition
+[E]        L127: type iterator[Key, T] = Iterator[Key, T]
+[E]              ^
+[E] [E210] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMap.scala:97:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L97: }
+[E]             ^
+[E] [E209] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMap.scala:65:3
+[E]        ';' expected but ']' found.
+[E]        L65:   ], comp: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
+[E]               ^
+[E] [E208] src/main/scala/typings/tstlLib/containerTreeMapMod/mapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E207] src/main/scala/typings/tstlLib/containerTreeMapMod/mapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E206] src/main/scala/typings/tstlLib/containerTreeMapMod/map.scala:57:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L57: }
+[E]             ^
+[E] [E205] src/main/scala/typings/tstlLib/containerTreeMapMod/map.scala:54:1
+[E]        expected class or object definition
+[E]        L54: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E204] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMapNs.scala:119:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L119: }
+[E]              ^
+[E] [E203] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMapNs.scala:118:3
+[E]        expected class or object definition
+[E]        L118:   type reverse_iterator[Key, T] = ReverseIterator[Key, T]
+[E]                ^
+[E] [E202] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMapNs.scala:117:1
+[E]        expected class or object definition
+[E]        L117: type iterator[Key, T] = Iterator[Key, T]
+[E]              ^
+[E] [E201] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMap.scala:99:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L99: }
+[E]             ^
+[E] [E200] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMap.scala:65:1
+[E]        expected class or object definition
+[E]        L65: y, T], _]
+[E]             ^
+[E] [E199] src/main/scala/typings/tstlLib/containerPriorityQueueMod/PriorityQueue.scala:50:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L50: }
+[E]             ^
+[E] [E198] src/main/scala/typings/tstlLib/containerPriorityQueueMod/PriorityQueue.scala:49:3
+[E]        expected class or object definition
+[E]        L49:   def value_comp(): js.Function2[/* x */ T, /* y */ T, scala.Boolean] = js.native
+[E]               ^
+[E] [E197] src/main/scala/typings/tstlLib/containerPriorityQueueMod/PriorityQueue.scala:47:1
+[E]        expected class or object definition
+[E]        L47: ue comparison function.
+[E]             ^
+[E] [E196] src/main/scala/typings/tstlLib/containerMod/vetor_bool.scala:52:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L52: }
+[E]             ^
+[E] [E195] src/main/scala/typings/tstlLib/containerMod/vetor_bool.scala:51:3
+[E]        expected class or object definition
+[E]        L51:   def this(n: scala.Double, `val`: scala.Boolean) = this()
+[E]               ^
+[E] [E194] src/main/scala/typings/tstlLib/containerMod/vetor_bool.scala:50:5
+[E]        expected class or object definition
+[E]        L50:     */
+[E]                 ^
+[E] [E193] src/main/scala/typings/tstlLib/containerMod/unordered_set.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E192] src/main/scala/typings/tstlLib/containerMod/unordered_set.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E191] src/main/scala/typings/tstlLib/containerMod/unordered_multiset.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E190] src/main/scala/typings/tstlLib/containerMod/unordered_multiset.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E189] src/main/scala/typings/tstlLib/containerMod/unordered_multimap.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E188] src/main/scala/typings/tstlLib/containerMod/unordered_multimap.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E187] src/main/scala/typings/tstlLib/containerMod/unordered_map.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E186] src/main/scala/typings/tstlLib/containerMod/unordered_map.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E185] src/main/scala/typings/tstlLib/containerMod/unorderedUnderscoreMultimapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E184] src/main/scala/typings/tstlLib/containerMod/unorderedUnderscoreMultimapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E183] src/main/scala/typings/tstlLib/containerMod/unorderedUnderscoreMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E182] src/main/scala/typings/tstlLib/containerMod/unorderedUnderscoreMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E181] src/main/scala/typings/tstlLib/containerMod/set.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E180] src/main/scala/typings/tstlLib/containerMod/set.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E179] src/main/scala/typings/tstlLib/containerMod/multiset.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E178] src/main/scala/typings/tstlLib/containerMod/multiset.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E177] src/main/scala/typings/tstlLib/containerMod/multimapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E176] src/main/scala/typings/tstlLib/containerMod/multimapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E175] src/main/scala/typings/tstlLib/containerMod/multimap.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E174] src/main/scala/typings/tstlLib/containerMod/multimap.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E173] src/main/scala/typings/tstlLib/containerMod/mapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E172] src/main/scala/typings/tstlLib/containerMod/mapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E171] src/main/scala/typings/tstlLib/containerMod/map.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E170] src/main/scala/typings/tstlLib/containerMod/map.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E169] src/main/scala/typings/tstlLib/containerMod/forward_list.scala:46:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L46: }
+[E]             ^
+[E] [E168] src/main/scala/typings/tstlLib/containerMod/forward_list.scala:45:3
+[E]        expected class or object definition
+[E]        L45:   def this(n: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E167] src/main/scala/typings/tstlLib/containerMod/forward_list.scala:44:5
+[E]        expected class or object definition
+[E]        L44:     */
+[E]                 ^
+[E] [E166] src/main/scala/typings/tstlLib/containerMod/forwardUnderscoreListNs.scala:29:1
+[E]        eof expected but '}' found.
+[E]        L29: }
+[E]             ^
+[E] [E165] src/main/scala/typings/tstlLib/containerMod/forwardUnderscoreListNs.scala:27:3
+[E]        Unmatched closing brace '}' ignored here
+[E]        L27:   }
+[E]               ^
+[E] [E164] src/main/scala/typings/tstlLib/containerMod/forwardUnderscoreListNs.scala:25:1
+[E]        expected class or object definition
+[E]        L25: nctionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]) = this()
+[E]             ^
+[E] [E163] src/main/scala/typings/tstlLib/containerMod/VectorBoolean.scala:52:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L52: }
+[E]             ^
+[E] [E162] src/main/scala/typings/tstlLib/containerMod/VectorBoolean.scala:51:3
+[E]        expected class or object definition
+[E]        L51:   def this(n: scala.Double, `val`: scala.Boolean) = this()
+[E]               ^
+[E] [E161] src/main/scala/typings/tstlLib/containerMod/VectorBoolean.scala:50:5
+[E]        expected class or object definition
+[E]        L50:     */
+[E]                 ^
+[E] [E160] src/main/scala/typings/tstlLib/containerMod/Vector.scala:82:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L82: }
+[E]             ^
+[E] [E159] src/main/scala/typings/tstlLib/containerMod/Vector.scala:81:3
+[E]        expected class or object definition
+[E]        L81:   def this(n: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E158] src/main/scala/typings/tstlLib/containerMod/Vector.scala:78:9
+[E]        expected start of definition
+[E]        L78:  @param size Initial size.
+[E]                     ^
+[E] [E157] src/main/scala/typings/tstlLib/containerMod/TreeSet.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E156] src/main/scala/typings/tstlLib/containerMod/TreeSet.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E155] src/main/scala/typings/tstlLib/containerMod/TreeMultiSet.scala:45:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L45: }
+[E]             ^
+[E] [E154] src/main/scala/typings/tstlLib/containerMod/TreeMultiSet.scala:43:1
+[E]        expected class or object definition
+[E]        L43: eratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E153] src/main/scala/typings/tstlLib/containerMod/TreeMultiMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E152] src/main/scala/typings/tstlLib/containerMod/TreeMultiMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E151] src/main/scala/typings/tstlLib/containerMod/TreeMultiMap.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E150] src/main/scala/typings/tstlLib/containerMod/TreeMultiMap.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E149] src/main/scala/typings/tstlLib/containerMod/TreeMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E148] src/main/scala/typings/tstlLib/containerMod/TreeMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E147] src/main/scala/typings/tstlLib/containerMod/TreeMap.scala:58:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L58: }
+[E]             ^
+[E] [E146] src/main/scala/typings/tstlLib/containerMod/TreeMap.scala:55:1
+[E]        expected class or object definition
+[E]        L55: dIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E145] src/main/scala/typings/tstlLib/containerMod/PriorityQueue.scala:37:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L37: }
+[E]             ^
+[E] [E144] src/main/scala/typings/tstlLib/containerMod/PriorityQueue.scala:35:1
+[E]        expected class or object definition
+[E]        L35: wardIteratorMod.IForwardIterator[T, _]]
+[E]             ^
+[E] [E143] src/main/scala/typings/tstlLib/containerMod/ListNs.scala:79:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L79: }
+[E]             ^
+[E] [E142] src/main/scala/typings/tstlLib/containerMod/ListNs.scala:60:1
+[E]        expected class or object definition
+[E]        L60: tor[T] protected ()
+[E]             ^
+[E] [E141] src/main/scala/typings/tstlLib/containerMod/List.scala:82:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L82: }
+[E]             ^
+[E] [E140] src/main/scala/typings/tstlLib/containerMod/List.scala:81:3
+[E]        expected class or object definition
+[E]        L81:   def this(size: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E139] src/main/scala/typings/tstlLib/containerMod/List.scala:78:1
+[E]        expected class or object definition
+[E]        L78: aram size Initial size.
+[E]             ^
+[E] [E138] src/main/scala/typings/tstlLib/containerMod/HashSet.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E137] src/main/scala/typings/tstlLib/containerMod/HashSet.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E136] src/main/scala/typings/tstlLib/containerMod/HashMultiSet.scala:51:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L51: }
+[E]             ^
+[E] [E135] src/main/scala/typings/tstlLib/containerMod/HashMultiSet.scala:49:1
+[E]        expected class or object definition
+[E]        L49: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E134] src/main/scala/typings/tstlLib/containerMod/HashMultiMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E133] src/main/scala/typings/tstlLib/containerMod/HashMultiMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E132] src/main/scala/typings/tstlLib/containerMod/HashMultiMap.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E131] src/main/scala/typings/tstlLib/containerMod/HashMultiMap.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E130] src/main/scala/typings/tstlLib/containerMod/HashMapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E129] src/main/scala/typings/tstlLib/containerMod/HashMapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E128] src/main/scala/typings/tstlLib/containerMod/HashMap.scala:70:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L70: }
+[E]             ^
+[E] [E127] src/main/scala/typings/tstlLib/containerMod/HashMap.scala:67:1
+[E]        expected class or object definition
+[E]        L67: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E126] src/main/scala/typings/tstlLib/containerMod/ForwardListNs.scala:29:1
+[E]        eof expected but '}' found.
+[E]        L29: }
+[E]             ^
+[E] [E125] src/main/scala/typings/tstlLib/containerMod/ForwardListNs.scala:27:3
+[E]        Unmatched closing brace '}' ignored here
+[E]        L27:   }
+[E]               ^
+[E] [E124] src/main/scala/typings/tstlLib/containerMod/ForwardListNs.scala:25:1
+[E]        expected class or object definition
+[E]        L25: nctionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]) = this()
+[E]             ^
+[E] [E123] src/main/scala/typings/tstlLib/containerMod/ForwardList.scala:46:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L46: }
+[E]             ^
+[E] [E122] src/main/scala/typings/tstlLib/containerMod/ForwardList.scala:45:3
+[E]        expected class or object definition
+[E]        L45:   def this(n: scala.Double, `val`: T) = this()
+[E]               ^
+[E] [E121] src/main/scala/typings/tstlLib/containerMod/ForwardList.scala:44:5
+[E]        expected class or object definition
+[E]        L44:     */
+[E]                 ^
+[E] [E120] src/main/scala/typings/tstlLib/containerMod/Deque.scala:121:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L121: }
+[E]              ^
+[E] [E119] src/main/scala/typings/tstlLib/containerMod/Deque.scala:120:3
+[E]        expected class or object definition
+[E]        L120:   val ROW_SIZE: js.Any = js.native
+[E]                ^
+[E] [E118] src/main/scala/typings/tstlLib/containerMod/Deque.scala:116:3
+[E]        expected class or object definition
+[E]        L116:   val MIN_CAPACITY: js.Any = js.native
+[E]                ^
+[E] [E117] src/main/scala/typings/tstlLib/containerMod/Deque.scala:115:5
+[E]        expected class or object definition
+[E]        L115:     */
+[E]                  ^
+[E] [E116] src/main/scala/typings/tstlLib/containerMod/Deque.scala:114:1
+[E]        expected class or object definition
+[E]        L114: dden
+[E]              ^
+[E] [E115] src/main/scala/typings/tstlLib/containerListMod/ListNs.scala:80:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L80: }
+[E]             ^
+[E] [E114] src/main/scala/typings/tstlLib/containerListMod/ListNs.scala:67:3
+[E]        Unmatched closing brace '}' ignored here
+[E]        L67:   }
+[E]               ^
+[E] [E113] src/main/scala/typings/tstlLib/containerListMod/ListNs.scala:66:5
+[E]        expected class or object definition
+[E]        L66:     def this(sourcePtr: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerListMod.List[T]], prev: tstlLib.containerListMod.ListNs.Iterator[T], next: tstlLib.containerListMod.ListNs.Iterator[T], value: T) = this()
+[E]                 ^
+[E] [E112] src/main/scala/typings/tstlLib/containerListMod/ListNs.scala:65:7
+[E]        expected class or object definition
+[E]        L65:       */
+[E]                   ^
+[E] [E111] src/main/scala/typings/tstlLib/containerListMod/List.scala:156:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L156: }
+[E]              ^
+[E] [E110] src/main/scala/typings/tstlLib/containerListMod/List.scala:155:3
+[E]        expected class or object definition
+[E]        L155:   def this(size: scala.Double, `val`: T) = this()
+[E]                ^
+[E] [E109] src/main/scala/typings/tstlLib/containerListMod/List.scala:152:1
+[E]        expected class or object definition
+[E]        L152: aram size Initial size.
+[E]              ^
+[E] [E108] src/main/scala/typings/tstlLib/containerHashSetMod/unordered_set.scala:50:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L50: }
+[E]             ^
+[E] [E107] src/main/scala/typings/tstlLib/containerHashSetMod/unordered_set.scala:48:1
+[E]        expected class or object definition
+[E]        L48: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E106] src/main/scala/typings/tstlLib/containerHashMultiSetMod/unordered_multiset.scala:50:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L50: }
+[E]             ^
+[E] [E105] src/main/scala/typings/tstlLib/containerHashMultiSetMod/unordered_multiset.scala:48:1
+[E]        expected class or object definition
+[E]        L48: orwardIteratorMod.IForwardIterator[Key, _]]
+[E]             ^
+[E] [E104] src/main/scala/typings/tstlLib/containerHashMultiMapMod/unordered_multimap.scala:69:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L69: }
+[E]             ^
+[E] [E103] src/main/scala/typings/tstlLib/containerHashMultiMapMod/unordered_multimap.scala:66:1
+[E]        expected class or object definition
+[E]        L66: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]             ^
+[E] [E102] src/main/scala/typings/tstlLib/containerHashMultiMapMod/unorderedUnderscoreMultimapNs.scala:118:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L118: }
+[E]              ^
+[E] [E101] src/main/scala/typings/tstlLib/containerHashMultiMapMod/unorderedUnderscoreMultimapNs.scala:113:1
+[E]        expected class or object definition
+[E]        L113: e */ js.Any, 
+[E]              ^
+[E] [E100] src/main/scala/typings/tstlLib/containerHashMultiMapMod/HashMultiMapNs.scala:129:1
+[E]        Unmatched closing brace '}' ignored here
+[E]        L129: }
+[E]              ^
+[E] [E99] src/main/scala/typings/tstlLib/containerHashMultiMapMod/HashMultiMapNs.scala:128:3
+[E]       expected class or object definition
+[E]       L128:   type reverse_iterator[Key, T] = ReverseIterator[Key, T]
+[E]               ^
+[E] [E98] src/main/scala/typings/tstlLib/containerHashMultiMapMod/HashMultiMapNs.scala:127:1
+[E]       expected class or object definition
+[E]       L127: type iterator[Key, T] = Iterator[Key, T]
+[E]             ^
+[E] [E97] src/main/scala/typings/tstlLib/containerHashMapMod/unordered_map.scala:69:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L69: }
+[E]            ^
+[E] [E96] src/main/scala/typings/tstlLib/containerHashMapMod/unordered_map.scala:66:1
+[E]       expected class or object definition
+[E]       L66: dIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+[E]            ^
+[E] [E95] src/main/scala/typings/tstlLib/containerHashMapMod/unorderedUnderscoreMapNs.scala:118:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L118: }
+[E]             ^
+[E] [E94] src/main/scala/typings/tstlLib/containerHashMapMod/unorderedUnderscoreMapNs.scala:113:1
+[E]       expected class or object definition
+[E]       L113: e */ js.Any, 
+[E]             ^
+[E] [E93] src/main/scala/typings/tstlLib/containerHashMapMod/HashMapNs.scala:119:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L119: }
+[E]             ^
+[E] [E92] src/main/scala/typings/tstlLib/containerHashMapMod/HashMapNs.scala:118:3
+[E]       expected class or object definition
+[E]       L118:   type reverse_iterator[Key, T] = ReverseIterator[Key, T]
+[E]               ^
+[E] [E91] src/main/scala/typings/tstlLib/containerHashMapMod/HashMapNs.scala:117:1
+[E]       expected class or object definition
+[E]       L117: type iterator[Key, T] = Iterator[Key, T]
+[E]             ^
+[E] [E90] src/main/scala/typings/tstlLib/containerForwardListMod/forward_list.scala:45:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L45: }
+[E]            ^
+[E] [E89] src/main/scala/typings/tstlLib/containerForwardListMod/forward_list.scala:44:3
+[E]       expected class or object definition
+[E]       L44:   def this(n: scala.Double, `val`: T) = this()
+[E]              ^
+[E] [E88] src/main/scala/typings/tstlLib/containerForwardListMod/forward_list.scala:43:5
+[E]       expected class or object definition
+[E]       L43:     */
+[E]                ^
+[E] [E87] src/main/scala/typings/tstlLib/containerForwardListMod/forwardUnderscoreListNs.scala:29:1
+[E]       eof expected but '}' found.
+[E]       L29: }
+[E]            ^
+[E] [E86] src/main/scala/typings/tstlLib/containerForwardListMod/forwardUnderscoreListNs.scala:27:3
+[E]       Unmatched closing brace '}' ignored here
+[E]       L27:   }
+[E]              ^
+[E] [E85] src/main/scala/typings/tstlLib/containerForwardListMod/forwardUnderscoreListNs.scala:25:1
+[E]       expected class or object definition
+[E]       L25: nctionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]) = this()
+[E]            ^
+[E] [E84] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardListNs.scala:67:1
+[E]       eof expected but '}' found.
+[E]       L67: }
+[E]            ^
+[E] [E83] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardListNs.scala:65:3
+[E]       Unmatched closing brace '}' ignored here
+[E]       L65:   }
+[E]              ^
+[E] [E82] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardListNs.scala:64:5
+[E]       expected class or object definition
+[E]       L64:     def source(): tstlLib.containerForwardListMod.ForwardList[T] = js.native
+[E]                ^
+[E] [E81] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardListNs.scala:58:14
+[E]       expected start of definition
+[E]       L58:     override def next(): Iterator[T] = js.native
+[E]                         ^
+[E] [E80] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardListNs.scala:56:2
+[E]       expected class or object definition
+[E]       L56:  */
+[E]             ^
+[E] [E79] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardList.scala:230:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L230: }
+[E]             ^
+[E] [E78] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardList.scala:229:3
+[E]       expected class or object definition
+[E]       L229:   def toJSON(): js.Array[T] = js.native
+[E]               ^
+[E] [E77] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardList.scala:227:1
+[E]       expected class or object definition
+[E]       L227: rn An array containing children elements.
+[E]             ^
+[E] [E76] src/main/scala/typings/tstlLib/baseMod/ReverseIterator.scala:21:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L21: }
+[E]            ^
+[E] [E75] src/main/scala/typings/tstlLib/baseMod/ReverseIterator.scala:20:1
+[E]       expected class or object definition
+[E]       L20: this()
+[E]            ^
+[E] [E74] src/main/scala/typings/tstlLib/baseMod/ForOfAdaptor.scala:22:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L22: }
+[E]            ^
+[E] [E73] src/main/scala/typings/tstlLib/baseMod/ForOfAdaptor.scala:21:1
+[E]       expected class or object definition
+[E]       L21: tor) = this()
+[E]            ^
+[E] [E72] src/main/scala/typings/tstlLib/baseMod/ArrayReverseIterator.scala:20:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L20: }
+[E]            ^
+[E] [E71] src/main/scala/typings/tstlLib/baseMod/ArrayReverseIterator.scala:19:1
+[E]       expected class or object definition
+[E]       L19: yIterator[T, Source]) = this()
+[E]            ^
+[E] [E70] src/main/scala/typings/tstlLib/baseMod/ArrayIterator.scala:20:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L20: }
+[E]            ^
+[E] [E69] src/main/scala/typings/tstlLib/baseMod/ArrayIterator.scala:19:1
+[E]       expected class or object definition
+[E]       L19: e, index: scala.Double) = this()
+[E]            ^
+[E] [E68] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala:69:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L69: }
+[E]            ^
+[E] [E67] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala:68:3
+[E]       expected class or object definition
+[E]       L68:   def source(): Source = js.native
+[E]              ^
+[E] [E66] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala:62:3
+[E]       expected class or object definition
+[E]       L62:   def prev(): This = js.native
+[E]              ^
+[E] [E65] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala:58:3
+[E]       expected class or object definition
+[E]       L58:   def next(): This = js.native
+[E]              ^
+[E] [E64] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala:54:3
+[E]       expected class or object definition
+[E]       L54:   def base(): Base = js.native
+[E]              ^
+[E] [E63] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala:50:2
+[E]       expected class or object definition
+[E]       L50:  js.native
+[E]             ^
+[E] [E62] src/main/scala/typings/tstlLib/baseIteratorForOfAdaptorMod/ForOfAdaptor.scala:30:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L30: }
+[E]            ^
+[E] [E61] src/main/scala/typings/tstlLib/baseIteratorForOfAdaptorMod/ForOfAdaptor.scala:29:1
+[E]       expected class or object definition
+[E]       L29: y = js.native
+[E]            ^
+[E] [E60] src/main/scala/typings/tstlLib/baseIteratorArrayIteratorMod/ArrayReverseIterator.scala:13:1
+[E]       ';' expected but '.' found.
+[E]       L13: .baseIteratorReverseIteratorMod.ReverseIterator[T, Source, ArrayIterator[T, Source], ArrayReverseIterator[T, Source], T] {
+[E]            ^
+[E] [E59] src/main/scala/typings/tstlLib/baseIteratorArrayIteratorMod/ArrayIterator.scala:13:1
+[E]       ';' expected but ']' found.
+[E]       L13: ], T] {
+[E]            ^
+[E] [E58] src/main/scala/typings/tstlLib/baseContainerUniqueSetMod/UniqueSet.scala:45:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L45: }
+[E]            ^
+[E] [E57] src/main/scala/typings/tstlLib/baseContainerUniqueSetMod/UniqueSet.scala:41:3
+[E]       expected start of definition
+[E]       L41:   def insert_true(
+[E]              ^
+[E] [E56] src/main/scala/typings/tstlLib/baseContainerUniqueSetMod/UniqueSet.scala:37:1
+[E]       expected class or object definition
+[E]       L37: ed for the insert.
+[E]            ^
+[E] [E55] src/main/scala/typings/tstlLib/baseContainerUniqueMapMod/UniqueMap.scala:106:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L106: }
+[E]             ^
+[E] [E54] src/main/scala/typings/tstlLib/baseContainerUniqueMapMod/UniqueMap.scala:105:3
+[E]       expected class or object definition
+[E]       L105:   def set(key: Key, `val`: T): scala.Unit = js.native
+[E]               ^
+[E] [E53] src/main/scala/typings/tstlLib/baseContainerUniqueMapMod/UniqueMap.scala:95:3
+[E]       expected start of definition
+[E]       L95:   def insert_true(
+[E]              ^
+[E] [E52] src/main/scala/typings/tstlLib/baseContainerUniqueMapMod/UniqueMap.scala:82:3
+[E]       expected start of definition
+[E]       L82:   def insert_or_assign_true(
+[E]              ^
+[E] [E51] src/main/scala/typings/tstlLib/baseContainerUniqueMapMod/UniqueMap.scala:76:2
+[E]       expected class or object definition
+[E]       L76:  where the element can be inserted.
+[E]             ^
+[E] [E50] src/main/scala/typings/tstlLib/baseContainerUnderscoreITreeContainerMod/^.scala:24:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L24: }
+[E]            ^
+[E] [E49] src/main/scala/typings/tstlLib/baseContainerUnderscoreITreeContainerMod/^.scala:20:1
+[E]       ';' expected but ',' found.
+[E]       L20: , IteratorT],
+[E]            ^
+[E] [E48] src/main/scala/typings/tstlLib/baseContainerSetContainerMod/SetContainer.scala:108:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L108: }
+[E]             ^
+[E] [E47] src/main/scala/typings/tstlLib/baseContainerSetContainerMod/SetContainer.scala:107:3
+[E]       expected class or object definition
+[E]       L107:   def merge(source: Source): scala.Unit = js.native
+[E]               ^
+[E] [E46] src/main/scala/typings/tstlLib/baseContainerSetContainerMod/SetContainer.scala:103:3
+[E]       expected class or object definition
+[E]       L103:   def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
+[E]               ^
+[E] [E45] src/main/scala/typings/tstlLib/baseContainerSetContainerMod/SetContainer.scala:102:1
+[E]       expected class or object definition
+[E]       L102: ib.baseContainerSetContainerMod.SetContainerNs.InsertRet[Key, Unique, Source] = js.native
+[E]             ^
+[E] [E44] src/main/scala/typings/tstlLib/baseContainerMultiSetMod/MultiSet.scala:21:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L21: }
+[E]            ^
+[E] [E43] src/main/scala/typings/tstlLib/baseContainerMultiSetMod/MultiSet.scala:18:1
+[E]       expected class or object definition
+[E]       L18: ratorMod.SetIterator[Key, tstlLib.tstlLibNumbers.`false`, Source],
+[E]            ^
+[E] [E42] src/main/scala/typings/tstlLib/baseContainerMultiMapMod/MultiMap.scala:35:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L35: }
+[E]            ^
+[E] [E41] src/main/scala/typings/tstlLib/baseContainerMultiMapMod/MultiMap.scala:31:3
+[E]       expected start of definition
+[E]       L31:   def insert_false(
+[E]              ^
+[E] [E40] src/main/scala/typings/tstlLib/baseContainerMultiMapMod/MultiMap.scala:18:1
+[E]       expected class or object definition
+[E]       L18: ace_hint_false(
+[E]            ^
+[E] [E39] src/main/scala/typings/tstlLib/baseContainerMapContainerMod/MapContainer.scala:123:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L123: }
+[E]             ^
+[E] [E38] src/main/scala/typings/tstlLib/baseContainerMapContainerMod/MapContainer.scala:122:3
+[E]       expected class or object definition
+[E]       L122:   def merge(source: Source): scala.Unit = js.native
+[E]               ^
+[E] [E37] src/main/scala/typings/tstlLib/baseContainerMapContainerMod/MapContainer.scala:115:1
+[E]       expected class or object definition
+[E]       L115: InputIterator]
+[E]             ^
+[E] [E36] src/main/scala/typings/tstlLib/baseContainerListContainerMod/ListContainer.scala:83:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L83: }
+[E]            ^
+[E] [E35] src/main/scala/typings/tstlLib/baseContainerListContainerMod/ListContainer.scala:82:1
+[E]       expected class or object definition
+[E]       L82: ouble): scala.Unit = js.native
+[E]            ^
+[E] [E34] src/main/scala/typings/tstlLib/baseContainerIContainerMod/IContainer.scala:64:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L64: }
+[E]            ^
+[E] [E33] src/main/scala/typings/tstlLib/baseContainerIContainerMod/IContainer.scala:63:2
+[E]       ';' expected but '=' found.
+[E]       L63:  = js.native
+[E]             ^
+[E] [E32] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala:142:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L142: }
+[E]             ^
+[E] [E31] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala:141:3
+[E]       expected class or object definition
+[E]       L141:   def set(index: scala.Double, `val`: T): scala.Unit = js.native
+[E]               ^
+[E] [E30] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala:134:3
+[E]       expected class or object definition
+[E]       L134:   def resize(n: scala.Double): scala.Unit = js.native
+[E]               ^
+[E] [E29] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala:125:3
+[E]       expected class or object definition
+[E]       L125:   def push_back(`val`: T): scala.Unit = js.native
+[E]               ^
+[E] [E28] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala:124:5
+[E]       expected class or object definition
+[E]       L124:     */
+[E]                 ^
+[E] [E27] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala:123:1
+[E]       expected class or object definition
+[E]       L123: heritDoc
+[E]             ^
+[E] [E26] src/main/scala/typings/tstlLib/algorithmSortingMod.scala:147:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L147: }
+[E]             ^
+[E] [E25] src/main/scala/typings/tstlLib/algorithmSortingMod.scala:142:1
+[E]       ';' expected but ']' found.
+[E]       L142: ], 
+[E]             ^
+[E] [E24] src/main/scala/typings/tstlLib/algorithmRandomMod.scala:18:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L18: }
+[E]            ^
+[E] [E23] src/main/scala/typings/tstlLib/algorithmRandomMod.scala:17:1
+[E]       expected class or object definition
+[E]       L17: tIterator = js.native
+[E]            ^
+[E] [E22] src/main/scala/typings/tstlLib/algorithmPartitionMod.scala:79:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L79: }
+[E]            ^
+[E] [E21] src/main/scala/typings/tstlLib/algorithmPartitionMod.scala:75:1
+[E]       expected class or object definition
+[E]       L75: ctionalIterator], 
+[E]            ^
+[E] [E20] src/main/scala/typings/tstlLib/algorithmModifiersMod.scala:277:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L277: }
+[E]             ^
+[E] [E19] src/main/scala/typings/tstlLib/algorithmModifiersMod.scala:266:1
+[E]       expected class or object definition
+[E]       L266: interNs.ValueType[InputIterator], OutputIterator]
+[E]             ^
+[E] [E18] src/main/scala/typings/tstlLib/algorithmMod.scala:1160:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L1160: }
+[E]              ^
+[E] [E17] src/main/scala/typings/tstlLib/algorithmMod.scala:1145:3
+[E]       expected class or object definition
+[E]       L1145:   def upper_bound[ForwardIterator /* <: stdLib.Readonly[
+[E]                ^
+[E] [E16] src/main/scala/typings/tstlLib/algorithmMod.scala:1135:3
+[E]       expected class or object definition
+[E]       L1135:   def upper_bound[ForwardIterator /* <: stdLib.Readonly[
+[E]                ^
+[E] [E15] src/main/scala/typings/tstlLib/algorithmMod.scala:1121:3
+[E]       expected class or object definition
+[E]       L1121:   def unique_copy[InputIterator /* <: stdLib.Readonly[
+[E]                ^
+[E] [E14] src/main/scala/typings/tstlLib/algorithmMod.scala:1116:3
+[E]       expected class or object definition
+[E]       L1116:   def unique_copy[InputIterator /* <: stdLib.Readonly[
+[E]                ^
+[E] [E13] src/main/scala/typings/tstlLib/algorithmMod.scala:1105:3
+[E]       expected class or object definition
+[E]       L1105:   def unique[InputIterator /* <: tstlLib.iteratorIFakeMod.General[
+[E]                ^
+[E] [E12] src/main/scala/typings/tstlLib/algorithmMod.scala:1103:1
+[E]       expected class or object definition
+[E]       L1103: stlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
+[E]              ^
+[E] [E11] src/main/scala/typings/tstlLib/algorithmMergeMod.scala:175:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L175: }
+[E]             ^
+[E] [E10] src/main/scala/typings/tstlLib/algorithmMergeMod.scala:161:1
+[E]       expected class or object definition
+[E]       L161: */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+[E]             ^
+[E] [E9] src/main/scala/typings/tstlLib/algorithmMathematicsMod.scala:139:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L139: }
+[E]            ^
+[E] [E8] src/main/scala/typings/tstlLib/algorithmMathematicsMod.scala:131:1
+[E]      expected class or object definition
+[E]      L131: nalIterator,
+[E]            ^
+[E] [E7] src/main/scala/typings/tstlLib/algorithmIterationsMod.scala:219:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L219: }
+[E]            ^
+[E] [E6] src/main/scala/typings/tstlLib/algorithmIterationsMod.scala:203:3
+[E]      expected class or object definition
+[E]      L203:   def search_n[ForwardIterator /* <: stdLib.Readonly[
+[E]              ^
+[E] [E5] src/main/scala/typings/tstlLib/algorithmIterationsMod.scala:193:1
+[E]      expected class or object definition
+[E]      L193: atorIForwardIteratorMod.IForwardIterator[
+[E]            ^
+[E] [E4] src/main/scala/typings/tstlLib/algorithmHeapMod.scala:129:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L129: }
+[E]            ^
+[E] [E3] src/main/scala/typings/tstlLib/algorithmHeapMod.scala:125:1
+[E]      expected class or object definition
+[E]      L125: functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
+[E]            ^
+[E] [E2] src/main/scala/typings/tstlLib/algorithmBinaryUnderscoreSearchMod.scala:103:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L103: }
+[E]            ^
+[E] [E1] src/main/scala/typings/tstlLib/algorithmBinaryUnderscoreSearchMod.scala:97:1
+[E]      expected class or object definition
+[E]      L97: mp: js.Function2[
+[E]           ^
+[E] src/main/scala/typings/tstlLib/containerMod/unorderedUnderscoreMapNs.scala: L113 [E182], L118 [E183]
+[E] src/main/scala/typings/tstlLib/containerMod/TreeSet.scala: L43 [E156], L45 [E157]
+[E] src/main/scala/typings/tstlLib/tstlMod/TreeMultiMap.scala: L55 [E273], L58 [E274]
+[E] src/main/scala/typings/tstlLib/containerMod/TreeMap.scala: L55 [E146], L58 [E147]
+[E] src/main/scala/typings/tstlLib/tstlMod/map.scala: L55 [E301], L58 [E302]
+[E] src/main/scala/typings/tstlLib/containerListMod/ListNs.scala: L65 [E112], L66 [E113], L67 [E114], L80 [E115]
+[E] src/main/scala/typings/tstlLib/containerMod/multimap.scala: L55 [E174], L58 [E175]
+[E] src/main/scala/typings/tstlLib/containerPriorityQueueMod/PriorityQueue.scala: L47 [E197], L49 [E198], L50 [E199]
+[E] src/main/scala/typings/tstlLib/containerTreeMultiSetMod/multiset.scala: L42 [E220], L44 [E221]
+[E] src/main/scala/typings/tstlLib/containerMod/unordered_multimap.scala: L67 [E188], L70 [E189]
+[E] src/main/scala/typings/tstlLib/containerMod/HashSet.scala: L49 [E137], L51 [E138]
+[E] src/main/scala/typings/tstlLib/tstlMod/vetor_bool.scala: L50 [E325], L51 [E326], L52 [E327]
+[E] src/main/scala/typings/tstlLib/containerMod/PriorityQueue.scala: L35 [E144], L37 [E145]
+[E] src/main/scala/typings/tstlLib/tstlMod/TreeSet.scala: L43 [E279], L45 [E280]
+[E] src/main/scala/typings/tstlLib/containerMod/Vector.scala: L78 [E158], L81 [E159], L82 [E160]
+[E] src/main/scala/typings/tstlLib/tstlMod/HashMultiSet.scala: L49 [E258], L51 [E259]
+[E] src/main/scala/typings/tstlLib/tstlMod/^.scala: L1338 [E287], L1339 [E288], L1342 [E289], L1353 [E290], L1358 [E291], L1372 [E292], L1382 [E293], L1397 [E294]
+[E] src/main/scala/typings/tstlLib/tstlMod/HashMultiMap.scala: L67 [E254], L70 [E255]
+[E] src/main/scala/typings/tstlLib/containerMod/TreeMultiSet.scala: L43 [E154], L45 [E155]
+[E] src/main/scala/typings/tstlLib/tstlMod/forward_list.scala: L44 [E298], L45 [E299], L46 [E300]
+[E] src/main/scala/typings/tstlLib/algorithmMathematicsMod.scala: L131 [E8], L139 [E9]
+[E] src/main/scala/typings/tstlLib/containerMod/HashMapNs.scala: L113 [E129], L118 [E130]
+[E] src/main/scala/typings/tstlLib/tstlMod/Deque.scala: L114 [E239], L115 [E240], L116 [E241], L120 [E242], L121 [E243]
+[E] src/main/scala/typings/tstlLib/tstlMod/multimapNs.scala: L113 [E307], L118 [E308]
+[E] src/main/scala/typings/tstlLib/tstlMod/unordered_multiset.scala: L49 [E321], L51 [E322]
+[E] src/main/scala/typings/tstlLib/containerMod/map.scala: L55 [E170], L58 [E171]
+[E] src/main/scala/typings/tstlLib/tstlMod/unorderedUnderscoreMapNs.scala: L113 [E313], L118 [E314]
+[E] src/main/scala/typings/tstlLib/containerTreeMultiSetMod/TreeMultiSet.scala: L52 [E218], L80 [E219]
+[E] src/main/scala/typings/tstlLib/containerMod/unordered_set.scala: L49 [E192], L51 [E193]
+[E] src/main/scala/typings/tstlLib/containerHashMultiMapMod/unordered_multimap.scala: L66 [E103], L69 [E104]
+[E] src/main/scala/typings/tstlLib/tstlMod/PriorityQueue.scala: L35 [E267], L37 [E268]
+[E] src/main/scala/typings/tstlLib/algorithmHeapMod.scala: L125 [E3], L129 [E4]
+[E] src/main/scala/typings/tstlLib/containerTreeMapMod/map.scala: L54 [E205], L57 [E206]
+[E] src/main/scala/typings/tstlLib/baseIteratorArrayIteratorMod/ArrayReverseIterator.scala: L13 [E60]
+[E] src/main/scala/typings/tstlLib/containerMod/unordered_multiset.scala: L49 [E190], L51 [E191]
+[E] src/main/scala/typings/tstlLib/baseMod/ReverseIterator.scala: L20 [E75], L21 [E76]
+[E] src/main/scala/typings/tstlLib/baseMod/ArrayIterator.scala: L19 [E69], L20 [E70]
+[E] src/main/scala/typings/tstlLib/tstlMod/set.scala: L43 [E311], L45 [E312]
+[E] src/main/scala/typings/tstlLib/tstlMod/VectorBoolean.scala: L50 [E284], L51 [E285], L52 [E286]
+[E] src/main/scala/typings/tstlLib/baseContainerMultiMapMod/MultiMap.scala: L18 [E40], L31 [E41], L35 [E42]
+[E] src/main/scala/typings/tstlLib/containerListMod/List.scala: L152 [E109], L155 [E110], L156 [E111]
+[E] src/main/scala/typings/tstlLib/algorithmModifiersMod.scala: L266 [E19], L277 [E20]
+[E] src/main/scala/typings/tstlLib/tstlMod/TreeMultiSet.scala: L43 [E277], L45 [E278]
+[E] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardListNs.scala: L56 [E80], L58 [E81], L64 [E82], L65 [E83], L67 [E84]
+[E] src/main/scala/typings/tstlLib/numericMod.scala: L133 [E235], L139 [E236]
+[E] src/main/scala/typings/tstlLib/containerMod/ListNs.scala: L60 [E142], L79 [E143]
+[E] src/main/scala/typings/tstlLib/baseContainerUnderscoreITreeContainerMod/^.scala: L20 [E49], L24 [E50]
+[E] src/main/scala/typings/tstlLib/containerMod/TreeMultiMapNs.scala: L113 [E152], L118 [E153]
+[E] src/main/scala/typings/tstlLib/tstlMod/HashSet.scala: L49 [E260], L51 [E261]
+[E] src/main/scala/typings/tstlLib/containerHashMapMod/HashMapNs.scala: L117 [E91], L118 [E92], L119 [E93]
+[E] src/main/scala/typings/tstlLib/tstlMod/ForwardList.scala: L44 [E244], L45 [E245], L46 [E246]
+[E] src/main/scala/typings/tstlLib/containerMod/List.scala: L78 [E139], L81 [E140], L82 [E141]
+[E] src/main/scala/typings/tstlLib/containerMod/HashMap.scala: L67 [E127], L70 [E128]
+[E] src/main/scala/typings/tstlLib/containerTreeMapMod/mapNs.scala: L113 [E207], L118 [E208]
+[E] src/main/scala/typings/tstlLib/tstlMod/unordered_set.scala: L49 [E323], L51 [E324]
+[E] src/main/scala/typings/tstlLib/baseMod/ForOfAdaptor.scala: L21 [E73], L22 [E74]
+[E] src/main/scala/typings/tstlLib/tstlMod/multimap.scala: L55 [E305], L58 [E306]
+[E] src/main/scala/typings/tstlLib/baseContainerMapContainerMod/MapContainer.scala: L115 [E37], L122 [E38], L123 [E39]
+[E] src/main/scala/typings/tstlLib/tstlMod/ForwardListNs.scala: L25 [E247], L27 [E248], L29 [E249]
+[E] src/main/scala/typings/tstlLib/tstlMod/HashMap.scala: L67 [E250], L70 [E251]
+[E] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/multimap.scala: L54 [E214], L57 [E215]
+[E] src/main/scala/typings/tstlLib/containerHashMapMod/unordered_map.scala: L66 [E96], L69 [E97]
+[E] src/main/scala/typings/tstlLib/baseContainerSetContainerMod/SetContainer.scala: L102 [E45], L103 [E46], L107 [E47], L108 [E48]
+[E] src/main/scala/typings/tstlLib/containerMod/HashMultiSet.scala: L49 [E135], L51 [E136]
+[E] src/main/scala/typings/tstlLib/baseIteratorForOfAdaptorMod/ForOfAdaptor.scala: L29 [E61], L30 [E62]
+[E] src/main/scala/typings/tstlLib/tstlMod/TreeMultiMapNs.scala: L113 [E275], L118 [E276]
+[E] src/main/scala/typings/tstlLib/tstlMod/Vector.scala: L78 [E281], L81 [E282], L82 [E283]
+[E] src/main/scala/typings/tstlLib/containerTreeSetMod/set.scala: L42 [E224], L44 [E225]
+[E] src/main/scala/typings/tstlLib/containerMod/vetor_bool.scala: L50 [E194], L51 [E195], L52 [E196]
+[E] src/main/scala/typings/tstlLib/baseContainerIContainerMod/IContainer.scala: L63 [E33], L64 [E34]
+[E] src/main/scala/typings/tstlLib/containerMod/multiset.scala: L43 [E178], L45 [E179]
+[E] src/main/scala/typings/tstlLib/algorithmPartitionMod.scala: L75 [E21], L79 [E22]
+[E] src/main/scala/typings/tstlLib/algorithmMergeMod.scala: L161 [E10], L175 [E11]
+[E] src/main/scala/typings/tstlLib/tstlMod/List.scala: L78 [E262], L81 [E263], L82 [E264]
+[E] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMapNs.scala: L127 [E211], L128 [E212], L129 [E213]
+[E] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/multimapNs.scala: L113 [E216], L118 [E217]
+[E] src/main/scala/typings/tstlLib/containerForwardListMod/ForwardList.scala: L227 [E77], L229 [E78], L230 [E79]
+[E] src/main/scala/typings/tstlLib/containerMod/ForwardListNs.scala: L25 [E124], L27 [E125], L29 [E126]
+[E] src/main/scala/typings/tstlLib/baseIteratorArrayIteratorMod/ArrayIterator.scala: L13 [E59]
+[E] src/main/scala/typings/tstlLib/baseIteratorReverseIteratorMod/ReverseIterator.scala: L50 [E63], L54 [E64], L58 [E65], L62 [E66], L68 [E67], L69 [E68]
+[E] src/main/scala/typings/tstlLib/containerHashMultiSetMod/unordered_multiset.scala: L48 [E105], L50 [E106]
+[E] src/main/scala/typings/tstlLib/tstlMod/ListNs.scala: L60 [E265], L79 [E266]
+[E] src/main/scala/typings/tstlLib/tstlMod/mapNs.scala: L113 [E303], L118 [E304]
+[E] src/main/scala/typings/tstlLib/containerMod/set.scala: L43 [E180], L45 [E181]
+[E] src/main/scala/typings/tstlLib/containerMod/mapNs.scala: L113 [E172], L118 [E173]
+[E] src/main/scala/typings/tstlLib/tstlMod/HashMapNs.scala: L113 [E252], L118 [E253]
+[E] src/main/scala/typings/tstlLib/experimentalThreadMod/^.scala: L24 [E233], L26 [E234]
+[E] src/main/scala/typings/tstlLib/containerMod/TreeMapNs.scala: L113 [E148], L118 [E149]
+[E] src/main/scala/typings/tstlLib/containerMod/unordered_map.scala: L67 [E186], L70 [E187]
+[E] src/main/scala/typings/tstlLib/tstlMod/TreeMapNs.scala: L113 [E271], L118 [E272]
+[E] src/main/scala/typings/tstlLib/baseContainerUniqueSetMod/UniqueSet.scala: L37 [E56], L41 [E57], L45 [E58]
+[E] src/main/scala/typings/tstlLib/containerHashMapMod/unorderedUnderscoreMapNs.scala: L113 [E94], L118 [E95]
+[E] src/main/scala/typings/tstlLib/containerTreeMultiMapMod/TreeMultiMap.scala: L65 [E209], L97 [E210]
+[E] src/main/scala/typings/tstlLib/algorithmMod.scala: L1103 [E12], L1105 [E13], L1116 [E14], L1121 [E15], L1135 [E16], L1145 [E17], L1160 [E18]
+[E] src/main/scala/typings/tstlLib/containerTreeSetMod/TreeSet.scala: L52 [E222], L81 [E223]
+[E] src/main/scala/typings/tstlLib/baseContainerMultiSetMod/MultiSet.scala: L18 [E43], L21 [E44]
+[E] src/main/scala/typings/tstlLib/containerMod/forward_list.scala: L44 [E167], L45 [E168], L46 [E169]
+[E] src/main/scala/typings/tstlLib/tstlMod/unorderedUnderscoreMultimapNs.scala: L113 [E315], L118 [E316]
+[E] src/main/scala/typings/tstlLib/baseContainerArrayContainerMod/ArrayContainer.scala: L123 [E27], L124 [E28], L125 [E29], L134 [E30], L141 [E31], L142 [E32]
+[E] src/main/scala/typings/tstlLib/containerVectorBooleanMod/vetor_bool.scala: L49 [E226], L50 [E227], L51 [E228]
+[E] src/main/scala/typings/tstlLib/containerHashSetMod/unordered_set.scala: L48 [E107], L50 [E108]
+[E] src/main/scala/typings/tstlLib/containerMod/TreeMultiMap.scala: L55 [E150], L58 [E151]
+[E] src/main/scala/typings/tstlLib/baseMod/ArrayReverseIterator.scala: L19 [E71], L20 [E72]
+[E] src/main/scala/typings/tstlLib/baseContainerListContainerMod/ListContainer.scala: L82 [E35], L83 [E36]
+[E] src/main/scala/typings/tstlLib/tstlMod/unordered_multimap.scala: L67 [E319], L70 [E320]
+[E] src/main/scala/typings/tstlLib/containerMod/ForwardList.scala: L44 [E121], L45 [E122], L46 [E123]
+[E] src/main/scala/typings/tstlLib/algorithmSortingMod.scala: L142 [E25], L147 [E26]
+[E] src/main/scala/typings/tstlLib/containerMod/multimapNs.scala: L113 [E176], L118 [E177]
+[E] src/main/scala/typings/tstlLib/tstlMod/multiset.scala: L43 [E309], L45 [E310]
+[E] src/main/scala/typings/tstlLib/tstlMod/HashMultiMapNs.scala: L113 [E256], L118 [E257]
+[E] src/main/scala/typings/tstlLib/containerHashMultiMapMod/HashMultiMapNs.scala: L127 [E98], L128 [E99], L129 [E100]
+[E] src/main/scala/typings/tstlLib/baseContainerUniqueMapMod/UniqueMap.scala: L76 [E51], L82 [E52], L95 [E53], L105 [E54], L106 [E55]
+[E] src/main/scala/typings/tstlLib/tstlMod/TreeMap.scala: L55 [E269], L58 [E270]
+[E] src/main/scala/typings/tstlLib/algorithmBinaryUnderscoreSearchMod.scala: L97 [E1], L103 [E2]
+[E] src/main/scala/typings/tstlLib/experimentalMod/^.scala: L57 [E231], L61 [E232]
+[E] src/main/scala/typings/tstlLib/containerMod/HashMultiMapNs.scala: L113 [E133], L118 [E134]
+[E] src/main/scala/typings/tstlLib/containerForwardListMod/forward_list.scala: L43 [E88], L44 [E89], L45 [E90]
+[E] src/main/scala/typings/tstlLib/containerMod/unorderedUnderscoreMultimapNs.scala: L113 [E184], L118 [E185]
+[E] src/main/scala/typings/tstlLib/containerMod/Deque.scala: L114 [E116], L115 [E117], L116 [E118], L120 [E119], L121 [E120]
+[E] src/main/scala/typings/tstlLib/containerVectorMod/Vector.scala: L84 [E229], L94 [E230]
+[E] src/main/scala/typings/tstlLib/containerMod/forwardUnderscoreListNs.scala: L25 [E164], L27 [E165], L29 [E166]
+[E] src/main/scala/typings/tstlLib/containerForwardListMod/forwardUnderscoreListNs.scala: L25 [E85], L27 [E86], L29 [E87]
+[E] src/main/scala/typings/tstlLib/algorithmRandomMod.scala: L17 [E23], L18 [E24]
+[E] src/main/scala/typings/tstlLib/containerMod/VectorBoolean.scala: L50 [E161], L51 [E162], L52 [E163]
+[E] src/main/scala/typings/tstlLib/containerHashMultiMapMod/unorderedUnderscoreMultimapNs.scala: L113 [E101], L118 [E102]
+[E] src/main/scala/typings/tstlLib/algorithmIterationsMod.scala: L193 [E5], L203 [E6], L219 [E7]
+[E] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMap.scala: L65 [E200], L99 [E201]
+[E] src/main/scala/typings/tstlLib/numericOperationsMod/^.scala: L80 [E237], L87 [E238]
+[E] src/main/scala/typings/tstlLib/tstlMod/unordered_map.scala: L67 [E317], L70 [E318]
+[E] src/main/scala/typings/tstlLib/containerTreeMapMod/TreeMapNs.scala: L117 [E202], L118 [E203], L119 [E204]
+[E] src/main/scala/typings/tstlLib/tstlMod/forwardUnderscoreListNs.scala: L25 [E295], L27 [E296], L29 [E297]
+[E] src/main/scala/typings/tstlLib/containerMod/HashMultiMap.scala: L67 [E131], L70 [E132]
+[E] Failed to compile 'tstl'
+ [id => tstl, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tstl => Compilation failed] [id => tstl, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tstl => Compilation failed] [id => tstl, phase => publish] 

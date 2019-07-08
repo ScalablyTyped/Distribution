@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "naver-whale"
-version := "0.0-unknown-dt-20190327Z-3fa4fb"
+version := "0.0-unknown-dt-20190327Z-d7b029"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20190520Z-a968b2",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-15e3cf",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-4dc0f1",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20190520Z-d713be",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-e2d085",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-3bcb1c",
+  "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

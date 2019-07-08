@@ -79,7 +79,6 @@
 | 0.8794049245194621 | [pify](./p/pify) | Promisify a callback-style function
 | 0.8793111233094311 | [react-router-redux](./r/react-router-redux) | Ruthlessly simple bindings to keep react-router an
 | 0.8780174255795559 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript
-| 0.8778824096619322 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 0.8770448908707043 | [d3](./d/d3) | Data-Driven Documents
 | 0.8759344401061098 | [request-promise-native](./r/request-promise-native) | The simplified HTTP request client 'request' with 
 | 0.8758611465191484 | [micromatch](./m/micromatch) | Glob matching for javascript/node.js. A replacemen
@@ -3066,6 +3065,7 @@
 | 0.6676824925107484 | [vscode-languageserver-pro](./v/vscode-languageserver-protocol) | VSCode Language Server Protocol implementation
 | 0.6676485033719883 | [keyv__sqlite](./k/keyv__sqlite) | SQLite storage adapter for Keyv
 | 0.667516446329441 | [parent-package-json](./p/parent-package-json) | Find, read and parse the package.json of the paren
+| 0.6675151102162133 | [dts-dom](./d/dts-dom) | DOM for TypeScript Declaration Files
 | 0.6675059996014359 | [geolite2](./g/geolite2) | Maxmind's GeoLite2 Free Databases
 | 0.6674917483755334 | [ref-union](./r/ref-union) | Create ABI-compliant "union" instances on top of B
 | 0.6674647008627631 | [content-range](./c/content-range) | Content-range header formatter.

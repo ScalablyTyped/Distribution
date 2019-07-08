@@ -52,32 +52,35 @@
 [debug] PhaseRunner.scala:84 Success [id => @jest/types, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @jest/types [id => @jest/types, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => @jest/types, phase => scala.js] 
-[error] unknown file:-1 Error while emitting Global.scala
-assertion failed: 
-  Java member module without member class: package NodeJSNs - List(package NodeJSNs)
-     while compiling: /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/src/main/scala/typings/atJestTypesLib/buildGlobalMod/Global.scala
-        during phase: jvm
-     library version: version 2.12.8
-    compiler version: version 2.12.8
-  reconstructed args: -bootclasspath /home/tso/graalvm-ee-19.0.0/jre/lib/resources.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/rt.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/sunrsasign.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jsse.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jce.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/charsets.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jfr.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jvmci-services.jar:/home/tso/graalvm-ee-19.0.0/jre/classes:/home/tso/graalvm-ee-19.0.0/jre/lib/boot/graaljs-scriptengine.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/boot/graal-sdk.src.zip:/home/tso/graalvm-ee-19.0.0/jre/lib/boot/graal-sdk.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.jar -P:scalajs:sjsDefinedByDefault -opt:l:none -g:notailcalls -Xplugin:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.12.8/0.6.28/scalajs-compiler_2.12.8-0.6.28.jar -classpath /home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.28/scalajs-library_2.12-0.6.28.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.12/0.9.6/scalajs-dom_sjs0.6_2.12-0.9.6.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/com/olvind/scalablytyped-runtime_sjs0.6_2.12/2.0.0/scalablytyped-runtime_sjs0.6_2.12-2.0.0.jar:/home/tso/.ivy2/local/org.scalablytyped/istanbul-lib-coverage_sjs0.6_2.12/2.0-dt-20190425Z-a68c18/jars/istanbul-lib-coverage_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/node_sjs0.6_2.12/12.0-dt-20190703Z-0260d9/jars/node_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/yargs_sjs0.6_2.12/13.0-dt-20190407Z-1da88c/jars/yargs_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/yargs-parser_sjs0.6_2.12/13.0-dt-20190407Z-6a74f3/jars/yargs-parser_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/std_sjs0.6_2.12/3.5-d4a303/jars/std_sjs0.6_2.12.jar
-
-  last tree to typer: TypeTree(trait Dynamic)
-       tree position: line 17 of /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/src/main/scala/typings/atJestTypesLib/buildGlobalMod/Jasmine.scala
-            tree tpe: scalajs.js.Dynamic
-              symbol: (sealed abstract) trait Dynamic in package js
-   symbol definition: sealed abstract trait Dynamic extends Any with Dynamic (a ClassSymbol)
-      symbol package: scala.scalajs.js
-       symbol owners: trait Dynamic
-           call site: constructor package in package buildGlobalMod in package buildGlobalMod
-
-== Source file context for tree position ==
-
-    14   @scala.inline
-    15   def apply(addMatchers: js.Function, _DEFAULT_TIMEOUT_INTERVAL: scala.Int | scala.Double = null): Jasmine = {
-    16     val __obj = js.Dynamic.literal(addMatchers = addMatchers)
-    17     if (_DEFAULT_TIMEOUT_INTERVAL != null) __obj.updateDynamic("_DEFAULT_TIMEOUT_INTERVAL")(_DEFAULT_TIMEOUT_INTERVAL.asInstanceOf[js.Any])
-    18     __obj.asInstanceOf[Jasmine]
-    19   }
-    20 },  [id => @jest/types, phase => build] 
+[warn ] Phase3Compile.scala:204 Building jest__types... [id => @jest/types, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E-1] Error while emitting Global.scala
+[E]       assertion failed: 
+[E]         Java member module without member class: package NodeJSNs - List(package NodeJSNs)
+[E]            while compiling: /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/src/main/scala/typings/atJestTypesLib/buildGlobalMod/Global.scala
+[E]               during phase: jvm
+[E]            library version: version 2.12.8
+[E]           compiler version: version 2.12.8
+[E]         reconstructed args: -bootclasspath /home/tso/graalvm-ee-19.0.0/jre/lib/resources.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/rt.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/sunrsasign.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jsse.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jce.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/charsets.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jfr.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/jvmci-services.jar:/home/tso/graalvm-ee-19.0.0/jre/classes:/home/tso/graalvm-ee-19.0.0/jre/lib/boot/graaljs-scriptengine.jar:/home/tso/graalvm-ee-19.0.0/jre/lib/boot/graal-sdk.src.zip:/home/tso/graalvm-ee-19.0.0/jre/lib/boot/graal-sdk.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.jar -classpath /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/target/scala-2.12/bloop-internal-classes/classes-z9LgqqnBQyCKDiFzjNnSTA==:/home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/target/scala-2.12/classes-empty-jest__types:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.28/scalajs-library_2.12-0.6.28.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.28/scalajs-library_2.12-0.6.28.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/com/olvind/scalablytyped-runtime_sjs0.6_2.12/2.1.0/scalablytyped-runtime_sjs0.6_2.12-2.1.0.jar:/home/tso/.ivy2/local/org.scalablytyped/istanbul-lib-coverage_sjs0.6_2.12/2.0-dt-20190425Z-026949/jars/istanbul-lib-coverage_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/node_sjs0.6_2.12/12.0-dt-20190703Z-a67e53/jars/node_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/yargs_sjs0.6_2.12/13.0-dt-20190407Z-a3544e/jars/yargs_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/yargs-parser_sjs0.6_2.12/13.0-dt-20190407Z-01d841/jars/yargs-parser_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/std_sjs0.6_2.12/3.5-983486/jars/std_sjs0.6_2.12.jar -P:scalajs:sjsDefinedByDefault -g:notailcalls -Xplugin:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.12.8/0.6.28/scalajs-compiler_2.12.8-0.6.28.jar -Ycache-plugin-class-loader:last-modified
+[E]       
+[E]         last tree to typer: TypeTree(trait Dynamic)
+[E]              tree position: line 17 of /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/src/main/scala/typings/atJestTypesLib/buildGlobalMod/Jasmine.scala
+[E]                   tree tpe: scalajs.js.Dynamic
+[E]                     symbol: (sealed abstract) trait Dynamic in package js
+[E]          symbol definition: sealed abstract trait Dynamic extends Any with Dynamic (a ClassSymbol)
+[E]             symbol package: scala.scalajs.js
+[E]              symbol owners: trait Dynamic
+[E]                  call site: constructor package in package buildGlobalMod in package buildGlobalMod
+[E]       
+[E]       == Source file context for tree position ==
+[E]       
+[E]           14   @scala.inline
+[E]           15   def apply(addMatchers: js.Function, _DEFAULT_TIMEOUT_INTERVAL: scala.Int | scala.Double = null): Jasmine = {
+[E]           16     val __obj = js.Dynamic.literal(addMatchers = addMatchers)
+[E]           17     if (_DEFAULT_TIMEOUT_INTERVAL != null) __obj.updateDynamic("_DEFAULT_TIMEOUT_INTERVAL")(_DEFAULT_TIMEOUT_INTERVAL.asInstanceOf[js.Any])
+[E]           18     __obj.asInstanceOf[Jasmine]
+[E]           19   }
+[E]           20 }
+[E] Failed to compile 'jest__types'
+ [id => @jest/types, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@jest/types => Compilation failed] [id => @jest/types, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@jest/types => Compilation failed] [id => @jest/types, phase => publish] 

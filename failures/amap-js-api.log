@@ -195,6 +195,13 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[error] package.scala:9 illegal cyclic reference involving type Merge,   type GetOptionsResult[ExtraData] = amapDashJsDashApiLib.AMapNs.Merge[ [id => amap-js-api, phase => build] 
+[warn ] Phase3Compile.scala:204 Building amap-js-api... [id => amap-js-api, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/amapDashJsDashApiLib/AMapNs/EllipseNs/package.scala:9:8
+[E]      illegal cyclic reference involving type Merge
+[E]      L9:   type GetOptionsResult[ExtraData] = amapDashJsDashApiLib.AMapNs.Merge[
+[E]                 ^
+[E] src/main/scala/typings/amapDashJsDashApiLib/AMapNs/EllipseNs/package.scala: L9 [E1]
+[E] Failed to compile 'amap-js-api'
+ [id => amap-js-api, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [amap-js-api => Compilation failed] [id => amap-js-api, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [amap-js-api => Compilation failed] [id => amap-js-api, phase => publish] 

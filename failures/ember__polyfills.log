@@ -20,9 +20,26 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[error] atEmberPolyfillsMod.scala:13 cyclic aliasing or subtyping involving type Mix,   def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */](target: T, source1: U, source2: V): atEmberPolyfillsLib.typesMod.Mix3[T, U, V] = js.native [id => @ember/polyfills, phase => build] 
-[error] atEmberPolyfillsMod.scala:14 cyclic aliasing or subtyping involving type Mix,   def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */, W /* <: js.Object */](target: T, source1: U, source2: V, source3: W): atEmberPolyfillsLib.typesMod.Mix4[T, U, V, W] = js.native [id => @ember/polyfills, phase => build] 
-[error] package.scala:10 cyclic aliasing or subtyping involving type Mix,   type Mix3[A, B, C] = Mix[Mix[A, B], C] [id => @ember/polyfills, phase => build] 
-[error] package.scala:11 typings.atEmberPolyfillsLib.typesMod.package.Mix3 does not take type parameters,   type Mix4[A, B, C, D] = Mix3[Mix[A, B], C, D] [id => @ember/polyfills, phase => build] 
+[warn ] Phase3Compile.scala:204 Building ember__polyfills... [id => @ember/polyfills, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E4] src/main/scala/typings/atEmberPolyfillsLib/typesMod/package.scala:11:27
+[E]      typings.atEmberPolyfillsLib.typesMod.package.Mix3 does not take type parameters
+[E]      L11:   type Mix4[A, B, C, D] = Mix3[Mix[A, B], C, D]
+[E]                                     ^
+[E] [E3] src/main/scala/typings/atEmberPolyfillsLib/typesMod/package.scala:10:8
+[E]      cyclic aliasing or subtyping involving type Mix
+[E]      L10:   type Mix3[A, B, C] = Mix[Mix[A, B], C]
+[E]                  ^
+[E] [E2] src/main/scala/typings/atEmberPolyfillsLib/atEmberPolyfillsMod.scala:14:7
+[E]      cyclic aliasing or subtyping involving type Mix
+[E]      L14:   def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */, W /* <: js.Object */](target: T, source1: U, source2: V, source3: W): atEmberPolyfillsLib.typesMod.Mix4[T, U, V, W] = js.native
+[E]                 ^
+[E] [E1] src/main/scala/typings/atEmberPolyfillsLib/atEmberPolyfillsMod.scala:13:7
+[E]      cyclic aliasing or subtyping involving type Mix
+[E]      L13:   def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */](target: T, source1: U, source2: V): atEmberPolyfillsLib.typesMod.Mix3[T, U, V] = js.native
+[E]                 ^
+[E] src/main/scala/typings/atEmberPolyfillsLib/typesMod/package.scala: L10 [E3], L11 [E4]
+[E] src/main/scala/typings/atEmberPolyfillsLib/atEmberPolyfillsMod.scala: L13 [E1], L14 [E2]
+[E] Failed to compile 'ember__polyfills'
+ [id => @ember/polyfills, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => publish] 

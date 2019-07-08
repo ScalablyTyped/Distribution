@@ -45,6 +45,13 @@
 [info ] CompleteClass.scala:64 Completed implementations Vector(onComplete, onError, onNext, onSubscribe) [id => rsocket-core, phase => scala.js, this => Name(rsocketDashCoreLib) / Name(rSocketServerMod) / Name(SubscriberSwapper)] 
 [info ] CompleteClass.scala:64 Completed implementations Vector(stop, start) [id => rsocket-core, phase => scala.js, this => Name(rsocketDashCoreLib) / Name(rSocketServerMod) / Name(default)] 
 [debug] PhaseRunner.scala:84 Success [id => rsocket-core, phase => scala.js] 
-[error] rsocketDashCoreLibNumbers.scala:60 integer number too large,   def `0x100000000`: `0x100000000` = 0x100000000.asInstanceOf[`0x100000000`] [id => rsocket-core, phase => build] 
+[warn ] Phase3Compile.scala:204 Building rsocket-core... [id => rsocket-core, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/rsocketDashCoreLib/rsocketDashCoreLibNumbers.scala:60:38
+[E]      integer number too large
+[E]      L60:   def `0x100000000`: `0x100000000` = 0x100000000.asInstanceOf[`0x100000000`]
+[E]                                                ^
+[E] src/main/scala/typings/rsocketDashCoreLib/rsocketDashCoreLibNumbers.scala: L60 [E1]
+[E] Failed to compile 'rsocket-core'
+ [id => rsocket-core, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rsocket-core => Compilation failed] [id => rsocket-core, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rsocket-core => Compilation failed] [id => rsocket-core, phase => publish] 

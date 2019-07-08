@@ -8,29 +8,106 @@
 [warn ] Phase2ToScalaJs.scala:42 Processing rx.wamp [id => rx.wamp, phase => scala.js] 
 [info ] InferMemberOverrides.scala:86 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(rxDotWampLib) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => scala.js] 
-[error] IObservableWampStatic.scala:13 type Observable is not a member of package typings.rxLib.rxMod,     rxLib.rxMod.Observable[TResult] [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:22 type Observable is not a member of package typings.rxLib.rxMod,     rxLib.rxMod.Observable[TResult] [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:24 type Observable is not a member of package typings.rxLib.rxMod,   def fromConnection(options: autobahnLib.autobahnMod.IConnectionOptions): rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:25 type Observable is not a member of package typings.rxLib.rxMod,   def fromConnection(options: autobahnLib.autobahnMod.IConnectionOptions, keepReconnecting: scala.Boolean): rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:33 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:45 type Observable is not a member of package typings.rxLib.rxMod,   def publishAsObservable(session: autobahnLib.autobahnMod.Session, topic: java.lang.String): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:46 type Observable is not a member of package typings.rxLib.rxMod,   def publishAsObservable(session: autobahnLib.autobahnMod.Session, topic: java.lang.String, args: js.Array[_]): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:52 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:59 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:65 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IRegistration] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:71 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IRegistration] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:67 type Observable is not a member of package typings.rxLib.rxMod,     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session], [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:72 type Observable is not a member of package typings.rxLib.rxMod,   def subscribeAsObservable(sessionOrObservable: autobahnLib.autobahnMod.Session, topic: java.lang.String): rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:77 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:83 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:87 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:85 type Observable is not a member of package typings.rxLib.rxMod,     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session], [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:92 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:89 type Observable is not a member of package typings.rxLib.rxMod,     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session], [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:98 type Observable is not a member of package typings.rxLib.rxMod,   ): rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:94 type Observable is not a member of package typings.rxLib.rxMod,     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session], [id => rx.wamp, phase => build] 
-[error] IObservableWampStatic.scala:100 type Observable is not a member of package typings.rxLib.rxMod,   def subscriber(sessionOrObservable: rxLib.rxMod.Observable[_]): Subscriber = js.native [id => rx.wamp, phase => build] 
-[error] IPubSubSubject.scala:22 type Observable is not a member of package typings.rxLib.rxMod,   var observable: rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
-[error] IPubSubSubject.scala:23 type Observer is not a member of package typings.rxLib.rxMod,   var observer: rxLib.rxMod.Observer[IWampEvent] = js.native [id => rx.wamp, phase => build] 
+[warn ] Phase3Compile.scala:204 Building rx_dot_wamp... [id => rx.wamp, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E24] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IPubSubSubject.scala:23:29
+[E]       type Observer is not a member of package typings.rxLib.rxMod
+[E]       L23:   var observer: rxLib.rxMod.Observer[IWampEvent] = js.native
+[E]                                        ^
+[E] [E23] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IPubSubSubject.scala:22:31
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L22:   var observable: rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                                          ^
+[E] [E22] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:100:51
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L100:   def subscriber(sessionOrObservable: rxLib.rxMod.Observable[_]): Subscriber = js.native
+[E]                                                               ^
+[E] [E21] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:94:38
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L94:     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session],
+[E]                                                 ^
+[E] [E20] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:98:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L98:   ): rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                             ^
+[E] [E19] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:89:38
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L89:     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session],
+[E]                                                 ^
+[E] [E18] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:92:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L92:   ): rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                             ^
+[E] [E17] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:85:38
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L85:     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session],
+[E]                                                 ^
+[E] [E16] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:87:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L87:   ): rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                             ^
+[E] [E15] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:83:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L83:   ): rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                             ^
+[E] [E14] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:77:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L77:   ): rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                             ^
+[E] [E13] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:72:121
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L72:   def subscribeAsObservable(sessionOrObservable: autobahnLib.autobahnMod.Session, topic: java.lang.String): rxLib.rxMod.Observable[IWampEvent] = js.native
+[E]                                                                                                                                    ^
+[E] [E12] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:67:38
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L67:     sessionOrObservable: rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session],
+[E]                                                 ^
+[E] [E11] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:71:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L71:   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IRegistration] = js.native
+[E]                             ^
+[E] [E10] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:65:18
+[E]       type Observable is not a member of package typings.rxLib.rxMod
+[E]       L65:   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IRegistration] = js.native
+[E]                             ^
+[E] [E9] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:59:18
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L59:   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native
+[E]                            ^
+[E] [E8] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:52:18
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L52:   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native
+[E]                            ^
+[E] [E7] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:46:126
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L46:   def publishAsObservable(session: autobahnLib.autobahnMod.Session, topic: java.lang.String, args: js.Array[_]): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native
+[E]                                                                                                                                        ^
+[E] [E6] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:45:107
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L45:   def publishAsObservable(session: autobahnLib.autobahnMod.Session, topic: java.lang.String): rxLib.rxMod.Observable[autobahnLib.autobahnMod.IPublication] = js.native
+[E]                                                                                                                     ^
+[E] [E5] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:33:18
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L33:   ): rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session] = js.native
+[E]                            ^
+[E] [E4] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:25:121
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L25:   def fromConnection(options: autobahnLib.autobahnMod.IConnectionOptions, keepReconnecting: scala.Boolean): rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session] = js.native
+[E]                                                                                                                                   ^
+[E] [E3] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:24:88
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L24:   def fromConnection(options: autobahnLib.autobahnMod.IConnectionOptions): rxLib.rxMod.Observable[autobahnLib.autobahnMod.Session] = js.native
+[E]                                                                                                  ^
+[E] [E2] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:22:17
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L22:     rxLib.rxMod.Observable[TResult]
+[E]                           ^
+[E] [E1] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala:13:17
+[E]      type Observable is not a member of package typings.rxLib.rxMod
+[E]      L13:     rxLib.rxMod.Observable[TResult]
+[E]                           ^
+[E] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IObservableWampStatic.scala: L13 [E1], L22 [E2], L24 [E3], L25 [E4], L33 [E5], L45 [E6], L46 [E7], L52 [E8], L59 [E9], L65 [E10], L67 [E12], L71 [E11], L72 [E13], L77 [E14], L83 [E15], L85 [E17], L87 [E16], L89 [E19], L92 [E18], L94 [E21], L98 [E20], L100 [E22]
+[E] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IPubSubSubject.scala: L22 [E23], L23 [E24]
+[E] Failed to compile 'rx_dot_wamp'
+ [id => rx.wamp, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => publish] 

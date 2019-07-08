@@ -9,6 +9,17 @@
 [debug] PhaseRunner.scala:84 Success [id => prismjs, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing prismjs [id => prismjs, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => prismjs, phase => scala.js] 
-[error] hooksNs.scala:142 cyclic aliasing or subtyping involving type RequiredEnvironment,   type ElementHighlightedEnvironment = RequiredEnvironment[prismjsLib.prismjsLibStrings.highlightedCode, ElementEnvironment] [id => prismjs, phase => build] 
+[warn ] Phase3Compile.scala:204 Building prismjs... [id => prismjs, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E2] src/main/scala/typings/prismjsLib/prismjsMod/^.scala:33:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L33: }
+[E]           ^
+[E] [E1] src/main/scala/typings/prismjsLib/prismjsMod/^.scala:26:1
+[E]      expected class or object definition
+[E]      L26: a.Boolean): scala.Unit = js.native
+[E]           ^
+[E] src/main/scala/typings/prismjsLib/prismjsMod/^.scala: L26 [E1], L33 [E2]
+[E] Failed to compile 'prismjs'
+ [id => prismjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [prismjs => Compilation failed] [id => prismjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [prismjs => Compilation failed] [id => prismjs, phase => publish] 

@@ -169,8 +169,8 @@
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db) / TsDeclNamespace(default) / TsDeclTypeAlias(UpdateResult) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db) / TsDeclTypeAlias(UpdateResult) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: MClass['fields'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Table) / TsDeclInterface(ModelTableOpts) / TsMemberProperty(fields) / TsTypeLookup())] 
-[info ] ImportTree.scala:384 Dropping TsMemberTypeMapped(NoComments,Default,true,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, db, Table)), TsIdentSimple(ArrName))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List()))),Noop,TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(ReadonlyArray))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, Model)), TsIdentSimple(IdType))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(InstanceType))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List())))))))) [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Table) / TsDeclInterface(TableState) / TsMemberTypeMapped())] 
-[info ] ImportTree.scala:384 Dropping TsMemberTypeMapped(NoComments,Default,true,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, db, Table)), TsIdentSimple(MapName))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List()))),Noop,TsTypeObject(NoComments,List(TsMemberIndex(NoComments,true,Default,IndexingDict(TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(string))),List())),false,Some(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, Model)), TsIdentSimple(Ref))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(InstanceType))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List())))))))))) [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Table) / TsDeclInterface(TableState) / TsMemberTypeMapped())] 
+[info ] ImportTree.scala:389 Dropping TsMemberTypeMapped(NoComments,Default,true,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, db, Table)), TsIdentSimple(ArrName))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List()))),Noop,TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(ReadonlyArray))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, Model)), TsIdentSimple(IdType))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(InstanceType))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List())))))))) [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Table) / TsDeclInterface(TableState) / TsMemberTypeMapped())] 
+[info ] ImportTree.scala:389 Dropping TsMemberTypeMapped(NoComments,Default,true,TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, db, Table)), TsIdentSimple(MapName))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List()))),Noop,TsTypeObject(NoComments,List(TsMemberIndex(NoComments,true,Default,IndexingDict(TsIdentSimple(K),TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(string))),List())),false,Some(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm, Model)), TsIdentSimple(Ref))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(InstanceType))),List(TsTypeRef(NoComments,TsQIdent(List(TsIdentSimple(MClass))),List())))))))))) [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Table) / TsDeclInterface(TableState) / TsMemberTypeMapped())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: -? {} extends std.Pick<T, K>? K : never}[keyof T] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/helpers) / TsDeclTypeAlias(OptionalKeys) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ Key in keyof T ]: T[Key] extends ValueType? Key : never}[keyof T] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/helpers) / TsDeclTypeAlias(PickByValue) / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(OrmState) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
@@ -204,25 +204,53 @@
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Database) / TsDeclInterface(UpdateResult) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] CompleteClass.scala:64 Completed implementations Vector(state, sessionBoundModels, applyUpdate, query) [id => redux-orm, phase => scala.js, this => Name(reduxDashOrmLib) / Name(sessionMod) / Name(default)] 
 [debug] PhaseRunner.scala:84 Success [id => redux-orm, phase => scala.js] 
-[error] Model.scala:58 illegal cyclic reference involving type Pick,   def update(userMergeObj: UpdateProps[stdLib.InstanceType[MClass]]): scala.Unit = js.native [id => redux-orm, phase => build] 
-[error] ModelType.scala:18 illegal cyclic reference involving type Pick,   def create[TProps /* <: CreateProps[M, stdLib.Required[ModelFields[M]]] */](props: TProps): SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] ModelType.scala:30 illegal cyclic reference involving type Pick,   def upsert[TProps /* <: UpsertProps[M] */](props: TProps): SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] default.scala:83 illegal cyclic reference involving type Pick,   def create[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.CreateProps[M, stdLib.Required[reduxDashOrmLib.modelMod.ModelFields[M]]] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] default.scala:179 illegal cyclic reference involving type Pick,   def update(props: reduxDashOrmLib.modelMod.UpdateProps[reduxDashOrmLib.modelMod.Model[_, _]]): scala.Unit = js.native [id => redux-orm, phase => build] 
-[error] default.scala:189 illegal cyclic reference involving type Pick,   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] package.scala:15 illegal cyclic reference involving type Pick,   type CustomInstanceProps[M /* <: AnyModel */, Props /* <: js.Object */] = reduxDashOrmLib.helpersMod.PickByValue[ [id => redux-orm, phase => build] 
-[error] package.scala:46 illegal cyclic reference involving type Pick,   type SessionBoundModel[M /* <: Model[_, _] */, InstanceProps /* <: js.Object */] = M with reduxDashOrmLib.reduxDashOrmLibStrings.SessionBoundModel with js.Any with (CustomInstanceProps[M, InstanceProps]) [id => redux-orm, phase => build] 
-[error] package.scala:51 illegal cyclic reference involving type Pick,   type UpdateProps[M /* <: Model[_, _] */] = stdLib.Omit[UpsertProps[M], IdKey[M]] [id => redux-orm, phase => build] 
-[error] package.scala:52 illegal cyclic reference involving type Pick,   type UpsertProps[M /* <: Model[_, _] */] = reduxDashOrmLib.helpersMod.Overwrite[ [id => redux-orm, phase => build] 
-[error] ORM.scala:61 illegal cyclic reference involving type Pick,   def mutableSession(state: OrmState[I]): reduxDashOrmLib.sessionMod.OrmSession[I] = js.native [id => redux-orm, phase => build] 
-[error] ORM.scala:86 illegal cyclic reference involving type Pick,   def session(state: OrmState[I]): reduxDashOrmLib.sessionMod.OrmSession[I] = js.native [id => redux-orm, phase => build] 
-[error] QuerySet.scala:117 illegal cyclic reference involving type Pick,   def update(mergeObj: reduxDashOrmLib.modelMod.UpdateProps[M]): scala.Unit = js.native [id => redux-orm, phase => build] 
-[error] Model.scala:84 illegal cyclic reference involving type Pick,   def create[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.CreateProps[M, stdLib.Required[reduxDashOrmLib.modelMod.ModelFields[M]]] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] Model.scala:180 illegal cyclic reference involving type Pick,   def update(props: reduxDashOrmLib.modelMod.UpdateProps[reduxDashOrmLib.modelMod.Model[_, _]]): scala.Unit = js.native [id => redux-orm, phase => build] 
-[error] Model.scala:190 illegal cyclic reference involving type Pick,   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] default.scala:84 illegal cyclic reference involving type Pick,   def create[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.CreateProps[M, stdLib.Required[reduxDashOrmLib.modelMod.ModelFields[M]]] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] default.scala:180 illegal cyclic reference involving type Pick,   def update(props: reduxDashOrmLib.modelMod.UpdateProps[reduxDashOrmLib.modelMod.Model[_, _]]): scala.Unit = js.native [id => redux-orm, phase => build] 
-[error] default.scala:190 illegal cyclic reference involving type Pick,   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native [id => redux-orm, phase => build] 
-[error] package.scala:10 illegal cyclic reference involving type Pick,   type OrmSession[I /* <: reduxDashOrmLib.oRMMod.IndexedModelClasses[ [id => redux-orm, phase => build] 
+[warn ] Phase3Compile.scala:204 Building redux-orm... [id => redux-orm, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E10] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/OneToOne.scala:14:1
+[E]       Unmatched closing brace '}' ignored here
+[E]       L14: }
+[E]            ^
+[E] [E9] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/OneToOne.scala:13:2
+[E]      expected class or object definition
+[E]      L13:  reduxDashOrmLib.TypeofClassModel, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
+[E]            ^
+[E] [E8] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ORM.scala:35:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L35: }
+[E]           ^
+[E] [E7] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ORM.scala:23:1
+[E]      expected class or object definition
+[E]      L23: String): reduxDashOrmLib.TypeofClassModel = js.native
+[E]           ^
+[E] [E6] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ManyToMany.scala:14:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L14: }
+[E]           ^
+[E] [E5] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ManyToMany.scala:13:1
+[E]      expected class or object definition
+[E]      L13: eduxDashOrmLib.TypeofClassModel, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
+[E]           ^
+[E] [E4] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ForeignKey.scala:14:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L14: }
+[E]           ^
+[E] [E3] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ForeignKey.scala:13:1
+[E]      expected class or object definition
+[E]      L13: eduxDashOrmLib.TypeofClassModel, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
+[E]           ^
+[E] [E2] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Attribute.scala:16:1
+[E]      Unmatched closing brace '}' ignored here
+[E]      L16: }
+[E]           ^
+[E] [E1] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Attribute.scala:15:1
+[E]      expected class or object definition
+[E]      L15: sModel, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
+[E]           ^
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ForeignKey.scala: L13 [E3], L14 [E4]
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ORM.scala: L23 [E7], L35 [E8]
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/OneToOne.scala: L13 [E9], L14 [E10]
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/ManyToMany.scala: L13 [E5], L14 [E6]
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Attribute.scala: L15 [E1], L16 [E2]
+[E] Failed to compile 'redux-orm'
+ [id => redux-orm, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [redux-orm => Compilation failed] [id => redux-orm, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [redux-orm => Compilation failed] [id => redux-orm, phase => publish] 

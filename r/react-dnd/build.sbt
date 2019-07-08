@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-dnd"
-version := "7.7.0-af74cf"
+version := "7.7.0-73c0ec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-e47d18",
-  "org.scalablytyped" %%% "dnd-core" % "7.7.0-4102da",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-89a21d",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-2a42a7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-97e7d2",
-  "org.scalablytyped" %%% "std" % "3.5-d4a303")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "dnd-core" % "7.7.0-7f8d6d",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-024da0",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
+  "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

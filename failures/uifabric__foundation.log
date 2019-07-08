@@ -39,6 +39,13 @@
 [warn ] Phase2ToScalaJs.scala:42 Processing @uifabric/foundation [id => @uifabric/foundation, phase => scala.js] 
 [info ] ImportType.scala:245 Failed type conversion: react.react.Global.JSX.IntrinsicElements[TElement] [id => @uifabric/foundation, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@uifabric/foundation/lib/IHTMLSlots) / TsDeclTypeAlias(IHTMLElementSlot) / TsTypeRef() / TsTypeLookup())] 
 [debug] PhaseRunner.scala:84 Success [id => @uifabric/foundation, phase => scala.js] 
-[error] package.scala:30 illegal cyclic reference involving type ITokenFunctionOrObject,     (ITokenFunctionOrObject[TViewProps, TTokens]) | atUifabricFoundationLib.atUifabricFoundationLibNumbers.`false` | scala.Null [id => @uifabric/foundation, phase => build] 
+[warn ] Phase3Compile.scala:204 Building uifabric__foundation... [id => @uifabric/foundation, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/atUifabricFoundationLib/libIComponentMod/package.scala:30:6
+[E]      illegal cyclic reference involving type ITokenFunctionOrObject
+[E]      L30:     (ITokenFunctionOrObject[TViewProps, TTokens]) | atUifabricFoundationLib.atUifabricFoundationLibNumbers.`false` | scala.Null
+[E]                ^
+[E] src/main/scala/typings/atUifabricFoundationLib/libIComponentMod/package.scala: L30 [E1]
+[E] Failed to compile 'uifabric__foundation'
+ [id => @uifabric/foundation, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@uifabric/foundation => Compilation failed] [id => @uifabric/foundation, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@uifabric/foundation => Compilation failed] [id => @uifabric/foundation, phase => publish] 

@@ -6,7 +6,17 @@
 [debug] PhaseRunner.scala:84 Success [id => postmate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing postmate [id => postmate, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => postmate, phase => scala.js] 
-[error] ^.scala:11 class Promise is inherited twice,   extends js.Promise[ParentAPI] [id => postmate, phase => build] 
-[error] ^.scala:12 class Promise is inherited twice,      with Postmate { [id => postmate, phase => build] 
+[warn ] Phase3Compile.scala:204 Building postmate... [id => postmate, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E2] src/main/scala/typings/postmateLib/postmateMod/^.scala:12:11
+[E]      class Promise is inherited twice
+[E]      L12:      with Postmate {
+[E]                     ^
+[E] [E1] src/main/scala/typings/postmateLib/postmateMod/^.scala:11:14
+[E]      class Promise is inherited twice
+[E]      L11:   extends js.Promise[ParentAPI]
+[E]                        ^
+[E] src/main/scala/typings/postmateLib/postmateMod/^.scala: L11 [E1], L12 [E2]
+[E] Failed to compile 'postmate'
+ [id => postmate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [postmate => Compilation failed] [id => postmate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [postmate => Compilation failed] [id => postmate, phase => publish] 

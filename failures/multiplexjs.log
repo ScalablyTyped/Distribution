@@ -7,9 +7,16 @@
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing multiplexjs [id => multiplexjs, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => scala.js] 
-[error] Lookup.scala:17 name clash between defined and inherited member:
-def contains(value: typings.multiplexjsLib.multiplexNs.Grouping[TKey,TElement]): Boolean in trait Enumerable and
-def contains(key: TKey): Boolean at line 17
-have same type after erasure: (value: Object)Boolean,   def contains(key: TKey): scala.Boolean = js.native [id => multiplexjs, phase => build] 
+[warn ] Phase3Compile.scala:204 Building multiplexjs... [id => multiplexjs, phase => build] 
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/multiplexjsLib/multiplexNs/Lookup.scala:17:7
+[E]      name clash between defined and inherited member:
+[E]      def contains(value: typings.multiplexjsLib.multiplexNs.Grouping[TKey,TElement]): Boolean in trait Enumerable and
+[E]      def contains(key: TKey): Boolean at line 17
+[E]      have same type after erasure: (value: Object)Boolean
+[E]      L17:   def contains(key: TKey): scala.Boolean = js.native
+[E]                 ^
+[E] src/main/scala/typings/multiplexjsLib/multiplexNs/Lookup.scala: L17 [E1]
+[E] Failed to compile 'multiplexjs'
+ [id => multiplexjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => publish] 
