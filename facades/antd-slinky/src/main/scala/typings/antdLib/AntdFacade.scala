@@ -127,9 +127,9 @@ object AntdFacade extends antdLibProps {
   @inline def Tooltip:            ExternalComponentP[TooltipProps]                                                     = importSTComponent(Antd.Tooltip)
   @inline def Transfer:           ExternalComponentP[TransferProps]                                                    = importSTComponent(Antd.Transfer)
   @inline def Tree:               ExternalComponentP[TreeProps]                                                        = importSTComponent(Antd.Tree)
-  @inline def TreeDashSelect:     ExternalComponentP[TreeDashSelectProps]                                              = importSTComponent(Antd.TreeDashSelect)
+  @inline def TreeDashSelect[T]:  ExternalComponentP[TreeDashSelectProps[T]]                                           = importSTComponent(Antd.TreeDashSelect[T])
   @inline def TreeNode:           ExternalComponentP[TreeNodeProps]                                                    = importSTComponent(Antd.TreeNode)
-  @inline def TreeSelect:         ExternalComponentP[TreeSelectProps]                                                  = importSTComponent(Antd.TreeSelect)
+  @inline def TreeSelect[T]:      ExternalComponentP[TreeSelectProps[T]]                                               = importSTComponent(Antd.TreeSelect[T])
   @inline def Typography:         ExternalComponentP[TypographyProps]                                                  = importSTComponent(Antd.Typography)
   @inline def Upload:             ExternalComponentP[UploadProps]                                                      = importSTComponent(Antd.Upload)
 
