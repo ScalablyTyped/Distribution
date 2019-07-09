@@ -11,6 +11,10 @@ trait IPaymentIntentConfirmOptions extends js.Object {
     */
   var client_secret: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * ID of the payment method (a PaymentMethod, Card, BankAccount, or saved Source object) to attach to this PaymentIntent.
+    */
+  var payment_method: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
   var receipt_email: js.UndefOr[java.lang.String | scala.Null] = js.undefined
@@ -36,6 +40,7 @@ object IPaymentIntentConfirmOptions {
   @scala.inline
   def apply(
     client_secret: java.lang.String = null,
+    payment_method: java.lang.String = null,
     receipt_email: java.lang.String = null,
     return_url: java.lang.String = null,
     save_payment_method: js.UndefOr[scala.Boolean] = js.undefined,
@@ -44,6 +49,7 @@ object IPaymentIntentConfirmOptions {
   ): IPaymentIntentConfirmOptions = {
     val __obj = js.Dynamic.literal()
     if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (return_url != null) __obj.updateDynamic("return_url")(return_url)
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)

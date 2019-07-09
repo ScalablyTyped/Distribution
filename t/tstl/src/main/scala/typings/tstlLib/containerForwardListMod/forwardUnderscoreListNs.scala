@@ -14,11 +14,11 @@ object forwardUnderscoreListNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
+  /**
+    * @hidden
+    */
   class Iterator[T] protected ()
-    extends tstlLib.containerForwardListMod.ForwardListNs.Iterator[T] {
-    def this(source: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]) = this()
-    def this(source: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T], value: T) = this()
-  }
+    extends tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]
   
 }
 

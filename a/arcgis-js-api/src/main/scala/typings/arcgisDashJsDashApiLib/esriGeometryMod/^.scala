@@ -14,5 +14,6 @@ object ^ extends js.Object {
   val Point: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.PointConstructor = js.native
   val Polygon: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.PolygonConstructor = js.native
   val Polyline: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.PolylineConstructor = js.native
+  val SpatialReference: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.SpatialReferenceConstructor = js.native
 }
 

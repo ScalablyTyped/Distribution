@@ -250,7 +250,7 @@ trait MathJsChain extends js.Object {
     ************************************************************************/
   /**
     * Parse and compile an expression. Returns a an object with a function
-    * eval([scope]) to evaluate the compiled expression.
+    * evaluate([scope]) to evaluate the compiled expression.
     */
   def compile(): MathJsChain = js.native
   /**
@@ -466,8 +466,8 @@ trait MathJsChain extends js.Object {
     * Evaluate an expression.
     * @param scope Scope to read/write variables
     */
-  def eval(): MathJsChain = js.native
-  def eval(scope: js.Object): MathJsChain = js.native
+  def evaluate(): MathJsChain = js.native
+  def evaluate(scope: js.Object): MathJsChain = js.native
   /**
     * Calculate the exponent of a value. For matrices, the function is
     * evaluated element wise.
@@ -951,7 +951,7 @@ trait MathJsChain extends js.Object {
   def or(y: scala.Double): MathJsChain = js.native
   /**
     * Parse an expression. Returns a node tree, which can be evaluated by
-    * invoking node.eval();
+    * invoking node.evaluate();
     * @param options Available options: nodes - a set of custome nodes
     */
   def parse(): MathJsChain = js.native
@@ -1364,7 +1364,7 @@ trait MathJsChain extends js.Object {
   /**
     * Compute the standard deviation of a matrix or a list with values. The
     * standard deviations is defined as the square root of the variance:
-    * std(A) = sqrt(var(A)). In case of a (multi dimensional) array or
+    * std(A) = sqrt(variance(A)). In case of a (multi dimensional) array or
     * matrix, the standard deviation over all elements will be calculated.
     * Optionally, the type of normalization can be specified as second
     * parameter. The parameter normalization can be one of the following
@@ -1459,7 +1459,7 @@ trait MathJsChain extends js.Object {
   /**
     * Determine the type of a variable.
     */
-  def typeof(): MathJsChain = js.native
+  def typeOf(): MathJsChain = js.native
   /**
     * Inverse the sign of a value, apply a unary minus operation. For
     * matrices, the function is evaluated element wise. Boolean values and
@@ -1511,19 +1511,19 @@ trait MathJsChain extends js.Object {
     * is divided by n 'biased' The sum of squared errors is divided by (n +
     * 1) Note that older browser may not like the variable name var. In
     * that case, the function can be called as math['var'](...) instead of
-    * math.var(...).
+    * math.variance(...).
     * @param normalization normalization Determines how to normalize the
     * variance. Choose ‘unbiased’ (default), ‘uncorrected’, or ‘biased’.
     * Default value: ‘unbiased’.
     * @returns The variance
     */
-  def `var`(): MathJsChain = js.native
-  @JSName("var")
-  def var_biased(normalization: mathjsLib.mathjsLibStrings.biased): MathJsChain = js.native
-  @JSName("var")
-  def var_unbiased(normalization: mathjsLib.mathjsLibStrings.unbiased): MathJsChain = js.native
-  @JSName("var")
-  def var_uncorrected(normalization: mathjsLib.mathjsLibStrings.uncorrected): MathJsChain = js.native
+  def variance(): MathJsChain = js.native
+  @JSName("variance")
+  def variance_biased(normalization: mathjsLib.mathjsLibStrings.biased): MathJsChain = js.native
+  @JSName("variance")
+  def variance_unbiased(normalization: mathjsLib.mathjsLibStrings.unbiased): MathJsChain = js.native
+  @JSName("variance")
+  def variance_uncorrected(normalization: mathjsLib.mathjsLibStrings.uncorrected): MathJsChain = js.native
   def xgcd(b: BigNumber): MathJsChain = js.native
   /**
     * Calculate the extended greatest common divisor for two values. See

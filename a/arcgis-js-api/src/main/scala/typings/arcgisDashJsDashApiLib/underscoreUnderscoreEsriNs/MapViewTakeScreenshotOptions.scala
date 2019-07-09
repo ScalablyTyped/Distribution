@@ -28,6 +28,12 @@ trait MapViewTakeScreenshotOptions
     */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Indicates whether view padding should be ignored. Set this property to `true` to allow padded areas to be included in the screenshot.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+    */
+  var ignorePadding: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * When used, only the visible layers in this list will be included in the output.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
@@ -58,6 +64,7 @@ object MapViewTakeScreenshotOptions {
     area: MapViewTakeScreenshotOptionsArea = null,
     format: java.lang.String = null,
     height: scala.Int | scala.Double = null,
+    ignorePadding: js.UndefOr[scala.Boolean] = js.undefined,
     layers: js.Array[Layer] = null,
     quality: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
@@ -66,6 +73,7 @@ object MapViewTakeScreenshotOptions {
     if (area != null) __obj.updateDynamic("area")(area)
     if (format != null) __obj.updateDynamic("format")(format)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePadding)) __obj.updateDynamic("ignorePadding")(ignorePadding)
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

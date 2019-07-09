@@ -101,11 +101,11 @@ trait UniqueValueRendererProperties
     */
   var legendOptions: js.UndefOr[UniqueValueRendererLegendOptions] = js.undefined
   /**
-    * Each element in the array is an object that provides information about a unique value associated with the renderer. Each object has the following specification:
+    * Each element in the array is an object that provides information about a unique value associated with the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos)
     */
-  var uniqueValueInfos: js.UndefOr[js.Array[UniqueValueRendererUniqueValueInfos]] = js.undefined
+  var uniqueValueInfos: js.UndefOr[js.Array[UniqueValueInfoProperties]] = js.undefined
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string or a number. This expression can reference field values using the `$feature` global variable and perform mathematical calculations and logical evaluations at runtime.  This property is typically used as an alternative to [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#field) for data-driven visualizations.
     *
@@ -132,7 +132,7 @@ object UniqueValueRendererProperties {
     field3: java.lang.String = null,
     fieldDelimiter: java.lang.String = null,
     legendOptions: UniqueValueRendererLegendOptions = null,
-    uniqueValueInfos: js.Array[UniqueValueRendererUniqueValueInfos] = null,
+    uniqueValueInfos: js.Array[UniqueValueInfoProperties] = null,
     valueExpression: java.lang.String = null,
     valueExpressionTitle: java.lang.String = null,
     visualVariables: js.Array[VisualVariableProperties] = null

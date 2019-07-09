@@ -76,6 +76,11 @@ trait WMTSLayer
     eventHandler: WMTSLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: WMTSLayerLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
   def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: WMTSLayerLayerviewDestroyEventHandler

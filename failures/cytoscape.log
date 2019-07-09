@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => cytoscape, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape),TsIdentLibrarySimple(cytoscape)),TsIdentModule(None,List(cytoscape))) [id => cytoscape, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(cytoscape)) [id => cytoscape, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(cytoscape) [id => cytoscape, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(cytoscape) [id => cytoscape, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_H) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CoreViewportManipulation) / TsMemberFunction(extent) / TsFunSig() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Source) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Parent) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -45,8 +45,8 @@
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => cytoscape, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
 	at scala.sys.package$.error(package.scala:30)
 	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:48)
-	at com.olvind.tso.scalajs.FieldTree.renamed(tree.scala:121)
-	at com.olvind.tso.scalajs.FieldTree.withSuffix(tree.scala:116)
+	at com.olvind.tso.scalajs.FieldTree.renamed(tree.scala:125)
+	at com.olvind.tso.scalajs.FieldTree.withSuffix(tree.scala:120)
 	at com.olvind.tso.importer.ImportTree$.hack(ImportTree.scala:455)
 	at com.olvind.tso.importer.ImportTree$.tsMemberProperty(ImportTree.scala:441)
 	at com.olvind.tso.importer.ImportTree$.tsMember(ImportTree.scala:309)

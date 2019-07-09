@@ -14,7 +14,7 @@ trait Anon_ReturnurlUrl extends js.Object {
   var return_url: java.lang.String
   /**
     * The URL you must redirect your customer to in
-    * order to authenticate the payment.
+    * order to authenticate.
     */
   var url: java.lang.String
 }

@@ -19,8 +19,11 @@ trait ReadableStream extends EventEmitter {
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native
   def unshift(chunk: java.lang.String): scala.Unit = js.native
+  def unshift(chunk: java.lang.String, encoding: nodeLib.BufferEncoding): scala.Unit = js.native
   def unshift(chunk: nodeLib.Buffer): scala.Unit = js.native
+  def unshift(chunk: nodeLib.Buffer, encoding: nodeLib.BufferEncoding): scala.Unit = js.native
   def unshift(chunk: stdLib.Uint8Array): scala.Unit = js.native
+  def unshift(chunk: stdLib.Uint8Array, encoding: nodeLib.BufferEncoding): scala.Unit = js.native
   def wrap(oldStream: ReadableStream): this.type = js.native
 }
 

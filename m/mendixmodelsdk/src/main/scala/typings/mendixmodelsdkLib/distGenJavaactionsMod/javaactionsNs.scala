@@ -474,7 +474,7 @@ object javaactionsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/java-actions relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction because var conflicts: actionReturnType, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo */ @js.native
   class JavaAction protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -506,7 +506,7 @@ object javaactionsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type`, javaType, parameterType */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaActionParameter because var conflicts: actionParameterType, description, id, isLoaded, model, name, structureTypeName, unit. Inlined `type`, javaType, parameterType */ @js.native
   class JavaActionParameter protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeActionParameter {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

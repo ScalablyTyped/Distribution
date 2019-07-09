@@ -28,6 +28,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Stefan Langeder <https://github.com/slangeder>
 //                 Marlos Borges <https://github.com/marlosin>
 //                 Thomas Marek <https://github.com/ttmarek>
+//                 Kim Ehrenpohl <https://github.com/kimehrenpohl>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

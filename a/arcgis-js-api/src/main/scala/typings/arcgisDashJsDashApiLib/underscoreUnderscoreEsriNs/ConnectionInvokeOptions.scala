@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ConnectionInvokeOptions
   extends stdLib.Object {
   /**
-    * A signal to abort the execution of the remote method.
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the execution of the remote method. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html#invoke)
     */

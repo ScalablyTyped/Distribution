@@ -80,10 +80,10 @@ trait StretchRendererProperties extends RendererProperties {
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-StretchRenderer.html#stretchType)
+    *
+    * @default none
     */
-  var stretchType: js.UndefOr[
-    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`standard-deviation` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`histogram-equalization` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`min-max` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`percent-clip` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.sigmoid
-  ] = js.undefined
+  var stretchType: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Denotes wether the [gamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-StretchRenderer.html#gamma) value should be used. When `useGamma` is `false`, the gamma is calculated from the statistics and histogram of the data. The [gamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-StretchRenderer.html#gamma) property is required if `useGamma` is `true`.
     *
@@ -106,7 +106,7 @@ object StretchRendererProperties {
     outputMax: scala.Int | scala.Double = null,
     outputMin: scala.Int | scala.Double = null,
     sigmoidStrengthLevel: scala.Int | scala.Double = null,
-    stretchType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`standard-deviation` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`histogram-equalization` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`min-max` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`percent-clip` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.sigmoid = null,
+    stretchType: java.lang.String = null,
     useGamma: js.UndefOr[scala.Boolean] = js.undefined
   ): StretchRendererProperties = {
     val __obj = js.Dynamic.literal()
@@ -121,7 +121,7 @@ object StretchRendererProperties {
     if (outputMax != null) __obj.updateDynamic("outputMax")(outputMax.asInstanceOf[js.Any])
     if (outputMin != null) __obj.updateDynamic("outputMin")(outputMin.asInstanceOf[js.Any])
     if (sigmoidStrengthLevel != null) __obj.updateDynamic("sigmoidStrengthLevel")(sigmoidStrengthLevel.asInstanceOf[js.Any])
-    if (stretchType != null) __obj.updateDynamic("stretchType")(stretchType.asInstanceOf[js.Any])
+    if (stretchType != null) __obj.updateDynamic("stretchType")(stretchType)
     if (!js.isUndefined(useGamma)) __obj.updateDynamic("useGamma")(useGamma)
     __obj.asInstanceOf[StretchRendererProperties]
   }

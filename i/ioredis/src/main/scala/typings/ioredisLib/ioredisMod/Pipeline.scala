@@ -403,6 +403,7 @@ trait Pipeline extends js.Object {
     callback: js.Function2[/* err */ stdLib.Error, /* res */ js.Any, scala.Unit]
   ): Pipeline = js.native
   def psubscribe(patterns: java.lang.String*): Pipeline = js.native
+  def pttl(key: KeyType, callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double, scala.Unit]): Pipeline = js.native
   def publish(channel: java.lang.String, message: java.lang.String): Pipeline = js.native
   def publish(
     channel: java.lang.String,

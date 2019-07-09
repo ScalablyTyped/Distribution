@@ -12,4 +12,5 @@ package object geometryNs {
   type Point = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Point
   type Polygon = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Polygon
   type Polyline = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Polyline
+  type SpatialReference = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.SpatialReference
 }

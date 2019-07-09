@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styledDashSystemMod {
+  type Config = /** Property name exposed for use in components */
+  org.scalablytyped.runtime.StringDictionary[ConfigStyle | scala.Boolean]
   type MarginBottomProps = stdLib.Pick[
     SpaceProps[TLengthStyledSystem], 
     styledDashSystemLib.styledDashSystemLibStrings.mb | styledDashSystemLib.styledDashSystemLibStrings.marginBottom
@@ -50,6 +52,6 @@ package object styledDashSystemMod {
     styledDashSystemLib.styledDashSystemLibStrings.pt | styledDashSystemLib.styledDashSystemLibStrings.paddingTop
   ]
   type ResponsiveValue[T] = T | (js.Array[T | scala.Null]) | org.scalablytyped.runtime.StringDictionary[T]
-  type Scale = js.Object | (js.Array[java.lang.String | scala.Double])
+  type Scale = ObjectOrArray[scala.Double | java.lang.String]
   type TLengthStyledSystem = java.lang.String | styledDashSystemLib.styledDashSystemLibNumbers.`0` | scala.Double
 }

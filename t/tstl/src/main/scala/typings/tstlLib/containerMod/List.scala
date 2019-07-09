@@ -30,11 +30,7 @@ class List[T] ()
     * @param first Input iterator of the first position.
     * @param last Input iteartor of the last position.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]) = this()
   /**
     * Fill Constructor.
     *
@@ -69,11 +65,7 @@ class list[T] ()
     * @param first Input iterator of the first position.
     * @param last Input iteartor of the last position.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]) = this()
   /**
     * Fill Constructor.
     *

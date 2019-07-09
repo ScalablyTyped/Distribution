@@ -33,7 +33,7 @@ trait widgetsSearchProperties
     */
   var allPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Indicates whether to automatically select and zoom to the first geocoded result. If `false`, the [findAddressCandidates](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-find-address-candidates.htm) operation will still geocode the input string, but the top result will not be selected. To work with the geocoded results, you can set up a [search-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#event:search-complete) event handler and get the results through the event object.
+    * Indicates whether to automatically select and zoom to the first geocoded result. If `false`, the [findAddressCandidates](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-find-address-candidates.htm) operation will still geocode the input string, but the top result will not be selected. To work with the geocoded results, you can set up a [search-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#event-search-complete) event handler and get the results through the event object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#autoSelect)
     *
@@ -96,7 +96,7 @@ trait widgetsSearchProperties
     */
   var popupEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A customized [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) for the selected feature. Note that any templates defined on [allSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allSources) take precedence over those defined directly on the template.
+    * A customized [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) for the selected feature. Note that any [templates](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) defined on [allSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allSources) take precedence over those defined directly on the template.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#popupTemplate)
     */
@@ -140,9 +140,7 @@ trait widgetsSearchProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources)
     */
-  var sources: js.UndefOr[
-    CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]
-  ] = js.undefined
+  var sources: js.UndefOr[CollectionProperties[SearchSourceProperties]] = js.undefined
   /**
     * Enable suggestions for the widget.  This is only available if working with a 10.3 or greater geocoding service that has [suggest capability loaded](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-suggest.htm) or a 10.3 or greater feature layer that supports pagination, i.e. `supportsPagination = true`.
     *
@@ -189,7 +187,7 @@ object widgetsSearchProperties {
     resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchAllEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchTerm: java.lang.String = null,
-    sources: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
+    sources: CollectionProperties[SearchSourceProperties] = null,
     suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: SearchViewModelProperties = null

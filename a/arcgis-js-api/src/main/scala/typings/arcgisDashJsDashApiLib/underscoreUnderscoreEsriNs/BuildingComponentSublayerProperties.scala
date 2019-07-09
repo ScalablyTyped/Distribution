@@ -31,6 +31,14 @@ trait BuildingComponentSublayerProperties
     arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide
   ] = js.undefined
   /**
+    * An array of field names from the service to include with each feature. To fetch the values from all fields in the layer, use `["*"]`. Fields specified in `outFields` will be requested alongside with required fields for [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#renderer).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#outFields)
+    *
+    * @default null
+    */
+  var outFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
     * Indicates whether to display popups when features in the layer are clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#popupEnabled)
@@ -58,6 +66,7 @@ object BuildingComponentSublayerProperties {
     definitionExpression: java.lang.String = null,
     listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide = null,
     opacity: scala.Int | scala.Double = null,
+    outFields: js.Array[java.lang.String] = null,
     popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     popupTemplate: PopupTemplateProperties = null,
     renderer: RendererProperties = null,
@@ -68,6 +77,7 @@ object BuildingComponentSublayerProperties {
     if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
     if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)

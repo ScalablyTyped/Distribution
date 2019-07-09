@@ -14,7 +14,7 @@ trait RequestInterceptor
     */
   var after: js.UndefOr[AfterInterceptorCallback] = js.undefined
   /**
-    * Make changes to the request URL or options before the request is sent.
+    * Make changes to the request URL or options before the request is sent. A returned value will be used as the response data, which would prevent the request from being sent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
@@ -43,12 +43,21 @@ trait RequestInterceptor
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
   var urls: js.UndefOr[java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])] = js.undefined
+  /**
+    * When an error occurrs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened. For example, this could be used to log specific errors occuring with layers or services.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+    *
+    *
+    */
+  def error(): scala.Unit
 }
 
 object RequestInterceptor {
   @scala.inline
   def apply(
     constructor: js.Function,
+    error: () => scala.Unit,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     after: AfterInterceptorCallback = null,
@@ -58,7 +67,7 @@ object RequestInterceptor {
     responseData: js.Any = null,
     urls: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null
   ): RequestInterceptor = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor, error = js.Any.fromFunction0(error), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (after != null) __obj.updateDynamic("after")(after)
     if (before != null) __obj.updateDynamic("before")(before)
     if (headers != null) __obj.updateDynamic("headers")(headers)

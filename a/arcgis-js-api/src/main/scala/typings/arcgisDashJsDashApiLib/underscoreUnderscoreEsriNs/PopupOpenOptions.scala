@@ -36,6 +36,14 @@ trait PopupOpenOptions
     */
   var features: js.UndefOr[js.Array[Graphic]] = js.undefined
   /**
+    * When `true`, indicates the popup should fetch the content of this feature and display it. If no [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) exists, a default template is created for the layer if [defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) = `true`. In order for this option to work, there must be a valid `view` and `location` set.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
+    *
+    * @default false
+    */
+  var fetchFeatures: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Sets the popup's [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location), which is the geometry used to position the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
@@ -73,6 +81,7 @@ object PopupOpenOptions {
     content: java.lang.String | stdLib.HTMLElement | Widget = null,
     featureMenuOpen: js.UndefOr[scala.Boolean] = js.undefined,
     features: js.Array[Graphic] = null,
+    fetchFeatures: js.UndefOr[scala.Boolean] = js.undefined,
     location: Geometry = null,
     promises: js.Array[arcgisDashJsDashApiLib.IPromise[_]] = null,
     title: java.lang.String = null,
@@ -83,6 +92,7 @@ object PopupOpenOptions {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(featureMenuOpen)) __obj.updateDynamic("featureMenuOpen")(featureMenuOpen)
     if (features != null) __obj.updateDynamic("features")(features)
+    if (!js.isUndefined(fetchFeatures)) __obj.updateDynamic("fetchFeatures")(fetchFeatures)
     if (location != null) __obj.updateDynamic("location")(location)
     if (promises != null) __obj.updateDynamic("promises")(promises)
     if (title != null) __obj.updateDynamic("title")(title)

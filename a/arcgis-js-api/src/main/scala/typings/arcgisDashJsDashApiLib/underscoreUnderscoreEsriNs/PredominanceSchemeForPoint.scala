@@ -15,6 +15,12 @@ trait PredominanceSchemeForPoint
     */
   var colors: js.Array[Color]
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPoint)
+    */
+  var name: java.lang.String
+  /**
     * The color of the point symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPoint)
@@ -38,6 +44,12 @@ trait PredominanceSchemeForPoint
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPoint)
     */
   var sizeScheme: SizeSchemeForPoint
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPoint)
+    */
+  var tags: js.Array[java.lang.String]
 }
 
 object PredominanceSchemeForPoint {
@@ -46,13 +58,15 @@ object PredominanceSchemeForPoint {
     colors: js.Array[Color],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: PredominanceSchemeForPointOutline,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    sizeScheme: SizeSchemeForPoint
+    sizeScheme: SizeSchemeForPoint,
+    tags: js.Array[java.lang.String]
   ): PredominanceSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, tags = tags)
   
     __obj.asInstanceOf[PredominanceSchemeForPoint]
   }

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FeatureTemplatesViewModel extends Accessor {
+trait FeatureTemplatesViewModel
+  extends Accessor
+     with Evented {
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget. A custom function can be used to aid when searching for templates. It takes a function which passes in an object containing a [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#label) property of the [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).  ![featureTemplatesFilterFunction](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/featureTemplatesFilterFunction.png)
     *
@@ -35,7 +37,7 @@ trait FeatureTemplatesViewModel extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#items)
     */
-  val items: TemplateItem | TemplateItemGroup = js.native
+  val items: js.Array[TemplateItem | TemplateItemGroup] = js.native
   /**
     * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) that are associated with the widget. The order in which these layers are set in the array dictates how they display within the widget.
     * > The widget is designed to only display layers that are enabled for editing. It will not display layers that are enabled to only edit attributes.
@@ -73,13 +75,15 @@ trait FeatureTemplatesViewModel extends Accessor {
     */
   def refresh(): scala.Unit = js.native
   /**
-    * Fires when a [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) is selected.
+    * Selects the [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) to use.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#select)
     *
+    * @param item The [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) to select.
     *
     */
   def select(): scala.Unit = js.native
+  def select(item: TemplateItem): scala.Unit = js.native
 }
 
 @JSGlobal("__esri.FeatureTemplatesViewModel")

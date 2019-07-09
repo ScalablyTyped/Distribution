@@ -1,7 +1,7 @@
 
 # Scala.js typings for node
 
-Typings are for version 12.0
+Typings are for version 12.6
 
 ## Library description:
 node
@@ -48,7 +48,7 @@ These comments are from the typescript definitions and might be useful:
 /**
  * The inspector module provides an API for interacting with the V8 inspector.
  */
-// Type definitions for non-npm package Node.js 12.0
+// Type definitions for non-npm package Node.js 12.6
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <https://github.com/Microsoft>
 //                 DefinitelyTyped <https://github.com/DefinitelyTyped>

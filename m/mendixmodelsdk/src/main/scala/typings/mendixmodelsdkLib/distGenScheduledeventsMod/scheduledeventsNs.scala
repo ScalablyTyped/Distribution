@@ -26,7 +26,7 @@ object scheduledeventsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.IScheduledEvent because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.IScheduledEvent because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
   class ScheduledEvent protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

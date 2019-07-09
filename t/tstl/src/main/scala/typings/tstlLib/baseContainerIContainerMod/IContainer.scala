@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IContainer[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem]
+trait IContainer[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem]
   extends tstlLib.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer[
       tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem], 
       ReverseIteratorT
@@ -26,7 +26,7 @@ trait IContainer[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT
     * @param first Input iteartor of the first position.
     * @param last Input iterator of the last position.
     */
-  def assign[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Elem, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
+  def assign[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Elem, InputIterator] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
   /**
     * @inheritDoc
     */

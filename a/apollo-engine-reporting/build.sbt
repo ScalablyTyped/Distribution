@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting"
-version := "1.3.5-bcc129"
+version := "1.3.5-90f362"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.3.1-ab2ce2",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.4.0-044d5c",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.4.0-edd3cb",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190624Z-c591ae",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-46fd4d",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false

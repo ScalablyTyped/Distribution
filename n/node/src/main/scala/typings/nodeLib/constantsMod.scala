@@ -106,7 +106,6 @@ object constantsMod extends js.Object {
   val EWOULDBLOCK: scala.Double = js.native
   val EXDEV: scala.Double = js.native
   val F_OK: scala.Double = js.native
-  val NPN_ENABLED: scala.Double = js.native
   val O_APPEND: scala.Double = js.native
   val O_CREAT: scala.Double = js.native
   val O_DIRECT: scala.Double = js.native

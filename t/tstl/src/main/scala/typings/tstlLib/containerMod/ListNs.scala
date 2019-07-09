@@ -14,13 +14,11 @@ object ListNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
+  /**
+    * @hidden
+    */
   class Iterator[T] protected ()
-    extends tstlLib.containerListMod.ListNs.Iterator[T] {
-    /**
-      * @hidden
-      */
-    def this(sourcePtr: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerListMod.List[T]], prev: tstlLib.containerListMod.ListNs.Iterator[T], next: tstlLib.containerListMod.ListNs.Iterator[T], value: T) = this()
-  }
+    extends tstlLib.containerListMod.ListNs.Iterator[T]
   
   /**
     * Reverse iterator of the List.
@@ -28,10 +26,8 @@ object ListNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
-  class ReverseIterator[T] protected ()
-    extends tstlLib.containerListMod.ListNs.ReverseIterator[T] {
-    def this(base: tstlLib.containerListMod.ListNs.Iterator[T]) = this()
-  }
+  class ReverseIterator[T] ()
+    extends tstlLib.containerListMod.ListNs.ReverseIterator[T]
   
 }
 
@@ -44,13 +40,11 @@ object listNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
+  /**
+    * @hidden
+    */
   class Iterator[T] protected ()
-    extends tstlLib.containerListMod.listNs.Iterator[T] {
-    /**
-      * @hidden
-      */
-    def this(sourcePtr: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerListMod.List[T]], prev: tstlLib.containerListMod.ListNs.Iterator[T], next: tstlLib.containerListMod.ListNs.Iterator[T], value: T) = this()
-  }
+    extends tstlLib.containerListMod.listNs.Iterator[T]
   
   /**
     * Reverse iterator of the List.
@@ -58,10 +52,8 @@ object listNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
-  class ReverseIterator[T] protected ()
-    extends tstlLib.containerListMod.listNs.ReverseIterator[T] {
-    def this(base: tstlLib.containerListMod.ListNs.Iterator[T]) = this()
-  }
+  class ReverseIterator[T] ()
+    extends tstlLib.containerListMod.listNs.ReverseIterator[T]
   
 }
 

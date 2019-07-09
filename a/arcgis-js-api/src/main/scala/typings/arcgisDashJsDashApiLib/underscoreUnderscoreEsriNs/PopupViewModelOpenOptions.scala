@@ -28,6 +28,14 @@ trait PopupViewModelOpenOptions
     */
   var features: js.UndefOr[js.Array[Graphic]] = js.undefined
   /**
+    * **Since:** 4.12    When `true`, indicates the popup should fetch the content of this feature and display it. If no [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) exists, a default template is created for the layer if [defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultPopupTemplateEnabled) = `true`. In order for this option to work, there must be a valid `view` and `location` set.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#open)
+    *
+    * @default false
+    */
+  var fetchFeatures: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Sets the popup's [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#location), which is the geometry used to position the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#open)
@@ -46,7 +54,7 @@ trait PopupViewModelOpenOptions
     */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * When `true` indicates the popup should update its [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#location) for each paginated feature based on the [selected feature's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature) geometry.
+    * When `true`, indicates the popup should update its [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#location) for each paginated feature based on the [selected feature's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature) geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#open)
     *
@@ -64,6 +72,7 @@ object PopupViewModelOpenOptions {
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     content: java.lang.String = null,
     features: js.Array[Graphic] = null,
+    fetchFeatures: js.UndefOr[scala.Boolean] = js.undefined,
     location: Geometry = null,
     promises: js.Array[arcgisDashJsDashApiLib.IPromise[_]] = null,
     title: java.lang.String = null,
@@ -73,6 +82,7 @@ object PopupViewModelOpenOptions {
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (content != null) __obj.updateDynamic("content")(content)
     if (features != null) __obj.updateDynamic("features")(features)
+    if (!js.isUndefined(fetchFeatures)) __obj.updateDynamic("fetchFeatures")(fetchFeatures)
     if (location != null) __obj.updateDynamic("location")(location)
     if (promises != null) __obj.updateDynamic("promises")(promises)
     if (title != null) __obj.updateDynamic("title")(title)

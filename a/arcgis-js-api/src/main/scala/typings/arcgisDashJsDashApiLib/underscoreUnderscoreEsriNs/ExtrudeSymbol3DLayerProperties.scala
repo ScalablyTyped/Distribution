@@ -21,6 +21,12 @@ trait ExtrudeSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var edges: js.UndefOr[Edges3DProperties] = js.undefined
   /**
+    * The material used to shade the extrusion. This property defines the extrusion's color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#material)
+    */
+  var material: js.UndefOr[ExtrudeSymbol3DLayerMaterialProperties] = js.undefined
+  /**
     * The height of the extrusion in meters. Negative values will extrude the polygon surface downward towards or below the ground.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#size)
@@ -35,7 +41,7 @@ object ExtrudeSymbol3DLayerProperties {
   def apply(
     castShadows: js.UndefOr[scala.Boolean] = js.undefined,
     edges: Edges3DProperties = null,
-    material: js.Any = null,
+    material: ExtrudeSymbol3DLayerMaterialProperties = null,
     size: scala.Int | scala.Double = null
   ): ExtrudeSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()

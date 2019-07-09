@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(esfx),List(type-model, dist)) [id => @esfx/type-model, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model),TsIdentLibraryScoped(esfx,Some(type-model))),TsIdentModule(Some(esfx),List(type-model))) [id => @esfx/type-model, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(esfx),List(type-model)) [id => @esfx/type-model, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibraryScoped(esfx,Some(type-model)) [id => @esfx/type-model, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(esfx,Some(type-model)) [id => @esfx/type-model, phase => typescript] 
 [warn ] Exports.scala:58 Could not resolve import TsImport(List(TsImportedIdent(TsIdentSimple(NonNullable))),TsImporteeLocal(TsQIdent(List(TsIdentSimple(globalThis), TsIdentSimple(NonNullable))))) [id => @esfx/type-model, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@esfx/type-model/dist))] 
 [warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias @esfx/type-model.@esfx/type-model/dist.Await<V> [id => @esfx/type-model, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@esfx/type-model/dist) / TsDeclTypeAlias(Await) / TsTypeLookup() / TsTypeObject() / TsMemberProperty(1) / TsTypeConditional() / TsTypeConditional() / TsTypeRef())] 
 [warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias @esfx/type-model.@esfx/type-model/dist.__One<T, F> [id => @esfx/type-model, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@esfx/type-model/dist) / TsDeclTypeAlias(__One) / TsTypeLookup() / TsTypeObject() / TsMemberProperty(1) / TsTypeConditional() / TsTypeConditional() / TsTypeConditional() / TsTypeConditional() / TsTypeConditional() / TsTypeRef())] 
@@ -93,9 +93,9 @@
 [warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(Symbol), TsIdentSimple(asyncIterator)) [id => @esfx/type-model, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_SymbolAnonNextValueAsyncIterator) / TsMemberIndex())] 
 [warn ] ImportTree.scala:383 Dropping List(TsIdentSimple(Symbol), TsIdentSimple(asyncIterator)) [id => @esfx/type-model, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_SymbolAnonNextAnonOnfulfilledThenValueAnonDoneValueBoolean) / TsMemberIndex())] 
 [info ] ImportType.scala:245 Failed type conversion: infer U [id => @esfx/type-model, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_OnfulfilledThenAny) / TsMemberFunction(then) / TsFunParam() / TsTypeInfer())] 
-[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
+[info ] RemoveMultipleInheritance.scala:44 Dropped parents 
 - atEsfxTypeDashModelLib.distMod.SameType because Already inherited- atEsfxTypeDashModelLib.distMod.IsSubtypeOf because Already inherited [id => @esfx/type-model, phase => scala.js, this => Name(atEsfxTypeDashModelLib) / Name(atEsfxTypeDashModelLibNumbers) / Name(false)] 
-[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
+[info ] RemoveMultipleInheritance.scala:44 Dropped parents 
 - atEsfxTypeDashModelLib.distMod.SameType because Already inherited- atEsfxTypeDashModelLib.distMod.IsSubtypeOf because Already inherited [id => @esfx/type-model, phase => scala.js, this => Name(atEsfxTypeDashModelLib) / Name(atEsfxTypeDashModelLibNumbers) / Name(true)] 
 [debug] PhaseRunner.scala:84 Success [id => @esfx/type-model, phase => scala.js] 
 [warn ] Phase3Compile.scala:204 Building esfx__type-model... [id => @esfx/type-model, phase => build] 

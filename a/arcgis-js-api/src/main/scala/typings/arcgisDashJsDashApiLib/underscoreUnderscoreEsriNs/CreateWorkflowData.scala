@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CreateWorkflowData
   extends stdLib.Object {
   /**
-    * The [creationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo) associated with the workflow.
+    * The [creationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo) provides the feature template and layer when creating a new feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#CreateWorkflowData)
     */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- sipDotJsLib.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest because var conflicts: delegate. Inlined waitNotifyStop */ @JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-client", "SubscribeUserAgentClient")
+- sipDotJsLib.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-client", "SubscribeUserAgentClient")
 @js.native
 class SubscribeUserAgentClient protected ()
   extends sipDotJsLib.libCoreUserDashAgentsUserDashAgentDashClientMod.UserAgentClient {

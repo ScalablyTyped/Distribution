@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tstl/base", "ArrayIterator")
 @js.native
-class ArrayIterator[T, Source /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source] */] protected ()
-  extends tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, Source] {
-  /**
-    * Initializer Constructor.
-    *
-    * @param source Source container.
-    * @param index Index number.
-    */
-  def this(source: Source, index: scala.Double) = this()
-}
+class ArrayIterator[T, SourceT /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[
+T, 
+SourceT, 
+SourceT, 
+tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], 
+tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
+T] */] ()
+  extends tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT]
 

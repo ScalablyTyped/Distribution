@@ -15,6 +15,12 @@ trait PredominanceSchemeForPolyline
     */
   var colors: js.Array[Color]
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+    */
+  var name: java.lang.String
+  /**
     * The color of the line symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
@@ -33,6 +39,12 @@ trait PredominanceSchemeForPolyline
     */
   var sizeScheme: SizeSchemeForPolyline
   /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+    */
+  var tags: js.Array[java.lang.String]
+  /**
     * The default width of the line symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
@@ -46,13 +58,15 @@ object PredominanceSchemeForPolyline {
     colors: js.Array[Color],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     sizeScheme: SizeSchemeForPolyline,
+    tags: js.Array[java.lang.String],
     width: scala.Double
   ): PredominanceSchemeForPolyline = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, width = width)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, tags = tags, width = width)
   
     __obj.asInstanceOf[PredominanceSchemeForPolyline]
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-dom-slinky-facade"
-version := "201907080331-87e634"
+version := "201907081111-6c8c8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
   "org.scalablytyped" %%% "react-router" % "5.0-dt-20190702Z-a4a098",
   "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20190613Z-e738c4",
-  "org.scalablytyped" %%% "react-slinky-facade" % "201907080331-8ef7c3",
+  "org.scalablytyped" %%% "react-slinky-facade" % "201907081110-8ef7c3",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

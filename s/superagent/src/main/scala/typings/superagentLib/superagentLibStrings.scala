@@ -31,6 +31,9 @@ object superagentLibStrings {
   sealed trait progress extends js.Object
   
   @js.native
+  sealed trait response extends js.Object
+  
+  @js.native
   sealed trait upload extends js.Object
   
   @scala.inline
@@ -49,6 +52,8 @@ object superagentLibStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
   @scala.inline
   def upload: upload = "upload".asInstanceOf[upload]
 }

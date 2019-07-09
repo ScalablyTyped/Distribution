@@ -8,12 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/algorithm/sorting", JSImport.Namespace)
 @js.native
 object algorithmSortingMod extends js.Object {
-  def is_sorted[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */](first: InputIterator, last: InputIterator): scala.Boolean = js.native
-  def is_sorted[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */](
+  def is_sorted[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): scala.Boolean = js.native
+  def is_sorted[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */](
     first: InputIterator,
     last: InputIterator,
     comp: js.Function2[
@@ -22,12 +18,8 @@ object algorithmSortingMod extends js.Object {
       scala.Boolean
     ]
   ): scala.Boolean = js.native
-  def is_sorted_until[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */](first: InputIterator, last: InputIterator): InputIterator = js.native
-  def is_sorted_until[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */](
+  def is_sorted_until[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): InputIterator = js.native
+  def is_sorted_until[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */](
     first: InputIterator,
     last: InputIterator,
     comp: js.Function2[
@@ -78,9 +70,7 @@ object algorithmSortingMod extends js.Object {
       scala.Boolean
     ]
   ): scala.Unit = js.native
-  def partial_sort_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, RandomAccessIterator /* <: tstlLib.iteratorIFakeMod.General[
+  def partial_sort_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, RandomAccessIterator /* <: tstlLib.iteratorIFakeMod.General[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
       tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], 
       RandomAccessIterator
@@ -91,9 +81,7 @@ object algorithmSortingMod extends js.Object {
     output_first: RandomAccessIterator,
     output_last: RandomAccessIterator
   ): RandomAccessIterator = js.native
-  def partial_sort_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, RandomAccessIterator /* <: tstlLib.iteratorIFakeMod.General[
+  def partial_sort_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, RandomAccessIterator /* <: tstlLib.iteratorIFakeMod.General[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
       tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], 
       RandomAccessIterator

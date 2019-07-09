@@ -12,6 +12,7 @@ trait Typeoftls extends js.Object {
   val DEFAULT_ECDH_CURVE: java.lang.String = js.native
   var Server: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.tlsNs.Server] = js.native
   var TLSSocket: org.scalablytyped.runtime.Instantiable1[/* socket */ nodeLib.netMod.Socket, adoneLib.glossesStdMod.tlsNs.TLSSocket] = js.native
+  val rootCertificates: js.Array[java.lang.String] = js.native
   /*
     * Verifies the certificate `cert` is issued to host `host`.
     * @host The hostname to verify the certificate against

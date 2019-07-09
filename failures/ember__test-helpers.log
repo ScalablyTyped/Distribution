@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:92 Ignored [id => @ember/test-helpers, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => @ember/test-helpers, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__test-helpers/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__test-helpers),TsIdentLibraryScoped(ember,Some(test-helpers))),TsIdentModule(Some(ember),List(test-helpers))) [id => @ember/test-helpers, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibraryScoped(ember,Some(test-helpers)) [id => @ember/test-helpers, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(ember,Some(test-helpers)) [id => @ember/test-helpers, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify TemplateFactory [id => @ember/test-helpers, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/test-helpers/setup-rendering-context) / TsExport() / TsExporteeTree() / TsDeclFunction(render) / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Delay) [id => @ember/test-helpers, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/test-helpers) / TsDeclFunction(typeIn) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Resolver) [id => @ember/test-helpers, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/test-helpers) / TsDeclFunction(setupContext) / TsFunSig() / TsFunParam() / TsTypeObject())] 

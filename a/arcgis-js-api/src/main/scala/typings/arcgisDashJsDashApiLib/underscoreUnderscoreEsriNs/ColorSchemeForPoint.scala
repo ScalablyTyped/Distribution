@@ -27,6 +27,12 @@ trait ColorSchemeForPoint
     */
   var id: java.lang.String
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPoint)
+    */
+  var name: java.lang.String
+  /**
     * The color of the symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPoint)
@@ -51,6 +57,12 @@ trait ColorSchemeForPoint
     */
   var size: scala.Double
   /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPoint)
+    */
+  var tags: js.Array[java.lang.String]
+  /**
     * Indicates which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
     *
     * | Value | Description | Example |
@@ -74,14 +86,16 @@ object ColorSchemeForPoint {
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: ColorSchemeForPointOutline,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     size: scala.Double,
+    tags: js.Array[java.lang.String],
     theme: java.lang.String
   ): ColorSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, theme = theme)
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, tags = tags, theme = theme)
   
     __obj.asInstanceOf[ColorSchemeForPoint]
   }

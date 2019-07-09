@@ -12,7 +12,7 @@ trait symbolUtils extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#getDisplayedSymbol)
     *
-    * @param symbol The graphic from which to retrieve the displayed symbol. This commonly comes from a [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) operation.
+    * @param graphic The graphic from which to retrieve the displayed symbol. This commonly comes from a [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) operation.
     * @param options Options for generating the display symbol of the input graphic. These must be specified if the input graphic comes from a layer with a renderer that has [visual variables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) applied. See the object specification below.
     * @param options.scale The [view scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) at which the symbol is displayed.
     * @param options.viewingMode The [viewingMode](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode) of the view, if the symbol is displayed in a SceneView.
@@ -20,8 +20,8 @@ trait symbolUtils extends js.Object {
     * @param options.resolution The [resolution](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#resolution) of the view at which the symbol is displayed.
     *
     */
-  def getDisplayedSymbol(symbol: Graphic): arcgisDashJsDashApiLib.IPromise[Symbol] = js.native
-  def getDisplayedSymbol(symbol: Graphic, options: symbolUtilsGetDisplayedSymbolOptions): arcgisDashJsDashApiLib.IPromise[Symbol] = js.native
+  def getDisplayedSymbol(graphic: Graphic): arcgisDashJsDashApiLib.IPromise[Symbol] = js.native
+  def getDisplayedSymbol(graphic: Graphic, options: symbolUtilsGetDisplayedSymbolOptions): arcgisDashJsDashApiLib.IPromise[Symbol] = js.native
   /**
     * Generates a preview image of a given symbol that can be displayed in a custom widget or other DOM element.
     *

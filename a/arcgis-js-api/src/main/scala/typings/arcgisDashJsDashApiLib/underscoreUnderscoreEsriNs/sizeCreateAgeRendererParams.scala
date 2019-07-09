@@ -42,6 +42,22 @@ trait sizeCreateAgeRendererParams
     */
   var legendOptions: js.UndefOr[sizeCreateAgeRendererParamsLegendOptions] = js.undefined
   /**
+    * Only for polygon layers. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Only for polygon layers in 2D MapViews. Indicates whether icon sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * In authoring apps, the user may select a pre-defined size scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
@@ -101,6 +117,8 @@ object sizeCreateAgeRendererParams {
     basemap: java.lang.String | Basemap = null,
     defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     legendOptions: sizeCreateAgeRendererParamsLegendOptions = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    sizeOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     sizeScheme: SizeScheme = null,
     statistics: SummaryStatisticsResult = null,
     symbolType: java.lang.String = null,
@@ -110,6 +128,8 @@ object sizeCreateAgeRendererParams {
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled)
     if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)

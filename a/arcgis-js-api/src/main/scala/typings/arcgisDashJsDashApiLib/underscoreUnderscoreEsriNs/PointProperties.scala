@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait PointProperties extends GeometryProperties {
   /**
-    * The latitude of the point if the spatial reference is Web Mercator (wkid: 3857) or WGS84 (wkid: 4326).
+    * The latitude of the point. If the spatial reference is Web Mercator, the latitude will be given in WGS84. In any geographic spatial reference, the latitude will equal the [y](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y) coordinate. In all other cases the latitude will be null.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#latitude)
     */
   var latitude: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The longitude of the point if the spatial reference is Web Mercator (wkid: 3857) or WGS84 (wkid: 4326).
+    * The longitude of the point. If the spatial reference is Web Mercator, the longitude will be given in WGS84. In any geographic spatial reference, the longitude will equal the [x](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x) coordinate. In all other cases the longitude will be null.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#longitude)
     */

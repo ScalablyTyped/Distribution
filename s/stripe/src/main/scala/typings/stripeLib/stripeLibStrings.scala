@@ -202,6 +202,9 @@ object stripeLibStrings {
   sealed trait credit_not_processed extends js.Object
   
   @js.native
+  sealed trait credit_note extends js.Object
+  
+  @js.native
   sealed trait custom extends js.Object
   
   @js.native
@@ -253,7 +256,8 @@ object stripeLibStrings {
   
   @js.native
   sealed trait duplicate
-    extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
+    extends stripeLib.stripeMod.creditNotesNs.CreditNoteReason
+       with stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
   
   @js.native
   sealed trait email extends js.Object
@@ -316,7 +320,8 @@ object stripeLibStrings {
   
   @js.native
   sealed trait fraudulent
-    extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
+    extends stripeLib.stripeMod.creditNotesNs.CreditNoteReason
+       with stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
   
   @js.native
   sealed trait friday extends js.Object
@@ -404,6 +409,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait invoiceitem extends js.Object
+  
+  @js.native
+  sealed trait issued extends js.Object
   
   @js.native
   sealed trait issuer_declined extends js.Object
@@ -521,6 +529,10 @@ object stripeLibStrings {
   sealed trait order extends js.Object
   
   @js.native
+  sealed trait order_change
+    extends stripeLib.stripeMod.creditNotesNs.CreditNoteReason
+  
+  @js.native
   sealed trait order_item extends js.Object
   
   @js.native
@@ -576,6 +588,12 @@ object stripeLibStrings {
   sealed trait png extends js.Object
   
   @js.native
+  sealed trait post_payment extends js.Object
+  
+  @js.native
+  sealed trait pre_payment extends js.Object
+  
+  @js.native
   sealed trait prepaid extends js.Object
   
   @js.native
@@ -592,6 +610,10 @@ object stripeLibStrings {
   
   @js.native
   sealed trait product_unacceptable extends js.Object
+  
+  @js.native
+  sealed trait product_unsatisfactory
+    extends stripeLib.stripeMod.creditNotesNs.CreditNoteReason
   
   @js.native
   sealed trait pt extends js.Object
@@ -994,6 +1016,8 @@ object stripeLibStrings {
   @scala.inline
   def credit_not_processed: credit_not_processed = "credit_not_processed".asInstanceOf[credit_not_processed]
   @scala.inline
+  def credit_note: credit_note = "credit_note".asInstanceOf[credit_note]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def customer: customer = "customer".asInstanceOf[customer]
@@ -1118,6 +1142,8 @@ object stripeLibStrings {
   @scala.inline
   def invoiceitem: invoiceitem = "invoiceitem".asInstanceOf[invoiceitem]
   @scala.inline
+  def issued: issued = "issued".asInstanceOf[issued]
+  @scala.inline
   def issuer_declined: issuer_declined = "issuer_declined".asInstanceOf[issuer_declined]
   @scala.inline
   def it: it = "it".asInstanceOf[it]
@@ -1194,6 +1220,8 @@ object stripeLibStrings {
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   @scala.inline
+  def order_change: order_change = "order_change".asInstanceOf[order_change]
+  @scala.inline
   def order_item: order_item = "order_item".asInstanceOf[order_item]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
@@ -1228,6 +1256,10 @@ object stripeLibStrings {
   @scala.inline
   def png: png = "png".asInstanceOf[png]
   @scala.inline
+  def post_payment: post_payment = "post_payment".asInstanceOf[post_payment]
+  @scala.inline
+  def pre_payment: pre_payment = "pre_payment".asInstanceOf[pre_payment]
+  @scala.inline
   def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
   @scala.inline
   def processing: processing = "processing".asInstanceOf[processing]
@@ -1239,6 +1271,8 @@ object stripeLibStrings {
   def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
   @scala.inline
   def product_unacceptable: product_unacceptable = "product_unacceptable".asInstanceOf[product_unacceptable]
+  @scala.inline
+  def product_unsatisfactory: product_unsatisfactory = "product_unsatisfactory".asInstanceOf[product_unsatisfactory]
   @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
   @scala.inline

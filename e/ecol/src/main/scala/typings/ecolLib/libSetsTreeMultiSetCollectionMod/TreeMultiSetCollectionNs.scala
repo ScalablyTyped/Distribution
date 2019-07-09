@@ -37,17 +37,69 @@ object TreeMultiSetCollectionNs extends js.Object {
       ]
     ]
   ] = js.native
+  val Iterator: org.scalablytyped.runtime.Instantiable0[
+    tstlLib.baseContainerSetElementListMod.SetElementListNs.Iterator[
+      js.Object, 
+      scala.Boolean, 
+      tstlLib.baseContainerSetContainerMod.SetContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        tstlLib.baseContainerSetElementListMod.SetElementListNs.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        tstlLib.baseContainerSetElementListMod.SetElementListNs.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: org.scalablytyped.runtime.Instantiable0[
+    tstlLib.baseContainerSetElementListMod.SetElementListNs.ReverseIterator[
+      js.Object, 
+      scala.Boolean, 
+      tstlLib.baseContainerSetContainerMod.SetContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        tstlLib.baseContainerSetElementListMod.SetElementListNs.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        tstlLib.baseContainerSetElementListMod.SetElementListNs.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
   type Event[T] = ecolLib.libBasicCollectionEventMod.CollectionEvent[
     T, 
     tstlLib.containerTreeMultiSetMod.TreeMultiSet[T], 
     tstlLib.containerTreeMultiSetMod.TreeMultiSetNs.Iterator[T], 
     tstlLib.containerTreeMultiSetMod.TreeMultiSetNs.ReverseIterator[T]
   ]
+  type Iterator[Key] = tstlLib.baseContainerSetElementListMod.SetElementListNs.Iterator[
+    Key, 
+    ecolLib.ecolLibNumbers.`false`, 
+    tstlLib.containerTreeMultiSetMod.TreeMultiSet[Key]
+  ]
   type Listener[T] = ecolLib.libBasicCollectionEventMod.CollectionEventNs.Listener[
     T, 
     tstlLib.containerTreeMultiSetMod.TreeMultiSet[T], 
     tstlLib.containerTreeMultiSetMod.TreeMultiSetNs.Iterator[T], 
     tstlLib.containerTreeMultiSetMod.TreeMultiSetNs.ReverseIterator[T]
+  ]
+  type ReverseIterator[Key] = tstlLib.baseContainerSetElementListMod.SetElementListNs.ReverseIterator[
+    Key, 
+    ecolLib.ecolLibNumbers.`false`, 
+    tstlLib.containerTreeMultiSetMod.TreeMultiSet[Key]
   ]
 }
 

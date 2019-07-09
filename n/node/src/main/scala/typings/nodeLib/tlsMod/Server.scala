@@ -21,6 +21,11 @@ class Server ()
     ]
   ): this.type = js.native
   @JSName("addListener")
+  def addListener_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function2[/* line */ nodeLib.Buffer, /* tlsSocket */ TLSSocket, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
@@ -57,6 +62,8 @@ class Server ()
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit]
   ): scala.Boolean = js.native
   @JSName("emit")
+  def emit_keylog(event: nodeLib.nodeLibStrings.keylog, line: nodeLib.Buffer, tlsSocket: TLSSocket): scala.Boolean = js.native
+  @JSName("emit")
   def emit_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     sessionId: nodeLib.Buffer,
@@ -82,6 +89,11 @@ class Server ()
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function2[/* line */ nodeLib.Buffer, /* tlsSocket */ TLSSocket, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_newSession(
@@ -123,6 +135,11 @@ class Server ()
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function2[/* line */ nodeLib.Buffer, /* tlsSocket */ TLSSocket, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
@@ -162,6 +179,11 @@ class Server ()
     ]
   ): this.type = js.native
   @JSName("prependListener")
+  def prependListener_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function2[/* line */ nodeLib.Buffer, /* tlsSocket */ TLSSocket, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
   def prependListener_newSession(
     event: nodeLib.nodeLibStrings.newSession,
     listener: js.Function3[
@@ -199,6 +221,11 @@ class Server ()
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* resp */ nodeLib.Buffer, scala.Unit], 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function2[/* line */ nodeLib.Buffer, /* tlsSocket */ TLSSocket, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_newSession(

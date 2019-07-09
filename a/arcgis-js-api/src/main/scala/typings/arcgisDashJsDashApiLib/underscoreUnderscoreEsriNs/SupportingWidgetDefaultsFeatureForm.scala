@@ -15,7 +15,7 @@ trait SupportingWidgetDefaultsFeatureForm
     */
   var fieldConfig: js.UndefOr[js.Array[FieldConfig]] = js.undefined
   /**
-    * String indicating the [[groupDisplay]](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay) and how they will be displayed to the end user.
+    * String indicating the [groupDisplay](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay) and how they will be displayed to the end user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */

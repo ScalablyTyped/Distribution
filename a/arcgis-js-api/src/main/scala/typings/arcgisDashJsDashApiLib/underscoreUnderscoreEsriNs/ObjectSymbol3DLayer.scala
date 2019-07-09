@@ -61,6 +61,12 @@ trait ObjectSymbol3DLayer
     */
   var height: scala.Double = js.native
   /**
+    * The material used to shade the object. This property defines the object's color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#material)
+    */
+  var material: ObjectSymbol3DLayerMaterial = js.native
+  /**
     * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in glTF format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)

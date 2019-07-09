@@ -13,6 +13,12 @@ trait MeshCreateFromGLTFParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
     */
   var geographic: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the loading process. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
+    */
+  var signal: js.UndefOr[stdLib.AbortSignal] = js.undefined
 }
 
 object MeshCreateFromGLTFParams {
@@ -21,10 +27,12 @@ object MeshCreateFromGLTFParams {
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    geographic: js.UndefOr[scala.Boolean] = js.undefined
+    geographic: js.UndefOr[scala.Boolean] = js.undefined,
+    signal: stdLib.AbortSignal = null
   ): MeshCreateFromGLTFParams = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
     __obj.asInstanceOf[MeshCreateFromGLTFParams]
   }
 }

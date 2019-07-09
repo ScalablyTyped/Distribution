@@ -69,11 +69,27 @@ trait predominanceCreateRendererParams
     */
   var legendOptions: js.UndefOr[predominanceCreateRendererParamsLegendOptions] = js.undefined
   /**
+    * Only for polygon layers. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#createRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * In authoring apps, the user may select a pre-defined predominance scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#createRenderer)
     */
   var predominanceScheme: js.UndefOr[PredominanceScheme] = js.undefined
+  /**
+    * Only for polygon layers when `includeSizeVariable` is `true`. Indicates whether the icon sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#createRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html). See the table below for information about values that may be passed to this parameter.
     *
@@ -134,7 +150,9 @@ object predominanceCreateRendererParams {
     includeOpacityVariable: js.UndefOr[scala.Boolean] = js.undefined,
     includeSizeVariable: js.UndefOr[scala.Boolean] = js.undefined,
     legendOptions: predominanceCreateRendererParamsLegendOptions = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     predominanceScheme: PredominanceScheme = null,
+    sizeOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     sortBy: java.lang.String = null,
     statistics: SummaryStatisticsResult = null,
     symbolType: java.lang.String = null
@@ -146,7 +164,9 @@ object predominanceCreateRendererParams {
     if (!js.isUndefined(includeOpacityVariable)) __obj.updateDynamic("includeOpacityVariable")(includeOpacityVariable)
     if (!js.isUndefined(includeSizeVariable)) __obj.updateDynamic("includeSizeVariable")(includeSizeVariable)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (predominanceScheme != null) __obj.updateDynamic("predominanceScheme")(predominanceScheme)
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled)
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)

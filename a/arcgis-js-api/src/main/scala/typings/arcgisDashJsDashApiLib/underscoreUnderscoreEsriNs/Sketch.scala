@@ -8,11 +8,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Sketch extends Widget {
   /**
-    * Returns the name of the active tool associated with the Sketch widget instance.  **Possible Values:** point | polyline | polygon | circle | rectangle | move | transform | reshape
+    * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.  **Possible Values:** point | polyline | polygon | circle | rectangle | move | transform | reshape
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool)
     */
   val activeTool: java.lang.String = js.native
+  /**
+    * Property controlling the visibility and order of create tool buttons.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
+    *
+    * @default ["point", "polyline", "polygon", "rectangle", "circle"]
+    */
+  var availableCreateTools: js.Array[java.lang.String] = js.native
   /**
     * The graphic that is being created.
     *
@@ -70,13 +78,7 @@ trait Sketch extends Widget {
     */
   var viewModel: SketchViewModel = js.native
   /**
-    * The Sketch widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#widgetLabel)
-    */
-  val widgetLabel: java.lang.String = js.native
-  /**
-    * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:update) event and changes the event's state to `cancel`.
+    * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-update) event and changes the event's state to `cancel`. If called in the middle of a create operation, `cancel()` discards the partially created graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#cancel)
     *
@@ -84,7 +86,7 @@ trait Sketch extends Widget {
     */
   def cancel(): scala.Unit = js.native
   /**
-    * Completes the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:update) event and changes the event's state to `complete`. If called in midst of create operation, `complete()` finishes the active create operation and keeps the valid geometry.
+    * Completes the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-update) event and changes the event's state to `complete`. If called in the middle of a create operation, `complete()` finishes the active create operation and keeps the valid geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#complete)
     *
@@ -92,11 +94,11 @@ trait Sketch extends Widget {
     */
   def complete(): scala.Unit = js.native
   /**
-    * Create a graphic with a geometry specified in `tool`. When first vertex of the graphic is added, [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:create) event will start firing.
+    * Create a graphic with the geometry specified in the `tool` parameter. When the first vertex of the graphic is added, the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-create) event will start firing. The provided `tool` will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
     *
-    * @param tool Name of the create tool. Specifies the geometry type for the graphic to be created.  **Possible Values:** point | polyline | polygon | rectangle | circle
+    * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.  **Possible Values:** point | polyline | polygon | rectangle | circle
     * @param createOptions Options for the graphic to be created.
     * @param createOptions.mode
     * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.  **Possible Values:**
@@ -111,7 +113,7 @@ trait Sketch extends Widget {
   def create(tool: java.lang.String): scala.Unit = js.native
   def create(tool: java.lang.String, createOptions: SketchCreateCreateOptions): scala.Unit = js.native
   /**
-    * Incrementally redo actions recorded in the stack. Calling this method will fire the [redo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:redo) event.
+    * Incrementally redo actions recorded in the stack. Calling this method will fire the [redo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-redo) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#redo)
     *
@@ -135,7 +137,7 @@ trait Sketch extends Widget {
     */
   def reset(): scala.Unit = js.native
   /**
-    * Incrementally undo actions recorded in the stack. Calling this method will fire the [undo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:undo) event.
+    * Incrementally undo actions recorded in the stack. Calling this method will fire the [undo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-undo) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#undo)
     *
@@ -143,14 +145,14 @@ trait Sketch extends Widget {
     */
   def undo(): scala.Unit = js.native
   /**
-    * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event:update) event.
+    * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-update) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     *
     * @param graphics A graphic or an array of graphics to be updated. Only graphics added to SketchViewModel's [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layer) property can be updated.
     * @param updateOptions Update options for the graphics to be updated.
     * @param updateOptions.tool
-    * Name of the update tool. Specifies the update operation for the selected graphics.  **Possible Values:**
+    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool).  **Possible Values:**
     *
     * Value | Description |
     * ----- | ----------- |

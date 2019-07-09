@@ -37,11 +37,7 @@ class ForwardList[T] ()
     * @param first Input iterator of the first position.
     * @param last Input iterator of the last position.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]) = this()
   /**
     * Fill Constructor.
     *
@@ -91,7 +87,7 @@ class ForwardList[T] ()
     * @param first Input iteartor of the first position.
     * @param last Input iterator of the last position.
     */
-  def assign[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
+  def assign[T, InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
   /**
     * Iterator to before beginning.
     *
@@ -165,7 +161,7 @@ class ForwardList[T] ()
     * @param last Input iteartor of the last position.
     * @return An iterator to the last of the newly inserted elements.
     */
-  def insert_after[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](
+  def insert_after[T, InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */](
     pos: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T],
     first: InputIterator,
     last: InputIterator

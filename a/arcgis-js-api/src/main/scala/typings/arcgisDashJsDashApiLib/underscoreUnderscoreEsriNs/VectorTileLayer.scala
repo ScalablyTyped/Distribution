@@ -90,14 +90,23 @@ trait VectorTileLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#loadStyle)
     *
     * @param style The URL to a style of vector tiles or style JSON object.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def loadStyle(style: java.lang.String): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def loadStyle(style: java.lang.String, options: VectorTileLayerLoadStyleOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   def loadStyle(style: js.Any): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def loadStyle(style: js.Any, options: VectorTileLayerLoadStyleOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   @JSName("on")
   def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: VectorTileLayerLayerviewCreateEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: VectorTileLayerLayerviewCreateErrorEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
   def on_layerviewdestroy(

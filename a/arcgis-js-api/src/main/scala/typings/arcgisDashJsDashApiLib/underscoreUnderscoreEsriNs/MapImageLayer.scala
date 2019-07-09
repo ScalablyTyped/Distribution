@@ -11,7 +11,8 @@ trait MapImageLayer
   extends Layer
      with SublayersOwner
      with ScaleRangeLayer
-     with RefreshableLayer {
+     with RefreshableLayer
+     with TemporalLayer {
   /**
     * A flat [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of all the [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) in the MapImageLayer including the sublayers of its sublayers. All sublayers are referenced in the order in which they are drawn in the view (bottom to top).
     *
@@ -125,6 +126,7 @@ trait MapImageLayer
     * @param options The parameter options is an object with the following properties.
     * @param options.rotation The rotation in degrees of the exported image. Available since ArcGIS Server 10.3.
     * @param options.pixelRatio The pixel ratio to apply to the dpi of the exported image.
+    * @param options.timeExtent The time instant or time extent of content to render.
     *
     */
   def createExportImageParameters(extent: Extent, width: scala.Double, height: scala.Double): js.Any = js.native
@@ -145,6 +147,8 @@ trait MapImageLayer
     * @param options The parameter options is an object with the following properties.
     * @param options.rotation The rotation in degrees of the exported image. Available since ArcGIS Server 10.3.
     * @param options.pixelRatio The ratio of the resolution in physical pixels of the image to the resolution it will be displayed at.
+    * @param options.timeExtent The time instant or time extent of content to render.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def fetchImage(extent: Extent, width: scala.Double, height: scala.Double): arcgisDashJsDashApiLib.IPromise[stdLib.HTMLImageElement] = js.native
@@ -173,6 +177,11 @@ trait MapImageLayer
   def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: MapImageLayerLayerviewCreateEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: MapImageLayerLayerviewCreateErrorEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
   def on_layerviewdestroy(
@@ -217,6 +226,15 @@ class MapImageLayerCls () extends MapImageLayer {
     */
   /* CompleteClass */
   override var refreshInterval: scala.Double = js.native
+  /**
+    * The time info provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [full time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer. The `timeInfo` along with its `startField` and `endField` properties must be set at the time of layer initialization if it is being set for [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) or [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) initialized from [client-side features](esri-layers-FeatureLayer.html#creating-a-featurelayer). The [full time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the timeInfo is automatically calculated based on `start` and `end` fields. The timeInfo parameters cannot be changed after the layer is [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#load).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
+    *
+    * @default null
+    */
+  /* CompleteClass */
+  override var timeInfo: TimeInfo = js.native
   /**
     * Returns a deep clone of a map service's [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) as defined by the service. This is useful for scenarios when the developer is unfamiliar with the service sublayers and needs to "reset" the layer's sublayers to match those defined by the service.
     *

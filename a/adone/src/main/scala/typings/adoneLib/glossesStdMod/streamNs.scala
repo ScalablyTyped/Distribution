@@ -115,6 +115,18 @@ object streamNs extends js.Object {
     stream5: T,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): T = js.native
+  /* static members */
+  @js.native
+  object Readable extends js.Object {
+    def from(iterable: nodeLib.AsyncIterable[_]): nodeLib.streamMod.Readable = js.native
+    def from(iterable: nodeLib.AsyncIterable[_], options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
+    /**
+      * A utility method for creating Readable Streams out of iterators.
+      */
+    def from(iterable: nodeLib.Iterable[_]): nodeLib.streamMod.Readable = js.native
+    def from(iterable: nodeLib.Iterable[_], options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
+  }
+  
   @JSName("finished")
   @js.native
   object finishedNs extends js.Object {

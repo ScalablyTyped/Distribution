@@ -11,6 +11,7 @@ object ^ extends js.Object {
   val CLIENT_RENEG_LIMIT: scala.Double = js.native
   val CLIENT_RENEG_WINDOW: scala.Double = js.native
   val DEFAULT_ECDH_CURVE: java.lang.String = js.native
+  val rootCertificates: js.Array[java.lang.String] = js.native
   /*
     * Verifies the certificate `cert` is issued to host `host`.
     * @host The hostname to verify the certificate against

@@ -42,10 +42,12 @@ trait BaseTileLayer
     * @param row The row (y) position of the tile fetch. This value is provided by [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html).
     * @param col The column (x) position of the tile to fetch. This value is provided by [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html).
     * @param options Optional settings for the tile request. The options have the following properties.
+    * @param options.timestamp Number to append to the tile request to prevent fetching the tile from the browser cache.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def fetchTile(level: scala.Double, row: scala.Double, col: scala.Double): arcgisDashJsDashApiLib.IPromise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
-  def fetchTile(level: scala.Double, row: scala.Double, col: scala.Double, options: js.Any): arcgisDashJsDashApiLib.IPromise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
+  def fetchTile(level: scala.Double, row: scala.Double, col: scala.Double, options: BaseTileLayerFetchTileOptions): arcgisDashJsDashApiLib.IPromise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
   /**
     * Returns the bounds of the tile as an array of four numbers that be readily converted to an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object. The value for each item in the array is described in the following table:
     *
@@ -82,6 +84,11 @@ trait BaseTileLayer
   def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: BaseTileLayerLayerviewCreateEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: BaseTileLayerLayerviewCreateErrorEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
   def on_layerviewdestroy(

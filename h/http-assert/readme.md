@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-assert
 
-Typings are for version 1.4
+Typings are for version 1.5
 
 ## Library description:
 assert with status codes
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for http-assert 1.4
+// Type definitions for http-assert 1.5
 // Project: https://github.com/jshttp/http-assert
 // Definitions by: jKey Lu <https://github.com/jkeylu>
 //                 Peter Squicciarini <https://github.com/stripedpajamas>

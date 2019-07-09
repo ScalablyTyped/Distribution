@@ -20,11 +20,23 @@ trait HeatmapScheme
     */
   var id: java.lang.String
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#HeatmapScheme)
+    */
+  var name: java.lang.String
+  /**
     * The opacity of the heatmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#HeatmapScheme)
     */
   var opacity: scala.Double
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#HeatmapScheme)
+    */
+  var tags: js.Array[java.lang.String]
 }
 
 object HeatmapScheme {
@@ -34,10 +46,12 @@ object HeatmapScheme {
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
+    name: java.lang.String,
     opacity: scala.Double,
-    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    tags: js.Array[java.lang.String]
   ): HeatmapScheme = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags)
   
     __obj.asInstanceOf[HeatmapScheme]
   }

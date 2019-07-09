@@ -35,3 +35,14 @@ class Duplex () extends Writable {
   def wrap(oldStream: nodeLib.NodeJSNs.ReadableStream): this.type = js.native
 }
 
+/* static members */
+@JSImport("readable-stream", "Duplex")
+@js.native
+object Duplex extends js.Object {
+  /**
+    * This is a dummy function required to retain type compatibility to node.
+    * @deprecated DO NOT USE
+    */
+  def from(source: js.Any): js.Any = js.native
+}
+

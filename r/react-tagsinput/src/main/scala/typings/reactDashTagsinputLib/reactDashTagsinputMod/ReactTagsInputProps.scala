@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ReactTagsInputProps
   extends reactLib.reactMod.Props[TagsInput] {
-  var addKeys: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var addKeys: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var addOnBlur: js.UndefOr[scala.Boolean] = js.undefined
   var addOnPaste: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -42,7 +42,7 @@ object ReactTagsInputProps {
   def apply(
     onChange: (js.Array[reactDashTagsinputLib.Tag], js.Array[reactDashTagsinputLib.Tag], js.Array[scala.Double]) => scala.Unit,
     value: js.Array[reactDashTagsinputLib.Tag],
-    addKeys: js.Array[scala.Double] = null,
+    addKeys: js.Array[scala.Double | java.lang.String] = null,
     addOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     addOnPaste: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for arcgis-js-api
 
-Typings are for version 4.11
+Typings are for version 4.12
 
 ## Library description:
 Minified, unbuilt version of the ArcGIS API for JavaScript
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for ArcGIS API for JavaScript 4.11
+// Type definitions for ArcGIS API for JavaScript 4.12
 // Project: http://js.arcgis.com
 // Definitions by: Esri <https://github.com/Esri>
 //                 Bjorn Svensson <https://github.com/bsvensson>

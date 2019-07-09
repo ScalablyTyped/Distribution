@@ -14,7 +14,7 @@ trait SwitchProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[SwitchChangeEventHandler] = js.undefined
-  var onClick: js.UndefOr[SwitchChangeEventHandler] = js.undefined
+  var onClick: js.UndefOr[SwitchClickEventHandler] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[SwitchSize] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -33,7 +33,7 @@ object SwitchProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: SwitchChangeEventHandler = null,
-    onClick: SwitchChangeEventHandler = null,
+    onClick: SwitchClickEventHandler = null,
     prefixCls: java.lang.String = null,
     size: SwitchSize = null,
     style: reactLib.reactMod.CSSProperties = null,

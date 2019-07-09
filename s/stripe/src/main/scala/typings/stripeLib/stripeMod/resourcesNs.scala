@@ -1497,6 +1497,105 @@ object resourcesNs extends js.Object {
   }
   
   @js.native
+  class CreditNotes ()
+    extends stripeLib.stripeMod.StripeResource {
+    def create(data: stripeLib.stripeMod.creditNotesNs.ICreditNoteCreationOptions): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    /**
+      * A credit note can be issued for open and paid invoices.
+      * When issued for an open invoice, a credit note decreases the invoice’s amount due.
+      * When issued for a paid invoice, it is commonly used to refund or credit a specified amount to the customer.
+      */
+    def create(
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteCreationOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def create(
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteCreationOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def create(
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteCreationOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def list(): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def list(data: stripeLib.stripeMod.creditNotesNs.ICreditNoteListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    /**
+      * Returns a list of your credit notes. Credit notes are returned sorted by creation date, with the most recently created credit note
+      * items appearing first.
+      */
+    def list(
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteListOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def list(
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteListOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]]
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def list(
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteListOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]]
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def list(options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def list(
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]]
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def list(
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]]
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.creditNotesNs.ICreditNote]] = js.native
+    def retrieve(creditNoteId: java.lang.String): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    /**
+      * Retrieves the credit note with the given ID.
+      */
+    def retrieve(creditNoteId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def retrieve(
+      creditNoteId: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def retrieve(
+      creditNoteId: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def update(creditNoteId: java.lang.String, data: stripeLib.stripeMod.creditNotesNs.ICreditNoteUpdateOptions): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    /**
+      * Updates the memo or metadata on the credit note.
+      */
+    def update(
+      creditNoteId: java.lang.String,
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteUpdateOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def update(
+      creditNoteId: java.lang.String,
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteUpdateOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def update(
+      creditNoteId: java.lang.String,
+      data: stripeLib.stripeMod.creditNotesNs.ICreditNoteUpdateOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def voidCreditNote(creditNoteId: java.lang.String): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    /**
+      * Marks a credit note as void. Voiding a credit note reverses its adjustment. Voiding is only possible on open invoices.
+      */
+    def voidCreditNote(creditNoteId: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def voidCreditNote(
+      creditNoteId: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+    def voidCreditNote(
+      creditNoteId: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.creditNotesNs.ICreditNote]
+    ): js.Promise[stripeLib.stripeMod.creditNotesNs.ICreditNote] = js.native
+  }
+  
+  @js.native
   class CustomerCards ()
     extends stripeLib.stripeMod.StripeResource {
     def create(data: stripeLib.Anon_Card): js.Promise[stripeLib.stripeMod.cardsNs.ICard] = js.native

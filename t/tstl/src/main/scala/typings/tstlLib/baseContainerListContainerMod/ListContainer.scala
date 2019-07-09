@@ -40,7 +40,7 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @hidden
     */
-  /* protected */ def _Insert_by_range[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
+  /* protected */ def _Insert_by_range[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
   /**
     * @inheritDoc
     */
@@ -56,7 +56,7 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @inheritDoc
     */
-  def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
+  def insert[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
   /**
     * @inheritDoc
     */

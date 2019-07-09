@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "watchify"
-version := "v3.7.0-dt-20190322Z-52e01b"
+version := "v3.7.0-dt-20190322Z-e9ed05"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "browserify" % "12.0-dt-20190322Z-f27d0e",
-  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20190212Z-18b581",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "browserify" % "12.0-dt-20190322Z-76eca4",
+  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20190212Z-518215",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

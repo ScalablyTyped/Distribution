@@ -7,18 +7,15 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - tstlLib.baseContainerUnderscoreITreeContainerMod._ITreeContainer because var conflicts: iterator. Inlined key_comp, value_comp, lower_bound, upper_bound, equal_range */ @js.native
-trait ITreeMap[Key, T, Unique /* <: scala.Boolean */, Source /* <: ITreeMap[Key, T, Unique, Source] */]
-  extends tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source] {
+trait ITreeMap[Key, T, Unique /* <: scala.Boolean */, Source /* <: ITreeMap[Key, T, Unique, Source, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorIMapIteratorMod.IMapIterator[Key, T, Unique, Source, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorIMapIteratorMod.IMapReverseIterator[Key, T, Unique, Source, IteratorT, ReverseT] */]
+  extends tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] {
   /**
     * Get range of equal elements.
     *
     * @param key Key to search for.
     * @return Pair of {@link lower_bound} and {@link upper_bound}.
     */
-  def equal_range(key: Key): tstlLib.utilityPairMod.Pair[
-    tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source], 
-    tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source]
-  ] = js.native
+  def equal_range(key: Key): tstlLib.utilityPairMod.Pair[IteratorT, IteratorT] = js.native
   /**
     * Get key comparison function.
     *
@@ -31,14 +28,14 @@ trait ITreeMap[Key, T, Unique /* <: scala.Boolean */, Source /* <: ITreeMap[Key,
     * @param key Key to search for.
     * @return Iterator to the first element equal or after to the key.
     */
-  def lower_bound(key: Key): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source] = js.native
+  def lower_bound(key: Key): IteratorT = js.native
   /**
     * Get iterator to upper bound.
     *
     * @param key Key to search for.
     * @return Iterator to the first element after the key.
     */
-  def upper_bound(key: Key): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source] = js.native
+  def upper_bound(key: Key): IteratorT = js.native
   /**
     * Get value comparison function.
     *

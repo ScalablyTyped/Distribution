@@ -101,6 +101,14 @@ trait relationshipCreateRendererParams
     */
   var numClasses: js.UndefOr[scala.Double] = js.undefined
   /**
+    * For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#createRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * In authoring apps, the user may select a pre-defined relationship scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#createRenderer)
@@ -146,6 +154,7 @@ object relationshipCreateRendererParams {
     focus: java.lang.String = null,
     legendOptions: relationshipCreateRendererParamsLegendOptions = null,
     numClasses: scala.Int | scala.Double = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     relationshipScheme: RelationshipScheme = null,
     symbolType: java.lang.String = null
   ): relationshipCreateRendererParams = {
@@ -157,6 +166,7 @@ object relationshipCreateRendererParams {
     if (focus != null) __obj.updateDynamic("focus")(focus)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (relationshipScheme != null) __obj.updateDynamic("relationshipScheme")(relationshipScheme)
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
     __obj.asInstanceOf[relationshipCreateRendererParams]

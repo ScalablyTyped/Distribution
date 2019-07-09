@@ -1774,7 +1774,10 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.intersectionBy
     */
-  def intersectionBy[T](`this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]], values: List[T]*): LoDashImplicitWrapper[js.Array[T]] = js.native
+  def intersectionBy[T1, T2](
+    `this`: LoDashImplicitWrapper[js.UndefOr[List[T1] | scala.Null]],
+    values: (List[T2] | (ValueIteratee[T1 | T2]))*
+  ): LoDashImplicitWrapper[js.Array[T1]] = js.native
   /**
     * @see _.intersectionBy
     */

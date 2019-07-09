@@ -17,9 +17,9 @@ trait InvoiceItem
     */
   var discountable: scala.Boolean
   /**
-    * If null, the invoice item is pending and will be included in the upcoming invoice.
+    * If null, the invoice item is pending and will be included in the upcoming invoice. [Expandable]
     */
-  var invoice: java.lang.String | scala.Null
+  var invoice: java.lang.String | stripeLib.stripeMod.invoicesNs.IInvoice | scala.Null
   var livemode: scala.Boolean
   var metadata: stripeLib.stripeMod.IMetadata
   /**
@@ -64,11 +64,11 @@ object InvoiceItem {
     proration: scala.Boolean,
     quantity: scala.Double,
     subscription: java.lang.String | stripeLib.stripeMod.subscriptionsNs.ISubscription,
-    invoice: java.lang.String = null
+    invoice: java.lang.String | stripeLib.stripeMod.invoicesNs.IInvoice = null
   ): InvoiceItem = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer, date = date, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
-    if (invoice != null) __obj.updateDynamic("invoice")(invoice)
+    if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItem]
   }
 }

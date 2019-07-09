@@ -21,7 +21,7 @@ trait AttachmentsContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)
     */
-  var displayType: java.lang.String = js.native
+  var displayType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.preview | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.list = js.native
 }
 
 @JSGlobal("__esri.AttachmentsContent")

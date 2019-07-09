@@ -10,7 +10,7 @@ trait NodeResult extends js.Object {
   var any: js.Array[CheckResult]
   var failureSummary: js.UndefOr[java.lang.String] = js.undefined
   var html: java.lang.String
-  var impact: ImpactValue
+  var impact: js.UndefOr[ImpactValue] = js.undefined
   var none: js.Array[CheckResult]
   var target: js.Array[java.lang.String]
 }
@@ -21,13 +21,14 @@ object NodeResult {
     all: js.Array[CheckResult],
     any: js.Array[CheckResult],
     html: java.lang.String,
-    impact: ImpactValue,
     none: js.Array[CheckResult],
     target: js.Array[java.lang.String],
-    failureSummary: java.lang.String = null
+    failureSummary: java.lang.String = null,
+    impact: ImpactValue = null
   ): NodeResult = {
-    val __obj = js.Dynamic.literal(all = all, any = any, html = html, impact = impact, none = none, target = target)
+    val __obj = js.Dynamic.literal(all = all, any = any, html = html, none = none, target = target)
     if (failureSummary != null) __obj.updateDynamic("failureSummary")(failureSummary)
+    if (impact != null) __obj.updateDynamic("impact")(impact)
     __obj.asInstanceOf[NodeResult]
   }
 }

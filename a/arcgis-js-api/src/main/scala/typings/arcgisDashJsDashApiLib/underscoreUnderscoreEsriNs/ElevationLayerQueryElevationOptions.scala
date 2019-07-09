@@ -38,6 +38,12 @@ trait ElevationLayerQueryElevationOptions
     * @default false
     */
   var returnSampleInfo: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
+    */
+  var signal: js.UndefOr[stdLib.AbortSignal] = js.undefined
 }
 
 object ElevationLayerQueryElevationOptions {
@@ -48,12 +54,14 @@ object ElevationLayerQueryElevationOptions {
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     demResolution: scala.Double | java.lang.String = null,
     noDataValue: scala.Int | scala.Double = null,
-    returnSampleInfo: js.UndefOr[scala.Boolean] = js.undefined
+    returnSampleInfo: js.UndefOr[scala.Boolean] = js.undefined,
+    signal: stdLib.AbortSignal = null
   ): ElevationLayerQueryElevationOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (demResolution != null) __obj.updateDynamic("demResolution")(demResolution.asInstanceOf[js.Any])
     if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
     if (!js.isUndefined(returnSampleInfo)) __obj.updateDynamic("returnSampleInfo")(returnSampleInfo)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
     __obj.asInstanceOf[ElevationLayerQueryElevationOptions]
   }
 }

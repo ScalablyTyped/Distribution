@@ -21,7 +21,13 @@ trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var anchorPosition: js.UndefOr[IconSymbol3DLayerAnchorPosition] = js.undefined
   /**
-    * The outline of the icon.
+    * The material used to shade the icon. This property defines the icon's color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#material)
+    */
+  var material: js.UndefOr[IconSymbol3DLayerMaterialProperties] = js.undefined
+  /**
+    * The outline of the icon. The color property of this object directly modifies the overall color of IconSymbol3DLayer defined with the `cross` or `x` primitive.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
@@ -50,7 +56,7 @@ object IconSymbol3DLayerProperties {
   def apply(
     anchor: java.lang.String = null,
     anchorPosition: IconSymbol3DLayerAnchorPosition = null,
-    material: js.Any = null,
+    material: IconSymbol3DLayerMaterialProperties = null,
     outline: IconSymbol3DLayerOutlineProperties = null,
     resource: IconSymbol3DLayerResource = null,
     size: scala.Double | java.lang.String = null

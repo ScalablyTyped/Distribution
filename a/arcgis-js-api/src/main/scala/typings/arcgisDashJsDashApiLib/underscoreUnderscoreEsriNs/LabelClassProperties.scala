@@ -51,11 +51,9 @@ trait LabelClassProperties extends js.Object {
     */
   var minScale: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Defines the symbol used for rendering the label.
+    * Defines the symbol used for rendering the label. If not set, the default symbol will be used. See the example below.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#symbol)
-    *
-    * @default null
     */
   var symbol: js.UndefOr[TextSymbolProperties | LabelSymbol3DProperties] = js.undefined
   /**
@@ -66,7 +64,6 @@ trait LabelClassProperties extends js.Object {
   var useCodedValues: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * A SQL where clause used to determine the features to which the label class should be applied. When specified, only features evaluating to `true` based on this expression will be labeled.
-    * > **Known Limitations**  Only very basic SQL is currently supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where)
     *

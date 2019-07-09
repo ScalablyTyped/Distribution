@@ -3502,7 +3502,10 @@ trait LoDashStatic extends js.Object {
     */
   def intersectionBy[T](): js.Array[T] = js.native
   def intersectionBy[T](array: List[T], values: List[T]*): js.Array[T] = js.native
-  def intersectionBy[T](values: List[T]*): js.Array[T] = js.native
+  /**
+    * @see _.intersectionBy
+    */
+  def intersectionBy[T](values: (List[T] | ValueIteratee[T])*): js.Array[T] = js.native
   /**
     * This method is like `_.intersection` except that it accepts `iteratee`
     * which is invoked for each element of each `arrays` to generate the criterion

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait symbologyLocation extends js.Object {
   /**
     * Clones a location scheme object.
@@ -14,7 +15,7 @@ trait symbologyLocation extends js.Object {
     * @param scheme The location scheme object to clone.
     *
     */
-  def cloneScheme(scheme: LocationScheme): LocationScheme
+  def cloneScheme(scheme: LocationScheme): LocationScheme = js.native
   /**
     * Returns a primary scheme and secondary schemes defining symbol properties for location-only visualizions in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html). The `basemap` parameter determines the color of the graphics used to visualize each feature. The `geometryType` determines which type of symbol to return.
     *
@@ -27,18 +28,17 @@ trait symbologyLocation extends js.Object {
     * @param params.worldScale Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
     *
     */
-  def getSchemes(params: locationGetSchemesParams): LocationSchemes
-}
-
-object symbologyLocation {
-  @scala.inline
-  def apply(
-    cloneScheme: LocationScheme => LocationScheme,
-    getSchemes: locationGetSchemesParams => LocationSchemes
-  ): symbologyLocation = {
-    val __obj = js.Dynamic.literal(cloneScheme = js.Any.fromFunction1(cloneScheme), getSchemes = js.Any.fromFunction1(getSchemes))
-  
-    __obj.asInstanceOf[symbologyLocation]
-  }
+  def getSchemes(params: locationGetSchemesParams): LocationSchemes = js.native
+  /**
+    * Returns metadata for the available themes. If a basemap is provided, returns themes that work best with the given basemap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-location.html#getThemes)
+    *
+    * @param basemap The [Esri basemap string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or object that will be used with the returned theme(s).
+    *
+    */
+  def getThemes(): js.Array[Theme] = js.native
+  def getThemes(basemap: Basemap): js.Array[Theme] = js.native
+  def getThemes(basemap: java.lang.String): js.Array[Theme] = js.native
 }
 

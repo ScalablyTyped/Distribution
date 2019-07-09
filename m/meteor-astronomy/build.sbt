@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "meteor-astronomy"
-version := "2.6-dt-20190503Z-83b96d"
+version := "2.6-dt-20190503Z-1fb957"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-042dbc",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-0256e3",
   "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
-  "org.scalablytyped" %%% "meteor" % "1.4-dt-20190429Z-0c3553",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "meteor" % "1.4-dt-20190429Z-dce6e0",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
   "org.scalablytyped" %%% "std" % "3.5-983486",

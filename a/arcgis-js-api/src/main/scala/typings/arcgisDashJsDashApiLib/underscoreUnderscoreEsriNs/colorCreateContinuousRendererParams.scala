@@ -81,6 +81,14 @@ trait colorCreateContinuousRendererParams
     */
   var normalizationField: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createContinuousRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createContinuousRenderer)
@@ -163,6 +171,7 @@ object colorCreateContinuousRendererParams {
     maxValue: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null,
     normalizationField: java.lang.String = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     sqlExpression: java.lang.String = null,
     sqlWhere: java.lang.String = null,
     statistics: SummaryStatisticsResult = null,
@@ -182,6 +191,7 @@ object colorCreateContinuousRendererParams {
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)

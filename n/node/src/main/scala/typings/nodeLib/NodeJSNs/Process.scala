@@ -275,6 +275,7 @@ trait Process extends EventEmitter {
   def prependOnceListener_unhandledRejection(event: nodeLib.nodeLibStrings.unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_warning(event: nodeLib.nodeLibStrings.warning, listener: WarningListener): this.type = js.native
+  def resourceUsage(): ResourceUsage = js.native
   def setUncaughtExceptionCaptureCallback(): scala.Unit = js.native
   def setUncaughtExceptionCaptureCallback(cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
   def setegid(id: java.lang.String): scala.Unit = js.native

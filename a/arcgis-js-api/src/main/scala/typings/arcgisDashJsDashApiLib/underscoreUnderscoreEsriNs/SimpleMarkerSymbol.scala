@@ -21,7 +21,7 @@ trait SimpleMarkerSymbol
   var outline: SimpleLineSymbol = js.native
   /**
     * The SVG path of the icon.
-    * > **Known Limitations**  This property is not supported in IE11.
+    * > **Known Limitations**  This property works only in 2D. IE11 is not supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
     */

@@ -9,6 +9,7 @@ trait Anon_ChallengeAnswer extends js.Object {
   var challengeAnswer: js.UndefOr[java.lang.String] = js.undefined
   var challengeName: js.UndefOr[java.lang.String] = js.undefined
   var codeParameter: js.UndefOr[java.lang.String] = js.undefined
+  var linkParameter: js.UndefOr[java.lang.String] = js.undefined
   var newDeviceUsed: js.UndefOr[scala.Boolean] = js.undefined
   var password: js.UndefOr[java.lang.String] = js.undefined
   var privateChallengeParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
@@ -25,6 +26,7 @@ object Anon_ChallengeAnswer {
     challengeAnswer: java.lang.String = null,
     challengeName: java.lang.String = null,
     codeParameter: java.lang.String = null,
+    linkParameter: java.lang.String = null,
     newDeviceUsed: js.UndefOr[scala.Boolean] = js.undefined,
     password: java.lang.String = null,
     privateChallengeParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
@@ -36,6 +38,7 @@ object Anon_ChallengeAnswer {
     if (challengeAnswer != null) __obj.updateDynamic("challengeAnswer")(challengeAnswer)
     if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName)
     if (codeParameter != null) __obj.updateDynamic("codeParameter")(codeParameter)
+    if (linkParameter != null) __obj.updateDynamic("linkParameter")(linkParameter)
     if (!js.isUndefined(newDeviceUsed)) __obj.updateDynamic("newDeviceUsed")(newDeviceUsed)
     if (password != null) __obj.updateDynamic("password")(password)
     if (privateChallengeParameters != null) __obj.updateDynamic("privateChallengeParameters")(privateChallengeParameters)

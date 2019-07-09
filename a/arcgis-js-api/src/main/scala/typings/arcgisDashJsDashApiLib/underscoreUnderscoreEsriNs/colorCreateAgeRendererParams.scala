@@ -63,6 +63,14 @@ trait colorCreateAgeRendererParams
     */
   var legendOptions: js.UndefOr[colorCreateAgeRendererParamsLegendOptions] = js.undefined
   /**
+    * For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createAgeRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The name of the field, or a date value representing the start time in the age calculation. If a date value is specified, then the `endTime` parameter must reference a Date field in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createAgeRenderer)
@@ -132,6 +140,7 @@ object colorCreateAgeRendererParams {
     colorScheme: ColorScheme = null,
     defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     legendOptions: colorCreateAgeRendererParamsLegendOptions = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     statistics: SummaryStatisticsResult = null,
     symbolType: java.lang.String = null,
     theme: java.lang.String = null,
@@ -143,6 +152,7 @@ object colorCreateAgeRendererParams {
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
     if (theme != null) __obj.updateDynamic("theme")(theme)

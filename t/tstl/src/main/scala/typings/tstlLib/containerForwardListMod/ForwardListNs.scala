@@ -14,10 +14,11 @@ object ForwardListNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
+  /**
+    * @hidden
+    */
   class Iterator[T] protected ()
     extends tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator[T]] {
-    def this(source: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: Iterator[T]) = this()
-    def this(source: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerForwardListMod.ForwardList[T]], next: Iterator[T], value: T) = this()
     /**
       * @hidden
       */

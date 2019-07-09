@@ -54,11 +54,9 @@ trait LabelClass
     */
   var minScale: scala.Double = js.native
   /**
-    * Defines the symbol used for rendering the label.
+    * Defines the symbol used for rendering the label. If not set, the default symbol will be used. See the example below.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#symbol)
-    *
-    * @default null
     */
   var symbol: TextSymbol | LabelSymbol3D = js.native
   /**
@@ -69,7 +67,6 @@ trait LabelClass
   var useCodedValues: scala.Boolean = js.native
   /**
     * A SQL where clause used to determine the features to which the label class should be applied. When specified, only features evaluating to `true` based on this expression will be labeled.
-    * > **Known Limitations**  Only very basic SQL is currently supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where)
     *

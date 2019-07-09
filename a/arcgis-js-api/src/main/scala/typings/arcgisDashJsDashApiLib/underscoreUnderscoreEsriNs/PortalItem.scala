@@ -152,6 +152,12 @@ trait PortalItem
     */
   var owner: java.lang.String = js.native
   /**
+    * The ID of the folder in which the owner has stored the item. This is only returned to the item owner or the org administrator.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#ownerFolder)
+    */
+  var ownerFolder: java.lang.String = js.native
+  /**
     * The portal that contains the item. Defaults to the value in [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) (e.g. https://www.arcgis.com). Suggested to use [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) instead of this property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#portal)
@@ -236,19 +242,25 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchData)
     *
-    * @param responseType The format of the response.  **Possible Values:** json | xml | text | blob | array-buffer | document
+    * @param responseType The format of the response. **Possible Values:** json | xml | text | blob | array-buffer | document
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchData(): arcgisDashJsDashApiLib.IPromise[_] = js.native
   def fetchData(responseType: java.lang.String): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def fetchData(responseType: java.lang.String, options: PortalItemFetchDataOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Returns the rating (if any) given to the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchRating)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchRating(): arcgisDashJsDashApiLib.IPromise[PortalRating] = js.native
+  def fetchRating(options: PortalItemFetchRatingOptions): arcgisDashJsDashApiLib.IPromise[PortalRating] = js.native
   /**
     * Gets all the related items of a certain relationship type for the portal item. An optional direction can be specified if the direction of the relationship is ambiguous. Otherwise, the service will try to infer it.
     *
@@ -256,10 +268,13 @@ trait PortalItem
     *
     * @param params See the object specifications table below for the parameters that may be passed as properties in this object.
     * @param params.relationshipType The type of relationship between the two items. See [Relationship types](https://developers.arcgis.com/rest/users-groups-and-items/relationship-types.htm) for a complete listing of types.
-    * @param params.direction The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin).  **Possible Values:** forward | reverse
+    * @param params.direction The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin). **Possible Values:** forward | reverse
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams): arcgisDashJsDashApiLib.IPromise[js.Array[PortalItem]] = js.native
+  def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams, options: PortalItemFetchRelatedItemsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[PortalItem]] = js.native
   /**
     * Get the URL to the thumbnail image for the item.  Available width sizes: 200, 400, 800 and 2400.
     *

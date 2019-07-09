@@ -74,7 +74,7 @@ object navigationNs extends js.Object {
     * In version 7.22.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
   class NativeNavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
@@ -149,7 +149,7 @@ object navigationNs extends js.Object {
     * In version 7.2.0: added public
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
   class NavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var applicationTitle: java.lang.String = js.native

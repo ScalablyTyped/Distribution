@@ -20,7 +20,7 @@ trait Domain
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */
-  var `type`: java.lang.String = js.native
+  var `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.range | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`coded-value` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inherited = js.native
 }
 
 @JSGlobal("__esri.Domain")

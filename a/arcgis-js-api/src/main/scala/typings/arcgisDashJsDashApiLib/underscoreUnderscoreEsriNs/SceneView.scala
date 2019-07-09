@@ -157,16 +157,6 @@ trait SceneView
     *
     */
   def focus(): scala.Unit = js.native
-  def goTo(target: Camera): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Camera, options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Geometry): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Geometry, options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Graphic): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Graphic, options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: SceneViewGoToTarget): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: SceneViewGoToTarget, options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Viewpoint): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Viewpoint, options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Sets the view to a given target. The target parameter can be one of the following:
     *   * `[longitude, latitude]` pair of coordinates
@@ -195,10 +185,16 @@ trait SceneView
     * @param options.duration Set the exact duration (in milliseconds) of the animation. Note that by default, animation duration is calculated based on the time required to reach the target at a constant speed. Setting duration overrides the speedFactor option. Note that the resulting duration is still limited to the maxDuration.
     * @param options.maxDuration The maximum allowed duration (in milliseconds) of the animation. The default maxDuration value takes the specified speedFactor into account.
     * @param options.easing The easing function to use for the animation. This may either be a preset (named) function, or a user specified function. Supported named presets are: `linear`, `in-cubic`, `out-cubic`, `in-out-cubic`, `in-expo`, `out-expo`, `in-out-expo`, `in-out-coast-quadratic`. See [easing functions](https://easings.net/) for graphical representations of these functions.  By default, animations that are less than 1000 ms use the `out-expo` easing function; longer animations use the `in-out-coast-quadratic` easing function.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def goTo(target: js.Array[scala.Double | Geometry | Graphic]): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: js.Array[scala.Double | Geometry | Graphic], options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def goTo(
+    target: (js.Array[scala.Double | Geometry | Graphic]) | Geometry | (Collection[Geometry | Graphic]) | Graphic | Viewpoint | Camera | SceneViewGoToTarget
+  ): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def goTo(
+    target: (js.Array[scala.Double | Geometry | Graphic]) | Geometry | (Collection[Geometry | Graphic]) | Graphic | Viewpoint | Camera | SceneViewGoToTarget,
+    options: SceneViewGoToOptions
+  ): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Returns graphics that intersect the specified screen coordinate. The following layer types will return a result if a hit is made on an intersecting feature: [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html), [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html) and [SceneView.graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#graphics).  If no options are specified, graphics that are behind the ground surface will not be returned unless the ground surface is semi-transparent. Otherwise, using the [map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground) in the include and exclude options determines whether the ground surface prevents hit testing graphics that are under it.  Starting with version 4.11, if a label intersects the specified screen coordinates then the result of the hitTest will contain the graphic associated with that label.
     *
@@ -345,6 +341,17 @@ trait SceneView
     eventHandler: SceneViewLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: SceneViewLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    modifiers: js.Array[java.lang.String],
+    eventHandler: SceneViewLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
   def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: SceneViewLayerviewDestroyEventHandler
@@ -443,6 +450,7 @@ trait SceneView
     * @param options.width The width of the screenshot (defaults to the area width). The height will be derived automatically if left unspecified, according to the aspect ratio of the of the screenshot area.
     * @param options.height The height of the screenshot (defaults to the area height). The width will be derived automatically if left unspecified, according to the aspect ratio of the screenshot area.
     * @param options.area Specifies whether to take a screenshot of a specific area of the view. The area coordinates are relative to the origin of the padded view (see [padding](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#padding)) and will be clipped to the view size. Defaults to the whole view (padding excluded).
+    * @param options.ignorePadding Indicates whether view padding should be ignored. Set this property to `true` to allow padded areas to be included in the screenshot.
     *
     */
   def takeScreenshot(): arcgisDashJsDashApiLib.IPromise[SceneViewScreenshot] = js.native

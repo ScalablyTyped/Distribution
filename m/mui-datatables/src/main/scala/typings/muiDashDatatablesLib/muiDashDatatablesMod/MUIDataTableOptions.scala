@@ -18,6 +18,14 @@ trait MUIDataTableOptions extends js.Object {
       reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
+  var customRowRender: js.UndefOr[
+    js.Function3[
+      /* data */ js.Array[_], 
+      /* dataIndex */ scala.Double, 
+      /* rowIndex */ scala.Double, 
+      reactLib.reactMod.ReactNode
+    ]
+  ] = js.undefined
   var customSearch: js.UndefOr[
     js.Function3[
       /* searchQuery */ java.lang.String, 
@@ -121,6 +129,7 @@ object MUIDataTableOptions {
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     count: scala.Int | scala.Double = null,
     customFooter: (/* rowCount */ scala.Double, /* page */ scala.Double, /* rowsPerPage */ scala.Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ scala.Double) => reactLib.reactMod.ReactNode = null,
+    customRowRender: (/* data */ js.Array[_], /* dataIndex */ scala.Double, /* rowIndex */ scala.Double) => reactLib.reactMod.ReactNode = null,
     customSearch: (/* searchQuery */ java.lang.String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => scala.Boolean = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ scala.Double, /* order */ java.lang.String) => js.Array[_] = null,
     customToolbar: () => reactLib.reactMod.ReactNode = null,
@@ -168,6 +177,7 @@ object MUIDataTableOptions {
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction5(customFooter))
+    if (customRowRender != null) __obj.updateDynamic("customRowRender")(js.Any.fromFunction3(customRowRender))
     if (customSearch != null) __obj.updateDynamic("customSearch")(js.Any.fromFunction3(customSearch))
     if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3(customSort))
     if (customToolbar != null) __obj.updateDynamic("customToolbar")(js.Any.fromFunction0(customToolbar))

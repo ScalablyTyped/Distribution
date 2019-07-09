@@ -20,7 +20,7 @@ trait AttributionViewModel extends Accessor {
     *
     * @default disabled
     */
-  val state: java.lang.String = js.native
+  val state: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.ready | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.disabled = js.native
   /**
     * The view from which the view model will operate.
     *

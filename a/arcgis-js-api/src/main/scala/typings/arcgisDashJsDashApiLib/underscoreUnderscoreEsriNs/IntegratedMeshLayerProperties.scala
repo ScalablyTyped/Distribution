@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait IntegratedMeshLayerProperties
   extends LayerProperties
      with SceneServiceProperties
-     with PortalLayerProperties {
+     with PortalLayerProperties
+     with ScaleRangeLayerProperties {
   /**
     * Specifies how the mesh is placed on the vertical axis (z). This property only affects [IntegratedMeshLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html) when using the `absolute-height` mode. Integrated mesh layers always render in front of the ground surface, so setting negative offset values will not render them below the ground.
     *
@@ -26,6 +27,8 @@ object IntegratedMeshLayerProperties {
     id: java.lang.String = null,
     layerId: scala.Int | scala.Double = null,
     listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
     opacity: scala.Int | scala.Double = null,
     portalItem: PortalItemProperties = null,
     spatialReference: SpatialReferenceProperties = null,
@@ -40,6 +43,8 @@ object IntegratedMeshLayerProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

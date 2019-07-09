@@ -21,11 +21,25 @@ trait LayerList extends Widget {
   @JSName("listItemCreatedFunction")
   var listItemCreatedFunction_Original: ListItemCreatedHandler = js.native
   /**
-    * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing operational layers.
+    * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing operational layers. To hide layers from the LayerList widget, set the [listMode](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode) property on the layer(s) to `hide`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#operationalItems)
     */
   val operationalItems: Collection[ListItem] = js.native
+  /**
+    * A collection of selected [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing operational layers selected by the user.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems)
+    */
+  val selectedItems: Collection[ListItem] = js.native
+  /**
+    * Indicates whether list items may be selected by the user. When the user selects an item, it will become available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
+    *
+    * @default false
+    */
+  var selectionEnabled: scala.Boolean = js.native
   /**
     * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
     *
@@ -61,7 +75,7 @@ trait LayerList extends Widget {
     */
   def render(): js.Any = js.native
   /**
-    * Triggers the [trigger-action](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#event:trigger-action) event and executes the given [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html).
+    * Triggers the [trigger-action](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#event-trigger-action) event and executes the given [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#triggerAction)
     *

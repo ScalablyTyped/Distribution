@@ -27,6 +27,12 @@ trait ColorSchemeForPolygon
     */
   var id: java.lang.String
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+    */
+  var name: java.lang.String
+  /**
     * The color of the symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolygon)
@@ -44,6 +50,12 @@ trait ColorSchemeForPolygon
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolygon)
     */
   var outline: ColorSchemeForPolygonOutline
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+    */
+  var tags: js.Array[java.lang.String]
   /**
     * Indicates which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
     *
@@ -68,13 +80,15 @@ object ColorSchemeForPolygon {
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: ColorSchemeForPolygonOutline,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    tags: js.Array[java.lang.String],
     theme: java.lang.String
   ): ColorSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), theme = theme)
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags, theme = theme)
   
     __obj.asInstanceOf[ColorSchemeForPolygon]
   }

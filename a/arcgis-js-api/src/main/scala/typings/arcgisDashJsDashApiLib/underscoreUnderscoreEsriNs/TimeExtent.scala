@@ -22,12 +22,21 @@ trait TimeExtent extends JSONSupport {
     * @default null
     */
   var start: stdLib.Date
+  /**
+    * Returns the time extent resulting from the intersection of the current time extent and parsed time extent. Returns `null` if two time extents do not intersect.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#intersection)
+    *
+    * @param timeExtent The time extent to be intersected with the time extent on which `intersection()` is being called on.
+    *
+    */
+  def intersection(timeExtent: TimeExtent): TimeExtent
 }
 
 @JSGlobal("__esri.TimeExtent")
 @js.native
 /**
-  * A period of time with definitive [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end) dates. The time extent is used to [display](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#filter) or [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) features that fall within the specified time period. To represent a single point in time set the [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end) times to the same time value.
+  * A period of time with a definitive [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end) date. Time extent is used to [display](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#filter) or [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) features that fall within the specified time period. To represent an instant of time, set the [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end) times to the same date.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html)
   */
@@ -52,6 +61,16 @@ class TimeExtentCls () extends TimeExtent {
   /* CompleteClass */
   override var start: stdLib.Date = js.native
   /**
+    * Returns the time extent resulting from the intersection of the current time extent and parsed time extent. Returns `null` if two time extents do not intersect.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#intersection)
+    *
+    * @param timeExtent The time extent to be intersected with the time extent on which `intersection()` is being called on.
+    *
+    */
+  /* CompleteClass */
+  override def intersection(timeExtent: TimeExtent): TimeExtent = js.native
+  /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
@@ -64,8 +83,14 @@ class TimeExtentCls () extends TimeExtent {
 
 object TimeExtent {
   @scala.inline
-  def apply(clone: () => TimeExtent, end: stdLib.Date, start: stdLib.Date, toJSON: () => js.Any): TimeExtent = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), end = end, start = start, toJSON = js.Any.fromFunction0(toJSON))
+  def apply(
+    clone: () => TimeExtent,
+    end: stdLib.Date,
+    intersection: TimeExtent => TimeExtent,
+    start: stdLib.Date,
+    toJSON: () => js.Any
+  ): TimeExtent = {
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), end = end, intersection = js.Any.fromFunction1(intersection), start = start, toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[TimeExtent]
   }

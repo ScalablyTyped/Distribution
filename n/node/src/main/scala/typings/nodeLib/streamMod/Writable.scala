@@ -18,6 +18,7 @@ class Writable ()
       scala.Unit
     ]
   ] = js.native
+  val writableFinished: scala.Boolean = js.native
   val writableHighWaterMark: scala.Double = js.native
   val writableLength: scala.Double = js.native
   def _destroy(

@@ -16,8 +16,6 @@ trait FormProps
   var labelAlign: js.UndefOr[antdLib.esFormFormItemMod.FormLabelAlign] = js.undefined
   var labelCol: js.UndefOr[antdLib.esGridColMod.ColProps] = js.undefined
   var layout: js.UndefOr[FormLayout] = js.undefined
-  @JSName("onSubmit")
-  var onSubmit_FormProps: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   /**
     * @since 3.14.0
@@ -36,7 +34,7 @@ object FormProps {
     labelAlign: antdLib.esFormFormItemMod.FormLabelAlign = null,
     labelCol: antdLib.esGridColMod.ColProps = null,
     layout: FormLayout = null,
-    onSubmit: reactLib.reactMod.FormEventHandler[stdLib.HTMLElement] = null,
+    onSubmit: reactLib.reactMod.FormEventHandler[stdLib.HTMLFormElement] = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     wrapperCol: antdLib.esGridColMod.ColProps = null

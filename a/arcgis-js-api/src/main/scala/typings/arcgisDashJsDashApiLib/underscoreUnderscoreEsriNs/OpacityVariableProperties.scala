@@ -24,7 +24,6 @@ object OpacityVariableProperties {
   @scala.inline
   def apply(
     field: java.lang.String = null,
-    index: java.lang.String | scala.Double = null,
     legendOptions: VisualVariableLegendOptions = null,
     normalizationField: java.lang.String = null,
     stops: js.Array[OpacityStopProperties] = null,
@@ -33,7 +32,6 @@ object OpacityVariableProperties {
   ): OpacityVariableProperties = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field)
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
     if (stops != null) __obj.updateDynamic("stops")(stops)

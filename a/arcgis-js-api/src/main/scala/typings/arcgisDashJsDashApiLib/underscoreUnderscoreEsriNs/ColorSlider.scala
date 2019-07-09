@@ -6,157 +6,76 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ColorSlider
-  extends Accessor
-     with Widgette {
+trait ColorSlider extends SmartMappingSliderBase {
   /**
-    * Indicates whether to show the handles of the slider that may be dragged by the user. See the image in the [class description](#) to see where handles are typically placed.
+    * Only applicable when three thumbs (i.e. handles) are set on the slider [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#values). This property indicates whether the position of the outside handles are synced with the middle, or primary, handle. When enabled, if the primary handle is moved then the outside handle positions are updated while maintaining a fixed distance from the primary handle.  Only applicable when [primaryHandleEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#primaryHandleEnabled) is `true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#handlesVisible)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#handlesSyncedToPrimary)
     *
     * @default true
     */
-  var handlesVisible: scala.Boolean = js.native
+  var handlesSyncedToPrimary: scala.Boolean = js.native
   /**
-    * The histogram associated with the data represented on the slider. This may be generated using the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) statistics function.
+    * When `true`, the slider will render a third handle between the two handles already provided by default. This is the primary handle. When [handlesSyncedToPrimary](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#handlesSyncedToPrimary) is `true`, then this handle will control the position of the others when moved.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#histogram)
-    */
-  var histogram: HistogramResult = js.native
-  /**
-    * Indicates whether to show the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#histogram) in the slider UI. See the image in the [class description](#) to see where the histogram is typically placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#histogramVisible)
-    *
-    * @default true
-    */
-  var histogramVisible: scala.Boolean = js.native
-  /**
-    * The width of the histogram in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#histogramWidth)
-    *
-    * @default 100
-    */
-  var histogramWidth: scala.Double = js.native
-  /**
-    * Indicates whether to show labels in the slider UI. See the image in the [class description](#) to see where labels are typically placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#labelsVisible)
-    *
-    * @default true
-    */
-  var labelsVisible: scala.Boolean = js.native
-  /**
-    * The maximum value or upper bound of the slider. This value overrides the `max` property of the [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#statistics), but may not be less than the value of the maximum stop of the [color visual variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#visualVariable).  This property may be set programmatically or by the user in the widget's UI.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#maxValue)
-    */
-  var maxValue: scala.Double = js.native
-  /**
-    * The minimum value or lower bound of the slider. This value overrides the `min` property of the [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#statistics), but may not be greater than the value of the minimum stop of the [color visual variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#visualVariable).  This property may be set programmatically or by the user in the widget's UI.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#minValue)
-    */
-  var minValue: scala.Double = js.native
-  /**
-    * Indicates the number of handles to show on the slider. Acceptable values are `2` or `3`. If `3` handles are specified, then the [syncedHandles](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#syncedHandles) property may be enabled to sync the movement of the outside handles with the middle, or primary, handle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#numHandles)
-    *
-    * @default {"value":2,"set":""}
-    */
-  var numHandles: scala.Double = js.native
-  /**
-    * The summary statistics of the data represented in the slider. This is an object that may be generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) statistics function. The `min` and `max` values in this object determine the [minValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#minValue) and [maxValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#maxValue) of the slider if values for those properties are not already provided.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#statistics)
-    */
-  var statistics: ColorSliderStatistics = js.native
-  /**
-    * Indicates whether to show the average in the slider UI. See the image in the [class description](#) to see where this symbol is typically placed. Hover over this symbol to view the average in the tooltip.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#statisticsVisible)
-    *
-    * @default true
-    */
-  var statisticsVisible: scala.Boolean = js.native
-  /**
-    * Only applicable when [numHandles](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#numHandles) is set to `3`. This property indicates whether the outside handles are synced with the middle, or primary, handle. If the primary handle is dragged then the outside handles are dragged while maintaining the same distance from the primary handle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#syncedHandles)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#primaryHandleEnabled)
     *
     * @default false
     */
-  var syncedHandles: scala.Boolean = js.native
+  var primaryHandleEnabled: scala.Boolean = js.native
   /**
-    * Indicates whether to show tick marks next to the slider handles. See the image in the [class description](#) to see where ticks are typically placed.
+    * The color stops from the [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) to link to the slider. The colors in these stops will be used to render the color gradient on the slider's track. They should match the colors rendered in the associated layer's renderer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#ticksVisible)
-    *
-    * @default true
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#stops)
     */
-  var ticksVisible: scala.Boolean = js.native
+  var stops: js.Array[ColorStop] = js.native
   /**
-    * Each object in this array represents a stop in the [color visual variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#visualVariable) associated with the slider. The properties of each object describe whether the stop has a slider handle, the value of the handle and its associated color.
+    * The view model for the ColorSlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [ColorSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html) class to access all properties and methods on the ColorSlider widget.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#values)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#viewModel)
     */
-  val values: js.Array[ColorSliderValues] = js.native
+  var viewModel: ColorSliderViewModel = js.native
+  @JSName("on")
+  def on_maxchange(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`max-change`,
+    eventHandler: ColorSliderMaxChangeEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_minchange(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`min-change`,
+    eventHandler: ColorSliderMinChangeEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_thumbchange(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`thumb-change`,
+    eventHandler: ColorSliderThumbChangeEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_thumbdrag(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`thumb-drag`,
+    eventHandler: ColorSliderThumbDragEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
   /**
-    * The color visual variable represented by the slider. This must be set initially on the slider for it to render in the view. This may be created manually (see snippet below) or generated from the [colorRendererCreator](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html) helper methods. A new color visual variable is created each time the user slides handles or changes the [minValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#minValue) or the [maxValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#maxValue).
+    * A convenience function used to update the properties of a ColorSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#ContinuousRendererResult) of the [createContinuousRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createContinuousRenderer) method. This method is useful for cases when the app allows the end user to switch data variables used to render the data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#visualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#updateFromRendererResult)
+    *
+    * @param rendererResult The result object from the [createContinuousRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createContinuousRenderer) method.
+    * @param histogramResult The result histogram object from the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html#histogram) method.
+    *
     */
-  var visualVariable: ColorVariable = js.native
-  /* InferMemberOverrides */
-  override def destroy(): scala.Unit = js.native
+  def updateFromRendererResult(rendererResult: ContinuousRendererResult): scala.Unit = js.native
+  def updateFromRendererResult(rendererResult: ContinuousRendererResult, histogramResult: HistogramResult): scala.Unit = js.native
 }
 
 @JSGlobal("__esri.ColorSlider")
 @js.native
 /**
-  * The ColorSlider is a widget intended for authoring and exploring data-driven visualizations in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) using color. To display properly, this slider requires a [color visual variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#visualVariable) and a [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#statistics) object. Other optional properties may be used, including adding a [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html#histogram). Most of the various options that affect the UI of the slider are labeled in the image below.
+  * The ColorSlider widget is intended for authoring and exploring data-driven visualizations in any layer that can be rendered with a [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html). At a minimum you must set the [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#min), [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#max), and [stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#stops) properties of the widget. The stops are used to render a color gradient on the track of the slider.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html)
   */
 class ColorSliderCls () extends ColorSlider {
   def this(properties: ColorSliderProperties) = this()
-  /**
-    * The ID or node representing the DOM element containing the widget.  Note that once set, this property cannot be modified afterwards.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widgette.html#container)
-    */
-  /* CompleteClass */
-  override var container: java.lang.String | stdLib.HTMLElement = js.native
-  /**
-    * Indicates whether the widget is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widgette.html#visible)
-    *
-    * @default true
-    */
-  /* CompleteClass */
-  override var visible: scala.Boolean = js.native
-  /**
-    * Destroys the widget instance. Call this method when the widget is no longer needed by the application.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widgette.html#destroy)
-    *
-    *
-    */
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /**
-    * Registers an event handler on the widget instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widgette.html#events-summary) for a list of supported events.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widgette.html#on)
-    *
-    * @param type The name of the event.
-    * @param listener The function to call when the event is fired.
-    *
-    */
-  /* CompleteClass */
-  override def on(`type`: java.lang.String, listener: js.Function): js.Any = js.native
 }
 

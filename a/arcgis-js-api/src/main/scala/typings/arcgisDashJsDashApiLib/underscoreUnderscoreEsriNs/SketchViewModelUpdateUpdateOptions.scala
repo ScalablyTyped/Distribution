@@ -40,7 +40,7 @@ trait SketchViewModelUpdateUpdateOptions
     */
   var toggleToolOnClick: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Name of the update tool. Specifies the update operation for the selected graphics.  **Possible Values:**
+    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).  **Possible Values:**
     *
     * Value | Description |
     * ----- | ----------- |

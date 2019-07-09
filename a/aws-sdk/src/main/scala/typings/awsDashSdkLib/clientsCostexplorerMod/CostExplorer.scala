@@ -163,5 +163,28 @@ trait CostExplorer
     params: GetTagsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTagsResponse, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a forecast for how much Amazon Web Services predicts that you will use over the forecast time period that you select, based on your past usage. 
+    */
+  def getUsageForecast(): awsDashSdkLib.libRequestMod.Request[GetUsageForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getUsageForecast(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetUsageForecastResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetUsageForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a forecast for how much Amazon Web Services predicts that you will use over the forecast time period that you select, based on your past usage. 
+    */
+  def getUsageForecast(params: GetUsageForecastRequest): awsDashSdkLib.libRequestMod.Request[GetUsageForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getUsageForecast(
+    params: GetUsageForecastRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetUsageForecastResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetUsageForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

@@ -5,11 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * This object contains helper methods for generating location-only visualizations (not data-driven) in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html). The [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer) method generates a [SimpleRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html) object that may be applied directly to the layer. This renderer contains a single symbol with a color optimally selected based on the indicated basemap.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html)
-  */
 trait location extends js.Object {
   /**
     * Generates a [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) that may be applied directly to a supported [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html). The renderer contains a single symbol with a color optimally chosen based on the indicated basemap.  In most cases you will provide a `layer` and `basemap` to generate this renderer. If working in a 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html), then the `view` and `symbolType` options should be used.
@@ -21,6 +16,7 @@ trait location extends js.Object {
     * @param params.basemap The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     * @param params.locationScheme In authoring apps, the user may select a pre-defined location scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     * @param params.view The SceneView instance in which the visualization will be rendered. This parameter is required if `symbolType = "3d-volumetric"`, except for layers with a `mesh` geometryType.
+    * @param params.outlineOptimizationEnabled For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     * @param params.symbolType
     * The type of symbol to generate. This depends on the view in which you are working and the desired visualization. This parameter does not need to be specified for layers with a `mesh` geometry type. Possible values are described below.
     *
@@ -39,12 +35,14 @@ trait location extends js.Object {
     * multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
     *
     */
-  def createRenderer(params: locationCreateRendererParams): arcgisDashJsDashApiLib.IPromise[RendererResult]
+  def createRenderer(params: locationCreateRendererParams): arcgisDashJsDashApiLib.IPromise[locationRendererResult]
 }
 
 object location {
   @scala.inline
-  def apply(createRenderer: locationCreateRendererParams => arcgisDashJsDashApiLib.IPromise[RendererResult]): location = {
+  def apply(
+    createRenderer: locationCreateRendererParams => arcgisDashJsDashApiLib.IPromise[locationRendererResult]
+  ): location = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
   
     __obj.asInstanceOf[location]

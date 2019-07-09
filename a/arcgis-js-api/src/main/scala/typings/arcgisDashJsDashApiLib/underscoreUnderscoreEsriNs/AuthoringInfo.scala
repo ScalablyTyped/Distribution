@@ -52,6 +52,18 @@ trait AuthoringInfo
     */
   var lengthUnit: java.lang.String = js.native
   /**
+    * Indicates the value of the upper handle if a slider was used to generate the dot value for dot density renderer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#maxSliderValue)
+    */
+  var maxSliderValue: scala.Double = js.native
+  /**
+    * Indicates the value of the lower handle if a slider was used to generate the dot value for dot density renderer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#minSliderValue)
+    */
+  var minSliderValue: scala.Double = js.native
+  /**
     * The number of classes used to classify each field of a [relationship renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html). This determines the number of categories in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#numClasses)

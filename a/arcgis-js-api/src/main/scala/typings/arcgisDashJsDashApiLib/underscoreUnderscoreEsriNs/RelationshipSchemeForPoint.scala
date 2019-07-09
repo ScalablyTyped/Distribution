@@ -21,6 +21,12 @@ trait RelationshipSchemeForPoint
     */
   var id: java.lang.String
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
+    */
+  var name: java.lang.String
+  /**
     * The color of the point symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
@@ -44,6 +50,12 @@ trait RelationshipSchemeForPoint
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
     */
   var size: scala.Double
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-relationship.html#RelationshipSchemeForPoint)
+    */
+  var tags: js.Array[java.lang.String]
 }
 
 object RelationshipSchemeForPoint {
@@ -53,13 +65,15 @@ object RelationshipSchemeForPoint {
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: RelationshipSchemeForPointOutline,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    size: scala.Double
+    size: scala.Double,
+    tags: js.Array[java.lang.String]
   ): RelationshipSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size)
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, tags = tags)
   
     __obj.asInstanceOf[RelationshipSchemeForPoint]
   }

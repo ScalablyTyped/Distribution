@@ -93,7 +93,7 @@ trait IInvoice
   /**
     * ID of the latest charge generated for this invoice, if any. [Expandable]
     */
-  var charge: java.lang.String | stripeLib.stripeMod.chargesNs.ICharge
+  var charge: java.lang.String | stripeLib.stripeMod.chargesNs.ICharge | scala.Null
   /**
     * Whether or not the invoice is still trying to collect payment. An invoice is closed if it's either paid or
     * it has been marked closed. A closed invoice will no longer attempt to collect payment.
@@ -220,6 +220,14 @@ trait IInvoice
     */
   var period_start: scala.Double
   /**
+    * Total amount of all post-payment credit notes issued for this invoice.
+    */
+  var post_payment_credit_notes_amount: scala.Double
+  /**
+    * Total amount of all pre-payment credit notes issued for this invoice.
+    */
+  var pre_payment_credit_notes_amount: scala.Double
+  /**
     * This is the transaction number that appears on email receipts sent for this invoice.
     */
   var receipt_number: java.lang.String
@@ -293,7 +301,6 @@ object IInvoice {
     auto_advance: scala.Boolean,
     billing: stripeLib.stripeLibStrings.charge_automatically | stripeLib.stripeLibStrings.send_invoice,
     billing_reason: stripeLib.stripeLibStrings.subscription_cycle | stripeLib.stripeLibStrings.subscription_create | stripeLib.stripeLibStrings.subscription_update | stripeLib.stripeLibStrings.subscription | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.upcoming | stripeLib.stripeLibStrings.subscription_threshold,
-    charge: java.lang.String | stripeLib.stripeMod.chargesNs.ICharge,
     closed: scala.Boolean,
     created: scala.Double,
     currency: java.lang.String,
@@ -317,6 +324,8 @@ object IInvoice {
     paid: scala.Boolean,
     period_end: scala.Double,
     period_start: scala.Double,
+    post_payment_credit_notes_amount: scala.Double,
+    pre_payment_credit_notes_amount: scala.Double,
     receipt_number: java.lang.String,
     starting_balance: scala.Double,
     statement_descriptor: java.lang.String,
@@ -328,6 +337,7 @@ object IInvoice {
     threshold_reason: IThresholdReason,
     total: scala.Double,
     webhooks_delivered_at: scala.Double,
+    charge: java.lang.String | stripeLib.stripeMod.chargesNs.ICharge = null,
     discount: stripeLib.stripeMod.couponsNs.IDiscount = null,
     due_date: scala.Int | scala.Double = null,
     ending_balance: scala.Int | scala.Double = null,
@@ -337,8 +347,9 @@ object IInvoice {
     tax: scala.Int | scala.Double = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
+    if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
     if (ending_balance != null) __obj.updateDynamic("ending_balance")(ending_balance.asInstanceOf[js.Any])

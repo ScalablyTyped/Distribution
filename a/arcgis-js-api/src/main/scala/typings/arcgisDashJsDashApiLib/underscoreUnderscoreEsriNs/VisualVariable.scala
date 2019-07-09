@@ -16,12 +16,6 @@ trait VisualVariable
     */
   var field: java.lang.String = js.native
   /**
-    * The index of the visual variable in relation to its position in the [visualVariables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) property of the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html#index)
-    */
-  var index: java.lang.String | scala.Double = js.native
-  /**
     * An object providing options for displaying the visual variable in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html#legendOptions)

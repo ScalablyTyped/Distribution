@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/paypal-rest-sdk/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/paypal-rest-sdk),TsIdentLibrarySimple(paypal-rest-sdk)),TsIdentModule(None,List(paypal-rest-sdk))) [id => paypal-rest-sdk, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(paypal-rest-sdk)) [id => paypal-rest-sdk, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(paypal-rest-sdk) [id => paypal-rest-sdk, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(paypal-rest-sdk) [id => paypal-rest-sdk, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Giftwrap) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Amount) / TsMemberProperty(details) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Items) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Transaction) / TsMemberProperty(item_list) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Allowedpaymentmethod) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Transaction) / TsMemberProperty(payment_options) / TsTypeObject())] 
@@ -16,35 +16,35 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Other) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclNamespace(invoice) / TsDeclInterface(Invoice) / TsMemberProperty(paid_amount) / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing paypal-rest-sdk [id => paypal-rest-sdk, phase => scala.js] 
-[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(SaleResponse)] 
-[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(CaptureResponse)] 
-[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(RefundResponse)] 
-[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(AuthorizationResponse)] 
-[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(PaymentResponse)] 
+[info ] InferMemberOverrides.scala:80 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(SaleResponse)] 
+[info ] InferMemberOverrides.scala:80 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(CaptureResponse)] 
+[info ] InferMemberOverrides.scala:80 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(RefundResponse)] 
+[info ] InferMemberOverrides.scala:80 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(AuthorizationResponse)] 
+[info ] InferMemberOverrides.scala:80 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(PaymentResponse)] 
 [debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => scala.js] 
 [warn ] Phase3Compile.scala:204 Building paypal-rest-sdk... [id => paypal-rest-sdk, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E5] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:186:1
-[E]      Unmatched closing brace '}' ignored here
-[E]      L186: }
-[E]            ^
-[E] [E4] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:184:1
-[E]      expected class or object definition
-[E]      L184: tDashSdkMod.PaymentResponse]
-[E]            ^
-[E] [E3] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:52:1
-[E]      eof expected but '}' found.
-[E]      L52: }
-[E]           ^
-[E] [E2] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:51:3
-[E]      Unmatched closing brace '}' ignored here
-[E]      L51:   }
-[E]             ^
-[E] [E1] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:50:1
-[E]      expected class or object definition
-[E]      L50: sponse]
-[E]           ^
-[E] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala: L50 [E1], L51 [E2], L52 [E3]
-[E] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala: L184 [E4], L186 [E5]
+[error] Phase3Compile.scala:230 [E] [E5] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:48:65
+[E]      Members of Scala.js-defined JS traits must either be abstract, or their right-hand-side must be `js.undefined`.
+[E]      L48:     override val create_time: js.UndefOr[java.lang.String] = js.native
+[E]                                                                           ^
+[E] [E4] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:41:65
+[E]      Members of Scala.js-defined JS traits must either be abstract, or their right-hand-side must be `js.undefined`.
+[E]      L41:     override val create_time: js.UndefOr[java.lang.String] = js.native
+[E]                                                                           ^
+[E] [E3] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:22:65
+[E]      Members of Scala.js-defined JS traits must either be abstract, or their right-hand-side must be `js.undefined`.
+[E]      L22:     override val create_time: js.UndefOr[java.lang.String] = js.native
+[E]                                                                           ^
+[E] [E2] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala:15:65
+[E]      Members of Scala.js-defined JS traits must either be abstract, or their right-hand-side must be `js.undefined`.
+[E]      L15:     override val create_time: js.UndefOr[java.lang.String] = js.native
+[E]                                                                           ^
+[E] [E1] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala:12:63
+[E]      Members of Scala.js-defined JS traits must either be abstract, or their right-hand-side must be `js.undefined`.
+[E]      L12:   override val create_time: js.UndefOr[java.lang.String] = js.native
+[E]                                                                         ^
+[E] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/PaymentResponse.scala: L12 [E1]
+[E] src/main/scala/typings/paypalDashRestDashSdkLib/paypalDashRestDashSdkMod/paymentNs.scala: L15 [E2], L22 [E3], L41 [E4], L48 [E5]
 [E] Failed to compile 'paypal-rest-sdk'
  [id => paypal-rest-sdk, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [paypal-rest-sdk => Compilation failed] [id => paypal-rest-sdk, phase => build] 

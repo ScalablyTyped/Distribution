@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 trait RendererResult
   extends stdLib.Object {
   /**
-    * The ID of the basemap used to determine the optimal fill color of the features.
+    * The ID of the basemap used to determine the optimal colors of the dots.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#RendererResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#RendererResult)
     */
   var basemapId: java.lang.String
   /**
-    * The location scheme used by the renderer.
+    * The dot density scheme used by the renderer based on the given basemap.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#RendererResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#RendererResult)
     */
-  var locationScheme: LocationScheme
+  var dotDensityScheme: DotDensityScheme
   /**
-    * A simple renderer configured with a single color best suited to match the given basemap. Set this to a layer's `renderer` property to update its visualization.
+    * The object representing the dot density visualization. Set this on a layer's `renderer` property to update its visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#RendererResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#RendererResult)
     */
-  var renderer: SimpleRenderer
+  var renderer: DotDensityRenderer
 }
 
 object RendererResult {
@@ -32,12 +32,12 @@ object RendererResult {
   def apply(
     basemapId: java.lang.String,
     constructor: js.Function,
+    dotDensityScheme: DotDensityScheme,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    locationScheme: LocationScheme,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    renderer: SimpleRenderer
+    renderer: DotDensityRenderer
   ): RendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, dotDensityScheme = dotDensityScheme, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
   
     __obj.asInstanceOf[RendererResult]
   }

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait SceneLayerProperties
   extends LayerProperties
      with SceneServiceProperties
-     with PortalLayerProperties {
+     with PortalLayerProperties
+     with ScaleRangeLayerProperties {
   /**
     * The SQL where clause used to filter features on the client. Only the features that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). Setting a definition expression is useful when only a subset of the data in the layer should be displayed.  Setting the definition expression of a layer automatically updates all layer views.  If the definition expression is set after the layer has been added to the map, the view will automatically refresh itself to display the features that satisfy the new definition expression.  Important to note is that the initial loading time of the features remains unchanged, even if they are filtered. This happens because, as opposed to Feature Layers, feature filtering is done client-side. As a result all features need to be downloaded always for filter evaluation.
     *
@@ -28,12 +29,6 @@ trait SceneLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#featureReduction)
     */
   var featureReduction: js.UndefOr[SceneLayerFeatureReduction] = js.undefined
-  /**
-    * An array of fields accessible in the layer. Depending on the scene service, fields may have limited support for certain capabilities. Use [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) to query the contexts (rendering, labeling, popups or querying) for which a particular field may be used.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#fields)
-    */
-  var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
     * The geometry type of features in the layer.  **Possible Values:** point | mesh
     *
@@ -69,6 +64,14 @@ trait SceneLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#objectIdField)
     */
   var objectIdField: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * An array of field names from the service to include with each feature. To fetch the values from all fields in the layer, use `["*"]`. Fields specified in `outFields` will be requested alongside with required fields for [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#renderer), [labeling](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo) and setting the [elevation info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo) for the layer. The required fields and `outFields` are used to populate [SceneLayerView.availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#availableFields). Set this property to include the fields that will be used for client-side [queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#queryFeatures) if the fields are not part of required fields used for rendering.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#outFields)
+    *
+    * @default null
+    */
+  var outFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * Indicates whether to display popups when features in the layer are clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
@@ -107,7 +110,6 @@ object SceneLayerProperties {
     definitionExpression: java.lang.String = null,
     elevationInfo: SceneLayerElevationInfo = null,
     featureReduction: SceneLayerFeatureReduction = null,
-    fields: js.Array[FieldProperties] = null,
     fullExtent: ExtentProperties = null,
     geometryType: java.lang.String = null,
     id: java.lang.String = null,
@@ -116,8 +118,11 @@ object SceneLayerProperties {
     layerId: scala.Int | scala.Double = null,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
     objectIdField: java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
+    outFields: js.Array[java.lang.String] = null,
     popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     popupTemplate: PopupTemplateProperties = null,
     portalItem: PortalItemProperties = null,
@@ -133,7 +138,6 @@ object SceneLayerProperties {
     if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
     if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo)
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
     if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
     if (id != null) __obj.updateDynamic("id")(id)
@@ -142,8 +146,11 @@ object SceneLayerProperties {
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
     if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)

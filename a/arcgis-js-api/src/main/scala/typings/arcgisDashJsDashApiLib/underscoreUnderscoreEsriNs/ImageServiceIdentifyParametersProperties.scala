@@ -13,23 +13,23 @@ trait ImageServiceIdentifyParametersProperties extends js.Object {
     */
   var geometry: js.UndefOr[PointProperties | PolygonProperties] = js.undefined
   /**
+    * Controls the maximum number of returned catalog items, set to 1 to return the top most raster only.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#maxItemCount)
+    */
+  var maxItemCount: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Specifies the mosaic rules defining the image sorting order. When a mosaic rule is not specified, `center` is used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#mosaicRule)
     */
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   /**
-    * The pixel or RGB color value representing no information. It can be defined as a number `noData = 0` representing a pixel value or as a string `noData = "58,128,187"` representing an RGB color value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#noData)
-    */
-  var noData: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  /**
     * Specifies the pixel level being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#pixelSize)
     */
-  var pixelSize: js.UndefOr[SymbolProperties] = js.undefined
+  var pixelSize: js.UndefOr[PointProperties] = js.undefined
   /**
     * The pixel level being identified (or the resolution being looked at) on the x-axis. If not specified, it will default to the base resolution of the dataset.
     *
@@ -49,11 +49,15 @@ trait ImageServiceIdentifyParametersProperties extends js.Object {
     */
   var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
   /**
+    * An array the [rendering rules](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRule) to retrieve multiple processed pixel values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRules)
+    */
+  var renderingRules: js.UndefOr[RasterFunctionProperties] = js.undefined
+  /**
     * If `true`, returns both geometry and attributes of the catalog items. Set to `false` when catalog items are not needed to significantly improve identify operation's performance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#returnCatalogItems)
-    *
-    * @default true
     */
   var returnCatalogItems: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -64,31 +68,49 @@ trait ImageServiceIdentifyParametersProperties extends js.Object {
     * @default false
     */
   var returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * If `true`, the pixel values of all raster catalog items under the requested geometry. Set to `false` when catalog item values are not needed to significantly improve identify operation's performance.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#returnPixelValues)
+    */
+  var returnPixelValues: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * A time extent for a temporal data against [time-aware imagery layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#timeInfo). For example, it can be used to discover land cover changes by decade.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#timeExtent)
+    */
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 
 object ImageServiceIdentifyParametersProperties {
   @scala.inline
   def apply(
     geometry: PointProperties | PolygonProperties = null,
+    maxItemCount: scala.Int | scala.Double = null,
     mosaicRule: MosaicRuleProperties = null,
-    noData: java.lang.String | scala.Double = null,
-    pixelSize: SymbolProperties = null,
+    pixelSize: PointProperties = null,
     pixelSizeX: scala.Int | scala.Double = null,
     pixelSizeY: scala.Int | scala.Double = null,
     renderingRule: RasterFunctionProperties = null,
+    renderingRules: RasterFunctionProperties = null,
     returnCatalogItems: js.UndefOr[scala.Boolean] = js.undefined,
-    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPixelValues: js.UndefOr[scala.Boolean] = js.undefined,
+    timeExtent: TimeExtentProperties = null
   ): ImageServiceIdentifyParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (maxItemCount != null) __obj.updateDynamic("maxItemCount")(maxItemCount.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
-    if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
     if (pixelSizeX != null) __obj.updateDynamic("pixelSizeX")(pixelSizeX.asInstanceOf[js.Any])
     if (pixelSizeY != null) __obj.updateDynamic("pixelSizeY")(pixelSizeY.asInstanceOf[js.Any])
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
+    if (renderingRules != null) __obj.updateDynamic("renderingRules")(renderingRules)
     if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems)
     if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    if (!js.isUndefined(returnPixelValues)) __obj.updateDynamic("returnPixelValues")(returnPixelValues)
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     __obj.asInstanceOf[ImageServiceIdentifyParametersProperties]
   }
 }

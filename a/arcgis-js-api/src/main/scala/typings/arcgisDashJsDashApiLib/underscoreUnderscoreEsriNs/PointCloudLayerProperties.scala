@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait PointCloudLayerProperties
   extends LayerProperties
      with SceneServiceProperties
-     with PortalLayerProperties {
+     with PortalLayerProperties
+     with ScaleRangeLayerProperties {
   /**
     * Specifies how points are placed on the vertical axis (z). This property only affects [PointCloudLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html) when using the `absolute-height` mode.
     *
@@ -55,6 +56,8 @@ object PointCloudLayerProperties {
     layerId: scala.Int | scala.Double = null,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
     opacity: scala.Int | scala.Double = null,
     portalItem: PortalItemProperties = null,
     renderer: PointCloudRendererProperties = null,
@@ -73,6 +76,8 @@ object PointCloudLayerProperties {
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)

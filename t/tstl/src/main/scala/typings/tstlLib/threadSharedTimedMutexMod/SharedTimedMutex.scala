@@ -16,6 +16,10 @@ class SharedTimedMutex ()
   /**
     * @hidden
     */
+  var _Cancel: js.Any = js.native
+  /**
+    * @hidden
+    */
   var _Current_access_type: js.Any = js.native
   /**
     * @hidden
@@ -29,6 +33,10 @@ class SharedTimedMutex ()
     * @hidden
     */
   var reading_ : js.Any = js.native
+  /**
+    * @hidden
+    */
+  var source_ : js.Any = js.native
   /**
     * @hidden
     */

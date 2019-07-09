@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 trait IntegratedMeshLayer
   extends Layer
      with SceneService
-     with PortalLayer {
+     with PortalLayer
+     with ScaleRangeLayer {
   /**
     * Specifies how the mesh is placed on the vertical axis (z). This property only affects [IntegratedMeshLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html) when using the `absolute-height` mode. Integrated mesh layers always render in front of the ground surface, so setting negative offset values will not render them below the ground.
     *
@@ -20,6 +21,11 @@ trait IntegratedMeshLayer
   def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: IntegratedMeshLayerLayerviewCreateEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: IntegratedMeshLayerLayerviewCreateErrorEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
   def on_layerviewdestroy(
@@ -56,6 +62,24 @@ class IntegratedMeshLayerCls () extends IntegratedMeshLayer {
     */
   /* CompleteClass */
   override var layerId: scala.Double = js.native
+  /**
+    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a maximum scale. The maxScale value should always be smaller than the [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale) value, and greater than or equal to the service specification.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
+    *
+    * @default 0
+    */
+  /* CompleteClass */
+  override var maxScale: scala.Double = js.native
+  /**
+    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a minimum scale. The minScale value should always be larger than the [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale) value, and lesser than or equal to the service specification.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
+    *
+    * @default 0
+    */
+  /* CompleteClass */
+  override var minScale: scala.Double = js.native
   /**
     * The portal item from which the layer is loaded. If the portal item references a Feature Service or Scene Service, then you can specify a single layer to load with the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#layerId) property.
     *

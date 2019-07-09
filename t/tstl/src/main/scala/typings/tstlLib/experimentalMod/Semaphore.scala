@@ -7,8 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tstl/experimental", "Semaphore")
 @js.native
-class Semaphore protected ()
-  extends tstlLib.experimentalThreadMod.Semaphore {
-  def this(size: scala.Double) = this()
+class Semaphore[Max /* <: scala.Double */] protected ()
+  extends tstlLib.experimentalThreadMod.Semaphore[Max] {
+  /**
+    * Initializer Constructor.
+    *
+    * @param max Number of maximum sections lockable.
+    */
+  def this(max: Max) = this()
 }
 

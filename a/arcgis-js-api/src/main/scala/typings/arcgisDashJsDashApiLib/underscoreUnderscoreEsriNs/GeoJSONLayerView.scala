@@ -32,6 +32,14 @@ trait GeoJSONLayerView extends LayerView {
     */
   var maximumNumberOfFeaturesExceeded: scala.Boolean = js.native
   /**
+    * Creates a query parameter object that can be used to fetch features as they are being displayed. It sets the query parameter's [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outFields) property to `["*"]` and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) to `true`. The output spatial reference [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) is set to the spatial reference of the view. Parameters of the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#filter) currently applied to the layerview are also incorporated in the returned query object. The results will include geometries of features and values for all fields.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#createQuery)
+    *
+    *
+    */
+  def createQuery(): Query = js.native
+  /**
     * Highlights the given feature(s).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#highlight)
@@ -46,7 +54,6 @@ trait GeoJSONLayerView extends LayerView {
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
     * > **Known Limitations**
-    *   * Queries with `outStatistics` and any other parameter involving statistics are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
     *   * GDM 2000 (4742) – Malaysia
@@ -56,16 +63,19 @@ trait GeoJSONLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#queryExtent)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryExtent(): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def queryExtent(params: Query): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def queryExtent(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: Query): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: QueryProperties, options: GeoJSONLayerViewQueryExtentOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: Query, options: GeoJSONLayerViewQueryExtentOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the number of features that satisfy the query. If query parameters are not provided, the count of all features available for drawing is returned.
     * > **Known Limitations**
-    *   * Queries with `outStatistics` and any other parameter involving statistics are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
     *   * GDM 2000 (4742) – Malaysia
@@ -75,16 +85,20 @@ trait GeoJSONLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#queryFeatureCount)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryFeatureCount(): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
-  def queryFeatureCount(params: Query): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
-  def queryFeatureCount(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: Query): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: GeoJSONLayerViewQueryFeatureCountOptions): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: Query, options: GeoJSONLayerViewQueryFeatureCountOptions): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). If query parameters are not provided, all features available for drawing are returned.
     * > **Known Limitations**
-    *   * Queries with `outStatistics` and any other parameter involving statistics are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * Attribute values used in attribute queries executed against layer views are case sensitive.
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
     *   * GDM 2000 (4742) – Malaysia
@@ -94,16 +108,19 @@ trait GeoJSONLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#queryFeatures)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryFeatures(): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
-  def queryFeatures(params: Query): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
-  def queryFeatures(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: GeoJSONLayerViewQueryFeaturesOptions): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: GeoJSONLayerViewQueryFeaturesOptions): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns array of the ObjectIDs of features that satisfy the input query. If query parameters are not provided, the ObjectIDs of all features available for drawing are returned.
     * > **Known Limitations**
-    *   * Queries with `outStatistics` and any other parameter involving statistics are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
     *   * GDM 2000 (4742) – Malaysia
@@ -113,11 +130,15 @@ trait GeoJSONLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#queryObjectIds)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryObjectIds(): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-  def queryObjectIds(params: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-  def queryObjectIds(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: GeoJSONLayerViewQueryObjectIdsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: Query, options: GeoJSONLayerViewQueryObjectIdsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
 }
 

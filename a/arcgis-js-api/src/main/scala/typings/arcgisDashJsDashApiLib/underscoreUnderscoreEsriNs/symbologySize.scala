@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait symbologySize extends js.Object {
   /**
     * Clones a size scheme object.
@@ -14,7 +15,7 @@ trait symbologySize extends js.Object {
     * @param scheme The SizeScheme object to clone.
     *
     */
-  def cloneScheme(scheme: SizeScheme): SizeScheme
+  def cloneScheme(scheme: SizeScheme): SizeScheme = js.native
   /**
     * Returns a primary scheme and secondary schemes defining symbol properties for size-based data-driven visualizions in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). The `basemap` parameter determines the color of the graphics used to visualize each feature. The `geometryType` determines which type of symbol to return.
     *
@@ -27,15 +28,17 @@ trait symbologySize extends js.Object {
     * @param params.worldScale Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
     *
     */
-  def getSchemes(params: sizeGetSchemesParams): SizeSchemes
-}
-
-object symbologySize {
-  @scala.inline
-  def apply(cloneScheme: SizeScheme => SizeScheme, getSchemes: sizeGetSchemesParams => SizeSchemes): symbologySize = {
-    val __obj = js.Dynamic.literal(cloneScheme = js.Any.fromFunction1(cloneScheme), getSchemes = js.Any.fromFunction1(getSchemes))
-  
-    __obj.asInstanceOf[symbologySize]
-  }
+  def getSchemes(params: sizeGetSchemesParams): SizeSchemes = js.native
+  /**
+    * Returns metadata for the available themes. If a basemap is provided, returns themes that work best with the given basemap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-size.html#getThemes)
+    *
+    * @param basemap The [Esri basemap string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or object that will be used with the returned theme(s).
+    *
+    */
+  def getThemes(): js.Array[Theme] = js.native
+  def getThemes(basemap: Basemap): js.Array[Theme] = js.native
+  def getThemes(basemap: java.lang.String): js.Array[Theme] = js.native
 }
 

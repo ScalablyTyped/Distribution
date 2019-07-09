@@ -13,7 +13,7 @@ trait WidgetProps extends js.Object {
   var formContext: js.Any = js.native
   var id: java.lang.String = js.native
   var label: java.lang.String = js.native
-  var options: js.Object = js.native
+  var options: org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String | js.Object | scala.Null] = js.native
   var readonly: scala.Boolean = js.native
   var required: scala.Boolean = js.native
   var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6 = js.native

@@ -19,6 +19,12 @@ trait ViewProperties extends DOMContainerProperties {
     */
   var animation: js.UndefOr[ViewAnimationProperties] = js.undefined
   /**
+    * A fatal [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) returned when the view loses its WebGL context. Watch this property to properly handle the error and attempt to recover the WebGL context.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#fatalError)
+    */
+  var fatalError: js.UndefOr[Error] = js.undefined
+  /**
     * Allows for adding [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) directly to the default graphics in the View.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics)
@@ -60,6 +66,14 @@ trait ViewProperties extends DOMContainerProperties {
     * @default null
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  /**
+    * The view's time extent. Time-aware layers display their temporal data that falls within the view's time extent. Setting the view's time extent is similar to setting the spatial [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent) because once the time extent is set, the view updates automatically to conform to the change.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent)
+    *
+    * @default null
+    */
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 
 object ViewProperties {
@@ -68,24 +82,28 @@ object ViewProperties {
     allLayerViews: CollectionProperties[LayerViewProperties] = null,
     animation: ViewAnimationProperties = null,
     container: stdLib.HTMLDivElement | java.lang.String = null,
+    fatalError: Error = null,
     graphics: CollectionProperties[GraphicProperties] = null,
     layerViews: CollectionProperties[LayerViewProperties] = null,
     map: MapProperties = null,
     padding: ViewPadding = null,
     popup: PopupProperties = null,
     spatialReference: SpatialReferenceProperties = null,
+    timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null
   ): ViewProperties = {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map)
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (popup != null) __obj.updateDynamic("popup")(popup)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     if (ui != null) __obj.updateDynamic("ui")(ui)
     __obj.asInstanceOf[ViewProperties]
   }

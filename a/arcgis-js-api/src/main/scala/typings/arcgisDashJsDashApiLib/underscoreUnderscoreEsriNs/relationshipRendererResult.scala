@@ -36,7 +36,7 @@ trait relationshipRendererResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#RendererResult)
     */
-  var uniqueValueInfos: js.Array[UniqueValueInfo]
+  var uniqueValueInfos: js.Array[typeUniqueValueInfo]
 }
 
 object relationshipRendererResult {
@@ -49,7 +49,7 @@ object relationshipRendererResult {
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     relationshipScheme: RelationshipScheme,
     renderer: UniqueValueRenderer,
-    uniqueValueInfos: js.Array[UniqueValueInfo]
+    uniqueValueInfos: js.Array[typeUniqueValueInfo]
   ): relationshipRendererResult = {
     val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaks = classBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipScheme = relationshipScheme, renderer = renderer, uniqueValueInfos = uniqueValueInfos)
   

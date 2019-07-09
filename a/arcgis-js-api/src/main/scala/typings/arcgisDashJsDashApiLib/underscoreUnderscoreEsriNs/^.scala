@@ -51,9 +51,11 @@ object ^ extends js.Object {
   val BreakpointsOwner: BreakpointsOwnerConstructor = js.native
   val BufferParameters: BufferParametersConstructor = js.native
   val BuildingComponentSublayer: BuildingComponentSublayerConstructor = js.native
+  val BuildingFilter: BuildingFilterConstructor = js.native
   val BuildingGroupSublayer: BuildingGroupSublayerConstructor = js.native
   val BuildingSceneLayer: BuildingSceneLayerConstructor = js.native
   val BuildingSublayer: BuildingSublayerConstructor = js.native
+  val CIMSymbol: CIMSymbolConstructor = js.native
   val CSVLayer: CSVLayerConstructor = js.native
   val Callout3D: Callout3DConstructor = js.native
   val Camera: CameraConstructor = js.native
@@ -61,7 +63,12 @@ object ^ extends js.Object {
   val ChartMediaInfoValue: ChartMediaInfoValueConstructor = js.native
   val ChartMediaInfoValueSeries: ChartMediaInfoValueSeriesConstructor = js.native
   val Circle: CircleConstructor = js.native
+  val ClassBreakInfo: ClassBreakInfoConstructor = js.native
   val ClassBreaksRenderer: ClassBreaksRendererConstructor = js.native
+  val ClassedColorSlider: ClassedColorSliderConstructor = js.native
+  val ClassedColorSliderViewModel: ClassedColorSliderViewModelConstructor = js.native
+  val ClassedSizeSlider: ClassedSizeSliderConstructor = js.native
+  val ClassedSizeSliderViewModel: ClassedSizeSliderViewModelConstructor = js.native
   val ClosestFacilityParameters: ClosestFacilityParametersConstructor = js.native
   val ClosestFacilitySolveResult: ClosestFacilitySolveResultConstructor = js.native
   val ClosestFacilityTask: ClosestFacilityTaskConstructor = js.native
@@ -69,7 +76,10 @@ object ^ extends js.Object {
   val Color: ColorConstructor = js.native
   val ColorBackground: ColorBackgroundConstructor = js.native
   val ColorRamp: ColorRampConstructor = js.native
+  val ColorSizeSlider: ColorSizeSliderConstructor = js.native
+  val ColorSizeSliderViewModel: ColorSizeSliderViewModelConstructor = js.native
   val ColorSlider: ColorSliderConstructor = js.native
+  val ColorSliderViewModel: ColorSliderViewModelConstructor = js.native
   val ColorStop: ColorStopConstructor = js.native
   val ColorVariable: ColorVariableConstructor = js.native
   val ColumnChartMediaInfo: ColumnChartMediaInfoConstructor = js.native
@@ -106,7 +116,7 @@ object ^ extends js.Object {
   val ElevationLayer: ElevationLayerConstructor = js.native
   val ElevationSampler: ElevationSamplerConstructor = js.native
   val Environment: EnvironmentConstructor = js.native
-  val Error: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Error = js.native
+  val Error: ErrorConstructor = js.native
   val Evented: EventedConstructor = js.native
   val Expand: ExpandConstructor = js.native
   val ExpandViewModel: ExpandViewModelConstructor = js.native
@@ -132,6 +142,7 @@ object ^ extends js.Object {
   val FieldInfo: FieldInfoConstructor = js.native
   val FieldInfoFormat: FieldInfoFormatConstructor = js.native
   val FieldsContent: FieldsContentConstructor = js.native
+  val FieldsIndex: FieldsIndexConstructor = js.native
   val FillSymbol: FillSymbolConstructor = js.native
   val FillSymbol3DLayer: FillSymbol3DLayerConstructor = js.native
   val FindParameters: FindParametersConstructor = js.native
@@ -163,7 +174,13 @@ object ^ extends js.Object {
   val Handles: HandlesConstructor = js.native
   val HeatmapColorStop: HeatmapColorStopConstructor = js.native
   val HeatmapRenderer: HeatmapRendererConstructor = js.native
+  val HeatmapSlider: HeatmapSliderConstructor = js.native
+  val HeatmapSliderViewModel: HeatmapSliderViewModelConstructor = js.native
   val HeightModelInfo: HeightModelInfoConstructor = js.native
+  val Histogram: HistogramConstructor = js.native
+  val HistogramRangeSlider: HistogramRangeSliderConstructor = js.native
+  val HistogramRangeSliderViewModel: HistogramRangeSliderViewModelConstructor = js.native
+  val HistogramViewModel: HistogramViewModelConstructor = js.native
   val Home: HomeConstructor = js.native
   val HomeViewModel: HomeViewModelConstructor = js.native
   val IconSymbol3DLayer: IconSymbol3DLayerConstructor = js.native
@@ -246,6 +263,8 @@ object ^ extends js.Object {
   val OAuthInfo: OAuthInfoConstructor = js.native
   val ObjectSymbol3DLayer: ObjectSymbol3DLayerConstructor = js.native
   val OffsetParameters: OffsetParametersConstructor = js.native
+  val OpacitySlider: OpacitySliderConstructor = js.native
+  val OpacitySliderViewModel: OpacitySliderViewModelConstructor = js.native
   val OpacityStop: OpacityStopConstructor = js.native
   val OpacityVariable: OpacityVariableConstructor = js.native
   val OpenStreetMapLayer: OpenStreetMapLayerConstructor = js.native
@@ -297,6 +316,7 @@ object ^ extends js.Object {
   val RangeDomain: RangeDomainConstructor = js.native
   val RasterData: RasterDataConstructor = js.native
   val RasterFunction: RasterFunctionConstructor = js.native
+  val RasterInfo: RasterInfoConstructor = js.native
   val RefreshableLayer: RefreshableLayerConstructor = js.native
   val RelatedRecordsInfo: RelatedRecordsInfoConstructor = js.native
   val RelatedRecordsInfoFieldOrder: RelatedRecordsInfoFieldOrderConstructor = js.native
@@ -331,6 +351,7 @@ object ^ extends js.Object {
   val SimpleMarkerSymbol: SimpleMarkerSymbolConstructor = js.native
   val SimpleRenderer: SimpleRendererConstructor = js.native
   val SizeSlider: SizeSliderConstructor = js.native
+  val SizeSliderViewModel: SizeSliderViewModelConstructor = js.native
   val SizeStop: SizeStopConstructor = js.native
   val SizeVariable: SizeVariableConstructor = js.native
   val Sketch: SketchConstructor = js.native
@@ -339,8 +360,12 @@ object ^ extends js.Object {
   val Slice: SliceConstructor = js.native
   val SliceViewModel: SliceViewModelConstructor = js.native
   val Slide: SlideConstructor = js.native
+  val Slider: SliderConstructor = js.native
+  val SliderViewModel: SliderViewModelConstructor = js.native
+  val SmartMappingSliderBase: SmartMappingSliderBaseConstructor = js.native
   val SolidEdges3D: SolidEdges3DConstructor = js.native
   val SpatialReference: SpatialReferenceConstructor = js.native
+  val SpinnerViewModel: SpinnerViewModelConstructor = js.native
   val StatisticDefinition: StatisticDefinitionConstructor = js.native
   val StreamLayer: StreamLayerConstructor = js.native
   val StreamLayerView: StreamLayerViewConstructor = js.native
@@ -362,13 +387,16 @@ object ^ extends js.Object {
   val TileMatrixSet: TileMatrixSetConstructor = js.native
   val TimeExtent: TimeExtentConstructor = js.native
   val TimeInfo: TimeInfoConstructor = js.native
+  val TimeInterval: TimeIntervalConstructor = js.native
+  val TimeSlider: TimeSliderConstructor = js.native
+  val TimeSliderViewModel: TimeSliderViewModelConstructor = js.native
   val TokenTask: TokenTaskConstructor = js.native
   val Track: TrackConstructor = js.native
   val TrackViewModel: TrackViewModelConstructor = js.native
   val TrimExtendParameters: TrimExtendParametersConstructor = js.native
   val UI: UIConstructor = js.native
+  val UniqueValueInfo: UniqueValueInfoConstructor = js.native
   val UniqueValueRenderer: UniqueValueRendererConstructor = js.native
-  val UnivariateColorSizeSlider: UnivariateColorSizeSliderConstructor = js.native
   val UnknownLayer: UnknownLayerConstructor = js.native
   val UnsupportedLayer: UnsupportedLayerConstructor = js.native
   val ValueMeshColor: ValueMeshColorConstructor = js.native
@@ -385,6 +413,7 @@ object ^ extends js.Object {
   val WMTSLayer: WMTSLayerConstructor = js.native
   val WMTSStyle: WMTSStyleConstructor = js.native
   val WMTSSublayer: WMTSSublayerConstructor = js.native
+  val WaterSymbol3DLayer: WaterSymbol3DLayerConstructor = js.native
   val WebMap: WebMapConstructor = js.native
   val WebScene: WebSceneConstructor = js.native
   val WebStyleSymbol: WebStyleSymbolConstructor = js.native
@@ -410,9 +439,11 @@ object ^ extends js.Object {
   val coordinateFormatter: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.coordinateFormatter = js.native
   val corePromise: corePromiseConstructor = js.native
   val decorators: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.decorators = js.native
+  val dotDensity: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.dotDensity = js.native
   val externalRenderers: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.externalRenderers = js.native
   val fieldUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.fieldUtils = js.native
   val gamepadGamepadSettings: gamepadGamepadSettingsConstructor = js.native
+  val geodesicUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.geodesicUtils = js.native
   val geometryEngine: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.geometryEngine = js.native
   val geometryEngineAsync: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.geometryEngineAsync = js.native
   val heatmap: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.heatmap = js.native
@@ -421,6 +452,7 @@ object ^ extends js.Object {
     /* params */ histogramHistogramParams, 
     arcgisDashJsDashApiLib.IPromise[HistogramResult]
   ] = js.native
+  val intl: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.intl = js.native
   val jsonUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.jsonUtils = js.native
   val kernel: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.kernel = js.native
   val lang: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.lang = js.native
@@ -438,8 +470,10 @@ object ^ extends js.Object {
     arcgisDashJsDashApiLib.IPromise[RequestResponse]
   ] = js.native
   val requireUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.requireUtils = js.native
+  val scaleRange: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.scaleRange = js.native
   val scheduling: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.scheduling = js.native
   val size: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.size = js.native
+  val sizeRange: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.sizeRange = js.native
   val summaryStatistics: js.Function1[
     /* params */ summaryStatisticsSummaryStatisticsParams, 
     arcgisDashJsDashApiLib.IPromise[SummaryStatisticsResult]
@@ -449,6 +483,7 @@ object ^ extends js.Object {
   val symbolPreview: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolPreview = js.native
   val symbolUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolUtils = js.native
   val symbologyColor: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyColor = js.native
+  val symbologyDotDensity: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyDotDensity = js.native
   val symbologyHeatmap: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyHeatmap = js.native
   val symbologyLocation: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyLocation = js.native
   val symbologyPredominance: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyPredominance = js.native
@@ -463,6 +498,7 @@ object ^ extends js.Object {
   ] = js.native
   val univariateColorSize: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.univariateColorSize = js.native
   val urlUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.urlUtils = js.native
+  val utils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.utils = js.native
   val watchUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.watchUtils = js.native
   val webMercatorUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.webMercatorUtils = js.native
   val websceneInitialViewProperties: websceneInitialViewPropertiesConstructor = js.native

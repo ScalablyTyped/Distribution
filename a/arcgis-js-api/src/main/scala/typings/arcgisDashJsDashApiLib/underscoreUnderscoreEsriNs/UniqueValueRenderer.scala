@@ -113,11 +113,11 @@ trait UniqueValueRenderer
   @JSName("type")
   val type_UniqueValueRenderer: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`unique-value` = js.native
   /**
-    * Each element in the array is an object that provides information about a unique value associated with the renderer. Each object has the following specification:
+    * Each element in the array is an object that provides information about a unique value associated with the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos)
     */
-  var uniqueValueInfos: js.Array[UniqueValueRendererUniqueValueInfos] = js.native
+  var uniqueValueInfos: js.Array[UniqueValueInfo] = js.native
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string or a number. This expression can reference field values using the `$feature` global variable and perform mathematical calculations and logical evaluations at runtime.  This property is typically used as an alternative to [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#field) for data-driven visualizations.
     *
@@ -156,7 +156,7 @@ trait UniqueValueRenderer
     * @param graphic The graphic whose rendering and legend information will be returned.
     *
     */
-  def getUniqueValueInfo(graphic: Graphic): js.Any = js.native
+  def getUniqueValueInfo(graphic: Graphic): arcgisDashJsDashApiLib.IPromise[UniqueValueInfo] = js.native
   /**
     * Removes a unique value from the renderer.
     *

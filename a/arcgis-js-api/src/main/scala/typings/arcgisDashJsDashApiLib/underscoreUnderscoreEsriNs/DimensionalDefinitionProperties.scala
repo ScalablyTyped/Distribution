@@ -21,11 +21,11 @@ trait DimensionalDefinitionProperties extends js.Object {
     */
   var isSlice: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * An array of tuples [min, max] each defining a range of valid values along the specified dimension.
+    * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#values)
     */
-  var values: js.UndefOr[js.Array[_]] = js.undefined
+  var values: js.UndefOr[js.Array[scala.Double | js.Array[scala.Double]]] = js.undefined
   /**
     * The required variable name by which to filter.
     *
@@ -39,7 +39,7 @@ object DimensionalDefinitionProperties {
   def apply(
     dimensionName: java.lang.String = null,
     isSlice: js.UndefOr[scala.Boolean] = js.undefined,
-    values: js.Array[_] = null,
+    values: js.Array[scala.Double | js.Array[scala.Double]] = null,
     variableName: java.lang.String = null
   ): DimensionalDefinitionProperties = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rebass__grid"
-version := "6.0-dt-20190510Z-bf88de"
+version := "6.0-dt-20190510Z-da7d8a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "styled-system" % "4.2-dt-20190701Z-a7f92c")
+  "org.scalablytyped" %%% "styled-system" % "5.0-dt-20190708Z-27166c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

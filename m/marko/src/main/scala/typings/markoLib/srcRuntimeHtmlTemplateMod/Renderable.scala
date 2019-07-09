@@ -21,7 +21,7 @@ trait Renderable extends js.Object {
   ): scala.Unit = js.native
   def render(data: js.Any, out: markoLib.srcRuntimeHtmlAsyncStreamMod.AsyncStream): scala.Unit = js.native
   def render(data: js.Any, out: markoLib.srcRuntimeVdomAsyncVDOMBuilderMod.AsyncVDOMBuilder): scala.Unit = js.native
-  def render(data: js.Any, out: nodeLib.streamMod.Writable): scala.Unit = js.native
+  def render(data: js.Any, out: nodeLib.NodeJSNs.WritableStream): scala.Unit = js.native
   def renderSync(): markoLib.srcRuntimeHtmlRenderResultMod.RenderResult = js.native
   def renderSync(data: js.Any): markoLib.srcRuntimeHtmlRenderResultMod.RenderResult = js.native
   def renderToString(): java.lang.String = js.native

@@ -55,14 +55,8 @@ abstract class ExternalSystem protected ()
   override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[
     samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
     tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[
-      samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
-      tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole]
-    ], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
-      samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
-      tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole]
-    ], 
+    tstlLib.containerDequeMod.DequeNs.Iterator[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole], 
+    tstlLib.containerDequeMod.DequeNs.ReverseIterator[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole], 
     samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole
   ] = js.native
   /**
@@ -112,14 +106,8 @@ abstract class ExternalSystem protected ()
   override def end(): tstlLib.baseIteratorIteratorMod.Iterator[
     samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
     tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[
-      samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
-      tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole]
-    ], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
-      samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
-      tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole]
-    ], 
+    tstlLib.containerDequeMod.DequeNs.Iterator[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole], 
+    tstlLib.containerDequeMod.DequeNs.ReverseIterator[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole], 
     samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole
   ] = js.native
   /**
@@ -141,6 +129,7 @@ abstract class ExternalSystem protected ()
     * @param items Items to insert.
     * @return Number of elements in the container after insertion.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def push(items: samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole*): scala.Double = js.native
   /**
@@ -148,21 +137,17 @@ abstract class ExternalSystem protected ()
     *
     * @return Reverse iterator to the first.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
-  override def rbegin(): tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
-    samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
-    tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole]
-  ] = js.native
+  override def rbegin(): tstlLib.containerDequeMod.DequeNs.ReverseIterator[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole] = js.native
   /**
     * Reverse iterator to the reverse end.
     *
     * @return Reverse iterator to the end.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
-  override def rend(): tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
-    samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole, 
-    tstlLib.containerDequeMod.Deque[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole]
-  ] = js.native
+  override def rend(): tstlLib.containerDequeMod.DequeNs.ReverseIterator[samchonLib.templatesExternalExternalSystemRoleMod.ExternalSystemRole] = js.native
   /**
     * Sending message.
     *
@@ -184,6 +169,7 @@ abstract class ExternalSystem protected ()
   /**
     * Number of elements in the container.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def size(): scala.Double = js.native
 }

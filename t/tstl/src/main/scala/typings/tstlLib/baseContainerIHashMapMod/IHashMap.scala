@@ -8,14 +8,21 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - tstlLib.baseContainerUnderscoreIHashContainerMod._IHashContainer because var conflicts: iterator. Inlined hash_function, key_eq, bucket, bucket_count, bucket_size, load_factor, max_load_factor, max_load_factor, reserve, rehash */ @js.native
 trait IHashMap[Key, T, Unique /* <: scala.Boolean */, Source /* <: IHashMap[Key, T, Unique, Source] */]
-  extends tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source] {
+  extends tstlLib.baseContainerMapContainerMod.MapContainer[
+      Key, 
+      T, 
+      Unique, 
+      Source, 
+      tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[Key, T, Unique, Source], 
+      tstlLib.baseContainerMapElementListMod.MapElementListNs.ReverseIterator[Key, T, Unique, Source]
+    ] {
   /**
     * Iterator to the first element in a specific bucket.
     *
     * @param index Index number of the specific bucket.
     * @return Iterator from the specific bucket.
     */
-  def begin(index: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source] = js.native
+  def begin(index: scala.Double): tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[Key, T, Unique, Source] = js.native
   /**
     * Compute bucket index for the *key*.
     *
@@ -40,7 +47,7 @@ trait IHashMap[Key, T, Unique /* <: scala.Boolean */, Source /* <: IHashMap[Key,
     * @param index Index number of the specific bucket.
     * @return Iterator from the specific bucket.
     */
-  def end(index: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source] = js.native
+  def end(index: scala.Double): tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[Key, T, Unique, Source] = js.native
   /**
     * Get hash function.
     *

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "websocket-stream"
-version := "5.5.0-737121"
+version := "5.5.0-dfc644"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-4f05bb")
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-f208ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

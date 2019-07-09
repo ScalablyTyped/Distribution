@@ -25,6 +25,12 @@ trait ExtrudeSymbol3DLayer
     */
   var edges: Edges3D = js.native
   /**
+    * The material used to shade the extrusion. This property defines the extrusion's color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#material)
+    */
+  var material: ExtrudeSymbol3DLayerMaterial = js.native
+  /**
     * The height of the extrusion in meters. Negative values will extrude the polygon surface downward towards or below the ground.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#size)

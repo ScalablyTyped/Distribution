@@ -22,13 +22,13 @@ trait RequestOptions
     */
   var authMode: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If uploading a file, specify the form data or element used to submit the file here. If a form element is specified, the parameters of the `query` will be added to the URL. If not specified, then query parameters will only be added to the URL when a GET request is used. If POST is used, then query parameters will be added to the body.
+    * If uploading a file, specify the form data or element used to submit the file here. If specified, the parameters of the `query` will be added to the URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
   var body: js.UndefOr[stdLib.FormData | stdLib.HTMLFormElement | java.lang.String] = js.undefined
   /**
-    * Indicates whether to send an extra query parameter to ensure the server doesn't supply cached values.
+    * If `true`, the browser will send a request to the server instead of using the browser's local cache. If `false`, the browser's default cache handling will be used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
@@ -46,13 +46,13 @@ trait RequestOptions
     */
   var method: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If the request URL points to a web server that requires parameters, specify them here.
+    * Query parameters for the request. The query parameters will be added to the URL if: a GET request is used, or if the `body` property is set. Otherwise, the query parameters will be added to the body request parameters if: the `body` property is not set, and a POST request is used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
   var query: js.UndefOr[js.Any] = js.undefined
   /**
-    * Response format. When this value is `image` the `timeout` option is ignored.  **Possible Values:** json | xml | text | blob | array-buffer | document | image
+    * Response format.  **Possible Values:** json | xml | text | blob | array-buffer | document | image
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
@@ -83,13 +83,13 @@ trait RequestOptions
     */
   var signal: js.UndefOr[stdLib.AbortSignal] = js.undefined
   /**
-    * Indicates the amount of time in milliseconds to wait for a response from the server. Set to `0` to wait for the response indefinitely. This option is ignored when `responseType = "image"`.
+    * Indicates the amount of time in milliseconds to wait for a response from the server. Set to `0` to wait for the response indefinitely.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
   var timeout: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Indicates the request should use the proxy. By default this is determined automatically based on the domain of the request url.
+    * Indicates the request should use the proxy. By default this is determined automatically based on the domain of the request URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */

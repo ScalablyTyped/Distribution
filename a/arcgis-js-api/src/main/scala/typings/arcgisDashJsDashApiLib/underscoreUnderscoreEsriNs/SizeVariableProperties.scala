@@ -112,7 +112,6 @@ object SizeVariableProperties {
     axis: java.lang.String = null,
     expression: java.lang.String = null,
     field: java.lang.String = null,
-    index: java.lang.String | scala.Double = null,
     legendOptions: VisualVariableLegendOptions = null,
     maxDataValue: scala.Int | scala.Double = null,
     maxSize: scala.Double | ScaleDependentStops | java.lang.String = null,
@@ -131,7 +130,6 @@ object SizeVariableProperties {
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (field != null) __obj.updateDynamic("field")(field)
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (maxDataValue != null) __obj.updateDynamic("maxDataValue")(maxDataValue.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])

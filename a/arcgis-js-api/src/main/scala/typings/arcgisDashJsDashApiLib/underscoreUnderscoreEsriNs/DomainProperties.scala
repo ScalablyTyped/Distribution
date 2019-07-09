@@ -17,15 +17,20 @@ trait DomainProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.range | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`coded-value` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inherited
+  ] = js.undefined
 }
 
 object DomainProperties {
   @scala.inline
-  def apply(name: java.lang.String = null, `type`: java.lang.String = null): DomainProperties = {
+  def apply(
+    name: java.lang.String = null,
+    `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.range | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`coded-value` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inherited = null
+  ): DomainProperties = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainProperties]
   }
 }

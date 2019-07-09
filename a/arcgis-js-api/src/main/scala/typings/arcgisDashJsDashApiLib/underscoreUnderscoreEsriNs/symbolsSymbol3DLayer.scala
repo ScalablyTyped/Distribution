@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - ExtrudeSymbol3DLayer
   - FillSymbol3DLayer
+  - WaterSymbol3DLayer
   - IconSymbol3DLayer
   - LineSymbol3DLayer
   - ObjectSymbol3DLayer

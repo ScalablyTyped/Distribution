@@ -167,5 +167,19 @@ class Readable ()
   /* InferMemberOverrides */
   override def setMaxListeners(n: scala.Double): this.type = js.native
   def unshift(chunk: js.Any): scala.Unit = js.native
+  def unshift(chunk: js.Any, encoding: nodeLib.BufferEncoding): scala.Unit = js.native
+}
+
+/* static members */
+@JSImport("stream", "Readable")
+@js.native
+object Readable extends js.Object {
+  def from(iterable: nodeLib.AsyncIterable[_]): nodeLib.streamMod.Readable = js.native
+  def from(iterable: nodeLib.AsyncIterable[_], options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
+  /**
+    * A utility method for creating Readable Streams out of iterators.
+    */
+  def from(iterable: nodeLib.Iterable[_]): nodeLib.streamMod.Readable = js.native
+  def from(iterable: nodeLib.Iterable[_], options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
 }
 

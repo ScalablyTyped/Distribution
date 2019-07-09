@@ -37,17 +37,57 @@ object ArrayCollectionNs extends js.Object {
       ]
     ]
   ] = js.native
+  val Iterator: org.scalablytyped.runtime.Instantiable0[
+    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[
+      js.Object, 
+      tstlLib.baseContainerArrayContainerMod.ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: org.scalablytyped.runtime.Instantiable0[
+    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
+      js.Object, 
+      tstlLib.baseContainerArrayContainerMod.ArrayContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
+        tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any
+        ], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ]
+    ]
+  ] = js.native
   type Event[T] = ecolLib.libBasicCollectionEventMod.CollectionEvent[
     T, 
     tstlLib.containerVectorMod.Vector[T], 
     tstlLib.containerVectorMod.VectorNs.Iterator[T], 
     tstlLib.containerVectorMod.VectorNs.ReverseIterator[T]
   ]
+  type Iterator[T] = tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, tstlLib.containerVectorMod.Vector[T]]
   type Listener[T] = ecolLib.libBasicCollectionEventMod.CollectionEventNs.Listener[
     T, 
     tstlLib.containerVectorMod.Vector[T], 
     tstlLib.containerVectorMod.VectorNs.Iterator[T], 
     tstlLib.containerVectorMod.VectorNs.ReverseIterator[T]
   ]
+  type ReverseIterator[T] = tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, tstlLib.containerVectorMod.Vector[T]]
 }
 

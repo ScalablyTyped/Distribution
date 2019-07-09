@@ -13,6 +13,14 @@ trait PrintViewModelProperties extends js.Object {
     */
   var printServiceUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * When `true`, scale is used in the printed map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#scaleEnabled)
+    *
+    * @default false
+    */
+  var scaleEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The time interval in milliseconds between each job status request sent to an asynchronous GP task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#updateDelay)
@@ -32,11 +40,13 @@ object PrintViewModelProperties {
   @scala.inline
   def apply(
     printServiceUrl: java.lang.String = null,
+    scaleEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     updateDelay: scala.Int | scala.Double = null,
     view: MapViewProperties = null
   ): PrintViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl)
+    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled)
     if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[PrintViewModelProperties]

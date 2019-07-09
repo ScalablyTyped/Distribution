@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "std-facade"
-version := "201907080331-532dd6"
+version := "201907081111-532dd6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

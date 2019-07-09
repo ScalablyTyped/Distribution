@@ -79,6 +79,7 @@
 | 0.8794049245194621 | [pify](./p/pify) | Promisify a callback-style function
 | 0.8793111233094311 | [react-router-redux](./r/react-router-redux) | Ruthlessly simple bindings to keep react-router an
 | 0.8780174255795559 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript
+| 0.8778824096619322 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 0.8770448908707043 | [d3](./d/d3) | Data-Driven Documents
 | 0.8759344401061098 | [request-promise-native](./r/request-promise-native) | The simplified HTTP request client 'request' with 
 | 0.8758611465191484 | [micromatch](./m/micromatch) | Glob matching for javascript/node.js. A replacemen
@@ -1933,6 +1934,7 @@
 | 0.7188382502430035 | [oracledb](./o/oracledb) | A Node.js module for Oracle Database access
 | 0.7187488461752405 | [bech32](./b/bech32) | Bech32 encoding / decoding
 | 0.7187308402799529 | [gc-stats](./g/gc-stats) | Exposes node v8 garbage collection stats
+| 0.718727394887855 | [tensorflow__tfjs](./t/tensorflow__tfjs) | An open-source machine learning framework.
 | 0.7186848837906863 | [koa-jwt](./k/koa-jwt) | Koa JWT authentication middleware.
 | 0.7186726447361877 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2
 | 0.7186311702121515 | [moveto](./m/moveto) | A lightweight scroll animation javascript library 
@@ -2436,6 +2438,7 @@
 | 0.6931599046441316 | [react-infinite-scroller](./r/react-infinite-scroller) | Infinite scroll component for React in ES6
 | 0.6931580877967931 | [rgrove__parse-xml](./r/rgrove__parse-xml) | A fast, safe, compliant XML parser for Node.js and
 | 0.6931500287985239 | [pvutils](./p/pvutils) | Common utilities for products from Peculiar Ventur
+| 0.6931428205296457 | [tensorflow__tfjs-core](./t/tensorflow__tfjs-core) | Hardware-accelerated JavaScript library for machin
 | 0.6930355521137861 | [twilio-video](./t/twilio-video) | Twilio Video JavaScript library
 | 0.6929514441477587 | [ts-invariant](./t/ts-invariant) | TypeScript implementation of invariant(condition, 
 | 0.6929474965725518 | [browserify](./b/browserify) | browser-side require() the node way
@@ -2804,6 +2807,7 @@
 | 0.6785912839387345 | [hapi__code](./h/hapi__code) | assertion library
 | 0.6785614911273194 | [jsreport-phantom-pdf](./j/jsreport-phantom-pdf) | jsreport recipe which is rendering pdf from html u
 | 0.6785524780111047 | [delegated-events](./d/delegated-events) | A small, fast delegated event library.
+| 0.6785355159012804 | [tensorflow-models__univer](./t/tensorflow-models__universal-sentence-encoder) | Universal Sentence Encoder lite in TensorFlow.js
 | 0.6785055822384682 | [coinlist](./c/coinlist) | Comprehensive list of cryptocurrencies with metada
 | 0.6784857177623251 | [react-draggable-list](./r/react-draggable-list) | Make a list of draggable collapsible items.
 | 0.6783635338756946 | [setasap](./s/setasap) | setImmediate polyfill for the browser and node
@@ -2889,6 +2893,7 @@
 | 0.6749726411649982 | [extend](./e/extend) | Port of jQuery.extend for node.js and the browser
 | 0.6749534237318053 | [react-pointable](./r/react-pointable) | Declarative pointer event binding. Works well alon
 | 0.6749232995609578 | [std-mocks](./s/std-mocks) | Mock node stdout and stderr without pain.
+| 0.6749114754998137 | [tensorflow__tfjs-converte](./t/tensorflow__tfjs-converter) | Tensorflow model converter for javascript
 | 0.6748086324427607 | [pouchdb-adapter-leveldb](./p/pouchdb-adapter-leveldb) | PouchDB adapter using LevelDB as its backing store
 | 0.6747821876124029 | [node-sql-parser](./n/node-sql-parser) | simple node sql parser
 | 0.6747621223616702 | [buffer-compare](./b/buffer-compare) | Lexicographically compare two buffers.
@@ -3593,6 +3598,7 @@
 | 0.6394377184556368 | [node-redis-pubsub](./n/node-redis-pubsub) | Redis PubSub client for Node
 | 0.6394210535336754 | [node-snap7](./n/node-snap7) | Native node.js addon/wrapper for snap7
 | 0.6393357963608941 | [apigee-access](./a/apigee-access) | Provides access to Apigee-specific functionality
+| 0.6393111865231427 | [ecol](./e/ecol) | Event Collections
 | 0.6393099815054217 | [shopify-prime](./s/shopify-prime) | Shopify Prime is a NodeJS library built to help de
 | 0.6393039531517302 | [expo__vector-icons](./e/expo__vector-icons) | Built-in support for popular icon fonts and the to
 | 0.6392902966406129 | [redux-persist](./r/redux-persist) | persist and rehydrate redux stores
@@ -3602,6 +3608,7 @@
 | 0.6392491127861972 | [random-obj-key](./r/random-obj-key) | Get a random key from an object
 | 0.6392106678839176 | [recharts-scale](./r/recharts-scale) | Scale of Cartesian Coordinates
 | 0.639206324863886 | [hex-rgba](./h/hex-rgba) | Convert HEX to RGBA
+| 0.63919988049314 | [sxml](./s/sxml) | Simple XML
 | 0.6391572718849292 | [glob-to-regexp](./g/glob-to-regexp) | Convert globs to regular expressions
 | 0.6391447754106294 | [xstream](./x/xstream) | An extremely intuitive, small, and fast functional
 | 0.6390735161067322 | [bro-fs](./b/bro-fs) | Promise-based HTML5 Filesystem API compatible with
@@ -3649,6 +3656,7 @@
 | 0.636208968750732 | [intrinsic-scale](./i/intrinsic-scale) | Replicate background-size: cover/contain (scale+cr
 | 0.6361614322862086 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti
 | 0.6358682933708665 | [send](./s/send) | Better streaming static file server with Range and
+| 0.6358015358209748 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
 | 0.6357751906187945 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0.6357097208651624 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
 | 0.6356053132776762 | [highcharts](./h/highcharts) | JavaScript charting framework
@@ -3765,6 +3773,7 @@
 | 0.6261222872143226 | [detect-browser](./d/detect-browser) | Unpack a browser type and version from the userage
 | 0.6260653198960973 | [localized-countries](./l/localized-countries) | Country code to name mappings for several language
 | 0.6260325613273962 | [atlassian-crowd-client](./a/atlassian-crowd-client) | Atlassian Crowd API client for Node
+| 0.6259551061721065 | [url-variables](./u/url-variables) | URLVariables class for TypeScript
 | 0.6259166505327667 | [xhr-mock](./x/xhr-mock) | Utility for mocking XMLHttpRequest.
 | 0.6257917197394696 | [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget
 | 0.62577844133259 | [sendmail](./s/sendmail) | Sendmail without setting up SMTP server
@@ -4237,6 +4246,7 @@
 | 0.5757906335332574 | [dayzed](./d/dayzed) | Primitives to build simple, flexible, WAI-ARIA com
 | 0.5756421781968437 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js
 | 0.5751350608111138 | [djv](./d/djv) | dynamic json-schema validator
+| 0.5751212113718012 | [ldapjs-client](./l/ldapjs-client) | LDAP js client
 | 0.5750593881667232 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 0.5750321168320068 | [require-directory](./r/require-directory) | Recursively iterates over specified directory, req
 | 0.5748109847162775 | [event-stream](./e/event-stream) | construct pipes of streams of events
@@ -5101,6 +5111,7 @@
 | 0.440462315540498 | [gulp-file-include](./g/gulp-file-include) | a gulp plugin for file include
 | 0.440450070083091 | [jump_dot_js](./j/jump_dot_js) | A modern smooth scrolling library.
 | 0.4403992476824781 | [angular-toastr](./a/angular-toastr) | -
+| 0.4402876301206501 | [samchon-framework](./s/samchon-framework) | Samchon, a OON (Object Oriented Network) Framework
 | 0.4402873644572759 | [angular-hotkeys](./a/angular-hotkeys) | Automatic keyboard shortcuts for your Angular Apps
 | 0.4399811001992316 | [chunked-dc](./c/chunked-dc) | Binary chunking for WebRTC data channels & more.
 | 0.4398739393097043 | [express-ntlm](./e/express-ntlm) | An express middleware to have simple NTLM-authenti
@@ -5208,6 +5219,7 @@
 | 0.4231479750241569 | [bootstrap-toggle](./b/bootstrap-toggle) | Bootstrap Toggle is a highly flexible Bootstrap pl
 | 0.42295330683774024 | [revalidate](./r/revalidate) | Elegant and composable validations
 | 0.4229360118473847 | [samlp](./s/samlp) | SAML Protocol server middleware
+| 0.4227109276330524 | [samchon](./s/samchon) | Samchon, a OON (Object Oriented Network) Framework
 | 0.4226979983109618 | [react-flexr](./r/react-flexr) | React flexbox grid made simple.
 | 0.42243409418031785 | [ftdomdelegate](./f/ftdomdelegate) | Create and manage a DOM event delegator.
 | 0.4222426706314506 | [atmosphere_dot_js](./a/atmosphere_dot_js) | Atmosphere client for Node.js
@@ -5344,6 +5356,7 @@
 | 0.4058675242782651 | [tough-cookie-file-store](./t/tough-cookie-file-store) | Another file store for tough-cookie module
 | 0.40584472011017514 | [koa-range](./k/koa-range) | range request implementation for koa
 | 0.4058026232176767 | [jquery-validation-unobtru](./j/jquery-validation-unobtrusive) | Add-on to jQuery Validation to enable unobtrusive 
+| 0.40551255448274776 | [wordpress__notices](./w/wordpress__notices) | State management for notices.
 | 0.40547779746676266 | [hellojs](./h/hellojs) | A clientside Javascript library for standardizing 
 | 0.40528318439435607 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs
 | 0.4051232916581988 | [leaflet-geocoder-mapzen](./l/leaflet-geocoder-mapzen) | Add Mapzen Search geocoding to your Leaflet map.
@@ -5366,6 +5379,7 @@
 | 0.40270426956056693 | [algebra_dot_js](./a/algebra_dot_js) | Build, display, and solve algebraic equations.
 | 0.40254924769235145 | [luaparse](./l/luaparse) | A Lua parser in JavaScript
 | 0.40253760777965153 | [rx-lite-experimental](./r/rx-lite-experimental) | Lightweight library with experimental functions fo
+| 0.4025091404386036 | [tensorflow__tfjs-layers](./t/tensorflow__tfjs-layers) | TensorFlow layers API in JavaScript
 | 0.4024285007296623 | [express-route-fs](./e/express-route-fs) | File system-based approach for handling routes in 
 | 0.4023623308121943 | [toobusy-js](./t/toobusy-js) | Don't fall over when your Node.JS server is too bu
 | 0.40224861976749765 | [sandboxed-module](./s/sandboxed-module) | A sandboxed Node.js module loader that lets you in
@@ -5430,6 +5444,7 @@
 | 0.39423165013383293 | [react-swf](./r/react-swf) | Shockwave Flash Player component for React
 | 0.3939089131565365 | [angular-gridster](./a/angular-gridster) | This directive gives you gridster behavior
 | 0.3937612646560477 | [rcloader](./r/rcloader) | For build system plugins that need to fetch relati
+| 0.39353564332336155 | [tensorflow__tfjs-data](./t/tensorflow__tfjs-data) | TensorFlow Data API in JavaScript
 | 0.3932514171878618 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets.
 | 0.3932170909939428 | [json2mq](./j/json2mq) | Generate media query string from JSON or javascrip
 | 0.39320655473895605 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types
@@ -6160,6 +6175,7 @@
 | 0.271263237899813 | [express-enforces-ssl](./e/express-enforces-ssl) | Enforces SSL for node.js express projects
 | 0.27093903810900766 | [sc-auth](./s/sc-auth) | Auth module for SocketCluster
 | 0.27051042958239135 | [nivo__axes](./n/nivo__axes) | -
+| 0.27050951292832703 | [tensorflow](./t/tensorflow) | Node.js module for using TensorFlow graphs and mod
 | 0.2704098335142952 | [createjs](./c/createjs) | A suite of modular libraries and tools which work 
 | 0.2698138901005373 | [browser-fingerprint](./b/browser-fingerprint) | Generate a fingerprint of a browser
 | 0.2696133306968085 | [iniparser](./i/iniparser) | a simple .ini parser
@@ -6497,6 +6513,7 @@
 | 0.1687791227056032 | [pouchdb-adapter-node-webs](./p/pouchdb-adapter-node-websql) | PouchDB adapter using Node-based SQLite as its dat
 | 0.16859603364573436 | [lodash_dot_repeat](./l/lodash_dot_repeat) | The lodash method _.repeat exported as a module.
 | 0.16777388989338 | [knockout-paging](./k/knockout-paging) | Adds an extender to Knockout to add paging functio
+| 0.1672175523473447 | [tensorflow__tfjs-node](./t/tensorflow__tfjs-node) | This repository provides native TensorFlow executi
 | 0.16626926092582756 | [jstimezonedetect](./j/jstimezonedetect) | This script gives you the zone info key representi
 | 0.16612105660426066 | [jwplayer](./j/jwplayer) | 'jwplayer node js module to make request to jwplay
 | 0.16529498330276352 | [jqueryui](./j/jqueryui) | A curated set of user interface interactions, effe

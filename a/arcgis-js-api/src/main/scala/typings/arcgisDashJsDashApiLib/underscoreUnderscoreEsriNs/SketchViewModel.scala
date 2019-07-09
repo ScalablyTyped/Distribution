@@ -10,7 +10,7 @@ trait SketchViewModel
   extends Accessor
      with Evented {
   /**
-    * Returns the name of the active tool associated with the SketchViewModel instance.  **Possible Values:** point | multipoint | polyline | polygon | circle | rectangle | move | transform | reshape
+    * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.  **Possible Values:** point | multipoint | polyline | polygon | circle | rectangle | move | transform | reshape
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool)
     */
@@ -50,7 +50,7 @@ trait SketchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#pointSymbol)
     */
-  var pointSymbol: SimpleMarkerSymbol = js.native
+  var pointSymbol: SimpleMarkerSymbol | PointSymbol3D = js.native
   /**
     * A simple fill symbol used for representing the polygon geometry that is being drawn.  The default value is the following:
     * ```js
@@ -66,7 +66,7 @@ trait SketchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#polygonSymbol)
     */
-  var polygonSymbol: SimpleFillSymbol = js.native
+  var polygonSymbol: SimpleFillSymbol | PolygonSymbol3D = js.native
   /**
     * A simple line symbol used for representing the polyline geometry that is being drawn.  The default value is the following:
     * ```js
@@ -79,7 +79,7 @@ trait SketchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#polylineSymbol)
     */
-  var polylineSymbol: SimpleLineSymbol = js.native
+  var polylineSymbol: SimpleLineSymbol | LineSymbol3D = js.native
   /**
     * The sketch view model's state.  **Possible Values:** ready | disabled | active
     *
@@ -105,7 +105,7 @@ trait SketchViewModel
     */
   var view: MapView | SceneView = js.native
   /**
-    * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:update) event and changes the event's state to `cancel`.
+    * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event and changes the event's state to `cancel`. If called in the middle of a create operation, `cancel()` discards the partially created graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#cancel)
     *
@@ -113,7 +113,7 @@ trait SketchViewModel
     */
   def cancel(): scala.Unit = js.native
   /**
-    * Completes the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:update) event and changes the event's state to `complete`. If called in midst of create operation, `complete()` finishes the active create operation and keeps the valid geometry.
+    * Completes the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event and changes the event's state to `complete`. If called in the middle of a create operation, `complete()` finishes the active create operation and keeps the valid geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#complete)
     *
@@ -121,11 +121,11 @@ trait SketchViewModel
     */
   def complete(): scala.Unit = js.native
   /**
-    * Create a graphic with a geometry specified in `tool` parameter. When first vertex of the graphic is added, [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:create) event will start firing.
+    * Create a graphic with the geometry specified in the `tool` parameter. When the first vertex of the graphic is added, the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) event will start firing. The provided `tool` will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create)
     *
-    * @param tool Name of the create tool. Specifies the geometry type for the graphic to be created.  **Possible Values:** point | multipoint | polyline | polygon | rectangle | circle
+    * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.  **Possible Values:** point | multipoint | polyline | polygon | rectangle | circle
     * @param createOptions Options for the graphic to be created.
     * @param createOptions.mode
     * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.  **Possible Values:**
@@ -140,7 +140,7 @@ trait SketchViewModel
   def create(tool: java.lang.String): scala.Unit = js.native
   def create(tool: java.lang.String, createOptions: SketchViewModelCreateCreateOptions): scala.Unit = js.native
   /**
-    * Incrementally redo actions recorded in the stack. Calling this method will fire the [redo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:redo) event.
+    * Incrementally redo actions recorded in the stack. Calling this method will fire the [redo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-redo) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#redo)
     *
@@ -156,7 +156,7 @@ trait SketchViewModel
     */
   def reset(): scala.Unit = js.native
   /**
-    * Incrementally undo actions recorded in the stack. Calling this method will fire the [undo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:undo) event.
+    * Incrementally undo actions recorded in the stack. Calling this method will fire the [undo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-undo) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#undo)
     *
@@ -164,14 +164,14 @@ trait SketchViewModel
     */
   def undo(): scala.Unit = js.native
   /**
-    * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:update) event.
+    * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     *
     * @param graphics A graphic or an array of graphics to be updated. Only graphics added to SketchViewModel's [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#layer) property can be updated.
     * @param updateOptions Update options for the graphics to be updated.
     * @param updateOptions.tool
-    * Name of the update tool. Specifies the update operation for the selected graphics.  **Possible Values:**
+    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).  **Possible Values:**
     *
     * Value | Description |
     * ----- | ----------- |

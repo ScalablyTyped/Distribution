@@ -45,22 +45,13 @@ abstract class User protected ()
     *
     * @return Iterator to the first element.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[
     tstlLib.utilityEntryMod.Entry[scala.Double, samchonLib.templatesServiceClientMod.Client], 
     tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client], 
-    tstlLib.baseIteratorMapIteratorMod.MapIterator[
-      scala.Double, 
-      samchonLib.templatesServiceClientMod.Client, 
-      tstlLib.tstlLibNumbers.`true`, 
-      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-    ], 
-    tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
-      scala.Double, 
-      samchonLib.templatesServiceClientMod.Client, 
-      tstlLib.tstlLibNumbers.`true`, 
-      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-    ], 
+    tstlLib.containerHashMapMod.HashMapNs.Iterator[scala.Double, samchonLib.templatesServiceClientMod.Client], 
+    tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[scala.Double, samchonLib.templatesServiceClientMod.Client], 
     tstlLib.utilityIPairMod.IPair[scala.Double, samchonLib.templatesServiceClientMod.Client]
   ] = js.native
   /**
@@ -109,22 +100,13 @@ abstract class User protected ()
     *
     * @return Iterator to the end.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def end(): tstlLib.baseIteratorIteratorMod.Iterator[
     tstlLib.utilityEntryMod.Entry[scala.Double, samchonLib.templatesServiceClientMod.Client], 
     tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client], 
-    tstlLib.baseIteratorMapIteratorMod.MapIterator[
-      scala.Double, 
-      samchonLib.templatesServiceClientMod.Client, 
-      tstlLib.tstlLibNumbers.`true`, 
-      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-    ], 
-    tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
-      scala.Double, 
-      samchonLib.templatesServiceClientMod.Client, 
-      tstlLib.tstlLibNumbers.`true`, 
-      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-    ], 
+    tstlLib.containerHashMapMod.HashMapNs.Iterator[scala.Double, samchonLib.templatesServiceClientMod.Client], 
+    tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[scala.Double, samchonLib.templatesServiceClientMod.Client], 
     tstlLib.utilityIPairMod.IPair[scala.Double, samchonLib.templatesServiceClientMod.Client]
   ] = js.native
   /**
@@ -172,12 +154,7 @@ abstract class User protected ()
     */
   /* CompleteClass */
   /* InferMemberOverrides */
-  override def rbegin(): tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
-    scala.Double, 
-    samchonLib.templatesServiceClientMod.Client, 
-    tstlLib.tstlLibNumbers.`true`, 
-    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-  ] = js.native
+  override def rbegin(): tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[scala.Double, samchonLib.templatesServiceClientMod.Client] = js.native
   /**
     * Reverse iterator to the reverse end.
     *
@@ -185,12 +162,7 @@ abstract class User protected ()
     */
   /* CompleteClass */
   /* InferMemberOverrides */
-  override def rend(): tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
-    scala.Double, 
-    samchonLib.templatesServiceClientMod.Client, 
-    tstlLib.tstlLibNumbers.`true`, 
-    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-  ] = js.native
+  override def rend(): tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[scala.Double, samchonLib.templatesServiceClientMod.Client] = js.native
   /**
     * Sending message.
     *

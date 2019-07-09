@@ -24,6 +24,12 @@ trait View
     */
   var animation: ViewAnimation = js.native
   /**
+    * A fatal [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) returned when the view loses its WebGL context. Watch this property to properly handle the error and attempt to recover the WebGL context.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#fatalError)
+    */
+  var fatalError: Error = js.native
+  /**
     * Allows for adding [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) directly to the default graphics in the View.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics)
@@ -112,6 +118,14 @@ trait View
     */
   val stationary: scala.Boolean = js.native
   /**
+    * The view's time extent. Time-aware layers display their temporal data that falls within the view's time extent. Setting the view's time extent is similar to setting the spatial [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent) because once the time extent is set, the view updates automatically to conform to the change.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent)
+    *
+    * @default null
+    */
+  var timeExtent: TimeExtent = js.native
+  /**
     * The type of the view is either `2d` (indicating a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html)) or `3d` (indicating a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html)).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#type)
@@ -126,6 +140,77 @@ trait View
     */
   val updating: scala.Boolean = js.native
   /**
+    * Call this method to clear any [fatal errors](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#fatalError) resulting from a lost WebGL context.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#tryFatalErrorRecovery)
+    *
+    *
+    */
+  def tryFatalErrorRecovery(): scala.Unit = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: CSVLayer): arcgisDashJsDashApiLib.IPromise[CSVLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: FeatureLayer): arcgisDashJsDashApiLib.IPromise[FeatureLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: GeoJSONLayer): arcgisDashJsDashApiLib.IPromise[GeoJSONLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: GeoRSSLayer): arcgisDashJsDashApiLib.IPromise[GeoRSSLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: GraphicsLayer): arcgisDashJsDashApiLib.IPromise[GraphicsLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: ImageryLayer): arcgisDashJsDashApiLib.IPromise[ImageryLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: KMLLayer): arcgisDashJsDashApiLib.IPromise[KMLLayerView] = js.native
+  /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
@@ -134,6 +219,24 @@ trait View
     *
     */
   def whenLayerView(layer: Layer): arcgisDashJsDashApiLib.IPromise[LayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: SceneLayer): arcgisDashJsDashApiLib.IPromise[SceneLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: StreamLayer): arcgisDashJsDashApiLib.IPromise[StreamLayerView] = js.native
 }
 
 @JSGlobal("__esri.View")

@@ -38,41 +38,29 @@ class unordered_map[Key, T] ()
     * @param hash An unary function returns hash code. Default is {hash}.
     * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ]) = this()
   def this(hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   def this(items: js.Array[tstlLib.utilityIPairMod.IPair[Key, T]], hash: js.Function1[/* key */ Key, scala.Double]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ], hash: js.Function1[/* key */ Key, scala.Double]) = this()
   def this(items: js.Array[tstlLib.utilityIPairMod.IPair[Key, T]], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
 }
 

@@ -30,7 +30,7 @@ object codeactionsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined actionTypeParameters, actionReturnType, modelerActionInfo, actionParameters */ @js.native
+  - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeAction because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined actionTypeParameters, actionReturnType, modelerActionInfo, actionParameters */ @js.native
   abstract class CodeAction protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

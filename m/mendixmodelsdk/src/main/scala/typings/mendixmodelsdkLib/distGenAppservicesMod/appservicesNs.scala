@@ -68,7 +68,7 @@ object appservicesNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined actions */ @js.native
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined actions */ @js.native
   class ConsumedAppService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

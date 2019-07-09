@@ -12,6 +12,7 @@ object functionalMod extends js.Object {
   def bit_or(x: scala.Double, y: scala.Double): scala.Double = js.native
   def bit_xor(x: scala.Double, y: scala.Double): scala.Double = js.native
   def equal_to[T](x: T, y: T): scala.Boolean = js.native
+  def get_uid(): scala.Double = js.native
   def get_uid(obj: js.Object): scala.Double = js.native
   def greater[T](x: T, y: T): scala.Boolean = js.native
   def greater_equal[T](x: T, y: T): scala.Boolean = js.native

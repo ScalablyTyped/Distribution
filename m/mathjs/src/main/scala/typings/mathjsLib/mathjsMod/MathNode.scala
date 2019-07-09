@@ -37,7 +37,7 @@ trait MathNode extends js.Object {
   def cloneDeep(): MathNode = js.native
   /**
     * Compile an expression into optimized JavaScript code. compile returns
-    * an object with a function eval([scope]) to evaluate. Example:
+    * an object with a function evaluate([scope]) to evaluate. Example:
     */
   def compile(): EvalFunction = js.native
   /**
@@ -47,10 +47,10 @@ trait MathNode extends js.Object {
   def equals(other: MathNode): scala.Boolean = js.native
   /**
     * Compile and eval an expression, this is the equivalent of doing
-    * node.compile().eval(scope). Example:
+    * node.compile().evaluate(scope). Example:
     */
-  def eval(): js.Any = js.native
-  def eval(expr: js.Any): js.Any = js.native
+  def evaluate(): js.Any = js.native
+  def evaluate(expr: js.Any): js.Any = js.native
   /**
     *
     * Filter nodes in an expression tree. The callback function is called

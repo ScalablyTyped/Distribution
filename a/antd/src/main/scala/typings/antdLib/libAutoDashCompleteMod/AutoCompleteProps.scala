@@ -5,22 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AutoCompleteProps
-  extends antdLib.libSelectMod.AbstractSelectProps {
+/* Inlined parent antd.antd/lib/_util/type.Omit<antd.antd/lib/select.AbstractSelectProps, 'loading'> */
+trait AutoCompleteProps extends js.Object {
+  var allowClear: js.UndefOr[scala.Boolean] = js.undefined
+  var autoClearSearchValue: js.UndefOr[scala.Boolean] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var backfill: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
     ValidInputElement | reactLib.reactMod.ReactElement | js.Array[reactLib.reactMod.ReactElement]
   ] = js.undefined
+  var choiceTransitionName: js.UndefOr[java.lang.String] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var dataSource: js.UndefOr[js.Array[DataSourceItemType]] = js.undefined
+  var defaultActiveFirstOption: js.UndefOr[scala.Boolean] = js.undefined
+  var defaultOpen: js.UndefOr[scala.Boolean] = js.undefined
   var defaultValue: js.UndefOr[antdLib.libSelectMod.SelectValue] = js.undefined
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  var dropdownClassName: js.UndefOr[java.lang.String] = js.undefined
+  var dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined
+  var dropdownMenuStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var dropdownRender: js.UndefOr[
+    js.Function2[
+      /* menu */ js.UndefOr[reactLib.reactMod.ReactNode], 
+      /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]], 
+      reactLib.reactMod.ReactNode
+    ]
+  ] = js.undefined
+  var dropdownStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var filterOption: js.UndefOr[
+    scala.Boolean | (js.Function2[
+      /* inputValue */ java.lang.String, 
+      /* option */ reactLib.reactMod.ReactElement, 
+      scala.Boolean
+    ])
+  ] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
+  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* value */ antdLib.libSelectMod.SelectValue, scala.Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ antdLib.libSelectMod.SelectValue, scala.Unit]] = js.undefined
+  var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ scala.Boolean, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onSearch: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[
     js.Function2[/* value */ antdLib.libSelectMod.SelectValue, /* option */ js.Object, _]
   ] = js.undefined
+  var open: js.UndefOr[scala.Boolean] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
+  var prefixCls: js.UndefOr[java.lang.String] = js.undefined
+  var showAction: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var showArrow: js.UndefOr[scala.Boolean] = js.undefined
+  var showSearch: js.UndefOr[scala.Boolean] = js.undefined
+  var size: js.UndefOr[
+    antdLib.antdLibStrings.default | antdLib.antdLibStrings.large | antdLib.antdLibStrings.small
+  ] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
+  var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[antdLib.libSelectMod.SelectValue] = js.undefined
 }
 
@@ -51,7 +93,6 @@ object AutoCompleteProps {
     ]) = null,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
-    loading: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: reactLib.reactMod.ReactNode = null,
     onBlur: /* value */ antdLib.libSelectMod.SelectValue => scala.Unit = null,
     onChange: /* value */ antdLib.libSelectMod.SelectValue => scala.Unit = null,
@@ -93,7 +134,6 @@ object AutoCompleteProps {
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

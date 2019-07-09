@@ -158,6 +158,7 @@ object SceneViewProperties {
     container: stdLib.HTMLDivElement | java.lang.String = null,
     environment: SceneViewEnvironmentProperties = null,
     extent: ExtentProperties = null,
+    fatalError: Error = null,
     graphics: CollectionProperties[GraphicProperties] = null,
     heightBreakpoint: java.lang.String = null,
     highlightOptions: SceneViewHighlightOptionsProperties = null,
@@ -168,6 +169,7 @@ object SceneViewProperties {
     qualityProfile: java.lang.String = null,
     scale: scala.Int | scala.Double = null,
     spatialReference: SpatialReferenceProperties = null,
+    timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null,
     viewingMode: java.lang.String = null,
     viewpoint: ViewpointProperties = null,
@@ -186,6 +188,7 @@ object SceneViewProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
     if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
     if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions)
@@ -196,6 +199,7 @@ object SceneViewProperties {
     if (qualityProfile != null) __obj.updateDynamic("qualityProfile")(qualityProfile)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     if (ui != null) __obj.updateDynamic("ui")(ui)
     if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode)
     if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)

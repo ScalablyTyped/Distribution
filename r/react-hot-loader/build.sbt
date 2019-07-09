@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-hot-loader"
-version := "4.1-dt-20180426Z-f386ac"
+version := "4.1-dt-20180426Z-b25583"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
   "org.scalablytyped" %%% "std" % "3.5-983486")

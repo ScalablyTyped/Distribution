@@ -59,6 +59,12 @@ object CardKnownProps {
     borderWidth: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BorderWidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
+    borderX: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.BorderProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    borderY: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.BorderProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
     boxShadow: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.BoxShadowProperty | scala.Double] = null,
     children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
@@ -88,6 +94,12 @@ object CardKnownProps {
     marginTop: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
+    marginX: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    marginY: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
     mb: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginBottomProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -101,10 +113,10 @@ object CardKnownProps {
       csstypeLib.csstypeMod.MarginTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     mx: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
-      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     my: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
-      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     opacity: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.GlobalsNumber] = null,
     order: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.GlobalsNumber] = null,
@@ -125,6 +137,12 @@ object CardKnownProps {
     ] = null,
     paddingTop: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    paddingX: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    paddingY: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     pb: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingBottomProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
@@ -168,6 +186,8 @@ object CardKnownProps {
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (borderX != null) __obj.updateDynamic("borderX")(borderX.asInstanceOf[js.Any])
+    if (borderY != null) __obj.updateDynamic("borderY")(borderY.asInstanceOf[js.Any])
     if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -181,6 +201,8 @@ object CardKnownProps {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
@@ -195,6 +217,8 @@ object CardKnownProps {
     if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
     if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
     if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
     if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])

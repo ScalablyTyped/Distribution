@@ -209,7 +209,7 @@ trait Portal
     */
   var hasCategorySchema: scala.Boolean = js.native
   /**
-    * Helper services provided by the portal. For the detailed information about these services, see the [about utility services](https://server.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm) topic from the ArcGIS Server documentation.
+    * Helper services provided by the portal. This is useful in instances where helper services are needed but may not be available using the given helper methods [createClosestFacilityTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createClosestFacilityTask), [createElevationLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createElevationLayers), [createGeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createGeometryService), [createPrintTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createPrintTask), [createRouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createRouteTask), and [createServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createServiceAreaTask).  For additional information about helper services, see the [about utility services](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm) topic from the ArcGIS Server documentation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#helperServices)
     */
@@ -407,75 +407,147 @@ trait Portal
     */
   var vectorBasemapGalleryGroupQuery: java.lang.String = js.native
   /**
-    * Fetches the [basemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) that are displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html). When [useVectorBasemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps) is `true`, the basemaps will be based on [vectorBasemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#vectorBasemapGalleryGroupQuery), and otherwise on [basemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery).
+    * A helper function that returns an instance of the portal's [ClosestFacilityTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ClosestFacilityTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createClosestFacilityTask)
+    *
+    *
+    */
+  def createClosestFacilityTask(): arcgisDashJsDashApiLib.IPromise[ClosestFacilityTask] = js.native
+  /**
+    * A helper function that returns an array of [ElevationsLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html) derived from the Portal's [Limited Error Raster Compression (LERC) elevation helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createElevationLayers)
+    *
+    *
+    */
+  def createElevationLayers(): arcgisDashJsDashApiLib.IPromise[js.Array[ElevationLayer]] = js.native
+  /**
+    * A helper function that returns an instance of the portal's [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createGeometryService)
+    *
+    *
+    */
+  def createGeometryService(): arcgisDashJsDashApiLib.IPromise[GeometryService] = js.native
+  /**
+    * A helper function that returns an instance of the portal's [PrintTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createPrintTask)
+    *
+    *
+    */
+  def createPrintTask(): arcgisDashJsDashApiLib.IPromise[PrintTask] = js.native
+  /**
+    * A helper function that returns an instance of the portal's [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createRouteTask)
+    *
+    *
+    */
+  def createRouteTask(): arcgisDashJsDashApiLib.IPromise[RouteTask] = js.native
+  /**
+    * A helper function that returns an instance of the portal's [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createServiceAreaTask)
+    *
+    *
+    */
+  def createServiceAreaTask(): arcgisDashJsDashApiLib.IPromise[ServiceAreaTask] = js.native
+  /**
+    * Fetches the [basemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) that are displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html). When [useVectorBasemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps) is `true`, the basemaps will be based on [vectorBasemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#vectorBasemapGalleryGroupQuery).  Otherwise, it is based on [basemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchBasemaps)
     *
     * @param basemapGalleryGroupQuery When provided, this argument is used to fetch basemaps based on input query parameters.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchBasemaps(): arcgisDashJsDashApiLib.IPromise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: java.lang.String): arcgisDashJsDashApiLib.IPromise[js.Array[Basemap]] = js.native
+  def fetchBasemaps(basemapGalleryGroupQuery: java.lang.String, options: PortalFetchBasemapsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[Basemap]] = js.native
   /**
     * If present, fetches the organization's category schema.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchCategorySchema)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchCategorySchema(): arcgisDashJsDashApiLib.IPromise[js.Array[_]] = js.native
+  def fetchCategorySchema(options: PortalFetchCategorySchemaOptions): arcgisDashJsDashApiLib.IPromise[js.Array[_]] = js.native
   /**
     * Fetches the featured groups in the Portal.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchFeaturedGroups)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchFeaturedGroups(): arcgisDashJsDashApiLib.IPromise[js.Array[PortalGroup]] = js.native
+  def fetchFeaturedGroups(options: PortalFetchFeaturedGroupsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[PortalGroup]] = js.native
   /**
     * Fetches and returns the associated regions with the portal instance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchRegions)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchRegions(): arcgisDashJsDashApiLib.IPromise[js.Array[_]] = js.native
+  def fetchRegions(options: PortalFetchRegionsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[_]] = js.native
   /**
     * Executes a query against the Portal to return an array of [PortalGroup](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html) objects that match the input query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#queryGroups)
     *
     * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html).
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryGroups(queryParams: PortalQueryParams): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   def queryGroups(queryParams: PortalQueryParamsProperties): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryGroups(queryParams: PortalQueryParamsProperties, options: PortalQueryGroupsOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryGroups(queryParams: PortalQueryParams, options: PortalQueryGroupsOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   /**
     * Executes a query against the Portal to return an array of [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html) objects that match the input query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#queryItems)
     *
     * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html).
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryItems(queryParams: PortalQueryParams): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryItems(queryParams: PortalQueryParamsProperties, options: PortalQueryItemsOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryItems(queryParams: PortalQueryParams, options: PortalQueryItemsOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   /**
     * Executes a query against the Portal to return an array of [PortalUser](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html) objects that match the input query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#queryUsers)
     *
     * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html).
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryUsers(queryParams: PortalQueryParams): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   def queryUsers(queryParams: PortalQueryParamsProperties): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryUsers(queryParams: PortalQueryParamsProperties, options: PortalQueryUsersOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryUsers(queryParams: PortalQueryParams, options: PortalQueryUsersOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
 }
 
 @JSGlobal("__esri.Portal")
 @js.native
 /**
-  * The Portal class is part of the [ArcGIS Enterprise portal](https://enterprise.arcgis.com/en/portal/) that provides a way to build applications that work with content from [ArcGIS Online](http://www.arcgis.com/home/) or an [ArcGIS Enterprise portal](https://enterprise.arcgis.com/en/portal/). [ArcGIS Enterprise](https://enterprise.arcgis.com/en/portal/) is software from Esri that customers can deploy either on-premises or in the cloud. [ArcGIS Online](http://www.arcgis.com/home/) is Esri's Software as a Service offering that represents GIS as a Service and is implemented using the same technology as ArcGIS Enterprise.
+  * The Portal class is part of the [ArcGIS Enterprise portal](https://enterprise.arcgis.com/en/portal/) that provides a way to build applications that work with content from [ArcGIS Online](https://www.arcgis.com/home/) or an [ArcGIS Enterprise portal](https://enterprise.arcgis.com/en/portal/). [ArcGIS Enterprise](https://enterprise.arcgis.com/en/portal/) is software from Esri that customers can deploy either on-premises or in the cloud. [ArcGIS Online](https://www.arcgis.com/home/) is Esri's Software as a Service offering that represents GIS as a Service and is implemented using the same technology as ArcGIS Enterprise.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html)
   */

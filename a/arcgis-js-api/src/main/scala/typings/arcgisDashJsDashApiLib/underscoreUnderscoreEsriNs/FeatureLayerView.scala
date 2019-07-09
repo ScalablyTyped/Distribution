@@ -46,6 +46,14 @@ trait FeatureLayerView extends LayerView {
     */
   var maximumNumberOfFeaturesExceeded: scala.Boolean = js.native
   /**
+    * Creates query parameter object that can be used to fetch features as they are being displayed. It sets the query parameter's [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outFields) property to `["*"]` and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) to `true`. The output spatial reference [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) is set to the spatial reference of the view. Parameters of the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#filter) currently applied to the layerview are also incorporated in the returned query object. The results will include geometries of features and values for [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#availableFields).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#createQuery)
+    *
+    *
+    */
+  def createQuery(): Query = js.native
+  /**
     * Highlights the given feature(s).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#highlight)
@@ -60,7 +68,6 @@ trait FeatureLayerView extends LayerView {
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. Valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm) on [arcgis.com](http://arcgis.com) and for ArcGIS Server 10.3.1 and later. If query parameters are not provided, the extent and count of all features available for drawing are returned.  To query for the extent of features directly from a Feature Service rather than those visible in the view, you must use the [FeatureLayer.queryExtent()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryExtent) method.
     * > **Known Limitations**
-    *   * In 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) only queries with [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#objectIds) or [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) with an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) and [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship) is `intersects` are supported.
     *   * Spatial queries are executed against quantized geometries in the layer view. The resolution of layer view geometries, is only as precise as the scale resolution of the view. Therefore, the results of the same query could be different when executed at different scales. This also means that geometries returned from any layer view query will likewise be at the same scale resolution of the view.
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the FeatureLayerView has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
@@ -71,16 +78,19 @@ trait FeatureLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryExtent)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryExtent(): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def queryExtent(params: Query): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def queryExtent(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: Query): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: QueryProperties, options: FeatureLayerViewQueryExtentOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: Query, options: FeatureLayerViewQueryExtentOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the number of features that satisfy the query. If query parameters are not provided, the count of all features available for drawing is returned.  To query for the count of features directly from a Feature Service rather than those visible in the view, you must use the [FeatureLayer.queryFeatureCount()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatureCount) method.
     * > **Known Limitations**
-    *   * In 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) only queries with [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#objectIds) or [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) with an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) and [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship) is `intersects` are supported.
     *   * Spatial queries are executed against quantized geometries in the layer view. The resolution of layer view geometries, is only as precise as the scale resolution of the view. Therefore, the results of the same query could be different when executed at different scales. This also means that geometries returned from any layer view query will likewise be at the same scale resolution of the view.
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the FeatureLayerView has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
@@ -91,36 +101,43 @@ trait FeatureLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatureCount)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryFeatureCount(): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
-  def queryFeatureCount(params: Query): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
-  def queryFeatureCount(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: Query): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: FeatureLayerViewQueryFeatureCountOptions): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: Query, options: FeatureLayerViewQueryFeatureCountOptions): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). If query parameters are not provided, all features available for drawing are returned along with their attributes specified in [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#availableFields). For client-side attribute queries, relevant fields must exist in [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#availableFields) list for the query to be successful.  To execute a query against all the features in a Feature Service rather than only those in the client, you must use the [FeatureLayer.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures) method.
     * > **Known Limitations**
-    *   * In 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) only queries with [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#objectIds) or [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) with an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) and [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship) is `intersects` are supported.
+    *   * Attribute values used in attribute queries executed against layer views are case sensitive.
     *   * Spatial queries are executed against quantized geometries in the layer view. The resolution of layer view geometries, is only as precise as the scale resolution of the view. Therefore, the results of the same query could be different when executed at different scales. This also means that geometries returned from any layer view query will likewise be at the same scale resolution of the view.
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the FeatureLayerView has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
     *   * GDM 2000 (4742) – Malaysia
-    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * Gsterberg (Ferro) (8042) – Austria/Czech Republic
     *   * ISN2016 (8086) - Iceland
     *   * SVY21 (4757) - Singapore
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned along with their attributes specified in [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#availableFields). To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned along with their attributes specified in [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#availableFields). To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryFeatures(): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
-  def queryFeatures(params: Query): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
-  def queryFeatures(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: FeatureLayerViewQueryFeaturesOptions): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: FeatureLayerViewQueryFeaturesOptions): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns array of the ObjectIDs of features that satisfy the input query. If query parameters are not provided, the ObjectIDs of all features available for drawing are returned.  To query for ObjectIDs of features directly from a Feature Service rather than those visible in the view, you must use the [FeatureLayer.queryObjectIds()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryObjectIds) method.
     * > **Known Limitations**
-    *   * In 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) only queries with [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#objectIds) or [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) with an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) and [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship) is `intersects` are supported.
     *   * Spatial queries are executed against quantized geometries in the layer view. The resolution of layer view geometries, is only as precise as the scale resolution of the view. Therefore, the results of the same query could be different when executed at different scales. This also means that geometries returned from any layer view query will likewise be at the same scale resolution of the view.
     *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
     *   * Spatial queries are not currently supported if the FeatureLayerView has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
@@ -131,12 +148,16 @@ trait FeatureLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryObjectIds)
     *
-    * @param params Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryObjectIds(): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-  def queryObjectIds(params: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-  def queryObjectIds(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: FeatureLayerViewQueryObjectIdsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: Query, options: FeatureLayerViewQueryObjectIdsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
 }
 
 @JSGlobal("__esri.FeatureLayerView")

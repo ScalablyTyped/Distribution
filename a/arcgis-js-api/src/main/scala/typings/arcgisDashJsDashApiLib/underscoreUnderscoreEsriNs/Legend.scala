@@ -14,6 +14,14 @@ trait Legend extends Widget {
     */
   var activeLayerInfos: Collection[ActiveLayerInfo] = js.native
   /**
+    * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible)
+    *
+    * @default false
+    */
+  var basemapLegendVisible: scala.Boolean = js.native
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#iconClass)

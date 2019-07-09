@@ -106,6 +106,13 @@ class Worker protected ()
   def prependOnceListener_message(event: nodeLib.nodeLibStrings.message, listener: js.Function1[/* value */ js.Any, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+    * Receive a single message from a given `MessagePort`. If no message is available,
+    * `undefined` is returned, otherwise an object with a single `message` property
+    * that contains the message payload, corresponding to the oldest message in the
+    * `MessagePort`’s queue.
+    */
+  def receiveMessageOnPort(port: MessagePort): js.UndefOr[js.Object] = js.native
   def ref(): scala.Unit = js.native
   @JSName("removeListener")
   def removeListener_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
@@ -118,8 +125,11 @@ class Worker protected ()
   def removeListener_message(event: nodeLib.nodeLibStrings.message, listener: js.Function1[/* value */ js.Any, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function0[scala.Unit]): this.type = js.native
-  def terminate(): scala.Unit = js.native
-  def terminate(callback: js.Function2[/* err */ nodeLib.Error, /* exitCode */ scala.Double, scala.Unit]): scala.Unit = js.native
+  /**
+    * Stop all JavaScript execution in the worker thread as soon as possible.
+    * Returns a Promise for the exit code that is fulfilled when the `exit` event is emitted.
+    */
+  def terminate(): js.Promise[scala.Double] = js.native
   def unref(): scala.Unit = js.native
 }
 

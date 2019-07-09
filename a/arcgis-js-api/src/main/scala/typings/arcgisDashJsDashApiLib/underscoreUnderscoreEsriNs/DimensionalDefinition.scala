@@ -24,11 +24,11 @@ trait DimensionalDefinition
     */
   var isSlice: scala.Boolean = js.native
   /**
-    * An array of tuples [min, max] each defining a range of valid values along the specified dimension.
+    * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#values)
     */
-  var values: js.Array[_] = js.native
+  var values: js.Array[scala.Double | js.Array[scala.Double]] = js.native
   /**
     * The required variable name by which to filter.
     *

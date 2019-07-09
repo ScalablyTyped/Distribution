@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashSetMod.IHashSet because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/HashMultiSet", "HashMultiSet")
+- tstlLib.baseContainerIHashSetMod.IHashSet because Inheritance from two classes. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMultiSet", "HashMultiSet")
 @js.native
 /**
   * Default Constructor.
@@ -15,7 +15,12 @@ import scala.scalajs.js.annotation._
   * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
   */
 class HashMultiSet[Key] ()
-  extends tstlLib.baseContainerMultiSetMod.MultiSet[Key, HashMultiSet[Key]] {
+  extends tstlLib.baseContainerMultiSetMod.MultiSet[
+      Key, 
+      HashMultiSet[Key], 
+      tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key], 
+      tstlLib.containerHashMultiSetMod.HashMultiSetNs.ReverseIterator[Key]
+    ] {
   def this(hash: js.Function1[/* key */ Key, scala.Double]) = this()
   /**
     * Initializer Constructor.
@@ -39,32 +44,33 @@ class HashMultiSet[Key] ()
     * @param hash An unary function returns hash code. Default is {hash}.
     * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]
-    ]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]) = this()
   def this(hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   def this(items: js.Array[Key], hash: js.Function1[/* key */ Key, scala.Double]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]
-    ], hash: js.Function1[/* key */ Key, scala.Double]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]], hash: js.Function1[/* key */ Key, scala.Double]) = this()
   def this(items: js.Array[Key], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]]
-    ], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, _]], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   /**
     * @hidden
     */
   var buckets_ : js.Any = js.native
   /**
+    * Iterator to the first element in a specific bucket.
+    *
+    * @param index Index number of the specific bucket.
+    * @return Iterator from the specific bucket.
+    */
+  def begin(index: scala.Double): tstlLib.baseContainerSetElementListMod.SetElementListNs.Iterator[Key, tstlLib.tstlLibNumbers.`false`, HashMultiSet[Key]] = js.native
+  /**
     * @inheritDoc
     */
-  def begin(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
+  @JSName("begin")
+  def begin_Iterator(): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
+  /**
+    * @inheritDoc
+    */
+  @JSName("begin")
+  def begin_Iterator(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
   /**
     * @inheritDoc
     */
@@ -78,9 +84,22 @@ class HashMultiSet[Key] ()
     */
   def bucket_size(n: scala.Double): scala.Double = js.native
   /**
+    * Iterator to the end in a specific bucket.
+    *
+    * @param index Index number of the specific bucket.
+    * @return Iterator from the specific bucket.
+    */
+  def end(index: scala.Double): tstlLib.baseContainerSetElementListMod.SetElementListNs.Iterator[Key, tstlLib.tstlLibNumbers.`false`, HashMultiSet[Key]] = js.native
+  /**
     * @inheritDoc
     */
-  def end(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
+  @JSName("end")
+  def end_Iterator(): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
+  /**
+    * @inheritDoc
+    */
+  @JSName("end")
+  def end_Iterator(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
   /**
     * @inheritDoc
     */

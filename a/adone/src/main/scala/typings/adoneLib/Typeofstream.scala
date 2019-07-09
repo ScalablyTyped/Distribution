@@ -10,7 +10,7 @@ trait Typeofstream extends js.Object {
   // Note: Duplex extends both Readable and Writable.
   var Duplex: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Duplex] = js.native
   var PassThrough: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.PassThrough] = js.native
-  var Readable: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Readable] = js.native
+  var Readable: TypeofClassReadable = js.native
   var Stream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Stream] = js.native
   var Transform: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Transform] = js.native
   var Writable: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Writable] = js.native

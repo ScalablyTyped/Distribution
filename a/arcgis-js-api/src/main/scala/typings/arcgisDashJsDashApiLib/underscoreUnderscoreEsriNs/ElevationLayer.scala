@@ -45,11 +45,18 @@ trait ElevationLayer
     * @param level the tile level.
     * @param row the tile row.
     * @param column the tile column.
-    * @param noDataValue the value to use when a tile is partially missing data.
+    * @param options Optional settings for the tile request.
+    * @param options.noDataValue The value representing pixels in the tile that don't contain an elevation value.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def fetchTile(level: scala.Double, row: scala.Double, column: scala.Double): arcgisDashJsDashApiLib.IPromise[ElevationTileData] = js.native
-  def fetchTile(level: scala.Double, row: scala.Double, column: scala.Double, noDataValue: scala.Double): arcgisDashJsDashApiLib.IPromise[ElevationTileData] = js.native
+  def fetchTile(
+    level: scala.Double,
+    row: scala.Double,
+    column: scala.Double,
+    options: ElevationLayerFetchTileOptions
+  ): arcgisDashJsDashApiLib.IPromise[ElevationTileData] = js.native
   /**
     * This method returns a URL to a tile for a given level, row and column.
     *
@@ -65,6 +72,11 @@ trait ElevationLayer
   def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: ElevationLayerLayerviewCreateEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: ElevationLayerLayerviewCreateErrorEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
   def on_layerviewdestroy(
@@ -90,6 +102,7 @@ trait ElevationLayer
     * `{number}`             | Sample elevation from the resolution closest to the specified resolution (in meters).
     * @param options.returnSampleInfo Indicates whether to return additional sample information for each coordinate.
     * @param options.noDataValue The value to use when there is no data available.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def queryElevation(geometry: Point): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native

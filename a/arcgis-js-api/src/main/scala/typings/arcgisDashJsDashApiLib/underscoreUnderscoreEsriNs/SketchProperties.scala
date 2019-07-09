@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait SketchProperties extends WidgetProperties {
   /**
+    * Property controlling the visibility and order of create tool buttons.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
+    *
+    * @default ["point", "polyline", "polygon", "rectangle", "circle"]
+    */
+  var availableCreateTools: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
     * The Sketch widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)
@@ -43,6 +51,7 @@ trait SketchProperties extends WidgetProperties {
 object SketchProperties {
   @scala.inline
   def apply(
+    availableCreateTools: js.Array[java.lang.String] = null,
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     iconClass: java.lang.String = null,
@@ -54,6 +63,7 @@ object SketchProperties {
     viewModel: SketchViewModelProperties = null
   ): SketchProperties = {
     val __obj = js.Dynamic.literal()
+    if (availableCreateTools != null) __obj.updateDynamic("availableCreateTools")(availableCreateTools)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)

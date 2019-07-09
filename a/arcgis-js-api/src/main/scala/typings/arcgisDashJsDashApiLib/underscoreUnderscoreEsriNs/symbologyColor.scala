@@ -40,7 +40,30 @@ trait symbologyColor extends js.Object {
     */
   def getMatchingSchemes(params: colorGetMatchingSchemesParams): js.Array[ColorScheme] = js.native
   /**
-    * Returns a primary scheme and secondary schemes defining symbol properties for data-driven color visualizions in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). The `basemap` parameter determines the color schemes of the graphics used to visualize each feature. The `geometryType` determines which type of symbol to return.
+    * Returns a color scheme with the provided name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    *
+    * @param params See the table below for details of each parameter that may be passed to this function.
+    * @param params.name The name of the scheme to retrieve.
+    * @param params.basemap The basemap to pair with the visualization. This value indicates the best symbol colors for visualizing features against the given basemap.
+    * @param params.geometryType The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
+    * @param params.theme
+    * The theme determines which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
+    *
+    * | Value | Description | Example |
+    * | ----- | ----------- | ------- |
+    * | high-to-low | High values are emphasized with strong colors. | ![high-to-low](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-high-to-low.png) |
+    * | above-and-below | Values centered around a given point (e.g. the average) are visualized with weak colors while other values are emphasized with strong colors. | ![above-and-below](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-above-and-below.png) |
+    * | centered-on | Values centered around a given point (e.g. the average) are emphasized with strong colors while other values are visualized with weak colors. | ![centered-on](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-centered-on.png) |
+    * | extremes | High and low values are emphasized with strong colors. All others are visualized with weak colors. | ![extremes](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-extremes.png) |
+    * @param params.view The SceneView instance in which the scheme will be used. This property is only applicable when the scheme will be used in conjunction with 3D symbols.
+    * @param params.worldScale Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
+    *
+    */
+  def getSchemeByName(params: colorGetSchemeByNameParams): ColorScheme = js.native
+  /**
+    * Returns a primary scheme and secondary schemes defining symbol properties for data-driven color visualizations in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). The `basemap` parameter determines the color schemes of the graphics used to visualize each feature. The `geometryType` determines which type of symbol to return.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemes)
     *
@@ -62,7 +85,31 @@ trait symbologyColor extends js.Object {
     */
   def getSchemes(params: colorGetSchemesParams): ColorSchemes = js.native
   /**
-    * Returns metadata for the available themes. If a `basemap` is provided, returns themes that look best with the given basemap.
+    * Returns an array of color schemes with the provided tags. These schemes define symbol properties for data-driven color visualizations in any layer that can be rendered with a [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemesByTag)
+    *
+    * @param params See the table below for details of each parameter that may be passed to this function.
+    * @param params.includedTags When provided, only schemes containing all the matching tags will be returned.  **Known Tags:** light | dark | reds | yellows | oranges | greens | blues | purples | pinks | browns | grays | bright | subdued | deuteranopia | protanopia | tritanopia | grayscale | types | dot-density
+    * @param params.excludedTags When provided, only schemes missing all the provided tags will be returned.  **Known Tags:** light | dark | reds | yellows | oranges | greens | blues | purples | pinks | browns | grays | bright | subdued | deuteranopia | protanopia | tritanopia | grayscale | types | dot-density
+    * @param params.basemap The basemap to pair with the visualization. This value indicates the best symbol colors for visualizing features against the given basemap.
+    * @param params.geometryType The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
+    * @param params.theme
+    * The theme determines which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
+    *
+    * | Value | Description | Example |
+    * | ----- | ----------- | ------- |
+    * | high-to-low | High values are emphasized with strong colors. | ![high-to-low](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-high-to-low.png) |
+    * | above-and-below | Values centered around a given point (e.g. the average) are visualized with weak colors while other values are emphasized with strong colors. | ![above-and-below](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-above-and-below.png) |
+    * | centered-on | Values centered around a given point (e.g. the average) are emphasized with strong colors while other values are visualized with weak colors. | ![centered-on](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-centered-on.png) |
+    * | extremes | High and low values are emphasized with strong colors. All others are visualized with weak colors. | ![extremes](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-extremes.png) |
+    * @param params.view The SceneView instance in which the scheme will be used. This property is only applicable when the scheme will be used in conjunction with 3D symbols.
+    * @param params.worldScale Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
+    *
+    */
+  def getSchemesByTag(params: colorGetSchemesByTagParams): js.Array[ColorScheme] = js.native
+  /**
+    * Returns metadata for the available themes. If a basemap is provided, returns themes that work best with the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getThemes)
     *

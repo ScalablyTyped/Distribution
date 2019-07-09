@@ -92,17 +92,23 @@ trait PortalGroup extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#fetchCategorySchema)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchCategorySchema(): arcgisDashJsDashApiLib.IPromise[js.Array[_]] = js.native
+  def fetchCategorySchema(options: PortalGroupFetchCategorySchemaOptions): arcgisDashJsDashApiLib.IPromise[js.Array[_]] = js.native
   /**
     * Fetches the current members of the group. This method is only available to members or administrators of the group. View the ArcGIS REST API documentation for the [Group Users](https://developers.arcgis.com/rest/users-groups-and-items/group-users.htm) for more details.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#fetchMembers)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchMembers(): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def fetchMembers(options: PortalGroupFetchMembersOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Get the URL to the thumbnail image for the group.  Available width sizes: 150, 300 and 600.
     *
@@ -119,11 +125,15 @@ trait PortalGroup extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#queryItems)
     *
     * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html).
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryItems(): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParams): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryItems(queryParams: PortalQueryParamsProperties, options: PortalGroupQueryItemsOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
+  def queryItems(queryParams: PortalQueryParams, options: PortalGroupQueryItemsOptions): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
 }
 
 @JSGlobal("__esri.PortalGroup")

@@ -208,6 +208,7 @@
 | [ant-design__create-react-](./a/ant-design__create-react-context) | A fork of create-react-context in MIT license | react, context, contextTypes, polyfill, ponyfill |
 | [ant-design__icons](./a/ant-design__icons) | Ant Design Icons | - |
 | [ant-design__icons-react](./a/ant-design__icons-react) |  Ant Design Icons for React  | - |
+| [antd](./a/antd) | An enterprise-class UI design language and React-b | ant, design, react, react-component, component, components, ui, framework, frontend |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
@@ -1370,6 +1371,7 @@
 | [echarts](./e/echarts) | A powerful charting and visualization library for  | visualization, canvas |
 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for  | ecmascript, javascript, specs, specifications, markup, markdown, html, code |
+| [ecol](./e/ecol) | Event Collections | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
 | [ecurve](./e/ecurve) | Elliptic curve cryptography | cryptography, crypto, bitcoin, litecoin, elliptic, curve |
 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
 | [ed2curve](./e/ed2curve) | Convert Ed25519 signing keys into Curve25519 Diffi | ed25519, curve25519, djb, crypto, public, keys, edwards, montgomery, elliptic |
@@ -3331,6 +3333,7 @@
 | [lazypipe](./l/lazypipe) | Use to create an immutable, lazily initialized pip | gulpfriendly, stream, streams, combine, lazy, pipeline, gulp |
 | [ldap-filters](./l/ldap-filters) | Library for generating, parsing, and evaluating LD | ldap, filter, parser, generate, evaluate, match |
 | [ldapjs](./l/ldapjs) | LDAP client and server APIs | - |
+| [ldapjs-client](./l/ldapjs-client) | LDAP js client | LDAP, ldap, client, simple, promised, async |
 | [ldclient-js](./l/ldclient-js) | LaunchDarkly SDK for JavaScript | launchdarkly, analytics, client |
 | [ldclient-js-common](./l/ldclient-js-common) | LaunchDarkly SDK for JavaScript - common code | - |
 | [leaflet](./l/leaflet) | JavaScript library for mobile-friendly interactive | gis, map |
@@ -5846,6 +5849,8 @@
 | [safe-json-stringify](./s/safe-json-stringify) | Prevent defined property getters from throwing err | - |
 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
+| [samchon](./s/samchon) | Samchon, a OON (Object Oriented Network) Framework | samchon, framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, Entity |
+| [samchon-framework](./s/samchon-framework) | Samchon, a OON (Object Oriented Network) Framework | samchon framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, XML, Entity |
 | [saml2-js](./s/saml2-js) | SAML 2.0 node helpers | saml, node |
 | [saml20](./s/saml20) | SAML 2.0 and 1.1 token parser for Node.js | SAML 2.0, SAML 1.1, Token Parser |
 | [samlp](./s/samlp) | SAML Protocol server middleware | saml, auth |
@@ -6406,6 +6411,7 @@
 | [swipeview](./s/swipeview) | - | - |
 | [switchery](./s/switchery) | Browserify version of Switchery | switchery |
 | [swiz](./s/swiz) | Serialization and Validation Framework for objects | - |
+| [sxml](./s/sxml) | Simple XML | xml |
 | [sylvester](./s/sylvester) | node.js implementation of James Coglan's "Sylveste | matrix, vector, linear, line, algebra, matrices |
 | [sylvester-es6](./s/sylvester-es6) | Fork of the famous Sylvester vector, matrix and ge | sylvester, glutils, matrix, vector, geometry, es6 |
 | [symbol-observable](./s/symbol-observable) | Symbol.observable ponyfill | symbol, observable, observables, ponyfill, polyfill, shim |
@@ -6452,6 +6458,14 @@
 | [temp-write](./t/temp-write) | Write string/buffer/stream to a random temp file | tmp, temp, temporary, tempfile, file, filename, path, random, rand, write, fs, string, buffer, stream |
 | [tempfile](./t/tempfile) | Get a random temporary file path | tmp, temp, temporary, tempfile, file, path, random, rand, uuid |
 | [tempy](./t/tempy) | Get a random temporary file or directory path | temp, temporary, path, file, directory, folder, tempfile, tempdir, tmpdir, tmpfile, random, unique, uniq |
+| [tensorflow](./t/tensorflow) | Node.js module for using TensorFlow graphs and mod | tensorflow, tf, tensor, machine learning, ml, ai, neural networks, neuralnetworks, deeplearning, model, numerical computation, google |
+| [tensorflow-models__univer](./t/tensorflow-models__universal-sentence-encoder) | Universal Sentence Encoder lite in TensorFlow.js | - |
+| [tensorflow__tfjs](./t/tensorflow__tfjs) | An open-source machine learning framework. | - |
+| [tensorflow__tfjs-converte](./t/tensorflow__tfjs-converter) | Tensorflow model converter for javascript | - |
+| [tensorflow__tfjs-core](./t/tensorflow__tfjs-core) | Hardware-accelerated JavaScript library for machin | - |
+| [tensorflow__tfjs-data](./t/tensorflow__tfjs-data) | TensorFlow Data API in JavaScript | - |
+| [tensorflow__tfjs-layers](./t/tensorflow__tfjs-layers) | TensorFlow layers API in JavaScript | - |
+| [tensorflow__tfjs-node](./t/tensorflow__tfjs-node) | This repository provides native TensorFlow executi | - |
 | [term-size](./t/term-size) | Reliably get the terminal window size (columns & r | term, terminal, size, console, window, width, height, columns, rows, lines, tty, redirected |
 | [terminal-image](./t/terminal-image) | Display images in the terminal | terminal, image, term, iterm, shell, console, command-line, img, pic, picture, photo, ansi, escape, jpg, jpeg, display, show, pixels |
 | [terminal-kit](./t/terminal-kit) | 256 colors, keys and mouse, input field, progress  | terminal, console, ansi, xterm, color, 256 colors, true color, style, input, input field, mouse, gpm, cursor, menu, progress bar, screenbuffer, textbuffer, 32-bit, composition, image, png, jpeg, gif |
@@ -6592,6 +6606,7 @@
 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript | typescript, monad, functional |
 | [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo | promises, harmony, generators |
 | [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC | timing safe string compare, double hmac string compare, safe string compare, hmac |
+| [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate | tstl, typescript stl, typescript standard template library, container, iterator, algorithm, functor, exception, functional, utility, thread, numeric, special_math, vector, deque, list, forward_list, stack, queue, priority_queue, set, multiset, unordered_set, unordered_multiset, map, multimap, unordered_map, unordered_multimap, TreeSet, TreeMultiSet, HashSet, HashMultiSet, TreeMap, TreeMultiMap, HashMap, HashMultiMap, mutex, shared_mutex, timed_mutex, shared_timed_mutex, unique_lock, shared_lock, semaphore, timed_semaphore, latch, barrier, flex_barrier |
 | [tsutils](./t/tsutils) | utilities for working with typescript's AST | typescript, ts, ast, typeguard, utils, helper, node |
 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones. | ttf, woff2, fonts |
 | [tunnel](./t/tunnel) | Node HTTP/HTTPS Agents for tunneling proxies | http, https, agent, proxy, tunnel |
@@ -6731,6 +6746,7 @@
 | [url-safe-base64](./u/url-safe-base64) | url safe base64 en- and decoding | base64, safe, url |
 | [url-search-params](./u/url-search-params) | Simple polyfill for URLSearchParams standard | DOM, URLSearchParams, polyfill, shim |
 | [url-template](./u/url-template) | This is a simple URI template implementation follo | uri-template, uri template, uri, url, rfc 6570, url template, url-template |
+| [url-variables](./u/url-variables) | URLVariables class for TypeScript | URLVariables, url, variables, encode, decode |
 | [urlencode](./u/urlencode) | encodeURIComponent with charset | urlencode, urldecode, encodeURIComponent, decodeURIComponent, querystring, parse |
 | [urllib](./u/urllib) | Help in opening URLs (mostly HTTP) in a complex wo | urllib, http, urlopen, curl, wget, request, https |
 | [urlparser](./u/urlparser) | Url parser | url, parse |
@@ -7026,6 +7042,7 @@
 | [wordpress__is-shallow-equ](./w/wordpress__is-shallow-equal) | Test for shallow equality between two objects or a | wordpress, shallow, shallow-equal, shallowequal |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
+| [wordpress__notices](./w/wordpress__notices) | State management for notices. | wordpress, notices |
 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API. | wordpress, rich-text |
 | [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress. | wordpress, shortcode |
 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities. | wordpress, url |

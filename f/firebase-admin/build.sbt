@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "8.2.0-5e7bd7"
+version := "8.2.0-07c150"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-ad8961",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-d62a9e",
-  "org.scalablytyped" %%% "gaxios" % "1.8.4-8cd97b",
-  "org.scalablytyped" %%% "google-auth-library" % "3.1.2-e1a26b",
-  "org.scalablytyped" %%% "google-cloud__common" % "0.32.1-027a33",
-  "org.scalablytyped" %%% "google-cloud__firestore" % "2.2.3-4fd282",
-  "org.scalablytyped" %%% "google-cloud__storage" % "2.5.0-d06d19",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-fcbb99",
+  "org.scalablytyped" %%% "gaxios" % "1.8.4-488f78",
+  "org.scalablytyped" %%% "google-auth-library" % "3.1.2-e61cb4",
+  "org.scalablytyped" %%% "google-cloud__common" % "0.32.1-e4a82f",
+  "org.scalablytyped" %%% "google-cloud__firestore" % "2.2.3-16e635",
+  "org.scalablytyped" %%% "google-cloud__storage" % "2.5.0-3cd141",
   "org.scalablytyped" %%% "gtoken" % "2.3.3-86d5a2",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-3b5f5c",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-6fb98d",
   "org.scalablytyped" %%% "std" % "3.5-983486",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-75d383")
 publishArtifact in packageDoc := false

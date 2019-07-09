@@ -41,7 +41,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(object, promise-proxy-mixin)) [id => @ember/object, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__object/proxy.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__object),TsIdentLibraryScoped(ember,Some(object))),TsIdentModule(Some(ember),List(object, proxy))) [id => @ember/object, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(object, proxy)) [id => @ember/object, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibraryScoped(ember,Some(object)) [id => @ember/object, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(ember,Some(object)) [id => @ember/object, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(CoreObject)))) [id => @ember/object, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object/core) / TsExport() / TsExporteeTree() / TsDeclClass(CoreObject) / TsMemberFunction(create) / TsFunSig() / TsTypeParam() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(CoreObject)))) [id => @ember/object, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object/core) / TsExport() / TsExporteeTree() / TsDeclClass(CoreObject) / TsMemberFunction(create) / TsFunSig() / TsTypeParam() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(CoreObject)))) [id => @ember/object, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object/core) / TsExport() / TsExporteeTree() / TsDeclClass(CoreObject) / TsMemberFunction(create) / TsFunSig() / TsTypeParam() / TsTypeQuery())] 
@@ -111,11 +111,11 @@
 [info ] ImportType.scala:245 Failed type conversion: typeof CoreObject [id => @ember/object, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(TypeofClassCoreObject) / TsMemberFunction(create) / TsTypeParam() / TsTypeQuery())] 
 [info ] ImportType.scala:245 Failed type conversion: typeof CoreObject [id => @ember/object, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(TypeofClassCoreObject) / TsMemberFunction(create) / TsTypeParam() / TsTypeQuery())] 
 [info ] ImportType.scala:245 Failed type conversion: T[K] [id => @ember/object, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object/internals) / TsDeclFunction(cacheFor) / TsTypeUnion() / TsTypeRef() / TsTypeLookup())] 
-[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
+[info ] RemoveMultipleInheritance.scala:44 Dropped parents 
 - atEmberObjectLib.dashPrivateTypesMod.ComputedPropertyMarker because Inheritance from two classes. Inlined ______getType, ______setType [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(computedMod) / Name(ComputedProperty)] 
-[info ] CompleteClass.scala:64 Completed implementations Vector(`<apply>`) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(computedMod) / Name(default)] 
-[info ] CompleteClass.scala:64 Completed implementations Vector(isDestroyed, concatenatedProperties, isDestroying, willDestroy, _super, init, destroy) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(coreMod) / Name(default)] 
-[info ] CompleteClass.scala:64 Completed implementations Vector(__ember_mixin__) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(mixinMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(`<apply>`) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(computedMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(isDestroyed, concatenatedProperties, isDestroying, willDestroy, _super, init, destroy) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(coreMod) / Name(default)] 
+[info ] CompleteClass.scala:65 Completed implementations Vector(__ember_mixin__) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(mixinMod) / Name(default)] 
 [debug] PhaseRunner.scala:84 Success [id => @ember/object, phase => scala.js] 
 [warn ] Npmjs.scala:108 Could't fetch metadata for TsIdentLibraryScoped(ember,Some(object)) [id => @ember/object, phase => build] gigahorse.StatusError: Unexpected status: 404
 	at gigahorse.StatusError$.apply(StatusError.scala:29)

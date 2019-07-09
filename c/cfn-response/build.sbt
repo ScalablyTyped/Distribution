@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cfn-response"
-version := "1.0-dt-20181201Z-bf253c"
+version := "1.0-dt-20181201Z-747001"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20190606Z-9fc755",
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20190708Z-011ee7",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

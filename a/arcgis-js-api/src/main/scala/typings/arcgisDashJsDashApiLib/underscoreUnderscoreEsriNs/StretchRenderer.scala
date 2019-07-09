@@ -81,8 +81,10 @@ trait StretchRenderer extends Renderer {
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-StretchRenderer.html#stretchType)
+    *
+    * @default none
     */
-  var stretchType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`standard-deviation` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`histogram-equalization` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`min-max` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`percent-clip` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.sigmoid = js.native
+  var stretchType: java.lang.String = js.native
   /**
     * The type of Renderer. For StretchRenderer this value is always `raster-stretch`.
     *

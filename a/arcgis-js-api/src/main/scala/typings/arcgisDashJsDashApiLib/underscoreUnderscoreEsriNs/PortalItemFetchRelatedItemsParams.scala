@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PortalItemFetchRelatedItemsParams
   extends stdLib.Object {
   /**
-    * The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin).  **Possible Values:** forward | reverse
+    * The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin). **Possible Values:** forward | reverse
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchRelatedItems)
     */

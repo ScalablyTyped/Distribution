@@ -8,16 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/algorithm/merge", JSImport.Namespace)
 @js.native
 object algorithmMergeMod extends js.Object {
-  def includes[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */](first1: InputIterator1, last1: InputIterator1, first2: InputIterator2, last2: InputIterator2): scala.Boolean = js.native
-  def includes[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */](
+  def includes[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */](first1: InputIterator1, last1: InputIterator1, first2: InputIterator2, last2: InputIterator2): scala.Boolean = js.native
+  def includes[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
@@ -49,11 +41,7 @@ object algorithmMergeMod extends js.Object {
       scala.Boolean
     ]
   ): scala.Unit = js.native
-  def merge[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def merge[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -62,11 +50,7 @@ object algorithmMergeMod extends js.Object {
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def merge[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def merge[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -80,11 +64,7 @@ object algorithmMergeMod extends js.Object {
       scala.Boolean
     ]
   ): OutputIterator = js.native
-  def set_difference[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_difference[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -93,11 +73,7 @@ object algorithmMergeMod extends js.Object {
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_difference[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_difference[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -111,11 +87,7 @@ object algorithmMergeMod extends js.Object {
       scala.Boolean
     ]
   ): OutputIterator = js.native
-  def set_intersection[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_intersection[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -124,11 +96,7 @@ object algorithmMergeMod extends js.Object {
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_intersection[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_intersection[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -142,11 +110,7 @@ object algorithmMergeMod extends js.Object {
       scala.Boolean
     ]
   ): OutputIterator = js.native
-  def set_symmetric_difference[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_symmetric_difference[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -155,11 +119,7 @@ object algorithmMergeMod extends js.Object {
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_symmetric_difference[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_symmetric_difference[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -173,11 +133,7 @@ object algorithmMergeMod extends js.Object {
       scala.Boolean
     ]
   ): OutputIterator = js.native
-  def set_union[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_union[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -186,11 +142,7 @@ object algorithmMergeMod extends js.Object {
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_union[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def set_union[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], OutputIterator]
   ] */](
     first1: InputIterator1,

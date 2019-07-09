@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait UpdateWorkflowData
   extends stdLib.Object {
   /**
-    * An array of features to be updated.
+    * An array of features to be updated. This is only relevant when there are multiple candidates to update.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData)
     */
   var candidates: js.Array[Graphic]
   /**
-    * The [editable item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#EditableItem) available within the map.
+    * The object that matches the feature being updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData)
     */

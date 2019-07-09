@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_FontFamily extends js.Object {
   var fontFamily: csstypeLib.csstypeMod.FontFamilyProperty
   var fontSize: csstypeLib.csstypeMod.FontSizeProperty[scala.Double]
-  var fontWeight: csstypeLib.csstypeMod.FontWeightProperty
+  var fontWeight: csstypeLib.csstypeMod.FontWeightProperty | java.lang.String
   var letterSpacing: csstypeLib.csstypeMod.LetterSpacingProperty[java.lang.String | scala.Double]
   var lineHeight: csstypeLib.csstypeMod.LineHeightProperty[java.lang.String]
 }
@@ -18,7 +18,7 @@ object Anon_FontFamily {
   def apply(
     fontFamily: csstypeLib.csstypeMod.FontFamilyProperty,
     fontSize: csstypeLib.csstypeMod.FontSizeProperty[scala.Double],
-    fontWeight: csstypeLib.csstypeMod.FontWeightProperty,
+    fontWeight: csstypeLib.csstypeMod.FontWeightProperty | java.lang.String,
     letterSpacing: csstypeLib.csstypeMod.LetterSpacingProperty[java.lang.String | scala.Double],
     lineHeight: csstypeLib.csstypeMod.LineHeightProperty[java.lang.String]
   ): Anon_FontFamily = {

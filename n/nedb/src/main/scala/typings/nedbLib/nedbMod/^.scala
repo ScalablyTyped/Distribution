@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("nedb", JSImport.Namespace)
 @js.native
-class ^ () extends Nedb {
+class ^[G] () extends Nedb[G] {
   def this(pathOrOptions: java.lang.String) = this()
   def this(pathOrOptions: DataStoreOptions) = this()
 }

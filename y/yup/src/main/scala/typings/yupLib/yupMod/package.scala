@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yupMod {
+  type Id[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: T[K]}
+    */ yupLib.yupLibStrings.Id with T
   type InferType[T] = InnerInferType[js.Any]
   type InferredArrayType[T] = T
-  type InnerInferType[T] = yupLib.NotRequiredProps[T] with yupLib.RequiredProps[T]
+  type InnerInferType[T] = Id[yupLib.NotRequiredProps[T] with yupLib.RequiredProps[T]]
   type KeyOfUndefined[T] = /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: -? undefined extends T[P]? P : never}[keyof T] */ js.Any
   type Lazy = Schema[js.Any]
   type LocaleValue = java.lang.String | (js.Function1[/* params */ FormatErrorParams, java.lang.String])

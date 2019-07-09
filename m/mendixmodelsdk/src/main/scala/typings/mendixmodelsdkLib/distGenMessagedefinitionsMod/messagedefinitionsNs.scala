@@ -44,7 +44,7 @@ object messagedefinitionsNs extends js.Object {
     * In version 7.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.IEntityMessageDefinition because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.IEntityMessageDefinition because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
   class EntityMessageDefinition protected () extends MessageDefinition {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsMessageDefinitionCollection")
@@ -162,7 +162,7 @@ object messagedefinitionsNs extends js.Object {
     * In version 7.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.IMessageDefinitionCollection because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined messageDefinitions */ @js.native
+  - mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.IMessageDefinitionCollection because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined messageDefinitions */ @js.native
   class MessageDefinitionCollection protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

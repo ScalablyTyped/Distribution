@@ -20,11 +20,11 @@ trait ClassBreaksRenderer
     */
   var backgroundFillSymbol: FillSymbol | PolygonSymbol3D = js.native
   /**
-    * Each element in the array is an object that provides information about a class break associated with the renderer. Each object has the following specification:
+    * Each element in the array is an object that provides information about a class break associated with the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#classBreakInfos)
     */
-  var classBreakInfos: js.Array[ClassBreaksRendererClassBreakInfos] = js.native
+  var classBreakInfos: js.Array[ClassBreakInfo] = js.native
   /**
     * Label used in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) to describe features assigned the [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#defaultSymbol). The [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#defaultSymbol) is used to draw all features with unspecified, unmatched values.
     *
@@ -95,6 +95,8 @@ trait ClassBreaksRenderer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpressionTitle)
     */
   var valueExpressionTitle: java.lang.String = js.native
+  def addClassBreakInfo(min: js.Any): scala.Unit = js.native
+  def addClassBreakInfo(min: js.Any, max: scala.Double): scala.Unit = js.native
   def addClassBreakInfo(min: js.Any, max: scala.Double, symbol: Symbol): scala.Unit = js.native
   /**
     * Adds a class break to the renderer. You can provide the minimum, maximum and symbol values as individual arguments or by using the info object. The range of the break is greater than or equal to the minimum value and less than the maximum value.
@@ -106,6 +108,8 @@ trait ClassBreaksRenderer
     * @param symbol Symbol to use for the break.
     *
     */
+  def addClassBreakInfo(min: scala.Double): scala.Unit = js.native
+  def addClassBreakInfo(min: scala.Double, max: scala.Double): scala.Unit = js.native
   def addClassBreakInfo(min: scala.Double, max: scala.Double, symbol: Symbol): scala.Unit = js.native
   /**
     * Returns the [classBreakInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#classBreakInfos) information (as defined by the renderer) associated with the given graphic.
@@ -115,7 +119,7 @@ trait ClassBreaksRenderer
     * @param graphic The graphic whose rendering information will be returned.
     *
     */
-  def getClassBreakInfo(graphic: Graphic): js.Any = js.native
+  def getClassBreakInfo(graphic: Graphic): arcgisDashJsDashApiLib.IPromise[ClassBreakInfo] = js.native
   /**
     * Removes a break from the renderer.
     *

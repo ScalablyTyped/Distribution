@@ -16,7 +16,11 @@ object HttpsOptions {
   @scala.inline
   def apply(
     ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
-    NPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* ctx */ nodeLib.tlsMod.SecureContext, 
+      scala.Unit
+    ]) => scala.Unit = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     checkServerIdentity: (/* host */ java.lang.String, /* cert */ nodeLib.tlsMod.PeerCertificate) => js.UndefOr[nodeLib.Error] = null,
@@ -25,6 +29,7 @@ object HttpsOptions {
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     dhparam: java.lang.String | nodeLib.Buffer = null,
     ecdhCurve: java.lang.String = null,
+    enableTrace: js.UndefOr[scala.Boolean] = js.undefined,
     freeSocketKeepAliveTimeout: scala.Int | scala.Double = null,
     freeSocketTimeout: scala.Int | scala.Double = null,
     honorCipherOrder: js.UndefOr[scala.Boolean] = js.undefined,
@@ -44,6 +49,7 @@ object HttpsOptions {
     pfx: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer | js.Object]) = null,
     port: scala.Int | scala.Double = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    requestCert: js.UndefOr[scala.Boolean] = js.undefined,
     secureContext: nodeLib.tlsMod.SecureContext = null,
     secureOptions: scala.Int | scala.Double = null,
     secureProtocol: java.lang.String = null,
@@ -56,7 +62,7 @@ object HttpsOptions {
   ): HttpsOptions = {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
-    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
@@ -65,6 +71,7 @@ object HttpsOptions {
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace)
     if (freeSocketKeepAliveTimeout != null) __obj.updateDynamic("freeSocketKeepAliveTimeout")(freeSocketKeepAliveTimeout.asInstanceOf[js.Any])
     if (freeSocketTimeout != null) __obj.updateDynamic("freeSocketTimeout")(freeSocketTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
@@ -84,6 +91,7 @@ object HttpsOptions {
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext)
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
     if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)

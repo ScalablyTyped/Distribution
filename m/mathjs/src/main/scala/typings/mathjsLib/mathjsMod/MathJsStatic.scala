@@ -15,6 +15,7 @@ trait MathJsStatic extends js.Object {
   var NaN: scala.Double = js.native
   var SQRT1_2: scala.Double = js.native
   var SQRT2: scala.Double = js.native
+  var all: FactoryFunctionMap = js.native
   var e: scala.Double = js.native
   var expression: MathNode = js.native
   var i: scala.Double = js.native
@@ -480,7 +481,7 @@ trait MathJsStatic extends js.Object {
     ************************************************************************/
   /**
     * Parse and compile an expression. Returns a an object with a function
-    * eval([scope]) to evaluate the compiled expression.
+    * evaluate([scope]) to evaluate the compiled expression.
     * @param expr The expression to be compiled
     * @returns An object with the compiled expression
     */
@@ -610,6 +611,7 @@ trait MathJsStatic extends js.Object {
     * @returns The hyperbolic cotangent of x
     */
   def coth(x: scala.Double): scala.Double = js.native
+  def create(factories: FactoryFunctionMap, config: ConfigOptions): MathJsStatic = js.native
   /**
     * Create a user-defined unit and register it with the Unit type.
     * @param name The name of the new unit. Must be unique. Example: ‘knot’
@@ -864,18 +866,18 @@ trait MathJsStatic extends js.Object {
     * @returns The erf of x
     */
   def erf(x: scala.Double): scala.Double | MathArray | Matrix = js.native
-  def eval(expr: js.Array[MathExpression]): js.Any = js.native
-  def eval(expr: js.Array[MathExpression], scope: js.Object): js.Any = js.native
+  def evaluate(expr: js.Array[MathExpression]): js.Any = js.native
+  def evaluate(expr: js.Array[MathExpression], scope: js.Object): js.Any = js.native
   /**
     * Evaluate an expression.
     * @param expr The expression to be evaluated
     * @param scope Scope to read/write variables
     * @returns The result of the expression
     */
-  def eval(expr: MathExpression): js.Any = js.native
-  def eval(expr: MathExpression, scope: js.Object): js.Any = js.native
-  def eval(expr: Matrix): js.Any = js.native
-  def eval(expr: Matrix, scope: js.Object): js.Any = js.native
+  def evaluate(expr: MathExpression): js.Any = js.native
+  def evaluate(expr: MathExpression, scope: js.Object): js.Any = js.native
+  def evaluate(expr: Matrix): js.Any = js.native
+  def evaluate(expr: Matrix, scope: js.Object): js.Any = js.native
   def exp(x: BigNumber): BigNumber = js.native
   def exp(x: Complex): Complex = js.native
   def exp(x: MathArray): MathArray = js.native
@@ -919,6 +921,17 @@ trait MathJsStatic extends js.Object {
     * @returns The factorial of n
     */
   def factorial(n: scala.Double): scala.Double | BigNumber | MathArray | Matrix = js.native
+  def factory[T](
+    name: java.lang.String,
+    dependencies: js.Array[MathJsFunctionName],
+    create: js.Function1[/* injected */ this.type, T]
+  ): FactoryFunction[T] = js.native
+  def factory[T](
+    name: java.lang.String,
+    dependencies: js.Array[MathJsFunctionName],
+    create: js.Function1[/* injected */ this.type, T],
+    meta: js.Any
+  ): FactoryFunction[T] = js.native
   def filter(
     x: js.Array[java.lang.String] | MathArray,
     test: js.Function3[
@@ -1804,7 +1817,7 @@ trait MathJsStatic extends js.Object {
   ): scala.Boolean | MathArray | Matrix = js.native
   /**
     * Parse an expression. Returns a node tree, which can be evaluated by
-    * invoking node.eval();
+    * invoking node.evaluate();
     * @param expr Expression to be parsed
     * @param options Available options: nodes - a set of custome nodes
     * @returns A node
@@ -2525,7 +2538,7 @@ trait MathJsStatic extends js.Object {
   /**
     * Compute the standard deviation of a matrix or a list with values. The
     * standard deviations is defined as the square root of the variance:
-    * std(A) = sqrt(var(A)). In case of a (multi dimensional) array or
+    * std(A) = sqrt(variance(A)). In case of a (multi dimensional) array or
     * matrix, the standard deviation over all elements will be calculated.
     * Optionally, the type of normalization can be specified as second
     * parameter. The parameter normalization can be one of the following
@@ -2676,6 +2689,14 @@ trait MathJsStatic extends js.Object {
   def transpose(x: MathArray): MathArray | Matrix = js.native
   def transpose(x: Matrix): MathArray | Matrix = js.native
   /**
+    * Determine the type of a variable.
+    * @param x The variable for which to test the type
+    * @returns Returns the name of the type. Primitive types are lower
+    * case, non-primitive types are upper-camel-case. For example ‘number’,
+    * ‘string’, ‘Array’, ‘Date’.
+    */
+  def typeOf(x: js.Any): java.lang.String = js.native
+  /**
     * Create a typed-function which checks the types of the arguments and
     * can match them against multiple provided signatures. The
     * typed-function automatically converts inputs in order to find a
@@ -2689,14 +2710,6 @@ trait MathJsStatic extends js.Object {
     name: java.lang.String,
     signatures: stdLib.Record[java.lang.String, js.Function1[/* repeated */ _, _]]
   ): js.Function1[/* repeated */ js.Any, _] = js.native
-  /**
-    * Determine the type of a variable.
-    * @param x The variable for which to test the type
-    * @returns Returns the name of the type. Primitive types are lower
-    * case, non-primitive types are upper-camel-case. For example ‘number’,
-    * ‘string’, ‘Array’, ‘Date’.
-    */
-  def typeof(x: js.Any): java.lang.String = js.native
   def unaryMinus(x: BigNumber): BigNumber = js.native
   def unaryMinus(x: Complex): Complex = js.native
   def unaryMinus(x: Fraction): Fraction = js.native
@@ -2783,11 +2796,11 @@ trait MathJsStatic extends js.Object {
     * is divided by n 'biased' The sum of squared errors is divided by (n +
     * 1) Note that older browser may not like the variable name var. In
     * that case, the function can be called as math['var'](...) instead of
-    * math.var(...).
+    * math.variance(...).
     * @param args A single matrix or multiple scalar values
     * @returns The variance
     */
-  def `var`(args: (scala.Double | BigNumber | Fraction)*): js.Any = js.native
+  def variance(args: (scala.Double | BigNumber | Fraction)*): js.Any = js.native
   /**
     * @param array A single matrix
     * @param normalization normalization Determines how to normalize the
@@ -2795,20 +2808,20 @@ trait MathJsStatic extends js.Object {
     * Default value: ‘unbiased’.
     * @returns The variance
     */
-  def `var`(array: MathArray): js.Any = js.native
-  def `var`(array: Matrix): js.Any = js.native
-  @JSName("var")
-  def var_biased(array: MathArray, normalization: mathjsLib.mathjsLibStrings.biased): js.Any = js.native
-  @JSName("var")
-  def var_biased(array: Matrix, normalization: mathjsLib.mathjsLibStrings.biased): js.Any = js.native
-  @JSName("var")
-  def var_unbiased(array: MathArray, normalization: mathjsLib.mathjsLibStrings.unbiased): js.Any = js.native
-  @JSName("var")
-  def var_unbiased(array: Matrix, normalization: mathjsLib.mathjsLibStrings.unbiased): js.Any = js.native
-  @JSName("var")
-  def var_uncorrected(array: MathArray, normalization: mathjsLib.mathjsLibStrings.uncorrected): js.Any = js.native
-  @JSName("var")
-  def var_uncorrected(array: Matrix, normalization: mathjsLib.mathjsLibStrings.uncorrected): js.Any = js.native
+  def variance(array: MathArray): js.Any = js.native
+  def variance(array: Matrix): js.Any = js.native
+  @JSName("variance")
+  def variance_biased(array: MathArray, normalization: mathjsLib.mathjsLibStrings.biased): js.Any = js.native
+  @JSName("variance")
+  def variance_biased(array: Matrix, normalization: mathjsLib.mathjsLibStrings.biased): js.Any = js.native
+  @JSName("variance")
+  def variance_unbiased(array: MathArray, normalization: mathjsLib.mathjsLibStrings.unbiased): js.Any = js.native
+  @JSName("variance")
+  def variance_unbiased(array: Matrix, normalization: mathjsLib.mathjsLibStrings.unbiased): js.Any = js.native
+  @JSName("variance")
+  def variance_uncorrected(array: MathArray, normalization: mathjsLib.mathjsLibStrings.uncorrected): js.Any = js.native
+  @JSName("variance")
+  def variance_uncorrected(array: Matrix, normalization: mathjsLib.mathjsLibStrings.uncorrected): js.Any = js.native
   def xgcd(a: BigNumber, b: BigNumber): MathArray = js.native
   def xgcd(a: BigNumber, b: scala.Double): MathArray = js.native
   def xgcd(a: scala.Double, b: BigNumber): MathArray = js.native

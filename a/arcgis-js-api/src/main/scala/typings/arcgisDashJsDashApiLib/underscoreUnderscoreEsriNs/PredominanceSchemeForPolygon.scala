@@ -15,6 +15,12 @@ trait PredominanceSchemeForPolygon
     */
   var colors: js.Array[Color]
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+    */
+  var name: java.lang.String
+  /**
     * The color of the fill symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
@@ -38,6 +44,12 @@ trait PredominanceSchemeForPolygon
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
     */
   var sizeScheme: SizeSchemeForPolygon
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+    */
+  var tags: js.Array[java.lang.String]
 }
 
 object PredominanceSchemeForPolygon {
@@ -46,13 +58,15 @@ object PredominanceSchemeForPolygon {
     colors: js.Array[Color],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: PredominanceSchemeForPolygonOutline,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    sizeScheme: SizeSchemeForPolygon
+    sizeScheme: SizeSchemeForPolygon,
+    tags: js.Array[java.lang.String]
   ): PredominanceSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, tags = tags)
   
     __obj.asInstanceOf[PredominanceSchemeForPolygon]
   }

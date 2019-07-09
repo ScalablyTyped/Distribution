@@ -11,6 +11,7 @@ object ^ extends js.Object {
   def compileFunction(code: java.lang.String, params: js.Array[java.lang.String], options: CompileFunctionOptions): js.Function = js.native
   def createContext(): Context = js.native
   def createContext(sandbox: Context): Context = js.native
+  def createContext(sandbox: Context, options: CreateContextOptions): Context = js.native
   def isContext(sandbox: Context): scala.Boolean = js.native
   def runInContext(code: java.lang.String, contextifiedSandbox: Context): js.Any = js.native
   def runInContext(code: java.lang.String, contextifiedSandbox: Context, options: java.lang.String): js.Any = js.native

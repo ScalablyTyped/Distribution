@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 - arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ArcGISMapServiceProperties because var conflicts: fullExtent. Inlined copyright, legendEnabled */ trait MapImageLayerProperties
   extends LayerProperties
      with ScaleRangeLayerProperties
-     with RefreshableLayerProperties {
+     with RefreshableLayerProperties
+     with TemporalLayerProperties {
   /**
     * The copyright text as defined by the service.
     *
@@ -110,6 +111,7 @@ object MapImageLayerProperties {
     portalItem: PortalItemProperties = null,
     refreshInterval: scala.Int | scala.Double = null,
     sublayers: CollectionProperties[SublayerProperties] = null,
+    timeInfo: TimeInfoProperties = null,
     title: java.lang.String = null,
     url: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -132,6 +134,7 @@ object MapImageLayerProperties {
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
+    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

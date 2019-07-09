@@ -109,6 +109,12 @@ trait PortalItemProperties extends LoadableProperties {
     */
   var owner: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The ID of the folder in which the owner has stored the item. This is only returned to the item owner or the org administrator.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#ownerFolder)
+    */
+  var ownerFolder: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The portal that contains the item. Defaults to the value in [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) (e.g. https://www.arcgis.com). Suggested to use [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) instead of this property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#portal)
@@ -186,6 +192,7 @@ object PortalItemProperties {
     numRatings: scala.Int | scala.Double = null,
     numViews: scala.Int | scala.Double = null,
     owner: java.lang.String = null,
+    ownerFolder: java.lang.String = null,
     portal: PortalProperties = null,
     screenshots: js.Array[java.lang.String] = null,
     size: scala.Int | scala.Double = null,
@@ -214,6 +221,7 @@ object PortalItemProperties {
     if (numRatings != null) __obj.updateDynamic("numRatings")(numRatings.asInstanceOf[js.Any])
     if (numViews != null) __obj.updateDynamic("numViews")(numViews.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (ownerFolder != null) __obj.updateDynamic("ownerFolder")(ownerFolder)
     if (portal != null) __obj.updateDynamic("portal")(portal)
     if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

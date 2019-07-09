@@ -38,6 +38,12 @@ trait FeatureViewModelProperties extends js.Object {
     * @default null
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
+    */
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
 object FeatureViewModelProperties {
@@ -46,13 +52,15 @@ object FeatureViewModelProperties {
     defaultPopupTemplateEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     graphic: GraphicProperties = null,
     map: MapProperties = null,
-    spatialReference: SpatialReferenceProperties = null
+    spatialReference: SpatialReferenceProperties = null,
+    view: MapViewProperties | SceneViewProperties = null
   ): FeatureViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled)
     if (graphic != null) __obj.updateDynamic("graphic")(graphic)
     if (map != null) __obj.updateDynamic("map")(map)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelProperties]
   }
 }

@@ -32,16 +32,17 @@ object ^ extends js.Object {
   val buttonStyle: styleFn = js.native
   val color: styleFn = js.native
   val colorStyle: styleFn = js.native
-  val defaultBreakpoints: js.Array[java.lang.String] = js.native
   val display: styleFn = js.native
   val flex: styleFn = js.native
   val flexBasis: styleFn = js.native
   val flexDirection: styleFn = js.native
   val flexWrap: styleFn = js.native
+  val flexbox: styleFn = js.native
   val fontFamily: styleFn = js.native
   val fontSize: styleFn = js.native
   val fontStyle: styleFn = js.native
   val fontWeight: styleFn = js.native
+  val grid: styleFn = js.native
   val gridArea: styleFn = js.native
   val gridAutoColumns: styleFn = js.native
   val gridAutoFlow: styleFn = js.native
@@ -58,6 +59,7 @@ object ^ extends js.Object {
   val justifyContent: styleFn = js.native
   val justifyItems: styleFn = js.native
   val justifySelf: styleFn = js.native
+  val layout: styleFn = js.native
   val left: styleFn = js.native
   val letterSpacing: styleFn = js.native
   val lineHeight: styleFn = js.native
@@ -80,31 +82,27 @@ object ^ extends js.Object {
   val paddingTop: styleFn = js.native
   val position: styleFn = js.native
   val right: styleFn = js.native
+  val shadow: styleFn = js.native
   val size: styleFn = js.native
   val space: styleFn = js.native
   val styles: StylesProps = js.native
   val textAlign: styleFn = js.native
   val textColor: styleFn = js.native
+  val textShadow: styleFn = js.native
   val textStyle: styleFn = js.native
   val top: styleFn = js.native
+  val typography: styleFn = js.native
   val verticalAlign: styleFn = js.native
   val width: styleFn = js.native
   val zIndex: styleFn = js.native
-  def cloneFunc(fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def compose(funcs: (js.Function1[/* repeated */ js.Any, _])*): js.Function1[/* repeated */ js.Any, _] = js.native
-  def createMediaQuery(n: java.lang.String): java.lang.String = js.native
-  def createMediaQuery(n: scala.Double): java.lang.String = js.native
+  def compose(parsers: styleFn*): styleFn = js.native
+  def createParser(config: ConfigStyle): styleFn = js.native
+  def createStyleFunction(args: ConfigStyle): styleFn = js.native
   def get(obj: js.Any, paths: (java.lang.String | scala.Double)*): js.Any = js.native
   def getPx(n: js.Any, scale: js.Any): java.lang.String = js.native
-  def is(n: js.Any): scala.Boolean = js.native
-  def isObject(n: js.Any): scala.Boolean = js.native
-  def mapProps(mapper: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* func */ js.Any, js.Function1[/* repeated */ _, _]] = js.native
-  def num(n: js.Any): scala.Boolean = js.native
-  def px(n: js.Any): java.lang.String = js.native
   def style[N, S](// tslint:disable-next-line no-unnecessary-generics
-  args: LowLevelStylefunctionArguments[N, S]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-  def themeGet(keys: java.lang.String): js.Any = js.native
-  def themeGet(keys: java.lang.String, fallback: java.lang.String): js.Any = js.native
+  args: LowLevelStyleFunctionArguments[N, S]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  def system(styleDefinitions: Config): styleFn = js.native
   def variant(props: VariantArgs): js.Function1[/* repeated */ js.Any, _] = js.native
 }
 

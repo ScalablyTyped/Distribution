@@ -42,7 +42,6 @@ object RotationVariableProperties {
   def apply(
     axis: java.lang.String = null,
     field: java.lang.String = null,
-    index: java.lang.String | scala.Double = null,
     legendOptions: VisualVariableLegendOptions = null,
     rotationType: java.lang.String = null,
     valueExpression: java.lang.String = null,
@@ -51,7 +50,6 @@ object RotationVariableProperties {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (field != null) __obj.updateDynamic("field")(field)
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (rotationType != null) __obj.updateDynamic("rotationType")(rotationType)
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)

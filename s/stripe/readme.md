@@ -1,7 +1,7 @@
 
 # Scala.js typings for stripe
 
-Typings are for version 6.30
+Typings are for version 6.31
 
 ## Library description:
 Stripe API wrapper
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for stripe 6.30
+// Type definitions for stripe 6.31
 // Project: https://github.com/stripe/stripe-node/
 // Definitions by: William Johnston <https://github.com/wjohnsto>
 //                 Peter Harris <https://github.com/codeanimal>
@@ -62,6 +62,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Joshua Feltimo <https://github.com/opticalgenesis>
 //                 Josiah <https://github.com/spacetag>
 //                 Oleg Vaskevich <https://github.com/vaskevich>
+//                 Ethan Setnik <https://github.com/esetnik>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tstl
 
-Typings are for version 2.1.4
+Typings are for version 2.2.0
 
 ## Library description:
 TypeScript-STL (Standard Template Library, migrated from C++)
@@ -60,6 +60,11 @@ These comments are from the typescript definitions and might be useful:
  * Latch for critical sections.
  *
  * The Latch class blocks critical sections until the downward counter to be zero.
+ */
+/**
+ * Counting semaphore.
+ *
+ * @author Jeongho Nam <http://samchon.org>
  */
 /**
  * Interface for comparison.

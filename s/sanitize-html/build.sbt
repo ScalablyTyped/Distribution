@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "sanitize-html"
-version := "1.20.1-dt-20190603Z-590457"
+version := "1.20.1-dt-20190603Z-27c2cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-9b11f7",
   "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-37fcfe",
-  "org.scalablytyped" %%% "htmlparser2" % "v3.10.x-dt-20190326Z-19c7df",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "htmlparser2" % "v3.10.x-dt-20190326Z-481d48",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

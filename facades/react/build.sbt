@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-facade"
-version := "201907080331-1b3cb3"
+version := "201907081111-1b3cb3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

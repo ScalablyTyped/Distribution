@@ -12,7 +12,7 @@ trait HistogramResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html#HistogramResult)
     */
-  var bins: js.Array[HistogramResultBins]
+  var bins: js.Array[Bin]
   /**
     * The maximum value returned by the field.
     *
@@ -30,7 +30,7 @@ trait HistogramResult
 object HistogramResult {
   @scala.inline
   def apply(
-    bins: js.Array[HistogramResultBins],
+    bins: js.Array[Bin],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxValue: scala.Double,

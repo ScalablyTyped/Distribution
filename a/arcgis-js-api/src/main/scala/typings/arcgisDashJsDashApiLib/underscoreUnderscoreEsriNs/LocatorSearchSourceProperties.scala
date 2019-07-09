@@ -19,19 +19,13 @@ trait LocatorSearchSourceProperties extends SearchSourceProperties {
     */
   var countryCode: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Sets the sources for local `distance` and `minScale` for searching. See the object specification table below for details.
+    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).  **Possible Values:** rooftop | street | null
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchOptions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
+    *
+    * @default null
     */
-  var localSearchOptions: js.UndefOr[LocatorSearchSourceLocalSearchOptions] = js.undefined
-  /**
-    * When reverse geocoding a result, use this distance in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationToAddressDistance)
-    *
-    * @default 1500
-    */
-  var locationToAddressDistance: js.UndefOr[scala.Double] = js.undefined
+  var locationType: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The locator task used to search. This is **required** and defaults to the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
@@ -65,8 +59,7 @@ object LocatorSearchSourceProperties {
     categories: js.Array[java.lang.String] = null,
     countryCode: java.lang.String = null,
     filter: SearchSourceFilter = null,
-    localSearchOptions: LocatorSearchSourceLocalSearchOptions = null,
-    locationToAddressDistance: scala.Int | scala.Double = null,
+    locationType: java.lang.String = null,
     locator: LocatorProperties = null,
     maxResults: scala.Int | scala.Double = null,
     maxSuggestions: scala.Int | scala.Double = null,
@@ -91,8 +84,7 @@ object LocatorSearchSourceProperties {
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
     if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (localSearchOptions != null) __obj.updateDynamic("localSearchOptions")(localSearchOptions)
-    if (locationToAddressDistance != null) __obj.updateDynamic("locationToAddressDistance")(locationToAddressDistance.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
     if (locator != null) __obj.updateDynamic("locator")(locator)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])

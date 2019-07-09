@@ -219,6 +219,17 @@ trait MapView
     eventHandler: MapViewLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: MapViewLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    modifiers: js.Array[java.lang.String],
+    eventHandler: MapViewLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
   def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: MapViewLayerviewDestroyEventHandler
@@ -318,6 +329,7 @@ trait MapView
     * @param options.width The width of the screenshot (defaults to the area width). The height will be derived automatically if left unspecified, according to the aspect ratio of the of the screenshot area.
     * @param options.height The height of the screenshot (defaults to the area height). The width will be derived automatically if left unspecified, according to the aspect ratio of the screenshot area.
     * @param options.area Specifies whether to take a screenshot of a specific area of the view. The area coordinates are relative to the origin of the padded view (see [padding](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#padding)) and will be clipped to the view size. Defaults to the whole view (padding excluded).
+    * @param options.ignorePadding Indicates whether view padding should be ignored. Set this property to `true` to allow padded areas to be included in the screenshot.
     *
     */
   def takeScreenshot(): arcgisDashJsDashApiLib.IPromise[Screenshot] = js.native

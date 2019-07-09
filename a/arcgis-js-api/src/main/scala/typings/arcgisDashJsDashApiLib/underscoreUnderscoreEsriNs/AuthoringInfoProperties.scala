@@ -49,6 +49,18 @@ trait AuthoringInfoProperties extends js.Object {
     */
   var lengthUnit: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Indicates the value of the upper handle if a slider was used to generate the dot value for dot density renderer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#maxSliderValue)
+    */
+  var maxSliderValue: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Indicates the value of the lower handle if a slider was used to generate the dot value for dot density renderer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#minSliderValue)
+    */
+  var minSliderValue: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The number of classes used to classify each field of a [relationship renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html). This determines the number of categories in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#numClasses)
@@ -84,6 +96,8 @@ object AuthoringInfoProperties {
     fields: js.Array[java.lang.String] = null,
     focus: java.lang.String = null,
     lengthUnit: java.lang.String = null,
+    maxSliderValue: scala.Int | scala.Double = null,
+    minSliderValue: scala.Int | scala.Double = null,
     numClasses: scala.Int | scala.Double = null,
     standardDeviationInterval: scala.Int | scala.Double = null,
     `type`: java.lang.String = null,
@@ -97,6 +111,8 @@ object AuthoringInfoProperties {
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (focus != null) __obj.updateDynamic("focus")(focus)
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit)
+    if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
+    if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
     if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)

@@ -35,7 +35,7 @@ trait SketchViewModelProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#pointSymbol)
     */
-  var pointSymbol: js.UndefOr[SimpleMarkerSymbolProperties] = js.undefined
+  var pointSymbol: js.UndefOr[SimpleMarkerSymbolProperties | PointSymbol3DProperties] = js.undefined
   /**
     * A simple fill symbol used for representing the polygon geometry that is being drawn.  The default value is the following:
     * ```js
@@ -51,7 +51,7 @@ trait SketchViewModelProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#polygonSymbol)
     */
-  var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.undefined
+  var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties | PolygonSymbol3DProperties] = js.undefined
   /**
     * A simple line symbol used for representing the polyline geometry that is being drawn.  The default value is the following:
     * ```js
@@ -64,7 +64,7 @@ trait SketchViewModelProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#polylineSymbol)
     */
-  var polylineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
+  var polylineSymbol: js.UndefOr[SimpleLineSymbolProperties | LineSymbol3DProperties] = js.undefined
   /**
     * Indicates if a graphic can be selected to be updated. If `false`, graphics cannot selected to be updated. Set this property to `false` to add a custom [hitTest](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) logic for [updating](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) graphics.
     *
@@ -84,18 +84,18 @@ object SketchViewModelProperties {
   def apply(
     defaultUpdateOptions: SketchViewModelDefaultUpdateOptions = null,
     layer: GraphicsLayerProperties = null,
-    pointSymbol: SimpleMarkerSymbolProperties = null,
-    polygonSymbol: SimpleFillSymbolProperties = null,
-    polylineSymbol: SimpleLineSymbolProperties = null,
+    pointSymbol: SimpleMarkerSymbolProperties | PointSymbol3DProperties = null,
+    polygonSymbol: SimpleFillSymbolProperties | PolygonSymbol3DProperties = null,
+    polylineSymbol: SimpleLineSymbolProperties | LineSymbol3DProperties = null,
     updateOnGraphicClick: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null
   ): SketchViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions)
     if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol)
-    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol)
-    if (polylineSymbol != null) __obj.updateDynamic("polylineSymbol")(polylineSymbol)
+    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol.asInstanceOf[js.Any])
+    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol.asInstanceOf[js.Any])
+    if (polylineSymbol != null) __obj.updateDynamic("polylineSymbol")(polylineSymbol.asInstanceOf[js.Any])
     if (!js.isUndefined(updateOnGraphicClick)) __obj.updateDynamic("updateOnGraphicClick")(updateOnGraphicClick)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelProperties]

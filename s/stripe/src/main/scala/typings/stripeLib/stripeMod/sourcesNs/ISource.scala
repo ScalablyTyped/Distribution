@@ -11,6 +11,7 @@ trait ISource
      with stripeLib.stripeMod.IStripeSource {
   var ach_credit_transfer: js.UndefOr[stripeLib.Anon_Accountnumber] = js.undefined
   var amount: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  var card: js.UndefOr[stripeLib.stripeMod.ICardHashInfo] = js.undefined
   var client_secret: java.lang.String
   var code_verification: js.UndefOr[stripeLib.Anon_Attemptsremaining] = js.undefined
   var created: scala.Double
@@ -46,6 +47,7 @@ object ISource {
     usage: stripeLib.stripeLibStrings.reusable | stripeLib.stripeLibStrings.single_use,
     ach_credit_transfer: stripeLib.Anon_Accountnumber = null,
     amount: scala.Int | scala.Double = null,
+    card: stripeLib.stripeMod.ICardHashInfo = null,
     code_verification: stripeLib.Anon_Attemptsremaining = null,
     currency: java.lang.String = null,
     customer: java.lang.String = null,
@@ -58,6 +60,7 @@ object ISource {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ach_credit_transfer != null) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (card != null) __obj.updateDynamic("card")(card)
     if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (customer != null) __obj.updateDynamic("customer")(customer)

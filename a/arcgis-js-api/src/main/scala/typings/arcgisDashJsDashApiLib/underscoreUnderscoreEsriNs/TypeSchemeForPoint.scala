@@ -15,6 +15,12 @@ trait TypeSchemeForPoint
     */
   var colors: js.Array[Color]
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#TypeSchemeForPoint)
+    */
+  var name: java.lang.String
+  /**
     * The color of the point symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#TypeSchemeForPoint)
@@ -38,6 +44,12 @@ trait TypeSchemeForPoint
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#TypeSchemeForPoint)
     */
   var size: scala.Double
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#TypeSchemeForPoint)
+    */
+  var tags: js.Array[java.lang.String]
 }
 
 object TypeSchemeForPoint {
@@ -46,13 +58,15 @@ object TypeSchemeForPoint {
     colors: js.Array[Color],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     outline: TypeSchemeForPointOutline,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    size: scala.Double
+    size: scala.Double,
+    tags: js.Array[java.lang.String]
   ): TypeSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, tags = tags)
   
     __obj.asInstanceOf[TypeSchemeForPoint]
   }

@@ -18,6 +18,10 @@ trait SpaceProps[TLength] extends js.Object {
   var marginRight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginRightProperty[TLength]]] = js.undefined
   /** Margin on top */
   var marginTop: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]]] = js.undefined
+  /** Margin on left and right */
+  var marginX: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
+  /** Margin on top and bottom */
+  var marginY: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
   /** Margin on bottom */
   var mb: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginBottomProperty[TLength]]] = js.undefined
   /** Margin on left */
@@ -27,9 +31,9 @@ trait SpaceProps[TLength] extends js.Object {
   /** Margin on top */
   var mt: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]]] = js.undefined
   /** Margin on left and right */
-  var mx: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
+  var mx: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
   /** Margin on top and bottom */
-  var my: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
+  var my: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
   /** Padding on top, left, bottom and right */
   var p: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding on top, left, bottom and right */
@@ -42,6 +46,10 @@ trait SpaceProps[TLength] extends js.Object {
   var paddingRight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingRightProperty[TLength]]] = js.undefined
   /** Padding on top */
   var paddingTop: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingTopProperty[TLength]]] = js.undefined
+  /** Padding on left and right */
+  var paddingX: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
+  /** Padding on top and bottom */
+  var paddingY: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding on bottom */
   var pb: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingBottomProperty[TLength]]] = js.undefined
   /** Padding on left */
@@ -65,18 +73,22 @@ object SpaceProps {
     marginLeft: ResponsiveValue[csstypeLib.csstypeMod.MarginLeftProperty[TLength]] = null,
     marginRight: ResponsiveValue[csstypeLib.csstypeMod.MarginRightProperty[TLength]] = null,
     marginTop: ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]] = null,
+    marginX: ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]] = null,
+    marginY: ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]] = null,
     mb: ResponsiveValue[csstypeLib.csstypeMod.MarginBottomProperty[TLength]] = null,
     ml: ResponsiveValue[csstypeLib.csstypeMod.MarginLeftProperty[TLength]] = null,
     mr: ResponsiveValue[csstypeLib.csstypeMod.MarginRightProperty[TLength]] = null,
     mt: ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]] = null,
-    mx: ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]] = null,
-    my: ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]] = null,
+    mx: ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]] = null,
+    my: ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]] = null,
     p: ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]] = null,
     padding: ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]] = null,
     paddingBottom: ResponsiveValue[csstypeLib.csstypeMod.PaddingBottomProperty[TLength]] = null,
     paddingLeft: ResponsiveValue[csstypeLib.csstypeMod.PaddingLeftProperty[TLength]] = null,
     paddingRight: ResponsiveValue[csstypeLib.csstypeMod.PaddingRightProperty[TLength]] = null,
     paddingTop: ResponsiveValue[csstypeLib.csstypeMod.PaddingTopProperty[TLength]] = null,
+    paddingX: ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]] = null,
+    paddingY: ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]] = null,
     pb: ResponsiveValue[csstypeLib.csstypeMod.PaddingBottomProperty[TLength]] = null,
     pl: ResponsiveValue[csstypeLib.csstypeMod.PaddingLeftProperty[TLength]] = null,
     pr: ResponsiveValue[csstypeLib.csstypeMod.PaddingRightProperty[TLength]] = null,
@@ -91,6 +103,8 @@ object SpaceProps {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
@@ -103,6 +117,8 @@ object SpaceProps {
     if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
     if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
     if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
     if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])

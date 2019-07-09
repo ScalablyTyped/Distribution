@@ -104,6 +104,14 @@ trait sizeCreateClassBreaksRendererParams
     */
   var numClasses: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Only for polygon layers. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createClassBreaksRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * In authoring apps, the user may select a pre-defined size scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createClassBreaksRenderer)
@@ -183,6 +191,7 @@ object sizeCreateClassBreaksRendererParams {
     normalizationTotal: scala.Int | scala.Double = null,
     normalizationType: java.lang.String = null,
     numClasses: scala.Int | scala.Double = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     sizeScheme: SizeScheme = null,
     sqlExpression: java.lang.String = null,
     sqlWhere: java.lang.String = null,
@@ -203,6 +212,7 @@ object sizeCreateClassBreaksRendererParams {
     if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
     if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType)
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)

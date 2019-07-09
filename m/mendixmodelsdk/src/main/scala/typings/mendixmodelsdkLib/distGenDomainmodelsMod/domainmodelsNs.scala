@@ -58,7 +58,7 @@ object domainmodelsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/associations relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IAssociation because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined child */ @js.native
+  - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IAssociation because var conflicts: id, isLoaded, model, name, owner, parent, structureTypeName, `type`, unit. Inlined child */ @js.native
   class Association protected () extends AssociationBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var child: Entity | IEntity = js.native
@@ -199,7 +199,7 @@ object domainmodelsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ICrossAssociation because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined child, childQualifiedName */ @js.native
+  - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ICrossAssociation because var conflicts: id, isLoaded, model, name, owner, parent, structureTypeName, `type`, unit. Inlined child, childQualifiedName */ @js.native
   class CrossAssociation protected () extends AssociationBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var child: IEntity = js.native

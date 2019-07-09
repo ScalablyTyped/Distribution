@@ -11,7 +11,7 @@ trait WebStyleSymbol
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.Symbol
      with symbolsSymbol {
   /**
-    * The name of the symbol within the web style. Each symbol in a web style is identified by a unique name. Only [Esri-provided web style symbol names](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols/index.html) can be referenced here.
+    * The name of the symbol within the web style. Each symbol in a web style is identified by a unique name. Only [Esri Web Style Symbols (2D)](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols-2d/index.html) and [Esri Web Style Symbols (3D)](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols-3d/index.html) can be referenced here.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#name)
     */
@@ -23,7 +23,7 @@ trait WebStyleSymbol
     */
   var portal: Portal = js.native
   /**
-    * A registered web style name. Only [Esri-provided web style names](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols/index.html) can be referenced here. Requires [portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#portal) property to be set. Can not be used in conjunction with [styleUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleUrl).  See class description for example.
+    * A registered web style name. Only [Esri Web Style Symbols (2D)](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols-2d/index.html) and [Esri Web Style Symbols (3D)](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols-3d/index.html) can be referenced here. Note that the 2D web style symbols are only supported in 2D and 3D web style symbols are only supported in 3D with an exception of [`EsriIconsStyle`](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols-3d/index.html#icons) which can be used in both 2D and 3D.  Requires [portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#portal) property to be set. Can not be used in conjunction with [styleUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleUrl).  See class description for example.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleName)
     */
@@ -46,15 +46,18 @@ trait WebStyleSymbol
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#fetchSymbol)
     *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def fetchSymbol(): arcgisDashJsDashApiLib.IPromise[PointSymbol3D] = js.native
+  def fetchSymbol(options: WebStyleSymbolFetchSymbolOptions): arcgisDashJsDashApiLib.IPromise[PointSymbol3D] = js.native
 }
 
 @JSGlobal("__esri.WebStyleSymbol")
 @js.native
 /**
-  * WebStyleSymbol is a class used to conveniently create realistic and thematic 3D symbols. It is a wrapper for creating [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) objects that point to a web style resource available in the API. This symbol type is not supported in 2D MapViews.
+  * WebStyleSymbol is a class used to conveniently create vector 2D symbols and realistic and thematic 3D symbols. It is a wrapper for creating [CIMSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html) and [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) objects that point to a web style resource available in the API.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html)
   */

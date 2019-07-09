@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object symbolsNs {
+  type CIMSymbol = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.CIMSymbol
   type ExtrudeSymbol3DLayer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ExtrudeSymbol3DLayer
   type FillSymbol3DLayer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.FillSymbol3DLayer
   type Font = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Font
@@ -25,5 +26,6 @@ package object symbolsNs {
   type SimpleMarkerSymbol = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.SimpleMarkerSymbol
   type TextSymbol = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.TextSymbol
   type TextSymbol3DLayer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.TextSymbol3DLayer
+  type WaterSymbol3DLayer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.WaterSymbol3DLayer
   type WebStyleSymbol = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.WebStyleSymbol
 }

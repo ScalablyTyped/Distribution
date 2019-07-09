@@ -10,6 +10,7 @@ trait Anon_AnswerCorrect extends js.Object {
   var autoConfirmUser: js.UndefOr[scala.Boolean] = js.undefined
   var challengeMetadata: js.UndefOr[java.lang.String] = js.undefined
   var challengeName: js.UndefOr[java.lang.String] = js.undefined
+  var claimsOverrideDetails: js.UndefOr[Anon_ClaimsToAddOrOverride] = js.undefined
   var desiredDeliveryMediums: js.UndefOr[
     js.Array[
       awsDashLambdaLib.awsDashLambdaLibStrings.EMAIL | awsDashLambdaLib.awsDashLambdaLibStrings.SMS
@@ -37,6 +38,7 @@ object Anon_AnswerCorrect {
     autoConfirmUser: js.UndefOr[scala.Boolean] = js.undefined,
     challengeMetadata: java.lang.String = null,
     challengeName: java.lang.String = null,
+    claimsOverrideDetails: Anon_ClaimsToAddOrOverride = null,
     desiredDeliveryMediums: js.Array[
       awsDashLambdaLib.awsDashLambdaLibStrings.EMAIL | awsDashLambdaLib.awsDashLambdaLibStrings.SMS
     ] = null,
@@ -57,6 +59,7 @@ object Anon_AnswerCorrect {
     if (!js.isUndefined(autoConfirmUser)) __obj.updateDynamic("autoConfirmUser")(autoConfirmUser)
     if (challengeMetadata != null) __obj.updateDynamic("challengeMetadata")(challengeMetadata)
     if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName)
+    if (claimsOverrideDetails != null) __obj.updateDynamic("claimsOverrideDetails")(claimsOverrideDetails)
     if (desiredDeliveryMediums != null) __obj.updateDynamic("desiredDeliveryMediums")(desiredDeliveryMediums)
     if (emailMessage != null) __obj.updateDynamic("emailMessage")(emailMessage)
     if (emailSubject != null) __obj.updateDynamic("emailSubject")(emailSubject)

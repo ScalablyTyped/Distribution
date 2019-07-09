@@ -46,9 +46,9 @@ trait IdentifyParameters extends Accessor {
     *
     * Possible values | Description
     * --------------- | -----------
-    * top | Only the top-most visible layer is identified.
-    * visible | All visible layers are identified.
-    * all | All layers are identified, even if they are not visible. If your service has many layers, a request using this option will not perform well. A visible layer means you can see it in the map at the current extent.  If a layer is turned off or not in range based on its scale dependency settings, it cannot be identified.
+    * top | Only the top-most visible layer on the service is identified.
+    * visible | All visible layers on the service are identified.
+    * all | All layers on the service are identified, even if they are not visible. If your service has many layers, a request using this option will not perform well. A visible layer means you can see it in the map at the current extent.  If a layer is turned off or not in range based on its scale dependency settings, it cannot be identified.
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#layerOption)
@@ -101,7 +101,7 @@ trait IdentifyParameters extends Accessor {
     */
   var returnUnformattedValues: scala.Boolean = js.native
   /**
-    * When `true`, indicates that M values will be returned.
+    * When `true`, indicates that Z values will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnZ)
     *

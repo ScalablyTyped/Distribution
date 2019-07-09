@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArcGISImageService extends js.Object {
   /**
-    * The compression quality value. This controls how much loss the image will be subjected to. Only valid when using `jpg` [image format](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format).
+    * The compression quality value. Controls how much loss the image will be subjected to by the compression algorithm. Valid value ranges of compression quality are from 0 to 100. Only valid when using `jpg` or `jpgpng` [image format](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionQuality)
     */
   var compressionQuality: scala.Double = js.native
   /**
-    * The output image compression tolerance value.
+    * Controls the tolerance of the lerc compression algorithm. The tolerance defines the maximum possible error of pixel values in the compressed image. It's a double value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionTolerance)
     *
@@ -22,7 +22,7 @@ trait ArcGISImageService extends js.Object {
     */
   var compressionTolerance: scala.Double = js.native
   /**
-    * The copyright text as defined by the image service.
+    * The copyright text as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#copyright)
     */
@@ -46,27 +46,19 @@ trait ArcGISImageService extends js.Object {
     */
   var fields: js.Array[Field] = js.native
   /**
-    * The output image type. The default value is `lerc` if a [pixelFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter) is set on the layer.  **Possible Values:** png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc
+    * The format of the exported image.  **Possible Values:** png | png8 | png24 | png32 | jpg | bmp | jpgpng | lerc | tiff
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format)
-    *
-    * @default jpgpng
     */
   var format: java.lang.String = js.native
   /**
-    * The full extent of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fullExtent)
-    */
-  var fullExtent: Extent = js.native
-  /**
-    * Indicates if the Image Service has [multidimensionalInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo).
+    * Indicates if the layer has [multidimensionalInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions)
     */
   var hasMultidimensions: scala.Boolean = js.native
   /**
-    * Indicates if the Image Service has a [raster attribute table](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable). If `true`, the raster attribute table can be accessed with the [rasterAttributeTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable) property after the layer has [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#loaded).
+    * Indicates if the Image Service has a [raster attribute table](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasRasterAttributeTable)
     */
@@ -88,29 +80,74 @@ trait ArcGISImageService extends js.Object {
     */
   var imageMaxWidth: scala.Double = js.native
   /**
+    * Defines how to interpolate pixel values.  **Possible Values:**  nearest | bilinear | cubic | majority
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#interpolation)
+    */
+  var interpolation: java.lang.String = js.native
+  /**
     * Defines how overlapping images should be mosaicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule)
     */
   var mosaicRule: MosaicRule = js.native
   /**
-    * The multidimensional information associated with the service. This will have a value if `serviceInfo` has `hasMultidimensionalInfo = true`.  If defined, multidimensional information contains various "dimensions" of data for a particular value, such as time, depth, altitude, etc. Defining slices of particular dimensions in the layer is handled with the [multidimensionalDefinition](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition) property of the [mosaicRule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule).
+    * The multidimensional information associated with the layer if the layer's [hasMultidimensions](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions) property is `true`. If defined, multidimensional information contains various dimensions of data for a particular value, such as time, depth, altitude, etc. Defining slices of particular dimensions in the layer is handled with the [multidimensionalDefinition](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition) property of the [mosaicRule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo)
+    *
+    * @default null
     */
   var multidimensionalInfo: js.Any = js.native
   /**
-    * The pixel type.  **Possible Values:** s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
+    * The pixel value representing no available information. Can be a number (same value for all bands) or array (specific value for each band).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData)
+    */
+  var noData: scala.Double | js.Array[scala.Double] = js.native
+  /**
+    * Interpretation of the [noData](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData) setting.  **Possible values:**
+    *
+    * Value | Description |
+    * ----- | ----------- |
+    * any | Pixel is transparent if any band matches `noData` value.
+    * all | Pixel is transparent only if all bands match `noData` value.
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noDataInterpretation)
+    */
+  var noDataInterpretation: java.lang.String = js.native
+  /**
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields) containing a unique value or identifier for each raster in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#objectIdField)
+    */
+  var objectIdField: java.lang.String = js.native
+  /**
+    * A function that processes [pixelData](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData). The `pixelData` object contains a [pixelBlock](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html) property that gives you access to all of the pixels in the raster on the client.  Inside the `pixelFilter` you may loop through all the [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) found in the `pixelBlock` property of the `pixelData` object and process them. This function may be used to hide some pixels from the view, alter their values, and change their color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter)
+    */
+  var pixelFilter: js.Function = js.native
+  /**
+    * Raster source pixel type.  **Possible Values:**
+    *
+    * Value | Range of values that each cell can contain |
+    * ----- | ------------------------------------------- |
+    * unknown | Pixel type is unknown |
+    * s8 | -128 to 127 |
+    * s16 | -32768 to 32767 |
+    * s32 | -2147483648 to 2147483647 |
+    * u8 | 0 to 255 |
+    * u16 | 0 to 65535
+    * u32 | 0 to 4294967295
+    * f32 | -3.402823466e+38 to 3.402823466e+38
+    * f64 | 0 to 18446744073709551616
+    *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelType)
     */
-  var pixelType: java.lang.String = js.native
-  /**
-    * The popup template for the layer. When set on the layer, the popupTemplate allows users to access attributes and display their values using text and/or charts in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a pixel is clicked. See [this sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#popupTemplate)
-    */
-  var popupTemplate: PopupTemplate = js.native
+  var pixelType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.s8 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.s16 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.s32 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.u8 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.u16 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.u32 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.f32 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.f64 = js.native
   /**
     * The raster attribute table associated with the service. To access the raster attribute table, the layer must be [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#loaded).
     *
@@ -121,28 +158,32 @@ trait ArcGISImageService extends js.Object {
     * Prefix used to define the fields from the raster attribute table. It's primarily used for [popups](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTableFieldPrefix)
-    *
-    * @default Raster.
     */
   var rasterAttributeTableFieldPrefix: java.lang.String = js.native
   /**
-    * A complete list of fields that consists of fields from the layer, pixel value fields and the attribute table fields.
+    * A complete list of fields that consists of fields from the layer, pixel value fields and the attribute table fields. This list is used for layer's [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupTemplate).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterFields)
     */
-  var rasterFields: js.Array[Field] = js.native
+  val rasterFields: js.Array[Field] = js.native
   /**
-    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be stretched across the color ramp, classified or have different symbols based on values.
+    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be [stretched](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-StretchRenderer.html) across the color ramp, [classified](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) or have [different symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html) based on values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
     */
   var renderer: Renderer = js.native
   /**
-    * Specifies the rule for how the requested image should be rendered.
+    * Specifies the rule for how the requested image should be rendered. When renderingRule applied, the server returns an updated service information that reflects a custom processing as defined by the rendering rule.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderingRule)
     */
   var renderingRule: RasterFunction = js.native
+  /**
+    * Source raster information of the image service. The layer must be [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#loaded) before serviceRasterInfo can be accessed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#serviceRasterInfo)
+    */
+  val serviceRasterInfo: RasterInfo = js.native
   /**
     * The spatial reference of the image service.
     *
@@ -162,18 +203,6 @@ trait ArcGISImageService extends js.Object {
     */
   val version: scala.Double = js.native
   /**
-    * Creates a default popup template for the layer, populated with all the fields of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#createPopupTemplate)
-    *
-    * @param options Options for creating the popup template.
-    * @param options.maximumFields The maximum number of fields to include in the popup template.
-    * @param options.ignoreFieldTypes Field types to ignore when creating the popup. By default the `geometry`, `blob`, `raster`, `guid` and `xml` field types are ignored.
-    *
-    */
-  def createPopupTemplate(): PopupTemplate = js.native
-  def createPopupTemplate(options: ArcGISImageServiceCreatePopupTemplateOptions): PopupTemplate = js.native
-  /**
     * Returns an image using the [export REST operation](https://developers.arcgis.com/rest/services-reference/export-image.htm) that displays data from an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fetchImage)
@@ -181,9 +210,26 @@ trait ArcGISImageService extends js.Object {
     * @param extent The extent of the image to export.
     * @param width The width of the image in pixels.
     * @param height The height of the image in pixels.
+    * @param options The parameter options is an object with the following properties.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def fetchImage(extent: Extent, width: scala.Double, height: scala.Double): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def fetchImage(
+    extent: Extent,
+    width: scala.Double,
+    height: scala.Double,
+    options: ArcGISImageServiceFetchImageOptions
+  ): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  /**
+    * Generates raster info for the specified rendering rule.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#generateRasterInfo)
+    *
+    * @param renderingRule Rendering rule for the requested raster info.
+    *
+    */
+  def generateRasterInfo(renderingRule: RasterFunction): arcgisDashJsDashApiLib.IPromise[RasterInfo] = js.native
 }
 
 @JSGlobal("__esri.ArcGISImageService")

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-  	 * Object for aXe Results
+  	 * Object for axe Results
   	 */
   var AxeResults: axeDashCoreLib.axeDashCoreMod.AxeResults = js.native
   var plugins: js.Any = js.native
@@ -22,7 +22,7 @@ object ^ extends js.Object {
   	 */
   def cleanup(): scala.Unit = js.native
   /**
-  	 * Method for configuring the data format used by aXe. Helpful for adding new
+  	 * Method for configuring the data format used by axe. Helpful for adding new
   	 * rules, which must be registered with the library to execute.
   	 * @param  {Spec}       Spec Object with valid `branding`, `reporter`, `checks` and `rules` data
   	 */
@@ -49,7 +49,7 @@ object ^ extends js.Object {
   	 * @param   {ElementContext} context  Optional The `Context` specification object @see Context
   	 * @param   {RunOptions}     options  Optional Options passed into rules or checks, temporarily modifying them.
   	 * @param   {RunCallback}    callback Optional The function to invoke when analysis is complete.
-  	 * @returns {Promise<AxeResults>|void} If the callback was not defined, aXe will return a Promise.
+  	 * @returns {Promise<AxeResults>|void} If the callback was not defined, axe will return a Promise.
   	 */
   def run(): js.Promise[AxeResults] = js.native
   def run(callback: js.Function2[/* error */ stdLib.Error, /* results */ AxeResults, scala.Unit]): scala.Unit = js.native

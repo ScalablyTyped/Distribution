@@ -36,7 +36,7 @@ trait typeRendererResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#RendererResult)
     */
-  var uniqueValueInfos: js.Array[UniqueValueInfo]
+  var uniqueValueInfos: js.Array[typeUniqueValueInfo]
 }
 
 object typeRendererResult {
@@ -49,7 +49,7 @@ object typeRendererResult {
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: UniqueValueRenderer,
     typeScheme: TypeScheme,
-    uniqueValueInfos: js.Array[UniqueValueInfo]
+    uniqueValueInfos: js.Array[typeUniqueValueInfo]
   ): typeRendererResult = {
     val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
   

@@ -27,6 +27,12 @@ trait ColorSchemeForPolyline
     */
   var id: java.lang.String
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolyline)
+    */
+  var name: java.lang.String
+  /**
     * The color of the symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolyline)
@@ -38,6 +44,12 @@ trait ColorSchemeForPolyline
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolyline)
     */
   var opacity: scala.Double
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#ColorSchemeForPolyline)
+    */
+  var tags: js.Array[java.lang.String]
   /**
     * Indicates which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
     *
@@ -68,13 +80,15 @@ object ColorSchemeForPolyline {
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     id: java.lang.String,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    tags: js.Array[java.lang.String],
     theme: java.lang.String,
     width: scala.Double
   ): ColorSchemeForPolyline = {
-    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), theme = theme, width = width)
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags, theme = theme, width = width)
   
     __obj.asInstanceOf[ColorSchemeForPolyline]
   }

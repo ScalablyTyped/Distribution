@@ -14,19 +14,17 @@ trait IExternalClientArray[System /* <: samchonLib.templatesExternalExternalSyst
     *
     * @return Iterator to the first element.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[
     System, 
     tstlLib.containerDequeMod.Deque[System], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[System, tstlLib.containerDequeMod.Deque[System]], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[System, tstlLib.containerDequeMod.Deque[System]], 
+    tstlLib.containerDequeMod.DequeNs.Iterator[System], 
+    tstlLib.containerDequeMod.DequeNs.ReverseIterator[System], 
     System
   ] = js.native
   /**
     * Test whether container is empty.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def empty(): scala.Boolean = js.native
   /**
@@ -34,13 +32,12 @@ trait IExternalClientArray[System /* <: samchonLib.templatesExternalExternalSyst
     *
     * @return Iterator to the end.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def end(): tstlLib.baseIteratorIteratorMod.Iterator[
     System, 
     tstlLib.containerDequeMod.Deque[System], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[System, tstlLib.containerDequeMod.Deque[System]], 
-    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[System, tstlLib.containerDequeMod.Deque[System]], 
+    tstlLib.containerDequeMod.DequeNs.Iterator[System], 
+    tstlLib.containerDequeMod.DequeNs.ReverseIterator[System], 
     System
   ] = js.native
   /**
@@ -57,18 +54,17 @@ trait IExternalClientArray[System /* <: samchonLib.templatesExternalExternalSyst
     * @return Reverse iterator to the first.
     */
   /* InferMemberOverrides */
-  override def rbegin(): tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[System, tstlLib.containerDequeMod.Deque[System]] = js.native
+  override def rbegin(): tstlLib.containerDequeMod.DequeNs.ReverseIterator[System] = js.native
   /**
     * Reverse iterator to the reverse end.
     *
     * @return Reverse iterator to the end.
     */
   /* InferMemberOverrides */
-  override def rend(): tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[System, tstlLib.containerDequeMod.Deque[System]] = js.native
+  override def rend(): tstlLib.containerDequeMod.DequeNs.ReverseIterator[System] = js.native
   /**
     * Number of elements in the container.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def size(): scala.Double = js.native
 }

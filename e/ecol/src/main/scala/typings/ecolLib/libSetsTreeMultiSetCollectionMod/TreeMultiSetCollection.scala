@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- ecolLib.libBasicICollectionMod.ICollection because Inheritance from two classes. Inlined refresh, refresh, refresh */ @JSImport("ecol/lib/sets/TreeMultiSetCollection", "TreeMultiSetCollection")
+- ecolLib.libBasicICollectionMod.ICollection because var conflicts: iterator, iterator_IContainer. Inlined refresh, refresh, refresh */ @JSImport("ecol/lib/sets/TreeMultiSetCollection", "TreeMultiSetCollection")
 @js.native
 class TreeMultiSetCollection[T] ()
   extends tstlLib.containerTreeMultiSetMod.TreeMultiSet[T] {

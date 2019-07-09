@@ -32,6 +32,15 @@ trait IAccount
     */
   var display_name: java.lang.String
   /**
+    * External accounts (bank accounts and debit cards) currently
+    * attached to this account
+    */
+  var external_accounts: js.UndefOr[
+    stripeLib.stripeMod.IList[
+      stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
+    ]
+  ] = js.undefined
+  /**
     * Information about the person represented by the account.
     * This field is null unless business_type is set to individual.
     */
@@ -65,6 +74,9 @@ object IAccount {
     company: ICompany = null,
     default_currency: java.lang.String = null,
     email: java.lang.String = null,
+    external_accounts: stripeLib.stripeMod.IList[
+      stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
+    ] = null,
     individual: IIndividual = null,
     metadata: stripeLib.stripeMod.IMetadata = null,
     product_description: java.lang.String = null,
@@ -78,6 +90,7 @@ object IAccount {
     if (company != null) __obj.updateDynamic("company")(company)
     if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency)
     if (email != null) __obj.updateDynamic("email")(email)
+    if (external_accounts != null) __obj.updateDynamic("external_accounts")(external_accounts)
     if (individual != null) __obj.updateDynamic("individual")(individual)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)

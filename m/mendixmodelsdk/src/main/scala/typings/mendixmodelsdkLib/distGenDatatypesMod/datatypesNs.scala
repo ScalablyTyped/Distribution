@@ -390,7 +390,7 @@ object datatypesNs extends js.Object {
     * In version 7.9.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IListType because var conflicts: entity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ListType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -399,7 +399,7 @@ object datatypesNs extends js.Object {
     * In version 7.9.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IObjectType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IObjectType because var conflicts: entity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ObjectType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }

@@ -37,17 +37,69 @@ object HashMapCollectionNs extends js.Object {
       ]
     ]
   ] = js.native
+  val Iterator: org.scalablytyped.runtime.Instantiable0[
+    tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[
+      js.Object, 
+      js.Object, 
+      scala.Boolean, 
+      tstlLib.baseContainerMapContainerMod.MapContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        tstlLib.baseContainerMapElementListMod.MapElementListNs.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: org.scalablytyped.runtime.Instantiable0[
+    tstlLib.baseContainerMapElementListMod.MapElementListNs.ReverseIterator[
+      js.Object, 
+      js.Object, 
+      scala.Boolean, 
+      tstlLib.baseContainerMapContainerMod.MapContainer[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any, 
+        tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ], 
+        tstlLib.baseContainerMapElementListMod.MapElementListNs.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
   type Event[Key, T] = ecolLib.libBasicCollectionEventMod.CollectionEvent[
     tstlLib.utilityEntryMod.Entry[Key, T], 
     tstlLib.containerHashMapMod.HashMap[Key, T], 
     tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T], 
     tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[Key, T]
   ]
+  type Iterator[Key, T] = tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[Key, T, ecolLib.ecolLibNumbers.`true`, tstlLib.containerHashMapMod.HashMap[Key, T]]
   type Listener[Key, T] = ecolLib.libBasicCollectionEventMod.CollectionEventNs.Listener[
     tstlLib.utilityEntryMod.Entry[Key, T], 
     tstlLib.containerHashMapMod.HashMap[Key, T], 
     tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T], 
     tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[Key, T]
   ]
+  type ReverseIterator[Key, T] = tstlLib.baseContainerMapElementListMod.MapElementListNs.ReverseIterator[Key, T, ecolLib.ecolLibNumbers.`true`, tstlLib.containerHashMapMod.HashMap[Key, T]]
 }
 

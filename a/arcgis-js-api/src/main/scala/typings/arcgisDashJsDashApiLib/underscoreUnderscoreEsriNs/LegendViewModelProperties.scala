@@ -13,6 +13,14 @@ trait LegendViewModelProperties extends js.Object {
     */
   var activeLayerInfos: js.UndefOr[CollectionProperties[ActiveLayerInfoProperties]] = js.undefined
   /**
+    * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#basemapLegendVisible)
+    *
+    * @default filterBasemaps
+    */
+  var basemapLegendVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Specifies a subset of the layers in the map to display in the legend. If this property is not set, all operational layers in the map will display in the legend. This property can be used to control layer display order in the legend. Objects in this array are defined with the properties listed below.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
@@ -30,11 +38,13 @@ object LegendViewModelProperties {
   @scala.inline
   def apply(
     activeLayerInfos: CollectionProperties[ActiveLayerInfoProperties] = null,
+    basemapLegendVisible: js.UndefOr[scala.Boolean] = js.undefined,
     layerInfos: js.Array[LegendViewModelLayerInfos] = null,
     view: MapViewProperties | SceneViewProperties = null
   ): LegendViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (activeLayerInfos != null) __obj.updateDynamic("activeLayerInfos")(activeLayerInfos.asInstanceOf[js.Any])
+    if (!js.isUndefined(basemapLegendVisible)) __obj.updateDynamic("basemapLegendVisible")(basemapLegendVisible)
     if (layerInfos != null) __obj.updateDynamic("layerInfos")(layerInfos)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendViewModelProperties]

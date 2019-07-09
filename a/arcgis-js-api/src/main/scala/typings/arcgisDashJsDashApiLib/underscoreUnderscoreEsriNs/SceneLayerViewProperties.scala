@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SceneLayerViewProperties extends LayerViewProperties {
   /**
-    * Applies a client-side [FeatureFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html) to the displayed data.   For 3D object scene layers, only spatial filters are supported, that is, a filter where the geometry is set and spatialRelationship is one of `contains`, `intersects`, `disjoint`.  For point scene layers, the full FeatureFilter functionality is supported.  Only the features that satisfy the filter are displayed. Filters with unsupported fields are rejected.
+    * Applies a client-side [FeatureFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html) to the displayed data. Only the features that satisfy the filter are displayed.  For 3D object scene layers, only spatial filters with [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#spatialRelationship) set to `contains`, `intersects` or `disjoint` are supported.  The fields to be used for the filter must be present in the layer view's [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#availableFields) list.  The [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent) property is not supported on a SceneLayerView filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#filter)
     */

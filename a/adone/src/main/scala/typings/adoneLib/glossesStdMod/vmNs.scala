@@ -22,6 +22,7 @@ object vmNs extends js.Object {
   ): js.Function = js.native
   def createContext(): nodeLib.vmMod.Context = js.native
   def createContext(sandbox: nodeLib.vmMod.Context): nodeLib.vmMod.Context = js.native
+  def createContext(sandbox: nodeLib.vmMod.Context, options: nodeLib.vmMod.CreateContextOptions): nodeLib.vmMod.Context = js.native
   def isContext(sandbox: nodeLib.vmMod.Context): scala.Boolean = js.native
   def runInContext(code: java.lang.String, contextifiedSandbox: nodeLib.vmMod.Context): js.Any = js.native
   def runInContext(code: java.lang.String, contextifiedSandbox: nodeLib.vmMod.Context, options: java.lang.String): js.Any = js.native

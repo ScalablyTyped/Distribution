@@ -44,6 +44,12 @@ trait Stripe extends js.Object {
     options: HandleCardPaymentOptions
   ): js.Promise[PaymentIntentResponse] = js.native
   def handleCardPayment(clientSecret: java.lang.String, options: HandleCardPaymentWithoutElementsOptions): js.Promise[PaymentIntentResponse] = js.native
+  def handleCardSetup(clientSecret: java.lang.String, data: HandleCardSetupOptionsWithoutElementsOptions): js.Promise[SetupIntentResponse] = js.native
+  def handleCardSetup(
+    clientSecret: java.lang.String,
+    element: stripeDashV3Lib.stripeNs.elementsNs.Element,
+    data: HandleCardSetupOptions
+  ): js.Promise[SetupIntentResponse] = js.native
   def paymentRequest(options: stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequestOptions): stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequest = js.native
   def redirectToCheckout(options: StripeCheckoutOptions): js.Promise[StripeRedirectResponse] = js.native
   def retrievePaymentIntent(clientSecret: java.lang.String): js.Promise[PaymentIntentResponse] = js.native

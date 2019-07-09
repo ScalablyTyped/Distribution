@@ -8,17 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/algorithm/heap", JSImport.Namespace)
 @js.native
 object algorithmHeapMod extends js.Object {
-  def is_heap[RandomAccessIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
-      RandomAccessIterator
-    ]
+  def is_heap[RandomAccessIterator /* <: tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
+    RandomAccessIterator
   ] */](first: RandomAccessIterator, last: RandomAccessIterator): scala.Boolean = js.native
-  def is_heap[RandomAccessIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
-      RandomAccessIterator
-    ]
+  def is_heap[RandomAccessIterator /* <: tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
+    RandomAccessIterator
   ] */](
     first: RandomAccessIterator,
     last: RandomAccessIterator,
@@ -28,17 +24,13 @@ object algorithmHeapMod extends js.Object {
       scala.Boolean
     ]
   ): scala.Boolean = js.native
-  def is_heap_until[RandomAccessIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
-      RandomAccessIterator
-    ]
+  def is_heap_until[RandomAccessIterator /* <: tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
+    RandomAccessIterator
   ] */](first: RandomAccessIterator, last: RandomAccessIterator): RandomAccessIterator = js.native
-  def is_heap_until[RandomAccessIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
-      RandomAccessIterator
-    ]
+  def is_heap_until[RandomAccessIterator /* <: tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[RandomAccessIterator], 
+    RandomAccessIterator
   ] */](
     first: RandomAccessIterator,
     last: RandomAccessIterator,

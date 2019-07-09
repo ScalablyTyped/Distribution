@@ -14,12 +14,11 @@ object ListNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
+  /**
+    * @hidden
+    */
   class Iterator[T] protected ()
     extends tstlLib.baseIteratorListIteratorMod.ListIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T], T] {
-    /**
-      * @hidden
-      */
-    def this(sourcePtr: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerListMod.List[T]], prev: Iterator[T], next: Iterator[T], value: T) = this()
     /**
       * @hidden
       */
@@ -32,10 +31,8 @@ object ListNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
-  class ReverseIterator[T] protected ()
-    extends tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T], T] {
-    def this(base: Iterator[T]) = this()
-  }
+  class ReverseIterator[T] ()
+    extends tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T], T]
   
 }
 
@@ -48,13 +45,11 @@ object listNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
+  /**
+    * @hidden
+    */
   class Iterator[T] protected ()
-    extends tstlLib.containerListMod.ListNs.Iterator[T] {
-    /**
-      * @hidden
-      */
-    def this(sourcePtr: tstlLib.functionalIPointerMod.IPointer[tstlLib.containerListMod.List[T]], prev: tstlLib.containerListMod.ListNs.Iterator[T], next: tstlLib.containerListMod.ListNs.Iterator[T], value: T) = this()
-  }
+    extends tstlLib.containerListMod.ListNs.Iterator[T]
   
   /**
     * Reverse iterator of the List.
@@ -62,10 +57,8 @@ object listNs extends js.Object {
     * @author Jeongho Nam <http://samchon.org>
     */
   @js.native
-  class ReverseIterator[T] protected ()
-    extends tstlLib.containerListMod.ListNs.ReverseIterator[T] {
-    def this(base: tstlLib.containerListMod.ListNs.Iterator[T]) = this()
-  }
+  class ReverseIterator[T] ()
+    extends tstlLib.containerListMod.ListNs.ReverseIterator[T]
   
 }
 

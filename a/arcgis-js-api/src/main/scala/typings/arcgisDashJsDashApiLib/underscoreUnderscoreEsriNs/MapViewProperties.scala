@@ -80,6 +80,7 @@ object MapViewProperties {
     constraints: MapViewConstraints = null,
     container: stdLib.HTMLDivElement | java.lang.String = null,
     extent: ExtentProperties = null,
+    fatalError: Error = null,
     graphics: CollectionProperties[GraphicProperties] = null,
     heightBreakpoint: java.lang.String = null,
     highlightOptions: MapViewHighlightOptionsProperties = null,
@@ -91,6 +92,7 @@ object MapViewProperties {
     rotation: scala.Int | scala.Double = null,
     scale: scala.Int | scala.Double = null,
     spatialReference: SpatialReferenceProperties = null,
+    timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null,
     viewpoint: ViewpointProperties = null,
     widthBreakpoint: java.lang.String = null,
@@ -104,6 +106,7 @@ object MapViewProperties {
     if (constraints != null) __obj.updateDynamic("constraints")(constraints)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
     if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
     if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions)
@@ -115,6 +118,7 @@ object MapViewProperties {
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     if (ui != null) __obj.updateDynamic("ui")(ui)
     if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
     if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)

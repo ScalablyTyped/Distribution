@@ -761,6 +761,9 @@ object nodeLibStrings {
     extends nodeLib.fsMod.symlinkNs.Type
   
   @js.native
+  sealed trait keylog extends js.Object
+  
+  @js.native
   sealed trait latin1
     extends BufferEncoding
        with nodeLib.cryptoMod.HexBase64Latin1Encoding
@@ -1437,6 +1440,8 @@ object nodeLibStrings {
   def ipc: ipc = "ipc".asInstanceOf[ipc]
   @scala.inline
   def junction: junction = "junction".asInstanceOf[junction]
+  @scala.inline
+  def keylog: keylog = "keylog".asInstanceOf[keylog]
   @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
   @scala.inline

@@ -8,37 +8,20 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - tstlLib.baseContainerILinearContainerMod.ILinearContainer because var conflicts: iterator. Inlined resize, back, back, push_back, pop_back, insert, insert, insert */ @JSImport("tstl/base/container/ArrayContainer", "ArrayContainer")
 @js.native
-abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
-  extends tstlLib.baseContainerContainerMod.Container[
-      T, 
-      SourceT, 
-      tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], 
-      tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
-      T
-    ] {
+abstract class ArrayContainer[T /* <: ElemT */, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseT, ElemT] */, ArrayT /* <: ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, IteratorT /* <: tstlLib.baseIteratorArrayIteratorBaseMod.ArrayIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ReverseT /* <: tstlLib.baseIteratorArrayIteratorBaseMod.ArrayReverseIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ElemT] ()
+  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, ElemT] {
   /**
     * @hidden
     */
-  /* protected */ def _Erase_by_range(
-    first: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT],
-    last: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT]
-  ): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  /* protected */ def _Erase_by_range(first: IteratorT, last: IteratorT): IteratorT = js.native
   /**
     * @hidden
     */
-  /* protected */ def _Insert_by_range[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](
-    pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT],
-    first: InputIterator,
-    last: InputIterator
-  ): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  /* protected */ def _Insert_by_range[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */](pos: IteratorT, first: InputIterator, last: InputIterator): IteratorT = js.native
   /**
     * @hidden
     */
-  /* protected */ def _Insert_by_repeating_val(
-    position: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT],
-    n: scala.Double,
-    `val`: T
-  ): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  /* protected */ def _Insert_by_repeating_val(position: IteratorT, n: scala.Double, `val`: T): IteratorT = js.native
   /**
     * Get element at specific position.
     *
@@ -83,7 +66,7 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
     * @param val Value to insert repeatedly.
     * @return An iterator to the first of the newly inserted elements.
     */
-  def insert(pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], n: scala.Double, `val`: T): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  def insert(pos: IteratorT, n: scala.Double, `val`: T): IteratorT = js.native
   /**
     * @inheritDoc
     */
@@ -94,7 +77,7 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
     * @param val Value to insert.
     * @return An iterator to the newly inserted element.
     */
-  def insert(pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], `val`: T): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  def insert(pos: IteratorT, `val`: T): IteratorT = js.native
   /**
     * @inheritDoc
     */
@@ -106,11 +89,8 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
     * @param last Input iteartor of the last position.
     * @return An iterator to the first of the newly inserted elements.
     */
-  def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](
-    pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT],
-    first: InputIterator,
-    last: InputIterator
-  ): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  def insert[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */](pos: IteratorT, first: InputIterator, last: InputIterator): IteratorT = js.native
+  def nth(index: scala.Double): IteratorT = js.native
   /**
     * @inheritDoc
     */

@@ -8,19 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/algorithm/modifiers", JSImport.Namespace)
 @js.native
 object algorithmModifiersMod extends js.Object {
-  def copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def copy_backward[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIBidirectionalIteratorMod.IBidirectionalIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def copy_backward[InputIterator /* <: tstlLib.iteratorIBidirectionalIteratorMod.IBidirectionalIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIBidirectionalIteratorMod.IBidirectionalIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def copy_if[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def copy_if[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](
     first: InputIterator,
@@ -31,9 +25,7 @@ object algorithmModifiersMod extends js.Object {
       scala.Boolean
     ]
   ): OutputIterator = js.native
-  def copy_n[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def copy_n[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](first: InputIterator, n: scala.Double, output: OutputIterator): OutputIterator = js.native
   def fill[ForwardIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
@@ -91,9 +83,7 @@ object algorithmModifiersMod extends js.Object {
     last: InputIterator,
     `val`: tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator]
   ): InputIterator = js.native
-  def remove_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def remove_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](
     first: InputIterator,
@@ -101,9 +91,7 @@ object algorithmModifiersMod extends js.Object {
     output: OutputIterator,
     `val`: tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator]
   ): OutputIterator = js.native
-  def remove_copy_if[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def remove_copy_if[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](
     first: InputIterator,
@@ -132,9 +120,7 @@ object algorithmModifiersMod extends js.Object {
     old_val: tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator],
     new_val: tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator]
   ): scala.Unit = js.native
-  def replace_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def replace_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](
     first: InputIterator,
@@ -143,9 +129,7 @@ object algorithmModifiersMod extends js.Object {
     old_val: tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator],
     new_val: tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator]
   ): OutputIterator = js.native
-  def replace_copy_if[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def replace_copy_if[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](
     first: InputIterator,
@@ -174,11 +158,9 @@ object algorithmModifiersMod extends js.Object {
       BidirectionalIterator
     ]
   ] */](first: BidirectionalIterator, last: BidirectionalIterator): scala.Unit = js.native
-  def reverse_copy[BidirectionalIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIBidirectionalIteratorMod.IBidirectionalIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[BidirectionalIterator], 
-      BidirectionalIterator
-    ]
+  def reverse_copy[BidirectionalIterator /* <: tstlLib.iteratorIBidirectionalIteratorMod.IBidirectionalIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[BidirectionalIterator], 
+    BidirectionalIterator
   ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
       tstlLib.functionalIPointerMod.IPointerNs.ValueType[BidirectionalIterator], 
@@ -188,11 +170,9 @@ object algorithmModifiersMod extends js.Object {
   def rotate[InputIterator /* <: tstlLib.iteratorIFakeMod.General[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
   ] */](first: InputIterator, middle: InputIterator, last: InputIterator): InputIterator = js.native
-  def rotate_copy[ForwardIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
-      ForwardIterator
-    ]
+  def rotate_copy[ForwardIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
+    ForwardIterator
   ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
       tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
@@ -228,9 +208,7 @@ object algorithmModifiersMod extends js.Object {
       ForwardIterator2
     ]
   ] */](first1: ForwardIterator1, last1: ForwardIterator1, first2: ForwardIterator2): ForwardIterator2 = js.native
-  def transform[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def transform[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[OutputIterator], OutputIterator]
   ] */](
     first: InputIterator,
@@ -241,11 +219,7 @@ object algorithmModifiersMod extends js.Object {
       tstlLib.functionalIPointerMod.IPointerNs.ValueType[OutputIterator]
     ]
   ): OutputIterator = js.native
-  def transform[InputIterator1 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1]
-  ] */, InputIterator2 /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator2], InputIterator2]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def transform[InputIterator1 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator2], InputIterator2] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[OutputIterator], OutputIterator]
   ] */](
     first1: InputIterator1,
@@ -272,14 +246,10 @@ object algorithmModifiersMod extends js.Object {
       scala.Boolean
     ]
   ): InputIterator = js.native
-  def unique_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def unique_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def unique_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def unique_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator]
   ] */](
     first: InputIterator,

@@ -20,6 +20,12 @@ trait FeatureLayerCapabilities
     */
   var editing: FeatureLayerCapabilitiesEditing
   /**
+    * Describes the metadata contained on features in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var metadata: FeatureLayerCapabilitiesMetadata
+  /**
     * Describes operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
@@ -46,12 +52,13 @@ object FeatureLayerCapabilities {
     data: FeatureLayerCapabilitiesData,
     editing: FeatureLayerCapabilitiesEditing,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    metadata: FeatureLayerCapabilitiesMetadata,
     operations: FeatureLayerCapabilitiesOperations,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     query: FeatureLayerCapabilitiesQuery,
     queryRelated: FeatureLayerCapabilitiesQueryRelated
   ): FeatureLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor, data = data, editing = editing, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query, queryRelated = queryRelated)
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data, editing = editing, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), metadata = metadata, operations = operations, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query, queryRelated = queryRelated)
   
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }

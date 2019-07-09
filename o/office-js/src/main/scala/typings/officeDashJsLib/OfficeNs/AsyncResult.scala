@@ -41,10 +41,6 @@ trait AsyncResult[T] extends js.Object {
     */
   var error: Error
   /**
-    * Gets the the GUID of the CustomXmlPart, when T (the type of the value property) is {@link Office.CustomXmlPart}.
-    */
-  var id: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.
     */
   var status: AsyncResultStatus
@@ -63,16 +59,9 @@ trait AsyncResult[T] extends js.Object {
 
 object AsyncResult {
   @scala.inline
-  def apply[T](
-    asyncContext: js.Any,
-    diagnostics: js.Any,
-    error: Error,
-    status: AsyncResultStatus,
-    value: T,
-    id: java.lang.String = null
-  ): AsyncResult[T] = {
+  def apply[T](asyncContext: js.Any, diagnostics: js.Any, error: Error, status: AsyncResultStatus, value: T): AsyncResult[T] = {
     val __obj = js.Dynamic.literal(asyncContext = asyncContext, diagnostics = diagnostics, error = error, status = status, value = value.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+  
     __obj.asInstanceOf[AsyncResult[T]]
   }
 }

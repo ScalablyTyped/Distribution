@@ -13,6 +13,14 @@ trait LegendProperties extends WidgetProperties {
     */
   var activeLayerInfos: js.UndefOr[CollectionProperties[ActiveLayerInfoProperties]] = js.undefined
   /**
+    * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible)
+    *
+    * @default false
+    */
+  var basemapLegendVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#iconClass)
@@ -50,6 +58,7 @@ object LegendProperties {
   @scala.inline
   def apply(
     activeLayerInfos: CollectionProperties[ActiveLayerInfoProperties] = null,
+    basemapLegendVisible: js.UndefOr[scala.Boolean] = js.undefined,
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     iconClass: java.lang.String = null,
@@ -62,6 +71,7 @@ object LegendProperties {
   ): LegendProperties = {
     val __obj = js.Dynamic.literal()
     if (activeLayerInfos != null) __obj.updateDynamic("activeLayerInfos")(activeLayerInfos.asInstanceOf[js.Any])
+    if (!js.isUndefined(basemapLegendVisible)) __obj.updateDynamic("basemapLegendVisible")(basemapLegendVisible)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)

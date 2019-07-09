@@ -112,6 +112,10 @@ trait CarouselProps[T]
     */
   var inactiveSlideShift: js.UndefOr[scala.Double] = js.native
   /**
+    * How many items should be rendered at the start?
+    */
+  var initialNumToRender: js.UndefOr[scala.Double] = js.native
+  /**
     * Width in pixels of your slides, must be the same for all of them
     * Note: Required with horizontal carousel
     */

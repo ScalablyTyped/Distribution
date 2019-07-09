@@ -70,13 +70,15 @@ trait Loadable extends js.Object {
     */
   def isResolved(): scala.Boolean = js.native
   /**
-    * Loads the resources referenced by this class. This method automatically executes for a [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) and all of the resources it references in [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) if the view is constructed with a map instance.  This method must be called by the developer when accessing a resource that will not be loaded in a [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+    * Loads the resources referenced by this class. This method automatically executes for a [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) and all of the resources it references in [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) if the view is constructed with a map instance.  This method must be called by the developer when accessing a resource that will not be loaded in a [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).  It's possible to provide a `signal` to stop being interested into a `Loadable` instance load status. When the signal is aborted, the instance does not stop its loading process, only [cancelLoad](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#cancelLoad) can abort it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#load)
     *
+    * @param signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def load(): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def load(signal: stdLib.AbortSignal): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * `when()` may be leveraged once an instance of the class is created. This method takes two input parameters: a `callback` function and an `errback` function. The `callback` executes when the instance of the class loads. The `errback` executes if the instance of the class fails to load.
     *

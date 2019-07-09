@@ -36,7 +36,7 @@ trait predominanceRendererResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#RendererResult)
     */
-  var predominantCategoryInfos: js.Array[UniqueValueInfo]
+  var predominantCategoryInfos: js.Array[typeUniqueValueInfo]
   /**
     * The unique value renderer object representing the predominance visualization. Set this on a layer's `renderer` property to update its visualization.
     *
@@ -59,7 +59,7 @@ object predominanceRendererResult {
     excludedCategoryInfos: js.Array[_],
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     predominanceScheme: PredominanceScheme,
-    predominantCategoryInfos: js.Array[UniqueValueInfo],
+    predominantCategoryInfos: js.Array[typeUniqueValueInfo],
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     renderer: UniqueValueRenderer,
     opacity: opacityVisualVariableResult = null,

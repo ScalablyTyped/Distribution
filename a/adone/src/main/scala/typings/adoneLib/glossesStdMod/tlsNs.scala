@@ -19,12 +19,13 @@ object tlsNs extends js.Object {
       * Construct a new tls.TLSSocket object from an existing TCP socket.
       */
     def this(socket: nodeLib.netMod.Socket) = this()
-    def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_ALPNProtocols) = this()
+    def this(socket: nodeLib.netMod.Socket, options: nodeLib.tlsMod.TLSSocketOptions) = this()
   }
   
   val CLIENT_RENEG_LIMIT: scala.Double = js.native
   val CLIENT_RENEG_WINDOW: scala.Double = js.native
   val DEFAULT_ECDH_CURVE: java.lang.String = js.native
+  val rootCertificates: js.Array[java.lang.String] = js.native
   /*
     * Verifies the certificate `cert` is issued to host `host`.
     * @host The hostname to verify the certificate against

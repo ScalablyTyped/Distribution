@@ -70,6 +70,12 @@ trait FeatureViewModel extends Accessor {
     */
   val title: java.lang.String = js.native
   /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
+    */
+  var view: MapView | SceneView = js.native
+  /**
     * Indicates whether the feature is currently waiting for all of its content to finish loading.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#waitingForContent)

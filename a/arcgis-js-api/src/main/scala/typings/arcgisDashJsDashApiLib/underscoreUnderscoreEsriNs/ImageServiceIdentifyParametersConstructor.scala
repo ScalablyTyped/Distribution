@@ -11,5 +11,7 @@ trait ImageServiceIdentifyParametersConstructor
      with org.scalablytyped.runtime.Instantiable1[
       /* properties */ ImageServiceIdentifyParametersProperties, 
       ImageServiceIdentifyParameters
-    ]
+    ] {
+  def fromJSON(json: js.Any): ImageServiceIdentifyParameters = js.native
+}
 

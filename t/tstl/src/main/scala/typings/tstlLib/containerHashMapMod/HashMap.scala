@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/HashMap", "HashMap")
+- tstlLib.baseContainerIHashMapMod.IHashMap because Inheritance from two classes. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMap", "HashMap")
 @js.native
 /**
   * Default Constructor.
@@ -15,7 +15,13 @@ import scala.scalajs.js.annotation._
   * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
   */
 class HashMap[Key, T] ()
-  extends tstlLib.baseContainerUniqueMapMod.UniqueMap[Key, T, HashMap[Key, T]] {
+  extends tstlLib.baseContainerUniqueMapMod.UniqueMap[
+      Key, 
+      T, 
+      HashMap[Key, T], 
+      tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T], 
+      tstlLib.containerHashMapMod.HashMapNs.ReverseIterator[Key, T]
+    ] {
   def this(hash: js.Function1[/* key */ Key, scala.Double]) = this()
   /**
     * Initializer Constructor.
@@ -39,50 +45,51 @@ class HashMap[Key, T] ()
     * @param hash An unary function returns hash code. Default is {hash}.
     * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ]) = this()
   def this(hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   def this(items: js.Array[tstlLib.utilityIPairMod.IPair[Key, T]], hash: js.Function1[/* key */ Key, scala.Double]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ], hash: js.Function1[/* key */ Key, scala.Double]) = this()
   def this(items: js.Array[tstlLib.utilityIPairMod.IPair[Key, T]], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ], hash: js.Function1[/* key */ Key, scala.Double], equal: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   /**
     * @hidden
     */
   var buckets_ : js.Any = js.native
   /**
+    * Iterator to the first element in a specific bucket.
+    *
+    * @param index Index number of the specific bucket.
+    * @return Iterator from the specific bucket.
+    */
+  def begin(index: scala.Double): tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[Key, T, tstlLib.tstlLibNumbers.`true`, HashMap[Key, T]] = js.native
+  /**
     * @inheritDoc
     */
-  def begin(index: scala.Double): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
+  @JSName("begin")
+  def begin_Iterator(): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
+  /**
+    * @inheritDoc
+    */
+  @JSName("begin")
+  def begin_Iterator(index: scala.Double): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
   /**
     * @inheritDoc
     */
@@ -96,9 +103,22 @@ class HashMap[Key, T] ()
     */
   def bucket_size(index: scala.Double): scala.Double = js.native
   /**
+    * Iterator to the end in a specific bucket.
+    *
+    * @param index Index number of the specific bucket.
+    * @return Iterator from the specific bucket.
+    */
+  def end(index: scala.Double): tstlLib.baseContainerMapElementListMod.MapElementListNs.Iterator[Key, T, tstlLib.tstlLibNumbers.`true`, HashMap[Key, T]] = js.native
+  /**
     * @inheritDoc
     */
-  def end(index: scala.Double): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
+  @JSName("end")
+  def end_Iterator(): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
+  /**
+    * @inheritDoc
+    */
+  @JSName("end")
+  def end_Iterator(index: scala.Double): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
   /**
     * @inheritDoc
     */

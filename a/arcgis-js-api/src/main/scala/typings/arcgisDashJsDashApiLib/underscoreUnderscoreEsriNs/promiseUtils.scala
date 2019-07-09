@@ -16,6 +16,15 @@ trait promiseUtils extends js.Object {
     *
     */
   def create(executor: Executor): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  /**
+    * A utility for ensuring an input function is not simultaneously invoked more than once at a time. This is useful for highly interactive applications such as those that execute statistic queries on mouse-move or mouse-drag events. Rather than execute the query for each such event, you can "debounce", or cancel the function execution, until the previous execution of the same function call finishes. This improves the performance and user experience of such applications.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#debounce)
+    *
+    * @param callback A function to prevent executing during the execution of a previous call to the same function. This is typically a function that may be called on mouse-move or mouse-drag events.
+    *
+    */
+  def debounce[T](callback: T): T = js.native
   def eachAlways(promises: js.Any): arcgisDashJsDashApiLib.IPromise[js.Array[EachAlwaysResult]] | js.Any = js.native
   /**
     * Convenience utility method to wait for a number of promises to either resolve or reject. The resulting promise resolves to an array of result objects containing the promise and either a value if the promise resolved, or an error if the promise rejected.

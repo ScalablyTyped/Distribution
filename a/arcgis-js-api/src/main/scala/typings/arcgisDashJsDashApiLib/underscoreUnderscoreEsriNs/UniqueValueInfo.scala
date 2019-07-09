@@ -5,48 +5,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UniqueValueInfo
-  extends stdLib.Object {
+  extends Accessor
+     with JSONSupport {
   /**
-    * The number of features with the given `value` (or belonging to the given category).
+    * Describes the [value](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value) represented by the [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#symbol). This label will appear in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget next to the symbol representing the value. If no label is provided, then the raw [value](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value) is displayed in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#UniqueValueInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#label)
     */
-  var count: scala.Double
+  var label: java.lang.String = js.native
   /**
-    * The label describing the value or category in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+    * Defines the symbol used to render features with the provided [value](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#UniqueValueInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#symbol)
     */
-  var label: java.lang.String
+  var symbol: Symbol = js.native
   /**
-    * The symbol used to represent features belonging to the given category.
+    * Features with this value will be rendered with the given [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#symbol).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#UniqueValueInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value)
     */
-  var symbol: Symbol
-  /**
-    * A unique value representing a type or category of features in a layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#UniqueValueInfo)
-    */
-  var value: java.lang.String | scala.Double
+  var value: java.lang.String | scala.Double = js.native
 }
 
-object UniqueValueInfo {
-  @scala.inline
-  def apply(
-    constructor: js.Function,
-    count: scala.Double,
-    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    label: java.lang.String,
-    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    symbol: Symbol,
-    value: java.lang.String | scala.Double
-  ): UniqueValueInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol, value = value.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[UniqueValueInfo]
-  }
+@JSGlobal("__esri.UniqueValueInfo")
+@js.native
+/**
+  * Defines the symbols to use in a [UniqueValueRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html). Each unique value info defines a [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#symbol) that should be used to represent features with a specific [value](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html)
+  */
+class UniqueValueInfoCls () extends UniqueValueInfo {
+  def this(properties: UniqueValueInfoProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

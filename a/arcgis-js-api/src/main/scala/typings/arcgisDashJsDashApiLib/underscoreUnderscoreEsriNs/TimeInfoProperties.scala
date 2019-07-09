@@ -13,32 +13,40 @@ trait TimeInfoProperties extends js.Object {
     */
   var endField: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The time extent defines the start time and end time for all data in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent)
+    *
+    * @default null
+    */
+  var fullTimeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
+  /**
+    * The time interval defines the granularity of the temporal data and allows you to visualize the data at specified intervals using the [time slider widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html). Usually temporal data is collected at regular intervals such as every hour or every day.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#interval)
+    */
+  var interval: js.UndefOr[TimeIntervalProperties] = js.undefined
+  /**
     * The name of the field containing the start time information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField)
     */
   var startField: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The time extent defines the start time and end time for all data in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent)
-    *
-    * @default null
-    */
-  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 
 object TimeInfoProperties {
   @scala.inline
   def apply(
     endField: java.lang.String = null,
-    startField: java.lang.String = null,
-    timeExtent: TimeExtentProperties = null
+    fullTimeExtent: TimeExtentProperties = null,
+    interval: TimeIntervalProperties = null,
+    startField: java.lang.String = null
   ): TimeInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (endField != null) __obj.updateDynamic("endField")(endField)
+    if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent)
+    if (interval != null) __obj.updateDynamic("interval")(interval)
     if (startField != null) __obj.updateDynamic("startField")(startField)
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     __obj.asInstanceOf[TimeInfoProperties]
   }
 }

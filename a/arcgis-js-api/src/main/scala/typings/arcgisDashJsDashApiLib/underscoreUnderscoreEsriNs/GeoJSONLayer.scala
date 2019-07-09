@@ -53,6 +53,12 @@ trait GeoJSONLayer
     */
   var fields: js.Array[Field] = js.native
   /**
+    * A convenient property that can be used to make case-insensitive lookups for a field by name. It can also provide a list of the [date fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#dateFields) in a layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#fieldsIndex)
+    */
+  val fieldsIndex: FieldsIndex = js.native
+  /**
     * The geometry type of features in the layer. All features must be of the same type.  **Possible Values:** point | multipoint | polyline | polygon
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#geometryType)
@@ -180,7 +186,7 @@ trait GeoJSONLayer
     */
   def createQuery(): Query = js.native
   /**
-    * Returns the [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) instance for a field name. This method first looks for the field by its `name`, and if not found does a case-insensitive search for it.
+    * Returns the [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) instance for a field name (case-insensitive).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#getField)
     *
@@ -206,54 +212,104 @@ trait GeoJSONLayer
     eventHandler: GeoJSONLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: GeoJSONLayerLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
   def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: GeoJSONLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. If no parameters are specified, then the extent and count of all features satisfying the layer's configuration/filters are returned.
+    * > **Known Limitations**
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryExtent)
     *
-    * @param params Specifies the attributes and spatial filter of the query. If no parameters are specified, then the extent and count of all features satisfying the layer's configuration/filters are returned.
+    * @param query Specifies the attributes and spatial filter of the query. If no parameters are specified, then the extent and count of all features satisfying the layer's configuration/filters are returned.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryExtent(): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def queryExtent(params: Query): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def queryExtent(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: Query): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: QueryProperties, options: GeoJSONLayerQueryExtentOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def queryExtent(query: Query, options: GeoJSONLayerQueryExtentOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns the number of features that satisfy the query. If no parameters are specified, the total number of features satisfying the layer's configuration/filters is returned.
+    * > **Known Limitations**
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryFeatureCount)
     *
-    * @param params Specifies the attributes and spatial filter of the query. If no parameters are specified, the total number of features satisfying the layer's configuration/filters is returned.
+    * @param query Specifies the attributes and spatial filter of the query. If no parameters are specified, the total number of features satisfying the layer's configuration/filters is returned.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryFeatureCount(): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
-  def queryFeatureCount(params: Query): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
-  def queryFeatureCount(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: Query): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: GeoJSONLayerQueryFeatureCountOptions): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
+  def queryFeatureCount(query: Query, options: GeoJSONLayerQueryFeatureCountOptions): arcgisDashJsDashApiLib.IPromise[scala.Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features, which can be added to the [view's graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics). This array will not be populated if zero results are found.
+    * > **Known Limitations**
+    *   * Attribute values used in attribute queries executed against layer views are case sensitive.
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryFeatures)
     *
-    * @param params Specifies the attributes and spatial filter of the query. If no parameters are specified, then all features satisfying the layer's configuration/filters are returned.
+    * @param query Specifies the attributes and spatial filter of the query. If no parameters are specified, then all features satisfying the layer's configuration/filters are returned.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryFeatures(): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
-  def queryFeatures(params: Query): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
-  def queryFeatures(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: GeoJSONLayerQueryFeaturesOptions): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: GeoJSONLayerQueryFeaturesOptions): arcgisDashJsDashApiLib.IPromise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns an array of Object IDs for features that satisfy the input query. If no parameters are specified, then the Object IDs of all features satisfying the layer's configuration/filters are returned.
+    * > **Known Limitations**
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#queryObjectIds)
     *
-    * @param params Specifies the attributes and spatial filter of the query. If no parameters are specified, then the Object IDs of all features satisfying the layer's configuration/filters are returned.
+    * @param query Specifies the attributes and spatial filter of the query. If no parameters are specified, then the Object IDs of all features satisfying the layer's configuration/filters are returned.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
   def queryObjectIds(): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-  def queryObjectIds(params: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-  def queryObjectIds(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: GeoJSONLayerQueryObjectIdsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
+  def queryObjectIds(query: Query, options: GeoJSONLayerQueryObjectIdsOptions): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
 }
 
 @JSGlobal("__esri.GeoJSONLayer")
@@ -284,7 +340,7 @@ class GeoJSONLayerCls () extends GeoJSONLayer {
   /* CompleteClass */
   override var minScale: scala.Double = js.native
   /**
-    * The time info provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [total time span](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent) for the layer. The `timeInfo` and its `startField` and `endField` properties must be set at the time of layer initialization if it is being set for [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) or [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) initialized from [client-side features](esri-layers-FeatureLayer.html#creating-a-featurelayer). The [total time span](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent) for the timeInfo is automatically calculated based on `start` and `end` fields. The timeInfo parameters cannot be changed after the layer is [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#load).
+    * The time info provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [full time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer. The `timeInfo` along with its `startField` and `endField` properties must be set at the time of layer initialization if it is being set for [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) or [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) initialized from [client-side features](esri-layers-FeatureLayer.html#creating-a-featurelayer). The [full time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the timeInfo is automatically calculated based on `start` and `end` fields. The timeInfo parameters cannot be changed after the layer is [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#load).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
     *

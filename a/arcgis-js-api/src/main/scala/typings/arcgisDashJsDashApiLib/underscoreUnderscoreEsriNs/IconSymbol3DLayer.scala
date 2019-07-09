@@ -25,7 +25,13 @@ trait IconSymbol3DLayer
     */
   var anchorPosition: IconSymbol3DLayerAnchorPosition = js.native
   /**
-    * The outline of the icon.
+    * The material used to shade the icon. This property defines the icon's color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#material)
+    */
+  var material: IconSymbol3DLayerMaterial = js.native
+  /**
+    * The outline of the icon. The color property of this object directly modifies the overall color of IconSymbol3DLayer defined with the `cross` or `x` primitive.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */

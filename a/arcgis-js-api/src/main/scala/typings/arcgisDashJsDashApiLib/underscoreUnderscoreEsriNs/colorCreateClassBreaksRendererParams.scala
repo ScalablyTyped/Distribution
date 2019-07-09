@@ -125,6 +125,14 @@ trait colorCreateClassBreaksRendererParams
     */
   var numClasses: js.UndefOr[scala.Double] = js.undefined
   /**
+    * For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createClassBreaksRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createClassBreaksRenderer)
@@ -199,6 +207,7 @@ object colorCreateClassBreaksRendererParams {
     normalizationTotal: scala.Int | scala.Double = null,
     normalizationType: java.lang.String = null,
     numClasses: scala.Int | scala.Double = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     sqlExpression: java.lang.String = null,
     sqlWhere: java.lang.String = null,
     standardDeviationInterval: scala.Int | scala.Double = null,
@@ -221,6 +230,7 @@ object colorCreateClassBreaksRendererParams {
     if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
     if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType)
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
     if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])

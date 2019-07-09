@@ -13,12 +13,6 @@ trait VisualVariableProperties extends js.Object {
     */
   var field: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The index of the visual variable in relation to its position in the [visualVariables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) property of the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html#index)
-    */
-  var index: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  /**
     * An object providing options for displaying the visual variable in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html#legendOptions)
@@ -42,14 +36,12 @@ object VisualVariableProperties {
   @scala.inline
   def apply(
     field: java.lang.String = null,
-    index: java.lang.String | scala.Double = null,
     legendOptions: VisualVariableLegendOptions = null,
     valueExpression: java.lang.String = null,
     valueExpressionTitle: java.lang.String = null
   ): VisualVariableProperties = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field)
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
     if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)

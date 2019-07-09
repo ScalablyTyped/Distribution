@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Nedb
+trait Nedb[G]
   extends nodeLib.eventsMod.EventEmitter {
   var persistence: Persistence = js.native
   @JSName("addListener")
@@ -14,8 +14,8 @@ trait Nedb
   /**
     * Add one or several document(s) to all indexes
     */
-  def addToIndexes[T](doc: T): scala.Unit = js.native
-  def addToIndexes[T](doc: js.Array[T]): scala.Unit = js.native
+  def addToIndexes[T /* <: G */](doc: T): scala.Unit = js.native
+  def addToIndexes[T /* <: G */](doc: js.Array[T]): scala.Unit = js.native
   def count(query: js.Any): CursorCount = js.native
   /**
     * Count all documents matching the query
@@ -30,24 +30,24 @@ trait Nedb
     */
   def ensureIndex(options: EnsureIndexOptions): scala.Unit = js.native
   def ensureIndex(options: EnsureIndexOptions, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def find[T](query: js.Any): Cursor[T] = js.native
+  def find[T /* <: G */](query: js.Any): Cursor[T] = js.native
   /**
     * Find all documents matching the query
     * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
     * * @param {any} query MongoDB-style query
     */
-  def find[T](
+  def find[T /* <: G */](
     query: js.Any,
     callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]
   ): scala.Unit = js.native
-  def find[T](query: js.Any, projection: T): Cursor[T] = js.native
+  def find[T /* <: G */](query: js.Any, projection: T): Cursor[T] = js.native
   /**
     * Find all documents matching the query
     * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
     * @param query MongoDB-style query
     * @param projection MongoDB-style projection
     */
-  def find[T](
+  def find[T /* <: G */](
     query: js.Any,
     projection: T,
     callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]
@@ -56,13 +56,13 @@ trait Nedb
     * Find one document matching the query
     * @param query MongoDB-style query
     */
-  def findOne[T](query: js.Any, callback: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
+  def findOne[T /* <: G */](query: js.Any, callback: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
   /**
     * Find one document matching the query
     * @param query MongoDB-style query
     * @param projection MongoDB-style projection
     */
-  def findOne[T](
+  def findOne[T /* <: G */](
     query: js.Any,
     projection: T,
     callback: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]
@@ -85,8 +85,8 @@ trait Nedb
     * Insert a new document
     * @param cb Optional callback, signature: err, insertedDoc
     */
-  def insert[T](newDoc: T): scala.Unit = js.native
-  def insert[T](newDoc: T, cb: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
+  def insert[T /* <: G */](newDoc: T): scala.Unit = js.native
+  def insert[T /* <: G */](newDoc: T, cb: js.Function2[/* err */ stdLib.Error, /* document */ T, scala.Unit]): scala.Unit = js.native
   @JSName("listenerCount")
   def listenerCount_compactiondone(`type`: nedbLib.nedbLibStrings.compactionDOTdone): scala.Double = js.native
   @JSName("listeners")
@@ -128,8 +128,8 @@ trait Nedb
   /**
     * Remove one or several document(s) from all indexes
     */
-  def removeFromIndexes[T](doc: T): scala.Unit = js.native
-  def removeFromIndexes[T](doc: js.Array[T]): scala.Unit = js.native
+  def removeFromIndexes[T /* <: G */](doc: T): scala.Unit = js.native
+  def removeFromIndexes[T /* <: G */](doc: js.Array[T]): scala.Unit = js.native
   /**
     * Remove an index
     * @param cb Optional callback, signature: err
@@ -167,7 +167,7 @@ trait Nedb
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def update[T](
+  def update[T /* <: G */](
     query: js.Any,
     updateQuery: js.Any,
     options: UpdateOptions,
@@ -184,8 +184,8 @@ trait Nedb
     * To update multiple documents, oldDoc must be an array of { oldDoc, newDoc } pairs
     * If one update violates a constraint, all changes are rolled back
     */
-  def updateIndexes[T](oldDoc: T, newDoc: T): scala.Unit = js.native
-  def updateIndexes[T](updates: js.Array[nedbLib.Anon_NewDoc[T]]): scala.Unit = js.native
+  def updateIndexes[T /* <: G */](oldDoc: T, newDoc: T): scala.Unit = js.native
+  def updateIndexes[T /* <: G */](updates: js.Array[nedbLib.Anon_NewDoc[T]]): scala.Unit = js.native
   /**
     * Update all docs matching query v1.8 signature.
     * For now, very naive implementation (recalculating the whole database)
@@ -200,8 +200,8 @@ trait Nedb
     * @api private Use Datastore.update which has the same signature
     */
   @JSName("update")
-  def update_T[T](query: js.Any, updateQuery: js.Any): scala.Unit = js.native
+  def update_TG[T /* <: G */](query: js.Any, updateQuery: js.Any): scala.Unit = js.native
   @JSName("update")
-  def update_T[T](query: js.Any, updateQuery: js.Any, options: UpdateOptions): scala.Unit = js.native
+  def update_TG[T /* <: G */](query: js.Any, updateQuery: js.Any, options: UpdateOptions): scala.Unit = js.native
 }
 

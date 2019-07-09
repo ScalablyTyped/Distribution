@@ -9,6 +9,7 @@ trait SceneViewConstraintsProperties
   extends stdLib.Object {
   /**
     * Specifies a constraint on the minimum and maximum allowed camera altitude.
+    * > **Known Limitations**  The `altitude` constraints works just in global WebScene. (Not in local WebScene)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */

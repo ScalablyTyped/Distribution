@@ -80,9 +80,12 @@ trait Layer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#createLayerView)
     *
     * @param view The parent view.
+    * @param options An object specifying additional options. See the object specification table below for the required properties of this object.
+    * @param options.signal A signal to abort the creation of the layerview.
     *
     */
   def createLayerView(view: js.Any): scala.Unit = js.native
+  def createLayerView(view: js.Any, options: LayerCreateLayerViewOptions): scala.Unit = js.native
   /**
     * Fetches custom attribution data for the layer when it becomes available.
     *

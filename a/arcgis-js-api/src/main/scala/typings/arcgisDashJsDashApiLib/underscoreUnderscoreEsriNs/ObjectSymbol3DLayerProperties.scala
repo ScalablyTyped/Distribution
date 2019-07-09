@@ -57,6 +57,12 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
+    * The material used to shade the object. This property defines the object's color.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#material)
+    */
+  var material: js.UndefOr[ObjectSymbol3DLayerMaterialProperties] = js.undefined
+  /**
     * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in glTF format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
@@ -95,7 +101,7 @@ object ObjectSymbol3DLayerProperties {
     depth: scala.Int | scala.Double = null,
     heading: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
-    material: js.Any = null,
+    material: ObjectSymbol3DLayerMaterialProperties = null,
     resource: ObjectSymbol3DLayerResource = null,
     roll: scala.Int | scala.Double = null,
     tilt: scala.Int | scala.Double = null,

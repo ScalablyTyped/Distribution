@@ -2,11 +2,11 @@
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp),TsIdentLibrarySimple(rx.wamp)),TsIdentModule(None,List(rx.wamp))) [id => rx.wamp, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rx.wamp)) [id => rx.wamp, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsAugmentedModule(rx) / TsDeclInterface(ObservableStatic))] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing rx.wamp [id => rx.wamp, phase => scala.js] 
-[info ] InferMemberOverrides.scala:86 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(rxDotWampLib) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
+[info ] InferMemberOverrides.scala:83 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(rxDotWampLib) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => scala.js] 
 [warn ] Phase3Compile.scala:204 Building rx_dot_wamp... [id => rx.wamp, phase => build] 
 [error] Phase3Compile.scala:230 [E] [E24] src/main/scala/typings/rxDotWampLib/rxDotWampMod/IPubSubSubject.scala:23:29

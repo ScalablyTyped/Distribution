@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-slinky-facade"
-version := "201907080331-8ef7c3"
+version := "201907081110-8ef7c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

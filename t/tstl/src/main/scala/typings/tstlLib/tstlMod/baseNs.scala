@@ -9,38 +9,37 @@ import scala.scalajs.js.annotation._
 @js.native
 object baseNs extends js.Object {
   @js.native
-  abstract class ArrayContainer[T, SourceT /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, SourceT] */] ()
-    extends tstlLib.baseMod.ArrayContainer[T, SourceT]
+  abstract class ArrayContainer[T /* <: ElemT */, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseT, ElemT] */, ArrayT /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, IteratorT /* <: tstlLib.baseIteratorArrayIteratorBaseMod.ArrayIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ReverseT /* <: tstlLib.baseIteratorArrayIteratorBaseMod.ArrayReverseIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ElemT] ()
+    extends tstlLib.baseMod.ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT]
   
   @js.native
-  class ArrayIterator[T, Source /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source] */] protected ()
-    extends tstlLib.baseMod.ArrayIterator[T, Source] {
-    /**
-      * Initializer Constructor.
-      *
-      * @param source Source container.
-      * @param index Index number.
-      */
-    def this(source: Source, index: scala.Double) = this()
-  }
+  class ArrayIterator[T, SourceT /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[
+    T, 
+    SourceT, 
+    SourceT, 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
+    T
+  ] */] ()
+    extends tstlLib.baseMod.ArrayIterator[T, SourceT]
   
   @js.native
-  class ArrayReverseIterator[T, Source /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source] */] protected ()
-    extends tstlLib.baseMod.ArrayReverseIterator[T, Source] {
-    /**
-      * Initializer Constructor.
-      *
-      * @param base The base iterator.
-      */
-    def this(base: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, Source]) = this()
-  }
+  class ArrayReverseIterator[T, SourceT /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[
+    T, 
+    SourceT, 
+    SourceT, 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
+    T
+  ] */] ()
+    extends tstlLib.baseMod.ArrayReverseIterator[T, SourceT]
   
   @js.native
-  abstract class Container[T /* <: Elem */, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
+  abstract class Container[T /* <: Elem */, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
     extends tstlLib.baseMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem]
   
   @js.native
-  class ForOfAdaptor[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */] protected ()
+  class ForOfAdaptor[T, InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */] protected ()
     extends tstlLib.baseMod.ForOfAdaptor[T, InputIterator] {
     /**
       * Initializer Constructor.
@@ -59,39 +58,30 @@ object baseNs extends js.Object {
     extends tstlLib.baseMod.ListContainer[T, SourceT, IteratorT, ReverseIteratorT]
   
   @js.native
-  /**
-    * Default Constructor.
-    */
-  abstract class MapContainer[Key, T, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source] */] protected ()
-    extends tstlLib.baseMod.MapContainer[Key, T, Unique, Source]
-  
-  @js.native
-  class MapIterator[Key, T, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source] */] protected ()
-    extends tstlLib.baseMod.MapIterator[Key, T, Unique, Source] {
+  abstract class MapContainer[Key, T, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorIMapIteratorMod.IMapIterator[Key, T, Unique, Source, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorIMapIteratorMod.IMapReverseIterator[Key, T, Unique, Source, IteratorT, ReverseT] */] protected ()
+    extends tstlLib.baseMod.MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] {
     /**
-      * @hidden
+      * Default Constructor.
       */
-    def this(list: tstlLib.baseContainerUnderscoreMapElementListMod._MapElementList[Key, T, Unique, Source], prev: tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source], next: tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source], `val`: tstlLib.utilityEntryMod.Entry[Key, T]) = this()
+    protected def this(factory: js.Function1[
+          /* thisArg */ Source, 
+          tstlLib.baseContainerILinearContainerMod.ILinearContainer[
+            tstlLib.utilityEntryMod.Entry[Key, T], 
+            Source, 
+            IteratorT, 
+            ReverseT, 
+            tstlLib.utilityEntryMod.Entry[Key, T]
+          ]
+        ]) = this()
   }
   
   @js.native
-  class MapReverseIterator[Key, T, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerMapContainerMod.MapContainer[Key, T, Unique, Source] */] protected ()
-    extends tstlLib.baseMod.MapReverseIterator[Key, T, Unique, Source] {
-    /**
-      * Initializer Constructor.
-      *
-      * @param base The base iterator.
-      */
-    def this(base: tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source]) = this()
-  }
+  abstract class MultiMap[Key, T, Source /* <: tstlLib.baseContainerMultiMapMod.MultiMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: tstlLib.baseIteratorIMapIteratorMod.IMapIterator[Key, T, tstlLib.tstlLibNumbers.`false`, Source, Iterator, Reverse] */, Reverse /* <: tstlLib.baseIteratorIMapIteratorMod.IMapReverseIterator[Key, T, tstlLib.tstlLibNumbers.`false`, Source, Iterator, Reverse] */] ()
+    extends tstlLib.baseMod.MultiMap[Key, T, Source, Iterator, Reverse]
   
   @js.native
-  abstract class MultiMap[Key, T, Source /* <: tstlLib.baseContainerMultiMapMod.MultiMap[Key, T, Source] */] ()
-    extends tstlLib.baseMod.MultiMap[Key, T, Source]
-  
-  @js.native
-  abstract class MultiSet[Key, Source /* <: tstlLib.baseContainerMultiSetMod.MultiSet[Key, Source] */] ()
-    extends tstlLib.baseMod.MultiSet[Key, Source]
+  abstract class MultiSet[Key, Source /* <: tstlLib.baseContainerMultiSetMod.MultiSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorISetIteratorMod.ISetIterator[Key, tstlLib.tstlLibNumbers.`false`, Source, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorISetIteratorMod.ISetReverseIterator[Key, tstlLib.tstlLibNumbers.`false`, Source, IteratorT, ReverseT] */] ()
+    extends tstlLib.baseMod.MultiSet[Key, Source, IteratorT, ReverseT]
   
   @js.native
   abstract class ReverseIterator[T /* <: Elem */, Source /* <: tstlLib.baseContainerIContainerMod.IContainer[T, Source, Base, This, Elem] */, Base /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, Source, Base, This, Elem] */, This /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, Source, Base, This, Elem] */, Elem] protected ()
@@ -101,43 +91,28 @@ object baseNs extends js.Object {
       *
       * @param base The base iterator.
       */
-    protected def this(base: Base) = this()
+    def this(base: Base) = this()
   }
   
   @js.native
-  /**
-    * Default Constructor.
-    */
-  abstract class SetContainer[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerSetContainerMod.SetContainer[Key, Unique, Source] */] protected ()
-    extends tstlLib.baseMod.SetContainer[Key, Unique, Source]
-  
-  @js.native
-  class SetIterator[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerSetContainerMod.SetContainer[Key, Unique, Source] */] protected ()
-    extends tstlLib.baseMod.SetIterator[Key, Unique, Source] {
+  abstract class SetContainer[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerSetContainerMod.SetContainer[Key, Unique, Source, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorISetIteratorMod.ISetIterator[Key, Unique, Source, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorISetIteratorMod.ISetReverseIterator[Key, Unique, Source, IteratorT, ReverseT] */] protected ()
+    extends tstlLib.baseMod.SetContainer[Key, Unique, Source, IteratorT, ReverseT] {
     /**
-      * @hidden
+      * Default Constructor.
       */
-    def this(list: tstlLib.baseContainerUnderscoreSetElementListMod._SetElementList[Key, Unique, Source], prev: tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source], next: tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source], key: Key) = this()
+    protected def this(factory: js.Function1[
+          /* thisArg */ Source, 
+          tstlLib.baseContainerILinearContainerMod.ILinearContainer[Key, Source, IteratorT, ReverseT, Key]
+        ]) = this()
   }
   
   @js.native
-  class SetReverseIterator[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerSetContainerMod.SetContainer[Key, Unique, Source] */] protected ()
-    extends tstlLib.baseMod.SetReverseIterator[Key, Unique, Source] {
-    /**
-      * Initializer Constructor.
-      *
-      * @param base The base iterator.
-      */
-    def this(base: tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source]) = this()
-  }
+  abstract class UniqueMap[Key, T, Source /* <: tstlLib.baseContainerUniqueMapMod.UniqueMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: tstlLib.baseIteratorIMapIteratorMod.IMapIterator[Key, T, tstlLib.tstlLibNumbers.`true`, Source, Iterator, Reverse] */, Reverse /* <: tstlLib.baseIteratorIMapIteratorMod.IMapReverseIterator[Key, T, tstlLib.tstlLibNumbers.`true`, Source, Iterator, Reverse] */] ()
+    extends tstlLib.baseMod.UniqueMap[Key, T, Source, Iterator, Reverse]
   
   @js.native
-  abstract class UniqueMap[Key, T, Source /* <: tstlLib.baseContainerUniqueMapMod.UniqueMap[Key, T, Source] */] ()
-    extends tstlLib.baseMod.UniqueMap[Key, T, Source]
-  
-  @js.native
-  abstract class UniqueSet[Key, Source /* <: tstlLib.baseContainerUniqueSetMod.UniqueSet[Key, Source] */] ()
-    extends tstlLib.baseMod.UniqueSet[Key, Source]
+  abstract class UniqueSet[Key, Source /* <: tstlLib.baseContainerUniqueSetMod.UniqueSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorISetIteratorMod.ISetIterator[Key, tstlLib.tstlLibNumbers.`true`, Source, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorISetIteratorMod.ISetReverseIterator[Key, tstlLib.tstlLibNumbers.`true`, Source, IteratorT, ReverseT] */] ()
+    extends tstlLib.baseMod.UniqueSet[Key, Source, IteratorT, ReverseT]
   
 }
 

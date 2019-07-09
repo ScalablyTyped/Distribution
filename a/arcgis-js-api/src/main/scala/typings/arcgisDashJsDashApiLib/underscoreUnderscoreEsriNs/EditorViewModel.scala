@@ -39,7 +39,7 @@ trait EditorViewModel extends Accessor {
     */
   val canUpdate: scala.Boolean = js.native
   /**
-    * A collection of editable items based on configuration and available layers on the map.
+    * A collection of editable item objects that match the feature being updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#editableItems)
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-snap-carousel"
-version := "3.7-dt-20190430Z-d241bd"
+version := "3.7-dt-20190708Z-06aad4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

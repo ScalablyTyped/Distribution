@@ -1,7 +1,7 @@
 [info ] ResolveExternalReferences.scala:82 Inferred augmented module None (TsIdentModule(None,List(mocha))) [file => ../types/ember-mocha/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(mocha)), id => ember-mocha] 
 [debug] PhaseRunner.scala:84 Success [id => ember-mocha, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-mocha/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-mocha),TsIdentLibrarySimple(ember-mocha)),TsIdentModule(None,List(ember-mocha))) [id => ember-mocha, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(ember-mocha) [id => ember-mocha, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(ember-mocha) [id => ember-mocha, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(before)))) [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(mochaBefore) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(after)))) [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(mochaAfter) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(beforeEach)))) [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(mochaBeforeEach) / TsTypeQuery())] 

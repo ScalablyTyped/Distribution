@@ -39,6 +39,12 @@ trait FeatureProperties extends WidgetProperties {
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#view)
+    */
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  /**
     * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [FeatureViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html) class to access all properties and methods on the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#viewModel)
@@ -63,6 +69,7 @@ object FeatureProperties {
     label: java.lang.String = null,
     map: MapProperties = null,
     spatialReference: SpatialReferenceProperties = null,
+    view: MapViewProperties | SceneViewProperties = null,
     viewModel: FeatureViewModelProperties = null,
     visibleElements: VisibleElements = null
   ): FeatureProperties = {
@@ -75,6 +82,7 @@ object FeatureProperties {
     if (label != null) __obj.updateDynamic("label")(label)
     if (map != null) __obj.updateDynamic("map")(map)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
     if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements)
     __obj.asInstanceOf[FeatureProperties]

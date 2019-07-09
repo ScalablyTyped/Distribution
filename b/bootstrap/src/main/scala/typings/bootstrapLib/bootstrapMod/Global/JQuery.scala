@@ -86,9 +86,15 @@ trait JQuery[TElement] extends js.Object {
   def dropdown(options: bootstrapLib.bootstrapMod.DropdownOption): this.type = js.native
   @JSName("dropdown")
   def dropdown_dispose(action: bootstrapLib.bootstrapLibStrings.dispose): this.type = js.native
+  @JSName("dropdown")
+  def dropdown_hide(action: bootstrapLib.bootstrapLibStrings.hide): this.type = js.native
+  @JSName("dropdown")
+  def dropdown_show(action: bootstrapLib.bootstrapLibStrings.show): this.type = js.native
   /**
     * Call a method on the dropdown element:
     * * `toggle` – Toggles the dropdown menu of a given navbar or tabbed navigation.
+    * * `show` – Shows the dropdown menu of a given navbar or tabbed navigation.
+    * * `hide` – Hides the dropdown menu of a given navbar or tabbed navigation.
     * * `update` – Updates the position of an element's dropdown.
     * * `dispose` – Destroys an element's dropdown.
     */

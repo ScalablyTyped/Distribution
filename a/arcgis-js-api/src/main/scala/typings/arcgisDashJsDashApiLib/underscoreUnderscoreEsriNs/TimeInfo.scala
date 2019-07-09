@@ -16,25 +16,31 @@ trait TimeInfo
     */
   var endField: java.lang.String = js.native
   /**
+    * The time extent defines the start time and end time for all data in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent)
+    *
+    * @default null
+    */
+  var fullTimeExtent: TimeExtent = js.native
+  /**
+    * The time interval defines the granularity of the temporal data and allows you to visualize the data at specified intervals using the [time slider widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html). Usually temporal data is collected at regular intervals such as every hour or every day.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#interval)
+    */
+  var interval: TimeInterval = js.native
+  /**
     * The name of the field containing the start time information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField)
     */
   var startField: java.lang.String = js.native
-  /**
-    * The time extent defines the start time and end time for all data in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent)
-    *
-    * @default null
-    */
-  var timeExtent: TimeExtent = js.native
 }
 
 @JSGlobal("__esri.TimeInfo")
 @js.native
 /**
-  * Time info represents a temporal data of a time-aware layer. The time info provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [total time span](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent) for the layer.
+  * Time info represents the temporal data of a time-aware layer. The time info class provides information such as date fields that store the [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) times for each feature and the [total time span](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html)
   */

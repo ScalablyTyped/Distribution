@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("esri/symbols", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val CIMSymbol: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.CIMSymbolConstructor = js.native
   val ExtrudeSymbol3DLayer: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ExtrudeSymbol3DLayerConstructor = js.native
   val FillSymbol3DLayer: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.FillSymbol3DLayerConstructor = js.native
   val Font: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.FontConstructor = js.native
@@ -27,6 +28,7 @@ object ^ extends js.Object {
   val SimpleMarkerSymbol: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.SimpleMarkerSymbolConstructor = js.native
   val TextSymbol: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.TextSymbolConstructor = js.native
   val TextSymbol3DLayer: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.TextSymbol3DLayerConstructor = js.native
+  val WaterSymbol3DLayer: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.WaterSymbol3DLayerConstructor = js.native
   val WebStyleSymbol: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.WebStyleSymbolConstructor = js.native
 }
 

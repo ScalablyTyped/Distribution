@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/multiplexjs/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/multiplexjs),TsIdentLibrarySimple(multiplexjs)),TsIdentModule(None,List(multiplexjs))) [id => multiplexjs, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(multiplexjs) [id => multiplexjs, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(multiplexjs) [id => multiplexjs, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Array))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(String))] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Args) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Enumerable) / TsMemberFunction(ofType) / TsFunSig() / TsFunParam() / TsTypeObject())] 

@@ -19,6 +19,12 @@ trait TextSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var halo: js.UndefOr[TextSymbol3DLayerHaloProperties] = js.undefined
   /**
+    * The material used to color the text.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
+    */
+  var material: js.UndefOr[TextSymbol3DLayerMaterialProperties] = js.undefined
+  /**
     * Size of the text label in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`). When set, this property overrides the [font.size](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#size) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
@@ -27,7 +33,7 @@ trait TextSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var size: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-    * The text to be displayed.
+    * The text to be displayed. To manually create a new line, use the `\n` escape character.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#text)
     */
@@ -39,7 +45,7 @@ object TextSymbol3DLayerProperties {
   def apply(
     font: FontProperties = null,
     halo: TextSymbol3DLayerHaloProperties = null,
-    material: js.Any = null,
+    material: TextSymbol3DLayerMaterialProperties = null,
     size: scala.Double | java.lang.String = null,
     text: java.lang.String = null
   ): TextSymbol3DLayerProperties = {

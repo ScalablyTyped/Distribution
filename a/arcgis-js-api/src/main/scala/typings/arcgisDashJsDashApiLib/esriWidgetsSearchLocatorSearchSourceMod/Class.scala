@@ -41,21 +41,14 @@ class Class ()
   /* CompleteClass */
   override var filter: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.SearchSourceFilter = js.native
   /**
-    * Sets the sources for local `distance` and `minScale` for searching. See the object specification table below for details.
+    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).  **Possible Values:** rooftop | street | null
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchOptions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
+    *
+    * @default null
     */
   /* CompleteClass */
-  override var localSearchOptions: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.LocatorSearchSourceLocalSearchOptions = js.native
-  /**
-    * When reverse geocoding a result, use this distance in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationToAddressDistance)
-    *
-    * @default 1500
-    */
-  /* CompleteClass */
-  override var locationToAddressDistance: scala.Double = js.native
+  override var locationType: java.lang.String = js.native
   /**
     * The locator task used to search. This is **required** and defaults to the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *

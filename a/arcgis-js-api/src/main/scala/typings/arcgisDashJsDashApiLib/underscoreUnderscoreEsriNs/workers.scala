@@ -20,8 +20,9 @@ trait workers extends js.Object {
     * @param modulePath A fully qualified URL to a script to execute with the workers framework.
     * @param options Worker options. See properties below for object specifications.
     * @param options.client The objects defining the API accessible from the module.
-    * @param options.strategy
-    * Indicates how to load the module. See the table below for a list of possible values.
+    * @param options.strategy Indicates how to load the module. See the table below for a list of possible values.
+    * @param options.signal
+    * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     * Possible Value | Description
     * ---------------|------------

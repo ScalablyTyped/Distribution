@@ -1,18 +1,13 @@
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/p-lazy/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/p-lazy),TsIdentLibrarySimple(p-lazy)),TsIdentModule(None,List(p-lazy))) [id => p-lazy, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(p-lazy)) [id => p-lazy, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(p-lazy) [id => p-lazy, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(p-lazy) [id => p-lazy, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => p-lazy, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(p-lazy) / TsDeclInterface(PLazy))] 
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing p-lazy [id => p-lazy, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => scala.js] 
 [warn ] Phase3Compile.scala:204 Building p-lazy... [id => p-lazy, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E3] src/main/scala/typings/pDashLazyLib/pDashLazyMod/namespaced.scala:10:32
-[E]      not enough arguments for constructor Promise: (executor: scala.scalajs.js.Function2[scala.scalajs.js.Function1[T | scala.scalajs.js.Thenable[T], _], scala.scalajs.js.Function1[Any, _], _])scala.scalajs.js.Promise[T].
-[E]      Unspecified value parameter executor.
-[E]      L10: class namespaced[T] () extends PLazy[T]
-[E]                                          ^
-[E] [E2] src/main/scala/typings/pDashLazyLib/pDashLazyMod/^.scala:12:11
+[error] Phase3Compile.scala:230 [E] [E2] src/main/scala/typings/pDashLazyLib/pDashLazyMod/^.scala:12:11
 [E]      class Promise is inherited twice
 [E]      L12:      with PLazy[ValueType]
 [E]                     ^
@@ -20,7 +15,6 @@
 [E]      class Promise is inherited twice
 [E]      L11:   extends js.Promise[ValueType]
 [E]                        ^
-[E] src/main/scala/typings/pDashLazyLib/pDashLazyMod/namespaced.scala: L10 [E3]
 [E] src/main/scala/typings/pDashLazyLib/pDashLazyMod/^.scala: L11 [E1], L12 [E2]
 [E] Failed to compile 'p-lazy'
  [id => p-lazy, phase => build] 

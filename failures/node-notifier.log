@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:92 Ignored [id => node-notifier, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-notifier/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-notifier),TsIdentLibrarySimple(node-notifier)),TsIdentModule(None,List(node-notifier))) [id => node-notifier, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(node-notifier) [id => node-notifier, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(node-notifier) [id => node-notifier, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(NotificationCenter)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(NotificationCenter) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(NotifySend)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(NotifySend) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(WindowsToaster)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(WindowsToaster) / TsTypeQuery())] 
@@ -13,56 +13,12 @@
 [warn ] Phase2ToScalaJs.scala:42 Processing node-notifier [id => node-notifier, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => scala.js] 
 [warn ] Phase3Compile.scala:204 Building node-notifier... [id => node-notifier, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E11] src/main/scala/typings/nodeDashNotifierLib/notifiersToasterMod/WindowsToaster.scala:17:1
-[E]       Unmatched closing brace '}' ignored here
-[E]       L17: }
-[E]            ^
-[E] [E10] src/main/scala/typings/nodeDashNotifierLib/notifiersToasterMod/WindowsToaster.scala:14:1
-[E]       expected class or object definition
-[E]       L14: tification,
-[E]            ^
-[E] [E9] src/main/scala/typings/nodeDashNotifierLib/notifiersNotifysendMod/NotifySend.scala:17:1
-[E]      Unmatched closing brace '}' ignored here
-[E]      L17: }
-[E]           ^
-[E] [E8] src/main/scala/typings/nodeDashNotifierLib/notifiersNotifysendMod/NotifySend.scala:14:1
-[E]      expected class or object definition
-[E]      L14: dNs.Notification,
-[E]           ^
-[E] [E7] src/main/scala/typings/nodeDashNotifierLib/notifiersNotificationcenterMod/NotificationCenter.scala:17:1
-[E]      Unmatched closing brace '}' ignored here
-[E]      L17: }
-[E]           ^
-[E] [E6] src/main/scala/typings/nodeDashNotifierLib/notifiersNotificationcenterMod/NotificationCenter.scala:14:1
-[E]      expected class or object definition
-[E]      L14: terMod.NotificationCenterNs.Notification,
-[E]           ^
-[E] [E5] src/main/scala/typings/nodeDashNotifierLib/notifiersGrowlMod/Growl.scala:17:1
-[E]      Unmatched closing brace '}' ignored here
-[E]      L17: }
-[E]           ^
-[E] [E4] src/main/scala/typings/nodeDashNotifierLib/notifiersGrowlMod/Growl.scala:14:1
-[E]      expected class or object definition
-[E]      L14: n,
-[E]           ^
-[E] [E3] src/main/scala/typings/nodeDashNotifierLib/notifiersBalloonMod/WindowsBalloon.scala:17:1
-[E]      Unmatched closing brace '}' ignored here
-[E]      L17: }
-[E]           ^
-[E] [E2] src/main/scala/typings/nodeDashNotifierLib/notifiersBalloonMod/WindowsBalloon.scala:14:1
-[E]      expected class or object definition
-[E]      L14: s.Notification,
-[E]           ^
-[E] [E1] src/main/scala/typings/nodeDashNotifierLib/nodeDashNotifierMod/^.scala:13:1
-[E]      expected class or object definition
-[E]      L13: rLib.nodeDashNotifierMod.nodeNotifierNs.NodeNotifier]
-[E]           ^
-[E] src/main/scala/typings/nodeDashNotifierLib/notifiersGrowlMod/Growl.scala: L14 [E4], L17 [E5]
-[E] src/main/scala/typings/nodeDashNotifierLib/notifiersToasterMod/WindowsToaster.scala: L14 [E10], L17 [E11]
-[E] src/main/scala/typings/nodeDashNotifierLib/notifiersNotifysendMod/NotifySend.scala: L14 [E8], L17 [E9]
-[E] src/main/scala/typings/nodeDashNotifierLib/notifiersBalloonMod/WindowsBalloon.scala: L14 [E2], L17 [E3]
-[E] src/main/scala/typings/nodeDashNotifierLib/notifiersNotificationcenterMod/NotificationCenter.scala: L14 [E6], L17 [E7]
-[E] src/main/scala/typings/nodeDashNotifierLib/nodeDashNotifierMod/^.scala: L13 [E1]
+[error] Phase3Compile.scala:230 [E] [E1] src/main/scala/typings/nodeDashNotifierLib/nodeDashNotifierMod/NodeNotifier.scala:51:7
+[E]      method notify_^ is defined twice;
+[E]        the conflicting method notify_^ was defined at line 49:7
+[E]      L51:   def `notify_^`(): nodeDashNotifierLib.notifiersToasterMod.^ = js.native
+[E]                 ^
+[E] src/main/scala/typings/nodeDashNotifierLib/nodeDashNotifierMod/NodeNotifier.scala: L51 [E1]
 [E] Failed to compile 'node-notifier'
  [id => node-notifier, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => build] 

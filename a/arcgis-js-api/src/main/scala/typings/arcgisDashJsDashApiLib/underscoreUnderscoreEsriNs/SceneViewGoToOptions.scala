@@ -36,6 +36,12 @@ trait SceneViewGoToOptions
     */
   var maxDuration: js.UndefOr[scala.Double] = js.undefined
   /**
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
+    */
+  var signal: js.UndefOr[stdLib.AbortSignal] = js.undefined
+  /**
     * Increases or decreases the animation speed by the specified factor. A speedFactor of 2 will make the animation twice as fast, while a speedFactor of 0.5 will make the animation half as fast. Setting the speed factor will automatically adapt the default maxDuration accordingly.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
@@ -55,6 +61,7 @@ object SceneViewGoToOptions {
     duration: scala.Int | scala.Double = null,
     easing: java.lang.String | EasingFunction = null,
     maxDuration: scala.Int | scala.Double = null,
+    signal: stdLib.AbortSignal = null,
     speedFactor: scala.Int | scala.Double = null
   ): SceneViewGoToOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -62,6 +69,7 @@ object SceneViewGoToOptions {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal)
     if (speedFactor != null) __obj.updateDynamic("speedFactor")(speedFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewGoToOptions]
   }

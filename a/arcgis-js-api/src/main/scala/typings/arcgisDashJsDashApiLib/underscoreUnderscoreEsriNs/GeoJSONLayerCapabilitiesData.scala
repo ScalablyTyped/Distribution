@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GeoJSONLayerCapabilitiesData
   extends stdLib.Object {
   /**
-    * Indicates if the attachment is enabled on the layer.
+    * Indicates if the attachment is enabled on the layer. At this current time, the GeoJSONLayer doesn’t support attachments.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */

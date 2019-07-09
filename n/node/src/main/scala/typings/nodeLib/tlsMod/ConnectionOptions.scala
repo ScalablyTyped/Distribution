@@ -5,26 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConnectionOptions extends SecureContextOptions {
-  var ALPNProtocols: js.UndefOr[
-    (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array
-  ] = js.undefined
-   // Defaults to true
-  var NPNProtocols: js.UndefOr[
-    (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array
-  ] = js.undefined
+trait ConnectionOptions
+  extends SecureContextOptions
+     with CommonConnectionOptions {
+   // Establish secure connection on a given socket rather than creating a new socket
   var checkServerIdentity: js.UndefOr[
     js.Function2[/* host */ java.lang.String, /* cert */ PeerCertificate, js.UndefOr[nodeLib.Error]]
   ] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
-   // If not provided, the entire ConnectionOptions object will be passed to tls.createSecureContext()
   var lookup: js.UndefOr[nodeLib.netMod.LookupFunction] = js.undefined
   var minDHSize: js.UndefOr[scala.Double] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined
-   // Establish secure connection on a given socket rather than creating a new socket
-  var rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
-  var secureContext: js.UndefOr[SecureContext] = js.undefined
   var servername: js.UndefOr[java.lang.String] = js.undefined
    // SNI TLS Extension
   var session: js.UndefOr[nodeLib.Buffer] = js.undefined
@@ -37,7 +29,7 @@ object ConnectionOptions {
   @scala.inline
   def apply(
     ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
-    NPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* ctx */ SecureContext, scala.Unit]) => scala.Unit = null,
     ca: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     cert: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     checkServerIdentity: (/* host */ java.lang.String, /* cert */ PeerCertificate) => js.UndefOr[nodeLib.Error] = null,
@@ -46,6 +38,7 @@ object ConnectionOptions {
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     dhparam: java.lang.String | nodeLib.Buffer = null,
     ecdhCurve: java.lang.String = null,
+    enableTrace: js.UndefOr[scala.Boolean] = js.undefined,
     honorCipherOrder: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
     key: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | js.Object]) = null,
@@ -58,6 +51,7 @@ object ConnectionOptions {
     pfx: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer | js.Object]) = null,
     port: scala.Int | scala.Double = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    requestCert: js.UndefOr[scala.Boolean] = js.undefined,
     secureContext: SecureContext = null,
     secureOptions: scala.Int | scala.Double = null,
     secureProtocol: java.lang.String = null,
@@ -69,7 +63,7 @@ object ConnectionOptions {
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
-    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
@@ -78,6 +72,7 @@ object ConnectionOptions {
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace)
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
     if (host != null) __obj.updateDynamic("host")(host)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
@@ -90,6 +85,7 @@ object ConnectionOptions {
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext)
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
     if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)

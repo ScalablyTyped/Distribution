@@ -14,6 +14,28 @@ trait PrintViewModel extends Accessor {
     */
   var printServiceUrl: java.lang.String = js.native
   /**
+    * When `true`, scale is used in the printed map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#scaleEnabled)
+    *
+    * @default false
+    */
+  var scaleEnabled: scala.Boolean = js.native
+  /**
+    * The view model's state.  **Possible Values:** disabled | ready | complete
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#state)
+    *
+    * @default disabled
+    */
+  val state: java.lang.String = js.native
+  /**
+    * The service metadata that contains the layout/format information for the printout.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#templatesInfo)
+    */
+  val templatesInfo: js.Any = js.native
+  /**
     * The time interval in milliseconds between each job status request sent to an asynchronous GP task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#updateDelay)
@@ -27,6 +49,14 @@ trait PrintViewModel extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#view)
     */
   var view: MapView = js.native
+  /**
+    * This method should be called to load the view model's printing resources.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#load)
+    *
+    *
+    */
+  def load(): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
     * Prints (exports) the current MapView according to selected options.
     *

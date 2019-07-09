@@ -5,16 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BordersProps
-  extends BorderProps[TLengthStyledSystem]
-     with BorderTopProps[TLengthStyledSystem]
-     with BorderRightProps[TLengthStyledSystem]
-     with BorderBottomProps[TLengthStyledSystem]
-     with BorderLeftProps[TLengthStyledSystem]
-     with BorderWidthProps[TLengthStyledSystem]
-     with BorderColorProps
-     with BorderStyleProps
-     with BorderRadiusProps[TLengthStyledSystem]
+trait BordersProps extends BorderProps[TLengthStyledSystem]
 
 object BordersProps {
   @scala.inline
@@ -27,7 +18,9 @@ object BordersProps {
     borderRight: ResponsiveValue[csstypeLib.csstypeMod.BorderRightProperty[TLengthStyledSystem]] = null,
     borderStyle: ResponsiveValue[csstypeLib.csstypeMod.BorderStyleProperty] = null,
     borderTop: ResponsiveValue[csstypeLib.csstypeMod.BorderTopProperty[TLengthStyledSystem]] = null,
-    borderWidth: ResponsiveValue[csstypeLib.csstypeMod.BorderWidthProperty[TLengthStyledSystem]] = null
+    borderWidth: ResponsiveValue[csstypeLib.csstypeMod.BorderWidthProperty[TLengthStyledSystem]] = null,
+    borderX: ResponsiveValue[csstypeLib.csstypeMod.BorderProperty[TLengthStyledSystem]] = null,
+    borderY: ResponsiveValue[csstypeLib.csstypeMod.BorderProperty[TLengthStyledSystem]] = null
   ): BordersProps = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
@@ -39,6 +32,8 @@ object BordersProps {
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (borderX != null) __obj.updateDynamic("borderX")(borderX.asInstanceOf[js.Any])
+    if (borderY != null) __obj.updateDynamic("borderY")(borderY.asInstanceOf[js.Any])
     __obj.asInstanceOf[BordersProps]
   }
 }

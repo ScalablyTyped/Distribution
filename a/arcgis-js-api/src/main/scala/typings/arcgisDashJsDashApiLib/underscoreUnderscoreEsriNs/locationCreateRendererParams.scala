@@ -43,6 +43,14 @@ trait locationCreateRendererParams
     */
   var locationScheme: js.UndefOr[LocationScheme] = js.undefined
   /**
+    * For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer)
+    *
+    * @default false
+    */
+  var outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The type of symbol to generate. This depends on the view in which you are working and the desired visualization. This parameter does not need to be specified for layers with a `mesh` geometry type. Possible values are described below.
     *
     * | Value | Description |
@@ -75,6 +83,7 @@ object locationCreateRendererParams {
     basemap: java.lang.String | Basemap = null,
     colorMixMode: java.lang.String = null,
     locationScheme: LocationScheme = null,
+    outlineOptimizationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     symbolType: java.lang.String = null,
     view: SceneView = null
   ): locationCreateRendererParams = {
@@ -82,6 +91,7 @@ object locationCreateRendererParams {
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
     if (locationScheme != null) __obj.updateDynamic("locationScheme")(locationScheme)
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[locationCreateRendererParams]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tstl/base", "ForOfAdaptor")
 @js.native
-class ForOfAdaptor[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */] protected ()
+class ForOfAdaptor[T, InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator] */] protected ()
   extends tstlLib.baseIteratorForOfAdaptorMod.ForOfAdaptor[T, InputIterator] {
   /**
     * Initializer Constructor.

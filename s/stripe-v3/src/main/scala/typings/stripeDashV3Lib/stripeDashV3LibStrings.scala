@@ -41,6 +41,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait abandoned
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentCancelationReason
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentCancelationReason
   
   @js.native
   sealed trait abn_amro extends js.Object
@@ -123,6 +124,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait canceled
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentStatus
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentStatus
   
   @js.native
   sealed trait card
@@ -199,6 +201,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait duplicate
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentCancelationReason
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentCancelationReason
   
   @js.native
   sealed trait elevated extends js.Object
@@ -351,6 +354,12 @@ object stripeDashV3LibStrings {
   sealed trait not_supported extends js.Object
   
   @js.native
+  sealed trait off_session extends js.Object
+  
+  @js.native
+  sealed trait on_session extends js.Object
+  
+  @js.native
   sealed trait optional extends js.Object
   
   @js.native
@@ -387,6 +396,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait processing
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentStatus
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentStatus
   
   @js.native
   sealed trait rabobank extends js.Object
@@ -420,6 +430,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait requested_by_customer
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentCancelationReason
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentCancelationReason
   
   @js.native
   sealed trait required
@@ -428,6 +439,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait requires_action
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentStatus
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentStatus
   
   @js.native
   sealed trait requires_capture
@@ -436,10 +448,12 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait requires_confirmation
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentStatus
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentStatus
   
   @js.native
   sealed trait requires_payment_method
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentStatus
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentStatus
   
   @js.native
   sealed trait reusable extends js.Object
@@ -458,6 +472,9 @@ object stripeDashV3LibStrings {
   
   @js.native
   sealed trait sepa_debit extends js.Object
+  
+  @js.native
+  sealed trait setup_intent extends js.Object
   
   @js.native
   sealed trait shippingaddresschange extends js.Object
@@ -486,6 +503,7 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait succeeded
     extends stripeDashV3Lib.stripeNs.paymentIntentsNs.PaymentIntentStatus
+       with stripeDashV3Lib.stripeNs.setupIntentsNs.SetupIntentStatus
   
   @js.native
   sealed trait success extends js.Object
@@ -746,6 +764,10 @@ object stripeDashV3LibStrings {
   @scala.inline
   def not_supported: not_supported = "not_supported".asInstanceOf[not_supported]
   @scala.inline
+  def off_session: off_session = "off_session".asInstanceOf[off_session]
+  @scala.inline
+  def on_session: on_session = "on_session".asInstanceOf[on_session]
+  @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   @scala.inline
   def p24: p24 = "p24".asInstanceOf[p24]
@@ -809,6 +831,8 @@ object stripeDashV3LibStrings {
   def samsung_pay: samsung_pay = "samsung_pay".asInstanceOf[samsung_pay]
   @scala.inline
   def sepa_debit: sepa_debit = "sepa_debit".asInstanceOf[sepa_debit]
+  @scala.inline
+  def setup_intent: setup_intent = "setup_intent".asInstanceOf[setup_intent]
   @scala.inline
   def shippingaddresschange: shippingaddresschange = "shippingaddresschange".asInstanceOf[shippingaddresschange]
   @scala.inline

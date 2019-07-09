@@ -1,7 +1,7 @@
 
 # Scala.js typings for mathjs
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with dif
@@ -35,12 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for mathjs 5.0
+// Type definitions for mathjs 6.0
 // Project: https://mathjs.org/
 // Definitions by: Ilya Shestakov <https://github.com/siavol>,
 //                  Andy Patterson <https://github.com/andnp>,
 //                  Brad Besserman <https://github.com/bradbesserman>
 //                  Pawel Krol <https://github.com/pawkrol>
+//                  Charlee Li <https://github.com/charlee>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

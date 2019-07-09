@@ -10,7 +10,7 @@ trait ImageServiceIdentifyResult
   extends Accessor
      with JSONSupport {
   /**
-    * The set of visible areas for the identified catalog items. `CatalogItemVisibilities` are returned only when the image service source is a mosaic dataset.
+    * The set of visible areas for the identified catalog items. `CatalogItemVisibilities` are returned only when the image service source is a mosaic dataset. Each element in the array corresponds to the percentage contribution (to final mosaic in given extent) of the item in `catalogItems`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyResult.html#catalogItemVisibilities)
     */
@@ -46,7 +46,7 @@ trait ImageServiceIdentifyResult
     */
   var properties: js.Any = js.native
   /**
-    * The identify property pixel value.
+    * The identify image service pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyResult.html#value)
     */

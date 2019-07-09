@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-blessed"
-version := "0.3-dt-20190311Z-c09afd"
+version := "0.3-dt-20190311Z-66d4c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "blessed" % "0.1-dt-20190322Z-decc42",
+  "org.scalablytyped" %%% "blessed" % "0.1-dt-20190322Z-994f39",
   "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190703Z-a67e53",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
   "org.scalablytyped" %%% "std" % "3.5-983486")

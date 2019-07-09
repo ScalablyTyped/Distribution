@@ -15,7 +15,7 @@ trait GetCostForecastRequest extends js.Object {
     */
   var Granularity: awsDashSdkLib.clientsCostexplorerMod.Granularity
   /**
-    * Which metric Cost Explorer uses to create your forecast. For more information about blended and unblended rates, see Why does the "blended" annotation appear on some line items in my bill?.  Valid values for a GetCostForecast call are the following:   AmortizedCost   BlendedCost   NetAmortizedCost   NetUnblendedCost   UnblendedCost  
+    * Which metric Cost Explorer uses to create your forecast. For more information about blended and unblended rates, see Why does the "blended" annotation appear on some line items in my bill?.  Valid values for a GetCostForecast call are the following:   AMORTIZED_COST   BLENDED_COST   NET_AMORTIZED_COST   NET_UNBLENDED_COST   UNBLENDED_COST  
     */
   var Metric: awsDashSdkLib.clientsCostexplorerMod.Metric
   /**

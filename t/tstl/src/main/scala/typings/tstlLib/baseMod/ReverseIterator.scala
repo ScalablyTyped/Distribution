@@ -14,6 +14,6 @@ abstract class ReverseIterator[T /* <: Elem */, Source /* <: tstlLib.baseContain
     *
     * @param base The base iterator.
     */
-  protected def this(base: Base) = this()
+  def this(base: Base) = this()
 }
 

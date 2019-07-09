@@ -37,7 +37,7 @@ trait SceneViewGoToTarget
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
     */
   var target: js.UndefOr[
-    (js.Array[scala.Double | Geometry | Graphic]) | Geometry | Graphic | Viewpoint | Camera
+    (js.Array[scala.Double | Geometry | Graphic]) | Geometry | (Collection[Geometry | Graphic]) | Graphic | Viewpoint | Camera
   ] = js.undefined
   /**
     * The [Camera.tilt](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#position) to go to.
@@ -63,7 +63,7 @@ object SceneViewGoToTarget {
     heading: scala.Int | scala.Double = null,
     position: Point = null,
     scale: scala.Int | scala.Double = null,
-    target: (js.Array[scala.Double | Geometry | Graphic]) | Geometry | Graphic | Viewpoint | Camera = null,
+    target: (js.Array[scala.Double | Geometry | Graphic]) | Geometry | (Collection[Geometry | Graphic]) | Graphic | Viewpoint | Camera = null,
     tilt: scala.Int | scala.Double = null,
     zoom: scala.Int | scala.Double = null
   ): SceneViewGoToTarget = {

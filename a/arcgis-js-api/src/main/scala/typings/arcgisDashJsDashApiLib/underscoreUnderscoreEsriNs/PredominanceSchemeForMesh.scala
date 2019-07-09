@@ -15,6 +15,12 @@ trait PredominanceSchemeForMesh
     */
   var colors: js.Array[Color]
   /**
+    * The unique name of the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForMesh)
+    */
+  var name: java.lang.String
+  /**
     * The color of the fill symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForMesh)
@@ -26,6 +32,12 @@ trait PredominanceSchemeForMesh
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForMesh)
     */
   var opacity: scala.Double
+  /**
+    * Tags associated with the scheme.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#PredominanceSchemeForMesh)
+    */
+  var tags: js.Array[java.lang.String]
 }
 
 object PredominanceSchemeForMesh {
@@ -34,11 +46,13 @@ object PredominanceSchemeForMesh {
     colors: js.Array[Color],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    name: java.lang.String,
     noDataColor: Color,
     opacity: scala.Double,
-    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    tags: js.Array[java.lang.String]
   ): PredominanceSchemeForMesh = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags)
   
     __obj.asInstanceOf[PredominanceSchemeForMesh]
   }

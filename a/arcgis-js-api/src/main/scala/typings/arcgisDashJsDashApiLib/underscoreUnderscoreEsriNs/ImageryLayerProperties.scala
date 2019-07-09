@@ -5,111 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ArcGISImageServiceProperties because var conflicts: fullExtent. Inlined compressionQuality, compressionTolerance, copyright, definitionExpression, domainFields, fields, format, hasMultidimensions, hasRasterAttributeTable, imageMaxHeight, imageMaxWidth, mosaicRule, multidimensionalInfo, pixelType, popupTemplate, rasterAttributeTable, rasterAttributeTableFieldPrefix, rasterFields, renderer, renderingRule, url */ trait ImageryLayerProperties
+trait ImageryLayerProperties
   extends LayerProperties
+     with ArcGISImageServiceProperties
+     with PortalLayerProperties
+     with RefreshableLayerProperties
      with ScaleRangeLayerProperties
-     with RefreshableLayerProperties {
+     with TemporalLayerProperties {
   /**
-    * The compression quality value. This controls how much loss the image will be subjected to. Only valid when using `jpg` [image format](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format).
+    * Indicates whether the layer will be included in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionQuality)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#legendEnabled)
+    *
+    * @default true
     */
-  var compressionQuality: js.UndefOr[scala.Double] = js.undefined
+  var legendEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The output image compression tolerance value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionTolerance)
-    *
-    * @default 0.01
-    */
-  var compressionTolerance: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * The copyright text as defined by the image service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#copyright)
-    */
-  var copyright: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The SQL where clause used to filter rasters on the client. Only the rasters that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#definitionExpression)
-    */
-  var definitionExpression: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * An array of fields in the layer for which a [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) has been defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#domainFields)
-    */
-  var domainFields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
-  /**
-    * An array of fields in the layer. Each field represents an attribute that may contain a value for each raster in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields)
-    */
-  var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
-  /**
-    * The output image type. The default value is `lerc` if a [pixelFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter) is set on the layer.  **Possible Values:** png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format)
-    *
-    * @default jpgpng
-    */
-  var format: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Indicates if the Image Service has [multidimensionalInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions)
-    */
-  var hasMultidimensions: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * Indicates if the Image Service has a [raster attribute table](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable). If `true`, the raster attribute table can be accessed with the [rasterAttributeTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable) property after the layer has [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#loaded).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasRasterAttributeTable)
-    */
-  var hasRasterAttributeTable: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * Indicates the maximum height of the image exported by the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxHeight)
-    *
-    * @default 4100
-    */
-  var imageMaxHeight: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Indicates the maximum width of the image exported by the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxWidth)
-    *
-    * @default 15000
-    */
-  var imageMaxWidth: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Defines how overlapping images should be mosaicked.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule)
-    */
-  var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
-  /**
-    * The multidimensional information associated with the service. This will have a value if `serviceInfo` has `hasMultidimensionalInfo = true`.  If defined, multidimensional information contains various "dimensions" of data for a particular value, such as time, depth, altitude, etc. Defining slices of particular dimensions in the layer is handled with the [multidimensionalDefinition](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition) property of the [mosaicRule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo)
-    */
-  var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
-  /**
-    * A function that processes [pixelData](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData). The `pixelData` object contains a [pixelBlock](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html) property that gives you access to all of the pixels in the raster on the client.  Inside the `pixelFilter` you may loop through all the [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) found in the `pixelBlock` property of the `pixelData` object and process them. This function may be used to hide some pixels from the view, alter their values, and change their color.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#pixelFilter)
-    */
-  var pixelFilter: js.UndefOr[js.Function] = js.undefined
-  /**
-    * The pixel type.  **Possible Values:** s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelType)
-    */
-  var pixelType: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Indicates whether to display popups when the layer is clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
+    * Indicates whether to display popups when features in the layer are clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupEnabled)
     *
@@ -119,53 +31,9 @@ import scala.scalajs.js.annotation._
   /**
     * The popup template for the layer. When set on the layer, the popupTemplate allows users to access attributes and display their values using text and/or charts in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a pixel is clicked. See [this sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#popupTemplate)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupTemplate)
     */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
-  /**
-    * The portal item from which the layer is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#portalItem)
-    */
-  var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
-  /**
-    * The raster attribute table associated with the service. To access the raster attribute table, the layer must be [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#loaded).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable)
-    */
-  var rasterAttributeTable: js.UndefOr[js.Any] = js.undefined
-  /**
-    * Prefix used to define the fields from the raster attribute table. It's primarily used for [popups](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html)
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTableFieldPrefix)
-    *
-    * @default Raster.
-    */
-  var rasterAttributeTableFieldPrefix: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * A complete list of fields that consists of fields from the layer, pixel value fields and the attribute table fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterFields)
-    */
-  var rasterFields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
-  /**
-    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be stretched across the color ramp, classified or have different symbols based on values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
-    */
-  var renderer: js.UndefOr[RendererProperties] = js.undefined
-  /**
-    * Specifies the rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderingRule)
-    */
-  var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
-  /**
-    * The URL to the REST endpoint of the layer. The URL may either point to a resource on ArcGIS Enterprise or ArcGIS Online.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#url)
-    */
-  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ImageryLayerProperties {
@@ -184,23 +52,28 @@ object ImageryLayerProperties {
     id: java.lang.String = null,
     imageMaxHeight: scala.Int | scala.Double = null,
     imageMaxWidth: scala.Int | scala.Double = null,
+    interpolation: java.lang.String = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
     mosaicRule: MosaicRuleProperties = null,
     multidimensionalInfo: js.Any = null,
+    noData: scala.Double | js.Array[scala.Double] = null,
+    noDataInterpretation: java.lang.String = null,
+    objectIdField: java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
     pixelFilter: js.Function = null,
-    pixelType: java.lang.String = null,
+    pixelType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.s8 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.s16 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.s32 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.u8 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.u16 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.u32 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.f32 | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.f64 = null,
     popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     popupTemplate: PopupTemplateProperties = null,
     portalItem: PortalItemProperties = null,
     rasterAttributeTable: js.Any = null,
     rasterAttributeTableFieldPrefix: java.lang.String = null,
-    rasterFields: js.Array[FieldProperties] = null,
     refreshInterval: scala.Int | scala.Double = null,
     renderer: RendererProperties = null,
     renderingRule: RasterFunctionProperties = null,
+    timeInfo: TimeInfoProperties = null,
     title: java.lang.String = null,
     url: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -219,23 +92,28 @@ object ImageryLayerProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (imageMaxHeight != null) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.asInstanceOf[js.Any])
     if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
     if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo)
+    if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
+    if (noDataInterpretation != null) __obj.updateDynamic("noDataInterpretation")(noDataInterpretation)
+    if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (pixelFilter != null) __obj.updateDynamic("pixelFilter")(pixelFilter)
-    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType)
+    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
     if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (rasterAttributeTable != null) __obj.updateDynamic("rasterAttributeTable")(rasterAttributeTable)
     if (rasterAttributeTableFieldPrefix != null) __obj.updateDynamic("rasterAttributeTableFieldPrefix")(rasterAttributeTableFieldPrefix)
-    if (rasterFields != null) __obj.updateDynamic("rasterFields")(rasterFields)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
+    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

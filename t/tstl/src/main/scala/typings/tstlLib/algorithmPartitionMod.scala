@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/algorithm/partition", JSImport.Namespace)
 @js.native
 object algorithmPartitionMod extends js.Object {
-  def is_partitioned[ForwardIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
-      ForwardIterator
-    ]
+  def is_partitioned[ForwardIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
+    ForwardIterator
   ] */](
     first: ForwardIterator,
     last: ForwardIterator,
@@ -34,9 +32,7 @@ object algorithmPartitionMod extends js.Object {
       scala.Boolean
     ]
   ): BidirectionalIterator = js.native
-  def partition_copy[InputIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
-  ] */, OutputIterator1 /* <: tstlLib.iteratorIFakeMod.Writeonly[
+  def partition_copy[InputIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator] */, OutputIterator1 /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator1]
   ] */, OutputIterator2 /* <: tstlLib.iteratorIFakeMod.Writeonly[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], OutputIterator2]
@@ -50,11 +46,9 @@ object algorithmPartitionMod extends js.Object {
       tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator]
     ]
   ): tstlLib.utilityPairMod.Pair[OutputIterator1, OutputIterator2] = js.native
-  def partition_point[ForwardIterator /* <: stdLib.Readonly[
-    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-      tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
-      ForwardIterator
-    ]
+  def partition_point[ForwardIterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[ForwardIterator], 
+    ForwardIterator
   ] */](
     first: ForwardIterator,
     last: ForwardIterator,

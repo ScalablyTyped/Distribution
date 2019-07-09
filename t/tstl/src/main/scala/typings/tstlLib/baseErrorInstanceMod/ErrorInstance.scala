@@ -49,6 +49,7 @@ abstract class ErrorInstance () extends js.Object {
     * @return The message.
     */
   def message(): java.lang.String = js.native
+  def toJSON(): js.Object = js.native
   /**
     * Covert bo bool.
     *

@@ -32,6 +32,12 @@ trait DirectionsSearchProperties
     */
   var autoSelect: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Define the type of location, either `"street"` or `"rooftop"`. The default value will be `"street"` for any locator source that does not define a locationType.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
+    */
+  var locationType: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Indicates the maximum number of search results to return.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
@@ -121,6 +127,7 @@ object DirectionsSearchProperties {
     allPlaceholder: java.lang.String = null,
     autoNavigate: js.UndefOr[scala.Boolean] = js.undefined,
     autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    locationType: java.lang.String = null,
     maxResults: scala.Int | scala.Double = null,
     maxSuggestions: scala.Int | scala.Double = null,
     minSuggestCharacters: scala.Int | scala.Double = null,
@@ -140,6 +147,7 @@ object DirectionsSearchProperties {
     if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder)
     if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
     if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])

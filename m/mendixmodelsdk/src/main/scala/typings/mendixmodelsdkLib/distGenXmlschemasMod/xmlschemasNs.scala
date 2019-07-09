@@ -22,7 +22,7 @@ object xmlschemasNs extends js.Object {
   trait IXmlSchema extends IMxSchema
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
   abstract class MxSchema protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

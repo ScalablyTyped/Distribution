@@ -15,11 +15,11 @@ trait ClassBreaksRendererProperties
     */
   var backgroundFillSymbol: js.UndefOr[FillSymbolProperties | PolygonSymbol3DProperties] = js.undefined
   /**
-    * Each element in the array is an object that provides information about a class break associated with the renderer. Each object has the following specification:
+    * Each element in the array is an object that provides information about a class break associated with the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#classBreakInfos)
     */
-  var classBreakInfos: js.UndefOr[js.Array[ClassBreaksRendererClassBreakInfos]] = js.undefined
+  var classBreakInfos: js.UndefOr[js.Array[ClassBreakInfoProperties]] = js.undefined
   /**
     * Label used in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) to describe features assigned the [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#defaultSymbol). The [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#defaultSymbol) is used to draw all features with unspecified, unmatched values.
     *
@@ -90,7 +90,7 @@ object ClassBreaksRendererProperties {
   def apply(
     authoringInfo: AuthoringInfoProperties = null,
     backgroundFillSymbol: FillSymbolProperties | PolygonSymbol3DProperties = null,
-    classBreakInfos: js.Array[ClassBreaksRendererClassBreakInfos] = null,
+    classBreakInfos: js.Array[ClassBreakInfoProperties] = null,
     defaultLabel: java.lang.String = null,
     defaultSymbol: SymbolProperties = null,
     field: java.lang.String = null,

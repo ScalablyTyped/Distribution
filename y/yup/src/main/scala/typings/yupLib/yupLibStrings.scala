@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object yupLibStrings {
   @js.native
+  sealed trait Id extends js.Object
+  
+  @js.native
   sealed trait LocaleObject extends js.Object
   
   @js.native
@@ -27,6 +30,8 @@ object yupLibStrings {
   @js.native
   sealed trait trunc extends js.Object
   
+  @scala.inline
+  def Id: Id = "Id".asInstanceOf[Id]
   @scala.inline
   def LocaleObject: LocaleObject = "LocaleObject".asInstanceOf[LocaleObject]
   @scala.inline

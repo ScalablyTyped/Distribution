@@ -52,7 +52,7 @@ trait Editor extends Widget {
     */
   var view: MapView = js.native
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the module:esri/widgets/Editor/EditorToggleViewModel class to access all properties and methods on the widget.
+    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) class to access all properties and methods on the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
     */
@@ -86,7 +86,7 @@ trait Editor extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureCreation)
     *
-    * @param creationInfo An object containing information needed to create a new feature using the Editor widget.
+    * @param creationInfo An object containing information needed to create a new feature using the Editor widget. This object provides the feature template and layer for creating a new feature.
     *
     */
   def startCreateWorkflowAtFeatureCreation(creationInfo: CreationInfo): scala.Unit = js.native
@@ -129,7 +129,7 @@ trait Editor extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtMultipleFeatureSelection)
     *
-    * @param candidates An array of features to be updated.
+    * @param candidates An array of features to be updated. This is only relevant when there are multiple candidates to update.
     *
     */
   def startUpdateWorkflowAtMultipleFeatureSelection(candidates: js.Array[Graphic]): scala.Unit = js.native

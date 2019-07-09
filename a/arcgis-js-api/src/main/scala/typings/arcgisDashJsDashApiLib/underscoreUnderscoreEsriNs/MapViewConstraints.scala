@@ -76,7 +76,7 @@ trait MapViewConstraints
     */
   var rotationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * When `true`, the view snaps to the next LOD when zooming in or out. When `false`, the zoom is continuous.
+    * When `true`, the view snaps to the next LOD when zooming in or out. When `false`, the zoom is continuous. This does not apply when zooming in/out using two finger pinch in/out.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     *

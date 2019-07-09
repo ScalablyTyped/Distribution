@@ -13,7 +13,7 @@ class TLSSocket protected ()
     * Construct a new tls.TLSSocket object from an existing TCP socket.
     */
   def this(socket: nodeLib.netMod.Socket) = this()
-  def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_ALPNProtocols) = this()
+  def this(socket: nodeLib.netMod.Socket, options: TLSSocketOptions) = this()
   /**
     * String containing the selected ALPN protocol.
     * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
@@ -39,6 +39,11 @@ class TLSSocket protected ()
     listener: js.Function1[/* response */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def addListener_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function1[/* line */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_session(
@@ -48,9 +53,21 @@ class TLSSocket protected ()
   @JSName("emit")
   def emit_OCSPResponse(event: nodeLib.nodeLibStrings.OCSPResponse, response: nodeLib.Buffer): scala.Boolean = js.native
   @JSName("emit")
+  def emit_keylog(event: nodeLib.nodeLibStrings.keylog, line: nodeLib.Buffer): scala.Boolean = js.native
+  @JSName("emit")
   def emit_secureConnect(event: nodeLib.nodeLibStrings.secureConnect): scala.Boolean = js.native
   @JSName("emit")
   def emit_session(event: nodeLib.nodeLibStrings.session, session: nodeLib.Buffer): scala.Boolean = js.native
+  /**
+    * When enabled, TLS packet trace information is written to `stderr`. This can be
+    * used to debug TLS connection problems.
+    *
+    * Note: The format of the output is identical to the output of `openssl s_client
+    * -trace` or `openssl s_server -trace`. While it is produced by OpenSSL's
+    * `SSL_trace()` function, the format is undocumented, can change without notice,
+    * and should not be relied on.
+    */
+  def enableTrace(): scala.Unit = js.native
   /**
     * Returns an object representing the cipher name and the SSL/TLS protocol version of the current connection.
     * @returns Returns an object representing the cipher name
@@ -99,6 +116,11 @@ class TLSSocket protected ()
     listener: js.Function1[/* response */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function1[/* line */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
   def on_session(
@@ -109,6 +131,11 @@ class TLSSocket protected ()
   def once_OCSPResponse(
     event: nodeLib.nodeLibStrings.OCSPResponse,
     listener: js.Function1[/* response */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function1[/* line */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -123,6 +150,11 @@ class TLSSocket protected ()
     listener: js.Function1[/* response */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
+  def prependListener_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function1[/* line */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
   def prependListener_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_session(
@@ -133,6 +165,11 @@ class TLSSocket protected ()
   def prependOnceListener_OCSPResponse(
     event: nodeLib.nodeLibStrings.OCSPResponse,
     listener: js.Function1[/* response */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_keylog(
+    event: nodeLib.nodeLibStrings.keylog,
+    listener: js.Function1[/* line */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native

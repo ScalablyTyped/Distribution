@@ -19,19 +19,13 @@ trait LocatorSearchSource extends SearchSource {
     */
   var countryCode: java.lang.String
   /**
-    * Sets the sources for local `distance` and `minScale` for searching. See the object specification table below for details.
+    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).  **Possible Values:** rooftop | street | null
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchOptions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
+    *
+    * @default null
     */
-  var localSearchOptions: LocatorSearchSourceLocalSearchOptions
-  /**
-    * When reverse geocoding a result, use this distance in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationToAddressDistance)
-    *
-    * @default 1500
-    */
-  var locationToAddressDistance: scala.Double
+  var locationType: java.lang.String
   /**
     * The locator task used to search. This is **required** and defaults to the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
@@ -93,21 +87,14 @@ class LocatorSearchSourceCls () extends LocatorSearchSource {
   /* CompleteClass */
   override var filter: SearchSourceFilter = js.native
   /**
-    * Sets the sources for local `distance` and `minScale` for searching. See the object specification table below for details.
+    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).  **Possible Values:** rooftop | street | null
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchOptions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
+    *
+    * @default null
     */
   /* CompleteClass */
-  override var localSearchOptions: LocatorSearchSourceLocalSearchOptions = js.native
-  /**
-    * When reverse geocoding a result, use this distance in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationToAddressDistance)
-    *
-    * @default 1500
-    */
-  /* CompleteClass */
-  override var locationToAddressDistance: scala.Double = js.native
+  override var locationType: java.lang.String = js.native
   /**
     * The locator task used to search. This is **required** and defaults to the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
@@ -286,8 +273,7 @@ object LocatorSearchSource {
     filter: SearchSourceFilter,
     getResults: GetResultsParameters => arcgisDashJsDashApiLib.IPromise[js.Array[SearchResult]],
     getSuggestions: GetSuggestionsParameters => arcgisDashJsDashApiLib.IPromise[js.Array[SuggestResult]],
-    localSearchOptions: LocatorSearchSourceLocalSearchOptions,
-    locationToAddressDistance: scala.Double,
+    locationType: java.lang.String,
     locator: Locator,
     maxResults: scala.Double,
     maxSuggestions: scala.Double,
@@ -308,7 +294,7 @@ object LocatorSearchSource {
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): LocatorSearchSource = {
-    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, categories = categories, clone = js.Any.fromFunction0(clone), countryCode = countryCode, filter = filter, getResults = js.Any.fromFunction1(getResults), getSuggestions = js.Any.fromFunction1(getSuggestions), localSearchOptions = localSearchOptions, locationToAddressDistance = locationToAddressDistance, locator = locator, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchTemplate = searchTemplate, singleLineFieldName = singleLineFieldName, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, categories = categories, clone = js.Any.fromFunction0(clone), countryCode = countryCode, filter = filter, getResults = js.Any.fromFunction1(getResults), getSuggestions = js.Any.fromFunction1(getSuggestions), locationType = locationType, locator = locator, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchTemplate = searchTemplate, singleLineFieldName = singleLineFieldName, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
   
     __obj.asInstanceOf[LocatorSearchSource]
   }

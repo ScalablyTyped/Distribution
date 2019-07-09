@@ -102,7 +102,7 @@ trait InputField extends Accessor {
     */
   val `type`: java.lang.String = js.native
   /**
-    * When `true`, the input value is invalid. Otherwise, it is valid.
+    * When `true`, the input value is valid. Otherwise, it is invalid.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#valid)
     */

@@ -55,6 +55,12 @@ object HeadingProps {
     marginTop: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
+    marginX: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    marginY: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
     mb: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginBottomProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -68,10 +74,10 @@ object HeadingProps {
       csstypeLib.csstypeMod.MarginTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     mx: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
-      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     my: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
-      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+      csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     order: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.GlobalsNumber] = null,
     p: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
@@ -91,6 +97,12 @@ object HeadingProps {
     ] = null,
     paddingTop: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    paddingX: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    paddingY: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     pb: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingBottomProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
@@ -137,6 +149,8 @@ object HeadingProps {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
@@ -150,6 +164,8 @@ object HeadingProps {
     if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
     if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
     if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
     if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])

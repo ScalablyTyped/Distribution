@@ -11,7 +11,7 @@ trait DotDensityRenderer
      with RendererWithVisualVariables
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.renderersNs.RendererWithVisualVariables {
   /**
-    * Defines the variable(s) used to visualize density. This is an array of objects, each of which references a numeric field value or [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression used to drive the density. You must also set a color corresponding to each value.  If you set a single attribute, `POPULATION` and match it with a color `black` and the [referenceDotValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceDotValue) is `100`, then number of black dots rendered for each feature will approximately equal the value of `POPULATION` divided by `100`.  This property is limited to no more than 8 attributes.
+    * Defines the variable(s) used to visualize density. This is an array of objects, each of which references a numeric field value or [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression used to drive the density. You must also set a color corresponding to each value.  If you set a single attribute, `POPULATION` and match it with a color `black` and the [dotValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue) is `100`, then number of black dots rendered for each feature will approximately equal the value of `POPULATION` divided by `100`.  This property is limited to no more than 8 attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes)
     */
@@ -32,11 +32,17 @@ trait DotDensityRenderer
     * ![dot-density-blend](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/dot-density-blend.png) | ![dot-density-no-blend](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/dot-density-no-blend.png)
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#blendDots)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotBlendingEnabled)
     *
     * @default true
     */
-  var blendDots: scala.Boolean = js.native
+  var dotBlendingEnabled: scala.Boolean = js.native
+  /**
+    * Defines the initial dot value used for visualizing density. If a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is provided, this value indicates the value of each dot at the [view.scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) matching the value in [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale). If [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is set, the dot value will be recalculated depending on the view scale. Note the value of `dotValue` will remain constant even in this scenario. The variable dot value as displayed in the legend is recalculated using [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue). If a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is not provided, the value specified in this property will apply to dots at all scales.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue)
+    */
+  var dotValue: scala.Double = js.native
   /**
     * An object providing options for configuring the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
@@ -50,17 +56,19 @@ trait DotDensityRenderer
     */
   var outline: SimpleLineSymbol = js.native
   /**
-    * Defines the initial dot value used for visualizing density. If a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is provided, this value indicates the value of each dot at the [view.scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) matching the value in [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale). If [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is set, the dot value will be recalculated depending on the view scale. Note the value of `referenceDotValue` will remain constant even in this scenario. The variable dot value as displayed in the legend is recalculated using [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue). If a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is not provided, the value specified in this property will apply to dots at all scales.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceDotValue)
-    */
-  var referenceDotValue: scala.Double = js.native
-  /**
-    * When defined, the renderer will recalculate the dot value linearly based on the change in the view's scale using the [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue) method. The rendering will maintain the density of points as drawn at the provided scale across various scales. However, the dot value will change as the user zooms in or out from the provided scale value, though the value of [referenceDotValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceDotValue) will remain constant.  When the computed dot value reaches `1`, the dot value is no longer recalculated as the user zooms further in.
+    * When defined, the renderer will recalculate the dot value linearly based on the change in the view's scale using the [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue) method. The rendering will maintain the density of points as drawn at the provided scale across various scales. However, the dot value will change as the user zooms in or out from the provided scale value, though the value of [dotValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue) will remain constant.  When the computed dot value reaches `1`, the dot value is no longer recalculated as the user zooms further in.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale)
     */
   var referenceScale: scala.Double = js.native
+  /**
+    * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer. By design, dot placement varies for the same feature across scales. If the user desires to see a different set of dot placements for a given scale, the developer may provide an alternate seed value to recalculate the random placement of dots.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#seed)
+    *
+    * @default 1
+    */
+  var seed: scala.Double = js.native
   /**
     * The type of renderer. For DotDensityRenderer this value is always `dot-density`.
     *

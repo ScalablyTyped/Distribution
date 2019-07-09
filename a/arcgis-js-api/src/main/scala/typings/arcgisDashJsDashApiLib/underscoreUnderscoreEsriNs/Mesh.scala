@@ -38,6 +38,7 @@ trait Mesh
     *
     */
   def addComponent(component: MeshComponent): scala.Unit = js.native
+  def addComponent(component: MeshComponentProperties): scala.Unit = js.native
   /**
     * Centers the mesh at the specified location without changing its scale. The mesh will be modified in place. To modify a copy of the mesh instead, use [clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#clone) before calling [centerAt()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt).
     *

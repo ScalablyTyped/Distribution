@@ -31,6 +31,19 @@ trait BaseElevationLayer extends Layer {
     */
   def addResolvingPromise(promiseToLoad: arcgisDashJsDashApiLib.IPromise[_]): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
+    * Creates an elevation sampler for the given [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) by querying the service layer for elevation data and caching it so values may be sampled quickly afterwards. The resolution of the cached data can be set using the `demResolution` option. In many cases, `auto` demResolution can be used to get high quality elevation samples without the need to know exactly where the data in the service is located. This is particularly useful for services which combine elevation data from many sources (such as the world elevation service). If more control, or higher quality samples are required, use either `finest-contiguous` or a fixed `{number}` resolution.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#createElevationSampler)
+    *
+    * @param extent The extent for which to create the sampler.
+    * @param options Additional query options. See the table below.
+    * @param options.demResolution Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`). See [ElevationLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation) for more details.
+    * @param options.noDataValue The value to use when there is no data available.
+    *
+    */
+  def createElevationSampler(extent: Extent): arcgisDashJsDashApiLib.IPromise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent, options: BaseElevationLayerCreateElevationSamplerOptions): arcgisDashJsDashApiLib.IPromise[ElevationSampler] = js.native
+  /**
     * Fetches a tile at the given level, row, and column present in the view. This method must be overwritten to display custom elevation values in the [Map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground). Note that this method must return a promise that resolves to an object with the properties defined in [ElevationTileData](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData).  See the following samples for examples of how to overwrite this method:
     *   * [Sample - Custom ElevationLayer: Exaggerating elevation](https://developers.arcgis.com/javascript/latest/sample-code/layers-custom-elevation-exaggerated/index.html)
     *   * [Sample - Custom ElevationLayer: Thematic data as elevation](https://developers.arcgis.com/javascript/latest/sample-code/layers-custom-elevation-thematic/index.html)
@@ -42,6 +55,7 @@ trait BaseElevationLayer extends Layer {
     * @param column The column (x) position of the tile to fetch.
     * @param options Optional settings for the tile request.
     * @param options.noDataValue The value representing pixels in the tile that don't contain an elevation value.
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def fetchTile(level: scala.Double, row: scala.Double, column: scala.Double): arcgisDashJsDashApiLib.IPromise[ElevationTileData] = js.native
@@ -70,10 +84,40 @@ trait BaseElevationLayer extends Layer {
     eventHandler: BaseElevationLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
+  def on_layerviewcreateerror(
+    name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create-error`,
+    eventHandler: BaseElevationLayerLayerviewCreateErrorEventHandler
+  ): arcgisDashJsDashApiLib.IHandle = js.native
+  @JSName("on")
   def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: BaseElevationLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
+  def queryElevation(geometry: Multipoint): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Multipoint, options: BaseElevationLayerQueryElevationOptions): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native
+  /**
+    * Queries the service layer for elevation values for the given geometry. The returned result contains a copy of the geometry with z-values sampled from elevation data from the service. The resolution from which the elevation is queried can be set using the `demResolution` option. In many cases, `auto` demResolution can be used to get high quality elevation samples without the need to know exactly where the data in the service is located. This is particularly useful for services which combine elevation data from many sources (such as the world elevation service). If more control, or higher quality samples are required, use either `finest-contiguous` or a fixed `{number}` resolution.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
+    *
+    * @param geometry The geometry to use for sampling elevation data.
+    * @param options Additional query options. See the table below.
+    * @param options.demResolution
+    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`). See the table below for more details on the different settings.
+    *
+    * demResolution          | Description
+    * -----------------------|-------------
+    * `auto`                 | Automatically chooses an appropriate resolution for each coordinate of the input geometry. The current implementation will try to use the finest available resolution given that the total required number of tile requests does not exceed a certain maximum amount (currently 20). Note that this may result in values being sampled from different resolutions.
+    * `finest-contiguous`    | Sample elevation from the finest available resolution (cell size) across the entire geometry.
+    * `{number}`             | Sample elevation from the resolution closest to the specified resolution (in meters).
+    * @param options.returnSampleInfo Indicates whether to return additional sample information for each coordinate.
+    * @param options.noDataValue The value to use when there is no data available.
+    *
+    */
+  def queryElevation(geometry: Point): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Point, options: BaseElevationLayerQueryElevationOptions): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline, options: BaseElevationLayerQueryElevationOptions): arcgisDashJsDashApiLib.IPromise[ElevationLayerElevationQueryResult] = js.native
 }
 
 @JSGlobal("__esri.BaseElevationLayer")

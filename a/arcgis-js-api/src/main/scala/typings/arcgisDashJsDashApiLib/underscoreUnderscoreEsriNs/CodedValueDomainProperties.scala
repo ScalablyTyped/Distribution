@@ -19,12 +19,12 @@ object CodedValueDomainProperties {
   def apply(
     codedValues: js.Array[CodedValueDomainCodedValues] = null,
     name: java.lang.String = null,
-    `type`: java.lang.String = null
+    `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.range | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`coded-value` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inherited = null
   ): CodedValueDomainProperties = {
     val __obj = js.Dynamic.literal()
     if (codedValues != null) __obj.updateDynamic("codedValues")(codedValues)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodedValueDomainProperties]
   }
 }

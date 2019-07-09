@@ -13,11 +13,17 @@ trait PixelBlockProperties extends js.Object {
     */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
-    * An array of numbers representing pixels to show and pixels to hide from the view. The length of this array is [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#height) * [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#width). It's arranged row by row in this format: `[p_00, p_10, p_20, ... p_10, p_11, .....]` where `p_xy` is the pixel value at the column `x` and row `y`.  The mask is per pixel, not per band. Items in the mask array with a value of `0` indicates [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) to not display in the view at that index. Items with a value of `1` indicate to display the [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) at there corresponding indices.
+    * Bit Mask. All pixels are valid when mask is null.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#mask)
     */
-  var mask: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var mask: js.UndefOr[js.Array[scala.Double] | stdLib.Uint8Array] = js.undefined
+  /**
+    * Indicates whether mask should be used as alpha values. If no (default), a pixel is valid when corresponding mask value is truthy
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#maskIsAlpha)
+    */
+  var maskIsAlpha: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The pixel type.  **Possible Values:** s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
     *
@@ -29,13 +35,21 @@ trait PixelBlockProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels)
     */
-  var pixels: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined
+  var pixels: js.UndefOr[
+    js.Array[scala.Double] | stdLib.Int8Array | stdLib.Uint8Array | stdLib.Uint8ClampedArray | stdLib.Int16Array | stdLib.Uint16Array | stdLib.Int32Array | stdLib.Uint32Array | stdLib.Float32Array | stdLib.Float64Array
+  ] = js.undefined
   /**
-    * An array of objects containing numeric statistical properties. Each object has the following specification if defined:
+    * An array of objects containing numeric statistical properties. Each object has the following specification if defined.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#statistics)
     */
   var statistics: js.UndefOr[js.Array[PixelBlockStatistics]] = js.undefined
+  /**
+    * Number of valid pixels
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#validPixelCount)
+    */
+  var validPixelCount: js.UndefOr[scala.Double] = js.undefined
   /**
     * The width (or number of columns) of the PixelBlock in pixels.
     *
@@ -48,18 +62,22 @@ object PixelBlockProperties {
   @scala.inline
   def apply(
     height: scala.Int | scala.Double = null,
-    mask: js.Array[scala.Double] = null,
+    mask: js.Array[scala.Double] | stdLib.Uint8Array = null,
+    maskIsAlpha: js.UndefOr[scala.Boolean] = js.undefined,
     pixelType: java.lang.String = null,
-    pixels: js.Array[js.Array[scala.Double]] = null,
+    pixels: js.Array[scala.Double] | stdLib.Int8Array | stdLib.Uint8Array | stdLib.Uint8ClampedArray | stdLib.Int16Array | stdLib.Uint16Array | stdLib.Int32Array | stdLib.Uint32Array | stdLib.Float32Array | stdLib.Float64Array = null,
     statistics: js.Array[PixelBlockStatistics] = null,
+    validPixelCount: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): PixelBlockProperties = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskIsAlpha)) __obj.updateDynamic("maskIsAlpha")(maskIsAlpha)
     if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType)
-    if (pixels != null) __obj.updateDynamic("pixels")(pixels)
+    if (pixels != null) __obj.updateDynamic("pixels")(pixels.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (validPixelCount != null) __obj.updateDynamic("validPixelCount")(validPixelCount.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixelBlockProperties]
   }

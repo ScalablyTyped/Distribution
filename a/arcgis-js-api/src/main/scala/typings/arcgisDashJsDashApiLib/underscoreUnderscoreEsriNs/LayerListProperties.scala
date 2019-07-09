@@ -19,6 +19,14 @@ trait LayerListProperties extends WidgetProperties {
     */
   var listItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   /**
+    * Indicates whether list items may be selected by the user. When the user selects an item, it will become available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
+    *
+    * @default false
+    */
+  var selectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#statusIndicatorsVisible)
@@ -49,6 +57,7 @@ object LayerListProperties {
     id: java.lang.String = null,
     label: java.lang.String = null,
     listItemCreatedFunction: ListItemCreatedHandler = null,
+    selectionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     statusIndicatorsVisible: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: LayerListViewModelProperties = null
@@ -60,6 +69,7 @@ object LayerListProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(listItemCreatedFunction)
+    if (!js.isUndefined(selectionEnabled)) __obj.updateDynamic("selectionEnabled")(selectionEnabled)
     if (!js.isUndefined(statusIndicatorsVisible)) __obj.updateDynamic("statusIndicatorsVisible")(statusIndicatorsVisible)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)

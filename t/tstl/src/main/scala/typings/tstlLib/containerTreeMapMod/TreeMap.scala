@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerITreeMapMod.ITreeMap because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/TreeMap", "TreeMap")
+@JSImport("tstl/container/TreeMap", "TreeMap")
 @js.native
 /**
   * Default Constructor.
@@ -14,7 +13,13 @@ import scala.scalajs.js.annotation._
   * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
   */
 class TreeMap[Key, T] ()
-  extends tstlLib.baseContainerUniqueMapMod.UniqueMap[Key, T, TreeMap[Key, T]] {
+  extends tstlLib.baseContainerUniqueTreeMapMod.UniqueTreeMap[
+      Key, 
+      T, 
+      TreeMap[Key, T], 
+      tstlLib.containerTreeMapMod.TreeMapNs.Iterator[Key, T], 
+      tstlLib.containerTreeMapMod.TreeMapNs.ReverseIterator[Key, T]
+    ] {
   def this(comp: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   /**
     * Initializer Constructor.
@@ -36,59 +41,24 @@ class TreeMap[Key, T] ()
     * @param last Input iterator of the last position.
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ]) = this()
   def this(items: js.Array[tstlLib.utilityIPairMod.IPair[Key, T]], comp: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        tstlLib.utilityIPairMod.IPair[Key, T], 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      tstlLib.utilityIPairMod.IPair[Key, T], 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.utilityIPairMod.IPair[Key, T], _]
     ], comp: js.Function2[/* x */ Key, /* y */ Key, scala.Boolean]) = this()
   /**
     * @hidden
     */
   var tree_ : js.Any = js.native
-  /**
-    * @inheritDoc
-    */
-  def equal_range(key: Key): tstlLib.utilityPairMod.Pair[
-    tstlLib.containerTreeMapMod.TreeMapNs.Iterator[Key, T], 
-    tstlLib.containerTreeMapMod.TreeMapNs.Iterator[Key, T]
-  ] = js.native
-  /**
-    * @inheritDoc
-    */
-  def key_comp(): js.Function2[/* x */ Key, /* y */ Key, scala.Boolean] = js.native
-  /**
-    * @inheritDoc
-    */
-  def lower_bound(key: Key): tstlLib.containerTreeMapMod.TreeMapNs.Iterator[Key, T] = js.native
-  /**
-    * @inheritDoc
-    */
-  def upper_bound(key: Key): tstlLib.containerTreeMapMod.TreeMapNs.Iterator[Key, T] = js.native
-  /**
-    * @inheritDoc
-    */
-  def value_comp(): js.Function2[
-    /* x */ tstlLib.utilityIPairMod.IPair[Key, T], 
-    /* y */ tstlLib.utilityIPairMod.IPair[Key, T], 
-    scala.Boolean
-  ] = js.native
 }
 

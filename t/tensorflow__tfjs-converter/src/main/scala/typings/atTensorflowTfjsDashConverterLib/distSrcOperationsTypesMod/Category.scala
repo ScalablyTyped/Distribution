@@ -1,0 +1,28 @@
+package typings
+package atTensorflowTfjsDashConverterLib.distSrcOperationsTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.arithmetic
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.basic_math
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.control
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.convolution
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.custom
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.dynamic
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.evaluation
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.image
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.creation
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.graph
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.logical
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.matrices
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.normalization
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.reduction
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.slice_join
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.spectral
+  - atTensorflowTfjsDashConverterLib.atTensorflowTfjsDashConverterLibStrings.transformation
+*/
+trait Category extends js.Object
+

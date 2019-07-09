@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait GraphicsLayerView extends LayerView {
   /**
     * Highlights the given feature(s).
-    * > **Known Limitations**  Currently the highlight method is only supported in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GraphicsLayerView.html#highlight)
     *

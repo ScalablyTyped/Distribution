@@ -13,5 +13,15 @@ trait WebMapConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html)
   */
 org.scalablytyped.runtime.Instantiable0[WebMap]
-     with org.scalablytyped.runtime.Instantiable1[/* properties */ WebMapProperties, WebMap]
+     with org.scalablytyped.runtime.Instantiable1[/* properties */ WebMapProperties, WebMap] {
+  /**
+    * Creates a new instance of [this class]() and initializes it with values from a JSON object generated from a product in the ArcGIS platform. The object passed into the input `json` parameter often comes from a response to a query operation in the REST API or a [toJSON()](http://pro.arcgis.com/en/pro-app/tool-reference/conversion/features-to-json.htm) method from another ArcGIS product. If the [WebMap]() is used outside of a view, you must call [load()](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#load) explicitly to interact with its resources. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for details and examples of when and how to use this function.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#fromJSON)
+    *
+    * @param json A JSON representation of the instance in the ArcGIS format. See the [web map specification](https://developers.arcgis.com/web-map-specification/) for more detailed information on serializing web map to JSON.
+    *
+    */
+  def fromJSON(json: js.Any): js.Any = js.native
+}
 

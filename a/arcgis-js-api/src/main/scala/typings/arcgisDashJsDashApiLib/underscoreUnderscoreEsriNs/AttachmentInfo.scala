@@ -40,6 +40,12 @@ trait AttachmentInfo
     */
   var name: java.lang.String = js.native
   /**
+    * The [OrientationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#OrientationInfo) for the attachment. This is derived from the [exifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo). In order to read this, you must first set the attachment query's [returnMetadata](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#returnMetadata) to `true` to get the `exif` info associated with the attachment.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#orientationInfo)
+    */
+  val orientationInfo: OrientationInfo = js.native
+  /**
     * The parent or the feature object id of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentObjectId)

@@ -11,7 +11,14 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Vector[T] ()
-  extends tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Vector[T]] {
+  extends tstlLib.baseContainerVectorContainerMod.VectorContainer[
+      T, 
+      Vector[T], 
+      Vector[T], 
+      tstlLib.containerVectorMod.VectorNs.Iterator[T], 
+      tstlLib.containerVectorMod.VectorNs.ReverseIterator[T], 
+      T
+    ] {
   /**
     * Initializer Constructor.
     *
@@ -30,11 +37,7 @@ class Vector[T] ()
     * @param first Input iterator of the first position.
     * @param last Input iteartor of the last position.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]) = this()
   /**
     * Fill Constructor.
     *
@@ -42,24 +45,6 @@ class Vector[T] ()
     * @param val Value to fill.
     */
   def this(n: scala.Double, `val`: T) = this()
-  /**
-    * @hidden
-    */
-  var data_ : js.Any = js.native
-  /**
-    * @inheritDoc
-    */
-  def assign(n: scala.Double, `val`: T): scala.Unit = js.native
-  /**
-    * Access data.
-    *
-    * @return An array capsuled by this {@link Vector}.
-    */
-  def data(): js.Array[T] = js.native
-  /**
-    * @hidden
-    */
-  def equals(obj: Vector[T]): scala.Boolean = js.native
 }
 
 @JSImport("tstl/container/Vector", "vector")
@@ -86,11 +71,7 @@ class vector[T] () extends Vector[T] {
     * @param first Input iterator of the first position.
     * @param last Input iteartor of the last position.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]
-    ]) = this()
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, _]]) = this()
   /**
     * Fill Constructor.
     *

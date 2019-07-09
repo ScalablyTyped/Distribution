@@ -12,15 +12,9 @@ trait LocatorSuggestLocationsParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#suggestLocations)
     */
-  var categories: js.Array[java.lang.String]
+  var categories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * Used with the `location` property. The `distance` property specifies the radial distance from the location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#suggestLocations)
-    */
-  var distance: scala.Double
-  /**
-    * Defines a normalized location point that is used with the distance parameter to sort geocoding candidates based upon their proximity to the given location.
+    * Defines a normalized location point that is used to sort geocoding candidates based upon their proximity to the given location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#suggestLocations)
     */
@@ -36,16 +30,15 @@ trait LocatorSuggestLocationsParams
 object LocatorSuggestLocationsParams {
   @scala.inline
   def apply(
-    categories: js.Array[java.lang.String],
     constructor: js.Function,
-    distance: scala.Double,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     location: Point,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    text: java.lang.String
+    text: java.lang.String,
+    categories: js.Array[java.lang.String] = null
   ): LocatorSuggestLocationsParams = {
-    val __obj = js.Dynamic.literal(categories = categories, constructor = constructor, distance = distance, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text)
-  
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
     __obj.asInstanceOf[LocatorSuggestLocationsParams]
   }
 }

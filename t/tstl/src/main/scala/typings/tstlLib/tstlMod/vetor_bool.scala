@@ -30,16 +30,12 @@ class vetor_bool ()
     * @param first Input iterator of the first position.
     * @param last Input iteartor of the last position.
     */
-  def this(first: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        scala.Boolean, 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[scala.Boolean, _]
-      ]
-    ], last: stdLib.Readonly[
-      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
-        scala.Boolean, 
-        tstlLib.iteratorIForwardIteratorMod.IForwardIterator[scala.Boolean, _]
-      ]
+  def this(first: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      scala.Boolean, 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[scala.Boolean, _]
+    ], last: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[
+      scala.Boolean, 
+      tstlLib.iteratorIForwardIteratorMod.IForwardIterator[scala.Boolean, _]
     ]) = this()
   /**
     * Fill Constructor.

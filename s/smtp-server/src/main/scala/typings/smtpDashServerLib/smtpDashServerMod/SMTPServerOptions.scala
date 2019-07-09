@@ -219,7 +219,6 @@ object SMTPServerOptions {
   @scala.inline
   def apply(
     ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
-    NPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
       /* ctx */ nodeLib.tlsMod.SecureContext, 
@@ -239,6 +238,7 @@ object SMTPServerOptions {
     disableReverseLookup: js.UndefOr[scala.Boolean] = js.undefined,
     disabledCommands: js.Array[java.lang.String] = null,
     ecdhCurve: java.lang.String = null,
+    enableTrace: js.UndefOr[scala.Boolean] = js.undefined,
     handshakeTimeout: scala.Int | scala.Double = null,
     hide8BITMIME: js.UndefOr[scala.Boolean] = js.undefined,
     hidePIPELINING: js.UndefOr[scala.Boolean] = js.undefined,
@@ -268,6 +268,7 @@ object SMTPServerOptions {
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
     requestCert: js.UndefOr[scala.Boolean] = js.undefined,
     secure: js.UndefOr[scala.Boolean] = js.undefined,
+    secureContext: nodeLib.tlsMod.SecureContext = null,
     secureOptions: scala.Int | scala.Double = null,
     secureProtocol: java.lang.String = null,
     secured: js.UndefOr[scala.Boolean] = js.undefined,
@@ -283,7 +284,6 @@ object SMTPServerOptions {
   ): SMTPServerOptions = {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
-    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
     if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (!js.isUndefined(allowInsecureAuth)) __obj.updateDynamic("allowInsecureAuth")(allowInsecureAuth)
     if (authMethods != null) __obj.updateDynamic("authMethods")(authMethods)
@@ -299,6 +299,7 @@ object SMTPServerOptions {
     if (!js.isUndefined(disableReverseLookup)) __obj.updateDynamic("disableReverseLookup")(disableReverseLookup)
     if (disabledCommands != null) __obj.updateDynamic("disabledCommands")(disabledCommands)
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace)
     if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(hide8BITMIME)) __obj.updateDynamic("hide8BITMIME")(hide8BITMIME)
     if (!js.isUndefined(hidePIPELINING)) __obj.updateDynamic("hidePIPELINING")(hidePIPELINING)
@@ -324,6 +325,7 @@ object SMTPServerOptions {
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext)
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
     if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)
     if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured)
