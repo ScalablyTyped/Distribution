@@ -10,14 +10,17 @@ trait HookSkipInterface[Context] extends js.Object {
   /** Skip this hook. */
   def apply(implementation: Implementation[Context]): scala.Unit = js.native
   /** Skip this hook. */
-  def apply(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
-  /** Skip this hook. */
   def apply(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /** Skip this hook. */
-  def apply[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def apply[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
+  /** Skip this hook. */
+  def apply[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
 }
 

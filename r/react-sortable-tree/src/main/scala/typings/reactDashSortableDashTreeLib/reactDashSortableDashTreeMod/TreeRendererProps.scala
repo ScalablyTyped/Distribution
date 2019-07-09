@@ -9,7 +9,7 @@ trait TreeRendererProps extends js.Object {
   var canDrop: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.Array[reactLib.reactMod.Global.JSXNs.Element]
   // Drop target
-  var connectDropTarget: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget
+  var connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any
   var draggedNode: js.UndefOr[TreeItem] = js.undefined
   var isOver: scala.Boolean
   var listIndex: scala.Double
@@ -30,7 +30,7 @@ object TreeRendererProps {
   @scala.inline
   def apply(
     children: js.Array[reactLib.reactMod.Global.JSXNs.Element],
-    connectDropTarget: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget,
+    connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any,
     getPrevRow: () => FlatDataItem | scala.Null,
     isOver: scala.Boolean,
     listIndex: scala.Double,

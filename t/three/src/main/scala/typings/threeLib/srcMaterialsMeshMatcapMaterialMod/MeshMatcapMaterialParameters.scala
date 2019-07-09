@@ -15,7 +15,7 @@ trait MeshMatcapMaterialParameters
   var displacementMap: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
   var displacementScale: js.UndefOr[scala.Double] = js.undefined
   var map: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
-  var matMap: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
+  var matcap: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
   var morphNormals: js.UndefOr[scala.Boolean] = js.undefined
   var morphTargets: js.UndefOr[scala.Boolean] = js.undefined
   var normalMap: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
@@ -54,7 +54,7 @@ object MeshMatcapMaterialParameters {
     fog: js.UndefOr[scala.Boolean] = js.undefined,
     lights: js.UndefOr[scala.Boolean] = js.undefined,
     map: threeLib.srcTexturesTextureMod.Texture = null,
-    matMap: threeLib.srcTexturesTextureMod.Texture = null,
+    matcap: threeLib.srcTexturesTextureMod.Texture = null,
     morphNormals: js.UndefOr[scala.Boolean] = js.undefined,
     morphTargets: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
@@ -68,6 +68,7 @@ object MeshMatcapMaterialParameters {
     polygonOffsetUnits: scala.Int | scala.Double = null,
     precision: threeLib.threeLibStrings.highp | threeLib.threeLibStrings.mediump | threeLib.threeLibStrings.lowp = null,
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
     skinning: js.UndefOr[scala.Boolean] = js.undefined,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
@@ -103,7 +104,7 @@ object MeshMatcapMaterialParameters {
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
     if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
     if (map != null) __obj.updateDynamic("map")(map)
-    if (matMap != null) __obj.updateDynamic("matMap")(matMap)
+    if (matcap != null) __obj.updateDynamic("matcap")(matcap)
     if (!js.isUndefined(morphNormals)) __obj.updateDynamic("morphNormals")(morphNormals)
     if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets)
     if (name != null) __obj.updateDynamic("name")(name)
@@ -117,6 +118,7 @@ object MeshMatcapMaterialParameters {
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)

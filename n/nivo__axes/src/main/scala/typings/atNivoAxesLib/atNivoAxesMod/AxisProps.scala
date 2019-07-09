@@ -12,6 +12,9 @@ trait AxisProps extends js.Object {
   var legendPosition: js.UndefOr[
     atNivoAxesLib.atNivoAxesLibStrings.start | atNivoAxesLib.atNivoAxesLibStrings.middle | atNivoAxesLib.atNivoAxesLibStrings.end
   ] = js.undefined
+  var orient: js.UndefOr[
+    atNivoAxesLib.atNivoAxesLibStrings.top | atNivoAxesLib.atNivoAxesLibStrings.right | atNivoAxesLib.atNivoAxesLibStrings.bottom | atNivoAxesLib.atNivoAxesLibStrings.left
+  ] = js.undefined
   var renderTick: js.UndefOr[js.Function1[/* data */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   var tickPadding: js.UndefOr[scala.Double] = js.undefined
   var tickRotation: js.UndefOr[scala.Double] = js.undefined
@@ -28,6 +31,7 @@ object AxisProps {
     legend: reactLib.reactMod.ReactNode = null,
     legendOffset: scala.Int | scala.Double = null,
     legendPosition: atNivoAxesLib.atNivoAxesLibStrings.start | atNivoAxesLib.atNivoAxesLibStrings.middle | atNivoAxesLib.atNivoAxesLibStrings.end = null,
+    orient: atNivoAxesLib.atNivoAxesLibStrings.top | atNivoAxesLib.atNivoAxesLibStrings.right | atNivoAxesLib.atNivoAxesLibStrings.bottom | atNivoAxesLib.atNivoAxesLibStrings.left = null,
     renderTick: /* data */ js.Any => reactLib.reactMod.ReactNode = null,
     tickPadding: scala.Int | scala.Double = null,
     tickRotation: scala.Int | scala.Double = null,
@@ -39,6 +43,7 @@ object AxisProps {
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (legendOffset != null) __obj.updateDynamic("legendOffset")(legendOffset.asInstanceOf[js.Any])
     if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
+    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (renderTick != null) __obj.updateDynamic("renderTick")(js.Any.fromFunction1(renderTick))
     if (tickPadding != null) __obj.updateDynamic("tickPadding")(tickPadding.asInstanceOf[js.Any])
     if (tickRotation != null) __obj.updateDynamic("tickRotation")(tickRotation.asInstanceOf[js.Any])

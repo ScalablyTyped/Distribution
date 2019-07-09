@@ -43,33 +43,21 @@ class JSONEditor protected ()
   var _setValue: js.Any = js.native
   var _source: js.Any = js.native
   /**
-    * Get the collapser node used by the JSON editor.
+    * The commit button used by the JSON editor.
     */
-  val collapserNode: stdLib.HTMLElement = js.native
-  /**
-    * Whether the editor is collapsible.
-    */
-  val collapsible: scala.Boolean = js.native
-  /**
-    * Get the commit button used by the JSON editor.
-    */
-  val commitButtonNode: stdLib.HTMLElement = js.native
+  val commitButtonNode: stdLib.HTMLSpanElement = js.native
   /**
     * The code editor used by the editor.
     */
   val editor: atJupyterlabCodeeditorLib.libEditorMod.CodeEditorNs.IEditor = js.native
   /**
-    * Get the editor host node used by the JSON editor.
+    * The editor host node used by the JSON editor.
     */
-  val editorHostNode: stdLib.HTMLElement = js.native
+  val editorHostNode: stdLib.HTMLDivElement = js.native
   /**
-    * The title of the editor.
+    * The editor host node used by the JSON editor.
     */
-  var editorTitle: java.lang.String = js.native
-  /**
-    * Get the header node used by the JSON editor.
-    */
-  val headerNode: stdLib.HTMLElement = js.native
+  val headerNode: stdLib.HTMLDivElement = js.native
   /**
     * Get whether the editor is dirty.
     */
@@ -79,17 +67,13 @@ class JSONEditor protected ()
     */
   val model: atJupyterlabCodeeditorLib.libEditorMod.CodeEditorNs.IModel = js.native
   /**
-    * Get the revert button used by the JSON editor.
+    * The revert button used by the JSON editor.
     */
-  val revertButtonNode: stdLib.HTMLElement = js.native
+  val revertButtonNode: stdLib.HTMLSpanElement = js.native
   /**
     * The observable source.
     */
   var source: atJupyterlabObservablesLib.libObservablejsonMod.IObservableJSON | scala.Null = js.native
-  /**
-    * Get the title node used by the JSON editor.
-    */
-  val titleNode: stdLib.HTMLElement = js.native
   /**
     * Handle the DOM events for the widget.
     *

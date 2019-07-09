@@ -19,7 +19,6 @@ class ComponentStatus protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ComponentStatus) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ComponentStatus, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -43,7 +42,6 @@ class ComponentStatus protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ComponentStatus = js.native
 }
 
 /* static members */
@@ -68,5 +66,10 @@ object ComponentStatus extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.coreV1ComponentStatusMod.ComponentStatus = js.native
+  /**
+    * Returns true if the given object is an instance of ComponentStatus.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/ComponentStatus.ComponentStatus */ scala.Boolean = js.native
 }
 

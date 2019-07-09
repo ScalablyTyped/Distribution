@@ -19,7 +19,6 @@ class CSINode protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINode) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINode, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -42,7 +41,6 @@ class CSINode protected ()
     * spec is the specification of CSINode
     */
   val spec: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.storageNs.v1beta1Ns.CSINodeSpec] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINode = js.native
 }
 
 /* static members */
@@ -67,5 +65,10 @@ object CSINode extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.storageV1beta1CSINodeMod.CSINode = js.native
+  /**
+    * Returns true if the given object is an instance of CSINode.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/CSINode.CSINode */ scala.Boolean = js.native
 }
 

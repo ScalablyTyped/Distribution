@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__paginator"
-version := "1.0.0-2ed9aa"
+version := "1.0.2-2ed9aa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

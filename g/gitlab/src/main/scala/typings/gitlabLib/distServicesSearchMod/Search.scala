@@ -11,7 +11,9 @@ trait Search
   def all(
     scope: java.lang.String,
     search: java.lang.String,
-    hasProjectIdGroupIdOptions: gitlabLib.Anon_GroupIdProjectId with gitlabLib.BaseRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    hasProjectIdGroupIdOptions: gitlabLib.Anon_GroupIdProjectId with gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__coreutils
 
-Typings are for version 2.2.1
+Typings are for version 3.0.0
 
 ## Library description:
 JupyterLab - Core Utilities
@@ -35,9 +35,6 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-/**
- * A generic interface for change emitter payloads.
- */
 /**
  * The namespace for code block functions which help
  * in extract code from markdown text

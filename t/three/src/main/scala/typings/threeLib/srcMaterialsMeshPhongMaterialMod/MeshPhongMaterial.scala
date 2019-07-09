@@ -28,8 +28,8 @@ class MeshPhongMaterial ()
   var lightMapIntensity: scala.Double = js.native
   var map: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
   /**
-    * @deprecated Use {@link MeshStandardMaterial THREE.MeshStandardMaterial} instead.
-    */
+  	 * @deprecated Use {@link MeshStandardMaterial THREE.MeshStandardMaterial} instead.
+  	 */
   var metal: scala.Boolean = js.native
   var morphNormals: scala.Boolean = js.native
   var morphTargets: scala.Boolean = js.native

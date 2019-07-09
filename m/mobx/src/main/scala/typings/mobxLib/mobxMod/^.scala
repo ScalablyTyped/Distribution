@@ -67,7 +67,12 @@ object ^ extends js.Object {
     */ mobxLib.mobxLibStrings.decorate with js.Any
   ): T = js.native
   def entries[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[js.Tuple2[scala.Double, T]] = js.native
-  def entries[T](obj: T): js.Array[js.Tuple2[java.lang.String, _]] = js.native
+  def entries[T](obj: T): js.Array[
+    js.Tuple2[
+      java.lang.String, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   def entries[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
   def entries[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = js.native
   def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A): A with B = js.native
@@ -320,7 +325,7 @@ object ^ extends js.Object {
   def transaction[T](action: js.Function0[T]): T = js.native
   def untracked[T](action: js.Function0[T]): T = js.native
   def values[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[T] = js.native
-  def values[T](obj: T): js.Array[_] = js.native
+  def values[T](obj: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def values[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[T] = js.native
   def values[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[T] = js.native
   def when(predicate: js.Function0[scala.Boolean]): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native

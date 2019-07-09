@@ -186,8 +186,7 @@ class File protected ()
     * remoteFile.createReadStream()
     *   .on('error', function(err) {})
     *   .on('response', function(response) {
-    *     // Server connected and responded with the specified status and
-    * headers.
+    *     // Server connected and responded with the specified status and headers.
     *    })
     *   .on('end', function() {
     *     // The file is fully downloaded.
@@ -386,6 +385,8 @@ class File protected ()
   def getSignedPolicy(options: GetSignedPolicyOptions, callback: GetSignedPolicyCallback): scala.Unit = js.native
   def getSignedUrl(cfg: GetSignedUrlConfig): js.Promise[GetSignedUrlResponse] = js.native
   def getSignedUrl(cfg: GetSignedUrlConfig, callback: GetSignedUrlCallback): scala.Unit = js.native
+  def isPublic(): js.Promise[IsPublicResponse] = js.native
+  def isPublic(callback: IsPublicCallback): scala.Unit = js.native
   def makePrivate(): js.Promise[MakeFilePrivateResponse] = js.native
   def makePrivate(callback: MakeFilePrivateCallback): scala.Unit = js.native
   def makePrivate(options: MakeFilePrivateOptions): js.Promise[MakeFilePrivateResponse] = js.native

@@ -52,6 +52,8 @@ trait VendorShorthandProperties[TLength] extends js.Object {
   var msScrollSnapX: js.UndefOr[GlobalsString] = js.undefined
   /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-y` properties. */
   var msScrollSnapY: js.UndefOr[GlobalsString] = js.undefined
+  /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
+  var msTransition: js.UndefOr[TransitionProperty] = js.undefined
 }
 
 object VendorShorthandProperties {
@@ -79,7 +81,8 @@ object VendorShorthandProperties {
     msFlex: FlexProperty[TLength] = null,
     msScrollLimit: GlobalsString = null,
     msScrollSnapX: GlobalsString = null,
-    msScrollSnapY: GlobalsString = null
+    msScrollSnapY: GlobalsString = null,
+    msTransition: TransitionProperty = null
   ): VendorShorthandProperties[TLength] = {
     val __obj = js.Dynamic.literal()
     if (MozAnimation != null) __obj.updateDynamic("MozAnimation")(MozAnimation.asInstanceOf[js.Any])
@@ -105,6 +108,7 @@ object VendorShorthandProperties {
     if (msScrollLimit != null) __obj.updateDynamic("msScrollLimit")(msScrollLimit.asInstanceOf[js.Any])
     if (msScrollSnapX != null) __obj.updateDynamic("msScrollSnapX")(msScrollSnapX.asInstanceOf[js.Any])
     if (msScrollSnapY != null) __obj.updateDynamic("msScrollSnapY")(msScrollSnapY.asInstanceOf[js.Any])
+    if (msTransition != null) __obj.updateDynamic("msTransition")(msTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[VendorShorthandProperties[TLength]]
   }
 }

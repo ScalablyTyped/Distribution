@@ -8,30 +8,47 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceCustomAttributes
   extends gitlabLib.distInfrastructureMod.BaseService {
-  def all(resourceId: gitlabLib.ResourceId): js.Promise[gitlabLib.GetResponse] = js.native
-  def all(resourceId: gitlabLib.ResourceId, options: gitlabLib.PaginatedRequestOptions): js.Promise[gitlabLib.GetResponse] = js.native
-  def remove(resourceId: gitlabLib.ResourceId, customAttributeId: gitlabLib.CustomAttributeId): js.Promise[js.Object] = js.native
+  def all(resourceId: gitlabLib.distServicesMod.ResourceId): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    options: gitlabLib.distInfrastructureMod.PaginatedRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def remove(
-    resourceId: gitlabLib.ResourceId,
-    customAttributeId: gitlabLib.CustomAttributeId,
-    options: gitlabLib.Sudo
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    customAttributeId: gitlabLib.distServicesMod.CustomAttributeId
+  ): js.Promise[js.Object] = js.native
+  def remove(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    customAttributeId: gitlabLib.distServicesMod.CustomAttributeId,
+    options: gitlabLib.distInfrastructureMod.Sudo
   ): js.Promise[js.Object] = js.native
   def set(
-    resourceId: gitlabLib.ResourceId,
-    customAttributeId: gitlabLib.CustomAttributeId,
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    customAttributeId: gitlabLib.distServicesMod.CustomAttributeId,
     value: java.lang.String
   ): js.Promise[js.Object] = js.native
   def set(
-    resourceId: gitlabLib.ResourceId,
-    customAttributeId: gitlabLib.CustomAttributeId,
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    customAttributeId: gitlabLib.distServicesMod.CustomAttributeId,
     value: java.lang.String,
-    options: gitlabLib.Sudo
+    options: gitlabLib.distInfrastructureMod.Sudo
   ): js.Promise[js.Object] = js.native
-  def show(resourceId: gitlabLib.ResourceId, customAttributeId: gitlabLib.CustomAttributeId): js.Promise[gitlabLib.GetResponse] = js.native
   def show(
-    resourceId: gitlabLib.ResourceId,
-    customAttributeId: gitlabLib.CustomAttributeId,
-    options: gitlabLib.Sudo
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    customAttributeId: gitlabLib.distServicesMod.CustomAttributeId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def show(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    customAttributeId: gitlabLib.distServicesMod.CustomAttributeId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

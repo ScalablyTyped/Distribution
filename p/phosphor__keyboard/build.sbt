@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__keyboard"
-version := "1.1.2-5d3aaf"
+version := "1.1.3-5d3aaf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,6 +13,7 @@ trait TypeofTHREE extends js.Object {
   val AlphaFormat: threeLib.srcConstantsMod.PixelFormat = js.native
   val AlwaysDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var AmbientLight: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AmbientLight] = js.native
+  var AmbientLightProbe: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AmbientLightProbe] = js.native
   var AnimationAction: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AnimationAction] = js.native
   var AnimationClip: TypeofClassAnimationClip = js.native
   var AnimationLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AnimationLoader] = js.native
@@ -52,7 +53,7 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   var Box2: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box2] = js.native
   var Box3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box3] = js.native
-  var Box3Helper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box3Helper] = js.native
+  var Box3Helper: org.scalablytyped.runtime.Instantiable1[/* box */ threeLib.srcMathBox3Mod.Box3, threeLib.threeMod.Box3Helper] = js.native
   var BoxBufferGeometry: org.scalablytyped.runtime.Instantiable6[
     js.UndefOr[/* width */ scala.Double], 
     js.UndefOr[/* height */ scala.Double], 
@@ -71,7 +72,7 @@ trait TypeofTHREE extends js.Object {
     js.UndefOr[/* depthSegments */ scala.Double], 
     threeLib.threeMod.BoxGeometry
   ] = js.native
-  var BoxHelper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.BoxHelper] = js.native
+  var BoxHelper: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.srcCoreObject3DMod.Object3D, threeLib.threeMod.BoxHelper] = js.native
   var BufferAttribute: org.scalablytyped.runtime.Instantiable2[
     /* array */ stdLib.ArrayLike[scala.Double], 
     /* itemSize */ scala.Double, 
@@ -114,7 +115,7 @@ trait TypeofTHREE extends js.Object {
     /* mipmaps */ js.Array[stdLib.ImageData], 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
-    js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    js.UndefOr[/* format */ threeLib.srcConstantsMod.CompressedPixelFormat], 
     js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
     js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
     js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
@@ -217,7 +218,7 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   var Cylindrical: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Cylindrical] = js.native
   var DataTexture: org.scalablytyped.runtime.Instantiable12[
-    /* data */ stdLib.ArrayBuffer, 
+    /* data */ threeLib.srcPolyfillsMod.TypedArray, 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
     js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
@@ -232,7 +233,7 @@ trait TypeofTHREE extends js.Object {
     threeLib.threeMod.DataTexture
   ] = js.native
   var DataTexture3D: org.scalablytyped.runtime.Instantiable4[
-    /* data */ stdLib.ArrayBuffer, 
+    /* data */ threeLib.srcPolyfillsMod.TypedArray, 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
     /* depth */ scala.Double, 
@@ -351,6 +352,7 @@ trait TypeofTHREE extends js.Object {
     /* size */ scala.Double, 
     threeLib.threeMod.HemisphereLightHelper
   ] = js.native
+  var HemisphereLightProbe: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.HemisphereLightProbe] = js.native
   var IcosahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.IcosahedronBufferGeometry] = js.native
   var IcosahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.IcosahedronGeometry] = js.native
   var ImageBitmapLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ImageBitmapLoader] = js.native
@@ -425,6 +427,7 @@ trait TypeofTHREE extends js.Object {
   val LessDepth: threeLib.srcConstantsMod.DepthModes = js.native
   val LessEqualDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var Light: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Light] = js.native
+  var LightProbe: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LightProbe] = js.native
   var LightShadow: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.srcCamerasCameraMod.Camera, threeLib.threeMod.LightShadow] = js.native
   var Line: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Line] = js.native
   var Line3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Line3] = js.native
@@ -725,6 +728,7 @@ trait TypeofTHREE extends js.Object {
     threeLib.threeMod.SphereGeometry
   ] = js.native
   var Spherical: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Spherical] = js.native
+  var SphericalHarmonics3: TypeofClassSphericalHarmonics3 = js.native
   val SphericalReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var SplineCurve: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SplineCurve] = js.native
   var SpotLight: org.scalablytyped.runtime.Instantiable6[
@@ -904,7 +908,7 @@ trait TypeofTHREE extends js.Object {
     /* info */ js.Any, 
     threeLib.threeMod.WebGLObjects
   ] = js.native
-  var WebGLProgram: org.scalablytyped.runtime.Instantiable8[
+  var WebGLProgram: org.scalablytyped.runtime.Instantiable7[
     /* renderer */ threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, 
     /* extensions */ threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, 
     /* code */ java.lang.String, 
@@ -912,14 +916,12 @@ trait TypeofTHREE extends js.Object {
     /* shader */ threeLib.srcRenderersWebglWebGLShaderMod.WebGLShader, 
     /* parameters */ threeLib.srcRenderersWebGLRendererMod.WebGLRendererParameters, 
     /* capabilities */ threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, 
-    /* textures */ threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures, 
     threeLib.threeMod.WebGLProgram
   ] = js.native
-  var WebGLPrograms: org.scalablytyped.runtime.Instantiable4[
+  var WebGLPrograms: org.scalablytyped.runtime.Instantiable3[
     /* renderer */ threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, 
     /* extensions */ threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, 
     /* capabilities */ threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, 
-    /* textures */ threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures, 
     threeLib.threeMod.WebGLPrograms
   ] = js.native
   var WebGLProperties: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLProperties] = js.native
@@ -936,11 +938,10 @@ trait TypeofTHREE extends js.Object {
     threeLib.threeMod.WebGLRenderTargetCube
   ] = js.native
   var WebGLRenderer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLRenderer] = js.native
-  var WebGLShader: org.scalablytyped.runtime.Instantiable4[
+  var WebGLShader: org.scalablytyped.runtime.Instantiable3[
     /* gl */ js.Any, 
     /* type */ java.lang.String, 
     /* string */ java.lang.String, 
-    /* debug */ scala.Boolean, 
     threeLib.threeMod.WebGLShader
   ] = js.native
   var WebGLShadowMap: org.scalablytyped.runtime.Instantiable4[

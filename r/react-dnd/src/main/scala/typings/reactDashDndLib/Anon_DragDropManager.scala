@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_DragDropManager[BackendContext] extends js.Object {
-  var dragDropManager: dndDashCoreLib.libCjsInterfacesMod.DragDropManager[js.UndefOr[BackendContext]]
+trait Anon_DragDropManager extends js.Object {
+  var dragDropManager: dndDashCoreLib.libInterfacesMod.DragDropManager
 }
 
 object Anon_DragDropManager {
   @scala.inline
-  def apply[BackendContext](dragDropManager: dndDashCoreLib.libCjsInterfacesMod.DragDropManager[js.UndefOr[BackendContext]]): Anon_DragDropManager[BackendContext] = {
+  def apply(dragDropManager: dndDashCoreLib.libInterfacesMod.DragDropManager): Anon_DragDropManager = {
     val __obj = js.Dynamic.literal(dragDropManager = dragDropManager)
   
-    __obj.asInstanceOf[Anon_DragDropManager[BackendContext]]
+    __obj.asInstanceOf[Anon_DragDropManager]
   }
 }
 

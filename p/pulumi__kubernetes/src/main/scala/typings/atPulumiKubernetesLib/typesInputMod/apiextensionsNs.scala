@@ -67,8 +67,8 @@ object apiextensionsNs extends js.Object {
       /**
         * `strategy` specifies the conversion strategy. Allowed values are: - `None`: The converter
         * only change the apiVersion and would not touch any other field in the CR. - `Webhook`: API
-        * Server will call to an external webhook to do the conversion. Additional information is
-        * needed for this option.
+        * Server will call to an external webhook to do the conversion. Additional information
+        *   is needed for this option. This requires spec.preserveUnknownFields to be false.
         */
       var strategy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
@@ -138,7 +138,8 @@ object apiextensionsNs extends js.Object {
         */
       var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
-        * Type is the type of the condition.
+        * Type is the type of the condition. Types include Established, NamesAccepted and
+        * Terminating.
         */
       var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
@@ -236,6 +237,12 @@ object apiextensionsNs extends js.Object {
         * Names are the names used to describe this custom resource
         */
       var names: atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionNames]
+      /**
+        * preserveUnknownFields disables pruning of object fields which are not specified in the
+        * OpenAPI schema. apiVersion, kind, metadata and known fields inside metadata are always
+        * preserved. Defaults to true in v1beta and will default to false in v1.
+        */
+      var preserveUnknownFields: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Scope indicates whether this resource is cluster or namespace scoped.  Default is
         * namespaced
@@ -355,9 +362,12 @@ object apiextensionsNs extends js.Object {
       /**
         * LabelSelectorPath defines the JSON path inside of a CustomResource that corresponds to
         * Scale.Status.Selector. Only JSON paths without the array notation are allowed. Must be a
-        * JSON Path under .status. Must be set to work with HPA. If there is no value under the given
-        * path in the CustomResource, the status label selector value in the /scale subresource will
-        * default to the empty string.
+        * JSON Path under .status or .spec. Must be set to work with HPA. The field pointed by this
+        * JSON path must be a string field (not a complex selector struct) which contains a
+        * serialized label selector in string form. More info:
+        * https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions#scale-subresource
+        * If there is no value under the given path in the CustomResource, the status label selector
+        * value in the /scale subresource will default to the empty string.
         */
       var labelSelectorPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
@@ -424,6 +434,11 @@ object apiextensionsNs extends js.Object {
       var anyOf: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps]]]
           ] = js.undefined
+      /**
+        * default is a default value for undefined object fields. Defaulting is an alpha feature
+        * under the CustomResourceDefaulting feature gate. Defaulting requires
+        * spec.preserveUnknownFields to be false.
+        */
       var default: js.UndefOr[atPulumiPulumiLib.outputMod.Input[_]] = js.undefined
       var definitions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       var dependencies: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
@@ -461,6 +476,36 @@ object apiextensionsNs extends js.Object {
       var title: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       var uniqueItems: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      /**
+        * x-kubernetes-embedded-resource defines that the value is an embedded Kubernetes
+        * runtime.Object, with TypeMeta and ObjectMeta. The type must be object. It is allowed to
+        * further restrict the embedded object. kind, apiVersion and metadata are validated
+        * automatically. x-kubernetes-preserve-unknown-fields is allowed to be true, but does not
+        * have to be if the object is fully specified (up to kind, apiVersion, metadata).
+        */
+      var x_kubernetes_embedded_resource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      /**
+        * x-kubernetes-int-or-string specifies that this value is either an integer or a string. If
+        * this is true, an empty type is allowed and type as child of anyOf is permitted if following
+        * one of the following patterns:
+        *
+        * 1) anyOf:
+        *    - type: integer
+        *    - type: string
+        * 2) allOf:
+        *    - anyOf:
+        *      - type: integer
+        *      - type: string
+        *    - ... zero or more
+        */
+      var x_kubernetes_int_or_string: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      /**
+        * x-kubernetes-preserve-unknown-fields stops the API server decoding step from pruning fields
+        * which are not specified in the validation schema. This affects fields recursively, but
+        * switches back to normal pruning behaviour if nested properties or additionalProperties are
+        * specified in the schema. This can either be true or undefined. False is forbidden.
+        */
+      var x_kubernetes_preserve_unknown_fields: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -479,6 +524,11 @@ object apiextensionsNs extends js.Object {
         * `path` is an optional URL path which will be sent in any request to this service.
         */
       var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * If specified, the port on the service that hosting webhook. Default to 443 for backward
+        * compatibility. `port` should be a valid port number (1-65535, inclusive).
+        */
+      var port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -496,8 +546,6 @@ object apiextensionsNs extends js.Object {
         * specified.
         *
         * If the webhook is running within the cluster, then you should use `service`.
-        *
-        * Port 443 will be used if it is open, otherwise it is an error.
         */
       var service: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceReference]] = js.undefined
       /**

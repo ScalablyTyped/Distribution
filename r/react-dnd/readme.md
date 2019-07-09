@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd
 
-Typings are for version 7.7.0
+Typings are for version 9.0.1
 
 ## Library description:
 Drag and Drop for React

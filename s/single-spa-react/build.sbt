@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "single-spa-react"
-version := "2.8-dt-20190212Z-712988"
+version := "2.8-dt-20190212Z-014102"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190411Z-07f716",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190411Z-7fdb31",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

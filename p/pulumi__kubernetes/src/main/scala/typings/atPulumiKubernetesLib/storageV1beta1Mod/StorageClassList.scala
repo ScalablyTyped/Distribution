@@ -43,5 +43,10 @@ object StorageClassList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.storageV1beta1StorageClassListMod.StorageClassList = js.native
+  /**
+    * Returns true if the given object is an instance of StorageClassList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/StorageClassList.StorageClassList */ scala.Boolean = js.native
 }
 

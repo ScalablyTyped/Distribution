@@ -14,7 +14,7 @@ class SourceMap protected () extends js.Object {
   var names: js.Array[java.lang.String] = js.native
   var sources: js.Array[java.lang.String] = js.native
   var sourcesContent: js.Array[java.lang.String] = js.native
-  var version: java.lang.String = js.native
+  var version: scala.Double = js.native
   def toUrl(): java.lang.String = js.native
 }
 

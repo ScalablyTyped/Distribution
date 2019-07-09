@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait SetContentSecurityPolicyOptions extends js.Object {
   /**
-  	 * The session to apply the policy to.
-  	 *
-  	 * Default: [`electron.session.defaultSession`](https://electronjs.org/docs/api/session#sessiondefaultsession)
-  	 */
+  	The session to apply the policy to.
+  	Default: [`electron.session.defaultSession`](https://electronjs.org/docs/api/session#sessiondefaultsession)
+  	*/
   val session: js.UndefOr[electronLib.electronMod.Session] = js.undefined
 }
 

@@ -1,12 +1,11 @@
 organization := "org.scalablytyped"
 name := "mock-knex"
-version := "0.4-dt-20190627Z-f76532"
+version := "0.4-dt-20190627Z-ae3116"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-aebf09",
-  "org.scalablytyped" %%% "knex" % "0.17.6-97e17b",
+  "org.scalablytyped" %%% "knex" % "0.18.3-17860e",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false

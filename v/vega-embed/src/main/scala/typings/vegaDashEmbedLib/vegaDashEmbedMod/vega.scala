@@ -9,20 +9,14 @@ import scala.scalajs.js.annotation._
 @JSImport("vega-embed", "vega")
 @js.native
 object vega extends js.Object {
-  var Bounds: org.scalablytyped.runtime.Instantiable0[vegaDashLibLib.vegaDashLibMod.Bounds] = js.native
-  var CanvasHandler: org.scalablytyped.runtime.Instantiable0[vegaDashLibLib.vegaDashLibMod.CanvasHandler] = js.native
+  var Bounds: org.scalablytyped.runtime.Instantiable0[vegaLib.vegaMod.Bounds] = js.native
+  var CanvasHandler: org.scalablytyped.runtime.Instantiable0[vegaLib.vegaMod.CanvasHandler] = js.native
   val Debug: scala.Double = js.native
-  var Handler: org.scalablytyped.runtime.Instantiable0[vegaDashLibLib.vegaDashLibMod.Handler] = js.native
+  var Handler: org.scalablytyped.runtime.Instantiable0[vegaLib.vegaMod.Handler] = js.native
   val Info: scala.Double = js.native
   val None: scala.Double = js.native
-  var Renderer: org.scalablytyped.runtime.Instantiable1[
-    /* loader */ vegaDashTypingsLib.typesRuntimeMod.Loader, 
-    vegaDashLibLib.vegaDashLibMod.Renderer
-  ] = js.native
-  var View: org.scalablytyped.runtime.Instantiable1[
-    /* runtime */ vegaDashTypingsLib.typesRuntimeMod.Runtime, 
-    vegaDashLibLib.vegaDashLibMod.View
-  ] = js.native
+  var Renderer: org.scalablytyped.runtime.Instantiable1[/* loader */ vegaDashTypingsLib.typesRuntimeMod.Loader, vegaLib.vegaMod.Renderer] = js.native
+  var View: org.scalablytyped.runtime.Instantiable1[/* runtime */ vegaDashTypingsLib.typesRuntimeMod.Runtime, vegaLib.vegaMod.View] = js.native
   val Warn: scala.Double = js.native
   val transforms: org.scalablytyped.runtime.StringDictionary[vegaDashTypingsLib.typesRuntimeMod.Transform] = js.native
   val version: java.lang.String = js.native

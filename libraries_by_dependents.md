@@ -563,6 +563,7 @@
 | 420 | [lodash_dot_template](./l/lodash_dot_template) | The lodash method _.template exported as a module.
 | 420 | [path-is-absolute](./p/path-is-absolute) | Node.js 0.12 path.isAbsolute() ponyfill
 | 419 | [vorpal](./v/vorpal) | Node's first framework for building immersive CLI 
+| 417 | [https-proxy-agent](./h/https-proxy-agent) | An HTTP(s) proxy http.Agent implementation for HTT
 | 415 | [chai-as-promised](./c/chai-as-promised) | Extends Chai with assertions about promises.
 | 415 | [fork-ts-checker-webpack-p](./f/fork-ts-checker-webpack-plugin) | Runs typescript type checker and linter on separat
 | 415 | [node-cache](./n/node-cache) | Simple and fast NodeJS internal caching. Node inte
@@ -800,7 +801,6 @@
 | 280 | [strip-bom](./s/strip-bom) | Strip UTF-8 byte order mark (BOM) from a string
 | 279 | [ansi-colors](./a/ansi-colors) | Easily add ANSI colors to your text and symbols in
 | 279 | [js-sha3](./j/js-sha3) | A simple SHA-3 / Keccak / Shake hash function for 
-| 279 | [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application
 | 278 | [browserslist](./b/browserslist) | Share target browsers between different front-end 
 | 278 | [camel-case](./c/camel-case) | Camel case a string
 | 278 | [cookie-signature](./c/cookie-signature) | Sign and unsign cookies
@@ -840,6 +840,7 @@
 | 263 | [xml-js](./x/xml-js) | A convertor between XML text and Javascript object
 | 262 | [dedent](./d/dedent) | An ES6 string tag that strips indentation from mul
 | 262 | [merge-descriptors](./m/merge-descriptors) | Merge objects using descriptors
+| 262 | [readdirp](./r/readdirp) | Recursive version of fs.readdir with streaming api
 | 261 | [express-handlebars](./e/express-handlebars) | A Handlebars view engine for Express which doesn't
 | 261 | [i18n](./i/i18n) | lightweight translation module with dynamic json s
 | 261 | [twilio](./t/twilio) | A Twilio helper library
@@ -959,7 +960,6 @@
 | 223 | [sockjs](./s/sockjs) | SockJS-node is a server counterpart of SockJS-clie
 | 221 | [ink](./i/ink) | React for CLI
 | 221 | [is-buffer](./i/is-buffer) | Determine if an object is a Buffer
-| 221 | [jupyterlab__apputils](./j/jupyterlab__apputils) | JupyterLab - Application Utilities
 | 220 | [libxmljs](./l/libxmljs) | libxml bindings for v8 javascript engine
 | 220 | [require-from-string](./r/require-from-string) | Require module from string
 | 220 | [signale](./s/signale) | 👋 Hackable console logger
@@ -1565,7 +1565,6 @@
 | 109 | [gulp-insert](./g/gulp-insert) | Append or Prepend a string with gulp
 | 109 | [java](./j/java) | Bridge API to connect with existing Java APIs.
 | 109 | [jsftp](./j/jsftp) | A sane FTP client implementation for NodeJS
-| 109 | [time-stamp](./t/time-stamp) | Get a formatted timestamp.
 | 109 | [tsutils](./t/tsutils) | utilities for working with typescript's AST
 | 108 | [cradle](./c/cradle) | the high-level, caching, CouchDB library
 | 108 | [electron-packager](./e/electron-packager) | Customize and package your Electron app with OS-sp
@@ -1598,7 +1597,6 @@
 | 106 | [caseless](./c/caseless) | Caseless object set/get/has, very useful when work
 | 106 | [event-target-shim](./e/event-target-shim) | An implementation of WHATWG EventTarget interface.
 | 106 | [feathersjs__errors](./f/feathersjs__errors) | Common error types for Feathers apps
-| 106 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript
 | 106 | [gulp-newer](./g/gulp-newer) | Only pass through newer source files
 | 106 | [meshblu](./m/meshblu) | Meshblu IoT network and API
 | 106 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views
@@ -1689,7 +1687,6 @@
 | 95 | [env-paths](./e/env-paths) | Get paths for storing things like data, config, ca
 | 95 | [images](./i/images) | Cross-platform image decoder(webp/png/jpeg/gif) an
 | 95 | [javascript-stringify](./j/javascript-stringify) | Stringify is to eval as JSON.stringify is to JSON.
-| 95 | [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs
 | 95 | [ol](./o/ol) | OpenLayers mapping library
 | 95 | [pouchdb-find](./p/pouchdb-find) | Easy-to-use query language for PouchDB
 | 95 | [python-shell](./p/python-shell) | Run Python scripts from Node.js with simple (but e
@@ -1757,6 +1754,7 @@
 | 90 | [react-dom-factories](./r/react-dom-factories) | React package for DOM factory methods.
 | 90 | [rollup-plugin-node-builti](./r/rollup-plugin-node-builtins) | use node builtins in browser with rollup
 | 90 | [tabtab](./t/tabtab) | tab completion helpers, for node cli programs. Ins
+| 90 | [typestyle](./t/typestyle) | TypeSafe CSS
 | 89 | [bootstrap-datepicker](./b/bootstrap-datepicker) | A datepicker for Bootstrap
 | 89 | [casperjs](./c/casperjs) | A navigation scripting & testing utility for Phant
 | 89 | [datatables_dot_net](./d/datatables_dot_net) | DataTables for jQuery
@@ -1772,7 +1770,6 @@
 | 88 | [exit-hook](./e/exit-hook) | Run some code when the process exits
 | 88 | [gulp-useref](./g/gulp-useref) | Parse build blocks in HTML files to replace refere
 | 88 | [i18next-xhr-backend](./i/i18next-xhr-backend) | backend layer for i18next using browsers xhr
-| 88 | [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook
 | 88 | [postcss-modules-values](./p/postcss-modules-values) | PostCSS plugin for CSS Modules to pass arbitrary v
 | 88 | [ractive](./r/ractive) | Next-generation DOM manipulation
 | 87 | [connect-busboy](./c/connect-busboy) | Connect middleware for busboy
@@ -1791,7 +1788,6 @@
 | 86 | [cli-truncate](./c/cli-truncate) | Truncate a string to a specific width in the termi
 | 86 | [freeport](./f/freeport) | Find a free port.
 | 86 | [hdkey](./h/hdkey) | Bitcoin BIP32 hierarchical deterministic keys
-| 86 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry
 | 86 | [make-error](./m/make-error) | Make your own error types
 | 86 | [mem](./m/mem) | Memoize functions - An optimization used to speed 
 | 86 | [react-codemirror](./r/react-codemirror) | Codemirror
@@ -2020,6 +2016,7 @@
 | 69 | [reduce-reducers](./r/reduce-reducers) | Reduce multiple reducers into a single reducer
 | 69 | [scrypt](./s/scrypt) | The scrypt crypto library for NodeJS
 | 69 | [speakingurl](./s/speakingurl) | Generate a slug – transliteration with a lot of op
+| 69 | [tiny-warning](./t/tiny-warning) | A tiny warning function
 | 69 | [utility-types](./u/utility-types) | Utility Types Collection for TypeScript
 | 68 | [get-folder-size](./g/get-folder-size) | Get the size of a folder by recursively iterating 
 | 68 | [hls_dot_js](./h/hls_dot_js) | JavaScript HLS client using MediaSourceExtension
@@ -2043,6 +2040,7 @@
 | 67 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster) | Provides Beautiful Animated Marker Clustering func
 | 67 | [lodash_dot_isnil](./l/lodash_dot_isnil) | The lodash method _.isNil exported as a module.
 | 67 | [lodash_dot_zipobject](./l/lodash_dot_zipobject) | The lodash method _.zipObject exported as a module
+| 67 | [md5-hex](./m/md5-hex) | Create a MD5 hash with hex encoding
 | 67 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 67 | [react-draft-wysiwyg](./r/react-draft-wysiwyg) | A wysiwyg on top of DraftJS.
 | 67 | [react-infinite-scroller](./r/react-infinite-scroller) | Infinite scroll component for React in ES6
@@ -2090,13 +2088,13 @@
 | 65 | [read-package-tree](./r/read-package-tree) | Read the contents of node_modules.
 | 65 | [stream-array](./s/stream-array) | Pipe an Array through Node.js streams
 | 65 | [yn](./y/yn) | Parse yes/no like values
+| 64 | [array-union](./a/array-union) | Create an array of unique values, in order, from t
 | 64 | [braces](./b/braces) | Bash-like brace expansion, implemented in JavaScri
 | 64 | [d3-path](./d/d3-path) | Serialize Canvas path commands to SVG.
 | 64 | [d3-timer](./d/d3-timer) | An efficient queue capable of managing thousands o
 | 64 | [gradient-string](./g/gradient-string) | Beautiful color gradients in terminal output
 | 64 | [gulp-copy](./g/gulp-copy) | Plugin copying files to a new destination and usin
 | 64 | [hex-rgb](./h/hex-rgb) | Convert HEX color to RGBA
-| 64 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
 | 64 | [mu2](./m/mu2) | A Mustache template engine for Node.js
 | 64 | [password-hash](./p/password-hash) | Password hashing and verification for node.js
 | 64 | [prosemirror-view](./p/prosemirror-view) | ProseMirror's view component
@@ -2284,6 +2282,7 @@
 | 54 | [google-closure-compiler](./g/google-closure-compiler) | Check, compile, optimize and compress Javascript w
 | 54 | [hapi-auth-cookie](./h/hapi-auth-cookie) | Cookie authentication plugin
 | 54 | [http-aws-es](./h/http-aws-es) | Use the elasticsearch-js client with Amazon ES
+| 54 | [intl-format-cache](./i/intl-format-cache) | A memoizer factory for Intl format constructors.
 | 54 | [intl-relativeformat](./i/intl-relativeformat) | Formats JavaScript dates to relative time strings.
 | 54 | [lodash_dot_flatmap](./l/lodash_dot_flatmap) | The lodash method _.flatMap exported as a module.
 | 54 | [memwatch-next](./m/memwatch-next) | Keep an eye on your memory usage, and discover and
@@ -2307,7 +2306,6 @@
 | 53 | [ionic__core](./i/ionic__core) | Base components for Ionic
 | 53 | [iota_dot_lib_dot_js](./i/iota_dot_lib_dot_js) | Javascript Library for IOTA
 | 53 | [is-finite](./i/is-finite) | ES2015 Number.isFinite() ponyfill
-| 53 | [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime
 | 53 | [jupyterlab__rendermime-in](./j/jupyterlab__rendermime-interfaces) | JupyterLab - Interfaces for Mime Renderers
 | 53 | [kss](./k/kss) | The Node.js port of KSS: A methodology for documen
 | 53 | [material__base](./m/material__base) | The set of base classes for Material Components fo
@@ -2396,7 +2394,6 @@
 | 50 | [is-in-browser](./i/is-in-browser) | Simple check to see if current app is running in b
 | 50 | [ismobilejs](./i/ismobilejs) | A simple JS library that detects mobile devices.
 | 50 | [jest-matcher-utils](./j/jest-matcher-utils) | A set of utility functions for expect and related 
-| 50 | [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget
 | 50 | [lodash_dot_isregexp](./l/lodash_dot_isregexp) | The lodash method _.isRegExp exported as a module.
 | 50 | [lodash_dot_result](./l/lodash_dot_result) | The lodash method _.result exported as a module.
 | 50 | [markdown-to-jsx](./m/markdown-to-jsx) | Convert markdown to JSX with ease for React and Re
@@ -2422,7 +2419,6 @@
 | 49 | [handsontable](./h/handsontable) | Handsontable is a JavaScript Spreadsheet Component
 | 49 | [jsonata](./j/jsonata) | JSON query and transformation language
 | 49 | [jsontoxml](./j/jsontoxml) | This is a library designed to render js objects as
-| 49 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager
 | 49 | [lodash_dot_startswith](./l/lodash_dot_startswith) | The lodash method _.startsWith exported as a modul
 | 49 | [loggly](./l/loggly) | A client implementation for Loggly cloud Logging-a
 | 49 | [material__list](./m/material__list) | The Material Components for the web list component
@@ -2491,7 +2487,6 @@
 | 46 | [alt](./a/alt) | A flux implementation
 | 46 | [fs-cson](./f/fs-cson) | Read and write CSON to the filesystem
 | 46 | [gulp-remember](./g/gulp-remember) | Adds previously seen files back into the stream.
-| 46 | [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel
 | 46 | [koa-websocket](./k/koa-websocket) | Light wrapper around Koa providing a websocket mid
 | 46 | [p-all](./p/p-all) | Run promise-returning & async functions concurrent
 | 46 | [p-try](./p/p-try) | Start a promise chain
@@ -2504,7 +2499,6 @@
 | 46 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 46 | [static-eval](./s/static-eval) | evaluate statically-analyzable expressions
 | 46 | [topojson-client](./t/topojson-client) | Manipulate TopoJSON and convert it to GeoJSON.
-| 45 | [ansi_up](./a/ansi_up) | Convert ansi sequences in strings to colorful HTML
 | 45 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 45 | [center-align](./c/center-align) | Center-align the text in a string.
 | 45 | [ci-info](./c/ci-info) | Get details about the current Continuous Integrati
@@ -2610,7 +2604,6 @@
 | 42 | [slice-ansi](./s/slice-ansi) | Slice a string with ANSI escape codes
 | 42 | [store2](./s/store2) | Better localStorage
 | 42 | [ui-select](./u/ui-select) | -
-| 41 | [array-differ](./a/array-differ) | Create an array with values that are present in th
 | 41 | [ascii-art](./a/ascii-art) | Ansi codes, figlet fonts, and ascii art. 100% JS
 | 41 | [async-cache](./a/async-cache) | Cache your async lookups and don't fetch the same 
 | 41 | [bleno](./b/bleno) | A Node.js module for implementing BLE (Bluetooth L
@@ -2657,7 +2650,6 @@
 | 40 | [react-native-drawer-layou](./r/react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript
 | 40 | [react-native-video](./r/react-native-video) | A  element for react-native
 | 40 | [react-svg-inline](./r/react-svg-inline) | A React component to inline your SVGs.
-| 40 | [react-testing-library](./r/react-testing-library) | Simple and complete React DOM testing utilities th
 | 40 | [rtlcss](./r/rtlcss) | Framework for transforming cascading style sheets 
 | 40 | [shebang-command](./s/shebang-command) | Get the command from a shebang
 | 40 | [socketio-wildcard](./s/socketio-wildcard) | socket.io with a wildcard event
@@ -3051,7 +3043,6 @@
 | 28 | [icheck](./i/icheck) | Highly customizable checkboxes and radio buttons (
 | 28 | [is-regexp](./i/is-regexp) | Check if a value is a regular expression
 | 28 | [js-priority-queue](./j/js-priority-queue) | Priority queue data structures
-| 28 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
 | 28 | [kuromoji](./k/kuromoji) | JavaScript implementation of Japanese morphologica
 | 28 | [locks](./l/locks) | Mutex locks, Read/Write locks, Condition variables
 | 28 | [lodash_dot_indexof](./l/lodash_dot_indexof) | The lodash method _.indexOf exported as a module.
@@ -3086,7 +3077,6 @@
 | 27 | [hapi-auth-bearer-token](./h/hapi-auth-bearer-token) | Simple Bearer authentication scheme plugin for hap
 | 27 | [hapi__boom](./h/hapi__boom) | HTTP-friendly error objects
 | 27 | [jstimezonedetect](./j/jstimezonedetect) | This script gives you the zone info key representi
-| 27 | [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells
 | 27 | [kramed](./k/kramed) | A markdown (kramdown compatible) parser and compil
 | 27 | [latinize](./l/latinize) | Simple library to convert accents (diacritics) fro
 | 27 | [lodash_dot_differenceby](./l/lodash_dot_differenceby) | The lodash method _.differenceBy exported as a mod
@@ -3313,11 +3303,11 @@
 | 22 | [heatmap_dot_js](./h/heatmap_dot_js) | Dynamic JavaScript Heatmaps for the Web
 | 22 | [i18n-js](./i/i18n-js) | A javascript library similar to Ruby on Rails i18n
 | 22 | [is-natural-number](./i/is-natural-number) | Check if a value is a natural number
+| 22 | [is-npm](./i/is-npm) | Check if your code is running as an npm script
 | 22 | [is-odd](./i/is-odd) | Returns true if the given number is odd, and is an
 | 22 | [jalaali-js](./j/jalaali-js) | Converts Gregorian and Jalaali calendars to each o
 | 22 | [jqueryui](./j/jqueryui) | A curated set of user interface interactions, effe
 | 22 | [jsonpack](./j/jsonpack) | A compression algorithm for JSON
-| 22 | [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget
 | 22 | [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes.
 | 22 | [lasso](./l/lasso) | Lasso.js is a build tool and runtime library for b
 | 22 | [libsodium-wrappers-sumo](./l/libsodium-wrappers-sumo) | The Sodium cryptographic library compiled to pure 
@@ -3377,7 +3367,6 @@
 | 21 | [is-valid-glob](./i/is-valid-glob) | Return true if a value is a valid glob pattern or 
 | 21 | [isotope-layout](./i/isotope-layout) | Filter and sort magical layouts
 | 21 | [jquery-mask-plugin](./j/jquery-mask-plugin) | A jQuery Plugin to make masks on form fields and h
-| 21 | [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console
 | 21 | [koa-sslify](./k/koa-sslify) | Enforces HTTPS for node.js koa projects
 | 21 | [lodash_dot_repeat](./l/lodash_dot_repeat) | The lodash method _.repeat exported as a module.
 | 21 | [lodash_dot_sumby](./l/lodash_dot_sumby) | The lodash method _.sumBy exported as a module.
@@ -3540,7 +3529,6 @@
 | 18 | [clone-regexp](./c/clone-regexp) | Clone and modify a RegExp instance
 | 18 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 18 | [docker-file-parser](./d/docker-file-parser) | Parses a Dockerfile and returns an array of comman
-| 18 | [dom-testing-library](./d/dom-testing-library) | Simple and complete DOM testing utilities that enc
 | 18 | [elv](./e/elv) | Elvis operator functionality for JavaScript.
 | 18 | [emotion__utils](./e/emotion__utils) | internal utils for emotion
 | 18 | [express-minify](./e/express-minify) | Automatically minify and cache your javascript and
@@ -3723,6 +3711,7 @@
 | 15 | [googlemaps](./g/googlemaps) | A simple way to query the Google Maps API from Nod
 | 15 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
 | 15 | [hash-stream](./h/hash-stream) | Get a hash of a file or a stream
+| 15 | [hi-base32](./h/hi-base32) | A simple Base32 encode / decode function for JavaS
 | 15 | [jasminewd2](./j/jasminewd2) | WebDriverJS adapter for Jasmine2.
 | 15 | [js-data-adapter](./j/js-data-adapter) | Base adapter class that all other js-data adapters
 | 15 | [json-merge-patch](./j/json-merge-patch) | Implementation of JSON Merge Patch (RFC 7396)
@@ -3863,6 +3852,7 @@
 | 13 | [feedme](./f/feedme) | RSS/Atom/JSON feed parser
 | 13 | [firebase__database-types](./f/firebase__database-types) | @firebase/database Types
 | 13 | [firebase__firestore-types](./f/firebase__firestore-types) | @firebase/firestore Types
+| 13 | [free-style](./f/free-style) | Make CSS easier and more maintainable by using Jav
 | 13 | [fscreen](./f/fscreen) | fullscreen spec api in a vendor agnostic wrapper
 | 13 | [generate-json-webpack-plu](./g/generate-json-webpack-plugin) | Webpack plugin to generate a custom JSON asset
 | 13 | [gl-vec4](./g/gl-vec4) | gl-matrix's vec4, split into smaller pieces
@@ -3884,7 +3874,6 @@
 | 13 | [lory_dot_js](./l/lory_dot_js) | Touch enabled minimalistic slider written in vanil
 | 13 | [material__grid-list](./m/material__grid-list) | The Material Components for the web grid list comp
 | 13 | [mobx-react-lite](./m/mobx-react-lite) | Lightweight React bindings for MobX based on React
-| 13 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 13 | [nanoajax](./n/nanoajax) | A small ajax lib
 | 13 | [nivo__axes](./n/nivo__axes) | -
 | 13 | [nodecredstash](./n/nodecredstash) | Node.js credstash implementation
@@ -3909,6 +3898,7 @@
 | 13 | [retry-request](./r/retry-request) | Retry a request.
 | 13 | [roll](./r/roll) | node.js package for rolling dice and adding modifi
 | 13 | [spdx-satisfies](./s/spdx-satisfies) | test whether SPDX expressions satisfy licensing cr
+| 13 | [strip-bom-buf](./s/strip-bom-buf) | Strip UTF-8 byte order mark (BOM) from a buffer
 | 13 | [styletron-react](./s/styletron-react) | React bindings for Styletron
 | 13 | [svg-path-parser](./s/svg-path-parser) | A parser for SVG's path syntax
 | 13 | [transducers-js](./t/transducers-js) | A Transducers implementation for JavaScript
@@ -4040,7 +4030,6 @@
 | 11 | [jasmine-ajax](./j/jasmine-ajax) | A library for faking Ajax responses in your Jasmin
 | 11 | [js-money](./j/js-money) | JavaScript implementation of the Money value objec
 | 11 | [jsonstream](./j/jsonstream) | rawStream.pipe(JSONStream.parse()).pipe(streamOfOb
-| 11 | [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area
 | 11 | [just-debounce-it](./j/just-debounce-it) | return a debounced function
 | 11 | [knockout_dot_validation](./k/knockout_dot_validation) | A KnockoutJS Plugin for model and property validat
 | 11 | [koa-pino-logger](./k/koa-pino-logger) | pino logging koa middleware
@@ -4258,7 +4247,6 @@
 | 9 | [istanbul-middleware](./i/istanbul-middleware) | Connect middleware for Istanbul to handle server-s
 | 9 | [jquery-validation-unobtru](./j/jquery-validation-unobtrusive) | Add-on to jQuery Validation to enable unobtrusive 
 | 9 | [jsreport-core](./j/jsreport-core) | javascript based business reporting
-| 9 | [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer
 | 9 | [koa-useragent](./k/koa-useragent) | Koa.js middleware for useragent detection
 | 9 | [load-google-maps-api](./l/load-google-maps-api) | A thin, Promise-returning helper for loading the G
 | 9 | [lodash_dot_lowercase](./l/lodash_dot_lowercase) | The lodash method _.lowerCase exported as a module
@@ -4429,7 +4417,6 @@
 | 8 | [vali-date](./v/vali-date) | Validate a date
 | 8 | [vega-typings](./v/vega-typings) | Typings for Vega.
 | 8 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2
-| 8 | [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr
 | 8 | [wnumb](./w/wnumb) | wNumb - JavaScript Number & Money formatting
 | 8 | [yargs-interactive](./y/yargs-interactive) | Build interactive command line tools without worri
 | 7 | [amplitude-js](./a/amplitude-js) | Javascript library for Amplitude Analytics
@@ -4487,7 +4474,7 @@
 | 7 | [jjve](./j/jjve) | Render JJV errors
 | 7 | [jquery-maskmoney](./j/jquery-maskmoney) | jQuery plugin to mask data entry in the input text
 | 7 | [jsqrcode](./j/jsqrcode) | a node port of Lazar Laszlo's jsqrcode qr code dec
-| 7 | [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget
+| 7 | [just-safe-get](./j/just-safe-get) | get value at property, don't throw if parent is un
 | 7 | [knex-postgis](./k/knex-postgis) | postgis extension for knex
 | 7 | [koa-xml-body](./k/koa-xml-body) | koa middleware to parse xml request body
 | 7 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet
@@ -4662,6 +4649,7 @@
 | 6 | [node-pg-migrate](./n/node-pg-migrate) | Postgresql database migration management tool for 
 | 6 | [node-sprite-generator](./n/node-sprite-generator) | Generates image sprites and their spritesheets (cs
 | 6 | [npm-license-crawler](./n/npm-license-crawler) | Analyzes license information for multiple node.js 
+| 6 | [nteract__transform-vdom](./n/nteract__transform-vdom) | VDOM Transform for jupyter outputs
 | 6 | [object-map](./o/object-map) | Map a function over some Object's values to produc
 | 6 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s
 | 6 | [oibackoff](./o/oibackoff) | Incremental backoff flow-control for any : fn(func
@@ -4785,8 +4773,7 @@
 | 5 | [jsonquery](./j/jsonquery) | MongoDB query language implemented as a node.js St
 | 5 | [jsreport-html-to-xlsx](./j/jsreport-html-to-xlsx) | jsreport recipe capable of converting html into ex
 | 5 | [jsreport-xlsx](./j/jsreport-xlsx) | jsreport recipe rendering excels directly from ope
-| 5 | [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget
-| 5 | [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector
+| 5 | [jupyterlab__ui-components](./j/jupyterlab__ui-components) | JupyterLab - UI components written in React
 | 5 | [karma-chai-sinon](./k/karma-chai-sinon) | Chai + Sinon-Chai + Sinon for Karma
 | 5 | [keysym](./k/keysym) | Look up X11 keysyms, unicode positions, and names.
 | 5 | [koa-log](./k/koa-log) | logger middlware for koa
@@ -4968,7 +4955,6 @@
 | 4 | [jschannel](./j/jschannel) | Mozilla's Channel mechanism built on top of post-m
 | 4 | [jsend](./j/jsend) | Utilities and middleware to assist with sending an
 | 4 | [jsmockito](./j/jsmockito) | Javascript mocking framework inspired by the aweso
-| 4 | [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget
 | 4 | [just-pick](./j/just-pick) | copy an object but with only the specified keys
 | 4 | [kdbxweb](./k/kdbxweb) | Kdbx KeePass database reader for web
 | 4 | [keyv__redis](./k/keyv__redis) | Redis storage adapter for Keyv
@@ -5170,10 +5156,7 @@
 | 3 | [jsonnet](./j/jsonnet) | jsonnet wrapper for Node.js
 | 3 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC
 | 3 | [jsreport-phantom-pdf](./j/jsreport-phantom-pdf) | jsreport recipe which is rendering pdf from html u
-| 3 | [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension
-| 3 | [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget
 | 3 | [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab
-| 3 | [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel
 | 3 | [jwt-client](./j/jwt-client) | Micro service to read, write and save JWT headers
 | 3 | [knockout_dot_punches](./k/knockout_dot_punches) | Enhanced binding syntaxes for Knockout 3+
 | 3 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
@@ -5447,15 +5430,6 @@
 | 2 | [js_dot_spec](./j/js_dot_spec) | clojure.spec for Javascript
 | 2 | [json-rpc-random-id](./j/json-rpc-random-id) | Generates an id useable in json rpc payloads.
 | 2 | [jsrp](./j/jsrp) | JavaScript SRP implementation
-| 2 | [jupyterlab__attachments](./j/jupyterlab__attachments) | JupyterLab - Notebook Cell Attachments
-| 2 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager
-| 2 | [jupyterlab__faq-extension](./j/jupyterlab__faq-extension) | JupyterLab - FAQ Extension
-| 2 | [jupyterlab__filebrowser-e](./j/jupyterlab__filebrowser-extension) | JupyterLab - Filebrowser Widget Extension
-| 2 | [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension
-| 2 | [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension
-| 2 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface
-| 2 | [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension
-| 2 | [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme
 | 2 | [karma-viewport](./k/karma-viewport) | A Karma plugin for testing responsive features and
 | 2 | [kii-cloud-sdk](./k/kii-cloud-sdk) | This is the Kii Cloud SDK
 | 2 | [leaflet_dot_fullscreen](./l/leaflet_dot_fullscreen) | Simple plugin for Leaflet that adds fullscreen but
@@ -5514,6 +5488,7 @@
 | 2 | [nivo__chord](./n/nivo__chord) | -
 | 2 | [nivo__heatmap](./n/nivo__heatmap) | -
 | 2 | [nivo__radar](./n/nivo__radar) | -
+| 2 | [nivo__stream](./n/nivo__stream) | -
 | 2 | [nivo__waffle](./n/nivo__waffle) | -
 | 2 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 2 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support
@@ -5829,32 +5804,9 @@
 | 1 | [jui](./j/jui) | JUI provide all kinds of UI components that are us
 | 1 | [jui-core](./j/jui-core) | The core framework provided by the JUI for impleme
 | 1 | [jui-grid](./j/jui-grid) | JUI grid can handle millions of data, and can disp
-| 1 | [jupyterlab__application-e](./j/jupyterlab__application-extension) | JupyterLab - Application Extension
-| 1 | [jupyterlab__apputils-exte](./j/jupyterlab__apputils-extension) | JupyterLab - Application Utilities Extension
-| 1 | [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension
-| 1 | [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension
-| 1 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension
-| 1 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
-| 1 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension
-| 1 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension
-| 1 | [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension
-| 1 | [jupyterlab__inspector-ext](./j/jupyterlab__inspector-extension) | JupyterLab - Code Inspector Extension
-| 1 | [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer
-| 1 | [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer
-| 1 | [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension
-| 1 | [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension
-| 1 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension
-| 1 | [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset
 | 1 | [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer
-| 1 | [jupyterlab__rendermime-ex](./j/jupyterlab__rendermime-extension) | A rendermime extension for JupyterLab
-| 1 | [jupyterlab__running-exten](./j/jupyterlab__running-extension) | JupyterLab - Running Sessions Extension
-| 1 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor-extension) | JupyterLab - Setting Editor Extension
-| 1 | [jupyterlab__shortcuts-ext](./j/jupyterlab__shortcuts-extension) | JupyterLab - Shortcuts Extension
-| 1 | [jupyterlab__terminal-exte](./j/jupyterlab__terminal-extension) | JupyterLab - Terminal Emulator Extension
-| 1 | [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme
-| 1 | [jupyterlab__tooltip-exten](./j/jupyterlab__tooltip-extension) | JupyterLab - Tooltip Extension
-| 1 | [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer
 | 1 | [jupyterlab__vega4-extensi](./j/jupyterlab__vega4-extension) | JupyterLab - Vega 4 and Vega-Lite 2 Mime Renderer 
+| 1 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer 
 | 1 | [jweixin](./j/jweixin) | wechat js-sdk
 | 1 | [jwt-express](./j/jwt-express) | Climb aboard the JWT Express and use JWTs in your 
 | 1 | [keyv__mongo](./k/keyv__mongo) | MongoDB storage adapter for Keyv
@@ -5925,6 +5877,8 @@
 | 1 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
 | 1 | [node-sql-parser](./n/node-sql-parser) | simple node sql parser
 | 1 | [node-timecodes](./n/node-timecodes) | Time and SMTPE Timecodes conversions
+| 1 | [nodelib__fs_dot_scandir](./n/nodelib__fs_dot_scandir) | List files and directories inside the specified di
+| 1 | [nodelib__fs_dot_walk](./n/nodelib__fs_dot_walk) | A library for efficiently walking a directory recu
 | 1 | [notify](./n/notify) | Native Node.js C++ extension for displaying deskto
 | 1 | [notyf](./n/notyf) | A dead simple, responsive, a11y, dependency-free, 
 | 1 | [novnc-core](./n/novnc-core) | noVNC core files for using with node

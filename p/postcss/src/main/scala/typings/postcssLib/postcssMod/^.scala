@@ -9,6 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
+    * Parses source CSS.
+    * @param css The CSS to parse.
+    * @param options
+    * @returns {} A new Root node, which contains the source CSS nodes.
+    */
+  val parse: Parser = js.native
+  /**
+    * Default function to convert a node tree into a CSS string.
+    */
+  val stringify: Stringifier = js.native
+  /**
     * @param plugins Can also be included with the Processor#use method.
     * @returns A processor that will apply plugins as CSS processors.
     */
@@ -37,20 +48,6 @@ object ^ extends js.Object {
   def decl(): Declaration = js.native
   def decl(defaults: DeclarationNewProps): Declaration = js.native
   /**
-    * Parses source CSS.
-    * @param css The CSS to parse.
-    * @param options
-    * @returns {} A new Root node, which contains the source CSS nodes.
-    */
-  def parse(css: java.lang.String): Root = js.native
-  def parse(css: java.lang.String, options: postcssLib.Anon_From): Root = js.native
-  def parse(css: postcssLib.Anon_ToString): Root = js.native
-  def parse(css: postcssLib.Anon_ToString, options: postcssLib.Anon_From): Root = js.native
-  def parse(css: LazyResult): Root = js.native
-  def parse(css: LazyResult, options: postcssLib.Anon_From): Root = js.native
-  def parse(css: Result): Root = js.native
-  def parse(css: Result, options: postcssLib.Anon_From): Root = js.native
-  /**
     * Creates a PostCSS plugin with a standard API.
     * @param name Plugin name. Same as in name property in package.json. It will
     * be saved in plugin.postcssPlugin property.
@@ -72,9 +69,5 @@ object ^ extends js.Object {
     */
   def rule(): Rule = js.native
   def rule(defaults: RuleNewProps): Rule = js.native
-  /**
-    * Default function to convert a node tree into a CSS string.
-    */
-  def stringify(node: Node, builder: postcssLib.postcssMod.StringifierNs.Builder): scala.Unit = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for isobject
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Returns true if the value is an object and not an array or null.

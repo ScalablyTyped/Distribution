@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLPrograms protected ()
   extends threeLib.srcRenderersWebglWebGLProgramsMod.WebGLPrograms {
-  def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures) = this()
+  def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities) = this()
 }
 

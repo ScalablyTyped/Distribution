@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__mathjax2
 
-Typings are for version 0.7.1
+Typings are for version 1.0.0
 
 ## Library description:
 A MathJax 2 Typesetting provider for JupyterLab

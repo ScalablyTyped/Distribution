@@ -37,8 +37,6 @@ object ^ extends js.Object {
   def runJS(code: java.lang.String, window: electronLib.electronMod.BrowserWindow): js.Promise[_] = js.native
   def setContentSecurityPolicy(policy: java.lang.String): scala.Unit = js.native
   def setContentSecurityPolicy(policy: java.lang.String, options: SetContentSecurityPolicyOptions): scala.Unit = js.native
-  def setWindowBounds(bounds: OptionalRectangle): scala.Unit = js.native
-  def setWindowBounds(bounds: OptionalRectangle, options: SetWindowBoundsOptions): scala.Unit = js.native
   def showAboutWindow(options: ShowAboutWindowOptions): scala.Unit = js.native
 }
 

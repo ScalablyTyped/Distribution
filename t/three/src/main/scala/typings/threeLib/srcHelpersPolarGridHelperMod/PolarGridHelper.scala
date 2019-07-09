@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three/src/helpers/PolarGridHelper", "PolarGridHelper")
 @js.native
-class PolarGridHelper protected () extends js.Object {
+class PolarGridHelper protected ()
+  extends threeLib.srcObjectsLineSegmentsMod.LineSegments {
   def this(radius: scala.Double, radials: scala.Double, circles: scala.Double, divisions: scala.Double) = this()
   def this(radius: scala.Double, radials: scala.Double, circles: scala.Double, divisions: scala.Double, color1: java.lang.String) = this()
   def this(radius: scala.Double, radials: scala.Double, circles: scala.Double, divisions: scala.Double, color1: scala.Double) = this()

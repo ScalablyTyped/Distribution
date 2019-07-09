@@ -59,6 +59,10 @@ trait PodSecurityContext extends js.Object {
     * (by the container runtime) might fail to launch.
     */
   val sysctls: js.Array[Sysctl]
+  /**
+    * Windows security options.
+    */
+  val windowsOptions: WindowsSecurityContextOptions
 }
 
 object PodSecurityContext {
@@ -70,9 +74,10 @@ object PodSecurityContext {
     runAsUser: scala.Double,
     seLinuxOptions: SELinuxOptions,
     supplementalGroups: js.Array[scala.Double],
-    sysctls: js.Array[Sysctl]
+    sysctls: js.Array[Sysctl],
+    windowsOptions: WindowsSecurityContextOptions
   ): PodSecurityContext = {
-    val __obj = js.Dynamic.literal(fsGroup = fsGroup, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions, supplementalGroups = supplementalGroups, sysctls = sysctls)
+    val __obj = js.Dynamic.literal(fsGroup = fsGroup, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions, supplementalGroups = supplementalGroups, sysctls = sysctls, windowsOptions = windowsOptions)
   
     __obj.asInstanceOf[PodSecurityContext]
   }

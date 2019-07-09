@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Gitignore extends js.Object {
   /**
   	`.gitignore` files matched by the ignore config are not used for the resulting filter function.
-  	@returns A `Promise` for a filter function indicating whether a given path is ignored via a `.gitignore` file.
+  	@returns A filter function indicating whether a given path is ignored via a `.gitignore` file.
   	@example
   	```
   	import {gitignore} from 'globby';

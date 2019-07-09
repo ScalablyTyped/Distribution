@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg-core
 
-Typings are for version 4.17.2
+Typings are for version 4.17.3
 
 ## Library description:
 A core Pluggable framework based on koa

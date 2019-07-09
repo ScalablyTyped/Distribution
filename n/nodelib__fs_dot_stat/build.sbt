@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nodelib__fs_dot_stat"
-version := "1.1.3-de5478"
+version := "2.0.1-dbdbd0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

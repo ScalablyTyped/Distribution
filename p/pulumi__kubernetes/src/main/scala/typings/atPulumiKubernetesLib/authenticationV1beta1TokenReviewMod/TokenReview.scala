@@ -19,7 +19,6 @@ class TokenReview protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authenticationNs.v1beta1Ns.TokenReview) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authenticationNs.v1beta1Ns.TokenReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -47,7 +46,6 @@ class TokenReview protected ()
   val status: atPulumiPulumiLib.outputMod.Output[
     atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewStatus
   ] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.authenticationNs.v1beta1Ns.TokenReview = js.native
 }
 
 /* static members */
@@ -72,5 +70,10 @@ object TokenReview extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.authenticationV1beta1TokenReviewMod.TokenReview = js.native
+  /**
+    * Returns true if the given object is an instance of TokenReview.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authentication/v1beta1/TokenReview.TokenReview */ scala.Boolean = js.native
 }
 

@@ -16,29 +16,29 @@ class AttachedProperty[T, U] protected () extends js.Object {
   def this(options: atPhosphorPropertiesLib.atPhosphorPropertiesMod.AttachedPropertyNs.IOptions[T, U]) = this()
   var _changed: js.Any = js.native
   var _coerce: js.Any = js.native
+  /**
+    * Coerce the value for the given owner.
+    */
+  var _coerceValue: js.Any = js.native
   var _compare: js.Any = js.native
+  /**
+    * Compare the old value and new value for equality.
+    */
+  var _compareValue: js.Any = js.native
   var _create: js.Any = js.native
+  /**
+    * Get or create the default value for the given owner.
+    */
+  var _createValue: js.Any = js.native
+  /**
+    * Run the change notification if the given values are different.
+    */
+  var _maybeNotify: js.Any = js.native
   var _pid: js.Any = js.native
   /**
     * The human readable name for the property.
     */
   val name: java.lang.String = js.native
-  /**
-    * Coerce the value for the given owner.
-    */
-  /* private */ def _coerceValue(owner: js.Any, value: js.Any): js.Any = js.native
-  /**
-    * Compare the old value and new value for equality.
-    */
-  /* private */ def _compareValue(oldValue: js.Any, newValue: js.Any): js.Any = js.native
-  /**
-    * Get or create the default value for the given owner.
-    */
-  /* private */ def _createValue(owner: js.Any): js.Any = js.native
-  /**
-    * Run the change notification if the given values are different.
-    */
-  /* private */ def _maybeNotify(owner: js.Any, oldValue: js.Any, newValue: js.Any): js.Any = js.native
   /**
     * Explicitly coerce the current property value for a given owner.
     *

@@ -8,21 +8,43 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GeoNodes
   extends gitlabLib.distInfrastructureMod.BaseService {
-  def all(): js.Promise[gitlabLib.GetResponse] = js.native
-  def all(options: gitlabLib.PaginatedRequestOptions): js.Promise[gitlabLib.GetResponse] = js.native
-  def create(geonodeId: gitlabLib.GeonodeId): js.Promise[js.Object] = js.native
-  def create(geonodeId: gitlabLib.GeonodeId, options: gitlabLib.BaseRequestOptions): js.Promise[js.Object] = js.native
-  def edit(geonodeId: gitlabLib.GeonodeId): js.Promise[js.Object] = js.native
-  def edit(geonodeId: gitlabLib.GeonodeId, options: gitlabLib.BaseRequestOptions): js.Promise[js.Object] = js.native
+  def all(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(options: gitlabLib.distInfrastructureMod.PaginatedRequestOptions): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def create(geonodeId: gitlabLib.distServicesMod.GeonodeId): js.Promise[js.Object] = js.native
+  def create(
+    geonodeId: gitlabLib.distServicesMod.GeonodeId,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
+  def edit(geonodeId: gitlabLib.distServicesMod.GeonodeId): js.Promise[js.Object] = js.native
+  def edit(
+    geonodeId: gitlabLib.distServicesMod.GeonodeId,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
   def failures(): js.Promise[js.Object] = js.native
-  def failures(options: gitlabLib.BaseRequestOptions): js.Promise[js.Object] = js.native
-  def repair(geonodeId: gitlabLib.GeonodeId): js.Promise[js.Object] = js.native
-  def repair(geonodeId: gitlabLib.GeonodeId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def show(geonodeId: gitlabLib.GeonodeId): js.Promise[gitlabLib.GetResponse] = js.native
-  def show(geonodeId: gitlabLib.GeonodeId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def status(geonodeId: gitlabLib.GeonodeId): js.Promise[gitlabLib.GetResponse] = js.native
-  def status(geonodeId: gitlabLib.GeonodeId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def statuses(): js.Promise[gitlabLib.GetResponse] = js.native
-  def statuses(options: gitlabLib.PaginatedRequestOptions): js.Promise[gitlabLib.GetResponse] = js.native
+  def failures(options: gitlabLib.distInfrastructureMod.BaseRequestOptions): js.Promise[js.Object] = js.native
+  def repair(geonodeId: gitlabLib.distServicesMod.GeonodeId): js.Promise[js.Object] = js.native
+  def repair(geonodeId: gitlabLib.distServicesMod.GeonodeId, options: gitlabLib.distInfrastructureMod.Sudo): js.Promise[js.Object] = js.native
+  def show(geonodeId: gitlabLib.distServicesMod.GeonodeId): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def show(geonodeId: gitlabLib.distServicesMod.GeonodeId, options: gitlabLib.distInfrastructureMod.Sudo): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def status(geonodeId: gitlabLib.distServicesMod.GeonodeId): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def status(geonodeId: gitlabLib.distServicesMod.GeonodeId, options: gitlabLib.distInfrastructureMod.Sudo): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def statuses(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def statuses(options: gitlabLib.distInfrastructureMod.PaginatedRequestOptions): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

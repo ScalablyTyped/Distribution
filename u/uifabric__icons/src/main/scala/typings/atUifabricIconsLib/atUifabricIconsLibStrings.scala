@@ -111,6 +111,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait AddWork
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Admin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -276,22 +280,6 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait AppIconDefaultList
-    extends atUifabricIconsLib.libIconNamesMod.IconNames
-  
-  @js.native
-  sealed trait AppleTVMenu
-    extends atUifabricIconsLib.libIconNamesMod.IconNames
-  
-  @js.native
-  sealed trait AppleTVMicrophone
-    extends atUifabricIconsLib.libIconNamesMod.IconNames
-  
-  @js.native
-  sealed trait AppleTVMonitor
-    extends atUifabricIconsLib.libIconNamesMod.IconNames
-  
-  @js.native
-  sealed trait AppleTVPlay
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -507,6 +495,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait BarChartVerticalEdit
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait BarChartVerticalFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -592,6 +584,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait Bold
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait BookAnswers
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -924,6 +920,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait CalendarWorkWeek
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Calories
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -1367,6 +1367,14 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ClearSelection
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait ClearSelectionMirrored
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait ClipboardList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -1575,6 +1583,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ConnectVirtualMachine
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait ConstructionCone
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -1596,6 +1608,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait ContactCardSettingsMirrored
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait ContactHeart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -1648,6 +1664,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait CrownSolid
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait CubeShape
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -1892,6 +1912,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait DisableUpdates
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait DisconnectVirtualMachine
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -2256,6 +2280,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait EventTentativeMirrored
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait EventToDoLogo
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -2883,6 +2911,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait GlobalNavButtonActive
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Globe
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -2940,6 +2972,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait Group
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait GroupList
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -3735,6 +3771,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ModelingView
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Money
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -4443,6 +4483,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait PinnedSolid
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait PivotChart
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -4467,6 +4511,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait PlaybackRate1x
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait PlayerSettings
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -4484,6 +4532,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait PlugSolid
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait PollResults
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -4728,6 +4780,14 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait QRCode
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait QandA
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait QandAMirror
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -5039,6 +5099,14 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ReportLock
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Rerun
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait ReservationOrders
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -5199,6 +5267,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ScatterChart
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait ScheduleEventAction
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -5232,6 +5304,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait SearchCalendar
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait SearchData
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -5340,6 +5416,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait Shield
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait ShieldAlert
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -6391,6 +6471,14 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait Uneditable2
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Uneditable2Mirrored
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait UneditableMirrored
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -6520,6 +6608,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait Variable
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Variable2
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -6659,6 +6751,10 @@ object atUifabricIconsLibStrings {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait VisuallyImpaired
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait VisualsFolder
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -6748,6 +6844,10 @@ object atUifabricIconsLibStrings {
   
   @js.native
   sealed trait Weights
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Wheelchair
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -6931,6 +7031,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def AddTo: AddTo = "AddTo".asInstanceOf[AddTo]
   @scala.inline
+  def AddWork: AddWork = "AddWork".asInstanceOf[AddWork]
+  @scala.inline
   def Admin: Admin = "Admin".asInstanceOf[Admin]
   @scala.inline
   def AdminALogo32: AdminALogo32 = "AdminALogo32".asInstanceOf[AdminALogo32]
@@ -7014,14 +7116,6 @@ object atUifabricIconsLibStrings {
   def AppIconDefaultAdd: AppIconDefaultAdd = "AppIconDefaultAdd".asInstanceOf[AppIconDefaultAdd]
   @scala.inline
   def AppIconDefaultList: AppIconDefaultList = "AppIconDefaultList".asInstanceOf[AppIconDefaultList]
-  @scala.inline
-  def AppleTVMenu: AppleTVMenu = "AppleTVMenu".asInstanceOf[AppleTVMenu]
-  @scala.inline
-  def AppleTVMicrophone: AppleTVMicrophone = "AppleTVMicrophone".asInstanceOf[AppleTVMicrophone]
-  @scala.inline
-  def AppleTVMonitor: AppleTVMonitor = "AppleTVMonitor".asInstanceOf[AppleTVMonitor]
-  @scala.inline
-  def AppleTVPlay: AppleTVPlay = "AppleTVPlay".asInstanceOf[AppleTVPlay]
   @scala.inline
   def Archive: Archive = "Archive".asInstanceOf[Archive]
   @scala.inline
@@ -7129,6 +7223,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def BarChartVertical: BarChartVertical = "BarChartVertical".asInstanceOf[BarChartVertical]
   @scala.inline
+  def BarChartVerticalEdit: BarChartVerticalEdit = "BarChartVerticalEdit".asInstanceOf[BarChartVerticalEdit]
+  @scala.inline
   def BarChartVerticalFill: BarChartVerticalFill = "BarChartVerticalFill".asInstanceOf[BarChartVerticalFill]
   @scala.inline
   def BarChartVerticalFilter: BarChartVerticalFilter = "BarChartVerticalFilter".asInstanceOf[BarChartVerticalFilter]
@@ -7172,6 +7268,8 @@ object atUifabricIconsLibStrings {
   def Boards: Boards = "Boards".asInstanceOf[Boards]
   @scala.inline
   def Bold: Bold = "Bold".asInstanceOf[Bold]
+  @scala.inline
+  def BookAnswers: BookAnswers = "BookAnswers".asInstanceOf[BookAnswers]
   @scala.inline
   def BookingsLogo: BookingsLogo = "BookingsLogo".asInstanceOf[BookingsLogo]
   @scala.inline
@@ -7338,6 +7436,8 @@ object atUifabricIconsLibStrings {
   def CalendarWeek: CalendarWeek = "CalendarWeek".asInstanceOf[CalendarWeek]
   @scala.inline
   def CalendarWorkWeek: CalendarWorkWeek = "CalendarWorkWeek".asInstanceOf[CalendarWorkWeek]
+  @scala.inline
+  def Calories: Calories = "Calories".asInstanceOf[Calories]
   @scala.inline
   def CaloriesAdd: CaloriesAdd = "CaloriesAdd".asInstanceOf[CaloriesAdd]
   @scala.inline
@@ -7559,6 +7659,10 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def ClearNight: ClearNight = "ClearNight".asInstanceOf[ClearNight]
   @scala.inline
+  def ClearSelection: ClearSelection = "ClearSelection".asInstanceOf[ClearSelection]
+  @scala.inline
+  def ClearSelectionMirrored: ClearSelectionMirrored = "ClearSelectionMirrored".asInstanceOf[ClearSelectionMirrored]
+  @scala.inline
   def ClipboardList: ClipboardList = "ClipboardList".asInstanceOf[ClipboardList]
   @scala.inline
   def ClipboardListMirrored: ClipboardListMirrored = "ClipboardListMirrored".asInstanceOf[ClipboardListMirrored]
@@ -7663,6 +7767,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def ConnectContacts: ConnectContacts = "ConnectContacts".asInstanceOf[ConnectContacts]
   @scala.inline
+  def ConnectVirtualMachine: ConnectVirtualMachine = "ConnectVirtualMachine".asInstanceOf[ConnectVirtualMachine]
+  @scala.inline
   def ConstructionCone: ConstructionCone = "ConstructionCone".asInstanceOf[ConstructionCone]
   @scala.inline
   def ConstructionConeSolid: ConstructionConeSolid = "ConstructionConeSolid".asInstanceOf[ConstructionConeSolid]
@@ -7674,6 +7780,8 @@ object atUifabricIconsLibStrings {
   def ContactCardSettings: ContactCardSettings = "ContactCardSettings".asInstanceOf[ContactCardSettings]
   @scala.inline
   def ContactCardSettingsMirrored: ContactCardSettingsMirrored = "ContactCardSettingsMirrored".asInstanceOf[ContactCardSettingsMirrored]
+  @scala.inline
+  def ContactHeart: ContactHeart = "ContactHeart".asInstanceOf[ContactHeart]
   @scala.inline
   def ContactInfo: ContactInfo = "ContactInfo".asInstanceOf[ContactInfo]
   @scala.inline
@@ -7700,6 +7808,8 @@ object atUifabricIconsLibStrings {
   def Crown: Crown = "Crown".asInstanceOf[Crown]
   @scala.inline
   def CrownSolid: CrownSolid = "CrownSolid".asInstanceOf[CrownSolid]
+  @scala.inline
+  def CubeShape: CubeShape = "CubeShape".asInstanceOf[CubeShape]
   @scala.inline
   def CustomList: CustomList = "CustomList".asInstanceOf[CustomList]
   @scala.inline
@@ -7822,6 +7932,8 @@ object atUifabricIconsLibStrings {
   def DiffSideBySide: DiffSideBySide = "DiffSideBySide".asInstanceOf[DiffSideBySide]
   @scala.inline
   def DisableUpdates: DisableUpdates = "DisableUpdates".asInstanceOf[DisableUpdates]
+  @scala.inline
+  def DisconnectVirtualMachine: DisconnectVirtualMachine = "DisconnectVirtualMachine".asInstanceOf[DisconnectVirtualMachine]
   @scala.inline
   def Dislike: Dislike = "Dislike".asInstanceOf[Dislike]
   @scala.inline
@@ -8004,6 +8116,8 @@ object atUifabricIconsLibStrings {
   def EventTentative: EventTentative = "EventTentative".asInstanceOf[EventTentative]
   @scala.inline
   def EventTentativeMirrored: EventTentativeMirrored = "EventTentativeMirrored".asInstanceOf[EventTentativeMirrored]
+  @scala.inline
+  def EventToDoLogo: EventToDoLogo = "EventToDoLogo".asInstanceOf[EventToDoLogo]
   @scala.inline
   def ExcelDocument: ExcelDocument = "ExcelDocument".asInstanceOf[ExcelDocument]
   @scala.inline
@@ -8317,6 +8431,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def GlobalNavButton: GlobalNavButton = "GlobalNavButton".asInstanceOf[GlobalNavButton]
   @scala.inline
+  def GlobalNavButtonActive: GlobalNavButtonActive = "GlobalNavButtonActive".asInstanceOf[GlobalNavButtonActive]
+  @scala.inline
   def Globe: Globe = "Globe".asInstanceOf[Globe]
   @scala.inline
   def Globe2: Globe2 = "Globe2".asInstanceOf[Globe2]
@@ -8346,6 +8462,8 @@ object atUifabricIconsLibStrings {
   def GripperTool: GripperTool = "GripperTool".asInstanceOf[GripperTool]
   @scala.inline
   def Group: Group = "Group".asInstanceOf[Group]
+  @scala.inline
+  def GroupList: GroupList = "GroupList".asInstanceOf[GroupList]
   @scala.inline
   def GroupObject: GroupObject = "GroupObject".asInstanceOf[GroupObject]
   @scala.inline
@@ -8743,6 +8861,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def MobileSelected: MobileSelected = "MobileSelected".asInstanceOf[MobileSelected]
   @scala.inline
+  def ModelingView: ModelingView = "ModelingView".asInstanceOf[ModelingView]
+  @scala.inline
   def Money: Money = "Money".asInstanceOf[Money]
   @scala.inline
   def More: More = "More".asInstanceOf[More]
@@ -9097,6 +9217,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def PinnedFill: PinnedFill = "PinnedFill".asInstanceOf[PinnedFill]
   @scala.inline
+  def PinnedSolid: PinnedSolid = "PinnedSolid".asInstanceOf[PinnedSolid]
+  @scala.inline
   def PivotChart: PivotChart = "PivotChart".asInstanceOf[PivotChart]
   @scala.inline
   def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
@@ -9109,6 +9231,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def PlayResume: PlayResume = "PlayResume".asInstanceOf[PlayResume]
   @scala.inline
+  def PlaybackRate1x: PlaybackRate1x = "PlaybackRate1x".asInstanceOf[PlaybackRate1x]
+  @scala.inline
   def PlayerSettings: PlayerSettings = "PlayerSettings".asInstanceOf[PlayerSettings]
   @scala.inline
   def Plug: Plug = "Plug".asInstanceOf[Plug]
@@ -9118,6 +9242,8 @@ object atUifabricIconsLibStrings {
   def PlugDisconnected: PlugDisconnected = "PlugDisconnected".asInstanceOf[PlugDisconnected]
   @scala.inline
   def PlugSolid: PlugSolid = "PlugSolid".asInstanceOf[PlugSolid]
+  @scala.inline
+  def PollResults: PollResults = "PollResults".asInstanceOf[PollResults]
   @scala.inline
   def PostUpdate: PostUpdate = "PostUpdate".asInstanceOf[PostUpdate]
   @scala.inline
@@ -9240,6 +9366,10 @@ object atUifabricIconsLibStrings {
   def PythonLanguage: PythonLanguage = "PythonLanguage".asInstanceOf[PythonLanguage]
   @scala.inline
   def QRCode: QRCode = "QRCode".asInstanceOf[QRCode]
+  @scala.inline
+  def QandA: QandA = "QandA".asInstanceOf[QandA]
+  @scala.inline
+  def QandAMirror: QandAMirror = "QandAMirror".asInstanceOf[QandAMirror]
   @scala.inline
   def QuadColumn: QuadColumn = "QuadColumn".asInstanceOf[QuadColumn]
   @scala.inline
@@ -9395,6 +9525,10 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def ReportLibraryMirrored: ReportLibraryMirrored = "ReportLibraryMirrored".asInstanceOf[ReportLibraryMirrored]
   @scala.inline
+  def ReportLock: ReportLock = "ReportLock".asInstanceOf[ReportLock]
+  @scala.inline
+  def Rerun: Rerun = "Rerun".asInstanceOf[Rerun]
+  @scala.inline
   def ReservationOrders: ReservationOrders = "ReservationOrders".asInstanceOf[ReservationOrders]
   @scala.inline
   def ResponsesMenu: ResponsesMenu = "ResponsesMenu".asInstanceOf[ResponsesMenu]
@@ -9475,6 +9609,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def ScaleVolume: ScaleVolume = "ScaleVolume".asInstanceOf[ScaleVolume]
   @scala.inline
+  def ScatterChart: ScatterChart = "ScatterChart".asInstanceOf[ScatterChart]
+  @scala.inline
   def ScheduleEventAction: ScheduleEventAction = "ScheduleEventAction".asInstanceOf[ScheduleEventAction]
   @scala.inline
   def ScopeTemplate: ScopeTemplate = "ScopeTemplate".asInstanceOf[ScopeTemplate]
@@ -9492,6 +9628,8 @@ object atUifabricIconsLibStrings {
   def SearchBookmark: SearchBookmark = "SearchBookmark".asInstanceOf[SearchBookmark]
   @scala.inline
   def SearchCalendar: SearchCalendar = "SearchCalendar".asInstanceOf[SearchCalendar]
+  @scala.inline
+  def SearchData: SearchData = "SearchData".asInstanceOf[SearchData]
   @scala.inline
   def SearchIssue: SearchIssue = "SearchIssue".asInstanceOf[SearchIssue]
   @scala.inline
@@ -9546,6 +9684,8 @@ object atUifabricIconsLibStrings {
   def SharepointLogoInverse: SharepointLogoInverse = "SharepointLogoInverse".asInstanceOf[SharepointLogoInverse]
   @scala.inline
   def Shield: Shield = "Shield".asInstanceOf[Shield]
+  @scala.inline
+  def ShieldAlert: ShieldAlert = "ShieldAlert".asInstanceOf[ShieldAlert]
   @scala.inline
   def ShieldSolid: ShieldSolid = "ShieldSolid".asInstanceOf[ShieldSolid]
   @scala.inline
@@ -10071,6 +10211,10 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def Uneditable: Uneditable = "Uneditable".asInstanceOf[Uneditable]
   @scala.inline
+  def Uneditable2: Uneditable2 = "Uneditable2".asInstanceOf[Uneditable2]
+  @scala.inline
+  def Uneditable2Mirrored: Uneditable2Mirrored = "Uneditable2Mirrored".asInstanceOf[Uneditable2Mirrored]
+  @scala.inline
   def UneditableMirrored: UneditableMirrored = "UneditableMirrored".asInstanceOf[UneditableMirrored]
   @scala.inline
   def UneditableSolid12: UneditableSolid12 = "UneditableSolid12".asInstanceOf[UneditableSolid12]
@@ -10136,6 +10280,8 @@ object atUifabricIconsLibStrings {
   def Vacation: Vacation = "Vacation".asInstanceOf[Vacation]
   @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
+  @scala.inline
+  def Variable2: Variable2 = "Variable2".asInstanceOf[Variable2]
   @scala.inline
   def VariableGroup: VariableGroup = "VariableGroup".asInstanceOf[VariableGroup]
   @scala.inline
@@ -10205,6 +10351,8 @@ object atUifabricIconsLibStrings {
   @scala.inline
   def VisualStudioLogo: VisualStudioLogo = "VisualStudioLogo".asInstanceOf[VisualStudioLogo]
   @scala.inline
+  def VisuallyImpaired: VisuallyImpaired = "VisuallyImpaired".asInstanceOf[VisuallyImpaired]
+  @scala.inline
   def VisualsFolder: VisualsFolder = "VisualsFolder".asInstanceOf[VisualsFolder]
   @scala.inline
   def VisualsStore: VisualsStore = "VisualsStore".asInstanceOf[VisualsStore]
@@ -10250,6 +10398,8 @@ object atUifabricIconsLibStrings {
   def Website: Website = "Website".asInstanceOf[Website]
   @scala.inline
   def Weights: Weights = "Weights".asInstanceOf[Weights]
+  @scala.inline
+  def Wheelchair: Wheelchair = "Wheelchair".asInstanceOf[Wheelchair]
   @scala.inline
   def WhiteBoardApp16: WhiteBoardApp16 = "WhiteBoardApp16".asInstanceOf[WhiteBoardApp16]
   @scala.inline

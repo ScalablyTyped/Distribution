@@ -12,7 +12,7 @@ trait Options extends js.Object {
     *
     * Use !negative patterns to exclude files
     *
-    * default: disabled
+    * default: []
     */
   var cleanAfterEveryBuildPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**

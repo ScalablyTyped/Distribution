@@ -43,5 +43,10 @@ object ServiceAccountList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.coreV1ServiceAccountListMod.ServiceAccountList = js.native
+  /**
+    * Returns true if the given object is an instance of ServiceAccountList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/ServiceAccountList.ServiceAccountList */ scala.Boolean = js.native
 }
 

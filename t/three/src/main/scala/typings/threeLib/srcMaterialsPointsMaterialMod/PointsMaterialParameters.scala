@@ -45,6 +45,7 @@ object PointsMaterialParameters {
     polygonOffsetUnits: scala.Int | scala.Double = null,
     precision: threeLib.threeLibStrings.highp | threeLib.threeLibStrings.mediump | threeLib.threeLibStrings.lowp = null,
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
     size: scala.Int | scala.Double = null,
     sizeAttenuation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -83,6 +84,7 @@ object PointsMaterialParameters {
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeAttenuation)) __obj.updateDynamic("sizeAttenuation")(sizeAttenuation)

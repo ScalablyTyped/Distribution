@@ -16,6 +16,7 @@ trait FontFaceConfiguration extends js.Object {
   var fontVariant: js.UndefOr[java.lang.String] = js.undefined
   var fontVariationSettings: js.UndefOr[java.lang.String] = js.undefined
   var fontWeight: js.UndefOr[java.lang.String] = js.undefined
+  var formatHint: js.UndefOr[scala.Boolean] = js.undefined
   var localFonts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var unicodeRange: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -33,6 +34,7 @@ object FontFaceConfiguration {
     fontVariant: java.lang.String = null,
     fontVariationSettings: java.lang.String = null,
     fontWeight: java.lang.String = null,
+    formatHint: js.UndefOr[scala.Boolean] = js.undefined,
     localFonts: js.Array[java.lang.String] = null,
     unicodeRange: java.lang.String = null
   ): FontFaceConfiguration = {
@@ -46,6 +48,7 @@ object FontFaceConfiguration {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
     if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings)
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (!js.isUndefined(formatHint)) __obj.updateDynamic("formatHint")(formatHint)
     if (localFonts != null) __obj.updateDynamic("localFonts")(localFonts)
     if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
     __obj.asInstanceOf[FontFaceConfiguration]

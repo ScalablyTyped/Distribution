@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait GetWindowBoundsCenteredOptions extends js.Object {
   /**
-  	 * Set a new window size.
-  	 *
-  	 * Default: Size of `window`
-  	 *
-  	 * @example
-  	 *
-  	 * {width: 600, height: 400}
-  	 */
+  	Set a new window size.
+  	Default: Size of `window`
+  	@example
+  	```
+  	{width: 600, height: 400}
+  	```
+  	*/
   val size: js.UndefOr[electronLib.ElectronNs.Size] = js.undefined
   /**
-  	 * The window to get the bounds of.
-  	 *
-  	 * Default: Current window
-  	 */
+  	The window to get the bounds of.
+  	Default: Current window
+  	*/
   val window: js.UndefOr[electronLib.electronMod.BrowserWindow] = js.undefined
 }
 

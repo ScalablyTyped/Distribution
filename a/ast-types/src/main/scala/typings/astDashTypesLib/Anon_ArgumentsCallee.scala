@@ -13,6 +13,7 @@ trait Anon_ArgumentsCallee extends js.Object {
   var comments: js.UndefOr[js.Array[astDashTypesLib.genKindsMod.CommentKind] | scala.Null] = js.undefined
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
   var optional: js.UndefOr[scala.Boolean] = js.undefined
+  var typeArguments: js.UndefOr[scala.Null | astDashTypesLib.genKindsMod.TypeParameterInstantiationKind] = js.undefined
 }
 
 object Anon_ArgumentsCallee {
@@ -24,12 +25,14 @@ object Anon_ArgumentsCallee {
     callee: astDashTypesLib.genKindsMod.ExpressionKind,
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
-    optional: js.UndefOr[scala.Boolean] = js.undefined
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    typeArguments: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): Anon_ArgumentsCallee = {
     val __obj = js.Dynamic.literal(arguments = arguments, callee = callee)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
     __obj.asInstanceOf[Anon_ArgumentsCallee]
   }
 }

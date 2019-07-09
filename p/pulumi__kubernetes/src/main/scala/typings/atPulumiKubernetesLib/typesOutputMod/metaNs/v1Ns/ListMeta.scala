@@ -21,6 +21,19 @@ trait ListMeta extends js.Object {
     */
   val continue: java.lang.String
   /**
+    * remainingItemCount is the number of subsequent items in the list which are not included in
+    * this list response. If the list request contained label or field selectors, then the number
+    * of remaining items is unknown and the field will be left unset and omitted during
+    * serialization. If the list is complete (either because it is not chunking or because this
+    * is the last chunk), then there are no more remaining items and this field will be left
+    * unset and omitted during serialization. Servers older than v1.15 do not set this field. The
+    * intended use of the remainingItemCount is *estimating* the size of a collection. Clients
+    * should not rely on the remainingItemCount to be set or to be exact.
+    *
+    * This field is alpha and can be changed or removed without notice.
+    */
+  val remainingItemCount: scala.Double
+  /**
     * String that identifies the server's internal version of this object that can be used by
     * clients to determine when objects have changed. Value must be treated as opaque by clients
     * and passed unmodified back to the server. Populated by the system. Read-only. More info:
@@ -35,8 +48,13 @@ trait ListMeta extends js.Object {
 
 object ListMeta {
   @scala.inline
-  def apply(continue: java.lang.String, resourceVersion: java.lang.String, selfLink: java.lang.String): ListMeta = {
-    val __obj = js.Dynamic.literal(continue = continue, resourceVersion = resourceVersion, selfLink = selfLink)
+  def apply(
+    continue: java.lang.String,
+    remainingItemCount: scala.Double,
+    resourceVersion: java.lang.String,
+    selfLink: java.lang.String
+  ): ListMeta = {
+    val __obj = js.Dynamic.literal(continue = continue, remainingItemCount = remainingItemCount, resourceVersion = resourceVersion, selfLink = selfLink)
   
     __obj.asInstanceOf[ListMeta]
   }

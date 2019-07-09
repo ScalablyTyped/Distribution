@@ -17,7 +17,7 @@ object ObservableJSONNs extends js.Object {
     /**
       * Create a new metadata changed message.
       */
-    def this(args: atJupyterlabObservablesLib.libObservablejsonMod.IObservableJSONNs.IChangedArgs) = this()
+    def this(`type`: java.lang.String, args: atJupyterlabObservablesLib.libObservablejsonMod.IObservableJSONNs.IChangedArgs) = this()
   }
   
 }

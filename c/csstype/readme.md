@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstype
 
-Typings are for version 2.6.5
+Typings are for version 2.6.6
 
 ## Library description:
 Strict TypeScript and Flow types for style based on MDN data

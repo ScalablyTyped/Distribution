@@ -154,7 +154,8 @@ object eventsNs extends js.Object {
         */
       var lastObservedTime: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
-        * Information whether this series is ongoing or finished.
+        * Information whether this series is ongoing or finished. Deprecated. Planned removal for
+        * 1.18
         */
       var state: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }

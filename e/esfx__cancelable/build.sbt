@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "esfx__cancelable"
-version := "1.0.0-pre.6-0992d2"
+version := "1.0.0-pre.13-2166dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.6-af7e02",
+  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.13-afbeaa",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

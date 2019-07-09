@@ -105,8 +105,6 @@ class ServiceObject[T] protected ()
   /**
     * Make an authenticated API request.
     *
-    * @private
-    *
     * @param {object} reqOpts - Request options that are passed to `request`.
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     * @param {function} callback - The callback function passed to `request`.
@@ -118,8 +116,6 @@ class ServiceObject[T] protected ()
   ): scala.Unit = js.native
   /**
     * Make an authenticated API request.
-    *
-    * @private
     *
     * @param {object} reqOpts - Request options that are passed to `request`.
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.

@@ -9,7 +9,7 @@ package object reduxMod {
   type ActionCreator[A] = js.Function1[/* repeated */ js.Any, A]
   type ActionCreatorsMapObject[A] = org.scalablytyped.runtime.StringDictionary[ActionCreator[A]]
   type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? object}
+  {[ K in keyof T ]:? T[K] extends object? object : T[K]}
     */ reduxLib.reduxLibStrings.DeepPartial with js.Any
   type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
   /* compose */
@@ -17,6 +17,9 @@ package object reduxMod {
   type Func1[T1, R] = js.Function1[/* a1 */ T1, R]
   type Func2[T1, T2, R] = js.Function2[/* a1 */ T1, /* a2 */ T2, R]
   type Func3[T1, T2, T3, R] = js.Function4[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* repeated */ js.Any, R]
+  type InferActionTypes[R] = AnyAction
+  type InferReducerTypes[T] = Reducer[js.Any, AnyAction]
+  type InferStateType[T] = js.Any
   type Middleware[DispatchExt, S, D /* <: Dispatch[AnyAction] */] = js.Function1[
     /* api */ MiddlewareAPI[D, S], 
     js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]

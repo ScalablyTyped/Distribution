@@ -32,10 +32,11 @@ trait Typeofprometheus extends js.Object {
   ] = js.native
   val SummaryNs: js.Any = js.native
   val register: promDashClientLib.promDashClientMod.Registry = js.native
-  def collectDefaultMetrics(): scala.Double = js.native
-  def collectDefaultMetrics(config: promDashClientLib.promDashClientMod.DefaultMetricsCollectorConfiguration): scala.Double = js.native
+  def collectDefaultMetrics(): stdLib.ReturnType[promDashClientLib.Fn_Arguments] = js.native
+  def collectDefaultMetrics(config: promDashClientLib.promDashClientMod.DefaultMetricsCollectorConfiguration): stdLib.ReturnType[promDashClientLib.Fn_Arguments] = js.native
   def collectDefaultMetrics(timeout: scala.Double): scala.Double = js.native
   def exponentialBuckets(start: scala.Double, factor: scala.Double, count: scala.Double): js.Array[scala.Double] = js.native
   def linearBuckets(start: scala.Double, width: scala.Double, count: scala.Double): js.Array[scala.Double] = js.native
+  def validateMetricName(name: java.lang.String): scala.Boolean = js.native
 }
 

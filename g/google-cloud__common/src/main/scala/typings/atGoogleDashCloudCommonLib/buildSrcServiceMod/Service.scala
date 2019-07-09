@@ -26,6 +26,7 @@ class Service protected () extends js.Object {
   def this(config: ServiceConfig) = this()
   def this(config: ServiceConfig, options: ServiceOptions) = this()
   var Promise: stdLib.PromiseConstructor = js.native
+  val apiEndpoint: java.lang.String = js.native
   var authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = js.native
   var baseUrl: java.lang.String = js.native
   var getCredentials: js.Any = js.native
@@ -74,8 +75,6 @@ class Service protected () extends js.Object {
   /**
     * Make an authenticated API request.
     *
-    * @private
-    *
     * @param {object} reqOpts - Request options that are passed to `request`.
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     * @param {function} callback - The callback function passed to `request`.
@@ -86,8 +85,6 @@ class Service protected () extends js.Object {
   ): scala.Unit = js.native
   /**
     * Make an authenticated API request.
-    *
-    * @private
     *
     * @param {object} reqOpts - Request options that are passed to `request`.
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.

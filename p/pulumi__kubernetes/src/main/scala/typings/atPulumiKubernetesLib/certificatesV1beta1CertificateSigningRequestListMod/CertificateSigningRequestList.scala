@@ -19,7 +19,6 @@ class CertificateSigningRequestList protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -42,7 +41,6 @@ class CertificateSigningRequestList protected ()
     */
   val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList] = js.native
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList = js.native
 }
 
 /* static members */
@@ -67,5 +65,10 @@ object CertificateSigningRequestList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.certificatesV1beta1CertificateSigningRequestListMod.CertificateSigningRequestList = js.native
+  /**
+    * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/CertificateSigningRequestList.CertificateSigningRequestList */ scala.Boolean = js.native
 }
 

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Quaternion")
 @js.native
 /**
-  * @param x x coordinate
-  * @param y y coordinate
-  * @param z z coordinate
-  * @param w w coordinate
-  */
+	 * @param x x coordinate
+	 * @param y y coordinate
+	 * @param z z coordinate
+	 * @param w w coordinate
+	 */
 class Quaternion ()
   extends threeLib.srcMathQuaternionMod.Quaternion {
   def this(x: scala.Double) = this()
@@ -26,8 +26,8 @@ class Quaternion ()
 @js.native
 object Quaternion extends js.Object {
   /**
-    * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
-    */
+  	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
+  	 */
   def slerp(
     qa: threeLib.srcMathQuaternionMod.Quaternion,
     qb: threeLib.srcMathQuaternionMod.Quaternion,

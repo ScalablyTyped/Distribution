@@ -8,50 +8,64 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PipelineScheduleVariables
   extends gitlabLib.distInfrastructureMod.BaseService {
-  def all(projectId: gitlabLib.ProjectId, pipelineScheduleId: gitlabLib.PipelineScheduleId): js.Promise[gitlabLib.GetResponse] = js.native
   def all(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    options: gitlabLib.PaginatedRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
-  def create(projectId: gitlabLib.ProjectId, pipelineScheduleId: gitlabLib.PipelineScheduleId): js.Promise[js.Object] = js.native
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    options: gitlabLib.distInfrastructureMod.PaginatedRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def create(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    options: gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId
+  ): js.Promise[js.Object] = js.native
+  def create(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def edit(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    keyId: gitlabLib.KeyId
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    keyId: gitlabLib.distServicesMod.KeyId
   ): js.Promise[js.Object] = js.native
   def edit(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    keyId: gitlabLib.KeyId,
-    options: gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    keyId: gitlabLib.distServicesMod.KeyId,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def remove(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    keyId: gitlabLib.KeyId
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    keyId: gitlabLib.distServicesMod.KeyId
   ): js.Promise[js.Object] = js.native
   def remove(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    keyId: gitlabLib.KeyId,
-    options: gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    keyId: gitlabLib.distServicesMod.KeyId,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def show(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    keyId: gitlabLib.KeyId
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    keyId: gitlabLib.distServicesMod.KeyId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def show(
-    projectId: gitlabLib.ProjectId,
-    pipelineScheduleId: gitlabLib.PipelineScheduleId,
-    keyId: gitlabLib.KeyId,
-    options: gitlabLib.BaseRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    pipelineScheduleId: gitlabLib.distServicesMod.PipelineScheduleId,
+    keyId: gitlabLib.distServicesMod.KeyId,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

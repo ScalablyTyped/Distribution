@@ -19,7 +19,6 @@ class PodPresetList protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.settingsNs.v1alpha1Ns.PodPresetList) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.settingsNs.v1alpha1Ns.PodPresetList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -45,7 +44,6 @@ class PodPresetList protected ()
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.settingsNs.v1alpha1Ns.PodPresetList = js.native
 }
 
 /* static members */
@@ -70,5 +68,10 @@ object PodPresetList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.settingsV1alpha1PodPresetListMod.PodPresetList = js.native
+  /**
+    * Returns true if the given object is an instance of PodPresetList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/settings/v1alpha1/PodPresetList.PodPresetList */ scala.Boolean = js.native
 }
 

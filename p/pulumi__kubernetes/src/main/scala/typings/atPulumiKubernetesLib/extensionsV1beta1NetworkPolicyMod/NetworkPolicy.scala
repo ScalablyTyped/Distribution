@@ -19,7 +19,6 @@ class NetworkPolicy protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.extensionsNs.v1beta1Ns.NetworkPolicy) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.extensionsNs.v1beta1Ns.NetworkPolicy, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -43,7 +42,6 @@ class NetworkPolicy protected ()
     * Specification of the desired behavior for this NetworkPolicy.
     */
   val spec: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.NetworkPolicySpec] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.extensionsNs.v1beta1Ns.NetworkPolicy = js.native
 }
 
 /* static members */
@@ -68,5 +66,10 @@ object NetworkPolicy extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.extensionsV1beta1NetworkPolicyMod.NetworkPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/NetworkPolicy.NetworkPolicy */ scala.Boolean = js.native
 }
 

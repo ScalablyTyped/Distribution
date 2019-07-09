@@ -25,9 +25,10 @@ class Plane () extends js.Object {
   def intersectLine(line: threeLib.srcMathLine3Mod.Line3, target: threeLib.srcMathVector3Mod.Vector3): threeLib.srcMathVector3Mod.Vector3 = js.native
   def intersectsBox(box: threeLib.srcMathBox3Mod.Box3): scala.Boolean = js.native
   def intersectsLine(line: threeLib.srcMathLine3Mod.Line3): scala.Boolean = js.native
+  def intersectsSphere(sphere: threeLib.srcMathSphereMod.Sphere): scala.Boolean = js.native
   /**
-    * @deprecated Use {@link Plane#intersectsLine .intersectsLine()} instead.
-    */
+  	 * @deprecated Use {@link Plane#intersectsLine .intersectsLine()} instead.
+  	 */
   def isIntersectionLine(l: js.Any): js.Any = js.native
   def negate(): Plane = js.native
   def normalize(): Plane = js.native

@@ -19,8 +19,6 @@ trait WebhookClientConfig extends js.Object {
     * specified.
     *
     * If the webhook is running within the cluster, then you should use `service`.
-    *
-    * Port 443 will be used if it is open, otherwise it is an error.
     */
   val service: ServiceReference
   /**

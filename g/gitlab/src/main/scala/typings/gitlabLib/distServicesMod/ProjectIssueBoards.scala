@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProjectIssueBoards protected ()
   extends gitlabLib.distServicesProjectIssueBoardsMod.default {
-  def this(options: gitlabLib.BaseServiceOptions) = this()
+  def this(options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

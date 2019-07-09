@@ -162,6 +162,9 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `extra-expanded` extends js.Object
   
   @js.native
+  sealed trait fallback extends js.Object
+  
+  @js.native
   sealed trait fill extends js.Object
   
   @js.native
@@ -337,6 +340,9 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait oblique extends js.Object
   
   @js.native
+  sealed trait optional extends js.Object
+  
+  @js.native
   sealed trait overlay
     extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
@@ -478,6 +484,9 @@ object atUifabricMergeDashStylesLibStrings {
   
   @js.native
   sealed trait `subpixel-antialiased` extends js.Object
+  
+  @js.native
+  sealed trait swap extends js.Object
   
   @js.native
   sealed trait table
@@ -678,6 +687,8 @@ object atUifabricMergeDashStylesLibStrings {
   @scala.inline
   def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   @scala.inline
+  def fallback: fallback = "fallback".asInstanceOf[fallback]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
   def `first baseline`: `first baseline` = "first baseline".asInstanceOf[`first baseline`]
@@ -772,6 +783,8 @@ object atUifabricMergeDashStylesLibStrings {
   @scala.inline
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
+  def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   @scala.inline
   def `padding-box`: `padding-box` = "padding-box".asInstanceOf[`padding-box`]
@@ -853,6 +866,8 @@ object atUifabricMergeDashStylesLibStrings {
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline
   def `subpixel-antialiased`: `subpixel-antialiased` = "subpixel-antialiased".asInstanceOf[`subpixel-antialiased`]
+  @scala.inline
+  def swap: swap = "swap".asInstanceOf[swap]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline

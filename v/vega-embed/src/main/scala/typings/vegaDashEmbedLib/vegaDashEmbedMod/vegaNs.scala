@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 object vegaNs extends js.Object {
   @js.native
   class Bounds ()
-    extends vegaDashLibLib.vegaDashLibMod.Bounds
+    extends vegaLib.vegaMod.Bounds
   
   @js.native
   class CanvasHandler ()
-    extends vegaDashLibLib.vegaDashLibMod.CanvasHandler
+    extends vegaLib.vegaMod.CanvasHandler
   
   @js.native
   class Handler ()
-    extends vegaDashLibLib.vegaDashLibMod.Handler
+    extends vegaLib.vegaMod.Handler
   
   @js.native
   class Renderer protected ()
-    extends vegaDashLibLib.vegaDashLibMod.Renderer {
+    extends vegaLib.vegaMod.Renderer {
     def this(loader: vegaDashTypingsLib.typesRuntimeMod.Loader) = this()
   }
   
   @js.native
   class View protected ()
-    extends vegaDashLibLib.vegaDashLibMod.View {
+    extends vegaLib.vegaMod.View {
     def this(runtime: vegaDashTypingsLib.typesRuntimeMod.Runtime) = this()
   }
   

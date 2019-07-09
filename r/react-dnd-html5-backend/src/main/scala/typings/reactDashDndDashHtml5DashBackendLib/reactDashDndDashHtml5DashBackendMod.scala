@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dnd-html5-backend", JSImport.Namespace)
 @js.native
 object reactDashDndDashHtml5DashBackendMod extends js.Object {
-  def default(manager: dndDashCoreLib.libCjsInterfacesMod.DragDropManager[_]): reactDashDndDashHtml5DashBackendLib.libCjsHTML5BackendMod.default = js.native
+  val default: dndDashCoreLib.libInterfacesMod.BackendFactory = js.native
   def getEmptyImage(): stdLib.HTMLImageElement = js.native
   @JSName("NativeTypes")
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-embed
 
-Typings are for version 3.18.2
+Typings are for version 4.2.1
 
 ## Library description:
 Publish Vega visualizations as embedded web components.
@@ -31,4 +31,13 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+/**
+ * From Vega-Lite
+ */
+
+```
 

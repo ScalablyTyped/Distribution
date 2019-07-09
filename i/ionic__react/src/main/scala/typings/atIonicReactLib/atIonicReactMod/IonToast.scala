@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonToast protected ()
   extends atIonicReactLib.Anon_CallBackCallbackComponentDidCatchComponentDidMount {
-  def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonToastAttributes */ js.Any) with atIonicReactLib.Anon_Event) = this()
+  def this(props: atIonicCoreLib.distTypesComponentsMod.LocalJSXNs.IonToast with atIonicReactLib.Anon_Event) = this()
 }
 
 @JSImport("@ionic/react", "IonToast")
 @js.native
 object IonToast
   extends org.scalablytyped.runtime.Instantiable1[
-      /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonToastAttributes */ js.Any) with atIonicReactLib.Anon_Event, 
+      /* props */ atIonicCoreLib.distTypesComponentsMod.LocalJSXNs.IonToast with atIonicReactLib.Anon_Event, 
       atIonicReactLib.Anon_CallBackCallbackComponentDidCatchComponentDidMount
     ] {
   var contextType: js.UndefOr[reactLib.reactMod.Context[_]] = js.native

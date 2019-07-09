@@ -19,7 +19,6 @@ class ServiceAccountList protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ServiceAccountList) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ServiceAccountList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -44,7 +43,6 @@ class ServiceAccountList protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ServiceAccountList = js.native
 }
 
 /* static members */
@@ -69,5 +67,10 @@ object ServiceAccountList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.coreV1ServiceAccountListMod.ServiceAccountList = js.native
+  /**
+    * Returns true if the given object is an instance of ServiceAccountList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/ServiceAccountList.ServiceAccountList */ scala.Boolean = js.native
 }
 

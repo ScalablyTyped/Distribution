@@ -124,6 +124,11 @@ object auditregistrationNs extends js.Object {
         * `path` is an optional URL path which will be sent in any request to this service.
         */
       var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * If specified, the port on the service that hosting webhook. Default to 443 for backward
+        * compatibility. `port` should be a valid port number (1-65535, inclusive).
+        */
+      var port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -154,8 +159,6 @@ object auditregistrationNs extends js.Object {
         * specified.
         *
         * If the webhook is running within the cluster, then you should use `service`.
-        *
-        * Port 443 will be used if it is open, otherwise it is an error.
         */
       var service: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceReference]] = js.undefined
       /**

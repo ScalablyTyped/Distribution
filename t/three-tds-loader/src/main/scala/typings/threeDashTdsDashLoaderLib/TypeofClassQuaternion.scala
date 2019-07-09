@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait TypeofClassQuaternion
   extends org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Quaternion] {
   /**
-    * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
-    */
+  	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
+  	 */
   def slerp(
     qa: threeLib.srcMathQuaternionMod.Quaternion,
     qb: threeLib.srcMathQuaternionMod.Quaternion,

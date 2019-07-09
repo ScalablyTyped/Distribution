@@ -131,6 +131,22 @@ object jointjsLibStrings {
     extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
+  sealed trait connectionClosest
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
+  
+  @js.native
+  sealed trait connectionLength
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
+  
+  @js.native
+  sealed trait connectionPerpendicular
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
+  
+  @js.native
+  sealed trait connectionRatio
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
+  
+  @js.native
   sealed trait contrast extends js.Object
   
   @js.native
@@ -327,6 +343,10 @@ object jointjsLibStrings {
   @js.native
   sealed trait width extends js.Object
   
+  @js.native
+  sealed trait z
+    extends jointjsLib.jointjsMod.gNs.SegmentType
+  
   @scala.inline
   def BT: BT = "BT".asInstanceOf[BT]
   @scala.inline
@@ -393,6 +413,14 @@ object jointjsLibStrings {
   def c: c = "c".asInstanceOf[c]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def connectionClosest: connectionClosest = "connectionClosest".asInstanceOf[connectionClosest]
+  @scala.inline
+  def connectionLength: connectionLength = "connectionLength".asInstanceOf[connectionLength]
+  @scala.inline
+  def connectionPerpendicular: connectionPerpendicular = "connectionPerpendicular".asInstanceOf[connectionPerpendicular]
+  @scala.inline
+  def connectionRatio: connectionRatio = "connectionRatio".asInstanceOf[connectionRatio]
   @scala.inline
   def contrast: contrast = "contrast".asInstanceOf[contrast]
   @scala.inline
@@ -503,5 +531,7 @@ object jointjsLibStrings {
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   @scala.inline
   def width: width = "width".asInstanceOf[width]
+  @scala.inline
+  def z: z = "z".asInstanceOf[z]
 }
 

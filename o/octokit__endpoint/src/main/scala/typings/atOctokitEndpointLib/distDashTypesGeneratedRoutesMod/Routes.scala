@@ -265,6 +265,7 @@ trait Routes extends js.Object {
   var `GET /orgs/:org/public_members`: js.Tuple2[OrgsListPublicMembersEndpoint, OrgsListPublicMembersRequestOptions]
   var `GET /orgs/:org/public_members/:username`: js.Tuple2[OrgsCheckPublicMembershipEndpoint, OrgsCheckPublicMembershipRequestOptions]
   var `GET /orgs/:org/repos`: js.Tuple2[ReposListForOrgEndpoint, ReposListForOrgRequestOptions]
+  var `GET /orgs/:org/team-sync/groups`: js.Tuple2[TeamsListIdPGroupsForOrgEndpoint, TeamsListIdPGroupsForOrgRequestOptions]
   var `GET /orgs/:org/teams`: js.Tuple2[TeamsListEndpoint, TeamsListRequestOptions]
   var `GET /orgs/:org/teams/:team_slug`: js.Tuple2[TeamsGetByNameEndpoint, TeamsGetByNameRequestOptions]
   var `GET /projects/:project_id`: js.Tuple2[ProjectsGetEndpoint, ProjectsGetRequestOptions]
@@ -331,7 +332,6 @@ trait Routes extends js.Object {
   var `GET /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposGetCommitCommentEndpoint, ReposGetCommitCommentRequestOptions]
   var `GET /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForCommitCommentEndpoint, ReactionsListForCommitCommentRequestOptions]
   var `GET /repos/:owner/:repo/commits`: js.Tuple2[ReposListCommitsEndpoint, ReposListCommitsRequestOptions]
-  var `GET /repos/:owner/:repo/commits/:commit_sha`: js.Tuple2[ReposGetCommitEndpoint, ReposGetCommitRequestOptions]
   var `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`: js.Tuple2[
     ReposListBranchesForHeadCommitEndpoint, 
     ReposListBranchesForHeadCommitRequestOptions
@@ -341,7 +341,10 @@ trait Routes extends js.Object {
     ReposListPullRequestsAssociatedWithCommitEndpoint, 
     ReposListPullRequestsAssociatedWithCommitRequestOptions
   ]
-  var `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitRefShaEndpoint, ReposGetCommitRefShaRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[
+    ReposGetCommitEndpoint | ReposGetCommitRefShaEndpoint, 
+    ReposGetCommitRequestOptions | ReposGetCommitRefShaRequestOptions
+  ]
   var `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRefEndpoint, ChecksListForRefRequestOptions]
   var `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRefEndpoint, ChecksListSuitesForRefRequestOptions]
   var `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRefEndpoint, ReposGetCombinedStatusForRefRequestOptions]
@@ -450,6 +453,7 @@ trait Routes extends js.Object {
   var `GET /repos/:owner/:repo/traffic/popular/paths`: js.Tuple2[ReposGetTopPathsEndpoint, ReposGetTopPathsRequestOptions]
   var `GET /repos/:owner/:repo/traffic/popular/referrers`: js.Tuple2[ReposGetTopReferrersEndpoint, ReposGetTopReferrersRequestOptions]
   var `GET /repos/:owner/:repo/traffic/views`: js.Tuple2[ReposGetViewsEndpoint, ReposGetViewsRequestOptions]
+  var `GET /repos/:owner/:repo/vulnerability-alerts`: js.Tuple2[ReposCheckVulnerabilityAlertsEndpoint, ReposCheckVulnerabilityAlertsRequestOptions]
   var `GET /repositories`: js.Tuple2[ReposListPublicEndpoint, ReposListPublicRequestOptions]
   var `GET /scim/v2/organizations/:org/Users`: js.Tuple2[ScimListProvisionedIdentitiesEndpoint, ScimListProvisionedIdentitiesRequestOptions]
   var `GET /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[
@@ -487,6 +491,7 @@ trait Routes extends js.Object {
   var `GET /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsReviewProjectEndpoint, TeamsReviewProjectRequestOptions]
   var `GET /teams/:team_id/repos`: js.Tuple2[TeamsListReposEndpoint, TeamsListReposRequestOptions]
   var `GET /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsCheckManagesRepoEndpoint, TeamsCheckManagesRepoRequestOptions]
+  var `GET /teams/:team_id/team-sync/group-mappings`: js.Tuple2[TeamsListIdPGroupsEndpoint, TeamsListIdPGroupsRequestOptions]
   var `GET /teams/:team_id/teams`: js.Tuple2[TeamsListChildEndpoint, TeamsListChildRequestOptions]
   var `GET /user`: js.Tuple2[UsersGetAuthenticatedEndpoint, UsersGetAuthenticatedRequestOptions]
   var `GET /user/blocks`: js.Tuple2[UsersListBlockedEndpoint, UsersListBlockedRequestOptions]
@@ -643,6 +648,10 @@ trait Routes extends js.Object {
   var `PATCH /teams/:team_id`: js.Tuple2[TeamsUpdateEndpoint, TeamsUpdateRequestOptions]
   var `PATCH /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsUpdateDiscussionEndpoint, TeamsUpdateDiscussionRequestOptions]
   var `PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsUpdateDiscussionCommentEndpoint, TeamsUpdateDiscussionCommentRequestOptions]
+  var `PATCH /teams/:team_id/team-sync/group-mappings`: js.Tuple2[
+    TeamsCreateOrUpdateIdPGroupConnectionsEndpoint, 
+    TeamsCreateOrUpdateIdPGroupConnectionsRequestOptions
+  ]
   var `PATCH /user`: js.Tuple2[UsersUpdateAuthenticatedEndpoint, UsersUpdateAuthenticatedRequestOptions]
   var `PATCH /user/email/visibility`: js.Tuple2[
     UsersTogglePrimaryEmailVisibilityEndpoint, 
@@ -1127,6 +1136,7 @@ object Routes {
     `GET /orgs/:org/public_members`: js.Tuple2[OrgsListPublicMembersEndpoint, OrgsListPublicMembersRequestOptions],
     `GET /orgs/:org/public_members/:username`: js.Tuple2[OrgsCheckPublicMembershipEndpoint, OrgsCheckPublicMembershipRequestOptions],
     `GET /orgs/:org/repos`: js.Tuple2[ReposListForOrgEndpoint, ReposListForOrgRequestOptions],
+    `GET /orgs/:org/team-sync/groups`: js.Tuple2[TeamsListIdPGroupsForOrgEndpoint, TeamsListIdPGroupsForOrgRequestOptions],
     `GET /orgs/:org/teams`: js.Tuple2[TeamsListEndpoint, TeamsListRequestOptions],
     `GET /orgs/:org/teams/:team_slug`: js.Tuple2[TeamsGetByNameEndpoint, TeamsGetByNameRequestOptions],
     `GET /projects/:project_id`: js.Tuple2[ProjectsGetEndpoint, ProjectsGetRequestOptions],
@@ -1193,7 +1203,6 @@ object Routes {
     `GET /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposGetCommitCommentEndpoint, ReposGetCommitCommentRequestOptions],
     `GET /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForCommitCommentEndpoint, ReactionsListForCommitCommentRequestOptions],
     `GET /repos/:owner/:repo/commits`: js.Tuple2[ReposListCommitsEndpoint, ReposListCommitsRequestOptions],
-    `GET /repos/:owner/:repo/commits/:commit_sha`: js.Tuple2[ReposGetCommitEndpoint, ReposGetCommitRequestOptions],
     `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`: js.Tuple2[
       ReposListBranchesForHeadCommitEndpoint, 
       ReposListBranchesForHeadCommitRequestOptions
@@ -1203,7 +1212,10 @@ object Routes {
       ReposListPullRequestsAssociatedWithCommitEndpoint, 
       ReposListPullRequestsAssociatedWithCommitRequestOptions
     ],
-    `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitRefShaEndpoint, ReposGetCommitRefShaRequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[
+      ReposGetCommitEndpoint | ReposGetCommitRefShaEndpoint, 
+      ReposGetCommitRequestOptions | ReposGetCommitRefShaRequestOptions
+    ],
     `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRefEndpoint, ChecksListForRefRequestOptions],
     `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRefEndpoint, ChecksListSuitesForRefRequestOptions],
     `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRefEndpoint, ReposGetCombinedStatusForRefRequestOptions],
@@ -1431,6 +1443,7 @@ object Routes {
     __obj.updateDynamic("GET /orgs/:org/public_members")(`GET /orgs/:org/public_members`)
     __obj.updateDynamic("GET /orgs/:org/public_members/:username")(`GET /orgs/:org/public_members/:username`)
     __obj.updateDynamic("GET /orgs/:org/repos")(`GET /orgs/:org/repos`)
+    __obj.updateDynamic("GET /orgs/:org/team-sync/groups")(`GET /orgs/:org/team-sync/groups`)
     __obj.updateDynamic("GET /orgs/:org/teams")(`GET /orgs/:org/teams`)
     __obj.updateDynamic("GET /orgs/:org/teams/:team_slug")(`GET /orgs/:org/teams/:team_slug`)
     __obj.updateDynamic("GET /projects/:project_id")(`GET /projects/:project_id`)
@@ -1467,7 +1480,6 @@ object Routes {
     __obj.updateDynamic("GET /repos/:owner/:repo/comments/:comment_id")(`GET /repos/:owner/:repo/comments/:comment_id`)
     __obj.updateDynamic("GET /repos/:owner/:repo/comments/:comment_id/reactions")(`GET /repos/:owner/:repo/comments/:comment_id/reactions`)
     __obj.updateDynamic("GET /repos/:owner/:repo/commits")(`GET /repos/:owner/:repo/commits`)
-    __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha")(`GET /repos/:owner/:repo/commits/:commit_sha`)
     __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head")(`GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`)
     __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha/comments")(`GET /repos/:owner/:repo/commits/:commit_sha/comments`)
     __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha/pulls")(`GET /repos/:owner/:repo/commits/:commit_sha/pulls`)

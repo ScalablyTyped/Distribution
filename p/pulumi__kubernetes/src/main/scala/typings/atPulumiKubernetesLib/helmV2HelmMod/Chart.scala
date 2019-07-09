@@ -28,7 +28,13 @@ class Chart protected ()
   ] = js.native
   def parseTemplate(
     yamlStream: java.lang.String,
-    transformations: js.Array[js.Function1[/* o */ _, scala.Unit]],
+    transformations: js.Array[
+      js.Function2[
+        /* o */ _, 
+        /* opts */ atPulumiPulumiLib.resourceMod.CustomResourceOptions, 
+        scala.Unit
+      ]
+    ],
     dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
   ): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]

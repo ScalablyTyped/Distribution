@@ -14,6 +14,7 @@ class SpriteMaterial ()
   var isSpriteMaterial: threeLib.threeLibNumbers.`true` = js.native
   var map: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
   var rotation: scala.Double = js.native
+  var sizeAttenuation: scala.Boolean = js.native
   def copy(source: SpriteMaterial): this.type = js.native
   def setValues(parameters: SpriteMaterialParameters): scala.Unit = js.native
 }

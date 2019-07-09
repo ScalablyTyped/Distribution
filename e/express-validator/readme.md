@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-validator
 
-Typings are for version 5.3.1
+Typings are for version 6.1.1
 
 ## Library description:
 Express middleware for the validator module.
@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for express-validator 3.0.0
-// Project: https://github.com/express-validator/express-validator
-// Definitions by: Ayman Nedjmeddine <https://github.com/IOAyman>, Nathan Ridley <https://github.com/axefrog/>, Jonathan Häberle <http://dreampulse.de>, Peter Harris <https://github.com/codeanimal/>, Kacper Polak <kacper@hypequality.com>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

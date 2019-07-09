@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait IFontFace extends IRawFontStyle {
   /**
+    * Determines how a font face is displayed based on whether and when it is downloaded
+    * and ready to use.
+    */
+  var fontDisplay: js.UndefOr[
+    atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.auto | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.block | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.swap | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.fallback | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.optional
+  ] = js.undefined
+  /**
     * Feature settings for the font.
     */
   var fontFeatureSettings: js.UndefOr[java.lang.String] = js.undefined
@@ -26,6 +33,7 @@ object IFontFace {
   @scala.inline
   def apply(
     font: ICSSRule | java.lang.String = null,
+    fontDisplay: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.auto | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.block | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.swap | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.fallback | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.optional = null,
     fontFamily: ICSSRule | java.lang.String = null,
     fontFeatureSettings: java.lang.String = null,
     fontKerning: ICSSRule | java.lang.String = null,
@@ -42,6 +50,7 @@ object IFontFace {
   ): IFontFace = {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (fontDisplay != null) __obj.updateDynamic("fontDisplay")(fontDisplay.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings)
     if (fontKerning != null) __obj.updateDynamic("fontKerning")(fontKerning.asInstanceOf[js.Any])

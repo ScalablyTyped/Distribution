@@ -15,11 +15,85 @@ import scala.scalajs.js.annotation._
 class DockPanel ()
   extends atPhosphorWidgetsLib.libWidgetMod.Widget {
   def this(options: atPhosphorWidgetsLib.libDockpanelMod.DockPanelNs.IOptions) = this()
+  /**
+    * Create a new handle for use by the panel.
+    */
+  var _createHandle: js.Any = js.native
+  /**
+    * Create a new tab bar for use by the panel.
+    */
+  var _createTabBar: js.Any = js.native
   var _drag: js.Any = js.native
+  var _edges: js.Any = js.native
+  /**
+    * Handle the `'p-dragenter'` event for the dock panel.
+    */
+  var _evtDragEnter: js.Any = js.native
+  /**
+    * Handle the `'p-dragleave'` event for the dock panel.
+    */
+  var _evtDragLeave: js.Any = js.native
+  /**
+    * Handle the `'p-dragover'` event for the dock panel.
+    */
+  var _evtDragOver: js.Any = js.native
+  /**
+    * Handle the `'p-drop'` event for the dock panel.
+    */
+  var _evtDrop: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the dock panel.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the dock panel.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the dock panel.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the dock panel.
+    */
+  var _evtMouseUp: js.Any = js.native
   var _layoutModified: js.Any = js.native
   var _mode: js.Any = js.native
+  /**
+    * Handle the `currentChanged` signal from a tab bar.
+    */
+  var _onCurrentChanged: js.Any = js.native
+  /**
+    * Handle the `tabActivateRequested` signal from a tab bar.
+    */
+  var _onTabActivateRequested: js.Any = js.native
+  /**
+    * Handle the `tabCloseRequested` signal from a tab bar.
+    */
+  var _onTabCloseRequested: js.Any = js.native
+  /**
+    * Handle the `tabDetachRequested` signal from a tab bar.
+    */
+  var _onTabDetachRequested: js.Any = js.native
+  /**
+    * Handle the `tabMoved` signal from a tab bar.
+    */
+  var _onTabMoved: js.Any = js.native
   var _pressData: js.Any = js.native
+  /**
+    * Release the mouse grab for the dock panel.
+    */
+  var _releaseMouse: js.Any = js.native
   var _renderer: js.Any = js.native
+  /**
+    * Show the overlay indicator at the given client position.
+    *
+    * Returns the drop zone at the specified client position.
+    *
+    * #### Notes
+    * If the position is not over a valid zone, the overlay is hidden.
+    */
+  var _showOverlay: js.Any = js.native
   /**
     * Whether the dock panel is empty.
     */
@@ -63,79 +137,6 @@ class DockPanel ()
     * Set the spacing between the widgets.
     */
   var spacing: scala.Double = js.native
-  /**
-    * Create a new handle for use by the panel.
-    */
-  /* private */ def _createHandle(): js.Any = js.native
-  /**
-    * Create a new tab bar for use by the panel.
-    */
-  /* private */ def _createTabBar(): js.Any = js.native
-  /**
-    * Handle the `'p-dragenter'` event for the dock panel.
-    */
-  /* private */ def _evtDragEnter(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'p-dragleave'` event for the dock panel.
-    */
-  /* private */ def _evtDragLeave(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'p-dragover'` event for the dock panel.
-    */
-  /* private */ def _evtDragOver(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'p-drop'` event for the dock panel.
-    */
-  /* private */ def _evtDrop(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the dock panel.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the dock panel.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the dock panel.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseup'` event for the dock panel.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `currentChanged` signal from a tab bar.
-    */
-  /* private */ def _onCurrentChanged(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabActivateRequested` signal from a tab bar.
-    */
-  /* private */ def _onTabActivateRequested(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabCloseRequested` signal from a tab bar.
-    */
-  /* private */ def _onTabCloseRequested(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabDetachRequested` signal from a tab bar.
-    */
-  /* private */ def _onTabDetachRequested(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabMoved` signal from a tab bar.
-    */
-  /* private */ def _onTabMoved(): js.Any = js.native
-  /**
-    * Release the mouse grab for the dock panel.
-    */
-  /* private */ def _releaseMouse(): js.Any = js.native
-  /**
-    * Show the overlay indicator at the given client position.
-    *
-    * Returns the drop zone at the specified client position.
-    *
-    * #### Notes
-    * If the position is not over a valid zone, the overlay is hidden.
-    */
-  /* private */ def _showOverlay(clientX: js.Any, clientY: js.Any): js.Any = js.native
   /**
     * Activate a specified widget in the dock panel.
     *

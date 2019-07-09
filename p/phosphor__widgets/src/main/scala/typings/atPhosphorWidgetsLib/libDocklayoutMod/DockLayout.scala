@@ -16,10 +16,61 @@ class DockLayout protected ()
     */
   def this(options: atPhosphorWidgetsLib.libDocklayoutMod.DockLayoutNs.IOptions) = this()
   var _box: js.Any = js.native
+  /**
+    * Create a new handle for the dock layout.
+    *
+    * #### Notes
+    * The handle will be attached to the parent if it exists.
+    */
+  var _createHandle: js.Any = js.native
+  /**
+    * Create a new tab bar for use by the dock layout.
+    *
+    * #### Notes
+    * The tab bar will be attached to the parent if it exists.
+    */
+  var _createTabBar: js.Any = js.native
   var _dirty: js.Any = js.native
+  /**
+    * Fit the layout to the total size required by the widgets.
+    */
+  var _fit: js.Any = js.native
+  /**
+    * Insert a widget as a new split area.
+    *
+    * #### Notes
+    * This does not attach the widget to the parent widget.
+    */
+  var _insertSplit: js.Any = js.native
+  /**
+    * Insert a widget next to an existing tab.
+    *
+    * #### Notes
+    * This does not attach the widget to the parent widget.
+    */
+  var _insertTab: js.Any = js.native
   var _items: js.Any = js.native
+  /**
+    * Remove the specified widget from the layout structure.
+    *
+    * #### Notes
+    * This is a no-op if the widget is not in the layout tree.
+    *
+    * This does not detach the widget from the parent node.
+    */
+  var _removeWidget: js.Any = js.native
   var _root: js.Any = js.native
   var _spacing: js.Any = js.native
+  /**
+    * Ensure the root is a split node with the given orientation.
+    */
+  var _splitRoot: js.Any = js.native
+  /**
+    * Update the layout position and size of the widgets.
+    *
+    * The parent offset dimensions should be `-1` if unknown.
+    */
+  var _update: js.Any = js.native
   /**
     * Whether the dock layout is empty.
     */
@@ -35,57 +86,6 @@ class DockLayout protected ()
     * Set the inter-element spacing for the dock layout.
     */
   var spacing: scala.Double = js.native
-  /**
-    * Create a new handle for the dock layout.
-    *
-    * #### Notes
-    * The handle will be attached to the parent if it exists.
-    */
-  /* private */ def _createHandle(): js.Any = js.native
-  /**
-    * Create a new tab bar for use by the dock layout.
-    *
-    * #### Notes
-    * The tab bar will be attached to the parent if it exists.
-    */
-  /* private */ def _createTabBar(): js.Any = js.native
-  /**
-    * Fit the layout to the total size required by the widgets.
-    */
-  /* private */ def _fit(): js.Any = js.native
-  /**
-    * Insert a widget as a new split area.
-    *
-    * #### Notes
-    * This does not attach the widget to the parent widget.
-    */
-  /* private */ def _insertSplit(widget: js.Any, ref: js.Any, refNode: js.Any, orientation: js.Any, after: js.Any): js.Any = js.native
-  /**
-    * Insert a widget next to an existing tab.
-    *
-    * #### Notes
-    * This does not attach the widget to the parent widget.
-    */
-  /* private */ def _insertTab(widget: js.Any, ref: js.Any, refNode: js.Any, after: js.Any): js.Any = js.native
-  /**
-    * Remove the specified widget from the layout structure.
-    *
-    * #### Notes
-    * This is a no-op if the widget is not in the layout tree.
-    *
-    * This does not detach the widget from the parent node.
-    */
-  /* private */ def _removeWidget(widget: js.Any): js.Any = js.native
-  /**
-    * Ensure the root is a split node with the given orientation.
-    */
-  /* private */ def _splitRoot(orientation: js.Any): js.Any = js.native
-  /**
-    * Update the layout position and size of the widgets.
-    *
-    * The parent offset dimensions should be `-1` if unknown.
-    */
-  /* private */ def _update(offsetWidth: js.Any, offsetHeight: js.Any): js.Any = js.native
   /**
     * Add a widget to the dock layout.
     *

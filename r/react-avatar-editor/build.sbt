@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-avatar-editor"
-version := "10.3-dt-20190220Z-5ce7b3"
+version := "10.3-dt-20190220Z-b2e43d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

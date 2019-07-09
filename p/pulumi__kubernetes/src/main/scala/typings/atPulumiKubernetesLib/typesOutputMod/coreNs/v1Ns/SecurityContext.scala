@@ -66,6 +66,10 @@ trait SecurityContext extends js.Object {
     * specified in SecurityContext takes precedence.
     */
   val seLinuxOptions: SELinuxOptions
+  /**
+    * Windows security options.
+    */
+  val windowsOptions: WindowsSecurityContextOptions
 }
 
 object SecurityContext {
@@ -79,9 +83,10 @@ object SecurityContext {
     runAsGroup: scala.Double,
     runAsNonRoot: scala.Boolean,
     runAsUser: scala.Double,
-    seLinuxOptions: SELinuxOptions
+    seLinuxOptions: SELinuxOptions,
+    windowsOptions: WindowsSecurityContextOptions
   ): SecurityContext = {
-    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, capabilities = capabilities, privileged = privileged, procMount = procMount, readOnlyRootFilesystem = readOnlyRootFilesystem, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions)
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, capabilities = capabilities, privileged = privileged, procMount = procMount, readOnlyRootFilesystem = readOnlyRootFilesystem, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions, windowsOptions = windowsOptions)
   
     __obj.asInstanceOf[SecurityContext]
   }

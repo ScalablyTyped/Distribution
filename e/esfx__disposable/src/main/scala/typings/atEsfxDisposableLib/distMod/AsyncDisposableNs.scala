@@ -12,6 +12,7 @@ object AsyncDisposableNs extends js.Object {
     * A well-known symbol used to define an async explicit resource disposal method on an object.
     */
   val asyncDispose: js.Symbol = js.native
+  val name: atEsfxDisposableLib.atEsfxDisposableLibStrings.AsyncDisposable = js.native
   /**
     * Creates an `AsyncDisposable` wrapper around a callback used to dispose resources.
     */
@@ -29,6 +30,11 @@ object AsyncDisposableNs extends js.Object {
   ): atEsfxDisposableLib.distMod.AsyncDisposable = js.native
   /**
     * Determines whether a value is [[AsyncDisposable]].
+    */
+  def hasInstance(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ scala.Boolean = js.native
+  /**
+    * Determines whether a value is [[AsyncDisposable]].
+    * @deprecated Use `AsyncDisposable.hasInstance` instead.
     */
   def isAsyncDisposable(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ scala.Boolean = js.native
   def use[U](

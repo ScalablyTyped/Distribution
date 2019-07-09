@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 object phoenixLibStrings {
   @js.native
+  sealed trait arraybuffer
+    extends phoenixLib.phoenixMod.BinaryType
+  
+  @js.native
+  sealed trait blob
+    extends phoenixLib.phoenixMod.BinaryType
+  
+  @js.native
   sealed trait closed
     extends phoenixLib.phoenixMod.ConnectionState
   
@@ -22,6 +30,10 @@ object phoenixLibStrings {
   sealed trait open
     extends phoenixLib.phoenixMod.ConnectionState
   
+  @scala.inline
+  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  @scala.inline
+  def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline

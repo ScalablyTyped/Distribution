@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "validate_dot_js"
-version := "0.12.0-cac32c"
+version := "0.13.1-cac32c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

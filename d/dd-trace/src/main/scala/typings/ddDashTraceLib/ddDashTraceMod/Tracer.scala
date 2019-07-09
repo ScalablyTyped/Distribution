@@ -129,6 +129,15 @@ trait Tracer extends js.Object {
   @JSName("use")
   def use_cassandradriver(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`, config: scala.Boolean): this.type = js.native
   @JSName("use")
+  def use_connect(plugin: ddDashTraceLib.ddDashTraceLibStrings.connect): this.type = js.native
+  @JSName("use")
+  def use_connect(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.connect,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.connect
+  ): this.type = js.native
+  @JSName("use")
+  def use_connect(plugin: ddDashTraceLib.ddDashTraceLibStrings.connect, config: scala.Boolean): this.type = js.native
+  @JSName("use")
   def use_dns(plugin: ddDashTraceLib.ddDashTraceLibStrings.dns): this.type = js.native
   @JSName("use")
   def use_dns(
@@ -155,6 +164,15 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_express(plugin: ddDashTraceLib.ddDashTraceLibStrings.express, config: scala.Boolean): this.type = js.native
+  @JSName("use")
+  def use_fastify(plugin: ddDashTraceLib.ddDashTraceLibStrings.fastify): this.type = js.native
+  @JSName("use")
+  def use_fastify(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.fastify,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.fastify
+  ): this.type = js.native
+  @JSName("use")
+  def use_fastify(plugin: ddDashTraceLib.ddDashTraceLibStrings.fastify, config: scala.Boolean): this.type = js.native
   @JSName("use")
   def use_genericpool(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`): this.type = js.native
   @JSName("use")
@@ -264,6 +282,15 @@ trait Tracer extends js.Object {
   @JSName("use")
   def use_net(plugin: ddDashTraceLib.ddDashTraceLibStrings.net, config: scala.Boolean): this.type = js.native
   @JSName("use")
+  def use_paperplane(plugin: ddDashTraceLib.ddDashTraceLibStrings.paperplane): this.type = js.native
+  @JSName("use")
+  def use_paperplane(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.paperplane,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.paperplane
+  ): this.type = js.native
+  @JSName("use")
+  def use_paperplane(plugin: ddDashTraceLib.ddDashTraceLibStrings.paperplane, config: scala.Boolean): this.type = js.native
+  @JSName("use")
   def use_pg(plugin: ddDashTraceLib.ddDashTraceLibStrings.pg): this.type = js.native
   @JSName("use")
   def use_pg(
@@ -281,6 +308,24 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_pino(plugin: ddDashTraceLib.ddDashTraceLibStrings.pino, config: scala.Boolean): this.type = js.native
+  @JSName("use")
+  def use_promise(plugin: ddDashTraceLib.ddDashTraceLibStrings.promise): this.type = js.native
+  @JSName("use")
+  def use_promise(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.promise,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.promise
+  ): this.type = js.native
+  @JSName("use")
+  def use_promise(plugin: ddDashTraceLib.ddDashTraceLibStrings.promise, config: scala.Boolean): this.type = js.native
+  @JSName("use")
+  def use_promisejs(plugin: ddDashTraceLib.ddDashTraceLibStrings.`promise-js`): this.type = js.native
+  @JSName("use")
+  def use_promisejs(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.`promise-js`,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.promise_js
+  ): this.type = js.native
+  @JSName("use")
+  def use_promisejs(plugin: ddDashTraceLib.ddDashTraceLibStrings.`promise-js`, config: scala.Boolean): this.type = js.native
   @JSName("use")
   def use_q(plugin: ddDashTraceLib.ddDashTraceLibStrings.q): this.type = js.native
   @JSName("use")
@@ -314,6 +359,15 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_router(plugin: ddDashTraceLib.ddDashTraceLibStrings.router, config: scala.Boolean): this.type = js.native
+  @JSName("use")
+  def use_tedious(plugin: ddDashTraceLib.ddDashTraceLibStrings.tedious): this.type = js.native
+  @JSName("use")
+  def use_tedious(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.tedious,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.tedious
+  ): this.type = js.native
+  @JSName("use")
+  def use_tedious(plugin: ddDashTraceLib.ddDashTraceLibStrings.tedious, config: scala.Boolean): this.type = js.native
   @JSName("use")
   def use_when(plugin: ddDashTraceLib.ddDashTraceLibStrings.when): this.type = js.native
   @JSName("use")

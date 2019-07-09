@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__css
 
-Typings are for version 10.0.9
+Typings are for version 10.0.14
 
 ## Library description:
 a function to serialize css and object styless

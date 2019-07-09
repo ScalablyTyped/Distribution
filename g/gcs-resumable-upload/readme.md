@@ -1,7 +1,7 @@
 
 # Scala.js typings for gcs-resumable-upload
 
-Typings are for version 1.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 Upload a file to Google Cloud Storage with built-in resumable behavior

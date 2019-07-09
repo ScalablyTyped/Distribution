@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ResourceAwardEmojis protected ()
   extends gitlabLib.distTemplatesResourceAwardEmojisMod.default {
-  def this(resourceType: java.lang.String, options: gitlabLib.BaseServiceOptions) = this()
+  def this(resourceType: java.lang.String, options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

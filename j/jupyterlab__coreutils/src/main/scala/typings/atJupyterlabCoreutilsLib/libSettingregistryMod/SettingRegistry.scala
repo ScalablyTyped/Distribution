@@ -7,38 +7,65 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@jupyterlab/coreutils/lib/settingregistry", "SettingRegistry")
 @js.native
-class SettingRegistry protected () extends js.Object {
+class SettingRegistry protected ()
+  extends atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistry {
   /**
     * Create a new setting registry.
     */
   def this(options: atJupyterlabCoreutilsLib.libSettingregistryMod.SettingRegistryNs.IOptions) = this()
-  var _connector: js.Any = js.native
+  /**
+    * Load a plugin into the registry.
+    */
+  var _load: js.Any = js.native
   var _pluginChanged: js.Any = js.native
-  var _plugins: js.Any = js.native
+  /**
+    * Preload a list of plugins and fail gracefully.
+    */
+  var _preload: js.Any = js.native
+  var _ready: js.Any = js.native
   /**
     * Save a plugin in the registry.
     */
   var _save: js.Any = js.native
+  var _timeout: js.Any = js.native
   /**
-    * Validate a plugin's data and schema, compose the `composite` data.
+    * Transform the plugin if necessary.
+    */
+  var _transform: js.Any = js.native
+  var _transformers: js.Any = js.native
+  /**
+    * Validate and preload a plugin, compose the `composite` data.
     */
   var _validate: js.Any = js.native
   /**
+    * The data connector used by the setting registry.
+    */
+  /* CompleteClass */
+  override val connector: atJupyterlabCoreutilsLib.libInterfacesMod.IDataConnector[
+    atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin, 
+    java.lang.String, 
+    java.lang.String
+  ] = js.native
+  /**
     * A signal that emits the name of a plugin when its settings change.
     */
-  val pluginChanged: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[this.type, java.lang.String] = js.native
+  /* CompleteClass */
+  override val pluginChanged: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[this.type, java.lang.String] = js.native
   /**
-    * Returns a list of plugin settings held in the registry.
+    * The collection of setting registry plugins.
     */
-  val plugins: js.Array[atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.IPlugin] = js.native
+  /* CompleteClass */
+  override val plugins: org.scalablytyped.runtime.StringDictionary[atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin] = js.native
   /**
     * The schema of the setting registry.
     */
-  val schema: atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.ISchema = js.native
+  /* CompleteClass */
+  override val schema: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.ISchema = js.native
   /**
     * The schema validator used by the setting registry.
     */
-  val validator: ISchemaValidator = js.native
+  /* CompleteClass */
+  override val validator: ISchemaValidator = js.native
   /**
     * Get an individual setting.
     *
@@ -48,7 +75,8 @@ class SettingRegistry protected () extends js.Object {
     *
     * @returns A promise that resolves when the setting is retrieved.
     */
-  def get(plugin: java.lang.String, key: java.lang.String): js.Promise[atJupyterlabCoreutilsLib.Anon_Composite] = js.native
+  /* CompleteClass */
+  override def get(plugin: java.lang.String, key: java.lang.String): js.Promise[atJupyterlabCoreutilsLib.Anon_Composite] = js.native
   /**
     * Load a plugin's settings into the setting registry.
     *
@@ -57,7 +85,8 @@ class SettingRegistry protected () extends js.Object {
     * @returns A promise that resolves with a plugin settings object or rejects
     * if the plugin is not found.
     */
-  def load(plugin: java.lang.String): js.Promise[atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.ISettings] = js.native
+  /* CompleteClass */
+  override def load(plugin: java.lang.String): js.Promise[atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.ISettings] = js.native
   /**
     * Reload a plugin's settings into the registry even if they already exist.
     *
@@ -66,7 +95,8 @@ class SettingRegistry protected () extends js.Object {
     * @returns A promise that resolves with a plugin settings object or rejects
     * with a list of `ISchemaValidator.IError` objects if it fails.
     */
-  def reload(plugin: java.lang.String): js.Promise[atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.ISettings] = js.native
+  /* CompleteClass */
+  override def reload(plugin: java.lang.String): js.Promise[atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.ISettings] = js.native
   /**
     * Remove a single setting in the registry.
     *
@@ -76,7 +106,8 @@ class SettingRegistry protected () extends js.Object {
     *
     * @returns A promise that resolves when the setting is removed.
     */
-  def remove(plugin: java.lang.String, key: java.lang.String): js.Promise[scala.Unit] = js.native
+  /* CompleteClass */
+  override def remove(plugin: java.lang.String, key: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
     * Set a single setting in the registry.
     *
@@ -89,11 +120,61 @@ class SettingRegistry protected () extends js.Object {
     * @returns A promise that resolves when the setting has been saved.
     *
     */
-  def set(
+  /* CompleteClass */
+  override def set(
     plugin: java.lang.String,
     key: java.lang.String,
     value: atPhosphorCoreutilsLib.libJsonMod.JSONValue
   ): js.Promise[scala.Unit] = js.native
+  /**
+    * Register a plugin transform function to act on a specific plugin.
+    *
+    * @param plugin - The name of the plugin whose settings are transformed.
+    *
+    * @param transforms - The transform functions applied to the plugin.
+    *
+    * @returns A disposable that removes the transforms from the registry.
+    *
+    * #### Notes
+    * - `compose` transformations: The registry automatically overwrites a
+    * plugin's default values with user overrides, but a plugin may instead wish
+    * to merge values. This behavior can be accomplished in a `compose`
+    * transformation.
+    * - `fetch` transformations: The registry uses the plugin data that is
+    * fetched from its connector. If a plugin wants to override, e.g. to update
+    * its schema with dynamic defaults, a `fetch` transformation can be applied.
+    */
+  def transform(
+    plugin: java.lang.String,
+    transforms: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ phase in @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Transform}
+    */ atJupyterlabCoreutilsLib.atJupyterlabCoreutilsLibStrings.SettingRegistry with js.Any
+  ): atPhosphorDisposableLib.atPhosphorDisposableMod.IDisposable = js.native
+  /**
+    * Register a plugin transform function to act on a specific plugin.
+    *
+    * @param plugin - The name of the plugin whose settings are transformed.
+    *
+    * @param transforms - The transform functions applied to the plugin.
+    *
+    * @returns A disposable that removes the transforms from the registry.
+    *
+    * #### Notes
+    * - `compose` transformations: The registry automatically overwrites a
+    * plugin's default values with user overrides, but a plugin may instead wish
+    * to merge values. This behavior can be accomplished in a `compose`
+    * transformation.
+    * - `fetch` transformations: The registry uses the plugin data that is
+    * fetched from its connector. If a plugin wants to override, e.g. to update
+    * its schema with dynamic defaults, a `fetch` transformation can be applied.
+    */
+  /* CompleteClass */
+  override def transform(
+    plugin: java.lang.String,
+    transforms: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ phase in @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Transform}
+    */ atJupyterlabCoreutilsLib.atJupyterlabCoreutilsLibStrings.ISettingRegistry with js.Any
+  ): atPhosphorDisposableLib.atPhosphorDisposableMod.IDisposable = js.native
   /**
     * Upload a plugin's settings.
     *
@@ -103,6 +184,7 @@ class SettingRegistry protected () extends js.Object {
     *
     * @returns A promise that resolves when the settings have been saved.
     */
-  def upload(plugin: java.lang.String, raw: java.lang.String): js.Promise[scala.Unit] = js.native
+  /* CompleteClass */
+  override def upload(plugin: java.lang.String, raw: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

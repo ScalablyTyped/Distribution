@@ -19,7 +19,6 @@ class Namespace protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Namespace) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Namespace, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -49,7 +48,6 @@ class Namespace protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
     */
   val status: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.NamespaceStatus] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Namespace = js.native
 }
 
 /* static members */
@@ -74,5 +72,10 @@ object Namespace extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.coreV1NamespaceMod.Namespace = js.native
+  /**
+    * Returns true if the given object is an instance of Namespace.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/Namespace.Namespace */ scala.Boolean = js.native
 }
 

@@ -11,8 +11,8 @@ class Uniform protected ()
   extends threeLib.srcCoreUniformMod.Uniform {
   def this(value: js.Any) = this()
   /**
-    * @deprecated
-    */
+  	 * @deprecated
+  	 */
   def this(`type`: java.lang.String, value: js.Any) = this()
 }
 

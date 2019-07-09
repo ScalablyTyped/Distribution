@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-glob
 
-Typings are for version 2.2.7
+Typings are for version 3.0.4
 
 ## Library description:
 Is a faster `node-glob` alternative

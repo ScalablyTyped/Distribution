@@ -17,13 +17,84 @@ class Menu protected ()
   def this(options: atPhosphorWidgetsLib.libMenuMod.MenuNs.IOptions) = this()
   var _aboutToClose: js.Any = js.native
   var _activeIndex: js.Any = js.native
+  /**
+    * Cancel the close timer, if the timer is pending.
+    */
+  var _cancelCloseTimer: js.Any = js.native
+  /**
+    * Cancel the open timer, if the timer is pending.
+    */
+  var _cancelOpenTimer: js.Any = js.native
   var _childIndex: js.Any = js.native
   var _childMenu: js.Any = js.native
+  /**
+    * Close the child menu immediately.
+    *
+    * This is a no-op if a child menu is not open.
+    */
+  var _closeChildMenu: js.Any = js.native
   var _closeTimerID: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the menu.
+    *
+    * #### Notes
+    * This listener is attached to the menu node.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the menu.
+    *
+    * #### Notes
+    * This listener is attached to the document node.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `'mouseenter'` event for the menu.
+    *
+    * #### Notes
+    * This listener is attached to the menu node.
+    */
+  var _evtMouseEnter: js.Any = js.native
+  /**
+    * Handle the `'mouseleave'` event for the menu.
+    *
+    * #### Notes
+    * This listener is attached to the menu node.
+    */
+  var _evtMouseLeave: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the menu.
+    *
+    * #### Notes
+    * This listener is attached to the menu node.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the menu.
+    *
+    * #### Notes
+    * This listener is attached to the menu node.
+    */
+  var _evtMouseUp: js.Any = js.native
   var _items: js.Any = js.native
   var _menuRequested: js.Any = js.native
+  /**
+    * Open the child menu at the active index immediately.
+    *
+    * If a different child menu is already open, it will be closed,
+    * even if the active item is not a valid submenu.
+    */
+  var _openChildMenu: js.Any = js.native
   var _openTimerID: js.Any = js.native
   var _parentMenu: js.Any = js.native
+  /**
+    * Start the close timer, unless it is already pending.
+    */
+  var _startCloseTimer: js.Any = js.native
+  /**
+    * Start the open timer, unless it is already pending.
+    */
+  var _startOpenTimer: js.Any = js.native
   /**
     * A signal emitted just before the menu is closed.
     *
@@ -117,78 +188,6 @@ class Menu protected ()
     * The root menu of the menu hierarchy.
     */
   val rootMenu: Menu = js.native
-  /**
-    * Cancel the close timer, if the timer is pending.
-    */
-  /* private */ def _cancelCloseTimer(): js.Any = js.native
-  /**
-    * Cancel the open timer, if the timer is pending.
-    */
-  /* private */ def _cancelOpenTimer(): js.Any = js.native
-  /**
-    * Close the child menu immediately.
-    *
-    * This is a no-op if a child menu is not open.
-    */
-  /* private */ def _closeChildMenu(): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the menu.
-    *
-    * #### Notes
-    * This listener is attached to the menu node.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the menu.
-    *
-    * #### Notes
-    * This listener is attached to the document node.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseenter'` event for the menu.
-    *
-    * #### Notes
-    * This listener is attached to the menu node.
-    */
-  /* private */ def _evtMouseEnter(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseleave'` event for the menu.
-    *
-    * #### Notes
-    * This listener is attached to the menu node.
-    */
-  /* private */ def _evtMouseLeave(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the menu.
-    *
-    * #### Notes
-    * This listener is attached to the menu node.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseup'` event for the menu.
-    *
-    * #### Notes
-    * This listener is attached to the menu node.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Open the child menu at the active index immediately.
-    *
-    * If a different child menu is already open, it will be closed,
-    * even if the active item is not a valid submenu.
-    */
-  /* private */ def _openChildMenu(): js.Any = js.native
-  /* private */ def _openChildMenu(activateFirst: js.Any): js.Any = js.native
-  /**
-    * Start the close timer, unless it is already pending.
-    */
-  /* private */ def _startCloseTimer(): js.Any = js.native
-  /**
-    * Start the open timer, unless it is already pending.
-    */
-  /* private */ def _startOpenTimer(): js.Any = js.native
   /**
     * Activate the next selectable item in the menu.
     *

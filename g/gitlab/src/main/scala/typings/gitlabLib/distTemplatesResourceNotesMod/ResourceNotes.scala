@@ -9,45 +9,68 @@ import scala.scalajs.js.annotation._
 trait ResourceNotes
   extends gitlabLib.distInfrastructureMod.BaseService {
   var resource2Type: java.lang.String = js.native
-  def all(resourceId: gitlabLib.ResourceId, resource2Id: gitlabLib.ResourceId): js.Promise[gitlabLib.GetResponse] = js.native
   def all(
-    resourceId: gitlabLib.ResourceId,
-    resource2Id: gitlabLib.ResourceId,
-    options: gitlabLib.PaginatedRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
-  def create(resourceId: gitlabLib.ResourceId, resource2Id: gitlabLib.ResourceId, body: java.lang.String): js.Promise[js.Object] = js.native
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    options: gitlabLib.distInfrastructureMod.PaginatedRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def create(
-    resourceId: gitlabLib.ResourceId,
-    resource2Id: gitlabLib.ResourceId,
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    body: java.lang.String
+  ): js.Promise[js.Object] = js.native
+  def create(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
     body: java.lang.String,
-    options: gitlabLib.BaseRequestOptions
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def edit(
-    resourceId: gitlabLib.ResourceId,
-    resource2Id: gitlabLib.ResourceId,
-    noteId: gitlabLib.NoteId,
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    noteId: gitlabLib.distServicesMod.NoteId,
     body: java.lang.String
   ): js.Promise[js.Object] = js.native
   def edit(
-    resourceId: gitlabLib.ResourceId,
-    resource2Id: gitlabLib.ResourceId,
-    noteId: gitlabLib.NoteId,
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    noteId: gitlabLib.distServicesMod.NoteId,
     body: java.lang.String,
-    options: gitlabLib.BaseRequestOptions
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
-  def remove(resourceId: gitlabLib.ResourceId, resource2Id: gitlabLib.ResourceId, noteId: gitlabLib.NoteId): js.Promise[js.Object] = js.native
   def remove(
-    resourceId: gitlabLib.ResourceId,
-    resource2Id: gitlabLib.ResourceId,
-    noteId: gitlabLib.NoteId,
-    options: gitlabLib.Sudo
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    noteId: gitlabLib.distServicesMod.NoteId
   ): js.Promise[js.Object] = js.native
-  def show(resourceId: gitlabLib.ResourceId, resource2Id: gitlabLib.ResourceId, noteId: gitlabLib.NoteId): js.Promise[gitlabLib.GetResponse] = js.native
+  def remove(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    noteId: gitlabLib.distServicesMod.NoteId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
   def show(
-    resourceId: gitlabLib.ResourceId,
-    resource2Id: gitlabLib.ResourceId,
-    noteId: gitlabLib.NoteId,
-    options: gitlabLib.Sudo
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    noteId: gitlabLib.distServicesMod.NoteId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def show(
+    resourceId: gitlabLib.distServicesMod.ResourceId,
+    resource2Id: gitlabLib.distServicesMod.ResourceId,
+    noteId: gitlabLib.distServicesMod.NoteId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

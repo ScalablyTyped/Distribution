@@ -23,6 +23,11 @@ class MobXGlobals () extends js.Object {
     */
   var computationDepth: scala.Double = js.native
   /**
+    * Allows overwriting of computed properties, useful in tests but not prod as it can cause
+    * memory leaks. See https://github.com/mobxjs/mobx/issues/1867
+    */
+  var computedConfigurable: scala.Boolean = js.native
+  /**
     * Warn if computed values are accessed outside a reactive context
     */
   var computedRequiresReaction: scala.Boolean = js.native

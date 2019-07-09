@@ -1,7 +1,7 @@
 
 # Scala.js typings for soap
 
-Typings are for version 0.27.1
+Typings are for version 0.28.0
 
 ## Library description:
 A minimal node SOAP client

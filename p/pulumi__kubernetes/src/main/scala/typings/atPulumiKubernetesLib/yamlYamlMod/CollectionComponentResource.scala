@@ -111,7 +111,9 @@ abstract class CollectionComponentResource protected ()
     name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.webhooks
   ): atPulumiPulumiLib.outputMod.Output[
-    js.Array[atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.Webhook]
+    js.Array[
+      atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
+    ]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
@@ -139,7 +141,9 @@ abstract class CollectionComponentResource protected ()
     name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.webhooks
   ): atPulumiPulumiLib.outputMod.Output[
-    js.Array[atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.Webhook]
+    js.Array[
+      atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhook
+    ]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
@@ -225,7 +229,9 @@ abstract class CollectionComponentResource protected ()
     name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.webhooks
   ): atPulumiPulumiLib.outputMod.Output[
-    js.Array[atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.Webhook]
+    js.Array[
+      atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
+    ]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
@@ -255,7 +261,9 @@ abstract class CollectionComponentResource protected ()
     name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.webhooks
   ): atPulumiPulumiLib.outputMod.Output[
-    js.Array[atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.Webhook]
+    js.Array[
+      atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhook
+    ]
   ] = js.native
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
@@ -6526,6 +6534,11 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1/PriorityClass`,
     name: java.lang.String,
+    property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preemption_policy
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def getResourceProperty(
+    groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1/PriorityClass`,
+    name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.value
   ): atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   def getResourceProperty(
@@ -6562,6 +6575,12 @@ abstract class CollectionComponentResource protected ()
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1/PriorityClass`,
     namespace: java.lang.String,
     name: java.lang.String,
+    property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preemption_policy
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def getResourceProperty(
+    groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1/PriorityClass`,
+    namespace: java.lang.String,
+    name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.value
   ): atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   def getResourceProperty(
@@ -6646,6 +6665,11 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
     name: java.lang.String,
+    property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preemption_policy
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def getResourceProperty(
+    groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
+    name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.value
   ): atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   def getResourceProperty(
@@ -6680,6 +6704,12 @@ abstract class CollectionComponentResource protected ()
     name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
   ): atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
+    namespace: java.lang.String,
+    name: java.lang.String,
+    property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preemption_policy
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
     namespace: java.lang.String,
@@ -6768,6 +6798,11 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
     name: java.lang.String,
+    property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preemption_policy
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def getResourceProperty(
+    groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
+    name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.value
   ): atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   def getResourceProperty(
@@ -6802,6 +6837,12 @@ abstract class CollectionComponentResource protected ()
     name: java.lang.String,
     property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
   ): atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
+    namespace: java.lang.String,
+    name: java.lang.String,
+    property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preemption_policy
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   def getResourceProperty(
     groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
     namespace: java.lang.String,

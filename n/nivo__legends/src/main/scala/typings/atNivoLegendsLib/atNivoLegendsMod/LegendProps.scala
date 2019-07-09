@@ -22,6 +22,7 @@ trait LegendProps extends js.Object {
   var onMouseEnter: js.UndefOr[LegendMouseHandler] = js.undefined
   var onMouseLeave: js.UndefOr[LegendMouseHandler] = js.undefined
   var padding: js.UndefOr[scala.Double | Box] = js.undefined
+  var symbolBorderColor: js.UndefOr[java.lang.String] = js.undefined
   var symbolShape: js.UndefOr[LegendSymbolShape | js.Any] = js.undefined
   var symbolSize: js.UndefOr[scala.Double] = js.undefined
   var symbolSpacing: js.UndefOr[scala.Double] = js.undefined
@@ -49,6 +50,7 @@ object LegendProps {
     onMouseEnter: LegendMouseHandler = null,
     onMouseLeave: LegendMouseHandler = null,
     padding: scala.Double | Box = null,
+    symbolBorderColor: java.lang.String = null,
     symbolShape: LegendSymbolShape | js.Any = null,
     symbolSize: scala.Int | scala.Double = null,
     symbolSpacing: scala.Int | scala.Double = null,
@@ -69,6 +71,7 @@ object LegendProps {
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (symbolBorderColor != null) __obj.updateDynamic("symbolBorderColor")(symbolBorderColor)
     if (symbolShape != null) __obj.updateDynamic("symbolShape")(symbolShape.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (symbolSpacing != null) __obj.updateDynamic("symbolSpacing")(symbolSpacing.asInstanceOf[js.Any])

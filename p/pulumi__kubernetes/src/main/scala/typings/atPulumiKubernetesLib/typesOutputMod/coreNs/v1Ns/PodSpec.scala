@@ -105,6 +105,12 @@ trait PodSpec extends js.Object {
     */
   val nodeSelector: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
+    * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never,
+    * PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level
+    * and is only honored by servers that enable the NonPreemptingPriority feature.
+    */
+  val preemptionPolicy: java.lang.String
+  /**
     * The priority value. Various system components use this field to find the priority of the
     * pod. When Priority Admission Controller is enabled, it prevents users from setting this
     * field. The admission controller populates this field from PriorityClassName. The higher the
@@ -137,8 +143,8 @@ trait PodSpec extends js.Object {
     * used to run this pod.  If no RuntimeClass resource matches the named class, the pod will
     * not be run. If unset or empty, the "legacy" RuntimeClass will be used, which is an implicit
     * class with an empty definition that uses the default runtime handler. More info:
-    * https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is an alpha feature and
-    * may change in the future.
+    * https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is a beta feature as of
+    * Kubernetes v1.14.
     */
   val runtimeClassName: java.lang.String
   /**
@@ -215,6 +221,7 @@ object PodSpec {
     initContainers: js.Array[Container],
     nodeName: java.lang.String,
     nodeSelector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    preemptionPolicy: java.lang.String,
     priority: scala.Double,
     priorityClassName: java.lang.String,
     readinessGates: js.Array[PodReadinessGate],
@@ -230,7 +237,7 @@ object PodSpec {
     tolerations: js.Array[Toleration],
     volumes: js.Array[Volume]
   ): PodSpec = {
-    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, affinity = affinity, automountServiceAccountToken = automountServiceAccountToken, containers = containers, dnsConfig = dnsConfig, dnsPolicy = dnsPolicy, enableServiceLinks = enableServiceLinks, hostAliases = hostAliases, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostname = hostname, imagePullSecrets = imagePullSecrets, initContainers = initContainers, nodeName = nodeName, nodeSelector = nodeSelector, priority = priority, priorityClassName = priorityClassName, readinessGates = readinessGates, restartPolicy = restartPolicy, runtimeClassName = runtimeClassName, schedulerName = schedulerName, securityContext = securityContext, serviceAccount = serviceAccount, serviceAccountName = serviceAccountName, shareProcessNamespace = shareProcessNamespace, subdomain = subdomain, terminationGracePeriodSeconds = terminationGracePeriodSeconds, tolerations = tolerations, volumes = volumes)
+    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, affinity = affinity, automountServiceAccountToken = automountServiceAccountToken, containers = containers, dnsConfig = dnsConfig, dnsPolicy = dnsPolicy, enableServiceLinks = enableServiceLinks, hostAliases = hostAliases, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostname = hostname, imagePullSecrets = imagePullSecrets, initContainers = initContainers, nodeName = nodeName, nodeSelector = nodeSelector, preemptionPolicy = preemptionPolicy, priority = priority, priorityClassName = priorityClassName, readinessGates = readinessGates, restartPolicy = restartPolicy, runtimeClassName = runtimeClassName, schedulerName = schedulerName, securityContext = securityContext, serviceAccount = serviceAccount, serviceAccountName = serviceAccountName, shareProcessNamespace = shareProcessNamespace, subdomain = subdomain, terminationGracePeriodSeconds = terminationGracePeriodSeconds, tolerations = tolerations, volumes = volumes)
   
     __obj.asInstanceOf[PodSpec]
   }

@@ -13,6 +13,7 @@ object CodeEditorNs extends js.Object {
     */
   /* Rewritten from type alias, can be one of: 
     - atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.top
+    - atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.topLine
     - atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.bottom
   */
   trait EdgeLocation extends js.Object
@@ -25,6 +26,10 @@ object CodeEditorNs extends js.Object {
       * Whether to automatically close brackets after opening them.
       */
     var autoClosingBrackets: scala.Boolean
+    /**
+      * Wheter to allow code folding
+      */
+    var codeFolding: scala.Boolean
     /**
       * User preferred font family for text editors.
       */
@@ -61,6 +66,10 @@ object CodeEditorNs extends js.Object {
       * Whether the editor is read-only.
       */
     var readOnly: scala.Boolean
+    /**
+      * Column index at which rulers should be added.
+      */
+    var rulers: js.Array[scala.Double]
     /**
       * The number of spaces a tab is equal to.
       */
@@ -178,6 +187,8 @@ object CodeEditorNs extends js.Object {
     def getOffsetAt(position: IPosition): scala.Double = js.native
     @JSName("getOption")
     def getOption_autoClosingBrackets(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.autoClosingBrackets): scala.Boolean = js.native
+    @JSName("getOption")
+    def getOption_codeFolding(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.codeFolding): scala.Boolean = js.native
     /**
       * Get a config option for the editor.
       */
@@ -197,6 +208,8 @@ object CodeEditorNs extends js.Object {
     def getOption_matchBrackets(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.matchBrackets): scala.Boolean = js.native
     @JSName("getOption")
     def getOption_readOnly(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.readOnly): scala.Boolean = js.native
+    @JSName("getOption")
+    def getOption_rulers(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.rulers): js.Array[scala.Double] = js.native
     @JSName("getOption")
     def getOption_tabSize(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.tabSize): scala.Double = js.native
     @JSName("getOption")
@@ -284,6 +297,11 @@ object CodeEditorNs extends js.Object {
       value: scala.Boolean
     ): scala.Unit = js.native
     @JSName("setOption")
+    def setOption_codeFolding(
+      option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.codeFolding,
+      value: scala.Boolean
+    ): scala.Unit = js.native
+    @JSName("setOption")
     def setOption_fontFamily(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.fontFamily): scala.Unit = js.native
     /**
       * Set a config option for the editor.
@@ -318,6 +336,11 @@ object CodeEditorNs extends js.Object {
     ): scala.Unit = js.native
     @JSName("setOption")
     def setOption_readOnly(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.readOnly, value: scala.Boolean): scala.Unit = js.native
+    @JSName("setOption")
+    def setOption_rulers(
+      option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.rulers,
+      value: js.Array[scala.Double]
+    ): scala.Unit = js.native
     @JSName("setOption")
     def setOption_tabSize(option: atJupyterlabCodeeditorLib.atJupyterlabCodeeditorLibStrings.tabSize, value: scala.Double): scala.Unit = js.native
     @JSName("setOption")

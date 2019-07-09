@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mosaic-component", "SplitButton")
 @js.native
-class SplitButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */] ()
-  extends reactDashMosaicDashComponentLib.libButtonsSplitButtonMod.SplitButton[T]
+class SplitButton ()
+  extends reactDashMosaicDashComponentLib.libButtonsSplitButtonMod.SplitButton
 
 /* static members */
 @JSImport("react-mosaic-component", "SplitButton")
 @js.native
 object SplitButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
+  var contextType: reactLib.reactMod.Context[reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext] = js.native
 }
 

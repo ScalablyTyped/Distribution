@@ -20,6 +20,7 @@ class Client protected ()
   var _initializeOptions: js.Any = js.native
   var _initializeServices: js.Any = js.native
   var _invoke: js.Any = js.native
+  var _processSoapHeader: js.Any = js.native
   var bodyAttributes: js.Any = js.native
   var endpoint: js.Any = js.native
   var httpClient: js.Any = js.native
@@ -54,18 +55,12 @@ class Client protected ()
   /** add soapHeader to soap:Header node */
   def addSoapHeader(soapHeader: js.Any): scala.Double = js.native
   def addSoapHeader(soapHeader: js.Any, name: java.lang.String): scala.Double = js.native
-  def addSoapHeader(soapHeader: js.Any, name: java.lang.String, namespace: java.lang.String): scala.Double = js.native
-  def addSoapHeader(soapHeader: js.Any, name: java.lang.String, namespace: java.lang.String, xmlns: java.lang.String): scala.Double = js.native
-  def changeSoapHeader(index: scala.Double, soapHeader: js.Any): scala.Unit = js.native
-  def changeSoapHeader(index: scala.Double, soapHeader: js.Any, name: java.lang.String): scala.Unit = js.native
-  def changeSoapHeader(index: scala.Double, soapHeader: js.Any, name: java.lang.String, namespace: java.lang.String): scala.Unit = js.native
-  def changeSoapHeader(
-    index: scala.Double,
-    soapHeader: js.Any,
-    name: java.lang.String,
-    namespace: java.lang.String,
-    xmlns: java.lang.String
-  ): scala.Unit = js.native
+  def addSoapHeader(soapHeader: js.Any, name: java.lang.String, namespace: js.Any): scala.Double = js.native
+  def addSoapHeader(soapHeader: js.Any, name: java.lang.String, namespace: js.Any, xmlns: java.lang.String): scala.Double = js.native
+  def changeSoapHeader(index: js.Any, soapHeader: js.Any): scala.Unit = js.native
+  def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any): scala.Unit = js.native
+  def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any, namespace: js.Any): scala.Unit = js.native
+  def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any, namespace: js.Any, xmlns: js.Any): scala.Unit = js.native
   def clearBodyAttributes(): scala.Unit = js.native
   def clearHttpHeaders(): scala.Unit = js.native
   /** remove all defined headers */

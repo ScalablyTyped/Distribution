@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/math/Matrix3", "Matrix3")
 @js.native
 /**
-  * Creates an identity matrix.
-  */
+	 * Creates an identity matrix.
+	 */
 class Matrix3 () extends Matrix {
   /**
-    * @deprecated Use {@link Matrix3#applyToBufferAttribute matrix3.applyToBufferAttribute( attribute )} instead.
-    */
+  	 * @deprecated Use {@link Matrix3#applyToBufferAttribute matrix3.applyToBufferAttribute( attribute )} instead.
+  	 */
   def applyToBuffer(buffer: threeLib.srcCoreBufferAttributeMod.BufferAttribute): threeLib.srcCoreBufferAttributeMod.BufferAttribute = js.native
   def applyToBuffer(buffer: threeLib.srcCoreBufferAttributeMod.BufferAttribute, offset: scala.Double): threeLib.srcCoreBufferAttributeMod.BufferAttribute = js.native
   def applyToBuffer(
@@ -24,8 +24,8 @@ class Matrix3 () extends Matrix {
   def applyToBufferAttribute(attribute: threeLib.srcCoreBufferAttributeMod.BufferAttribute): threeLib.srcCoreBufferAttributeMod.BufferAttribute = js.native
   def copy(m: Matrix3): this.type = js.native
   /**
-    * @deprecated Use {@link Matrix3#toArray .toArray()} instead.
-    */
+  	 * @deprecated Use {@link Matrix3#toArray .toArray()} instead.
+  	 */
   def flattenToArrayOffset(array: js.Array[scala.Double], offset: scala.Double): js.Array[scala.Double] = js.native
   def fromArray(array: js.Array[scala.Double]): Matrix3 = js.native
   def fromArray(array: js.Array[scala.Double], offset: scala.Double): Matrix3 = js.native
@@ -35,20 +35,20 @@ class Matrix3 () extends Matrix {
   def getInverse(matrix: threeLib.srcMathMatrix4Mod.Matrix4, throwOnDegenerate: scala.Boolean): Matrix3 = js.native
   def getNormalMatrix(matrix4: threeLib.srcMathMatrix4Mod.Matrix4): Matrix3 = js.native
   /**
-    * Multiplies this matrix by m.
-    */
+  	 * Multiplies this matrix by m.
+  	 */
   def multiply(m: Matrix3): Matrix3 = js.native
   /**
-    * Sets this matrix to a x b.
-    */
+  	 * Sets this matrix to a x b.
+  	 */
   def multiplyMatrices(a: Matrix3, b: Matrix3): Matrix3 = js.native
   /**
-    * @deprecated Use {@link Vector3.applyMatrix3 vector.applyMatrix3( matrix )} instead.
-    */
+  	 * @deprecated Use {@link Vector3.applyMatrix3 vector.applyMatrix3( matrix )} instead.
+  	 */
   def multiplyVector3(vector: threeLib.srcMathVector3Mod.Vector3): js.Any = js.native
   /**
-    * @deprecated This method has been removed completely.
-    */
+  	 * @deprecated This method has been removed completely.
+  	 */
   def multiplyVector3Array(a: js.Any): js.Any = js.native
   def premultiply(m: Matrix3): Matrix3 = js.native
   def set(
@@ -65,8 +65,8 @@ class Matrix3 () extends Matrix {
   def setFromMatrix4(m: threeLib.srcMathMatrix4Mod.Matrix4): Matrix3 = js.native
   def toArray(): js.Array[scala.Double] = js.native
   /**
-    * Transposes this matrix into the supplied array r, and returns itself.
-    */
+  	 * Transposes this matrix into the supplied array r, and returns itself.
+  	 */
   def transposeIntoArray(r: js.Array[scala.Double]): js.Array[scala.Double] = js.native
 }
 

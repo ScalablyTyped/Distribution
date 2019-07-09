@@ -76,18 +76,6 @@ object prismDashReactDashRendererLibStrings {
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
-  sealed trait docker
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
-  sealed trait elixir
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
-  sealed trait erlang
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
   sealed trait git
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
@@ -104,15 +92,7 @@ object prismDashReactDashRendererLibStrings {
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
-  sealed trait haskell
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
   sealed trait italic extends js.Object
-  
-  @js.native
-  sealed trait java
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
   sealed trait javascript
@@ -124,10 +104,6 @@ object prismDashReactDashRendererLibStrings {
   
   @js.native
   sealed trait jsx
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
-  sealed trait latex
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
@@ -164,27 +140,11 @@ object prismDashReactDashRendererLibStrings {
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
-  sealed trait php
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
-  sealed trait `php-extr`
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
   sealed trait python
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
   sealed trait reason
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
-  sealed trait ruby
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
-  sealed trait rust
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
@@ -204,10 +164,6 @@ object prismDashReactDashRendererLibStrings {
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
-  sealed trait swift
-    extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
-  
-  @js.native
   sealed trait typescript
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
@@ -218,7 +174,7 @@ object prismDashReactDashRendererLibStrings {
   sealed trait `underline line-through` extends js.Object
   
   @js.native
-  sealed trait vim
+  sealed trait wasm
     extends prismDashReactDashRendererLib.prismDashReactDashRendererMod.Language
   
   @js.native
@@ -266,12 +222,6 @@ object prismDashReactDashRendererLibStrings {
   @scala.inline
   def diff: diff = "diff".asInstanceOf[diff]
   @scala.inline
-  def docker: docker = "docker".asInstanceOf[docker]
-  @scala.inline
-  def elixir: elixir = "elixir".asInstanceOf[elixir]
-  @scala.inline
-  def erlang: erlang = "erlang".asInstanceOf[erlang]
-  @scala.inline
   def git: git = "git".asInstanceOf[git]
   @scala.inline
   def go: go = "go".asInstanceOf[go]
@@ -280,19 +230,13 @@ object prismDashReactDashRendererLibStrings {
   @scala.inline
   def handlebars: handlebars = "handlebars".asInstanceOf[handlebars]
   @scala.inline
-  def haskell: haskell = "haskell".asInstanceOf[haskell]
-  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
-  @scala.inline
-  def java: java = "java".asInstanceOf[java]
   @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def jsx: jsx = "jsx".asInstanceOf[jsx]
-  @scala.inline
-  def latex: latex = "latex".asInstanceOf[latex]
   @scala.inline
   def less: less = "less".asInstanceOf[less]
   @scala.inline
@@ -312,17 +256,9 @@ object prismDashReactDashRendererLibStrings {
   @scala.inline
   def ocaml: ocaml = "ocaml".asInstanceOf[ocaml]
   @scala.inline
-  def php: php = "php".asInstanceOf[php]
-  @scala.inline
-  def `php-extr`: `php-extr` = "php-extr".asInstanceOf[`php-extr`]
-  @scala.inline
   def python: python = "python".asInstanceOf[python]
   @scala.inline
   def reason: reason = "reason".asInstanceOf[reason]
-  @scala.inline
-  def ruby: ruby = "ruby".asInstanceOf[ruby]
-  @scala.inline
-  def rust: rust = "rust".asInstanceOf[rust]
   @scala.inline
   def sass: sass = "sass".asInstanceOf[sass]
   @scala.inline
@@ -332,15 +268,13 @@ object prismDashReactDashRendererLibStrings {
   @scala.inline
   def stylus: stylus = "stylus".asInstanceOf[stylus]
   @scala.inline
-  def swift: swift = "swift".asInstanceOf[swift]
-  @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
   def `underline line-through`: `underline line-through` = "underline line-through".asInstanceOf[`underline line-through`]
   @scala.inline
-  def vim: vim = "vim".asInstanceOf[vim]
+  def wasm: wasm = "wasm".asInstanceOf[wasm]
   @scala.inline
   def yaml: yaml = "yaml".asInstanceOf[yaml]
 }

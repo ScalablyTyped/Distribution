@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-sentry-middleware"
-version := "0.1-dt-20190402Z-55f48d"
+version := "0.1-dt-20190402Z-0becf6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.1-8f7517",
+  "org.scalablytyped" %%% "redux" % "4.0.2-22de3b",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

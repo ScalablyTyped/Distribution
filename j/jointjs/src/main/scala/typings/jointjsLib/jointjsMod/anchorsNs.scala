@@ -14,6 +14,10 @@ object anchorsNs extends js.Object {
     var bottomLeft: BBoxAnchorArguments
     var bottomRight: BBoxAnchorArguments
     var center: BBoxAnchorArguments
+    var connectionClosest: jointjsLib.jointjsMod.linkAnchorsNs.ConnectionClosestAnchorArguments
+    var connectionLength: jointjsLib.jointjsMod.linkAnchorsNs.ConnectionLengthAnchorArguments
+    var connectionPerpendicular: jointjsLib.jointjsMod.linkAnchorsNs.ConnectionPerpendicularAnchorArguments
+    var connectionRatio: jointjsLib.jointjsMod.linkAnchorsNs.ConnectionLengthAnchorArguments
     var left: BBoxAnchorArguments
     var midSide: MidSideAnchorArguments
     var modelCenter: ModelCenterAnchorArguments
@@ -37,6 +41,10 @@ object anchorsNs extends js.Object {
     - jointjsLib.jointjsLibStrings.perpendicular
     - jointjsLib.jointjsLibStrings.midSide
     - jointjsLib.jointjsLibStrings.modelCenter
+    - jointjsLib.jointjsLibStrings.connectionRatio
+    - jointjsLib.jointjsLibStrings.connectionLength
+    - jointjsLib.jointjsLibStrings.connectionPerpendicular
+    - jointjsLib.jointjsLibStrings.connectionClosest
   */
   trait AnchorType extends js.Object
   
@@ -56,7 +64,10 @@ object anchorsNs extends js.Object {
     extends RotateAnchorArguments
        with PaddingAnchorArguments
   
-  trait ModelCenterAnchorArguments extends js.Object
+  trait ModelCenterAnchorArguments extends js.Object {
+    var dx: js.UndefOr[scala.Double] = js.undefined
+    var dy: js.UndefOr[scala.Double] = js.undefined
+  }
   
   trait PaddingAnchorArguments extends js.Object {
     var padding: js.UndefOr[scala.Double] = js.undefined

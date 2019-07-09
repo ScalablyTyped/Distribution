@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sinon-test", JSImport.Namespace)
 @js.native
-object ^
-  extends org.scalablytyped.runtime.TopLevel[sinonTest]
+object ^ extends js.Object {
+  def apply(sinon: sinonLib.sinonMod.SinonStatic): js.Any = js.native
+  def apply(sinon: sinonLib.sinonMod.SinonStatic, config: Configuration): js.Any = js.native
+  def configureTest(sinon: sinonLib.sinonMod.SinonStatic): js.Any = js.native
+  def configureTest(sinon: sinonLib.sinonMod.SinonStatic, config: Configuration): js.Any = js.native
+}
 

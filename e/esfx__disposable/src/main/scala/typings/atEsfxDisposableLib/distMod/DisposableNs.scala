@@ -12,6 +12,7 @@ object DisposableNs extends js.Object {
     * A well-known symbol used to define an explicit resource disposal method on an object.
     */
   val dispose: js.Symbol = js.native
+  val name: atEsfxDisposableLib.atEsfxDisposableLibStrings.Disposable = js.native
   /**
     * Creates a `Disposable` wrapper around a callback used to dispose of a resource.
     */
@@ -22,7 +23,12 @@ object DisposableNs extends js.Object {
     */
   def from(disposables: stdLib.Iterable[js.UndefOr[atEsfxDisposableLib.distMod.Disposable | scala.Null]]): atEsfxDisposableLib.distMod.Disposable = js.native
   /**
-    * Determines whether a value is [[Disposable]].
+    * Determines whether a value is Disposable.
+    */
+  def hasInstance(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.Disposable */ scala.Boolean = js.native
+  /**
+    * Determines whether a value is Disposable.
+    * @deprecated Use `Disposable.hasInstance` instead.
     */
   def isDisposable(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.Disposable */ scala.Boolean = js.native
   def use[U](

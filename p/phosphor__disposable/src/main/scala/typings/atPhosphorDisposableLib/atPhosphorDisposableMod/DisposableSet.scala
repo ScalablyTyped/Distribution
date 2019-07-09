@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Construct a new disposable set.
   */
 class DisposableSet () extends IDisposable {
-  var _disposed: js.Any = js.native
+  var _isDisposed: js.Any = js.native
   var _items: js.Any = js.native
   /**
     * Test whether the object has been disposed.

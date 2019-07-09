@@ -19,10 +19,7 @@ trait ISchemaValidator extends js.Object {
     * @return A list of errors if either the schema or data fail to validate or
     * `null` if there are no errors.
     */
-  def validateData(plugin: atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.IPlugin): js.Array[atJupyterlabCoreutilsLib.libSettingregistryMod.ISchemaValidatorNs.IError] | scala.Null = js.native
-  def validateData(
-    plugin: atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.IPlugin,
-    populate: scala.Boolean
-  ): js.Array[atJupyterlabCoreutilsLib.libSettingregistryMod.ISchemaValidatorNs.IError] | scala.Null = js.native
+  def validateData(plugin: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin): js.Array[atJupyterlabCoreutilsLib.libSettingregistryMod.ISchemaValidatorNs.IError] | scala.Null = js.native
+  def validateData(plugin: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin, populate: scala.Boolean): js.Array[atJupyterlabCoreutilsLib.libSettingregistryMod.ISchemaValidatorNs.IError] | scala.Null = js.native
 }
 

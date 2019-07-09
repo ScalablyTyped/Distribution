@@ -184,6 +184,11 @@ object apiregistrationNs extends js.Object {
         * Namespace is the namespace of the service
         */
       var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * If specified, the port on the service that hosting webhook. Default to 443 for backward
+        * compatibility. `port` should be a valid port number (1-65535, inclusive).
+        */
+      var port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     def isAPIService(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiregistration.v1.APIService */ scala.Boolean = js.native
@@ -366,6 +371,11 @@ object apiregistrationNs extends js.Object {
         * Namespace is the namespace of the service
         */
       var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * If specified, the port on the service that hosting webhook. Default to 443 for backward
+        * compatibility. `port` should be a valid port number (1-65535, inclusive).
+        */
+      var port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     def isAPIService(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiregistration.v1beta1.APIService */ scala.Boolean = js.native

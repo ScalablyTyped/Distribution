@@ -202,7 +202,6 @@
 | [ansi-escapes](./a/ansi-escapes) | ANSI escape codes for manipulating the terminal | ansi, terminal, console, cli, string, tty, escape, escapes, formatting, shell, xterm, log, logging, command-line, text, vt100, sequence, control, code, codes, cursor, iterm, iterm2 |
 | [ansi-regex](./a/ansi-regex) | Regular expression for matching ANSI escape codes | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, command-line, text, regex, regexp, re, match, test, find, pattern |
 | [ansi-styles](./a/ansi-styles) | ANSI escape codes for styling strings in the termi | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| [ansi_up](./a/ansi_up) | Convert ansi sequences in strings to colorful HTML | ansi, html |
 | [ansicolors](./a/ansicolors) | Functions that surround a string with ansicolor co | ansi, colors, highlight, string |
 | [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design | - |
 | [ant-design__create-react-](./a/ant-design__create-react-context) | A fork of create-react-context in MIT license | react, context, contextTypes, polyfill, ponyfill |
@@ -211,6 +210,7 @@
 | [antd](./a/antd) | An enterprise-class UI design language and React-b | ant, design, react, react-component, component, components, ui, framework, frontend |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
+| [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -285,12 +285,12 @@
 | [arr-diff](./a/arr-diff) | Returns an array with only the unique values from  | arr, array, array differ, array-differ, diff, differ, difference |
 | [arr-union](./a/arr-union) | Combines a list of arrays, returning a single arra | add, append, array, arrays, combine, concat, extend, union, uniq, unique, util, utility, utils |
 | [array-binarysearch_dot_cl](./a/array-binarysearch_dot_closest) | Get index of closest value in sorted array. | array, binary, search, closest |
-| [array-differ](./a/array-differ) | Create an array with values that are present in th | array, difference, diff, differ, filter, exclude |
 | [array-find-index](./a/array-find-index) | ES2015 Array | es2015, ponyfill, polyfill, shim, find, index, findindex, array |
 | [array-foreach](./a/array-foreach) | Array | array, browser, each, es5, forEach, ie6, ie7, ie8, polyfill, ponyfill, shim |
 | [array-move](./a/array-move) | Move an array item to a different position | array, move, change, position, index |
 | [array-sort](./a/array-sort) | Fast and powerful array sorting. Sort an array of  | arr, array, asc, ascend, ascending, desc, descend, descending, dot, element, elements, get, multiple, nested, obj, object, order, ordered, path, prop, properties, property, sort, sorted, sorting |
 | [array-tree-filter](./a/array-tree-filter) | filter in array tree | array, tree, filter |
+| [array-union](./a/array-union) | Create an array of unique values, in order, from t | array, set, uniq, unique, duplicate, remove, union, combine, merge |
 | [array-uniq](./a/array-uniq) | Create an array without duplicates | array, set, uniq, unique, duplicate, remove |
 | [array-unique](./a/array-unique) | Remove duplicate values from an array. Fastest ES5 | array, unique |
 | [array_dot_prototype_dot_f](./a/array_dot_prototype_dot_flatmap) | An ESnext spec-compliant Array.prototype.flatMap s | Array.prototype.flatMap, flatMap, array, ESnext, shim, polyfill, flatten, Array.prototype.flatten, es-shim API |
@@ -1283,7 +1283,6 @@
 | [dom-inputevent](./d/dom-inputevent) | - | - |
 | [dom-loaded](./d/dom-loaded) | Check when the DOM is loaded like DOMContentLoaded | browser, dom, document, ready, doc, complete, check, wait, domcontentloaded, readystate |
 | [dom-mediacapture-record](./d/dom-mediacapture-record) | - | - |
-| [dom-testing-library](./d/dom-testing-library) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [dom-to-image](./d/dom-to-image) | Generates an image from a DOM node using HTML5 can | dom, image, raster, render, html, canvas, svg |
 | [dom4](./d/dom4) | a fully tested and covered polyfill for new DOM Le | DOM, Level 4, classList, CustomEvent, DOM4 |
 | [domelementtype](./d/domelementtype) | all the types of nodes in htmlparser2's dom | dom, htmlparser2 |
@@ -1504,6 +1503,7 @@
 | [escodegen](./e/escodegen) | ECMAScript code generator | - |
 | [esfx__cancelable](./e/esfx__cancelable) | A low-level Symbol-based API for defining a common | - |
 | [esfx__disposable](./e/esfx__disposable) | A low-level API for defining explicit resource man | - |
+| [esfx__internal-deprecate](./e/esfx__internal-deprecate) | - | - |
 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for & | - |
 | [eslint](./e/eslint) | An AST-based pattern checker for JavaScript. | ast, lint, javascript, ecmascript, espree |
 | [eslint-plugin-prettier](./e/eslint-plugin-prettier) | Runs prettier as an eslint rule | eslint, eslintplugin, eslint-plugin, prettier |
@@ -1849,7 +1849,6 @@
 | [fossil-delta](./f/fossil-delta) | Fossil SCM delta compression | delta, compression, encoding |
 | [foundation](./f/foundation) | You may also want to checkout: | zurb, foundation, stylus, express |
 | [foundation-sites](./f/foundation-sites) | The most advanced responsive front-end framework i | css, scss, sass, js, responsive, mobile-first, framework, eyeglass-module, handlebars-helper-rel, handlebars-helper-slugify |
-| [fp-ts](./f/fp-ts) | Functional programming in TypeScript | typescript, algebraic-data-types, functional-programming |
 | [fpsmeter](./f/fpsmeter) | Sexy, fast, and themable FPS meter. | - |
 | [frac](./f/frac) | Rational approximation with bounded denominator | math, fraction, rational, approximation |
 | [framebus](./f/framebus) | Framebus allows you to easily send messages across | - |
@@ -1857,6 +1856,7 @@
 | [franc](./f/franc) | Detect the language of text | natural, language, writing, system, detect, guess |
 | [frctl__fractal](./f/frctl__fractal) | A tool to help you build and document web componen | - |
 | [frecency](./f/frecency) | Frecency sorting for search results. | - |
+| [free-style](./f/free-style) | Make CSS easier and more maintainable by using Jav | inline, css, style, js, hash, server |
 | [freedom](./f/freedom) | Embracing a distributed web | - |
 | [freeport](./f/freeport) | Find a free port. | - |
 | [fresh](./f/fresh) | HTTP response freshness testing | fresh, http, conditional, cache |
@@ -2439,6 +2439,7 @@
 | [hexo-log](./h/hexo-log) | Logger for Hexo | website, blog, cms, framework, hexo |
 | [hexo-util](./h/hexo-util) | Utilities for Hexo. | hexo, util, utilities |
 | [hey-listen](./h/hey-listen) | Warning and invariant dev-ex messaging. | warning, invariant |
+| [hi-base32](./h/hi-base32) | A simple Base32 encode / decode function for JavaS | base32, encode, decode |
 | [hibp](./h/hibp) | A Promise-based API for querying the 'Have I been  | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
 | [highcharts](./h/highcharts) | JavaScript charting framework | charts, dataviz, graphs, visualization, data, browserify, webpack |
 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng | angular |
@@ -2499,6 +2500,7 @@
 | [http-status-codes](./h/http-status-codes) | Constants enumerating the HTTP status codes. Based | node, http, apache, HttpStatus, httpclient, status, codes |
 | [http-string-parser](./h/http-string-parser) | Parse HTTP Request and Response from String | http, message, request, response, parser, string, raw, bare |
 | [httperr](./h/httperr) | HTTP status codes as JavaScript errors. | http, errors, error, request, response, errorclass |
+| [https-proxy-agent](./h/https-proxy-agent) | An HTTP(s) proxy http.Agent implementation for HTT | https, proxy, endpoint, agent |
 | [hubot](./h/hubot) | A simple helpful robot for your Company | github, hubot, campfire, bot |
 | [hubspot-pace](./h/hubspot-pace) | - | - |
 | [human-interval](./h/human-interval) | Human readable time measurements | interval, time, date |
@@ -2615,6 +2617,7 @@
 | [interpret](./i/interpret) | A dictionary of file extensions and associated mod | cirru-script, cjsx, co, coco, coffee, coffee-script, coffee.md, coffeescript, csv, earlgrey, es, es6, iced, iced.md, iced-coffee-script, ini, js, json, json5, jsx, react, litcoffee, liticed, ls, livescript, toml, ts, typescript, wisp, xml, yaml, yml |
 | [intersects](./i/intersects) | a simple collection of 2d collision/intersects fun | - |
 | [intl](./i/intl) | Polyfill the ECMA-402 Intl API (except collation) | intl, i18n, internationalization, ecma402, polyfill |
+| [intl-format-cache](./i/intl-format-cache) | A memoizer factory for Intl format constructors. | intl, i18n |
 | [intl-locales-supported](./i/intl-locales-supported) | Utility to help you polyfill the Node.js runtime w | i18n, intl, internationalization, localization, globalization |
 | [intl-messageformat](./i/intl-messageformat) | Formats ICU Message strings with number, date, plu | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
 | [intl-messageformat-parser](./i/intl-messageformat-parser) | Parses ICU Message strings into an AST via JavaScr | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
@@ -2701,6 +2704,7 @@
 | [is-my-json-valid](./i/is-my-json-valid) | A JSONSchema validator that uses code generation t | json, schema, orderly, jsonschema |
 | [is-natural-number](./i/is-natural-number) | Check if a value is a natural number | number, natural, check, int, integer, math, mathematics, range, browser, client-side |
 | [is-negated-glob](./i/is-negated-glob) | Returns an object with a negated boolean and the  | extglob, glob, inverse, inverted, is, is-glob, match, micromatch, negate, negated, negation, negative, pattern, test |
+| [is-npm](./i/is-npm) | Check if your code is running as an npm script | npm, is, check, detect, env, environment, run, script |
 | [is-number](./i/is-number) | Returns true if a number or string value is a fini | cast, check, coerce, coercion, finite, integer, is, isnan, is-nan, is-num, is-number, isnumber, isfinite, istype, kind, math, nan, num, number, numeric, parseFloat, parseInt, test, type, typeof, value |
 | [is-number-like](./i/is-number-like) | Checks whether provided parameter looks like a num | is-number, typeof, number-like |
 | [is-obj](./i/is-obj) | Check if a value is an object | object, is, check, test, type |
@@ -3097,73 +3101,20 @@
 | [jui-grid](./j/jui-grid) | JUI grid can handle millions of data, and can disp | HTML5, CSS, JS, JavaScript, SVG, Grid, Framework, bootstrap, Web Development, free, MIT |
 | [jump_dot_js](./j/jump_dot_js) | A modern smooth scrolling library. | smooth, scroll |
 | [junk](./j/junk) | Filter out system junk files like .DS_Store and Th | junk, trash, garbage, files, os, ignore, exclude, filter, temp, tmp, system, clean, cleanup |
-| [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application | - |
-| [jupyterlab__application-e](./j/jupyterlab__application-extension) | JupyterLab - Application Extension | - |
-| [jupyterlab__apputils](./j/jupyterlab__apputils) | JupyterLab - Application Utilities | - |
-| [jupyterlab__apputils-exte](./j/jupyterlab__apputils-extension) | JupyterLab - Application Utilities Extension | - |
-| [jupyterlab__attachments](./j/jupyterlab__attachments) | JupyterLab - Notebook Cell Attachments | - |
-| [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells | - |
 | [jupyterlab__codeeditor](./j/jupyterlab__codeeditor) | JupyterLab - Abstract Code Editor | - |
-| [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider | - |
-| [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension | - |
-| [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer | - |
-| [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension | - |
-| [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console | - |
-| [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension | - |
 | [jupyterlab__coreutils](./j/jupyterlab__coreutils) | JupyterLab - Core Utilities | - |
-| [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget | - |
-| [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension | - |
-| [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
-| [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
-| [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
-| [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager | - |
-| [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension | - |
-| [jupyterlab__faq-extension](./j/jupyterlab__faq-extension) | JupyterLab - FAQ Extension | - |
-| [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget | - |
-| [jupyterlab__filebrowser-e](./j/jupyterlab__filebrowser-extension) | JupyterLab - Filebrowser Widget Extension | - |
-| [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget | - |
-| [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension | - |
-| [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension | - |
-| [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget | - |
-| [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension | - |
-| [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector | - |
-| [jupyterlab__inspector-ext](./j/jupyterlab__inspector-extension) | JupyterLab - Code Inspector Extension | - |
-| [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer | - |
-| [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer | - |
-| [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel | - |
-| [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension | - |
-| [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu | - |
-| [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension | - |
-| [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension | - |
 | [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab | - |
-| [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset | - |
 | [jupyterlab__metapackage](./j/jupyterlab__metapackage) | JupyterLab - Meta Package.  All of the packages us | - |
-| [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook | - |
-| [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension | - |
 | [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes. | - |
-| [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area | - |
 | [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer | - |
-| [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime | - |
-| [jupyterlab__rendermime-ex](./j/jupyterlab__rendermime-extension) | A rendermime extension for JupyterLab | - |
 | [jupyterlab__rendermime-in](./j/jupyterlab__rendermime-interfaces) | JupyterLab - Interfaces for Mime Renderers | - |
-| [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel | - |
-| [jupyterlab__running-exten](./j/jupyterlab__running-extension) | JupyterLab - Running Sessions Extension | - |
-| [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs | jupyter, notebook, services |
-| [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface | - |
-| [jupyterlab__settingeditor](./j/jupyterlab__settingeditor-extension) | JupyterLab - Setting Editor Extension | - |
-| [jupyterlab__shortcuts-ext](./j/jupyterlab__shortcuts-extension) | JupyterLab - Shortcuts Extension | - |
-| [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension | - |
-| [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget | - |
-| [jupyterlab__terminal-exte](./j/jupyterlab__terminal-extension) | JupyterLab - Terminal Emulator Extension | - |
-| [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme | - |
-| [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme | - |
-| [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget | - |
-| [jupyterlab__tooltip-exten](./j/jupyterlab__tooltip-extension) | JupyterLab - Tooltip Extension | - |
-| [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer | - |
+| [jupyterlab__ui-components](./j/jupyterlab__ui-components) | JupyterLab - UI components written in React | - |
 | [jupyterlab__vega4-extensi](./j/jupyterlab__vega4-extension) | JupyterLab - Vega 4 and Vega-Lite 2 Mime Renderer  | - |
+| [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer  | - |
 | [just-debounce-it](./j/just-debounce-it) | return a debounced function | function, debounce, no-dependencies, just |
 | [just-extend](./j/just-extend) | extend an object | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
 | [just-pick](./j/just-pick) | copy an object but with only the specified keys | object, pick, keys, no-dependencies, just |
+| [just-safe-get](./j/just-safe-get) | get value at property, don't throw if parent is un | object, safe, get, no-dependencies, just |
 | [just-snake-case](./j/just-snake-case) | convert a string to snake case | snake, snake_case, string, no-dependencies, just |
 | [jweixin](./j/jweixin) | wechat js-sdk | - |
 | [jwplayer](./j/jwplayer) | 'jwplayer node js module to make request to jwplay | jwplayer, platform, jwplayer, API |
@@ -3877,6 +3828,7 @@
 | [mcustomscrollbar](./m/mcustomscrollbar) | - | - |
 | [md5](./m/md5) | js function for hashing messages with MD5 | - |
 | [md5-file](./m/md5-file) | return an md5sum of a given file | md5, md5sum, checksum |
+| [md5-hex](./m/md5-hex) | Create a MD5 hash with hex encoding | hash, crypto, md5, hex, buffer, browser |
 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format | - |
 | [mdns](./m/mdns) | multicast DNS service discovery | zeroconf, bonjour, dns_sd, mDNSResponder |
 | [mdurl](./m/mdurl) | URL utilities for markdown-it | - |
@@ -4053,7 +4005,6 @@
 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
 | [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
-| [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
 | [moo](./m/moo) | Optimised tokenizer/lexer generator | - |
 | [moonjs](./m/moonjs) | A minimal, blazing fast user interface library. | moon, mvvm, user interface, UI |
@@ -4217,6 +4168,7 @@
 | [nivo__sankey](./n/nivo__sankey) | - | nivo, dataviz, react, d3, charts, sankey-diagram |
 | [nivo__scales](./n/nivo__scales) | - | - |
 | [nivo__scatterplot](./n/nivo__scatterplot) | - | nivo, dataviz, react, d3, charts, scatterplot |
+| [nivo__stream](./n/nivo__stream) | - | nivo, dataviz, react, d3, charts, stream-chart |
 | [nivo__tooltip](./n/nivo__tooltip) | - | - |
 | [nivo__voronoi](./n/nivo__voronoi) | - | nivo, dataviz, react, d3, charts, voronoi |
 | [nivo__waffle](./n/nivo__waffle) | - | nivo, dataviz, react, d3, charts, waffle-chart |
@@ -4303,7 +4255,9 @@
 | [nodecredstash](./n/nodecredstash) | Node.js credstash implementation | credstash, kms, aws, node.js |
 | [nodegit](./n/nodegit) | Node.js libgit2 asynchronous native bindings | libgit2, git2, git, native |
 | [nodejs-license-file](./n/nodejs-license-file) | A lightweight License file generator and parser fo | license, file, generation, parsing, validation |
+| [nodelib__fs_dot_scandir](./n/nodelib__fs_dot_scandir) | List files and directories inside the specified di | NodeLib, fs, FileSystem, file system, scandir, readdir, dirent |
 | [nodelib__fs_dot_stat](./n/nodelib__fs_dot_stat) | Get the status of a file with some features | NodeLib, fs, FileSystem, file system, stat |
+| [nodelib__fs_dot_walk](./n/nodelib__fs_dot_walk) | A library for efficiently walking a directory recu | NodeLib, fs, FileSystem, file system, walk, scanner, crawler |
 | [nodemailer](./n/nodemailer) | Easy as cake e-mail sending from your Node.js appl | Nodemailer |
 | [nodemailer-direct-transpo](./n/nodemailer-direct-transport) | Direct transport for Nodemailer | SMTP, Nodemailer |
 | [nodemailer-mailgun-transp](./n/nodemailer-mailgun-transport) | A transport module to use with nodemailer to lever | email, nodemailer, mailgun |
@@ -4351,6 +4305,7 @@
 | [nslog](./n/nslog) | Cross platform native logging | - |
 | [nsqjs](./n/nsqjs) | NodeJS client for NSQ | nsq, nsq client, nsq client official, nsqjs, distributed messaging, messaging, task, task management |
 | [nssm](./n/nssm) | Wrapper for nssm.exe to manage windows services | nssm.exe,nssm,windows,service,services,manager,install,remove,start,restart,stop,status,svc,winsvc |
+| [nteract__transform-vdom](./n/nteract__transform-vdom) | VDOM Transform for jupyter outputs | - |
 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel | react, carousel, nuka |
 | [nullthrows](./n/nullthrows) | flow typed nullthrows | assert, flow, invariant, nullthrows |
 | [number-is-nan](./n/number-is-nan) | ES2015 Number.isNaN() ponyfill | es2015, ecmascript, ponyfill, polyfill, shim, number, is, nan, not |
@@ -5495,7 +5450,6 @@
 | [react-tagsinput](./r/react-tagsinput) | Highly customizable React component for inputing t | react, tags, input, component, javascript, react-component |
 | [react-tap-event-plugin](./r/react-tap-event-plugin) | Facebook's TapEventPlugin, temporarily available o | TapEventPlugin, react, touch, delay, 300ms, react-tap-event-plugin |
 | [react-test-renderer](./r/react-test-renderer) | React package for snapshot testing. | react, react-native, react-testing |
-| [react-testing-library](./r/react-testing-library) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [react-tether](./r/react-tether) | Drop content anywhere on the page. | react, react-tether, tether, component, drop |
 | [react-text-mask](./r/react-text-mask) | React input component that accepts mask pattern | react, react-component, text mask, input mask, string mask, input formatting, text formatting, string formatting |
 | [react-text-truncate](./r/react-text-truncate) | Truncate text for React.js | react, react-component, text, truncate |
@@ -5550,6 +5504,7 @@
 | [readable-stream](./r/readable-stream) | Streams3, a user-land copy of the stream library f | readable, stream, pipe |
 | [readdir-enhanced](./r/readdir-enhanced) | fs.readdir with sync, async, and streaming APIs +  | fs, readdir, stream, event, recursive, deep, filter, absolute |
 | [readdir-stream](./r/readdir-stream) | Recursively read a directory and stream stats obje | - |
+| [readdirp](./r/readdirp) | Recursive version of fs.readdir with streaming api | recursive, fs, stream, streams, readdir, filesystem, find, filter |
 | [readline-sync](./r/readline-sync) | Synchronous Readline for interactively running to  | readline, synchronous, interactive, prompt, question, password, cli, tty, command, repl, keyboard, wait, block |
 | [readline-transform](./r/readline-transform) | Transform stream to read line-by-line and write a  | stream, transform, readline, byline |
 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and exp | css, jquery, readmore, expand, collapse |
@@ -6312,6 +6267,7 @@
 | [stringify-object](./s/stringify-object) | Stringify an object/array like JSON.stringify just | object, stringify, pretty, print, dump, format, type, json |
 | [strip-ansi](./s/strip-ansi) | Strip ANSI escape codes from a string | strip, trim, remove, ansi, styles, color, colour, colors, terminal, console, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
 | [strip-bom](./s/strip-bom) | Strip UTF-8 byte order mark (BOM) from a string | strip, bom, byte, order, mark, unicode, utf8, utf-8, remove, delete, trim, text, string |
+| [strip-bom-buf](./s/strip-bom-buf) | Strip UTF-8 byte order mark (BOM) from a buffer | strip, bom, byte, order, mark, unicode, utf8, utf-8, remove, delete, trim, text, buffer |
 | [strip-color](./s/strip-color) | Strip ANSI color codes from a string. No dependenc | ansi, chalk, cli, codes, color, colors, colour, colours, command, command-line, console, escape, format, formatting, log, logging, match, pattern, re, regex, regexp, regular-expression, remove, rgb, shell, string, strip, style, styles, styling, terminal, text, trim, tty, xterm |
 | [strip-indent](./s/strip-indent) | Strip leading whitespace from each line in a strin | strip, indent, indentation, normalize, remove, delete, whitespace, space, tab, string |
 | [strip-json-comments](./s/strip-json-comments) | Strip comments from JSON. Lets you use comments in | json, strip, remove, delete, trim, comments, multiline, parse, config, configuration, conf, settings, util, env, environment |
@@ -6513,7 +6469,6 @@
 | [tile-reduce](./t/tile-reduce) | vector tile mapreduce | - |
 | [tilebelt](./t/tilebelt) | simple tile utilities | tile, map, geojson |
 | [time-span](./t/time-span) | Simplified high resolution timing | time, span, elapsed, process, hrtime, highres, timing, perf, performance, bench, benchmark, profiling, measure, seconds, milliseconds, nanoseconds |
-| [time-stamp](./t/time-stamp) | Get a formatted timestamp. | console, date, format, formatting, log, pretty, stamp, terminal, time, time-stamp |
 | [timelinejs](./t/timelinejs) | A Storytelling Timeline built in JavaScript. | timeline, storytelling, timelinejs, timeline.js, history, googledocs, storify |
 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja | timeline, storytelling, timelinejs, timeline.js, history, googledocs, storify |
 | [timer-machine](./t/timer-machine) | A lightweight, pause-able timer class | timer, time, pause, stopwatch |
@@ -6531,6 +6486,7 @@
 | [tiny-invariant](./t/tiny-invariant) | A tiny invariant function | invariant, error |
 | [tiny-secp256k1](./t/tiny-secp256k1) | A tiny secp256k1 native/JS wrapper | - |
 | [tiny-slider-react](./t/tiny-slider-react) | wrapper tiny-slider plugin for react | tiny-slider, carousel, react |
+| [tiny-warning](./t/tiny-warning) | A tiny warning function | warning, warn |
 | [tinycolor2](./t/tinycolor2) | Fast Color Parsing and Manipulation | color, parser, tinycolor |
 | [tinycon](./t/tinycon) | Add notification bubbles in the favicon | - |
 | [tinycopy](./t/tinycopy) | Tiny library for clipboard copy. | copy, tiny, clipboard |
@@ -6662,6 +6618,7 @@
 | [typescript-tuple](./t/typescript-tuple) | Generics to work with tuples in TypeScript | generic, tuple, typescript |
 | [typesettable](./t/typesettable) | A typesetting library for SVG and Canvas | canvas, svg, text, wrap |
 | [typestub-ipfs](./t/typestub-ipfs) | The type definition for IPFS package | ipfs, types, typestub |
+| [typestyle](./t/typestyle) | TypeSafe CSS | - |
 | [typography](./t/typography) | Opinionated toolkit for building websites with bea | css, inline styles, react, typography, vertical-rhythm |
 | [typpy](./t/typpy) | A better typeof for JavaScript. | typeof, javascript, typpy |
 | [tz-format](./t/tz-format) | Format a date with timezone | datetime, date-time, format, timezone, tz, iso |
@@ -6889,7 +6846,6 @@
 | [w3c-image-capture](./w/w3c-image-capture) | - | - |
 | [w3c-screen-orientation](./w/w3c-screen-orientation) | - | - |
 | [w3c-web-usb](./w/w3c-web-usb) | - | - |
-| [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr | jest, expect, wait, async, await, promise, integration, testing, unit |
 | [wait-for-localhost](./w/wait-for-localhost) | Wait for localhost to be ready | wait, localhost, server, port, delay, sleep, ready |
 | [wait-on](./w/wait-on) | wait-on is a cross platform command line utility a | wait, delay, cli, files, tcp, ports, sockets, http, exist, ready, available, portable, cross-platform, unix, linux, windows, win32, osx |
 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of  | promise, node, wait, before, after, every, and, until, till, async |

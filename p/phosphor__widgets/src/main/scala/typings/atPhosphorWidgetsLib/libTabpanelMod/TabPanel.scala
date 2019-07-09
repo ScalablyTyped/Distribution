@@ -16,6 +16,26 @@ class TabPanel ()
   extends atPhosphorWidgetsLib.libWidgetMod.Widget {
   def this(options: atPhosphorWidgetsLib.libTabpanelMod.TabPanelNs.IOptions) = this()
   var _currentChanged: js.Any = js.native
+  /**
+    * Handle the `currentChanged` signal from the tab bar.
+    */
+  var _onCurrentChanged: js.Any = js.native
+  /**
+    * Handle the `tabActivateRequested` signal from the tab bar.
+    */
+  var _onTabActivateRequested: js.Any = js.native
+  /**
+    * Handle the `tabCloseRequested` signal from the tab bar.
+    */
+  var _onTabCloseRequested: js.Any = js.native
+  /**
+    * Handle the `tabMoved` signal from the tab bar.
+    */
+  var _onTabMoved: js.Any = js.native
+  /**
+    * Handle the `widgetRemoved` signal from the stacked panel.
+    */
+  var _onWidgetRemoved: js.Any = js.native
   var _tabPlacement: js.Any = js.native
   /**
     * A signal emitted when the current tab is changed.
@@ -99,26 +119,6 @@ class TabPanel ()
     * A read-only array of the widgets in the panel.
     */
   val widgets: js.Array[atPhosphorWidgetsLib.libWidgetMod.Widget] = js.native
-  /**
-    * Handle the `currentChanged` signal from the tab bar.
-    */
-  /* private */ def _onCurrentChanged(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabActivateRequested` signal from the tab bar.
-    */
-  /* private */ def _onTabActivateRequested(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabCloseRequested` signal from the tab bar.
-    */
-  /* private */ def _onTabCloseRequested(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `tabMoved` signal from the tab bar.
-    */
-  /* private */ def _onTabMoved(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `widgetRemoved` signal from the stacked panel.
-    */
-  /* private */ def _onWidgetRemoved(sender: js.Any, widget: js.Any): js.Any = js.native
   /**
     * Add a widget to the end of the tab panel.
     *

@@ -15,7 +15,27 @@ import scala.scalajs.js.annotation._
 class ScrollBar ()
   extends atPhosphorWidgetsLib.libWidgetMod.Widget {
   def this(options: atPhosphorWidgetsLib.libScrollbarMod.ScrollBarNs.IOptions) = this()
+  /**
+    * Handle the `'keydown'` event for the scroll bar.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the scroll bar.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the scroll bar.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the scroll bar.
+    */
+  var _evtMouseUp: js.Any = js.native
   var _maximum: js.Any = js.native
+  /**
+    * Move the thumb to the specified position.
+    */
+  var _moveThumb: js.Any = js.native
   /**
     * A timeout callback for repeating the mouse press.
     */
@@ -24,6 +44,10 @@ class ScrollBar ()
   var _page: js.Any = js.native
   var _pageRequested: js.Any = js.native
   var _pressData: js.Any = js.native
+  /**
+    * Release the mouse and restore the node states.
+    */
+  var _releaseMouse: js.Any = js.native
   var _repeatTimer: js.Any = js.native
   var _stepRequested: js.Any = js.native
   var _thumbMoved: js.Any = js.native
@@ -125,30 +149,6 @@ class ScrollBar ()
     * The value will be clamped to the range `[0, maximum]`.
     */
   var value: scala.Double = js.native
-  /**
-    * Handle the `'keydown'` event for the scroll bar.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the scroll bar.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the scroll bar.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseup'` event for the scroll bar.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Move the thumb to the specified position.
-    */
-  /* private */ def _moveThumb(value: js.Any): js.Any = js.native
-  /**
-    * Release the mouse and restore the node states.
-    */
-  /* private */ def _releaseMouse(): js.Any = js.native
   /**
     * Handle the DOM events for the scroll bar.
     *

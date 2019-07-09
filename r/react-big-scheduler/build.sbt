@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-big-scheduler"
-version := "0.2-dt-20190507Z-d1e533"
+version := "0.2-dt-20190507Z-7abd07"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "moment" % "2.24.0-fbb2c3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

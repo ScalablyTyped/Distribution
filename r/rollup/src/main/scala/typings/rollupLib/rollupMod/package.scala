@@ -87,6 +87,14 @@ package object rollupMod {
   type ResolvedIdMap = org.scalablytyped.runtime.StringDictionary[ResolvedId]
   type SerializablePluginCache = org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, js.Any]]
   type SerializedTimings = org.scalablytyped.runtime.StringDictionary[js.Tuple3[scala.Double, scala.Double, scala.Double]]
+  /* Rewritten from type alias, can be one of: 
+    - ExistingRawSourceMap
+    - java.lang.String
+    - scala.Null
+    - rollupLib.Anon_
+  */
+  type SourceMapInput = _SourceMapInput | java.lang.String | scala.Null
+  type SourceMapSegment = js.Array[scala.Double] | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double])
   type TransformChunkHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* code */ java.lang.String, 

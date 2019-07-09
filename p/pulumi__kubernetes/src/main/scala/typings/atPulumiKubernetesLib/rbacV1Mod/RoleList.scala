@@ -43,5 +43,10 @@ object RoleList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.rbacV1RoleListMod.RoleList = js.native
+  /**
+    * Returns true if the given object is an instance of RoleList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/RoleList.RoleList */ scala.Boolean = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipify
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get your public IP address

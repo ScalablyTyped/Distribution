@@ -17,8 +17,24 @@ class FocusTracker[T /* <: atPhosphorWidgetsLib.libWidgetMod.Widget */] ()
   var _counter: js.Any = js.native
   var _currentChanged: js.Any = js.native
   var _currentWidget: js.Any = js.native
+  /**
+    * Handle the `'blur'` event for a tracked widget.
+    */
+  var _evtBlur: js.Any = js.native
+  /**
+    * Handle the `'focus'` event for a tracked widget.
+    */
+  var _evtFocus: js.Any = js.native
   var _nodes: js.Any = js.native
   var _numbers: js.Any = js.native
+  /**
+    * Handle the `disposed` signal for a tracked widget.
+    */
+  var _onWidgetDisposed: js.Any = js.native
+  /**
+    * Set the current and active widgets for the tracker.
+    */
+  var _setWidgets: js.Any = js.native
   var _widgets: js.Any = js.native
   /**
     * A signal emitted when the active widget has changed.
@@ -67,22 +83,6 @@ class FocusTracker[T /* <: atPhosphorWidgetsLib.libWidgetMod.Widget */] ()
     * A read only array of the widgets being tracked.
     */
   val widgets: js.Array[T] = js.native
-  /**
-    * Handle the `'blur'` event for a tracked widget.
-    */
-  /* private */ def _evtBlur(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'focus'` event for a tracked widget.
-    */
-  /* private */ def _evtFocus(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `disposed` signal for a tracked widget.
-    */
-  /* private */ def _onWidgetDisposed(sender: js.Any): js.Any = js.native
-  /**
-    * Set the current and active widgets for the tracker.
-    */
-  /* private */ def _setWidgets(current: js.Any, active: js.Any): js.Any = js.native
   /**
     * Add a widget to the focus tracker.
     *

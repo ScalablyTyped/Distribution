@@ -197,6 +197,14 @@ object coreNs extends js.Object {
       */
     trait CSIPersistentVolumeSource extends js.Object {
       /**
+        * ControllerExpandSecretRef is a reference to the secret object containing sensitive
+        * information to pass to the CSI driver to complete the CSI ControllerExpandVolume call. This
+        * is an alpha field and requires enabling ExpandCSIVolumes feature gate. This field is
+        * optional, and may be empty if no secret is required. If the secret object contains more
+        * than one secret, all secrets are passed.
+        */
+      var controllerExpandSecretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
+      /**
         * ControllerPublishSecretRef is a reference to the secret object containing sensitive
         * information to pass to the CSI driver to complete the CSI ControllerPublishVolume and
         * ControllerUnpublishVolume calls. This field is optional, and may be empty if no secret is
@@ -618,7 +626,7 @@ object coreNs extends js.Object {
         */
       var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
-        * Specify whether the ConfigMap or it's key must be defined
+        * Specify whether the ConfigMap or its key must be defined
         */
       var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
@@ -714,7 +722,7 @@ object coreNs extends js.Object {
         */
       var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
-        * Specify whether the ConfigMap or it's keys must be defined
+        * Specify whether the ConfigMap or its keys must be defined
         */
       var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
@@ -752,7 +760,7 @@ object coreNs extends js.Object {
         */
       var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
-        * Specify whether the ConfigMap or it's keys must be defined
+        * Specify whether the ConfigMap or its keys must be defined
         */
       var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
@@ -1537,7 +1545,7 @@ object coreNs extends js.Object {
         */
       var lastObservedTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
-        * State of this Series: Ongoing or Finished
+        * State of this Series: Ongoing or Finished Deprecated. Planned removal for 1.18
         */
       var state: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
@@ -3637,6 +3645,10 @@ object coreNs extends js.Object {
       var sysctls: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Sysctl]]]
           ] = js.undefined
+      /**
+        * Windows security options.
+        */
+      var windowsOptions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[WindowsSecurityContextOptions]] = js.undefined
     }
     
     /**
@@ -3749,6 +3761,12 @@ object coreNs extends js.Object {
             ]
           ] = js.undefined
       /**
+        * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never,
+        * PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level
+        * and is only honored by servers that enable the NonPreemptingPriority feature.
+        */
+      var preemptionPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
         * The priority value. Various system components use this field to find the priority of the
         * pod. When Priority Admission Controller is enabled, it prevents users from setting this
         * field. The admission controller populates this field from PriorityClassName. The higher the
@@ -3783,8 +3801,8 @@ object coreNs extends js.Object {
         * used to run this pod.  If no RuntimeClass resource matches the named class, the pod will
         * not be run. If unset or empty, the "legacy" RuntimeClass will be used, which is an implicit
         * class with an empty definition that uses the default runtime handler. More info:
-        * https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is an alpha feature and
-        * may change in the future.
+        * https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is a beta feature as of
+        * Kubernetes v1.14.
         */
       var runtimeClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4833,7 +4851,7 @@ object coreNs extends js.Object {
         */
       var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
-        * Specify whether the Secret or it's key must be defined
+        * Specify whether the Secret or its key must be defined
         */
       var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
@@ -4946,7 +4964,7 @@ object coreNs extends js.Object {
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[KeyToPath]]]
           ] = js.undefined
       /**
-        * Specify whether the Secret or it's keys must be defined
+        * Specify whether the Secret or its keys must be defined
         */
       var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
@@ -5017,6 +5035,10 @@ object coreNs extends js.Object {
         * specified in SecurityContext takes precedence.
         */
       var seLinuxOptions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SELinuxOptions]] = js.undefined
+      /**
+        * Windows security options.
+        */
+      var windowsOptions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[WindowsSecurityContextOptions]] = js.undefined
     }
     
     /**
@@ -5784,7 +5806,7 @@ object coreNs extends js.Object {
         * Expanded path within the volume from which the container's volume should be mounted.
         * Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded
         * using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath
-        * are mutually exclusive. This field is alpha in 1.14.
+        * are mutually exclusive. This field is beta in 1.15.
         */
       var subPathExpr: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
@@ -5858,6 +5880,24 @@ object coreNs extends js.Object {
         * weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
         */
       var weight: atPulumiPulumiLib.outputMod.Input[scala.Double]
+    }
+    
+    /**
+      * WindowsSecurityContextOptions contain Windows-specific options and credentials.
+      */
+    trait WindowsSecurityContextOptions extends js.Object {
+      /**
+        * GMSACredentialSpec is where the GMSA admission webhook
+        * (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA
+        * credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is
+        * only honored by servers that enable the WindowsGMSA feature flag.
+        */
+      var gmsaCredentialSpec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is
+        * alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+        */
+      var gmsaCredentialSpecName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isBinding(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.core.v1.Binding */ scala.Boolean = js.native

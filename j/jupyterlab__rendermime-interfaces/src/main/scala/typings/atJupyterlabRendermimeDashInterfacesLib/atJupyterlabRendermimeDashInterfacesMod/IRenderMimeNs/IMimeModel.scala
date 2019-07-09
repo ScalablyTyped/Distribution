@@ -15,6 +15,9 @@ trait IMimeModel extends js.Object {
   val data: atPhosphorCoreutilsLib.libJsonMod.ReadonlyJSONObject
   /**
     * The metadata associated with the model.
+    *
+    * Among others, it can include an attribute named `fragment`
+    * that stores a URI fragment identifier for the MIME resource.
     */
   val metadata: atPhosphorCoreutilsLib.libJsonMod.ReadonlyJSONObject
   /**

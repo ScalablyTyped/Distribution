@@ -7,14 +7,40 @@ import scala.scalajs.js.annotation._
 
 object atNivoScatterplotLibStrings {
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait axes
+    extends atNivoScatterplotLib.atNivoScatterplotMod.CustomLayerId
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait grid
+    extends atNivoScatterplotLib.atNivoScatterplotMod.CustomLayerId
+  
+  @js.native
+  sealed trait legends
+    extends atNivoScatterplotLib.atNivoScatterplotMod.CustomLayerId
+  
+  @js.native
+  sealed trait markers
+    extends atNivoScatterplotLib.atNivoScatterplotMod.CustomLayerId
+  
+  @js.native
+  sealed trait mesh
+    extends atNivoScatterplotLib.atNivoScatterplotMod.CustomLayerId
+  
+  @js.native
+  sealed trait nodes
+    extends atNivoScatterplotLib.atNivoScatterplotMod.CustomLayerId
   
   @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
+  def axes: axes = "axes".asInstanceOf[axes]
   @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
+  def legends: legends = "legends".asInstanceOf[legends]
+  @scala.inline
+  def markers: markers = "markers".asInstanceOf[markers]
+  @scala.inline
+  def mesh: mesh = "mesh".asInstanceOf[mesh]
+  @scala.inline
+  def nodes: nodes = "nodes".asInstanceOf[nodes]
 }
 

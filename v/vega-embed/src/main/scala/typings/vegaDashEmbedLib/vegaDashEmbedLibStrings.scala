@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object vegaDashEmbedLibStrings {
   @js.native
+  sealed trait DeepPartial extends js.Object
+  
+  @js.native
   sealed trait Typeofaxis extends js.Object
   
   @js.native
@@ -548,6 +551,8 @@ object vegaDashEmbedLibStrings {
   @js.native
   sealed trait zindex extends js.Object
   
+  @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def Typeofaxis: Typeofaxis = "Typeofaxis".asInstanceOf[Typeofaxis]
   @scala.inline

@@ -769,6 +769,9 @@ object atPulumiKubernetesLibStrings {
   sealed trait `policy/v1beta1/PodSecurityPolicyList` extends js.Object
   
   @js.native
+  sealed trait preemption_policy extends js.Object
+  
+  @js.native
   sealed trait provisioner extends js.Object
   
   @js.native
@@ -1624,6 +1627,8 @@ object atPulumiKubernetesLibStrings {
   def `policy/v1beta1/PodSecurityPolicy`: `policy/v1beta1/PodSecurityPolicy` = "policy/v1beta1/PodSecurityPolicy".asInstanceOf[`policy/v1beta1/PodSecurityPolicy`]
   @scala.inline
   def `policy/v1beta1/PodSecurityPolicyList`: `policy/v1beta1/PodSecurityPolicyList` = "policy/v1beta1/PodSecurityPolicyList".asInstanceOf[`policy/v1beta1/PodSecurityPolicyList`]
+  @scala.inline
+  def preemption_policy: preemption_policy = "preemption_policy".asInstanceOf[preemption_policy]
   @scala.inline
   def provisioner: provisioner = "provisioner".asInstanceOf[provisioner]
   @scala.inline

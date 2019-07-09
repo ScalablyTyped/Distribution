@@ -1,7 +1,7 @@
 
 # Scala.js typings for camelcase-keys
 
-Typings are for version 5.2.0
+Typings are for version 6.0.0
 
 ## Library description:
 Convert object keys to camel case

@@ -13,6 +13,7 @@ object AsyncProps {
   @scala.inline
   def apply[T](
     children: AsyncChildren[T] = null,
+    debugLabel: java.lang.String = null,
     deferFn: DeferFn[T] = null,
     dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], scala.Unit], /* props */ js.Object) => scala.Unit = null,
     initialValue: T = null,
@@ -26,6 +27,7 @@ object AsyncProps {
   ): AsyncProps[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel)
     if (deferFn != null) __obj.updateDynamic("deferFn")(deferFn)
     if (dispatcher != null) __obj.updateDynamic("dispatcher")(js.Any.fromFunction3(dispatcher))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])

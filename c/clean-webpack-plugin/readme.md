@@ -1,7 +1,7 @@
 
 # Scala.js typings for clean-webpack-plugin
 
-Typings are for version 2.0.2
+Typings are for version 3.0.0
 
 ## Library description:
 A webpack plugin to remove/clean your build folder(s).

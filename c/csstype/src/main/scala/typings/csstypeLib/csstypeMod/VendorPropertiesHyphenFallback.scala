@@ -129,11 +129,15 @@ object VendorPropertiesHyphenFallback {
     `-ms-text-autospace`: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty] = null,
     `-ms-text-combine-horizontal`: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null,
     `-ms-text-overflow`: TextOverflowProperty | js.Array[TextOverflowProperty] = null,
-    `-ms-text-size-adjust`: TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty] = null,
     `-ms-touch-action`: TouchActionProperty | js.Array[TouchActionProperty] = null,
     `-ms-touch-select`: MsTouchSelectProperty | js.Array[MsTouchSelectProperty] = null,
     `-ms-transform`: TransformProperty | js.Array[TransformProperty] = null,
     `-ms-transform-origin`: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]] = null,
+    `-ms-transition`: TransitionProperty | js.Array[TransitionProperty] = null,
+    `-ms-transition-delay`: GlobalsString | js.Array[GlobalsString] = null,
+    `-ms-transition-duration`: GlobalsString | js.Array[GlobalsString] = null,
+    `-ms-transition-property`: TransitionPropertyProperty | js.Array[TransitionPropertyProperty] = null,
+    `-ms-transition-timing-function`: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     `-ms-user-select`: MsUserSelectProperty | js.Array[MsUserSelectProperty] = null,
     `-ms-word-break`: WordBreakProperty | js.Array[WordBreakProperty] = null,
     `-ms-wrap-flow`: MsWrapFlowProperty | js.Array[MsWrapFlowProperty] = null,
@@ -181,6 +185,7 @@ object VendorPropertiesHyphenFallback {
     `-webkit-clip-path`: ClipPathProperty | js.Array[ClipPathProperty] = null,
     `-webkit-color-adjust`: ColorAdjustProperty | js.Array[ColorAdjustProperty] = null,
     `-webkit-column-count`: ColumnCountProperty | js.Array[ColumnCountProperty] = null,
+    `-webkit-column-fill`: ColumnFillProperty | js.Array[ColumnFillProperty] = null,
     `-webkit-column-gap`: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]] = null,
     `-webkit-column-rule`: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
     `-webkit-column-rule-color`: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty] = null,
@@ -255,8 +260,7 @@ object VendorPropertiesHyphenFallback {
     `-webkit-transition-timing-function`: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     `-webkit-user-modify`: WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty] = null,
     `-webkit-user-select`: UserSelectProperty | js.Array[UserSelectProperty] = null,
-    `-webkit-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null,
-    `-webkitmask-size`: MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]] = null
+    `-webkit-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null
   ): VendorPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`-moz-animation` != null) __obj.updateDynamic("-moz-animation")(`-moz-animation`.asInstanceOf[js.Any])
@@ -376,11 +380,15 @@ object VendorPropertiesHyphenFallback {
     if (`-ms-text-autospace` != null) __obj.updateDynamic("-ms-text-autospace")(`-ms-text-autospace`.asInstanceOf[js.Any])
     if (`-ms-text-combine-horizontal` != null) __obj.updateDynamic("-ms-text-combine-horizontal")(`-ms-text-combine-horizontal`.asInstanceOf[js.Any])
     if (`-ms-text-overflow` != null) __obj.updateDynamic("-ms-text-overflow")(`-ms-text-overflow`.asInstanceOf[js.Any])
-    if (`-ms-text-size-adjust` != null) __obj.updateDynamic("-ms-text-size-adjust")(`-ms-text-size-adjust`.asInstanceOf[js.Any])
     if (`-ms-touch-action` != null) __obj.updateDynamic("-ms-touch-action")(`-ms-touch-action`.asInstanceOf[js.Any])
     if (`-ms-touch-select` != null) __obj.updateDynamic("-ms-touch-select")(`-ms-touch-select`.asInstanceOf[js.Any])
     if (`-ms-transform` != null) __obj.updateDynamic("-ms-transform")(`-ms-transform`.asInstanceOf[js.Any])
     if (`-ms-transform-origin` != null) __obj.updateDynamic("-ms-transform-origin")(`-ms-transform-origin`.asInstanceOf[js.Any])
+    if (`-ms-transition` != null) __obj.updateDynamic("-ms-transition")(`-ms-transition`.asInstanceOf[js.Any])
+    if (`-ms-transition-delay` != null) __obj.updateDynamic("-ms-transition-delay")(`-ms-transition-delay`.asInstanceOf[js.Any])
+    if (`-ms-transition-duration` != null) __obj.updateDynamic("-ms-transition-duration")(`-ms-transition-duration`.asInstanceOf[js.Any])
+    if (`-ms-transition-property` != null) __obj.updateDynamic("-ms-transition-property")(`-ms-transition-property`.asInstanceOf[js.Any])
+    if (`-ms-transition-timing-function` != null) __obj.updateDynamic("-ms-transition-timing-function")(`-ms-transition-timing-function`.asInstanceOf[js.Any])
     if (`-ms-user-select` != null) __obj.updateDynamic("-ms-user-select")(`-ms-user-select`.asInstanceOf[js.Any])
     if (`-ms-word-break` != null) __obj.updateDynamic("-ms-word-break")(`-ms-word-break`.asInstanceOf[js.Any])
     if (`-ms-wrap-flow` != null) __obj.updateDynamic("-ms-wrap-flow")(`-ms-wrap-flow`.asInstanceOf[js.Any])
@@ -428,6 +436,7 @@ object VendorPropertiesHyphenFallback {
     if (`-webkit-clip-path` != null) __obj.updateDynamic("-webkit-clip-path")(`-webkit-clip-path`.asInstanceOf[js.Any])
     if (`-webkit-color-adjust` != null) __obj.updateDynamic("-webkit-color-adjust")(`-webkit-color-adjust`.asInstanceOf[js.Any])
     if (`-webkit-column-count` != null) __obj.updateDynamic("-webkit-column-count")(`-webkit-column-count`.asInstanceOf[js.Any])
+    if (`-webkit-column-fill` != null) __obj.updateDynamic("-webkit-column-fill")(`-webkit-column-fill`.asInstanceOf[js.Any])
     if (`-webkit-column-gap` != null) __obj.updateDynamic("-webkit-column-gap")(`-webkit-column-gap`.asInstanceOf[js.Any])
     if (`-webkit-column-rule` != null) __obj.updateDynamic("-webkit-column-rule")(`-webkit-column-rule`.asInstanceOf[js.Any])
     if (`-webkit-column-rule-color` != null) __obj.updateDynamic("-webkit-column-rule-color")(`-webkit-column-rule-color`.asInstanceOf[js.Any])
@@ -503,7 +512,6 @@ object VendorPropertiesHyphenFallback {
     if (`-webkit-user-modify` != null) __obj.updateDynamic("-webkit-user-modify")(`-webkit-user-modify`.asInstanceOf[js.Any])
     if (`-webkit-user-select` != null) __obj.updateDynamic("-webkit-user-select")(`-webkit-user-select`.asInstanceOf[js.Any])
     if (`-webkit-writing-mode` != null) __obj.updateDynamic("-webkit-writing-mode")(`-webkit-writing-mode`.asInstanceOf[js.Any])
-    if (`-webkitmask-size` != null) __obj.updateDynamic("-webkitmask-size")(`-webkitmask-size`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VendorPropertiesHyphenFallback[TLength]]
   }
 }

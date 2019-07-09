@@ -15,16 +15,16 @@ class CurvePath[T /* <: threeLib.srcMathVector2Mod.Vector */] ()
   def checkConnection(): scala.Boolean = js.native
   def closePath(): scala.Unit = js.native
   /**
-    * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
-    */
+  	 * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
+  	 */
   def createGeometry(points: js.Array[T]): threeLib.srcCoreGeometryMod.Geometry = js.native
   /**
-    * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
-    */
+  	 * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
+  	 */
   def createPointsGeometry(divisions: scala.Double): threeLib.srcCoreGeometryMod.Geometry = js.native
   /**
-    * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
-    */
+  	 * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
+  	 */
   def createSpacedPointsGeometry(divisions: scala.Double): threeLib.srcCoreGeometryMod.Geometry = js.native
   def getCurveLengths(): js.Array[scala.Double] = js.native
 }

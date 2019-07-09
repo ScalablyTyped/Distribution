@@ -56,8 +56,8 @@ class Path ()
     aRotation: scala.Double
   ): scala.Unit = js.native
   /**
-    * @deprecated Use {@link Path#setFromPoints .setFromPoints()} instead.
-    */
+  	 * @deprecated Use {@link Path#setFromPoints .setFromPoints()} instead.
+  	 */
   def fromPoints(vectors: js.Array[threeLib.srcMathVector2Mod.Vector2]): scala.Unit = js.native
   def lineTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native

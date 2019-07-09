@@ -21,34 +21,34 @@ trait NodeBase extends js.Object {
     * (in which case the new node's source will reference the original,
     * cloned node) or setting the source property manually.
     */
-  var source: NodeSource = js.native
+  var source: js.UndefOr[NodeSource] = js.native
   def after(newNode: java.lang.String): this.type = js.native
   def after(newNode: js.Array[Node]): this.type = js.native
   def after(newNode: js.Object): this.type = js.native
   /**
-  		 * Insert new node after current node to current node’s parent.
-  		 *
-  		 * Just an alias for `node.parent.insertAfter(node, newNode)`.
-  		 *
-  		 * @returns this node for method chaining.
-  		 *
-  		 * @example
-  		 * decl.after('color: black');
-  		 */
+    * Insert new node after current node to current node’s parent.
+    *
+    * Just an alias for `node.parent.insertAfter(node, newNode)`.
+    *
+    * @returns this node for method chaining.
+    *
+    * @example
+    * decl.after('color: black');
+    */
   def after(newNode: Node): this.type = js.native
   def before(newNode: java.lang.String): this.type = js.native
   def before(newNode: js.Array[Node]): this.type = js.native
   def before(newNode: js.Object): this.type = js.native
   /**
-  		 * Insert new node before current node to current node’s parent.
-  		 *
-  		 * Just an alias for `node.parent.insertBefore(node, newNode)`.
-  		 *
-  		 * @returns this node for method chaining.
-  		 *
-  		 * @example
-  		 * decl.before('content: ""');
-  		 */
+    * Insert new node before current node to current node’s parent.
+    *
+    * Just an alias for `node.parent.insertBefore(node, newNode)`.
+    *
+    * @returns this node for method chaining.
+    *
+    * @example
+    * decl.before('content: ""');
+    */
   def before(newNode: Node): this.type = js.native
   def clone(overrides: js.Object): this.type = js.native
   /**

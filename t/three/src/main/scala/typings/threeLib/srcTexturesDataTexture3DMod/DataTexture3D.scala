@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DataTexture3D protected ()
   extends threeLib.srcTexturesTextureMod.Texture {
-  def this(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double, depth: scala.Double) = this()
   def this(data: threeLib.srcPolyfillsMod.TypedArray, width: scala.Double, height: scala.Double, depth: scala.Double) = this()
 }
 

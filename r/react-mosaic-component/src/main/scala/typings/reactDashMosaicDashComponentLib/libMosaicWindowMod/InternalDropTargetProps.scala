@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InternalDropTargetProps extends js.Object {
-  var connectDropTarget: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget
+  var connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any
   var draggedMosaicId: js.UndefOr[java.lang.String] = js.undefined
   var isOver: scala.Boolean
 }
@@ -14,7 +14,7 @@ trait InternalDropTargetProps extends js.Object {
 object InternalDropTargetProps {
   @scala.inline
   def apply(
-    connectDropTarget: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget,
+    connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any,
     isOver: scala.Boolean,
     draggedMosaicId: java.lang.String = null
   ): InternalDropTargetProps = {

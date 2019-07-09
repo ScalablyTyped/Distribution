@@ -12,6 +12,6 @@ object ^ extends js.Object {
   val MouseTransition: Transition = js.native
   val TouchTransition: Transition = js.native
   def createTransition(eventType: java.lang.String, check: CheckFunction[_]): Transition = js.native
-  def default(backends: Backends): dndDashCoreLib.libCjsInterfacesMod.BackendFactory = js.native
+  def default(backends: Backends): dndDashCoreLib.libInterfacesMod.BackendFactory = js.native
 }
 

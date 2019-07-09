@@ -15,11 +15,56 @@ import scala.scalajs.js.annotation._
 class TabBar[T] ()
   extends atPhosphorWidgetsLib.libWidgetMod.Widget {
   def this(options: atPhosphorWidgetsLib.libTabbarMod.TabBarNs.IOptions[T]) = this()
+  /**
+    * Adjust the current index for a tab insert operation.
+    *
+    * This method accounts for the tab bar's insertion behavior when
+    * adjusting the current index and emitting the changed signal.
+    */
+  var _adjustCurrentForInsert: js.Any = js.native
+  /**
+    * Adjust the current index for a tab move operation.
+    *
+    * This method will not cause the actual current tab to change.
+    * It silently adjusts the index to account for the given move.
+    */
+  var _adjustCurrentForMove: js.Any = js.native
+  /**
+    * Adjust the current index for a tab remove operation.
+    *
+    * This method accounts for the tab bar's remove behavior when
+    * adjusting the current index and emitting the changed signal.
+    */
+  var _adjustCurrentForRemove: js.Any = js.native
   var _currentChanged: js.Any = js.native
   var _currentIndex: js.Any = js.native
   var _dragData: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the tab bar.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the tab bar.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the tab bar.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the document.
+    */
+  var _evtMouseUp: js.Any = js.native
+  /**
+    * Handle the `changed` signal of a title object.
+    */
+  var _onTitleChanged: js.Any = js.native
   var _orientation: js.Any = js.native
   var _previousTitle: js.Any = js.native
+  /**
+    * Release the mouse and restore the non-dragged tab positions.
+    */
+  var _releaseMouse: js.Any = js.native
   var _tabActivateRequested: js.Any = js.native
   var _tabCloseRequested: js.Any = js.native
   var _tabDetachRequested: js.Any = js.native
@@ -154,51 +199,6 @@ class TabBar[T] ()
     * A read-only array of the titles in the tab bar.
     */
   val titles: js.Array[atPhosphorWidgetsLib.libTitleMod.Title[T]] = js.native
-  /**
-    * Adjust the current index for a tab insert operation.
-    *
-    * This method accounts for the tab bar's insertion behavior when
-    * adjusting the current index and emitting the changed signal.
-    */
-  /* private */ def _adjustCurrentForInsert(i: js.Any, title: js.Any): js.Any = js.native
-  /**
-    * Adjust the current index for a tab move operation.
-    *
-    * This method will not cause the actual current tab to change.
-    * It silently adjusts the index to account for the given move.
-    */
-  /* private */ def _adjustCurrentForMove(i: js.Any, j: js.Any): js.Any = js.native
-  /**
-    * Adjust the current index for a tab remove operation.
-    *
-    * This method accounts for the tab bar's remove behavior when
-    * adjusting the current index and emitting the changed signal.
-    */
-  /* private */ def _adjustCurrentForRemove(i: js.Any, title: js.Any): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the tab bar.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the tab bar.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the tab bar.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseup'` event for the document.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `changed` signal of a title object.
-    */
-  /* private */ def _onTitleChanged(sender: js.Any): js.Any = js.native
-  /**
-    * Release the mouse and restore the non-dragged tab positions.
-    */
-  /* private */ def _releaseMouse(): js.Any = js.native
   /**
     * Add a tab to the end of the tab bar.
     *

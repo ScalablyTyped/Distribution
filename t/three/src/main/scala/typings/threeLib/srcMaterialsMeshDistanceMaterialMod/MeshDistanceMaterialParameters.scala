@@ -51,6 +51,7 @@ object MeshDistanceMaterialParameters {
     precision: threeLib.threeLibStrings.highp | threeLib.threeLibStrings.mediump | threeLib.threeLibStrings.lowp = null,
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
     referencePosition: threeLib.srcMathVector3Mod.Vector3 = null,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
     vertexColors: threeLib.srcConstantsMod.Colors = null,
@@ -91,6 +92,7 @@ object MeshDistanceMaterialParameters {
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
     if (referencePosition != null) __obj.updateDynamic("referencePosition")(referencePosition)
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)

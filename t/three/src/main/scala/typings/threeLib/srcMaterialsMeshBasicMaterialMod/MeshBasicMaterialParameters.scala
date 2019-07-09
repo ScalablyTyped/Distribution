@@ -65,6 +65,7 @@ object MeshBasicMaterialParameters {
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
     reflectivity: scala.Int | scala.Double = null,
     refractionRatio: scala.Int | scala.Double = null,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
     skinning: js.UndefOr[scala.Boolean] = js.undefined,
     specularMap: threeLib.srcTexturesTextureMod.Texture = null,
@@ -115,6 +116,7 @@ object MeshBasicMaterialParameters {
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
     if (reflectivity != null) __obj.updateDynamic("reflectivity")(reflectivity.asInstanceOf[js.Any])
     if (refractionRatio != null) __obj.updateDynamic("refractionRatio")(refractionRatio.asInstanceOf[js.Any])
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
     if (specularMap != null) __obj.updateDynamic("specularMap")(specularMap)

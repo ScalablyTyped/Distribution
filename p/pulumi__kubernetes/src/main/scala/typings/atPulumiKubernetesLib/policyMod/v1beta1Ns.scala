@@ -89,6 +89,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget = js.native
+    /**
+      * Returns true if the given object is an instance of PodDisruptionBudget.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodDisruptionBudget.PodDisruptionBudget */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -112,6 +117,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
+    /**
+      * Returns true if the given object is an instance of PodDisruptionBudgetList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodDisruptionBudgetList.PodDisruptionBudgetList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -135,6 +145,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of PodSecurityPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodSecurityPolicy.PodSecurityPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -158,6 +173,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
+    /**
+      * Returns true if the given object is an instance of PodSecurityPolicyList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodSecurityPolicyList.PodSecurityPolicyList */ scala.Boolean = js.native
   }
   
 }

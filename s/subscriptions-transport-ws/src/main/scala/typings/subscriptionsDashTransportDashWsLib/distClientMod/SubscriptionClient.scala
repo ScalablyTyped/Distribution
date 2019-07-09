@@ -65,24 +65,24 @@ class SubscriptionClient protected () extends js.Object {
   def close(): scala.Unit = js.native
   def close(isForced: scala.Boolean): scala.Unit = js.native
   def close(isForced: scala.Boolean, closedByUser: scala.Boolean): scala.Unit = js.native
-  def on(eventName: java.lang.String, callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
+  def on(eventName: java.lang.String, callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
   def on(
     eventName: java.lang.String,
-    callback: eventemitter3Lib.eventemitter3Mod.ListenerFn,
+    callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]],
     context: js.Any
   ): js.Function = js.native
-  def onConnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
-  def onConnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn, context: js.Any): js.Function = js.native
-  def onConnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
-  def onConnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn, context: js.Any): js.Function = js.native
-  def onDisconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
-  def onDisconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn, context: js.Any): js.Function = js.native
-  def onError(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
-  def onError(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn, context: js.Any): js.Function = js.native
-  def onReconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
-  def onReconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn, context: js.Any): js.Function = js.native
-  def onReconnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn): js.Function = js.native
-  def onReconnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn, context: js.Any): js.Function = js.native
+  def onConnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
+  def onConnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
+  def onConnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
+  def onConnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
+  def onDisconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
+  def onDisconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
+  def onError(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
+  def onError(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
+  def onReconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
+  def onReconnected(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
+  def onReconnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]]): js.Function = js.native
+  def onReconnecting(callback: eventemitter3Lib.eventemitter3Mod.ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
   def request(request: OperationOptions): Observable[
     graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
   ] = js.native

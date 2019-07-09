@@ -59,6 +59,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.networkingV1NetworkPolicyMod.NetworkPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/NetworkPolicy.NetworkPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -82,6 +87,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.networkingV1NetworkPolicyListMod.NetworkPolicyList = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkPolicyList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/NetworkPolicyList.NetworkPolicyList */ scala.Boolean = js.native
   }
   
 }

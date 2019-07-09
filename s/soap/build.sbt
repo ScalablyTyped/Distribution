@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "soap"
-version := "0.27.1-cef67c"
+version := "0.28.0-53c2eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -96,6 +96,7 @@ object MeshStandardMaterialParameters {
     refractionRatio: scala.Int | scala.Double = null,
     roughness: scala.Int | scala.Double = null,
     roughnessMap: threeLib.srcTexturesTextureMod.Texture = null,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
     skinning: js.UndefOr[scala.Boolean] = js.undefined,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
@@ -160,6 +161,7 @@ object MeshStandardMaterialParameters {
     if (refractionRatio != null) __obj.updateDynamic("refractionRatio")(refractionRatio.asInstanceOf[js.Any])
     if (roughness != null) __obj.updateDynamic("roughness")(roughness.asInstanceOf[js.Any])
     if (roughnessMap != null) __obj.updateDynamic("roughnessMap")(roughnessMap)
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)

@@ -15,7 +15,7 @@ object TransformSourceDescription {
     code: java.lang.String,
     ast: estreeLib.estreeMod.Program = null,
     dependencies: js.Array[java.lang.String] = null,
-    map: java.lang.String | RawSourceMap = null,
+    map: SourceMapInput = null,
     moduleSideEffects: js.UndefOr[scala.Boolean] = js.undefined
   ): TransformSourceDescription = {
     val __obj = js.Dynamic.literal(code = code)

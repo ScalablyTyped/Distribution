@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /**
   		The arguments to pass to `binary` so that it will print its version.
-  		@default ['--version']
+  		If not specified, predefined arguments will be used for known binaries, or `['--version']` and `['version']` arguments will be tried.
   		*/
-  var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  val args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
 object Options {

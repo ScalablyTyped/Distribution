@@ -17,7 +17,7 @@ package object atNivoBarMod {
   type BarCustomLayer = js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNode]
   type BarDatum = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   type BarDatumWithColor = BarDatum with atNivoBarLib.Anon_Color
-  type BarProps = atNivoCoreLib.atNivoCoreMod.ColorProps[BarDatum] with stdLib.Partial[atNivoBarLib.Anon_Auto]
+  type BarProps = stdLib.Partial[atNivoBarLib.Anon_Auto]
   type BarSvgProps = Data with BarProps with atNivoCoreLib.atNivoCoreMod.MotionProps with atNivoCoreLib.atNivoCoreMod.SvgDefsAndFill[BarDatum] with stdLib.Partial[atNivoBarLib.Anon_Datum]
   type IndexByFunc = js.Function1[/* datum */ BarDatum, java.lang.String | scala.Double]
   type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, java.lang.String | scala.Double]

@@ -59,11 +59,15 @@ object AFRAMENs extends js.Object {
   object THREENs extends js.Object {
     @js.native
     /**
-      * This creates a Ambientlight with a color.
-      * @param color Numeric value of the RGB component of the color or a Color instance.
-      */
+    	 * This creates a Ambientlight with a color.
+    	 * @param color Numeric value of the RGB component of the color or a Color instance.
+    	 */
     class AmbientLight ()
       extends threeLib.threeMod.AmbientLight
+    
+    @js.native
+    class AmbientLightProbe ()
+      extends threeLib.threeMod.AmbientLightProbe
     
     @js.native
     class AnimationAction ()
@@ -150,8 +154,10 @@ object AFRAMENs extends js.Object {
       extends threeLib.threeMod.Box3
     
     @js.native
-    class Box3Helper ()
-      extends threeLib.threeMod.Box3Helper
+    class Box3Helper protected ()
+      extends threeLib.threeMod.Box3Helper {
+      def this(box: threeLib.srcMathBox3Mod.Box3) = this()
+    }
     
     @js.native
     class BoxBufferGeometry protected ()
@@ -163,19 +169,21 @@ object AFRAMENs extends js.Object {
     class BoxGeometry protected ()
       extends threeLib.threeMod.BoxGeometry {
       /**
-        * @param width — Width of the sides on the X axis.
-        * @param height — Height of the sides on the Y axis.
-        * @param depth — Depth of the sides on the Z axis.
-        * @param widthSegments — Number of segmented faces along the width of the sides.
-        * @param heightSegments — Number of segmented faces along the height of the sides.
-        * @param depthSegments — Number of segmented faces along the depth of the sides.
-        */
+      	 * @param width — Width of the sides on the X axis.
+      	 * @param height — Height of the sides on the Y axis.
+      	 * @param depth — Depth of the sides on the Z axis.
+      	 * @param widthSegments — Number of segmented faces along the width of the sides.
+      	 * @param heightSegments — Number of segmented faces along the height of the sides.
+      	 * @param depthSegments — Number of segmented faces along the depth of the sides.
+      	 */
       def this(width: js.UndefOr[scala.Double], height: js.UndefOr[scala.Double], depth: js.UndefOr[scala.Double], widthSegments: js.UndefOr[scala.Double], heightSegments: js.UndefOr[scala.Double], depthSegments: js.UndefOr[scala.Double]) = this()
     }
     
     @js.native
-    class BoxHelper ()
-      extends threeLib.threeMod.BoxHelper
+    class BoxHelper protected ()
+      extends threeLib.threeMod.BoxHelper {
+      def this(`object`: threeLib.srcCoreObject3DMod.Object3D) = this()
+    }
     
     @js.native
     class BufferAttribute protected ()
@@ -189,8 +197,8 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
-      */
+    	 * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
+    	 */
     class Camera ()
       extends threeLib.threeMod.Camera
     
@@ -220,8 +228,8 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * @param autoStart Automatically start the clock.
-      */
+    	 * @param autoStart Automatically start the clock.
+    	 */
     class Clock ()
       extends threeLib.threeMod.Clock
     
@@ -238,7 +246,7 @@ object AFRAMENs extends js.Object {
     @js.native
     class CompressedTexture protected ()
       extends threeLib.threeMod.CompressedTexture {
-      def this(mipmaps: js.Array[stdLib.ImageData], width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
+      def this(mipmaps: js.Array[stdLib.ImageData], width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.srcConstantsMod.CompressedPixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
     }
     
     @js.native
@@ -304,13 +312,13 @@ object AFRAMENs extends js.Object {
     class CylinderGeometry protected ()
       extends threeLib.threeMod.CylinderGeometry {
       /**
-        * @param radiusTop — Radius of the cylinder at the top.
-        * @param radiusBottom — Radius of the cylinder at the bottom.
-        * @param height — Height of the cylinder.
-        * @param radiusSegments — Number of segmented faces around the circumference of the cylinder.
-        * @param heightSegments — Number of rows of faces along the height of the cylinder.
-        * @param openEnded - A Boolean indicating whether or not to cap the ends of the cylinder.
-        */
+      	 * @param radiusTop — Radius of the cylinder at the top.
+      	 * @param radiusBottom — Radius of the cylinder at the bottom.
+      	 * @param height — Height of the cylinder.
+      	 * @param radiusSegments — Number of segmented faces around the circumference of the cylinder.
+      	 * @param heightSegments — Number of rows of faces along the height of the cylinder.
+      	 * @param openEnded - A Boolean indicating whether or not to cap the ends of the cylinder.
+      	 */
       def this(radiusTop: js.UndefOr[scala.Double], radiusBottom: js.UndefOr[scala.Double], height: js.UndefOr[scala.Double], radiusSegments: js.UndefOr[scala.Double], heightSegments: js.UndefOr[scala.Double], openEnded: js.UndefOr[scala.Boolean], thetaStart: js.UndefOr[scala.Double], thetaLength: js.UndefOr[scala.Double]) = this()
     }
     
@@ -321,13 +329,13 @@ object AFRAMENs extends js.Object {
     @js.native
     class DataTexture protected ()
       extends threeLib.threeMod.DataTexture {
-      def this(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
+      def this(data: threeLib.srcPolyfillsMod.TypedArray, width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
     }
     
     @js.native
     class DataTexture3D protected ()
       extends threeLib.threeMod.DataTexture3D {
-      def this(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double, depth: scala.Double) = this()
+      def this(data: threeLib.srcPolyfillsMod.TypedArray, width: scala.Double, height: scala.Double, depth: scala.Double) = this()
     }
     
     @js.native
@@ -386,8 +394,8 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * Creates eventDispatcher object. It needs to be call with '.call' to add the functionality to an object.
-      */
+    	 * Creates eventDispatcher object. It needs to be call with '.call' to add the functionality to an object.
+    	 */
     class EventDispatcher ()
       extends threeLib.threeMod.EventDispatcher
     
@@ -395,13 +403,13 @@ object AFRAMENs extends js.Object {
     class Face3 protected ()
       extends threeLib.threeMod.Face3 {
       /**
-        * @param a Vertex A index.
-        * @param b Vertex B index.
-        * @param c Vertex C index.
-        * @param normal Face normal or array of vertex normals.
-        * @param color Face color or array of vertex colors.
-        * @param materialIndex Material index.
-        */
+      	 * @param a Vertex A index.
+      	 * @param b Vertex B index.
+      	 * @param c Vertex C index.
+      	 * @param normal Face normal or array of vertex normals.
+      	 * @param color Face color or array of vertex colors.
+      	 * @param materialIndex Material index.
+      	 */
       def this(a: scala.Double, b: scala.Double, c: scala.Double) = this()
     }
     
@@ -490,6 +498,10 @@ object AFRAMENs extends js.Object {
       extends threeLib.threeMod.HemisphereLightHelper {
       def this(light: threeLib.srcLightsHemisphereLightMod.HemisphereLight, size: scala.Double) = this()
     }
+    
+    @js.native
+    class HemisphereLightProbe ()
+      extends threeLib.threeMod.HemisphereLightProbe
     
     @js.native
     class IcosahedronBufferGeometry ()
@@ -612,6 +624,10 @@ object AFRAMENs extends js.Object {
       extends threeLib.threeMod.Light
     
     @js.native
+    class LightProbe ()
+      extends threeLib.threeMod.LightProbe
+    
+    @js.native
     class LightShadow protected ()
       extends threeLib.threeMod.LightShadow {
       def this(camera: threeLib.srcCamerasCameraMod.Camera) = this()
@@ -673,8 +689,8 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * Creates an identity matrix.
-      */
+    	 * Creates an identity matrix.
+    	 */
     class Matrix3 ()
       extends threeLib.threeMod.Matrix3
     
@@ -754,13 +770,13 @@ object AFRAMENs extends js.Object {
     class OrthographicCamera protected ()
       extends threeLib.threeMod.OrthographicCamera {
       /**
-        * @param left Camera frustum left plane.
-        * @param right Camera frustum right plane.
-        * @param top Camera frustum top plane.
-        * @param bottom Camera frustum bottom plane.
-        * @param near Camera frustum near plane.
-        * @param far Camera frustum far plane.
-        */
+      	 * @param left Camera frustum left plane.
+      	 * @param right Camera frustum right plane.
+      	 * @param top Camera frustum top plane.
+      	 * @param bottom Camera frustum bottom plane.
+      	 * @param near Camera frustum near plane.
+      	 * @param far Camera frustum far plane.
+      	 */
       def this(left: scala.Double, right: scala.Double, top: scala.Double, bottom: scala.Double) = this()
     }
     
@@ -792,11 +808,11 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * @param fov Camera frustum vertical field of view. Default value is 50.
-      * @param aspect Camera frustum aspect ratio. Default value is 1.
-      * @param near Camera frustum near plane. Default value is 0.1.
-      * @param far Camera frustum far plane. Default value is 2000.
-      */
+    	 * @param fov Camera frustum vertical field of view. Default value is 50.
+    	 * @param aspect Camera frustum aspect ratio. Default value is 1.
+    	 * @param near Camera frustum near plane. Default value is 0.1.
+    	 * @param far Camera frustum far plane. Default value is 2000.
+    	 */
     class PerspectiveCamera ()
       extends threeLib.threeMod.PerspectiveCamera
     
@@ -834,9 +850,9 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * @param geometry An instance of Geometry or BufferGeometry.
-      * @param material An instance of Material (optional).
-      */
+    	 * @param geometry An instance of Geometry or BufferGeometry.
+    	 * @param material An instance of Material (optional).
+    	 */
     class Points ()
       extends threeLib.threeMod.Points
     
@@ -914,12 +930,12 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * This creates a new raycaster object.
-      * @param origin The origin vector where the ray casts from.
-      * @param direction The direction vector that gives direction to the ray. Should be normalized.
-      * @param near All results returned are further away than near. Near can't be negative. Default value is 0.
-      * @param far All results returned are closer then far. Far can't be lower then near . Default value is Infinity.
-      */
+    	 * This creates a new raycaster object.
+    	 * @param origin The origin vector where the ray casts from.
+    	 * @param direction The direction vector that gives direction to the ray. Should be normalized.
+    	 * @param near All results returned are further away than near. Near can't be negative. Default value is 0.
+    	 * @param far All results returned are closer then far. Far can't be lower then near . Default value is Infinity.
+    	 */
     class Raycaster ()
       extends threeLib.threeMod.Raycaster
     
@@ -1007,16 +1023,16 @@ object AFRAMENs extends js.Object {
     class SphereGeometry protected ()
       extends threeLib.threeMod.SphereGeometry {
       /**
-        * The geometry is created by sweeping and calculating vertexes around the Y axis (horizontal sweep) and the Z axis (vertical sweep). Thus, incomplete spheres (akin to 'sphere slices') can be created through the use of different values of phiStart, phiLength, thetaStart and thetaLength, in order to define the points in which we start (or end) calculating those vertices.
-        *
-        * @param radius — sphere radius. Default is 50.
-        * @param widthSegments — number of horizontal segments. Minimum value is 3, and the default is 8.
-        * @param heightSegments — number of vertical segments. Minimum value is 2, and the default is 6.
-        * @param phiStart — specify horizontal starting angle. Default is 0.
-        * @param phiLength — specify horizontal sweep angle size. Default is Math.PI * 2.
-        * @param thetaStart — specify vertical starting angle. Default is 0.
-        * @param thetaLength — specify vertical sweep angle size. Default is Math.PI.
-        */
+      	 * The geometry is created by sweeping and calculating vertexes around the Y axis (horizontal sweep) and the Z axis (vertical sweep). Thus, incomplete spheres (akin to 'sphere slices') can be created through the use of different values of phiStart, phiLength, thetaStart and thetaLength, in order to define the points in which we start (or end) calculating those vertices.
+      	 *
+      	 * @param radius — sphere radius. Default is 50.
+      	 * @param widthSegments — number of horizontal segments. Minimum value is 3, and the default is 8.
+      	 * @param heightSegments — number of vertical segments. Minimum value is 2, and the default is 6.
+      	 * @param phiStart — specify horizontal starting angle. Default is 0.
+      	 * @param phiLength — specify horizontal sweep angle size. Default is Math.PI * 2.
+      	 * @param thetaStart — specify vertical starting angle. Default is 0.
+      	 * @param thetaLength — specify vertical sweep angle size. Default is Math.PI.
+      	 */
       def this(radius: js.UndefOr[scala.Double], widthSegments: js.UndefOr[scala.Double], heightSegments: js.UndefOr[scala.Double], phiStart: js.UndefOr[scala.Double], phiLength: js.UndefOr[scala.Double], thetaStart: js.UndefOr[scala.Double], thetaLength: js.UndefOr[scala.Double]) = this()
     }
     
@@ -1269,13 +1285,13 @@ object AFRAMENs extends js.Object {
     @js.native
     class WebGLProgram protected ()
       extends threeLib.threeMod.WebGLProgram {
-      def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, code: java.lang.String, material: threeLib.srcMaterialsShaderMaterialMod.ShaderMaterial, shader: threeLib.srcRenderersWebglWebGLShaderMod.WebGLShader, parameters: threeLib.srcRenderersWebGLRendererMod.WebGLRendererParameters, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures) = this()
+      def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, code: java.lang.String, material: threeLib.srcMaterialsShaderMaterialMod.ShaderMaterial, shader: threeLib.srcRenderersWebglWebGLShaderMod.WebGLShader, parameters: threeLib.srcRenderersWebGLRendererMod.WebGLRendererParameters, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities) = this()
     }
     
     @js.native
     class WebGLPrograms protected ()
       extends threeLib.threeMod.WebGLPrograms {
-      def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures) = this()
+      def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities) = this()
     }
     
     @js.native
@@ -1304,15 +1320,15 @@ object AFRAMENs extends js.Object {
     
     @js.native
     /**
-      * parameters is an optional object with properties defining the renderer's behaviour. The constructor also accepts no parameters at all. In all cases, it will assume sane defaults when parameters are missing.
-      */
+    	 * parameters is an optional object with properties defining the renderer's behaviour. The constructor also accepts no parameters at all. In all cases, it will assume sane defaults when parameters are missing.
+    	 */
     class WebGLRenderer ()
       extends threeLib.threeMod.WebGLRenderer
     
     @js.native
     class WebGLShader protected ()
       extends threeLib.threeMod.WebGLShader {
-      def this(gl: js.Any, `type`: java.lang.String, string: java.lang.String, debug: scala.Boolean) = this()
+      def this(gl: js.Any, `type`: java.lang.String, string: java.lang.String) = this()
     }
     
     @js.native

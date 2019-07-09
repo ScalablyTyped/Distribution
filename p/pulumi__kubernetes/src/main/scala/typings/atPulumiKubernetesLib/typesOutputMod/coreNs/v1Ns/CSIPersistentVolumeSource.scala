@@ -10,6 +10,14 @@ import scala.scalajs.js.annotation._
   */
 trait CSIPersistentVolumeSource extends js.Object {
   /**
+    * ControllerExpandSecretRef is a reference to the secret object containing sensitive
+    * information to pass to the CSI driver to complete the CSI ControllerExpandVolume call. This
+    * is an alpha field and requires enabling ExpandCSIVolumes feature gate. This field is
+    * optional, and may be empty if no secret is required. If the secret object contains more
+    * than one secret, all secrets are passed.
+    */
+  val controllerExpandSecretRef: SecretReference
+  /**
     * ControllerPublishSecretRef is a reference to the secret object containing sensitive
     * information to pass to the CSI driver to complete the CSI ControllerPublishVolume and
     * ControllerUnpublishVolume calls. This field is optional, and may be empty if no secret is
@@ -58,6 +66,7 @@ trait CSIPersistentVolumeSource extends js.Object {
 object CSIPersistentVolumeSource {
   @scala.inline
   def apply(
+    controllerExpandSecretRef: SecretReference,
     controllerPublishSecretRef: SecretReference,
     driver: java.lang.String,
     fsType: java.lang.String,
@@ -67,7 +76,7 @@ object CSIPersistentVolumeSource {
     volumeAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     volumeHandle: java.lang.String
   ): CSIPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal(controllerPublishSecretRef = controllerPublishSecretRef, driver = driver, fsType = fsType, nodePublishSecretRef = nodePublishSecretRef, nodeStageSecretRef = nodeStageSecretRef, readOnly = readOnly, volumeAttributes = volumeAttributes, volumeHandle = volumeHandle)
+    val __obj = js.Dynamic.literal(controllerExpandSecretRef = controllerExpandSecretRef, controllerPublishSecretRef = controllerPublishSecretRef, driver = driver, fsType = fsType, nodePublishSecretRef = nodePublishSecretRef, nodeStageSecretRef = nodeStageSecretRef, readOnly = readOnly, volumeAttributes = volumeAttributes, volumeHandle = volumeHandle)
   
     __obj.asInstanceOf[CSIPersistentVolumeSource]
   }

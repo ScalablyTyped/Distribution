@@ -1,7 +1,7 @@
 
 # Scala.js typings for macos-release
 
-Typings are for version 2.2.0
+Typings are for version 2.3.0
 
 ## Library description:
 Get the name and version of a macOS release from the Darwin version

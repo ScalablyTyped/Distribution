@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val FILE_SYSTEM_ADAPTER: FileSystemAdapter = js.native
-  def getFileSystemAdapter(): FileSystemAdapter = js.native
-  def getFileSystemAdapter(fsMethods: stdLib.Partial[FileSystemAdapter]): FileSystemAdapter = js.native
+  def createFileSystemAdapter(): FileSystemAdapter = js.native
+  def createFileSystemAdapter(fsMethods: stdLib.Partial[FileSystemAdapter]): FileSystemAdapter = js.native
 }
 

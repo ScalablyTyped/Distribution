@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-redux-epic"
-version := "1.1-dt-20190212Z-c85895"
+version := "1.1-dt-20190212Z-e17945"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
-  "org.scalablytyped" %%% "redux" % "4.0.1-8f7517",
-  "org.scalablytyped" %%% "redux-observable" % "1.1.0-08b1f0",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
+  "org.scalablytyped" %%% "redux" % "4.0.2-22de3b",
+  "org.scalablytyped" %%% "redux-observable" % "1.1.0-5c43ae",
   "org.scalablytyped" %%% "rxjs" % "6.5.2-4ab268",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false

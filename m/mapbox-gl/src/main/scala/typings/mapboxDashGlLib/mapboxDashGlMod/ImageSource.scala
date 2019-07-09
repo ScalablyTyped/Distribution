@@ -17,5 +17,6 @@ class ImageSource ()
   @JSName("type")
   override var type_ImageSourceRaw: mapboxDashGlLib.mapboxDashGlLibStrings.image = js.native
   def setCoordinates(coordinates: js.Array[js.Array[scala.Double]]): this.type = js.native
+  def updateImage(options: ImageSourceOptions): this.type = js.native
 }
 

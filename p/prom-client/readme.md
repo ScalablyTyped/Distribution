@@ -1,7 +1,7 @@
 
 # Scala.js typings for prom-client
 
-Typings are for version 11.3.0
+Typings are for version 11.5.3
 
 ## Library description:
 Client for prometheus

@@ -11,6 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LazyResult extends js.Object {
   /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  @JSName("catch")
+  var catch_Original: postcssLib.Fn_Onrejected = js.native
+  /**
     * Alias for css property to use when syntaxes generate non-CSS output.
     */
   var content: java.lang.String = js.native
@@ -54,16 +60,52 @@ trait LazyResult extends js.Object {
     * Processes input CSS through synchronous and asynchronous plugins.
     * @param onRejected Called if any plugin throws an error.
     */
-  def `catch`(onRejected: js.Function1[/* error */ stdLib.Error, scala.Unit]): js.Function | js.Any = js.native
+  @JSName("then")
+  var then_Original: postcssLib.Fn_Onfulfilled = js.native
   /**
     * Processes input CSS through synchronous and asynchronous plugins.
     * @param onRejected Called if any plugin throws an error.
     */
-  def `then`(onFulfilled: js.Function1[/* result */ Result, scala.Unit]): js.Function | js.Any = js.native
-  def `then`(
-    onFulfilled: js.Function1[/* result */ Result, scala.Unit],
-    onRejected: js.Function1[/* error */ stdLib.Error, scala.Unit]
-  ): js.Function | js.Any = js.native
+  def `catch`[TResult](): js.Promise[Result | TResult] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Result | TResult] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Result, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.Function1[/* value */ Result, TResult1 | js.Thenable[TResult1]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
+  def `then`[TResult1, TResult2](
+    onfulfilled: scala.Null,
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
   /**
     * Processes input CSS through synchronous plugins and calls Result#warnings().
     * This property will only work with synchronous plugins. If the processor

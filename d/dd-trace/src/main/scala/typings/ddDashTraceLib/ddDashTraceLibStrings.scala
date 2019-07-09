@@ -13,6 +13,12 @@ object ddDashTraceLibStrings {
   sealed trait amqplib extends js.Object
   
   @js.native
+  sealed trait `async-listener` extends js.Object
+  
+  @js.native
+  sealed trait async_hooks extends js.Object
+  
+  @js.native
   sealed trait bluebird extends js.Object
   
   @js.native
@@ -22,6 +28,9 @@ object ddDashTraceLibStrings {
   sealed trait `cassandra-driver` extends js.Object
   
   @js.native
+  sealed trait connect extends js.Object
+  
+  @js.native
   sealed trait dns extends js.Object
   
   @js.native
@@ -29,6 +38,9 @@ object ddDashTraceLibStrings {
   
   @js.native
   sealed trait express extends js.Object
+  
+  @js.native
+  sealed trait fastify extends js.Object
   
   @js.native
   sealed trait `generic-pool` extends js.Object
@@ -67,10 +79,22 @@ object ddDashTraceLibStrings {
   sealed trait net extends js.Object
   
   @js.native
+  sealed trait noop extends js.Object
+  
+  @js.native
+  sealed trait paperplane extends js.Object
+  
+  @js.native
   sealed trait pg extends js.Object
   
   @js.native
   sealed trait pino extends js.Object
+  
+  @js.native
+  sealed trait promise extends js.Object
+  
+  @js.native
+  sealed trait `promise-js` extends js.Object
   
   @js.native
   sealed trait q extends js.Object
@@ -85,6 +109,9 @@ object ddDashTraceLibStrings {
   sealed trait router extends js.Object
   
   @js.native
+  sealed trait tedious extends js.Object
+  
+  @js.native
   sealed trait when extends js.Object
   
   @js.native
@@ -95,17 +122,25 @@ object ddDashTraceLibStrings {
   @scala.inline
   def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
   @scala.inline
+  def `async-listener`: `async-listener` = "async-listener".asInstanceOf[`async-listener`]
+  @scala.inline
+  def async_hooks: async_hooks = "async_hooks".asInstanceOf[async_hooks]
+  @scala.inline
   def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
   @scala.inline
   def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
   @scala.inline
   def `cassandra-driver`: `cassandra-driver` = "cassandra-driver".asInstanceOf[`cassandra-driver`]
   @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
   def dns: dns = "dns".asInstanceOf[dns]
   @scala.inline
   def elasticsearch: elasticsearch = "elasticsearch".asInstanceOf[elasticsearch]
   @scala.inline
   def express: express = "express".asInstanceOf[express]
+  @scala.inline
+  def fastify: fastify = "fastify".asInstanceOf[fastify]
   @scala.inline
   def `generic-pool`: `generic-pool` = "generic-pool".asInstanceOf[`generic-pool`]
   @scala.inline
@@ -131,9 +166,17 @@ object ddDashTraceLibStrings {
   @scala.inline
   def net: net = "net".asInstanceOf[net]
   @scala.inline
+  def noop: noop = "noop".asInstanceOf[noop]
+  @scala.inline
+  def paperplane: paperplane = "paperplane".asInstanceOf[paperplane]
+  @scala.inline
   def pg: pg = "pg".asInstanceOf[pg]
   @scala.inline
   def pino: pino = "pino".asInstanceOf[pino]
+  @scala.inline
+  def promise: promise = "promise".asInstanceOf[promise]
+  @scala.inline
+  def `promise-js`: `promise-js` = "promise-js".asInstanceOf[`promise-js`]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
@@ -142,6 +185,8 @@ object ddDashTraceLibStrings {
   def restify: restify = "restify".asInstanceOf[restify]
   @scala.inline
   def router: router = "router".asInstanceOf[router]
+  @scala.inline
+  def tedious: tedious = "tedious".asInstanceOf[tedious]
   @scala.inline
   def when: when = "when".asInstanceOf[when]
   @scala.inline

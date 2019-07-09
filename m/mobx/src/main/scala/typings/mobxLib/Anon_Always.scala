@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Always extends js.Object {
+  var computedConfigurable: js.UndefOr[scala.Boolean] = js.undefined
   var computedRequiresReaction: js.UndefOr[scala.Boolean] = js.undefined
   var disableErrorBoundaries: js.UndefOr[scala.Boolean] = js.undefined
   var enforceActions: js.UndefOr[
@@ -18,6 +19,7 @@ trait Anon_Always extends js.Object {
 object Anon_Always {
   @scala.inline
   def apply(
+    computedConfigurable: js.UndefOr[scala.Boolean] = js.undefined,
     computedRequiresReaction: js.UndefOr[scala.Boolean] = js.undefined,
     disableErrorBoundaries: js.UndefOr[scala.Boolean] = js.undefined,
     enforceActions: scala.Boolean | mobxLib.mobxLibStrings.strict | mobxLib.mobxLibStrings.never | mobxLib.mobxLibStrings.always | mobxLib.mobxLibStrings.observed = null,
@@ -25,6 +27,7 @@ object Anon_Always {
     reactionScheduler: /* f */ js.Function0[scala.Unit] => scala.Unit = null
   ): Anon_Always = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(computedConfigurable)) __obj.updateDynamic("computedConfigurable")(computedConfigurable)
     if (!js.isUndefined(computedRequiresReaction)) __obj.updateDynamic("computedRequiresReaction")(computedRequiresReaction)
     if (!js.isUndefined(disableErrorBoundaries)) __obj.updateDynamic("disableErrorBoundaries")(disableErrorBoundaries)
     if (enforceActions != null) __obj.updateDynamic("enforceActions")(enforceActions.asInstanceOf[js.Any])

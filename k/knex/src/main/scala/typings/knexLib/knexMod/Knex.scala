@@ -29,7 +29,7 @@ trait Knex[TRecord /* <: js.Object */, TResult]
   override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def batchInsert(tableName: TableDescriptor, data: js.Array[_]): QueryBuilder[TRecord, js.Object] = js.native
   def batchInsert(tableName: TableDescriptor, data: js.Array[_], chunkSize: scala.Double): QueryBuilder[TRecord, js.Object] = js.native
-  def destroy(): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def destroy(): js.Promise[scala.Unit] = js.native
   def destroy(callback: js.Function): scala.Unit = js.native
   /* InferMemberOverrides */
   override def emit(event: java.lang.String, args: js.Any*): scala.Boolean = js.native
@@ -98,21 +98,12 @@ trait Knex[TRecord /* <: js.Object */, TResult]
   /* InferMemberOverrides */
   override def setMaxListeners(n: scala.Double): this.type = js.native
   def transaction(): js.Promise[Transaction[_, _]] = js.native
-  def transaction(transactionScope: js.UndefOr[scala.Nothing], config: js.Any): js.Promise[Transaction[_, _]] = js.native
   def transaction(transactionScope: scala.Null, config: js.Any): js.Promise[Transaction[_, _]] = js.native
+  def transaction[T](transactionScope: js.Function1[/* trx */ Transaction[_, _], js.Promise[T] | scala.Unit]): js.Promise[T] = js.native
   def transaction[T](
-    transactionScope: js.Function1[
-      /* trx */ Transaction[_, _], 
-      js.Promise[T] | bluebirdLib.bluebirdMod.^[T] | scala.Unit
-    ]
-  ): bluebirdLib.bluebirdMod.^[T] = js.native
-  def transaction[T](
-    transactionScope: js.Function1[
-      /* trx */ Transaction[_, _], 
-      js.Promise[T] | bluebirdLib.bluebirdMod.^[T] | scala.Unit
-    ],
+    transactionScope: js.Function1[/* trx */ Transaction[_, _], js.Promise[T] | scala.Unit],
     config: js.Any
-  ): bluebirdLib.bluebirdMod.^[T] = js.native
+  ): js.Promise[T] = js.native
   def transactionProvider(): js.Function0[js.Promise[Transaction[_, _]]] = js.native
   def transactionProvider(config: js.Any): js.Function0[js.Promise[Transaction[_, _]]] = js.native
 }

@@ -62,6 +62,11 @@ object settingsNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.settingsV1alpha1PodPresetMod.PodPreset = js.native
+      /**
+        * Returns true if the given object is an instance of PodPreset.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/settings/v1alpha1/PodPreset.PodPreset */ scala.Boolean = js.native
     }
     
     /* static members */
@@ -85,6 +90,11 @@ object settingsNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.settingsV1alpha1PodPresetListMod.PodPresetList = js.native
+      /**
+        * Returns true if the given object is an instance of PodPresetList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/settings/v1alpha1/PodPresetList.PodPresetList */ scala.Boolean = js.native
     }
     
   }

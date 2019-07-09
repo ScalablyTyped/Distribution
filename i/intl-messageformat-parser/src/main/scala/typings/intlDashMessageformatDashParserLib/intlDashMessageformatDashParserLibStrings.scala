@@ -7,49 +7,70 @@ import scala.scalajs.js.annotation._
 
 object intlDashMessageformatDashParserLibStrings {
   @js.native
-  sealed trait argumentElement extends js.Object
+  sealed trait any extends js.Object
   
   @js.native
-  sealed trait dateFormat extends js.Object
+  sealed trait cardinal extends js.Object
   
   @js.native
-  sealed trait messageFormatPattern extends js.Object
+  sealed trait `class` extends js.Object
   
   @js.native
-  sealed trait messageTextElement extends js.Object
+  sealed trait end extends js.Object
   
   @js.native
-  sealed trait numberFormat extends js.Object
+  sealed trait few
+    extends intlDashMessageformatDashParserLib.libTypesMod._ValidPluralRule
   
   @js.native
-  sealed trait optionalFormatPattern extends js.Object
+  sealed trait literal extends js.Object
   
   @js.native
-  sealed trait pluralFormat extends js.Object
+  sealed trait many
+    extends intlDashMessageformatDashParserLib.libTypesMod._ValidPluralRule
   
   @js.native
-  sealed trait selectFormat extends js.Object
+  sealed trait one
+    extends intlDashMessageformatDashParserLib.libTypesMod._ValidPluralRule
   
   @js.native
-  sealed trait timeFormat extends js.Object
+  sealed trait ordinal extends js.Object
+  
+  @js.native
+  sealed trait other
+    extends intlDashMessageformatDashParserLib.libTypesMod._ValidPluralRule
+  
+  @js.native
+  sealed trait two
+    extends intlDashMessageformatDashParserLib.libTypesMod._ValidPluralRule
+  
+  @js.native
+  sealed trait zero
+    extends intlDashMessageformatDashParserLib.libTypesMod._ValidPluralRule
   
   @scala.inline
-  def argumentElement: argumentElement = "argumentElement".asInstanceOf[argumentElement]
+  def any: any = "any".asInstanceOf[any]
   @scala.inline
-  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
+  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   @scala.inline
-  def messageFormatPattern: messageFormatPattern = "messageFormatPattern".asInstanceOf[messageFormatPattern]
+  def `class`: `class` = "class".asInstanceOf[`class`]
   @scala.inline
-  def messageTextElement: messageTextElement = "messageTextElement".asInstanceOf[messageTextElement]
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
-  def numberFormat: numberFormat = "numberFormat".asInstanceOf[numberFormat]
+  def few: few = "few".asInstanceOf[few]
   @scala.inline
-  def optionalFormatPattern: optionalFormatPattern = "optionalFormatPattern".asInstanceOf[optionalFormatPattern]
+  def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline
-  def pluralFormat: pluralFormat = "pluralFormat".asInstanceOf[pluralFormat]
+  def many: many = "many".asInstanceOf[many]
   @scala.inline
-  def selectFormat: selectFormat = "selectFormat".asInstanceOf[selectFormat]
+  def one: one = "one".asInstanceOf[one]
   @scala.inline
-  def timeFormat: timeFormat = "timeFormat".asInstanceOf[timeFormat]
+  def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  @scala.inline
+  def two: two = "two".asInstanceOf[two]
+  @scala.inline
+  def zero: zero = "zero".asInstanceOf[zero]
 }
 

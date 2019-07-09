@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ResourceNotes protected ()
   extends gitlabLib.distTemplatesResourceNotesMod.default {
-  def this(resourceType: java.lang.String, resource2Type: java.lang.String, options: gitlabLib.BaseServiceOptions) = this()
+  def this(resourceType: java.lang.String, resource2Type: java.lang.String, options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

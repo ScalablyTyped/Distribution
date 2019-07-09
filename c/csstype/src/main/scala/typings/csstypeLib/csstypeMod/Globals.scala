@@ -94,7 +94,9 @@ trait Globals
      with MsWrapThroughProperty
      with ObjectFitProperty
      with OverflowAnchorProperty
+     with OverflowBlockProperty
      with OverflowClipBoxProperty
+     with OverflowInlineProperty
      with OverflowWrapProperty
      with OverflowXProperty
      with OverflowYProperty
@@ -225,6 +227,7 @@ trait Globals
      with _ContentProperty
      with _CounterIncrementProperty
      with _CounterResetProperty
+     with _CounterSetProperty
      with _CursorProperty
      with _DisplayProperty
      with _FillProperty
@@ -365,20 +368,12 @@ trait Globals
      with _RotateProperty
      with _RowGapProperty[js.Any]
      with _ScaleProperty
-     with _ScrollMarginBlockEndProperty[js.Any]
-     with _ScrollMarginBlockProperty[js.Any]
-     with _ScrollMarginBlockStartProperty[js.Any]
-     with _ScrollMarginBottomProperty[js.Any]
-     with _ScrollMarginInlineEndProperty[js.Any]
-     with _ScrollMarginInlineStartProperty[js.Any]
-     with _ScrollMarginLeftProperty[js.Any]
-     with _ScrollMarginProperty[js.Any]
-     with _ScrollMarginRightProperty[js.Any]
-     with _ScrollMarginTopProperty[js.Any]
      with _ScrollPaddingBlockEndProperty[js.Any]
+     with _ScrollPaddingBlockProperty[js.Any]
      with _ScrollPaddingBlockStartProperty[js.Any]
      with _ScrollPaddingBottomProperty[js.Any]
      with _ScrollPaddingInlineEndProperty[js.Any]
+     with _ScrollPaddingInlineProperty[js.Any]
      with _ScrollPaddingInlineStartProperty[js.Any]
      with _ScrollPaddingLeftProperty[js.Any]
      with _ScrollPaddingProperty[js.Any]

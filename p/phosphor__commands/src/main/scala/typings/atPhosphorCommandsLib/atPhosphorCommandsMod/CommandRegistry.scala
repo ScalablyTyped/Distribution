@@ -11,15 +11,41 @@ import scala.scalajs.js.annotation._
   * Construct a new command registry.
   */
 class CommandRegistry () extends js.Object {
+  /**
+    * Clear the internal pending state.
+    */
+  var _clearPendingState: js.Any = js.native
+  /**
+    * Clear the pending timeout.
+    */
+  var _clearTimer: js.Any = js.native
   var _commandChanged: js.Any = js.native
   var _commandExecuted: js.Any = js.native
   var _commands: js.Any = js.native
   var _exactKeyMatch: js.Any = js.native
+  /**
+    * Execute the command for the given key binding.
+    *
+    * If the command is missing or disabled, a warning will be logged.
+    */
+  var _executeKeyBinding: js.Any = js.native
   var _keyBindingChanged: js.Any = js.native
   var _keyBindings: js.Any = js.native
   var _keydownEvents: js.Any = js.native
   var _keystrokes: js.Any = js.native
+  /**
+    * Handle the partial match timeout.
+    */
+  var _onPendingTimeout: js.Any = js.native
+  /**
+    * Replay the keydown events which were suppressed.
+    */
+  var _replayKeydownEvents: js.Any = js.native
   var _replaying: js.Any = js.native
+  /**
+    * Start or restart the pending timeout.
+    */
+  var _startTimer: js.Any = js.native
   var _timerID: js.Any = js.native
   /**
     * A signal emitted when a command has changed.
@@ -55,32 +81,6 @@ class CommandRegistry () extends js.Object {
     * A read-only array of the key bindings in the registry.
     */
   val keyBindings: js.Array[atPhosphorCommandsLib.atPhosphorCommandsMod.CommandRegistryNs.IKeyBinding] = js.native
-  /**
-    * Clear the internal pending state.
-    */
-  /* private */ def _clearPendingState(): js.Any = js.native
-  /**
-    * Clear the pending timeout.
-    */
-  /* private */ def _clearTimer(): js.Any = js.native
-  /**
-    * Execute the command for the given key binding.
-    *
-    * If the command is missing or disabled, a warning will be logged.
-    */
-  /* private */ def _executeKeyBinding(binding: js.Any): js.Any = js.native
-  /**
-    * Handle the partial match timeout.
-    */
-  /* private */ def _onPendingTimeout(): js.Any = js.native
-  /**
-    * Replay the keydown events which were suppressed.
-    */
-  /* private */ def _replayKeydownEvents(): js.Any = js.native
-  /**
-    * Start or restart the pending timeout.
-    */
-  /* private */ def _startTimer(): js.Any = js.native
   /**
     * Add a command to the registry.
     *

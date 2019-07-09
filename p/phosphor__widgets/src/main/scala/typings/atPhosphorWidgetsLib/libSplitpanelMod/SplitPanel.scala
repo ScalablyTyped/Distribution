@@ -15,7 +15,27 @@ import scala.scalajs.js.annotation._
 class SplitPanel ()
   extends atPhosphorWidgetsLib.libPanelMod.Panel {
   def this(options: atPhosphorWidgetsLib.libSplitpanelMod.SplitPanelNs.IOptions) = this()
+  /**
+    * Handle the `'keydown'` event for the split panel.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the split panel.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the split panel.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the split panel.
+    */
+  var _evtMouseUp: js.Any = js.native
   var _pressData: js.Any = js.native
+  /**
+    * Release the mouse grab for the split panel.
+    */
+  var _releaseMouse: js.Any = js.native
   /**
     * Get the content alignment for the split panel.
     *
@@ -57,26 +77,6 @@ class SplitPanel ()
     * Set the inter-element spacing for the split panel.
     */
   var spacing: scala.Double = js.native
-  /**
-    * Handle the `'keydown'` event for the split panel.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the split panel.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the split panel.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseup'` event for the split panel.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Release the mouse grab for the split panel.
-    */
-  /* private */ def _releaseMouse(): js.Any = js.native
   /**
     * Handle the DOM events for the split panel.
     *

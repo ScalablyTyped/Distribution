@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "js-data-adapter"
-version := "1.0.1-62d47d"
+version := "1.0.1-5876a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "js-data" % "3.0.5-447244",
+  "org.scalablytyped" %%% "js-data" % "3.0.6-447244",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

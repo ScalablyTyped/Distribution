@@ -9,51 +9,69 @@ import scala.scalajs.js.annotation._
 trait RepositoryFiles
   extends gitlabLib.distInfrastructureMod.BaseService {
   def create(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     filePath: java.lang.String,
     branch: java.lang.String,
-    content: java.lang.String
+    content: java.lang.String,
+    commitMessage: java.lang.String
   ): js.Promise[js.Object] = js.native
   def create(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     filePath: java.lang.String,
     branch: java.lang.String,
     content: java.lang.String,
-    options: gitlabLib.BaseRequestOptions
+    commitMessage: java.lang.String,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def edit(
-    projectId: gitlabLib.ProjectId,
-    filePath: java.lang.String,
-    branch: java.lang.String,
-    content: java.lang.String
-  ): js.Promise[js.Object] = js.native
-  def edit(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     filePath: java.lang.String,
     branch: java.lang.String,
     content: java.lang.String,
-    options: gitlabLib.BaseRequestOptions
+    commitMessage: java.lang.String
   ): js.Promise[js.Object] = js.native
-  def remove(projectId: gitlabLib.ProjectId, filePath: java.lang.String, branch: java.lang.String): js.Promise[js.Object] = js.native
+  def edit(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    filePath: java.lang.String,
+    branch: java.lang.String,
+    content: java.lang.String,
+    commitMessage: java.lang.String,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
   def remove(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     filePath: java.lang.String,
     branch: java.lang.String,
-    options: gitlabLib.BaseRequestOptions
+    commitMessage: java.lang.String
   ): js.Promise[js.Object] = js.native
-  def show(projectId: gitlabLib.ProjectId, filePath: java.lang.String, ref: java.lang.String): js.Promise[gitlabLib.GetResponse] = js.native
+  def remove(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    filePath: java.lang.String,
+    branch: java.lang.String,
+    commitMessage: java.lang.String,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
+  def show(projectId: gitlabLib.distServicesMod.ProjectId, filePath: java.lang.String, ref: java.lang.String): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def show(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     filePath: java.lang.String,
     ref: java.lang.String,
-    options: gitlabLib.Sudo
-  ): js.Promise[gitlabLib.GetResponse] = js.native
-  def showRaw(projectId: gitlabLib.ProjectId, filePath: java.lang.String, ref: java.lang.String): js.Promise[gitlabLib.GetResponse] = js.native
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def showRaw(projectId: gitlabLib.distServicesMod.ProjectId, filePath: java.lang.String, ref: java.lang.String): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def showRaw(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     filePath: java.lang.String,
     ref: java.lang.String,
-    options: gitlabLib.Sudo
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

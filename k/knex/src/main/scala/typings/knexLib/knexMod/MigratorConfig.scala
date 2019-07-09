@@ -14,6 +14,7 @@ trait MigratorConfig extends js.Object {
   var migrationSource: js.UndefOr[js.Any] = js.undefined
   var schemaName: js.UndefOr[java.lang.String] = js.undefined
   var sortDirsSeparately: js.UndefOr[scala.Boolean] = js.undefined
+  var stub: js.UndefOr[java.lang.String] = js.undefined
   var tableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -28,6 +29,7 @@ object MigratorConfig {
     migrationSource: js.Any = null,
     schemaName: java.lang.String = null,
     sortDirsSeparately: js.UndefOr[scala.Boolean] = js.undefined,
+    stub: java.lang.String = null,
     tableName: java.lang.String = null
   ): MigratorConfig = {
     val __obj = js.Dynamic.literal()
@@ -39,6 +41,7 @@ object MigratorConfig {
     if (migrationSource != null) __obj.updateDynamic("migrationSource")(migrationSource)
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
     if (!js.isUndefined(sortDirsSeparately)) __obj.updateDynamic("sortDirsSeparately")(sortDirsSeparately)
+    if (stub != null) __obj.updateDynamic("stub")(stub)
     if (tableName != null) __obj.updateDynamic("tableName")(tableName)
     __obj.asInstanceOf[MigratorConfig]
   }

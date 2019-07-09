@@ -38,11 +38,26 @@ object nbformatNs extends js.Object {
   }
   
   /**
+    * The Jupyter metadata namespace.
+    */
+  trait IBaseCellJupyterMetadata
+    extends atPhosphorCoreutilsLib.libJsonMod.JSONObject {
+    /**
+      * Whether the source is hidden.
+      */
+    var source_hidden: scala.Boolean
+  }
+  
+  /**
     * Cell-level metadata.
     */
   trait IBaseCellMetadata
     extends atPhosphorCoreutilsLib.libJsonMod.JSONObject
        with ICellMetadata {
+    /**
+      * The Jupyter metadata namespace
+      */
+    var jupyter: stdLib.Partial[IBaseCellJupyterMetadata]
     /**
       * The cell's name. If present, must be a non-empty string.
       */
@@ -111,6 +126,16 @@ object nbformatNs extends js.Object {
   }
   
   /**
+    * The Jupyter metadata namespace for code cells.
+    */
+  trait ICodeCellJupyterMetadata extends IBaseCellJupyterMetadata {
+    /**
+      * Whether the outputs are hidden. See https://github.com/jupyter/nbformat/issues/137.
+      */
+    var outputs_hidden: scala.Boolean
+  }
+  
+  /**
     * Metadata for a code cell.
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
@@ -119,6 +144,11 @@ object nbformatNs extends js.Object {
       * Whether the cell is collapsed/expanded.
       */
     var collapsed: scala.Boolean
+    /**
+      * The Jupyter metadata namespace
+      */
+    @JSName("jupyter")
+    var jupyter_ICodeCellMetadata: stdLib.Partial[ICodeCellJupyterMetadata]
     /**
       * Whether the cell's output is scrolled, unscrolled, or autoscrolled.
       */
@@ -380,7 +410,7 @@ object nbformatNs extends js.Object {
     */
   def isDisplayUpdate(output: IOutput): /* is @jupyterlab/coreutils.@jupyterlab/coreutils/lib/nbformat.nbformat.IDisplayUpdate */ scala.Boolean = js.native
   /**
-    * Test whether an output is from a stream.
+    * Test whether an output is an error.
     */
   def isError(output: IOutput): /* is @jupyterlab/coreutils.@jupyterlab/coreutils/lib/nbformat.nbformat.IError */ scala.Boolean = js.native
   /**

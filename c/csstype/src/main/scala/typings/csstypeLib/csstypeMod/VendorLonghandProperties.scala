@@ -565,6 +565,12 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var WebkitColumnCount: js.UndefOr[ColumnCountProperty] = js.undefined
   /**
+    * The **`column-fill`** CSS property controls how an element's contents are balanced when broken into columns.
+    *
+    * **Initial value**: `balance`
+    */
+  var WebkitColumnFill: js.UndefOr[ColumnFillProperty] = js.undefined
+  /**
     * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
     *
     * **Initial value**: `normal`
@@ -963,12 +969,6 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var WebkitWritingMode: js.UndefOr[WritingModeProperty] = js.undefined
   /**
-    * The **`mask-size`** CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained in order to preserve its intrinsic ratio.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitmaskSize: js.UndefOr[MaskSizeProperty[TLength]] = js.undefined
-  /**
     * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
     *
     * **Initial value**: `false`
@@ -1257,12 +1257,6 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var msTextOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
   /**
-    * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
-    *
-    * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
-    */
-  var msTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
-  /**
     * The **`touch-action`** CSS property sets how a region can be manipulated by a touchscreen user (for example, by zooming features built into the browser).
     *
     * **Initial value**: `auto`
@@ -1286,6 +1280,30 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     * **Initial value**: `50% 50% 0`
     */
   var msTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.undefined
+  /**
+    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
+    *
+    * **Initial value**: `0s`
+    */
+  var msTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
+  /**
+    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
+    *
+    * **Initial value**: `0s`
+    */
+  var msTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
+  /**
+    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
+    *
+    * **Initial value**: all
+    */
+  var msTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
+  /**
+    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+    *
+    * **Initial value**: `ease`
+    */
+  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
     *
@@ -1422,6 +1440,7 @@ object VendorLonghandProperties {
     WebkitClipPath: ClipPathProperty = null,
     WebkitColorAdjust: ColorAdjustProperty = null,
     WebkitColumnCount: ColumnCountProperty = null,
+    WebkitColumnFill: ColumnFillProperty = null,
     WebkitColumnGap: ColumnGapProperty[TLength] = null,
     WebkitColumnRuleColor: ColumnRuleColorProperty = null,
     WebkitColumnRuleStyle: ColumnRuleStyleProperty = null,
@@ -1489,7 +1508,6 @@ object VendorLonghandProperties {
     WebkitUserModify: WebkitUserModifyProperty = null,
     WebkitUserSelect: UserSelectProperty = null,
     WebkitWritingMode: WritingModeProperty = null,
-    WebkitmaskSize: MaskSizeProperty[TLength] = null,
     msAccelerator: MsAcceleratorProperty = null,
     msAlignSelf: AlignSelfProperty = null,
     msBlockProgression: MsBlockProgressionProperty = null,
@@ -1538,11 +1556,14 @@ object VendorLonghandProperties {
     msTextAutospace: MsTextAutospaceProperty = null,
     msTextCombineHorizontal: TextCombineUprightProperty = null,
     msTextOverflow: TextOverflowProperty = null,
-    msTextSizeAdjust: TextSizeAdjustProperty = null,
     msTouchAction: TouchActionProperty = null,
     msTouchSelect: MsTouchSelectProperty = null,
     msTransform: TransformProperty = null,
     msTransformOrigin: TransformOriginProperty[TLength] = null,
+    msTransitionDelay: GlobalsString = null,
+    msTransitionDuration: GlobalsString = null,
+    msTransitionProperty: TransitionPropertyProperty = null,
+    msTransitionTimingFunction: TransitionTimingFunctionProperty = null,
     msUserSelect: MsUserSelectProperty = null,
     msWordBreak: WordBreakProperty = null,
     msWrapFlow: MsWrapFlowProperty = null,
@@ -1646,6 +1667,7 @@ object VendorLonghandProperties {
     if (WebkitClipPath != null) __obj.updateDynamic("WebkitClipPath")(WebkitClipPath.asInstanceOf[js.Any])
     if (WebkitColorAdjust != null) __obj.updateDynamic("WebkitColorAdjust")(WebkitColorAdjust)
     if (WebkitColumnCount != null) __obj.updateDynamic("WebkitColumnCount")(WebkitColumnCount.asInstanceOf[js.Any])
+    if (WebkitColumnFill != null) __obj.updateDynamic("WebkitColumnFill")(WebkitColumnFill)
     if (WebkitColumnGap != null) __obj.updateDynamic("WebkitColumnGap")(WebkitColumnGap.asInstanceOf[js.Any])
     if (WebkitColumnRuleColor != null) __obj.updateDynamic("WebkitColumnRuleColor")(WebkitColumnRuleColor.asInstanceOf[js.Any])
     if (WebkitColumnRuleStyle != null) __obj.updateDynamic("WebkitColumnRuleStyle")(WebkitColumnRuleStyle.asInstanceOf[js.Any])
@@ -1713,7 +1735,6 @@ object VendorLonghandProperties {
     if (WebkitUserModify != null) __obj.updateDynamic("WebkitUserModify")(WebkitUserModify)
     if (WebkitUserSelect != null) __obj.updateDynamic("WebkitUserSelect")(WebkitUserSelect)
     if (WebkitWritingMode != null) __obj.updateDynamic("WebkitWritingMode")(WebkitWritingMode)
-    if (WebkitmaskSize != null) __obj.updateDynamic("WebkitmaskSize")(WebkitmaskSize.asInstanceOf[js.Any])
     if (msAccelerator != null) __obj.updateDynamic("msAccelerator")(msAccelerator)
     if (msAlignSelf != null) __obj.updateDynamic("msAlignSelf")(msAlignSelf.asInstanceOf[js.Any])
     if (msBlockProgression != null) __obj.updateDynamic("msBlockProgression")(msBlockProgression)
@@ -1762,11 +1783,14 @@ object VendorLonghandProperties {
     if (msTextAutospace != null) __obj.updateDynamic("msTextAutospace")(msTextAutospace)
     if (msTextCombineHorizontal != null) __obj.updateDynamic("msTextCombineHorizontal")(msTextCombineHorizontal.asInstanceOf[js.Any])
     if (msTextOverflow != null) __obj.updateDynamic("msTextOverflow")(msTextOverflow.asInstanceOf[js.Any])
-    if (msTextSizeAdjust != null) __obj.updateDynamic("msTextSizeAdjust")(msTextSizeAdjust.asInstanceOf[js.Any])
     if (msTouchAction != null) __obj.updateDynamic("msTouchAction")(msTouchAction.asInstanceOf[js.Any])
     if (msTouchSelect != null) __obj.updateDynamic("msTouchSelect")(msTouchSelect)
     if (msTransform != null) __obj.updateDynamic("msTransform")(msTransform.asInstanceOf[js.Any])
     if (msTransformOrigin != null) __obj.updateDynamic("msTransformOrigin")(msTransformOrigin.asInstanceOf[js.Any])
+    if (msTransitionDelay != null) __obj.updateDynamic("msTransitionDelay")(msTransitionDelay.asInstanceOf[js.Any])
+    if (msTransitionDuration != null) __obj.updateDynamic("msTransitionDuration")(msTransitionDuration.asInstanceOf[js.Any])
+    if (msTransitionProperty != null) __obj.updateDynamic("msTransitionProperty")(msTransitionProperty.asInstanceOf[js.Any])
+    if (msTransitionTimingFunction != null) __obj.updateDynamic("msTransitionTimingFunction")(msTransitionTimingFunction.asInstanceOf[js.Any])
     if (msUserSelect != null) __obj.updateDynamic("msUserSelect")(msUserSelect)
     if (msWordBreak != null) __obj.updateDynamic("msWordBreak")(msWordBreak)
     if (msWrapFlow != null) __obj.updateDynamic("msWrapFlow")(msWrapFlow)

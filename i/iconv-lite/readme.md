@@ -1,7 +1,7 @@
 
 # Scala.js typings for iconv-lite
 
-Typings are for version 0.4.24
+Typings are for version 0.5.0
 
 ## Library description:
 Convert character encodings in pure javascript.

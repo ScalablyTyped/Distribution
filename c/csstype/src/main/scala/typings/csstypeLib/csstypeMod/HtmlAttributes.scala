@@ -72,6 +72,7 @@ import scala.scalajs.js.annotation._
   - csstypeLib.csstypeLibStrings.`[draggable]`
   - csstypeLib.csstypeLibStrings.`[dropzone]`
   - csstypeLib.csstypeLibStrings.`[enctype]`
+  - csstypeLib.csstypeLibStrings.`[exportparts]`
   - csstypeLib.csstypeLibStrings.`[face]`
   - csstypeLib.csstypeLibStrings.`[for]`
   - csstypeLib.csstypeLibStrings.`[form]`
@@ -157,6 +158,7 @@ import scala.scalajs.js.annotation._
   - csstypeLib.csstypeLibStrings.`[onunload]`
   - csstypeLib.csstypeLibStrings.`[open]`
   - csstypeLib.csstypeLibStrings.`[optimum]`
+  - csstypeLib.csstypeLibStrings.`[part]`
   - csstypeLib.csstypeLibStrings.`[ping]`
   - csstypeLib.csstypeLibStrings.`[placeholder]`
   - csstypeLib.csstypeLibStrings.`[played]`

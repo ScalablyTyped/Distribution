@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "subscriptions-transport-ws"
-version := "0.9.16-5ecebc"
+version := "0.9.16-9e7d5d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "eventemitter3" % "3.1.2-2b0ec8",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-25ddc7",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190624Z-c591ae",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "std" % "3.5-983486",

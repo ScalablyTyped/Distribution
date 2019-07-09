@@ -13,8 +13,6 @@ trait IOptions extends IWsdlBaseOptions {
   var endpoint: js.UndefOr[java.lang.String] = js.undefined
   /** set specific key instead of <pre><soap:Body></soap:Body></pre>. */
   var envelopeKey: js.UndefOr[java.lang.String] = js.undefined
-  /** set proper headers for SOAP v1.2. */
-  var forceSoap12Headers: js.UndefOr[scala.Boolean] = js.undefined
   /** provide your own http client that implements request(rurl, data, callback, exheaders, exoptions) */
   var httpClient: js.UndefOr[soapLib.libHttpMod.HttpClient] = js.undefined
   /** if your wsdl operations contains names with Async suffix, you will need to override the default promise suffix to a custom one, default: Async. */

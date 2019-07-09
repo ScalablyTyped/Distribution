@@ -62,6 +62,11 @@ object apiregistrationNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.apiregistrationV1APIServiceMod.APIService = js.native
+      /**
+        * Returns true if the given object is an instance of APIService.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1/APIService.APIService */ scala.Boolean = js.native
     }
     
     /* static members */
@@ -85,6 +90,11 @@ object apiregistrationNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.apiregistrationV1APIServiceListMod.APIServiceList = js.native
+      /**
+        * Returns true if the given object is an instance of APIServiceList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1/APIServiceList.APIServiceList */ scala.Boolean = js.native
     }
     
   }
@@ -143,6 +153,11 @@ object apiregistrationNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.apiregistrationV1beta1APIServiceMod.APIService = js.native
+      /**
+        * Returns true if the given object is an instance of APIService.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1beta1/APIService.APIService */ scala.Boolean = js.native
     }
     
     /* static members */
@@ -166,6 +181,11 @@ object apiregistrationNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.apiregistrationV1beta1APIServiceListMod.APIServiceList = js.native
+      /**
+        * Returns true if the given object is an instance of APIServiceList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiregistration/v1beta1/APIServiceList.APIServiceList */ scala.Boolean = js.native
     }
     
   }

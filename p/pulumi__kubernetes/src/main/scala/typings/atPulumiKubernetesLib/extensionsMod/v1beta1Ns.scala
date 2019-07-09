@@ -209,6 +209,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1DaemonSetMod.DaemonSet = js.native
+    /**
+      * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/DaemonSet.DaemonSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -232,6 +237,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1DaemonSetListMod.DaemonSetList = js.native
+    /**
+      * Returns true if the given object is an instance of DaemonSetList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/DaemonSetList.DaemonSetList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -255,6 +265,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1DeploymentMod.Deployment = js.native
+    /**
+      * Returns true if the given object is an instance of Deployment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/Deployment.Deployment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -278,6 +293,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1DeploymentListMod.DeploymentList = js.native
+    /**
+      * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/DeploymentList.DeploymentList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -301,6 +321,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1IngressMod.Ingress = js.native
+    /**
+      * Returns true if the given object is an instance of Ingress.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/Ingress.Ingress */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -324,6 +349,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1IngressListMod.IngressList = js.native
+    /**
+      * Returns true if the given object is an instance of IngressList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/IngressList.IngressList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -347,6 +377,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1NetworkPolicyMod.NetworkPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/NetworkPolicy.NetworkPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -370,6 +405,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1NetworkPolicyListMod.NetworkPolicyList = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkPolicyList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/NetworkPolicyList.NetworkPolicyList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -393,6 +433,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of PodSecurityPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/PodSecurityPolicy.PodSecurityPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -416,6 +461,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
+    /**
+      * Returns true if the given object is an instance of PodSecurityPolicyList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/PodSecurityPolicyList.PodSecurityPolicyList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -439,6 +489,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1ReplicaSetMod.ReplicaSet = js.native
+    /**
+      * Returns true if the given object is an instance of ReplicaSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ReplicaSet.ReplicaSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -462,6 +517,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.extensionsV1beta1ReplicaSetListMod.ReplicaSetList = js.native
+    /**
+      * Returns true if the given object is an instance of ReplicaSetList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ReplicaSetList.ReplicaSetList */ scala.Boolean = js.native
   }
   
 }

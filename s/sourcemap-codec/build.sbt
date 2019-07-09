@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sourcemap-codec"
-version := "1.4.4-61023d"
+version := "1.4.6-61023d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

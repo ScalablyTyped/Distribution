@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param options - The options for initializing the widget.
   */
 class Widget ()
-  extends atPhosphorDisposableLib.atPhosphorDisposableMod.IDisposable
+  extends atPhosphorDisposableLib.atPhosphorDisposableMod.IObservableDisposable
      with atPhosphorMessagingLib.atPhosphorMessagingMod.IMessageHandler {
   def this(options: atPhosphorWidgetsLib.libWidgetMod.WidgetNs.IOptions) = this()
   var _disposed: js.Any = js.native
@@ -25,9 +25,10 @@ class Widget ()
     */
   val dataset: stdLib.DOMStringMap = js.native
   /**
-    * A signal emitted when the widget is disposed.
+    * A signal emitted when the object is disposed.
     */
-  val disposed: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[this.type, scala.Unit] = js.native
+  /* CompleteClass */
+  override val disposed: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[this.type, scala.Unit] = js.native
   /**
     * Get the id of the widget's DOM node.
     */

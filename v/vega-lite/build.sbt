@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-lite"
-version := "2.6.0-66ae76"
+version := "2.7.0-66ae76"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

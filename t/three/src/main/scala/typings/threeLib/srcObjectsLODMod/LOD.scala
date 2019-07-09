@@ -11,8 +11,8 @@ class LOD ()
   extends threeLib.srcCoreObject3DMod.Object3D {
   var levels: js.Array[threeLib.Anon_Distance] = js.native
   /**
-    * @deprecated Use {@link LOD#levels .levels} instead.
-    */
+  	 * @deprecated Use {@link LOD#levels .levels} instead.
+  	 */
   var objects: js.Array[_] = js.native
   @JSName("type")
   var type_LOD: threeLib.threeLibStrings.LOD = js.native

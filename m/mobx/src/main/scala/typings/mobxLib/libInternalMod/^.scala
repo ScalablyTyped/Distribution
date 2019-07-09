@@ -117,7 +117,12 @@ object ^ extends js.Object {
   def deprecated(thing: java.lang.String, replacement: java.lang.String): scala.Boolean = js.native
   def endBatch(): scala.Unit = js.native
   def entries[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[js.Tuple2[scala.Double, T]] = js.native
-  def entries[T](obj: T): js.Array[js.Tuple2[java.lang.String, _]] = js.native
+  def entries[T](obj: T): js.Array[
+    js.Tuple2[
+      java.lang.String, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   def entries[T](set: ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
   def entries[K, T](map: ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = js.native
   def executeAction(actionName: java.lang.String, fn: js.Function): js.Any = js.native
@@ -472,7 +477,7 @@ object ^ extends js.Object {
   def untrackedEnd(prev: mobxLib.libCoreDerivationMod.IDerivation): scala.Unit = js.native
   def untrackedStart(): mobxLib.libCoreDerivationMod.IDerivation | scala.Null = js.native
   def values[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[T] = js.native
-  def values[T](obj: T): js.Array[_] = js.native
+  def values[T](obj: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def values[T](set: ObservableSet[T]): js.Array[T] = js.native
   def values[K, T](map: ObservableMap[K, T]): js.Array[T] = js.native
   def when(predicate: js.Function0[scala.Boolean]): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native

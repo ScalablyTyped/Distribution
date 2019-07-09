@@ -44,10 +44,11 @@ object ^ extends js.Object {
   def allowScrollOnElement(element: stdLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[scala.Unit] = js.native
   def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): scala.Boolean = js.native
-  def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
+  def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ForwardRefExoticComponent[
+    reactLib.reactMod.PropsWithoutRef[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder]
+  ] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
   def assign(target: js.Any, args: js.Any*): js.Any = js.native
-  def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Configurable[T] | scala.Unit = js.native
   def calculatePrecision(value: java.lang.String): scala.Double = js.native
   def calculatePrecision(value: scala.Double): scala.Double = js.native
   def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): js.Function2[
@@ -65,7 +66,6 @@ object ^ extends js.Object {
     atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet]
   ] = js.native
   def createArray[T](size: scala.Double, getItem: js.Function1[/* index */ scala.Double, T]): js.Array[T] = js.native
-  def createRef[T](): atUifabricUtilitiesLib.libCreateRefMod.RefObject[T] = js.native
   def css(args: atUifabricUtilitiesLib.libCssMod.ICssInput*): java.lang.String = js.native
   def customizable(scope: java.lang.String, fields: js.Array[java.lang.String]): js.Function1[/* ComposedComponent */ reactLib.reactMod.ComponentType[_], _] = js.native
   def customizable(scope: java.lang.String, fields: js.Array[java.lang.String], concatStyles: scala.Boolean): js.Function1[/* ComposedComponent */ reactLib.reactMod.ComponentType[_], _] = js.native
@@ -226,10 +226,11 @@ object ^ extends js.Object {
   def hasVerticalOverflow(element: stdLib.HTMLElement): scala.Boolean = js.native
   def hoistMethods(destination: js.Any, source: js.Any): js.Array[java.lang.String] = js.native
   def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def hoistStatics[TSource, TDest](source: TSource, dest: TDest): TDest = js.native
+  def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = js.native
   def initializeComponentRef[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_] */, TState](obj: reactLib.reactMod.Component[TProps, TState, _]): scala.Unit = js.native
   def initializeFocusRects(): scala.Unit = js.native
   def initializeFocusRects(window: stdLib.Window): scala.Unit = js.native
+  def isControlled[P](props: P, valueProp: java.lang.String): scala.Boolean = js.native
   def isDirectionalKeyCode(which: scala.Double): scala.Boolean = js.native
   def isElementFocusSubZone(): scala.Boolean = js.native
   def isElementFocusSubZone(element: stdLib.HTMLElement): scala.Boolean = js.native
@@ -252,7 +253,7 @@ object ^ extends js.Object {
       js.UndefOr[T]
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
-  def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_ConfigurableGet[T] = js.native
+  def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Configurable[T] = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
   def mergeAriaAttributeValues(ariaAttributes: js.UndefOr[java.lang.String]*): js.UndefOr[java.lang.String] = js.native
@@ -314,13 +315,10 @@ object ^ extends js.Object {
   def portalContainsElement(target: stdLib.HTMLElement, parent: stdLib.HTMLElement): scala.Boolean = js.native
   def precisionRound(value: scala.Double, precision: scala.Double): scala.Double = js.native
   def precisionRound(value: scala.Double, precision: scala.Double, base: scala.Double): scala.Double = js.native
-  def provideContext[TContext, TProps](
-    contextTypes: propDashTypesLib.propDashTypesMod.ValidationMap[TContext],
-    mapPropsToContext: js.Function1[/* props */ TProps, TContext]
-  ): reactLib.reactMod.ComponentType[TProps] = js.native
   def raiseClick(target: stdLib.Element): scala.Unit = js.native
   def removeIndex[T](array: js.Array[T], index: scala.Double): js.Array[T] = js.native
   def replaceElement[T](array: js.Array[T], newElement: T, index: scala.Double): js.Array[T] = js.native
+  def resetControlledWarnings(): scala.Unit = js.native
   def resetIds(): scala.Unit = js.native
   def resetIds(counter: scala.Double): scala.Unit = js.native
   def resetMemoizations(): scala.Unit = js.native
@@ -405,6 +403,7 @@ object ^ extends js.Object {
     conditionalPropName: java.lang.String,
     condition: scala.Boolean
   ): scala.Unit = js.native
+  def warnControlledUsage[P](params: atUifabricUtilitiesLib.libWarnWarnControlledUsageMod.IWarnControlledUsageParams[P]): scala.Unit = js.native
   def warnDeprecations[P](
     componentName: java.lang.String,
     props: P,

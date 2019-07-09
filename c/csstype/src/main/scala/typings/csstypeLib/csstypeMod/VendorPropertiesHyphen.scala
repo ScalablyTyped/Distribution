@@ -129,11 +129,15 @@ object VendorPropertiesHyphen {
     `-ms-text-autospace`: MsTextAutospaceProperty = null,
     `-ms-text-combine-horizontal`: TextCombineUprightProperty = null,
     `-ms-text-overflow`: TextOverflowProperty = null,
-    `-ms-text-size-adjust`: TextSizeAdjustProperty = null,
     `-ms-touch-action`: TouchActionProperty = null,
     `-ms-touch-select`: MsTouchSelectProperty = null,
     `-ms-transform`: TransformProperty = null,
     `-ms-transform-origin`: TransformOriginProperty[TLength] = null,
+    `-ms-transition`: TransitionProperty = null,
+    `-ms-transition-delay`: GlobalsString = null,
+    `-ms-transition-duration`: GlobalsString = null,
+    `-ms-transition-property`: TransitionPropertyProperty = null,
+    `-ms-transition-timing-function`: TransitionTimingFunctionProperty = null,
     `-ms-user-select`: MsUserSelectProperty = null,
     `-ms-word-break`: WordBreakProperty = null,
     `-ms-wrap-flow`: MsWrapFlowProperty = null,
@@ -181,6 +185,7 @@ object VendorPropertiesHyphen {
     `-webkit-clip-path`: ClipPathProperty = null,
     `-webkit-color-adjust`: ColorAdjustProperty = null,
     `-webkit-column-count`: ColumnCountProperty = null,
+    `-webkit-column-fill`: ColumnFillProperty = null,
     `-webkit-column-gap`: ColumnGapProperty[TLength] = null,
     `-webkit-column-rule`: ColumnRuleProperty[TLength] = null,
     `-webkit-column-rule-color`: ColumnRuleColorProperty = null,
@@ -255,8 +260,7 @@ object VendorPropertiesHyphen {
     `-webkit-transition-timing-function`: TransitionTimingFunctionProperty = null,
     `-webkit-user-modify`: WebkitUserModifyProperty = null,
     `-webkit-user-select`: UserSelectProperty = null,
-    `-webkit-writing-mode`: WritingModeProperty = null,
-    `-webkitmask-size`: MaskSizeProperty[TLength] = null
+    `-webkit-writing-mode`: WritingModeProperty = null
   ): VendorPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`-moz-animation` != null) __obj.updateDynamic("-moz-animation")(`-moz-animation`.asInstanceOf[js.Any])
@@ -376,11 +380,15 @@ object VendorPropertiesHyphen {
     if (`-ms-text-autospace` != null) __obj.updateDynamic("-ms-text-autospace")(`-ms-text-autospace`)
     if (`-ms-text-combine-horizontal` != null) __obj.updateDynamic("-ms-text-combine-horizontal")(`-ms-text-combine-horizontal`.asInstanceOf[js.Any])
     if (`-ms-text-overflow` != null) __obj.updateDynamic("-ms-text-overflow")(`-ms-text-overflow`.asInstanceOf[js.Any])
-    if (`-ms-text-size-adjust` != null) __obj.updateDynamic("-ms-text-size-adjust")(`-ms-text-size-adjust`.asInstanceOf[js.Any])
     if (`-ms-touch-action` != null) __obj.updateDynamic("-ms-touch-action")(`-ms-touch-action`.asInstanceOf[js.Any])
     if (`-ms-touch-select` != null) __obj.updateDynamic("-ms-touch-select")(`-ms-touch-select`)
     if (`-ms-transform` != null) __obj.updateDynamic("-ms-transform")(`-ms-transform`.asInstanceOf[js.Any])
     if (`-ms-transform-origin` != null) __obj.updateDynamic("-ms-transform-origin")(`-ms-transform-origin`.asInstanceOf[js.Any])
+    if (`-ms-transition` != null) __obj.updateDynamic("-ms-transition")(`-ms-transition`.asInstanceOf[js.Any])
+    if (`-ms-transition-delay` != null) __obj.updateDynamic("-ms-transition-delay")(`-ms-transition-delay`.asInstanceOf[js.Any])
+    if (`-ms-transition-duration` != null) __obj.updateDynamic("-ms-transition-duration")(`-ms-transition-duration`.asInstanceOf[js.Any])
+    if (`-ms-transition-property` != null) __obj.updateDynamic("-ms-transition-property")(`-ms-transition-property`.asInstanceOf[js.Any])
+    if (`-ms-transition-timing-function` != null) __obj.updateDynamic("-ms-transition-timing-function")(`-ms-transition-timing-function`.asInstanceOf[js.Any])
     if (`-ms-user-select` != null) __obj.updateDynamic("-ms-user-select")(`-ms-user-select`)
     if (`-ms-word-break` != null) __obj.updateDynamic("-ms-word-break")(`-ms-word-break`)
     if (`-ms-wrap-flow` != null) __obj.updateDynamic("-ms-wrap-flow")(`-ms-wrap-flow`)
@@ -428,6 +436,7 @@ object VendorPropertiesHyphen {
     if (`-webkit-clip-path` != null) __obj.updateDynamic("-webkit-clip-path")(`-webkit-clip-path`.asInstanceOf[js.Any])
     if (`-webkit-color-adjust` != null) __obj.updateDynamic("-webkit-color-adjust")(`-webkit-color-adjust`)
     if (`-webkit-column-count` != null) __obj.updateDynamic("-webkit-column-count")(`-webkit-column-count`.asInstanceOf[js.Any])
+    if (`-webkit-column-fill` != null) __obj.updateDynamic("-webkit-column-fill")(`-webkit-column-fill`)
     if (`-webkit-column-gap` != null) __obj.updateDynamic("-webkit-column-gap")(`-webkit-column-gap`.asInstanceOf[js.Any])
     if (`-webkit-column-rule` != null) __obj.updateDynamic("-webkit-column-rule")(`-webkit-column-rule`.asInstanceOf[js.Any])
     if (`-webkit-column-rule-color` != null) __obj.updateDynamic("-webkit-column-rule-color")(`-webkit-column-rule-color`.asInstanceOf[js.Any])
@@ -503,7 +512,6 @@ object VendorPropertiesHyphen {
     if (`-webkit-user-modify` != null) __obj.updateDynamic("-webkit-user-modify")(`-webkit-user-modify`)
     if (`-webkit-user-select` != null) __obj.updateDynamic("-webkit-user-select")(`-webkit-user-select`)
     if (`-webkit-writing-mode` != null) __obj.updateDynamic("-webkit-writing-mode")(`-webkit-writing-mode`)
-    if (`-webkitmask-size` != null) __obj.updateDynamic("-webkitmask-size")(`-webkitmask-size`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VendorPropertiesHyphen[TLength]]
   }
 }

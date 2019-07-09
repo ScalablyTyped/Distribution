@@ -8,113 +8,257 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MergeRequests
   extends gitlabLib.distInfrastructureMod.BaseService {
-  def accept(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
   def accept(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
-    options: gitlabLib.AcceptMergeRequestOptions with gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def accept(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distServicesMod.AcceptMergeRequestOptions with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def addSpentTime(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
     duration: java.lang.String
   ): js.Promise[js.Object] = js.native
   def addSpentTime(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
     duration: java.lang.String,
-    options: gitlabLib.Sudo
+    options: gitlabLib.distInfrastructureMod.Sudo
   ): js.Promise[js.Object] = js.native
   def addTimeEstimate(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
     duration: java.lang.String
   ): js.Promise[js.Object] = js.native
   def addTimeEstimate(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
     duration: java.lang.String,
-    options: gitlabLib.Sudo
+    options: gitlabLib.distInfrastructureMod.Sudo
   ): js.Promise[js.Object] = js.native
   def all(
-    hasProjectIdGroupIdOptions: (gitlabLib.Anon_ProjectId_1917859966 | gitlabLib.Anon_GroupId | js.Object) with gitlabLib.PaginatedRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    hasProjectIdGroupIdOptions: (gitlabLib.Anon_ProjectId_1556160014 | gitlabLib.Anon_GroupId_373224993 | js.Object) with gitlabLib.distInfrastructureMod.PaginatedRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def approvals(
-    projectId: gitlabLib.ProjectId,
-    hasMergerequestIIdOptions: gitlabLib.Anon_MergerequestIId with gitlabLib.BaseRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    hasMergerequestIIdOptions: gitlabLib.Anon_MergerequestIId with gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def approve(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
-    options: gitlabLib.Anon_Sha with gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.Anon_Sha with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def approvers(
-    projectId: gitlabLib.ProjectId,
-    approverIds: js.Array[gitlabLib.UserId],
-    approverGroupIds: js.Array[gitlabLib.GroupId],
-    hasMergerequestIIdOptions: gitlabLib.Anon_MergerequestIId with gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    approverIds: js.Array[gitlabLib.distServicesMod.UserId],
+    approverGroupIds: js.Array[gitlabLib.distServicesMod.GroupId],
+    hasMergerequestIIdOptions: gitlabLib.Anon_MergerequestIId with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
-  def cancelOnPipelineSucess(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
-  def cancelOnPipelineSucess(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def changes(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def changes(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def closesIssues(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def closesIssues(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def commits(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def commits(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
+  def cancelOnPipelineSucess(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def cancelOnPipelineSucess(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
+  def changes(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def changes(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def closesIssues(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def closesIssues(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def commits(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def commits(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def create(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     sourceBranch: java.lang.String,
     targetBranch: java.lang.String,
     title: java.lang.String
   ): js.Promise[js.Object] = js.native
   def create(
-    projectId: gitlabLib.ProjectId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
     sourceBranch: java.lang.String,
     targetBranch: java.lang.String,
     title: java.lang.String,
-    options: gitlabLib.CreateMergeRequestOptions with gitlabLib.BaseRequestOptions
+    options: gitlabLib.distServicesMod.CreateMergeRequestOptions with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
-  def edit(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
   def edit(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
-    options: gitlabLib.UpdateMergeRequestOptions with gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def edit(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distServicesMod.UpdateMergeRequestOptions with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def editApprovals(
-    projectId: gitlabLib.ProjectId,
-    hasMergerequestIIdOptions: gitlabLib.Anon_MergerequestIId with gitlabLib.BaseRequestOptions
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    hasMergerequestIIdOptions: gitlabLib.Anon_MergerequestIId with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
-  def participants(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def participants(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def pipelines(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def pipelines(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def remove(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
-  def remove(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def resetSpentTime(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
-  def resetSpentTime(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def resetTimeEstimate(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
-  def resetTimeEstimate(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def show(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
+  def participants(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def participants(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def pipelines(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def pipelines(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def remove(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def remove(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
+  def resetSpentTime(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def resetSpentTime(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
+  def resetTimeEstimate(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def resetTimeEstimate(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
   def show(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
-    options: gitlabLib.ShowMergeRequestOptions with gitlabLib.BaseRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
-  def timeStats(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def timeStats(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
-  def unapprove(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
-  def unapprove(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def unsubscribe(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[js.Object] = js.native
-  def unsubscribe(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def version(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, versionId: scala.Double): js.Promise[gitlabLib.GetResponse] = js.native
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def show(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distServicesMod.ShowMergeRequestOptions with gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def timeStats(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def timeStats(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def unapprove(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def unapprove(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
+  def unsubscribe(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[js.Object] = js.native
+  def unsubscribe(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
   def version(
-    projectId: gitlabLib.ProjectId,
-    mergerequestIId: gitlabLib.MergeRequestId,
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    versionId: scala.Double
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def version(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
     versionId: scala.Double,
-    options: gitlabLib.Sudo
-  ): js.Promise[gitlabLib.GetResponse] = js.native
-  def versions(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId): js.Promise[gitlabLib.GetResponse] = js.native
-  def versions(projectId: gitlabLib.ProjectId, mergerequestIId: gitlabLib.MergeRequestId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def versions(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def versions(
+    projectId: gitlabLib.distServicesMod.ProjectId,
+    mergerequestIId: gitlabLib.distServicesMod.MergeRequestId,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

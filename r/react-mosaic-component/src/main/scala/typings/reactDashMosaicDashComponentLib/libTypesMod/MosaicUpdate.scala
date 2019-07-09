@@ -13,7 +13,7 @@ trait MosaicUpdate[T /* <: MosaicKey */] extends js.Object {
 object MosaicUpdate {
   @scala.inline
   def apply[T /* <: MosaicKey */](path: MosaicPath, spec: MosaicUpdateSpec[T]): MosaicUpdate[T] = {
-    val __obj = js.Dynamic.literal(path = path, spec = spec)
+    val __obj = js.Dynamic.literal(path = path, spec = spec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MosaicUpdate[T]]
   }

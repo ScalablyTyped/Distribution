@@ -19,7 +19,6 @@ class Deployment protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.appsNs.v1beta1Ns.Deployment) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.appsNs.v1beta1Ns.Deployment, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -46,7 +45,6 @@ class Deployment protected ()
     * Most recently observed status of the Deployment.
     */
   val status: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.DeploymentStatus] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.appsNs.v1beta1Ns.Deployment = js.native
 }
 
 /* static members */
@@ -71,5 +69,10 @@ object Deployment extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.appsV1beta1DeploymentMod.Deployment = js.native
+  /**
+    * Returns true if the given object is an instance of Deployment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/Deployment.Deployment */ scala.Boolean = js.native
 }
 

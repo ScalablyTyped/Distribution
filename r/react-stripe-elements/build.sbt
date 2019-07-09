@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-stripe-elements"
-version := "1.1-dt-20181231Z-a90d71"
+version := "1.1-dt-20181231Z-39a974"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
   "org.scalablytyped" %%% "std" % "3.5-983486",
   "org.scalablytyped" %%% "stripe-v3" % "3.1-dt-20190708Z-e31dbb")
 publishArtifact in packageDoc := false

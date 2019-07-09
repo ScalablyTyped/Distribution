@@ -1,7 +1,7 @@
 
 # Scala.js typings for globby
 
-Typings are for version 9.2.0
+Typings are for version 10.0.1
 
 ## Library description:
 Extends `glob` with support for multiple patterns and exposes a Promise API

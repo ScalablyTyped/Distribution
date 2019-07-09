@@ -5,56 +5,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Minimal `EventEmitter` interface that is molded against the Node.js
+  * `EventEmitter` interface.
+  */
 @js.native
-trait EventEmitter[EventTypes /* <: java.lang.String | js.Symbol */] extends js.Object {
-  def addListener(event: EventTypes, fn: ListenerFn): this.type = js.native
-  def addListener(event: EventTypes, fn: ListenerFn, context: js.Any): this.type = js.native
+trait EventEmitter[EventTypes /* <: java.lang.String | js.Symbol | (/* import warning: ImportType.apply c Unsupported type mapping: 
+{[ K in keyof EventTypes ]: std.Array<any>}
+  */ eventemitter3Lib.eventemitter3LibStrings.EventEmitter with js.Any) */] extends js.Object {
+  def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]]): this.type = js.native
+  def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any): this.type = js.native
   /**
     * Calls each of the listeners registered for a given event.
     */
-  def emit(event: EventTypes, args: js.Any*): scala.Boolean = js.native
+  def emit[T /* <: EventNames[EventTypes] */](
+    event: T,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type EventArgs<EventTypes, T> is not an array type */ args: EventArgs[EventTypes, T]
+  ): scala.Boolean = js.native
   /**
     * Return an array listing the events for which the emitter has registered
     * listeners.
     */
-  def eventNames(): js.Array[EventTypes] = js.native
+  def eventNames(): js.Array[EventNames[EventTypes]] = js.native
   /**
     * Return the number of listeners listening to a given event.
     */
-  def listenerCount(event: EventTypes): scala.Double = js.native
+  def listenerCount(event: EventNames[EventTypes]): scala.Double = js.native
   /**
     * Return the listeners registered for a given event.
     */
-  def listeners(event: EventTypes): js.Array[ListenerFn] = js.native
-  def off(event: EventTypes): this.type = js.native
-  def off(event: EventTypes, fn: ListenerFn): this.type = js.native
-  def off(event: EventTypes, fn: ListenerFn, context: js.Any): this.type = js.native
-  def off(event: EventTypes, fn: ListenerFn, context: js.Any, once: scala.Boolean): this.type = js.native
+  def listeners[T /* <: EventNames[EventTypes] */](event: T): js.Array[ListenerFn[EventArgs[EventTypes, T]]] = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]]): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any, once: scala.Boolean): this.type = js.native
   /**
     * Add a listener for a given event.
     */
-  def on(event: EventTypes, fn: ListenerFn): this.type = js.native
-  def on(event: EventTypes, fn: ListenerFn, context: js.Any): this.type = js.native
+  def on[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]]): this.type = js.native
+  def on[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any): this.type = js.native
   /**
     * Add a one-time listener for a given event.
     */
-  def once(event: EventTypes, fn: ListenerFn): this.type = js.native
-  def once(event: EventTypes, fn: ListenerFn, context: js.Any): this.type = js.native
+  def once[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]]): this.type = js.native
+  def once[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any): this.type = js.native
   /**
     * Remove all listeners, or those of the specified event.
     */
   def removeAllListeners(): this.type = js.native
-  def removeAllListeners(event: EventTypes): this.type = js.native
+  def removeAllListeners(event: EventNames[EventTypes]): this.type = js.native
   /**
     * Remove the listeners of a given event.
     */
-  def removeListener(event: EventTypes): this.type = js.native
-  def removeListener(event: EventTypes, fn: ListenerFn): this.type = js.native
-  def removeListener(event: EventTypes, fn: ListenerFn, context: js.Any): this.type = js.native
-  def removeListener(event: EventTypes, fn: ListenerFn, context: js.Any, once: scala.Boolean): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]]): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]], context: js.Any, once: scala.Boolean): this.type = js.native
 }
 
 @JSImport("eventemitter3", "EventEmitter")
 @js.native
-class EventEmitterCls[EventTypes /* <: java.lang.String | js.Symbol */] () extends EventEmitter[EventTypes]
+class EventEmitterCls[EventTypes /* <: java.lang.String | js.Symbol | (/* import warning: ImportType.apply c Unsupported type mapping: 
+{[ K in keyof EventTypes ]: std.Array<any>}
+  */ eventemitter3Lib.eventemitter3LibStrings.EventEmitterCls with js.Any) */] () extends EventEmitter[EventTypes]
 

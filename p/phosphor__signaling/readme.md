@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__signaling
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 PhosphorJS - Signals and Slots

@@ -19,7 +19,6 @@ class Event protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Event) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Event, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * What action was taken/failed regarding to the Regarding object.
     */
@@ -96,7 +95,6 @@ class Event protected ()
     * Type of this event (Normal, Warning), new types could be added in the future
     */
   val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Event = js.native
 }
 
 /* static members */
@@ -121,5 +119,10 @@ object Event extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.coreV1EventMod.Event = js.native
+  /**
+    * Returns true if the given object is an instance of Event.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/Event.Event */ scala.Boolean = js.native
 }
 

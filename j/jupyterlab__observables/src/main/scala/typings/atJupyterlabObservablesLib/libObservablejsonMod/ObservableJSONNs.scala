@@ -17,7 +17,7 @@ object ObservableJSONNs extends js.Object {
     /**
       * Create a new metadata changed message.
       */
-    def this(args: atJupyterlabObservablesLib.libObservablejsonMod.IObservableJSONNs.IChangedArgs) = this()
+    def this(`type`: java.lang.String, args: atJupyterlabObservablesLib.libObservablejsonMod.IObservableJSONNs.IChangedArgs) = this()
     /**
       * The arguments of the change.
       */
@@ -29,7 +29,7 @@ object ObservableJSONNs extends js.Object {
     */
   trait IOptions extends js.Object {
     /**
-      * The optional intitial value for the object.
+      * The optional initial value for the object.
       */
     var values: js.UndefOr[atPhosphorCoreutilsLib.libJsonMod.JSONObject] = js.undefined
   }

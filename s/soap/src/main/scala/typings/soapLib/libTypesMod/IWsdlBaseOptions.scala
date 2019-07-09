@@ -9,6 +9,8 @@ trait IWsdlBaseOptions extends js.Object {
   var attributesKey: js.UndefOr[java.lang.String] = js.undefined
   /** escape special XML characters in SOAP message (e.g. &, >, < etc), default: true. */
   var escapeXML: js.UndefOr[scala.Boolean] = js.undefined
+  /** set proper headers for SOAP v1.2. */
+  var forceSoap12Headers: js.UndefOr[scala.Boolean] = js.undefined
   var handleNilAsNull: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreBaseNameSpaces: js.UndefOr[scala.Boolean] = js.undefined
   var ignoredNamespaces: js.UndefOr[scala.Boolean | js.Array[java.lang.String] | soapLib.Anon_Namespaces] = js.undefined
@@ -36,6 +38,7 @@ object IWsdlBaseOptions {
   def apply(
     attributesKey: java.lang.String = null,
     escapeXML: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSoap12Headers: js.UndefOr[scala.Boolean] = js.undefined,
     handleNilAsNull: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreBaseNameSpaces: js.UndefOr[scala.Boolean] = js.undefined,
     ignoredNamespaces: scala.Boolean | js.Array[java.lang.String] | soapLib.Anon_Namespaces = null,
@@ -54,6 +57,7 @@ object IWsdlBaseOptions {
     val __obj = js.Dynamic.literal()
     if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey)
     if (!js.isUndefined(escapeXML)) __obj.updateDynamic("escapeXML")(escapeXML)
+    if (!js.isUndefined(forceSoap12Headers)) __obj.updateDynamic("forceSoap12Headers")(forceSoap12Headers)
     if (!js.isUndefined(handleNilAsNull)) __obj.updateDynamic("handleNilAsNull")(handleNilAsNull)
     if (!js.isUndefined(ignoreBaseNameSpaces)) __obj.updateDynamic("ignoreBaseNameSpaces")(ignoreBaseNameSpaces)
     if (ignoredNamespaces != null) __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces.asInstanceOf[js.Any])

@@ -30,9 +30,6 @@ object reactDashMosaicDashComponentLibStrings {
     extends reactDashMosaicDashComponentLib.libInternalTypesMod.MosaicDropTargetPosition
   
   @js.native
-  sealed trait mosaicWindowActions extends js.Object
-  
-  @js.native
   sealed trait reset extends js.Object
   
   @js.native
@@ -63,8 +60,6 @@ object reactDashMosaicDashComponentLibStrings {
   def first: first = "first".asInstanceOf[first]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def mosaicWindowActions: mosaicWindowActions = "mosaicWindowActions".asInstanceOf[mosaicWindowActions]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline

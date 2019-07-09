@@ -1,7 +1,7 @@
 
 # Scala.js typings for ky
 
-Typings are for version 0.11.0
+Typings are for version 0.11.1
 
 ## Library description:
 Tiny and elegant HTTP client based on the browser Fetch API

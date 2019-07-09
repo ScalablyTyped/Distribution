@@ -19,7 +19,8 @@ trait ProviderArgs extends js.Object {
     */
   val kubeconfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * If present, the namespace scope to use.
+    * If present, the default namespace to use. This flag is ignored for cluster-scoped resources.
+    * Note: if .metadata.namespace is set on a resource, that value takes precedence over the provider default.
     */
   val namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }

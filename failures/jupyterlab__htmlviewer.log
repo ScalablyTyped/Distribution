@@ -1,0 +1,13 @@
+[debug] PhaseRunner.scala:84 Success [id => @jupyterlab/htmlviewer, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/htmlviewer/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jupyterlab/htmlviewer),TsIdentLibraryScoped(jupyterlab,Some(htmlviewer))),TsIdentModule(Some(jupyterlab),List(htmlviewer))) [id => @jupyterlab/htmlviewer, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jupyterlab),List(htmlviewer)) [id => @jupyterlab/htmlviewer, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibraryScoped(jupyterlab,Some(htmlviewer)) [id => @jupyterlab/htmlviewer, phase => typescript] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @jupyterlab/htmlviewer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jupyterlab/htmlviewer) / TsDeclInterface(IHTMLViewerTracker))] 
+[debug] PhaseRunner.scala:84 Success [id => @jupyterlab/htmlviewer, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing @jupyterlab/htmlviewer [id => @jupyterlab/htmlviewer, phase => scala.js] 
+[info ] RemoveMultipleInheritance.scala:44 Dropped parents 
+- atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, id, layout, parent. Inlined  [id => @jupyterlab/htmlviewer, phase => scala.js, this => Name(atJupyterlabHtmlviewerLib) / Name(atJupyterlabHtmlviewerMod) / Name(HTMLViewer)] 
+[debug] PhaseRunner.scala:84 Success [id => @jupyterlab/htmlviewer, phase => scala.js] 
+[warn ] PhaseRunner.scala:70 Failed because of, [@jupyterlab/services => Compilation failed] [id => @jupyterlab/htmlviewer, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@jupyterlab/services => Compilation failed] [id => @jupyterlab/htmlviewer, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@jupyterlab/services => Compilation failed] [id => @jupyterlab/htmlviewer, phase => publish] 

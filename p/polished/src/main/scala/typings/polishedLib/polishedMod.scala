@@ -23,6 +23,30 @@ object polishedMod extends js.Object {
     minScreen: java.lang.String,
     maxScreen: java.lang.String
   ): java.lang.String = js.native
+  def between(fromSize: java.lang.String, toSize: scala.Double): java.lang.String = js.native
+  def between(fromSize: java.lang.String, toSize: scala.Double, minScreen: java.lang.String): java.lang.String = js.native
+  def between(
+    fromSize: java.lang.String,
+    toSize: scala.Double,
+    minScreen: java.lang.String,
+    maxScreen: java.lang.String
+  ): java.lang.String = js.native
+  def between(fromSize: scala.Double, toSize: java.lang.String): java.lang.String = js.native
+  def between(fromSize: scala.Double, toSize: java.lang.String, minScreen: java.lang.String): java.lang.String = js.native
+  def between(
+    fromSize: scala.Double,
+    toSize: java.lang.String,
+    minScreen: java.lang.String,
+    maxScreen: java.lang.String
+  ): java.lang.String = js.native
+  def between(fromSize: scala.Double, toSize: scala.Double): java.lang.String = js.native
+  def between(fromSize: scala.Double, toSize: scala.Double, minScreen: java.lang.String): java.lang.String = js.native
+  def between(
+    fromSize: scala.Double,
+    toSize: scala.Double,
+    minScreen: java.lang.String,
+    maxScreen: java.lang.String
+  ): java.lang.String = js.native
   def border(sideKeyword: java.lang.String, values: (java.lang.String | scala.Double)*): polishedLib.libTypesStyleMod.Styles = js.native
   def border(
     sideKeyword: polishedLib.libTypesSideKeywordMod.SideKeyword,
@@ -80,8 +104,9 @@ object polishedMod extends js.Object {
     maxScreen: java.lang.String
   ): polishedLib.libTypesStyleMod.Styles = js.native
   def fontFace(
-    hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: polishedLib.libTypesFontFaceConfigurationMod.FontFaceConfiguration
+    hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: polishedLib.libTypesFontFaceConfigurationMod.FontFaceConfiguration
   ): polishedLib.libTypesStyleMod.Styles = js.native
+  def getContrast(color1: java.lang.String, color2: java.lang.String): scala.Double = js.native
   def getLuminance(color: java.lang.String): scala.Double = js.native
   def getValueAndUnit(value: java.lang.String): js.Tuple2[scala.Double | java.lang.String, java.lang.String | scala.Unit] = js.native
   def grayscale(color: java.lang.String): java.lang.String = js.native
@@ -95,6 +120,9 @@ object polishedMod extends js.Object {
   def hsl(value: scala.Double): java.lang.String = js.native
   def hsl(value: scala.Double, saturation: scala.Double): java.lang.String = js.native
   def hsl(value: scala.Double, saturation: scala.Double, lightness: scala.Double): java.lang.String = js.native
+  def hslToColorString(color: polishedLib.libTypesColorMod.HslColor): java.lang.String = js.native
+  def hslToColorString(color: polishedLib.libTypesColorMod.HslaColor): java.lang.String = js.native
+  def hslToColorString(color: scala.Double): java.lang.String = js.native
   def hsla(value: polishedLib.libTypesColorMod.HslaColor): java.lang.String = js.native
   def hsla(value: polishedLib.libTypesColorMod.HslaColor, saturation: scala.Double): java.lang.String = js.native
   def hsla(value: polishedLib.libTypesColorMod.HslaColor, saturation: scala.Double, lightness: scala.Double): java.lang.String = js.native
@@ -113,7 +141,13 @@ object polishedMod extends js.Object {
   def lighten(amount: java.lang.String, color: java.lang.String): java.lang.String = js.native
   def lighten(amount: scala.Double): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
   def lighten(amount: scala.Double, color: java.lang.String): java.lang.String = js.native
+  def linearGradient(
+    hasColorStopsFallbackToDirection: polishedLib.libTypesLinearGradientConfigurationMod.LinearGradientConfiguration
+  ): polishedLib.libTypesStyleMod.Styles = js.native
   def margin(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): polishedLib.libTypesStyleMod.Styles = js.native
+  def math(formula: java.lang.String): java.lang.String = js.native
+  def math(formula: java.lang.String, additionalSymbols: js.Object): java.lang.String = js.native
+  def meetsContrastGuidelines(color1: java.lang.String, color2: java.lang.String): polishedLib.libTypesColorMod.ContrastScores = js.native
   def mix(weight: java.lang.String): polishedLib.Fn_Color = js.native
   def mix(weight: java.lang.String, color: java.lang.String): js.Function1[/* otherColor */ java.lang.String, java.lang.String] = js.native
   def mix(weight: java.lang.String, color: java.lang.String, otherColor: java.lang.String): java.lang.String = js.native
@@ -141,8 +175,6 @@ object polishedMod extends js.Object {
   def padding(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): polishedLib.libTypesStyleMod.Styles = js.native
   def parseToHsl(color: java.lang.String): polishedLib.libTypesColorMod.HslColor | polishedLib.libTypesColorMod.HslaColor = js.native
   def parseToRgb(color: java.lang.String): polishedLib.libTypesColorMod.RgbColor | polishedLib.libTypesColorMod.RgbaColor = js.native
-  def placeholder(styles: polishedLib.libTypesStyleMod.Styles): polishedLib.libTypesStyleMod.Styles = js.native
-  def placeholder(styles: polishedLib.libTypesStyleMod.Styles, parent: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
   def position(
     positionKeyword: java.lang.String,
     values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*
@@ -152,6 +184,8 @@ object polishedMod extends js.Object {
     hasColorStopsExtentFallbackPositionShape: polishedLib.libTypesRadialGradientConfigurationMod.RadialGradientConfiguration
   ): polishedLib.libTypesStyleMod.Styles = js.native
   def readableColor(color: java.lang.String): java.lang.String = js.native
+  def readableColor(color: java.lang.String, lightReturnColor: java.lang.String): java.lang.String = js.native
+  def readableColor(color: java.lang.String, lightReturnColor: java.lang.String, darkReturnColor: java.lang.String): java.lang.String = js.native
   def rem(value: java.lang.String): java.lang.String = js.native
   def rem(value: java.lang.String, base: java.lang.String): java.lang.String = js.native
   def rem(value: java.lang.String, base: scala.Double): java.lang.String = js.native
@@ -180,6 +214,8 @@ object polishedMod extends js.Object {
   def rgb(value: scala.Double): java.lang.String = js.native
   def rgb(value: scala.Double, green: scala.Double): java.lang.String = js.native
   def rgb(value: scala.Double, green: scala.Double, blue: scala.Double): java.lang.String = js.native
+  def rgbToColorString(color: polishedLib.libTypesColorMod.RgbColor): java.lang.String = js.native
+  def rgbToColorString(color: polishedLib.libTypesColorMod.RgbaColor): java.lang.String = js.native
   def rgba(firstValue: java.lang.String): java.lang.String = js.native
   def rgba(firstValue: java.lang.String, secondValue: scala.Double): java.lang.String = js.native
   def rgba(firstValue: java.lang.String, secondValue: scala.Double, thirdValue: scala.Double): java.lang.String = js.native
@@ -215,8 +251,6 @@ object polishedMod extends js.Object {
   def saturate(amount: java.lang.String, color: java.lang.String): java.lang.String = js.native
   def saturate(amount: scala.Double): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
   def saturate(amount: scala.Double, color: java.lang.String): java.lang.String = js.native
-  def selection(styles: polishedLib.libTypesStyleMod.Styles): polishedLib.libTypesStyleMod.Styles = js.native
-  def selection(styles: polishedLib.libTypesStyleMod.Styles, parent: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
   def setHue(hue: java.lang.String): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
   def setHue(hue: java.lang.String, color: java.lang.String): java.lang.String = js.native
   def setHue(hue: scala.Double): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
@@ -239,7 +273,10 @@ object polishedMod extends js.Object {
   def size(height: scala.Double): polishedLib.libTypesStyleMod.Styles = js.native
   def size(height: scala.Double, width: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
   def size(height: scala.Double, width: scala.Double): polishedLib.libTypesStyleMod.Styles = js.native
-  def stripUnit(value: java.lang.String): scala.Double | java.lang.String = js.native
+  def stripUnit(value: java.lang.String): js.Any = js.native
+  def stripUnit(value: java.lang.String, unitReturn: scala.Boolean): js.Any = js.native
+  def stripUnit(value: scala.Double): js.Any = js.native
+  def stripUnit(value: scala.Double, unitReturn: scala.Boolean): js.Any = js.native
   def textInputs(states: polishedLib.libTypesInteractionStateMod.InteractionState*): java.lang.String = js.native
   def timingFunctions(timingFunction: polishedLib.libTypesTimingFunctionMod.TimingFunction): java.lang.String = js.native
   def tint(percentage: java.lang.String): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native

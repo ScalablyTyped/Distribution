@@ -456,6 +456,7 @@ object namedTypesNs extends js.Object {
       ]
     var callee: astDashTypesLib.genKindsMod.ExpressionKind
     var `type`: astDashTypesLib.astDashTypesLibStrings.CallExpression
+    var typeArguments: js.UndefOr[scala.Null | astDashTypesLib.genKindsMod.TypeParameterInstantiationKind] = js.undefined
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -1642,6 +1643,7 @@ object namedTypesNs extends js.Object {
       ]
     var callee: astDashTypesLib.genKindsMod.ExpressionKind
     var `type`: astDashTypesLib.astDashTypesLibStrings.NewExpression
+    var typeArguments: js.UndefOr[scala.Null | astDashTypesLib.genKindsMod.TypeParameterInstantiationKind] = js.undefined
   }
   
   trait Node extends Printable {

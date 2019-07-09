@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
 class Notification protected ()
   extends atGoogleDashCloudCommonLib.atGoogleDashCloudCommonMod.ServiceObject[js.Any] {
   def this(bucket: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, id: java.lang.String) = this()
-  def delete(options: DeleteNotificationOptions): js.Promise[js.Array[requestLib.requestMod.Response]] = js.native
+  def delete(options: DeleteNotificationOptions): js.Promise[js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]] = js.native
   def delete(options: DeleteNotificationOptions, callback: DeleteNotificationCallback): scala.Unit = js.native
   def get(options: GetNotificationOptions): js.Promise[GetNotificationResponse] = js.native
   def get(options: GetNotificationOptions, callback: GetNotificationCallback): scala.Unit = js.native

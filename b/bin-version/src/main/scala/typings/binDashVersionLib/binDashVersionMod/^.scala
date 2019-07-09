@@ -22,6 +22,8 @@ object ^ extends js.Object {
   	//=> '7.30.0'
   	// $ openssl version
   	// OpenSSL 1.0.2d 9 Jul 2015
+  	console.log(await binVersion('openssl'));
+  	//=> '1.0.2'
   	console.log(await binVersion('openssl', {args: ['version']}));
   	//=> '1.0.2'
   })();

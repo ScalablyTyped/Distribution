@@ -26,7 +26,7 @@ trait Rule
     * An array containing the rule's individual selectors.
     * Groups of selectors are split at commas.
     */
-  var selectors: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var selectors: js.Array[java.lang.String] = js.native
   var `type`: postcssLib.postcssLibStrings.rule = js.native
 }
 

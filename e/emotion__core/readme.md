@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__core
 
-Typings are for version 10.0.10
+Typings are for version 10.0.14
 
 ## Library description:
 > Simple styling in React.

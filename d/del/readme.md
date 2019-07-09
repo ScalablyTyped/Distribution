@@ -1,7 +1,7 @@
 
 # Scala.js typings for del
 
-Typings are for version 4.1.1
+Typings are for version 5.0.0
 
 ## Library description:
 Delete files and folders

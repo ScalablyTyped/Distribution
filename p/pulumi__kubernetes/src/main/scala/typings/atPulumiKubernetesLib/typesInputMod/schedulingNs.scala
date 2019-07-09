@@ -55,6 +55,12 @@ object schedulingNs extends js.Object {
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
+        * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never,
+        * PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level
+        * and is only honored by servers that enable the NonPreemptingPriority feature.
+        */
+      var preemptionPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.
         */
@@ -149,6 +155,12 @@ object schedulingNs extends js.Object {
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
+      /**
+        * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never,
+        * PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level
+        * and is only honored by servers that enable the NonPreemptingPriority feature.
+        */
+      var preemptionPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.
@@ -246,6 +258,12 @@ object schedulingNs extends js.Object {
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
+      /**
+        * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never,
+        * PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level
+        * and is only honored by servers that enable the NonPreemptingPriority feature.
+        */
+      var preemptionPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.

@@ -46,16 +46,16 @@ class Ray () extends js.Object {
   def intersectsPlane(plane: threeLib.srcMathPlaneMod.Plane): scala.Boolean = js.native
   def intersectsSphere(sphere: threeLib.srcMathSphereMod.Sphere): scala.Boolean = js.native
   /**
-    * @deprecated Use {@link Ray#intersectsBox .intersectsBox()} instead.
-    */
+  	 * @deprecated Use {@link Ray#intersectsBox .intersectsBox()} instead.
+  	 */
   def isIntersectionBox(b: js.Any): js.Any = js.native
   /**
-    * @deprecated Use {@link Ray#intersectsPlane .intersectsPlane()} instead.
-    */
+  	 * @deprecated Use {@link Ray#intersectsPlane .intersectsPlane()} instead.
+  	 */
   def isIntersectionPlane(p: js.Any): js.Any = js.native
   /**
-    * @deprecated Use {@link Ray#intersectsSphere .intersectsSphere()} instead.
-    */
+  	 * @deprecated Use {@link Ray#intersectsSphere .intersectsSphere()} instead.
+  	 */
   def isIntersectionSphere(s: js.Any): js.Any = js.native
   def lookAt(v: threeLib.srcMathVector3Mod.Vector3): threeLib.srcMathVector3Mod.Vector3 = js.native
   def recast(t: scala.Double): Ray = js.native

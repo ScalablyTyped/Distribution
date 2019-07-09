@@ -16,6 +16,7 @@ class Cylindrical () extends js.Object {
   var y: scala.Double = js.native
   def copy(other: Cylindrical): this.type = js.native
   def set(radius: scala.Double, theta: scala.Double, y: scala.Double): this.type = js.native
+  def setFromCartesianCoords(x: scala.Double, y: scala.Double, z: scala.Double): this.type = js.native
   def setFromVector3(vec3: threeLib.srcMathVector3Mod.Vector3): this.type = js.native
 }
 

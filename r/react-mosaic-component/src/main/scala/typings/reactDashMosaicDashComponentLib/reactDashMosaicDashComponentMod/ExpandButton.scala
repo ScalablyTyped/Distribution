@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mosaic-component", "ExpandButton")
 @js.native
-class ExpandButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */] ()
-  extends reactDashMosaicDashComponentLib.libButtonsExpandButtonMod.ExpandButton[T]
+class ExpandButton ()
+  extends reactDashMosaicDashComponentLib.libButtonsExpandButtonMod.ExpandButton
 
 /* static members */
 @JSImport("react-mosaic-component", "ExpandButton")
 @js.native
 object ExpandButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
+  var contextType: reactLib.reactMod.Context[reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext] = js.native
 }
 

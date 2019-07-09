@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/core/BufferGeometry", "BufferGeometry")
 @js.native
 /**
-  * This creates a new BufferGeometry. It also sets several properties to an default value.
-  */
+	 * This creates a new BufferGeometry. It also sets several properties to an default value.
+	 */
 class BufferGeometry ()
   extends threeLib.srcCoreEventDispatcherMod.EventDispatcher {
   var attributes: org.scalablytyped.runtime.StringDictionary[
@@ -19,20 +19,20 @@ class BufferGeometry ()
   var boundingSphere: threeLib.srcMathSphereMod.Sphere = js.native
   var drawRange: threeLib.Anon_CountStart = js.native
   /**
-    * @deprecated Use {@link BufferGeometry#groups .groups} instead.
-    */
+  	 * @deprecated Use {@link BufferGeometry#groups .groups} instead.
+  	 */
   var drawcalls: js.Any = js.native
   var groups: js.Array[threeLib.Anon_CountMaterialIndex] = js.native
   /**
-    * Unique number of this buffergeometry instance
-    */
+  	 * Unique number of this buffergeometry instance
+  	 */
   var id: scala.Double = js.native
   var index: threeLib.srcCoreBufferAttributeMod.BufferAttribute = js.native
   var morphAttributes: js.Any = js.native
   var name: java.lang.String = js.native
   /**
-    * @deprecated Use {@link BufferGeometry#groups .groups} instead.
-    */
+  	 * @deprecated Use {@link BufferGeometry#groups .groups} instead.
+  	 */
   var offsets: js.Any = js.native
   var `type`: java.lang.String = js.native
   var userData: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
@@ -44,45 +44,45 @@ class BufferGeometry ()
   ): BufferGeometry = js.native
   def addAttribute(name: js.Any, array: js.Any, itemSize: js.Any): js.Any = js.native
   /**
-    * @deprecated Use {@link BufferGeometry#addGroup .addGroup()} instead.
-    */
+  	 * @deprecated Use {@link BufferGeometry#addGroup .addGroup()} instead.
+  	 */
   def addDrawCall(start: js.Any, count: js.Any): scala.Unit = js.native
   def addDrawCall(start: js.Any, count: js.Any, indexOffset: js.Any): scala.Unit = js.native
   def addGroup(start: scala.Double, count: scala.Double): scala.Unit = js.native
   def addGroup(start: scala.Double, count: scala.Double, materialIndex: scala.Double): scala.Unit = js.native
   /**
-    * @deprecated Use {@link BufferGeometry#setIndex .setIndex()} instead.
-    */
+  	 * @deprecated Use {@link BufferGeometry#setIndex .setIndex()} instead.
+  	 */
   def addIndex(index: js.Any): scala.Unit = js.native
   /**
-    * Bakes matrix transform directly into vertex coordinates.
-    */
+  	 * Bakes matrix transform directly into vertex coordinates.
+  	 */
   def applyMatrix(matrix: threeLib.srcMathMatrix4Mod.Matrix4): BufferGeometry = js.native
   def center(): BufferGeometry = js.native
   /**
-    * @deprecated Use {@link BufferGeometry#clearGroups .clearGroups()} instead.
-    */
+  	 * @deprecated Use {@link BufferGeometry#clearGroups .clearGroups()} instead.
+  	 */
   def clearDrawCalls(): scala.Unit = js.native
   def clearGroups(): scala.Unit = js.native
   /**
-    * Computes bounding box of the geometry, updating Geometry.boundingBox attribute.
-    * Bounding boxes aren't computed by default. They need to be explicitly computed, otherwise they are null.
-    */
+  	 * Computes bounding box of the geometry, updating Geometry.boundingBox attribute.
+  	 * Bounding boxes aren't computed by default. They need to be explicitly computed, otherwise they are null.
+  	 */
   def computeBoundingBox(): scala.Unit = js.native
   /**
-    * Computes bounding sphere of the geometry, updating Geometry.boundingSphere attribute.
-    * Bounding spheres aren't' computed by default. They need to be explicitly computed, otherwise they are null.
-    */
+  	 * Computes bounding sphere of the geometry, updating Geometry.boundingSphere attribute.
+  	 * Bounding spheres aren't' computed by default. They need to be explicitly computed, otherwise they are null.
+  	 */
   def computeBoundingSphere(): scala.Unit = js.native
   /**
-    * Computes vertex normals by averaging face normals.
-    */
+  	 * Computes vertex normals by averaging face normals.
+  	 */
   def computeVertexNormals(): scala.Unit = js.native
   def copy(source: BufferGeometry): this.type = js.native
   /**
-    * Disposes the object from memory.
-    * You need to call this when you want the bufferGeometry removed while the application is running.
-    */
+  	 * Disposes the object from memory.
+  	 * You need to call this when you want the bufferGeometry removed while the application is running.
+  	 */
   def dispose(): scala.Unit = js.native
   def fromDirectGeometry(geometry: threeLib.srcCoreDirectGeometryMod.DirectGeometry): BufferGeometry = js.native
   def fromGeometry(geometry: threeLib.srcCoreGeometryMod.Geometry): BufferGeometry = js.native

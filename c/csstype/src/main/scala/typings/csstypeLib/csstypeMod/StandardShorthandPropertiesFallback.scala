@@ -21,10 +21,10 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
     *
-    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
-    * | :-----: | :-----: | :---------: | :----: | :----: |
-    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
-    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **43**  | **16**  |  **9**  | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ | 4 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation
     */
@@ -206,10 +206,10 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
     *
-    * | Chrome |  Firefox  |   Safari    |  Edge  |   IE   |
-    * | :----: | :-------: | :---------: | :----: | :----: |
-    * | **50** |  **52**   | **3** _-x-_ | **12** | **10** |
-    * |        | 3.5 _-x-_ |             |        |        |
+    * | Chrome |  Firefox  | Safari  |  Edge  |   IE   |
+    * | :----: | :-------: | :-----: | :----: | :----: |
+    * | **50** |  **52**   |  **9**  | **12** | **10** |
+    * |        | 3.5 _-x-_ | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule
     */
@@ -217,10 +217,10 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`columns`** CSS property sets the column width and column count of an element.
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **50** | **52**  | **3** _-x-_ | **12** | **10** |
-    * |        | 9 _-x-_ |             |        |        |
+    * | Chrome | Firefox | Safari  |  Edge  |   IE   |
+    * | :----: | :-----: | :-----: | :----: | :----: |
+    * | **50** | **52**  |  **9**  | **12** | **10** |
+    * |        | 9 _-x-_ | 3 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/columns
     */
@@ -266,7 +266,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **63**  |   No   | n/a  | No  |
+    * |   No   | **63**  |   No   |  No  | No  |
     *
     * ---
     *
@@ -365,9 +365,9 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points.
     *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **1**  |  **2**  | **4**  | **12** | No  |
+    * | Chrome | Firefox | Safari  |  Edge  | IE  |
+    * | :----: | :-----: | :-----: | :----: | :-: |
+    * | **1**  |  **2**  | **3.2** | **12** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask
     */
@@ -425,7 +425,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  n/a   | n/a  | No  |
+    * | **59** | **45**  |  n/a   |  No  | No  |
     *
     * ---
     *
@@ -433,7 +433,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  n/a   | n/a  | No  |
+    * | **59** | **45**  |  n/a   |  No  | No  |
     *
     * ---
     *
@@ -449,7 +449,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |   No   | n/a  | No  |
+    * | **59** | **45**  |   No   |  No  | No  |
     *
     * ---
     *
@@ -457,7 +457,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |   No   | n/a  | No  |
+    * | **59** | **45**  |   No   |  No  | No  |
     *
     * ---
     *
@@ -489,7 +489,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome  | Firefox |  Safari   |  Edge  |   IE   |
     * | :-----: | :-----: | :-------: | :----: | :----: |
-    * | **26**  | **16**  |  **6.1**  | **12** | **10** |
+    * | **26**  | **16**  |   **9**   | **12** | **10** |
     * | 1 _-x-_ | 4 _-x-_ | 3.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition

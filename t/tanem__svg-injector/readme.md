@@ -1,7 +1,7 @@
 
 # Scala.js typings for tanem__svg-injector
 
-Typings are for version 8.0.18
+Typings are for version 8.0.20
 
 ## Library description:
 Fast, caching, dynamic inline SVG DOM injection library.

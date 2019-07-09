@@ -38,7 +38,7 @@ object LayoutNs extends js.Object {
     */
   trait IOptions extends js.Object {
     /**
-      * The fit policy for the for layout.
+      * The fit policy for the layout.
       *
       * The default is `'set-min-size'`.
       */

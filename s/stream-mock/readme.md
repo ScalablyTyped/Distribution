@@ -1,7 +1,7 @@
 
 # Scala.js typings for stream-mock
 
-Typings are for version 1.2
+Typings are for version 2.0.5
 
 ## Library description:
 Node stream mock module
@@ -24,21 +24,11 @@ Node stream mock module
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for stream-mock 1.2
-// Project: https://github.com/BastienAr/stream-mock
-// Definitions by: Ivan Kerin <https://github.com/ivank>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

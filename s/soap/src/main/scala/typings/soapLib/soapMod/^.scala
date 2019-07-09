@@ -17,6 +17,7 @@ object ^ extends js.Object {
     callback: CreateClientCallback,
     endpoint: java.lang.String
   ): scala.Unit = js.native
+  def createClientAsync(url: java.lang.String): bluebirdLib.bluebirdMod.^[soapLib.libClientMod.Client] = js.native
   def createClientAsync(url: java.lang.String, options: soapLib.libTypesMod.IOptions): bluebirdLib.bluebirdMod.^[soapLib.libClientMod.Client] = js.native
   def createClientAsync(url: java.lang.String, options: soapLib.libTypesMod.IOptions, endpoint: java.lang.String): bluebirdLib.bluebirdMod.^[soapLib.libClientMod.Client] = js.native
   def listen(server: soapLib.libServerMod.ServerType, options: soapLib.libTypesMod.IServerOptions): soapLib.libServerMod.Server = js.native

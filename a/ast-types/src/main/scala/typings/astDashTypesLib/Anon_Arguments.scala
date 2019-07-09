@@ -12,6 +12,7 @@ trait Anon_Arguments extends js.Object {
   var callee: astDashTypesLib.genKindsMod.ExpressionKind
   var comments: js.UndefOr[js.Array[astDashTypesLib.genKindsMod.CommentKind] | scala.Null] = js.undefined
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
+  var typeArguments: js.UndefOr[scala.Null | astDashTypesLib.genKindsMod.TypeParameterInstantiationKind] = js.undefined
 }
 
 object Anon_Arguments {
@@ -22,11 +23,13 @@ object Anon_Arguments {
     ],
     callee: astDashTypesLib.genKindsMod.ExpressionKind,
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
-    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    typeArguments: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): Anon_Arguments = {
     val __obj = js.Dynamic.literal(arguments = arguments, callee = callee)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
     __obj.asInstanceOf[Anon_Arguments]
   }
 }

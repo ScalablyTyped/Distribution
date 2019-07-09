@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object libApiObjectDashApiMod extends js.Object {
   def entries[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[js.Tuple2[scala.Double, T]] = js.native
-  def entries[T](obj: T): js.Array[js.Tuple2[java.lang.String, _]] = js.native
+  def entries[T](obj: T): js.Array[
+    js.Tuple2[
+      java.lang.String, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   def entries[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
   def entries[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = js.native
   def get[T /* <: js.Object */](obj: T, key: java.lang.String): js.Any = js.native
@@ -37,7 +42,7 @@ object libApiObjectDashApiMod extends js.Object {
   def set[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double, value: T): js.Any = js.native
   def set[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K, value: V): js.Any = js.native
   def values[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[T] = js.native
-  def values[T](obj: T): js.Array[_] = js.native
+  def values[T](obj: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def values[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[T] = js.native
   def values[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[T] = js.native
 }

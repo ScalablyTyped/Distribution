@@ -21,7 +21,7 @@ package object knexMod {
   type AliasDict = Dict[java.lang.String]
   type AlterColumnBuilder = ColumnBuilder
   type AlterTableBuilder = TableBuilder
-  type AnyToUnknown[T] = ArrayIfAlready[T, UnwrapArrayMember[T] | js.Any]
+  type AnyToUnknown[T] = T | js.Any
   type ArrayIfAlready[T1, T2] = T2 | js.Array[T2]
   // If T is an array, get the type of member, else fall back to never
   type ArrayMember[T] = js.Any
@@ -66,7 +66,8 @@ package object knexMod {
   type MySqlAlterTableBuilder = AlterTableBuilder
   // Boxing is necessary to prevent distribution of conditional types:
   // https://lorefnon.tech/2019/05/02/using-boxing-to-prevent-distribution-of-conditional-types/
-  type PartialOrAny[TBase, TKeys] = (stdLib.Pick[TBase, TKeys with java.lang.String]) | js.Object
+  type PartialOrAny[TBase, TKeys] = (SafePick[TBase, TKeys with java.lang.String]) | js.Object
+  type PostgreSqlAlterTableBuilder = AlterTableBuilder
   //
   // QueryBuilder
   //
@@ -107,7 +108,7 @@ package object knexMod {
   // https://stackoverflow.com/a/50375286/476712
   type UnionToIntersection[U] = js.Any
   // If T is unknown then convert to any, else retain original
-  type UnknownToAny[T] = ArrayIfAlready[T, UnwrapArrayMember[T]]
+  type UnknownToAny[T] = T
   // If T is an array, get the type of member, else retain original
   type UnwrapArrayMember[T] = T
   //

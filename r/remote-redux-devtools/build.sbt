@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "remote-redux-devtools"
-version := "0.5-dt-20180702Z-ff952c"
+version := "0.5-dt-20180702Z-14a073"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.1-8f7517",
+  "org.scalablytyped" %%% "redux" % "4.0.2-22de3b",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

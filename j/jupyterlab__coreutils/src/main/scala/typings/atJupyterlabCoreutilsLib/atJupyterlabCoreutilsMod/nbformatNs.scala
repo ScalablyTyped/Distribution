@@ -29,7 +29,7 @@ object nbformatNs extends js.Object {
     */
   def isDisplayUpdate(output: atJupyterlabCoreutilsLib.libNbformatMod.nbformatNs.IOutput): /* is @jupyterlab/coreutils.@jupyterlab/coreutils/lib/nbformat.nbformat.IDisplayUpdate */ scala.Boolean = js.native
   /**
-    * Test whether an output is from a stream.
+    * Test whether an output is an error.
     */
   def isError(output: atJupyterlabCoreutilsLib.libNbformatMod.nbformatNs.IOutput): /* is @jupyterlab/coreutils.@jupyterlab/coreutils/lib/nbformat.nbformat.IError */ scala.Boolean = js.native
   /**

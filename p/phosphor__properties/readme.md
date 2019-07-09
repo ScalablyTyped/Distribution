@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__properties
 
-Typings are for version 1.1.2
+Typings are for version 1.1.3
 
 ## Library description:
 PhosphorJS - Attached Properties

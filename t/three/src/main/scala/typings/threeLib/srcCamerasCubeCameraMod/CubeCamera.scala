@@ -15,10 +15,12 @@ class CubeCamera ()
   var renderTarget: threeLib.srcRenderersWebGLRenderTargetCubeMod.WebGLRenderTargetCube = js.native
   @JSName("type")
   var type_CubeCamera: threeLib.threeLibStrings.CubeCamera = js.native
-  /**
-    * @deprecated Use {@link CubeCamera#update .update()} instead
-    */
-  //updateCubeMap(renderer: Renderer, scene: Scene): void;
+  def clear(
+    renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer,
+    color: scala.Boolean,
+    depth: scala.Boolean,
+    stencil: scala.Boolean
+  ): scala.Unit = js.native
   def update(
     renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer,
     scene: threeLib.srcScenesSceneMod.Scene

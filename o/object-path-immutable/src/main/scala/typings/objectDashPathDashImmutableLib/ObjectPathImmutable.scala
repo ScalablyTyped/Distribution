@@ -17,6 +17,9 @@ trait ObjectPathImmutable extends js.Object {
   def insert[T](src: T, path: Path): T = js.native
   def insert[T](src: T, path: Path, value: js.Any): T = js.native
   def insert[T](src: T, path: Path, value: js.Any, index: scala.Double): T = js.native
+  def merge[T](src: T): T = js.native
+  def merge[T](src: T, path: Path): T = js.native
+  def merge[T](src: T, path: Path, source: js.Any): T = js.native
   def push[T](src: T): T = js.native
   def push[T](src: T, path: Path): T = js.native
   def push[T](src: T, path: Path, value: js.Any): T = js.native

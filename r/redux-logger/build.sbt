@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-logger"
-version := "3.0-dt-20190212Z-01a707"
+version := "3.0-dt-20190212Z-e43a76"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.1-8f7517",
+  "org.scalablytyped" %%% "redux" % "4.0.2-22de3b",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

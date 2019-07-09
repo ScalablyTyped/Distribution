@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait OptionalRectangle extends js.Object {
   /**
-  	 * The height of the rectangle (must be an integer).
-  	 */
+  	The height of the rectangle (must be an integer).
+  	*/
   val height: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * The width of the rectangle (must be an integer).
-  	 */
+  	The width of the rectangle (must be an integer).
+  	*/
   val width: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * The x coordinate of the origin of the rectangle (must be an integer).
-  	 */
+  	The x coordinate of the origin of the rectangle (must be an integer).
+  	*/
   val x: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * The y coordinate of the origin of the rectangle (must be an integer).
-  	 */
+  	The y coordinate of the origin of the rectangle (must be an integer).
+  	*/
   val y: js.UndefOr[scala.Double] = js.undefined
 }
 

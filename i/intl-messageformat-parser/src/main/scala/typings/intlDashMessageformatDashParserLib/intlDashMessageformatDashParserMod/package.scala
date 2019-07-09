@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object intlDashMessageformatDashParserMod {
-  type Selector = java.lang.String
+  type ParseOptions = intlDashMessageformatDashParserLib.libTypesMod.Options with intlDashMessageformatDashParserLib.libParserMod.IParseOptions
+  type TYPE = intlDashMessageformatDashParserLib.libTypesMod.TYPE
 }

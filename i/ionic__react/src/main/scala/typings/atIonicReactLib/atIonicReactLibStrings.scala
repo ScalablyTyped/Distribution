@@ -193,6 +193,9 @@ object atIonicReactLibStrings {
   sealed trait autoCorrect extends js.Object
   
   @js.native
+  sealed trait autoGrow extends js.Object
+  
+  @js.native
   sealed trait autoHide extends js.Object
   
   @js.native
@@ -274,6 +277,9 @@ object atIonicReactLibStrings {
   sealed trait columns extends js.Object
   
   @js.native
+  sealed trait compareWith extends js.Object
+  
+  @js.native
   sealed trait component extends js.Object
   
   @js.native
@@ -343,6 +349,9 @@ object atIonicReactLibStrings {
   sealed trait doneText extends js.Object
   
   @js.native
+  sealed trait download extends js.Object
+  
+  @js.native
   sealed trait draggable extends js.Object
   
   @js.native
@@ -407,6 +416,9 @@ object atIonicReactLibStrings {
   
   @js.native
   sealed trait id extends js.Object
+  
+  @js.native
+  sealed trait indeterminate extends js.Object
   
   @js.native
   sealed trait inlist extends js.Object
@@ -493,30 +505,6 @@ object atIonicReactLibStrings {
   sealed trait lines extends js.Object
   
   @js.native
-  sealed trait main extends js.Object
-  
-  @js.native
-  sealed trait margin extends js.Object
-  
-  @js.native
-  sealed trait `margin-bottom` extends js.Object
-  
-  @js.native
-  sealed trait `margin-horizontal` extends js.Object
-  
-  @js.native
-  sealed trait `margin-left` extends js.Object
-  
-  @js.native
-  sealed trait `margin-right` extends js.Object
-  
-  @js.native
-  sealed trait `margin-top` extends js.Object
-  
-  @js.native
-  sealed trait `margin-vertical` extends js.Object
-  
-  @js.native
   sealed trait max extends js.Object
   
   @js.native
@@ -563,12 +551,6 @@ object atIonicReactLibStrings {
   
   @js.native
   sealed trait name extends js.Object
-  
-  @js.native
-  sealed trait `no-margin` extends js.Object
-  
-  @js.native
-  sealed trait `no-padding` extends js.Object
   
   @js.native
   sealed trait nodeRender extends js.Object
@@ -620,6 +602,15 @@ object atIonicReactLibStrings {
   
   @js.native
   sealed trait onAuxClick extends js.Object
+  
+  @js.native
+  sealed trait onAuxClickCapture extends js.Object
+  
+  @js.native
+  sealed trait onBeforeInput extends js.Object
+  
+  @js.native
+  sealed trait onBeforeInputCapture extends js.Object
   
   @js.native
   sealed trait onBlur extends js.Object
@@ -826,10 +817,16 @@ object atIonicReactLibStrings {
   sealed trait onIonDrag extends js.Object
   
   @js.native
+  sealed trait onIonError extends js.Object
+  
+  @js.native
   sealed trait onIonFocus extends js.Object
   
   @js.native
   sealed trait onIonImgDidLoad extends js.Object
+  
+  @js.native
+  sealed trait onIonImgWillLoad extends js.Object
   
   @js.native
   sealed trait onIonInfinite extends js.Object
@@ -1243,28 +1240,10 @@ object atIonicReactLibStrings {
   sealed trait outline extends js.Object
   
   @js.native
-  sealed trait padding extends js.Object
-  
-  @js.native
-  sealed trait `padding-bottom` extends js.Object
-  
-  @js.native
-  sealed trait `padding-horizontal` extends js.Object
-  
-  @js.native
-  sealed trait `padding-left` extends js.Object
-  
-  @js.native
-  sealed trait `padding-right` extends js.Object
-  
-  @js.native
-  sealed trait `padding-top` extends js.Object
-  
-  @js.native
-  sealed trait `padding-vertical` extends js.Object
-  
-  @js.native
   sealed trait pager extends js.Object
+  
+  @js.native
+  sealed trait part extends js.Object
   
   @js.native
   sealed trait pattern extends js.Object
@@ -1295,6 +1274,9 @@ object atIonicReactLibStrings {
   
   @js.native
   sealed trait pull extends js.Object
+  
+  @js.native
+  sealed trait pullFactor extends js.Object
   
   @js.native
   sealed trait pullLg extends js.Object
@@ -1358,6 +1340,9 @@ object atIonicReactLibStrings {
   
   @js.native
   sealed trait refreshingText extends js.Object
+  
+  @js.native
+  sealed trait rel extends js.Object
   
   @js.native
   sealed trait renderFooter extends js.Object
@@ -1516,10 +1501,16 @@ object atIonicReactLibStrings {
   sealed trait tappable extends js.Object
   
   @js.native
+  sealed trait target extends js.Object
+  
+  @js.native
   sealed trait text extends js.Object
   
   @js.native
   sealed trait threshold extends js.Object
+  
+  @js.native
+  sealed trait ticks extends js.Object
   
   @js.native
   sealed trait title extends js.Object
@@ -1685,6 +1676,8 @@ object atIonicReactLibStrings {
   @scala.inline
   def autoCorrect: autoCorrect = "autoCorrect".asInstanceOf[autoCorrect]
   @scala.inline
+  def autoGrow: autoGrow = "autoGrow".asInstanceOf[autoGrow]
+  @scala.inline
   def autoHide: autoHide = "autoHide".asInstanceOf[autoHide]
   @scala.inline
   def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
@@ -1739,6 +1732,8 @@ object atIonicReactLibStrings {
   @scala.inline
   def columns: columns = "columns".asInstanceOf[columns]
   @scala.inline
+  def compareWith: compareWith = "compareWith".asInstanceOf[compareWith]
+  @scala.inline
   def component: component = "component".asInstanceOf[component]
   @scala.inline
   def componentProps: componentProps = "componentProps".asInstanceOf[componentProps]
@@ -1785,6 +1780,8 @@ object atIonicReactLibStrings {
   @scala.inline
   def doneText: doneText = "doneText".asInstanceOf[doneText]
   @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  @scala.inline
   def draggable: draggable = "draggable".asInstanceOf[draggable]
   @scala.inline
   def dualKnobs: dualKnobs = "dualKnobs".asInstanceOf[dualKnobs]
@@ -1828,6 +1825,8 @@ object atIonicReactLibStrings {
   def icon: icon = "icon".asInstanceOf[icon]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
+  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   @scala.inline
   def inlist: inlist = "inlist".asInstanceOf[inlist]
   @scala.inline
@@ -1885,22 +1884,6 @@ object atIonicReactLibStrings {
   @scala.inline
   def lines: lines = "lines".asInstanceOf[lines]
   @scala.inline
-  def main: main = "main".asInstanceOf[main]
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
-  @scala.inline
-  def `margin-bottom`: `margin-bottom` = "margin-bottom".asInstanceOf[`margin-bottom`]
-  @scala.inline
-  def `margin-horizontal`: `margin-horizontal` = "margin-horizontal".asInstanceOf[`margin-horizontal`]
-  @scala.inline
-  def `margin-left`: `margin-left` = "margin-left".asInstanceOf[`margin-left`]
-  @scala.inline
-  def `margin-right`: `margin-right` = "margin-right".asInstanceOf[`margin-right`]
-  @scala.inline
-  def `margin-top`: `margin-top` = "margin-top".asInstanceOf[`margin-top`]
-  @scala.inline
-  def `margin-vertical`: `margin-vertical` = "margin-vertical".asInstanceOf[`margin-vertical`]
-  @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
   def maxEdgeStart: maxEdgeStart = "maxEdgeStart".asInstanceOf[maxEdgeStart]
@@ -1932,10 +1915,6 @@ object atIonicReactLibStrings {
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def `no-margin`: `no-margin` = "no-margin".asInstanceOf[`no-margin`]
-  @scala.inline
-  def `no-padding`: `no-padding` = "no-padding".asInstanceOf[`no-padding`]
   @scala.inline
   def nodeRender: nodeRender = "nodeRender".asInstanceOf[nodeRender]
   @scala.inline
@@ -1970,6 +1949,12 @@ object atIonicReactLibStrings {
   def onAnimationStartCapture: onAnimationStartCapture = "onAnimationStartCapture".asInstanceOf[onAnimationStartCapture]
   @scala.inline
   def onAuxClick: onAuxClick = "onAuxClick".asInstanceOf[onAuxClick]
+  @scala.inline
+  def onAuxClickCapture: onAuxClickCapture = "onAuxClickCapture".asInstanceOf[onAuxClickCapture]
+  @scala.inline
+  def onBeforeInput: onBeforeInput = "onBeforeInput".asInstanceOf[onBeforeInput]
+  @scala.inline
+  def onBeforeInputCapture: onBeforeInputCapture = "onBeforeInputCapture".asInstanceOf[onBeforeInputCapture]
   @scala.inline
   def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   @scala.inline
@@ -2107,9 +2092,13 @@ object atIonicReactLibStrings {
   @scala.inline
   def onIonDrag: onIonDrag = "onIonDrag".asInstanceOf[onIonDrag]
   @scala.inline
+  def onIonError: onIonError = "onIonError".asInstanceOf[onIonError]
+  @scala.inline
   def onIonFocus: onIonFocus = "onIonFocus".asInstanceOf[onIonFocus]
   @scala.inline
   def onIonImgDidLoad: onIonImgDidLoad = "onIonImgDidLoad".asInstanceOf[onIonImgDidLoad]
+  @scala.inline
+  def onIonImgWillLoad: onIonImgWillLoad = "onIonImgWillLoad".asInstanceOf[onIonImgWillLoad]
   @scala.inline
   def onIonInfinite: onIonInfinite = "onIonInfinite".asInstanceOf[onIonInfinite]
   @scala.inline
@@ -2385,21 +2374,9 @@ object atIonicReactLibStrings {
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
-  @scala.inline
-  def `padding-bottom`: `padding-bottom` = "padding-bottom".asInstanceOf[`padding-bottom`]
-  @scala.inline
-  def `padding-horizontal`: `padding-horizontal` = "padding-horizontal".asInstanceOf[`padding-horizontal`]
-  @scala.inline
-  def `padding-left`: `padding-left` = "padding-left".asInstanceOf[`padding-left`]
-  @scala.inline
-  def `padding-right`: `padding-right` = "padding-right".asInstanceOf[`padding-right`]
-  @scala.inline
-  def `padding-top`: `padding-top` = "padding-top".asInstanceOf[`padding-top`]
-  @scala.inline
-  def `padding-vertical`: `padding-vertical` = "padding-vertical".asInstanceOf[`padding-vertical`]
-  @scala.inline
   def pager: pager = "pager".asInstanceOf[pager]
+  @scala.inline
+  def part: part = "part".asInstanceOf[part]
   @scala.inline
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   @scala.inline
@@ -2420,6 +2397,8 @@ object atIonicReactLibStrings {
   def property: property = "property".asInstanceOf[property]
   @scala.inline
   def pull: pull = "pull".asInstanceOf[pull]
+  @scala.inline
+  def pullFactor: pullFactor = "pullFactor".asInstanceOf[pullFactor]
   @scala.inline
   def pullLg: pullLg = "pullLg".asInstanceOf[pullLg]
   @scala.inline
@@ -2462,6 +2441,8 @@ object atIonicReactLibStrings {
   def refreshingSpinner: refreshingSpinner = "refreshingSpinner".asInstanceOf[refreshingSpinner]
   @scala.inline
   def refreshingText: refreshingText = "refreshingText".asInstanceOf[refreshingText]
+  @scala.inline
+  def rel: rel = "rel".asInstanceOf[rel]
   @scala.inline
   def renderFooter: renderFooter = "renderFooter".asInstanceOf[renderFooter]
   @scala.inline
@@ -2567,9 +2548,13 @@ object atIonicReactLibStrings {
   @scala.inline
   def tappable: tappable = "tappable".asInstanceOf[tappable]
   @scala.inline
+  def target: target = "target".asInstanceOf[target]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def threshold: threshold = "threshold".asInstanceOf[threshold]
+  @scala.inline
+  def ticks: ticks = "ticks".asInstanceOf[ticks]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   @scala.inline

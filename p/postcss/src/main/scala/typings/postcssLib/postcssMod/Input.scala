@@ -11,18 +11,24 @@ import scala.scalajs.js.annotation._
 trait Input extends js.Object {
   /**
     * The absolute path to the CSS source file defined with the "from" option.
+    * Either this property or the "id" property are always defined.
     */
-  var file: java.lang.String
+  var file: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The CSS source identifier. Contains input.file if the user set the
     * "from" option, or input.id if they did not.
     */
   var from: java.lang.String
   /**
-    * The unique ID of the CSS source. Used if "from" option is not provided
-    * (because PostCSS does not know the file path).
+    * The flag to indicate whether or not the source code has Unicode BOM.
     */
-  var id: java.lang.String
+  var hasBOM: scala.Boolean
+  /**
+    * The unique ID of the CSS source. Used if "from" option is not provided
+    * (because PostCSS does not know the file path). Either this property
+    * or the "file" property are always defined.
+    */
+  var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Represents the input source map passed from a compilation step before
     * PostCSS (e.g., from the Sass compiler).
@@ -39,14 +45,16 @@ trait Input extends js.Object {
 object Input {
   @scala.inline
   def apply(
-    file: java.lang.String,
     from: java.lang.String,
-    id: java.lang.String,
+    hasBOM: scala.Boolean,
     map: PreviousMap,
-    origin: (scala.Double, scala.Double) => InputOrigin
+    origin: (scala.Double, scala.Double) => InputOrigin,
+    file: java.lang.String = null,
+    id: java.lang.String = null
   ): Input = {
-    val __obj = js.Dynamic.literal(file = file, from = from, id = id, map = map, origin = js.Any.fromFunction2(origin))
-  
+    val __obj = js.Dynamic.literal(from = from, hasBOM = hasBOM, map = map, origin = js.Any.fromFunction2(origin))
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[Input]
   }
 }

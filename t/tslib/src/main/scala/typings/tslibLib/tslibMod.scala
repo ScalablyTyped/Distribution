@@ -30,7 +30,8 @@ object tslibMod extends js.Object {
   def __read(o: js.Any): js.Array[_] = js.native
   def __read(o: js.Any, n: scala.Double): js.Array[_] = js.native
   def __rest(t: js.Any, propertyNames: js.Array[java.lang.String | js.Symbol]): js.Any = js.native
-  def __spread(args: js.Any*): js.Array[_] = js.native
+  def __spread(args: js.Array[_]*): js.Array[_] = js.native
+  def __spreadArrays(args: js.Array[_]*): js.Array[_] = js.native
   def __values(o: js.Any): js.Any = js.native
 }
 

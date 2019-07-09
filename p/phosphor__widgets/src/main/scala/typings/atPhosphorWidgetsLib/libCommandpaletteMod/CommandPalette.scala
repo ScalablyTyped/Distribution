@@ -15,9 +15,37 @@ class CommandPalette protected ()
     * @param options - The options for initializing the palette.
     */
   def this(options: atPhosphorWidgetsLib.libCommandpaletteMod.CommandPaletteNs.IOptions) = this()
+  /**
+    * Activate the next enabled command item.
+    */
+  var _activateNextItem: js.Any = js.native
+  /**
+    * Activate the previous enabled command item.
+    */
+  var _activatePreviousItem: js.Any = js.native
   var _activeIndex: js.Any = js.native
+  /**
+    * Handle the `'click'` event for the command palette.
+    */
+  var _evtClick: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the command palette.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Execute the command item at the given index, if possible.
+    */
+  var _execute: js.Any = js.native
   var _items: js.Any = js.native
+  /**
+    * A signal handler for generic command changes.
+    */
+  var _onGenericChange: js.Any = js.native
   var _results: js.Any = js.native
+  /**
+    * Toggle the focused modifier based on the input node focus state.
+    */
+  var _toggleFocused: js.Any = js.native
   /**
     * The command registry used by the command palette.
     */
@@ -53,34 +81,6 @@ class CommandPalette protected ()
     * This is the node which contains the search-related elements.
     */
   val searchNode: stdLib.HTMLDivElement = js.native
-  /**
-    * Activate the next enabled command item.
-    */
-  /* private */ def _activateNextItem(): js.Any = js.native
-  /**
-    * Activate the previous enabled command item.
-    */
-  /* private */ def _activatePreviousItem(): js.Any = js.native
-  /**
-    * Handle the `'click'` event for the command palette.
-    */
-  /* private */ def _evtClick(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the command palette.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Execute the command item at the given index, if possible.
-    */
-  /* private */ def _execute(index: js.Any): js.Any = js.native
-  /**
-    * A signal handler for generic command changes.
-    */
-  /* private */ def _onGenericChange(): js.Any = js.native
-  /**
-    * Toggle the focused modifier based on the input node focus state.
-    */
-  /* private */ def _toggleFocused(): js.Any = js.native
   /**
     * Add a command item to the command palette.
     *

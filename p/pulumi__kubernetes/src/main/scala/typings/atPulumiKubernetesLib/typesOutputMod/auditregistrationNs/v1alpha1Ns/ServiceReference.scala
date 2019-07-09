@@ -21,12 +21,17 @@ trait ServiceReference extends js.Object {
     * `path` is an optional URL path which will be sent in any request to this service.
     */
   val path: java.lang.String
+  /**
+    * If specified, the port on the service that hosting webhook. Default to 443 for backward
+    * compatibility. `port` should be a valid port number (1-65535, inclusive).
+    */
+  val port: scala.Double
 }
 
 object ServiceReference {
   @scala.inline
-  def apply(name: java.lang.String, namespace: java.lang.String, path: java.lang.String): ServiceReference = {
-    val __obj = js.Dynamic.literal(name = name, namespace = namespace, path = path)
+  def apply(name: java.lang.String, namespace: java.lang.String, path: java.lang.String, port: scala.Double): ServiceReference = {
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, path = path, port = port)
   
     __obj.asInstanceOf[ServiceReference]
   }

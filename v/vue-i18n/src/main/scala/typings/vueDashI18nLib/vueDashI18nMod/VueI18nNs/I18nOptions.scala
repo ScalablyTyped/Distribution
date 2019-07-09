@@ -17,6 +17,7 @@ trait I18nOptions extends js.Object {
   var numberFormats: js.UndefOr[NumberFormats] = js.undefined
   var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
   var preserveDirectiveContent: js.UndefOr[scala.Boolean] = js.undefined
+  var sharedMessages: js.UndefOr[LocaleMessages] = js.undefined
   var silentFallbackWarn: js.UndefOr[scala.Boolean] = js.undefined
   var silentTranslationWarn: js.UndefOr[scala.Boolean] = js.undefined
   var sync: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,6 +37,7 @@ object I18nOptions {
     numberFormats: NumberFormats = null,
     pluralizationRules: PluralizationRulesMap = null,
     preserveDirectiveContent: js.UndefOr[scala.Boolean] = js.undefined,
+    sharedMessages: LocaleMessages = null,
     silentFallbackWarn: js.UndefOr[scala.Boolean] = js.undefined,
     silentTranslationWarn: js.UndefOr[scala.Boolean] = js.undefined,
     sync: js.UndefOr[scala.Boolean] = js.undefined,
@@ -52,6 +54,7 @@ object I18nOptions {
     if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats)
     if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules)
     if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent)
+    if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages)
     if (!js.isUndefined(silentFallbackWarn)) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn)
     if (!js.isUndefined(silentTranslationWarn)) __obj.updateDynamic("silentTranslationWarn")(silentTranslationWarn)
     if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)

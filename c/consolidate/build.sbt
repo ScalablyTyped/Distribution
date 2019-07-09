@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "consolidate"
-version := "0.0-unknown-dt-20190524Z-898df6"
+version := "0.14-dt-20190709Z-994dfc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

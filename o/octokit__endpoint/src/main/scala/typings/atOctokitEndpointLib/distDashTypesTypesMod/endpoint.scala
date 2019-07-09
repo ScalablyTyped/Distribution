@@ -30,9 +30,9 @@ trait endpoint extends js.Object {
     * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
     * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
     */
-  def apply[R /* <: Route */](route: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 512 */ js.Any): RequestOptions | (/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][1] */ js.Any) = js.native
+  def apply[R /* <: Route */](route: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 515 */ js.Any): RequestOptions | (/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][1] */ js.Any) = js.native
   def apply[R /* <: Route */](
-    route: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 512 */ js.Any,
+    route: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 515 */ js.Any,
     options: Parameters | ((/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][0] */ js.Any) with Parameters)
   ): RequestOptions | (/* import warning: ImportType.apply Failed type conversion: @octokit/endpoint.@octokit/endpoint/dist-types/generated/routes.Routes[R][1] */ js.Any) = js.native
   /**

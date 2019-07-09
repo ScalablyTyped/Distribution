@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-mosaic-component/lib/MosaicWindow", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val SourceConnectedInternalMosaicWindow: reactDashMosaicDashComponentLib.TypeofClassInternalMosaicWindow with (reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentClass[
-    InternalMosaicWindowProps[_], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for P */ _
-  ]) = js.native
-  val SourceDropConnectedInternalMosaicWindow: js.Any = js.native
-  def MosaicWindowFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
-    props: MosaicWindowProps[T] with reactLib.reactMod.Attributes,
-    children: reactLib.reactMod.ReactNode*
-  ): reactLib.reactMod.ReactElement = js.native
+  val SourceConnectedInternalMosaicWindow: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-dnd.DndComponentClass<typeof InternalMosaicWindow, Pick<InternalMosaicWindowProps<any> | InternalMosaicWindowProps<string | number>, 'title' | 'path' | 'className' | 'draggable' | 'onDragEnd' | 'onDragStart' | 'createNode' | 'connectDropTarget' | 'isOver' | 'draggedMosaicId' | 'toolbarControls' | 'additionalControls' | 'additionalControlButtonText' | 'renderPreview' | 'renderToolbar'>> */ js.Any = js.native
+  val SourceDropConnectedInternalMosaicWindow: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_react-dnd.DndComponentClass<any, Pick<unknown, never>> */ js.Any = js.native
 }
 

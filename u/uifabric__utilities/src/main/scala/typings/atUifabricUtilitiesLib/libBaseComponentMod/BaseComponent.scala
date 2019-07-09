@@ -39,6 +39,7 @@ class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypes
     * preserve the this reference so that you don't need to "bind" the callbacks.
     */
   val _events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup = js.native
+  var _setComponentRef: js.Any = js.native
   /**
     * Controls whether the componentRef prop will be resolved by this component instance. If you are
     * implementing a passthrough (higher-order component), you would set this to false and pass through
@@ -56,7 +57,6 @@ class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypes
     * @deprecated Use `createRef` from React.createRef.
     */
   /* protected */ def _resolveRef(refName: java.lang.String): js.Function1[/* ref */ reactLib.reactMod.ReactNode, reactLib.reactMod.ReactNode] = js.native
-  /* private */ def _setComponentRef[TRefInterface](ref: js.Any, value: js.Any): js.Any = js.native
   /**
     * Updates the componentRef (by calling it with "this" when necessary.)
     */

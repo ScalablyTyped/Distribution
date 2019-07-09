@@ -27,6 +27,7 @@ object IServerOptions {
     callback: (/* err */ js.Any, /* res */ js.Any) => scala.Unit = null,
     enableChunkedEncoding: js.UndefOr[scala.Boolean] = js.undefined,
     escapeXML: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSoap12Headers: js.UndefOr[scala.Boolean] = js.undefined,
     handleNilAsNull: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreBaseNameSpaces: js.UndefOr[scala.Boolean] = js.undefined,
     ignoredNamespaces: scala.Boolean | js.Array[java.lang.String] | soapLib.Anon_Namespaces = null,
@@ -51,6 +52,7 @@ object IServerOptions {
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (!js.isUndefined(enableChunkedEncoding)) __obj.updateDynamic("enableChunkedEncoding")(enableChunkedEncoding)
     if (!js.isUndefined(escapeXML)) __obj.updateDynamic("escapeXML")(escapeXML)
+    if (!js.isUndefined(forceSoap12Headers)) __obj.updateDynamic("forceSoap12Headers")(forceSoap12Headers)
     if (!js.isUndefined(handleNilAsNull)) __obj.updateDynamic("handleNilAsNull")(handleNilAsNull)
     if (!js.isUndefined(ignoreBaseNameSpaces)) __obj.updateDynamic("ignoreBaseNameSpaces")(ignoreBaseNameSpaces)
     if (ignoredNamespaces != null) __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces.asInstanceOf[js.Any])

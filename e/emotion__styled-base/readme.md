@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__styled-base
 
-Typings are for version 10.0.13
+Typings are for version 10.0.14
 
 ## Library description:
 base styled API for emotion
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 // Definitions by: Junyoung Clare Jang <https://github.com/Ailrun>
-// TypeScript Version: 2.8
+// TypeScript Version: 3.1
 /**
  * @desc
  * In following types,

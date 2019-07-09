@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - csstypeLib.csstypeLibStrings.`:-moz-any-link`
+  - csstypeLib.csstypeLibStrings.`:-moz-focusring`
   - csstypeLib.csstypeLibStrings.`:-moz-full-screen`
   - csstypeLib.csstypeLibStrings.`:-moz-placeholder`
   - csstypeLib.csstypeLibStrings.`:-moz-read-only`
@@ -50,6 +51,7 @@ import scala.scalajs.js.annotation._
   - csstypeLib.csstypeLibStrings.`::first-letter`
   - csstypeLib.csstypeLibStrings.`::first-line`
   - csstypeLib.csstypeLibStrings.`::grammar-error`
+  - csstypeLib.csstypeLibStrings.`::marker`
   - csstypeLib.csstypeLibStrings.`::placeholder`
   - csstypeLib.csstypeLibStrings.`::selection`
   - csstypeLib.csstypeLibStrings.`::spelling-error`

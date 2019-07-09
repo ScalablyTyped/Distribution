@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AsyncOptions[T]
   extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var debugLabel: js.UndefOr[java.lang.String] = js.undefined
   var deferFn: js.UndefOr[DeferFn[T]] = js.undefined
   var dispatcher: js.UndefOr[
     js.Function3[
@@ -37,6 +38,7 @@ object AsyncOptions {
   @scala.inline
   def apply[T](
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    debugLabel: java.lang.String = null,
     deferFn: DeferFn[T] = null,
     dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], scala.Unit], /* props */ js.Object) => scala.Unit = null,
     initialValue: T = null,
@@ -50,6 +52,7 @@ object AsyncOptions {
   ): AsyncOptions[T] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel)
     if (deferFn != null) __obj.updateDynamic("deferFn")(deferFn)
     if (dispatcher != null) __obj.updateDynamic("dispatcher")(js.Any.fromFunction3(dispatcher))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])

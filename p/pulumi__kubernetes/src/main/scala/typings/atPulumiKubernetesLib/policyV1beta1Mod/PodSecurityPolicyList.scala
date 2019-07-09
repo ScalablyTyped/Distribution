@@ -43,5 +43,10 @@ object PodSecurityPolicyList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
+  /**
+    * Returns true if the given object is an instance of PodSecurityPolicyList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodSecurityPolicyList.PodSecurityPolicyList */ scala.Boolean = js.native
 }
 

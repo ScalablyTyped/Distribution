@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stream-mock"
-version := "1.2-dt-20190402Z-35a2ce"
+version := "2.0.5-106060"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

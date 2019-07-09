@@ -52,15 +52,15 @@ trait graphql extends Integration {
     */
   var signature: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A callback to enable recording of variables. By default, no variables are
-    * recorded. For example, using `variables => variables` would record all
-    * variables.
+    * An array of variable names to record. Can also be a callback that returns
+    * the key/value pairs to record. For example, using
+    * `variables => variables` would record all variables.
     */
   var variables: js.UndefOr[
-    js.Function1[
+    js.Array[java.lang.String] | (js.Function1[
       /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       org.scalablytyped.runtime.StringDictionary[_]
-    ]
+    ])
   ] = js.undefined
 }
 
@@ -73,7 +73,10 @@ object graphql {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     service: java.lang.String = null,
     signature: js.UndefOr[scala.Boolean] = js.undefined,
-    variables: /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any] => org.scalablytyped.runtime.StringDictionary[_] = null
+    variables: js.Array[java.lang.String] | (js.Function1[
+      /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+      org.scalablytyped.runtime.StringDictionary[_]
+    ]) = null
   ): graphql = {
     val __obj = js.Dynamic.literal()
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
@@ -82,7 +85,7 @@ object graphql {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (service != null) __obj.updateDynamic("service")(service)
     if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature)
-    if (variables != null) __obj.updateDynamic("variables")(js.Any.fromFunction1(variables))
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[graphql]
   }
 }

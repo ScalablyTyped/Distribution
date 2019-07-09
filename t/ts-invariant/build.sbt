@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts-invariant"
-version := "0.4.2-d18d36"
+version := "0.4.4-d18d36"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -344,8 +344,9 @@ object policyNs extends js.Object {
       var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be
-        * embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod
-        * spec.
+        * embedded within a pod spec. An empty value indicates that any CSI driver can be used for
+        * inline ephemeral volumes. This is an alpha field, and is only honored if the API server
+        * enables the CSIInlineVolume feature gate.
         */
       var allowedCSIDrivers: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[AllowedCSIDriver]]]
@@ -469,6 +470,12 @@ object policyNs extends js.Object {
         */
       var runAsUser: atPulumiPulumiLib.outputMod.Input[RunAsUserStrategyOptions]
       /**
+        * runtimeClass is the strategy that will dictate the allowable RuntimeClasses for a pod. If
+        * this field is omitted, the pod's runtimeClassName field is unrestricted. Enforcement of
+        * this field depends on the RuntimeClass feature gate being enabled.
+        */
+      var runtimeClass: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RuntimeClassStrategyOptions]] = js.undefined
+      /**
         * seLinux is the strategy that will dictate the allowable labels that may be set.
         */
       var seLinux: atPulumiPulumiLib.outputMod.Input[SELinuxStrategyOptions]
@@ -520,6 +527,24 @@ object policyNs extends js.Object {
         * rule is the strategy that will dictate the allowable RunAsUser values that may be set.
         */
       var rule: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+    }
+    
+    /**
+      * RuntimeClassStrategyOptions define the strategy that will dictate the allowable
+      * RuntimeClasses for a pod.
+      */
+    trait RuntimeClassStrategyOptions extends js.Object {
+      /**
+        * allowedRuntimeClassNames is a whitelist of RuntimeClass names that may be specified on a
+        * pod. A value of "*" means that any RuntimeClass name is allowed, and must be the only item
+        * in the list. An empty list requires the RuntimeClassName field to be unset.
+        */
+      var allowedRuntimeClassNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+      /**
+        * defaultRuntimeClassName is the default RuntimeClassName to set on the pod. The default MUST
+        * be allowed by the allowedRuntimeClassNames list. A value of nil does not mutate the Pod.
+        */
+      var defaultRuntimeClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**

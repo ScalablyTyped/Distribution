@@ -89,6 +89,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.authorizationV1beta1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
+    /**
+      * Returns true if the given object is an instance of LocalSubjectAccessReview.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1beta1/LocalSubjectAccessReview.LocalSubjectAccessReview */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -112,6 +117,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.authorizationV1beta1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
+    /**
+      * Returns true if the given object is an instance of SelfSubjectAccessReview.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1beta1/SelfSubjectAccessReview.SelfSubjectAccessReview */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -135,6 +145,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.authorizationV1beta1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
+    /**
+      * Returns true if the given object is an instance of SelfSubjectRulesReview.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1beta1/SelfSubjectRulesReview.SelfSubjectRulesReview */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -158,6 +173,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.authorizationV1beta1SubjectAccessReviewMod.SubjectAccessReview = js.native
+    /**
+      * Returns true if the given object is an instance of SubjectAccessReview.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1beta1/SubjectAccessReview.SubjectAccessReview */ scala.Boolean = js.native
   }
   
 }

@@ -28,5 +28,13 @@ object TextNs extends js.Object {
     * @returns The unicode character offset
     */
   def jsIndexToCharIndex(jsIdx: scala.Double, text: java.lang.String): scala.Double = js.native
+  /**
+    * Given a string, title case the words in the string.
+    *
+    * @param str: the string to title case.
+    *
+    * @returns the same string, but with each word capitalized.
+    */
+  def titleCase(str: java.lang.String): java.lang.String = js.native
 }
 

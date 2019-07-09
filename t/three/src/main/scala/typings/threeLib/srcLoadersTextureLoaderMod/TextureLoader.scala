@@ -14,10 +14,10 @@ class TextureLoader () extends js.Object {
   var path: java.lang.String = js.native
   var withCredentials: java.lang.String = js.native
   /**
-    * Begin loading from url
-    *
-    * @param url
-    */
+  	 * Begin loading from url
+  	 *
+  	 * @param url
+  	 */
   def load(url: java.lang.String): threeLib.srcTexturesTextureMod.Texture = js.native
   def load(
     url: java.lang.String,

@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation._
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.undefined
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.string
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.number
+  - atSindresorhusIsLib.atSindresorhusIsLibStrings.bigint
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.symbol
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.Function
+  - atSindresorhusIsLib.atSindresorhusIsLibStrings.Generator
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.GeneratorFunction
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.AsyncFunction
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.Observable
@@ -35,6 +37,8 @@ import scala.scalajs.js.annotation._
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.Uint32Array
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.Float32Array
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.Float64Array
+  - atSindresorhusIsLib.atSindresorhusIsLibStrings.BigInt64Array
+  - atSindresorhusIsLib.atSindresorhusIsLibStrings.BigUint64Array
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.ArrayBuffer
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.SharedArrayBuffer
   - atSindresorhusIsLib.atSindresorhusIsLibStrings.DataView
@@ -51,6 +55,10 @@ object TypeName {
   @scala.inline
   def AsyncFunction: atSindresorhusIsLib.atSindresorhusIsLibStrings.AsyncFunction = this.cast("AsyncFunction")
   @scala.inline
+  def BigInt64Array: atSindresorhusIsLib.atSindresorhusIsLibStrings.BigInt64Array = this.cast("BigInt64Array")
+  @scala.inline
+  def BigUint64Array: atSindresorhusIsLib.atSindresorhusIsLibStrings.BigUint64Array = this.cast("BigUint64Array")
+  @scala.inline
   def Buffer: atSindresorhusIsLib.atSindresorhusIsLibStrings.Buffer = this.cast("Buffer")
   @scala.inline
   def DataView: atSindresorhusIsLib.atSindresorhusIsLibStrings.DataView = this.cast("DataView")
@@ -64,6 +72,8 @@ object TypeName {
   def Float64Array: atSindresorhusIsLib.atSindresorhusIsLibStrings.Float64Array = this.cast("Float64Array")
   @scala.inline
   def Function: atSindresorhusIsLib.atSindresorhusIsLibStrings.Function = this.cast("Function")
+  @scala.inline
+  def Generator: atSindresorhusIsLib.atSindresorhusIsLibStrings.Generator = this.cast("Generator")
   @scala.inline
   def GeneratorFunction: atSindresorhusIsLib.atSindresorhusIsLibStrings.GeneratorFunction = this.cast("GeneratorFunction")
   @scala.inline
@@ -100,6 +110,8 @@ object TypeName {
   def WeakMap: atSindresorhusIsLib.atSindresorhusIsLibStrings.WeakMap = this.cast("WeakMap")
   @scala.inline
   def WeakSet: atSindresorhusIsLib.atSindresorhusIsLibStrings.WeakSet = this.cast("WeakSet")
+  @scala.inline
+  def bigint: atSindresorhusIsLib.atSindresorhusIsLibStrings.bigint = this.cast("bigint")
   @scala.inline
   def boolean: atSindresorhusIsLib.atSindresorhusIsLibStrings.boolean = this.cast("boolean")
   @scala.inline

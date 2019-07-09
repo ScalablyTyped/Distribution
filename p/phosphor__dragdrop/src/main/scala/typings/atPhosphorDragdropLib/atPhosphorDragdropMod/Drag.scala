@@ -15,18 +15,72 @@ class Drag protected ()
     * @param options - The options for initializing the drag.
     */
   def this(options: atPhosphorDragdropLib.atPhosphorDragdropMod.DragNs.IOptions) = this()
+  /**
+    * Add the document event listeners for the drag object.
+    */
+  var _addListeners: js.Any = js.native
+  /**
+    * Attach the drag image element at the specified location.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  var _attachDragImage: js.Any = js.native
   var _currentElement: js.Any = js.native
   var _currentTarget: js.Any = js.native
+  /**
+    * Detach the drag image element from the DOM.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  var _detachDragImage: js.Any = js.native
   var _disposed: js.Any = js.native
   var _dropAction: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the drag object.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the drag object.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the drag object.
+    */
+  var _evtMouseUp: js.Any = js.native
+  /**
+    * Finalize the drag operation and resolve the drag promise.
+    */
+  var _finalize: js.Any = js.native
+  /**
+    * Move the drag image element to the specified location.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  var _moveDragImage: js.Any = js.native
   /**
     * The scroll loop handler function.
     */
   var _onScrollFrame: js.Any = js.native
   var _override: js.Any = js.native
   var _promise: js.Any = js.native
+  /**
+    * Remove the document event listeners for the drag object.
+    */
+  var _removeListeners: js.Any = js.native
   var _resolve: js.Any = js.native
   var _scrollTarget: js.Any = js.native
+  /**
+    * Set the internal drop action state and update the drag cursor.
+    */
+  var _setDropAction: js.Any = js.native
+  /**
+    * Update the current target node using the given mouse event.
+    */
+  var _updateCurrentTarget: js.Any = js.native
+  /**
+    * Update the drag scroll element under the mouse.
+    */
+  var _updateDragScroll: js.Any = js.native
   /**
     * The drag image element for the drag object.
     */
@@ -55,60 +109,6 @@ class Drag protected ()
     * The supported drop actions for the drag object.
     */
   val supportedActions: SupportedActions = js.native
-  /**
-    * Add the document event listeners for the drag object.
-    */
-  /* private */ def _addListeners(): js.Any = js.native
-  /**
-    * Attach the drag image element at the specified location.
-    *
-    * This is a no-op if there is no drag image element.
-    */
-  /* private */ def _attachDragImage(clientX: js.Any, clientY: js.Any): js.Any = js.native
-  /**
-    * Detach the drag image element from the DOM.
-    *
-    * This is a no-op if there is no drag image element.
-    */
-  /* private */ def _detachDragImage(): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the drag object.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the drag object.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseup'` event for the drag object.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Finalize the drag operation and resolve the drag promise.
-    */
-  /* private */ def _finalize(action: js.Any): js.Any = js.native
-  /**
-    * Move the drag image element to the specified location.
-    *
-    * This is a no-op if there is no drag image element.
-    */
-  /* private */ def _moveDragImage(clientX: js.Any, clientY: js.Any): js.Any = js.native
-  /**
-    * Remove the document event listeners for the drag object.
-    */
-  /* private */ def _removeListeners(): js.Any = js.native
-  /**
-    * Set the internal drop action state and update the drag cursor.
-    */
-  /* private */ def _setDropAction(action: js.Any): js.Any = js.native
-  /**
-    * Update the current target node using the given mouse event.
-    */
-  /* private */ def _updateCurrentTarget(event: js.Any): js.Any = js.native
-  /**
-    * Update the drag scroll element under the mouse.
-    */
-  /* private */ def _updateDragScroll(event: js.Any): js.Any = js.native
   /**
     * Dispose of the resources held by the object.
     *

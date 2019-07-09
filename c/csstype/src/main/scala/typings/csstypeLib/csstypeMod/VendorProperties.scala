@@ -116,6 +116,7 @@ object VendorProperties {
     WebkitClipPath: ClipPathProperty = null,
     WebkitColorAdjust: ColorAdjustProperty = null,
     WebkitColumnCount: ColumnCountProperty = null,
+    WebkitColumnFill: ColumnFillProperty = null,
     WebkitColumnGap: ColumnGapProperty[TLength] = null,
     WebkitColumnRule: ColumnRuleProperty[TLength] = null,
     WebkitColumnRuleColor: ColumnRuleColorProperty = null,
@@ -191,7 +192,6 @@ object VendorProperties {
     WebkitUserModify: WebkitUserModifyProperty = null,
     WebkitUserSelect: UserSelectProperty = null,
     WebkitWritingMode: WritingModeProperty = null,
-    WebkitmaskSize: MaskSizeProperty[TLength] = null,
     msAccelerator: MsAcceleratorProperty = null,
     msAlignSelf: AlignSelfProperty = null,
     msBlockProgression: MsBlockProgressionProperty = null,
@@ -246,11 +246,15 @@ object VendorProperties {
     msTextAutospace: MsTextAutospaceProperty = null,
     msTextCombineHorizontal: TextCombineUprightProperty = null,
     msTextOverflow: TextOverflowProperty = null,
-    msTextSizeAdjust: TextSizeAdjustProperty = null,
     msTouchAction: TouchActionProperty = null,
     msTouchSelect: MsTouchSelectProperty = null,
     msTransform: TransformProperty = null,
     msTransformOrigin: TransformOriginProperty[TLength] = null,
+    msTransition: TransitionProperty = null,
+    msTransitionDelay: GlobalsString = null,
+    msTransitionDuration: GlobalsString = null,
+    msTransitionProperty: TransitionPropertyProperty = null,
+    msTransitionTimingFunction: TransitionTimingFunctionProperty = null,
     msUserSelect: MsUserSelectProperty = null,
     msWordBreak: WordBreakProperty = null,
     msWrapFlow: MsWrapFlowProperty = null,
@@ -363,6 +367,7 @@ object VendorProperties {
     if (WebkitClipPath != null) __obj.updateDynamic("WebkitClipPath")(WebkitClipPath.asInstanceOf[js.Any])
     if (WebkitColorAdjust != null) __obj.updateDynamic("WebkitColorAdjust")(WebkitColorAdjust)
     if (WebkitColumnCount != null) __obj.updateDynamic("WebkitColumnCount")(WebkitColumnCount.asInstanceOf[js.Any])
+    if (WebkitColumnFill != null) __obj.updateDynamic("WebkitColumnFill")(WebkitColumnFill)
     if (WebkitColumnGap != null) __obj.updateDynamic("WebkitColumnGap")(WebkitColumnGap.asInstanceOf[js.Any])
     if (WebkitColumnRule != null) __obj.updateDynamic("WebkitColumnRule")(WebkitColumnRule.asInstanceOf[js.Any])
     if (WebkitColumnRuleColor != null) __obj.updateDynamic("WebkitColumnRuleColor")(WebkitColumnRuleColor.asInstanceOf[js.Any])
@@ -438,7 +443,6 @@ object VendorProperties {
     if (WebkitUserModify != null) __obj.updateDynamic("WebkitUserModify")(WebkitUserModify)
     if (WebkitUserSelect != null) __obj.updateDynamic("WebkitUserSelect")(WebkitUserSelect)
     if (WebkitWritingMode != null) __obj.updateDynamic("WebkitWritingMode")(WebkitWritingMode)
-    if (WebkitmaskSize != null) __obj.updateDynamic("WebkitmaskSize")(WebkitmaskSize.asInstanceOf[js.Any])
     if (msAccelerator != null) __obj.updateDynamic("msAccelerator")(msAccelerator)
     if (msAlignSelf != null) __obj.updateDynamic("msAlignSelf")(msAlignSelf.asInstanceOf[js.Any])
     if (msBlockProgression != null) __obj.updateDynamic("msBlockProgression")(msBlockProgression)
@@ -493,11 +497,15 @@ object VendorProperties {
     if (msTextAutospace != null) __obj.updateDynamic("msTextAutospace")(msTextAutospace)
     if (msTextCombineHorizontal != null) __obj.updateDynamic("msTextCombineHorizontal")(msTextCombineHorizontal.asInstanceOf[js.Any])
     if (msTextOverflow != null) __obj.updateDynamic("msTextOverflow")(msTextOverflow.asInstanceOf[js.Any])
-    if (msTextSizeAdjust != null) __obj.updateDynamic("msTextSizeAdjust")(msTextSizeAdjust.asInstanceOf[js.Any])
     if (msTouchAction != null) __obj.updateDynamic("msTouchAction")(msTouchAction.asInstanceOf[js.Any])
     if (msTouchSelect != null) __obj.updateDynamic("msTouchSelect")(msTouchSelect)
     if (msTransform != null) __obj.updateDynamic("msTransform")(msTransform.asInstanceOf[js.Any])
     if (msTransformOrigin != null) __obj.updateDynamic("msTransformOrigin")(msTransformOrigin.asInstanceOf[js.Any])
+    if (msTransition != null) __obj.updateDynamic("msTransition")(msTransition.asInstanceOf[js.Any])
+    if (msTransitionDelay != null) __obj.updateDynamic("msTransitionDelay")(msTransitionDelay.asInstanceOf[js.Any])
+    if (msTransitionDuration != null) __obj.updateDynamic("msTransitionDuration")(msTransitionDuration.asInstanceOf[js.Any])
+    if (msTransitionProperty != null) __obj.updateDynamic("msTransitionProperty")(msTransitionProperty.asInstanceOf[js.Any])
+    if (msTransitionTimingFunction != null) __obj.updateDynamic("msTransitionTimingFunction")(msTransitionTimingFunction.asInstanceOf[js.Any])
     if (msUserSelect != null) __obj.updateDynamic("msUserSelect")(msUserSelect)
     if (msWordBreak != null) __obj.updateDynamic("msWordBreak")(msWordBreak)
     if (msWrapFlow != null) __obj.updateDynamic("msWrapFlow")(msWrapFlow)

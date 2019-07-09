@@ -45,7 +45,7 @@ class Operation[T] protected ()
     *
     * @return {promise}
     */
-  def promise(): js.Promise[js.Object] = js.native
+  def promise(): js.Promise[_] = js.native
   /**
     * Poll `getMetadata` to check the operation's status. This runs a loop to
     * ping the API on an interval.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dargs
 
-Typings are for version 6.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 Reverse minimist. Convert an object of options into an array of command-line arguments.

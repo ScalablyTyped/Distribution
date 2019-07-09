@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/lights/AmbientLight", "AmbientLight")
 @js.native
 /**
-  * This creates a Ambientlight with a color.
-  * @param color Numeric value of the RGB component of the color or a Color instance.
-  */
+	 * This creates a Ambientlight with a color.
+	 * @param color Numeric value of the RGB component of the color or a Color instance.
+	 */
 class AmbientLight ()
   extends threeLib.srcLightsLightMod.Light {
   def this(color: java.lang.String) = this()

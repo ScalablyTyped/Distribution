@@ -1,7 +1,7 @@
 
 # Scala.js typings for popmotion__popcorn
 
-Typings are for version 0.4.0
+Typings are for version 0.4.1
 
 ## Library description:
 Utility functions for animation and interactions.

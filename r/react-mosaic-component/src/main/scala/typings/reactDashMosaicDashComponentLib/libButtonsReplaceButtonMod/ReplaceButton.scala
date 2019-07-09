@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mosaic-component/lib/buttons/ReplaceButton", "ReplaceButton")
 @js.native
-class ReplaceButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */] ()
+class ReplaceButton ()
   extends reactLib.reactMod.PureComponent[
       reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
       js.Object, 
       js.Any
     ] {
   @JSName("context")
-  var context_ReplaceButton: reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext[T] = js.native
+  var context_ReplaceButton: reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext = js.native
   var replace: js.Any = js.native
 }
 
@@ -22,6 +22,6 @@ class ReplaceButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKe
 @JSImport("react-mosaic-component/lib/buttons/ReplaceButton", "ReplaceButton")
 @js.native
 object ReplaceButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
+  var contextType: reactLib.reactMod.Context[reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext] = js.native
 }
 

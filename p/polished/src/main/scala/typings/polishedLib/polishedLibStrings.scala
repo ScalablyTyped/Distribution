@@ -19,6 +19,14 @@ object polishedLibStrings {
     extends polishedLib.libTypesSideKeywordMod.SideKeyword
   
   @js.native
+  sealed trait bottomLeft
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
+  
+  @js.native
+  sealed trait bottomRight
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
+  
+  @js.native
   sealed trait doubleOctave
     extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
@@ -198,12 +206,24 @@ object polishedLibStrings {
   sealed trait top
     extends polishedLib.libTypesSideKeywordMod.SideKeyword
   
+  @js.native
+  sealed trait topLeft
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
+  
+  @js.native
+  sealed trait topRight
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
+  
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
   def augFourth: augFourth = "augFourth".asInstanceOf[augFourth]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  @scala.inline
+  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   @scala.inline
   def doubleOctave: doubleOctave = "doubleOctave".asInstanceOf[doubleOctave]
   @scala.inline
@@ -294,5 +314,9 @@ object polishedLibStrings {
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  @scala.inline
+  def topRight: topRight = "topRight".asInstanceOf[topRight]
 }
 

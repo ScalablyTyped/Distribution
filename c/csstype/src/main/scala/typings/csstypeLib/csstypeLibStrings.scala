@@ -187,6 +187,10 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._TouchActionProperty
   
   @js.native
+  sealed trait `-ms-none`
+    extends csstypeLib.csstypeMod._TouchActionProperty
+  
+  @js.native
   sealed trait `-ms-pinch-zoom`
     extends csstypeLib.csstypeMod._TouchActionProperty
   
@@ -269,6 +273,10 @@ object csstypeLibStrings {
   @js.native
   sealed trait `:-moz-dir`
     extends csstypeLib.csstypeMod.AdvancedPseudos
+  
+  @js.native
+  sealed trait `:-moz-focusring`
+    extends csstypeLib.csstypeMod.SimplePseudos
   
   @js.native
   sealed trait `:-moz-full-screen`
@@ -445,6 +453,10 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `::grammar-error`
+    extends csstypeLib.csstypeMod.SimplePseudos
+  
+  @js.native
+  sealed trait `::marker`
     extends csstypeLib.csstypeMod.SimplePseudos
   
   @js.native
@@ -1296,6 +1308,10 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.HtmlAttributes
   
   @js.native
+  sealed trait `[exportparts]`
+    extends csstypeLib.csstypeMod.HtmlAttributes
+  
+  @js.native
   sealed trait `[externalResourcesRequired]`
     extends csstypeLib.csstypeMod.SvgAttributes
   
@@ -1962,6 +1978,10 @@ object csstypeLibStrings {
   @js.native
   sealed trait `[panose-1]`
     extends csstypeLib.csstypeMod.SvgAttributes
+  
+  @js.native
+  sealed trait `[part]`
+    extends csstypeLib.csstypeMod.HtmlAttributes
   
   @js.native
   sealed trait `[path]`
@@ -2778,6 +2798,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.MsOverflowStyleProperty
        with csstypeLib.csstypeMod.MsWrapFlowProperty
        with csstypeLib.csstypeMod.OverflowAnchorProperty
+       with csstypeLib.csstypeMod.OverflowBlockProperty
+       with csstypeLib.csstypeMod.OverflowInlineProperty
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod.OverscrollBehaviorXProperty
@@ -2855,20 +2877,12 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._OverscrollBehaviorProperty
        with csstypeLib.csstypeMod._PlaceSelfProperty
        with csstypeLib.csstypeMod._RightProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginBlockEndProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginBlockProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginBlockStartProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginBottomProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginInlineEndProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginInlineStartProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginLeftProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginRightProperty[js.Any]
-       with csstypeLib.csstypeMod._ScrollMarginTopProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingBlockEndProperty[js.Any]
+       with csstypeLib.csstypeMod._ScrollPaddingBlockProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingBlockStartProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingBottomProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingInlineEndProperty[js.Any]
+       with csstypeLib.csstypeMod._ScrollPaddingInlineProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingInlineStartProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingLeftProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingProperty[js.Any]
@@ -2994,6 +3008,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.FontFaceFontDisplayProperty
        with csstypeLib.csstypeMod.MozOrientProperty
        with csstypeLib.csstypeMod.ResizeProperty
+       with csstypeLib.csstypeMod._ScrollSnapTypeProperty
   
   @js.native
   sealed trait `block-axis`
@@ -3042,6 +3057,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.ClearProperty
        with csstypeLib.csstypeMod.MsWrapFlowProperty
        with csstypeLib.csstypeMod.ResizeProperty
+       with csstypeLib.csstypeMod._ScrollSnapTypeProperty
   
   @js.native
   sealed trait bottom
@@ -3210,7 +3226,9 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait clip
-    extends csstypeLib.csstypeMod.OverflowXProperty
+    extends csstypeLib.csstypeMod.OverflowBlockProperty
+       with csstypeLib.csstypeMod.OverflowInlineProperty
+       with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod._BlockOverflowProperty
        with csstypeLib.csstypeMod._OverflowProperty
@@ -3893,6 +3911,8 @@ object csstypeLibStrings {
   sealed trait hidden
     extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.BackfaceVisibilityProperty
+       with csstypeLib.csstypeMod.OverflowBlockProperty
+       with csstypeLib.csstypeMod.OverflowInlineProperty
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod.VisibilityProperty
@@ -3998,6 +4018,7 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.DisplayOutside
        with csstypeLib.csstypeMod.MozOrientProperty
        with csstypeLib.csstypeMod.ResizeProperty
+       with csstypeLib.csstypeMod._ScrollSnapTypeProperty
   
   @js.native
   sealed trait `inline-axis`
@@ -4050,8 +4071,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `inter-character`
-    extends csstypeLib.csstypeMod.RubyPositionProperty
-       with csstypeLib.csstypeMod.TextJustifyProperty
+    extends csstypeLib.csstypeMod.TextJustifyProperty
   
   @js.native
   sealed trait `inter-word`
@@ -4808,6 +4828,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._ContentProperty
        with csstypeLib.csstypeMod._CounterIncrementProperty
        with csstypeLib.csstypeMod._CounterResetProperty
+       with csstypeLib.csstypeMod._CounterSetProperty
        with csstypeLib.csstypeMod._CursorProperty
        with csstypeLib.csstypeMod._DisplayProperty
        with csstypeLib.csstypeMod._FilterProperty
@@ -5535,6 +5556,8 @@ object csstypeLibStrings {
   @js.native
   sealed trait scroll
     extends csstypeLib.csstypeMod.Attachment
+       with csstypeLib.csstypeMod.OverflowBlockProperty
+       with csstypeLib.csstypeMod.OverflowInlineProperty
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod._OverflowProperty
@@ -6305,6 +6328,8 @@ object csstypeLibStrings {
   @js.native
   sealed trait visible
     extends csstypeLib.csstypeMod.BackfaceVisibilityProperty
+       with csstypeLib.csstypeMod.OverflowBlockProperty
+       with csstypeLib.csstypeMod.OverflowInlineProperty
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod.PointerEventsProperty
@@ -6372,6 +6397,10 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozUserModifyProperty
   
   @js.native
+  sealed trait x
+    extends csstypeLib.csstypeMod._ScrollSnapTypeProperty
+  
+  @js.native
   sealed trait `x-end`
     extends csstypeLib.csstypeMod._BackgroundPositionXProperty[js.Any]
   
@@ -6398,6 +6427,10 @@ object csstypeLibStrings {
   @js.native
   sealed trait `xx-small`
     extends csstypeLib.csstypeMod.AbsoluteSize
+  
+  @js.native
+  sealed trait y
+    extends csstypeLib.csstypeMod._ScrollSnapTypeProperty
   
   @js.native
   sealed trait `y-end`
@@ -6503,6 +6536,8 @@ object csstypeLibStrings {
   @scala.inline
   def `-ms-manipulation`: `-ms-manipulation` = "-ms-manipulation".asInstanceOf[`-ms-manipulation`]
   @scala.inline
+  def `-ms-none`: `-ms-none` = "-ms-none".asInstanceOf[`-ms-none`]
+  @scala.inline
   def `-ms-pinch-zoom`: `-ms-pinch-zoom` = "-ms-pinch-zoom".asInstanceOf[`-ms-pinch-zoom`]
   @scala.inline
   def `-ms-zoom`: `-ms-zoom` = "-ms-zoom".asInstanceOf[`-ms-zoom`]
@@ -6536,6 +6571,8 @@ object csstypeLibStrings {
   def `:-moz-any-link`: `:-moz-any-link` = ":-moz-any-link".asInstanceOf[`:-moz-any-link`]
   @scala.inline
   def `:-moz-dir`: `:-moz-dir` = ":-moz-dir".asInstanceOf[`:-moz-dir`]
+  @scala.inline
+  def `:-moz-focusring`: `:-moz-focusring` = ":-moz-focusring".asInstanceOf[`:-moz-focusring`]
   @scala.inline
   def `:-moz-full-screen`: `:-moz-full-screen` = ":-moz-full-screen".asInstanceOf[`:-moz-full-screen`]
   @scala.inline
@@ -6624,6 +6661,8 @@ object csstypeLibStrings {
   def `::first-line`: `::first-line` = "::first-line".asInstanceOf[`::first-line`]
   @scala.inline
   def `::grammar-error`: `::grammar-error` = "::grammar-error".asInstanceOf[`::grammar-error`]
+  @scala.inline
+  def `::marker`: `::marker` = "::marker".asInstanceOf[`::marker`]
   @scala.inline
   def `::part`: `::part` = "::part".asInstanceOf[`::part`]
   @scala.inline
@@ -7047,6 +7086,8 @@ object csstypeLibStrings {
   @scala.inline
   def `[enctype]`: `[enctype]` = "[enctype]".asInstanceOf[`[enctype]`]
   @scala.inline
+  def `[exportparts]`: `[exportparts]` = "[exportparts]".asInstanceOf[`[exportparts]`]
+  @scala.inline
   def `[externalResourcesRequired]`: `[externalResourcesRequired]` = "[externalResourcesRequired]".asInstanceOf[`[externalResourcesRequired]`]
   @scala.inline
   def `[face]`: `[face]` = "[face]".asInstanceOf[`[face]`]
@@ -7376,6 +7417,8 @@ object csstypeLibStrings {
   def `[paint-order]`: `[paint-order]` = "[paint-order]".asInstanceOf[`[paint-order]`]
   @scala.inline
   def `[panose-1]`: `[panose-1]` = "[panose-1]".asInstanceOf[`[panose-1]`]
+  @scala.inline
+  def `[part]`: `[part]` = "[part]".asInstanceOf[`[part]`]
   @scala.inline
   def `[path]`: `[path]` = "[path]".asInstanceOf[`[path]`]
   @scala.inline
@@ -9181,6 +9224,8 @@ object csstypeLibStrings {
   @scala.inline
   def `write-only`: `write-only` = "write-only".asInstanceOf[`write-only`]
   @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  @scala.inline
   def `x-end`: `x-end` = "x-end".asInstanceOf[`x-end`]
   @scala.inline
   def `x-large`: `x-large` = "x-large".asInstanceOf[`x-large`]
@@ -9194,6 +9239,8 @@ object csstypeLibStrings {
   def `xx-large`: `xx-large` = "xx-large".asInstanceOf[`xx-large`]
   @scala.inline
   def `xx-small`: `xx-small` = "xx-small".asInstanceOf[`xx-small`]
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
   @scala.inline
   def `y-end`: `y-end` = "y-end".asInstanceOf[`y-end`]
   @scala.inline

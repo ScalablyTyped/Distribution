@@ -18,8 +18,8 @@ class DirectionalLight ()
   @JSName("shadow")
   var shadow_DirectionalLight: threeLib.srcLightsDirectionalLightShadowMod.DirectionalLightShadow = js.native
   /**
-    * Target used for shadow camera orientation.
-    */
+  	 * Target used for shadow camera orientation.
+  	 */
   var target: threeLib.srcCoreObject3DMod.Object3D = js.native
 }
 

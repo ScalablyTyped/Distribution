@@ -9,9 +9,36 @@ import scala.scalajs.js.annotation._
 @js.native
 object DockPanelNs extends js.Object {
   /**
+    * The sizes of the edge drop zones, in pixels.
+    */
+  trait IEdges extends js.Object {
+    /**
+      * The size of the bottom edge drop zone.
+      */
+    var bottom: scala.Double
+    /**
+      * The size of the left edge drop zone.
+      */
+    var left: scala.Double
+    /**
+      * The size of the right edge drop zone.
+      */
+    var right: scala.Double
+    /**
+      * The size of the top edge drop zone.
+      */
+    var top: scala.Double
+  }
+  
+  /**
     * An options object for creating a dock panel.
     */
   trait IOptions extends js.Object {
+    /**
+      * The sizes of the edge drop zones, in pixels.
+      * If not given, default values will be used.
+      */
+    var edges: js.UndefOr[IEdges] = js.undefined
     /**
       * The mode for the dock panel.
       *

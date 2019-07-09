@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "magic-string"
-version := "0.25.2-9e4ef8"
+version := "0.25.3-93dce5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

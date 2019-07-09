@@ -15,8 +15,8 @@ class Curve[T /* <: threeLib.srcMathVector2Mod.Vector */] ()
 @js.native
 object Curve extends js.Object {
   /**
-    * @deprecated since r84.
-    */
+  	 * @deprecated since r84.
+  	 */
   def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = js.native
 }
 

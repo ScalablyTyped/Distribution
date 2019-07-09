@@ -17,8 +17,9 @@ trait PodSecurityPolicySpec extends js.Object {
   val allowPrivilegeEscalation: scala.Boolean
   /**
     * AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be
-    * embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod
-    * spec.
+    * embedded within a pod spec. An empty value indicates that any CSI driver can be used for
+    * inline ephemeral volumes. This is an alpha field, and is only honored if the API server
+    * enables the CSIInlineVolume feature gate.
     */
   val allowedCSIDrivers: js.Array[AllowedCSIDriver]
   /**
@@ -122,6 +123,12 @@ trait PodSecurityPolicySpec extends js.Object {
     */
   val runAsUser: RunAsUserStrategyOptions
   /**
+    * runtimeClass is the strategy that will dictate the allowable RuntimeClasses for a pod. If
+    * this field is omitted, the pod's runtimeClassName field is unrestricted. Enforcement of
+    * this field depends on the RuntimeClass feature gate being enabled.
+    */
+  val runtimeClass: RuntimeClassStrategyOptions
+  /**
     * seLinux is the strategy that will dictate the allowable labels that may be set.
     */
   val seLinux: SELinuxStrategyOptions
@@ -160,11 +167,12 @@ object PodSecurityPolicySpec {
     requiredDropCapabilities: js.Array[java.lang.String],
     runAsGroup: RunAsGroupStrategyOptions,
     runAsUser: RunAsUserStrategyOptions,
+    runtimeClass: RuntimeClassStrategyOptions,
     seLinux: SELinuxStrategyOptions,
     supplementalGroups: SupplementalGroupsStrategyOptions,
     volumes: js.Array[java.lang.String]
   ): PodSecurityPolicySpec = {
-    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, allowedCSIDrivers = allowedCSIDrivers, allowedCapabilities = allowedCapabilities, allowedFlexVolumes = allowedFlexVolumes, allowedHostPaths = allowedHostPaths, allowedProcMountTypes = allowedProcMountTypes, allowedUnsafeSysctls = allowedUnsafeSysctls, defaultAddCapabilities = defaultAddCapabilities, defaultAllowPrivilegeEscalation = defaultAllowPrivilegeEscalation, forbiddenSysctls = forbiddenSysctls, fsGroup = fsGroup, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostPorts = hostPorts, privileged = privileged, readOnlyRootFilesystem = readOnlyRootFilesystem, requiredDropCapabilities = requiredDropCapabilities, runAsGroup = runAsGroup, runAsUser = runAsUser, seLinux = seLinux, supplementalGroups = supplementalGroups, volumes = volumes)
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, allowedCSIDrivers = allowedCSIDrivers, allowedCapabilities = allowedCapabilities, allowedFlexVolumes = allowedFlexVolumes, allowedHostPaths = allowedHostPaths, allowedProcMountTypes = allowedProcMountTypes, allowedUnsafeSysctls = allowedUnsafeSysctls, defaultAddCapabilities = defaultAddCapabilities, defaultAllowPrivilegeEscalation = defaultAllowPrivilegeEscalation, forbiddenSysctls = forbiddenSysctls, fsGroup = fsGroup, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostPorts = hostPorts, privileged = privileged, readOnlyRootFilesystem = readOnlyRootFilesystem, requiredDropCapabilities = requiredDropCapabilities, runAsGroup = runAsGroup, runAsUser = runAsUser, runtimeClass = runtimeClass, seLinux = seLinux, supplementalGroups = supplementalGroups, volumes = volumes)
   
     __obj.asInstanceOf[PodSecurityPolicySpec]
   }

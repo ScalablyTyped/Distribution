@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react", "IonBackButton")
 @js.native
 class IonBackButton ()
-  extends atIonicReactLib.distComponentsMod.IonBackButton
+  extends atIonicReactLib.distTypesComponentsMod.IonBackButton
 

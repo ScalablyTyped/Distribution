@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__scales
 
-Typings are for version 0.58.0
+Typings are for version 0.59.1
 
 
 

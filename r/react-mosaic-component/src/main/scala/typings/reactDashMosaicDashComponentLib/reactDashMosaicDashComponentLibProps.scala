@@ -25,7 +25,6 @@ trait reactDashMosaicDashComponentLibProps {
   def ReplaceButtonProps: reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps.type = reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps
   type ReplaceButtonProps = reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps
   type SeparatorProps = js.Object
-  type SourceConnectedInternalMosaicWindowProps[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */] = reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindowProps[T]
   @scala.inline
   def SplitButtonProps: reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps.type = reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps
   type SplitButtonProps = reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps

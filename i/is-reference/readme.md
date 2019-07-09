@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-reference
 
-Typings are for version 1.1.2
+Typings are for version 1.1.3
 
 ## Library description:
 Determine whether an AST node is a reference

@@ -1,7 +1,7 @@
 
 # Scala.js typings for three
 
-Typings are for version 0.104.0
+Typings are for version 0.106.2
 
 ## Library description:
 JavaScript 3D library
@@ -43,6 +43,10 @@ These comments are from the typescript definitions and might be useful:
  *
  * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/core/Clock.js">src/core/Clock.js</a>
  */
+/**
+ * @author Joe Pea / http://github.com/trusktr
+ */
+
 /**
  *
  * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Math.js">src/math/Math.js</a>

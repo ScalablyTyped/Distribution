@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof @nivo/core.Anon_Animate ]:? @nivo/core.Anon_Animate[P]} */ trait LineSvgProps extends LineProps {
   var areaBlendMode: js.UndefOr[java.lang.String] = js.undefined
   var enablePointLabel: js.UndefOr[scala.Boolean] = js.undefined
+  var pointLabel: js.UndefOr[java.lang.String] = js.undefined
+  var pointLabelYOffset: js.UndefOr[scala.Double] = js.undefined
   var useMesh: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -44,6 +46,8 @@ object LineSvgProps {
     pointBorderColor: js.Any = null,
     pointBorderWidth: scala.Int | scala.Double = null,
     pointColor: js.Any = null,
+    pointLabel: java.lang.String = null,
+    pointLabelYOffset: scala.Int | scala.Double = null,
     pointSize: scala.Int | scala.Double = null,
     sliceTooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNode = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
@@ -83,6 +87,8 @@ object LineSvgProps {
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor)
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])
     if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor)
+    if (pointLabel != null) __obj.updateDynamic("pointLabel")(pointLabel)
+    if (pointLabelYOffset != null) __obj.updateDynamic("pointLabelYOffset")(pointLabelYOffset.asInstanceOf[js.Any])
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
     if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(js.Any.fromFunction1(sliceTooltip))
     if (theme != null) __obj.updateDynamic("theme")(theme)

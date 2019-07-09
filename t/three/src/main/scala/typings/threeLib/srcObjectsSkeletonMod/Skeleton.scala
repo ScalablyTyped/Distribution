@@ -18,8 +18,8 @@ class Skeleton protected () extends js.Object {
   var bones: js.Array[threeLib.srcObjectsBoneMod.Bone] = js.native
   var identityMatrix: threeLib.srcMathMatrix4Mod.Matrix4 = js.native
   /**
-    * @deprecated This property has been removed completely.
-    */
+  	 * @deprecated This property has been removed completely.
+  	 */
   var useVertexTexture: scala.Boolean = js.native
   def calculateInverses(bone: threeLib.srcObjectsBoneMod.Bone): scala.Unit = js.native
   def pose(): scala.Unit = js.native

@@ -43,5 +43,10 @@ object CertificateSigningRequestList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.certificatesV1beta1CertificateSigningRequestListMod.CertificateSigningRequestList = js.native
+  /**
+    * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/CertificateSigningRequestList.CertificateSigningRequestList */ scala.Boolean = js.native
 }
 

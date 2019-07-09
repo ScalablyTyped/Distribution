@@ -609,6 +609,12 @@ package object csstypeMod {
   */
   type CounterResetProperty = _CounterResetProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - Globals
+    - csstypeLib.csstypeLibStrings.none
+    - java.lang.String
+  */
+  type CounterSetProperty = _CounterSetProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.infinite
     - java.lang.String
@@ -1970,69 +1976,17 @@ package object csstypeMod {
     - scala.Double
   */
   type ScaleProperty = _ScaleProperty | java.lang.String | scala.Double
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginBlockEndProperty[TLength] = _ScrollMarginBlockEndProperty[TLength] | TLength
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-    - java.lang.String
-  */
-  type ScrollMarginBlockProperty[TLength] = _ScrollMarginBlockProperty[TLength] | TLength | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginBlockStartProperty[TLength] = _ScrollMarginBlockStartProperty[TLength] | TLength
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginBottomProperty[TLength] = _ScrollMarginBottomProperty[TLength] | TLength
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginInlineEndProperty[TLength] = _ScrollMarginInlineEndProperty[TLength] | TLength
+  type ScrollMarginBlockEndProperty[TLength] = Globals | TLength
+  type ScrollMarginBlockProperty[TLength] = Globals | TLength | java.lang.String
+  type ScrollMarginBlockStartProperty[TLength] = Globals | TLength
+  type ScrollMarginBottomProperty[TLength] = Globals | TLength
+  type ScrollMarginInlineEndProperty[TLength] = Globals | TLength
   type ScrollMarginInlineProperty[TLength] = Globals | TLength | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginInlineStartProperty[TLength] = _ScrollMarginInlineStartProperty[TLength] | TLength
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginLeftProperty[TLength] = _ScrollMarginLeftProperty[TLength] | TLength
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-    - java.lang.String
-  */
-  type ScrollMarginProperty[TLength] = _ScrollMarginProperty[TLength] | TLength | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginRightProperty[TLength] = _ScrollMarginRightProperty[TLength] | TLength
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - TLength
-    - csstypeLib.csstypeLibStrings.auto
-  */
-  type ScrollMarginTopProperty[TLength] = _ScrollMarginTopProperty[TLength] | TLength
+  type ScrollMarginInlineStartProperty[TLength] = Globals | TLength
+  type ScrollMarginLeftProperty[TLength] = Globals | TLength
+  type ScrollMarginProperty[TLength] = Globals | TLength | java.lang.String
+  type ScrollMarginRightProperty[TLength] = Globals | TLength
+  type ScrollMarginTopProperty[TLength] = Globals | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
@@ -2040,7 +1994,13 @@ package object csstypeMod {
     - java.lang.String
   */
   type ScrollPaddingBlockEndProperty[TLength] = _ScrollPaddingBlockEndProperty[TLength] | TLength | java.lang.String
-  type ScrollPaddingBlockProperty[TLength] = Globals | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Globals
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - java.lang.String
+  */
+  type ScrollPaddingBlockProperty[TLength] = _ScrollPaddingBlockProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
@@ -2062,7 +2022,13 @@ package object csstypeMod {
     - java.lang.String
   */
   type ScrollPaddingInlineEndProperty[TLength] = _ScrollPaddingInlineEndProperty[TLength] | TLength | java.lang.String
-  type ScrollPaddingInlineProperty[TLength] = Globals | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Globals
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - java.lang.String
+  */
+  type ScrollPaddingInlineProperty[TLength] = _ScrollPaddingInlineProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
@@ -2133,7 +2099,12 @@ package object csstypeMod {
   type ScrollSnapPointsYProperty = _ScrollSnapPointsYProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
+    - csstypeLib.csstypeLibStrings.block
+    - csstypeLib.csstypeLibStrings.both
+    - csstypeLib.csstypeLibStrings.`inline`
     - csstypeLib.csstypeLibStrings.none
+    - csstypeLib.csstypeLibStrings.x
+    - csstypeLib.csstypeLibStrings.y
     - java.lang.String
   */
   type ScrollSnapTypeProperty = _ScrollSnapTypeProperty | java.lang.String
@@ -2328,6 +2299,7 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.`-ms-manipulation`
+    - csstypeLib.csstypeLibStrings.`-ms-none`
     - csstypeLib.csstypeLibStrings.`-ms-pinch-zoom`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.manipulation

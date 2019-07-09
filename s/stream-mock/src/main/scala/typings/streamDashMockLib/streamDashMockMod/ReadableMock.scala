@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-mock", "ReadableMock")
 @js.native
 class ReadableMock protected ()
-  extends nodeLib.streamMod.Readable {
-  def this(source: js.Array[_]) = this()
-  def this(source: js.Array[_], opts: nodeLib.streamMod.ReadableOptions) = this()
+  extends streamDashMockLib.libReadableMod.ReadableMock {
+  def this(source: stdLib.ArrayLike[_]) = this()
+  def this(source: stdLib.Iterable[_]) = this()
+  def this(source: stdLib.ArrayLike[_], options: nodeLib.streamMod.ReadableOptions) = this()
+  def this(source: stdLib.Iterable[_], options: nodeLib.streamMod.ReadableOptions) = this()
 }
 

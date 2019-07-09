@@ -1,7 +1,7 @@
 
 # Scala.js typings for cron-parser
 
-Typings are for version 2.11.0
+Typings are for version 2.12.0
 
 ## Library description:
 Node.js library for parsing crontab instructions

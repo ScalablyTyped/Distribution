@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait WebGLDebug extends js.Object {
   /**
-    * Enables error checking and reporting when shader programs are being compiled.
-    */
+  	 * Enables error checking and reporting when shader programs are being compiled.
+  	 */
   var checkShaderErrors: scala.Boolean
 }
 

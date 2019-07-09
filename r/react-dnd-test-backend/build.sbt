@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-dnd-test-backend"
-version := "7.7.0-08bf96"
+version := "9.0.0-4d000c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dnd-core" % "7.7.0-7f8d6d",
+  "org.scalablytyped" %%% "dnd-core" % "9.0.0-058116",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

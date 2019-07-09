@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Auto extends js.Object {
-  var axisBottom: atNivoBarLib.atNivoBarMod.Axis
-  var axisLeft: atNivoBarLib.atNivoBarMod.Axis
-  var axisRight: atNivoBarLib.atNivoBarMod.Axis
-  var axisTop: atNivoBarLib.atNivoBarMod.Axis
+  var axisBottom: atNivoBarLib.atNivoBarMod.Axis | scala.Null
+  var axisLeft: atNivoBarLib.atNivoBarMod.Axis | scala.Null
+  var axisRight: atNivoBarLib.atNivoBarMod.Axis | scala.Null
+  var axisTop: atNivoBarLib.atNivoBarMod.Axis | scala.Null
   var barComponent: reactLib.reactMod.StatelessComponent[atNivoBarLib.atNivoBarMod.BarItemProps]
   var borderRadius: scala.Double
   var borderWidth: scala.Double
@@ -44,10 +44,6 @@ trait Anon_Auto extends js.Object {
 object Anon_Auto {
   @scala.inline
   def apply(
-    axisBottom: atNivoBarLib.atNivoBarMod.Axis,
-    axisLeft: atNivoBarLib.atNivoBarMod.Axis,
-    axisRight: atNivoBarLib.atNivoBarMod.Axis,
-    axisTop: atNivoBarLib.atNivoBarMod.Axis,
     barComponent: reactLib.reactMod.StatelessComponent[atNivoBarLib.atNivoBarMod.BarItemProps],
     borderRadius: scala.Double,
     borderWidth: scala.Double,
@@ -76,10 +72,17 @@ object Anon_Auto {
     reverse: scala.Boolean,
     theme: atNivoCoreLib.atNivoCoreMod.Theme,
     tooltip: atNivoBarLib.atNivoBarMod.TooltipProp,
-    tooltipFormat: java.lang.String | atNivoBarLib.atNivoBarMod.ValueFormatter
+    tooltipFormat: java.lang.String | atNivoBarLib.atNivoBarMod.ValueFormatter,
+    axisBottom: atNivoBarLib.atNivoBarMod.Axis = null,
+    axisLeft: atNivoBarLib.atNivoBarMod.Axis = null,
+    axisRight: atNivoBarLib.atNivoBarMod.Axis = null,
+    axisTop: atNivoBarLib.atNivoBarMod.Axis = null
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal(axisBottom = axisBottom, axisLeft = axisLeft, axisRight = axisRight, axisTop = axisTop, barComponent = barComponent, borderRadius = borderRadius, borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], enableGridX = enableGridX, enableGridY = enableGridY, enableLabel = enableLabel, groupMode = groupMode.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], innerPadding = innerPadding, isInteractive = isInteractive, keys = keys, label = label.asInstanceOf[js.Any], labelFormat = labelFormat.asInstanceOf[js.Any], labelLinkColor = labelLinkColor.asInstanceOf[js.Any], labelSkipHeight = labelSkipHeight, labelSkipWidth = labelSkipWidth, labelTextColor = labelTextColor.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], legends = legends, margin = margin, markers = markers, maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], padding = padding, reverse = reverse, theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(barComponent = barComponent, borderRadius = borderRadius, borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], enableGridX = enableGridX, enableGridY = enableGridY, enableLabel = enableLabel, groupMode = groupMode.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], innerPadding = innerPadding, isInteractive = isInteractive, keys = keys, label = label.asInstanceOf[js.Any], labelFormat = labelFormat.asInstanceOf[js.Any], labelLinkColor = labelLinkColor.asInstanceOf[js.Any], labelSkipHeight = labelSkipHeight, labelSkipWidth = labelSkipWidth, labelTextColor = labelTextColor.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], legends = legends, margin = margin, markers = markers, maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], padding = padding, reverse = reverse, theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any])
+    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
+    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
+    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)
+    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop)
     __obj.asInstanceOf[Anon_Auto]
   }
 }

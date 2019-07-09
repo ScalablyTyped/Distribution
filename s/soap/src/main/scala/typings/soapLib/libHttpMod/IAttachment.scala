@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IAttachment extends js.Object {
-  var body: stdLib.ReadableStream[_]
+  var body: nodeLib.NodeJSNs.ReadableStream
   var contentId: java.lang.String
   var mimetype: java.lang.String
   var name: java.lang.String
@@ -15,7 +15,7 @@ trait IAttachment extends js.Object {
 object IAttachment {
   @scala.inline
   def apply(
-    body: stdLib.ReadableStream[_],
+    body: nodeLib.NodeJSNs.ReadableStream,
     contentId: java.lang.String,
     mimetype: java.lang.String,
     name: java.lang.String

@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-is-promise
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if something is a promise
@@ -31,4 +31,23 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+/**
+Check if `value` is a ES2015 promise.
+
+@param value - Value to be checked.
+
+@example
+```
+import isPromise = require('p-is-promise');
+
+isPromise(Promise.resolve('🦄'));
+//=> true
+```
+*/
+
+```
 

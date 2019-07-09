@@ -13,6 +13,7 @@ trait FetchOptions[T] extends AsyncOptions[T] {
 object FetchOptions {
   @scala.inline
   def apply[T](
+    debugLabel: java.lang.String = null,
     defer: js.UndefOr[scala.Boolean] = js.undefined,
     deferFn: DeferFn[T] = null,
     dispatcher: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], scala.Unit], /* props */ js.Object) => scala.Unit = null,
@@ -27,6 +28,7 @@ object FetchOptions {
     watchFn: (/* props */ js.Object, /* prevProps */ js.Object) => _ = null
   ): FetchOptions[T] = {
     val __obj = js.Dynamic.literal()
+    if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel)
     if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
     if (deferFn != null) __obj.updateDynamic("deferFn")(deferFn)
     if (dispatcher != null) __obj.updateDynamic("dispatcher")(js.Any.fromFunction3(dispatcher))

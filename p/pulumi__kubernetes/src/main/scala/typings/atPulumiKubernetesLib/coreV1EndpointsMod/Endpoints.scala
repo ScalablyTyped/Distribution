@@ -19,7 +19,6 @@ class Endpoints protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Endpoints) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Endpoints, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -48,7 +47,6 @@ class Endpoints protected ()
     * and ports that comprise a service.
     */
   val subsets: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EndpointSubset]] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Endpoints = js.native
 }
 
 /* static members */
@@ -73,5 +71,10 @@ object Endpoints extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.coreV1EndpointsMod.Endpoints = js.native
+  /**
+    * Returns true if the given object is an instance of Endpoints.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/Endpoints.Endpoints */ scala.Boolean = js.native
 }
 

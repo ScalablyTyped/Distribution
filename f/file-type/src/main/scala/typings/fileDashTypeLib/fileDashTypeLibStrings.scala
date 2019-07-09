@@ -43,6 +43,10 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait apng
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait ar
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
@@ -343,6 +347,10 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait raf
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait rar
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
@@ -352,6 +360,10 @@ object fileDashTypeLibStrings {
   
   @js.native
   sealed trait rtf
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait rw2
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -452,6 +464,8 @@ object fileDashTypeLibStrings {
   def amr: amr = "amr".asInstanceOf[amr]
   @scala.inline
   def ape: ape = "ape".asInstanceOf[ape]
+  @scala.inline
+  def apng: apng = "apng".asInstanceOf[apng]
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
   @scala.inline
@@ -603,11 +617,15 @@ object fileDashTypeLibStrings {
   @scala.inline
   def qcp: qcp = "qcp".asInstanceOf[qcp]
   @scala.inline
+  def raf: raf = "raf".asInstanceOf[raf]
+  @scala.inline
   def rar: rar = "rar".asInstanceOf[rar]
   @scala.inline
   def rpm: rpm = "rpm".asInstanceOf[rpm]
   @scala.inline
   def rtf: rtf = "rtf".asInstanceOf[rtf]
+  @scala.inline
+  def rw2: rw2 = "rw2".asInstanceOf[rw2]
   @scala.inline
   def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
   @scala.inline

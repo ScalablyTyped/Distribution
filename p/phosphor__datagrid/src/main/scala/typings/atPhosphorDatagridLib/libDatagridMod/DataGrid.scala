@@ -15,6 +15,14 @@ import scala.scalajs.js.annotation._
 class DataGrid ()
   extends atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget {
   def this(options: atPhosphorDatagridLib.libDatagridMod.DataGridNs.IOptions) = this()
+  /**
+    * Blit content into the on-screen canvas.
+    *
+    * The rect should be expressed in viewport coordinates.
+    *
+    * This automatically accounts for the dpi ratio.
+    */
+  var _blit: js.Any = js.native
   var _buffer: js.Any = js.native
   var _bufferGC: js.Any = js.native
   var _canvas: js.Any = js.native
@@ -24,19 +32,209 @@ class DataGrid ()
   var _columnSections: js.Any = js.native
   var _defaultRenderer: js.Any = js.native
   var _dpiRatio: js.Any = js.native
+  /**
+    * Draw the grid content for the given dirty rect.
+    *
+    * This method dispatches to the relevant `_draw*` methods.
+    */
+  var _draw: js.Any = js.native
+  /**
+    * Draw the background for the given paint region.
+    */
+  var _drawBackground: js.Any = js.native
+  /**
+    * Draw the body region which intersects the dirty rect.
+    */
+  var _drawBodyRegion: js.Any = js.native
+  /**
+    * Draw the cells for the given paint region.
+    */
+  var _drawCells: js.Any = js.native
+  /**
+    * Draw the column background for the given paint region.
+    */
+  var _drawColumnBackground: js.Any = js.native
+  /**
+    * Draw the column header region which intersects the dirty rect.
+    */
+  var _drawColumnHeaderRegion: js.Any = js.native
+  /**
+    * Draw the corner header region which intersects the dirty rect.
+    */
+  var _drawCornerHeaderRegion: js.Any = js.native
+  /**
+    * Draw the horizontal grid lines for the given paint region.
+    */
+  var _drawHorizontalGridLines: js.Any = js.native
+  /**
+    * Draw the row background for the given paint region.
+    */
+  var _drawRowBackground: js.Any = js.native
+  /**
+    * Draw the row header region which intersects the dirty rect.
+    */
+  var _drawRowHeaderRegion: js.Any = js.native
+  /**
+    * Draw the vertical grid lines for the given paint region.
+    */
+  var _drawVerticalGridLines: js.Any = js.native
+  /**
+    * Draw the void region for the dirty rect.
+    */
+  var _drawVoidRegion: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the data grid.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the data grid.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `mousemove` event for the data grid.
+    */
+  var _evtMouseMove: js.Any = js.native
+  /**
+    * Handle the `mouseup` event for the data grid.
+    */
+  var _evtMouseUp: js.Any = js.native
+  /**
+    * Handle the `'wheel'` event for the data grid.
+    */
+  var _evtWheel: js.Any = js.native
+  /**
+    * Get the section list for the specified grid area.
+    */
+  var _getSectionList: js.Any = js.native
   var _hScrollBar: js.Any = js.native
   var _hScrollBarMinHeight: js.Any = js.native
   var _headerVisibility: js.Any = js.native
+  /**
+    * Hit test the grid headers for a resize handle.
+    */
+  var _hitTestResizeHandles: js.Any = js.native
   var _inPaint: js.Any = js.native
   var _model: js.Any = js.native
+  /**
+    * Handle cells changing in the data model.
+    */
+  var _onCellsChanged: js.Any = js.native
+  /**
+    * A signal handler for the data model `changed` signal.
+    */
+  var _onModelChanged: js.Any = js.native
+  /**
+    * Handle a full data model reset.
+    */
+  var _onModelReset: js.Any = js.native
+  /**
+    * Handle the `pageRequested` signal from a scroll bar.
+    */
+  var _onPageRequested: js.Any = js.native
+  /**
+    * A signal handler for the renderer map `changed` signal.
+    */
+  var _onRenderersChanged: js.Any = js.native
+  /**
+    * Handle sections changing in the data model.
+    */
+  var _onSectionsChanged: js.Any = js.native
+  /**
+    * Handle sections moving in the data model.
+    */
+  var _onSectionsMoved: js.Any = js.native
+  /**
+    * Handle the `stepRequested` signal from a scroll bar.
+    */
+  var _onStepRequested: js.Any = js.native
+  /**
+    * Handle the `thumbMoved` signal from a scroll bar.
+    */
+  var _onThumbMoved: js.Any = js.native
+  /**
+    * A message hook invoked on a viewport `'paint-request'` message.
+    */
+  var _onViewportPaintRequest: js.Any = js.native
+  /**
+    * A message hook invoked on a viewport `'resize'` message.
+    */
+  var _onViewportResize: js.Any = js.native
+  /**
+    * A message hook invoked on a viewport `'scroll-request'` message.
+    */
+  var _onViewportScrollRequest: js.Any = js.native
+  /**
+    * A message hook invoked on a `'section-resize-request'` message.
+    */
+  var _onViewportSectionResizeRequest: js.Any = js.native
+  /**
+    * Paint the grid content for the given dirty rect.
+    *
+    * The rect should be expressed in viewport coordinates.
+    *
+    * This is the primary paint entry point. The individual `_draw*`
+    * methods should not be invoked directly. This method dispatches
+    * to the drawing methods in the correct order.
+    */
+  var _paint: js.Any = js.native
   var _paintPending: js.Any = js.native
   var _pressData: js.Any = js.native
+  /**
+    * Process a message sent to the viewport
+    */
+  var _processViewportMessage: js.Any = js.native
+  /**
+    * Refresh the internal dpi ratio.
+    *
+    * This will update the canvas size and schedule a repaint if needed.
+    */
+  var _refreshDPI: js.Any = js.native
+  /**
+    * Release the mouse grab for the data grid.
+    */
+  var _releaseMouse: js.Any = js.native
+  /**
+    * Ensure the canvas is at least the specified size.
+    *
+    * This method will retain the valid canvas content.
+    */
+  var _resizeCanvasIfNeeded: js.Any = js.native
+  /**
+    * Resize a section in the given section list.
+    *
+    * #### Notes
+    * This will update the scroll bars and repaint as needed.
+    */
+  var _resizeSection: js.Any = js.native
   var _rowHeaderSections: js.Any = js.native
   var _rowSections: js.Any = js.native
   var _scrollCorner: js.Any = js.native
   var _scrollX: js.Any = js.native
   var _scrollY: js.Any = js.native
+  /**
+    * Set the base size for the given section list.
+    *
+    * #### Notes
+    * This will update the scroll bars and repaint as needed.
+    */
+  var _setBaseSize: js.Any = js.native
   var _style: js.Any = js.native
+  /**
+    * Sync the scroll bars and scroll state with the viewport.
+    *
+    * #### Notes
+    * If the visibility of either scroll bar changes, a synchronous
+    * fit-request will be dispatched to the data grid to immediately
+    * resize the viewport.
+    */
+  var _syncScrollState: js.Any = js.native
+  /**
+    * Sync the viewport to the given scroll position.
+    *
+    * #### Notes
+    * This schedules a full repaint and syncs the scroll state.
+    */
+  var _syncViewport: js.Any = js.native
   var _vScrollBar: js.Any = js.native
   var _vScrollBarMinWidth: js.Any = js.native
   var _viewport: js.Any = js.native
@@ -227,204 +425,6 @@ class DataGrid ()
     * This value does not include the width of the scroll bar.
     */
   val viewportWidth: scala.Double = js.native
-  /**
-    * Blit content into the on-screen canvas.
-    *
-    * The rect should be expressed in viewport coordinates.
-    *
-    * This automatically accounts for the dpi ratio.
-    */
-  /* private */ def _blit(source: js.Any, x: js.Any, y: js.Any, w: js.Any, h: js.Any, dx: js.Any, dy: js.Any): js.Any = js.native
-  /**
-    * Draw the grid content for the given dirty rect.
-    *
-    * This method dispatches to the relevant `_draw*` methods.
-    */
-  /* private */ def _draw(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Draw the background for the given paint region.
-    */
-  /* private */ def _drawBackground(rgn: js.Any, color: js.Any): js.Any = js.native
-  /**
-    * Draw the body region which intersects the dirty rect.
-    */
-  /* private */ def _drawBodyRegion(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Draw the cells for the given paint region.
-    */
-  /* private */ def _drawCells(rgn: js.Any): js.Any = js.native
-  /**
-    * Draw the column background for the given paint region.
-    */
-  /* private */ def _drawColumnBackground(rgn: js.Any, colorFn: js.Any): js.Any = js.native
-  /**
-    * Draw the column header region which intersects the dirty rect.
-    */
-  /* private */ def _drawColumnHeaderRegion(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Draw the corner header region which intersects the dirty rect.
-    */
-  /* private */ def _drawCornerHeaderRegion(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Draw the horizontal grid lines for the given paint region.
-    */
-  /* private */ def _drawHorizontalGridLines(rgn: js.Any, color: js.Any): js.Any = js.native
-  /**
-    * Draw the row background for the given paint region.
-    */
-  /* private */ def _drawRowBackground(rgn: js.Any, colorFn: js.Any): js.Any = js.native
-  /**
-    * Draw the row header region which intersects the dirty rect.
-    */
-  /* private */ def _drawRowHeaderRegion(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Draw the vertical grid lines for the given paint region.
-    */
-  /* private */ def _drawVerticalGridLines(rgn: js.Any, color: js.Any): js.Any = js.native
-  /**
-    * Draw the void region for the dirty rect.
-    */
-  /* private */ def _drawVoidRegion(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the data grid.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the data grid.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `mousemove` event for the data grid.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `mouseup` event for the data grid.
-    */
-  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'wheel'` event for the data grid.
-    */
-  /* private */ def _evtWheel(event: js.Any): js.Any = js.native
-  /**
-    * Get the section list for the specified grid area.
-    */
-  /* private */ def _getSectionList(area: js.Any): js.Any = js.native
-  /**
-    * Hit test the grid headers for a resize handle.
-    */
-  /* private */ def _hitTestResizeHandles(clientX: js.Any, clientY: js.Any): js.Any = js.native
-  /**
-    * Handle cells changing in the data model.
-    */
-  /* private */ def _onCellsChanged(args: js.Any): js.Any = js.native
-  /**
-    * A signal handler for the data model `changed` signal.
-    */
-  /* private */ def _onModelChanged(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle a full data model reset.
-    */
-  /* private */ def _onModelReset(args: js.Any): js.Any = js.native
-  /**
-    * Handle the `pageRequested` signal from a scroll bar.
-    */
-  /* private */ def _onPageRequested(sender: js.Any, dir: js.Any): js.Any = js.native
-  /**
-    * A signal handler for the renderer map `changed` signal.
-    */
-  /* private */ def _onRenderersChanged(): js.Any = js.native
-  /**
-    * Handle sections changing in the data model.
-    */
-  /* private */ def _onSectionsChanged(args: js.Any): js.Any = js.native
-  /**
-    * Handle sections moving in the data model.
-    */
-  /* private */ def _onSectionsMoved(args: js.Any): js.Any = js.native
-  /**
-    * Handle the `stepRequested` signal from a scroll bar.
-    */
-  /* private */ def _onStepRequested(sender: js.Any, dir: js.Any): js.Any = js.native
-  /**
-    * Handle the `thumbMoved` signal from a scroll bar.
-    */
-  /* private */ def _onThumbMoved(sender: js.Any): js.Any = js.native
-  /**
-    * A message hook invoked on a viewport `'paint-request'` message.
-    */
-  /* private */ def _onViewportPaintRequest(msg: js.Any): js.Any = js.native
-  /**
-    * A message hook invoked on a viewport `'resize'` message.
-    */
-  /* private */ def _onViewportResize(msg: js.Any): js.Any = js.native
-  /**
-    * A message hook invoked on a viewport `'scroll-request'` message.
-    */
-  /* private */ def _onViewportScrollRequest(msg: js.Any): js.Any = js.native
-  /**
-    * A message hook invoked on a `'section-resize-request'` message.
-    */
-  /* private */ def _onViewportSectionResizeRequest(msg: js.Any): js.Any = js.native
-  /**
-    * Paint the grid content for the given dirty rect.
-    *
-    * The rect should be expressed in viewport coordinates.
-    *
-    * This is the primary paint entry point. The individual `_draw*`
-    * methods should not be invoked directly. This method dispatches
-    * to the drawing methods in the correct order.
-    */
-  /* private */ def _paint(rx: js.Any, ry: js.Any, rw: js.Any, rh: js.Any): js.Any = js.native
-  /**
-    * Process a message sent to the viewport
-    */
-  /* private */ def _processViewportMessage(msg: js.Any): js.Any = js.native
-  /**
-    * Refresh the internal dpi ratio.
-    *
-    * This will update the canvas size and schedule a repaint if needed.
-    */
-  /* private */ def _refreshDPI(): js.Any = js.native
-  /**
-    * Release the mouse grab for the data grid.
-    */
-  /* private */ def _releaseMouse(): js.Any = js.native
-  /**
-    * Ensure the canvas is at least the specified size.
-    *
-    * This method will retain the valid canvas content.
-    */
-  /* private */ def _resizeCanvasIfNeeded(width: js.Any, height: js.Any): js.Any = js.native
-  /**
-    * Resize a section in the given section list.
-    *
-    * #### Notes
-    * This will update the scroll bars and repaint as needed.
-    */
-  /* private */ def _resizeSection(list: js.Any, index: js.Any, size: js.Any): js.Any = js.native
-  /**
-    * Set the base size for the given section list.
-    *
-    * #### Notes
-    * This will update the scroll bars and repaint as needed.
-    */
-  /* private */ def _setBaseSize(list: js.Any, size: js.Any): js.Any = js.native
-  /**
-    * Sync the scroll bars and scroll state with the viewport.
-    *
-    * #### Notes
-    * If the visibility of either scroll bar changes, a synchronous
-    * fit-request will be dispatched to the data grid to immediately
-    * resize the viewport.
-    */
-  /* private */ def _syncScrollState(): js.Any = js.native
-  /**
-    * Sync the viewport to the given scroll position.
-    *
-    * #### Notes
-    * This schedules a full repaint and syncs the scroll state.
-    */
-  /* private */ def _syncViewport(): js.Any = js.native
   /**
     * Handle the DOM events for the data grid.
     *

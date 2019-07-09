@@ -216,6 +216,16 @@ object storageNs extends js.Object {
       */
     trait VolumeAttachmentSource extends js.Object {
       /**
+        * inlineVolumeSpec contains all the information necessary to attach a persistent volume
+        * defined by a pod's inline VolumeSource. This field is populated only for the CSIMigration
+        * feature. It contains translated fields from a pod's inline VolumeSource to a
+        * PersistentVolumeSpec. This field is alpha-level and is only honored by servers that enabled
+        * the CSIMigration feature.
+        */
+      var inlineVolumeSpec: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeSpec]
+          ] = js.undefined
+      /**
         * Name of the persistent volume to attach.
         */
       var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -380,6 +390,16 @@ object storageNs extends js.Object {
       * volumes in pods. Exactly one member can be set.
       */
     trait VolumeAttachmentSource extends js.Object {
+      /**
+        * inlineVolumeSpec contains all the information necessary to attach a persistent volume
+        * defined by a pod's inline VolumeSource. This field is populated only for the CSIMigration
+        * feature. It contains translated fields from a pod's inline VolumeSource to a
+        * PersistentVolumeSpec. This field is alpha-level and is only honored by servers that enabled
+        * the CSIMigration feature.
+        */
+      var inlineVolumeSpec: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeSpec]
+          ] = js.undefined
       /**
         * Name of the persistent volume to attach.
         */
@@ -891,6 +911,16 @@ object storageNs extends js.Object {
       * volumes in pods. Exactly one member can be set.
       */
     trait VolumeAttachmentSource extends js.Object {
+      /**
+        * inlineVolumeSpec contains all the information necessary to attach a persistent volume
+        * defined by a pod's inline VolumeSource. This field is populated only for the CSIMigration
+        * feature. It contains translated fields from a pod's inline VolumeSource to a
+        * PersistentVolumeSpec. This field is alpha-level and is only honored by servers that enabled
+        * the CSIMigration feature.
+        */
+      var inlineVolumeSpec: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeSpec]
+          ] = js.undefined
       /**
         * Name of the persistent volume to attach.
         */

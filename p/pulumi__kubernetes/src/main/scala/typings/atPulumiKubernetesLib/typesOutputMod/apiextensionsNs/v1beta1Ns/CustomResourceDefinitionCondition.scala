@@ -26,7 +26,8 @@ trait CustomResourceDefinitionCondition extends js.Object {
     */
   val status: java.lang.String
   /**
-    * Type is the type of the condition.
+    * Type is the type of the condition. Types include Established, NamesAccepted and
+    * Terminating.
     */
   val `type`: java.lang.String
 }

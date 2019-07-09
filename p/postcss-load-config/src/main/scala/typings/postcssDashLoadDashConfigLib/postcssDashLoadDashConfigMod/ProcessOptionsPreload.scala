@@ -9,18 +9,16 @@ import scala.scalajs.js.annotation._
 // appropriate class, or strings. If they are strings, postcss-load-config will
 // require() them and pass the instances along.
 trait ProcessOptionsPreload extends js.Object {
-  var parser: js.UndefOr[java.lang.String | postcssLib.postcssMod.Parse | postcssLib.postcssMod.Syntax] = js.undefined
-  var stringifier: js.UndefOr[
-    java.lang.String | postcssLib.postcssMod.Stringify | postcssLib.postcssMod.Syntax
-  ] = js.undefined
+  var parser: js.UndefOr[java.lang.String | postcssLib.postcssMod.Parser] = js.undefined
+  var stringifier: js.UndefOr[java.lang.String | postcssLib.postcssMod.Stringifier] = js.undefined
   var syntax: js.UndefOr[java.lang.String | postcssLib.postcssMod.Syntax] = js.undefined
 }
 
 object ProcessOptionsPreload {
   @scala.inline
   def apply(
-    parser: java.lang.String | postcssLib.postcssMod.Parse | postcssLib.postcssMod.Syntax = null,
-    stringifier: java.lang.String | postcssLib.postcssMod.Stringify | postcssLib.postcssMod.Syntax = null,
+    parser: java.lang.String | postcssLib.postcssMod.Parser = null,
+    stringifier: java.lang.String | postcssLib.postcssMod.Stringifier = null,
     syntax: java.lang.String | postcssLib.postcssMod.Syntax = null
   ): ProcessOptionsPreload = {
     val __obj = js.Dynamic.literal()

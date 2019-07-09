@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-inside
 
-Typings are for version 2.1.0
+Typings are for version 3.0.1
 
 ## Library description:
 Check if a path is inside another path
@@ -37,6 +37,8 @@ These comments are from the typescript definitions and might be useful:
 ```
 /**
 Check if a path is inside another path.
+
+Note that relative paths are resolved against `process.cwd()` to make them absolute.
 
 @example
 ```

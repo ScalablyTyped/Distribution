@@ -1,7 +1,7 @@
 
 # Scala.js typings for object-path-immutable
 
-Typings are for version 3.0.2
+Typings are for version 3.1.1
 
 ## Library description:
 Modify deep object properties without modifying the original object (immutability). Works great with React and Redux.

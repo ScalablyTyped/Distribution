@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class Face3 protected ()
   extends threeLib.srcCoreFace3Mod.Face3 {
   /**
-    * @param a Vertex A index.
-    * @param b Vertex B index.
-    * @param c Vertex C index.
-    * @param normal Face normal or array of vertex normals.
-    * @param color Face color or array of vertex colors.
-    * @param materialIndex Material index.
-    */
+  	 * @param a Vertex A index.
+  	 * @param b Vertex B index.
+  	 * @param c Vertex C index.
+  	 * @param normal Face normal or array of vertex normals.
+  	 * @param color Face color or array of vertex colors.
+  	 * @param materialIndex Material index.
+  	 */
   def this(a: scala.Double, b: scala.Double, c: scala.Double) = this()
   def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.srcMathVector3Mod.Vector3) = this()
   def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.srcMathVector3Mod.Vector3]) = this()

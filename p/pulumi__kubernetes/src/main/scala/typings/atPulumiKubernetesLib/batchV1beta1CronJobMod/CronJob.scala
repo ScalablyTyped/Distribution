@@ -19,7 +19,6 @@ class CronJob protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.batchNs.v1beta1Ns.CronJob) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.batchNs.v1beta1Ns.CronJob, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -49,7 +48,6 @@ class CronJob protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
     */
   val status: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.batchNs.v1beta1Ns.CronJobStatus] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.batchNs.v1beta1Ns.CronJob = js.native
 }
 
 /* static members */
@@ -74,5 +72,10 @@ object CronJob extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.batchV1beta1CronJobMod.CronJob = js.native
+  /**
+    * Returns true if the given object is an instance of CronJob.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/CronJob.CronJob */ scala.Boolean = js.native
 }
 

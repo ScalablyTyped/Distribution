@@ -17,12 +17,17 @@ trait ServiceReference extends js.Object {
     * Namespace is the namespace of the service
     */
   val namespace: java.lang.String
+  /**
+    * If specified, the port on the service that hosting webhook. Default to 443 for backward
+    * compatibility. `port` should be a valid port number (1-65535, inclusive).
+    */
+  val port: scala.Double
 }
 
 object ServiceReference {
   @scala.inline
-  def apply(name: java.lang.String, namespace: java.lang.String): ServiceReference = {
-    val __obj = js.Dynamic.literal(name = name, namespace = namespace)
+  def apply(name: java.lang.String, namespace: java.lang.String, port: scala.Double): ServiceReference = {
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, port = port)
   
     __obj.asInstanceOf[ServiceReference]
   }

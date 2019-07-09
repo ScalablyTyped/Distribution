@@ -10,5 +10,6 @@ package object libTypesMod {
   type MosaicKey = java.lang.String | scala.Double
   type MosaicNode[T /* <: MosaicKey */] = MosaicParent[T] | T
   type MosaicPath = js.Array[MosaicBranch]
+  type MosaicUpdateSpec[T /* <: MosaicKey */] = immutabilityDashHelperLib.immutabilityDashHelperMod.Spec[MosaicNode[T], scala.Nothing]
   type TileRenderer[T /* <: MosaicKey */] = js.Function2[/* t */ T, /* path */ js.Array[MosaicBranch], reactLib.reactMod.Global.JSXNs.Element]
 }

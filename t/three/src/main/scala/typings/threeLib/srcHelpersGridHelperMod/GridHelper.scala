@@ -17,8 +17,8 @@ class GridHelper protected ()
   def this(size: scala.Double, divisions: scala.Double, color1: threeLib.srcMathColorMod.Color, color2: scala.Double) = this()
   def this(size: scala.Double, divisions: scala.Double, color1: threeLib.srcMathColorMod.Color, color2: threeLib.srcMathColorMod.Color) = this()
   /**
-    * @deprecated Colors should be specified in the constructor.
-    */
+  	 * @deprecated Colors should be specified in the constructor.
+  	 */
   def setColors(): scala.Unit = js.native
   def setColors(color1: scala.Double): scala.Unit = js.native
   def setColors(color1: scala.Double, color2: scala.Double): scala.Unit = js.native

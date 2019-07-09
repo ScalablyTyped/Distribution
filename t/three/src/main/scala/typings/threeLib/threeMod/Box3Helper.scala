@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three", "Box3Helper")
 @js.native
-class Box3Helper ()
+class Box3Helper protected ()
   extends threeLib.srcHelpersBox3HelperMod.Box3Helper {
-  def this(`object`: threeLib.srcCoreObject3DMod.Object3D) = this()
-  def this(`object`: threeLib.srcCoreObject3DMod.Object3D, color: threeLib.srcMathColorMod.Color) = this()
+  def this(box: threeLib.srcMathBox3Mod.Box3) = this()
+  def this(box: threeLib.srcMathBox3Mod.Box3, color: threeLib.srcMathColorMod.Color) = this()
 }
 

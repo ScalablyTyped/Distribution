@@ -459,6 +459,9 @@ object atOctokitEndpointLibStrings {
   sealed trait `GET /orgs/:org/repos` extends js.Object
   
   @js.native
+  sealed trait `GET /orgs/:org/team-sync/groups` extends js.Object
+  
+  @js.native
   sealed trait `GET /orgs/:org/teams` extends js.Object
   
   @js.native
@@ -565,9 +568,6 @@ object atOctokitEndpointLibStrings {
   
   @js.native
   sealed trait `GET /repos/:owner/:repo/commits` extends js.Object
-  
-  @js.native
-  sealed trait `GET /repos/:owner/:repo/commits/:commit_sha` extends js.Object
   
   @js.native
   sealed trait `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head` extends js.Object
@@ -861,6 +861,9 @@ object atOctokitEndpointLibStrings {
   sealed trait `GET /repos/:owner/:repo/traffic/views` extends js.Object
   
   @js.native
+  sealed trait `GET /repos/:owner/:repo/vulnerability-alerts` extends js.Object
+  
+  @js.native
   sealed trait `GET /repositories` extends js.Object
   
   @js.native
@@ -934,6 +937,9 @@ object atOctokitEndpointLibStrings {
   
   @js.native
   sealed trait `GET /teams/:team_id/repos/:owner/:repo` extends js.Object
+  
+  @js.native
+  sealed trait `GET /teams/:team_id/team-sync/group-mappings` extends js.Object
   
   @js.native
   sealed trait `GET /teams/:team_id/teams` extends js.Object
@@ -1194,6 +1200,9 @@ object atOctokitEndpointLibStrings {
   
   @js.native
   sealed trait `PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number` extends js.Object
+  
+  @js.native
+  sealed trait `PATCH /teams/:team_id/team-sync/group-mappings` extends js.Object
   
   @js.native
   sealed trait `PATCH /user` extends js.Object
@@ -1867,6 +1876,8 @@ object atOctokitEndpointLibStrings {
   @scala.inline
   def `GET /orgs/:org/repos`: `GET /orgs/:org/repos` = "GET /orgs/:org/repos".asInstanceOf[`GET /orgs/:org/repos`]
   @scala.inline
+  def `GET /orgs/:org/team-sync/groups`: `GET /orgs/:org/team-sync/groups` = "GET /orgs/:org/team-sync/groups".asInstanceOf[`GET /orgs/:org/team-sync/groups`]
+  @scala.inline
   def `GET /orgs/:org/teams`: `GET /orgs/:org/teams` = "GET /orgs/:org/teams".asInstanceOf[`GET /orgs/:org/teams`]
   @scala.inline
   def `GET /orgs/:org/teams/:team_slug`: `GET /orgs/:org/teams/:team_slug` = "GET /orgs/:org/teams/:team_slug".asInstanceOf[`GET /orgs/:org/teams/:team_slug`]
@@ -1938,8 +1949,6 @@ object atOctokitEndpointLibStrings {
   def `GET /repos/:owner/:repo/comments/:comment_id/reactions`: `GET /repos/:owner/:repo/comments/:comment_id/reactions` = "GET /repos/:owner/:repo/comments/:comment_id/reactions".asInstanceOf[`GET /repos/:owner/:repo/comments/:comment_id/reactions`]
   @scala.inline
   def `GET /repos/:owner/:repo/commits`: `GET /repos/:owner/:repo/commits` = "GET /repos/:owner/:repo/commits".asInstanceOf[`GET /repos/:owner/:repo/commits`]
-  @scala.inline
-  def `GET /repos/:owner/:repo/commits/:commit_sha`: `GET /repos/:owner/:repo/commits/:commit_sha` = "GET /repos/:owner/:repo/commits/:commit_sha".asInstanceOf[`GET /repos/:owner/:repo/commits/:commit_sha`]
   @scala.inline
   def `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`: `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head` = "GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head".asInstanceOf[`GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`]
   @scala.inline
@@ -2135,6 +2144,8 @@ object atOctokitEndpointLibStrings {
   @scala.inline
   def `GET /repos/:owner/:repo/traffic/views`: `GET /repos/:owner/:repo/traffic/views` = "GET /repos/:owner/:repo/traffic/views".asInstanceOf[`GET /repos/:owner/:repo/traffic/views`]
   @scala.inline
+  def `GET /repos/:owner/:repo/vulnerability-alerts`: `GET /repos/:owner/:repo/vulnerability-alerts` = "GET /repos/:owner/:repo/vulnerability-alerts".asInstanceOf[`GET /repos/:owner/:repo/vulnerability-alerts`]
+  @scala.inline
   def `GET /repositories`: `GET /repositories` = "GET /repositories".asInstanceOf[`GET /repositories`]
   @scala.inline
   def `GET /scim/v2/organizations/:org/Users`: `GET /scim/v2/organizations/:org/Users` = "GET /scim/v2/organizations/:org/Users".asInstanceOf[`GET /scim/v2/organizations/:org/Users`]
@@ -2184,6 +2195,8 @@ object atOctokitEndpointLibStrings {
   def `GET /teams/:team_id/repos`: `GET /teams/:team_id/repos` = "GET /teams/:team_id/repos".asInstanceOf[`GET /teams/:team_id/repos`]
   @scala.inline
   def `GET /teams/:team_id/repos/:owner/:repo`: `GET /teams/:team_id/repos/:owner/:repo` = "GET /teams/:team_id/repos/:owner/:repo".asInstanceOf[`GET /teams/:team_id/repos/:owner/:repo`]
+  @scala.inline
+  def `GET /teams/:team_id/team-sync/group-mappings`: `GET /teams/:team_id/team-sync/group-mappings` = "GET /teams/:team_id/team-sync/group-mappings".asInstanceOf[`GET /teams/:team_id/team-sync/group-mappings`]
   @scala.inline
   def `GET /teams/:team_id/teams`: `GET /teams/:team_id/teams` = "GET /teams/:team_id/teams".asInstanceOf[`GET /teams/:team_id/teams`]
   @scala.inline
@@ -2356,6 +2369,8 @@ object atOctokitEndpointLibStrings {
   def `PATCH /teams/:team_id/discussions/:discussion_number`: `PATCH /teams/:team_id/discussions/:discussion_number` = "PATCH /teams/:team_id/discussions/:discussion_number".asInstanceOf[`PATCH /teams/:team_id/discussions/:discussion_number`]
   @scala.inline
   def `PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: `PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number` = "PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number".asInstanceOf[`PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number`]
+  @scala.inline
+  def `PATCH /teams/:team_id/team-sync/group-mappings`: `PATCH /teams/:team_id/team-sync/group-mappings` = "PATCH /teams/:team_id/team-sync/group-mappings".asInstanceOf[`PATCH /teams/:team_id/team-sync/group-mappings`]
   @scala.inline
   def `PATCH /user`: `PATCH /user` = "PATCH /user".asInstanceOf[`PATCH /user`]
   @scala.inline

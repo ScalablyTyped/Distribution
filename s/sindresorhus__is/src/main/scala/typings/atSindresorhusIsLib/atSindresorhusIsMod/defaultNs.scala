@@ -26,6 +26,9 @@ object defaultNs extends js.Object {
   ] = js.native
   var asyncFunction: js.Function1[/* value */ js.Any, /* is std.Function */ scala.Boolean] = js.native
   var asyncIterable: js.Function1[/* value */ js.Any, /* is std.AsyncIterableIterator<unknown> */ scala.Boolean] = js.native
+  var bigInt64Array: js.Function1[/* value */ js.Any, /* is std.BigInt64Array */ scala.Boolean] = js.native
+  var bigUint64Array: js.Function1[/* value */ js.Any, /* is std.BigUint64Array */ scala.Boolean] = js.native
+  var bigint: js.Function1[/* value */ js.Any, /* is bigint */ scala.Boolean] = js.native
   var boolean: js.Function1[/* value */ js.Any, /* is boolean */ scala.Boolean] = js.native
   var boundFunction: js.Function1[/* value */ js.Any, /* is std.Function */ scala.Boolean] = js.native
   var buffer: js.Function1[/* value */ js.Any, /* is node.Buffer */ scala.Boolean] = js.native
@@ -37,7 +40,7 @@ object defaultNs extends js.Object {
   var date: js.Function1[/* value */ js.Any, /* is std.Date */ scala.Boolean] = js.native
   var directInstanceOf: js.Function2[
     /* instance */ js.Any, 
-    /* klass */ atSindresorhusIsLib.atSindresorhusIsMod.Class[js.Any], 
+    /* class_ */ atSindresorhusIsLib.atSindresorhusIsMod.Class[js.Any], 
     /* is any */ scala.Boolean
   ] = js.native
   var domElement: js.Function1[/* value */ js.Any, /* is std.Element */ scala.Boolean] = js.native

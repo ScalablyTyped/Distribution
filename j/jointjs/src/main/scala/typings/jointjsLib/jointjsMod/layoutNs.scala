@@ -24,10 +24,12 @@ object layoutNs extends js.Object {
     
     trait LayoutOptions extends js.Object {
       var clusterPadding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Padding] = js.undefined
+      var dagre: js.UndefOr[js.Any] = js.undefined
       var debugTiming: js.UndefOr[scala.Boolean] = js.undefined
       var edgeSep: js.UndefOr[scala.Double] = js.undefined
       var exportElement: js.UndefOr[js.Function1[/* element */ jointjsLib.jointjsMod.diaNs.Element, Node]] = js.undefined
       var exportLink: js.UndefOr[js.Function1[/* link */ jointjsLib.jointjsMod.diaNs.Link, Edge]] = js.undefined
+      var graphlib: js.UndefOr[js.Any] = js.undefined
       var marginX: js.UndefOr[scala.Double] = js.undefined
       var marginY: js.UndefOr[scala.Double] = js.undefined
       var nodeSep: js.UndefOr[scala.Double] = js.undefined
@@ -70,10 +72,19 @@ object layoutNs extends js.Object {
       var width: js.UndefOr[scala.Double] = js.undefined
     }
     
+    trait toGraphLibOptions
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+      var graphlib: js.UndefOr[js.Any] = js.undefined
+    }
+    
+    def fromGraphLib(glGraph: js.Any): jointjsLib.jointjsMod.diaNs.Graph = js.native
+    def fromGraphLib(glGraph: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): jointjsLib.jointjsMod.diaNs.Graph = js.native
     def layout(graph: jointjsLib.jointjsMod.diaNs.Graph): jointjsLib.jointjsMod.gNs.Rect = js.native
     def layout(graph: jointjsLib.jointjsMod.diaNs.Graph, opt: LayoutOptions): jointjsLib.jointjsMod.gNs.Rect = js.native
     def layout(graph: js.Array[jointjsLib.jointjsMod.diaNs.Cell]): jointjsLib.jointjsMod.gNs.Rect = js.native
     def layout(graph: js.Array[jointjsLib.jointjsMod.diaNs.Cell], opt: LayoutOptions): jointjsLib.jointjsMod.gNs.Rect = js.native
+    def toGraphLib(graph: jointjsLib.jointjsMod.diaNs.Graph): js.Any = js.native
+    def toGraphLib(graph: jointjsLib.jointjsMod.diaNs.Graph, opt: toGraphLibOptions): js.Any = js.native
   }
   
 }

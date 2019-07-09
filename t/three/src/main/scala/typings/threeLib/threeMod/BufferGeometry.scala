@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "BufferGeometry")
 @js.native
 /**
-  * This creates a new BufferGeometry. It also sets several properties to an default value.
-  */
+	 * This creates a new BufferGeometry. It also sets several properties to an default value.
+	 */
 class BufferGeometry ()
   extends threeLib.srcCoreBufferGeometryMod.BufferGeometry
 

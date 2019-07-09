@@ -11,10 +11,11 @@ trait Options extends js.Object {
   		*/
   var aliases: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
-  		By default, camelCased keys will be hyphenated. Enabling this will bypass the conversion process.
+  		By default, camel-cased keys will be hyphenated. Enabling this will bypass the conversion process.
   		@default false
   		@example
   		```
+  		import dargs = require('dargs');
   		console.log(dargs({fooBar: 'baz'}));
   		//=> ['--foo-bar', 'baz']
   		console.log(dargs({fooBar: 'baz'}, {allowCamelCase: true}));
@@ -36,10 +37,24 @@ trait Options extends js.Object {
   		*/
   var includes: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
   /**
+  		Make a single character option key `{a: true}` become a short flag `-a` instead of `--a`.
+  		@default true
+  		@example
+  		```
+  		import dargs = require('dargs');
+  		console.log(dargs({a: true}));
+  		//=> ['-a']
+  		console.log(dargs({a: true}, {shortFlag: false}));
+  		//=> ['--a']
+  		```
+  		*/
+  var shortFlag: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   		Setting this to `false` makes it return the key and value as separate array items instead of using a `=` separator in one item. This can be useful for tools that doesn't support `--foo=bar` style flags.
   		@default true
   		@example
   		```
+  		import dargs = require('dargs');
   		console.log(dargs({foo: 'bar'}, {useEquals: false}));
   		// [
   		// 	'--foo', 'bar'
@@ -57,6 +72,7 @@ object Options {
     excludes: js.Array[java.lang.String | stdLib.RegExp] = null,
     ignoreFalse: js.UndefOr[scala.Boolean] = js.undefined,
     includes: js.Array[java.lang.String | stdLib.RegExp] = null,
+    shortFlag: js.UndefOr[scala.Boolean] = js.undefined,
     useEquals: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -65,6 +81,7 @@ object Options {
     if (excludes != null) __obj.updateDynamic("excludes")(excludes)
     if (!js.isUndefined(ignoreFalse)) __obj.updateDynamic("ignoreFalse")(ignoreFalse)
     if (includes != null) __obj.updateDynamic("includes")(includes)
+    if (!js.isUndefined(shortFlag)) __obj.updateDynamic("shortFlag")(shortFlag)
     if (!js.isUndefined(useEquals)) __obj.updateDynamic("useEquals")(useEquals)
     __obj.asInstanceOf[Options]
   }

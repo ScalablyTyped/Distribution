@@ -8,21 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react", "IonRouterOutlet")
 @js.native
 class IonRouterOutlet protected ()
-  extends reactLib.reactMod.Component[
-      stdLib.Pick[
-        atIonicReactLib.distComponentsNavigationIonRouterOutletMod.Props, 
-        atIonicReactLib.atIonicReactLibStrings.children
-      ], 
-      js.Any, 
-      js.Any
-    ] {
-  def this(props: stdLib.Pick[
-      atIonicReactLib.distComponentsNavigationIonRouterOutletMod.Props, 
-      atIonicReactLib.atIonicReactLibStrings.children
-    ]) = this()
-  def this(props: stdLib.Pick[
-      atIonicReactLib.distComponentsNavigationIonRouterOutletMod.Props, 
-      atIonicReactLib.atIonicReactLibStrings.children
-    ], context: js.Any) = this()
+  extends atIonicReactLib.distTypesComponentsMod.IonRouterOutlet {
+  def this(props: atIonicReactLib.distTypesComponentsNavigationRoutingIonRouterOutletMod.IonRouterOutletProps) = this()
 }
 

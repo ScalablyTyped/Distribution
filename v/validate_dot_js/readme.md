@@ -1,7 +1,7 @@
 
 # Scala.js typings for validate_dot_js
 
-Typings are for version 0.12.0
+Typings are for version 0.13.1
 
 ## Library description:
 Declarative validations for JavaScript

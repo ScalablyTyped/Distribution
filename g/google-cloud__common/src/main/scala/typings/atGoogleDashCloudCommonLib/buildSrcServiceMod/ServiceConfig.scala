@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ServiceConfig extends js.Object {
   /**
+    * The API Endpoint to use when connecting to the service.
+    * Example:  storage.googleapis.com
+    */
+  var apiEndpoint: java.lang.String
+  /**
     * Reuse an existing GoogleAuth client instead of creating a new one.
     */
   var authClient: js.UndefOr[googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth] = js.undefined
@@ -25,13 +30,14 @@ trait ServiceConfig extends js.Object {
 object ServiceConfig {
   @scala.inline
   def apply(
+    apiEndpoint: java.lang.String,
     baseUrl: java.lang.String,
     packageJson: atGoogleDashCloudCommonLib.buildSrcUtilMod.PackageJson,
     scopes: js.Array[java.lang.String],
     authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = null,
     projectIdRequired: js.UndefOr[scala.Boolean] = js.undefined
   ): ServiceConfig = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, packageJson = packageJson, scopes = scopes)
+    val __obj = js.Dynamic.literal(apiEndpoint = apiEndpoint, baseUrl = baseUrl, packageJson = packageJson, scopes = scopes)
     if (authClient != null) __obj.updateDynamic("authClient")(authClient)
     if (!js.isUndefined(projectIdRequired)) __obj.updateDynamic("projectIdRequired")(projectIdRequired)
     __obj.asInstanceOf[ServiceConfig]

@@ -11,7 +11,9 @@ trait Anon_External extends js.Object {
     */
   var external: js.UndefOr[scala.Boolean] = js.undefined
   var file: js.UndefOr[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.ResolverOptions | scala.Boolean
+    (stdLib.Partial[
+      jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.ResolverOptions
+    ]) | scala.Boolean
   ] = js.undefined
   var http: js.UndefOr[
     jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.HTTPResolverOptions | scala.Boolean
@@ -22,7 +24,9 @@ object Anon_External {
   @scala.inline
   def apply(
     external: js.UndefOr[scala.Boolean] = js.undefined,
-    file: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.ResolverOptions | scala.Boolean = null,
+    file: (stdLib.Partial[
+      jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.ResolverOptions
+    ]) | scala.Boolean = null,
     http: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.HTTPResolverOptions | scala.Boolean = null
   ): Anon_External = {
     val __obj = js.Dynamic.literal()

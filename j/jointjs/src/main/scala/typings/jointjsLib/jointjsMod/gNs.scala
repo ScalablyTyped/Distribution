@@ -21,7 +21,7 @@ object gNs extends js.Object {
   trait CardinalDirection extends js.Object
   
   @js.native
-  class Curve protected () extends js.Object {
+  class Curve protected () extends _PathObjectUnit {
     def this(curve: Curve) = this()
     def this(p1: java.lang.String, p2: java.lang.String, p3: java.lang.String, p4: java.lang.String) = this()
     def this(p1: java.lang.String, p2: java.lang.String, p3: java.lang.String, p4: PlainPoint) = this()
@@ -54,7 +54,15 @@ object gNs extends js.Object {
     def closestPointT(p: PlainPoint, opt: SubdivisionsOpt): scala.Double = js.native
     def closestPointTangent(p: PlainPoint): Line | scala.Null = js.native
     def closestPointTangent(p: PlainPoint, opt: SubdivisionsOpt): Line | scala.Null = js.native
+    def containsPoint(p: PlainPoint): scala.Boolean = js.native
+    def containsPoint(p: PlainPoint, opt: SubdivisionsOpt): scala.Boolean = js.native
     def divide(t: scala.Double): js.Tuple2[Curve, Curve] = js.native
+    def divideAt(ratio: scala.Double): js.Tuple2[Curve, Curve] = js.native
+    def divideAt(ratio: scala.Double, opt: SubdivisionsOpt): js.Tuple2[Curve, Curve] = js.native
+    def divideAtLength(length: scala.Double): js.Tuple2[Curve, Curve] = js.native
+    def divideAtLength(length: scala.Double, opt: SubdivisionsOpt): js.Tuple2[Curve, Curve] = js.native
+    def divideAtT(t: scala.Double): js.Tuple2[Curve, Curve] = js.native
+     // alias to `divideAtT`
     def endpointDistance(): scala.Double = js.native
     def equals(c: Curve): scala.Boolean = js.native
     def getSkeletonPoints(t: scala.Double): js.Tuple5[Point, Point, Point, Point, Point] = js.native
@@ -116,7 +124,7 @@ object gNs extends js.Object {
   }
   
   @js.native
-  class Line () extends js.Object {
+  class Line () extends _PathObjectUnit {
     def this(line: Line) = this()
     def this(p1: java.lang.String, p2: java.lang.String) = this()
     def this(p1: java.lang.String, p2: PlainPoint) = this()
@@ -124,6 +132,7 @@ object gNs extends js.Object {
     def this(p1: PlainPoint, p2: PlainPoint) = this()
     var end: Point = js.native
     var start: Point = js.native
+    def angle(): scala.Double = js.native
     def bbox(): Rect = js.native
     def bearing(): CardinalDirection = js.native
     def closestPoint(p: java.lang.String): Point = js.native
@@ -134,6 +143,9 @@ object gNs extends js.Object {
     def closestPointNormalizedLength(p: PlainPoint): scala.Double = js.native
     def closestPointTangent(p: java.lang.String): Line | scala.Null = js.native
     def closestPointTangent(p: PlainPoint): Line | scala.Null = js.native
+    def containsPoint(p: PlainPoint): scala.Boolean = js.native
+    def divideAt(t: scala.Double): js.Tuple2[Line, Line] = js.native
+    def divideAtLength(length: scala.Double): js.Tuple2[Line, Line] = js.native
     def equals(line: Line): scala.Boolean = js.native
     def intersect(ellipse: Ellipse): js.Array[Point] | scala.Null = js.native
     def intersect(line: Line): Point | scala.Null = js.native
@@ -169,18 +181,16 @@ object gNs extends js.Object {
   @js.native
    // getter
   class Path () extends js.Object {
-    def this(curve: Curve) = this()
-    def this(line: Line) = this()
     def this(pathData: java.lang.String) = this()
     def this(polyline: Polyline) = this()
-    def this(segment: Segment) = this()
-    def this(segments: js.Array[Curve | Line | Segment]) = this()
+    def this(segments: PathObjectUnit | PathSegmentUnit) = this()
+    def this(segments: js.Array[PathObjectUnit | PathSegmentUnit]) = this()
      // getter
     var end: Point | scala.Null = js.native
     var segments: js.Array[Segment] = js.native
     var start: Point | scala.Null = js.native
-    def appendSegment(segment: Segment): scala.Unit = js.native
-    def appendSegment(segments: js.Array[Segment]): scala.Unit = js.native
+    def appendSegment(segments: PathSegmentUnit): scala.Unit = js.native
+    def appendSegment(segments: js.Array[PathSegmentUnit]): scala.Unit = js.native
     def bbox(): Rect | scala.Null = js.native
     def closestPoint(p: Point): Point | scala.Null = js.native
     def closestPoint(p: Point, opt: SegmentSubdivisionsOpt): Point | scala.Null = js.native
@@ -192,12 +202,18 @@ object gNs extends js.Object {
     /* private */ def closestPointT(p: Point, opt: SegmentSubdivisionsOpt): PathT | scala.Null = js.native
     def closestPointTangent(p: Point): Line | scala.Null = js.native
     def closestPointTangent(p: Point, opt: SegmentSubdivisionsOpt): Line | scala.Null = js.native
+    def containsPoint(p: PlainPoint): scala.Boolean = js.native
+    def containsPoint(p: PlainPoint, opt: SegmentSubdivisionsOpt): scala.Boolean = js.native
+    def divideAt(ratio: scala.Double): (js.Tuple2[Path, Path]) | scala.Null = js.native
+    def divideAt(ratio: scala.Double, opt: SegmentSubdivisionsOpt): (js.Tuple2[Path, Path]) | scala.Null = js.native
+    def divideAtLength(length: scala.Double): (js.Tuple2[Path, Path]) | scala.Null = js.native
+    def divideAtLength(length: scala.Double, opt: SegmentSubdivisionsOpt): (js.Tuple2[Path, Path]) | scala.Null = js.native
     def equals(p: Path): scala.Boolean = js.native
     def getSegment(index: scala.Double): Segment | scala.Null = js.native
     def getSegmentSubdivisions(): js.Array[js.Array[Curve]] = js.native
     def getSegmentSubdivisions(opt: PrecisionOpt): js.Array[js.Array[Curve]] = js.native
-    def insertSegment(index: scala.Double, segment: Segment): scala.Unit = js.native
-    def insertSegment(index: scala.Double, segments: js.Array[Segment]): scala.Unit = js.native
+    def insertSegment(index: scala.Double, segments: PathSegmentUnit): scala.Unit = js.native
+    def insertSegment(index: scala.Double, segments: js.Array[PathSegmentUnit]): scala.Unit = js.native
     def intersectionWithLine(l: Line): js.Array[Point] | scala.Null = js.native
     def intersectionWithLine(l: Line, opt: SegmentSubdivisionsOpt): js.Array[Point] | scala.Null = js.native
     def isDifferentiable(): scala.Boolean = js.native
@@ -216,8 +232,8 @@ object gNs extends js.Object {
     /* private */ def prepareSegment(segment: Segment, previousSegment: Segment, nextSegment: Segment): Segment = js.native
     /* private */ def prepareSegment(segment: Segment, previousSegment: scala.Null, nextSegment: Segment): Segment = js.native
     def removeSegment(index: scala.Double): scala.Unit = js.native
-    def replaceSegment(index: scala.Double, segment: Segment): scala.Unit = js.native
-    def replaceSegment(index: scala.Double, segments: js.Array[Segment]): scala.Unit = js.native
+    def replaceSegment(index: scala.Double, segments: PathSegmentUnit): scala.Unit = js.native
+    def replaceSegment(index: scala.Double, segments: js.Array[PathSegmentUnit]): scala.Unit = js.native
     def scale(sx: scala.Double, sy: scala.Double): this.type = js.native
     def scale(sx: scala.Double, sy: scala.Double, origin: java.lang.String): this.type = js.native
     def scale(sx: scala.Double, sy: scala.Double, origin: PlainPoint): this.type = js.native
@@ -278,6 +294,7 @@ object gNs extends js.Object {
     def bearing(p: Point): CardinalDirection = js.native
     def changeInAngle(dx: scala.Double, dy: scala.Double, ref: java.lang.String): scala.Double = js.native
     def changeInAngle(dx: scala.Double, dy: scala.Double, ref: PlainPoint): scala.Double = js.native
+    def chooseClosest(points: js.Array[PlainPoint]): Point | scala.Null = js.native
     def cross(p1: PlainPoint, p2: PlainPoint): scala.Double = js.native
     def difference(): Point = js.native
     def difference(dx: scala.Double): Point = js.native
@@ -344,6 +361,7 @@ object gNs extends js.Object {
     def closestPointNormalizedLength(p: PlainPoint): scala.Double = js.native
     def closestPointTangent(p: java.lang.String): Line | scala.Null = js.native
     def closestPointTangent(p: PlainPoint): Line | scala.Null = js.native
+    def containsPoint(p: PlainPoint): scala.Boolean = js.native
     def convexHull(): Polyline = js.native
     def equals(p: Polyline): scala.Boolean = js.native
     def intersectionWithLine(l: Line): js.Array[Point] | scala.Null = js.native
@@ -476,6 +494,11 @@ object gNs extends js.Object {
     def closestPointNormalizedLength(p: Point, opt: SubdivisionsOpt): scala.Double = js.native
     def closestPointT(p: Point): scala.Double = js.native
     def closestPointTangent(p: Point): Line | scala.Null = js.native
+    def divideAt(ratio: scala.Double): js.Tuple2[Segment, Segment] = js.native
+    def divideAt(ratio: scala.Double, opt: SubdivisionsOpt): js.Tuple2[Segment, Segment] = js.native
+    def divideAtLength(length: scala.Double): js.Tuple2[Segment, Segment] = js.native
+    def divideAtLength(length: scala.Double, opt: SubdivisionsOpt): js.Tuple2[Segment, Segment] = js.native
+    def divideAtT(t: scala.Double): js.Tuple2[Segment, Segment] = js.native
     def equals(segment: Segment): scala.Boolean = js.native
     def getSubdivisions(): js.Array[Curve] = js.native
     def isDifferentiable(): scala.Boolean = js.native
@@ -506,6 +529,7 @@ object gNs extends js.Object {
     - jointjsLib.jointjsLibStrings.C
     - jointjsLib.jointjsLibStrings.M
     - jointjsLib.jointjsLibStrings.Z
+    - jointjsLib.jointjsLibStrings.z
   */
   trait SegmentType extends js.Object
   
@@ -513,7 +537,12 @@ object gNs extends js.Object {
     var subdivisions: js.UndefOr[js.Array[Curve]] = js.undefined
   }
   
+  trait _PathObjectUnit extends js.Object
+  
   def normalizeAngle(angle: scala.Double): scala.Double = js.native
+  def random(): scala.Double = js.native
+  def random(min: scala.Double): scala.Double = js.native
+  def random(min: scala.Double, max: scala.Double): scala.Double = js.native
   def snapToGrid(`val`: scala.Double, gridSize: scala.Double): scala.Double = js.native
   def toDeg(rad: scala.Double): scala.Double = js.native
   def toRad(deg: scala.Double): scala.Double = js.native
@@ -534,7 +563,7 @@ object gNs extends js.Object {
   @js.native
   object Path extends js.Object {
     var segmentTypes: jointjsLib.jointjsMod.gNs.SegmentTypes = js.native
-    def createSegment(`type`: jointjsLib.jointjsMod.gNs.SegmentType, args: js.Any*): jointjsLib.jointjsMod.gNs.Segment = js.native
+    def createSegment(`type`: jointjsLib.jointjsMod.gNs.SegmentType, args: js.Any*): jointjsLib.jointjsMod.gNs.PathSegmentUnit = js.native
     def isDataSupported(pathData: java.lang.String): scala.Boolean = js.native
     def parse(pathData: java.lang.String): jointjsLib.jointjsMod.gNs.Path = js.native
   }
@@ -685,6 +714,13 @@ object gNs extends js.Object {
     ): scala.Double = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - Line
+    - js.Array[Curve | Line]
+    - Curve
+  */
+  type PathObjectUnit = _PathObjectUnit | (js.Array[Curve | Line])
+  type PathSegmentUnit = Segment | js.Array[Segment]
   type SegmentTypes = org.scalablytyped.runtime.StringDictionary[Segment]
 }
 

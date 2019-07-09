@@ -32,7 +32,7 @@ trait ValidatingWebhookConfiguration extends js.Object {
   /**
     * Webhooks is a list of webhooks and the affected resources and operations.
     */
-  val webhooks: js.Array[Webhook]
+  val webhooks: js.Array[ValidatingWebhook]
 }
 
 object ValidatingWebhookConfiguration {
@@ -41,7 +41,7 @@ object ValidatingWebhookConfiguration {
     apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`,
     kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfiguration,
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
-    webhooks: js.Array[Webhook]
+    webhooks: js.Array[ValidatingWebhook]
   ): ValidatingWebhookConfiguration = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, webhooks = webhooks)
   

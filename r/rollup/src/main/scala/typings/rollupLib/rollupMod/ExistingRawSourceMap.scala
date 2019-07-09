@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExistingRawSourceMap extends RawSourceMap {
+trait ExistingRawSourceMap extends _SourceMapInput {
   var file: js.UndefOr[java.lang.String] = js.undefined
   var mappings: java.lang.String
   var names: js.Array[java.lang.String]

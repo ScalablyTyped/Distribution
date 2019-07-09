@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GitLabCIYMLTemplates protected ()
   extends gitlabLib.distServicesGitLabCIYMLTemplatesMod.default {
-  def this(options: gitlabLib.BaseServiceOptions) = this()
+  def this(options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

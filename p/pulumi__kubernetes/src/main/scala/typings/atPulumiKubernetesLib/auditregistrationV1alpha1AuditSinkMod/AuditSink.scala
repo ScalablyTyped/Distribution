@@ -19,7 +19,6 @@ class AuditSink protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.auditregistrationNs.v1alpha1Ns.AuditSink) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.auditregistrationNs.v1alpha1Ns.AuditSink, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -43,7 +42,6 @@ class AuditSink protected ()
   val spec: atPulumiPulumiLib.outputMod.Output[
     atPulumiKubernetesLib.typesOutputMod.auditregistrationNs.v1alpha1Ns.AuditSinkSpec
   ] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.auditregistrationNs.v1alpha1Ns.AuditSink = js.native
 }
 
 /* static members */
@@ -68,5 +66,10 @@ object AuditSink extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.auditregistrationV1alpha1AuditSinkMod.AuditSink = js.native
+  /**
+    * Returns true if the given object is an instance of AuditSink.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/AuditSink.AuditSink */ scala.Boolean = js.native
 }
 

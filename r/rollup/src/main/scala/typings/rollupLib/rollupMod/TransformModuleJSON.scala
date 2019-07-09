@@ -12,9 +12,9 @@ trait TransformModuleJSON extends js.Object {
   var customTransformCache: scala.Boolean
   var moduleSideEffects: scala.Boolean | scala.Null
   var originalCode: java.lang.String
-  var originalSourcemap: RawSourceMap | scala.Null
+  var originalSourcemap: ExistingDecodedSourceMap | scala.Null
   var resolvedIds: js.UndefOr[ResolvedIdMap] = js.undefined
-  var sourcemapChain: js.Array[RawSourceMap | rollupLib.Anon_Missing]
+  var sourcemapChain: js.Array[DecodedSourceMapOrMissing]
   var transformDependencies: js.Array[java.lang.String] | scala.Null
 }
 
@@ -25,9 +25,9 @@ object TransformModuleJSON {
     code: java.lang.String,
     customTransformCache: scala.Boolean,
     originalCode: java.lang.String,
-    sourcemapChain: js.Array[RawSourceMap | rollupLib.Anon_Missing],
+    sourcemapChain: js.Array[DecodedSourceMapOrMissing],
     moduleSideEffects: js.UndefOr[scala.Boolean] = js.undefined,
-    originalSourcemap: RawSourceMap = null,
+    originalSourcemap: ExistingDecodedSourceMap = null,
     resolvedIds: ResolvedIdMap = null,
     transformDependencies: js.Array[java.lang.String] = null
   ): TransformModuleJSON = {

@@ -13,6 +13,9 @@ object rfc6902LibStrings {
   sealed trait array extends js.Object
   
   @js.native
+  sealed trait bigint extends js.Object
+  
+  @js.native
   sealed trait boolean extends js.Object
   
   @js.native
@@ -55,6 +58,8 @@ object rfc6902LibStrings {
   def add: add = "add".asInstanceOf[add]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
+  def bigint: bigint = "bigint".asInstanceOf[bigint]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline

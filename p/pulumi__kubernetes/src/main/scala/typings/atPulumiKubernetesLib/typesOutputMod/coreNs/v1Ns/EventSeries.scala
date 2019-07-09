@@ -19,7 +19,7 @@ trait EventSeries extends js.Object {
     */
   val lastObservedTime: java.lang.String
   /**
-    * State of this Series: Ongoing or Finished
+    * State of this Series: Ongoing or Finished Deprecated. Planned removal for 1.18
     */
   val state: java.lang.String
 }

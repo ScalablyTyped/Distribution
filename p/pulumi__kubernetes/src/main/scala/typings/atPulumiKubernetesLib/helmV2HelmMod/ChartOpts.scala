@@ -33,7 +33,14 @@ object ChartOpts {
     fetchOpts: atPulumiPulumiLib.outputMod.Input[FetchOpts] = null,
     namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     repo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    transformations: js.Array[js.Function1[/* o */ _, scala.Unit]] = null,
+    resourcePrefix: java.lang.String = null,
+    transformations: js.Array[
+      js.Function2[
+        /* o */ _, 
+        /* opts */ atPulumiPulumiLib.resourceMod.CustomResourceOptions, 
+        scala.Unit
+      ]
+    ] = null,
     values: atPulumiPulumiLib.outputMod.Inputs = null,
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ChartOpts = {
@@ -41,6 +48,7 @@ object ChartOpts {
     if (fetchOpts != null) __obj.updateDynamic("fetchOpts")(fetchOpts.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix)
     if (transformations != null) __obj.updateDynamic("transformations")(transformations)
     if (values != null) __obj.updateDynamic("values")(values)
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

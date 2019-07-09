@@ -1,7 +1,7 @@
 
 # Scala.js typings for jointjs
 
-Typings are for version 2.2.1
+Typings are for version 3.0.2
 
 ## Library description:
 JavaScript diagramming library
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-/*! JointJS v2.2.1 (2018-11-12) - JavaScript diagramming library
+/*! JointJS v3.0.2 (2019-06-28) - JavaScript diagramming library
 
 
 This Source Code Form is subject to the terms of the Mozilla Public

@@ -16,5 +16,29 @@ object libMixinsBetweenMod extends js.Object {
     minScreen: java.lang.String,
     maxScreen: java.lang.String
   ): java.lang.String = js.native
+  def default(fromSize: java.lang.String, toSize: scala.Double): java.lang.String = js.native
+  def default(fromSize: java.lang.String, toSize: scala.Double, minScreen: java.lang.String): java.lang.String = js.native
+  def default(
+    fromSize: java.lang.String,
+    toSize: scala.Double,
+    minScreen: java.lang.String,
+    maxScreen: java.lang.String
+  ): java.lang.String = js.native
+  def default(fromSize: scala.Double, toSize: java.lang.String): java.lang.String = js.native
+  def default(fromSize: scala.Double, toSize: java.lang.String, minScreen: java.lang.String): java.lang.String = js.native
+  def default(
+    fromSize: scala.Double,
+    toSize: java.lang.String,
+    minScreen: java.lang.String,
+    maxScreen: java.lang.String
+  ): java.lang.String = js.native
+  def default(fromSize: scala.Double, toSize: scala.Double): java.lang.String = js.native
+  def default(fromSize: scala.Double, toSize: scala.Double, minScreen: java.lang.String): java.lang.String = js.native
+  def default(
+    fromSize: scala.Double,
+    toSize: scala.Double,
+    minScreen: java.lang.String,
+    maxScreen: java.lang.String
+  ): java.lang.String = js.native
 }
 

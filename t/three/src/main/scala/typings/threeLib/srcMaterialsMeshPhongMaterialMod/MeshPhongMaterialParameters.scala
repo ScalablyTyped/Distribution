@@ -96,6 +96,7 @@ object MeshPhongMaterialParameters {
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
     reflectivity: scala.Int | scala.Double = null,
     refractionRatio: scala.Int | scala.Double = null,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     shininess: scala.Int | scala.Double = null,
     side: threeLib.srcConstantsMod.Side = null,
     skinning: js.UndefOr[scala.Boolean] = js.undefined,
@@ -162,6 +163,7 @@ object MeshPhongMaterialParameters {
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
     if (reflectivity != null) __obj.updateDynamic("reflectivity")(reflectivity.asInstanceOf[js.Any])
     if (refractionRatio != null) __obj.updateDynamic("refractionRatio")(refractionRatio.asInstanceOf[js.Any])
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (shininess != null) __obj.updateDynamic("shininess")(shininess.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)

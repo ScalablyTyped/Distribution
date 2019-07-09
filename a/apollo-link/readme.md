@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-link
 
-Typings are for version 1.2.11
+Typings are for version 1.2.12
 
 ## Library description:
 Flexible, lightweight transport layer for GraphQL

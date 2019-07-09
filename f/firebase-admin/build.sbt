@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "8.2.0-07c150"
+version := "8.2.0-139130"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-fcbb99",
   "org.scalablytyped" %%% "gaxios" % "1.8.4-488f78",
   "org.scalablytyped" %%% "google-auth-library" % "3.1.2-e61cb4",
-  "org.scalablytyped" %%% "google-cloud__common" % "0.32.1-e4a82f",
-  "org.scalablytyped" %%% "google-cloud__firestore" % "2.2.3-16e635",
-  "org.scalablytyped" %%% "google-cloud__storage" % "2.5.0-3cd141",
+  "org.scalablytyped" %%% "google-cloud__common" % "2.0.3-566aee",
+  "org.scalablytyped" %%% "google-cloud__firestore" % "2.2.4-16e635",
+  "org.scalablytyped" %%% "google-cloud__storage" % "3.0.2-0adc85",
   "org.scalablytyped" %%% "gtoken" % "2.3.3-86d5a2",
   "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-6fb98d",

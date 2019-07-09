@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libMixinsFontFaceMod extends js.Object {
   def default(
-    hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: polishedLib.libTypesFontFaceConfigurationMod.FontFaceConfiguration
+    hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: polishedLib.libTypesFontFaceConfigurationMod.FontFaceConfiguration
   ): polishedLib.libTypesStyleMod.Styles = js.native
 }
 

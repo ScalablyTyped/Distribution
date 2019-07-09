@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseService protected ()
   extends gitlabLib.distInfrastructureBaseServiceMod.BaseService {
-  def this(hasTokenJobTokenOauthTokenSudoHostUrlVersionCamelizeRejectUnauthorizedRequester: gitlabLib.BaseServiceOptions) = this()
+  def this(hasTokenJobTokenOauthTokenSudoHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
 }
 

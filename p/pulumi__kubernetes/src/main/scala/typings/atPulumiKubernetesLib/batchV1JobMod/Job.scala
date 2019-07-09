@@ -19,7 +19,6 @@ class Job protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.batchNs.v1Ns.Job) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.batchNs.v1Ns.Job, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -49,7 +48,6 @@ class Job protected ()
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
     */
   val status: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.batchNs.v1Ns.JobStatus] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.batchNs.v1Ns.Job = js.native
 }
 
 /* static members */
@@ -74,5 +72,10 @@ object Job extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.batchV1JobMod.Job = js.native
+  /**
+    * Returns true if the given object is an instance of Job.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/Job.Job */ scala.Boolean = js.native
 }
 

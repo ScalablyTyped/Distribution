@@ -17,11 +17,19 @@ object LocalChartOpts {
   def apply(
     path: java.lang.String,
     namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    transformations: js.Array[js.Function1[/* o */ _, scala.Unit]] = null,
+    resourcePrefix: java.lang.String = null,
+    transformations: js.Array[
+      js.Function2[
+        /* o */ _, 
+        /* opts */ atPulumiPulumiLib.resourceMod.CustomResourceOptions, 
+        scala.Unit
+      ]
+    ] = null,
     values: atPulumiPulumiLib.outputMod.Inputs = null
   ): LocalChartOpts = {
     val __obj = js.Dynamic.literal(path = path)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix)
     if (transformations != null) __obj.updateDynamic("transformations")(transformations)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[LocalChartOpts]

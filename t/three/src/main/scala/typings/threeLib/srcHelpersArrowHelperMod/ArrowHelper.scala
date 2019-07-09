@@ -17,6 +17,8 @@ class ArrowHelper protected ()
   def this(dir: threeLib.srcMathVector3Mod.Vector3, origin: threeLib.srcMathVector3Mod.Vector3, length: scala.Double, hex: scala.Double, headLength: scala.Double, headWidth: scala.Double) = this()
   var cone: threeLib.srcObjectsMeshMod.Mesh = js.native
   var line: threeLib.srcObjectsLineMod.Line = js.native
+  def setColor(color: java.lang.String): scala.Unit = js.native
+  def setColor(color: scala.Double): scala.Unit = js.native
   def setColor(color: threeLib.srcMathColorMod.Color): scala.Unit = js.native
   def setDirection(dir: threeLib.srcMathVector3Mod.Vector3): scala.Unit = js.native
   def setLength(length: scala.Double): scala.Unit = js.native

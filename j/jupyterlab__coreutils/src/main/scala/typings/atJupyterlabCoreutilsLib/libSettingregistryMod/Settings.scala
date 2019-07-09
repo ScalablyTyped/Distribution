@@ -8,31 +8,32 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/coreutils/lib/settingregistry", "Settings")
 @js.native
 class Settings protected ()
-  extends atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.ISettings {
+  extends atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.ISettings {
   /**
     * Instantiate a new plugin settings manager.
     */
   def this(options: atJupyterlabCoreutilsLib.libSettingregistryMod.SettingsNs.IOptions) = this()
   var _changed: js.Any = js.native
-  var _composite: js.Any = js.native
   var _isDisposed: js.Any = js.native
   /**
     * Handle plugin changes in the setting registry.
     */
   var _onPluginChanged: js.Any = js.native
-  var _raw: js.Any = js.native
-  var _schema: js.Any = js.native
-  var _user: js.Any = js.native
   /**
     * A signal that emits when the plugin's settings have changed.
     */
   /* CompleteClass */
   override val changed: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[this.type, scala.Unit] = js.native
   /**
-    * Get the composite of user settings and extension defaults.
+    * The composite of user settings and extension defaults.
     */
   /* CompleteClass */
-  override val composite: atPhosphorCoreutilsLib.libJsonMod.JSONObject = js.native
+  override val composite: atPhosphorCoreutilsLib.libJsonMod.ReadonlyJSONObject = js.native
+  /**
+    * The plugin's ID.
+    */
+  /* CompleteClass */
+  override val id: java.lang.String = js.native
   /**
     * Test whether the object has been disposed.
     *
@@ -42,26 +43,31 @@ class Settings protected ()
   /* CompleteClass */
   override val isDisposed: scala.Boolean = js.native
   /* CompleteClass */
-  override val plugin: java.lang.String = js.native
+  override val plugin: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin = js.native
   /**
     * The plugin settings raw text value.
     */
   /* CompleteClass */
   override val raw: java.lang.String = js.native
   /**
-    * The system registry instance used by the settings manager.
+    * The setting registry instance used as a back-end for these settings.
     */
-  val registry: SettingRegistry = js.native
+  val registry: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistry = js.native
   /**
-    * Get the plugin settings schema.
+    * The plugin's schema.
     */
   /* CompleteClass */
-  override val schema: atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.ISchema = js.native
+  override val schema: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.ISchema = js.native
   /**
-    * Get the user settings.
+    * The user settings.
     */
   /* CompleteClass */
-  override val user: atPhosphorCoreutilsLib.libJsonMod.JSONObject = js.native
+  override val user: atPhosphorCoreutilsLib.libJsonMod.ReadonlyJSONObject = js.native
+  /**
+    * The published version of the NPM package containing these settings.
+    */
+  /* CompleteClass */
+  override val version: java.lang.String = js.native
   /**
     * Return the defaults in a commented JSON format.
     */
@@ -97,7 +103,7 @@ class Settings protected ()
     * @returns The setting value.
     */
   /* CompleteClass */
-  override def get(key: java.lang.String): atJupyterlabCoreutilsLib.Anon_Composite = js.native
+  override def get(key: java.lang.String): atJupyterlabCoreutilsLib.Anon_CompositeUser = js.native
   /**
     * Remove a single setting.
     *

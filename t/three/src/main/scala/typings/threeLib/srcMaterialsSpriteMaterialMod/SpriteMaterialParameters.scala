@@ -10,6 +10,7 @@ trait SpriteMaterialParameters
   var color: js.UndefOr[threeLib.srcMathColorMod.Color | java.lang.String | scala.Double] = js.undefined
   var map: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
   var rotation: js.UndefOr[scala.Double] = js.undefined
+  var sizeAttenuation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object SpriteMaterialParameters {
@@ -45,7 +46,9 @@ object SpriteMaterialParameters {
     precision: threeLib.threeLibStrings.highp | threeLib.threeLibStrings.mediump | threeLib.threeLibStrings.lowp = null,
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
     rotation: scala.Int | scala.Double = null,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
+    sizeAttenuation: js.UndefOr[scala.Boolean] = js.undefined,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
     vertexColors: threeLib.srcConstantsMod.Colors = null,
     vertexTangents: js.UndefOr[scala.Boolean] = js.undefined,
@@ -82,7 +85,9 @@ object SpriteMaterialParameters {
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
+    if (!js.isUndefined(sizeAttenuation)) __obj.updateDynamic("sizeAttenuation")(sizeAttenuation)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (vertexColors != null) __obj.updateDynamic("vertexColors")(vertexColors)
     if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents)

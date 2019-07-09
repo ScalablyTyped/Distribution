@@ -43,5 +43,10 @@ object RuntimeClass extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.nodeV1beta1RuntimeClassMod.RuntimeClass = js.native
+  /**
+    * Returns true if the given object is an instance of RuntimeClass.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/node/v1beta1/RuntimeClass.RuntimeClass */ scala.Boolean = js.native
 }
 

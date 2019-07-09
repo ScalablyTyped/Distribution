@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - fileDashTypeLib.fileDashTypeLibStrings.jpg
   - fileDashTypeLib.fileDashTypeLibStrings.png
+  - fileDashTypeLib.fileDashTypeLibStrings.apng
   - fileDashTypeLib.fileDashTypeLibStrings.gif
   - fileDashTypeLib.fileDashTypeLibStrings.webp
   - fileDashTypeLib.fileDashTypeLibStrings.flif
@@ -16,6 +17,8 @@ import scala.scalajs.js.annotation._
   - fileDashTypeLib.fileDashTypeLibStrings.arw
   - fileDashTypeLib.fileDashTypeLibStrings.dng
   - fileDashTypeLib.fileDashTypeLibStrings.nef
+  - fileDashTypeLib.fileDashTypeLibStrings.rw2
+  - fileDashTypeLib.fileDashTypeLibStrings.raf
   - fileDashTypeLib.fileDashTypeLibStrings.tif
   - fileDashTypeLib.fileDashTypeLibStrings.bmp
   - fileDashTypeLib.fileDashTypeLibStrings.jxr

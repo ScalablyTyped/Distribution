@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BevelEnabled extends js.Object {
   var bevelEnabled: scala.Boolean
+  var bevelOffset: scala.Double
   var bevelSegments: scala.Double
   var bevelSize: scala.Double
   var bevelThickness: scala.Double
@@ -20,6 +21,7 @@ object Anon_BevelEnabled {
   @scala.inline
   def apply(
     bevelEnabled: scala.Boolean,
+    bevelOffset: scala.Double,
     bevelSegments: scala.Double,
     bevelSize: scala.Double,
     bevelThickness: scala.Double,
@@ -28,7 +30,7 @@ object Anon_BevelEnabled {
     height: scala.Double,
     size: scala.Double
   ): Anon_BevelEnabled = {
-    val __obj = js.Dynamic.literal(bevelEnabled = bevelEnabled, bevelSegments = bevelSegments, bevelSize = bevelSize, bevelThickness = bevelThickness, curveSegments = curveSegments, font = font, height = height, size = size)
+    val __obj = js.Dynamic.literal(bevelEnabled = bevelEnabled, bevelOffset = bevelOffset, bevelSegments = bevelSegments, bevelSize = bevelSize, bevelThickness = bevelThickness, curveSegments = curveSegments, font = font, height = height, size = size)
   
     __obj.asInstanceOf[Anon_BevelEnabled]
   }

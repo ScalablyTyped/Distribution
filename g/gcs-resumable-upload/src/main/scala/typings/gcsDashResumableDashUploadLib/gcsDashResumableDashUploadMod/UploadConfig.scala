@@ -7,10 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait UploadConfig extends js.Object {
   /**
+    * The API endpoint used for the request.
+    * Defaults to `storage.googleapis.com`.
+    */
+  var apiEndpoint: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * If you want to re-use an auth client from google-auto-auth, pass an
     * instance here.
     */
   var authClient: js.UndefOr[googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth] = js.undefined
+  /**
+    * The GoogleAuthOptions passed to google-auth-library
+    */
   var authConfig: js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthGoogleauthMod.GoogleAuthOptions] = js.undefined
   /**
     * The name of the destination bucket.
@@ -89,6 +97,7 @@ object UploadConfig {
   def apply(
     bucket: java.lang.String,
     file: java.lang.String,
+    apiEndpoint: java.lang.String = null,
     authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = null,
     authConfig: googleDashAuthDashLibraryLib.buildSrcAuthGoogleauthMod.GoogleAuthOptions = null,
     configPath: java.lang.String = null,
@@ -105,6 +114,7 @@ object UploadConfig {
     userProject: java.lang.String = null
   ): UploadConfig = {
     val __obj = js.Dynamic.literal(bucket = bucket, file = file)
+    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint)
     if (authClient != null) __obj.updateDynamic("authClient")(authClient)
     if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig)
     if (configPath != null) __obj.updateDynamic("configPath")(configPath)

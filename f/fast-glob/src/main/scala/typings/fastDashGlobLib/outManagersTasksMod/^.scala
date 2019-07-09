@@ -10,29 +10,29 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def convertPatternGroupToTask(
     base: java.lang.String,
-    positive: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
-    negative: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
+    positive: js.Array[fastDashGlobLib.outTypesMod.Pattern],
+    negative: js.Array[fastDashGlobLib.outTypesMod.Pattern],
     dynamic: scala.Boolean
-  ): ITask = js.native
+  ): Task = js.native
   def convertPatternGroupsToTasks(
-    positive: fastDashGlobLib.outTypesPatternsMod.PatternsGroup,
-    negative: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
+    positive: fastDashGlobLib.outTypesMod.PatternsGroup,
+    negative: js.Array[fastDashGlobLib.outTypesMod.Pattern],
     dynamic: scala.Boolean
-  ): js.Array[ITask] = js.native
+  ): js.Array[Task] = js.native
   def convertPatternsToTasks(
-    positive: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
-    negative: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
+    positive: js.Array[fastDashGlobLib.outTypesMod.Pattern],
+    negative: js.Array[fastDashGlobLib.outTypesMod.Pattern],
     dynamic: scala.Boolean
-  ): js.Array[ITask] = js.native
+  ): js.Array[Task] = js.native
   def generate(
-    patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
-    options: fastDashGlobLib.outManagersOptionsMod.IOptions[fastDashGlobLib.outTypesEntriesMod.EntryItem]
-  ): js.Array[ITask] = js.native
+    patterns: js.Array[fastDashGlobLib.outTypesMod.Pattern],
+    settings: fastDashGlobLib.outSettingsMod.default
+  ): js.Array[Task] = js.native
   def getNegativePatternsAsPositive(
-    patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
-    ignore: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]
-  ): js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern] = js.native
-  def getPositivePatterns(patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]): js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern] = js.native
-  def groupPatternsByBaseDirectory(patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]): fastDashGlobLib.outTypesPatternsMod.PatternsGroup = js.native
+    patterns: js.Array[fastDashGlobLib.outTypesMod.Pattern],
+    ignore: js.Array[fastDashGlobLib.outTypesMod.Pattern]
+  ): js.Array[fastDashGlobLib.outTypesMod.Pattern] = js.native
+  def getPositivePatterns(patterns: js.Array[fastDashGlobLib.outTypesMod.Pattern]): js.Array[fastDashGlobLib.outTypesMod.Pattern] = js.native
+  def groupPatternsByBaseDirectory(patterns: js.Array[fastDashGlobLib.outTypesMod.Pattern]): fastDashGlobLib.outTypesMod.PatternsGroup = js.native
 }
 

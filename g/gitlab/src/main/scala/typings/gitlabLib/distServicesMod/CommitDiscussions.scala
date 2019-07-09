@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommitDiscussions protected ()
   extends gitlabLib.distServicesCommitDiscussionsMod.default {
-  def this(options: gitlabLib.BaseServiceOptions) = this()
+  def this(options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

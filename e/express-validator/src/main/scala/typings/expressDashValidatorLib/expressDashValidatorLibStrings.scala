@@ -7,657 +7,747 @@ import scala.scalajs.js.annotation._
 
 object expressDashValidatorLibStrings {
   @js.native
+  sealed trait `3`
+    extends expressDashValidatorLib.srcOptionsMod.UUIDVersion
+  
+  @js.native
+  sealed trait `4`
+    extends expressDashValidatorLib.srcOptionsMod.UUIDVersion
+  
+  @js.native
+  sealed trait `5`
+    extends expressDashValidatorLib.srcOptionsMod.UUIDVersion
+  
+  @js.native
+  sealed trait AD
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
+  
+  @js.native
   sealed trait AT
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait AU
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait BE
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait BG
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait CA
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait CH
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait CZ
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait DE
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait DK
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait DZ
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait EE
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait ES
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait FI
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait FR
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait GB
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait GR
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait HR
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait HU
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
+  
+  @js.native
+  sealed trait ID
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait IL
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait IN
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait IS
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait IT
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait JP
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait KE
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait LI
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait LT
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait LU
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait LV
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait MX
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait NL
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait NO
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait PL
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait PT
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait RO
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait RU
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait SA
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait SE
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait SI
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
+  
+  @js.native
+  sealed trait SanitizersSchema extends js.Object
   
   @js.native
   sealed trait TN
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait TW
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
+  
+  @js.native
+  sealed trait UA
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait US
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
+  
+  @js.native
+  sealed trait ValidatorsSchema extends js.Object
   
   @js.native
   sealed trait ZA
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait ZM
-    extends expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
+  
+  @js.native
+  sealed trait _error extends js.Object
+  
+  @js.native
+  sealed trait addError extends js.Object
+  
+  @js.native
+  sealed trait addFieldInstances extends js.Object
   
   @js.native
   sealed trait all
-    extends expressDashValidatorLib.checkCheckMod.UUIDVersion
+    extends expressDashValidatorLib.srcOptionsMod.UUIDVersion
   
   @js.native
   sealed trait any
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
-       with expressDashValidatorLib.checkCheckMod.PostalCodeLocale
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+       with expressDashValidatorLib.srcOptionsMod.PostalCodeLocale
   
   @js.native
   sealed trait ar
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-AE`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-BH`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-DZ`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-EG`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-IQ`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-JO`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-KW`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-LB`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-LY`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-MA`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-QA`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-QM`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-SA`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-SD`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `ar-SY`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-TN`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-YE`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `be-BY`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `bg-BG`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `bn-BD`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait body
-    extends expressDashValidatorLib.checkLocationMod.Location
+    extends expressDashValidatorLib.srcBaseMod.Location
   
   @js.native
   sealed trait cookies
-    extends expressDashValidatorLib.checkLocationMod.Location
+    extends expressDashValidatorLib.srcBaseMod.Location
   
   @js.native
   sealed trait crc32
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait crc32b
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait `cs-CZ`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `da-DK`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `de-DE`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `el-GR`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-AU`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-CA`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-GB`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `en-GH`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-HK`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `en-IE`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-IN`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-KE`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `en-MU`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-NG`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-NZ`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-PK`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-RW`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-SG`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-TZ`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-UG`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-US`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-ZA`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-ZM`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `es-ES`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `es-MX`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `es-PY`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `es-UY`
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `et-EE`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `fa-IR`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `fi-FI`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `fo-FO`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `fr-BE`
-    extends expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `fr-FR`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait ftp
-    extends expressDashValidatorLib.checkCheckMod.URLProtocol
+    extends expressDashValidatorLib.srcOptionsMod.URLProtocol
   
   @js.native
   sealed trait `he-IL`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait headers
-    extends expressDashValidatorLib.checkLocationMod.Location
+    extends expressDashValidatorLib.srcBaseMod.Location
   
   @js.native
   sealed trait http
-    extends expressDashValidatorLib.checkCheckMod.URLProtocol
+    extends expressDashValidatorLib.srcOptionsMod.URLProtocol
   
   @js.native
   sealed trait https
-    extends expressDashValidatorLib.checkCheckMod.URLProtocol
+    extends expressDashValidatorLib.srcOptionsMod.URLProtocol
   
   @js.native
   sealed trait `hu-HU`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `id-ID`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `it-IT`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ja-JP`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `kk-KZ`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `kl-GL`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `ku-IQ`
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `lt-LT`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait md4
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait md5
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait `ms-MY`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `nb-NO`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `nl-BE`
-    extends expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `nl-NL`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `nn-NO`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait params
-    extends expressDashValidatorLib.checkLocationMod.Location
+    extends expressDashValidatorLib.srcBaseMod.Location
   
   @js.native
   sealed trait `pl-PL`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `pt-BR`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `pt-PT`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait query
-    extends expressDashValidatorLib.checkLocationMod.Location
+    extends expressDashValidatorLib.srcBaseMod.Location
   
   @js.native
   sealed trait ripemd128
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait ripemd160
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait `ro-RO`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ru-RU`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait setData extends js.Object
   
   @js.native
   sealed trait sha1
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait sha256
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait sha384
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait sha512
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait `sk-SK`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `sl-SI`
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `sr-RS`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `sr-RS@latin`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
   
   @js.native
   sealed trait `sv-SE`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `th-TH`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait tiger128
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait tiger160
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait tiger192
-    extends expressDashValidatorLib.checkCheckMod.HashAlgorithm
+    extends expressDashValidatorLib.srcOptionsMod.HashAlgorithm
   
   @js.native
   sealed trait `tr-TR`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `uk-UA`
-    extends expressDashValidatorLib.checkCheckMod.AlphaLocale
-       with expressDashValidatorLib.checkCheckMod.AlphanumericLocale
-       with expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.AlphaLocale
+       with expressDashValidatorLib.srcOptionsMod.AlphanumericLocale
+       with expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `vi-VN`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `zh-CN`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `zh-HK`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
   @js.native
   sealed trait `zh-TW`
-    extends expressDashValidatorLib.checkCheckMod.MobilePhoneLocal
+    extends expressDashValidatorLib.srcOptionsMod.MobilePhoneLocale
   
+  @scala.inline
+  def `3`: `3` = "3".asInstanceOf[`3`]
+  @scala.inline
+  def `4`: `4` = "4".asInstanceOf[`4`]
+  @scala.inline
+  def `5`: `5` = "5".asInstanceOf[`5`]
+  @scala.inline
+  def AD: AD = "AD".asInstanceOf[AD]
   @scala.inline
   def AT: AT = "AT".asInstanceOf[AT]
   @scala.inline
@@ -694,6 +784,8 @@ object expressDashValidatorLibStrings {
   def HR: HR = "HR".asInstanceOf[HR]
   @scala.inline
   def HU: HU = "HU".asInstanceOf[HU]
+  @scala.inline
+  def ID: ID = "ID".asInstanceOf[ID]
   @scala.inline
   def IL: IL = "IL".asInstanceOf[IL]
   @scala.inline
@@ -735,15 +827,27 @@ object expressDashValidatorLibStrings {
   @scala.inline
   def SI: SI = "SI".asInstanceOf[SI]
   @scala.inline
+  def SanitizersSchema: SanitizersSchema = "SanitizersSchema".asInstanceOf[SanitizersSchema]
+  @scala.inline
   def TN: TN = "TN".asInstanceOf[TN]
   @scala.inline
   def TW: TW = "TW".asInstanceOf[TW]
   @scala.inline
+  def UA: UA = "UA".asInstanceOf[UA]
+  @scala.inline
   def US: US = "US".asInstanceOf[US]
+  @scala.inline
+  def ValidatorsSchema: ValidatorsSchema = "ValidatorsSchema".asInstanceOf[ValidatorsSchema]
   @scala.inline
   def ZA: ZA = "ZA".asInstanceOf[ZA]
   @scala.inline
   def ZM: ZM = "ZM".asInstanceOf[ZM]
+  @scala.inline
+  def _error: _error = "_error".asInstanceOf[_error]
+  @scala.inline
+  def addError: addError = "addError".asInstanceOf[addError]
+  @scala.inline
+  def addFieldInstances: addFieldInstances = "addFieldInstances".asInstanceOf[addFieldInstances]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -789,6 +893,8 @@ object expressDashValidatorLibStrings {
   @scala.inline
   def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
   @scala.inline
+  def `bn-BD`: `bn-BD` = "bn-BD".asInstanceOf[`bn-BD`]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def cookies: cookies = "cookies".asInstanceOf[cookies]
@@ -811,11 +917,17 @@ object expressDashValidatorLibStrings {
   @scala.inline
   def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
   @scala.inline
+  def `en-GH`: `en-GH` = "en-GH".asInstanceOf[`en-GH`]
+  @scala.inline
   def `en-HK`: `en-HK` = "en-HK".asInstanceOf[`en-HK`]
+  @scala.inline
+  def `en-IE`: `en-IE` = "en-IE".asInstanceOf[`en-IE`]
   @scala.inline
   def `en-IN`: `en-IN` = "en-IN".asInstanceOf[`en-IN`]
   @scala.inline
   def `en-KE`: `en-KE` = "en-KE".asInstanceOf[`en-KE`]
+  @scala.inline
+  def `en-MU`: `en-MU` = "en-MU".asInstanceOf[`en-MU`]
   @scala.inline
   def `en-NG`: `en-NG` = "en-NG".asInstanceOf[`en-NG`]
   @scala.inline
@@ -838,6 +950,12 @@ object expressDashValidatorLibStrings {
   def `en-ZM`: `en-ZM` = "en-ZM".asInstanceOf[`en-ZM`]
   @scala.inline
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
+  @scala.inline
+  def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
+  @scala.inline
+  def `es-PY`: `es-PY` = "es-PY".asInstanceOf[`es-PY`]
+  @scala.inline
+  def `es-UY`: `es-UY` = "es-UY".asInstanceOf[`es-UY`]
   @scala.inline
   def `et-EE`: `et-EE` = "et-EE".asInstanceOf[`et-EE`]
   @scala.inline
@@ -873,6 +991,8 @@ object expressDashValidatorLibStrings {
   @scala.inline
   def `kl-GL`: `kl-GL` = "kl-GL".asInstanceOf[`kl-GL`]
   @scala.inline
+  def `ku-IQ`: `ku-IQ` = "ku-IQ".asInstanceOf[`ku-IQ`]
+  @scala.inline
   def `lt-LT`: `lt-LT` = "lt-LT".asInstanceOf[`lt-LT`]
   @scala.inline
   def md4: md4 = "md4".asInstanceOf[md4]
@@ -907,6 +1027,8 @@ object expressDashValidatorLibStrings {
   @scala.inline
   def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
   @scala.inline
+  def setData: setData = "setData".asInstanceOf[setData]
+  @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
@@ -916,6 +1038,8 @@ object expressDashValidatorLibStrings {
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
   @scala.inline
   def `sk-SK`: `sk-SK` = "sk-SK".asInstanceOf[`sk-SK`]
+  @scala.inline
+  def `sl-SI`: `sl-SI` = "sl-SI".asInstanceOf[`sl-SI`]
   @scala.inline
   def `sr-RS`: `sr-RS` = "sr-RS".asInstanceOf[`sr-RS`]
   @scala.inline

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/codeeditor/lib", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val IEditorServices: atPhosphorCoreutilsLib.atPhosphorCoreutilsMod.Token[IEditorServices] = js.native
+  val IEditorServices: atPhosphorCoreutilsLib.atPhosphorCoreutilsMod.Token[atJupyterlabCodeeditorLib.libTokensMod.IEditorServices] = js.native
 }
 

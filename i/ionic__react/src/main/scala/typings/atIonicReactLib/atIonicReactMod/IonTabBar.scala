@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 class IonTabBar protected ()
   extends reactLib.reactMod.Component[
       stdLib.Pick[
-        atIonicReactLib.distComponentsNavigationIonTabBarMod.Props, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 167 */ js.Any
+        atIonicReactLib.distTypesComponentsNavigationIonTabBarMod.Props, 
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
       ], 
       js.Any, 
       js.Any
     ] {
   def this(props: stdLib.Pick[
-      atIonicReactLib.distComponentsNavigationIonTabBarMod.Props, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 167 */ js.Any
+      atIonicReactLib.distTypesComponentsNavigationIonTabBarMod.Props, 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
     ]) = this()
   def this(props: stdLib.Pick[
-      atIonicReactLib.distComponentsNavigationIonTabBarMod.Props, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 167 */ js.Any
+      atIonicReactLib.distTypesComponentsNavigationIonTabBarMod.Props, 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 171 */ js.Any
     ], context: js.Any) = this()
 }
 

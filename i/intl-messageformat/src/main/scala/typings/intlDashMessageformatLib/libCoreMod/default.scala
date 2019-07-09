@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("intl-messageformat/lib/core", JSImport.Default)
 @js.native
 class default protected () extends IntlMessageFormat {
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern) = this()
   def this(message: java.lang.String) = this()
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: java.lang.String) = this()
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: js.Array[java.lang.String]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement]) = this()
   def this(message: java.lang.String, locales: java.lang.String) = this()
   def this(message: java.lang.String, locales: js.Array[java.lang.String]) = this()
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats]) = this()
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats]) = this()
-  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats]) = this()
-  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats]) = this()
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats], opts: Options) = this()
-  def this(message: intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats], opts: Options) = this()
-  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats], opts: Options) = this()
-  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[intlDashMessageformatLib.libCompilerMod.Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String]) = this()
+  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[Formats]) = this()
+  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[Formats]) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats]) = this()
+  def this(message: java.lang.String, locales: java.lang.String, overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
+  def this(message: java.lang.String, locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: java.lang.String, overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
+  def this(message: js.Array[intlDashMessageformatDashParserLib.libTypesMod.MessageFormatElement], locales: js.Array[java.lang.String], overrideFormats: stdLib.Partial[Formats], opts: Options) = this()
 }
 
 /* static members */
@@ -29,10 +29,7 @@ class default protected () extends IntlMessageFormat {
 @js.native
 object default extends js.Object {
   var __parse: js.UndefOr[
-    js.Function1[
-      /* msg */ java.lang.String, 
-      intlDashMessageformatDashParserLib.intlDashMessageformatDashParserMod.MessageFormatPattern
-    ]
+    intlDashMessageformatLib.Fn_Input with intlDashMessageformatDashParserLib.libParserMod.ParseFunction
   ] = js.native
   var defaultLocale: java.lang.String = js.native
   var formats: intlDashMessageformatLib.Anon_Date = js.native

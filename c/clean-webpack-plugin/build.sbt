@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clean-webpack-plugin"
-version := "2.0.2-47e118"
+version := "3.0.0-68cf9a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("isobject", JSImport.Namespace)
 @js.native
 object isobjectMod extends js.Object {
-  def apply(`val`: js.Any): scala.Boolean = js.native
+  def default(`val`: js.Any): scala.Boolean = js.native
 }
 

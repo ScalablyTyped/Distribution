@@ -671,12 +671,6 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `-ms-text-overflow`: js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]] = js.undefined
   /**
-    * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
-    *
-    * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
-    */
-  var `-ms-text-size-adjust`: js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]] = js.undefined
-  /**
     * The **`touch-action`** CSS property sets how a region can be manipulated by a touchscreen user (for example, by zooming features built into the browser).
     *
     * **Initial value**: `auto`
@@ -700,6 +694,30 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * **Initial value**: `50% 50% 0`
     */
   var `-ms-transform-origin`: js.UndefOr[TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]] = js.undefined
+  /**
+    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
+    *
+    * **Initial value**: `0s`
+    */
+  var `-ms-transition-delay`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
+  /**
+    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
+    *
+    * **Initial value**: `0s`
+    */
+  var `-ms-transition-duration`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
+  /**
+    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
+    *
+    * **Initial value**: all
+    */
+  var `-ms-transition-property`: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
+  /**
+    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+    *
+    * **Initial value**: `ease`
+    */
+  var `-ms-transition-timing-function`: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.undefined
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
     *
@@ -956,6 +974,12 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * **Initial value**: `auto`
     */
   var `-webkit-column-count`: js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]] = js.undefined
+  /**
+    * The **`column-fill`** CSS property controls how an element's contents are balanced when broken into columns.
+    *
+    * **Initial value**: `balance`
+    */
+  var `-webkit-column-fill`: js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]] = js.undefined
   /**
     * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
     *
@@ -1368,12 +1392,6 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * **Initial value**: `horizontal-tb`
     */
   var `-webkit-writing-mode`: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
-  /**
-    * The **`mask-size`** CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained in order to preserve its intrinsic ratio.
-    *
-    * **Initial value**: `auto`
-    */
-  var `-webkitmask-size`: js.UndefOr[MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]]] = js.undefined
 }
 
 object VendorLonghandPropertiesHyphenFallback {
@@ -1485,11 +1503,14 @@ object VendorLonghandPropertiesHyphenFallback {
     `-ms-text-autospace`: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty] = null,
     `-ms-text-combine-horizontal`: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null,
     `-ms-text-overflow`: TextOverflowProperty | js.Array[TextOverflowProperty] = null,
-    `-ms-text-size-adjust`: TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty] = null,
     `-ms-touch-action`: TouchActionProperty | js.Array[TouchActionProperty] = null,
     `-ms-touch-select`: MsTouchSelectProperty | js.Array[MsTouchSelectProperty] = null,
     `-ms-transform`: TransformProperty | js.Array[TransformProperty] = null,
     `-ms-transform-origin`: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]] = null,
+    `-ms-transition-delay`: GlobalsString | js.Array[GlobalsString] = null,
+    `-ms-transition-duration`: GlobalsString | js.Array[GlobalsString] = null,
+    `-ms-transition-property`: TransitionPropertyProperty | js.Array[TransitionPropertyProperty] = null,
+    `-ms-transition-timing-function`: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     `-ms-user-select`: MsUserSelectProperty | js.Array[MsUserSelectProperty] = null,
     `-ms-word-break`: WordBreakProperty | js.Array[WordBreakProperty] = null,
     `-ms-wrap-flow`: MsWrapFlowProperty | js.Array[MsWrapFlowProperty] = null,
@@ -1533,6 +1554,7 @@ object VendorLonghandPropertiesHyphenFallback {
     `-webkit-clip-path`: ClipPathProperty | js.Array[ClipPathProperty] = null,
     `-webkit-color-adjust`: ColorAdjustProperty | js.Array[ColorAdjustProperty] = null,
     `-webkit-column-count`: ColumnCountProperty | js.Array[ColumnCountProperty] = null,
+    `-webkit-column-fill`: ColumnFillProperty | js.Array[ColumnFillProperty] = null,
     `-webkit-column-gap`: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]] = null,
     `-webkit-column-rule-color`: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty] = null,
     `-webkit-column-rule-style`: ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty] = null,
@@ -1599,8 +1621,7 @@ object VendorLonghandPropertiesHyphenFallback {
     `-webkit-transition-timing-function`: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     `-webkit-user-modify`: WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty] = null,
     `-webkit-user-select`: UserSelectProperty | js.Array[UserSelectProperty] = null,
-    `-webkit-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null,
-    `-webkitmask-size`: MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]] = null
+    `-webkit-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null
   ): VendorLonghandPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`-moz-animation-delay` != null) __obj.updateDynamic("-moz-animation-delay")(`-moz-animation-delay`.asInstanceOf[js.Any])
@@ -1709,11 +1730,14 @@ object VendorLonghandPropertiesHyphenFallback {
     if (`-ms-text-autospace` != null) __obj.updateDynamic("-ms-text-autospace")(`-ms-text-autospace`.asInstanceOf[js.Any])
     if (`-ms-text-combine-horizontal` != null) __obj.updateDynamic("-ms-text-combine-horizontal")(`-ms-text-combine-horizontal`.asInstanceOf[js.Any])
     if (`-ms-text-overflow` != null) __obj.updateDynamic("-ms-text-overflow")(`-ms-text-overflow`.asInstanceOf[js.Any])
-    if (`-ms-text-size-adjust` != null) __obj.updateDynamic("-ms-text-size-adjust")(`-ms-text-size-adjust`.asInstanceOf[js.Any])
     if (`-ms-touch-action` != null) __obj.updateDynamic("-ms-touch-action")(`-ms-touch-action`.asInstanceOf[js.Any])
     if (`-ms-touch-select` != null) __obj.updateDynamic("-ms-touch-select")(`-ms-touch-select`.asInstanceOf[js.Any])
     if (`-ms-transform` != null) __obj.updateDynamic("-ms-transform")(`-ms-transform`.asInstanceOf[js.Any])
     if (`-ms-transform-origin` != null) __obj.updateDynamic("-ms-transform-origin")(`-ms-transform-origin`.asInstanceOf[js.Any])
+    if (`-ms-transition-delay` != null) __obj.updateDynamic("-ms-transition-delay")(`-ms-transition-delay`.asInstanceOf[js.Any])
+    if (`-ms-transition-duration` != null) __obj.updateDynamic("-ms-transition-duration")(`-ms-transition-duration`.asInstanceOf[js.Any])
+    if (`-ms-transition-property` != null) __obj.updateDynamic("-ms-transition-property")(`-ms-transition-property`.asInstanceOf[js.Any])
+    if (`-ms-transition-timing-function` != null) __obj.updateDynamic("-ms-transition-timing-function")(`-ms-transition-timing-function`.asInstanceOf[js.Any])
     if (`-ms-user-select` != null) __obj.updateDynamic("-ms-user-select")(`-ms-user-select`.asInstanceOf[js.Any])
     if (`-ms-word-break` != null) __obj.updateDynamic("-ms-word-break")(`-ms-word-break`.asInstanceOf[js.Any])
     if (`-ms-wrap-flow` != null) __obj.updateDynamic("-ms-wrap-flow")(`-ms-wrap-flow`.asInstanceOf[js.Any])
@@ -1757,6 +1781,7 @@ object VendorLonghandPropertiesHyphenFallback {
     if (`-webkit-clip-path` != null) __obj.updateDynamic("-webkit-clip-path")(`-webkit-clip-path`.asInstanceOf[js.Any])
     if (`-webkit-color-adjust` != null) __obj.updateDynamic("-webkit-color-adjust")(`-webkit-color-adjust`.asInstanceOf[js.Any])
     if (`-webkit-column-count` != null) __obj.updateDynamic("-webkit-column-count")(`-webkit-column-count`.asInstanceOf[js.Any])
+    if (`-webkit-column-fill` != null) __obj.updateDynamic("-webkit-column-fill")(`-webkit-column-fill`.asInstanceOf[js.Any])
     if (`-webkit-column-gap` != null) __obj.updateDynamic("-webkit-column-gap")(`-webkit-column-gap`.asInstanceOf[js.Any])
     if (`-webkit-column-rule-color` != null) __obj.updateDynamic("-webkit-column-rule-color")(`-webkit-column-rule-color`.asInstanceOf[js.Any])
     if (`-webkit-column-rule-style` != null) __obj.updateDynamic("-webkit-column-rule-style")(`-webkit-column-rule-style`.asInstanceOf[js.Any])
@@ -1824,7 +1849,6 @@ object VendorLonghandPropertiesHyphenFallback {
     if (`-webkit-user-modify` != null) __obj.updateDynamic("-webkit-user-modify")(`-webkit-user-modify`.asInstanceOf[js.Any])
     if (`-webkit-user-select` != null) __obj.updateDynamic("-webkit-user-select")(`-webkit-user-select`.asInstanceOf[js.Any])
     if (`-webkit-writing-mode` != null) __obj.updateDynamic("-webkit-writing-mode")(`-webkit-writing-mode`.asInstanceOf[js.Any])
-    if (`-webkitmask-size` != null) __obj.updateDynamic("-webkitmask-size")(`-webkitmask-size`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VendorLonghandPropertiesHyphenFallback[TLength]]
   }
 }

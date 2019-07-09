@@ -210,6 +210,10 @@ class Bucket protected ()
   def addLifecycleRule(rule: LifecycleRule, options: AddLifecycleRuleOptions, callback: SetBucketMetadataCallback): scala.Unit = js.native
   def combine(
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
+    destination: atGoogleDashCloudStorageLib.buildSrcFileMod.File
+  ): js.Promise[CombineResponse] = js.native
+  def combine(
+    sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
     destination: atGoogleDashCloudStorageLib.buildSrcFileMod.File,
     callback: CombineCallback
   ): scala.Unit = js.native
@@ -224,6 +228,10 @@ class Bucket protected ()
     options: CombineOptions,
     callback: CombineCallback
   ): scala.Unit = js.native
+  def combine(
+    sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
+    destination: java.lang.String
+  ): js.Promise[CombineResponse] = js.native
   def combine(
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
     destination: java.lang.String,
@@ -292,9 +300,9 @@ class Bucket protected ()
     */
   def file(name: java.lang.String): atGoogleDashCloudStorageLib.buildSrcFileMod.File = js.native
   def file(name: java.lang.String, options: atGoogleDashCloudStorageLib.buildSrcFileMod.FileOptions): atGoogleDashCloudStorageLib.buildSrcFileMod.File = js.native
-  def getFiles(): js.Promise[js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]] = js.native
+  def getFiles(): js.Promise[GetFilesResponse] = js.native
   def getFiles(callback: GetFilesCallback): scala.Unit = js.native
-  def getFiles(query: GetFilesOptions): js.Promise[js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]] = js.native
+  def getFiles(query: GetFilesOptions): js.Promise[GetFilesResponse] = js.native
   def getFiles(query: GetFilesOptions, callback: GetFilesCallback): scala.Unit = js.native
   def getId(): java.lang.String = js.native
   def getLabels(callback: GetLabelsCallback): scala.Unit = js.native
@@ -341,6 +349,7 @@ class Bucket protected ()
   def setLabels(labels: Labels, options: SetLabelsOptions, callback: SetLabelsCallback): scala.Unit = js.native
   def setRetentionPeriod(duration: scala.Double): js.Promise[SetBucketMetadataResponse] = js.native
   def setRetentionPeriod(duration: scala.Double, callback: SetBucketMetadataCallback): scala.Unit = js.native
+  def setStorageClass(storageClass: java.lang.String): js.Promise[SetBucketMetadataResponse] = js.native
   def setStorageClass(storageClass: java.lang.String, callback: SetBucketStorageClassCallback): scala.Unit = js.native
   def setStorageClass(storageClass: java.lang.String, options: SetBucketStorageClassOptions): js.Promise[SetBucketMetadataResponse] = js.native
   def setStorageClass(

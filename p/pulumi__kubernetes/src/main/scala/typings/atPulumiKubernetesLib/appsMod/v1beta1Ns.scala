@@ -119,6 +119,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.appsV1beta1ControllerRevisionMod.ControllerRevision = js.native
+    /**
+      * Returns true if the given object is an instance of ControllerRevision.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/ControllerRevision.ControllerRevision */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -142,6 +147,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.appsV1beta1ControllerRevisionListMod.ControllerRevisionList = js.native
+    /**
+      * Returns true if the given object is an instance of ControllerRevisionList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/ControllerRevisionList.ControllerRevisionList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -165,6 +175,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.appsV1beta1DeploymentMod.Deployment = js.native
+    /**
+      * Returns true if the given object is an instance of Deployment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/Deployment.Deployment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -188,6 +203,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.appsV1beta1DeploymentListMod.DeploymentList = js.native
+    /**
+      * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/DeploymentList.DeploymentList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -211,6 +231,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.appsV1beta1StatefulSetMod.StatefulSet = js.native
+    /**
+      * Returns true if the given object is an instance of StatefulSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/StatefulSet.StatefulSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -234,6 +259,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.appsV1beta1StatefulSetListMod.StatefulSetList = js.native
+    /**
+      * Returns true if the given object is an instance of StatefulSetList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/StatefulSetList.StatefulSetList */ scala.Boolean = js.native
   }
   
 }

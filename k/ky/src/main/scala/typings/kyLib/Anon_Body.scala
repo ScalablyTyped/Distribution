@@ -61,11 +61,11 @@ trait Anon_Body extends js.Object {
   def get(url: stdLib.Request): kyLib.kyMod.ResponsePromise = js.native
   def get(url: stdLib.URL): kyLib.kyMod.ResponsePromise = js.native
   @JSName("get")
-  def get_body(url: java.lang.String, options: Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
+  def get_body(url: java.lang.String, options: _Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
   @JSName("get")
-  def get_body(url: stdLib.Request, options: Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
+  def get_body(url: stdLib.Request, options: _Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
   @JSName("get")
-  def get_body(url: stdLib.URL, options: Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
+  def get_body(url: stdLib.URL, options: _Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
   def head(url: java.lang.String): kyLib.kyMod.ResponsePromise = js.native
   /**
   	Fetch the given `url` using the option `{method: 'head'}`.
@@ -75,11 +75,11 @@ trait Anon_Body extends js.Object {
   def head(url: stdLib.Request): kyLib.kyMod.ResponsePromise = js.native
   def head(url: stdLib.URL): kyLib.kyMod.ResponsePromise = js.native
   @JSName("head")
-  def head_body(url: java.lang.String, options: Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
+  def head_body(url: java.lang.String, options: _Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
   @JSName("head")
-  def head_body(url: stdLib.Request, options: Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
+  def head_body(url: stdLib.Request, options: _Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
   @JSName("head")
-  def head_body(url: stdLib.URL, options: Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
+  def head_body(url: stdLib.URL, options: _Omit[kyLib.kyMod.Options, kyLib.kyLibStrings.body]): kyLib.kyMod.ResponsePromise = js.native
   def patch(url: java.lang.String): kyLib.kyMod.ResponsePromise = js.native
   def patch(url: java.lang.String, options: kyLib.kyMod.Options): kyLib.kyMod.ResponsePromise = js.native
   /**

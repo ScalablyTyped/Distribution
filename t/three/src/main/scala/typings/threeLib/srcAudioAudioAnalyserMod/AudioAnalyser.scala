@@ -13,8 +13,8 @@ class AudioAnalyser protected () extends js.Object {
   var data: stdLib.Uint8Array = js.native
   def getAverageFrequency(): scala.Double = js.native
   /**
-    * @deprecated Use {@link AudioAnalyser#getFrequencyData .getFrequencyData()} instead.
-    */
+  	 * @deprecated Use {@link AudioAnalyser#getFrequencyData .getFrequencyData()} instead.
+  	 */
   def getData(file: js.Any): js.Any = js.native
   def getFrequencyData(): stdLib.Uint8Array = js.native
 }

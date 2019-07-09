@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-simple-code-editor"
-version := "0.9.10-4263c4"
+version := "0.9.11-4263c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tiny-invariant
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 A tiny invariant function

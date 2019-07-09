@@ -16,13 +16,14 @@ trait AxiosRequestConfig extends js.Object {
   var httpsAgent: js.UndefOr[js.Any] = js.undefined
   var maxContentLength: js.UndefOr[scala.Double] = js.undefined
   var maxRedirects: js.UndefOr[scala.Double] = js.undefined
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[Method] = js.undefined
   var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, scala.Unit]] = js.undefined
   var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, scala.Unit]] = js.undefined
   var params: js.UndefOr[js.Any] = js.undefined
   var paramsSerializer: js.UndefOr[js.Function1[/* params */ js.Any, java.lang.String]] = js.undefined
   var proxy: js.UndefOr[AxiosProxyConfig | axiosLib.axiosLibNumbers.`false`] = js.undefined
-  var responseType: js.UndefOr[java.lang.String] = js.undefined
+  var responseType: js.UndefOr[ResponseType] = js.undefined
+  var socketPath: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var transformRequest: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.undefined
   var transformResponse: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.undefined
@@ -46,13 +47,14 @@ object AxiosRequestConfig {
     httpsAgent: js.Any = null,
     maxContentLength: scala.Int | scala.Double = null,
     maxRedirects: scala.Int | scala.Double = null,
-    method: java.lang.String = null,
+    method: Method = null,
     onDownloadProgress: /* progressEvent */ js.Any => scala.Unit = null,
     onUploadProgress: /* progressEvent */ js.Any => scala.Unit = null,
     params: js.Any = null,
     paramsSerializer: /* params */ js.Any => java.lang.String = null,
     proxy: AxiosProxyConfig | axiosLib.axiosLibNumbers.`false` = null,
-    responseType: java.lang.String = null,
+    responseType: ResponseType = null,
+    socketPath: java.lang.String = null,
     timeout: scala.Int | scala.Double = null,
     transformRequest: AxiosTransformer | js.Array[AxiosTransformer] = null,
     transformResponse: AxiosTransformer | js.Array[AxiosTransformer] = null,
@@ -80,6 +82,7 @@ object AxiosRequestConfig {
     if (paramsSerializer != null) __obj.updateDynamic("paramsSerializer")(js.Any.fromFunction1(paramsSerializer))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])

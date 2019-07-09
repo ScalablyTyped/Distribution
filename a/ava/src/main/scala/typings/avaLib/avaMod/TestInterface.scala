@@ -35,158 +35,190 @@ trait TestInterface[Context] extends js.Object {
   var skip_Original: SkipInterface[Context] = js.native
   @JSName("todo")
   var todo_Original: TodoDeclaration = js.native
-  /** Declare a concurrent test that uses one or more macros. The macro is responsible for generating a unique test title. */
-  def apply(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
+  def apply(
+    macros: OneOrMoreMacros[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ _, 
+      Context
+    ],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any
+  ): scala.Unit = js.native
   /** Declare a concurrent test. */
   def apply(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a concurrent test that uses one or more macros. Additional arguments are passed to the macro. */
-  def apply[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def apply[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run once, after all tests have passed. */
   def after(implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run once, after all tests have passed. */
-  def after(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
-  /** Declare a hook that is run once, after all tests have passed. */
-  /** Declare a hook that is run once, after all tests have passed. */
   def after(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  /** Declare a hook that is run once, after all tests have passed. */
+  /** Declare a hook that is run once, after all tests have passed. */
+  def after[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. Additional arguments are passed to the macro. */
   /** Declare a hook that is run once, after all tests have passed. */
-  def after[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def after[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run after each passing test. */
   def afterEach(implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run after each passing test. */
-  def afterEach(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
+  def afterEach(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a hook that is run after each passing test. */
-  def afterEach(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  def afterEach[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. Additional arguments are passed to the macro. */
   /** Declare a hook that is run after each passing test. */
-  def afterEach[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def afterEach[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run once, before all tests. */
   def before(implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run once, before all tests. */
-  def before(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
-  /** Declare a hook that is run once, before all tests. */
-  /** Declare a hook that is run once, before all tests. */
   def before(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  /** Declare a hook that is run once, before all tests. */
+  /** Declare a hook that is run once, before all tests. */
+  def before[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. Additional arguments are passed to the macro. */
   /** Declare a hook that is run once, before all tests. */
-  def before[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def before[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run before each test. */
   def beforeEach(implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run before each test. */
-  def beforeEach(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
+  def beforeEach(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a hook that is run before each test. */
-  def beforeEach(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  def beforeEach[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /** Declare a hook that is run once, before all tests. Additional arguments are passed to the macro. */
   /** Declare a hook that is run before each test. */
-  def beforeEach[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def beforeEach[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
-  /**
-  	 * Declare a concurrent test that uses one or more macros. The macros must call `t.end()` when they're done.
-  	 * The macro is responsible for generating a unique test title.
-  	 */
-  /** Declare a test that must call `t.end()` when it's done. */
-  def cb(`macro`: OneOrMoreCbMacros[js.Array[js.Any], Context]): scala.Unit = js.native
   /** Declare a test that must call `t.end()` when it's done. */
   /** Declare a test that must call `t.end()` when it's done. */
   def cb(title: java.lang.String, implementation: CbImplementation[Context]): scala.Unit = js.native
   /**
   	 * Declare a concurrent test that uses one or more macros. The macros must call `t.end()` when they're done.
+  	 * The macro is responsible for generating a unique test title.
+  	 */
+  /** Declare a test that must call `t.end()` when it's done. */
+  def cb[T /* <: js.Array[_] */](
+    macros: OneOrMoreCbMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
+  /**
+  	 * Declare a concurrent test that uses one or more macros. The macros must call `t.end()` when they're done.
   	 * Additional arguments are passed to the macro.
   	 */
   /** Declare a test that must call `t.end()` when it's done. */
-  def cb[ToM /* <: TitleOrCbMacro[Context] */, MoA /* <: CbMacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def cb[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreCbMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
+  /** Declare a concurrent test. The test is expected to fail. */
+  /** Declare a test that is expected to fail. */
+  def failing(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /**
   	 * Declare a concurrent test that uses one or more macros. The macro is responsible for generating a unique test title.
   	 * The test is expected to fail.
   	 */
   /** Declare a test that is expected to fail. */
-  def failing(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
-  /** Declare a concurrent test. The test is expected to fail. */
-  /** Declare a test that is expected to fail. */
-  def failing(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  def failing[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /**
   	 * Declare a concurrent test that uses one or more macros. Additional arguments are passed to the macro.
   	 * The test is expected to fail.
   	 */
   /** Declare a test that is expected to fail. */
-  def failing[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def failing[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
+  /** Declare a test. Only this test and others declared with `.only()` are run. */
+  def only(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /**
   	 * Declare a test that uses one or more macros. The macro is responsible for generating a unique test title.
   	 * Only this test and others declared with `.only()` are run.
   	 */
-  def only(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
-  /** Declare a test. Only this test and others declared with `.only()` are run. */
-  def only(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  def only[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /**
   	 * Declare a test that uses one or more macros. Additional arguments are passed to the macro.
   	 * Only this test and others declared with `.only()` are run.
   	 */
-  def only[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def only[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
+  /** Declare a serial test. */
+  /** Declare tests and hooks that are run serially. */
+  def serial(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /**
   	 * Declare a serial test that uses one or more macros. The macro is responsible for generating a unique test title.
   	 */
   /** Declare tests and hooks that are run serially. */
-  def serial(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
-  /** Declare a serial test. */
-  /** Declare tests and hooks that are run serially. */
-  def serial(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
+  def serial[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
   /** Declare a serial test that uses one or more macros. Additional arguments are passed to the macro. */
   /** Declare tests and hooks that are run serially. */
-  def serial[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def serial[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
-  /** Skip this test. */
-  def skip(`macro`: OneOrMoreMacros[js.Array[js.Any], Context]): scala.Unit = js.native
   /** Skip this test. */
   def skip(title: java.lang.String, implementation: Implementation[Context]): scala.Unit = js.native
   /** Skip this test. */
-  def skip[ToM /* <: TitleOrMacro[Context] */, MoA /* <: MacroOrFirstArg[ToM, Context] */](
-    titleOrMacro: ToM,
-    macroOrArg: MoA,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type RestArgs<ToM, MoA, Context> is not an array type */ rest: RestArgs[ToM, MoA, Context]
+  def skip[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): scala.Unit = js.native
+  /** Skip this test. */
+  def skip[T /* <: js.Array[_] */](
+    title: java.lang.String,
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): scala.Unit = js.native
   def todo(title: java.lang.String): scala.Unit = js.native
 }

@@ -35,6 +35,11 @@ package object pluginsNs {
   type cassandra_driver = Integration
   /**
     * This plugin automatically instruments the
+    * [connect](https://github.com/senchalabs/connect) module.
+    */
+  type connect = HttpServer
+  /**
+    * This plugin automatically instruments the
     * [dns](https://nodejs.org/api/dns.html) module.
     */
   type dns = Integration
@@ -48,6 +53,11 @@ package object pluginsNs {
     * [express](http://expressjs.com/) module.
     */
   type express = HttpServer
+  /**
+    * This plugin automatically instruments the
+    * [fastify](https://www.fastify.io/) module.
+    */
+  type fastify = HttpServer
   /**
     * This plugin patches the [generic-pool](https://github.com/coopernurse/node-pool)
     * module to bind the callbacks the the caller context.
@@ -100,6 +110,11 @@ package object pluginsNs {
   type net = Integration
   /**
     * This plugin automatically instruments the
+    * [paperplane](https://github.com/articulate/paperplane) module.
+    */
+  type paperplane = HttpServer
+  /**
+    * This plugin automatically instruments the
     * [pg](https://node-postgres.com/) module.
     */
   type pg = Integration
@@ -110,6 +125,16 @@ package object pluginsNs {
     * on the tracer.
     */
   type pino = Integration
+  /**
+    * This plugin patches the [promise](https://github.com/then/promise)
+    * module to bind the promise callback the the caller context.
+    */
+  type promise = Integration
+  /**
+    * This plugin patches the [promise-js](https://github.com/kevincennis/promise)
+    * module to bind the promise callback the the caller context.
+    */
+  type promise_js = Integration
   /**
     * This plugin patches the [q](https://github.com/kriskowal/q)
     * module to bind the promise callback the the caller context.
@@ -130,6 +155,11 @@ package object pluginsNs {
     * [router](https://github.com/pillarjs/router) module.
     */
   type router = Integration
+  /**
+    * This plugin automatically instruments the
+    * [tedious](https://github.com/tediousjs/tedious/) module.
+    */
+  type tedious = Integration
   /**
     * This plugin patches the [when](https://github.com/cujojs/when)
     * module to bind the promise callback the the caller context.

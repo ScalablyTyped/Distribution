@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mosaic-component
 
-Typings are for version 2.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 A React Tiling Window Manager
@@ -34,7 +34,7 @@ These comments are from the typescript definitions and might be useful:
 ```
 /**
  * @license
- * Copyright 2016 Palantir Technologies, Inc.
+ * Copyright 2019 Kevin Verdieck, originally developed at Palantir Technologies, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

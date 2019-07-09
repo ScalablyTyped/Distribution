@@ -59,6 +59,11 @@ object v2alpha1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.batchV2alpha1CronJobMod.CronJob = js.native
+    /**
+      * Returns true if the given object is an instance of CronJob.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/CronJob.CronJob */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -82,6 +87,11 @@ object v2alpha1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.batchV2alpha1CronJobListMod.CronJobList = js.native
+    /**
+      * Returns true if the given object is an instance of CronJobList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/CronJobList.CronJobList */ scala.Boolean = js.native
   }
   
 }

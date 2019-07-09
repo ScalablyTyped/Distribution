@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object buildSrcChannelMod {
   type StopCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
 }

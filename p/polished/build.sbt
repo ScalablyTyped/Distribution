@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "polished"
-version := "2.3.3-9c88a0"
+version := "3.4.1-cb116e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

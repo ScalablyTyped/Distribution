@@ -30,7 +30,7 @@ class Handler () extends js.Object {
   /**
     * The tooltip handler function.
     */
-  var tooltip_handler: js.Any = js.native
+  var tooltipHandler: js.Any = js.native
   /**
     * The handler function. We bind this to this function in the constructor.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mqtt-packet"
-version := "6.1.2-ed6b8c"
+version := "6.2.0-ed6b8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

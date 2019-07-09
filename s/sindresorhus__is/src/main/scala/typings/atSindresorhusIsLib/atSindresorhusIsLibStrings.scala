@@ -19,6 +19,14 @@ object atSindresorhusIsLibStrings {
     extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
   
   @js.native
+  sealed trait BigInt64Array
+    extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
+  
+  @js.native
+  sealed trait BigUint64Array
+    extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
+  
+  @js.native
   sealed trait Buffer
     extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
   
@@ -44,6 +52,10 @@ object atSindresorhusIsLibStrings {
   
   @js.native
   sealed trait Function
+    extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
+  
+  @js.native
+  sealed trait Generator
     extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
   
   @js.native
@@ -119,6 +131,10 @@ object atSindresorhusIsLibStrings {
     extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
   
   @js.native
+  sealed trait bigint
+    extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
+  
+  @js.native
   sealed trait boolean
     extends atSindresorhusIsLib.atSindresorhusIsMod.TypeName
   
@@ -149,6 +165,10 @@ object atSindresorhusIsLibStrings {
   @scala.inline
   def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
   @scala.inline
+  def BigInt64Array: BigInt64Array = "BigInt64Array".asInstanceOf[BigInt64Array]
+  @scala.inline
+  def BigUint64Array: BigUint64Array = "BigUint64Array".asInstanceOf[BigUint64Array]
+  @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   @scala.inline
   def DataView: DataView = "DataView".asInstanceOf[DataView]
@@ -162,6 +182,8 @@ object atSindresorhusIsLibStrings {
   def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
+  @scala.inline
+  def Generator: Generator = "Generator".asInstanceOf[Generator]
   @scala.inline
   def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
   @scala.inline
@@ -198,6 +220,8 @@ object atSindresorhusIsLibStrings {
   def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
   @scala.inline
   def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
+  @scala.inline
+  def bigint: bigint = "bigint".asInstanceOf[bigint]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline

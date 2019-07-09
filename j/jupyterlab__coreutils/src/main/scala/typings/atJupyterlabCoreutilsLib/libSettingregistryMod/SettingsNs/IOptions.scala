@@ -12,18 +12,18 @@ trait IOptions extends js.Object {
   /**
     * The setting values for a plugin.
     */
-  var plugin: atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.IPlugin
+  var plugin: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin
   /**
     * The system registry instance used by the settings manager.
     */
-  var registry: atJupyterlabCoreutilsLib.libSettingregistryMod.SettingRegistry
+  var registry: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistry
 }
 
 object IOptions {
   @scala.inline
   def apply(
-    plugin: atJupyterlabCoreutilsLib.libSettingregistryMod.ISettingRegistryNs.IPlugin,
-    registry: atJupyterlabCoreutilsLib.libSettingregistryMod.SettingRegistry
+    plugin: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistryNs.IPlugin,
+    registry: atJupyterlabCoreutilsLib.libTokensMod.ISettingRegistry
   ): IOptions = {
     val __obj = js.Dynamic.literal(plugin = plugin, registry = registry)
   

@@ -10,12 +10,12 @@ trait MosaicContext[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKe
   var mosaicId: java.lang.String
 }
 
-@JSImport("react-mosaic-component/lib/contextTypes", "MosaicContext")
-@js.native
-object MosaicContext extends js.Object {
-  var mosaicActions: propDashTypesLib.propDashTypesMod.Validator[
-    propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_Args]
-  ] = js.native
-  var mosaicId: propDashTypesLib.propDashTypesMod.Validator[java.lang.String] = js.native
+object MosaicContext {
+  @scala.inline
+  def apply[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](mosaicActions: MosaicRootActions[T], mosaicId: java.lang.String): MosaicContext[T] = {
+    val __obj = js.Dynamic.literal(mosaicActions = mosaicActions, mosaicId = mosaicId)
+  
+    __obj.asInstanceOf[MosaicContext[T]]
+  }
 }
 

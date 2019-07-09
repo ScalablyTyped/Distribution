@@ -9,10 +9,10 @@ package object buildSrcFileMod {
   type CopyCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* file */ js.UndefOr[File | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
-  type CopyResponse = js.Tuple2[File, requestLib.requestMod.Response]
+  type CopyResponse = js.Tuple2[File, atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
   type CreateResumableUploadCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
     /* uri */ js.UndefOr[java.lang.String], 
@@ -21,10 +21,10 @@ package object buildSrcFileMod {
   type CreateResumableUploadResponse = js.Array[java.lang.String]
   type DeleteFileCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
-  type DeleteFileResponse = js.Array[requestLib.requestMod.Response]
+  type DeleteFileResponse = js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
   type DownloadCallback = js.Function2[/* err */ RequestError | scala.Null, /* contents */ nodeLib.Buffer, scala.Unit]
   type DownloadResponse = js.Array[nodeLib.Buffer]
   type FileExistsCallback = js.Function2[
@@ -36,27 +36,27 @@ package object buildSrcFileMod {
   type GetExpirationDateCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* expirationDate */ js.UndefOr[stdLib.Date | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
   type GetExpirationDateResponse = js.Array[stdLib.Date]
   type GetFileCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* file */ js.UndefOr[File], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
   type GetFileMetadataCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* metadata */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
   type GetFileMetadataResponse = js.Tuple2[
     atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata, 
-    requestLib.requestMod.Response
+    atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata
   ]
-  type GetFileResponse = js.Tuple2[File, requestLib.requestMod.Response]
+  type GetFileResponse = js.Tuple2[File, atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
   type GetSignedPolicyCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
     /* policy */ js.UndefOr[PolicyDocument], 
@@ -69,21 +69,27 @@ package object buildSrcFileMod {
     scala.Unit
   ]
   type GetSignedUrlResponse = js.Array[java.lang.String]
-  type MakeFilePrivateCallback = SetFileMetadataCallback
-  type MakeFilePrivateResponse = js.Array[requestLib.requestMod.Response]
-  type MakeFilePublicCallback = js.Function2[
-    /* err */ js.UndefOr[stdLib.Error | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+  type IsPublicCallback = js.Function2[
+    /* err */ stdLib.Error | scala.Null, 
+    /* resp */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
-  type MakeFilePublicResponse = js.Array[requestLib.requestMod.Response]
+  type IsPublicResponse = js.Array[scala.Boolean]
+  type MakeFilePrivateCallback = SetFileMetadataCallback
+  type MakeFilePrivateResponse = js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
+  type MakeFilePublicCallback = js.Function2[
+    /* err */ js.UndefOr[stdLib.Error | scala.Null], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
+    scala.Unit
+  ]
+  type MakeFilePublicResponse = js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
   type MoveCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* destinationFile */ js.UndefOr[File | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
-  type MoveResponse = js.Array[requestLib.requestMod.Response]
+  type MoveResponse = js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
   type RotateEncryptionKeyCallback = CopyCallback
   type RotateEncryptionKeyOptions = java.lang.String | nodeLib.Buffer | EncryptionKeyOptions
   type RotateEncryptionKeyResponse = CopyResponse
@@ -91,14 +97,14 @@ package object buildSrcFileMod {
   type SaveOptions = CreateWriteStreamOptions
   type SetFileMetadataCallback = js.Function2[
     /* err */ js.UndefOr[stdLib.Error | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
-  type SetFileMetadataResponse = js.Array[requestLib.requestMod.Response]
+  type SetFileMetadataResponse = js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
   type SetStorageClassCallback = js.Function2[
     /* err */ js.UndefOr[stdLib.Error | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
+    /* apiResponse */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     scala.Unit
   ]
-  type SetStorageClassResponse = js.Array[requestLib.requestMod.Response]
+  type SetStorageClassResponse = js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata]
 }

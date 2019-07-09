@@ -19,7 +19,6 @@ class RoleBinding protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.RoleBinding) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.RoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should
     * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -49,7 +48,6 @@ class RoleBinding protected ()
     * Subjects holds references to the objects the role applies to.
     */
   val subjects: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.rbacNs.v1Ns.Subject]] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.RoleBinding = js.native
 }
 
 /* static members */
@@ -74,5 +72,10 @@ object RoleBinding extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.rbacV1RoleBindingMod.RoleBinding = js.native
+  /**
+    * Returns true if the given object is an instance of RoleBinding.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/RoleBinding.RoleBinding */ scala.Boolean = js.native
 }
 

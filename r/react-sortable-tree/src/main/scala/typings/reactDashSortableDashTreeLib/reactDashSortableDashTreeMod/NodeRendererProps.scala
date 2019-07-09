@@ -10,8 +10,8 @@ trait NodeRendererProps extends js.Object {
   var canDrag: scala.Boolean
   var canDrop: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var connectDragPreview: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview
-  var connectDragSource: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragSource
+  var connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any
+  var connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
   var didDrop: scala.Boolean
   var draggedNode: js.UndefOr[TreeItem] = js.undefined
   var endDrag: js.Any
@@ -42,8 +42,8 @@ object NodeRendererProps {
   @scala.inline
   def apply(
     canDrag: scala.Boolean,
-    connectDragPreview: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview,
-    connectDragSource: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragSource,
+    connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any,
+    connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any,
     didDrop: scala.Boolean,
     endDrag: js.Any,
     isDragging: scala.Boolean,

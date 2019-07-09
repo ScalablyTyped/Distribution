@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Lint
   extends gitlabLib.distInfrastructureMod.BaseService {
   def lint(content: java.lang.String): js.Promise[js.Object] = js.native
-  def lint(content: java.lang.String, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
+  def lint(content: java.lang.String, options: gitlabLib.distInfrastructureMod.Sudo): js.Promise[js.Object] = js.native
 }
 

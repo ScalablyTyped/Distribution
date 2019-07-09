@@ -59,6 +59,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
+    /**
+      * Returns true if the given object is an instance of CustomResourceDefinition.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/CustomResourceDefinition.CustomResourceDefinition */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -82,6 +87,11 @@ object v1beta1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
+    /**
+      * Returns true if the given object is an instance of CustomResourceDefinitionList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/CustomResourceDefinitionList.CustomResourceDefinitionList */ scala.Boolean = js.native
   }
   
 }

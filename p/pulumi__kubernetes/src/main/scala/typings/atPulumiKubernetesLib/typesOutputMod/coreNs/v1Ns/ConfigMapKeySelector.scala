@@ -19,7 +19,7 @@ trait ConfigMapKeySelector extends js.Object {
     */
   val name: java.lang.String
   /**
-    * Specify whether the ConfigMap or it's key must be defined
+    * Specify whether the ConfigMap or its key must be defined
     */
   val optional: scala.Boolean
 }

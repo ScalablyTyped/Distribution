@@ -28,6 +28,12 @@ trait CustomResourceDefinitionSpec extends js.Object {
     */
   val names: CustomResourceDefinitionNames
   /**
+    * preserveUnknownFields disables pruning of object fields which are not specified in the
+    * OpenAPI schema. apiVersion, kind, metadata and known fields inside metadata are always
+    * preserved. Defaults to true in v1beta and will default to false in v1.
+    */
+  val preserveUnknownFields: scala.Boolean
+  /**
     * Scope indicates whether this resource is cluster or namespace scoped.  Default is
     * namespaced
     */
@@ -73,13 +79,14 @@ object CustomResourceDefinitionSpec {
     conversion: CustomResourceConversion,
     group: java.lang.String,
     names: CustomResourceDefinitionNames,
+    preserveUnknownFields: scala.Boolean,
     scope: java.lang.String,
     subresources: CustomResourceSubresources,
     validation: CustomResourceValidation,
     version: java.lang.String,
     versions: js.Array[CustomResourceDefinitionVersion]
   ): CustomResourceDefinitionSpec = {
-    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns, conversion = conversion, group = group, names = names, scope = scope, subresources = subresources, validation = validation, version = version, versions = versions)
+    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns, conversion = conversion, group = group, names = names, preserveUnknownFields = preserveUnknownFields, scope = scope, subresources = subresources, validation = validation, version = version, versions = versions)
   
     __obj.asInstanceOf[CustomResourceDefinitionSpec]
   }

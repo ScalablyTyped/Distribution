@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/renderers/webgl/WebGLPrograms", "WebGLPrograms")
 @js.native
 class WebGLPrograms protected () extends js.Object {
-  def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures) = this()
+  def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities) = this()
   var programs: js.Array[threeLib.srcRenderersWebglWebGLProgramMod.WebGLProgram] = js.native
   def acquireProgram(
     material: threeLib.srcMaterialsShaderMaterialMod.ShaderMaterial,

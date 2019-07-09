@@ -14,8 +14,8 @@ class ShaderMaterial ()
   var defaultAttributeValues: js.Any = js.native
   var defines: js.Any = js.native
   /**
-    * @deprecated Use {@link ShaderMaterial#extensions.derivatives extensions.derivatives} instead.
-    */
+  	 * @deprecated Use {@link ShaderMaterial#extensions.derivatives extensions.derivatives} instead.
+  	 */
   var derivatives: js.Any = js.native
   var extensions: threeLib.Anon_Derivatives = js.native
   var fragmentShader: java.lang.String = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for eventemitter3
 
-Typings are for version 3.1.2
+Typings are for version 4.0.0
 
 ## Library description:
 EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.
@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Minimal `EventEmitter` interface that is molded against the Node.js
- * `EventEmitter` interface.
- */
-
-```
 

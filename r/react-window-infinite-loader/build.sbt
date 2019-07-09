@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-window-infinite-loader"
-version := "1.0-dt-20190626Z-e065fc"
+version := "1.0-dt-20190626Z-e927b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-523284",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-c945ed",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c6e514",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-5fe923",
-  "org.scalablytyped" %%% "react-window" % "1.8-dt-20190412Z-2a7dbe",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190703Z-55594c",
+  "org.scalablytyped" %%% "react-window" % "1.8-dt-20190412Z-d3421e",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rfc6902
 
-Typings are for version 3.0.2
+Typings are for version 3.0.4
 
 ## Library description:
 Complete implementation of RFC6902 (patch and diff)

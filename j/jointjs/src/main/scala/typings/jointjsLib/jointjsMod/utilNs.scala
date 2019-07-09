@@ -135,7 +135,11 @@ object utilNs extends js.Object {
   ): js.Object = js.native
   def mixin(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
   def nextFrame(callback: js.Function0[scala.Unit]): scala.Double = js.native
-  def nextFrame(callback: js.Function0[scala.Unit], context: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Double = js.native
+  def nextFrame(
+    callback: js.Function0[scala.Unit],
+    context: org.scalablytyped.runtime.StringDictionary[js.Any],
+    args: js.Any*
+  ): scala.Double = js.native
   def noop(): scala.Unit = js.native
   def normalizeEvent(evt: jqueryLib.JQueryNs.Event): jqueryLib.JQueryNs.Event = js.native
   def normalizeSides(sides: jointjsLib.jointjsMod.diaNs.Sides): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native

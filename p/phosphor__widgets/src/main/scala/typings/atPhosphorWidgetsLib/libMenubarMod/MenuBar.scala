@@ -17,7 +17,48 @@ class MenuBar ()
   def this(options: atPhosphorWidgetsLib.libMenubarMod.MenuBarNs.IOptions) = this()
   var _activeIndex: js.Any = js.native
   var _childMenu: js.Any = js.native
+  /**
+    * Close the child menu immediately.
+    *
+    * This is a no-op if a child menu is not open.
+    */
+  var _closeChildMenu: js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the menu bar.
+    */
+  var _evtKeyDown: js.Any = js.native
+  /**
+    * Handle the `'mousedown'` event for the menu bar.
+    */
+  var _evtMouseDown: js.Any = js.native
+  /**
+    * Handle the `'mouseleave'` event for the menu bar.
+    */
+  var _evtMouseLeave: js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the menu bar.
+    */
+  var _evtMouseMove: js.Any = js.native
   var _menus: js.Any = js.native
+  /**
+    * Handle the `aboutToClose` signal of a menu.
+    */
+  var _onMenuAboutToClose: js.Any = js.native
+  /**
+    * Handle the `menuRequested` signal of a child menu.
+    */
+  var _onMenuMenuRequested: js.Any = js.native
+  /**
+    * Handle the `changed` signal of a title object.
+    */
+  var _onTitleChanged: js.Any = js.native
+  /**
+    * Open the child menu at the active index immediately.
+    *
+    * If a different child menu is already open, it will be closed,
+    * even if there is no active menu.
+    */
+  var _openChildMenu: js.Any = js.native
   /**
     * Get the index of the currently active menu.
     *
@@ -65,47 +106,6 @@ class MenuBar ()
     * The renderer used by the menu bar.
     */
   val renderer: atPhosphorWidgetsLib.libMenubarMod.MenuBarNs.IRenderer = js.native
-  /**
-    * Close the child menu immediately.
-    *
-    * This is a no-op if a child menu is not open.
-    */
-  /* private */ def _closeChildMenu(): js.Any = js.native
-  /**
-    * Handle the `'keydown'` event for the menu bar.
-    */
-  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousedown'` event for the menu bar.
-    */
-  /* private */ def _evtMouseDown(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mouseleave'` event for the menu bar.
-    */
-  /* private */ def _evtMouseLeave(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `'mousemove'` event for the menu bar.
-    */
-  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
-  /**
-    * Handle the `aboutToClose` signal of a menu.
-    */
-  /* private */ def _onMenuAboutToClose(sender: js.Any): js.Any = js.native
-  /**
-    * Handle the `menuRequested` signal of a child menu.
-    */
-  /* private */ def _onMenuMenuRequested(sender: js.Any, args: js.Any): js.Any = js.native
-  /**
-    * Handle the `changed` signal of a title object.
-    */
-  /* private */ def _onTitleChanged(): js.Any = js.native
-  /**
-    * Open the child menu at the active index immediately.
-    *
-    * If a different child menu is already open, it will be closed,
-    * even if there is no active menu.
-    */
-  /* private */ def _openChildMenu(): js.Any = js.native
   /**
     * Add a menu to the end of the menu bar.
     *

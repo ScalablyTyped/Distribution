@@ -32,7 +32,7 @@ object ^ extends js.Object {
   val hiddenContentStyle: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val noWrap: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val normalize: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
-  def buildClassMap[T](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
     */ atUifabricStylingLib.atUifabricStylingLibStrings.buildClassMap with js.Any = js.native
   def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
@@ -663,6 +663,7 @@ object ^ extends js.Object {
   def getIcon(): js.UndefOr[atUifabricStylingLib.libUtilitiesIconsMod.IIconRecord] = js.native
   def getIcon(name: java.lang.String): js.UndefOr[atUifabricStylingLib.libUtilitiesIconsMod.IIconRecord] = js.native
   def getIconClassName(name: java.lang.String): java.lang.String = js.native
+  def getPlaceholderStyles(styles: atUifabricMergeDashStylesLib.libIStyleMod.IStyle): atUifabricMergeDashStylesLib.libIStyleMod.IStyle = js.native
   def getScreenSelector(min: scala.Double, max: scala.Double): java.lang.String = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native

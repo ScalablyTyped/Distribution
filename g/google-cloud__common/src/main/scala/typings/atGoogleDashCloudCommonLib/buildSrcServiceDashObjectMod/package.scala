@@ -12,7 +12,6 @@ package object buildSrcServiceDashObjectMod {
     /* repeated */ js.Any, 
     scala.Unit
   ]
-  type CreateOptions = js.Object
   type CreateResponse[T] = js.Array[js.Any]
   type DeleteCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 

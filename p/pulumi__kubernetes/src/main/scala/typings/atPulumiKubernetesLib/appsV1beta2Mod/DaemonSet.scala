@@ -43,5 +43,10 @@ object DaemonSet extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.appsV1beta2DaemonSetMod.DaemonSet = js.native
+  /**
+    * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta2/DaemonSet.DaemonSet */ scala.Boolean = js.native
 }
 

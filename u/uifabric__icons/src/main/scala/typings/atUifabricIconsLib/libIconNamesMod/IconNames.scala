@@ -238,6 +238,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.AlignCenter
   - atUifabricIconsLib.atUifabricIconsLibStrings.AlignLeft
   - atUifabricIconsLib.atUifabricIconsLibStrings.OpenFile
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ClearSelection
   - atUifabricIconsLib.atUifabricIconsLibStrings.FontDecrease
   - atUifabricIconsLib.atUifabricIconsLibStrings.FontIncrease
   - atUifabricIconsLib.atUifabricIconsLibStrings.FontSize
@@ -409,6 +410,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.CaretHollowMirrored
   - atUifabricIconsLib.atUifabricIconsLibStrings.CaretSolidMirrored
   - atUifabricIconsLib.atUifabricIconsLibStrings.ChromeBackMirrored
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ClearSelectionMirrored
   - atUifabricIconsLib.atUifabricIconsLibStrings.ClosePaneMirrored
   - atUifabricIconsLib.atUifabricIconsLibStrings.DockLeftMirrored
   - atUifabricIconsLib.atUifabricIconsLibStrings.DoubleChevronLeftMedMirrored
@@ -557,6 +559,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.ThisPC
   - atUifabricIconsLib.atUifabricIconsLibStrings.MusicNote
   - atUifabricIconsLib.atUifabricIconsLibStrings.MicOff
+  - atUifabricIconsLib.atUifabricIconsLibStrings.PlaybackRate1x
   - atUifabricIconsLib.atUifabricIconsLibStrings.EdgeLogo
   - atUifabricIconsLib.atUifabricIconsLibStrings.CompletedSolid
   - atUifabricIconsLib.atUifabricIconsLibStrings.AlbumRemove
@@ -585,6 +588,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.AppIconDefault
   - atUifabricIconsLib.atUifabricIconsLibStrings.Photo2Add
   - atUifabricIconsLib.atUifabricIconsLibStrings.Photo2Remove
+  - atUifabricIconsLib.atUifabricIconsLibStrings.Calories
   - atUifabricIconsLib.atUifabricIconsLibStrings.POI
   - atUifabricIconsLib.atUifabricIconsLibStrings.AddTo
   - atUifabricIconsLib.atUifabricIconsLibStrings.RadioBtnOff
@@ -750,6 +754,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.DoubleChevronLeft12
   - atUifabricIconsLib.atUifabricIconsLibStrings.DoubleChevronRight12
   - atUifabricIconsLib.atUifabricIconsLibStrings.CalendarAgenda
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ConnectVirtualMachine
   - atUifabricIconsLib.atUifabricIconsLibStrings.AddEvent
   - atUifabricIconsLib.atUifabricIconsLibStrings.AssetLibrary
   - atUifabricIconsLib.atUifabricIconsLibStrings.DataConnectionLibrary
@@ -868,6 +873,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.AppIconDefaultList
   - atUifabricIconsLib.atUifabricIconsLibStrings.ActivateOrders
   - atUifabricIconsLib.atUifabricIconsLibStrings.DeactivateOrders
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ScatterChart
   - atUifabricIconsLib.atUifabricIconsLibStrings.DocumentManagement
   - atUifabricIconsLib.atUifabricIconsLibStrings.CRMReport
   - atUifabricIconsLib.atUifabricIconsLibStrings.KnowledgeArticle
@@ -950,10 +956,12 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.CollapseContent
   - atUifabricIconsLib.atUifabricIconsLibStrings.CollapseContentSingle
   - atUifabricIconsLib.atUifabricIconsLibStrings.InfoSolid
+  - atUifabricIconsLib.atUifabricIconsLibStrings.GroupList
   - atUifabricIconsLib.atUifabricIconsLibStrings.ProgressRingDots
   - atUifabricIconsLib.atUifabricIconsLibStrings.CaloriesAdd
   - atUifabricIconsLib.atUifabricIconsLibStrings.BranchFork
   - atUifabricIconsLib.atUifabricIconsLibStrings.AddHome
+  - atUifabricIconsLib.atUifabricIconsLibStrings.AddWork
   - atUifabricIconsLib.atUifabricIconsLibStrings.MobileReport
   - atUifabricIconsLib.atUifabricIconsLibStrings.ScaleVolume
   - atUifabricIconsLib.atUifabricIconsLibStrings.HardDriveGroup
@@ -962,6 +970,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.ToggleRight
   - atUifabricIconsLib.atUifabricIconsLibStrings.TriangleShape
   - atUifabricIconsLib.atUifabricIconsLibStrings.RectangleShape
+  - atUifabricIconsLib.atUifabricIconsLibStrings.CubeShape
   - atUifabricIconsLib.atUifabricIconsLibStrings.Trophy2
   - atUifabricIconsLib.atUifabricIconsLibStrings.BucketColor
   - atUifabricIconsLib.atUifabricIconsLibStrings.BucketColorFill
@@ -1181,6 +1190,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.AssessmentGroup
   - atUifabricIconsLib.atUifabricIconsLibStrings.VariableGroup
   - atUifabricIconsLib.atUifabricIconsLibStrings.FullHistory
+  - atUifabricIconsLib.atUifabricIconsLibStrings.Wheelchair
   - atUifabricIconsLib.atUifabricIconsLibStrings.SingleColumnEdit
   - atUifabricIconsLib.atUifabricIconsLibStrings.DoubleColumnEdit
   - atUifabricIconsLib.atUifabricIconsLibStrings.TripleColumnEdit
@@ -1304,6 +1314,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.DislikeSolid
   - atUifabricIconsLib.atUifabricIconsLibStrings.CRMCustomerInsightsApp
   - atUifabricIconsLib.atUifabricIconsLibStrings.EditCreate
+  - atUifabricIconsLib.atUifabricIconsLibStrings.SearchData
   - atUifabricIconsLib.atUifabricIconsLibStrings.UnSetColor
   - atUifabricIconsLib.atUifabricIconsLibStrings.DeclineCall
   - atUifabricIconsLib.atUifabricIconsLibStrings.RectangularClipping
@@ -1561,6 +1572,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.QuadColumn
   - atUifabricIconsLib.atUifabricIconsLibStrings.WhiteBoardApp16
   - atUifabricIconsLib.atUifabricIconsLibStrings.WhiteBoardApp32
+  - atUifabricIconsLib.atUifabricIconsLibStrings.PinnedSolid
   - atUifabricIconsLib.atUifabricIconsLibStrings.InsertSignatureLine
   - atUifabricIconsLib.atUifabricIconsLibStrings.ArrangeByFrom
   - atUifabricIconsLib.atUifabricIconsLibStrings.Phishing
@@ -1669,6 +1681,7 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.ReleaseGateCheck
   - atUifabricIconsLib.atUifabricIconsLibStrings.ReleaseGateError
   - atUifabricIconsLib.atUifabricIconsLibStrings.M365InvoicingLogo
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ShieldAlert
   - atUifabricIconsLib.atUifabricIconsLibStrings.FabricTextHighlightComposite
   - atUifabricIconsLib.atUifabricIconsLibStrings.Dataflows
   - atUifabricIconsLib.atUifabricIconsLibStrings.GenericScanFilled
@@ -1716,11 +1729,23 @@ import scala.scalajs.js.annotation._
   - atUifabricIconsLib.atUifabricIconsLibStrings.MicrosoftTranslatorLogoGreen
   - atUifabricIconsLib.atUifabricIconsLibStrings.MicrosoftTranslatorLogoBlue
   - atUifabricIconsLib.atUifabricIconsLibStrings.InternalInvestigation
-  - atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVPlay
-  - atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVMonitor
-  - atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVMicrophone
-  - atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVMenu
   - atUifabricIconsLib.atUifabricIconsLibStrings.AddReaction
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ContactHeart
+  - atUifabricIconsLib.atUifabricIconsLibStrings.VisuallyImpaired
+  - atUifabricIconsLib.atUifabricIconsLibStrings.EventToDoLogo
+  - atUifabricIconsLib.atUifabricIconsLibStrings.Variable2
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ModelingView
+  - atUifabricIconsLib.atUifabricIconsLibStrings.DisconnectVirtualMachine
+  - atUifabricIconsLib.atUifabricIconsLibStrings.ReportLock
+  - atUifabricIconsLib.atUifabricIconsLibStrings.Uneditable2
+  - atUifabricIconsLib.atUifabricIconsLibStrings.Uneditable2Mirrored
+  - atUifabricIconsLib.atUifabricIconsLibStrings.BarChartVerticalEdit
+  - atUifabricIconsLib.atUifabricIconsLibStrings.GlobalNavButtonActive
+  - atUifabricIconsLib.atUifabricIconsLibStrings.PollResults
+  - atUifabricIconsLib.atUifabricIconsLibStrings.Rerun
+  - atUifabricIconsLib.atUifabricIconsLibStrings.QandA
+  - atUifabricIconsLib.atUifabricIconsLibStrings.QandAMirror
+  - atUifabricIconsLib.atUifabricIconsLibStrings.BookAnswers
   - atUifabricIconsLib.atUifabricIconsLibStrings.DecreaseIndentLegacy
   - atUifabricIconsLib.atUifabricIconsLibStrings.IncreaseIndentLegacy
   - atUifabricIconsLib.atUifabricIconsLibStrings.SizeLegacy
@@ -1780,6 +1805,8 @@ object IconNames {
   def AddReaction: atUifabricIconsLib.atUifabricIconsLibStrings.AddReaction = this.cast("AddReaction")
   @scala.inline
   def AddTo: atUifabricIconsLib.atUifabricIconsLibStrings.AddTo = this.cast("AddTo")
+  @scala.inline
+  def AddWork: atUifabricIconsLib.atUifabricIconsLibStrings.AddWork = this.cast("AddWork")
   @scala.inline
   def Admin: atUifabricIconsLib.atUifabricIconsLibStrings.Admin = this.cast("Admin")
   @scala.inline
@@ -1864,14 +1891,6 @@ object IconNames {
   def AppIconDefaultAdd: atUifabricIconsLib.atUifabricIconsLibStrings.AppIconDefaultAdd = this.cast("AppIconDefaultAdd")
   @scala.inline
   def AppIconDefaultList: atUifabricIconsLib.atUifabricIconsLibStrings.AppIconDefaultList = this.cast("AppIconDefaultList")
-  @scala.inline
-  def AppleTVMenu: atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVMenu = this.cast("AppleTVMenu")
-  @scala.inline
-  def AppleTVMicrophone: atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVMicrophone = this.cast("AppleTVMicrophone")
-  @scala.inline
-  def AppleTVMonitor: atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVMonitor = this.cast("AppleTVMonitor")
-  @scala.inline
-  def AppleTVPlay: atUifabricIconsLib.atUifabricIconsLibStrings.AppleTVPlay = this.cast("AppleTVPlay")
   @scala.inline
   def Archive: atUifabricIconsLib.atUifabricIconsLibStrings.Archive = this.cast("Archive")
   @scala.inline
@@ -1979,6 +1998,8 @@ object IconNames {
   @scala.inline
   def BarChartVertical: atUifabricIconsLib.atUifabricIconsLibStrings.BarChartVertical = this.cast("BarChartVertical")
   @scala.inline
+  def BarChartVerticalEdit: atUifabricIconsLib.atUifabricIconsLibStrings.BarChartVerticalEdit = this.cast("BarChartVerticalEdit")
+  @scala.inline
   def BarChartVerticalFill: atUifabricIconsLib.atUifabricIconsLibStrings.BarChartVerticalFill = this.cast("BarChartVerticalFill")
   @scala.inline
   def BarChartVerticalFilter: atUifabricIconsLib.atUifabricIconsLibStrings.BarChartVerticalFilter = this.cast("BarChartVerticalFilter")
@@ -2022,6 +2043,8 @@ object IconNames {
   def Boards: atUifabricIconsLib.atUifabricIconsLibStrings.Boards = this.cast("Boards")
   @scala.inline
   def Bold: atUifabricIconsLib.atUifabricIconsLibStrings.Bold = this.cast("Bold")
+  @scala.inline
+  def BookAnswers: atUifabricIconsLib.atUifabricIconsLibStrings.BookAnswers = this.cast("BookAnswers")
   @scala.inline
   def BookingsLogo: atUifabricIconsLib.atUifabricIconsLibStrings.BookingsLogo = this.cast("BookingsLogo")
   @scala.inline
@@ -2188,6 +2211,8 @@ object IconNames {
   def CalendarWeek: atUifabricIconsLib.atUifabricIconsLibStrings.CalendarWeek = this.cast("CalendarWeek")
   @scala.inline
   def CalendarWorkWeek: atUifabricIconsLib.atUifabricIconsLibStrings.CalendarWorkWeek = this.cast("CalendarWorkWeek")
+  @scala.inline
+  def Calories: atUifabricIconsLib.atUifabricIconsLibStrings.Calories = this.cast("Calories")
   @scala.inline
   def CaloriesAdd: atUifabricIconsLib.atUifabricIconsLibStrings.CaloriesAdd = this.cast("CaloriesAdd")
   @scala.inline
@@ -2409,6 +2434,10 @@ object IconNames {
   @scala.inline
   def ClearNight: atUifabricIconsLib.atUifabricIconsLibStrings.ClearNight = this.cast("ClearNight")
   @scala.inline
+  def ClearSelection: atUifabricIconsLib.atUifabricIconsLibStrings.ClearSelection = this.cast("ClearSelection")
+  @scala.inline
+  def ClearSelectionMirrored: atUifabricIconsLib.atUifabricIconsLibStrings.ClearSelectionMirrored = this.cast("ClearSelectionMirrored")
+  @scala.inline
   def ClipboardList: atUifabricIconsLib.atUifabricIconsLibStrings.ClipboardList = this.cast("ClipboardList")
   @scala.inline
   def ClipboardListMirrored: atUifabricIconsLib.atUifabricIconsLibStrings.ClipboardListMirrored = this.cast("ClipboardListMirrored")
@@ -2513,6 +2542,8 @@ object IconNames {
   @scala.inline
   def ConnectContacts: atUifabricIconsLib.atUifabricIconsLibStrings.ConnectContacts = this.cast("ConnectContacts")
   @scala.inline
+  def ConnectVirtualMachine: atUifabricIconsLib.atUifabricIconsLibStrings.ConnectVirtualMachine = this.cast("ConnectVirtualMachine")
+  @scala.inline
   def ConstructionCone: atUifabricIconsLib.atUifabricIconsLibStrings.ConstructionCone = this.cast("ConstructionCone")
   @scala.inline
   def ConstructionConeSolid: atUifabricIconsLib.atUifabricIconsLibStrings.ConstructionConeSolid = this.cast("ConstructionConeSolid")
@@ -2524,6 +2555,8 @@ object IconNames {
   def ContactCardSettings: atUifabricIconsLib.atUifabricIconsLibStrings.ContactCardSettings = this.cast("ContactCardSettings")
   @scala.inline
   def ContactCardSettingsMirrored: atUifabricIconsLib.atUifabricIconsLibStrings.ContactCardSettingsMirrored = this.cast("ContactCardSettingsMirrored")
+  @scala.inline
+  def ContactHeart: atUifabricIconsLib.atUifabricIconsLibStrings.ContactHeart = this.cast("ContactHeart")
   @scala.inline
   def ContactInfo: atUifabricIconsLib.atUifabricIconsLibStrings.ContactInfo = this.cast("ContactInfo")
   @scala.inline
@@ -2550,6 +2583,8 @@ object IconNames {
   def Crown: atUifabricIconsLib.atUifabricIconsLibStrings.Crown = this.cast("Crown")
   @scala.inline
   def CrownSolid: atUifabricIconsLib.atUifabricIconsLibStrings.CrownSolid = this.cast("CrownSolid")
+  @scala.inline
+  def CubeShape: atUifabricIconsLib.atUifabricIconsLibStrings.CubeShape = this.cast("CubeShape")
   @scala.inline
   def CustomList: atUifabricIconsLib.atUifabricIconsLibStrings.CustomList = this.cast("CustomList")
   @scala.inline
@@ -2672,6 +2707,8 @@ object IconNames {
   def DiffSideBySide: atUifabricIconsLib.atUifabricIconsLibStrings.DiffSideBySide = this.cast("DiffSideBySide")
   @scala.inline
   def DisableUpdates: atUifabricIconsLib.atUifabricIconsLibStrings.DisableUpdates = this.cast("DisableUpdates")
+  @scala.inline
+  def DisconnectVirtualMachine: atUifabricIconsLib.atUifabricIconsLibStrings.DisconnectVirtualMachine = this.cast("DisconnectVirtualMachine")
   @scala.inline
   def Dislike: atUifabricIconsLib.atUifabricIconsLibStrings.Dislike = this.cast("Dislike")
   @scala.inline
@@ -2854,6 +2891,8 @@ object IconNames {
   def EventTentative: atUifabricIconsLib.atUifabricIconsLibStrings.EventTentative = this.cast("EventTentative")
   @scala.inline
   def EventTentativeMirrored: atUifabricIconsLib.atUifabricIconsLibStrings.EventTentativeMirrored = this.cast("EventTentativeMirrored")
+  @scala.inline
+  def EventToDoLogo: atUifabricIconsLib.atUifabricIconsLibStrings.EventToDoLogo = this.cast("EventToDoLogo")
   @scala.inline
   def ExcelDocument: atUifabricIconsLib.atUifabricIconsLibStrings.ExcelDocument = this.cast("ExcelDocument")
   @scala.inline
@@ -3167,6 +3206,8 @@ object IconNames {
   @scala.inline
   def GlobalNavButton: atUifabricIconsLib.atUifabricIconsLibStrings.GlobalNavButton = this.cast("GlobalNavButton")
   @scala.inline
+  def GlobalNavButtonActive: atUifabricIconsLib.atUifabricIconsLibStrings.GlobalNavButtonActive = this.cast("GlobalNavButtonActive")
+  @scala.inline
   def Globe: atUifabricIconsLib.atUifabricIconsLibStrings.Globe = this.cast("Globe")
   @scala.inline
   def Globe2: atUifabricIconsLib.atUifabricIconsLibStrings.Globe2 = this.cast("Globe2")
@@ -3196,6 +3237,8 @@ object IconNames {
   def GripperTool: atUifabricIconsLib.atUifabricIconsLibStrings.GripperTool = this.cast("GripperTool")
   @scala.inline
   def Group: atUifabricIconsLib.atUifabricIconsLibStrings.Group = this.cast("Group")
+  @scala.inline
+  def GroupList: atUifabricIconsLib.atUifabricIconsLibStrings.GroupList = this.cast("GroupList")
   @scala.inline
   def GroupObject: atUifabricIconsLib.atUifabricIconsLibStrings.GroupObject = this.cast("GroupObject")
   @scala.inline
@@ -3593,6 +3636,8 @@ object IconNames {
   @scala.inline
   def MobileSelected: atUifabricIconsLib.atUifabricIconsLibStrings.MobileSelected = this.cast("MobileSelected")
   @scala.inline
+  def ModelingView: atUifabricIconsLib.atUifabricIconsLibStrings.ModelingView = this.cast("ModelingView")
+  @scala.inline
   def Money: atUifabricIconsLib.atUifabricIconsLibStrings.Money = this.cast("Money")
   @scala.inline
   def More: atUifabricIconsLib.atUifabricIconsLibStrings.More = this.cast("More")
@@ -3947,6 +3992,8 @@ object IconNames {
   @scala.inline
   def PinnedFill: atUifabricIconsLib.atUifabricIconsLibStrings.PinnedFill = this.cast("PinnedFill")
   @scala.inline
+  def PinnedSolid: atUifabricIconsLib.atUifabricIconsLibStrings.PinnedSolid = this.cast("PinnedSolid")
+  @scala.inline
   def PivotChart: atUifabricIconsLib.atUifabricIconsLibStrings.PivotChart = this.cast("PivotChart")
   @scala.inline
   def PlainText: atUifabricIconsLib.atUifabricIconsLibStrings.PlainText = this.cast("PlainText")
@@ -3959,6 +4006,8 @@ object IconNames {
   @scala.inline
   def PlayResume: atUifabricIconsLib.atUifabricIconsLibStrings.PlayResume = this.cast("PlayResume")
   @scala.inline
+  def PlaybackRate1x: atUifabricIconsLib.atUifabricIconsLibStrings.PlaybackRate1x = this.cast("PlaybackRate1x")
+  @scala.inline
   def PlayerSettings: atUifabricIconsLib.atUifabricIconsLibStrings.PlayerSettings = this.cast("PlayerSettings")
   @scala.inline
   def Plug: atUifabricIconsLib.atUifabricIconsLibStrings.Plug = this.cast("Plug")
@@ -3968,6 +4017,8 @@ object IconNames {
   def PlugDisconnected: atUifabricIconsLib.atUifabricIconsLibStrings.PlugDisconnected = this.cast("PlugDisconnected")
   @scala.inline
   def PlugSolid: atUifabricIconsLib.atUifabricIconsLibStrings.PlugSolid = this.cast("PlugSolid")
+  @scala.inline
+  def PollResults: atUifabricIconsLib.atUifabricIconsLibStrings.PollResults = this.cast("PollResults")
   @scala.inline
   def PostUpdate: atUifabricIconsLib.atUifabricIconsLibStrings.PostUpdate = this.cast("PostUpdate")
   @scala.inline
@@ -4090,6 +4141,10 @@ object IconNames {
   def PythonLanguage: atUifabricIconsLib.atUifabricIconsLibStrings.PythonLanguage = this.cast("PythonLanguage")
   @scala.inline
   def QRCode: atUifabricIconsLib.atUifabricIconsLibStrings.QRCode = this.cast("QRCode")
+  @scala.inline
+  def QandA: atUifabricIconsLib.atUifabricIconsLibStrings.QandA = this.cast("QandA")
+  @scala.inline
+  def QandAMirror: atUifabricIconsLib.atUifabricIconsLibStrings.QandAMirror = this.cast("QandAMirror")
   @scala.inline
   def QuadColumn: atUifabricIconsLib.atUifabricIconsLibStrings.QuadColumn = this.cast("QuadColumn")
   @scala.inline
@@ -4245,6 +4300,10 @@ object IconNames {
   @scala.inline
   def ReportLibraryMirrored: atUifabricIconsLib.atUifabricIconsLibStrings.ReportLibraryMirrored = this.cast("ReportLibraryMirrored")
   @scala.inline
+  def ReportLock: atUifabricIconsLib.atUifabricIconsLibStrings.ReportLock = this.cast("ReportLock")
+  @scala.inline
+  def Rerun: atUifabricIconsLib.atUifabricIconsLibStrings.Rerun = this.cast("Rerun")
+  @scala.inline
   def ReservationOrders: atUifabricIconsLib.atUifabricIconsLibStrings.ReservationOrders = this.cast("ReservationOrders")
   @scala.inline
   def ResponsesMenu: atUifabricIconsLib.atUifabricIconsLibStrings.ResponsesMenu = this.cast("ResponsesMenu")
@@ -4325,6 +4384,8 @@ object IconNames {
   @scala.inline
   def ScaleVolume: atUifabricIconsLib.atUifabricIconsLibStrings.ScaleVolume = this.cast("ScaleVolume")
   @scala.inline
+  def ScatterChart: atUifabricIconsLib.atUifabricIconsLibStrings.ScatterChart = this.cast("ScatterChart")
+  @scala.inline
   def ScheduleEventAction: atUifabricIconsLib.atUifabricIconsLibStrings.ScheduleEventAction = this.cast("ScheduleEventAction")
   @scala.inline
   def ScopeTemplate: atUifabricIconsLib.atUifabricIconsLibStrings.ScopeTemplate = this.cast("ScopeTemplate")
@@ -4342,6 +4403,8 @@ object IconNames {
   def SearchBookmark: atUifabricIconsLib.atUifabricIconsLibStrings.SearchBookmark = this.cast("SearchBookmark")
   @scala.inline
   def SearchCalendar: atUifabricIconsLib.atUifabricIconsLibStrings.SearchCalendar = this.cast("SearchCalendar")
+  @scala.inline
+  def SearchData: atUifabricIconsLib.atUifabricIconsLibStrings.SearchData = this.cast("SearchData")
   @scala.inline
   def SearchIssue: atUifabricIconsLib.atUifabricIconsLibStrings.SearchIssue = this.cast("SearchIssue")
   @scala.inline
@@ -4396,6 +4459,8 @@ object IconNames {
   def SharepointLogoInverse: atUifabricIconsLib.atUifabricIconsLibStrings.SharepointLogoInverse = this.cast("SharepointLogoInverse")
   @scala.inline
   def Shield: atUifabricIconsLib.atUifabricIconsLibStrings.Shield = this.cast("Shield")
+  @scala.inline
+  def ShieldAlert: atUifabricIconsLib.atUifabricIconsLibStrings.ShieldAlert = this.cast("ShieldAlert")
   @scala.inline
   def ShieldSolid: atUifabricIconsLib.atUifabricIconsLibStrings.ShieldSolid = this.cast("ShieldSolid")
   @scala.inline
@@ -4921,6 +4986,10 @@ object IconNames {
   @scala.inline
   def Uneditable: atUifabricIconsLib.atUifabricIconsLibStrings.Uneditable = this.cast("Uneditable")
   @scala.inline
+  def Uneditable2: atUifabricIconsLib.atUifabricIconsLibStrings.Uneditable2 = this.cast("Uneditable2")
+  @scala.inline
+  def Uneditable2Mirrored: atUifabricIconsLib.atUifabricIconsLibStrings.Uneditable2Mirrored = this.cast("Uneditable2Mirrored")
+  @scala.inline
   def UneditableMirrored: atUifabricIconsLib.atUifabricIconsLibStrings.UneditableMirrored = this.cast("UneditableMirrored")
   @scala.inline
   def UneditableSolid12: atUifabricIconsLib.atUifabricIconsLibStrings.UneditableSolid12 = this.cast("UneditableSolid12")
@@ -4986,6 +5055,8 @@ object IconNames {
   def Vacation: atUifabricIconsLib.atUifabricIconsLibStrings.Vacation = this.cast("Vacation")
   @scala.inline
   def Variable: atUifabricIconsLib.atUifabricIconsLibStrings.Variable = this.cast("Variable")
+  @scala.inline
+  def Variable2: atUifabricIconsLib.atUifabricIconsLibStrings.Variable2 = this.cast("Variable2")
   @scala.inline
   def VariableGroup: atUifabricIconsLib.atUifabricIconsLibStrings.VariableGroup = this.cast("VariableGroup")
   @scala.inline
@@ -5055,6 +5126,8 @@ object IconNames {
   @scala.inline
   def VisualStudioLogo: atUifabricIconsLib.atUifabricIconsLibStrings.VisualStudioLogo = this.cast("VisualStudioLogo")
   @scala.inline
+  def VisuallyImpaired: atUifabricIconsLib.atUifabricIconsLibStrings.VisuallyImpaired = this.cast("VisuallyImpaired")
+  @scala.inline
   def VisualsFolder: atUifabricIconsLib.atUifabricIconsLibStrings.VisualsFolder = this.cast("VisualsFolder")
   @scala.inline
   def VisualsStore: atUifabricIconsLib.atUifabricIconsLibStrings.VisualsStore = this.cast("VisualsStore")
@@ -5100,6 +5173,8 @@ object IconNames {
   def Website: atUifabricIconsLib.atUifabricIconsLibStrings.Website = this.cast("Website")
   @scala.inline
   def Weights: atUifabricIconsLib.atUifabricIconsLibStrings.Weights = this.cast("Weights")
+  @scala.inline
+  def Wheelchair: atUifabricIconsLib.atUifabricIconsLibStrings.Wheelchair = this.cast("Wheelchair")
   @scala.inline
   def WhiteBoardApp16: atUifabricIconsLib.atUifabricIconsLibStrings.WhiteBoardApp16 = this.cast("WhiteBoardApp16")
   @scala.inline

@@ -17,6 +17,9 @@ object atJupyterlabCodeeditorLibStrings {
   sealed trait bounded extends js.Object
   
   @js.native
+  sealed trait codeFolding extends js.Object
+  
+  @js.native
   sealed trait fontFamily extends js.Object
   
   @js.native
@@ -47,10 +50,17 @@ object atJupyterlabCodeeditorLibStrings {
   sealed trait readOnly extends js.Object
   
   @js.native
+  sealed trait rulers extends js.Object
+  
+  @js.native
   sealed trait tabSize extends js.Object
   
   @js.native
   sealed trait top
+    extends atJupyterlabCodeeditorLib.libEditorMod.CodeEditorNs.EdgeLocation
+  
+  @js.native
+  sealed trait topLine
     extends atJupyterlabCodeeditorLib.libEditorMod.CodeEditorNs.EdgeLocation
   
   @js.native
@@ -62,6 +72,8 @@ object atJupyterlabCodeeditorLibStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def bounded: bounded = "bounded".asInstanceOf[bounded]
+  @scala.inline
+  def codeFolding: codeFolding = "codeFolding".asInstanceOf[codeFolding]
   @scala.inline
   def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
   @scala.inline
@@ -83,9 +95,13 @@ object atJupyterlabCodeeditorLibStrings {
   @scala.inline
   def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   @scala.inline
+  def rulers: rulers = "rulers".asInstanceOf[rulers]
+  @scala.inline
   def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def topLine: topLine = "topLine".asInstanceOf[topLine]
   @scala.inline
   def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
 }

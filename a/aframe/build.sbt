@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "aframe"
-version := "0.8-dt-20190328Z-2c329e"
+version := "0.8-dt-20190328Z-7c3d55"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "three" % "0.104.0-6b6362",
+  "org.scalablytyped" %%% "three" % "0.106.2-54eaa8",
   "org.scalablytyped" %%% "tween_dot_js" % "17.2-dt-20190124Z-3bfe11")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

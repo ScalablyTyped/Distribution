@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__react
 
-Typings are for version 0.0.5
+Typings are for version 0.0.6
 
 ## Library description:
 React specific wrapper for @ionic/core

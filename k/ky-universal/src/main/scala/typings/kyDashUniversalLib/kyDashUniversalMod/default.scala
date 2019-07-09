@@ -64,17 +64,17 @@ object default extends js.Object {
   @JSName("get")
   def get_body(
     url: java.lang.String,
-    options: kyLib.Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
+    options: kyLib._Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
   ): kyLib.kyMod.ResponsePromise = js.native
   @JSName("get")
   def get_body(
     url: stdLib.Request,
-    options: kyLib.Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
+    options: kyLib._Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
   ): kyLib.kyMod.ResponsePromise = js.native
   @JSName("get")
   def get_body(
     url: stdLib.URL,
-    options: kyLib.Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
+    options: kyLib._Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
   ): kyLib.kyMod.ResponsePromise = js.native
   def head(url: java.lang.String): kyLib.kyMod.ResponsePromise = js.native
   /**
@@ -87,17 +87,17 @@ object default extends js.Object {
   @JSName("head")
   def head_body(
     url: java.lang.String,
-    options: kyLib.Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
+    options: kyLib._Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
   ): kyLib.kyMod.ResponsePromise = js.native
   @JSName("head")
   def head_body(
     url: stdLib.Request,
-    options: kyLib.Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
+    options: kyLib._Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
   ): kyLib.kyMod.ResponsePromise = js.native
   @JSName("head")
   def head_body(
     url: stdLib.URL,
-    options: kyLib.Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
+    options: kyLib._Omit[kyLib.kyMod.Options, kyDashUniversalLib.kyDashUniversalLibStrings.body]
   ): kyLib.kyMod.ResponsePromise = js.native
   def patch(url: java.lang.String): kyLib.kyMod.ResponsePromise = js.native
   def patch(url: java.lang.String, options: kyLib.kyMod.Options): kyLib.kyMod.ResponsePromise = js.native

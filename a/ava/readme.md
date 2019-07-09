@@ -1,7 +1,7 @@
 
 # Scala.js typings for ava
 
-Typings are for version 1.4.1
+Typings are for version 2.2.0
 
 ## Library description:
 Testing can be a drag. AVA helps you get it done.

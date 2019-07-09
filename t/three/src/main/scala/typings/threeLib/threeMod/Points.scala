@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Points")
 @js.native
 /**
-  * @param geometry An instance of Geometry or BufferGeometry.
-  * @param material An instance of Material (optional).
-  */
+	 * @param geometry An instance of Geometry or BufferGeometry.
+	 * @param material An instance of Material (optional).
+	 */
 class Points ()
   extends threeLib.srcObjectsPointsMod.Points {
   def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry) = this()

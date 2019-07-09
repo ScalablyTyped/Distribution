@@ -8,22 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("del", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: delLib.Anon_Default = js.native
   /**
-  	Delete files and folders using glob patterns.
-  	@param patterns - See supported minimatch [patterns](https://github.com/isaacs/minimatch#usage).
+  	Delete files and directories using glob patterns.
+  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
   	- [Pattern examples with expected matches](https://github.com/sindresorhus/multimatch/blob/master/test/test.js)
   	- [Quick globbing pattern overview](https://github.com/sindresorhus/multimatch#globbing-patterns)
-  	@param options - See the [`glob` options](https://github.com/isaacs/node-glob#options).
-  	@returns A promise for an array of deleted paths.
+  	@param options - You can specify any of the [`globby` options](https://github.com/sindresorhus/globby#options) in addition to the `del` options. In constrast to the `globby` defaults, `expandDirectories`, `onlyFiles`, and `followSymbolicLinks` are `false` by default.
+  	@returns The deleted paths.
   	@example
   	```
   	import del = require('del');
   	(async () => {
-  		const deletedPaths = await del(['tmp/ *.js', '!tmp/unicorn.js']);
-  		console.log('Deleted files and folders:\n', deletedPaths.join('\n'));
+  		const deletedPaths = await del(['temp/ *.js', '!temp/unicorn.js']);
+  		console.log('Deleted files and directories:\n', deletedPaths.join('\n'));
   	})();
   	```
   	*/
@@ -32,33 +29,12 @@ object ^ extends js.Object {
   def apply(patterns: js.Array[java.lang.String]): js.Promise[js.Array[java.lang.String]] = js.native
   def apply(patterns: js.Array[java.lang.String], options: Options): js.Promise[js.Array[java.lang.String]] = js.native
   /**
-  	Delete files and folders using glob patterns.
-  	@param patterns - See supported minimatch [patterns](https://github.com/isaacs/minimatch#usage).
+  	Synchronously delete files and directories using glob patterns.
+  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
   	- [Pattern examples with expected matches](https://github.com/sindresorhus/multimatch/blob/master/test/test.js)
   	- [Quick globbing pattern overview](https://github.com/sindresorhus/multimatch#globbing-patterns)
-  	@param options - See the [`glob` options](https://github.com/isaacs/node-glob#options).
-  	@returns A promise for an array of deleted paths.
-  	@example
-  	```
-  	import del = require('del');
-  	(async () => {
-  		const deletedPaths = await del(['tmp/ *.js', '!tmp/unicorn.js']);
-  		console.log('Deleted files and folders:\n', deletedPaths.join('\n'));
-  	})();
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default(patterns: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  def default(patterns: java.lang.String, options: Options): js.Promise[js.Array[java.lang.String]] = js.native
-  def default(patterns: js.Array[java.lang.String]): js.Promise[js.Array[java.lang.String]] = js.native
-  def default(patterns: js.Array[java.lang.String], options: Options): js.Promise[js.Array[java.lang.String]] = js.native
-  /**
-  	Synchronously delete files and folders using glob patterns.
-  	@param patterns - See supported minimatch [patterns](https://github.com/isaacs/minimatch#usage).
-  	- [Pattern examples with expected matches](https://github.com/sindresorhus/multimatch/blob/master/test/test.js)
-  	- [Quick globbing pattern overview](https://github.com/sindresorhus/multimatch#globbing-patterns)
-  	@param options - See the [`glob` options](https://github.com/isaacs/node-glob#options).
-  	@returns An array of deleted paths.
+  	@param options - You can specify any of the [`globby` options](https://github.com/sindresorhus/globby#options) in addition to the `del` options. In constrast to the `globby` defaults, `expandDirectories`, `onlyFiles`, and `followSymbolicLinks` are `false` by default.
+  	@returns The deleted paths.
   	*/
   def sync(patterns: java.lang.String): js.Array[java.lang.String] = js.native
   def sync(patterns: java.lang.String, options: Options): js.Array[java.lang.String] = js.native

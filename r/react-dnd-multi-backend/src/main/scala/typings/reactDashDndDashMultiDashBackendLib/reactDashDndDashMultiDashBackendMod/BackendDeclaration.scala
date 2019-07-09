@@ -9,7 +9,7 @@ trait BackendDeclaration extends js.Object {
   /**
     * Backend - e.g. the one provided by react-dnd-html5-backend.
     */
-  var backend: dndDashCoreLib.libCjsInterfacesMod.BackendFactory
+  var backend: dndDashCoreLib.libInterfacesMod.BackendFactory
   /**
     * Flag to indicate that this backend needs to have a custom preview generated. This is mainly
     * used for backends such as the react-dnd-touch-backend, where there is no default preview
@@ -25,7 +25,7 @@ trait BackendDeclaration extends js.Object {
 object BackendDeclaration {
   @scala.inline
   def apply(
-    backend: dndDashCoreLib.libCjsInterfacesMod.BackendFactory,
+    backend: dndDashCoreLib.libInterfacesMod.BackendFactory,
     preview: js.UndefOr[scala.Boolean] = js.undefined,
     transition: Transition = null
   ): BackendDeclaration = {

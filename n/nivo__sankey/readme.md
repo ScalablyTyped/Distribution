@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__sankey
 
-Typings are for version 0.58.0
+Typings are for version 0.59.1
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/sankey.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/sankey)

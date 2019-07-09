@@ -62,6 +62,11 @@ object schedulingNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.schedulingV1PriorityClassMod.PriorityClass = js.native
+      /**
+        * Returns true if the given object is an instance of PriorityClass.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1/PriorityClass.PriorityClass */ scala.Boolean = js.native
     }
     
     /* static members */
@@ -85,6 +90,11 @@ object schedulingNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.schedulingV1PriorityClassListMod.PriorityClassList = js.native
+      /**
+        * Returns true if the given object is an instance of PriorityClassList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1/PriorityClassList.PriorityClassList */ scala.Boolean = js.native
     }
     
   }
@@ -143,6 +153,11 @@ object schedulingNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.schedulingV1alpha1PriorityClassMod.PriorityClass = js.native
+      /**
+        * Returns true if the given object is an instance of PriorityClass.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1alpha1/PriorityClass.PriorityClass */ scala.Boolean = js.native
     }
     
     /* static members */
@@ -166,6 +181,11 @@ object schedulingNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.schedulingV1alpha1PriorityClassListMod.PriorityClassList = js.native
+      /**
+        * Returns true if the given object is an instance of PriorityClassList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1alpha1/PriorityClassList.PriorityClassList */ scala.Boolean = js.native
     }
     
   }
@@ -224,6 +244,11 @@ object schedulingNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.schedulingV1beta1PriorityClassMod.PriorityClass = js.native
+      /**
+        * Returns true if the given object is an instance of PriorityClass.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/PriorityClass.PriorityClass */ scala.Boolean = js.native
     }
     
     /* static members */
@@ -247,6 +272,11 @@ object schedulingNs extends js.Object {
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.schedulingV1beta1PriorityClassListMod.PriorityClassList = js.native
+      /**
+        * Returns true if the given object is an instance of PriorityClassList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/PriorityClassList.PriorityClassList */ scala.Boolean = js.native
     }
     
   }

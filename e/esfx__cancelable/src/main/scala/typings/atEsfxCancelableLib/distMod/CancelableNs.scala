@@ -16,12 +16,18 @@ object CancelableNs extends js.Object {
     * A `Cancelable` that is already signaled.
     */
   val canceled: atEsfxCancelableLib.distMod.CancelableCancelSignal = js.native
+  val name: atEsfxCancelableLib.atEsfxCancelableLibStrings.Cancelable = js.native
   /**
     * A `Cancelable` that can never be signaled.
     */
   val none: atEsfxCancelableLib.distMod.CancelableCancelSignal = js.native
   /**
     * Determines whether a value is a `Cancelable` object.
+    */
+  def hasInstance(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ scala.Boolean = js.native
+  /**
+    * Determines whether a value is a `Cancelable` object.
+    * @deprecated Use `Cancelable.hasInstance` instead.
     */
   def isCancelable(value: js.Any): /* is @esfx/cancelable.@esfx/cancelable/dist.Cancelable */ scala.Boolean = js.native
   def isSignaled(): scala.Boolean = js.native

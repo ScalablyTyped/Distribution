@@ -39,8 +39,7 @@ object linkToolsNs extends js.Object {
   }
   
   @js.native
-  class Remove ()
-    extends jointjsLib.jointjsMod.diaNs.ToolView
+  class Remove () extends Button
   
   @js.native
   class Segments ()
@@ -124,6 +123,7 @@ object linkToolsNs extends js.Object {
       var anchor: js.UndefOr[
             jointjsLib.jointjsMod.linkToolsNs.AnchorCallback[jointjsLib.jointjsMod.anchorsNs.AnchorJSON]
           ] = js.undefined
+      var handleClass: js.UndefOr[js.Any] = js.undefined
       var redundancyRemoval: js.UndefOr[scala.Boolean] = js.undefined
       var segmentLengthThreshold: js.UndefOr[scala.Double] = js.undefined
       var snapHandle: js.UndefOr[scala.Boolean] = js.undefined
@@ -137,8 +137,10 @@ object linkToolsNs extends js.Object {
   object VerticesNs extends js.Object {
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
+      var handleClass: js.UndefOr[js.Any] = js.undefined
       var redundancyRemoval: js.UndefOr[scala.Boolean] = js.undefined
       var snapRadius: js.UndefOr[scala.Double] = js.undefined
+      var stopPropagation: js.UndefOr[scala.Boolean] = js.undefined
       var vertexAdding: js.UndefOr[scala.Boolean] = js.undefined
     }
     

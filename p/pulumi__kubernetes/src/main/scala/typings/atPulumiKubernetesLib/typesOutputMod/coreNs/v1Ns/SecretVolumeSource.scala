@@ -30,7 +30,7 @@ trait SecretVolumeSource extends js.Object {
     */
   val items: js.Array[KeyToPath]
   /**
-    * Specify whether the Secret or it's keys must be defined
+    * Specify whether the Secret or its keys must be defined
     */
   val optional: scala.Boolean
   /**

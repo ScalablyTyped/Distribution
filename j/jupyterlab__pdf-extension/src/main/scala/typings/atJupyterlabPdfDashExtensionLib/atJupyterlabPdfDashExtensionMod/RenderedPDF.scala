@@ -9,6 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class RenderedPDF ()
   extends atJupyterlabRendermimeDashInterfacesLib.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IRenderer {
-  var _objectUrl: js.Any = js.native
+  var _base64: js.Any = js.native
+  var _disposable: js.Any = js.native
+  var _object: js.Any = js.native
+  var _ready: js.Any = js.native
+  /**
+    * Handle a `before-hide` message.
+    */
+  /* protected */ def onBeforeHide(): scala.Unit = js.native
 }
 

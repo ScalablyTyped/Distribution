@@ -149,6 +149,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1ClusterRoleMod.ClusterRole = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterRole.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/ClusterRole.ClusterRole */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -172,6 +177,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1ClusterRoleBindingMod.ClusterRoleBinding = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterRoleBinding.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/ClusterRoleBinding.ClusterRoleBinding */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -195,6 +205,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterRoleBindingList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/ClusterRoleBindingList.ClusterRoleBindingList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -218,6 +233,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1ClusterRoleListMod.ClusterRoleList = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterRoleList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/ClusterRoleList.ClusterRoleList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -241,6 +261,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1RoleMod.Role = js.native
+    /**
+      * Returns true if the given object is an instance of Role.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/Role.Role */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -264,6 +289,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1RoleBindingMod.RoleBinding = js.native
+    /**
+      * Returns true if the given object is an instance of RoleBinding.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/RoleBinding.RoleBinding */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -287,6 +317,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1RoleBindingListMod.RoleBindingList = js.native
+    /**
+      * Returns true if the given object is an instance of RoleBindingList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/RoleBindingList.RoleBindingList */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -310,6 +345,11 @@ object v1Ns extends js.Object {
       id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiKubernetesLib.rbacV1RoleListMod.RoleList = js.native
+    /**
+      * Returns true if the given object is an instance of RoleList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/RoleList.RoleList */ scala.Boolean = js.native
   }
   
 }

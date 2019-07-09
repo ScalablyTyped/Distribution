@@ -43,5 +43,10 @@ object VolumeAttachmentList extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.storageV1alpha1VolumeAttachmentListMod.VolumeAttachmentList = js.native
+  /**
+    * Returns true if the given object is an instance of VolumeAttachmentList.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/VolumeAttachmentList.VolumeAttachmentList */ scala.Boolean = js.native
 }
 

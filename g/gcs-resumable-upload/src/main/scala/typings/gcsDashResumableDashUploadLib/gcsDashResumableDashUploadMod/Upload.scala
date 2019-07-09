@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation._
 class Upload protected ()
   extends pumpifyLib.pumpifyMod.^ {
   def this(cfg: UploadConfig) = this()
+  var apiEndpoint: java.lang.String = js.native
   var authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = js.native
   var authConfig: js.UndefOr[gcsDashResumableDashUploadLib.Anon_Scopes] = js.native
+  val baseURI: js.Any = js.native
   var bucket: java.lang.String = js.native
   var bufferStream: js.UndefOr[js.Any] = js.native
   var configStore: configstoreLib.configstoreMod.^ = js.native

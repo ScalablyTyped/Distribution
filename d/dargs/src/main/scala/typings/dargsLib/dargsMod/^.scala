@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /**
   Reverse [`minimist`](https://github.com/substack/minimist). Convert an object of options into an array of command-line arguments.
-  @param input - Object to convert to command-line arguments.
+  @param object - Object to convert to command-line arguments.
   @example
   ```
   import dargs = require('dargs');
@@ -68,7 +68,7 @@ object ^ extends js.Object {
   // ]
   ```
   */
-  def apply(input: dargsLib.Anon_): js.Array[java.lang.String] = js.native
-  def apply(input: dargsLib.Anon_, options: Options): js.Array[java.lang.String] = js.native
+  def apply(`object`: dargsLib.Anon_): js.Array[java.lang.String] = js.native
+  def apply(`object`: dargsLib.Anon_, options: Options): js.Array[java.lang.String] = js.native
 }
 

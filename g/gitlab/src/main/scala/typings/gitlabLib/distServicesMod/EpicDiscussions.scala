@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EpicDiscussions protected ()
   extends gitlabLib.distServicesEpicDiscussionsMod.default {
-  def this(options: gitlabLib.BaseServiceOptions) = this()
+  def this(options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

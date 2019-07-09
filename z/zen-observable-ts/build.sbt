@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zen-observable-ts"
-version := "0.8.18-974c80"
+version := "0.8.19-974c80"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

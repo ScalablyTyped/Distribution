@@ -35,6 +35,7 @@ trait Store[S, A /* <: Action[_] */] extends js.Object {
     */
   @JSName("dispatch")
   var dispatch_Original: Dispatch[A] = js.native
+  def apply(): Observable[S] = js.native
   /**
     * Dispatches an action. It is the only way to trigger a state change.
     *
@@ -77,7 +78,7 @@ trait Store[S, A /* <: Action[_] */] extends js.Object {
     *
     * @param nextReducer The reducer for the store to use instead.
     */
-  def replaceReducer(nextReducer: Reducer[S, A]): scala.Unit = js.native
+  def replaceReducer(nextReducer: Reducer[S, A]): /* import warning: ImportType.apply Failed type conversion: void[any] */ js.Any = js.native
   /**
     * Adds a change listener. It will be called any time an action is
     * dispatched, and some part of the state tree may potentially have changed.

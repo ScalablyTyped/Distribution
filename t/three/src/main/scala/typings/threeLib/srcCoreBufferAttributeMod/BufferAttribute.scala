@@ -15,8 +15,8 @@ class BufferAttribute protected () extends js.Object {
   var dynamic: scala.Boolean = js.native
   var itemSize: scala.Double = js.native
   /**
-    * @deprecated Use {@link BufferAttribute#count .count} instead.
-    */
+  	 * @deprecated Use {@link BufferAttribute#count .count} instead.
+  	 */
   var length: scala.Double = js.native
   var needsUpdate: scala.Boolean = js.native
   var normalized: scala.Boolean = js.native

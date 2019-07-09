@@ -18,7 +18,7 @@ class MeshMatcapMaterial ()
   var displacementMap: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
   var displacementScale: scala.Double = js.native
   var map: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
-  var matMap: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
+  var matcap: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
   var morphNormals: scala.Boolean = js.native
   var morphTargets: scala.Boolean = js.native
   var normalMap: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native

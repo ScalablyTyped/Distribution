@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserCustomAttributes protected ()
   extends gitlabLib.distServicesUserCustomAttributesMod.default {
-  def this(options: gitlabLib.BaseServiceOptions) = this()
+  def this(options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

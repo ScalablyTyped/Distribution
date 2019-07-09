@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinon-test
 
-Typings are for version 1.0
+Typings are for version 2.4
 
 ## Library description:
 > Automatic sandbox setup and teardown for SinonJS
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for sinon-test 1.0
+// Type definitions for sinon-test 2.4
 // Project: https://github.com/sinonjs/sinon-test
 // Definitions by: Francis Saul <https://github.com/mummybot>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

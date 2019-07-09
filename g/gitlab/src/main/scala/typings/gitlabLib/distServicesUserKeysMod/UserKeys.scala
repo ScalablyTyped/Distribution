@@ -8,17 +8,30 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UserKeys
   extends gitlabLib.distInfrastructureMod.BaseService {
-  def all(): js.Promise[gitlabLib.GetResponse] = js.native
-  def all(hasUserIdOptions: gitlabLib.Anon_UserId with gitlabLib.PaginatedRequestOptions): js.Promise[gitlabLib.GetResponse] = js.native
+  def all(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(
+    hasUserIdOptions: gitlabLib.Anon_UserId with gitlabLib.distInfrastructureMod.PaginatedRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def create(title: js.Any, key: js.Any): js.Promise[js.Object] = js.native
   def create(
     title: js.Any,
     key: js.Any,
-    hasUserIdOptions: gitlabLib.Anon_UserId with gitlabLib.BaseRequestOptions
+    hasUserIdOptions: gitlabLib.Anon_UserId with gitlabLib.distInfrastructureMod.BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def remove(keyId: js.Any): js.Promise[js.Object] = js.native
-  def remove(keyId: js.Any, hasUserIdOptions: gitlabLib.Anon_UserId with gitlabLib.BaseRequestOptions): js.Promise[js.Object] = js.native
-  def show(keyId: js.Any): js.Promise[gitlabLib.GetResponse] = js.native
-  def show(keyId: js.Any, options: gitlabLib.BaseRequestOptions): js.Promise[gitlabLib.GetResponse] = js.native
+  def remove(
+    keyId: js.Any,
+    hasUserIdOptions: gitlabLib.Anon_UserId with gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
+  def show(keyId: js.Any): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def show(keyId: js.Any, options: gitlabLib.distInfrastructureMod.BaseRequestOptions): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

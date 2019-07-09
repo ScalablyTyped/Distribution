@@ -33,7 +33,7 @@ trait TracerOptions extends js.Object {
     * Experimental features can be enabled all at once by using true or individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[js.Object | scala.Boolean] = js.undefined
+  var experimental: js.UndefOr[scala.Boolean | ddDashTraceLib.Anon_B3] = js.undefined
   /**
     * The address of the trace agent that the tracer will submit to.
     * @default 'localhost'
@@ -72,6 +72,14 @@ trait TracerOptions extends js.Object {
     */
   var sampleRate: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Specifies which scope implementation to use. The default is to use the best
+    * implementation for the runtime. Only change this if you know what you are
+    * doing.
+    */
+  var scope: js.UndefOr[
+    ddDashTraceLib.ddDashTraceLibStrings.async_hooks | ddDashTraceLib.ddDashTraceLibStrings.`async-listener` | ddDashTraceLib.ddDashTraceLibStrings.noop
+  ] = js.undefined
+  /**
     * The service name to be used for this program. If not set, the service name
     * will attempted to be inferred from package.json
     */
@@ -95,7 +103,7 @@ object TracerOptions {
     dogstatsd: ddDashTraceLib.Anon_Port = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     env: java.lang.String = null,
-    experimental: js.Object | scala.Boolean = null,
+    experimental: scala.Boolean | ddDashTraceLib.Anon_B3 = null,
     hostname: java.lang.String = null,
     logInjection: js.UndefOr[scala.Boolean] = js.undefined,
     logger: ddDashTraceLib.Anon_Debug = null,
@@ -103,6 +111,7 @@ object TracerOptions {
     port: scala.Double | java.lang.String = null,
     runtimeMetrics: js.UndefOr[scala.Boolean] = js.undefined,
     sampleRate: scala.Int | scala.Double = null,
+    scope: ddDashTraceLib.ddDashTraceLibStrings.async_hooks | ddDashTraceLib.ddDashTraceLibStrings.`async-listener` | ddDashTraceLib.ddDashTraceLibStrings.noop = null,
     service: java.lang.String = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     url: java.lang.String = null
@@ -121,6 +130,7 @@ object TracerOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(runtimeMetrics)) __obj.updateDynamic("runtimeMetrics")(runtimeMetrics)
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (url != null) __obj.updateDynamic("url")(url)

@@ -18,6 +18,10 @@ class SplitLayout protected ()
   var _alignment: js.Any = js.native
   var _box: js.Any = js.native
   var _dirty: js.Any = js.native
+  /**
+    * Fit the layout to the total size required by the widgets.
+    */
+  var _fit: js.Any = js.native
   var _fixed: js.Any = js.native
   var _handles: js.Any = js.native
   var _hasNormedSizes: js.Any = js.native
@@ -25,6 +29,12 @@ class SplitLayout protected ()
   var _orientation: js.Any = js.native
   var _sizers: js.Any = js.native
   var _spacing: js.Any = js.native
+  /**
+    * Update the layout position and size of the widgets.
+    *
+    * The parent offset dimensions should be `-1` if unknown.
+    */
+  var _update: js.Any = js.native
   /**
     * Get the content alignment for the split layout.
     *
@@ -66,16 +76,6 @@ class SplitLayout protected ()
     * Set the inter-element spacing for the split layout.
     */
   var spacing: scala.Double = js.native
-  /**
-    * Fit the layout to the total size required by the widgets.
-    */
-  /* private */ def _fit(): js.Any = js.native
-  /**
-    * Update the layout position and size of the widgets.
-    *
-    * The parent offset dimensions should be `-1` if unknown.
-    */
-  /* private */ def _update(offsetWidth: js.Any, offsetHeight: js.Any): js.Any = js.native
   /**
     * Move the offset position of a split handle.
     *

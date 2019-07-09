@@ -19,7 +19,6 @@ class ClusterRole protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRole) = this()
   def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRole, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val __inputs: js.Any = js.native
   /**
     * AggregationRule is an optional field that describes how to build the Rules for this
     * ClusterRole. If AggregationRule is set, then the Rules are controller managed and direct
@@ -50,7 +49,6 @@ class ClusterRole protected ()
     * Rules holds all the PolicyRules for this ClusterRole
     */
   val rules: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.rbacNs.v1beta1Ns.PolicyRule]] = js.native
-  def getInputs(): atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRole = js.native
 }
 
 /* static members */
@@ -75,5 +73,10 @@ object ClusterRole extends js.Object {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiKubernetesLib.rbacV1beta1ClusterRoleMod.ClusterRole = js.native
+  /**
+    * Returns true if the given object is an instance of ClusterRole.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/ClusterRole.ClusterRole */ scala.Boolean = js.native
 }
 

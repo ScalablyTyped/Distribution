@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss"
-version := "6.0.23-f59165"
+version := "7.0.17-654401"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

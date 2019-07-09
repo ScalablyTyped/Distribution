@@ -20,6 +20,8 @@ trait Processor extends _AcceptedPlugin {
     * Contains the current version of PostCSS (e.g., "4.0.5").
     */
   var version: java.lang.String = js.native
+  def process(css: LazyResult): LazyResult = js.native
+  def process(css: LazyResult, options: ProcessOptions): LazyResult = js.native
   /**
     * Parses source CSS. Because some plugins can be asynchronous it doesn't
     * make any transformations. Transformations will be applied in LazyResult's
@@ -28,12 +30,12 @@ trait Processor extends _AcceptedPlugin {
     * stream. If a Result instance is passed the processor will take the
     * existing Root parser from it.
     */
-  def process(css: java.lang.String): LazyResult = js.native
-  def process(css: java.lang.String, options: ProcessOptions): LazyResult = js.native
-  def process(css: postcssLib.Anon_ToString): LazyResult = js.native
-  def process(css: postcssLib.Anon_ToString, options: ProcessOptions): LazyResult = js.native
+  def process(css: ParserInput): LazyResult = js.native
+  def process(css: ParserInput, options: ProcessOptions): LazyResult = js.native
   def process(css: Result): LazyResult = js.native
   def process(css: Result, options: ProcessOptions): LazyResult = js.native
+  def process(css: Root): LazyResult = js.native
+  def process(css: Root, options: ProcessOptions): LazyResult = js.native
   /**
     * Adds a plugin to be used as a CSS processor. Plugins can also be
     * added by passing them as arguments when creating a postcss instance.

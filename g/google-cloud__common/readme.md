@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__common
 
-Typings are for version 0.32.1
+Typings are for version 2.0.3
 
 ## Library description:
 Common components for Cloud APIs Node.js Client Libraries
@@ -49,6 +49,9 @@ These comments are from the typescript definitions and might be useful:
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+/*!
+ * @module common/operation
  */
 /*!
  * Copyright 2015 Google Inc. All Rights Reserved.

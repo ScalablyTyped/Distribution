@@ -18,35 +18,24 @@ import scala.scalajs.js.annotation._
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.actionscript
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.`css-extr`
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.diff
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.docker
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.elixir
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.erlang
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.git
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.go
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.graphql
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.handlebars
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.haskell
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.java
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.json
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.latex
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.less
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.makefile
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.markdown
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.objectivec
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.ocaml
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.php
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.`php-extr`
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.python
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.reason
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.ruby
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.rust
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.sass
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.scss
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.sql
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.stylus
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.swift
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.typescript
-  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.vim
+  - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.wasm
   - prismDashReactDashRendererLib.prismDashReactDashRendererLibStrings.yaml
 */
 trait Language extends js.Object

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 6.41.4
+Typings are for version 7.0.6
 
 ## Library description:
 Office UI Fabric utilities for building React components.
@@ -154,9 +154,10 @@ These comments are from the typescript definitions and might be useful:
  * @public
  */
 /**
- * Autobind is a utility for binding methods in a class. This simplifies tagging methods as being "bound" to the this pointer
- * so that they can be used in scenarios that simply require a function callback.
- * @deprecated This has been deprecated in favor of using arrow function properties
+ * Determines whether a component is controlled.
+ * @param props - Component props
+ * @param valueProp - Prop containing the controlled value
+ * @returns true if controlled, false if uncontrolled
  */
 /**
  * Dictionary of booleans.
@@ -337,6 +338,7 @@ These comments are from the typescript definitions and might be useful:
  * @param conditionalPropName - The name of the prop that the condition is based on.
  * @param condition - Whether the condition is met.
  */
+/** Reset controlled usage warnings for testing purposes. */
 
 ```
 

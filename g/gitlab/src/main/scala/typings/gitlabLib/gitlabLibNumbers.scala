@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object gitlabLibNumbers {
   @js.native
-  sealed trait `10` extends AccessLevel
+  sealed trait `10`
+    extends gitlabLib.distServicesMod.AccessLevel
   
   @js.native
-  sealed trait `20` extends AccessLevel
+  sealed trait `20`
+    extends gitlabLib.distServicesMod.AccessLevel
   
   @js.native
-  sealed trait `30` extends AccessLevel
+  sealed trait `30`
+    extends gitlabLib.distServicesMod.AccessLevel
   
   @js.native
-  sealed trait `40` extends AccessLevel
+  sealed trait `40`
+    extends gitlabLib.distServicesMod.AccessLevel
   
   @js.native
-  sealed trait `50` extends AccessLevel
+  sealed trait `50`
+    extends gitlabLib.distServicesMod.AccessLevel
   
   @js.native
   sealed trait `true` extends js.Object
