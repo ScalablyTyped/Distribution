@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonCheckbox protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonCheckbox {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, the checkbox is selected.
     */
@@ -39,5 +39,6 @@ class IonCheckbox protected ()
     */
   /* CompleteClass */
   override var value: java.lang.String = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

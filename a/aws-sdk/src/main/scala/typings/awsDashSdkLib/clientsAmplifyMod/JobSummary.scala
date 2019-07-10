@@ -31,7 +31,7 @@ trait JobSummary extends js.Object {
     */
   var jobId: JobId
   /**
-    *  Type for the Job. 
+    *  Type for the Job. \n "RELEASE": Manually released from source by using StartJob API. "RETRY": Manually retried by using StartJob API. "WEB_HOOK": Automatically triggered by WebHooks. 
     */
   var jobType: JobType
   /**

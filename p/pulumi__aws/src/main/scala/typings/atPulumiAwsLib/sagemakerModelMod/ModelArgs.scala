@@ -25,7 +25,7 @@ trait ModelArgs extends js.Object {
     */
   val executionRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
-    * The name of the model (must be unique). If omitted, Terraform will assign a random, unique name.
+    * The name of the model.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

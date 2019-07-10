@@ -155,6 +155,21 @@ trait ConfigService
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteEvaluationResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * 
+    */
+  def deleteOrganizationConfigRule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteOrganizationConfigRule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def deleteOrganizationConfigRule(params: DeleteOrganizationConfigRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteOrganizationConfigRule(
+    params: DeleteOrganizationConfigRuleRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Deletes pending authorization requests for a specified aggregator account in a specified region.
     */
   def deletePendingAggregationRequest(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -531,6 +546,52 @@ trait ConfigService
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeDeliveryChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * 
+    */
+  def describeOrganizationConfigRuleStatuses(): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRuleStatusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeOrganizationConfigRuleStatuses(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeOrganizationConfigRuleStatusesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRuleStatusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def describeOrganizationConfigRuleStatuses(params: DescribeOrganizationConfigRuleStatusesRequest): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRuleStatusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeOrganizationConfigRuleStatuses(
+    params: DescribeOrganizationConfigRuleStatusesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeOrganizationConfigRuleStatusesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRuleStatusesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def describeOrganizationConfigRules(): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeOrganizationConfigRules(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeOrganizationConfigRulesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def describeOrganizationConfigRules(params: DescribeOrganizationConfigRulesRequest): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeOrganizationConfigRules(
+    params: DescribeOrganizationConfigRulesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeOrganizationConfigRulesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOrganizationConfigRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Returns a list of all pending aggregation requests.
     */
   def describePendingAggregationRequests(): awsDashSdkLib.libRequestMod.Request[DescribePendingAggregationRequestsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -842,6 +903,41 @@ trait ConfigService
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDiscoveredResourceCountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * 
+    */
+  def getOrganizationConfigRuleDetailedStatus(): awsDashSdkLib.libRequestMod.Request[
+    GetOrganizationConfigRuleDetailedStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getOrganizationConfigRuleDetailedStatus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetOrganizationConfigRuleDetailedStatusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    GetOrganizationConfigRuleDetailedStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * 
+    */
+  def getOrganizationConfigRuleDetailedStatus(params: GetOrganizationConfigRuleDetailedStatusRequest): awsDashSdkLib.libRequestMod.Request[
+    GetOrganizationConfigRuleDetailedStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getOrganizationConfigRuleDetailedStatus(
+    params: GetOrganizationConfigRuleDetailedStatusRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetOrganizationConfigRuleDetailedStatusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    GetOrganizationConfigRuleDetailedStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Returns a list of configuration items for the specified resource. The list contains details about each state of the resource during the specified time interval. If you specified a retention period to retain your ConfigurationItems between a minimum of 30 days and a maximum of 7 years (2557 days), AWS Config returns the ConfigurationItems for the specified retention period.  The response is paginated. By default, AWS Config returns a limit of 10 configuration items per page. You can customize this number with the limit parameter. The response includes a nextToken string. To get the next page of results, run the request again and specify the string for the nextToken parameter.  Each call to the API is limited to span a duration of seven days. It is likely that the number of records returned is smaller than the specified limit. In such cases, you can make another call, using the nextToken. 
     */
   def getResourceConfigHistory(): awsDashSdkLib.libRequestMod.Request[GetResourceConfigHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1047,6 +1143,29 @@ trait ConfigService
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutEvaluationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def putOrganizationConfigRule(): awsDashSdkLib.libRequestMod.Request[PutOrganizationConfigRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putOrganizationConfigRule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutOrganizationConfigRuleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutOrganizationConfigRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def putOrganizationConfigRule(params: PutOrganizationConfigRuleRequest): awsDashSdkLib.libRequestMod.Request[PutOrganizationConfigRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putOrganizationConfigRule(
+    params: PutOrganizationConfigRuleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutOrganizationConfigRuleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutOrganizationConfigRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
     */

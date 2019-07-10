@@ -40,7 +40,7 @@ class TargetGroup protected ()
     */
   val lambdaMultiValueHeadersEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
-    * The name of the target group. If omitted, Terraform will assign a random, unique name.
+    * The name of the Target Group
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

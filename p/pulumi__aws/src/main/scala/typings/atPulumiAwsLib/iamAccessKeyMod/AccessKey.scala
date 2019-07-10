@@ -18,11 +18,6 @@ class AccessKey protected ()
     */
   def this(name: java.lang.String, args: AccessKeyArgs) = this()
   def this(name: java.lang.String, args: AccessKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The encrypted secret, base64 encoded.
-    * > **NOTE:** The encrypted secret may be decrypted using the command line,
-    * for example: `terraform output encrypted_secret | base64 --decode | keybase pgp decrypt`.
-    */
   val encryptedSecret: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt

@@ -18,9 +18,6 @@ class QueuePolicy protected ()
     */
   def this(name: java.lang.String, args: QueuePolicyArgs) = this()
   def this(name: java.lang.String, args: QueuePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The JSON policy for the SQS queue. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The URL of the SQS Queue to which to attach the policy

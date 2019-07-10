@@ -114,12 +114,6 @@ class Environment protected ()
     * to use in deployment.
     */
   val version: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion] = js.native
-  /**
-    * The maximum
-    * [duration](https://golang.org/pkg/time/#ParseDuration) that Terraform should
-    * wait for an Elastic Beanstalk Environment to be in a ready state before timing
-    * out.
-    */
   val waitForReadyTimeout: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 

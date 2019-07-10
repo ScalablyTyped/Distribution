@@ -10,10 +10,7 @@ trait StatefulContainerProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
   var onChange: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
   var stateReducer: StateReducer
@@ -26,7 +23,7 @@ object StatefulContainerProps {
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     initialState: State = null,
-    onChange: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
+    onChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] => _ = null,
     overrides: RadioOverrides with RadioGroupOverrides = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal(stateReducer = stateReducer)

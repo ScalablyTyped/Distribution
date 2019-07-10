@@ -20,11 +20,11 @@ trait HookSingular[T] extends js.Object {
     * Invoke before and after hooks with options
     */
   def apply(
-    options: T,
     method: js.Function1[
       /* options */ T, 
       scala.Null | (js.Promise[T | scala.Null | scala.Unit]) | T | scala.Unit
-    ]
+    ],
+    options: T
   ): js.Promise[T] = js.native
   /**
     * Add after hook. Returns `UnnamedHook` instance for chaining.

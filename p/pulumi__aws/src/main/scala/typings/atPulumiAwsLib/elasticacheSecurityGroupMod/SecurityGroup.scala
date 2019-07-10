@@ -18,9 +18,6 @@ class SecurityGroup protected ()
     */
   def this(name: java.lang.String, args: SecurityGroupArgs) = this()
   def this(name: java.lang.String, args: SecurityGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * description for the cache security group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name for the cache security group. This value is stored as a lowercase string.

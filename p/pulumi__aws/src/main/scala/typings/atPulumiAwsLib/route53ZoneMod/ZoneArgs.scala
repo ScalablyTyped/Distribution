@@ -6,17 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ZoneArgs extends js.Object {
-  /**
-    * A comment for the hosted zone. Defaults to 'Managed by Terraform'.
-    */
   val comment: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The ID of the reusable delegation set whose NS records you want to assign to the hosted zone. Conflicts with `vpc` as delegation sets can only be used for public zones.
     */
   val delegationSetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * Whether to destroy all records (possibly managed outside of Terraform) in the zone when destroying the zone.
-    */
   val forceDestroy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * This is the name of the hosted zone.

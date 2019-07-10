@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonFab protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonFab {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, both the `ion-fab-button` and all `ion-fab-list` inside `ion-fab` will become active. That means `ion-fab-button` will become a `close` icon and `ion-fab-list` will become visible.
     */
@@ -21,6 +21,7 @@ class IonFab protected ()
   /* CompleteClass */
   override var edge: scala.Boolean = js.native
   var el: stdLib.HTMLElement = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /**
     * Close an active FAB list container.
     */

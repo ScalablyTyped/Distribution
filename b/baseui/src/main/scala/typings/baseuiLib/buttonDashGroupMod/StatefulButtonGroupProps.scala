@@ -25,7 +25,7 @@ object StatefulButtonGroupProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     initialState: InitialState = null,
     mode: baseuiLib.baseuiLibStrings.checkbox | baseuiLib.baseuiLibStrings.radio = null,
-    onClick: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event] => _ = null,
+    onClick: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] => _ = null,
     overrides: ButtonGroupOverrides = null,
     selected: scala.Double | js.Array[scala.Double] = null,
     shape: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,

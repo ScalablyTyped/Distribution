@@ -102,11 +102,6 @@ class SpotFleetRequest protected ()
     * The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8) format(for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot instance requests are placed or enabled to fulfill the request. Defaults to 24 hours.
     */
   val validUntil: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * If set, Terraform will
-    * wait for the Spot Request to be fulfilled, and will throw an error if the
-    * timeout of 10m is reached.
-    */
   val waitForFulfillment: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 

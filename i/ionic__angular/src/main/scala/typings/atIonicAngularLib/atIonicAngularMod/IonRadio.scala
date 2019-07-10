@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonRadio protected ()
   extends atIonicAngularLib.distMod.IonRadio {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
 }
 

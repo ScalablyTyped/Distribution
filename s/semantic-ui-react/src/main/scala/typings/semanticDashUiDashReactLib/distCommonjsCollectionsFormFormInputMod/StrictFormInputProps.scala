@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation._
   var action: js.UndefOr[js.Any | scala.Boolean] = js.undefined
   /** An action can appear along side an Input on the left or right. */
   var actionPosition: js.UndefOr[semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left] = js.undefined
+  /** Individual fields may display an error state along with a message. */
+  @JSName("error")
+  var error_StrictFormInputProps: js.UndefOr[js.Any] = js.undefined
   /** Take on the size of its container. */
   var fluid: js.UndefOr[scala.Boolean] = js.undefined
   /** An Input field can show a user is currently interacting with it. */
@@ -73,7 +76,7 @@ object StrictFormInputProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.Any = null,
     fluid: js.UndefOr[scala.Boolean] = js.undefined,
     focus: js.UndefOr[scala.Boolean] = js.undefined,
     icon: js.Any | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputProps] = null,
@@ -101,7 +104,7 @@ object StrictFormInputProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

@@ -41,6 +41,7 @@ class ChoicesRestfull () extends Base {
 @js.native
 object ChoicesRestfull extends js.Object {
   var EncodeParameters: scala.Boolean = js.native
+  def clearCache(): scala.Unit = js.native
   def onBeforeSendRequest(
     sender: surveyDashKnockoutLib.surveyDashKnockoutMod.ChoicesRestfull,
     options: surveyDashKnockoutLib.Anon_Request

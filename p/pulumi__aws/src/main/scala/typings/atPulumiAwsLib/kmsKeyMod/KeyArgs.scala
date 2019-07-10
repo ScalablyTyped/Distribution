@@ -29,9 +29,6 @@ trait KeyArgs extends js.Object {
     * Defaults to ENCRYPT_DECRYPT, and only symmetric encryption and decryption are supported.
     */
   val keyUsage: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * A valid policy JSON document. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A mapping of tags to assign to the object.

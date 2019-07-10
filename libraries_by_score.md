@@ -3450,6 +3450,7 @@
 | 0.6479691157959406 | [promise-timeout](./p/promise-timeout) | Simple timeouts for promises
 | 0.6478715398599623 | [superagent-bunyan](./s/superagent-bunyan) | a plugin for superagent that uses bunyan to log th
 | 0.6477964562895508 | [rollup-plugin-node-resolv](./r/rollup-plugin-node-resolve) | Bundle third-party dependencies in node_modules
+| 0.6477897616084406 | [chunk-text](./c/chunk-text) | 🔪 chunk/split a string by length without cutting/
 | 0.6477605333855757 | [voronoi-diagram](./v/voronoi-diagram) | Constructs a Voronoi diagram for a collection of p
 | 0.6477581181822436 | [pdfmake](./p/pdfmake) | Client/server side PDF printing in pure JavaScript
 | 0.6477120032607364 | [react-form](./r/react-form) | React Form is a lightweight framework and utility 
@@ -3676,6 +3677,7 @@
 | 0.6342942611601211 | [react-grid-layout](./r/react-grid-layout) | A draggable and resizable grid layout with respons
 | 0.6342018001737337 | [ag-grid](./a/ag-grid) | Advanced Data Grid / Data Table supporting Javascr
 | 0.6341677698498165 | [react-input-calendar](./r/react-input-calendar) | Datepicker widget react component
+| 0.6341622775739463 | [redux-api-middleware](./r/redux-api-middleware) | Redux middleware for calling an API.
 | 0.633957277664793 | [openpgp](./o/openpgp) | OpenPGP.js is a Javascript implementation of the O
 | 0.633943910338205 | [fluent-langneg](./f/fluent-langneg) | Language Negotiation API for Fluent
 | 0.6339227617671875 | [update-notifier](./u/update-notifier) | Update notifications for your CLI app
@@ -3807,6 +3809,7 @@
 | 0.623206256832854 | [tabulator-tables](./t/tabulator-tables) | Interactive table generation JavaScript library
 | 0.6231210225887927 | [react-redux-toastr](./r/react-redux-toastr) | react-redux-toastr is a React toastr message imple
 | 0.6229791004931633 | [jsonld](./j/jsonld) | A JSON-LD Processor and API implementation in Java
+| 0.6229718634010096 | [react-sizes](./r/react-sizes) | Hoc to easily map window sizes to props.
 | 0.6229300544490585 | [workerpool](./w/workerpool) | Offload tasks to a pool of workers on node.js and 
 | 0.6229087406679221 | [paper](./p/paper) | The Swiss Army Knife of Vector Graphics Scripting
 | 0.6227155040951534 | [body-scroll-lock](./b/body-scroll-lock) | Enables body scroll locking (for iOS Mobile and Ta
@@ -5508,6 +5511,7 @@
 | 0.38631108389844543 | [jspath](./j/jspath) | DSL that enables you to navigate and find data wit
 | 0.3859437111546162 | [random-useragent](./r/random-useragent) | Get a random useragent (with an optional filter)
 | 0.3858254197467405 | [countdown](./c/countdown) | A simple JavaScript API for producing an accurate,
+| 0.3857393778984842 | [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t
 | 0.38539401232393594 | [yog2-kernel](./y/yog2-kernel) | yog2 kernel
 | 0.385234090427654 | [form-serializer](./f/form-serializer) | serialize form fields into an object or JSON
 | 0.38516632902254344 | [gifffer](./g/gifffer) | JavaScript library that prevents the autoplaying o
@@ -6574,6 +6578,7 @@
 | 0.106242226718815 | [reconnectingwebsocket](./r/reconnectingwebsocket) | A small JavaScript library that decorates the WebS
 | 0.10478749183809903 | [lodash_dot_overevery](./l/lodash_dot_overevery) | The lodash method _.overEvery exported as a module
 | 0.1038823979297204 | [graham_scan](./g/graham_scan) | Implementation of the Graham Scan algorithm to cal
+| 0.10113170122711579 | [logger](./l/logger) | A simple logging library that combines the simple 
 | 0.10059388767088952 | [lodash_dot_isarraybuffer](./l/lodash_dot_isarraybuffer) | The lodash method _.isArrayBuffer exported as a mo
 | 0.0998147540035991 | [lodash_dot_ntharg](./l/lodash_dot_ntharg) | The lodash method _.nthArg exported as a module.
 | 0.09818491675229138 | [lodash_dot_sortedlastinde](./l/lodash_dot_sortedlastindexby) | The lodash method _.sortedLastIndexBy exported as 

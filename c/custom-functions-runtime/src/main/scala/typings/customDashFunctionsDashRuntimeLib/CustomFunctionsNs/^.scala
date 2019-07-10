@@ -9,12 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * @beta
     * Associates the JavaScript function to the name given by the "id" property in the metadata JSON file.
     */
   def associate(id: java.lang.String, functionObject: js.Function): scala.Unit = js.native
   /**
-    * @beta
     * Associates the JavaScript functions to the names given by the "id" properties in the metadata JSON file.
     */
   def associate(mappings: org.scalablytyped.runtime.StringDictionary[js.Function]): scala.Unit = js.native

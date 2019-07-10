@@ -11,6 +11,10 @@ trait Branch extends js.Object {
     */
   var activeJobId: ActiveJobId
   /**
+    *  List of custom resources that are linked to this branch. 
+    */
+  var associatedResources: js.UndefOr[AssociatedResources] = js.undefined
+  /**
     *  Basic Authorization credentials for a branch, part of an Amplify App. 
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
@@ -39,9 +43,9 @@ trait Branch extends js.Object {
     */
   var description: Description
   /**
-    *  Display name for a branch, part of an Amplify App. 
+    *  Display name for a branch, will use as the default domain prefix. 
     */
-  var displayName: js.UndefOr[DisplayName] = js.undefined
+  var displayName: DisplayName
   /**
     *  Enables auto-building on push for a branch, part of an Amplify App. 
     */
@@ -69,9 +73,9 @@ trait Branch extends js.Object {
   /**
     *  Tag for branch for Amplify App. 
     */
-  var tags: js.UndefOr[Tags] = js.undefined
+  var tags: js.UndefOr[TagMap] = js.undefined
   /**
-    *  Thumbnail Url for the branch. 
+    *  Thumbnail URL for the branch. 
     */
   var thumbnailUrl: js.UndefOr[ThumbnailUrl] = js.undefined
   /**
@@ -97,6 +101,7 @@ object Branch {
     createTime: CreateTime,
     customDomains: CustomDomains,
     description: Description,
+    displayName: DisplayName,
     enableAutoBuild: EnableAutoBuild,
     enableBasicAuth: EnableBasicAuth,
     enableNotification: EnableNotification,
@@ -106,16 +111,16 @@ object Branch {
     totalNumberOfJobs: TotalNumberOfJobs,
     ttl: TTL,
     updateTime: UpdateTime,
+    associatedResources: AssociatedResources = null,
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
-    displayName: DisplayName = null,
-    tags: Tags = null,
+    tags: TagMap = null,
     thumbnailUrl: ThumbnailUrl = null
   ): Branch = {
-    val __obj = js.Dynamic.literal(activeJobId = activeJobId, branchArn = branchArn, branchName = branchName, createTime = createTime, customDomains = customDomains, description = description, enableAutoBuild = enableAutoBuild, enableBasicAuth = enableBasicAuth, enableNotification = enableNotification, environmentVariables = environmentVariables, framework = framework, stage = stage.asInstanceOf[js.Any], totalNumberOfJobs = totalNumberOfJobs, ttl = ttl, updateTime = updateTime)
+    val __obj = js.Dynamic.literal(activeJobId = activeJobId, branchArn = branchArn, branchName = branchName, createTime = createTime, customDomains = customDomains, description = description, displayName = displayName, enableAutoBuild = enableAutoBuild, enableBasicAuth = enableBasicAuth, enableNotification = enableNotification, environmentVariables = environmentVariables, framework = framework, stage = stage.asInstanceOf[js.Any], totalNumberOfJobs = totalNumberOfJobs, ttl = ttl, updateTime = updateTime)
+    if (associatedResources != null) __obj.updateDynamic("associatedResources")(associatedResources)
     if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials)
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
     __obj.asInstanceOf[Branch]

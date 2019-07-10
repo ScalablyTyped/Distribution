@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
 class StatefulContainer ()
   extends reactLib.reactMod.Component[StatefulButtonGroupProps, State, js.Any] {
   def changeState(nextState: State): scala.Unit = js.native
-  def onClick(
-    event: reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event],
-    index: scala.Double
-  ): scala.Unit = js.native
+  def onClick(event: reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement], index: scala.Double): scala.Unit = js.native
 }
 

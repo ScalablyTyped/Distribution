@@ -15,9 +15,6 @@ trait RecordArgs extends js.Object {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EvaluateTargetHealthName]]
     ]
   ] = js.undefined
-  /**
-    * Allow creation of this record in Terraform to overwrite an existing record, if any. This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual Route 53 changes outside Terraform from overwriting this record. `false` by default. This configuration is not recommended for most environments.
-    */
   val allowOverwrite: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
@@ -51,9 +48,6 @@ trait RecordArgs extends js.Object {
     * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the Terraform configuration string (e.g. `"first255characters\"\"morecharacters"`).
-    */
   val records: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined

@@ -208,11 +208,6 @@ trait SpotInstanceRequestArgs extends js.Object {
   val vpcSecurityGroupIds: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
-  /**
-    * If set, Terraform will
-    * wait for the Spot Request to be fulfilled, and will throw an error if the
-    * timeout of 10m is reached.
-    */
   val waitForFulfillment: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 

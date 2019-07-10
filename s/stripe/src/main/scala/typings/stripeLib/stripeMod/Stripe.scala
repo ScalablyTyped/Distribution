@@ -59,10 +59,13 @@ trait Stripe extends js.Object {
   def getClientUserAgent(response: js.Function1[/* userAgent */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def getConstant(c: java.lang.String): js.Any = js.native
   def getMaxNetworkRetries(): scala.Double = js.native
+  def getTelemetryEnabled(): scala.Boolean = js.native
   def setApiKey(): scala.Unit = js.native
   def setApiKey(key: java.lang.String): scala.Unit = js.native
   def setApiVersion(): scala.Unit = js.native
   def setApiVersion(version: java.lang.String): scala.Unit = js.native
+  def setAppInfo(): scala.Unit = js.native
+  def setAppInfo(info: stripeLib.Anon_NamePartnerid): scala.Unit = js.native
   def setHost(host: java.lang.String): scala.Unit = js.native
   def setHost(host: java.lang.String, port: java.lang.String): scala.Unit = js.native
   def setHost(host: java.lang.String, port: java.lang.String, protocol: java.lang.String): scala.Unit = js.native
@@ -73,6 +76,7 @@ trait Stripe extends js.Object {
   def setPort(port: java.lang.String): scala.Unit = js.native
   def setPort(port: scala.Double): scala.Unit = js.native
   def setProtocol(protocol: java.lang.String): scala.Unit = js.native
+  def setTelemetryEnabled(enabled: scala.Boolean): scala.Unit = js.native
   def setTimeout(): scala.Unit = js.native
   def setTimeout(timeout: scala.Double): scala.Unit = js.native
 }

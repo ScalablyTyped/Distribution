@@ -15,6 +15,12 @@ package object clientsGameliftMod {
   type AliasId = java.lang.String
   type AliasList = js.Array[Alias]
   type ArnStringModel = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC
+    - awsDashSdkLib.awsDashSdkLibStrings.MANUAL
+    - java.lang.String
+  */
+  type BackfillMode = _BackfillMode | java.lang.String
   type BooleanModel = scala.Boolean
   type BuildId = java.lang.String
   type BuildList = js.Array[Build]

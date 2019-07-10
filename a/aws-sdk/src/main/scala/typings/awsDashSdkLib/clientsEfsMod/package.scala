@@ -53,7 +53,14 @@ package object clientsEfsMod {
   */
   type ThroughputMode = _ThroughputMode | java.lang.String
   type Timestamp = stdLib.Date
-  type TransitionToIARules = awsDashSdkLib.awsDashSdkLibStrings.AFTER_30_DAYS | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AFTER_14_DAYS
+    - awsDashSdkLib.awsDashSdkLibStrings.AFTER_30_DAYS
+    - awsDashSdkLib.awsDashSdkLibStrings.AFTER_60_DAYS
+    - awsDashSdkLib.awsDashSdkLibStrings.AFTER_90_DAYS
+    - java.lang.String
+  */
+  type TransitionToIARules = _TransitionToIARules | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2015-02-01`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

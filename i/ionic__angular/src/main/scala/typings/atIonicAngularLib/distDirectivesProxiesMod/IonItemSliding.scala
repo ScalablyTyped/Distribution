@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonItemSliding protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonItemSliding {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var el: stdLib.HTMLElement = js.native
   var ionDrag: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

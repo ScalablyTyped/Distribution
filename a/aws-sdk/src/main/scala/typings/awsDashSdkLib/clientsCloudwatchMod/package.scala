@@ -15,12 +15,18 @@ package object clientsCloudwatchMod {
   type AlarmNamePrefix = java.lang.String
   type AlarmNames = js.Array[AlarmName]
   type AmazonResourceName = java.lang.String
+  type AnomalyDetectorExcludedTimeRanges = js.Array[Range]
+  type AnomalyDetectorMetricTimezone = java.lang.String
+  type AnomalyDetectors = js.Array[AnomalyDetector]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.GreaterThanOrEqualToThreshold
     - awsDashSdkLib.awsDashSdkLibStrings.GreaterThanThreshold
     - awsDashSdkLib.awsDashSdkLibStrings.LessThanThreshold
     - awsDashSdkLib.awsDashSdkLibStrings.LessThanOrEqualToThreshold
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThanLowerOrGreaterThanUpperThreshold
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThanLowerThreshold
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThanUpperThreshold
     - java.lang.String
   */
   type ComparisonOperator = _ComparisonOperator | java.lang.String
@@ -58,6 +64,7 @@ package object clientsCloudwatchMod {
   type HistorySummary = java.lang.String
   type LastModified = stdLib.Date
   type MaxRecords = scala.Double
+  type MaxReturnedResultsCount = scala.Double
   type Message = java.lang.String
   type MessageDataCode = java.lang.String
   type MessageDataValue = java.lang.String

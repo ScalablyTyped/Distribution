@@ -14,8 +14,10 @@ import scala.scalajs.js.annotation._
   var content: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
   /** A FormField control prop. */
   var control: js.UndefOr[js.Any] = js.undefined
-  /** Individual fields may display an error state. */
-  var error: js.UndefOr[scala.Boolean] = js.undefined
+  /** Individual fields may display an error state along with a message. */
+  var error: js.UndefOr[
+    scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps]
+  ] = js.undefined
   /** A field can have its label next to instead of above it. */
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   /** A field can show that input is mandatory.  Requires a label. */
@@ -36,7 +38,7 @@ object StrictFormRadioProps {
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     defaultIndeterminate: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.UndefOr[scala.Boolean] = js.undefined,
+    error: scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = null,
     fitted: js.UndefOr[scala.Boolean] = js.undefined,
     id: scala.Double | java.lang.String = null,
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
@@ -67,7 +69,7 @@ object StrictFormRadioProps {
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(defaultIndeterminate)) __obj.updateDynamic("defaultIndeterminate")(defaultIndeterminate)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(fitted)) __obj.updateDynamic("fitted")(fitted)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)

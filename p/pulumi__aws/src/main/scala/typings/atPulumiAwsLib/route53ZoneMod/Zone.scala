@@ -19,17 +19,11 @@ class Zone protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: ZoneArgs) = this()
   def this(name: java.lang.String, args: ZoneArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * A comment for the hosted zone. Defaults to 'Managed by Terraform'.
-    */
   val comment: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the reusable delegation set whose NS records you want to assign to the hosted zone. Conflicts with `vpc` as delegation sets can only be used for public zones.
     */
   val delegationSetId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * Whether to destroy all records (possibly managed outside of Terraform) in the zone when destroying the zone.
-    */
   val forceDestroy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * This is the name of the hosted zone.

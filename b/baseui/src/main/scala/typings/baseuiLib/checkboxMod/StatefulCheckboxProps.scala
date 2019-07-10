@@ -11,34 +11,19 @@ trait StatefulCheckboxProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var initialState: js.UndefOr[CheckboxState] = js.undefined
   var onBlur: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onChange: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onFocus: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var overrides: js.UndefOr[CheckboxOverrides] = js.undefined
 }
@@ -50,11 +35,11 @@ object StatefulCheckboxProps {
     checkmarkType: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.toggle = null,
     children: reactLib.reactMod.ReactNode = null,
     initialState: CheckboxState = null,
-    onBlur: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onChange: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onFocus: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onMouseEnter: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onMouseLeave: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
+    onBlur: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onFocus: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onMouseEnter: /* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onMouseLeave: /* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement] => _ = null,
     overrides: CheckboxOverrides = null
   ): StatefulCheckboxProps = {
     val __obj = js.Dynamic.literal()

@@ -78,6 +78,8 @@ trait StrictLabelProps extends js.Object {
   var pointing: js.UndefOr[
     scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.above | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.below | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right
   ] = js.undefined
+  /** A label can prompt for an error in your forms. */
+  var prompt: js.UndefOr[scala.Boolean] = js.undefined
   /** Shorthand for Icon to appear as the last child and trigger onRemove. */
   var removeIcon: js.UndefOr[
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps]
@@ -116,6 +118,7 @@ object StrictLabelProps {
     onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ LabelProps) => scala.Unit = null,
     onRemove: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ LabelProps) => scala.Unit = null,
     pointing: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.above | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.below | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
+    prompt: js.UndefOr[scala.Boolean] = js.undefined,
     removeIcon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     ribbon: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
     size: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES = null,
@@ -141,6 +144,7 @@ object StrictLabelProps {
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))
     if (pointing != null) __obj.updateDynamic("pointing")(pointing.asInstanceOf[js.Any])
+    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt)
     if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
     if (ribbon != null) __obj.updateDynamic("ribbon")(ribbon.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size)

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait WriteStream extends Socket {
   var columns: js.UndefOr[scala.Double] = js.native
   var rows: js.UndefOr[scala.Double] = js.native
+  val writableFinished: scala.Boolean = js.native
   val writableHighWaterMark: scala.Double = js.native
   val writableLength: scala.Double = js.native
   def _destroy(

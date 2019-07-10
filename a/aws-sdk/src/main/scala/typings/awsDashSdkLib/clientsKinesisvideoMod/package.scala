@@ -12,6 +12,7 @@ package object clientsKinesisvideoMod {
     - awsDashSdkLib.awsDashSdkLibStrings.LIST_FRAGMENTS
     - awsDashSdkLib.awsDashSdkLibStrings.GET_MEDIA_FOR_FRAGMENT_LIST
     - awsDashSdkLib.awsDashSdkLibStrings.GET_HLS_STREAMING_SESSION_URL
+    - awsDashSdkLib.awsDashSdkLibStrings.GET_DASH_STREAMING_SESSION_URL
     - java.lang.String
   */
   type APIName = _APIName | java.lang.String

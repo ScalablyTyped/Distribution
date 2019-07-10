@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redux-first-routing"
-version := "0.3-dt-20180613Z-fc872f"
+version := "0.3-dt-20180613Z-45b114"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-d70631",
-  "org.scalablytyped" %%% "redux" % "4.0.2-22de3b",
+  "org.scalablytyped" %%% "redux" % "4.0.3-d7698e",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -6,11 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AccessKeyState extends js.Object {
-  /**
-    * The encrypted secret, base64 encoded.
-    * > **NOTE:** The encrypted secret may be decrypted using the command line,
-    * for example: `terraform output encrypted_secret | base64 --decode | keybase pgp decrypt`.
-    */
   val encryptedSecret: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The fingerprint of the PGP key used to encrypt

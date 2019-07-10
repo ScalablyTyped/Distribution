@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonProgressBar protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonProgressBar {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If the buffer and value are smaller than 1, the buffer circles will show. The buffer should be between [0, 1].
     */
@@ -31,5 +31,6 @@ class IonProgressBar protected ()
     */
   /* CompleteClass */
   override var value: scala.Double = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

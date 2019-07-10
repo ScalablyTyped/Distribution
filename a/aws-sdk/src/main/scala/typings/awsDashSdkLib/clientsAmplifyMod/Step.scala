@@ -7,19 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait Step extends js.Object {
   /**
-    *  Url to teh artifact for the execution step. 
+    *  URL to the artifact for the execution step. 
     */
   var artifactsUrl: js.UndefOr[ArtifactsUrl] = js.undefined
+  /**
+    *  The context for current step, will include build image if step is build. 
+    */
+  var context: js.UndefOr[Context] = js.undefined
   /**
     *  End date/ time of the execution step. 
     */
   var endTime: EndTime
   /**
-    *  Url to the logs for the execution step. 
+    *  URL to the logs for the execution step. 
     */
   var logUrl: js.UndefOr[LogUrl] = js.undefined
   /**
-    *  List of screenshot Urls for the execution step, if relevant. 
+    *  List of screenshot URLs for the execution step, if relevant. 
     */
   var screenshots: js.UndefOr[Screenshots] = js.undefined
   /**
@@ -30,6 +34,10 @@ trait Step extends js.Object {
     *  Status of the execution step. 
     */
   var status: JobStatus
+  /**
+    *  The reason for current step status. 
+    */
+  var statusReason: js.UndefOr[StatusReason] = js.undefined
   /**
     *  Name of the execution step. 
     */
@@ -44,13 +52,17 @@ object Step {
     status: JobStatus,
     stepName: StepName,
     artifactsUrl: ArtifactsUrl = null,
+    context: Context = null,
     logUrl: LogUrl = null,
-    screenshots: Screenshots = null
+    screenshots: Screenshots = null,
+    statusReason: StatusReason = null
   ): Step = {
     val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime, status = status.asInstanceOf[js.Any], stepName = stepName)
     if (artifactsUrl != null) __obj.updateDynamic("artifactsUrl")(artifactsUrl)
+    if (context != null) __obj.updateDynamic("context")(context)
     if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl)
     if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots)
+    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
     __obj.asInstanceOf[Step]
   }
 }

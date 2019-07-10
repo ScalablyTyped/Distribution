@@ -12,12 +12,6 @@ trait DomainState extends js.Object {
   val accessPolicies: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
   ] = js.undefined
-  /**
-    * Key-value string pairs to specify advanced configuration options.
-    * Note that the values for these configuration options must be strings (wrapped in quotes) or they
-    * may be wrong and cause a perpetual diff, causing Terraform to want to recreate your Elasticsearch
-    * domain on every apply.
-    */
   val advancedOptions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
   /**
     * Amazon Resource Name (ARN) of the domain.

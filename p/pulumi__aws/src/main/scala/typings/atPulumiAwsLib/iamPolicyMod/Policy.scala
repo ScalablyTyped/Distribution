@@ -27,7 +27,7 @@ class Policy protected ()
     */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The name of the policy. If omitted, Terraform will assign a random, unique name.
+    * The name of the policy.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -40,7 +40,7 @@ class Policy protected ()
     */
   val path: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The policy document. This is a JSON formatted string. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
+    * The policy document.
     */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }

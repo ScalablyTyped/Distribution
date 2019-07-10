@@ -29,9 +29,6 @@ class LogGroup protected ()
     * permissions for the CMK whenever the encrypted data is requested.
     */
   val kmsKeyId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The name of the log group. If omitted, Terraform will assign a random, unique name.
-    */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

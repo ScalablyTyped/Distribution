@@ -103,9 +103,6 @@ trait ServiceState extends js.Object {
     * The family and revision (`family:revision`) or full ARN of the task definition that you want to run in your service.
     */
   val taskDefinition: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * If `true`, Terraform will wait for the service to reach a steady state (like [`aws ecs wait services-stable`](https://docs.aws.amazon.com/cli/latest/reference/ecs/wait/services-stable.html)) before continuing. Default `false`.
-    */
   val waitForSteadyState: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 

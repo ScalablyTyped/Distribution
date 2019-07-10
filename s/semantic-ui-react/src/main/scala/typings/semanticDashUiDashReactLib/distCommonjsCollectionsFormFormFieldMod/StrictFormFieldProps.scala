@@ -22,8 +22,10 @@ trait StrictFormFieldProps extends js.Object {
   var control: js.UndefOr[js.Any] = js.undefined
   /** Individual fields may be disabled. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  /** Individual fields may display an error state. */
-  var error: js.UndefOr[scala.Boolean] = js.undefined
+  /** Individual fields may display an error state along with a message. */
+  var error: js.UndefOr[
+    scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps]
+  ] = js.undefined
   /** A field can have its label next to instead of above it. */
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   /** Mutually exclusive with children. */
@@ -47,7 +49,7 @@ object StrictFormFieldProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.UndefOr[scala.Boolean] = js.undefined,
+    error: scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
     required: js.Any = null,
@@ -61,7 +63,7 @@ object StrictFormFieldProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required)

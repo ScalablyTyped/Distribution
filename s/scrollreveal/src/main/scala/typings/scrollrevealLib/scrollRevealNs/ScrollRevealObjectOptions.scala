@@ -23,6 +23,7 @@ trait ScrollRevealObjectOptions extends js.Object {
   var distance: js.UndefOr[java.lang.String] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
   var easing: js.UndefOr[java.lang.String] = js.undefined
+  var interval: js.UndefOr[scala.Double] = js.undefined
   var mobile: js.UndefOr[scala.Boolean] = js.undefined
   var opacity: js.UndefOr[scala.Double] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
@@ -46,6 +47,7 @@ object ScrollRevealObjectOptions {
     distance: java.lang.String = null,
     duration: scala.Int | scala.Double = null,
     easing: java.lang.String = null,
+    interval: scala.Int | scala.Double = null,
     mobile: js.UndefOr[scala.Boolean] = js.undefined,
     opacity: scala.Int | scala.Double = null,
     origin: java.lang.String = null,
@@ -66,6 +68,7 @@ object ScrollRevealObjectOptions {
     if (distance != null) __obj.updateDynamic("distance")(distance)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin)

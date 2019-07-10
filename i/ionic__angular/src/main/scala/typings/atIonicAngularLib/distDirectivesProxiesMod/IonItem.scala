@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonItem protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonItem {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, a button tag will be rendered and the item will be tappable.
     */
@@ -36,5 +36,6 @@ class IonItem protected ()
     */
   /* CompleteClass */
   override var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

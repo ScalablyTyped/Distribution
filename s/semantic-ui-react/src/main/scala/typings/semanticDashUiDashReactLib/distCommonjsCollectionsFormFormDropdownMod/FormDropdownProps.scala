@@ -36,7 +36,7 @@ object FormDropdownProps {
     defaultValue: java.lang.String | scala.Double | scala.Boolean | (js.Array[scala.Double | java.lang.String | scala.Boolean]) = null,
     direction: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.Any = null,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
     fluid: js.UndefOr[scala.Boolean] = js.undefined,
     header: reactLib.reactMod.ReactNode = null,
@@ -120,7 +120,7 @@ object FormDropdownProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
     if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])

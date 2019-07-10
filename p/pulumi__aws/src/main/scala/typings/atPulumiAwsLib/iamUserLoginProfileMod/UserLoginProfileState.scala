@@ -6,13 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserLoginProfileState extends js.Object {
-  /**
-    * The encrypted password, base64 encoded. Only available if password was handled on Terraform resource creation, not import.
-    */
   val encryptedPassword: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on Terraform resource creation, not import.
-    */
   val keyFingerprint: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.

@@ -31,7 +31,7 @@ trait StrictPopupProps
       semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
     ]
   ] = js.undefined
-  /** The node where the popup should mount. */
+  /** Hide the Popup when scrolling the window. */
   var hideOnScroll: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether the popup should not close on hover. */
   var hoverable: js.UndefOr[scala.Boolean] = js.undefined

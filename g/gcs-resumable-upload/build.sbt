@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "gcs-resumable-upload"
-version := "2.1.1-7001e7"
+version := "2.1.1-7c84bd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "configstore" % "4.0-dt-20181202Z-ff323c",
-  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-704139",
-  "org.scalablytyped" %%% "gaxios" % "1.8.4-488f78",
-  "org.scalablytyped" %%% "google-auth-library" % "3.1.2-e61cb4",
+  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-b4bdc9",
+  "org.scalablytyped" %%% "gaxios" % "1.8.4-fee0d8",
+  "org.scalablytyped" %%% "google-auth-library" % "3.1.2-c9609e",
   "org.scalablytyped" %%% "gtoken" % "2.3.3-86d5a2",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
-  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-c73aa8",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-ea2bee",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

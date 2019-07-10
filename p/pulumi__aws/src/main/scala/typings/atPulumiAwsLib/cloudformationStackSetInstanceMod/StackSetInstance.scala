@@ -30,9 +30,6 @@ class StackSetInstance protected ()
     * Target AWS Region to create a Stack based on the Stack Set. Defaults to current region.
     */
   val region: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * During Terraform resource destroy, remove Instance from Stack Set while keeping the Stack and its associated resources. Must be enabled in Terraform state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new Stack Set. Defaults to `false`.
-    */
   val retainStack: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Stack identifier

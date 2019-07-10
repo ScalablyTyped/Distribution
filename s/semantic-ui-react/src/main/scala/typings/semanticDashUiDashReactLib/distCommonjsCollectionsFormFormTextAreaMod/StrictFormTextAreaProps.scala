@@ -49,7 +49,7 @@ object StrictFormTextAreaProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.UndefOr[scala.Boolean] = js.undefined,
+    error: scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
     onChange: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
@@ -67,7 +67,7 @@ object StrictFormTextAreaProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))

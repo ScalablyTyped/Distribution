@@ -59,9 +59,6 @@ class ClusterInstance protected ()
     * The neptune engine version.
     */
   val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The indentifier for the neptune instance, if omitted, Terraform will assign a random, unique identifier.
-    */
   val identifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.

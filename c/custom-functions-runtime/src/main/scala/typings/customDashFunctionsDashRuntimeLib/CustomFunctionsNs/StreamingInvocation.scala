@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @beta
   * Provides information about the invocation of a streaming custom function.
   * A streaming custom function can provide results which can change over time.
   *
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StreamingInvocation[ResultType] extends CancelableInvocation {
   /**
-    * @beta
     * Set the result for the custom function. May be called more than once.
     */
   def setResult(value: ResultType): scala.Unit = js.native

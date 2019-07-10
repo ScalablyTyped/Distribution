@@ -22,13 +22,20 @@ trait CreateWebACLRequest extends js.Object {
     * A friendly name or description of the WebACL. You can't change Name after you create the WebACL.
     */
   var Name: ResourceName
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 
 object CreateWebACLRequest {
   @scala.inline
-  def apply(ChangeToken: ChangeToken, DefaultAction: WafAction, MetricName: MetricName, Name: ResourceName): CreateWebACLRequest = {
+  def apply(
+    ChangeToken: ChangeToken,
+    DefaultAction: WafAction,
+    MetricName: MetricName,
+    Name: ResourceName,
+    Tags: TagList = null
+  ): CreateWebACLRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken, DefaultAction = DefaultAction, MetricName = MetricName, Name = Name)
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateWebACLRequest]
   }
 }

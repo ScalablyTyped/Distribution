@@ -60,9 +60,43 @@ trait Job[T] extends js.Object {
     */
   def getState(): js.Promise[JobStatus] = js.native
   /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is active
+    */
+  def isActive(): js.Promise[scala.Boolean] = js.native
+  /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is completed
+    */
+  def isCompleted(): js.Promise[scala.Boolean] = js.native
+  /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is delayed
+    */
+  def isDelayed(): js.Promise[scala.Boolean] = js.native
+  /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is failed
+    */
+  def isFailed(): js.Promise[scala.Boolean] = js.native
+  /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is paused
+    */
+  def isPaused(): js.Promise[scala.Boolean] = js.native
+  /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is stuck
+    */
+  def isStuck(): js.Promise[scala.Boolean] = js.native
+  /**
+    * Returns a promise resolving to a boolean which, if true, current job's state is wait
+    */
+  def isWaiting(): js.Promise[scala.Boolean] = js.native
+  /**
     * The lock id of the job
     */
   def lockKey(): java.lang.String = js.native
+  /**
+    * Logs one row of log data.
+    *
+    * @param row String with log data to be logged.
+    */
+  def log(row: java.lang.String): js.Promise[_] = js.native
   /**
     * Moves a job to the `completed` queue. Pulls a job from 'waiting' to 'active'
     * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.

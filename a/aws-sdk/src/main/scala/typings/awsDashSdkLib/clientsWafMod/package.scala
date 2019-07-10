@@ -384,6 +384,10 @@ package object clientsWafMod {
   type SqlInjectionMatchSetUpdates = js.Array[SqlInjectionMatchSetUpdate]
   type SqlInjectionMatchTuples = js.Array[SqlInjectionMatchTuple]
   type SubscribedRuleGroupSummaries = js.Array[SubscribedRuleGroupSummary]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.NONE
     - awsDashSdkLib.awsDashSdkLibStrings.COMPRESS_WHITE_SPACE

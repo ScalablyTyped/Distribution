@@ -17,6 +17,7 @@ object rechartsLibStrings {
   sealed trait auto
     extends rechartsLib.rechartsMod.ScaleType
        with rechartsLib.rechartsMod._AxisDomain
+       with rechartsLib.rechartsMod._BaseValueType
        with rechartsLib.rechartsMod._PolarRadiusAxisDomain
   
   @js.native
@@ -97,11 +98,13 @@ object rechartsLibStrings {
   @js.native
   sealed trait dataMax
     extends rechartsLib.rechartsMod._AxisDomain
+       with rechartsLib.rechartsMod._BaseValueType
        with rechartsLib.rechartsMod._PolarRadiusAxisDomain
   
   @js.native
   sealed trait dataMin
     extends rechartsLib.rechartsMod._AxisDomain
+       with rechartsLib.rechartsMod._BaseValueType
        with rechartsLib.rechartsMod._PolarRadiusAxisDomain
   
   @js.native

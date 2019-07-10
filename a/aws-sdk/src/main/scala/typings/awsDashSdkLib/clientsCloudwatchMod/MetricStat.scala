@@ -19,7 +19,7 @@ trait MetricStat extends js.Object {
     */
   var Stat: awsDashSdkLib.clientsCloudwatchMod.Stat
   /**
-    * The unit to use for the returned data points.
+    * When you are using a Put operation, this defines what unit you want to use when storing the metric. In a Get operation, this displays the unit that is used for the metric.
     */
   var Unit: js.UndefOr[StandardUnit] = js.undefined
 }

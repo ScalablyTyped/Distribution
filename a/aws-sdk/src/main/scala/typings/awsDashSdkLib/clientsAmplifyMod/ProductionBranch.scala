@@ -19,7 +19,7 @@ trait ProductionBranch extends js.Object {
     */
   var status: js.UndefOr[Status] = js.undefined
   /**
-    *  Thumbnail Url for Production Branch. 
+    *  Thumbnail URL for Production Branch. 
     */
   var thumbnailUrl: js.UndefOr[ThumbnailUrl] = js.undefined
 }

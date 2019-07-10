@@ -32,10 +32,6 @@ trait CertificateArgs extends js.Object {
     * A mapping of tags to assign to the resource.
     */
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
-  /**
-    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into Terraform.
-    * * Importing an existing certificate
-    */
   val validationMethod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

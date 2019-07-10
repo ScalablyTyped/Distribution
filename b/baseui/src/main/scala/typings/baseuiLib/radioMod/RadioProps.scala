@@ -18,46 +18,25 @@ trait RadioProps extends js.Object {
   ] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onChange: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onFocus: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onMouseDown: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onMouseUp: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
@@ -76,13 +55,13 @@ object RadioProps {
     isError: js.UndefOr[scala.Boolean] = js.undefined,
     labelPlacement: baseuiLib.baseuiLibStrings.top | baseuiLib.baseuiLibStrings.right | baseuiLib.baseuiLibStrings.bottom | baseuiLib.baseuiLibStrings.left = null,
     name: java.lang.String = null,
-    onBlur: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onChange: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onFocus: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onMouseDown: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onMouseEnter: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onMouseLeave: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onMouseUp: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
+    onBlur: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onFocus: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onMouseDown: /* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onMouseEnter: /* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onMouseLeave: /* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement] => _ = null,
+    onMouseUp: /* e */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLInputElement] => _ = null,
     overrides: RadioOverrides with RadioGroupOverrides = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String = null

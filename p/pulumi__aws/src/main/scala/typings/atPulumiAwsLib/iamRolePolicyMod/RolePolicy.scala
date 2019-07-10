@@ -19,8 +19,7 @@ class RolePolicy protected ()
   def this(name: java.lang.String, args: RolePolicyArgs) = this()
   def this(name: java.lang.String, args: RolePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * The name of the role policy. If omitted, Terraform will
-    * assign a random, unique name.
+    * The name of the policy.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -29,7 +28,7 @@ class RolePolicy protected ()
     */
   val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
+    * The policy document attached to the role.
     */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

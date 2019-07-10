@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonInfiniteScroll protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonInfiniteScroll {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, the infinite scroll will be hidden and scroll event listeners will be removed.  Set this to true to disable the infinite scroll from actively trying to receive new data while scrolling. This is useful when it is known that there is no more data that can be added, and the infinite scroll is no longer needed.
     */
@@ -27,6 +27,7 @@ class IonInfiniteScroll protected ()
     */
   /* CompleteClass */
   override var threshold: java.lang.String = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /**
     * Call `complete()` within the `ionInfinite` output event handler when your async operation has completed. For example, the `loading` state is while the app is performing an asynchronous operation, such as receiving more data from an AJAX request to add more items to a data list. Once the data has been received and UI updated, you then call this method to signify that the loading has completed. This method will change the infinite scroll's state from `loading` to `enabled`.
     */

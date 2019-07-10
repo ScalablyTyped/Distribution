@@ -15,16 +15,10 @@ trait SharedStatelessProps extends js.Object {
   var items: js.Array[_]
   var noResultsMsg: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onBlur: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onFocus: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var rootRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   var unfocusMenu: js.UndefOr[js.Function0[_]] = js.undefined
@@ -39,8 +33,8 @@ object SharedStatelessProps {
     getRequiredItemProps: (/* item */ js.Any, /* index */ scala.Double) => RenderItemProps = null,
     highlightedIndex: scala.Int | scala.Double = null,
     noResultsMsg: reactLib.reactMod.ReactNode = null,
-    onBlur: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onFocus: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] => _ = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] => _ = null,
     rootRef: reactLib.reactMod.Ref[_] = null,
     unfocusMenu: () => _ = null
   ): SharedStatelessProps = {

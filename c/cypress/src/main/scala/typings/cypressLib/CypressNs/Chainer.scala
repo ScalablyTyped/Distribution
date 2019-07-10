@@ -418,6 +418,30 @@ trait Chainer[Subject] extends js.Object {
     */
   def apply(chainer: cypressLib.cypressLibStrings.change, obj: js.Object, prop: java.lang.String): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection partially contains the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('contain.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.containDOThtml, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection partially contains the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('contain.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.containDOTtext, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection partially contains the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('contain.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.containDOTvalue, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Assert that the selection contains the given text, using `:contains()`. If the object asserted against is not a jQuery object, or if `contain` is not called as a function, the original implementation will be called.
     * @example
     *    cy.get('#result').should('contain', 'text')
@@ -1164,6 +1188,30 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: cypressLib.cypressLibStrings.notDOTchange, obj: js.Object, prop: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the html of the first element of the selection does not contain the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('not.contain.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.notDOTcontainDOThtml, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection does not contain the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('not.contain.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.notDOTcontainDOTtext, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection does not contain the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('not.contain.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.notDOTcontainDOTvalue, value: java.lang.String): Chainable[Subject] = js.native
   /**
     * Assert that the selection does not contain the given text, using `:contains()`. If the object asserted against is not a jQuery object, or if `contain` is not called as a function, the original implementation will be called.
     * @example

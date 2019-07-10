@@ -43,14 +43,9 @@ trait SelectProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, _]] = js.undefined
   var onClose: js.UndefOr[js.Function0[_]] = js.undefined
   var onCloseResetsInput: js.UndefOr[scala.Boolean] = js.undefined
-  var onFocus: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], _]
-  ] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement], _]] = js.undefined
   var onInputChange: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var onOpen: js.UndefOr[js.Function0[_]] = js.undefined
   var onSelectResetsInput: js.UndefOr[scala.Boolean] = js.undefined
@@ -99,8 +94,8 @@ object SelectProps {
     onChange: /* params */ OnChangeParams => _ = null,
     onClose: () => _ = null,
     onCloseResetsInput: js.UndefOr[scala.Boolean] = js.undefined,
-    onFocus: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onInputChange: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
+    onFocus: /* e */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] => _ = null,
+    onInputChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] => _ = null,
     onOpen: () => _ = null,
     onSelectResetsInput: js.UndefOr[scala.Boolean] = js.undefined,
     openOnClick: js.UndefOr[scala.Boolean] = js.undefined,

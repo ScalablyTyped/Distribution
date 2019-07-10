@@ -35,9 +35,6 @@ class Cluster protected ()
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
-  /**
-    * The cluster identifier. If omitted, Terraform will assign a random, unique identifier.
-    */
   val clusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

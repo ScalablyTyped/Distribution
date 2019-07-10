@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonItemOptions protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonItemOptions {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var el: stdLib.HTMLElement = js.native
   var ionSwipe: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
   /**
@@ -17,6 +17,7 @@ class IonItemOptions protected ()
     */
   /* CompleteClass */
   override var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /* CompleteClass */
   override def fireSwipeEvent(): js.Promise[scala.Unit] = js.native
 }

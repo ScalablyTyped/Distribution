@@ -11,10 +11,7 @@ trait ButtonGroupProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var mode: js.UndefOr[baseuiLib.baseuiLibStrings.checkbox | baseuiLib.baseuiLibStrings.radio] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement], _]
   ] = js.undefined
   var overrides: js.UndefOr[ButtonGroupOverrides] = js.undefined
   var selected: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
@@ -33,7 +30,7 @@ object ButtonGroupProps {
     ariaLabel: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     mode: baseuiLib.baseuiLibStrings.checkbox | baseuiLib.baseuiLibStrings.radio = null,
-    onClick: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event] => _ = null,
+    onClick: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] => _ = null,
     overrides: ButtonGroupOverrides = null,
     selected: scala.Double | js.Array[scala.Double] = null,
     shape: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,

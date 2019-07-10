@@ -58,8 +58,7 @@ trait LaunchConfigurationState extends js.Object {
     */
   val keyName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The name of the launch configuration. If you leave
-    * this blank, Terraform will auto-generate a unique name.
+    * The name of the launch configuration.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

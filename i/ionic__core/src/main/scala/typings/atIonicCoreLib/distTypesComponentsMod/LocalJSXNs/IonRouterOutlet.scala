@@ -17,6 +17,12 @@ trait IonRouterOutlet
   var animation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
+  /**
+    * The mode determines which platform styles to use.
+    */
+  var mode: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md
+  ] = js.undefined
 }
 
 object IonRouterOutlet {
@@ -60,6 +66,7 @@ object IonRouterOutlet {
     itemtype: java.lang.String = null,
     key: java.lang.String | scala.Double = null,
     lang: java.lang.String = null,
+    mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = null,
     onAnimationEnd: /* event */ stdLib.AnimationEvent => scala.Unit = null,
     onAnimationEndCapture: /* event */ stdLib.AnimationEvent => scala.Unit = null,
     onAnimationIteration: /* event */ stdLib.AnimationEvent => scala.Unit = null,
@@ -231,6 +238,7 @@ object IonRouterOutlet {
     if (itemtype != null) __obj.updateDynamic("itemtype")(itemtype)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(js.Any.fromFunction1(onAnimationEndCapture))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))

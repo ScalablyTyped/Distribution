@@ -134,10 +134,6 @@ trait InstanceState extends js.Object {
     * accounts is enabled.
     */
   val iamDatabaseAuthenticationEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
-  /**
-    * The name of the RDS instance,
-    * if omitted, Terraform will assign a random, unique identifier.
-    */
   val identifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique

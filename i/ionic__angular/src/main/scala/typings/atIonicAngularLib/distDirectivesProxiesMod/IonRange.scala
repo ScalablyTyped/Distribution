@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonRange protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonRange {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * How long, in milliseconds, to wait to trigger the `ionChange` event after each change in the range value.
     */
@@ -69,5 +69,6 @@ class IonRange protected ()
     */
   /* CompleteClass */
   override var value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

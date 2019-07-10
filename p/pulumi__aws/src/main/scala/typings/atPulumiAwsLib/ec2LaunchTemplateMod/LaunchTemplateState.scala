@@ -113,9 +113,6 @@ trait LaunchTemplateState extends js.Object {
     * The monitoring option for the instance. See Monitoring below for more details.
     */
   val monitoring: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput]] = js.undefined
-  /**
-    * The name of the launch template. If you leave this blank, Terraform will auto-generate a unique name.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

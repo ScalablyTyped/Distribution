@@ -23,9 +23,6 @@ class Record protected ()
     * Alias record documented below.
     */
   val aliases: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EvaluateTargetHealth]]] = js.native
-  /**
-    * Allow creation of this record in Terraform to overwrite an existing record, if any. This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual Route 53 changes outside Terraform from overwriting this record. `false` by default. This configuration is not recommended for most environments.
-    */
   val allowOverwrite: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
@@ -55,9 +52,6 @@ class Record protected ()
     * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the Terraform configuration string (e.g. `"first255characters\"\"morecharacters"`).
-    */
   val records: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Unique identifier to differentiate records with routing policies from one another. Required if using `failover`, `geolocation`, `latency`, or `weighted` routing policies documented below.

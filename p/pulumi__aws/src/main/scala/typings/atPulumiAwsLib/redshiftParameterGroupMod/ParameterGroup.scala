@@ -22,9 +22,6 @@ class ParameterGroup protected ()
     * Amazon Resource Name (ARN) of parameter group
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the Redshift parameter group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The family of the Redshift parameter group.

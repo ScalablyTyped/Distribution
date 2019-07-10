@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "exorcist"
-version := "v0.4.0-dt-20190322Z-a2cc44"
+version := "v0.4.0-dt-20190322Z-a0ed1f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
   "org.scalablytyped" %%% "std" % "3.5-983486",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-866603")
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-4b600b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

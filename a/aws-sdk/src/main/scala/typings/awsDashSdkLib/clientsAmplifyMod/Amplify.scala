@@ -49,6 +49,29 @@ trait Amplify
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateBranchResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    *  Create a deployment for manual deploy apps. (Apps are not connected to repository) 
+    */
+  def createDeployment(): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createDeployment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateDeploymentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Create a deployment for manual deploy apps. (Apps are not connected to repository) 
+    */
+  def createDeployment(params: CreateDeploymentRequest): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createDeployment(
+    params: CreateDeploymentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateDeploymentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     *  Create a new DomainAssociation on an App 
     */
   def createDomainAssociation(): awsDashSdkLib.libRequestMod.Request[CreateDomainAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -71,6 +94,29 @@ trait Amplify
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDomainAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Create a new webhook on an App. 
+    */
+  def createWebhook(): awsDashSdkLib.libRequestMod.Request[CreateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createWebhook(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Create a new webhook on an App. 
+    */
+  def createWebhook(params: CreateWebhookRequest): awsDashSdkLib.libRequestMod.Request[CreateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createWebhook(
+    params: CreateWebhookRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Delete an existing Amplify App by appId. 
     */
@@ -148,6 +194,29 @@ trait Amplify
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ DeleteJobResult, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[DeleteJobResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    *  Deletes a webhook. 
+    */
+  def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[DeleteWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteWebhook(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Deletes a webhook. 
+    */
+  def deleteWebhook(params: DeleteWebhookRequest): awsDashSdkLib.libRequestMod.Request[DeleteWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteWebhook(
+    params: DeleteWebhookRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     *  Retrieves an existing Amplify App by appId. 
     */
   def getApp(): awsDashSdkLib.libRequestMod.Request[GetAppResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -215,6 +284,29 @@ trait Amplify
     params: GetJobRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetJobResult, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetJobResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Retrieves webhook info that corresponds to a webhookId. 
+    */
+  def getWebhook(): awsDashSdkLib.libRequestMod.Request[GetWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWebhook(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Retrieves webhook info that corresponds to a webhookId. 
+    */
+  def getWebhook(params: GetWebhookRequest): awsDashSdkLib.libRequestMod.Request[GetWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getWebhook(
+    params: GetWebhookRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Lists existing Amplify Apps. 
     */
@@ -292,6 +384,75 @@ trait Amplify
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ ListJobsResult, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[ListJobsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    *  List tags for resource. 
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  List tags for resource. 
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  List webhooks with an app. 
+    */
+  def listWebhooks(): awsDashSdkLib.libRequestMod.Request[ListWebhooksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listWebhooks(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListWebhooksResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListWebhooksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  List webhooks with an app. 
+    */
+  def listWebhooks(params: ListWebhooksRequest): awsDashSdkLib.libRequestMod.Request[ListWebhooksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listWebhooks(
+    params: ListWebhooksRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListWebhooksResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListWebhooksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Start a deployment for manual deploy apps. (Apps are not connected to repository) 
+    */
+  def startDeployment(): awsDashSdkLib.libRequestMod.Request[StartDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startDeployment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartDeploymentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Start a deployment for manual deploy apps. (Apps are not connected to repository) 
+    */
+  def startDeployment(params: StartDeploymentRequest): awsDashSdkLib.libRequestMod.Request[StartDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startDeployment(
+    params: StartDeploymentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartDeploymentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartDeploymentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     *  Starts a new job for a branch, part of an Amplify App. 
     */
   def startJob(): awsDashSdkLib.libRequestMod.Request[StartJobResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -321,6 +482,52 @@ trait Amplify
     params: StopJobRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ StopJobResult, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[StopJobResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Tag resource with tag key and value. 
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Tag resource with tag key and value. 
+    */
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Untag resource with resourceArn. 
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Untag resource with resourceArn. 
+    */
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Updates an existing Amplify App. 
     */
@@ -382,5 +589,28 @@ trait Amplify
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDomainAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Update a webhook. 
+    */
+  def updateWebhook(): awsDashSdkLib.libRequestMod.Request[UpdateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateWebhook(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Update a webhook. 
+    */
+  def updateWebhook(params: UpdateWebhookRequest): awsDashSdkLib.libRequestMod.Request[UpdateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateWebhook(
+    params: UpdateWebhookRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateWebhookResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateWebhookResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

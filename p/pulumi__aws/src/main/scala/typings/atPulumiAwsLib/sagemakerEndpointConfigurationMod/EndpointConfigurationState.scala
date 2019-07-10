@@ -15,7 +15,7 @@ trait EndpointConfigurationState extends js.Object {
     */
   val kmsKeyArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The name of the endpoint configuration. If omitted, Terraform will assign a random, unique name.
+    * The name of the endpoint configuration.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

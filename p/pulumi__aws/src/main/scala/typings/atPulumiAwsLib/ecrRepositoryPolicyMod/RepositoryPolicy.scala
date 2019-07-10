@@ -18,9 +18,6 @@ class RepositoryPolicy protected ()
     */
   def this(name: java.lang.String, args: RepositoryPolicyArgs) = this()
   def this(name: java.lang.String, args: RepositoryPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The registry ID where the repository was created.

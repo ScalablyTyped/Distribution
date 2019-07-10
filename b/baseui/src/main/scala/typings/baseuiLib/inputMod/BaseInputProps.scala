@@ -20,12 +20,12 @@ trait BaseInputProps[T] extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.Ref[T]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], _]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], _]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], _]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], _]] = js.undefined
-  var onKeyPress: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], _]] = js.undefined
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], _]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[T], _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FormEventHandler[T], _]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEventHandler[T], _]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEventHandler[T], _]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEventHandler[T], _]] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEventHandler[T], _]] = js.undefined
   var overrides: js.UndefOr[BaseInputOverrides] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var positive: js.UndefOr[scala.Boolean] = js.undefined
@@ -53,12 +53,12 @@ object BaseInputProps {
     id: java.lang.String = null,
     inputRef: reactLib.reactMod.Ref[T] = null,
     name: java.lang.String = null,
-    onBlur: /* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event] => _ = null,
-    onChange: /* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event] => _ = null,
-    onFocus: /* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event] => _ = null,
-    onKeyDown: /* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event] => _ = null,
-    onKeyPress: /* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event] => _ = null,
-    onKeyUp: /* e */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event] => _ = null,
+    onBlur: /* e */ reactLib.reactMod.FocusEventHandler[T] => _ = null,
+    onChange: /* e */ reactLib.reactMod.FormEventHandler[T] => _ = null,
+    onFocus: /* e */ reactLib.reactMod.FocusEventHandler[T] => _ = null,
+    onKeyDown: /* e */ reactLib.reactMod.KeyboardEventHandler[T] => _ = null,
+    onKeyPress: /* e */ reactLib.reactMod.KeyboardEventHandler[T] => _ = null,
+    onKeyUp: /* e */ reactLib.reactMod.KeyboardEventHandler[T] => _ = null,
     overrides: BaseInputOverrides = null,
     placeholder: java.lang.String = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,

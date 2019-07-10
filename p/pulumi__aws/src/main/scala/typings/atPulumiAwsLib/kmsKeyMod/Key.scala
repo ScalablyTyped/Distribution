@@ -50,9 +50,6 @@ class Key protected ()
     * Defaults to ENCRYPT_DECRYPT, and only symmetric encryption and decryption are supported.
     */
   val keyUsage: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * A valid policy JSON document. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the object.

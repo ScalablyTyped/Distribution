@@ -6,13 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubnetGroupArgs extends js.Object {
-  /**
-    * The description of the neptune subnet group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The name of the neptune subnet group. If omitted, Terraform will assign a random, unique name.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

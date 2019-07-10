@@ -85,8 +85,6 @@ object MapProps {
     onTilesloaded: mapEventHandler = null,
     onTiltChanged: mapEventHandler = null,
     onZoomChanged: mapEventHandler = null,
-    overviewMapControl: js.UndefOr[scala.Boolean] = js.undefined,
-    overviewMapControlOptions: googlemapsLib.googleNs.mapsNs.OverviewMapControlOptions = null,
     panControl: js.UndefOr[scala.Boolean] = js.undefined,
     panControlOptions: googlemapsLib.googleNs.mapsNs.PanControlOptions = null,
     rotateControl: js.UndefOr[scala.Boolean] = js.undefined,
@@ -94,7 +92,6 @@ object MapProps {
     scaleControl: js.UndefOr[scala.Boolean] = js.undefined,
     scaleControlOptions: googlemapsLib.googleNs.mapsNs.ScaleControlOptions = null,
     scrollwheel: js.UndefOr[scala.Boolean] = js.undefined,
-    signInControl: js.UndefOr[scala.Boolean] = js.undefined,
     streetView: googlemapsLib.googleNs.mapsNs.StreetViewPanorama = null,
     streetViewControl: js.UndefOr[scala.Boolean] = js.undefined,
     streetViewControlOptions: googlemapsLib.googleNs.mapsNs.StreetViewControlOptions = null,
@@ -150,8 +147,6 @@ object MapProps {
     if (onTilesloaded != null) __obj.updateDynamic("onTilesloaded")(onTilesloaded)
     if (onTiltChanged != null) __obj.updateDynamic("onTiltChanged")(onTiltChanged)
     if (onZoomChanged != null) __obj.updateDynamic("onZoomChanged")(onZoomChanged)
-    if (!js.isUndefined(overviewMapControl)) __obj.updateDynamic("overviewMapControl")(overviewMapControl)
-    if (overviewMapControlOptions != null) __obj.updateDynamic("overviewMapControlOptions")(overviewMapControlOptions)
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
     if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl)
@@ -159,7 +154,6 @@ object MapProps {
     if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl)
     if (scaleControlOptions != null) __obj.updateDynamic("scaleControlOptions")(scaleControlOptions)
     if (!js.isUndefined(scrollwheel)) __obj.updateDynamic("scrollwheel")(scrollwheel)
-    if (!js.isUndefined(signInControl)) __obj.updateDynamic("signInControl")(signInControl)
     if (streetView != null) __obj.updateDynamic("streetView")(streetView)
     if (!js.isUndefined(streetViewControl)) __obj.updateDynamic("streetViewControl")(streetViewControl)
     if (streetViewControlOptions != null) __obj.updateDynamic("streetViewControlOptions")(streetViewControlOptions)

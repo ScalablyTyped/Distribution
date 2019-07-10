@@ -19,6 +19,9 @@ trait ServerOptions extends js.Object {
   var status: scala.Double
   var urlMatchingOptions: js.Object
   def onAbort(args: js.Any*): scala.Unit
+  def onAnyAbort(route: RouteOptions, proxy: js.Any): scala.Unit
+  def onAnyRequest(route: RouteOptions, proxy: js.Any): scala.Unit
+  def onAnyResponse(route: RouteOptions, proxy: js.Any): scala.Unit
   def onRequest(args: js.Any*): scala.Unit
   def onResponse(args: js.Any*): scala.Unit
   def whitelist(xhr: stdLib.Request): scala.Unit
@@ -33,6 +36,9 @@ object ServerOptions {
     headers: js.Object,
     method: HttpMethod,
     onAbort: /* repeated */ js.Any => scala.Unit,
+    onAnyAbort: (RouteOptions, js.Any) => scala.Unit,
+    onAnyRequest: (RouteOptions, js.Any) => scala.Unit,
+    onAnyResponse: (RouteOptions, js.Any) => scala.Unit,
     onRequest: /* repeated */ js.Any => scala.Unit,
     onResponse: /* repeated */ js.Any => scala.Unit,
     response: js.Any,
@@ -40,7 +46,7 @@ object ServerOptions {
     urlMatchingOptions: js.Object,
     whitelist: stdLib.Request => scala.Unit
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, headers = headers, method = method, onAbort = js.Any.fromFunction1(onAbort), onRequest = js.Any.fromFunction1(onRequest), onResponse = js.Any.fromFunction1(onResponse), response = response, status = status, urlMatchingOptions = urlMatchingOptions, whitelist = js.Any.fromFunction1(whitelist))
+    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, headers = headers, method = method, onAbort = js.Any.fromFunction1(onAbort), onAnyAbort = js.Any.fromFunction2(onAnyAbort), onAnyRequest = js.Any.fromFunction2(onAnyRequest), onAnyResponse = js.Any.fromFunction2(onAnyResponse), onRequest = js.Any.fromFunction1(onRequest), onResponse = js.Any.fromFunction1(onResponse), response = response, status = status, urlMatchingOptions = urlMatchingOptions, whitelist = js.Any.fromFunction1(whitelist))
   
     __obj.asInstanceOf[ServerOptions]
   }

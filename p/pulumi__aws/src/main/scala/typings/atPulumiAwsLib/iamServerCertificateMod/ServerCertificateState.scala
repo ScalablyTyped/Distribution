@@ -22,8 +22,7 @@ trait ServerCertificateState extends js.Object {
     */
   val certificateChain: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The name of the Server Certificate. Do not include the
-    * path in this value. If omitted, Terraform will assign a random, unique name.
+    * The name of the Server Certificate
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

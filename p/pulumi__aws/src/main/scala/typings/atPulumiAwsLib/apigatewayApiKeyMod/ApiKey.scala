@@ -23,9 +23,6 @@ class ApiKey protected ()
     * The creation date of the API key
     */
   val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The API key description. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether the API key can be used by callers. Defaults to `true`.

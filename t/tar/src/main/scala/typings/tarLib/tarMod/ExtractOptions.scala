@@ -51,6 +51,16 @@ trait ExtractOptions extends js.Object {
   var `keep-newer-files`: js.UndefOr[scala.Boolean] = js.undefined
   var m: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * The maximum size of meta entries that is supported. Defaults to 1 MB.
+    */
+  var maxMetaEntrySize: js.UndefOr[scala.Double] = js.undefined
+  // The following options are mostly internal, but can be modified in some
+  // advanced use cases, such as re-using caches between runs.
+  /**
+    * The maximum buffer size for fs.read() operations (in bytes). Defaults to 16 MB.
+    */
+  var maxReadSize: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Set to true to keep the existing file on disk if it's newer than
     * the file in the archive.
     */
@@ -150,6 +160,8 @@ object ExtractOptions {
     `keep-newer`: js.UndefOr[scala.Boolean] = js.undefined,
     `keep-newer-files`: js.UndefOr[scala.Boolean] = js.undefined,
     m: js.UndefOr[scala.Boolean] = js.undefined,
+    maxMetaEntrySize: scala.Int | scala.Double = null,
+    maxReadSize: scala.Int | scala.Double = null,
     newer: js.UndefOr[scala.Boolean] = js.undefined,
     `no-mtime`: js.UndefOr[scala.Boolean] = js.undefined,
     noMtime: js.UndefOr[scala.Boolean] = js.undefined,
@@ -179,6 +191,8 @@ object ExtractOptions {
     if (!js.isUndefined(`keep-newer`)) __obj.updateDynamic("keep-newer")(`keep-newer`)
     if (!js.isUndefined(`keep-newer-files`)) __obj.updateDynamic("keep-newer-files")(`keep-newer-files`)
     if (!js.isUndefined(m)) __obj.updateDynamic("m")(m)
+    if (maxMetaEntrySize != null) __obj.updateDynamic("maxMetaEntrySize")(maxMetaEntrySize.asInstanceOf[js.Any])
+    if (maxReadSize != null) __obj.updateDynamic("maxReadSize")(maxReadSize.asInstanceOf[js.Any])
     if (!js.isUndefined(newer)) __obj.updateDynamic("newer")(newer)
     if (!js.isUndefined(`no-mtime`)) __obj.updateDynamic("no-mtime")(`no-mtime`)
     if (!js.isUndefined(noMtime)) __obj.updateDynamic("noMtime")(noMtime)

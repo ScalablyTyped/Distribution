@@ -18,9 +18,6 @@ class SubnetGroup protected ()
     */
   def this(name: java.lang.String, args: SubnetGroupArgs) = this()
   def this(name: java.lang.String, args: SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * Description for the cache subnet group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name for the cache subnet group. Elasticache converts this name to lowercase.

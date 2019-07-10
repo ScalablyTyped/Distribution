@@ -18,9 +18,6 @@ class ParameterGroup protected ()
     */
   def this(name: java.lang.String, args: ParameterGroupArgs) = this()
   def this(name: java.lang.String, args: ParameterGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The description of the ElastiCache parameter group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The family of the ElastiCache parameter group.

@@ -133,6 +133,7 @@ trait DOMAttributes[T] extends js.Object {
   var onWheel: js.UndefOr[js.Function1[/* event */ stdLib.WheelEvent, scala.Unit]] = js.undefined
   var onWheelCapture: js.UndefOr[js.Function1[/* event */ stdLib.WheelEvent, scala.Unit]] = js.undefined
   var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], scala.Unit]] = js.undefined
+  var slot: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object DOMAttributes {
@@ -249,7 +250,8 @@ object DOMAttributes {
     onTransitionEndCapture: /* event */ stdLib.TransitionEvent => scala.Unit = null,
     onWheel: /* event */ stdLib.WheelEvent => scala.Unit = null,
     onWheelCapture: /* event */ stdLib.WheelEvent => scala.Unit = null,
-    ref: /* elm */ js.UndefOr[T] => scala.Unit = null
+    ref: /* elm */ js.UndefOr[T] => scala.Unit = null,
+    slot: java.lang.String = null
   ): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
@@ -364,6 +366,7 @@ object DOMAttributes {
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
+    if (slot != null) __obj.updateDynamic("slot")(slot)
     __obj.asInstanceOf[DOMAttributes[T]]
   }
 }

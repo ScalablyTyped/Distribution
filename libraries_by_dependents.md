@@ -2711,6 +2711,7 @@
 | 38 | [react-native-fetch-blob](./r/react-native-fetch-blob) | A module provides upload, download, and files acce
 | 38 | [react-rnd](./r/react-rnd) | -
 | 38 | [react-sidebar](./r/react-sidebar) | A sidebar component for React.
+| 38 | [redux-api-middleware](./r/redux-api-middleware) | Redux middleware for calling an API.
 | 38 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools.
 | 38 | [rmfr](./r/rmfr) | Node.js implementation of rm -fr – recursive remov
 | 38 | [rwlock](./r/rwlock) | A read/write lock implementation for Node.
@@ -2917,6 +2918,7 @@
 | 31 | [istanbul-lib-source-maps](./i/istanbul-lib-source-maps) | Source maps support for istanbul
 | 31 | [keyv](./k/keyv) | Simple key-value storage with support for multiple
 | 31 | [lodash_dot_mapkeys](./l/lodash_dot_mapkeys) | The lodash method _.mapKeys exported as a module.
+| 31 | [logger](./l/logger) | A simple logging library that combines the simple 
 | 31 | [lower-case](./l/lower-case) | Lowercase a string
 | 31 | [mem-cache](./m/mem-cache) | simple in memory key/value cache with autoclean by
 | 31 | [node-powershell](./n/node-powershell) | Easily run PowerShell from your NodeJS app
@@ -3738,6 +3740,7 @@
 | 15 | [react-localization](./r/react-localization) | Simple module to localize the React interface usin
 | 15 | [react-places-autocomplete](./r/react-places-autocomplete) | A React component for Google Maps Places Autocompl
 | 15 | [react-plotly_dot_js](./r/react-plotly_dot_js) | A plotly.js react component from Plotly
+| 15 | [react-sizes](./r/react-sizes) | Hoc to easily map window sizes to props.
 | 15 | [react-treeview](./r/react-treeview) | Easy, light, flexible tree view made with React.
 | 15 | [rehype-react](./r/rehype-react) | Compile Hast tree to React with remark
 | 15 | [rx-lite-aggregates](./r/rx-lite-aggregates) | Lightweight library with aggregate functions for c
@@ -6131,6 +6134,7 @@
 | 0 | [check-sum](./c/check-sum) | Assert multiple checksums on a stream in parallel.
 | 0 | [chordsheetjs](./c/chordsheetjs) | A JavaScript library for parsing and formatting ch
 | 0 | [chui](./c/chui) | A module for creating Web apps with ChocolateChip-
+| 0 | [chunk-text](./c/chunk-text) | 🔪 chunk/split a string by length without cutting/
 | 0 | [clovelced-plugin-audioman](./c/clovelced-plugin-audiomanagement) | A plugin to manage audio mode and volume
 | 0 | [coinbase-commerce-node](./c/coinbase-commerce-node) | The Official Coinbase Commerce SDK for Node.js
 | 0 | [color-check](./c/color-check) | Color Check is a very tine library for checking yo
@@ -6647,6 +6651,7 @@
 | 0 | [whitelist-object](./w/whitelist-object) | returns specified keys for passed in object
 | 0 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services.
 | 0 | [winston-dynamodb](./w/winston-dynamodb) | A Winston transport for Amazon DynamoDB
+| 0 | [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t
 | 0 | [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j
 | 0 | [xmljs](./x/xmljs) | A small and simple package which can traverse a XM
 | 0 | [xrm](./x/xrm) | -

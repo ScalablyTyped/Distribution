@@ -71,7 +71,7 @@ class ClusterInstance protected ()
     */
   val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The indentifier for the RDS instance, if omitted, Terraform will assign a random, unique identifier.
+    * The Instance identifier
     */
   val identifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

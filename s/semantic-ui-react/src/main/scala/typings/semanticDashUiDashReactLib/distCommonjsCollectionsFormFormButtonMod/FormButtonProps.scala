@@ -26,7 +26,7 @@ object FormButtonProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.UndefOr[scala.Boolean] = js.undefined,
+    error: scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = null,
     floated: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS = null,
     fluid: js.UndefOr[scala.Boolean] = js.undefined,
     icon: scala.Boolean | semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
@@ -63,7 +63,7 @@ object FormButtonProps {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (floated != null) __obj.updateDynamic("floated")(floated)
     if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

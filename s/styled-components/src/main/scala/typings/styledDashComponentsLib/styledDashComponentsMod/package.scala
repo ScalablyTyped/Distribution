@@ -15,8 +15,8 @@ package object styledDashComponentsMod {
     reactLib.reactMod.ForwardRefExoticComponent[styledDashComponentsLib.WithOptionalThemeComponentPropsWithRefCT[T]]
   ]
   type CSSKeyframes = js.Object with org.scalablytyped.runtime.StringDictionary[CSSObject]
-  type CSSObject = (csstypeLib.csstypeMod.Properties[java.lang.String | scala.Double]) with styledDashComponentsLib.styledDashComponentsLibStrings.CSSObject with js.Any
   type CSSProp[T] = java.lang.String | CSSObject | FlattenInterpolation[ThemeProps[T]]
+  type CSSProperties = csstypeLib.csstypeMod.Properties[java.lang.String | scala.Double]
   // Any prop that has a default prop becomes optional, but its type is unchanged
   // Undeclared default props are augmented into the resulting allowable attributes
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened
@@ -32,7 +32,7 @@ package object styledDashComponentsMod {
     - FlattenInterpolation[P]
     - InterpolationFunction[P]
   */
-  type Interpolation[P] = _Interpolation[P] | java.lang.String | scala.Double | FalseyValue | CSSObject
+  type Interpolation[P] = _Interpolation[P] | java.lang.String | scala.Double | FalseyValue
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - scala.Double
@@ -41,7 +41,7 @@ package object styledDashComponentsMod {
     - StyledComponentInterpolation
     - CSSObject
   */
-  type InterpolationValue = _InterpolationValue | java.lang.String | scala.Double | FalseyValue | CSSObject
+  type InterpolationValue = _InterpolationValue | java.lang.String | scala.Double | FalseyValue
   // extracts React defaultProps
   type ReactDefaultProps[C] = js.Any
   type ReactDefaultizedProps[C, P] = P | (Defaultize[P, js.Any])
@@ -49,7 +49,7 @@ package object styledDashComponentsMod {
     - InterpolationValue
     - FlattenSimpleInterpolation
   */
-  type SimpleInterpolation = _SimpleInterpolation | java.lang.String | scala.Double | FalseyValue | CSSObject
+  type SimpleInterpolation = _SimpleInterpolation | java.lang.String | scala.Double | FalseyValue
   type StyledComponent[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (// the "string" allows this to be used as an object key
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
   java.lang.String) with (StyledComponentBase[C, T, O, A])

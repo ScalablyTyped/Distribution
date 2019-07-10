@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class IonRouterOutlet protected ()
   extends atAngularCoreLib.atAngularCoreMod.OnDestroy
      with atAngularCoreLib.atAngularCoreMod.OnInit {
-  def this(parentContexts: atAngularRouterLib.atAngularRouterMod.ChildrenOutletContexts, location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, name: java.lang.String, tabs: java.lang.String, changeDetector: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, config: atIonicAngularLib.distProvidersConfigMod.Config, navCtrl: atIonicAngularLib.distProvidersNavDashControllerMod.NavController, commonLocation: atAngularCommonLib.atAngularCommonMod.Location, elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], router: atAngularRouterLib.atAngularRouterMod.Router, zone: atAngularCoreLib.atAngularCoreMod.NgZone, activatedRoute: atAngularRouterLib.atAngularRouterMod.ActivatedRoute) = this()
-  def this(parentContexts: atAngularRouterLib.atAngularRouterMod.ChildrenOutletContexts, location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, name: java.lang.String, tabs: java.lang.String, changeDetector: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, config: atIonicAngularLib.distProvidersConfigMod.Config, navCtrl: atIonicAngularLib.distProvidersNavDashControllerMod.NavController, commonLocation: atAngularCommonLib.atAngularCommonMod.Location, elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], router: atAngularRouterLib.atAngularRouterMod.Router, zone: atAngularCoreLib.atAngularCoreMod.NgZone, activatedRoute: atAngularRouterLib.atAngularRouterMod.ActivatedRoute, parentOutlet: IonRouterOutlet) = this()
+  def this(parentContexts: atAngularRouterLib.atAngularRouterMod.ChildrenOutletContexts, location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, name: java.lang.String, tabs: java.lang.String, config: atIonicAngularLib.distProvidersConfigMod.Config, navCtrl: atIonicAngularLib.distProvidersNavDashControllerMod.NavController, commonLocation: atAngularCommonLib.atAngularCommonMod.Location, elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], router: atAngularRouterLib.atAngularRouterMod.Router, zone: atAngularCoreLib.atAngularCoreMod.NgZone, activatedRoute: atAngularRouterLib.atAngularRouterMod.ActivatedRoute) = this()
+  def this(parentContexts: atAngularRouterLib.atAngularRouterMod.ChildrenOutletContexts, location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, name: java.lang.String, tabs: java.lang.String, config: atIonicAngularLib.distProvidersConfigMod.Config, navCtrl: atIonicAngularLib.distProvidersNavDashControllerMod.NavController, commonLocation: atAngularCommonLib.atAngularCommonMod.Location, elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], router: atAngularRouterLib.atAngularRouterMod.Router, zone: atAngularCoreLib.atAngularCoreMod.NgZone, activatedRoute: atAngularRouterLib.atAngularRouterMod.ActivatedRoute, parentOutlet: IonRouterOutlet) = this()
   var _activatedRoute: js.Any = js.native
   var _swipeGesture: js.UndefOr[js.Any] = js.native
   var activateEvents: atAngularCoreLib.atAngularCoreMod.EventEmitter[_] = js.native
@@ -20,7 +20,6 @@ class IonRouterOutlet protected ()
   val activatedRouteData: js.Any = js.native
   var activatedView: js.Any = js.native
   var animated: scala.Boolean = js.native
-  var changeDetector: js.Any = js.native
   val component: js.Object = js.native
   var config: js.Any = js.native
   /**

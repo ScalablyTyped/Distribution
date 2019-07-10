@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @beta
   * Provides information about the invocation of a cancelable custom function.
   * A cancelable custom function can provide a handler for the onCanceled event.
   *
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation._
   */
 trait CancelableInvocation extends Invocation {
   /**
-    * @beta
     * Event handler called when the custom function is canceled.
     */
   def onCanceled(): scala.Unit

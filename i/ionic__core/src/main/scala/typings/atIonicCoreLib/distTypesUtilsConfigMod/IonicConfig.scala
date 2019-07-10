@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait IonicConfig extends js.Object {
   var _forceStatusbarPadding: js.UndefOr[scala.Boolean] = js.undefined
   var _testing: js.UndefOr[scala.Boolean] = js.undefined
+  var _zoneGate: js.UndefOr[js.Function1[/* h */ js.Function0[_], _]] = js.undefined
   /**
     * Provides a custom enter animation for all `ion-action-sheet`, overriding the default "animation".
     */
@@ -197,6 +198,7 @@ object IonicConfig {
   def apply(
     _forceStatusbarPadding: js.UndefOr[scala.Boolean] = js.undefined,
     _testing: js.UndefOr[scala.Boolean] = js.undefined,
+    _zoneGate: /* h */ js.Function0[_] => _ = null,
     actionSheetEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
     actionSheetLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
     alertEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
@@ -239,6 +241,7 @@ object IonicConfig {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(_forceStatusbarPadding)) __obj.updateDynamic("_forceStatusbarPadding")(_forceStatusbarPadding)
     if (!js.isUndefined(_testing)) __obj.updateDynamic("_testing")(_testing)
+    if (_zoneGate != null) __obj.updateDynamic("_zoneGate")(js.Any.fromFunction1(_zoneGate))
     if (actionSheetEnter != null) __obj.updateDynamic("actionSheetEnter")(actionSheetEnter)
     if (actionSheetLeave != null) __obj.updateDynamic("actionSheetLeave")(actionSheetLeave)
     if (alertEnter != null) __obj.updateDynamic("alertEnter")(alertEnter)

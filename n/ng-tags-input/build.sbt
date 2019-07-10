@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ng-tags-input"
-version := "3.2-dt-20190212Z-122441"
+version := "3.2-dt-20190212Z-f99112"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-c98868",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-e41730",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -23,7 +23,7 @@ trait RoleArgs extends js.Object {
     */
   val maxSessionDuration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
-    * The name of the role. If omitted, Terraform will assign a random, unique name.
+    * The name of the role.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

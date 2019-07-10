@@ -22,9 +22,6 @@ class ParameterGroup protected ()
     * The ARN of the db parameter group.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the DB parameter group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The family of the DB parameter group.

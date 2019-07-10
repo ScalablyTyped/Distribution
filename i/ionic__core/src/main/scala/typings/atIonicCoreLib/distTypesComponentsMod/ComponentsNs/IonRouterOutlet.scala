@@ -20,6 +20,10 @@ trait IonRouterOutlet extends js.Object {
   var delegate: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
   ] = js.native
+  /**
+    * The mode determines which platform styles to use.
+    */
+  var mode: atIonicCoreLib.atIonicCoreLibStrings.ios | atIonicCoreLib.atIonicCoreLibStrings.md = js.native
   var swipeHandler: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwipeGestureHandler */ js.Any
   ] = js.native

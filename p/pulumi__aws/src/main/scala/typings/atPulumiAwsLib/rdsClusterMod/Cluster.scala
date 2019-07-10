@@ -30,7 +30,7 @@ class Cluster protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next Terraform apply. It is recommended to specify 3 AZs or use [the `lifecycle` configuration block `ignore_changes` argument](https://www.terraform.io/docs/configuration/resources.html#ignore_changes) if necessary.
+    * The availability zone of the instance
     */
   val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
@@ -42,7 +42,7 @@ class Cluster protected ()
     */
   val backupRetentionPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
-    * The cluster identifier. If omitted, Terraform will assign a random, unique identifier.
+    * The RDS Cluster Identifier
     */
   val clusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

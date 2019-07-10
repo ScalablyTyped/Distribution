@@ -38,9 +38,6 @@ class GraphQLApi protected ()
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
   val openidConnectConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AuthTtl]] = js.native
-  /**
-    * The schema definition, in GraphQL schema language format. Terraform cannot perform drift detection of this configuration.
-    */
   val schema: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.

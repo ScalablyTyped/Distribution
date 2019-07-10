@@ -22,9 +22,6 @@ class ParameterGroup protected ()
     * The Neptune parameter group Amazon Resource Name (ARN).
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the Neptune parameter group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The family of the Neptune parameter group.

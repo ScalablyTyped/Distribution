@@ -18,9 +18,6 @@ class SecurityGroup protected ()
     */
   def this(name: java.lang.String, args: SecurityGroupArgs) = this()
   def this(name: java.lang.String, args: SecurityGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The description of the Redshift security group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of ingress rules.

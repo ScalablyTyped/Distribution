@@ -59,11 +59,11 @@ trait MetricAlarm extends js.Object {
     */
   var InsufficientDataActions: js.UndefOr[ResourceList] = js.undefined
   /**
-    * The name of the metric associated with the alarm.
+    * The name of the metric associated with the alarm, if this is an alarm based on a single metric.
     */
   var MetricName: js.UndefOr[MetricName] = js.undefined
   /**
-    * 
+    * An array of MetricDataQuery structures, used in an alarm based on a metric math expression. Each structure either retrieves a metric or performs a math expression. One item in the Metrics array is the math expression that the alarm watches. This expression by designated by having ReturnValue set to true.
     */
   var Metrics: js.UndefOr[MetricDataQueries] = js.undefined
   /**
@@ -103,6 +103,10 @@ trait MetricAlarm extends js.Object {
     */
   var Threshold: js.UndefOr[Threshold] = js.undefined
   /**
+    * In an alarm based on an anomaly detection model, this is the ID of the ANOMALY_DETECTION_BAND function used as the threshold for the alarm.
+    */
+  var ThresholdMetricId: js.UndefOr[MetricId] = js.undefined
+  /**
     * Sets how this alarm is to handle missing data points. If this parameter is omitted, the default behavior of missing is used.
     */
   var TreatMissingData: js.UndefOr[TreatMissingData] = js.undefined
@@ -139,6 +143,7 @@ object MetricAlarm {
     StateValue: StateValue = null,
     Statistic: Statistic = null,
     Threshold: js.UndefOr[Threshold] = js.undefined,
+    ThresholdMetricId: MetricId = null,
     TreatMissingData: TreatMissingData = null,
     Unit: StandardUnit = null
   ): MetricAlarm = {
@@ -167,6 +172,7 @@ object MetricAlarm {
     if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
     if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold)
+    if (ThresholdMetricId != null) __obj.updateDynamic("ThresholdMetricId")(ThresholdMetricId)
     if (TreatMissingData != null) __obj.updateDynamic("TreatMissingData")(TreatMissingData)
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAlarm]

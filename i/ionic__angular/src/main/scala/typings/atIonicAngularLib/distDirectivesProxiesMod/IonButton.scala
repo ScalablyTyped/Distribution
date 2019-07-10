@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonButton protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonButton {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * The type of button.
     */
@@ -38,5 +38,6 @@ class IonButton protected ()
     */
   /* CompleteClass */
   override var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

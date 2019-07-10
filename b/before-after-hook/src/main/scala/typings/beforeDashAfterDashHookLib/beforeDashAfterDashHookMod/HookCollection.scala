@@ -16,14 +16,14 @@ trait HookCollection extends js.Object {
     */
   def apply(
     name: java.lang.String,
-    options: js.Any,
-    method: js.Function1[/* options */ js.Any, js.Promise[_] | _]
+    method: js.Function1[/* options */ js.Any, js.Promise[_] | _],
+    options: js.Any
   ): js.Promise[_] = js.native
   def apply(name: js.Array[java.lang.String], method: js.Function1[/* options */ js.Any, js.Promise[_] | _]): js.Promise[_] = js.native
   def apply(
     name: js.Array[java.lang.String],
-    options: js.Any,
-    method: js.Function1[/* options */ js.Any, js.Promise[_] | _]
+    method: js.Function1[/* options */ js.Any, js.Promise[_] | _],
+    options: js.Any
   ): js.Promise[_] = js.native
   /**
     * Add after hook for given name. Returns `hook` instance for chaining.

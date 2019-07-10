@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ValidateMatchmakingRuleSetOutput extends js.Object {
   /**
-    * Response indicating whether or not the rule set is valid.
+    * Response indicating whether the rule set is valid.
     */
   var Valid: js.UndefOr[BooleanModel] = js.undefined
 }

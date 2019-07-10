@@ -12,9 +12,6 @@ trait LogGroupArgs extends js.Object {
     * permissions for the CMK whenever the encrypted data is requested.
     */
   val kmsKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The name of the log group. If omitted, Terraform will assign a random, unique name.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

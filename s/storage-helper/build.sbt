@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storage-helper"
-version := "1.4-dt-20181018Z-760454"
+version := "1.4-dt-20190709Z-760454"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

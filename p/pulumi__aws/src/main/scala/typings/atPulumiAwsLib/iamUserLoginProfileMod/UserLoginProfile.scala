@@ -18,13 +18,7 @@ class UserLoginProfile protected ()
     */
   def this(name: java.lang.String, args: UserLoginProfileArgs) = this()
   def this(name: java.lang.String, args: UserLoginProfileArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The encrypted password, base64 encoded. Only available if password was handled on Terraform resource creation, not import.
-    */
   val encryptedPassword: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on Terraform resource creation, not import.
-    */
   val keyFingerprint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonBackdrop protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonBackdrop {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var el: stdLib.HTMLElement = js.native
   var ionBackdropTap: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
   /**
@@ -27,5 +27,6 @@ class IonBackdrop protected ()
     */
   /* CompleteClass */
   override var visible: scala.Boolean = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

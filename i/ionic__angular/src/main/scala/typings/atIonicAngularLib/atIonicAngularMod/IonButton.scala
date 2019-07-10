@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonButton protected ()
   extends atIonicAngularLib.distMod.IonButton {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
 }
 

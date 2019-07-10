@@ -13,9 +13,9 @@ object ^ extends js.Object {
   val DarkThemeMove: baseuiLib.Theme = js.native
   val LightTheme: baseuiLib.Theme = js.native
   val LightThemeMove: baseuiLib.Theme = js.native
-  val LightThemePrimitives: baseuiLib.ThemePrimitives = js.native
   val LocaleProvider: reactLib.reactMod.FC[LocaleProviderProps] = js.native
   val ThemeProvider: reactLib.reactMod.FC[ThemeProviderProps] = js.native
+  val lightThemePrimitives: baseuiLib.ThemePrimitives = js.native
   def createTheme(primitives: baseuiLib.ThemePrimitives): baseuiLib.Theme = js.native
   def createTheme(primitives: baseuiLib.ThemePrimitives, overrides: js.Object): baseuiLib.Theme = js.native
   def mergeOverrides[T](): baseuiLib.Overrides[T] = js.native

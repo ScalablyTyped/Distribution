@@ -31,9 +31,6 @@ trait ClusterInstanceArgs extends js.Object {
     * The neptune engine version.
     */
   val engineVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The indentifier for the neptune instance, if omitted, Terraform will assign a random, unique identifier.
-    */
   val identifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.

@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Queue[T]
   extends nodeLib.eventsMod.EventEmitter {
+  /**
+    * Queue client (used to add jobs, pause queues, etc);
+    */
+  var client: ioredisLib.ioredisMod.Redis = js.native
    // tslint:disable-line unified-signatures
   /**
     * Array of Redis clients the queue uses
@@ -33,6 +37,10 @@ trait Queue[T]
   def add(name: java.lang.String, data: T): js.Promise[Job[T]] = js.native
   def add(name: java.lang.String, data: T, opts: JobOptions): js.Promise[Job[T]] = js.native
   /**
+    * Returns Queue name in base64 encoded format
+    */
+  def base64Name(): java.lang.String = js.native
+  /**
     * Tells the queue remove all jobs created outside of a grace period in milliseconds.
     * You can clean the jobs with the following states: completed, wait (typo for waiting), active, delayed, and failed.
     * @param grace Grace period in milliseconds.
@@ -42,6 +50,10 @@ trait Queue[T]
   def clean(grace: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   def clean(grace: scala.Double, status: JobStatusClean): js.Promise[js.Array[Job[T]]] = js.native
   def clean(grace: scala.Double, status: JobStatusClean, limit: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
+  /**
+    * Returns Queue name with keyPrefix (default: 'bull')
+    */
+  def clientName(): java.lang.String = js.native
   /**
     * Closes the underlying redis client. Use this to perform a graceful shutdown.
     *
@@ -113,6 +125,13 @@ trait Queue[T]
     */
   def getJobCounts(): js.Promise[JobCounts] = js.native
   /**
+    * Returns a object with the logs according to the start and end arguments. The returned count
+    * value is the total amount of logs, useful for implementing pagination.
+    */
+  def getJobLogs(jobId: java.lang.String): js.Promise[bullLib.Anon_Count] = js.native
+  def getJobLogs(jobId: java.lang.String, start: scala.Double): js.Promise[bullLib.Anon_Count] = js.native
+  def getJobLogs(jobId: java.lang.String, start: scala.Double, end: scala.Double): js.Promise[bullLib.Anon_Count] = js.native
+  /**
     * Returns a promise that will return an array of job instances of the given types.
     * Optional parameters for range and ordering are provided.
     */
@@ -146,6 +165,10 @@ trait Queue[T]
     * Returns a promise that resolves with the quantity of waiting jobs.
     */
   def getWaitingCount(): js.Promise[scala.Double] = js.native
+  /**
+    * Returns Redis clients array which belongs to current Queue
+    */
+  def getWorkers(): js.Promise[js.Array[ioredisLib.ioredisMod.Redis]] = js.native
   /**
     * Returns a promise that resolves when Redis is connected and the queue is ready to accept jobs.
     * This replaces the `ready` event emitted on Queue in previous verisons.
@@ -221,6 +244,12 @@ trait Queue[T]
     */
   @JSName("on")
   def on_waiting(event: bullLib.bullLibStrings.waiting, callback: WaitingEventCallback): this.type = js.native
+  /**
+    * Returns Redis clients array which belongs to current Queue from string with all redis clients
+    *
+    * @param list String with all redis clients
+    */
+  def parseClientList(list: java.lang.String): js.Array[ioredisLib.ioredisMod.Redis] = js.native
   /**
     * Returns a promise that resolves when the queue is paused.
     *
@@ -349,5 +378,9 @@ trait Queue[T]
     */
   def resume(): js.Promise[scala.Unit] = js.native
   def resume(isLocal: scala.Boolean): js.Promise[scala.Unit] = js.native
+  /**
+    * Set clientName to Redis.client
+    */
+  def setWorkerName(): js.Promise[_] = js.native
 }
 

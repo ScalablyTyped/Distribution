@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonSlides protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSlides {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var el: stdLib.HTMLElement = js.native
   var ionSlideDidChange: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
   var ionSlideDoubleTap: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
@@ -27,5 +27,6 @@ class IonSlides protected ()
   var ionSlideTransitionStart: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
   var ionSlideWillChange: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
   var ionSlidesDidLoad: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

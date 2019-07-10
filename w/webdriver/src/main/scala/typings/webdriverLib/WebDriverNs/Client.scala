@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 // mjsonwp types
 // chromium types
 // saucelabs types
+// selenium types
 @js.native
 trait Client extends js.Object {
   def _getWindowSize(): js.Object = js.native
@@ -62,6 +63,7 @@ trait Client extends js.Object {
     script: java.lang.String,
     args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): js.Any = js.native
+  def file(file: java.lang.String): java.lang.String = js.native
   def findElement(using: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def findElementFromElement(using: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def findElements(using: java.lang.String, value: java.lang.String): js.Array[java.lang.String] = js.native
@@ -98,6 +100,7 @@ trait Client extends js.Object {
   def getElementText(): java.lang.String = js.native
   def getElementValue(): java.lang.String | scala.Null = js.native
   def getGeoLocation(): js.Object = js.native
+  def getHubConfig(): js.Object = js.native
   def getLocalStorage(): js.Array[java.lang.String] = js.native
   def getLocalStorageItem(key: java.lang.String): java.lang.String = js.native
   def getLocalStorageSize(): scala.Double = js.native
@@ -130,6 +133,8 @@ trait Client extends js.Object {
   def getWindowHandles(): js.Array[java.lang.String] = js.native
   def getWindowPosition(): js.Object = js.native
   def getWindowRect(): js.Object = js.native
+  def gridProxyDetails(id: java.lang.String): js.Object = js.native
+  def gridTestSession(session: java.lang.String): js.Object = js.native
   def gsmCall(phoneNumber: java.lang.String, action: java.lang.String): scala.Unit = js.native
   def gsmSignal(signalStrength: java.lang.String): scala.Unit = js.native
   def gsmSignal(signalStrength: java.lang.String, signalStrengh: java.lang.String): scala.Unit = js.native
@@ -165,6 +170,7 @@ trait Client extends js.Object {
   def longPressKeyCode(keycode: scala.Double): scala.Unit = js.native
   def longPressKeyCode(keycode: scala.Double, metastate: scala.Double): scala.Unit = js.native
   def longPressKeyCode(keycode: scala.Double, metastate: scala.Double, flags: scala.Double): scala.Unit = js.native
+  def manageSeleniumHubLifecycle(action: java.lang.String): scala.Unit = js.native
   def maximizeWindow(): js.Object = js.native
   @JSName("maximizeWindow")
   def maximizeWindow_Unit(): scala.Unit = js.native
@@ -350,6 +356,5 @@ trait Client extends js.Object {
   def touchUp(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def unlock(): scala.Unit = js.native
   def updateSettings(settings: js.Object): scala.Unit = js.native
-  def uploadFile(file: java.lang.String): java.lang.String = js.native
 }
 

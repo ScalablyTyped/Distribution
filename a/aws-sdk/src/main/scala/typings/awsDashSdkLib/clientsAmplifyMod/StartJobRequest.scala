@@ -27,15 +27,15 @@ trait StartJobRequest extends js.Object {
     */
   var commitTime: js.UndefOr[CommitTime] = js.undefined
   /**
-    *  Unique Id for the Job. 
+    *  Unique Id for an existing job. Required for "RETRY" JobType. 
     */
   var jobId: js.UndefOr[JobId] = js.undefined
   /**
-    *  Reason for the Job. 
+    *  Descriptive reason for starting this job. 
     */
   var jobReason: js.UndefOr[JobReason] = js.undefined
   /**
-    *  Type for the Job. 
+    *  Type for the Job. Available JobTypes are: \n "RELEASE": Start a new job with the latest change from the specified branch. Only available for apps that have connected to a repository. "RETRY": Retry an existing job. JobId is required for this type of job. 
     */
   var jobType: JobType
 }

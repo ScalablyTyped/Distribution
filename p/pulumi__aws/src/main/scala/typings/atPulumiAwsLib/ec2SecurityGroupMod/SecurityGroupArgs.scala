@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SecurityGroupArgs extends js.Object {
   /**
-    * The security group description. Defaults to
-    * "Managed by Terraform". Cannot be "". __NOTE__: This field maps to the AWS
-    * `GroupDescription` attribute, for which there is no Update API. If you'd like
-    * to classify your security groups in a way that can be updated, use `tags`.
+    * The description of the security group
     */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -34,8 +31,7 @@ trait SecurityGroupArgs extends js.Object {
     ]
   ] = js.undefined
   /**
-    * The name of the security group. If omitted, Terraform will
-    * assign a random, unique name
+    * The name of the security group
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -43,15 +39,6 @@ trait SecurityGroupArgs extends js.Object {
     * prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * Instruct Terraform to revoke all of the
-    * Security Groups attached ingress and egress rules before deleting the rule
-    * itself. This is normally not needed, however certain AWS services such as
-    * Elastic Map Reduce may automatically add required rules to security groups used
-    * with the service, and those rules may contain a cyclic dependency that prevent
-    * the security groups from being destroyed without removing the dependency first.
-    * Default `false`
-    */
   val revokeRulesOnDelete: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

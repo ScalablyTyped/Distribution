@@ -11,6 +11,14 @@ trait UpdateAppRequest extends js.Object {
     */
   var appId: AppId
   /**
+    *  Automated branch creation config for the Amplify App. 
+    */
+  var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.undefined
+  /**
+    *  Automated branch creation glob patterns for the Amplify App. 
+    */
+  var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.undefined
+  /**
     *  Basic Authorization credentials for an Amplify App. 
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
@@ -26,6 +34,10 @@ trait UpdateAppRequest extends js.Object {
     *  Description for an Amplify App. 
     */
   var description: js.UndefOr[Description] = js.undefined
+  /**
+    *  Enables automated branch creation for the Amplify App. 
+    */
+  var enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined
   /**
     *  Enables Basic Authorization for an Amplify App. 
     */
@@ -56,10 +68,13 @@ object UpdateAppRequest {
   @scala.inline
   def apply(
     appId: AppId,
+    autoBranchCreationConfig: AutoBranchCreationConfig = null,
+    autoBranchCreationPatterns: AutoBranchCreationPatterns = null,
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
     customRules: CustomRules = null,
     description: Description = null,
+    enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined,
     enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
     enableBranchAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
@@ -68,10 +83,13 @@ object UpdateAppRequest {
     platform: Platform = null
   ): UpdateAppRequest = {
     val __obj = js.Dynamic.literal(appId = appId)
+    if (autoBranchCreationConfig != null) __obj.updateDynamic("autoBranchCreationConfig")(autoBranchCreationConfig)
+    if (autoBranchCreationPatterns != null) __obj.updateDynamic("autoBranchCreationPatterns")(autoBranchCreationPatterns)
     if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials)
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec)
     if (customRules != null) __obj.updateDynamic("customRules")(customRules)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation)
     if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth)
     if (!js.isUndefined(enableBranchAutoBuild)) __obj.updateDynamic("enableBranchAutoBuild")(enableBranchAutoBuild)
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)

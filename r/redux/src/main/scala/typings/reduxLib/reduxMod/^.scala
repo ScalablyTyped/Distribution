@@ -38,7 +38,9 @@ object ^ extends js.Object {
   def bindActionCreators_ACActionCreatorC[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = js.native
   @JSName("bindActionCreators")
   def bindActionCreators_AMActionCreatorsMapObjectM[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
-  def combineReducers[T /* <: ReducersMapObject[_, _] */](reducers: T): Reducer[InferStateType[T], InferActionTypes[InferReducerTypes[T]]] = js.native
+  def combineReducers[S](reducers: ReducersMapObject[S, _]): Reducer[S, AnyAction] = js.native
+  @JSName("combineReducers")
+  def combineReducers_SAAction[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = js.native
   def compose(): js.Function1[/* a */ js.Any, _] = js.native
   def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
   def compose[F /* <: js.Function */](f: F): F = js.native

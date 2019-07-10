@@ -26,9 +26,6 @@ class IdentityPolicy protected ()
     * Name of the policy.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * JSON string of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

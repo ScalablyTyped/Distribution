@@ -27,6 +27,10 @@ trait UpdateBranchRequest extends js.Object {
     */
   var description: js.UndefOr[Description] = js.undefined
   /**
+    *  Display name for a branch, will use as the default domain prefix. 
+    */
+  var displayName: js.UndefOr[DisplayName] = js.undefined
+  /**
     *  Enables auto building for the branch. 
     */
   var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined
@@ -64,6 +68,7 @@ object UpdateBranchRequest {
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
     description: Description = null,
+    displayName: DisplayName = null,
     enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
     enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
     enableNotification: js.UndefOr[EnableNotification] = js.undefined,
@@ -76,6 +81,7 @@ object UpdateBranchRequest {
     if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials)
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild)
     if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth)
     if (!js.isUndefined(enableNotification)) __obj.updateDynamic("enableNotification")(enableNotification)

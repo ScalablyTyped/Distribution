@@ -18,9 +18,6 @@ class Cluster protected ()
     */
   def this(name: java.lang.String, args: ClusterArgs) = this()
   def this(name: java.lang.String, args: ClusterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * A JSON string for selecting additional features such as adding proxy information. Note: Currently there is no API to retrieve the value of this argument after EMR cluster creation from provider, therefore Terraform cannot detect drift from the actual EMR cluster if its value is changed outside Terraform.
-    */
   val additionalInfo: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of applications for the cluster. Valid values are: `Flink`, `Hadoop`, `Hive`, `Mahout`, `Pig`, `Spark`, and `JupyterHub` (as of EMR 5.14.0). Case insensitive
@@ -116,9 +113,6 @@ class Cluster protected ()
     * IAM role that will be assumed by the Amazon EMR service to access AWS resources
     */
   val serviceRole: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignore_changes` if other steps are being managed outside of Terraform. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
-    */
   val steps: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ActionOnFailure]] = js.native
   /**
     * list of tags to apply to the EMR Cluster

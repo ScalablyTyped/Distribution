@@ -25,8 +25,8 @@ class Select ()
   def handleClick(event: stdLib.MouseEvent): scala.Unit = js.native
   def handleClick(event: stdLib.TouchEvent): scala.Unit = js.native
   def handleClickOutside(event: stdLib.MouseEvent): scala.Unit = js.native
-  def handleInputChange(event: reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event]): scala.Unit = js.native
-  def handleInputFocus(event: reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]): scala.Unit = js.native
+  def handleInputChange(event: reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def handleInputFocus(event: reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement]): scala.Unit = js.native
   def handleKeyDown(event: stdLib.KeyboardEvent): scala.Unit = js.native
   def handleTouchEnd(event: stdLib.TouchEvent): scala.Unit = js.native
   def handleTouchEndClearValue(event: stdLib.TouchEvent): scala.Unit = js.native

@@ -55,10 +55,6 @@ class Certificate protected ()
     * A list of addresses that received a validation E-Mail. Only set if `EMAIL`-validation was used.
     */
   val validationEmails: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
-  /**
-    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into Terraform.
-    * * Importing an existing certificate
-    */
   val validationMethod: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

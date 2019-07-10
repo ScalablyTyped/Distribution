@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonTextarea protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTextarea {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, the element height will increase based on the value.
     */
@@ -65,6 +65,7 @@ class IonTextarea protected ()
     */
   /* CompleteClass */
   override var spellcheck: scala.Boolean = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /**
     * Returns the native `<textarea>` element used under the hood.
     */

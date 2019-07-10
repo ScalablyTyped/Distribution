@@ -11,7 +11,7 @@ trait MatchmakingRuleSet extends js.Object {
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Collection of matchmaking rules, formatted as a JSON string. (Note that comments14 are not allowed in JSON, but most elements support a description field.)
+    * Collection of matchmaking rules, formatted as a JSON string. Comments are not allowed in JSON, but most elements support a description field.
     */
   var RuleSetBody: awsDashSdkLib.clientsGameliftMod.RuleSetBody
   /**

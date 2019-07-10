@@ -22,9 +22,6 @@ class ClusterParameterGroup protected ()
     * The ARN of the documentDB cluster parameter group.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the documentDB cluster parameter group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The family of the documentDB cluster parameter group.

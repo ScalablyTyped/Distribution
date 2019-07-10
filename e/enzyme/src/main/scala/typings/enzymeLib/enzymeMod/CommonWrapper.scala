@@ -41,6 +41,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     * tests are not passing when you expect them to.
     */
   def debug(): java.lang.String = js.native
+  def debug(options: enzymeLib.Anon_IgnoreProps): java.lang.String = js.native
   /**
     * Returns whether or not the current render tree is equal to the given node, based on the expected value.
     */

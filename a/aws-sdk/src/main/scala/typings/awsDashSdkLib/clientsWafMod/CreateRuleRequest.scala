@@ -18,13 +18,14 @@ trait CreateRuleRequest extends js.Object {
     * A friendly name or description of the Rule. You can't change the name of a Rule after you create it.
     */
   var Name: ResourceName
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 
 object CreateRuleRequest {
   @scala.inline
-  def apply(ChangeToken: ChangeToken, MetricName: MetricName, Name: ResourceName): CreateRuleRequest = {
+  def apply(ChangeToken: ChangeToken, MetricName: MetricName, Name: ResourceName, Tags: TagList = null): CreateRuleRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken, MetricName = MetricName, Name = Name)
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateRuleRequest]
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def css(): js.Function1[
     /* props */ js.UndefOr[Theme[scala.Nothing] | atStyledDashSystemCssLib.Anon_Theme], 
-    csstypeLib.csstypeMod.Properties[java.lang.String | atStyledDashSystemCssLib.atStyledDashSystemCssLibNumbers.`0`]
+    CSSObject
   ] = js.native
   def css(
     input: SystemStyleObject with (atStyledDashSystemCssLib.Anon_Variant | (js.Function1[
@@ -19,11 +19,11 @@ object ^ extends js.Object {
     ]))
   ): js.Function1[
     /* props */ js.UndefOr[Theme[scala.Nothing] | atStyledDashSystemCssLib.Anon_Theme], 
-    csstypeLib.csstypeMod.Properties[java.lang.String | atStyledDashSystemCssLib.atStyledDashSystemCssLibNumbers.`0`]
+    CSSObject
   ] = js.native
   def default(): js.Function1[
     /* props */ js.UndefOr[Theme[scala.Nothing] | atStyledDashSystemCssLib.Anon_Theme], 
-    csstypeLib.csstypeMod.Properties[java.lang.String | atStyledDashSystemCssLib.atStyledDashSystemCssLibNumbers.`0`]
+    CSSObject
   ] = js.native
   def default(
     input: SystemStyleObject with (atStyledDashSystemCssLib.Anon_Variant | (js.Function1[
@@ -32,7 +32,7 @@ object ^ extends js.Object {
     ]))
   ): js.Function1[
     /* props */ js.UndefOr[Theme[scala.Nothing] | atStyledDashSystemCssLib.Anon_Theme], 
-    csstypeLib.csstypeMod.Properties[java.lang.String | atStyledDashSystemCssLib.atStyledDashSystemCssLibNumbers.`0`]
+    CSSObject
   ] = js.native
   def get(`object`: js.Object, key: java.lang.String): js.Any = js.native
   def get(`object`: js.Object, key: java.lang.String, defaultValue: js.Any): js.Any = js.native

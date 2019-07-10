@@ -30,7 +30,7 @@ trait GraphQLRequestListener[TContext] extends js.Object {
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
         apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
       ], 
-      js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+      (js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | scala.Unit
     ]
   ] = js.undefined
   var parsingDidStart: js.UndefOr[
@@ -39,7 +39,7 @@ trait GraphQLRequestListener[TContext] extends js.Object {
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
         apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source
       ], 
-      js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+      (js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | scala.Unit
     ]
   ] = js.undefined
   var responseForOperation: js.UndefOr[
@@ -59,7 +59,7 @@ trait GraphQLRequestListener[TContext] extends js.Object {
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
         apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document
       ], 
-      js.Function1[/* err */ js.UndefOr[js.Array[stdLib.Error]], scala.Unit]
+      (js.Function1[/* err */ js.UndefOr[js.Array[stdLib.Error]], scala.Unit]) | scala.Unit
     ]
   ] = js.undefined
   var willSendResponse: js.UndefOr[
@@ -87,11 +87,11 @@ object GraphQLRequestListener {
     executionDidStart: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
-    ] => js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit] = null,
+    ] => (js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | scala.Unit = null,
     parsingDidStart: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source
-    ] => js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit] = null,
+    ] => (js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | scala.Unit = null,
     responseForOperation: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
@@ -101,7 +101,7 @@ object GraphQLRequestListener {
     validationDidStart: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document
-    ] => js.Function1[/* err */ js.UndefOr[js.Array[stdLib.Error]], scala.Unit] = null,
+    ] => (js.Function1[/* err */ js.UndefOr[js.Array[stdLib.Error]], scala.Unit]) | scala.Unit = null,
     willSendResponse: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.response

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "restify-plugins"
-version := "1.5-dt-20181015Z-0d3fb5"
+version := "1.5-dt-20181015Z-db524c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-0ed5d5",
-  "org.scalablytyped" %%% "node" % "12.6-dt-20190708Z-e1e986",
-  "org.scalablytyped" %%% "restify" % "7.2-dt-20190528Z-342b41",
-  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-bac14e",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-c546f9",
+  "org.scalablytyped" %%% "node" % "12.6-dt-20190709Z-570c89",
+  "org.scalablytyped" %%% "restify" % "7.2-dt-20190528Z-031eb5",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-5124a4",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

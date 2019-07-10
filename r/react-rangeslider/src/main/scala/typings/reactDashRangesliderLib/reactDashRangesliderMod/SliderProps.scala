@@ -10,7 +10,7 @@ trait SliderProps extends js.Object {
   var format: js.UndefOr[
     js.Function1[/* value */ scala.Double, js.UndefOr[java.lang.String | scala.Double]]
   ] = js.undefined
-  var handleLabel: js.UndefOr[scala.Boolean] = js.undefined
+  var handleLabel: js.UndefOr[java.lang.String] = js.undefined
   var labels: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
@@ -30,7 +30,7 @@ object SliderProps {
     value: scala.Double,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     format: /* value */ scala.Double => js.UndefOr[java.lang.String | scala.Double] = null,
-    handleLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    handleLabel: java.lang.String = null,
     labels: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
@@ -45,7 +45,7 @@ object SliderProps {
     val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (!js.isUndefined(handleLabel)) __obj.updateDynamic("handleLabel")(handleLabel)
+    if (handleLabel != null) __obj.updateDynamic("handleLabel")(handleLabel)
     if (labels != null) __obj.updateDynamic("labels")(labels)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

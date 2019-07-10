@@ -35,7 +35,7 @@ class Model protected ()
     */
   val executionRoleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The name of the model (must be unique). If omitted, Terraform will assign a random, unique name.
+    * The name of the model.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

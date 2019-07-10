@@ -361,6 +361,15 @@ object cypressLibStrings {
   sealed trait contain extends js.Object
   
   @js.native
+  sealed trait containDOThtml extends js.Object
+  
+  @js.native
+  sealed trait containDOTtext extends js.Object
+  
+  @js.native
+  sealed trait containDOTvalue extends js.Object
+  
+  @js.native
   sealed trait contextmenu extends js.Object
   
   @js.native
@@ -1015,6 +1024,15 @@ object cypressLibStrings {
   
   @js.native
   sealed trait notDOTcontain extends js.Object
+  
+  @js.native
+  sealed trait notDOTcontainDOThtml extends js.Object
+  
+  @js.native
+  sealed trait notDOTcontainDOTtext extends js.Object
+  
+  @js.native
+  sealed trait notDOTcontainDOTvalue extends js.Object
   
   @js.native
   sealed trait notDOTdecrease extends js.Object
@@ -1853,6 +1871,12 @@ object cypressLibStrings {
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline
+  def containDOThtml: containDOThtml = "contain.html".asInstanceOf[containDOThtml]
+  @scala.inline
+  def containDOTtext: containDOTtext = "contain.text".asInstanceOf[containDOTtext]
+  @scala.inline
+  def containDOTvalue: containDOTvalue = "contain.value".asInstanceOf[containDOTvalue]
+  @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
@@ -2276,6 +2300,12 @@ object cypressLibStrings {
   def notDOTchange: notDOTchange = "not.change".asInstanceOf[notDOTchange]
   @scala.inline
   def notDOTcontain: notDOTcontain = "not.contain".asInstanceOf[notDOTcontain]
+  @scala.inline
+  def notDOTcontainDOThtml: notDOTcontainDOThtml = "not.contain.html".asInstanceOf[notDOTcontainDOThtml]
+  @scala.inline
+  def notDOTcontainDOTtext: notDOTcontainDOTtext = "not.contain.text".asInstanceOf[notDOTcontainDOTtext]
+  @scala.inline
+  def notDOTcontainDOTvalue: notDOTcontainDOTvalue = "not.contain.value".asInstanceOf[notDOTcontainDOTvalue]
   @scala.inline
   def notDOTdecrease: notDOTdecrease = "not.decrease".asInstanceOf[notDOTdecrease]
   @scala.inline

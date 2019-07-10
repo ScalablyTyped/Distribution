@@ -59,7 +59,7 @@ trait ClusterInstanceState extends js.Object {
     */
   val engineVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The indentifier for the RDS instance, if omitted, Terraform will assign a random, unique identifier.
+    * The Instance identifier
     */
   val identifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

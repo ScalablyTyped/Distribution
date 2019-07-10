@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NavItem ()
   extends reactLib.reactMod.Component[NavItemProps, js.Object, js.Any] {
-  def handleClick(event: reactLib.reactMod.SyntheticEvent[stdLib.Event, reactLib.Event]): scala.Unit = js.native
-  def handleKeyDown(event: reactLib.reactMod.SyntheticEvent[stdLib.KeyboardEvent, reactLib.Event]): scala.Unit = js.native
+  def handleClick(event: reactLib.reactMod.MouseEventHandler[reactLib.Element]): scala.Unit = js.native
+  def handleKeyDown(event: reactLib.reactMod.KeyboardEventHandler[reactLib.Element]): scala.Unit = js.native
 }
 

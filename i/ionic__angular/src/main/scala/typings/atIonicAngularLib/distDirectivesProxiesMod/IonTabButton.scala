@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonTabButton protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTabButton {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, the user cannot interact with the tab button.
     */
@@ -21,5 +21,6 @@ class IonTabButton protected ()
     */
   /* CompleteClass */
   override var selected: scala.Boolean = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

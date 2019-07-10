@@ -76,6 +76,11 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("checkCollaborator")
   var checkCollaborator_Original: Anon_EndpointParamsAnyResponsePromiseReposCheckCollaboratorParams = js.native
   /**
+    * Shows whether vulnerability alerts are enabled or disabled for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
+    */
+  @JSName("checkVulnerabilityAlerts")
+  var checkVulnerabilityAlerts_Original: Anon_EndpointParamsAnyResponsePromiseReposCheckVulnerabilityAlertsParams = js.native
+  /**
     * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
     *
     * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
@@ -346,7 +351,11 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getCommitRefSha")
   var getCommitRefSha_Original: Anon_EndpointParamsPromiseReposGetCommitRefShaParams = js.native
   /**
-    * Diffs with binary data will have no `patch` property. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
+    *
+    * You can pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch `diff` and `patch` formats. Diffs with binary data will have no `patch` property.
+    *
+    * To return only the SHA-1 hash of the commit reference, you can provide the `sha` custom [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) in the `Accept` header. You can use this endpoint to check if a remote reference's SHA-1 hash is the same as your local reference's SHA-1 hash by providing the local SHA-1 reference as the ETag.
     *
     * **Signature verification object**
     *
@@ -1003,6 +1012,11 @@ trait Anon_AcceptInvitation extends js.Object {
   def checkCollaborator(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def checkCollaborator(params: atOctokitRestLib.atOctokitRestMod.ReposCheckCollaboratorParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
+    * Shows whether vulnerability alerts are enabled or disabled for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
+    */
+  def checkVulnerabilityAlerts(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
+  def checkVulnerabilityAlerts(params: atOctokitRestLib.atOctokitRestMod.ReposCheckVulnerabilityAlertsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
+  /**
     * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
     *
     * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
@@ -1394,7 +1408,11 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCombinedStatusForRefResponse]
   ] = js.native
   /**
-    * Diffs with binary data will have no `patch` property. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
+    *
+    * You can pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch `diff` and `patch` formats. Diffs with binary data will have no `patch` property.
+    *
+    * To return only the SHA-1 hash of the commit reference, you can provide the `sha` custom [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) in the `Accept` header. You can use this endpoint to check if a remote reference's SHA-1 hash is the same as your local reference's SHA-1 hash by providing the local SHA-1 reference as the ETag.
     *
     * **Signature verification object**
     *
@@ -1422,6 +1440,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
   ] = js.native
   def getCommit(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
+  ] = js.native
+  def getCommit(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParamsDeprecatedCommitSha): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
   ] = js.native
   def getCommit(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParamsDeprecatedSha): js.Promise[

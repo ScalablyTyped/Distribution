@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonRefresher protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonRefresher {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * Time it takes to close the refresher.
     */
@@ -44,6 +44,7 @@ class IonRefresher protected ()
     */
   /* CompleteClass */
   override var snapbackDuration: java.lang.String = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /**
     * Changes the refresher's state from `refreshing` to `cancelling`.
     */

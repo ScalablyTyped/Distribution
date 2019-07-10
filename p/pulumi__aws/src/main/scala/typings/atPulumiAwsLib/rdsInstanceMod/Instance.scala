@@ -144,10 +144,6 @@ class Instance protected ()
     * accounts is enabled.
     */
   val iamDatabaseAuthenticationEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
-  /**
-    * The name of the RDS instance,
-    * if omitted, Terraform will assign a random, unique identifier.
-    */
   val identifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique

@@ -97,6 +97,7 @@ package object clientsConfigserviceMod {
   type ConfigurationRecorderNameList = js.Array[RecorderName]
   type ConfigurationRecorderStatusList = js.Array[ConfigurationRecorderStatus]
   type ConfigurationStateId = java.lang.String
+  type CosmosPageLimit = scala.Double
   type DeliveryChannelList = js.Array[DeliveryChannel]
   type DeliveryChannelNameList = js.Array[ChannelName]
   type DeliveryChannelStatusList = js.Array[DeliveryChannelStatus]
@@ -114,6 +115,7 @@ package object clientsConfigserviceMod {
   type EvaluationResults = js.Array[EvaluationResult]
   type Evaluations = js.Array[Evaluation]
   type EventSource = awsDashSdkLib.awsDashSdkLibStrings.awsDOTconfig | java.lang.String
+  type ExcludedAccounts = js.Array[AccountId]
   type Expression = java.lang.String
   type FailedRemediationBatches = js.Array[FailedRemediationBatch]
   type FieldInfoList = js.Array[FieldInfo]
@@ -135,6 +137,16 @@ package object clientsConfigserviceMod {
   */
   type MaximumExecutionFrequency = _MaximumExecutionFrequency | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_SUCCESSFUL
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_SUCCESSFUL
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS
+    - java.lang.String
+  */
+  type MemberAccountRuleStatus = _MemberAccountRuleStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ConfigurationItemChangeNotification
     - awsDashSdkLib.awsDashSdkLibStrings.ConfigurationSnapshotDeliveryCompleted
     - awsDashSdkLib.awsDashSdkLibStrings.ScheduledNotification
@@ -145,6 +157,28 @@ package object clientsConfigserviceMod {
   type Name = java.lang.String
   type NextToken = java.lang.String
   type OrderingTimestamp = stdLib.Date
+  type OrganizationConfigRuleDetailedStatus = js.Array[MemberAccountStatus]
+  type OrganizationConfigRuleNames = js.Array[StringWithCharLimit64]
+  type OrganizationConfigRuleStatuses = js.Array[OrganizationConfigRuleStatus]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ConfigurationItemChangeNotification
+    - awsDashSdkLib.awsDashSdkLibStrings.OversizedConfigurationItemChangeNotification
+    - awsDashSdkLib.awsDashSdkLibStrings.ScheduledNotification
+    - java.lang.String
+  */
+  type OrganizationConfigRuleTriggerType = _OrganizationConfigRuleTriggerType | java.lang.String
+  type OrganizationConfigRuleTriggerTypes = js.Array[OrganizationConfigRuleTriggerType]
+  type OrganizationConfigRules = js.Array[OrganizationConfigRule]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_SUCCESSFUL
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_SUCCESSFUL
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS
+    - java.lang.String
+  */
+  type OrganizationRuleStatus = _OrganizationRuleStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.CUSTOM_LAMBDA
     - awsDashSdkLib.awsDashSdkLibStrings.AWS
@@ -271,6 +305,7 @@ package object clientsConfigserviceMod {
   type ResourceType = _ResourceType | java.lang.String
   type ResourceTypeList = js.Array[ResourceType]
   type ResourceTypes = js.Array[StringWithCharLimit256]
+  type ResourceTypesScope = js.Array[StringWithCharLimit256]
   type ResourceValueType = awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_ID | java.lang.String
   type Results = js.Array[String]
   type RetentionConfigurationList = js.Array[RetentionConfiguration]
@@ -283,8 +318,11 @@ package object clientsConfigserviceMod {
   type String = java.lang.String
   type StringWithCharLimit1024 = java.lang.String
   type StringWithCharLimit128 = java.lang.String
+  type StringWithCharLimit2048 = java.lang.String
   type StringWithCharLimit256 = java.lang.String
+  type StringWithCharLimit256Min0 = java.lang.String
   type StringWithCharLimit64 = java.lang.String
+  type StringWithCharLimit768 = java.lang.String
   type SupplementaryConfiguration = org.scalablytyped.runtime.StringDictionary[SupplementaryConfigurationValue]
   type SupplementaryConfigurationName = java.lang.String
   type SupplementaryConfigurationValue = java.lang.String

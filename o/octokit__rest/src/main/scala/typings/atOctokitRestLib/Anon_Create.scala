@@ -18,6 +18,10 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.
+    *
+    * To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
+    *
+    * #### [](https://developer.github.com/v3/checks/runs/#actions-object)`actions` object
     */
   @JSName("create")
   var create_Original: Anon_EndpointParamsChecksCreateParams = js.native
@@ -77,6 +81,8 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Updates a check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to edit check runs.
+    *
+    * #### [](https://developer.github.com/v3/checks/runs/#actions-object-1)`actions` object
     */
   @JSName("update")
   var update_Original: Anon_EndpointParamsChecksUpdateParams = js.native
@@ -84,6 +90,10 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.
+    *
+    * To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
+    *
+    * #### [](https://developer.github.com/v3/checks/runs/#actions-object)`actions` object
     */
   def create(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ChecksCreateResponse]
@@ -190,6 +200,8 @@ trait Anon_Create extends js.Object {
     * **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.
     *
     * Updates a check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to edit check runs.
+    *
+    * #### [](https://developer.github.com/v3/checks/runs/#actions-object-1)`actions` object
     */
   def update(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ChecksUpdateResponse]

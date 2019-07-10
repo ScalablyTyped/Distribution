@@ -10,9 +10,6 @@ trait ApiKeyState extends js.Object {
     * The creation date of the API key
     */
   val createdDate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The API key description. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Specifies whether the API key can be used by callers. Defaults to `true`.

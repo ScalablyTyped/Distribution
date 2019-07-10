@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecurityGroupArgs extends js.Object {
-  /**
-    * description for the cache security group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Name for the cache security group. This value is stored as a lowercase string.

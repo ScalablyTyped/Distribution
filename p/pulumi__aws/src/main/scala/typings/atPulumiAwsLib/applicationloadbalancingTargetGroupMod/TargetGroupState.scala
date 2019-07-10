@@ -29,7 +29,7 @@ trait TargetGroupState extends js.Object {
     */
   val lambdaMultiValueHeadersEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
-    * The name of the target group. If omitted, Terraform will assign a random, unique name.
+    * The name of the Target Group
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

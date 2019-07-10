@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonMenuButton protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonMenuButton {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * Automatically hides the menu button when the corresponding menu is not active
     */
@@ -26,5 +26,6 @@ class IonMenuButton protected ()
     */
   /* CompleteClass */
   override var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

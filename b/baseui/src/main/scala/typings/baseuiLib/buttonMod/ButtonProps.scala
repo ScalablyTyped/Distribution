@@ -15,10 +15,7 @@ trait ButtonProps extends js.Object {
     baseuiLib.baseuiLibStrings.primary | baseuiLib.baseuiLibStrings.secondary | baseuiLib.baseuiLibStrings.tertiary | baseuiLib.baseuiLibStrings.minimal
   ] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement], _]
   ] = js.undefined
   var overrides: js.UndefOr[ButtonOverrides] = js.undefined
   var shape: js.UndefOr[
@@ -39,7 +36,7 @@ object ButtonProps {
     isLoading: js.UndefOr[scala.Boolean] = js.undefined,
     isSelected: js.UndefOr[scala.Boolean] = js.undefined,
     kind: baseuiLib.baseuiLibStrings.primary | baseuiLib.baseuiLibStrings.secondary | baseuiLib.baseuiLibStrings.tertiary | baseuiLib.baseuiLibStrings.minimal = null,
-    onClick: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLButtonElement, reactLib.Event] => _ = null,
+    onClick: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] => _ = null,
     overrides: ButtonOverrides = null,
     shape: baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.round | baseuiLib.baseuiLibStrings.square = null,
     size: baseuiLib.baseuiLibStrings.compact | baseuiLib.baseuiLibStrings.default | baseuiLib.baseuiLibStrings.large = null,

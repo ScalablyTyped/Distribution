@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonDatetime protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonDatetime {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * The text to display on the picker's cancel button.
     */
@@ -45,6 +45,7 @@ class IonDatetime protected ()
     */
   /* CompleteClass */
   override var readonly: scala.Boolean = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /**
     * Opens the datetime overlay.
     */

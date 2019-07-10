@@ -11,10 +11,9 @@ object ^ extends js.Object {
   val RegistryConsumer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Consumer<DataRegistry> */ js.Any = js.native
   val RegistryProvider: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Provider<DataRegistry> */ js.Any = js.native
   val subscribe: Subscriber = js.native
-  def combineReducers[T /* <: reduxLib.reduxMod.ReducersMapObject[_, _] */](reducers: T): reduxLib.reduxMod.Reducer[
-    reduxLib.reduxMod.InferStateType[T], 
-    reduxLib.reduxMod.InferActionTypes[reduxLib.reduxMod.InferReducerTypes[T]]
-  ] = js.native
+  def combineReducers[S](reducers: reduxLib.reduxMod.ReducersMapObject[S, _]): reduxLib.reduxMod.Reducer[S, reduxLib.reduxMod.AnyAction] = js.native
+  @JSName("combineReducers")
+  def combineReducers_SAAction[S, A /* <: reduxLib.reduxMod.Action[_] */](reducers: reduxLib.reduxMod.ReducersMapObject[S, A]): reduxLib.reduxMod.Reducer[S, A] = js.native
   def createRegistry(): DataRegistry = js.native
   def createRegistry(storeConfigs: js.Object): DataRegistry = js.native
   def createRegistry(storeConfigs: js.Object, parent: DataRegistry): DataRegistry = js.native

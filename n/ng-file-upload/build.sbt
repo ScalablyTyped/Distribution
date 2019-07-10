@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ng-file-upload"
-version := "12.2-dt-20190322Z-b0ac45"
+version := "12.2-dt-20190322Z-d63f49"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-c98868",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-e41730",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -147,11 +147,6 @@ trait DistributionState extends js.Object {
   val restrictions: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_GeoRestrictionAnonLocationsRestrictionType]
   ] = js.undefined
-  /**
-    * Disables the distribution instead of
-    * deleting it when destroying the resource through Terraform. If this is set,
-    * the distribution needs to be deleted manually afterwards. Default: `false`.
-    */
   val retainOnDelete: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * The current status of the distribution. `Deployed` if the

@@ -58,7 +58,6 @@ trait HTMLAttributes[T] extends DOMAttributes[T] {
   // WAI-ARIA
   var role: js.UndefOr[java.lang.String] = js.undefined
   var security: js.UndefOr[java.lang.String] = js.undefined
-  var slot: js.UndefOr[java.lang.String] = js.undefined
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
   var spellcheck: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var style: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]] = js.undefined

@@ -11,7 +11,7 @@ trait Fragment extends js.Object {
     */
   var FragmentLengthInMilliseconds: js.UndefOr[Long] = js.undefined
   /**
-    * The index value of the fragment.
+    * The unique identifier of the fragment. This value monotonically increases based on the ingestion order.
     */
   var FragmentNumber: js.UndefOr[String] = js.undefined
   /**

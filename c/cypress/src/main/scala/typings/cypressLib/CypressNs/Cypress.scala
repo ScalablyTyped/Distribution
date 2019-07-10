@@ -550,7 +550,7 @@ trait Cypress extends js.Object {
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
-    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
+    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be canceled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
     ```
@@ -851,7 +851,7 @@ trait Cypress extends js.Object {
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
-    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
+    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be canceled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
     ```

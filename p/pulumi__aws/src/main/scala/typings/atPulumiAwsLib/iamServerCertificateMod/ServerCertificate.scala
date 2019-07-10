@@ -34,8 +34,7 @@ class ServerCertificate protected ()
     */
   val certificateChain: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The name of the Server Certificate. Do not include the
-    * path in this value. If omitted, Terraform will assign a random, unique name.
+    * The name of the Server Certificate
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

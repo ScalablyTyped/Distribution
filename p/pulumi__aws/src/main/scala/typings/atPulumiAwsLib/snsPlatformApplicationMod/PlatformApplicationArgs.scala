@@ -34,13 +34,7 @@ trait PlatformApplicationArgs extends js.Object {
     * The platform that the app is registered with. See [Platform][1] for supported platforms.
     */
   val platform: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  /**
-    * Application Platform credential. See [Credential][1] for type of credential required for platform. The value of this attribute when stored into the Terraform state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
-    */
   val platformCredential: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-  /**
-    * Application Platform principal. See [Principal][2] for type of principal required for platform. The value of this attribute when stored into the Terraform state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
-    */
   val platformPrincipal: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The IAM role permitted to receive success feedback for this application.

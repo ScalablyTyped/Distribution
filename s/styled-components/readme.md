@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Jason Killian <https://github.com/jkillian>
 //                 Sebastian Silbermann <https://github.com/eps1lon>
 //                 David Ruisinger <https://github.com/flavordaaave>
+//                 Matthew Wagerfield <https://github.com/wagerfield>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.9
 // forward declarations

@@ -38,9 +38,6 @@ class OptionGroup protected ()
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
     */
   val namePrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the option group. Defaults to "Managed by Terraform".
-    */
   val optionGroupDescription: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of Options to apply.

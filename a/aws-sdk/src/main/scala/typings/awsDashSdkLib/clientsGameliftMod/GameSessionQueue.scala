@@ -11,7 +11,7 @@ trait GameSessionQueue extends js.Object {
     */
   var Destinations: js.UndefOr[GameSessionQueueDestinationList] = js.undefined
   /**
-    * Amazon Resource Name (ARN) that is assigned to a game session queue and uniquely identifies it. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912.
+    * Amazon Resource Name (ARN) that is assigned to a game session queue and uniquely identifies it. Format is arn:aws:gamelift:&lt;region&gt;:&lt;aws account&gt;:gamesessionqueue/&lt;queue name&gt;.
     */
   var GameSessionQueueArn: js.UndefOr[ArnStringModel] = js.undefined
   /**

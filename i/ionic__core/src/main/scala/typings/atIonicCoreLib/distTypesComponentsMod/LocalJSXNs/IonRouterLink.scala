@@ -28,6 +28,10 @@ trait IonRouterLink
   var routerDirection: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   ] = js.undefined
+  /**
+    * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+    */
+  var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IonRouterLink {
@@ -199,6 +203,7 @@ object IonRouterLink {
     style: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null,
     tabIndex: scala.Int | scala.Double = null,
     tabindex: scala.Double | java.lang.String = null,
+    target: java.lang.String = null,
     title: java.lang.String = null,
     typeof: java.lang.String = null,
     unselectable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -371,6 +376,7 @@ object IonRouterLink {
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
     if (title != null) __obj.updateDynamic("title")(title)
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable)

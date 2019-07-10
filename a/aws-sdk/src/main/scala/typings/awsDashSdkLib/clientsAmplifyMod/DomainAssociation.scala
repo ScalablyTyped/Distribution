@@ -9,7 +9,7 @@ trait DomainAssociation extends js.Object {
   /**
     *  DNS Record for certificate verification. 
     */
-  var certificateVerificationDNSRecord: CertificateVerificationDNSRecord
+  var certificateVerificationDNSRecord: js.UndefOr[CertificateVerificationDNSRecord] = js.undefined
   /**
     *  ARN for the Domain Association. 
     */
@@ -39,16 +39,16 @@ trait DomainAssociation extends js.Object {
 object DomainAssociation {
   @scala.inline
   def apply(
-    certificateVerificationDNSRecord: CertificateVerificationDNSRecord,
     domainAssociationArn: DomainAssociationArn,
     domainName: DomainName,
     domainStatus: DomainStatus,
     enableAutoSubDomain: EnableAutoSubDomain,
     statusReason: StatusReason,
-    subDomains: SubDomains
+    subDomains: SubDomains,
+    certificateVerificationDNSRecord: CertificateVerificationDNSRecord = null
   ): DomainAssociation = {
-    val __obj = js.Dynamic.literal(certificateVerificationDNSRecord = certificateVerificationDNSRecord, domainAssociationArn = domainAssociationArn, domainName = domainName, domainStatus = domainStatus.asInstanceOf[js.Any], enableAutoSubDomain = enableAutoSubDomain, statusReason = statusReason, subDomains = subDomains)
-  
+    val __obj = js.Dynamic.literal(domainAssociationArn = domainAssociationArn, domainName = domainName, domainStatus = domainStatus.asInstanceOf[js.Any], enableAutoSubDomain = enableAutoSubDomain, statusReason = statusReason, subDomains = subDomains)
+    if (certificateVerificationDNSRecord != null) __obj.updateDynamic("certificateVerificationDNSRecord")(certificateVerificationDNSRecord)
     __obj.asInstanceOf[DomainAssociation]
   }
 }

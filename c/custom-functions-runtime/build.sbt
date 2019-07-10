@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "custom-functions-runtime"
-version := "1.4-dt-20190213Z-a6aebc"
+version := "1.5-dt-20190709Z-ae48b8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -18,9 +18,6 @@ class LifecyclePolicy protected ()
     */
   def this(name: java.lang.String, args: LifecyclePolicyArgs) = this()
   def this(name: java.lang.String, args: LifecyclePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The registry ID where the repository was created.

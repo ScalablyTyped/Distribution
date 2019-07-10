@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ParameterGroupArgs extends js.Object {
-  /**
-    * The description of the DB parameter group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The family of the DB parameter group.

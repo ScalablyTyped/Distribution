@@ -10,13 +10,7 @@ trait SubnetGroupState extends js.Object {
     * The ARN of the docDB subnet group.
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The description of the docDB subnet group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The name of the docDB subnet group. If omitted, Terraform will assign a random, unique name.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

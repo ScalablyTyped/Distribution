@@ -24,9 +24,7 @@ class User protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * When destroying this user, destroy even if it
-    * has non-Terraform-managed IAM access keys, login profile or MFA devices. Without `force_destroy`
-    * a user with non-Terraform-managed access keys and login profile will fail to be destroyed.
+    * Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices
     */
   val forceDestroy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**

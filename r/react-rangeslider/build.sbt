@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-rangeslider"
-version := "2.2-dt-20181231Z-00ae53"
+version := "2.2-dt-20190709Z-833963"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

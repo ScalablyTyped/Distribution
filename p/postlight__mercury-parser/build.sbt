@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postlight__mercury-parser"
-version := "2.2-dt-20190703Z-9c32a3"
+version := "2.2-dt-20190709Z-14952a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

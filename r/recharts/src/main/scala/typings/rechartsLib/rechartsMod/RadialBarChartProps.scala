@@ -21,6 +21,7 @@ object RadialBarChartProps {
     barCategoryGap: scala.Double | java.lang.String = null,
     barGap: scala.Double | java.lang.String = null,
     barSize: scala.Double | java.lang.String = null,
+    baseValue: BaseValueType = null,
     children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
@@ -52,6 +53,7 @@ object RadialBarChartProps {
     if (barCategoryGap != null) __obj.updateDynamic("barCategoryGap")(barCategoryGap.asInstanceOf[js.Any])
     if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
     if (barSize != null) __obj.updateDynamic("barSize")(barSize.asInstanceOf[js.Any])
+    if (baseValue != null) __obj.updateDynamic("baseValue")(baseValue.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)

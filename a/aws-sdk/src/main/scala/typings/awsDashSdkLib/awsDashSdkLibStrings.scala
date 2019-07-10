@@ -1359,7 +1359,20 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCodecommitMod._RelativeFileVersionEnum
   
   @js.native
-  sealed trait AFTER_30_DAYS extends js.Object
+  sealed trait AFTER_14_DAYS
+    extends awsDashSdkLib.clientsEfsMod._TransitionToIARules
+  
+  @js.native
+  sealed trait AFTER_30_DAYS
+    extends awsDashSdkLib.clientsEfsMod._TransitionToIARules
+  
+  @js.native
+  sealed trait AFTER_60_DAYS
+    extends awsDashSdkLib.clientsEfsMod._TransitionToIARules
+  
+  @js.native
+  sealed trait AFTER_90_DAYS
+    extends awsDashSdkLib.clientsEfsMod._TransitionToIARules
   
   @js.native
   sealed trait AFTER_CONTACT_WORK_TIME
@@ -1567,8 +1580,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ALWAYS
-    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DiscontinuityMode
-       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DisplayFragmentTimestamp
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHDisplayFragmentNumber
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHDisplayFragmentTimestamp
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSDiscontinuityMode
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSDisplayFragmentTimestamp
        with awsDashSdkLib.clientsS3Mod._QuoteFields
        with awsDashSdkLib.clientsGlacierMod._QuoteFields
        with awsDashSdkLib.clientsServicecatalogMod._RequiresRecreation
@@ -1645,7 +1660,6 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDevicefarmMod._DevicePlatform
        with awsDashSdkLib.clientsCodebuildMod._LanguageType
        with awsDashSdkLib.clientsMobileMod._Platform
-       with awsDashSdkLib.clientsAmplifyMod._Platform
   
   @js.native
   sealed trait ANDROID_APP
@@ -2172,7 +2186,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AUTOMATIC
-    extends awsDashSdkLib.clientsFsxMod._BackupType
+    extends awsDashSdkLib.clientsGameliftMod._BackfillMode
+       with awsDashSdkLib.clientsFsxMod._BackupType
        with awsDashSdkLib.clientsMediaconvertMod._FontScript
        with awsDashSdkLib.clientsDatasyncMod._NfsVersion
        with awsDashSdkLib.clientsSmsMod._ReplicationRunType
@@ -4884,10 +4899,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CREATE_FAILED
     extends awsDashSdkLib.clientsMedialiveMod._ChannelState
+       with awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
        with awsDashSdkLib.clientsManagedblockchainMod._MemberStatus
        with awsDashSdkLib.clientsManagedblockchainMod._NetworkStatus
        with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsIotMod._OTAUpdateStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
        with awsDashSdkLib.clientsServicecatalogMod._ProvisionedProductPlanStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
        with awsDashSdkLib.clientsCloudformationMod._StackStatus
@@ -4899,7 +4916,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCloudformationMod._ChangeSetStatus
        with awsDashSdkLib.clientsCloudhsmv2Mod._ClusterState
        with awsDashSdkLib.clientsCloudhsmv2Mod._HsmState
+       with awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
        with awsDashSdkLib.clientsIotMod._OTAUpdateStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
        with awsDashSdkLib.clientsServicecatalogMod._ProvisionedProductPlanStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
        with awsDashSdkLib.clientsCloudformationMod._StackStatus
@@ -4926,6 +4945,11 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsServicecatalogMod._ProvisionedProductPlanStatus
   
   @js.native
+  sealed trait CREATE_SUCCESSFUL
+    extends awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
+  
+  @js.native
   sealed trait CREATE_TIME
     extends awsDashSdkLib.clientsRedshiftMod._SnapshotAttributeToSortBy
   
@@ -4949,6 +4973,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotanalyticsMod._DatasetStatus
        with awsDashSdkLib.clientsIotanalyticsMod._DatastoreStatus
        with awsDashSdkLib.clientsFirehoseMod._DeliveryStreamStatus
+       with awsDashSdkLib.clientsAmplifyMod._DomainStatus
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._DomainStatusType
        with awsDashSdkLib.clientsFsxMod._FileSystemLifecycle
        with awsDashSdkLib.clientsWorklinkMod._FleetStatus
@@ -5387,6 +5412,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ConfigurationItemChangeNotification
     extends awsDashSdkLib.clientsConfigserviceMod._MessageType
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationConfigRuleTriggerType
   
   @js.native
   sealed trait ConfigurationSetDoesNotExist
@@ -5952,6 +5978,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSmsMod._AppStatus
        with awsDashSdkLib.clientsCloud9Mod._EnvironmentLifecycleStatus
        with awsDashSdkLib.clientsDiscoveryMod._ImportStatus
+       with awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
        with awsDashSdkLib.clientsCloudformationMod._StackStatus
   
@@ -5973,6 +6001,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCloudhsmv2Mod._ClusterState
        with awsDashSdkLib.clientsCloudhsmv2Mod._HsmState
        with awsDashSdkLib.clientsDiscoveryMod._ImportStatus
+       with awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
        with awsDashSdkLib.clientsCloudformationMod._StackStatus
   
@@ -5992,6 +6022,11 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DELETE_SKIPPED
     extends awsDashSdkLib.clientsCloudformationMod._ResourceStatus
+  
+  @js.native
+  sealed trait DELETE_SUCCESSFUL
+    extends awsDashSdkLib.clientsConfigserviceMod._MemberAccountRuleStatus
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationRuleStatus
   
   @js.native
   sealed trait DELETING
@@ -9276,6 +9311,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediastoreMod._MethodName
   
   @js.native
+  sealed trait GET_DASH_STREAMING_SESSION_URL
+    extends awsDashSdkLib.clientsKinesisvideoMod._APIName
+  
+  @js.native
   sealed trait GET_HLS_STREAMING_SESSION_URL
     extends awsDashSdkLib.clientsKinesisvideoMod._APIName
   
@@ -9656,6 +9695,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53Mod._ComparisonOperator
        with awsDashSdkLib.clientsCloudwatchMod._ComparisonOperator
        with awsDashSdkLib.clientsGameliftMod._ComparisonOperatorType
+  
+  @js.native
+  sealed trait GreaterThanUpperThreshold
+    extends awsDashSdkLib.clientsCloudwatchMod._ComparisonOperator
   
   @js.native
   sealed trait Green
@@ -11042,7 +11085,6 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IOS
     extends awsDashSdkLib.clientsDevicefarmMod._DevicePlatform
-       with awsDashSdkLib.clientsAmplifyMod._Platform
   
   @js.native
   sealed trait IOS_APP
@@ -12319,8 +12361,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LIVE
-    extends awsDashSdkLib.clientsMedialiveMod._HlsMode
-       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._PlaybackMode
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHPlaybackMode
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSPlaybackMode
+       with awsDashSdkLib.clientsMedialiveMod._HlsMode
+  
+  @js.native
+  sealed trait LIVE_REPLAY
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHPlaybackMode
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSPlaybackMode
   
   @js.native
   sealed trait LK
@@ -12600,6 +12648,14 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._OpsItemFilterOperator
   
   @js.native
+  sealed trait LessThanLowerOrGreaterThanUpperThreshold
+    extends awsDashSdkLib.clientsCloudwatchMod._ComparisonOperator
+  
+  @js.native
+  sealed trait LessThanLowerThreshold
+    extends awsDashSdkLib.clientsCloudwatchMod._ComparisonOperator
+  
+  @js.native
   sealed trait LessThanOrEqualTo
     extends awsDashSdkLib.clientsMturkMod._Comparator
        with awsDashSdkLib.clientsSagemakerMod._Operator
@@ -12823,7 +12879,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MANUAL
-    extends awsDashSdkLib.clientsOpsworkscmMod._BackupType
+    extends awsDashSdkLib.clientsGameliftMod._BackfillMode
+       with awsDashSdkLib.clientsOpsworkscmMod._BackupType
+       with awsDashSdkLib.clientsAmplifyMod._JobType
   
   @js.native
   sealed trait MANUAL_STOP
@@ -13851,8 +13909,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NEVER
-    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DiscontinuityMode
-       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DisplayFragmentTimestamp
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHDisplayFragmentNumber
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHDisplayFragmentTimestamp
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSDiscontinuityMode
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSDisplayFragmentTimestamp
        with awsDashSdkLib.clientsApigatewayv2Mod._PassthroughBehavior
        with awsDashSdkLib.clientsServicecatalogMod._RequiresRecreation
   
@@ -14722,10 +14782,11 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ON_DEMAND
-    extends awsDashSdkLib.clientsAppstreamMod._FleetType
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHPlaybackMode
+       with awsDashSdkLib.clientsAppstreamMod._FleetType
        with awsDashSdkLib.clientsGameliftMod._FleetType
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSPlaybackMode
        with awsDashSdkLib.clientsEmrMod._MarketType
-       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._PlaybackMode
        with awsDashSdkLib.clientsMediaconvertMod._PricingPlan
        with awsDashSdkLib.clientsSmsMod._ReplicationRunType
        with awsDashSdkLib.clientsGlueMod._TriggerType
@@ -15101,6 +15162,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait OversizedConfigurationItemChangeNotification
     extends awsDashSdkLib.clientsConfigserviceMod._MessageType
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationConfigRuleTriggerType
   
   @js.native
   sealed trait Owner
@@ -15767,7 +15829,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PRODUCER_TIMESTAMP
-    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._FragmentSelectorType
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHFragmentSelectorType
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._FragmentSelectorType
        with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSFragmentSelectorType
        with awsDashSdkLib.clientsKinesisvideomediaMod._StartSelectorType
   
@@ -16523,10 +16586,6 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
   
   @js.native
-  sealed trait REACT_NATIVE
-    extends awsDashSdkLib.clientsAmplifyMod._Platform
-  
-  @js.native
   sealed trait READ
     extends awsDashSdkLib.clientsS3Mod._BucketLogsPermission
        with awsDashSdkLib.clientsS3Mod._Permission
@@ -16893,6 +16952,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REQUESTED
     extends awsDashSdkLib.clientsOrganizationsMod._HandshakeState
+  
+  @js.native
+  sealed trait REQUESTING_CERTIFICATE
+    extends awsDashSdkLib.clientsAmplifyMod._DomainStatus
   
   @js.native
   sealed trait REQUESTS
@@ -18277,7 +18340,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SERVER_TIMESTAMP
-    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._FragmentSelectorType
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._DASHFragmentSelectorType
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._FragmentSelectorType
        with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod._HLSFragmentSelectorType
        with awsDashSdkLib.clientsKinesisvideomediaMod._StartSelectorType
   
@@ -19505,6 +19569,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ScheduledNotification
     extends awsDashSdkLib.clientsConfigserviceMod._MessageType
+       with awsDashSdkLib.clientsConfigserviceMod._OrganizationConfigRuleTriggerType
   
   @js.native
   sealed trait ScriptFailed
@@ -21403,6 +21468,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsKafkaMod._ClusterState
        with awsDashSdkLib.clientsApigatewayv2Mod._DomainNameStatus
        with awsDashSdkLib.clientsApigatewayMod._DomainNameStatus
+       with awsDashSdkLib.clientsAmplifyMod._DomainStatus
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._DomainStatusType
        with awsDashSdkLib.clientsXrayMod._EncryptionStatus
        with awsDashSdkLib.clientsFsxMod._FileSystemLifecycle
@@ -22220,8 +22286,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._AudioCodec
   
   @js.native
-  sealed trait WEB
-    extends awsDashSdkLib.clientsAmplifyMod._Platform
+  sealed trait WEB extends js.Object
   
   @js.native
   sealed trait WEBEX
@@ -29745,7 +29810,13 @@ object awsDashSdkLibStrings {
   @scala.inline
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
   @scala.inline
+  def AFTER_14_DAYS: AFTER_14_DAYS = "AFTER_14_DAYS".asInstanceOf[AFTER_14_DAYS]
+  @scala.inline
   def AFTER_30_DAYS: AFTER_30_DAYS = "AFTER_30_DAYS".asInstanceOf[AFTER_30_DAYS]
+  @scala.inline
+  def AFTER_60_DAYS: AFTER_60_DAYS = "AFTER_60_DAYS".asInstanceOf[AFTER_60_DAYS]
+  @scala.inline
+  def AFTER_90_DAYS: AFTER_90_DAYS = "AFTER_90_DAYS".asInstanceOf[AFTER_90_DAYS]
   @scala.inline
   def AFTER_CONTACT_WORK_TIME: AFTER_CONTACT_WORK_TIME = "AFTER_CONTACT_WORK_TIME".asInstanceOf[AFTER_CONTACT_WORK_TIME]
   @scala.inline
@@ -31263,6 +31334,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CREATE_SUCCESS: CREATE_SUCCESS = "CREATE_SUCCESS".asInstanceOf[CREATE_SUCCESS]
   @scala.inline
+  def CREATE_SUCCESSFUL: CREATE_SUCCESSFUL = "CREATE_SUCCESSFUL".asInstanceOf[CREATE_SUCCESSFUL]
+  @scala.inline
   def CREATE_TIME: CREATE_TIME = "CREATE_TIME".asInstanceOf[CREATE_TIME]
   @scala.inline
   def CREATING: CREATING = "CREATING".asInstanceOf[CREATING]
@@ -31666,6 +31739,8 @@ object awsDashSdkLibStrings {
   def DELETE_REQUESTED: DELETE_REQUESTED = "DELETE_REQUESTED".asInstanceOf[DELETE_REQUESTED]
   @scala.inline
   def DELETE_SKIPPED: DELETE_SKIPPED = "DELETE_SKIPPED".asInstanceOf[DELETE_SKIPPED]
+  @scala.inline
+  def DELETE_SUCCESSFUL: DELETE_SUCCESSFUL = "DELETE_SUCCESSFUL".asInstanceOf[DELETE_SUCCESSFUL]
   @scala.inline
   def DELETING: DELETING = "DELETING".asInstanceOf[DELETING]
   @scala.inline
@@ -32919,6 +32994,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
+  def GET_DASH_STREAMING_SESSION_URL: GET_DASH_STREAMING_SESSION_URL = "GET_DASH_STREAMING_SESSION_URL".asInstanceOf[GET_DASH_STREAMING_SESSION_URL]
+  @scala.inline
   def GET_HLS_STREAMING_SESSION_URL: GET_HLS_STREAMING_SESSION_URL = "GET_HLS_STREAMING_SESSION_URL".asInstanceOf[GET_HLS_STREAMING_SESSION_URL]
   @scala.inline
   def GET_MEDIA: GET_MEDIA = "GET_MEDIA".asInstanceOf[GET_MEDIA]
@@ -33072,6 +33149,8 @@ object awsDashSdkLibStrings {
   def GreaterThanOrEqualToThreshold: GreaterThanOrEqualToThreshold = "GreaterThanOrEqualToThreshold".asInstanceOf[GreaterThanOrEqualToThreshold]
   @scala.inline
   def GreaterThanThreshold: GreaterThanThreshold = "GreaterThanThreshold".asInstanceOf[GreaterThanThreshold]
+  @scala.inline
+  def GreaterThanUpperThreshold: GreaterThanUpperThreshold = "GreaterThanUpperThreshold".asInstanceOf[GreaterThanUpperThreshold]
   @scala.inline
   def Green: Green = "Green".asInstanceOf[Green]
   @scala.inline
@@ -34193,6 +34272,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def LIVE: LIVE = "LIVE".asInstanceOf[LIVE]
   @scala.inline
+  def LIVE_REPLAY: LIVE_REPLAY = "LIVE_REPLAY".asInstanceOf[LIVE_REPLAY]
+  @scala.inline
   def LK: LK = "LK".asInstanceOf[LK]
   @scala.inline
   def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
@@ -34304,6 +34385,10 @@ object awsDashSdkLibStrings {
   def Lea: Lea = "Lea".asInstanceOf[Lea]
   @scala.inline
   def LessThan: LessThan = "LessThan".asInstanceOf[LessThan]
+  @scala.inline
+  def LessThanLowerOrGreaterThanUpperThreshold: LessThanLowerOrGreaterThanUpperThreshold = "LessThanLowerOrGreaterThanUpperThreshold".asInstanceOf[LessThanLowerOrGreaterThanUpperThreshold]
+  @scala.inline
+  def LessThanLowerThreshold: LessThanLowerThreshold = "LessThanLowerThreshold".asInstanceOf[LessThanLowerThreshold]
   @scala.inline
   def LessThanOrEqualTo: LessThanOrEqualTo = "LessThanOrEqualTo".asInstanceOf[LessThanOrEqualTo]
   @scala.inline
@@ -35931,8 +36016,6 @@ object awsDashSdkLibStrings {
   @scala.inline
   def RE: RE = "RE".asInstanceOf[RE]
   @scala.inline
-  def REACT_NATIVE: REACT_NATIVE = "REACT_NATIVE".asInstanceOf[REACT_NATIVE]
-  @scala.inline
   def READ: READ = "READ".asInstanceOf[READ]
   @scala.inline
   def READER: READER = "READER".asInstanceOf[READER]
@@ -36088,6 +36171,8 @@ object awsDashSdkLibStrings {
   def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
   @scala.inline
   def REQUESTED: REQUESTED = "REQUESTED".asInstanceOf[REQUESTED]
+  @scala.inline
+  def REQUESTING_CERTIFICATE: REQUESTING_CERTIFICATE = "REQUESTING_CERTIFICATE".asInstanceOf[REQUESTING_CERTIFICATE]
   @scala.inline
   def REQUESTS: REQUESTS = "REQUESTS".asInstanceOf[REQUESTS]
   @scala.inline

@@ -26,6 +26,7 @@ trait CreateRateBasedRuleRequest extends js.Object {
     * The maximum number of requests, which have an identical value in the field that is specified by RateKey, allowed in a five-minute period. If the number of requests exceeds the RateLimit and the other predicates specified in the rule are also met, AWS WAF triggers the action that is specified for this rule.
     */
   var RateLimit: awsDashSdkLib.clientsWafregionalMod.RateLimit
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 
 object CreateRateBasedRuleRequest {
@@ -35,10 +36,11 @@ object CreateRateBasedRuleRequest {
     MetricName: MetricName,
     Name: ResourceName,
     RateKey: RateKey,
-    RateLimit: RateLimit
+    RateLimit: RateLimit,
+    Tags: TagList = null
   ): CreateRateBasedRuleRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken, MetricName = MetricName, Name = Name, RateKey = RateKey.asInstanceOf[js.Any], RateLimit = RateLimit)
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateRateBasedRuleRequest]
   }
 }

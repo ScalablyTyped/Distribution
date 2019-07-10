@@ -32,6 +32,22 @@ package object nextMod {
   type NextComponentType[P, IP, C] = (NextComponentClass[P, IP, C]) | (NextStatelessComponent[P, IP, C])
   // Moved to next-server
   type NextConfig = nextDashServerLib.nextDashConfigMod.NextConfig
+  /**
+    * HTTP request object (server only, `next export` mode)
+    *
+    * Note: We're using `Partial` here (instead of `{ url?: string }`)
+    * in order to avoid TS raising typedef errors
+    * when using it like `req && req.getHeaderNames ? req.getHeaderNames() : []`.
+    */
+  type NextExportReq[CustomReq] = stdLib.Partial[NextReq[CustomReq]]
+  /**
+    * HTTP response object (server only, `next export` mode)
+    *
+    * Note: We're using `Partial` here (instead of `{}`)
+    * in order to avoid TS raising typedef errors
+    * when using it like `res && res.getHeaderNames ? res.getHeaderNames() : []`.
+    */
+  type NextExportResponse = stdLib.Partial[NextResponse]
   type NextFC[P, IP, C] = NextFunctionComponent[P, IP, C]
   /**
     * Next.js counterpart of React.FC/React.FunctionComponent.
@@ -41,6 +57,15 @@ package object nextMod {
     * @template C Context passed to getInitialProps.
     */
   type NextFunctionComponent[P, IP, C] = reactLib.reactMod.FunctionComponent[P] with (NextStaticLifecycle[IP, C])
+  // End Deprecated
+  /**
+    * HTTP request object (server only, non-export mode)
+    */
+  type NextReq[CustomReq] = nodeLib.httpMod.IncomingMessage with CustomReq
+  /**
+    * HTTP response object (server only, non-export mode)
+    */
+  type NextResponse = nodeLib.httpMod.ServerResponse
   /**
     * @deprecated as of recent React versions, function components can no
     * longer be considered 'stateless'. Please use `NextFunctionComponent` instead.

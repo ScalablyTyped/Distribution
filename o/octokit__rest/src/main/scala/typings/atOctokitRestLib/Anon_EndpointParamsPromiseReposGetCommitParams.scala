@@ -15,6 +15,9 @@ trait Anon_EndpointParamsPromiseReposGetCommitParams extends js.Object {
   def apply(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
   ] = js.native
+  def apply(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParamsDeprecatedCommitSha): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
+  ] = js.native
   def apply(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParamsDeprecatedSha): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
   ] = js.native

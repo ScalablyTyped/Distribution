@@ -40,6 +40,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(redux-orm, redux)) [id => redux-orm, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(redux-orm) [id => redux-orm, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(AnyModel)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsExport() / TsExporteeTree() / TsDeclClass(Model) / TsTypeParam() / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(AnyModel)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsExport() / TsExporteeTree() / TsDeclClass(Model) / TsTypeParam() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(QuerySet)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsExport() / TsExporteeTree() / TsDeclClass(Model) / TsMemberProperty(querySetClass) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(AnyModel)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(IndexedModelClasses) / TsTypeParam() / TsTypeObject() / TsMemberTypeMapped() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(FILTER)))) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Database) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(QueryType) / TsTypeUnion() / TsTypeQuery())] 
@@ -109,32 +110,12 @@
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(Session) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createDatabase) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createDatabase) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createSelector) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createSelector) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createReducer) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createReducer) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclClass(ORM) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclClass(ORM) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(OrmState) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
 [info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(OrmState) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclInterface(ORMReducer))] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createReducer) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createReducer) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclInterface(ORMSelector))] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createSelector) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeKeyOf())] 
-[info ] UnionTypesFromKeyOf.scala:23 Could not expand keyof TsQIdent(List(TsIdentSimple(any))): None [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createSelector) / TsFunSig() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup() / TsTypeLookup() / TsTypeKeyOf())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_GetId) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsDeclTypeAlias(IdOrModelLike) / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_TableOpts) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsDeclClass(default) / TsMemberProperty(options) / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(TypeofClassQuerySet) [id => redux-orm, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/Model) / TsDeclClass(default) / TsMemberProperty(querySetClass) / TsTypeObject())] 
@@ -174,27 +155,25 @@
 [info ] ImportType.scala:245 Failed type conversion: {[ K in keyof T ]: -? {} extends std.Pick<T, K>? K : never}[keyof T] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/helpers) / TsDeclTypeAlias(OptionalKeys) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: {[ Key in keyof T ]: T[Key] extends ValueType? Key : never}[keyof T] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/helpers) / TsDeclTypeAlias(PickByValue) / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(OrmState) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclClass(ORM) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(Session) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createDatabase) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsDeclTypeAlias(OrmState) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsDeclInterface(ORMOpts) / TsMemberFunction(createDatabase) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: I[ModelNames] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsDeclClass(ORM) / TsMemberFunction(register) / TsFunParam() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: I[K] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsDeclClass(ORM) / TsMemberFunction(get) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsDeclClass(ORM) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/ORM) / TsDeclClass(default) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(defaultUpdater) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclFunction(createReducer) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: {}[keyof {}]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/redux) / TsDeclTypeAlias(ORMSelector) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: Tables[K] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Database) / TsDeclInterface(Database) / TsMemberFunction(describe) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Database) / TsDeclInterface(Database) / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: any[keyof any]['modelName'] [id => redux-orm, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-orm/db/Database) / TsDeclInterface(DatabaseCreator) / TsMemberCall() / TsTypeParam() / TsTypeRef() / TsTypeRef() / TsTypeLookup())] 
@@ -205,41 +184,45 @@
 [info ] CompleteClass.scala:65 Completed implementations Vector(state, sessionBoundModels, applyUpdate, query) [id => redux-orm, phase => scala.js, this => Name(reduxDashOrmLib) / Name(sessionMod) / Name(default)] 
 [debug] PhaseRunner.scala:84 Success [id => redux-orm, phase => scala.js] 
 [warn ] Phase3Compile.scala:204 Building redux-orm... [id => redux-orm, phase => build] 
-[error] Phase3Compile.scala:230 [E] [E20] src/main/scala/typings/reduxDashOrmLib/sessionMod/package.scala:10:8
+[error] Phase3Compile.scala:230 [E] [E21] src/main/scala/typings/reduxDashOrmLib/sessionMod/package.scala:10:8
 [E]       illegal cyclic reference involving type Pick
 [E]       L10:   type OrmSession[I /* <: reduxDashOrmLib.oRMMod.IndexedModelClasses[
 [E]                   ^
-[E] [E19] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala:190:7
+[E] [E20] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala:210:7
 [E]       illegal cyclic reference involving type Pick
-[E]       L190:   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
+[E]       L210:   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
 [E]                   ^
-[E] [E18] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala:180:7
+[E] [E19] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala:196:7
 [E]       illegal cyclic reference involving type Pick
-[E]       L180:   def update(props: reduxDashOrmLib.modelMod.UpdateProps[reduxDashOrmLib.modelMod.Model[_, _]]): scala.Unit = js.native
+[E]       L196:   def update(
 [E]                   ^
-[E] [E17] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala:84:7
+[E] [E18] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala:84:7
 [E]       illegal cyclic reference involving type Pick
 [E]       L84:   def create[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.CreateProps[M, stdLib.Required[reduxDashOrmLib.modelMod.ModelFields[M]]] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
 [E]                  ^
-[E] [E16] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala:190:7
+[E] [E17] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala:210:7
 [E]       illegal cyclic reference involving type Pick
-[E]       L190:   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
+[E]       L210:   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
 [E]                   ^
-[E] [E15] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala:180:7
+[E] [E16] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala:196:7
 [E]       illegal cyclic reference involving type Pick
-[E]       L180:   def update(props: reduxDashOrmLib.modelMod.UpdateProps[reduxDashOrmLib.modelMod.Model[_, _]]): scala.Unit = js.native
+[E]       L196:   def update(
 [E]                   ^
-[E] [E14] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala:84:7
+[E] [E15] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala:84:7
 [E]       illegal cyclic reference involving type Pick
 [E]       L84:   def create[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.CreateProps[M, stdLib.Required[reduxDashOrmLib.modelMod.ModelFields[M]]] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
 [E]                  ^
-[E] [E13] src/main/scala/typings/reduxDashOrmLib/querySetMod/QuerySet.scala:117:7
+[E] [E14] src/main/scala/typings/reduxDashOrmLib/querySetMod/QuerySet.scala:117:7
 [E]       illegal cyclic reference involving type Pick
 [E]       L117:   def update(mergeObj: reduxDashOrmLib.modelMod.UpdateProps[M]): scala.Unit = js.native
 [E]                   ^
+[E] [E13] src/main/scala/typings/reduxDashOrmLib/oRMMod/ORM.scala:87:7
+[E]       illegal cyclic reference involving type Pick
+[E]       L87:   def session(state: OrmState[I]): reduxDashOrmLib.sessionMod.OrmSession[I] = js.native
+[E]                  ^
 [E] [E12] src/main/scala/typings/reduxDashOrmLib/oRMMod/ORM.scala:86:7
 [E]       illegal cyclic reference involving type Pick
-[E]       L86:   def session(state: OrmState[I]): reduxDashOrmLib.sessionMod.OrmSession[I] = js.native
+[E]       L86:   def session(): reduxDashOrmLib.sessionMod.OrmSession[I] = js.native
 [E]                  ^
 [E] [E11] src/main/scala/typings/reduxDashOrmLib/oRMMod/ORM.scala:61:7
 [E]       illegal cyclic reference involving type Pick
@@ -247,27 +230,27 @@
 [E]                  ^
 [E] [E10] src/main/scala/typings/reduxDashOrmLib/modelMod/package.scala:52:8
 [E]       illegal cyclic reference involving type Pick
-[E]       L52:   type UpsertProps[M /* <: Model[_, _] */] = reduxDashOrmLib.helpersMod.Overwrite[
+[E]       L52:   type UpsertProps[M /* <: Model[org.scalablytyped.runtime.Instantiable0[AnyModel], _] */] = reduxDashOrmLib.helpersMod.Overwrite[
 [E]                   ^
 [E] [E9] src/main/scala/typings/reduxDashOrmLib/modelMod/package.scala:51:8
 [E]      illegal cyclic reference involving type Pick
-[E]      L51:   type UpdateProps[M /* <: Model[_, _] */] = stdLib.Omit[UpsertProps[M], IdKey[M]]
+[E]      L51:   type UpdateProps[M /* <: Model[org.scalablytyped.runtime.Instantiable0[AnyModel], _] */] = stdLib.Omit[UpsertProps[M], IdKey[M]]
 [E]                  ^
 [E] [E8] src/main/scala/typings/reduxDashOrmLib/modelMod/package.scala:46:8
 [E]      illegal cyclic reference involving type Pick
-[E]      L46:   type SessionBoundModel[M /* <: Model[_, _] */, InstanceProps /* <: js.Object */] = M with reduxDashOrmLib.reduxDashOrmLibStrings.SessionBoundModel with js.Any with (CustomInstanceProps[M, InstanceProps])
+[E]      L46:   type SessionBoundModel[M /* <: Model[org.scalablytyped.runtime.Instantiable0[AnyModel], _] */, InstanceProps /* <: js.Object */] = M with reduxDashOrmLib.reduxDashOrmLibStrings.SessionBoundModel with js.Any with (CustomInstanceProps[M, InstanceProps])
 [E]                  ^
 [E] [E7] src/main/scala/typings/reduxDashOrmLib/modelMod/package.scala:15:8
 [E]      illegal cyclic reference involving type Pick
 [E]      L15:   type CustomInstanceProps[M /* <: AnyModel */, Props /* <: js.Object */] = reduxDashOrmLib.helpersMod.PickByValue[
 [E]                  ^
-[E] [E6] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala:189:7
+[E] [E6] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala:209:7
 [E]      illegal cyclic reference involving type Pick
-[E]      L189:   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
+[E]      L209:   def upsert[M /* <: reduxDashOrmLib.modelMod.AnyModel */, TProps /* <: reduxDashOrmLib.modelMod.UpsertProps[M] */](userProps: TProps): reduxDashOrmLib.modelMod.SessionBoundModel[M, TProps] = js.native
 [E]                  ^
-[E] [E5] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala:179:7
+[E] [E5] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala:195:7
 [E]      illegal cyclic reference involving type Pick
-[E]      L179:   def update(props: reduxDashOrmLib.modelMod.UpdateProps[reduxDashOrmLib.modelMod.Model[_, _]]): scala.Unit = js.native
+[E]      L195:   def update(
 [E]                  ^
 [E] [E4] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala:83:7
 [E]      illegal cyclic reference involving type Pick
@@ -285,14 +268,14 @@
 [E]      illegal cyclic reference involving type Pick
 [E]      L58:   def update(userMergeObj: UpdateProps[stdLib.InstanceType[MClass]]): scala.Unit = js.native
 [E]                 ^
-[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala: L84 [E14], L180 [E15], L190 [E16]
-[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala: L84 [E17], L180 [E18], L190 [E19]
-[E] src/main/scala/typings/reduxDashOrmLib/sessionMod/package.scala: L10 [E20]
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/Model.scala: L84 [E15], L196 [E16], L210 [E17]
+[E] src/main/scala/typings/reduxDashOrmLib/reduxDashOrmMod/default.scala: L84 [E18], L196 [E19], L210 [E20]
+[E] src/main/scala/typings/reduxDashOrmLib/sessionMod/package.scala: L10 [E21]
 [E] src/main/scala/typings/reduxDashOrmLib/modelMod/Model.scala: L58 [E1]
 [E] src/main/scala/typings/reduxDashOrmLib/modelMod/package.scala: L15 [E7], L46 [E8], L51 [E9], L52 [E10]
-[E] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala: L83 [E4], L179 [E5], L189 [E6]
-[E] src/main/scala/typings/reduxDashOrmLib/oRMMod/ORM.scala: L61 [E11], L86 [E12]
-[E] src/main/scala/typings/reduxDashOrmLib/querySetMod/QuerySet.scala: L117 [E13]
+[E] src/main/scala/typings/reduxDashOrmLib/modelMod/default.scala: L83 [E4], L195 [E5], L209 [E6]
+[E] src/main/scala/typings/reduxDashOrmLib/oRMMod/ORM.scala: L61 [E11], L86 [E12], L87 [E13]
+[E] src/main/scala/typings/reduxDashOrmLib/querySetMod/QuerySet.scala: L117 [E14]
 [E] src/main/scala/typings/reduxDashOrmLib/modelMod/ModelType.scala: L18 [E2], L30 [E3]
 [E] Failed to compile 'redux-orm'
  [id => redux-orm, phase => build] 

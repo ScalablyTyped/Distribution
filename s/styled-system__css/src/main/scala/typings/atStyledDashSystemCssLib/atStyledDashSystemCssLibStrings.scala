@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atStyledDashSystemCssLibStrings {
   @js.native
+  sealed trait CSSObject extends js.Object
+  
+  @js.native
   sealed trait CSSPseudoSelectorProps extends js.Object
   
   @js.native
@@ -18,6 +21,8 @@ object atStyledDashSystemCssLibStrings {
   @js.native
   sealed trait fontWeight extends js.Object
   
+  @scala.inline
+  def CSSObject: CSSObject = "CSSObject".asInstanceOf[CSSObject]
   @scala.inline
   def CSSPseudoSelectorProps: CSSPseudoSelectorProps = "CSSPseudoSelectorProps".asInstanceOf[CSSPseudoSelectorProps]
   @scala.inline

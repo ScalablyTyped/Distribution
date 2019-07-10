@@ -93,8 +93,6 @@ trait MapOptions extends js.Object {
   var minZoom: js.UndefOr[scala.Double] = js.undefined
   /** If true, do not clear the contents of the Map div. */
   var noClear: js.UndefOr[scala.Boolean] = js.undefined
-  var overviewMapControl: js.UndefOr[scala.Boolean] = js.undefined
-  var overviewMapControlOptions: js.UndefOr[OverviewMapControlOptions] = js.undefined
   /**
     * The enabled/disabled state of the Pan control.
     * Note: The Pan control is not available in the new set of controls
@@ -130,15 +128,6 @@ trait MapOptions extends js.Object {
     * enabled by default.
     */
   var scrollwheel: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * The enabled/disabled state of the sign in control. This option only
-    * applies if signed_in=true has been passed as a URL parameter in the
-    * bootstrap request. You may want to use this option to hide the map's sign
-    * in control if you have provided another way for your users to sign in,
-    * such as the Google Sign-In button. This option does not affect the
-    * visibility of the Google avatar shown when the user is already signed in.
-    */
-  var signInControl: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * A StreetViewPanorama to display when the Street View pegman is dropped on
     * the map. If no panorama is specified, a default StreetViewPanorama will
@@ -209,8 +198,6 @@ object MapOptions {
     maxZoom: scala.Int | scala.Double = null,
     minZoom: scala.Int | scala.Double = null,
     noClear: js.UndefOr[scala.Boolean] = js.undefined,
-    overviewMapControl: js.UndefOr[scala.Boolean] = js.undefined,
-    overviewMapControlOptions: OverviewMapControlOptions = null,
     panControl: js.UndefOr[scala.Boolean] = js.undefined,
     panControlOptions: PanControlOptions = null,
     rotateControl: js.UndefOr[scala.Boolean] = js.undefined,
@@ -218,7 +205,6 @@ object MapOptions {
     scaleControl: js.UndefOr[scala.Boolean] = js.undefined,
     scaleControlOptions: ScaleControlOptions = null,
     scrollwheel: js.UndefOr[scala.Boolean] = js.undefined,
-    signInControl: js.UndefOr[scala.Boolean] = js.undefined,
     streetView: StreetViewPanorama = null,
     streetViewControl: js.UndefOr[scala.Boolean] = js.undefined,
     streetViewControlOptions: StreetViewControlOptions = null,
@@ -249,8 +235,6 @@ object MapOptions {
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)
-    if (!js.isUndefined(overviewMapControl)) __obj.updateDynamic("overviewMapControl")(overviewMapControl)
-    if (overviewMapControlOptions != null) __obj.updateDynamic("overviewMapControlOptions")(overviewMapControlOptions)
     if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
     if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
     if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl)
@@ -258,7 +242,6 @@ object MapOptions {
     if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl)
     if (scaleControlOptions != null) __obj.updateDynamic("scaleControlOptions")(scaleControlOptions)
     if (!js.isUndefined(scrollwheel)) __obj.updateDynamic("scrollwheel")(scrollwheel)
-    if (!js.isUndefined(signInControl)) __obj.updateDynamic("signInControl")(signInControl)
     if (streetView != null) __obj.updateDynamic("streetView")(streetView)
     if (!js.isUndefined(streetViewControl)) __obj.updateDynamic("streetViewControl")(streetViewControl)
     if (streetViewControlOptions != null) __obj.updateDynamic("streetViewControlOptions")(streetViewControlOptions)

@@ -24,6 +24,10 @@ trait IonRouterLink extends js.Object {
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  /**
+    * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+    */
+  var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IonRouterLink {
@@ -32,12 +36,14 @@ object IonRouterLink {
     routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     href: java.lang.String = null,
-    rel: java.lang.String = null
+    rel: java.lang.String = null,
+    target: java.lang.String = null
   ): IonRouterLink = {
     val __obj = js.Dynamic.literal(routerDirection = routerDirection)
     if (color != null) __obj.updateDynamic("color")(color)
     if (href != null) __obj.updateDynamic("href")(href)
     if (rel != null) __obj.updateDynamic("rel")(rel)
+    if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[IonRouterLink]
   }
 }

@@ -10,5 +10,9 @@ import scala.scalajs.js.annotation._
 class OverlayBaseController[Opts, Overlay] protected () extends ControllerShape[Opts, Overlay] {
   def this(ctrl: ControllerShape[Opts, Overlay]) = this()
   var ctrl: js.Any = js.native
+  /**
+    * Creates a new overlay
+    */
+  def create(): js.Promise[Overlay] = js.native
 }
 

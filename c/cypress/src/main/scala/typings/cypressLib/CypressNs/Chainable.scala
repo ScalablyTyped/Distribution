@@ -964,6 +964,51 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_contain(chainer: cypressLib.cypressLibStrings.contain, value: js.Any): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection partially contains the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('contain.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_containhtml(chainer: cypressLib.cypressLibStrings.containDOThtml, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection partially contains the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('contain.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_containtext(chainer: cypressLib.cypressLibStrings.containDOTtext, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection partially contains the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('contain.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_containvalue(chainer: cypressLib.cypressLibStrings.containDOTvalue, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * When one argument is provided, `.decrease` asserts that the given function `subject` returns a lesser number when it’s invoked after invoking the target function compared to when it’s invoked beforehand.
     * `.decrease` also causes all `.by` assertions that follow in the chain to assert how much lesser of a number is returned. It’s often best to assert that the return value decreased by the expected amount, rather than asserting it decreased by any amount.
     * @example
@@ -2350,6 +2395,51 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("and")
   def and_notcontain(chainer: cypressLib.cypressLibStrings.notDOTcontain, value: js.Any): Chainable[Subject] = js.native
+  /**
+    * Assert that the html of the first element of the selection does not contain the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('not.contain.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notcontainhtml(chainer: cypressLib.cypressLibStrings.notDOTcontainDOThtml, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection does not contain the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('not.contain.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notcontaintext(chainer: cypressLib.cypressLibStrings.notDOTcontainDOTtext, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection does not contain the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('not.contain.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notcontainvalue(chainer: cypressLib.cypressLibStrings.notDOTcontainDOTvalue, value: java.lang.String): Chainable[Subject] = js.native
   /**
     * When one argument is provided, `.decrease` asserts that the given function `subject` does not returns a lesser number when it’s invoked after invoking the target function compared to when it’s invoked beforehand.
     * `.decrease` also causes all `.by` assertions that follow in the chain to assert how much lesser of a number is returned. It’s often best to assert that the return value decreased by the expected amount, rather than asserting it decreased by any amount.
@@ -8528,7 +8618,7 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('@todos')
     */
   def get[S](alias: java.lang.String): Chainable[S] = js.native
-  def get[S](alias: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[S] = js.native
+  def get[S](alias: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable with Withinable]): Chainable[S] = js.native
   /**
     * Get a browser cookie by its name.
     *
@@ -8555,7 +8645,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_ENode[E /* <: stdLib.Node */](selector: java.lang.String): Chainable[cypressLib.JQuery[E]] = js.native
   @JSName("get")
-  def get_ENode[E /* <: stdLib.Node */](selector: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[E]] = js.native
+  def get_ENode[E /* <: stdLib.Node */](selector: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable with Withinable]): Chainable[cypressLib.JQuery[E]] = js.native
   /**
     * Get one or more DOM elements by node name: input, button, etc.
     * @see https://on.cypress.io/get
@@ -8566,518 +8656,836 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_a(selector: cypressLib.cypressLibStrings.a): Chainable[cypressLib.JQuery[stdLib.HTMLAnchorElement]] = js.native
   @JSName("get")
-  def get_a(selector: cypressLib.cypressLibStrings.a, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLAnchorElement]] = js.native
+  def get_a(
+    selector: cypressLib.cypressLibStrings.a,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLAnchorElement]] = js.native
   @JSName("get")
   def get_abbr(selector: cypressLib.cypressLibStrings.abbr): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_abbr(selector: cypressLib.cypressLibStrings.abbr, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_abbr(
+    selector: cypressLib.cypressLibStrings.abbr,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_address(selector: cypressLib.cypressLibStrings.address): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_address(selector: cypressLib.cypressLibStrings.address, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_address(
+    selector: cypressLib.cypressLibStrings.address,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_applet(selector: cypressLib.cypressLibStrings.applet): Chainable[cypressLib.JQuery[stdLib.HTMLAppletElement]] = js.native
   @JSName("get")
-  def get_applet(selector: cypressLib.cypressLibStrings.applet, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLAppletElement]] = js.native
+  def get_applet(
+    selector: cypressLib.cypressLibStrings.applet,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLAppletElement]] = js.native
   @JSName("get")
   def get_area(selector: cypressLib.cypressLibStrings.area): Chainable[cypressLib.JQuery[stdLib.HTMLAreaElement]] = js.native
   @JSName("get")
-  def get_area(selector: cypressLib.cypressLibStrings.area, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLAreaElement]] = js.native
+  def get_area(
+    selector: cypressLib.cypressLibStrings.area,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLAreaElement]] = js.native
   @JSName("get")
   def get_article(selector: cypressLib.cypressLibStrings.article): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_article(selector: cypressLib.cypressLibStrings.article, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_article(
+    selector: cypressLib.cypressLibStrings.article,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_aside(selector: cypressLib.cypressLibStrings.aside): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_aside(selector: cypressLib.cypressLibStrings.aside, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_aside(
+    selector: cypressLib.cypressLibStrings.aside,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_audio(selector: cypressLib.cypressLibStrings.audio): Chainable[cypressLib.JQuery[stdLib.HTMLAudioElement]] = js.native
   @JSName("get")
-  def get_audio(selector: cypressLib.cypressLibStrings.audio, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLAudioElement]] = js.native
+  def get_audio(
+    selector: cypressLib.cypressLibStrings.audio,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLAudioElement]] = js.native
   @JSName("get")
   def get_b(selector: cypressLib.cypressLibStrings.b): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_b(selector: cypressLib.cypressLibStrings.b, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_b(
+    selector: cypressLib.cypressLibStrings.b,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_base(selector: cypressLib.cypressLibStrings.base): Chainable[cypressLib.JQuery[stdLib.HTMLBaseElement]] = js.native
   @JSName("get")
-  def get_base(selector: cypressLib.cypressLibStrings.base, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLBaseElement]] = js.native
+  def get_base(
+    selector: cypressLib.cypressLibStrings.base,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseElement]] = js.native
   @JSName("get")
   def get_basefont(selector: cypressLib.cypressLibStrings.basefont): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
   @JSName("get")
   def get_basefont(
     selector: cypressLib.cypressLibStrings.basefont,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
   @JSName("get")
   def get_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_bdi(
+    selector: cypressLib.cypressLibStrings.bdi,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_bdo(selector: cypressLib.cypressLibStrings.bdo): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_bdo(selector: cypressLib.cypressLibStrings.bdo, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_bdo(
+    selector: cypressLib.cypressLibStrings.bdo,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_blockquote(selector: cypressLib.cypressLibStrings.blockquote): Chainable[cypressLib.JQuery[stdLib.HTMLQuoteElement]] = js.native
   @JSName("get")
   def get_blockquote(
     selector: cypressLib.cypressLibStrings.blockquote,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLQuoteElement]] = js.native
   @JSName("get")
   def get_body(selector: cypressLib.cypressLibStrings.body): Chainable[cypressLib.JQuery[stdLib.HTMLBodyElement]] = js.native
   @JSName("get")
-  def get_body(selector: cypressLib.cypressLibStrings.body, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLBodyElement]] = js.native
+  def get_body(
+    selector: cypressLib.cypressLibStrings.body,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLBodyElement]] = js.native
   @JSName("get")
   def get_br(selector: cypressLib.cypressLibStrings.br): Chainable[cypressLib.JQuery[stdLib.HTMLBRElement]] = js.native
   @JSName("get")
-  def get_br(selector: cypressLib.cypressLibStrings.br, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLBRElement]] = js.native
+  def get_br(
+    selector: cypressLib.cypressLibStrings.br,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLBRElement]] = js.native
   @JSName("get")
   def get_button(selector: cypressLib.cypressLibStrings.button): Chainable[cypressLib.JQuery[stdLib.HTMLButtonElement]] = js.native
   @JSName("get")
-  def get_button(selector: cypressLib.cypressLibStrings.button, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLButtonElement]] = js.native
+  def get_button(
+    selector: cypressLib.cypressLibStrings.button,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLButtonElement]] = js.native
   @JSName("get")
   def get_canvas(selector: cypressLib.cypressLibStrings.canvas): Chainable[cypressLib.JQuery[stdLib.HTMLCanvasElement]] = js.native
   @JSName("get")
-  def get_canvas(selector: cypressLib.cypressLibStrings.canvas, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLCanvasElement]] = js.native
+  def get_canvas(
+    selector: cypressLib.cypressLibStrings.canvas,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLCanvasElement]] = js.native
   @JSName("get")
   def get_caption(selector: cypressLib.cypressLibStrings.caption): Chainable[cypressLib.JQuery[stdLib.HTMLTableCaptionElement]] = js.native
   @JSName("get")
-  def get_caption(selector: cypressLib.cypressLibStrings.caption, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableCaptionElement]] = js.native
+  def get_caption(
+    selector: cypressLib.cypressLibStrings.caption,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableCaptionElement]] = js.native
   @JSName("get")
   def get_cite(selector: cypressLib.cypressLibStrings.cite): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_cite(selector: cypressLib.cypressLibStrings.cite, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_cite(
+    selector: cypressLib.cypressLibStrings.cite,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_code(selector: cypressLib.cypressLibStrings.code): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_code(selector: cypressLib.cypressLibStrings.code, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_code(
+    selector: cypressLib.cypressLibStrings.code,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_col(selector: cypressLib.cypressLibStrings.col): Chainable[cypressLib.JQuery[stdLib.HTMLTableColElement]] = js.native
   @JSName("get")
-  def get_col(selector: cypressLib.cypressLibStrings.col, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableColElement]] = js.native
+  def get_col(
+    selector: cypressLib.cypressLibStrings.col,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableColElement]] = js.native
   @JSName("get")
   def get_colgroup(selector: cypressLib.cypressLibStrings.colgroup): Chainable[cypressLib.JQuery[stdLib.HTMLTableColElement]] = js.native
   @JSName("get")
   def get_colgroup(
     selector: cypressLib.cypressLibStrings.colgroup,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLTableColElement]] = js.native
   @JSName("get")
   def get_data(selector: cypressLib.cypressLibStrings.data): Chainable[cypressLib.JQuery[stdLib.HTMLDataElement]] = js.native
   @JSName("get")
-  def get_data(selector: cypressLib.cypressLibStrings.data, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLDataElement]] = js.native
+  def get_data(
+    selector: cypressLib.cypressLibStrings.data,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLDataElement]] = js.native
   @JSName("get")
   def get_datalist(selector: cypressLib.cypressLibStrings.datalist): Chainable[cypressLib.JQuery[stdLib.HTMLDataListElement]] = js.native
   @JSName("get")
   def get_datalist(
     selector: cypressLib.cypressLibStrings.datalist,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLDataListElement]] = js.native
   @JSName("get")
   def get_dd(selector: cypressLib.cypressLibStrings.dd): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_dd(selector: cypressLib.cypressLibStrings.dd, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_dd(
+    selector: cypressLib.cypressLibStrings.dd,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_del(selector: cypressLib.cypressLibStrings.del): Chainable[cypressLib.JQuery[stdLib.HTMLModElement]] = js.native
   @JSName("get")
-  def get_del(selector: cypressLib.cypressLibStrings.del, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLModElement]] = js.native
+  def get_del(
+    selector: cypressLib.cypressLibStrings.del,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLModElement]] = js.native
   @JSName("get")
   def get_details(selector: cypressLib.cypressLibStrings.details): Chainable[cypressLib.JQuery[stdLib.HTMLDetailsElement]] = js.native
   @JSName("get")
-  def get_details(selector: cypressLib.cypressLibStrings.details, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLDetailsElement]] = js.native
+  def get_details(
+    selector: cypressLib.cypressLibStrings.details,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLDetailsElement]] = js.native
   @JSName("get")
   def get_dfn(selector: cypressLib.cypressLibStrings.dfn): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_dfn(selector: cypressLib.cypressLibStrings.dfn, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_dfn(
+    selector: cypressLib.cypressLibStrings.dfn,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_dialog(selector: cypressLib.cypressLibStrings.dialog): Chainable[cypressLib.JQuery[stdLib.HTMLDialogElement]] = js.native
   @JSName("get")
-  def get_dialog(selector: cypressLib.cypressLibStrings.dialog, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLDialogElement]] = js.native
+  def get_dialog(
+    selector: cypressLib.cypressLibStrings.dialog,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLDialogElement]] = js.native
   @JSName("get")
   def get_dir(selector: cypressLib.cypressLibStrings.dir): Chainable[cypressLib.JQuery[stdLib.HTMLDirectoryElement]] = js.native
   @JSName("get")
-  def get_dir(selector: cypressLib.cypressLibStrings.dir, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLDirectoryElement]] = js.native
+  def get_dir(
+    selector: cypressLib.cypressLibStrings.dir,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLDirectoryElement]] = js.native
   @JSName("get")
   def get_div(selector: cypressLib.cypressLibStrings.div): Chainable[cypressLib.JQuery[stdLib.HTMLDivElement]] = js.native
   @JSName("get")
-  def get_div(selector: cypressLib.cypressLibStrings.div, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLDivElement]] = js.native
+  def get_div(
+    selector: cypressLib.cypressLibStrings.div,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLDivElement]] = js.native
   @JSName("get")
   def get_dl(selector: cypressLib.cypressLibStrings.dl): Chainable[cypressLib.JQuery[stdLib.HTMLDListElement]] = js.native
   @JSName("get")
-  def get_dl(selector: cypressLib.cypressLibStrings.dl, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLDListElement]] = js.native
+  def get_dl(
+    selector: cypressLib.cypressLibStrings.dl,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLDListElement]] = js.native
   @JSName("get")
   def get_dt(selector: cypressLib.cypressLibStrings.dt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_dt(selector: cypressLib.cypressLibStrings.dt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_dt(
+    selector: cypressLib.cypressLibStrings.dt,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_em(selector: cypressLib.cypressLibStrings.em): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_em(selector: cypressLib.cypressLibStrings.em, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_em(
+    selector: cypressLib.cypressLibStrings.em,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_embed(selector: cypressLib.cypressLibStrings.embed): Chainable[cypressLib.JQuery[stdLib.HTMLEmbedElement]] = js.native
   @JSName("get")
-  def get_embed(selector: cypressLib.cypressLibStrings.embed, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLEmbedElement]] = js.native
+  def get_embed(
+    selector: cypressLib.cypressLibStrings.embed,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLEmbedElement]] = js.native
   @JSName("get")
   def get_fieldset(selector: cypressLib.cypressLibStrings.fieldset): Chainable[cypressLib.JQuery[stdLib.HTMLFieldSetElement]] = js.native
   @JSName("get")
   def get_fieldset(
     selector: cypressLib.cypressLibStrings.fieldset,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLFieldSetElement]] = js.native
   @JSName("get")
   def get_figcaption(selector: cypressLib.cypressLibStrings.figcaption): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_figcaption(
     selector: cypressLib.cypressLibStrings.figcaption,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_figure(selector: cypressLib.cypressLibStrings.figure): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_figure(selector: cypressLib.cypressLibStrings.figure, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_figure(
+    selector: cypressLib.cypressLibStrings.figure,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_font(selector: cypressLib.cypressLibStrings.font): Chainable[cypressLib.JQuery[stdLib.HTMLFontElement]] = js.native
   @JSName("get")
-  def get_font(selector: cypressLib.cypressLibStrings.font, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLFontElement]] = js.native
+  def get_font(
+    selector: cypressLib.cypressLibStrings.font,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLFontElement]] = js.native
   @JSName("get")
   def get_footer(selector: cypressLib.cypressLibStrings.footer): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_footer(selector: cypressLib.cypressLibStrings.footer, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_footer(
+    selector: cypressLib.cypressLibStrings.footer,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_form(selector: cypressLib.cypressLibStrings.form): Chainable[cypressLib.JQuery[stdLib.HTMLFormElement]] = js.native
   @JSName("get")
-  def get_form(selector: cypressLib.cypressLibStrings.form, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLFormElement]] = js.native
+  def get_form(
+    selector: cypressLib.cypressLibStrings.form,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLFormElement]] = js.native
   @JSName("get")
   def get_frame(selector: cypressLib.cypressLibStrings.frame): Chainable[cypressLib.JQuery[stdLib.HTMLFrameElement]] = js.native
   @JSName("get")
-  def get_frame(selector: cypressLib.cypressLibStrings.frame, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLFrameElement]] = js.native
+  def get_frame(
+    selector: cypressLib.cypressLibStrings.frame,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLFrameElement]] = js.native
   @JSName("get")
   def get_frameset(selector: cypressLib.cypressLibStrings.frameset): Chainable[cypressLib.JQuery[stdLib.HTMLFrameSetElement]] = js.native
   @JSName("get")
   def get_frameset(
     selector: cypressLib.cypressLibStrings.frameset,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLFrameSetElement]] = js.native
   @JSName("get")
   def get_h1(selector: cypressLib.cypressLibStrings.h1): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
-  def get_h1(selector: cypressLib.cypressLibStrings.h1, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
+  def get_h1(
+    selector: cypressLib.cypressLibStrings.h1,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
   def get_h2(selector: cypressLib.cypressLibStrings.h2): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
-  def get_h2(selector: cypressLib.cypressLibStrings.h2, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
+  def get_h2(
+    selector: cypressLib.cypressLibStrings.h2,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
   def get_h3(selector: cypressLib.cypressLibStrings.h3): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
-  def get_h3(selector: cypressLib.cypressLibStrings.h3, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
+  def get_h3(
+    selector: cypressLib.cypressLibStrings.h3,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
   def get_h4(selector: cypressLib.cypressLibStrings.h4): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
-  def get_h4(selector: cypressLib.cypressLibStrings.h4, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
+  def get_h4(
+    selector: cypressLib.cypressLibStrings.h4,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
   def get_h5(selector: cypressLib.cypressLibStrings.h5): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
-  def get_h5(selector: cypressLib.cypressLibStrings.h5, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
+  def get_h5(
+    selector: cypressLib.cypressLibStrings.h5,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
   def get_h6(selector: cypressLib.cypressLibStrings.h6): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
-  def get_h6(selector: cypressLib.cypressLibStrings.h6, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
+  def get_h6(
+    selector: cypressLib.cypressLibStrings.h6,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadingElement]] = js.native
   @JSName("get")
   def get_head(selector: cypressLib.cypressLibStrings.head): Chainable[cypressLib.JQuery[stdLib.HTMLHeadElement]] = js.native
   @JSName("get")
-  def get_head(selector: cypressLib.cypressLibStrings.head, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHeadElement]] = js.native
+  def get_head(
+    selector: cypressLib.cypressLibStrings.head,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHeadElement]] = js.native
   @JSName("get")
   def get_header(selector: cypressLib.cypressLibStrings.header): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_header(selector: cypressLib.cypressLibStrings.header, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_header(
+    selector: cypressLib.cypressLibStrings.header,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_hgroup(selector: cypressLib.cypressLibStrings.hgroup): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_hgroup(selector: cypressLib.cypressLibStrings.hgroup, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_hgroup(
+    selector: cypressLib.cypressLibStrings.hgroup,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_hr(selector: cypressLib.cypressLibStrings.hr): Chainable[cypressLib.JQuery[stdLib.HTMLHRElement]] = js.native
   @JSName("get")
-  def get_hr(selector: cypressLib.cypressLibStrings.hr, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHRElement]] = js.native
+  def get_hr(
+    selector: cypressLib.cypressLibStrings.hr,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHRElement]] = js.native
   @JSName("get")
   def get_html(selector: cypressLib.cypressLibStrings.html): Chainable[cypressLib.JQuery[stdLib.HTMLHtmlElement]] = js.native
   @JSName("get")
-  def get_html(selector: cypressLib.cypressLibStrings.html, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLHtmlElement]] = js.native
+  def get_html(
+    selector: cypressLib.cypressLibStrings.html,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLHtmlElement]] = js.native
   @JSName("get")
   def get_i(selector: cypressLib.cypressLibStrings.i): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_i(selector: cypressLib.cypressLibStrings.i, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_i(
+    selector: cypressLib.cypressLibStrings.i,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_iframe(selector: cypressLib.cypressLibStrings.iframe): Chainable[cypressLib.JQuery[stdLib.HTMLIFrameElement]] = js.native
   @JSName("get")
-  def get_iframe(selector: cypressLib.cypressLibStrings.iframe, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLIFrameElement]] = js.native
+  def get_iframe(
+    selector: cypressLib.cypressLibStrings.iframe,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLIFrameElement]] = js.native
   @JSName("get")
   def get_img(selector: cypressLib.cypressLibStrings.img): Chainable[cypressLib.JQuery[stdLib.HTMLImageElement]] = js.native
   @JSName("get")
-  def get_img(selector: cypressLib.cypressLibStrings.img, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLImageElement]] = js.native
+  def get_img(
+    selector: cypressLib.cypressLibStrings.img,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLImageElement]] = js.native
   @JSName("get")
   def get_input(selector: cypressLib.cypressLibStrings.input): Chainable[cypressLib.JQuery[stdLib.HTMLInputElement]] = js.native
   @JSName("get")
-  def get_input(selector: cypressLib.cypressLibStrings.input, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLInputElement]] = js.native
+  def get_input(
+    selector: cypressLib.cypressLibStrings.input,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLInputElement]] = js.native
   @JSName("get")
   def get_ins(selector: cypressLib.cypressLibStrings.ins): Chainable[cypressLib.JQuery[stdLib.HTMLModElement]] = js.native
   @JSName("get")
-  def get_ins(selector: cypressLib.cypressLibStrings.ins, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLModElement]] = js.native
+  def get_ins(
+    selector: cypressLib.cypressLibStrings.ins,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLModElement]] = js.native
   @JSName("get")
   def get_kbd(selector: cypressLib.cypressLibStrings.kbd): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_kbd(selector: cypressLib.cypressLibStrings.kbd, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_kbd(
+    selector: cypressLib.cypressLibStrings.kbd,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_label(selector: cypressLib.cypressLibStrings.label): Chainable[cypressLib.JQuery[stdLib.HTMLLabelElement]] = js.native
   @JSName("get")
-  def get_label(selector: cypressLib.cypressLibStrings.label, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLLabelElement]] = js.native
+  def get_label(
+    selector: cypressLib.cypressLibStrings.label,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLLabelElement]] = js.native
   @JSName("get")
   def get_legend(selector: cypressLib.cypressLibStrings.legend): Chainable[cypressLib.JQuery[stdLib.HTMLLegendElement]] = js.native
   @JSName("get")
-  def get_legend(selector: cypressLib.cypressLibStrings.legend, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLLegendElement]] = js.native
+  def get_legend(
+    selector: cypressLib.cypressLibStrings.legend,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLLegendElement]] = js.native
   @JSName("get")
   def get_li(selector: cypressLib.cypressLibStrings.li): Chainable[cypressLib.JQuery[stdLib.HTMLLIElement]] = js.native
   @JSName("get")
-  def get_li(selector: cypressLib.cypressLibStrings.li, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLLIElement]] = js.native
+  def get_li(
+    selector: cypressLib.cypressLibStrings.li,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLLIElement]] = js.native
   @JSName("get")
   def get_link(selector: cypressLib.cypressLibStrings.link): Chainable[cypressLib.JQuery[stdLib.HTMLLinkElement]] = js.native
   @JSName("get")
-  def get_link(selector: cypressLib.cypressLibStrings.link, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLLinkElement]] = js.native
+  def get_link(
+    selector: cypressLib.cypressLibStrings.link,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLLinkElement]] = js.native
   @JSName("get")
   def get_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_main(
+    selector: cypressLib.cypressLibStrings.main,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("get")
-  def get_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
+  def get_map(
+    selector: cypressLib.cypressLibStrings.map,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("get")
   def get_mark(selector: cypressLib.cypressLibStrings.mark): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_mark(selector: cypressLib.cypressLibStrings.mark, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_mark(
+    selector: cypressLib.cypressLibStrings.mark,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_marquee(selector: cypressLib.cypressLibStrings.marquee): Chainable[cypressLib.JQuery[stdLib.HTMLMarqueeElement]] = js.native
   @JSName("get")
-  def get_marquee(selector: cypressLib.cypressLibStrings.marquee, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMarqueeElement]] = js.native
+  def get_marquee(
+    selector: cypressLib.cypressLibStrings.marquee,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLMarqueeElement]] = js.native
   @JSName("get")
   def get_menu(selector: cypressLib.cypressLibStrings.menu): Chainable[cypressLib.JQuery[stdLib.HTMLMenuElement]] = js.native
   @JSName("get")
-  def get_menu(selector: cypressLib.cypressLibStrings.menu, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMenuElement]] = js.native
+  def get_menu(
+    selector: cypressLib.cypressLibStrings.menu,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLMenuElement]] = js.native
   @JSName("get")
   def get_meta(selector: cypressLib.cypressLibStrings.meta): Chainable[cypressLib.JQuery[stdLib.HTMLMetaElement]] = js.native
   @JSName("get")
-  def get_meta(selector: cypressLib.cypressLibStrings.meta, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMetaElement]] = js.native
+  def get_meta(
+    selector: cypressLib.cypressLibStrings.meta,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLMetaElement]] = js.native
   @JSName("get")
   def get_meter(selector: cypressLib.cypressLibStrings.meter): Chainable[cypressLib.JQuery[stdLib.HTMLMeterElement]] = js.native
   @JSName("get")
-  def get_meter(selector: cypressLib.cypressLibStrings.meter, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMeterElement]] = js.native
+  def get_meter(
+    selector: cypressLib.cypressLibStrings.meter,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLMeterElement]] = js.native
   @JSName("get")
   def get_nav(selector: cypressLib.cypressLibStrings.nav): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_nav(selector: cypressLib.cypressLibStrings.nav, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_nav(
+    selector: cypressLib.cypressLibStrings.nav,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_noscript(selector: cypressLib.cypressLibStrings.noscript): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_noscript(
     selector: cypressLib.cypressLibStrings.noscript,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_object(selector: cypressLib.cypressLibStrings.`object`): Chainable[cypressLib.JQuery[stdLib.HTMLObjectElement]] = js.native
   @JSName("get")
   def get_object(
     selector: cypressLib.cypressLibStrings.`object`,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLObjectElement]] = js.native
   @JSName("get")
   def get_ol(selector: cypressLib.cypressLibStrings.ol): Chainable[cypressLib.JQuery[stdLib.HTMLOListElement]] = js.native
   @JSName("get")
-  def get_ol(selector: cypressLib.cypressLibStrings.ol, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLOListElement]] = js.native
+  def get_ol(
+    selector: cypressLib.cypressLibStrings.ol,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLOListElement]] = js.native
   @JSName("get")
   def get_optgroup(selector: cypressLib.cypressLibStrings.optgroup): Chainable[cypressLib.JQuery[stdLib.HTMLOptGroupElement]] = js.native
   @JSName("get")
   def get_optgroup(
     selector: cypressLib.cypressLibStrings.optgroup,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLOptGroupElement]] = js.native
   @JSName("get")
   def get_option(selector: cypressLib.cypressLibStrings.option): Chainable[cypressLib.JQuery[stdLib.HTMLOptionElement]] = js.native
   @JSName("get")
-  def get_option(selector: cypressLib.cypressLibStrings.option, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLOptionElement]] = js.native
+  def get_option(
+    selector: cypressLib.cypressLibStrings.option,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLOptionElement]] = js.native
   @JSName("get")
   def get_output(selector: cypressLib.cypressLibStrings.output): Chainable[cypressLib.JQuery[stdLib.HTMLOutputElement]] = js.native
   @JSName("get")
-  def get_output(selector: cypressLib.cypressLibStrings.output, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLOutputElement]] = js.native
+  def get_output(
+    selector: cypressLib.cypressLibStrings.output,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLOutputElement]] = js.native
   @JSName("get")
   def get_p(selector: cypressLib.cypressLibStrings.p): Chainable[cypressLib.JQuery[stdLib.HTMLParagraphElement]] = js.native
   @JSName("get")
-  def get_p(selector: cypressLib.cypressLibStrings.p, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLParagraphElement]] = js.native
+  def get_p(
+    selector: cypressLib.cypressLibStrings.p,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLParagraphElement]] = js.native
   @JSName("get")
   def get_param(selector: cypressLib.cypressLibStrings.param): Chainable[cypressLib.JQuery[stdLib.HTMLParamElement]] = js.native
   @JSName("get")
-  def get_param(selector: cypressLib.cypressLibStrings.param, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLParamElement]] = js.native
+  def get_param(
+    selector: cypressLib.cypressLibStrings.param,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLParamElement]] = js.native
   @JSName("get")
   def get_picture(selector: cypressLib.cypressLibStrings.picture): Chainable[cypressLib.JQuery[stdLib.HTMLPictureElement]] = js.native
   @JSName("get")
-  def get_picture(selector: cypressLib.cypressLibStrings.picture, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLPictureElement]] = js.native
+  def get_picture(
+    selector: cypressLib.cypressLibStrings.picture,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLPictureElement]] = js.native
   @JSName("get")
   def get_pre(selector: cypressLib.cypressLibStrings.pre): Chainable[cypressLib.JQuery[stdLib.HTMLPreElement]] = js.native
   @JSName("get")
-  def get_pre(selector: cypressLib.cypressLibStrings.pre, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLPreElement]] = js.native
+  def get_pre(
+    selector: cypressLib.cypressLibStrings.pre,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLPreElement]] = js.native
   @JSName("get")
   def get_progress(selector: cypressLib.cypressLibStrings.progress): Chainable[cypressLib.JQuery[stdLib.HTMLProgressElement]] = js.native
   @JSName("get")
   def get_progress(
     selector: cypressLib.cypressLibStrings.progress,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLProgressElement]] = js.native
   @JSName("get")
   def get_q(selector: cypressLib.cypressLibStrings.q): Chainable[cypressLib.JQuery[stdLib.HTMLQuoteElement]] = js.native
   @JSName("get")
-  def get_q(selector: cypressLib.cypressLibStrings.q, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLQuoteElement]] = js.native
+  def get_q(
+    selector: cypressLib.cypressLibStrings.q,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLQuoteElement]] = js.native
   @JSName("get")
   def get_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_rp(
+    selector: cypressLib.cypressLibStrings.rp,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_rt(
+    selector: cypressLib.cypressLibStrings.rt,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_ruby(selector: cypressLib.cypressLibStrings.ruby): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_ruby(selector: cypressLib.cypressLibStrings.ruby, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_ruby(
+    selector: cypressLib.cypressLibStrings.ruby,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_s(selector: cypressLib.cypressLibStrings.s): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_s(selector: cypressLib.cypressLibStrings.s, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_s(
+    selector: cypressLib.cypressLibStrings.s,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_samp(selector: cypressLib.cypressLibStrings.samp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_samp(selector: cypressLib.cypressLibStrings.samp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_samp(
+    selector: cypressLib.cypressLibStrings.samp,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_script(selector: cypressLib.cypressLibStrings.script): Chainable[cypressLib.JQuery[stdLib.HTMLScriptElement]] = js.native
   @JSName("get")
-  def get_script(selector: cypressLib.cypressLibStrings.script, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLScriptElement]] = js.native
+  def get_script(
+    selector: cypressLib.cypressLibStrings.script,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLScriptElement]] = js.native
   @JSName("get")
   def get_section(selector: cypressLib.cypressLibStrings.section): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_section(selector: cypressLib.cypressLibStrings.section, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_section(
+    selector: cypressLib.cypressLibStrings.section,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_select(selector: cypressLib.cypressLibStrings.select): Chainable[cypressLib.JQuery[stdLib.HTMLSelectElement]] = js.native
   @JSName("get")
-  def get_select(selector: cypressLib.cypressLibStrings.select, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLSelectElement]] = js.native
+  def get_select(
+    selector: cypressLib.cypressLibStrings.select,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLSelectElement]] = js.native
   @JSName("get")
   def get_slot(selector: cypressLib.cypressLibStrings.slot): Chainable[cypressLib.JQuery[stdLib.HTMLSlotElement]] = js.native
   @JSName("get")
-  def get_slot(selector: cypressLib.cypressLibStrings.slot, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLSlotElement]] = js.native
+  def get_slot(
+    selector: cypressLib.cypressLibStrings.slot,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLSlotElement]] = js.native
   @JSName("get")
   def get_small(selector: cypressLib.cypressLibStrings.small): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_small(selector: cypressLib.cypressLibStrings.small, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_small(
+    selector: cypressLib.cypressLibStrings.small,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_source(selector: cypressLib.cypressLibStrings.source): Chainable[cypressLib.JQuery[stdLib.HTMLSourceElement]] = js.native
   @JSName("get")
-  def get_source(selector: cypressLib.cypressLibStrings.source, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLSourceElement]] = js.native
+  def get_source(
+    selector: cypressLib.cypressLibStrings.source,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLSourceElement]] = js.native
   @JSName("get")
   def get_span(selector: cypressLib.cypressLibStrings.span): Chainable[cypressLib.JQuery[stdLib.HTMLSpanElement]] = js.native
   @JSName("get")
-  def get_span(selector: cypressLib.cypressLibStrings.span, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLSpanElement]] = js.native
+  def get_span(
+    selector: cypressLib.cypressLibStrings.span,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLSpanElement]] = js.native
   @JSName("get")
   def get_strong(selector: cypressLib.cypressLibStrings.strong): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_strong(selector: cypressLib.cypressLibStrings.strong, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_strong(
+    selector: cypressLib.cypressLibStrings.strong,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_style(selector: cypressLib.cypressLibStrings.style): Chainable[cypressLib.JQuery[stdLib.HTMLStyleElement]] = js.native
   @JSName("get")
-  def get_style(selector: cypressLib.cypressLibStrings.style, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLStyleElement]] = js.native
+  def get_style(
+    selector: cypressLib.cypressLibStrings.style,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLStyleElement]] = js.native
   @JSName("get")
   def get_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_sub(
+    selector: cypressLib.cypressLibStrings.sub,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_summary(
+    selector: cypressLib.cypressLibStrings.summary,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_sup(selector: cypressLib.cypressLibStrings.sup): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_sup(selector: cypressLib.cypressLibStrings.sup, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_sup(
+    selector: cypressLib.cypressLibStrings.sup,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_table(selector: cypressLib.cypressLibStrings.table): Chainable[cypressLib.JQuery[stdLib.HTMLTableElement]] = js.native
   @JSName("get")
-  def get_table(selector: cypressLib.cypressLibStrings.table, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableElement]] = js.native
+  def get_table(
+    selector: cypressLib.cypressLibStrings.table,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableElement]] = js.native
   @JSName("get")
   def get_tbody(selector: cypressLib.cypressLibStrings.tbody): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
   @JSName("get")
-  def get_tbody(selector: cypressLib.cypressLibStrings.tbody, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
+  def get_tbody(
+    selector: cypressLib.cypressLibStrings.tbody,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
   @JSName("get")
   def get_td(selector: cypressLib.cypressLibStrings.td): Chainable[cypressLib.JQuery[stdLib.HTMLTableDataCellElement]] = js.native
   @JSName("get")
-  def get_td(selector: cypressLib.cypressLibStrings.td, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableDataCellElement]] = js.native
+  def get_td(
+    selector: cypressLib.cypressLibStrings.td,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableDataCellElement]] = js.native
   @JSName("get")
   def get_template(selector: cypressLib.cypressLibStrings.template): Chainable[cypressLib.JQuery[stdLib.HTMLTemplateElement]] = js.native
   @JSName("get")
   def get_template(
     selector: cypressLib.cypressLibStrings.template,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLTemplateElement]] = js.native
   @JSName("get")
   def get_textarea(selector: cypressLib.cypressLibStrings.textarea): Chainable[cypressLib.JQuery[stdLib.HTMLTextAreaElement]] = js.native
   @JSName("get")
   def get_textarea(
     selector: cypressLib.cypressLibStrings.textarea,
-    options: stdLib.Partial[Loggable with Timeoutable]
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLTextAreaElement]] = js.native
   @JSName("get")
   def get_tfoot(selector: cypressLib.cypressLibStrings.tfoot): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
   @JSName("get")
-  def get_tfoot(selector: cypressLib.cypressLibStrings.tfoot, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
+  def get_tfoot(
+    selector: cypressLib.cypressLibStrings.tfoot,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
   @JSName("get")
   def get_th(selector: cypressLib.cypressLibStrings.th): Chainable[cypressLib.JQuery[stdLib.HTMLTableHeaderCellElement]] = js.native
   @JSName("get")
-  def get_th(selector: cypressLib.cypressLibStrings.th, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableHeaderCellElement]] = js.native
+  def get_th(
+    selector: cypressLib.cypressLibStrings.th,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableHeaderCellElement]] = js.native
   @JSName("get")
   def get_thead(selector: cypressLib.cypressLibStrings.thead): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
   @JSName("get")
-  def get_thead(selector: cypressLib.cypressLibStrings.thead, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
+  def get_thead(
+    selector: cypressLib.cypressLibStrings.thead,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableSectionElement]] = js.native
   @JSName("get")
   def get_time(selector: cypressLib.cypressLibStrings.time): Chainable[cypressLib.JQuery[stdLib.HTMLTimeElement]] = js.native
   @JSName("get")
-  def get_time(selector: cypressLib.cypressLibStrings.time, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTimeElement]] = js.native
+  def get_time(
+    selector: cypressLib.cypressLibStrings.time,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTimeElement]] = js.native
   @JSName("get")
   def get_title(selector: cypressLib.cypressLibStrings.title): Chainable[cypressLib.JQuery[stdLib.HTMLTitleElement]] = js.native
   @JSName("get")
-  def get_title(selector: cypressLib.cypressLibStrings.title, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTitleElement]] = js.native
+  def get_title(
+    selector: cypressLib.cypressLibStrings.title,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTitleElement]] = js.native
   @JSName("get")
   def get_tr(selector: cypressLib.cypressLibStrings.tr): Chainable[cypressLib.JQuery[stdLib.HTMLTableRowElement]] = js.native
   @JSName("get")
-  def get_tr(selector: cypressLib.cypressLibStrings.tr, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTableRowElement]] = js.native
+  def get_tr(
+    selector: cypressLib.cypressLibStrings.tr,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTableRowElement]] = js.native
   @JSName("get")
   def get_track(selector: cypressLib.cypressLibStrings.track): Chainable[cypressLib.JQuery[stdLib.HTMLTrackElement]] = js.native
   @JSName("get")
-  def get_track(selector: cypressLib.cypressLibStrings.track, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLTrackElement]] = js.native
+  def get_track(
+    selector: cypressLib.cypressLibStrings.track,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLTrackElement]] = js.native
   @JSName("get")
   def get_u(selector: cypressLib.cypressLibStrings.u): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_u(selector: cypressLib.cypressLibStrings.u, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_u(
+    selector: cypressLib.cypressLibStrings.u,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_ul(selector: cypressLib.cypressLibStrings.ul): Chainable[cypressLib.JQuery[stdLib.HTMLUListElement]] = js.native
   @JSName("get")
-  def get_ul(selector: cypressLib.cypressLibStrings.ul, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLUListElement]] = js.native
+  def get_ul(
+    selector: cypressLib.cypressLibStrings.ul,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLUListElement]] = js.native
   @JSName("get")
   def get_var(selector: cypressLib.cypressLibStrings.`var`): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_var(selector: cypressLib.cypressLibStrings.`var`, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_var(
+    selector: cypressLib.cypressLibStrings.`var`,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_video(selector: cypressLib.cypressLibStrings.video): Chainable[cypressLib.JQuery[stdLib.HTMLVideoElement]] = js.native
   @JSName("get")
-  def get_video(selector: cypressLib.cypressLibStrings.video, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLVideoElement]] = js.native
+  def get_video(
+    selector: cypressLib.cypressLibStrings.video,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLVideoElement]] = js.native
   @JSName("get")
   def get_wbr(selector: cypressLib.cypressLibStrings.wbr): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
-  def get_wbr(selector: cypressLib.cypressLibStrings.wbr, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  def get_wbr(
+    selector: cypressLib.cypressLibStrings.wbr,
+    options: stdLib.Partial[Loggable with Timeoutable with Withinable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Navigate back or forward to the previous or next URL in the browser’s history.
     *
@@ -10801,7 +11209,7 @@ trait Chainable[Subject] extends js.Object {
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
-    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
+    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be canceled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
     ```
@@ -11102,7 +11510,7 @@ trait Chainable[Subject] extends js.Object {
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
-    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
+    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be canceled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
     ```
@@ -16892,6 +17300,48 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_contain(chainer: cypressLib.cypressLibStrings.contain, value: js.Any): Chainable[Subject] = js.native
   /**
+    * Assert that the html of the first element of the selection partially contains the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('contain.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_containhtml(chainer: cypressLib.cypressLibStrings.containDOThtml, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection partially contains the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('contain.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_containtext(chainer: cypressLib.cypressLibStrings.containDOTtext, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection partially contains the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('contain.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_containvalue(chainer: cypressLib.cypressLibStrings.containDOTvalue, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * When one argument is provided, `.decrease` asserts that the given function `subject` returns a lesser number when it’s invoked after invoking the target function compared to when it’s invoked beforehand.
     * `.decrease` also causes all `.by` assertions that follow in the chain to assert how much lesser of a number is returned. It’s often best to assert that the return value decreased by the expected amount, rather than asserting it decreased by any amount.
     * @example
@@ -18191,6 +18641,48 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("should")
   def should_notcontain(chainer: cypressLib.cypressLibStrings.notDOTcontain, value: js.Any): Chainable[Subject] = js.native
+  /**
+    * Assert that the html of the first element of the selection does not contain the given html, using `.html()`.
+    * @example
+    *    cy.get('#result').should('not.contain.html', '<em>John Doe</em>')
+    * @see http://chaijs.com/plugins/chai-jquery/#htmlhtml
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_notcontainhtml(chainer: cypressLib.cypressLibStrings.notDOTcontainDOThtml, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the text of the first element of the selection does not contain the given text, using `.text()`.
+    * @example
+    *    cy.get('#result').should('not.contain.text', 'John Doe')
+    * @see http://chaijs.com/plugins/chai-jquery/#texttext
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_notcontaintext(chainer: cypressLib.cypressLibStrings.notDOTcontainDOTtext, value: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that the first element of the selection does not contain the given value, using `.val()`.
+    * @example
+    *    cy.get('textarea').should('not.contain.value', 'foo bar baz')
+    * @see http://chaijs.com/plugins/chai-jquery/#valuevalue
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_notcontainvalue(chainer: cypressLib.cypressLibStrings.notDOTcontainDOTvalue, value: java.lang.String): Chainable[Subject] = js.native
   /**
     * When one argument is provided, `.decrease` asserts that the given function `subject` does not returns a lesser number when it’s invoked after invoking the target function compared to when it’s invoked beforehand.
     * `.decrease` also causes all `.by` assertions that follow in the chain to assert how much lesser of a number is returned. It’s often best to assert that the return value decreased by the expected amount, rather than asserting it decreased by any amount.

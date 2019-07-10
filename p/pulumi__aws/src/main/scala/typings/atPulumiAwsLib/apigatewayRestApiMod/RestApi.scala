@@ -57,9 +57,6 @@ class RestApi protected ()
     * The name of the REST API
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * JSON formatted policy document that controls access to the API Gateway. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The resource ID of the REST API's root

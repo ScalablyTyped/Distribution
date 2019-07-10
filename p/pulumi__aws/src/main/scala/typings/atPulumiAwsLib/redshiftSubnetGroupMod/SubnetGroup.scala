@@ -22,9 +22,6 @@ class SubnetGroup protected ()
     * Amazon Resource Name (ARN) of the Redshift Subnet group name
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the Redshift Subnet group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the Redshift Subnet group.

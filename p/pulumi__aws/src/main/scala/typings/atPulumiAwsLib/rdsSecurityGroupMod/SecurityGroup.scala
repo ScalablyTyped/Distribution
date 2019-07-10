@@ -22,9 +22,6 @@ class SecurityGroup protected ()
     * The arn of the DB security group.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The description of the DB security group. Defaults to "Managed by Terraform".
-    */
   val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of ingress rules.

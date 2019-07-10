@@ -31,7 +31,7 @@ trait MetricDatum extends js.Object {
     */
   var Timestamp: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The unit of the metric.
+    * When you are using a Put operation, this defines what unit you want to use when storing the metric. In a Get operation, this displays the unit that is used for the metric.
     */
   var Unit: js.UndefOr[StandardUnit] = js.undefined
   /**

@@ -11,10 +11,7 @@ trait StatefulRadioGroupProps extends js.Object {
   var initialState: js.UndefOr[State] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement], _]
   ] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
 }
@@ -26,7 +23,7 @@ object StatefulRadioGroupProps {
     children: reactLib.reactMod.ReactNode = null,
     initialState: State = null,
     name: java.lang.String = null,
-    onChange: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
+    onChange: /* e */ reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] => _ = null,
     overrides: RadioOverrides with RadioGroupOverrides = null
   ): StatefulRadioGroupProps = {
     val __obj = js.Dynamic.literal()

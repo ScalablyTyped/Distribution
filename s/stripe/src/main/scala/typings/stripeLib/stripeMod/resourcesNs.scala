@@ -3038,6 +3038,76 @@ object resourcesNs extends js.Object {
     def list(
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoice]]
     ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def listLineItems(id: java.lang.String): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listLineItems(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoiceListLineItemsOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    /**
+      * When retrieving an invoice, you'll get a lines property containing the total count of line items and the first
+      * handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.
+      *
+      * @returns Returns a list of line_item objects.
+      *
+      * @param id The id of the invoice containing the lines to be retrieved
+      * @param data Filtering options
+      */
+    def listLineItems(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceListLineItemsOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listLineItems(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceListLineItemsOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listLineItems(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceListLineItemsOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listLineItems(id: java.lang.String, options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listLineItems(
+      id: java.lang.String,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listLineItems(
+      id: java.lang.String,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(data: stripeLib.stripeMod.invoicesNs.IInvoiceListUpcomingLineItemsOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    /**
+      * When retrieving an upcoming invoice, you’ll get a lines property containing the total count of line
+      * items and the first handful of those items. There is also a URL where you can retrieve the full
+      * (paginated) list of line items.
+      *
+      * @returns Returns a list of line_item objects.
+      *
+      * @param id The id of the invoice containing the lines to be retrieved
+      * @param data Filtering options
+      */
+    def listUpcomingLineItems(
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceListUpcomingLineItemsOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceListUpcomingLineItemsOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceListUpcomingLineItemsOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(options: stripeLib.stripeMod.HeaderOptions): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
+    def listUpcomingLineItems(
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
+    ): stripeLib.stripeMod.IListPromise[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem] = js.native
     def pay(id: java.lang.String): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def pay(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoicePayOptions): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     /**

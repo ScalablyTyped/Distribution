@@ -17,9 +17,6 @@ trait GetInvocationResult extends js.Object {
     * String result of the lambda function invocation.
     */
   val result: java.lang.String
-  /**
-    * This field is set only if result is a map of primitive types, where the map is string keys and string values. In Terraform 0.12 and later, use the [`jsondecode()` function](https://www.terraform.io/docs/configuration/functions/jsondecode.html) with the `result` attribute instead to convert the result to all supported native Terraform types.
-    */
   val resultMap: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

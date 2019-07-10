@@ -12,6 +12,10 @@ trait CarouselProps extends js.Object {
     */
   var afterSlide: js.UndefOr[js.Function1[/* prevSlide */ scala.Double, scala.Unit]] = js.undefined
   /**
+    * Adds a zoom effect on the currently visible slide.
+    */
+  var animation: js.UndefOr[nukaDashCarouselLib.nukaDashCarouselLibStrings.zoom] = js.undefined
+  /**
     * Will generate a style tag to help ensure images are displayed properly
     * @default true
     */
@@ -222,6 +226,7 @@ object CarouselProps {
   @scala.inline
   def apply(
     afterSlide: /* prevSlide */ scala.Double => scala.Unit = null,
+    animation: nukaDashCarouselLib.nukaDashCarouselLibStrings.zoom = null,
     autoGenerateStyleTag: js.UndefOr[scala.Boolean] = js.undefined,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
     autoplayInterval: scala.Int | scala.Double = null,
@@ -269,6 +274,7 @@ object CarouselProps {
   ): CarouselProps = {
     val __obj = js.Dynamic.literal()
     if (afterSlide != null) __obj.updateDynamic("afterSlide")(js.Any.fromFunction1(afterSlide))
+    if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(autoGenerateStyleTag)) __obj.updateDynamic("autoGenerateStyleTag")(autoGenerateStyleTag)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])

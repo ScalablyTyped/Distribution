@@ -21,6 +21,9 @@ object atIonicCoreLibStrings {
   sealed trait _testing extends js.Object
   
   @js.native
+  sealed trait _zoneGate extends js.Object
+  
+  @js.native
   sealed trait `action-sheet`
     extends atIonicCoreLib.distTypesComponentsSelectSelectDashInterfaceMod.SelectInterface
   
@@ -565,6 +568,8 @@ object atIonicCoreLibStrings {
   def _forceStatusbarPadding: _forceStatusbarPadding = "_forceStatusbarPadding".asInstanceOf[_forceStatusbarPadding]
   @scala.inline
   def _testing: _testing = "_testing".asInstanceOf[_testing]
+  @scala.inline
+  def _zoneGate: _zoneGate = "_zoneGate".asInstanceOf[_zoneGate]
   @scala.inline
   def `action-sheet`: `action-sheet` = "action-sheet".asInstanceOf[`action-sheet`]
   @scala.inline

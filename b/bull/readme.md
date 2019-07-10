@@ -1,7 +1,7 @@
 
 # Scala.js typings for bull
 
-Typings are for version 3.5
+Typings are for version 3.10
 
 ## Library description:
 Job manager
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for bull 3.5
+// Type definitions for bull 3.10
 // Project: https://github.com/OptimalBits/bull
 // Definitions by: Bruno Grieder <https://github.com/bgrieder>
 //                 Cameron Crothers <https://github.com/JProgrammer>
@@ -51,6 +51,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Kjell-Morten Bratsberg Thorsen <https://github.com/kjellmorten>
 //                 Christian D. <https://github.com/pc-jedi>
 //                 Silas Rech <https://github.com/lenovouser>
+//                 DoYoung Ha <https://github.com/hados99>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

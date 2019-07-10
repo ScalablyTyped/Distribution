@@ -19,9 +19,6 @@ class AccountPublicAccessBlock protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: AccountPublicAccessBlockArgs) = this()
   def this(name: java.lang.String, args: AccountPublicAccessBlockArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * AWS account ID to configure. Defaults to automatically determined account ID of the Terraform AWS provider.
-    */
   val accountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to `false`. Enabling this setting does not affect existing policies or ACLs. When set to `true` causes the following behavior:

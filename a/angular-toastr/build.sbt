@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-toastr"
-version := "v1.6.0-dt-20190322Z-7017a5"
+version := "v1.6.0-dt-20190322Z-8a39fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-c98868",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190709Z-e41730",
   "org.scalablytyped" %%% "std" % "3.5-983486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

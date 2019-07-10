@@ -22,9 +22,6 @@ class BucketPolicy protected ()
     * The name of the bucket to which to apply the policy.
     */
   val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The text of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

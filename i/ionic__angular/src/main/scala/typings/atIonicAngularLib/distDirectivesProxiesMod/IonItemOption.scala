@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonItemOption protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonItemOption {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, the user cannot interact with the item option.
     */
@@ -26,5 +26,6 @@ class IonItemOption protected ()
     */
   /* CompleteClass */
   override var `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

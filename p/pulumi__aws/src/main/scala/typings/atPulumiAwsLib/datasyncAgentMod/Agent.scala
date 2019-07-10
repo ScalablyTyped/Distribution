@@ -19,17 +19,11 @@ class Agent protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: AgentArgs) = this()
   def this(name: java.lang.String, args: AgentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * DataSync Agent activation key during resource creation. Conflicts with `ip_address`. If an `ip_address` is provided instead, Terraform will retrieve the `activation_key` as part of the resource creation.
-    */
   val activationKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name (ARN) of the DataSync Agent.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * DataSync Agent IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. DataSync Agent must be accessible on port 80 from where Terraform is running.
-    */
   val ipAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the DataSync Agent.

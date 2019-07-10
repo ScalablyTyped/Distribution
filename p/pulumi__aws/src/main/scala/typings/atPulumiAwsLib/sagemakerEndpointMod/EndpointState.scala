@@ -15,7 +15,7 @@ trait EndpointState extends js.Object {
     */
   val endpointConfigName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The name of the endpoint. If omitted, Terraform will assign a random, unique name.
+    * The name of the endpoint.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

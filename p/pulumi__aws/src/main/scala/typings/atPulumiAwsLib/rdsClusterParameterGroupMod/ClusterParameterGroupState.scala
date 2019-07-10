@@ -10,9 +10,6 @@ trait ClusterParameterGroupState extends js.Object {
     * The ARN of the db cluster parameter group.
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The description of the DB cluster parameter group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The family of the DB cluster parameter group.

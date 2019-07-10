@@ -17,9 +17,6 @@ package object reduxMod {
   type Func1[T1, R] = js.Function1[/* a1 */ T1, R]
   type Func2[T1, T2, R] = js.Function2[/* a1 */ T1, /* a2 */ T2, R]
   type Func3[T1, T2, T3, R] = js.Function4[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* repeated */ js.Any, R]
-  type InferActionTypes[R] = AnyAction
-  type InferReducerTypes[T] = Reducer[js.Any, AnyAction]
-  type InferStateType[T] = js.Any
   type Middleware[DispatchExt, S, D /* <: Dispatch[AnyAction] */] = js.Function1[
     /* api */ MiddlewareAPI[D, S], 
     js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]

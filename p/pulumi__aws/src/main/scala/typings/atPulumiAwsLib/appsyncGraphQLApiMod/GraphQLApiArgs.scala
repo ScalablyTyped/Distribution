@@ -24,9 +24,6 @@ trait GraphQLApiArgs extends js.Object {
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
   val openidConnectConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthTtlClientId]] = js.undefined
-  /**
-    * The schema definition, in GraphQL schema language format. Terraform cannot perform drift detection of this configuration.
-    */
   val schema: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

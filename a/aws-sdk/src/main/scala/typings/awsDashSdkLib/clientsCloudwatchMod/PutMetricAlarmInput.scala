@@ -23,7 +23,7 @@ trait PutMetricAlarmInput extends js.Object {
     */
   var AlarmName: awsDashSdkLib.clientsCloudwatchMod.AlarmName
   /**
-    *  The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand.
+    *  The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand. The values LessThanLowerOrGreaterThanUpperThreshold, LessThanLowerThreshold, and GreaterThanUpperThreshold are used only for alarms based on anomaly detection models.
     */
   var ComparisonOperator: awsDashSdkLib.clientsCloudwatchMod.ComparisonOperator
   /**
@@ -81,7 +81,11 @@ trait PutMetricAlarmInput extends js.Object {
   /**
     * The value against which the specified statistic is compared.
     */
-  var Threshold: awsDashSdkLib.clientsCloudwatchMod.Threshold
+  var Threshold: js.UndefOr[Threshold] = js.undefined
+  /**
+    * If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function. For an example of how to use this parameter, see the Anomaly Detection Model Alarm example on this page. If your alarm uses this parameter, it cannot have Auto Scaling actions.
+    */
+  var ThresholdMetricId: js.UndefOr[MetricId] = js.undefined
   /**
     *  Sets how this alarm is to handle missing data points. If TreatMissingData is omitted, the default behavior of missing is used. For more information, see Configuring How CloudWatch Alarms Treats Missing Data. Valid Values: breaching | notBreaching | ignore | missing 
     */
@@ -98,7 +102,6 @@ object PutMetricAlarmInput {
     AlarmName: AlarmName,
     ComparisonOperator: ComparisonOperator,
     EvaluationPeriods: EvaluationPeriods,
-    Threshold: Threshold,
     ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
     AlarmActions: ResourceList = null,
     AlarmDescription: AlarmDescription = null,
@@ -114,10 +117,12 @@ object PutMetricAlarmInput {
     Period: js.UndefOr[Period] = js.undefined,
     Statistic: Statistic = null,
     Tags: TagList = null,
+    Threshold: js.UndefOr[Threshold] = js.undefined,
+    ThresholdMetricId: MetricId = null,
     TreatMissingData: TreatMissingData = null,
     Unit: StandardUnit = null
   ): PutMetricAlarmInput = {
-    val __obj = js.Dynamic.literal(AlarmName = AlarmName, ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], EvaluationPeriods = EvaluationPeriods, Threshold = Threshold)
+    val __obj = js.Dynamic.literal(AlarmName = AlarmName, ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], EvaluationPeriods = EvaluationPeriods)
     if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled)
     if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions)
     if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription)
@@ -133,6 +138,8 @@ object PutMetricAlarmInput {
     if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period)
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold)
+    if (ThresholdMetricId != null) __obj.updateDynamic("ThresholdMetricId")(ThresholdMetricId)
     if (TreatMissingData != null) __obj.updateDynamic("TreatMissingData")(TreatMissingData)
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutMetricAlarmInput]

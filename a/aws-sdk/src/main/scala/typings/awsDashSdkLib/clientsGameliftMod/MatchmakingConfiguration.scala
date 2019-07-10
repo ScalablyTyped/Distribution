@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MatchmakingConfiguration extends js.Object {
   /**
-    * Flag that determines whether or not a match that was created with this configuration must be accepted by the matched players. To require acceptance, set to TRUE.
+    * Flag that determines whether a match that was created with this configuration must be accepted by the matched players. To require acceptance, set to TRUE.
     */
   var AcceptanceRequired: js.UndefOr[BooleanModel] = js.undefined
   /**
@@ -19,11 +19,15 @@ trait MatchmakingConfiguration extends js.Object {
     */
   var AdditionalPlayerCount: js.UndefOr[WholeNumber] = js.undefined
   /**
+    * Method used to backfill game sessions created with this matchmaking configuration. MANUAL indicates that the game makes backfill requests or does not use the match backfill feature. AUTOMATIC indicates that GameLift creates StartMatchBackfill requests whenever a game session has one or more open slots. Learn more about manual and automatic backfill in Backfill Existing Games with FlexMatch.
+    */
+  var BackfillMode: js.UndefOr[BackfillMode] = js.undefined
+  /**
     * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Information to attached to all events related to the matchmaking configuration. 
+    * Information to attach to all events related to the matchmaking configuration. 
     */
   var CustomEventData: js.UndefOr[CustomEventData] = js.undefined
   /**
@@ -39,7 +43,7 @@ trait MatchmakingConfiguration extends js.Object {
     */
   var GameSessionData: js.UndefOr[GameSessionData] = js.undefined
   /**
-    * Amazon Resource Name (ARN) that is assigned to a game session queue and uniquely identifies it. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. These queues are used when placing game sessions for matches that are created with this matchmaking configuration. Queues can be located in any region.
+    * Amazon Resource Name (ARN) that is assigned to a game session queue and uniquely identifies it. Format is arn:aws:gamelift:&lt;region&gt;:&lt;aws account&gt;:gamesessionqueue/&lt;queue name&gt;. These queues are used when placing game sessions for matches that are created with this matchmaking configuration. Queues can be located in any region.
     */
   var GameSessionQueueArns: js.UndefOr[QueueArnsList] = js.undefined
   /**
@@ -51,7 +55,7 @@ trait MatchmakingConfiguration extends js.Object {
     */
   var NotificationTarget: js.UndefOr[SnsArnStringModel] = js.undefined
   /**
-    * Maximum duration, in seconds, that a matchmaking ticket can remain in process before timing out. Requests that time out can be resubmitted as needed.
+    * Maximum duration, in seconds, that a matchmaking ticket can remain in process before timing out. Requests that fail due to timing out can be resubmitted as needed.
     */
   var RequestTimeoutSeconds: js.UndefOr[MatchmakingRequestTimeoutInteger] = js.undefined
   /**
@@ -66,6 +70,7 @@ object MatchmakingConfiguration {
     AcceptanceRequired: js.UndefOr[BooleanModel] = js.undefined,
     AcceptanceTimeoutSeconds: js.UndefOr[MatchmakingAcceptanceTimeoutInteger] = js.undefined,
     AdditionalPlayerCount: js.UndefOr[WholeNumber] = js.undefined,
+    BackfillMode: BackfillMode = null,
     CreationTime: Timestamp = null,
     CustomEventData: CustomEventData = null,
     Description: NonZeroAndMaxString = null,
@@ -81,6 +86,7 @@ object MatchmakingConfiguration {
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)
     if (!js.isUndefined(AcceptanceTimeoutSeconds)) __obj.updateDynamic("AcceptanceTimeoutSeconds")(AcceptanceTimeoutSeconds)
     if (!js.isUndefined(AdditionalPlayerCount)) __obj.updateDynamic("AdditionalPlayerCount")(AdditionalPlayerCount)
+    if (BackfillMode != null) __obj.updateDynamic("BackfillMode")(BackfillMode.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (CustomEventData != null) __obj.updateDynamic("CustomEventData")(CustomEventData)
     if (Description != null) __obj.updateDynamic("Description")(Description)

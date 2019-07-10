@@ -1,7 +1,7 @@
 
 # Scala.js typings for before-after-hook
 
-Typings are for version 1.4.0
+Typings are for version 2.0.1
 
 ## Library description:
 asynchronous before/error/after hooks for internal functionality

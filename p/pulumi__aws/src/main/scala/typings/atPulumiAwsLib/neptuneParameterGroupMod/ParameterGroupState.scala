@@ -10,9 +10,6 @@ trait ParameterGroupState extends js.Object {
     * The Neptune parameter group Amazon Resource Name (ARN).
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The description of the Neptune parameter group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The family of the Neptune parameter group.

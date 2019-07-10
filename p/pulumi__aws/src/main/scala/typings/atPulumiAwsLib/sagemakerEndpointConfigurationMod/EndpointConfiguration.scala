@@ -27,7 +27,7 @@ class EndpointConfiguration protected ()
     */
   val kmsKeyArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The name of the endpoint configuration. If omitted, Terraform will assign a random, unique name.
+    * The name of the endpoint configuration.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

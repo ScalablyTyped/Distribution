@@ -24,9 +24,6 @@ trait ClusterState extends js.Object {
     * The days to retain backups for. Default `1`
     */
   val backupRetentionPeriod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
-  /**
-    * The cluster identifier. If omitted, Terraform will assign a random, unique identifier.
-    */
   val clusterIdentifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.

@@ -126,12 +126,6 @@ trait EnvironmentState extends js.Object {
   val version: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion]
   ] = js.undefined
-  /**
-    * The maximum
-    * [duration](https://golang.org/pkg/time/#ParseDuration) that Terraform should
-    * wait for an Elastic Beanstalk Environment to be in a ready state before timing
-    * out.
-    */
   val waitForReadyTimeout: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

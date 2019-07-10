@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseInput ()
   extends reactLib.reactMod.Component[BaseInputProps[stdLib.HTMLInputElement], InternalState, js.Any] {
-  def onBlur(e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event]): scala.Unit = js.native
-  def onFocus(e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event]): scala.Unit = js.native
+  def onBlur(e: reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def onFocus(e: reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement]): scala.Unit = js.native
 }
 

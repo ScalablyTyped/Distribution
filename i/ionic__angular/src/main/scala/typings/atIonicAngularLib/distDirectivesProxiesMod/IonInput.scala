@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonInput protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonInput {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user.
     */
@@ -75,6 +75,7 @@ class IonInput protected ()
     */
   /* CompleteClass */
   override var `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
   /**
     * Returns the native `<input>` element used under the hood.
     */

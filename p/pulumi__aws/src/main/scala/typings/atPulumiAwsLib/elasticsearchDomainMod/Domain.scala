@@ -23,12 +23,6 @@ class Domain protected ()
     * IAM policy document specifying the access policies for the domain
     */
   val accessPolicies: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * Key-value string pairs to specify advanced configuration options.
-    * Note that the values for these configuration options must be strings (wrapped in quotes) or they
-    * may be wrong and cause a perpetual diff, causing Terraform to want to recreate your Elasticsearch
-    * domain on every apply.
-    */
   val advancedOptions: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Amazon Resource Name (ARN) of the domain.

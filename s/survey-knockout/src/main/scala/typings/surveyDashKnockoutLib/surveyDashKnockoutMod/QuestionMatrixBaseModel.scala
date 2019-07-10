@@ -48,6 +48,7 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
   /* protected */ def getVisibleRows(): js.Array[TRow] = js.native
   /* protected */ def onColumnsChanged(): scala.Unit = js.native
   /* protected */ def onRowsChanged(): scala.Unit = js.native
+  /* protected */ def processRowsOnSet(newRows: js.Array[_]): js.Array[_] = js.native
   /* protected */ def runItemsCondition(values: HashTable[_], properties: HashTable[_]): scala.Boolean = js.native
   def visibleRowsChangedCallback(): scala.Unit = js.native
 }

@@ -27,6 +27,7 @@ class Logger ()
   def isWarnEnabled(): scala.Boolean = js.native
   def log(args: js.Any*): scala.Unit = js.native
   def removeContext(key: java.lang.String): scala.Unit = js.native
+  def setParseCallStackFunction(parseFunction: js.Function): scala.Unit = js.native
   def trace(message: js.Any, args: js.Any*): scala.Unit = js.native
   def warn(message: js.Any, args: js.Any*): scala.Unit = js.native
 }

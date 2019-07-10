@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonSegment protected ()
   extends atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSegment {
-  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_], z: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   /**
     * If `true`, the user cannot interact with the segment.
     */
@@ -23,5 +23,6 @@ class IonSegment protected ()
     */
   /* CompleteClass */
   override var scrollable: scala.Boolean = js.native
+  var z: atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

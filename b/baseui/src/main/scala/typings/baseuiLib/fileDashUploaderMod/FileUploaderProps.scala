@@ -16,57 +16,33 @@ trait FileUploaderProps extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onCancel: js.UndefOr[js.Function0[_]] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onDragEnter: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onDragLeave: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onDragOver: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onDragStart: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onDrop: js.UndefOr[DropFilesEventHandler] = js.undefined
   var onDropAccepted: js.UndefOr[DropFileEventHandler] = js.undefined
   var onDropRejected: js.UndefOr[DropFileEventHandler] = js.undefined
   var onFileDialogCancel: js.UndefOr[js.Function0[_]] = js.undefined
   var onFocus: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onKeyDown: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement], _]
   ] = js.undefined
   var onRetry: js.UndefOr[js.Function0[_]] = js.undefined
   var overrides: js.UndefOr[FileUploaderOverrides[StyleProps]] = js.undefined
@@ -87,19 +63,19 @@ object FileUploaderProps {
     minSize: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onBlur: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] => _ = null,
     onCancel: () => _ = null,
-    onClick: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onDragEnter: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onDragLeave: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onDragOver: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onDragStart: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
+    onClick: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] => _ = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement] => _ = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement] => _ = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement] => _ = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEventHandler[stdLib.HTMLElement] => _ = null,
     onDrop: DropFilesEventHandler = null,
     onDropAccepted: DropFileEventHandler = null,
     onDropRejected: DropFileEventHandler = null,
     onFileDialogCancel: () => _ = null,
-    onFocus: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
-    onKeyDown: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => _ = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] => _ = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] => _ = null,
     onRetry: () => _ = null,
     overrides: FileUploaderOverrides[StyleProps] = null,
     preventDropOnDocument: js.UndefOr[scala.Boolean] = js.undefined,

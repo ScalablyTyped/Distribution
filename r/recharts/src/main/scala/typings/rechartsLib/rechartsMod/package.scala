@@ -25,6 +25,13 @@ package object rechartsMod {
   type AxisInterval = _AxisInterval | scala.Double
   type BBoxUpdateCallback = js.Function1[/* box */ rechartsLib.Anon_HeightWidth, scala.Unit]
   type BarChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
+  /* Rewritten from type alias, can be one of: 
+    - scala.Double
+    - rechartsLib.rechartsLibStrings.auto
+    - rechartsLib.rechartsLibStrings.dataMin
+    - rechartsLib.rechartsLibStrings.dataMax
+  */
+  type BaseValueType = _BaseValueType | scala.Double
   type ComposedChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   type ContentRenderer[P] = js.Function1[/* props */ P, reactLib.reactMod.ReactNode]
   type CoordinatesGenerator = js.Function1[/* arg */ rechartsLib.Anon_Height, js.Array[scala.Double]]

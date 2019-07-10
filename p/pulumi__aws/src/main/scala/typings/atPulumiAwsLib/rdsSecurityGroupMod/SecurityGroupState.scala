@@ -10,9 +10,6 @@ trait SecurityGroupState extends js.Object {
     * The arn of the DB security group.
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
-    * The description of the DB security group. Defaults to "Managed by Terraform".
-    */
   val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of ingress rules.

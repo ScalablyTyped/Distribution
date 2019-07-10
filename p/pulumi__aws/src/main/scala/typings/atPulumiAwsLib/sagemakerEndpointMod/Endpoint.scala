@@ -27,7 +27,7 @@ class Endpoint protected ()
     */
   val endpointConfigName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The name of the endpoint. If omitted, Terraform will assign a random, unique name.
+    * The name of the endpoint.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

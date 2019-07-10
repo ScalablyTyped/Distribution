@@ -228,11 +228,6 @@ class SpotInstanceRequest protected ()
     * A list of security group IDs to associate with.
     */
   val vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
-  /**
-    * If set, Terraform will
-    * wait for the Spot Request to be fulfilled, and will throw an error if the
-    * timeout of 10m is reached.
-    */
   val waitForFulfillment: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 

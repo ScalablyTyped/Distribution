@@ -22,9 +22,6 @@ class ContainerPolicy protected ()
     * The name of the container.
     */
   val containerName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The contents of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
-    */
   val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

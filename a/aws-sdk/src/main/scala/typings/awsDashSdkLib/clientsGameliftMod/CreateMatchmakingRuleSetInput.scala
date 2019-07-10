@@ -11,7 +11,7 @@ trait CreateMatchmakingRuleSetInput extends js.Object {
     */
   var Name: MatchmakingIdStringModel
   /**
-    * Collection of matchmaking rules, formatted as a JSON string. Note that comments are not allowed in JSON, but most elements support a description field.
+    * Collection of matchmaking rules, formatted as a JSON string. Comments are not allowed in JSON, but most elements support a description field.
     */
   var RuleSetBody: awsDashSdkLib.clientsGameliftMod.RuleSetBody
 }

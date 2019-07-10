@@ -6,12 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @beta
   * Provides information about the invocation of a custom function.
   */
 trait Invocation extends js.Object {
   /**
-    * @beta
     * The cell address where the function is being called, if requested, otherwise undefined.
     *
     * To request the address for the function, in the metadata JSON file, the function options should specify:

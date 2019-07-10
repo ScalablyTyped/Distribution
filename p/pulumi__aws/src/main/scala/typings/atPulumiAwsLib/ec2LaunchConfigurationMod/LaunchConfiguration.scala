@@ -58,8 +58,7 @@ class LaunchConfiguration protected ()
     */
   val keyName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The name of the launch configuration. If you leave
-    * this blank, Terraform will auto-generate a unique name.
+    * The name of the launch configuration.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

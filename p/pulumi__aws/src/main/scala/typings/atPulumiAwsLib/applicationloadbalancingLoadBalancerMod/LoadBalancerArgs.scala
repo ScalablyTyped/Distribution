@@ -15,10 +15,6 @@ trait LoadBalancerArgs extends js.Object {
     * This is a `network` load balancer feature. Defaults to `false`.
     */
   val enableCrossZoneLoadBalancing: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
-  /**
-    * If true, deletion of the load balancer will be disabled via
-    * the AWS API. This will prevent Terraform from deleting the load balancer. Defaults to `false`.
-    */
   val enableDeletionProtection: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
@@ -44,11 +40,6 @@ trait LoadBalancerArgs extends js.Object {
   val loadBalancerType: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType]
   ] = js.undefined
-  /**
-    * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
-    * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
-    * Terraform will autogenerate a name beginning with `tf-lb`.
-    */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.

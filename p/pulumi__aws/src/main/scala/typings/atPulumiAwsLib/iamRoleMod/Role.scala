@@ -43,7 +43,7 @@ class Role protected ()
     */
   val maxSessionDuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
-    * The name of the role. If omitted, Terraform will assign a random, unique name.
+    * The name of the role.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

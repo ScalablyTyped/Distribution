@@ -753,6 +753,7 @@
 | [chromedriver](./c/chromedriver) | ChromeDriver for Selenium | chromedriver, selenium |
 | [chui](./c/chui) | A module for creating Web apps with ChocolateChip- | JavaScript, ChocolateChip-UI, Hybrid App, Mobile, Web App, iOS, Android |
 | [chunk](./c/chunk) | Chunk converts arrays like  | array, chunk |
+| [chunk-text](./c/chunk-text) | 🔪 chunk/split a string by length without cutting/ | - |
 | [chunked-dc](./c/chunked-dc) | Binary chunking for WebRTC data channels & more. | saltyrtc, webrtc, ortc, chunking |
 | [ci-info](./c/ci-info) | Get details about the current Continuous Integrati | ci, continuous, integration, test, detect |
 | [cipher-base](./c/cipher-base) | abstract base class for crypto-streams | cipher, stream |
@@ -3686,6 +3687,7 @@
 | [logfmt](./l/logfmt) | key=value logger and parser | log, parser, logfmt |
 | [logform](./l/logform) | An mutable object-based log format designed for ch | winston, logging, format, winstonjs |
 | [logg](./l/logg) | Logging library that allows for hierarchical logge | log, logging, logger, hierarchical, handler, watcher |
+| [logger](./l/logger) | A simple logging library that combines the simple  | - |
 | [loggly](./l/loggly) | A client implementation for Loggly cloud Logging-a | cloud computing, api, logging, loggly |
 | [login-with-amazon-sdk-bro](./l/login-with-amazon-sdk-browser) | - | - |
 | [loglevel](./l/loglevel) | Minimal lightweight logging for JavaScript, adding | log, logger, logging, browser |
@@ -5410,6 +5412,7 @@
 | [react-sidebar](./r/react-sidebar) | A sidebar component for React. | react, react-component, sidebar, drawer, navigation |
 | [react-simple-code-editor](./r/react-simple-code-editor) | Simple no-frills code editor with syntax highlight | code, editor, react |
 | [react-simple-maps](./r/react-simple-maps) | An svg map component built with and for React | react, maps, worldmap, geo, d3 |
+| [react-sizes](./r/react-sizes) | Hoc to easily map window sizes to props. | react, hoc, media, query, react-sizes, react, hoc, sizes, media, query |
 | [react-sketchapp](./r/react-sketchapp) | A React renderer for Sketch.app | sketch, sketchapp, react, reactjs, renderer |
 | [react-slick](./r/react-slick) | React port of slick carousel | slick, carousel, Image slider, orbit, slider, react-component |
 | [react-slider](./r/react-slider) | Slider component for React | react-component, react, slider, component |
@@ -5539,6 +5542,7 @@
 | [redux-action](./r/redux-action) | redux action utils | promise, reducer, actions, action, async, react, redux |
 | [redux-action-utils](./r/redux-action-utils) | Factory functions for reducing action creator boil | redux, action, creators |
 | [redux-actions](./r/redux-actions) | Flux Standard Action utlities for Redux | flux, redux, fsa, actions |
+| [redux-api-middleware](./r/redux-api-middleware) | Redux middleware for calling an API. | redux, api, middleware, redux-middleware, flux |
 | [redux-async-queue](./r/redux-async-queue) | Async queue middleware for Redux. | redux, queue, middleware, redux-middleware, flux |
 | [redux-auth-wrapper](./r/redux-auth-wrapper) | A utility library for handling authentication and  | - |
 | [redux-batched-actions](./r/redux-batched-actions) | redux higher order reducer + action creator to red | redux, react, reactjs, batched, action |
@@ -6987,6 +6991,7 @@
 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP | wordpress, block, parser |
 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP | wordpress, block, spec, parser |
 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs). | wordpress, React, hoc |
+| [wordpress__custom-templat](./w/wordpress__custom-templated-path-webpack-plugin) | Webpack plugin for creating custom path template t | wordpress, webpack, webpack-plugin |
 | [wordpress__data](./w/wordpress__data) | Data module for WordPress. | wordpress, data, redux |
 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack | wordpress, webpack, dependency |
 | [wordpress__dom](./w/wordpress__dom) | DOM utilities module for WordPress. | wordpress, dom, utils |
