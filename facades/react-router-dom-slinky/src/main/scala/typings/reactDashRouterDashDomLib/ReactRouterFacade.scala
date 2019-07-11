@@ -33,12 +33,15 @@ object ReactRouterFacade extends reactDashRouterDashDomLibProps {
     * The main problematic issue is the type parameter `T` which ends up in `match`, which is awkward in
     * typescript jsx, in slinky, and in ScalablyTyped for three different reasons.
     *
+    * Note that the `component` param has been renamed to `componentAlt` to avoid conflicts with Slinky's
+    * definitions
+    *
     * Note that this could be developed much further, probably the only way to make a somewhat sane API
     *  would be to use a builder.
     */
   def Route[T](
       alwaysRender: js.Function1[ /* props */ RouteChildrenProps[T, LocationState], ReactElement]    = null,
-      component:    ReactComponentClass[RouteComponentProps[T, StaticContext, LocationState]]        = null,
+      componentAlt: ReactComponentClass[RouteComponentProps[T, StaticContext, LocationState]]        = null,
       exact:        js.UndefOr[scala.Boolean]                                                        = js.undefined,
       location:     Location[LocationState]                                                          = null,
       path:         String | js.Array[String]                                                        = null,
@@ -49,7 +52,7 @@ object ReactRouterFacade extends reactDashRouterDashDomLibProps {
 
     val props = js.Dynamic.literal()
     if (alwaysRender != null) props.updateDynamic("children")(alwaysRender.asInstanceOf[js.Any])
-    if (component != null) props.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (componentAlt != null) props.updateDynamic("component")(componentAlt.asInstanceOf[js.Any])
     if (!js.isUndefined(exact)) props.updateDynamic("exact")(exact)
     if (location != null) props.updateDynamic("location")(location)
     if (path != null) props.updateDynamic("path")(path.asInstanceOf[js.Any])
