@@ -52,7 +52,7 @@ object ReactRouterFacade extends reactDashRouterDashDomLibProps {
 
     val props = js.Dynamic.literal()
     if (alwaysRender != null) props.updateDynamic("children")(alwaysRender.asInstanceOf[js.Any])
-    if (componentAlt != null) props.updateDynamic("componentAlt")(componentAlt.asInstanceOf[js.Any])
+    if (componentAlt != null) props.updateDynamic("component")(componentAlt.asInstanceOf[js.Any])
     if (!js.isUndefined(exact)) props.updateDynamic("exact")(exact)
     if (location != null) props.updateDynamic("location")(location)
     if (path != null) props.updateDynamic("path")(path.asInstanceOf[js.Any])
